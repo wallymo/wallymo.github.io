@@ -1,0 +1,1237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wally Mostafa — AI Product Strategist</title>
+<meta name="description" content="End to end. Brief to build. Problem to product. AI product strategist with 15 years turning complexity into things that work.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --ink: #1a1714;
+    --ink-soft: #38332d;
+    --ink-muted: #5c5550;
+    --surface: #f8f5f0;
+    --surface-warm: #f0ebe3;
+    --surface-deep: #e6dfd5;
+    --surface-tint: #f4f0e8;
+    --accent: #c45a2d;
+    --accent-hover: #a84820;
+    --accent-light: rgba(196, 90, 45, 0.08);
+    --rule: #d4ccc2;
+    --rule-light: #e4ddd4;
+
+    --font-display: 'Syne', sans-serif;
+    --font-body: 'Instrument Sans', sans-serif;
+
+    --space-xs: clamp(0.25rem, 0.5vw, 0.5rem);
+    --space-s: clamp(0.5rem, 1vw, 0.75rem);
+    --space-m: clamp(1rem, 2vw, 1.5rem);
+    --space-l: clamp(1.5rem, 3vw, 2.5rem);
+    --space-xl: clamp(2.5rem, 5vw, 4rem);
+    --space-2xl: clamp(4rem, 8vw, 7rem);
+    --space-3xl: clamp(6rem, 10vw, 10rem);
+
+    --max-w: 1140px;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+
+  body {
+    font-family: var(--font-body);
+    font-size: clamp(1rem, 1.15vw, 1.125rem);
+    line-height: 1.7;
+    color: var(--ink);
+    background: var(--surface);
+    letter-spacing: 0.005em;
+  }
+
+  /* ── NAV ── */
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    padding: var(--space-s) var(--space-l);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(248, 245, 240, 0.92);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border-bottom: 1px solid var(--rule-light);
+  }
+
+  nav .name {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1.05rem;
+    color: var(--ink);
+    letter-spacing: -0.02em;
+    text-decoration: none;
+  }
+
+  nav .links {
+    display: flex;
+    gap: var(--space-m);
+    align-items: center;
+    list-style: none;
+  }
+
+  nav .links a {
+    font-family: var(--font-body);
+    font-size: 0.82rem;
+    font-weight: 500;
+    color: var(--ink-muted);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    transition: color 0.2s;
+    padding: 0.5rem 0;
+  }
+
+  nav .links a:hover { color: var(--accent); }
+
+  /* Hamburger — hidden on desktop */
+  .mobile-menu-btn {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--ink);
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .close-icon { display: none; }
+
+  nav .nav-cta {
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--surface) !important;
+    background: var(--ink);
+    padding: 0.45rem 1rem !important;
+    border-radius: 3px;
+    transition: background 0.2s;
+  }
+
+  nav .nav-cta:hover { background: var(--accent); color: var(--surface) !important; }
+
+  /* ── HERO ── */
+  .hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: var(--space-2xl) var(--space-l);
+    max-width: var(--max-w);
+    margin: 0 auto;
+  }
+
+  .hero-eyebrow {
+    font-family: var(--font-body);
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--accent);
+    margin-bottom: var(--space-m);
+    opacity: 0;
+    transform: translateY(16px);
+    animation: fadeUp 0.8s 0.2s ease-out forwards;
+  }
+
+  .hero h1 {
+    font-family: var(--font-display);
+    font-size: clamp(3.2rem, 7.5vw, 6rem);
+    font-weight: 800;
+    line-height: 1.0;
+    letter-spacing: -0.04em;
+    color: var(--ink);
+    max-width: 12ch;
+    opacity: 0;
+    transform: translateY(24px);
+    animation: fadeUp 0.8s 0.4s ease-out forwards;
+  }
+
+  .hero-tagline {
+    margin-top: var(--space-l);
+    display: flex;
+    gap: var(--space-l);
+    flex-wrap: wrap;
+    opacity: 0;
+    transform: translateY(16px);
+    animation: fadeUp 0.8s 0.7s ease-out forwards;
+  }
+
+  .hero-tagline span {
+    font-family: var(--font-display);
+    font-size: clamp(1rem, 1.6vw, 1.25rem);
+    font-weight: 500;
+    color: var(--ink-soft);
+    position: relative;
+    padding-left: var(--space-m);
+  }
+
+  .hero-tagline span::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.2em;
+    bottom: 0.2em;
+    width: 3px;
+    background: var(--accent);
+    border-radius: 2px;
+  }
+
+  .hero-intro {
+    margin-top: var(--space-xl);
+    font-size: clamp(1.05rem, 1.25vw, 1.15rem);
+    color: var(--ink-soft);
+    max-width: 52ch;
+    line-height: 1.75;
+    opacity: 0;
+    transform: translateY(16px);
+    animation: fadeUp 0.8s 0.9s ease-out forwards;
+  }
+
+  .hero-cta {
+    margin-top: var(--space-l);
+    display: flex;
+    gap: var(--space-m);
+    align-items: center;
+    flex-wrap: wrap;
+    opacity: 0;
+    transform: translateY(16px);
+    animation: fadeUp 0.8s 1.1s ease-out forwards;
+  }
+
+  .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: var(--font-body);
+    font-size: 0.92rem;
+    font-weight: 600;
+    color: var(--surface);
+    background: var(--ink);
+    padding: 0.9rem 2rem;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background 0.25s, transform 0.2s;
+    letter-spacing: 0.01em;
+    min-height: 48px;
+  }
+
+  .btn-primary:hover {
+    background: var(--accent);
+    transform: translateY(-1px);
+  }
+
+  .btn-ghost {
+    font-family: var(--font-body);
+    font-size: 0.92rem;
+    font-weight: 500;
+    color: var(--ink-muted);
+    text-decoration: none;
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: 2px;
+    transition: color 0.2s, border-color 0.2s;
+    min-height: 48px;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .btn-ghost:hover {
+    color: var(--accent);
+    border-color: var(--accent);
+  }
+
+  /* ── SECTION COMMON ── */
+  section { padding: var(--space-2xl) var(--space-l); }
+
+  .section-inner { max-width: var(--max-w); margin: 0 auto; }
+
+  .section-label {
+    font-family: var(--font-body);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: var(--accent);
+    margin-bottom: var(--space-s);
+  }
+
+  .section-title {
+    font-family: var(--font-display);
+    font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    color: var(--ink);
+    margin-bottom: var(--space-xl);
+    max-width: 20ch;
+    line-height: 1.1;
+  }
+
+  /* ── TRUST STRIP ── */
+  .trust-strip {
+    padding: var(--space-l) var(--space-l);
+    border-top: 1px solid var(--rule-light);
+  }
+
+  .trust-names {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: var(--space-l);
+    max-width: var(--max-w);
+    margin: 0 auto;
+  }
+
+  .trust-names span {
+    font-family: var(--font-display);
+    font-size: 0.78rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--ink-muted);
+    opacity: 0.5;
+    transition: opacity 0.2s;
+  }
+
+  .trust-names span:hover { opacity: 0.85; }
+
+  /* ── CAPABILITIES ── */
+  .capabilities { background: var(--surface-warm); }
+
+  .cap-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-l);
+  }
+
+  .cap-item {
+    padding: var(--space-l) 0;
+    border-top: 2px solid var(--ink);
+    transition: border-color 0.3s;
+  }
+
+  .cap-item:hover { border-color: var(--accent); }
+
+  .cap-item h3 {
+    font-family: var(--font-display);
+    font-size: clamp(1.2rem, 1.8vw, 1.5rem);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: var(--ink);
+    margin-bottom: var(--space-s);
+  }
+
+  .cap-item h3 em {
+    font-style: normal;
+    color: var(--accent);
+  }
+
+  .cap-item p {
+    color: var(--ink-soft);
+    font-size: 0.95rem;
+    line-height: 1.65;
+    margin-bottom: var(--space-s);
+  }
+
+  .cap-proof {
+    padding-left: var(--space-m);
+    border-left: 2px solid var(--rule-light);
+  }
+
+  .cap-proof li {
+    list-style: none;
+    font-size: 0.88rem;
+    color: var(--ink-muted);
+    line-height: 1.6;
+    margin-bottom: var(--space-xs);
+  }
+
+  /* ── FEATURED WORK ── */
+  .work-grid { display: grid; gap: var(--space-3xl); }
+
+  /* Project layout A: number left, content right */
+  .work-item {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: var(--space-xl);
+    align-items: start;
+  }
+
+  .work-meta {
+    position: sticky;
+    top: calc(60px + var(--space-l));
+  }
+
+  .work-number {
+    font-family: var(--font-display);
+    font-size: clamp(4rem, 6vw, 5.5rem);
+    font-weight: 800;
+    color: var(--surface-deep);
+    line-height: 1;
+    letter-spacing: -0.04em;
+  }
+
+  .work-meta h3 {
+    font-family: var(--font-display);
+    font-size: clamp(1.5rem, 2.2vw, 1.9rem);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: var(--ink);
+    margin-bottom: var(--space-xs);
+    line-height: 1.15;
+  }
+
+  .work-meta .role {
+    font-size: 0.82rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--accent);
+    margin-bottom: var(--space-m);
+    line-height: 1.5;
+  }
+
+  .work-body p {
+    color: var(--ink-soft);
+    margin-bottom: var(--space-m);
+    font-size: 1rem;
+    line-height: 1.7;
+    max-width: 60ch;
+  }
+
+  .work-stats {
+    display: flex;
+    gap: var(--space-xl);
+    flex-wrap: wrap;
+    margin-top: var(--space-l);
+    padding-top: var(--space-l);
+    border-top: 1px solid var(--rule-light);
+  }
+
+  .stat { display: flex; flex-direction: column; }
+
+  .stat-number {
+    font-family: var(--font-display);
+    font-size: clamp(1.8rem, 2.8vw, 2.4rem);
+    font-weight: 800;
+    color: var(--ink);
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+  }
+
+  .stat-label {
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--ink-muted);
+    margin-top: 4px;
+  }
+
+  .work-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--accent);
+    text-decoration: none;
+    margin-top: var(--space-l);
+    padding-bottom: 2px;
+    border-bottom: 1.5px solid transparent;
+    transition: border-color 0.2s;
+  }
+
+  .work-link:hover { border-bottom-color: var(--accent); }
+
+  /* Divider between major sections */
+  .section-divider {
+    max-width: var(--max-w);
+    margin: 0 auto;
+    padding: 0 var(--space-l);
+  }
+
+  .section-divider hr {
+    border: none;
+    height: 1px;
+    background: var(--rule);
+  }
+
+  /* ── CAREER ARC ── */
+  .arc { background: var(--ink); color: var(--surface); }
+  .arc .section-label { color: var(--accent); }
+  .arc .section-title { color: var(--surface); }
+
+  .arc-timeline {
+    position: relative;
+    padding-left: var(--space-xl);
+  }
+
+  .arc-timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 8px;
+    bottom: 8px;
+    width: 2px;
+    background: linear-gradient(to bottom, var(--accent), rgba(196, 90, 45, 0.2));
+  }
+
+  .arc-item {
+    position: relative;
+    margin-bottom: var(--space-xl);
+    padding-bottom: var(--space-l);
+  }
+
+  .arc-item:last-child { margin-bottom: 0; padding-bottom: 0; }
+
+  .arc-item::before {
+    content: '';
+    position: absolute;
+    left: calc(-1 * var(--space-xl) - 4px);
+    top: 6px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--accent);
+    border: 2px solid var(--ink);
+  }
+
+  .arc-year {
+    font-family: var(--font-display);
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--accent);
+    margin-bottom: 6px;
+  }
+
+  .arc-item h3 {
+    font-family: var(--font-display);
+    font-size: clamp(1.15rem, 1.6vw, 1.35rem);
+    font-weight: 700;
+    color: var(--surface);
+    letter-spacing: -0.01em;
+    margin-bottom: 4px;
+    line-height: 1.25;
+  }
+
+  .arc-item .arc-org {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--surface-deep);
+    margin-bottom: var(--space-s);
+  }
+
+  .arc-item p {
+    font-size: 0.92rem;
+    color: rgba(248, 245, 240, 0.7);
+    line-height: 1.65;
+    max-width: 55ch;
+  }
+
+  /* Transition strip before arc */
+  .pre-arc-strip {
+    background: var(--ink);
+    padding: var(--space-l) var(--space-l) 0;
+  }
+
+  .pre-arc-strip .section-inner {
+    border-top: 1px solid rgba(196, 90, 45, 0.3);
+  }
+
+  /* ── AWARDS ── */
+  .awards { background: var(--surface-tint); }
+
+  .awards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--space-m);
+  }
+
+  .award-item {
+    padding: var(--space-m) var(--space-l);
+    border: 1.5px solid var(--rule);
+    border-radius: 4px;
+    transition: border-color 0.2s, transform 0.2s;
+    background: var(--surface);
+  }
+
+  .award-item:hover {
+    border-color: var(--accent);
+    transform: translateY(-2px);
+  }
+
+  .award-name {
+    font-family: var(--font-display);
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--ink);
+    line-height: 1.3;
+  }
+
+  .award-detail {
+    font-size: 0.82rem;
+    color: var(--ink-muted);
+    margin-top: 4px;
+  }
+
+  /* ── CONTACT ── */
+  .contact { background: var(--surface-warm); }
+
+  .contact-inner {
+    max-width: var(--max-w);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: var(--space-xl);
+    align-items: end;
+  }
+
+  .contact h2 {
+    font-family: var(--font-display);
+    font-size: clamp(2.2rem, 4.5vw, 3.5rem);
+    font-weight: 800;
+    letter-spacing: -0.035em;
+    color: var(--ink);
+    line-height: 1.05;
+  }
+
+  .contact-subtitle {
+    font-size: 1rem;
+    color: var(--ink-soft);
+    margin-top: var(--space-s);
+    line-height: 1.6;
+    max-width: 40ch;
+  }
+
+  .contact-links {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-s);
+    align-items: flex-end;
+  }
+
+  .contact-links a {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--ink-soft);
+    text-decoration: none;
+    padding: 0.4rem 0;
+    border-bottom: 1px solid var(--rule-light);
+    transition: color 0.2s, border-color 0.2s;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .contact-links a:hover {
+    color: var(--accent);
+    border-bottom-color: var(--accent);
+  }
+
+  /* ── FOOTER ── */
+  footer {
+    padding: var(--space-l) var(--space-l);
+    border-top: 1px solid var(--rule-light);
+  }
+
+  .footer-inner {
+    max-width: var(--max-w);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: var(--space-s);
+  }
+
+  .footer-sign-off {
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    color: var(--ink-muted);
+    font-style: italic;
+  }
+
+  footer .copyright {
+    font-size: 0.78rem;
+    color: var(--ink-muted);
+    opacity: 0.6;
+  }
+
+  /* ── ANIMATIONS ── */
+  @keyframes fadeUp {
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .reveal-ready .reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+
+  .reveal-ready .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Stagger children */
+  .reveal-ready .stagger > * {
+    opacity: 0;
+    transform: translateY(16px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  }
+
+  .reveal-ready .stagger.visible > *:nth-child(1) { transition-delay: 0.05s; }
+  .reveal-ready .stagger.visible > *:nth-child(2) { transition-delay: 0.1s; }
+  .reveal-ready .stagger.visible > *:nth-child(3) { transition-delay: 0.15s; }
+  .reveal-ready .stagger.visible > *:nth-child(4) { transition-delay: 0.2s; }
+  .reveal-ready .stagger.visible > *:nth-child(5) { transition-delay: 0.25s; }
+
+  .reveal-ready .stagger.visible > * {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 900px) {
+    .cap-grid { grid-template-columns: repeat(2, 1fr); }
+    .work-item { grid-template-columns: 1fr; gap: var(--space-m); }
+    .work-meta { position: static; }
+  }
+
+  @media (max-width: 640px) {
+    /* Nav: hide desktop links, show hamburger */
+    nav .links { display: none; }
+    nav .mobile-menu-btn { display: flex; }
+    /* Mobile menu: full screen overlay */
+    #nav.menu-open { z-index: 200; }
+    #nav.menu-open .links {
+      display: flex !important;
+      flex-direction: column;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100vw;
+      height: 100vh;
+      height: 100dvh;
+      background: var(--surface);
+      padding: 100px 32px 32px;
+      gap: 0;
+      z-index: 199;
+      overflow-y: auto;
+    }
+    #nav.menu-open .links li {
+      border-bottom: 1px solid var(--rule-light);
+      list-style: none;
+    }
+    #nav.menu-open .links li:last-child { border-bottom: none; }
+    #nav.menu-open .links a {
+      display: flex;
+      align-items: center;
+      min-height: 56px;
+      padding: 4px 0;
+      font-size: 1.1rem;
+      text-transform: none;
+      letter-spacing: 0.01em;
+      color: var(--ink);
+    }
+    #nav.menu-open .nav-cta {
+      display: inline-flex !important;
+      margin-top: var(--space-l);
+      width: fit-content;
+      padding: 0.85rem 1.6rem !important;
+      font-size: 1rem !important;
+      color: var(--surface) !important;
+    }
+    /* Toggle hamburger to X */
+    #nav.menu-open .mobile-menu-btn { position: relative; z-index: 201; }
+    #nav.menu-open .hamburger-icon { display: none !important; }
+    #nav.menu-open .close-icon { display: block !important; }
+
+    /* Padding consistency: 24px sides */
+    section { padding-left: 24px; padding-right: 24px; }
+    .hero { padding-left: 24px; padding-right: 24px; }
+    nav { padding-left: 24px; padding-right: 24px; }
+    .trust-strip { padding-left: 24px; padding-right: 24px; }
+    footer { padding-left: 24px; padding-right: 24px; }
+
+    /* Hero adjustments */
+    .hero { min-height: 90vh; padding-top: calc(60px + var(--space-xl)); }
+    .hero h1 { font-size: clamp(2.8rem, 11vw, 3.8rem); }
+    .hero-tagline { flex-direction: column; gap: var(--space-s); }
+    .hero-intro { font-size: 1rem; }
+    .hero-cta { flex-direction: column; gap: var(--space-s); align-items: flex-start; }
+    .btn-primary, .btn-ghost { min-height: 48px; }
+
+    /* Capabilities */
+    .cap-grid { grid-template-columns: 1fr; }
+    .cap-item { padding: var(--space-m) 0; }
+    .cap-item h3 { font-size: 1.3rem; }
+    .cap-item p { font-size: 1rem; }
+    .cap-proof li { font-size: 0.92rem; }
+
+    /* Work items: ensure "View case study" is tappable */
+    .work-item { gap: var(--space-s); padding-bottom: var(--space-xl); }
+    .work-number { font-size: clamp(3rem, 12vw, 4rem); }
+    .work-meta h3 { font-size: clamp(1.4rem, 5vw, 1.7rem); }
+    .work-body p { font-size: 1rem; line-height: 1.7; }
+    .work-link {
+      min-height: 48px;
+      padding: 12px 0;
+      font-size: 1rem;
+      display: inline-flex;
+      align-items: center;
+    }
+    .work-stats { gap: var(--space-l); }
+    .stat-number { font-size: clamp(1.6rem, 6vw, 2rem); }
+    .stat-label { font-size: 0.8rem; margin-top: 2px; }
+
+    /* Timeline */
+    .arc-timeline { padding-left: var(--space-l); }
+    .arc-item::before { left: calc(-1 * var(--space-l) - 4px); }
+    .arc-item h3 { font-size: 1.15rem; }
+    .arc-item p { font-size: 0.95rem; }
+    .arc-item .arc-org { font-size: 0.92rem; }
+    .arc-item { margin-bottom: var(--space-l); padding-bottom: var(--space-m); }
+
+    /* Awards */
+    .awards-grid { grid-template-columns: 1fr 1fr; gap: var(--space-s); }
+    .award-item { padding: var(--space-s) var(--space-m); }
+    .award-name { font-size: 0.92rem; }
+    .award-detail { font-size: 0.8rem; }
+
+    /* Contact */
+    .contact-inner { grid-template-columns: 1fr; gap: var(--space-l); }
+    .contact-links { align-items: flex-start; }
+    .contact-links a { min-height: 48px; font-size: 1rem; }
+    .contact h2 { font-size: clamp(2rem, 8vw, 2.8rem); }
+
+    /* Footer */
+    .footer-inner { flex-direction: column; gap: var(--space-s); }
+    .footer-sign-off { font-size: 0.88rem; }
+
+    /* Section title */
+    .section-title { font-size: clamp(1.6rem, 6vw, 2.2rem); }
+  }
+
+  @media (max-width: 380px) {
+    .awards-grid { grid-template-columns: 1fr; }
+    .hero h1 { font-size: 2.5rem; }
+    .work-stats { flex-direction: column; gap: var(--space-m); }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+</style>
+</head>
+<body>
+
+<nav id="nav">
+  <a href="#" class="name">Wally Mostafa</a>
+  <button class="mobile-menu-btn" aria-label="Menu" onclick="document.getElementById('nav').classList.toggle('menu-open'); document.body.style.overflow = document.getElementById('nav').classList.contains('menu-open') ? 'hidden' : ''">
+    <svg class="hamburger-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    <svg class="close-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="6" y1="6" x2="18" y2="18"/><line x1="6" y1="18" x2="18" y2="6"/></svg>
+  </button>
+  <ul class="links">
+    <li><a href="#capabilities">What I Do</a></li>
+    <li><a href="#work">Work</a></li>
+    <li><a href="#arc">Experience</a></li>
+    <li><a href="#awards">Awards</a></li>
+    <li><a href="https://linkedin.com/in/wallymo" target="_blank" rel="noopener">LinkedIn ↗</a></li>
+    <li><a href="#contact" class="nav-cta">Let's Talk</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-eyebrow">AI Product Strategist &amp; Design Leader</div>
+  <h1>Wally Mostafa</h1>
+  <div class="hero-tagline">
+    <span>End to end</span>
+    <span>Brief to build</span>
+    <span>Problem to product</span>
+  </div>
+  <p class="hero-intro">
+            15 years turning complexity into things that work. Scaled design teams across multiple regions, shipped enterprise platforms used by thousands, built AI products for regulated industries where mistakes are expensive.
+          </p>
+  <div class="hero-cta">
+    <a href="#contact" class="btn-primary">Let's talk</a>
+    <a href="#work" class="btn-ghost">See the work ↓</a>
+  </div>
+</section>
+
+<!-- TRUST STRIP -->
+<section class="trust-strip">
+  <div class="trust-names">
+    <span>IPG / Kinesso</span>
+    <span>Hedgehox</span>
+    <span>FCB Health</span>
+    <span>CDM</span>
+    <span>Heartbeat Ideas</span>
+    <span>Scout Marketing</span>
+  </div>
+</section>
+
+<!-- CAPABILITIES -->
+<section class="capabilities" id="capabilities">
+  <div class="section-inner">
+    <div class="section-label reveal">Capabilities</div>
+    <h2 class="section-title reveal">I don't just design it or just build it. I do both.</h2>
+    <div class="cap-grid stagger reveal">
+
+      <div class="cap-item">
+        <h3>I <em>discover</em></h3>
+        <p>
+            I do research and testing before anything gets built. Catches the problems that would've cost way more to fix later.
+          </p>
+        <ul class="cap-proof">
+          <li>User research across Fortune 500 pharma clients</li>
+          <li>Discovery-to-POC frameworks that reduce scope risk</li>
+        </ul>
+      </div>
+
+      <div class="cap-item">
+        <h3>I <em>design</em></h3>
+        <p>
+            Design systems that actually scale. Built infrastructure that thousands of users depend on across different brands.
+          </p>
+        <ul class="cap-proof">
+          <li>Award-winning design system: Indigo 2022 &amp; 2023, Red Dot 2021</li>
+          <li>Built UX discipline from scratch at two organizations</li>
+        </ul>
+      </div>
+
+      <div class="cap-item">
+        <h3>I <em>build</em></h3>
+        <p>
+            Real AI products in production, not prototypes. Full systems that work inside regulated environments.
+          </p>
+        <ul class="cap-proof">
+          <li>Pharma AI claims detection and routing tools at Hedgehox</li>
+          <li>WeReady, ListingPal, BriefFlow — concept to ship</li>
+        </ul>
+      </div>
+
+      <div class="cap-item">
+        <h3>I <em>lead</em></h3>
+        <p>
+            I bring teams, stakeholders, and functions together. From the initial brief through to decisions that stick.
+          </p>
+        <ul class="cap-proof">
+          <li>Scaled design team from 2 to 30 across 4 countries</li>
+          <li>At the table with Fortune 500 stakeholders, brief to approval</li>
+        </ul>
+      </div>
+
+      <div class="cap-item">
+        <h3>I <em>ship</em></h3>
+        <p>
+            Products in production, not Figma mockups. Real users, real scale.
+          </p>
+        <ul class="cap-proof">
+          <li>7,000+ users on enterprise platform across 22 brands</li>
+          <li>End to end, every time</li>
+        </ul>
+      </div>
+
+      <div class="cap-item">
+        <h3>I <em>evolve</em></h3>
+        <p>
+            Account management to UX to design systems to AI engineering. Every vertical sharpened a different edge.
+          </p>
+        <ul class="cap-proof">
+          <li>Pharma, adtech, healthtech, real estate, fintech</li>
+          <li>Each chapter built on the last, none wasted</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED WORK -->
+<section id="work">
+  <div class="section-inner">
+    <div class="section-label reveal">Featured Work</div>
+    <h2 class="section-title reveal">Receipts, not descriptions.</h2>
+
+    <div class="work-grid">
+
+      <!-- 01: Kinesso — standard layout -->
+      <a href="project-01.html" class="work-item reveal" style="text-decoration: none; color: inherit;">
+        <div class="work-meta">
+          <div class="work-number">01</div>
+          <h3>Enterprise Design System</h3>
+          <div class="role">Kinesso (IPG)<br>Director, Experience &amp; Innovation</div>
+        </div>
+        <div class="work-body">
+          <p>
+            Joined as the second designer. Built the UX function from scratch to 30 people across the US and Poland. Shipped an award-winning design system that powers 22 white-label analytics brands.
+          </p>
+          <p>
+            This wasn't about making components look pretty. It was about proving design belonged in an engineering-first, data-heavy company.
+          </p>
+          <div class="work-stats">
+            <div class="stat">
+              <span class="stat-number">7,000+</span>
+              <span class="stat-label">Daily users</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">22</span>
+              <span class="stat-label">White-label brands</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">2→30</span>
+              <span class="stat-label">Team scale</span>
+            </div>
+          </div>
+          <span class="work-link">View case study →</span>
+        </div>
+      </a>
+
+      <!-- 02: Hedgehox -->
+      <a href="project-02.html" class="work-item reveal" style="text-decoration: none; color: inherit;">
+        <div class="work-meta">
+          <div class="work-number">02</div>
+          <h3>Pharma AI Platform</h3>
+          <div class="role">Hedgehox<br>AI Implementation Partner</div>
+        </div>
+        <div class="work-body">
+          <p>
+            Building the AI layer for pharma operations. Claims detection with Gemini multimodal, automated routing, an end-to-end pharma OS. Working directly with enterprise clients on workshops, custom tools, and process redesign.
+          </p>
+          <p>
+            Fifteen years of pharma account work. UX methodology. Now AI. This is where all three actually converge. Not advising on AI from the outside. Shipping AI products in one of the most regulated industries on earth.
+          </p>
+          <div class="work-stats">
+            <div class="stat">
+              <span class="stat-number">FDA / HIPAA</span>
+              <span class="stat-label">Compliance domain</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">Multimodal AI</span>
+              <span class="stat-label">Architecture</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">End-to-end</span>
+              <span class="stat-label">Product ownership</span>
+            </div>
+          </div>
+          <span class="work-link">View case study →</span>
+        </div>
+      </a>
+
+      <!-- 03: OBA — standard layout -->
+      <a href="project-03.html" class="work-item reveal" style="text-decoration: none; color: inherit;">
+        <div class="work-meta">
+          <div class="work-number">03</div>
+          <h3>AI Product Studio</h3>
+          <div class="role">One Block Away LLC<br>Founder &amp; AI Product Engineer</div>
+        </div>
+        <div class="work-body">
+          <p>
+            Started solo building AI products. WeReady handles multi-agent coordination. ListingPal generates real estate listings in 90 seconds. BriefFlow automates workflows. Built each one myself—design, architecture, code, deployment.
+
+
+
+          </p>
+          <p>
+            Also built a multi-agent orchestration framework, automated newsletter infrastructure, and an options trading system. Solo the whole way.
+
+
+
+          </p>
+          <div class="work-stats">
+            <div class="stat">
+              <span class="stat-number">3+</span>
+              <span class="stat-label">Shipped products</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">Solo</span>
+              <span class="stat-label">Full-stack founder</span>
+            </div>
+          </div>
+          <span class="work-link">View case study →</span>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- CAREER ARC -->
+<section class="arc" id="arc">
+  <div class="section-inner">
+    <div class="section-label reveal">Experience</div>
+    <h2 class="section-title reveal">15 years, one thread: making complex things work.</h2>
+
+    <div class="arc-timeline">
+
+      <div class="arc-item reveal">
+        <div class="arc-year">2024 — Present</div>
+        <h3>AI Implementation Partner</h3>
+        <div class="arc-org">Hedgehox</div>
+        <p>
+            Pharma AI work: claims detection, routing, full operating system. Worked directly with enterprise clients in FDA/HIPAA environments.
+
+
+
+          </p>
+      </div>
+
+      <div class="arc-item reveal">
+        <div class="arc-year">2023 — Present</div>
+        <h3>Founder &amp; AI Product Engineer</h3>
+        <div class="arc-org">One Block Away LLC</div>
+        <p>
+            Solo founder. Shipped WeReady, ListingPal, BriefFlow. Multi-agent orchestration, content automation, trading infrastructure.
+
+
+
+          </p>
+      </div>
+
+      <div class="arc-item reveal">
+        <div class="arc-year">2020 — 2023</div>
+        <h3>Director, Experience &amp; Innovation</h3>
+        <div class="arc-org">Kinesso (IPG)</div>
+        <p>
+            Scaled the design team from 2 to 30 people across the US and Poland. Built a design system that won 7 international awards. Worked with 22 brands and 7,000+ users.
+          </p>
+      </div>
+
+      <div class="arc-item reveal">
+        <div class="arc-year">2018 — 2019</div>
+        <h3>Senior UX Designer</h3>
+        <div class="arc-org">Heartbeat Ideas</div>
+        <p>
+            Built healthcare compliance software handling FDA and HIPAA interfaces. Designed a component library specifically for regulated environments where every interaction gets audited.
+          </p>
+      </div>
+
+      <div class="arc-item reveal">
+        <div class="arc-year">2010 — 2017</div>
+        <h3>Account Lead → UX Pioneer</h3>
+        <div class="arc-org">FCB Health · CDM · Scout Marketing</div>
+        <p>
+            Started as a consumer account lead on major pharma brands across TV, radio, digital, and gaming. Moved into UX and actually built UX teams from nothing. Can do the work and explain why it matters.
+          </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- AWARDS -->
+<section class="awards" id="awards">
+  <div class="section-inner">
+    <div class="section-label reveal">Recognition</div>
+    <h2 class="section-title reveal" style="font-weight: 600; max-width: 26ch;">The work speaks, but awards don't hurt.</h2>
+    <div class="awards-grid stagger reveal">
+      <div class="award-item">
+        <span class="award-name">Indigo Awards 2023</span>
+        <span class="award-detail">3 Gold, 2 Silver — Design Excellence</span>
+      </div>
+      <div class="award-item">
+        <span class="award-name">Indigo Awards 2022</span>
+        <span class="award-detail">2 Gold, 2 Silver — UX/UI Design</span>
+      </div>
+      <div class="award-item">
+        <span class="award-name">Red Dot 2021</span>
+        <span class="award-detail">Communication Design</span>
+      </div>
+      <div class="award-item">
+        <span class="award-name">Manny Award 2013</span>
+        <span class="award-detail">Pharma Marketing Excellence</span>
+      </div>
+      <div class="award-item">
+        <span class="award-name">Pharma Choice 2011</span>
+        <span class="award-detail">Industry Recognition</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="section-inner">
+    <div class="contact-inner">
+      <div>
+        <div class="section-label reveal">Get in touch</div>
+        <h2 class="reveal">Let's build something.</h2>
+        <p class="contact-subtitle reveal">
+            Looking for Director, VP, or senior IC roles in AI strategy, product, or design leadership.
+          </p>
+      </div>
+      <div class="contact-links reveal">
+        <a href="mailto:wmostafa12@gmail.com">wmostafa12@gmail.com ↗</a>
+        <a href="https://linkedin.com/in/wallymo" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a href="https://walle-os.vercel.app" target="_blank" rel="noopener">WallyGPT — Ask me anything ↗</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <span class="footer-sign-off">Built by hand. Shipped by one person. That's kind of the point.</span>
+    <span class="copyright">&copy; 2026 Wally Mostafa · Raleigh, NC</span>
+  </div>
+</footer>
+
+<script>
+  document.documentElement.classList.add('reveal-ready');
+  
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.08, rootMargin: '0px 0px -20px 0px' });
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    
+    setTimeout(() => {
+      document.querySelectorAll('.reveal:not(.visible)').forEach(el => el.classList.add('visible'));
+    }, 3000);
+  } else {
+    document.querySelectorAll('.reveal').forEach(el => el.classList.add('visible'));
+  }
+</script>
+
+</body>
+</html>
