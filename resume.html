@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Wally Mostafa — Resume</title>
-<meta name="description" content="AI Product Strategist & Design Leader. 15 years turning complexity into things that work.">
+<meta name="description" content="AI Product Strategist & Design Leader. 15 years running the full loop: discovery, design, build, and delivery.">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,12 +27,12 @@
 
     --space-xs: 0.25rem;
     --space-s: 0.5rem;
-    --space-m: 1rem;
-    --space-l: 1.5rem;
+    --space-m: 0.75rem;
+    --space-l: 1.25rem;
     --space-xl: 2rem;
     --space-2xl: 3rem;
 
-    --max-w: 800px;
+    --max-w: 720px;
   }
 
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -44,8 +44,8 @@
 
   body {
     font-family: var(--font-body);
-    font-size: 10.5pt;
-    line-height: 1.55;
+    font-size: 10pt;
+    line-height: 1.5;
     color: var(--ink);
     background: var(--surface);
     padding: var(--space-xl);
@@ -59,47 +59,44 @@
   /* Header */
   header {
     text-align: center;
-    padding-bottom: var(--space-l);
+    padding-bottom: var(--space-m);
     border-bottom: 2px solid var(--ink);
     margin-bottom: var(--space-l);
   }
 
   header h1 {
     font-family: var(--font-display);
-    font-size: 2.2rem;
+    font-size: 1.9rem;
     font-weight: 800;
-    letter-spacing: -0.03em;
+    letter-spacing: -0.02em;
     color: var(--ink);
     margin-bottom: var(--space-xs);
-  }
-
-  .title {
-    font-family: var(--font-display);
-    font-size: 1rem;
-    font-weight: 600;
-    color: var(--accent);
-    margin-bottom: var(--space-s);
+    text-transform: uppercase;
   }
 
   .contact {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: var(--space-m);
-    font-size: 0.9rem;
-    color: var(--ink-soft);
+    gap: var(--space-s);
+    font-size: 9.5pt;
+    color: var(--ink-muted);
   }
 
   .contact a {
-    color: var(--ink-soft);
+    color: var(--accent);
     text-decoration: none;
     border-bottom: 1px solid var(--rule);
     transition: color 0.2s, border-color 0.2s;
   }
 
   .contact a:hover {
-    color: var(--accent);
+    color: var(--accent-hover);
     border-color: var(--accent);
+  }
+
+  .contact-sep {
+    color: var(--ink-muted);
   }
 
   /* Sections */
@@ -113,21 +110,41 @@
 
   .section-title {
     font-family: var(--font-display);
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 0.12em;
+    letter-spacing: 0.1em;
     color: var(--ink);
-    padding-bottom: var(--space-xs);
+    padding-bottom: 4px;
     border-bottom: 1px solid var(--rule);
     margin-bottom: var(--space-m);
   }
 
   /* Summary */
   .summary {
-    font-size: 10.5pt;
+    font-size: 9.5pt;
     color: var(--ink-soft);
-    line-height: 1.6;
+    line-height: 1.55;
+  }
+
+  /* Capabilities */
+  .capabilities-list {
+    list-style: none;
+  }
+
+  .capabilities-list li {
+    margin-bottom: var(--space-xs);
+    font-size: 9.5pt;
+    line-height: 1.5;
+  }
+
+  .cap-label {
+    font-weight: 700;
+    color: var(--ink);
+  }
+
+  .cap-desc {
+    color: var(--ink-soft);
   }
 
   /* Experience */
@@ -145,34 +162,32 @@
     align-items: baseline;
     flex-wrap: wrap;
     gap: var(--space-xs);
-    margin-bottom: var(--space-xs);
+    margin-bottom: 2px;
   }
 
   .job-title {
     font-family: var(--font-display);
-    font-size: 1rem;
+    font-size: 10.5pt;
     font-weight: 700;
     color: var(--ink);
   }
 
-  .job-date {
-    font-size: 0.85rem;
-    font-weight: 500;
+  .job-meta {
+    font-size: 9pt;
+    font-style: italic;
     color: var(--ink-muted);
-    white-space: nowrap;
-  }
-
-  .job-org {
-    font-size: 0.9rem;
-    font-weight: 600;
-    color: var(--accent);
-    margin-bottom: var(--space-s);
   }
 
   .job-desc {
-    font-size: 10pt;
+    list-style: disc;
+    padding-left: var(--space-l);
+  }
+
+  .job-desc li {
+    margin-bottom: var(--space-xs);
+    font-size: 9.5pt;
     color: var(--ink-soft);
-    line-height: 1.55;
+    line-height: 1.5;
   }
 
   /* Awards */
@@ -181,12 +196,12 @@
   }
 
   .awards-list li {
-    margin-bottom: var(--space-s);
-    font-size: 10pt;
+    margin-bottom: var(--space-xs);
+    font-size: 9.5pt;
   }
 
   .awards-list a {
-    color: var(--ink);
+    color: var(--accent);
     text-decoration: none;
     font-weight: 600;
     border-bottom: 1px solid var(--rule);
@@ -194,43 +209,18 @@
   }
 
   .awards-list a:hover {
-    color: var(--accent);
+    color: var(--accent-hover);
     border-color: var(--accent);
   }
 
   .award-detail {
-    color: var(--ink-muted);
+    color: var(--ink-soft);
     font-weight: 400;
   }
 
-  /* Skills */
-  .skills-grid {
-    display: grid;
-    grid-template-columns: 140px 1fr;
-    gap: var(--space-xs) var(--space-m);
-    font-size: 10pt;
-  }
-
-  .skill-category {
-    font-weight: 600;
-    color: var(--ink-soft);
-  }
-
-  .skill-items {
-    color: var(--ink-muted);
-  }
-
   /* Education */
-  .edu-item {
-    margin-bottom: var(--space-s);
-  }
-
-  .edu-degree {
-    font-weight: 600;
-    color: var(--ink);
-  }
-
-  .edu-school {
+  .edu {
+    font-size: 9.5pt;
     color: var(--ink-soft);
   }
 
@@ -248,12 +238,13 @@
     .contact a,
     .awards-list a {
       border-bottom: none;
+      color: var(--ink);
     }
 
     .contact a::after,
     .awards-list a::after {
       content: " (" attr(href) ")";
-      font-size: 0.8em;
+      font-size: 0.75em;
       color: var(--ink-muted);
     }
   }
@@ -271,21 +262,47 @@
 <div class="resume">
 
 <header>
-  <h1>Wally Mostafa</h1>
-  <div class="title">AI Product Strategist & Design Leader</div>
+  <h1>WALLY MOSTAFA</h1>
   <div class="contact">
     <a href="mailto:wmostafa12@gmail.com">wmostafa12@gmail.com</a>
-    <span>Raleigh, NC</span>
-    <a href="https://linkedin.com/in/wallymo" target="_blank" rel="noopener">linkedin.com/in/wallymo</a>
-    <a href="https://misterpavano.github.io" target="_blank" rel="noopener">misterpavano.github.io</a>
+    <span class="contact-sep">·</span>
+    <span>347.420.3558</span>
+    <span class="contact-sep">·</span>
+    <span>Raleigh Metro, NC</span>
+    <span class="contact-sep">·</span>
+    <a href="https://linkedin.com/in/wallymo" target="_blank" rel="noopener">LinkedIn</a>
+    <span class="contact-sep">·</span>
+    <a href="https://walle-os.vercel.app" target="_blank" rel="noopener">AI Portfolio</a>
   </div>
 </header>
 
 <section>
   <div class="section-title">Summary</div>
   <p class="summary">
-    15 years turning complexity into things that work. Scaled design teams across multiple regions, shipped enterprise platforms used by thousands, built AI products for regulated industries where mistakes are expensive. End to end, brief to build, problem to product.
+    AI product strategist and design leader with 15 years running the full loop: discovery, design, build, and delivery. I speak every language in the org, from brief to developer to CEO, and I know what a project needs at every stage. Background in pharma account strategy, UX design leadership, and enterprise AI implementation gives me rare depth across the full product lifecycle.
   </p>
+</section>
+
+<section>
+  <div class="section-title">Capabilities</div>
+  <ul class="capabilities-list">
+    <li>
+      <span class="cap-label">AI Strategy & Implementation</span>
+      <span class="cap-desc"> — Agentic platforms, LLM/VLM integration, enterprise AI enablement, RAG architectures, prompt engineering, multi-model orchestration</span>
+    </li>
+    <li>
+      <span class="cap-label">Product Strategy & Design Thinking</span>
+      <span class="cap-desc"> — End-to-end product development, discovery, user research, POC design and testing, design systems, accessibility (WCAG)</span>
+    </li>
+    <li>
+      <span class="cap-label">Stakeholder Communication</span>
+      <span class="cap-desc"> — C-suite to intern, regulated industries (FDA, HIPAA, MLR), Fortune 500 client management, workshop facilitation</span>
+    </li>
+    <li>
+      <span class="cap-label">Leadership</span>
+      <span class="cap-desc"> — Team scaling (2→30), design org building, 0-to-1 product development, distributed team management</span>
+    </li>
+  </ul>
 </section>
 
 <section>
@@ -294,108 +311,92 @@
   <div class="job">
     <div class="job-header">
       <span class="job-title">AI Implementation Partner</span>
-      <span class="job-date">2024 — Present</span>
+      <span class="job-meta">Hedgehox · Remote · Mar 2024 – Present</span>
     </div>
-    <div class="job-org">Hedgehox</div>
-    <p class="job-desc">
-      Building the AI layer for pharma operations. Claims detection with Gemini multimodal, automated routing, end-to-end pharma OS. Working directly with enterprise clients on workshops, custom tools, and process redesign in FDA/HIPAA environments.
-    </p>
+    <ul class="job-desc">
+      <li>Scoped, designed, and shipped a pharma claims detection system using Gemini multimodal — full pipeline from discovery through production for an enterprise client in one of the most regulated industries in the world</li>
+      <li>Leading concurrent AI implementations including routing tool and end-to-end pharma OS; running hands-on AI enablement with pharma clients across discovery, build, and adoption</li>
+      <li>Translate complex business requirements into AI-driven architectures and deliver measurable ROI</li>
+    </ul>
   </div>
 
   <div class="job">
     <div class="job-header">
-      <span class="job-title">Founder & AI Product Engineer</span>
-      <span class="job-date">2023 — Present</span>
+      <span class="job-title">Founder & AI Product Strategist</span>
+      <span class="job-meta">One Block Away LLC · Remote · Jul 2023 – Present</span>
     </div>
-    <div class="job-org">One Block Away LLC</div>
-    <p class="job-desc">
-      Solo founder. Shipped WeReady (multi-agent coordination), ListingPal (real estate listings in 90 seconds), BriefFlow (workflow automation). Built multi-agent orchestration framework, automated newsletter infrastructure, and options trading system. Design, architecture, code, deployment — end to end.
-    </p>
+    <ul class="job-desc">
+      <li>Designed, directed, and shipped WeReady (multi-agent platform), ListingPal (90-second AI content generation), and BriefFlow (workflow automation) from concept to production</li>
+      <li>Partner with clients to scope AI-driven solutions, run discovery, and guide end-to-end delivery</li>
+    </ul>
   </div>
 
   <div class="job">
     <div class="job-header">
       <span class="job-title">Director, Experience & Innovation</span>
-      <span class="job-date">2020 — 2023</span>
+      <span class="job-meta">Kinesso (IPG) · New York, NY · Feb 2020 – Jun 2023</span>
     </div>
-    <div class="job-org">Kinesso (IPG)</div>
-    <p class="job-desc">
-      Joined as the second designer. Built the UX function from scratch to 30 people across the US and Poland. Shipped an award-winning design system that powers 22 white-label analytics brands. Proved design belonged in an engineering-first, data-heavy company. 7,000+ daily users.
-    </p>
+    <ul class="job-desc">
+      <li>Scaled product design team from 2 to 30 designers supporting 7,000+ users across 22 white-label brands — built the hiring pipeline, culture, and process from scratch</li>
+      <li>Architected award-winning modular design system and component library serving enterprise analytics platform at global scale; led data visualization and drag-and-drop dashboard builder</li>
+      <li>Became the face of UX research and workshop activities across external IPG agency relationships</li>
+      <li>Won 5 Indigo Awards 2023 (3 Gold, 2 Silver), 4 Indigo Awards 2022 (2 Gold, 2 Silver), Red Dot Award 2021</li>
+    </ul>
   </div>
 
   <div class="job">
     <div class="job-header">
-      <span class="job-title">Senior UX Designer</span>
-      <span class="job-date">2018 — 2019</span>
+      <span class="job-title">Sr. UX Designer</span>
+      <span class="job-meta">Heartbeat Ideas · New York, NY · Aug 2018 – Nov 2019</span>
     </div>
-    <div class="job-org">Heartbeat Ideas</div>
-    <p class="job-desc">
-      Built healthcare compliance software handling FDA and HIPAA interfaces. Designed a component library specifically for regulated environments where every interaction gets audited.
-    </p>
+    <ul class="job-desc">
+      <li>Owned end-to-end product design for healthcare compliance software under FDA and HIPAA requirements</li>
+      <li>Designed component libraries and interaction patterns; bridged design intent and engineering reality on complex enterprise applications</li>
+    </ul>
   </div>
 
   <div class="job">
     <div class="job-header">
-      <span class="job-title">Account Lead → UX Pioneer</span>
-      <span class="job-date">2010 — 2017</span>
+      <span class="job-title">Account Management & Client Strategy</span>
+      <span class="job-meta">RosettaWishbone, FCB Health, Barker DZP, Cline Davis & Mann, Scout Marketing · 2010 – 2017</span>
     </div>
-    <div class="job-org">FCB Health · CDM · Scout Marketing</div>
-    <p class="job-desc">
-      Started as consumer account lead on major pharma brands across TV, radio, digital, and gaming. Moved into UX and built UX teams from nothing. Can do the work and explain why it matters.
-    </p>
+    <ul class="job-desc">
+      <li>7+ years managing Fortune 500 pharma and healthcare clients with budgets from $2M to $50M+, including NUVIGIL, Namenda XR, Lipitor, and Zoloft</li>
+      <li>One of two account consumer leads on FCB Health's largest pharma account across all verticals: TV, radio, digital, gaming, Times Square, unbranded campaigns, brand planning, and MLR review</li>
+      <li>Developed the core skill defining every role since: translating big strategic thinking into tactical execution across every team — account, creative, UX, development, and leadership</li>
+    </ul>
   </div>
 </section>
 
 <section>
-  <div class="section-title">Recognition</div>
+  <div class="section-title">Awards</div>
   <ul class="awards-list">
     <li>
       <a href="https://www.indigoaward.com/winners/6748" target="_blank" rel="noopener">Indigo Awards 2023</a>
-      <span class="award-detail"> — 3 Gold, 2 Silver — Design Excellence</span>
+      <span class="award-detail"> — Design System & Data Visualization: 3× Gold, 2× Silver</span>
     </li>
     <li>
       <a href="https://www.indigoaward.com/winners/4629" target="_blank" rel="noopener">Indigo Awards 2022</a>
-      <span class="award-detail"> — 2 Gold, 2 Silver — UX/UI Design</span>
+      <span class="award-detail"> — Digital Audit Experience: 2× Gold, 2× Silver</span>
     </li>
     <li>
-      <a href="https://www.red-dot.org/project/dxa-digital-experience-audit-55219" target="_blank" rel="noopener">Red Dot 2021</a>
-      <span class="award-detail"> — Communication Design</span>
+      <a href="https://www.red-dot.org/project/dxa-digital-experience-audit-55219" target="_blank" rel="noopener">Red Dot Awards 2021</a>
+      <span class="award-detail"> — Brands & Communication Design</span>
     </li>
     <li>
       <span style="font-weight: 600;">Manny Award 2013</span>
-      <span class="award-detail"> — Pharma Marketing Excellence</span>
+      <span class="award-detail"> — Best Non-Branded Campaign, "Get Your Shift Together"</span>
     </li>
     <li>
-      <span style="font-weight: 600;">Pharma Choice 2011</span>
-      <span class="award-detail"> — Industry Recognition</span>
+      <span style="font-weight: 600;">Pharma Choice Award 2011</span>
+      <span class="award-detail"> — Bronze, Professional Mobile Site</span>
     </li>
   </ul>
 </section>
 
 <section>
-  <div class="section-title">Capabilities</div>
-  <div class="skills-grid">
-    <span class="skill-category">Strategy</span>
-    <span class="skill-items">AI product strategy, discovery & research, stakeholder alignment, brief to build</span>
-
-    <span class="skill-category">Design</span>
-    <span class="skill-items">Design systems, UX/UI, component libraries, regulated environments (FDA/HIPAA)</span>
-
-    <span class="skill-category">Engineering</span>
-    <span class="skill-items">Multi-agent AI systems, automation, full-stack development, deployment</span>
-
-    <span class="skill-category">Leadership</span>
-    <span class="skill-items">Team scaling (2→30), cross-functional collaboration, enterprise stakeholders</span>
-  </div>
-</section>
-
-<section>
   <div class="section-title">Education</div>
-  <div class="edu-item">
-    <span class="edu-degree">B.A. Labor Studies and Employment Relations</span>
-    <span class="edu-school"> — Rutgers University, New Brunswick, 2010</span>
-  </div>
+  <p class="edu">BA Labor Studies & Employee Relations — Rutgers University, 2010</p>
 </section>
 
 </div>
