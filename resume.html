@@ -49,6 +49,47 @@
     color: var(--ink);
     background: var(--surface);
     padding: var(--space-xl);
+    padding-top: calc(var(--space-xl) + 50px);
+  }
+
+  /* Download button */
+  .download-btn {
+    position: fixed;
+    top: var(--space-m);
+    right: var(--space-m);
+    z-index: 100;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--surface);
+    background: var(--ink);
+    padding: 0.6rem 1.2rem;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background 0.2s, transform 0.15s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+
+  .download-btn:hover {
+    background: var(--accent);
+    transform: translateY(-1px);
+  }
+
+  .download-btn svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  @media print {
+    .download-btn {
+      display: none;
+    }
+    body {
+      padding-top: var(--space-xl);
+    }
   }
 
   .resume {
@@ -258,6 +299,11 @@
 </style>
 </head>
 <body>
+
+<a href="Wally_Mostafa_Resume.pdf" class="download-btn" download>
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+  Download PDF
+</a>
 
 <div class="resume">
 
