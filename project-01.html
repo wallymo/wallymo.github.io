@@ -90,16 +90,138 @@
   .stat-number { font-family: var(--font-display); font-size: clamp(2rem, 3vw, 2.8rem); font-weight: 800; color: var(--ink); letter-spacing: -0.03em; line-height: 1.1; }
   .stat-label { font-size: 0.75rem; font-weight: 500; text-transform: uppercase; letter-spacing: 0.1em; color: var(--ink-muted); margin-top: 4px; }
 
+  /* Big stats grid */
+  .big-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-l);
+    max-width: var(--max-w);
+    margin: 0 auto;
+    padding: var(--space-2xl) var(--space-l);
+  }
+  .big-stat { text-align: center; }
+  .big-stat-number {
+    font-family: var(--font-display);
+    font-size: clamp(3rem, 6vw, 5rem);
+    font-weight: 800;
+    color: var(--accent);
+    letter-spacing: -0.03em;
+    line-height: 1;
+  }
+  .big-stat-label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--ink);
+    margin-top: var(--space-s);
+  }
+  .big-stat-note {
+    font-size: 0.8rem;
+    color: var(--ink-muted);
+    margin-top: 4px;
+  }
+
   /* Section */
   section { padding: var(--space-2xl) var(--space-l); }
   .inner { max-width: var(--max-w); margin: 0 auto; }
   .section-label { font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.18em; color: var(--accent); margin-bottom: var(--space-s); }
   .section-heading { font-family: var(--font-display); font-size: clamp(1.6rem, 2.8vw, 2.2rem); font-weight: 700; letter-spacing: -0.025em; color: var(--ink); margin-bottom: var(--space-l); max-width: 24ch; line-height: 1.15; }
+  .section-heading-wide { max-width: 36ch; }
 
   /* Content blocks */
   .content-grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-xl); align-items: start; }
   .content-grid p { color: var(--ink-soft); font-size: 1rem; line-height: 1.75; margin-bottom: var(--space-m); }
   .content-grid p:last-child { margin-bottom: 0; }
+
+  /* Challenges list */
+  .challenges-list {
+    list-style: none;
+    display: grid;
+    gap: var(--space-l);
+  }
+  .challenges-list li {
+    padding-left: var(--space-l);
+    border-left: 3px solid var(--accent);
+  }
+  .challenges-list h3 {
+    font-family: var(--font-display);
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--ink);
+    margin-bottom: var(--space-xs);
+  }
+  .challenges-list p {
+    color: var(--ink-soft);
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+
+  /* Research impact cards */
+  .research-grid {
+    display: grid;
+    gap: var(--space-xl);
+  }
+  .research-card {
+    background: var(--surface-warm);
+    border-radius: 8px;
+    padding: var(--space-xl);
+  }
+  .research-card h3 {
+    font-family: var(--font-display);
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--ink);
+    margin-bottom: var(--space-m);
+  }
+  .research-finding,
+  .research-impact {
+    margin-bottom: var(--space-m);
+  }
+  .research-finding:last-child,
+  .research-impact:last-child {
+    margin-bottom: 0;
+  }
+  .research-finding h4,
+  .research-impact h4 {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--accent);
+    margin-bottom: var(--space-xs);
+  }
+  .research-finding p,
+  .research-impact p {
+    color: var(--ink-soft);
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+
+  /* Solutions grid */
+  .solutions-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-l);
+  }
+  .solution-item {
+    padding: var(--space-l);
+    background: var(--surface);
+    border: 1px solid var(--rule-light);
+    border-radius: 4px;
+  }
+  .solution-item h3 {
+    font-family: var(--font-display);
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--ink);
+    margin-bottom: var(--space-s);
+  }
+  .solution-item p {
+    color: var(--ink-soft);
+    font-size: 0.92rem;
+    line-height: 1.7;
+  }
 
   /* Placeholder images */
   .placeholder {
@@ -179,6 +301,62 @@
   .dark .outcomes li strong { color: var(--surface); }
   .dark .outcomes li span { color: rgba(248,245,240,0.6); }
 
+  /* Awards highlight */
+  .awards-highlight {
+    background: var(--surface-warm);
+    padding: var(--space-xl) var(--space-l);
+    border-radius: 8px;
+    margin-top: var(--space-l);
+  }
+  .awards-highlight h3 {
+    font-family: var(--font-display);
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--accent);
+    margin-bottom: var(--space-s);
+  }
+  .awards-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-m);
+  }
+  .awards-list li {
+    font-size: 0.9rem;
+    color: var(--ink-soft);
+    padding: var(--space-xs) var(--space-s);
+    background: var(--surface);
+    border-radius: 4px;
+    border: 1px solid var(--rule-light);
+  }
+
+  /* Growth metrics */
+  .growth-metrics {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-xl);
+    max-width: var(--max-w);
+    margin: 0 auto;
+    padding: var(--space-2xl) var(--space-l);
+    text-align: center;
+  }
+  .growth-metric-number {
+    font-family: var(--font-display);
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 800;
+    color: var(--accent);
+    letter-spacing: -0.03em;
+    line-height: 1;
+  }
+  .growth-metric-label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--ink);
+    margin-top: var(--space-s);
+  }
+
   /* Next project */
   .next-project {
     padding: var(--space-2xl) var(--space-l);
@@ -197,6 +375,12 @@
     padding: var(--space-l) var(--space-l);
     border-top: 1px solid var(--rule-light);
     text-align: center; font-size: 0.78rem; color: var(--ink-muted);
+  }
+
+  @media (max-width: 768px) {
+    .big-stats { grid-template-columns: repeat(2, 1fr); }
+    .solutions-grid { grid-template-columns: 1fr; }
+    .growth-metrics { grid-template-columns: 1fr; gap: var(--space-l); }
   }
 
   @media (max-width: 640px) {
@@ -228,11 +412,15 @@
     .next-project a { font-size: clamp(1.4rem, 6vw, 2rem); }
     footer { padding: var(--space-m) 24px; }
     .next-project { margin-bottom: var(--space-l); }
+    .big-stats { padding: var(--space-xl) 24px; }
+    .research-card { padding: var(--space-l); }
+    .growth-metrics { padding: var(--space-xl) 24px; }
   }
   @media (max-width: 380px) {
     .stats-bar { grid-template-columns: 1fr; }
     .project-hero h1 { font-size: 2rem; }
     .pullquote blockquote { font-size: 1.15rem; hyphens: auto; -webkit-hyphens: auto; }
+    .big-stats { grid-template-columns: 1fr; }
   }
 
   @media (prefers-reduced-motion: reduce) {
@@ -251,10 +439,10 @@
 <div class="project-hero">
   <div class="project-number">01</div>
   <h1>Enterprise Design System</h1>
-  <div class="project-role">Kinesso (IPG) · Director, Experience &amp; Innovation · 2020–2023</div>
+  <div class="project-role">Kinesso (IPG) · Director, Experience & Innovation · 2020–2023</div>
   <p class="project-summary">
-            Joined as the second design hire. Left three years later with a 30-person team, an award-winning design system, and a working process that scaled across 22 brands and 7,000+ daily users.
-          </p>
+    Joined as the second design hire. Left three years later with a 30-person team, an award-winning design system, and a working process that scaled across 22 brands and 7,000+ daily users.
+  </p>
 </div>
 
 <!-- STATS -->
@@ -288,6 +476,109 @@
   </div>
 </section>
 
+<!-- ROLE / CHALLENGE / SOLUTION / IMPACT -->
+<section style="background: var(--surface-tint);">
+  <div class="inner">
+    <div class="content-grid">
+      <div>
+        <div class="section-label">The Challenge</div>
+        <p>In a developer-led environment, the lack of a unified design language resulted in inconsistency across products, hindering usability and brand recognition. With over 20 products in the Marketing Intelligence Suite, we needed to refresh this fragmented landscape and make it contemporary, scalable, and ready for our expansive product suite's transition to SaaS.</p>
+      </div>
+      <div>
+        <div class="section-label">The Solution</div>
+        <p>Crafted an award-winning design system underpinned by thorough research. This robust system included <strong>500 components, 140 styles, 300 icons, and 50 personas</strong>, ensuring a consistent and intuitive user experience across all product touchpoints.</p>
+        <div class="awards-highlight">
+          <h3>Indigo Awards 2023</h3>
+          <ul class="awards-list">
+            <li>Gold — UX Interface & Navigation</li>
+            <li>Gold — Digital Tools & Utilities</li>
+            <li>Gold — Graphic Design</li>
+            <li>Silver — Interaction</li>
+            <li>Silver — Interactive Design</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SYSTEM SCALE STATS -->
+<div class="big-stats">
+  <div class="big-stat">
+    <div class="big-stat-number">500</div>
+    <div class="big-stat-label">Components</div>
+    <div class="big-stat-note">all created from scratch</div>
+  </div>
+  <div class="big-stat">
+    <div class="big-stat-number">140</div>
+    <div class="big-stat-label">Styles</div>
+    <div class="big-stat-note">tokens & theming</div>
+  </div>
+  <div class="big-stat">
+    <div class="big-stat-number">300</div>
+    <div class="big-stat-label">Icons</div>
+    <div class="big-stat-note">custom iconography</div>
+  </div>
+  <div class="big-stat">
+    <div class="big-stat-number">50</div>
+    <div class="big-stat-label">Personas</div>
+    <div class="big-stat-note">research-driven</div>
+  </div>
+</div>
+
+<!-- KEY CHALLENGES -->
+<section>
+  <div class="inner">
+    <div class="section-label">Key Challenges</div>
+    <h2 class="section-heading">What we were up against.</h2>
+    <ul class="challenges-list">
+      <li>
+        <h3>Developer-Driven Approach</h3>
+        <p>With over 20 products in the Marketing Intelligence Suite, the prevalent developer-led design approach often led to overlooking the nuances of user needs and usability principles.</p>
+      </li>
+      <li>
+        <h3>Scaling and Consistency</h3>
+        <p>The task of implementing a consistent design system across the diverse suite of products seemed monumental, given the different natures and unique challenges posed by each product.</p>
+      </li>
+      <li>
+        <h3>Feedback Vacuum</h3>
+        <p>The existing system was rolled out without incorporating user feedback, leaving a significant gap in understanding the system's real-world usability and effectiveness.</p>
+      </li>
+      <li>
+        <h3>Evolution & Adaptability</h3>
+        <p>It wasn't enough to create a design system; it needed to be a living entity. The design framework had to be flexible and adaptive, ready to grow with feedback and changing technological landscapes.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- SOLUTIONS OVERVIEW -->
+<section style="background: var(--surface-warm);">
+  <div class="inner">
+    <div class="section-label">Solutions Overview</div>
+    <h2 class="section-heading section-heading-wide">Embarking on the design system journey for the MIE suite was no small feat.</h2>
+    <p style="color: var(--ink-soft); max-width: 60ch; margin-bottom: var(--space-xl);">It was a dynamic process that called for cohesive collaboration, meticulous research, and strategic thinking. Throughout the creation and refinement of this system, certain aspects stood out as particularly influential in shaping product design and user experience.</p>
+    <div class="solutions-grid">
+      <div class="solution-item">
+        <h3>Atomic Modular Design</h3>
+        <p>The backbone of our design system, this approach deconstructed designs into their smallest units. This granularity fostered consistency and facilitated smoother integrations, allowing us to construct varied yet cohesive interfaces.</p>
+      </div>
+      <div class="solution-item">
+        <h3>Unified Language & Components</h3>
+        <p>We aimed to bring harmony to the suite by developing a unified design language. Shared components streamlined production, maintained consistency across products, and simplified the developer experience.</p>
+      </div>
+      <div class="solution-item">
+        <h3>User-Centric Design</h3>
+        <p>Every decision and design choice was backed by user feedback and research. By truly understanding our users' needs, we ensured that our design system genuinely resonated and offered practical value.</p>
+      </div>
+      <div class="solution-item">
+        <h3>Living Documentation</h3>
+        <p>Recognizing the ever-evolving nature of tech and design, our system was conceived as a living document. It grows, adapts, and evolves in tandem with user feedback, industry trends, and technological advancements.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- THE CHALLENGE -->
 <section>
   <div class="inner">
@@ -295,12 +586,8 @@
     <h2 class="section-heading">No design function. No shared language. 22 brands doing their own thing.</h2>
     <div class="content-grid">
       <div>
-        <p>
-            When I arrived, Kinesso was engineering-first. There was no design practice. Every analytics product in the IPG portfolio was built separately, each with different patterns, components, and visual languages. Users bouncing between brands felt like they were using completely different products.
-          </p>
-        <p>
-            The ask was simple: fix this. The work turned out to be organizational change dressed as design.
-          </p>
+        <p>When I arrived, Kinesso was engineering-first. There was no design practice. Every analytics product in the IPG portfolio was built separately, each with different patterns, components, and visual languages. Users bouncing between brands felt like they were using completely different products.</p>
+        <p>The ask was simple: fix this. The work turned out to be organizational change dressed as design.</p>
       </div>
       <div>
         <div style="width:100%;aspect-ratio:16/10;border-radius:4px;overflow:hidden"><img src="assets/ds-whitelabel.jpg" alt="Two separate analytics platforms — Kinesso Command Center and Mastermind — before design system unification" style="width:100%;height:100%;object-fit:cover;border-radius:4px;" loading="lazy"></div>
@@ -316,15 +603,9 @@
     <h2 class="section-heading">Build the team, then build the system. Not the other way around.</h2>
     <div class="content-grid">
       <div>
-        <p>
-            Most design system projects start by building components. I started by hiring people. Brought in the first UX researchers, the first interaction designers, the first people who knew how to think about visual systems. We understood what was broken before we drew anything.
-          </p>
-        <p>
-            Then we went through every product in the portfolio. Mapped out what patterns existed, where things overlapped, and built a token system that could handle 22 different brands without forking the whole codebase.
-          </p>
-        <p>
-            The system included governance, contribution models, and adoption playbooks. We worked directly with engineering teams to integrate it rather than just handing it off.
-          </p>
+        <p>Most design system projects start by building components. I started by hiring people. Brought in the first UX researchers, the first interaction designers, the first people who knew how to think about visual systems. We understood what was broken before we drew anything.</p>
+        <p>Then we went through every product in the portfolio. Mapped out what patterns existed, where things overlapped, and built a token system that could handle 22 different brands without forking the whole codebase.</p>
+        <p>The system included governance, contribution models, and adoption playbooks. We worked directly with engineering teams to integrate it rather than just handing it off.</p>
       </div>
       <div>
         <div style="width:100%;aspect-ratio:16/10;border-radius:4px;overflow:hidden"><img src="assets/ds-components-overview.jpg" alt="Splash Design System foundations — color palettes, typography scales, button variants, segmented controls, and chart components" style="width:100%;height:100%;object-fit:cover;border-radius:4px;background:#f8f5f0" loading="lazy"></div>
@@ -347,6 +628,93 @@
     "This wasn't a component library exercise. It was organizational transformation."
   </blockquote>
   <cite>— The framing that got stakeholder buy-in</cite>
+</div>
+
+<!-- RESEARCH IMPACT -->
+<section style="background: var(--surface-warm);">
+  <div class="inner">
+    <div class="section-label">Research Impact</div>
+    <h2 class="section-heading section-heading-wide">During the initial two months, while our UI designers shaped the look and feel, I took a parallel path.</h2>
+    <p style="color: var(--ink-soft); max-width: 65ch; margin-bottom: var(--space-xl);">I engaged in interviews with our teams to pinpoint design system priorities. These interactions highlighted key features to address and provided actionable insights into a feasible rollout strategy. Here are the key findings that drove our roadmap forward.</p>
+
+    <div class="research-grid">
+      <div class="research-card">
+        <h3>System-Wide Navigation</h3>
+        <div class="research-finding">
+          <h4>Research Finding</h4>
+          <p>Users felt overwhelmed by the suite's navigation, often being presented with products they didn't use. Despite the product abundance, most users only required 3-4 products tailored to their tasks.</p>
+        </div>
+        <div class="research-impact">
+          <h4>Design Impact</h4>
+          <p>We redefined the navigation process so users saw only relevant products. We introduced customization options, allowing users to tailor navigation to their preferences — streamlining their journey and adding personalization.</p>
+        </div>
+      </div>
+
+      <div class="research-card">
+        <h3>Global Color Picker</h3>
+        <div class="research-finding">
+          <h4>Research Finding</h4>
+          <p>Users frequently exported data viz from our platform, adjusting it externally to match their clients' branding requirements for presentations and reports. This added extra steps to their workflow.</p>
+        </div>
+        <div class="research-impact">
+          <h4>Design Impact</h4>
+          <p>We introduced dynamic customization — users could now modify color schemes of entire data pages within our platform. They could save and preset "brand/client" colors, drastically cutting down time spent on manual adjustments.</p>
+        </div>
+      </div>
+
+      <div class="research-card">
+        <h3>Design Excellence</h3>
+        <div class="research-finding">
+          <h4>Research Finding</h4>
+          <p>With team expansion and broad application of our design system, stakeholders were concerned about maintaining design sanctity across different platforms and iterations.</p>
+        </div>
+        <div class="research-impact">
+          <h4>Design Impact</h4>
+          <p>We developed the <strong>'Design Bot'</strong> — a proprietary Chrome extension that audited designs for adherence to our components and templates. It generated comprehensive reports, flagging inconsistencies and offering corrective solutions.</p>
+        </div>
+      </div>
+
+      <div class="research-card">
+        <h3>Personalization</h3>
+        <div class="research-finding">
+          <h4>Research Finding</h4>
+          <p>Users consistently expressed desire for more tailored interaction with our suite, emphasizing the need for personalization in viewing, processing, and interacting with data dashboards.</p>
+        </div>
+        <div class="research-impact">
+          <h4>Design Impact</h4>
+          <p>Our design system prioritized user personalization with customizable profile experiences. Users could adjust how they viewed and interacted with data. We also introduced productivity features to beta users to enhance satisfaction.</p>
+        </div>
+      </div>
+
+      <div class="research-card">
+        <h3>White Label Automation</h3>
+        <div class="research-finding">
+          <h4>Research Finding</h4>
+          <p>As our client base grew, there was increasing demand to tailor our ecosystem to align more closely with clients' in-house branding elements.</p>
+        </div>
+        <div class="research-impact">
+          <h4>Design Impact</h4>
+          <p>We introduced the <strong>"White Label Automation Builder"</strong> — an automated, sequential process for product leads and client engagement teams to devise custom looks for new clients while maintaining core design system pillars.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GROWTH METRICS -->
+<div class="growth-metrics">
+  <div>
+    <div class="growth-metric-number">+68%</div>
+    <div class="growth-metric-label">avg. users YoY</div>
+  </div>
+  <div>
+    <div class="growth-metric-number">~7k+</div>
+    <div class="growth-metric-label">avg. monthly users</div>
+  </div>
+  <div>
+    <div class="growth-metric-number">+79%</div>
+    <div class="growth-metric-label">avg. usage rate YoY</div>
+  </div>
 </div>
 
 <!-- SCALING -->
@@ -400,15 +768,9 @@
         </div>
       </div>
       <div>
-        <p>
-            The team grew from two designers to 30 people across New York, Chicago, Los Angeles, and Warsaw. I built the hiring process, defined career levels, set up design reviews, and created the operational rhythm.
-          </p>
-        <p>
-            Every hire was deliberate. We filled gaps in research, interaction design, visual systems, and accessibility. By year two, design had a voice in product decisions for the first time.
-          </p>
-        <p>
-            The real lesson: hire designers to shift how the organization thinks about product quality, not to fill open slots.
-          </p>
+        <p>The team grew from two designers to 30 people across New York, Chicago, Los Angeles, and Warsaw. I built the hiring process, defined career levels, set up design reviews, and created the operational rhythm.</p>
+        <p>Every hire was deliberate. We filled gaps in research, interaction design, visual systems, and accessibility. By year two, design had a voice in product decisions for the first time.</p>
+        <p>The real lesson: hire designers to shift how the organization thinks about product quality, not to fill open slots.</p>
       </div>
     </div>
   </div>
@@ -430,7 +792,7 @@
       </li>
       <li>
         <strong>3 Gold, 2 Silver — Indigo 2023</strong>
-        <span>The system's most decorated year. Recognized for UX design, interaction design, and design systems.</span>
+        <span>UX Interface & Navigation, Digital Tools & Utilities, Graphic Design, Interaction, Interactive Design.</span>
       </li>
       <li>
         <strong>Red Dot Communication Design 2021</strong>
@@ -455,20 +817,12 @@
     <h2 class="section-heading">What I'd tell someone doing this for the first time.</h2>
     <div class="content-grid">
       <div>
-        <p>
-            Building a design system is easy. Getting engineers to believe it's worth the investment is hard. That meant showing up to every sprint, every architecture call, every planning session, whether design was supposed to be there or not.
-          </p>
-        <p>
-            The system succeeded because adoption was easier than the alternative. We didn't mandate it. We just made the default path the best one.
-          </p>
+        <p>Building a design system is easy. Getting engineers to believe it's worth the investment is hard. That meant showing up to every sprint, every architecture call, every planning session, whether design was supposed to be there or not.</p>
+        <p>The system succeeded because adoption was easier than the alternative. We didn't mandate it. We just made the default path the best one.</p>
       </div>
       <div>
-        <p>
-            If I did it again, I'd push harder on contribution models earlier. The system worked best when teams owned their components, not when they were just using ours.
-          </p>
-        <p>
-            The awards were nice. But the real win was watching engineering teams file feature requests against the design system instead of building their own patterns. That's when you know it's actually working.
-          </p>
+        <p>If I did it again, I'd push harder on contribution models earlier. The system worked best when teams owned their components, not when they were just using ours.</p>
+        <p>The awards were nice. But the real win was watching engineering teams file feature requests against the design system instead of building their own patterns. That's when you know it's actually working.</p>
       </div>
     </div>
   </div>
