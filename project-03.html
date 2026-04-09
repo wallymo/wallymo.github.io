@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Product Studio — Wally Mostafa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1a1714; --ink-soft: #38332d; --ink-muted: #5c5550;
+    --surface: #f8f5f0; --surface-warm: #f0ebe3; --surface-deep: #e6dfd5;
+    --surface-tint: #f4f0e8; --accent: #c45a2d; --accent-hover: #a84820;
+    --accent-light: rgba(196,90,45,0.08); --rule: #d4ccc2; --rule-light: #e4ddd4;
+    --font-display: 'Syne', sans-serif; --font-body: 'Instrument Sans', sans-serif;
+    --max-w: 1140px;
+    --space-xs: clamp(0.25rem,0.5vw,0.5rem); --space-s: clamp(0.5rem,1vw,0.75rem);
+    --space-m: clamp(1rem,2vw,1.5rem); --space-l: clamp(1.5rem,3vw,2.5rem);
+    --space-xl: clamp(2.5rem,5vw,4rem); --space-2xl: clamp(4rem,8vw,7rem);
+  }
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased}
+  body{font-family:var(--font-body);font-size:clamp(1rem,1.15vw,1.125rem);line-height:1.7;color:var(--ink);background:var(--surface);letter-spacing:0.005em}
+
+  nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:var(--space-s) var(--space-l);display:flex;justify-content:space-between;align-items:center;background:rgba(248,245,240,0.92);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--rule-light)}
+  nav .name{font-family:var(--font-display);font-weight:700;font-size:1.05rem;color:var(--ink);text-decoration:none;letter-spacing:-0.02em}
+  nav .back{font-size:0.85rem;font-weight:500;color:var(--ink-muted);text-decoration:none;transition:color 0.2s;padding:0.5rem 0}
+  nav .back:hover{color:var(--accent)}
+
+  .project-hero{padding:calc(80px + var(--space-2xl)) var(--space-l) var(--space-xl);max-width:var(--max-w);margin:0 auto}
+  .project-number{font-family:var(--font-display);font-size:clamp(5rem,10vw,8rem);font-weight:800;color:var(--surface-deep);line-height:1;letter-spacing:-0.05em}
+  .project-hero h1{font-family:var(--font-display);font-size:clamp(2.5rem,5vw,4rem);font-weight:800;letter-spacing:-0.035em;color:var(--ink);line-height:1.05;margin-top:var(--space-s)}
+  .project-role{font-size:0.85rem;font-weight:600;text-transform:uppercase;letter-spacing:0.1em;color:var(--accent);margin-top:var(--space-m)}
+  .project-summary{font-size:clamp(1.1rem,1.4vw,1.25rem);color:var(--ink-soft);max-width:55ch;line-height:1.7;margin-top:var(--space-l)}
+
+  .stats-bar{display:flex;gap:var(--space-xl);flex-wrap:wrap;padding:var(--space-xl) var(--space-l);max-width:var(--max-w);margin:0 auto;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+  .stat{display:flex;flex-direction:column}
+  .stat-number{font-family:var(--font-display);font-size:clamp(2rem,3vw,2.8rem);font-weight:800;color:var(--ink);letter-spacing:-0.03em;line-height:1.1}
+  .stat-label{font-size:0.75rem;font-weight:500;text-transform:uppercase;letter-spacing:0.1em;color:var(--ink-muted);margin-top:4px}
+
+  section{padding:var(--space-2xl) var(--space-l)}
+  .inner{max-width:var(--max-w);margin:0 auto}
+  .section-label{font-size:0.75rem;font-weight:600;text-transform:uppercase;letter-spacing:0.18em;color:var(--accent);margin-bottom:var(--space-s)}
+  .section-heading{font-family:var(--font-display);font-size:clamp(1.6rem,2.8vw,2.2rem);font-weight:700;letter-spacing:-0.025em;color:var(--ink);margin-bottom:var(--space-l);max-width:24ch;line-height:1.15}
+
+  .content-grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--space-xl);align-items:start}
+  .content-grid p{color:var(--ink-soft);font-size:1rem;line-height:1.75;margin-bottom:var(--space-m)}
+  .content-grid p:last-child{margin-bottom:0}
+
+  .placeholder{width:100%;aspect-ratio:16/10;border-radius:4px;display:flex;align-items:center;justify-content:center;font-family:var(--font-body);font-size:0.82rem;font-weight:500;text-transform:uppercase;letter-spacing:0.1em}
+  .ph-warm{background:var(--surface-warm);color:var(--ink-muted);border:1px solid var(--rule-light)}
+  .ph-dark{background:var(--ink);color:rgba(248,245,240,0.4)}
+  .ph-accent{background:var(--accent-light);color:var(--accent);border:1px solid rgba(196,90,45,0.15)}
+  .placeholder-wide{aspect-ratio:21/9}
+
+  .full-bleed{padding:0 var(--space-l);max-width:var(--max-w);margin:0 auto}
+  .image-grid{display:grid;gap:var(--space-m);max-width:var(--max-w);margin:0 auto;padding:0 var(--space-l)}
+  .image-grid--3{grid-template-columns:1fr 1fr 1fr}
+
+  .pullquote{max-width:var(--max-w);margin:0 auto;padding:var(--space-2xl) var(--space-l)}
+  .pullquote blockquote{font-family:var(--font-display);font-size:clamp(1.5rem,2.5vw,2rem);font-weight:600;color:var(--ink);letter-spacing:-0.02em;line-height:1.35;max-width:30ch;position:relative;padding-left:var(--space-l);border-left:3px solid var(--accent)}
+  .pullquote cite{display:block;margin-top:var(--space-m);padding-left:var(--space-l);font-family:var(--font-body);font-size:0.88rem;font-style:normal;font-weight:500;color:var(--ink-muted)}
+
+  .dark{background:var(--ink);color:var(--surface)}
+  .dark .section-label{color:var(--accent)}
+  .dark .section-heading{color:var(--surface)}
+  .dark p{color:rgba(248,245,240,0.7)}
+
+  /* Product cards */
+  .products{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:var(--space-l);margin-top:var(--space-l)}
+  .product-card{padding:var(--space-l);border:1.5px solid var(--rule);border-radius:4px;background:var(--surface);transition:border-color 0.2s,transform 0.2s}
+  .product-card:hover{border-color:var(--accent);transform:translateY(-2px)}
+  .product-card h4{font-family:var(--font-display);font-size:1.15rem;font-weight:700;color:var(--ink);margin-bottom:var(--space-xs)}
+  .product-card .product-type{font-size:0.75rem;font-weight:600;text-transform:uppercase;letter-spacing:0.1em;color:var(--accent);margin-bottom:var(--space-s)}
+  .product-card p{font-size:0.92rem;color:var(--ink-soft);line-height:1.65}
+
+  .outcomes{list-style:none;display:grid;gap:var(--space-m);grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+  .outcomes li{padding:var(--space-m) var(--space-l);border:1px solid var(--rule-light);border-radius:4px;background:var(--surface)}
+  .outcomes li strong{display:block;font-family:var(--font-display);font-size:1.1rem;font-weight:700;color:var(--ink);margin-bottom:4px}
+  .outcomes li span{font-size:0.9rem;color:var(--ink-soft);line-height:1.6}
+  .dark .outcomes li{border-color:rgba(248,245,240,0.1);background:rgba(248,245,240,0.04)}
+  .dark .outcomes li strong{color:var(--surface)}
+  .dark .outcomes li span{color:rgba(248,245,240,0.6)}
+
+  .next-project{padding:var(--space-2xl) var(--space-l);background:var(--surface-warm);text-align:center}
+  .next-project .label{font-size:0.75rem;font-weight:600;text-transform:uppercase;letter-spacing:0.18em;color:var(--ink-muted);margin-bottom:var(--space-s)}
+  .next-project a{display:inline-block;font-family:var(--font-display);font-size:clamp(1.8rem,3.5vw,2.8rem);font-weight:800;letter-spacing:-0.03em;color:var(--ink);text-decoration:none;transition:color 0.2s}
+  .next-project a:hover{color:var(--accent)}
+  .next-project .nav-sub{margin-top:var(--space-m)}
+  .next-project .nav-sub a{font-size:0.88rem;font-weight:500;color:var(--ink-muted);transition:color 0.2s}
+  .next-project .nav-sub a:hover{color:var(--accent)}
+
+  footer{padding:var(--space-l) var(--space-l);border-top:1px solid var(--rule-light);text-align:center;font-size:0.78rem;color:var(--ink-muted)}
+
+  @media(max-width:640px){
+    section{padding-left:24px;padding-right:24px}
+    nav{padding-left:24px;padding-right:24px}
+    nav .name{font-size:0.95rem}
+    nav .back{min-height:44px;display:inline-flex;align-items:center;font-size:0.9rem}
+    .project-hero{padding-left:24px;padding-right:24px;padding-top:calc(60px + var(--space-xl))}
+    .project-hero h1{font-size:clamp(2.2rem,9vw,3rem)}
+    .project-number{font-size:clamp(4rem,14vw,6rem)}
+    .project-summary{font-size:1rem}
+    .stats-bar{padding:var(--space-l) 24px;display:grid;grid-template-columns:1fr 1fr;gap:var(--space-l) var(--space-m)}
+    .stat-number{font-size:clamp(1.5rem,5.5vw,2rem)}
+    .stat-label{font-size:0.78rem}
+    .content-grid{grid-template-columns:1fr}
+    .content-grid p{font-size:1rem;line-height:1.7}
+    .full-bleed{padding:0 24px}
+    .image-grid{padding:0 24px}
+    .image-grid--3{grid-template-columns:1fr}
+    .pullquote{padding:var(--space-xl) 24px}
+    .pullquote blockquote{font-size:clamp(1.2rem,5vw,1.6rem);padding-left:var(--space-m)}
+    .pullquote cite{padding-left:var(--space-m);font-size:0.85rem}
+    .section-heading{font-size:clamp(1.4rem,5.5vw,1.8rem)}
+    .outcomes{grid-template-columns:1fr}
+    .outcomes li{padding:var(--space-m)}
+    .outcomes li strong{font-size:1rem}
+    .outcomes li span{font-size:0.92rem}
+    .products{grid-template-columns:1fr}
+    .product-card{padding:var(--space-m)}
+    .product-card h4{font-size:1.1rem}
+    .product-card p{font-size:0.95rem}
+    .next-project{padding:var(--space-xl) 24px}
+    .next-project a{font-size:clamp(1.4rem,6vw,2rem)}
+    .next-project .nav-sub a{min-height:44px;display:inline-flex;align-items:center}
+    footer{padding:var(--space-m) 24px}
+    .next-project{margin-bottom:var(--space-l)}
+  }
+  @media(max-width:380px){
+    .stats-bar{grid-template-columns:1fr}
+    .project-hero h1{font-size:2rem}
+    .pullquote blockquote{font-size:1.15rem;hyphens:auto;-webkit-hyphens:auto}
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="name">Wally Mostafa</a>
+  <a href="index.html#work" class="back">← All Work</a>
+</nav>
+
+<div class="project-hero">
+  <div class="project-number">03</div>
+  <h1>AI Product Studio</h1>
+  <div class="project-role">One Block Away LLC · Founder &amp; AI Product Engineer · 2023–Present</div>
+  <p class="project-summary">
+            I built three production platforms and a multi-agent orchestration framework, all running live with real users. One person. No team.
+
+
+
+          </p>
+</div>
+
+<div class="stats-bar">
+  <div class="stat">
+    <span class="stat-number">3+</span>
+    <span class="stat-label">Shipped products</span>
+  </div>
+  <div class="stat">
+    <span class="stat-number">Solo</span>
+    <span class="stat-label">Full-stack founder</span>
+  </div>
+  <div class="stat">
+    <span class="stat-number">End-to-end</span>
+    <span class="stat-label">Concept to deploy</span>
+  </div>
+</div>
+
+<section>
+  <div class="full-bleed">
+    <div style="width:100%;aspect-ratio:21/9;border-radius:4px;overflow:hidden;background:#1a1714"><img src="assets/wallygpt-desktop.png" alt="WallyGPT — AI-powered portfolio chatbot with featured projects showcase, one of several shipped AI products" style="width:100%;height:100%;object-fit:cover;border-radius:4px;" loading="lazy"></div>
+  </div>
+</section>
+
+<!-- THE THESIS -->
+<section>
+  <div class="inner">
+    <div class="section-label">The Thesis</div>
+    <h2 class="section-heading">The best way to learn AI is to ship AI.</h2>
+    <div class="content-grid">
+      <div>
+        <p>
+            After leaving Kinesso, I didn't jump to another corporate gig. I started shipping things. Real products with real constraints, not experiments or polished demos. The reasoning was straightforward: if I'm telling companies how to do AI, I should have actually built AI products.
+
+
+
+          </p>
+        <p>
+            One Block Away was my testing ground. Each product meant the full cycle: find the problem, design it, architect it, build it, launch it, support it. Solo. No funding rounds or co-founders.
+
+
+
+          </p>
+      </div>
+      <div>
+        <div style="width:100%;aspect-ratio:16/10;border-radius:4px;overflow:hidden"><img src="assets/highlights-work.jpg" alt="Product development highlights — portfolio of shipped work across multiple platforms and AI applications" style="width:100%;height:100%;object-fit:cover;border-radius:4px;" loading="lazy"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section style="background: var(--surface-tint);">
+  <div class="inner">
+    <div class="section-label">What Shipped</div>
+    <h2 class="section-heading">Three platforms. Each solving a different problem.</h2>
+
+    <div class="products">
+      <div class="product-card">
+        <div class="product-type">Multi-Agent Coordination</div>
+        <h4>WeReady</h4>
+        <p>
+            A platform that routes tasks to specialized AI agents instead of throwing everything at one model. Orchestration isn't just wrapper code — it's a design problem that changes what the product can actually do.
+
+
+
+          </p>
+        <div style="width:100%;aspect-ratio:16/9;border-radius:4px;overflow:hidden"><img src="assets/ur-research-overview.jpg" alt="Multi-agent research coordination — systematic documentation and workflow orchestration" style="width:100%;height:100%;object-fit:cover;border-radius:4px;" loading="lazy"></div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-type">Real Estate AI</div>
+        <h4>ListingPal</h4>
+        <p>
+            Generates complete real estate listings in 90 seconds. Photos, descriptions, pricing, neighborhood breakdown. What took hours before, finished while the agent is still in the driveway.
+          </p>
+        <div style="width:100%;aspect-ratio:16/9;border-radius:4px;overflow:hidden"><img src="assets/ds-upload-logo.jpg" alt="AI-powered generation interface — upload-to-output workflow for rapid content creation" style="width:100%;height:100%;object-fit:cover;border-radius:4px;" loading="lazy"></div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-type">Workflow Automation</div>
+        <h4>BriefFlow</h4>
+        <p>
+            I built this because agencies kept asking the same question: how do you wrangle a hundred half-baked briefs into something you can actually execute? Takes a messy brief and turns it into structured work. Tasks, timelines, who does what. Simple as that.
+
+
+
+          </p>
+        <div style="width:100%;aspect-ratio:16/9;border-radius:4px;overflow:hidden"><img src="assets/ur-process.jpg" alt="Structured workflow generation — transforming unstructured input into organized task sequences" style="width:100%;height:100%;object-fit:cover;border-radius:4px;" loading="lazy"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PULLQUOTE -->
+<div class="pullquote">
+  <blockquote>
+    "The best founders I know don't just have ideas. They ship things that work."
+  </blockquote>
+  <cite>— The operating principle behind every project</cite>
+</div>
+
+<!-- BEYOND PRODUCTS -->
+<section>
+  <div class="inner">
+    <div class="section-label">Beyond Products</div>
+    <h2 class="section-heading">The infrastructure you don't see.</h2>
+    <div class="content-grid">
+      <div>
+        <p>
+            The products you can see are half the story. The other half is the infrastructure underneath. It's the same thinking applied to systems instead of features. How do things actually work when nobody's watching?
+
+
+
+          </p>
+        <p>
+            Multi-agent framework that assigns work to different AI models depending on what the task needs. A newsletter system that researches, writes, and publishes every day across different topics without touching it. A trading system that reads signals, executes strategies, and manages risk on its own.
+
+
+
+          </p>
+      </div>
+      <div>
+        <p>
+            None of this was built to look impressive. It was built to break in specific ways so I could fix them. Every system taught me something about architecture, reliability, and what separates a working prototype from something people actually use.
+
+
+
+          </p>
+        <p>
+            Building something you use yourself is the only way to learn what building for others actually takes. Your newsletter crashes at 4am, you learn monitoring. Your bot has a bad day, you learn guardrails. Stakes are real. Learning sticks.
+          </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- IMAGE BREAK -->
+<div class="image-grid image-grid--3" style="padding-top: var(--space-xl); padding-bottom: var(--space-xl);">
+  <div style="width:100%;aspect-ratio:16/10;border-radius:4px;overflow:hidden;background:#1a1714"><img src="assets/ds-hero-splash.jpg" alt="Multi-model orchestration architecture — routing tasks to specialized AI models based on complexity and requirements" style="width:100%;height:100%;object-fit:cover;border-radius:4px;" loading="lazy"></div>
+  <div style="width:100%;aspect-ratio:16/10;border-radius:4px;overflow:hidden;background:#1a1714"><img src="assets/dxa-userflow.jpg" alt="Automated content pipeline — systematic research, generation, and publishing workflow serving daily readers" style="width:100%;height:100%;object-fit:cover;border-radius:4px;" loading="lazy"></div>
+  <div style="width:100%;aspect-ratio:16/10;border-radius:4px;overflow:hidden;background:#1a1714"><img src="assets/ds-data-viz.jpg" alt="Signal processing and data visualization — real-time analytics for automated trading decisions" style="width:100%;height:100%;object-fit:cover;border-radius:4px;" loading="lazy"></div>
+</div>
+
+<!-- WHAT IT PROVES -->
+<section class="dark">
+  <div class="inner">
+    <div class="section-label">What This Proves</div>
+    <h2 class="section-heading">A single founder who can do all of it.</h2>
+    <ul class="outcomes">
+      <li>
+        <strong>Product Thinking</strong>
+        <span>Identifying real problems, scoping solutions, and making hard tradeoffs without a PM telling me what to build.</span>
+      </li>
+      <li>
+        <strong>Design Execution</strong>
+        <span>Every interface designed and built by the same person who architected the backend. No handoff gaps.</span>
+      </li>
+      <li>
+        <strong>Technical Architecture</strong>
+        <span>Multi-agent orchestration, RAG pipelines, trading algorithms, automated content systems. Production, not prototypes.</span>
+      </li>
+      <li>
+        <strong>Operational Maturity</strong>
+        <span>Monitoring, alerting, rollback procedures, knowledge graphs, structured logging. The stuff that keeps products alive after launch.</span>
+      </li>
+      <li>
+        <strong>Speed</strong>
+        <span>Concept to production in weeks, not quarters. Solo doesn't mean slow — it means no coordination overhead.</span>
+      </li>
+      <li>
+        <strong>Judgment</strong>
+        <span>Knowing when to ship good enough vs. when to invest in polish. Knowing when to use AI and when not to. The hardest skill to hire for.</span>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- NEXT -->
+<div class="next-project">
+  <div class="label">Back to Start</div>
+  <a href="project-01.html">Enterprise Design System →</a>
+  <div class="nav-sub">
+    <a href="index.html">← Return to portfolio</a>
+  </div>
+</div>
+
+<footer>&copy; 2026 Wally Mostafa · Raleigh, NC</footer>
+
+</body>
+</html>
