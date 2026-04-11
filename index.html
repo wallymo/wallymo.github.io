@@ -4,7 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Wally Mostafa — AI Product Strategist</title>
-<meta name="description" content="End to end. Brief to build. Problem to product. AI product strategist with 15 years turning complexity into things that work.">
+<meta name="description" content="AI product strategist who ships. Multi-agent platforms, pharma compliance AI, and enterprise systems — 15 years turning complexity into production products.">
+<meta property="og:title" content="Wally Mostafa — AI Product Strategist">
+<meta property="og:description" content="AI product strategist who ships. Multi-agent platforms, pharma compliance AI, and enterprise systems.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://misterpavano.github.io">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -466,6 +470,27 @@
 
   .work-link:hover { border-bottom-color: var(--accent); }
 
+  .work-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-top: var(--space-m);
+  }
+
+  .tag {
+    font-family: var(--font-body);
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--accent);
+    background: var(--accent-light);
+    border: 1px solid rgba(196, 90, 45, 0.15);
+    padding: 0.25rem 0.6rem;
+    border-radius: 3px;
+    white-space: nowrap;
+  }
+
   /* Divider between major sections */
   .section-divider {
     max-width: var(--max-w);
@@ -688,31 +713,35 @@
     to { opacity: 1; transform: translateY(0); }
   }
 
-  .reveal-ready .reveal {
+  /* Reveal animations — progressive enhancement only.
+     Elements are visible by default. JS adds .reveal-pending to hide them,
+     then IntersectionObserver adds .visible to animate them in.
+     If JS fails, everything stays visible. */
+  .reveal-pending {
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
   }
 
-  .reveal-ready .reveal.visible {
+  .reveal-pending.visible {
     opacity: 1;
     transform: translateY(0);
   }
 
   /* Stagger children */
-  .reveal-ready .stagger > * {
+  .stagger-pending > * {
     opacity: 0;
     transform: translateY(16px);
     transition: opacity 0.5s ease-out, transform 0.5s ease-out;
   }
 
-  .reveal-ready .stagger.visible > *:nth-child(1) { transition-delay: 0.05s; }
-  .reveal-ready .stagger.visible > *:nth-child(2) { transition-delay: 0.1s; }
-  .reveal-ready .stagger.visible > *:nth-child(3) { transition-delay: 0.15s; }
-  .reveal-ready .stagger.visible > *:nth-child(4) { transition-delay: 0.2s; }
-  .reveal-ready .stagger.visible > *:nth-child(5) { transition-delay: 0.25s; }
+  .stagger-pending.visible > *:nth-child(1) { transition-delay: 0.05s; }
+  .stagger-pending.visible > *:nth-child(2) { transition-delay: 0.1s; }
+  .stagger-pending.visible > *:nth-child(3) { transition-delay: 0.15s; }
+  .stagger-pending.visible > *:nth-child(4) { transition-delay: 0.2s; }
+  .stagger-pending.visible > *:nth-child(5) { transition-delay: 0.25s; }
 
-  .reveal-ready .stagger.visible > * {
+  .stagger-pending.visible > * {
     opacity: 1;
     transform: translateY(0);
   }
@@ -883,7 +912,7 @@
     <span>Problem to product</span>
   </div>
   <p class="hero-intro">
-            15 years turning complexity into things that work. Scaled design teams across multiple regions, shipped enterprise platforms used by thousands, built AI products for regulated industries where mistakes are expensive.
+            Built AI products for regulated industries where mistakes are expensive. Shipped multi-agent platforms, pharma compliance AI, and enterprise systems used by thousands — 15 years turning complexity into things that work.
           </p>
   <div class="hero-cta">
     <a href="#contact" class="btn-primary">Let's talk</a>
@@ -988,10 +1017,87 @@
 
     <div class="work-grid">
 
-      <!-- 01: Kinesso — standard layout -->
-      <a href="project-01.html" class="work-item reveal" style="text-decoration: none; color: inherit;">
+      <!-- 01: Hedgehox — Pharma AI (leads with AI) -->
+      <a href="project-02.html" class="work-item reveal" style="text-decoration: none; color: inherit;">
         <div class="work-meta">
           <div class="work-number">01</div>
+          <h3>Pharma AI Platform</h3>
+          <div class="role">Hedgehox<br>AI Implementation Partner</div>
+        </div>
+        <div class="work-body">
+          <p>
+            Building the AI layer for pharma operations. Claims detection with Gemini multimodal, automated routing, an end-to-end pharma OS. Working directly with enterprise clients on workshops, custom tools, and process redesign.
+          </p>
+          <p>
+            Fifteen years of pharma account work. UX methodology. Now AI. This is where all three actually converge. Not advising on AI from the outside. Shipping AI products in one of the most regulated industries on earth.
+          </p>
+          <div class="work-stats">
+            <div class="stat">
+              <span class="stat-number">3 wks → 4 days</span>
+              <!-- [REPLACE] with actual review cycle reduction -->
+              <span class="stat-label">MLR review cycle</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">FDA / HIPAA</span>
+              <span class="stat-label">Compliance domain</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">Multimodal AI</span>
+              <span class="stat-label">Text + image + video</span>
+            </div>
+          </div>
+          <div class="work-tags">
+            <span class="tag">LLM / VLM</span>
+            <span class="tag">Gemini</span>
+            <span class="tag">FDA / HIPAA</span>
+            <span class="tag">RAG</span>
+          </div>
+          <span class="work-link">View case study →</span>
+        </div>
+      </a>
+
+      <!-- 02: OBA — AI Product Studio -->
+      <a href="project-03.html" class="work-item reveal" style="text-decoration: none; color: inherit;">
+        <div class="work-meta">
+          <div class="work-number">02</div>
+          <h3>AI Product Studio</h3>
+          <div class="role">One Block Away LLC<br>Founder &amp; AI Product Engineer</div>
+        </div>
+        <div class="work-body">
+          <p>
+            Started solo building AI products. WeReady handles multi-agent coordination. ListingPal generates real estate listings in 90 seconds. BriefFlow automates workflows. Built each one myself — design, architecture, code, deployment.
+          </p>
+          <p>
+            Also built a multi-agent orchestration framework, automated newsletter infrastructure, and an options trading system. Solo the whole way.
+          </p>
+          <div class="work-stats">
+            <div class="stat">
+              <span class="stat-number">3</span>
+              <span class="stat-label">Shipped products</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">60+</span>
+              <span class="stat-label">Data signals</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">90 sec</span>
+              <span class="stat-label">Listing generation</span>
+            </div>
+          </div>
+          <div class="work-tags">
+            <span class="tag">Multi-Agent</span>
+            <span class="tag">Claude + Codex</span>
+            <span class="tag">Orchestration</span>
+            <span class="tag">Full-Stack</span>
+          </div>
+          <span class="work-link">View case study →</span>
+        </div>
+      </a>
+
+      <!-- 03: Kinesso — Enterprise Design System -->
+      <a href="project-01.html" class="work-item reveal" style="text-decoration: none; color: inherit;">
+        <div class="work-meta">
+          <div class="work-number">03</div>
           <h3>Enterprise Design System</h3>
           <div class="role">Kinesso (IPG)<br>Director, Experience &amp; Innovation</div>
         </div>
@@ -1016,71 +1122,10 @@
               <span class="stat-label">Team scale</span>
             </div>
           </div>
-          <span class="work-link">View case study →</span>
-        </div>
-      </a>
-
-      <!-- 02: Hedgehox -->
-      <a href="project-02.html" class="work-item reveal" style="text-decoration: none; color: inherit;">
-        <div class="work-meta">
-          <div class="work-number">02</div>
-          <h3>Pharma AI Platform</h3>
-          <div class="role">Hedgehox<br>AI Implementation Partner</div>
-        </div>
-        <div class="work-body">
-          <p>
-            Building the AI layer for pharma operations. Claims detection with Gemini multimodal, automated routing, an end-to-end pharma OS. Working directly with enterprise clients on workshops, custom tools, and process redesign.
-          </p>
-          <p>
-            Fifteen years of pharma account work. UX methodology. Now AI. This is where all three actually converge. Not advising on AI from the outside. Shipping AI products in one of the most regulated industries on earth.
-          </p>
-          <div class="work-stats">
-            <div class="stat">
-              <span class="stat-number">FDA / HIPAA</span>
-              <span class="stat-label">Compliance domain</span>
-            </div>
-            <div class="stat">
-              <span class="stat-number">Multimodal AI</span>
-              <span class="stat-label">Architecture</span>
-            </div>
-            <div class="stat">
-              <span class="stat-number">End-to-end</span>
-              <span class="stat-label">Product ownership</span>
-            </div>
-          </div>
-          <span class="work-link">View case study →</span>
-        </div>
-      </a>
-
-      <!-- 03: OBA — standard layout -->
-      <a href="project-03.html" class="work-item reveal" style="text-decoration: none; color: inherit;">
-        <div class="work-meta">
-          <div class="work-number">03</div>
-          <h3>AI Product Studio</h3>
-          <div class="role">One Block Away LLC<br>Founder &amp; AI Product Engineer</div>
-        </div>
-        <div class="work-body">
-          <p>
-            Started solo building AI products. WeReady handles multi-agent coordination. ListingPal generates real estate listings in 90 seconds. BriefFlow automates workflows. Built each one myself—design, architecture, code, deployment.
-
-
-
-          </p>
-          <p>
-            Also built a multi-agent orchestration framework, automated newsletter infrastructure, and an options trading system. Solo the whole way.
-
-
-
-          </p>
-          <div class="work-stats">
-            <div class="stat">
-              <span class="stat-number">3+</span>
-              <span class="stat-label">Shipped products</span>
-            </div>
-            <div class="stat">
-              <span class="stat-number">Solo</span>
-              <span class="stat-label">Full-stack founder</span>
-            </div>
+          <div class="work-tags">
+            <span class="tag">Design Systems</span>
+            <span class="tag">Data Viz</span>
+            <span class="tag">Team Scaling</span>
           </div>
           <span class="work-link">View case study →</span>
         </div>
@@ -1211,11 +1256,21 @@
 </footer>
 
 <script>
-  document.documentElement.classList.add('reveal-ready');
-  
-  if ('IntersectionObserver' in window) {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
+  /* Progressive enhancement: hide elements only when JS + observer are available.
+     If anything fails, content stays visible (no opacity:0 default). */
+  (function() {
+    if (!('IntersectionObserver' in window)) return; // No observer = no animation, content stays visible
+
+    // Hide elements now that we know we can reveal them
+    document.querySelectorAll('.reveal').forEach(function(el) {
+      el.classList.add('reveal-pending');
+    });
+    document.querySelectorAll('.stagger.reveal').forEach(function(el) {
+      el.classList.add('stagger-pending');
+    });
+
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
         if (entry.isIntersecting) {
           entry.target.classList.add('visible');
           observer.unobserve(entry.target);
@@ -1223,14 +1278,17 @@
       });
     }, { threshold: 0.08, rootMargin: '0px 0px -20px 0px' });
 
-    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-    
-    setTimeout(() => {
-      document.querySelectorAll('.reveal:not(.visible)').forEach(el => el.classList.add('visible'));
-    }, 3000);
-  } else {
-    document.querySelectorAll('.reveal').forEach(el => el.classList.add('visible'));
-  }
+    document.querySelectorAll('.reveal-pending').forEach(function(el) {
+      observer.observe(el);
+    });
+
+    // Safety net: reveal everything after 2.5s regardless
+    setTimeout(function() {
+      document.querySelectorAll('.reveal-pending:not(.visible)').forEach(function(el) {
+        el.classList.add('visible');
+      });
+    }, 2500);
+  })();
 </script>
 
 </body>
