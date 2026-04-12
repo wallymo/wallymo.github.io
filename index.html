@@ -883,6 +883,42 @@
     transform: translateY(0);
   }
 
+  /* Timeline-specific scroll build */
+  .arc-timeline .reveal-pending {
+    opacity: 0;
+    transform: translateX(-18px);
+    transition: opacity 0.5s ease-out, transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .arc-timeline .reveal-pending.visible {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  /* Dot pops in with a spring when the item becomes visible */
+  .arc-timeline .reveal-pending::before {
+    transform: scale(0);
+    transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) 0.2s;
+  }
+
+  .arc-timeline .reveal-pending.visible::before {
+    transform: scale(1);
+  }
+
+  /* Stagger each arc-item by position */
+  .arc-timeline .reveal-pending:nth-child(1) { transition-delay: 0s; }
+  .arc-timeline .reveal-pending:nth-child(2) { transition-delay: 0.1s; }
+  .arc-timeline .reveal-pending:nth-child(3) { transition-delay: 0.18s; }
+  .arc-timeline .reveal-pending:nth-child(4) { transition-delay: 0.26s; }
+  .arc-timeline .reveal-pending:nth-child(5) { transition-delay: 0.34s; }
+
+  /* Dot spring delay needs to account for item stagger too */
+  .arc-timeline .reveal-pending:nth-child(1)::before { transition-delay: 0.2s; }
+  .arc-timeline .reveal-pending:nth-child(2)::before { transition-delay: 0.3s; }
+  .arc-timeline .reveal-pending:nth-child(3)::before { transition-delay: 0.38s; }
+  .arc-timeline .reveal-pending:nth-child(4)::before { transition-delay: 0.46s; }
+  .arc-timeline .reveal-pending:nth-child(5)::before { transition-delay: 0.54s; }
+
   /* Stagger children */
   .stagger-pending > * {
     opacity: 0;
@@ -1487,6 +1523,23 @@
     document.querySelectorAll('.reveal-pending').forEach(function(el) {
       observer.observe(el);
     });
+
+    // Timeline: observe the whole .arc-timeline container so all items
+    // trigger together and the CSS nth-child stagger fires as one sequence
+    var arcTimeline = document.querySelector('.arc-timeline');
+    if (arcTimeline) {
+      var timelineObserver = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            entry.target.querySelectorAll('.reveal-pending').forEach(function(item) {
+              item.classList.add('visible');
+            });
+            timelineObserver.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+      timelineObserver.observe(arcTimeline);
+    }
 
     // Safety net: reveal everything after 2.5s regardless
     setTimeout(function() {
