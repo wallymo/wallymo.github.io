@@ -321,7 +321,7 @@
   .trust-names span:hover { opacity: 0.85; }
 
   /* ── CAPABILITIES ── */
-  .capabilities { background: var(--surface); }
+  .capabilities { background: var(--surface-warm); }
 
   .cap-grid {
     display: grid;
@@ -436,6 +436,21 @@
 
 
   /* ── FEATURED WORK ── */
+  #work { background: var(--ink); }
+  #work .section-label { color: var(--accent); }
+  #work .section-title { color: var(--surface); }
+  #work .work-number { color: rgba(248,245,240,0.12); }
+  #work .work-meta h3 { color: var(--surface); }
+  #work .work-meta .role { color: var(--accent); }
+  #work .work-body p { color: rgba(248,245,240,0.65); }
+  #work .stat-number { color: var(--surface); }
+  #work .stat-label { color: rgba(248,245,240,0.45); }
+  #work .work-stats { border-top-color: rgba(248,245,240,0.1); }
+  #work .tag { color: var(--accent); background: rgba(196,90,45,0.12); border-color: rgba(196,90,45,0.25); }
+  #work .work-link { color: var(--surface); border-bottom-color: rgba(248,245,240,0.25); }
+  #work .work-link:hover { border-bottom-color: var(--accent); color: var(--accent); }
+  #work .work-item { border-color: rgba(248,245,240,0.08); }
+
   .work-grid { display: grid; gap: var(--space-3xl); }
 
   /* Project layout A: number left, content right */
@@ -569,9 +584,9 @@
   }
 
   /* ── CAREER ARC ── */
-  .arc { background: var(--ink); color: var(--surface); }
+  .arc { background: var(--surface-warm); color: var(--ink); }
   .arc .section-label { color: var(--accent); }
-  .arc .section-title { color: var(--surface); }
+  .arc .section-title { color: var(--ink); }
 
   .arc-timeline {
     position: relative;
@@ -605,7 +620,7 @@
     height: 10px;
     border-radius: 50%;
     background: var(--accent);
-    border: 2px solid var(--ink);
+    border: 2px solid var(--surface-warm);
   }
 
   .arc-year {
@@ -622,7 +637,7 @@
     font-family: var(--font-display);
     font-size: clamp(1.15rem, 1.6vw, 1.35rem);
     font-weight: 700;
-    color: var(--surface);
+    color: var(--ink);
     letter-spacing: -0.01em;
     margin-bottom: 4px;
     line-height: 1.25;
@@ -631,20 +646,20 @@
   .arc-item .arc-org {
     font-size: 0.9rem;
     font-weight: 500;
-    color: var(--surface-deep);
+    color: var(--ink-muted);
     margin-bottom: var(--space-s);
   }
 
   .arc-item p {
     font-size: 0.92rem;
-    color: rgba(248, 245, 240, 0.7);
+    color: var(--ink-soft);
     line-height: 1.65;
     max-width: 55ch;
   }
 
   /* Transition strip before arc */
   .pre-arc-strip {
-    background: var(--ink);
+    background: var(--surface-warm);
     padding: var(--space-l) var(--space-l) 0;
   }
 
@@ -1009,7 +1024,7 @@
 </section>
 
 <!-- FEATURED WORK -->
-<section id="work" style="background: var(--surface-warm)">
+<section id="work">
   <div class="section-inner">
     <div class="section-label reveal">Featured Work</div>
     <h2 class="section-title reveal">Receipts, not descriptions.</h2>
@@ -1196,8 +1211,8 @@
 <!-- CAPABILITIES -->
 <section class="capabilities" id="capabilities">
   <div class="section-inner">
-    <div class="section-label reveal">Experience</div>
-    <h2 class="section-title reveal">15 years, one thread: making complex things work.</h2>
+    <div class="section-label reveal">Capabilities</div>
+    <h2 class="section-title reveal">I don't just design it or just build it. I do both.</h2>
     <div class="cap-grid stagger reveal">
 
       <div class="cap-item">
