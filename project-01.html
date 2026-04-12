@@ -490,11 +490,11 @@
     <div class="content-grid">
       <div>
         <div class="section-label">The Challenge</div>
-        <p>In a developer-led environment, the lack of a unified design language resulted in inconsistency across products, hindering usability and brand recognition. With over 20 products in the Marketing Intelligence Suite, we needed to refresh this fragmented landscape and make it contemporary, scalable, and ready for our expansive product suite's transition to SaaS.</p>
+        <p>No design function, no shared language, 22 brands doing their own thing. Every analytics product in the IPG portfolio was built separately — different patterns, different components, different visual logic. Users bouncing between tools felt like they'd switched companies.</p>
       </div>
       <div>
         <div class="section-label">The Solution</div>
-        <p>Crafted an award-winning design system underpinned by thorough research. This robust system included <strong>500 components, 140 styles, 300 icons, and 50 personas</strong>, ensuring a consistent and intuitive user experience across all product touchpoints.</p>
+        <p>A token-based design system built from scratch: 500 components, 140 styles, 300 custom icons, 50 research-derived personas. One codebase serving 22 brand identities without forking. Adopted across engineering teams, not just handed off to them.</p>
         <div class="awards-highlight">
           <h3>Indigo Awards 2023</h3>
           <ul class="awards-list">
@@ -541,20 +541,20 @@
     <h2 class="section-heading">What we were up against.</h2>
     <ul class="challenges-list">
       <li>
-        <h3>Developer-Driven Approach</h3>
-        <p>With over 20 products in the Marketing Intelligence Suite, the prevalent developer-led design approach often led to overlooking the nuances of user needs and usability principles.</p>
+        <h3>Engineering owned every product decision</h3>
+        <p>20+ products, all built by engineers making design calls. Not because they wanted to — because there was no one else. Users paid for it. Usability was an afterthought, if it appeared at all.</p>
       </li>
       <li>
-        <h3>Scaling and Consistency</h3>
-        <p>The task of implementing a consistent design system across the diverse suite of products seemed monumental, given the different natures and unique challenges posed by each product.</p>
+        <h3>22 brands, zero shared patterns</h3>
+        <p>Each product had grown independently. Getting them to use the same system meant winning buy-in from separate engineering teams, product owners, and clients — none of whom had asked for this.</p>
       </li>
       <li>
-        <h3>Feedback Vacuum</h3>
-        <p>The existing system was rolled out without incorporating user feedback, leaving a significant gap in understanding the system's real-world usability and effectiveness.</p>
+        <h3>No user feedback in the existing system</h3>
+        <p>The previous attempt at consistency was built in a vacuum. Nobody had asked users what was broken. We had real data showing the navigation alone was costing people significant time every week.</p>
       </li>
       <li>
-        <h3>Evolution & Adaptability</h3>
-        <p>It wasn't enough to create a design system; it needed to be a living entity. The design framework had to be flexible and adaptive, ready to grow with feedback and changing technological landscapes.</p>
+        <h3>The system had to outlast the project</h3>
+        <p>A design system that needs a dedicated maintenance team is already failing. The goal was adoption so thorough that teams would contribute back — which meant governance and documentation had to be built in from the start, not bolted on later.</p>
       </li>
     </ul>
   </div>
@@ -564,24 +564,24 @@
 <section style="background: var(--surface-warm);">
   <div class="inner">
     <div class="section-label">Solutions Overview</div>
-    <h2 class="section-heading section-heading-wide">Embarking on the design system journey for the MIE suite was no small feat.</h2>
-    <p style="color: var(--ink-soft); max-width: 60ch; margin-bottom: var(--space-xl);">It was a dynamic process that called for cohesive collaboration, meticulous research, and strategic thinking. Throughout the creation and refinement of this system, certain aspects stood out as particularly influential in shaping product design and user experience.</p>
+    <h2 class="section-heading section-heading-wide">How we actually built it.</h2>
+    <p style="color: var(--ink-soft); max-width: 60ch; margin-bottom: var(--space-xl);">Four things drove most of the decisions. Not principles — specific choices that either worked or didn't.</p>
     <div class="solutions-grid">
       <div class="solution-item">
-        <h3>Atomic Modular Design</h3>
-        <p>The backbone of our design system, this approach deconstructed designs into their smallest units. This granularity fostered consistency and facilitated smoother integrations, allowing us to construct varied yet cohesive interfaces.</p>
+        <h3>Atomic structure</h3>
+        <p>Built from the smallest possible units up. Atoms into molecules into organisms. This made 22-brand theming tractable — you change a token, not 500 components. It also meant engineers could use the system without waiting on design for every variation.</p>
       </div>
       <div class="solution-item">
-        <h3>Unified Language & Components</h3>
-        <p>We aimed to bring harmony to the suite by developing a unified design language. Shared components streamlined production, maintained consistency across products, and simplified the developer experience.</p>
+        <h3>One shared language</h3>
+        <p>Shared components meant a button was a button everywhere. Sounds obvious. In practice it required negotiating with engineering teams who had built their own versions and didn't want to throw them out. The argument that won: consistency reduced their support burden, not just ours.</p>
       </div>
       <div class="solution-item">
-        <h3>User-Centric Design</h3>
-        <p>Every decision and design choice was backed by user feedback and research. By truly understanding our users' needs, we ensured that our design system genuinely resonated and offered practical value.</p>
+        <h3>Research before pixels</h3>
+        <p>We ran interviews before drawing anything. Found out navigation was costing users real time every session. Found out color customization was being done manually in PowerPoint after export. Both of those became features, not just design decisions.</p>
       </div>
       <div class="solution-item">
-        <h3>Living Documentation</h3>
-        <p>Recognizing the ever-evolving nature of tech and design, our system was conceived as a living document. It grows, adapts, and evolves in tandem with user feedback, industry trends, and technological advancements.</p>
+        <h3>Documentation that teams actually used</h3>
+        <p>Most design system docs get written once and ignored. We kept ours close to the engineering workflow — versioned, linked from tickets, updated when things changed. When teams started filing requests against it rather than building around it, we knew it was working.</p>
       </div>
     </div>
   </div>
@@ -642,19 +642,19 @@
 <section style="background: var(--surface-warm);">
   <div class="inner">
     <div class="section-label">Research Impact</div>
-    <h2 class="section-heading section-heading-wide">During the initial two months, while our UI designers shaped the look and feel, I took a parallel path.</h2>
-    <p style="color: var(--ink-soft); max-width: 65ch; margin-bottom: var(--space-xl);">I engaged in interviews with our teams to pinpoint design system priorities. These interactions highlighted key features to address and provided actionable insights into a feasible rollout strategy. Here are the key findings that drove our roadmap forward.</p>
+    <h2 class="section-heading section-heading-wide">What users actually told us — and what we built because of it.</h2>
+    <p style="color: var(--ink-soft); max-width: 65ch; margin-bottom: var(--space-xl);">While the UI team was building components, I ran interviews across product teams and end users. Five findings shaped the first release.</p>
 
     <div class="research-grid">
       <div class="research-card">
         <h3>System-Wide Navigation</h3>
         <div class="research-finding">
           <h4>Research Finding</h4>
-          <p>Users felt overwhelmed by the suite's navigation, often being presented with products they didn't use. Despite the product abundance, most users only required 3-4 products tailored to their tasks.</p>
+          <p>Users were seeing the full product menu every time — but most only needed 3 or 4 tools for their actual work. The rest was noise that made it harder to find the things they used daily.</p>
         </div>
         <div class="research-impact">
           <h4>Design Impact</h4>
-          <p>We redefined the navigation process so users saw only relevant products. We introduced customization options, allowing users to tailor navigation to their preferences — streamlining their journey and adding personalization.</p>
+          <p>Navigation now shows only the products each user actually has access to and uses. Users can pin and reorder their tools. Nobody explained this change with a tooltip — they just noticed things were easier.</p>
         </div>
       </div>
 
@@ -662,11 +662,11 @@
         <h3>Global Color Picker</h3>
         <div class="research-finding">
           <h4>Research Finding</h4>
-          <p>Users frequently exported data viz from our platform, adjusting it externally to match their clients' branding requirements for presentations and reports. This added extra steps to their workflow.</p>
+          <p>Users were exporting charts, then manually recoloring them in PowerPoint to match their clients' branding. It was a known workaround that everyone had accepted as normal.</p>
         </div>
         <div class="research-impact">
           <h4>Design Impact</h4>
-          <p>We introduced dynamic customization — users could now modify color schemes of entire data pages within our platform. They could save and preset "brand/client" colors, drastically cutting down time spent on manual adjustments.</p>
+          <p>Built a global color picker directly into the platform. Users can apply a client's brand colors to an entire data page in one step, save presets, and never open PowerPoint to fix a chart again.</p>
         </div>
       </div>
 
@@ -674,11 +674,11 @@
         <h3>Design Excellence</h3>
         <div class="research-finding">
           <h4>Research Finding</h4>
-          <p>With team expansion and broad application of our design system, stakeholders were concerned about maintaining design sanctity across different platforms and iterations.</p>
+          <p>As the team grew and more people were contributing designs, stakeholders started asking how we'd know when something drifted from the system. Good question — we didn't have an answer yet.</p>
         </div>
         <div class="research-impact">
           <h4>Design Impact</h4>
-          <p>We developed the <strong>'Design Bot'</strong> — a proprietary Chrome extension that audited designs for adherence to our components and templates. It generated comprehensive reports, flagging inconsistencies and offering corrective solutions.</p>
+          <p>Built the <strong>Design Bot</strong> — a proprietary Chrome extension that audits designs against the system's components and templates, then generates a report with specific flags and fixes. Compliance became checkable, not just aspirational.</p>
         </div>
       </div>
 
@@ -686,11 +686,11 @@
         <h3>Personalization</h3>
         <div class="research-finding">
           <h4>Research Finding</h4>
-          <p>Users consistently expressed desire for more tailored interaction with our suite, emphasizing the need for personalization in viewing, processing, and interacting with data dashboards.</p>
+          <p>Users wanted control over how data was displayed — not just what data appeared, but how they saw it. The platform had one default view for everything. That worked for nobody particularly well.</p>
         </div>
         <div class="research-impact">
           <h4>Design Impact</h4>
-          <p>Our design system prioritized user personalization with customizable profile experiences. Users could adjust how they viewed and interacted with data. We also introduced productivity features to beta users to enhance satisfaction.</p>
+          <p>Customizable profile experiences: users can set preferred views, adjust how dashboards display data, and save configurations per client. Beta users got productivity shortcuts first, which gave us signal on what to make permanent.</p>
         </div>
       </div>
 
@@ -698,11 +698,11 @@
         <h3>White Label Automation</h3>
         <div class="research-finding">
           <h4>Research Finding</h4>
-          <p>As our client base grew, there was increasing demand to tailor our ecosystem to align more closely with clients' in-house branding elements.</p>
+          <p>Every new enterprise client wanted a branded version of the platform. The process for delivering that was manual, slow, and relied on individual designers who knew the system well enough to not break anything.</p>
         </div>
         <div class="research-impact">
           <h4>Design Impact</h4>
-          <p>We introduced the <strong>"White Label Automation Builder"</strong> — an automated, sequential process for product leads and client engagement teams to devise custom looks for new clients while maintaining core design system pillars.</p>
+          <p>Built the <strong>White Label Automation Builder</strong> — a sequential tool that walks product leads and client teams through creating a custom-branded instance. The system handles token application automatically. No designer required to spin up a new client.</p>
         </div>
       </div>
     </div>
@@ -792,11 +792,11 @@
     <ul class="outcomes">
       <li>
         <strong>7,000+ daily active users</strong>
-        <span>Unified experience across the entire IPG analytics portfolio. One system, one language.</span>
+        <span>The entire IPG analytics portfolio on one system. Users moving between brands felt the same product, not 22 different ones.</span>
       </li>
       <li>
-        <strong>22 white-label brands</strong>
-        <span>Single token-based system serving distinct brand identities without forking the codebase.</span>
+        <strong>22 white-label brands from one codebase</strong>
+        <span>Token-based theming meant each client got their brand without anyone forking the repository.</span>
       </li>
       <li>
         <strong>3 Gold, 2 Silver — Indigo 2023</strong>
@@ -804,15 +804,15 @@
       </li>
       <li>
         <strong>Red Dot Communication Design 2021</strong>
-        <span>International recognition for the analytics platform's interface design.</span>
+        <span>The analytics platform's interface recognized internationally. First award the company had won for design.</span>
       </li>
       <li>
-        <strong>30-person design practice</strong>
-        <span>Built from zero. Career ladders, review processes, operational playbooks — the whole thing.</span>
+        <strong>30-person design practice built from nothing</strong>
+        <span>Hiring pipeline, career levels, review process, operational rhythm — all of it created in three years.</span>
       </li>
       <li>
-        <strong>Design at the product table</strong>
-        <span>First time in company history. Design went from service function to strategic partner.</span>
+        <strong>Engineering teams filing requests against the design system</strong>
+        <span>Not building around it. That's when you know it actually worked.</span>
       </li>
     </ul>
   </div>
