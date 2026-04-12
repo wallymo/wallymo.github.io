@@ -434,36 +434,6 @@
     font-weight: 600;
   }
 
-  .hib-proof {
-    display: flex;
-    gap: var(--space-2xl);
-    margin-top: var(--space-2xl);
-    padding-top: var(--space-xl);
-    border-top: 1px solid var(--rule);
-    flex-wrap: wrap;
-  }
-
-  .hib-proof-item { display: flex; flex-direction: column; }
-
-  .hib-proof-number {
-    font-family: var(--font-display);
-    font-size: clamp(2rem, 3vw, 2.8rem);
-    font-weight: 800;
-    color: var(--ink);
-    letter-spacing: -0.03em;
-    line-height: 1.1;
-  }
-
-  .hib-proof-label {
-    font-size: 0.78rem;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    color: var(--ink-muted);
-    margin-top: 4px;
-    max-width: 18ch;
-    line-height: 1.4;
-  }
 
   /* ── FEATURED WORK ── */
   .work-grid { display: grid; gap: var(--space-3xl); }
@@ -923,8 +893,6 @@
 
     /* How I Build */
     .hib-grid { grid-template-columns: 1fr; gap: var(--space-xl); }
-    .hib-proof { gap: var(--space-xl); }
-    .hib-proof-label { max-width: none; }
 
     /* Capabilities */
     .cap-grid { grid-template-columns: 1fr; }
@@ -1171,21 +1139,6 @@
         </div>
       </div>
 
-    </div>
-
-    <div class="hib-proof reveal">
-      <div class="hib-proof-item">
-        <span class="hib-proof-number">6</span>
-        <span class="hib-proof-label">Production AI products shipped this methodology</span>
-      </div>
-      <div class="hib-proof-item">
-        <span class="hib-proof-number">3</span>
-        <span class="hib-proof-label">Industries: pharma, real estate, financial services</span>
-      </div>
-      <div class="hib-proof-item">
-        <span class="hib-proof-number">Solo</span>
-        <span class="hib-proof-label">Full-stack, no engineering team, concept to deploy</span>
-      </div>
     </div>
 
   </div>
