@@ -371,6 +371,100 @@
     margin-bottom: var(--space-xs);
   }
 
+  /* ── HOW I BUILD ── */
+  .how-i-build { background: var(--surface); }
+
+  .hib-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-2xl);
+    align-items: start;
+    margin-top: var(--space-xl);
+  }
+
+  .hib-intro p {
+    color: var(--ink-soft);
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: var(--space-m);
+  }
+  .hib-intro p:last-child { margin-bottom: 0; }
+
+  .hib-stack {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-m);
+  }
+
+  .hib-layer {
+    border-top: 1px solid var(--rule);
+    padding-top: var(--space-s);
+  }
+
+  .hib-layer-label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--ink-muted);
+    margin-bottom: var(--space-xs);
+  }
+
+  .hib-layer-tools {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+
+  .hib-tool {
+    font-family: var(--font-body);
+    font-size: 0.78rem;
+    font-weight: 500;
+    color: var(--ink-soft);
+    background: var(--surface-warm);
+    border: 1px solid var(--rule-light);
+    padding: 0.2rem 0.6rem;
+    border-radius: 3px;
+  }
+
+  .hib-tool--accent {
+    color: var(--accent);
+    background: var(--accent-light);
+    border-color: rgba(196, 90, 45, 0.2);
+    font-weight: 600;
+  }
+
+  .hib-proof {
+    display: flex;
+    gap: var(--space-2xl);
+    margin-top: var(--space-2xl);
+    padding-top: var(--space-xl);
+    border-top: 1px solid var(--rule);
+    flex-wrap: wrap;
+  }
+
+  .hib-proof-item { display: flex; flex-direction: column; }
+
+  .hib-proof-number {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 3vw, 2.8rem);
+    font-weight: 800;
+    color: var(--ink);
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+  }
+
+  .hib-proof-label {
+    font-size: 0.78rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--ink-muted);
+    margin-top: 4px;
+    max-width: 18ch;
+    line-height: 1.4;
+  }
+
   /* ── FEATURED WORK ── */
   .work-grid { display: grid; gap: var(--space-3xl); }
 
@@ -827,6 +921,11 @@
     .hero-cta { flex-direction: column; gap: var(--space-s); align-items: flex-start; }
     .btn-primary, .btn-ghost { min-height: 48px; }
 
+    /* How I Build */
+    .hib-grid { grid-template-columns: 1fr; gap: var(--space-xl); }
+    .hib-proof { gap: var(--space-xl); }
+    .hib-proof-label { max-width: none; }
+
     /* Capabilities */
     .cap-grid { grid-template-columns: 1fr; }
     .cap-item { padding: var(--space-m) 0; }
@@ -902,6 +1001,7 @@
   </button>
   <ul class="links">
     <li><a href="#capabilities">What I Do</a></li>
+    <li><a href="#how-i-build">How I Build</a></li>
     <li><a href="#work">Work</a></li>
     <li><a href="#arc">Experience</a></li>
     <li><a href="#awards">Awards</a></li>
@@ -1014,6 +1114,80 @@
       </div>
 
     </div>
+  </div>
+</section>
+
+<!-- HOW I BUILD -->
+<section class="how-i-build" id="how-i-build">
+  <div class="section-inner">
+    <div class="section-label reveal">How I Build</div>
+    <h2 class="section-title reveal">AI-assisted development is the methodology, not the shortcut.</h2>
+
+    <div class="hib-grid">
+
+      <div class="hib-intro reveal">
+        <p>
+          I don't write code from scratch. I architect systems, design agent interactions, and direct AI tools — Claude Code, Codex, Cursor — to implement them. Every product on this site was built this way. The result is production-quality systems shipped at a speed that traditional development cycles can't match.
+        </p>
+        <p>
+          This isn't a gap in capability. It's the methodology. The engineers who will matter most in the next five years aren't the ones who memorise syntax — they're the ones who understand what needs to be built well enough to direct AI to build it precisely. That's what I do.
+        </p>
+      </div>
+
+      <div class="hib-stack reveal">
+        <div class="hib-layer">
+          <div class="hib-layer-label">Orchestration</div>
+          <div class="hib-layer-tools">
+            <span class="hib-tool">Claude Code</span>
+            <span class="hib-tool">Codex CLI</span>
+            <span class="hib-tool">Multi-agent routing</span>
+          </div>
+        </div>
+        <div class="hib-layer">
+          <div class="hib-layer-label">AI / Models</div>
+          <div class="hib-layer-tools">
+            <span class="hib-tool">Gemini (multimodal)</span>
+            <span class="hib-tool">OpenAI GPT-4o</span>
+            <span class="hib-tool">Claude 3.5+</span>
+            <span class="hib-tool">Qwen</span>
+          </div>
+        </div>
+        <div class="hib-layer">
+          <div class="hib-layer-label">Stack</div>
+          <div class="hib-layer-tools">
+            <span class="hib-tool">Python / FastAPI</span>
+            <span class="hib-tool">LangChain</span>
+            <span class="hib-tool">Next.js / React</span>
+            <span class="hib-tool">Vercel / AWS</span>
+          </div>
+        </div>
+        <div class="hib-layer">
+          <div class="hib-layer-label">Regulated domains</div>
+          <div class="hib-layer-tools">
+            <span class="hib-tool hib-tool--accent">FDA / HIPAA</span>
+            <span class="hib-tool hib-tool--accent">MLR workflow</span>
+            <span class="hib-tool hib-tool--accent">Pharma compliance</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="hib-proof reveal">
+      <div class="hib-proof-item">
+        <span class="hib-proof-number">6</span>
+        <span class="hib-proof-label">Production AI products shipped this methodology</span>
+      </div>
+      <div class="hib-proof-item">
+        <span class="hib-proof-number">3</span>
+        <span class="hib-proof-label">Industries: pharma, real estate, financial services</span>
+      </div>
+      <div class="hib-proof-item">
+        <span class="hib-proof-number">Solo</span>
+        <span class="hib-proof-label">Full-stack, no engineering team, concept to deploy</span>
+      </div>
+    </div>
+
   </div>
 </section>
 
