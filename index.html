@@ -641,6 +641,33 @@
     border-radius: 50%;
     background: var(--accent);
     border: 2px solid var(--surface-warm);
+    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1),
+                box-shadow 0.3s ease;
+  }
+
+  /* Ripple ring on hover */
+  .arc-item::after {
+    content: '';
+    position: absolute;
+    left: calc(-1 * var(--space-xl) - 8px);
+    top: 2px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 2px solid var(--accent);
+    opacity: 0;
+    transform: scale(0.5);
+    transition: opacity 0.35s ease, transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+
+  .arc-item:hover::before {
+    transform: scale(1.35);
+    box-shadow: 0 0 0 4px rgba(196, 90, 45, 0.15);
+  }
+
+  .arc-item:hover::after {
+    opacity: 1;
+    transform: scale(1);
   }
 
   .arc-year {
@@ -651,6 +678,11 @@
     letter-spacing: 0.12em;
     color: var(--accent);
     margin-bottom: 6px;
+    transition: letter-spacing 0.3s ease;
+  }
+
+  .arc-item:hover .arc-year {
+    letter-spacing: 0.18em;
   }
 
   .arc-item h3 {
@@ -661,6 +693,12 @@
     letter-spacing: -0.01em;
     margin-bottom: 4px;
     line-height: 1.25;
+    transition: color 0.25s ease, transform 0.25s ease;
+  }
+
+  .arc-item:hover h3 {
+    color: var(--accent);
+    transform: translateX(4px);
   }
 
   .arc-item .arc-org {
@@ -668,6 +706,11 @@
     font-weight: 500;
     color: var(--ink-muted);
     margin-bottom: var(--space-s);
+    transition: transform 0.25s ease 0.04s;
+  }
+
+  .arc-item:hover .arc-org {
+    transform: translateX(4px);
   }
 
   .arc-item p {
@@ -675,6 +718,11 @@
     color: var(--ink-soft);
     line-height: 1.65;
     max-width: 55ch;
+    transition: color 0.25s ease;
+  }
+
+  .arc-item:hover p {
+    color: var(--ink);
   }
 
   /* Transition strip before arc */
