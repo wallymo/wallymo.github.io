@@ -136,6 +136,20 @@
 
   nav .nav-cta:hover { background: var(--accent); color: var(--surface) !important; }
 
+  /* ── HERO CANVAS ── */
+  .hero-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 1.2s ease;
+  }
+  .hero-canvas.loaded { opacity: 1; }
+
   /* ── HERO ── */
   .hero {
     min-height: 100vh;
@@ -145,6 +159,8 @@
     padding: var(--space-2xl) var(--space-l);
     max-width: var(--max-w);
     margin: 0 auto;
+    position: relative;
+    z-index: 1;
   }
 
   .hero-eyebrow {
@@ -1039,6 +1055,7 @@
     /* Timeline */
     .arc-timeline { padding-left: var(--space-l); }
     .arc-item::before { left: calc(-1 * var(--space-l) - 4px); }
+    .arc-item::after { left: calc(-1 * var(--space-l) - 8px); }
     .arc-item h3 { font-size: 1.15rem; }
     .arc-item p { font-size: 0.95rem; }
     .arc-item .arc-org { font-size: 0.92rem; }
@@ -1080,6 +1097,8 @@
 </head>
 <body>
 
+<canvas class="hero-canvas" id="hero-canvas" aria-hidden="true"></canvas>
+
 <nav id="nav">
   <a href="#" class="name">Wally Mostafa</a>
   <button class="mobile-menu-btn" aria-label="Menu" onclick="document.getElementById('nav').classList.toggle('menu-open'); document.body.style.overflow = document.getElementById('nav').classList.contains('menu-open') ? 'hidden' : ''">
@@ -1102,9 +1121,9 @@
   <div class="hero-eyebrow">AI Product Strategist &amp; Design Leader</div>
   <h1>Wally Mostafa</h1>
   <div class="hero-tagline">
-    <span>Brief to build</span>
-    <span>Design to deploy</span>
-    <span>15 years in</span>
+    <span>Design Systems</span>
+    <span>Regulated AI</span>
+    <span>AI-directed products</span>
   </div>
   <p class="hero-intro">
     Built AI products for regulated industries where mistakes are expensive. Shipped multi-agent platforms, pharma compliance AI, and enterprise systems used by thousands. The kind of work where you can't just fake it till you ship it.
@@ -1124,6 +1143,8 @@
     <span>CDM</span>
     <span>Heartbeat Ideas</span>
     <span>Scout Marketing</span>
+    <span>MedicalKnowledgeGroup</span>
+    <span>TheBloc</span>
   </div>
 </section>
 
@@ -1532,6 +1553,77 @@
       });
     }, 2500);
   })();
+</script>
+
+<!-- HERO: Gradient Morph — Canvas2D -->
+<script>
+(function() {
+  var canvas = document.getElementById('hero-canvas');
+  if (!canvas) return;
+  var ctx = canvas.getContext('2d');
+  if (!ctx) return;
+
+  var W, H, startTime = Date.now();
+
+  function resize() {
+    W = canvas.width = window.innerWidth;
+    H = canvas.height = window.innerHeight;
+  }
+  window.addEventListener('resize', resize);
+  resize();
+
+  var paused = false;
+  document.addEventListener('visibilitychange', function() { paused = document.hidden; });
+
+  var blobs = [
+    { x: -0.05, y: 0.1,  r: 0.6,  sx: 0.12, sy: 0.08, drift: 0.3, color: [196, 90, 45] },
+    { x: 1.05,  y: 0.2,  r: 0.55, sx: 0.09, sy: 0.13, drift: 0.28, color: [92, 85, 80] },
+    { x: 0.5,   y: 0.45, r: 0.55, sx: 0.1,  sy: 0.1,  drift: 0.25, color: [212, 204, 194] },
+    { x: 0.1,   y: 0.85, r: 0.55, sx: 0.13, sy: 0.1,  drift: 0.32, color: [196, 90, 45] },
+    { x: 0.95,  y: 0.7,  r: 0.5,  sx: 0.1,  sy: 0.14, drift: 0.28, color: [168, 144, 128] },
+    { x: 0.35,  y: -0.05,r: 0.5,  sx: 0.14, sy: 0.07, drift: 0.26, color: [230, 223, 213] },
+    { x: 0.7,   y: 0.5,  r: 0.45, sx: 0.11, sy: 0.09, drift: 0.3,  color: [196, 90, 45] },
+  ];
+
+  function draw() {
+    requestAnimationFrame(draw);
+    if (paused) return;
+
+    var t = (Date.now() - startTime) / 1000;
+    ctx.clearRect(0, 0, W, H);
+
+    for (var i = 0; i < blobs.length; i++) {
+      var b = blobs[i];
+      var d = b.drift;
+      var cx = (b.x + Math.sin(t * b.sx + i * 2.1) * d + Math.cos(t * b.sx * 0.7 + i) * d * 0.5) * W;
+      var cy = (b.y + Math.cos(t * b.sy + i * 1.7) * d + Math.sin(t * b.sy * 0.6 + i * 3.1) * d * 0.4) * H;
+      var radius = b.r * Math.min(W, H) * (1 + Math.sin(t * 0.04 + i) * 0.12);
+
+      var grad = ctx.createRadialGradient(cx, cy, 0, cx, cy, radius);
+      var c = b.color;
+      grad.addColorStop(0, 'rgba(' + c[0] + ',' + c[1] + ',' + c[2] + ', 0.28)');
+      grad.addColorStop(0.35, 'rgba(' + c[0] + ',' + c[1] + ',' + c[2] + ', 0.12)');
+      grad.addColorStop(1, 'rgba(' + c[0] + ',' + c[1] + ',' + c[2] + ', 0)');
+
+      ctx.fillStyle = grad;
+      ctx.fillRect(0, 0, W, H);
+    }
+  }
+
+  setTimeout(function() { canvas.classList.add('loaded'); }, 600);
+  draw();
+
+  // Dim canvas when dark #work section is in view
+  var workSection = document.getElementById('work');
+  if (workSection && 'IntersectionObserver' in window) {
+    var dimObserver = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        canvas.style.opacity = entry.isIntersecting ? '0.4' : '';
+      });
+    }, { threshold: 0.15 });
+    dimObserver.observe(workSection);
+  }
+})();
 </script>
 
 </body>
