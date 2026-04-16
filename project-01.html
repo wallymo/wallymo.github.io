@@ -263,6 +263,128 @@
   .image-grid--3 { grid-template-columns: 1fr 1fr 1fr; }
   .image-grid--asymmetric { grid-template-columns: 1.5fr 1fr; }
 
+  /* Modern screenshot layouts */
+  .image-showcase {
+    padding: var(--space-2xl) var(--space-l);
+  }
+  .image-full-bleed {
+    padding: var(--space-2xl) 0;
+  }
+  .image-with-caption {
+    display: grid;
+    gap: var(--space-s);
+  }
+  .image-frame {
+    position: relative;
+    overflow: hidden;
+    border-radius: 24px;
+    background: #181411;
+    border: 1px solid rgba(26, 23, 20, 0.08);
+    box-shadow: 0 28px 70px rgba(26, 23, 20, 0.16);
+    transition: transform 0.45s ease, box-shadow 0.45s ease;
+  }
+  .image-frame::after {
+    content: "";
+    position: absolute;
+    inset: auto 0 0;
+    height: 28%;
+    background: linear-gradient(180deg, transparent 0%, rgba(12, 10, 8, 0.08) 100%);
+    pointer-events: none;
+  }
+  .image-frame img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.7s cubic-bezier(0.22, 1, 0.36, 1), filter 0.4s ease;
+  }
+  .image-card--wide .image-frame { aspect-ratio: 21 / 10; }
+  .image-card--landscape .image-frame { aspect-ratio: 16 / 10; }
+  .image-card--compact .image-frame { aspect-ratio: 4 / 3; }
+  .image-with-caption figcaption {
+    display: flex;
+    align-items: center;
+    gap: var(--space-s);
+    max-width: 46ch;
+    font-size: 0.88rem;
+    line-height: 1.5;
+    color: var(--ink-soft);
+  }
+  .image-with-caption figcaption::before {
+    content: "";
+    width: 32px;
+    height: 1px;
+    background: var(--accent);
+    flex-shrink: 0;
+    opacity: 0.9;
+  }
+  .image-full-bleed .image-with-caption {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    padding: 0 clamp(24px, 4vw, 56px);
+  }
+  .image-asymmetric-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.35fr) minmax(280px, 0.85fr);
+    gap: var(--space-xl);
+    align-items: end;
+  }
+  .image-asymmetric-grid .image-with-caption:last-child {
+    margin-top: clamp(2rem, 8vw, 5rem);
+  }
+  .image-overlap {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    align-items: end;
+    gap: var(--space-l);
+  }
+  .image-overlap .image-main {
+    grid-column: 1 / span 8;
+    z-index: 1;
+  }
+  .image-overlap .image-accent {
+    grid-column: 7 / -1;
+    margin-top: clamp(-2rem, -4vw, -1rem);
+    z-index: 2;
+  }
+  .image-results-grid {
+    display: grid;
+    grid-template-columns: 1.05fr 1.05fr 0.9fr;
+    grid-template-areas:
+      "primary primary secondary"
+      "primary primary tertiary";
+    gap: var(--space-m);
+    align-items: start;
+  }
+  .image-results-grid .image-primary { grid-area: primary; }
+  .image-results-grid .image-secondary { grid-area: secondary; }
+  .image-results-grid .image-tertiary { grid-area: tertiary; }
+  .image-results-grid .image-primary .image-frame { aspect-ratio: 16 / 11; }
+  .image-results-grid .image-secondary .image-frame,
+  .image-results-grid .image-tertiary .image-frame { aspect-ratio: 16 / 10; }
+
+  @media (hover: hover) and (pointer: fine) {
+    .image-with-caption:hover .image-frame {
+      transform: translateY(-8px);
+      box-shadow: 0 34px 80px rgba(26, 23, 20, 0.18);
+    }
+    .image-with-caption:hover .image-frame img {
+      transform: scale(1.035);
+    }
+  }
+
+  [data-reveal] {
+    opacity: 0;
+    transform: translateY(36px) scale(0.985);
+    transition: opacity 0.8s ease, transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+    transition-delay: var(--reveal-delay, 0s);
+    will-change: opacity, transform;
+  }
+  [data-reveal].is-visible {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+
   /* Pullquote */
   .pullquote {
     max-width: var(--max-w); margin: 0 auto;
@@ -386,6 +508,25 @@
     .big-stats { grid-template-columns: repeat(2, 1fr); }
     .solutions-grid { grid-template-columns: 1fr; }
     .growth-metrics { grid-template-columns: 1fr; gap: var(--space-l); }
+    .image-asymmetric-grid,
+    .image-overlap,
+    .image-results-grid {
+      grid-template-columns: 1fr;
+      grid-template-areas: none;
+    }
+    .image-asymmetric-grid .image-with-caption:last-child,
+    .image-overlap .image-accent {
+      margin-top: 0;
+    }
+    .image-overlap .image-main,
+    .image-overlap .image-accent {
+      grid-column: auto;
+    }
+    .image-results-grid .image-primary,
+    .image-results-grid .image-secondary,
+    .image-results-grid .image-tertiary {
+      grid-area: auto;
+    }
   }
 
   @media (max-width: 640px) {
@@ -405,6 +546,10 @@
     .full-bleed { padding: 0 24px; }
     .image-grid { padding: 0 24px; }
     .image-grid--2, .image-grid--3, .image-grid--asymmetric { grid-template-columns: 1fr; }
+    .image-showcase { padding-left: 24px; padding-right: 24px; }
+    .image-full-bleed .image-with-caption { padding: 0 24px; }
+    .image-frame { border-radius: 18px; }
+    .image-with-caption figcaption { align-items: flex-start; font-size: 0.82rem; }
     .pullquote { padding: var(--space-xl) 24px; }
     .pullquote blockquote { font-size: clamp(1.2rem, 5vw, 1.6rem); padding-left: var(--space-m); }
     .pullquote cite { padding-left: var(--space-m); font-size: 0.85rem; }
@@ -430,6 +575,8 @@
 
   @media (prefers-reduced-motion: reduce) {
     *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+    [data-reveal] { opacity: 1 !important; transform: none !important; }
+    .image-frame, .image-frame img { transition: none !important; }
   }
 </style>
 </head>
@@ -486,10 +633,13 @@
 </div>
 
 <!-- HERO IMAGE -->
-<section>
-  <div class="full-bleed">
-    <div style="width:100%;aspect-ratio:21/9;border-radius:4px;overflow:hidden;background:#1a1714"><img src="assets/ds-beauty-shot.jpg" alt="Design system dashboard widget showcase — isometric view of customizable analytics components" style="width:100%;height:100%;object-fit:cover;border-radius:4px;" loading="lazy"></div>
-  </div>
+<section class="image-full-bleed">
+  <figure class="image-with-caption image-card--wide" data-reveal>
+    <div class="image-frame">
+      <img src="assets/ipg-title.jpg" alt="IPG Data Visualization product branding and title screen" width="1920" height="1080" loading="eager" fetchpriority="high" decoding="async">
+    </div>
+    <figcaption>Product branding moved into the interface itself, so the suite felt like a product family from the first frame.</figcaption>
+  </figure>
 </section>
 
 <!-- ROLE / CHALLENGE / SOLUTION / IMPACT -->
@@ -612,6 +762,25 @@
   </div>
 </section>
 
+<section class="image-showcase">
+  <div class="inner">
+    <div class="image-asymmetric-grid">
+      <figure class="image-with-caption image-card--landscape" data-reveal>
+        <div class="image-frame">
+          <img src="assets/ipg-dashboard-overview.jpg" alt="IPG analytics dashboard overview with multiple reporting panels" width="1920" height="1080" loading="lazy" decoding="async">
+        </div>
+        <figcaption>Overview screens balanced dense reporting with enough restraint to stay readable across brands.</figcaption>
+      </figure>
+      <figure class="image-with-caption image-card--compact" data-reveal style="--reveal-delay: 0.12s;">
+        <div class="image-frame">
+          <img src="assets/ipg-stats.jpg" alt="Stats-focused analytics screen with highlighted KPIs and supporting detail" width="1920" height="1080" loading="lazy" decoding="async">
+        </div>
+        <figcaption>Metric-heavy views stayed editorial instead of collapsing into dashboard noise.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
 <!-- APPROACH -->
 <section style="background: var(--surface-tint);">
   <div class="inner">
@@ -729,6 +898,15 @@
   </div>
 </section>
 
+<section class="image-full-bleed">
+  <figure class="image-with-caption image-card--wide" data-reveal>
+    <div class="image-frame">
+      <img src="assets/ipg-color-formula.jpg" alt="Color formula interface generating branded palettes for data visualizations" width="1920" height="1080" loading="lazy" decoding="async">
+    </div>
+    <figcaption>One brand color could generate a full, accessible system palette, which made white-label customization fast without sacrificing contrast.</figcaption>
+  </figure>
+</section>
+
 <!-- GROWTH METRICS -->
 <div class="growth-metrics">
   <div>
@@ -744,6 +922,25 @@
     <div class="growth-metric-label">avg. usage rate YoY</div>
   </div>
 </div>
+
+<section class="image-showcase" style="background: var(--surface-warm);">
+  <div class="inner">
+    <div class="image-overlap">
+      <figure class="image-with-caption image-card--landscape image-main" data-reveal>
+        <div class="image-frame">
+          <img src="assets/ipg-dashboard-builder.jpg" alt="Create Your Own Dashboard builder for configuring widgets and data views" width="1920" height="1080" loading="lazy" decoding="async">
+        </div>
+        <figcaption>Create Your Own Dashboard turned a fixed reporting surface into a configurable workspace.</figcaption>
+      </figure>
+      <figure class="image-with-caption image-card--landscape image-accent" data-reveal style="--reveal-delay: 0.14s;">
+        <div class="image-frame">
+          <img src="assets/ipg-audience-console.jpg" alt="Audience Console analytics screen branded for Amazon" width="1920" height="1080" loading="lazy" decoding="async">
+        </div>
+        <figcaption>The same system flexed into client-specific views like Amazon without spinning up a separate product.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
 
 <!-- SCALING -->
 <section>
@@ -802,6 +999,31 @@
         <h3 style="font-family:var(--font-display);font-size:1.3rem;font-weight:700;color:var(--ink);margin-top:var(--space-xl);margin-bottom:var(--space-m);">Leadership responsibilities grew.</h3>
         <p>As the team grew, our leadership responsibilities grew. It wasn't just the four of us original members anymore. I took to heart growing the team not just in headcount but in capability. I sat with each designer for 1:1s every month to highlight their job growth and trajectory, whether at Kinesso or not. I never had a true mentor to guide me through my career. With a team of young talented designers, I felt obligated to give back the direction I never received.</p>
       </div>
+    </div>
+  </div>
+</section>
+
+<section class="image-showcase" style="background: var(--surface-tint);">
+  <div class="inner">
+    <div class="image-results-grid">
+      <figure class="image-with-caption image-primary" data-reveal>
+        <div class="image-frame">
+          <img src="assets/ipg-brand-data.jpg" alt="Brand data visualization screen with dashboard modules and charts" width="1920" height="1080" loading="lazy" decoding="async">
+        </div>
+        <figcaption>Brand data views kept client identity visible without breaking the shared system underneath.</figcaption>
+      </figure>
+      <figure class="image-with-caption image-secondary" data-reveal style="--reveal-delay: 0.08s;">
+        <div class="image-frame">
+          <img src="assets/ipg-charts.jpg" alt="Examples of chart styles and data visualization treatments in the platform" width="1920" height="1080" loading="lazy" decoding="async">
+        </div>
+        <figcaption>Chart components stretched across use cases without drifting into one-off visuals.</figcaption>
+      </figure>
+      <figure class="image-with-caption image-tertiary" data-reveal style="--reveal-delay: 0.16s;">
+        <div class="image-frame">
+          <img src="assets/ipg-dashboard-overview.jpg" alt="Cross-platform dashboard overview showing consistent reporting surfaces" width="1920" height="1080" loading="lazy" decoding="async">
+        </div>
+        <figcaption>Consistency showed up in the shipped product, not just in the design system files.</figcaption>
+      </figure>
     </div>
   </div>
 </section>
@@ -865,6 +1087,31 @@
 </div>
 
 <footer>&copy; 2026 Wally Mostafa · Raleigh, NC</footer>
+
+<script>
+  (() => {
+    const revealElements = document.querySelectorAll('[data-reveal]');
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    if (!revealElements.length || prefersReducedMotion || !('IntersectionObserver' in window)) {
+      revealElements.forEach((element) => element.classList.add('is-visible'));
+      return;
+    }
+
+    const observer = new IntersectionObserver((entries, activeObserver) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('is-visible');
+        activeObserver.unobserve(entry.target);
+      });
+    }, {
+      threshold: 0.18,
+      rootMargin: '0px 0px -8% 0px'
+    });
+
+    revealElements.forEach((element) => observer.observe(element));
+  })();
+</script>
 
 </body>
 </html>
