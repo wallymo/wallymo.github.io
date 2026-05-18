@@ -2,6 +2,16 @@
 
 This folder is home. Treat it that way.
 
+## Portfolio Copy Lens
+
+This portfolio supplements a resume. Write for HR reps, recruiters, hiring managers, and team members scanning many candidates quickly.
+
+- Make copy succinct, concrete, and glanceable.
+- Lead with role fit, outcomes, scale, and proof.
+- Prefer short claims over manifesto-style explanation.
+- Keep personality, but remove anything that slows comprehension.
+- Treat each section as a scan stop: what this proves, why it matters, and where to click next.
+
 ## First Run
 
 If `BOOTSTRAP.md` exists, that's your birth certificate. Follow it, figure out who you are, then delete it. You won't need it again.
@@ -210,3 +220,5 @@ The goal: Be helpful without being annoying. Check in a few times a day, do usef
 ## Make It Yours
 
 This is a starting point. Add your own conventions, style, and rules as you figure out what works.
+
+## Imported Claude Cowork project instructions

@@ -1,6 +1,6 @@
 # Portfolio Sprint Plan — AI Job Market Optimization
 
-Target: misterpavano.github.io
+Target: wallymo.github.io
 Goal: Maximize portfolio effectiveness for landing AI product roles
 Approach: Priority-ordered (highest-impact changes first across all pages)
 
@@ -36,7 +36,7 @@ The fastest wins. These changes affect first impressions and whether a hiring ma
 ### 1.5 — Consolidate portfolio links in resume
 - **File:** `resume.html`
 - **Issue:** Resume links to `walle-os.vercel.app` as "AI Portfolio" — but the GitHub Pages site IS your AI portfolio now. Having two separate portfolio links is confusing and splits traffic.
-- **Fix:** Update the portfolio link to point to `misterpavano.github.io`, or add both with clear labels ("Case Studies" vs "Interactive Portfolio").
+- **Fix:** Update the portfolio link to point to `wallymo.github.io`, or add both with clear labels ("Case Studies" vs "Interactive Portfolio").
 
 ---
 

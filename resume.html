@@ -8,7 +8,11 @@
 <meta property="og:title" content="Wally Mostafa — Resume">
 <meta property="og:description" content="AI product strategist with 15 years in product, design, and regulated industry AI implementation.">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://misterpavano.github.io/resume.html">
+<meta property="og:url" content="https://wallymo.github.io/resume.html">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<meta name="theme-color" content="#1d1d1d">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,6 +25,7 @@
     --ink-muted: #5c5550;
     --surface: #f8f5f0;
     --surface-warm: #f0ebe3;
+    --surface-deep: #e6dfd5;
     --accent: #c45a2d;
     --accent-hover: #a84820;
     --rule: #d4ccc2;
@@ -304,12 +309,12 @@
       color: var(--ink);
     }
 
-    .contact a::after,
-    .awards-list a::after {
-      content: " (" attr(href) ")";
-      font-size: 0.75em;
-      color: var(--ink-muted);
+    .contact a.print-link {
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 2px;
     }
+
   }
 
   /* Screen styles */
@@ -327,10 +332,10 @@
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg>
     Share
   </button>
-  <button class="action-btn" onclick="window.print()">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
-    Print / PDF
-  </button>
+  <a class="action-btn" href="assets/Wally-Mostafa-Resume.pdf" download>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+    Download PDF
+  </a>
 </div>
 
 <div class="resume">
@@ -344,18 +349,16 @@
     <span class="contact-sep">·</span>
     <span>Raleigh Metro, NC</span>
     <span class="contact-sep">·</span>
-    <a href="https://linkedin.com/in/wallymo" target="_blank" rel="noopener">LinkedIn</a>
+    <a class="print-link" href="https://linkedin.com/in/wallymo" target="_blank" rel="noopener">LinkedIn</a>
     <span class="contact-sep">·</span>
-    <a href="https://misterpavano.github.io" target="_blank" rel="noopener">Portfolio</a>
-    <span class="contact-sep">·</span>
-    <a href="https://walle-os.vercel.app" target="_blank" rel="noopener">WallyGPT</a>
+    <a class="print-link" href="https://wallymo.github.io" target="_blank" rel="noopener">Portfolio</a>
   </div>
 </header>
 
 <section>
   <div class="section-title">Summary</div>
   <p class="summary">
-    15 years running the full product loop — discovery, design, build, ship. Started in pharma account strategy, moved into UX leadership, now building and shipping AI products in regulated industries. I've been in the briefing room, the design review, the architecture call, and the 4am incident. That breadth isn't a collection of roles. It's one career sharpening the same instincts.
+    AI product strategist and design leader with 15 years across pharma, enterprise UX, and AI implementation. I turn ambiguous client problems into working products: regulated pharma AI tools, client-led POCs, and enterprise design systems used by 7,000+ users across 22 brands.
   </p>
 </section>
 
@@ -364,19 +367,19 @@
   <ul class="capabilities-list">
     <li>
       <span class="cap-label">AI Strategy & Implementation</span>
-      <span class="cap-desc"> — Agentic platforms, LLM/VLM integration, enterprise AI enablement, RAG architectures, prompt engineering, multi-model orchestration</span>
+      <span class="cap-desc"> — LLM/VLM products, multimodal review, regulated AI workflows, RAG/knowledge bases, prompt-defined criteria, model orchestration</span>
     </li>
     <li>
-      <span class="cap-label">Product Strategy & Design Thinking</span>
-      <span class="cap-desc"> — End-to-end product development, discovery, user research, POC design and testing, design systems, accessibility (WCAG)</span>
+      <span class="cap-label">Product Strategy & POC Development</span>
+      <span class="cap-desc"> — Discovery, scoping, UX research, prototype validation, demo-ready builds, production handoff</span>
     </li>
     <li>
-      <span class="cap-label">Stakeholder Communication</span>
-      <span class="cap-desc"> — C-suite to intern, regulated industries (FDA, HIPAA, MLR), Fortune 500 client management, workshop facilitation</span>
+      <span class="cap-label">Regulated & Enterprise Delivery</span>
+      <span class="cap-desc"> — FDA/HIPAA/MLR workflows, pharma agency operations, stakeholder alignment, client workshops, adoption</span>
     </li>
     <li>
-      <span class="cap-label">Leadership</span>
-      <span class="cap-desc"> — Team scaling (2→30), design org building, 0-to-1 product development, distributed team management</span>
+      <span class="cap-label">UX Leadership & Design Systems</span>
+      <span class="cap-desc"> — Team scaling (2→30), enterprise UX, data visualization, component libraries, accessibility (WCAG)</span>
     </li>
   </ul>
 </section>
@@ -390,9 +393,9 @@
       <span class="job-meta">Hedgehox · Remote · Mar 2024 – Present</span>
     </div>
     <ul class="job-desc">
-      <li>Scoped, designed, and shipped a pharma claims detection system using Gemini multimodal — full pipeline from discovery through production for an enterprise client in one of the most regulated industries in the world</li>
-      <li>Leading concurrent AI implementations including routing tool and end-to-end pharma OS; running hands-on AI enablement with pharma clients across discovery, build, and adoption</li>
-      <li>Work directly with clients to scope AI implementations, design the architecture, and own delivery from first conversation to production</li>
+      <li>Translate pharma agency problems into working AI tools across claim detection, pre-submission annotation, screenshot capture, scoping, brief intake, routing, and regulatory monitoring</li>
+      <li>Built Claims Detector to find promotional claims and pre-annotate submissions using a knowledge base, approved references, or prompt-defined review criteria for enterprise MLR workflows</li>
+      <li>Designed Echo route and screenshot automation for submission review, capturing 100+ screenshots in under 5 minutes and moving one route from 8 hours to 10 minutes</li>
     </ul>
   </div>
 
@@ -402,8 +405,10 @@
       <span class="job-meta">One Block Away LLC · Remote · Jul 2023 – Present</span>
     </div>
     <ul class="job-desc">
-      <li>Designed, directed, and shipped WeReady (multi-agent platform), ListingPal (90-second AI content generation), and BriefFlow (workflow automation) from concept to production</li>
-      <li>Partner with clients to scope AI-driven solutions, run discovery, and guide end-to-end delivery</li>
+      <li>Currently building the website and growth strategy for a local U16 football club in Tanzania, helping the owners elevate players toward national-level opportunities and attract sponsors, donations, and community support</li>
+      <li>Turn early client AI questions into bounded POCs that show the workflow, expose the hard parts, and give clients something specific to test, pitch, or change</li>
+      <li>Built ListingPal as a client POC for real estate, turning basic property details into listing copy, social posts, ad copy, styling direction, and MLS/SEO-ready language in under 90 seconds</li>
+      <li>Built WeReady's Bailey intelligence dashboard as a client POC, turning founder inputs, GitHub signals, source health, credibility scoring, and risk recommendations into a startup-readiness report</li>
     </ul>
   </div>
 
@@ -413,10 +418,10 @@
       <span class="job-meta">Kinesso (IPG) · New York, NY · Feb 2020 – Jun 2023</span>
     </div>
     <ul class="job-desc">
-      <li>Scaled product design team from 2 to 30 designers supporting 7,000+ users across 22 white-label brands — built the hiring pipeline, culture, and process from scratch</li>
-      <li>Architected award-winning modular design system and component library serving enterprise analytics platform at global scale; led data visualization and drag-and-drop dashboard builder</li>
-      <li>Led UX research and workshops across external IPG agency relationships — the person in the room representing design thinking at the client level</li>
-      <li>Won 5 Indigo Awards 2023 (3 Gold, 2 Silver), 4 Indigo Awards 2022 (2 Gold, 2 Silver), Red Dot Award 2021</li>
+      <li>Scaled product design from 2 to 30 people across the US and Poland, supporting enterprise analytics workflows for 7,000+ users across 22 white-label brands</li>
+      <li>Led UX direction and design-system patterns for MIE data visualization, dashboard building, brand theming, and reusable enterprise analytics components</li>
+      <li>Shaped the Digital Experience Audit workflow for channel scoring, benchmarks, recommendations, visualization, and presentation-ready client outputs</li>
+      <li>Work earned Indigo Awards 2023 (3 Gold, 2 Silver), Indigo Awards 2022 (2 Gold, 2 Silver), and Red Dot 2021 recognition</li>
     </ul>
   </div>
 
@@ -426,8 +431,9 @@
       <span class="job-meta">Heartbeat Ideas · New York, NY · Aug 2018 – Nov 2019</span>
     </div>
     <ul class="job-desc">
-      <li>Owned end-to-end product design for healthcare compliance software under FDA and HIPAA requirements</li>
-      <li>Designed component libraries and interaction patterns; bridged design intent and engineering reality on complex enterprise applications</li>
+      <li>Led UX research and experience strategy for pharma and healthcare agency work, turning stakeholder input, competitive audits, and user needs into clear digital product direction</li>
+      <li>Created journey maps, site maps, user flows, wireframes, and prototypes for patient, HCP, and internal brand-team experiences across regulated healthcare programs</li>
+      <li>Partnered with strategy, creative, account, and engineering teams to move UX recommendations from research findings into build-ready product and campaign experiences</li>
     </ul>
   </div>
 
@@ -439,7 +445,7 @@
     <ul class="job-desc">
       <li>7+ years managing Fortune 500 pharma and healthcare clients with budgets from $2M to $50M+, including NUVIGIL, Namenda XR, Lipitor, and Zoloft</li>
       <li>One of two account consumer leads on FCB Health's largest pharma account across all verticals: TV, radio, digital, gaming, Times Square, unbranded campaigns, brand planning, and MLR review</li>
-      <li>Developed the core skill defining every role since: translating big strategic thinking into tactical execution across every team — account, creative, UX, development, and leadership</li>
+      <li>Translated client and brand strategy into clear briefs, creative feedback, production requirements, timelines, and MLR-ready deliverables across account, creative, UX, and development teams</li>
     </ul>
   </div>
 </section>
@@ -481,7 +487,7 @@
 async function shareResume() {
   const shareData = {
     title: 'Wally Mostafa — AI Product Strategist',
-    text: 'AI product strategist and design leader with 15 years running the full loop: discovery, design, build, and delivery.',
+    text: 'AI product strategist and design leader with 15 years across pharma, enterprise UX, and AI implementation.',
     url: window.location.href
   };
 

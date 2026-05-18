@@ -3,140 +3,984 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI Product Studio — Wally Mostafa</title>
-<meta name="description" content="Three shipped AI products built solo — multi-agent orchestration, real estate AI, and workflow automation. By Wally Mostafa.">
-<meta property="og:title" content="AI Product Studio — Wally Mostafa">
-<meta property="og:description" content="Three shipped AI products built solo — multi-agent orchestration, real estate AI, and workflow automation.">
+<title>Enterprise Design System — Wally Mostafa</title>
+<meta name="description" content="Enterprise design system and workflow case study featuring IPG's Marketing Intelligence Engine data visualization project, led by Wally Mostafa as Director of Experience &amp; Innovation at Kinesso.">
+<meta property="og:title" content="Enterprise Design System — Wally Mostafa">
+<meta property="og:description" content="Enterprise design system case study featuring MIE Data Visualization and Digital Experience Audit projects from Kinesso.">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://misterpavano.github.io/project-03.html">
+<meta property="og:url" content="https://wallymo.github.io/project-03.html">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<meta name="theme-color" content="#1d1d1d">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&amp;family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;display=swap" rel="stylesheet">
 <style>
   :root {
-    --ink: #1a1714; --ink-soft: #38332d; --ink-muted: #5c5550;
-    --surface: #f8f5f0; --surface-warm: #f0ebe3; --surface-deep: #e6dfd5;
-    --surface-tint: #f4f0e8; --accent: #c45a2d; --accent-hover: #a84820;
-    --accent-light: rgba(196,90,45,0.08); --rule: #d4ccc2; --rule-light: #e4ddd4;
-    --font-display: 'Syne', sans-serif; --font-body: 'Instrument Sans', sans-serif;
+    --ink: #1a1714;
+    --ink-soft: #38332d;
+    --ink-muted: #5c5550;
+    --surface: #f8f5f0;
+    --surface-warm: #f0ebe3;
+    --surface-deep: #e6dfd5;
+    --surface-tint: #f4f0e8;
+    --accent: #c45a2d;
+    --accent-hover: #a84820;
+    --accent-light: rgba(196, 90, 45, 0.08);
+    --rule: #d4ccc2;
+    --rule-light: #e4ddd4;
+    --font-display: 'Syne', sans-serif;
+    --font-body: 'Instrument Sans', sans-serif;
     --max-w: 1140px;
-    --space-xs: clamp(0.25rem,0.5vw,0.5rem); --space-s: clamp(0.5rem,1vw,0.75rem);
-    --space-m: clamp(1rem,2vw,1.5rem); --space-l: clamp(1.5rem,3vw,2.5rem);
-    --space-xl: clamp(2.5rem,5vw,4rem); --space-2xl: clamp(4rem,8vw,7rem);
+    --space-xs: clamp(0.25rem, 0.5vw, 0.5rem);
+    --space-s: clamp(0.5rem, 1vw, 0.75rem);
+    --space-m: clamp(1rem, 2vw, 1.5rem);
+    --space-l: clamp(1.5rem, 3vw, 2.5rem);
+    --space-xl: clamp(2.5rem, 5vw, 4rem);
+    --space-2xl: clamp(4rem, 8vw, 7rem);
+    --space-3xl: clamp(6rem, 10vw, 10rem);
   }
-  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-  html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased}
-  body{font-family:var(--font-body);font-size:clamp(1rem,1.15vw,1.125rem);line-height:1.7;color:var(--ink);background:var(--surface);letter-spacing:0.005em}
-
-  nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:var(--space-s) var(--space-l);display:flex;justify-content:space-between;align-items:center;background:rgba(248,245,240,0.92);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--rule-light)}
-  nav .name{font-family:var(--font-display);font-weight:700;font-size:1.05rem;color:var(--ink);text-decoration:none;letter-spacing:-0.02em}
-  nav .back{font-size:0.85rem;font-weight:500;color:var(--ink-muted);text-decoration:none;transition:color 0.2s;padding:0.5rem 0}
-  nav .back:hover{color:var(--accent)}
-
-  .project-hero{padding:calc(80px + var(--space-2xl)) var(--space-l) var(--space-xl);max-width:var(--max-w);margin:0 auto}
-  .project-number{font-family:var(--font-display);font-size:clamp(5rem,10vw,8rem);font-weight:800;color:var(--surface-deep);line-height:1;letter-spacing:-0.05em}
-  .project-hero h1{font-family:var(--font-display);font-size:clamp(2.5rem,5vw,4rem);font-weight:800;letter-spacing:-0.035em;color:var(--ink);line-height:1.05;margin-top:var(--space-s)}
-  .project-role{font-size:0.85rem;font-weight:600;text-transform:uppercase;letter-spacing:0.1em;color:var(--accent);margin-top:var(--space-m)}
-  .project-summary{font-size:clamp(1.1rem,1.4vw,1.25rem);color:var(--ink-soft);max-width:55ch;line-height:1.7;margin-top:var(--space-l)}
-
-  .stats-bar{display:flex;gap:var(--space-xl);flex-wrap:wrap;padding:var(--space-xl) var(--space-l);max-width:var(--max-w);margin:0 auto;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
-  .stat{display:flex;flex-direction:column}
-  .stat-number{font-family:var(--font-display);font-size:clamp(2rem,3vw,2.8rem);font-weight:800;color:var(--ink);letter-spacing:-0.03em;line-height:1.1}
-  .stat-label{font-size:0.75rem;font-weight:500;text-transform:uppercase;letter-spacing:0.1em;color:var(--ink-muted);margin-top:4px}
-
-  section{padding:var(--space-2xl) var(--space-l)}
-  .inner{max-width:var(--max-w);margin:0 auto}
-  .section-label{font-size:0.75rem;font-weight:600;text-transform:uppercase;letter-spacing:0.18em;color:var(--accent);margin-bottom:var(--space-s)}
-  .section-heading{font-family:var(--font-display);font-size:clamp(1.6rem,2.8vw,2.2rem);font-weight:700;letter-spacing:-0.025em;color:var(--ink);margin-bottom:var(--space-l);max-width:24ch;line-height:1.15}
-
-  .content-grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--space-xl);align-items:start}
-  .content-grid p{color:var(--ink-soft);font-size:1rem;line-height:1.75;margin-bottom:var(--space-m)}
-  .content-grid p:last-child{margin-bottom:0}
-
-  .placeholder{width:100%;aspect-ratio:16/10;border-radius:4px;display:flex;align-items:center;justify-content:center;font-family:var(--font-body);font-size:0.82rem;font-weight:500;text-transform:uppercase;letter-spacing:0.1em}
-  .ph-warm{background:var(--surface-warm);color:var(--ink-muted);border:1px solid var(--rule-light)}
-  .ph-dark{background:var(--ink);color:rgba(248,245,240,0.4)}
-  .ph-accent{background:var(--accent-light);color:var(--accent);border:1px solid rgba(196,90,45,0.15)}
-  .placeholder-wide{aspect-ratio:21/9}
-
-  .full-bleed{padding:0 var(--space-l);max-width:var(--max-w);margin:0 auto}
-  .image-grid{display:grid;gap:var(--space-m);max-width:var(--max-w);margin:0 auto;padding:0 var(--space-l)}
-  .image-grid--3{grid-template-columns:1fr 1fr 1fr}
-
-  .pullquote{max-width:var(--max-w);margin:0 auto;padding:var(--space-2xl) var(--space-l)}
-  .pullquote blockquote{font-family:var(--font-display);font-size:clamp(1.5rem,2.5vw,2rem);font-weight:600;color:var(--ink);letter-spacing:-0.02em;line-height:1.35;max-width:30ch;position:relative;padding-left:var(--space-l);border-left:3px solid var(--accent)}
-  .pullquote cite{display:block;margin-top:var(--space-m);padding-left:var(--space-l);font-family:var(--font-body);font-size:0.88rem;font-style:normal;font-weight:500;color:var(--ink-muted)}
-
-  .dark{background:var(--ink);color:var(--surface)}
-  .dark .section-label{color:var(--accent)}
-  .dark .section-heading{color:var(--surface)}
-  .dark p{color:rgba(248,245,240,0.7)}
-
-  /* Product cards */
-  .products{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:var(--space-l);margin-top:var(--space-l)}
-  .product-card{padding:var(--space-l);border:1.5px solid var(--rule);border-radius:4px;background:var(--surface);transition:border-color 0.2s,transform 0.2s}
-  .product-card:hover{border-color:var(--accent);transform:translateY(-2px)}
-  .product-card h4{font-family:var(--font-display);font-size:1.15rem;font-weight:700;color:var(--ink);margin-bottom:var(--space-xs)}
-  .product-card .product-type{font-size:0.75rem;font-weight:600;text-transform:uppercase;letter-spacing:0.1em;color:var(--accent);margin-bottom:var(--space-s)}
-  .product-card p{font-size:0.92rem;color:var(--ink-soft);line-height:1.65}
-
-  .outcomes{list-style:none;display:grid;gap:var(--space-m);grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
-  .outcomes li{padding:var(--space-m) var(--space-l);border:1px solid var(--rule-light);border-radius:4px;background:var(--surface)}
-  .outcomes li strong{display:block;font-family:var(--font-display);font-size:1.1rem;font-weight:700;color:var(--ink);margin-bottom:4px}
-  .outcomes li span{font-size:0.9rem;color:var(--ink-soft);line-height:1.6}
-  .dark .outcomes li{border-color:rgba(248,245,240,0.1);background:rgba(248,245,240,0.04)}
-  .dark .outcomes li strong{color:var(--surface)}
-  .dark .outcomes li span{color:rgba(248,245,240,0.6)}
-
-  .next-project{padding:var(--space-2xl) var(--space-l);background:var(--surface-warm);text-align:center}
-  .next-project .label{font-size:0.75rem;font-weight:600;text-transform:uppercase;letter-spacing:0.18em;color:var(--ink-muted);margin-bottom:var(--space-s)}
-  .next-project a{display:inline-block;font-family:var(--font-display);font-size:clamp(1.8rem,3.5vw,2.8rem);font-weight:800;letter-spacing:-0.03em;color:var(--ink);text-decoration:none;transition:color 0.2s}
-  .next-project a:hover{color:var(--accent)}
-  .next-project .nav-sub{margin-top:var(--space-m)}
-  .next-project .nav-sub a{font-size:0.88rem;font-weight:500;color:var(--ink-muted);transition:color 0.2s}
-  .next-project .nav-sub a:hover{color:var(--accent)}
-
-  footer{padding:var(--space-l) var(--space-l);border-top:1px solid var(--rule-light);text-align:center;font-size:0.78rem;color:var(--ink-muted)}
-
-  @media(max-width:640px){
-    section{padding-left:24px;padding-right:24px}
-    nav{padding-left:24px;padding-right:24px}
-    nav .name{font-size:0.95rem}
-    nav .back{min-height:44px;display:inline-flex;align-items:center;font-size:0.9rem}
-    .project-hero{padding-left:24px;padding-right:24px;padding-top:calc(60px + var(--space-xl))}
-    .project-hero h1{font-size:clamp(2.2rem,9vw,3rem)}
-    .project-number{font-size:clamp(4rem,14vw,6rem)}
-    .project-summary{font-size:1rem}
-    .stats-bar{padding:var(--space-l) 24px;display:grid;grid-template-columns:1fr 1fr;gap:var(--space-l) var(--space-m)}
-    .stat-number{font-size:clamp(1.5rem,5.5vw,2rem)}
-    .stat-label{font-size:0.78rem}
-    .content-grid{grid-template-columns:1fr}
-    .content-grid p{font-size:1rem;line-height:1.7}
-    .full-bleed{padding:0 24px}
-    .image-grid{padding:0 24px}
-    .image-grid--3{grid-template-columns:1fr}
-    .pullquote{padding:var(--space-xl) 24px}
-    .pullquote blockquote{font-size:clamp(1.2rem,5vw,1.6rem);padding-left:var(--space-m)}
-    .pullquote cite{padding-left:var(--space-m);font-size:0.85rem}
-    .section-heading{font-size:clamp(1.4rem,5.5vw,1.8rem)}
-    .outcomes{grid-template-columns:1fr}
-    .outcomes li{padding:var(--space-m)}
-    .outcomes li strong{font-size:1rem}
-    .outcomes li span{font-size:0.92rem}
-    .products{grid-template-columns:1fr}
-    .product-card{padding:var(--space-m)}
-    .product-card h4{font-size:1.1rem}
-    .product-card p{font-size:0.95rem}
-    .next-project{padding:var(--space-xl) 24px}
-    .next-project a{font-size:clamp(1.4rem,6vw,2rem)}
-    .next-project .nav-sub a{min-height:44px;display:inline-flex;align-items:center}
-    footer{padding:var(--space-m) 24px}
-    .next-project{margin-bottom:var(--space-l)}
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+  body {
+    font-family: var(--font-body);
+    font-size: clamp(1rem, 1.15vw, 1.125rem);
+    line-height: 1.7;
+    color: var(--ink);
+    background: var(--surface);
+    letter-spacing: 0.005em;
+    overflow-x: hidden;
   }
-  @media(max-width:380px){
-    .stats-bar{grid-template-columns:1fr}
-    .project-hero h1{font-size:2rem}
-    .pullquote blockquote{font-size:1.15rem;hyphens:auto;-webkit-hyphens:auto}
+
+  /* Nav */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    padding: var(--space-s) var(--space-l);
+    display: flex; justify-content: space-between; align-items: center;
+    background: rgba(248, 245, 240, 0.92);
+    backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
+    border-bottom: 1px solid var(--rule-light);
+  }
+  nav .name { font-family: var(--font-display); font-weight: 700; font-size: 1.05rem; color: var(--ink); text-decoration: none; letter-spacing: -0.02em; }
+  nav .back { font-size: 0.85rem; font-weight: 500; color: var(--ink-muted); text-decoration: none; transition: color 0.2s; padding: 0.5rem 0; }
+  nav .back:hover { color: var(--accent); }
+  nav .nav-cta { font-size: 0.82rem; font-weight: 600; color: var(--surface) !important; background: var(--ink); padding: 0.45rem 1rem !important; border-radius: 3px; text-decoration: none; transition: background 0.2s; }
+  nav .nav-cta:hover { background: var(--accent); color: var(--surface) !important; }
+
+  /* Project Hero */
+  .project-hero {
+    padding: calc(80px + var(--space-2xl)) var(--space-l) var(--space-xl);
+    max-width: var(--max-w); margin: 0 auto;
+  }
+  .project-number {
+    font-family: var(--font-display); font-size: clamp(5rem, 10vw, 8rem);
+    font-weight: 800; color: var(--surface-deep); line-height: 1; letter-spacing: -0.05em;
+  }
+  .project-hero h1 {
+    font-family: var(--font-display); font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 800; letter-spacing: -0.035em; color: var(--ink); line-height: 1.05;
+    margin-top: var(--space-s);
+  }
+  .project-role {
+    font-size: 0.85rem; font-weight: 600; text-transform: uppercase;
+    letter-spacing: 0.1em; color: var(--accent); margin-top: var(--space-m);
+  }
+  .project-summary {
+    font-size: clamp(1.1rem, 1.4vw, 1.25rem); color: var(--ink-soft);
+    max-width: 55ch; line-height: 1.7; margin-top: var(--space-l);
+  }
+  .project-hero--video {
+    padding-top: calc(72px + var(--space-xl));
+    padding-bottom: var(--space-xl);
+    display: grid;
+    grid-template-columns: minmax(0, 0.95fr) minmax(380px, 1.05fr);
+    gap: var(--space-xl);
+    align-items: center;
+  }
+  .hero-copy { min-width: 0; }
+  .project-hero--video .project-number {
+    font-size: clamp(3.2rem, 6vw, 5rem);
+  }
+  .project-hero--video h1 {
+    font-size: clamp(2rem, 3.5vw, 3rem);
+    max-width: 11ch;
+  }
+  .project-hero--video .project-summary {
+    max-width: 62ch;
+    margin-top: var(--space-m);
+  }
+  .hero-topline {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-s);
+    margin-top: var(--space-l);
+  }
+  .hero-pill {
+    display: inline-flex;
+    align-items: center;
+    min-height: 36px;
+    padding: 0.42rem 0.7rem;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    background: var(--surface-tint);
+    color: var(--ink-soft);
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+  .hero-pill--accent {
+    border-color: rgba(196, 90, 45, 0.28);
+    background: var(--accent-light);
+    color: var(--accent);
+  }
+  .video-hero {
+    max-width: var(--max-w);
+    margin: 0 auto;
+    padding: 0 var(--space-l) var(--space-2xl);
+  }
+  .video-frame {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    border-radius: 18px;
+    background: #181411;
+    border: 1px solid rgba(26, 23, 20, 0.12);
+    box-shadow: 0 32px 80px rgba(26, 23, 20, 0.18);
+  }
+  .hero-video-panel {
+    min-width: 0;
+  }
+  .video-link-card {
+    position: absolute;
+    inset: 0;
+    display: block;
+    color: var(--surface);
+    text-decoration: none;
+  }
+  .video-link-card img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: saturate(0.94) contrast(1.02);
+    transition: transform 0.45s ease, filter 0.45s ease;
+  }
+  .video-link-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(12,10,8,0.18), rgba(12,10,8,0.04) 45%, rgba(12,10,8,0.34));
+    pointer-events: none;
+  }
+  .video-card-label {
+    position: absolute;
+    left: var(--space-l);
+    top: var(--space-l);
+    z-index: 2;
+    display: grid;
+    gap: 2px;
+    max-width: min(420px, calc(100% - var(--space-xl)));
+  }
+  .video-card-label strong {
+    font-family: var(--font-display);
+    font-size: clamp(1.05rem, 1.9vw, 1.65rem);
+    font-weight: 800;
+    letter-spacing: -0.025em;
+    line-height: 1;
+    text-shadow: 0 2px 18px rgba(0,0,0,0.38);
+  }
+  .video-card-label span {
+    font-size: 0.76rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: rgba(248,245,240,0.78);
+  }
+  .video-play-button {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 2;
+    width: clamp(64px, 7vw, 92px);
+    height: clamp(64px, 7vw, 92px);
+    border-radius: 999px;
+    background: rgba(196,90,45,0.96);
+    transform: translate(-50%, -50%);
+    box-shadow: 0 18px 42px rgba(26,23,20,0.22);
+  }
+  .video-play-button::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border-top: 13px solid transparent;
+    border-bottom: 13px solid transparent;
+    border-left: 20px solid var(--surface);
+    transform: translate(-38%, -50%);
+  }
+  @media (hover: hover) and (pointer: fine) {
+    .video-link-card:hover img {
+      transform: scale(1.035);
+      filter: saturate(1.02) contrast(1.05);
+    }
+  }
+  .video-caption {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--space-m);
+    align-items: flex-start;
+    margin-top: var(--space-m);
+    color: var(--ink-soft);
+    font-size: 0.92rem;
+    line-height: 1.55;
+  }
+  .video-caption p {
+    max-width: 58ch;
+  }
+  .text-link {
+    color: var(--ink);
+    font-weight: 700;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(26, 23, 20, 0.22);
+    transition: color 0.2s, border-color 0.2s;
+    white-space: nowrap;
+  }
+  .text-link:hover {
+    color: var(--accent);
+    border-color: var(--accent);
+  }
+  .project-feature {
+    background: var(--surface-tint);
+    scroll-margin-top: 88px;
+  }
+  .project-feature--alt {
+    background: var(--surface);
+  }
+  .project-feature-header {
+    display: grid;
+    gap: var(--space-m);
+    align-items: start;
+    margin-bottom: var(--space-xl);
+  }
+  .project-feature-title {
+    font-family: var(--font-display);
+    font-size: clamp(2.4rem, 5vw, 4.6rem);
+    font-weight: 800;
+    letter-spacing: -0.045em;
+    line-height: 0.98;
+    color: var(--ink);
+  }
+  .project-feature-copy {
+    color: var(--ink-soft);
+    font-size: clamp(1rem, 1.25vw, 1.14rem);
+    line-height: 1.65;
+    max-width: 68ch;
+  }
+  .project-feature-video {
+    margin-bottom: var(--space-l);
+  }
+  .project-facts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-m);
+    margin-top: var(--space-xl);
+  }
+  .project-fact {
+    padding: var(--space-m);
+    border: 1px solid var(--rule-light);
+    border-radius: 6px;
+    background: var(--surface);
+  }
+  .project-fact span {
+    display: block;
+    margin-bottom: var(--space-xs);
+    color: var(--accent);
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+  .project-fact strong {
+    display: block;
+    font-family: var(--font-display);
+    color: var(--ink);
+    font-size: 1.02rem;
+    line-height: 1.2;
+    margin-bottom: var(--space-xs);
+  }
+  .project-fact p {
+    color: var(--ink-soft);
+    font-size: 0.9rem;
+    line-height: 1.55;
+  }
+  .fact-link {
+    display: inline-block;
+    margin-top: var(--space-xs);
+    color: var(--ink);
+    font-size: 0.82rem;
+    font-weight: 700;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(26, 23, 20, 0.22);
+    transition: color 0.2s, border-color 0.2s;
+  }
+  .fact-link:hover {
+    color: var(--accent);
+    border-color: var(--accent);
+  }
+
+  /* Stats bar */
+  .stats-bar {
+    display: flex; gap: var(--space-xl); flex-wrap: wrap;
+    padding: var(--space-xl) var(--space-l);
+    max-width: var(--max-w); margin: 0 auto;
+    border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule);
+  }
+  .stat { display: flex; flex-direction: column; }
+  .stat-number { font-family: var(--font-display); font-size: clamp(2rem, 3vw, 2.8rem); font-weight: 800; color: var(--ink); letter-spacing: -0.03em; line-height: 1.1; }
+  .stat-label { font-size: 0.75rem; font-weight: 500; text-transform: uppercase; letter-spacing: 0.1em; color: var(--ink-muted); margin-top: 4px; }
+
+  /* Big stats grid */
+  .big-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-l);
+    max-width: var(--max-w);
+    margin: 0 auto;
+    padding: var(--space-2xl) var(--space-l);
+  }
+  .big-stat { text-align: center; }
+  .big-stat-number {
+    font-family: var(--font-display);
+    font-size: clamp(3rem, 6vw, 5rem);
+    font-weight: 800;
+    color: var(--accent);
+    letter-spacing: -0.03em;
+    line-height: 1;
+  }
+  .big-stat-label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--ink);
+    margin-top: var(--space-s);
+  }
+  .big-stat-note {
+    font-size: 0.8rem;
+    color: var(--ink-muted);
+    margin-top: 4px;
+  }
+
+  /* Section */
+  section { padding: var(--space-2xl) var(--space-l); }
+  .inner { max-width: var(--max-w); margin: 0 auto; }
+  .section-label { font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.18em; color: var(--accent); margin-bottom: var(--space-s); }
+  .section-heading { font-family: var(--font-display); font-size: clamp(1.6rem, 2.8vw, 2.2rem); font-weight: 700; letter-spacing: -0.025em; color: var(--ink); margin-bottom: var(--space-l); max-width: 24ch; line-height: 1.15; }
+  .section-heading-wide { max-width: 36ch; }
+
+  /* Content blocks */
+  .content-grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-xl); align-items: start; }
+  .content-grid p { color: var(--ink-soft); font-size: 1rem; line-height: 1.75; margin-bottom: var(--space-m); }
+  .content-grid p:last-child { margin-bottom: 0; }
+  .case-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-m);
+  }
+  .case-card {
+    padding: var(--space-l);
+    border: 1px solid var(--rule-light);
+    border-radius: 6px;
+    background: var(--surface);
+  }
+  .case-card h3 {
+    font-family: var(--font-display);
+    font-size: 1.08rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    line-height: 1.15;
+    color: var(--ink);
+    margin-bottom: var(--space-s);
+  }
+  .case-card p {
+    color: var(--ink-soft);
+    font-size: 0.93rem;
+    line-height: 1.65;
+  }
+  .role-list {
+    list-style: none;
+    display: grid;
+    gap: var(--space-s);
+  }
+  .role-list li {
+    position: relative;
+    padding-left: 1.05rem;
+    color: var(--ink-soft);
+    font-size: 0.98rem;
+    line-height: 1.65;
+  }
+  .role-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.72em;
+    width: 6px;
+    height: 6px;
+    border-radius: 999px;
+    background: var(--accent);
+  }
+
+  /* Challenges list */
+  .challenges-list {
+    list-style: none;
+    display: grid;
+    gap: var(--space-l);
+  }
+  .challenges-list li {
+    padding-left: var(--space-l);
+    border-left: 3px solid var(--accent);
+  }
+  .challenges-list h3 {
+    font-family: var(--font-display);
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--ink);
+    margin-bottom: var(--space-xs);
+  }
+  .challenges-list p {
+    color: var(--ink-soft);
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+
+  /* Impact ledger */
+  .impact-ledger {
+    display: grid;
+    gap: var(--space-m);
+    margin-top: var(--space-xl);
+  }
+  .impact-row {
+    display: grid;
+    grid-template-columns: minmax(9rem, 0.65fr) minmax(0, 1.4fr) minmax(11rem, 0.75fr);
+    gap: var(--space-l);
+    align-items: center;
+    padding: var(--space-l);
+    background:
+      linear-gradient(135deg, rgba(255,255,255,0.48), rgba(255,255,255,0.12)),
+      var(--surface);
+    border: 1px solid rgba(212, 204, 194, 0.78);
+    border-radius: 8px;
+    transition: transform 520ms cubic-bezier(0.22, 1, 0.36, 1), border-color 520ms cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .impact-row:hover {
+    transform: translateY(-3px);
+    border-color: rgba(196, 90, 45, 0.28);
+  }
+  .impact-kicker {
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+  .impact-title {
+    font-family: var(--font-display);
+    font-size: clamp(1.25rem, 2.1vw, 1.8rem);
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 1.05;
+    color: var(--ink);
+    margin-top: var(--space-xs);
+  }
+  .impact-copy {
+    color: var(--ink-soft);
+    font-size: 1rem;
+    line-height: 1.65;
+    max-width: 58ch;
+  }
+  .impact-proof {
+    justify-self: end;
+    min-width: 10rem;
+    padding: var(--space-m);
+    background: var(--ink);
+    color: var(--surface);
+    border-radius: 6px;
+  }
+  .impact-proof strong {
+    display: block;
+    font-family: var(--font-display);
+    font-size: 1.35rem;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 1;
+  }
+  .impact-proof span {
+    display: block;
+    margin-top: var(--space-xs);
+    font-size: 0.76rem;
+    line-height: 1.35;
+    color: rgba(248,245,240,0.72);
+  }
+
+  /* Solutions grid */
+  .solutions-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-l);
+  }
+  .solution-item {
+    padding: var(--space-l);
+    background: var(--surface);
+    border: 1px solid var(--rule-light);
+    border-radius: 4px;
+  }
+  .solution-item h3 {
+    font-family: var(--font-display);
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--ink);
+    margin-bottom: var(--space-s);
+  }
+  .solution-item p {
+    color: var(--ink-soft);
+    font-size: 0.92rem;
+    line-height: 1.7;
+  }
+
+  /* Placeholder images */
+  .placeholder {
+    width: 100%; aspect-ratio: 16/10; border-radius: 4px;
+    display: flex; align-items: center; justify-content: center;
+    font-family: var(--font-body); font-size: 0.82rem; font-weight: 500;
+    text-transform: uppercase; letter-spacing: 0.1em;
+    overflow: hidden; position: relative;
+  }
+  .placeholder span { position: relative; z-index: 1; }
+
+  .ph-warm { background: var(--surface-warm); color: var(--ink-muted); border: 1px solid var(--rule-light); }
+  .ph-dark { background: var(--ink); color: rgba(248,245,240,0.4); }
+  .ph-accent { background: var(--accent-light); color: var(--accent); border: 1px solid rgba(196,90,45,0.15); }
+  .ph-tint { background: var(--surface-tint); color: var(--ink-muted); border: 1px solid var(--rule-light); }
+
+  .placeholder-wide { aspect-ratio: 21/9; }
+  .placeholder-tall { aspect-ratio: 3/4; }
+  .placeholder-square { aspect-ratio: 1/1; }
+
+  /* Full-bleed image */
+  .full-bleed {
+    padding: 0 var(--space-l);
+    max-width: var(--max-w); margin: 0 auto;
+  }
+
+  /* Image grid */
+  .image-grid {
+    display: grid; gap: var(--space-m);
+    max-width: var(--max-w); margin: 0 auto;
+    padding: 0 var(--space-l);
+  }
+  .image-grid--2 { grid-template-columns: 1fr 1fr; }
+  .image-grid--3 { grid-template-columns: 1fr 1fr 1fr; }
+  .image-grid--asymmetric { grid-template-columns: 1.5fr 1fr; }
+
+  /* Modern screenshot layouts */
+  .image-showcase {
+    padding: var(--space-2xl) var(--space-l);
+  }
+  .image-full-bleed {
+    padding: var(--space-2xl) 0;
+  }
+  .image-with-caption {
+    display: grid;
+    gap: var(--space-s);
+  }
+  .image-frame {
+    position: relative;
+    overflow: hidden;
+    border-radius: 24px;
+    background: #181411;
+    border: 1px solid rgba(26, 23, 20, 0.08);
+    box-shadow: 0 28px 70px rgba(26, 23, 20, 0.16);
+    transition: transform 0.45s ease, box-shadow 0.45s ease;
+  }
+  .image-frame::after {
+    content: "";
+    position: absolute;
+    inset: auto 0 0;
+    height: 28%;
+    background: linear-gradient(180deg, transparent 0%, rgba(12, 10, 8, 0.08) 100%);
+    pointer-events: none;
+  }
+  .image-frame img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.7s cubic-bezier(0.22, 1, 0.36, 1), filter 0.4s ease;
+  }
+  .image-card--wide .image-frame { aspect-ratio: 21 / 10; }
+  .image-card--landscape .image-frame { aspect-ratio: 16 / 10; }
+  .image-card--compact .image-frame { aspect-ratio: 4 / 3; }
+  .image-with-caption figcaption {
+    display: flex;
+    align-items: center;
+    gap: var(--space-s);
+    max-width: 46ch;
+    font-size: 0.88rem;
+    line-height: 1.5;
+    color: var(--ink-soft);
+  }
+  .image-with-caption figcaption::before {
+    content: "";
+    width: 32px;
+    height: 1px;
+    background: var(--accent);
+    flex-shrink: 0;
+    opacity: 0.9;
+  }
+  .image-full-bleed .image-with-caption {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    padding: 0 clamp(24px, 4vw, 56px);
+  }
+  .image-asymmetric-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.35fr) minmax(280px, 0.85fr);
+    gap: var(--space-xl);
+    align-items: end;
+  }
+  .image-asymmetric-grid .image-with-caption:last-child {
+    margin-top: clamp(2rem, 8vw, 5rem);
+  }
+  .image-overlap {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    align-items: end;
+    gap: var(--space-l);
+  }
+  .image-overlap .image-main {
+    grid-column: 1 / span 8;
+    z-index: 1;
+  }
+  .image-overlap .image-accent {
+    grid-column: 7 / -1;
+    margin-top: clamp(-2rem, -4vw, -1rem);
+    z-index: 2;
+  }
+  .image-results-grid {
+    display: grid;
+    grid-template-columns: 1.05fr 1.05fr 0.9fr;
+    grid-template-areas:
+      "primary primary secondary"
+      "primary primary tertiary";
+    gap: var(--space-m);
+    align-items: start;
+  }
+  .image-results-grid .image-primary { grid-area: primary; }
+  .image-results-grid .image-secondary { grid-area: secondary; }
+  .image-results-grid .image-tertiary { grid-area: tertiary; }
+  .image-results-grid .image-primary .image-frame { aspect-ratio: 16 / 11; }
+  .image-results-grid .image-secondary .image-frame,
+  .image-results-grid .image-tertiary .image-frame { aspect-ratio: 16 / 10; }
+
+  @media (hover: hover) and (pointer: fine) {
+    .image-with-caption:hover .image-frame {
+      transform: translateY(-8px);
+      box-shadow: 0 34px 80px rgba(26, 23, 20, 0.18);
+    }
+    .image-with-caption:hover .image-frame img {
+      transform: scale(1.035);
+    }
+  }
+
+  [data-reveal] {
+    opacity: 0;
+    transform: translateY(36px) scale(0.985);
+    transition: opacity 0.8s ease, transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+    transition-delay: var(--reveal-delay, 0s);
+    will-change: opacity, transform;
+  }
+  [data-reveal].is-visible {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+
+  /* Pullquote */
+  .pullquote {
+    max-width: var(--max-w); margin: 0 auto;
+    padding: var(--space-2xl) var(--space-l);
+  }
+  .pullquote blockquote {
+    font-family: var(--font-display); font-size: clamp(1.5rem, 2.5vw, 2rem);
+    font-weight: 600; color: var(--ink); letter-spacing: -0.02em; line-height: 1.35;
+    max-width: 30ch; position: relative; padding-left: var(--space-l);
+    border-left: 3px solid var(--accent);
+  }
+  .pullquote cite {
+    display: block; margin-top: var(--space-m); padding-left: var(--space-l);
+    font-family: var(--font-body); font-size: 0.88rem; font-style: normal;
+    font-weight: 500; color: var(--ink-muted);
+  }
+
+  /* Dark section */
+  .dark { background: var(--ink); color: var(--surface); }
+  .dark .section-label { color: var(--accent); }
+  .dark .section-heading { color: var(--surface); }
+  .dark p { color: rgba(248,245,240,0.7); }
+
+  /* Outcome list */
+  .outcomes {
+    list-style: none; display: grid; gap: var(--space-m);
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+  .outcomes li {
+    padding: var(--space-m) var(--space-l);
+    border: 1px solid var(--rule-light); border-radius: 4px;
+    background: var(--surface);
+  }
+  .outcomes li strong {
+    display: block; font-family: var(--font-display); font-size: 1.1rem;
+    font-weight: 700; color: var(--ink); margin-bottom: 4px;
+  }
+  .outcomes li span { font-size: 0.9rem; color: var(--ink-soft); line-height: 1.6; }
+
+  .dark .outcomes li { border-color: rgba(248,245,240,0.1); background: rgba(248,245,240,0.04); }
+  .dark .outcomes li strong { color: var(--surface); }
+  .dark .outcomes li span { color: rgba(248,245,240,0.6); }
+  .dark .case-card {
+    border-color: rgba(248,245,240,0.1);
+    background: rgba(248,245,240,0.04);
+  }
+  .dark .case-card h3 { color: var(--surface); }
+  .dark .case-card p { color: rgba(248,245,240,0.66); }
+  .dark .text-link {
+    color: var(--surface);
+    border-bottom-color: rgba(248,245,240,0.28);
+  }
+  .dark .text-link:hover {
+    color: var(--accent);
+    border-color: var(--accent);
+  }
+
+  /* Awards highlight */
+  .awards-highlight {
+    background: var(--surface-warm);
+    padding: var(--space-xl) var(--space-l);
+    border-radius: 8px;
+    margin-top: var(--space-l);
+  }
+  .award-band {
+    background: var(--ink);
+    color: var(--surface);
+  }
+  .award-band .inner {
+    display: grid;
+    grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+    gap: var(--space-xl);
+    align-items: start;
+  }
+  .award-title {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 4vw, 3.4rem);
+    font-weight: 800;
+    letter-spacing: -0.04em;
+    line-height: 0.98;
+  }
+  .award-copy {
+    color: rgba(248,245,240,0.72);
+    max-width: 58ch;
+    margin-bottom: var(--space-l);
+  }
+  .award-chips {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-s);
+  }
+  .award-chips li {
+    border: 1px solid rgba(248,245,240,0.13);
+    border-radius: 4px;
+    padding: 0.52rem 0.68rem;
+    background: rgba(248,245,240,0.04);
+    color: rgba(248,245,240,0.82);
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.09em;
+  }
+  .awards-highlight h3 {
+    font-family: var(--font-display);
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--accent);
+    margin-bottom: var(--space-s);
+  }
+  .awards-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-m);
+  }
+  .awards-list li {
+    font-size: 0.9rem;
+    color: var(--ink-soft);
+    padding: var(--space-xs) var(--space-s);
+    background: var(--surface);
+    border-radius: 4px;
+    border: 1px solid var(--rule-light);
+  }
+
+  /* Growth metrics */
+  .growth-metrics {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-xl);
+    max-width: var(--max-w);
+    margin: 0 auto;
+    padding: var(--space-2xl) var(--space-l);
+    text-align: center;
+  }
+  .growth-metric-number {
+    font-family: var(--font-display);
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 800;
+    color: var(--accent);
+    letter-spacing: -0.03em;
+    line-height: 1;
+  }
+  .growth-metric-label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--ink);
+    margin-top: var(--space-s);
+  }
+
+  /* Next project */
+  .next-project {
+    padding: var(--space-2xl) var(--space-l);
+    background: var(--surface-warm); text-align: center;
+  }
+  .next-project .label { font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.18em; color: var(--ink-muted); margin-bottom: var(--space-s); }
+  .next-project a {
+    display: inline-block; font-family: var(--font-display);
+    font-size: clamp(1.8rem, 3.5vw, 2.8rem); font-weight: 800;
+    letter-spacing: -0.03em; color: var(--ink); text-decoration: none;
+    transition: color 0.2s;
+  }
+  .next-project a:hover { color: var(--accent); }
+
+  footer {
+    padding: var(--space-l) var(--space-l);
+    border-top: 1px solid var(--rule-light);
+    text-align: center; font-size: 0.78rem; color: var(--ink-muted);
+  }
+
+  @media (max-width: 768px) {
+    .big-stats { grid-template-columns: repeat(2, 1fr); }
+    .solutions-grid { grid-template-columns: 1fr; }
+    .case-grid { grid-template-columns: 1fr; }
+    .project-feature-header { grid-template-columns: 1fr; align-items: start; }
+    .project-facts { grid-template-columns: 1fr; }
+    .award-band .inner { grid-template-columns: 1fr; }
+    .impact-row { grid-template-columns: 1fr; gap: var(--space-m); }
+    .impact-proof { justify-self: stretch; }
+    .growth-metrics { grid-template-columns: 1fr; gap: var(--space-l); }
+    .image-asymmetric-grid,
+    .image-overlap,
+    .image-results-grid {
+      grid-template-columns: 1fr;
+      grid-template-areas: none;
+    }
+    .image-asymmetric-grid .image-with-caption:last-child,
+    .image-overlap .image-accent {
+      margin-top: 0;
+    }
+    .image-overlap .image-main,
+    .image-overlap .image-accent {
+      grid-column: auto;
+    }
+    .image-results-grid .image-primary,
+    .image-results-grid .image-secondary,
+    .image-results-grid .image-tertiary {
+      grid-area: auto;
+    }
+  }
+
+  @media (max-width: 640px) {
+    section { padding-left: 24px; padding-right: 24px; }
+    nav { padding-left: 24px; padding-right: 24px; }
+    nav .name { font-size: 0.95rem; }
+    nav .back { min-height: 44px; display: inline-flex; align-items: center; font-size: 0.9rem; }
+    .project-hero { padding-left: 24px; padding-right: 24px; padding-top: calc(60px + var(--space-xl)); }
+    .project-hero h1 { font-size: clamp(2.2rem, 9vw, 3rem); }
+    .project-number { font-size: clamp(4rem, 14vw, 6rem); }
+    .project-summary { font-size: 1rem; }
+    .project-hero--video {
+      padding-top: calc(60px + var(--space-l));
+      grid-template-columns: 1fr;
+      gap: var(--space-l);
+    }
+    .project-hero--video .project-number { font-size: clamp(3.2rem, 13vw, 4.8rem); }
+    .project-hero--video h1 {
+      font-size: clamp(1.95rem, 8.5vw, 2.35rem);
+      max-width: 100%;
+    }
+    .hero-topline { gap: 8px; }
+    .hero-pill { font-size: 0.68rem; min-height: 34px; }
+    .video-hero { padding-left: 24px; padding-right: 24px; padding-bottom: var(--space-xl); }
+    .video-frame { border-radius: 14px; }
+    .project-feature-title {
+      font-size: clamp(1.78rem, 7.7vw, 2.15rem);
+      overflow-wrap: normal;
+    }
+    .video-caption { display: grid; gap: var(--space-s); font-size: 0.86rem; }
+    .text-link { white-space: normal; width: max-content; max-width: 100%; }
+    .stats-bar { padding: var(--space-l) 24px; display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-l) var(--space-m); }
+    .stat-number { font-size: clamp(1.5rem, 5.5vw, 2rem); }
+    .stat-label { font-size: 0.78rem; }
+    .content-grid { grid-template-columns: 1fr; }
+    .content-grid p { font-size: 1rem; line-height: 1.7; }
+    .case-card { padding: var(--space-m); }
+    .full-bleed { padding: 0 24px; }
+    .image-grid { padding: 0 24px; }
+    .image-grid--2, .image-grid--3, .image-grid--asymmetric { grid-template-columns: 1fr; }
+    .image-showcase { padding-left: 24px; padding-right: 24px; }
+    .image-full-bleed .image-with-caption { padding: 0 24px; }
+    .image-frame { border-radius: 18px; }
+    .image-with-caption figcaption { align-items: flex-start; font-size: 0.82rem; }
+    .pullquote { padding: var(--space-xl) 24px; }
+    .pullquote blockquote { font-size: clamp(1.2rem, 5vw, 1.6rem); padding-left: var(--space-m); }
+    .pullquote cite { padding-left: var(--space-m); font-size: 0.85rem; }
+    .section-heading { font-size: clamp(1.4rem, 5.5vw, 1.8rem); }
+    .outcomes { grid-template-columns: 1fr; }
+    .outcomes li { padding: var(--space-m); }
+    .outcomes li strong { font-size: 1rem; }
+    .outcomes li span { font-size: 0.92rem; }
+    .next-project { padding: var(--space-xl) 24px; }
+    .next-project a { font-size: clamp(1.4rem, 6vw, 2rem); }
+    footer { padding: var(--space-m) 24px; }
+    .next-project { margin-bottom: var(--space-l); }
+    .big-stats { padding: var(--space-xl) 24px; }
+    .impact-row { padding: var(--space-l); }
+    .growth-metrics { padding: var(--space-xl) 24px; }
+  }
+  @media (max-width: 380px) {
+    .stats-bar { grid-template-columns: 1fr; }
+    .project-hero h1 { font-size: 2rem; }
+    .pullquote blockquote { font-size: 1.15rem; hyphens: auto; -webkit-hyphens: auto; }
+    .big-stats { grid-template-columns: 1fr; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+    [data-reveal] { opacity: 1 !important; transform: none !important; }
+    .image-frame, .image-frame img { transition: none !important; }
   }
 </style>
 </head>
@@ -146,186 +990,162 @@
   <a href="index.html" class="name">Wally Mostafa</a>
   <div style="display:flex;align-items:center;gap:var(--space-m)">
     <a href="index.html#work" class="back">← All Work</a>
-    <a href="mailto:wmostafa12@gmail.com" class="back" style="color:var(--accent);font-weight:600">Let's Talk</a>
+    <a href="resume.html" class="nav-cta">Resume</a>
   </div>
 </nav>
 
+<!-- HERO -->
 <div class="project-hero">
-  <div class="project-number">02</div>
-  <h1>AI Product Studio</h1>
-  <div class="project-role">One Block Away LLC · Founder &amp; AI Product Engineer · 2023–Present</div>
+  <div class="project-number">03</div>
+  <h1>Enterprise Design System</h1>
+  <div class="project-role">Kinesso (IPG) · Director of Experience &amp; Innovation</div>
   <p class="project-summary">
-            I built three production platforms and a multi-agent orchestration framework, all running live with real users. One person. No team.
-
-
-
-          </p>
-</div>
-
-<div class="stats-bar">
-  <div class="stat">
-    <span class="stat-number">3</span>
-    <span class="stat-label">Shipped products</span>
-  </div>
-  <div class="stat">
-    <span class="stat-number">60+</span>
-    <span class="stat-label">Data signals processed</span>
-  </div>
-  <div class="stat">
-    <span class="stat-number">90 sec</span>
-    <span class="stat-label">Listing generation</span>
-  </div>
-  <div class="stat">
-    <span class="stat-number">Solo</span>
-    <span class="stat-label">Concept to production</span>
+    At Kinesso, I helped shape enterprise design systems and workflow products across analytics, audits, governance, and adoption. This page shows two pieces of that larger system.
+  </p>
+  <div class="hero-topline" aria-label="Case study themes">
+    <span class="hero-pill hero-pill--accent">Enterprise UX</span>
+    <span class="hero-pill">Design Systems</span>
+    <span class="hero-pill">Workflow Design</span>
+    <span class="hero-pill">Data Products</span>
+    <span class="hero-pill">Audit Tools</span>
   </div>
 </div>
 
-<section>
-  <div class="full-bleed">
-    <div style="width:100%;aspect-ratio:21/9;border-radius:4px;overflow:hidden;background:#1a1714"><img src="assets/wallygpt-desktop.png" alt="WallyGPT — AI-powered portfolio chatbot with featured projects showcase, one of several shipped AI products" style="width:100%;height:100%;object-fit:cover;border-radius:4px;" loading="lazy"></div>
-  </div>
-</section>
-
-<!-- THE THESIS -->
-<section>
+<!-- PROJECT 01 -->
+<section class="project-feature" id="mie-data-visualization">
   <div class="inner">
-    <div class="section-label">The Thesis</div>
-    <h2 class="section-heading">The best way to learn AI is to ship AI.</h2>
-    <div class="content-grid">
+    <div class="project-feature-header">
       <div>
-        <p>
-          After leaving Kinesso, I didn't take another corporate role. I started shipping things — real products with real constraints, not experiments or demos. If I'm telling companies how to do AI, I should have actually built it.
-        </p>
-        <p>
-          One Block Away was the testing ground. Each product meant the full cycle: find the problem, design it, architect it, build it, launch it, support it. Solo.
-        </p>
+        <div class="section-label">Project 01</div>
+        <h2 class="project-feature-title">MIE Data Visualization</h2>
       </div>
-      <div>
-        <div style="width:100%;aspect-ratio:16/10;border-radius:4px;overflow:hidden"><img src="assets/highlights-work.jpg" alt="Product development highlights — portfolio of shipped work across multiple platforms and AI applications" style="width:100%;height:100%;object-fit:cover;border-radius:4px;" loading="lazy"></div>
+      <p class="project-feature-copy">
+        MIE turned marketing intelligence into branded, reusable dashboards. I helped shape the UX direction, visualization behavior, and system patterns that made dense data easier to scan, compare, and reuse.
+      </p>
+    </div>
+
+    <div class="project-feature-video">
+      <div class="video-frame" data-reveal>
+        <a class="video-link-card" href="https://www.youtube.com/watch?v=NiI214xUz-o" target="_blank" rel="noopener" aria-label="Watch Data Visualization Awards Video on YouTube">
+          <img src="https://i.ytimg.com/vi/NiI214xUz-o/maxresdefault.jpg" alt="Preview for Data Visualization Awards Video" width="1280" height="720" loading="eager" decoding="async">
+          <span class="video-card-label">
+            <strong>Data Visualization Awards Video</strong>
+            <span>Watch on YouTube</span>
+          </span>
+          <span class="video-play-button" aria-hidden="true"></span>
+        </a>
       </div>
+      <div class="video-caption">
+        <p>The video carries the visual story: dashboard systems, brand theming, chart patterns, palette logic, and enterprise analytics UX.</p>
+        <a class="text-link" href="https://www.youtube.com/watch?v=NiI214xUz-o" target="_blank" rel="noopener">Watch on YouTube</a>
+      </div>
+    </div>
+
+    <div class="project-facts">
+      <article class="project-fact">
+        <span>My role</span>
+        <strong>UX direction and system patterns</strong>
+        <p>Helped connect dashboard behavior, visualization standards, theming, and enterprise usability.</p>
+      </article>
+      <article class="project-fact">
+        <span>Recognition</span>
+        <strong>Indigo Awards 2023</strong>
+        <p>3x Gold and 2x Silver across design system, data visualization, UX, digital tools, and interaction categories.</p>
+        <a class="fact-link" href="https://www.indigoaward.com/winners/6748" target="_blank" rel="noopener">View Indigo entry</a>
+      </article>
+      <article class="project-fact">
+        <span>Why it matters</span>
+        <strong>Dense data became product UX</strong>
+        <p>The system made marketing intelligence more legible, brandable, and consistent across enterprise workflows.</p>
+      </article>
     </div>
   </div>
 </section>
 
-<!-- PRODUCTS -->
-<section style="background: var(--surface-tint);">
+<!-- PROJECT 02 -->
+<section class="project-feature project-feature--alt" id="digital-experience-audit">
   <div class="inner">
-    <div class="section-label">What Shipped</div>
-    <h2 class="section-heading">Three platforms. Each solving a different problem.</h2>
-
-    <div class="products">
-      <div class="product-card">
-        <div class="product-type">Multi-Agent Coordination</div>
-        <h4>WeReady</h4>
-        <p>Routes tasks to specialized AI agents instead of one model handling everything. Orchestration is a design problem, not just wrapper code — it changes what the product can actually do.</p>
-        <div style="width:100%;aspect-ratio:16/9;border-radius:4px;overflow:hidden"><img src="assets/ur-research-overview.jpg" alt="Multi-agent research coordination — systematic documentation and workflow orchestration" style="width:100%;height:100%;object-fit:cover;border-radius:4px;" loading="lazy"></div>
+    <div class="project-feature-header">
+      <div>
+        <div class="section-label">Project 02</div>
+        <h2 class="project-feature-title">Digital Experience Audit</h2>
       </div>
+      <p class="project-feature-copy">
+        DXA turned fragmented channel inputs into a structured audit workflow. Teams could evaluate brand experience, surface gaps, and turn the results into a clearer story for strategy and client conversations.
+      </p>
+    </div>
 
-      <div class="product-card">
-        <div class="product-type">Real Estate AI</div>
-        <h4>ListingPal</h4>
-        <p>
-            Generates complete real estate listings in 90 seconds. Photos, descriptions, pricing, neighborhood breakdown. What took hours before, finished while the agent is still in the driveway.
-          </p>
-        <div style="width:100%;aspect-ratio:16/9;border-radius:4px;overflow:hidden"><img src="assets/ds-upload-logo.jpg" alt="AI-powered generation interface — upload-to-output workflow for rapid content creation" style="width:100%;height:100%;object-fit:cover;border-radius:4px;" loading="lazy"></div>
+    <div class="project-feature-video">
+      <div class="video-frame" data-reveal>
+        <a class="video-link-card" href="https://www.youtube.com/watch?v=BoZckL80294" target="_blank" rel="noopener" aria-label="Watch Digital Experience Audit on YouTube">
+          <img src="https://i.ytimg.com/vi/BoZckL80294/maxresdefault.jpg" alt="Preview for Digital Experience Audit video" width="1280" height="720" loading="lazy" decoding="async">
+          <span class="video-card-label">
+            <strong>Digital Experience Audit</strong>
+            <span>Watch on YouTube</span>
+          </span>
+          <span class="video-play-button" aria-hidden="true"></span>
+        </a>
       </div>
-
-      <div class="product-card">
-        <div class="product-type">Workflow Automation</div>
-        <h4>BriefFlow</h4>
-        <p>Built because agencies kept asking: how do you wrangle a hundred half-baked briefs into something executable? Takes a messy brief and outputs structured work — tasks, timelines, owners. Simple as that.</p>
-        <div style="width:100%;aspect-ratio:16/9;border-radius:4px;overflow:hidden"><img src="assets/ur-process.jpg" alt="Structured workflow generation — transforming unstructured input into organized task sequences" style="width:100%;height:100%;object-fit:cover;border-radius:4px;" loading="lazy"></div>
+      <div class="video-caption">
+        <p>The video carries the workflow story: audit creation, channel scoring, benchmarks, recommendations, visualization, and presentation-ready outputs.</p>
+        <a class="text-link" href="https://www.youtube.com/watch?v=BoZckL80294" target="_blank" rel="noopener">Watch on YouTube</a>
       </div>
     </div>
-  </div>
-</section>
 
-<!-- PULLQUOTE -->
-<div class="pullquote">
-  <blockquote>
-    "The best founders I know don't just have ideas. They ship things that work."
-  </blockquote>
-  <cite>— The operating principle behind every project</cite>
-</div>
-
-<!-- BEYOND PRODUCTS -->
-<section>
-  <div class="inner">
-    <div class="section-label">Beyond Products</div>
-    <h2 class="section-heading">The infrastructure underneath.</h2>
-    <div class="content-grid">
-      <div>
-        <p>
-          Three systems running in the background that never made it onto a landing page — but taught me more than the products did.
-        </p>
-        <p>
-          A <strong>multi-agent orchestration framework</strong> that routes tasks to different models based on what the work actually needs — not just one model trying to do everything. A <strong>fully automated newsletter pipeline</strong> that researches topics, writes, and publishes daily without intervention. A <strong>trading system</strong> that reads market signals, executes strategies, and manages risk autonomously.
-        </p>
-      </div>
-      <div>
-        <p>
-          None of this was built to look impressive. It was built to break in specific ways so I could fix them. Newsletter crashes at 4am — you learn monitoring. Trading bot has a bad week — you learn guardrails. Stakes are real. Learning sticks.
-        </p>
-        <p>
-          The difference between a working prototype and something that keeps working is everything in this section.
-        </p>
-      </div>
+    <div class="project-facts">
+      <article class="project-fact">
+        <span>My role</span>
+        <strong>Product design and workflow UX</strong>
+        <p>Contributed to the audit experience, data presentation, and product patterns that made the workflow easier to run and explain.</p>
+      </article>
+      <article class="project-fact">
+        <span>Recognition</span>
+        <strong>Indigo Awards 2022 + Red Dot 2021</strong>
+        <p>2x Gold and 2x Silver at Indigo, plus Red Dot recognition for Brands &amp; Communication Design.</p>
+        <a class="fact-link" href="https://www.indigoaward.com/winners/4629" target="_blank" rel="noopener">View Indigo entry</a>
+        <a class="fact-link" href="https://www.red-dot.org/project/dxa-digital-experience-audit-55219" target="_blank" rel="noopener">View Red Dot entry</a>
+      </article>
+      <article class="project-fact">
+        <span>Why it matters</span>
+        <strong>Audit data became a usable story</strong>
+        <p>The system turned channel-level brand performance into a repeatable workflow teams could use in strategy and client reviews.</p>
+      </article>
     </div>
-  </div>
-</section>
-
-<!-- IMAGE BREAK -->
-<div class="image-grid image-grid--3" style="padding-top: var(--space-xl); padding-bottom: var(--space-xl);">
-  <div style="width:100%;aspect-ratio:16/10;border-radius:4px;overflow:hidden;background:#1a1714"><img src="assets/ds-hero-splash.jpg" alt="Multi-model orchestration architecture — routing tasks to specialized AI models based on complexity and requirements" style="width:100%;height:100%;object-fit:cover;border-radius:4px;" loading="lazy"></div>
-  <div style="width:100%;aspect-ratio:16/10;border-radius:4px;overflow:hidden;background:#1a1714"><img src="assets/dxa-userflow.jpg" alt="Automated content pipeline — systematic research, generation, and publishing workflow serving daily readers" style="width:100%;height:100%;object-fit:cover;border-radius:4px;" loading="lazy"></div>
-  <div style="width:100%;aspect-ratio:16/10;border-radius:4px;overflow:hidden;background:#1a1714"><img src="assets/ds-data-viz.jpg" alt="Signal processing and data visualization — real-time analytics for automated trading decisions" style="width:100%;height:100%;object-fit:cover;border-radius:4px;" loading="lazy"></div>
-</div>
-
-<!-- WHAT IT PROVES -->
-<section class="dark">
-  <div class="inner">
-    <div class="section-label">What This Proves</div>
-    <h2 class="section-heading">What solo shipping actually looks like.</h2>
-    <ul class="outcomes">
-      <li>
-        <strong>Product thinking without a PM</strong>
-        <span>I decide what to build, what to cut, and when something is done. No one's telling me what the roadmap is — which means I have to be right about the problem before I start writing code.</span>
-      </li>
-      <li>
-        <strong>Design and backend, same brain</strong>
-        <span>Every interface was designed by the same person who built the backend. There's no handoff gap because there's no handoff. That changes how quickly you can iterate on something that isn't working.</span>
-      </li>
-      <li>
-        <strong>Production systems, not demos</strong>
-        <span>Multi-agent orchestration, RAG pipelines, trading algorithms, automated content infrastructure. All running. The difference between a working demo and something that keeps working for six months is most of the work.</span>
-      </li>
-      <li>
-        <strong>The unglamorous operational stuff</strong>
-        <span>Monitoring, alerting, rollback procedures, structured logging. The newsletter crashed at 4am once. You learn fast. Products that stay alive after launch need all of this — it's just rarely what gets written about.</span>
-      </li>
-      <li>
-        <strong>Weeks, not quarters</strong>
-        <span>Concept to production faster than most teams can get a PRD approved. Not because I cut corners — because there's no coordination overhead and I know what I'm building.</span>
-      </li>
-      <li>
-        <strong>Knowing when to stop</strong>
-        <span>When to ship something that's good enough. When to invest more time in polish. When to use AI for the work and when to do it yourself. I've gotten this wrong enough times to have a real opinion about it now.</span>
-      </li>
-    </ul>
   </div>
 </section>
 
 <!-- NEXT -->
 <div class="next-project">
   <div class="label">Back to Start</div>
-  <a href="project-01.html">Enterprise Design System →</a>
-  <div class="nav-sub">
-    <a href="index.html">← Return to portfolio</a>
-  </div>
+  <a href="project-01.html">Pharma AI Platform →</a>
 </div>
 
 <footer>&copy; 2026 Wally Mostafa · Raleigh, NC</footer>
+
+<script>
+  (() => {
+    const revealElements = document.querySelectorAll('[data-reveal]');
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    if (!revealElements.length || prefersReducedMotion || !('IntersectionObserver' in window)) {
+      revealElements.forEach((element) => element.classList.add('is-visible'));
+      return;
+    }
+
+    const observer = new IntersectionObserver((entries, activeObserver) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('is-visible');
+        activeObserver.unobserve(entry.target);
+      });
+    }, {
+      threshold: 0.18,
+      rootMargin: '0px 0px -8% 0px'
+    });
+
+    revealElements.forEach((element) => observer.observe(element));
+  })();
+</script>
 
 </body>
 </html>

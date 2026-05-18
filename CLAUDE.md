@@ -2,7 +2,7 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
-# misterpavano.github.io
+# wallymo.github.io
 
 Personal portfolio site for Wally Mostafa — AI product strategist. Deployed on GitHub Pages.
 
@@ -24,9 +24,9 @@ Push to `main` → GitHub Pages auto-deploys. No CI, no build step. What you com
 
 ```
 index.html          # Homepage / project index
-project-01.html     # Case study: Enterprise Design System (Wix)
-project-02.html     # Case study: Pharma AI Platform (Hedgehox)
-project-03.html     # Case study: AI Product Studio (One Block Away)
+project-01.html     # Case study: Pharma AI Platform (Hedgehox)
+project-02.html     # Case study: The POC Guy (One Block Away)
+project-03.html     # Case study: Enterprise Design System (Kinesso)
 resume.html         # Resume page with download/share actions
 hero-morph.html     # Hero experiment (untracked)
 hero-nodes.html     # Hero experiment (untracked)
@@ -48,7 +48,6 @@ The site uses small, targeted JS blocks — no frameworks. All JS is inline, at 
 
 - **Scroll-reveal** (`index.html`, hero experiments): IntersectionObserver adds `.visible` to `.reveal` elements. Graceful fallback — if JS fails, content stays visible via a 2.5s safety-net timeout.
 - **WebGL hero canvas** (`index.html`, `hero-morph.html`, `hero-nodes.html`): Slow noise-field contours rendered via a fullscreen quad shader. Silent fallback if WebGL unavailable.
-- **Lucide icons** (`project-01.html`): External icon library via CDN `<script>` tag.
 
 When adding JS: keep it inline, keep it progressive (page must work without it), and avoid introducing dependencies beyond icon libraries.
 
@@ -61,4 +60,4 @@ When adding JS: keep it inline, keep it progressive (page must work without it),
 ## Key Context
 
 - Site owner: Wally Mostafa (brownzinoart@gmail.com)
-- Repo: https://github.com/MisterPavano/misterpavano.github.io
+- Repo: https://github.com/wallymo/wallymo.github.io

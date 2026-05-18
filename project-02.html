@@ -3,12 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pharma AI Platform — Wally Mostafa</title>
-<meta name="description" content="Production AI for pharma compliance — claims detection, multimodal analysis, and FDA/HIPAA workflows. Built at Hedgehox by Wally Mostafa.">
-<meta property="og:title" content="Pharma AI Platform — Wally Mostafa">
-<meta property="og:description" content="Production AI for pharma compliance — claims detection, multimodal analysis, and FDA/HIPAA workflows.">
+<title>The POC Guy — Wally Mostafa</title>
+<meta name="description" content="Client-led AI proof-of-concept builds for WeReady and ListingPal, turning early questions into working demos. By Wally Mostafa.">
+<meta property="og:title" content="The POC Guy — Wally Mostafa">
+<meta property="og:description" content="Client-led AI proof-of-concept builds for WeReady and ListingPal, turning early questions into working demos.">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://misterpavano.github.io/project-02.html">
+<meta property="og:url" content="https://wallymo.github.io/project-02.html">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<meta name="theme-color" content="#1d1d1d">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
@@ -32,6 +36,8 @@
   nav .name{font-family:var(--font-display);font-weight:700;font-size:1.05rem;color:var(--ink);text-decoration:none;letter-spacing:-0.02em}
   nav .back{font-size:0.85rem;font-weight:500;color:var(--ink-muted);text-decoration:none;transition:color 0.2s;padding:0.5rem 0}
   nav .back:hover{color:var(--accent)}
+  nav .nav-cta{font-size:0.82rem;font-weight:600;color:var(--surface) !important;background:var(--ink);padding:0.45rem 1rem !important;border-radius:3px;text-decoration:none;transition:background 0.2s}
+  nav .nav-cta:hover{background:var(--accent);color:var(--surface) !important}
 
   .project-hero{padding:calc(80px + var(--space-2xl)) var(--space-l) var(--space-xl);max-width:var(--max-w);margin:0 auto}
   .project-number{font-family:var(--font-display);font-size:clamp(5rem,10vw,8rem);font-weight:800;color:var(--surface-deep);line-height:1;letter-spacing:-0.05em}
@@ -39,15 +45,11 @@
   .project-role{font-size:0.85rem;font-weight:600;text-transform:uppercase;letter-spacing:0.1em;color:var(--accent);margin-top:var(--space-m)}
   .project-summary{font-size:clamp(1.1rem,1.4vw,1.25rem);color:var(--ink-soft);max-width:55ch;line-height:1.7;margin-top:var(--space-l)}
 
-  .stats-bar{display:flex;gap:var(--space-xl);flex-wrap:wrap;padding:var(--space-xl) var(--space-l);max-width:var(--max-w);margin:0 auto;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
-  .stat{display:flex;flex-direction:column}
-  .stat-number{font-family:var(--font-display);font-size:clamp(2rem,3vw,2.8rem);font-weight:800;color:var(--ink);letter-spacing:-0.03em;line-height:1.1}
-  .stat-label{font-size:0.75rem;font-weight:500;text-transform:uppercase;letter-spacing:0.1em;color:var(--ink-muted);margin-top:4px}
-
   section{padding:var(--space-2xl) var(--space-l)}
   .inner{max-width:var(--max-w);margin:0 auto}
   .section-label{font-size:0.75rem;font-weight:600;text-transform:uppercase;letter-spacing:0.18em;color:var(--accent);margin-bottom:var(--space-s)}
   .section-heading{font-family:var(--font-display);font-size:clamp(1.6rem,2.8vw,2.2rem);font-weight:700;letter-spacing:-0.025em;color:var(--ink);margin-bottom:var(--space-l);max-width:24ch;line-height:1.15}
+  .section-heading-wide{max-width:36ch}
 
   .content-grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--space-xl);align-items:start}
   .content-grid p{color:var(--ink-soft);font-size:1rem;line-height:1.75;margin-bottom:var(--space-m)}
@@ -57,23 +59,86 @@
   .ph-warm{background:var(--surface-warm);color:var(--ink-muted);border:1px solid var(--rule-light)}
   .ph-dark{background:var(--ink);color:rgba(248,245,240,0.4)}
   .ph-accent{background:var(--accent-light);color:var(--accent);border:1px solid rgba(196,90,45,0.15)}
-  .ph-tint{background:var(--surface-tint);color:var(--ink-muted);border:1px solid var(--rule-light)}
   .placeholder-wide{aspect-ratio:21/9}
-  .placeholder-tall{aspect-ratio:3/4}
 
   .full-bleed{padding:0 var(--space-l);max-width:var(--max-w);margin:0 auto}
   .image-grid{display:grid;gap:var(--space-m);max-width:var(--max-w);margin:0 auto;padding:0 var(--space-l)}
   .image-grid--2{grid-template-columns:1fr 1fr}
-  .image-grid--asymmetric{grid-template-columns:1.5fr 1fr}
+  .image-grid--3{grid-template-columns:1fr 1fr 1fr}
 
-  .pullquote{max-width:var(--max-w);margin:0 auto;padding:var(--space-2xl) var(--space-l)}
-  .pullquote blockquote{font-family:var(--font-display);font-size:clamp(1.5rem,2.5vw,2rem);font-weight:600;color:var(--ink);letter-spacing:-0.02em;line-height:1.35;max-width:30ch;position:relative;padding-left:var(--space-l);border-left:3px solid var(--accent)}
-  .pullquote cite{display:block;margin-top:var(--space-m);padding-left:var(--space-l);font-family:var(--font-body);font-size:0.88rem;font-style:normal;font-weight:500;color:var(--ink-muted)}
+  .image-showcase{padding:var(--space-2xl) var(--space-l)}
+  .image-with-caption{display:grid;gap:var(--space-s)}
+  .image-frame{position:relative;overflow:hidden;border-radius:24px;background:#181411;border:1px solid rgba(26,23,20,0.08);box-shadow:0 28px 70px rgba(26,23,20,0.16);transition:transform 0.45s ease,box-shadow 0.45s ease}
+  .image-frame::after{content:"";position:absolute;inset:auto 0 0;height:28%;background:linear-gradient(180deg,transparent 0%,rgba(12,10,8,0.08) 100%);pointer-events:none}
+  .image-frame img{display:block;width:100%;height:100%;object-fit:cover;transition:transform 0.7s cubic-bezier(0.22,1,0.36,1),filter 0.4s ease}
+  .image-card--wide .image-frame{aspect-ratio:21/10}
+  .image-card--landscape .image-frame{aspect-ratio:16/10}
+  .image-card--compact .image-frame{aspect-ratio:4/3}
+  .image-with-caption figcaption{display:flex;align-items:center;gap:var(--space-s);max-width:46ch;font-size:0.88rem;line-height:1.5;color:var(--ink-soft)}
+  .image-with-caption figcaption::before{content:"";width:32px;height:1px;background:var(--accent);flex-shrink:0;opacity:0.9}
+  .image-asymmetric-grid{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(280px,0.85fr);gap:var(--space-xl);align-items:end}
+  .image-asymmetric-grid .image-with-caption:last-child{margin-top:clamp(2rem,8vw,5rem)}
+
+  @media(hover:hover) and (pointer:fine){
+    .image-with-caption:hover .image-frame{transform:translateY(-8px);box-shadow:0 34px 80px rgba(26,23,20,0.18)}
+    .image-with-caption:hover .image-frame img{transform:scale(1.035)}
+  }
+
+  [data-reveal]{opacity:0;transform:translateY(36px) scale(0.985);transition:opacity 0.8s ease,transform 0.8s cubic-bezier(0.22,1,0.36,1);transition-delay:var(--reveal-delay,0s);will-change:opacity,transform}
+  [data-reveal].is-visible{opacity:1;transform:translateY(0) scale(1)}
+
+  .pullquote{max-width:none;margin:0;padding:clamp(4.5rem,8vw,7rem) var(--space-l);background:var(--ink);color:var(--surface);border-top:1px solid rgba(248,245,240,0.08);border-bottom:1px solid rgba(248,245,240,0.08);box-shadow:inset 0 1px 0 rgba(196,90,45,0.22)}
+  .pullquote blockquote{font-family:var(--font-display);font-size:clamp(2rem,4.4vw,4.35rem);font-weight:800;color:var(--surface);letter-spacing:-0.045em;line-height:1.03;max-width:min(920px,100%);margin:0 auto;position:relative;padding-left:var(--space-l);border-left:5px solid var(--accent)}
+  .pullquote cite{display:block;max-width:min(920px,100%);margin:var(--space-l) auto 0;padding-left:var(--space-l);font-family:var(--font-body);font-size:0.88rem;font-style:normal;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:rgba(248,245,240,0.62)}
 
   .dark{background:var(--ink);color:var(--surface)}
   .dark .section-label{color:var(--accent)}
   .dark .section-heading{color:var(--surface)}
   .dark p{color:rgba(248,245,240,0.7)}
+
+  /* POC sections */
+  .poc-intro{background:var(--surface-tint)}
+  .poc-section{padding:calc(var(--space-2xl) * 1.18) var(--space-l);scroll-margin-top:88px}
+  .poc-section--warm{background:var(--surface-warm)}
+  .poc-layout{display:grid;grid-template-columns:minmax(0,0.88fr) minmax(0,1.12fr);gap:var(--space-2xl);align-items:start}
+  .poc-layout--reverse{grid-template-columns:minmax(0,1.08fr) minmax(0,0.92fr)}
+  .poc-kicker{font-size:0.75rem;font-weight:600;text-transform:uppercase;letter-spacing:0.14em;color:var(--accent);margin-bottom:var(--space-s)}
+  .poc-title{font-family:var(--font-display);font-size:clamp(2rem,4vw,3.4rem);font-weight:800;letter-spacing:-0.04em;line-height:1;color:var(--ink);margin-bottom:var(--space-m)}
+  .poc-lede{font-size:clamp(1.05rem,1.35vw,1.2rem);line-height:1.7;color:var(--ink-soft);max-width:52ch;margin-bottom:var(--space-l)}
+  .poc-detail-stack{display:grid;gap:var(--space-m)}
+  .poc-detail{padding-top:var(--space-m);border-top:1px solid var(--rule)}
+  .poc-detail h5{font-size:0.72rem;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:var(--ink-muted);margin-bottom:var(--space-xs)}
+  .poc-detail p{font-size:0.98rem;line-height:1.7;color:var(--ink-soft)}
+  .poc-bullets{list-style:none;display:grid;gap:var(--space-s);padding-top:var(--space-s)}
+  .poc-bullets li{position:relative;padding-left:1.1rem;font-size:0.9rem;line-height:1.55;color:var(--ink-soft)}
+  .poc-bullets li::before{content:"";position:absolute;left:0;top:0.72em;width:6px;height:6px;border-radius:999px;background:var(--accent)}
+  .poc-media-stack{display:grid;gap:var(--space-m)}
+  .poc-media-link{display:block;color:inherit;text-decoration:none}
+  .poc-media-frame{overflow:hidden;border-radius:24px;background:#181411;border:1px solid rgba(26,23,20,0.08);box-shadow:0 28px 70px rgba(26,23,20,0.14)}
+  .poc-media-frame img{display:block;width:100%;height:100%;object-fit:cover}
+  .poc-media-frame--wide{aspect-ratio:16/10}
+  .poc-media-frame--video{position:relative;aspect-ratio:16/9;background:#181411}
+  .poc-video-card{position:absolute;inset:0;display:block;color:var(--surface);text-decoration:none}
+  .poc-video-card img{display:block;width:100%;height:100%;object-fit:contain;background:#181411;filter:saturate(0.96) contrast(1.02);transition:transform 0.45s ease,filter 0.45s ease}
+  .poc-video-card::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,10,8,0.16),rgba(12,10,8,0.02) 44%,rgba(12,10,8,0.38));pointer-events:none}
+  .poc-video-label{position:absolute;left:var(--space-m);bottom:var(--space-m);z-index:2;display:grid;gap:2px;padding:0.65rem 0.8rem;border-radius:4px;background:rgba(26,23,20,0.82);box-shadow:inset 0 1px 0 rgba(248,245,240,0.12);color:var(--surface);pointer-events:none}
+  .poc-video-label span:first-child{font-family:var(--font-display);font-size:0.95rem;font-weight:700;letter-spacing:-0.01em}
+  .poc-video-label span:last-child{font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:rgba(248,245,240,0.68)}
+  .poc-video-play{position:absolute;left:50%;top:50%;z-index:2;width:clamp(62px,7vw,90px);height:clamp(62px,7vw,90px);border-radius:999px;background:rgba(196,90,45,0.96);transform:translate(-50%,-50%);box-shadow:0 18px 42px rgba(26,23,20,0.24)}
+  .poc-video-play::before{content:"";position:absolute;left:50%;top:50%;width:0;height:0;border-top:13px solid transparent;border-bottom:13px solid transparent;border-left:20px solid var(--surface);transform:translate(-38%,-50%)}
+  @media(hover:hover) and (pointer:fine){
+    .poc-video-card:hover img{transform:scale(1.035);filter:saturate(1.03) contrast(1.05)}
+  }
+  .poc-caption{display:flex;align-items:flex-start;gap:var(--space-s);font-size:0.88rem;line-height:1.5;color:var(--ink-soft);max-width:58ch}
+  .poc-caption::before{content:"";width:32px;height:1px;background:var(--accent);flex-shrink:0;margin-top:0.7em}
+  .poc-text-link{color:var(--ink);font-weight:700;text-decoration:none;border-bottom:1px solid rgba(26,23,20,0.22);transition:color 0.2s,border-color 0.2s}
+  .poc-text-link:hover{color:var(--accent);border-color:var(--accent)}
+  .poc-link-row{display:flex;flex-wrap:wrap;gap:var(--space-s);margin-top:var(--space-l)}
+  .poc-link{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0.62rem 1rem;border-radius:4px;border:1px solid var(--ink);background:var(--ink);color:var(--surface);font-size:0.78rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;text-decoration:none;transition:background 0.2s,border-color 0.2s,transform 0.2s}
+  .poc-link:hover{background:var(--accent);border-color:var(--accent);transform:translateY(-1px)}
+  .poc-link--secondary{background:transparent;color:var(--ink);border-color:var(--rule)}
+  .poc-link--secondary:hover{background:var(--surface);color:var(--accent);border-color:var(--accent)}
+  .demo-callout{margin-top:var(--space-xl);padding:var(--space-m) var(--space-l);border:1px solid var(--rule);border-radius:4px;background:var(--surface);font-family:var(--font-display);font-weight:700;letter-spacing:-0.01em;color:var(--ink)}
 
   .outcomes{list-style:none;display:grid;gap:var(--space-m);grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
   .outcomes li{padding:var(--space-m) var(--space-l);border:1px solid var(--rule-light);border-radius:4px;background:var(--surface)}
@@ -83,21 +148,13 @@
   .dark .outcomes li strong{color:var(--surface)}
   .dark .outcomes li span{color:rgba(248,245,240,0.6)}
 
-  /* Process flow */
-  .process-flow{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:var(--space-m);margin-top:var(--space-l)}
-  .process-step{padding:var(--space-l);border-top:2px solid var(--ink);counter-increment:step}
-  .process-step::before{content:counter(step,decimal-leading-zero);font-family:var(--font-display);font-size:0.82rem;font-weight:700;color:var(--accent);display:block;margin-bottom:var(--space-s)}
-  .process-step h4{font-family:var(--font-display);font-size:1.1rem;font-weight:700;margin-bottom:var(--space-xs);color:var(--ink)}
-  .process-step p{font-size:0.9rem;color:var(--ink-soft);line-height:1.6}
-
   .next-project{padding:var(--space-2xl) var(--space-l);background:var(--surface-warm);text-align:center}
   .next-project .label{font-size:0.75rem;font-weight:600;text-transform:uppercase;letter-spacing:0.18em;color:var(--ink-muted);margin-bottom:var(--space-s)}
   .next-project a{display:inline-block;font-family:var(--font-display);font-size:clamp(1.8rem,3.5vw,2.8rem);font-weight:800;letter-spacing:-0.03em;color:var(--ink);text-decoration:none;transition:color 0.2s}
   .next-project a:hover{color:var(--accent)}
-
-  .nav-projects{display:flex;justify-content:space-between;max-width:var(--max-w);margin:0 auto;padding:var(--space-l) var(--space-l) 0}
-  .nav-projects a{font-size:0.82rem;font-weight:500;color:var(--ink-muted);text-decoration:none;transition:color 0.2s}
-  .nav-projects a:hover{color:var(--accent)}
+  .next-project .nav-sub{margin-top:var(--space-m)}
+  .next-project .nav-sub a{font-size:0.88rem;font-weight:500;color:var(--ink-muted);transition:color 0.2s}
+  .next-project .nav-sub a:hover{color:var(--accent)}
 
   footer{padding:var(--space-l) var(--space-l);border-top:1px solid var(--rule-light);text-align:center;font-size:0.78rem;color:var(--ink-muted)}
 
@@ -110,14 +167,16 @@
     .project-hero h1{font-size:clamp(2.2rem,9vw,3rem)}
     .project-number{font-size:clamp(4rem,14vw,6rem)}
     .project-summary{font-size:1rem}
-    .stats-bar{padding:var(--space-l) 24px;display:grid;grid-template-columns:1fr 1fr;gap:var(--space-l) var(--space-m)}
-    .stat-number{font-size:clamp(1.5rem,5.5vw,2rem)}
-    .stat-label{font-size:0.78rem}
     .content-grid{grid-template-columns:1fr}
     .content-grid p{font-size:1rem;line-height:1.7}
     .full-bleed{padding:0 24px}
     .image-grid{padding:0 24px}
-    .image-grid--2,.image-grid--3,.image-grid--asymmetric{grid-template-columns:1fr}
+    .image-grid--2,.image-grid--3{grid-template-columns:1fr}
+    .image-showcase{padding-left:24px;padding-right:24px}
+    .image-asymmetric-grid{grid-template-columns:1fr}
+    .image-asymmetric-grid .image-with-caption:last-child{margin-top:0}
+    .image-frame{border-radius:18px}
+    .image-with-caption figcaption{align-items:flex-start;font-size:0.82rem}
     .pullquote{padding:var(--space-xl) 24px}
     .pullquote blockquote{font-size:clamp(1.2rem,5vw,1.6rem);padding-left:var(--space-m)}
     .pullquote cite{padding-left:var(--space-m);font-size:0.85rem}
@@ -126,21 +185,27 @@
     .outcomes li{padding:var(--space-m)}
     .outcomes li strong{font-size:1rem}
     .outcomes li span{font-size:0.92rem}
-    .process-flow{grid-template-columns:1fr}
-    .process-step{padding:var(--space-m) 0}
-    .process-step h4{font-size:1.05rem}
-    .process-step p{font-size:0.95rem}
+    .poc-section{padding:var(--space-xl) 24px}
+    .poc-layout,.poc-layout--reverse{grid-template-columns:1fr;gap:var(--space-xl)}
+    .poc-title{font-size:clamp(2rem,9vw,2.7rem)}
+    .poc-media-frame{border-radius:18px}
+    .poc-video-label{left:var(--space-s);bottom:var(--space-s);max-width:calc(100% - var(--space-m))}
+    .poc-video-label span:first-child{font-size:0.82rem}
+    .poc-link{width:100%}
     .next-project{padding:var(--space-xl) 24px}
     .next-project a{font-size:clamp(1.4rem,6vw,2rem)}
-    .nav-projects{flex-direction:column;gap:var(--space-s);align-items:center;padding:var(--space-m) 24px 0}
-    .nav-projects a{min-height:44px;display:inline-flex;align-items:center}
+    .next-project .nav-sub a{min-height:44px;display:inline-flex;align-items:center}
     footer{padding:var(--space-m) 24px}
     .next-project{margin-bottom:var(--space-l)}
   }
   @media(max-width:380px){
-    .stats-bar{grid-template-columns:1fr}
     .project-hero h1{font-size:2rem}
     .pullquote blockquote{font-size:1.15rem;hyphens:auto;-webkit-hyphens:auto}
+  }
+  @media(prefers-reduced-motion:reduce){
+    *,*::before,*::after{animation-duration:0.01ms !important;transition-duration:0.01ms !important}
+    [data-reveal]{opacity:1 !important;transform:none !important}
+    .image-frame,.image-frame img{transition:none !important}
   }
 </style>
 </head>
@@ -150,261 +215,241 @@
   <a href="index.html" class="name">Wally Mostafa</a>
   <div style="display:flex;align-items:center;gap:var(--space-m)">
     <a href="index.html#work" class="back">← All Work</a>
-    <a href="mailto:wmostafa12@gmail.com" class="back" style="color:var(--accent);font-weight:600">Let's Talk</a>
+    <a href="resume.html" class="nav-cta">Resume</a>
   </div>
 </nav>
 
 <div class="project-hero">
-  <div class="project-number">01</div>
-  <h1>Pharma AI Platform</h1>
-  <div class="project-role">Hedgehox · AI Creative Strategist · 2024–Present</div>
+  <div class="project-number">02</div>
+  <h1>The POC Guy</h1>
+  <div class="project-role">One Block Away LLC · Founder &amp; AI Product Engineer · 2023–Present</div>
   <p class="project-summary">
-            Building the AI layer for pharma operations. Not consulting about AI — shipping production AI products inside one of the most heavily regulated industries.
+    I turn early client AI questions into working POCs they can test, pitch, and use to decide what is worth building next.
           </p>
 </div>
 
-<div class="stats-bar">
-  <div class="stat">
-    <span class="stat-number">3 wks → 4 days</span>
-    <!-- [REPLACE] with actual review cycle reduction if different -->
-    <span class="stat-label">MLR review cycle</span>
-  </div>
-  <div class="stat">
-    <span class="stat-number">FDA / HIPAA</span>
-    <span class="stat-label">Compliance domain</span>
-  </div>
-  <div class="stat">
-    <span class="stat-number">Multimodal</span>
-    <span class="stat-label">Text + image + video AI</span>
-  </div>
-  <div class="stat">
-    <span class="stat-number">End-to-end</span>
-    <span class="stat-label">Discovery to production</span>
-  </div>
-</div>
+<!-- THE ASK -->
+<section style="background: var(--surface-tint);">
+  <div class="inner">
+    <div class="content-grid">
+      <div>
+        <div class="section-label">The Ask</div>
+        <p>
+          These projects started when a client had an AI idea, a business pressure, and no clear proof that the idea would work. The real question was, "Can this exist in a form we can see and react to?"
+        </p>
+        <p>
+          My job was to translate that question into a tight product surface, make the smallest useful version, and build enough behavior to separate real opportunity from wishful thinking.
+        </p>
+      </div>
+      <div>
+        <div class="section-label">The Answer</div>
+        <p>
+          I treated each POC as a decision tool. It had to show the workflow, expose the hard parts, and give the client something specific to approve, challenge, or change.
+        </p>
+        <p>
+          That meant product strategy, UX, AI workflow design, data assumptions, front-end build, backend logic, and demo readiness all lived in the same loop. No handoff chain. No waiting for a full team before the client could see whether the idea had legs.
+        </p>
+      </div>
+    </div>
 
-<section>
-  <div class="full-bleed">
-    <div style="width:100%;aspect-ratio:21/9;border-radius:4px;overflow:hidden;background:#1a1714"><img src="assets/ai-audience-bias.jpg" alt="Hedgehox platform interpreting pharmaceutical files and emails — AI extracting claims, flagging violations, and routing for MLR review" style="width:100%;height:100%;object-fit:cover;border-radius:4px;" loading="lazy"></div>
   </div>
 </section>
 
-<!-- THE PROBLEM -->
+<!-- POC INTRO -->
+<section class="poc-intro">
+  <div class="inner">
+    <div class="section-label">POC Builds</div>
+    <h2 class="section-heading section-heading-wide">Two client-led POCs, built from "is this possible?"</h2>
+    <p style="color: var(--ink-soft); max-width: 62ch; margin-bottom: var(--space-xl);">
+      The common thread was speed with enough rigor to be useful. The output was not just a prototype screen. It was a working first version that made the next product conversation sharper. Each one needed its own shape, because each client question was different.
+    </p>
+  </div>
+</section>
+
+<!-- LISTINGPAL -->
+<section class="poc-section poc-section--warm" id="listingpal">
+  <div class="inner">
+    <div class="poc-layout">
+      <div>
+        <div class="poc-kicker">POC 01 · Real estate AI</div>
+        <h2 class="poc-title">ListingPal</h2>
+        <p class="poc-lede">A client wanted to know if an agent could enter basic property details and get a credible listing campaign fast enough to matter while the opportunity was still warm.</p>
+        <div class="poc-detail-stack">
+          <div class="poc-detail">
+            <h5>Client ask</h5>
+            <p>Can address, price, and a few property details become a usable marketing package without forcing agents to stitch together five different tools?</p>
+          </div>
+          <div class="poc-detail">
+            <h5>What I built</h5>
+            <p>An AI listing-generation POC plus a public landing page for the product. The product flow generates listing descriptions, social posts, ad copy, interior styling direction, and MLS/SEO-ready language in under 90 seconds. For a deeper dive, the <a class="poc-text-link" href="https://www.youtube.com/watch?v=w337kCMqfnM" target="_blank" rel="noopener">long-form ListingPal walkthrough</a> shows the full flow in context.</p>
+          </div>
+          <div class="poc-detail">
+            <h5>Why it mattered</h5>
+            <p>The POC moved the agent from blank-page writing to fast review and revision. The landing page turned the prototype into something explainable: a product story, demo path, beta positioning, and a clear way for interested agents to understand the value.</p>
+          </div>
+          <div class="poc-detail">
+            <h5>AI model</h5>
+            <p>The landing page frames ListingPal around AgentSelect, a model-orchestration layer that chooses specialized LLMs for specific real estate tasks instead of relying on one model for every output.</p>
+          </div>
+        </div>
+      </div>
+      <div class="poc-media-stack">
+        <div class="poc-media-frame poc-media-frame--video" data-reveal>
+          <a class="poc-video-card" href="https://www.youtube.com/watch?v=qtlcY7nT-g0&amp;t=5s" target="_blank" rel="noopener" aria-label="Watch ListingPal walkthrough demo on YouTube">
+            <img src="https://i.ytimg.com/vi/qtlcY7nT-g0/sddefault.jpg" alt="Preview for ListingPal walkthrough demo" width="640" height="480" loading="lazy" decoding="async">
+            <span class="poc-video-play" aria-hidden="true"></span>
+            <span class="poc-video-label" aria-hidden="true">
+              <span>ListingPal walkthrough demo</span>
+              <span>Watch on YouTube · starts at 0:05</span>
+            </span>
+          </a>
+        </div>
+        <p class="poc-caption">The walkthrough shows the ListingPal flow from lightweight property input to generated campaign material.</p>
+        <ul class="poc-bullets">
+          <li>Built the POC around a simple address-and-price intake so the demo felt realistic.</li>
+          <li>Expanded the output beyond listing copy into a broader campaign package.</li>
+          <li>Created the landing page at listingpal.info to explain the product and support demo interest.</li>
+        </ul>
+        <div class="poc-link-row">
+          <a class="poc-link" href="https://listingpal.info" target="_blank" rel="noopener">View Landing Page</a>
+          <a class="poc-link poc-link--secondary" href="https://www.youtube.com/watch?v=w337kCMqfnM" target="_blank" rel="noopener">Open Demo Video</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="demo-callout">Walkthrough Demo Available On Request</div>
+  </div>
+</section>
+
+<!-- WEREADY -->
+<section class="poc-section" id="weready">
+  <div class="inner">
+    <div class="poc-layout">
+      <div>
+        <div class="poc-kicker">POC 02 · Startup intelligence</div>
+        <h2 class="poc-title">WeReady</h2>
+        <p class="poc-lede">WeReady helps founders turn startup uncertainty into an evidence-backed readiness picture: what is credible, what is risky, and what to fix next.</p>
+        <div class="poc-detail-stack">
+          <div class="poc-detail">
+            <h5>Client ask</h5>
+            <p>Can a founder submit a repository or startup context and get a useful, evidence-backed view of technical risk, business signals, funding readiness, and product experience?</p>
+          </div>
+          <div class="poc-detail">
+            <h5>What I built</h5>
+            <p>A Bailey Intelligence dashboard that turns founder inputs, GitHub signals, government sources, academic research, and investor frameworks into a structured startup-readiness report.</p>
+          </div>
+          <div class="poc-detail">
+            <h5>Why it mattered</h5>
+            <p>The POC moved WeReady from generic startup advice into a product surface clients could inspect: source health, credibility signals, risk scoring, and next-step recommendations.</p>
+          </div>
+          <div class="poc-detail">
+            <h5>AI model</h5>
+            <p>Bailey organizes the product into code, business, investment, and design intelligence flows, with semantic search framed as the next source-linked interface.</p>
+          </div>
+        </div>
+      </div>
+      <div class="poc-media-stack">
+        <a class="poc-media-link" href="https://weready.dev/bailey-intelligence/" target="_blank" rel="noopener" aria-label="Open Bailey Intelligence prototype">
+          <div class="poc-media-frame poc-media-frame--wide" data-reveal>
+            <img src="assets/weready-bailey-framework.png" alt="WeReady application showing the Bailey Intelligence dashboard" width="2850" height="1702" loading="lazy" decoding="async">
+          </div>
+        </a>
+        <p class="poc-caption">WeReady treated analysis as a product surface: Bailey turns live sources, scoring logic, evidence trails, and recommendations into founder-ready next steps.</p>
+        <ul class="poc-bullets">
+          <li>Built the content model around live source coverage, not static AI answers.</li>
+          <li>Separated Bailey into code, business, investment, and design intelligence workspaces.</li>
+          <li>Used source health, credibility scoring, and evidence trails as visible product features.</li>
+          <li>Positioned semantic search as the next layer: ask Bailey and get source-linked answers.</li>
+        </ul>
+        <div class="poc-link-row">
+          <a class="poc-link" href="https://weready.dev/bailey-intelligence/" target="_blank" rel="noopener">Open Bailey Intelligence</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="demo-callout">Walkthrough Demo Available On Request</div>
+  </div>
+</section>
+
+<!-- PULLQUOTE -->
+<div class="pullquote">
+  <blockquote>
+    "Clients did not need a maybe. They needed a working thing they could react to."
+  </blockquote>
+  <cite>— The operating principle behind these POCs</cite>
+</div>
+
+<!-- BUILD PATTERN -->
 <section>
   <div class="inner">
-    <div class="section-label">The Problem</div>
-    <h2 class="section-heading">Pharma compliance is manual, slow, and expensive. AI can fix that.</h2>
+    <div class="section-label">Build Pattern</div>
+    <h2 class="section-heading">The format was always the same: clarify the question, build the answer.</h2>
     <div class="content-grid">
       <div>
         <p>
-          Every pharmaceutical marketing claim needs FDA review before it goes public. That process — Medical, Legal, and Regulatory (MLR) — is where things get stuck. Teams spend weeks flagging violations, documenting evidence, waiting for sign-off.
+          A POC only matters if it answers the business question that created it. I started by cutting each ask down to the smallest version that could prove or disprove the idea.
         </p>
         <p>
-          The industry needed AI that understood regulatory nuance, not just pattern matching. And it needed someone who'd actually been in the MLR room.
+          For ListingPal, that meant proving speed and quality could work together in a real estate workflow. For WeReady, it meant proving startup readiness could be scored and explained across technical, business, investor, and UX dimensions.
         </p>
       </div>
       <div>
-        <div style="width:100%;aspect-ratio:16/10;border-radius:4px;overflow:hidden"><img src="assets/ai-creative-builder.jpg" alt="AI-powered content review tool with rule-based creative variations — representative of the automated compliance workflow" style="width:100%;height:100%;object-fit:cover;border-radius:4px;" loading="lazy"></div>
+        <p>
+          I kept the work close to the client question. No sprawling feature set, no fake enterprise roadmap, no abstraction for its own sake. The demo had to show the actual product move.
+        </p>
+        <p>
+          That is where I am most useful: turning "could this work?" into an artifact a client can click, critique, and decide from.
+        </p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- APPROACH -->
-<section style="background: var(--surface-tint);">
-  <div class="inner">
-    <div class="section-label">The Approach</div>
-    <h2 class="section-heading">15 years in pharma gave me the vocabulary. AI gave me the tools.</h2>
-
-    <div style="counter-reset: step;" class="process-flow">
-      <div class="process-step">
-        <h4>Domain Immersion</h4>
-        <p>Mapped the entire MLR workflow with reviewers, regulatory leads, and marketing teams. Found where AI could genuinely help and where it would create new problems.</p>
-      </div>
-      <div class="process-step">
-        <h4>Architecture</h4>
-        <p>Designed a multimodal system using Gemini to analyze text, images, and video against regulatory databases. Built for explainability — every flag shows its reasoning chain.</p>
-      </div>
-      <div class="process-step">
-        <h4>Claims Detection</h4>
-        <p>Core engine identifies promotional claims, checks against approved language, flags violations, and suggests compliant alternatives. Everything logged for audit trail.</p>
-      </div>
-      <div class="process-step">
-        <h4>Routing &amp; Workflow</h4>
-        <p>Flagged content routes to the right reviewer with full context pre-populated. The problem wasn't detection — it was what happened after. This is where the cycle collapses.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- IMAGE BREAK -->
-<div class="image-grid image-grid--asymmetric" style="padding-top: var(--space-xl); padding-bottom: var(--space-xl);">
-  <div style="width:100%;aspect-ratio:16/10;border-radius:4px;overflow:hidden;background:#1a1714"><img src="assets/ai-audit-dashboard.jpg" alt="Digital audit platform with multimodal analysis — performance scoring, content review, and automated assessment" style="width:100%;height:100%;object-fit:cover;border-radius:4px;" loading="lazy"></div>
-  <div style="width:100%;aspect-ratio:3/4;border-radius:4px;overflow:hidden;background:#1a1714"><img src="assets/dxa-channels.jpg" alt="Channel selection and routing interface — intelligent content classification across SEM, SEO, social, and analytics categories" style="width:100%;height:100%;object-fit:cover;border-radius:4px;" loading="lazy"></div>
-</div>
-
-<div class="pullquote">
-  <blockquote>
-    "Not consulting about AI — shipping AI products inside regulated industries."
-  </blockquote>
-  <cite>— The difference between strategy decks and production systems</cite>
-</div>
-
-
-<!-- WHAT'S SHIPPING -->
+<!-- WHAT IT PROVES -->
 <section class="dark">
   <div class="inner">
-    <div class="section-label">The Product Suite</div>
-    <h2 class="section-heading">Four products. One platform. Production, not pilots.</h2>
-    <p style="color:rgba(248,245,240,0.6);font-size:1rem;line-height:1.75;max-width:52ch;margin-bottom:var(--space-xl);">
-      Three are in production. One is in active development. All of them are real systems — not concepts, not wireframes, not pilots waiting for a budget approval.
-    </p>
+    <div class="section-label">What This Proves</div>
+    <h2 class="section-heading">What client-led POC work actually proves.</h2>
     <ul class="outcomes">
       <li>
-        <strong>Claims Detection Engine <span style="font-family:var(--font-body);font-size:0.72rem;font-weight:600;text-transform:uppercase;letter-spacing:0.1em;color:var(--accent);margin-left:0.5rem;">Production</span></strong>
-        <span>Multimodal AI using Gemini to analyze text, images, and video against FDA-approved promotional language. Every flag is explainable — the system shows its reasoning chain, not just a red or green light. Built from scratch using AI-assisted development: architecture, pipeline design, prompt engineering, deployment.</span>
+        <strong>Client translation</strong>
+        <span>I can take an unclear ask, find the real decision underneath it, and turn that into a product surface people can respond to.</span>
       </li>
       <li>
-        <strong>Brief Generator <span style="font-family:var(--font-body);font-size:0.72rem;font-weight:600;text-transform:uppercase;letter-spacing:0.1em;color:var(--accent);margin-left:0.5rem;">Production</span></strong>
-        <span>AI-powered platform that transforms chaotic client inputs into structured, client-approved creative briefs in minutes. Smart intake forms with conditional logic guide pharma teams through the right questions. AI generates professional briefs, flags missing information, and branded review links let stakeholders comment and approve seamlessly. Eliminates the weeks of back-and-forth that bottleneck every pharma project kickoff.</span>
+        <strong>POC scoping</strong>
+        <span>The work stayed bounded. Each build answered a specific question instead of pretending to be a finished platform on day one.</span>
       </li>
       <li>
-        <strong>Scope Generator <span style="font-family:var(--font-body);font-size:0.72rem;font-weight:600;text-transform:uppercase;letter-spacing:0.1em;color:var(--accent);margin-left:0.5rem;">Production</span></strong>
-        <span>AI-powered scope generation for pharma project teams. Takes a brief and outputs structured project scope, timeline, and resourcing — eliminating weeks of back-and-forth before a project even starts. Built for finance and operations teams at pharma clients dealing with complex multi-channel campaigns.</span>
+        <strong>AI workflow design</strong>
+        <span>ListingPal and WeReady both required more than prompting. They needed intake structure, scoring logic, output review, and product judgment.</span>
       </li>
       <li>
-        <strong>Pharma OS <span style="font-family:var(--font-body);font-size:0.72rem;font-weight:600;text-transform:uppercase;letter-spacing:0.1em;color:#A89080;margin-left:0.5rem;">In Development</span></strong>
-        <span>The full operational layer — connecting content creation, compliance review, routing, and approval into a single AI-powered workflow. The Claims Detector and Routing Tool are components. Pharma OS is the system that runs them end-to-end. Currently in active development with Hedgehox.</span>
+        <strong>Design and build together</strong>
+        <span>The interface and backend moved together because the same person owned the flow, the AI behavior, and the demo experience.</span>
+      </li>
+      <li>
+        <strong>Speed with judgment</strong>
+        <span>Fast did not mean careless. The goal was to make a useful first version quickly enough that the client could decide what was worth building next.</span>
+      </li>
+      <li>
+        <strong>Demo readiness</strong>
+        <span>The output was built to be walked through, questioned, and adapted. That is the point of a POC: make the next conversation specific.</span>
       </li>
     </ul>
   </div>
 </section>
 
-<!-- HOW IT WAS BUILT -->
-<section style="background: var(--surface-tint);">
+<!-- REFLECTION -->
+<section>
   <div class="inner">
-    <div class="section-label">How It Was Built</div>
-    <h2 class="section-heading">AI-assisted development in a regulated environment.</h2>
+    <div class="section-label">Reflection</div>
+    <h2 class="section-heading">A good POC should reduce uncertainty, not create theater.</h2>
     <div class="content-grid">
       <div>
-        <p>
-          Every system here was built using AI-assisted development — Claude Code, Codex CLI, multi-model orchestration — with me as architect and director. The hard problems in pharma AI aren't technical. They're workflow problems: how does a reviewer trust an AI flag? What does an explainable decision look like in an FDA context?
-        </p>
-        <p>
-          Those questions need someone who's sat in the MLR room, not just someone who knows the stack.
-        </p>
-        <p>
-          The Claims Detector, Brief Generator, and Scope Generator aren't standalone products — they're components being built toward something larger. Pharma OS will connect them into a single AI-powered operational layer: from brief to approved content, from claim to compliance sign-off, from kickoff to delivery. Each tool solves a real problem today. Together, they're the foundation of how pharma marketing operations will actually run.
-        </p>
+        <p>These projects worked because the client question stayed visible the whole time. I was not trying to prove that AI was exciting. I was trying to prove whether a specific product workflow could be useful enough to continue.</p>
       </div>
       <div>
-        <svg viewBox="0 0 320 200" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100%;aspect-ratio:16/10;margin-bottom:var(--space-m);">
-          <defs>
-            <radialGradient id="glow" cx="50%" cy="42%" r="35%">
-              <stop offset="0%" stop-color="#c45a2d" stop-opacity="0.3"/>
-              <stop offset="100%" stop-color="#c45a2d" stop-opacity="0"/>
-            </radialGradient>
-          </defs>
-          <style>
-            @keyframes breathe{0%,100%{opacity:.55}50%{opacity:1}}
-            @keyframes glow-pulse{0%,100%{opacity:.2}50%{opacity:.5}}
-            .glow{animation:glow-pulse 4s ease-in-out infinite}
-            .fl{animation:breathe 3.5s ease-in-out infinite}
-            .fl2{animation:breathe 4.5s ease-in-out infinite .6s}
-            .fl3{animation:breathe 5s ease-in-out infinite 1.2s}
-          </style>
-
-          <!-- Filament glow -->
-          <ellipse class="glow" cx="160" cy="76" rx="42" ry="36" fill="url(#glow)"/>
-
-          <!-- Lines -->
-          <g stroke="#d4ccc2" stroke-width="1" stroke-linecap="round">
-            <!-- Dome outline left -->
-            <line x1="160" y1="22" x2="136" y2="30"/>
-            <line x1="136" y1="30" x2="116" y2="46"/>
-            <line x1="116" y1="46" x2="105" y2="66"/>
-            <line x1="105" y1="66" x2="102" y2="88"/>
-            <!-- Dome outline right -->
-            <line x1="160" y1="22" x2="184" y2="30"/>
-            <line x1="184" y1="30" x2="204" y2="46"/>
-            <line x1="204" y1="46" x2="215" y2="66"/>
-            <line x1="215" y1="66" x2="218" y2="88"/>
-            <!-- Dome cross-bracing -->
-            <line x1="136" y1="30" x2="204" y2="46" opacity=".4"/>
-            <line x1="116" y1="46" x2="215" y2="66" opacity=".35"/>
-            <line x1="105" y1="66" x2="218" y2="88" opacity=".3"/>
-            <!-- Dome to neck -->
-            <line x1="102" y1="88" x2="112" y2="104"/>
-            <line x1="218" y1="88" x2="208" y2="104"/>
-            <line x1="112" y1="104" x2="208" y2="104"/>
-            <!-- Neck -->
-            <line x1="112" y1="104" x2="124" y2="120"/>
-            <line x1="208" y1="104" x2="196" y2="120"/>
-            <line x1="124" y1="120" x2="196" y2="120"/>
-            <!-- Base threads -->
-            <line x1="130" y1="128" x2="190" y2="128"/>
-            <line x1="130" y1="128" x2="132" y2="140"/>
-            <line x1="190" y1="128" x2="188" y2="140"/>
-            <line x1="132" y1="140" x2="188" y2="140"/>
-            <line x1="132" y1="140" x2="134" y2="152"/>
-            <line x1="188" y1="140" x2="186" y2="152"/>
-            <line x1="134" y1="152" x2="186" y2="152"/>
-            <line x1="134" y1="152" x2="138" y2="165"/>
-            <line x1="186" y1="152" x2="182" y2="165"/>
-            <line x1="138" y1="165" x2="182" y2="165"/>
-            <!-- Filament wires -->
-            <line x1="160" y1="52" x2="142" y2="76" stroke="#c45a2d" stroke-width="1.2" opacity=".5"/>
-            <line x1="160" y1="52" x2="178" y2="76" stroke="#c45a2d" stroke-width="1.2" opacity=".5"/>
-            <line x1="142" y1="76" x2="160" y2="98" stroke="#c45a2d" stroke-width="1.2" opacity=".5"/>
-            <line x1="178" y1="76" x2="160" y2="98" stroke="#c45a2d" stroke-width="1.2" opacity=".5"/>
-            <!-- Filament support to structure -->
-            <line x1="160" y1="52" x2="160" y2="22" stroke="#c45a2d" stroke-width=".8" opacity=".3"/>
-            <line x1="160" y1="98" x2="160" y2="120" stroke="#c45a2d" stroke-width=".8" opacity=".3"/>
-          </g>
-
-          <!-- Dome nodes -->
-          <g fill="#5c5550">
-            <circle cx="160" cy="22" r="3.5"/>
-            <circle cx="136" cy="30" r="3"/>
-            <circle cx="184" cy="30" r="3"/>
-            <circle cx="116" cy="46" r="3"/>
-            <circle cx="204" cy="46" r="3"/>
-            <circle cx="105" cy="66" r="3"/>
-            <circle cx="215" cy="66" r="3"/>
-            <circle cx="102" cy="88" r="3"/>
-            <circle cx="218" cy="88" r="3"/>
-          </g>
-
-          <!-- Neck & base nodes -->
-          <g fill="#d4ccc2">
-            <circle cx="112" cy="104" r="2.5"/>
-            <circle cx="208" cy="104" r="2.5"/>
-            <circle cx="124" cy="120" r="2.5"/>
-            <circle cx="196" cy="120" r="2.5"/>
-            <circle cx="130" cy="128" r="2.5"/>
-            <circle cx="190" cy="128" r="2.5"/>
-            <circle cx="132" cy="140" r="2.5"/>
-            <circle cx="188" cy="140" r="2.5"/>
-            <circle cx="134" cy="152" r="2.5"/>
-            <circle cx="186" cy="152" r="2.5"/>
-            <circle cx="138" cy="165" r="2.5"/>
-            <circle cx="182" cy="165" r="2.5"/>
-          </g>
-
-          <!-- Filament nodes (accent, animated) -->
-          <circle class="fl" cx="160" cy="52" r="5" fill="#c45a2d"/>
-          <circle class="fl2" cx="142" cy="76" r="4.5" fill="#c45a2d"/>
-          <circle class="fl3" cx="178" cy="76" r="4.5" fill="#c45a2d"/>
-          <circle class="fl" cx="160" cy="98" r="4" fill="#c45a2d"/>
-        </svg>
-        <div style="margin-top:0;display:flex;flex-wrap:wrap;gap:0.5rem;">
-          <span style="font-size:0.75rem;font-weight:600;color:var(--accent);background:var(--accent-light);border:1px solid rgba(196,90,45,0.2);padding:0.25rem 0.65rem;border-radius:3px;">Gemini Multimodal</span>
-          <span style="font-size:0.75rem;font-weight:600;color:var(--accent);background:var(--accent-light);border:1px solid rgba(196,90,45,0.2);padding:0.25rem 0.65rem;border-radius:3px;">Claude Code</span>
-          <span style="font-size:0.75rem;font-weight:600;color:var(--accent);background:var(--accent-light);border:1px solid rgba(196,90,45,0.2);padding:0.25rem 0.65rem;border-radius:3px;">Python / FastAPI</span>
-          <span style="font-size:0.75rem;font-weight:600;color:var(--accent);background:var(--accent-light);border:1px solid rgba(196,90,45,0.2);padding:0.25rem 0.65rem;border-radius:3px;">LangChain</span>
-          <span style="font-size:0.75rem;font-weight:600;color:var(--accent);background:var(--accent-light);border:1px solid rgba(196,90,45,0.2);padding:0.25rem 0.65rem;border-radius:3px;">RAG Architecture</span>
-          <span style="font-size:0.75rem;font-weight:600;color:var(--accent);background:var(--accent-light);border:1px solid rgba(196,90,45,0.2);padding:0.25rem 0.65rem;border-radius:3px;">FDA / HIPAA Compliance</span>
-        </div>
+        <p>That is the lane I want this page to show: clients bring me the "is this possible?" moment, and I turn it into the first version they can actually judge.</p>
       </div>
     </div>
   </div>
@@ -412,17 +457,39 @@
 
 <!-- NEXT -->
 <div class="next-project">
-  <div class="nav-projects">
-    <a href="project-01.html">← Enterprise Design System</a>
-    <a href="project-03.html">AI Product Studio →</a>
-  </div>
-  <div style="margin-top: var(--space-xl);">
-    <div class="label">Next Project</div>
-    <a href="project-03.html">AI Product Studio →</a>
+  <div class="label">Next Project</div>
+  <a href="project-03.html">Enterprise Design System →</a>
+  <div class="nav-sub">
+    <a href="index.html">← Return to portfolio</a>
   </div>
 </div>
 
 <footer>&copy; 2026 Wally Mostafa · Raleigh, NC</footer>
+
+<script>
+  (() => {
+    const revealElements = document.querySelectorAll('[data-reveal]');
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    if (!revealElements.length || prefersReducedMotion || !('IntersectionObserver' in window)) {
+      revealElements.forEach((element) => element.classList.add('is-visible'));
+      return;
+    }
+
+    const observer = new IntersectionObserver((entries, activeObserver) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('is-visible');
+        activeObserver.unobserve(entry.target);
+      });
+    }, {
+      threshold: 0.18,
+      rootMargin: '0px 0px -8% 0px'
+    });
+
+    revealElements.forEach((element) => observer.observe(element));
+  })();
+</script>
 
 </body>
 </html>
