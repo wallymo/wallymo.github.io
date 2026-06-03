@@ -110,8 +110,42 @@
     border-color: var(--accent);
   }
 
+  /* Back to homepage — text link, top left */
+  .back-btn {
+    position: fixed;
+    top: var(--space-m);
+    left: var(--space-l);
+    z-index: 100;
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    font-family: var(--font-body);
+    font-size: 0.82rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--ink-muted);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .back-btn svg {
+    width: 15px;
+    height: 15px;
+    transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+
+  .back-btn:hover {
+    color: var(--accent);
+  }
+
+  .back-btn:hover svg {
+    transform: translateX(-3px);
+  }
+
   @media print {
-    .action-bar {
+    .action-bar,
+    .back-btn {
       display: none;
     }
     body {
@@ -327,6 +361,11 @@
 </head>
 <body>
 
+<a class="back-btn" href="index.html" aria-label="Back to homepage">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+  Back
+</a>
+
 <div class="action-bar">
   <button class="action-btn secondary" onclick="shareResume()">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg>
@@ -351,14 +390,14 @@
     <span class="contact-sep">·</span>
     <a class="print-link" href="https://linkedin.com/in/wallymo" target="_blank" rel="noopener">LinkedIn</a>
     <span class="contact-sep">·</span>
-    <a class="print-link" href="https://wallymo.github.io" target="_blank" rel="noopener">Portfolio</a>
+    <a class="print-link" href="https://wallymo.github.io/" target="_blank" rel="noopener">Portfolio</a>
   </div>
 </header>
 
 <section>
   <div class="section-title">Summary</div>
   <p class="summary">
-    AI product strategist and design leader with 15 years across pharma, enterprise UX, and AI implementation. I turn ambiguous client problems into working products: regulated pharma AI tools, client-led POCs, and enterprise design systems used by 7,000+ users across 22 brands.
+    AI product strategist and design leader with 15 years across pharma, enterprise UX, and AI implementation. I work end to end, from framing the problem to designing the experience, directing the models, and staying with the build through launch. My strength is turning ambiguity into products people can actually use, building design teams and practices from the ground up, and making AI trustworthy enough for regulated work.
   </p>
 </section>
 
@@ -393,9 +432,10 @@
       <span class="job-meta">Hedgehox · Remote · Mar 2024 – Present</span>
     </div>
     <ul class="job-desc">
-      <li>Translate pharma agency problems into working AI tools across claim detection, pre-submission annotation, screenshot capture, scoping, brief intake, routing, and regulatory monitoring</li>
-      <li>Built Claims Detector to find promotional claims and pre-annotate submissions using a knowledge base, approved references, or prompt-defined review criteria for enterprise MLR workflows</li>
-      <li>Designed Echo route and screenshot automation for submission review, capturing 100+ screenshots in under 5 minutes and moving one route from 8 hours to 10 minutes</li>
+      <li>Secured an investor for proprietary Claims Detection software by building the functional POC, shaping the demo story, and iterating with investors</li>
+      <li>Convert pharma agency needs into AI products for MLR claim review, brief intake, scoping, review routing, submission capture, and FDA signal monitoring</li>
+      <li>Built Scope Generator for pharma agency finance and operations teams to manage regional rate cards, brands, sub-brands, and natural-language scope changes</li>
+      <li>Developed FDA Warning Tool concepts that connect warning-letter patterns to content-risk guidance for pharma teams</li>
     </ul>
   </div>
 
@@ -405,10 +445,9 @@
       <span class="job-meta">One Block Away LLC · Remote · Jul 2023 – Present</span>
     </div>
     <ul class="job-desc">
-      <li>Currently building the website and growth strategy for a local U16 football club in Tanzania, helping the owners elevate players toward national-level opportunities and attract sponsors, donations, and community support</li>
-      <li>Turn early client AI questions into bounded POCs that show the workflow, expose the hard parts, and give clients something specific to test, pitch, or change</li>
-      <li>Built ListingPal as a client POC for real estate, turning basic property details into listing copy, social posts, ad copy, styling direction, and MLS/SEO-ready language in under 90 seconds</li>
-      <li>Built WeReady's Bailey intelligence dashboard as a client POC, turning founder inputs, GitHub signals, source health, credibility scoring, and risk recommendations into a startup-readiness report</li>
+      <li>Build client AI POCs that turn "can this work?" conversations into testable product surfaces, demos, and next-step decisions</li>
+      <li>Built ListingPal and WeReady's Bailey dashboard, translating property details, founder data, GitHub signals, and evidence trails into listing-generation and startup-readiness workflows</li>
+      <li>Building the website and sponsor strategy for a U16 football club in Tanzania, positioning the program for player advancement, community support, and donor outreach</li>
     </ul>
   </div>
 
@@ -418,10 +457,10 @@
       <span class="job-meta">Kinesso (IPG) · New York, NY · Feb 2020 – Jun 2023</span>
     </div>
     <ul class="job-desc">
-      <li>Scaled product design from 2 to 30 people across the US and Poland, supporting enterprise analytics workflows for 7,000+ users across 22 white-label brands</li>
-      <li>Led UX direction and design-system patterns for MIE data visualization, dashboard building, brand theming, and reusable enterprise analytics components</li>
-      <li>Shaped the Digital Experience Audit workflow for channel scoring, benchmarks, recommendations, visualization, and presentation-ready client outputs</li>
-      <li>Work earned Indigo Awards 2023 (3 Gold, 2 Silver), Indigo Awards 2022 (2 Gold, 2 Silver), and Red Dot 2021 recognition</li>
+      <li>Scaled product design from 2 to 30 people across the US and Poland for enterprise analytics used by 7,000+ users across 22 white-label brands</li>
+      <li>Led UX and design-system strategy for MIE data visualization, dashboard building, brand theming, and reusable analytics components</li>
+      <li>Built the Digital Experience Audit workflow for channel scoring, benchmarks, recommendations, visualization, and presentation-ready client outputs</li>
+      <li>Design-system and analytics work earned 5 Indigo Gold, 4 Indigo Silver, and Red Dot recognition</li>
     </ul>
   </div>
 
@@ -431,7 +470,7 @@
       <span class="job-meta">Heartbeat Ideas · New York, NY · Aug 2018 – Nov 2019</span>
     </div>
     <ul class="job-desc">
-      <li>Led UX research and experience strategy for pharma and healthcare agency work, turning stakeholder input, competitive audits, and user needs into clear digital product direction</li>
+      <li>Led UX research and experience strategy for pharma and healthcare work, translating stakeholder input, competitive audits, and user needs into digital product direction</li>
       <li>Created journey maps, site maps, user flows, wireframes, and prototypes for patient, HCP, and internal brand-team experiences across regulated healthcare programs</li>
       <li>Partnered with strategy, creative, account, and engineering teams to move UX recommendations from research findings into build-ready product and campaign experiences</li>
     </ul>
@@ -445,7 +484,7 @@
     <ul class="job-desc">
       <li>7+ years managing Fortune 500 pharma and healthcare clients with budgets from $2M to $50M+, including NUVIGIL, Namenda XR, Lipitor, and Zoloft</li>
       <li>One of two account consumer leads on FCB Health's largest pharma account across all verticals: TV, radio, digital, gaming, Times Square, unbranded campaigns, brand planning, and MLR review</li>
-      <li>Translated client and brand strategy into clear briefs, creative feedback, production requirements, timelines, and MLR-ready deliverables across account, creative, UX, and development teams</li>
+      <li>Translated client and brand strategy into briefs, creative feedback, production requirements, timelines, and MLR-ready deliverables across account, creative, UX, and development teams</li>
     </ul>
   </div>
 </section>
