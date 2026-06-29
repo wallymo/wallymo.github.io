@@ -11,7 +11,8 @@ No standalone paste/upload UI. Do this in chat from the job description the user
 5. Link the tailored resume's `Portfolio` contact item to the matching role route, not the homepage.
 6. If a cover letter is requested, create matching HTML, PDF, and Markdown under `output/pdf/`; the HTML screen view should look like the PDF page and link back to the role route.
 7. Render and verify PDFs: page count, no browser headers/footers, clean text extraction, visible linked text, and correct embedded URLs.
-8. Verify local and live `200` responses when publishing. Stage, commit, and push only the scoped route and matching artifacts.
+8. Treat a role-specific `Portfolio` link as publish-blocking: if the PDF links to `https://wallymo.github.io/<role>/`, that route and its matching resume HTML/PDF must be committed, pushed, and verified live before reporting the artifact as ready to send.
+9. Run `node scripts/verify-tailored-route.mjs <route-slug> <resume-html-path> <resume-pdf-path>` before final delivery for any matched route. This check must pass, or the final answer must explicitly say the artifact is local-only and the live Portfolio link will 404 until published.
 
 ## Output Contract
 
@@ -41,6 +42,7 @@ Use the Lenovo workflow as the default pattern.
 - Do not link the tailored PDF to public `resume.html`; that creates a second-resume comparison for recruiters.
 - Do not swap the tailored PDF's `Portfolio` link back to the public homepage as a workaround for an unpublished role route. Keep the role-route link, publish the route if possible, and clearly report any publish/auth blocker.
 - If the route should be live, stage/commit/push only the scoped role route and its matching tailored resume artifacts. Leave unrelated dirty files alone.
+- Never call a tailored PDF "ready" while its role route is untracked, uncommitted, unpushed, or live-404ing. Either publish and verify the scoped route/artifacts, or state clearly that the PDF is local-only and the Portfolio link is not ready for recruiter use.
 
 ## Visual Style
 
