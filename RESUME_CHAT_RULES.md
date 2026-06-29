@@ -2,9 +2,21 @@
 
 No standalone paste/upload UI. Do this in chat from the job description the user provides.
 
+## Quick Workflow
+
+1. Read the JD, `resume.html`, and the current role route rules before writing.
+2. Create/update one role route from `index.html`; tailor only metadata, hero copy, nav resume link, and contact resume link.
+3. Create the tailored resume from `resume.html` or the current canonical resume shell, never from another role's resume unless updating that same role.
+4. Keep `/`, `resume.html`, and `assets/Wally-Mostafa-Resume.pdf` unchanged unless explicitly asked.
+5. Link the tailored resume's `Portfolio` contact item to the matching role route, not the homepage.
+6. If a cover letter is requested, create matching HTML, PDF, and Markdown under `output/pdf/`; the HTML screen view should look like the PDF page and link back to the role route.
+7. Render and verify PDFs: page count, no browser headers/footers, clean text extraction, visible linked text, and correct embedded URLs.
+8. Verify local and live `200` responses when publishing. Stage, commit, and push only the scoped route and matching artifacts.
+
 ## Output Contract
 
 - Output a tailored resume in the same visual and structural style as `resume.html` and `assets/Wally-Mostafa-Resume.pdf`.
+- Start each new tailored resume from `resume.html` or the current canonical resume shell. Do not use another role-specific tailored resume as the source template unless you are updating that exact same role.
 - Keep it recruiter-facing: concise, concrete, chronological, ATS-readable.
 - Do not output fit scores, match rates, leverage/missing analysis, proof-link lists, or cover letters unless explicitly requested.
 - Default to a matched resume + role route workflow: when the user says "tailor this resume" for a role, create the tailored resume artifacts and a hidden role-specific portfolio route.
@@ -15,7 +27,7 @@ No standalone paste/upload UI. Do this in chat from the job description the user
 
 Use the Lenovo workflow as the default pattern.
 
-- Create a route at `/<company-or-role-slug>/` using `index.html` as the base.
+- Create a route at `/<company-or-role-slug>/` using `index.html` as the base. Do not copy a different role route as the starting point; that leaks old role framing and stale artifact links.
 - Keep the public homepage `/`, public `resume.html`, and `assets/Wally-Mostafa-Resume.pdf` untouched unless the user explicitly asks to change the global site.
 - Only tailor the route where it reduces recruiter confusion:
   - Page title, meta description, and Open Graph URL/title/description.
