@@ -12,7 +12,8 @@ No standalone paste/upload UI. Do this in chat from the job description the user
 6. If a cover letter is requested, create matching HTML, PDF, and Markdown under `output/pdf/`; the HTML screen view should look like the PDF page and link back to the role route.
 7. Render and verify PDFs: page count, no browser headers/footers, clean text extraction, visible linked text, and correct embedded URLs.
 8. Treat a role-specific `Portfolio` link as publish-blocking: if the PDF links to `https://wallymo.github.io/<role>/`, that route and its matching resume HTML/PDF must be committed, pushed, and verified live before reporting the artifact as ready to send.
-9. Run `node scripts/verify-tailored-route.mjs <route-slug> <resume-html-path> <resume-pdf-path>` before final delivery for any matched route. This check must pass, or the final answer must explicitly say the artifact is local-only and the live Portfolio link will 404 until published.
+9. Publish is the default. After local verification, stage, commit, and push the scoped route plus matching resume artifacts unless the user explicitly asks for a local-only artifact.
+10. Run `node scripts/verify-tailored-route.mjs <route-slug> <resume-html-path> <resume-pdf-path>` before final delivery for any matched route. This check must pass. Do not end with a local-only caveat unless publishing is blocked by credentials, network, GitHub Pages, or another external failure that you cannot resolve in the current turn.
 
 ## Output Contract
 
@@ -41,8 +42,8 @@ Use the Lenovo workflow as the default pattern.
 - In the tailored PDF, the contact line should still say `Portfolio`, and that link should point to the matching role route.
 - Do not link the tailored PDF to public `resume.html`; that creates a second-resume comparison for recruiters.
 - Do not swap the tailored PDF's `Portfolio` link back to the public homepage as a workaround for an unpublished role route. Keep the role-route link, publish the route if possible, and clearly report any publish/auth blocker.
-- If the route should be live, stage/commit/push only the scoped role route and its matching tailored resume artifacts. Leave unrelated dirty files alone.
-- Never call a tailored PDF "ready" while its role route is untracked, uncommitted, unpushed, or live-404ing. Either publish and verify the scoped route/artifacts, or state clearly that the PDF is local-only and the Portfolio link is not ready for recruiter use.
+- Stage/commit/push only the scoped role route and its matching tailored resume artifacts. Leave unrelated dirty files alone.
+- Never call a tailored PDF "ready" while its role route is untracked, uncommitted, unpushed, or live-404ing. Publish and verify the scoped route/artifacts before final delivery. Only stop with a local-only status when the user explicitly requests it or an external blocker prevents publishing after a real attempt.
 
 ## Visual Style
 
@@ -89,7 +90,7 @@ Use the Lenovo workflow as the default pattern.
 
 ## Delivery In Chat
 
-- If the user provides a JD and asks to tailor the resume, create the matched resume + role route workflow unless they explicitly ask for resume text only.
+- If the user provides a JD and asks to tailor the resume, create and publish the matched resume + role route workflow unless they explicitly ask for resume text only or local-only files.
 - Create a local HTML/PDF artifact using the `resume.html` visual style, then verify the rendered PDF before reporting it.
 - Verify the role route locally and, if pushed live, verify the live role URL and live resume artifact URLs return `200`.
 - Keep the answer tight: mention the artifact path and any important caveat only.
