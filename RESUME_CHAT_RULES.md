@@ -27,6 +27,7 @@ Use the Lenovo workflow as the default pattern.
 - On the role route, the contact `Download Resume` link must point to the tailored resume PDF under `output/pdf/`.
 - In the tailored PDF, the contact line should still say `Portfolio`, and that link should point to the matching role route.
 - Do not link the tailored PDF to public `resume.html`; that creates a second-resume comparison for recruiters.
+- Do not swap the tailored PDF's `Portfolio` link back to the public homepage as a workaround for an unpublished role route. Keep the role-route link, publish the route if possible, and clearly report any publish/auth blocker.
 - If the route should be live, stage/commit/push only the scoped role route and its matching tailored resume artifacts. Leave unrelated dirty files alone.
 
 ## Visual Style
