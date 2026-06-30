@@ -783,6 +783,25 @@
 
 <script>
   (() => {
+    const params = new URLSearchParams(window.location.search);
+    if (params.get('from') !== 'varonis') return;
+
+    const nameLink = document.querySelector('nav .name');
+    const allWorkLink = document.querySelector('nav .back');
+    const resumeLink = document.querySelector('nav .nav-cta');
+
+    if (nameLink) nameLink.href = 'varonis/';
+    if (allWorkLink) allWorkLink.href = 'varonis/#work';
+    if (resumeLink) resumeLink.href = 'output/pdf/wally-mostafa-varonis-data-ai-security-product-resume.html';
+
+    document.querySelectorAll('a[href^="project-"]').forEach((link) => {
+      const url = new URL(link.getAttribute('href'), window.location.href);
+      url.searchParams.set('from', 'varonis');
+      link.href = `${url.pathname.split('/').pop()}${url.search}`;
+    });
+  })();
+
+  (() => {
     const orchestration = document.querySelector(".os-orchestration");
     if (!orchestration || !("IntersectionObserver" in window)) return;
     let startTimer;
