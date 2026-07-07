@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Wally Mostafa — AI Product Strategist</title>
-<meta name="description" content="AI product strategist who ships. Multi-agent platforms, pharma compliance AI, and enterprise systems — 15 years turning complexity into production products.">
-<meta property="og:title" content="Wally Mostafa — AI Product Strategist">
-<meta property="og:description" content="AI product strategist who ships. Multi-agent platforms, pharma compliance AI, and enterprise systems.">
+<title>Wally Mostafa — AI Implementation & Product Strategy</title>
+<meta name="description" content="AI implementation and product strategy lead for regulated healthcare, pharma AI, enterprise workflows, and client-facing POC delivery.">
+<meta property="og:title" content="Wally Mostafa — AI Implementation & Product Strategy">
+<meta property="og:description" content="AI implementation and product strategy for regulated healthcare, pharma AI, enterprise workflows, and client-facing POC delivery.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://wallymo.github.io">
 <link rel="icon" href="favicon.ico?v=2" sizes="any">
@@ -32,6 +32,15 @@
     --accent-light: rgba(196, 90, 45, 0.08);
     --rule: #d4ccc2;
     --rule-light: #e4ddd4;
+
+    --radius-s: 4px;
+    --radius-m: 12px;
+    --radius-l: 16px;
+    --shadow-s: 0 2px 8px rgba(26, 23, 20, 0.06);
+    --shadow-m: 0 12px 28px rgba(26, 23, 20, 0.12);
+    --shadow-l: 0 28px 70px rgba(26, 23, 20, 0.16);
+    --accent-text: #a84820;   /* AA-safe accent for small text on light surfaces */
+    --accent-bright: #d4753f; /* AA-safe accent for small text on dark surfaces */
 
     --font-display: 'Syne', sans-serif;
     --font-body: 'Instrument Sans', sans-serif;
@@ -63,6 +72,7 @@
     color: var(--ink);
     background: var(--surface);
     letter-spacing: 0.005em;
+    overflow-x: hidden;
   }
 
   /* ── NAV ── */
@@ -134,7 +144,7 @@
     color: var(--surface) !important;
     background: var(--ink);
     padding: 0.45rem 1rem !important;
-    border-radius: 3px;
+    border-radius: var(--radius-s);
     transition: background 0.2s;
   }
 
@@ -156,7 +166,7 @@
 
   /* ── HERO ── */
   .hero {
-    min-height: 100vh;
+    min-height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -173,7 +183,7 @@
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.15em;
-    color: var(--accent);
+    color: var(--accent-text);
     margin-bottom: var(--space-m);
     opacity: 0;
     transform: translateY(16px);
@@ -255,7 +265,7 @@
     color: var(--surface);
     background: var(--ink);
     padding: 0.9rem 2rem;
-    border-radius: 4px;
+    border-radius: var(--radius-s);
     text-decoration: none;
     transition: background 0.25s, transform 0.2s;
     letter-spacing: 0.01em;
@@ -297,7 +307,7 @@
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.18em;
-    color: var(--accent);
+    color: var(--accent-text);
     margin-bottom: var(--space-s);
   }
 
@@ -434,8 +444,8 @@
 
   .cap-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: var(--space-l);
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-l) var(--space-xl);
   }
 
   .cap-item {
@@ -588,7 +598,7 @@
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.14em;
-    color: var(--accent);
+    color: var(--accent-text);
     margin-bottom: var(--space-xs);
   }
 
@@ -633,11 +643,11 @@
     background: var(--surface-warm);
     border: 1px solid var(--rule-light);
     padding: 0.2rem 0.6rem;
-    border-radius: 3px;
+    border-radius: var(--radius-s);
   }
 
   .hib-tool--accent {
-    color: var(--accent);
+    color: var(--accent-text);
     background: var(--accent-light);
     border-color: rgba(196, 90, 45, 0.2);
     font-weight: 600;
@@ -646,19 +656,62 @@
 
   /* ── FEATURED WORK ── */
   #work { background: var(--ink); }
-  #work .section-label { color: var(--accent); }
+  #work .section-label { color: var(--accent-bright); }
   #work .section-title { color: var(--surface); }
   #work .work-number { color: rgba(248,245,240,0.12); }
   #work .work-meta h3 { color: var(--surface); }
-  #work .work-meta .role { color: var(--accent); }
+  #work .work-meta .role { color: var(--accent-bright); }
   #work .work-body p { color: rgba(248,245,240,0.65); }
   #work .stat-number { color: var(--surface); }
-  #work .stat-label { color: rgba(248,245,240,0.45); }
+  #work .stat-label { color: rgba(248,245,240,0.55); }
   #work .work-stats { border-top-color: rgba(248,245,240,0.1); }
-  #work .tag { color: var(--accent); background: rgba(196,90,45,0.12); border-color: rgba(196,90,45,0.25); }
+  #work .tag { color: var(--accent-bright); background: rgba(196,90,45,0.12); border-color: rgba(196,90,45,0.25); }
   #work .work-link { color: var(--surface); border-bottom-color: rgba(248,245,240,0.25); }
-  #work .work-link:hover { border-bottom-color: var(--accent); color: var(--accent); }
+  #work .work-link:hover { border-bottom-color: var(--accent-bright); color: var(--accent-bright); }
   #work .work-item { border-color: rgba(248,245,240,0.08); }
+
+  /* Card-level hover: whole work-item is the link */
+  #work .work-item:hover .work-number,
+  #work .work-item:focus-visible .work-number { color: rgba(248,245,240,0.22); }
+  #work .work-item:hover .work-meta h3,
+  #work .work-item:focus-visible .work-meta h3 { color: var(--accent-bright); }
+  #work .work-item:hover .work-link,
+  #work .work-item:focus-visible .work-link {
+    border-bottom-color: var(--accent-bright);
+    color: var(--accent-bright);
+  }
+  #work .work-item:hover .work-link .arrow { transform: translateX(4px); }
+  .work-item:focus-visible {
+    outline: 2px solid var(--accent-bright);
+    outline-offset: 4px;
+    border-radius: var(--radius-s);
+  }
+
+  #work .work-more {
+    margin-top: var(--space-2xl);
+    padding-top: var(--space-l);
+    border-top: 1px solid rgba(248, 245, 240, 0.1);
+    color: rgba(248, 245, 240, 0.6);
+    font-size: 0.92rem;
+    line-height: 1.7;
+    max-width: 72ch;
+  }
+  #work .work-more a {
+    color: var(--surface);
+    font-weight: 600;
+    text-decoration: none;
+    padding-bottom: 2px;
+    border-bottom: 1.5px solid rgba(248, 245, 240, 0.25);
+    margin-left: 0.4rem;
+    white-space: nowrap;
+    transition: color 0.2s, border-color 0.2s;
+  }
+  #work .work-more a:hover {
+    color: var(--accent-bright);
+    border-bottom-color: var(--accent-bright);
+  }
+  #work .work-more .arrow { display: inline-block; transition: transform 0.25s ease; }
+  #work .work-more a:hover .arrow { transform: translateX(4px); }
 
   .work-grid { display: grid; gap: var(--space-3xl); }
 
@@ -682,6 +735,7 @@
     color: var(--rule);
     line-height: 1;
     letter-spacing: -0.04em;
+    transition: color 0.25s ease;
   }
 
   .work-meta h3 {
@@ -692,6 +746,7 @@
     color: var(--ink);
     margin-bottom: var(--space-xs);
     line-height: 1.15;
+    transition: color 0.25s ease;
   }
 
   .work-meta .role {
@@ -758,6 +813,11 @@
 
   .work-link:hover { border-bottom-color: var(--accent); }
 
+  .work-link .arrow {
+    display: inline-block;
+    transition: transform 0.25s ease;
+  }
+
   .work-tags {
     display: flex;
     flex-wrap: wrap;
@@ -775,7 +835,7 @@
     background: var(--accent-light);
     border: 1px solid rgba(196, 90, 45, 0.15);
     padding: 0.25rem 0.6rem;
-    border-radius: 3px;
+    border-radius: var(--radius-s);
     white-space: nowrap;
   }
 
@@ -865,7 +925,7 @@
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.12em;
-    color: var(--accent);
+    color: var(--accent-text);
     margin-bottom: 6px;
     transition: letter-spacing 0.3s ease;
   }
@@ -927,6 +987,26 @@
   /* ── AWARDS ── */
   .awards { background: var(--surface-tint); }
 
+  .awards-context {
+    margin: calc(-1 * var(--space-l)) 0 var(--space-xl);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--ink-soft);
+    max-width: 52ch;
+  }
+
+  .awards-context a {
+    color: var(--ink);
+    text-decoration: none;
+    border-bottom: 1px solid var(--rule);
+    transition: color 0.2s, border-color 0.2s;
+  }
+
+  .awards-context a:hover {
+    color: var(--accent-text);
+    border-color: var(--accent-text);
+  }
+
   .awards-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -936,7 +1016,7 @@
   .award-item {
     padding: var(--space-m) var(--space-l);
     border: 1.5px solid var(--rule);
-    border-radius: 4px;
+    border-radius: var(--radius-s);
     transition: border-color 0.2s, transform 0.2s;
     background: var(--surface);
   }
@@ -1197,7 +1277,15 @@
 
     /* Hero adjustments */
     .hero { min-height: 90vh; padding-top: calc(60px + var(--space-xl)); }
-    .hero h1 { font-size: clamp(2.8rem, 11vw, 3.8rem); }
+    .hero-eyebrow {
+      max-width: 28ch;
+      line-height: 1.5;
+    }
+    .hero h1 {
+      font-size: clamp(2.25rem, 12vw, 2.8rem);
+      max-width: 100%;
+      letter-spacing: 0;
+    }
     .hero-tagline { flex-direction: column; gap: var(--space-s); }
     .hero-intro { font-size: 1rem; }
     .hero-cta { flex-direction: column; gap: var(--space-s); align-items: flex-start; }
@@ -1262,7 +1350,7 @@
 
   @media (max-width: 380px) {
     .awards-grid { grid-template-columns: 1fr; }
-    .hero h1 { font-size: 2.5rem; }
+    .hero h1 { font-size: 2.2rem; }
     .work-stats { flex-direction: column; gap: var(--space-m); }
   }
 
@@ -1279,15 +1367,15 @@
 <canvas class="hero-canvas" id="hero-canvas" aria-hidden="true"></canvas>
 
 <nav id="nav">
-  <a href="#" class="name">Wally Mostafa</a>
+  <a href="index.html" class="name">Wally Mostafa</a>
   <button class="mobile-menu-btn" aria-label="Menu" onclick="document.getElementById('nav').classList.toggle('menu-open'); document.body.style.overflow = document.getElementById('nav').classList.contains('menu-open') ? 'hidden' : ''">
     <svg class="hamburger-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
     <svg class="close-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="6" y1="6" x2="18" y2="18"/><line x1="6" y1="18" x2="18" y2="6"/></svg>
   </button>
   <ul class="links">
-    <li><a href="#capabilities">What I Do</a></li>
-    <li><a href="#how-i-build">How I Build</a></li>
     <li><a href="#work">Work</a></li>
+    <li><a href="#how-i-build">How I Build</a></li>
+    <li><a href="#capabilities">What I Do</a></li>
     <li><a href="#arc">Experience</a></li>
     <li><a href="#awards">Awards</a></li>
     <li><a href="https://linkedin.com/in/wallymo" target="_blank" rel="noopener">LinkedIn ↗</a></li>
@@ -1297,19 +1385,19 @@
 
 <!-- HERO -->
 <section class="hero">
-  <div class="hero-eyebrow">AI Product Strategist &amp; Design Leader</div>
+  <div class="hero-eyebrow">AI Implementation &amp; Product Strategy Lead</div>
   <h1>Wally Mostafa</h1>
   <div class="hero-tagline">
-    <span>Design Systems</span>
-    <span>Regulated AI</span>
-    <span>AI-directed products</span>
+    <span>Regulated healthcare AI</span>
+    <span>Enterprise workflow UX</span>
+    <span>Client-facing POCs</span>
   </div>
   <p class="hero-intro">
-    AI product strategist and design leader with 15 years across pharma, enterprise UX, design systems, and AI implementation. I turn ambiguous business problems into working products, prototypes, and production systems.
+    I build governed AI tools, demo-ready POCs, and usable product systems for healthcare, pharma, and enterprise teams. Fifteen years across client strategy, UX leadership, and AI implementation means I translate the ask, shape the workflow, and stay with the build.
   </p>
   <div class="hero-cta">
-    <a href="#contact" class="btn-primary">Let's talk</a>
-    <a href="#work" class="btn-ghost">See the work ↓</a>
+    <a href="#work" class="btn-primary">See the work ↓</a>
+    <a href="resume.html" class="btn-ghost">Resume</a>
   </div>
 </section>
 
@@ -1330,6 +1418,267 @@
   </div>
 </section>
 
+<!-- FEATURED WORK -->
+<section id="work">
+  <div class="section-inner">
+    <div class="section-label reveal">Featured Work</div>
+    <h2 class="section-title reveal">Proof for the lane.</h2>
+
+    <div class="work-grid">
+
+      <!-- 01: Hedgehox — Pharma AI (leads with AI) -->
+      <a href="project-01.html" class="work-item reveal" style="text-decoration: none; color: inherit;">
+        <div class="work-meta">
+          <div class="work-number">01</div>
+          <h3>Pharma AI Platform</h3>
+          <div class="role">Hedgehox<br>AI Implementation Partner</div>
+        </div>
+        <div class="work-body">
+          <p>
+            Built pharma AI tools for agency teams across MLR claim detection, pre-submission annotation, routing, finance, and regulatory workflows.
+          </p>
+          <div class="work-stats">
+            <div class="stat">
+              <span class="stat-number">3w→4d</span>
+              <span class="stat-label">MLR cycle</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">FDA</span>
+              <span class="stat-label">HIPAA compliance</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">3 modes</span>
+              <span class="stat-label">Text + image + video</span>
+            </div>
+          </div>
+          <div class="work-tags">
+            <span class="tag">LLM / VLM</span>
+            <span class="tag">Gemini</span>
+            <span class="tag">FDA / HIPAA</span>
+            <span class="tag">Agency workflows</span>
+          </div>
+          <span class="work-link">View case study <span class="arrow">→</span></span>
+        </div>
+      </a>
+
+      <!-- 02: Hedgehox — Xenagos Biopharma Website -->
+      <a href="project-08.html" class="work-item reveal" style="text-decoration: none; color: inherit;">
+        <div class="work-meta">
+          <div class="work-number">02</div>
+          <h3>Xenagos Biopharma Website</h3>
+          <div class="role">Hedgehox<br>Web Design &amp; Design System</div>
+        </div>
+        <div class="work-body">
+          <p>
+            Designed a startup biopharma web presence and hidden design-system reference for Xenagos Bio, translating precision oncology positioning into a credible launch surface.
+          </p>
+          <div class="work-stats">
+            <div class="stat">
+              <span class="stat-number">2026</span>
+              <span class="stat-label">Launch surface</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">2</span>
+              <span class="stat-label">Oncology programs</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">Live</span>
+              <span class="stat-label">Dev site shipped</span>
+            </div>
+          </div>
+          <div class="work-tags">
+            <span class="tag">Biopharma</span>
+            <span class="tag">Investor UX</span>
+            <span class="tag">Design Systems</span>
+            <span class="tag">React / Vite / SCSS</span>
+          </div>
+          <span class="work-link">View case study <span class="arrow">→</span></span>
+        </div>
+      </a>
+
+      <!-- 03: OBA — The POC Guy -->
+      <a href="project-02.html" class="work-item reveal" style="text-decoration: none; color: inherit;">
+        <div class="work-meta">
+          <div class="work-number">03</div>
+          <h3>The POC Guy</h3>
+          <div class="role">One Block Away LLC<br>Founder &amp; AI Product Strategist</div>
+        </div>
+        <div class="work-body">
+          <p>
+            Turned early client asks into testable AI POCs, including ListingPal's 90-second listing workflow and WeReady's Bailey intelligence dashboard.
+          </p>
+          <div class="work-stats">
+            <div class="stat">
+              <span class="stat-number">2 POCs</span>
+              <span class="stat-label">Client-led builds</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">90 sec</span>
+              <span class="stat-label">Listing output</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">19</span>
+              <span class="stat-label">Mapped sources</span>
+            </div>
+          </div>
+          <div class="work-tags">
+            <span class="tag">POC builds</span>
+            <span class="tag">Claude + Codex</span>
+            <span class="tag">Client ideation</span>
+            <span class="tag">Vertical testing</span>
+          </div>
+          <span class="work-link">View case study <span class="arrow">→</span></span>
+        </div>
+      </a>
+
+      <!-- 04: Kinesso — Enterprise Design System -->
+      <a href="project-03.html" class="work-item reveal" style="text-decoration: none; color: inherit;">
+        <div class="work-meta">
+          <div class="work-number">04</div>
+          <h3>Enterprise Design System</h3>
+          <div class="role">Kinesso (IPG)<br>Director, Experience &amp; Innovation</div>
+        </div>
+        <div class="work-body">
+          <p>
+            Led enterprise UX systems at Kinesso across MIE data visualization, DXA, and white-label workflow tooling used by 7,000+ users across 22 brands.
+          </p>
+          <div class="work-stats">
+            <div class="stat">
+              <span class="stat-number">7,000+</span>
+              <span class="stat-label">Daily users</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">22</span>
+              <span class="stat-label">White-label brands</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">2→30</span>
+              <span class="stat-label">Design team</span>
+            </div>
+          </div>
+          <div class="work-tags">
+            <span class="tag">Data Visualization</span>
+            <span class="tag">Design Systems</span>
+            <span class="tag">UX Leadership</span>
+          </div>
+          <span class="work-link">View case study <span class="arrow">→</span></span>
+        </div>
+      </a>
+
+      <!-- 05: Kinesso — User Research -->
+      <a href="project-04.html" class="work-item reveal" style="text-decoration: none; color: inherit;">
+        <div class="work-meta">
+          <div class="work-number">05</div>
+          <h3>User Research</h3>
+          <div class="role">Kinesso (IPG)<br>Lead UX Designer &amp; Researcher</div>
+        </div>
+        <div class="work-body">
+          <p>
+            Built the UX research discipline from scratch across a 20+ product marketing intelligence suite, turning interviews, tools, and Figma documentation into a repeatable product practice.
+          </p>
+          <div class="work-stats">
+            <div class="stat">
+              <span class="stat-number">2→30</span>
+              <span class="stat-label">Design team</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">20+</span>
+              <span class="stat-label">Products covered</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">4</span>
+              <span class="stat-label">Suites aligned</span>
+            </div>
+          </div>
+          <div class="work-tags">
+            <span class="tag">User Research</span>
+            <span class="tag">Research Ops</span>
+            <span class="tag">Figma Docs</span>
+            <span class="tag">Roadshow</span>
+          </div>
+          <span class="work-link">View case study <span class="arrow">→</span></span>
+        </div>
+      </a>
+
+      <!-- 06: Kinesso — Splash Design System -->
+      <a href="project-05.html" class="work-item reveal" style="text-decoration: none; color: inherit;">
+        <div class="work-meta">
+          <div class="work-number">06</div>
+          <h3>Splash Design System</h3>
+          <div class="role">Kinesso (IPG)<br>Lead UX Designer &amp; Researcher</div>
+        </div>
+        <div class="work-body">
+          <p>
+            Helped shape a research-backed enterprise design system for a 20+ product suite, with components, styles, icons, personas, and award-winning system behaviors created from scratch.
+          </p>
+          <div class="work-stats">
+            <div class="stat">
+              <span class="stat-number">500</span>
+              <span class="stat-label">Components</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">140</span>
+              <span class="stat-label">Styles</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">50</span>
+              <span class="stat-label">Personas</span>
+            </div>
+          </div>
+          <div class="work-tags">
+            <span class="tag">Design Systems</span>
+            <span class="tag">Figma</span>
+            <span class="tag">Design Ops</span>
+            <span class="tag">Indigo Awards</span>
+          </div>
+          <span class="work-link">View case study <span class="arrow">→</span></span>
+        </div>
+      </a>
+
+      <!-- 07: Kinesso — Digital Audit Experience -->
+      <a href="project-06.html" class="work-item reveal" style="text-decoration: none; color: inherit;">
+        <div class="work-meta">
+          <div class="work-number">07</div>
+          <h3>Digital Audit Experience</h3>
+          <div class="role">Kinesso (IPG)<br>Director, UX Design &amp; Strategy</div>
+        </div>
+        <div class="work-body">
+          <p>
+            Turned sprawling digital performance data into an audit workflow with benchmarks, recommendations, AI-powered visualization, and presentation-ready strategy outputs.
+          </p>
+          <div class="work-stats">
+            <div class="stat">
+              <span class="stat-number">2021</span>
+              <span class="stat-label">Red Dot</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">5</span>
+              <span class="stat-label">Indigo wins</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">AI</span>
+              <span class="stat-label">Powered insight</span>
+            </div>
+          </div>
+          <div class="work-tags">
+            <span class="tag">Audit Workflow</span>
+            <span class="tag">Data Viz</span>
+            <span class="tag">AI Insights</span>
+            <span class="tag">Awards</span>
+          </div>
+          <span class="work-link">View case study <span class="arrow">→</span></span>
+        </div>
+      </a>
+
+    </div>
+
+    <p class="work-more reveal">
+      Also from this period: design leadership, an accessibility program, the Engine+ innovation challenge (2nd place), and a service-desk product.
+      <a href="project-07.html">View highlights <span class="arrow">→</span></a>
+    </p>
+  </div>
+</section>
+
 <!-- HOW I BUILD -->
 <section class="how-i-build" id="how-i-build">
   <div class="section-inner">
@@ -1339,9 +1688,9 @@
     <div class="hib-grid">
 
       <div class="hib-intro reveal">
-        <div class="hib-lead">Frame the work, then direct the tools.</div>
+        <div class="hib-lead">Frame the workflow, then direct the tools.</div>
         <p>
-          I start with the decision path: input, output, checkpoints, and proof. Then I use Claude Code, Codex, Gemini, Ollama, and local models to build and refine the loop.
+          I start with the decision path: user, input, output, checkpoints, and proof.
         </p>
 
         <ol class="hib-flow" aria-label="AI product build sequence">
@@ -1379,7 +1728,7 @@
 
         <div class="hib-director-note">
           <span>Operating role</span>
-          <p>I stay across strategy, UX, model behavior, code, and validation, so the build moves fast without becoming a loose demo.</p>
+          <p>I stay across client translation, strategy, UX, model behavior, code, and validation, so the build moves fast without becoming a loose demo.</p>
         </div>
       </div>
 
@@ -1436,12 +1785,12 @@
 <section class="capabilities" id="capabilities">
   <div class="section-inner">
     <div class="section-label reveal">Capabilities</div>
-    <h2 class="section-title reveal">Where I fit on a team.</h2>
+    <h2 class="section-title reveal">Where I create leverage.</h2>
     <div class="cap-grid stagger reveal">
 
       <div class="cap-item">
         <h3>i <em>discover</em></h3>
-        <p>Clarify the problem, users, constraints, and decision path before teams commit time or budget.</p>
+        <p>Clarify the workflow, users, constraints, and decision path before teams commit time or budget.</p>
         <ul class="cap-proof">
           <li>User research across Fortune 500 pharma clients</li>
           <li>Discovery-to-POC frameworks that cut scope risk early</li>
@@ -1450,7 +1799,7 @@
 
       <div class="cap-item">
         <h3>i <em>design</em></h3>
-        <p>Design interfaces, systems, and interaction models that scale across teams, brands, and regulated workflows.</p>
+        <p>Design the control surfaces where people guide, inspect, correct, and trust AI outputs.</p>
         <ul class="cap-proof">
           <li>Design systems, data viz, and enterprise UX</li>
           <li>Built UX practice from zero at two organizations</li>
@@ -1459,154 +1808,22 @@
 
       <div class="cap-item">
         <h3>i <em>build</em></h3>
-        <p>Use AI-assisted development to move from concept to working prototype or production product quickly.</p>
+        <p>Use AI-assisted development to move from concept to working prototype, demo, or production path, then stay with the work through launch and iteration.</p>
         <ul class="cap-proof">
           <li>Pharma claims detection and routing at Hedgehox</li>
           <li>POC builds across pharma, finance, and operations</li>
-        </ul>
-      </div>
-
-      <div class="cap-item">
-        <h3>i <em>lead</em></h3>
-        <p>Lead cross-functional work from executive brief to design review, engineering handoff, and launch.</p>
-        <ul class="cap-proof">
-          <li>2nd design hire at Kinesso to leading innovation team of 30</li>
-          <li>In the room from first brief to final sign-off</li>
-        </ul>
-      </div>
-
-      <div class="cap-item">
-        <h3>i <em>ship</em></h3>
-        <p>Stay with the work through launch, iteration, and the operational details that make products usable.</p>
-        <ul class="cap-proof">
-          <li>UX design for 7,000+ enterprise users across 22 brands</li>
           <li>Solo launches across pharma and adtech</li>
         </ul>
       </div>
 
       <div class="cap-item">
-        <h3>i <em>evolve</em></h3>
-        <p>Bring account strategy, UX, design systems, and AI implementation into one product leadership skill set.</p>
+        <h3>i <em>lead</em></h3>
+        <p>Lead cross-functional work from executive brief to engineering handoff, client approval, and launch, bringing strategy, UX, and AI implementation into one operating model.</p>
         <ul class="cap-proof">
-          <li>Account management, UX design, UX leadership, and now AI implementation and strategy</li>
+          <li>2nd design hire at Kinesso to leading innovation team of 30</li>
+          <li>In the room from first brief to final sign-off</li>
         </ul>
       </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- FEATURED WORK -->
-<section id="work">
-  <div class="section-inner">
-    <div class="section-label reveal">Featured Work</div>
-    <h2 class="section-title reveal">Selected proof points.</h2>
-
-    <div class="work-grid">
-
-      <!-- 01: Hedgehox — Pharma AI (leads with AI) -->
-      <a href="project-01.html" class="work-item reveal" style="text-decoration: none; color: inherit;">
-        <div class="work-meta">
-          <div class="work-number">01</div>
-          <h3>Pharma AI Platform</h3>
-          <div class="role">Hedgehox<br>AI Implementation Partner</div>
-        </div>
-        <div class="work-body">
-          <p>
-            Built pharma AI tools for agency teams across MLR claim detection, pre-submission annotation, routing, finance, and regulatory workflows.
-          </p>
-          <div class="work-stats">
-            <div class="stat">
-              <span class="stat-number">3w→4d</span>
-              <span class="stat-label">MLR cycle</span>
-            </div>
-            <div class="stat">
-              <span class="stat-number">FDA</span>
-              <span class="stat-label">HIPAA compliance</span>
-            </div>
-            <div class="stat">
-              <span class="stat-number">3 modes</span>
-              <span class="stat-label">Text + image + video</span>
-            </div>
-          </div>
-          <div class="work-tags">
-            <span class="tag">LLM / VLM</span>
-            <span class="tag">Gemini</span>
-            <span class="tag">FDA / HIPAA</span>
-            <span class="tag">Agency workflows</span>
-          </div>
-          <span class="work-link">View case study →</span>
-        </div>
-      </a>
-
-      <!-- 02: OBA — The POC Guy -->
-      <a href="project-02.html" class="work-item reveal" style="text-decoration: none; color: inherit;">
-        <div class="work-meta">
-          <div class="work-number">02</div>
-          <h3>The POC Guy</h3>
-          <div class="role">One Block Away LLC<br>Founder &amp; AI Product Strategist</div>
-        </div>
-        <div class="work-body">
-          <p>
-            Turned early client asks into testable AI POCs, including ListingPal's 90-second listing workflow and WeReady's Bailey intelligence dashboard.
-          </p>
-          <div class="work-stats">
-            <div class="stat">
-              <span class="stat-number">2 POCs</span>
-              <span class="stat-label">Client-led builds</span>
-            </div>
-            <div class="stat">
-              <span class="stat-number">90 sec</span>
-              <span class="stat-label">Listing output</span>
-            </div>
-            <div class="stat">
-              <span class="stat-number">19</span>
-              <span class="stat-label">Mapped sources</span>
-            </div>
-          </div>
-          <div class="work-tags">
-            <span class="tag">POC builds</span>
-            <span class="tag">Claude + Codex</span>
-            <span class="tag">Client ideation</span>
-            <span class="tag">Vertical testing</span>
-          </div>
-          <span class="work-link">View case study →</span>
-        </div>
-      </a>
-
-      <!-- 03: Kinesso — Enterprise Design System -->
-      <a href="project-03.html" class="work-item reveal" style="text-decoration: none; color: inherit;">
-        <div class="work-meta">
-          <div class="work-number">03</div>
-          <h3>Enterprise Design System</h3>
-          <div class="role">Kinesso (IPG)<br>Director, Experience &amp; Innovation</div>
-        </div>
-        <div class="work-body">
-          <p>
-            Led enterprise UX systems at Kinesso across MIE data visualization, DXA, and white-label workflow tooling used by 7,000+ users across 22 brands.
-          </p>
-          <div class="work-stats">
-            <div class="stat">
-              <span class="stat-number">7,000+</span>
-              <span class="stat-label">Daily users</span>
-            </div>
-            <div class="stat">
-              <span class="stat-number">22</span>
-              <span class="stat-label">White-label brands</span>
-            </div>
-            <div class="stat">
-              <span class="stat-number">2→30</span>
-              <span class="stat-label">Design team</span>
-            </div>
-          </div>
-          <div class="work-tags">
-            <span class="tag">Data Visualization</span>
-            <span class="tag">Design Systems</span>
-            <span class="tag">UX Leadership</span>
-          </div>
-          <span class="work-link">View case study →</span>
-        </div>
-      </a>
 
     </div>
   </div>
@@ -1616,7 +1833,7 @@
 <section class="arc" id="arc">
   <div class="section-inner">
     <div class="section-label reveal">Experience</div>
-    <h2 class="section-title reveal">15 years across strategy, UX, product, and AI.</h2>
+    <h2 class="section-title reveal">15 years converging into AI implementation.</h2>
 
     <div class="arc-timeline">
 
@@ -1664,7 +1881,12 @@
   <div class="section-inner">
     <div class="section-label reveal">Awards</div>
     <h2 class="section-title reveal" style="font-weight: 600; max-width: 26ch;">Industry recognition.</h2>
+    <p class="awards-context reveal">The Red Dot and Indigo wins came from the <a href="project-06.html">Digital Audit Experience</a> and <a href="project-05.html">Splash design system</a> work at Kinesso.</p>
     <div class="awards-grid stagger reveal">
+      <div class="award-item">
+        <a href="https://www.red-dot.org/project/dxa-digital-experience-audit-55219" target="_blank" rel="noopener" class="award-name">Red Dot 2021</a>
+        <span class="award-detail">Communication Design</span>
+      </div>
       <div class="award-item">
         <a href="https://www.indigoaward.com/winners/6748" target="_blank" rel="noopener" class="award-name">Indigo Awards 2023</a>
         <span class="award-detail">3 Gold, 2 Silver — Design Excellence</span>
@@ -1672,10 +1894,6 @@
       <div class="award-item">
         <a href="https://www.indigoaward.com/winners/4629" target="_blank" rel="noopener" class="award-name">Indigo Awards 2022</a>
         <span class="award-detail">2 Gold, 2 Silver — UX/UI Design</span>
-      </div>
-      <div class="award-item">
-        <a href="https://www.red-dot.org/project/dxa-digital-experience-audit-55219" target="_blank" rel="noopener" class="award-name">Red Dot 2021</a>
-        <span class="award-detail">Communication Design</span>
       </div>
       <div class="award-item">
         <span class="award-name">Manny Award 2013</span>
@@ -1697,7 +1915,7 @@
         <div class="section-label reveal">Get in touch</div>
         <h2 class="reveal">Let's talk.</h2>
         <p class="contact-subtitle reveal">
-            Open to Director, VP, and senior IC roles across AI strategy, product, UX, and design leadership.
+            Hiring for AI implementation, AI product strategy, or technical PM work in healthcare, life sciences, or enterprise? Email is the fastest way to reach me.
           </p>
       </div>
       <div class="contact-links reveal">
@@ -1711,7 +1929,7 @@
 
 <footer>
   <div class="footer-inner">
-    <span class="footer-sign-off">AI product strategy · UX leadership · regulated systems</span>
+    <span class="footer-sign-off">AI implementation · product strategy · regulated workflow UX</span>
     <span class="copyright">&copy; 2026 Wally Mostafa · Raleigh, NC</span>
   </div>
 </footer>
