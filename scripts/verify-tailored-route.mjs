@@ -24,6 +24,16 @@ function git(args) {
   return execFileSync('git', args, { encoding: 'utf8' }).trim();
 }
 
+function runPublicCopyAudit() {
+  try {
+    execFileSync(process.execPath, ['scripts/audit-public-copy.mjs'], {
+      stdio: 'inherit',
+    });
+  } catch {
+    fail('Visible public-copy audit failed');
+  }
+}
+
 function normalizeRouteSlug(slug) {
   return slug.replace(/^\/+|\/+$/g, '');
 }
@@ -80,6 +90,8 @@ if (!routeHtml.includes(`href="../${resumeHtmlPath}"`)) {
 if (!routeHtml.includes(`href="../${resumePdfPath}"`)) {
   fail(`Route Download Resume link does not point to ../${resumePdfPath}`);
 }
+
+runPublicCopyAudit();
 
 const status = git(['status', '--short', '--', ...scopedPaths]);
 if (status) {
