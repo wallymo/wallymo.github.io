@@ -1895,7 +1895,7 @@
   })();
 </script>
 
-<!-- HERO: Gradient Morph — Canvas2D -->
+<!-- HERO: Program Flow — Canvas2D -->
 <script>
 (function() {
   var canvas = document.getElementById('hero-canvas');
@@ -1903,11 +1903,18 @@
   var ctx = canvas.getContext('2d');
   if (!ctx) return;
 
-  var W, H, startTime = Date.now();
+  var W, H, dpr, startTime = Date.now();
+  var reducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   function resize() {
-    W = canvas.width = window.innerWidth;
-    H = canvas.height = window.innerHeight;
+    W = window.innerWidth;
+    H = window.innerHeight;
+    dpr = Math.min(window.devicePixelRatio || 1, 2);
+    canvas.width = Math.floor(W * dpr);
+    canvas.height = Math.floor(H * dpr);
+    canvas.style.width = W + 'px';
+    canvas.style.height = H + 'px';
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
   }
   window.addEventListener('resize', resize);
   resize();
@@ -1915,42 +1922,111 @@
   var paused = false;
   document.addEventListener('visibilitychange', function() { paused = document.hidden; });
 
-  var blobs = [
-    { x: -0.05, y: 0.1,  r: 0.6,  sx: 0.12, sy: 0.08, drift: 0.3, color: [196, 90, 45] },
-    { x: 1.05,  y: 0.2,  r: 0.55, sx: 0.09, sy: 0.13, drift: 0.28, color: [92, 85, 80] },
-    { x: 0.5,   y: 0.45, r: 0.55, sx: 0.1,  sy: 0.1,  drift: 0.25, color: [212, 204, 194] },
-    { x: 0.1,   y: 0.85, r: 0.55, sx: 0.13, sy: 0.1,  drift: 0.32, color: [196, 90, 45] },
-    { x: 0.95,  y: 0.7,  r: 0.5,  sx: 0.1,  sy: 0.14, drift: 0.28, color: [168, 144, 128] },
-    { x: 0.35,  y: -0.05,r: 0.5,  sx: 0.14, sy: 0.07, drift: 0.26, color: [230, 223, 213] },
-    { x: 0.7,   y: 0.5,  r: 0.45, sx: 0.11, sy: 0.09, drift: 0.3,  color: [196, 90, 45] },
+  var lanes = [
+    { y: 0.18, speed: 0.050, phase: 0.00, accent: true },
+    { y: 0.28, speed: 0.035, phase: 0.28, accent: false },
+    { y: 0.40, speed: 0.042, phase: 0.56, accent: true },
+    { y: 0.54, speed: 0.030, phase: 0.76, accent: false },
+    { y: 0.68, speed: 0.046, phase: 0.18, accent: true }
   ];
 
+  function lerp(a, b, p) {
+    return a + (b - a) * p;
+  }
+
+  function laneBounds() {
+    if (W < 700) {
+      return { left: 28, right: W - 28, topOffset: 0.42, alpha: 0.45 };
+    }
+    return { left: W * 0.50, right: W - 86, topOffset: 0, alpha: 0.78 };
+  }
+
+  function drawPath(points, color, alpha, width) {
+    ctx.beginPath();
+    ctx.moveTo(points[0].x, points[0].y);
+    for (var i = 1; i < points.length; i++) {
+      ctx.lineTo(points[i].x, points[i].y);
+    }
+    ctx.strokeStyle = 'rgba(' + color.join(',') + ',' + alpha + ')';
+    ctx.lineWidth = width;
+    ctx.stroke();
+  }
+
+  function pointOnLane(bounds, lane, t, offset) {
+    var progress = (t * lane.speed + lane.phase + offset) % 1;
+    return {
+      x: lerp(bounds.left, bounds.right, progress),
+      y: H * (lane.y + bounds.topOffset) + Math.sin(t * 0.35 + offset * 5) * 3
+    };
+  }
+
   function draw() {
-    requestAnimationFrame(draw);
+    if (!reducedMotion) requestAnimationFrame(draw);
     if (paused) return;
 
     var t = (Date.now() - startTime) / 1000;
     ctx.clearRect(0, 0, W, H);
+    ctx.lineCap = 'round';
+    ctx.lineJoin = 'round';
 
-    for (var i = 0; i < blobs.length; i++) {
-      var b = blobs[i];
-      var d = b.drift;
-      var cx = (b.x + Math.sin(t * b.sx + i * 2.1) * d + Math.cos(t * b.sx * 0.7 + i) * d * 0.5) * W;
-      var cy = (b.y + Math.cos(t * b.sy + i * 1.7) * d + Math.sin(t * b.sy * 0.6 + i * 3.1) * d * 0.4) * H;
-      var radius = b.r * Math.min(W, H) * (1 + Math.sin(t * 0.04 + i) * 0.12);
+    var bounds = laneBounds();
+    var ink = [92, 85, 80];
+    var accent = [196, 90, 45];
+    var rule = [212, 204, 194];
 
-      var grad = ctx.createRadialGradient(cx, cy, 0, cx, cy, radius);
-      var c = b.color;
-      grad.addColorStop(0, 'rgba(' + c[0] + ',' + c[1] + ',' + c[2] + ', 0.28)');
-      grad.addColorStop(0.35, 'rgba(' + c[0] + ',' + c[1] + ',' + c[2] + ', 0.12)');
-      grad.addColorStop(1, 'rgba(' + c[0] + ',' + c[1] + ',' + c[2] + ', 0)');
+    ctx.save();
+    ctx.globalCompositeOperation = 'multiply';
 
-      ctx.fillStyle = grad;
-      ctx.fillRect(0, 0, W, H);
+    for (var i = 0; i < lanes.length; i++) {
+      var lane = lanes[i];
+      var y = H * (lane.y + bounds.topOffset) + Math.sin(t * 0.18 + i) * 3;
+      var color = lane.accent ? accent : ink;
+      var railAlpha = (lane.accent ? 0.14 : 0.09) * bounds.alpha;
+      var x1 = bounds.left;
+      var x2 = bounds.right;
+
+      ctx.setLineDash([18, 18]);
+      drawPath([
+        { x: x1, y: y },
+        { x: lerp(x1, x2, 0.42), y: y },
+        { x: lerp(x1, x2, 0.52), y: y + (i % 2 === 0 ? 20 : -18) },
+        { x: x2, y: y + (i % 2 === 0 ? 20 : -18) }
+      ], color, railAlpha, 1.25);
+      ctx.setLineDash([]);
+
+      for (var pulse = 0; pulse < 3; pulse++) {
+        var p = pointOnLane(bounds, lane, reducedMotion ? 0 : t, pulse * 0.33);
+        var size = lane.accent ? 7 : 5;
+        ctx.fillStyle = 'rgba(' + color.join(',') + ',' + ((lane.accent ? 0.42 : 0.28) * bounds.alpha) + ')';
+        ctx.fillRect(p.x - size / 2, p.y - size / 2, size, size);
+        ctx.fillStyle = 'rgba(248,245,240,' + (0.65 * bounds.alpha) + ')';
+        ctx.fillRect(p.x - size / 2 + 1.5, p.y - size / 2 + 1.5, Math.max(1, size - 3), Math.max(1, size - 3));
+      }
     }
+
+    ctx.setLineDash([]);
+    for (var c = 0; c < 4; c++) {
+      var cx = lerp(bounds.left, bounds.right, (c + 1) / 5);
+      var top = H * (lanes[0].y + bounds.topOffset) - 14;
+      var bottom = H * (lanes[lanes.length - 1].y + bounds.topOffset) + 34;
+      drawPath([{ x: cx, y: top }, { x: cx, y: bottom }], rule, 0.10 * bounds.alpha, 1);
+    }
+
+    for (var d = 0; d < 3; d++) {
+      var from = pointOnLane(bounds, lanes[d], t, 0.18);
+      var to = pointOnLane(bounds, lanes[d + 2], t, 0.72);
+      ctx.beginPath();
+      ctx.moveTo(from.x, from.y);
+      ctx.bezierCurveTo(from.x + 38, from.y + 18, to.x - 38, to.y - 18, to.x, to.y);
+      ctx.strokeStyle = 'rgba(196,90,45,' + (0.13 * bounds.alpha) + ')';
+      ctx.lineWidth = 1.1;
+      ctx.stroke();
+    }
+
+    ctx.restore();
   }
 
-  setTimeout(function() { canvas.classList.add('loaded'); }, 600);
+  setTimeout(function() { canvas.classList.add('loaded'); }, 180);
   draw();
 
   // Dim canvas when dark #work section is in view
@@ -1958,7 +2034,7 @@
   if (workSection && 'IntersectionObserver' in window) {
     var dimObserver = new IntersectionObserver(function(entries) {
       entries.forEach(function(entry) {
-        canvas.style.opacity = entry.isIntersecting ? '0.4' : '';
+        canvas.style.opacity = entry.isIntersecting ? '0.28' : '';
       });
     }, { threshold: 0.15 });
     dimObserver.observe(workSection);
