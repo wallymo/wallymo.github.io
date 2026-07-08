@@ -150,20 +150,6 @@
 
   nav .nav-cta:hover { background: var(--accent); color: var(--surface) !important; }
 
-  /* ── HERO CANVAS ── */
-  .hero-canvas {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-    pointer-events: none;
-    opacity: 0;
-    transition: opacity 1.2s ease;
-  }
-  .hero-canvas.loaded { opacity: 1; }
-
   /* ── HERO ── */
   .hero {
     min-height: 90vh;
@@ -1386,8 +1372,6 @@
 </head>
 <body>
 
-<canvas class="hero-canvas" id="hero-canvas" aria-hidden="true"></canvas>
-
 <nav id="nav">
   <a href="index.html" class="name">Wally Mostafa</a>
   <button class="mobile-menu-btn" aria-label="Menu" onclick="document.getElementById('nav').classList.toggle('menu-open'); document.body.style.overflow = document.getElementById('nav').classList.contains('menu-open') ? 'hidden' : ''">
@@ -1893,153 +1877,6 @@
       });
     }, 2500);
   })();
-</script>
-
-<!-- HERO: Program Flow — Canvas2D -->
-<script>
-(function() {
-  var canvas = document.getElementById('hero-canvas');
-  if (!canvas) return;
-  var ctx = canvas.getContext('2d');
-  if (!ctx) return;
-
-  var W, H, dpr, startTime = Date.now();
-  var reducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-  function resize() {
-    W = window.innerWidth;
-    H = window.innerHeight;
-    dpr = Math.min(window.devicePixelRatio || 1, 2);
-    canvas.width = Math.floor(W * dpr);
-    canvas.height = Math.floor(H * dpr);
-    canvas.style.width = W + 'px';
-    canvas.style.height = H + 'px';
-    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-  }
-  window.addEventListener('resize', resize);
-  resize();
-
-  var paused = false;
-  document.addEventListener('visibilitychange', function() { paused = document.hidden; });
-
-  var lanes = [
-    { y: 0.18, speed: 0.050, phase: 0.00, accent: true },
-    { y: 0.28, speed: 0.035, phase: 0.28, accent: false },
-    { y: 0.40, speed: 0.042, phase: 0.56, accent: true },
-    { y: 0.54, speed: 0.030, phase: 0.76, accent: false },
-    { y: 0.68, speed: 0.046, phase: 0.18, accent: true }
-  ];
-
-  function lerp(a, b, p) {
-    return a + (b - a) * p;
-  }
-
-  function laneBounds() {
-    if (W < 700) {
-      return { left: 28, right: W - 28, topOffset: 0.42, alpha: 0.45 };
-    }
-    return { left: W * 0.50, right: W - 86, topOffset: 0, alpha: 0.78 };
-  }
-
-  function drawPath(points, color, alpha, width) {
-    ctx.beginPath();
-    ctx.moveTo(points[0].x, points[0].y);
-    for (var i = 1; i < points.length; i++) {
-      ctx.lineTo(points[i].x, points[i].y);
-    }
-    ctx.strokeStyle = 'rgba(' + color.join(',') + ',' + alpha + ')';
-    ctx.lineWidth = width;
-    ctx.stroke();
-  }
-
-  function pointOnLane(bounds, lane, t, offset) {
-    var progress = (t * lane.speed + lane.phase + offset) % 1;
-    return {
-      x: lerp(bounds.left, bounds.right, progress),
-      y: H * (lane.y + bounds.topOffset) + Math.sin(t * 0.35 + offset * 5) * 3
-    };
-  }
-
-  function draw() {
-    if (!reducedMotion) requestAnimationFrame(draw);
-    if (paused) return;
-
-    var t = (Date.now() - startTime) / 1000;
-    ctx.clearRect(0, 0, W, H);
-    ctx.lineCap = 'round';
-    ctx.lineJoin = 'round';
-
-    var bounds = laneBounds();
-    var ink = [92, 85, 80];
-    var accent = [196, 90, 45];
-    var rule = [212, 204, 194];
-
-    ctx.save();
-    ctx.globalCompositeOperation = 'multiply';
-
-    for (var i = 0; i < lanes.length; i++) {
-      var lane = lanes[i];
-      var y = H * (lane.y + bounds.topOffset) + Math.sin(t * 0.18 + i) * 3;
-      var color = lane.accent ? accent : ink;
-      var railAlpha = (lane.accent ? 0.14 : 0.09) * bounds.alpha;
-      var x1 = bounds.left;
-      var x2 = bounds.right;
-
-      ctx.setLineDash([18, 18]);
-      drawPath([
-        { x: x1, y: y },
-        { x: lerp(x1, x2, 0.42), y: y },
-        { x: lerp(x1, x2, 0.52), y: y + (i % 2 === 0 ? 20 : -18) },
-        { x: x2, y: y + (i % 2 === 0 ? 20 : -18) }
-      ], color, railAlpha, 1.25);
-      ctx.setLineDash([]);
-
-      for (var pulse = 0; pulse < 3; pulse++) {
-        var p = pointOnLane(bounds, lane, reducedMotion ? 0 : t, pulse * 0.33);
-        var size = lane.accent ? 7 : 5;
-        ctx.fillStyle = 'rgba(' + color.join(',') + ',' + ((lane.accent ? 0.42 : 0.28) * bounds.alpha) + ')';
-        ctx.fillRect(p.x - size / 2, p.y - size / 2, size, size);
-        ctx.fillStyle = 'rgba(248,245,240,' + (0.65 * bounds.alpha) + ')';
-        ctx.fillRect(p.x - size / 2 + 1.5, p.y - size / 2 + 1.5, Math.max(1, size - 3), Math.max(1, size - 3));
-      }
-    }
-
-    ctx.setLineDash([]);
-    for (var c = 0; c < 4; c++) {
-      var cx = lerp(bounds.left, bounds.right, (c + 1) / 5);
-      var top = H * (lanes[0].y + bounds.topOffset) - 14;
-      var bottom = H * (lanes[lanes.length - 1].y + bounds.topOffset) + 34;
-      drawPath([{ x: cx, y: top }, { x: cx, y: bottom }], rule, 0.10 * bounds.alpha, 1);
-    }
-
-    for (var d = 0; d < 3; d++) {
-      var from = pointOnLane(bounds, lanes[d], t, 0.18);
-      var to = pointOnLane(bounds, lanes[d + 2], t, 0.72);
-      ctx.beginPath();
-      ctx.moveTo(from.x, from.y);
-      ctx.bezierCurveTo(from.x + 38, from.y + 18, to.x - 38, to.y - 18, to.x, to.y);
-      ctx.strokeStyle = 'rgba(196,90,45,' + (0.13 * bounds.alpha) + ')';
-      ctx.lineWidth = 1.1;
-      ctx.stroke();
-    }
-
-    ctx.restore();
-  }
-
-  setTimeout(function() { canvas.classList.add('loaded'); }, 180);
-  draw();
-
-  // Dim canvas when dark #work section is in view
-  var workSection = document.getElementById('work');
-  if (workSection && 'IntersectionObserver' in window) {
-    var dimObserver = new IntersectionObserver(function(entries) {
-      entries.forEach(function(entry) {
-        canvas.style.opacity = entry.isIntersecting ? '0.28' : '';
-      });
-    }, { threshold: 0.15 });
-    dimObserver.observe(workSection);
-  }
-})();
 </script>
 
 </body>
