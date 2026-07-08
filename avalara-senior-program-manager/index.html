@@ -171,9 +171,6 @@
     letter-spacing: 0.15em;
     color: var(--accent-text);
     margin-bottom: var(--space-m);
-    opacity: 0;
-    transform: translateY(16px);
-    animation: fadeUp 0.8s 0.2s ease-out forwards;
   }
 
   .hero h1 {
@@ -184,9 +181,6 @@
     letter-spacing: -0.04em;
     color: var(--ink);
     max-width: 12ch;
-    opacity: 0;
-    transform: translateY(24px);
-    animation: fadeUp 0.8s 0.4s ease-out forwards;
   }
 
   .hero-tagline {
@@ -194,9 +188,6 @@
     display: flex;
     gap: var(--space-l);
     flex-wrap: wrap;
-    opacity: 0;
-    transform: translateY(16px);
-    animation: fadeUp 0.8s 0.7s ease-out forwards;
   }
 
   .hero-tagline span {
@@ -225,9 +216,6 @@
     color: var(--ink-soft);
     max-width: 52ch;
     line-height: 1.75;
-    opacity: 0;
-    transform: translateY(16px);
-    animation: fadeUp 0.8s 0.9s ease-out forwards;
   }
 
   .hero-cta {
@@ -236,9 +224,6 @@
     gap: var(--space-m);
     align-items: center;
     flex-wrap: wrap;
-    opacity: 0;
-    transform: translateY(16px);
-    animation: fadeUp 0.8s 1.1s ease-out forwards;
   }
 
   .btn-primary {
@@ -1122,11 +1107,6 @@
     opacity: 0.6;
   }
 
-  /* ── ANIMATIONS ── */
-  @keyframes fadeUp {
-    to { opacity: 1; transform: translateY(0); }
-  }
-
   /* Reveal animations — progressive enhancement only.
      Elements are visible by default. JS adds .reveal-pending to hide them,
      then IntersectionObserver adds .visible to animate them in.
@@ -1345,15 +1325,6 @@
       animation-duration: 0.01ms !important;
       transition-duration: 0.01ms !important;
     }
-  }
-
-  /* Keep the role-specific proof visible even if entrance animations are skipped. */
-  .hero-tagline,
-  .hero-intro,
-  .hero-cta {
-    opacity: 1;
-    transform: none;
-    animation: none;
   }
 
   @media (max-width: 640px) {
