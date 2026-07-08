@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wally Mostafa — Mi-Case AI Integration Engineer Resume</title>
+<meta name="description" content="Wally Mostafa — tailored resume for Mi-Case AI Integration Engineer / Specialist, focused on AI agent enablement, regulated workflow tooling, documentation systems, and product delivery.">
+<meta property="og:title" content="Wally Mostafa — Mi-Case AI Integration Engineer Resume">
+<meta property="og:description" content="AI agent workflows, regulated AI delivery, repo context, documentation systems, and cross-functional enablement.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://wallymo.github.io/mi-case-ai-integration-engineer/">
+<link rel="icon" href="../../favicon.ico?v=2" sizes="any">
+<link rel="apple-touch-icon" href="../../apple-touch-icon.png?v=2">
+<link rel="manifest" href="../../site.webmanifest?v=2">
+<meta name="theme-color" content="#1d1d1d">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --ink: #1a1714;
+    --ink-soft: #38332d;
+    --ink-muted: #5c5550;
+    --surface: #f8f5f0;
+    --surface-warm: #f0ebe3;
+    --surface-deep: #e6dfd5;
+    --accent: #c45a2d;
+    --accent-hover: #a84820;
+    --rule: #d4ccc2;
+    --rule-light: #e4ddd4;
+
+    --font-display: 'Syne', sans-serif;
+    --font-body: 'Instrument Sans', sans-serif;
+
+    --space-xs: 0.25rem;
+    --space-s: 0.5rem;
+    --space-m: 0.75rem;
+    --space-l: 1.25rem;
+    --space-xl: 2rem;
+    --space-2xl: 3rem;
+
+    --max-w: 720px;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    font-family: var(--font-body);
+    font-size: 10pt;
+    line-height: 1.5;
+    color: var(--ink);
+    background: var(--surface);
+    padding: var(--space-xl);
+    padding-top: calc(var(--space-xl) + 50px);
+  }
+
+  /* Action buttons */
+  .action-bar {
+    position: fixed;
+    top: var(--space-m);
+    right: var(--space-m);
+    z-index: 100;
+    display: flex;
+    gap: var(--space-s);
+  }
+
+  .action-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--surface);
+    background: var(--ink);
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.15s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+
+  .action-btn:hover {
+    background: var(--accent);
+    transform: translateY(-1px);
+  }
+
+  .action-btn svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .action-btn.secondary {
+    background: var(--surface-warm);
+    color: var(--ink);
+    border: 1px solid var(--rule);
+  }
+
+  .action-btn.secondary:hover {
+    background: var(--surface-deep);
+    border-color: var(--accent);
+  }
+
+  /* Back to homepage — text link, top left */
+  .back-btn {
+    position: fixed;
+    top: var(--space-m);
+    left: var(--space-l);
+    z-index: 100;
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    font-family: var(--font-body);
+    font-size: 0.82rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--ink-muted);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .back-btn svg {
+    width: 15px;
+    height: 15px;
+    transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+
+  .back-btn:hover {
+    color: var(--accent);
+  }
+
+  .back-btn:hover svg {
+    transform: translateX(-3px);
+  }
+
+  @media print {
+    .action-bar,
+    .back-btn {
+      display: none;
+    }
+    body {
+      padding-top: var(--space-xl);
+    }
+  }
+
+  .resume {
+    max-width: var(--max-w);
+    margin: 0 auto;
+  }
+
+  /* Header */
+  header {
+    text-align: center;
+    padding-bottom: var(--space-m);
+    border-bottom: 2px solid var(--ink);
+    margin-bottom: var(--space-l);
+  }
+
+  header h1 {
+    font-family: var(--font-display);
+    font-size: 1.9rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    color: var(--ink);
+    margin-bottom: var(--space-xs);
+    text-transform: uppercase;
+  }
+
+  .contact {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: var(--space-s);
+    font-size: 9.5pt;
+    color: var(--ink-muted);
+  }
+
+  .contact a {
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid var(--rule);
+    transition: color 0.2s, border-color 0.2s;
+  }
+
+  .contact a:hover {
+    color: var(--accent-hover);
+    border-color: var(--accent);
+  }
+
+  .contact-sep {
+    color: var(--ink-muted);
+  }
+
+  /* Sections */
+  section {
+    margin-bottom: var(--space-l);
+  }
+
+  section:last-child {
+    margin-bottom: 0;
+  }
+
+  .section-title {
+    font-family: var(--font-display);
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--ink);
+    padding-bottom: 4px;
+    border-bottom: 1px solid var(--rule);
+    margin-bottom: var(--space-m);
+  }
+
+  /* Summary */
+  .summary {
+    font-size: 9.5pt;
+    color: var(--ink-soft);
+    line-height: 1.55;
+  }
+
+  /* Capabilities */
+  .capabilities-list {
+    list-style: none;
+  }
+
+  .capabilities-list li {
+    margin-bottom: var(--space-xs);
+    font-size: 9.5pt;
+    line-height: 1.5;
+  }
+
+  .cap-label {
+    font-weight: 700;
+    color: var(--ink);
+  }
+
+  .cap-desc {
+    color: var(--ink-soft);
+  }
+
+  /* Experience */
+  .job {
+    margin-bottom: var(--space-l);
+  }
+
+  .job:last-child {
+    margin-bottom: 0;
+  }
+
+  .job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: var(--space-xs);
+    margin-bottom: 2px;
+  }
+
+  .job-title {
+    font-family: var(--font-display);
+    font-size: 10.5pt;
+    font-weight: 700;
+    color: var(--ink);
+  }
+
+  .job-meta {
+    font-size: 9pt;
+    font-style: italic;
+    color: var(--ink-muted);
+  }
+
+  .job-desc {
+    list-style: disc;
+    padding-left: var(--space-l);
+  }
+
+  .job-desc li {
+    margin-bottom: var(--space-xs);
+    font-size: 9.5pt;
+    color: var(--ink-soft);
+    line-height: 1.5;
+  }
+
+  /* Awards */
+  .awards-list {
+    list-style: none;
+  }
+
+  .awards-list li {
+    margin-bottom: var(--space-xs);
+    font-size: 9.5pt;
+  }
+
+  .awards-list a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 600;
+    border-bottom: 1px solid var(--rule);
+    transition: color 0.2s, border-color 0.2s;
+  }
+
+  .awards-list a:hover {
+    color: var(--accent-hover);
+    border-color: var(--accent);
+  }
+
+  .award-detail {
+    color: var(--ink-soft);
+    font-weight: 400;
+  }
+
+  /* Education */
+  .edu {
+    font-size: 9.5pt;
+    color: var(--ink-soft);
+  }
+
+  /* Print styles */
+  @media print {
+    body {
+      padding: 0;
+      background: white;
+    }
+
+    .resume {
+      max-width: none;
+    }
+
+    .job {
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+
+    section {
+      margin-bottom: 1rem;
+    }
+
+    .job {
+      margin-bottom: 1rem;
+    }
+
+    .summary,
+    .capabilities-list li,
+    .job-desc li,
+    .awards-list li,
+    .edu {
+      line-height: 1.38;
+    }
+
+    .job-desc li {
+      margin-bottom: 0.2rem;
+    }
+
+    .contact a,
+    .awards-list a {
+      border-bottom: none;
+      color: var(--ink);
+    }
+
+    .awards-list a {
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 2px;
+    }
+
+    .contact a.print-link {
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 2px;
+    }
+
+  }
+
+  /* Screen styles */
+  @media screen {
+    body {
+      padding: var(--space-2xl) var(--space-xl);
+    }
+  }
+</style>
+</head>
+<body>
+
+<a class="back-btn" href="../../mi-case-ai-integration-engineer/" aria-label="Back to role-specific portfolio">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+  Back
+</a>
+
+<div class="action-bar">
+  <button class="action-btn secondary" onclick="shareResume()">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg>
+    Share
+  </button>
+  <a class="action-btn" href="Wally-Mostafa-Mi-Case-AI-Integration-Engineer-Resume.pdf" download>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+    Download PDF
+  </a>
+</div>
+
+<div class="resume">
+
+<header>
+  <h1>WALLY MOSTAFA</h1>
+  <div class="contact">
+    <a href="mailto:wmostafa12@gmail.com">wmostafa12@gmail.com</a>
+    <span class="contact-sep">·</span>
+    <span>347.420.3558</span>
+    <span class="contact-sep">·</span>
+    <span>Raleigh Metro, NC</span>
+    <span class="contact-sep">·</span>
+    <a class="print-link" href="https://linkedin.com/in/wallymo" target="_blank" rel="noopener">LinkedIn</a>
+    <span class="contact-sep">·</span>
+    <a class="print-link" href="https://wallymo.github.io/mi-case-ai-integration-engineer/" target="_blank" rel="noopener">Portfolio</a>
+  </div>
+</header>
+
+<section>
+  <div class="section-title">Summary</div>
+  <p class="summary">
+    AI implementation and product strategy lead with 15 years across regulated healthcare, enterprise UX, client strategy, and hands-on AI workflow delivery. I turn ambiguous operational problems into governed AI tools, agent-assisted build loops, documentation systems, and reviewable product surfaces. My strongest Mi-Case fit is helping teams make AI agents safe, useful, and repeatable across real delivery workflows with clear review gates and grounded implementation scope.
+  </p>
+</section>
+
+<section>
+  <div class="section-title">Capabilities</div>
+  <ul class="capabilities-list">
+    <li>
+      <span class="cap-label">AI Agent Workflow Enablement</span>
+      <span class="cap-desc"> — Claude/Codex/Gemini-assisted build loops, structured context, repo guidance, prompt-defined criteria, review surfaces, and reusable workflow patterns</span>
+    </li>
+    <li>
+      <span class="cap-label">Regulated AI Implementation</span>
+      <span class="cap-desc"> — LLM/VLM workflows, RAG/knowledge bases, MLR review logic, FDA/HIPAA context, evidence gaps, audit-ready annotations, and human oversight</span>
+    </li>
+    <li>
+      <span class="cap-label">Product Tooling &amp; Delivery Systems</span>
+      <span class="cap-desc"> — Discovery, requirements, prototype validation, front-end build, backend logic, API integrations, production handoff, and stakeholder iteration</span>
+    </li>
+    <li>
+      <span class="cap-label">Documentation, Adoption &amp; Governance</span>
+      <span class="cap-desc"> — Technical writing, research ops, Figma documentation, roadshows, training surfaces, accessibility (WCAG), metrics, and cross-functional enablement</span>
+    </li>
+  </ul>
+</section>
+
+<section>
+  <div class="section-title">Experience</div>
+
+  <div class="job">
+    <div class="job-header">
+      <span class="job-title">AI Implementation Partner</span>
+      <span class="job-meta">Hedgehox · Remote · Mar 2024 – Present</span>
+    </div>
+    <ul class="job-desc">
+      <li>Design and build regulated AI workflow tools for pharma agency teams across claim review, brief intake, scoping, routing, submission capture, and FDA signal monitoring</li>
+      <li>Secured an investor for proprietary Claims Detection software by building the functional POC, shaping the demo story, and turning a regulated review problem into a credible product narrative</li>
+      <li>Designed Claims Detector workflows that identify promotional claims, surface evidence gaps, and pre-populate audit-ready annotations before MLR submission</li>
+      <li>Built Scope Generator for pharma agency finance and operations teams to manage regional rate cards, brands, deliverables, natural-language scope changes, and spreadsheet export</li>
+      <li>Shaped BriefFlow, Route Validator, Echo, and FDA Warning Tool concepts to connect intake, production, review, capture, and regulatory intelligence into a practical AI operating layer</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-header">
+      <span class="job-title">Founder &amp; AI Product Strategist</span>
+      <span class="job-meta">One Block Away LLC · Remote · Jul 2023 – Present</span>
+    </div>
+    <ul class="job-desc">
+      <li>Build client-led AI POCs that turn unclear business questions into testable product surfaces, demo flows, adoption risks, success measures, and roadmap decisions</li>
+      <li>Use AI-assisted development loops with Claude, Codex, Gemini, and local models to move from problem framing into working prototypes, then inspect and revise behavior with real use cases</li>
+      <li>Own product strategy, UX, AI workflow design, front-end build, backend logic, demo readiness, and client iteration from first ask through working prototype</li>
+      <li>Built ListingPal's AI listing-generation POC, turning property inputs into listing copy, social posts, ad copy, styling direction, and MLS/SEO-ready language in under 90 seconds</li>
+      <li>Built WeReady's Bailey Intelligence dashboard, translating founder inputs, GitHub signals, source health, risk scoring, and evidence trails into startup-readiness workflows</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-header">
+      <span class="job-title">Director, Experience &amp; Innovation</span>
+      <span class="job-meta">Kinesso (IPG) · New York, NY · Feb 2020 – Jun 2023</span>
+    </div>
+    <ul class="job-desc">
+      <li>Scaled product design from 2 to 30 people across the US and Poland for enterprise analytics used by 7,000+ users across 22 white-label brands</li>
+      <li>Led UX and design-system strategy for data visualization, dashboard building, brand theming, reusable analytics components, and enterprise workflow tooling</li>
+      <li>Built the UX research discipline across a 20+ product marketing intelligence suite using stakeholder roadshows, repeatable tools, Figma documentation, and feedback loops</li>
+      <li>Partnered with product and engineering teams to translate research, system patterns, and workflow recommendations into build-ready product direction</li>
+      <li>Design-system and analytics work earned 5 Indigo Gold, 4 Indigo Silver, and Red Dot recognition</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-header">
+      <span class="job-title">Freelance UX Designer</span>
+      <span class="job-meta">Omnicom · New York, NY · Dec 2019 – Jan 2020</span>
+    </div>
+    <ul class="job-desc">
+      <li>Supported oncology accounts as a freelance UX designer, combining UX design and account-management experience to strengthen regulated healthcare work</li>
+      <li>Championed UX best practices across account, strategy, creative, and delivery conversations, translating brand goals into clearer user flows, content structure, and digital recommendations</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-header">
+      <span class="job-title">Sr. UX Designer</span>
+      <span class="job-meta">Heartbeat Ideas · New York, NY · Aug 2018 – Nov 2019</span>
+    </div>
+    <ul class="job-desc">
+      <li>Led UX research and experience strategy for pharma and healthcare work, translating stakeholder input, competitive audits, and user needs into digital product direction</li>
+      <li>Created journey maps, site maps, user flows, wireframes, and prototypes for patient, HCP, and internal brand-team experiences across regulated healthcare programs</li>
+      <li>Partnered with strategy, creative, account, and engineering teams to move UX recommendations from research findings into build-ready product and campaign experiences</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-header">
+      <span class="job-title">Account Management &amp; Client Strategy</span>
+      <span class="job-meta">RosettaWishbone, FCB Health, Barker DZP, Cline Davis &amp; Mann, Scout Marketing · Feb 2011 – Jul 2018</span>
+    </div>
+    <ul class="job-desc">
+      <li>7+ years managing Fortune 500 pharma and healthcare clients with $2M-$50M+ budgets across CNS/neurology, psychiatry, cardiovascular/metabolic, and sleep/wakefulness brands</li>
+      <li>One of two account consumer leads on FCB Health's largest pharma account across TV, radio, digital, gaming, Times Square, unbranded campaigns, brand planning, and MLR review</li>
+      <li>Translated client and brand strategy into briefs, creative feedback, production requirements, timelines, and MLR-ready deliverables across account, creative, UX, and development teams</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="section-title">Awards</div>
+  <ul class="awards-list">
+    <li>
+      <a href="https://www.indigoaward.com/winners/6748" target="_blank" rel="noopener">Indigo Awards 2023</a>
+      <span class="award-detail"> — Design System &amp; Data Visualization: 3× Gold, 2× Silver</span>
+    </li>
+    <li>
+      <a href="https://www.indigoaward.com/winners/4629" target="_blank" rel="noopener">Indigo Awards 2022</a>
+      <span class="award-detail"> — Digital Audit Experience: 2× Gold, 2× Silver</span>
+    </li>
+    <li>
+      <a href="https://www.red-dot.org/project/dxa-digital-experience-audit-55219" target="_blank" rel="noopener">Red Dot Awards 2021</a>
+      <span class="award-detail"> — Brands &amp; Communication Design</span>
+    </li>
+    <li>
+      <span style="font-weight: 600;">Manny Award 2013</span>
+      <span class="award-detail"> — Best Non-Branded Campaign, "Get Your Shift Together"</span>
+    </li>
+    <li>
+      <span style="font-weight: 600;">Pharma Choice Award 2011</span>
+      <span class="award-detail"> — Bronze, Professional Mobile Site</span>
+    </li>
+  </ul>
+</section>
+
+<section>
+  <div class="section-title">Education</div>
+  <p class="edu">BA Labor Studies &amp; Employee Relations — Rutgers University, 2010</p>
+</section>
+</div>
+
+<script>
+async function shareResume() {
+  const shareData = {
+    title: 'Wally Mostafa — Mi-Case AI Integration Engineer Resume',
+    text: 'AI agent workflows, regulated AI delivery, documentation systems, and cross-functional enablement.',
+    url: window.location.href
+  };
+
+  if (navigator.share) {
+    try {
+      await navigator.share(shareData);
+    } catch (err) {
+      // User cancelled or share failed
+    }
+  } else {
+    // Fallback: copy URL to clipboard
+    navigator.clipboard.writeText(window.location.href).then(() => {
+      const btn = document.querySelector('.action-btn.secondary');
+      const originalText = btn.innerHTML;
+      btn.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Link copied!';
+      setTimeout(() => {
+        btn.innerHTML = originalText;
+      }, 2000);
+    });
+  }
+}
+</script>
+
+</body>
+</html>
