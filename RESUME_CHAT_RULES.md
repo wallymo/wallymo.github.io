@@ -22,6 +22,7 @@ No standalone paste/upload UI. Do this in chat from the job description the user
 - Keep it recruiter-facing: concise, concrete, chronological, ATS-readable.
 - Do not output fit scores, match rates, leverage/missing analysis, proof-link lists, or cover letters unless explicitly requested.
 - Default to a matched resume + role route workflow: when the user says "tailor this resume" for a role, create the tailored resume artifacts and a hidden role-specific portfolio route.
+- Write every tailored-route hero intro in first person. It may directly explain why I fit the role, but never use third-person candidate-summary copy (`Wally`, `he`, `him`, or `his`).
 - Preserve the resume hierarchy: Summary, Capabilities, Experience, Awards, Education.
 - Keep the portfolio link in the contact line. If a role-specific portfolio route exists, link the tailored resume to that route.
 

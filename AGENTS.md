@@ -10,6 +10,7 @@ This portfolio supplements a resume. Write for HR reps, recruiters, hiring manag
 - Lead with role fit, outcomes, scale, and proof.
 - Prefer short claims over manifesto-style explanation.
 - Keep personality, but remove anything that slows comprehension.
+- Write tailored-route hero intros in first person. They may directly explain why I fit the role, but never use third-person candidate-summary copy (`Wally`, `he`, `him`, or `his`).
 - Treat each section as a scan stop: what this proves, why it matters, and where to click next.
 
 ## First Run
