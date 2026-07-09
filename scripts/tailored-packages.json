@@ -1,0 +1,710 @@
+{
+  "schemaVersion": 1,
+  "generatedFrom": "current-filesystem",
+  "defaults": {
+    "newPackageRouteMode": "canonical-projects",
+    "newPackageFitGate": "strong-or-adjacent-only"
+  },
+  "fitClasses": [
+    "strong",
+    "adjacent",
+    "stretch",
+    "not-fit",
+    "unclassified"
+  ],
+  "routeModes": [
+    "canonical-projects",
+    "scoped-projects"
+  ],
+  "publishStatuses": [
+    "live-verified",
+    "tracked-unverified",
+    "local-only",
+    "uncommitted",
+    "blocked"
+  ],
+  "packages": [
+    {
+      "slug": "1mind-prompt-context-strategy",
+      "roleTitle": "1mind Prompt & Context Strategy",
+      "fitClass": "unclassified",
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-01.html",
+        "project-02.html",
+        "project-03.html"
+      ],
+      "resumeHtmlPath": "output/pdf/wally-mostafa-1mind-prompt-context-strategy-resume.html",
+      "resumePdfPath": "output/pdf/Wally-Mostafa-1mind-Prompt-Context-Strategy-Resume.pdf",
+      "publishStatus": "tracked-unverified"
+    },
+    {
+      "slug": "accenture-healthcare-ai-value-strategy",
+      "roleTitle": "Healthcare AI Value Strategy Consultant",
+      "fitClass": "unclassified",
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-01.html",
+        "project-02.html",
+        "project-03.html"
+      ],
+      "resumeHtmlPath": "output/pdf/wally-mostafa-accenture-healthcare-ai-value-strategy-resume.html",
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Accenture-Healthcare-AI-Value-Strategy-Resume.pdf",
+      "publishStatus": "tracked-unverified"
+    },
+    {
+      "slug": "ai-customer-success-ops-builder",
+      "roleTitle": "AI-Native Customer Success Operations Builder",
+      "fitClass": "unclassified",
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-01.html",
+        "project-02.html",
+        "project-03.html"
+      ],
+      "resumeHtmlPath": "output/pdf/wally-mostafa-ai-customer-success-ops-builder-resume.html",
+      "resumePdfPath": "output/pdf/Wally-Mostafa-AI-Customer-Success-Ops-Builder-Resume.pdf",
+      "publishStatus": "tracked-unverified"
+    },
+    {
+      "slug": "ai-literacy-chief-of-staff",
+      "roleTitle": "AI-Literate Strategic Operator",
+      "fitClass": "unclassified",
+      "routeMode": "scoped-projects",
+      "selectedProjects": [
+        "project-01.html",
+        "project-02.html",
+        "project-03.html"
+      ],
+      "resumeHtmlPath": "output/pdf/wally-mostafa-ai-literacy-chief-of-staff-resume.html",
+      "resumePdfPath": "output/pdf/Wally-Mostafa-AI-Literacy-Chief-of-Staff-Resume.pdf",
+      "publishStatus": "tracked-unverified"
+    },
+    {
+      "slug": "ai-transformation-owner-marketing",
+      "roleTitle": "AI Transformation Owner, Marketing",
+      "fitClass": "unclassified",
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-01.html",
+        "project-02.html",
+        "project-04.html",
+        "project-06.html"
+      ],
+      "resumeHtmlPath": "output/pdf/wally-mostafa-ai-transformation-owner-marketing-resume.html",
+      "resumePdfPath": "output/pdf/Wally-Mostafa-AI-Transformation-Owner-Marketing-Resume.pdf",
+      "publishStatus": "tracked-unverified"
+    },
+    {
+      "slug": "alignerr-digital-health-strategist",
+      "roleTitle": "Alignerr Digital Health Strategist",
+      "fitClass": "unclassified",
+      "routeMode": "scoped-projects",
+      "selectedProjects": [
+        "project-01.html",
+        "project-02.html",
+        "project-03.html"
+      ],
+      "resumeHtmlPath": "output/pdf/wally-mostafa-alignerr-digital-health-strategist-resume.html",
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Alignerr-Digital-Health-Strategist-Resume.pdf",
+      "publishStatus": "tracked-unverified"
+    },
+    {
+      "slug": "avalara-senior-program-manager",
+      "roleTitle": "Avalara Senior Program Manager",
+      "fitClass": "unclassified",
+      "routeMode": "scoped-projects",
+      "selectedProjects": [
+        "project-03.html",
+        "project-06.html",
+        "project-01.html",
+        "project-02.html"
+      ],
+      "resumeHtmlPath": "output/pdf/wally-mostafa-avalara-senior-program-manager-resume.html",
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Avalara-Senior-Program-Manager-Resume.pdf",
+      "publishStatus": "tracked-unverified"
+    },
+    {
+      "slug": "boulevard-medspa-new-frontiers",
+      "roleTitle": "Boulevard Product Marketing Manager",
+      "fitClass": "unclassified",
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-01.html",
+        "project-02.html",
+        "project-03.html"
+      ],
+      "resumeHtmlPath": "output/pdf/wally-mostafa-boulevard-medspa-new-frontiers-product-marketing-manager-resume.html",
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Boulevard-Medspa-New-Frontiers-Product-Marketing-Manager-Resume.pdf",
+      "publishStatus": "tracked-unverified"
+    },
+    {
+      "slug": "boulevard-product-marketing",
+      "roleTitle": "Boulevard Product Marketing Manager",
+      "fitClass": "unclassified",
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-01.html",
+        "project-02.html",
+        "project-03.html"
+      ],
+      "resumeHtmlPath": "output/pdf/wally-mostafa-boulevard-product-marketing-manager-resume.html",
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Boulevard-Product-Marketing-Manager-Resume.pdf",
+      "publishStatus": "tracked-unverified"
+    },
+    {
+      "slug": "boulevard-senior-product-designer",
+      "roleTitle": "Boulevard Senior Product Designer",
+      "fitClass": "unclassified",
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-01.html",
+        "project-02.html"
+      ],
+      "resumeHtmlPath": "output/pdf/wally-mostafa-boulevard-senior-product-designer-resume.html",
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Boulevard-Senior-Product-Designer-Resume.pdf",
+      "publishStatus": "tracked-unverified"
+    },
+    {
+      "slug": "boulevard-technical-account-manager",
+      "roleTitle": "Boulevard Technical Account Manager",
+      "fitClass": "unclassified",
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-01.html",
+        "project-02.html",
+        "project-03.html"
+      ],
+      "resumeHtmlPath": "output/pdf/wally-mostafa-boulevard-technical-account-manager-resume.html",
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Boulevard-Technical-Account-Manager-Resume.pdf",
+      "publishStatus": "tracked-unverified"
+    },
+    {
+      "slug": "business-strategy-management-evaluator",
+      "roleTitle": "Business Strategy & Management Evaluator",
+      "fitClass": "unclassified",
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-01.html",
+        "project-02.html",
+        "project-03.html"
+      ],
+      "resumeHtmlPath": "output/pdf/wally-mostafa-business-strategy-management-evaluator-resume.html",
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Business-Strategy-Management-Evaluator-Resume.pdf",
+      "publishStatus": "tracked-unverified"
+    },
+    {
+      "slug": "carepath",
+      "roleTitle": "CarePath Program Manager",
+      "fitClass": "unclassified",
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-01.html",
+        "project-02.html",
+        "project-03.html"
+      ],
+      "resumeHtmlPath": "output/pdf/wally-mostafa-carepath-program-manager-resume.html",
+      "resumePdfPath": "output/pdf/Wally-Mostafa-CarePath-Program-Manager-Resume.pdf",
+      "publishStatus": "tracked-unverified"
+    },
+    {
+      "slug": "cisco-principal-ai-product-manager",
+      "roleTitle": "Principal AI Product Manager - Enterprise AI Platform",
+      "fitClass": "unclassified",
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-01.html",
+        "project-02.html",
+        "project-03.html"
+      ],
+      "resumeHtmlPath": "output/pdf/wally-mostafa-cisco-principal-ai-product-manager-resume.html",
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Cisco-Principal-AI-Product-Manager-Resume.pdf",
+      "publishStatus": "tracked-unverified"
+    },
+    {
+      "slug": "city-durham-hr-operations",
+      "roleTitle": "City of Durham HR Operations & Service Delivery",
+      "fitClass": "unclassified",
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-03.html",
+        "project-01.html",
+        "project-07.html"
+      ],
+      "resumeHtmlPath": "output/pdf/wally-mostafa-city-durham-hr-operations-service-delivery-resume.html",
+      "resumePdfPath": "output/pdf/Wally-Mostafa-City-Durham-HR-Operations-Service-Delivery-Resume.pdf",
+      "publishStatus": "tracked-unverified"
+    },
+    {
+      "slug": "coco-ai-product-operator",
+      "roleTitle": "COCO AI Product Operator",
+      "fitClass": "unclassified",
+      "routeMode": "scoped-projects",
+      "selectedProjects": [
+        "project-01.html",
+        "project-02.html",
+        "project-03.html",
+        "project-04.html"
+      ],
+      "resumeHtmlPath": "output/pdf/wally-mostafa-coco-ai-product-operator-resume.html",
+      "resumePdfPath": "output/pdf/Wally-Mostafa-COCO-AI-Product-Operator-Resume.pdf",
+      "publishStatus": "uncommitted",
+      "notes": "Intentionally marked incomplete until route-local numbering and commit state are fixed."
+    },
+    {
+      "slug": "competitive-intelligence-manager",
+      "roleTitle": "Competitive Intelligence & Market Strategy",
+      "fitClass": "unclassified",
+      "routeMode": "scoped-projects",
+      "selectedProjects": [
+        "project-04.html",
+        "project-03.html",
+        "project-06.html",
+        "project-05.html"
+      ],
+      "resumeHtmlPath": "output/pdf/wally-mostafa-competitive-intelligence-manager-resume.html",
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Competitive-Intelligence-Manager-Resume.pdf",
+      "publishStatus": "uncommitted"
+    },
+    {
+      "slug": "conversifi",
+      "roleTitle": "Conversifi Strategic Growth Partner",
+      "fitClass": "unclassified",
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-01.html",
+        "project-02.html",
+        "project-03.html"
+      ],
+      "resumeHtmlPath": "output/pdf/wally-mostafa-conversifi-strategic-growth-partner-resume.html",
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Conversifi-Strategic-Growth-Partner-Resume.pdf",
+      "publishStatus": "tracked-unverified"
+    },
+    {
+      "slug": "deloitte-human-capital",
+      "roleTitle": "Deloitte Human Capital - Organization, Workforce & Change",
+      "fitClass": "unclassified",
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-01.html",
+        "project-02.html",
+        "project-03.html"
+      ],
+      "resumeHtmlPath": "output/pdf/wally-mostafa-deloitte-human-capital-organization-workforce-change-manager-resume.html",
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Deloitte-Human-Capital-Organization-Workforce-Change-Manager-Resume.pdf",
+      "publishStatus": "tracked-unverified"
+    },
+    {
+      "slug": "deployed-strategist",
+      "roleTitle": "Deployed Strategist",
+      "fitClass": "strong",
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-01.html",
+        "project-02.html",
+        "project-03.html"
+      ],
+      "resumeHtmlPath": "output/pdf/wally-mostafa-deployed-strategist-resume.html",
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Deployed-Strategist-Resume.pdf",
+      "publishStatus": "live-verified"
+    },
+    {
+      "slug": "didero-ai-deployment-strategist",
+      "roleTitle": "Didero AI Deployment Strategist",
+      "fitClass": "adjacent",
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-01.html",
+        "project-02.html",
+        "project-03.html"
+      ],
+      "resumeHtmlPath": "output/pdf/wally-mostafa-didero-ai-deployment-strategist-resume.html",
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Didero-AI-Deployment-Strategist-Resume.pdf",
+      "publishStatus": "live-verified"
+    },
+    {
+      "slug": "director-ai-development",
+      "roleTitle": "Director of AI Development",
+      "fitClass": "unclassified",
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-01.html",
+        "project-02.html",
+        "project-03.html"
+      ],
+      "resumeHtmlPath": "output/pdf/wally-mostafa-director-ai-development-resume.html",
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Director-AI-Development-Resume.pdf",
+      "publishStatus": "tracked-unverified"
+    },
+    {
+      "slug": "director-ai-enabled-marketing",
+      "roleTitle": "Director of AI-Enabled Marketing",
+      "fitClass": "unclassified",
+      "routeMode": "scoped-projects",
+      "selectedProjects": [
+        "project-01.html",
+        "project-02.html",
+        "project-03.html",
+        "project-06.html"
+      ],
+      "resumeHtmlPath": "output/pdf/wally-mostafa-director-ai-enabled-marketing-resume.html",
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Director-AI-Enabled-Marketing-Resume.pdf",
+      "publishStatus": "uncommitted"
+    },
+    {
+      "slug": "enterprise-ai-client-partner",
+      "roleTitle": "Enterprise AI Client Partner",
+      "fitClass": "unclassified",
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-01.html",
+        "project-02.html",
+        "project-03.html"
+      ],
+      "resumeHtmlPath": "output/pdf/wally-mostafa-enterprise-ai-client-partner-resume.html",
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Enterprise-AI-Client-Partner-Resume.pdf",
+      "publishStatus": "tracked-unverified"
+    },
+    {
+      "slug": "healthcare-diagnostics-sales-support",
+      "roleTitle": "Healthcare Diagnostics Sales Support",
+      "fitClass": "unclassified",
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-01.html",
+        "project-02.html",
+        "project-03.html"
+      ],
+      "resumeHtmlPath": "output/pdf/wally-mostafa-healthcare-diagnostics-sales-support-professional-resume.html",
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Healthcare-Diagnostics-Sales-Support-Professional-Resume.pdf",
+      "publishStatus": "tracked-unverified"
+    },
+    {
+      "slug": "heartbeat-ai-transformation",
+      "roleTitle": "Heartbeat AI Transformation",
+      "fitClass": "unclassified",
+      "routeMode": "scoped-projects",
+      "selectedProjects": [
+        "project-01.html",
+        "project-02.html",
+        "project-03.html",
+        "project-04.html"
+      ],
+      "resumeHtmlPath": "output/pdf/wally-mostafa-heartbeat-ai-transformation-resume.html",
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Heartbeat-AI-Transformation-Resume.pdf",
+      "publishStatus": "tracked-unverified"
+    },
+    {
+      "slug": "insight-global-senior-ux-designer",
+      "roleTitle": "Insight Global Senior UX Designer",
+      "fitClass": "strong",
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-03.html",
+        "project-06.html",
+        "project-01.html"
+      ],
+      "resumeHtmlPath": "output/pdf/wally-mostafa-insight-global-senior-ux-designer-resume.html",
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Insight-Global-Senior-UX-Designer-Resume.pdf",
+      "publishStatus": "local-only"
+    },
+    {
+      "slug": "itron-ai-developer",
+      "roleTitle": "AI Developer Candidate",
+      "fitClass": "unclassified",
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-01.html",
+        "project-02.html",
+        "project-03.html"
+      ],
+      "resumeHtmlPath": "output/pdf/wally-mostafa-itron-ai-developer-resume.html",
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Itron-AI-Developer-Resume.pdf",
+      "publishStatus": "tracked-unverified"
+    },
+    {
+      "slug": "jobot-technical-project-manager",
+      "roleTitle": "Technical Project Manager - Digital Product Delivery",
+      "fitClass": "adjacent",
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-01.html",
+        "project-02.html",
+        "project-04.html",
+        "project-03.html"
+      ],
+      "resumeHtmlPath": "output/pdf/wally-mostafa-jobot-technical-project-manager-resume.html",
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Jobot-Technical-Project-Manager-Resume.pdf",
+      "publishStatus": "live-verified"
+    },
+    {
+      "slug": "lenovo",
+      "roleTitle": "Lenovo Hybrid AI Product Marketing",
+      "fitClass": "unclassified",
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-01.html",
+        "project-02.html",
+        "project-03.html"
+      ],
+      "resumeHtmlPath": "output/pdf/wally-mostafa-lenovo-hybrid-ai-product-marketing-resume.html",
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Lenovo-Hybrid-AI-Product-Marketing-Resume.pdf",
+      "publishStatus": "live-verified"
+    },
+    {
+      "slug": "lilly-tunelab",
+      "roleTitle": "Lilly TuneLab Founding Product Designer",
+      "fitClass": "unclassified",
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-01.html",
+        "project-03.html",
+        "project-02.html"
+      ],
+      "resumeHtmlPath": "output/pdf/wally-mostafa-lilly-tunelab-founding-product-designer-resume.html",
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Lilly-TuneLab-Founding-Product-Designer-Resume.pdf",
+      "publishStatus": "tracked-unverified"
+    },
+    {
+      "slug": "m3-mi-client-success-consultant",
+      "roleTitle": "Healthcare Client Success & Data Products",
+      "fitClass": "unclassified",
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-01.html",
+        "project-02.html",
+        "project-03.html"
+      ],
+      "resumeHtmlPath": "output/pdf/wally-mostafa-m3-mi-client-success-consultant-resume.html",
+      "resumePdfPath": "output/pdf/Wally-Mostafa-M3-MI-Client-Success-Consultant-Resume.pdf",
+      "publishStatus": "tracked-unverified"
+    },
+    {
+      "slug": "m3-nas-account-strategist",
+      "roleTitle": "Healthcare Account Strategy & AI Implementation",
+      "fitClass": "unclassified",
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-01.html",
+        "project-02.html",
+        "project-03.html"
+      ],
+      "resumeHtmlPath": "output/pdf/wally-mostafa-m3-nas-account-strategist-resume.html",
+      "resumePdfPath": "output/pdf/Wally-Mostafa-M3-NAS-Account-Strategist-Resume.pdf",
+      "publishStatus": "tracked-unverified"
+    },
+    {
+      "slug": "marketing-analyst",
+      "roleTitle": "Marketing Analytics & Client Reporting",
+      "fitClass": "unclassified",
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-06.html",
+        "project-03.html",
+        "project-02.html",
+        "project-01.html"
+      ],
+      "resumeHtmlPath": "output/pdf/wally-mostafa-marketing-analyst-resume.html",
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Marketing-Analyst-Resume.pdf",
+      "publishStatus": "tracked-unverified"
+    },
+    {
+      "slug": "maximus-principal-ai-strategy",
+      "roleTitle": "Principal Consultant - AI Strategy",
+      "fitClass": "unclassified",
+      "routeMode": "scoped-projects",
+      "selectedProjects": [
+        "project-01.html",
+        "project-02.html",
+        "project-03.html",
+        "project-04.html"
+      ],
+      "resumeHtmlPath": "output/pdf/wally-mostafa-maximus-principal-ai-strategy-resume.html",
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Maximus-Principal-AI-Strategy-Resume.pdf",
+      "publishStatus": "tracked-unverified"
+    },
+    {
+      "slug": "mercor-management-strategy-consultant",
+      "roleTitle": "Mercor Management & Strategy Consultant",
+      "fitClass": "unclassified",
+      "routeMode": "scoped-projects",
+      "selectedProjects": [
+        "project-06.html",
+        "project-02.html",
+        "project-01.html"
+      ],
+      "resumeHtmlPath": "output/pdf/wally-mostafa-mercor-management-strategy-consultant-resume.html",
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Mercor-Management-Strategy-Consultant-Resume.pdf",
+      "publishStatus": "tracked-unverified"
+    },
+    {
+      "slug": "mi-case-ai-integration-engineer",
+      "roleTitle": "Mi-Case AI Integration Engineer / Specialist",
+      "fitClass": "unclassified",
+      "routeMode": "scoped-projects",
+      "selectedProjects": [
+        "project-01.html",
+        "project-02.html",
+        "project-03.html"
+      ],
+      "resumeHtmlPath": "output/pdf/wally-mostafa-mi-case-ai-integration-engineer-resume.html",
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Mi-Case-AI-Integration-Engineer-Resume.pdf",
+      "publishStatus": "uncommitted"
+    },
+    {
+      "slug": "modaxo-ai-transformation-manager",
+      "roleTitle": "Modaxo AI Transformation Manager",
+      "fitClass": "unclassified",
+      "routeMode": "scoped-projects",
+      "selectedProjects": [
+        "project-01.html",
+        "project-02.html",
+        "project-03.html",
+        "project-04.html"
+      ],
+      "resumeHtmlPath": "output/pdf/wally-mostafa-modaxo-ai-transformation-manager-resume.html",
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Modaxo-AI-Transformation-Manager-Resume.pdf",
+      "publishStatus": "tracked-unverified"
+    },
+    {
+      "slug": "omidria-product-marketing",
+      "roleTitle": "OMIDRIA Product Marketing",
+      "fitClass": "unclassified",
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-01.html",
+        "project-02.html",
+        "project-03.html"
+      ],
+      "resumeHtmlPath": "output/pdf/wally-mostafa-omidria-product-marketing-manager-resume.html",
+      "resumePdfPath": "output/pdf/Wally-Mostafa-OMIDRIA-Product-Marketing-Manager-Resume.pdf",
+      "publishStatus": "tracked-unverified"
+    },
+    {
+      "slug": "product-management-ai-evaluator",
+      "roleTitle": "Product Management AI Evaluator",
+      "fitClass": "unclassified",
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-01.html",
+        "project-02.html",
+        "project-03.html"
+      ],
+      "resumeHtmlPath": "output/pdf/wally-mostafa-product-management-ai-evaluator-resume.html",
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Product-Management-AI-Evaluator-Resume.pdf",
+      "publishStatus": "tracked-unverified"
+    },
+    {
+      "slug": "sas-ux-data-visualization",
+      "roleTitle": "SAS UX Designer, Data Visualization",
+      "fitClass": "adjacent",
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-03.html",
+        "project-06.html",
+        "project-05.html"
+      ],
+      "resumePdfPath": "output/pdf/Wally-Mostafa-SAS-UX-Data-Visualization-Resume.pdf",
+      "publishStatus": "local-only"
+    },
+    {
+      "slug": "service-link-ai-enablement",
+      "roleTitle": "Service-Link AI Enablement Lead",
+      "fitClass": "unclassified",
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-02.html",
+        "project-01.html",
+        "project-03.html"
+      ],
+      "resumeHtmlPath": "output/pdf/wally-mostafa-service-link-ai-enablement-lead-resume.html",
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Service-Link-AI-Enablement-Lead-Resume.pdf",
+      "publishStatus": "tracked-unverified"
+    },
+    {
+      "slug": "smartsheet-ux-research-manager",
+      "roleTitle": "Smartsheet Manager of UX Research",
+      "fitClass": "unclassified",
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-04.html",
+        "project-03.html",
+        "project-05.html",
+        "project-06.html"
+      ],
+      "resumeHtmlPath": "output/pdf/wally-mostafa-smartsheet-manager-ux-research-resume.html",
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Smartsheet-Manager-UX-Research-Resume.pdf",
+      "publishStatus": "tracked-unverified"
+    },
+    {
+      "slug": "sogeti-ai-platform-product-manager",
+      "roleTitle": "Sogeti AI Platform Product Manager",
+      "fitClass": "unclassified",
+      "routeMode": "scoped-projects",
+      "selectedProjects": [
+        "project-01.html",
+        "project-02.html",
+        "project-03.html"
+      ],
+      "resumeHtmlPath": "output/pdf/wally-mostafa-sogeti-ai-platform-product-manager-resume.html",
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Sogeti-AI-Platform-Product-Manager-Resume.pdf",
+      "publishStatus": "live-verified"
+    },
+    {
+      "slug": "street-digital",
+      "roleTitle": "Street Digital - Implementations Manager",
+      "fitClass": "unclassified",
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-01.html",
+        "project-02.html",
+        "project-03.html"
+      ],
+      "resumeHtmlPath": "output/pdf/wally-mostafa-street-digital-implementations-manager-resume.html",
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Street-Digital-Implementations-Manager-Resume.pdf",
+      "publishStatus": "tracked-unverified"
+    },
+    {
+      "slug": "system-architect",
+      "roleTitle": "System Architect - AI Solution Design",
+      "fitClass": "unclassified",
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-01.html",
+        "project-02.html",
+        "project-03.html"
+      ],
+      "resumeHtmlPath": "output/pdf/wally-mostafa-system-architect-resume.html",
+      "resumePdfPath": "output/pdf/Wally-Mostafa-System-Architect-Resume.pdf",
+      "publishStatus": "tracked-unverified"
+    },
+    {
+      "slug": "varonis",
+      "roleTitle": "Varonis Data & AI Security Product",
+      "fitClass": "unclassified",
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-01.html",
+        "project-02.html",
+        "project-03.html"
+      ],
+      "resumeHtmlPath": "output/pdf/wally-mostafa-varonis-data-ai-security-product-resume.html",
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Varonis-Data-AI-Security-Product-Resume.pdf",
+      "publishStatus": "uncommitted"
+    },
+    {
+      "slug": "yotta-labs",
+      "roleTitle": "Yotta Labs AI Systems Research Engineer",
+      "fitClass": "unclassified",
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-01.html",
+        "project-02.html",
+        "project-03.html"
+      ],
+      "resumeHtmlPath": "output/pdf/wally-mostafa-yotta-labs-ai-systems-research-engineer-resume.html",
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Yotta-Labs-AI-Systems-Research-Engineer-Resume.pdf",
+      "publishStatus": "tracked-unverified"
+    }
+  ]
+}
