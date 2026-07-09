@@ -11,6 +11,7 @@ This portfolio supplements a resume. Write for HR reps, recruiters, hiring manag
 - Prefer short claims over manifesto-style explanation.
 - Keep personality, but remove anything that slows comprehension.
 - Write tailored-route hero intros in first person. They may directly explain why I fit the role, but never use third-person candidate-summary copy (`Wally`, `he`, `him`, or `his`).
+- End every post-application recruiter note with this exact line: `Would love to hop on a call to chat about this opening or any other across your desk you might see fit.`
 - Treat each section as a scan stop: what this proves, why it matters, and where to click next.
 
 ## First Run
