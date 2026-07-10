@@ -366,6 +366,19 @@
       "publishStatus": "tracked-unverified"
     },
     {
+      "slug": "firstup-mobile-ux-designer",
+      "roleTitle": "Firstup Mobile UX Designer",
+      "fitClass": "adjacent",
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-05.html",
+        "project-04.html",
+        "project-06.html"
+      ],
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Firstup-Mobile-UX-Designer-Resume.pdf",
+      "publishStatus": "local-only"
+    },
+    {
       "slug": "healthcare-diagnostics-sales-support",
       "roleTitle": "Healthcare Diagnostics Sales Support",
       "fitClass": "unclassified",
