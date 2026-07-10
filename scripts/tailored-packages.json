@@ -408,6 +408,19 @@
       "publishStatus": "tracked-unverified"
     },
     {
+      "slug": "humana-senior-product-designer",
+      "roleTitle": "Humana Senior Product Designer - Benefits Servicing",
+      "fitClass": "adjacent",
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-01.html",
+        "project-04.html",
+        "project-03.html"
+      ],
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Humana-Senior-Product-Designer-Resume.pdf",
+      "publishStatus": "tracked-unverified"
+    },
+    {
       "slug": "insight-global-senior-ux-designer",
       "roleTitle": "Insight Global Senior UX Designer",
       "fitClass": "strong",
