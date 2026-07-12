@@ -719,6 +719,20 @@
       "publishStatus": "uncommitted"
     },
     {
+      "slug": "xo-in-house-creator",
+      "roleTitle": "X&O In-House Creator",
+      "fitClass": "adjacent",
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-02.html",
+        "project-03.html",
+        "project-01.html"
+      ],
+      "resumePdfPath": "output/pdf/Wally-Mostafa-XO-In-House-Creator-Resume.pdf",
+      "publishStatus": "local-only",
+      "notes": "PDF-only recruiter artifact per current Tailored Portfolio Rules; temporary render HTML removed after local verification."
+    },
+    {
       "slug": "yotta-labs",
       "roleTitle": "Yotta Labs AI Systems Research Engineer",
       "fitClass": "unclassified",
