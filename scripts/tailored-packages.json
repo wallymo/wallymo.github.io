@@ -435,6 +435,20 @@
       "publishStatus": "live-verified"
     },
     {
+      "slug": "iconixx-account-director",
+      "roleTitle": "Iconixx Media Account Director",
+      "fitClass": "strong",
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-06.html",
+        "project-01.html",
+        "project-02.html"
+      ],
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Iconixx-Account-Director-Resume.pdf",
+      "publishStatus": "tracked-unverified",
+      "notes": "PDF-only recruiter artifact per current Tailored Portfolio Rules; temporary render HTML removed after local verification."
+    },
+    {
       "slug": "insight-global-senior-ux-designer",
       "roleTitle": "Insight Global Senior UX Designer",
       "fitClass": "strong",
