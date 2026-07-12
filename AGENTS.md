@@ -14,6 +14,54 @@ This portfolio supplements a resume. Write for HR reps, recruiters, hiring manag
 - End every post-application recruiter note with this exact line: `Would love to hop on a call to chat about this opening or any other across your desk you might see fit.`
 - Treat each section as a scan stop: what this proves, why it matters, and where to click next.
 
+## Tailored Portfolio Rules
+
+When the human sends a job, start with the fit gate. If it clears as a strong fit or a good/credible adjacent fit, build the matched package immediately—without waiting for a separate tailoring request or confirmation. Build a matched package for a stretch only after explicit approval.
+
+- Start with the fit gate. Compare the JD against `resume.html`, public project pages, and existing role artifacts before creating files.
+- For `strong` or `adjacent` results, treat the provided JD itself as authorization to create and publish the matched resume + role-route package. Do not pause after the gate to ask whether to proceed.
+- Keep the public homepage, public resume, and canonical public project pages untouched unless explicitly asked.
+- Use `index.html` as the visual/source shell for each role route. Preserve the current visual system; do not import another route's stale framing.
+- For each JD, the tailored resume PDF under `output/pdf/` is the only recruiter-facing resume artifact. Its `Portfolio` link must point exclusively to that JD's matching route. Do not retain or deliver a tailored resume HTML file; if HTML is needed to render the PDF, keep it temporary and remove it after verification.
+- On the role-specific portfolio route, visible changes are limited to the hero space, the featured projects shown for that JD, and the closing contact/footer positioning. Metadata and resume/download links may change only as package plumbing.
+- Make the hero more intentional than a generic intro. In first person, explain why I fit the role using the employer's domain language, the role's core need, and 2-3 concrete proof points from the resume/projects.
+- Treat the closing contact block as the hero's bookend. Its prompt and short footer sign-off must match the same JD, role family, and proof lanes; never leave the public homepage's default AI/industry positioning on an unrelated tailored route.
+- Keep the closing CTA direct and recruiter-friendly: name the kind of leader or problem the employer is hiring for, then make email the clear next step. Do not repeat the full hero or introduce new claims.
+- Do not overclaim. Strong fit copy should be sharper and more direct, not inflated.
+- Pick 3 relevant projects by default, ordered by role relevance rather than default chronology. Use 4 only when the JD genuinely spans multiple proof lanes. Use 5 only if the human explicitly asks for a deeper version.
+  - `project-01.html` — Pharma AI Platform: regulated pharma AI, MLR, FDA/HIPAA, agency workflows, LLM/VLM implementation.
+  - `project-02.html` — The POC Guy: AI POCs, client discovery, rapid prototypes, vertical testing, early product validation.
+  - `project-03.html` — Enterprise Design System: enterprise UX, data visualization, white-label systems, design leadership, team scale.
+  - `project-04.html` — User Research: research ops, interviews, Figma documentation, roadshows, user-centered product practice.
+  - `project-05.html` — Splash Design System: component systems, Figma, design ops, personas, system governance, award-backed UX.
+  - `project-06.html` — Digital Audit Experience: audit workflows, AI-powered data visualization, benchmarking, recommendations, awards.
+  - `project-07.html` — Other Highlights: design leadership, accessibility, innovation challenge, service-desk product UX.
+- Use `canonical-projects` by default: route cards can be tailored and reordered, but they link to public `../project-*.html` pages whose page numbers and navigation stay canonical.
+- Use `scoped-projects` only when role-local case-study framing or route-local navigation is worth the extra maintenance.
+- If a tailored route includes scoped project pages, update every project card, back link, breadcrumb, previous link, and next-project link to keep recruiters inside the role-specific project sequence.
+- Global rule for scoped project pages: if a route reorders or renumbers selected projects, each scoped project page must show that route-local number and sequence, not its canonical public-site number. The selected-work card's visible number, title, and order are the source of truth for that scoped route.
+- Scoped page previous/next links must follow that JD route's selected-project order, and the Wally/logo link plus all-work/back links must return to the JD-specific portfolio route.
+- Do not use query-param shims such as `?from=<role>` to make public case studies pretend to be route-specific pages.
+- Do not rewrite capabilities, trust strip, awards, experience arc, visual system, or other non-project sections unless the human explicitly asks for a broader portfolio edit. The role-specific closing contact/footer copy is the only default exception.
+- Record package intent in `scripts/tailored-packages.json` for any new or updated matched package.
+
+## Job Description Fit Checks
+
+If the human sends a job description that is materially off the mark for the resume, portfolio, or available evidence, speak up before tailoring anything.
+
+- Treat this as a required gate for every resume/job-description turn, not an optional aside.
+- Before creating files, editing a resume, or making a hidden route, compare the JD against `resume.html`, the case studies, and existing role artifacts.
+- Classify the role as `strong`, `adjacent`, `stretch`, or `not-fit`.
+- Treat the human's plain-language `good` fit as the existing `adjacent` class: proceed automatically, with narrow and honest positioning.
+- Support the call with concrete mismatches between the job description and local proof from the resume, case studies, or existing artifacts.
+- Distinguish between "missing evidence" and "actual mismatch" so the human can decide whether to proceed.
+- Do not force-fit the resume, invent experience, or bury the concern inside optimistic copy.
+- If the role is `not-fit`, stop before generating files and suggest how to make it fit honestly: a better target title, a narrower positioning angle, or proof the human would need to supply.
+- If there is still a strategic reason to apply, name the risk and suggest the narrowest honest positioning.
+- If the role asks for a different profession than the evidence supports, such as hands-on cybersecurity operations, clinical-device service, finance, engineering, or certified domain work, stop and call out the gap directly before tailoring.
+- If the human acknowledges the risk and says to move forward, proceed without relitigating the decision, but keep the artifact narrowly honest.
+- Speak up again if the work starts depending on unsupported claims, fake confidence, excessive tailoring for a low-fit role, or anything that looks like a rabbit hole.
+
 ## First Run
 
 If `BOOTSTRAP.md` exists, that's your birth certificate. Follow it, figure out who you are, then delete it. You won't need it again.
