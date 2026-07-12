@@ -368,16 +368,16 @@
     {
       "slug": "enterprise-ai-client-partner",
       "roleTitle": "Enterprise AI Client Partner",
-      "fitClass": "unclassified",
+      "fitClass": "adjacent",
       "routeMode": "canonical-projects",
       "selectedProjects": [
         "project-01.html",
         "project-02.html",
         "project-03.html"
       ],
-      "resumeHtmlPath": "output/pdf/wally-mostafa-enterprise-ai-client-partner-resume.html",
       "resumePdfPath": "output/pdf/Wally-Mostafa-Enterprise-AI-Client-Partner-Resume.pdf",
-      "publishStatus": "tracked-unverified"
+      "publishStatus": "uncommitted",
+      "notes": "Credible adjacent fit: strong Fortune 500 client strategy, AI solution translation, POC, and adoption proof; no unsupported quota, CRM, revenue-growth, or named sales-methodology claims. PDF-only recruiter artifact per current Tailored Portfolio Rules."
     },
     {
       "slug": "firstup-mobile-ux-designer",
