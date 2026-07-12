@@ -352,6 +352,20 @@
       "publishStatus": "uncommitted"
     },
     {
+      "slug": "dr-teresa-business-administrator",
+      "roleTitle": "Dr. Teresa Johnson Business Administrator",
+      "fitClass": "adjacent",
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-01.html",
+        "project-06.html",
+        "project-02.html"
+      ],
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Dr-Teresa-Business-Administrator-Resume.pdf",
+      "publishStatus": "tracked-unverified",
+      "notes": "PDF-only recruiter artifact per current Tailored Portfolio Rules; temporary render HTML removed after local verification."
+    },
+    {
       "slug": "enterprise-ai-client-partner",
       "roleTitle": "Enterprise AI Client Partner",
       "fitClass": "unclassified",
