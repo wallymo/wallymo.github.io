@@ -621,6 +621,20 @@
       "publishStatus": "tracked-unverified"
     },
     {
+      "slug": "noom-design-systems-contract",
+      "roleTitle": "Noom Senior Design Systems Contractor",
+      "fitClass": "adjacent",
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-05.html",
+        "project-03.html",
+        "project-01.html"
+      ],
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Noom-Design-Systems-Contract-Resume.pdf",
+      "publishStatus": "tracked-unverified",
+      "notes": "PDF-only recruiter artifact per current Tailored Portfolio Rules; temporary render HTML removed after visual and link verification."
+    },
+    {
       "slug": "omidria-product-marketing",
       "roleTitle": "OMIDRIA Product Marketing",
       "fitClass": "unclassified",
@@ -647,6 +661,33 @@
       "resumeHtmlPath": "output/pdf/wally-mostafa-product-management-ai-evaluator-resume.html",
       "resumePdfPath": "output/pdf/Wally-Mostafa-Product-Management-AI-Evaluator-Resume.pdf",
       "publishStatus": "tracked-unverified"
+    },
+    {
+      "slug": "product-manager-digital-experiences",
+      "roleTitle": "Product Manager - Digital Experiences",
+      "fitClass": "adjacent",
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-02.html",
+        "project-03.html",
+        "project-08.html"
+      ],
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Product-Manager-Digital-Experiences-Resume.pdf",
+      "publishStatus": "live-verified",
+      "notes": "PDF-only recruiter artifact per current Tailored Portfolio Rules; temporary render HTML removed after local verification."
+    },
+    {
+      "slug": "real-chemistry-account-manager",
+      "roleTitle": "Real Chemistry Account Manager",
+      "fitClass": "strong",
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-01.html",
+        "project-08.html",
+        "project-06.html"
+      ],
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Real-Chemistry-Account-Manager-Resume.pdf",
+      "publishStatus": "live-verified"
     },
     {
       "slug": "sas-ux-data-visualization",
