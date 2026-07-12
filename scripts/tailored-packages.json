@@ -719,6 +719,21 @@
       "publishStatus": "tracked-unverified"
     },
     {
+      "slug": "swooped-customer-onboarding-specialist",
+      "roleTitle": "Customer Onboarding Specialist",
+      "fitClass": "adjacent",
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-04.html",
+        "project-01.html",
+        "project-02.html"
+      ],
+      "resumeHtmlPath": null,
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Swooped-Customer-Onboarding-Specialist-Resume.pdf",
+      "publishStatus": "local-only",
+      "notes": "PDF-only recruiter artifact; temporary render HTML removed after verification."
+    },
+    {
       "slug": "system-architect",
       "roleTitle": "System Architect - AI Solution Design",
       "fitClass": "unclassified",
