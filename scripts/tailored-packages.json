@@ -449,6 +449,20 @@
       "notes": "PDF-only recruiter artifact per current Tailored Portfolio Rules; temporary render HTML removed after local verification."
     },
     {
+      "slug": "iconixx-ux-director",
+      "roleTitle": "Iconixx Media UX Director",
+      "fitClass": "strong",
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-04.html",
+        "project-05.html",
+        "project-03.html"
+      ],
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Iconixx-UX-Director-Resume.pdf",
+      "publishStatus": "uncommitted",
+      "notes": "PDF-only recruiter artifact per current Tailored Portfolio Rules; temporary render HTML removed after local verification."
+    },
+    {
       "slug": "insight-global-senior-ux-designer",
       "roleTitle": "Insight Global Senior UX Designer",
       "fitClass": "strong",
