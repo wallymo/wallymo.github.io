@@ -445,22 +445,8 @@
         "project-02.html"
       ],
       "resumePdfPath": "output/pdf/Wally-Mostafa-Iconixx-Account-Director-Resume.pdf",
-      "publishStatus": "live-verified",
+      "publishStatus": "tracked-unverified",
       "notes": "PDF-only recruiter artifact per current Tailored Portfolio Rules; temporary render HTML removed after local verification."
-    },
-    {
-      "slug": "iconixx-ux-director",
-      "roleTitle": "Iconixx Media UX Director",
-      "fitClass": "strong",
-      "routeMode": "canonical-projects",
-      "selectedProjects": [
-        "project-04.html",
-        "project-05.html",
-        "project-03.html"
-      ],
-      "resumeHtmlPath": "output/pdf/wally-mostafa-iconixx-ux-director-resume.html",
-      "resumePdfPath": "output/pdf/Wally-Mostafa-Iconixx-UX-Director-Resume.pdf",
-      "publishStatus": "local-only"
     },
     {
       "slug": "insight-global-senior-ux-designer",
@@ -645,7 +631,7 @@
         "project-01.html"
       ],
       "resumePdfPath": "output/pdf/Wally-Mostafa-Noom-Design-Systems-Contract-Resume.pdf",
-      "publishStatus": "tracked-unverified",
+      "publishStatus": "live-verified",
       "notes": "PDF-only recruiter artifact per current Tailored Portfolio Rules; temporary render HTML removed after visual and link verification."
     },
     {
