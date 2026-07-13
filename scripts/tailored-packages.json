@@ -393,6 +393,20 @@
       "publishStatus": "live-verified"
     },
     {
+      "slug": "figma-product-manager-code",
+      "roleTitle": "Figma Product Manager, Code",
+      "fitClass": "adjacent",
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-03.html",
+        "project-01.html",
+        "project-02.html"
+      ],
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Figma-Product-Manager-Code-Resume.pdf",
+      "publishStatus": "tracked-unverified",
+      "notes": "Credible adjacent fit: strong design-system, AI product strategy, hands-on product build, enterprise discovery, and measurable workflow proof; no unsupported MCP, distributed infrastructure, eval-platform, or 5+ year formal PM-title claims. PDF-only recruiter artifact; temporary render HTML removed after verification."
+    },
+    {
       "slug": "healthcare-diagnostics-sales-support",
       "roleTitle": "Healthcare Diagnostics Sales Support",
       "fitClass": "unclassified",
