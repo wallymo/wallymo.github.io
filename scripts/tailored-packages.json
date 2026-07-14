@@ -252,6 +252,20 @@
       "notes": "Intentionally marked incomplete until route-local numbering and commit state are fixed."
     },
     {
+      "slug": "codevertex-applied-ai-engineer",
+      "roleTitle": "CodeVertex Applied AI Engineer",
+      "fitClass": "adjacent",
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-01.html",
+        "project-02.html",
+        "project-03.html"
+      ],
+      "resumePdfPath": "output/pdf/Wally-Mostafa-CodeVertex-Applied-AI-Engineer-Resume.pdf",
+      "publishStatus": "live-verified",
+      "notes": "Adjacent fit: shipped LLM/VLM evaluation workflows, prototype/model testing, RAG knowledge workflows, and documentation-heavy regulated delivery are supported; Python engineering depth, SQL, MLOps pipelines, and model training are not claimed. PDF-only recruiter artifact; temporary render HTML removed after verification."
+    },
+    {
       "slug": "competitive-intelligence-manager",
       "roleTitle": "Competitive Intelligence & Market Strategy",
       "fitClass": "unclassified",
@@ -394,19 +408,6 @@
       "notes": "Credible adjacent fit: strong Fortune 500 client strategy, AI solution translation, POC, and adoption proof; no unsupported quota, CRM, revenue-growth, or named sales-methodology claims. PDF-only recruiter artifact per current Tailored Portfolio Rules."
     },
     {
-      "slug": "firstup-mobile-ux-designer",
-      "roleTitle": "Firstup Mobile UX Designer",
-      "fitClass": "adjacent",
-      "routeMode": "canonical-projects",
-      "selectedProjects": [
-        "project-05.html",
-        "project-04.html",
-        "project-06.html"
-      ],
-      "resumePdfPath": "output/pdf/Wally-Mostafa-Firstup-Mobile-UX-Designer-Resume.pdf",
-      "publishStatus": "live-verified"
-    },
-    {
       "slug": "etsy-staff-ux-researcher",
       "roleTitle": "Etsy Staff UX Researcher — Inventory",
       "fitClass": "adjacent",
@@ -433,6 +434,19 @@
       "resumePdfPath": "output/pdf/Wally-Mostafa-Figma-Product-Manager-Code-Resume.pdf",
       "publishStatus": "live-verified",
       "notes": "Credible adjacent fit: strong design-system, AI product strategy, hands-on product build, enterprise discovery, and measurable workflow proof; no unsupported MCP, distributed infrastructure, eval-platform, or 5+ year formal PM-title claims. PDF-only recruiter artifact; temporary render HTML removed after verification."
+    },
+    {
+      "slug": "firstup-mobile-ux-designer",
+      "roleTitle": "Firstup Mobile UX Designer",
+      "fitClass": "adjacent",
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-05.html",
+        "project-04.html",
+        "project-06.html"
+      ],
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Firstup-Mobile-UX-Designer-Resume.pdf",
+      "publishStatus": "live-verified"
     },
     {
       "slug": "healthcare-diagnostics-sales-support",
@@ -501,7 +515,7 @@
         "project-02.html"
       ],
       "resumePdfPath": "output/pdf/Wally-Mostafa-Iconixx-Account-Director-Resume.pdf",
-      "publishStatus": "tracked-unverified",
+      "publishStatus": "live-verified",
       "notes": "PDF-only recruiter artifact per current Tailored Portfolio Rules; temporary render HTML removed after local verification."
     },
     {
