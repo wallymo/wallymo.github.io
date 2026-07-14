@@ -859,6 +859,20 @@
       "publishStatus": "tracked-unverified"
     },
     {
+      "slug": "targetbase-senior-director-strategy",
+      "roleTitle": "Targetbase Senior Director, Strategy",
+      "fitClass": "adjacent",
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-06.html",
+        "project-04.html",
+        "project-03.html"
+      ],
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Targetbase-Senior-Director-Strategy-Resume.pdf",
+      "publishStatus": "local-only",
+      "notes": "PDF-only recruiter artifact per current Tailored Portfolio Rules; temporary render HTML removed after local verification."
+    },
+    {
       "slug": "taxact-website-commerce-product-manager",
       "roleTitle": "TaxAct Product Manager - Website & Commerce Experience",
       "fitClass": "adjacent",
