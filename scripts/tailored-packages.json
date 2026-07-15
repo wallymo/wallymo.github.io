@@ -263,7 +263,7 @@
       ],
       "resumeHtmlPath": "output/pdf/wally-mostafa-coco-ai-product-operator-resume.html",
       "resumePdfPath": "output/pdf/Wally-Mostafa-COCO-AI-Product-Operator-Resume.pdf",
-      "publishStatus": "live-verified",
+      "publishStatus": "uncommitted",
       "notes": "Intentionally marked incomplete until route-local numbering and commit state are fixed."
     },
     {
@@ -1024,7 +1024,7 @@
         "project-03.html"
       ],
       "resumePdfPath": "output/pdf/Wally-Mostafa-Zendesk-AI-Success-Strategist-Resume.pdf",
-      "publishStatus": "uncommitted",
+      "publishStatus": "live-verified",
       "notes": "Adjacent resume-primary fit: direct Fortune 500 client leadership, 2+ years of AI implementation, enterprise product scale, discovery, solution design, and adoption-focused delivery are supported; direct SaaS renewal/expansion ownership, formal churn or health-score forecasting, and quantified automated-resolution/GRR outcomes are not claimed. PDF-only recruiter artifact; temporary render HTML removed after verification."
     }
   ]
