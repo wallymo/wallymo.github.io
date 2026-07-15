@@ -231,9 +231,9 @@
         "project-03.html",
         "project-02.html"
       ],
-      "resumeHtmlPath": "output/pdf/wally-mostafa-cinteot-ai-product-owner-resume.html",
       "resumePdfPath": "output/pdf/Wally-Mostafa-Cinteot-AI-Product-Owner-Resume.pdf",
-      "publishStatus": "local-only"
+      "publishStatus": "local-only",
+      "notes": "Adjacent balanced fit: confirmed AI product strategy, Agile backlog ownership, enterprise analytics platform delivery, cross-functional leadership, and FDA/HIPAA/MLR governance are supported; deep production MLOps, formal cloud-architecture ownership, cybersecurity, and STIG expertise are not claimed. PDF-only recruiter artifact; temporary render HTML removed after verification."
     },
     {
       "slug": "cisco-principal-ai-product-manager",
@@ -504,6 +504,20 @@
       ],
       "resumePdfPath": "output/pdf/Wally-Mostafa-Firstup-Mobile-UX-Designer-Resume.pdf",
       "publishStatus": "live-verified"
+    },
+    {
+      "slug": "fountain-senior-product-designer",
+      "roleTitle": "Fountain Senior Product Designer",
+      "fitClass": "strong",
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-01.html",
+        "project-03.html",
+        "project-02.html"
+      ],
+      "resumeHtmlPath": "output/pdf/wally-mostafa-fountain-senior-product-designer-resume.html",
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Fountain-Senior-Product-Designer-Resume.pdf",
+      "publishStatus": "local-only"
     },
     {
       "slug": "giga-staff-product-designer",
