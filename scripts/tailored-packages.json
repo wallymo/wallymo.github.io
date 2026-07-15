@@ -507,6 +507,20 @@
       "publishStatus": "tracked-unverified"
     },
     {
+      "slug": "hertz-senior-product-manager-day-of-rent",
+      "roleTitle": "Hertz Senior Product Manager - Day of Rent",
+      "fitClass": "adjacent",
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-03.html",
+        "project-04.html",
+        "project-02.html"
+      ],
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Hertz-Senior-Product-Manager-Day-of-Rent-Resume.pdf",
+      "publishStatus": "local-only",
+      "notes": "Credible adjacent fit based on product strategy, customer research, enterprise platform scale, AI pilots, backlog ownership, and cross-functional delivery; no unsupported rental-domain, mobile-first platform, or risk-management ownership claims. PDF-only recruiter artifact per current Tailored Portfolio Rules; temporary render HTML removed after local verification."
+    },
+    {
       "slug": "hirerising-technical-client-success-manager",
       "roleTitle": "HireRising Client Success Manager (Technical / SaaS)",
       "fitClass": "adjacent",
