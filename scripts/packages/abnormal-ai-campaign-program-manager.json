@@ -1,0 +1,74 @@
+{
+  "slug": "abnormal-ai-campaign-program-manager",
+  "roleTitle": "Abnormal AI Campaign Program Manager",
+  "fitClass": "adjacent",
+  "routeMode": "canonical-projects",
+  "selectedProjects": [
+    "project-01.html",
+    "project-03.html",
+    "project-02.html",
+    "project-06.html"
+  ],
+  "resumeHtmlPath": "output/pdf/wally-mostafa-abnormal-ai-campaign-program-manager-resume.html",
+  "resumePdfPath": "output/pdf/Wally-Mostafa-Abnormal-AI-Campaign-Program-Manager-Resume.pdf",
+  "job": {
+    "company": "Abnormal AI",
+    "roleTitle": "Campaign Program Manager",
+    "jobUrl": null,
+    "sourceChannel": "chat-pasted-jd",
+    "dateCaptured": "2026-07-15",
+    "compensation": "Base salary range: $107,100 - $154,000 USD",
+    "location": "Not stated in JD",
+    "atsVendor": "unknown",
+    "rawJd": "About The Role: We are looking for a highly organized, AI-forward Campaign Program Manager to drive the planning, orchestration, and standardization of integrated marketing campaigns. This is not a traditional program management role. This role serves as the operational hub between the Integrated Campaigns and functional marketing teams, ensuring every campaign has a comprehensive integrated marketing plan and is executed consistently across regions and channels. A strong understanding of campaign strategy is essential. The ideal candidate thrives at the intersection of strategy, process, execution, and AI-enabled productivity. They will partner closely with Campaign Managers to translate campaign strategies into executable demand plans, coordinate cross-functional execution, and create scalable campaign toolkits that empower regional and field marketing teams. This individual will be expected to leverage AI tools such as Claude and other emerging technologies to streamline planning, accelerate execution, improve collaboration, and scale campaigns to increase testing velocity, develop repeatable frameworks, and enable teams to move faster and operate more efficiently. What You'll Do - Campaign Planning & Execution: Own and manage the integrated marketing calendar and demand plans across all segments, regions, and campaigns to ensure consistent coverage across the globe. Manage and maintain the global campaign messaging framework. Partner with Campaign Managers to develop and maintain a consistent integrated marketing plan for every campaign, including objectives, target audiences, messaging, timelines, KPIs, demand calendar, and execution requirements. Ensure all active campaign information is centralized, current, and easily accessible across the organization. Drive alignment across stakeholders and delivery teams, manage dependencies, and proactively resolve resource and execution risks across campaigns. Coordinate execution across Digital, Lifecycle, Events, SDR, Marketing Operations, Analytics, and Regional Marketing teams to ensure campaigns are live and in market. Track campaign readiness, execution status, and performance while ensuring alignment to pipeline and go-to-market goals. Field & Regional Marketing Enablement: Develop campaign-in-a-box toolkits, playbooks, templates, and enablement resources that help regional teams execute campaigns consistently. Partner with Campaign Managers and Field Marketing to create scalable regional activation plans while allowing for local customization. Lead campaign enablement and training sessions and drive adoption of campaigns across regions. AI & Operational Excellence: Act as the AI champion for Integrated Marketing, identifying opportunities to apply AI across planning, execution, reporting, localization, and field enablement workflows. Build and maintain a library of prompts, workflows, templates, and AI playbooks that can be leveraged across Campaign, Field, and Functional Marketing teams. Develop AI-powered campaign planning frameworks that accelerate campaign creation, reduce time-to-launch, and improve execution consistency. Enable regional and field marketing teams to use AI to personalize campaigns, adapt messaging for local markets, and scale execution with limited resources. Partner with Marketing Operations and Analytics to explore AI-driven forecasting, campaign insights, and performance optimization. Drive a culture of rapid experimentation by leveraging AI to create, test, and optimize campaign messaging, channels, audiences, and creative variations at scale. Evaluate emerging AI tools and agents and recommend new capabilities that improve marketing productivity and effectiveness. Define and track AI adoption and productivity metrics across the marketing organization. Reporting & Stakeholder Management: Manage completion of campaign scorecards, QBRs, and executive updates, using AI to automate reporting where applicable. Work with functional teams to gather channel-level campaign results. Support Campaign Managers to facilitate post-campaign reviews and communicate learnings, priorities, and execution readiness across stakeholders. What We're Looking For: 7+ years of experience in campaign operations, integrated marketing, demand generation, program management, or project management. Strong understanding of B2B demand generation and integrated campaign execution. Proven success managing complex cross-functional initiatives and stakeholders. Experience developing campaign playbooks, enablement programs, or field marketing resources. Experience leveraging AI tools to improve marketing productivity, scale processes, and accelerate execution. Strong communication, organizational, and stakeholder management skills. Data-driven mindset with a passion for process improvement and experimentation."
+  },
+  "classification": {
+    "targetLane": "ai-enabled-marketing-operations",
+    "evidenceMode": "resume-primary",
+    "primarySource": "resume",
+    "supportingSource": "portfolio",
+    "hardGateStatus": "pass",
+    "hardGates": [
+      { "gate": "7+ years campaign operations / integrated marketing / program or project management", "status": "pass", "evidence": "2011-2018 integrated pharma campaign account management plus 2020-present program-level product and AI delivery" },
+      { "gate": "compensation compatibility ($107,100-$154,000)", "status": "pass", "evidence": "clears the $90-120k target" },
+      { "gate": "clearance / license / education requirements", "status": "not-applicable", "evidence": "none stated in JD" }
+    ]
+  },
+  "fitGate": {
+    "supportedOverlap": [
+      "7+ years managing integrated Fortune 500 pharma campaigns ($2M-$50M budgets) across TV, radio, digital, gaming, OOH, and unbranded programs, including briefs, timelines, production requirements, and MLR review across account, creative, UX, and development teams",
+      "AI champion mandate: currently builds AI tools for marketing agency operations (brief intake, scoping, review routing, claims review, submission capture), prompt-defined workflows, and AI content variation at scale (ListingPal listing copy, social posts, ad copy in under 90 seconds), using Claude and multi-model orchestration",
+      "Standardization and enablement at scale: design system and reusable component libraries keeping execution consistent for 7,000+ users across 22 white-label brands, with distributed US/Poland teams - the campaign-in-a-box toolkit analog",
+      "Reporting: Digital Experience Audit workflow for channel scoring, benchmarks, recommendations, and presentation-ready client outputs",
+      "Cross-functional stakeholder orchestration proven at agency and enterprise scale, including scaling a design org from 2 to 30"
+    ],
+    "unsupportedRequirements": [
+      "B2B SaaS demand generation ownership (demand plans, pipeline targets, MQL/SQL metrics) - campaign experience is pharma consumer/HCP marketing",
+      "Marketing-automation platform experience (Marketo, HubSpot, 6sense) - not claimed",
+      "Recent campaign-operations tenure - integrated campaign account management ended 2018; work since is UX/AI product leadership",
+      "Formal global field/regional marketing enablement program ownership - only adjacent proof via white-label brands and regional rate-card tooling"
+    ],
+    "recommendation": "Proceed as adjacent with narrow honest positioning: lead with the AI-champion lane (current, strongest, and the role's differentiator), backed by 7+ years of integrated Fortune 500 campaign delivery and enterprise-scale standardization/enablement proof. Do not claim demand-gen metrics, martech stack ownership, or field-marketing titles."
+  },
+  "hero": {
+    "eyebrow": "Abnormal AI Campaign Program Manager",
+    "tags": [
+      "Integrated campaign programs",
+      "AI-powered marketing workflows",
+      "Toolkits, playbooks & enablement"
+    ],
+    "intro": "Abnormal wants an operational hub who treats AI as the way integrated campaigns get planned, launched, and scaled — that is how I already work. My proof: 7+ years running integrated Fortune 500 pharma campaigns with $2M–$50M budgets across TV, digital, and unbranded programs; AI tools I built for marketing teams that automate brief intake, scoping, and review routing; and a design system that kept execution consistent for 7,000+ users across 22 white-label brands."
+  },
+  "contact": {
+    "prompt": "Hiring a campaign program manager who can standardize integrated campaigns and make AI the team's default way of working? That is the operational hub I want to run for Abnormal. Email is the fastest way to reach me.",
+    "signoff": "Integrated campaigns · AI-enabled execution · repeatable playbooks"
+  },
+  "constraints": {
+    "doNotClaim": [
+      "B2B demand generation or pipeline ownership",
+      "Marketing-automation platforms (Marketo, HubSpot, 6sense)",
+      "Field or regional marketing titles",
+      "Campaign operations tenure after 2018"
+    ]
+  }
+}

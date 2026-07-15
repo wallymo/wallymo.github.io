@@ -39,6 +39,21 @@
       "publishStatus": "tracked-unverified"
     },
     {
+      "slug": "abnormal-ai-campaign-program-manager",
+      "roleTitle": "Abnormal AI Campaign Program Manager",
+      "fitClass": "adjacent",
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-01.html",
+        "project-03.html",
+        "project-02.html",
+        "project-06.html"
+      ],
+      "resumeHtmlPath": "output/pdf/wally-mostafa-abnormal-ai-campaign-program-manager-resume.html",
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Abnormal-AI-Campaign-Program-Manager-Resume.pdf",
+      "publishStatus": "local-only"
+    },
+    {
       "slug": "accenture-healthcare-ai-value-strategy",
       "roleTitle": "Healthcare AI Value Strategy Consultant",
       "fitClass": "unclassified",
