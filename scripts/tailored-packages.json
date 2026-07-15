@@ -222,6 +222,20 @@
       "publishStatus": "tracked-unverified"
     },
     {
+      "slug": "cinteot-ai-product-owner",
+      "roleTitle": "Cinteot AI Product Owner",
+      "fitClass": "adjacent",
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-01.html",
+        "project-03.html",
+        "project-02.html"
+      ],
+      "resumeHtmlPath": "output/pdf/wally-mostafa-cinteot-ai-product-owner-resume.html",
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Cinteot-AI-Product-Owner-Resume.pdf",
+      "publishStatus": "local-only"
+    },
+    {
       "slug": "cisco-principal-ai-product-manager",
       "roleTitle": "Principal AI Product Manager - Enterprise AI Platform",
       "fitClass": "unclassified",
@@ -452,7 +466,7 @@
     },
     {
       "slug": "etsy-staff-ux-researcher",
-      "roleTitle": "Etsy Staff UX Researcher \u2014 Inventory",
+      "roleTitle": "Etsy Staff UX Researcher — Inventory",
       "fitClass": "adjacent",
       "routeMode": "canonical-projects",
       "selectedProjects": [
@@ -873,7 +887,7 @@
     },
     {
       "slug": "senior-enterprise-customer-success-manager",
-      "roleTitle": "Senior Customer Success Manager \u2014 Enterprise Document Management",
+      "roleTitle": "Senior Customer Success Manager — Enterprise Document Management",
       "fitClass": "adjacent",
       "routeMode": "canonical-projects",
       "selectedProjects": [
