@@ -492,6 +492,20 @@
       "publishStatus": "live-verified"
     },
     {
+      "slug": "giga-staff-product-designer",
+      "roleTitle": "Giga Staff Product Designer",
+      "fitClass": "adjacent",
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-01.html",
+        "project-03.html",
+        "project-02.html"
+      ],
+      "resumeHtmlPath": "output/pdf/wally-mostafa-giga-staff-product-designer-resume.html",
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Giga-Staff-Product-Designer-Resume.pdf",
+      "publishStatus": "local-only"
+    },
+    {
       "slug": "healthcare-diagnostics-sales-support",
       "roleTitle": "Healthcare Diagnostics Sales Support",
       "fitClass": "unclassified",
