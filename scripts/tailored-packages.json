@@ -452,7 +452,7 @@
     },
     {
       "slug": "etsy-staff-ux-researcher",
-      "roleTitle": "Etsy Staff UX Researcher — Inventory",
+      "roleTitle": "Etsy Staff UX Researcher \u2014 Inventory",
       "fitClass": "adjacent",
       "routeMode": "canonical-projects",
       "selectedProjects": [
@@ -503,7 +503,7 @@
       ],
       "resumeHtmlPath": "output/pdf/wally-mostafa-giga-staff-product-designer-resume.html",
       "resumePdfPath": "output/pdf/Wally-Mostafa-Giga-Staff-Product-Designer-Resume.pdf",
-      "publishStatus": "local-only"
+      "publishStatus": "live-verified"
     },
     {
       "slug": "healthcare-diagnostics-sales-support",
@@ -873,7 +873,7 @@
     },
     {
       "slug": "senior-enterprise-customer-success-manager",
-      "roleTitle": "Senior Customer Success Manager — Enterprise Document Management",
+      "roleTitle": "Senior Customer Success Manager \u2014 Enterprise Document Management",
       "fitClass": "adjacent",
       "routeMode": "canonical-projects",
       "selectedProjects": [
