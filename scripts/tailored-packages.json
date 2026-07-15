@@ -263,7 +263,7 @@
       ],
       "resumeHtmlPath": "output/pdf/wally-mostafa-coco-ai-product-operator-resume.html",
       "resumePdfPath": "output/pdf/Wally-Mostafa-COCO-AI-Product-Operator-Resume.pdf",
-      "publishStatus": "uncommitted",
+      "publishStatus": "live-verified",
       "notes": "Intentionally marked incomplete until route-local numbering and commit state are fixed."
     },
     {
