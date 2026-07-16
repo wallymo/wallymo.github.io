@@ -1,0 +1,76 @@
+{
+  "slug": "hightouch-product-designer",
+  "roleTitle": "Hightouch Product Designer, Agents",
+  "fitClass": "strong",
+  "routeMode": "canonical-projects",
+  "selectedProjects": [
+    "project-01.html",
+    "project-02.html",
+    "project-03.html"
+  ],
+  "resumeHtmlPath": "output/pdf/wally-mostafa-hightouch-product-designer-resume.html",
+  "resumePdfPath": "output/pdf/Wally-Mostafa-Hightouch-Product-Designer-Resume.pdf",
+  "job": {
+    "company": "Hightouch",
+    "roleTitle": "Product Designer (Agents team; posting likely titled Senior Product Designer — JD says \"Senior\" is a placeholder and levels are informal)",
+    "jobUrl": null,
+    "sourceChannel": "chat-pasted-jd",
+    "dateCaptured": "2026-07-15",
+    "compensation": "Not stated in JD",
+    "location": "Remote, North America; optional offices in NY, SF, Charlotte",
+    "atsVendor": "unknown",
+    "applicationPolicy": "One application per candidate — applying to multiple Hightouch roles triggers auto-rejection",
+    "rawJd": "About Hightouch: Hightouch is an Agentic Marketing Platform powered by the industry-leading Composable CDP. With complete brand context, customer data, and performance history in one place, every marketer finally has the power to build and ship end-to-end campaigns themselves. Teams move faster, stay on brand, and get AI marketing that actually works. Founded in 2019 and headquartered in San Francisco, Hightouch enables marketing teams to analyze performance, brainstorm ideas, and generate creative at a speed and quality that wasn't previously possible. Named a Leader in the 2026 Gartner Magic Quadrant for Customer Data Platforms, Hightouch is trusted by leading enterprises like Domino's, Spotify, Aritzia, Cars.com, Ramp, and PetSmart. At Hightouch, our mission is to help our customers leverage data and AI to grow their businesses. The team is ambitious, impact-driven, efficient — and we believe humility, kindness, and compassion are essential to our success. If you're energized by velocity, obsessed with raising the bar, and want to build alongside people who care deeply about each other and our customers, we'd love to meet you. Why this role matters: You'll be designing the future of agentic marketing at a critical inflection point. We're not just moving data anymore. We're building AI agents that make real-time, data-driven decisions across entire customer journeys. This is 0-1 product work in a space where the rules are still being written. The opportunity is massive. Hightouch is investing heavily in Agents, and you'll be on the team doing the groundbreaking work. We're talking about tools that blend first-party data with machine learning models to unlock outcomes that were literally impossible before. Fast-moving, high-stakes, high-reward. The design team: We're a talented team spanning coast to coast, all remote-first. You'll grow faster here because we don't have layers of process or bureaucracy slowing you down. You ship. You learn. You iterate. Repeat. How we work: Weekly crits: Bring your work, get constructive feedback from relevant stakeholders. Design jams: We jam on the big stuff as a team (color palettes, new patterns, practice retros). Design system: We've invested in our system since day one. Expanding library, regular sync with engineering. Design cooldown: Bi-weekly sessions where we experiment with new tools, run design exercises, and work on side projects that have nothing to do with our roadmap. Past activities include building interactive prototypes in Framer, exploring AI design tools, and collaborative illustration sessions. We don't just talk about craft. We live it. Check out our 2025 recap to see a sample of what we shipped last year. You'll be surrounded by talented and collaborative folks, which means you're constantly learning from people who challenge the way you think. No stagnation here. What you'll do: You'll create and iterate on powerful tools for marketing teams using our Agents product suite. This means: 0-1 innovation: You're building new products in uncharted territory. Rapid iteration: Demonstrate your thinking through rapid designs and prototypes, not endless presentations. Product strategy: You'll connect directly with customers through research sessions, synthesize insights from usage data and feedback, and use that understanding to influence product direction and prioritization. Your voice will shape what we build. Live collaboration: You'll work directly with other designers, engineers, and PMs to define product details as a team. High growth: We don't expect you to know everything. We expect you to learn fast. What you bring: 6+ years designing and shipping user-friendly features or applications in technical spaces (bonus: B2B data or marketing products). Curiosity about AI: You're tinkering with new technologies constantly. You're not just watching AI from the sidelines. Craft excellence: Your visual, UI, and interaction skills are sharp. You can take a user problem from idea to high-fidelity solution. Team player mentality: You're kind, humble, and assume good intentions. You seek to understand before reacting. Figma proficiency required. Bonus if you're comfortable in Cursor, Framer, or Claude Code. The reality check: This role is not for everyone. If you need clear guardrails, slow iteration cycles, or a mature product to optimize, this isn't it. We're in rapid experimentation mode. Things are ambiguous. You'll need to be comfortable making decisions with incomplete information and iterating based on what we learn. But if you want to work on products that didn't exist six months ago, with a team that moves fast and trusts you to own your domain, this is the place. Interview process: Recruiter screen [30m]: Intro call. Manager screen [30m]: First conversation with Elliot, who leads the product design team, to learn more about your history and career trajectory. Team portfolio review [30m]: Review of your previous work. Design exercise [60m]: Live exercise we'll run through together where we'll give you a problem and want to see how you begin breaking it down. No homework. Just jamming live on a problem similar to how we work daily. Follow-up 1:1s [30m]: Meet members of the team to wrap up any final questions. FAQs: This role is remote for North America. Optional offices in NY, SF, Charlotte. We don't use formal levels at Hightouch. \"Senior\" is a placeholder. Your compensation will match your actual experience and skills, and we'll scope the role to fit your capabilities. We have limited inbound applications to one application per candidate. You will be auto-rejected if you apply to multiple roles. Please only apply to the position you are most qualified for. E-Verify Statement: Hightouch participates in E-Verify. After you join the team, we'll verify your eligibility to work in the U.S. by submitting information from your Form I-9 to the Social Security Administration and, if needed, the Department of Homeland Security. This process happens post-hire only — we never use E-Verify to pre-screen applicants."
+  },
+  "classification": {
+    "targetLane": "product-design-leadership",
+    "evidenceMode": "portfolio-primary",
+    "primarySource": "portfolio",
+    "supportingSource": "resume",
+    "hardGateStatus": "pass",
+    "hardGates": [
+      { "gate": "6+ years designing and shipping in technical spaces", "status": "pass", "evidence": "Sr. UX Designer from Aug 2018, Director of Experience & Innovation 2020-2023 on enterprise marketing analytics, AI product design 2023-present — roughly 8 years of design-titled work plus prior pharma marketing" },
+      { "gate": "Remote North America", "status": "pass", "evidence": "Raleigh, NC; Hightouch also lists an optional Charlotte office" },
+      { "gate": "Figma proficiency required", "status": "pass", "evidence": "Design-system case studies (projects 03/05) and research documentation practice (project 04) are Figma-based" },
+      { "gate": "One application per candidate policy", "status": "pass", "evidence": "No other Hightouch application on record; flag to human before submitting anywhere else at Hightouch" }
+    ]
+  },
+  "fitGate": {
+    "supportedOverlap": [
+      "0-1 AI product design for marketing teams: designed and shipped Claims Detector for regulated pharma marketing (promotional claim identification, evidence gaps, audit-ready annotations before MLR submission), securing investor backing off the functional POC",
+      "Rapid iteration through working prototypes: The POC Guy practice turns ambiguous client questions into testable product surfaces and demo flows; ListingPal generates a full listing marketing package in under 90 seconds via AgentSelect, a model-orchestration layer routing specialized LLMs per task",
+      "B2B marketing data products (the JD's stated bonus): led design for Kinesso (IPG) enterprise marketing analytics — data visualization, dashboard building, brand theming — used by 7,000+ users across 22 white-label brands",
+      "Design systems and craft: reusable component libraries, WCAG accessibility, Red Dot 2021 and 9 Indigo awards (2022/2023) for design system, data visualization, and audit-experience work",
+      "AI tinkering as default (JD bonus tools): daily Claude Code and Cursor use, multi-model orchestration across Claude, GPT, and Gemini backends, and a four-agent analysis pipeline behind WeReady's Bailey Intelligence dashboard",
+      "Research-informed product strategy: stakeholder research roadshows, competitive audits, and discovery-to-roadmap translation across enterprise and client work"
+    ],
+    "unsupportedRequirements": [
+      "Framer comfort — not claimed",
+      "CDP or customer-data-infrastructure product design employment — marketing-data adjacency comes from Kinesso analytics, not a CDP vendor",
+      "Staff product-designer tenure at a SaaS product company since 2023 — recent shipped design work is founder/consulting AI products, not an in-house design team seat"
+    ],
+    "actualMismatches": [],
+    "recommendation": "Proceed as strong. The portfolio directly proves the role's core work: 0-1 AI product design, prototype-first iteration, B2B marketing-data craft at enterprise scale, and design-system depth, with the JD's bonus lanes (marketing data products, Claude Code, Cursor) all supported. Position the recent founder/consulting chapter as hands-on 0-1 shipping speed, not a leadership detour, and do not claim Framer or CDP-vendor experience."
+  },
+  "hero": {
+    "eyebrow": "Hightouch Product Designer — Agents",
+    "tags": [
+      "0→1 AI product design",
+      "B2B marketing data platforms",
+      "Prototypes over presentations"
+    ],
+    "intro": "Agentic marketing sits at the intersection I already build in: AI products for marketing teams, designed and shipped fast. I designed an AI claims-review platform for regulated pharma marketing that secured investor backing off the working POC, I turn ambiguous client questions into working AI prototypes in days, and I led design for enterprise marketing analytics used by 7,000+ people across 22 white-label brands. I prototype in code with Claude Code and multi-model orchestration, so rapid iteration instead of endless presentations is already my default."
+  },
+  "contact": {
+    "prompt": "Hiring a product designer who can take agentic marketing tools from ambiguous idea to shipped, high-fidelity product? That is the 0-to-1 work I want to own on the Agents team. Email is the fastest way to reach me.",
+    "signoff": "0→1 AI product design · marketing data · rapid prototypes"
+  },
+  "constraints": {
+    "doNotClaim": [
+      "Framer proficiency",
+      "CDP or customer-data-infrastructure vendor experience",
+      "In-house SaaS product-design team tenure after 2023",
+      "Enterprise-scale agentic-AI design ownership beyond own multi-agent/multi-model products"
+    ]
+  }
+}

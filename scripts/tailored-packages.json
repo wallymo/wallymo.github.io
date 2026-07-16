@@ -593,6 +593,21 @@
       "notes": "Credible adjacent fit based on product strategy, customer research, enterprise platform scale, AI pilots, backlog ownership, and cross-functional delivery; no unsupported rental-domain, mobile-first platform, or risk-management ownership claims. PDF-only recruiter artifact per current Tailored Portfolio Rules; temporary render HTML removed after local verification."
     },
     {
+      "slug": "hightouch-product-designer",
+      "roleTitle": "Hightouch Product Designer, Agents",
+      "fitClass": "strong",
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-01.html",
+        "project-02.html",
+        "project-03.html"
+      ],
+      "resumeHtmlPath": "output/pdf/wally-mostafa-hightouch-product-designer-resume.html",
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Hightouch-Product-Designer-Resume.pdf",
+      "publishStatus": "local-only",
+      "notes": "Strong portfolio-primary fit: 0-1 AI product design (Claims Detector, investor-backed POC), rapid prototype practice (The POC Guy, ListingPal/AgentSelect), and B2B marketing-data platform design at enterprise scale (Kinesso analytics, 7,000+ users, 22 brands) are supported, plus the JD's bonus lanes (Claude Code, Cursor, marketing data products). Framer, CDP-vendor experience, and in-house SaaS design-team tenure after 2023 are not claimed. Config + raw JD persisted at scripts/packages/hightouch-product-designer.json."
+    },
+    {
       "slug": "hirerising-technical-client-success-manager",
       "roleTitle": "HireRising Client Success Manager (Technical / SaaS)",
       "fitClass": "adjacent",
