@@ -604,7 +604,7 @@
       ],
       "resumeHtmlPath": "output/pdf/wally-mostafa-hightouch-product-designer-resume.html",
       "resumePdfPath": "output/pdf/Wally-Mostafa-Hightouch-Product-Designer-Resume.pdf",
-      "publishStatus": "local-only",
+      "publishStatus": "live-verified",
       "notes": "Strong portfolio-primary fit: 0-1 AI product design (Claims Detector, investor-backed POC), rapid prototype practice (The POC Guy, ListingPal/AgentSelect), and B2B marketing-data platform design at enterprise scale (Kinesso analytics, 7,000+ users, 22 brands) are supported, plus the JD's bonus lanes (Claude Code, Cursor, marketing data products). Framer, CDP-vendor experience, and in-house SaaS design-team tenure after 2023 are not claimed. Config + raw JD persisted at scripts/packages/hightouch-product-designer.json."
     },
     {
