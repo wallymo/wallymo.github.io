@@ -1,10 +1,15 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "generatedFrom": "current-filesystem",
   "defaults": {
+    "newPackageWorkflowVersion": 2,
     "newPackageRouteMode": "canonical-projects",
     "newPackageFitGate": "strong-or-adjacent-only"
   },
+  "workflowVersions": [
+    1,
+    2
+  ],
   "fitClasses": [
     "strong",
     "adjacent",
@@ -1057,6 +1062,27 @@
       "resumePdfPath": "output/pdf/Wally-Mostafa-TaxAct-Website-Commerce-Product-Manager-Resume.pdf",
       "publishStatus": "live-verified",
       "notes": "PDF-only recruiter artifact per current Tailored Portfolio Rules; temporary render HTML removed after local verification."
+    },
+    {
+      "workflowVersion": 2,
+      "slug": "vanguard-psca-product-owner",
+      "roleTitle": "Vanguard PSCA Product Owner",
+      "artifactStem": "Vanguard-PSCA-Product-Owner",
+      "configPath": "scripts/packages/vanguard-psca-product-owner.json",
+      "targetLane": "ai-analytics-product-ownership",
+      "evidenceMode": "balanced",
+      "fitClass": "adjacent",
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-03.html",
+        "project-01.html",
+        "project-06.html",
+        "project-04.html"
+      ],
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Vanguard-PSCA-Product-Owner-Resume.pdf",
+      "publishStatus": "local-only",
+      "qaStatus": "qa-passed",
+      "builtAt": "2026-07-16T22:42:01.867Z"
     },
     {
       "slug": "varonis",

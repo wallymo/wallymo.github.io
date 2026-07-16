@@ -1,0 +1,439 @@
+{
+  "workflowVersion": 2,
+  "slug": "vanguard-psca-product-owner",
+  "roleTitle": "Vanguard PSCA Product Owner",
+  "artifactStem": "Vanguard-PSCA-Product-Owner",
+  "fitClass": "adjacent",
+  "routeMode": "canonical-projects",
+  "selectedProjects": [
+    "project-03.html",
+    "project-01.html",
+    "project-06.html",
+    "project-04.html"
+  ],
+  "job": {
+    "company": "Vanguard",
+    "roleTitle": "Product Owner, Plan Sponsor & Consultant Analytics",
+    "sourceChannel": "chat-pasted-jd",
+    "dateCaptured": "2026-07-16",
+    "location": "Hybrid; specific office location not stated in the pasted job description",
+    "atsVendor": "unknown",
+    "rawJd": "About the job: Join the Plan Sponsor & Consultant Analytics (PSCA) organization and play a pivotal role in advancing the next generation of analytics, data products, and AI-enabled solutions for Vanguard's institutional clients. This product owner position combines strategic thinking, analytics expertise, and product leadership to drive innovative capabilities that support plan sponsors, consultants, advisors, and Workplace Solutions business partners. As a subject matter expert, you will help define and execute the vision, roadmap, and business strategy for AI-powered analytics solutions in partnership with the CAI organization to deliver measurable value to our B2B audiences. Working across business, technology, data science, and client-facing teams, you will identify opportunities to leverage advanced analytics, machine learning, and emerging AI capabilities to solve complex business challenges, enhance client experiences, and accelerate data-driven decision-making. This role requires a strong blend of consulting, product management, and analytics expertise. You will serve as a trusted advisor to senior stakeholders, translating business needs into scalable AI solutions and influencing strategic priorities across the organization. Through partnership and thought leadership, you will help shape the future of Workplace Solutions data products while ensuring alignment with enterprise objectives, governance standards, and client outcomes. Core Responsibilities: Leads product management activities for multiple products, or one strategic product, with cross-divisional impact. Drives the design and continuous improvement of AI/ML technical solutions. Influences and collaborates with cross-functional teams to create best practices that drive significant change to the client experience. Ensures business outcomes are linked to business case drivers. Coaches technical product teams towards AI/ML best practices and learnings. Oversees product teams' support of the messaging, communication, and customer outreach as necessary. Facilitates strong business support through working with team members to promote a consistent approach to decisions/impacts and client propositions. Drives connection across all appropriate internal and external stakeholders. Leads the planning, development and implementation of new AI/ML technical products with cross-divisional impact. Defines and analyzes AI/ML markets, developing detailed product features and requirements, and developing implementation plans. Influences and employs a variety of qualitative and quantitative analysis techniques to continually improve the user experience. Participates in and influences ongoing business planning and departmental prioritization activities. Drives the team's engineering practices in development, continuous integration, and automated deployment. Participates in special projects and performs other duties as assigned. Qualifications: Undergraduate degree or equivalent combination of training and experience required. Graduate degree preferred. Minimum of eight years related business experience, with at least four years of technical project management experience. Special Factors - Sponsorship: Vanguard is not offering visa sponsorship for this position. How We Work: Vanguard has implemented a hybrid working model for the majority of crew members, designed to capture the benefits of enhanced flexibility while enabling in-person learning, collaboration, and connection."
+  },
+  "classification": {
+    "targetLane": "ai-analytics-product-ownership",
+    "evidenceMode": "balanced",
+    "primarySource": "resume product ownership, analytics scale, stakeholder leadership, and business outcomes",
+    "supportingSource": "portfolio AI products, analytics workflows, and research operating model",
+    "hardGateStatus": "pass",
+    "hardGates": [
+      {
+        "gate": "Undergraduate degree or equivalent",
+        "status": "pass",
+        "evidence": "BA in Labor Studies & Employee Relations from Rutgers University, 2010"
+      },
+      {
+        "gate": "Minimum eight years of related business experience",
+        "status": "pass",
+        "evidence": "Fifteen years across client strategy, product experience, enterprise analytics, and AI implementation"
+      },
+      {
+        "gate": "At least four years of technical project management experience",
+        "status": "pass",
+        "evidence": "Six-plus years leading cross-functional enterprise analytics and AI product delivery from requirements and research through implementation, handoff, and adoption; formal job titles were design and product strategy rather than Technical Project Manager"
+      },
+      {
+        "gate": "No visa sponsorship",
+        "status": "not-applicable",
+        "evidence": "The posting limitation is noted; private work-authorization eligibility is intentionally not stored in this public package config and must be confirmed before application"
+      }
+    ]
+  },
+  "requirements": [
+    {
+      "id": "strategic-product-management",
+      "text": "Lead one strategic product or multiple products with cross-divisional impact, including vision, roadmap, requirements, and implementation planning",
+      "priority": "core",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Owns product strategy, AI workflow design, requirements, prototype validation, roadmap decisions, and production handoff at Hedgehox and One Block Away",
+        "Led enterprise analytics and design-system product work used by 7,000+ users across 22 brands at Kinesso"
+      ],
+      "resumeTerms": [
+        "product strategy",
+        "roadmap",
+        "requirements",
+        "implementation"
+      ]
+    },
+    {
+      "id": "ai-ml-product-solutions",
+      "text": "Plan, develop, implement, and continuously improve AI/ML technical products",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Built and implemented governed AI products for regulated pharma workflows, including Claims Detector and Scope Generator",
+        "Built client-led AI POCs from discovery through working prototypes, validation, and handoff"
+      ],
+      "resumeTerms": [
+        "AI product",
+        "AI implementation",
+        "governed AI",
+        "continuous improvement"
+      ]
+    },
+    {
+      "id": "analytics-data-products",
+      "text": "Advance analytics and data products that support better client and business decisions",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Led enterprise marketing analytics, data visualization, dashboard, and reusable component experiences used by 7,000+ people across 22 white-label brands",
+        "Built the Digital Experience Audit workflow for channel scoring, benchmarks, recommendations, visualization, and client-ready outputs"
+      ],
+      "resumeTerms": [
+        "analytics products",
+        "data visualization",
+        "dashboards",
+        "benchmarks"
+      ]
+    },
+    {
+      "id": "cross-functional-stakeholders",
+      "text": "Influence business, technology, data, and client-facing teams while advising senior stakeholders",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Led cross-functional delivery across business, design, engineering, account, creative, strategy, and client teams",
+        "Managed Fortune 500 healthcare clients and translated executive and client priorities into briefs, requirements, timelines, and delivery decisions"
+      ],
+      "resumeTerms": [
+        "cross-functional",
+        "stakeholders",
+        "client",
+        "business outcomes"
+      ]
+    },
+    {
+      "id": "qualitative-quantitative-analysis",
+      "text": "Use qualitative and quantitative analysis to continuously improve the user experience",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Built a research discipline across a 20+ product suite using interviews, prototype testing, Typeform, Useberry, Heap analytics, standardized findings, and stakeholder roadshows"
+      ],
+      "resumeTerms": [
+        "qualitative and quantitative research",
+        "prototype testing",
+        "product analytics",
+        "user experience"
+      ]
+    },
+    {
+      "id": "institutional-retirement-domain",
+      "text": "Serve plan sponsors, retirement consultants, advisors, and Workplace Solutions partners",
+      "priority": "preferred",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "resumeTerms": [
+        "plan sponsor",
+        "retirement consulting",
+        "defined contribution",
+        "workplace retirement"
+      ]
+    },
+    {
+      "id": "engineering-practice-ownership",
+      "text": "Drive engineering practices for development, continuous integration, and automated deployment",
+      "priority": "core",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "resumeTerms": [
+        "continuous integration",
+        "automated deployment",
+        "CI/CD ownership"
+      ]
+    }
+  ],
+  "fitGate": {
+    "supportedOverlap": [
+      "Fifteen years of related business experience and six-plus years leading technical product delivery across enterprise analytics and AI implementation",
+      "Direct AI product strategy and implementation evidence: Claims Detector secured investor backing, and additional governed tools cover regulated review, brief intake, scoping, routing, and risk guidance",
+      "Direct enterprise analytics evidence: data visualization, dashboards, audit workflows, benchmarks, and reusable systems used by 7,000+ users across 22 white-label brands",
+      "Direct consulting and stakeholder leadership across Fortune 500 clients, distributed product teams, business leaders, designers, engineers, and client-facing partners",
+      "Direct qualitative and quantitative research evidence across a 20+ product suite, including interviews, prototype testing, feedback tools, behavioral analytics, and continuous iteration",
+      "Undergraduate degree requirement is satisfied by a Rutgers BA"
+    ],
+    "unsupportedRequirements": [
+      "Institutional retirement, plan-sponsor, consultant, advisor, or Workplace Solutions domain experience",
+      "Direct ownership of CI/CD and automated deployment engineering practices",
+      "Formal Product Owner or Technical Project Manager title history",
+      "Graduate degree"
+    ],
+    "actualMismatches": [],
+    "missingEvidence": [
+      "Named retirement analytics or financial-services data-product outcomes",
+      "Direct people-coaching examples for AI/ML technical product teams",
+      "Documented business cases linking product outcomes to financial drivers",
+      "Private confirmation that the no-sponsorship condition is compatible with the candidate's eligibility"
+    ],
+    "recommendation": "Proceed as adjacent with an AI-enabled analytics product leadership position. Lead with enterprise analytics scale, governed AI product implementation, research-driven prioritization, and cross-functional client leadership. Do not claim institutional retirement expertise, formal Product Owner tenure, or engineering-practice ownership."
+  },
+  "resume": {
+    "summary": "AI product and analytics leader with 15 years across product strategy, enterprise data products, client consulting, and regulated AI implementation. I translate business needs into roadmaps, requirements, governed AI workflows, and client-facing analytics used at enterprise scale. My strength is aligning business, design, engineering, data, and client teams from discovery through implementation, adoption, and continuous improvement.",
+    "skills": [
+      {
+        "label": "AI Product Strategy & Implementation",
+        "description": "Product vision, discovery, feature requirements, roadmaps, POCs, governed AI workflows, validation, and production handoff"
+      },
+      {
+        "label": "Analytics & Data Products",
+        "description": "Enterprise analytics, dashboards, data visualization, audit workflows, benchmarks, recommendations, and decision support"
+      },
+      {
+        "label": "Cross-Functional Product Leadership",
+        "description": "Business, design, engineering, data, and client alignment; prioritization, implementation planning, adoption, and business outcomes"
+      },
+      {
+        "label": "Research & Client Experience",
+        "description": "Qualitative and quantitative research, interviews, prototype testing, product analytics, stakeholder workshops, and continuous improvement"
+      }
+    ],
+    "roles": {
+      "hedgehox": [
+        "Secured an investor for proprietary Claims Detection software by building the functional POC, shaping the product story, and iterating with stakeholders",
+        "Led product strategy and requirements for Claims Detector, translating pharma business needs into governed AI workflows for claim identification, evidence gaps, and audit-ready annotations",
+        "Defined implementation paths across MLR claim review, brief intake, scoping, review routing, submission capture, and FDA signal monitoring with human review and governance built in",
+        "Built Scope Generator for pharma agency finance and operations teams to manage regional rate cards, brands, sub-brands, and natural-language scope changes"
+      ],
+      "one-block-away": [
+        "Own AI product strategy, discovery, workflow design, front-end build, backend logic, demo readiness, and client iteration from first question through working prototype and roadmap decisions",
+        "Built ListingPal's AI listing-generation POC, turning basic property inputs into listing copy, social posts, ad copy, styling direction, and MLS/SEO-ready language in under 90 seconds",
+        "Built WeReady's Bailey Intelligence dashboard, translating founder inputs, GitHub signals, source health, risk scoring, and evidence trails into decision-ready startup workflows",
+        "Translate ambiguous client needs into prioritized requirements, product features, testable demos, implementation choices, and build-ready handoffs"
+      ],
+      "kinesso": [
+        "Led enterprise analytics products and experiences while scaling design from 2 to 30 people across the US and Poland, supporting 7,000+ users across 22 white-label brands",
+        "Partnered across product, design, engineering, and business teams to shape MIE data visualization, dashboard building, brand theming, and reusable analytics components from requirements through adoption",
+        "Built the Digital Experience Audit workflow for channel scoring, benchmarks, recommendations, data visualization, and presentation-ready client outputs",
+        "Built a research discipline across a 20+ product suite, using interviews, prototype testing, feedback tools, product analytics, and stakeholder roadshows to guide prioritization and continuous improvement"
+      ],
+      "omnicom": [
+        "Supported oncology accounts as a freelance UX designer, translating regulated business and user needs into clearer product flows, content structures, and implementation recommendations",
+        "Partnered across account, strategy, creative, and delivery teams to align client outcomes, user experience, and build-ready decisions"
+      ],
+      "heartbeat": [
+        "Led research and experience strategy for pharma and healthcare products, translating stakeholder input, competitive audits, and user needs into product direction",
+        "Created journey maps, user flows, wireframes, and prototypes for patient, HCP, and internal brand-team experiences across regulated healthcare programs",
+        "Partnered with strategy, creative, account, and engineering teams to move research findings into prioritized, build-ready product and campaign experiences"
+      ],
+      "account-management": [
+        "Managed Fortune 500 pharma and healthcare clients with USD 2M to 50M+ budgets across complex portfolios, advising stakeholders and aligning work to business, audience, and regulatory outcomes",
+        "Served as one of two account consumer leads on FCB Health's largest pharma account across TV, radio, digital, gaming, Times Square, brand planning, and MLR review",
+        "Translated client strategy into briefs, requirements, timelines, priorities, and MLR-ready delivery across account, creative, UX, analytics, and development teams"
+      ]
+    }
+  },
+  "hero": {
+    "eyebrow": "Vanguard PSCA Product Owner",
+    "tags": [
+      "AI-enabled analytics products",
+      "Cross-functional product leadership",
+      "Research to roadmap"
+    ],
+    "intro": "I fit Vanguard's PSCA product owner role through the intersection it needs most: AI product strategy, enterprise analytics, and consultative delivery. I have led analytics experiences used by 7,000+ people across 22 brands, turned regulated business needs into governed AI products, and built a research operating model across a 20+ product suite. I bring the product judgment to connect stakeholder needs, requirements, implementation teams, and measurable client experience improvements."
+  },
+  "contact": {
+    "prompt": "Hiring a product leader who can turn complex institutional needs into governed AI solutions and analytics that clients can act on? I would welcome a conversation about the PSCA roadmap; email is the fastest way to reach me.",
+    "signoff": "AI product strategy · enterprise analytics · client outcomes"
+  },
+  "constraints": {
+    "doNotClaim": [
+      "Institutional retirement expertise",
+      "Plan sponsor subject matter expertise",
+      "Formal Product Owner tenure",
+      "Technical Project Manager title",
+      "CI/CD ownership",
+      "Automated deployment ownership",
+      "Machine learning engineering",
+      "Graduate degree"
+    ],
+    "blockedTerms": [
+      "retirement product expert",
+      "plan sponsor expert",
+      "owned continuous integration",
+      "owned automated deployment"
+    ]
+  },
+  "privacy": {
+    "publicSafe": true,
+    "notes": "Contains only the public job description and sanitized portfolio/resume evidence. Personal work-authorization eligibility is intentionally excluded and must be confirmed privately before application."
+  },
+  "qa": {
+    "status": "qa-passed",
+    "builtAt": "2026-07-16T22:42:01.867Z",
+    "configInputSha256": "c6bb273276c0f08debb8f949ec0d572a22c26d2d8e2da42824d55e72cd2be295",
+    "sourceResumeSha256": "375cc6566f5bbad5b95be9da551dfe87824378fb252222409d29ef32d334ca25",
+    "artifactHashes": {
+      "routeSha256": "0b80f189409b084458f74edab910063f42e32e093a840dd4eb413f8695575a03",
+      "resumePdfSha256": "2c5b4bec22b5c68c3349ca39bc40405000921492f887db24a12bc0606126fad8",
+      "scopedProjectSha256": {}
+    },
+    "renderer": {
+      "browser": {
+        "name": "chrome-headless-shell",
+        "version": "Google Chrome for Testing 149.0.7827.55"
+      },
+      "htmlPath": "tmp/tailored-resumes/vanguard-psca-product-owner.html",
+      "pdfPath": "output/pdf/Wally-Mostafa-Vanguard-PSCA-Product-Owner-Resume.pdf"
+    },
+    "ats": {
+      "ok": true,
+      "pdfPath": "output/pdf/Wally-Mostafa-Vanguard-PSCA-Product-Owner-Resume.pdf",
+      "pageCount": 2,
+      "fileSize": 131285,
+      "annotations": [
+        {
+          "page": 1,
+          "uri": "mailto:wmostafa12@gmail.com"
+        },
+        {
+          "page": 1,
+          "uri": "https://linkedin.com/in/wallymo"
+        },
+        {
+          "page": 1,
+          "uri": "https://wallymo.github.io/vanguard-psca-product-owner/"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/6748"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/4629"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.red-dot.org/project/dxa-digital-experience-audit-55219"
+        }
+      ],
+      "coverage": [
+        {
+          "id": "strategic-product-management",
+          "requirement": "Lead one strategic product or multiple products with cross-divisional impact, including vision, roadmap, requirements, and implementation planning",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "product strategy",
+            "roadmap",
+            "requirements",
+            "implementation"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "ai-ml-product-solutions",
+          "requirement": "Plan, develop, implement, and continuously improve AI/ML technical products",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "AI product",
+            "AI implementation",
+            "governed AI",
+            "continuous improvement"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "analytics-data-products",
+          "requirement": "Advance analytics and data products that support better client and business decisions",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "analytics products",
+            "data visualization",
+            "dashboards",
+            "benchmarks"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "cross-functional-stakeholders",
+          "requirement": "Influence business, technology, data, and client-facing teams while advising senior stakeholders",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "cross-functional",
+            "stakeholders",
+            "client",
+            "business outcomes"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "qualitative-quantitative-analysis",
+          "requirement": "Use qualitative and quantitative analysis to continuously improve the user experience",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "qualitative and quantitative research",
+            "prototype testing",
+            "product analytics",
+            "user experience"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "institutional-retirement-domain",
+          "requirement": "Serve plan sponsors, retirement consultants, advisors, and Workplace Solutions partners",
+          "priority": "preferred",
+          "evidenceStatus": "none",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "plan sponsor",
+            "retirement consulting",
+            "defined contribution",
+            "workplace retirement"
+          ]
+        },
+        {
+          "id": "engineering-practice-ownership",
+          "requirement": "Drive engineering practices for development, continuous integration, and automated deployment",
+          "priority": "core",
+          "evidenceStatus": "none",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "continuous integration",
+            "automated deployment",
+            "CI/CD ownership"
+          ]
+        }
+      ],
+      "failures": [],
+      "warnings": []
+    },
+    "route": {
+      "viewports": [
+        {
+          "name": "desktop",
+          "screenshot": "tmp/qa/vanguard-psca-product-owner/desktop.png",
+          "errors": []
+        },
+        {
+          "name": "mobile",
+          "screenshot": "tmp/qa/vanguard-psca-product-owner/mobile.png",
+          "errors": []
+        }
+      ],
+      "errors": []
+    }
+  }
+}
