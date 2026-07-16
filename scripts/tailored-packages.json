@@ -1080,9 +1080,27 @@
         "project-04.html"
       ],
       "resumePdfPath": "output/pdf/Wally-Mostafa-Vanguard-PSCA-Product-Owner-Resume.pdf",
-      "publishStatus": "local-only",
+      "publishStatus": "live-verified",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-07-16T22:42:01.867Z"
+      "builtAt": "2026-07-16T22:42:01.867Z",
+      "verification": {
+        "verifiedAt": "2026-07-16T23:02:51.736Z",
+        "routeUrl": "https://wallymo.github.io/vanguard-psca-product-owner/",
+        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-Vanguard-PSCA-Product-Owner-Resume.pdf",
+        "configUrl": "https://wallymo.github.io/scripts/packages/vanguard-psca-product-owner.json",
+        "projectUrls": [
+          "https://wallymo.github.io/project-03.html",
+          "https://wallymo.github.io/project-01.html",
+          "https://wallymo.github.io/project-06.html",
+          "https://wallymo.github.io/project-04.html"
+        ],
+        "configSha256": "a6c460a4234172d204a0bc03000135ec7ea84bfcb94d7504e0153a16959b3d3e",
+        "pdfSha256": "2c5b4bec22b5c68c3349ca39bc40405000921492f887db24a12bc0606126fad8",
+        "routeSha256": "0b80f189409b084458f74edab910063f42e32e093a840dd4eb413f8695575a03",
+        "scopedProjectSha256": {},
+        "configInputSha256": "c6bb273276c0f08debb8f949ec0d572a22c26d2d8e2da42824d55e72cd2be295",
+        "qaBuiltAt": "2026-07-16T22:42:01.867Z"
+      }
     },
     {
       "slug": "varonis",
