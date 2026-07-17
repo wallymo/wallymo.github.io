@@ -1079,9 +1079,26 @@
         "project-04.html"
       ],
       "resumePdfPath": "output/pdf/Wally-Mostafa-Thriveworks-Account-Manager-Resume.pdf",
-      "publishStatus": "local-only",
+      "publishStatus": "live-verified",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-07-17T00:22:52.529Z"
+      "builtAt": "2026-07-17T00:22:52.529Z",
+      "verification": {
+        "verifiedAt": "2026-07-17T00:26:15.502Z",
+        "routeUrl": "https://wallymo.github.io/thriveworks-account-manager/",
+        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-Thriveworks-Account-Manager-Resume.pdf",
+        "configUrl": "https://wallymo.github.io/scripts/packages/thriveworks-account-manager.json",
+        "projectUrls": [
+          "https://wallymo.github.io/project-06.html",
+          "https://wallymo.github.io/project-01.html",
+          "https://wallymo.github.io/project-04.html"
+        ],
+        "configSha256": "fe04a16ba8030785abbaae3a028836fda2fd4c436d90ea2f132a205b8347dae4",
+        "pdfSha256": "a1af8544bd9c480b9356acd99c042cb914e33a179a19298205258024a0ef9364",
+        "routeSha256": "c2fc7c5278c90857cfd5128b3b434b8ecff4ceba5ba8054513cf1476bfe82dc0",
+        "scopedProjectSha256": {},
+        "configInputSha256": "76ad90c0e6a3266206aa3eecad9f652c9cc82d9dfc8e4a1bddee435caea9e947",
+        "qaBuiltAt": "2026-07-17T00:22:52.529Z"
+      }
     },
     {
       "workflowVersion": 2,
