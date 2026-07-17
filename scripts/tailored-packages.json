@@ -1065,6 +1065,26 @@
     },
     {
       "workflowVersion": 2,
+      "slug": "thriveworks-account-manager",
+      "roleTitle": "Thriveworks Account Manager",
+      "artifactStem": "Thriveworks-Account-Manager",
+      "configPath": "scripts/packages/thriveworks-account-manager.json",
+      "targetLane": "healthcare-account-management",
+      "evidenceMode": "resume-primary",
+      "fitClass": "adjacent",
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-06.html",
+        "project-01.html",
+        "project-04.html"
+      ],
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Thriveworks-Account-Manager-Resume.pdf",
+      "publishStatus": "local-only",
+      "qaStatus": "qa-passed",
+      "builtAt": "2026-07-17T00:22:52.529Z"
+    },
+    {
+      "workflowVersion": 2,
       "slug": "vanguard-psca-product-owner",
       "roleTitle": "Vanguard PSCA Product Owner",
       "artifactStem": "Vanguard-PSCA-Product-Owner",

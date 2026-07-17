@@ -1,0 +1,408 @@
+{
+  "workflowVersion": 2,
+  "slug": "thriveworks-account-manager",
+  "roleTitle": "Thriveworks Account Manager",
+  "artifactStem": "Thriveworks-Account-Manager",
+  "fitClass": "adjacent",
+  "routeMode": "canonical-projects",
+  "selectedProjects": [
+    "project-06.html",
+    "project-01.html",
+    "project-04.html"
+  ],
+  "job": {
+    "company": "Thriveworks",
+    "roleTitle": "Account Manager",
+    "sourceChannel": "chat-pasted-jd",
+    "dateCaptured": "2026-07-16",
+    "location": "Not stated in the pasted job description",
+    "atsVendor": "Workday",
+    "rawJd": "About Thriveworks: Thriveworks is a clinician-founded and operated organization dedicated to making effective, affordable, and accessible mental healthcare available to all Americans. With more than 2,800 providers across all 50 states, 340+ in-person locations nationwide, and participation with more than 360 commercial and government health plans, Thriveworks is committed to increasing access to high-quality mental health care. About The Job: The Account Manager serves as the strategic owner of assigned partnerships and referral relationships. This role is responsible for driving account growth, strengthening partner engagement, overseeing operational performance, and ensuring successful collaboration between Thriveworks and external organizations. The Account Manager functions as both a relationship manager and strategic consultant, utilizing data, reporting, and proactive outreach to maximize partnership success. Key Responsibilities: Serve as the primary point of contact and strategic owner for assigned partnerships. Build and maintain strong relationships with key stakeholders, referral sources, and decision-makers. Anticipate partner needs and proactively identify opportunities to strengthen engagement, improve performance, and support growth. Lead internal and external meetings, presentations, and business reviews. Gather, analyze, and communicate partnership outcomes and performance data on established cadences. Collaborate cross-functionally to ensure partner and patient needs are addressed effectively. Resolve partner concerns and escalated issues in a timely manner. Develop and execute account-specific growth strategies based on referral trends, utilization data, and market opportunities. Monitor partnership performance and recommend strategies to increase referral volume, engagement, and retention. Work collaboratively with the Care Partnerships Associate on shared partnership accounts. Develop a comprehensive understanding of assigned account performance, including demand volume, conversion rates, referral trends, utilization patterns, and barriers to care. Maintain accurate and comprehensive Salesforce account records, contacts, referral attribution, activities, and documentation. Serve as the subject matter expert for assigned account information, performance metrics, and Salesforce account structure. Actively participate in internal meetings and training, sharing ideas and best practices. Always be looking for ways to add value and streamline the partner experience. Skills and Qualifications: Strong communication and relationship-building skills; comfortable on the phone, in person, and via email. High level of ownership; initiate, follow up, and follow through. Problem-solving mindset; troubleshoot partner issues with creativity and urgency. Comfortable with data and translating performance metrics into actions. Organizational skills with the ability to juggle multiple priorities in a fast-paced environment. Ability to work independently, executive communication, and presentation skills. Requirements: 2-5 years of professional experience; business development, account management, and healthcare experience are highly preferred. Experience with CRM tools, Salesforce preferred, and productivity platforms including Google Suite and Monday.com. Benefits: Team culture; professional development and advancement opportunities; 401K with 3% employer match; healthcare, dental, vision, and life insurance benefits; paid time off and paid holidays; professional EAP program; optional short-term disability, long-term disability, and group accident insurance. Thriveworks employees believe in the mission to help people live happy, healthy lives and embody values focused on community, purpose, integrity, access, quality, and working well together. Physical demands may include being sedentary for long periods and entering text or data through a traditional keyboard. Thriveworks is an Equal Opportunity Employer and welcomes diverse candidates. Recruiters and team members will only email from thriveworks@myworkday.com or an @thriveworks.com address. Interviews take place over Google Meet, and Thriveworks will never ask candidates to purchase or send equipment."
+  },
+  "classification": {
+    "targetLane": "healthcare-account-management",
+    "evidenceMode": "resume-primary",
+    "primarySource": "resume",
+    "supportingSource": "portfolio",
+    "hardGateStatus": "pass",
+    "hardGates": [
+      {
+        "gate": "2-5 years of professional experience with account management and healthcare highly preferred",
+        "status": "pass",
+        "evidence": "Seven years of direct Fortune 500 pharma and healthcare account management plus later regulated healthcare delivery experience exceeds the stated minimum."
+      },
+      {
+        "gate": "Required location, work authorization, license, or clinical credential",
+        "status": "not-applicable",
+        "evidence": "The pasted job description states no location, work-authorization, license, or clinical-credential requirement."
+      },
+      {
+        "gate": "CRM, Salesforce, Google Suite, and Monday.com experience",
+        "status": "not-applicable",
+        "evidence": "These tools are listed as experience preferences rather than explicit knockout requirements; no unsupported proficiency is claimed."
+      }
+    ]
+  },
+  "requirements": [
+    {
+      "id": "account-ownership",
+      "text": "Own assigned accounts and serve as a strategic relationship manager.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Seven years managing Fortune 500 pharma and healthcare clients with $2M-$50M+ budgets.",
+        "One of two account consumer leads on FCB Health's largest pharma account across integrated channels and MLR review."
+      ],
+      "resumeTerms": [
+        "account management"
+      ]
+    },
+    {
+      "id": "relationship-communication",
+      "text": "Build stakeholder relationships and lead clear communication, meetings, presentations, and business reviews.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Healthcare client service work includes day-to-day client communication, brand planning, creative feedback, presentations, and high-touch delivery.",
+        "Current consulting work includes client discovery, prioritization, scope definition, presentations, and iteration."
+      ],
+      "resumeTerms": [
+        "client communication"
+      ]
+    },
+    {
+      "id": "performance-data",
+      "text": "Analyze performance data and translate metrics into recommendations and action.",
+      "priority": "core",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Led enterprise analytics and data-visualization work used by 7,000+ users across 22 brands.",
+        "Built the Digital Experience Audit workflow for channel scoring, benchmarks, recommendations, visualization, and presentation-ready client outputs."
+      ],
+      "resumeTerms": [
+        "performance data"
+      ]
+    },
+    {
+      "id": "cross-functional-delivery",
+      "text": "Coordinate across teams, surface risks, and keep complex work moving.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Coordinated high-volume healthcare work across clients, senior leadership, creative, strategy, production, UX, and development teams against deadlines and budgets.",
+        "Scaled a distributed product design organization from 2 to 30 across the United States and Poland."
+      ],
+      "resumeTerms": [
+        "cross-functional"
+      ]
+    },
+    {
+      "id": "healthcare-experience",
+      "text": "Bring healthcare experience and understand regulated partner and patient contexts.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Eleven years across pharma and healthcare communications, including CNS, psychiatry, cardiovascular, oncology, patient, and HCP work.",
+        "Current work includes FDA, HIPAA, and MLR workflows for pharma agency teams."
+      ],
+      "resumeTerms": [
+        "healthcare account management"
+      ]
+    },
+    {
+      "id": "referral-growth",
+      "text": "Own referral-source relationships and increase referral volume, engagement, and retention.",
+      "priority": "core",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "resumeTerms": [
+        "referral volume"
+      ]
+    },
+    {
+      "id": "salesforce-crm",
+      "text": "Maintain Salesforce account records, referral attribution, activities, and account structure.",
+      "priority": "preferred",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "resumeTerms": [
+        "Salesforce"
+      ]
+    },
+    {
+      "id": "productivity-platforms",
+      "text": "Use Google Suite and Monday.com for account productivity and organization.",
+      "priority": "preferred",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "resumeTerms": [
+        "Monday.com"
+      ]
+    }
+  ],
+  "fitGate": {
+    "supportedOverlap": [
+      "Seven years of direct Fortune 500 pharma and healthcare account management with $2M-$50M+ budgets and integrated client delivery.",
+      "Strong relationship and communication proof through day-to-day client service, brand planning, presentations, creative feedback, and high-touch delivery.",
+      "Performance-data adjacency through enterprise analytics, channel scoring, benchmarks, recommendations, data visualization, and presentation-ready client outputs.",
+      "Cross-functional operating proof across account, strategy, creative, UX, product, development, finance, operations, and senior leadership.",
+      "Deep healthcare domain familiarity across CNS, psychiatry, oncology, patient and HCP experiences, and regulated FDA, HIPAA, and MLR workflows."
+    ],
+    "unsupportedRequirements": [
+      "Direct ownership of referral-source relationships, referral attribution, utilization trends, and patient-conversion barriers is not documented.",
+      "Salesforce account administration and named CRM-platform experience are not documented.",
+      "Google Suite and Monday.com proficiency are not documented."
+    ],
+    "actualMismatches": [
+      "The documented account-management center is pharma agency and brand work, not provider-referral partnerships.",
+      "The role targets 2-5 years of experience, while the resume shows seven years of direct account management and 15 years overall, creating a possible overqualification concern."
+    ],
+    "missingEvidence": [
+      "Quantified account growth, referral volume, partner retention, conversion-rate, and utilization outcomes.",
+      "Salesforce account structure, activity logging, and referral-attribution ownership."
+    ],
+    "recommendation": "Proceed as adjacent. Lead with direct healthcare account ownership, relationship communication, cross-functional delivery, and data-to-recommendation work. Keep the positioning honest by avoiding claims of provider-referral ownership, Salesforce administration, or quantified referral and retention growth."
+  },
+  "resume": {
+    "summary": "Healthcare account and client-strategy leader with 7+ years managing Fortune 500 pharma relationships and USD 2M-50M+ portfolios. I turn partner needs and performance data into clear account plans, presentations, recommendations, and coordinated action across strategy, creative, product, and operations teams. My broader background spans 15 years across regulated healthcare, enterprise analytics, and high-touch cross-functional delivery.",
+    "skills": [
+      {
+        "label": "Healthcare Account Management",
+        "description": "7+ years managing Fortune 500 pharma and healthcare relationships, USD 2M-50M+ portfolios, client communication, presentations, and high-touch delivery"
+      },
+      {
+        "label": "Relationship Communication & Account Planning",
+        "description": "Client discovery, briefs, status communication, stakeholder alignment, presentations, prioritization, and follow-through"
+      },
+      {
+        "label": "Performance Data & Recommendations",
+        "description": "Enterprise analytics, channel scoring, benchmarks, recommendations, data visualization, and presentation-ready client outputs"
+      },
+      {
+        "label": "Cross-Functional Operations",
+        "description": "Account, strategy, creative, UX, product, development, finance, and operations coordination across regulated work"
+      }
+    ],
+    "roles": {
+      "hedgehox": [
+        "Convert pharma agency needs into practical tools for MLR claim review, brief intake, scoping, review routing, submission capture, and FDA signal monitoring",
+        "Built Scope Generator for pharma agency finance and operations teams to manage regional rate cards, brands, sub-brands, and natural-language scope changes",
+        "Designed Claims Detector workflows that identify promotional claims, surface evidence gaps, and pre-populate audit-ready annotations before MLR submission"
+      ],
+      "one-block-away": [
+        "Lead client discovery, prioritization, scope definition, presentations, and iteration from first ask through working deliverable",
+        "Turn ambiguous requests into clear briefs, testable concepts, demo narratives, and roadmap decisions while keeping stakeholders aligned on next steps"
+      ],
+      "kinesso": [
+        "Scaled product design from 2 to 30 people across the US and Poland for enterprise analytics used by 7,000+ users across 22 white-label brands",
+        "Led UX and design-system strategy for MIE data visualization, dashboard building, brand theming, and reusable analytics components",
+        "Built the Digital Experience Audit workflow for performance data, channel scoring, benchmarks, recommendations, visualization, and presentation-ready client outputs"
+      ],
+      "omnicom": [
+        "Supported oncology accounts as a freelance UX designer, combining UX design and account-management experience to strengthen regulated healthcare work",
+        "Championed UX best practices across account, strategy, creative, and delivery conversations, translating brand goals into clearer user flows, content structure, and digital recommendations"
+      ],
+      "heartbeat": [
+        "Led UX research and experience strategy for pharma and healthcare work, translating stakeholder input, competitive audits, and user needs into digital product direction",
+        "Created journey maps, site maps, user flows, wireframes, and prototypes for patient, HCP, and internal brand-team experiences across regulated healthcare programs",
+        "Partnered with strategy, creative, account, and engineering teams to move UX recommendations from research findings into build-ready product and campaign experiences"
+      ],
+      "account-management": [
+        "7+ years managing Fortune 500 pharma and healthcare clients with USD 2M-50M+ budgets across CNS/neurology, psychiatry, cardiovascular/metabolic, and sleep/wakefulness brands including NUVIGIL, Namenda XR, Lipitor, and Zoloft",
+        "One of two account consumer leads on FCB Health's largest pharma account across TV, radio, digital, gaming, Times Square, unbranded campaigns, brand planning, and MLR review",
+        "Translated client and brand strategy into briefs, creative feedback, production requirements, timelines, and MLR-ready deliverables across account, creative, UX, and development teams",
+        "Coordinated high-volume work across clients, senior leadership, creative, strategy, production, and development teams, surfacing risks early and keeping deliverables moving against deadlines and budgets"
+      ]
+    }
+  },
+  "hero": {
+    "eyebrow": "Thriveworks Account Manager",
+    "tags": [
+      "Healthcare account management",
+      "Relationship-led delivery",
+      "Data-to-action reporting"
+    ],
+    "intro": "Thriveworks needs an account manager who can turn partner conversations and performance signals into coordinated action. I bring seven years managing Fortune 500 healthcare relationships and $2M-$50M portfolios, plus enterprise analytics work used across 22 brands and 7,000+ users. I know how to keep stakeholders aligned, translate data into clear recommendations, and move cross-functional teams from concern to follow-through."
+  },
+  "contact": {
+    "prompt": "Hiring an account manager who can strengthen healthcare relationships, make performance data actionable, and keep cross-functional teams aligned? Email is the fastest way to reach me.",
+    "signoff": "Healthcare accounts · relationship management · data-to-action reporting"
+  },
+  "constraints": {
+    "doNotClaim": [
+      "Salesforce account administration",
+      "Referral-network ownership",
+      "Quantified referral growth",
+      "Account-retention ownership",
+      "Google Suite proficiency",
+      "Monday.com proficiency"
+    ],
+    "blockedTerms": [
+      "Salesforce administrator",
+      "referral volume growth",
+      "referral attribution ownership"
+    ]
+  },
+  "privacy": {
+    "publicSafe": true,
+    "notes": "Contains only the public job description and sanitized resume and portfolio evidence. It excludes recruiter details, application answers, compensation boundaries, and private eligibility information."
+  },
+  "qa": {
+    "status": "qa-passed",
+    "builtAt": "2026-07-17T00:22:52.529Z",
+    "configInputSha256": "76ad90c0e6a3266206aa3eecad9f652c9cc82d9dfc8e4a1bddee435caea9e947",
+    "sourceResumeSha256": "375cc6566f5bbad5b95be9da551dfe87824378fb252222409d29ef32d334ca25",
+    "artifactHashes": {
+      "routeSha256": "c2fc7c5278c90857cfd5128b3b434b8ecff4ceba5ba8054513cf1476bfe82dc0",
+      "resumePdfSha256": "a1af8544bd9c480b9356acd99c042cb914e33a179a19298205258024a0ef9364",
+      "scopedProjectSha256": {}
+    },
+    "renderer": {
+      "browser": {
+        "name": "chrome-headless-shell",
+        "version": "Google Chrome for Testing 149.0.7827.55"
+      },
+      "htmlPath": "tmp/tailored-resumes/thriveworks-account-manager.html",
+      "pdfPath": "output/pdf/Wally-Mostafa-Thriveworks-Account-Manager-Resume.pdf"
+    },
+    "ats": {
+      "ok": true,
+      "pdfPath": "output/pdf/Wally-Mostafa-Thriveworks-Account-Manager-Resume.pdf",
+      "pageCount": 2,
+      "fileSize": 126852,
+      "annotations": [
+        {
+          "page": 1,
+          "uri": "mailto:wmostafa12@gmail.com"
+        },
+        {
+          "page": 1,
+          "uri": "https://linkedin.com/in/wallymo"
+        },
+        {
+          "page": 1,
+          "uri": "https://wallymo.github.io/thriveworks-account-manager/"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/6748"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/4629"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.red-dot.org/project/dxa-digital-experience-audit-55219"
+        }
+      ],
+      "coverage": [
+        {
+          "id": "account-ownership",
+          "requirement": "Own assigned accounts and serve as a strategic relationship manager.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "account management"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "relationship-communication",
+          "requirement": "Build stakeholder relationships and lead clear communication, meetings, presentations, and business reviews.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "client communication"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "performance-data",
+          "requirement": "Analyze performance data and translate metrics into recommendations and action.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "performance data"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "cross-functional-delivery",
+          "requirement": "Coordinate across teams, surface risks, and keep complex work moving.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "cross-functional"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "healthcare-experience",
+          "requirement": "Bring healthcare experience and understand regulated partner and patient contexts.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "healthcare account management"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "referral-growth",
+          "requirement": "Own referral-source relationships and increase referral volume, engagement, and retention.",
+          "priority": "core",
+          "evidenceStatus": "none",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "referral volume"
+          ]
+        },
+        {
+          "id": "salesforce-crm",
+          "requirement": "Maintain Salesforce account records, referral attribution, activities, and account structure.",
+          "priority": "preferred",
+          "evidenceStatus": "none",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "Salesforce"
+          ]
+        },
+        {
+          "id": "productivity-platforms",
+          "requirement": "Use Google Suite and Monday.com for account productivity and organization.",
+          "priority": "preferred",
+          "evidenceStatus": "none",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "Monday.com"
+          ]
+        }
+      ],
+      "failures": [],
+      "warnings": []
+    },
+    "route": {
+      "viewports": [
+        {
+          "name": "desktop",
+          "screenshot": "tmp/qa/thriveworks-account-manager/desktop.png",
+          "errors": []
+        },
+        {
+          "name": "mobile",
+          "screenshot": "tmp/qa/thriveworks-account-manager/mobile.png",
+          "errors": []
+        }
+      ],
+      "errors": []
+    }
+  }
+}
