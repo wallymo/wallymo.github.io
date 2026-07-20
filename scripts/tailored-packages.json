@@ -922,6 +922,26 @@
       "publishStatus": "tracked-unverified"
     },
     {
+      "workflowVersion": 2,
+      "slug": "medspa-ai-product-manager",
+      "roleTitle": "MedSpa AI Product Manager",
+      "artifactStem": "MedSpa-AI-Product-Manager",
+      "configPath": "scripts/packages/medspa-ai-product-manager.json",
+      "targetLane": "healthcare-ai-product-management",
+      "evidenceMode": "balanced",
+      "fitClass": "strong",
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-01.html",
+        "project-04.html",
+        "project-02.html"
+      ],
+      "resumePdfPath": "output/pdf/Wally-Mostafa-MedSpa-AI-Product-Manager-Resume.pdf",
+      "publishStatus": "local-only",
+      "qaStatus": "qa-passed",
+      "builtAt": "2026-07-20T20:00:53.323Z"
+    },
+    {
       "slug": "mercor-management-strategy-consultant",
       "roleTitle": "Mercor Management & Strategy Consultant",
       "fitClass": "unclassified",

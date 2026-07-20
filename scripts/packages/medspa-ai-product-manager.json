@@ -1,0 +1,483 @@
+{
+  "workflowVersion": 2,
+  "contractRevision": 2,
+  "slug": "medspa-ai-product-manager",
+  "roleTitle": "MedSpa AI Product Manager",
+  "artifactStem": "MedSpa-AI-Product-Manager",
+  "fitClass": "strong",
+  "routeMode": "canonical-projects",
+  "selectedProjects": [
+    "project-01.html",
+    "project-04.html",
+    "project-02.html"
+  ],
+  "job": {
+    "company": "MedSpa employer not stated",
+    "roleTitle": "AI Product Manager",
+    "jobId": "not-listed",
+    "jobUrl": null,
+    "sourceChannel": "chat-pasted-jd",
+    "dateCaptured": "2026-07-20",
+    "location": "Part-time and remote",
+    "atsVendor": "unknown",
+    "rawJd": "Role Description: The AI Product Manager will play a key role in shaping AI-driven solutions that enhance MedSpa operations and client experiences. This part-time, remote role involves collaborating with clinical and business stakeholders to define product requirements, prioritize features, and translate user needs into clear, actionable roadmaps. Day-to-day responsibilities include analyzing user feedback and performance data, coordinating with technical teams on solution design, and overseeing product documentation and release planning. The AI Product Manager will also support go-to-market activities, contribute to training materials for MedSpa partners, and ensure that all AI features align with regulatory, ethical, and usability standards. Qualifications: Product management skills, including roadmap development, requirements gathering, and stakeholder communication. Understanding of AI/ML concepts, data-driven decision-making, and experience working with technical teams. Experience in or strong interest in the aesthetics, MedSpa, or broader healthcare domain. Ability to translate complex technical capabilities into clear, user-centered solutions and documentation. Strong analytical, organizational, and time-management skills suitable for a part-time, remote environment. Effective written and verbal communication skills and comfort presenting to diverse audiences. Bachelor's degree in a relevant field such as Product Management, Business, Computer Science, or Healthcare, or equivalent experience. Experience with agile methodologies, user research, and product analytics tools is highly beneficial."
+  },
+  "classification": {
+    "targetLane": "healthcare-ai-product-management",
+    "evidenceMode": "balanced",
+    "primarySource": "resume product strategy, healthcare domain, stakeholder leadership, requirements, roadmaps, and AI implementation",
+    "supportingSource": "portfolio proof of governed pharma AI, user research, product analytics, and client-led POC validation",
+    "hardGateStatus": "pass",
+    "hardGates": [
+      {
+        "gate": "Bachelor's degree in a relevant field or equivalent experience",
+        "status": "pass",
+        "evidence": "BA in Labor Studies and Employee Relations from Rutgers University, reinforced by 15 years of product, client-strategy, healthcare, and AI implementation experience."
+      },
+      {
+        "gate": "Product management, AI/ML, technical-team, and stakeholder experience",
+        "status": "pass",
+        "evidence": "Current roles directly cover AI product strategy, discovery, requirements, workflow design, prototype validation, roadmap decisions, front-end and backend logic, technical handoff, and client iteration."
+      },
+      {
+        "gate": "Aesthetics, MedSpa, or broader healthcare domain alignment",
+        "status": "pass",
+        "evidence": "The posting explicitly accepts broader healthcare experience; the resume documents 11 years across pharma and healthcare communications plus current governed AI work for regulated pharma workflows."
+      },
+      {
+        "gate": "Part-time remote availability",
+        "status": "not-applicable",
+        "evidence": "The public package does not assert private schedule availability; current remote roles demonstrate remote operating experience, and exact availability can be confirmed during the application process."
+      }
+    ]
+  },
+  "requirements": [
+    {
+      "id": "roadmaps-requirements-prioritization",
+      "text": "Define product requirements, prioritize features, and translate stakeholder and user needs into actionable product roadmaps.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "At One Block Away, owns AI product strategy, discovery, workflow design, front-end build, backend logic, demo readiness, client iteration, and roadmap decisions from first question through working prototype.",
+        "At Hedgehox, converts regulated pharma business needs into governed AI tools and implementation paths for claims review, intake, scoping, routing, submission capture, and FDA signal monitoring."
+      ],
+      "resumeTerms": [
+        "product roadmaps",
+        "requirements gathering",
+        "feature prioritization",
+        "stakeholder communication"
+      ]
+    },
+    {
+      "id": "ai-ml-technical-collaboration",
+      "text": "Understand AI/ML concepts and coordinate with technical teams on usable solution design.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Current work spans governed LLM and VLM workflows, RAG and knowledge bases, prompt-defined criteria, model orchestration, human review surfaces, front-end build, backend logic, and production handoff.",
+        "Healthcare and enterprise roles partner across product, engineering, strategy, creative, account, and business teams to move requirements into build-ready experiences."
+      ],
+      "resumeTerms": [
+        "AI workflows",
+        "technical teams",
+        "workflow design",
+        "production handoff"
+      ]
+    },
+    {
+      "id": "healthcare-domain",
+      "text": "Bring experience or strong interest in aesthetics, MedSpa, or the broader healthcare domain.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Eleven years across pharma and healthcare communications, including patient, HCP, oncology, CNS, cardiovascular, metabolic, and regulated brand work.",
+        "Current AI implementation work addresses FDA, HIPAA, and MLR workflows for pharma agency teams."
+      ],
+      "resumeTerms": [
+        "regulated healthcare",
+        "patient and HCP experiences",
+        "FDA/HIPAA/MLR workflows"
+      ]
+    },
+    {
+      "id": "feedback-data-and-product-analytics",
+      "text": "Analyze user feedback and performance data to guide product decisions and improve the client experience.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Built a research discipline across a 20-plus-product enterprise suite using interviews, prototype testing, Typeform, Useberry, Heap analytics, standardized findings, and stakeholder roadshows.",
+        "Led enterprise analytics, dashboard, data-visualization, and audit experiences used by more than 7,000 people across 22 white-label brands."
+      ],
+      "resumeTerms": [
+        "stakeholder feedback",
+        "performance data",
+        "Heap analytics",
+        "continuous improvement"
+      ]
+    },
+    {
+      "id": "user-centered-translation-documentation",
+      "text": "Translate complex technical capabilities into clear, user-centered solutions and product documentation.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Translates ambiguous client questions into prioritized requirements, testable product surfaces, demo flows, build-ready logic, and handoff decisions.",
+        "Healthcare UX experience includes journey maps, site maps, user flows, wireframes, prototypes, requirements, and recommendations for patient, HCP, and internal brand-team experiences."
+      ],
+      "resumeTerms": [
+        "user-centered",
+        "product documentation",
+        "user flows",
+        "build-ready"
+      ]
+    },
+    {
+      "id": "regulatory-ethical-usability",
+      "text": "Ensure AI features align with regulatory, ethical, and usability standards.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Designed governed pharma AI workflows around claim identification, evidence gaps, audit-ready annotations, MLR review, FDA signals, and human oversight.",
+        "Enterprise product work includes usability research, accessibility direction, system governance, and adoption across large distributed teams."
+      ],
+      "resumeTerms": [
+        "regulated healthcare",
+        "governed AI",
+        "human review",
+        "usability standards"
+      ]
+    },
+    {
+      "id": "release-planning-and-enablement",
+      "text": "Oversee release planning, support go-to-market work, and contribute to training materials for MedSpa partners.",
+      "priority": "core",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Current product work covers demo readiness, prototype validation, roadmap decisions, implementation choices, production handoff, and stakeholder adoption.",
+        "Account and product roles produced briefs, presentations, client workshops, recommendations, reusable systems, and presentation-ready outputs for diverse audiences."
+      ],
+      "resumeTerms": [
+        "release planning support",
+        "go-to-market support",
+        "presentations",
+        "adoption"
+      ]
+    },
+    {
+      "id": "agile-research-and-analytics-tools",
+      "text": "Use agile methods, user research, and product analytics tools to improve product outcomes.",
+      "priority": "preferred",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Direct user-research and analytics-tool evidence includes interviews, prototype testing, Typeform, Useberry, Heap analytics, research repositories, and continuous iteration.",
+        "The resume and portfolio do not name a formal Scrum certification or a specific agile product-management framework."
+      ],
+      "resumeTerms": [
+        "user research",
+        "Heap analytics",
+        "prototype testing",
+        "continuous iteration"
+      ]
+    }
+  ],
+  "fitGate": {
+    "supportedOverlap": [
+      "Direct AI product strategy and implementation ownership from discovery and requirements through working prototypes, roadmap decisions, validation, and handoff.",
+      "Eleven years of pharma and healthcare domain experience plus current governed AI work across FDA, HIPAA, MLR, patient, HCP, and agency workflows.",
+      "Direct cross-functional leadership across clinical-adjacent healthcare stakeholders, client teams, business leaders, product, design, engineering, strategy, creative, and operations.",
+      "Direct research and analytics evidence across a 20-plus-product suite using interviews, prototype testing, feedback tools, Heap analytics, and stakeholder roadshows.",
+      "Enterprise product scale through analytics and design systems used by more than 7,000 people across 22 white-label brands.",
+      "Strong communication proof through briefs, client workshops, product narratives, investor demonstrations, presentations, and build-ready artifacts for diverse audiences."
+    ],
+    "unsupportedRequirements": [
+      "Direct MedSpa or aesthetics-industry employment is not documented.",
+      "Formal ownership of a release-management calendar, MedSpa partner training program, or named go-to-market launch function is not documented.",
+      "A formal Scrum, agile, or product-management certification is not documented."
+    ],
+    "actualMismatches": [],
+    "missingEvidence": [
+      "Named MedSpa operator, provider, or client research and aesthetics-specific workflow outcomes.",
+      "Quantified release cadence, feature-adoption metrics, and product KPI ownership.",
+      "Specific partner-training curricula or enablement completion outcomes."
+    ],
+    "coverLetterBridge": {
+      "status": "not-needed",
+      "rationale": "The resume directly proves the role's product-management, healthcare, AI implementation, research, stakeholder, governance, and communication center, while the portfolio independently validates those capabilities. A cover letter is optional rather than necessary for credibility."
+    },
+    "recommendation": "Proceed as strong. Lead with the combination this role needs: healthcare fluency, governed AI product ownership, research-driven prioritization, and cross-functional delivery. Treat MedSpa as an honest adjacent healthcare context and do not imply aesthetics-specific experience, clinical authority, or formal release and training ownership that the evidence does not show."
+  },
+  "resume": {
+    "summary": "AI product leader with 15 years across regulated healthcare, product strategy, enterprise UX, and client delivery. I translate clinical-adjacent and business needs into requirements, prioritized roadmaps, governed AI workflows, and user-centered product decisions. My strength is connecting stakeholder feedback, product analytics, technical teams, and implementation planning so useful AI features move from discovery through validation, handoff, and adoption.",
+    "skills": [
+      {
+        "label": "AI Product Management & Roadmaps",
+        "description": "Discovery, requirements gathering, feature prioritization, product roadmaps, prototype validation, release planning support, implementation choices, and production handoff"
+      },
+      {
+        "label": "Healthcare AI, Governance & Usability",
+        "description": "Regulated healthcare, patient and HCP experiences, FDA/HIPAA/MLR workflows, governed AI, evidence trails, human review, accessibility, and usability standards"
+      },
+      {
+        "label": "Research, Analytics & Product Decisions",
+        "description": "User interviews, prototype testing, feedback synthesis, Typeform, Useberry, Heap analytics, enterprise dashboards, performance data, and continuous iteration"
+      },
+      {
+        "label": "Stakeholder Delivery & Enablement",
+        "description": "Clinical-adjacent and business stakeholder communication, technical-team alignment, workshops, product documentation, presentations, adoption, and go-to-market support"
+      }
+    ],
+    "roles": {
+      "hedgehox": [
+        "Led product strategy and requirements for Claims Detector, translating pharma business needs into governed AI workflows for claim identification, evidence gaps, and audit-ready annotations",
+        "Secured an investor for proprietary Claims Detection software by building the functional POC, shaping the product story, and iterating with stakeholders",
+        "Defined implementation paths across MLR claim review, brief intake, scoping, review routing, submission capture, and FDA signal monitoring with human review and governance built in",
+        "Built Scope Generator for pharma agency finance and operations teams to manage regional rate cards, brands, sub-brands, and natural-language scope changes"
+      ],
+      "one-block-away": [
+        "Own AI product strategy, discovery, requirements, workflow design, front-end build, backend logic, demo readiness, client iteration, and roadmap decisions from first question through working prototype",
+        "Translate ambiguous client needs and feedback into prioritized features, testable product surfaces, implementation choices, and build-ready handoffs",
+        "Built ListingPal's AI listing-generation POC, turning basic property inputs into listing copy, social posts, ad copy, styling direction, and MLS/SEO-ready language in under 90 seconds",
+        "Built WeReady's Bailey Intelligence dashboard, translating founder inputs, GitHub signals, source health, risk scoring, and evidence trails into decision-ready startup workflows"
+      ],
+      "kinesso": [
+        "Led enterprise analytics and product experiences while scaling design from 2 to 30 people across the US and Poland, supporting more than 7,000 users across 22 white-label brands",
+        "Partnered across product, design, engineering, and business teams to shape data visualization, dashboard building, brand theming, and reusable analytics components from requirements through adoption",
+        "Built the Digital Experience Audit workflow for channel scoring, benchmarks, recommendations, data visualization, and presentation-ready client outputs",
+        "Built a research discipline across a 20-plus-product suite, using interviews, prototype testing, Typeform, Useberry, Heap analytics, standardized findings, and stakeholder roadshows to guide prioritization and continuous improvement"
+      ],
+      "omnicom": [
+        "Supported oncology accounts as a freelance UX designer, translating regulated business and user needs into clearer product flows, content structures, and implementation recommendations",
+        "Partnered across account, strategy, creative, and delivery teams to align client outcomes, user experience, and build-ready decisions"
+      ],
+      "heartbeat": [
+        "Led UX research and experience strategy for pharma and healthcare work, translating stakeholder input, competitive audits, and user needs into digital product direction",
+        "Created journey maps, site maps, user flows, wireframes, and prototypes for patient, HCP, and internal brand-team experiences across regulated healthcare programs",
+        "Partnered with strategy, creative, account, and engineering teams to move research findings into prioritized, build-ready product and campaign experiences"
+      ],
+      "account-management": [
+        "Managed Fortune 500 pharma and healthcare clients with budgets from 2 million to more than 50 million dollars across complex regulated portfolios, advising stakeholders and aligning work to business, audience, and regulatory outcomes",
+        "Served as one of two account consumer leads on FCB Health's largest pharma account across TV, radio, digital, gaming, Times Square, brand planning, and MLR review",
+        "Translated client strategy into briefs, requirements, timelines, priorities, and MLR-ready delivery across account, creative, UX, analytics, and development teams"
+      ]
+    }
+  },
+  "hero": {
+    "eyebrow": "MedSpa AI Product Manager",
+    "tags": [
+      "Healthcare AI product strategy",
+      "Research-driven roadmaps",
+      "Governed delivery from need to adoption"
+    ],
+    "intro": "I fit this MedSpa AI product role through the combination it needs most: healthcare fluency, governed AI product ownership, and user-centered delivery. I bring 11 years across regulated pharma and healthcare, current ownership of AI requirements and roadmap decisions from discovery through working prototypes, and enterprise product work used by more than 7,000 people across 22 brands. I know how to connect stakeholder feedback, performance data, technical teams, and usability standards so AI features solve real operational and client-experience problems."
+  },
+  "contact": {
+    "prompt": "Hiring an AI product leader who can turn healthcare stakeholder needs into governed, usable product roadmaps for MedSpa operations and client experiences? Email is the fastest way to reach me.",
+    "signoff": "Healthcare fluency · AI product roadmaps · trustworthy client experiences"
+  },
+  "constraints": {
+    "doNotClaim": [
+      "Direct MedSpa industry experience",
+      "Direct aesthetics industry experience",
+      "Licensed clinical authority",
+      "Medical decision-making authority",
+      "Formal release-management ownership",
+      "Formal MedSpa partner training ownership",
+      "Scrum certification",
+      "Quantified MedSpa product outcomes"
+    ],
+    "blockedTerms": [
+      "MedSpa industry veteran",
+      "aesthetics expert",
+      "licensed clinician",
+      "owned clinical decisions",
+      "owned MedSpa partner training",
+      "Scrum certified"
+    ]
+  },
+  "privacy": {
+    "publicSafe": true,
+    "notes": "Contains only the public job description and sanitized evidence from the public resume and portfolio. It includes no recruiter contact details, private application answers, compensation boundaries, eligibility details, or private schedule information."
+  },
+  "qa": {
+    "status": "qa-passed",
+    "builtAt": "2026-07-20T20:00:53.323Z",
+    "configInputSha256": "71686879bb3029c2de2cebb76d61abb80b06507697c41ad452c13dd0b6274b3f",
+    "sourceResumeSha256": "375cc6566f5bbad5b95be9da551dfe87824378fb252222409d29ef32d334ca25",
+    "artifactHashes": {
+      "routeSha256": "7a9abae38a0cf41c2ef927fdcfdc7b16edeb75f51f55577d38628ab3d5cd3222",
+      "resumePdfSha256": "8f2dfe98be86a092c5571c27f9afa3342d15ac5a0a41c258fc6fa11fdfb89122",
+      "scopedProjectSha256": {}
+    },
+    "renderer": {
+      "browser": {
+        "name": "chrome-headless-shell",
+        "version": "Google Chrome for Testing 149.0.7827.55"
+      },
+      "htmlPath": "tmp/tailored-resumes/medspa-ai-product-manager.html",
+      "pdfPath": "output/pdf/Wally-Mostafa-MedSpa-AI-Product-Manager-Resume.pdf"
+    },
+    "ats": {
+      "ok": true,
+      "pdfPath": "output/pdf/Wally-Mostafa-MedSpa-AI-Product-Manager-Resume.pdf",
+      "pageCount": 2,
+      "fileSize": 132019,
+      "annotations": [
+        {
+          "page": 1,
+          "uri": "mailto:wmostafa12@gmail.com"
+        },
+        {
+          "page": 1,
+          "uri": "https://linkedin.com/in/wallymo"
+        },
+        {
+          "page": 1,
+          "uri": "https://wallymo.github.io/medspa-ai-product-manager/"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/6748"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/4629"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.red-dot.org/project/dxa-digital-experience-audit-55219"
+        }
+      ],
+      "coverage": [
+        {
+          "id": "roadmaps-requirements-prioritization",
+          "requirement": "Define product requirements, prioritize features, and translate stakeholder and user needs into actionable product roadmaps.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "product roadmaps",
+            "requirements gathering",
+            "feature prioritization",
+            "stakeholder communication"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "ai-ml-technical-collaboration",
+          "requirement": "Understand AI/ML concepts and coordinate with technical teams on usable solution design.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "AI workflows",
+            "technical teams",
+            "workflow design",
+            "production handoff"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "healthcare-domain",
+          "requirement": "Bring experience or strong interest in aesthetics, MedSpa, or the broader healthcare domain.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "regulated healthcare",
+            "patient and HCP experiences",
+            "FDA/HIPAA/MLR workflows"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "feedback-data-and-product-analytics",
+          "requirement": "Analyze user feedback and performance data to guide product decisions and improve the client experience.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "stakeholder feedback",
+            "performance data",
+            "Heap analytics",
+            "continuous improvement"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "user-centered-translation-documentation",
+          "requirement": "Translate complex technical capabilities into clear, user-centered solutions and product documentation.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "user-centered",
+            "product documentation",
+            "user flows",
+            "build-ready"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "regulatory-ethical-usability",
+          "requirement": "Ensure AI features align with regulatory, ethical, and usability standards.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "regulated healthcare",
+            "governed AI",
+            "human review",
+            "usability standards"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "release-planning-and-enablement",
+          "requirement": "Oversee release planning, support go-to-market work, and contribute to training materials for MedSpa partners.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "release planning support",
+            "go-to-market support",
+            "presentations",
+            "adoption"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "agile-research-and-analytics-tools",
+          "requirement": "Use agile methods, user research, and product analytics tools to improve product outcomes.",
+          "priority": "preferred",
+          "evidenceStatus": "adjacent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "Heap analytics",
+            "prototype testing",
+            "continuous iteration"
+          ],
+          "missingTerms": [
+            "user research"
+          ]
+        }
+      ],
+      "failures": [],
+      "warnings": []
+    },
+    "route": {
+      "viewports": [
+        {
+          "name": "desktop",
+          "screenshot": "tmp/qa/medspa-ai-product-manager/desktop.png",
+          "errors": []
+        },
+        {
+          "name": "mobile",
+          "screenshot": "tmp/qa/medspa-ai-product-manager/mobile.png",
+          "errors": []
+        }
+      ],
+      "errors": []
+    }
+  }
+}
