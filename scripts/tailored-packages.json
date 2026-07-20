@@ -397,9 +397,26 @@
         "project-05.html"
       ],
       "resumePdfPath": "output/pdf/Wally-Mostafa-Conceptra-Biosciences-Brand-Marketing-Resume.pdf",
-      "publishStatus": "local-only",
+      "publishStatus": "live-verified",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-07-20T22:39:54.169Z"
+      "builtAt": "2026-07-20T22:39:54.169Z",
+      "verification": {
+        "verifiedAt": "2026-07-20T22:43:57.040Z",
+        "routeUrl": "https://wallymo.github.io/conceptra-biosciences-brand-marketing/",
+        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-Conceptra-Biosciences-Brand-Marketing-Resume.pdf",
+        "configUrl": "https://wallymo.github.io/scripts/packages/conceptra-biosciences-brand-marketing.json",
+        "projectUrls": [
+          "https://wallymo.github.io/project-01.html",
+          "https://wallymo.github.io/project-06.html",
+          "https://wallymo.github.io/project-05.html"
+        ],
+        "configSha256": "497be2ffd7b8da6311010edab42e9e7a68486bfc7334d832b68e2477d20b1627",
+        "pdfSha256": "4c28b0841a5a3acfb8676daaffa7a969e61c014bd576493feda611a2937e8399",
+        "routeSha256": "964909aed43f07595fc96107652d1f1208291b1a35e33d8e181feb4d904fd987",
+        "scopedProjectSha256": {},
+        "configInputSha256": "bfe79d88d35a3800abb069db73401907f08a05808f663f64549d84565c293c59",
+        "qaBuiltAt": "2026-07-20T22:39:54.169Z"
+      }
     },
     {
       "slug": "conversifi",
