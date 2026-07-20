@@ -1,0 +1,517 @@
+{
+  "workflowVersion": 2,
+  "contractRevision": 2,
+  "slug": "principal-ux-hcd-lead",
+  "roleTitle": "Principal UX / Human-Centered Design Lead",
+  "artifactStem": "Principal-UX-HCD-Lead",
+  "fitClass": "adjacent",
+  "routeMode": "canonical-projects",
+  "selectedProjects": [
+    "project-04.html",
+    "project-01.html",
+    "project-07.html",
+    "project-06.html"
+  ],
+  "job": {
+    "company": "Confidential public-sector proposal team",
+    "roleTitle": "Principal UX / Human-Centered Design Lead",
+    "sourceChannel": "chat-pasted-jd",
+    "dateCaptured": "2026-07-20",
+    "location": "Fractional state-agency engagement; location not stated",
+    "atsVendor": "unknown",
+    "rawJd": "Principal UX / Human-Centered Design Lead. We are seeking a senior Principal UX / Human-Centered Design Lead for a User Experience Design Consultant opportunity. This is a fractional senior role, not a full-time staffing role. The consultant must be strong enough to be named as key personnel in the proposal and, if awarded, lead UX discovery, service design, research planning, and design recommendations for a public long-term care benefits program. Core role: Serve as the lead UX/HCD authority for the engagement. Guide discovery, user research, stakeholder engagement, journey mapping, wireframes, usability testing, accessibility-aware design, and strategic UX planning. Required background: At least 3 years of UX, HCD, CX, or digital experience consulting within the last 5 years. At least 2 major projects within the last 5 years involving UX, CX, digital transformation, or customer journey work. Experience in government, healthcare, health and human services, long-term care, social services, insurance, public benefits, or another regulated service environment. Experience with user research, stakeholder interviews, journey mapping, wireframes, usability testing, and digital service improvement. Ability to translate policy, privacy, accessibility, operational, and legal constraints into practical user experience recommendations. Ability to work with a small fractional team and participate in a state-agency interview if requested. Strong preference for public-sector benefits experience; health and human services experience; long-term care, aging, disability, caregiver, or Medicaid-related experience; accessibility-aware UX design including WCAG 2.2 familiarity; experience designing for older adults, caregivers, people with disabilities, or low-friction public access; experience with No Wrong Door, service navigation, eligibility, provider search, or complex public-service journeys; and comfort with AI-supported service design where human oversight, explainability, and trust are important. Responsibilities: Lead UX discovery and assessment; help define the Phase 1 project plan; review existing digital properties and user journeys; plan stakeholder interviews and user research; create or guide journey maps, service design artifacts, wireframes, and UX recommendations; support user testing of mockups or live software; support usability and accessibility-informed design review; help prioritize future UX deliverables; and make recommendations practical for DSHS, WA Cares users, and public-sector delivery constraints. Proposal support needed now: targeted resume focused on relevant UX/HCD work from the last 5 years and two short project summaries showing regulated-sector UX/HCD experience. This is not a visual designer-only, Figma production, proposal writing, technical writing, or AI strategy-only role. No third parties."
+  },
+  "classification": {
+    "targetLane": "principal-hcd-and-regulated-service-design",
+    "evidenceMode": "portfolio-primary",
+    "primarySource": "portfolio",
+    "supportingSource": "resume",
+    "hardGateStatus": "pass",
+    "hardGates": [
+      {
+        "gate": "At least 3 years of UX, HCD, CX, or digital experience consulting within the last 5 years",
+        "status": "pass",
+        "evidence": "One Block Away has provided client-led product strategy and UX consulting from July 2023 to present, reinforced by regulated pharma workflow consulting through Hedgehox from March 2024 to present and enterprise UX leadership at Kinesso through June 2023."
+      },
+      {
+        "gate": "At least 2 major UX, CX, digital-transformation, or customer-journey projects within the last 5 years",
+        "status": "pass",
+        "evidence": "Recent proof includes building the user-research discipline across Kinesso's 20-plus-product Marketing Intelligence Engine and leading regulated pharma workflow products at Hedgehox, including human-reviewed claims, brief, routing, scoping, and regulatory-monitoring experiences."
+      },
+      {
+        "gate": "Experience in a regulated service environment",
+        "status": "pass",
+        "evidence": "The resume documents eleven years across pharma and healthcare plus current FDA, HIPAA, and MLR workflow design for patient, HCP, agency, and brand-team contexts."
+      },
+      {
+        "gate": "Ability to work fractionally and participate in a state-agency interview",
+        "status": "not-applicable",
+        "evidence": "This is an operational availability confirmation rather than a recruiter-artifact claim and should be confirmed directly before proposal submission."
+      }
+    ]
+  },
+  "requirements": [
+    {
+      "id": "hcd-discovery-and-research",
+      "text": "Lead UX discovery, research planning, stakeholder engagement, interviews, usability testing, and strategic UX recommendations.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Built the UX research discipline from scratch across a 20-plus-product enterprise suite, with repeatable interview planning, recording, synthesis, workshops, testing, validation, and handoff.",
+        "Led UX research and experience strategy for pharma and healthcare programs, translating stakeholder input, competitive audits, and user needs into product direction."
+      ],
+      "resumeTerms": [
+        "UX discovery",
+        "research planning",
+        "stakeholder interviews",
+        "usability testing",
+        "UX recommendations"
+      ]
+    },
+    {
+      "id": "journey-flow-and-wireframe-design",
+      "text": "Create or guide journey maps, service-design artifacts, user flows, wireframes, prototypes, and digital-service improvements.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Created journey maps, site maps, user flows, wireframes, and prototypes for patient, HCP, and internal brand-team experiences.",
+        "Current product work converts ambiguous stakeholder needs into testable workflows, interface concepts, and build-ready product systems."
+      ],
+      "resumeTerms": [
+        "journey maps",
+        "user flows",
+        "wireframes",
+        "prototypes",
+        "digital service improvement"
+      ]
+    },
+    {
+      "id": "regulated-constraint-translation",
+      "text": "Translate policy, privacy, accessibility, operational, and legal constraints into practical user-experience recommendations.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Current pharma work translates FDA, HIPAA, MLR, evidence, approval-routing, and operational constraints into human-reviewed workflows and practical interfaces.",
+        "Seven-plus years of healthcare account leadership connects brand, legal-medical review, strategy, creative, UX, engineering, budgets, and delivery requirements."
+      ],
+      "resumeTerms": [
+        "FDA/HIPAA/MLR",
+        "privacy",
+        "accessibility",
+        "operational constraints",
+        "human review"
+      ]
+    },
+    {
+      "id": "accessibility-aware-design",
+      "text": "Lead accessibility-aware design review and incorporate inclusive standards into product and service recommendations.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Enterprise UX experience includes WCAG-aware product work, keyboard-navigation thinking, and an accessibility-panel concept recognized in an IPG innovation challenge.",
+        "Helped establish early accessibility direction and standards for the Splash enterprise design system."
+      ],
+      "resumeTerms": [
+        "accessibility-aware design",
+        "WCAG",
+        "keyboard navigation",
+        "inclusive design"
+      ]
+    },
+    {
+      "id": "service-assessment-and-prioritization",
+      "text": "Assess existing digital properties and journeys, define a practical first-phase plan, and prioritize future UX deliverables.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Built the Digital Experience Audit workflow for channel scoring, benchmarks, recommendations, visualization, and presentation-ready outputs.",
+        "Owns discovery, scoping, requirements, prototype validation, roadmap decisions, and production handoff across current client-led product work."
+      ],
+      "resumeTerms": [
+        "digital assessment",
+        "prioritization",
+        "roadmap decisions",
+        "benchmarks",
+        "recommendations"
+      ]
+    },
+    {
+      "id": "senior-fractional-leadership",
+      "text": "Serve as the lead UX/HCD authority within a small fractional team and carry key-personnel credibility in a proposal and agency interview.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Scaled product design from 2 to 30 people across the United States and Poland while leading research, design-system, analytics, and workflow-product strategy.",
+        "Current consulting work spans discovery through functional product delivery with clients, founders, agency teams, and cross-functional stakeholders."
+      ],
+      "resumeTerms": [
+        "UX leadership",
+        "cross-functional",
+        "fractional consulting",
+        "stakeholder workshops"
+      ]
+    },
+    {
+      "id": "ai-supported-trusted-service-design",
+      "text": "Bring comfort with AI-supported service design where human oversight, explainability, evidence, and trust are important.",
+      "priority": "preferred",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Claims Detector surfaces evidence gaps and pre-populates audit-ready annotations while keeping review decisions visible to people.",
+        "Current AI work includes governed workflows, evidence trails, prompt-defined criteria, and human review surfaces in regulated pharma contexts."
+      ],
+      "resumeTerms": [
+        "AI-supported service design",
+        "human oversight",
+        "explainability",
+        "evidence trails",
+        "trust"
+      ]
+    },
+    {
+      "id": "public-benefits-domain",
+      "text": "Bring direct public-sector benefits, long-term care, aging, disability, caregiver, Medicaid, or No Wrong Door experience.",
+      "priority": "preferred",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "resumeTerms": [
+        "public-sector benefits experience",
+        "long-term care experience",
+        "Medicaid experience",
+        "No Wrong Door"
+      ]
+    },
+    {
+      "id": "wcag-22",
+      "text": "Bring explicit WCAG 2.2 familiarity and demonstrated design for older adults, caregivers, or people with disabilities.",
+      "priority": "preferred",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "resumeTerms": [
+        "WCAG 2.2",
+        "older adults",
+        "caregiver experience",
+        "disability-services experience"
+      ]
+    }
+  ],
+  "fitGate": {
+    "supportedOverlap": [
+      "Recent senior UX leadership includes a repeatable research discipline across more than 20 enterprise products, with interview planning, synthesis, testing, validation, workshops, and reusable research infrastructure.",
+      "Current regulated healthcare work translates FDA, HIPAA, MLR, privacy, approval, evidence, and operational constraints into practical human-reviewed product workflows.",
+      "Direct method proof includes stakeholder interviews, journey maps, user flows, wireframes, prototypes, accessibility-aware design, usability testing, digital assessments, and UX recommendations.",
+      "Leadership proof includes scaling a product-design practice from 2 to 30 people across two countries and supporting enterprise products used by more than 7,000 people across 22 white-label brands.",
+      "AI-supported service-design proof is unusually relevant: governed workflow tools expose evidence, gaps, routing, and human review rather than automating high-trust decisions invisibly."
+    ],
+    "unsupportedRequirements": [
+      "Direct public-sector benefits, long-term care, Medicaid, No Wrong Door, aging-services, and caregiver-services experience is not evidenced in the current resume or portfolio.",
+      "WCAG familiarity is supported, but explicit WCAG 2.2 delivery is not evidenced.",
+      "Direct research or design work specifically with older adults, caregivers, or people with disabilities is not evidenced."
+    ],
+    "actualMismatches": [],
+    "missingEvidence": [
+      "The strongest recent regulated project is current pharma workflow design; it does not document a formal public-service policy or eligibility-navigation engagement.",
+      "The most explicit journey-mapping and wireframing proof comes from 2018-2019 healthcare work, while recent work more strongly proves research operations, workflow discovery, testing, accessibility, and service assessment.",
+      "Availability for the fractional schedule and a state-agency interview must be confirmed directly before the proposal is submitted."
+    ],
+    "coverLetterBridge": {
+      "status": "recommended",
+      "rationale": "We can make the case with a cover letter by connecting regulated healthcare UX, recent enterprise research leadership, constraint translation, accessibility-aware design, and human-reviewed AI workflows to the agency's need for a practical HCD lead. The letter must address the domain gap directly: the evidence does not establish public-benefits, long-term-care, Medicaid, aging, or No Wrong Door experience."
+    },
+    "recommendation": "Proceed as adjacent. Position the candidate as a senior HCD practitioner with strong regulated-healthcare and enterprise-research proof who can transfer those methods to public benefits, while keeping the public-sector, long-term-care, Medicaid, WCAG 2.2, and population-specific gaps explicit."
+  },
+  "resume": {
+    "summary": "Senior UX and human-centered design leader with 15 years across enterprise products, client consulting, and regulated healthcare. Since 2021, I have built a research discipline across a 20-plus-product suite, scaled product design from 2 to 30 people, led accessibility-aware systems and digital assessments, and translated complex pharma constraints into human-reviewed workflows. I connect discovery, stakeholder research, journey and flow design, wireframes, usability testing, digital service improvement, and practical delivery.",
+    "skills": [
+      {
+        "label": "HCD Discovery & Research Leadership",
+        "description": "UX discovery, research planning, stakeholder interviews, interview guides, synthesis, usability testing, workshops, validation, and strategic UX recommendations"
+      },
+      {
+        "label": "Journey, Workflow & Service Design",
+        "description": "Journey maps, digital-property assessments, user flows, wireframes, prototypes, workflow design, prioritization, roadmap decisions, and build-ready handoff"
+      },
+      {
+        "label": "Regulated Healthcare & Constraint Translation",
+        "description": "FDA/HIPAA/MLR workflows, privacy, AI-supported service design, human oversight, explainability, evidence trails, approval routing, operational constraints, and trust"
+      },
+      {
+        "label": "Accessibility & UX Leadership",
+        "description": "Accessibility-aware design, inclusive design, WCAG, keyboard navigation, enterprise design systems, cross-functional facilitation, and team scaling from 2 to 30"
+      }
+    ],
+    "roles": {
+      "hedgehox": [
+        "Lead UX discovery for regulated pharma workflow tools, translating agency needs and FDA, HIPAA, MLR, evidence, routing, and operational constraints into practical product recommendations",
+        "Designed Claims Detector workflows that identify promotional claims, surface evidence gaps, and pre-populate audit-ready annotations while preserving human review before MLR submission",
+        "Mapped brief intake, scoping, review routing, submission capture, screenshot, and FDA-signal workflows into testable product surfaces for agency teams",
+        "Designed the full Xenagos Bio startup biopharma website, including stakeholder-facing structure, scientific positioning, visual direction, and design-system handoff"
+      ],
+      "one-block-away": [
+        "Lead fractional consulting, client discovery, and stakeholder workshops that turn unclear business questions into research priorities, testable product surfaces, demo flows, and roadmap decisions",
+        "Own product strategy, UX, workflow design, wireframes and prototypes, front-end build, backend logic, usability iteration, and client handoff from first ask through working product",
+        "Built WeReady's Bailey Intelligence dashboard, translating founder input, source health, risk scoring, and evidence trails into a clearer assessment and recommendation workflow"
+      ],
+      "kinesso": [
+        "Built the UX research discipline from scratch across a 20-plus-product Marketing Intelligence Engine, creating repeatable interview planning, recording, synthesis, testing, validation, workshops, and research artifacts",
+        "Scaled product design from 2 to 30 people across the United States and Poland for enterprise analytics used by 7,000-plus users across 22 white-label brands",
+        "Led accessibility-aware UX and design-system strategy across data visualization, dashboard building, brand theming, reusable components, keyboard navigation, and product standards",
+        "Built the Digital Experience Audit workflow for digital-property assessment, channel scoring, benchmarks, recommendations, visualization, and presentation-ready outputs",
+        "Design-system and analytics work earned 5 Indigo Gold, 4 Indigo Silver, and Red Dot recognition"
+      ],
+      "omnicom": [
+        "Supported oncology accounts as a freelance UX designer, combining UX design and account-management experience to strengthen regulated healthcare work",
+        "Translated brand goals, stakeholder needs, and review constraints into clearer user flows, content structure, and digital recommendations across account, strategy, creative, and delivery teams"
+      ],
+      "heartbeat": [
+        "Led UX research and experience strategy for pharma and healthcare programs, translating stakeholder interviews, competitive audits, and user needs into digital product direction",
+        "Created journey maps, site maps, user flows, wireframes, and prototypes for patient, HCP, and internal brand-team experiences across regulated healthcare programs",
+        "Partnered with strategy, creative, account, and engineering teams to move research findings, usability feedback, and UX recommendations into build-ready experiences"
+      ],
+      "account-management": [
+        "Managed Fortune 500 pharma and healthcare clients with 2-million-dollar to 50-million-dollar-plus budgets across CNS, neurology, psychiatry, cardiovascular, metabolic, and sleep-wakefulness brands",
+        "Translated client and brand strategy into briefs, stakeholder feedback, requirements, timelines, and MLR-ready deliverables across account, creative, UX, legal-medical review, and development teams"
+      ]
+    }
+  },
+  "hero": {
+    "eyebrow": "Principal UX / HCD Lead",
+    "tags": [
+      "UX discovery & research leadership",
+      "Regulated healthcare service workflows",
+      "Accessibility-aware design",
+      "Human-reviewed AI experiences"
+    ],
+    "intro": "I lead human-centered work where research has to become a practical service decision. I built the research discipline across a 20-plus-product enterprise suite, scaled product design from 2 to 30 people, and led accessibility-aware systems and digital assessments used across 22 white-label brands. In regulated healthcare, I translate FDA, HIPAA, MLR, evidence, privacy, and operational constraints into clear workflows, prototypes, and human-reviewed recommendations—experience I can bring to complex public-benefit journeys without pretending I already know the agency's users or policies."
+  },
+  "contact": {
+    "prompt": "Looking for a senior HCD lead who can structure discovery, earn stakeholder trust, and turn regulated-service constraints into practical research and design recommendations? Email is the fastest way to reach me.",
+    "signoff": "Discovery leadership · regulated-service UX · accessible, practical recommendations"
+  },
+  "constraints": {
+    "doNotClaim": [
+      "public-sector benefits experience",
+      "long-term care experience",
+      "Medicaid experience",
+      "No Wrong Door experience",
+      "WCAG 2.2 expertise",
+      "older-adult research",
+      "caregiver research",
+      "disability-services experience"
+    ],
+    "blockedTerms": [
+      "public-benefits expert",
+      "long-term-care expert",
+      "Medicaid expert",
+      "No Wrong Door",
+      "WCAG 2.2",
+      "DSHS experience",
+      "WA Cares experience"
+    ]
+  },
+  "privacy": {
+    "publicSafe": true,
+    "notes": "Contains only the public job-posting text and sanitized evidence from the public resume and portfolio. It includes no recruiter contact details, application answers, compensation boundaries, or private eligibility information."
+  },
+  "qa": {
+    "status": "qa-passed",
+    "builtAt": "2026-07-20T20:01:13.794Z",
+    "configInputSha256": "931204ad44dcffe8a9076d521a8e497dd0fd7fe24310eebcd21bb91b20cef670",
+    "sourceResumeSha256": "375cc6566f5bbad5b95be9da551dfe87824378fb252222409d29ef32d334ca25",
+    "artifactHashes": {
+      "routeSha256": "33a11ff707894dd692a267d59bf6f1e81a433ce142c5d42372abf2a422e73e38",
+      "resumePdfSha256": "65ee8e2546244286c2ad39d081b0b8caeaf91d0a4615e7ec2f9d02b0c9d14930",
+      "scopedProjectSha256": {}
+    },
+    "renderer": {
+      "browser": {
+        "name": "chrome-headless-shell",
+        "version": "Google Chrome for Testing 149.0.7827.55"
+      },
+      "htmlPath": "tmp/tailored-resumes/principal-ux-hcd-lead.html",
+      "pdfPath": "output/pdf/Wally-Mostafa-Principal-UX-HCD-Lead-Resume.pdf"
+    },
+    "ats": {
+      "ok": true,
+      "pdfPath": "output/pdf/Wally-Mostafa-Principal-UX-HCD-Lead-Resume.pdf",
+      "pageCount": 2,
+      "fileSize": 131090,
+      "annotations": [
+        {
+          "page": 1,
+          "uri": "mailto:wmostafa12@gmail.com"
+        },
+        {
+          "page": 1,
+          "uri": "https://linkedin.com/in/wallymo"
+        },
+        {
+          "page": 1,
+          "uri": "https://wallymo.github.io/principal-ux-hcd-lead/"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/6748"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/4629"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.red-dot.org/project/dxa-digital-experience-audit-55219"
+        }
+      ],
+      "coverage": [
+        {
+          "id": "hcd-discovery-and-research",
+          "requirement": "Lead UX discovery, research planning, stakeholder engagement, interviews, usability testing, and strategic UX recommendations.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "UX discovery",
+            "research planning",
+            "stakeholder interviews",
+            "usability testing",
+            "UX recommendations"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "journey-flow-and-wireframe-design",
+          "requirement": "Create or guide journey maps, service-design artifacts, user flows, wireframes, prototypes, and digital-service improvements.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "journey maps",
+            "user flows",
+            "wireframes",
+            "prototypes",
+            "digital service improvement"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "regulated-constraint-translation",
+          "requirement": "Translate policy, privacy, accessibility, operational, and legal constraints into practical user-experience recommendations.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "FDA/HIPAA/MLR",
+            "privacy",
+            "accessibility",
+            "operational constraints",
+            "human review"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "accessibility-aware-design",
+          "requirement": "Lead accessibility-aware design review and incorporate inclusive standards into product and service recommendations.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "accessibility-aware design",
+            "WCAG",
+            "keyboard navigation",
+            "inclusive design"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "service-assessment-and-prioritization",
+          "requirement": "Assess existing digital properties and journeys, define a practical first-phase plan, and prioritize future UX deliverables.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "digital assessment",
+            "prioritization",
+            "roadmap decisions",
+            "benchmarks",
+            "recommendations"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "senior-fractional-leadership",
+          "requirement": "Serve as the lead UX/HCD authority within a small fractional team and carry key-personnel credibility in a proposal and agency interview.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "UX leadership",
+            "cross-functional",
+            "fractional consulting",
+            "stakeholder workshops"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "ai-supported-trusted-service-design",
+          "requirement": "Bring comfort with AI-supported service design where human oversight, explainability, evidence, and trust are important.",
+          "priority": "preferred",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "AI-supported service design",
+            "human oversight",
+            "explainability",
+            "evidence trails",
+            "trust"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "public-benefits-domain",
+          "requirement": "Bring direct public-sector benefits, long-term care, aging, disability, caregiver, Medicaid, or No Wrong Door experience.",
+          "priority": "preferred",
+          "evidenceStatus": "none",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "public-sector benefits experience",
+            "long-term care experience",
+            "Medicaid experience",
+            "No Wrong Door"
+          ]
+        },
+        {
+          "id": "wcag-22",
+          "requirement": "Bring explicit WCAG 2.2 familiarity and demonstrated design for older adults, caregivers, or people with disabilities.",
+          "priority": "preferred",
+          "evidenceStatus": "none",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "WCAG 2.2",
+            "older adults",
+            "caregiver experience",
+            "disability-services experience"
+          ]
+        }
+      ],
+      "failures": [],
+      "warnings": []
+    },
+    "route": {
+      "viewports": [
+        {
+          "name": "desktop",
+          "screenshot": "tmp/qa/principal-ux-hcd-lead/desktop.png",
+          "errors": []
+        },
+        {
+          "name": "mobile",
+          "screenshot": "tmp/qa/principal-ux-hcd-lead/mobile.png",
+          "errors": []
+        }
+      ],
+      "errors": []
+    }
+  }
+}

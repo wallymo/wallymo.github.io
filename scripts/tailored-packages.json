@@ -1180,6 +1180,27 @@
       }
     },
     {
+      "workflowVersion": 2,
+      "slug": "principal-ux-hcd-lead",
+      "roleTitle": "Principal UX / Human-Centered Design Lead",
+      "artifactStem": "Principal-UX-HCD-Lead",
+      "configPath": "scripts/packages/principal-ux-hcd-lead.json",
+      "targetLane": "principal-hcd-and-regulated-service-design",
+      "evidenceMode": "portfolio-primary",
+      "fitClass": "adjacent",
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-04.html",
+        "project-01.html",
+        "project-07.html",
+        "project-06.html"
+      ],
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Principal-UX-HCD-Lead-Resume.pdf",
+      "publishStatus": "local-only",
+      "qaStatus": "qa-passed",
+      "builtAt": "2026-07-20T20:01:13.794Z"
+    },
+    {
       "slug": "product-management-ai-evaluator",
       "roleTitle": "Product Management AI Evaluator",
       "fitClass": "unclassified",
