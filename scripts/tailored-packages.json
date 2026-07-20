@@ -937,9 +937,26 @@
         "project-02.html"
       ],
       "resumePdfPath": "output/pdf/Wally-Mostafa-MedSpa-AI-Product-Manager-Resume.pdf",
-      "publishStatus": "local-only",
+      "publishStatus": "live-verified",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-07-20T20:00:53.323Z"
+      "builtAt": "2026-07-20T20:00:53.323Z",
+      "verification": {
+        "verifiedAt": "2026-07-20T20:03:59.892Z",
+        "routeUrl": "https://wallymo.github.io/medspa-ai-product-manager/",
+        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-MedSpa-AI-Product-Manager-Resume.pdf",
+        "configUrl": "https://wallymo.github.io/scripts/packages/medspa-ai-product-manager.json",
+        "projectUrls": [
+          "https://wallymo.github.io/project-01.html",
+          "https://wallymo.github.io/project-04.html",
+          "https://wallymo.github.io/project-02.html"
+        ],
+        "configSha256": "2e0035a490ad5924c2bc59d1bf900add9a3c85804c8adc9c9b6ad9000264b066",
+        "pdfSha256": "8f2dfe98be86a092c5571c27f9afa3342d15ac5a0a41c258fc6fa11fdfb89122",
+        "routeSha256": "7a9abae38a0cf41c2ef927fdcfdc7b16edeb75f51f55577d38628ab3d5cd3222",
+        "scopedProjectSha256": {},
+        "configInputSha256": "71686879bb3029c2de2cebb76d61abb80b06507697c41ad452c13dd0b6274b3f",
+        "qaBuiltAt": "2026-07-20T20:00:53.323Z"
+      }
     },
     {
       "slug": "mercor-management-strategy-consultant",
