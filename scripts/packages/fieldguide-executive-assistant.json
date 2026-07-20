@@ -1,0 +1,513 @@
+{
+  "workflowVersion": 2,
+  "contractRevision": 2,
+  "slug": "fieldguide-executive-assistant",
+  "roleTitle": "Fieldguide Executive Assistant",
+  "artifactStem": "Fieldguide-Executive-Assistant",
+  "fitClass": "stretch",
+  "routeMode": "canonical-projects",
+  "selectedProjects": [
+    "project-04.html",
+    "project-02.html",
+    "project-06.html"
+  ],
+  "job": {
+    "company": "Fieldguide",
+    "roleTitle": "Executive Assistant",
+    "jobId": null,
+    "jobUrl": null,
+    "sourceChannel": "chat-pasted-jd",
+    "dateCaptured": "2026-07-20",
+    "location": "Remote-first; company based in San Francisco, CA",
+    "atsVendor": "unknown",
+    "compensation": "$110K-$130K",
+    "rawJd": "About the job\n\nAbout Us\n\nFieldguide is establishing a new state of trust for global commerce and capital markets through automating and streamlining the work of assurance and audit practitioners specifically within cybersecurity, privacy, and ESG (Environmental, Social, Governance). Put simply, we build software for the people who enable trust between businesses.\n\nWe're based in San Francisco, CA, but built as a remote-first company that enables you to do your best work from anywhere. We're backed by top investors including Growth Equity at Goldman Sachs Alternatives, Bessemer Venture Partners, 8VC, Floodgate, Y Combinator, DNX Ventures, Global Founders Capital, Justin Kan, Elad Gil, and more.\n\nWe value diversity — in backgrounds and in experiences. We need people from all backgrounds and walks of life to help build the future of audit and advisory. Fieldguide's team is inclusive, driven, humble and supportive. We are deliberate and self-reflective about the kind of team and culture that we are building, seeking teammates that are not only strong in their own aptitudes but care deeply about supporting each other's growth.\n\nAs an early stage start-up employee, you'll have the opportunity to build out the future of business trust. We make audit practitioners' lives easier by eliminating up to 50% of their work and giving them better work-life balance. If you share our values and enthusiasm for building a great culture and product, you will find a home at Fieldguide.\n\nAbout The Role\n\nFieldguide is looking for a highly organized and proactive Executive Assistant to support our VP Sales and VP Customer Success. In this role, you will ensure both leaders remain focused on top priorities across the go-to-market organization by managing schedules, streamlining operations, and anticipating needs in a fast-paced environment. You will work closely with the VP Sales and VP Customer Success, coordinating across key GTM initiatives and handling responsibilities that support the growth of the sales and customer success functions. This is a unique opportunity to take on a critical support role within a high-growth SaaS startup transforming the audit & advisory space, offering exposure to go-to-market strategy and operational execution.\n\nWhat You'll Do\n\nManage the calendars of the VP Sales and VP Customer Success with foresight, balancing competing priorities across both functions.\nBuild and maintain relationships with key stakeholders, including customers, prospects, and cross-functional partners.\nCoordinate logistics for travel to customer and prospect visits, sales kickoffs, and industry events, including booking transportation and stay.\nPrioritize and prepare both leaders for meetings, such as preparing materials for customer meetings, pipeline reviews, and QBRs.\nLead logistics and coordination for sales and customer success team meetings and offsites, including scheduling and agenda.\nSupport planning for cross-functional GTM initiatives between sales and customer success.\nCoordinate GTM-wide meetings, including scheduling and logistics.\n\nAbout You\n\n2-5+ years of experience supporting VP-level or senior leaders in a high-growth or fast-paced environment, ideally within technology startups.\nA master of details who can prioritize and execute multiple projects seamlessly.\nA proactive and dependable partner, adept at anticipating needs and driving solutions with minimal direction.\nExceptional verbal and written communication skills, with the ability to interact effectively with internal and external stakeholders at all levels.\nThrives in a rapidly evolving environment, embracing change with flexibility and a solutions-oriented mindset.\nProficiency in Google Workspace (Docs, Sheets, Calendar) and collaboration tools such as Slack.\nPassionate about automation and proficient in using AI tools to make EA processes more efficient.\n\nMore About Fieldguide\n\nFieldguide is a values-based company. Our values are:\n\nFearless - Inspire & break down seemingly impossible walls.\nFast - Launch fast with excellence, iterate to perfection.\nLovable - Deliver happiness & 11 star experiences.\nOwners - Execute & run the business with ownership.\nWin-win - Create mutual value & earn trust for life.\nInclusive - Scale the best ideas with inclusive teams.\n\nSome Of Our Benefits Include\n\nCompetitive compensation packages with meaningful ownership\nFlexible PTO\n401k\nWellness benefits, including a bundle of free therapy sessions\nTechnology & Work from Home reimbursement\nFlexible work schedules\n\nCompensation Range: $110K - $130K"
+  },
+  "classification": {
+    "targetLane": "executive-support-and-gtm-operations",
+    "evidenceMode": "resume-primary",
+    "primarySource": "resume client leadership, cross-functional coordination, operational documentation, and fast-paced delivery",
+    "supportingSource": "portfolio research operations, client-led AI work, and audit-workflow evidence",
+    "hardGateStatus": "pass",
+    "hardGates": [
+      {
+        "gate": "Remote work location",
+        "status": "pass",
+        "evidence": "Current resume shows Raleigh, NC and sustained remote work; the posting describes Fieldguide as remote-first."
+      },
+      {
+        "gate": "Fast-paced technology or startup environment",
+        "status": "pass",
+        "evidence": "Current Hedgehox and One Block Away work covers fast-moving AI product delivery from ambiguous requests through working tools, demos, and stakeholder decisions."
+      },
+      {
+        "gate": "Required credential, clearance, or license",
+        "status": "not-applicable",
+        "evidence": "The public posting does not state a required credential, clearance, or professional license."
+      }
+    ]
+  },
+  "requirements": [
+    {
+      "id": "senior-leader-support",
+      "text": "Bring 2-5+ years supporting VP-level or senior leaders in a fast-paced environment.",
+      "priority": "core",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Managed Fortune 500 healthcare clients and collaborated with senior leadership across $2M-$50M+ programs.",
+        "Led cross-functional enterprise and agency work requiring clear priorities, decision materials, stakeholder communication, and follow-through; no formal Executive Assistant title is claimed."
+      ],
+      "resumeTerms": [
+        "senior stakeholders",
+        "executive support",
+        "fast-paced"
+      ]
+    },
+    {
+      "id": "calendar-management",
+      "text": "Manage two VP calendars with foresight while balancing competing priorities.",
+      "priority": "core",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "resumeTerms": [
+        "calendar management",
+        "executive calendars",
+        "complex scheduling"
+      ]
+    },
+    {
+      "id": "stakeholder-relationships",
+      "text": "Build and maintain relationships with customers, prospects, and cross-functional partners.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Seven-plus years managing Fortune 500 pharma and healthcare clients across major integrated programs.",
+        "Fifteen years translating client and stakeholder needs across account, strategy, creative, UX, product, development, finance, and operations teams."
+      ],
+      "resumeTerms": [
+        "stakeholder relationships",
+        "client communication",
+        "cross-functional partners"
+      ]
+    },
+    {
+      "id": "meeting-preparation",
+      "text": "Prepare leaders for customer meetings, pipeline reviews, and QBRs with clear materials and priorities.",
+      "priority": "core",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Translated client strategy into briefs, creative feedback, production requirements, timelines, and MLR-ready deliverables.",
+        "Built audit and analytics workflows that produced benchmarks, recommendations, visualizations, and presentation-ready client outputs."
+      ],
+      "resumeTerms": [
+        "meeting preparation",
+        "briefing materials",
+        "presentations"
+      ]
+    },
+    {
+      "id": "travel-and-events",
+      "text": "Coordinate executive travel, customer visits, sales kickoffs, and industry-event logistics.",
+      "priority": "core",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "resumeTerms": [
+        "executive travel",
+        "travel logistics",
+        "sales kickoff logistics"
+      ]
+    },
+    {
+      "id": "meetings-and-offsites",
+      "text": "Lead scheduling, agendas, and logistics for team meetings, offsites, and GTM-wide sessions.",
+      "priority": "core",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Built a repeatable research operating model across 20+ products using advance context, structured sessions, standardized findings, status communication, and follow-up.",
+        "Coordinated distributed US and Poland teams while scaling product design from 2 to 30 people."
+      ],
+      "resumeTerms": [
+        "cross-functional coordination",
+        "structured sessions",
+        "status communication"
+      ]
+    },
+    {
+      "id": "proactive-organization",
+      "text": "Anticipate needs, prioritize multiple projects, communicate clearly, and drive solutions with minimal direction.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Founder and AI product strategist work owns discovery, prioritization, requirements, prototype delivery, demo readiness, and client iteration from first ask through working product.",
+        "Director and account-lead work proves organization across large portfolios, distributed teams, regulated delivery, and multiple stakeholder groups."
+      ],
+      "resumeTerms": [
+        "anticipate needs",
+        "prioritization",
+        "minimal direction",
+        "follow-through"
+      ]
+    },
+    {
+      "id": "workspace-and-slack",
+      "text": "Use Google Workspace and Slack proficiently.",
+      "priority": "core",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "resumeTerms": [
+        "Google Workspace",
+        "Google Calendar",
+        "Slack"
+      ]
+    },
+    {
+      "id": "ai-automation",
+      "text": "Use AI and automation to make Executive Assistant processes more efficient.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Built AI-enabled tools for brief intake, project scoping, review routing, submission capture, claims review, and regulatory signal monitoring.",
+        "Current work translates ambiguous client needs into structured workflows, faster handoffs, and decision-ready outputs using AI tools."
+      ],
+      "resumeTerms": [
+        "AI-enabled automation",
+        "process improvement",
+        "automation"
+      ]
+    },
+    {
+      "id": "audit-advisory-context",
+      "text": "Support a high-growth SaaS company serving audit and advisory practitioners.",
+      "priority": "context",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Built the award-winning Digital Experience Audit workflow for scoring, benchmarks, recommendations, visualization, and presentation-ready client outputs.",
+        "Current regulated-AI work includes audit-ready annotations, review routing, evidence gaps, and human oversight."
+      ],
+      "resumeTerms": [
+        "Digital Experience Audit",
+        "regulated deliverables"
+      ]
+    }
+  ],
+  "fitGate": {
+    "supportedOverlap": [
+      "Fifteen years organizing high-stakes client, leadership, and cross-functional delivery across agencies, enterprise teams, and AI startups.",
+      "Seven-plus years managing Fortune 500 healthcare relationships and $2M-$50M+ programs with briefs, timelines, production requirements, presentations, and regulated deliverables.",
+      "Direct experience translating incomplete stakeholder inputs into clear priorities, structured documents, decision-ready outputs, and coordinated next steps.",
+      "Distributed-team coordination and operating-model evidence, including scaling product design from 2 to 30 across the US and Poland and building a research discipline across 20+ products.",
+      "Unusually strong AI-automation proof for an Executive Assistant role, including tools for intake, scoping, routing, submission capture, review, and follow-through.",
+      "Relevant audit and trust-workflow context through the Digital Experience Audit and regulated review products."
+    ],
+    "unsupportedRequirements": [
+      "Formal Executive Assistant title or dedicated EA tenure.",
+      "Direct ownership of complex calendars for two VP-level leaders.",
+      "Executive travel booking, itinerary management, customer-visit logistics, or industry-event coordination.",
+      "Sales kickoff, offsite, pipeline-review, or QBR logistics ownership.",
+      "Named Google Workspace, Google Calendar, or Slack proficiency in the current evidence."
+    ],
+    "actualMismatches": [
+      "The career center is client strategy, product and UX leadership, and AI implementation rather than dedicated executive administration.",
+      "Director and founder titles create a potential overqualification or motivation question that must be answered directly as an intentional move into hands-on executive support."
+    ],
+    "missingEvidence": [
+      "Concrete examples of calendar triage, scheduling conflicts, travel planning, agendas, expense handling, or offsite logistics.",
+      "Direct support relationship with a named VP-level leader and the duration of that support.",
+      "Verified day-to-day proficiency with Google Calendar, Docs, Sheets, and Slack."
+    ],
+    "coverLetterBridge": {
+      "status": "recommended",
+      "rationale": "We can make the case with a cover letter by presenting the move as intentional and connecting fifteen years of high-touch client service, senior-stakeholder coordination, operational follow-through, fast-paced startup execution, and AI-enabled workflow design to Fieldguide's need for a proactive executive partner. The cover letter must acknowledge the lack of a formal Executive Assistant title and explain why this hands-on support role is the work the candidate genuinely wants."
+    },
+    "recommendation": "Proceed only as a user-approved stretch. Lead with the intentional move into executive support, high-trust stakeholder care, operational organization, and AI automation. Do not claim calendar, travel, offsite, QBR, pipeline, Google Workspace, or Slack experience without additional evidence."
+  },
+  "resume": {
+    "summary": "Client operations and cross-functional program leader making an intentional move into executive support, with 15 years keeping high-stakes client, leadership, and delivery work organized across fast-paced agencies, enterprise teams, and AI startups. I anticipate needs, turn incomplete inputs into clear briefs and next steps, prepare decision-ready materials, and keep senior stakeholders aligned through changing priorities. I also build AI-enabled automation that reduces administrative drag and improves follow-through.",
+    "skills": [
+      {
+        "label": "Executive & Stakeholder Coordination",
+        "description": "Stakeholder relationships, client communication, meeting preparation, briefing materials, presentations, follow-ups, and cross-functional partners"
+      },
+      {
+        "label": "Client & GTM Support",
+        "description": "7+ years managing Fortune 500 healthcare relationships, USD 2M-50M+ programs, timelines, production requirements, and regulated deliverables"
+      },
+      {
+        "label": "Program Organization & Follow-Through",
+        "description": "Prioritization, action tracking, documentation, status communication, structured sessions, cross-functional coordination, and distributed-team delivery"
+      },
+      {
+        "label": "AI-Enabled Process Improvement",
+        "description": "AI tools for brief intake, scoping, review routing, submission capture, knowledge workflows, and human-in-the-loop review"
+      }
+    ],
+    "roles": {
+      "hedgehox": [
+        "Convert fast-moving pharma agency needs into clear briefs, priorities, review routes, and working tools across client, operations, finance, and regulatory stakeholders",
+        "Built AI tools for brief intake, scoping, review routing, submission capture, claims review, and FDA signal monitoring, reducing manual coordination and surfacing missing information earlier",
+        "Prepared demo narratives and decision-ready materials that helped secure an investor for Claims Detection software and kept stakeholders aligned through iteration"
+      ],
+      "one-block-away": [
+        "Run client work from first ask through working prototype, organizing discovery, priorities, requirements, demo preparation, follow-ups, and next-step decisions with minimal direction",
+        "Turn ambiguous business questions into structured briefs, testable workflows, and client-ready product demonstrations that make decisions easier",
+        "Built ListingPal and WeReady AI POCs, connecting client inputs, source signals, risk scoring, evidence trails, and recommendations into clear decision workflows"
+      ],
+      "kinesso": [
+        "Scaled product design from 2 to 30 people across the US and Poland, coordinating distributed teams supporting enterprise analytics used by 7,000+ users across 22 white-label brands",
+        "Created a research operating model across 20+ products with advance context, structured 30-60 minute sessions, standardized reports, status communication, and follow-up",
+        "Built the Digital Experience Audit workflow for channel scoring, benchmarks, recommendations, visualization, and presentation-ready client outputs"
+      ],
+      "omnicom": [
+        "Supported oncology accounts by coordinating account, strategy, creative, and delivery conversations and translating brand goals into clearer user flows, content structures, and recommendations",
+        "Combined client-service and UX experience to strengthen communication and delivery across regulated healthcare work"
+      ],
+      "heartbeat": [
+        "Led stakeholder research and experience strategy, preparing journey maps, user flows, wireframes, and prototypes for patient, HCP, and internal brand-team experiences",
+        "Kept strategy, creative, account, and engineering teams aligned from research findings through build-ready product and campaign delivery"
+      ],
+      "account-management": [
+        "Managed Fortune 500 pharma and healthcare clients with USD 2M-50M+ budgets, balancing high-volume priorities across clients, senior leadership, strategy, creative, production, UX, and development teams",
+        "Served as one of two account consumer leads on FCB Health's largest pharma account across TV, radio, digital, gaming, Times Square, unbranded campaigns, brand planning, and MLR review",
+        "Translated client and brand strategy into briefs, creative feedback, production requirements, timelines, and MLR-ready deliverables across account, creative, UX, and development teams"
+      ]
+    }
+  },
+  "hero": {
+    "eyebrow": "Fieldguide Executive Assistant",
+    "tags": [
+      "Executive & stakeholder coordination",
+      "GTM follow-through",
+      "AI-enabled operations"
+    ],
+    "intro": "Fieldguide needs a proactive partner who can keep two GTM leaders focused while fast-moving customer and internal work stays organized. I am intentionally moving toward this kind of hands-on executive support. I bring 15 years coordinating high-stakes client and cross-functional delivery, including 7+ years managing Fortune 500 healthcare relationships and $2M-$50M+ programs, plus current AI workflow work that turns incomplete inputs into clear briefs, faster handoffs, and reliable follow-through."
+  },
+  "contact": {
+    "prompt": "Hiring an executive partner who can bring order to fast-moving Sales and Customer Success priorities, strengthen stakeholder communication, and use AI to streamline recurring work? Email is the fastest way to reach me.",
+    "signoff": "Stakeholder care · operational follow-through · AI-enabled support"
+  },
+  "constraints": {
+    "doNotClaim": [
+      "Formal Executive Assistant tenure",
+      "Direct ownership of VP Sales and VP Customer Success calendars",
+      "Executive travel booking and itinerary ownership",
+      "Sales kickoff or company offsite logistics ownership",
+      "Pipeline review or QBR ownership",
+      "Google Workspace proficiency",
+      "Google Calendar proficiency",
+      "Slack administration",
+      "Quota, pipeline, renewal, or retention ownership"
+    ],
+    "blockedTerms": [
+      "managed executive calendars",
+      "booked executive travel",
+      "owned QBRs",
+      "owned pipeline reviews",
+      "Executive Assistant with 2-5 years",
+      "Google Workspace expert"
+    ]
+  },
+  "privacy": {
+    "publicSafe": true,
+    "notes": "Contains only the public job description and sanitized resume and portfolio evidence. It excludes recruiter details, application answers, private compensation boundaries, work-authorization details, and other private application data."
+  },
+  "qa": {
+    "status": "qa-passed",
+    "builtAt": "2026-07-20T17:06:38.986Z",
+    "configInputSha256": "781d53cecd9485b3044dd785c26617130b683f70e220eae0a075fd10fc4f5f8f",
+    "sourceResumeSha256": "375cc6566f5bbad5b95be9da551dfe87824378fb252222409d29ef32d334ca25",
+    "artifactHashes": {
+      "routeSha256": "5a6ddd08f52a36867ea50cc2b06c1b37c89f3dbb14e2fc98b982f852d2ab03ce",
+      "resumePdfSha256": "38109ce56eebaeeb68a6bb8fcce6ff7ab25e6e1280981849f38a535aa8d1d303",
+      "scopedProjectSha256": {}
+    },
+    "renderer": {
+      "browser": {
+        "name": "chrome-headless-shell",
+        "version": "Google Chrome for Testing 149.0.7827.55"
+      },
+      "htmlPath": "tmp/tailored-resumes/fieldguide-executive-assistant.html",
+      "pdfPath": "output/pdf/Wally-Mostafa-Fieldguide-Executive-Assistant-Resume.pdf"
+    },
+    "ats": {
+      "ok": true,
+      "pdfPath": "output/pdf/Wally-Mostafa-Fieldguide-Executive-Assistant-Resume.pdf",
+      "pageCount": 2,
+      "fileSize": 128874,
+      "annotations": [
+        {
+          "page": 1,
+          "uri": "mailto:wmostafa12@gmail.com"
+        },
+        {
+          "page": 1,
+          "uri": "https://linkedin.com/in/wallymo"
+        },
+        {
+          "page": 1,
+          "uri": "https://wallymo.github.io/fieldguide-executive-assistant/"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/6748"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/4629"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.red-dot.org/project/dxa-digital-experience-audit-55219"
+        }
+      ],
+      "coverage": [
+        {
+          "id": "senior-leader-support",
+          "requirement": "Bring 2-5+ years supporting VP-level or senior leaders in a fast-paced environment.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "senior stakeholders",
+            "executive support",
+            "fast-paced"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "calendar-management",
+          "requirement": "Manage two VP calendars with foresight while balancing competing priorities.",
+          "priority": "core",
+          "evidenceStatus": "none",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "calendar management",
+            "executive calendars",
+            "complex scheduling"
+          ]
+        },
+        {
+          "id": "stakeholder-relationships",
+          "requirement": "Build and maintain relationships with customers, prospects, and cross-functional partners.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "stakeholder relationships",
+            "client communication",
+            "cross-functional partners"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "meeting-preparation",
+          "requirement": "Prepare leaders for customer meetings, pipeline reviews, and QBRs with clear materials and priorities.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "meeting preparation",
+            "briefing materials",
+            "presentations"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "travel-and-events",
+          "requirement": "Coordinate executive travel, customer visits, sales kickoffs, and industry-event logistics.",
+          "priority": "core",
+          "evidenceStatus": "none",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "executive travel",
+            "travel logistics",
+            "sales kickoff logistics"
+          ]
+        },
+        {
+          "id": "meetings-and-offsites",
+          "requirement": "Lead scheduling, agendas, and logistics for team meetings, offsites, and GTM-wide sessions.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "cross-functional coordination",
+            "structured sessions",
+            "status communication"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "proactive-organization",
+          "requirement": "Anticipate needs, prioritize multiple projects, communicate clearly, and drive solutions with minimal direction.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "anticipate needs",
+            "prioritization",
+            "minimal direction",
+            "follow-through"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "workspace-and-slack",
+          "requirement": "Use Google Workspace and Slack proficiently.",
+          "priority": "core",
+          "evidenceStatus": "none",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "Google Workspace",
+            "Google Calendar",
+            "Slack"
+          ]
+        },
+        {
+          "id": "ai-automation",
+          "requirement": "Use AI and automation to make Executive Assistant processes more efficient.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "AI-enabled automation",
+            "process improvement",
+            "automation"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "audit-advisory-context",
+          "requirement": "Support a high-growth SaaS company serving audit and advisory practitioners.",
+          "priority": "context",
+          "evidenceStatus": "adjacent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "Digital Experience Audit",
+            "regulated deliverables"
+          ],
+          "missingTerms": []
+        }
+      ],
+      "failures": [],
+      "warnings": []
+    },
+    "route": {
+      "viewports": [
+        {
+          "name": "desktop",
+          "screenshot": "tmp/qa/fieldguide-executive-assistant/desktop.png",
+          "errors": []
+        },
+        {
+          "name": "mobile",
+          "screenshot": "tmp/qa/fieldguide-executive-assistant/mobile.png",
+          "errors": []
+        }
+      ],
+      "errors": []
+    }
+  }
+}
