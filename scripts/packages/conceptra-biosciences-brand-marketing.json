@@ -1,0 +1,467 @@
+{
+  "workflowVersion": 2,
+  "contractRevision": 2,
+  "slug": "conceptra-biosciences-brand-marketing",
+  "roleTitle": "Conceptra Biosciences Brand Marketing Manager",
+  "artifactStem": "Conceptra-Biosciences-Brand-Marketing",
+  "fitClass": "strong",
+  "routeMode": "canonical-projects",
+  "selectedProjects": [
+    "project-01.html",
+    "project-06.html",
+    "project-05.html"
+  ],
+  "job": {
+    "company": "Conceptra Biosciences",
+    "roleTitle": "Brand Marketing Manager",
+    "jobId": "not-listed",
+    "jobUrl": null,
+    "sourceChannel": "chat-pasted-jd",
+    "dateCaptured": "2026-07-20",
+    "location": "Not stated in pasted JD",
+    "atsVendor": "unknown",
+    "rawJd": "About the job. What You Will Do. Brand management and marketing execution: Support the development and execution of brand plans, messaging strategies, product positioning and tactical marketing programs. Coordinate execution of marketing campaigns for health care providers and patients across advertising channels, SEO, CRM, websites, events and sales channels. Coordinate cross-functional stakeholders including Marketing, Medical Affairs, Regulatory, Legal, Sales, Market Access, Operations and external agency partners. Lead project management including weekly status meetings, timelines, project progress tracking, risk identification and proactive communication of status updates to stakeholders. Creative development and agency management: Partner with internal teams and external agencies to develop marketing materials and promotional assets. Manage the creative development process from briefing through final production, ensuring alignment with corporate identity, brand strategy, and business objectives. Review creative executions for accuracy, consistency, and adherence to approved messaging and brand guidelines. Coordinate revisions and feedback among stakeholders to ensure efficient project progression. Medical, Legal and Regulatory review management: Prepare, submit, and track promotional materials through the Medical, Legal, and Regulatory review system. Facilitate review meetings, consolidate stakeholder feedback, and manage revisions to ensure timely approvals. Maintain documentation and version control of all materials. Ensure all promotional materials comply with regulatory requirements, company policies, and industry standards. Operational support: Partner with Sales leadership to develop and maintain sales tools, training materials, competitive intelligence resources, and field communication materials. Assist in managing marketing budgets and vendor invoicing. Support content management and asset organization across marketing platforms. Monitor campaign performance using CRM, digital, sales, and market data sources. Develop dashboards and reports that provide actionable insights and recommendations for optimization. Support healthcare professional marketing initiatives including sales aids, educational materials, email campaigns, and digital engagement programs. Support commercial launch planning and execution activities including promotional material development, field force support, creative agency and launch milestone management. Experience: Bachelor's degree in Marketing, Business, Life Sciences, Communications, or a related field. Two to four years of experience in pharmaceutical, biotech, or life sciences marketing. Experience supporting pharmaceutical, diagnostic, or laboratory-developed test promotional materials with an understanding of relevant regulatory requirements. Experience with healthcare provider or patient marketing initiatives. Experience working with creative agencies and coordinating asset development. Skills: Proven ability to support product launches in pharmaceuticals, diagnostics or devices. Strong project management and organizational skills with the ability to manage multiple priorities simultaneously. Ability to communicate effectively across Marketing, Medical, Regulatory and Operational teams and deliver high-quality work in a highly regulated environment. Ability to use or quickly learn MLR review systems such as Zen QMS or Veeva PromoMats, and CRM platforms such as Veeva CRM, Salesforce or Zoho CRM. Capability to execute digital marketing, content management, and omnichannel campaigns. Competencies: A personal or professional passion for women's health. Collaborative mindset with the ability to build strong cross-functional relationships. Passionate about learning and improving both the depth and breadth of skills and capabilities. Comfortable in a fast-paced, mid-size company. Conceptra Biosciences is redefining access to reproductive healthcare. As a leader in the manufacturing of FDA-approved therapies and diagnostics for women's health, the company is scaling a national platform that connects innovation, regulatory rigor, and compassion."
+  },
+  "classification": {
+    "targetLane": "regulated-pharma-brand-marketing-and-mlr-execution",
+    "evidenceMode": "resume-primary",
+    "primarySource": "resume",
+    "supportingSource": "portfolio",
+    "hardGateStatus": "pass",
+    "hardGates": [
+      {
+        "gate": "Bachelor's degree in Marketing, Business, Life Sciences, Communications, or a related field",
+        "status": "pass",
+        "evidence": "BA in Labor Studies and Employee Relations from Rutgers University, 2010, supported by fifteen years of directly relevant professional work."
+      },
+      {
+        "gate": "Two to four years of pharmaceutical, biotech, or life-sciences marketing experience",
+        "status": "pass",
+        "evidence": "More than seven years managing Fortune 500 pharma and healthcare brand programs, followed by regulated healthcare UX and current pharma AI implementation work."
+      },
+      {
+        "gate": "Pharma promotional-material and regulatory-review experience",
+        "status": "pass",
+        "evidence": "Direct brand planning, creative production, and MLR review experience plus current claims-review, review-routing, submission-capture, and FDA-monitoring workflow work."
+      },
+      {
+        "gate": "Healthcare provider or patient marketing experience",
+        "status": "pass",
+        "evidence": "Resume documents patient, HCP, and internal brand-team experiences across regulated healthcare programs and more than seven years of pharma campaign work."
+      },
+      {
+        "gate": "Creative-agency collaboration and asset development",
+        "status": "pass",
+        "evidence": "Direct agency experience translating brand strategy into briefs, creative feedback, production requirements, timelines, and MLR-ready deliverables across account, strategy, creative, UX, and development teams."
+      }
+    ]
+  },
+  "requirements": [
+    {
+      "id": "pharma-brand-and-omnichannel-marketing",
+      "text": "Support pharma brand plans, messaging, product positioning, and HCP and patient campaigns across digital and traditional channels.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "More than seven years managing Fortune 500 pharma and healthcare brands with budgets from 2 million to more than 50 million dollars.",
+        "Served as one of two consumer account leads on FCB Health's largest pharma account across TV, radio, digital, gaming, Times Square, unbranded campaigns, brand planning, and MLR review.",
+        "Created patient, HCP, and internal brand-team experiences across regulated healthcare programs."
+      ],
+      "resumeTerms": [
+        "brand planning",
+        "product positioning",
+        "omnichannel campaigns",
+        "HCP and patient"
+      ]
+    },
+    {
+      "id": "cross-functional-project-management",
+      "text": "Coordinate cross-functional stakeholders, timelines, project progress, risks, multiple priorities, and proactive status communication.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Managed multimillion-dollar pharma programs across account, strategy, creative, UX, development, and client teams.",
+        "Current work converts complex agency needs into scoped tools, workflow requirements, review paths, and working product decisions.",
+        "Scaled a distributed product-design function from 2 to 30 people across the United States and Poland."
+      ],
+      "resumeTerms": [
+        "project management",
+        "timelines",
+        "cross-functional delivery",
+        "stakeholder communication"
+      ]
+    },
+    {
+      "id": "creative-development-and-agency-execution",
+      "text": "Manage promotional-asset development from briefing through production, review, revision, and delivery with internal and external agency partners.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Translated brand strategy into briefs, creative feedback, production requirements, timelines, and regulated deliverables.",
+        "Worked within and across pharma agencies for seven-plus years and later partnered with strategy, creative, account, and engineering teams on regulated healthcare experiences.",
+        "Enterprise design-system work created repeatable brand-theming and component standards across 22 white-label brands."
+      ],
+      "resumeTerms": [
+        "creative briefs",
+        "creative feedback",
+        "production requirements",
+        "brand consistency"
+      ]
+    },
+    {
+      "id": "mlr-review-and-compliance",
+      "text": "Prepare, route, track, revise, and document promotional materials through Medical, Legal, and Regulatory review while maintaining compliant content.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Direct MLR review experience on Fortune 500 pharma campaigns.",
+        "Designed Claims Detector to identify promotional claims, surface evidence gaps, and pre-populate audit-ready annotations before MLR submission.",
+        "Built concepts for review routing, submission capture, and FDA warning-letter signal monitoring."
+      ],
+      "resumeTerms": [
+        "MLR review",
+        "promotional claims",
+        "review routing",
+        "submission capture",
+        "audit-ready annotations"
+      ]
+    },
+    {
+      "id": "campaign-performance-and-reporting",
+      "text": "Monitor campaign and market performance, then develop dashboards, reports, insights, and recommendations for optimization.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Built the Digital Experience Audit workflow for channel scoring, benchmarks, recommendations, visualization, and presentation-ready client outputs.",
+        "Led enterprise data-visualization, dashboard, brand-theming, and reusable analytics work used by 7,000-plus users across 22 white-label brands.",
+        "The audit and analytics work earned Red Dot and multiple Indigo awards."
+      ],
+      "resumeTerms": [
+        "campaign performance",
+        "dashboards",
+        "benchmarks",
+        "actionable recommendations"
+      ]
+    },
+    {
+      "id": "commercial-launch-and-field-support",
+      "text": "Support product launches, promotional materials, sales and field tools, education, and launch milestones.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Current Echo workflow reduced one pharma submission route from 8 hours to 10 minutes and helped cut a planned five-day launch to two days.",
+        "Past pharma account work covered consumer campaigns, brand planning, creative production, and MLR-ready deliverables across major channels.",
+        "Current work translates regulated workflow requirements into client-facing tools, demonstrations, and presentation-ready outputs."
+      ],
+      "resumeTerms": [
+        "launch support",
+        "promotional materials",
+        "client-facing tools",
+        "presentation-ready outputs"
+      ]
+    },
+    {
+      "id": "named-mlr-and-crm-platforms",
+      "text": "Use or quickly learn Zen QMS, Veeva PromoMats, Veeva CRM, Salesforce, or Zoho CRM.",
+      "priority": "core",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Direct MLR workflow, claims-review, routing, submission-capture, and regulated-content experience supports platform learning.",
+        "No named Zen QMS, Veeva PromoMats, Veeva CRM, Salesforce, or Zoho CRM ownership is documented."
+      ],
+      "resumeTerms": [
+        "MLR claim review",
+        "submission capture",
+        "regulated content"
+      ]
+    }
+  ],
+  "fitGate": {
+    "supportedOverlap": [
+      "More than seven years of direct Fortune 500 pharma brand, campaign, client, budget, creative-production, and MLR-review work.",
+      "Direct patient, HCP, and internal brand-team experience across regulated healthcare programs.",
+      "Current pharma AI work covering promotional claims, evidence gaps, audit-ready annotations, review routing, submission capture, scoping, and FDA monitoring.",
+      "Enterprise dashboard, channel-scoring, benchmarking, recommendation, brand-theming, and presentation experience at scale.",
+      "Cross-functional delivery across account, strategy, creative, UX, engineering, finance, operations, clients, and distributed product teams."
+    ],
+    "unsupportedRequirements": [
+      "Named Zen QMS, Veeva PromoMats, Veeva CRM, Salesforce, and Zoho CRM experience is not documented.",
+      "Direct diagnostic or laboratory-developed-test promotional-material experience is not documented.",
+      "Vendor invoicing ownership and a formal marketing-asset version-control system are not documented."
+    ],
+    "actualMismatches": [],
+    "missingEvidence": [
+      "A personal women's-health story or prior women-specific brand assignment is not documented, so the route aligns to Conceptra's mission without inventing a personal narrative.",
+      "The pasted JD does not include an exact posting title, location, compensation, job URL, or application-system details."
+    ],
+    "coverLetterBridge": {
+      "status": "not-needed",
+      "rationale": "The resume directly proves the role's central pharma marketing, brand execution, agency coordination, HCP and patient experience, MLR review, project delivery, and analytics work. The portfolio independently validates current regulated-workflow and dashboard proof, so a cover letter is not needed to make the application credible."
+    },
+    "recommendation": "Proceed as strong. Lead with direct pharma brand and MLR execution, current regulated-content workflow work, and enterprise campaign-performance reporting. Keep named-platform, diagnostic-promotion, vendor-invoicing, and women-specific brand claims out of the package."
+  },
+  "resume": {
+    "summary": "Pharma brand marketing and delivery lead with 15 years across healthcare client strategy, regulated promotional workflows, HCP and patient experiences, and enterprise marketing systems. I bring 7+ years managing USD 2M-50M+ Fortune 500 pharma programs across brand planning, omnichannel campaigns, creative development, timelines, budgets, and MLR review, plus current AI work improving claims review, routing, submission capture, and FDA signal monitoring.",
+    "skills": [
+      {
+        "label": "Pharma Brand & Omnichannel Marketing",
+        "description": "Brand planning, product positioning, HCP and patient marketing, integrated TV, radio, digital, gaming, OOH, web, SEO, unbranded campaigns, and launch support"
+      },
+      {
+        "label": "MLR Review & Regulated Content",
+        "description": "Promotional claims, evidence gaps, audit-ready annotations, review routing, submission capture, FDA signal monitoring, and MLR-ready deliverables"
+      },
+      {
+        "label": "Creative & Cross-functional Delivery",
+        "description": "Project management, creative briefs, creative feedback, production requirements, timelines, brand consistency, stakeholder communication, and cross-functional delivery"
+      },
+      {
+        "label": "Campaign Performance & Commercial Support",
+        "description": "Campaign performance, dashboards, channel scoring, benchmarks, actionable recommendations, client-facing tools, presentation-ready outputs, budgets, and launch milestones"
+      }
+    ],
+    "roles": {
+      "hedgehox": [
+        "Designed Claims Detector workflows that identify promotional claims, surface evidence gaps, and pre-populate audit-ready annotations before MLR submission",
+        "Converted pharma agency needs into AI tools for MLR claim review, brief intake, scoping, review routing, submission capture, and FDA signal monitoring",
+        "Built Echo submission automation for pharma launches, moving one route from 8 hours to 10 minutes and helping cut a planned 5-day launch to 2 days",
+        "Built Scope Generator for pharma agency finance and operations teams to manage regional rate cards, brands, sub-brands, and natural-language scope changes",
+        "Developed FDA Warning Tool concepts that connect warning-letter patterns to regulated content and promotional-risk guidance for pharma teams"
+      ],
+      "one-block-away": [
+        "Build client-led POCs that turn unclear business and marketing questions into testable product surfaces, demo flows, campaign content, and roadmap decisions",
+        "Built ListingPal's AI listing-generation POC and landing page, turning basic inputs into listing copy, social posts, ad copy, styling direction, and MLS/SEO-ready language in under 90 seconds",
+        "Own strategy, UX, workflow design, front-end build, backend logic, presentation readiness, and client iteration from first ask through working prototype"
+      ],
+      "kinesso": [
+        "Scaled product design from 2 to 30 people across the US and Poland for enterprise marketing analytics used by 7,000+ users across 22 white-label brands",
+        "Led data-visualization, dashboard, design-system, brand-theming, and reusable component strategy across a 20+ product marketing-intelligence suite",
+        "Built the Digital Experience Audit workflow for campaign performance, channel scoring, benchmarks, actionable recommendations, visualization, and presentation-ready client outputs",
+        "Built the UX research discipline through stakeholder roadshows, repeatable tools, workshops, Figma documentation, and cross-functional product feedback loops"
+      ],
+      "omnicom": [
+        "Supported oncology accounts as a freelance UX designer, combining healthcare account-management experience with UX strategy for regulated brand work",
+        "Translated brand goals into clearer user flows, content structure, digital recommendations, and cross-functional delivery inputs for account, strategy, creative, and development teams"
+      ],
+      "heartbeat": [
+        "Led UX research and experience strategy for pharma and healthcare programs, translating stakeholder input, competitive audits, and user needs into content, campaign, and product direction",
+        "Created journey maps, site maps, user flows, wireframes, and prototypes for patient, HCP, and internal brand-team experiences across regulated healthcare programs",
+        "Partnered with strategy, creative, account, and engineering teams to move recommendations from research findings into build-ready product and campaign experiences"
+      ],
+      "account-management": [
+        "7+ years managing Fortune 500 pharma and healthcare clients with USD 2M-50M+ budgets across CNS, neurology, psychiatry, cardiovascular, metabolic, and sleep-wakefulness brands including NUVIGIL, Namenda XR, Lipitor, and Zoloft",
+        "One of two account consumer leads on FCB Health's largest pharma account across TV, radio, digital, gaming, Times Square, unbranded campaigns, brand planning, and MLR review",
+        "Translated client and brand strategy into creative briefs, messaging inputs, creative feedback, production requirements, timelines, and MLR-ready promotional materials",
+        "Coordinated client, account, strategy, creative, UX, development, and production stakeholders across multiple regulated campaign workstreams"
+      ]
+    }
+  },
+  "hero": {
+    "eyebrow": "Conceptra Biosciences Brand Marketing",
+    "tags": [
+      "Pharma brand & omnichannel execution",
+      "MLR review & promotional workflows",
+      "HCP, patient & launch support"
+    ],
+    "intro": "Conceptra needs a marketer who can keep brand execution moving through creative development, cross-functional review, and commercial launch in a regulated environment. That is work I already know: I spent 7+ years managing USD 2M-50M+ Fortune 500 pharma programs across brand planning, HCP and patient campaigns, agency production, and MLR review; I now build claims-review, routing, and submission tools for pharma teams; and I led analytics and dashboard systems used by 7,000+ people across 22 white-label brands."
+  },
+  "contact": {
+    "prompt": "Hiring a pharma marketer who can move brand strategy through agency production, MLR review, omnichannel execution, and actionable reporting? I would welcome a conversation about bringing that experience to Conceptra Biosciences. Email is the fastest way to reach me.",
+    "signoff": "Pharma brand execution · MLR operations · HCP and patient marketing"
+  },
+  "constraints": {
+    "doNotClaim": [
+      "Zen QMS experience",
+      "Veeva PromoMats experience",
+      "Veeva CRM experience",
+      "Salesforce administration",
+      "Zoho CRM experience",
+      "Diagnostic or laboratory-developed-test promotional experience",
+      "Vendor invoicing ownership",
+      "A personal women's-health story",
+      "Direct women's-health brand experience"
+    ],
+    "blockedTerms": [
+      "Zen QMS",
+      "Veeva PromoMats",
+      "Veeva CRM",
+      "Salesforce",
+      "Zoho CRM",
+      "laboratory-developed test marketing",
+      "vendor invoicing",
+      "women's health brand experience"
+    ]
+  },
+  "privacy": {
+    "publicSafe": true,
+    "notes": "Contains only the public pasted job description and sanitized evidence from the public resume and portfolio. It includes no recruiter contact details, private application answers, compensation boundaries, or private eligibility information. The exact posting title was not present, so the package uses Brand Marketing Manager as a descriptive working title."
+  },
+  "qa": {
+    "status": "qa-passed",
+    "builtAt": "2026-07-20T22:39:54.169Z",
+    "configInputSha256": "bfe79d88d35a3800abb069db73401907f08a05808f663f64549d84565c293c59",
+    "sourceResumeSha256": "375cc6566f5bbad5b95be9da551dfe87824378fb252222409d29ef32d334ca25",
+    "artifactHashes": {
+      "routeSha256": "964909aed43f07595fc96107652d1f1208291b1a35e33d8e181feb4d904fd987",
+      "resumePdfSha256": "4c28b0841a5a3acfb8676daaffa7a969e61c014bd576493feda611a2937e8399",
+      "scopedProjectSha256": {}
+    },
+    "renderer": {
+      "browser": {
+        "name": "chrome-headless-shell",
+        "version": "Google Chrome for Testing 149.0.7827.55"
+      },
+      "htmlPath": "tmp/tailored-resumes/conceptra-biosciences-brand-marketing.html",
+      "pdfPath": "output/pdf/Wally-Mostafa-Conceptra-Biosciences-Brand-Marketing-Resume.pdf"
+    },
+    "ats": {
+      "ok": true,
+      "pdfPath": "output/pdf/Wally-Mostafa-Conceptra-Biosciences-Brand-Marketing-Resume.pdf",
+      "pageCount": 2,
+      "fileSize": 133164,
+      "annotations": [
+        {
+          "page": 1,
+          "uri": "mailto:wmostafa12@gmail.com"
+        },
+        {
+          "page": 1,
+          "uri": "https://linkedin.com/in/wallymo"
+        },
+        {
+          "page": 1,
+          "uri": "https://wallymo.github.io/conceptra-biosciences-brand-marketing/"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/6748"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/4629"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.red-dot.org/project/dxa-digital-experience-audit-55219"
+        }
+      ],
+      "coverage": [
+        {
+          "id": "pharma-brand-and-omnichannel-marketing",
+          "requirement": "Support pharma brand plans, messaging, product positioning, and HCP and patient campaigns across digital and traditional channels.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "brand planning",
+            "product positioning",
+            "omnichannel campaigns",
+            "HCP and patient"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "cross-functional-project-management",
+          "requirement": "Coordinate cross-functional stakeholders, timelines, project progress, risks, multiple priorities, and proactive status communication.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "project management",
+            "timelines",
+            "cross-functional delivery",
+            "stakeholder communication"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "creative-development-and-agency-execution",
+          "requirement": "Manage promotional-asset development from briefing through production, review, revision, and delivery with internal and external agency partners.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "creative briefs",
+            "creative feedback",
+            "production requirements",
+            "brand consistency"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "mlr-review-and-compliance",
+          "requirement": "Prepare, route, track, revise, and document promotional materials through Medical, Legal, and Regulatory review while maintaining compliant content.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "MLR review",
+            "promotional claims",
+            "review routing",
+            "submission capture",
+            "audit-ready annotations"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "campaign-performance-and-reporting",
+          "requirement": "Monitor campaign and market performance, then develop dashboards, reports, insights, and recommendations for optimization.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "campaign performance",
+            "dashboards",
+            "benchmarks",
+            "actionable recommendations"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "commercial-launch-and-field-support",
+          "requirement": "Support product launches, promotional materials, sales and field tools, education, and launch milestones.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "launch support",
+            "promotional materials",
+            "client-facing tools",
+            "presentation-ready outputs"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "named-mlr-and-crm-platforms",
+          "requirement": "Use or quickly learn Zen QMS, Veeva PromoMats, Veeva CRM, Salesforce, or Zoho CRM.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "MLR claim review",
+            "submission capture",
+            "regulated content"
+          ],
+          "missingTerms": []
+        }
+      ],
+      "failures": [],
+      "warnings": []
+    },
+    "route": {
+      "viewports": [
+        {
+          "name": "desktop",
+          "screenshot": "tmp/qa/conceptra-biosciences-brand-marketing/desktop.png",
+          "errors": []
+        },
+        {
+          "name": "mobile",
+          "screenshot": "tmp/qa/conceptra-biosciences-brand-marketing/mobile.png",
+          "errors": []
+        }
+      ],
+      "errors": []
+    }
+  }
+}

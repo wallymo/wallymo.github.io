@@ -382,6 +382,26 @@
       "publishStatus": "uncommitted"
     },
     {
+      "workflowVersion": 2,
+      "slug": "conceptra-biosciences-brand-marketing",
+      "roleTitle": "Conceptra Biosciences Brand Marketing Manager",
+      "artifactStem": "Conceptra-Biosciences-Brand-Marketing",
+      "configPath": "scripts/packages/conceptra-biosciences-brand-marketing.json",
+      "targetLane": "regulated-pharma-brand-marketing-and-mlr-execution",
+      "evidenceMode": "resume-primary",
+      "fitClass": "strong",
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-01.html",
+        "project-06.html",
+        "project-05.html"
+      ],
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Conceptra-Biosciences-Brand-Marketing-Resume.pdf",
+      "publishStatus": "local-only",
+      "qaStatus": "qa-passed",
+      "builtAt": "2026-07-20T22:39:54.169Z"
+    },
+    {
       "slug": "conversifi",
       "roleTitle": "Conversifi Strategic Growth Partner",
       "fitClass": "unclassified",
