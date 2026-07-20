@@ -1,0 +1,433 @@
+{
+  "workflowVersion": 2,
+  "contractRevision": 2,
+  "slug": "hmh-senior-ux-designer",
+  "roleTitle": "HMH Senior UX Designer",
+  "artifactStem": "HMH-Senior-UX-Designer",
+  "fitClass": "strong",
+  "routeMode": "canonical-projects",
+  "selectedProjects": [
+    "project-04.html",
+    "project-05.html",
+    "project-03.html",
+    "project-07.html"
+  ],
+  "job": {
+    "company": "HMH",
+    "roleTitle": "Senior UX Designer",
+    "jobId": "not-listed",
+    "jobUrl": null,
+    "sourceChannel": "chat-pasted-jd",
+    "dateCaptured": "2026-07-20",
+    "location": "Remote",
+    "atsVendor": "unknown",
+    "rawJd": "Job Title: Senior UX Designer. Location: Remote. Who We Are: HMH is a learning technology company committed to delivering connected solutions that engage learners, empower educators, and improve student outcomes. As a leading provider of K-12 core curriculum, supplemental and intervention solutions and professional learning services, HMH partners with educators and school districts to uncover solutions that unlock students' potential and extend teachers' capabilities. HMH serves more than 50 million students and 4 million educators in 150 countries. What You'll Do: The Senior UX Designer will help create world class, accessible digital experiences for educational software. In this role, you'll collaborate closely with product and engineering partners to solve complex problems and deliver accessible, user centered solutions reporting to the Senior Design Manager. Responsibilities: Lead UX and product design efforts from concept through final execution using Figma. Design intuitive, high-quality experiences that meet user needs, business goals, and technical requirements. Apply accessibility best practices and WCAG compliance standards across all design work. Leverage user research, data, and insights to inform and validate design decisions. Collaborate with cross-functional partners to define problems, explore solutions, and iterate on designs. Participate in product and design meetings to contribute ideas and solve complex product challenges. Present and clearly articulate design concepts, rationale, and tradeoffs to stakeholders. Use AI tools appropriately to improve efficiency, streamline workflows, and support smarter ways of working. Produce user flows, wireframes, prototypes, and detailed design specifications. Ensure alignment with design systems, UX standards, and established patterns. What You'll Need: Bachelor's degree in Design or related discipline, or equivalent professional experience. 3-5+ years of UX design experience working on collaborative teams. A portfolio that shows a strong understanding of the complete UX design process, from research to final design. Proficiency in Figma and modern UX design tools. Proven ability to design accessible, user-friendly, and inclusive digital experiences. Role Expectations: Work independently as well as collaborate with cross functional teams. Attend meetings and actively participate in team reviews and product discussions. Develop a strong understanding of the product to deliver thoughtful, effective solutions. Salary range: $95,000-$103,000. Application Deadline: The application window for this position is anticipated to close on July 24, 2026. The posting may be available past this date but is not guaranteed. HMH is fully committed to Equal Employment Opportunity and to attracting, retaining, developing and promoting the most qualified employees without regard to protected characteristics. HMH is dedicated to a work environment free from discrimination and harassment and actively participates in E-Verify."
+  },
+  "classification": {
+    "targetLane": "senior-ux-and-accessible-product-design",
+    "evidenceMode": "portfolio-primary",
+    "primarySource": "portfolio",
+    "supportingSource": "resume",
+    "hardGateStatus": "pass",
+    "hardGates": [
+      {
+        "gate": "3-5+ years of collaborative UX design experience",
+        "status": "pass",
+        "evidence": "UX-titled work runs from Senior UX Designer in August 2018 through Director of Experience and Innovation and current hands-on product design work, supported by earlier client-strategy experience on cross-functional digital teams."
+      },
+      {
+        "gate": "Bachelor's degree in Design or related discipline, or equivalent professional experience",
+        "status": "pass",
+        "evidence": "BA from Rutgers University plus nearly eight years of directly relevant UX and product-design work; the posting explicitly accepts equivalent professional experience."
+      },
+      {
+        "gate": "Portfolio showing the complete UX process from research to final design",
+        "status": "pass",
+        "evidence": "Portfolio case studies show research operations, interviews, prototype testing, behavioral data, Figma documentation, product workflows, component systems, accessibility direction, final interfaces, engineering alignment, and outcomes."
+      },
+      {
+        "gate": "Figma proficiency and modern UX tools",
+        "status": "pass",
+        "evidence": "The User Research case study documents Figma research libraries and reusable artifacts; the broader portfolio shows Figma-based design-system, component, workflow, and prototype work alongside Useberry, Heap, and Typeform."
+      },
+      {
+        "gate": "Accessible and inclusive digital product design",
+        "status": "pass",
+        "evidence": "Resume names accessibility and WCAG; the Other Highlights case study documents early accessibility standards for Splash, concrete keyboard-interaction guidance, inclusive system direction, and an accessibility-panel concept that placed second in an IPG innovation challenge."
+      },
+      {
+        "gate": "Remote work location",
+        "status": "pass",
+        "evidence": "Candidate is based in Raleigh, North Carolina, and current work is remote."
+      }
+    ]
+  },
+  "requirements": [
+    {
+      "id": "end-to-end-ux-in-figma",
+      "text": "Lead UX and product design from concept through final execution using Figma, including user flows, wireframes, prototypes, and detailed design specifications.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Heartbeat experience includes journey maps, site maps, user flows, wireframes, and prototypes for patient, HCP, and internal product experiences.",
+        "Kinesso case studies show Figma documentation, interactive prototype testing, final interface systems, and reusable component behaviors across more than 20 products.",
+        "Current product work spans discovery, workflow design, front-end build, backend logic, demo readiness, and handoff."
+      ],
+      "resumeTerms": [
+        "Figma",
+        "user flows",
+        "wireframes",
+        "prototypes",
+        "design specifications"
+      ]
+    },
+    {
+      "id": "accessible-inclusive-experiences",
+      "text": "Apply accessibility best practices and WCAG standards to accessible, user-friendly, and inclusive digital experiences.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Resume explicitly names accessibility and WCAG within enterprise UX and design-system work.",
+        "Portfolio documents accessibility standards for Splash, keyboard-navigation guidance, and an inclusive product-system direction.",
+        "An advanced accessibility-panel concept placed second in the 2021 Engine+ Innovation Challenge and received executive attention."
+      ],
+      "resumeTerms": [
+        "accessibility",
+        "WCAG",
+        "keyboard interaction",
+        "inclusive"
+      ]
+    },
+    {
+      "id": "research-data-and-validation",
+      "text": "Use user research, data, and insights to inform and validate design decisions.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Built the UX research discipline from scratch across a 20+ product Marketing Intelligence Engine.",
+        "Used interviews, Typeform feedback, Useberry prototype testing, Heap behavioral data, and standardized findings to turn user input into product decisions.",
+        "Created reusable Figma research libraries and workshops that made research part of ongoing product timelines."
+      ],
+      "resumeTerms": [
+        "user research",
+        "Useberry",
+        "Heap",
+        "design decisions"
+      ]
+    },
+    {
+      "id": "cross-functional-product-delivery",
+      "text": "Collaborate with product, engineering, and cross-functional partners to define problems, iterate, articulate rationale and tradeoffs, and deliver build-ready solutions.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Kinesso work aligned product, design, development, analytics, and business leads across four product suites and 22 white-label brands.",
+        "Heartbeat work moved research and UX recommendations into build-ready experiences with strategy, creative, account, and engineering teams.",
+        "Current product work combines stakeholder translation, working prototypes, build logic, demonstrations, iteration, and handoff."
+      ],
+      "resumeTerms": [
+        "cross-functional",
+        "product and engineering",
+        "stakeholders",
+        "rationale and tradeoffs"
+      ]
+    },
+    {
+      "id": "design-systems-and-standards",
+      "text": "Align work with design systems, UX standards, and established patterns while meeting business and technical requirements.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Led UX and design-system strategy for enterprise analytics used by 7,000+ users across 22 white-label brands.",
+        "Splash comprised 500 components, 140 styles, 300 icons, and 50 personas across a 20+ product suite.",
+        "Design Bot audited designs against components and templates, making system adherence visible and actionable."
+      ],
+      "resumeTerms": [
+        "design systems",
+        "component libraries",
+        "UX standards",
+        "technical requirements"
+      ]
+    },
+    {
+      "id": "appropriate-ai-tool-use",
+      "text": "Use AI tools appropriately to improve efficiency, streamline workflows, and support smarter ways of working.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Current work includes governed AI tools, model orchestration, human-review surfaces, and functional product POCs.",
+        "Recent product ownership connects UX, AI workflow design, front-end and backend logic, demo readiness, and client iteration.",
+        "Claims-review work applies AI within regulated FDA, HIPAA, and MLR workflows where trust and human review are central."
+      ],
+      "resumeTerms": [
+        "AI-assisted workflows",
+        "human review",
+        "model orchestration"
+      ]
+    }
+  ],
+  "fitGate": {
+    "supportedOverlap": [
+      "Complete UX process: portfolio evidence runs from user research, interviews, flows, wireframes, and prototype testing through design systems, final interfaces, handoff, and measurable outcomes.",
+      "Accessible design: WCAG is named in the resume, while the portfolio shows accessibility standards, keyboard-interaction guidance, inclusive system direction, and an award-recognized accessibility concept.",
+      "Figma and design systems: Figma research infrastructure and enterprise component systems supported more than 20 products, 7,000+ users, and 22 white-label brands.",
+      "Cross-functional execution: experience spans product, engineering, research, design, strategy, account, and delivery partners in enterprise and regulated environments.",
+      "Independent senior ownership: built a research discipline from scratch, scaled a design team from 2 to 30, and now owns product strategy and UX through working prototypes and handoff.",
+      "Appropriate AI use: current work applies AI to governed product workflows and uses model orchestration and human-review patterns to improve how complex work gets done."
+    ],
+    "unsupportedRequirements": [
+      "Direct K-12 or educational-software product-design employment is not shown; the posting describes HMH's domain but does not make prior education experience a requirement.",
+      "Formal WCAG certification or dedicated accessibility-auditor ownership is not shown.",
+      "The portfolio does not isolate detailed design-specification documents as a standalone artifact, although it shows build-ready systems, interaction guidance, and engineering handoff."
+    ],
+    "actualMismatches": [],
+    "missingEvidence": [
+      "No case study is centered on student, teacher, curriculum, or school-district users.",
+      "The application should not imply formal accessibility certification or direct edtech tenure."
+    ],
+    "coverLetterBridge": {
+      "status": "not-needed",
+      "rationale": "This is a direct portfolio-primary UX fit. The selected work already demonstrates the full process HMH asks for—research, Figma, accessible system direction, complex product UX, cross-functional iteration, and final execution—so a cover letter is not needed to make the core case."
+    },
+    "recommendation": "Proceed as strong. Lead with research-to-execution product UX, accessible design-system work, Figma-based collaboration, and senior cross-functional ownership. Treat K-12 as a domain to learn rather than claimed prior experience, and do not overstate accessibility certification."
+  },
+  "resume": {
+    "summary": "Senior UX and product designer with nearly eight years of hands-on UX experience and 15 years across product, client strategy, and regulated digital delivery. I lead complex work from user research, flows, and prototypes through accessible design systems, detailed design specifications, and engineering handoff. My strongest proof includes building a research discipline across 20+ products and leading enterprise UX used by 7,000+ people across 22 white-label brands.",
+    "skills": [
+      {
+        "label": "End-to-End UX & Product Design",
+        "description": "Figma, journey maps, site maps, user flows, wireframes, prototypes, interaction design, detailed design specifications, and build-ready handoff"
+      },
+      {
+        "label": "Research, Data & Validation",
+        "description": "User research, stakeholder interviews, Typeform, Useberry prototype testing, Heap behavioral data, competitive audits, synthesis, and evidence-backed design decisions"
+      },
+      {
+        "label": "Accessibility & Design Systems",
+        "description": "Accessibility, WCAG, inclusive UX, keyboard interaction, UX standards, component libraries, reusable patterns, white-label systems, and design governance"
+      },
+      {
+        "label": "Cross-Functional Product Delivery",
+        "description": "Product and engineering collaboration, independent ownership, stakeholder reviews, design rationale and tradeoffs, technical requirements, AI-assisted workflows, and iterative delivery"
+      }
+    ],
+    "roles": {
+      "hedgehox": [
+        "Designed end-to-end Claims Detector workflows that identify promotional claims, surface evidence gaps, and pre-populate audit-ready annotations before human review",
+        "Turned pharma agency needs into clear workflow concepts for claim review, brief intake, scoping, review routing, submission capture, and FDA signal monitoring",
+        "Secured an investor for proprietary Claims Detection software by building the functional POC, shaping the demo story, and iterating with stakeholders"
+      ],
+      "one-block-away": [
+        "Lead product strategy and UX from discovery through user flows, working prototypes, front-end and backend logic, demo readiness, and client iteration",
+        "Build client-led POCs that turn unclear business questions into testable product surfaces, workflow decisions, and implementation roadmaps",
+        "Use AI-assisted workflows, model orchestration, and evidence trails to make complex product experiences faster to test while preserving human review"
+      ],
+      "kinesso": [
+        "Led enterprise UX and design systems used by 7,000+ users across 22 white-label brands, aligning user needs, business goals, and technical requirements",
+        "Built the user research discipline from scratch across 20+ products using interviews, Typeform feedback, Useberry prototype testing, Heap behavior data, and reusable Figma documentation",
+        "Shaped a 500-component design system with UX standards, component libraries, personas, white-label patterns, and research-informed product behaviors",
+        "Helped establish accessibility and WCAG direction for Splash, including inclusive system guidance and concrete keyboard interaction patterns",
+        "Scaled product design from 2 to 30 people across the US and Poland while partnering with product and engineering leads and presenting rationale and tradeoffs to stakeholders",
+        "Design-system, data-visualization, and audit-experience work earned 5 Indigo Gold, 4 Indigo Silver, and Red Dot recognition"
+      ],
+      "omnicom": [
+        "Supported oncology accounts as a freelance UX designer, combining UX design and client experience to strengthen regulated healthcare work",
+        "Translated brand goals into clearer user flows, content structure, and digital recommendations across account, strategy, creative, and delivery teams"
+      ],
+      "heartbeat": [
+        "Led UX research and experience strategy for pharma and healthcare work, translating stakeholder input, competitive audits, and user needs into digital product direction",
+        "Created journey maps, site maps, user flows, wireframes, and prototypes for patient, HCP, and internal brand-team experiences",
+        "Partnered with strategy, creative, account, product, and engineering teams to move research findings into build-ready product experiences"
+      ],
+      "account-management": [
+        "Managed Fortune 500 pharma and healthcare work across complex digital programs, translating client and business needs into briefs, requirements, timelines, and review-ready deliverables",
+        "Built an early foundation in stakeholder communication, cross-functional collaboration, and presenting clear recommendations within regulated product environments"
+      ]
+    }
+  },
+  "hero": {
+    "eyebrow": "HMH Senior UX Designer",
+    "tags": [
+      "Accessible product UX",
+      "Research to final execution",
+      "Figma & design systems"
+    ],
+    "intro": "HMH is hiring for the UX practice I have built across complex products: translating research, business needs, and technical constraints into accessible, build-ready experiences. I built a research discipline across 20+ products, led enterprise UX and design systems used by 7,000+ people across 22 white-label brands, and helped establish accessibility standards with keyboard-interaction guidance. My work moves from Figma flows and prototypes through reusable systems, stakeholder reviews, and engineering handoff."
+  },
+  "contact": {
+    "prompt": "Hiring a senior UX designer who can bring research, accessibility, and product-engineering constraints into one clear design direction? I would like to help HMH make complex learning workflows feel intuitive and inclusive. Email is the fastest way to reach me.",
+    "signoff": "Accessible product UX · research-led decisions · design-system rigor"
+  },
+  "constraints": {
+    "doNotClaim": [
+      "K-12 or educational software product-design employment",
+      "Formal WCAG certification",
+      "Usability research with students, educators, or school districts",
+      "Bachelor's degree in Design"
+    ],
+    "blockedTerms": [
+      "WCAG certified",
+      "K-12 UX experience",
+      "edtech product designer",
+      "education software experience"
+    ]
+  },
+  "privacy": {
+    "publicSafe": true,
+    "notes": "Contains only public job-posting text and sanitized evidence from the public resume and portfolio. It includes no recruiter contact details, private application answers, compensation boundaries, or private eligibility information."
+  },
+  "qa": {
+    "status": "qa-passed",
+    "builtAt": "2026-07-20T20:03:44.910Z",
+    "configInputSha256": "44ab0685fcefc8d15bf6206b14530092de157db16fbcf62b6588bc6673af1f8f",
+    "sourceResumeSha256": "375cc6566f5bbad5b95be9da551dfe87824378fb252222409d29ef32d334ca25",
+    "artifactHashes": {
+      "routeSha256": "721ff474e845adf2d5fd1cc515c4295da9c5b2f432009d5e23d2094fb80b443a",
+      "resumePdfSha256": "2fd6314d5655f11f3ebf6cff29b239da0eb4889370921b05249ec3dcea4427b5",
+      "scopedProjectSha256": {}
+    },
+    "renderer": {
+      "browser": {
+        "name": "chrome-headless-shell",
+        "version": "Google Chrome for Testing 149.0.7827.55"
+      },
+      "htmlPath": "tmp/tailored-resumes/hmh-senior-ux-designer.html",
+      "pdfPath": "output/pdf/Wally-Mostafa-HMH-Senior-UX-Designer-Resume.pdf"
+    },
+    "ats": {
+      "ok": true,
+      "pdfPath": "output/pdf/Wally-Mostafa-HMH-Senior-UX-Designer-Resume.pdf",
+      "pageCount": 2,
+      "fileSize": 128878,
+      "annotations": [
+        {
+          "page": 1,
+          "uri": "mailto:wmostafa12@gmail.com"
+        },
+        {
+          "page": 1,
+          "uri": "https://linkedin.com/in/wallymo"
+        },
+        {
+          "page": 1,
+          "uri": "https://wallymo.github.io/hmh-senior-ux-designer/"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/6748"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/4629"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.red-dot.org/project/dxa-digital-experience-audit-55219"
+        }
+      ],
+      "coverage": [
+        {
+          "id": "end-to-end-ux-in-figma",
+          "requirement": "Lead UX and product design from concept through final execution using Figma, including user flows, wireframes, prototypes, and detailed design specifications.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "Figma",
+            "user flows",
+            "wireframes",
+            "prototypes",
+            "design specifications"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "accessible-inclusive-experiences",
+          "requirement": "Apply accessibility best practices and WCAG standards to accessible, user-friendly, and inclusive digital experiences.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "accessibility",
+            "WCAG",
+            "keyboard interaction",
+            "inclusive"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "research-data-and-validation",
+          "requirement": "Use user research, data, and insights to inform and validate design decisions.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "user research",
+            "Useberry",
+            "Heap",
+            "design decisions"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "cross-functional-product-delivery",
+          "requirement": "Collaborate with product, engineering, and cross-functional partners to define problems, iterate, articulate rationale and tradeoffs, and deliver build-ready solutions.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "cross-functional",
+            "product and engineering",
+            "stakeholders",
+            "rationale and tradeoffs"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "design-systems-and-standards",
+          "requirement": "Align work with design systems, UX standards, and established patterns while meeting business and technical requirements.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "design systems",
+            "component libraries",
+            "UX standards",
+            "technical requirements"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "appropriate-ai-tool-use",
+          "requirement": "Use AI tools appropriately to improve efficiency, streamline workflows, and support smarter ways of working.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "AI-assisted workflows",
+            "human review",
+            "model orchestration"
+          ],
+          "missingTerms": []
+        }
+      ],
+      "failures": [],
+      "warnings": []
+    },
+    "route": {
+      "viewports": [
+        {
+          "name": "desktop",
+          "screenshot": "tmp/qa/hmh-senior-ux-designer/desktop.png",
+          "errors": []
+        },
+        {
+          "name": "mobile",
+          "screenshot": "tmp/qa/hmh-senior-ux-designer/mobile.png",
+          "errors": []
+        }
+      ],
+      "errors": []
+    }
+  }
+}
