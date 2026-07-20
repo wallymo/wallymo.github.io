@@ -979,9 +979,26 @@
         "project-03.html"
       ],
       "resumePdfPath": "output/pdf/Wally-Mostafa-Sharecare-Client-Success-Manager-Resume.pdf",
-      "publishStatus": "local-only",
+      "publishStatus": "live-verified",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-07-20T16:59:22.398Z"
+      "builtAt": "2026-07-20T16:59:22.398Z",
+      "verification": {
+        "verifiedAt": "2026-07-20T17:02:04.110Z",
+        "routeUrl": "https://wallymo.github.io/sharecare-client-success-manager/",
+        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-Sharecare-Client-Success-Manager-Resume.pdf",
+        "configUrl": "https://wallymo.github.io/scripts/packages/sharecare-client-success-manager.json",
+        "projectUrls": [
+          "https://wallymo.github.io/project-01.html",
+          "https://wallymo.github.io/project-06.html",
+          "https://wallymo.github.io/project-03.html"
+        ],
+        "configSha256": "b88269d56d4adf5cae8b2b0cb0099acf722288951fc4551575baec9f66f4e121",
+        "pdfSha256": "145066acd44713b1ede2711e3fdeb9cef3f1cebb9f05a81eb2855da01b540bb9",
+        "routeSha256": "c05b30d67c4e22af5e1cbc5c83a5ec126bc33d28ccb88349336064f28743f682",
+        "scopedProjectSha256": {},
+        "configInputSha256": "c818e11492eb76afb2c58977c2515cb66cdaf40c484b42a2d30bd6ca18f17124",
+        "qaBuiltAt": "2026-07-20T16:59:22.398Z"
+      }
     },
     {
       "slug": "smartsheet-ux-research-manager",
