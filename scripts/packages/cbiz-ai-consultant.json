@@ -1,0 +1,507 @@
+{
+  "workflowVersion": 2,
+  "contractRevision": 2,
+  "slug": "cbiz-ai-consultant",
+  "roleTitle": "CBIZ AI Consultant",
+  "artifactStem": "CBIZ-AI-Consultant",
+  "fitClass": "strong",
+  "routeMode": "canonical-projects",
+  "selectedProjects": [
+    "project-01.html",
+    "project-02.html",
+    "project-06.html"
+  ],
+  "job": {
+    "company": "CBIZ Technology",
+    "roleTitle": "AI Consultant",
+    "jobId": "not-listed",
+    "jobUrl": null,
+    "sourceChannel": "chat-pasted-jd",
+    "dateCaptured": "2026-07-20",
+    "location": "Not stated; travel required based on client and business needs",
+    "atsVendor": "unknown",
+    "rawJd": "If you are looking for more than another AI title, this opportunity provides direct access to executive priorities, meaningful client impact, and the chance to help establish CBIZ Technology as a market leader in AI-driven business transformation. The AI Consultant supports the delivery of artificial intelligence, automation, and emerging technology services for CBIZ Technology clients. This role partners with clients and internal teams to identify business opportunities, assess AI readiness, develop practical AI solutions, and support implementation initiatives that drive measurable business outcomes. The AI Consultant serves as a trusted advisor throughout the engagement lifecycle, helping clients understand the potential of AI technologies while ensuring solutions align with business objectives, governance requirements, operational realities, and organizational readiness. This role combines consulting, business analysis, technology enablement, and client-facing delivery responsibilities. About CBIZ Technology: CBIZ Technology's Emerging Technology group helps organizations leverage next-generation technologies to improve productivity, accelerate innovation, reduce operational friction, and create competitive advantage. The team delivers AI strategy, generative AI solutions, intelligent automation, data modernization, governance frameworks, digital workforce enablement, and business transformation services. This is a high-visibility opportunity within a rapidly growing practice focused on helping middle-market organizations successfully adopt and scale innovative technologies in responsible, practical, and measurable ways. Essential Functions and Primary Duties. Solution Innovation and Demo Development: Design, build, and maintain a growing repertoire of practical, client-relevant AI demonstration solutions aligned with CBIZ Technology's current sales offerings and consulting priorities. Develop fully functioning business applications and proof-of-concept solutions that demonstrate how AI, advanced data analytics, intelligent automation, agentic development, and application development can work together to solve real business problems. Translate emerging technology concepts into tangible examples of the possible that can be shown to clients, prospects, internal leaders, and delivery teams. Prioritize solutions that are leading edge yet practical, reliable, scalable, and grounded in real client use cases rather than theoretical demonstrations. Ensure demonstration assets are polished, repeatable, well documented, and suitable for use in sales pursuits, workshops, executive briefings, and client education sessions. AI Solution Architecture and Technical Execution: Create AI-enabled solution prototypes, accelerators, and reusable components under the direction of the National Leader of Emerging Technology. Combine generative AI, agentic workflows, data pipelines, dashboards, robotic process automation, APIs, and custom applications into integrated business solutions. Evaluate, select, and apply appropriate tools and platforms, including Microsoft AI technologies, Azure services, Power Platform, automation platforms, and related development frameworks. Build solutions with practical attention to usability, data quality, security, reliability, maintainability, and measurable business value. Collaborate with advanced analytics, automation, development, cloud, security, and consulting resources to move concepts from idea to working demonstration. Sales Enablement and Client-Facing Demonstrations: Equip sales and consulting teams with compelling demonstration assets, talk tracks, solution overviews, technical explanations, and client-ready examples that support business development efforts. Partner with market-facing teams to align demo solutions with priority industries, common client pain points, and active sales opportunities. Support client meetings, workshops, and executive presentations by demonstrating working solutions and explaining their business relevance in practical terms. Prepare supporting materials such as process flows, solution diagrams, requirements summaries, implementation considerations, and value narratives. Continuously refine demonstrations based on client feedback, sales team input, market demand, and emerging technology capabilities. Applied Research, Experimentation and Market Relevance: Monitor emerging AI, automation, analytics, agentic, and application development trends and assess their relevance to CBIZ Technology's client base. Conduct hands-on experimentation with new platforms, models, frameworks, and development approaches to determine practical business applicability. Identify gaps between market hype and functional business application, then develop examples that demonstrate credible, high-quality execution. Document lessons learned, technical patterns, limitations, implementation requirements, and recommended use cases for internal knowledge sharing. Help establish standards for demonstration quality, usability, governance, security, and repeatability across emerging technology assets. Practice Development and Delivery Readiness: Contribute to reusable methodologies, solution playbooks, demo libraries, accelerators, and internal enablement materials for the Emerging Technology practice. Create documentation that allows sales, consulting, and delivery teams to understand, position, configure, and extend demonstration solutions. Support proposal development, solution positioning, and pre-sales activities by providing credible technical input and practical examples. Assist in transitioning successful demonstration concepts into client delivery approaches, pilot programs, and scalable service offerings. Pursue ongoing professional development, certifications, and technical training in AI, automation, data analytics, agentic development, and modern application platforms. Must be able to travel based on client and business needs. Preferred Qualifications: Experience supporting AI, automation, digital transformation, data analytics, or business process improvement initiatives. Familiarity with Microsoft AI technologies, Microsoft Foundry, Microsoft Copilot, Power Platform, Fabric, or related platforms. Experience with leading edge enterprise platforms and capabilities including Anthropic, OpenAI and Google Gemini. Knowledge of AI governance, responsible AI frameworks, data management, or security concepts. Experience in professional services, consulting, or client-facing environments. Understanding of project management methodologies and change management principles. Relevant certifications such as Microsoft AI Certifications, Microsoft Power Platform Certifications, Azure Certifications, PMP, CAPM, Agile, Scrum, or Change Management Certifications. Success characteristics: curious about emerging technologies and continuous learning; business-minded and focused on measurable client outcomes; comfortable engaging with technical and non-technical stakeholders; collaborative, adaptable, and accountable; able to communicate complex concepts in clear, practical language; passionate about helping organizations responsibly adopt AI and transform the way work gets done. Minimum Qualifications: Bachelor's degree in relevant field; 3 years of relevant work experience; achieve professional certifications relative to area of expertise and preserve required licenses; analytical skills; proficient use of applicable technology; demonstrated verbal and written communication throughout all levels of the organization internally and externally; able to travel based on client and business needs. About CBIZ: CBIZ, Inc. is a leading professional services advisor to middle-market businesses nationwide, with expertise in accounting, tax, advisory, benefits, insurance, and technology, more than 9,500 team members, and operations across 23 major markets."
+  },
+  "classification": {
+    "targetLane": "ai-consulting-and-solution-prototyping",
+    "evidenceMode": "balanced",
+    "primarySource": "resume",
+    "supportingSource": "portfolio",
+    "hardGateStatus": "pass",
+    "hardGates": [
+      {
+        "gate": "Bachelor's degree in a relevant field",
+        "status": "pass",
+        "evidence": "BA in Labor Studies and Employee Relations from Rutgers University, 2010."
+      },
+      {
+        "gate": "At least 3 years of relevant experience",
+        "status": "pass",
+        "evidence": "15 years across client strategy, enterprise product and UX work, and AI implementation, including AI implementation and product-strategy work from 2023 to present."
+      },
+      {
+        "gate": "Proficient use of applicable technology and clear internal/external communication",
+        "status": "pass",
+        "evidence": "Resume and portfolio show functional AI POCs, client-led discovery, demo narratives, front-end and backend logic, model orchestration, enterprise dashboards, workshops, and cross-functional delivery."
+      },
+      {
+        "gate": "Existing role-specific professional license or certification",
+        "status": "not-applicable",
+        "evidence": "The posting names no mandatory license or existing certification; named Microsoft, Azure, project-management, Agile, and change-management certifications appear under Preferred Qualifications."
+      },
+      {
+        "gate": "Ability to travel based on client and business needs",
+        "status": "not-applicable",
+        "evidence": "Operational travel availability should be confirmed directly during the application process; no travel-availability claim is added to public recruiter-facing artifacts."
+      }
+    ]
+  },
+  "requirements": [
+    {
+      "id": "client-relevant-ai-demos",
+      "text": "Design and build practical, client-relevant AI demonstrations and fully functioning proof-of-concept business applications.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Built the functional Claims Detector POC, shaped the demo story, and secured investor backing.",
+        "Builds client-led AI POCs from unclear business questions through working prototype and demo readiness.",
+        "Portfolio documents multiple functioning AI applications across claims review, scoping, brief intake, listing generation, and startup-readiness analysis."
+      ],
+      "resumeTerms": [
+        "functional POC",
+        "working prototype",
+        "demo story",
+        "business applications"
+      ]
+    },
+    {
+      "id": "integrated-ai-solution-execution",
+      "text": "Combine generative AI, agentic workflows, dashboards, APIs, automation, and custom applications into integrated business solutions.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Claims Detector uses React, Express, SQLite, PyMuPDF, and interchangeable Gemini, Claude, and GPT backends.",
+        "Scope Generator uses Next.js, the Gemini API, storage, a rate-card costing engine, and spreadsheet export.",
+        "One Block Away work includes model orchestration, dashboards, front-end build, backend logic, and end-to-end prototype ownership."
+      ],
+      "resumeTerms": [
+        "generative AI",
+        "agentic workflows",
+        "model orchestration",
+        "dashboards",
+        "APIs",
+        "automation"
+      ]
+    },
+    {
+      "id": "client-consulting-and-translation",
+      "text": "Serve as a client-facing advisor who translates business needs into practical solutions and communicates clearly with technical and non-technical stakeholders.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Seven-plus years managing Fortune 500 pharma and healthcare clients with budgets from 2 million to more than 50 million dollars.",
+        "Current AI work translates client and agency problems into scoped tools, product surfaces, demo flows, and roadmap decisions.",
+        "Enterprise UX work bridges strategy, account, creative, engineering, product, and delivery teams."
+      ],
+      "resumeTerms": [
+        "client-led",
+        "discovery",
+        "requirements",
+        "client demonstrations",
+        "stakeholder adoption"
+      ]
+    },
+    {
+      "id": "governance-usability-and-adoption",
+      "text": "Build usable, governed, reliable solutions aligned with business objectives, operational realities, and organizational adoption.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Regulated pharma workflows incorporate FDA, HIPAA, MLR, evidence gaps, audit-ready annotations, and human review.",
+        "Enterprise analytics and design-system work supported 7,000+ users across 22 white-label brands.",
+        "Resume explicitly centers governed AI tools, workflow design, production handoff, and adoption after the demo."
+      ],
+      "resumeTerms": [
+        "governed AI",
+        "FDA/HIPAA/MLR workflows",
+        "human review",
+        "stakeholder adoption",
+        "production handoff"
+      ]
+    },
+    {
+      "id": "sales-enablement-and-value-narratives",
+      "text": "Support sales and consulting teams with polished demonstrations, technical explanations, value narratives, workshops, and client-ready examples.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Claims Detector proof includes an investor-facing functional POC and demo story.",
+        "Digital Experience Audit produced presentation-ready client outputs, benchmarks, recommendations, and an awards narrative.",
+        "Prior account-management work translated client strategy into briefs, feedback, requirements, timelines, and regulated deliverables."
+      ],
+      "resumeTerms": [
+        "demo narratives",
+        "client demonstrations",
+        "presentation-ready client outputs",
+        "value framing",
+        "workshops"
+      ]
+    },
+    {
+      "id": "practice-development-and-reuse",
+      "text": "Create reusable components, methods, documentation, accelerators, and delivery approaches that can move demonstrations toward pilots and scalable services.",
+      "priority": "core",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Built reusable enterprise analytics components and design-system patterns used across 22 white-label brands.",
+        "Current POC work produces build-ready logic, roadmap decisions, and production handoff.",
+        "Digital Experience Audit turned channel assessment into a repeatable workflow for strategy and client reviews."
+      ],
+      "resumeTerms": [
+        "reusable",
+        "build-ready logic",
+        "roadmap decisions",
+        "production handoff",
+        "repeatable workflows"
+      ]
+    },
+    {
+      "id": "microsoft-ai-platforms",
+      "text": "Familiarity with Microsoft AI technologies, Microsoft Foundry, Microsoft Copilot, Azure, Power Platform, or Fabric.",
+      "priority": "preferred",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "resumeTerms": [
+        "Microsoft Foundry",
+        "Microsoft Copilot",
+        "Azure",
+        "Power Platform",
+        "Microsoft Fabric"
+      ]
+    },
+    {
+      "id": "formal-certifications",
+      "text": "Relevant Microsoft, Azure, Power Platform, project-management, Agile, Scrum, or change-management certifications.",
+      "priority": "preferred",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "resumeTerms": [
+        "Microsoft AI Certification",
+        "Azure Certification",
+        "Power Platform Certification",
+        "PMP",
+        "CAPM",
+        "Scrum Certification"
+      ]
+    }
+  ],
+  "fitGate": {
+    "supportedOverlap": [
+      "Direct client-facing AI implementation experience from business problem through functional POC, demo narrative, iteration, and handoff.",
+      "Hands-on proof across generative AI, multi-model orchestration, RAG and knowledge workflows, dashboards, APIs, front-end build, backend logic, and automation.",
+      "Seven-plus years of Fortune 500 client strategy and delivery, reinforced by current client-led AI POC work and cross-functional enterprise product leadership.",
+      "Governance and responsible-adoption proof in FDA, HIPAA, and MLR workflows with evidence gaps, audit-ready annotations, and human review.",
+      "Repeatable enterprise product and analytics systems used by 7,000+ users across 22 white-label brands, plus internationally recognized audit and visualization work."
+    ],
+    "unsupportedRequirements": [
+      "Microsoft Foundry, Azure, Microsoft Copilot, Power Platform, and Fabric experience is not evidenced in the current resume or portfolio.",
+      "Formal Microsoft, Azure, Power Platform, PMP, CAPM, Scrum, or change-management certifications are not evidenced.",
+      "Named robotic process automation platform ownership and production data-pipeline engineering are not evidenced."
+    ],
+    "actualMismatches": [],
+    "missingEvidence": [
+      "Travel availability must be confirmed directly in the application process.",
+      "The portfolio shows repeatable workflows and handoff-ready systems, but does not document a formal emerging-technology practice playbook or demo-library operating model."
+    ],
+    "coverLetterBridge": {
+      "status": "not-needed",
+      "rationale": "The resume directly proves the role's core consulting, client-delivery, AI-prototyping, demo, governance, and implementation work, while the portfolio independently validates functioning solutions and enterprise-scale execution. A cover letter is not needed to make the application credible."
+    },
+    "recommendation": "Proceed as strong. Lead with the exact overlap CBIZ is hiring for: client translation plus hands-on AI demonstration development, backed by working business applications, regulated governance, enterprise analytics, and end-to-end prototype ownership. Keep the Microsoft ecosystem and certification gaps explicit and do not imply unsupported platform depth."
+  },
+  "resume": {
+    "summary": "AI consultant and implementation partner with 15 years across client strategy, enterprise product development, and regulated AI delivery. I translate business problems into working AI applications, demo-ready POCs, and repeatable workflows, connecting product strategy, UX, model behavior, front-end build, backend logic, and client adoption from discovery through handoff.",
+    "skills": [
+      {
+        "label": "Applied AI & Solution Prototyping",
+        "description": "Generative AI, agentic workflows, multi-model orchestration, LLM/VLM, RAG and knowledge bases, prompt-defined criteria, APIs, dashboards, and human review surfaces"
+      },
+      {
+        "label": "Client Consulting & Sales Enablement",
+        "description": "Discovery, scoping, requirements, workshops, client demonstrations, demo narratives, value framing, roadmap decisions, and presentation-ready client outputs"
+      },
+      {
+        "label": "Solution Delivery & Technical Execution",
+        "description": "Working business applications, front-end build, backend logic, automation, data visualization, prototype validation, build-ready logic, and production handoff"
+      },
+      {
+        "label": "Governance, Adoption & Enterprise Delivery",
+        "description": "FDA/HIPAA/MLR workflows, governed AI, evidence trails, human review, stakeholder adoption, reusable systems, accessibility, and cross-functional delivery"
+      }
+    ],
+    "roles": {
+      "hedgehox": [
+        "Secured an investor for proprietary Claims Detection software by building the functional POC, shaping the demo story, and iterating with investors",
+        "Designed Claims Detector workflows that identify promotional claims, surface evidence gaps, and pre-populate audit-ready annotations before MLR submission",
+        "Converted pharma agency needs into AI tools for MLR claim review, brief intake, scoping, review routing, submission capture, and FDA signal monitoring",
+        "Built Scope Generator for pharma agency finance and operations teams to manage regional rate cards, brands, sub-brands, and natural-language scope changes",
+        "Developed FDA Warning Tool concepts that connect warning-letter patterns to content-risk guidance for pharma teams"
+      ],
+      "one-block-away": [
+        "Build client-led AI POCs that turn unclear business questions into testable product surfaces, demo flows, and roadmap decisions",
+        "Own product strategy, UX, AI workflow design, front-end build, backend logic, demo readiness, and client iteration from first ask through working prototype",
+        "Built ListingPal's AI listing-generation POC and landing page, turning basic property inputs into listing copy, social posts, ad copy, styling direction, and MLS/SEO-ready language in under 90 seconds",
+        "Built WeReady's Bailey Intelligence dashboard, translating founder inputs, GitHub signals, source health, risk scoring, and evidence trails into startup-readiness workflows"
+      ],
+      "kinesso": [
+        "Scaled product design from 2 to 30 people across the US and Poland for enterprise analytics used by 7,000+ users across 22 white-label brands",
+        "Led UX and design-system strategy for MIE data visualization, dashboard building, brand theming, and reusable analytics components",
+        "Built the Digital Experience Audit workflow for channel scoring, benchmarks, recommendations, visualization, and presentation-ready client outputs",
+        "Design-system and analytics work earned 5 Indigo Gold, 4 Indigo Silver, and Red Dot recognition"
+      ],
+      "omnicom": [
+        "Supported oncology accounts as a freelance UX designer, combining UX design and account-management experience to strengthen regulated healthcare work",
+        "Championed UX best practices across account, strategy, creative, and delivery conversations, translating brand goals into clearer user flows, content structure, and digital recommendations"
+      ],
+      "heartbeat": [
+        "Led UX research and experience strategy for pharma and healthcare work, translating stakeholder input, competitive audits, and user needs into digital product direction",
+        "Created journey maps, site maps, user flows, wireframes, and prototypes for patient, HCP, and internal brand-team experiences across regulated healthcare programs",
+        "Partnered with strategy, creative, account, and engineering teams to move UX recommendations from research findings into build-ready product and campaign experiences"
+      ],
+      "account-management": [
+        "7+ years managing Fortune 500 pharma and healthcare clients with budgets from 2 million to more than 50 million dollars across CNS/neurology, psychiatry, cardiovascular/metabolic, and sleep/wakefulness brands including NUVIGIL, Namenda XR, Lipitor, and Zoloft",
+        "One of two account consumer leads on FCB Health's largest pharma account across TV, radio, digital, gaming, Times Square, unbranded campaigns, brand planning, and MLR review",
+        "Translated client and brand strategy into briefs, creative feedback, production requirements, timelines, and MLR-ready deliverables across account, creative, UX, and development teams"
+      ]
+    }
+  },
+  "hero": {
+    "eyebrow": "CBIZ AI Consultant",
+    "tags": [
+      "Client-led AI demonstrations",
+      "Working POCs & business applications",
+      "Governed delivery from demo to handoff"
+    ],
+    "intro": "CBIZ is hiring for the overlap I already practice: translating client problems into working AI demonstrations that are practical enough to become real delivery. I build client-led POCs end to end—from discovery and workflow design through model orchestration, front-end and backend logic, demo narratives, and handoff—and I have done that in regulated pharma as well as broader business workflows. That work includes an investor-backed claims-review POC, AI scoping and brief tools, and enterprise analytics used by 7,000+ people across 22 white-label brands."
+  },
+  "contact": {
+    "prompt": "Hiring an AI consultant who can turn emerging technology into credible client demonstrations and scalable delivery approaches? I would like to help CBIZ build that practice. Email is the fastest way to reach me.",
+    "signoff": "Client translation · working AI demonstrations · delivery-ready systems"
+  },
+  "constraints": {
+    "doNotClaim": [
+      "Microsoft Foundry implementation",
+      "Azure solution architecture",
+      "Power Platform development",
+      "Microsoft Fabric experience",
+      "Microsoft Copilot implementation",
+      "Formal AI governance certification",
+      "PMP certification",
+      "Production-scale AI architecture"
+    ],
+    "blockedTerms": [
+      "Microsoft Foundry",
+      "Microsoft Copilot",
+      "Azure",
+      "Power Platform",
+      "Microsoft Fabric",
+      "robotic process automation",
+      "production data pipelines"
+    ]
+  },
+  "privacy": {
+    "publicSafe": true,
+    "notes": "Contains only public job-posting text and sanitized evidence from the public resume and portfolio. It includes no recruiter contact details, private application answers, compensation boundaries, or private eligibility information."
+  },
+  "qa": {
+    "status": "qa-passed",
+    "builtAt": "2026-07-20T16:58:41.314Z",
+    "configInputSha256": "479816a544dc05c80521c69a8ac4dd6fcc2f848abf5123aacf2ff716996392df",
+    "sourceResumeSha256": "375cc6566f5bbad5b95be9da551dfe87824378fb252222409d29ef32d334ca25",
+    "artifactHashes": {
+      "routeSha256": "6d8385fc1b4ec16d57b1d3ae2a36bffd2975c155a2c46d8a3b7e9036bc836304",
+      "resumePdfSha256": "3573ef94bccf3b480c0167e74fd2baa1fba09f40a45c16aed5fb13e368d2321a",
+      "scopedProjectSha256": {}
+    },
+    "renderer": {
+      "browser": {
+        "name": "chrome-headless-shell",
+        "version": "Google Chrome for Testing 149.0.7827.55"
+      },
+      "htmlPath": "tmp/tailored-resumes/cbiz-ai-consultant.html",
+      "pdfPath": "output/pdf/Wally-Mostafa-CBIZ-AI-Consultant-Resume.pdf"
+    },
+    "ats": {
+      "ok": true,
+      "pdfPath": "output/pdf/Wally-Mostafa-CBIZ-AI-Consultant-Resume.pdf",
+      "pageCount": 2,
+      "fileSize": 132406,
+      "annotations": [
+        {
+          "page": 1,
+          "uri": "mailto:wmostafa12@gmail.com"
+        },
+        {
+          "page": 1,
+          "uri": "https://linkedin.com/in/wallymo"
+        },
+        {
+          "page": 1,
+          "uri": "https://wallymo.github.io/cbiz-ai-consultant/"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/6748"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/4629"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.red-dot.org/project/dxa-digital-experience-audit-55219"
+        }
+      ],
+      "coverage": [
+        {
+          "id": "client-relevant-ai-demos",
+          "requirement": "Design and build practical, client-relevant AI demonstrations and fully functioning proof-of-concept business applications.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "functional POC",
+            "working prototype",
+            "demo story",
+            "business applications"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "integrated-ai-solution-execution",
+          "requirement": "Combine generative AI, agentic workflows, dashboards, APIs, automation, and custom applications into integrated business solutions.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "generative AI",
+            "agentic workflows",
+            "model orchestration",
+            "dashboards",
+            "APIs",
+            "automation"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "client-consulting-and-translation",
+          "requirement": "Serve as a client-facing advisor who translates business needs into practical solutions and communicates clearly with technical and non-technical stakeholders.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "client-led",
+            "discovery",
+            "requirements",
+            "client demonstrations",
+            "stakeholder adoption"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "governance-usability-and-adoption",
+          "requirement": "Build usable, governed, reliable solutions aligned with business objectives, operational realities, and organizational adoption.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "governed AI",
+            "FDA/HIPAA/MLR workflows",
+            "human review",
+            "stakeholder adoption",
+            "production handoff"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "sales-enablement-and-value-narratives",
+          "requirement": "Support sales and consulting teams with polished demonstrations, technical explanations, value narratives, workshops, and client-ready examples.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "demo narratives",
+            "client demonstrations",
+            "presentation-ready client outputs",
+            "value framing",
+            "workshops"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "practice-development-and-reuse",
+          "requirement": "Create reusable components, methods, documentation, accelerators, and delivery approaches that can move demonstrations toward pilots and scalable services.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "reusable",
+            "build-ready logic",
+            "roadmap decisions",
+            "production handoff",
+            "repeatable workflows"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "microsoft-ai-platforms",
+          "requirement": "Familiarity with Microsoft AI technologies, Microsoft Foundry, Microsoft Copilot, Azure, Power Platform, or Fabric.",
+          "priority": "preferred",
+          "evidenceStatus": "none",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "Microsoft Foundry",
+            "Microsoft Copilot",
+            "Azure",
+            "Power Platform",
+            "Microsoft Fabric"
+          ]
+        },
+        {
+          "id": "formal-certifications",
+          "requirement": "Relevant Microsoft, Azure, Power Platform, project-management, Agile, Scrum, or change-management certifications.",
+          "priority": "preferred",
+          "evidenceStatus": "none",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "Microsoft AI Certification",
+            "Azure Certification",
+            "Power Platform Certification",
+            "PMP",
+            "CAPM",
+            "Scrum Certification"
+          ]
+        }
+      ],
+      "failures": [],
+      "warnings": []
+    },
+    "route": {
+      "viewports": [
+        {
+          "name": "desktop",
+          "screenshot": "tmp/qa/cbiz-ai-consultant/desktop.png",
+          "errors": []
+        },
+        {
+          "name": "mobile",
+          "screenshot": "tmp/qa/cbiz-ai-consultant/mobile.png",
+          "errors": []
+        }
+      ],
+      "errors": []
+    }
+  }
+}

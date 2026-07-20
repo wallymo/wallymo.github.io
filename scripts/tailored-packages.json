@@ -243,6 +243,26 @@
       "publishStatus": "tracked-unverified"
     },
     {
+      "workflowVersion": 2,
+      "slug": "cbiz-ai-consultant",
+      "roleTitle": "CBIZ AI Consultant",
+      "artifactStem": "CBIZ-AI-Consultant",
+      "configPath": "scripts/packages/cbiz-ai-consultant.json",
+      "targetLane": "ai-consulting-and-solution-prototyping",
+      "evidenceMode": "balanced",
+      "fitClass": "strong",
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-01.html",
+        "project-02.html",
+        "project-06.html"
+      ],
+      "resumePdfPath": "output/pdf/Wally-Mostafa-CBIZ-AI-Consultant-Resume.pdf",
+      "publishStatus": "local-only",
+      "qaStatus": "qa-passed",
+      "builtAt": "2026-07-20T16:58:41.314Z"
+    },
+    {
       "slug": "cinteot-ai-product-owner",
       "roleTitle": "Cinteot AI Product Owner",
       "fitClass": "adjacent",
