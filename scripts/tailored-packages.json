@@ -754,9 +754,27 @@
         "project-07.html"
       ],
       "resumePdfPath": "output/pdf/Wally-Mostafa-HMH-Senior-UX-Designer-Resume.pdf",
-      "publishStatus": "local-only",
+      "publishStatus": "live-verified",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-07-20T20:03:44.910Z"
+      "builtAt": "2026-07-20T20:03:44.910Z",
+      "verification": {
+        "verifiedAt": "2026-07-20T20:06:26.696Z",
+        "routeUrl": "https://wallymo.github.io/hmh-senior-ux-designer/",
+        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-HMH-Senior-UX-Designer-Resume.pdf",
+        "configUrl": "https://wallymo.github.io/scripts/packages/hmh-senior-ux-designer.json",
+        "projectUrls": [
+          "https://wallymo.github.io/project-04.html",
+          "https://wallymo.github.io/project-05.html",
+          "https://wallymo.github.io/project-03.html",
+          "https://wallymo.github.io/project-07.html"
+        ],
+        "configSha256": "8fceea511c6fcc510bf51a73d809fcdfdd4929b2b8d221f001060121276c8705",
+        "pdfSha256": "2fd6314d5655f11f3ebf6cff29b239da0eb4889370921b05249ec3dcea4427b5",
+        "routeSha256": "721ff474e845adf2d5fd1cc515c4295da9c5b2f432009d5e23d2094fb80b443a",
+        "scopedProjectSha256": {},
+        "configInputSha256": "44ab0685fcefc8d15bf6206b14530092de157db16fbcf62b6588bc6673af1f8f",
+        "qaBuiltAt": "2026-07-20T20:03:44.910Z"
+      }
     },
     {
       "slug": "humana-senior-product-designer",
