@@ -1,0 +1,437 @@
+{
+  "workflowVersion": 2,
+  "contractRevision": 2,
+  "slug": "predictive-sales-ai-customer-success-consultant",
+  "roleTitle": "Predictive Sales AI Customer Success Consultant",
+  "artifactStem": "Predictive-Sales-AI-Customer-Success-Consultant",
+  "fitClass": "adjacent",
+  "routeMode": "canonical-projects",
+  "selectedProjects": [
+    "project-01.html",
+    "project-03.html",
+    "project-06.html"
+  ],
+  "job": {
+    "company": "Predictive Sales AI",
+    "roleTitle": "Customer Success Consultant",
+    "sourceChannel": "chat-pasted-jd",
+    "dateCaptured": "2026-07-20",
+    "location": "Chicago, IL - Remote/Hybrid",
+    "atsVendor": "unknown",
+    "rawJd": "About the job. Job Title: Customer Success Consultant. Location: Chicago, IL - Remote/Hybrid. About Us: Predictive Sales AI is at the forefront of transforming the home services industry with AI-driven software. We empower businesses to make smarter decisions, increase efficiency, and unlock new growth opportunities. As part of our growth, we are seeking an experienced accountant who thrives in a fast-paced, innovative environment. Are you passionate about supporting business growth through innovative products that are reshaping the industry? At Predictive Sales AI, we're revolutionizing the home services market with cutting-edge AI-driven software, and we're looking for a talented Customer Success Consultant to join our dynamic team. If you're passionate about advancing financial practices while supporting tech-focused clients, we want to hear from you. Job Overview: We don't just deliver software - we are at the forefront of a customer experience revolution, providing cutting-edge solutions and comprehensive support to transform our clients into thriving, long-term partners. As a Customer Success Consultant, you will guide a diverse portfolio of PSAI clients through onboarding, adoption, and ongoing growth, combining relationship-management expertise with training to create measurable value. Key Responsibilities: Own the client lifecycle from kickoff through renewal; design and execute success plans aligned to business goals; ensure long-term retention and growth; guide new clients through implementation of AI-driven software; configure accounts to client needs; set expectations for early wins and adoption; build trust-based relationships with stakeholders and decision-makers; uncover expansion opportunities and build advocacy; conduct onboarding and ongoing training; identify opportunities for deeper platform usage; assess KPIs, usage data, and account health scores; implement strategies to improve outcomes and reduce churn risk; use a proactive consultative approach; and collaborate with onboarding, support, product, and sales teams to improve adoption and renewal pathways. Desired Traits: Strong analytical and problem-solving abilities; organized and detail-oriented; excellent oral, written, and interpersonal communication; ownership and follow-through; customer-service focus; professional demeanor and composure. Required Skills and Experience: Bachelor's degree in Business, Communications, Marketing, or a related field. Two or more years of professional Customer Success, Account Management, or Client Services experience with hands-on knowledge of SaaS or software products. Experience managing B2B or B2C clients in a consultative or account-management capacity. Proven ability to guide new clients through software onboarding and drive early product adoption. Project-management ability across multiple accounts and projects. Experience with retention and growth. Understanding of SaaS platforms and their impact on client workflows and outcomes. Some CRM or customer-success-platform experience. Proficiency with analytics and reporting tools to develop performance insights and actionable recommendations. Strong written and verbal communication for client interactions, presentations, and reporting. Why Join Us: Innovative environment, professional growth, comprehensive benefits, flexible work arrangements, performance-based bonuses, and a collaborative culture."
+  },
+  "classification": {
+    "targetLane": "ai-software-customer-success",
+    "evidenceMode": "resume-primary",
+    "primarySource": "resume",
+    "supportingSource": "portfolio",
+    "hardGateStatus": "pass",
+    "hardGates": [
+      {
+        "gate": "Bachelor's degree in Business, Communications, Marketing, or a related field",
+        "status": "pass",
+        "evidence": "The resume documents a Bachelor of Arts from Rutgers University and more than the required professional experience."
+      },
+      {
+        "gate": "Two or more years in Customer Success, Account Management, or Client Services with hands-on SaaS or software knowledge",
+        "status": "pass",
+        "evidence": "Seven years of direct Fortune 500 account management exceeds the experience threshold, while enterprise analytics products and current client-led AI software work provide hands-on software evidence without claiming a formal SaaS customer-success title."
+      },
+      {
+        "gate": "Required Chicago residence, relocation, or fixed onsite schedule",
+        "status": "not-applicable",
+        "evidence": "The posting labels the role Chicago, IL - Remote/Hybrid but gives no required residence, relocation condition, or minimum onsite schedule."
+      }
+    ]
+  },
+  "requirements": [
+    {
+      "id": "client-portfolio-ownership",
+      "text": "Own a portfolio of client relationships and guide consultative success plans around business goals.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Seven years managing Fortune 500 pharma and healthcare clients with USD 2M-50M+ budgets.",
+        "One of two account consumer leads on FCB Health's largest pharma account across integrated channels, brand planning, and regulated review."
+      ],
+      "resumeTerms": [
+        "client relationships",
+        "account management"
+      ]
+    },
+    {
+      "id": "software-onboarding-implementation",
+      "text": "Guide clients through software onboarding, implementation, account configuration, and timely launch.",
+      "priority": "core",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Current consulting work owns client discovery, scope definition, AI workflow design, front-end build, backend logic, demo readiness, and iteration through a working product.",
+        "Healthcare and enterprise work translated stakeholder needs into build-ready digital products and repeatable workflows."
+      ],
+      "resumeTerms": [
+        "software implementation",
+        "client discovery"
+      ]
+    },
+    {
+      "id": "adoption-training-value",
+      "text": "Drive platform adoption through consultative communication, training, best practices, and measurable value.",
+      "priority": "core",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Enterprise analytics and white-label products supported 7,000+ users across 22 brands.",
+        "The resume documents client workshops, presentations, stakeholder adoption, demo narratives, and iterative product delivery."
+      ],
+      "resumeTerms": [
+        "product adoption",
+        "client workshops"
+      ]
+    },
+    {
+      "id": "stakeholder-partnerships",
+      "text": "Build trusted relationships with client stakeholders and decision-makers while maintaining clear expectations and follow-through.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Direct healthcare account leadership included day-to-day client communication, brand planning, presentations, feedback, timelines, and high-touch delivery.",
+        "Current client work turns ambiguous requests into clear scopes, demos, recommendations, and next-step decisions."
+      ],
+      "resumeTerms": [
+        "stakeholder alignment",
+        "client communication"
+      ]
+    },
+    {
+      "id": "performance-analysis",
+      "text": "Analyze KPIs, usage, and account performance and turn findings into actionable recommendations.",
+      "priority": "core",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Led enterprise analytics and data-visualization work used by 7,000+ users across 22 white-label brands.",
+        "Built a Digital Experience Audit workflow for channel scoring, benchmarks, recommendations, visualization, and presentation-ready client outputs."
+      ],
+      "resumeTerms": [
+        "performance data",
+        "actionable recommendations"
+      ]
+    },
+    {
+      "id": "cross-functional-delivery",
+      "text": "Coordinate onboarding, support, product, and sales stakeholders across multiple accounts and projects.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Coordinated high-volume client work across senior leadership, creative, strategy, production, UX, development, finance, and operations.",
+        "Scaled a distributed product-design function from 2 to 30 while supporting enterprise software used across 22 brands."
+      ],
+      "resumeTerms": [
+        "cross-functional delivery",
+        "project management"
+      ]
+    },
+    {
+      "id": "renewal-retention-expansion",
+      "text": "Own renewal pathways, retention strategy, churn mitigation, and expansion opportunities.",
+      "priority": "core",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "resumeTerms": [
+        "client retention",
+        "renewal",
+        "expansion opportunities"
+      ]
+    },
+    {
+      "id": "crm-health-scores",
+      "text": "Use a CRM or customer-success platform to track engagement, account health scores, and client activity.",
+      "priority": "core",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "resumeTerms": [
+        "CRM",
+        "account health scores"
+      ]
+    }
+  ],
+  "fitGate": {
+    "supportedOverlap": [
+      "Seven years of direct Fortune 500 pharma and healthcare account management with USD 2M-50M+ portfolios and high-touch client delivery.",
+      "Hands-on AI-software and enterprise-web-product work spanning discovery, requirements, workflow design, working prototypes, client iteration, and adoption-focused delivery.",
+      "Enterprise analytics proof through products used by 7,000+ users across 22 brands plus channel scoring, benchmarks, recommendations, and presentation-ready outputs.",
+      "Strong cross-functional delivery across account, strategy, creative, UX, product, engineering, finance, operations, and senior leadership.",
+      "Direct consultative communication through client workshops, presentations, brand planning, feedback, scoping, demos, and stakeholder alignment."
+    ],
+    "unsupportedRequirements": [
+      "Formal ownership of SaaS contract renewals, churn reduction, retention strategy, expansion closes, or recurring-revenue outcomes is not documented.",
+      "Named CRM or customer-success-platform usage and account-health-score administration are not documented.",
+      "Formal software-onboarding programs, account configuration, and recurring client-training ownership are not documented."
+    ],
+    "actualMismatches": [
+      "The documented account-management center is healthcare agency and brand delivery rather than post-sale SaaS customer success.",
+      "The resume proves software implementation and adoption from the product side, but not ownership of a recurring-revenue book of business from kickoff through renewal."
+    ],
+    "missingEvidence": [
+      "Renewal rate, gross or net retention, expansion revenue, churn reduction, and account-health outcomes.",
+      "CRM records, customer-success-platform workflows, formal onboarding milestones, training cadence, and client-usage reporting."
+    ],
+    "coverLetterBridge": {
+      "status": "recommended",
+      "rationale": "We can make the case with a cover letter by connecting seven years of direct account leadership, hands-on AI software delivery, enterprise adoption, and data-to-recommendation work to Predictive Sales AI's need for consultative onboarding and client value. The cover letter must acknowledge that the resume does not directly prove formal SaaS renewal, churn, health-score, CRM, or expansion ownership."
+    },
+    "recommendation": "Proceed as adjacent. Lead with direct account ownership, AI-software fluency, consultative communication, enterprise adoption, performance analysis, and cross-functional delivery. Do not imply formal renewal, retention, churn, CRM, health-score, or expansion ownership."
+  },
+  "resume": {
+    "summary": "Client and account-management leader with 7+ years managing Fortune 500 client relationships and USD 2M-50M+ portfolios, backed by 15 years across regulated healthcare, enterprise analytics, and digital product delivery. I translate client goals, workflow constraints, and performance data into clear recommendations and coordinated action across business, product, design, and technical teams. My strongest fit for Predictive Sales AI is high-trust account management, hands-on AI software fluency, product adoption, and making complex reporting useful to clients.",
+    "skills": [
+      {
+        "label": "Client & Account Management",
+        "description": "7+ years managing Fortune 500 relationships, USD 2M-50M+ portfolios, client communication, presentations, expectation setting, and high-touch delivery"
+      },
+      {
+        "label": "AI Software Implementation & Product Adoption",
+        "description": "Client discovery, requirements, workflow design, working prototypes, demo narratives, client iteration, and adoption-focused product delivery"
+      },
+      {
+        "label": "Performance Analysis & Recommendations",
+        "description": "Enterprise analytics, channel scoring, benchmarks, performance data, data visualization, and presentation-ready client recommendations"
+      },
+      {
+        "label": "Consultative Cross-Functional Delivery",
+        "description": "Stakeholder alignment, project management, client workshops, scopes, timelines, issue resolution, and coordination across business, product, design, engineering, finance, and operations"
+      }
+    ],
+    "roles": {
+      "hedgehox": [
+        "Convert pharma agency needs into web-based AI tools for MLR claim review, brief intake, scoping, review routing, submission capture, and FDA signal monitoring",
+        "Built Scope Generator for pharma agency finance and operations teams to manage regional rate cards, brands, sub-brands, and natural-language scope changes",
+        "Designed Claims Detector workflows that identify promotional claims, surface evidence gaps, and pre-populate audit-ready annotations before MLR submission"
+      ],
+      "one-block-away": [
+        "Build client-led AI POCs that turn unclear business questions into testable web products, demo flows, and roadmap decisions",
+        "Own client discovery, scope definition, UX, AI workflow design, front-end build, backend logic, demo readiness, and iteration from first ask through working prototype"
+      ],
+      "kinesso": [
+        "Scaled product design from 2 to 30 people across the US and Poland for enterprise analytics used by 7,000+ users across 22 white-label brands",
+        "Led UX and design-system strategy for MIE data visualization, dashboard building, brand theming, and reusable analytics components",
+        "Built the Digital Experience Audit workflow for performance data, channel scoring, benchmarks, actionable recommendations, visualization, and presentation-ready client outputs"
+      ],
+      "omnicom": [
+        "Supported oncology accounts as a freelance UX designer, combining UX design and account-management experience to strengthen regulated healthcare work",
+        "Championed UX best practices across account, strategy, creative, and delivery conversations, translating brand goals into clearer user flows, content structure, and digital recommendations"
+      ],
+      "heartbeat": [
+        "Led UX research and experience strategy for pharma and healthcare work, translating stakeholder input, competitive audits, and user needs into digital product direction",
+        "Created journey maps, site maps, user flows, wireframes, and prototypes for patient, HCP, and internal brand-team experiences across regulated healthcare programs",
+        "Partnered with strategy, creative, account, and engineering teams to move UX recommendations from research findings into build-ready product and campaign experiences"
+      ],
+      "account-management": [
+        "7+ years managing Fortune 500 pharma and healthcare clients with USD 2M-50M+ budgets across CNS/neurology, psychiatry, cardiovascular/metabolic, and sleep/wakefulness brands including NUVIGIL, Namenda XR, Lipitor, and Zoloft",
+        "One of two account consumer leads on FCB Health's largest pharma account across TV, radio, digital, gaming, Times Square, unbranded campaigns, brand planning, and MLR review",
+        "Translated client and brand strategy into briefs, creative feedback, production requirements, timelines, and MLR-ready deliverables across account, creative, UX, and development teams",
+        "Coordinated high-volume client work across senior leadership, creative, strategy, production, UX, and development teams, surfacing risks early and keeping deliverables moving against deadlines and budgets"
+      ]
+    }
+  },
+  "hero": {
+    "eyebrow": "Predictive Sales AI Customer Success Consultant",
+    "tags": [
+      "Client account leadership",
+      "AI software adoption",
+      "Performance data to action"
+    ],
+    "intro": "Predictive Sales AI needs a customer success consultant who can turn business goals, software usage, and client conversations into measurable action. I bring seven years managing Fortune 500 client relationships and $2M-$50M+ portfolios, current hands-on delivery of client-led AI software, and enterprise analytics work used by 7,000+ users across 22 brands. I am strongest where trusted account leadership, product adoption, and cross-functional follow-through have to move together."
+  },
+  "contact": {
+    "prompt": "Hiring a customer success consultant who can strengthen client relationships, make AI software useful, and turn performance data into action? Email is the fastest way to reach me.",
+    "signoff": "Client relationships · AI software adoption · performance insights"
+  },
+  "constraints": {
+    "doNotClaim": [
+      "Formal SaaS renewal ownership",
+      "Quantified client retention",
+      "Churn reduction ownership",
+      "Expansion revenue ownership",
+      "CRM administration",
+      "Account health score ownership",
+      "Formal customer onboarding program ownership"
+    ],
+    "blockedTerms": [
+      "owned renewals",
+      "reduced churn",
+      "closed expansions",
+      "managed account health scores",
+      "Salesforce administrator"
+    ]
+  },
+  "privacy": {
+    "publicSafe": true,
+    "notes": "Contains only the public job description and sanitized resume and portfolio evidence. It excludes recruiter details, application answers, compensation boundaries, and private eligibility information."
+  },
+  "qa": {
+    "status": "qa-passed",
+    "builtAt": "2026-07-20T17:00:57.201Z",
+    "configInputSha256": "2daf20fac603ad381c8ab4ba39849de852ea41371bece736b28a4a11d5917e23",
+    "sourceResumeSha256": "375cc6566f5bbad5b95be9da551dfe87824378fb252222409d29ef32d334ca25",
+    "artifactHashes": {
+      "routeSha256": "77485f5df2eabe752409d7020bb140e053a799e2b1e5080514033ce8648f979c",
+      "resumePdfSha256": "b3f30d5ee340ab4e0879565f8cd8e693eda7c5a0de732e149025daf5204d6105",
+      "scopedProjectSha256": {}
+    },
+    "renderer": {
+      "browser": {
+        "name": "chrome-headless-shell",
+        "version": "Google Chrome for Testing 149.0.7827.55"
+      },
+      "htmlPath": "tmp/tailored-resumes/predictive-sales-ai-customer-success-consultant.html",
+      "pdfPath": "output/pdf/Wally-Mostafa-Predictive-Sales-AI-Customer-Success-Consultant-Resume.pdf"
+    },
+    "ats": {
+      "ok": true,
+      "pdfPath": "output/pdf/Wally-Mostafa-Predictive-Sales-AI-Customer-Success-Consultant-Resume.pdf",
+      "pageCount": 2,
+      "fileSize": 127818,
+      "annotations": [
+        {
+          "page": 1,
+          "uri": "mailto:wmostafa12@gmail.com"
+        },
+        {
+          "page": 1,
+          "uri": "https://linkedin.com/in/wallymo"
+        },
+        {
+          "page": 1,
+          "uri": "https://wallymo.github.io/predictive-sales-ai-customer-success-consultant/"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/6748"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/4629"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.red-dot.org/project/dxa-digital-experience-audit-55219"
+        }
+      ],
+      "coverage": [
+        {
+          "id": "client-portfolio-ownership",
+          "requirement": "Own a portfolio of client relationships and guide consultative success plans around business goals.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "client relationships",
+            "account management"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "software-onboarding-implementation",
+          "requirement": "Guide clients through software onboarding, implementation, account configuration, and timely launch.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "software implementation",
+            "client discovery"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "adoption-training-value",
+          "requirement": "Drive platform adoption through consultative communication, training, best practices, and measurable value.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "product adoption",
+            "client workshops"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "stakeholder-partnerships",
+          "requirement": "Build trusted relationships with client stakeholders and decision-makers while maintaining clear expectations and follow-through.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "stakeholder alignment",
+            "client communication"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "performance-analysis",
+          "requirement": "Analyze KPIs, usage, and account performance and turn findings into actionable recommendations.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "performance data",
+            "actionable recommendations"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "cross-functional-delivery",
+          "requirement": "Coordinate onboarding, support, product, and sales stakeholders across multiple accounts and projects.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "cross-functional delivery",
+            "project management"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "renewal-retention-expansion",
+          "requirement": "Own renewal pathways, retention strategy, churn mitigation, and expansion opportunities.",
+          "priority": "core",
+          "evidenceStatus": "none",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "client retention",
+            "renewal",
+            "expansion opportunities"
+          ]
+        },
+        {
+          "id": "crm-health-scores",
+          "requirement": "Use a CRM or customer-success platform to track engagement, account health scores, and client activity.",
+          "priority": "core",
+          "evidenceStatus": "none",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "CRM",
+            "account health scores"
+          ]
+        }
+      ],
+      "failures": [],
+      "warnings": []
+    },
+    "route": {
+      "viewports": [
+        {
+          "name": "desktop",
+          "screenshot": "tmp/qa/predictive-sales-ai-customer-success-consultant/desktop.png",
+          "errors": []
+        },
+        {
+          "name": "mobile",
+          "screenshot": "tmp/qa/predictive-sales-ai-customer-success-consultant/mobile.png",
+          "errors": []
+        }
+      ],
+      "errors": []
+    }
+  }
+}

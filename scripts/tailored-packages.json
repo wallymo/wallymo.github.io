@@ -258,9 +258,26 @@
         "project-06.html"
       ],
       "resumePdfPath": "output/pdf/Wally-Mostafa-CBIZ-AI-Consultant-Resume.pdf",
-      "publishStatus": "local-only",
+      "publishStatus": "live-verified",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-07-20T16:58:41.314Z"
+      "builtAt": "2026-07-20T16:58:41.314Z",
+      "verification": {
+        "verifiedAt": "2026-07-20T17:05:47.911Z",
+        "routeUrl": "https://wallymo.github.io/cbiz-ai-consultant/",
+        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-CBIZ-AI-Consultant-Resume.pdf",
+        "configUrl": "https://wallymo.github.io/scripts/packages/cbiz-ai-consultant.json",
+        "projectUrls": [
+          "https://wallymo.github.io/project-01.html",
+          "https://wallymo.github.io/project-02.html",
+          "https://wallymo.github.io/project-06.html"
+        ],
+        "configSha256": "dce23663ce8f1c26189de9fb09e145eae746f0b492904019489f6b78863232ba",
+        "pdfSha256": "3573ef94bccf3b480c0167e74fd2baa1fba09f40a45c16aed5fb13e368d2321a",
+        "routeSha256": "6d8385fc1b4ec16d57b1d3ae2a36bffd2975c155a2c46d8a3b7e9036bc836304",
+        "scopedProjectSha256": {},
+        "configInputSha256": "479816a544dc05c80521c69a8ac4dd6fcc2f848abf5123aacf2ff716996392df",
+        "qaBuiltAt": "2026-07-20T16:58:41.314Z"
+      }
     },
     {
       "slug": "cinteot-ai-product-owner",
@@ -900,6 +917,26 @@
       "resumeHtmlPath": "output/pdf/wally-mostafa-omidria-product-marketing-manager-resume.html",
       "resumePdfPath": "output/pdf/Wally-Mostafa-OMIDRIA-Product-Marketing-Manager-Resume.pdf",
       "publishStatus": "tracked-unverified"
+    },
+    {
+      "workflowVersion": 2,
+      "slug": "predictive-sales-ai-customer-success-consultant",
+      "roleTitle": "Predictive Sales AI Customer Success Consultant",
+      "artifactStem": "Predictive-Sales-AI-Customer-Success-Consultant",
+      "configPath": "scripts/packages/predictive-sales-ai-customer-success-consultant.json",
+      "targetLane": "ai-software-customer-success",
+      "evidenceMode": "resume-primary",
+      "fitClass": "adjacent",
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-01.html",
+        "project-03.html",
+        "project-06.html"
+      ],
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Predictive-Sales-AI-Customer-Success-Consultant-Resume.pdf",
+      "publishStatus": "local-only",
+      "qaStatus": "qa-passed",
+      "builtAt": "2026-07-20T17:00:57.201Z"
     },
     {
       "slug": "product-management-ai-evaluator",
