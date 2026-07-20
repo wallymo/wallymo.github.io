@@ -971,9 +971,26 @@
         "project-03.html"
       ],
       "resumePdfPath": "output/pdf/Wally-Mostafa-Precision-AQ-Project-Coordinator-Resume.pdf",
-      "publishStatus": "local-only",
+      "publishStatus": "live-verified",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-07-20T17:04:55.637Z"
+      "builtAt": "2026-07-20T17:04:55.637Z",
+      "verification": {
+        "verifiedAt": "2026-07-20T17:12:31.102Z",
+        "routeUrl": "https://wallymo.github.io/precision-aq-project-coordinator/",
+        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-Precision-AQ-Project-Coordinator-Resume.pdf",
+        "configUrl": "https://wallymo.github.io/scripts/packages/precision-aq-project-coordinator.json",
+        "projectUrls": [
+          "https://wallymo.github.io/project-01.html",
+          "https://wallymo.github.io/project-06.html",
+          "https://wallymo.github.io/project-03.html"
+        ],
+        "configSha256": "6d5e80a43a19f104ba9d92a03930ce35776454de778729ea370708ece4ce8e8f",
+        "pdfSha256": "a49544d5cca992c3510f8c3fcef31469e39e05773f54cc6a7d7278e231d3031a",
+        "routeSha256": "0fe230e10ff21d2b6d8f660fb63d6591528ef5472d7078b2e031ae27b819a4e4",
+        "scopedProjectSha256": {},
+        "configInputSha256": "645167bf6a7360aaf4e2f500521d87ae9c7f5e8ed4c5671e1a0f4e46dc626874",
+        "qaBuiltAt": "2026-07-20T17:04:55.637Z"
+      }
     },
     {
       "workflowVersion": 2,
