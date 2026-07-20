@@ -991,9 +991,26 @@
         "project-06.html"
       ],
       "resumePdfPath": "output/pdf/Wally-Mostafa-Power-Entry-Level-Sales-Representative-Resume.pdf",
-      "publishStatus": "local-only",
+      "publishStatus": "live-verified",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-07-20T19:50:43.345Z"
+      "builtAt": "2026-07-20T19:50:43.345Z",
+      "verification": {
+        "verifiedAt": "2026-07-20T19:54:25.770Z",
+        "routeUrl": "https://wallymo.github.io/power-entry-level-sales-representative/",
+        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-Power-Entry-Level-Sales-Representative-Resume.pdf",
+        "configUrl": "https://wallymo.github.io/scripts/packages/power-entry-level-sales-representative.json",
+        "projectUrls": [
+          "https://wallymo.github.io/project-02.html",
+          "https://wallymo.github.io/project-04.html",
+          "https://wallymo.github.io/project-06.html"
+        ],
+        "configSha256": "28922f28b63f7c0e5725779cbc8408bdeb7ba8d53c4dd45fbd2f825fdf098f90",
+        "pdfSha256": "2216befe493c0e1d54e0e02c080fcef13cc5733c1bd962f034c8c0fd287cefd3",
+        "routeSha256": "ecdb912e90a1e4dfde2b9ecbe92e38641c7a8491e85949f4fb56a8b299755828",
+        "scopedProjectSha256": {},
+        "configInputSha256": "d9146e494f0e3c945a0e35729498ede6608d9fbb0b603ea5811f53dd85289cd6",
+        "qaBuiltAt": "2026-07-20T19:50:43.345Z"
+      }
     },
     {
       "workflowVersion": 2,
