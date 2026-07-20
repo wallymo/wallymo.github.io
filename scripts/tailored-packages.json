@@ -552,9 +552,26 @@
         "project-06.html"
       ],
       "resumePdfPath": "output/pdf/Wally-Mostafa-Fieldguide-Executive-Assistant-Resume.pdf",
-      "publishStatus": "local-only",
+      "publishStatus": "live-verified",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-07-20T17:06:38.986Z"
+      "builtAt": "2026-07-20T17:06:38.986Z",
+      "verification": {
+        "verifiedAt": "2026-07-20T17:10:28.502Z",
+        "routeUrl": "https://wallymo.github.io/fieldguide-executive-assistant/",
+        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-Fieldguide-Executive-Assistant-Resume.pdf",
+        "configUrl": "https://wallymo.github.io/scripts/packages/fieldguide-executive-assistant.json",
+        "projectUrls": [
+          "https://wallymo.github.io/project-04.html",
+          "https://wallymo.github.io/project-02.html",
+          "https://wallymo.github.io/project-06.html"
+        ],
+        "configSha256": "9ee03f6fccd2f68d16b9d15957b28cdf872b3dcd4d80267821b132c3d5b1457c",
+        "pdfSha256": "38109ce56eebaeeb68a6bb8fcce6ff7ab25e6e1280981849f38a535aa8d1d303",
+        "routeSha256": "5a6ddd08f52a36867ea50cc2b06c1b37c89f3dbb14e2fc98b982f852d2ab03ce",
+        "scopedProjectSha256": {},
+        "configInputSha256": "781d53cecd9485b3044dd785c26617130b683f70e220eae0a075fd10fc4f5f8f",
+        "qaBuiltAt": "2026-07-20T17:06:38.986Z"
+      }
     },
     {
       "slug": "figma-product-manager-code",
