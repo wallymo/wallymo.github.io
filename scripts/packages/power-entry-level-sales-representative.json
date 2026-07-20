@@ -1,0 +1,466 @@
+{
+  "workflowVersion": 2,
+  "contractRevision": 2,
+  "slug": "power-entry-level-sales-representative",
+  "roleTitle": "Power Entry-Level Sales Representative",
+  "artifactStem": "Power-Entry-Level-Sales-Representative",
+  "fitClass": "adjacent",
+  "routeMode": "canonical-projects",
+  "selectedProjects": [
+    "project-02.html",
+    "project-04.html",
+    "project-06.html"
+  ],
+  "job": {
+    "company": "Power Home Remodeling",
+    "roleTitle": "Entry-Level Sales Representative",
+    "jobId": "not-listed",
+    "jobUrl": null,
+    "sourceChannel": "chat-pasted-jd",
+    "dateCaptured": "2026-07-20",
+    "location": "Morrisville, NC",
+    "atsVendor": "unknown",
+    "rawJd": "$3,900 Sign-on Bonus. Entry-Level Sales Representative. Power is where hustle meets purpose. It's where leadership opportunities, life-enhancing benefits, and award-winning culture come together. Why? Because our people are our most important asset. And there's no better investment than their happiness and growth. Our diverse, inclusive, and military-friendly culture has been recognized by Fortune Magazine as the #13 Best Company to Work for and #1 Best Workplace in Construction in the nation, and made the Military Times' Best for Vets list. 90% of our sales leaders began their careers in entry-level sales positions, proving that Power is a meritocracy - the harder you work, the further you'll go. The Sales Role: Hiring Immediately - As a full-time sales representative, we're preparing you to succeed in more than just your current position. You will be trained in all of our products and be able to deliver interactive sales presentations that will teach communication skills, negotiation tactics, strategic planning and problem solving. This role will provide you the foundational education and experience needed for all future career growth. The Responsibilities: Delivery of interactive sales presentations on eco-friendly, green products and services to customers. Participation in ongoing sales training and coaching camps on a weekly basis. Team building and mentorship. The Qualifications: Highly developed communication skills. Ability to speak publicly with confidence and poise. Self-motivated, discipline, and career oriented. Open-minded with a passion for learning a wide-range of skills that will carry through a variety of career paths. Naturally outgoing individual who thrives in human interaction. BA/BS preferred. The Compensation: $3,900 sign-on bonus. Hourly rate plus uncapped commission and bonuses. Average earning potential: $72,000-$130,000 per year. The Benefits: Full medical, dental, life, and disability insurance plans that can be tailored to you and your family's specific needs. Subsidized child care and fertility benefits. Paid parental leave. Free health screenings and rewards for participation in wellness programs. A comprehensive 401(k) retirement savings program, matched by Power. Ample paid vacation and holidays. An employee-relief fund. Monthly opportunities for performance-based rewards, such as luxury vacations, high-end electronics, gift cards, and tickets to concerts and events. Year-round events and activities, including an all expenses-paid music festival in Cancun, Mexico for you and a significant other. Access to the latest technology, such as laptops and tablets that will help you reach your sales goals faster and more efficiently. Year-round volunteer opportunities. Personal development - books, courses and opportunity to attend leadership conferences. Veterans encouraged to apply. Artfully designed office spaces and relocation opportunities. Office location: Morrisville, NC. Power offers a $3,900 sign-on bonus, paid weekly in $325 increments over twelve weeks of initial training. The full sign-on bonus is contingent on successfully completing the twelve weeks of initial training. Power Home Remodeling Group is an equal opportunity employer and provides an accommodation request channel through recruiting."
+  },
+  "classification": {
+    "targetLane": "entry-level-consumer-sales",
+    "evidenceMode": "resume-primary",
+    "primarySource": "resume",
+    "supportingSource": "portfolio",
+    "hardGateStatus": "pass",
+    "hardGates": [
+      {
+        "gate": "BA or BS preferred",
+        "status": "pass",
+        "evidence": "BA in Labor Studies and Employee Relations from Rutgers University, 2010."
+      },
+      {
+        "gate": "Morrisville, North Carolina office location",
+        "status": "pass",
+        "evidence": "The public resume lists Raleigh, North Carolina, which is in the same local market as the stated Morrisville office."
+      },
+      {
+        "gate": "Prior direct sales, home-remodeling, or green-product experience",
+        "status": "not-applicable",
+        "evidence": "The posting presents the role as entry level, provides product and sales training, and does not list prior sales or industry experience as a required qualification."
+      }
+    ]
+  },
+  "requirements": [
+    {
+      "id": "interactive-presentations",
+      "text": "Deliver clear, interactive product presentations to customers.",
+      "priority": "core",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Built client-led working POCs and demo flows that made complex product ideas understandable and testable.",
+        "Built a research roadshow and workshops to explain a new research practice across a 20-plus-product organization.",
+        "Created presentation-ready client outputs that turned performance data into benchmarks and recommendations."
+      ],
+      "resumeTerms": [
+        "presentations",
+        "demos"
+      ]
+    },
+    {
+      "id": "communication-and-relationships",
+      "text": "Communicate confidently and build rapport through frequent human interaction.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Seven years managing Fortune 500 pharma and healthcare client relationships with budgets from USD 2M to more than USD 50M.",
+        "Translated client goals into briefs, feedback, requirements, timelines, and clear deliverables across multiple disciplines."
+      ],
+      "resumeTerms": [
+        "client communication",
+        "relationship management"
+      ]
+    },
+    {
+      "id": "team-building-leadership",
+      "text": "Contribute to team building, mentorship, and future sales leadership.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Scaled a distributed product design team from 2 to 30 people across the United States and Poland.",
+        "Built workshops, reusable practices, and communication systems that helped teams adopt a new research discipline."
+      ],
+      "resumeTerms": [
+        "team building",
+        "team leadership"
+      ]
+    },
+    {
+      "id": "planning-and-problem-solving",
+      "text": "Apply strategic planning and problem solving to customer conversations and daily work.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Turns ambiguous client questions into scoped workflows, working prototypes, demo narratives, and next-step decisions.",
+        "Built an audit workflow that translated performance data into benchmarks, recommendations, and repeatable client outputs."
+      ],
+      "resumeTerms": [
+        "strategic planning",
+        "problem solving"
+      ]
+    },
+    {
+      "id": "motivation-and-follow-through",
+      "text": "Bring self-motivation, discipline, coachability, and consistent follow-through.",
+      "priority": "core",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Founded and operates a client-led product strategy practice with ownership from the first ask through a working prototype.",
+        "Progressed across account management, UX leadership, product strategy, and AI implementation while continuing to build new skills."
+      ],
+      "resumeTerms": [
+        "follow-through",
+        "continuous learning"
+      ]
+    },
+    {
+      "id": "bachelors-degree",
+      "text": "Hold a BA or BS degree, which is preferred.",
+      "priority": "preferred",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "BA in Labor Studies and Employee Relations from Rutgers University, 2010."
+      ],
+      "resumeTerms": [
+        "BA Labor Studies"
+      ]
+    },
+    {
+      "id": "green-home-products",
+      "text": "Present eco-friendly home-remodeling products and services with specific product knowledge.",
+      "priority": "context",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "resumeTerms": [
+        "green products",
+        "home remodeling"
+      ]
+    },
+    {
+      "id": "direct-consumer-sales-results",
+      "text": "Show prior direct-to-consumer sales, commission, quota, or close-rate results.",
+      "priority": "context",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "resumeTerms": [
+        "direct consumer sales",
+        "quota attainment",
+        "commission results",
+        "close rate"
+      ]
+    },
+    {
+      "id": "weekly-sales-training",
+      "text": "Participate in weekly sales training and coaching camps.",
+      "priority": "context",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "resumeTerms": [
+        "weekly sales training",
+        "sales coaching camps"
+      ]
+    }
+  ],
+  "fitGate": {
+    "supportedOverlap": [
+      "Seven years of high-touch Fortune 500 client relationship work with substantial budgets and cross-functional delivery responsibility.",
+      "Direct presentation and demonstration proof through investor-facing POCs, client-led demos, a research roadshow, workshops, and presentation-ready recommendations.",
+      "Team-building proof through scaling a distributed product design organization from 2 to 30 people.",
+      "Strong strategic planning and problem-solving proof through client discovery, workflow scoping, prototype validation, and data-to-recommendation systems.",
+      "The Raleigh resume location aligns with the Morrisville office, and the preferred BA requirement is satisfied."
+    ],
+    "unsupportedRequirements": [
+      "Direct-to-consumer or in-home sales experience is not documented.",
+      "Commission, quota, close-rate, or revenue-production results are not documented.",
+      "Eco-friendly home-remodeling product knowledge is not documented.",
+      "Prior participation in weekly sales coaching camps is not documented."
+    ],
+    "actualMismatches": [
+      "The documented operating center is account management, client strategy, product delivery, and design leadership rather than frontline consumer sales.",
+      "The resume shows 15 years of experience, director-level leadership, and founder work, creating a meaningful overqualification and retention concern for an entry-level role."
+    ],
+    "missingEvidence": [
+      "Direct consumer prospecting, objection handling, closing, quota attainment, and commission performance.",
+      "Home-remodeling, construction, sustainability, or green-product knowledge.",
+      "A stated reason for intentionally moving from senior client and product work into an entry-level frontline sales path."
+    ],
+    "coverLetterBridge": {
+      "status": "recommended",
+      "rationale": "We can make the case with a cover letter by connecting seven years of account leadership, investor and client demonstrations, team building, and disciplined end-to-end ownership to Power's need for consultative presentations, coachability, and leadership potential. The cover letter must directly explain the deliberate move into frontline sales and avoid implying prior consumer-sales, quota, commission, or home-remodeling experience."
+    },
+    "recommendation": "Proceed as adjacent. Lead with client communication, presentations, relationship building, strategic problem solving, team leadership, and local availability. Keep the package explicit that the evidence is consultative and client-facing rather than direct consumer sales, and do not imply quota, commission, closing, or green-home-product experience."
+  },
+  "resume": {
+    "summary": "Client-facing account and presentation leader with 7+ years managing Fortune 500 relationships and USD 2M-50M+ budgets, backed by 15 years across client strategy, product delivery, and team leadership. I turn complex offerings into clear demos, presentations, and next steps, build trust across different audiences, and stay accountable from first conversation through delivery. My fit for Power is consultative communication, disciplined follow-through, continuous learning, and direct experience growing teams and guiding high-stakes client work.",
+    "skills": [
+      {
+        "label": "Consultative Communication & Presentations",
+        "description": "Client communication, interactive demos, presentation-ready recommendations, workshops, research roadshows, and translating complex offerings into clear next steps"
+      },
+      {
+        "label": "Client Relationship Management",
+        "description": "7+ years managing Fortune 500 relationships, USD 2M-50M+ budgets, stakeholder alignment, expectation setting, feedback, and follow-through"
+      },
+      {
+        "label": "Team Building & Team Leadership",
+        "description": "Scaled a distributed product design organization from 2 to 30 people across the United States and Poland, supported by reusable practices and workshops"
+      },
+      {
+        "label": "Strategic Planning & Problem Solving",
+        "description": "Client discovery, scoping, requirements, prototype validation, demo narratives, data-to-recommendation workflows, and coordinated delivery"
+      }
+    ],
+    "roles": {
+      "hedgehox": [
+        "Secured an investor for proprietary Claims Detection software by building the functional POC, shaping the demo story, and iterating with investors",
+        "Converted complex pharma agency needs into clear tools for claim review, brief intake, scoping, review routing, submission capture, and FDA signal monitoring",
+        "Designed the full Xenagos Bio startup biopharma website from scratch, including investor-facing structure, scientific positioning, visual direction, and design-system handoff"
+      ],
+      "one-block-away": [
+        "Build client-led POCs that turn unclear business questions into working product demonstrations, decision-ready conversations, and practical next steps",
+        "Own client discovery, strategy, workflow design, demo readiness, and iteration from first ask through working prototype",
+        "Built ListingPal's AI listing-generation POC and landing page, turning basic property inputs into a complete listing campaign in under 90 seconds"
+      ],
+      "kinesso": [
+        "Scaled product design from 2 to 30 people across the US and Poland for enterprise analytics used by 7,000+ users across 22 white-label brands",
+        "Built a research roadshow and workshops that helped product, design, and development teams adopt a repeatable user-research practice across a 20+ product suite",
+        "Built the Digital Experience Audit workflow for channel scoring, benchmarks, recommendations, visualization, and presentation-ready client outputs"
+      ],
+      "omnicom": [
+        "Supported oncology accounts as a freelance UX designer, combining UX design and account-management experience to strengthen regulated healthcare work",
+        "Championed UX best practices across account, strategy, creative, and delivery conversations, translating brand goals into clearer user flows, content structure, and recommendations"
+      ],
+      "heartbeat": [
+        "Led UX research and experience strategy for pharma and healthcare work, translating stakeholder input, competitive audits, and user needs into clear product direction",
+        "Created journey maps, site maps, user flows, wireframes, and prototypes for patient, healthcare professional, and internal brand-team experiences",
+        "Partnered with strategy, creative, account, and engineering teams to move recommendations from research findings into build-ready product and campaign experiences"
+      ],
+      "account-management": [
+        "7+ years managing Fortune 500 pharma and healthcare clients with USD 2M-50M+ budgets across CNS, psychiatry, cardiovascular, metabolic, and sleep-wakefulness brands",
+        "One of two account consumer leads on FCB Health's largest pharma account across TV, radio, digital, gaming, Times Square, unbranded campaigns, brand planning, and MLR review",
+        "Translated client and brand strategy into briefs, creative feedback, production requirements, timelines, and MLR-ready deliverables across account, creative, UX, and development teams",
+        "Coordinated high-volume client work across senior leadership, creative, strategy, production, UX, and development teams while keeping deadlines, budgets, and next steps visible"
+      ]
+    }
+  },
+  "hero": {
+    "eyebrow": "Power Entry-Level Sales Representative",
+    "tags": [
+      "Client presentations & demos",
+      "Relationship-first communication",
+      "Team building & follow-through"
+    ],
+    "intro": "Power is hiring someone who can earn trust quickly, explain products clearly, stay open to learning, and grow into team leadership. I bring seven years managing Fortune 500 client relationships and USD 2M-50M+ budgets, experience turning complex offerings into understandable demonstrations and recommendations, and leadership proof from scaling a distributed team from 2 to 30. I am bringing that consultative, high-accountability background into frontline sales, with the communication, problem solving, and follow-through to learn the product and make every customer conversation useful."
+  },
+  "contact": {
+    "prompt": "Hiring a sales representative who can connect with people, explain complex offerings clearly, and grow into team leadership? Email is the fastest way to reach me.",
+    "signoff": "Client communication · clear presentations · accountable follow-through"
+  },
+  "constraints": {
+    "doNotClaim": [
+      "Prior direct-to-consumer sales experience",
+      "Home-remodeling sales experience",
+      "Green-product expertise",
+      "Quota ownership",
+      "Commission performance",
+      "Documented close-rate results",
+      "Formal sales-coaching experience"
+    ],
+    "blockedTerms": [
+      "door-to-door sales",
+      "quota attainment",
+      "commission results",
+      "home remodeling expertise",
+      "green product expert",
+      "sales closer"
+    ]
+  },
+  "privacy": {
+    "publicSafe": true,
+    "notes": "Contains only the public job description and sanitized evidence from the public resume and portfolio. It includes no recruiter contact details, application answers, compensation boundaries, or private eligibility information."
+  },
+  "qa": {
+    "status": "qa-passed",
+    "builtAt": "2026-07-20T19:50:43.345Z",
+    "configInputSha256": "d9146e494f0e3c945a0e35729498ede6608d9fbb0b603ea5811f53dd85289cd6",
+    "sourceResumeSha256": "375cc6566f5bbad5b95be9da551dfe87824378fb252222409d29ef32d334ca25",
+    "artifactHashes": {
+      "routeSha256": "ecdb912e90a1e4dfde2b9ecbe92e38641c7a8491e85949f4fb56a8b299755828",
+      "resumePdfSha256": "2216befe493c0e1d54e0e02c080fcef13cc5733c1bd962f034c8c0fd287cefd3",
+      "scopedProjectSha256": {}
+    },
+    "renderer": {
+      "browser": {
+        "name": "chrome-headless-shell",
+        "version": "Google Chrome for Testing 149.0.7827.55"
+      },
+      "htmlPath": "tmp/tailored-resumes/power-entry-level-sales-representative.html",
+      "pdfPath": "output/pdf/Wally-Mostafa-Power-Entry-Level-Sales-Representative-Resume.pdf"
+    },
+    "ats": {
+      "ok": true,
+      "pdfPath": "output/pdf/Wally-Mostafa-Power-Entry-Level-Sales-Representative-Resume.pdf",
+      "pageCount": 2,
+      "fileSize": 128381,
+      "annotations": [
+        {
+          "page": 1,
+          "uri": "mailto:wmostafa12@gmail.com"
+        },
+        {
+          "page": 1,
+          "uri": "https://linkedin.com/in/wallymo"
+        },
+        {
+          "page": 1,
+          "uri": "https://wallymo.github.io/power-entry-level-sales-representative/"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/6748"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/4629"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.red-dot.org/project/dxa-digital-experience-audit-55219"
+        }
+      ],
+      "coverage": [
+        {
+          "id": "interactive-presentations",
+          "requirement": "Deliver clear, interactive product presentations to customers.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "presentations",
+            "demos"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "communication-and-relationships",
+          "requirement": "Communicate confidently and build rapport through frequent human interaction.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "client communication",
+            "relationship management"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "team-building-leadership",
+          "requirement": "Contribute to team building, mentorship, and future sales leadership.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "team building",
+            "team leadership"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "planning-and-problem-solving",
+          "requirement": "Apply strategic planning and problem solving to customer conversations and daily work.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "strategic planning",
+            "problem solving"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "motivation-and-follow-through",
+          "requirement": "Bring self-motivation, discipline, coachability, and consistent follow-through.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "follow-through",
+            "continuous learning"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "bachelors-degree",
+          "requirement": "Hold a BA or BS degree, which is preferred.",
+          "priority": "preferred",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "BA Labor Studies"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "green-home-products",
+          "requirement": "Present eco-friendly home-remodeling products and services with specific product knowledge.",
+          "priority": "context",
+          "evidenceStatus": "none",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "green products",
+            "home remodeling"
+          ]
+        },
+        {
+          "id": "direct-consumer-sales-results",
+          "requirement": "Show prior direct-to-consumer sales, commission, quota, or close-rate results.",
+          "priority": "context",
+          "evidenceStatus": "none",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "direct consumer sales",
+            "quota attainment",
+            "commission results",
+            "close rate"
+          ]
+        },
+        {
+          "id": "weekly-sales-training",
+          "requirement": "Participate in weekly sales training and coaching camps.",
+          "priority": "context",
+          "evidenceStatus": "none",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "weekly sales training",
+            "sales coaching camps"
+          ]
+        }
+      ],
+      "failures": [],
+      "warnings": []
+    },
+    "route": {
+      "viewports": [
+        {
+          "name": "desktop",
+          "screenshot": "tmp/qa/power-entry-level-sales-representative/desktop.png",
+          "errors": []
+        },
+        {
+          "name": "mobile",
+          "screenshot": "tmp/qa/power-entry-level-sales-representative/mobile.png",
+          "errors": []
+        }
+      ],
+      "errors": []
+    }
+  }
+}

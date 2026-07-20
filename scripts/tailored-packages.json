@@ -957,6 +957,26 @@
     },
     {
       "workflowVersion": 2,
+      "slug": "power-entry-level-sales-representative",
+      "roleTitle": "Power Entry-Level Sales Representative",
+      "artifactStem": "Power-Entry-Level-Sales-Representative",
+      "configPath": "scripts/packages/power-entry-level-sales-representative.json",
+      "targetLane": "entry-level-consumer-sales",
+      "evidenceMode": "resume-primary",
+      "fitClass": "adjacent",
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-02.html",
+        "project-04.html",
+        "project-06.html"
+      ],
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Power-Entry-Level-Sales-Representative-Resume.pdf",
+      "publishStatus": "local-only",
+      "qaStatus": "qa-passed",
+      "builtAt": "2026-07-20T19:50:43.345Z"
+    },
+    {
+      "workflowVersion": 2,
       "slug": "precision-aq-project-coordinator",
       "roleTitle": "Precision AQ Project Coordinator",
       "artifactStem": "Precision-AQ-Project-Coordinator",
