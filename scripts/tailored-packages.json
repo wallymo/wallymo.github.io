@@ -934,9 +934,26 @@
         "project-06.html"
       ],
       "resumePdfPath": "output/pdf/Wally-Mostafa-Predictive-Sales-AI-Customer-Success-Consultant-Resume.pdf",
-      "publishStatus": "local-only",
+      "publishStatus": "live-verified",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-07-20T17:00:57.201Z"
+      "builtAt": "2026-07-20T17:00:57.201Z",
+      "verification": {
+        "verifiedAt": "2026-07-20T17:08:00.769Z",
+        "routeUrl": "https://wallymo.github.io/predictive-sales-ai-customer-success-consultant/",
+        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-Predictive-Sales-AI-Customer-Success-Consultant-Resume.pdf",
+        "configUrl": "https://wallymo.github.io/scripts/packages/predictive-sales-ai-customer-success-consultant.json",
+        "projectUrls": [
+          "https://wallymo.github.io/project-01.html",
+          "https://wallymo.github.io/project-03.html",
+          "https://wallymo.github.io/project-06.html"
+        ],
+        "configSha256": "0ddcfcc76ad902df55c01bda7fdefd5635e0ba8552a31890009658c3e014b171",
+        "pdfSha256": "b3f30d5ee340ab4e0879565f8cd8e693eda7c5a0de732e149025daf5204d6105",
+        "routeSha256": "77485f5df2eabe752409d7020bb140e053a799e2b1e5080514033ce8648f979c",
+        "scopedProjectSha256": {},
+        "configInputSha256": "2daf20fac603ad381c8ab4ba39849de852ea41371bece736b28a4a11d5917e23",
+        "qaBuiltAt": "2026-07-20T17:00:57.201Z"
+      }
     },
     {
       "slug": "product-management-ai-evaluator",
