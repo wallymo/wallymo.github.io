@@ -1196,9 +1196,27 @@
         "project-06.html"
       ],
       "resumePdfPath": "output/pdf/Wally-Mostafa-Principal-UX-HCD-Lead-Resume.pdf",
-      "publishStatus": "local-only",
+      "publishStatus": "live-verified",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-07-20T20:01:13.794Z"
+      "builtAt": "2026-07-20T20:01:13.794Z",
+      "verification": {
+        "verifiedAt": "2026-07-20T20:18:33.953Z",
+        "routeUrl": "https://wallymo.github.io/principal-ux-hcd-lead/",
+        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-Principal-UX-HCD-Lead-Resume.pdf",
+        "configUrl": "https://wallymo.github.io/scripts/packages/principal-ux-hcd-lead.json",
+        "projectUrls": [
+          "https://wallymo.github.io/project-04.html",
+          "https://wallymo.github.io/project-01.html",
+          "https://wallymo.github.io/project-07.html",
+          "https://wallymo.github.io/project-06.html"
+        ],
+        "configSha256": "0a9da53e9a7a4f94b119b7832e3e6f6690bb2ae4f286a62b9db013ad9a264e7c",
+        "pdfSha256": "65ee8e2546244286c2ad39d081b0b8caeaf91d0a4615e7ec2f9d02b0c9d14930",
+        "routeSha256": "33a11ff707894dd692a267d59bf6f1e81a433ce142c5d42372abf2a422e73e38",
+        "scopedProjectSha256": {},
+        "configInputSha256": "931204ad44dcffe8a9076d521a8e497dd0fd7fe24310eebcd21bb91b20cef670",
+        "qaBuiltAt": "2026-07-20T20:01:13.794Z"
+      }
     },
     {
       "slug": "product-management-ai-evaluator",
