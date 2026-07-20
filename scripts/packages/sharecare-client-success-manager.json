@@ -1,0 +1,459 @@
+{
+  "workflowVersion": 2,
+  "contractRevision": 2,
+  "slug": "sharecare-client-success-manager",
+  "roleTitle": "Sharecare Client Success Manager",
+  "artifactStem": "Sharecare-Client-Success-Manager",
+  "fitClass": "adjacent",
+  "routeMode": "canonical-projects",
+  "selectedProjects": [
+    "project-01.html",
+    "project-06.html",
+    "project-03.html"
+  ],
+  "job": {
+    "company": "Sharecare",
+    "roleTitle": "Client Success Manager",
+    "jobUrl": "https://www.indeed.com/viewjob?jk=2a80bcc214a3c810",
+    "sourceChannel": "chat-pasted-jd",
+    "dateCaptured": "2026-07-20",
+    "location": "Remote",
+    "atsVendor": "unknown",
+    "rawJd": "Sharecare is the leading digital health company that helps people - no matter where they are in their health journey - unify and manage all their health in one place. Its comprehensive and data-driven virtual health platform helps people, providers, employers, health plans, government organizations, and communities optimize individual and population-wide well-being through positive behavior change. Job Summary: Effectively manage ongoing relationships with clients in portfolio. Enhance and nurture existing relationships resulting in client retention and identification of upsell and add-on business opportunities, and lead streamlined internal teams to support clients and customers. Client Management: Manage high-level relationships with assigned accounts while maintaining oversight and adherence to Client SLAs. Understand and report the financial standing of services, interpret data, and make targeted recommendations for future product enhancements. Maximize existing services and identify opportunities for new or add-on services. Use technical and business-development skills to increase clients' utilization of current technology. Track, analyze, create, and deliver reports and insights. Manage ongoing and unplanned client projects and deliverables on time and within budget. Collaborate with internal departments to resolve technical and customer-service issues. Build positive relationships with clients and internal stakeholders. Own workflow assignments, resolve problems, and meet deadlines. Manage client requests for program changes. Create client profiles and Quarterly Business Reviews, gather Voice of the Customer through NPS and quarterly health checks, track add-on opportunities and financial information in Salesforce, and participate in annual client strategy and revenue goals. Contract Renewal: Participate in pre-renewal strategy meetings and support renewal strategy, packaging, presentations, negotiations, renewal and RFP responses, and accurate Salesforce records. Strategic Planning: Support plans for client retention, growth, satisfaction, QBRs, and annual reviews. Reporting: Collaborate with reporting teams to develop monthly, quarterly, and annual reports and dashboards, review reports for accuracy and client outcomes, and use Salesforce consistently and accurately. Implementation and Service Delivery: Collaborate with implementation teams on new accounts and added services, improve the implementation process, and ensure implementation activities are completed on schedule. Qualifications: Bachelor's degree required. A master's degree in business, health administration, or a clinical specialty is a plus, or equivalent work experience in business development, account management, or customer support in software or financial services. At least 3-5 years in client-facing, project-management, or account-management roles and comfort working with all levels of a business. Experience with cloud SaaS solutions or web applications. Strong professional client communication. Healthcare experience preferred. Demonstrated consultative sales and client-relationship-management abilities. Strong time management, organization, planning, prioritization, influence, expectation management, quantitative skills, initiative, judgment, decision making, and problem solving. Understanding of SaaS business strategies. Ability to travel as needed. Maintain information-governance, corporate-compliance, security, privacy, and HIPAA responsibilities. Sharecare and its subsidiaries are Equal Opportunity Employers and E-Verify users."
+  },
+  "classification": {
+    "targetLane": "digital-health-client-success",
+    "evidenceMode": "resume-primary",
+    "primarySource": "resume",
+    "supportingSource": "portfolio",
+    "hardGateStatus": "pass",
+    "hardGates": [
+      {
+        "gate": "Bachelor's degree and at least 3-5 years of client-facing, project-management, or account-management experience",
+        "status": "pass",
+        "evidence": "BA from Rutgers University plus seven years of direct Fortune 500 pharma and healthcare account management and additional client-facing product work."
+      },
+      {
+        "gate": "Experience with cloud SaaS solutions or web applications",
+        "status": "pass",
+        "evidence": "Direct work on enterprise analytics, white-label web products, digital audit software, and current web-based AI workflow tools supports the stated web-application alternative without claiming a SaaS customer-success title."
+      },
+      {
+        "gate": "Required healthcare credential, clearance, location, or travel restriction",
+        "status": "not-applicable",
+        "evidence": "The public posting lists healthcare experience as preferred, requires no clinical credential or clearance, is remote, and states only that travel may be required."
+      }
+    ]
+  },
+  "requirements": [
+    {
+      "id": "client-relationship-management",
+      "text": "Manage high-level client relationships, expectations, requests, and ongoing account delivery.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Seven years managing Fortune 500 pharma and healthcare clients with $2M-$50M+ budgets.",
+        "One of two account consumer leads on FCB Health's largest pharma account across integrated channels, brand planning, and MLR review."
+      ],
+      "resumeTerms": [
+        "client relationships",
+        "account management"
+      ]
+    },
+    {
+      "id": "healthcare-domain",
+      "text": "Bring credible experience across healthcare settings and maintain privacy, compliance, and HIPAA awareness.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Eleven years across pharma and healthcare communications, including patient, HCP, oncology, CNS, psychiatry, cardiovascular, and metabolic work.",
+        "Current work includes FDA, HIPAA, and MLR workflows for pharma agency teams."
+      ],
+      "resumeTerms": [
+        "regulated healthcare",
+        "HIPAA"
+      ]
+    },
+    {
+      "id": "project-budget-delivery",
+      "text": "Manage ongoing and unplanned client deliverables on time and within budget while coordinating internal teams.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Managed $2M-$50M+ healthcare portfolios and translated client strategy into briefs, production requirements, timelines, and MLR-ready deliverables.",
+        "Coordinated account, strategy, creative, UX, development, finance, and operations stakeholders across complex regulated work."
+      ],
+      "resumeTerms": [
+        "budgets",
+        "cross-functional service delivery"
+      ]
+    },
+    {
+      "id": "reporting-insights",
+      "text": "Analyze data, develop reports and dashboards, and translate findings into focused recommendations and client-ready insights.",
+      "priority": "core",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Led enterprise analytics and data-visualization work used by 7,000+ users across 22 white-label brands.",
+        "Built the Digital Experience Audit workflow for channel scoring, benchmarks, recommendations, visualization, and presentation-ready client outputs."
+      ],
+      "resumeTerms": [
+        "reports and insights",
+        "recommendations"
+      ]
+    },
+    {
+      "id": "technology-utilization",
+      "text": "Use technical and business skills to increase client utilization and value from web or SaaS products.",
+      "priority": "core",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Enterprise analytics and white-label product work reached 7,000+ users across 22 brands.",
+        "Current client-led AI POCs translate business needs into working web products, demo flows, and adoption-focused workflows."
+      ],
+      "resumeTerms": [
+        "web products",
+        "product adoption"
+      ]
+    },
+    {
+      "id": "implementation-service-delivery",
+      "text": "Collaborate with implementation teams, improve service-delivery processes, and keep launches on schedule.",
+      "priority": "core",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Own product strategy, UX, front-end build, backend logic, demo readiness, and client iteration from first ask through working prototype.",
+        "Translated stakeholder and user needs into build-ready product and campaign experiences across healthcare and enterprise programs."
+      ],
+      "resumeTerms": [
+        "implementation",
+        "service delivery"
+      ]
+    },
+    {
+      "id": "renewal-retention-growth",
+      "text": "Support renewal strategy, negotiations, RFP responses, retention plans, upsell opportunities, and annual revenue goals.",
+      "priority": "core",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "resumeTerms": [
+        "contract renewal",
+        "client retention"
+      ]
+    },
+    {
+      "id": "qbr-voc-health-checks",
+      "text": "Create QBRs and annual reviews and gather Voice of the Customer through NPS and quarterly health checks.",
+      "priority": "core",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "resumeTerms": [
+        "QBR",
+        "NPS"
+      ]
+    },
+    {
+      "id": "salesforce-account-records",
+      "text": "Maintain accurate Salesforce account, financial, add-on, and renewal records.",
+      "priority": "core",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "resumeTerms": [
+        "Salesforce"
+      ]
+    }
+  ],
+  "fitGate": {
+    "supportedOverlap": [
+      "Seven years of direct Fortune 500 pharma and healthcare account management with $2M-$50M+ portfolios and high-touch client delivery.",
+      "Direct ownership of briefs, timelines, production requirements, budgets, and regulated deliverables across account, strategy, creative, UX, product, and development teams.",
+      "Deep digital-health context through 11 years of pharma and healthcare communications plus current FDA, HIPAA, and MLR workflow work.",
+      "Reporting and insight proof through enterprise analytics, dashboards, channel scoring, benchmarks, recommendations, and presentation-ready client outputs.",
+      "Web-product and implementation adjacency through enterprise platforms used by 7,000+ users across 22 brands and current client-led AI POCs delivered from discovery through working prototype."
+    ],
+    "unsupportedRequirements": [
+      "Formal ownership of contract renewals, retention strategy, renewal negotiations, RFP responses, upsell closes, or annual account-revenue goals is not documented.",
+      "Salesforce account administration, pipeline tracking, financial-record maintenance, and named customer-success-platform experience are not documented.",
+      "Formal QBR and annual-review ownership, NPS collection, Voice of the Customer programs, quarterly health checks, and SLA administration are not documented."
+    ],
+    "actualMismatches": [
+      "The documented account-management center is pharma agency and brand delivery rather than post-sale SaaS customer success with explicit renewal and expansion ownership.",
+      "The resume proves technology and web-product delivery, but not ownership of a cloud-SaaS book of business or its retention metrics."
+    ],
+    "missingEvidence": [
+      "Renewal rate, retention, expansion revenue, upsell, or client-health outcomes.",
+      "Salesforce usage, QBR cadence, NPS/VOC collection, SLA reporting, and RFP-response examples.",
+      "Named new-account implementation metrics or ongoing service-utilization improvements."
+    ],
+    "coverLetterBridge": {
+      "status": "recommended",
+      "rationale": "We can make the case with a cover letter by connecting seven years of healthcare account leadership, budgeted cross-functional delivery, enterprise reporting, and web-product fluency to Sharecare's need for trusted client coordination. The letter must acknowledge that the resume does not directly prove formal SaaS renewal, upsell, Salesforce, QBR, or NPS ownership."
+    },
+    "recommendation": "Proceed as adjacent. Lead with healthcare account leadership, complex client delivery, reporting-to-recommendation work, and web-product fluency. Do not imply direct ownership of renewals, retention, upsell revenue, Salesforce, QBRs, NPS, or SLAs."
+  },
+  "resume": {
+    "summary": "Healthcare account and client-strategy leader with 7+ years managing Fortune 500 pharma relationships and USD 2M-50M+ portfolios, backed by 15 years across regulated healthcare, enterprise analytics, and digital product delivery. I translate client needs, financial constraints, and performance data into recommendations, presentations, and coordinated action across strategy, creative, product, operations, and technical teams. My strongest fit for Sharecare is high-trust account management, web-product fluency, on-time and on-budget delivery, and making complex reporting usable.",
+    "skills": [
+      {
+        "label": "Healthcare Client & Account Management",
+        "description": "7+ years managing Fortune 500 pharma and healthcare client relationships, USD 2M-50M+ portfolios, brand planning, presentations, and high-touch delivery across FDA, HIPAA, and MLR environments"
+      },
+      {
+        "label": "Client Delivery & Financial Stewardship",
+        "description": "Briefs, scopes, budgets, timelines, production requirements, expectation management, issue resolution, and cross-functional service delivery"
+      },
+      {
+        "label": "Reports, Dashboards & Recommendations",
+        "description": "Enterprise analytics, channel scoring, benchmarks, reports and insights, data visualization, and presentation-ready client recommendations"
+      },
+      {
+        "label": "Web Products & Implementation",
+        "description": "Client discovery, web products, workflow translation, product adoption, prototype delivery, and coordination across product, design, engineering, finance, and operations"
+      }
+    ],
+    "roles": {
+      "hedgehox": [
+        "Convert pharma agency needs into web-based AI tools for MLR claim review, brief intake, scoping, review routing, submission capture, and FDA signal monitoring",
+        "Built Scope Generator for pharma agency finance and operations teams to manage regional rate cards, brands, sub-brands, and natural-language scope changes",
+        "Designed Claims Detector workflows that identify promotional claims, surface evidence gaps, and pre-populate audit-ready annotations before MLR submission"
+      ],
+      "one-block-away": [
+        "Build client-led AI POCs that turn unclear business questions into testable web products, demo flows, and roadmap decisions",
+        "Own client discovery, scope definition, UX, AI workflow design, front-end build, backend logic, demo readiness, and iteration from first ask through working prototype"
+      ],
+      "kinesso": [
+        "Scaled product design from 2 to 30 people across the US and Poland for enterprise analytics used by 7,000+ users across 22 white-label brands",
+        "Led UX and design-system strategy for MIE data visualization, dashboard building, brand theming, and reusable analytics components",
+        "Built the Digital Experience Audit workflow for performance data, channel scoring, benchmarks, reports and insights, recommendations, visualization, and presentation-ready client outputs"
+      ],
+      "omnicom": [
+        "Supported oncology accounts as a freelance UX designer, combining UX design and account-management experience to strengthen regulated healthcare work",
+        "Championed UX best practices across account, strategy, creative, and delivery conversations, translating brand goals into clearer user flows, content structure, and digital recommendations"
+      ],
+      "heartbeat": [
+        "Led UX research and experience strategy for pharma and healthcare work, translating stakeholder input, competitive audits, and user needs into digital product direction",
+        "Created journey maps, site maps, user flows, wireframes, and prototypes for patient, HCP, and internal brand-team experiences across regulated healthcare programs",
+        "Partnered with strategy, creative, account, and engineering teams to move UX recommendations from research findings into build-ready product and campaign experiences"
+      ],
+      "account-management": [
+        "7+ years managing Fortune 500 pharma and healthcare clients with USD 2M-50M+ budgets across CNS/neurology, psychiatry, cardiovascular/metabolic, and sleep/wakefulness brands including NUVIGIL, Namenda XR, Lipitor, and Zoloft",
+        "One of two account consumer leads on FCB Health's largest pharma account across TV, radio, digital, gaming, Times Square, unbranded campaigns, brand planning, and MLR review",
+        "Translated client and brand strategy into briefs, creative feedback, production requirements, timelines, and MLR-ready deliverables across account, creative, UX, and development teams",
+        "Coordinated high-volume client work across senior leadership, creative, strategy, production, UX, and development teams, surfacing risks early and keeping deliverables moving against deadlines and budgets"
+      ]
+    }
+  },
+  "hero": {
+    "eyebrow": "Sharecare Client Success Manager",
+    "tags": [
+      "Healthcare account leadership",
+      "Reporting to recommendations",
+      "Cross-functional product delivery"
+    ],
+    "intro": "Sharecare needs a client success manager who can protect high-value healthcare relationships while turning program data and client needs into clear action. I bring seven years managing Fortune 500 pharma accounts and $2M-$50M+ portfolios, enterprise analytics used across 22 brands by 7,000+ users, and current work translating regulated healthcare workflows into usable AI products. I am strongest where account trust, reporting, and cross-functional product delivery have to move together."
+  },
+  "contact": {
+    "prompt": "Hiring a client success manager who can strengthen healthcare relationships, make reporting actionable, and coordinate teams around client needs? Email is the fastest way to reach me.",
+    "signoff": "Healthcare relationships · actionable reporting · coordinated delivery"
+  },
+  "constraints": {
+    "doNotClaim": [
+      "Salesforce account administration",
+      "Formal QBR ownership",
+      "NPS or Voice of the Customer program ownership",
+      "Contract renewal negotiation",
+      "Quantified client retention",
+      "Upsell revenue ownership",
+      "RFP response ownership",
+      "SLA administration"
+    ],
+    "blockedTerms": [
+      "Salesforce administrator",
+      "owned renewals",
+      "closed upsells",
+      "managed NPS",
+      "owned QBRs"
+    ]
+  },
+  "privacy": {
+    "publicSafe": true,
+    "notes": "Contains only the public job description and sanitized resume and portfolio evidence. It excludes recruiter details, application answers, compensation boundaries, and private eligibility information."
+  },
+  "qa": {
+    "status": "qa-passed",
+    "builtAt": "2026-07-20T16:59:22.398Z",
+    "configInputSha256": "c818e11492eb76afb2c58977c2515cb66cdaf40c484b42a2d30bd6ca18f17124",
+    "sourceResumeSha256": "375cc6566f5bbad5b95be9da551dfe87824378fb252222409d29ef32d334ca25",
+    "artifactHashes": {
+      "routeSha256": "c05b30d67c4e22af5e1cbc5c83a5ec126bc33d28ccb88349336064f28743f682",
+      "resumePdfSha256": "145066acd44713b1ede2711e3fdeb9cef3f1cebb9f05a81eb2855da01b540bb9",
+      "scopedProjectSha256": {}
+    },
+    "renderer": {
+      "browser": {
+        "name": "chrome-headless-shell",
+        "version": "Google Chrome for Testing 149.0.7827.55"
+      },
+      "htmlPath": "tmp/tailored-resumes/sharecare-client-success-manager.html",
+      "pdfPath": "output/pdf/Wally-Mostafa-Sharecare-Client-Success-Manager-Resume.pdf"
+    },
+    "ats": {
+      "ok": true,
+      "pdfPath": "output/pdf/Wally-Mostafa-Sharecare-Client-Success-Manager-Resume.pdf",
+      "pageCount": 2,
+      "fileSize": 128863,
+      "annotations": [
+        {
+          "page": 1,
+          "uri": "mailto:wmostafa12@gmail.com"
+        },
+        {
+          "page": 1,
+          "uri": "https://linkedin.com/in/wallymo"
+        },
+        {
+          "page": 1,
+          "uri": "https://wallymo.github.io/sharecare-client-success-manager/"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/6748"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/4629"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.red-dot.org/project/dxa-digital-experience-audit-55219"
+        }
+      ],
+      "coverage": [
+        {
+          "id": "client-relationship-management",
+          "requirement": "Manage high-level client relationships, expectations, requests, and ongoing account delivery.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "client relationships",
+            "account management"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "healthcare-domain",
+          "requirement": "Bring credible experience across healthcare settings and maintain privacy, compliance, and HIPAA awareness.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "regulated healthcare",
+            "HIPAA"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "project-budget-delivery",
+          "requirement": "Manage ongoing and unplanned client deliverables on time and within budget while coordinating internal teams.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "budgets",
+            "cross-functional service delivery"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "reporting-insights",
+          "requirement": "Analyze data, develop reports and dashboards, and translate findings into focused recommendations and client-ready insights.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "reports and insights",
+            "recommendations"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "technology-utilization",
+          "requirement": "Use technical and business skills to increase client utilization and value from web or SaaS products.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "web products",
+            "product adoption"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "implementation-service-delivery",
+          "requirement": "Collaborate with implementation teams, improve service-delivery processes, and keep launches on schedule.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "implementation",
+            "service delivery"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "renewal-retention-growth",
+          "requirement": "Support renewal strategy, negotiations, RFP responses, retention plans, upsell opportunities, and annual revenue goals.",
+          "priority": "core",
+          "evidenceStatus": "none",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "contract renewal",
+            "client retention"
+          ]
+        },
+        {
+          "id": "qbr-voc-health-checks",
+          "requirement": "Create QBRs and annual reviews and gather Voice of the Customer through NPS and quarterly health checks.",
+          "priority": "core",
+          "evidenceStatus": "none",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "QBR",
+            "NPS"
+          ]
+        },
+        {
+          "id": "salesforce-account-records",
+          "requirement": "Maintain accurate Salesforce account, financial, add-on, and renewal records.",
+          "priority": "core",
+          "evidenceStatus": "none",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "Salesforce"
+          ]
+        }
+      ],
+      "failures": [],
+      "warnings": []
+    },
+    "route": {
+      "viewports": [
+        {
+          "name": "desktop",
+          "screenshot": "tmp/qa/sharecare-client-success-manager/desktop.png",
+          "errors": []
+        },
+        {
+          "name": "mobile",
+          "screenshot": "tmp/qa/sharecare-client-success-manager/mobile.png",
+          "errors": []
+        }
+      ],
+      "errors": []
+    }
+  }
+}

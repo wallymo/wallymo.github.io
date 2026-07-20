@@ -964,6 +964,26 @@
       "publishStatus": "tracked-unverified"
     },
     {
+      "workflowVersion": 2,
+      "slug": "sharecare-client-success-manager",
+      "roleTitle": "Sharecare Client Success Manager",
+      "artifactStem": "Sharecare-Client-Success-Manager",
+      "configPath": "scripts/packages/sharecare-client-success-manager.json",
+      "targetLane": "digital-health-client-success",
+      "evidenceMode": "resume-primary",
+      "fitClass": "adjacent",
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-01.html",
+        "project-06.html",
+        "project-03.html"
+      ],
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Sharecare-Client-Success-Manager-Resume.pdf",
+      "publishStatus": "local-only",
+      "qaStatus": "qa-passed",
+      "builtAt": "2026-07-20T16:59:22.398Z"
+    },
+    {
       "slug": "smartsheet-ux-research-manager",
       "roleTitle": "Smartsheet Manager of UX Research",
       "fitClass": "unclassified",
