@@ -396,6 +396,26 @@
       "publishStatus": "tracked-unverified"
     },
     {
+      "workflowVersion": 2,
+      "slug": "cotton-incorporated-manager-trade-marketing",
+      "roleTitle": "Cotton Incorporated Manager, Trade Marketing",
+      "artifactStem": "Cotton-Incorporated-Manager-Trade-Marketing",
+      "configPath": "scripts/packages/cotton-incorporated-manager-trade-marketing.json",
+      "targetLane": "trade-marketing-and-integrated-program-delivery",
+      "evidenceMode": "resume-primary",
+      "fitClass": "adjacent",
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-06.html",
+        "project-04.html",
+        "project-01.html"
+      ],
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Cotton-Incorporated-Manager-Trade-Marketing-Resume.pdf",
+      "publishStatus": "local-only",
+      "qaStatus": "qa-passed",
+      "builtAt": "2026-07-20T19:50:09.722Z"
+    },
+    {
       "slug": "creative-circle-agile-product-owner",
       "roleTitle": "Creative Circle Agile Product Owner",
       "fitClass": "adjacent",

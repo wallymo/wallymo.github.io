@@ -1,0 +1,547 @@
+{
+  "workflowVersion": 2,
+  "contractRevision": 2,
+  "slug": "cotton-incorporated-manager-trade-marketing",
+  "roleTitle": "Cotton Incorporated Manager, Trade Marketing",
+  "artifactStem": "Cotton-Incorporated-Manager-Trade-Marketing",
+  "fitClass": "adjacent",
+  "routeMode": "canonical-projects",
+  "selectedProjects": [
+    "project-06.html",
+    "project-04.html",
+    "project-01.html"
+  ],
+  "job": {
+    "company": "Cotton Incorporated",
+    "roleTitle": "Manager, Trade Marketing",
+    "jobId": "76b3e8d72c5d4d0a",
+    "jobUrl": "https://www.indeed.com/viewjob?jk=76b3e8d72c5d4d0a",
+    "sourceChannel": "Indeed and chat-pasted JD",
+    "dateCaptured": "2026-07-20",
+    "location": "Hybrid remote in Cary, NC 27513",
+    "atsVendor": "Indeed",
+    "rawJd": "Summary:\n\nThis position is responsible for initiating, managing, and executing trade-focused marketing projects and programs to support the overall objectives of the Marketing division of Cotton Incorporated. Primary duties include but are not limited to: developing and executing effective marketing programs, campaigns, and go-to-market initiatives to influence the use of cotton in textile markets; generating creative, innovative ideas while collaborating with cross-functional teams to implement integrated marketing campaigns; translating technical, product, and market information into compelling marketing tools and industry resources; management and execution of marketing events and programs, and representing Cotton Incorporated at industry events. The position will work internally and externally with textile companies, industry partners and supporting vendors to accomplish assigned goals.\n\nCore Functions:\n\n- Initiate, manage, and execute strategic marketing projects and programs that support division goals and promote the use of cotton across textile, apparel, and home markets\n- Develop and implement integrated marketing initiatives, product launches, and promotional programs targeting brands, retailers, manufacturers, and other industry stakeholders\n- Translate technical textile, product, and market information into clear, compelling marketing tools, educational resources, and customer-facing content\n- Collaborate cross-functionally with internal teams, researchers, technical experts, and external partners to develop coordinated marketing campaigns and industry programs\n- Support the strategic coordination and execution of domestic and international trade shows, conferences, customer events, and industry engagement activities in collaboration with internal teams and external partners\n- Research and identify emerging industry trends, technologies, and market opportunities to support new marketing concepts, messaging, and strategic initiatives\n- Plan, coordinate, and execute trade shows, conferences, customer events, product showcases, tours, and other industry engagement activities globally\n- Manage relationships with external agencies, consultants, suppliers, and vendors to support project execution and marketing objectives\n- Represent Cotton Incorporated at industry meetings, events, workshops, and conferences through presentations, networking, and stakeholder engagement\n- Participate in public speaking opportunities and industry education initiatives to communicate Cotton Incorporated programs, technologies, and market insights to diverse audiences\n\nJob Requirements:\n\n- B.A. or B.S. in marketing, textiles, apparel management, or a related field\n- Minimum 5 years' relevant professional experience, apparel and textiles preferred\n- Experience with brand and creative product marketing, event marketing, and project management\n- Experience with public speaking to a wide variety of audiences and diverse levels (e.g., manager to corporate executive-level)\n- Experience with vendor management\n- Ability to think creatively about marketing challenges and develop and execute project solutions\n- Ability to work simultaneously on a diverse array of assignments and manage multiple projects\n- Ability to speak publicly to a wide variety of audiences\n- Ability to work with outside vendors to enhance marketing efforts\n- Demonstrated aptitude to work with technical content and subjects\n- Strong work ethic combined with self-motivation and personal initiative\n- Ability to work well within a team\n- Excellent written and verbal communication skills\n- Excellent organizational skills and attention to detail\n- Proficiency in Microsoft Office Suite (Word, Excel, PowerPoint and Outlook)\n- Proficiency in Adobe Photoshop and Illustrator, a plus\n- This position may require domestic and international travel up to 20% of the time\n\nWorking Conditions / Physical Demands:\n\n- General office environment with quiet to moderate noise level\n- Varied working conditions off-site due to travel\n- Business casual dress clothes required\n- Regularly required to sit and use hands to type and grasp, with frequent standing, walking, and bending/twisting at the neck/waist\n- Occasionally required to push, pull, and reach above/below shoulder level\n- Frequently required to lift and/or carry up to 50 pounds\n- Frequently required to have face-to-face and telephone interaction with internal staff and external contacts\n- Specific vision requirements include close vision, distance vision, peripheral vision, depth perception, and ability to adjust focus\n\nCotton Incorporated is an Equal Opportunity Employer. This Employer participates in E-Verify.\n\nBenefits: 401(k), dental insurance, health insurance, life insurance, paid time off, parental leave, retirement plan, vision insurance.\n\nApplication question: What are your minimum salary requirements?\n\nWork Location: Hybrid remote in Cary, NC 27513"
+  },
+  "classification": {
+    "targetLane": "trade-marketing-and-integrated-program-delivery",
+    "evidenceMode": "resume-primary",
+    "primarySource": "Resume evidence from integrated pharma marketing, client strategy, technical product translation, and cross-functional program delivery",
+    "supportingSource": "Portfolio evidence from the Digital Experience Audit, research roadshows and workshops, and regulated pharma AI products",
+    "hardGateStatus": "pass",
+    "hardGates": [
+      {
+        "gate": "B.A. or B.S. in marketing, textiles, apparel management, or a related field",
+        "status": "pass",
+        "evidence": "BA in Labor Studies and Employee Relations from Rutgers University; the degree is in an adjacent business and organizational field rather than a named marketing or textile discipline."
+      },
+      {
+        "gate": "Minimum five years of relevant professional experience",
+        "status": "pass",
+        "evidence": "Seven-plus years managing integrated Fortune 500 pharma and healthcare marketing programs, reinforced by later product, research, and AI implementation leadership."
+      },
+      {
+        "gate": "Hybrid work in Cary, North Carolina",
+        "status": "pass",
+        "evidence": "Current resume location is Raleigh, North Carolina, within the Cary hybrid-work market."
+      },
+      {
+        "gate": "Domestic and international travel up to 20 percent and stated physical demands",
+        "status": "not-applicable",
+        "evidence": "These operational requirements must be confirmed directly during the application process; no availability or physical-capability claim is added to public recruiter-facing artifacts."
+      }
+    ]
+  },
+  "requirements": [
+    {
+      "id": "integrated-marketing-programs",
+      "text": "Initiate, manage, and execute integrated marketing campaigns, go-to-market initiatives, product launches, and promotional programs.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Seven-plus years managing Fortune 500 pharma and healthcare programs across TV, radio, digital, gaming, Times Square, unbranded campaigns, brand planning, and regulated review.",
+        "Translated client and brand strategy into briefs, creative feedback, production requirements, timelines, and coordinated deliverables across account, creative, UX, and development teams."
+      ],
+      "resumeTerms": [
+        "integrated marketing",
+        "go-to-market initiatives",
+        "brand marketing",
+        "promotional programs"
+      ]
+    },
+    {
+      "id": "technical-content-translation",
+      "text": "Translate technical, product, and market information into compelling marketing tools, educational resources, and customer-facing content.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Eleven years in regulated pharma and healthcare communications translating scientific, brand, regulatory, and user inputs into briefs, campaigns, digital experiences, and MLR-ready deliverables.",
+        "Built technical product and audit workflows that turn data, benchmarks, evidence gaps, and recommendations into presentation-ready outputs and usable decision tools."
+      ],
+      "resumeTerms": [
+        "technical content",
+        "marketing tools",
+        "educational resources",
+        "customer-facing content"
+      ]
+    },
+    {
+      "id": "cross-functional-collaboration",
+      "text": "Collaborate with internal teams, researchers, technical experts, industry partners, and supporting agencies to deliver coordinated marketing programs.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Worked across account, strategy, creative, UX, research, product, engineering, operations, and client teams on regulated campaigns and enterprise products.",
+        "Scaled a distributed product-design team from two to 30 across the United States and Poland while supporting 7,000-plus users and 22 white-label brands."
+      ],
+      "resumeTerms": [
+        "cross-functional teams",
+        "researchers",
+        "technical experts",
+        "external partners"
+      ]
+    },
+    {
+      "id": "industry-research-and-market-opportunity",
+      "text": "Research emerging trends, technologies, and market opportunities to develop new concepts, messaging, and strategic initiatives.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Led UX research and experience strategy by translating stakeholder input, competitive audits, and user needs into product and campaign direction.",
+        "Current AI product work evaluates new technologies and turns ambiguous market and client questions into testable product surfaces, demo flows, and roadmap decisions."
+      ],
+      "resumeTerms": [
+        "industry trends",
+        "market opportunities",
+        "competitive research",
+        "strategic initiatives"
+      ]
+    },
+    {
+      "id": "events-and-trade-shows",
+      "text": "Plan and execute domestic and international trade shows, conferences, customer events, product showcases, tours, and related engagement activities.",
+      "priority": "core",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Portfolio documents a stakeholder research roadshow, reusable presentation tools, and workshops that connected research to a 20-plus-product marketing-intelligence suite.",
+        "Integrated campaign experience includes Times Square activation work and presentation-ready client materials, but direct trade-show logistics ownership is not documented."
+      ],
+      "resumeTerms": [
+        "trade shows",
+        "conferences",
+        "customer events",
+        "product showcases"
+      ]
+    },
+    {
+      "id": "vendor-management",
+      "text": "Manage external agencies, consultants, suppliers, and vendors to support project execution and marketing goals.",
+      "priority": "core",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "resumeTerms": [
+        "vendor management",
+        "supplier management",
+        "external consultants"
+      ]
+    },
+    {
+      "id": "public-speaking-and-industry-education",
+      "text": "Represent Cotton Incorporated through presentations, networking, public speaking, workshops, and industry education.",
+      "priority": "core",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Portfolio documents stakeholder roadshows, workshops, executive-facing presentations, demo narratives, and an awards-submission video written and directed by the candidate.",
+        "Public speaking to broad external industry audiences is not explicitly documented."
+      ],
+      "resumeTerms": [
+        "public speaking",
+        "industry presentations",
+        "workshops",
+        "stakeholder engagement"
+      ]
+    },
+    {
+      "id": "creative-product-marketing",
+      "text": "Bring brand and creative product marketing, event marketing, project management, and strong written and verbal communication.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Direct brand and creative marketing experience spans integrated pharma campaigns, brand planning, creative briefs, production requirements, and award-winning non-branded work.",
+        "Later experience adds product storytelling, technical UX, client-ready presentations, and end-to-end delivery across enterprise and startup environments."
+      ],
+      "resumeTerms": [
+        "creative product marketing",
+        "project management",
+        "written and verbal communication"
+      ]
+    },
+    {
+      "id": "textiles-and-apparel",
+      "text": "Bring professional experience in apparel and textiles.",
+      "priority": "preferred",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "resumeTerms": [
+        "textile marketing",
+        "apparel marketing",
+        "cotton industry"
+      ]
+    },
+    {
+      "id": "office-and-adobe-tools",
+      "text": "Use Microsoft Office proficiently; Adobe Photoshop and Illustrator are a plus.",
+      "priority": "context",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "resumeTerms": [
+        "Microsoft Word",
+        "Microsoft Excel",
+        "Microsoft PowerPoint",
+        "Microsoft Outlook",
+        "Adobe Photoshop",
+        "Adobe Illustrator"
+      ]
+    }
+  ],
+  "fitGate": {
+    "supportedOverlap": [
+      "Seven-plus years of direct integrated marketing and account leadership for Fortune 500 pharma brands, with 2 million to more than 50 million dollars in program responsibility across TV, radio, digital, gaming, Times Square, brand planning, and regulated review.",
+      "Strong technical-to-market translation across pharmaceutical science, regulatory requirements, enterprise analytics, research findings, and AI product behavior.",
+      "Cross-functional delivery across account, strategy, creative, research, UX, product, engineering, finance, operations, and client stakeholders.",
+      "Customer-facing marketing-tool proof through briefs, campaigns, websites, dashboards, benchmarks, recommendations, data visualization, and presentation-ready outputs.",
+      "Relevant presentation and education evidence through research roadshows, workshops, executive-facing materials, demo narratives, and creative video direction.",
+      "Local fit for a Cary hybrid role from the current Raleigh, North Carolina location."
+    ],
+    "unsupportedRequirements": [
+      "No professional cotton, textile, apparel, home-goods, manufacturing, retailer, or supply-chain marketing experience is evidenced.",
+      "Direct end-to-end ownership of domestic or international trade-show, conference, tour, and customer-event logistics is not evidenced.",
+      "External vendor, supplier, or consultant management is not explicitly evidenced.",
+      "Public speaking to broad external industry audiences is not explicitly evidenced.",
+      "Microsoft Office, Adobe Photoshop, and Adobe Illustrator proficiency is not named in the current resume or portfolio evidence."
+    ],
+    "actualMismatches": [
+      "The role is centered on textile-industry trade marketing, while the candidate's industry depth is pharma, healthcare, enterprise analytics, and AI products.",
+      "The most direct integrated-campaign operating experience is from 2011 to 2018; later work moved into UX, product leadership, and AI implementation."
+    ],
+    "missingEvidence": [
+      "Named examples of vendor selection, contracting, budget control, and delivery oversight.",
+      "Named trade shows, conferences, tours, or product showcases managed from planning through on-site execution.",
+      "Audience size, setting, and frequency for public speaking or external industry presentations.",
+      "Current hands-on proficiency with the required Microsoft Office applications and the preferred Adobe applications.",
+      "Confirmation of travel availability and ability to satisfy the stated physical demands."
+    ],
+    "coverLetterBridge": {
+      "status": "recommended",
+      "rationale": "We can make the case with a cover letter by connecting seven-plus years of integrated brand marketing, regulated technical translation, multimillion-dollar client programs, research roadshows, workshops, and cross-functional product storytelling to Cotton Incorporated's need for clear industry education and coordinated trade programs. The cover letter must acknowledge the lack of textile-sector tenure and direct trade-show and vendor-management proof rather than implying experience that is not documented."
+    },
+    "recommendation": "Proceed as adjacent with narrow, honest positioning. Lead with integrated brand-program leadership, technical product storytelling, research and presentation tools, and cross-functional execution. Do not claim textile-industry experience, trade-show logistics ownership, vendor management, or broad external public speaking without additional evidence."
+  },
+  "resume": {
+    "summary": "Integrated marketing and client-strategy leader with 15 years across brand campaigns, technical product storytelling, enterprise programs, and regulated communications. I spent 7+ years managing Fortune 500 pharma marketing programs with USD 2M-50M+ budgets across TV, radio, digital, gaming, Times Square, and unbranded initiatives, then expanded into enterprise product, research, and AI implementation. My strength is translating complex information into clear tools, presentations, and coordinated programs that move teams and stakeholders from strategy to execution.",
+    "skills": [
+      {
+        "label": "Integrated Brand Marketing & Campaign Delivery",
+        "description": "Brand planning, integrated marketing initiatives, promotional programs, creative briefs, production requirements, timelines, regulated review, and coordinated execution across TV, radio, digital, gaming, and experiential work"
+      },
+      {
+        "label": "Technical Content & Product Storytelling",
+        "description": "Technical and regulated information translated into marketing tools, educational resources, customer-facing content, websites, data visualizations, recommendation workflows, and presentation narratives"
+      },
+      {
+        "label": "Program & Stakeholder Management",
+        "description": "USD 2M-50M+ client programs, project management, multiple workstreams, cross-functional teams, creative and technical delivery, distributed teams, documentation, and stakeholder adoption"
+      },
+      {
+        "label": "Research, Presentations & Creative Delivery",
+        "description": "Competitive research, industry trends, market opportunities, strategic initiatives, stakeholder roadshows, workshops, executive presentations, demo narratives, and clear written and verbal communication"
+      }
+    ],
+    "roles": {
+      "hedgehox": [
+        "Converted complex pharma agency and regulatory needs into client-facing AI tools for claims review, brief intake, scoping, review routing, submission capture, and FDA signal monitoring",
+        "Designed the Xenagos Bio website from scratch, translating scientific positioning into a clear investor-facing structure, visual direction, and design-system handoff",
+        "Secured an investor for proprietary Claims Detection software by building the functional POC, shaping the presentation narrative, and iterating with investors",
+        "Built Scope Generator for pharma agency finance and operations teams to manage regional rate cards, brands, sub-brands, and natural-language scope changes"
+      ],
+      "one-block-away": [
+        "Build client-led POCs that turn unclear business and market questions into testable product surfaces, demo flows, messaging, and roadmap decisions",
+        "Built ListingPal's AI listing-generation POC and landing page, turning basic property inputs into listing copy, social posts, ad copy, styling direction, and MLS/SEO-ready language in under 90 seconds",
+        "Currently building the website and sponsor strategy for a Tunisia youth soccer program, positioning the project for player advancement, community support, and donor outreach",
+        "Own strategy, UX, workflow design, front-end build, backend logic, presentation readiness, and client iteration from first ask through working prototype"
+      ],
+      "kinesso": [
+        "Scaled product design from 2 to 30 people across the US and Poland for enterprise marketing analytics used by 7,000+ users across 22 white-label brands",
+        "Built the Digital Experience Audit workflow for channel scoring, benchmarks, recommendations, visualization, and presentation-ready client outputs",
+        "Built the UX research discipline across a 20+ product marketing-intelligence suite using stakeholder roadshows, repeatable tools, workshops, Figma documentation, and feedback loops",
+        "Wrote and directed the Digital Experience Audit awards-submission video, helping explain a complex product story that earned Red Dot and Indigo recognition"
+      ],
+      "omnicom": [
+        "Supported oncology accounts by combining UX design and account-management experience to strengthen regulated healthcare programs",
+        "Partnered across account, strategy, creative, and delivery teams, translating brand goals into clearer content structure, user flows, and digital recommendations"
+      ],
+      "heartbeat": [
+        "Led research and experience strategy for pharma and healthcare work, translating stakeholder input, competitive audits, and user needs into digital product and campaign direction",
+        "Created journey maps, content structures, user flows, wireframes, and prototypes for patient, healthcare-professional, and internal brand-team programs",
+        "Partnered with strategy, creative, account, and engineering teams to move recommendations from research findings into build-ready product and campaign experiences"
+      ],
+      "account-management": [
+        "Managed Fortune 500 pharma and healthcare clients with USD 2M-50M+ budgets across CNS, neurology, psychiatry, cardiovascular, metabolic, and sleep-wakefulness brands",
+        "Served as one of two account consumer leads on FCB Health's largest pharma account across TV, radio, digital, gaming, Times Square, unbranded campaigns, brand planning, and MLR review",
+        "Translated client and brand strategy into briefs, creative feedback, production requirements, timelines, and regulated deliverables across account, creative, UX, and development teams"
+      ]
+    }
+  },
+  "hero": {
+    "eyebrow": "Cotton Incorporated Manager, Trade Marketing",
+    "tags": [
+      "Integrated brand programs",
+      "Technical product storytelling",
+      "Research, tools & presentations"
+    ],
+    "intro": "Cotton Incorporated needs a marketer who can turn technical product and market information into programs that influence brands, retailers, and manufacturers. I bring 7+ years leading integrated Fortune 500 campaigns with USD 2M-50M+ budgets, a track record translating regulated and technical subjects into clear client-facing tools, and enterprise roadshows, workshops, and presentation systems that aligned teams around new product ideas."
+  },
+  "contact": {
+    "prompt": "Hiring a trade marketing leader who can translate complex product information into clear programs, tools, and stakeholder engagement? I would welcome a conversation about bringing that experience to Cotton Incorporated. Email is the fastest way to reach me.",
+    "signoff": "Integrated programs · technical storytelling · stakeholder engagement"
+  },
+  "constraints": {
+    "doNotClaim": [
+      "Professional textile, apparel, home-goods, or cotton-industry marketing experience",
+      "Direct ownership of domestic or international trade-show logistics",
+      "External vendor, supplier, or consultant management",
+      "Public speaking to broad external industry audiences",
+      "Named Microsoft Office or Adobe application proficiency"
+    ],
+    "blockedTerms": [
+      "textile marketing experience",
+      "trade show management",
+      "vendor management",
+      "industry public speaker",
+      "Adobe Photoshop",
+      "Adobe Illustrator"
+    ]
+  },
+  "privacy": {
+    "publicSafe": true,
+    "notes": "Contains only public job-posting text and sanitized evidence. It excludes recruiter contact details, application answers, salary requirements, private eligibility details, and unverified operational availability."
+  },
+  "qa": {
+    "status": "qa-passed",
+    "builtAt": "2026-07-20T19:50:09.722Z",
+    "configInputSha256": "3420f0011e6bdb7b28521eefb548aad954fcf337f7ee10a993bcfb0ef4f12faa",
+    "sourceResumeSha256": "375cc6566f5bbad5b95be9da551dfe87824378fb252222409d29ef32d334ca25",
+    "artifactHashes": {
+      "routeSha256": "ba42601b7746b2ae2b133d9c7b8d3f945d87bdd22ce512b1fa48ffa0a751ca8d",
+      "resumePdfSha256": "a1d7387d152b1fb3b76035d98f2bdf41095b644f7f4ba7d38f3612aca7177126",
+      "scopedProjectSha256": {}
+    },
+    "renderer": {
+      "browser": {
+        "name": "chrome-headless-shell",
+        "version": "Google Chrome for Testing 149.0.7827.55"
+      },
+      "htmlPath": "tmp/tailored-resumes/cotton-incorporated-manager-trade-marketing.html",
+      "pdfPath": "output/pdf/Wally-Mostafa-Cotton-Incorporated-Manager-Trade-Marketing-Resume.pdf"
+    },
+    "ats": {
+      "ok": true,
+      "pdfPath": "output/pdf/Wally-Mostafa-Cotton-Incorporated-Manager-Trade-Marketing-Resume.pdf",
+      "pageCount": 2,
+      "fileSize": 131717,
+      "annotations": [
+        {
+          "page": 1,
+          "uri": "mailto:wmostafa12@gmail.com"
+        },
+        {
+          "page": 1,
+          "uri": "https://linkedin.com/in/wallymo"
+        },
+        {
+          "page": 1,
+          "uri": "https://wallymo.github.io/cotton-incorporated-manager-trade-marketing/"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/6748"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/4629"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.red-dot.org/project/dxa-digital-experience-audit-55219"
+        }
+      ],
+      "coverage": [
+        {
+          "id": "integrated-marketing-programs",
+          "requirement": "Initiate, manage, and execute integrated marketing campaigns, go-to-market initiatives, product launches, and promotional programs.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "integrated marketing",
+            "brand marketing",
+            "promotional programs"
+          ],
+          "missingTerms": [
+            "go-to-market initiatives"
+          ]
+        },
+        {
+          "id": "technical-content-translation",
+          "requirement": "Translate technical, product, and market information into compelling marketing tools, educational resources, and customer-facing content.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "technical content",
+            "marketing tools",
+            "educational resources",
+            "customer-facing content"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "cross-functional-collaboration",
+          "requirement": "Collaborate with internal teams, researchers, technical experts, industry partners, and supporting agencies to deliver coordinated marketing programs.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "cross-functional teams"
+          ],
+          "missingTerms": [
+            "researchers",
+            "technical experts",
+            "external partners"
+          ]
+        },
+        {
+          "id": "industry-research-and-market-opportunity",
+          "requirement": "Research emerging trends, technologies, and market opportunities to develop new concepts, messaging, and strategic initiatives.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "industry trends",
+            "market opportunities",
+            "competitive research",
+            "strategic initiatives"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "events-and-trade-shows",
+          "requirement": "Plan and execute domestic and international trade shows, conferences, customer events, product showcases, tours, and related engagement activities.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "trade shows",
+            "conferences",
+            "customer events",
+            "product showcases"
+          ]
+        },
+        {
+          "id": "vendor-management",
+          "requirement": "Manage external agencies, consultants, suppliers, and vendors to support project execution and marketing goals.",
+          "priority": "core",
+          "evidenceStatus": "none",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "vendor management",
+            "supplier management",
+            "external consultants"
+          ]
+        },
+        {
+          "id": "public-speaking-and-industry-education",
+          "requirement": "Represent Cotton Incorporated through presentations, networking, public speaking, workshops, and industry education.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "workshops"
+          ],
+          "missingTerms": [
+            "public speaking",
+            "industry presentations",
+            "stakeholder engagement"
+          ]
+        },
+        {
+          "id": "creative-product-marketing",
+          "requirement": "Bring brand and creative product marketing, event marketing, project management, and strong written and verbal communication.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "project management",
+            "written and verbal communication"
+          ],
+          "missingTerms": [
+            "creative product marketing"
+          ]
+        },
+        {
+          "id": "textiles-and-apparel",
+          "requirement": "Bring professional experience in apparel and textiles.",
+          "priority": "preferred",
+          "evidenceStatus": "none",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "textile marketing",
+            "apparel marketing",
+            "cotton industry"
+          ]
+        },
+        {
+          "id": "office-and-adobe-tools",
+          "requirement": "Use Microsoft Office proficiently; Adobe Photoshop and Illustrator are a plus.",
+          "priority": "context",
+          "evidenceStatus": "none",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "Microsoft Word",
+            "Microsoft Excel",
+            "Microsoft PowerPoint",
+            "Microsoft Outlook",
+            "Adobe Photoshop",
+            "Adobe Illustrator"
+          ]
+        }
+      ],
+      "failures": [],
+      "warnings": [
+        "integrated-marketing-programs: supported core language missing from the PDF: go-to-market initiatives",
+        "cross-functional-collaboration: supported core language missing from the PDF: researchers, technical experts, external partners",
+        "events-and-trade-shows: supported core language missing from the PDF: trade shows, conferences, customer events, product showcases",
+        "public-speaking-and-industry-education: supported core language missing from the PDF: public speaking, industry presentations, stakeholder engagement",
+        "creative-product-marketing: supported core language missing from the PDF: creative product marketing"
+      ]
+    },
+    "route": {
+      "viewports": [
+        {
+          "name": "desktop",
+          "screenshot": "tmp/qa/cotton-incorporated-manager-trade-marketing/desktop.png",
+          "errors": []
+        },
+        {
+          "name": "mobile",
+          "screenshot": "tmp/qa/cotton-incorporated-manager-trade-marketing/mobile.png",
+          "errors": []
+        }
+      ],
+      "errors": []
+    }
+  }
+}
