@@ -1,0 +1,432 @@
+{
+  "workflowVersion": 2,
+  "contractRevision": 2,
+  "slug": "precision-aq-project-coordinator",
+  "roleTitle": "Precision AQ Project Coordinator",
+  "artifactStem": "Precision-AQ-Project-Coordinator",
+  "fitClass": "adjacent",
+  "routeMode": "canonical-projects",
+  "selectedProjects": [
+    "project-01.html",
+    "project-06.html",
+    "project-03.html"
+  ],
+  "job": {
+    "company": "Precision AQ",
+    "roleTitle": "Project Coordinator",
+    "sourceChannel": "chat-pasted-jd",
+    "dateCaptured": "2026-07-20",
+    "location": "Not stated in the pasted job description",
+    "atsVendor": "unknown",
+    "rawJd": "Position Summary: Precision AQ is looking for a Project Harmonizer who is ready to hit the ground running, stay organized, and help keep projects moving forward. As a Project Coordinator, the employee will support projects from initiation through completion, learning how to manage timelines, budgets, and deliverables while ensuring quality standards are met. The role assists in driving workflows, maintaining clear communication across teams, and keeping project details organized in a collaborative environment. Core Responsibilities: Support day-to-day project activities on assigned accounts, including timelines, status reports, hot sheets, and project routing. Collaborate with team members to maintain open communication, anticipate challenges, and contribute to solutions. Assist with Workfront tasks, including project setup, tracking, reporting, planned hours, and processes. Support programs totaling USD 1M-2M and, upon growth in the role, potentially manage USD 1M-1.5M with oversight. Up to 50 percent of time may be spent on administrative support and duties, with expectations aligned with the manager. Support budget tracking and reporting in partnership with project management, Account, and Finance to ensure accuracy and profitability. Engage in mentorship and training to develop operational and cross-departmental knowledge, collaboration skills, and project-management craft. Promote Precision Principles: Client Service, Purpose, Accountability, Mutual Respect, and Collaboration. Project Coordination: Assist in scheduling and facilitating internal status and kickoff meetings. Deliver proactive updates on timelines and resourcing under guidance while developing the ability to anticipate needs and contribute to solutions. Learn and maintain familiarity with agency framework, clients, and regulatory processes. Help navigate workflow challenges through collaboration, operational efficiency, and accountability. Encourage candid communication during project planning and execution. Learn to identify, assess, and mitigate project risks through observation, proactive escalation, critical questions, alternatives, and possible solutions. Career and Relationship Development: Participate in onboarding and training to learn agency processes, systems, and project-management best practices. Engage in mentorship with senior team members. Collaborate with peers and cross-functional teams to understand workflows and contribute to a positive, team-first environment. Qualifications: A bachelor's degree in marketing, communications, advertising, or a similar field is preferred. One or more years of experience in a professional environment is preferred. Healthcare, pharmaceutical, or related life-sciences experience is a plus. Skills: Experience with Microsoft Office Suite and the Mac operating system. Competencies: collaboration, adaptability, initiative with managerial support, and accountability. Compensation: reasonable estimate of the current range is USD 40,000-60,000. The role is eligible for a discretionary annual bonus, health insurance, retirement savings benefits, life insurance and disability benefits, parental leave, and paid time off. Precision Medicine Group is an Equal Opportunity Employer. Application data is stored in accordance with the company's Privacy Policy and applicable California privacy notice. Applicants requiring a reasonable accommodation may contact Precision Medicine Group through its published HR channel. Precision Medicine Group warns applicants that it will never request payment, banking details, or other sensitive financial information during recruiting."
+  },
+  "classification": {
+    "targetLane": "pharma-agency-project-coordination",
+    "evidenceMode": "resume-primary",
+    "primarySource": "resume",
+    "supportingSource": "portfolio",
+    "hardGateStatus": "pass",
+    "hardGates": [
+      {
+        "gate": "Bachelor's degree in marketing, communications, advertising, or a similar field preferred",
+        "status": "pass",
+        "evidence": "BA from Rutgers University plus 15 years of directly relevant professional experience across pharma account management, healthcare communications, product delivery, and agency workflows."
+      },
+      {
+        "gate": "One or more years in a professional environment, with healthcare, pharmaceutical, or life-sciences experience preferred",
+        "status": "pass",
+        "evidence": "Seven years of direct Fortune 500 pharma account management and 11 years across pharma and healthcare communications substantially exceed the preferred experience threshold."
+      },
+      {
+        "gate": "Required location, work authorization, license, clearance, or professional credential",
+        "status": "not-applicable",
+        "evidence": "The pasted public job description states no location, work-authorization, license, clearance, or certification requirement."
+      }
+    ]
+  },
+  "requirements": [
+    {
+      "id": "project-coordination",
+      "text": "Support projects from initiation through completion across timelines, deliverables, routing, and quality standards.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Seven years translating pharma client and brand strategy into briefs, production requirements, timelines, and MLR-ready deliverables.",
+        "Coordinated complex work across account, creative, strategy, production, UX, development, senior leadership, and clients."
+      ],
+      "resumeTerms": [
+        "project coordination",
+        "timelines and deliverables"
+      ]
+    },
+    {
+      "id": "budget-tracking",
+      "text": "Support USD 1M-2M programs and partner with project management, Account, and Finance on budget tracking and reporting.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Managed Fortune 500 pharma and healthcare portfolios with USD 2M-50M+ budgets.",
+        "Built Scope Generator for pharma agency finance and operations teams to manage regional rate cards, brands, sub-brands, scope changes, deliverables, timelines, resourcing, and cost breakdowns."
+      ],
+      "resumeTerms": [
+        "budget tracking",
+        "resourcing"
+      ]
+    },
+    {
+      "id": "cross-functional-communication",
+      "text": "Maintain open communication, facilitate collaboration, provide proactive updates, and keep cross-functional teams aligned.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "One of two account consumer leads on FCB Health's largest pharma account across integrated channels, brand planning, and MLR review.",
+        "Direct collaboration across client, account, strategy, creative, UX, product, development, finance, operations, and senior leadership teams."
+      ],
+      "resumeTerms": [
+        "cross-functional collaboration",
+        "proactive communication"
+      ]
+    },
+    {
+      "id": "regulated-agency-workflows",
+      "text": "Learn and operate within agency, client, and regulatory processes while supporting accountable project routing.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Eleven years across pharma and healthcare communications, including FDA, HIPAA, and MLR workflows and patient and HCP work.",
+        "Current pharma AI work spans brief intake, scoping, screenshot capture, review routing, submission capture, claims review, and regulatory monitoring."
+      ],
+      "resumeTerms": [
+        "regulated agency workflows",
+        "MLR review routing"
+      ]
+    },
+    {
+      "id": "risk-escalation",
+      "text": "Anticipate workflow challenges, identify risks, escalate issues, and contribute to practical solutions.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "High-volume pharma delivery required surfacing risks early and keeping deliverables moving against deadlines and budgets.",
+        "Current workflow tools surface evidence gaps, routing logic, submission requirements, and regulatory risks before late-stage review."
+      ],
+      "resumeTerms": [
+        "risk escalation",
+        "workflow problem solving"
+      ]
+    },
+    {
+      "id": "workfront",
+      "text": "Use Workfront for project setup, tracking, reporting, planned hours, and process administration.",
+      "priority": "core",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "resumeTerms": [
+        "Workfront"
+      ]
+    },
+    {
+      "id": "status-administration",
+      "text": "Maintain formal status reports, hot sheets, project records, and a substantial administrative-support workload.",
+      "priority": "core",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Account-management work directly required organizing briefs, timelines, production requirements, feedback, routing, and client deliverables.",
+        "The source resume does not name hot sheets or quantify administrative-support duties."
+      ],
+      "resumeTerms": [
+        "project documentation",
+        "status communication"
+      ]
+    },
+    {
+      "id": "office-mac",
+      "text": "Bring experience with Microsoft Office Suite and the Mac operating system.",
+      "priority": "preferred",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "resumeTerms": [
+        "Microsoft Office Suite"
+      ]
+    }
+  ],
+  "fitGate": {
+    "supportedOverlap": [
+      "Seven years of direct Fortune 500 pharma account management with USD 2M-50M+ budgets, exceeding the role's program scale while directly matching its agency environment.",
+      "Direct ownership of briefs, production requirements, timelines, MLR-ready deliverables, project routing, and cross-functional coordination across complex regulated work.",
+      "Eleven years across pharma and healthcare communications, including FDA, HIPAA, MLR, patient, HCP, and agency-client workflows.",
+      "Current pharma workflow work supports project intake, scoping, rate cards, deliverables, resourcing, cost breakdowns, review routing, submission capture, and early risk visibility.",
+      "Strong collaboration, initiative, adaptability, accountability, and client-service proof across agency, enterprise, and consulting roles."
+    ],
+    "unsupportedRequirements": [
+      "Workfront project setup, planned-hours administration, tracking, and reporting are not documented.",
+      "Formal hot-sheet ownership and named project-status reporting processes are not documented.",
+      "Microsoft Office Suite proficiency is not stated in the resume or public portfolio evidence."
+    ],
+    "actualMismatches": [
+      "The role is explicitly foundational and mentorship-led, allows up to 50 percent administrative support, and pays USD 40,000-60,000, while the resume shows 15 years of experience, prior director scope, and seven years managing substantially larger pharma portfolios.",
+      "The documented background centers on account leadership, UX, product strategy, and end-to-end delivery rather than a recent Project Coordinator title working under close oversight."
+    ],
+    "missingEvidence": [
+      "Named Workfront usage, planned-hours setup, and Workfront reporting examples.",
+      "Formal hot sheets, recurring status-report ownership, and quantified administrative workload.",
+      "A truthful reason for intentionally pursuing an entry-level coordinator role and its stated compensation range."
+    ],
+    "coverLetterBridge": {
+      "status": "recommended",
+      "rationale": "We can make the case with a cover letter by connecting seven years of pharma account delivery, budget stewardship, regulated routing, and cross-functional coordination to Precision AQ's need for a dependable project operator. The letter must truthfully explain why an experienced former director and account lead now wants a foundational coordinator role with substantial administrative work; that motivation is not present in the current evidence and must not be invented."
+    },
+    "recommendation": "Proceed as adjacent, but treat this as a down-level application. Lead with direct pharma project coordination, budgets, timelines, routing, risk escalation, and team-first delivery. Do not imply Workfront, hot-sheet, planned-hours, Microsoft Office, or profitability-reporting experience that the source evidence does not prove."
+  },
+  "resume": {
+    "summary": "Healthcare project and client-operations professional with 7+ years coordinating Fortune 500 pharma accounts and USD 2M-50M+ portfolios across briefs, timelines, production requirements, budgets, and MLR-ready deliverables. I keep complex work organized through clear scope, proactive communication, risk escalation, and cross-functional follow-through across account, creative, strategy, UX, development, finance, and operations. My broader background spans 15 years across regulated healthcare, product delivery, and enterprise workflows.",
+    "skills": [
+      {
+        "label": "Pharma Project Coordination",
+        "description": "Briefs, timelines and deliverables, production requirements, review routing, project documentation, status communication, and MLR-ready handoffs"
+      },
+      {
+        "label": "Budget, Scope & Resourcing Support",
+        "description": "USD 2M-50M+ pharma portfolios, budget tracking, regional rate cards, scope changes, deliverables, timelines, role-level resourcing, and cost breakdowns"
+      },
+      {
+        "label": "Cross-Functional Collaboration",
+        "description": "Proactive communication, risk escalation, workflow problem solving, and coordination across client, account, creative, strategy, UX, product, development, finance, and operations"
+      },
+      {
+        "label": "Regulated Agency Workflows",
+        "description": "11 years across pharma and healthcare communications, FDA, HIPAA, MLR review routing, patient and HCP work, and accountable project delivery"
+      }
+    ],
+    "roles": {
+      "hedgehox": [
+        "Convert pharma agency needs into practical tools for brief intake, scoping, review routing, submission capture, MLR claim review, and FDA signal monitoring",
+        "Built Scope Generator for pharma agency finance and operations teams to manage regional rate cards, brands, sub-brands, scope changes, deliverables, timelines, resourcing, and cost breakdowns",
+        "Designed Claims Detector workflows that identify promotional claims, surface evidence gaps, and pre-populate audit-ready annotations before MLR submission"
+      ],
+      "one-block-away": [
+        "Lead client discovery, prioritization, scope definition, presentations, and iteration from first ask through working deliverable",
+        "Turn unclear client requests into organized briefs, testable concepts, demo narratives, and next-step decisions while keeping stakeholders aligned"
+      ],
+      "kinesso": [
+        "Scaled a distributed product design organization from 2 to 30 across the US and Poland for enterprise analytics used by 7,000+ users across 22 white-label brands",
+        "Led UX and design-system delivery for data visualization, dashboard building, brand theming, and reusable analytics components",
+        "Built the Digital Experience Audit workflow for channel scoring, benchmarks, recommendations, visualization, and presentation-ready client outputs"
+      ],
+      "omnicom": [
+        "Supported oncology accounts as a freelance UX designer, combining UX design and account-management experience to strengthen regulated healthcare work",
+        "Worked across account, strategy, creative, and delivery conversations to translate brand goals into clear user flows, content structure, and digital recommendations"
+      ],
+      "heartbeat": [
+        "Led UX research and experience strategy for pharma and healthcare work, translating stakeholder input, competitive audits, and user needs into clear product direction",
+        "Created journey maps, site maps, user flows, wireframes, and prototypes for patient, HCP, and internal brand-team experiences across regulated healthcare programs",
+        "Partnered with strategy, creative, account, and engineering teams to move recommendations from research findings into build-ready product and campaign experiences"
+      ],
+      "account-management": [
+        "7+ years managing Fortune 500 pharma and healthcare clients with USD 2M-50M+ budgets across CNS and neurology, psychiatry, cardiovascular and metabolic, and sleep and wakefulness brands including NUVIGIL, Namenda XR, Lipitor, and Zoloft",
+        "One of two account consumer leads on FCB Health's largest pharma account across TV, radio, digital, gaming, Times Square, unbranded campaigns, brand planning, and MLR review",
+        "Translated client and brand strategy into briefs, creative feedback, production requirements, timelines, and MLR-ready deliverables across account, creative, UX, and development teams",
+        "Coordinated high-volume client work across senior leadership, creative, strategy, production, UX, and development teams, surfacing risks early and keeping deliverables moving against deadlines and budgets"
+      ]
+    }
+  },
+  "hero": {
+    "eyebrow": "Precision AQ Project Coordinator",
+    "tags": [
+      "Pharma project coordination",
+      "Budgets, timelines & routing",
+      "Regulated cross-functional delivery"
+    ],
+    "intro": "Precision AQ needs a project coordinator who can keep healthcare work organized across timelines, budgets, routing, and regulated review. I bring seven years managing Fortune 500 pharma accounts and $2M-$50M+ budgets, plus direct experience turning client needs into briefs, production requirements, timelines, and MLR-ready deliverables. I know how to connect account, creative, strategy, UX, development, finance, and operations teams while surfacing risks early and keeping details moving."
+  },
+  "contact": {
+    "prompt": "Hiring a pharma project coordinator who can keep budgets, timelines, routing, and cross-functional teams moving together? Email is the fastest way to reach me.",
+    "signoff": "Pharma coordination · budget and timeline support · regulated delivery"
+  },
+  "constraints": {
+    "doNotClaim": [
+      "Workfront project setup or administration",
+      "Workfront planned-hours tracking",
+      "Formal hot-sheet ownership",
+      "Microsoft Office Suite proficiency",
+      "Profitability reporting ownership",
+      "A prior Project Coordinator title",
+      "A personal motivation for pursuing an entry-level role"
+    ],
+    "blockedTerms": [
+      "Workfront expert",
+      "managed planned hours in Workfront",
+      "owned hot sheets",
+      "Microsoft Office expert",
+      "owned profitability reporting"
+    ]
+  },
+  "privacy": {
+    "publicSafe": true,
+    "notes": "Contains only the public job description and sanitized resume and portfolio evidence. It excludes recruiter contact details, application answers, personal compensation boundaries, and private eligibility information."
+  },
+  "qa": {
+    "status": "qa-passed",
+    "builtAt": "2026-07-20T17:04:55.637Z",
+    "configInputSha256": "645167bf6a7360aaf4e2f500521d87ae9c7f5e8ed4c5671e1a0f4e46dc626874",
+    "sourceResumeSha256": "375cc6566f5bbad5b95be9da551dfe87824378fb252222409d29ef32d334ca25",
+    "artifactHashes": {
+      "routeSha256": "0fe230e10ff21d2b6d8f660fb63d6591528ef5472d7078b2e031ae27b819a4e4",
+      "resumePdfSha256": "a49544d5cca992c3510f8c3fcef31469e39e05773f54cc6a7d7278e231d3031a",
+      "scopedProjectSha256": {}
+    },
+    "renderer": {
+      "browser": {
+        "name": "chrome-headless-shell",
+        "version": "Google Chrome for Testing 149.0.7827.55"
+      },
+      "htmlPath": "tmp/tailored-resumes/precision-aq-project-coordinator.html",
+      "pdfPath": "output/pdf/Wally-Mostafa-Precision-AQ-Project-Coordinator-Resume.pdf"
+    },
+    "ats": {
+      "ok": true,
+      "pdfPath": "output/pdf/Wally-Mostafa-Precision-AQ-Project-Coordinator-Resume.pdf",
+      "pageCount": 2,
+      "fileSize": 128846,
+      "annotations": [
+        {
+          "page": 1,
+          "uri": "mailto:wmostafa12@gmail.com"
+        },
+        {
+          "page": 1,
+          "uri": "https://linkedin.com/in/wallymo"
+        },
+        {
+          "page": 1,
+          "uri": "https://wallymo.github.io/precision-aq-project-coordinator/"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/6748"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/4629"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.red-dot.org/project/dxa-digital-experience-audit-55219"
+        }
+      ],
+      "coverage": [
+        {
+          "id": "project-coordination",
+          "requirement": "Support projects from initiation through completion across timelines, deliverables, routing, and quality standards.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "project coordination",
+            "timelines and deliverables"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "budget-tracking",
+          "requirement": "Support USD 1M-2M programs and partner with project management, Account, and Finance on budget tracking and reporting.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "budget tracking",
+            "resourcing"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "cross-functional-communication",
+          "requirement": "Maintain open communication, facilitate collaboration, provide proactive updates, and keep cross-functional teams aligned.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "cross-functional collaboration",
+            "proactive communication"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "regulated-agency-workflows",
+          "requirement": "Learn and operate within agency, client, and regulatory processes while supporting accountable project routing.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "regulated agency workflows",
+            "MLR review routing"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "risk-escalation",
+          "requirement": "Anticipate workflow challenges, identify risks, escalate issues, and contribute to practical solutions.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "risk escalation",
+            "workflow problem solving"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "workfront",
+          "requirement": "Use Workfront for project setup, tracking, reporting, planned hours, and process administration.",
+          "priority": "core",
+          "evidenceStatus": "none",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "Workfront"
+          ]
+        },
+        {
+          "id": "status-administration",
+          "requirement": "Maintain formal status reports, hot sheets, project records, and a substantial administrative-support workload.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "project documentation",
+            "status communication"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "office-mac",
+          "requirement": "Bring experience with Microsoft Office Suite and the Mac operating system.",
+          "priority": "preferred",
+          "evidenceStatus": "none",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "Microsoft Office Suite"
+          ]
+        }
+      ],
+      "failures": [],
+      "warnings": []
+    },
+    "route": {
+      "viewports": [
+        {
+          "name": "desktop",
+          "screenshot": "tmp/qa/precision-aq-project-coordinator/desktop.png",
+          "errors": []
+        },
+        {
+          "name": "mobile",
+          "screenshot": "tmp/qa/precision-aq-project-coordinator/mobile.png",
+          "errors": []
+        }
+      ],
+      "errors": []
+    }
+  }
+}

@@ -957,6 +957,26 @@
     },
     {
       "workflowVersion": 2,
+      "slug": "precision-aq-project-coordinator",
+      "roleTitle": "Precision AQ Project Coordinator",
+      "artifactStem": "Precision-AQ-Project-Coordinator",
+      "configPath": "scripts/packages/precision-aq-project-coordinator.json",
+      "targetLane": "pharma-agency-project-coordination",
+      "evidenceMode": "resume-primary",
+      "fitClass": "adjacent",
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-01.html",
+        "project-06.html",
+        "project-03.html"
+      ],
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Precision-AQ-Project-Coordinator-Resume.pdf",
+      "publishStatus": "local-only",
+      "qaStatus": "qa-passed",
+      "builtAt": "2026-07-20T17:04:55.637Z"
+    },
+    {
+      "workflowVersion": 2,
       "slug": "predictive-sales-ai-customer-success-consultant",
       "roleTitle": "Predictive Sales AI Customer Success Consultant",
       "artifactStem": "Predictive-Sales-AI-Customer-Success-Consultant",
