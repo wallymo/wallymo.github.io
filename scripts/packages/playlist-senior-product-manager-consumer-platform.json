@@ -1,0 +1,541 @@
+{
+  "workflowVersion": 2,
+  "contractRevision": 2,
+  "slug": "playlist-senior-product-manager-consumer-platform",
+  "roleTitle": "Playlist Senior Product Manager, Consumer Platform",
+  "artifactStem": "Playlist-Senior-Product-Manager-Consumer-Platform",
+  "fitClass": "stretch",
+  "routeMode": "canonical-projects",
+  "selectedProjects": [
+    "project-05.html",
+    "project-03.html",
+    "project-02.html"
+  ],
+  "job": {
+    "company": "Playlist (Mindbody)",
+    "roleTitle": "Senior Product Manager, Consumer Platform",
+    "jobId": null,
+    "jobUrl": null,
+    "sourceChannel": "chat-pasted-jd",
+    "dateCaptured": "2026-07-20",
+    "location": "United States; specific work arrangement and location not stated in the pasted job description",
+    "atsVendor": "unknown",
+    "compensation": "$170,000-$210,000 base salary in the United States",
+    "rawJd": "About the job\n\nAt Playlist, life's richest moments happen when people step away from screens to move, connect, explore, and play. We're building the definitive platform for intentional living, connecting people with inspiring experiences in fitness, wellness, and beyond. With popular brands like Mindbody and ClassPass, Playlist empowers businesses and individuals, making it effortless for aspirations to become actions. Join us in reshaping technology's role to foster meaningful, real-world connections.\n\nMindbody equips wellness entrepreneurs with technology to support thriving businesses and create exceptional experiences. Innovation and curiosity drive our culture, connecting businesses and individuals through cutting-edge solutions. Join us if you're passionate about enhancing wellness through technology.\n\nAbout The Role\n\nEvery consumer experience Mindbody ships is built on top of our consumer platform. The platform is the shared foundation that lets our front-end squads deliver reliable, consistent wellness experiences without rebuilding the plumbing every time.\n\nThis role exists to answer a deceptively simple question: what does the consumer platform need to become so that front-end squads can move fast on solid ground - and how do we get there from a legacy monolith without breaking the surfaces that depend on it today?\n\nThis is a senior individual-contributor role for a product leader who is equally comfortable in two rooms: designing API contracts and service boundaries with a senior backend engineering team, and making the cross-surface platform calls that keep multiple consumer squads pulling in the same direction. You'll own the consumer platform roadmap, partner closely with engineering and your downstream partner squads, and be measured on how much faster and more reliably the rest of consumer can build because of the foundation you've shaped.\n\nWhat you'll do\n\nOwn the consumer platform strategy and roadmap. Define the capabilities the platform must provide so consumer surfaces can build reliable, consistent consumer experiences faster - and sequence the highest-ROI investments for a cross-functional engineering team.\nDrive the evolution of the consumer API. Consolidate and redesign API contracts to reduce surface area and developer cognitive load; decompose the legacy Consumer API monolith into domain-driven services; deprecate legacy endpoints - evolving the architecture rather than rebuilding it from scratch.\nInfluence cross-surface platform and architecture decisions. Collaborate with Engineering counterpart on shared-infrastructure questions that span the consumer squads, partnering with surface PMs on their product roadmaps while holding the line on a coherent platform.\nPartner deeply with a senior backend engineering team. Earn trust at the architecture level - engage credibly in contract design, service boundaries, and technical tradeoffs - and turn that partnership into shipped, stable platform capabilities.\nSequence migration without breaking the surfaces. Manage the path from monolith to modern services so front-end squads are continuously unblocked, never disrupted; treat deprecation as a product to be managed, not a cleanup task.\nTreat the squads as your customers. Spend regular time with the other consumer PMs and engineers who build on the platform - the way a customer-facing PM spends time with customers - to ground roadmap decisions in real developer needs.\nDefine and move the metrics that matter. Own platform adoption (% of consumer requests flowing through the platform) and connect platform health to the downstream outcomes it unblocks: surface velocity, reliability, and conversion.\n\nWhat you'll bring\n\nA track record shipping platform, API, or infrastructure products - ideally ones other product teams build on top of. You understand what makes a platform a multiplier rather than a bottleneck.\nGenuine technical fluency. You hold your own with senior backend engineers on API design, service boundaries, and architecture tradeoffs; you can read and reason about system design and earn engineering trust on the merits.\nCross-surface product judgment. You've owned decisions spanning multiple teams or product surfaces and you're comfortable being the connective tissue - making the call that serves the whole even when it isn't the easy local answer.\nExperience modernizing legacy systems. You've decomposed a monolith or migrated a platform evolutionarily, and you know how to manage deprecation and dependencies without breaking the teams that rely on you.\nStrong influence without authority. You make platform decisions that affect peer squads while keeping those relationships strong - lowering the temperature in contentious tradeoffs rather than raising it.\nMetric-anchored decision-making. You define clear success metrics, including for inherently internal platform work, and you connect platform outcomes to commercial impact.\nThe seniority to operate independently alongside a senior engineering team. 6+ years of product management experience, with meaningful time on platform, API, or infrastructure products. Consumer product experience is a strong plus.\n\nPay Transparency\n\nIt is Playlist's intent to pay all Team Members competitive wages and salaries that are motivational, fair and equitable. The goal of Playlist's compensation program is to be transparent, attract potential employees, meet the needs of all current employees, and encourage Team Members to stay with our organization. Actual compensation packages are based on several factors that are unique to each candidate, including but not limited to skill set, depth of experience, certifications, and specific work location. The base salary range for this position in the United States is $170,000 to $210,000. The total compensation package for this position may also include performance bonus, benefits and/or other applicable incentive compensation plans.\n\nHave we piqued your curiosity?\n\nSound like the role for you? We'd love to hear from you! Even if you're not 100% sure about potential fit, we still encourage you to apply. We're looking for the right person, not the perfect series of checkboxes.\n\nThe Company is an Equal Opportunity Employer. We highly value diversity at our company and encourage people of all different backgrounds, experiences, abilities and perspectives to apply. We do not discriminate on the basis of race, religion, color, national origin, gender, sexual orientation, age, marital status, veteran status, disability status, or other protected characteristics.\n\nBy entering your email and phone number and submitting your application, you consent to receive emails, calls and SMS about your application and other roles at The Company, including by auto-dialer. Message and data rates may apply. Opt-out or text STOP to cancel at any time. If you are a California resident or reside outside the United States then by submitting your application you confirm that you have read, understood, agree and - where applicable - grant your prior, free, informed and express consent for the processing of your personal information, including sensitive personal information, as described in our California Applicant Privacy Notice or International Applicant Privacy Notice (as applicable).\n\nNote: This description outlines key responsibilities but isn't intended to cover every task or duty. Additional responsibilities may be assigned as needed to support the team and business goals."
+  },
+  "classification": {
+    "targetLane": "consumer-platform-product-leadership",
+    "evidenceMode": "balanced",
+    "primarySource": "resume evidence of product strategy, shared enterprise systems, technical delivery, cross-functional leadership, and product scale",
+    "supportingSource": "portfolio evidence of shared design-system foundations, developer experience, cross-product research, enterprise analytics, and end-to-end POC decisions",
+    "hardGateStatus": "pass",
+    "hardGates": [
+      {
+        "gate": "Required location, work arrangement, or relocation",
+        "status": "not-applicable",
+        "evidence": "The pasted posting gives a United States compensation range but does not state a required city, office schedule, or relocation requirement."
+      },
+      {
+        "gate": "Required credential, clearance, or professional license",
+        "status": "not-applicable",
+        "evidence": "The pasted posting does not state a required degree, certification, clearance, or professional license."
+      },
+      {
+        "gate": "Consumer wellness product experience",
+        "status": "not-applicable",
+        "evidence": "The posting describes consumer experience as a strong plus rather than a mandatory qualification; the package does not claim wellness-marketplace experience."
+      }
+    ]
+  },
+  "requirements": [
+    {
+      "id": "platform-strategy-roadmap",
+      "text": "Own the consumer platform strategy and roadmap, define shared capabilities, and sequence high-return investments for multiple consumer surfaces.",
+      "priority": "core",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Current One Block Away work owns product strategy, discovery, requirements, implementation choices, front-end build, backend logic, validation, and roadmap decisions from first question through working prototype.",
+        "Kinesso work shaped shared design and analytics systems across more than 20 products, 7,000-plus users, and 22 white-label brands."
+      ],
+      "resumeTerms": [
+        "product strategy",
+        "roadmap decisions",
+        "shared product foundations",
+        "capability prioritization"
+      ]
+    },
+    {
+      "id": "consumer-api-evolution",
+      "text": "Consolidate and redesign consumer API contracts, reduce developer cognitive load, and define service boundaries.",
+      "priority": "core",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "resumeTerms": [
+        "API contract ownership",
+        "service-boundary architecture",
+        "consumer API redesign"
+      ]
+    },
+    {
+      "id": "legacy-modernization-migration",
+      "text": "Decompose a legacy monolith, manage endpoint deprecation and dependencies, and sequence an evolutionary migration without disrupting dependent surfaces.",
+      "priority": "core",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "resumeTerms": [
+        "monolith decomposition",
+        "legacy endpoint deprecation",
+        "domain-driven service migration"
+      ]
+    },
+    {
+      "id": "cross-surface-product-judgment",
+      "text": "Make shared decisions across multiple products and teams while keeping a coherent system direction.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Led shared design-system, analytics, dashboard, theming, and reusable-component strategy across a 20-plus-product enterprise suite.",
+        "Scaled a distributed product-design organization from 2 to 30 and aligned product, design, engineering, research, and business teams across 22 white-label brands."
+      ],
+      "resumeTerms": [
+        "cross-product",
+        "shared systems",
+        "reusable analytics components",
+        "coherent product experience"
+      ]
+    },
+    {
+      "id": "senior-backend-partnership",
+      "text": "Partner credibly with a senior backend engineering team on architecture, technical tradeoffs, contract design, and stable platform capabilities.",
+      "priority": "core",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Current product work includes front-end build, backend logic, implementation choices, build-ready handoff, and collaboration across product and engineering.",
+        "Kinesso work partnered with engineering on reusable analytics components, shared design systems, dashboard behavior, brand theming, and adoption at enterprise scale."
+      ],
+      "resumeTerms": [
+        "engineering partnership",
+        "technical tradeoffs",
+        "backend logic",
+        "production handoff"
+      ]
+    },
+    {
+      "id": "internal-squads-as-customers",
+      "text": "Treat product managers and engineers who build on the shared foundation as customers and ground roadmap decisions in their needs.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Built a research operating model across more than 20 enterprise products using stakeholder interviews, prototype testing, feedback tools, product analytics, standardized findings, and roadshows.",
+        "The Splash Design System used shared components, living documentation, personas, and feedback to simplify the developer experience and unify product teams."
+      ],
+      "resumeTerms": [
+        "internal teams",
+        "stakeholder discovery",
+        "developer experience",
+        "research-driven prioritization"
+      ]
+    },
+    {
+      "id": "platform-metrics-commercial-impact",
+      "text": "Define platform adoption and health metrics and connect them to product velocity, reliability, conversion, and commercial impact.",
+      "priority": "core",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Enterprise work documents scale across more than 7,000 users and 22 white-label brands, plus product analytics, prototype testing, audit benchmarks, recommendations, and adoption.",
+        "Current POC work connects product decisions to investor, client, workflow, and implementation outcomes."
+      ],
+      "resumeTerms": [
+        "product adoption",
+        "product analytics",
+        "business outcomes",
+        "continuous improvement"
+      ]
+    },
+    {
+      "id": "influence-without-authority",
+      "text": "Influence decisions across peer squads and senior stakeholders while maintaining strong cross-functional relationships.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Fifteen years translating priorities across client, product, engineering, design, research, account, creative, operations, and leadership teams.",
+        "Scaled a distributed design organization from 2 to 30 while building reusable systems and shared operating practices across a large product suite."
+      ],
+      "resumeTerms": [
+        "cross-functional influence",
+        "aligning stakeholders",
+        "distributed teams",
+        "stakeholder discovery"
+      ]
+    },
+    {
+      "id": "senior-platform-pm-tenure",
+      "text": "Bring 6-plus years of product management experience with meaningful time on platform, API, or infrastructure products.",
+      "priority": "core",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "More than six years of adjacent product leadership spans enterprise product systems, experience strategy, cross-functional implementation, and current AI product strategy.",
+        "Formal titles before 2023 center on experience, innovation, UX, and client strategy rather than Product Manager, and direct API or infrastructure product ownership is not documented."
+      ],
+      "resumeTerms": [
+        "product strategy",
+        "roadmap decisions",
+        "senior product and experience leader"
+      ]
+    },
+    {
+      "id": "consumer-product-experience",
+      "text": "Bring consumer product experience as a strong plus.",
+      "priority": "preferred",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Served as one of two account consumer leads on FCB Health's largest pharma account across TV, radio, digital, gaming, Times Square, and unbranded campaigns.",
+        "Led patient and consumer-facing experience strategy in regulated healthcare and built digital product experiences across enterprise and client contexts."
+      ],
+      "resumeTerms": [
+        "consumer experiences",
+        "consumer lead",
+        "digital products"
+      ]
+    }
+  ],
+  "fitGate": {
+    "supportedOverlap": [
+      "Shared-system leadership across a 20-plus-product enterprise suite, more than 7,000 users, and 22 white-label brands.",
+      "Direct cross-product design-system evidence: 500 components, 140 styles, 300 icons, 50 personas, living documentation, and a simplified developer experience.",
+      "Current product strategy ownership from discovery and requirements through front-end build, backend logic, implementation choices, validation, and roadmap decisions.",
+      "Direct cross-functional influence across product, design, engineering, research, business, operations, clients, and distributed teams.",
+      "Research and product-analytics operating models that treated internal stakeholders as users and turned repeated needs into shared systems and prioritization decisions.",
+      "Enterprise adoption and scale evidence plus investor, client, workflow, and implementation outcomes."
+    ],
+    "unsupportedRequirements": [
+      "Direct ownership of a consumer API or infrastructure platform roadmap.",
+      "API contract consolidation or redesign and service-boundary definition.",
+      "Legacy monolith decomposition, endpoint deprecation, or evolutionary service migration.",
+      "Architecture-level partnership with a senior backend engineering team.",
+      "Formal ownership of platform request adoption, reliability, velocity, or conversion metrics.",
+      "Wellness marketplace, Mindbody, or ClassPass product experience."
+    ],
+    "actualMismatches": [
+      "The documented product center is shared experience systems, enterprise UX, analytics products, and AI workflow implementation rather than API-platform product management.",
+      "The resume does not directly prove 6-plus years in formal Product Manager roles with meaningful API or infrastructure ownership.",
+      "The role expects demonstrated legacy-platform modernization and developer-platform migration management that the current evidence does not show."
+    ],
+    "missingEvidence": [
+      "Named API contracts, service boundaries, endpoint inventories, dependency maps, or deprecation plans owned by the candidate.",
+      "A monolith-to-services migration with measurable continuity, adoption, reliability, or developer-velocity outcomes.",
+      "Direct examples of architecture decisions made alongside senior backend engineers.",
+      "Platform metrics such as request adoption, latency, error rate, reliability, migration completion, or squad delivery velocity."
+    ],
+    "coverLetterBridge": {
+      "status": "recommended",
+      "rationale": "We can make the case with a cover letter by connecting the candidate's shared-system leadership across more than 20 products, 7,000-plus users, and 22 brands; current end-to-end product strategy and technical delivery; and research-driven developer experience work to Playlist's need for coherent cross-surface platform judgment. The cover letter must explicitly frame this as a transfer from shared experience and analytics systems into consumer-platform product leadership and must not imply API contract ownership, monolith decomposition, or legacy endpoint migration experience."
+    },
+    "recommendation": "Proceed only as the user-approved stretch. Lead with shared product foundations, cross-product judgment, internal-team discovery, developer experience, enterprise adoption, and technical product delivery. Keep the gap visible and do not claim API-platform ownership, backend architecture leadership, monolith modernization, or six-plus years of formal platform product management."
+  },
+  "resume": {
+    "summary": "Senior product and experience leader with 15 years across enterprise UX, product strategy, AI implementation, and cross-functional delivery. I have shaped shared systems across a 20-plus-product suite, led enterprise analytics used by more than 7,000 people across 22 white-label brands, and now own product strategy from discovery through front-end build, backend logic, validation, and handoff. My strength is turning fragmented workflows into coherent foundations that help product, design, and engineering teams move with greater consistency and confidence.",
+    "skills": [
+      {
+        "label": "Shared Systems & Product Strategy",
+        "description": "Cross-product strategy, shared product foundations, capability prioritization, roadmap decisions, requirements, reusable systems, adoption, and business outcomes"
+      },
+      {
+        "label": "Technical Product Delivery",
+        "description": "Discovery, front-end build, backend logic, workflow design, technical tradeoffs, prototype validation, implementation choices, and production handoff"
+      },
+      {
+        "label": "Enterprise Systems & Developer Experience",
+        "description": "20-plus-product suites, enterprise analytics, shared components, living documentation, system governance, engineering partnership, and coherent product experiences"
+      },
+      {
+        "label": "Research, Metrics & Cross-Functional Influence",
+        "description": "Stakeholder discovery, internal teams, product analytics, prototype testing, research-driven prioritization, product adoption, distributed teams, and continuous improvement"
+      }
+    ],
+    "roles": {
+      "hedgehox": [
+        "Led product strategy and requirements for Claims Detector, translating pharma business needs into governed AI workflows for claim identification, evidence gaps, and audit-ready annotations",
+        "Secured an investor for proprietary Claims Detection software by building the functional POC, shaping the product story, and iterating with stakeholders",
+        "Defined implementation paths across MLR claim review, brief intake, scoping, review routing, submission capture, and FDA signal monitoring with human review built in",
+        "Built Scope Generator for pharma agency finance and operations teams to manage regional rate cards, brands, sub-brands, and natural-language scope changes"
+      ],
+      "one-block-away": [
+        "Own product strategy, discovery, requirements, workflow design, front-end build, backend logic, demo readiness, client iteration, and roadmap decisions from first question through working prototype",
+        "Translate fragmented client needs into capability priorities, testable product surfaces, implementation choices, and build-ready handoffs",
+        "Built ListingPal's AI listing-generation POC, turning basic property inputs into listing copy, social posts, ad copy, styling direction, and MLS/SEO-ready language in under 90 seconds",
+        "Built WeReady's Bailey Intelligence dashboard, translating founder inputs, GitHub signals, source health, risk scoring, and evidence trails into decision-ready startup workflows"
+      ],
+      "kinesso": [
+        "Led shared product and design-system strategy across an enterprise suite while scaling design from 2 to 30 people across the US and Poland, supporting more than 7,000 users across 22 white-label brands",
+        "Partnered across product, design, engineering, and business teams to shape data visualization, dashboard building, brand theming, and reusable analytics components from requirements through adoption",
+        "Built a research discipline across a 20-plus-product suite, using stakeholder interviews, prototype testing, feedback tools, product analytics, standardized findings, and roadshows to guide cross-product prioritization and continuous improvement",
+        "Built the Digital Experience Audit workflow for channel scoring, benchmarks, recommendations, data visualization, and presentation-ready client outputs"
+      ],
+      "omnicom": [
+        "Supported oncology accounts as a freelance UX designer, translating regulated business and user needs into clearer product flows, content structures, and implementation recommendations",
+        "Partnered across account, strategy, creative, and delivery teams to align client outcomes, user experience, and build-ready decisions"
+      ],
+      "heartbeat": [
+        "Led research and experience strategy for pharma and healthcare products, translating stakeholder input, competitive audits, and user needs into digital product direction",
+        "Created journey maps, user flows, wireframes, and prototypes for patient, HCP, and internal brand-team experiences across regulated healthcare programs",
+        "Partnered with strategy, creative, account, and engineering teams to move research findings into prioritized, build-ready product and consumer experiences"
+      ],
+      "account-management": [
+        "Managed Fortune 500 pharma and healthcare clients with USD 2M-50M+ budgets across complex portfolios, aligning stakeholders and delivery teams to business, audience, and regulatory outcomes",
+        "Served as one of two account consumer leads on FCB Health's largest pharma account across TV, radio, digital products, gaming, Times Square, brand planning, and MLR review",
+        "Translated client strategy into briefs, requirements, timelines, priorities, and MLR-ready delivery across account, creative, UX, analytics, and development teams"
+      ]
+    }
+  },
+  "hero": {
+    "eyebrow": "Playlist Senior Product Manager, Consumer Platform",
+    "tags": [
+      "Shared product foundations",
+      "Cross-product systems",
+      "Developer experience & adoption"
+    ],
+    "intro": "I bring shared-system judgment from enterprise product ecosystems that maps to the platform side of this role. At Kinesso, I shaped design and analytics foundations across more than 20 products, 7,000-plus users, and 22 brands while aligning product, engineering, design, research, and business teams. In my current AI product work, I own discovery, requirements, front-end build, backend logic, validation, and roadmap decisions. My background is closest to cross-product experience systems and developer enablement, and I would bring that perspective to helping Mindbody's consumer squads build on a more coherent foundation."
+  },
+  "contact": {
+    "prompt": "Hiring a product leader who can turn fragmented cross-product needs into shared foundations that help consumer squads build more consistently? Email is the fastest way to reach me.",
+    "signoff": "Shared systems · cross-product judgment · developer enablement"
+  },
+  "constraints": {
+    "doNotClaim": [
+      "6+ years of formal product management experience",
+      "Direct ownership of the Mindbody consumer platform",
+      "Direct ownership of a consumer API platform",
+      "API contract design ownership",
+      "Service boundary architecture ownership",
+      "Monolith decomposition experience",
+      "Legacy endpoint deprecation ownership",
+      "Platform migration ownership",
+      "Senior backend architecture leadership",
+      "Platform request adoption ownership",
+      "Wellness marketplace product experience",
+      "Mindbody product experience",
+      "ClassPass product experience"
+    ],
+    "blockedTerms": [
+      "platform PM with 6+ years",
+      "owned API contracts",
+      "designed service boundaries",
+      "decomposed a monolith",
+      "deprecated legacy endpoints",
+      "owned platform migration",
+      "Mindbody platform expert",
+      "wellness marketplace veteran"
+    ]
+  },
+  "privacy": {
+    "publicSafe": true,
+    "notes": "Contains only the public pasted job description and sanitized evidence from the public resume and portfolio. It includes no recruiter contact details, private application answers, personal compensation boundaries, work-authorization details, or other private application data."
+  },
+  "qa": {
+    "status": "qa-passed",
+    "builtAt": "2026-07-21T00:03:17.135Z",
+    "configInputSha256": "0cff94687345557309ae1a2f6d6b05f66ffcd13284e9429772bbfaacfa762ea8",
+    "sourceResumeSha256": "375cc6566f5bbad5b95be9da551dfe87824378fb252222409d29ef32d334ca25",
+    "artifactHashes": {
+      "routeSha256": "f76aa8f9b63674b0bb944f5c28b4bc70be71d3a03759ff54d3fe0fbf9902628a",
+      "resumePdfSha256": "b7ed8cbc4440c92bcf8183aa219b3a1a635d3928c0b4fd5b6f2e89f41b378952",
+      "scopedProjectSha256": {}
+    },
+    "renderer": {
+      "browser": {
+        "name": "chrome-headless-shell",
+        "version": "Google Chrome for Testing 149.0.7827.55"
+      },
+      "htmlPath": "tmp/tailored-resumes/playlist-senior-product-manager-consumer-platform.html",
+      "pdfPath": "output/pdf/Wally-Mostafa-Playlist-Senior-Product-Manager-Consumer-Platform-Resume.pdf"
+    },
+    "ats": {
+      "ok": true,
+      "pdfPath": "output/pdf/Wally-Mostafa-Playlist-Senior-Product-Manager-Consumer-Platform-Resume.pdf",
+      "pageCount": 2,
+      "fileSize": 131918,
+      "annotations": [
+        {
+          "page": 1,
+          "uri": "mailto:wmostafa12@gmail.com"
+        },
+        {
+          "page": 1,
+          "uri": "https://linkedin.com/in/wallymo"
+        },
+        {
+          "page": 1,
+          "uri": "https://wallymo.github.io/playlist-senior-product-manager-consumer-platform/"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/6748"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/4629"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.red-dot.org/project/dxa-digital-experience-audit-55219"
+        }
+      ],
+      "coverage": [
+        {
+          "id": "platform-strategy-roadmap",
+          "requirement": "Own the consumer platform strategy and roadmap, define shared capabilities, and sequence high-return investments for multiple consumer surfaces.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "product strategy",
+            "roadmap decisions",
+            "shared product foundations",
+            "capability prioritization"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "consumer-api-evolution",
+          "requirement": "Consolidate and redesign consumer API contracts, reduce developer cognitive load, and define service boundaries.",
+          "priority": "core",
+          "evidenceStatus": "none",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "API contract ownership",
+            "service-boundary architecture",
+            "consumer API redesign"
+          ]
+        },
+        {
+          "id": "legacy-modernization-migration",
+          "requirement": "Decompose a legacy monolith, manage endpoint deprecation and dependencies, and sequence an evolutionary migration without disrupting dependent surfaces.",
+          "priority": "core",
+          "evidenceStatus": "none",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "monolith decomposition",
+            "legacy endpoint deprecation",
+            "domain-driven service migration"
+          ]
+        },
+        {
+          "id": "cross-surface-product-judgment",
+          "requirement": "Make shared decisions across multiple products and teams while keeping a coherent system direction.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "cross-product",
+            "shared systems",
+            "reusable analytics components",
+            "coherent product experience"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "senior-backend-partnership",
+          "requirement": "Partner credibly with a senior backend engineering team on architecture, technical tradeoffs, contract design, and stable platform capabilities.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "engineering partnership",
+            "technical tradeoffs",
+            "backend logic",
+            "production handoff"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "internal-squads-as-customers",
+          "requirement": "Treat product managers and engineers who build on the shared foundation as customers and ground roadmap decisions in their needs.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "internal teams",
+            "stakeholder discovery",
+            "developer experience",
+            "research-driven prioritization"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "platform-metrics-commercial-impact",
+          "requirement": "Define platform adoption and health metrics and connect them to product velocity, reliability, conversion, and commercial impact.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "product adoption",
+            "product analytics",
+            "business outcomes",
+            "continuous improvement"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "influence-without-authority",
+          "requirement": "Influence decisions across peer squads and senior stakeholders while maintaining strong cross-functional relationships.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "cross-functional influence",
+            "aligning stakeholders",
+            "distributed teams",
+            "stakeholder discovery"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "senior-platform-pm-tenure",
+          "requirement": "Bring 6-plus years of product management experience with meaningful time on platform, API, or infrastructure products.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "product strategy",
+            "roadmap decisions",
+            "senior product and experience leader"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "consumer-product-experience",
+          "requirement": "Bring consumer product experience as a strong plus.",
+          "priority": "preferred",
+          "evidenceStatus": "adjacent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "consumer experiences",
+            "consumer lead",
+            "digital products"
+          ],
+          "missingTerms": []
+        }
+      ],
+      "failures": [],
+      "warnings": []
+    },
+    "route": {
+      "viewports": [
+        {
+          "name": "desktop",
+          "screenshot": "tmp/qa/playlist-senior-product-manager-consumer-platform/desktop.png",
+          "errors": []
+        },
+        {
+          "name": "mobile",
+          "screenshot": "tmp/qa/playlist-senior-product-manager-consumer-platform/mobile.png",
+          "errors": []
+        }
+      ],
+      "errors": []
+    }
+  }
+}

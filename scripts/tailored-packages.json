@@ -1107,6 +1107,26 @@
     },
     {
       "workflowVersion": 2,
+      "slug": "playlist-senior-product-manager-consumer-platform",
+      "roleTitle": "Playlist Senior Product Manager, Consumer Platform",
+      "artifactStem": "Playlist-Senior-Product-Manager-Consumer-Platform",
+      "configPath": "scripts/packages/playlist-senior-product-manager-consumer-platform.json",
+      "targetLane": "consumer-platform-product-leadership",
+      "evidenceMode": "balanced",
+      "fitClass": "stretch",
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-05.html",
+        "project-03.html",
+        "project-02.html"
+      ],
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Playlist-Senior-Product-Manager-Consumer-Platform-Resume.pdf",
+      "publishStatus": "local-only",
+      "qaStatus": "qa-passed",
+      "builtAt": "2026-07-21T00:03:17.135Z"
+    },
+    {
+      "workflowVersion": 2,
       "slug": "power-entry-level-sales-representative",
       "roleTitle": "Power Entry-Level Sales Representative",
       "artifactStem": "Power-Entry-Level-Sales-Representative",
