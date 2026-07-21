@@ -1,0 +1,487 @@
+{
+  "workflowVersion": 2,
+  "contractRevision": 2,
+  "slug": "motive-product-manager-compliance",
+  "roleTitle": "Motive Product Manager, Compliance",
+  "artifactStem": "Motive-Product-Manager-Compliance",
+  "fitClass": "adjacent",
+  "routeMode": "canonical-projects",
+  "selectedProjects": [
+    "project-01.html",
+    "project-04.html",
+    "project-06.html"
+  ],
+  "job": {
+    "company": "Motive",
+    "roleTitle": "Product Manager",
+    "jobId": "not-listed",
+    "jobUrl": null,
+    "sourceChannel": "chat-pasted-jd",
+    "dateCaptured": "2026-07-21",
+    "location": "Not stated in the pasted job description",
+    "atsVendor": "unknown",
+    "rawJd": "Who we are: Motive empowers the people who run physical operations with tools to make their work safer, more productive, and more profitable. For the first time ever, safety, operations and finance teams can manage their drivers, vehicles, equipment, and fleet related spend in a single system. Combined with industry leading AI, the Motive platform gives you complete visibility and control, and significantly reduces manual workloads by automating and simplifying tasks. Motive serves nearly 100,000 customers - from Fortune 500 enterprises to small businesses - across a wide range of industries, including transportation and logistics, construction, energy, field service, manufacturing, agriculture, food and beverage, retail, and the public sector. As a Product Manager, you will help shape the strategy, roadmap, and execution for compliance products within Motive's Fleet Management portfolio. In this role, you will work closely with engineering, design, and cross-functional stakeholders to turn regulatory requirements and customer needs into high-quality products that reduce risk and deliver measurable business impact. This role is a strong fit for someone who is customer-obsessed, data-driven, execution-oriented, and comfortable bringing clarity to ambiguous problems in a regulated environment. You should be excited by the opportunity to learn quickly, operate in a fast-paced environment, and build products that customers love. What You'll Do: Define and evolve product strategy and roadmap for compliance products in alignment with customer needs, regulatory requirements, and business goals. Partner closely with engineering and design to build intuitive compliance experiences that help customers stay ahead of requirements and reduce operational risk. Get close to customers, identify compliance pain points and opportunities, and translate insights into clear product requirements and priorities. Drive execution from concept through launch by creating clarity, managing tradeoffs, and keeping cross-functional teams aligned on scope, timelines, and outcomes. Use data and product metrics to inform prioritization, evaluate impact, and continuously improve the customer experience. What We're Looking For: 3+ years of experience in Product Management with a track record of delivering commercially successful software products. Experience building compliance products or working on regulated products is a plus. Strong customer empathy and product intuition, with the ability to simplify complex problems into effective solutions. A data-driven approach to decision-making, using metrics and evidence to validate assumptions and guide prioritization. Sufficient technical depth to work effectively with engineers and contribute to strong product decisions. Clear communication and stakeholder management skills, with the ability to influence across functions and operate effectively with remote teams in a fast-paced environment."
+  },
+  "classification": {
+    "targetLane": "regulated-compliance-product-management",
+    "evidenceMode": "balanced",
+    "primarySource": "resume evidence of three years of current product-strategy ownership, regulated product delivery, enterprise adoption, research, metrics, and cross-functional execution",
+    "supportingSource": "portfolio proof of pharma compliance products, a research operating model across more than 20 products, and a data-driven audit workflow",
+    "hardGateStatus": "pass",
+    "hardGates": [
+      {
+        "gate": "3+ years of product management experience",
+        "status": "pass",
+        "evidence": "One Block Away product-strategy ownership runs from July 2023 to present, reinforced by current Hedgehox product requirements and implementation work and earlier enterprise product delivery at Kinesso. Formal titles vary from AI Product Strategist to design and experience leadership."
+      },
+      {
+        "gate": "Track record delivering commercially successful software products",
+        "status": "pass",
+        "evidence": "The resume documents enterprise analytics and workflow products used by more than 7,000 people across 22 white-label brands, plus an investor-backed Claims Detector POC. Revenue, retention, and product P&L outcomes are not documented and remain an evidence caveat."
+      },
+      {
+        "gate": "Technical depth and effective collaboration with engineering and design",
+        "status": "pass",
+        "evidence": "Current work covers requirements, workflow design, front-end build, backend logic, model orchestration, validation, implementation choices, and production handoff; enterprise roles add direct product, design, engineering, research, and business-team alignment."
+      },
+      {
+        "gate": "Compliance or regulated-product experience",
+        "status": "pass",
+        "evidence": "The posting treats this as a plus rather than a mandatory gate, and the resume and portfolio directly document regulated pharma products spanning FDA, HIPAA, MLR review, claims evidence, audit-ready annotations, review routing, submission capture, and regulatory signal monitoring."
+      }
+    ]
+  },
+  "requirements": [
+    {
+      "id": "compliance-product-strategy-roadmap",
+      "text": "Define and evolve product strategy and roadmap for compliance products in alignment with customer needs, regulatory requirements, and business goals.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "At Hedgehox, product strategy and requirements translate regulated pharma needs into Claims Detector, review routing, submission capture, scoping, and FDA signal-monitoring workflows.",
+        "At One Block Away, product ownership runs from customer discovery and requirements through prioritization, roadmap decisions, implementation choices, and working prototypes."
+      ],
+      "resumeTerms": [
+        "product strategy",
+        "roadmap decisions",
+        "regulatory requirements",
+        "business goals"
+      ]
+    },
+    {
+      "id": "intuitive-compliance-risk-experiences",
+      "text": "Partner with engineering and design to build intuitive compliance experiences that help customers stay ahead of requirements and reduce operational risk.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Claims Detector identifies promotional claims, surfaces evidence gaps, and prepares audit-ready annotations before MLR review so teams can address risk earlier.",
+        "Route Validator and FDA Warning Tool concepts translate content risk, approval rules, and regulatory precedent into usable guidance and workflow decisions."
+      ],
+      "resumeTerms": [
+        "compliance workflows",
+        "operational risk",
+        "human review",
+        "engineering and design"
+      ]
+    },
+    {
+      "id": "customer-discovery-requirements-priorities",
+      "text": "Get close to customers, identify compliance pain points and opportunities, and translate insights into clear product requirements and priorities.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Current work translates ambiguous client and stakeholder problems into prioritized requirements, testable product surfaces, demo flows, and build-ready handoffs.",
+        "At Kinesso, a research discipline across more than 20 products used interviews, prototype testing, feedback tools, product analytics, standardized findings, and roadshows to guide product decisions."
+      ],
+      "resumeTerms": [
+        "customer discovery",
+        "product requirements",
+        "prioritized features",
+        "customer feedback"
+      ]
+    },
+    {
+      "id": "concept-launch-cross-functional-execution",
+      "text": "Drive execution from concept through launch while managing tradeoffs and aligning cross-functional teams on scope, timelines, and outcomes.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "One Block Away work spans discovery, requirements, workflow design, front-end build, backend logic, demo readiness, client iteration, roadmap decisions, and production handoff.",
+        "Kinesso enterprise product delivery aligned product, design, engineering, business, research, and distributed teams across the United States and Poland from requirements through adoption."
+      ],
+      "resumeTerms": [
+        "cross-functional execution",
+        "scope and timelines",
+        "tradeoffs",
+        "production handoff"
+      ]
+    },
+    {
+      "id": "data-metrics-impact-improvement",
+      "text": "Use data and product metrics to prioritize work, evaluate impact, and continuously improve the customer experience.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The Kinesso research system combined qualitative interviews and prototype testing with Typeform, Useberry, Heap analytics, standardized findings, and continuous iteration.",
+        "Enterprise analytics and audit products turned performance data into dashboards, benchmarks, recommendations, and decision-ready outputs for more than 7,000 users across 22 brands."
+      ],
+      "resumeTerms": [
+        "product metrics",
+        "Heap analytics",
+        "continuous improvement",
+        "evaluate impact"
+      ]
+    },
+    {
+      "id": "product-management-commercial-software",
+      "text": "Bring 3+ years of product management experience and a track record delivering commercially successful software products.",
+      "priority": "core",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Current product-strategy ownership reaches three years in July 2026 and covers product decisions from discovery through working software and handoff.",
+        "Enterprise analytics and workflow products reached more than 7,000 users across 22 white-label brands, while Claims Detector secured investor backing; direct revenue, retention, or product P&L metrics are not documented."
+      ],
+      "resumeTerms": [
+        "three years",
+        "enterprise adoption",
+        "business impact",
+        "working software"
+      ]
+    },
+    {
+      "id": "regulated-products-compliance-plus",
+      "text": "Bring experience building compliance products or working on regulated products.",
+      "priority": "preferred",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Eleven years of pharma and healthcare experience include current regulated AI product work and earlier MLR-centered account, research, UX, and delivery responsibilities.",
+        "The Pharma AI Platform case study directly shows compliance review, claims evidence, audit annotations, review routing, submission capture, and FDA risk monitoring."
+      ],
+      "resumeTerms": [
+        "regulated products",
+        "FDA/HIPAA/MLR",
+        "audit-ready annotations",
+        "risk monitoring"
+      ]
+    },
+    {
+      "id": "technical-stakeholder-remote-leadership",
+      "text": "Use sufficient technical depth, clear communication, and stakeholder management to influence across functions and remote teams.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Current roles combine AI workflow logic, front-end and backend build decisions, model behavior, demos, technical handoff, and client translation in remote settings.",
+        "Enterprise and healthcare roles aligned product, engineering, design, research, strategy, account, creative, and business stakeholders across distributed teams."
+      ],
+      "resumeTerms": [
+        "technical depth",
+        "stakeholder management",
+        "remote teams",
+        "cross-functional"
+      ]
+    }
+  ],
+  "fitGate": {
+    "supportedOverlap": [
+      "Three years of current product-strategy ownership spanning customer discovery, requirements, prioritization, roadmap decisions, technical execution, validation, and handoff.",
+      "Direct compliance-product evidence across claims identification, evidence gaps, audit-ready annotations, MLR review, submission capture, routing, and FDA risk monitoring.",
+      "Enterprise product scale through analytics and workflow experiences used by more than 7,000 people across 22 white-label brands.",
+      "Direct customer-research and product-analytics evidence across a more than 20-product suite using interviews, prototype testing, Typeform, Useberry, Heap analytics, standardized findings, and roadshows.",
+      "Cross-functional leadership across product, engineering, design, business, research, strategy, account, creative, and remote distributed teams.",
+      "Strong experience simplifying ambiguous, high-stakes workflows into governed product decisions and usable systems."
+    ],
+    "unsupportedRequirements": [
+      "Direct fleet-management, driver-safety, telematics, ELD, hours-of-service, DOT, or FMCSA product experience is not documented.",
+      "Quantified product revenue, retention, margin, or P&L ownership is not documented.",
+      "A conventional SaaS Product Manager title before July 2023 is not documented."
+    ],
+    "actualMismatches": [],
+    "missingEvidence": [
+      "Named fleet customers, physical-operations research, or transportation-compliance outcomes.",
+      "A quantified launch cadence and post-launch metrics tied to revenue, retention, risk reduction, or cost savings.",
+      "Formal ownership of a mature SaaS compliance roadmap and product P&L."
+    ],
+    "coverLetterBridge": {
+      "status": "recommended",
+      "rationale": "A cover letter can make the credible transfer story explicit: three years of current product-strategy ownership, direct regulated compliance-product work, enterprise adoption, research-driven prioritization, and technical cross-functional delivery map well to Motive's compliance roadmap. It should address the absence of fleet-specific experience and quantified SaaS commercial metrics without implying either."
+    },
+    "recommendation": "Proceed as adjacent. Lead with regulated compliance products, customer discovery, research and product metrics, enterprise-scale adoption, and technical cross-functional execution. Do not imply fleet-domain expertise, a conventional long-tenure SaaS PM title, or revenue and P&L results that the evidence does not show."
+  },
+  "resume": {
+    "summary": "Product strategy and compliance-workflow leader with 15 years across regulated healthcare, enterprise software, customer research, and technical delivery. For three years, I have owned AI product decisions from discovery and product requirements through prioritized roadmaps, working software, stakeholder validation, and production handoff. My strength is turning ambiguous regulatory and customer needs into governed experiences that reduce operational risk, support measurable business impact, and improve through evidence and product metrics.",
+    "skills": [
+      {
+        "label": "Product Strategy, Roadmaps & Execution",
+        "description": "Customer discovery, product requirements, prioritized features, roadmap decisions, tradeoffs, scope and timelines, working software, launch support, and production handoff"
+      },
+      {
+        "label": "Compliance Products & Operational Risk",
+        "description": "Regulated products, FDA/HIPAA/MLR workflows, claims evidence, audit-ready annotations, review routing, risk monitoring, governance, and human review"
+      },
+      {
+        "label": "Research, Data & Product Metrics",
+        "description": "Customer feedback, interviews, prototype testing, Typeform, Useberry, Heap analytics, enterprise dashboards, benchmarks, evaluate impact, and continuous improvement"
+      },
+      {
+        "label": "Technical & Cross-Functional Leadership",
+        "description": "Technical depth across AI workflows, front-end and backend logic, engineering and design collaboration, stakeholder management, remote teams, and adoption"
+      }
+    ],
+    "roles": {
+      "hedgehox": [
+        "Lead product strategy and requirements for Claims Detector, translating regulated pharma needs into compliance workflows for claim identification, evidence gaps, audit-ready annotations, and earlier operational risk visibility",
+        "Secured an investor for proprietary Claims Detection software by building the functional POC, shaping the product story, and iterating with stakeholders",
+        "Defined implementation paths across MLR claim review, brief intake, scoping, review routing, submission capture, and FDA risk monitoring with governance and human review built in",
+        "Developed FDA Warning Tool concepts that connect regulatory precedent to usable content-risk guidance and earlier product decisions"
+      ],
+      "one-block-away": [
+        "Own AI product strategy, customer discovery, product requirements, workflow design, front-end build, backend logic, demo readiness, client iteration, and roadmap decisions from first question through working software",
+        "Translate ambiguous customer feedback into prioritized features, testable product surfaces, implementation tradeoffs, business goals, and build-ready production handoff",
+        "Built ListingPal's AI listing-generation POC, turning basic property inputs into listing copy, social posts, ad copy, styling direction, and MLS/SEO-ready language in under 90 seconds",
+        "Built WeReady's Bailey Intelligence dashboard, translating founder inputs, GitHub signals, source health, risk scoring, and evidence trails into decision-ready workflows"
+      ],
+      "kinesso": [
+        "Led enterprise analytics products and experiences while scaling design from 2 to 30 people across the US and Poland, driving enterprise adoption for more than 7,000 users across 22 white-label brands",
+        "Partnered across product, engineering and design, business, and research teams to shape dashboards, data visualization, brand theming, and reusable components from requirements through adoption",
+        "Built a research discipline across a 20-plus-product suite, using interviews, prototype testing, Typeform, Useberry, Heap analytics, standardized findings, and stakeholder roadshows to guide prioritization, evaluate impact, and continuous improvement",
+        "Built the Digital Experience Audit workflow for channel scoring, product metrics, benchmarks, recommendations, data visualization, and presentation-ready client outputs"
+      ],
+      "omnicom": [
+        "Supported oncology accounts as a freelance UX designer, translating regulated business and user needs into clearer product flows, content structures, and implementation recommendations",
+        "Partnered across account, strategy, creative, engineering, and design teams to align client outcomes, user experience, and build-ready decisions"
+      ],
+      "heartbeat": [
+        "Led customer research and experience strategy for pharma and healthcare products, translating stakeholder input, competitive audits, and user needs into product direction",
+        "Created journey maps, site maps, user flows, wireframes, and prototypes for patient, HCP, and internal brand-team experiences across regulatory requirements",
+        "Partnered with strategy, creative, account, and engineering teams to move evidence into cross-functional execution, clear priorities, and build-ready product experiences"
+      ],
+      "account-management": [
+        "Managed Fortune 500 pharma and healthcare clients with USD 2M to 50M-plus budgets across complex regulated portfolios, aligning stakeholder priorities, business impact, and delivery",
+        "Served as one of two account consumer leads on FCB Health's largest pharma account across TV, radio, digital, gaming, Times Square, brand planning, and MLR review",
+        "Translated client strategy into briefs, requirements, priorities, scope and timelines, and MLR-ready delivery across account, creative, UX, analytics, and development teams"
+      ]
+    }
+  },
+  "hero": {
+    "eyebrow": "Motive Product Manager, Compliance",
+    "tags": [
+      "Regulated product strategy",
+      "Customer evidence to roadmap",
+      "Technical delivery & measurable impact"
+    ],
+    "intro": "I fit Motive's compliance product role through the combination it needs most: regulated product judgment, customer-led prioritization, and technical execution. For three years, I have owned AI product decisions from discovery and requirements through working software and roadmap choices; I have also built pharma compliance workflows around claims evidence, review routing, submissions, and regulatory risk. Earlier enterprise product work reached more than 7,000 users across 22 brands and paired qualitative research with product analytics to guide improvement."
+  },
+  "contact": {
+    "prompt": "Hiring a product manager who can turn regulatory complexity and customer pain points into clear roadmaps, lower-risk workflows, and measurable product decisions? I would like to help Motive advance its compliance portfolio; email is the fastest way to reach me.",
+    "signoff": "Regulated product judgment · customer-led roadmaps · technical execution"
+  },
+  "constraints": {
+    "doNotClaim": [
+      "Direct fleet management product experience",
+      "Direct transportation compliance product experience",
+      "DOT compliance expertise",
+      "FMCSA compliance expertise",
+      "ELD or hours-of-service expertise",
+      "Telematics product ownership",
+      "Formal SaaS product P&L ownership",
+      "Quantified software revenue or retention ownership",
+      "Motive customer research"
+    ],
+    "blockedTerms": [
+      "fleet compliance expert",
+      "transportation compliance expert",
+      "DOT expert",
+      "FMCSA expert",
+      "ELD expert",
+      "telematics product owner",
+      "owned product P&L",
+      "Motive product veteran"
+    ]
+  },
+  "privacy": {
+    "publicSafe": true,
+    "notes": "Contains only the public pasted job description and sanitized evidence from the public resume and portfolio. It includes no recruiter contact details, private application answers, compensation boundaries, or private eligibility information."
+  },
+  "qa": {
+    "status": "qa-passed",
+    "builtAt": "2026-07-21T23:12:06.044Z",
+    "configInputSha256": "e367d60ca80aa999f17b7bc8e21db4132321c9e3f7a4e1919d3e2ad39fa629a0",
+    "sourceResumeSha256": "375cc6566f5bbad5b95be9da551dfe87824378fb252222409d29ef32d334ca25",
+    "artifactHashes": {
+      "routeSha256": "3d5b07c7b50c0612dbcfbfdc495913186bb13ed597ea810a5df92c797bfdfc48",
+      "resumePdfSha256": "f7dc8e0142d9807241c4f074b7fe5f51389b0d5c3a5aa298b59845b6f61fe67e",
+      "scopedProjectSha256": {}
+    },
+    "renderer": {
+      "browser": {
+        "name": "chrome-headless-shell",
+        "version": "Google Chrome for Testing 149.0.7827.55"
+      },
+      "htmlPath": "tmp/tailored-resumes/motive-product-manager-compliance.html",
+      "pdfPath": "output/pdf/Wally-Mostafa-Motive-Product-Manager-Compliance-Resume.pdf"
+    },
+    "ats": {
+      "ok": true,
+      "pdfPath": "output/pdf/Wally-Mostafa-Motive-Product-Manager-Compliance-Resume.pdf",
+      "pageCount": 2,
+      "fileSize": 132251,
+      "annotations": [
+        {
+          "page": 1,
+          "uri": "mailto:wmostafa12@gmail.com"
+        },
+        {
+          "page": 1,
+          "uri": "https://linkedin.com/in/wallymo"
+        },
+        {
+          "page": 1,
+          "uri": "https://wallymo.github.io/motive-product-manager-compliance/"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/6748"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/4629"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.red-dot.org/project/dxa-digital-experience-audit-55219"
+        }
+      ],
+      "coverage": [
+        {
+          "id": "compliance-product-strategy-roadmap",
+          "requirement": "Define and evolve product strategy and roadmap for compliance products in alignment with customer needs, regulatory requirements, and business goals.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "product strategy",
+            "roadmap decisions",
+            "regulatory requirements",
+            "business goals"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "intuitive-compliance-risk-experiences",
+          "requirement": "Partner with engineering and design to build intuitive compliance experiences that help customers stay ahead of requirements and reduce operational risk.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "compliance workflows",
+            "operational risk",
+            "human review",
+            "engineering and design"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "customer-discovery-requirements-priorities",
+          "requirement": "Get close to customers, identify compliance pain points and opportunities, and translate insights into clear product requirements and priorities.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "customer discovery",
+            "product requirements",
+            "prioritized features",
+            "customer feedback"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "concept-launch-cross-functional-execution",
+          "requirement": "Drive execution from concept through launch while managing tradeoffs and aligning cross-functional teams on scope, timelines, and outcomes.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "cross-functional execution",
+            "scope and timelines",
+            "tradeoffs",
+            "production handoff"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "data-metrics-impact-improvement",
+          "requirement": "Use data and product metrics to prioritize work, evaluate impact, and continuously improve the customer experience.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "product metrics",
+            "Heap analytics",
+            "continuous improvement",
+            "evaluate impact"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "product-management-commercial-software",
+          "requirement": "Bring 3+ years of product management experience and a track record delivering commercially successful software products.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "three years",
+            "enterprise adoption",
+            "business impact",
+            "working software"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "regulated-products-compliance-plus",
+          "requirement": "Bring experience building compliance products or working on regulated products.",
+          "priority": "preferred",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "regulated products",
+            "FDA/HIPAA/MLR",
+            "audit-ready annotations",
+            "risk monitoring"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "technical-stakeholder-remote-leadership",
+          "requirement": "Use sufficient technical depth, clear communication, and stakeholder management to influence across functions and remote teams.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "technical depth",
+            "stakeholder management",
+            "remote teams",
+            "cross-functional"
+          ],
+          "missingTerms": []
+        }
+      ],
+      "failures": [],
+      "warnings": []
+    },
+    "route": {
+      "viewports": [
+        {
+          "name": "desktop",
+          "screenshot": "tmp/qa/motive-product-manager-compliance/desktop.png",
+          "errors": []
+        },
+        {
+          "name": "mobile",
+          "screenshot": "tmp/qa/motive-product-manager-compliance/mobile.png",
+          "errors": []
+        }
+      ],
+      "errors": []
+    }
+  }
+}

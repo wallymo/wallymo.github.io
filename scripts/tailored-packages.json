@@ -1135,6 +1135,26 @@
       "publishStatus": "tracked-unverified"
     },
     {
+      "workflowVersion": 2,
+      "slug": "motive-product-manager-compliance",
+      "roleTitle": "Motive Product Manager, Compliance",
+      "artifactStem": "Motive-Product-Manager-Compliance",
+      "configPath": "scripts/packages/motive-product-manager-compliance.json",
+      "targetLane": "regulated-compliance-product-management",
+      "evidenceMode": "balanced",
+      "fitClass": "adjacent",
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-01.html",
+        "project-04.html",
+        "project-06.html"
+      ],
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Motive-Product-Manager-Compliance-Resume.pdf",
+      "publishStatus": "local-only",
+      "qaStatus": "qa-passed",
+      "builtAt": "2026-07-21T23:12:06.044Z"
+    },
+    {
       "slug": "noom-design-systems-contract",
       "roleTitle": "Noom Senior Design Systems Contractor",
       "fitClass": "adjacent",
