@@ -75,9 +75,26 @@
         "project-03.html"
       ],
       "resumePdfPath": "output/pdf/Wally-Mostafa-Accela-Senior-Consultant-Resume.pdf",
-      "publishStatus": "local-only",
+      "publishStatus": "live-verified",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-07-21T23:16:15.280Z"
+      "builtAt": "2026-07-21T23:16:15.280Z",
+      "verification": {
+        "verifiedAt": "2026-07-21T23:22:37.992Z",
+        "routeUrl": "https://wallymo.github.io/accela-senior-consultant/",
+        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-Accela-Senior-Consultant-Resume.pdf",
+        "configUrl": "https://wallymo.github.io/scripts/packages/accela-senior-consultant.json",
+        "projectUrls": [
+          "https://wallymo.github.io/project-01.html",
+          "https://wallymo.github.io/project-04.html",
+          "https://wallymo.github.io/project-03.html"
+        ],
+        "configSha256": "ee2f23346d61d70537dc0291b6f4c3ccf627c7cec6be4a2f9726a3306c64b85e",
+        "pdfSha256": "3dd9240b7a24b9474c1ee88d113be32e5d2bb85bd2dc68706a9623328b6319bd",
+        "routeSha256": "c0440b5747d4faf0418bcee36afa4ff39902374e6f32eaee06561c1fc9a6aba8",
+        "scopedProjectSha256": {},
+        "configInputSha256": "4d359b7824b264bf15427588a2f3679418456ed7c5dee7041819cb78bceeeef0",
+        "qaBuiltAt": "2026-07-21T23:16:15.280Z"
+      }
     },
     {
       "slug": "accenture-healthcare-ai-value-strategy",
