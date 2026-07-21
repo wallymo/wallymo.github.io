@@ -1167,9 +1167,26 @@
         "project-06.html"
       ],
       "resumePdfPath": "output/pdf/Wally-Mostafa-Motive-Product-Manager-Compliance-Resume.pdf",
-      "publishStatus": "local-only",
+      "publishStatus": "live-verified",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-07-21T23:12:06.044Z"
+      "builtAt": "2026-07-21T23:12:06.044Z",
+      "verification": {
+        "verifiedAt": "2026-07-21T23:18:38.684Z",
+        "routeUrl": "https://wallymo.github.io/motive-product-manager-compliance/",
+        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-Motive-Product-Manager-Compliance-Resume.pdf",
+        "configUrl": "https://wallymo.github.io/scripts/packages/motive-product-manager-compliance.json",
+        "projectUrls": [
+          "https://wallymo.github.io/project-01.html",
+          "https://wallymo.github.io/project-04.html",
+          "https://wallymo.github.io/project-06.html"
+        ],
+        "configSha256": "cc86343f20f2e9fd8862791e4524f085348097e75a84f752bf89d34fd0110edb",
+        "pdfSha256": "f7dc8e0142d9807241c4f074b7fe5f51389b0d5c3a5aa298b59845b6f61fe67e",
+        "routeSha256": "3d5b07c7b50c0612dbcfbfdc495913186bb13ed597ea810a5df92c797bfdfc48",
+        "scopedProjectSha256": {},
+        "configInputSha256": "e367d60ca80aa999f17b7bc8e21db4132321c9e3f7a4e1919d3e2ad39fa629a0",
+        "qaBuiltAt": "2026-07-21T23:12:06.044Z"
+      }
     },
     {
       "slug": "noom-design-systems-contract",
