@@ -60,6 +60,26 @@
       "notes": "Adjacent resume-primary fit: 7+ years integrated Fortune 500 pharma campaign management ($2M-$50M budgets, briefs/timelines/MLR across cross-functional teams), current AI-workflow building for marketing operations (intake, scoping, review routing, content variation at scale), and design-system standardization across 22 brands/7,000+ users are supported; B2B SaaS demand generation, martech platforms (Marketo/HubSpot), post-2018 campaign-ops tenure, and formal field-marketing enablement are not claimed. Config + raw JD persisted at scripts/packages/abnormal-ai-campaign-program-manager.json."
     },
     {
+      "workflowVersion": 2,
+      "slug": "accela-senior-consultant",
+      "roleTitle": "Accela Senior Consultant",
+      "artifactStem": "Accela-Senior-Consultant",
+      "configPath": "scripts/packages/accela-senior-consultant.json",
+      "targetLane": "enterprise-software-implementation-consulting",
+      "evidenceMode": "resume-primary",
+      "fitClass": "adjacent",
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-01.html",
+        "project-04.html",
+        "project-03.html"
+      ],
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Accela-Senior-Consultant-Resume.pdf",
+      "publishStatus": "local-only",
+      "qaStatus": "qa-passed",
+      "builtAt": "2026-07-21T23:16:15.280Z"
+    },
+    {
       "slug": "accenture-healthcare-ai-value-strategy",
       "roleTitle": "Healthcare AI Value Strategy Consultant",
       "fitClass": "unclassified",

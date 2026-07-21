@@ -1,0 +1,484 @@
+{
+  "workflowVersion": 2,
+  "contractRevision": 2,
+  "slug": "accela-senior-consultant",
+  "roleTitle": "Accela Senior Consultant",
+  "artifactStem": "Accela-Senior-Consultant",
+  "fitClass": "adjacent",
+  "routeMode": "canonical-projects",
+  "selectedProjects": [
+    "project-01.html",
+    "project-04.html",
+    "project-03.html"
+  ],
+  "job": {
+    "company": "Accela",
+    "roleTitle": "Senior Consultant",
+    "jobId": "not-listed",
+    "jobUrl": null,
+    "sourceChannel": "chat-pasted-jd",
+    "dateCaptured": "2026-07-21",
+    "location": "Not stated in the pasted job description",
+    "atsVendor": "unknown",
+    "rawJd": "Accela is seeking a Senior Consultant to join its Professional Services team. The Senior Consultant is a customer-facing role blending business analysis and requirements facilitation with hands-on configuration and cross-functional coordination. Responsibilities include leading requirements workshops, interviews, and working sessions; uncovering business goals, pain points, constraints, and success criteria; documenting functional and non-functional requirements, business rules, assumptions, and dependencies; translating requirements into process flows, requirements, and user stories; developing current-state and future-state business process flows; performing system configuration aligned to approved requirements and Accela best practices; coordinating with technical, data, and integration teams; guiding customers toward standard solutions; partnering with project managers on scope, risks, and decisions; supporting UAT planning, defect triage, and resolution; and validating configuration, process alignment, and operational readiness for go-live. Required qualifications include a strong background in business analysis, requirements elicitation, and stakeholder facilitation in complex implementation projects; experience developing and using business process flows; hands-on experience configuring enterprise software based on discovery requirements; cross-functional technical coordination; industry-standard requirements documentation; conceptual thinking with attention to configuration and documentation detail; practical problem solving; strong written and verbal communication; experience within defined project scope and change-control discussions; and comfort in fast-paced, multi-stakeholder delivery environments. Desired qualifications include professional services or consulting experience, government or public-sector expertise, mentoring or coaching other consultants, and cross-functional workflow documentation for technical design and integration planning. Accela provides cloud-based government software for planning, building, service request management, efficiency, transparency, and citizen engagement. The annual base salary range is $100,000-$120,000, and the position is eligible for a discretionary annual bonus and benefits."
+  },
+  "classification": {
+    "targetLane": "enterprise-software-implementation-consulting",
+    "evidenceMode": "resume-primary",
+    "primarySource": "resume",
+    "supportingSource": "portfolio",
+    "hardGateStatus": "pass",
+    "hardGates": [
+      {
+        "gate": "Strong business analysis, requirements elicitation, and stakeholder facilitation experience",
+        "status": "pass",
+        "evidence": "The resume and portfolio directly document client discovery, scoped product requirements, stakeholder interviews, workshops, user research, workflow mapping, and translating business needs into build-ready product decisions."
+      },
+      {
+        "gate": "Hands-on configuration of enterprise software solutions based on discovery requirements",
+        "status": "pass",
+        "evidence": "Current work includes building configurable workflow software around regional rate cards, brands, review routing, content risk, approvals, and conditional intake, while prior enterprise product work supported analytics used by 7,000+ users across 22 white-label brands. The evidence is adjacent to packaged-platform configuration but satisfies the underlying hands-on configuration and implementation requirement without claiming Accela experience."
+      },
+      {
+        "gate": "Ability to coordinate business and technical stakeholders in complex implementations",
+        "status": "pass",
+        "evidence": "Fifteen years of client strategy, product, UX, regulated delivery, and current end-to-end software implementation show direct coordination across clients, product, strategy, creative, engineering, finance, operations, and leadership."
+      },
+      {
+        "gate": "Government, public-sector, or Accela domain experience",
+        "status": "not-applicable",
+        "evidence": "The posting lists government or public-sector expertise as desired rather than required. No public-sector or Accela platform claim is added to recruiter-facing artifacts."
+      }
+    ]
+  },
+  "requirements": [
+    {
+      "id": "requirements-elicitation-and-facilitation",
+      "text": "Lead workshops, interviews, and working sessions that uncover stakeholder goals, constraints, requirements, and success criteria.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Current AI implementation work translates messy stakeholder requests into scoped product requirements and working tools.",
+        "The Kinesso research practice used interviews, workshops, standardized findings, and feedback loops across more than 20 products.",
+        "Seven-plus years of client strategy work translated business goals into briefs, requirements, timelines, and regulated deliverables."
+      ],
+      "resumeTerms": [
+        "requirements",
+        "stakeholder"
+      ]
+    },
+    {
+      "id": "process-flows-and-implementation-artifacts",
+      "text": "Develop current-state and future-state process flows, user stories, and other implementation-ready artifacts that support alignment and solution design.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Heartbeat experience directly includes journey maps, site maps, user flows, wireframes, and prototypes.",
+        "The Pharma AI Platform maps review behavior and translates scoped requirements into functional workflows and build-ready logic.",
+        "The Kinesso research program embedded research, user testing, revisions, validation, and handoff into planned workstreams."
+      ],
+      "resumeTerms": [
+        "process flows",
+        "user flows"
+      ]
+    },
+    {
+      "id": "enterprise-software-configuration",
+      "text": "Configure enterprise software according to approved requirements, business rules, and implementation best practices.",
+      "priority": "core",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Scope Generator supports configurable rate cards by region, brands and sub-brands, natural-language scope changes, costing logic, and spreadsheet export.",
+        "Route Validator and Brief Generator use conditional inputs, routing logic, content risk, approvals, sign-off, and integration paths.",
+        "Enterprise analytics and design-system work created reusable patterns across 22 white-label brands, but the current evidence does not show administration of the Accela platform or another named commercial SaaS product."
+      ],
+      "resumeTerms": [
+        "workflow configuration",
+        "business logic"
+      ]
+    },
+    {
+      "id": "business-technical-coordination",
+      "text": "Bridge business stakeholders and technical, data, and integration teams so intent, constraints, dependencies, and impacts remain clear.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Current product work owns discovery, UX, workflow design, front-end build, backend logic, demo readiness, and client iteration.",
+        "Heartbeat work partnered across strategy, creative, account, and engineering to turn research into build-ready experiences.",
+        "Account-management work coordinated client and brand strategy across account, creative, UX, development, and production teams."
+      ],
+      "resumeTerms": [
+        "cross-functional",
+        "technical teams"
+      ]
+    },
+    {
+      "id": "scope-risk-and-change-discussions",
+      "text": "Work within defined scope, surface risks early, and support practical change-control and delivery decisions.",
+      "priority": "core",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Seven-plus years of client leadership included budgets from $2M to $50M+, production requirements, timelines, feedback, and regulated deliverables.",
+        "Current work defines scopes, roadmap decisions, costing logic, dependencies, and implementation handoff.",
+        "Formal change-control ownership is not named in the current resume or portfolio."
+      ],
+      "resumeTerms": [
+        "scope definition",
+        "timelines"
+      ]
+    },
+    {
+      "id": "testing-validation-and-readiness",
+      "text": "Support UAT, defect resolution, configuration validation, and operational readiness for go-live.",
+      "priority": "core",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Portfolio evidence includes prototype testing, user testing, validation, iterative feedback, beta groups, and implementation handoff.",
+        "Current POC work maps reviewer behavior and tests what users need before production handoff.",
+        "Formal UAT planning, defect-triage ownership, and go-live leadership are not documented."
+      ],
+      "resumeTerms": [
+        "prototype validation",
+        "user testing"
+      ]
+    },
+    {
+      "id": "professional-services-consulting",
+      "text": "Operate credibly in a customer-facing professional-services or consulting environment.",
+      "priority": "preferred",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The resume documents seven-plus years of Fortune 500 client account leadership and current client-led software consulting and implementation work.",
+        "Work spans discovery, scoping, presentations, product decisions, delivery coordination, and stakeholder adoption."
+      ],
+      "resumeTerms": [
+        "client-facing",
+        "consulting"
+      ]
+    },
+    {
+      "id": "consultant-mentoring-and-standards",
+      "text": "Mentor consultants on facilitation, documentation standards, and customer engagement practices.",
+      "priority": "preferred",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Scaled a product-design function from 2 to 30 across the US and Poland.",
+        "Built a repeatable research discipline with standardized reports, shared libraries, workshops, and adoption support.",
+        "Direct coaching of professional-services consultants is not documented."
+      ],
+      "resumeTerms": [
+        "team scaling",
+        "workshops"
+      ]
+    },
+    {
+      "id": "government-public-sector-domain",
+      "text": "Bring government or public-sector domain expertise to Accela implementations.",
+      "priority": "preferred",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "resumeTerms": [
+        "government software",
+        "public sector"
+      ]
+    }
+  ],
+  "fitGate": {
+    "supportedOverlap": [
+      "Direct discovery and requirements translation from ambiguous stakeholder requests into scoped product requirements, user flows, configurable workflow logic, and working software.",
+      "Repeatable stakeholder research and facilitation across 20+ enterprise products using interviews, workshops, standardized findings, user testing, beta feedback, and validation handoffs.",
+      "Hands-on implementation work spanning workflow design, front-end build, backend logic, prototype validation, client iteration, and production handoff.",
+      "Enterprise-scale product leadership for analytics used by 7,000+ users across 22 white-label brands, backed by reusable design systems and structured audit workflows.",
+      "Seven-plus years of Fortune 500 client leadership with $2M-$50M+ budgets and coordination across business, creative, product, UX, engineering, finance, and operations."
+    ],
+    "unsupportedRequirements": [
+      "Accela platform configuration and Accela best-practice implementation experience are not documented.",
+      "Formal UAT planning, defect-triage ownership, and go-live leadership are not documented.",
+      "Government or public-sector domain expertise is not documented.",
+      "BPMN, named process-modeling standards, formal use-case ownership, and user-story authorship are not explicitly documented."
+    ],
+    "actualMismatches": [
+      "The documented implementation center is custom AI and enterprise product workflow delivery rather than configuration of a packaged government SaaS platform.",
+      "The candidate's regulated domain depth is healthcare and pharma rather than local government operations."
+    ],
+    "missingEvidence": [
+      "Named commercial-platform configuration projects, configuration workbooks, environment promotion, or administrative credentials.",
+      "Formal change-control records, UAT plans, defect logs, release-readiness checklists, and measured go-live outcomes.",
+      "Direct mentoring of professional-services consultants on facilitation and documentation standards."
+    ],
+    "coverLetterBridge": {
+      "status": "recommended",
+      "rationale": "We can make the case with a cover letter by connecting 15 years of client translation, structured discovery, workflow mapping, configurable software delivery, enterprise-scale product work, and regulated implementation discipline to Accela's need for a business-to-technical implementation bridge. The cover letter must address the packaged-platform, formal UAT/go-live, and government-domain gaps without implying prior Accela or public-sector experience."
+    },
+    "recommendation": "Proceed as adjacent. Lead with requirements facilitation, process and workflow translation, configurable product logic, enterprise delivery, and cross-functional client leadership. Keep the Accela platform, packaged-SaaS administration, formal UAT/defect/go-live ownership, and public-sector gaps explicit."
+  },
+  "resume": {
+    "summary": "Client-facing implementation and business-analysis lead with 15 years across client strategy, enterprise product delivery, and regulated software workflows. I turn ambiguous stakeholder needs into scoped requirements, process flows, configurable product logic, and build-ready implementation decisions. My strength is aligning business and technical teams, validating workflows through research and prototypes, and coordinating complex delivery from discovery through handoff.",
+    "skills": [
+      {
+        "label": "Business Analysis & Stakeholder Facilitation",
+        "description": "Client discovery, requirements elicitation, interviews, workshops, business rules, process flows, user flows, journey maps, assumptions, dependencies, and decision-ready documentation"
+      },
+      {
+        "label": "Workflow Configuration & Solution Implementation",
+        "description": "Configurable business logic, conditional intake, review routing, rate-card and brand setup, prototype validation, user testing, client iteration, and implementation handoff"
+      },
+      {
+        "label": "Cross-Functional Scope & Delivery",
+        "description": "Scope definition, technical-team coordination, timelines, risks, stakeholder alignment, product decisions, front-end and backend delivery, and production readiness"
+      },
+      {
+        "label": "Enterprise & Regulated Product Delivery",
+        "description": "Enterprise analytics for 7,000+ users across 22 brands, FDA/HIPAA/MLR workflows, reusable systems, documentation standards, adoption, and team scaling"
+      }
+    ],
+    "roles": {
+      "hedgehox": [
+        "Converted pharma agency needs into web-based AI tools for MLR claim review, brief intake, scoping, review routing, submission capture, and FDA signal monitoring",
+        "Translated messy stakeholder requests into scoped product requirements, mapped reviewer behavior, and validated workflow decisions through functional POCs and client iteration",
+        "Designed Claims Detector workflows that identify promotional claims, surface evidence gaps, and pre-populate audit-ready annotations before MLR submission",
+        "Built Scope Generator with configurable regional rate cards, brands, sub-brands, natural-language scope changes, costing logic, and spreadsheet export",
+        "Designed conditional brief-intake and review-routing logic around content risk, approval requirements, comments, sign-off, and implementation paths"
+      ],
+      "one-block-away": [
+        "Build client-led AI POCs that turn unclear business questions into testable product surfaces, demo flows, and roadmap decisions",
+        "Own client discovery, scope definition, UX, AI workflow design, front-end build, backend logic, demo readiness, and iteration from first ask through working prototype",
+        "Built WeReady's Bailey Intelligence dashboard, translating founder inputs, GitHub signals, source health, risk scoring, and evidence trails into structured readiness workflows"
+      ],
+      "kinesso": [
+        "Scaled product design from 2 to 30 people across the US and Poland for enterprise analytics used by 7,000+ users across 22 white-label brands",
+        "Built a repeatable research discipline across 20+ products and four suites using stakeholder interviews, standardized findings, workshops, user testing, beta feedback, and validation handoffs",
+        "Led UX and design-system strategy for MIE data visualization, dashboard building, brand theming, and reusable analytics components",
+        "Built the Digital Experience Audit process for channel scoring, benchmarks, recommendations, visualization, and presentation-ready client outputs"
+      ],
+      "omnicom": [
+        "Supported oncology accounts as a freelance UX designer, combining UX design and account-management experience to strengthen regulated healthcare work",
+        "Championed UX best practices across account, strategy, creative, and delivery conversations, translating brand goals into clearer user flows, content structure, and digital recommendations"
+      ],
+      "heartbeat": [
+        "Led UX research and experience strategy for pharma and healthcare work, translating stakeholder input, competitive audits, and user needs into digital product direction",
+        "Created journey maps, site maps, user flows, wireframes, and prototypes for patient, HCP, and internal brand-team experiences across regulated healthcare programs",
+        "Partnered with strategy, creative, account, and engineering teams to move UX recommendations from research findings into build-ready product and campaign experiences"
+      ],
+      "account-management": [
+        "7+ years managing Fortune 500 pharma and healthcare clients with USD 2M-50M+ budgets across CNS/neurology, psychiatry, cardiovascular/metabolic, and sleep/wakefulness brands including NUVIGIL, Namenda XR, Lipitor, and Zoloft",
+        "One of two account consumer leads on FCB Health's largest pharma account across TV, radio, digital, gaming, Times Square, unbranded campaigns, brand planning, and MLR review",
+        "Translated client and brand strategy into briefs, creative feedback, production requirements, timelines, and MLR-ready deliverables across account, creative, UX, and development teams"
+      ]
+    }
+  },
+  "hero": {
+    "eyebrow": "Accela Senior Consultant",
+    "tags": [
+      "Requirements facilitation",
+      "Workflow configuration",
+      "Business-to-technical delivery"
+    ],
+    "intro": "Accela needs a senior consultant who can turn stakeholder goals into clear requirements, practical workflow decisions, and coordinated implementation. I bring 15 years across client strategy, enterprise product delivery, and regulated software workflows, including configurable tools built from discovery through handoff. My proof includes a repeatable research practice across 20+ products, enterprise analytics used by 7,000+ people across 22 brands, and seven years leading complex Fortune 500 client work."
+  },
+  "contact": {
+    "prompt": "Hiring a senior consultant who can facilitate requirements, translate complex workflows, and keep business and technical teams aligned through implementation? I would like to help Accela deliver that work. Email is the fastest way to reach me.",
+    "signoff": "Requirements facilitation · configurable workflows · coordinated delivery"
+  },
+  "constraints": {
+    "doNotClaim": [
+      "Accela platform configuration",
+      "Government software implementation",
+      "Public sector consulting",
+      "UAT ownership",
+      "Defect triage ownership",
+      "Go-live leadership",
+      "BPMN certification"
+    ],
+    "blockedTerms": [
+      "Accela Civic Platform",
+      "government domain expert",
+      "owned UAT",
+      "managed defect triage",
+      "led go-live"
+    ]
+  },
+  "privacy": {
+    "publicSafe": true,
+    "notes": "Contains only the public job-description text and sanitized evidence from the public resume and portfolio. It includes no recruiter contact details, private application answers, compensation boundaries, or private eligibility information."
+  },
+  "qa": {
+    "status": "qa-passed",
+    "builtAt": "2026-07-21T23:16:15.280Z",
+    "configInputSha256": "4d359b7824b264bf15427588a2f3679418456ed7c5dee7041819cb78bceeeef0",
+    "sourceResumeSha256": "375cc6566f5bbad5b95be9da551dfe87824378fb252222409d29ef32d334ca25",
+    "artifactHashes": {
+      "routeSha256": "c0440b5747d4faf0418bcee36afa4ff39902374e6f32eaee06561c1fc9a6aba8",
+      "resumePdfSha256": "3dd9240b7a24b9474c1ee88d113be32e5d2bb85bd2dc68706a9623328b6319bd",
+      "scopedProjectSha256": {}
+    },
+    "renderer": {
+      "browser": {
+        "name": "chrome-headless-shell",
+        "version": "Google Chrome for Testing 149.0.7827.55"
+      },
+      "htmlPath": "tmp/tailored-resumes/accela-senior-consultant.html",
+      "pdfPath": "output/pdf/Wally-Mostafa-Accela-Senior-Consultant-Resume.pdf"
+    },
+    "ats": {
+      "ok": true,
+      "pdfPath": "output/pdf/Wally-Mostafa-Accela-Senior-Consultant-Resume.pdf",
+      "pageCount": 2,
+      "fileSize": 132240,
+      "annotations": [
+        {
+          "page": 1,
+          "uri": "mailto:wmostafa12@gmail.com"
+        },
+        {
+          "page": 1,
+          "uri": "https://linkedin.com/in/wallymo"
+        },
+        {
+          "page": 1,
+          "uri": "https://wallymo.github.io/accela-senior-consultant/"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/6748"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/4629"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.red-dot.org/project/dxa-digital-experience-audit-55219"
+        }
+      ],
+      "coverage": [
+        {
+          "id": "requirements-elicitation-and-facilitation",
+          "requirement": "Lead workshops, interviews, and working sessions that uncover stakeholder goals, constraints, requirements, and success criteria.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "requirements",
+            "stakeholder"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "process-flows-and-implementation-artifacts",
+          "requirement": "Develop current-state and future-state process flows, user stories, and other implementation-ready artifacts that support alignment and solution design.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "process flows",
+            "user flows"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "enterprise-software-configuration",
+          "requirement": "Configure enterprise software according to approved requirements, business rules, and implementation best practices.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "workflow configuration",
+            "business logic"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "business-technical-coordination",
+          "requirement": "Bridge business stakeholders and technical, data, and integration teams so intent, constraints, dependencies, and impacts remain clear.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "cross-functional",
+            "technical teams"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "scope-risk-and-change-discussions",
+          "requirement": "Work within defined scope, surface risks early, and support practical change-control and delivery decisions.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "scope definition",
+            "timelines"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "testing-validation-and-readiness",
+          "requirement": "Support UAT, defect resolution, configuration validation, and operational readiness for go-live.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "prototype validation",
+            "user testing"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "professional-services-consulting",
+          "requirement": "Operate credibly in a customer-facing professional-services or consulting environment.",
+          "priority": "preferred",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "client-facing"
+          ],
+          "missingTerms": [
+            "consulting"
+          ]
+        },
+        {
+          "id": "consultant-mentoring-and-standards",
+          "requirement": "Mentor consultants on facilitation, documentation standards, and customer engagement practices.",
+          "priority": "preferred",
+          "evidenceStatus": "adjacent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "team scaling",
+            "workshops"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "government-public-sector-domain",
+          "requirement": "Bring government or public-sector domain expertise to Accela implementations.",
+          "priority": "preferred",
+          "evidenceStatus": "none",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "government software",
+            "public sector"
+          ]
+        }
+      ],
+      "failures": [],
+      "warnings": []
+    },
+    "route": {
+      "viewports": [
+        {
+          "name": "desktop",
+          "screenshot": "tmp/qa/accela-senior-consultant/desktop.png",
+          "errors": []
+        },
+        {
+          "name": "mobile",
+          "screenshot": "tmp/qa/accela-senior-consultant/mobile.png",
+          "errors": []
+        }
+      ],
+      "errors": []
+    }
+  }
+}
