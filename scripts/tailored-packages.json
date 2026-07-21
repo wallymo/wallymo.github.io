@@ -714,9 +714,26 @@
         "project-04.html"
       ],
       "resumePdfPath": "output/pdf/Wally-Mostafa-FINN-Partners-Senior-Strategist-Resume.pdf",
-      "publishStatus": "local-only",
+      "publishStatus": "live-verified",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-07-21T23:12:58.207Z"
+      "builtAt": "2026-07-21T23:12:58.207Z",
+      "verification": {
+        "verifiedAt": "2026-07-21T23:16:58.714Z",
+        "routeUrl": "https://wallymo.github.io/finn-partners-senior-strategist/",
+        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-FINN-Partners-Senior-Strategist-Resume.pdf",
+        "configUrl": "https://wallymo.github.io/scripts/packages/finn-partners-senior-strategist.json",
+        "projectUrls": [
+          "https://wallymo.github.io/project-01.html",
+          "https://wallymo.github.io/project-06.html",
+          "https://wallymo.github.io/project-04.html"
+        ],
+        "configSha256": "6a5de6e102baf3880b97ac309823b9260b353994905a46377863f3b24ee32566",
+        "pdfSha256": "fb6f857879d8f3871900738fba1d76fee73d846db7d07b2e1da5af4d18a90520",
+        "routeSha256": "f8832317afc75b8d7b0cd9911a60a25b4998393ee237fcffdb6b950ada57613b",
+        "scopedProjectSha256": {},
+        "configInputSha256": "2446ed4f37f3ad5bf383919620f375550d4cf62a3a09562ed65d0e4310717671",
+        "qaBuiltAt": "2026-07-21T23:12:58.207Z"
+      }
     },
     {
       "slug": "firstup-mobile-ux-designer",
