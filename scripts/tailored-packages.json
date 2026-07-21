@@ -1121,9 +1121,26 @@
         "project-02.html"
       ],
       "resumePdfPath": "output/pdf/Wally-Mostafa-Playlist-Senior-Product-Manager-Consumer-Platform-Resume.pdf",
-      "publishStatus": "local-only",
+      "publishStatus": "live-verified",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-07-21T00:03:17.135Z"
+      "builtAt": "2026-07-21T00:03:17.135Z",
+      "verification": {
+        "verifiedAt": "2026-07-21T00:05:23.391Z",
+        "routeUrl": "https://wallymo.github.io/playlist-senior-product-manager-consumer-platform/",
+        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-Playlist-Senior-Product-Manager-Consumer-Platform-Resume.pdf",
+        "configUrl": "https://wallymo.github.io/scripts/packages/playlist-senior-product-manager-consumer-platform.json",
+        "projectUrls": [
+          "https://wallymo.github.io/project-05.html",
+          "https://wallymo.github.io/project-03.html",
+          "https://wallymo.github.io/project-02.html"
+        ],
+        "configSha256": "3827de8f5522ab326de400de89513ecf4878541a9cec43b42eefe762c67fd62f",
+        "pdfSha256": "b7ed8cbc4440c92bcf8183aa219b3a1a635d3928c0b4fd5b6f2e89f41b378952",
+        "routeSha256": "f76aa8f9b63674b0bb944f5c28b4bc70be71d3a03759ff54d3fe0fbf9902628a",
+        "scopedProjectSha256": {},
+        "configInputSha256": "0cff94687345557309ae1a2f6d6b05f66ffcd13284e9429772bbfaacfa762ea8",
+        "qaBuiltAt": "2026-07-21T00:03:17.135Z"
+      }
     },
     {
       "workflowVersion": 2,
