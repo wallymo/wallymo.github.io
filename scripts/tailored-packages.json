@@ -677,9 +677,26 @@
         "project-06.html"
       ],
       "resumePdfPath": "output/pdf/Wally-Mostafa-FINN-Partners-Senior-Project-Manager-Resume.pdf",
-      "publishStatus": "local-only",
+      "publishStatus": "live-verified",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-07-21T23:05:58.590Z"
+      "builtAt": "2026-07-21T23:05:58.590Z",
+      "verification": {
+        "verifiedAt": "2026-07-21T23:08:34.193Z",
+        "routeUrl": "https://wallymo.github.io/finn-partners-senior-project-manager/",
+        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-FINN-Partners-Senior-Project-Manager-Resume.pdf",
+        "configUrl": "https://wallymo.github.io/scripts/packages/finn-partners-senior-project-manager.json",
+        "projectUrls": [
+          "https://wallymo.github.io/project-01.html",
+          "https://wallymo.github.io/project-03.html",
+          "https://wallymo.github.io/project-06.html"
+        ],
+        "configSha256": "97df67b092d49d04ec5678a220fef611712948fdf4d344754428498db0d9578f",
+        "pdfSha256": "e901d1091a6fde33c2d6dd3d6b45f93f6816399d71791e7138d368ee7cddc6d4",
+        "routeSha256": "79dd3ee4e2c122b3e581b324ecf50b0e992cfa80ca2d6b91c0ecc918bb192cec",
+        "scopedProjectSha256": {},
+        "configInputSha256": "af1deb01c797ab6ea6c5ef535868d014b5cde906630b47ab449a28e99c19ca6b",
+        "qaBuiltAt": "2026-07-21T23:05:58.590Z"
+      }
     },
     {
       "slug": "firstup-mobile-ux-designer",
