@@ -662,6 +662,26 @@
       "notes": "Credible adjacent fit: strong design-system, AI product strategy, hands-on product build, enterprise discovery, and measurable workflow proof; no unsupported MCP, distributed infrastructure, eval-platform, or 5+ year formal PM-title claims. PDF-only recruiter artifact; temporary render HTML removed after verification."
     },
     {
+      "workflowVersion": 2,
+      "slug": "finn-partners-senior-project-manager",
+      "roleTitle": "FINN Partners Senior Project Manager",
+      "artifactStem": "FINN-Partners-Senior-Project-Manager",
+      "configPath": "scripts/packages/finn-partners-senior-project-manager.json",
+      "targetLane": "agency-project-and-client-delivery",
+      "evidenceMode": "resume-primary",
+      "fitClass": "adjacent",
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-01.html",
+        "project-03.html",
+        "project-06.html"
+      ],
+      "resumePdfPath": "output/pdf/Wally-Mostafa-FINN-Partners-Senior-Project-Manager-Resume.pdf",
+      "publishStatus": "local-only",
+      "qaStatus": "qa-passed",
+      "builtAt": "2026-07-21T23:05:58.590Z"
+    },
+    {
       "slug": "firstup-mobile-ux-designer",
       "roleTitle": "Firstup Mobile UX Designer",
       "fitClass": "adjacent",

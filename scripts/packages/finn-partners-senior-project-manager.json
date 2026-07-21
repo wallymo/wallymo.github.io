@@ -1,0 +1,398 @@
+{
+  "workflowVersion": 2,
+  "contractRevision": 2,
+  "slug": "finn-partners-senior-project-manager",
+  "roleTitle": "FINN Partners Senior Project Manager",
+  "artifactStem": "FINN-Partners-Senior-Project-Manager",
+  "fitClass": "adjacent",
+  "routeMode": "canonical-projects",
+  "selectedProjects": [
+    "project-01.html",
+    "project-03.html",
+    "project-06.html"
+  ],
+  "job": {
+    "company": "FINN Partners",
+    "roleTitle": "Senior Project Manager",
+    "jobUrl": "https://www.finnpartners.com/job/senior-project-manager/",
+    "sourceChannel": "company-careers",
+    "dateCaptured": "2026-07-21",
+    "location": "Remote, anywhere in the United States",
+    "atsVendor": "unknown",
+    "rawJd": "Senior Project Manager. Location: Remote. Come join FINN Partners, a leading firm in the digital marketing space, dedicated to leveraging innovative technologies and strategies to drive growth for our clients. We are seeking an experienced Senior Project Manager to join our team. This is a remote role with the option to work hybrid depending on your location. The Senior Project Manager will lead the execution of cross-functional, complex projects. You'll create detailed project plans and ensure they are delivered on time, on budget, and up to high standards. As a key player, you'll manage client expectations, gather feedback, and collaborate closely with the Account team and other capability leaders to ensure the success of each project. Who Are We Looking For: Dependable and Organized: You're someone who people describe as reliable and on top of the details. You have a talent for crafting clear, actionable project plans that keep everything on track. Confident and Assertive: You're comfortable making decisions and addressing issues proactively, knowing when to pivot to keep projects moving forward. Your confidence builds trust with both clients and internal teams. An Excellent Listener: You actively listen to both clients and colleagues, making sure everyone's voice is heard and feedback is acted upon. Your strong communication skills foster positive relationships and keep teams engaged. Team-Oriented and Collaborative: You're skilled at maintaining healthy teamwork and balance within the group, ensuring everyone stays on task and works together without burnout. Flexible and Adaptive: Not in a yoga way - you're open to learning new approaches and adjusting your plans when the unexpected happens. Fun and Personable: You like working with people and easily forge strong relationships, bringing a positive energy that makes collaboration enjoyable. Detail-Oriented Problem Solver: You can juggle multiple priorities, spot potential risks, and find creative solutions to ensure projects are delivered without a hitch. What You'll Be Part Of: A fast-growing agency with exciting clients and a steady pipeline of projects. A global team of experts who support each other and strive to achieve excellent results for clients. A culture that promotes diversity, work-life balance, and opportunities for personal and professional growth. What You'll Get: Competitive salary and benefits. A wellness subsidy. A manager who provides consistent 1:1 check-ins, feedback, and growth opportunities. Culture-building events and cross-team collaboration. Career advancement opportunities within a growing agency. A strong emphasis on work-life balance. Where will you work? Anywhere in the U.S. We're a remote-first workplace with optional in-office days in Boston, Chicago, Detroit, LA, Nashville, New York, Portland, Washington DC, and more. Responsibilities: Strategically manage a portfolio of projects. Create detailed project plans, manage schedules and budgets, navigate adjustments. Act as communication hub for project team, partners, vendors, and clients. Set and manage expectations for team and client. Achieve goals through negotiation, motivation, problem-solving, and feedback. Motivate and guide as needed to encourage positive energy and high-quality work. Set up and maintain project using software tools such as Kantata or Workfront. Ensure the quality of the information and communication. Coordinate approvals and finalization process for timely, error-free work. Champion FINN goals, systems, and policies, fostering adherence to best practices and reinforcing a culture of excellence within the team. Qualifications: Bachelor's degree or equivalent experience. Prior experience in an agency setting or comparable environment working with integrated teams. 4-6 years of project management experience in an agency setting. Project management system experience is required. Anticipated Salary: USD 65,000-85,000. Compensation is based on experience and depending upon workplace location. To Apply: Please upload your resume, cover letter, and your desired salary in USD. While we appreciate the interest of all candidates, we will only respond to those with whom we have a greater interest. About FINN Partners: FINN Partners is a great place to work, but don't take our word for it. We've been voted #1 Best Agency to Work For in the Extra-Large Agency Category by PR Week. Our team shares an entrepreneurial spirit and a collaborative culture, which makes us a sought-after employer. Join us to grow your career and be part of a team that's making an impact."
+  },
+  "classification": {
+    "targetLane": "agency-project-and-client-delivery",
+    "evidenceMode": "resume-primary",
+    "primarySource": "resume",
+    "supportingSource": "portfolio",
+    "hardGateStatus": "pass",
+    "hardGates": [
+      {
+        "gate": "Bachelor's degree or equivalent experience",
+        "status": "pass",
+        "evidence": "BA from Rutgers University plus 15 years of relevant agency, client-delivery, product, and cross-functional leadership experience."
+      },
+      {
+        "gate": "Four to six years of project-management experience in an agency setting or comparable integrated-team environment",
+        "status": "pass",
+        "evidence": "Seven years of direct Fortune 500 pharma agency account delivery included budgets, briefs, schedules, production requirements, approvals, and integrated work across account, creative, strategy, UX, development, and clients."
+      },
+      {
+        "gate": "Project-management system experience",
+        "status": "pass",
+        "evidence": "Public evidence documents hands-on work with structured project workflow systems, including Scope Generator for rate cards, scopes, deliverables, timelines, resourcing, and cost breakdowns, plus BriefFlow for intake, approval, and project-management integration paths. Named Kantata or Workfront usage is not documented."
+      },
+      {
+        "gate": "United States remote location",
+        "status": "pass",
+        "evidence": "The public resume lists Raleigh, North Carolina, which is within the stated United States remote location."
+      }
+    ]
+  },
+  "requirements": [
+    {
+      "id": "portfolio-planning-delivery",
+      "text": "Strategically manage a portfolio of complex projects through detailed plans, schedules, budgets, adjustments, and high-quality delivery.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Seven years managing Fortune 500 pharma and healthcare accounts with USD 2M-50M+ budgets across integrated channels and regulated deliverables.",
+        "Translated client and brand strategy into briefs, production requirements, timelines, creative feedback, and MLR-ready deliverables."
+      ],
+      "resumeTerms": [
+        "project plans",
+        "schedules and budgets"
+      ]
+    },
+    {
+      "id": "client-expectations-communication",
+      "text": "Act as the communication hub for clients, internal teams, partners, and vendors while setting expectations and acting on feedback.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Seven years of direct client and account leadership for Fortune 500 pharma brands, including one of two consumer leads on FCB Health's largest account.",
+        "Current client-led AI product work runs from first ask through working prototype, presentations, feedback, and next-step decisions."
+      ],
+      "resumeTerms": [
+        "client expectations",
+        "stakeholder communication"
+      ]
+    },
+    {
+      "id": "cross-functional-agency-teams",
+      "text": "Coordinate integrated agency teams and capability leaders across account, creative, strategy, production, UX, development, finance, and operations.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Direct coordination across account, creative, strategy, production, UX, development, finance, operations, senior leadership, and clients.",
+        "Scaled a distributed enterprise product-design organization from 2 to 30 across the United States and Poland."
+      ],
+      "resumeTerms": [
+        "cross-functional teams",
+        "integrated agency delivery"
+      ]
+    },
+    {
+      "id": "risk-change-quality-approvals",
+      "text": "Navigate changes, anticipate risks, solve problems, coordinate approvals, and protect the quality and timeliness of final work.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Agency account work required feedback management, production coordination, MLR review, risk escalation, and deadline and budget stewardship.",
+        "Current workflow tools surface evidence gaps, routing errors, submission requirements, and regulatory risks before late-stage review."
+      ],
+      "resumeTerms": [
+        "risk management",
+        "quality and approvals"
+      ]
+    },
+    {
+      "id": "project-management-systems",
+      "text": "Set up and maintain work in project-management software such as Kantata or Workfront.",
+      "priority": "core",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Built Scope Generator for pharma agency finance and operations teams to manage rate cards, brands, scopes, deliverables, timelines, role-level resourcing, and cost breakdowns.",
+        "Designed BriefFlow around intake, missing-information flags, review links, comments, approval, sign-off, export, and project-management integration paths."
+      ],
+      "resumeTerms": [
+        "project systems",
+        "workflow tools"
+      ]
+    },
+    {
+      "id": "team-leadership-collaboration",
+      "text": "Motivate and guide teams through negotiation, feedback, problem-solving, and an adaptable, collaborative working style.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Scaled product design from 2 to 30 people across the United States and Poland while establishing reusable systems and standards.",
+        "Led collaborative delivery across senior leaders, clients, strategy, creative, product, design, engineering, and operations."
+      ],
+      "resumeTerms": [
+        "team leadership",
+        "feedback and problem-solving"
+      ]
+    }
+  ],
+  "fitGate": {
+    "supportedOverlap": [
+      "Seven years of direct agency account delivery for Fortune 500 pharma and healthcare clients with USD 2M-50M+ budgets, integrated channels, timelines, production requirements, and regulated approvals.",
+      "Direct client-expectation and communication-hub experience across account, creative, strategy, production, UX, development, finance, operations, senior leadership, and clients.",
+      "Current workflow-system work supports intake, project scoping, rate cards, deliverables, timelines, resourcing, cost breakdowns, review routing, submission capture, and early risk visibility.",
+      "Senior team leadership through scaling a distributed product-design organization from 2 to 30 and supporting enterprise systems used by 7,000+ users across 22 white-label brands.",
+      "Quality and approval discipline through MLR-ready pharma delivery, audit-ready annotations, routing checks, and presentation-ready client outputs."
+    ],
+    "unsupportedRequirements": [
+      "Kantata, Workfront, or another named commercial project-management platform is not documented in the resume or public portfolio.",
+      "Formal budget-variance, utilization, profitability, or on-time-delivery metrics are not documented.",
+      "Recent ownership under the exact Senior Project Manager title is not documented."
+    ],
+    "actualMismatches": [
+      "The recent documented operating center is AI implementation, product strategy, and design leadership rather than a dedicated agency project-management title, even though many delivery responsibilities overlap directly."
+    ],
+    "missingEvidence": [
+      "Named Kantata, Workfront, or comparable commercial platform usage and examples of project setup and maintenance.",
+      "Portfolio-level schedule, utilization, margin, or delivery-performance metrics.",
+      "Direct vendor-management examples distinct from broader partner and production-team coordination."
+    ],
+    "coverLetterBridge": {
+      "status": "recommended",
+      "rationale": "We can make the case with a cover letter by connecting seven years of agency account delivery, USD 2M-50M+ budget stewardship, integrated-team coordination, regulated approvals, and current project-workflow system design to FINN's need for a dependable, client-facing project operator. The cover letter must acknowledge that the public evidence does not name Kantata, Workfront, or a recent Senior Project Manager title."
+    },
+    "recommendation": "Proceed as adjacent. Lead with agency portfolio delivery, client expectations, schedules and budgets, risk and approval management, workflow systems, and cross-functional leadership. Do not imply Kantata, Workfront, PMP certification, or delivery metrics that the source evidence does not prove."
+  },
+  "resume": {
+    "summary": "Senior agency project and client-delivery leader with 15 years across integrated marketing, regulated healthcare, enterprise products, and workflow systems. I bring 7+ years managing Fortune 500 pharma accounts and USD 2M-50M+ budgets, translating client priorities into project plans, schedules, production requirements, feedback, approvals, and coordinated execution. My strongest fit for FINN is keeping cross-functional teams aligned, managing client expectations, surfacing risks early, and improving the systems behind high-quality delivery.",
+    "skills": [
+      {
+        "label": "Agency Project & Portfolio Delivery",
+        "description": "Project plans, schedules and budgets, scopes, resourcing, production requirements, integrated agency delivery, adjustments, and on-time finalization"
+      },
+      {
+        "label": "Client & Stakeholder Communication",
+        "description": "Client expectations, stakeholder communication, active listening, feedback, presentations, decision support, and cross-functional teams"
+      },
+      {
+        "label": "Risk, Quality & Approval Management",
+        "description": "Risk management, quality and approvals, issue escalation, regulated review routing, MLR-ready deliverables, and practical problem-solving"
+      },
+      {
+        "label": "Project Systems & Team Leadership",
+        "description": "Project systems, workflow tools, rate cards, deliverables, timelines, resourcing, cost breakdowns, team leadership, and feedback and problem-solving"
+      }
+    ],
+    "roles": {
+      "hedgehox": [
+        "Convert pharma agency needs into workflow tools for brief intake, scoping, review routing, submission capture, MLR claim review, and FDA signal monitoring",
+        "Built Scope Generator for agency finance and operations teams to manage regional rate cards, brands, sub-brands, scopes, deliverables, timelines, role-level resourcing, and cost breakdowns",
+        "Designed BriefFlow around structured intake, missing-information flags, review links, comments, approval, sign-off, export, and project-management integration paths",
+        "Designed Claims Detector workflows that identify promotional claims, surface evidence gaps, and pre-populate audit-ready annotations before MLR submission"
+      ],
+      "one-block-away": [
+        "Lead client discovery, prioritization, scope definition, presentations, and iteration from first ask through working deliverable",
+        "Turn unclear client requests into organized briefs, testable concepts, demo narratives, and next-step decisions while keeping stakeholders aligned",
+        "Own product strategy, UX, front-end build, backend logic, demo readiness, and client iteration across multiple client-led POCs"
+      ],
+      "kinesso": [
+        "Scaled a distributed product-design organization from 2 to 30 across the United States and Poland for enterprise analytics used by 7,000+ users across 22 white-label brands",
+        "Led cross-functional UX and design-system delivery for data visualization, dashboard building, brand theming, and reusable analytics components",
+        "Built the Digital Experience Audit workflow for channel scoring, benchmarks, recommendations, visualization, and presentation-ready client outputs",
+        "Established reusable systems and quality standards that supported consistent delivery across teams, products, and brands"
+      ],
+      "omnicom": [
+        "Supported oncology accounts as a freelance UX designer, combining UX design and account-management experience to strengthen regulated healthcare delivery",
+        "Worked across account, strategy, creative, and delivery conversations to translate brand goals into clear user flows, content structure, and digital recommendations"
+      ],
+      "heartbeat": [
+        "Led UX research and experience strategy for pharma and healthcare work, translating stakeholder input, competitive audits, and user needs into clear product direction",
+        "Created journey maps, site maps, user flows, wireframes, and prototypes for patient, HCP, and internal brand-team experiences across regulated healthcare programs",
+        "Partnered with strategy, creative, account, and engineering teams to move recommendations from research findings into build-ready product and campaign experiences"
+      ],
+      "account-management": [
+        "7+ years managing Fortune 500 pharma and healthcare clients with USD 2M-50M+ budgets across CNS and neurology, psychiatry, cardiovascular and metabolic, and sleep and wakefulness brands including NUVIGIL, Namenda XR, Lipitor, and Zoloft",
+        "One of two account consumer leads on FCB Health's largest pharma account across TV, radio, digital, gaming, Times Square, unbranded campaigns, brand planning, and MLR review",
+        "Translated client and brand strategy into briefs, creative feedback, production requirements, timelines, and MLR-ready deliverables across account, creative, UX, and development teams",
+        "Coordinated high-volume client work across senior leadership, creative, strategy, production, UX, and development teams, surfacing risks early and keeping deliverables moving against deadlines and budgets"
+      ]
+    }
+  },
+  "hero": {
+    "eyebrow": "FINN Partners Senior Project Manager",
+    "tags": [
+      "Agency project portfolios",
+      "Clients, budgets & approvals",
+      "Cross-functional delivery systems"
+    ],
+    "intro": "I bring seven years managing Fortune 500 agency accounts and USD 2M-50M+ budgets, with direct ownership of briefs, timelines, production requirements, feedback, and regulated approvals. I have also led distributed teams from 2 to 30 and built workflow systems for agency scoping, resourcing, intake, and review. That combination lets me keep clients informed, teams aligned, risks visible, and complex work moving toward a high-quality finish."
+  },
+  "contact": {
+    "prompt": "Hiring a senior project leader who can keep clients, integrated teams, budgets, approvals, and delivery systems moving together? Email is the fastest way to reach me.",
+    "signoff": "Agency delivery | client expectations | schedules, budgets and approvals"
+  },
+  "constraints": {
+    "doNotClaim": [
+      "Kantata administration or project setup",
+      "Workfront administration or project setup",
+      "PMP certification",
+      "Formal vendor-management ownership",
+      "Specific on-time delivery percentages",
+      "Formal budget-variance or profitability metrics",
+      "A prior Senior Project Manager title"
+    ],
+    "blockedTerms": [
+      "Kantata expert",
+      "Workfront expert",
+      "PMP certified",
+      "owned vendor management",
+      "100 percent on-time delivery"
+    ]
+  },
+  "privacy": {
+    "publicSafe": true,
+    "notes": "Contains only the public job description and sanitized resume and portfolio evidence. It excludes recruiter contact details, application answers, personal compensation boundaries, and private eligibility information."
+  },
+  "qa": {
+    "status": "qa-passed",
+    "builtAt": "2026-07-21T23:05:58.590Z",
+    "configInputSha256": "af1deb01c797ab6ea6c5ef535868d014b5cde906630b47ab449a28e99c19ca6b",
+    "sourceResumeSha256": "375cc6566f5bbad5b95be9da551dfe87824378fb252222409d29ef32d334ca25",
+    "artifactHashes": {
+      "routeSha256": "79dd3ee4e2c122b3e581b324ecf50b0e992cfa80ca2d6b91c0ecc918bb192cec",
+      "resumePdfSha256": "e901d1091a6fde33c2d6dd3d6b45f93f6816399d71791e7138d368ee7cddc6d4",
+      "scopedProjectSha256": {}
+    },
+    "renderer": {
+      "browser": {
+        "name": "chrome-headless-shell",
+        "version": "Google Chrome for Testing 149.0.7827.55"
+      },
+      "htmlPath": "tmp/tailored-resumes/finn-partners-senior-project-manager.html",
+      "pdfPath": "output/pdf/Wally-Mostafa-FINN-Partners-Senior-Project-Manager-Resume.pdf"
+    },
+    "ats": {
+      "ok": true,
+      "pdfPath": "output/pdf/Wally-Mostafa-FINN-Partners-Senior-Project-Manager-Resume.pdf",
+      "pageCount": 2,
+      "fileSize": 131533,
+      "annotations": [
+        {
+          "page": 1,
+          "uri": "mailto:wmostafa12@gmail.com"
+        },
+        {
+          "page": 1,
+          "uri": "https://linkedin.com/in/wallymo"
+        },
+        {
+          "page": 1,
+          "uri": "https://wallymo.github.io/finn-partners-senior-project-manager/"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/6748"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/4629"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.red-dot.org/project/dxa-digital-experience-audit-55219"
+        }
+      ],
+      "coverage": [
+        {
+          "id": "portfolio-planning-delivery",
+          "requirement": "Strategically manage a portfolio of complex projects through detailed plans, schedules, budgets, adjustments, and high-quality delivery.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "project plans",
+            "schedules and budgets"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "client-expectations-communication",
+          "requirement": "Act as the communication hub for clients, internal teams, partners, and vendors while setting expectations and acting on feedback.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "client expectations",
+            "stakeholder communication"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "cross-functional-agency-teams",
+          "requirement": "Coordinate integrated agency teams and capability leaders across account, creative, strategy, production, UX, development, finance, and operations.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "cross-functional teams",
+            "integrated agency delivery"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "risk-change-quality-approvals",
+          "requirement": "Navigate changes, anticipate risks, solve problems, coordinate approvals, and protect the quality and timeliness of final work.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "risk management",
+            "quality and approvals"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "project-management-systems",
+          "requirement": "Set up and maintain work in project-management software such as Kantata or Workfront.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "project systems",
+            "workflow tools"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "team-leadership-collaboration",
+          "requirement": "Motivate and guide teams through negotiation, feedback, problem-solving, and an adaptable, collaborative working style.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "team leadership",
+            "feedback and problem-solving"
+          ],
+          "missingTerms": []
+        }
+      ],
+      "failures": [],
+      "warnings": []
+    },
+    "route": {
+      "viewports": [
+        {
+          "name": "desktop",
+          "screenshot": "tmp/qa/finn-partners-senior-project-manager/desktop.png",
+          "errors": []
+        },
+        {
+          "name": "mobile",
+          "screenshot": "tmp/qa/finn-partners-senior-project-manager/mobile.png",
+          "errors": []
+        }
+      ],
+      "errors": []
+    }
+  }
+}
