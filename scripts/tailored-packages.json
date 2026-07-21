@@ -699,6 +699,26 @@
       }
     },
     {
+      "workflowVersion": 2,
+      "slug": "finn-partners-senior-strategist",
+      "roleTitle": "FINN Partners Senior Strategist",
+      "artifactStem": "FINN-Partners-Senior-Strategist",
+      "configPath": "scripts/packages/finn-partners-senior-strategist.json",
+      "targetLane": "integrated-marketing-strategy-and-insights",
+      "evidenceMode": "balanced",
+      "fitClass": "adjacent",
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-01.html",
+        "project-06.html",
+        "project-04.html"
+      ],
+      "resumePdfPath": "output/pdf/Wally-Mostafa-FINN-Partners-Senior-Strategist-Resume.pdf",
+      "publishStatus": "local-only",
+      "qaStatus": "qa-passed",
+      "builtAt": "2026-07-21T23:12:58.207Z"
+    },
+    {
       "slug": "firstup-mobile-ux-designer",
       "roleTitle": "Firstup Mobile UX Designer",
       "fitClass": "adjacent",

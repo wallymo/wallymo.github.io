@@ -1,0 +1,434 @@
+{
+  "workflowVersion": 2,
+  "contractRevision": 2,
+  "slug": "finn-partners-senior-strategist",
+  "roleTitle": "FINN Partners Senior Strategist",
+  "artifactStem": "FINN-Partners-Senior-Strategist",
+  "fitClass": "adjacent",
+  "routeMode": "canonical-projects",
+  "selectedProjects": [
+    "project-01.html",
+    "project-06.html",
+    "project-04.html"
+  ],
+  "job": {
+    "company": "FINN Partners",
+    "roleTitle": "Senior Strategist",
+    "sourceChannel": "pasted-job-description",
+    "dateCaptured": "2026-07-21",
+    "location": "Remote, United States; preference for candidates near Portland, Oregon",
+    "atsVendor": "unknown",
+    "rawJd": "Location: Remote. The Opportunity: FINN Partners is looking for a seasoned Senior Strategist to join our Strategy and Insights team. We are in search of someone who leads with curiosity: about clients' brands, the world, and what they're capable of. Our ideal candidate is a problem-solver by nature and by trade, who runs towards the fray of inputs from everywhere to uncover a clear direction forward, with business-minded objectivity. This role requires someone who can comfortably navigate the complexities of heavily regulated industries and seamlessly translate corporate realities into creative brilliance. What You'll Be a Part Of: A global mid-size marketing agency specializing in working with brands undergoing transformation, valuing creativity and collaboration at every turn. A lean Strategy and Insights team, where you'll have the chance to help shape our growing influence across the agency. A culture that promotes work-life balance and opportunities for personal and professional growth. Who We're Looking For: You are a diligent lifelong learner with the constitution to ask why at a pace rivaled only by inquisitive toddlers. You are a confident partner who is used to being at the table and engaged in client conversations where business objectives are clarified and audience tensions emerge, rather than receiving context secondhand. You are a pattern finder who naturally identifies data patterns across multiple workstreams and lines of business, translating audience intelligence into reusable frameworks. You are a self-starter who doesn't wait for the instruction manual to tackle a challenge, but has the good sense to recognize when it's time to seek collaboration. You are calm in the face of ambiguity, shifting priorities, and fast-paced agency life, bringing a sensible perspective to any environment, from meandering creative ideation sessions to client kick-offs with no shortage of opinionated voices. You are an effective communicator who recognizes the value of clarity, context, and collaboration in building confidence among internal and external teams at all levels. You are humble because egos only get in the way of great work. What You'll Be Doing: As a Senior Strategist, you'll co-own, and at times independently own, the strategic throughline for clients across the entire marketing lifecycle, from problem framing to measurable impact. The majority of your time will be dedicated to serving multiple lines of business for one of the agency's largest financial services clients, with opportunities to collaborate on other clients. While this role reports to the Head of Strategy, you will collaborate often with nearly every department in FINN's Integrated Marketing group to deliver successful solutions. Core Responsibilities: Be the day-to-day strategic partner: Support multiple agency accounts as a key point of contact to build trust and drive alignment from client C-suite to execution teams, developing a strong sense of when to validate, defend, or challenge ideas. Stay engaged through execution: Partner with creative, account, and project management teams throughout projects to ensure strategic intent is translated into practical, actionable deliverables, not simply documented in briefs. Represent strategy on internal client leadership team: Stay deeply embedded in primary client conversations to clarify objectives, map audience tensions, and navigate operational realities firsthand alongside account, project, and creative leads. Identify strategic growth opportunities: Proactively translate insights from client work into proactive recommendations, strategic POVs, and future opportunities that help strengthen the partnership over time. Synthesize workstreams: Capture intelligence across various lines of business so it compounds into durable account knowledge, rather than disappearing into individual project decks. Master positioning and audience framing: Develop and champion clear brand-level positioning across lines of business, establishing the foundation that messaging, content, and nurture program architectures ladder to. Architect content and messaging systems: Define the sequencing, modularity, and architecture of content programs. Partner closely with copywriters to build audience-differentiated messaging hierarchies that connect business objectives to creative execution. Guide light-touch channel planning: Collaborate with media and channel leads to map content and messaging across advisor and participant journeys. What You'll Bring: 8 to 10+ years of relevant experience in an integrated marketing agency or similar environment. Regulated Industry Expertise: Demonstrated experience leading strategy development and implementation within heavily regulated industries. Prior experience navigating the specific compliance nuances and audience definitions of the financial services sector is a major plus. Strategic Fundamentals: A deep understanding of integrated marketing, with a proven ability to write sharp, inspiring creative briefs and build reusable strategic frameworks. Channel and Tool Literacy: Working knowledge of key marketing channels, for example traditional media, Meta, TikTok, YouTube, and LinkedIn, and tools, for example LLMs and Google or GA4. AI Proficiency and Strategic Thinking: Demonstrated ability to use AI tools to improve research, synthesis, and content development while exercising sound strategic judgment. Project Mastery: Excellent project management and organizational skills to juggle multiple priorities and deadlines. Where You Will Work: Location: Remote, United States. For this role, we have a strong preference for candidates located near Portland, Oregon; however, we will consider candidates in other United States locations. Periodic client travel may be required. Anticipated Salary: USD 90,000-110,000, commensurate with experience and depending on location. What You'll Get: Generous paid time off, including holidays, summer Fridays, vacation days, personal and sick leave, that gets more generous with tenure. Comprehensive health, dental, vision, and life insurance. 401K with discretionary corporate matching contributions. Discretionary annual bonus based on agency and personal performance. Paid parental leave, wellness benefits, and ongoing professional development support. A remote work model that supports flexibility and autonomy. A manager who provides consistent one-to-one check-ins, reviews, and culture-building opportunities to connect with people across the organization. Please upload your resume, cover letter, and your desired salary in USD. While we appreciate the interest of all candidates, we will only respond to those with whom we have a greater interest. About FINN Partners: FINN Partners is a great place to work, but don't take our word for it. We've been voted number one Best Agency to Work For in the Extra-Large Agency Category by PR Week. Our team shares an entrepreneurial spirit and a collaborative culture, which makes us a sought-after employer. Join us to grow your career and be part of a team that's making an impact."
+  },
+  "classification": {
+    "targetLane": "integrated-marketing-strategy-and-insights",
+    "evidenceMode": "balanced",
+    "primarySource": "resume",
+    "supportingSource": "portfolio",
+    "hardGateStatus": "pass",
+    "hardGates": [
+      {
+        "gate": "Eight to ten or more years in an integrated marketing agency or similar environment",
+        "status": "pass",
+        "evidence": "The public resume documents 15 years across agency account leadership, experience strategy, enterprise marketing products, and AI implementation, including more than seven years directly managing Fortune 500 healthcare accounts and additional agency roles at Heartbeat Ideas, Omnicom, and Kinesso."
+      },
+      {
+        "gate": "Strategy development and implementation in a heavily regulated industry",
+        "status": "pass",
+        "evidence": "The public resume documents 11 years across pharma and healthcare communications, FDA, HIPAA, and MLR workflows, client strategy, brand planning, research, campaign experiences, and regulated delivery."
+      },
+      {
+        "gate": "Integrated-marketing fundamentals, creative briefs, and reusable strategic frameworks",
+        "status": "pass",
+        "evidence": "Direct public evidence includes brand planning and integrated work across TV, radio, digital, gaming, Times Square, and unbranded campaigns; translation of strategy into briefs and creative feedback; and reusable research, audit, design-system, and AI briefing frameworks."
+      },
+      {
+        "gate": "United States remote location",
+        "status": "pass",
+        "evidence": "The public resume lists Raleigh, North Carolina, which satisfies the United States remote requirement. Portland is a stated preference rather than an exclusionary requirement."
+      }
+    ]
+  },
+  "requirements": [
+    {
+      "id": "strategic-client-partnership",
+      "text": "Serve as a day-to-day strategic partner who clarifies business objectives, challenges ideas constructively, and keeps clients and execution teams aligned.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Seven-plus years managing Fortune 500 pharma and healthcare clients with USD 2M-50M+ budgets and translating client priorities into briefs, creative feedback, production requirements, and regulated deliverables.",
+        "Current client-led AI work turns ambiguous business questions into testable product surfaces, demo narratives, and roadmap decisions from first ask through working prototype."
+      ],
+      "resumeTerms": [
+        "strategic client partnership",
+        "business objectives"
+      ]
+    },
+    {
+      "id": "regulated-strategy",
+      "text": "Lead strategy development and implementation inside a heavily regulated industry while translating corporate and compliance realities into usable creative direction.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Eleven years across pharma and healthcare communications, including FDA, HIPAA, and MLR workflows, HCP and patient experiences, brand planning, and agency delivery.",
+        "The Pharma AI Platform case study shows claims review, brief intake, scoping, routing, submission capture, and FDA monitoring tools designed around agency and regulatory realities."
+      ],
+      "resumeTerms": [
+        "regulated strategy",
+        "MLR"
+      ]
+    },
+    {
+      "id": "research-synthesis-frameworks",
+      "text": "Find patterns across workstreams, synthesize audience and performance intelligence, and turn it into reusable strategic frameworks and proactive recommendations.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Built the Digital Experience Audit workflow to turn channel scoring, benchmarks, and fragmented performance inputs into recommendations, data visualization, and presentation-ready client outputs.",
+        "Built a UX research discipline across a 20-plus product marketing-intelligence suite using stakeholder roadshows, repeatable tools, workshops, documentation, and feedback loops."
+      ],
+      "resumeTerms": [
+        "research synthesis",
+        "reusable strategic frameworks"
+      ]
+    },
+    {
+      "id": "positioning-audience-messaging",
+      "text": "Shape positioning and audience framing, then connect business objectives to content structure and audience-differentiated messaging.",
+      "priority": "core",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Translated stakeholder input, competitive audits, and patient, HCP, and internal brand-team needs into journeys, content structures, product direction, and campaign experiences.",
+        "Designed an investor-facing biopharma website around scientific positioning and built an AI listing workflow that produces audience-facing listing copy, social posts, ad copy, and SEO-ready language."
+      ],
+      "resumeTerms": [
+        "audience framing",
+        "content and messaging systems"
+      ]
+    },
+    {
+      "id": "integrated-marketing-execution",
+      "text": "Stay engaged through execution with creative, account, project, media, channel, and delivery teams across the integrated marketing lifecycle.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Served as one of two consumer account leads on FCB Health's largest pharma account across TV, radio, digital, gaming, Times Square, unbranded campaigns, brand planning, and MLR review.",
+        "Partnered with strategy, creative, account, engineering, UX, and development teams to move recommendations into build-ready product and campaign experiences."
+      ],
+      "resumeTerms": [
+        "integrated marketing",
+        "creative execution"
+      ]
+    },
+    {
+      "id": "ai-strategic-workflows",
+      "text": "Use AI tools to improve research, synthesis, and content development while applying sound strategic judgment.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Current work includes governed LLM and multimodal workflows, prompt-defined criteria, knowledge bases, human review surfaces, content generation, and AI-assisted brief intake.",
+        "Builds are framed around client decisions, evidence gaps, workflow risk, adoption, and measurable operating value rather than AI output alone."
+      ],
+      "resumeTerms": [
+        "AI-enabled research and content workflows",
+        "LLM"
+      ]
+    },
+    {
+      "id": "project-mastery",
+      "text": "Organize multiple priorities and deadlines while carrying strategic intent into practical, actionable deliverables.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Managed multimillion-dollar regulated client programs across briefs, feedback, production requirements, timelines, and approvals.",
+        "Scaled a distributed product-design organization from two to 30 and owned product strategy, UX, workflow design, build logic, demo readiness, and client iteration across concurrent work."
+      ],
+      "resumeTerms": [
+        "project management",
+        "multiple priorities"
+      ]
+    }
+  ],
+  "fitGate": {
+    "supportedOverlap": [
+      "Fifteen years across integrated agencies, client strategy, experience strategy, enterprise marketing products, and AI implementation, including more than seven years of direct Fortune 500 pharma account leadership.",
+      "Deep regulated-industry proof through 11 years of pharma and healthcare work spanning brand planning, patient and HCP audiences, MLR review, FDA and HIPAA workflows, and regulated campaign and product delivery.",
+      "Direct integrated-marketing proof across TV, radio, digital, gaming, Times Square, unbranded campaigns, briefs, creative feedback, production requirements, and cross-functional execution.",
+      "Reusable research and insight systems through the Digital Experience Audit, a 20-plus product research discipline, channel benchmarks, recommendations, audience journeys, and stakeholder roadshows.",
+      "Strong AI fluency through governed LLM and multimodal workflows, knowledge bases, prompt-defined criteria, content generation, brief intake, synthesis, and human-review systems.",
+      "Portfolio proof shows the work moving beyond strategy documents into regulated tools, actionable client outputs, reusable frameworks, and build-ready experiences."
+    ],
+    "unsupportedRequirements": [
+      "Financial-services strategy, compliance nuances, and advisor and participant audience definitions are not documented.",
+      "GA4 or Google Analytics use is not documented.",
+      "Meta, TikTok, YouTube, and LinkedIn channel-planning ownership is not explicitly documented.",
+      "Direct ownership of nurture-program architecture and audience-differentiated messaging hierarchies is not explicitly documented.",
+      "Routine strategic partnership with client C-suite stakeholders is not explicitly documented."
+    ],
+    "actualMismatches": [
+      "The candidate's regulated-industry depth is pharma and healthcare rather than the financial-services account that will receive most of this role's time.",
+      "The recent operating center is AI implementation, product strategy, experience strategy, and design leadership rather than a dedicated Strategy and Insights title."
+    ],
+    "missingEvidence": [
+      "Named financial-services brands, compliance frameworks, advisor journeys, participant journeys, or audience definitions.",
+      "Named GA4 analyses and named recent paid-social or video-channel planning examples.",
+      "Examples of brand-level positioning carried across several client lines of business.",
+      "Measured marketing impact such as conversion, engagement, brand lift, or nurture performance tied to a strategic recommendation.",
+      "Named C-suite client relationships and examples of defending or challenging a strategic recommendation at that level."
+    ],
+    "coverLetterBridge": {
+      "status": "recommended",
+      "rationale": "We can make the case with a cover letter by connecting more than seven years of integrated agency account leadership, 11 years of regulated pharma and healthcare strategy, multimillion-dollar client programs, audience research, reusable insight systems, creative briefs, cross-functional execution, and current AI workflow fluency to FINN's need for a calm, business-minded senior strategist. The cover letter must address the move from healthcare to financial services directly and cannot imply GA4, financial-services compliance, C-suite partnership, or nurture-architecture experience that the public evidence does not prove."
+    },
+    "recommendation": "Proceed as adjacent with balanced evidence. Lead with regulated agency strategy, direct client partnership, integrated-channel delivery, audience and performance synthesis, reusable frameworks, and AI-enabled research and content workflows. Keep the financial-services, GA4, named social-channel planning, C-suite, and nurture-architecture gaps explicit and honest."
+  },
+  "resume": {
+    "summary": "Integrated marketing, experience strategy, and client-partnership leader with 15 years across agencies, regulated healthcare, audience research, enterprise products, and AI-enabled workflows. I bring 7+ years managing Fortune 500 pharma clients and USD 2M-50M+ programs across TV, radio, digital, gaming, brand planning, creative briefs, and MLR review. My strongest fit for FINN is turning complex business, audience, and compliance inputs into clear strategic frameworks, actionable creative direction, and cross-functional execution.",
+    "skills": [
+      {
+        "label": "Integrated Marketing & Brand Strategy",
+        "description": "Business objectives, brand planning, strategic client partnership, creative briefs, integrated marketing, creative execution, TV, radio, digital, gaming, and unbranded campaigns"
+      },
+      {
+        "label": "Audience Research & Strategic Frameworks",
+        "description": "Research synthesis, audience framing, patient and HCP journeys, competitive audits, channel scoring, benchmarks, recommendations, and reusable strategic frameworks"
+      },
+      {
+        "label": "Regulated Client Partnership & Delivery",
+        "description": "11 years across pharma and healthcare communications, regulated strategy, FDA, HIPAA, MLR, USD 2M-50M+ programs, project management, multiple priorities, and stakeholder alignment"
+      },
+      {
+        "label": "AI-Enabled Research & Content Workflows",
+        "description": "LLM and multimodal workflows, knowledge bases, prompt-defined criteria, AI-enabled research and content workflows, content and messaging systems, brief intake, and human review"
+      }
+    ],
+    "roles": {
+      "hedgehox": [
+        "Convert pharma agency and compliance needs into AI tools for MLR claim review, brief intake, scoping, review routing, submission capture, and FDA signal monitoring",
+        "Designed BriefFlow around structured client inputs, AI-generated brief sections, missing-information flags, review, approval, sign-off, export, and project-management integration paths",
+        "Designed the Xenagos Bio website from scratch, translating scientific positioning into a clear investor-facing structure, visual direction, and design-system handoff",
+        "Developed FDA Warning Tool concepts that connect regulatory patterns to usable content-risk guidance and proactive client recommendations"
+      ],
+      "one-block-away": [
+        "Lead client discovery and problem framing, turning unclear business questions into testable product surfaces, demo narratives, messaging, and roadmap decisions",
+        "Built ListingPal's AI listing-generation POC and landing page, turning basic property inputs into listing copy, social posts, ad copy, styling direction, and MLS and SEO-ready language in under 90 seconds",
+        "Own product strategy, UX, AI workflow design, front-end build, backend logic, demo readiness, and client iteration from first ask through working prototype"
+      ],
+      "kinesso": [
+        "Built the Digital Experience Audit workflow for channel scoring, benchmarks, recommendations, data visualization, and presentation-ready client outputs",
+        "Built the UX research discipline across a 20+ product marketing-intelligence suite using stakeholder roadshows, repeatable tools, workshops, Figma documentation, and feedback loops",
+        "Led experience and design-system strategy for marketing data visualization, dashboard building, brand theming, and reusable analytics components",
+        "Scaled product design from 2 to 30 people across the US and Poland for enterprise analytics used by 7,000+ users across 22 white-label brands"
+      ],
+      "omnicom": [
+        "Supported oncology accounts by combining UX design and account-management experience to strengthen regulated healthcare strategy and delivery",
+        "Partnered across account, strategy, creative, and delivery teams, translating brand goals into clearer content structure, user flows, and digital recommendations"
+      ],
+      "heartbeat": [
+        "Led research and experience strategy for pharma and healthcare work, translating stakeholder input, competitive audits, and user needs into digital product and campaign direction",
+        "Created journey maps, content structures, user flows, wireframes, and prototypes for patient, HCP, and internal brand-team programs",
+        "Partnered with strategy, creative, account, and engineering teams to move recommendations from research findings into build-ready product and campaign experiences"
+      ],
+      "account-management": [
+        "Managed Fortune 500 pharma and healthcare clients with USD 2M-50M+ budgets across CNS and neurology, psychiatry, cardiovascular and metabolic, and sleep and wakefulness brands",
+        "Served as one of two account consumer leads on FCB Health's largest pharma account across TV, radio, digital, gaming, Times Square, unbranded campaigns, brand planning, and MLR review",
+        "Translated client and brand strategy into briefs, creative feedback, production requirements, timelines, and MLR-ready deliverables across account, creative, UX, and development teams"
+      ]
+    }
+  },
+  "hero": {
+    "eyebrow": "FINN Partners Senior Strategist",
+    "tags": [
+      "Regulated agency strategy",
+      "Audience insight & frameworks",
+      "AI-enabled creative execution"
+    ],
+    "intro": "FINN needs a strategist who can keep business objectives, audience insight, regulatory reality, and creative execution connected. I bring 7+ years managing Fortune 500 agency clients and USD 2M-50M+ programs, 11 years inside regulated pharma and healthcare, and reusable research, audit, brief, and AI systems that turn scattered inputs into practical direction teams can carry through delivery."
+  },
+  "contact": {
+    "prompt": "Hiring a senior strategist who can turn regulated complexity, audience insight, and business objectives into clear direction for clients and creative teams? Email is the fastest way to reach me.",
+    "signoff": "Regulated strategy | audience insight | actionable creative direction"
+  },
+  "constraints": {
+    "doNotClaim": [
+      "Financial-services strategy experience",
+      "Financial-services compliance expertise",
+      "Advisor and participant journey expertise",
+      "GA4 expertise",
+      "Meta channel-planning ownership",
+      "TikTok channel-planning ownership",
+      "YouTube channel-planning ownership",
+      "LinkedIn channel-planning ownership",
+      "C-suite strategic partnership",
+      "Nurture-program architecture ownership",
+      "Audience-differentiated messaging hierarchy ownership",
+      "Measured brand-lift or conversion outcomes"
+    ],
+    "blockedTerms": [
+      "financial services expert",
+      "GA4 expert",
+      "C-suite advisor",
+      "owned nurture architecture",
+      "owned advisor journeys",
+      "owned participant journeys"
+    ]
+  },
+  "privacy": {
+    "publicSafe": true,
+    "notes": "Contains only the public job description and sanitized resume and portfolio evidence. It excludes recruiter contact details, application answers, personal compensation boundaries, and private eligibility information."
+  },
+  "qa": {
+    "status": "qa-passed",
+    "builtAt": "2026-07-21T23:12:58.207Z",
+    "configInputSha256": "2446ed4f37f3ad5bf383919620f375550d4cf62a3a09562ed65d0e4310717671",
+    "sourceResumeSha256": "375cc6566f5bbad5b95be9da551dfe87824378fb252222409d29ef32d334ca25",
+    "artifactHashes": {
+      "routeSha256": "f8832317afc75b8d7b0cd9911a60a25b4998393ee237fcffdb6b950ada57613b",
+      "resumePdfSha256": "fb6f857879d8f3871900738fba1d76fee73d846db7d07b2e1da5af4d18a90520",
+      "scopedProjectSha256": {}
+    },
+    "renderer": {
+      "browser": {
+        "name": "chrome-headless-shell",
+        "version": "Google Chrome for Testing 149.0.7827.55"
+      },
+      "htmlPath": "tmp/tailored-resumes/finn-partners-senior-strategist.html",
+      "pdfPath": "output/pdf/Wally-Mostafa-FINN-Partners-Senior-Strategist-Resume.pdf"
+    },
+    "ats": {
+      "ok": true,
+      "pdfPath": "output/pdf/Wally-Mostafa-FINN-Partners-Senior-Strategist-Resume.pdf",
+      "pageCount": 2,
+      "fileSize": 131953,
+      "annotations": [
+        {
+          "page": 1,
+          "uri": "mailto:wmostafa12@gmail.com"
+        },
+        {
+          "page": 1,
+          "uri": "https://linkedin.com/in/wallymo"
+        },
+        {
+          "page": 1,
+          "uri": "https://wallymo.github.io/finn-partners-senior-strategist/"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/6748"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/4629"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.red-dot.org/project/dxa-digital-experience-audit-55219"
+        }
+      ],
+      "coverage": [
+        {
+          "id": "strategic-client-partnership",
+          "requirement": "Serve as a day-to-day strategic partner who clarifies business objectives, challenges ideas constructively, and keeps clients and execution teams aligned.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "strategic client partnership",
+            "business objectives"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "regulated-strategy",
+          "requirement": "Lead strategy development and implementation inside a heavily regulated industry while translating corporate and compliance realities into usable creative direction.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "regulated strategy",
+            "MLR"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "research-synthesis-frameworks",
+          "requirement": "Find patterns across workstreams, synthesize audience and performance intelligence, and turn it into reusable strategic frameworks and proactive recommendations.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "research synthesis",
+            "reusable strategic frameworks"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "positioning-audience-messaging",
+          "requirement": "Shape positioning and audience framing, then connect business objectives to content structure and audience-differentiated messaging.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "audience framing",
+            "content and messaging systems"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "integrated-marketing-execution",
+          "requirement": "Stay engaged through execution with creative, account, project, media, channel, and delivery teams across the integrated marketing lifecycle.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "integrated marketing",
+            "creative execution"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "ai-strategic-workflows",
+          "requirement": "Use AI tools to improve research, synthesis, and content development while applying sound strategic judgment.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "AI-enabled research and content workflows",
+            "LLM"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "project-mastery",
+          "requirement": "Organize multiple priorities and deadlines while carrying strategic intent into practical, actionable deliverables.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "project management",
+            "multiple priorities"
+          ],
+          "missingTerms": []
+        }
+      ],
+      "failures": [],
+      "warnings": []
+    },
+    "route": {
+      "viewports": [
+        {
+          "name": "desktop",
+          "screenshot": "tmp/qa/finn-partners-senior-strategist/desktop.png",
+          "errors": []
+        },
+        {
+          "name": "mobile",
+          "screenshot": "tmp/qa/finn-partners-senior-strategist/mobile.png",
+          "errors": []
+        }
+      ],
+      "errors": []
+    }
+  }
+}
