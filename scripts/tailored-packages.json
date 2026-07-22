@@ -193,6 +193,27 @@
       "publishStatus": "tracked-unverified"
     },
     {
+      "workflowVersion": 2,
+      "slug": "airbnb-trust-safety-product-manager",
+      "roleTitle": "Airbnb Product Manager, Trust & Safety",
+      "artifactStem": "Airbnb-Trust-Safety-Product-Manager",
+      "configPath": "scripts/packages/airbnb-trust-safety-product-manager.json",
+      "targetLane": "trust-safety-ai-product-management",
+      "evidenceMode": "balanced",
+      "fitClass": "stretch",
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-01.html",
+        "project-04.html",
+        "project-06.html",
+        "project-03.html"
+      ],
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Airbnb-Trust-Safety-Product-Manager-Resume.pdf",
+      "publishStatus": "local-only",
+      "qaStatus": "qa-passed",
+      "builtAt": "2026-07-22T02:25:41.690Z"
+    },
+    {
       "slug": "alignerr-digital-health-strategist",
       "roleTitle": "Alignerr Digital Health Strategist",
       "fitClass": "unclassified",

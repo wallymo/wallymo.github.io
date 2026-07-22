@@ -1,0 +1,643 @@
+{
+  "workflowVersion": 2,
+  "contractRevision": 2,
+  "slug": "airbnb-trust-safety-product-manager",
+  "roleTitle": "Airbnb Product Manager, Trust & Safety",
+  "artifactStem": "Airbnb-Trust-Safety-Product-Manager",
+  "fitClass": "stretch",
+  "routeMode": "canonical-projects",
+  "selectedProjects": [
+    "project-01.html",
+    "project-04.html",
+    "project-06.html",
+    "project-03.html"
+  ],
+  "job": {
+    "company": "Airbnb via Magnit",
+    "roleTitle": "Product Manager, Trust & Safety",
+    "jobId": "not-listed",
+    "jobUrl": null,
+    "sourceChannel": "chat-pasted-jd",
+    "dateCaptured": "2026-07-21",
+    "location": "Remote in the United States only",
+    "employmentType": "W-2 contract through Magnit; no corp-to-corp",
+    "payRange": "$78-$91 per hour",
+    "atsVendor": "unknown",
+    "rawJd": "This is a W-2 contract role through Magnit for Airbnb, fully remote in the United States only, with no corp-to-corp option. Airbnb's Trust & Safety team includes engineers, data scientists, designers, product managers, and operations leaders who build machine-learning risk detection, defenses against risky actors, and tools for investigators while defining standards and policies. The Product Manager will focus on Safety and reducing incidents such as interpersonal harm and illegal activities. Responsibilities include creating product and platform vision and strategy; leading cross-functional groups across engineering, data science, design, operations, and policy; maintaining the backlog and roadmap; prioritizing solutions by business value and customer impact; defining measurable goals and OKRs; building alignment across product and executive teams; anticipating bottlenecks and balancing business, customer, technical, and operational constraints; presenting roadmaps and status to leadership; evaluating buy, build, or partner opportunities with data and users at the forefront; and developing short-term plans aligned with long-term platform capabilities. Expertise requested includes 5+ years of product management experience; prior product, operations, or engineering experience in trust, safety, risk, or fraud; outstanding communication with global executive, product, and technical audiences; strong analytical and problem-solving skills; experience building machine-learning products or technical product management; design and hypothesis-driven product development; entrepreneurial drive; global collaboration and influence; and experience leading through ambiguity and high-stakes tradeoffs. Location is remote in the United States only. Pay range is $78-$91 per hour with medical, dental, vision, and 401K benefits."
+  },
+  "classification": {
+    "targetLane": "trust-safety-ai-product-management",
+    "evidenceMode": "balanced",
+    "primarySource": "resume evidence of six-plus years leading enterprise and AI product delivery, current product-strategy ownership, regulated risk workflows, cross-functional execution, research, analytics, and executive-facing communication",
+    "supportingSource": "portfolio proof of governed pharma AI products, risk and review workflows, a research operating model across more than 20 products, enterprise analytics, and shared systems at scale",
+    "hardGateStatus": "pass",
+    "hardGates": [
+      {
+        "gate": "Remote work within the United States",
+        "status": "pass",
+        "evidence": "The public resume lists Raleigh, North Carolina and current remote work. Private W-2 eligibility is intentionally not stored in this public package and must be confirmed during the application process."
+      },
+      {
+        "gate": "5+ years of product management experience",
+        "status": "pass",
+        "evidence": "Six-plus years of related product leadership spans enterprise analytics and shared systems at Kinesso from 2020 through 2023 and current AI product strategy and implementation from 2023 to present. Formal titles vary across experience, innovation, UX, and AI product strategy rather than five years under a conventional Product Manager title."
+      },
+      {
+        "gate": "Prior product, operations, or engineering experience in trust, safety, risk, or fraud",
+        "status": "pass",
+        "evidence": "Current product work directly covers regulated content risk through Claims Detector, evidence-gap review, audit-ready annotations, human review, FDA risk monitoring, and a separate risk-scoring dashboard. Direct marketplace Trust & Safety, fraud, abuse, or interpersonal-safety experience is not documented and remains the central transfer gap."
+      },
+      {
+        "gate": "Machine-learning product or technical product management experience",
+        "status": "pass",
+        "evidence": "Current roles cover governed LLM and VLM workflows, model behavior, multimodal review, prompt-defined criteria, front-end and backend logic, prototype validation, implementation decisions, stakeholder demonstrations, and production handoff."
+      }
+    ]
+  },
+  "requirements": [
+    {
+      "id": "trust-safety-vision-strategy",
+      "text": "Create product and platform vision and strategy for Trust & Safety, with a focus on reducing safety incidents.",
+      "priority": "core",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "At Hedgehox, product strategy turns regulated-risk needs into governed products for claims detection, evidence review, routing, submission capture, and FDA risk monitoring.",
+        "At One Block Away, product ownership runs from discovery and problem framing through requirements, roadmap decisions, implementation, validation, and working prototypes."
+      ],
+      "resumeTerms": [
+        "product strategy",
+        "regulated risk",
+        "roadmap decisions",
+        "governed products"
+      ]
+    },
+    {
+      "id": "cross-functional-working-group",
+      "text": "Lead cross-functional groups across engineering, data science, design, operations, and policy to align execution and launches.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Fifteen years of work aligns product, engineering, design, research, business, client, strategy, account, creative, analytics, and operations stakeholders.",
+        "Kinesso leadership scaled a distributed product-design organization from 2 to 30 across the United States and Poland while supporting shared enterprise systems."
+      ],
+      "resumeTerms": [
+        "cross-functional leadership",
+        "engineering",
+        "design",
+        "operations"
+      ]
+    },
+    {
+      "id": "backlog-roadmap-prioritization",
+      "text": "Maintain the product backlog and roadmap, prioritizing solutions by business value and customer impact.",
+      "priority": "core",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Current product work translates customer needs into product requirements, capability priorities, implementation tradeoffs, roadmap decisions, and build-ready handoffs.",
+        "The Kinesso research discipline combined stakeholder needs, prototype testing, feedback tools, and product analytics to guide cross-product prioritization."
+      ],
+      "resumeTerms": [
+        "product backlog",
+        "roadmap decisions",
+        "prioritization",
+        "customer impact"
+      ]
+    },
+    {
+      "id": "measurable-goals-okrs",
+      "text": "Define goals and success with clearly measurable objectives and key results.",
+      "priority": "core",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Enterprise products reached more than 7,000 users across 22 white-label brands, with research and analytics used to evaluate product decisions and adoption.",
+        "Current POC work connects product decisions to investor, workflow, implementation, and client outcomes, although formal Trust & Safety OKRs are not documented."
+      ],
+      "resumeTerms": [
+        "measurable outcomes",
+        "product metrics",
+        "objectives and key results",
+        "adoption"
+      ]
+    },
+    {
+      "id": "product-executive-alignment",
+      "text": "Build alignment across product teams and leadership, present roadmaps and status, communicate concisely, and influence outcomes.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The candidate has managed Fortune 500 healthcare clients and portfolios with USD 2M to 50M-plus budgets while aligning senior client, account, creative, UX, analytics, and development stakeholders.",
+        "At Kinesso, an accessibility product concept placed second in an innovation challenge and gained attention from IPG global executives, reinforcing concise product storytelling and influence."
+      ],
+      "resumeTerms": [
+        "executive alignment",
+        "roadmap communication",
+        "influence outcomes",
+        "Fortune 500"
+      ]
+    },
+    {
+      "id": "tradeoffs-ambiguity-constraints",
+      "text": "Anticipate bottlenecks, make high-stakes tradeoffs, and balance business, customer, technical, and operational constraints.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Current AI implementation work turns ambiguous, regulated workflows into scoped product logic with governance, human review, evidence trails, and implementation choices.",
+        "Fifteen years across client strategy and product delivery required balancing brand, user, technical, operational, budget, timeline, and regulatory constraints."
+      ],
+      "resumeTerms": [
+        "high-stakes tradeoffs",
+        "ambiguity",
+        "technical constraints",
+        "operational constraints"
+      ]
+    },
+    {
+      "id": "buy-build-partner-opportunities",
+      "text": "Evaluate new product opportunities and bring forward buy, build, or partner proposals using data and user evidence.",
+      "priority": "core",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "One Block Away work evaluates business questions through customer discovery, rapid prototypes, implementation choices, and roadmap decisions before larger investment.",
+        "Claims Detector secured investor backing after the candidate built the functional POC, shaped the product story, and iterated with stakeholders."
+      ],
+      "resumeTerms": [
+        "buy build partner",
+        "product opportunities",
+        "user evidence",
+        "implementation choices"
+      ]
+    },
+    {
+      "id": "short-long-term-platform-capabilities",
+      "text": "Develop short-term plans aligned with long-term goals to iteratively build platform capabilities that defend against safety issues.",
+      "priority": "core",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "The Pharma AI Platform connects six iterative initiatives across intake, scoping, claims review, routing, submission capture, and regulatory monitoring into a longer-term operating system.",
+        "Kinesso work built reusable analytics and design-system foundations across more than 20 products, more than 7,000 users, and 22 brands."
+      ],
+      "resumeTerms": [
+        "platform capabilities",
+        "short-term plans",
+        "long-term product direction",
+        "iterative delivery"
+      ]
+    },
+    {
+      "id": "trust-safety-risk-fraud-domain",
+      "text": "Bring prior product, operations, or engineering experience in trust, safety, risk, or fraud.",
+      "priority": "core",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Direct risk-product evidence includes promotional-claim detection, evidence gaps, audit-ready annotations, review routing, FDA signal monitoring, and human review in regulated pharma.",
+        "WeReady's Bailey Intelligence dashboard translated GitHub signals, source health, risk scoring, and evidence trails into decision-ready workflows."
+      ],
+      "resumeTerms": [
+        "risk products",
+        "risk detection",
+        "evidence trails",
+        "human review"
+      ]
+    },
+    {
+      "id": "five-years-product-management",
+      "text": "Bring at least five years of product management experience.",
+      "priority": "core",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Six-plus years of related product leadership combines Kinesso enterprise product delivery from 2020 through 2023 with current AI product strategy and implementation from 2023 to present.",
+        "Formal titles before 2023 center on experience, innovation, and UX rather than Product Manager, so the package does not claim five years under a conventional PM title."
+      ],
+      "resumeTerms": [
+        "six-plus years leading product delivery",
+        "product strategy",
+        "enterprise products",
+        "AI implementation"
+      ]
+    },
+    {
+      "id": "machine-learning-technical-pm",
+      "text": "Bring experience building machine-learning products or working in technical product management.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Current work covers governed LLM and VLM workflows, multimodal review, prompt-defined criteria, model orchestration, front-end and backend logic, prototype validation, and production handoff.",
+        "Claims Detector and related pharma AI products translate regulated business needs into functional model-assisted workflows with human review and evidence visibility."
+      ],
+      "resumeTerms": [
+        "machine-learning products",
+        "technical product management",
+        "model orchestration",
+        "human-in-the-loop"
+      ]
+    },
+    {
+      "id": "design-hypothesis-driven-development",
+      "text": "Use design and hypothesis-driven product development, strong analysis, troubleshooting, and problem solving.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The Kinesso research discipline used interviews, prototype testing, Typeform, Useberry, Heap analytics, standardized findings, and roadshows across more than 20 products.",
+        "Current product work uses rapid prototypes and working POCs to test business questions, product behavior, and implementation paths before broader investment."
+      ],
+      "resumeTerms": [
+        "hypothesis-driven development",
+        "prototype testing",
+        "product analytics",
+        "problem solving"
+      ]
+    }
+  ],
+  "fitGate": {
+    "supportedOverlap": [
+      "Six-plus years leading enterprise and AI product delivery, with three years of current end-to-end AI product-strategy ownership.",
+      "Direct regulated-risk product evidence across claim detection, evidence gaps, audit-ready annotations, review routing, submission capture, FDA signal monitoring, risk scoring, and human review.",
+      "Direct technical AI product work spanning LLM and VLM workflows, model behavior, multimodal review, front-end and backend logic, validation, implementation choices, and production handoff.",
+      "Enterprise product scale through more than 20 products, more than 7,000 users, 22 white-label brands, reusable analytics systems, and a distributed team scaled from 2 to 30.",
+      "Direct qualitative and quantitative research evidence through interviews, prototype testing, Typeform, Useberry, Heap analytics, standardized findings, and stakeholder roadshows.",
+      "Fifteen years of cross-functional and client leadership across regulated healthcare, enterprise products, technical delivery, and high-stakes stakeholder decisions."
+    ],
+    "unsupportedRequirements": [
+      "Direct marketplace Trust & Safety, interpersonal-safety, illegal-activity, abuse, or fraud product experience is not documented.",
+      "Direct ownership of investigator operations tools, policy enforcement systems, bad-actor defenses, or marketplace safety standards is not documented.",
+      "Five-plus years under a conventional Product Manager title is not documented.",
+      "Safety-specific OKRs and metrics such as incident reduction, detection precision and recall, fraud loss, enforcement effectiveness, or investigator handling time are not documented."
+    ],
+    "actualMismatches": [
+      "The documented risk center is regulated healthcare content, evidence, and workflow governance rather than marketplace abuse, interpersonal harm, illegal activity, or fraud.",
+      "The formal title history before 2023 centers on experience, innovation, UX, and client strategy rather than conventional Product Manager roles."
+    ],
+    "missingEvidence": [
+      "A launched Trust & Safety or fraud product with measurable incident, abuse, enforcement, investigation, or loss-reduction outcomes.",
+      "Direct partnership with Trust & Safety policy teams, investigators, law enforcement, or marketplace operations.",
+      "Named machine-learning risk model metrics such as precision, recall, false-positive rate, coverage, or time to intervention.",
+      "Formal ownership of a mature product backlog, quarterly OKRs, safety roadmap, and buy-build-partner evaluation process."
+    ],
+    "coverLetterBridge": {
+      "status": "recommended",
+      "rationale": "A cover letter can make the credible transfer story explicit by connecting six-plus years of enterprise and AI product leadership, direct regulated-risk products, governed machine-learning workflows, human review, research-driven prioritization, and executive-facing delivery to Airbnb's need for high-stakes safety product judgment. It must clearly state that the candidate is transferring from regulated healthcare risk rather than implying direct marketplace Trust & Safety, fraud, abuse, investigator-tooling, or policy-enforcement experience."
+    },
+    "recommendation": "Proceed as the user-approved stretch. Lead with regulated-risk product judgment, governed AI and human review, hypothesis-driven discovery, enterprise scale, cross-functional alignment, and high-stakes tradeoffs. Keep the domain transition visible and do not imply prior marketplace Trust & Safety, fraud, abuse, policy enforcement, investigator tooling, conventional five-plus-year PM tenure, or safety metrics that the evidence does not show."
+  },
+  "resume": {
+    "summary": "Technical product and regulated-risk leader with six-plus years shaping enterprise and AI products across regulated healthcare, shared product systems, and client-led implementation. I turn ambiguous, high-stakes workflows into governed machine-learning products, prioritized roadmaps, testable hypotheses, and build-ready decisions. My strength is aligning engineering, design, research, operations, business, and executive stakeholders around products people can trust and use.",
+    "skills": [
+      {
+        "label": "Product Strategy, Roadmaps & Execution",
+        "description": "Product vision, product opportunities, customer discovery, user evidence, customer impact, requirements, product backlog, roadmap communication and decisions, implementation choices, prioritization, tradeoffs, technical and operational constraints, launch support, and production handoff"
+      },
+      {
+        "label": "AI/ML Risk Workflows & Governance",
+        "description": "Technical product management, machine-learning and risk products, governed LLM and VLM workflows, model orchestration, risk detection, evidence gaps, human-in-the-loop review, audit-ready annotations, and evidence trails"
+      },
+      {
+        "label": "Research, Metrics & Hypothesis Development",
+        "description": "Hypothesis-driven development, interviews, prototype testing, Typeform, Useberry, Heap analytics, product metrics, measurable outcomes, and continuous improvement"
+      },
+      {
+        "label": "Cross-Functional & Executive Alignment",
+        "description": "Cross-functional leadership across engineering, design, research, operations, business, client, and executive stakeholders; concise roadmap communication, influence, distributed teams, ambiguity, and high-stakes tradeoffs"
+      }
+    ],
+    "roles": {
+      "hedgehox": [
+        "Lead product strategy and requirements for Claims Detector, translating regulated-risk needs into machine-learning workflows for claim identification, evidence gaps, audit-ready annotations, and human review",
+        "Secured an investor for proprietary Claims Detection software by building the functional POC, shaping the product narrative, and iterating with stakeholders",
+        "Sequence short-term AI tools across MLR claim review, brief intake, scoping, review routing, submission capture, and FDA risk monitoring toward connected, long-term platform capabilities",
+        "Developed FDA Warning Tool concepts that connect external regulatory signals to earlier content-risk decisions for pharma teams"
+      ],
+      "one-block-away": [
+        "Own AI product strategy, customer discovery, requirements, product backlog, workflow design, front-end build, backend logic, validation, client iteration, and roadmap decisions from first question through working software",
+        "Translate ambiguous customer needs into prioritized capabilities, testable hypotheses, implementation tradeoffs, measurable outcomes, and build-ready handoffs",
+        "Evaluate product opportunities through user evidence, working prototypes, implementation choices, and stakeholder feedback before larger investment",
+        "Built WeReady's Bailey Intelligence dashboard, translating founder inputs, GitHub signals, source health, risk scoring, and evidence trails into decision-ready workflows",
+        "Built ListingPal's AI listing-generation POC, turning basic property inputs into multi-channel property marketing in under 90 seconds"
+      ],
+      "kinesso": [
+        "Led shared enterprise products and systems while scaling design from 2 to 30 people across the United States and Poland, supporting more than 7,000 users across 22 white-label brands",
+        "Partnered across product, engineering, design, research, business, and operations to shape analytics, dashboards, brand theming, and reusable components from requirements through adoption",
+        "Built a research discipline across a 20-plus-product suite using interviews, prototype testing, Typeform, Useberry, Heap analytics, standardized findings, and roadshows to guide prioritization and continuous improvement",
+        "Presented an accessibility product concept that placed second in the Engine+ Innovation Challenge and earned attention from IPG global executives"
+      ],
+      "omnicom": [
+        "Supported oncology accounts as a freelance UX designer, translating regulated business and user needs into clearer product flows, content structures, and implementation recommendations",
+        "Partnered across account, strategy, creative, engineering, and design teams to align client outcomes, user experience, and build-ready decisions"
+      ],
+      "heartbeat": [
+        "Led user research and experience strategy for pharma and healthcare products, translating stakeholder input, competitive audits, and user needs into product direction",
+        "Created journey maps, user flows, wireframes, and prototypes for patient, HCP, and internal brand-team experiences across high-stakes regulated programs",
+        "Partnered with strategy, creative, account, and engineering teams to move research findings into prioritized, build-ready experiences"
+      ],
+      "account-management": [
+        "Managed Fortune 500 pharma and healthcare clients with USD 2M to 50M-plus budgets, aligning senior stakeholders and delivery teams around business, audience, and regulatory outcomes",
+        "Served as one of two account consumer leads on FCB Health's largest pharma account across TV, radio, digital, gaming, Times Square, brand planning, and MLR review",
+        "Translated client strategy into briefs, requirements, priorities, timelines, and MLR-ready delivery across account, creative, UX, analytics, and development teams"
+      ]
+    }
+  },
+  "hero": {
+    "eyebrow": "Airbnb Product Manager, Trust & Safety",
+    "tags": [
+      "Governed AI & human review",
+      "Regulated-risk product strategy",
+      "Cross-functional execution at scale"
+    ],
+    "intro": "I bring a regulated-risk product background to Airbnb's Trust & Safety challenge. In my current work, I turn high-stakes pharma needs into governed AI products for claim detection, evidence gaps, audit-ready review, routing, and regulatory risk monitoring while owning product decisions from discovery through working software. At Kinesso, I led shared systems and research across more than 20 products, 7,000-plus users, and 22 brands. My risk experience comes from regulated healthcare rather than marketplace fraud, and I would apply that disciplined, human-in-the-loop approach to helping Airbnb reduce safety incidents."
+  },
+  "contact": {
+    "prompt": "Hiring a product leader who can turn high-stakes safety problems into governed AI workflows, clear priorities, and aligned cross-functional execution? I would like to help Airbnb reduce safety incidents; email is the fastest way to reach me.",
+    "signoff": "Governed AI · regulated risk · cross-functional product delivery"
+  },
+  "constraints": {
+    "doNotClaim": [
+      "Direct Airbnb product experience",
+      "Direct marketplace Trust & Safety product experience",
+      "Direct interpersonal-safety product experience",
+      "Direct illegal-activity prevention product experience",
+      "Direct fraud or abuse product experience",
+      "Direct investigator-tooling ownership",
+      "Direct Trust & Safety policy ownership",
+      "Direct law-enforcement partnership",
+      "Five-plus years under a conventional Product Manager title",
+      "Owned safety-incident reduction metrics",
+      "Owned fraud-loss metrics",
+      "Owned machine-learning precision or recall metrics",
+      "Owned buy-build-partner evaluation at Airbnb",
+      "Global C-level reporting ownership",
+      "Private W-2 work eligibility"
+    ],
+    "blockedTerms": [
+      "Airbnb product veteran",
+      "Trust & Safety expert",
+      "marketplace safety expert",
+      "fraud prevention expert",
+      "abuse prevention expert",
+      "investigator tooling owner",
+      "safety policy owner",
+      "five years as a Product Manager",
+      "reduced Airbnb safety incidents",
+      "owned fraud loss",
+      "owned model precision and recall",
+      "reported to Airbnb executives"
+    ]
+  },
+  "privacy": {
+    "publicSafe": true,
+    "notes": "Contains only the public pasted job description and sanitized evidence from the public resume and portfolio. It includes no recruiter contact details, private application answers, compensation boundaries, or private eligibility information."
+  },
+  "qa": {
+    "status": "qa-passed",
+    "builtAt": "2026-07-22T02:25:41.690Z",
+    "configInputSha256": "fc9bcc9c4ce4d8ebd2743ae2c70cf7daa269dd32530c7a2e656229225d5a79a2",
+    "sourceResumeSha256": "375cc6566f5bbad5b95be9da551dfe87824378fb252222409d29ef32d334ca25",
+    "artifactHashes": {
+      "routeSha256": "63dc554917b90a8b5b1456836bb1d82653580283cf3206fbf89df12d81ea99a2",
+      "resumePdfSha256": "e5f15f8677d51dc763b670ab6e6f221b00885966e9043aace0b725117b9a2da6",
+      "scopedProjectSha256": {}
+    },
+    "renderer": {
+      "browser": {
+        "name": "chrome-headless-shell",
+        "version": "Google Chrome for Testing 149.0.7827.55"
+      },
+      "htmlPath": "tmp/tailored-resumes/airbnb-trust-safety-product-manager.html",
+      "pdfPath": "output/pdf/Wally-Mostafa-Airbnb-Trust-Safety-Product-Manager-Resume.pdf"
+    },
+    "ats": {
+      "ok": true,
+      "pdfPath": "output/pdf/Wally-Mostafa-Airbnb-Trust-Safety-Product-Manager-Resume.pdf",
+      "pageCount": 2,
+      "fileSize": 134985,
+      "annotations": [
+        {
+          "page": 1,
+          "uri": "mailto:wmostafa12@gmail.com"
+        },
+        {
+          "page": 1,
+          "uri": "https://linkedin.com/in/wallymo"
+        },
+        {
+          "page": 1,
+          "uri": "https://wallymo.github.io/airbnb-trust-safety-product-manager/"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/6748"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/4629"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.red-dot.org/project/dxa-digital-experience-audit-55219"
+        }
+      ],
+      "coverage": [
+        {
+          "id": "trust-safety-vision-strategy",
+          "requirement": "Create product and platform vision and strategy for Trust & Safety, with a focus on reducing safety incidents.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "product strategy",
+            "regulated risk",
+            "roadmap decisions"
+          ],
+          "missingTerms": [
+            "governed products"
+          ]
+        },
+        {
+          "id": "cross-functional-working-group",
+          "requirement": "Lead cross-functional groups across engineering, data science, design, operations, and policy to align execution and launches.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "cross-functional leadership",
+            "engineering",
+            "design",
+            "operations"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "backlog-roadmap-prioritization",
+          "requirement": "Maintain the product backlog and roadmap, prioritizing solutions by business value and customer impact.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "product backlog",
+            "roadmap decisions",
+            "prioritization",
+            "customer impact"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "measurable-goals-okrs",
+          "requirement": "Define goals and success with clearly measurable objectives and key results.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "measurable outcomes",
+            "product metrics",
+            "adoption"
+          ],
+          "missingTerms": [
+            "objectives and key results"
+          ]
+        },
+        {
+          "id": "product-executive-alignment",
+          "requirement": "Build alignment across product teams and leadership, present roadmaps and status, communicate concisely, and influence outcomes.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "executive alignment",
+            "roadmap communication",
+            "Fortune 500"
+          ],
+          "missingTerms": [
+            "influence outcomes"
+          ]
+        },
+        {
+          "id": "tradeoffs-ambiguity-constraints",
+          "requirement": "Anticipate bottlenecks, make high-stakes tradeoffs, and balance business, customer, technical, and operational constraints.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "high-stakes tradeoffs",
+            "ambiguity",
+            "operational constraints"
+          ],
+          "missingTerms": [
+            "technical constraints"
+          ]
+        },
+        {
+          "id": "buy-build-partner-opportunities",
+          "requirement": "Evaluate new product opportunities and bring forward buy, build, or partner proposals using data and user evidence.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "product opportunities",
+            "user evidence",
+            "implementation choices"
+          ],
+          "missingTerms": [
+            "buy build partner"
+          ]
+        },
+        {
+          "id": "short-long-term-platform-capabilities",
+          "requirement": "Develop short-term plans aligned with long-term goals to iteratively build platform capabilities that defend against safety issues.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "platform capabilities"
+          ],
+          "missingTerms": [
+            "short-term plans",
+            "long-term product direction",
+            "iterative delivery"
+          ]
+        },
+        {
+          "id": "trust-safety-risk-fraud-domain",
+          "requirement": "Bring prior product, operations, or engineering experience in trust, safety, risk, or fraud.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "risk products",
+            "risk detection",
+            "evidence trails",
+            "human review"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "five-years-product-management",
+          "requirement": "Bring at least five years of product management experience.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "product strategy",
+            "enterprise products",
+            "AI implementation"
+          ],
+          "missingTerms": [
+            "six-plus years leading product delivery"
+          ]
+        },
+        {
+          "id": "machine-learning-technical-pm",
+          "requirement": "Bring experience building machine-learning products or working in technical product management.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "machine-learning products",
+            "technical product management",
+            "model orchestration",
+            "human-in-the-loop"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "design-hypothesis-driven-development",
+          "requirement": "Use design and hypothesis-driven product development, strong analysis, troubleshooting, and problem solving.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "hypothesis-driven development",
+            "prototype testing"
+          ],
+          "missingTerms": [
+            "product analytics",
+            "problem solving"
+          ]
+        }
+      ],
+      "failures": [],
+      "warnings": [
+        "trust-safety-vision-strategy: supported core language missing from the PDF: governed products",
+        "measurable-goals-okrs: supported core language missing from the PDF: objectives and key results",
+        "product-executive-alignment: supported core language missing from the PDF: influence outcomes",
+        "tradeoffs-ambiguity-constraints: supported core language missing from the PDF: technical constraints",
+        "buy-build-partner-opportunities: supported core language missing from the PDF: buy build partner",
+        "short-long-term-platform-capabilities: supported core language missing from the PDF: short-term plans, long-term product direction, iterative delivery",
+        "five-years-product-management: supported core language missing from the PDF: six-plus years leading product delivery",
+        "design-hypothesis-driven-development: supported core language missing from the PDF: product analytics, problem solving"
+      ]
+    },
+    "route": {
+      "viewports": [
+        {
+          "name": "desktop",
+          "screenshot": "tmp/qa/airbnb-trust-safety-product-manager/desktop.png",
+          "errors": []
+        },
+        {
+          "name": "mobile",
+          "screenshot": "tmp/qa/airbnb-trust-safety-product-manager/mobile.png",
+          "errors": []
+        }
+      ],
+      "errors": []
+    }
+  }
+}
