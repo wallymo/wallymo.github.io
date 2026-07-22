@@ -127,9 +127,27 @@
         "project-03.html"
       ],
       "resumePdfPath": "output/pdf/Wally-Mostafa-AEC-Senior-UX-Researcher-Resume.pdf",
-      "publishStatus": "local-only",
+      "publishStatus": "live-verified",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-07-22T02:13:48.225Z"
+      "builtAt": "2026-07-22T02:13:48.225Z",
+      "verification": {
+        "verifiedAt": "2026-07-22T02:22:21.876Z",
+        "routeUrl": "https://wallymo.github.io/aec-senior-ux-researcher/",
+        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-AEC-Senior-UX-Researcher-Resume.pdf",
+        "configUrl": "https://wallymo.github.io/scripts/packages/aec-senior-ux-researcher.json",
+        "projectUrls": [
+          "https://wallymo.github.io/project-04.html",
+          "https://wallymo.github.io/project-01.html",
+          "https://wallymo.github.io/project-06.html",
+          "https://wallymo.github.io/project-03.html"
+        ],
+        "configSha256": "dcaca7ecd6b7a438116413943314c162b7647ecf75c86d6f46752b473186634e",
+        "pdfSha256": "968f19734cee6ee60621df5cf2b83531af735a564b2d19ec0753a28348132499",
+        "routeSha256": "17c2abd2205266a3769b2d9b2e2d87a077650c5b44a954a7828fcf251ce57d2c",
+        "scopedProjectSha256": {},
+        "configInputSha256": "732de72e27ec8f0452a012b5c6579630a8b5d697e27946841a3efd9a4c28a0f2",
+        "qaBuiltAt": "2026-07-22T02:13:48.225Z"
+      }
     },
     {
       "slug": "ai-customer-success-ops-builder",
