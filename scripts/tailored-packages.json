@@ -44,6 +44,26 @@
       "publishStatus": "tracked-unverified"
     },
     {
+      "workflowVersion": 2,
+      "slug": "abaxx-senior-brand-designer",
+      "roleTitle": "Abaxx Senior Brand Designer",
+      "artifactStem": "Abaxx-Senior-Brand-Designer",
+      "configPath": "scripts/packages/abaxx-senior-brand-designer.json",
+      "targetLane": "senior-brand-and-product-design-systems",
+      "evidenceMode": "portfolio-primary",
+      "fitClass": "strong",
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-05.html",
+        "project-08.html",
+        "project-03.html"
+      ],
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Abaxx-Senior-Brand-Designer-Resume.pdf",
+      "publishStatus": "local-only",
+      "qaStatus": "qa-passed",
+      "builtAt": "2026-07-22T13:28:52.536Z"
+    },
+    {
       "slug": "abnormal-ai-campaign-program-manager",
       "roleTitle": "Abnormal AI Campaign Program Manager",
       "fitClass": "adjacent",

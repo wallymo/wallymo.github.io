@@ -1,0 +1,471 @@
+{
+  "workflowVersion": 2,
+  "contractRevision": 2,
+  "slug": "abaxx-senior-brand-designer",
+  "roleTitle": "Abaxx Senior Brand Designer",
+  "artifactStem": "Abaxx-Senior-Brand-Designer",
+  "fitClass": "strong",
+  "routeMode": "canonical-projects",
+  "selectedProjects": [
+    "project-05.html",
+    "project-08.html",
+    "project-03.html"
+  ],
+  "job": {
+    "company": "Abaxx Technologies",
+    "roleTitle": "Senior Brand Designer",
+    "sourceChannel": "chat-pasted-jd",
+    "dateCaptured": "2026-07-22",
+    "location": "Not stated in the supplied posting",
+    "compensation": "$140,000-$170,000 base salary, plus equity, bonus, and benefits",
+    "atsVendor": "unknown",
+    "rawJd": "About the job. Role Overview. The Senior Brand Designer is responsible for defining and maintaining a unified visual identity across the Abaxx platform ecosystem - spanning web applications, mobile, desktop, AI products, and enterprise tooling. This role sits at the intersection of brand thinking and product design systems, translating visual identity into developer-ready standards that engineering teams can implement consistently and at scale. The ideal candidate brings direct experience with complex digital products, understands how design systems operate in engineering workflows, and can hold the line on visual consistency across a rapidly evolving multi-platform environment. This is a hands-on, high-ownership role. The Senior Brand Designer owns the Abaxx design language end-to-end - from typography, color, spacing, and iconography through to component guidelines, motion standards, and cross-platform implementation documentation. They work closely with engineering to ensure accurate implementation, contribute to executive and investor materials, and partner with product and leadership to evolve the visual identity as the platform matures. The right candidate can move fluidly between a brand strategy conversation and a Figma component review, and understands that in a technical product environment, design quality is only as good as its implementability. Responsibilities: Own the Abaxx design language end-to-end, serving as the single accountable owner of visual consistency across every product surface - web, mobile, desktop, AI products, and enterprise tooling. Develop and maintain comprehensive brand and product style guides that function as live reference documents for both design and engineering teams. Build and maintain scalable design systems and component libraries, including design tokens, spacing systems, iconography, typography, color, and motion standards, structured for direct use in engineering workflows. Partner directly with engineering leads to ensure accurate implementation of design standards - the design system should enable developers to ship correct UI without requiring ongoing design intervention. Create developer-facing design documentation that eliminates ambiguity before implementation begins, including component specifications, interaction patterns, and responsive design guidelines. Define and enforce visual identity standards across platforms, ensuring coherence across products that are being built simultaneously by different teams. Contribute to executive presentations, investor materials, and platform branding, maintaining the same standard of visual quality across internal and external-facing work. Work closely with product and leadership to evolve the Abaxx visual identity as products mature, balancing brand consistency with the practical realities of a fast-moving platform environment. Assist with product UX direction and interface refinement where needed, with a bias toward systemic solutions over one-off fixes. Establish accessibility standards (WCAG) as a baseline requirement across all design output, not a post-hoc review. Required Qualifications: 5+ years of professional branding, product design, or visual systems experience, with a track record of shipping design systems in complex digital product environments. Strong portfolio demonstrating brand systems, digital product design, modern UI/UX work, and design system creation across multiple platforms or surfaces. Hands-on experience building and maintaining design token systems, with a clear understanding of how tokens translate into engineering implementation. Demonstrated experience embedding design systems directly into engineering workflows - component libraries, developer-facing documentation, and frontend collaboration, not just Figma files handed over a wall. Experience creating developer-facing design documentation and style guides that engineering teams can execute against without significant design intervention. Strong working knowledge of typography, layout systems, color theory, interaction design, and responsive design principles. Proficiency with Figma and Adobe Creative Suite; familiarity with modern product design workflows and version-controlled design systems. Ability to communicate clearly with both technical and non-technical stakeholders, including engineering leads, product managers, and executive leadership. Working knowledge of WCAG accessibility standards, applied as a baseline across design output rather than a post-hoc review. Preferred Qualifications: Enterprise SaaS product design. Financial technology or infrastructure platforms. AI product branding and interfaces. Motion design and interaction systems. TailwindCSS-based design systems. Frontend collaboration with React or TypeScript teams. Cross-platform application design (web, desktop, mobile). Branding for technical or developer-focused products. About Us: Abaxx Technologies is building next-generation digital market infrastructure where identity, security, and intelligent automation converge. Our platform ecosystem spans decentralized identity (ID++), enterprise authentication, AI and agent orchestration, secure messaging, digital signing and evidentiary workflows, and cloud-native and regulated financial technology systems. In addition to our technology platforms, Abaxx operates the Abaxx Commodity Futures Exchange and Clearinghouse, regulated by the Monetary Authority of Singapore, supporting physically-settled benchmark futures in energy transition markets. As our platforms scale across regulated environments, we hold engineering excellence, release confidence, and operational reliability to the highest standard. Compensation: Base salary $140,000-$170,000 commensurate with experience and geographical location. Equity, bonus, and benefits. Confidentiality: This role has access to highly sensitive legal, governance, strategic, and intellectual property information and is expected to maintain strict confidentiality at all times. Equal Opportunity Statement: Abaxx is an Equal Opportunity Employer and is committed to fostering an inclusive workplace free from discrimination and harassment. Disclaimer: This job description is intended to describe the general nature and level of work being performed and is not intended to be an exhaustive list of all duties and responsibilities. Management reserves the right to modify duties at any time based on business needs."
+  },
+  "classification": {
+    "targetLane": "senior-brand-and-product-design-systems",
+    "evidenceMode": "portfolio-primary",
+    "primarySource": "portfolio",
+    "supportingSource": "resume",
+    "hardGateStatus": "pass",
+    "hardGates": [
+      {
+        "gate": "5+ years of professional branding, product design, or visual systems experience",
+        "status": "pass",
+        "evidence": "UX- and product-design work runs from Senior UX Designer in August 2018 through Director of Experience and Innovation and current hands-on product work, supported by 15 years across digital delivery and client strategy."
+      },
+      {
+        "gate": "Portfolio demonstrating brand systems, modern digital product UI, and design-system creation",
+        "status": "pass",
+        "evidence": "The portfolio includes a 500-component system for a 20+ product suite, enterprise branded analytics used across 22 white-label brands, and a current biopharma visual system with tokens and developer handoff."
+      },
+      {
+        "gate": "Hands-on design tokens and engineering implementation",
+        "status": "pass",
+        "evidence": "The Xenagos case study documents a design-system reference covering color, typography, spacing, radius, elevation, component behavior, motion guidance, and build conventions aligned with React, Vite, TypeScript, and SCSS."
+      },
+      {
+        "gate": "Figma proficiency and modern product-design workflows",
+        "status": "pass",
+        "evidence": "Figma-based design-system and research documentation is shown across the Splash and User Research case studies, alongside reusable components, prototypes, and team libraries."
+      },
+      {
+        "gate": "Working knowledge of WCAG accessibility standards",
+        "status": "pass",
+        "evidence": "The resume names WCAG and accessibility, while the portfolio documents accessibility-system direction and concrete keyboard-interaction guidance."
+      }
+    ]
+  },
+  "requirements": [
+    {
+      "id": "unified-brand-and-product-system",
+      "text": "Own a unified visual identity and product design system across a complex platform ecosystem.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Led UX and design-system strategy for enterprise analytics used by 7,000+ people across 22 white-label brands.",
+        "Splash unified a 20+ product suite through 500 components, 140 styles, 300 icons, shared patterns, and white-label behavior.",
+        "The Xenagos project translated a technical biopharma brand into a visual identity and reusable system for future pages and components."
+      ],
+      "resumeTerms": [
+        "visual identity",
+        "product design systems",
+        "brand theming",
+        "white-label"
+      ]
+    },
+    {
+      "id": "tokens-and-engineering-handoff",
+      "text": "Build design-token systems and developer-facing standards that translate directly into engineering implementation.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Xenagos includes an in-repository system reference for color, typography, spacing, radius, elevation, component behavior, motion guidance, and build conventions.",
+        "The system was aligned with the React, Vite, TypeScript, and SCSS structure used by the website.",
+        "Current product work includes front-end build, backend logic, demo readiness, and implementation handoff."
+      ],
+      "resumeTerms": [
+        "design tokens",
+        "developer-facing documentation",
+        "React",
+        "TypeScript",
+        "engineering handoff"
+      ]
+    },
+    {
+      "id": "visual-foundations-and-components",
+      "text": "Define typography, color, spacing, iconography, component guidelines, interaction patterns, and motion standards.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Splash includes 500 components, 140 styles, and 300 icons created from scratch.",
+        "Xenagos documents typography, color, spacing, radius, elevation, imagery, interaction, and motion guidance.",
+        "Enterprise work included visualization standards, palette logic, theming, and reusable dashboard behavior."
+      ],
+      "resumeTerms": [
+        "typography",
+        "color",
+        "spacing",
+        "iconography",
+        "motion guidance"
+      ]
+    },
+    {
+      "id": "engineering-embedded-design-system",
+      "text": "Embed the design system in engineering workflows through component libraries, living documentation, frontend collaboration, and implementation-quality controls.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Splash was built as a living system that simplified the developer experience across a large product suite.",
+        "Design Bot audited work against components and templates, flagging inconsistencies and quantifying system adherence.",
+        "Xenagos kept design decisions inside the web repository and close to the actual frontend structure."
+      ],
+      "resumeTerms": [
+        "component libraries",
+        "living documentation",
+        "frontend collaboration",
+        "system governance"
+      ]
+    },
+    {
+      "id": "enterprise-ai-and-regulated-products",
+      "text": "Apply brand and product-system thinking to enterprise, AI, technical, and regulated product environments.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Enterprise analytics and design-system work supported 7,000+ users and 22 white-label brands.",
+        "Current work includes governed AI products for regulated pharma workflows.",
+        "Xenagos required credible visual communication for scientific, investor, and technical audiences."
+      ],
+      "resumeTerms": [
+        "enterprise",
+        "AI products",
+        "regulated",
+        "investor-facing"
+      ]
+    },
+    {
+      "id": "accessibility-as-standard",
+      "text": "Establish WCAG accessibility as a baseline within design-system and interface work.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The resume explicitly names accessibility and WCAG within enterprise design-system work.",
+        "The portfolio documents early accessibility standards, keyboard-interaction guidance, and an inclusive system direction for Splash."
+      ],
+      "resumeTerms": [
+        "accessibility",
+        "WCAG",
+        "keyboard interaction"
+      ]
+    },
+    {
+      "id": "figma",
+      "text": "Work fluently in Figma and modern product-design workflows.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Figma-based documentation, libraries, system work, prototypes, and reusable research infrastructure appear across the portfolio."
+      ],
+      "resumeTerms": [
+        "Figma"
+      ]
+    },
+    {
+      "id": "adobe-creative-suite",
+      "text": "Use Adobe Creative Suite as part of the visual-design workflow.",
+      "priority": "preferred",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "resumeTerms": [
+        "Adobe Creative Suite"
+      ]
+    }
+  ],
+  "fitGate": {
+    "supportedOverlap": [
+      "Direct product design-system ownership at scale: 500 components, 140 styles, 300 icons, 20+ products, 7,000+ users, and 22 white-label brands.",
+      "Direct brand-system proof: Xenagos connects visual identity, typography, color, spacing, imagery, tokens, motion guidance, and investor-facing communication.",
+      "Direct engineering-handoff proof: an in-repository design reference aligned with React, Vite, TypeScript, and SCSS, plus current front-end product-building experience.",
+      "System-governance proof: living documentation, shared components, research-informed behavior, and Design Bot auditing against components and templates.",
+      "Enterprise and regulated-product relevance: marketing analytics, AI products, pharma workflows, and scientific brand communication.",
+      "Accessibility is treated as a system concern through WCAG direction and keyboard-interaction guidance."
+    ],
+    "unsupportedRequirements": [
+      "Adobe Creative Suite proficiency is not explicitly documented in the current resume or portfolio.",
+      "Direct ownership of a native desktop application design system is not shown.",
+      "TailwindCSS-based design-system experience is not documented."
+    ],
+    "actualMismatches": [],
+    "missingEvidence": [
+      "The portfolio proves web and enterprise product surfaces but does not isolate native mobile and desktop system work as separate case studies.",
+      "The application should not imply Adobe Creative Suite or TailwindCSS proficiency without additional evidence."
+    ],
+    "coverLetterBridge": {
+      "status": "not-needed",
+      "rationale": "This is a direct portfolio-primary fit: the selected case studies already prove visual identity, large-scale product design systems, tokens, developer-facing documentation, engineering-aware implementation, enterprise UI, and accessibility, so a cover letter is not needed to make the core case."
+    },
+    "recommendation": "Proceed as strong. Lead with the direct overlap between brand systems and implementation-ready product design: Splash for scale and governance, Xenagos for tokens and technical handoff, and Enterprise Design System for branded data-product UI. Keep Adobe Creative Suite, TailwindCSS, and native desktop ownership out of recruiter-facing claims."
+  },
+  "resume": {
+    "summary": "Senior product and visual-systems designer with nearly eight years of hands-on UX and product-design experience and 15 years across digital delivery, client strategy, and regulated work. I turn visual identity into scalable product design systems, from typography, color, spacing, tokens, and component libraries through developer-facing documentation and engineering handoff. My strongest proof includes a 500-component system for a 20+ product suite, enterprise UX used by 7,000+ people across 22 white-label brands, and a current React and TypeScript-aligned brand system.",
+    "skills": [
+      {
+        "label": "Brand & Visual Systems",
+        "description": "Visual identity, typography, color, spacing, iconography, motion guidance, responsive UI, brand theming, and white-label product experiences"
+      },
+      {
+        "label": "Product Design Systems",
+        "description": "Figma, design tokens, component libraries, living documentation, interaction patterns, system governance, and Design Bot quality auditing"
+      },
+      {
+        "label": "Engineering Handoff & Product UI",
+        "description": "Developer-facing documentation, frontend collaboration, React, TypeScript, SCSS, responsive implementation, enterprise analytics, and AI products"
+      },
+      {
+        "label": "Accessibility & Design Leadership",
+        "description": "Accessibility, WCAG, keyboard interaction, research-informed standards, product and engineering partnership, executive communication, and team scaling"
+      }
+    ],
+    "roles": {
+      "hedgehox": [
+        "Designed the Xenagos Bio visual identity and investor-facing website, translating scientific positioning into a premium, credible product surface",
+        "Created an in-repository design-system reference covering design tokens, typography, color, spacing, component behavior, motion guidance, and engineering handoff aligned with React, Vite, TypeScript, and SCSS",
+        "Designed AI products for regulated pharma workflows, including claim review, brief intake, scoping, review routing, submission capture, and FDA signal monitoring",
+        "Secured an investor for proprietary Claims Detection software by building the functional POC, shaping the demo story, and iterating with investors"
+      ],
+      "one-block-away": [
+        "Lead product strategy and UX from discovery through visual direction, responsive product UI, front-end build, backend logic, demo readiness, and client iteration",
+        "Build client-led AI products that turn unclear business questions into testable product surfaces, reusable workflows, and implementation decisions",
+        "Translate complex data, model behavior, and evidence trails into interfaces that technical and non-technical stakeholders can understand and use"
+      ],
+      "kinesso": [
+        "Led enterprise UX and product design systems used by 7,000+ users across 22 white-label brands, connecting visual identity, brand theming, data visualization, and reusable interface patterns",
+        "Helped shape a living design system for a 20+ product suite with 500 components, 140 styles, 300 icons, shared navigation, personalization, and white-label behavior",
+        "Partnered across product, design, development, and business teams to turn research and technical constraints into component libraries, living documentation, and build-ready system decisions",
+        "Helped establish accessibility and WCAG direction, including inclusive standards and concrete keyboard interaction guidance",
+        "Scaled product design from 2 to 30 people across the US and Poland while maintaining shared standards across products and teams",
+        "Design-system and analytics work earned 5 Indigo Gold, 4 Indigo Silver, and Red Dot recognition for Brands and Communication Design"
+      ],
+      "omnicom": [
+        "Translated oncology brand goals into clearer user flows, content structure, and digital recommendations across account, strategy, creative, and delivery teams"
+      ],
+      "heartbeat": [
+        "Led UX research and experience strategy for pharma and healthcare work, translating stakeholder input, competitive audits, and user needs into digital product direction",
+        "Created journey maps, site maps, user flows, wireframes, and Figma prototypes for patient, HCP, and internal brand-team experiences",
+        "Partnered with strategy, creative, account, product, and engineering teams to move UX direction into build-ready product and campaign experiences"
+      ],
+      "account-management": [
+        "Managed Fortune 500 pharma and healthcare work across $2M-$50M+ budgets, aligning brand strategy, creative standards, digital delivery, timelines, and regulated review",
+        "Translated client and brand strategy into briefs, creative feedback, production requirements, and review-ready deliverables across creative, UX, and development teams"
+      ]
+    }
+  },
+  "hero": {
+    "eyebrow": "Abaxx Senior Brand Designer",
+    "tags": [
+      "Brand systems that scale",
+      "Design tokens to engineering",
+      "Enterprise and AI product UI"
+    ],
+    "intro": "Abaxx is hiring someone who can keep a complex platform ecosystem visually coherent and make every system decision implementable. I have led enterprise design systems used by 7,000+ people across 22 white-label brands, helped shape a 500-component system for a 20+ product suite, and recently built a technical brand system covering tokens, motion guidance, and React and TypeScript handoff. I bring the visual judgment, product-system rigor, and engineering fluency needed to evolve one design language across enterprise, AI, and regulated products."
+  },
+  "contact": {
+    "prompt": "Hiring the design leader who can turn Abaxx's visual identity into a durable product system for design and engineering? I would like to help make every platform surface feel coherent, accessible, and implementation-ready. Email is the fastest way to reach me.",
+    "signoff": "Brand-system ownership · implementation-ready standards · enterprise product craft"
+  },
+  "constraints": {
+    "doNotClaim": [
+      "Adobe Creative Suite",
+      "TailwindCSS",
+      "native desktop application design-system ownership",
+      "native mobile application design-system ownership"
+    ],
+    "blockedTerms": [
+      "Adobe expert",
+      "Tailwind design system",
+      "native desktop design system",
+      "native mobile design system"
+    ]
+  },
+  "privacy": {
+    "publicSafe": true,
+    "notes": "Contains only public job-posting text and sanitized evidence from the public resume and portfolio. It includes no recruiter contact details, private application answers, personal compensation boundaries, or private eligibility information."
+  },
+  "qa": {
+    "status": "qa-passed",
+    "builtAt": "2026-07-22T13:28:52.536Z",
+    "configInputSha256": "bf581eb0579ef29a167d4bd72b8d2c46686722929b328fa70acda782ec558962",
+    "sourceResumeSha256": "375cc6566f5bbad5b95be9da551dfe87824378fb252222409d29ef32d334ca25",
+    "artifactHashes": {
+      "routeSha256": "877817eb1b61528c6dda657fd7a1ba6cae64d30d7e3bc6ff20c2c711dd5c6dec",
+      "resumePdfSha256": "bcc63b487afc1622792e07b76460e17a2a798b9b6a618260d320d849a553bf40",
+      "scopedProjectSha256": {}
+    },
+    "renderer": {
+      "browser": {
+        "name": "chrome-headless-shell",
+        "version": "Google Chrome for Testing 149.0.7827.55"
+      },
+      "htmlPath": "tmp/tailored-resumes/abaxx-senior-brand-designer.html",
+      "pdfPath": "output/pdf/Wally-Mostafa-Abaxx-Senior-Brand-Designer-Resume.pdf"
+    },
+    "ats": {
+      "ok": true,
+      "pdfPath": "output/pdf/Wally-Mostafa-Abaxx-Senior-Brand-Designer-Resume.pdf",
+      "pageCount": 2,
+      "fileSize": 129489,
+      "annotations": [
+        {
+          "page": 1,
+          "uri": "mailto:wmostafa12@gmail.com"
+        },
+        {
+          "page": 1,
+          "uri": "https://linkedin.com/in/wallymo"
+        },
+        {
+          "page": 1,
+          "uri": "https://wallymo.github.io/abaxx-senior-brand-designer/"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/6748"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/4629"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.red-dot.org/project/dxa-digital-experience-audit-55219"
+        }
+      ],
+      "coverage": [
+        {
+          "id": "unified-brand-and-product-system",
+          "requirement": "Own a unified visual identity and product design system across a complex platform ecosystem.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "visual identity",
+            "product design systems",
+            "brand theming",
+            "white-label"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "tokens-and-engineering-handoff",
+          "requirement": "Build design-token systems and developer-facing standards that translate directly into engineering implementation.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "design tokens",
+            "developer-facing documentation",
+            "React",
+            "TypeScript",
+            "engineering handoff"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "visual-foundations-and-components",
+          "requirement": "Define typography, color, spacing, iconography, component guidelines, interaction patterns, and motion standards.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "typography",
+            "color",
+            "spacing",
+            "iconography",
+            "motion guidance"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "engineering-embedded-design-system",
+          "requirement": "Embed the design system in engineering workflows through component libraries, living documentation, frontend collaboration, and implementation-quality controls.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "component libraries",
+            "living documentation",
+            "frontend collaboration",
+            "system governance"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "enterprise-ai-and-regulated-products",
+          "requirement": "Apply brand and product-system thinking to enterprise, AI, technical, and regulated product environments.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "enterprise",
+            "AI products",
+            "regulated",
+            "investor-facing"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "accessibility-as-standard",
+          "requirement": "Establish WCAG accessibility as a baseline within design-system and interface work.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "accessibility",
+            "WCAG",
+            "keyboard interaction"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "figma",
+          "requirement": "Work fluently in Figma and modern product-design workflows.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "Figma"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "adobe-creative-suite",
+          "requirement": "Use Adobe Creative Suite as part of the visual-design workflow.",
+          "priority": "preferred",
+          "evidenceStatus": "none",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "Adobe Creative Suite"
+          ]
+        }
+      ],
+      "failures": [],
+      "warnings": []
+    },
+    "route": {
+      "viewports": [
+        {
+          "name": "desktop",
+          "screenshot": "tmp/qa/abaxx-senior-brand-designer/desktop.png",
+          "errors": []
+        },
+        {
+          "name": "mobile",
+          "screenshot": "tmp/qa/abaxx-senior-brand-designer/mobile.png",
+          "errors": []
+        }
+      ],
+      "errors": []
+    }
+  }
+}
