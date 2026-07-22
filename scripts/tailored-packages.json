@@ -1667,9 +1667,27 @@
         "project-04.html"
       ],
       "resumePdfPath": "output/pdf/Wally-Mostafa-Socure-Product-Lead-Workforce-Solutions-Resume.pdf",
-      "publishStatus": "local-only",
+      "publishStatus": "live-verified",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-07-22T02:27:48.431Z"
+      "builtAt": "2026-07-22T02:27:48.431Z",
+      "verification": {
+        "verifiedAt": "2026-07-22T02:31:02.723Z",
+        "routeUrl": "https://wallymo.github.io/socure-product-lead-workforce-solutions/",
+        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-Socure-Product-Lead-Workforce-Solutions-Resume.pdf",
+        "configUrl": "https://wallymo.github.io/scripts/packages/socure-product-lead-workforce-solutions.json",
+        "projectUrls": [
+          "https://wallymo.github.io/project-01.html",
+          "https://wallymo.github.io/project-02.html",
+          "https://wallymo.github.io/project-03.html",
+          "https://wallymo.github.io/project-04.html"
+        ],
+        "configSha256": "d5237aa12f9da1d02325e89527f1bb796f12bcf07e5b014ab82132453f5a0394",
+        "pdfSha256": "8edc4a60c67b0699ff76cb534248749617b1702946f64a6db87b338973d84981",
+        "routeSha256": "b736759245d35be5d473ef1bd8daef637d6105e074454d388680017793ffc758",
+        "scopedProjectSha256": {},
+        "configInputSha256": "5fec653cbbba4c0157eae73cce9fe28806ec9b41fa1a25a8d57ea78252c1460e",
+        "qaBuiltAt": "2026-07-22T02:27:48.431Z"
+      }
     },
     {
       "slug": "sogeti-ai-platform-product-manager",
