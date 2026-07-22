@@ -59,9 +59,26 @@
         "project-03.html"
       ],
       "resumePdfPath": "output/pdf/Wally-Mostafa-Abaxx-Senior-Brand-Designer-Resume.pdf",
-      "publishStatus": "local-only",
+      "publishStatus": "live-verified",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-07-22T13:28:52.536Z"
+      "builtAt": "2026-07-22T13:28:52.536Z",
+      "verification": {
+        "verifiedAt": "2026-07-22T13:33:25.377Z",
+        "routeUrl": "https://wallymo.github.io/abaxx-senior-brand-designer/",
+        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-Abaxx-Senior-Brand-Designer-Resume.pdf",
+        "configUrl": "https://wallymo.github.io/scripts/packages/abaxx-senior-brand-designer.json",
+        "projectUrls": [
+          "https://wallymo.github.io/project-05.html",
+          "https://wallymo.github.io/project-08.html",
+          "https://wallymo.github.io/project-03.html"
+        ],
+        "configSha256": "98059c00ef08694704ebbff6218fbbca5763dd7c4597a350d54bbc3344f766d2",
+        "pdfSha256": "bcc63b487afc1622792e07b76460e17a2a798b9b6a618260d320d849a553bf40",
+        "routeSha256": "877817eb1b61528c6dda657fd7a1ba6cae64d30d7e3bc6ff20c2c711dd5c6dec",
+        "scopedProjectSha256": {},
+        "configInputSha256": "bf581eb0579ef29a167d4bd72b8d2c46686722929b328fa70acda782ec558962",
+        "qaBuiltAt": "2026-07-22T13:28:52.536Z"
+      }
     },
     {
       "slug": "abnormal-ai-campaign-program-manager",
