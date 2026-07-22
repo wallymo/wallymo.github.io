@@ -183,9 +183,26 @@
         "project-03.html"
       ],
       "resumePdfPath": "output/pdf/Wally-Mostafa-Applied-Systems-Senior-Product-Manager-AI-Automation-Resume.pdf",
-      "publishStatus": "local-only",
+      "publishStatus": "live-verified",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-07-22T02:04:48.903Z"
+      "builtAt": "2026-07-22T02:04:48.903Z",
+      "verification": {
+        "verifiedAt": "2026-07-22T02:08:07.207Z",
+        "routeUrl": "https://wallymo.github.io/applied-systems-senior-product-manager-ai-automation/",
+        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-Applied-Systems-Senior-Product-Manager-AI-Automation-Resume.pdf",
+        "configUrl": "https://wallymo.github.io/scripts/packages/applied-systems-senior-product-manager-ai-automation.json",
+        "projectUrls": [
+          "https://wallymo.github.io/project-01.html",
+          "https://wallymo.github.io/project-02.html",
+          "https://wallymo.github.io/project-03.html"
+        ],
+        "configSha256": "0afb8a2005cd4524e9420a915d60944aff9be61f0768b4ed4bbe7f510f5c0df7",
+        "pdfSha256": "d69c49d4d4f8be1193dea08b4a880335b80dda1bd118d00d2283b75f7fb3040b",
+        "routeSha256": "5690ee455aa8c898ee3faa3d7bf3b1d6cbdb9e64fd10f636a78773ae4454a62d",
+        "scopedProjectSha256": {},
+        "configInputSha256": "a71c5806d0b1f7833f694a0beff894cfd8f8da9b479652009525d70501b94016",
+        "qaBuiltAt": "2026-07-22T02:04:48.903Z"
+      }
     },
     {
       "slug": "avalara-senior-program-manager",
