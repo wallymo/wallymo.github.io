@@ -209,9 +209,27 @@
         "project-03.html"
       ],
       "resumePdfPath": "output/pdf/Wally-Mostafa-Airbnb-Trust-Safety-Product-Manager-Resume.pdf",
-      "publishStatus": "local-only",
+      "publishStatus": "live-verified",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-07-22T02:25:41.690Z"
+      "builtAt": "2026-07-22T02:25:41.690Z",
+      "verification": {
+        "verifiedAt": "2026-07-22T02:34:55.973Z",
+        "routeUrl": "https://wallymo.github.io/airbnb-trust-safety-product-manager/",
+        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-Airbnb-Trust-Safety-Product-Manager-Resume.pdf",
+        "configUrl": "https://wallymo.github.io/scripts/packages/airbnb-trust-safety-product-manager.json",
+        "projectUrls": [
+          "https://wallymo.github.io/project-01.html",
+          "https://wallymo.github.io/project-04.html",
+          "https://wallymo.github.io/project-06.html",
+          "https://wallymo.github.io/project-03.html"
+        ],
+        "configSha256": "2ac626a27bab007aa5c16c9d13c28903812d6399a4d033675c68a3d28a00bfb5",
+        "pdfSha256": "e5f15f8677d51dc763b670ab6e6f221b00885966e9043aace0b725117b9a2da6",
+        "routeSha256": "63dc554917b90a8b5b1456836bb1d82653580283cf3206fbf89df12d81ea99a2",
+        "scopedProjectSha256": {},
+        "configInputSha256": "fc9bcc9c4ce4d8ebd2743ae2c70cf7daa269dd32530c7a2e656229225d5a79a2",
+        "qaBuiltAt": "2026-07-22T02:25:41.690Z"
+      }
     },
     {
       "slug": "alignerr-digital-health-strategist",
