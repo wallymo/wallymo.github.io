@@ -1408,9 +1408,27 @@
         "project-01.html"
       ],
       "resumePdfPath": "output/pdf/Wally-Mostafa-Oktana-UX-Designer-Resume.pdf",
-      "publishStatus": "local-only",
+      "publishStatus": "live-verified",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-07-22T22:50:20.228Z"
+      "builtAt": "2026-07-22T22:50:20.228Z",
+      "verification": {
+        "verifiedAt": "2026-07-22T22:51:47.680Z",
+        "routeUrl": "https://wallymo.github.io/oktana-ux-designer/",
+        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-Oktana-UX-Designer-Resume.pdf",
+        "configUrl": "https://wallymo.github.io/scripts/packages/oktana-ux-designer.json",
+        "projectUrls": [
+          "https://wallymo.github.io/project-04.html",
+          "https://wallymo.github.io/project-03.html",
+          "https://wallymo.github.io/project-06.html",
+          "https://wallymo.github.io/project-01.html"
+        ],
+        "configSha256": "0b0bd35f770f1c773f8beb3fd534262b27e33563cca31a429749ef5d29f94f7b",
+        "pdfSha256": "830eadc709c953a532ba49c20b16c2fe9a11f6b278a2b4f0b728efc1fceb2295",
+        "routeSha256": "2eb70435fbf0b21926df0e814b83b5c98a9bd14e6717b4255d38412017083c05",
+        "scopedProjectSha256": {},
+        "configInputSha256": "c9ce3d688c248f4e559f0a04b21f8716a4a3e19516e7daf578eec487bf64a163",
+        "qaBuiltAt": "2026-07-22T22:50:20.228Z"
+      }
     },
     {
       "slug": "omidria-product-marketing",
