@@ -1392,6 +1392,27 @@
       "notes": "PDF-only recruiter artifact per current Tailored Portfolio Rules; temporary render HTML removed after visual and link verification."
     },
     {
+      "workflowVersion": 2,
+      "slug": "oktana-ux-designer",
+      "roleTitle": "Oktana UX Designer",
+      "artifactStem": "Oktana-UX-Designer",
+      "configPath": "scripts/packages/oktana-ux-designer.json",
+      "targetLane": "enterprise-product-ux-and-ai-powered-messaging",
+      "evidenceMode": "portfolio-primary",
+      "fitClass": "strong",
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-04.html",
+        "project-03.html",
+        "project-06.html",
+        "project-01.html"
+      ],
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Oktana-UX-Designer-Resume.pdf",
+      "publishStatus": "local-only",
+      "qaStatus": "qa-passed",
+      "builtAt": "2026-07-22T22:50:20.228Z"
+    },
+    {
       "slug": "omidria-product-marketing",
       "roleTitle": "OMIDRIA Product Marketing",
       "fitClass": "unclassified",

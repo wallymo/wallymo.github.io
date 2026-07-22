@@ -1,0 +1,528 @@
+{
+  "workflowVersion": 2,
+  "contractRevision": 2,
+  "slug": "oktana-ux-designer",
+  "roleTitle": "Oktana UX Designer",
+  "artifactStem": "Oktana-UX-Designer",
+  "fitClass": "strong",
+  "routeMode": "canonical-projects",
+  "selectedProjects": [
+    "project-04.html",
+    "project-03.html",
+    "project-06.html",
+    "project-01.html"
+  ],
+  "job": {
+    "company": "Oktana",
+    "roleTitle": "UX Designer",
+    "jobId": "not-listed",
+    "jobUrl": null,
+    "sourceChannel": "chat-pasted-jd",
+    "dateCaptured": "2026-07-22",
+    "location": "100% remote contractor, United States preferred, US Central collaboration",
+    "atsVendor": "unknown",
+    "rawJd": "About the job: Oktana helps companies prepare for AI through project delivery, staff augmentation, Salesforce, MuleSoft, Snowflake, and modern product development. This is a 100% remote contractor position collaborating with distributed U.S. teams on digital products used by millions. Oktana is seeking a UX Designer for a long-term project improving messaging experiences across mobile and web. The designer will shape messaging products connecting job seekers and employers, including intuitive, data-driven, and AI-powered messaging experiences, while collaborating with Product Managers, Engineers, Researchers, Legal, and other stakeholders. Responsibilities include designing end-to-end messaging experiences across mobile and desktop; creating user journeys, wireframes, interactive prototypes, and high-fidelity mockups in Figma; improving reply prompts, conversation transparency, status updates, and re-engagement patterns; designing complex workflows, search, filtering, and data-heavy interfaces; incorporating qualitative research and user feedback; validating decisions through usability testing, A/B testing, and research insights; working within an established design system; and presenting design solutions and rationale. Must-haves: 3+ years of professional Product UX Design experience as an individual contributor; a strong end-to-end UX portfolio; complex enterprise or data-heavy product experience; strong Figma proficiency and handoff workflows; established design-system experience; cross-functional collaboration with Product, Engineering, UX Research, and Legal; independent delivery with minimal supervision; research-led iteration; and advanced English. Nice-to-haves: messaging, inbox, communication, or notification products; accessibility and WCAG; international or localized products, especially Japan; mobile-first product design; A/B testing; and contractor or embedded-designer experience. Project: Enterprise Messaging Platform. Work model: 100% remote contractor. Preferred region: United States. Time zone: US Central. Advanced English required."
+  },
+  "classification": {
+    "targetLane": "enterprise-product-ux-and-ai-powered-messaging",
+    "evidenceMode": "portfolio-primary",
+    "primarySource": "portfolio",
+    "supportingSource": "resume",
+    "hardGateStatus": "pass",
+    "hardGates": [
+      {
+        "gate": "3+ years of professional Product UX Design experience in an individual-contributor role",
+        "status": "pass",
+        "evidence": "The resume shows nearly eight years of directly relevant UX and product-design work from Senior UX Designer through Director of Experience and Innovation and current hands-on product work, supported by 15 years across digital products and client delivery."
+      },
+      {
+        "gate": "Strong end-to-end UX portfolio spanning journeys, interaction design, prototypes, visual design, and delivery",
+        "status": "pass",
+        "evidence": "The portfolio documents user research, journeys, site maps, user flows, wireframes, interactive prototype testing, enterprise interface systems, visual design, research-led iteration, and engineering handoff."
+      },
+      {
+        "gate": "Complex enterprise products or data-heavy workflows",
+        "status": "pass",
+        "evidence": "Kinesso case studies show enterprise analytics, dashboards, visualization standards, audit workflows, search-to-results flows, brand theming, reusable components, and product systems used by 7,000+ people across 22 white-label brands."
+      },
+      {
+        "gate": "Figma proficiency and established design-system experience",
+        "status": "pass",
+        "evidence": "The User Research case study shows reusable Figma documentation and prototype testing; the Splash and MIE work show a 500-component system, 140 styles, 300 icons, 50 personas, white-label patterns, design governance, and build-ready handoff."
+      },
+      {
+        "gate": "Cross-functional collaboration with Product, Engineering, UX Research, and Legal",
+        "status": "pass",
+        "evidence": "The resume and case studies show direct work with product, engineering, research, design, strategy, client, and delivery teams. Regulated pharma work adds MLR review and approval workflows, which is credible adjacent evidence for legal and compliance collaboration without claiming a dedicated legal-team role."
+      },
+      {
+        "gate": "Independent research-led delivery with minimal supervision",
+        "status": "pass",
+        "evidence": "Built a UX research discipline from scratch across 20+ products, led enterprise UX and design-system strategy, scaled design from 2 to 30 people, and currently owns discovery through working prototype and handoff."
+      },
+      {
+        "gate": "Remote U.S. collaboration and advanced English communication",
+        "status": "pass",
+        "evidence": "The candidate is based in Raleigh, North Carolina, works remotely in current roles, and has 15 years presenting recommendations, facilitating stakeholder work, and delivering for U.S. enterprise and healthcare organizations."
+      }
+    ]
+  },
+  "requirements": [
+    {
+      "id": "end-to-end-product-ux",
+      "text": "Design end-to-end product experiences across mobile and desktop using journeys, wireframes, interactive prototypes, high-fidelity mockups, and clear handoff.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Heartbeat work includes journey maps, site maps, user flows, wireframes, and prototypes for patient, HCP, and internal product experiences.",
+        "Kinesso work combines research, interaction patterns, prototype testing, visual systems, final interfaces, and engineering collaboration across enterprise products.",
+        "Current product work spans discovery, user flows, working prototypes, front-end and backend logic, demo readiness, and handoff."
+      ],
+      "resumeTerms": [
+        "user journeys",
+        "user flows",
+        "wireframes",
+        "interactive prototypes",
+        "high-fidelity design",
+        "design handoff"
+      ]
+    },
+    {
+      "id": "complex-enterprise-and-data-workflows",
+      "text": "Design intuitive experiences for complex enterprise workflows, search, filtering, dashboards, and data-heavy interfaces.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Led enterprise analytics and design systems used by 7,000+ users across 22 white-label brands.",
+        "The MIE case study shows dashboards, visualization standards, brand theming, comparison, and dense-data scanning patterns.",
+        "The Digital Audit Experience shows a repeatable search-to-results workflow, benchmarks, recommendations, and data visualization."
+      ],
+      "resumeTerms": [
+        "enterprise UX",
+        "data-heavy workflows",
+        "dashboards",
+        "search",
+        "search-to-results",
+        "data visualization"
+      ]
+    },
+    {
+      "id": "figma-and-design-systems",
+      "text": "Create polished work in Figma and deliver within established design systems, product standards, and handoff workflows.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Built reusable Figma research libraries and product documentation across a 20+ product suite.",
+        "Helped shape a 500-component system with 140 styles, 300 icons, 50 personas, white-label patterns, and research-informed behaviors.",
+        "Led enterprise UX and design-system strategy with product and engineering partners."
+      ],
+      "resumeTerms": [
+        "Figma",
+        "design systems",
+        "component libraries",
+        "product standards",
+        "design handoff"
+      ]
+    },
+    {
+      "id": "research-validation-and-iteration",
+      "text": "Incorporate qualitative research and user feedback, validate design decisions through usability testing and research insights, and iterate based on evidence.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Built the UX research discipline from scratch across more than 20 products.",
+        "Used interviews, Typeform feedback, Useberry prototype testing, Heap behavioral data, and reusable findings to inform product decisions.",
+        "Embedded research, user testing, revisions, validation, and handoff into product timelines."
+      ],
+      "resumeTerms": [
+        "qualitative research",
+        "user feedback",
+        "usability testing",
+        "Useberry",
+        "Heap",
+        "iterative design"
+      ]
+    },
+    {
+      "id": "cross-functional-stakeholder-delivery",
+      "text": "Collaborate with Product, Engineering, UX Research, Legal, and other stakeholders while presenting design rationale and tradeoffs.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Kinesso work aligned product, engineering, research, design, analytics, and business leads across four suites and 22 brands.",
+        "Heartbeat work moved research and UX recommendations into build-ready experiences with strategy, creative, account, product, and engineering teams.",
+        "Pharma work involves MLR review, approval routing, FDA constraints, client stakeholders, and human-review workflows."
+      ],
+      "resumeTerms": [
+        "Product",
+        "Engineering",
+        "UX Research",
+        "MLR review",
+        "stakeholders",
+        "design rationale"
+      ]
+    },
+    {
+      "id": "ai-powered-messaging-context",
+      "text": "Design AI-powered messaging experiences, including clear system status, prompts, transparency, and communication workflows.",
+      "priority": "core",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Current work includes governed AI workflows, prompt-defined behavior, human-review surfaces, evidence trails, and model orchestration.",
+        "Claims Detector and review-routing work make AI output, evidence gaps, risk, status, and approval logic visible to people completing regulated workflows.",
+        "The portfolio does not show a dedicated inbox or messaging product, so the transferable proof is AI interaction and workflow-state design rather than messaging-domain tenure."
+      ],
+      "resumeTerms": [
+        "AI-powered workflows",
+        "human review",
+        "prompts",
+        "evidence trails",
+        "workflow transparency",
+        "routing"
+      ]
+    },
+    {
+      "id": "accessibility-and-mobile",
+      "text": "Apply accessibility best practices and design across mobile and web platforms.",
+      "priority": "preferred",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Resume explicitly names accessibility and WCAG in enterprise design-system work.",
+        "Portfolio documents accessibility standards, keyboard-interaction guidance, inclusive system direction, and an accessibility-panel concept that placed second in an IPG innovation challenge.",
+        "Healthcare and pharma work includes responsive digital experiences and submission capture across desktop, tablet, and mobile."
+      ],
+      "resumeTerms": [
+        "accessibility",
+        "WCAG",
+        "keyboard interaction",
+        "mobile and web",
+        "responsive design"
+      ]
+    },
+    {
+      "id": "localization-and-ab-testing",
+      "text": "Experience with Japanese localization, international products, and A/B testing programs.",
+      "priority": "preferred",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "resumeTerms": [
+        "Japanese localization",
+        "Japan market UX",
+        "international product localization",
+        "A/B testing ownership"
+      ]
+    }
+  ],
+  "fitGate": {
+    "supportedOverlap": [
+      "End-to-end UX is directly documented from research, journeys, flows, wireframes, and prototypes through polished enterprise systems and engineering handoff.",
+      "Complex product proof is unusually strong: enterprise analytics, dense dashboards, data visualization, search-to-results audit workflows, white-label systems, and 7,000+ users across 22 brands.",
+      "Figma and established design systems are direct evidence through reusable research libraries, prototype testing, component systems, product standards, and design governance.",
+      "Research-led iteration is a major portfolio lane, including interviews, Typeform, Useberry, Heap, reusable documentation, and research built into delivery timelines.",
+      "Current AI product work provides credible proof for transparent AI interactions, prompt-defined behavior, evidence trails, human review, and workflow routing.",
+      "Accessibility and cross-functional delivery are directly supported, including WCAG direction, keyboard interaction, product and engineering partnership, and regulated review environments."
+    ],
+    "unsupportedRequirements": [
+      "No dedicated messaging, inbox, notification, or employer-job-seeker communication case study is shown.",
+      "Japanese-market localization and formal international product-localization ownership are not shown.",
+      "Direct ownership of an A/B testing program is not shown.",
+      "A dedicated Legal-team partnership is not named; MLR and regulated approval workflows are the closest documented evidence."
+    ],
+    "actualMismatches": [],
+    "missingEvidence": [
+      "The portfolio demonstrates transferable AI interaction and complex-workflow design rather than prior messaging-product tenure.",
+      "Mobile and responsive work is present, but a mobile-first messaging case study is not isolated as a standalone artifact.",
+      "The package should not imply Japanese localization, direct A/B program ownership, or a named Legal-team role."
+    ],
+    "coverLetterBridge": {
+      "status": "not-needed",
+      "rationale": "This is a direct portfolio-primary UX fit. The must-have center is already proven through end-to-end product UX, enterprise and data-heavy workflows, Figma, research, design systems, accessibility, and senior cross-functional delivery. Messaging-specific tenure is listed as a nice-to-have, so the portfolio can make the core case without a cover letter."
+    },
+    "recommendation": "Proceed as strong. Lead with enterprise UX, research-to-handoff execution, Figma and design-system rigor, data-heavy workflow design, and transparent AI interactions. Keep messaging tenure, Japanese localization, A/B program ownership, and dedicated Legal-team collaboration visible as unclaimed gaps."
+  },
+  "resume": {
+    "summary": "Senior UX and product designer with nearly eight years of hands-on UX experience and 15 years across digital products, client strategy, and regulated delivery. I design end-to-end experiences from qualitative research, user journeys, and interactive prototypes through high-fidelity systems and engineering handoff. My strongest proof includes enterprise analytics used by 7,000+ people across 22 white-label brands, a research discipline built across 20+ products, and AI-powered workflows designed around transparency and human review.",
+    "skills": [
+      {
+        "label": "End-to-End Product UX",
+        "description": "Figma, qualitative research, user journeys, user flows, wireframes, interactive prototypes, high-fidelity design, interaction design, usability testing, and design handoff"
+      },
+      {
+        "label": "Enterprise & Data-Heavy Workflows",
+        "description": "Enterprise UX, dashboards, search-to-results flows, data visualization, workflow transparency, responsive design, mobile and web, and complex information architecture"
+      },
+      {
+        "label": "Design Systems & Accessibility",
+        "description": "Design systems, component libraries, product standards, accessibility, WCAG, keyboard interaction, white-label patterns, design governance, and build-ready specifications"
+      },
+      {
+        "label": "Research & Cross-Functional Delivery",
+        "description": "UX Research, user feedback, Useberry, Heap, iterative design, Product and Engineering collaboration, stakeholder reviews, design rationale, MLR review, and independent ownership"
+      },
+      {
+        "label": "AI-Powered Workflow Design",
+        "description": "AI-powered workflows, prompts, human review, model orchestration, workflow routing, evidence trails, and trustworthy interaction patterns"
+      }
+    ],
+    "roles": {
+      "hedgehox": [
+        "Designed end-to-end AI review workflows that identify promotional claims, surface evidence gaps, route work by risk and approval requirements, and prepare audit-ready annotations for human review",
+        "Turned pharma agency needs into product flows for claim review, brief intake, scoping, review routing, submission capture, and FDA signal monitoring",
+        "Secured an investor for proprietary Claims Detection software by building the functional POC, shaping the demo narrative, and iterating with stakeholders"
+      ],
+      "one-block-away": [
+        "Lead product strategy and UX from discovery and user flows through interactive prototypes, front-end and backend logic, demo readiness, design handoff, and client iteration",
+        "Build client-led POCs that turn unclear business questions into testable product surfaces, workflow decisions, and implementation roadmaps",
+        "Use AI-powered workflows, prompt-defined behavior, model orchestration, evidence trails, and human review to make complex experiences faster to test and easier to trust"
+      ],
+      "kinesso": [
+        "Led enterprise UX and design systems used by 7,000+ users across 22 white-label brands, aligning user needs, product standards, business goals, and engineering constraints",
+        "Built the UX Research discipline from scratch across 20+ products using qualitative interviews, Typeform user feedback, Useberry usability testing, Heap behavioral data, and reusable Figma documentation",
+        "Designed data-heavy workflows for dashboards, search-to-results paths, data visualization, brand theming, audit results, and presentation-ready recommendations",
+        "Helped shape a 500-component design system with 140 styles, 300 icons, 50 personas, component libraries, accessibility, WCAG direction, keyboard interaction, and design governance",
+        "Scaled product design from 2 to 30 people across the US and Poland while partnering with Product and Engineering leads and presenting design rationale and tradeoffs to stakeholders",
+        "Enterprise design-system, data-visualization, and audit-experience work earned 5 Indigo Gold, 4 Indigo Silver, and Red Dot recognition"
+      ],
+      "omnicom": [
+        "Supported oncology accounts as a freelance UX designer, combining hands-on product UX with client experience in a regulated healthcare environment",
+        "Translated brand goals into clearer user flows, content structure, responsive digital recommendations, and delivery direction across account, strategy, creative, and engineering teams"
+      ],
+      "heartbeat": [
+        "Led qualitative research and experience strategy for pharma and healthcare work, translating stakeholder input, competitive audits, and user needs into product direction",
+        "Created user journeys, site maps, user flows, wireframes, interactive prototypes, and high-fidelity design direction for patient, HCP, and internal experiences across mobile and web",
+        "Partnered with strategy, creative, account, Product, and Engineering teams to move user feedback and research findings into build-ready product experiences"
+      ],
+      "account-management": [
+        "Managed Fortune 500 pharma and healthcare work across complex digital programs, translating client and business needs into briefs, requirements, timelines, MLR review, and approval-ready deliverables",
+        "Built an early foundation in stakeholder communication, cross-functional collaboration, design rationale, and presenting clear recommendations within regulated product environments"
+      ]
+    }
+  },
+  "hero": {
+    "eyebrow": "Oktana UX Designer",
+    "tags": [
+      "Enterprise product UX",
+      "Research to polished delivery",
+      "AI & design systems"
+    ],
+    "intro": "Oktana is hiring for the UX practice I have built across complex enterprise products: turning research, dense workflows, and technical constraints into clear experiences across web and mobile. I built a research discipline across 20+ products, led enterprise UX and design systems used by 7,000+ people across 22 white-label brands, and now design AI workflows around transparent outputs, routing, and human review. My work moves from Figma journeys and prototypes through polished systems, stakeholder rationale, and engineering handoff."
+  },
+  "contact": {
+    "prompt": "Hiring a hands-on UX designer who can make complex enterprise and AI-powered communication workflows feel clear, consistent, and trustworthy? I would like to help Oktana's product team move from research to polished delivery. Email is the fastest way to reach me.",
+    "signoff": "Enterprise product UX · research-led decisions · trustworthy AI interactions"
+  },
+  "constraints": {
+    "doNotClaim": [
+      "Direct messaging or inbox product-design tenure",
+      "Japanese-market localization experience",
+      "A/B testing program ownership",
+      "Dedicated Legal-team partnership",
+      "Mobile-first messaging product ownership"
+    ],
+    "blockedTerms": [
+      "messaging product expert",
+      "inbox product designer",
+      "Japan localization lead",
+      "A/B testing owner",
+      "Legal team partner"
+    ]
+  },
+  "privacy": {
+    "publicSafe": true,
+    "notes": "Contains only public job-posting text and sanitized evidence from the public resume and portfolio. It includes no recruiter contact details, private application answers, compensation boundaries, or private eligibility information."
+  },
+  "qa": {
+    "status": "qa-passed",
+    "builtAt": "2026-07-22T22:50:20.228Z",
+    "configInputSha256": "c9ce3d688c248f4e559f0a04b21f8716a4a3e19516e7daf578eec487bf64a163",
+    "sourceResumeSha256": "375cc6566f5bbad5b95be9da551dfe87824378fb252222409d29ef32d334ca25",
+    "artifactHashes": {
+      "routeSha256": "2eb70435fbf0b21926df0e814b83b5c98a9bd14e6717b4255d38412017083c05",
+      "resumePdfSha256": "830eadc709c953a532ba49c20b16c2fe9a11f6b278a2b4f0b728efc1fceb2295",
+      "scopedProjectSha256": {}
+    },
+    "renderer": {
+      "browser": {
+        "name": "chrome-headless-shell",
+        "version": "Google Chrome for Testing 149.0.7827.55"
+      },
+      "htmlPath": "tmp/tailored-resumes/oktana-ux-designer.html",
+      "pdfPath": "output/pdf/Wally-Mostafa-Oktana-UX-Designer-Resume.pdf"
+    },
+    "ats": {
+      "ok": true,
+      "pdfPath": "output/pdf/Wally-Mostafa-Oktana-UX-Designer-Resume.pdf",
+      "pageCount": 2,
+      "fileSize": 131672,
+      "annotations": [
+        {
+          "page": 1,
+          "uri": "mailto:wmostafa12@gmail.com"
+        },
+        {
+          "page": 1,
+          "uri": "https://linkedin.com/in/wallymo"
+        },
+        {
+          "page": 1,
+          "uri": "https://wallymo.github.io/oktana-ux-designer/"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/6748"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/4629"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.red-dot.org/project/dxa-digital-experience-audit-55219"
+        }
+      ],
+      "coverage": [
+        {
+          "id": "end-to-end-product-ux",
+          "requirement": "Design end-to-end product experiences across mobile and desktop using journeys, wireframes, interactive prototypes, high-fidelity mockups, and clear handoff.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "user journeys",
+            "user flows",
+            "wireframes",
+            "interactive prototypes",
+            "high-fidelity design",
+            "design handoff"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "complex-enterprise-and-data-workflows",
+          "requirement": "Design intuitive experiences for complex enterprise workflows, search, filtering, dashboards, and data-heavy interfaces.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "enterprise UX",
+            "data-heavy workflows",
+            "dashboards",
+            "search",
+            "search-to-results",
+            "data visualization"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "figma-and-design-systems",
+          "requirement": "Create polished work in Figma and deliver within established design systems, product standards, and handoff workflows.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "Figma",
+            "design systems",
+            "component libraries",
+            "product standards",
+            "design handoff"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "research-validation-and-iteration",
+          "requirement": "Incorporate qualitative research and user feedback, validate design decisions through usability testing and research insights, and iterate based on evidence.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "qualitative research",
+            "user feedback",
+            "usability testing",
+            "Useberry",
+            "Heap",
+            "iterative design"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "cross-functional-stakeholder-delivery",
+          "requirement": "Collaborate with Product, Engineering, UX Research, Legal, and other stakeholders while presenting design rationale and tradeoffs.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "Product",
+            "Engineering",
+            "UX Research",
+            "MLR review",
+            "stakeholders",
+            "design rationale"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "ai-powered-messaging-context",
+          "requirement": "Design AI-powered messaging experiences, including clear system status, prompts, transparency, and communication workflows.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "AI-powered workflows",
+            "human review",
+            "prompts",
+            "evidence trails",
+            "workflow transparency",
+            "routing"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "accessibility-and-mobile",
+          "requirement": "Apply accessibility best practices and design across mobile and web platforms.",
+          "priority": "preferred",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "accessibility",
+            "WCAG",
+            "keyboard interaction",
+            "mobile and web",
+            "responsive design"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "localization-and-ab-testing",
+          "requirement": "Experience with Japanese localization, international products, and A/B testing programs.",
+          "priority": "preferred",
+          "evidenceStatus": "none",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "Japanese localization",
+            "Japan market UX",
+            "international product localization",
+            "A/B testing ownership"
+          ]
+        }
+      ],
+      "failures": [],
+      "warnings": []
+    },
+    "route": {
+      "viewports": [
+        {
+          "name": "desktop",
+          "screenshot": "tmp/qa/oktana-ux-designer/desktop.png",
+          "errors": []
+        },
+        {
+          "name": "mobile",
+          "screenshot": "tmp/qa/oktana-ux-designer/mobile.png",
+          "errors": []
+        }
+      ],
+      "errors": []
+    }
+  }
+}
