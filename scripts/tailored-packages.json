@@ -1651,6 +1651,27 @@
       "publishStatus": "tracked-unverified"
     },
     {
+      "workflowVersion": 2,
+      "slug": "socure-product-lead-workforce-solutions",
+      "roleTitle": "Socure Product Lead, Workforce Solutions",
+      "artifactStem": "Socure-Product-Lead-Workforce-Solutions",
+      "configPath": "scripts/packages/socure-product-lead-workforce-solutions.json",
+      "targetLane": "workforce-identity-ai-product-leadership",
+      "evidenceMode": "balanced",
+      "fitClass": "stretch",
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-01.html",
+        "project-02.html",
+        "project-03.html",
+        "project-04.html"
+      ],
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Socure-Product-Lead-Workforce-Solutions-Resume.pdf",
+      "publishStatus": "local-only",
+      "qaStatus": "qa-passed",
+      "builtAt": "2026-07-22T02:27:48.431Z"
+    },
+    {
       "slug": "sogeti-ai-platform-product-manager",
       "roleTitle": "Sogeti AI Platform Product Manager",
       "fitClass": "unclassified",

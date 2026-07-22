@@ -1,0 +1,600 @@
+{
+  "workflowVersion": 2,
+  "contractRevision": 2,
+  "slug": "socure-product-lead-workforce-solutions",
+  "roleTitle": "Socure Product Lead, Workforce Solutions",
+  "artifactStem": "Socure-Product-Lead-Workforce-Solutions",
+  "fitClass": "stretch",
+  "routeMode": "canonical-projects",
+  "selectedProjects": [
+    "project-01.html",
+    "project-02.html",
+    "project-03.html",
+    "project-04.html"
+  ],
+  "job": {
+    "company": "Socure",
+    "roleTitle": "Product Lead - Workforce Solutions",
+    "jobId": "44347025-2390-46d2-b6bc-b8cd6e773fb5",
+    "jobUrl": "https://jobs.ashbyhq.com/socure/44347025-2390-46d2-b6bc-b8cd6e773fb5",
+    "sourceChannel": "socure-ashby-job-board",
+    "dateCaptured": "2026-07-21",
+    "location": "Hybrid - US",
+    "atsVendor": "Ashby",
+    "compensation": "$170,000-$220,000 base salary, plus equity and bonus; multiple ranges by level",
+    "rawJd": "About the job\n\nWhy Socure?\n\nSocure is building the identity trust infrastructure for the digital economy - verifying 100% of good identities in real time and stopping fraud before it starts. The mission is big, the problems are complex, and the impact is felt by businesses, governments, and millions of people every day.\n\nWe hire people who want that level of responsibility. People who move fast, think critically, act like owners, and care deeply about solving customer problems with precision. If you want predictability or narrow scope, this won't be your place. If you want to help build the future of identity with a team that holds a high bar for itself - keep reading.\n\nWhy this role matters\n\nSocure is redefining digital identity. We expect Workforce Solutions to quickly become our fastest-growing area with impact across industries and geographies. You will own zero to one creation and the full lifecycle after launch. That means vision, roadmap, execution, and go to market on top of RiskOS.\n\nBuild with and beyond Socure. Start with flagship components like DocV, Digital Intelligence, Sigma Fraud, Sigma Synthetic, and Verify to compose high-signal verification flows. Where the market needs new signals or products, create them. RiskOS powers the work with a world class workflow engine, Hosted UX, and agentic capabilities that launch novel HR and Recruitment solutions, including dynamic policy agents, reviewer copilots, and outcome-driven checks that keep getting smarter.\n\nWhat You'll Do\n\nOwn the vision and strategy. Set a bold multi year roadmap for workforce identity, risk, and fraud prevention.\nShip zero to one. Find the sharpest problems. Validate fast. Launch v1. Scale what wins.\nDeliver lifecycle coverage. Solve workforce verification end to end. From job application and interview risk checks to onboarding, ongoing access, account takeover defense, and payroll fraud prevention.\nOrchestrate in RiskOS. Use the world class workflow engine, Hosted UX, and agentic decisioning to create adaptive solutions that learn from outcomes.\nRun the business. Define success metrics, pricing and packaging, and positioning. Make build/partner/buy calls and own results.\nLead the GTM motion. Partner with Sales, Marketing, and Customer Success to land lighthouse customers, enable the field, and drive adoption.\nGrow the ecosystem. Secure integrations and partnerships with HRIS and ATS platforms and adjacent systems.\nOperate with data. Turn product analytics, fraud signals, and market feedback into clear priorities and faster velocity.\nElevate the team. Mentor PMs and align engineering, data science, design, compliance, and operations around crisp plans.\n\nWhat You Bring\n\n7 to 10 years in product management or product strategy with leadership in identity, risk, fraud, HR or recruitment tech, or data platforms.\nA proven zero to one track record. You have taken a concept to v1 and then to product market fit.\nStrength in go-to-market ownership. You know pricing and packaging, positioning, enablement, and partnership strategy. You are comfortable with customer calls and design partners.\nTechnical fluency with ML and AI products. You can reason about data quality, model fit, platform tradeoffs, and delivery.\nExecutive level communication and cross functional influence. You align senior stakeholders and keep teams moving.\nBonus. Deep experience with HRIS or ATS ecosystems, payroll platforms, or workforce compliance. A technical or quantitative degree is a plus.\n\nSocure is an equal opportunity employer that values diversity in all its forms within our company. We do not discriminate based on race, religion, color, national origin, gender, sexual orientation, age, marital status, veteran status, or disability status.\n\nIf you need an accommodation during any stage of the application or hiring process - including interview or onboarding support - please reach out to your Socure recruiting partner directly.\n\nCompensation Range: $170K-$220K"
+  },
+  "classification": {
+    "targetLane": "workforce-identity-ai-product-leadership",
+    "evidenceMode": "balanced",
+    "primarySource": "resume evidence of current zero-to-one AI product strategy, regulated decision workflows, enterprise data-product leadership, product analytics, client ownership, executive communication, and team scaling",
+    "supportingSource": "portfolio proof of regulated AI workflow products, client-led working POCs, enterprise analytics and shared systems, and a research operating model across more than 20 products",
+    "hardGateStatus": "pass",
+    "hardGates": [
+      {
+        "gate": "United States work location",
+        "status": "pass",
+        "evidence": "The public listing is Hybrid - US, and the public resume lists Raleigh, NC. The posting does not specify a required hub or attendance cadence."
+      },
+      {
+        "gate": "Required credential, clearance, or professional license",
+        "status": "not-applicable",
+        "evidence": "The posting states that a technical or quantitative degree is a plus rather than a requirement and lists no required certification, clearance, or professional license."
+      },
+      {
+        "gate": "Identity, risk, fraud, HR, recruitment tech, or data-platform leadership",
+        "status": "pass",
+        "evidence": "The candidate directly led enterprise analytics and shared product systems across more than 20 products, 7,000-plus users, and 22 white-label brands, satisfying the posting's data-platform lane. Identity, workforce-fraud, and HR-tech experience remain unsupported and are not claimed."
+      }
+    ]
+  },
+  "requirements": [
+    {
+      "id": "workforce-identity-vision-roadmap",
+      "text": "Own a multi-year vision, strategy, and roadmap for workforce identity, risk, and fraud prevention.",
+      "priority": "core",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Current work owns product strategy, discovery, requirements, workflow design, implementation choices, validation, and roadmap decisions for regulated AI products.",
+        "Kinesso leadership shaped shared analytics and experience systems across more than 20 products, 7,000-plus users, and 22 white-label brands."
+      ],
+      "resumeTerms": [
+        "product vision",
+        "product strategy",
+        "roadmap decisions",
+        "regulated risk workflows"
+      ]
+    },
+    {
+      "id": "zero-to-one-v1-product-market-fit",
+      "text": "Find sharp customer problems, validate quickly, take concepts from zero to one and v1, and scale products to product-market fit.",
+      "priority": "core",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Claims Detector, ListingPal, and WeReady moved ambiguous client or founder questions into functional AI POCs and working first versions that stakeholders could test and evaluate.",
+        "Claims Detector secured investor backing through a functional POC and product narrative, while enterprise product work reached more than 7,000 users across 22 brands. Direct concept-to-v1-to-product-market-fit ownership is not documented."
+      ],
+      "resumeTerms": [
+        "zero-to-one",
+        "working v1",
+        "rapid validation",
+        "product adoption"
+      ]
+    },
+    {
+      "id": "adaptive-ai-workflow-orchestration",
+      "text": "Use workflow orchestration, hosted experiences, and agentic decisioning to create adaptive products that learn from outcomes.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The Pharma AI Platform connects brief intake, scoping, production, claim detection, review routing, submission capture, and FDA signal monitoring into governed workflows with human review.",
+        "WeReady uses live sources, source health, risk scoring, evidence trails, and recommendations to turn uncertain inputs into explainable decisions."
+      ],
+      "resumeTerms": [
+        "workflow orchestration",
+        "agentic decisioning",
+        "human review",
+        "outcome-driven workflows"
+      ]
+    },
+    {
+      "id": "workforce-verification-lifecycle",
+      "text": "Deliver end-to-end workforce verification across application, interview, onboarding, ongoing access, account takeover defense, and payroll fraud prevention.",
+      "priority": "core",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "resumeTerms": [
+        "workforce verification",
+        "account takeover defense",
+        "payroll fraud prevention"
+      ]
+    },
+    {
+      "id": "business-pricing-packaging-positioning",
+      "text": "Run the product business through success metrics, pricing and packaging, positioning, and build-partner-buy decisions.",
+      "priority": "core",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Current founder and AI product work includes customer discovery, product definition, investor storytelling, product positioning, demo narratives, and roadmap decisions.",
+        "Earlier client strategy work managed USD 2M-50M-plus healthcare portfolios and aligned business, audience, regulatory, and delivery priorities. Direct product pricing, packaging, P&L, and build-partner-buy ownership are not documented."
+      ],
+      "resumeTerms": [
+        "success metrics",
+        "product positioning",
+        "business outcomes",
+        "investment decisions"
+      ]
+    },
+    {
+      "id": "gtm-lighthouse-customers-adoption",
+      "text": "Lead the go-to-market motion with Sales, Marketing, and Customer Success to win lighthouse customers, enable the field, and drive adoption.",
+      "priority": "core",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Fifteen years of client-facing work include customer calls, design-partner style iteration, stakeholder workshops, positioning, demo storytelling, enterprise adoption, and large healthcare portfolios.",
+        "Claims Detector secured investor backing and enterprise analytics products reached more than 7,000 users across 22 brands, but a repeatable product GTM motion and lighthouse-customer program are not documented."
+      ],
+      "resumeTerms": [
+        "go-to-market collaboration",
+        "customer calls",
+        "field enablement",
+        "product adoption"
+      ]
+    },
+    {
+      "id": "hris-ats-ecosystem-partnerships",
+      "text": "Secure integrations and partnerships with HRIS, ATS, payroll, and adjacent workforce systems.",
+      "priority": "core",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "resumeTerms": [
+        "HRIS integrations",
+        "ATS partnerships",
+        "payroll platforms"
+      ]
+    },
+    {
+      "id": "product-analytics-fraud-signals-market-feedback",
+      "text": "Turn product analytics, risk signals, and market feedback into clear priorities, success metrics, and faster product velocity.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The Kinesso research system used interviews, prototype testing, Typeform, Useberry, Heap analytics, standardized findings, and stakeholder roadshows across a 20-plus-product suite.",
+        "WeReady turns live-source quality, source health, risk scoring, credibility signals, and evidence trails into decision-ready recommendations."
+      ],
+      "resumeTerms": [
+        "product analytics",
+        "risk signals",
+        "market feedback",
+        "success metrics"
+      ]
+    },
+    {
+      "id": "ml-ai-data-quality-model-fit-tradeoffs",
+      "text": "Bring technical fluency with ML and AI products, including data quality, model fit, platform tradeoffs, and delivery.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Current work covers governed LLM and VLM workflows, knowledge bases, model orchestration, prompt-defined criteria, evidence quality, front-end and backend logic, human review, and production handoff.",
+        "Claims Detector and WeReady make model behavior, evidence gaps, source quality, risk scoring, and explainability visible in the product experience."
+      ],
+      "resumeTerms": [
+        "ML and AI products",
+        "data quality",
+        "model fit",
+        "platform tradeoffs"
+      ]
+    },
+    {
+      "id": "executive-cross-functional-team-leadership",
+      "text": "Use executive communication and cross-functional influence to mentor PMs and align engineering, data science, design, compliance, and operations.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Scaled product design from 2 to 30 people across the United States and Poland while aligning product, engineering, design, research, business, and leadership stakeholders.",
+        "Fifteen years of client strategy, regulated delivery, product work, presentations, workshops, and executive-facing storytelling show broad cross-functional influence."
+      ],
+      "resumeTerms": [
+        "executive communication",
+        "cross-functional influence",
+        "team scaling",
+        "stakeholder alignment"
+      ]
+    },
+    {
+      "id": "seven-to-ten-years-product-domain-leadership",
+      "text": "Bring 7 to 10 years of product management or product strategy leadership in identity, risk, fraud, HR or recruitment technology, or data platforms.",
+      "priority": "core",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Six-plus years of directly relevant leadership spans enterprise analytics and shared data-product systems at Kinesso plus current AI product strategy and implementation work.",
+        "Earlier UX and client-strategy roles add product discovery, regulated delivery, and stakeholder leadership, but formal Product Manager titles and identity, workforce-fraud, or HR-tech domain ownership are not documented."
+      ],
+      "resumeTerms": [
+        "product strategy leadership",
+        "data platforms",
+        "enterprise analytics",
+        "regulated AI products"
+      ]
+    }
+  ],
+  "fitGate": {
+    "supportedOverlap": [
+      "Current zero-to-one AI product ownership from customer discovery and requirements through workflow design, working POCs, validation, roadmap decisions, and production handoff.",
+      "Enterprise data-platform and shared-system leadership across more than 20 products, 7,000-plus users, and 22 white-label brands.",
+      "Direct regulated-risk workflow evidence spanning claim identification, evidence gaps, audit-ready annotations, review routing, submission capture, and FDA signal monitoring.",
+      "Direct ML and AI product fluency across model orchestration, data and evidence quality, prompt-defined criteria, platform tradeoffs, human review, and explainable product surfaces.",
+      "Product analytics and market-feedback evidence through interviews, prototype testing, Typeform, Useberry, Heap analytics, standardized findings, roadshows, source health, and risk scoring.",
+      "Executive communication, client ownership, and team leadership across USD 2M-50M-plus portfolios, distributed teams, and product design growth from 2 to 30 people."
+    ],
+    "unsupportedRequirements": [
+      "Direct workforce identity verification, identity fraud, account takeover defense, payroll fraud prevention, or workforce compliance product ownership.",
+      "Direct HRIS, ATS, payroll-platform, or recruiting-technology integrations and partnerships.",
+      "A documented concept-to-v1-to-product-market-fit outcome.",
+      "Direct product pricing, packaging, P&L, build-partner-buy, or repeatable go-to-market ownership.",
+      "A lighthouse-customer program or quantified field-enablement motion.",
+      "Seven to ten years in formal Product Manager or Product Strategy titles centered on the named domains."
+    ],
+    "actualMismatches": [
+      "The documented domain center is regulated healthcare AI, enterprise analytics, experience systems, and client-led POCs rather than identity verification, workforce fraud, or HR technology.",
+      "The strongest zero-to-one proof reaches functional POCs, working first versions, investor backing, and enterprise adoption, but it does not directly prove a product was taken from v1 to product-market fit.",
+      "The role expects full commercial product-business ownership, while the resume directly proves product positioning, client strategy, budgets, and investor storytelling but not pricing, packaging, P&L, or partnership strategy."
+    ],
+    "missingEvidence": [
+      "Named post-launch product-market-fit measures such as retention, expansion, recurring revenue, activation, conversion, or repeatable market pull.",
+      "Product pricing and packaging decisions, unit economics, margins, forecasts, or business-line P&L results.",
+      "HRIS or ATS integration roadmaps, marketplace launches, partnership agreements, or payroll/workforce compliance outcomes.",
+      "Identity or fraud model metrics such as false-positive reduction, fraud capture, decision latency, approval rate, or loss prevention.",
+      "A quantified lighthouse-customer acquisition and adoption motion owned across Sales, Marketing, and Customer Success."
+    ],
+    "coverLetterBridge": {
+      "status": "recommended",
+      "rationale": "We can make the case with a cover letter by connecting six-plus years of enterprise data-product and current AI product-strategy leadership, direct zero-to-one POCs, regulated risk workflows, product analytics, executive client ownership, and team scaling to Socure's need for a fast, customer-led product builder. The cover letter must state that identity, workforce-fraud, HRIS or ATS ecosystems, product-market-fit ownership, and pricing and packaging are the transfer gaps; it must not imply direct experience in those areas."
+    },
+    "recommendation": "Proceed only as the user-approved stretch. Lead with enterprise data platforms, zero-to-one AI products, governed decision workflows, product analytics, executive client leadership, and cross-functional team scaling. Keep the commercial lifecycle and workforce-identity gaps visible; do not claim identity-fraud expertise, HRIS or ATS partnerships, product-market-fit ownership, pricing and packaging, P&L, or a repeatable GTM motion."
+  },
+  "resume": {
+    "summary": "Product strategy and AI implementation leader with 15 years across enterprise data products, regulated workflows, customer strategy, and cross-functional delivery. Over the past six-plus years, I have led shared systems across a 20-plus-product suite, scaled enterprise analytics used by more than 7,000 people across 22 white-label brands, and owned zero-to-one AI products from discovery through working v1s, validation, and roadmap decisions. My strength is turning ambiguous, high-stakes problems into governed product experiences that make data quality, model behavior, risk signals, and human decisions easier to understand and act on.",
+    "skills": [
+      {
+        "label": "Product Vision, Zero-to-One & Roadmaps",
+        "description": "Customer discovery, problem validation, product strategy, product requirements, working v1s, capability prioritization, roadmap decisions, success metrics, and production handoff"
+      },
+      {
+        "label": "ML, AI & Governed Decision Workflows",
+        "description": "LLM and VLM products, workflow orchestration, data quality, model fit, risk signals, prompt-defined criteria, knowledge bases, human review, explainability, and platform tradeoffs"
+      },
+      {
+        "label": "Enterprise Data Products & Product Analytics",
+        "description": "20-plus-product suites, 7,000-plus users, 22 white-label brands, enterprise analytics, Heap, Useberry, Typeform, interviews, prototype testing, adoption, and continuous improvement"
+      },
+      {
+        "label": "Executive, Client & Cross-Functional Leadership",
+        "description": "Customer calls, product positioning, design-partner iteration, investor and demo narratives, USD 2M-50M-plus portfolios, stakeholder alignment, distributed teams, and team scaling from 2 to 30"
+      }
+    ],
+    "roles": {
+      "hedgehox": [
+        "Lead product strategy and requirements for Claims Detector, translating regulated customer needs into AI workflows for claim identification, evidence gaps, audit-ready annotations, and earlier risk visibility",
+        "Secured an investor for proprietary Claims Detection software by building the functional POC, shaping the product positioning and demo narrative, and iterating with stakeholders",
+        "Define governed AI implementation paths across MLR review, brief intake, scoping, review routing, submission capture, and FDA signal monitoring with data quality, model behavior, and human review built in",
+        "Built Scope Generator for finance and operations teams to manage regional rate cards, brands, sub-brands, and natural-language scope changes inside a structured planning workflow"
+      ],
+      "one-block-away": [
+        "Own zero-to-one AI product strategy from customer discovery and requirements through workflow design, front-end build, backend logic, rapid validation, working v1s, client iteration, and roadmap decisions",
+        "Translate ambiguous customer and market feedback into prioritized capabilities, testable product surfaces, implementation tradeoffs, success measures, and build-ready handoffs",
+        "Built ListingPal's AI listing-generation v1, turning basic property inputs into listing copy, social posts, ad copy, styling direction, and MLS/SEO-ready language in under 90 seconds",
+        "Built WeReady's Bailey Intelligence dashboard, turning founder inputs, GitHub signals, source health, risk scoring, data quality, and evidence trails into explainable recommendations"
+      ],
+      "kinesso": [
+        "Led enterprise data-product and shared-system strategy while scaling product design from 2 to 30 people across the US and Poland, supporting more than 7,000 users across 22 white-label brands",
+        "Aligned product, engineering, design, research, and business teams around data visualization, dashboard building, brand theming, reusable analytics components, roadmap priorities, and adoption",
+        "Built a research discipline across a 20-plus-product suite using interviews, prototype testing, Typeform, Useberry, Heap analytics, standardized findings, and roadshows to turn market feedback into clearer priorities and continuous improvement",
+        "Built the Digital Experience Audit workflow for channel scoring, benchmarks, recommendations, data visualization, success measures, and presentation-ready client outputs"
+      ],
+      "omnicom": [
+        "Supported oncology accounts as a freelance UX designer, translating regulated customer and business needs into clearer product flows, content structures, and implementation recommendations",
+        "Partnered across account, strategy, creative, engineering, and design teams to align client outcomes, user experience, and build-ready decisions"
+      ],
+      "heartbeat": [
+        "Led customer research and experience strategy for pharma and healthcare products, translating stakeholder input, competitive audits, and user needs into digital product direction",
+        "Created journey maps, user flows, wireframes, and prototypes for patient, HCP, and internal brand-team experiences across regulated healthcare programs",
+        "Partnered with strategy, creative, account, and engineering teams to move evidence into prioritized, build-ready product experiences and stakeholder decisions"
+      ],
+      "account-management": [
+        "Managed Fortune 500 pharma and healthcare clients with USD 2M-50M-plus budgets, leading customer calls and aligning executive, strategy, creative, UX, analytics, operations, and development teams around business and regulatory outcomes",
+        "Served as one of two account consumer leads on FCB Health's largest pharma account across TV, radio, digital products, gaming, Times Square, brand planning, positioning, and MLR review",
+        "Translated client and market strategy into briefs, priorities, timelines, product and campaign requirements, executive presentations, and MLR-ready delivery across cross-functional teams"
+      ]
+    }
+  },
+  "hero": {
+    "eyebrow": "Socure Product Lead, Workforce Solutions",
+    "tags": [
+      "Zero-to-one AI products",
+      "Enterprise data platforms",
+      "Governed decision workflows"
+    ],
+    "intro": "I build AI products where data quality, risk signals, and human judgment must stay visible. At Kinesso, I led shared systems across more than 20 products, 7,000-plus users, and 22 brands while scaling product design from 2 to 30. Today I take regulated AI products from customer discovery through working v1s and roadmap decisions. That is the product-builder's perspective I would bring to Socure's Workforce Solutions."
+  },
+  "contact": {
+    "prompt": "Hiring a product leader who can turn complex data, risk, and customer signals into governed AI products that teams can understand, trust, and adopt? Email is the fastest way to reach me.",
+    "signoff": "Zero-to-one AI · enterprise data products · governed decisions"
+  },
+  "constraints": {
+    "doNotClaim": [
+      "Identity verification product ownership",
+      "Identity fraud expertise",
+      "Workforce fraud product ownership",
+      "Account takeover defense experience",
+      "Payroll fraud prevention experience",
+      "HRIS integration ownership",
+      "ATS partnership ownership",
+      "Payroll-platform experience",
+      "Workforce compliance expertise",
+      "Concept-to-product-market-fit ownership",
+      "Product pricing and packaging ownership",
+      "Product P&L ownership",
+      "Build-partner-buy ownership",
+      "Lighthouse-customer program ownership",
+      "Repeatable product GTM ownership",
+      "7 to 10 years in formal Product Manager titles"
+    ],
+    "blockedTerms": [
+      "identity fraud expert",
+      "workforce verification veteran",
+      "owned HRIS integrations",
+      "owned ATS partnerships",
+      "payroll fraud leader",
+      "took products to product-market fit",
+      "owned pricing and packaging",
+      "owned product P&L",
+      "owned build partner buy decisions",
+      "landed lighthouse customers",
+      "7+ years as a product manager"
+    ]
+  },
+  "privacy": {
+    "publicSafe": true,
+    "notes": "Contains only the public Socure job description and sanitized evidence from the public resume and portfolio. It includes no recruiter contact details, private application answers, personal compensation boundaries, work-authorization details, or other private application data."
+  },
+  "qa": {
+    "status": "qa-passed",
+    "builtAt": "2026-07-22T02:27:48.431Z",
+    "configInputSha256": "5fec653cbbba4c0157eae73cce9fe28806ec9b41fa1a25a8d57ea78252c1460e",
+    "sourceResumeSha256": "375cc6566f5bbad5b95be9da551dfe87824378fb252222409d29ef32d334ca25",
+    "artifactHashes": {
+      "routeSha256": "b736759245d35be5d473ef1bd8daef637d6105e074454d388680017793ffc758",
+      "resumePdfSha256": "8edc4a60c67b0699ff76cb534248749617b1702946f64a6db87b338973d84981",
+      "scopedProjectSha256": {}
+    },
+    "renderer": {
+      "browser": {
+        "name": "chrome-headless-shell",
+        "version": "Google Chrome for Testing 149.0.7827.55"
+      },
+      "htmlPath": "tmp/tailored-resumes/socure-product-lead-workforce-solutions.html",
+      "pdfPath": "output/pdf/Wally-Mostafa-Socure-Product-Lead-Workforce-Solutions-Resume.pdf"
+    },
+    "ats": {
+      "ok": true,
+      "pdfPath": "output/pdf/Wally-Mostafa-Socure-Product-Lead-Workforce-Solutions-Resume.pdf",
+      "pageCount": 2,
+      "fileSize": 133795,
+      "annotations": [
+        {
+          "page": 1,
+          "uri": "mailto:wmostafa12@gmail.com"
+        },
+        {
+          "page": 1,
+          "uri": "https://linkedin.com/in/wallymo"
+        },
+        {
+          "page": 1,
+          "uri": "https://wallymo.github.io/socure-product-lead-workforce-solutions/"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/6748"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/4629"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.red-dot.org/project/dxa-digital-experience-audit-55219"
+        }
+      ],
+      "coverage": [
+        {
+          "id": "workforce-identity-vision-roadmap",
+          "requirement": "Own a multi-year vision, strategy, and roadmap for workforce identity, risk, and fraud prevention.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "product vision",
+            "product strategy",
+            "roadmap decisions"
+          ],
+          "missingTerms": [
+            "regulated risk workflows"
+          ]
+        },
+        {
+          "id": "zero-to-one-v1-product-market-fit",
+          "requirement": "Find sharp customer problems, validate quickly, take concepts from zero to one and v1, and scale products to product-market fit.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "zero-to-one",
+            "working v1",
+            "rapid validation"
+          ],
+          "missingTerms": [
+            "product adoption"
+          ]
+        },
+        {
+          "id": "adaptive-ai-workflow-orchestration",
+          "requirement": "Use workflow orchestration, hosted experiences, and agentic decisioning to create adaptive products that learn from outcomes.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "workflow orchestration",
+            "human review"
+          ],
+          "missingTerms": [
+            "agentic decisioning",
+            "outcome-driven workflows"
+          ]
+        },
+        {
+          "id": "workforce-verification-lifecycle",
+          "requirement": "Deliver end-to-end workforce verification across application, interview, onboarding, ongoing access, account takeover defense, and payroll fraud prevention.",
+          "priority": "core",
+          "evidenceStatus": "none",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "workforce verification",
+            "account takeover defense",
+            "payroll fraud prevention"
+          ]
+        },
+        {
+          "id": "business-pricing-packaging-positioning",
+          "requirement": "Run the product business through success metrics, pricing and packaging, positioning, and build-partner-buy decisions.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "success metrics",
+            "product positioning"
+          ],
+          "missingTerms": [
+            "business outcomes",
+            "investment decisions"
+          ]
+        },
+        {
+          "id": "gtm-lighthouse-customers-adoption",
+          "requirement": "Lead the go-to-market motion with Sales, Marketing, and Customer Success to win lighthouse customers, enable the field, and drive adoption.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "customer calls"
+          ],
+          "missingTerms": [
+            "go-to-market collaboration",
+            "field enablement",
+            "product adoption"
+          ]
+        },
+        {
+          "id": "hris-ats-ecosystem-partnerships",
+          "requirement": "Secure integrations and partnerships with HRIS, ATS, payroll, and adjacent workforce systems.",
+          "priority": "core",
+          "evidenceStatus": "none",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "HRIS integrations",
+            "ATS partnerships",
+            "payroll platforms"
+          ]
+        },
+        {
+          "id": "product-analytics-fraud-signals-market-feedback",
+          "requirement": "Turn product analytics, risk signals, and market feedback into clear priorities, success metrics, and faster product velocity.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "product analytics",
+            "risk signals",
+            "market feedback",
+            "success metrics"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "ml-ai-data-quality-model-fit-tradeoffs",
+          "requirement": "Bring technical fluency with ML and AI products, including data quality, model fit, platform tradeoffs, and delivery.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "data quality",
+            "model fit",
+            "platform tradeoffs"
+          ],
+          "missingTerms": [
+            "ML and AI products"
+          ]
+        },
+        {
+          "id": "executive-cross-functional-team-leadership",
+          "requirement": "Use executive communication and cross-functional influence to mentor PMs and align engineering, data science, design, compliance, and operations.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "team scaling",
+            "stakeholder alignment"
+          ],
+          "missingTerms": [
+            "executive communication",
+            "cross-functional influence"
+          ]
+        },
+        {
+          "id": "seven-to-ten-years-product-domain-leadership",
+          "requirement": "Bring 7 to 10 years of product management or product strategy leadership in identity, risk, fraud, HR or recruitment technology, or data platforms.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "enterprise analytics"
+          ],
+          "missingTerms": [
+            "product strategy leadership",
+            "data platforms",
+            "regulated AI products"
+          ]
+        }
+      ],
+      "failures": [],
+      "warnings": [
+        "workforce-identity-vision-roadmap: supported core language missing from the PDF: regulated risk workflows",
+        "zero-to-one-v1-product-market-fit: supported core language missing from the PDF: product adoption",
+        "adaptive-ai-workflow-orchestration: supported core language missing from the PDF: agentic decisioning, outcome-driven workflows",
+        "business-pricing-packaging-positioning: supported core language missing from the PDF: business outcomes, investment decisions",
+        "gtm-lighthouse-customers-adoption: supported core language missing from the PDF: go-to-market collaboration, field enablement, product adoption",
+        "ml-ai-data-quality-model-fit-tradeoffs: supported core language missing from the PDF: ML and AI products",
+        "executive-cross-functional-team-leadership: supported core language missing from the PDF: executive communication, cross-functional influence",
+        "seven-to-ten-years-product-domain-leadership: supported core language missing from the PDF: product strategy leadership, data platforms, regulated AI products"
+      ]
+    },
+    "route": {
+      "viewports": [
+        {
+          "name": "desktop",
+          "screenshot": "tmp/qa/socure-product-lead-workforce-solutions/desktop.png",
+          "errors": []
+        },
+        {
+          "name": "mobile",
+          "screenshot": "tmp/qa/socure-product-lead-workforce-solutions/mobile.png",
+          "errors": []
+        }
+      ],
+      "errors": []
+    }
+  }
+}
