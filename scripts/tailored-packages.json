@@ -168,6 +168,26 @@
       "publishStatus": "tracked-unverified"
     },
     {
+      "workflowVersion": 2,
+      "slug": "applied-systems-senior-product-manager-ai-automation",
+      "roleTitle": "Applied Systems Sr. Product Manager: AI Automation",
+      "artifactStem": "Applied-Systems-Senior-Product-Manager-AI-Automation",
+      "configPath": "scripts/packages/applied-systems-senior-product-manager-ai-automation.json",
+      "targetLane": "enterprise-ai-platform-product-management",
+      "evidenceMode": "balanced",
+      "fitClass": "adjacent",
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-01.html",
+        "project-02.html",
+        "project-03.html"
+      ],
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Applied-Systems-Senior-Product-Manager-AI-Automation-Resume.pdf",
+      "publishStatus": "local-only",
+      "qaStatus": "qa-passed",
+      "builtAt": "2026-07-22T02:04:48.903Z"
+    },
+    {
       "slug": "avalara-senior-program-manager",
       "roleTitle": "Avalara Senior Program Manager",
       "fitClass": "unclassified",

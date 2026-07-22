@@ -1,0 +1,606 @@
+{
+  "workflowVersion": 2,
+  "contractRevision": 2,
+  "slug": "applied-systems-senior-product-manager-ai-automation",
+  "roleTitle": "Applied Systems Sr. Product Manager: AI Automation",
+  "artifactStem": "Applied-Systems-Senior-Product-Manager-AI-Automation",
+  "fitClass": "adjacent",
+  "routeMode": "canonical-projects",
+  "selectedProjects": [
+    "project-01.html",
+    "project-02.html",
+    "project-03.html"
+  ],
+  "job": {
+    "company": "Applied Systems",
+    "roleTitle": "Sr. Product Manager: AI Automation",
+    "jobId": "not-listed",
+    "jobUrl": null,
+    "sourceChannel": "chat-pasted-jd",
+    "dateCaptured": "2026-07-21",
+    "location": "Remote",
+    "atsVendor": "unknown",
+    "rawJd": "Team: DevOps Engineering. Salary Range: USD 100K–USD 180K. Location: Remote. Opportunity for Impact: Applied builds cloud software and AI-powered solutions that are reinventing how the global insurance industry operates, and we do it at a pace that keeps us ahead. What you ship here reaches thousands of agencies and brokers worldwide and sets the standard for what modern insurance technology looks like. We’re looking for a Sr. Product Manager: AI Automation to join our DevOps Engineering team. The IT AI Automation team hardens, deploys, runs, and partners on AI at scale. The operating model is simple: a business unit builds a proof of concept, our team hardens it, and we ship it to production on a shared, governed GCP platform with auth, CI/CD, secrets management, and monitoring. Demand already exists across CX and Finance. Homegrown apps and reconciliation tools are being shipped today with no access controls, and ‘what about its security?’ is the first question every time. This team is the answer to that question. The IT Product Manager owns the roadmap, intake, and governance for the AI Automation team. You are the front door for every business unit that wants to take an AI-powered app, automation, or agent to production. You decide what we build, what we buy, what we harden, and what we say no to, and you make sure everything that ships does so safely, with the right access controls and security posture from day one. You translate a steady stream of business demand (Finance, Ops, Data Services, CX) into a prioritized, defensible roadmap, and you define the operating model that lets business-built POCs become durable, secure production systems. What You’ll Do: Own intake. Run a single, transparent intake process for AI app, automation, and agent requests across the company. Capture business value, users, data sensitivity, and security requirements up front so no project starts without an owner and a risk picture. Own the roadmap. Partner with business unit leaders across Finance, Ops, Data Services, and CX to establish the prioritization and reporting mechanisms that turn competing demand into a single, defensible roadmap. Define how requests are scored against capacity, value, and risk and how progress and trade-offs are reported back to the business, so leaders see where their work sits and why. Own governance. Define and enforce the standards that turn a homegrown app with no access controls into a hardened, monitored production system. Partner with Security and Data on access controls, secrets handling, data classification, and review gates. Own AI quality. Define eval sets and acceptance criteria for the models, assistants, and agents we ship; monitor outputs in production; own the incident response when a model gets it wrong. Quality of a non-deterministic system is a distribution, not a pass/fail. Enforce responsible AI. Ensure bias and fairness review, explainability requirements, human-in-the-loop checkpoints, and the policy framework we need to answer enterprise procurement, audit, and, where relevant, regulator questions. Track emerging standards including NIST AI RMF, EU AI Act, and sector-specific guidance and translate them into review gates. Define the operating model. Codify the business unit builds POC to AI Automation Team hardens to production workflow, including hand-off criteria, definition of done, and what the shared GCP platform provides versus what each team owns. Drive buy-vs-build decisions. Run a single intake and single answer process for AI tooling evaluation and advisory, including Salesforce Agentforce, competitor platforms, and AI support tools, so the business gets one clear recommendation rather than fragmented opinions. Manage stakeholders. Communicate roadmap, trade-offs, and risk to business unit leaders and the C-suite. Make the case for capacity and demonstrate the value the team delivers. Drive adoption and enablement. Partner with business units on rollout, training, documentation, and office hours so the tools we ship get used. Adoption is a deliverable, not a hope. Measure outcomes. Define and report on the metrics that matter, including adoption, time-to-production, security posture, cost, and business impact. Manage AI economics. Track and forecast inference cost, vendor spend, and platform unit economics across the portfolio; make trade-offs between model choice, latency, and cost transparent so the business can fund growth without surprises. What We’re Looking For: 7+ years in product management, technical program management, or a closely related IT/platform role. Demonstrated ownership of intake and prioritization for a portfolio of competing internal requests. Working fluency in software delivery and platform concepts: CI/CD, environments, auth/identity, secrets management, monitoring, and cloud, with GCP preferred and AWS or Azure acceptable. Practical understanding of AI/LLM application patterns including assistants, agents, retrieval, and automations and the governance questions they raise. Familiarity with the model lifecycle and MLOps fundamentals, including eval sets, prompt and model versioning, monitoring for drift and regression, and the difference between shipping a deterministic feature and shipping a probabilistic one. Strong grasp of security and data-governance fundamentals, including access controls, data classification, least privilege, and audit. Working knowledge of responsible-AI frameworks and emerging regulation including NIST AI RMF, EU AI Act, and model-risk management and the practical questions they raise about bias, explainability, and human oversight. Excellent written and verbal communication; able to align engineers, business owners, and executives. Bonus points: Experience standing up or governing an internal developer or AI platform shared across business units. Experience with enterprise-level software integrations driven by APIs across systems such as NetSuite, Salesforce and Agentforce, Slack, and SQL data platforms. Background in regulated or data-sensitive environments including finance, insurance, and healthcare data schemas such as Epic. Experience leading buy-vs-build evaluations of vendor AI tooling. Experience running AI or SaaS vendor evaluations end-to-end with Security, Procurement, and Legal, including security reviews, SOC 2 or ISO 27001, DPAs, and model-use terms. FinOps or cloud-cost-management experience, ideally with exposure to AI inference economics. Talent shows up in a lot of different ways, and Applied welcomes candidates from all backgrounds and experience levels, including military members and spouses and those without a traditional degree or tech background. Team Applied has a people-first culture built on trust, inclusion, growth, fast collaboration, and solving real problems for insurance professionals."
+  },
+  "classification": {
+    "targetLane": "enterprise-ai-platform-product-management",
+    "evidenceMode": "balanced",
+    "primarySource": "resume evidence of current AI product strategy, requirements, prioritization, governed workflow delivery, enterprise platform leadership, stakeholder management, and adoption",
+    "supportingSource": "portfolio proof of regulated pharma AI workflows, client-led POC validation, and enterprise systems used by more than 7,000 people across 22 brands",
+    "hardGateStatus": "pass",
+    "hardGates": [
+      {
+        "gate": "7+ years in product management, technical program management, or a closely related IT/platform role",
+        "status": "pass",
+        "evidence": "Current AI product-strategy ownership runs from July 2023 to present, current Hedgehox work adds regulated AI implementation, and Kinesso adds more than three years leading enterprise product-system work at scale. Earlier client-strategy delivery reinforces the requested cross-functional operating maturity; the package does not imply seven years under a conventional Product Manager title."
+      },
+      {
+        "gate": "Ownership of intake and prioritization across competing requests",
+        "status": "pass",
+        "evidence": "One Block Away turns a stream of client asks into scoped product decisions and roadmaps; Hedgehox converts agency needs across claims review, intake, scoping, routing, submissions, finance, and FDA monitoring into a connected product direction; seven years of portfolio-level client leadership adds direct prioritization, briefing, timeline, and trade-off experience. A formal company-wide IT intake system is not documented."
+      },
+      {
+        "gate": "Working fluency in software delivery, AI application patterns, model lifecycle, security, and data governance",
+        "status": "pass",
+        "evidence": "The public evidence covers front-end and backend logic, AI workflow design, multi-model orchestration, RAG and knowledge patterns, prompt-defined criteria, prototype evaluation, human review, regulated data constraints, audit-ready annotations, and production handoff. Direct ownership of GCP, CI/CD, auth, secrets, production monitoring, drift response, and security engineering is not documented and remains an explicit adjacent-fit gap."
+      },
+      {
+        "gate": "Excellent communication across engineers, business owners, and executives",
+        "status": "pass",
+        "evidence": "Fifteen years of product, UX, account, and AI implementation work includes executive demos, investor communication, client workshops, distributed product and engineering collaboration, stakeholder roadshows, and Fortune 500 portfolio leadership."
+      },
+      {
+        "gate": "Remote work location",
+        "status": "not-applicable",
+        "evidence": "The public package does not assert private work-authorization or schedule details; the current resume documents remote roles, and location or eligibility can be confirmed in the application."
+      }
+    ]
+  },
+  "requirements": [
+    {
+      "id": "intake-prioritization-roadmap",
+      "text": "Own a transparent intake process and turn competing business-unit demand into a prioritized, defensible roadmap based on capacity, value, and risk.",
+      "priority": "core",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "At One Block Away, client discovery and product strategy turn unclear asks into scoped requirements, prioritized features, testable product surfaces, implementation choices, and roadmap decisions.",
+        "At Hedgehox, agency needs across brief intake, claims review, scoping, routing, submission capture, finance, and FDA monitoring are translated into governed AI product workflows.",
+        "Earlier account leadership managed complex Fortune 500 portfolios, budgets, briefs, timelines, requirements, and cross-functional trade-offs."
+      ],
+      "resumeTerms": [
+        "intake and prioritization",
+        "defensible roadmaps",
+        "capacity-value-risk trade-offs",
+        "competing client requests"
+      ]
+    },
+    {
+      "id": "poc-production-operating-model",
+      "text": "Define the operating model that moves business-built AI POCs through hand-off criteria, hardening, definition of done, and production ownership.",
+      "priority": "core",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "One Block Away owns product work from first ask through working prototype, including front-end and backend logic, validation, stakeholder iteration, implementation decisions, and production handoff.",
+        "Hedgehox connects multiple pharma AI tools into governed workflows with review checkpoints, evidence trails, and build-ready product logic.",
+        "Kinesso enterprise product-system work created reusable components, documentation, and standards across 22 white-label brands."
+      ],
+      "resumeTerms": [
+        "working POC",
+        "working POCs",
+        "production handoffs",
+        "production handoff"
+      ]
+    },
+    {
+      "id": "ai-governance-security-data",
+      "text": "Define governance and partner with Security and Data on access controls, secrets handling, data classification, least privilege, audit, and production review gates.",
+      "priority": "core",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "The Pharma AI Platform operates in FDA, HIPAA, and MLR contexts and uses evidence gaps, audit-ready annotations, human review, review routing, and regulatory signal monitoring to make risk visible.",
+        "Current AI product work translates regulated stakeholder needs into governance checkpoints and inspectable product behavior.",
+        "Named access-control, secrets-management, least-privilege, and security-engineering ownership is not documented."
+      ],
+      "resumeTerms": [
+        "AI governance",
+        "review gates",
+        "audit-ready annotations",
+        "data sensitivity"
+      ]
+    },
+    {
+      "id": "ai-quality-model-lifecycle",
+      "text": "Define eval sets and acceptance criteria, manage prompt and model versioning, monitor probabilistic outputs, and own response to model drift, regression, or incidents.",
+      "priority": "core",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Current public evidence covers prompt-defined criteria, model orchestration, prototype evaluation, evidence trails, risk scoring, human review surfaces, and iteration using real workflows.",
+        "Claims Detector makes evidence gaps and model-supported annotations inspectable before regulated review.",
+        "Formal production eval-set operations, drift monitoring, regression monitoring, model versioning, and AI incident ownership are not documented."
+      ],
+      "resumeTerms": [
+        "acceptance criteria",
+        "prompt-defined criteria",
+        "model behavior",
+        "human review"
+      ]
+    },
+    {
+      "id": "responsible-ai-regulation",
+      "text": "Translate responsible-AI frameworks and emerging regulation into bias, fairness, explainability, human-oversight, procurement, audit, and regulator review gates.",
+      "priority": "core",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Eleven years in regulated pharma and healthcare include FDA, HIPAA, MLR review, claims evidence, audit-ready annotations, and human-review checkpoints.",
+        "User research, accessibility leadership, and governed AI workflows support practical human oversight and explainability decisions.",
+        "Named NIST AI RMF, EU AI Act, model-risk-management, bias-review, and fairness-review ownership is not documented."
+      ],
+      "resumeTerms": [
+        "responsible AI",
+        "human oversight",
+        "explainability",
+        "regulated AI"
+      ]
+    },
+    {
+      "id": "buy-build-vendor-evaluation",
+      "text": "Lead buy-vs-build decisions and provide a single recommendation on AI tooling and enterprise platform options.",
+      "priority": "core",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "One Block Away product strategy includes implementation choices, multi-model workflow decisions, build decisions, prototype validation, and roadmap recommendations.",
+        "Kinesso product-system leadership balanced reusable platform standards with the needs of 22 white-label brands.",
+        "Formal enterprise vendor procurement, SOC 2 or ISO 27001 review, DPA negotiation, and model-use-term ownership are not documented."
+      ],
+      "resumeTerms": [
+        "implementation choices",
+        "product recommendations",
+        "model orchestration"
+      ]
+    },
+    {
+      "id": "stakeholders-adoption-metrics",
+      "text": "Communicate roadmaps and trade-offs to business leaders and the C-suite, drive enablement and adoption, and report adoption, time-to-production, security posture, cost, and business impact.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Investor demos, Fortune 500 client leadership, stakeholder roadshows, and distributed enterprise product delivery show direct executive and cross-functional communication.",
+        "Enterprise analytics and workflow products served more than 7,000 users across 22 brands, while research and analytics systems supported adoption and continuous improvement.",
+        "Claims Detector secured investor backing, and current POCs connect product behavior to client and business decisions."
+      ],
+      "resumeTerms": [
+        "stakeholder alignment",
+        "adoption",
+        "business impact",
+        "executive communication"
+      ]
+    },
+    {
+      "id": "ai-llm-application-patterns",
+      "text": "Bring practical fluency in assistants, agents, retrieval, automations, model orchestration, and the governance questions raised by AI applications.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The resume directly documents governed LLM and VLM workflows, RAG and knowledge bases, prompt-defined criteria, model orchestration, human review, and multiple AI POCs.",
+        "The Pharma AI Platform and POC Guy case studies show AI automation, evidence trails, client-led workflow design, and prototype validation in use."
+      ],
+      "resumeTerms": [
+        "LLM/VLM workflows",
+        "RAG/knowledge bases",
+        "model orchestration",
+        "AI automations"
+      ]
+    },
+    {
+      "id": "cloud-devops-platform-fluency",
+      "text": "Bring working fluency in GCP or another cloud, CI/CD, environments, auth and identity, secrets management, monitoring, and production platform delivery.",
+      "priority": "core",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "resumeTerms": [
+        "GCP",
+        "CI/CD",
+        "auth/identity",
+        "secrets management",
+        "production monitoring"
+      ]
+    },
+    {
+      "id": "finops-ai-economics",
+      "text": "Track inference cost, vendor spend, cloud cost, model-choice trade-offs, latency, and platform unit economics across the AI portfolio.",
+      "priority": "preferred",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "resumeTerms": [
+        "FinOps",
+        "inference cost",
+        "platform unit economics",
+        "cloud cost management"
+      ]
+    },
+    {
+      "id": "regulated-data-sensitive-domain",
+      "text": "Bring experience in a regulated or data-sensitive environment such as finance, insurance, or healthcare.",
+      "priority": "preferred",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The resume documents 11 years across pharma and healthcare, including current AI workflows governed by FDA, HIPAA, and MLR requirements.",
+        "Earlier work covered patient, HCP, oncology, and major pharmaceutical brand experiences in regulated delivery environments."
+      ],
+      "resumeTerms": [
+        "regulated healthcare",
+        "FDA/HIPAA/MLR",
+        "audit-ready",
+        "risk monitoring"
+      ]
+    }
+  ],
+  "fitGate": {
+    "supportedOverlap": [
+      "Current AI product ownership from discovery, requirements, workflow design, prioritization, prototype validation, implementation decisions, and roadmap choices through production handoff.",
+      "Direct AI application fluency across LLM and VLM workflows, RAG and knowledge bases, model orchestration, prompt-defined criteria, AI automations, and human review.",
+      "Regulated governance proof across FDA, HIPAA, and MLR workflows with evidence gaps, audit-ready annotations, routing, submission capture, human review, and regulatory risk guidance.",
+      "Enterprise product-system leadership for analytics, dashboards, reusable standards, accessibility, documentation, and adoption across more than 7,000 users and 22 white-label brands.",
+      "Fifteen years translating complex stakeholder needs across clients, executives, product, engineering, design, research, analytics, strategy, and delivery teams.",
+      "A credible business-built POC to governed production-handoff bridge, supported by current working prototypes and earlier enterprise platform-scale delivery."
+    ],
+    "unsupportedRequirements": [
+      "Direct GCP platform ownership and hands-on CI/CD, environment, auth and identity, secrets-management, or production-monitoring operations are not documented.",
+      "Formal MLOps ownership across eval-set operations, prompt and model versioning, drift and regression monitoring, or model-incident response is not documented.",
+      "Named NIST AI RMF, EU AI Act, model-risk-management, bias-review, or fairness-review program ownership is not documented.",
+      "Formal ownership of a company-wide internal-request intake system and capacity-scoring model is not documented.",
+      "Enterprise AI or SaaS vendor evaluations with Security, Procurement, and Legal, including SOC 2, ISO 27001, DPAs, and model-use terms, are not documented.",
+      "FinOps, cloud-cost-management, inference-cost forecasting, and platform unit-economics ownership are not documented.",
+      "Direct insurance-industry or insurance-platform product experience is not documented."
+    ],
+    "actualMismatches": [
+      "The recent operating center is AI implementation, product strategy, enterprise UX, and client-led POC delivery rather than direct ownership of a DevOps or cloud production platform.",
+      "The resume does not show seven years under conventional Product Manager or Technical Program Manager titles, although it does show more than seven years across closely related product, platform, and technical delivery work."
+    ],
+    "missingEvidence": [
+      "A production AI platform roadmap with measurable time-to-production, security-posture, reliability, and incident outcomes.",
+      "Named GCP services, deployment controls, CI/CD tooling, identity systems, secrets-management tools, and production monitoring platforms.",
+      "Formal buy-vs-build memos and vendor-review artifacts spanning Security, Procurement, Legal, privacy, and model-use terms.",
+      "AI portfolio cost metrics, model-latency trade-offs, inference forecasts, vendor spend, or cloud unit economics.",
+      "A company-wide internal intake and prioritization mechanism across Finance, Ops, Data Services, and CX or comparable business units."
+    ],
+    "coverLetterBridge": {
+      "status": "recommended",
+      "rationale": "We can make the case with a cover letter by connecting current AI product strategy and POC-to-handoff ownership, regulated governance, enterprise platform adoption, portfolio prioritization, and executive stakeholder translation to Applied’s need for an AI Automation front door. The letter must directly acknowledge that GCP and DevOps controls, formal production MLOps and incident ownership, AI vendor procurement, and FinOps are adjacent or missing rather than imply unsupported depth."
+    },
+    "recommendation": "Proceed as adjacent. Lead with the business-demand to governed-AI-product bridge: intake and requirements, prioritization, current POC delivery, regulated review controls, enterprise product standards, and adoption. Keep GCP, CI/CD, security-engineering, production MLOps, incident response, formal responsible-AI frameworks, vendor procurement, FinOps, and insurance-domain claims out of the package."
+  },
+  "resume": {
+    "summary": "AI product strategy and implementation leader with 15 years across regulated healthcare, enterprise platforms, client delivery, and technical product work. I turn business demand into scoped requirements, prioritized roadmaps, governed AI workflows, working POCs, and production handoffs. My strength is connecting executives, business owners, product teams, and engineers so probabilistic AI products have clear value, review controls, measurable adoption, and an operating path beyond the demo.",
+    "skills": [
+      {
+        "label": "AI Product Intake, Strategy & Roadmaps",
+        "description": "Stakeholder discovery, intake and prioritization, product requirements, capacity-value-risk trade-offs, defensible roadmaps, acceptance criteria, implementation choices, and production handoff"
+      },
+      {
+        "label": "AI Applications, Quality & Automation",
+        "description": "Governed LLM/VLM workflows, RAG/knowledge bases, model orchestration, AI automations, prompt-defined criteria, model behavior, prototype evaluation, evidence trails, and human review"
+      },
+      {
+        "label": "Regulated AI Governance",
+        "description": "FDA/HIPAA/MLR workflows, data sensitivity, audit-ready annotations, review gates, risk monitoring, responsible AI, human oversight, explainability, and stakeholder trust"
+      },
+      {
+        "label": "Enterprise Platforms, Stakeholders & Adoption",
+        "description": "Executive communication, stakeholder alignment, product and engineering collaboration, enterprise analytics, reusable standards, documentation, enablement, adoption, and business impact"
+      }
+    ],
+    "roles": {
+      "hedgehox": [
+        "Lead product strategy and requirements for a connected pharma AI platform spanning brief intake, scoping, review routing, submission capture, MLR claim review, and FDA risk monitoring",
+        "Translate agency and stakeholder needs into prioritized AI workflows, prompt-defined criteria, review gates, model behavior, evidence trails, and build-ready product decisions within FDA/HIPAA/MLR constraints",
+        "Designed Claims Detector to identify promotional claims, surface evidence gaps, and pre-populate audit-ready annotations for human review before regulated submission",
+        "Secured an investor for proprietary Claims Detection software by building the functional POC, shaping the executive demo story, and connecting workflow behavior to business impact",
+        "Built Scope Generator for finance and operations teams using regional rate cards, brand structures, natural-language scope changes, and spreadsheet export logic"
+      ],
+      "one-block-away": [
+        "Own AI product strategy, stakeholder discovery, requirements, workflow design, front-end build, backend logic, demo readiness, client iteration, and production handoff from first ask through working POC",
+        "Turn competing client requests into scoped priorities, acceptance criteria, implementation choices, defensible roadmaps, product recommendations, and measurable next steps",
+        "Built ListingPal’s AI listing-generation POC, turning basic property inputs into listing copy, social posts, ad copy, styling direction, and MLS/SEO-ready language in under 90 seconds",
+        "Built WeReady’s Bailey Intelligence dashboard, translating founder inputs, GitHub signals, source health, risk scoring, and evidence trails into decision-ready workflows"
+      ],
+      "kinesso": [
+        "Led enterprise platform experiences while scaling design from 2 to 30 people across the US and Poland, supporting adoption for more than 7,000 users across 22 white-label brands",
+        "Led product-system strategy for enterprise analytics, data visualization, dashboard building, brand theming, reusable components, documentation, and accessibility",
+        "Partnered across product, engineering, analytics, business, research, and executive stakeholders to turn complex workflows into reusable standards and build-ready decisions",
+        "Built the Digital Experience Audit workflow for channel scoring, benchmarks, recommendations, visualization, and presentation-ready business impact"
+      ],
+      "omnicom": [
+        "Supported oncology accounts as a freelance UX designer, translating regulated business and user needs into clearer product flows, content structures, and implementation recommendations",
+        "Partnered across account, strategy, creative, and delivery teams to align stakeholder goals, regulated constraints, and build-ready product decisions"
+      ],
+      "heartbeat": [
+        "Led user research and experience strategy for pharma and healthcare products, translating stakeholder input, competitive audits, and user needs into prioritized product direction",
+        "Created journey maps, site maps, user flows, wireframes, and prototypes for patient, HCP, and internal brand-team experiences across regulated programs",
+        "Partnered with strategy, creative, account, and engineering teams to move research findings into build-ready product and campaign experiences"
+      ],
+      "account-management": [
+        "Managed Fortune 500 pharma and healthcare clients with USD 2M to 50M-plus budgets across complex regulated portfolios, aligning business value, competing priorities, capacity, timelines, and risk",
+        "Served as one of two account consumer leads on FCB Health’s largest pharma account across TV, radio, digital, gaming, Times Square, brand planning, and MLR review",
+        "Translated client strategy into briefs, requirements, priorities, trade-offs, timelines, and MLR-ready delivery across account, creative, UX, analytics, and development teams"
+      ]
+    }
+  },
+  "hero": {
+    "eyebrow": "Applied Systems Sr. Product Manager: AI Automation",
+    "tags": [
+      "Business demand to governed AI",
+      "POC strategy to production handoff",
+      "Enterprise adoption & stakeholder alignment"
+    ],
+    "intro": "I fit Applied’s AI Automation product role through the operating bridge it needs: turning business demand into governed AI product decisions and moving POCs toward durable delivery. My proof combines current ownership of AI product strategy from discovery through working prototypes and production handoff, regulated FDA/HIPAA/MLR workflows with human review and audit-ready annotations, and enterprise product systems used by more than 7,000 people across 22 brands. I know how to make intake, priorities, trade-offs, governance, and adoption clear while partnering closely with DevOps, Security, and Data on shared production standards."
+  },
+  "contact": {
+    "prompt": "Hiring an AI product leader who can turn business-unit demand into clear priorities, governed POCs, and adoption-ready delivery across Finance, Ops, Data Services, and CX? I would like to help Applied make that operating model work; email is the fastest way to reach me.",
+    "signoff": "AI product intake · governed POC delivery · enterprise adoption"
+  },
+  "constraints": {
+    "doNotClaim": [
+      "Direct GCP platform ownership",
+      "Direct CI/CD ownership",
+      "Direct auth or identity platform ownership",
+      "Direct secrets-management ownership",
+      "Direct production-monitoring ownership",
+      "Production MLOps ownership",
+      "AI model incident-response ownership",
+      "NIST AI RMF program ownership",
+      "EU AI Act program ownership",
+      "Formal bias and fairness review ownership",
+      "Enterprise AI vendor procurement ownership",
+      "SOC 2 or ISO 27001 review ownership",
+      "DPA or model-use-term negotiation",
+      "FinOps ownership",
+      "AI inference-cost forecasting",
+      "Insurance-industry product experience",
+      "Salesforce Agentforce implementation",
+      "NetSuite, Slack, or SQL platform integration ownership"
+    ],
+    "blockedTerms": [
+      "GCP platform owner",
+      "owned CI/CD",
+      "owned secrets management",
+      "owned production monitoring",
+      "MLOps owner",
+      "AI incident commander",
+      "NIST AI RMF expert",
+      "EU AI Act expert",
+      "bias and fairness program owner",
+      "FinOps leader",
+      "insurance platform veteran",
+      "Agentforce expert"
+    ]
+  },
+  "privacy": {
+    "publicSafe": true,
+    "notes": "Contains only the public pasted job description and sanitized evidence from the public resume and portfolio. It includes no recruiter contact details, private application answers, personal compensation boundaries, private eligibility information, or schedule commitments."
+  },
+  "qa": {
+    "status": "qa-passed",
+    "builtAt": "2026-07-22T02:04:48.903Z",
+    "configInputSha256": "a71c5806d0b1f7833f694a0beff894cfd8f8da9b479652009525d70501b94016",
+    "sourceResumeSha256": "375cc6566f5bbad5b95be9da551dfe87824378fb252222409d29ef32d334ca25",
+    "artifactHashes": {
+      "routeSha256": "5690ee455aa8c898ee3faa3d7bf3b1d6cbdb9e64fd10f636a78773ae4454a62d",
+      "resumePdfSha256": "d69c49d4d4f8be1193dea08b4a880335b80dda1bd118d00d2283b75f7fb3040b",
+      "scopedProjectSha256": {}
+    },
+    "renderer": {
+      "browser": {
+        "name": "chrome-headless-shell",
+        "version": "Google Chrome for Testing 149.0.7827.55"
+      },
+      "htmlPath": "tmp/tailored-resumes/applied-systems-senior-product-manager-ai-automation.html",
+      "pdfPath": "output/pdf/Wally-Mostafa-Applied-Systems-Senior-Product-Manager-AI-Automation-Resume.pdf"
+    },
+    "ats": {
+      "ok": true,
+      "pdfPath": "output/pdf/Wally-Mostafa-Applied-Systems-Senior-Product-Manager-AI-Automation-Resume.pdf",
+      "pageCount": 2,
+      "fileSize": 132197,
+      "annotations": [
+        {
+          "page": 1,
+          "uri": "mailto:wmostafa12@gmail.com"
+        },
+        {
+          "page": 1,
+          "uri": "https://linkedin.com/in/wallymo"
+        },
+        {
+          "page": 1,
+          "uri": "https://wallymo.github.io/applied-systems-senior-product-manager-ai-automation/"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/6748"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/4629"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.red-dot.org/project/dxa-digital-experience-audit-55219"
+        }
+      ],
+      "coverage": [
+        {
+          "id": "intake-prioritization-roadmap",
+          "requirement": "Own a transparent intake process and turn competing business-unit demand into a prioritized, defensible roadmap based on capacity, value, and risk.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "intake and prioritization",
+            "defensible roadmaps",
+            "capacity-value-risk trade-offs",
+            "competing client requests"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "poc-production-operating-model",
+          "requirement": "Define the operating model that moves business-built AI POCs through hand-off criteria, hardening, definition of done, and production ownership.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "working POC",
+            "working POCs",
+            "production handoffs",
+            "production handoff"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "ai-governance-security-data",
+          "requirement": "Define governance and partner with Security and Data on access controls, secrets handling, data classification, least privilege, audit, and production review gates.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "AI governance",
+            "review gates",
+            "audit-ready annotations",
+            "data sensitivity"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "ai-quality-model-lifecycle",
+          "requirement": "Define eval sets and acceptance criteria, manage prompt and model versioning, monitor probabilistic outputs, and own response to model drift, regression, or incidents.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "acceptance criteria",
+            "prompt-defined criteria",
+            "model behavior",
+            "human review"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "responsible-ai-regulation",
+          "requirement": "Translate responsible-AI frameworks and emerging regulation into bias, fairness, explainability, human-oversight, procurement, audit, and regulator review gates.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "responsible AI",
+            "human oversight",
+            "explainability",
+            "regulated AI"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "buy-build-vendor-evaluation",
+          "requirement": "Lead buy-vs-build decisions and provide a single recommendation on AI tooling and enterprise platform options.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "implementation choices",
+            "product recommendations",
+            "model orchestration"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "stakeholders-adoption-metrics",
+          "requirement": "Communicate roadmaps and trade-offs to business leaders and the C-suite, drive enablement and adoption, and report adoption, time-to-production, security posture, cost, and business impact.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "stakeholder alignment",
+            "adoption",
+            "business impact",
+            "executive communication"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "ai-llm-application-patterns",
+          "requirement": "Bring practical fluency in assistants, agents, retrieval, automations, model orchestration, and the governance questions raised by AI applications.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "LLM/VLM workflows",
+            "RAG/knowledge bases",
+            "model orchestration",
+            "AI automations"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "cloud-devops-platform-fluency",
+          "requirement": "Bring working fluency in GCP or another cloud, CI/CD, environments, auth and identity, secrets management, monitoring, and production platform delivery.",
+          "priority": "core",
+          "evidenceStatus": "none",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "GCP",
+            "CI/CD",
+            "auth/identity",
+            "secrets management",
+            "production monitoring"
+          ]
+        },
+        {
+          "id": "finops-ai-economics",
+          "requirement": "Track inference cost, vendor spend, cloud cost, model-choice trade-offs, latency, and platform unit economics across the AI portfolio.",
+          "priority": "preferred",
+          "evidenceStatus": "none",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "FinOps",
+            "inference cost",
+            "platform unit economics",
+            "cloud cost management"
+          ]
+        },
+        {
+          "id": "regulated-data-sensitive-domain",
+          "requirement": "Bring experience in a regulated or data-sensitive environment such as finance, insurance, or healthcare.",
+          "priority": "preferred",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "regulated healthcare",
+            "FDA/HIPAA/MLR",
+            "audit-ready",
+            "risk monitoring"
+          ],
+          "missingTerms": []
+        }
+      ],
+      "failures": [],
+      "warnings": []
+    },
+    "route": {
+      "viewports": [
+        {
+          "name": "desktop",
+          "screenshot": "tmp/qa/applied-systems-senior-product-manager-ai-automation/desktop.png",
+          "errors": []
+        },
+        {
+          "name": "mobile",
+          "screenshot": "tmp/qa/applied-systems-senior-product-manager-ai-automation/mobile.png",
+          "errors": []
+        }
+      ],
+      "errors": []
+    }
+  }
+}
