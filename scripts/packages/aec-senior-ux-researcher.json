@@ -1,0 +1,507 @@
+{
+  "workflowVersion": 2,
+  "contractRevision": 2,
+  "slug": "aec-senior-ux-researcher",
+  "roleTitle": "Senior UX Researcher — AEC Foundation Model",
+  "artifactStem": "AEC-Senior-UX-Researcher",
+  "fitClass": "adjacent",
+  "routeMode": "canonical-projects",
+  "selectedProjects": [
+    "project-04.html",
+    "project-01.html",
+    "project-06.html",
+    "project-03.html"
+  ],
+  "job": {
+    "company": "Confidential AEC software client",
+    "roleTitle": "Senior UX Researcher",
+    "sourceChannel": "chat-pasted-jd",
+    "dateCaptured": "2026-07-21",
+    "location": "100% remote; six-plus-month W2 contract",
+    "atsVendor": "unknown",
+    "rawJd": "Job Title: UX Researcher. Contract Length: 6+ months. Location: 100% remote. Pay Range: $60/hr to $68/hr on W2. Looking for a User Researcher/UX Researcher with expertise writing surveys, running usability testing and reviews, setting up measurement frameworks, and helping teams improve. Quantitative and qualitative research are both needed. Less AEC experience is acceptable with experience working with doctors, engineers, lawyers, or similar expert users. Experience identifying opportunities with AI is needed. AutoCAD, Revit, or Forma is nice to have. Qualtrics or similar survey software is required. The researcher should bring human-centric, empathetic, and ethical thinking. Top skills: measurement frameworks are most important; measurement tools for AI tools or LLMs are a plus; AEC or construction domain experience, or work with doctors, construction engineers, lawyers, or similar experts; and Qualtrics or similar survey software. The Senior UX Researcher will help shape an industry-defining Foundation Model for architecture, engineering, and construction. The role works at the intersection of ML systems and human-centered design, evaluating model behavior against real user experience, building rigorous measurement infrastructure, and ensuring insights travel across teams. This is a high-autonomy role spanning multiple initiatives, organizational complexity, evolving AI products, and synthesis into coherent product direction. Research execution includes designing, conducting, and analyzing qualitative and quantitative studies across the full product lifecycle, with strong emphasis on post-release validation of high-fidelity features. Methods include contextual inquiry, usability studies, surveys, participatory design workshops, analytics, and customer advisory councils. AI and model evaluation includes evaluating AI model outputs and behavior against UX goals and building, owning, and iterating measurement protocols for live and in-flight features. Collaboration includes delivering insights to designers, engineers, product managers, ML researchers, and senior leadership; leading design-thinking and visioning workshops; and evangelizing research through presentations, internal posts, workshops, and other empathy-building formats. Requirements include five-plus years of user research embedded in a product or design organization, leading cross-functional research projects, managing multiple research workstreams, working across time zones with distributed teams, familiarity with AEC workflows or tools such as AutoCAD or Revit as a strong plus, practical AI/ML product experience, and deep experience designing measurement frameworks and evaluating features against success criteria before and after release."
+  },
+  "classification": {
+    "targetLane": "senior-mixed-methods-ux-research-and-ai-measurement",
+    "evidenceMode": "portfolio-primary",
+    "primarySource": "portfolio",
+    "supportingSource": "resume",
+    "hardGateStatus": "pass",
+    "hardGates": [
+      {
+        "gate": "Five-plus years of research within product or design organizations",
+        "status": "pass",
+        "evidence": "The evidence spans healthcare UX research beginning in 2018, enterprise research leadership at Kinesso from 2020 through 2023, and current product discovery and testing work through One Block Away and Hedgehox. The positioning does not claim five years in a dedicated researcher title."
+      },
+      {
+        "gate": "Qualtrics or similar survey software",
+        "status": "pass",
+        "evidence": "The User Research case study directly documents Typeform for feedback and result analysis. Qualtrics itself is not claimed."
+      },
+      {
+        "gate": "Both qualitative and quantitative research",
+        "status": "pass",
+        "evidence": "Direct methods include interviews, workshops, standardized synthesis, Typeform feedback, Useberry prototype testing, Heap product-behavior analytics, and benchmark-driven digital audits."
+      },
+      {
+        "gate": "AEC experience or research with complex professional users",
+        "status": "pass",
+        "evidence": "The posting explicitly accepts experience with doctors and other expert users in place of AEC. The resume documents research and UX work for healthcare professionals, patients, regulated pharma teams, and legal-medical review stakeholders."
+      },
+      {
+        "gate": "Practical AI or ML product experience",
+        "status": "pass",
+        "evidence": "Current work includes LLM and VLM workflows, prompt-defined criteria, model orchestration, evidence-gap surfacing, risk signals, source health, and human-review product surfaces."
+      }
+    ]
+  },
+  "requirements": [
+    {
+      "id": "mixed-methods-research",
+      "text": "Design, conduct, and analyze qualitative and quantitative research across the product lifecycle.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Built a research discipline across more than 20 products using interviews, Typeform surveys, Useberry usability testing, Heap behavior analytics, beta groups, and standardized reports.",
+        "Led healthcare UX research and translated stakeholder input, competitive audits, and user needs into product direction."
+      ],
+      "resumeTerms": [
+        "qualitative and quantitative research",
+        "Typeform surveys",
+        "Useberry usability testing",
+        "Heap behavior analytics"
+      ]
+    },
+    {
+      "id": "measurement-frameworks",
+      "text": "Build measurement frameworks and evaluate high-fidelity features before and after release against defined criteria.",
+      "priority": "core",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Created a repeatable research operating system with standardized reports, prototype testing, live-product behavior analytics, and continuous feedback loops across four product suites.",
+        "Built a Digital Experience Audit workflow around channel scoring, benchmarks, recommendations, visualizations, and repeatable outputs."
+      ],
+      "resumeTerms": [
+        "Typeform feedback",
+        "Useberry prototype testing",
+        "Heap product-behavior analytics",
+        "standardized reports"
+      ]
+    },
+    {
+      "id": "ai-model-evaluation",
+      "text": "Evaluate AI model outputs and behavior against user-experience goals and connect model performance to user outcomes.",
+      "priority": "core",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Claims Detector uses prompt-defined criteria and knowledge sources to identify claims, surface evidence gaps, and keep human review visible before regulated submission.",
+        "WeReady exposes source health, risk scoring, evidence trails, and recommendations as user-facing product behavior."
+      ],
+      "resumeTerms": [
+        "prompt-defined criteria",
+        "evidence gaps",
+        "reviewer attention",
+        "human review"
+      ]
+    },
+    {
+      "id": "research-method-selection",
+      "text": "Select and apply surveys, usability studies, interviews, workshops, analytics, and feedback groups based on the product question.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The research case study documents flexible study planning across user interviews, prototype tests, surveys, live behavior analytics, workshops, and beta groups.",
+        "Healthcare work includes stakeholder research, journey maps, flows, wireframes, prototypes, and cross-functional translation."
+      ],
+      "resumeTerms": [
+        "user interviews",
+        "surveys",
+        "usability studies",
+        "workshops",
+        "analytics"
+      ]
+    },
+    {
+      "id": "cross-functional-influence",
+      "text": "Deliver research insights to design, product, engineering, ML, and senior leadership while building empathy at scale.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "A research roadshow aligned Audiences, Activation, Optimization, and Reporting leaders around repeatable research practice.",
+        "Scaled product design from 2 to 30 people across the United States and Poland and translated findings into build-ready recommendations with product and engineering teams."
+      ],
+      "resumeTerms": [
+        "cross-functional research",
+        "research roadshows",
+        "senior leadership",
+        "distributed teams"
+      ]
+    },
+    {
+      "id": "expert-domain-empathy",
+      "text": "Study complex professional users with human-centered, empathetic, and ethical judgment.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Eleven years of pharma and healthcare work includes HCP, patient, agency, brand, and legal-medical review contexts.",
+        "The research program explicitly addressed participant trust through communication, follow-through, knowledge access, and collaborative beta groups."
+      ],
+      "resumeTerms": [
+        "healthcare professionals",
+        "patient research",
+        "participant trust",
+        "human review"
+      ]
+    },
+    {
+      "id": "multiple-workstreams",
+      "text": "Manage multiple research workstreams across distributed teams and synthesize connections into product direction.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Led research and design across more than 20 products, four product suites, 22 white-label brands, and teams in the United States and Poland.",
+        "Current AI work spans multiple concurrent workflow products from intake and scoping through review, routing, capture, and regulatory monitoring."
+      ],
+      "resumeTerms": [
+        "multiple research workstreams",
+        "four product suites",
+        "United States and Poland",
+        "product direction"
+      ]
+    },
+    {
+      "id": "aec-tools-domain",
+      "text": "Bring direct AEC workflow experience or hands-on use of AutoCAD, Revit, or Forma.",
+      "priority": "preferred",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "resumeTerms": [
+        "AEC experience",
+        "AutoCAD",
+        "Revit",
+        "Forma"
+      ]
+    },
+    {
+      "id": "formal-foundation-model-measurement",
+      "text": "Own a mature measurement protocol specifically for foundation-model or LLM output quality across live and in-flight features.",
+      "priority": "preferred",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "resumeTerms": [
+        "foundation model measurement ownership",
+        "LLM evaluation platform ownership",
+        "ML researcher"
+      ]
+    }
+  ],
+  "fitGate": {
+    "supportedOverlap": [
+      "The portfolio directly proves a mixed-method research system across more than 20 enterprise products, including Typeform survey feedback, Useberry usability testing, Heap behavior analytics, interviews, beta groups, workshops, and standardized reporting.",
+      "Measurement-adjacent proof is substantial: research was operationalized into repeatable tools and reports, while the Digital Experience Audit used scoring, benchmarks, recommendations, and presentation-ready outputs.",
+      "Current AI work sits at the human-review boundary through prompt-defined criteria, evidence gaps, risk signals, source health, model orchestration, and visible review workflows.",
+      "The domain substitute named in the posting is supported through healthcare-professional, patient, pharma-agency, and legal-medical review experience in regulated environments.",
+      "Cross-functional and distributed-team proof includes research roadshows, more than 20 products across four suites, 7,000-plus users across 22 white-label brands, and team growth from 2 to 30 across the United States and Poland."
+    ],
+    "unsupportedRequirements": [
+      "No direct architecture, engineering, construction, transportation, AutoCAD, Revit, or Forma experience is evidenced.",
+      "Typeform satisfies the posting's similar-survey-software allowance, but Qualtrics itself is not evidenced.",
+      "The evidence does not establish ownership of a formal foundation-model or LLM measurement platform."
+    ],
+    "actualMismatches": [],
+    "missingEvidence": [
+      "The portfolio shows repeatable mixed-method research and measurement inputs, but it does not document a named end-to-end measurement framework with explicit baselines, success thresholds, and longitudinal model-quality reporting.",
+      "AI work proves practical model-aware product design and human-review workflows more strongly than formal UX research on model output quality.",
+      "The career history is senior UX, research leadership, and product design rather than five-plus years in a dedicated UX Researcher title."
+    ],
+    "coverLetterBridge": {
+      "status": "recommended",
+      "rationale": "We can make the case with a cover letter by connecting the Typeform, Useberry, Heap, interview, workshop, and standardized-reporting research system to the client's measurement needs; regulated healthcare-professional research to expert AEC users; and prompt-defined, human-reviewed AI workflows to model-behavior evaluation. The cover letter must state that direct AEC tools, Qualtrics, and formal foundation-model measurement ownership are not established."
+    },
+    "recommendation": "Proceed as adjacent. Lead with mixed-method research infrastructure, research influence across a complex enterprise suite, regulated expert-user empathy, and practical AI behavior work. Keep the AEC, Qualtrics-specific, and formal foundation-model evaluation gaps explicit."
+  },
+  "resume": {
+    "summary": "Senior UX research and product-design leader with 7+ years across enterprise products, regulated healthcare, and AI workflows. I built a mixed-method research discipline across 20+ products using user interviews, Typeform surveys, Useberry usability testing, Heap behavior analytics, workshops, beta groups, and standardized reports. I combine qualitative and quantitative evidence with prototype validation, product-behavior signals, benchmarks, and human review to help teams evaluate products and improve direction.",
+    "skills": [
+      {
+        "label": "Mixed-Methods UX Research",
+        "description": "Qualitative and quantitative research, user interviews, surveys, usability studies, Useberry prototype testing, Typeform feedback, Heap analytics, synthesis, beta groups, and participant trust"
+      },
+      {
+        "label": "Research Measurement & Validation",
+        "description": "Typeform feedback, Useberry prototype testing, Heap product-behavior analytics, benchmark-driven audits, standardized reports, beta feedback, and continuous iteration"
+      },
+      {
+        "label": "AI Product Behavior & Human Review",
+        "description": "LLM/VLM workflows, prompt-defined criteria, claim detection, evidence gaps, reviewer attention, source health, risk signals, and human-review product surfaces"
+      },
+      {
+        "label": "Research Influence & Expert Workflows",
+        "description": "Cross-functional research, research roadshows, workshops, senior leadership communication, distributed teams, healthcare professionals, patient research, and regulated product direction"
+      }
+    ],
+    "roles": {
+      "hedgehox": [
+        "Translate regulated pharma workflow needs into AI product concepts spanning claim review, brief intake, scoping, routing, submission capture, and FDA signal monitoring",
+        "Designed Claims Detector around prompt-defined criteria and human review, surfacing model-identified claims, evidence gaps, and content requiring reviewer attention before MLR submission",
+        "Connect healthcare professionals, agency teams, regulatory constraints, and AI product behavior to clearer review surfaces and product direction",
+        "Secured an investor for proprietary Claims Detection software by building the functional POC, shaping the demo story, and iterating with stakeholders"
+      ],
+      "one-block-away": [
+        "Lead client discovery and usability iteration that turn unclear business questions into testable product surfaces, product questions, and roadmap decisions",
+        "Built WeReady's Bailey Intelligence dashboard around founder inputs, source health, risk signals, evidence trails, and recommendations so people can evaluate AI-supported conclusions",
+        "Own product strategy, UX, AI workflow design, front-end and backend logic, prototype validation, demo readiness, and client iteration from first question through working product"
+      ],
+      "kinesso": [
+        "Built the UX research discipline from scratch across 20+ products and four product suites using user interviews, Typeform surveys, Useberry usability testing, Heap behavior analytics, workshops, beta groups, and standardized reporting",
+        "Combined Typeform feedback, Useberry prototype testing, Heap product-behavior analytics, benchmarks, beta groups, and standardized reports into a repeatable research and validation approach",
+        "Led multiple research workstreams and research roadshows across Audiences, Activation, Optimization, and Reporting, adapting insights for product, design, engineering, and senior leadership",
+        "Scaled product design from 2 to 30 people across distributed teams in the United States and Poland for enterprise analytics used by 7,000+ users across 22 white-label brands",
+        "Built the Digital Experience Audit workflow for channel scoring, benchmarks, recommendations, AI-powered visualization, and presentation-ready outputs"
+      ],
+      "omnicom": [
+        "Supported oncology accounts as a freelance UX designer, combining healthcare UX, stakeholder input, and regulated review constraints to strengthen digital recommendations",
+        "Translated brand goals and user needs into clearer flows, content structures, and research-informed product direction across strategy, creative, account, and delivery teams"
+      ],
+      "heartbeat": [
+        "Led UX research and experience strategy for pharma and healthcare programs, translating stakeholder input, competitive audits, patient research, and HCP needs into digital product direction",
+        "Created journey maps, site maps, user flows, wireframes, and prototypes for patient, healthcare-professional, and internal brand-team experiences",
+        "Partnered with strategy, creative, account, product, and engineering teams to move research findings and UX recommendations into build-ready experiences"
+      ],
+      "account-management": [
+        "Managed Fortune 500 pharma and healthcare programs with budgets from 2 million to more than 50 million dollars across CNS, neurology, psychiatry, cardiovascular, metabolic, and sleep-wakefulness brands",
+        "Built an early foundation in expert stakeholder communication and regulated review across client, strategy, creative, UX, legal-medical review, and development teams"
+      ]
+    }
+  },
+  "hero": {
+    "eyebrow": "Senior UX Researcher — AEC Foundation Model",
+    "tags": [
+      "Mixed methods & measurement",
+      "AI behavior & human review",
+      "Expert, regulated workflows"
+    ],
+    "intro": "I build research systems for complex products and expert users. Across a 20-plus-product enterprise suite, I combined Typeform surveys, Useberry usability testing, Heap behavior analytics, interviews, workshops, and standardized reports into a repeatable practice. I have also led research for healthcare-professional and patient experiences and now design human-reviewed AI workflows around model criteria, evidence gaps, risk signals, and user trust. That gives me a practical base for making an AEC foundation model measurable, understandable, and useful."
+  },
+  "contact": {
+    "prompt": "Hiring a senior researcher to make an AI foundation model measurable, trustworthy, and useful to expert practitioners? I would like to bring mixed-method research systems, regulated-domain empathy, and human-review AI experience to the work. Email is the fastest way to reach me.",
+    "signoff": "Mixed methods · measurement systems · human-centered AI"
+  },
+  "constraints": {
+    "doNotClaim": [
+      "Qualtrics proficiency",
+      "AEC industry experience",
+      "architecture industry experience",
+      "construction industry experience",
+      "formal foundation-model evaluation ownership",
+      "LLM evaluation platform ownership",
+      "ML researcher"
+    ],
+    "blockedTerms": [
+      "Qualtrics",
+      "AutoCAD",
+      "Revit",
+      "Forma"
+    ]
+  },
+  "privacy": {
+    "publicSafe": true,
+    "notes": "Contains only public job-posting text and sanitized evidence. It excludes recruiter contact details, application answers, personal compensation boundaries, and private eligibility details."
+  },
+  "qa": {
+    "status": "qa-passed",
+    "builtAt": "2026-07-22T02:13:48.225Z",
+    "configInputSha256": "732de72e27ec8f0452a012b5c6579630a8b5d697e27946841a3efd9a4c28a0f2",
+    "sourceResumeSha256": "375cc6566f5bbad5b95be9da551dfe87824378fb252222409d29ef32d334ca25",
+    "artifactHashes": {
+      "routeSha256": "17c2abd2205266a3769b2d9b2e2d87a077650c5b44a954a7828fcf251ce57d2c",
+      "resumePdfSha256": "968f19734cee6ee60621df5cf2b83531af735a564b2d19ec0753a28348132499",
+      "scopedProjectSha256": {}
+    },
+    "renderer": {
+      "browser": {
+        "name": "chrome-headless-shell",
+        "version": "Google Chrome for Testing 149.0.7827.55"
+      },
+      "htmlPath": "tmp/tailored-resumes/aec-senior-ux-researcher.html",
+      "pdfPath": "output/pdf/Wally-Mostafa-AEC-Senior-UX-Researcher-Resume.pdf"
+    },
+    "ats": {
+      "ok": true,
+      "pdfPath": "output/pdf/Wally-Mostafa-AEC-Senior-UX-Researcher-Resume.pdf",
+      "pageCount": 2,
+      "fileSize": 130327,
+      "annotations": [
+        {
+          "page": 1,
+          "uri": "mailto:wmostafa12@gmail.com"
+        },
+        {
+          "page": 1,
+          "uri": "https://linkedin.com/in/wallymo"
+        },
+        {
+          "page": 1,
+          "uri": "https://wallymo.github.io/aec-senior-ux-researcher/"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/6748"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/4629"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.red-dot.org/project/dxa-digital-experience-audit-55219"
+        }
+      ],
+      "coverage": [
+        {
+          "id": "mixed-methods-research",
+          "requirement": "Design, conduct, and analyze qualitative and quantitative research across the product lifecycle.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "qualitative and quantitative research",
+            "Typeform surveys",
+            "Useberry usability testing",
+            "Heap behavior analytics"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "measurement-frameworks",
+          "requirement": "Build measurement frameworks and evaluate high-fidelity features before and after release against defined criteria.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "Typeform feedback",
+            "Useberry prototype testing",
+            "Heap product-behavior analytics",
+            "standardized reports"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "ai-model-evaluation",
+          "requirement": "Evaluate AI model outputs and behavior against user-experience goals and connect model performance to user outcomes.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "prompt-defined criteria",
+            "evidence gaps",
+            "reviewer attention",
+            "human review"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "research-method-selection",
+          "requirement": "Select and apply surveys, usability studies, interviews, workshops, analytics, and feedback groups based on the product question.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "user interviews",
+            "surveys",
+            "usability studies",
+            "workshops",
+            "analytics"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "cross-functional-influence",
+          "requirement": "Deliver research insights to design, product, engineering, ML, and senior leadership while building empathy at scale.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "cross-functional research",
+            "research roadshows",
+            "senior leadership",
+            "distributed teams"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "expert-domain-empathy",
+          "requirement": "Study complex professional users with human-centered, empathetic, and ethical judgment.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "healthcare professionals",
+            "patient research",
+            "participant trust",
+            "human review"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "multiple-workstreams",
+          "requirement": "Manage multiple research workstreams across distributed teams and synthesize connections into product direction.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "multiple research workstreams",
+            "four product suites",
+            "United States and Poland",
+            "product direction"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "aec-tools-domain",
+          "requirement": "Bring direct AEC workflow experience or hands-on use of AutoCAD, Revit, or Forma.",
+          "priority": "preferred",
+          "evidenceStatus": "none",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "AEC experience",
+            "AutoCAD",
+            "Revit",
+            "Forma"
+          ]
+        },
+        {
+          "id": "formal-foundation-model-measurement",
+          "requirement": "Own a mature measurement protocol specifically for foundation-model or LLM output quality across live and in-flight features.",
+          "priority": "preferred",
+          "evidenceStatus": "none",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "foundation model measurement ownership",
+            "LLM evaluation platform ownership",
+            "ML researcher"
+          ]
+        }
+      ],
+      "failures": [],
+      "warnings": []
+    },
+    "route": {
+      "viewports": [
+        {
+          "name": "desktop",
+          "screenshot": "tmp/qa/aec-senior-ux-researcher/desktop.png",
+          "errors": []
+        },
+        {
+          "name": "mobile",
+          "screenshot": "tmp/qa/aec-senior-ux-researcher/mobile.png",
+          "errors": []
+        }
+      ],
+      "errors": []
+    }
+  }
+}

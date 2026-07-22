@@ -111,6 +111,27 @@
       "publishStatus": "tracked-unverified"
     },
     {
+      "workflowVersion": 2,
+      "slug": "aec-senior-ux-researcher",
+      "roleTitle": "Senior UX Researcher — AEC Foundation Model",
+      "artifactStem": "AEC-Senior-UX-Researcher",
+      "configPath": "scripts/packages/aec-senior-ux-researcher.json",
+      "targetLane": "senior-mixed-methods-ux-research-and-ai-measurement",
+      "evidenceMode": "portfolio-primary",
+      "fitClass": "adjacent",
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-04.html",
+        "project-01.html",
+        "project-06.html",
+        "project-03.html"
+      ],
+      "resumePdfPath": "output/pdf/Wally-Mostafa-AEC-Senior-UX-Researcher-Resume.pdf",
+      "publishStatus": "local-only",
+      "qaStatus": "qa-passed",
+      "builtAt": "2026-07-22T02:13:48.225Z"
+    },
+    {
       "slug": "ai-customer-success-ops-builder",
       "roleTitle": "AI-Native Customer Success Operations Builder",
       "fitClass": "unclassified",
