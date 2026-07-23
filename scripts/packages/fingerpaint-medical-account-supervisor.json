@@ -256,7 +256,7 @@
       "Budgets, scopes & delivery",
       "Client and team partnership"
     ],
-    "intro": "I bring 7+ years managing Fortune 500 pharma and healthcare accounts with USD 2M-50M+ budgets, including leadership on FCB Health's largest pharma account. I have turned client and brand strategy into briefs, timelines, production requirements, integrated campaigns, and MLR-ready delivery, and I now build pharma workflow tools for scoping, review routing, and compliance. That mix lets me stay close to clients, keep internal teams aligned, and spot delivery risks before they become account problems."
+    "intro": "I bring 7+ years managing Fortune 500 pharma and healthcare accounts with $2M-$50M+ budgets, including leadership on FCB Health's largest pharma account. I have turned client and brand strategy into briefs, timelines, production requirements, integrated campaigns, and MLR-ready delivery, and I now build pharma workflow tools for scoping, review routing, and compliance. That mix lets me stay close to clients, keep internal teams aligned, and spot delivery risks before they become account problems."
   },
   "contact": {
     "prompt": "Looking for an Account Supervisor who knows pharma clients, regulated delivery, budgets, scopes, and cross-functional agency work? Email is the fastest way to reach me.",
@@ -266,8 +266,8 @@
     "humanizerVersion": "2.2.0",
     "mode": "surface-only",
     "status": "passed",
-    "reviewedAt": "2026-07-23T03:20:19.776Z",
-    "copySha256": "b1ef5349b124981734f6b533e78d8db9742b571edbb0c9b5acff0eea84d3fa21",
+    "reviewedAt": "2026-07-23T03:31:18.321Z",
+    "copySha256": "54afdda2581259c1d1c8b73ccd762f12a18acb2294562285a47db0f9ece73f0f",
     "preserved": [
       "content",
       "structure",
@@ -313,11 +313,11 @@
   },
   "qa": {
     "status": "qa-passed",
-    "builtAt": "2026-07-23T03:20:23.923Z",
-    "configInputSha256": "6b6363cb2d086abfe21c3ef56b41e2d1435507275688f0b7be77e0e3d9856ae5",
+    "builtAt": "2026-07-23T03:31:50.045Z",
+    "configInputSha256": "16060e26ac00abdd597bf2599328bdcf095f53f9d005cf638208ab15a962d05a",
     "sourceResumeSha256": "9b11ed3b43bb358d2f85aa9d83c4c3c4f2d82a2220e47de8f5c4a9af04bfad4d",
     "artifactHashes": {
-      "routeSha256": "4b898a6394883ba5832c84c002c1a476274d6c45d2c0bd9cbbe96fc84bb62e66",
+      "routeSha256": "215b25630d940702ea8f5cc90dff74b34fde19754c58fdcf512b50d347593f10",
       "resumePdfSha256": "605fcf89c95fd652a39af15c04e1dbb7b3b0614b99c344a66056dfc00feadd4d",
       "scopedProjectSha256": {}
     },
@@ -466,8 +466,8 @@
       "status": "passed",
       "version": "2.2.0",
       "mode": "surface-only",
-      "reviewedAt": "2026-07-23T03:20:19.776Z",
-      "copySha256": "b1ef5349b124981734f6b533e78d8db9742b571edbb0c9b5acff0eea84d3fa21",
+      "reviewedAt": "2026-07-23T03:31:18.321Z",
+      "copySha256": "54afdda2581259c1d1c8b73ccd762f12a18acb2294562285a47db0f9ece73f0f",
       "reviewMethod": "humanizer-skill",
       "semanticPassAttested": true,
       "staticChecksPassed": true
