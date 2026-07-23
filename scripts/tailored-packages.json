@@ -1207,9 +1207,26 @@
         "project-06.html"
       ],
       "resumePdfPath": "output/pdf/Wally-Mostafa-Inizio-Growth-Enablement-Launch-Specialist-Resume.pdf",
-      "publishStatus": "local-only",
+      "publishStatus": "live-verified",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-07-23T03:37:39.038Z"
+      "builtAt": "2026-07-23T03:37:39.038Z",
+      "verification": {
+        "verifiedAt": "2026-07-23T03:40:50.413Z",
+        "routeUrl": "https://wallymo.github.io/inizio-growth-enablement-launch-specialist/",
+        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-Inizio-Growth-Enablement-Launch-Specialist-Resume.pdf",
+        "configUrl": "https://wallymo.github.io/scripts/packages/inizio-growth-enablement-launch-specialist.json",
+        "projectUrls": [
+          "https://wallymo.github.io/project-01.html",
+          "https://wallymo.github.io/project-02.html",
+          "https://wallymo.github.io/project-06.html"
+        ],
+        "configSha256": "64220468ba5e25318562c3d138517e85a48dec6d989969d2900c21dbeee9190e",
+        "pdfSha256": "43171a5e283fdb77ca82bf277b53d4e0300a858d50994c110f77e1ea86168050",
+        "routeSha256": "5c6c48534eb49de5676f32e5b4f60d9197aa115004f6a0e5184d9e46675f3d88",
+        "scopedProjectSha256": {},
+        "configInputSha256": "c1f4165aaab05e17e1745b3a5bb6acf80c747de96518977e4f5d06b899487f5c",
+        "qaBuiltAt": "2026-07-23T03:37:39.038Z"
+      }
     },
     {
       "slug": "insight-global-senior-ux-designer",
