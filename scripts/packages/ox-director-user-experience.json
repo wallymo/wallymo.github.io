@@ -1,6 +1,6 @@
 {
   "workflowVersion": 2,
-  "contractRevision": 3,
+  "contractRevision": 4,
   "slug": "ox-director-user-experience",
   "roleTitle": "OX Director, User Experience",
   "artifactStem": "OX-Director-User-Experience",
@@ -249,56 +249,102 @@
     "recommendation": "Proceed as adjacent. Lead with the research-to-handoff UX practice, agency and client fluency, a team scaled from two to 30, current-state audit work, and accessibility. Keep the exact Interaction Design and Service Design tenure, formal mentoring duties, agile method, and optional software list explicit as evidence gaps."
   },
   "resume": {
-    "summary": "UX and experience-design leader with nearly eight years in hands-on UX roles and 15 years across digital products, agency work, and client strategy. I lead research, journey planning, interaction design, service workflows, prototypes, design systems, and engineering handoff. My work includes a research practice built across 20+ products, enterprise platforms used by 7,000+ people across 22 brands, and a product design organization scaled from two to 30.",
+    "foundationId": "wally-mostafa-resume-2026-07-03",
+    "summary": "AI implementation and product strategy lead with 15 years across pharma, enterprise UX, client strategy, and regulated AI delivery. I turn ambiguous workflows into governed AI tools, demo-ready POCs, and build-ready product systems. My strength is bridging client translation, workflow design, model behavior, and adoption so teams can trust and use the product after the demo.",
     "skills": [
       {
-        "label": "UX Practice & User-Centered Design",
-        "description": "UX leadership, primary research, secondary research, customer empathy, consumer journeys, stakeholder framing, UI/UX roadmaps, deliverable quality, and user research strategy"
+        "label": "AI Implementation & Workflow Design",
+        "description": "Governed LLM/VLM workflows, multimodal review, RAG/knowledge bases, prompt-defined criteria, model orchestration, and human review surfaces"
       },
       {
-        "label": "Interaction & Service Design",
-        "description": "Interaction design, service design, site architecture, information architecture, user flows, wireframes, rapid prototyping, interactive prototypes, and usability testing"
+        "label": "Product Strategy & POC Delivery",
+        "description": "Discovery, scoping, requirements, prototype validation, demo narratives, build-ready logic, and production handoff"
       },
       {
-        "label": "Client & Cross-Functional Leadership",
-        "description": "Client strategy, content strategy, people leadership, cross-functional leadership, team development, UX standards, workshops, Product and Engineering, development teams, and iterative delivery"
+        "label": "Regulated Healthcare & Client Delivery",
+        "description": "11 years across pharma/healthcare communications, FDA/HIPAA/MLR workflows, HCP/patient UX, client workshops, and stakeholder adoption"
       },
       {
-        "label": "Audits, Design Systems & Accessibility",
-        "description": "Site audits, current-state assessment, industry scans, competitive audits, recommendations, design systems, Figma, accessibility, WCAG, keyboard interaction, and accessible design"
+        "label": "Enterprise UX & Design Systems",
+        "description": "Team scaling (2 to 30), enterprise analytics, workflow UX, data visualization, component libraries, and accessibility (WCAG)"
       }
     ],
     "roles": {
       "hedgehox": [
-        "Lead UX for regulated AI workflows spanning claim review, brief intake, scoping, review routing, submission capture, and FDA signal monitoring",
-        "Design interaction and service flows that surface evidence gaps, route work by risk and approval requirements, and prepare audit-ready annotations for human review",
-        "Build functional prototypes, test workflow decisions with stakeholders, and carry approved concepts into working product logic"
+        "Secured an investor for proprietary Claims Detection software by building the functional POC, framing the demo for business stakeholders, and iterating from investor feedback",
+        "Led interaction design and service design for Claims Detector workflows that identify promotional claims, surface evidence gaps, and pre-populate audit-ready annotations before MLR submission",
+        "Converted pharma agency needs into AI tools for MLR claim review, brief intake, scoping, review routing, submission capture, and FDA signal monitoring",
+        "Designed the complete Xenagos Bio startup biopharma website, including site architecture, investor-facing content structure, scientific positioning, visual direction, and design-system handoff",
+        "Built Scope Generator's service workflow for pharma agency finance and operations teams to manage regional rate cards, brands, sub-brands, and natural-language scope changes",
+        "Developed FDA Warning Tool concepts from industry scans of warning-letter patterns and turned the findings into content-risk guidance for pharma teams"
       ],
       "one-block-away": [
-        "Lead client discovery, product strategy, and UX from initial questions and user flows through interactive prototypes, front-end and backend logic, demo readiness, and engineering handoff",
-        "Build client-led POCs that turn unclear business needs into testable product surfaces, service workflows, roadmap decisions, and working demos",
-        "Built ListingPal's AI workflow, turning basic property inputs into listing copy, social posts, ad copy, styling direction, and MLS/SEO-ready language in under 90 seconds"
+        "Build client-led AI POCs through rapid prototyping that turns unclear business questions into user flows, interactive prototypes, demo sequences, and roadmap decisions",
+        "Built ListingPal's AI listing-generation POC and landing page, turning basic property inputs into listing copy, social posts, ad copy, styling direction, and MLS/SEO-ready language in under 90 seconds",
+        "Built WeReady's Bailey Intelligence dashboard, translating founder inputs, GitHub signals, source health, risk scoring, and evidence trails into startup-readiness workflows",
+        "Own product strategy and client discovery, then carry UX and AI workflows through front-end build, backend logic, prototype validation, client iteration, and engineering handoff",
+        "Currently building the website and sponsor strategy for a Tunisia youth soccer program, positioning the project for player advancement, community support, and donor outreach"
       ],
       "kinesso": [
-        "Led enterprise UX and design systems used by 7,000+ people across 22 white-label brands, aligning customer needs, product standards, business goals, and engineering constraints",
-        "Built the UX Research discipline across 20+ products using interviews, Typeform feedback, Useberry usability testing, Heap behavioral data, workshops, roadshows, and reusable Figma documentation",
-        "Created the Digital Experience Audit workflow for current-state assessment, site audits, channel scoring, benchmarks, recommendations, data visualization, and client-ready outputs",
-        "Helped shape a 500-component design system with 140 styles, 300 icons, 50 personas, accessibility, WCAG direction, keyboard interaction, and design governance",
-        "Scaled product design from two to 30 people across the United States and Poland while setting UX standards and partnering with Product and Engineering leads",
-        "Enterprise design-system, data-visualization, and audit work earned 5 Indigo Gold, 4 Indigo Silver, and Red Dot recognition"
+        "Scaled product design from 2 to 30 people across the US and Poland, combining UX leadership with people leadership and team development. Set UX standards and deliverable quality for enterprise analytics used by 7,000+ users across 22 white-label brands",
+        "Built the UX Research discipline and broader UX practice across 20+ products. Set user research strategy through primary research, secondary research, customer empathy, interviews, Typeform, Useberry usability testing, Heap, workshops, roadshows, Figma documentation, and stakeholder framing",
+        "Led UX and design-system strategy and provided cross-functional leadership for MIE's UI/UX roadmaps, data visualization, dashboard interaction models, brand theming, reusable analytics components, and Product and Engineering alignment",
+        "Helped shape a 500-component design system with 140 styles, 300 icons, and 50 personas, with accessible design, WCAG direction, keyboard interaction guidance, and design governance",
+        "Built the Digital Experience Audit as a workflow for current-state assessment, site audits, channel scoring, benchmarks, recommendations, data visualization, and presentation-ready client outputs",
+        "Design-system and analytics work earned 5 Indigo Gold, 4 Indigo Silver, and Red Dot recognition"
       ],
       "omnicom": [
-        "Supported oncology accounts as a freelance UX designer, combining hands-on product UX with agency and client experience in a regulated setting",
-        "Translated brand goals into content structure, site architecture, user flows, responsive recommendations, and delivery direction across strategy, creative, account, and development teams"
+        "Supported oncology accounts as a freelance UX designer, combining hands-on UX design and account-management experience to strengthen regulated healthcare work",
+        "Applied UX best practices across account, strategy, creative, and delivery teams, translating brand goals into site architecture, user flows, content structure, responsive recommendations, and development direction"
       ],
       "heartbeat": [
-        "Led primary research and experience strategy for pharma and healthcare work, translating stakeholder input, competitive audits, and customer needs into product direction",
-        "Created consumer journeys, site maps, interaction models, user flows, wireframes, and prototypes for patient, HCP, and internal experiences across devices",
-        "Partnered with client strategy, content, creative, account, and engineering teams to move research findings into build-ready product and campaign work"
+        "Led primary user research and experience strategy for pharma and healthcare work, translating stakeholder input, competitive audits, and user needs into digital product direction",
+        "Created consumer journeys, site maps, interaction models, user flows, wireframes, and prototypes for patient, HCP, and internal brand-team experiences across devices",
+        "Partnered with client strategy, content strategy, creative, account, and engineering teams to move research findings into build-ready product and campaign experiences"
       ],
       "account-management": [
-        "Managed Fortune 500 pharma and healthcare clients across digital programs, turning business goals and audience needs into requirements, timelines, and approval-ready work",
-        "Built an early foundation in client strategy, stakeholder communication, cross-functional delivery, content development, and clear recommendations"
+        "Managed 2M-50M+ USD budgets for Fortune 500 pharma and healthcare clients over 7+ years across CNS/neurology, psychiatry, cardiovascular/metabolic, and sleep/wakefulness brands: NUVIGIL, Namenda XR, Lipitor, and Zoloft",
+        "Served as one of two consumer account leads on FCB Health's largest pharma account across TV, radio, digital, gaming, Times Square, unbranded campaigns, brand planning, and MLR review",
+        "Translated client and brand strategy into briefs, creative feedback, production requirements, timelines, and MLR-ready deliverables across account, content, creative, UX, and development teams"
+      ]
+    },
+    "sourceBulletIds": {
+      "hedgehox": [
+        "hedgehox-01",
+        "hedgehox-02",
+        "hedgehox-03",
+        "hedgehox-04",
+        "hedgehox-05",
+        "hedgehox-06"
+      ],
+      "one-block-away": [
+        "one-block-away-01",
+        "one-block-away-02",
+        "one-block-away-03",
+        "one-block-away-04",
+        "one-block-away-05"
+      ],
+      "kinesso": [
+        "kinesso-01",
+        "addition:ox-ux-research-practice",
+        "kinesso-02",
+        "addition:ox-accessibility-governance",
+        "kinesso-03",
+        "kinesso-04"
+      ],
+      "omnicom": [
+        "omnicom-01",
+        "omnicom-02"
+      ],
+      "heartbeat": [
+        "heartbeat-01",
+        "heartbeat-02",
+        "heartbeat-03"
+      ],
+      "account-management": [
+        "account-management-01",
+        "account-management-02",
+        "account-management-03"
       ]
     }
   },
@@ -355,8 +401,8 @@
     "humanizerVersion": "2.2.0",
     "mode": "surface-only",
     "status": "passed",
-    "reviewedAt": "2026-07-23T04:01:46.726Z",
-    "copySha256": "4cadd044046f1d97394faa642ea31e50d6aa208f3f3a88133d42949f40967539",
+    "reviewedAt": "2026-07-23T21:05:12.663Z",
+    "copySha256": "8bdff5a38f92c7a074084bc9b01a9fbfcb3cb6b356837aee31595fb0d90086b9",
     "preserved": [
       "content",
       "structure",
@@ -372,12 +418,16 @@
   },
   "qa": {
     "status": "qa-passed",
-    "builtAt": "2026-07-23T04:03:08.130Z",
-    "configInputSha256": "82b357ee2d618b9f84c1cf8ec4dfae58ea01b196ed5605c8b01bdcf58554a3ff",
-    "sourceResumeSha256": "9d6e6d1d5e2d05282174ae03e31ab0d8979657abdbde618a5daef1b9980f3d04",
+    "builtAt": "2026-07-23T21:05:16.173Z",
+    "configInputSha256": "7ca64de7a08c5076e83eeed5b9dc68eff05f1415d29874c8be3d187f47f67ad2",
+    "sourceResumeSha256": "375cc6566f5bbad5b95be9da551dfe87824378fb252222409d29ef32d334ca25",
+    "resumeFoundation": {
+      "id": "wally-mostafa-resume-2026-07-03",
+      "sourcePdfSha256": "f9b05b6c3c134262b1af6c5734363daf4385cf335407a139779a37d138adf1aa"
+    },
     "artifactHashes": {
       "routeSha256": "246e502d6cf705b2a7d09d7e14327003b7c36f92a0196fb33ae053312667fed8",
-      "resumePdfSha256": "a6881925ea44cf10263ac7d31a878e973c9e279ea08e025bf8f57ecfc547b89c",
+      "resumePdfSha256": "9d1b0c9996d6e827715ea4ba935cef9928646584558f6470ba344b858c4b04a4",
       "scopedProjectSha256": {}
     },
     "renderer": {
@@ -392,7 +442,7 @@
       "ok": true,
       "pdfPath": "output/pdf/Wally-Mostafa-OX-Director-User-Experience-Resume.pdf",
       "pageCount": 2,
-      "fileSize": 131649,
+      "fileSize": 138867,
       "annotations": [
         {
           "page": 1,
@@ -555,10 +605,10 @@
           "status": "covered-adjacently",
           "matchedTerms": [
             "Figma",
-            "iterative delivery",
             "Product and Engineering"
           ],
           "missingTerms": [
+            "iterative delivery",
             "agile collaboration"
           ]
         }
@@ -570,8 +620,8 @@
       "status": "passed",
       "version": "2.2.0",
       "mode": "surface-only",
-      "reviewedAt": "2026-07-23T04:01:46.726Z",
-      "copySha256": "4cadd044046f1d97394faa642ea31e50d6aa208f3f3a88133d42949f40967539",
+      "reviewedAt": "2026-07-23T21:05:12.663Z",
+      "copySha256": "8bdff5a38f92c7a074084bc9b01a9fbfcb3cb6b356837aee31595fb0d90086b9",
       "reviewMethod": "humanizer-skill",
       "semanticPassAttested": true,
       "staticChecksPassed": true
