@@ -193,9 +193,11 @@
         "Translate client needs into workflow design, model behavior, human review, demonstrations, implementation choices, and build-ready product decisions"
       ],
       "one-block-away": [
-        "Build client-led AI POCs that turn unclear business and marketing questions into testable product surfaces, working demonstrations, and roadmap decisions",
-        "Own product strategy, UX, AI workflow design, front-end build, backend logic, validation, presentation readiness, and client iteration from first ask through working prototype",
-        "Built ListingPal's AI listing-generation POC and landing page, turning basic inputs into listing copy, social posts, ad copy, styling direction, and MLS and SEO-ready language in under 90 seconds"
+        "Build client-led AI POCs that turn unclear business questions into testable product surfaces, demo flows, and roadmap decisions",
+        "Built ListingPal's AI listing-generation POC and landing page, turning basic property inputs into listing copy, social posts, ad copy, styling direction, and MLS/SEO-ready language in under 90 seconds",
+        "Built WeReady's Bailey Intelligence dashboard, translating founder inputs, GitHub signals, source health, risk scoring, and evidence trails into startup-readiness workflows",
+        "Own product strategy, UX, AI workflow design, front-end build, backend logic, demo readiness, and client iteration from first ask through working prototype",
+        "Currently building the website and sponsor strategy for a Tunisia youth soccer program, positioning the project for player advancement, community support, and donor outreach"
       ],
       "kinesso": [
         "Scaled product design from 2 to 30 people across the United States and Poland for enterprise marketing analytics used by 7,000+ users across 22 white-label brands",
@@ -238,8 +240,8 @@
     "humanizerVersion": "2.2.0",
     "mode": "surface-only",
     "status": "passed",
-    "reviewedAt": "2026-07-23T00:32:10.908Z",
-    "copySha256": "b471c4c3e7e2735e111e63d37bc76608044179480eed60947f99c31c731236d4",
+    "reviewedAt": "2026-07-23T03:10:51.656Z",
+    "copySha256": "f78718488daff096d8cadbde0245bb0eee23984d083ed39e5bc0c8e07a832ec1",
     "preserved": [
       "content",
       "structure",
@@ -281,12 +283,12 @@
   },
   "qa": {
     "status": "qa-passed",
-    "builtAt": "2026-07-23T00:32:14.869Z",
-    "configInputSha256": "e1b287a46889dbc525225cf7961373bd274bb880308a4897fcfc233a2ae6260d",
+    "builtAt": "2026-07-23T03:10:56.226Z",
+    "configInputSha256": "210b61fbc87e18960e69749a46afdb7479f61a98a75ffad82d2005975c4d7567",
     "sourceResumeSha256": "375cc6566f5bbad5b95be9da551dfe87824378fb252222409d29ef32d334ca25",
     "artifactHashes": {
       "routeSha256": "d75755434374d4a2296a482b65416564bb1f69cd6c6408d4b1aadde16e5139d1",
-      "resumePdfSha256": "09e272a71a29e320ad2a4cf0889b627f86aca84d2f5e8d6431a94e534b35d3a7",
+      "resumePdfSha256": "121de12fcd1213f4a34f0d14c1f2ba5a0441b5a6e2d5e4fe7aae446602c7213e",
       "scopedProjectSha256": {}
     },
     "renderer": {
@@ -301,7 +303,7 @@
       "ok": true,
       "pdfPath": "output/pdf/Wally-Mostafa-Forma-Life-Science-Marketing-General-Interest-Resume.pdf",
       "pageCount": 2,
-      "fileSize": 133148,
+      "fileSize": 135281,
       "annotations": [
         {
           "page": 1,
@@ -407,8 +409,8 @@
       "status": "passed",
       "version": "2.2.0",
       "mode": "surface-only",
-      "reviewedAt": "2026-07-23T00:32:10.908Z",
-      "copySha256": "b471c4c3e7e2735e111e63d37bc76608044179480eed60947f99c31c731236d4",
+      "reviewedAt": "2026-07-23T03:10:51.656Z",
+      "copySha256": "f78718488daff096d8cadbde0245bb0eee23984d083ed39e5bc0c8e07a832ec1",
       "reviewMethod": "humanizer-skill",
       "semanticPassAttested": true,
       "staticChecksPassed": true
