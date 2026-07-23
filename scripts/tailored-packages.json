@@ -1077,6 +1077,26 @@
       "publishStatus": "live-verified"
     },
     {
+      "workflowVersion": 2,
+      "slug": "globe-life-product-manager-ii",
+      "roleTitle": "Globe Life Product Manager II",
+      "artifactStem": "Globe-Life-Product-Manager-II",
+      "configPath": "scripts/packages/globe-life-product-manager-ii.json",
+      "targetLane": "Product management, sponsor partnership, and accountable software delivery",
+      "evidenceMode": "balanced",
+      "fitClass": "adjacent",
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-02.html",
+        "project-03.html",
+        "project-01.html"
+      ],
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Globe-Life-Product-Manager-II-Resume.pdf",
+      "publishStatus": "local-only",
+      "qaStatus": "qa-passed",
+      "builtAt": "2026-07-23T21:54:37.092Z"
+    },
+    {
       "slug": "healthcare-diagnostics-sales-support",
       "roleTitle": "Healthcare Diagnostics Sales Support",
       "fitClass": "unclassified",

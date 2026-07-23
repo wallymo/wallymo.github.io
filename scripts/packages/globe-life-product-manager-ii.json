@@ -1,0 +1,606 @@
+{
+  "workflowVersion": 2,
+  "contractRevision": 4,
+  "slug": "globe-life-product-manager-ii",
+  "roleTitle": "Globe Life Product Manager II",
+  "artifactStem": "Globe-Life-Product-Manager-II",
+  "fitClass": "adjacent",
+  "routeMode": "canonical-projects",
+  "selectedProjects": [
+    "project-02.html",
+    "project-03.html",
+    "project-01.html"
+  ],
+  "job": {
+    "company": "Globe Life",
+    "roleTitle": "Product Manager II",
+    "sourceChannel": "user-provided job description",
+    "dateCaptured": "2026-07-23",
+    "location": "Remote / work from home",
+    "atsVendor": "unknown",
+    "rawJd": "Product Manager II (Remote)\n\nPrimary Duties & Responsibilities\n\nAt Globe Life, we are committed to empowering our employees with the support and opportunities they need to succeed at every stage of their career. We take pride in fostering a caring and innovative culture that enables us to collectively grow and overcome challenges in a connected, collaborative, and mutually respectful environment that calls us to help Make Tomorrow Better.\n\nRole Overview\n\nCould you be our next Product Manager II? Globe Life is looking for a Product Manager II to join the team!\n\nThis role is responsible for partnering with business sponsors to manage product intake, prioritization, and roadmap development while aligning product strategy with the broader portfolio. The Product Manager II takes a consultative, value-driven approach to maintain strong relationships with both business stakeholders and engineering and delivery leaders, ensuring roadmaps are executed as promised and meaningful value outcomes are achieved. This role serves as the accountable delivery leader for assigned products and platforms, overseeing all intake, coordinating prioritization, and providing estimates.\n\nThis is a remote/work-from-home position.\n\nWhat You Will Do\n\n- Collaborate with business sponsors on product decisions, prioritization, and backlog refinement to maintain a consistently up-to-date, prioritized backlog of clearly defined features and stories.\n- Maintain product roadmaps based on delivery team capacity, sprint plans, and KPIs, and socialize progress with business sponsors.\n- Coordinate with Agile development teams on sprint definition, backlog prioritization, and release of MVPs.\n- Support scrum masters and development leads in identifying dependencies, constrained resources, and navigating development roadblocks.\n- Engage cross-functional stakeholders, technical architects, and engineering teams to develop the best solution options.\n- Enable iterative implementations to solicit stakeholder feedback early and often.\n- Ensure governance, standards, and best practices are adhered to across all team members.\n- Drive continuous improvement for delivery processes and prioritized initiatives.\n- Understand data, privacy, architecture, and information security standards to effectively bridge the gap between business and IT teams.\n- Summarize quarterly and annual value delivery to support business sponsors in crafting a compelling investment story for products.\n\nWhat You Can Bring\n\n- Bachelor's degree in Computer Science, Information Technology, Business, or equivalent field.\n- At least 1 year of product management or related experience; insurance industry knowledge is a plus.\n- Strong relationship building and collaboration skills across diverse and matrixed stakeholders.\n- Excellent project management skills with the ability to manage multiple initiatives and deadlines simultaneously.\n- Strong problem-solving and analytical skills, including experience interpreting data with limited context.\n- Ability to communicate complex technical information clearly to both technical and non-technical audiences.\n- Experience translating user needs into technical user stories and making timely prioritization decisions.\n- Familiarity with Agile software delivery practices and various SDLC methodologies.\n- Demonstrated success in defining and building products with a customer-centric approach.\n\nApplicable To All Employees of Globe Life Family of Companies:\n\nReliable and predictable attendance of your assigned shift.\nAbility to work full time and/or part time based on the position specifications.\n\nHow Globe Life Will Support You\n\nCompetitive compensation designed to reflect your expertise and contribution. Comprehensive health, dental, and vision insurance plans. Robust life insurance benefits and retirement plans, including company-matched 401k and pension plan. Paid holidays and time off. Parental leave. Subsidized all-in-one subscriptions for fitness, mindfulness, nutrition, and sleep goals. Company-paid counseling. Continued education reimbursement eligibility and company-paid FLMI and ICA courses. Discounted Texas Rangers tickets."
+  },
+  "classification": {
+    "targetLane": "Product management, sponsor partnership, and accountable software delivery",
+    "evidenceMode": "balanced",
+    "primarySource": "The resume shows product strategy, end-to-end product ownership, enterprise scale, stakeholder leadership, and cross-functional delivery",
+    "supportingSource": "The portfolio shows how that work was carried out through client-led product iteration, enterprise workflow systems, data products, and regulated governance",
+    "hardGateStatus": "pass",
+    "hardGates": [
+      {
+        "gate": "At least one year of product management or related experience",
+        "status": "pass",
+        "evidence": "Current work since July 2023 covers product strategy, requirements, working prototypes, roadmap decisions, client iteration, and technical handoff."
+      },
+      {
+        "gate": "Bachelor's degree in a named or equivalent field",
+        "status": "pass",
+        "evidence": "Rutgers University awarded a BA in Labor Studies and Employee Relations. The degree is business-adjacent, although it is not one of the fields named in the posting."
+      },
+      {
+        "gate": "Remote work location",
+        "status": "pass",
+        "evidence": "The resume lists Raleigh, North Carolina and current remote roles; the posting is remote and does not state a conflicting location requirement."
+      }
+    ]
+  },
+  "requirements": [
+    {
+      "id": "intake-prioritization-roadmap",
+      "text": "Partner with business sponsors on product intake, prioritization, backlog refinement, and roadmap development.",
+      "priority": "core",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Current product work turns unclear client questions into requirements, testable product surfaces, implementation choices, and roadmap decisions.",
+        "Long-running client leadership translated business priorities into briefs, production requirements, timelines, and coordinated delivery."
+      ],
+      "resumeTerms": [
+        "product strategy",
+        "requirements",
+        "roadmap decisions",
+        "priorities"
+      ]
+    },
+    {
+      "id": "sponsor-and-stakeholder-relationships",
+      "text": "Build consultative relationships across business sponsors, stakeholders, engineering, and delivery leaders.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Seven-plus years managing Fortune 500 healthcare clients with $2M-$50M+ budgets required sustained sponsor relationships and coordinated delivery.",
+        "Current work connects client questions, product strategy, UX, front-end and backend implementation, demos, and revision."
+      ],
+      "resumeTerms": [
+        "stakeholders",
+        "client strategy",
+        "engineering teams",
+        "delivery teams"
+      ]
+    },
+    {
+      "id": "agile-sprint-and-mvp-delivery",
+      "text": "Coordinate Agile teams on sprint definition, backlog prioritization, MVP releases, dependencies, and roadblocks.",
+      "priority": "core",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "The product portfolio shows iterative POC delivery, early stakeholder feedback, technical implementation, and working releases.",
+        "The resume documents build-ready handoff and partnership with engineering, but it does not name formal sprint, Scrum, or backlog ownership."
+      ],
+      "resumeTerms": [
+        "iterating",
+        "working prototype",
+        "engineering teams",
+        "production handoff"
+      ]
+    },
+    {
+      "id": "solution-options-and-technical-translation",
+      "text": "Engage stakeholders, architects, and engineering teams to develop solution options and explain technical information clearly.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Current product ownership spans client discovery, product strategy, UX, AI workflow design, front-end build, backend logic, and demo readiness.",
+        "Healthcare and enterprise UX work translated stakeholder and research findings into build-ready direction with engineering teams."
+      ],
+      "resumeTerms": [
+        "product strategy",
+        "product requirements",
+        "engineering teams",
+        "build-ready"
+      ]
+    },
+    {
+      "id": "accountable-delivery-and-estimates",
+      "text": "Act as an accountable delivery leader who coordinates estimates, capacity, multiple initiatives, deadlines, and commitments.",
+      "priority": "core",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Scope Generator turns project inputs into budget-ready scopes, timelines, role-level resourcing, and cost breakdowns for agency finance and operations teams.",
+        "Seven years of client-account leadership included large budgets, production requirements, timelines, and multi-team delivery."
+      ],
+      "resumeTerms": [
+        "scoping",
+        "timelines",
+        "resourcing",
+        "delivery"
+      ]
+    },
+    {
+      "id": "iterative-feedback-and-continuous-improvement",
+      "text": "Use iterative implementation and stakeholder feedback to improve products and delivery processes.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Client-led POCs move from an unclear question through working software, demo feedback, and roadmap decisions.",
+        "Research, prototype testing, and enterprise analytics work informed product direction and reusable system patterns."
+      ],
+      "resumeTerms": [
+        "client iteration",
+        "prototype validation",
+        "stakeholder input",
+        "product direction"
+      ]
+    },
+    {
+      "id": "governance-privacy-security",
+      "text": "Bridge business and IT while respecting data, privacy, architecture, information security, governance, and standards.",
+      "priority": "core",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Regulated AI work includes FDA, HIPAA, MLR, audit-ready annotations, review routing, evidence gaps, and human review.",
+        "The resume does not document ownership of enterprise information-security architecture or named security standards."
+      ],
+      "resumeTerms": [
+        "FDA",
+        "HIPAA",
+        "audit-ready",
+        "human review"
+      ]
+    },
+    {
+      "id": "value-delivery-and-kpis",
+      "text": "Maintain roadmaps using KPIs and summarize quarterly and annual value delivery for product investment decisions.",
+      "priority": "core",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Enterprise analytics work served 7,000+ users across 22 white-label brands, and the Digital Experience Audit converted channel data into benchmarks and recommendations.",
+        "Claims Detector secured an investor through a functional POC and a clear product story, but quarterly value reporting is not documented."
+      ],
+      "resumeTerms": [
+        "enterprise analytics",
+        "benchmarks",
+        "investor",
+        "product story"
+      ]
+    },
+    {
+      "id": "customer-centric-product-development",
+      "text": "Translate user needs into clear technical stories and build customer-centered products.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Product, UX, and client work consistently translates user and stakeholder needs into requirements, workflows, prototypes, and build-ready experiences.",
+        "ListingPal and WeReady are client-led products built around specific user decisions and usable first versions."
+      ],
+      "resumeTerms": [
+        "user needs",
+        "requirements",
+        "client-led",
+        "product surfaces"
+      ]
+    },
+    {
+      "id": "insurance-industry-knowledge",
+      "text": "Bring insurance industry knowledge as a preferred qualification.",
+      "priority": "preferred",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "resumeTerms": [
+        "insurance industry"
+      ]
+    }
+  ],
+  "fitGate": {
+    "supportedOverlap": [
+      "Three years of current product-strategy work covering discovery, requirements, working prototypes, roadmap decisions, implementation, demos, and client iteration.",
+      "Enterprise product scale through analytics and workflow experiences used by 7,000+ people across 22 white-label brands.",
+      "Seven-plus years of direct Fortune 500 stakeholder and client leadership with $2M-$50M+ budgets, briefs, production requirements, and timelines.",
+      "Cross-functional work across business, strategy, UX, product, engineering, analytics, creative, finance, and operations teams.",
+      "Regulated work across FDA, HIPAA, MLR, audit-ready review, evidence gaps, routing, and human oversight.",
+      "A Rutgers BA and a Raleigh base satisfy the degree and remote-work gates."
+    ],
+    "unsupportedRequirements": [
+      "Formal ownership of a mature product backlog, technical user stories, or acceptance criteria.",
+      "Named sprint planning, Scrum, release cadence, capacity planning, or dependency management.",
+      "Insurance product or insurance-industry experience.",
+      "Quarterly and annual product-value reporting tied to defined KPIs.",
+      "Ownership of enterprise architecture, privacy, or information-security standards."
+    ],
+    "actualMismatches": [
+      "The resume combines product strategy, UX, client leadership, and hands-on POC delivery rather than a conventional software Product Manager title.",
+      "The bachelor's degree is in Labor Studies and Employee Relations rather than Computer Science, Information Technology, or Business.",
+      "The public evidence is concentrated in healthcare, enterprise analytics, and AI products rather than insurance."
+    ],
+    "missingEvidence": [
+      "A Jira, Azure DevOps, or similar backlog showing feature, story, and acceptance-criteria ownership.",
+      "A named sprint-planning, release-management, or capacity-planning example.",
+      "Product KPIs reported on a quarterly or annual cadence.",
+      "A direct information-security or enterprise-architecture governance example.",
+      "An insurance product, policy, claims, underwriting, or distribution workflow."
+    ],
+    "coverLetterBridge": {
+      "status": "recommended",
+      "rationale": "We can make the case with a cover letter by connecting current end-to-end product ownership, seven-plus years of sponsor-facing client delivery, regulated governance, and business-to-engineering translation to Globe Life's accountable delivery role. The letter must address the missing formal backlog and sprint cadence, conventional Product Manager title history, and insurance background without implying any of them."
+    },
+    "recommendation": "Proceed as adjacent. Lead with end-to-end product ownership, sponsor relationships, enterprise scale, requirements translation, iterative delivery, and regulated governance. Do not claim formal Scrum ownership, insurance expertise, mature backlog leadership, quarterly KPI reporting, or information-security architecture."
+  },
+  "resume": {
+    "foundationId": "wally-mostafa-resume-2026-07-03",
+    "summary": "AI implementation and product strategy lead with 15 years across pharma, enterprise UX, client strategy, and regulated AI delivery. I turn ambiguous workflows into governed AI tools, demo-ready POCs, and build-ready product systems. My strength is bridging client translation, workflow design, model behavior, and adoption so teams can trust and use the product after the demo.",
+    "skills": [
+      {
+        "label": "AI Implementation & Workflow Design",
+        "description": "Governed LLM/VLM workflows, multimodal review, RAG/knowledge bases, prompt-defined criteria, model orchestration, and human review surfaces"
+      },
+      {
+        "label": "Product Strategy & POC Delivery",
+        "description": "Discovery, scoping, requirements, prototype validation, demo narratives, build-ready logic, and production handoff"
+      },
+      {
+        "label": "Regulated Healthcare & Client Delivery",
+        "description": "11 years across pharma/healthcare communications, FDA/HIPAA/MLR workflows, HCP/patient UX, client workshops, and stakeholder adoption"
+      },
+      {
+        "label": "Enterprise UX & Design Systems",
+        "description": "Team scaling (2 to 30), enterprise analytics, workflow UX, data visualization, component libraries, and accessibility (WCAG)"
+      }
+    ],
+    "roles": {
+      "hedgehox": [
+        "Secured an investor for proprietary Claims Detection software by building the functional POC, shaping the product story, and iterating with stakeholders",
+        "Designed Claims Detector workflows that identify promotional claims, surface evidence gaps, and pre-populate audit-ready annotations before MLR submission",
+        "Translated pharma agency needs into product requirements for MLR claim review, brief intake, scoping, review routing, submission capture, and FDA signal monitoring",
+        "Designed the full Xenagos Bio startup biopharma website from scratch, including investor-facing structure, scientific positioning, visual direction, and hidden design-system handoff",
+        "Built Scope Generator for pharma agency finance and operations teams, turning project inputs into budget-ready scopes, timelines, role-level resourcing, and cost breakdowns",
+        "Developed FDA Warning Tool concepts that connect warning-letter patterns to content-risk guidance for pharma teams"
+      ],
+      "one-block-away": [
+        "Build client-led AI POCs that turn unclear business questions into testable product surfaces, demo flows, and roadmap decisions",
+        "Built ListingPal's AI listing-generation POC and landing page, turning basic property inputs into listing copy, social posts, ad copy, styling direction, and MLS/SEO-ready language in under 90 seconds",
+        "Built WeReady's Bailey Intelligence dashboard, translating founder inputs, GitHub signals, source health, risk scoring, and evidence trails into startup-readiness workflows",
+        "Own product strategy, UX, AI workflow design, front-end build, backend logic, demo readiness, and client iteration from first ask through working prototype",
+        "Currently building the website and sponsor strategy for a Tunisia youth soccer program, positioning the project for player advancement, community support, and donor outreach"
+      ],
+      "kinesso": [
+        "Scaled product design from 2 to 30 people across the US and Poland for enterprise analytics used by 7,000+ users across 22 white-label brands",
+        "Led UX and design-system strategy with product and engineering for MIE data visualization, dashboard building, brand theming, and reusable analytics components",
+        "Built the Digital Experience Audit workflow for channel scoring, benchmarks, recommendations, visualization, and presentation-ready client outputs",
+        "Design-system and analytics work earned 5 Indigo Gold, 4 Indigo Silver, and Red Dot recognition"
+      ],
+      "omnicom": [
+        "Supported oncology accounts as a freelance UX designer, combining UX design and account-management experience to strengthen regulated healthcare work",
+        "Worked across account, strategy, creative, and delivery teams to translate brand goals into clearer user flows, content structure, and digital recommendations"
+      ],
+      "heartbeat": [
+        "Led UX research and experience strategy for pharma and healthcare work, translating stakeholder input, competitive audits, and user needs into digital product direction",
+        "Created journey maps, site maps, user flows, wireframes, and prototypes for patient, HCP, and internal brand-team experiences across regulated healthcare programs",
+        "Partnered with strategy, creative, account, and engineering teams to move stakeholder and user findings into prioritized, build-ready product and campaign experiences"
+      ],
+      "account-management": [
+        "7+ years managing Fortune 500 pharma and healthcare clients with $2M-$50M+ budgets across CNS/neurology, psychiatry, cardiovascular/metabolic, and sleep/wakefulness brands including NUVIGIL, Namenda XR, Lipitor, and Zoloft",
+        "One of two account consumer leads on FCB Health's largest pharma account across all verticals: TV, radio, digital, gaming, Times Square, unbranded campaigns, brand planning, and MLR review",
+        "Translated client and brand strategy into briefs, creative feedback, production requirements, priorities, timelines, and MLR-ready delivery across account, creative, UX, and development teams"
+      ]
+    },
+    "sourceBulletIds": {
+      "hedgehox": [
+        "hedgehox-01",
+        "hedgehox-02",
+        "hedgehox-03",
+        "hedgehox-04",
+        "hedgehox-05",
+        "hedgehox-06"
+      ],
+      "one-block-away": [
+        "one-block-away-01",
+        "one-block-away-02",
+        "one-block-away-03",
+        "one-block-away-04",
+        "one-block-away-05"
+      ],
+      "kinesso": [
+        "kinesso-01",
+        "kinesso-02",
+        "kinesso-03",
+        "kinesso-04"
+      ],
+      "omnicom": [
+        "omnicom-01",
+        "omnicom-02"
+      ],
+      "heartbeat": [
+        "heartbeat-01",
+        "heartbeat-02",
+        "heartbeat-03"
+      ],
+      "account-management": [
+        "account-management-01",
+        "account-management-02",
+        "account-management-03"
+      ]
+    }
+  },
+  "hero": {
+    "eyebrow": "Globe Life Product Manager II",
+    "tags": [
+      "Sponsor priorities to roadmap",
+      "Business & engineering alignment",
+      "Customer-led product delivery"
+    ],
+    "intro": "I fit Globe Life's Product Manager II role because I have spent my career turning stakeholder needs into clear work for product and delivery teams. In current roles, I take client questions from discovery through requirements, working prototypes, and roadmap decisions. Earlier, I supported enterprise analytics used by 7,000+ people across 22 brands and managed Fortune 500 stakeholders with $2M-$50M+ budgets. That mix helps me connect business priorities, user workflows, engineering handoff, governance, and product value."
+  },
+  "contact": {
+    "prompt": "Hiring a product manager who can turn sponsor priorities into clear product decisions and coordinated delivery? Email is the fastest way to reach me.",
+    "signoff": "Sponsor relationships · product decisions · technical delivery"
+  },
+  "copyReview": {
+    "humanizerVersion": "2.2.0",
+    "mode": "surface-only",
+    "status": "passed",
+    "reviewedAt": "2026-07-23T21:51:32.059Z",
+    "copySha256": "7d55d7e918244cc2ab1a1424d4b989136847b35d42d4b1d31b8d48e2f7a21259",
+    "preserved": [
+      "content",
+      "structure",
+      "claims",
+      "ending"
+    ],
+    "rewriteAuthorized": false,
+    "reviewMethod": "humanizer-skill",
+    "semanticPassAttested": true,
+    "staticChecksPassed": true,
+    "finalAntiAiPass": true,
+    "remainingTells": []
+  },
+  "constraints": {
+    "doNotClaim": [
+      "formal Scrum ownership",
+      "Jira backlog ownership",
+      "insurance product management",
+      "quarterly value reporting",
+      "product P&L ownership"
+    ],
+    "blockedTerms": [
+      "Certified Scrum Product Owner",
+      "insurance expert",
+      "owned sprint planning",
+      "managed release cadence",
+      "information-security architect"
+    ]
+  },
+  "privacy": {
+    "publicSafe": true,
+    "notes": "Contains only the public job description and sanitized resume and portfolio evidence. It excludes recruiter contact details, application answers, compensation boundaries, and private eligibility information."
+  },
+  "qa": {
+    "status": "qa-passed",
+    "builtAt": "2026-07-23T21:54:37.092Z",
+    "configInputSha256": "0c63cfdaf7daeb034d7417049949ef214f4052afb44a9abccfdd1ef7bf15ff6d",
+    "sourceResumeSha256": "95b0b7a29c75c614e7e8737765f55b5148b4de714ace4cdcf93c68fc4ee32a90",
+    "resumeFoundation": {
+      "id": "wally-mostafa-resume-2026-07-03",
+      "sourcePdfSha256": "f9b05b6c3c134262b1af6c5734363daf4385cf335407a139779a37d138adf1aa"
+    },
+    "artifactHashes": {
+      "routeSha256": "2a0a7d293ee0d63dc340d4d4ecabe8c2ab18ac775a4d1cef007dd753cb2e27ee",
+      "resumePdfSha256": "e6227cab2169d77382d95fc0e320e9124ffbb9ce073b0505e468995fa2f0bac6",
+      "scopedProjectSha256": {}
+    },
+    "renderer": {
+      "browser": {
+        "name": "chrome-headless-shell",
+        "version": "Google Chrome for Testing 149.0.7827.55"
+      },
+      "htmlPath": "tmp/tailored-resumes/globe-life-product-manager-ii.html",
+      "pdfPath": "output/pdf/Wally-Mostafa-Globe-Life-Product-Manager-II-Resume.pdf"
+    },
+    "ats": {
+      "ok": true,
+      "pdfPath": "output/pdf/Wally-Mostafa-Globe-Life-Product-Manager-II-Resume.pdf",
+      "pageCount": 2,
+      "fileSize": 142626,
+      "annotations": [
+        {
+          "page": 1,
+          "uri": "mailto:wmostafa12@gmail.com"
+        },
+        {
+          "page": 1,
+          "uri": "https://linkedin.com/in/wallymo"
+        },
+        {
+          "page": 1,
+          "uri": "https://wallymo.github.io/globe-life-product-manager-ii/"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/6748"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/4629"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.red-dot.org/project/dxa-digital-experience-audit-55219"
+        }
+      ],
+      "coverage": [
+        {
+          "id": "intake-prioritization-roadmap",
+          "requirement": "Partner with business sponsors on product intake, prioritization, backlog refinement, and roadmap development.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "product strategy",
+            "requirements",
+            "roadmap decisions",
+            "priorities"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "sponsor-and-stakeholder-relationships",
+          "requirement": "Build consultative relationships across business sponsors, stakeholders, engineering, and delivery leaders.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "stakeholders",
+            "client strategy",
+            "engineering teams",
+            "delivery teams"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "agile-sprint-and-mvp-delivery",
+          "requirement": "Coordinate Agile teams on sprint definition, backlog prioritization, MVP releases, dependencies, and roadblocks.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "iterating",
+            "working prototype",
+            "engineering teams",
+            "production handoff"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "solution-options-and-technical-translation",
+          "requirement": "Engage stakeholders, architects, and engineering teams to develop solution options and explain technical information clearly.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "product strategy",
+            "product requirements",
+            "engineering teams",
+            "build-ready"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "accountable-delivery-and-estimates",
+          "requirement": "Act as an accountable delivery leader who coordinates estimates, capacity, multiple initiatives, deadlines, and commitments.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "scoping",
+            "timelines",
+            "resourcing",
+            "delivery"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "iterative-feedback-and-continuous-improvement",
+          "requirement": "Use iterative implementation and stakeholder feedback to improve products and delivery processes.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "client iteration",
+            "prototype validation",
+            "stakeholder input",
+            "product direction"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "governance-privacy-security",
+          "requirement": "Bridge business and IT while respecting data, privacy, architecture, information security, governance, and standards.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "FDA",
+            "HIPAA",
+            "audit-ready",
+            "human review"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "value-delivery-and-kpis",
+          "requirement": "Maintain roadmaps using KPIs and summarize quarterly and annual value delivery for product investment decisions.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "enterprise analytics",
+            "benchmarks",
+            "investor",
+            "product story"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "customer-centric-product-development",
+          "requirement": "Translate user needs into clear technical stories and build customer-centered products.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "user needs",
+            "requirements",
+            "client-led",
+            "product surfaces"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "insurance-industry-knowledge",
+          "requirement": "Bring insurance industry knowledge as a preferred qualification.",
+          "priority": "preferred",
+          "evidenceStatus": "none",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "insurance industry"
+          ]
+        }
+      ],
+      "failures": [],
+      "warnings": []
+    },
+    "humanizer": {
+      "status": "passed",
+      "version": "2.2.0",
+      "mode": "surface-only",
+      "reviewedAt": "2026-07-23T21:51:32.059Z",
+      "copySha256": "7d55d7e918244cc2ab1a1424d4b989136847b35d42d4b1d31b8d48e2f7a21259",
+      "reviewMethod": "humanizer-skill",
+      "semanticPassAttested": true,
+      "staticChecksPassed": true
+    },
+    "route": {
+      "viewports": [
+        {
+          "name": "desktop",
+          "screenshot": "../../private/tmp/globe-life-pm2.Fn56zq/tmp/qa/globe-life-product-manager-ii/desktop.png",
+          "errors": []
+        },
+        {
+          "name": "mobile",
+          "screenshot": "../../private/tmp/globe-life-pm2.Fn56zq/tmp/qa/globe-life-product-manager-ii/mobile.png",
+          "errors": []
+        }
+      ],
+      "errors": []
+    }
+  }
+}
