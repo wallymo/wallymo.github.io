@@ -1,0 +1,571 @@
+{
+  "workflowVersion": 2,
+  "contractRevision": 4,
+  "slug": "ai-conversation-intelligence-product-marketing",
+  "roleTitle": "AI Conversation Intelligence Product Marketing Manager",
+  "artifactStem": "AI-Conversation-Intelligence-Product-Marketing-Manager",
+  "fitClass": "adjacent",
+  "routeMode": "canonical-projects",
+  "selectedProjects": [
+    "project-02.html",
+    "project-06.html",
+    "project-01.html"
+  ],
+  "job": {
+    "company": "Confidential AI Conversation Intelligence Company",
+    "roleTitle": "Product Marketing Manager",
+    "sourceChannel": "chat-pasted-jd",
+    "dateCaptured": "2026-07-23",
+    "location": "United States - Remote",
+    "rawJd": "About the job\nLocation: United States (remote)\nWork Model: Fully remote\nIndustry: AI conversation intelligence (B2B SaaS)\nCompensation: $120K-$180K base (up to $200K for exceptional candidates)\n\nAbout the Company\n\nOur partner is a fast-scaling B2B SaaS company building AI-powered conversation intelligence for revenue teams. They recently raised a $30M round and are growing 10-50% month over month, best in class for B2B SaaS, with strong runway. The team is around 40 people, with a small internal growth team that this role can lean on for execution support.\n\nThe Opportunity\n\nThis is a hands-on product marketing role focused on owning the distribution and storytelling behind every product launch. You will act as the product manager for the go-to-market side of new features and releases, partnering closely with the product team to understand what is shipping and when, then building and executing the plans to get loud about it.\n\nThe role blends strategic, long-lead launch campaigns with fast tactical updates. One week you might be orchestrating a major launch with influencers, creative, and a hype campaign, and the next you might be shipping a customer newsletter or building sales enablement. You will report directly to a senior leader for the first 6-12 months, with a clear path to grow into a head of growth marketing role and build your own team.\n\nResponsibilities\n\nOwn the distribution, messaging, and storytelling for product launches and feature releases\nWork cross-functionally with product to align on launch timelines and narratives\nPlan and execute marketing moments across channels, including social, creative assets, influencer partnerships, and launch campaigns\nBuild and manage sales enablement materials, including battle cards\nOwn the customer newsletter and ongoing product update communications\nTalk to customers and beta testers to build compelling product and customer narratives\nUse launches as marketing moments to drive top-of-funnel awareness and brand visibility\n\nRequirements\n\nA few years of product marketing experience at a strong startup, or a marketing generalist background at an early-stage company\nHands-on and scrappy, with a bias toward execution over pure strategy\nStrong storytelling skills and the ability to translate product into compelling narratives\nComfortable working cross-functionally with product, sales, and growth\nBonus: experience demonstrating clear, individual hands-on impact at a high-growth company"
+  },
+  "classification": {
+    "targetLane": "hands-on-b2b-saas-product-marketing-and-ai-product-launches",
+    "evidenceMode": "balanced",
+    "primarySource": "The resume carries the fit call through early-stage founder work, product strategy, product storytelling, integrated campaign delivery, client discovery, and cross-functional leadership. It does not show a dedicated product marketing title or repeatable ownership of a startup launch calendar.",
+    "supportingSource": "The portfolio shows working AI products, customer-led POCs, the ListingPal landing page and campaign story, presentation-ready product narratives, and a pharma launch workflow reduced from five days to two.",
+    "hardGateStatus": "pass",
+    "hardGates": [
+      {
+        "gate": "United States remote location",
+        "status": "pass",
+        "evidence": "The public resume lists Raleigh, North Carolina, and the role is open to candidates working remotely in the United States."
+      },
+      {
+        "gate": "Startup product marketing experience or early-stage marketing-generalist experience",
+        "status": "pass",
+        "evidence": "The resume documents founder-level early-stage work across product strategy, customer discovery, POC delivery, landing-page storytelling, campaign content, demonstrations, and client iteration. It does not claim a formal product marketing title."
+      },
+      {
+        "gate": "Hands-on product storytelling and cross-functional execution",
+        "status": "pass",
+        "evidence": "Direct proof includes an investor-winning POC and demo story, ListingPal product and landing-page work, integrated campaign delivery, product narratives, and work across product, account, strategy, creative, UX, and engineering."
+      }
+    ]
+  },
+  "requirements": [
+    {
+      "id": "launch-messaging-and-storytelling",
+      "text": "Own the distribution, messaging, and storytelling for product launches and feature releases.",
+      "priority": "core",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Built a functional Claims Detector POC, shaped the investor demo story, and iterated with investors before securing an investor.",
+        "Built ListingPal's product flow and landing page, including listing copy, social posts, ad copy, beta positioning, and a clear demo path.",
+        "The public evidence does not show repeatable ownership of a product marketing launch calendar or launch distribution plan."
+      ],
+      "resumeTerms": [
+        "product storytelling",
+        "product launches",
+        "demo story",
+        "social posts",
+        "ad copy"
+      ]
+    },
+    {
+      "id": "product-launch-planning",
+      "text": "Partner with product on launch timelines and narratives, then execute coordinated marketing moments around each release.",
+      "priority": "core",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Owns product strategy, UX, AI workflow design, front-end build, backend logic, demo readiness, and client iteration for early-stage POCs.",
+        "Seven-plus years of agency account leadership covered briefs, creative feedback, production requirements, timelines, budgets, and integrated campaign delivery.",
+        "Echo submission automation helped cut a planned five-day pharma launch to two days, but that proof is launch operations rather than launch marketing ownership."
+      ],
+      "resumeTerms": [
+        "product strategy",
+        "timelines",
+        "integrated campaigns",
+        "cross-functional delivery"
+      ]
+    },
+    {
+      "id": "multi-channel-campaigns",
+      "text": "Plan and execute launch campaigns across social, creative assets, influencer partnerships, and other channels.",
+      "priority": "core",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "One of two consumer account leads on FCB Health's largest pharma account across TV, radio, digital, gaming, Times Square, and unbranded campaigns.",
+        "ListingPal turns product inputs into listing copy, social posts, ad copy, styling direction, and MLS and SEO-ready language.",
+        "Direct ownership of influencer partnerships and hype campaigns is not documented."
+      ],
+      "resumeTerms": [
+        "integrated campaigns",
+        "social posts",
+        "ad copy",
+        "brand planning"
+      ]
+    },
+    {
+      "id": "sales-enablement",
+      "text": "Build and manage sales enablement materials, including battle cards.",
+      "priority": "core",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Direct evidence includes client briefs, presentations, demo narratives, product walkthroughs, and presentation-ready audit outputs.",
+        "The ListingPal landing page turns a working product into a clear story and demo path for prospective users.",
+        "Formal battle-card ownership and a managed sales enablement library are not documented."
+      ],
+      "resumeTerms": [
+        "client briefs",
+        "presentations",
+        "demo narratives",
+        "product walkthroughs"
+      ]
+    },
+    {
+      "id": "customer-communications",
+      "text": "Own the customer newsletter and ongoing product update communications.",
+      "priority": "core",
+      "evidenceStatus": "none",
+      "evidence": [
+        "The resume proves sustained client communication, campaign delivery, presentations, and product demonstrations.",
+        "Direct ownership of a customer newsletter, release notes, or an ongoing product-update cadence is not documented."
+      ],
+      "resumeTerms": [
+        "client communication",
+        "product demonstrations"
+      ]
+    },
+    {
+      "id": "customer-and-beta-narratives",
+      "text": "Talk to customers and beta testers to build product and customer narratives.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Client-led POCs run from unclear business questions through working product surfaces, demonstrations, feedback, and roadmap decisions.",
+        "ListingPal and WeReady both turned founder or customer inputs into products people could inspect, test, and respond to.",
+        "Formal ownership of a structured beta program is not documented."
+      ],
+      "resumeTerms": [
+        "client discovery",
+        "client iteration",
+        "customer narratives",
+        "roadmap decisions"
+      ]
+    },
+    {
+      "id": "top-of-funnel-awareness",
+      "text": "Use launches to drive top-of-funnel awareness and brand visibility.",
+      "priority": "core",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Built public landing pages, integrated campaigns, product stories, and award-submission materials designed to make complex products easier to understand.",
+        "The resume and portfolio do not document launch-attributed awareness, pipeline, conversion, or brand-lift metrics."
+      ],
+      "resumeTerms": [
+        "landing page",
+        "product story",
+        "brand planning"
+      ]
+    },
+    {
+      "id": "hands-on-high-growth-impact",
+      "text": "Work hands-on in an early-stage environment and show clear individual impact in a fast-growing company.",
+      "priority": "preferred",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Founder work spans product strategy, UX, AI workflow design, front-end build, backend logic, demonstrations, landing pages, and client iteration.",
+        "At Kinesso, scaled product design from two to 30 for enterprise analytics used by more than 7,000 users across 22 white-label brands.",
+        "The public evidence does not tie this impact to product marketing metrics at a high-growth startup."
+      ],
+      "resumeTerms": [
+        "hands-on",
+        "early-stage",
+        "product strategy",
+        "7,000+ users",
+        "22 white-label brands"
+      ]
+    }
+  ],
+  "fitGate": {
+    "supportedOverlap": [
+      "Founder-level early-stage execution across product strategy, customer discovery, working AI POCs, demonstrations, landing pages, campaign content, and client iteration.",
+      "Seven-plus years turning brand and client strategy into briefs, messaging inputs, creative feedback, integrated campaigns, timelines, budgets, and delivery across multiple channels.",
+      "Direct product-story evidence from an investor-winning demo, the ListingPal product and landing page, presentation-ready audit outputs, and an award-submission video.",
+      "Cross-functional leadership across product, account, strategy, creative, UX, engineering, finance, operations, and distributed teams.",
+      "Clear hands-on impact across AI product builds, a launch workflow reduced from five days to two, product design growth from two to 30, and enterprise products used by more than 7,000 people."
+    ],
+    "unsupportedRequirements": [
+      "A dedicated product marketing title and repeatable ownership of a startup product-launch calendar are not documented.",
+      "Formal battle-card ownership and management of a sales enablement library are not documented.",
+      "Customer newsletter ownership and ongoing release-communication cadence are not documented.",
+      "Influencer partnerships and hype-campaign management are not documented.",
+      "Launch-attributed top-of-funnel, pipeline, conversion, or brand-lift metrics are not documented."
+    ],
+    "actualMismatches": [
+      "The recent documented operating center is AI implementation, product strategy, UX, and client delivery rather than dedicated B2B SaaS product marketing."
+    ],
+    "missingEvidence": [
+      "Named product launches with messaging strategy, channel plan, launch calendar, and measured awareness or pipeline results.",
+      "Examples of battle cards, customer newsletters, release notes, and a managed sales enablement system.",
+      "Influencer sourcing, partnership management, and campaign results.",
+      "Direct conversation-intelligence or revenue-tech domain experience."
+    ],
+    "coverLetterBridge": {
+      "status": "recommended",
+      "rationale": "We can make the case with a cover letter by connecting early-stage founder execution, product narratives and demos, Fortune 500 campaign delivery, customer discovery, and cross-functional product leadership to a hands-on launch role. The letter must address the missing direct history in battle cards, customer newsletters, influencer programs, launch-attributed growth metrics, and conversation intelligence."
+    },
+    "recommendation": "Proceed as adjacent. Lead with the early-stage marketing-generalist path, hands-on AI product delivery, product storytelling, integrated campaign experience, and customer-led iteration. Do not imply a formal product marketing title, owned battle cards or newsletters, influencer management, or measured top-of-funnel launch results."
+  },
+  "resume": {
+    "foundationId": "wally-mostafa-resume-2026-07-03",
+    "summary": "AI implementation and product strategy lead with 15 years across pharma, enterprise UX, client strategy, and regulated AI delivery. I turn ambiguous workflows into governed AI tools, demo-ready POCs, and build-ready product systems. My strength is bridging client translation, workflow design, model behavior, and adoption so teams can trust and use the product after the demo.",
+    "skills": [
+      {
+        "label": "AI Implementation & Workflow Design",
+        "description": "Governed LLM/VLM workflows, multimodal review, RAG/knowledge bases, prompt-defined criteria, model orchestration, and human review surfaces"
+      },
+      {
+        "label": "Product Strategy & POC Delivery",
+        "description": "Discovery, scoping, requirements, prototype validation, demo narratives, build-ready logic, and production handoff"
+      },
+      {
+        "label": "Regulated Healthcare & Client Delivery",
+        "description": "11 years across pharma/healthcare communications, FDA/HIPAA/MLR workflows, HCP/patient UX, client workshops, and stakeholder adoption"
+      },
+      {
+        "label": "Enterprise UX & Design Systems",
+        "description": "Team scaling (2 to 30), enterprise analytics, workflow UX, data visualization, component libraries, and accessibility (WCAG)"
+      }
+    ],
+    "roles": {
+      "hedgehox": [
+        "Secured an investor for proprietary Claims Detection software by building the functional POC, shaping the demo story, and iterating with investors",
+        "Designed Claims Detector workflows that identify promotional claims, surface evidence gaps, and pre-populate audit-ready annotations before MLR submission",
+        "Converted pharma agency needs into AI tools for MLR claim review, brief intake, scoping, review routing, submission capture, and FDA signal monitoring",
+        "Built Echo submission automation for pharma launches, moving one route from eight hours to ten minutes and helping cut a planned five-day launch to two days",
+        "Designed the full Xenagos Bio startup biopharma website from scratch, including investor-facing structure, scientific positioning, visual direction, and hidden design-system handoff",
+        "Built Scope Generator for pharma agency finance and operations teams to manage regional rate cards, brands, sub-brands, and natural-language scope changes",
+        "Developed FDA Warning Tool concepts that connect warning-letter patterns to content-risk guidance for pharma teams"
+      ],
+      "one-block-away": [
+        "Build client-led AI POCs that turn unclear business questions into testable product surfaces, demo flows, and roadmap decisions",
+        "Built ListingPal's AI listing-generation POC and landing page, turning basic property inputs into listing copy, social posts, ad copy, styling direction, and MLS/SEO-ready language in under 90 seconds",
+        "Built WeReady's Bailey Intelligence dashboard, translating founder inputs, GitHub signals, source health, risk scoring, and evidence trails into startup-readiness workflows",
+        "Own product strategy, UX, AI workflow design, front-end build, backend logic, demo readiness, and client iteration from first ask through working prototype",
+        "Currently building the website and sponsor strategy for a Tunisia youth soccer program, positioning the project for player advancement, community support, and donor outreach"
+      ],
+      "kinesso": [
+        "Scaled product design from 2 to 30 people across the US and Poland for enterprise analytics used by 7,000+ users across 22 white-label brands",
+        "Led UX and design-system strategy for MIE data visualization, dashboard building, brand theming, and reusable analytics components",
+        "Built the Digital Experience Audit workflow for channel scoring, benchmarks, recommendations, visualization, and presentation-ready client outputs",
+        "Wrote and directed the award-submission video that explained the Digital Experience Audit product story; the work earned Red Dot and Indigo recognition",
+        "Design-system and analytics work earned 5 Indigo Gold, 4 Indigo Silver, and Red Dot recognition"
+      ],
+      "omnicom": [
+        "Supported oncology accounts as a freelance UX designer, combining UX design and account-management experience to strengthen regulated healthcare work",
+        "Championed UX best practices across account, strategy, creative, and delivery conversations, translating brand goals into clearer user flows, content structure, and digital recommendations"
+      ],
+      "heartbeat": [
+        "Led UX research and experience strategy for pharma and healthcare work, translating stakeholder input, competitive audits, and user needs into digital product direction",
+        "Created journey maps, site maps, user flows, wireframes, and prototypes for patient, HCP, and internal brand-team experiences across regulated healthcare programs",
+        "Partnered with strategy, creative, account, and engineering teams to move UX recommendations from research findings into build-ready product and campaign experiences"
+      ],
+      "account-management": [
+        "7+ years managing Fortune 500 pharma and healthcare clients with USD 2M-50M+ budgets across CNS/neurology, psychiatry, cardiovascular/metabolic, and sleep/wakefulness brands including NUVIGIL, Namenda XR, Lipitor, and Zoloft",
+        "One of two account consumer leads on FCB Health's largest pharma account across all verticals: TV, radio, digital, gaming, Times Square, unbranded campaigns, brand planning, and MLR review",
+        "Translated client and brand strategy into briefs, messaging inputs, creative feedback, production requirements, timelines, and MLR-ready deliverables across account, creative, UX, and development teams"
+      ]
+    },
+    "sourceBulletIds": {
+      "hedgehox": [
+        "hedgehox-01",
+        "hedgehox-02",
+        "hedgehox-03",
+        "addition:hedgehox-echo-launch",
+        "hedgehox-04",
+        "hedgehox-05",
+        "hedgehox-06"
+      ],
+      "one-block-away": [
+        "one-block-away-01",
+        "one-block-away-02",
+        "one-block-away-03",
+        "one-block-away-04",
+        "one-block-away-05"
+      ],
+      "kinesso": [
+        "kinesso-01",
+        "kinesso-02",
+        "kinesso-03",
+        "addition:kinesso-award-video",
+        "kinesso-04"
+      ],
+      "omnicom": [
+        "omnicom-01",
+        "omnicom-02"
+      ],
+      "heartbeat": [
+        "heartbeat-01",
+        "heartbeat-02",
+        "heartbeat-03"
+      ],
+      "account-management": [
+        "account-management-01",
+        "account-management-02",
+        "account-management-03"
+      ]
+    }
+  },
+  "hero": {
+    "eyebrow": "Product Marketing · AI Conversation Intelligence",
+    "tags": [
+      "AI product storytelling",
+      "Customer-led product work",
+      "Hands-on execution"
+    ],
+    "intro": "I turn technical products into stories people can understand, test, and act on. I have built early-stage AI POCs and demos, created ListingPal's landing page and campaign story, and led integrated client work across brand, creative, product, and engineering teams. That mix fits a hands-on product marketer who can stay close to the roadmap and ship the message with the release."
+  },
+  "contact": {
+    "prompt": "Need a hands-on product marketer who can turn each release into a clear customer story? Email is the fastest way to reach me.",
+    "signoff": "AI product storytelling · customer discovery · hands-on delivery"
+  },
+  "copyReview": {
+    "humanizerVersion": "2.2.0",
+    "mode": "surface-only",
+    "status": "passed",
+    "reviewedAt": "2026-07-23T20:38:17.191Z",
+    "copySha256": "f5738536aeb1f12bc77dd978e8d5155c7409c5879c6140c0fa245a28f7735b50",
+    "preserved": [
+      "content",
+      "structure",
+      "claims",
+      "ending"
+    ],
+    "rewriteAuthorized": false,
+    "reviewMethod": "humanizer-skill",
+    "semanticPassAttested": true,
+    "staticChecksPassed": true,
+    "finalAntiAiPass": true,
+    "remainingTells": []
+  },
+  "constraints": {
+    "doNotClaim": [
+      "owned the customer newsletter",
+      "built battle cards",
+      "managed influencer partnerships",
+      "owned top-of-funnel growth",
+      "worked as a product marketing manager at a startup",
+      "conversation intelligence experience"
+    ],
+    "blockedTerms": [
+      "owned customer newsletter",
+      "built battle cards",
+      "managed influencer partnerships",
+      "owned top-of-funnel",
+      "conversation intelligence experience"
+    ]
+  },
+  "privacy": {
+    "publicSafe": true,
+    "notes": "Contains only the public job description and sanitized evidence. It does not include recruiter contact details, application answers, private compensation boundaries, or private eligibility information."
+  },
+  "qa": {
+    "status": "qa-passed",
+    "builtAt": "2026-07-23T20:38:21.052Z",
+    "configInputSha256": "4fae31508d686f5c2a2fcbf47e97c73f50fe33f9a1403068fe1a92a94adbca8a",
+    "sourceResumeSha256": "b93b6868e58beca98f541accbd52429e2e932902448cc56741c3a88ee36cacd1",
+    "resumeFoundation": {
+      "id": "wally-mostafa-resume-2026-07-03",
+      "sourcePdfSha256": "f9b05b6c3c134262b1af6c5734363daf4385cf335407a139779a37d138adf1aa"
+    },
+    "artifactHashes": {
+      "routeSha256": "f2f579231779c442f2034749b3a240c0a1929b3f16ba4473a5c08115b19a2ae1",
+      "resumePdfSha256": "6d6b5e08842efd21fa52023a4a188f6df6fa9ef45d00d03172ae216d282e6f21",
+      "scopedProjectSha256": {}
+    },
+    "renderer": {
+      "browser": {
+        "name": "chrome-headless-shell",
+        "version": "Google Chrome for Testing 149.0.7827.55"
+      },
+      "htmlPath": "tmp/tailored-resumes/ai-conversation-intelligence-product-marketing.html",
+      "pdfPath": "output/pdf/Wally-Mostafa-AI-Conversation-Intelligence-Product-Marketing-Manager-Resume.pdf"
+    },
+    "ats": {
+      "ok": true,
+      "pdfPath": "output/pdf/Wally-Mostafa-AI-Conversation-Intelligence-Product-Marketing-Manager-Resume.pdf",
+      "pageCount": 2,
+      "fileSize": 137938,
+      "annotations": [
+        {
+          "page": 1,
+          "uri": "mailto:wmostafa12@gmail.com"
+        },
+        {
+          "page": 1,
+          "uri": "https://linkedin.com/in/wallymo"
+        },
+        {
+          "page": 1,
+          "uri": "https://wallymo.github.io/ai-conversation-intelligence-product-marketing/"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/6748"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/4629"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.red-dot.org/project/dxa-digital-experience-audit-55219"
+        }
+      ],
+      "coverage": [
+        {
+          "id": "launch-messaging-and-storytelling",
+          "requirement": "Own the distribution, messaging, and storytelling for product launches and feature releases.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "demo story",
+            "social posts",
+            "ad copy"
+          ],
+          "missingTerms": [
+            "product storytelling",
+            "product launches"
+          ]
+        },
+        {
+          "id": "product-launch-planning",
+          "requirement": "Partner with product on launch timelines and narratives, then execute coordinated marketing moments around each release.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "product strategy",
+            "timelines"
+          ],
+          "missingTerms": [
+            "integrated campaigns",
+            "cross-functional delivery"
+          ]
+        },
+        {
+          "id": "multi-channel-campaigns",
+          "requirement": "Plan and execute launch campaigns across social, creative assets, influencer partnerships, and other channels.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "social posts",
+            "ad copy",
+            "brand planning"
+          ],
+          "missingTerms": [
+            "integrated campaigns"
+          ]
+        },
+        {
+          "id": "sales-enablement",
+          "requirement": "Build and manage sales enablement materials, including battle cards.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "demo narratives"
+          ],
+          "missingTerms": [
+            "client briefs",
+            "presentations",
+            "product walkthroughs"
+          ]
+        },
+        {
+          "id": "customer-communications",
+          "requirement": "Own the customer newsletter and ongoing product update communications.",
+          "priority": "core",
+          "evidenceStatus": "none",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "client communication",
+            "product demonstrations"
+          ]
+        },
+        {
+          "id": "customer-and-beta-narratives",
+          "requirement": "Talk to customers and beta testers to build product and customer narratives.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "client iteration",
+            "roadmap decisions"
+          ],
+          "missingTerms": [
+            "client discovery",
+            "customer narratives"
+          ]
+        },
+        {
+          "id": "top-of-funnel-awareness",
+          "requirement": "Use launches to drive top-of-funnel awareness and brand visibility.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "landing page",
+            "product story",
+            "brand planning"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "hands-on-high-growth-impact",
+          "requirement": "Work hands-on in an early-stage environment and show clear individual impact in a fast-growing company.",
+          "priority": "preferred",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "product strategy",
+            "7,000+ users",
+            "22 white-label brands"
+          ],
+          "missingTerms": [
+            "hands-on",
+            "early-stage"
+          ]
+        }
+      ],
+      "failures": [],
+      "warnings": [
+        "launch-messaging-and-storytelling: supported core language missing from the PDF: product storytelling, product launches",
+        "product-launch-planning: supported core language missing from the PDF: integrated campaigns, cross-functional delivery",
+        "multi-channel-campaigns: supported core language missing from the PDF: integrated campaigns",
+        "sales-enablement: supported core language missing from the PDF: client briefs, presentations, product walkthroughs",
+        "customer-and-beta-narratives: supported core language missing from the PDF: client discovery, customer narratives"
+      ]
+    },
+    "humanizer": {
+      "status": "passed",
+      "version": "2.2.0",
+      "mode": "surface-only",
+      "reviewedAt": "2026-07-23T20:38:17.191Z",
+      "copySha256": "f5738536aeb1f12bc77dd978e8d5155c7409c5879c6140c0fa245a28f7735b50",
+      "reviewMethod": "humanizer-skill",
+      "semanticPassAttested": true,
+      "staticChecksPassed": true
+    },
+    "route": {
+      "viewports": [
+        {
+          "name": "desktop",
+          "screenshot": "tmp/qa/ai-conversation-intelligence-product-marketing/desktop.png",
+          "errors": []
+        },
+        {
+          "name": "mobile",
+          "screenshot": "tmp/qa/ai-conversation-intelligence-product-marketing/mobile.png",
+          "errors": []
+        }
+      ],
+      "errors": []
+    }
+  }
+}

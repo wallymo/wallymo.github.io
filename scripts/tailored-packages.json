@@ -187,6 +187,26 @@
       }
     },
     {
+      "workflowVersion": 2,
+      "slug": "ai-conversation-intelligence-product-marketing",
+      "roleTitle": "AI Conversation Intelligence Product Marketing Manager",
+      "artifactStem": "AI-Conversation-Intelligence-Product-Marketing-Manager",
+      "configPath": "scripts/packages/ai-conversation-intelligence-product-marketing.json",
+      "targetLane": "hands-on-b2b-saas-product-marketing-and-ai-product-launches",
+      "evidenceMode": "balanced",
+      "fitClass": "adjacent",
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-02.html",
+        "project-06.html",
+        "project-01.html"
+      ],
+      "resumePdfPath": "output/pdf/Wally-Mostafa-AI-Conversation-Intelligence-Product-Marketing-Manager-Resume.pdf",
+      "publishStatus": "local-only",
+      "qaStatus": "qa-passed",
+      "builtAt": "2026-07-23T20:38:21.052Z"
+    },
+    {
       "slug": "ai-customer-success-ops-builder",
       "roleTitle": "AI-Native Customer Success Operations Builder",
       "fitClass": "unclassified",
