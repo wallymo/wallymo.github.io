@@ -1557,6 +1557,27 @@
     },
     {
       "workflowVersion": 2,
+      "slug": "ox-director-user-experience",
+      "roleTitle": "OX Director, User Experience",
+      "artifactStem": "OX-Director-User-Experience",
+      "configPath": "scripts/packages/ox-director-user-experience.json",
+      "targetLane": "agency-ux-direction-and-service-design",
+      "evidenceMode": "portfolio-primary",
+      "fitClass": "adjacent",
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-04.html",
+        "project-03.html",
+        "project-06.html",
+        "project-07.html"
+      ],
+      "resumePdfPath": "output/pdf/Wally-Mostafa-OX-Director-User-Experience-Resume.pdf",
+      "publishStatus": "local-only",
+      "qaStatus": "qa-passed",
+      "builtAt": "2026-07-23T03:54:38.044Z"
+    },
+    {
+      "workflowVersion": 2,
       "slug": "playlist-senior-product-manager-consumer-platform",
       "roleTitle": "Playlist Senior Product Manager, Consumer Platform",
       "artifactStem": "Playlist-Senior-Product-Manager-Consumer-Platform",

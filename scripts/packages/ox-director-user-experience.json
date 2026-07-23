@@ -1,0 +1,595 @@
+{
+  "workflowVersion": 2,
+  "contractRevision": 3,
+  "slug": "ox-director-user-experience",
+  "roleTitle": "OX Director, User Experience",
+  "artifactStem": "OX-Director-User-Experience",
+  "fitClass": "adjacent",
+  "routeMode": "canonical-projects",
+  "selectedProjects": [
+    "project-04.html",
+    "project-03.html",
+    "project-06.html",
+    "project-07.html"
+  ],
+  "job": {
+    "company": "Office of Experience (OX)",
+    "roleTitle": "Director, User Experience",
+    "sourceChannel": "pasted-job-description",
+    "dateCaptured": "2026-07-22",
+    "location": "Chicago / Remote",
+    "atsVendor": "unknown",
+    "rawJd": "Job Title: Director, User Experience. About OX: The Office of Experience (OX) is a full-service digital agency helping companies excel at every moment of interface they have with their customers. OX's human-centered philosophy and multidisciplinary approach integrate strategy, design and technology to help organizations reinvent their business and rapidly bring new experiences, products and messages to market. In an era of unprecedented disruption, OX is built to transform. Position Description: The Director, User Experience is a critical role in the organization bringing in a unique blend of user insights, client understanding, and skill for the creation of transformative experiences for our clients and their customers. As a User Experience Director you will have the opportunity to participate in all aspects of a project and lead the UX effort and work in collaboration with other leads of the team, including design leads, content strategy leads, project managers, researchers and others. You will have the opportunity to lead other UX members of the team. You will receive and gain customer insights from primary and secondary research, and apply this knowledge in the creation of site architectures, user flows, and ultimately the service and product design experiences you will design and prototype. Responsibilities and Duties: Be accountable for the execution and quality of deliverables of cross-functional teams, and show ability to frame and position the intent and content of deliverables to a diverse group of stakeholders. Mentor UX team members toward top performance and help them track toward long-term career goals. Partner with client strategy, design, content, and develop teams on UI/UX roadmaps. Meet with key leaders and stakeholders to understand business goals, target audience, consumer journeys and other factors that will impact that user experience approach. Conduct site audits and best-in-class industry scans to evaluate current state experiences of our clients and the industry as a whole. Lead wireframe and prototype creation through all phases of a project, from concept through design and development. Create a deep understanding and empathy for our customers across diverse audiences, including designers, developers, client strategists, and business leaders. Lead the advancement of the UX practice at OX, staying knowledgeable about trends and tools of the trade; occasionally contribute thought leadership to the organization. Coordinate on ensuring we meet requirements for accessibility. Other duties as assigned by your manager. Required Experience: 10+ years of in-depth knowledge and experience of Interaction Design and Service Design across varied users, business problems, and devices. Prior experience leading UX projects and other team members. Ability to learn new software quickly; experience with Google G Suite, Figma, Sketch, InVision, Axure, Confluence, Validately, JIRA, Microsoft Office, Adobe Creative Suite is a plus. Expertise with driving and applying user-centered design processes. Accustomed to working collaboratively with customers and cross-functional team members. Beginning to develop an area of specialization within the greater design landscape and willingness to develop a deeper understanding of User Research and Strategy, Visual Design, Service Design, and Content Development. Expertise creating interaction models, flows, and wireframes. Advanced knowledge of rapid prototyping methods, ranging from paper sketching to digital prototypes. Passion and commitment for great design. Experience working in an agile environment. Location: Chicago / Remote."
+  },
+  "classification": {
+    "targetLane": "agency-ux-direction-and-service-design",
+    "evidenceMode": "portfolio-primary",
+    "primarySource": "portfolio",
+    "supportingSource": "resume",
+    "hardGateStatus": "pass",
+    "hardGates": [
+      {
+        "gate": "Senior interaction and service-design experience across varied users, business problems, and devices",
+        "status": "pass",
+        "evidence": "The portfolio documents user research, journey maps, site maps, user flows, wireframes, prototype testing, responsive experiences, enterprise systems, and service workflows. The resume shows nearly eight years in directly titled UX roles and 15 years across digital products, client strategy, and experience delivery; the exact ten-year Interaction Design and Service Design wording remains a fit caveat."
+      },
+      {
+        "gate": "Prior leadership of UX projects and team members",
+        "status": "pass",
+        "evidence": "The resume documents Director, Experience and Innovation leadership and scaling product design from two to 30 people across the United States and Poland. The portfolio shows responsibility for research practice, UX standards, design systems, accessibility direction, and cross-product alignment."
+      },
+      {
+        "gate": "Portfolio proof of user-centered process, interaction models, flows, wireframes, and prototyping",
+        "status": "pass",
+        "evidence": "The User Research, Enterprise Design System, Digital Audit Experience, and healthcare UX work show customer interviews, reusable research operations, journeys, information architecture, flows, wireframes, interactive prototypes, usability testing, iteration, and engineering handoff."
+      },
+      {
+        "gate": "Client-facing cross-functional delivery in an agency setting",
+        "status": "pass",
+        "evidence": "The resume documents 15 years across digital agencies, product teams, and client delivery, including Fortune 500 accounts and work with strategy, design, content, product, engineering, account, and regulatory stakeholders."
+      },
+      {
+        "gate": "Remote or Chicago work arrangement",
+        "status": "pass",
+        "evidence": "The posting allows remote work, and the resume lists Raleigh, North Carolina with current remote roles."
+      }
+    ]
+  },
+  "requirements": [
+    {
+      "id": "ux-direction-and-deliverable-quality",
+      "text": "Lead UX work across projects and remain accountable for the execution, quality, and stakeholder framing of cross-functional deliverables.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Led enterprise UX and design-system strategy across a 20+ product suite used by more than 7,000 people across 22 white-label brands.",
+        "Owned research, interaction models, product standards, data-visualization direction, design rationale, and build-ready delivery with product and engineering partners."
+      ],
+      "resumeTerms": [
+        "UX leadership",
+        "deliverable quality",
+        "stakeholder framing"
+      ]
+    },
+    {
+      "id": "research-and-customer-empathy",
+      "text": "Use primary and secondary research to understand customers, business goals, audiences, and consumer journeys.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Built the UX Research discipline from scratch across 20+ products using interviews, Typeform feedback, Useberry prototype testing, Heap behavioral data, workshops, and reusable Figma documentation.",
+        "Led stakeholder research, competitive audits, journey mapping, and experience strategy for patient, HCP, enterprise, and internal users."
+      ],
+      "resumeTerms": [
+        "primary research",
+        "secondary research",
+        "customer empathy",
+        "consumer journeys"
+      ]
+    },
+    {
+      "id": "interaction-and-service-design",
+      "text": "Create site architectures, interaction models, user flows, wireframes, and service and product experiences across devices.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Created journey maps, site maps, content structures, user flows, wireframes, and prototypes for patient, HCP, internal, and enterprise experiences.",
+        "Designed complex service and product workflows for audit creation, results, support intake, regulated review, brief intake, scoping, and human approval."
+      ],
+      "resumeTerms": [
+        "interaction design",
+        "service design",
+        "site architecture",
+        "user flows",
+        "wireframes"
+      ]
+    },
+    {
+      "id": "rapid-prototyping-and-handoff",
+      "text": "Lead rapid prototyping from early concepts through design, validation, and development.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Current product work moves from discovery and user flows through interactive prototypes, front-end and backend logic, demo readiness, client iteration, and engineering handoff.",
+        "Healthcare and enterprise work includes prototype testing, revision, validation, high-fidelity direction, component systems, and build-ready specifications."
+      ],
+      "resumeTerms": [
+        "rapid prototyping",
+        "interactive prototypes",
+        "usability testing",
+        "engineering handoff"
+      ]
+    },
+    {
+      "id": "client-roadmaps-and-cross-functional-work",
+      "text": "Partner with client strategy, design, content, development, research, and project leads on UI/UX roadmaps.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Managed client and brand work across strategy, account, creative, UX, development, production, and regulatory review teams.",
+        "Current client-led POCs turn unclear business questions into testable product surfaces, workflow decisions, roadmaps, and working prototypes."
+      ],
+      "resumeTerms": [
+        "UI/UX roadmaps",
+        "client strategy",
+        "cross-functional leadership",
+        "content strategy",
+        "development teams"
+      ]
+    },
+    {
+      "id": "audits-and-industry-scans",
+      "text": "Conduct current-state site audits and industry scans, then turn findings into useful recommendations.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Built the Digital Experience Audit workflow for channel scoring, benchmarks, recommendations, data visualization, and presentation-ready client outputs.",
+        "Led competitive audits and stakeholder research that informed healthcare product and campaign direction."
+      ],
+      "resumeTerms": [
+        "site audits",
+        "current-state assessment",
+        "industry scans",
+        "competitive audits",
+        "recommendations"
+      ]
+    },
+    {
+      "id": "people-leadership-and-mentoring",
+      "text": "Lead UX team members, mentor their performance, and support long-term career development.",
+      "priority": "core",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Scaled product design from two to 30 people across the United States and Poland and helped establish research, design-system, accessibility, and delivery standards.",
+        "The public evidence does not state formal career coaching, performance reviews, or the exact number of direct reports."
+      ],
+      "resumeTerms": [
+        "people leadership",
+        "team development",
+        "UX standards"
+      ]
+    },
+    {
+      "id": "accessibility",
+      "text": "Coordinate accessibility requirements across design and development.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Enterprise design-system work includes accessibility, WCAG direction, keyboard-interaction guidance, and reusable product standards.",
+        "Led an accessibility-panel concept that placed second in the 2021 Engine+ Innovation Challenge and received executive attention."
+      ],
+      "resumeTerms": [
+        "accessibility",
+        "WCAG",
+        "keyboard interaction",
+        "accessible design"
+      ]
+    },
+    {
+      "id": "ux-practice-and-specialization",
+      "text": "Advance the UX practice through specialization, current tools and methods, and occasional thought leadership.",
+      "priority": "core",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Built a UX research practice across 20+ products using roadshows, workshops, reusable tools, Figma documentation, and feedback loops.",
+        "Helped shape a 500-component design system with 140 styles, 300 icons, 50 personas, design governance, and research-informed product behavior."
+      ],
+      "resumeTerms": [
+        "UX practice",
+        "user research strategy",
+        "design systems",
+        "Figma"
+      ]
+    },
+    {
+      "id": "agile-and-toolset",
+      "text": "Work in an agile environment and learn tools such as Figma, Sketch, InVision, Axure, Confluence, Validately, JIRA, Google G Suite, Microsoft Office, and Adobe Creative Suite.",
+      "priority": "preferred",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Figma, Typeform, Useberry, Heap, Microsoft Teams, product and engineering collaboration, iterative delivery, and build-ready handoff are documented.",
+        "The portfolio does not name Sketch, InVision, Axure, Confluence, Validately, JIRA, Google G Suite, Microsoft Office, Adobe Creative Suite, or a formal agile methodology."
+      ],
+      "resumeTerms": [
+        "Figma",
+        "iterative delivery",
+        "Product and Engineering",
+        "agile collaboration"
+      ]
+    }
+  ],
+  "fitGate": {
+    "supportedOverlap": [
+      "The portfolio covers the full UX arc from research and journey planning through information architecture, flows, wireframes, prototypes, design systems, validation, and engineering handoff.",
+      "Agency and client experience is direct, including stakeholder workshops, competitive audits, Fortune 500 accounts, regulated delivery, and work across strategy, content, design, product, and development.",
+      "UX practice leadership is well documented through a research discipline built across 20+ products, design standards for 22 white-label brands, and a product design organization scaled from two to 30.",
+      "Current-state audit work is a named case study with channel scoring, benchmarks, recommendations, data visualization, and client-ready outputs.",
+      "Accessibility is direct evidence through WCAG direction, keyboard interaction guidance, reusable standards, and an award-placed accessibility concept.",
+      "The selected case studies give OX relevant proof across research operations, enterprise UX, audit workflows, team leadership, and accessibility."
+    ],
+    "unsupportedRequirements": [
+      "The resume does not document a full ten years under Interaction Design or Service Design titles.",
+      "Formal mentoring, performance reviews, and long-term career coaching are not stated.",
+      "A named agile framework or formal agile-practice ownership is not documented.",
+      "Sketch, InVision, Axure, Confluence, Validately, JIRA, Google G Suite, Microsoft Office, and Adobe Creative Suite are not named in the public evidence."
+    ],
+    "actualMismatches": [
+      "The record shows nearly eight years in clearly titled UX roles rather than a clean ten years specifically labeled Interaction Design and Service Design."
+    ],
+    "missingEvidence": [
+      "The number of direct reports and specific examples of mentoring or performance management.",
+      "A case study explicitly framed as end-to-end service design, even though journeys and service workflows are documented.",
+      "A named agile delivery model and most of OX's optional software list.",
+      "Published UX thought leadership under the candidate's name."
+    ],
+    "coverLetterBridge": {
+      "status": "recommended",
+      "rationale": "We can make the case with a cover letter by connecting 15 years of digital agency, client strategy, and product delivery to nearly eight years of directly titled UX work, director-level team growth, and portfolio proof across research, interaction design, service workflows, prototyping, accessibility, and cross-functional delivery. The letter should address the ten-year wording directly and avoid claiming formal mentoring duties or tools that are not documented."
+    },
+    "recommendation": "Proceed as adjacent. Lead with the research-to-handoff UX practice, agency and client fluency, a team scaled from two to 30, current-state audit work, and accessibility. Keep the exact Interaction Design and Service Design tenure, formal mentoring duties, agile method, and optional software list explicit as evidence gaps."
+  },
+  "resume": {
+    "summary": "UX and experience-design leader with nearly eight years in hands-on UX roles and 15 years across digital products, agency work, and client strategy. I lead research, journey planning, interaction design, service workflows, prototypes, design systems, and engineering handoff. My work includes a research practice built across 20+ products, enterprise platforms used by 7,000+ people across 22 brands, and a product design organization scaled from two to 30.",
+    "skills": [
+      {
+        "label": "UX Practice & User-Centered Design",
+        "description": "UX leadership, primary research, secondary research, customer empathy, consumer journeys, stakeholder framing, UI/UX roadmaps, deliverable quality, and user research strategy"
+      },
+      {
+        "label": "Interaction & Service Design",
+        "description": "Interaction design, service design, site architecture, information architecture, user flows, wireframes, rapid prototyping, interactive prototypes, and usability testing"
+      },
+      {
+        "label": "Client & Cross-Functional Leadership",
+        "description": "Client strategy, content strategy, people leadership, cross-functional leadership, team development, UX standards, workshops, Product and Engineering, development teams, and iterative delivery"
+      },
+      {
+        "label": "Audits, Design Systems & Accessibility",
+        "description": "Site audits, current-state assessment, industry scans, competitive audits, recommendations, design systems, Figma, accessibility, WCAG, keyboard interaction, and accessible design"
+      }
+    ],
+    "roles": {
+      "hedgehox": [
+        "Lead UX for regulated AI workflows spanning claim review, brief intake, scoping, review routing, submission capture, and FDA signal monitoring",
+        "Design interaction and service flows that surface evidence gaps, route work by risk and approval requirements, and prepare audit-ready annotations for human review",
+        "Build functional prototypes, test workflow decisions with stakeholders, and carry approved concepts into working product logic"
+      ],
+      "one-block-away": [
+        "Lead client discovery, product strategy, and UX from initial questions and user flows through interactive prototypes, front-end and backend logic, demo readiness, and engineering handoff",
+        "Build client-led POCs that turn unclear business needs into testable product surfaces, service workflows, roadmap decisions, and working demos",
+        "Present prototypes early so clients can evaluate the experience, challenge assumptions, and make clear build decisions"
+      ],
+      "kinesso": [
+        "Led enterprise UX and design systems used by 7,000+ people across 22 white-label brands, aligning customer needs, product standards, business goals, and engineering constraints",
+        "Built the UX Research discipline across 20+ products using interviews, Typeform feedback, Useberry usability testing, Heap behavioral data, workshops, roadshows, and reusable Figma documentation",
+        "Created the Digital Experience Audit workflow for current-state assessment, site audits, channel scoring, benchmarks, recommendations, data visualization, and client-ready outputs",
+        "Helped shape a 500-component design system with 140 styles, 300 icons, 50 personas, accessibility, WCAG direction, keyboard interaction, and design governance",
+        "Scaled product design from two to 30 people across the United States and Poland while setting UX standards and partnering with Product and Engineering leads",
+        "Enterprise design-system, data-visualization, and audit work earned 5 Indigo Gold, 4 Indigo Silver, and Red Dot recognition"
+      ],
+      "omnicom": [
+        "Supported oncology accounts as a freelance UX designer, combining hands-on product UX with agency and client experience in a regulated setting",
+        "Translated brand goals into content structure, site architecture, user flows, responsive recommendations, and delivery direction across strategy, creative, account, and development teams"
+      ],
+      "heartbeat": [
+        "Led primary research and experience strategy for pharma and healthcare work, translating stakeholder input, competitive audits, and customer needs into product direction",
+        "Created consumer journeys, site maps, interaction models, user flows, wireframes, and prototypes for patient, HCP, and internal experiences across devices",
+        "Partnered with client strategy, content, creative, account, and engineering teams to move research findings into build-ready product and campaign work"
+      ],
+      "account-management": [
+        "Managed Fortune 500 pharma and healthcare clients across digital programs, turning business goals and audience needs into requirements, timelines, and approval-ready work",
+        "Built an early foundation in client strategy, stakeholder communication, cross-functional delivery, content development, and clear recommendations"
+      ]
+    }
+  },
+  "hero": {
+    "eyebrow": "OX Director, User Experience",
+    "tags": [
+      "UX practice leadership",
+      "Research to prototype",
+      "Client & team direction"
+    ],
+    "intro": "OX needs a UX director who can connect customer insight, client goals, and cross-functional delivery. I built a research practice across 20+ products, led enterprise UX and design systems used by 7,000+ people across 22 brands, and helped scale product design from two to 30. My work spans journeys, site architecture, interaction models, service workflows, wireframes, prototypes, accessibility, and engineering handoff."
+  },
+  "contact": {
+    "prompt": "Hiring a UX director who can lead research, interaction and service design, client alignment, and cross-functional delivery? Email is the fastest way to reach me.",
+    "signoff": "UX direction | customer insight | build-ready experiences"
+  },
+  "constraints": {
+    "doNotClaim": [
+      "Ten or more years under Interaction Design or Service Design titles",
+      "Formal career coaching or performance management",
+      "A specific number of direct reports",
+      "Sketch expertise",
+      "InVision expertise",
+      "Axure expertise",
+      "Confluence expertise",
+      "Validately expertise",
+      "JIRA expertise",
+      "Google G Suite expertise",
+      "Microsoft Office expertise",
+      "Adobe Creative Suite expertise",
+      "Formal agile methodology ownership",
+      "Published UX thought leadership"
+    ],
+    "blockedTerms": [
+      "10+ years of Interaction Design",
+      "10+ years of Service Design",
+      "career coach",
+      "performance manager",
+      "Sketch expert",
+      "InVision expert",
+      "Axure expert",
+      "Confluence expert",
+      "Validately expert",
+      "JIRA expert",
+      "agile coach",
+      "published thought leader"
+    ]
+  },
+  "privacy": {
+    "publicSafe": true,
+    "notes": "Contains only the public job posting and sanitized evidence from the public resume and portfolio. It excludes recruiter contact details, application answers, personal compensation boundaries, and private eligibility information."
+  },
+  "copyReview": {
+    "humanizerVersion": "2.2.0",
+    "mode": "surface-only",
+    "status": "passed",
+    "reviewedAt": "2026-07-23T03:54:33.938Z",
+    "copySha256": "9f41650cdffdf4558166a84a51311b068caab634b638b8d6e2dedd28acdfa4b9",
+    "preserved": [
+      "content",
+      "structure",
+      "claims",
+      "ending"
+    ],
+    "rewriteAuthorized": false,
+    "reviewMethod": "humanizer-skill",
+    "semanticPassAttested": true,
+    "staticChecksPassed": true,
+    "finalAntiAiPass": true,
+    "remainingTells": []
+  },
+  "qa": {
+    "status": "qa-passed",
+    "builtAt": "2026-07-23T03:54:38.044Z",
+    "configInputSha256": "dfa42609d9704e742082c89370510ccbf8ca3fde9f15eb985e52bb4d0650d131",
+    "sourceResumeSha256": "2899e45ff283edc6f496656735271c56a12a81a5bffd702441abfed94e68d1d7",
+    "artifactHashes": {
+      "routeSha256": "246e502d6cf705b2a7d09d7e14327003b7c36f92a0196fb33ae053312667fed8",
+      "resumePdfSha256": "ddc3913607cd1440ce28000b0458f2b2cb3dad9848ba7a06fd78b4d7ed48a1b7",
+      "scopedProjectSha256": {}
+    },
+    "renderer": {
+      "browser": {
+        "name": "chrome-headless-shell",
+        "version": "Google Chrome for Testing 149.0.7827.55"
+      },
+      "htmlPath": "tmp/tailored-resumes/ox-director-user-experience.html",
+      "pdfPath": "output/pdf/Wally-Mostafa-OX-Director-User-Experience-Resume.pdf"
+    },
+    "ats": {
+      "ok": true,
+      "pdfPath": "output/pdf/Wally-Mostafa-OX-Director-User-Experience-Resume.pdf",
+      "pageCount": 2,
+      "fileSize": 129314,
+      "annotations": [
+        {
+          "page": 1,
+          "uri": "mailto:wmostafa12@gmail.com"
+        },
+        {
+          "page": 1,
+          "uri": "https://linkedin.com/in/wallymo"
+        },
+        {
+          "page": 1,
+          "uri": "https://wallymo.github.io/ox-director-user-experience/"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/6748"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/4629"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.red-dot.org/project/dxa-digital-experience-audit-55219"
+        }
+      ],
+      "coverage": [
+        {
+          "id": "ux-direction-and-deliverable-quality",
+          "requirement": "Lead UX work across projects and remain accountable for the execution, quality, and stakeholder framing of cross-functional deliverables.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "UX leadership",
+            "deliverable quality",
+            "stakeholder framing"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "research-and-customer-empathy",
+          "requirement": "Use primary and secondary research to understand customers, business goals, audiences, and consumer journeys.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "primary research",
+            "secondary research",
+            "customer empathy",
+            "consumer journeys"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "interaction-and-service-design",
+          "requirement": "Create site architectures, interaction models, user flows, wireframes, and service and product experiences across devices.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "interaction design",
+            "service design",
+            "site architecture",
+            "user flows",
+            "wireframes"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "rapid-prototyping-and-handoff",
+          "requirement": "Lead rapid prototyping from early concepts through design, validation, and development.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "rapid prototyping",
+            "interactive prototypes",
+            "usability testing",
+            "engineering handoff"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "client-roadmaps-and-cross-functional-work",
+          "requirement": "Partner with client strategy, design, content, development, research, and project leads on UI/UX roadmaps.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "UI/UX roadmaps",
+            "client strategy",
+            "cross-functional leadership",
+            "content strategy",
+            "development teams"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "audits-and-industry-scans",
+          "requirement": "Conduct current-state site audits and industry scans, then turn findings into useful recommendations.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "site audits",
+            "current-state assessment",
+            "industry scans",
+            "competitive audits",
+            "recommendations"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "people-leadership-and-mentoring",
+          "requirement": "Lead UX team members, mentor their performance, and support long-term career development.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "people leadership",
+            "team development",
+            "UX standards"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "accessibility",
+          "requirement": "Coordinate accessibility requirements across design and development.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "accessibility",
+            "WCAG",
+            "keyboard interaction",
+            "accessible design"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "ux-practice-and-specialization",
+          "requirement": "Advance the UX practice through specialization, current tools and methods, and occasional thought leadership.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "UX practice",
+            "user research strategy",
+            "design systems",
+            "Figma"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "agile-and-toolset",
+          "requirement": "Work in an agile environment and learn tools such as Figma, Sketch, InVision, Axure, Confluence, Validately, JIRA, Google G Suite, Microsoft Office, and Adobe Creative Suite.",
+          "priority": "preferred",
+          "evidenceStatus": "adjacent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "Figma",
+            "iterative delivery",
+            "Product and Engineering"
+          ],
+          "missingTerms": [
+            "agile collaboration"
+          ]
+        }
+      ],
+      "failures": [],
+      "warnings": []
+    },
+    "humanizer": {
+      "status": "passed",
+      "version": "2.2.0",
+      "mode": "surface-only",
+      "reviewedAt": "2026-07-23T03:54:33.938Z",
+      "copySha256": "9f41650cdffdf4558166a84a51311b068caab634b638b8d6e2dedd28acdfa4b9",
+      "reviewMethod": "humanizer-skill",
+      "semanticPassAttested": true,
+      "staticChecksPassed": true
+    },
+    "route": {
+      "viewports": [
+        {
+          "name": "desktop",
+          "screenshot": "tmp/qa/ox-director-user-experience/desktop.png",
+          "errors": []
+        },
+        {
+          "name": "mobile",
+          "screenshot": "tmp/qa/ox-director-user-experience/mobile.png",
+          "errors": []
+        }
+      ],
+      "errors": []
+    }
+  }
+}
