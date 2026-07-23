@@ -1318,9 +1318,26 @@
         "project-03.html"
       ],
       "resumePdfPath": "output/pdf/Wally-Mostafa-Insight-Global-AI-Product-Manager-Resume.pdf",
-      "publishStatus": "local-only",
+      "publishStatus": "live-verified",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-07-23T22:57:30.348Z"
+      "builtAt": "2026-07-23T22:57:30.348Z",
+      "verification": {
+        "verifiedAt": "2026-07-23T23:03:36.202Z",
+        "routeUrl": "https://wallymo.github.io/insight-global-ai-product-manager/",
+        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-Insight-Global-AI-Product-Manager-Resume.pdf",
+        "configUrl": "https://wallymo.github.io/scripts/packages/insight-global-ai-product-manager.json",
+        "projectUrls": [
+          "https://wallymo.github.io/project-01.html",
+          "https://wallymo.github.io/project-02.html",
+          "https://wallymo.github.io/project-03.html"
+        ],
+        "configSha256": "614f4e4b37160655fe2e9aa2afeef9cf0136e2e83792b165267d9b8ee02d20ce",
+        "pdfSha256": "2400cf3269842d3695c7c938ff1a4cbb47ad45997913105f1115c42dfc0fa3d9",
+        "routeSha256": "a47435cd11930854a3d67089fa1b2944e8f26c85d2c54deeebda95d6cdc5ad8c",
+        "scopedProjectSha256": {},
+        "configInputSha256": "4bdc3c2c3d117b49bb847112e834af46eff2435e5119d3ad18901daf7d24687c",
+        "qaBuiltAt": "2026-07-23T22:57:30.348Z"
+      }
     },
     {
       "slug": "insight-global-senior-ux-designer",
