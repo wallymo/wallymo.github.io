@@ -1338,9 +1338,26 @@
         "project-05.html"
       ],
       "resumePdfPath": "output/pdf/Wally-Mostafa-LearningMate-Business-Analyst-Product-Owner-Resume.pdf",
-      "publishStatus": "local-only",
+      "publishStatus": "live-verified",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-07-23T21:12:31.328Z"
+      "builtAt": "2026-07-23T21:12:31.328Z",
+      "verification": {
+        "verifiedAt": "2026-07-23T21:22:50.374Z",
+        "routeUrl": "https://wallymo.github.io/learningmate-business-analyst-product-owner/",
+        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-LearningMate-Business-Analyst-Product-Owner-Resume.pdf",
+        "configUrl": "https://wallymo.github.io/scripts/packages/learningmate-business-analyst-product-owner.json",
+        "projectUrls": [
+          "https://wallymo.github.io/project-02.html",
+          "https://wallymo.github.io/project-04.html",
+          "https://wallymo.github.io/project-05.html"
+        ],
+        "configSha256": "496091a191d4d762464c2e3f1d10b6955dfbd7563c1199392f668ee1990799b8",
+        "pdfSha256": "e5d2519edb05c854daf474e1403d76ff42a1252ce260f3a4531433c96f68e0ac",
+        "routeSha256": "3afcaddb69394af3b3b8e5e22faf033b4936c392bf50ba562075a60adc88f5eb",
+        "scopedProjectSha256": {},
+        "configInputSha256": "96deb8dee1c79aac2d50589a74017e310982419cc73da8d6cfa38b75cf1d4a27",
+        "qaBuiltAt": "2026-07-23T21:12:31.328Z"
+      }
     },
     {
       "slug": "lenovo",
