@@ -1,0 +1,569 @@
+{
+  "workflowVersion": 2,
+  "contractRevision": 4,
+  "slug": "netapp-ai-gtm-transformation-lead",
+  "roleTitle": "NetApp AI GTM Transformation Lead",
+  "artifactStem": "NetApp-AI-GTM-Transformation-Lead",
+  "fitClass": "adjacent",
+  "routeMode": "canonical-projects",
+  "selectedProjects": [
+    "project-01.html",
+    "project-03.html",
+    "project-02.html"
+  ],
+  "job": {
+    "company": "NetApp",
+    "roleTitle": "AI GTM Transformation Lead",
+    "sourceChannel": "user-provided-job-description",
+    "dateCaptured": "2026-07-23",
+    "location": "Hybrid; in-office or in-person expectations to be shared during the recruitment process",
+    "atsVendor": "unknown",
+    "rawJd": "About the job\nOwn Every Moment at NetApp\n\nAt NetApp, your ideas power innovation. We lead in intelligent data infrastructure, delivering unified storage, integrated data services, and solutions that help organizations unlock the full potential of their data, from AI to multicloud.\n\nReady to innovate and contribute to our path to $10B? Here, you'll collaborate with passionate teams, tackle real-world challenges, and see your impact in how customers transform and grow. If you're ready to bring curiosity, creativity, and drive to every moment, NetApp is where your journey begins. Join teams that drive results, innovate to elevate, and excel together across every function.\n\nAbout the Role:\n\nAI is changing how go-to-market teams operate. We are seeking an AI GTM Transformation Lead to lead the end-to-end AI transformation of our Go-to-Market (GTM) Revenue Operations organization. This is a highly strategic, senior individual contributor role responsible for shaping how AI is applied across GTM RevOps, turning fragmented ideas into a coherent portfolio of scalable, governed, high-value transformation initiatives.\n\nThis leader will sit across the business and act as the connective tissue between the business, AI technologies, and execution teams. The role focuses on redesigning business outcomes using AI-native thinking, leveraging AI agents, orchestration layers, automation platforms, and human-in-the-loop systems to fundamentally transform how work gets done.\n\nThe role goes beyond automation delivery. It requires someone who can define the outcome design for AI transformation, redesign workflows for human-agent collaboration, guide initiatives from proof of concept through scaled autonomy, and ensure success is measured not only by deployment, but by adoption, trust, and business value.\n\nWhat You'll Do:\n\nLead AI-Driven GTM Transformation\n\nOwn the GTM RevOps AI transformation roadmap, aligning AI initiatives to business priorities, operational outcomes, and measurable value.\nServe as the strategic leader connecting business goals, process design, governance, adoption, and execution.\n\nBuild and Prioritize the AI Portfolio\n\nIdentify, assess, and prioritize high-impact AI, automation, and workflow transformation opportunities.\nPartner with stakeholders to define business requirements, future-state processes, success metrics, dependencies, and governance needs.\nPrepare initiatives for investment and portfolio review through structured evaluation and prioritization.\n\nDesign Human + AI Operating Models\n\nReimagine workflows to optimize collaboration between people and AI agents.\nDefine autonomy levels, exception handling, governance controls, and scalability requirements.\nDrive initiatives from proof-of-concept through pilot and enterprise-scale deployment.\n\nDrive Cross-Functional Delivery\n\nCoordinate business, data, platform, and AI delivery teams to execute transformation initiatives.\nTranslate business needs into requirements, user stories, acceptance criteria, and operational processes.\nEnsure solutions are scalable, integrated, and aligned with enterprise governance standards.\n\nShape Governance and Adoption\n\nContribute to AI governance forums, prioritization decisions, and operating model design.\nEnsure appropriate attention to risk, security, compliance, and data governance.\nPartner with change leaders to build adoption, enablement, and trust across GTM teams.\n\nMeasure Impact and Continuous Improvement\n\nEstablish and track metrics for adoption, productivity, quality, efficiency, and business impact.\nUse operational insights and user feedback to refine solutions, improve agent performance, and evolve the AI roadmap.\nStay current on emerging AI capabilities and identify opportunities that create practical business value.\n\nWhat Success Looks Like:\n\nAI initiatives are consistently well-shaped, decision-ready, and prioritized against the most important GTM business outcomes.\nGTM RevOps realizes measurable improvements in efficiency, cycle time, productivity, and operational capacity through well-governed AI and agentic automation.\nHuman-agent workflows are implemented with clarity, trust, and strong user adoption rather than confusion or shadow experimentation.\nThe organization develops reusable patterns, playbooks, and operating mechanisms that enable AI scale across multiple GTM processes.\nDelivery is coordinated and coherent across teams, with minimal duplication, clear ownership, and strong alignment to enterprise priorities.\nLeaders see this role as a strategic partner who can connect business transformation, AI innovation, and execution discipline in a fast-moving environment.\n\nEducation and Experience:\n\nTypically requires a minimum of 15 years of related experience.\nDeep experience in Revenue Operations, GTM Operations, Sales Operations, Customer Operations, Solutions Engineering, or a closely related GTM function, with a strong understanding of how go-to-market teams operate end to end.\nProven ability to lead complex, cross-functional transformation initiatives that require influence across business, technical, and operational stakeholders.\nStrong program and portfolio orchestration skills, including prioritization, dependency management, executive communication, and delivery alignment across multiple initiatives.\nExperience designing workflows, service models, or operating processes that span people, systems, data, and governance.\nStrong understanding of AI-assisted workflows, copilots, agentic automation, or intelligent process redesign.\nAbility to define value cases, KPIs, and success metrics for transformation programs and hold initiatives accountable to business outcomes.\nExperience working with ambiguity and building new operating models or capabilities where no playbook exists.\nExcellent executive presence and communication skills, with the ability to synthesize complex issues and influence senior leaders.\nComfort partnering with technical teams and working across APIs, prompts, automation platforms, AI tools, and data/system dependencies, even if not acting as the primary engineer.\nDemonstrated ability to simplify complex concepts and enable broad adoption among non-technical users.\n\nCompensation:\n\nThe target salary range for this position is 196,350 - 292,600 USD. The salary offered will be determined by the candidate's location, qualifications, experience, and education and may be outside of this range. Final compensation packages are competitive and in line with industry standards, reflecting a variety of factors, and include a comprehensive benefits package. This may cover Health Insurance, Life Insurance, Retirement or Pension Plans, Paid Time Off, various Leave options, Performance-Based Incentives, employee stock purchase plan, and/or restricted stocks (RSU's), with all offerings subject to regional variations and governed by local laws, regulations, and company policies. Benefits may vary by country and region, and further details will be provided as part of the recruitment process.\n\nAt NetApp, we embrace a hybrid working environment designed to strengthen connection, collaboration, and culture for all employees. This means that most roles will have some level of in-office and/or in-person expectations, which will be shared during the recruitment process.\n\nEqual Opportunity Employer:\n\nNetApp is firmly committed to Equal Employment Opportunity (EEO) and to compliance with all federal, state and local laws that prohibit employment discrimination based on age, race, color, gender, sexual orientation, gender identity, national origin, religion, disability or genetic information, pregnancy, protected veteran status, and any other protected classification.\n\nWhy You'll Thrive at NetApp\n\nAt NetApp, you won't wait for the perfect moment, you'll make it. The early planning, the extra thought, the bold idea that turns good into great: That's how our people operate and how we continue to push the boundaries of data infrastructure.\n\nNetApp is the trusted partner for organizations transforming data into opportunity. As the only enterprise-grade storage service natively embedded in Google Cloud, AWS, and Microsoft Azure, we empower customers to run everything from traditional workloads to enterprise AI with unmatched performance, resilience, and security.\n\nOur culture\n\nWe celebrate mold breakers, bold thinkers, and problem solvers. We reward initiative, impact, and ownership. We provide flexibility so you can balance professional ambition with your personal life. Here, differences are not just welcomed, they drive everything we do.\n\nIf you're ready to innovate, rise to the challenge, and own every moment, make your next move your best one. Apply now.\n\nSubmitting an Application\n\nTo ensure a streamlined and fair hiring process for all candidates, our team only reviews applications submitted through our company website. This practice allows us to track, assess, and respond to applicants efficiently. Emailing our employees, recruiters, or Human Resources personnel directly will not influence your application.\n\nAI Disclosure\n\nFor select roles, some stages of our hiring process may use artificial intelligence tools to help evaluate applications and candidate selection. These tools support, rather than replace, human decision-making."
+  },
+  "classification": {
+    "targetLane": "enterprise AI transformation for GTM operations",
+    "evidenceMode": "balanced",
+    "primarySource": "The resume drives the fit call through 15 years of client strategy, AI implementation, enterprise workflow leadership, cross-functional delivery, and seven-plus years of account leadership tied to major go-to-market programs.",
+    "supportingSource": "The portfolio shows governed human-review workflows, client-led AI POCs, operational tools, enterprise systems used by 7,000+ people across 22 brands, and measurable cycle-time improvement.",
+    "hardGateStatus": "pass",
+    "hardGates": [
+      {
+        "gate": "Minimum 15 years of related experience",
+        "status": "pass",
+        "evidence": "The resume documents 15 years across AI implementation, client strategy, enterprise UX, regulated delivery, and account leadership."
+      },
+      {
+        "gate": "Deep experience in RevOps, GTM Operations, Sales Operations, Customer Operations, Solutions Engineering, or a closely related GTM function",
+        "status": "pass",
+        "evidence": "Seven-plus years of account and client strategy included Fortune 500 budgets, brand planning, integrated consumer programs, timelines, and cross-functional delivery. Current work adds AI workflow and operations tools. Direct ownership of a formal Revenue Operations organization or RevOps portfolio is not documented."
+      },
+      {
+        "gate": "Enterprise AI workflow and transformation experience",
+        "status": "pass",
+        "evidence": "Current work covers governed AI workflows, human review, model orchestration, functional POCs, operational tools, and production handoff. Kinesso adds enterprise workflow, governance, adoption, and scale."
+      },
+      {
+        "gate": "Hybrid location expectations",
+        "status": "not-applicable",
+        "evidence": "The posting says in-office or in-person expectations will be shared during recruitment, but it does not name a required office or schedule."
+      }
+    ]
+  },
+  "requirements": [
+    {
+      "id": "gtm-revops-transformation-roadmap",
+      "text": "Own the GTM RevOps AI transformation roadmap and align initiatives to business priorities, operational outcomes, and measurable value.",
+      "priority": "core",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Current AI implementation work turns recurring business and operational problems into a connected set of tools for brief intake, scoping, review routing, submission capture, claims review, and FDA monitoring.",
+        "One Block Away work takes unclear client questions through POCs, demonstrations, product decisions, and roadmap choices.",
+        "Direct ownership of an enterprise GTM RevOps transformation roadmap is not documented."
+      ],
+      "resumeTerms": [
+        "roadmap decisions"
+      ]
+    },
+    {
+      "id": "ai-portfolio-prioritization",
+      "text": "Identify and prioritize AI opportunities, define requirements and future-state processes, and prepare initiatives for investment and portfolio review.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Claims Detector secured investor support after a functional POC and a decision-ready demo story.",
+        "Current work repeatedly translates stakeholder needs into scoped requirements, working tools, review logic, and next-step product decisions.",
+        "Scope Generator supports agency finance and operations work across rate cards, brands, sub-brands, and natural-language scope changes."
+      ],
+      "resumeTerms": [
+        "requirements"
+      ]
+    },
+    {
+      "id": "human-ai-operating-models",
+      "text": "Design human-agent workflows with clear autonomy, exception handling, governance controls, and a path from POC through enterprise deployment.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Claims Detector combines AI-assisted claim review with evidence gaps, audit-ready annotations, and human MLR review.",
+        "The resume and portfolio document governed LLM and VLM workflows, prompt-defined criteria, model orchestration, and human review surfaces.",
+        "Enterprise product work adds reusable patterns and adoption across 7,000+ users and 22 white-label brands, though scaled autonomous agents are not documented."
+      ],
+      "resumeTerms": [
+        "human-in-the-loop",
+        "model orchestration"
+      ]
+    },
+    {
+      "id": "cross-functional-delivery",
+      "text": "Coordinate business, data, platform, and AI teams and translate business needs into requirements, user stories, acceptance criteria, and operational processes.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Fifteen years of work spans client, account, strategy, creative, UX, product, engineering, finance, operations, and executive stakeholders.",
+        "Current POC work covers discovery, product strategy, workflow design, front-end build, backend logic, demonstrations, and client iteration.",
+        "Earlier account work translated client and brand strategy into briefs, requirements, timelines, and regulated deliverables."
+      ],
+      "resumeTerms": [
+        "requirements",
+        "production handoff"
+      ]
+    },
+    {
+      "id": "governance-risk-and-trust",
+      "text": "Shape AI governance and address risk, security, compliance, data governance, adoption, and trust.",
+      "priority": "core",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Regulated pharma work directly covers FDA, HIPAA, MLR review, evidence gaps, review routing, audit-ready annotations, and human oversight.",
+        "Enterprise design-system work covers governance, reusable standards, workflow consistency, and adoption.",
+        "Formal enterprise security ownership, data-governance forums, or cybersecurity responsibility are not documented."
+      ],
+      "resumeTerms": [
+        "governance strategy",
+        "MLR review",
+        "stakeholder adoption"
+      ]
+    },
+    {
+      "id": "measurement-and-continuous-improvement",
+      "text": "Define and track adoption, productivity, quality, efficiency, and business-impact metrics, then use feedback to improve agent performance and the roadmap.",
+      "priority": "core",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Echo moved one pharma route from eight hours to ten minutes and helped cut a planned five-day launch to two days.",
+        "The Digital Experience Audit turned performance data into channel scoring, benchmarks, recommendations, and client-ready outputs.",
+        "The portfolio documents iterative POCs and enterprise adoption, but formal GTM KPIs and ongoing agent-performance measurement are not documented."
+      ],
+      "resumeTerms": [
+        "8 hours to 10 minutes",
+        "5-day launch to 2 days",
+        "channel scores",
+        "benchmarks"
+      ]
+    },
+    {
+      "id": "executive-influence-and-adoption",
+      "text": "Synthesize complex issues, influence senior leaders, and enable adoption among non-technical users.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Claims Detector secured investor support through a functional POC and clear demonstration of the workflow and business value.",
+        "Enterprise leadership included scaling product design from two to 30 and supporting products used by more than 7,000 people across 22 brands.",
+        "Seven-plus years of account leadership required translating complex strategy and regulated delivery needs for clients and cross-functional teams."
+      ],
+      "resumeTerms": [
+        "investor support",
+        "stakeholder adoption",
+        "$2M-$50M+"
+      ]
+    },
+    {
+      "id": "technical-partnership",
+      "text": "Partner comfortably with technical teams across prompts, AI tools, automation platforms, APIs, and data or system dependencies without serving as the primary engineer.",
+      "priority": "core",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Current work includes prompt-defined criteria, LLM and VLM workflows, model orchestration, front-end build, backend logic, review automation, and production handoff.",
+        "Kinesso work partnered across product, design, engineering, analytics, and distributed delivery teams.",
+        "Direct API implementation, named automation platforms, and data-platform ownership are not documented."
+      ],
+      "resumeTerms": [
+        "prompt-defined criteria",
+        "AI tools",
+        "front-end build",
+        "backend logic"
+      ]
+    }
+  ],
+  "fitGate": {
+    "supportedOverlap": [
+      "Fifteen years across AI implementation, client strategy, enterprise workflow design, regulated delivery, and cross-functional leadership meet the stated experience level.",
+      "Current work directly covers governed AI workflows, human review, model orchestration, operational tools, functional POCs, and production handoff.",
+      "Echo provides measured cycle-time proof: one pharma route moved from eight hours to ten minutes, and a planned five-day launch was cut to two days.",
+      "Kinesso adds enterprise scale through a product-design organization grown from two to 30 and analytics products used by more than 7,000 people across 22 brands.",
+      "Seven-plus years of account leadership adds direct go-to-market context through Fortune 500 relationships, integrated consumer programs, brand planning, budgets, and delivery.",
+      "Claims Detector, Scope Generator, ListingPal, WeReady, and the Digital Experience Audit show a repeatable pattern of turning unclear work into decision-ready product and workflow systems."
+    ],
+    "unsupportedRequirements": [
+      "Direct ownership of a formal GTM Revenue Operations organization or enterprise RevOps transformation portfolio is not documented.",
+      "Sales operations, quota planning, territory design, forecasting, pipeline operations, CRM administration, and revenue analytics ownership are not documented.",
+      "A formal portfolio governance forum with investment scoring, dependency management, and executive funding decisions is not documented.",
+      "Scaled autonomous AI agents operating across multiple enterprise GTM processes are not documented.",
+      "Formal enterprise security, cybersecurity, or data-governance ownership is not documented.",
+      "Direct API implementation and ownership of named automation or orchestration platforms are not documented.",
+      "Formal GTM adoption KPIs and ongoing agent-performance metrics are not documented."
+    ],
+    "actualMismatches": [
+      "The recent operating center is AI implementation, product strategy, workflow design, and client delivery rather than internal GTM Revenue Operations.",
+      "The enterprise-scale proof comes from analytics and design-system adoption, not an AI-agent rollout across sales, marketing, and customer operations."
+    ],
+    "missingEvidence": [
+      "A named RevOps roadmap covering pipeline, forecasting, territory, quota, CRM, or sales-process transformation.",
+      "Portfolio-level prioritization records with funding, dependency, capacity, and executive decision outcomes.",
+      "An enterprise agent rollout with autonomy levels, exception handling, adoption metrics, and ongoing performance management.",
+      "Named API integrations, automation platforms, orchestration tools, and enterprise data dependencies.",
+      "GTM-specific gains in pipeline velocity, conversion, forecast accuracy, seller capacity, or customer lifecycle performance."
+    ],
+    "coverLetterBridge": {
+      "status": "recommended",
+      "rationale": "We can make the case with a cover letter by connecting seven-plus years of account and go-to-market delivery, current AI workflow transformation, measured cycle-time gains, enterprise adoption, and investor-facing POC work to NetApp's need for a business-to-technology transformation lead. The letter should address the move into internal GTM RevOps directly and should not imply ownership of forecasting, CRM, territory, quota, or enterprise agent operations."
+    },
+    "recommendation": "Proceed as adjacent. Lead with AI workflow transformation, human-review design, measurable operational improvement, enterprise adoption, and cross-functional delivery. Keep the lack of direct RevOps ownership explicit and do not claim GTM systems, metrics, or platforms that the public evidence does not show."
+  },
+  "resume": {
+    "foundationId": "wally-mostafa-resume-2026-07-03",
+    "summary": "AI implementation and product strategy lead with 15 years across pharma, enterprise UX, client strategy, and regulated AI delivery. I turn ambiguous workflows into governed AI tools, demo-ready POCs, and build-ready product systems. My strength is bridging client translation, workflow design, model behavior, and adoption so teams can trust and use the product after the demo.",
+    "skills": [
+      {
+        "label": "AI Implementation & Workflow Design",
+        "description": "Governed LLM/VLM workflows, multimodal review, RAG/knowledge bases, prompt-defined criteria, model orchestration, and human review surfaces"
+      },
+      {
+        "label": "Product Strategy & POC Delivery",
+        "description": "Discovery, scoping, requirements, prototype validation, demo narratives, build-ready logic, and production handoff"
+      },
+      {
+        "label": "Regulated Healthcare & Client Delivery",
+        "description": "11 years across pharma/healthcare communications, FDA/HIPAA/MLR workflows, HCP/patient UX, client workshops, and stakeholder adoption"
+      },
+      {
+        "label": "Enterprise UX & Design Systems",
+        "description": "Team scaling (2 to 30), enterprise analytics, workflow UX, data visualization, component libraries, and accessibility (WCAG)"
+      }
+    ],
+    "roles": {
+      "hedgehox": [
+        "Secured investor support for Claims Detector by building the functional POC, shaping the decision-ready demo, and refining the product with investors",
+        "Designed human-in-the-loop Claims Detector workflows that flag claims, surface evidence gaps, and pre-populate audit-ready annotations before MLR review",
+        "Turned pharma agency needs into governed AI tools for claims review, brief intake, scoping, review routing, submission capture, and FDA monitoring",
+        "Built Echo submission automation, cutting one pharma route from 8 hours to 10 minutes and helping reduce a planned 5-day launch to 2 days",
+        "Built the Xenagos Bio startup website, translating scientific and investor needs into content structure, positioning, visual direction, and design-system handoff",
+        "Built Scope Generator for pharma agency finance and operations teams to manage regional rate cards, brands, sub-brands, and natural-language scope changes",
+        "Developed FDA Warning Tool concepts that turn warning-letter patterns into content-risk guidance for pharma teams"
+      ],
+      "one-block-away": [
+        "Build client-led AI POCs that turn unclear business questions into testable product surfaces, demo flows, and roadmap decisions",
+        "Built ListingPal's AI listing-generation POC and landing page, turning basic property inputs into listing copy, social posts, ad copy, styling direction, and MLS/SEO-ready language in under 90 seconds",
+        "Built WeReady's Bailey Intelligence dashboard, translating founder inputs, GitHub signals, source health, risk scoring, and evidence trails into startup-readiness workflows",
+        "Own product strategy, UX, AI workflow design, front-end build, backend logic, demo readiness, and client iteration from first ask through working prototype",
+        "Currently building the website and sponsor strategy for a Tunisia youth soccer program, positioning the project for player advancement, community support, and donor outreach"
+      ],
+      "kinesso": [
+        "Scaled a US/Poland product-design team from 2 to 30 for analytics used by 7,000+ people across 22 white-label brands",
+        "Led workflow, design-system, and governance strategy for MIE dashboards, brand theming, data visualization, and reusable analytics components",
+        "Built the Digital Experience Audit workflow for channel scores, benchmarks, recommendations, visualizations, and client-ready outputs",
+        "Design-system and analytics work earned 5 Indigo Gold, 4 Indigo Silver, and Red Dot recognition"
+      ],
+      "omnicom": [
+        "Supported oncology accounts as a freelance UX designer with prior regulated account-management experience",
+        "Turned brand goals into user flows, content structure, and digital recommendations with cross-functional teams"
+      ],
+      "heartbeat": [
+        "Led UX research and future-state strategy for pharma and healthcare, turning stakeholder input, competitive audits, and user needs into product direction",
+        "Mapped people, content, systems, and review needs through journeys, flows, wireframes, and prototypes for patient, HCP, and brand-team experiences",
+        "Moved research into requirements and build-ready decisions with strategy, creative, account, and engineering teams"
+      ],
+      "account-management": [
+        "Managed Fortune 500 pharma and healthcare clients for 7+ years, with $2M-$50M+ budgets across CNS, neurology, psychiatry, cardiovascular, metabolic, and sleep-wakefulness brands including NUVIGIL, Namenda XR, Lipitor, and Zoloft",
+        "Served as one of two consumer account leads on FCB Health's largest pharma account, coordinating go-to-market work across TV, radio, digital, gaming, Times Square, unbranded campaigns, planning, and MLR review",
+        "Turned client and brand strategy into briefs, production requirements, timelines, feedback, and MLR-ready deliverables across account, creative, UX, and development teams"
+      ]
+    },
+    "sourceBulletIds": {
+      "hedgehox": [
+        "hedgehox-01",
+        "hedgehox-02",
+        "hedgehox-03",
+        "addition:netapp-echo-cycle-time",
+        "hedgehox-04",
+        "hedgehox-05",
+        "hedgehox-06"
+      ],
+      "one-block-away": [
+        "one-block-away-01",
+        "one-block-away-02",
+        "one-block-away-03",
+        "one-block-away-04",
+        "one-block-away-05"
+      ],
+      "kinesso": [
+        "kinesso-01",
+        "kinesso-02",
+        "kinesso-03",
+        "kinesso-04"
+      ],
+      "omnicom": [
+        "omnicom-01",
+        "omnicom-02"
+      ],
+      "heartbeat": [
+        "heartbeat-01",
+        "heartbeat-02",
+        "heartbeat-03"
+      ],
+      "account-management": [
+        "account-management-01",
+        "account-management-02",
+        "account-management-03"
+      ]
+    }
+  },
+  "hero": {
+    "eyebrow": "NetApp | AI GTM Transformation Lead",
+    "tags": [
+      "Governed AI workflows",
+      "POC-to-enterprise delivery",
+      "Adoption and operational value"
+    ],
+    "intro": "I turn unclear operational problems into governed AI workflows that people can test, trust, and use. My recent work covers human review, model orchestration, finance and operations tools, and measurable cycle-time gains. I also led enterprise product systems used by 7,000+ people across 22 brands and bring 7+ years of account leadership across complex go-to-market programs."
+  },
+  "contact": {
+    "prompt": "If NetApp needs an AI transformation lead who can shape the workflow, align the teams, and keep adoption tied to measurable value, email is the fastest way to reach me.",
+    "signoff": "AI workflow transformation | enterprise adoption | operational value"
+  },
+  "copyReview": {
+    "humanizerVersion": "2.2.0",
+    "mode": "surface-only",
+    "status": "passed",
+    "reviewedAt": "2026-07-23T21:14:00.247Z",
+    "copySha256": "c7b6b2ff5a301d12f4c4c6b4abcf4195a8cd31f9e1e098f7e164d9e396a145e4",
+    "preserved": [
+      "content",
+      "structure",
+      "claims",
+      "ending"
+    ],
+    "rewriteAuthorized": false,
+    "reviewMethod": "humanizer-skill",
+    "semanticPassAttested": true,
+    "staticChecksPassed": true,
+    "finalAntiAiPass": true,
+    "remainingTells": []
+  },
+  "constraints": {
+    "doNotClaim": [
+      "Direct ownership of a GTM Revenue Operations organization",
+      "Direct ownership of an enterprise RevOps transformation roadmap",
+      "Sales forecasting or forecast-accuracy ownership",
+      "Quota, territory, compensation, or capacity-planning ownership",
+      "CRM administration or architecture",
+      "Pipeline operations or revenue analytics ownership",
+      "Scaled autonomous AI agents in enterprise production",
+      "Formal enterprise AI governance forum ownership",
+      "Cybersecurity or enterprise data-governance ownership",
+      "Direct API implementation",
+      "Named automation or orchestration platform expertise",
+      "Formal GTM adoption KPI ownership",
+      "Measured pipeline, conversion, or seller-capacity gains",
+      "NetApp storage, cloud infrastructure, or multicloud architecture expertise"
+    ],
+    "blockedTerms": [
+      "RevOps owner",
+      "GTM operations leader",
+      "sales operations expert",
+      "forecast accuracy",
+      "quota planning",
+      "territory planning",
+      "CRM architect",
+      "pipeline operations owner",
+      "revenue analytics owner",
+      "autonomous agents in production",
+      "AI governance chair",
+      "cybersecurity owner",
+      "data governance owner",
+      "API implementation expert",
+      "automation platform expert",
+      "GTM KPI owner",
+      "seller capacity gains",
+      "NetApp expert"
+    ]
+  },
+  "privacy": {
+    "publicSafe": true,
+    "notes": "Contains only the public job posting and sanitized evidence from the public resume and portfolio. It excludes recruiter contact details, application answers, personal compensation boundaries, and private eligibility information."
+  },
+  "qa": {
+    "status": "qa-passed",
+    "builtAt": "2026-07-23T21:16:19.511Z",
+    "configInputSha256": "e3b8acec0987e7bb5505e693d971466c37cfb7b9441668621d34613aabb0f681",
+    "sourceResumeSha256": "161a4525479899b37e168b299a0b74a8b224c36e753c6f327edbf014019b576f",
+    "resumeFoundation": {
+      "id": "wally-mostafa-resume-2026-07-03",
+      "sourcePdfSha256": "f9b05b6c3c134262b1af6c5734363daf4385cf335407a139779a37d138adf1aa"
+    },
+    "artifactHashes": {
+      "routeSha256": "0913aeb7e843e0509200e6d5cccdc1db9c45d6870c63829e52d57da35abce120",
+      "resumePdfSha256": "9f17d6304c590587fec0b306befa6813620af4c82324e836be2550d2ff242354",
+      "scopedProjectSha256": {}
+    },
+    "renderer": {
+      "browser": {
+        "name": "chrome-headless-shell",
+        "version": "Google Chrome for Testing 149.0.7827.55"
+      },
+      "htmlPath": "tmp/tailored-resumes/netapp-ai-gtm-transformation-lead.html",
+      "pdfPath": "output/pdf/Wally-Mostafa-NetApp-AI-GTM-Transformation-Lead-Resume.pdf"
+    },
+    "ats": {
+      "ok": true,
+      "pdfPath": "output/pdf/Wally-Mostafa-NetApp-AI-GTM-Transformation-Lead-Resume.pdf",
+      "pageCount": 2,
+      "fileSize": 136783,
+      "annotations": [
+        {
+          "page": 1,
+          "uri": "mailto:wmostafa12@gmail.com"
+        },
+        {
+          "page": 1,
+          "uri": "https://linkedin.com/in/wallymo"
+        },
+        {
+          "page": 1,
+          "uri": "https://wallymo.github.io/netapp-ai-gtm-transformation-lead/"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/6748"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/4629"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.red-dot.org/project/dxa-digital-experience-audit-55219"
+        }
+      ],
+      "coverage": [
+        {
+          "id": "gtm-revops-transformation-roadmap",
+          "requirement": "Own the GTM RevOps AI transformation roadmap and align initiatives to business priorities, operational outcomes, and measurable value.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "roadmap decisions"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "ai-portfolio-prioritization",
+          "requirement": "Identify and prioritize AI opportunities, define requirements and future-state processes, and prepare initiatives for investment and portfolio review.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "requirements"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "human-ai-operating-models",
+          "requirement": "Design human-agent workflows with clear autonomy, exception handling, governance controls, and a path from POC through enterprise deployment.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "human-in-the-loop",
+            "model orchestration"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "cross-functional-delivery",
+          "requirement": "Coordinate business, data, platform, and AI teams and translate business needs into requirements, user stories, acceptance criteria, and operational processes.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "requirements",
+            "production handoff"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "governance-risk-and-trust",
+          "requirement": "Shape AI governance and address risk, security, compliance, data governance, adoption, and trust.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "governance strategy",
+            "MLR review",
+            "stakeholder adoption"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "measurement-and-continuous-improvement",
+          "requirement": "Define and track adoption, productivity, quality, efficiency, and business-impact metrics, then use feedback to improve agent performance and the roadmap.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "8 hours to 10 minutes",
+            "5-day launch to 2 days",
+            "channel scores",
+            "benchmarks"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "executive-influence-and-adoption",
+          "requirement": "Synthesize complex issues, influence senior leaders, and enable adoption among non-technical users.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "investor support",
+            "stakeholder adoption",
+            "$2M-$50M+"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "technical-partnership",
+          "requirement": "Partner comfortably with technical teams across prompts, AI tools, automation platforms, APIs, and data or system dependencies without serving as the primary engineer.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "prompt-defined criteria",
+            "AI tools",
+            "front-end build",
+            "backend logic"
+          ],
+          "missingTerms": []
+        }
+      ],
+      "failures": [],
+      "warnings": []
+    },
+    "humanizer": {
+      "status": "passed",
+      "version": "2.2.0",
+      "mode": "surface-only",
+      "reviewedAt": "2026-07-23T21:14:00.247Z",
+      "copySha256": "c7b6b2ff5a301d12f4c4c6b4abcf4195a8cd31f9e1e098f7e164d9e396a145e4",
+      "reviewMethod": "humanizer-skill",
+      "semanticPassAttested": true,
+      "staticChecksPassed": true
+    },
+    "route": {
+      "viewports": [
+        {
+          "name": "desktop",
+          "screenshot": "tmp/qa/netapp-ai-gtm-transformation-lead/desktop.png",
+          "errors": []
+        },
+        {
+          "name": "mobile",
+          "screenshot": "tmp/qa/netapp-ai-gtm-transformation-lead/mobile.png",
+          "errors": []
+        }
+      ],
+      "errors": []
+    }
+  }
+}

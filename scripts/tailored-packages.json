@@ -1526,6 +1526,26 @@
       }
     },
     {
+      "workflowVersion": 2,
+      "slug": "netapp-ai-gtm-transformation-lead",
+      "roleTitle": "NetApp AI GTM Transformation Lead",
+      "artifactStem": "NetApp-AI-GTM-Transformation-Lead",
+      "configPath": "scripts/packages/netapp-ai-gtm-transformation-lead.json",
+      "targetLane": "enterprise AI transformation for GTM operations",
+      "evidenceMode": "balanced",
+      "fitClass": "adjacent",
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-01.html",
+        "project-03.html",
+        "project-02.html"
+      ],
+      "resumePdfPath": "output/pdf/Wally-Mostafa-NetApp-AI-GTM-Transformation-Lead-Resume.pdf",
+      "publishStatus": "local-only",
+      "qaStatus": "qa-passed",
+      "builtAt": "2026-07-23T21:16:19.511Z"
+    },
+    {
       "slug": "noom-design-systems-contract",
       "roleTitle": "Noom Senior Design Systems Contractor",
       "fitClass": "adjacent",
