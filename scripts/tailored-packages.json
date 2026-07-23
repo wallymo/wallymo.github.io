@@ -1660,6 +1660,26 @@
       "notes": "PDF-only recruiter artifact per current Tailored Portfolio Rules; temporary render HTML removed after local verification."
     },
     {
+      "workflowVersion": 2,
+      "slug": "propeller-director-experience-strategy",
+      "roleTitle": "Propeller Director, Experience Strategy",
+      "artifactStem": "Propeller-Director-Experience-Strategy",
+      "configPath": "scripts/packages/propeller-director-experience-strategy.json",
+      "targetLane": "pharma-experience-strategy-and-omnichannel-planning",
+      "evidenceMode": "balanced",
+      "fitClass": "strong",
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-01.html",
+        "project-04.html",
+        "project-06.html"
+      ],
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Propeller-Director-Experience-Strategy-Resume.pdf",
+      "publishStatus": "local-only",
+      "qaStatus": "qa-passed",
+      "builtAt": "2026-07-23T00:11:16.236Z"
+    },
+    {
       "slug": "real-chemistry-account-manager",
       "roleTitle": "Real Chemistry Account Manager",
       "fitClass": "strong",

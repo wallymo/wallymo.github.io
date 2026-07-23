@@ -1,0 +1,482 @@
+{
+  "workflowVersion": 2,
+  "contractRevision": 3,
+  "slug": "propeller-director-experience-strategy",
+  "roleTitle": "Propeller Director, Experience Strategy",
+  "artifactStem": "Propeller-Director-Experience-Strategy",
+  "fitClass": "strong",
+  "routeMode": "canonical-projects",
+  "selectedProjects": [
+    "project-01.html",
+    "project-04.html",
+    "project-06.html"
+  ],
+  "job": {
+    "company": "Propeller",
+    "roleTitle": "Director, Experience Strategy",
+    "sourceChannel": "pasted-job-description",
+    "dateCaptured": "2026-07-22",
+    "location": "New York, NY; at least three days per week in office under Omnicom policy",
+    "atsVendor": "unknown",
+    "rawJd": "About the job. Agency: Propeller. Job Function: Strategy and Planning. Job Subfunction: Research and Insights. About Propeller: Founded in 2006, Propeller is a digital forward, omnichannel healthcare marketing agency transforming HCP engagement. With a HQ in Summit, NJ, our team of 120+ marketing specialists truly understand the ever-changing industry, complex content, and how to mobilize data to drive meaningful results. Our continued success is achieved through our omnichannel fluency and curated digital suite of capabilities, including Account Services, Creative, Digital and Brand Strategy, Digital Production and Project Management, 3D Animation, Digital Development, and Video. Our Culture: We offer a unique, personalized culture in which each team member is encouraged and expected to bring their ideas, solutions, and leadership to the table. By empowering individuals, we remain nimble, engaged, and able to break away from conventional thinking and speak intelligently about serious topics. We value our team's intangibles, the experiences and traits that make them unique. Come Live Your Best Life With Us: We pride ourselves on our inclusive, employee-centric mentality. There's life at work and life outside of it. We want everyone to be healthy, feel supported, and have the financial resources they need. Our team enjoys competitive compensation and consistent performance recognition, generous paid time off, comprehensive wellness programs, and more. These are just some of the reasons we are Great Place to Work certified. Title: Director, Experience Strategy. Location: New York, NY. Department/Discipline: Strategy. Help lead the future of our Experience Strategy team. You will be an integral strategic leader guiding Pharma partners on brand strategy development and its omnichannel pull-through to create unified customer experiences. Responsible for evolving and actioning marketing and digital objectives into HCP communication plans, rooted in customer insights and market trends, while ensuring internal cross-functional alignment of partner goals, vision and desired outputs. The Director/Sr. Director position reports into the Senior Vice President, Strategy. The position has remote work flexibility; onboarding will be virtual. Your Key Contributions To Our Partners Would Include: Brand Strategy: Leverage a deep understanding of brand marketing to collaborate on the successful building of effective, insight-driven B2B/HCP brand imperatives and sub-strategies. Omnichannel Planning: Oversee strategy and execution for omnichannel initiatives, guiding clients at varying levels of adoption; leverage data to shape customer journeys for key stakeholders/segments; orchestrate integration of online/offline channels for a unified customer experience. Digital Excellence: Provide thought leadership on digital marketing best practices and tactical implementation across channels to deliver on a seamless omnichannel customer experience. Positioning & Messaging: Shape strategic platforms and creative development of brands; map out and align brand messaging to strategic channels to influence customers. Presentations: Create dynamic and compelling executive presentations that deliver brand and digital strategy and new thinking in a clear story. Analysis: Create audience-centric strategies and define key performance indicators to support objectives and drive omnichannel campaigns; provide actionable insights and optimizations to drive results based on learnings. Creativity and innovation: Think big and creative across a wide range of strategic opportunities to support varying stages of a brand's lifecycle. Trend-watching: Follow cross-vertical trends and innovations to impact and influence healthcare strategies; identify strategic partners to strengthen digital capabilities and client recommendations. To Be Successful In This Role, You Will Need: 7+ years of experience in brand, digital, or engagement strategy or equivalent. People management experience. Significant background in healthcare, focus in pharmaceutical. An engaging leadership presence that comes across equally strong in person, over the phone, and through writing. Deeply familiar with omnichannel strategy and its executions, including data, media/social, field, and experiential activations. Strong business judgment, decision making, and analytical skills. Content marketing expertise to bring stories to life in decks and build positioning/messaging. A self-starter who is collaborative and works well in an agile, fast-moving, and entrepreneurial environment. Project and time management skills with the ability to work across multiple high-profile and high-budget programs at once, in collaboration with multidisciplinary team members. Bachelor's degree required. For Recruiter Only - Bonus If Experience/familiarity With: Veeva CRM. Salesforce Marketing Cloud. Google Analytics. SEO/SEM/Programmatic/Social. Modular content. Healthcare marketing principles, for example MLR review processes. Holding/participating in client workshops. Director/Sr. Director would be expected to, over time, manage approximately three direct reports on the strategy team. Salary: $145,000-$165,000. Omnicom's policy requires employees to work in the office for a minimum of three days a week, unless additional in-office days are directed by their agency or manager. Our objective is to increase this requirement over time, and many of our agencies as well as Omnicom's corporate group already require five days of in-office attendance. Omnicom is committed to hiring and developing exceptional talent. We agree that talent is uniquely distributed, and we're focused on developing inclusive teams that can bring the best solutions to everything we do. We strongly believe that celebrating what makes us different makes us better together. Join us, we look forward to getting to know you. We will process your personal data in accordance with our Recruitment Privacy Notice."
+  },
+  "classification": {
+    "targetLane": "pharma-experience-strategy-and-omnichannel-planning",
+    "evidenceMode": "balanced",
+    "primarySource": "resume",
+    "supportingSource": "portfolio",
+    "hardGateStatus": "pass",
+    "hardGates": [
+      {
+        "gate": "Seven or more years in brand, digital, engagement, or equivalent strategy",
+        "status": "pass",
+        "evidence": "The public resume documents 15 years across pharma agency work, client and brand strategy, healthcare experience strategy, enterprise marketing products, and AI implementation. It includes more than seven years managing Fortune 500 pharma accounts before later experience-strategy and director roles."
+      },
+      {
+        "gate": "Significant pharmaceutical healthcare background",
+        "status": "pass",
+        "evidence": "The public resume documents 11 years in pharma and healthcare communications across major brands, HCP and patient experiences, MLR review, FDA and HIPAA workflows, oncology work, and current pharma AI delivery."
+      },
+      {
+        "gate": "People leadership and management experience",
+        "status": "pass",
+        "evidence": "The public resume documents director-level leadership and scaling a distributed product design organization from two to 30 people across the United States and Poland."
+      },
+      {
+        "gate": "Bachelor's degree",
+        "status": "pass",
+        "evidence": "The public resume lists a BA in Labor Studies and Employee Relations from Rutgers University."
+      }
+    ]
+  },
+  "requirements": [
+    {
+      "id": "pharma-brand-strategy",
+      "text": "Guide pharma partners on insight-driven B2B and HCP brand strategy, imperatives, and sub-strategies.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "More than seven years managing Fortune 500 pharma and healthcare clients across major CNS, cardiovascular, metabolic, and sleep and wakefulness brands, with direct brand-planning and client-strategy responsibility.",
+        "Led research and experience strategy for pharma and healthcare work, including HCP, patient, and internal brand-team experiences."
+      ],
+      "resumeTerms": [
+        "pharma brand strategy",
+        "HCP"
+      ]
+    },
+    {
+      "id": "omnichannel-planning",
+      "text": "Oversee omnichannel strategy and execution, use data to shape customer journeys, and connect online and offline channels.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Served as one of two consumer leads on FCB Health's largest pharma account across TV, radio, digital, gaming, Times Square, unbranded campaigns, brand planning, and MLR review.",
+        "Built channel-scoring, benchmark, recommendation, and visualization workflows for client-facing digital experience audits."
+      ],
+      "resumeTerms": [
+        "omnichannel strategy",
+        "customer journeys"
+      ]
+    },
+    {
+      "id": "positioning-messaging-content",
+      "text": "Build strategic platforms, positioning, messaging, content plans, and clear executive stories for brands.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Translated client and brand strategy into briefs, creative feedback, production requirements, timelines, and MLR-ready deliverables across account, creative, UX, and development teams.",
+        "Designed investor-facing scientific positioning and content structure for a startup biopharma website and created presentation-ready client outputs for enterprise marketing analytics."
+      ],
+      "resumeTerms": [
+        "positioning and messaging",
+        "executive presentations"
+      ]
+    },
+    {
+      "id": "audience-insights-kpis",
+      "text": "Create audience-centered strategies, define KPIs, and turn campaign and market learning into useful recommendations and optimizations.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Led stakeholder research, competitive audits, journey mapping, and experience planning for patient and HCP programs.",
+        "Built a Digital Experience Audit that converted channel scoring, benchmarks, and performance inputs into recommendations, data visualization, and presentation-ready outputs."
+      ],
+      "resumeTerms": [
+        "audience-centered strategy",
+        "KPIs and optimization"
+      ]
+    },
+    {
+      "id": "digital-excellence",
+      "text": "Provide practical digital marketing leadership across channels and guide clients at different levels of omnichannel maturity.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Fifteen years across digital agency, healthcare, product, and experience-strategy roles with direct work spanning campaign experiences, enterprise analytics, brand theming, reusable systems, and client workshops.",
+        "The portfolio shows regulated pharma workflows, research systems, channel evaluation, and client-facing recommendation tools carried into usable product surfaces."
+      ],
+      "resumeTerms": [
+        "digital marketing strategy",
+        "omnichannel maturity"
+      ]
+    },
+    {
+      "id": "leadership-people-management",
+      "text": "Lead cross-functional teams, manage people, and maintain a strong client and executive presence.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Scaled a distributed product design organization from two to 30 people across the United States and Poland while supporting enterprise analytics used by more than 7,000 people across 22 brands.",
+        "Managed Fortune 500 healthcare clients and multimillion-dollar programs across account, strategy, creative, UX, development, production, and regulatory review teams."
+      ],
+      "resumeTerms": [
+        "people leadership",
+        "cross-functional leadership"
+      ]
+    },
+    {
+      "id": "project-budget-management",
+      "text": "Manage several high-profile, high-budget programs at once in a fast-moving agency environment.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Managed Fortune 500 pharma and healthcare accounts with USD 2M-50M+ budgets across multiple brands, channels, timelines, and MLR-ready deliverables.",
+        "Current work covers parallel pharma AI initiatives across brief intake, scoping, review routing, claim detection, submission capture, and regulatory monitoring."
+      ],
+      "resumeTerms": [
+        "high-budget programs",
+        "project and time management"
+      ]
+    },
+    {
+      "id": "healthcare-innovation",
+      "text": "Track trends, develop new strategic opportunities, and identify digital capabilities that strengthen healthcare recommendations.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Current pharma work turns emerging AI capabilities into governed tools for claim review, content risk, agency scoping, review routing, and FDA signal monitoring.",
+        "Earlier innovation and enterprise work connected research, analytics, design systems, and workflow prototypes to client and product decisions."
+      ],
+      "resumeTerms": [
+        "healthcare innovation",
+        "digital capabilities"
+      ]
+    }
+  ],
+  "fitGate": {
+    "supportedOverlap": [
+      "Eleven years in pharma and healthcare communications, including more than seven years managing Fortune 500 brands and USD 2M-50M+ programs.",
+      "Direct HCP and patient experience strategy through research, competitive audits, journey maps, content structures, digital product direction, and campaign experiences.",
+      "Direct integrated-channel leadership across TV, radio, digital, gaming, Times Square, unbranded campaigns, brand planning, and MLR review.",
+      "Director-level people leadership with a distributed team scaled from two to 30 and enterprise work used by more than 7,000 people across 22 brands.",
+      "Audience and performance insight systems that turn channel scoring, benchmarks, stakeholder research, and customer needs into recommendations and presentation-ready client outputs.",
+      "Current pharma innovation work across MLR claim detection, brief intake, scoping, routing, submission capture, and FDA signal monitoring."
+    ],
+    "unsupportedRequirements": [
+      "Veeva CRM experience is not documented.",
+      "Salesforce Marketing Cloud experience is not documented.",
+      "Google Analytics experience is not documented.",
+      "Named SEO, SEM, programmatic, and healthcare social-planning ownership is not documented.",
+      "Direct field-force activation ownership is not documented."
+    ],
+    "actualMismatches": [
+      "The resume lists Raleigh, North Carolina, while Omnicom policy requires at least three office days per week in New York and may increase that requirement. The application is practical only if the commute or relocation is workable."
+    ],
+    "missingEvidence": [
+      "A named Veeva CRM, Salesforce Marketing Cloud, or Google Analytics implementation.",
+      "A recent healthcare example covering field-force, experiential, paid social, SEO, SEM, or programmatic activation in detail.",
+      "The exact number of past direct reports and formal performance-management responsibilities.",
+      "Measured campaign results such as engagement, conversion, brand lift, or prescription behavior tied to an omnichannel strategy."
+    ],
+    "coverLetterBridge": {
+      "status": "not-needed",
+      "rationale": "The resume and portfolio already provide direct evidence for the role's core work: pharma brand and client strategy, HCP and patient experience planning, integrated-channel delivery, insight systems, regulated execution, executive-ready outputs, and director-level leadership. A cover letter is optional, but it is not needed to make the professional fit credible."
+    },
+    "recommendation": "Proceed as a strong fit. Lead with pharma brand and experience strategy, omnichannel campaign leadership, HCP and patient journeys, audience and performance insights, multimillion-dollar program ownership, and people leadership. Keep the named martech platforms, field activation depth, direct-report count, campaign-result metrics, and New York office feasibility explicit rather than implying proof that is not documented."
+  },
+  "resume": {
+    "summary": "Experience strategy and pharma marketing leader with 15 years across healthcare agencies, HCP and patient experiences, omnichannel programs, audience research, and digital product strategy. I bring 11 years in pharma and healthcare communications, including 7+ years managing Fortune 500 clients and USD 2M-50M+ programs, plus director-level leadership across research, analytics, design systems, and AI-enabled workflows. I turn customer insight, brand objectives, and regulatory requirements into clear plans that teams can carry through execution.",
+    "skills": [
+      {
+        "label": "Pharma Brand Strategy & HCP Experience",
+        "description": "HCP and patient strategy, brand planning, positioning and messaging, stakeholder research, competitive audits, client workshops, creative briefs, and MLR review"
+      },
+      {
+        "label": "Omnichannel Planning & Digital Marketing",
+        "description": "Omnichannel strategy, customer journeys, TV, radio, digital, gaming, unbranded campaigns, digital marketing strategy, omnichannel maturity, and cross-channel delivery"
+      },
+      {
+        "label": "Audience Insights, KPIs & Optimization",
+        "description": "Audience-centered strategy, channel scoring, benchmarks, KPIs and optimization, customer insights, data visualization, recommendations, and executive presentations"
+      },
+      {
+        "label": "People, Client & Program Leadership",
+        "description": "People leadership, cross-functional leadership, USD 2M-50M+ high-budget programs, project and time management, multidisciplinary delivery, healthcare innovation, and digital capabilities"
+      }
+    ],
+    "roles": {
+      "hedgehox": [
+        "Convert pharma agency needs into AI tools for MLR claim review, brief intake, scoping, review routing, submission capture, and FDA signal monitoring",
+        "Designed Claims Detector workflows that identify promotional claims, surface evidence gaps, and pre-populate audit-ready annotations before MLR submission",
+        "Built Scope Generator for pharma agency finance and operations teams to manage regional rate cards, brands, sub-brands, and natural-language scope changes",
+        "Developed FDA Warning Tool concepts that connect warning-letter patterns to content-risk guidance and practical client recommendations"
+      ],
+      "one-block-away": [
+        "Lead client discovery and problem framing, turning unclear business questions into testable product surfaces, messaging, demo narratives, and roadmap decisions",
+        "Built an AI content workflow that turns basic inputs into listing copy, social posts, ad copy, styling direction, and MLS and SEO-ready language in under 90 seconds"
+      ],
+      "kinesso": [
+        "Scaled product design from 2 to 30 people across the United States and Poland for enterprise analytics used by 7,000+ people across 22 white-label brands",
+        "Built the Digital Experience Audit workflow for channel scoring, benchmarks, recommendations, data visualization, and presentation-ready client outputs",
+        "Built a research discipline across a 20+ product marketing-intelligence suite using stakeholder roadshows, repeatable tools, workshops, Figma documentation, and feedback loops",
+        "Led experience and design-system strategy for marketing data visualization, dashboard building, brand theming, and reusable analytics components"
+      ],
+      "omnicom": [
+        "Supported oncology accounts by combining UX design and account-management experience to strengthen regulated healthcare strategy and delivery",
+        "Partnered across account, strategy, creative, and delivery teams, translating brand goals into clearer content structure, user flows, and digital recommendations"
+      ],
+      "heartbeat": [
+        "Led research and experience strategy for pharma and healthcare work, translating stakeholder input, competitive audits, and user needs into digital product and campaign direction",
+        "Created journey maps, content structures, user flows, wireframes, and prototypes for patient, HCP, and internal brand-team programs",
+        "Partnered with strategy, creative, account, and engineering teams to move recommendations from research findings into build-ready product and campaign experiences"
+      ],
+      "account-management": [
+        "Managed Fortune 500 pharma and healthcare clients with USD 2M-50M+ budgets across CNS and neurology, psychiatry, cardiovascular and metabolic, and sleep and wakefulness brands",
+        "Served as one of two consumer leads on FCB Health's largest pharma account across TV, radio, digital, gaming, Times Square, unbranded campaigns, brand planning, and MLR review",
+        "Translated client and brand strategy into briefs, creative feedback, production requirements, timelines, and MLR-ready deliverables across account, creative, UX, and development teams"
+      ]
+    }
+  },
+  "hero": {
+    "eyebrow": "Propeller Director, Experience Strategy",
+    "tags": [
+      "Pharma brand strategy",
+      "HCP omnichannel planning",
+      "Audience insight & optimization"
+    ],
+    "intro": "Propeller needs an experience strategy leader who can connect pharma brand objectives, customer insight, channel planning, and delivery. I bring 11 years in pharma and healthcare communications, 7+ years managing major brands and USD 2M-50M+ programs, and director-level leadership across HCP and patient journeys, omnichannel campaigns, research, analytics, and regulated digital workflows."
+  },
+  "contact": {
+    "prompt": "Hiring a pharma experience strategy leader who can connect customer insight, brand direction, and omnichannel execution? Email is the fastest way to reach me.",
+    "signoff": "Pharma strategy | HCP journeys | omnichannel execution"
+  },
+  "copyReview": {
+    "humanizerVersion": "2.2.0",
+    "mode": "surface-only",
+    "status": "passed",
+    "reviewedAt": "2026-07-23T00:11:07.433Z",
+    "copySha256": "8ff6d2c05d8444e084006a9c9c52df5a45b0830833eb3a11dbdea8e05271c9d7",
+    "preserved": [
+      "content",
+      "structure",
+      "claims",
+      "ending"
+    ],
+    "rewriteAuthorized": false,
+    "reviewMethod": "humanizer-skill",
+    "semanticPassAttested": true,
+    "staticChecksPassed": true,
+    "finalAntiAiPass": true,
+    "remainingTells": []
+  },
+  "constraints": {
+    "doNotClaim": [
+      "Veeva CRM experience",
+      "Salesforce Marketing Cloud experience",
+      "Google Analytics experience",
+      "Healthcare field-force activation ownership",
+      "Formal management of three direct reports",
+      "Measured prescription-lift outcomes",
+      "Current New York residency",
+      "Commitment to relocate"
+    ],
+    "blockedTerms": [
+      "Veeva expert",
+      "Salesforce Marketing Cloud expert",
+      "Google Analytics expert",
+      "field-force activation owner",
+      "managed three direct reports",
+      "New York-based"
+    ]
+  },
+  "privacy": {
+    "publicSafe": true,
+    "notes": "Contains only the public job description and sanitized resume and portfolio evidence. It excludes recruiter contact details, application answers, personal compensation boundaries, and private eligibility information."
+  },
+  "qa": {
+    "status": "qa-passed",
+    "builtAt": "2026-07-23T00:11:16.236Z",
+    "configInputSha256": "17e2e357a91de718a116a52c38eefcdfcade260175572d270ec32c627fdf9cc8",
+    "sourceResumeSha256": "375cc6566f5bbad5b95be9da551dfe87824378fb252222409d29ef32d334ca25",
+    "artifactHashes": {
+      "routeSha256": "c23e903d93f29d228f3cb2d93042ddc09c4a2bbdddc1752e150c0a2718175b42",
+      "resumePdfSha256": "c18e242db1e6d88e3f74fcd7801e77fa480cbaa6af9aef61aec415abcd8409f0",
+      "scopedProjectSha256": {}
+    },
+    "renderer": {
+      "browser": {
+        "name": "chrome-headless-shell",
+        "version": "Google Chrome for Testing 149.0.7827.55"
+      },
+      "htmlPath": "tmp/tailored-resumes/propeller-director-experience-strategy.html",
+      "pdfPath": "output/pdf/Wally-Mostafa-Propeller-Director-Experience-Strategy-Resume.pdf"
+    },
+    "ats": {
+      "ok": true,
+      "pdfPath": "output/pdf/Wally-Mostafa-Propeller-Director-Experience-Strategy-Resume.pdf",
+      "pageCount": 2,
+      "fileSize": 130792,
+      "annotations": [
+        {
+          "page": 1,
+          "uri": "mailto:wmostafa12@gmail.com"
+        },
+        {
+          "page": 1,
+          "uri": "https://linkedin.com/in/wallymo"
+        },
+        {
+          "page": 1,
+          "uri": "https://wallymo.github.io/propeller-director-experience-strategy/"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/6748"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/4629"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.red-dot.org/project/dxa-digital-experience-audit-55219"
+        }
+      ],
+      "coverage": [
+        {
+          "id": "pharma-brand-strategy",
+          "requirement": "Guide pharma partners on insight-driven B2B and HCP brand strategy, imperatives, and sub-strategies.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "pharma brand strategy",
+            "HCP"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "omnichannel-planning",
+          "requirement": "Oversee omnichannel strategy and execution, use data to shape customer journeys, and connect online and offline channels.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "omnichannel strategy",
+            "customer journeys"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "positioning-messaging-content",
+          "requirement": "Build strategic platforms, positioning, messaging, content plans, and clear executive stories for brands.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "positioning and messaging",
+            "executive presentations"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "audience-insights-kpis",
+          "requirement": "Create audience-centered strategies, define KPIs, and turn campaign and market learning into useful recommendations and optimizations.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "audience-centered strategy",
+            "KPIs and optimization"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "digital-excellence",
+          "requirement": "Provide practical digital marketing leadership across channels and guide clients at different levels of omnichannel maturity.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "digital marketing strategy",
+            "omnichannel maturity"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "leadership-people-management",
+          "requirement": "Lead cross-functional teams, manage people, and maintain a strong client and executive presence.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "people leadership",
+            "cross-functional leadership"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "project-budget-management",
+          "requirement": "Manage several high-profile, high-budget programs at once in a fast-moving agency environment.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "high-budget programs",
+            "project and time management"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "healthcare-innovation",
+          "requirement": "Track trends, develop new strategic opportunities, and identify digital capabilities that strengthen healthcare recommendations.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "healthcare innovation",
+            "digital capabilities"
+          ],
+          "missingTerms": []
+        }
+      ],
+      "failures": [],
+      "warnings": []
+    },
+    "humanizer": {
+      "status": "passed",
+      "version": "2.2.0",
+      "mode": "surface-only",
+      "reviewedAt": "2026-07-23T00:11:07.433Z",
+      "copySha256": "8ff6d2c05d8444e084006a9c9c52df5a45b0830833eb3a11dbdea8e05271c9d7",
+      "reviewMethod": "humanizer-skill",
+      "semanticPassAttested": true,
+      "staticChecksPassed": true
+    },
+    "route": {
+      "viewports": [
+        {
+          "name": "desktop",
+          "screenshot": "tmp/qa/propeller-director-experience-strategy/desktop.png",
+          "errors": []
+        },
+        {
+          "name": "mobile",
+          "screenshot": "tmp/qa/propeller-director-experience-strategy/mobile.png",
+          "errors": []
+        }
+      ],
+      "errors": []
+    }
+  }
+}
