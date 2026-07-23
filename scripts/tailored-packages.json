@@ -866,9 +866,26 @@
         "project-06.html"
       ],
       "resumePdfPath": "output/pdf/Wally-Mostafa-Fingerpaint-Medical-Account-Supervisor-Resume.pdf",
-      "publishStatus": "local-only",
+      "publishStatus": "live-verified",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-07-23T03:40:47.164Z"
+      "builtAt": "2026-07-23T03:40:47.164Z",
+      "verification": {
+        "verifiedAt": "2026-07-23T03:43:43.116Z",
+        "routeUrl": "https://wallymo.github.io/fingerpaint-medical-account-supervisor/",
+        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-Fingerpaint-Medical-Account-Supervisor-Resume.pdf",
+        "configUrl": "https://wallymo.github.io/scripts/packages/fingerpaint-medical-account-supervisor.json",
+        "projectUrls": [
+          "https://wallymo.github.io/project-01.html",
+          "https://wallymo.github.io/project-08.html",
+          "https://wallymo.github.io/project-06.html"
+        ],
+        "configSha256": "261afe0fc11d5e0e94deefc131cae500342f8b84dcf9b786464a82c4abe71a5b",
+        "pdfSha256": "03a4ba2a34ac47ee7f9678d36508f497e3e5a71ee35be2d51f89ef57a746b5b0",
+        "routeSha256": "215b25630d940702ea8f5cc90dff74b34fde19754c58fdcf512b50d347593f10",
+        "scopedProjectSha256": {},
+        "configInputSha256": "c1fb75e974c0514a0f03c8433ee29e66ef6d138ac0214825e7087d0b4d34e55f",
+        "qaBuiltAt": "2026-07-23T03:40:47.164Z"
+      }
     },
     {
       "workflowVersion": 2,
