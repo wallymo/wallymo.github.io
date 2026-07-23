@@ -1,0 +1,708 @@
+{
+  "workflowVersion": 2,
+  "contractRevision": 4,
+  "slug": "insight-global-ai-product-manager",
+  "roleTitle": "Insight Global AI Product Manager",
+  "artifactStem": "Insight-Global-AI-Product-Manager",
+  "fitClass": "adjacent",
+  "routeMode": "canonical-projects",
+  "selectedProjects": [
+    "project-01.html",
+    "project-02.html",
+    "project-03.html"
+  ],
+  "job": {
+    "company": "Insight Global healthcare client",
+    "roleTitle": "AI Product Manager",
+    "jobId": "not-listed",
+    "jobUrl": null,
+    "sourceChannel": "chat-pasted-jd",
+    "dateCaptured": "2026-07-23",
+    "location": "Remote with travel to Denver approximately once every 2-4 weeks",
+    "atsVendor": "unknown",
+    "rawJd": "About the job. Day-to-Day: Insight Global is looking to hire a REMOTE AI Product Manager for a healthcare organization focused on serving senior populations. This individual will act as the bridge between executive leadership, business stakeholders, and technical AI engineering teams to identify, evaluate, and prioritize enterprise AI opportunities. They will lead discovery sessions across business functions to uncover high-value use cases and develop AI product strategies that align with organizational goals. The AI Product Manager will own the product lifecycle from ideation and requirements gathering through planning, deployment, adoption, and ongoing optimization. They will partner closely with AI Engineers developing agentic AI solutions, copilots, and automation tools while ensuring each initiative is managed as a scalable enterprise product. This role will help define product roadmaps, success metrics, governance standards, and implementation approaches for AI initiatives built within Azure and Databricks environments. The ideal candidate has experience bringing AI products from concept to production and can effectively align business objectives with technical delivery. This is a 6-month contract-to-hire opportunity with occasional travel to Denver approximately once every 2-4 weeks and a pay range of $90-$105/hr W2 depending on experience. Must Haves: 6+ years of Product Management experience with a focus on AI, data, analytics, or digital products. Experience identifying, prioritizing, and managing AI/Generative AI use cases from discovery through deployment. Experience partnering with executive stakeholders and business leaders to gather requirements and define product roadmaps. Experience managing products built on Azure cloud, Databricks, and enterprise data platforms. Strong understanding of AI/ML concepts, LLMs, agentic AI solutions, and product lifecycle management. Plusses: Healthcare industry experience. Experience working with EHR, FHIR, HL7, or other healthcare data environments. Azure or Databricks certifications. Experience with Agile/Scrum product delivery methodologies. Experience launching Generative AI products, copilots, chatbots, or automation solutions. Familiarity with HIPAA, PHI, and data governance requirements."
+  },
+  "classification": {
+    "targetLane": "Enterprise healthcare AI product management",
+    "evidenceMode": "balanced",
+    "primarySource": "The resume shows AI product strategy, discovery, requirements, roadmap decisions, enterprise analytics, executive and client leadership, regulated healthcare delivery, and adoption work.",
+    "supportingSource": "The portfolio shows governed pharma AI workflows, client-led POC development, enterprise data products, and research-driven product decisions.",
+    "hardGateStatus": "pass",
+    "hardGates": [
+      {
+        "gate": "Six-plus years of product management focused on AI, data, analytics, or digital products",
+        "status": "pass",
+        "evidence": "Current AI product-strategy work runs from July 2023 to present, Kinesso adds more than three years of enterprise analytics and digital-product leadership, and earlier healthcare UX work adds product discovery and delivery. The package does not imply six years under a conventional Product Manager title."
+      },
+      {
+        "gate": "AI and generative-AI use cases managed from discovery through deployment",
+        "status": "pass",
+        "evidence": "Current work covers discovery, requirements, roadmap decisions, governed LLM workflows, working POCs, prototype validation, production handoff, and stakeholder adoption. Full ownership of an enterprise production deployment is not documented."
+      },
+      {
+        "gate": "Executive stakeholder partnership, requirements gathering, and product roadmaps",
+        "status": "pass",
+        "evidence": "Investor demos, Fortune 500 client leadership, stakeholder workshops, product discovery, roadmap decisions, and enterprise product roadshows show direct business-to-delivery translation."
+      },
+      {
+        "gate": "Experience managing Azure, Databricks, and enterprise data products",
+        "status": "pass",
+        "evidence": "Kinesso work directly supports enterprise analytics, dashboards, data visualization, product and engineering partnership, and adoption across 7,000+ users and 22 brands. Azure and Databricks are not named in the public evidence and remain the main platform gap."
+      },
+      {
+        "gate": "Remote work and occasional Denver travel",
+        "status": "not-applicable",
+        "evidence": "The resume lists Raleigh, North Carolina and current remote roles. The public package does not assert private travel availability, which should be confirmed during the application."
+      }
+    ]
+  },
+  "requirements": [
+    {
+      "id": "product-management-tenure",
+      "text": "Bring six-plus years of product management experience focused on AI, data, analytics, or digital products.",
+      "priority": "core",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Current work since July 2023 directly covers AI product strategy, discovery, requirements, working prototypes, roadmap decisions, implementation, and client iteration.",
+        "Kinesso work from 2020 through 2023 covered enterprise analytics and digital-product leadership at scale, while earlier healthcare UX work adds product discovery and delivery."
+      ],
+      "resumeTerms": [
+        "product strategy",
+        "enterprise analytics",
+        "digital product direction",
+        "roadmap decisions"
+      ]
+    },
+    {
+      "id": "ai-use-case-lifecycle",
+      "text": "Identify, prioritize, and manage AI and generative-AI use cases from discovery through deployment, adoption, and optimization.",
+      "priority": "core",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "One Block Away turns unclear client questions into scoped product decisions, working AI POCs, demo feedback, and roadmap choices.",
+        "Hedgehox converts pharma agency needs into governed AI workflows for claims review, intake, scoping, routing, submission capture, and FDA monitoring.",
+        "The evidence covers production handoff and adoption, but not full ownership of an enterprise AI deployment after launch."
+      ],
+      "resumeTerms": [
+        "discovery",
+        "requirements",
+        "working prototype",
+        "production handoff",
+        "adoption"
+      ]
+    },
+    {
+      "id": "executive-discovery-roadmaps",
+      "text": "Lead discovery with executive and business stakeholders, gather requirements, prioritize opportunities, and define product roadmaps.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Investor demos, client workshops, stakeholder roadshows, and seven-plus years of Fortune 500 client leadership show direct senior-stakeholder communication.",
+        "Current product work translates business questions into requirements, product surfaces, demo flows, implementation decisions, and roadmaps."
+      ],
+      "resumeTerms": [
+        "stakeholder",
+        "client workshops",
+        "requirements",
+        "roadmap decisions"
+      ]
+    },
+    {
+      "id": "azure-databricks-enterprise-data",
+      "text": "Manage products built on Azure, Databricks, and enterprise data platforms.",
+      "priority": "core",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Kinesso work covered enterprise analytics, dashboard building, data visualization, reusable product systems, and adoption across more than 7,000 users and 22 brands.",
+        "The public evidence does not name Azure, Databricks, or direct cloud-platform ownership."
+      ],
+      "resumeTerms": [
+        "enterprise analytics",
+        "data visualization",
+        "dashboard building",
+        "product and engineering"
+      ]
+    },
+    {
+      "id": "ai-ml-llm-agentic-products",
+      "text": "Understand AI and ML concepts, LLMs, agentic AI solutions, copilots, automation, and product lifecycle management.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The resume directly documents governed LLM and VLM workflows, RAG and knowledge bases, prompt-defined criteria, model orchestration, and human-review surfaces.",
+        "Claims Detector, ListingPal, WeReady, Scope Generator, and the FDA Warning Tool show AI workflows applied to distinct business and user decisions."
+      ],
+      "resumeTerms": [
+        "LLM/VLM workflows",
+        "RAG/knowledge bases",
+        "model orchestration",
+        "AI workflow design"
+      ]
+    },
+    {
+      "id": "roadmaps-metrics-governance-adoption",
+      "text": "Define product roadmaps, success metrics, governance standards, implementation approaches, adoption plans, and ongoing optimization.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Current AI work uses roadmap decisions, prompt-defined criteria, evidence gaps, audit-ready annotations, review routing, and human oversight to shape governed products.",
+        "Enterprise work adds benchmarks, analytics, research feedback, reusable standards, and adoption across 7,000+ users and 22 brands."
+      ],
+      "resumeTerms": [
+        "roadmap decisions",
+        "benchmarks",
+        "audit-ready",
+        "human review",
+        "adoption"
+      ]
+    },
+    {
+      "id": "healthcare-domain",
+      "text": "Bring healthcare-industry experience, ideally with regulated healthcare products and stakeholders.",
+      "priority": "preferred",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The resume documents 11 years across pharma and healthcare communications, patient and HCP work, oncology, major pharma brands, and current regulated AI delivery.",
+        "Current work is shaped by FDA, HIPAA, and MLR review requirements."
+      ],
+      "resumeTerms": [
+        "regulated healthcare",
+        "FDA/HIPAA/MLR",
+        "patient",
+        "HCP"
+      ]
+    },
+    {
+      "id": "ehr-fhir-hl7",
+      "text": "Bring experience with EHR, FHIR, HL7, or other healthcare-data environments.",
+      "priority": "preferred",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "resumeTerms": [
+        "EHR",
+        "FHIR",
+        "HL7"
+      ]
+    },
+    {
+      "id": "azure-databricks-certifications",
+      "text": "Hold Azure or Databricks certifications.",
+      "priority": "preferred",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "resumeTerms": [
+        "Azure certification",
+        "Databricks certification"
+      ]
+    },
+    {
+      "id": "agile-scrum-delivery",
+      "text": "Use Agile or Scrum product-delivery methods.",
+      "priority": "preferred",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "The portfolio shows iterative POC delivery, early stakeholder feedback, prototype validation, technical implementation, and product revision.",
+        "The resume does not name formal Scrum ownership, sprint planning, or an Agile certification."
+      ],
+      "resumeTerms": [
+        "iterating",
+        "prototype validation",
+        "client iteration",
+        "product and engineering"
+      ]
+    },
+    {
+      "id": "generative-ai-launches",
+      "text": "Launch generative-AI products, copilots, chatbots, or automation solutions.",
+      "priority": "preferred",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Claims Detector, ListingPal, WeReady, Scope Generator, and other AI tools provide direct working-product and automation evidence.",
+        "The public evidence does not establish a named copilot or chatbot launched as an enterprise production product."
+      ],
+      "resumeTerms": [
+        "AI POCs",
+        "Claims Detector",
+        "ListingPal",
+        "Scope Generator"
+      ]
+    },
+    {
+      "id": "hipaa-phi-data-governance",
+      "text": "Understand HIPAA, PHI, and data-governance requirements.",
+      "priority": "preferred",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The resume directly documents HIPAA alongside FDA and MLR workflows, patient and HCP experiences, evidence gaps, audit-ready annotations, and human review.",
+        "Direct ownership of PHI architecture, access controls, or enterprise data-governance policy is not documented."
+      ],
+      "resumeTerms": [
+        "HIPAA",
+        "audit-ready annotations",
+        "human review",
+        "regulated healthcare"
+      ]
+    }
+  ],
+  "fitGate": {
+    "supportedOverlap": [
+      "Current AI product work covers discovery, requirements, workflow design, working POCs, roadmap decisions, implementation choices, production handoff, and stakeholder adoption.",
+      "Eleven years in pharma and healthcare include FDA, HIPAA, MLR, patient, HCP, agency, and client contexts.",
+      "Enterprise analytics and product systems reached more than 7,000 users across 22 white-label brands.",
+      "Investor demos, client workshops, stakeholder roadshows, and Fortune 500 account leadership support executive and business translation.",
+      "The resume directly supports LLM and VLM workflows, RAG and knowledge bases, prompt-defined criteria, model orchestration, and human review.",
+      "Cross-functional work connects business, product, UX, research, engineering, analytics, finance, operations, and regulated review."
+    ],
+    "unsupportedRequirements": [
+      "Direct Azure cloud product ownership is not documented.",
+      "Direct Databricks product ownership is not documented.",
+      "Six-plus years under a conventional Product Manager title is not documented.",
+      "Full ownership of an enterprise AI product after production deployment is not documented.",
+      "EHR, FHIR, HL7, or senior-population product experience is not documented.",
+      "Azure or Databricks certifications are not documented.",
+      "Formal Scrum ownership, sprint planning, or Agile certification is not documented.",
+      "A named enterprise copilot or chatbot launch is not documented.",
+      "PHI architecture, access-control, or enterprise data-governance policy ownership is not documented."
+    ],
+    "actualMismatches": [
+      "The recent operating center combines AI product strategy, implementation, UX, and client-led POC delivery rather than a conventional software Product Manager title history.",
+      "The enterprise data-platform evidence is strong in analytics, dashboards, data visualization, and adoption, but it does not name Azure or Databricks.",
+      "The healthcare background is pharma, agency, patient, and HCP work rather than senior-population care or EHR interoperability."
+    ],
+    "missingEvidence": [
+      "A product roadmap, backlog, or release history for an Azure and Databricks platform.",
+      "A production AI launch with post-release adoption, quality, cost, and optimization metrics.",
+      "A formal Product Manager title spanning six or more years.",
+      "EHR integration, FHIR resources, HL7 messages, or healthcare interoperability work.",
+      "A Scrum product cadence with named ceremonies, backlog ownership, and release planning.",
+      "Direct PHI data-classification, access-control, retention, or governance-policy ownership.",
+      "Confirmed availability for Denver travel every two to four weeks."
+    ],
+    "coverLetterBridge": {
+      "status": "recommended",
+      "rationale": "We can make the case with a cover letter by connecting current AI product strategy, enterprise analytics delivery, regulated healthcare work, and executive stakeholder translation to the client's need for scalable AI products. The cover letter must state that direct Azure and Databricks ownership, six years under a conventional Product Manager title, and EHR, FHIR, or HL7 experience are not established."
+    },
+    "recommendation": "Proceed as adjacent. Lead with AI product discovery, working POCs, governed healthcare workflows, enterprise analytics scale, executive translation, and adoption. Do not claim direct Azure or Databricks ownership, six years under a Product Manager title, full enterprise production deployment, EHR interoperability, senior-population expertise, certifications, or formal Scrum ownership."
+  },
+  "resume": {
+    "foundationId": "wally-mostafa-resume-2026-07-03",
+    "summary": "AI implementation and product strategy lead with 15 years across pharma, enterprise UX, client strategy, and regulated AI delivery. I turn ambiguous workflows into governed AI tools, demo-ready POCs, and build-ready product systems. My strength is bridging client translation, workflow design, model behavior, and adoption so teams can trust and use the product after the demo.",
+    "skills": [
+      {
+        "label": "AI Implementation & Workflow Design",
+        "description": "Governed LLM/VLM workflows, multimodal review, RAG/knowledge bases, prompt-defined criteria, model orchestration, and human review surfaces"
+      },
+      {
+        "label": "Product Strategy & POC Delivery",
+        "description": "Discovery, scoping, requirements, prototype validation, demo narratives, build-ready logic, and production handoff"
+      },
+      {
+        "label": "Regulated Healthcare & Client Delivery",
+        "description": "11 years across pharma/healthcare communications, FDA/HIPAA/MLR workflows, HCP/patient UX, client workshops, and stakeholder adoption"
+      },
+      {
+        "label": "Enterprise UX & Design Systems",
+        "description": "Team scaling (2 to 30), enterprise analytics, workflow UX, data visualization, component libraries, and accessibility (WCAG)"
+      }
+    ],
+    "roles": {
+      "hedgehox": [
+        "Secured an investor for proprietary Claims Detection software by building the functional POC, shaping the product story, and iterating with stakeholders",
+        "Designed Claims Detector workflows that identify promotional claims, surface evidence gaps, and pre-populate audit-ready annotations before MLR submission",
+        "Translated pharma agency needs into AI product requirements for MLR claim review, brief intake, scoping, review routing, submission capture, and FDA signal monitoring",
+        "Designed the full Xenagos Bio startup biopharma website from scratch, including investor-facing structure, scientific positioning, visual direction, and hidden design-system handoff",
+        "Built Scope Generator for pharma agency finance and operations teams to manage regional rate cards, brands, sub-brands, and natural-language scope changes",
+        "Developed FDA Warning Tool concepts that connect warning-letter patterns to content-risk guidance for pharma teams"
+      ],
+      "one-block-away": [
+        "Build client-led AI POCs that turn unclear business questions into testable product surfaces, demo flows, and roadmap decisions",
+        "Built ListingPal's AI listing-generation POC and landing page, turning basic property inputs into listing copy, social posts, ad copy, styling direction, and MLS/SEO-ready language in under 90 seconds",
+        "Built WeReady's Bailey Intelligence dashboard, translating founder inputs, GitHub signals, source health, risk scoring, and evidence trails into startup-readiness workflows",
+        "Own product strategy, UX, AI workflow design, front-end build, backend logic, demo readiness, and client iteration from first ask through working prototype",
+        "Currently building the website and sponsor strategy for a Tunisia youth soccer program, positioning the project for player advancement, community support, and donor outreach"
+      ],
+      "kinesso": [
+        "Scaled product design from 2 to 30 people across the US and Poland for enterprise analytics used by 7,000+ users across 22 white-label brands",
+        "Led UX and design-system strategy with product and engineering for MIE data visualization, dashboard building, brand theming, and reusable analytics components",
+        "Built the Digital Experience Audit workflow for channel scoring, benchmarks, recommendations, visualization, and presentation-ready client outputs",
+        "Design-system and analytics work earned 5 Indigo Gold, 4 Indigo Silver, and Red Dot recognition",
+        "Built a repeatable research model across a 20+ product suite using interviews, prototype testing, Typeform, Useberry, Heap analytics, standardized findings, and stakeholder roadshows to guide product decisions"
+      ],
+      "omnicom": [
+        "Supported oncology accounts as a freelance UX designer, combining UX design and account-management experience to strengthen regulated healthcare work",
+        "Worked across account, strategy, creative, and delivery teams to translate brand goals into clearer user flows, content structure, and digital recommendations"
+      ],
+      "heartbeat": [
+        "Led UX research and experience strategy for pharma and healthcare work, translating stakeholder input, competitive audits, and user needs into digital product direction",
+        "Created journey maps, site maps, user flows, wireframes, and prototypes for patient, HCP, and internal brand-team experiences across regulated healthcare programs",
+        "Partnered with strategy, creative, account, and engineering teams to move stakeholder and user findings into prioritized, build-ready product and campaign experiences"
+      ],
+      "account-management": [
+        "7+ years managing Fortune 500 pharma and healthcare clients with $2M-$50M+ budgets across CNS/neurology, psychiatry, cardiovascular/metabolic, and sleep/wakefulness brands including NUVIGIL, Namenda XR, Lipitor, and Zoloft",
+        "One of two account consumer leads on FCB Health's largest pharma account across all verticals: TV, radio, digital, gaming, Times Square, unbranded campaigns, brand planning, and MLR review",
+        "Translated client and brand strategy into briefs, creative feedback, production requirements, priorities, timelines, and MLR-ready delivery across account, creative, UX, and development teams"
+      ]
+    },
+    "sourceBulletIds": {
+      "hedgehox": [
+        "hedgehox-01",
+        "hedgehox-02",
+        "hedgehox-03",
+        "hedgehox-04",
+        "hedgehox-05",
+        "hedgehox-06"
+      ],
+      "one-block-away": [
+        "one-block-away-01",
+        "one-block-away-02",
+        "one-block-away-03",
+        "one-block-away-04",
+        "one-block-away-05"
+      ],
+      "kinesso": [
+        "kinesso-01",
+        "kinesso-02",
+        "kinesso-03",
+        "kinesso-04",
+        "addition:insight-global-ai-product-manager-01"
+      ],
+      "omnicom": [
+        "omnicom-01",
+        "omnicom-02"
+      ],
+      "heartbeat": [
+        "heartbeat-01",
+        "heartbeat-02",
+        "heartbeat-03"
+      ],
+      "account-management": [
+        "account-management-01",
+        "account-management-02",
+        "account-management-03"
+      ]
+    }
+  },
+  "hero": {
+    "eyebrow": "Insight Global AI Product Manager",
+    "tags": [
+      "Healthcare AI product strategy",
+      "Enterprise discovery & roadmaps",
+      "Governed delivery & adoption"
+    ],
+    "intro": "I build AI products by connecting business discovery to technical delivery. My recent work covers governed LLM workflows, requirements and roadmap decisions, working POCs, and product handoff. I also led enterprise analytics experiences used by more than 7,000 people across 22 brands and bring 11 years in regulated healthcare. For this role, I would connect senior leaders and healthcare stakeholders with AI engineers while keeping governance and adoption in the product plan."
+  },
+  "contact": {
+    "prompt": "Hiring an AI product manager who can connect healthcare use cases with technical delivery and product adoption? Email is the fastest way to reach me.",
+    "signoff": "Healthcare AI · enterprise product roadmaps · governed adoption"
+  },
+  "copyReview": {
+    "humanizerVersion": "2.2.0",
+    "mode": "surface-only",
+    "status": "passed",
+    "reviewedAt": "2026-07-23T22:54:21.808Z",
+    "copySha256": "3b4c8cb33fbf11b34313a0ef1aed9aac7f1cb900b88c4a7518d06912c445f349",
+    "preserved": [
+      "content",
+      "structure",
+      "claims",
+      "ending"
+    ],
+    "rewriteAuthorized": false,
+    "reviewMethod": "humanizer-skill",
+    "semanticPassAttested": true,
+    "staticChecksPassed": true,
+    "finalAntiAiPass": true,
+    "remainingTells": []
+  },
+  "constraints": {
+    "doNotClaim": [
+      "Six or more years under a Product Manager title",
+      "Direct Azure cloud product ownership",
+      "Direct Databricks product ownership",
+      "Azure certification",
+      "Databricks certification",
+      "EHR product experience",
+      "FHIR implementation experience",
+      "HL7 implementation experience",
+      "Senior-population healthcare product expertise",
+      "Full enterprise AI production deployment ownership",
+      "Formal Scrum product ownership",
+      "Enterprise copilot launch ownership",
+      "Enterprise chatbot launch ownership",
+      "PHI architecture ownership",
+      "Enterprise data-governance policy ownership",
+      "Confirmed availability for Denver travel"
+    ],
+    "blockedTerms": [
+      "6+ years as a Product Manager",
+      "Azure product owner",
+      "Databricks product owner",
+      "Azure certified",
+      "Databricks certified",
+      "EHR expert",
+      "FHIR expert",
+      "HL7 expert",
+      "senior-care product expert",
+      "owned enterprise AI deployment",
+      "Scrum Product Owner",
+      "launched enterprise copilots",
+      "launched enterprise chatbots",
+      "PHI architect"
+    ]
+  },
+  "privacy": {
+    "publicSafe": true,
+    "notes": "Contains only the public job description and sanitized resume and portfolio evidence. It excludes recruiter contact details, application answers, private compensation boundaries, work-authorization details, and unverified travel availability."
+  },
+  "qa": {
+    "status": "qa-passed",
+    "builtAt": "2026-07-23T22:57:30.348Z",
+    "configInputSha256": "4bdc3c2c3d117b49bb847112e834af46eff2435e5119d3ad18901daf7d24687c",
+    "sourceResumeSha256": "d8887edc4d7e46a6747641743cd048d4889deaa90c9b9567388ef44f5679bfbe",
+    "resumeFoundation": {
+      "id": "wally-mostafa-resume-2026-07-03",
+      "sourcePdfSha256": "f9b05b6c3c134262b1af6c5734363daf4385cf335407a139779a37d138adf1aa"
+    },
+    "artifactHashes": {
+      "routeSha256": "a47435cd11930854a3d67089fa1b2944e8f26c85d2c54deeebda95d6cdc5ad8c",
+      "resumePdfSha256": "2400cf3269842d3695c7c938ff1a4cbb47ad45997913105f1115c42dfc0fa3d9",
+      "scopedProjectSha256": {}
+    },
+    "renderer": {
+      "browser": {
+        "name": "chrome-headless-shell",
+        "version": "Google Chrome for Testing 149.0.7827.55"
+      },
+      "htmlPath": "tmp/tailored-resumes/insight-global-ai-product-manager.html",
+      "pdfPath": "output/pdf/Wally-Mostafa-Insight-Global-AI-Product-Manager-Resume.pdf"
+    },
+    "ats": {
+      "ok": true,
+      "pdfPath": "output/pdf/Wally-Mostafa-Insight-Global-AI-Product-Manager-Resume.pdf",
+      "pageCount": 2,
+      "fileSize": 139665,
+      "annotations": [
+        {
+          "page": 1,
+          "uri": "mailto:wmostafa12@gmail.com"
+        },
+        {
+          "page": 1,
+          "uri": "https://linkedin.com/in/wallymo"
+        },
+        {
+          "page": 1,
+          "uri": "https://wallymo.github.io/insight-global-ai-product-manager/"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/6748"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/4629"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.red-dot.org/project/dxa-digital-experience-audit-55219"
+        }
+      ],
+      "coverage": [
+        {
+          "id": "product-management-tenure",
+          "requirement": "Bring six-plus years of product management experience focused on AI, data, analytics, or digital products.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "product strategy",
+            "enterprise analytics",
+            "digital product direction",
+            "roadmap decisions"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "ai-use-case-lifecycle",
+          "requirement": "Identify, prioritize, and manage AI and generative-AI use cases from discovery through deployment, adoption, and optimization.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "discovery",
+            "requirements",
+            "working prototype",
+            "production handoff",
+            "adoption"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "executive-discovery-roadmaps",
+          "requirement": "Lead discovery with executive and business stakeholders, gather requirements, prioritize opportunities, and define product roadmaps.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "stakeholder",
+            "client workshops",
+            "requirements",
+            "roadmap decisions"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "azure-databricks-enterprise-data",
+          "requirement": "Manage products built on Azure, Databricks, and enterprise data platforms.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "enterprise analytics",
+            "data visualization",
+            "dashboard building",
+            "product and engineering"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "ai-ml-llm-agentic-products",
+          "requirement": "Understand AI and ML concepts, LLMs, agentic AI solutions, copilots, automation, and product lifecycle management.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "LLM/VLM workflows",
+            "RAG/knowledge bases",
+            "model orchestration",
+            "AI workflow design"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "roadmaps-metrics-governance-adoption",
+          "requirement": "Define product roadmaps, success metrics, governance standards, implementation approaches, adoption plans, and ongoing optimization.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "roadmap decisions",
+            "benchmarks",
+            "audit-ready",
+            "human review",
+            "adoption"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "healthcare-domain",
+          "requirement": "Bring healthcare-industry experience, ideally with regulated healthcare products and stakeholders.",
+          "priority": "preferred",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "regulated healthcare",
+            "FDA/HIPAA/MLR",
+            "patient",
+            "HCP"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "ehr-fhir-hl7",
+          "requirement": "Bring experience with EHR, FHIR, HL7, or other healthcare-data environments.",
+          "priority": "preferred",
+          "evidenceStatus": "none",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "EHR",
+            "FHIR",
+            "HL7"
+          ]
+        },
+        {
+          "id": "azure-databricks-certifications",
+          "requirement": "Hold Azure or Databricks certifications.",
+          "priority": "preferred",
+          "evidenceStatus": "none",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "Azure certification",
+            "Databricks certification"
+          ]
+        },
+        {
+          "id": "agile-scrum-delivery",
+          "requirement": "Use Agile or Scrum product-delivery methods.",
+          "priority": "preferred",
+          "evidenceStatus": "adjacent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "iterating",
+            "prototype validation",
+            "client iteration",
+            "product and engineering"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "generative-ai-launches",
+          "requirement": "Launch generative-AI products, copilots, chatbots, or automation solutions.",
+          "priority": "preferred",
+          "evidenceStatus": "adjacent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "AI POCs",
+            "Claims Detector",
+            "ListingPal",
+            "Scope Generator"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "hipaa-phi-data-governance",
+          "requirement": "Understand HIPAA, PHI, and data-governance requirements.",
+          "priority": "preferred",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "HIPAA",
+            "audit-ready annotations",
+            "human review",
+            "regulated healthcare"
+          ],
+          "missingTerms": []
+        }
+      ],
+      "failures": [],
+      "warnings": []
+    },
+    "humanizer": {
+      "status": "passed",
+      "version": "2.2.0",
+      "mode": "surface-only",
+      "reviewedAt": "2026-07-23T22:54:21.808Z",
+      "copySha256": "3b4c8cb33fbf11b34313a0ef1aed9aac7f1cb900b88c4a7518d06912c445f349",
+      "reviewMethod": "humanizer-skill",
+      "semanticPassAttested": true,
+      "staticChecksPassed": true
+    },
+    "route": {
+      "viewports": [
+        {
+          "name": "desktop",
+          "screenshot": "tmp/qa/insight-global-ai-product-manager/desktop.png",
+          "errors": []
+        },
+        {
+          "name": "mobile",
+          "screenshot": "tmp/qa/insight-global-ai-product-manager/mobile.png",
+          "errors": []
+        }
+      ],
+      "errors": []
+    }
+  }
+}

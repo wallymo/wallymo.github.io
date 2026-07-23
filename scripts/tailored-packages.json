@@ -1303,6 +1303,26 @@
       }
     },
     {
+      "workflowVersion": 2,
+      "slug": "insight-global-ai-product-manager",
+      "roleTitle": "Insight Global AI Product Manager",
+      "artifactStem": "Insight-Global-AI-Product-Manager",
+      "configPath": "scripts/packages/insight-global-ai-product-manager.json",
+      "targetLane": "Enterprise healthcare AI product management",
+      "evidenceMode": "balanced",
+      "fitClass": "adjacent",
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-01.html",
+        "project-02.html",
+        "project-03.html"
+      ],
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Insight-Global-AI-Product-Manager-Resume.pdf",
+      "publishStatus": "local-only",
+      "qaStatus": "qa-passed",
+      "builtAt": "2026-07-23T22:57:30.348Z"
+    },
+    {
       "slug": "insight-global-senior-ux-designer",
       "roleTitle": "Insight Global Senior UX Designer",
       "fitClass": "strong",
