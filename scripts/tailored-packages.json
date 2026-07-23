@@ -1646,9 +1646,27 @@
         "project-07.html"
       ],
       "resumePdfPath": "output/pdf/Wally-Mostafa-OX-Director-User-Experience-Resume.pdf",
-      "publishStatus": "local-only",
+      "publishStatus": "live-verified",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-07-23T21:05:16.173Z"
+      "builtAt": "2026-07-23T21:05:16.173Z",
+      "verification": {
+        "verifiedAt": "2026-07-23T21:09:35.383Z",
+        "routeUrl": "https://wallymo.github.io/ox-director-user-experience/",
+        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-OX-Director-User-Experience-Resume.pdf",
+        "configUrl": "https://wallymo.github.io/scripts/packages/ox-director-user-experience.json",
+        "projectUrls": [
+          "https://wallymo.github.io/project-04.html",
+          "https://wallymo.github.io/project-03.html",
+          "https://wallymo.github.io/project-06.html",
+          "https://wallymo.github.io/project-07.html"
+        ],
+        "configSha256": "bc2ed362f6e5e3ab21ee2defdbe348ee17ef49e071392f36b05249dc169eb06d",
+        "pdfSha256": "9d1b0c9996d6e827715ea4ba935cef9928646584558f6470ba344b858c4b04a4",
+        "routeSha256": "246e502d6cf705b2a7d09d7e14327003b7c36f92a0196fb33ae053312667fed8",
+        "scopedProjectSha256": {},
+        "configInputSha256": "7ca64de7a08c5076e83eeed5b9dc68eff05f1415d29874c8be3d187f47f67ad2",
+        "qaBuiltAt": "2026-07-23T21:05:16.173Z"
+      }
     },
     {
       "workflowVersion": 2,
