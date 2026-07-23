@@ -1,0 +1,616 @@
+{
+  "workflowVersion": 2,
+  "contractRevision": 4,
+  "slug": "learningmate-business-analyst-product-owner",
+  "roleTitle": "LearningMate Business Analyst/Product Owner",
+  "artifactStem": "LearningMate-Business-Analyst-Product-Owner",
+  "fitClass": "adjacent",
+  "routeMode": "canonical-projects",
+  "selectedProjects": [
+    "project-02.html",
+    "project-04.html",
+    "project-05.html"
+  ],
+  "job": {
+    "company": "LearningMate",
+    "roleTitle": "Business Analyst/Product Owner",
+    "sourceChannel": "chat-pasted-jd",
+    "dateCaptured": "2026-07-23",
+    "location": "Remote, United States; Eastern Time preferred",
+    "atsVendor": "unknown",
+    "rawJd": "About the job\nLocation: Remote, United States (Eastern Time preferred)\n\nThe Business Analyst/Product Owner serves as the bridge between client vision and global technical execution.\n\nDirectly reporting to the Program Manager, they take full ownership of client accounts, ensuring that our digital learning solutions not only meet specifications but also drive successful educational outcomes.\n\nKey Responsibilities\n\n1. Stakeholder Management & Strategy\n\nAct as the primary point of contact for diverse client stakeholders.\nNavigate dynamic client environments to extract true business needs versus \"nice-to-have\" requests.\nManage client expectations and maintain a transparent, high-trust relationship to ensure account retention and success.\n\n2. Global Team Guidance & Alignment\n\nBe the \"voice of the client\" for offshore development teams, ensuring they understand the why behind the features.\nProvide clear, actionable guidance to remote engineering teams to ensure delivery aligns with the broader client perspective and quality standards.\nCoordinate effectively across different regions to ensure the development pipeline never stalls.\n\n3. Product Ownership & Documentation\n\nDefine the product vision and maintain a prioritized backlog that balances client urgency with long-term platform stability.\nTranslate high-level business requirements into detailed User Stories, Flowcharts, and Functional Specifications.\nOwn the \"Definition of Ready\" and \"Definition of Done,\" ensuring the engineering team has zero ambiguity.\n\n4. Account Ownership & Delivery\n\nPartner closely with the Program Manager to track project health, risks, and milestones.\nLead Sprint Demos and UAT (User Acceptance Testing) sessions with clients to secure sign-offs.\nProactively manage scheduling to support client meetings and team huddles as needed.\n\nQualifications\n\nBachelor's Degree in Computer Science, Business Administration, or an education-related field.\n3-5 years experience in a dual PO/BA role, ideally within EdTech or SaaS.\nHighly proficient in data analysis, market understanding, and problem-solving.\nProven experience working with offshore/distributed teams.\nAbility to mentor team members on client business logic.\nCapable of working flexible hours to ensure success, appearing on calls and syncs as needed to support a dynamic, global workflow.\nDeep Technical Literacy, with ability to discuss high-level strategy with senior stakeholders and granular logic with backend Engineers, and to translate technical jargon into educational value.\nProficiency in Agile methodologies, Jira, Confluence, and wireframing tools (Figma/Balsamiq, etc.).\n\nWork Conditions\n\nCoordination with the teams globally may require calls/meetings outside of core hours. LearningMate has offices in India, the U.S.A., and global clients, with employees worldwide.\nThe work environment is primarily indoors at home and as needed, at a client's office or other settings, with minimal to moderate noise; travel will include outdoor environmental elements.\n\nLearningMate is an Equal Opportunity Employer."
+  },
+  "classification": {
+    "targetLane": "client-facing-business-analysis-and-product-ownership",
+    "evidenceMode": "resume-primary",
+    "primarySource": "The resume directly documents client-account ownership, requirements translation, distributed product delivery, enterprise software work, technical product literacy, and cross-functional execution.",
+    "supportingSource": "The portfolio adds client-led product demos, Figma research documentation, user flows, wireframes, prototype testing, analytics workflows, and enterprise SaaS design-system evidence.",
+    "hardGateStatus": "pass",
+    "hardGates": [
+      {
+        "gate": "Remote in the United States with Eastern Time preferred",
+        "status": "pass",
+        "evidence": "The public resume lists Raleigh, North Carolina, which is in Eastern Time and within the required United States location."
+      },
+      {
+        "gate": "Bachelor's degree",
+        "status": "pass",
+        "evidence": "The public resume documents a BA in Labor Studies and Employee Relations from Rutgers University. The degree is complete, though its field differs from the majors named in the posting."
+      },
+      {
+        "gate": "Three to five years performing combined product-ownership and business-analysis work",
+        "status": "pass",
+        "evidence": "Six-plus years of product, UX, and technical delivery work cover discovery, requirements, workflow design, prioritization, prototypes, demos, build-ready handoff, and client iteration. Formal Business Analyst and Product Owner titles are not documented."
+      },
+      {
+        "gate": "Flexible scheduling for global-team calls",
+        "status": "not-applicable",
+        "evidence": "Schedule availability is an application-stage eligibility question. The public package does not assert an answer."
+      }
+    ]
+  },
+  "requirements": [
+    {
+      "id": "client-account-and-stakeholder-ownership",
+      "text": "Act as the primary client contact, manage expectations, and own high-trust account relationships.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Seven-plus years managing Fortune 500 pharma and healthcare client accounts with $2M-$50M+ budgets.",
+        "Served as one of two consumer account leads on FCB Health's largest pharma account.",
+        "Current client-led product work runs from the first question through a working demo and iteration."
+      ],
+      "resumeTerms": [
+        "client accounts",
+        "client strategy",
+        "account leads"
+      ]
+    },
+    {
+      "id": "needs-analysis-and-prioritization",
+      "text": "Separate business needs from lower-value requests and turn client urgency into clear product priorities.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Client-led POCs turn unclear business questions into testable product surfaces, demo flows, and roadmap decisions.",
+        "Pharma agency needs were translated into business requirements for intake, scoping, review routing, submission capture, and risk monitoring.",
+        "Research and analytics work used stakeholder input, testing, benchmarks, and recommendations to guide product decisions."
+      ],
+      "resumeTerms": [
+        "business requirements",
+        "roadmap decisions",
+        "product strategy"
+      ]
+    },
+    {
+      "id": "distributed-technical-team-alignment",
+      "text": "Represent the client perspective to remote engineering teams and keep delivery moving across regions.",
+      "priority": "core",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Scaled a distributed product-design team from two to 30 across the United States and Poland.",
+        "Partnered with product and engineering on enterprise analytics, reusable components, and build-ready product work.",
+        "Current POC work spans product strategy, UX, front-end build, backend logic, and client iteration."
+      ],
+      "resumeTerms": [
+        "distributed teams",
+        "engineering",
+        "backend logic"
+      ]
+    },
+    {
+      "id": "product-vision-requirements-and-backlog",
+      "text": "Define product vision, prioritize a backlog, and translate business requirements into user stories and unambiguous delivery criteria.",
+      "priority": "core",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Owns product strategy, requirements, workflow design, roadmap decisions, validation, and production handoff for client-led AI products.",
+        "Built structured tools for intake, scoping, review routing, and submission capture.",
+        "The evidence does not document formal backlog ownership, user-story authorship, or Definition of Ready and Definition of Done ownership."
+      ],
+      "resumeTerms": [
+        "product strategy",
+        "requirements",
+        "roadmap decisions"
+      ]
+    },
+    {
+      "id": "product-documentation-and-wireframing",
+      "text": "Create flowcharts, functional specifications, user flows, wireframes, and other build-ready documentation.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Created journey maps, site maps, user flows, wireframes, and prototypes for regulated healthcare products.",
+        "Built a repeatable research model across a 20-plus-product suite with Figma documentation, interviews, prototype testing, and stakeholder roadshows.",
+        "The portfolio documents structured requirements, build-ready logic, review flows, and design-system handoff."
+      ],
+      "resumeTerms": [
+        "user flows",
+        "wireframes",
+        "prototypes",
+        "Figma documentation"
+      ]
+    },
+    {
+      "id": "demos-uat-risk-and-milestones",
+      "text": "Track risks and milestones, lead sprint demos and UAT sessions, and secure client sign-off.",
+      "priority": "core",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Built functional POCs and client demos that stakeholders could inspect, challenge, and use for roadmap decisions.",
+        "Managed briefs, production requirements, timelines, feedback, and MLR-ready delivery across client and technical teams.",
+        "Portfolio workflows support comments, approval, sign-off, and submission capture, but formal sprint-demo and UAT leadership are not documented."
+      ],
+      "resumeTerms": [
+        "demos",
+        "timelines",
+        "risk guidance"
+      ]
+    },
+    {
+      "id": "technical-data-and-problem-solving-literacy",
+      "text": "Move between senior stakeholder strategy, data analysis, and granular technical logic with backend engineers.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Owns product strategy, UX, AI workflow design, front-end build, backend logic, demo readiness, and client iteration.",
+        "Led enterprise analytics work covering data visualization, dashboard building, channel scoring, benchmarks, and recommendations.",
+        "Managed senior client relationships and translated business goals into work for product, UX, creative, and engineering teams."
+      ],
+      "resumeTerms": [
+        "front-end build",
+        "backend logic",
+        "data visualization",
+        "benchmarks"
+      ]
+    },
+    {
+      "id": "agile-jira-confluence-and-tools",
+      "text": "Use Agile methods, Jira, Confluence, and wireframing tools such as Figma or Balsamiq.",
+      "priority": "core",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Direct evidence supports Figma documentation, user flows, wireframes, prototypes, research operations, and iterative product delivery.",
+        "The public resume and portfolio do not document Jira, Confluence, Balsamiq, or formal Agile ownership."
+      ],
+      "resumeTerms": [
+        "Figma documentation",
+        "wireframes",
+        "iterative"
+      ]
+    },
+    {
+      "id": "edtech-saas-and-business-logic-mentoring",
+      "text": "Bring dual PO/BA experience, ideally in EdTech or SaaS, and mentor teams on client business logic.",
+      "priority": "core",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Enterprise product work supported 7,000-plus users across 22 white-label brands and a 20-plus-product suite.",
+        "Scaled a distributed product-design team from two to 30 and built repeatable research and design-system practices.",
+        "Formal EdTech experience, a dual PO/BA title, and direct mentoring on client business logic are not documented."
+      ],
+      "resumeTerms": [
+        "enterprise products",
+        "team scaling",
+        "product suite"
+      ]
+    }
+  ],
+  "fitGate": {
+    "supportedOverlap": [
+      "Seven-plus years of direct Fortune 500 client-account ownership with $2M-$50M+ budgets, briefs, timelines, feedback, and coordinated delivery.",
+      "Current client-led product work turns unclear business questions into requirements, working demos, technical choices, and roadmap decisions.",
+      "Direct technical literacy across product strategy, UX, AI workflow design, front-end build, backend logic, validation, and handoff.",
+      "Distributed-team leadership through growth from two to 30 people across the United States and Poland.",
+      "Direct documentation and research evidence through user flows, wireframes, prototypes, Figma documentation, interviews, testing, and stakeholder roadshows.",
+      "Enterprise analytics and SaaS-adjacent scale through products used by 7,000-plus people across 22 white-label brands and a 20-plus-product suite.",
+      "Raleigh location satisfies the United States and Eastern Time preference."
+    ],
+    "unsupportedRequirements": [
+      "A formal three-to-five-year dual Business Analyst and Product Owner title history.",
+      "EdTech or digital-learning product experience.",
+      "Jira, Confluence, or Balsamiq proficiency.",
+      "Formal backlog, user-story, Definition of Ready, or Definition of Done ownership.",
+      "Named sprint-demo or UAT leadership.",
+      "Direct offshore-development-team ownership.",
+      "Measured client-retention or educational-outcome ownership."
+    ],
+    "actualMismatches": [
+      "The documented operating center combines client strategy, product strategy, UX leadership, and technical delivery rather than a formal dual PO/BA role.",
+      "The bachelor's degree is in Labor Studies and Employee Relations rather than Computer Science, Business Administration, or education.",
+      "The public evidence does not include EdTech or digital-learning delivery."
+    ],
+    "missingEvidence": [
+      "Examples of Jira backlogs, Confluence specifications, user stories, acceptance criteria, or Definition of Ready and Definition of Done.",
+      "A named sprint demo, UAT plan, or client UAT sign-off led by the candidate.",
+      "Direct management of an offshore engineering team rather than broader distributed-team leadership.",
+      "A specific example of mentoring engineers or analysts on client business logic.",
+      "Confirmed availability for calls outside core hours."
+    ],
+    "coverLetterBridge": {
+      "status": "recommended",
+      "rationale": "We can make the case with a cover letter by connecting seven-plus years of client-account ownership, requirements translation, enterprise software work, distributed-team leadership, and hands-on technical product delivery to LearningMate's client-to-engineering bridge. The letter must acknowledge the missing EdTech background, formal PO/BA title history, and named Jira, Confluence, backlog, sprint-demo, and UAT evidence."
+    },
+    "recommendation": "Proceed as adjacent. Lead with client ownership, business-needs translation, distributed product delivery, technical fluency, Figma-based documentation, demos, and enterprise software scale. Do not imply EdTech experience, formal PO/BA tenure, Jira or Confluence use, backlog ownership, UAT leadership, or offshore engineering management."
+  },
+  "resume": {
+    "foundationId": "wally-mostafa-resume-2026-07-03",
+    "summary": "AI implementation and product strategy lead with 15 years across pharma, enterprise UX, client strategy, and regulated AI delivery. I turn ambiguous workflows into governed AI tools, demo-ready POCs, and build-ready product systems. My strength is bridging client translation, workflow design, model behavior, and adoption so teams can trust and use the product after the demo.",
+    "skills": [
+      {
+        "label": "AI Implementation & Workflow Design",
+        "description": "Governed LLM/VLM workflows, multimodal review, RAG/knowledge bases, prompt-defined criteria, model orchestration, and human review surfaces"
+      },
+      {
+        "label": "Product Strategy & POC Delivery",
+        "description": "Discovery, scoping, requirements, prototype validation, demo narratives, build-ready logic, and production handoff"
+      },
+      {
+        "label": "Regulated Healthcare & Client Delivery",
+        "description": "11 years across pharma/healthcare communications, FDA/HIPAA/MLR workflows, HCP/patient UX, client workshops, and stakeholder adoption"
+      },
+      {
+        "label": "Enterprise UX & Design Systems",
+        "description": "Team scaling (2 to 30), enterprise analytics, workflow UX, data visualization, component libraries, and accessibility (WCAG)"
+      }
+    ],
+    "roles": {
+      "hedgehox": [
+        "Secured an investor for proprietary Claims Detection software by building the functional POC, shaping the stakeholder demo, and iterating from feedback",
+        "Designed Claims Detector workflows that identify promotional claims, surface evidence gaps, and pre-populate audit-ready annotations before MLR submission",
+        "Translated pharma agency needs into business requirements for MLR claim review, brief intake, scoping, review routing, submission capture, and FDA signal monitoring",
+        "Designed the full Xenagos Bio startup biopharma website from scratch, including investor-facing structure, scientific positioning, visual direction, and hidden design-system handoff",
+        "Built Scope Generator for pharma agency finance and operations teams to manage regional rate cards, brands, sub-brands, and natural-language scope changes",
+        "Developed FDA Warning Tool concepts that connect warning-letter patterns to content-risk guidance for pharma teams"
+      ],
+      "one-block-away": [
+        "Build client-led AI POCs that turn unclear business questions into testable product surfaces, demo flows, and roadmap decisions",
+        "Built ListingPal's AI listing-generation POC and landing page, turning basic property inputs into listing copy, social posts, ad copy, styling direction, and MLS/SEO-ready language in under 90 seconds",
+        "Built WeReady's Bailey Intelligence dashboard, translating founder inputs, GitHub signals, source health, risk scoring, and evidence trails into startup-readiness workflows",
+        "Own product strategy, UX, AI workflow design, front-end build, backend logic, demo readiness, and client iteration from first ask through working prototype",
+        "Currently building the website and sponsor strategy for a Tunisia youth soccer program, positioning the project for player advancement, community support, and donor outreach"
+      ],
+      "kinesso": [
+        "Scaled a distributed product-design team from 2 to 30 across the US and Poland for enterprise analytics used by 7,000+ people across 22 white-label brands",
+        "Led UX and design-system strategy with product and engineering for data visualization, dashboard building, brand theming, and reusable analytics components",
+        "Built the Digital Experience Audit workflow for channel scoring, data analysis, benchmarks, recommendations, visualization, and presentation-ready client outputs",
+        "Design-system and analytics work earned 5 Indigo Gold, 4 Indigo Silver, and Red Dot recognition",
+        "Built a repeatable research model across a 20+ product suite using stakeholder roadshows, interviews, prototype testing, Figma documentation, and feedback loops to guide product decisions"
+      ],
+      "omnicom": [
+        "Supported oncology accounts as a freelance UX designer, combining UX design and account-management experience to strengthen regulated healthcare work",
+        "Worked across account, strategy, creative, and delivery teams to translate brand goals into clearer user flows, content structure, and digital recommendations"
+      ],
+      "heartbeat": [
+        "Led UX research and experience strategy for pharma and healthcare work, translating stakeholder input, competitive audits, and user needs into digital product direction",
+        "Created journey maps, site maps, user flows, wireframes, and prototypes for patient, HCP, and internal brand-team experiences across regulated healthcare programs",
+        "Partnered with strategy, creative, account, and engineering teams to move research findings into prioritized, build-ready product and campaign experiences"
+      ],
+      "account-management": [
+        "Managed Fortune 500 pharma and healthcare client accounts for 7+ years with $2M-$50M+ budgets across CNS/neurology, psychiatry, cardiovascular/metabolic, and sleep/wakefulness brands including NUVIGIL, Namenda XR, Lipitor, and Zoloft",
+        "Served as one of two consumer account leads on FCB Health's largest pharma account across TV, radio, digital, gaming, Times Square, unbranded campaigns, brand planning, and MLR review",
+        "Translated client and brand strategy into briefs, creative feedback, production requirements, timelines, and MLR-ready delivery across account, creative, UX, and development teams"
+      ]
+    },
+    "sourceBulletIds": {
+      "hedgehox": [
+        "hedgehox-01",
+        "hedgehox-02",
+        "hedgehox-03",
+        "hedgehox-04",
+        "hedgehox-05",
+        "hedgehox-06"
+      ],
+      "one-block-away": [
+        "one-block-away-01",
+        "one-block-away-02",
+        "one-block-away-03",
+        "one-block-away-04",
+        "one-block-away-05"
+      ],
+      "kinesso": [
+        "kinesso-01",
+        "kinesso-02",
+        "kinesso-03",
+        "kinesso-04",
+        "addition:learningmate-business-analyst-product-owner-01"
+      ],
+      "omnicom": [
+        "omnicom-01",
+        "omnicom-02"
+      ],
+      "heartbeat": [
+        "heartbeat-01",
+        "heartbeat-02",
+        "heartbeat-03"
+      ],
+      "account-management": [
+        "account-management-01",
+        "account-management-02",
+        "account-management-03"
+      ]
+    }
+  },
+  "hero": {
+    "eyebrow": "LearningMate Business Analyst/Product Owner",
+    "tags": [
+      "Client account ownership",
+      "Requirements & product decisions",
+      "Distributed technical delivery"
+    ],
+    "intro": "I have spent 15 years turning client priorities into clear work for delivery teams. That includes managing $2M-$50M+ healthcare accounts, leading distributed product teams, supporting enterprise analytics used by 7,000+ people, and building client-led AI POCs from the first question through a working demo. For LearningMate, I would bring direct client ownership and practical translation between business needs, product decisions, and technical execution."
+  },
+  "contact": {
+    "prompt": "Hiring a BA/PO who can keep client decisions clear and technical delivery moving? Email is the fastest way to reach me.",
+    "signoff": "Client ownership · product requirements · distributed delivery"
+  },
+  "constraints": {
+    "doNotClaim": [
+      "A prior Business Analyst title",
+      "A prior Product Owner title",
+      "Three to five years in a formal dual PO/BA role",
+      "EdTech or digital-learning product experience",
+      "Jira proficiency",
+      "Confluence proficiency",
+      "Balsamiq proficiency",
+      "Formal Agile product-ownership certification or practice ownership",
+      "Formal backlog ownership",
+      "User-story authorship",
+      "Definition of Ready ownership",
+      "Definition of Done ownership",
+      "Formal sprint-demo leadership",
+      "Formal UAT leadership or sign-off ownership",
+      "Offshore engineering-team management",
+      "Client-retention metrics",
+      "Educational-outcome ownership",
+      "A degree in Computer Science, Business Administration, or education",
+      "Confirmed availability outside core hours"
+    ],
+    "blockedTerms": [
+      "experienced Business Analyst",
+      "experienced Product Owner",
+      "EdTech expert",
+      "Jira expert",
+      "Confluence expert",
+      "owned the backlog",
+      "owned UAT",
+      "managed offshore engineers",
+      "Business Administration degree"
+    ]
+  },
+  "privacy": {
+    "publicSafe": true,
+    "notes": "Contains only the public job description and sanitized resume and portfolio evidence. It excludes recruiter contact details, application answers, private compensation boundaries, work-authorization details, and unverified schedule availability."
+  },
+  "copyReview": {
+    "humanizerVersion": "2.2.0",
+    "mode": "surface-only",
+    "status": "passed",
+    "reviewedAt": "2026-07-23T21:06:10.333Z",
+    "copySha256": "c5579c64d0154bae02885744cc36d0020e0b4c83c05d50a545e3b6eef6242ef5",
+    "preserved": [
+      "content",
+      "structure",
+      "claims",
+      "ending"
+    ],
+    "rewriteAuthorized": false,
+    "reviewMethod": "humanizer-skill",
+    "semanticPassAttested": true,
+    "staticChecksPassed": true,
+    "finalAntiAiPass": true,
+    "remainingTells": []
+  },
+  "qa": {
+    "status": "qa-passed",
+    "builtAt": "2026-07-23T21:12:31.328Z",
+    "configInputSha256": "96deb8dee1c79aac2d50589a74017e310982419cc73da8d6cfa38b75cf1d4a27",
+    "sourceResumeSha256": "375cc6566f5bbad5b95be9da551dfe87824378fb252222409d29ef32d334ca25",
+    "resumeFoundation": {
+      "id": "wally-mostafa-resume-2026-07-03",
+      "sourcePdfSha256": "f9b05b6c3c134262b1af6c5734363daf4385cf335407a139779a37d138adf1aa"
+    },
+    "artifactHashes": {
+      "routeSha256": "3afcaddb69394af3b3b8e5e22faf033b4936c392bf50ba562075a60adc88f5eb",
+      "resumePdfSha256": "e5d2519edb05c854daf474e1403d76ff42a1252ce260f3a4531433c96f68e0ac",
+      "scopedProjectSha256": {}
+    },
+    "renderer": {
+      "browser": {
+        "name": "chrome-headless-shell",
+        "version": "Google Chrome for Testing 149.0.7827.55"
+      },
+      "htmlPath": "tmp/tailored-resumes/learningmate-business-analyst-product-owner.html",
+      "pdfPath": "output/pdf/Wally-Mostafa-LearningMate-Business-Analyst-Product-Owner-Resume.pdf"
+    },
+    "ats": {
+      "ok": true,
+      "pdfPath": "output/pdf/Wally-Mostafa-LearningMate-Business-Analyst-Product-Owner-Resume.pdf",
+      "pageCount": 2,
+      "fileSize": 137161,
+      "annotations": [
+        {
+          "page": 1,
+          "uri": "mailto:wmostafa12@gmail.com"
+        },
+        {
+          "page": 1,
+          "uri": "https://linkedin.com/in/wallymo"
+        },
+        {
+          "page": 1,
+          "uri": "https://wallymo.github.io/learningmate-business-analyst-product-owner/"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/6748"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/4629"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.red-dot.org/project/dxa-digital-experience-audit-55219"
+        }
+      ],
+      "coverage": [
+        {
+          "id": "client-account-and-stakeholder-ownership",
+          "requirement": "Act as the primary client contact, manage expectations, and own high-trust account relationships.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "client accounts",
+            "client strategy",
+            "account leads"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "needs-analysis-and-prioritization",
+          "requirement": "Separate business needs from lower-value requests and turn client urgency into clear product priorities.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "business requirements",
+            "roadmap decisions",
+            "product strategy"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "distributed-technical-team-alignment",
+          "requirement": "Represent the client perspective to remote engineering teams and keep delivery moving across regions.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "engineering",
+            "backend logic"
+          ],
+          "missingTerms": [
+            "distributed teams"
+          ]
+        },
+        {
+          "id": "product-vision-requirements-and-backlog",
+          "requirement": "Define product vision, prioritize a backlog, and translate business requirements into user stories and unambiguous delivery criteria.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "product strategy",
+            "requirements",
+            "roadmap decisions"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "product-documentation-and-wireframing",
+          "requirement": "Create flowcharts, functional specifications, user flows, wireframes, and other build-ready documentation.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "user flows",
+            "wireframes",
+            "prototypes",
+            "Figma documentation"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "demos-uat-risk-and-milestones",
+          "requirement": "Track risks and milestones, lead sprint demos and UAT sessions, and secure client sign-off.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "timelines",
+            "risk guidance"
+          ],
+          "missingTerms": [
+            "demos"
+          ]
+        },
+        {
+          "id": "technical-data-and-problem-solving-literacy",
+          "requirement": "Move between senior stakeholder strategy, data analysis, and granular technical logic with backend engineers.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "front-end build",
+            "backend logic",
+            "data visualization",
+            "benchmarks"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "agile-jira-confluence-and-tools",
+          "requirement": "Use Agile methods, Jira, Confluence, and wireframing tools such as Figma or Balsamiq.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "Figma documentation",
+            "wireframes"
+          ],
+          "missingTerms": [
+            "iterative"
+          ]
+        },
+        {
+          "id": "edtech-saas-and-business-logic-mentoring",
+          "requirement": "Bring dual PO/BA experience, ideally in EdTech or SaaS, and mentor teams on client business logic.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "team scaling",
+            "product suite"
+          ],
+          "missingTerms": [
+            "enterprise products"
+          ]
+        }
+      ],
+      "failures": [],
+      "warnings": [
+        "distributed-technical-team-alignment: supported core language missing from the PDF: distributed teams",
+        "demos-uat-risk-and-milestones: supported core language missing from the PDF: demos",
+        "agile-jira-confluence-and-tools: supported core language missing from the PDF: iterative",
+        "edtech-saas-and-business-logic-mentoring: supported core language missing from the PDF: enterprise products"
+      ]
+    },
+    "humanizer": {
+      "status": "passed",
+      "version": "2.2.0",
+      "mode": "surface-only",
+      "reviewedAt": "2026-07-23T21:06:10.333Z",
+      "copySha256": "c5579c64d0154bae02885744cc36d0020e0b4c83c05d50a545e3b6eef6242ef5",
+      "reviewMethod": "humanizer-skill",
+      "semanticPassAttested": true,
+      "staticChecksPassed": true
+    },
+    "route": {
+      "viewports": [
+        {
+          "name": "desktop",
+          "screenshot": "tmp/qa/learningmate-business-analyst-product-owner/desktop.png",
+          "errors": []
+        },
+        {
+          "name": "mobile",
+          "screenshot": "tmp/qa/learningmate-business-analyst-product-owner/mobile.png",
+          "errors": []
+        }
+      ],
+      "errors": []
+    }
+  }
+}
