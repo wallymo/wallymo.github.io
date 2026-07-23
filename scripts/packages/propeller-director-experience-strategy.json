@@ -1,6 +1,6 @@
 {
   "workflowVersion": 2,
-  "contractRevision": 3,
+  "contractRevision": 4,
   "slug": "propeller-director-experience-strategy",
   "roleTitle": "Propeller Director, Experience Strategy",
   "artifactStem": "Propeller-Director-Experience-Strategy",
@@ -103,7 +103,7 @@
       ],
       "resumeTerms": [
         "audience-centered strategy",
-        "KPIs and optimization"
+        "KPI and optimization recommendations"
       ]
     },
     {
@@ -117,7 +117,7 @@
       ],
       "resumeTerms": [
         "digital marketing strategy",
-        "omnichannel maturity"
+        "omnichannel recommendations"
       ]
     },
     {
@@ -131,7 +131,7 @@
       ],
       "resumeTerms": [
         "people leadership",
-        "cross-functional leadership"
+        "strategy, creative, account, and engineering"
       ]
     },
     {
@@ -140,12 +140,12 @@
       "priority": "core",
       "evidenceStatus": "direct",
       "evidence": [
-        "Managed Fortune 500 pharma and healthcare accounts with USD 2M-50M+ budgets across multiple brands, channels, timelines, and MLR-ready deliverables.",
+        "Managed Fortune 500 pharma and healthcare accounts with $2M-$50M+ budgets across multiple brands, channels, timelines, and MLR-ready deliverables.",
         "Current work covers parallel pharma AI initiatives across brief intake, scoping, review routing, claim detection, submission capture, and regulatory monitoring."
       ],
       "resumeTerms": [
-        "high-budget programs",
-        "project and time management"
+        "$2M-$50M+",
+        "timelines"
       ]
     },
     {
@@ -158,14 +158,14 @@
         "Earlier innovation and enterprise work connected research, analytics, design systems, and workflow prototypes to client and product decisions."
       ],
       "resumeTerms": [
-        "healthcare innovation",
+        "FDA signal monitoring",
         "digital capabilities"
       ]
     }
   ],
   "fitGate": {
     "supportedOverlap": [
-      "Eleven years in pharma and healthcare communications, including more than seven years managing Fortune 500 brands and USD 2M-50M+ programs.",
+      "Eleven years in pharma and healthcare communications, including more than seven years managing Fortune 500 brands and $2M-$50M+ programs.",
       "Direct HCP and patient experience strategy through research, competitive audits, journey maps, content structures, digital product direction, and campaign experiences.",
       "Direct integrated-channel leadership across TV, radio, digital, gaming, Times Square, unbranded campaigns, brand planning, and MLR review.",
       "Director-level people leadership with a distributed team scaled from two to 30 and enterprise work used by more than 7,000 people across 22 brands.",
@@ -195,31 +195,34 @@
     "recommendation": "Proceed as a strong fit. Lead with pharma brand and experience strategy, omnichannel campaign leadership, HCP and patient journeys, audience and performance insights, multimillion-dollar program ownership, and people leadership. Keep the named martech platforms, field activation depth, direct-report count, campaign-result metrics, and New York office feasibility explicit rather than implying proof that is not documented."
   },
   "resume": {
-    "summary": "Experience strategy and pharma marketing leader with 15 years across healthcare agencies, HCP and patient experiences, omnichannel programs, audience research, and digital product strategy. I bring 11 years in pharma and healthcare communications, including 7+ years managing Fortune 500 clients and USD 2M-50M+ programs, plus director-level leadership across research, analytics, design systems, and AI-enabled workflows. I turn customer insight, brand objectives, and regulatory requirements into clear plans that teams can carry through execution.",
+    "foundationId": "wally-mostafa-resume-2026-07-03",
+    "summary": "AI implementation and product strategy lead with 15 years across pharma, enterprise UX, client strategy, and regulated AI delivery. I turn ambiguous workflows into governed AI tools, demo-ready POCs, and build-ready product systems. My strength is bridging client translation, workflow design, model behavior, and adoption so teams can trust and use the product after the demo.",
     "skills": [
       {
-        "label": "Pharma Brand Strategy & HCP Experience",
-        "description": "HCP and patient strategy, brand planning, positioning and messaging, stakeholder research, competitive audits, client workshops, creative briefs, and MLR review"
+        "label": "AI Implementation & Workflow Design",
+        "description": "Governed LLM/VLM workflows, multimodal review, RAG/knowledge bases, prompt-defined criteria, model orchestration, and human review surfaces"
       },
       {
-        "label": "Omnichannel Planning & Digital Marketing",
-        "description": "Omnichannel strategy, customer journeys, TV, radio, digital, gaming, unbranded campaigns, digital marketing strategy, omnichannel maturity, and cross-channel delivery"
+        "label": "Product Strategy & POC Delivery",
+        "description": "Discovery, scoping, requirements, prototype validation, demo narratives, build-ready logic, and production handoff"
       },
       {
-        "label": "Audience Insights, KPIs & Optimization",
-        "description": "Audience-centered strategy, channel scoring, benchmarks, KPIs and optimization, customer insights, data visualization, recommendations, and executive presentations"
+        "label": "Regulated Healthcare & Client Delivery",
+        "description": "11 years across pharma/healthcare communications, FDA/HIPAA/MLR workflows, HCP/patient UX, client workshops, and stakeholder adoption"
       },
       {
-        "label": "People, Client & Program Leadership",
-        "description": "People leadership, cross-functional leadership, USD 2M-50M+ high-budget programs, project and time management, multidisciplinary delivery, healthcare innovation, and digital capabilities"
+        "label": "Enterprise UX & Design Systems",
+        "description": "Team scaling (2 to 30), enterprise analytics, workflow UX, data visualization, component libraries, and accessibility (WCAG)"
       }
     ],
     "roles": {
       "hedgehox": [
-        "Convert pharma agency needs into AI tools for MLR claim review, brief intake, scoping, review routing, submission capture, and FDA signal monitoring",
+        "Secured an investor for proprietary Claims Detection software by building the functional POC, shaping the demo story, and iterating with investors",
         "Designed Claims Detector workflows that identify promotional claims, surface evidence gaps, and pre-populate audit-ready annotations before MLR submission",
+        "Converted pharma agency needs into digital capabilities and AI tools for MLR claim review, brief intake, scoping, review routing, submission capture, and FDA signal monitoring",
+        "Designed the full Xenagos Bio startup biopharma website from scratch, including investor-facing structure, scientific positioning and messaging, visual direction, and hidden design-system handoff",
         "Built Scope Generator for pharma agency finance and operations teams to manage regional rate cards, brands, sub-brands, and natural-language scope changes",
-        "Developed FDA Warning Tool concepts that connect warning-letter patterns to content-risk guidance and practical client recommendations"
+        "Developed FDA Warning Tool concepts that connect warning-letter patterns to content-risk guidance for pharma teams evaluating new digital capabilities"
       ],
       "one-block-away": [
         "Build client-led AI POCs that turn unclear business questions into testable product surfaces, demo flows, and roadmap decisions",
@@ -229,24 +232,63 @@
         "Currently building the website and sponsor strategy for a Tunisia youth soccer program, positioning the project for player advancement, community support, and donor outreach"
       ],
       "kinesso": [
-        "Scaled product design from 2 to 30 people across the United States and Poland for enterprise analytics used by 7,000+ people across 22 white-label brands",
-        "Built the Digital Experience Audit workflow for channel scoring, benchmarks, recommendations, data visualization, and presentation-ready client outputs",
+        "Provided people leadership while scaling product design from 2 to 30 people across the US and Poland for enterprise analytics used by 7,000+ users across 22 white-label brands",
         "Built a research discipline across a 20+ product marketing-intelligence suite using stakeholder roadshows, repeatable tools, workshops, Figma documentation, and feedback loops",
-        "Led experience and design-system strategy for marketing data visualization, dashboard building, brand theming, and reusable analytics components"
+        "Led UX and design-system strategy for MIE data visualization, dashboard building, brand theming, and reusable analytics components",
+        "Built the Digital Experience Audit workflow to turn channel scoring, benchmarks, and audience insight into KPI and optimization recommendations, data visualization, and executive presentations",
+        "Design-system and analytics work earned 5 Indigo Gold, 4 Indigo Silver, and Red Dot recognition"
       ],
       "omnicom": [
-        "Supported oncology accounts by combining UX design and account-management experience to strengthen regulated healthcare strategy and delivery",
-        "Partnered across account, strategy, creative, and delivery teams, translating brand goals into clearer content structure, user flows, and digital recommendations"
+        "Supported oncology accounts as a freelance UX designer, combining UX design and account-management experience to strengthen regulated healthcare work",
+        "Championed UX and digital marketing strategy across account, strategy, creative, and delivery conversations, translating brand goals into clearer user flows, content structure, and omnichannel recommendations"
       ],
       "heartbeat": [
-        "Led research and experience strategy for pharma and healthcare work, translating stakeholder input, competitive audits, and user needs into digital product and campaign direction",
-        "Created journey maps, content structures, user flows, wireframes, and prototypes for patient, HCP, and internal brand-team programs",
-        "Partnered with strategy, creative, account, and engineering teams to move recommendations from research findings into build-ready product and campaign experiences"
+        "Led audience-centered strategy for pharma and healthcare work, translating stakeholder input, competitive audits, and HCP and patient needs into digital product direction",
+        "Created customer journeys, site maps, user flows, wireframes, and prototypes for patient, HCP, and internal brand-team experiences across regulated healthcare programs",
+        "Partnered with strategy, creative, account, and engineering teams to move UX recommendations from research findings into build-ready product and campaign experiences"
       ],
       "account-management": [
-        "Managed Fortune 500 pharma and healthcare clients with USD 2M-50M+ budgets across CNS and neurology, psychiatry, cardiovascular and metabolic, and sleep and wakefulness brands",
-        "Served as one of two consumer leads on FCB Health's largest pharma account across TV, radio, digital, gaming, Times Square, unbranded campaigns, brand planning, and MLR review",
-        "Translated client and brand strategy into briefs, creative feedback, production requirements, timelines, and MLR-ready deliverables across account, creative, UX, and development teams"
+        "Managed Fortune 500 pharma and healthcare clients for 7+ years across $2M-$50M+ high-budget programs in CNS/neurology, psychiatry, cardiovascular/metabolic, and sleep/wakefulness, including NUVIGIL, Namenda XR, Lipitor, and Zoloft",
+        "Led omnichannel strategy as one of two account consumer leads on FCB Health's largest pharma account across TV, radio, digital, gaming, Times Square, unbranded campaigns, brand planning, and MLR review",
+        "Translated client and pharma brand strategy into positioning and messaging, briefs, creative feedback, production requirements, timelines, and MLR-ready deliverables across account, creative, UX, and development teams"
+      ]
+    },
+    "sourceBulletIds": {
+      "hedgehox": [
+        "hedgehox-01",
+        "hedgehox-02",
+        "hedgehox-03",
+        "hedgehox-04",
+        "hedgehox-05",
+        "hedgehox-06"
+      ],
+      "one-block-away": [
+        "one-block-away-01",
+        "one-block-away-02",
+        "one-block-away-03",
+        "one-block-away-04",
+        "one-block-away-05"
+      ],
+      "kinesso": [
+        "kinesso-01",
+        "addition:propeller-audience-research-practice",
+        "kinesso-02",
+        "kinesso-03",
+        "kinesso-04"
+      ],
+      "omnicom": [
+        "omnicom-01",
+        "omnicom-02"
+      ],
+      "heartbeat": [
+        "heartbeat-01",
+        "heartbeat-02",
+        "heartbeat-03"
+      ],
+      "account-management": [
+        "account-management-01",
+        "account-management-02",
+        "account-management-03"
       ]
     }
   },
@@ -257,7 +299,7 @@
       "HCP omnichannel planning",
       "Audience insight & optimization"
     ],
-    "intro": "Propeller needs an experience strategy leader who can connect pharma brand objectives, customer insight, channel planning, and delivery. I bring 11 years in pharma and healthcare communications, 7+ years managing major brands and USD 2M-50M+ programs, and director-level leadership across HCP and patient journeys, omnichannel campaigns, research, analytics, and regulated digital workflows."
+    "intro": "I fit Propeller's Experience Strategy role through 11 years in pharma and healthcare communications, 7+ years managing major brands and $2M-$50M+ programs, and director-level leadership across HCP and patient journeys, omnichannel campaigns, research, analytics, and regulated digital workflows."
   },
   "contact": {
     "prompt": "Hiring a pharma experience strategy leader who can connect customer insight, brand direction, and omnichannel execution? Email is the fastest way to reach me.",
@@ -267,8 +309,8 @@
     "humanizerVersion": "2.2.0",
     "mode": "surface-only",
     "status": "passed",
-    "reviewedAt": "2026-07-23T00:36:59.564Z",
-    "copySha256": "e728208ff0596aec5da5c8e4a776e10b66e6ee75c96b50fedf7dae7deb93e8a0",
+    "reviewedAt": "2026-07-23T21:00:59.258Z",
+    "copySha256": "2e630c32a3fd327a13b55055fd3fc322d48eb1c7ada5c160a1a53621fcefa069",
     "preserved": [
       "content",
       "structure",
@@ -308,12 +350,16 @@
   },
   "qa": {
     "status": "qa-passed",
-    "builtAt": "2026-07-23T00:37:03.633Z",
-    "configInputSha256": "f0f91e1a053c58b3ffc90274e187d71641dd4845020ed0c0d6db4854e02a9dcd",
+    "builtAt": "2026-07-23T21:03:55.638Z",
+    "configInputSha256": "9e1f1a8155ff6fb7213bf0ffefea85a24122b2142bdb4fe2271d56b4c668889a",
     "sourceResumeSha256": "375cc6566f5bbad5b95be9da551dfe87824378fb252222409d29ef32d334ca25",
+    "resumeFoundation": {
+      "id": "wally-mostafa-resume-2026-07-03",
+      "sourcePdfSha256": "f9b05b6c3c134262b1af6c5734363daf4385cf335407a139779a37d138adf1aa"
+    },
     "artifactHashes": {
-      "routeSha256": "c23e903d93f29d228f3cb2d93042ddc09c4a2bbdddc1752e150c0a2718175b42",
-      "resumePdfSha256": "35cb73f837a81286d672e14edfc6040334243f5c653924729018ec2ac046b962",
+      "routeSha256": "e5af2f83e66f8975d4a499878adf9b477713170e7d59890480d3804a722ff5bb",
+      "resumePdfSha256": "1474e01a1f177023de0c87d9cd04dd2663fd734c8d3a393e002328533dc397c1",
       "scopedProjectSha256": {}
     },
     "renderer": {
@@ -328,7 +374,7 @@
       "ok": true,
       "pdfPath": "output/pdf/Wally-Mostafa-Propeller-Director-Experience-Strategy-Resume.pdf",
       "pageCount": 2,
-      "fileSize": 133773,
+      "fileSize": 137938,
       "annotations": [
         {
           "page": 1,
@@ -400,7 +446,7 @@
           "status": "covered-directly",
           "matchedTerms": [
             "audience-centered strategy",
-            "KPIs and optimization"
+            "KPI and optimization recommendations"
           ],
           "missingTerms": []
         },
@@ -412,7 +458,7 @@
           "status": "covered-directly",
           "matchedTerms": [
             "digital marketing strategy",
-            "omnichannel maturity"
+            "omnichannel recommendations"
           ],
           "missingTerms": []
         },
@@ -424,7 +470,7 @@
           "status": "covered-directly",
           "matchedTerms": [
             "people leadership",
-            "cross-functional leadership"
+            "strategy, creative, account, and engineering"
           ],
           "missingTerms": []
         },
@@ -435,8 +481,8 @@
           "evidenceStatus": "direct",
           "status": "covered-directly",
           "matchedTerms": [
-            "high-budget programs",
-            "project and time management"
+            "$2M-$50M+",
+            "timelines"
           ],
           "missingTerms": []
         },
@@ -447,7 +493,7 @@
           "evidenceStatus": "direct",
           "status": "covered-directly",
           "matchedTerms": [
-            "healthcare innovation",
+            "FDA signal monitoring",
             "digital capabilities"
           ],
           "missingTerms": []
@@ -460,8 +506,8 @@
       "status": "passed",
       "version": "2.2.0",
       "mode": "surface-only",
-      "reviewedAt": "2026-07-23T00:36:59.564Z",
-      "copySha256": "e728208ff0596aec5da5c8e4a776e10b66e6ee75c96b50fedf7dae7deb93e8a0",
+      "reviewedAt": "2026-07-23T21:00:59.258Z",
+      "copySha256": "2e630c32a3fd327a13b55055fd3fc322d48eb1c7ada5c160a1a53621fcefa069",
       "reviewMethod": "humanizer-skill",
       "semanticPassAttested": true,
       "staticChecksPassed": true
