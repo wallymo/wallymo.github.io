@@ -222,8 +222,9 @@
         "Developed FDA Warning Tool concepts that connect warning-letter patterns to content-risk guidance and practical client recommendations"
       ],
       "one-block-away": [
-        "Lead client discovery and problem framing, turning unclear business questions into testable product surfaces, messaging, demo narratives, and roadmap decisions",
-        "Built an AI content workflow that turns basic inputs into listing copy, social posts, ad copy, styling direction, and MLS and SEO-ready language in under 90 seconds"
+        "Own client-led AI POCs from the first question through a working prototype, covering product strategy, UX, model behavior, front-end and backend logic, demo readiness, and roadmap decisions",
+        "Built WeReady's Bailey Intelligence dashboard from founder inputs, GitHub signals, government sources, academic research, and investor frameworks",
+        "Structured the product around source health, credibility scoring, technical risk, business signals, evidence trails, and recommended actions"
       ],
       "kinesso": [
         "Scaled product design from 2 to 30 people across the United States and Poland for enterprise analytics used by 7,000+ people across 22 white-label brands",
@@ -264,8 +265,8 @@
     "humanizerVersion": "2.2.0",
     "mode": "surface-only",
     "status": "passed",
-    "reviewedAt": "2026-07-23T00:11:07.433Z",
-    "copySha256": "8ff6d2c05d8444e084006a9c9c52df5a45b0830833eb3a11dbdea8e05271c9d7",
+    "reviewedAt": "2026-07-23T00:27:50.152Z",
+    "copySha256": "69a991c4500c2cdb42949b6e5295211f8d38694ea93948984a733cc64bb5332c",
     "preserved": [
       "content",
       "structure",
@@ -305,12 +306,12 @@
   },
   "qa": {
     "status": "qa-passed",
-    "builtAt": "2026-07-23T00:11:16.236Z",
-    "configInputSha256": "17e2e357a91de718a116a52c38eefcdfcade260175572d270ec32c627fdf9cc8",
+    "builtAt": "2026-07-23T00:27:53.875Z",
+    "configInputSha256": "b479343fb9605766de91150428040d6298175bd2e159058c28456be6848b65f6",
     "sourceResumeSha256": "375cc6566f5bbad5b95be9da551dfe87824378fb252222409d29ef32d334ca25",
     "artifactHashes": {
       "routeSha256": "c23e903d93f29d228f3cb2d93042ddc09c4a2bbdddc1752e150c0a2718175b42",
-      "resumePdfSha256": "c18e242db1e6d88e3f74fcd7801e77fa480cbaa6af9aef61aec415abcd8409f0",
+      "resumePdfSha256": "254b5953f7395d91f12d5a9ac389c490aeb555fb36574d8ed89dc3046e20cc64",
       "scopedProjectSha256": {}
     },
     "renderer": {
@@ -325,7 +326,7 @@
       "ok": true,
       "pdfPath": "output/pdf/Wally-Mostafa-Propeller-Director-Experience-Strategy-Resume.pdf",
       "pageCount": 2,
-      "fileSize": 130792,
+      "fileSize": 131134,
       "annotations": [
         {
           "page": 1,
@@ -457,8 +458,8 @@
       "status": "passed",
       "version": "2.2.0",
       "mode": "surface-only",
-      "reviewedAt": "2026-07-23T00:11:07.433Z",
-      "copySha256": "8ff6d2c05d8444e084006a9c9c52df5a45b0830833eb3a11dbdea8e05271c9d7",
+      "reviewedAt": "2026-07-23T00:27:50.152Z",
+      "copySha256": "69a991c4500c2cdb42949b6e5295211f8d38694ea93948984a733cc64bb5332c",
       "reviewMethod": "humanizer-skill",
       "semanticPassAttested": true,
       "staticChecksPassed": true
