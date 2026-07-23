@@ -1653,6 +1653,26 @@
     },
     {
       "workflowVersion": 2,
+      "slug": "phreesia-senior-associate-client-solutions",
+      "roleTitle": "Phreesia Sr. Associate, Client Solutions",
+      "artifactStem": "Phreesia-Senior-Associate-Client-Solutions",
+      "configPath": "scripts/packages/phreesia-senior-associate-client-solutions.json",
+      "targetLane": "pharma-patient-engagement-client-solutions-and-campaign-ownership",
+      "evidenceMode": "resume-primary",
+      "fitClass": "strong",
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-01.html",
+        "project-04.html",
+        "project-06.html"
+      ],
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Phreesia-Senior-Associate-Client-Solutions-Resume.pdf",
+      "publishStatus": "local-only",
+      "qaStatus": "qa-passed",
+      "builtAt": "2026-07-23T20:38:57.190Z"
+    },
+    {
+      "workflowVersion": 2,
       "slug": "playlist-senior-product-manager-consumer-platform",
       "roleTitle": "Playlist Senior Product Manager, Consumer Platform",
       "artifactStem": "Playlist-Senior-Product-Manager-Consumer-Platform",

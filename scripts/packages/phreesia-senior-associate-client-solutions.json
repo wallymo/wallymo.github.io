@@ -1,0 +1,557 @@
+{
+  "workflowVersion": 2,
+  "contractRevision": 4,
+  "slug": "phreesia-senior-associate-client-solutions",
+  "roleTitle": "Phreesia Sr. Associate, Client Solutions",
+  "artifactStem": "Phreesia-Senior-Associate-Client-Solutions",
+  "fitClass": "strong",
+  "routeMode": "canonical-projects",
+  "selectedProjects": [
+    "project-01.html",
+    "project-04.html",
+    "project-06.html"
+  ],
+  "job": {
+    "company": "Phreesia",
+    "roleTitle": "Sr. Associate, Client Solutions",
+    "sourceChannel": "chat-pasted-jd",
+    "dateCaptured": "2026-07-23",
+    "location": "Remote in Canada or the United States, EST or CST; Raleigh is a preferred market",
+    "atsVendor": "unknown",
+    "rawJd": "Bring your creative agency account experience in-house\n\nTitle: Sr. Associate, Client Solutions\nTeam: Network Solutions\nLocation: Remote; Canada or US, preferably around Chicago, Detroit, Atlanta, Raleigh, Tri-State area (New York, Connecticut, New Jersey or Philadelphia area), Washington DC or Boston\n\nWhy this Role Exists\n\nYou will own high-impact patient engagement campaigns that improve health outcomes, one patient at a time. As a Sr. Associate, Client Solutions, you'll be a confident, client-facing campaign owner who drives day-to-day execution internally and externally. You bring a sharp eye for quality, a proactive mindset, and the experience to manage net new campaigns with growing independence, escalating when it counts, identifying process improvements, and helping elevate the team around you.\n\nWhat You'll Spend Your Time Doing\n\nCampaign Development: Own and execute patient engagement campaigns from kickoff through launch and measurement, managing day-to-day coordination, campaign setup, quality control, and reporting with confidence. You'll balance independent execution, critical thinking, and strong organization while building expertise in Phreesia products and campaign best practices.\nRelationship Building: Build strong relationships with clients and internal partners by serving as the day-to-day contact for owned campaigns, thoughtfully responding to client needs and questions, collaborating cross-functionally, and supporting the onboarding and development of Associates and new team members.\nStrategic Projects: Contribute to team and campaign success by identifying process improvements, sharing optimization recommendations, and providing informed perspectives on campaign strategy and executional approaches.\nMentorship: Support the growth of junior team members and new hires by reinforcing foundational campaign processes and Client Solutions best practices while helping foster a collaborative, supportive team culture that reflects Phreesia's Mission and Values.\n\nWhat Makes You a Great Fit\n\nA confident client communicator who builds trust, listens actively, and follows through reliably.\nA proactive problem-solver who can navigate ambiguity, think critically, and identify resourceful solutions.\nOrganized and self-directed, with the ability to juggle multiple priorities in a fast-moving environment while adapting to changing needs.\nA collaborative team player who takes pride in supporting others, communicating openly, and elevating the team.\nResilient and adaptable, maintaining a positive and solutions-oriented mindset through shifting priorities and feedback.\nCurious and growth-oriented, with a willingness to learn new tools, processes, and ways of working.\nFamiliar with workflow and review tools such as Jira, Monday.com, Ziflow, or similar platforms, and able to quickly learn new systems.\n\nRequirements\n\nBachelor's Degree required and 3+ years of account experience in a creative agency environment working with pharmaceutical brands.\nDemonstrated ability to manage client relationships and own campaign execution independently.\nProficient in Microsoft tools and experienced implementing AI to support efficiency in your work.\nAbility and willingness to travel for occasional in-person team meetings, approximately 10% annually.\n\nWhere You'll Work\n\nThis is a remote role, with the expectation that you're based in EST or CST in Canada or the US.\n\nCompensation & Rewards\n\nBase salary: $80,000-$95,000 USD or CAD, depending on experience.\nA comprehensive Total Rewards package designed to support your whole life, not just your work.\n\nWho We Are\n\nAt Phreesia, we're looking for smart and passionate people to help drive our mission of creating a better, more engaging healthcare experience. We're committed to helping healthcare organizations succeed by transforming the way healthcare is delivered. Our SaaS platform digitizes appointment check-in and offers tools to engage patients, improve efficiency, optimize staffing, and enhance clinical care.\n\nBenefits include remote work and home office expense reimbursement, flexible PTO and company holidays, monthly cell phone, internet, and wellness reimbursement, parental leave, insurance options, continuing education and professional certification reimbursement, and Employee Resource Groups. Phreesia is an equal opportunity employer."
+  },
+  "classification": {
+    "targetLane": "pharma-patient-engagement-client-solutions-and-campaign-ownership",
+    "evidenceMode": "resume-primary",
+    "primarySource": "The resume directly documents seven-plus years managing Fortune 500 pharma and healthcare clients, $2M-$50M+ budgets, integrated consumer campaigns, brand planning, briefs, timelines, cross-functional delivery, and MLR review.",
+    "supportingSource": "The portfolio adds patient and HCP experience work, pharma review and intake workflows, Microsoft Teams use, campaign reporting, optimization recommendations, and hands-on AI implementation.",
+    "hardGateStatus": "pass",
+    "hardGates": [
+      {
+        "gate": "Bachelor's degree",
+        "status": "pass",
+        "evidence": "The public resume documents a BA from Rutgers University."
+      },
+      {
+        "gate": "Three or more years of creative-agency account experience with pharmaceutical brands",
+        "status": "pass",
+        "evidence": "The resume documents seven-plus years of account management and client strategy across RosettaWishbone, FCB Health, Barker DZP, Cline Davis & Mann, and Scout Marketing, including named Fortune 500 pharma brands."
+      },
+      {
+        "gate": "Remote in Canada or the United States within EST or CST",
+        "status": "pass",
+        "evidence": "The public resume lists Raleigh, North Carolina, which is in Eastern Time and one of the posting's preferred markets."
+      },
+      {
+        "gate": "Approximately 10 percent annual travel",
+        "status": "not-applicable",
+        "evidence": "Travel availability is an application-stage eligibility question. The package does not assert an answer."
+      }
+    ]
+  },
+  "requirements": [
+    {
+      "id": "pharma-agency-account-experience",
+      "text": "Bring at least three years of creative-agency account experience with pharmaceutical brands.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Seven-plus years managing Fortune 500 pharma and healthcare clients across five creative agencies.",
+        "Named brand work includes NUVIGIL, Namenda XR, Lipitor, and Zoloft across CNS, neurology, psychiatry, cardiovascular, metabolic, and sleep-wakefulness categories.",
+        "Served as one of two consumer account leads on FCB Health's largest pharma account."
+      ],
+      "resumeTerms": [
+        "7+ years",
+        "Fortune 500 pharma",
+        "consumer account leads",
+        "creative agency"
+      ]
+    },
+    {
+      "id": "client-relationships-and-independent-ownership",
+      "text": "Manage client relationships and act as the day-to-day owner of campaign execution.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Managed pharma and healthcare clients with $2M-$50M+ budgets.",
+        "Translated client and brand strategy into briefs, feedback, campaign requirements, timelines, and MLR-ready deliverables.",
+        "Current client-led work runs from the first ask through working delivery and iteration."
+      ],
+      "resumeTerms": [
+        "client strategy",
+        "account leads",
+        "campaign requirements",
+        "client-led"
+      ]
+    },
+    {
+      "id": "patient-engagement-campaigns",
+      "text": "Own patient engagement campaigns from kickoff through launch and measurement.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The resume documents integrated consumer and unbranded pharma campaigns across TV, radio, digital, gaming, Times Square, brand planning, and MLR review.",
+        "Heartbeat work covered patient, HCP, and internal brand-team experiences across regulated healthcare programs.",
+        "The Digital Experience Audit workflow covered channel scoring, benchmarks, recommendations, visualization, and presentation-ready reporting."
+      ],
+      "resumeTerms": [
+        "patient",
+        "integrated campaigns",
+        "campaign experiences",
+        "reporting"
+      ]
+    },
+    {
+      "id": "coordination-quality-and-regulated-review",
+      "text": "Manage campaign setup, day-to-day coordination, quality control, reporting, and timely escalation.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Account work covered briefs, creative feedback, production requirements, timelines, and MLR-ready delivery across account, creative, UX, and development teams.",
+        "Current Claims Detector and pharma workflow work surfaces evidence gaps, review needs, routing, submission capture, and FDA signals before regulated approval.",
+        "Enterprise audit work turned channel data into benchmarks, recommendations, and client-ready reporting."
+      ],
+      "resumeTerms": [
+        "briefs",
+        "timelines",
+        "MLR-ready deliverables",
+        "review routing",
+        "reporting"
+      ]
+    },
+    {
+      "id": "process-improvement-and-optimization",
+      "text": "Identify process improvements and provide optimization recommendations for campaign strategy and execution.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Built pharma tools for brief intake, scoping, review routing, submission capture, claims review, and FDA signal monitoring.",
+        "Built Scope Generator for pharma agency finance and operations teams.",
+        "Built the Digital Experience Audit workflow for channel scoring, benchmarks, recommendations, and presentation-ready outputs."
+      ],
+      "resumeTerms": [
+        "AI implementation",
+        "workflow design",
+        "optimization recommendations",
+        "process improvement"
+      ]
+    },
+    {
+      "id": "mentorship-and-team-support",
+      "text": "Support onboarding and development of Associates, junior team members, and new hires.",
+      "priority": "core",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Scaled product design from two to 30 people across the United States and Poland.",
+        "Built repeatable systems and practices used across product, strategy, research, and delivery teams.",
+        "Formal onboarding or direct mentorship of junior pharma account staff is not documented."
+      ],
+      "resumeTerms": [
+        "team scaling",
+        "cross-functional teams",
+        "repeatable workflows"
+      ]
+    },
+    {
+      "id": "workflow-microsoft-and-ai-tools",
+      "text": "Use workflow and review tools, Microsoft tools, and AI to improve efficiency.",
+      "priority": "core",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Current work implements AI for claims review, brief intake, scoping, review routing, submission capture, and FDA signal monitoring.",
+        "The portfolio documents Microsoft Teams for recording, transcription, and a searchable research archive.",
+        "The public evidence does not document Jira, Monday.com, Ziflow, or broad Microsoft Office proficiency."
+      ],
+      "resumeTerms": [
+        "AI implementation",
+        "review routing",
+        "workflow design",
+        "Microsoft Teams"
+      ]
+    }
+  ],
+  "fitGate": {
+    "supportedOverlap": [
+      "Seven-plus years of direct pharma and healthcare account experience in creative agencies, exceeding the three-year requirement.",
+      "Consumer account leadership on FCB Health's largest pharma business across integrated campaigns, brand planning, and MLR review.",
+      "Direct client and brand translation into briefs, creative feedback, production requirements, timelines, and regulated deliverables.",
+      "Patient and HCP experience work across regulated healthcare programs.",
+      "Current AI implementation for pharma brief intake, scoping, review routing, claims review, submission capture, and FDA signal monitoring.",
+      "Process-improvement and reporting evidence through Scope Generator and the Digital Experience Audit workflow.",
+      "Raleigh location, Eastern Time, and a completed bachelor's degree."
+    ],
+    "unsupportedRequirements": [
+      "Jira, Monday.com, and Ziflow are not documented.",
+      "Microsoft proficiency beyond a documented Microsoft Teams use case is not stated.",
+      "Formal onboarding and mentorship of junior pharma account staff are not documented.",
+      "Availability for approximately 10 percent annual travel is not documented."
+    ],
+    "actualMismatches": [
+      "The recent documented operating center is senior AI implementation, product strategy, and UX leadership rather than a Sr. Associate Client Solutions title, which may create a level or retention question."
+    ],
+    "missingEvidence": [
+      "Named commercial workflow and review platforms.",
+      "Microsoft Word, Excel, and PowerPoint proficiency.",
+      "A specific junior account-team onboarding or mentorship example.",
+      "A confirmed answer on limited annual travel."
+    ],
+    "coverLetterBridge": {
+      "status": "not-needed",
+      "rationale": "The resume already proves the role's core operating center through seven-plus years of pharma agency account leadership, integrated consumer campaigns, client relationships, budgets, briefs, timelines, and MLR review. Current patient, reporting, process-improvement, and AI workflow evidence reinforces the match, so a cover letter is not needed to make the application credible."
+    },
+    "recommendation": "Proceed as a strong fit. Lead with direct pharma agency account ownership, integrated patient and consumer campaigns, day-to-day client delivery, regulated review, reporting, and AI-supported workflow improvement. Keep named project tools, broad Microsoft proficiency, formal junior-staff mentorship, and travel availability out of the package unless the user supplies that evidence."
+  },
+  "resume": {
+    "foundationId": "wally-mostafa-resume-2026-07-03",
+    "summary": "AI implementation and product strategy lead with 15 years across pharma, enterprise UX, client strategy, and regulated AI delivery. I turn ambiguous workflows into governed AI tools, demo-ready POCs, and build-ready product systems. My strength is bridging client translation, workflow design, model behavior, and adoption so teams can trust and use the product after the demo.",
+    "skills": [
+      {
+        "label": "AI Implementation & Workflow Design",
+        "description": "Governed LLM/VLM workflows, multimodal review, RAG/knowledge bases, prompt-defined criteria, model orchestration, and human review surfaces"
+      },
+      {
+        "label": "Product Strategy & POC Delivery",
+        "description": "Discovery, scoping, requirements, prototype validation, demo narratives, build-ready logic, and production handoff"
+      },
+      {
+        "label": "Regulated Healthcare & Client Delivery",
+        "description": "11 years across pharma/healthcare communications, FDA/HIPAA/MLR workflows, HCP/patient UX, client workshops, and stakeholder adoption"
+      },
+      {
+        "label": "Enterprise UX & Design Systems",
+        "description": "Team scaling (2 to 30), enterprise analytics, workflow UX, data visualization, component libraries, and accessibility (WCAG)"
+      }
+    ],
+    "roles": {
+      "hedgehox": [
+        "Secured an investor for proprietary Claims Detection software by building the functional POC, shaping the demo story, and iterating with investors",
+        "Designed Claims Detector workflows that identify promotional claims, surface evidence gaps, and pre-populate audit-ready annotations before MLR submission",
+        "Converted pharma agency needs into AI tools for MLR claim review, brief intake, scoping, review routing, submission capture, and FDA signal monitoring",
+        "Designed the full Xenagos Bio startup biopharma website from scratch, including investor-facing structure, scientific positioning, visual direction, and hidden design-system handoff",
+        "Built Scope Generator for pharma agency finance and operations teams to manage regional rate cards, brands, sub-brands, and natural-language scope changes",
+        "Developed FDA Warning Tool concepts that connect warning-letter patterns to content-risk guidance for pharma teams"
+      ],
+      "one-block-away": [
+        "Build client-led AI POCs that turn unclear business questions into testable product surfaces, demo flows, and roadmap decisions",
+        "Built ListingPal's AI listing-generation POC and landing page, turning basic property inputs into listing copy, social posts, ad copy, styling direction, and MLS/SEO-ready language in under 90 seconds",
+        "Built WeReady's Bailey Intelligence dashboard, translating founder inputs, GitHub signals, source health, risk scoring, and evidence trails into startup-readiness workflows",
+        "Own product strategy, UX, AI workflow design, front-end build, backend logic, demo readiness, and client iteration from first ask through working prototype",
+        "Currently building the website and sponsor strategy for a Tunisia youth soccer program, positioning the project for player advancement, community support, and donor outreach"
+      ],
+      "kinesso": [
+        "Scaled product design from 2 to 30 people across the US and Poland for enterprise analytics used by 7,000+ users across 22 white-label brands",
+        "Led UX and design-system strategy for MIE data visualization, dashboard building, brand theming, and reusable analytics components",
+        "Built the Digital Experience Audit workflow for channel scoring, benchmarks, recommendations, visualization, and presentation-ready client outputs",
+        "Design-system and analytics work earned 5 Indigo Gold, 4 Indigo Silver, and Red Dot recognition"
+      ],
+      "omnicom": [
+        "Supported oncology accounts as a freelance UX designer, combining UX design and account-management experience to strengthen regulated healthcare work",
+        "Championed UX best practices across account, strategy, creative, and delivery conversations, translating brand goals into clearer user flows, content structure, and digital recommendations"
+      ],
+      "heartbeat": [
+        "Led UX research and experience strategy for pharma and healthcare work, translating stakeholder input, competitive audits, and user needs into digital product direction",
+        "Created journey maps, site maps, user flows, wireframes, and prototypes for patient, HCP, and internal brand-team experiences across regulated healthcare programs",
+        "Partnered with strategy, creative, account, and engineering teams to move UX recommendations from research findings into build-ready product and campaign experiences"
+      ],
+      "account-management": [
+        "7+ years managing Fortune 500 pharma and healthcare clients with $2M-$50M+ budgets across CNS/neurology, psychiatry, cardiovascular/metabolic, and sleep/wakefulness brands including NUVIGIL, Namenda XR, Lipitor, and Zoloft",
+        "Served as one of two consumer account leads on FCB Health's largest pharma account across TV, radio, digital, gaming, Times Square, unbranded campaigns, brand planning, and MLR review",
+        "Translated client and brand strategy into briefs, creative feedback, campaign production requirements, timelines, and MLR-ready deliverables across account, creative, UX, and development teams"
+      ]
+    },
+    "sourceBulletIds": {
+      "hedgehox": [
+        "hedgehox-01",
+        "hedgehox-02",
+        "hedgehox-03",
+        "hedgehox-04",
+        "hedgehox-05",
+        "hedgehox-06"
+      ],
+      "one-block-away": [
+        "one-block-away-01",
+        "one-block-away-02",
+        "one-block-away-03",
+        "one-block-away-04",
+        "one-block-away-05"
+      ],
+      "kinesso": [
+        "kinesso-01",
+        "kinesso-02",
+        "kinesso-03",
+        "kinesso-04"
+      ],
+      "omnicom": [
+        "omnicom-01",
+        "omnicom-02"
+      ],
+      "heartbeat": [
+        "heartbeat-01",
+        "heartbeat-02",
+        "heartbeat-03"
+      ],
+      "account-management": [
+        "account-management-01",
+        "account-management-02",
+        "account-management-03"
+      ]
+    }
+  },
+  "hero": {
+    "eyebrow": "Phreesia | Sr. Associate, Client Solutions",
+    "tags": [
+      "Pharma agency account leadership",
+      "Patient and consumer campaigns",
+      "AI-supported workflow improvement"
+    ],
+    "intro": "I bring 7+ years managing Fortune 500 pharma and healthcare accounts with $2M-$50M+ budgets, including work as one of two consumer account leads on FCB Health's largest pharma business. I turned client and brand strategy into integrated campaign briefs, timelines, production requirements, and MLR-ready work while keeping cross-functional teams moving. More recently, I have worked on patient and HCP strategy, reporting workflows, and AI tools that support review routing and campaign operations."
+  },
+  "contact": {
+    "prompt": "Looking for a client solutions lead who knows pharma agency campaigns, regulated review, and day-to-day client delivery? Email is the fastest way to reach me.",
+    "signoff": "Pharma client solutions | patient engagement campaigns | workflow improvement"
+  },
+  "copyReview": {
+    "humanizerVersion": "2.2.0",
+    "mode": "surface-only",
+    "status": "passed",
+    "reviewedAt": "2026-07-23T20:38:53.402Z",
+    "copySha256": "3a7ef329b1c39b8948b4821a29940c5e56d92eeac87e8622a612e1368b8ca6ee",
+    "preserved": [
+      "content",
+      "structure",
+      "claims",
+      "ending"
+    ],
+    "rewriteAuthorized": false,
+    "reviewMethod": "humanizer-skill",
+    "semanticPassAttested": true,
+    "staticChecksPassed": true,
+    "finalAntiAiPass": true,
+    "remainingTells": []
+  },
+  "constraints": {
+    "doNotClaim": [
+      "Jira proficiency",
+      "Monday.com proficiency",
+      "Ziflow proficiency",
+      "Microsoft Word, Excel, or PowerPoint proficiency",
+      "Formal onboarding ownership for junior pharma account staff",
+      "Confirmed availability for approximately 10 percent annual travel",
+      "A prior Phreesia or patient-engagement SaaS role",
+      "Healthcare-provider operations ownership",
+      "Sales quota ownership"
+    ],
+    "blockedTerms": [
+      "Jira expert",
+      "Monday.com expert",
+      "Ziflow expert",
+      "Microsoft Office expert",
+      "owned junior account onboarding",
+      "available for all travel",
+      "former Phreesia employee",
+      "provider operations owner",
+      "sales quota"
+    ]
+  },
+  "privacy": {
+    "publicSafe": true,
+    "notes": "Contains only the public job posting and sanitized evidence from the public resume and portfolio. It excludes recruiter contact details, application answers, personal compensation boundaries, and private eligibility information."
+  },
+  "qa": {
+    "status": "qa-passed",
+    "builtAt": "2026-07-23T20:38:57.190Z",
+    "configInputSha256": "668b079fb9fd927ddc571d26bb730efa8f18e8abe7ec77aca421e828ac4e5399",
+    "sourceResumeSha256": "960041d3419a759dfd4a0aa44566610e19baa94d479fbcf21d17167acabf1b25",
+    "resumeFoundation": {
+      "id": "wally-mostafa-resume-2026-07-03",
+      "sourcePdfSha256": "f9b05b6c3c134262b1af6c5734363daf4385cf335407a139779a37d138adf1aa"
+    },
+    "artifactHashes": {
+      "routeSha256": "00a060d3a72278e4ed4f595e83a6d9e9eaab44a783e2d62761c88e203afa415e",
+      "resumePdfSha256": "86539384be632b3b46bb47034db06c2ab48a892e9217aa5aa02c49d5b49ce064",
+      "scopedProjectSha256": {}
+    },
+    "renderer": {
+      "browser": {
+        "name": "chrome-headless-shell",
+        "version": "Google Chrome for Testing 149.0.7827.55"
+      },
+      "htmlPath": "tmp/tailored-resumes/phreesia-senior-associate-client-solutions.html",
+      "pdfPath": "output/pdf/Wally-Mostafa-Phreesia-Senior-Associate-Client-Solutions-Resume.pdf"
+    },
+    "ats": {
+      "ok": true,
+      "pdfPath": "output/pdf/Wally-Mostafa-Phreesia-Senior-Associate-Client-Solutions-Resume.pdf",
+      "pageCount": 2,
+      "fileSize": 138840,
+      "annotations": [
+        {
+          "page": 1,
+          "uri": "mailto:wmostafa12@gmail.com"
+        },
+        {
+          "page": 1,
+          "uri": "https://linkedin.com/in/wallymo"
+        },
+        {
+          "page": 1,
+          "uri": "https://wallymo.github.io/phreesia-senior-associate-client-solutions/"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/6748"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/4629"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.red-dot.org/project/dxa-digital-experience-audit-55219"
+        }
+      ],
+      "coverage": [
+        {
+          "id": "pharma-agency-account-experience",
+          "requirement": "Bring at least three years of creative-agency account experience with pharmaceutical brands.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "7+ years",
+            "Fortune 500 pharma",
+            "consumer account leads"
+          ],
+          "missingTerms": [
+            "creative agency"
+          ]
+        },
+        {
+          "id": "client-relationships-and-independent-ownership",
+          "requirement": "Manage client relationships and act as the day-to-day owner of campaign execution.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "client strategy",
+            "account leads",
+            "client-led"
+          ],
+          "missingTerms": [
+            "campaign requirements"
+          ]
+        },
+        {
+          "id": "patient-engagement-campaigns",
+          "requirement": "Own patient engagement campaigns from kickoff through launch and measurement.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "patient",
+            "campaign experiences"
+          ],
+          "missingTerms": [
+            "integrated campaigns",
+            "reporting"
+          ]
+        },
+        {
+          "id": "coordination-quality-and-regulated-review",
+          "requirement": "Manage campaign setup, day-to-day coordination, quality control, reporting, and timely escalation.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "briefs",
+            "timelines",
+            "MLR-ready deliverables",
+            "review routing"
+          ],
+          "missingTerms": [
+            "reporting"
+          ]
+        },
+        {
+          "id": "process-improvement-and-optimization",
+          "requirement": "Identify process improvements and provide optimization recommendations for campaign strategy and execution.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "AI implementation",
+            "workflow design"
+          ],
+          "missingTerms": [
+            "optimization recommendations",
+            "process improvement"
+          ]
+        },
+        {
+          "id": "mentorship-and-team-support",
+          "requirement": "Support onboarding and development of Associates, junior team members, and new hires.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "team scaling"
+          ],
+          "missingTerms": [
+            "cross-functional teams",
+            "repeatable workflows"
+          ]
+        },
+        {
+          "id": "workflow-microsoft-and-ai-tools",
+          "requirement": "Use workflow and review tools, Microsoft tools, and AI to improve efficiency.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "AI implementation",
+            "review routing",
+            "workflow design"
+          ],
+          "missingTerms": [
+            "Microsoft Teams"
+          ]
+        }
+      ],
+      "failures": [],
+      "warnings": [
+        "pharma-agency-account-experience: supported core language missing from the PDF: creative agency",
+        "client-relationships-and-independent-ownership: supported core language missing from the PDF: campaign requirements",
+        "patient-engagement-campaigns: supported core language missing from the PDF: integrated campaigns, reporting",
+        "coordination-quality-and-regulated-review: supported core language missing from the PDF: reporting",
+        "process-improvement-and-optimization: supported core language missing from the PDF: optimization recommendations, process improvement",
+        "mentorship-and-team-support: supported core language missing from the PDF: cross-functional teams, repeatable workflows",
+        "workflow-microsoft-and-ai-tools: supported core language missing from the PDF: Microsoft Teams"
+      ]
+    },
+    "humanizer": {
+      "status": "passed",
+      "version": "2.2.0",
+      "mode": "surface-only",
+      "reviewedAt": "2026-07-23T20:38:53.402Z",
+      "copySha256": "3a7ef329b1c39b8948b4821a29940c5e56d92eeac87e8622a612e1368b8ca6ee",
+      "reviewMethod": "humanizer-skill",
+      "semanticPassAttested": true,
+      "staticChecksPassed": true
+    },
+    "route": {
+      "viewports": [
+        {
+          "name": "desktop",
+          "screenshot": "tmp/qa/phreesia-senior-associate-client-solutions/desktop.png",
+          "errors": []
+        },
+        {
+          "name": "mobile",
+          "screenshot": "tmp/qa/phreesia-senior-associate-client-solutions/mobile.png",
+          "errors": []
+        }
+      ],
+      "errors": []
+    }
+  }
+}
