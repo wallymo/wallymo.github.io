@@ -1541,9 +1541,26 @@
         "project-02.html"
       ],
       "resumePdfPath": "output/pdf/Wally-Mostafa-NetApp-AI-GTM-Transformation-Lead-Resume.pdf",
-      "publishStatus": "local-only",
+      "publishStatus": "live-verified",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-07-23T21:16:19.511Z"
+      "builtAt": "2026-07-23T21:16:19.511Z",
+      "verification": {
+        "verifiedAt": "2026-07-23T21:18:21.384Z",
+        "routeUrl": "https://wallymo.github.io/netapp-ai-gtm-transformation-lead/",
+        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-NetApp-AI-GTM-Transformation-Lead-Resume.pdf",
+        "configUrl": "https://wallymo.github.io/scripts/packages/netapp-ai-gtm-transformation-lead.json",
+        "projectUrls": [
+          "https://wallymo.github.io/project-01.html",
+          "https://wallymo.github.io/project-03.html",
+          "https://wallymo.github.io/project-02.html"
+        ],
+        "configSha256": "3c22d1928c273e240a691f19be0e9617b8a2883fe1bcc5a0d9a09f57b4f09ef1",
+        "pdfSha256": "9f17d6304c590587fec0b306befa6813620af4c82324e836be2550d2ff242354",
+        "routeSha256": "0913aeb7e843e0509200e6d5cccdc1db9c45d6870c63829e52d57da35abce120",
+        "scopedProjectSha256": {},
+        "configInputSha256": "e3b8acec0987e7bb5505e693d971466c37cfb7b9441668621d34613aabb0f681",
+        "qaBuiltAt": "2026-07-23T21:16:19.511Z"
+      }
     },
     {
       "slug": "noom-design-systems-contract",
