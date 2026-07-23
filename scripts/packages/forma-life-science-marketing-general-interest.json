@@ -1,0 +1,432 @@
+{
+  "workflowVersion": 2,
+  "contractRevision": 3,
+  "slug": "forma-life-science-marketing-general-interest",
+  "roleTitle": "Forma General Interest: Client Strategy, UX & AI Implementation",
+  "artifactStem": "Forma-Life-Science-Marketing-General-Interest",
+  "fitClass": "strong",
+  "routeMode": "canonical-projects",
+  "selectedProjects": [
+    "project-01.html",
+    "project-08.html",
+    "project-06.html"
+  ],
+  "job": {
+    "company": "Forma Life Science Marketing",
+    "roleTitle": "General Interest: Client Strategy, UX & AI Implementation",
+    "jobId": "general-interest-no-open-role",
+    "jobUrl": "https://www.formalifesciencemarketing.com/careers/",
+    "sourceChannel": "public-company-careers-about-and-services-pages",
+    "dateCaptured": "2026-07-22",
+    "location": "Raleigh, North Carolina, with remote work listed on the careers page",
+    "atsVendor": "none-listed",
+    "rawJd": "This is a general-interest target, not a formal job posting. Forma's careers page describes proactive, cutting-edge work with dynamic clients, unique projects, an inventive approach to digital marketing, a tenacious and collaborative atmosphere, and a focus on anticipating challenges and ensuring long-term client success. The page lists remote work every day and says the team is currently at full strength with no open positions. Forma's About page describes a client-first team of full-stack marketers, strategists, and designers helping life science brands differentiate, align internal teams, expand their digital footprint, and grow. Its Digital Strategy page covers digital-property audits, web design and development, inbound and outbound strategy, SEO, paid campaigns, automation and CRM integration, analytics and reporting, content strategy, and social and email marketing. This package is positioned for future needs across client and account strategy, UX and digital experience, and practical AI implementation."
+  },
+  "classification": {
+    "targetLane": "life-science-client-strategy-ux-and-ai-implementation",
+    "evidenceMode": "balanced",
+    "primarySource": "The resume directly proves 15 years across pharma and healthcare, including 7+ years in account management and client strategy, UX leadership, regulated digital work, and current AI implementation.",
+    "supportingSource": "The portfolio shows regulated pharma AI products, a biopharma website and design system, and an award-winning digital audit platform that turned performance data into client-ready strategy.",
+    "hardGateStatus": "pass",
+    "hardGates": [
+      {
+        "gate": "Direct life science, pharma, or healthcare experience",
+        "status": "pass",
+        "evidence": "The resume documents 15 years across pharma and healthcare, including Fortune 500 pharma account leadership, patient and HCP UX, and current AI implementation for regulated agency workflows."
+      },
+      {
+        "gate": "Client-facing strategy and long-term account support",
+        "status": "pass",
+        "evidence": "More than seven years in account management and client strategy included USD 2M to USD 50M+ pharma programs, brand planning, creative production, budgets, timelines, MLR review, and cross-functional delivery."
+      },
+      {
+        "gate": "UX, digital strategy, and design capability",
+        "status": "pass",
+        "evidence": "The resume and portfolio document healthcare UX, web design, design systems, digital audits, data visualization, research, and enterprise product leadership."
+      },
+      {
+        "gate": "Raleigh or remote working context",
+        "status": "pass",
+        "evidence": "The public resume lists Raleigh, North Carolina, and Forma's careers page lists remote work every day."
+      },
+      {
+        "gate": "A currently open position",
+        "status": "not-applicable",
+        "evidence": "Forma's careers page says the team is currently at full strength. The package is intentionally framed for general interest and future needs rather than a role that is not posted."
+      }
+    ]
+  },
+  "requirements": [
+    {
+      "id": "client-account-strategy",
+      "text": "Support dynamic life science clients, anticipate challenges, and contribute to long-term client success through account management and client strategy.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Seven-plus years managing Fortune 500 pharma and healthcare accounts with USD 2M to USD 50M+ budgets.",
+        "Direct responsibility for brand planning, client communication, creative feedback, production requirements, timelines, budgets, and MLR-ready delivery.",
+        "Current work turns client needs into working products, demonstrations, and implementation decisions."
+      ],
+      "resumeTerms": [
+        "account management",
+        "client strategy",
+        "Fortune 500 pharma",
+        "client relationships"
+      ]
+    },
+    {
+      "id": "ux-and-digital-strategy",
+      "text": "Contribute UX design, digital strategy, web design, audits, and clear digital experiences for life science brands.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Led healthcare UX research, journey mapping, information architecture, user flows, wireframes, and prototypes for patient, HCP, and brand-team experiences.",
+        "Led enterprise UX and design-system work across more than 20 products, 7,000+ users, and 22 white-label brands.",
+        "Designed the Xenagos Bio website and its internal design-system handoff for scientific, investor, media, and development audiences."
+      ],
+      "resumeTerms": [
+        "UX design",
+        "digital strategy",
+        "web design",
+        "digital experiences"
+      ]
+    },
+    {
+      "id": "life-science-marketing-and-regulated-delivery",
+      "text": "Understand life science marketing, regulated workflows, and the needs of pharma and healthcare audiences.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Fifteen years across pharma and healthcare span account leadership, campaign work, UX, product strategy, and AI implementation.",
+        "Direct MLR review experience includes promotional claims, evidence gaps, audit-ready annotations, review routing, and submission capture.",
+        "Past work includes patient, HCP, internal brand-team, and agency operations audiences."
+      ],
+      "resumeTerms": [
+        "life science marketing",
+        "pharma and healthcare",
+        "regulated workflows",
+        "MLR review"
+      ]
+    },
+    {
+      "id": "collaborative-cross-functional-delivery",
+      "text": "Work across strategy, creative, design, development, operations, and client teams in an engaged and collaborative environment.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Fifteen years of cross-functional collaboration across client, account, strategy, creative, UX, research, engineering, analytics, finance, and operations teams.",
+        "Scaled a distributed product-design organization from 2 to 30 people across the United States and Poland.",
+        "Current work stays close to clients from the first ask through workflow design, validation, and working implementation."
+      ],
+      "resumeTerms": [
+        "cross-functional collaboration",
+        "creative",
+        "strategy",
+        "development"
+      ]
+    },
+    {
+      "id": "practical-ai-implementation",
+      "text": "Offer practical AI implementation that can support client work, internal workflows, and responsible adoption when future needs call for it.",
+      "priority": "context",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Current work covers governed LLM and VLM workflows, human review, model behavior, front-end and backend logic, validation, and production handoff.",
+        "Built pharma tools for claim review, briefing, scoping, routing, submission capture, and FDA signal monitoring.",
+        "Builds client-led POCs so stakeholders can test an idea before committing to a larger implementation."
+      ],
+      "resumeTerms": [
+        "AI implementation",
+        "workflow design",
+        "human review",
+        "client adoption"
+      ]
+    }
+  ],
+  "fitGate": {
+    "supportedOverlap": [
+      "Fifteen years across pharma and healthcare, with direct experience in account management, client strategy, UX, digital products, and regulated delivery.",
+      "Seven-plus years managing Fortune 500 pharma clients and USD 2M to USD 50M+ budgets across brand planning, integrated campaigns, creative production, timelines, and MLR review.",
+      "Healthcare UX leadership across patient, HCP, brand-team, analytics, web, research, and design-system work.",
+      "Current hands-on AI implementation for regulated pharma workflows, client POCs, workflow design, validation, and adoption.",
+      "Direct Raleigh connection plus extensive remote and distributed-team experience."
+    ],
+    "unsupportedRequirements": [],
+    "actualMismatches": [],
+    "missingEvidence": [
+      "Forma has not posted a specific role, level, reporting line, compensation range, or day-to-day responsibilities for this general-interest outreach.",
+      "Forma does not publicly state that it is hiring for AI implementation, so the package presents AI as an additional capability rather than an advertised need.",
+      "Direct ownership of SEO, PPC media buying, marketing automation platforms, or CRM administration is not documented."
+    ],
+    "coverLetterBridge": {
+      "status": "not-needed",
+      "rationale": "The resume directly proves the target mix of life science account leadership, UX and digital strategy, and regulated AI implementation. The portfolio confirms each lane with relevant work, so a cover letter is not needed to make this general-interest introduction credible."
+    },
+    "recommendation": "Proceed as a strong company-level match. Position the package for general interest and future needs, lead with direct pharma client experience, and show UX and AI as connected ways to help clients. Do not imply that Forma has an open role or a stated AI hiring need."
+  },
+  "resume": {
+    "summary": "Life science marketing, client strategy, UX, and AI implementation leader with 15 years across pharma and healthcare. I bring 7+ years in account management and client strategy for USD 2M to USD 50M+ Fortune 500 pharma programs, followed by UX leadership and hands-on AI implementation for regulated workflows. I help clients turn complex business, user, and compliance needs into clear strategies, useful products, and working tools their teams can adopt.",
+    "skills": [
+      {
+        "label": "Life Science Account Management & Client Strategy",
+        "description": "Fortune 500 pharma client relationships, brand planning, integrated campaigns, budgets, timelines, creative production, stakeholder communication, and MLR review"
+      },
+      {
+        "label": "UX Design & Digital Strategy",
+        "description": "Healthcare UX design, digital experiences, web design, research, journey maps, information architecture, prototypes, design systems, digital audits, and data visualization"
+      },
+      {
+        "label": "AI Implementation & Workflow Design",
+        "description": "Governed LLM and VLM workflows, model behavior, prompt-defined criteria, human review, knowledge bases, front-end and backend logic, validation, and production handoff"
+      },
+      {
+        "label": "Cross-functional Collaboration & Client Adoption",
+        "description": "Strategy, creative, design, development, research, engineering, analytics, operations, executive communication, distributed teams, workshops, demonstrations, and client adoption"
+      }
+    ],
+    "roles": {
+      "hedgehox": [
+        "Turn pharma agency needs into AI tools for MLR claim review, brief intake, scoping, review routing, submission capture, and FDA signal monitoring",
+        "Designed Claims Detector workflows that identify promotional claims, surface evidence gaps, and pre-populate audit-ready annotations before MLR submission",
+        "Designed the Xenagos Bio website from scratch, including investor-facing information architecture, scientific positioning, UX, visual direction, and an internal design-system handoff",
+        "Built Echo submission automation for pharma launches, moving one screenshot route from 8 hours to 10 minutes and helping cut a planned 5-day launch to 2 days",
+        "Translate client needs into workflow design, model behavior, human review, demonstrations, implementation choices, and build-ready product decisions"
+      ],
+      "one-block-away": [
+        "Build client-led AI POCs that turn unclear business and marketing questions into testable product surfaces, working demonstrations, and roadmap decisions",
+        "Own product strategy, UX, AI workflow design, front-end build, backend logic, validation, presentation readiness, and client iteration from first ask through working prototype",
+        "Built ListingPal's AI listing-generation POC and landing page, turning basic inputs into listing copy, social posts, ad copy, styling direction, and MLS and SEO-ready language in under 90 seconds"
+      ],
+      "kinesso": [
+        "Scaled product design from 2 to 30 people across the United States and Poland for enterprise marketing analytics used by 7,000+ users across 22 white-label brands",
+        "Led UX design, digital strategy, data visualization, dashboard, design-system, brand-theming, and reusable component work across a 20+ product marketing-intelligence suite",
+        "Built the Digital Experience Audit workflow for channel scoring, benchmarks, recommendations, visualization, and presentation-ready client outputs",
+        "Built the UX research practice through stakeholder roadshows, repeatable tools, workshops, Figma documentation, and cross-functional product feedback loops",
+        "Design-system and digital-audit work earned 5 Indigo Gold, 4 Indigo Silver, and Red Dot recognition"
+      ],
+      "omnicom": [
+        "Supported oncology accounts as a freelance UX designer, combining healthcare account management experience with UX strategy for regulated brand work",
+        "Turned brand goals into clearer user flows, content structure, digital recommendations, and cross-functional delivery inputs for account, strategy, creative, and development teams"
+      ],
+      "heartbeat": [
+        "Led UX research and experience strategy for pharma and healthcare programs, translating stakeholder input, competitive audits, and user needs into digital product and campaign direction",
+        "Created journey maps, site maps, user flows, wireframes, and prototypes for patient, HCP, and internal brand-team experiences",
+        "Partnered with strategy, creative, account, and engineering teams to move UX recommendations into build-ready digital experiences"
+      ],
+      "account-management": [
+        "7+ years managing Fortune 500 pharma and healthcare clients with USD 2M to USD 50M+ budgets across CNS, neurology, psychiatry, cardiovascular, metabolic, and sleep-wakefulness brands including NUVIGIL, Namenda XR, Lipitor, and Zoloft",
+        "One of two consumer account leads on FCB Health's largest pharma account across TV, radio, digital, gaming, Times Square, unbranded campaigns, brand planning, and MLR review",
+        "Translated client and brand strategy into briefs, messaging inputs, creative feedback, production requirements, timelines, budgets, and MLR-ready deliverables",
+        "Managed client relationships and coordinated account, strategy, creative, UX, development, and production teams across multiple regulated campaign workstreams"
+      ]
+    }
+  },
+  "hero": {
+    "eyebrow": "Forma | Client Strategy, UX & AI Implementation",
+    "tags": [
+      "Life science client strategy",
+      "UX and digital experience",
+      "Practical AI implementation"
+    ],
+    "intro": "Forma's mix of client strategy, digital marketing, and life sciences fits the path of my work. I bring 15 years across pharma and healthcare, including 7+ years in account management and client strategy, followed by UX leadership and hands-on AI implementation for regulated workflows. I can help strengthen client relationships, shape useful digital experiences, and put AI to work in ways teams can actually use."
+  },
+  "contact": {
+    "prompt": "Looking for someone who can move between client strategy, UX, and practical AI implementation for life science work? I would welcome a conversation about where that mix could help Forma now or in the future. Email is the fastest way to reach me.",
+    "signoff": "Life science client strategy · UX and digital experience · practical AI implementation"
+  },
+  "copyReview": {
+    "humanizerVersion": "2.2.0",
+    "mode": "surface-only",
+    "status": "passed",
+    "reviewedAt": "2026-07-23T00:32:10.908Z",
+    "copySha256": "b471c4c3e7e2735e111e63d37bc76608044179480eed60947f99c31c731236d4",
+    "preserved": [
+      "content",
+      "structure",
+      "claims",
+      "ending"
+    ],
+    "rewriteAuthorized": false,
+    "reviewMethod": "humanizer-skill",
+    "semanticPassAttested": true,
+    "staticChecksPassed": true,
+    "finalAntiAiPass": true,
+    "remainingTells": []
+  },
+  "constraints": {
+    "doNotClaim": [
+      "A current opening at Forma",
+      "A stated Forma AI initiative",
+      "Direct ownership of SEO or PPC media buying",
+      "Marketing automation platform administration",
+      "CRM administration",
+      "Veeva platform ownership",
+      "A life science degree or scientific credential",
+      "Sales quota ownership"
+    ],
+    "blockedTerms": [
+      "Forma AI program",
+      "Forma AI team",
+      "SEO ownership",
+      "PPC media buying",
+      "CRM administrator",
+      "Veeva administrator",
+      "life science degree",
+      "sales quota"
+    ]
+  },
+  "privacy": {
+    "publicSafe": true,
+    "notes": "Contains only public text from Forma's careers, about, and digital-strategy pages plus sanitized evidence from the public resume and portfolio. It includes no recruiter details, private application answers, compensation boundaries, or private eligibility information. The target is explicitly labeled general interest because Forma lists no current openings."
+  },
+  "qa": {
+    "status": "qa-passed",
+    "builtAt": "2026-07-23T00:32:14.869Z",
+    "configInputSha256": "e1b287a46889dbc525225cf7961373bd274bb880308a4897fcfc233a2ae6260d",
+    "sourceResumeSha256": "375cc6566f5bbad5b95be9da551dfe87824378fb252222409d29ef32d334ca25",
+    "artifactHashes": {
+      "routeSha256": "d75755434374d4a2296a482b65416564bb1f69cd6c6408d4b1aadde16e5139d1",
+      "resumePdfSha256": "09e272a71a29e320ad2a4cf0889b627f86aca84d2f5e8d6431a94e534b35d3a7",
+      "scopedProjectSha256": {}
+    },
+    "renderer": {
+      "browser": {
+        "name": "chrome-headless-shell",
+        "version": "Google Chrome for Testing 149.0.7827.55"
+      },
+      "htmlPath": "tmp/tailored-resumes/forma-life-science-marketing-general-interest.html",
+      "pdfPath": "output/pdf/Wally-Mostafa-Forma-Life-Science-Marketing-General-Interest-Resume.pdf"
+    },
+    "ats": {
+      "ok": true,
+      "pdfPath": "output/pdf/Wally-Mostafa-Forma-Life-Science-Marketing-General-Interest-Resume.pdf",
+      "pageCount": 2,
+      "fileSize": 133148,
+      "annotations": [
+        {
+          "page": 1,
+          "uri": "mailto:wmostafa12@gmail.com"
+        },
+        {
+          "page": 1,
+          "uri": "https://linkedin.com/in/wallymo"
+        },
+        {
+          "page": 1,
+          "uri": "https://wallymo.github.io/forma-life-science-marketing-general-interest/"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/6748"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/4629"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.red-dot.org/project/dxa-digital-experience-audit-55219"
+        }
+      ],
+      "coverage": [
+        {
+          "id": "client-account-strategy",
+          "requirement": "Support dynamic life science clients, anticipate challenges, and contribute to long-term client success through account management and client strategy.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "account management",
+            "client strategy",
+            "Fortune 500 pharma",
+            "client relationships"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "ux-and-digital-strategy",
+          "requirement": "Contribute UX design, digital strategy, web design, audits, and clear digital experiences for life science brands.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "UX design",
+            "digital strategy",
+            "web design",
+            "digital experiences"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "life-science-marketing-and-regulated-delivery",
+          "requirement": "Understand life science marketing, regulated workflows, and the needs of pharma and healthcare audiences.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "life science marketing",
+            "pharma and healthcare",
+            "regulated workflows",
+            "MLR review"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "collaborative-cross-functional-delivery",
+          "requirement": "Work across strategy, creative, design, development, operations, and client teams in an engaged and collaborative environment.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "cross-functional collaboration",
+            "creative",
+            "strategy",
+            "development"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "practical-ai-implementation",
+          "requirement": "Offer practical AI implementation that can support client work, internal workflows, and responsible adoption when future needs call for it.",
+          "priority": "context",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "AI implementation",
+            "workflow design",
+            "human review",
+            "client adoption"
+          ],
+          "missingTerms": []
+        }
+      ],
+      "failures": [],
+      "warnings": []
+    },
+    "humanizer": {
+      "status": "passed",
+      "version": "2.2.0",
+      "mode": "surface-only",
+      "reviewedAt": "2026-07-23T00:32:10.908Z",
+      "copySha256": "b471c4c3e7e2735e111e63d37bc76608044179480eed60947f99c31c731236d4",
+      "reviewMethod": "humanizer-skill",
+      "semanticPassAttested": true,
+      "staticChecksPassed": true
+    },
+    "route": {
+      "viewports": [
+        {
+          "name": "desktop",
+          "screenshot": "tmp/qa/forma-life-science-marketing-general-interest/desktop.png",
+          "errors": []
+        },
+        {
+          "name": "mobile",
+          "screenshot": "tmp/qa/forma-life-science-marketing-general-interest/mobile.png",
+          "errors": []
+        }
+      ],
+      "errors": []
+    }
+  }
+}
