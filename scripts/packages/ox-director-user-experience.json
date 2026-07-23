@@ -277,7 +277,7 @@
       "one-block-away": [
         "Lead client discovery, product strategy, and UX from initial questions and user flows through interactive prototypes, front-end and backend logic, demo readiness, and engineering handoff",
         "Build client-led POCs that turn unclear business needs into testable product surfaces, service workflows, roadmap decisions, and working demos",
-        "Present prototypes early so clients can evaluate the experience, challenge assumptions, and make clear build decisions"
+        "Built ListingPal's AI workflow, turning basic property inputs into listing copy, social posts, ad copy, styling direction, and MLS/SEO-ready language in under 90 seconds"
       ],
       "kinesso": [
         "Led enterprise UX and design systems used by 7,000+ people across 22 white-label brands, aligning customer needs, product standards, business goals, and engineering constraints",
@@ -355,8 +355,8 @@
     "humanizerVersion": "2.2.0",
     "mode": "surface-only",
     "status": "passed",
-    "reviewedAt": "2026-07-23T03:54:33.938Z",
-    "copySha256": "9f41650cdffdf4558166a84a51311b068caab634b638b8d6e2dedd28acdfa4b9",
+    "reviewedAt": "2026-07-23T04:01:46.726Z",
+    "copySha256": "4cadd044046f1d97394faa642ea31e50d6aa208f3f3a88133d42949f40967539",
     "preserved": [
       "content",
       "structure",
@@ -372,12 +372,12 @@
   },
   "qa": {
     "status": "qa-passed",
-    "builtAt": "2026-07-23T03:54:38.044Z",
-    "configInputSha256": "dfa42609d9704e742082c89370510ccbf8ca3fde9f15eb985e52bb4d0650d131",
-    "sourceResumeSha256": "2899e45ff283edc6f496656735271c56a12a81a5bffd702441abfed94e68d1d7",
+    "builtAt": "2026-07-23T04:03:08.130Z",
+    "configInputSha256": "82b357ee2d618b9f84c1cf8ec4dfae58ea01b196ed5605c8b01bdcf58554a3ff",
+    "sourceResumeSha256": "9d6e6d1d5e2d05282174ae03e31ab0d8979657abdbde618a5daef1b9980f3d04",
     "artifactHashes": {
       "routeSha256": "246e502d6cf705b2a7d09d7e14327003b7c36f92a0196fb33ae053312667fed8",
-      "resumePdfSha256": "ddc3913607cd1440ce28000b0458f2b2cb3dad9848ba7a06fd78b4d7ed48a1b7",
+      "resumePdfSha256": "a6881925ea44cf10263ac7d31a878e973c9e279ea08e025bf8f57ecfc547b89c",
       "scopedProjectSha256": {}
     },
     "renderer": {
@@ -392,7 +392,7 @@
       "ok": true,
       "pdfPath": "output/pdf/Wally-Mostafa-OX-Director-User-Experience-Resume.pdf",
       "pageCount": 2,
-      "fileSize": 129314,
+      "fileSize": 131649,
       "annotations": [
         {
           "page": 1,
@@ -570,8 +570,8 @@
       "status": "passed",
       "version": "2.2.0",
       "mode": "surface-only",
-      "reviewedAt": "2026-07-23T03:54:33.938Z",
-      "copySha256": "9f41650cdffdf4558166a84a51311b068caab634b638b8d6e2dedd28acdfa4b9",
+      "reviewedAt": "2026-07-23T04:01:46.726Z",
+      "copySha256": "4cadd044046f1d97394faa642ea31e50d6aa208f3f3a88133d42949f40967539",
       "reviewMethod": "humanizer-skill",
       "semanticPassAttested": true,
       "staticChecksPassed": true
