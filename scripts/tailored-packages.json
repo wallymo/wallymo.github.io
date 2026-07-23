@@ -2276,9 +2276,27 @@
         "project-01.html"
       ],
       "resumePdfPath": "output/pdf/Wally-Mostafa-Vice-President-Customer-Experience-Design-Strategy-Resume.pdf",
-      "publishStatus": "local-only",
+      "publishStatus": "live-verified",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-07-23T21:06:00.953Z"
+      "builtAt": "2026-07-23T21:06:00.953Z",
+      "verification": {
+        "verifiedAt": "2026-07-23T21:09:30.502Z",
+        "routeUrl": "https://wallymo.github.io/vice-president-customer-experience-design-strategy/",
+        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-Vice-President-Customer-Experience-Design-Strategy-Resume.pdf",
+        "configUrl": "https://wallymo.github.io/scripts/packages/vice-president-customer-experience-design-strategy.json",
+        "projectUrls": [
+          "https://wallymo.github.io/project-04.html",
+          "https://wallymo.github.io/project-03.html",
+          "https://wallymo.github.io/project-06.html",
+          "https://wallymo.github.io/project-01.html"
+        ],
+        "configSha256": "8e671ab2ea09a51f3283d261890e0b935210cee9d51c1d2f1ad7f7f43dd3d66e",
+        "pdfSha256": "05770bb7aee17141b6384a266a95c6aab01e0e58a94f441b067a2333a8a3296f",
+        "routeSha256": "931f69d1e43d689daa40dfe0bccf713489a7961aadab90895e1ac749ddf3b042",
+        "scopedProjectSha256": {},
+        "configInputSha256": "db5cba3119aea38ad10e0ae9ccdd287de5ad51a360a1b5621881973cc4123dcf",
+        "qaBuiltAt": "2026-07-23T21:06:00.953Z"
+      }
     },
     {
       "slug": "xo-in-house-creator",
