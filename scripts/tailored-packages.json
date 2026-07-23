@@ -852,6 +852,26 @@
     },
     {
       "workflowVersion": 2,
+      "slug": "fingerpaint-medical-account-supervisor",
+      "roleTitle": "Fingerpaint Medical Account Supervisor",
+      "artifactStem": "Fingerpaint-Medical-Account-Supervisor",
+      "configPath": "scripts/packages/fingerpaint-medical-account-supervisor.json",
+      "targetLane": "pharma-medical-communications-account-leadership",
+      "evidenceMode": "resume-primary",
+      "fitClass": "strong",
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-01.html",
+        "project-08.html",
+        "project-06.html"
+      ],
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Fingerpaint-Medical-Account-Supervisor-Resume.pdf",
+      "publishStatus": "local-only",
+      "qaStatus": "qa-passed",
+      "builtAt": "2026-07-23T03:20:23.923Z"
+    },
+    {
+      "workflowVersion": 2,
       "slug": "finn-partners-senior-project-manager",
       "roleTitle": "FINN Partners Senior Project Manager",
       "artifactStem": "FINN-Partners-Senior-Project-Manager",
