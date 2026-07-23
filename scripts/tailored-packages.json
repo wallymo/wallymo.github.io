@@ -1712,26 +1712,9 @@
         "project-06.html"
       ],
       "resumePdfPath": "output/pdf/Wally-Mostafa-Propeller-Director-Experience-Strategy-Resume.pdf",
-      "publishStatus": "live-verified",
+      "publishStatus": "local-only",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-07-23T00:27:53.875Z",
-      "verification": {
-        "verifiedAt": "2026-07-23T00:29:53.397Z",
-        "routeUrl": "https://wallymo.github.io/propeller-director-experience-strategy/",
-        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-Propeller-Director-Experience-Strategy-Resume.pdf",
-        "configUrl": "https://wallymo.github.io/scripts/packages/propeller-director-experience-strategy.json",
-        "projectUrls": [
-          "https://wallymo.github.io/project-01.html",
-          "https://wallymo.github.io/project-04.html",
-          "https://wallymo.github.io/project-06.html"
-        ],
-        "configSha256": "717d66711add3ac92d1ab2d22daae3a96498b422f753f3ce613a08c161ea69d2",
-        "pdfSha256": "254b5953f7395d91f12d5a9ac389c490aeb555fb36574d8ed89dc3046e20cc64",
-        "routeSha256": "c23e903d93f29d228f3cb2d93042ddc09c4a2bbdddc1752e150c0a2718175b42",
-        "scopedProjectSha256": {},
-        "configInputSha256": "b479343fb9605766de91150428040d6298175bd2e159058c28456be6848b65f6",
-        "qaBuiltAt": "2026-07-23T00:27:53.875Z"
-      }
+      "builtAt": "2026-07-23T00:37:03.633Z"
     },
     {
       "slug": "real-chemistry-account-manager",

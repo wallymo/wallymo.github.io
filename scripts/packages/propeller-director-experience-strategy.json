@@ -222,9 +222,11 @@
         "Developed FDA Warning Tool concepts that connect warning-letter patterns to content-risk guidance and practical client recommendations"
       ],
       "one-block-away": [
-        "Own client-led AI POCs from the first question through a working prototype, covering product strategy, UX, model behavior, front-end and backend logic, demo readiness, and roadmap decisions",
-        "Built WeReady's Bailey Intelligence dashboard from founder inputs, GitHub signals, government sources, academic research, and investor frameworks",
-        "Structured the product around source health, credibility scoring, technical risk, business signals, evidence trails, and recommended actions"
+        "Build client-led AI POCs that turn unclear business questions into testable product surfaces, demo flows, and roadmap decisions",
+        "Built ListingPal's AI listing-generation POC and landing page, turning basic property inputs into listing copy, social posts, ad copy, styling direction, and MLS/SEO-ready language in under 90 seconds",
+        "Built WeReady's Bailey Intelligence dashboard, translating founder inputs, GitHub signals, source health, risk scoring, and evidence trails into startup-readiness workflows",
+        "Own product strategy, UX, AI workflow design, front-end build, backend logic, demo readiness, and client iteration from first ask through working prototype",
+        "Currently building the website and sponsor strategy for a Tunisia youth soccer program, positioning the project for player advancement, community support, and donor outreach"
       ],
       "kinesso": [
         "Scaled product design from 2 to 30 people across the United States and Poland for enterprise analytics used by 7,000+ people across 22 white-label brands",
@@ -265,8 +267,8 @@
     "humanizerVersion": "2.2.0",
     "mode": "surface-only",
     "status": "passed",
-    "reviewedAt": "2026-07-23T00:27:50.152Z",
-    "copySha256": "69a991c4500c2cdb42949b6e5295211f8d38694ea93948984a733cc64bb5332c",
+    "reviewedAt": "2026-07-23T00:36:59.564Z",
+    "copySha256": "e728208ff0596aec5da5c8e4a776e10b66e6ee75c96b50fedf7dae7deb93e8a0",
     "preserved": [
       "content",
       "structure",
@@ -306,12 +308,12 @@
   },
   "qa": {
     "status": "qa-passed",
-    "builtAt": "2026-07-23T00:27:53.875Z",
-    "configInputSha256": "b479343fb9605766de91150428040d6298175bd2e159058c28456be6848b65f6",
+    "builtAt": "2026-07-23T00:37:03.633Z",
+    "configInputSha256": "f0f91e1a053c58b3ffc90274e187d71641dd4845020ed0c0d6db4854e02a9dcd",
     "sourceResumeSha256": "375cc6566f5bbad5b95be9da551dfe87824378fb252222409d29ef32d334ca25",
     "artifactHashes": {
       "routeSha256": "c23e903d93f29d228f3cb2d93042ddc09c4a2bbdddc1752e150c0a2718175b42",
-      "resumePdfSha256": "254b5953f7395d91f12d5a9ac389c490aeb555fb36574d8ed89dc3046e20cc64",
+      "resumePdfSha256": "35cb73f837a81286d672e14edfc6040334243f5c653924729018ec2ac046b962",
       "scopedProjectSha256": {}
     },
     "renderer": {
@@ -326,7 +328,7 @@
       "ok": true,
       "pdfPath": "output/pdf/Wally-Mostafa-Propeller-Director-Experience-Strategy-Resume.pdf",
       "pageCount": 2,
-      "fileSize": 131134,
+      "fileSize": 133773,
       "annotations": [
         {
           "page": 1,
@@ -458,8 +460,8 @@
       "status": "passed",
       "version": "2.2.0",
       "mode": "surface-only",
-      "reviewedAt": "2026-07-23T00:27:50.152Z",
-      "copySha256": "69a991c4500c2cdb42949b6e5295211f8d38694ea93948984a733cc64bb5332c",
+      "reviewedAt": "2026-07-23T00:36:59.564Z",
+      "copySha256": "e728208ff0596aec5da5c8e4a776e10b66e6ee75c96b50fedf7dae7deb93e8a0",
       "reviewMethod": "humanizer-skill",
       "semanticPassAttested": true,
       "staticChecksPassed": true
