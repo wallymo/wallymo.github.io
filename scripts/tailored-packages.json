@@ -1518,9 +1518,26 @@
         "project-03.html"
       ],
       "resumePdfPath": "output/pdf/Wally-Mostafa-Novum-Partners-AI-Strategic-Lead-Resume.pdf",
-      "publishStatus": "local-only",
+      "publishStatus": "live-verified",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-07-23T20:32:48.271Z"
+      "builtAt": "2026-07-23T20:32:48.271Z",
+      "verification": {
+        "verifiedAt": "2026-07-23T20:35:47.450Z",
+        "routeUrl": "https://wallymo.github.io/novum-partners-ai-strategic-lead/",
+        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-Novum-Partners-AI-Strategic-Lead-Resume.pdf",
+        "configUrl": "https://wallymo.github.io/scripts/packages/novum-partners-ai-strategic-lead.json",
+        "projectUrls": [
+          "https://wallymo.github.io/project-02.html",
+          "https://wallymo.github.io/project-01.html",
+          "https://wallymo.github.io/project-03.html"
+        ],
+        "configSha256": "1d9ccee2aeda007f71d308744a192044ff791179c1724777aeec9bd4ba14af02",
+        "pdfSha256": "105d8e9594cf9c9a3bd8efc1ca944fd5804b53d7ce95addc0a8becf7a5c22b07",
+        "routeSha256": "116c45c0f88c575d038a2151748ee1bdb6d8ba5bf3bd438c647154a12e5a4b23",
+        "scopedProjectSha256": {},
+        "configInputSha256": "f142fbb3820d5ce49245d61011e849de19d7568bb019632ab3e508c4f11ab998",
+        "qaBuiltAt": "2026-07-23T20:32:48.271Z"
+      }
     },
     {
       "workflowVersion": 2,
