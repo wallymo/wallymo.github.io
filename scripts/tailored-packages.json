@@ -1092,9 +1092,26 @@
         "project-01.html"
       ],
       "resumePdfPath": "output/pdf/Wally-Mostafa-Globe-Life-Product-Manager-II-Resume.pdf",
-      "publishStatus": "local-only",
+      "publishStatus": "live-verified",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-07-23T21:54:37.092Z"
+      "builtAt": "2026-07-23T21:54:37.092Z",
+      "verification": {
+        "verifiedAt": "2026-07-23T21:58:16.812Z",
+        "routeUrl": "https://wallymo.github.io/globe-life-product-manager-ii/",
+        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-Globe-Life-Product-Manager-II-Resume.pdf",
+        "configUrl": "https://wallymo.github.io/scripts/packages/globe-life-product-manager-ii.json",
+        "projectUrls": [
+          "https://wallymo.github.io/project-02.html",
+          "https://wallymo.github.io/project-03.html",
+          "https://wallymo.github.io/project-01.html"
+        ],
+        "configSha256": "8dc6afa85d7569d7f84134b4591ee9c844175c75be7781e71f3e0163fc84c15c",
+        "pdfSha256": "e6227cab2169d77382d95fc0e320e9124ffbb9ce073b0505e468995fa2f0bac6",
+        "routeSha256": "2a0a7d293ee0d63dc340d4d4ecabe8c2ab18ac775a4d1cef007dd753cb2e27ee",
+        "scopedProjectSha256": {},
+        "configInputSha256": "0c63cfdaf7daeb034d7417049949ef214f4052afb44a9abccfdd1ef7bf15ff6d",
+        "qaBuiltAt": "2026-07-23T21:54:37.092Z"
+      }
     },
     {
       "slug": "healthcare-diagnostics-sales-support",
