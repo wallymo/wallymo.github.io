@@ -1504,6 +1504,26 @@
     },
     {
       "workflowVersion": 2,
+      "slug": "novum-partners-ai-strategic-lead",
+      "roleTitle": "Novum Partners AI Strategic Lead",
+      "artifactStem": "Novum-Partners-AI-Strategic-Lead",
+      "configPath": "scripts/packages/novum-partners-ai-strategic-lead.json",
+      "targetLane": "founder-style AI product and operations leadership",
+      "evidenceMode": "balanced",
+      "fitClass": "adjacent",
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-02.html",
+        "project-01.html",
+        "project-03.html"
+      ],
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Novum-Partners-AI-Strategic-Lead-Resume.pdf",
+      "publishStatus": "local-only",
+      "qaStatus": "qa-passed",
+      "builtAt": "2026-07-23T20:32:48.271Z"
+    },
+    {
+      "workflowVersion": 2,
       "slug": "oktana-ux-designer",
       "roleTitle": "Oktana UX Designer",
       "artifactStem": "Oktana-UX-Designer",

@@ -1,0 +1,545 @@
+{
+  "workflowVersion": 2,
+  "contractRevision": 3,
+  "slug": "novum-partners-ai-strategic-lead",
+  "roleTitle": "Novum Partners AI Strategic Lead",
+  "artifactStem": "Novum-Partners-AI-Strategic-Lead",
+  "fitClass": "adjacent",
+  "routeMode": "canonical-projects",
+  "selectedProjects": [
+    "project-02.html",
+    "project-01.html",
+    "project-03.html"
+  ],
+  "job": {
+    "company": "Novum Partners",
+    "roleTitle": "AI Strategic Lead",
+    "sourceChannel": "user-provided-job-description",
+    "dateCaptured": "2026-07-23",
+    "location": "San Antonio, TX preferred; remote considered for the right candidate",
+    "atsVendor": "unknown",
+    "rawJd": "About the job\nNovum Partners is a strategic management firm serving churches, nonprofits, and businesses. We operate across three verticals: Consulting, Finance & Accounting, and HR. Our clients are organizations built for good, and we exist to strategically guide and steward their resources for the good of all humanity.\n\nWe are hiring an AI Strategic Lead to lead a new dimension of the firm: building technology products that make Novum indispensable to the organizations we serve, then taking those products to market beyond our existing client base. This is not an IT support role. This is a builder's seat with founder-level upside.\n\nTHE OPPORTUNITY\nNovum sits inside the operations of over 400 churches, nonprofits, and businesses. We see how they budget, how they manage people, how they make decisions, and where they lose time. That access is rare. What we have not yet done is turn that operational intelligence into technology products that solve problems at scale. That is your job.\n\nYou will work directly with the CEO to identify where technology can create leverage, both inside Novum and for the organizations we serve. You will build the tools, refine the products, and implement them. Your compensation is structured so that when those products generate revenue, you share directly in the upside.\n\nWHAT YOU WILL DO\nBuild internal tools that create operational leverage. Automate workflows, eliminate manual processes, and reduce cost across Novum's three service verticals. You will establish a baseline of current costs and time expenditure, then systematically drive both down.\n\nDesign and develop client-facing technology products. Identify problems our 400+ client organizations share, then build tools, platforms, or applications that solve those problems in a way that is scalable, repeatable, and sellable.\n\nTake products to market. You are not just building; we are commercializing. You will work with leadership to price, position, and sell technology products outside of Novum's core service engagements. You own the product from concept through revenue.\n\nDrive AI adoption across the firm. Evaluate, implement, and train the team on AI tools and workflows that raise Novum's capacity without raising headcount. Make the firm smarter, faster, and harder to replicate.\n\nAdvise on technology strategy for clients. When a church, nonprofit, or business needs technology guidance, you bring the expertise. This is not implementation support; it is strategic counsel on how technology fits into their operational model.\n\nWHO YOU ARE\nYou are a builder who ships. You are not interested in strategy decks about what could be built someday. You want to build it, test it, fix it, and get it in front of people who will pay for it. You think in products, not projects.\n\nTechnically excellent. You write code, architect systems, and evaluate AI tools with the hands-on depth of someone who has built production software. You are fluent in modern AI/ML tools, API integrations, and no-code/low-code platforms. You can build a prototype in a weekend and a production system in a quarter.\n\nProduct-minded. You think about problems from the customer's chair. You can identify the pain point, scope the minimum viable solution, and iterate based on real usage. You know the difference between a feature and a product.\n\nCommercially driven. You care about revenue and value. Building something elegant that nobody buys is a failure. You understand pricing, positioning, and the discipline of finding product-market fit. The commission structure exists because we expect you to think like an owner.\n\nAligned with the mission. Novum serves organizations built on faith. You do not need to be a theologian, but you need to respect the mission and understand that the people we serve are doing work they believe matters eternally. Posture matters here. Humility, service, and genuine care for these organizations are not optional.\n\nSelf-directed. You will report directly to the CEO. There is no product team to manage you, no sprint board someone else maintains, no roadmap handed to you. You will build the roadmap. You need to be the kind of person who thrives with a clear mandate and wide latitude.\n\nWHAT WE ARE NOT LOOKING FOR\nConsultants who advise but do not build\nTechnologists who build but cannot connect their work to revenue\nPeople who need large teams, long timelines, or perfect conditions before they move\nAnyone uncomfortable working inside a faith-based culture or serving churches, nonprofits, and businesses\n\nCOMPENSATION\nThis role is designed for someone who wants to build something and own the outcome. The compensation reflects that.\nSalary\nProduct revenue commission\nProduction bonus\nBenefits include PTO, medical, 401k, and cell phone\n\nROLE DETAILS\nReports to: CEO\nLocation: San Antonio, TX preferred; remote considered for the right candidate\nType: Full-time"
+  },
+  "classification": {
+    "targetLane": "founder-style AI product and operations leadership",
+    "evidenceMode": "balanced",
+    "primarySource": "Resume evidence of current AI product strategy, functional POC building, front-end and backend logic, investor communication, enterprise platform delivery, and 15 years of client-facing work",
+    "supportingSource": "Portfolio proof from Claims Detector and regulated workflow tools, ListingPal and WeReady POCs, and enterprise systems used by more than 7,000 people across 22 brands",
+    "hardGateStatus": "pass",
+    "hardGates": [
+      {
+        "gate": "Hands-on AI product building rather than advisory-only work",
+        "status": "pass",
+        "evidence": "Current work includes functional AI POCs, front-end build, backend logic, model orchestration, working demos, client iteration, and production handoff. The package does not claim production-platform scale or formal software-architecture ownership."
+      },
+      {
+        "gate": "Commercial judgment and willingness to connect product work to revenue",
+        "status": "pass",
+        "evidence": "Claims Detector secured investor support; ListingPal included a product landing page, beta positioning, and demo path; earlier account leadership covered Fortune 500 relationships and USD 2M-50M+ budgets. Direct ownership of product pricing, sales, recurring revenue, or product-market fit is not documented."
+      },
+      {
+        "gate": "Self-directed work with broad ownership",
+        "status": "pass",
+        "evidence": "One Block Away documents founder-level ownership from the first client question through strategy, UX, AI workflow design, front-end build, backend logic, demo readiness, and iteration. Hedgehox adds investor-facing and regulated workflow ownership."
+      },
+      {
+        "gate": "Location",
+        "status": "pass",
+        "evidence": "The posting says San Antonio is preferred and remote may be considered for the right candidate. The resume documents Raleigh, North Carolina and current remote work, so location is not a stated hard blocker."
+      },
+      {
+        "gate": "Respect for a faith-based client culture",
+        "status": "not-applicable",
+        "evidence": "The public resume and portfolio do not establish personal faith or cultural alignment, so the package does not claim it. The candidate should answer this directly in the application or interview."
+      }
+    ]
+  },
+  "requirements": [
+    {
+      "id": "internal-tools-and-operational-leverage",
+      "text": "Build internal tools that automate workflows, remove manual work, reduce cost, and create leverage across Consulting, Finance & Accounting, and HR.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Hedgehox work turns recurring agency needs into tools for brief intake, scoping, review routing, submission capture, MLR review, and FDA monitoring.",
+        "Scope Generator supports rate cards, brand structures, natural-language scope changes, resourcing, cost breakdowns, and spreadsheet export logic.",
+        "The Digital Experience Audit converted fragmented inputs into a repeatable audit, benchmark, recommendation, and client-output workflow."
+      ],
+      "resumeTerms": [
+        "workflow automation",
+        "brief intake",
+        "scoping",
+        "review routing",
+        "submission capture"
+      ]
+    },
+    {
+      "id": "client-facing-ai-products",
+      "text": "Identify repeated client problems and build scalable, repeatable, sellable technology products.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "ListingPal turns basic property inputs into listing copy, social posts, ad copy, styling direction, and MLS/SEO-ready language in under 90 seconds.",
+        "WeReady's Bailey Intelligence dashboard turns founder inputs, GitHub signals, source health, risk scoring, and evidence trails into decision-ready workflows.",
+        "Claims Detector identifies promotional claims, surfaces evidence gaps, and prepares audit-ready annotations before MLR submission."
+      ],
+      "resumeTerms": [
+        "working AI POCs",
+        "ListingPal",
+        "WeReady",
+        "Claims Detector"
+      ]
+    },
+    {
+      "id": "hands-on-technical-build",
+      "text": "Write code, architect systems, evaluate modern AI tools, and move from fast prototypes toward production software.",
+      "priority": "core",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "One Block Away explicitly covers front-end build, backend logic, AI workflow design, model behavior, demo readiness, and client iteration.",
+        "The portfolio documents LLM and VLM workflows, RAG and knowledge bases, model orchestration, prompt-defined criteria, evidence trails, and human review.",
+        "The evidence centers on functional POCs and production handoff, not operated production systems, formal architecture ownership, or a named application stack."
+      ],
+      "resumeTerms": [
+        "front-end build",
+        "backend logic",
+        "LLM/VLM workflows",
+        "RAG and knowledge bases"
+      ]
+    },
+    {
+      "id": "product-commercialization",
+      "text": "Own products from concept through pricing, positioning, sales, product-market fit, and revenue.",
+      "priority": "core",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Claims Detector secured an investor after a functional POC and executive demo connected workflow behavior to business value.",
+        "ListingPal included a public landing page, product story, beta positioning, demo path, and a clear explanation of customer value.",
+        "Seven-plus years of account leadership adds commercial context through Fortune 500 client relationships, brand planning, integrated delivery, and USD 2M-50M+ budgets."
+      ],
+      "resumeTerms": [
+        "investor",
+        "product positioning",
+        "business value",
+        "client strategy"
+      ]
+    },
+    {
+      "id": "firm-ai-adoption",
+      "text": "Evaluate and implement AI tools, train the team, and raise firm capacity without adding headcount.",
+      "priority": "core",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Current work evaluates AI behavior through working product flows with defined criteria, review gates, and human oversight.",
+        "Kinesso experience includes adoption across more than 7,000 users and 22 white-label brands, reusable standards, documentation, and a distributed product-design organization scaled from 2 to 30.",
+        "Formal firm-wide AI training, tool procurement, adoption baselines, and headcount savings are not documented."
+      ],
+      "resumeTerms": [
+        "stakeholder adoption",
+        "enablement",
+        "documentation",
+        "reusable systems"
+      ]
+    },
+    {
+      "id": "client-technology-strategy",
+      "text": "Advise churches, nonprofits, and businesses on how technology fits their operating model.",
+      "priority": "core",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Fifteen years of client-facing work includes stakeholder discovery, client strategy, product recommendations, workflow design, and build-ready decisions.",
+        "One Block Away translates unclear client asks into testable product surfaces and roadmap decisions.",
+        "Direct technology advisory work for churches or nonprofits is not documented."
+      ],
+      "resumeTerms": [
+        "stakeholder discovery",
+        "product recommendations",
+        "client strategy",
+        "roadmap decisions"
+      ]
+    },
+    {
+      "id": "self-directed-product-ownership",
+      "text": "Work directly with the CEO, build the roadmap, and own product decisions with little organizational support.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "One Block Away founder work runs from the first client ask through discovery, product strategy, UX, AI workflow design, front-end build, backend logic, demo readiness, and iteration.",
+        "Hedgehox work includes investor communication, functional POC delivery, and connected product decisions across regulated workflows.",
+        "Kinesso work adds leadership at enterprise scale across product, engineering, analytics, research, and executive stakeholders."
+      ],
+      "resumeTerms": [
+        "Founder",
+        "product strategy",
+        "roadmap decisions",
+        "client iteration"
+      ]
+    },
+    {
+      "id": "faith-based-mission-alignment",
+      "text": "Respect Novum's faith-based mission and serve churches, nonprofits, and businesses with humility and care.",
+      "priority": "core",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "resumeTerms": [
+        "faith-based culture",
+        "church clients",
+        "ministry technology"
+      ]
+    }
+  ],
+  "fitGate": {
+    "supportedOverlap": [
+      "Current founder and AI implementation work directly covers client discovery, product strategy, workflow design, functional POCs, front-end build, backend logic, demo readiness, and client iteration.",
+      "Claims Detector secured investor support, while ListingPal and WeReady show two different client problems turned into working AI product surfaces.",
+      "Scope Generator, regulated review tools, and the Digital Experience Audit show a repeatable pattern of turning manual operational work into structured software workflows.",
+      "Enterprise platform experience adds adoption proof across more than 7,000 users and 22 white-label brands, reusable systems, documentation, and cross-functional delivery.",
+      "Seven-plus years of Fortune 500 account leadership and USD 2M-50M+ budgets support the client, business-value, and commercial side of the role.",
+      "Fifteen years across client strategy, product, UX, AI implementation, and regulated delivery fit the wide-latitude, CEO-facing shape of the seat."
+    ],
+    "unsupportedRequirements": [
+      "Direct ownership of an operated production software platform at scale is not documented.",
+      "Formal software or cloud architecture ownership, named programming languages, API integrations, CI/CD, monitoring, security, or infrastructure operations are not documented.",
+      "Direct product pricing, sales ownership, recurring product revenue, commission outcomes, or product-market-fit ownership are not documented.",
+      "Firm-wide AI tool procurement, team training, cost baselines, time-savings measurement, and headcount-efficiency outcomes are not documented.",
+      "Technology advisory work for churches, nonprofits, Finance & Accounting teams, or HR teams is not documented.",
+      "Personal alignment with a faith-based workplace is not established by the public evidence and should be answered directly."
+    ],
+    "actualMismatches": [
+      "The strongest recent technical proof is functional POC building and production handoff rather than operating a production software system through a full quarter and beyond.",
+      "The recent product work shows investor interest, beta positioning, and client value, but not a product carried through pricing, repeatable sales, and revenue."
+    ],
+    "missingEvidence": [
+      "A production system with architecture, deployment, reliability, security, monitoring, and maintenance outcomes.",
+      "Named programming languages, frameworks, APIs, low-code platforms, infrastructure, and AI evaluation tooling.",
+      "Pricing decisions, customer acquisition, product revenue, retention, and product-market-fit learning.",
+      "Measured internal savings in hours, cost, cycle time, or avoided headcount.",
+      "Direct examples of technology strategy for churches, nonprofits, accounting operations, or HR operations."
+    ],
+    "coverLetterBridge": {
+      "status": "recommended",
+      "rationale": "We can make the case with a cover letter by connecting investor-backed Claims Detector work, the ListingPal and WeReady builds, enterprise workflow adoption, and years of client and budget leadership to Novum's build-and-commercialize mandate. The cover letter should address production depth, direct revenue ownership, and respect for Novum's faith-based mission without implying experience the public evidence does not show."
+    },
+    "recommendation": "Proceed as adjacent. Lead with the founder-builder pattern: find the repeated workflow, build a working first version, connect it to business value, and help people adopt it. Keep production-platform scale, formal architecture ownership, named technical stacks, pricing, product revenue, firm-wide AI training, cost-savings metrics, church or nonprofit technology advising, and personal faith alignment out of the claim set."
+  },
+  "resume": {
+    "summary": "AI product strategist and hands-on builder with 15 years across client strategy, enterprise platforms, regulated workflows, and product delivery. I turn repeated operational pain into scoped requirements, working AI POCs, front-end and backend logic, demo narratives, and production handoffs. My recent work includes investor-backed claims software, agency-operations tools, ListingPal, and WeReady, backed by earlier enterprise products used by more than 7,000 people across 22 brands.",
+    "skills": [
+      {
+        "label": "AI Product Discovery & Roadmaps",
+        "description": "Stakeholder discovery, repeated-workflow analysis, product requirements, MVP scoping, roadmap decisions, prototype validation, product recommendations, and production handoff"
+      },
+      {
+        "label": "Hands-on AI Product Build",
+        "description": "LLM/VLM workflows, RAG and knowledge bases, model orchestration, prompt-defined criteria, front-end build, backend logic, working AI POCs, evidence trails, and human review"
+      },
+      {
+        "label": "Workflow Automation & Operational Leverage",
+        "description": "Workflow automation, brief intake, scoping, review routing, submission capture, rate cards, natural-language scope changes, audit workflows, and reusable systems"
+      },
+      {
+        "label": "Client Strategy, Adoption & Commercial Translation",
+        "description": "Client strategy, investor demos, product positioning, business value, stakeholder adoption, enablement, documentation, USD 2M-50M+ account experience, and cross-functional delivery"
+      }
+    ],
+    "roles": {
+      "hedgehox": [
+        "Turn repeated pharma agency needs into connected AI tools for brief intake, scoping, review routing, submission capture, MLR claim review, and FDA signal monitoring",
+        "Built Scope Generator for agency finance and operations teams to manage regional rate cards, brands, sub-brands, scopes, scope changes, deliverables, timelines, role-level resourcing, and cost breakdowns",
+        "Designed Claims Detector workflows that identify promotional claims, surface evidence gaps, and pre-populate audit-ready annotations before MLR submission",
+        "Secured an investor for proprietary Claims Detection software by building the functional POC, shaping the demo story, and iterating with investors",
+        "Translate business workflows into product requirements, demonstrations, implementation choices, and build-ready decisions across regulated constraints"
+      ],
+      "one-block-away": [
+        "Build client-led AI POCs that turn unclear business questions into testable product surfaces, demo flows, and roadmap decisions",
+        "Built ListingPal's AI listing-generation POC and landing page, turning basic property inputs into listing copy, social posts, ad copy, styling direction, and MLS/SEO-ready language in under 90 seconds",
+        "Built WeReady's Bailey Intelligence dashboard, translating founder inputs, GitHub signals, source health, risk scoring, and evidence trails into startup-readiness workflows",
+        "Own product strategy, UX, AI workflow design, front-end build, backend logic, demo readiness, and client iteration from first ask through working prototype",
+        "Currently building the website and sponsor strategy for a Tunisia youth soccer program, positioning the project for player advancement, community support, and donor outreach"
+      ],
+      "kinesso": [
+        "Scaled product design from 2 to 30 people across the US and Poland for enterprise analytics used by 7,000+ users across 22 white-label brands",
+        "Led product-system strategy for enterprise analytics, data visualization, dashboard building, brand theming, reusable components, documentation, and accessibility",
+        "Built the Digital Experience Audit workflow for channel scoring, benchmarks, recommendations, visualization, and presentation-ready client outputs",
+        "Partnered across product, engineering, analytics, business, research, and executive stakeholders to turn complex workflows into reusable standards and build-ready decisions"
+      ],
+      "omnicom": [
+        "Supported oncology accounts as a freelance UX designer, combining hands-on product UX with agency and client experience in a regulated setting",
+        "Worked across account, strategy, creative, and delivery conversations to turn brand goals into clear user flows, content structure, and digital recommendations"
+      ],
+      "heartbeat": [
+        "Led UX research and experience strategy for pharma and healthcare products, translating stakeholder input, competitive audits, and user needs into prioritized product direction",
+        "Partnered with strategy, creative, account, and engineering teams to move research findings into build-ready product and campaign experiences"
+      ],
+      "account-management": [
+        "7+ years managing Fortune 500 pharma and healthcare clients with USD 2M-50M+ budgets across CNS and neurology, psychiatry, cardiovascular and metabolic, and sleep-wakefulness brands including NUVIGIL, Namenda XR, Lipitor, and Zoloft",
+        "One of two consumer account leads on FCB Health's largest pharma account across TV, radio, digital, gaming, Times Square, unbranded campaigns, brand planning, and MLR review",
+        "Translated client and brand strategy into briefs, creative feedback, production requirements, timelines, budgets, and MLR-ready deliverables"
+      ]
+    }
+  },
+  "hero": {
+    "eyebrow": "Novum Partners AI Strategic Lead",
+    "tags": [
+      "AI products from repeated client pain",
+      "Working POCs & workflow automation",
+      "Enterprise adoption & client strategy"
+    ],
+    "intro": "I build AI products by staying close to the work people repeat and the decisions they struggle to make. My recent proof includes Claims Detector and agency-operations tools, ListingPal and WeReady, plus enterprise platforms used by more than 7,000 people across 22 brands. For Novum, I would bring that same mix of client discovery, hands-on product building, and adoption work to find shared problems across the firm, ship a useful first version, and learn which products deserve a larger market."
+  },
+  "contact": {
+    "prompt": "If Novum needs an AI product lead who can sit with a workflow, build the first useful tool, and make the business case for what comes next, email me.",
+    "signoff": "AI product building · workflow leverage · client adoption"
+  },
+  "constraints": {
+    "doNotClaim": [
+      "Operated a production software platform at scale",
+      "Formal software architecture ownership",
+      "Named programming-language expertise",
+      "Direct API integration ownership",
+      "CI/CD, cloud, infrastructure, monitoring, or security operations ownership",
+      "Direct product pricing ownership",
+      "Product sales quota or recurring revenue ownership",
+      "Formal product-market-fit ownership",
+      "Firm-wide AI procurement or training ownership",
+      "Measured cost savings, time savings, or avoided headcount",
+      "Technology advisory work for churches or nonprofits",
+      "Finance & Accounting technology expertise",
+      "HR technology expertise",
+      "Personal faith or ministry alignment"
+    ],
+    "blockedTerms": [
+      "production platform owner",
+      "software architect",
+      "expert programmer",
+      "API integration expert",
+      "DevOps owner",
+      "cloud architect",
+      "priced and sold products",
+      "recurring product revenue",
+      "proven product-market fit",
+      "trained the whole firm on AI",
+      "reduced headcount",
+      "church technology advisor",
+      "nonprofit technology advisor",
+      "accounting technology expert",
+      "HR technology expert",
+      "faith-based leader"
+    ]
+  },
+  "privacy": {
+    "publicSafe": true,
+    "notes": "Contains only the public job description and sanitized evidence from the public resume and portfolio. It excludes recruiter contact details, application answers, personal compensation boundaries, private eligibility details, and personal belief claims."
+  },
+  "copyReview": {
+    "humanizerVersion": "2.2.0",
+    "mode": "surface-only",
+    "status": "passed",
+    "reviewedAt": "2026-07-23T20:26:25.762Z",
+    "copySha256": "ec4862fa564523a54c8a809d604a82e29636e38dec6fe464c4d200186352986e",
+    "preserved": [
+      "content",
+      "structure",
+      "claims",
+      "ending"
+    ],
+    "rewriteAuthorized": false,
+    "reviewMethod": "humanizer-skill",
+    "semanticPassAttested": true,
+    "staticChecksPassed": true,
+    "finalAntiAiPass": true,
+    "remainingTells": []
+  },
+  "qa": {
+    "status": "qa-passed",
+    "builtAt": "2026-07-23T20:32:48.271Z",
+    "configInputSha256": "f142fbb3820d5ce49245d61011e849de19d7568bb019632ab3e508c4f11ab998",
+    "sourceResumeSha256": "93909f45fd9bc185a4e40d48daea0c5b86d8391c5e6d8ca34d2ab9697852c931",
+    "artifactHashes": {
+      "routeSha256": "116c45c0f88c575d038a2151748ee1bdb6d8ba5bf3bd438c647154a12e5a4b23",
+      "resumePdfSha256": "105d8e9594cf9c9a3bd8efc1ca944fd5804b53d7ce95addc0a8becf7a5c22b07",
+      "scopedProjectSha256": {}
+    },
+    "renderer": {
+      "browser": {
+        "name": "chrome-headless-shell",
+        "version": "Google Chrome for Testing 149.0.7827.55"
+      },
+      "htmlPath": "tmp/tailored-resumes/novum-partners-ai-strategic-lead.html",
+      "pdfPath": "output/pdf/Wally-Mostafa-Novum-Partners-AI-Strategic-Lead-Resume.pdf"
+    },
+    "ats": {
+      "ok": true,
+      "pdfPath": "output/pdf/Wally-Mostafa-Novum-Partners-AI-Strategic-Lead-Resume.pdf",
+      "pageCount": 2,
+      "fileSize": 134063,
+      "annotations": [
+        {
+          "page": 1,
+          "uri": "mailto:wmostafa12@gmail.com"
+        },
+        {
+          "page": 1,
+          "uri": "https://linkedin.com/in/wallymo"
+        },
+        {
+          "page": 1,
+          "uri": "https://wallymo.github.io/novum-partners-ai-strategic-lead/"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/6748"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/4629"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.red-dot.org/project/dxa-digital-experience-audit-55219"
+        }
+      ],
+      "coverage": [
+        {
+          "id": "internal-tools-and-operational-leverage",
+          "requirement": "Build internal tools that automate workflows, remove manual work, reduce cost, and create leverage across Consulting, Finance & Accounting, and HR.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "workflow automation",
+            "brief intake",
+            "scoping",
+            "review routing",
+            "submission capture"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "client-facing-ai-products",
+          "requirement": "Identify repeated client problems and build scalable, repeatable, sellable technology products.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "working AI POCs",
+            "ListingPal",
+            "WeReady",
+            "Claims Detector"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "hands-on-technical-build",
+          "requirement": "Write code, architect systems, evaluate modern AI tools, and move from fast prototypes toward production software.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "front-end build",
+            "backend logic",
+            "LLM/VLM workflows",
+            "RAG and knowledge bases"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "product-commercialization",
+          "requirement": "Own products from concept through pricing, positioning, sales, product-market fit, and revenue.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "investor",
+            "product positioning",
+            "business value",
+            "client strategy"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "firm-ai-adoption",
+          "requirement": "Evaluate and implement AI tools, train the team, and raise firm capacity without adding headcount.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "stakeholder adoption",
+            "enablement",
+            "documentation",
+            "reusable systems"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "client-technology-strategy",
+          "requirement": "Advise churches, nonprofits, and businesses on how technology fits their operating model.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "stakeholder discovery",
+            "product recommendations",
+            "client strategy",
+            "roadmap decisions"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "self-directed-product-ownership",
+          "requirement": "Work directly with the CEO, build the roadmap, and own product decisions with little organizational support.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "Founder",
+            "product strategy",
+            "roadmap decisions",
+            "client iteration"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "faith-based-mission-alignment",
+          "requirement": "Respect Novum's faith-based mission and serve churches, nonprofits, and businesses with humility and care.",
+          "priority": "core",
+          "evidenceStatus": "none",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "faith-based culture",
+            "church clients",
+            "ministry technology"
+          ]
+        }
+      ],
+      "failures": [],
+      "warnings": []
+    },
+    "humanizer": {
+      "status": "passed",
+      "version": "2.2.0",
+      "mode": "surface-only",
+      "reviewedAt": "2026-07-23T20:26:25.762Z",
+      "copySha256": "ec4862fa564523a54c8a809d604a82e29636e38dec6fe464c4d200186352986e",
+      "reviewMethod": "humanizer-skill",
+      "semanticPassAttested": true,
+      "staticChecksPassed": true
+    },
+    "route": {
+      "viewports": [
+        {
+          "name": "desktop",
+          "screenshot": "tmp/qa/novum-partners-ai-strategic-lead/desktop.png",
+          "errors": []
+        },
+        {
+          "name": "mobile",
+          "screenshot": "tmp/qa/novum-partners-ai-strategic-lead/mobile.png",
+          "errors": []
+        }
+      ],
+      "errors": []
+    }
+  }
+}
