@@ -1,0 +1,492 @@
+{
+  "workflowVersion": 2,
+  "contractRevision": 3,
+  "slug": "inizio-growth-enablement-launch-specialist",
+  "roleTitle": "Inizio Engage Growth Enablement and Launch Specialist",
+  "artifactStem": "Inizio-Growth-Enablement-Launch-Specialist",
+  "fitClass": "adjacent",
+  "routeMode": "canonical-projects",
+  "selectedProjects": [
+    "project-01.html",
+    "project-02.html",
+    "project-06.html"
+  ],
+  "job": {
+    "company": "Inizio Engage",
+    "roleTitle": "Growth Enablement and Launch Specialist",
+    "jobId": "JR35170",
+    "jobUrl": "https://inizio.wd3.myworkdayjobs.com/en-US/CSO/job/Growth-Enablement-and-Launch-Specialist---HUB-Services_JR35170",
+    "sourceChannel": "chat-pasted-jd-and-company-careers",
+    "dateCaptured": "2026-07-22",
+    "location": "United States - Remote",
+    "atsVendor": "Workday",
+    "rawJd": "We are seeking a Growth Enablement and Launch Specialist provide Client Solutions with specialized, professional opportunity development support while continuing to manage implementation of new engagements. Why You'll Love Working Here: We believe great people deserve great support at work and beyond. That's why we offer a rewards experience designed to help you thrive personally, professionally, and financially. Competitive pay that recognizes your experience, expertise, and impact. Comprehensive benefits including medical, dental, and vision coverage; accrued paid time off; 401(k) with company match; disability and life insurance; and paid maternity and paternity leave. Company-paid holidays so you can rest, recharge, and focus on what matters most. Recognition programs, contests, and awards that celebrate your contributions. Continuous growth opportunities through learning, leadership development, and career advancement support. A collaborative culture where your ideas are valued and your work makes a difference. We are also proud to be recognized for creating an exceptional employee experience: Best Place to Work in BioPharma in 2022, 2023, and 2025; Certified Great Place to Work in 2021, 2023, 2025, and 2026. Opportunity Development 50%: Apply strong knowledge of the Engage business and client context to draft initial RFP responses and proposals. Proactively solicit information from Engage SMEs, where needed, to validate and build out gaps. Manage the planning and development of proposals. Actively participate in client-facing fact-finding meetings to capture proposal implications and actions. Maintain the proposal repository for your dedicated Specialty Area and lead the collection of cost, scheduling, and other elements from functional departments. Develop knowledge of the broader Engage service portfolio and flex to provide capacity when needed. Implementation Support 50%: Support Operations Leads through execution of new program stand-up. Develop a project plan and provide strong project management; proactively plan, execute, and monitor milestones to achieve objectives within scope, time, and budget. Identify and assign appropriate internal and external stakeholders to complete necessary tasks. Function as liaison to Operations Leads and client PMO; develop the necessary repository of client documents and ensure seamless transition to the Solutions Team post-implementation. Requirements: Deep knowledge of the life sciences industry and/or one or more of the Engage specialty areas. Excellent written communication and presentation skills. Proficient with creating professional sales materials, including slide design, copywriting, and storytelling. Familiarity with the business-to-business sales process. Strong business acumen. Five or more years of direct project-management work experience is required. A project-management qualification or equivalent is required, with PMP certification preferred. Knowledge of theoretical and practical aspects of project management. Proficiency in project-management software, tools, and techniques. Proven experience in strategic planning, risk and cost management, and time and resource management. Strong collaborator who is adaptable. Excellent planning and organizing skills. Proactive, persistent leader who drives for results. The base pay range is USD 49,000 to USD 91,000 per year. Final compensation depends on experience, skills, internal equity, and business needs."
+  },
+  "classification": {
+    "targetLane": "life-sciences-growth-enablement-proposal-support-and-implementation-launch",
+    "evidenceMode": "resume-primary",
+    "primarySource": "The resume directly proves 11 years across pharma and healthcare, including seven-plus years of Fortune 500 client delivery, USD 2M-50M+ budgets, briefs, timelines, cross-functional coordination, and regulated approvals.",
+    "supportingSource": "The portfolio shows pharma scoping, intake, review, risk, and launch workflows; client discovery through working POCs; and presentation-ready audit outputs used in strategy and client conversations.",
+    "hardGateStatus": "pass",
+    "hardGates": [
+      {
+        "gate": "Five or more years of direct project-management work experience",
+        "status": "pass",
+        "evidence": "Seven-plus years of pharma agency account delivery included budgets, briefs, schedules, production requirements, integrated teams, client communication, and MLR-ready approvals. Later product and workflow roles add planning, implementation, and cross-functional delivery."
+      },
+      {
+        "gate": "Deep life sciences industry or relevant Engage specialty-area knowledge",
+        "status": "pass",
+        "evidence": "The resume documents 11 years across pharma and healthcare communications, including Fortune 500 brands, patient and HCP experiences, oncology work, MLR review, FDA and HIPAA workflows, and current pharma agency tools."
+      },
+      {
+        "gate": "Professional sales materials, B2B process, writing, presentations, and storytelling",
+        "status": "pass",
+        "evidence": "Direct evidence includes seven-plus years of client and account strategy, integrated campaign briefs, presentation-ready client outputs, a functional investor POC and demo story, workshops, and current client discovery and demonstrations."
+      },
+      {
+        "gate": "United States remote location",
+        "status": "pass",
+        "evidence": "The public resume lists Raleigh, North Carolina, and the official role page lists United States - Remote."
+      },
+      {
+        "gate": "PMP certification preferred",
+        "status": "not-applicable",
+        "evidence": "PMP is stated as preferred rather than required. The package does not claim the certification."
+      }
+    ]
+  },
+  "requirements": [
+    {
+      "id": "rfp-proposal-development",
+      "text": "Draft RFP responses and proposals, gather missing information from subject-matter experts, and manage proposal planning and development.",
+      "priority": "core",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Seven-plus years of pharma account leadership included translating client strategy into briefs, production requirements, timelines, budgets, feedback, and MLR-ready deliverables.",
+        "Current work includes Scope Generator for detailed scopes and BriefFlow for structured intake, missing-information flags, review, approval, and export.",
+        "The public evidence does not document independent ownership of formal RFP responses."
+      ],
+      "resumeTerms": [
+        "proposal support",
+        "client briefs",
+        "subject-matter experts",
+        "opportunity development"
+      ]
+    },
+    {
+      "id": "client-fact-finding-and-sales-materials",
+      "text": "Join client fact-finding meetings, capture implications and actions, and create clear sales materials through writing, slide design, and storytelling.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Current client-led POCs run from discovery and scope definition through presentations, feedback, demonstrations, and working delivery.",
+        "Built a functional Claims Detector POC and shaped the investor demo story that helped secure an investor.",
+        "Built the Digital Experience Audit workflow for presentation-ready outputs used in strategy and client conversations."
+      ],
+      "resumeTerms": [
+        "client discovery",
+        "fact-finding",
+        "presentations",
+        "storytelling",
+        "sales materials"
+      ]
+    },
+    {
+      "id": "cost-schedule-and-functional-inputs",
+      "text": "Collect cost, scheduling, resourcing, and functional inputs while maintaining organized proposal and client materials.",
+      "priority": "core",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Built Scope Generator for pharma agency finance and operations teams to manage rate cards, scopes, deliverables, timelines, role-level resourcing, and cost breakdowns.",
+        "Managed USD 2M-50M+ pharma and healthcare client budgets across integrated campaign work.",
+        "Formal ownership of a proposal repository is not documented."
+      ],
+      "resumeTerms": [
+        "cost management",
+        "scheduling",
+        "resourcing",
+        "rate cards",
+        "cost breakdowns"
+      ]
+    },
+    {
+      "id": "program-stand-up-and-project-plans",
+      "text": "Support new program stand-up through project plans, milestones, scope, time, budget, and execution discipline.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Seven-plus years of client delivery covered briefs, production requirements, timelines, budgets, cross-functional execution, and regulated approvals.",
+        "Echo submission automation moved one pharma route from eight hours to ten minutes and helped cut a planned five-day launch to two days.",
+        "Current work spans scope definition, workflow design, front-end and backend build, demonstration readiness, client iteration, and implementation choices."
+      ],
+      "resumeTerms": [
+        "program stand-up",
+        "project plans",
+        "implementation",
+        "milestones",
+        "scope, time, and budget"
+      ]
+    },
+    {
+      "id": "stakeholder-risk-and-resource-management",
+      "text": "Coordinate internal and external stakeholders while managing risk, cost, time, resources, and changing priorities.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Coordinated senior leaders, clients, account, strategy, creative, production, UX, development, finance, and operations across complex work.",
+        "Current pharma tools surface evidence gaps, routing errors, submission needs, regulatory risks, scope changes, and resourcing impacts earlier in the workflow.",
+        "Scaled a distributed product-design organization from two to 30 across the United States and Poland."
+      ],
+      "resumeTerms": [
+        "stakeholder management",
+        "risk management",
+        "resource management",
+        "cross-functional collaboration"
+      ]
+    },
+    {
+      "id": "operations-client-pmo-transition",
+      "text": "Act as liaison across Operations Leads, the client PMO, and the Solutions Team while organizing documents and supporting a clean post-implementation transition.",
+      "priority": "core",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Agency account leadership required sustained client communication and coordination across strategy, creative, production, UX, development, finance, operations, and regulated review teams.",
+        "Current product work includes production handoff, implementation choices, documentation, approvals, and client adoption.",
+        "Direct ownership as liaison to a client PMO and Solutions Team is not documented."
+      ],
+      "resumeTerms": [
+        "operations liaison",
+        "client stakeholders",
+        "implementation handoff",
+        "client documents"
+      ]
+    }
+  ],
+  "fitGate": {
+    "supportedOverlap": [
+      "Eleven years across pharma and healthcare communications, including client, patient, HCP, brand-team, oncology, MLR, FDA, and HIPAA work.",
+      "Seven-plus years managing Fortune 500 pharma and healthcare client work with USD 2M-50M+ budgets, briefs, timelines, integrated teams, and regulated approvals.",
+      "Current Scope Generator and BriefFlow work covers rate cards, scopes, deliverables, timelines, resourcing, cost breakdowns, intake, missing-information flags, review, approval, and export.",
+      "Direct client discovery, presentation, demonstration, and storytelling evidence across agency work, client-led POCs, an investor close, and presentation-ready audit outputs.",
+      "Implementation and launch evidence across regulated workflow design, working product delivery, cross-functional handoff, and a pharma launch reduced from a planned five days to two."
+    ],
+    "unsupportedRequirements": [
+      "Independent ownership of formal RFP responses and a specialty-area proposal repository is not documented.",
+      "Direct Patient Access HUB services or market-access operations experience is not documented.",
+      "PMP certification is not documented.",
+      "Named commercial project-management software is not documented.",
+      "Formal ownership as liaison to a client PMO and post-implementation Solutions Team is not documented."
+    ],
+    "actualMismatches": [
+      "The recent documented operating center is pharma AI implementation, product strategy, and UX leadership rather than a dedicated growth-enablement or project-management title."
+    ],
+    "missingEvidence": [
+      "Specific examples of authored RFP responses, proposal win rates, and proposal-repository ownership.",
+      "Named project-management platforms and a formal project-management qualification.",
+      "Patient Access HUB, reimbursement, market-access, or patient-services operations ownership.",
+      "A direct client-PMO liaison example and formal post-launch transition process."
+    ],
+    "coverLetterBridge": {
+      "status": "recommended",
+      "rationale": "We can make the case with a cover letter by connecting seven-plus years of pharma account delivery, USD 2M-50M+ budget stewardship, client-facing briefs and presentations, cross-functional execution, and current scoping and launch workflows to Inizio's 50/50 opportunity-development and implementation model. The letter must acknowledge that the public evidence does not show formal RFP ownership, PMP certification, named project software, or Patient Access HUB experience."
+    },
+    "recommendation": "Proceed as adjacent. Lead with direct life sciences client delivery, budgets, briefs, sales-material storytelling, scoping systems, stakeholder coordination, risk visibility, and regulated implementation. Do not imply formal RFP ownership, Patient Access HUB expertise, PMP certification, named project tools, or direct client-PMO leadership."
+  },
+  "resume": {
+    "summary": "Life sciences client-delivery professional with 15 years across pharma and healthcare, including 7+ years managing Fortune 500 accounts and USD 2M-50M+ budgets. I have turned client strategy into briefs, timelines, production requirements, presentations, and MLR-ready work, and I now build scoping, intake, review, and launch tools for pharma teams. For Inizio, I can keep the client inputs, stakeholders, and milestones organized as work moves from early definition into implementation.",
+    "skills": [
+      {
+        "label": "Life Sciences Client & Opportunity Support",
+        "description": "Pharma and healthcare client context, B2B relationships, discovery, fact-finding, brand planning, client briefs, sales materials, presentations, workshops, storytelling, and stakeholder communication"
+      },
+      {
+        "label": "Project & Implementation Management",
+        "description": "Project plans, milestones, scopes, timelines, USD 2M-50M+ budgets, implementation, launch coordination, risk management, cost management, time management, and changing priorities"
+      },
+      {
+        "label": "Scoping, Intake & Delivery Operations",
+        "description": "Rate cards, deliverables, role-level resourcing, cost breakdowns, structured intake, missing-information flags, review routing, approvals, submission capture, and client documents"
+      },
+      {
+        "label": "Cross-functional Leadership & Handoff",
+        "description": "Clients, operations, finance, account, strategy, creative, production, UX, engineering, regulated review, distributed teams, implementation handoff, and client adoption"
+      }
+    ],
+    "roles": {
+      "hedgehox": [
+        "Turn pharma agency needs into workflow tools for brief intake, scoping, review routing, submission capture, MLR claim review, and FDA signal monitoring",
+        "Built Scope Generator for agency finance and operations teams to manage regional rate cards, brands, sub-brands, scopes, deliverables, timelines, role-level resourcing, and cost breakdowns",
+        "Built Echo submission automation for pharma launches, moving one screenshot route from eight hours to ten minutes and helping cut a planned five-day launch to two days",
+        "Designed BriefFlow around structured intake, missing-information flags, review links, comments, approval, sign-off, and export",
+        "Translate client needs into workflow design, demonstrations, implementation choices, and build-ready product decisions"
+      ],
+      "one-block-away": [
+        "Lead client discovery, scope definition, presentations, feedback, and iteration from the first ask through working delivery",
+        "Turn unclear business questions into organized briefs, testable workflows, demonstration narratives, and roadmap decisions while keeping stakeholders aligned",
+        "Own product strategy, UX, front-end build, backend logic, demonstration readiness, and client iteration across multiple client-led POCs"
+      ],
+      "kinesso": [
+        "Scaled a distributed product-design organization from two to 30 across the United States and Poland for enterprise analytics used by 7,000+ users across 22 white-label brands",
+        "Led cross-functional UX and design-system delivery for data visualization, dashboard building, brand theming, and reusable analytics components",
+        "Built the Digital Experience Audit workflow for channel scoring, benchmarks, recommendations, visualization, and presentation-ready client outputs",
+        "Built the UX research practice through stakeholder roadshows, repeatable tools, workshops, Figma documentation, and cross-functional feedback loops"
+      ],
+      "omnicom": [
+        "Supported oncology accounts as a freelance UX designer, combining UX design and account-management experience to strengthen regulated healthcare delivery",
+        "Worked across account, strategy, creative, and delivery conversations to turn brand goals into clear user flows, content structure, and digital recommendations"
+      ],
+      "heartbeat": [
+        "Led UX research and experience strategy for pharma and healthcare programs, translating stakeholder input, competitive audits, and user needs into digital product and campaign direction",
+        "Created journey maps, site maps, user flows, wireframes, and prototypes for patient, HCP, and internal brand-team experiences",
+        "Partnered with strategy, creative, account, and engineering teams to move recommendations from research findings into build-ready digital experiences"
+      ],
+      "account-management": [
+        "7+ years managing Fortune 500 pharma and healthcare clients with USD 2M-50M+ budgets across CNS and neurology, psychiatry, cardiovascular and metabolic, and sleep-wakefulness brands including NUVIGIL, Namenda XR, Lipitor, and Zoloft",
+        "One of two consumer account leads on FCB Health's largest pharma account across TV, radio, digital, gaming, Times Square, unbranded campaigns, brand planning, and MLR review",
+        "Translated client and brand strategy into briefs, creative feedback, production requirements, timelines, budgets, and MLR-ready deliverables",
+        "Coordinated high-volume client work across senior leadership, strategy, creative, production, UX, and development teams, surfacing risks early and keeping delivery moving against deadlines and budgets"
+      ]
+    }
+  },
+  "hero": {
+    "eyebrow": "Inizio Engage | Growth Enablement & Launch",
+    "tags": [
+      "Life sciences client context",
+      "Budgets, scopes & milestones",
+      "Opportunity support to implementation"
+    ],
+    "intro": "I bring 11 years across pharma and healthcare, including 7+ years managing Fortune 500 client work and USD 2M-50M+ budgets. I have turned client strategy into briefs, timelines, production requirements, presentations, and MLR-ready delivery, and I now build scoping, intake, review, and launch tools for pharma teams. For Inizio, I can keep the client inputs, stakeholders, and milestones organized as new work moves from opportunity development into implementation."
+  },
+  "contact": {
+    "prompt": "Hiring someone who can connect life sciences client context, opportunity support, and disciplined program launches? Email is the fastest way to reach me.",
+    "signoff": "Life sciences client delivery | scoping and sales materials | implementation launches"
+  },
+  "copyReview": {
+    "humanizerVersion": "2.2.0",
+    "mode": "surface-only",
+    "status": "passed",
+    "reviewedAt": "2026-07-23T03:36:32.604Z",
+    "copySha256": "514f774df5647311b0c56e1770cbfbd71370512f66eaff4344e73387d0c1dc86",
+    "preserved": [
+      "content",
+      "structure",
+      "claims",
+      "ending"
+    ],
+    "rewriteAuthorized": false,
+    "reviewMethod": "humanizer-skill",
+    "semanticPassAttested": true,
+    "staticChecksPassed": true,
+    "finalAntiAiPass": true,
+    "remainingTells": []
+  },
+  "constraints": {
+    "doNotClaim": [
+      "Independent ownership of formal RFP responses",
+      "Ownership of a specialty-area proposal repository",
+      "Direct Patient Access HUB services experience",
+      "Direct market-access operations ownership",
+      "PMP certification",
+      "Named commercial project-management software proficiency",
+      "Formal client-PMO liaison ownership",
+      "A prior Growth Enablement and Launch Specialist title",
+      "Proposal win-rate metrics",
+      "Sales quota ownership"
+    ],
+    "blockedTerms": [
+      "RFP owner",
+      "proposal repository owner",
+      "Patient Access HUB expert",
+      "market access expert",
+      "PMP certified",
+      "Workfront expert",
+      "client PMO lead",
+      "former Growth Enablement and Launch Specialist",
+      "proposal win rate",
+      "sales quota"
+    ]
+  },
+  "privacy": {
+    "publicSafe": true,
+    "notes": "Contains only public job-posting text and sanitized evidence from the public resume and portfolio. It excludes recruiter contact details, application answers, personal compensation boundaries, and private eligibility information."
+  },
+  "qa": {
+    "status": "qa-passed",
+    "builtAt": "2026-07-23T03:37:39.038Z",
+    "configInputSha256": "c1f4165aaab05e17e1745b3a5bb6acf80c747de96518977e4f5d06b899487f5c",
+    "sourceResumeSha256": "375cc6566f5bbad5b95be9da551dfe87824378fb252222409d29ef32d334ca25",
+    "artifactHashes": {
+      "routeSha256": "5c6c48534eb49de5676f32e5b4f60d9197aa115004f6a0e5184d9e46675f3d88",
+      "resumePdfSha256": "43171a5e283fdb77ca82bf277b53d4e0300a858d50994c110f77e1ea86168050",
+      "scopedProjectSha256": {}
+    },
+    "renderer": {
+      "browser": {
+        "name": "chrome-headless-shell",
+        "version": "Google Chrome for Testing 149.0.7827.55"
+      },
+      "htmlPath": "tmp/tailored-resumes/inizio-growth-enablement-launch-specialist.html",
+      "pdfPath": "output/pdf/Wally-Mostafa-Inizio-Growth-Enablement-Launch-Specialist-Resume.pdf"
+    },
+    "ats": {
+      "ok": true,
+      "pdfPath": "output/pdf/Wally-Mostafa-Inizio-Growth-Enablement-Launch-Specialist-Resume.pdf",
+      "pageCount": 2,
+      "fileSize": 132090,
+      "annotations": [
+        {
+          "page": 1,
+          "uri": "mailto:wmostafa12@gmail.com"
+        },
+        {
+          "page": 1,
+          "uri": "https://linkedin.com/in/wallymo"
+        },
+        {
+          "page": 1,
+          "uri": "https://wallymo.github.io/inizio-growth-enablement-launch-specialist/"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/6748"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/4629"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.red-dot.org/project/dxa-digital-experience-audit-55219"
+        }
+      ],
+      "coverage": [
+        {
+          "id": "rfp-proposal-development",
+          "requirement": "Draft RFP responses and proposals, gather missing information from subject-matter experts, and manage proposal planning and development.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "client briefs"
+          ],
+          "missingTerms": [
+            "proposal support",
+            "subject-matter experts",
+            "opportunity development"
+          ]
+        },
+        {
+          "id": "client-fact-finding-and-sales-materials",
+          "requirement": "Join client fact-finding meetings, capture implications and actions, and create clear sales materials through writing, slide design, and storytelling.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "client discovery",
+            "fact-finding",
+            "presentations",
+            "storytelling",
+            "sales materials"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "cost-schedule-and-functional-inputs",
+          "requirement": "Collect cost, scheduling, resourcing, and functional inputs while maintaining organized proposal and client materials.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "cost management",
+            "resourcing",
+            "rate cards",
+            "cost breakdowns"
+          ],
+          "missingTerms": [
+            "scheduling"
+          ]
+        },
+        {
+          "id": "program-stand-up-and-project-plans",
+          "requirement": "Support new program stand-up through project plans, milestones, scope, time, budget, and execution discipline.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "project plans",
+            "implementation",
+            "milestones"
+          ],
+          "missingTerms": [
+            "program stand-up",
+            "scope, time, and budget"
+          ]
+        },
+        {
+          "id": "stakeholder-risk-and-resource-management",
+          "requirement": "Coordinate internal and external stakeholders while managing risk, cost, time, resources, and changing priorities.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "risk management"
+          ],
+          "missingTerms": [
+            "stakeholder management",
+            "resource management",
+            "cross-functional collaboration"
+          ]
+        },
+        {
+          "id": "operations-client-pmo-transition",
+          "requirement": "Act as liaison across Operations Leads, the client PMO, and the Solutions Team while organizing documents and supporting a clean post-implementation transition.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "implementation handoff",
+            "client documents"
+          ],
+          "missingTerms": [
+            "operations liaison",
+            "client stakeholders"
+          ]
+        }
+      ],
+      "failures": [],
+      "warnings": [
+        "rfp-proposal-development: supported core language missing from the PDF: proposal support, subject-matter experts, opportunity development",
+        "cost-schedule-and-functional-inputs: supported core language missing from the PDF: scheduling",
+        "program-stand-up-and-project-plans: supported core language missing from the PDF: program stand-up, scope, time, and budget",
+        "stakeholder-risk-and-resource-management: supported core language missing from the PDF: stakeholder management, resource management, cross-functional collaboration",
+        "operations-client-pmo-transition: supported core language missing from the PDF: operations liaison, client stakeholders"
+      ]
+    },
+    "humanizer": {
+      "status": "passed",
+      "version": "2.2.0",
+      "mode": "surface-only",
+      "reviewedAt": "2026-07-23T03:36:32.604Z",
+      "copySha256": "514f774df5647311b0c56e1770cbfbd71370512f66eaff4344e73387d0c1dc86",
+      "reviewMethod": "humanizer-skill",
+      "semanticPassAttested": true,
+      "staticChecksPassed": true
+    },
+    "route": {
+      "viewports": [
+        {
+          "name": "desktop",
+          "screenshot": "tmp/qa/inizio-growth-enablement-launch-specialist/desktop.png",
+          "errors": []
+        },
+        {
+          "name": "mobile",
+          "screenshot": "tmp/qa/inizio-growth-enablement-launch-specialist/mobile.png",
+          "errors": []
+        }
+      ],
+      "errors": []
+    }
+  }
+}

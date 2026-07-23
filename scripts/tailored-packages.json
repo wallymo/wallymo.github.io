@@ -1192,6 +1192,26 @@
       "notes": "PDF-only recruiter artifact per current Tailored Portfolio Rules; temporary render HTML removed after local verification."
     },
     {
+      "workflowVersion": 2,
+      "slug": "inizio-growth-enablement-launch-specialist",
+      "roleTitle": "Inizio Engage Growth Enablement and Launch Specialist",
+      "artifactStem": "Inizio-Growth-Enablement-Launch-Specialist",
+      "configPath": "scripts/packages/inizio-growth-enablement-launch-specialist.json",
+      "targetLane": "life-sciences-growth-enablement-proposal-support-and-implementation-launch",
+      "evidenceMode": "resume-primary",
+      "fitClass": "adjacent",
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-01.html",
+        "project-02.html",
+        "project-06.html"
+      ],
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Inizio-Growth-Enablement-Launch-Specialist-Resume.pdf",
+      "publishStatus": "local-only",
+      "qaStatus": "qa-passed",
+      "builtAt": "2026-07-23T03:37:39.038Z"
+    },
+    {
       "slug": "insight-global-senior-ux-designer",
       "roleTitle": "Insight Global Senior UX Designer",
       "fitClass": "strong",
