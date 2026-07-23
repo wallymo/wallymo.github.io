@@ -2260,6 +2260,27 @@
       "publishStatus": "uncommitted"
     },
     {
+      "workflowVersion": 2,
+      "slug": "vice-president-customer-experience-design-strategy",
+      "roleTitle": "VP, Customer Experience Design & Strategy",
+      "artifactStem": "Vice-President-Customer-Experience-Design-Strategy",
+      "configPath": "scripts/packages/vice-president-customer-experience-design-strategy.json",
+      "targetLane": "enterprise-customer-experience-design-and-strategy-leadership",
+      "evidenceMode": "balanced",
+      "fitClass": "adjacent",
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-04.html",
+        "project-03.html",
+        "project-06.html",
+        "project-01.html"
+      ],
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Vice-President-Customer-Experience-Design-Strategy-Resume.pdf",
+      "publishStatus": "local-only",
+      "qaStatus": "qa-passed",
+      "builtAt": "2026-07-23T21:06:00.953Z"
+    },
+    {
       "slug": "xo-in-house-creator",
       "roleTitle": "X&O In-House Creator",
       "fitClass": "adjacent",

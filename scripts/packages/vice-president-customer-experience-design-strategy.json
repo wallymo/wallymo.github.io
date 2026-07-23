@@ -1,0 +1,574 @@
+{
+  "workflowVersion": 2,
+  "contractRevision": 4,
+  "slug": "vice-president-customer-experience-design-strategy",
+  "roleTitle": "VP, Customer Experience Design & Strategy",
+  "artifactStem": "Vice-President-Customer-Experience-Design-Strategy",
+  "fitClass": "adjacent",
+  "routeMode": "canonical-projects",
+  "selectedProjects": [
+    "project-04.html",
+    "project-03.html",
+    "project-06.html",
+    "project-01.html"
+  ],
+  "job": {
+    "company": "Confidential Employer",
+    "roleTitle": "Vice President of Customer Experience Design and Strategy",
+    "sourceChannel": "chat-pasted-jd",
+    "dateCaptured": "2026-07-23",
+    "location": "Not stated",
+    "atsVendor": "unknown",
+    "rawJd": "Vice President of Customer Experience Design and Strategy\n\nPosition Summary\nThe Vice President of Customer Experience Design and Strategy (VP, Customer Experience Design and Strategy) is a senior executive responsible for defining and executing the organization's enterprise-wide customer experience (CX) vision by integrating customer strategy, experience design, service innovation, journey optimization, and digital transformation. This executive ensures that every customer interaction delivers a seamless, personalized, and consistent experience across all channels while driving customer satisfaction, loyalty, retention, and long-term business growth.\n\nThe Vice President partners closely with the Chief Customer Officer (CCO), Chief Experience Officer (CXO), Chief Marketing Officer (CMO), Chief Digital Officer (CDO), Chief Product Officer (CPO), Chief Operating Officer (COO), and executive leadership teams to embed customer-centric thinking into products, services, operations, and organizational strategy.\n\nKey Responsibilities\n\nCustomer Experience Strategy\nDevelop and execute a comprehensive enterprise-wide customer experience strategy aligned with corporate objectives.\nEstablish long-term CX roadmaps that improve customer satisfaction, loyalty, retention, advocacy, and lifetime value.\nDefine customer-centric operating models and governance frameworks.\nEnsure customer experience initiatives support sustainable business growth and competitive differentiation.\n\nExperience Design & Journey Optimization\nLead the design and optimization of end-to-end customer journeys across digital, physical, and hybrid channels.\nApply service design and human-centered design methodologies to improve customer interactions.\nIdentify customer pain points and redesign processes to create intuitive and frictionless experiences.\nStandardize experience design principles across global business units.\n\nCustomer Insights & Voice of the Customer (VoC)\nLead enterprise Voice of the Customer (VoC) programs and customer research initiatives.\nUtilize behavioral analytics, market research, customer feedback, and predictive insights to guide strategic decisions.\nDevelop executive dashboards tracking NPS, CSAT, CES, retention, churn, loyalty, and Customer Lifetime Value (CLV).\nTranslate customer insights into measurable operational improvements.\n\nDigital Experience & Innovation\nPartner with Product, UX/UI, Engineering, and Digital teams to enhance digital customer experiences.\nDrive AI-powered personalization, omnichannel engagement, self-service capabilities, and automation initiatives.\nEvaluate emerging technologies that improve customer interactions and operational efficiency.\nPromote continuous innovation in customer engagement and experience management.\n\nCross-Functional Collaboration\nCollaborate with Marketing, Sales, Customer Success, Customer Support, Product Management, Operations, IT, and Human Resources.\nEnsure customer experience objectives are integrated into product development, service delivery, and operational processes.\nBuild a customer-first culture across all departments.\nAlign customer experience initiatives with revenue growth and operational excellence.\n\nGovernance & Performance Management\nEstablish enterprise CX governance, service standards, and operational policies.\nMeasure the effectiveness of CX initiatives through customer, operational, and financial KPIs.\nLead continuous improvement initiatives using Design Thinking, Lean, Six Sigma, and Agile methodologies.\nReport customer experience performance and strategic progress to executive leadership and the Board of Directors.\n\nExecutive Leadership\nLead Customer Experience Directors, Service Design Directors, Customer Journey Managers, UX Leaders, Customer Insights teams, Experience Innovation Managers, and CX Program Managers.\nDevelop leadership capabilities and succession plans for customer experience organizations.\nManage CX budgets, technology investments, research programs, and strategic consulting partnerships.\nPresent customer experience strategy, performance metrics, and transformation initiatives to executive leadership and the Board of Directors.\n\nQualifications\nBachelor's degree in Business Administration, Marketing, Customer Experience, Human-Centered Design, Psychology, Communications, or a related field\nMBA or Master's degree preferred\nCCXP (Certified Customer Experience Professional), Design Thinking, Lean Six Sigma, Agile, Service Design, or Human-Centered Design certifications preferred\n12–18+ years of progressive leadership experience in customer experience, customer strategy, service design, UX, digital transformation, marketing, or business operations\nProven experience leading enterprise-wide customer experience transformation initiatives\nStrong expertise in customer journey mapping, service design, customer analytics, VoC programs, omnichannel strategy, and digital innovation\nExcellent executive leadership, strategic planning, communication, and stakeholder management skills\n\nCore Competencies\nCustomer Experience Strategy\nCustomer Experience Design\nCustomer Journey Management\nService Design\nHuman-Centered Design\nVoice of the Customer (VoC)\nCustomer Analytics\nOmnichannel Experience\nDigital Transformation\nExecutive Leadership"
+  },
+  "classification": {
+    "targetLane": "enterprise-customer-experience-design-and-strategy-leadership",
+    "evidenceMode": "balanced",
+    "primarySource": "The resume provides the seniority, team scale, client leadership, program budgets, enterprise platform reach, and cross-functional delivery needed to judge the executive operating center.",
+    "supportingSource": "The portfolio shows how the work was done through customer research, journey and service workflows, enterprise design systems, analytics products, audit tools, and AI-supported process improvement.",
+    "hardGateStatus": "pass",
+    "hardGates": [
+      {
+        "gate": "12–18+ years of progressive leadership across customer experience, UX, service design, digital transformation, marketing, or business operations",
+        "status": "pass",
+        "evidence": "The resume documents 15 years across client strategy, pharma and healthcare communications, UX, enterprise product design, experience strategy, and regulated AI delivery, including a Director role and founder-level product ownership."
+      },
+      {
+        "gate": "Enterprise experience transformation and organizational leadership",
+        "status": "pass",
+        "evidence": "Kinesso work reached more than 7,000 users across 22 white-label brands, included a research discipline across 20+ products, and scaled product design from 2 to 30 people across the United States and Poland."
+      },
+      {
+        "gate": "Customer journey, service design, research, analytics, and digital innovation depth",
+        "status": "pass",
+        "evidence": "The resume and case studies document customer interviews, journey maps, service workflows, channel scoring, benchmarks, recommendations, enterprise analytics, design systems, prototypes, AI automation, and regulated digital products."
+      },
+      {
+        "gate": "Bachelor's degree",
+        "status": "pass",
+        "evidence": "The public resume lists a BA in Labor Studies and Employee Relations from Rutgers University."
+      },
+      {
+        "gate": "Required location or work arrangement",
+        "status": "not-applicable",
+        "evidence": "The source text does not state a location, travel requirement, or office schedule."
+      }
+    ]
+  },
+  "requirements": [
+    {
+      "id": "enterprise-cx-strategy-and-governance",
+      "text": "Set an enterprise customer experience vision, roadmap, operating model, and governance standards tied to business goals.",
+      "priority": "core",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Led enterprise UX and design-system strategy across products used by more than 7,000 people and 22 white-label brands.",
+        "Scaled product design from 2 to 30 people and established reusable research, design, accessibility, and delivery standards across a 20+ product suite.",
+        "The public evidence supports enterprise experience strategy and design governance, but it does not name ownership of a company-wide CX operating model."
+      ],
+      "resumeTerms": [
+        "enterprise experience strategy",
+        "design governance"
+      ]
+    },
+    {
+      "id": "journey-optimization-and-service-design",
+      "text": "Lead end-to-end journey optimization through service design and human-centered design across channels.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Created customer journey maps, site maps, user flows, wireframes, and prototypes for patient, HCP, internal, and enterprise users.",
+        "Built service workflows for digital audits, regulated review, brief intake, scoping, routing, submission capture, and human approval.",
+        "Integrated pharma programs covered TV, radio, digital, gaming, Times Square, unbranded campaigns, and MLR review."
+      ],
+      "resumeTerms": [
+        "customer journey mapping",
+        "service design",
+        "human-centered design"
+      ]
+    },
+    {
+      "id": "customer-insights-and-behavioral-analytics",
+      "text": "Run customer research and use feedback, behavioral analytics, and market insight to shape strategic decisions.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Built a customer research discipline across 20+ products using interviews, Typeform feedback, Useberry testing, Heap behavioral data, workshops, and reusable Figma documentation.",
+        "Led stakeholder research, competitive audits, and user-needs work for healthcare, enterprise, and internal audiences.",
+        "The Digital Experience Audit turned channel data into scores, benchmarks, recommendations, and client-ready outputs."
+      ],
+      "resumeTerms": [
+        "customer research",
+        "behavioral analytics",
+        "customer insights"
+      ]
+    },
+    {
+      "id": "digital-experience-ai-and-automation",
+      "text": "Partner with product, UX, engineering, and digital teams to improve customer experiences through AI, self-service, and automation.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Current work covers AI tools for claims review, brief intake, scoping, routing, submission capture, and regulatory monitoring.",
+        "One Block Away POCs move from client discovery through product strategy, UX, front-end build, backend logic, demo readiness, and iteration.",
+        "Enterprise work connected product, engineering, analytics, research, and design-system teams around reusable experience standards."
+      ],
+      "resumeTerms": [
+        "AI-powered automation",
+        "self-service scoping",
+        "Product and Engineering"
+      ]
+    },
+    {
+      "id": "cross-functional-leadership-and-business-growth",
+      "text": "Embed customer experience goals across marketing, sales, support, product, operations, IT, and other business functions.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Managed Fortune 500 pharma work across account, strategy, creative, UX, development, production, and regulatory teams.",
+        "Translated client and brand goals into briefs, recommendations, requirements, timelines, and approval-ready delivery.",
+        "Current founder and AI implementation work connects client needs, product decisions, workflow design, technical build, and adoption."
+      ],
+      "resumeTerms": [
+        "cross-functional leadership",
+        "client strategy",
+        "stakeholder adoption"
+      ]
+    },
+    {
+      "id": "performance-management-and-cx-metrics",
+      "text": "Track customer, operational, and financial performance and turn CX findings into measurable improvement.",
+      "priority": "core",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "The Digital Experience Audit used channel scoring, benchmarks, recommendations, data visualization, and presentation-ready client outputs.",
+        "Enterprise analytics work made complex performance data usable across 22 branded products.",
+        "The public evidence does not document ownership of NPS, CSAT, CES, retention, churn, loyalty, or CLV dashboards."
+      ],
+      "resumeTerms": [
+        "channel scoring",
+        "benchmarks",
+        "operational improvements"
+      ]
+    },
+    {
+      "id": "executive-people-and-budget-leadership",
+      "text": "Lead a multi-discipline CX organization, manage budgets and technology investments, and present strategy to executives and the Board.",
+      "priority": "core",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Scaled a distributed product design organization from 2 to 30 people across the United States and Poland.",
+        "Managed Fortune 500 pharma and healthcare clients with $2M-$50M+ budgets across major brands and channels.",
+        "Built investor-facing product stories and presentation-ready client outputs.",
+        "The public record does not document Board reporting, succession planning, CX budget ownership, or management of multiple director-level functions."
+      ],
+      "resumeTerms": [
+        "team scaling",
+        "$2M-$50M+ budgets",
+        "presentation-ready"
+      ]
+    },
+    {
+      "id": "continuous-improvement-methods-and-credentials",
+      "text": "Apply Design Thinking, Lean, Six Sigma, Agile, service design, or human-centered design methods; advanced degrees and certifications are preferred.",
+      "priority": "preferred",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "The portfolio documents human-centered research, journey mapping, prototyping, usability testing, service workflows, iterative delivery, and design-system governance.",
+        "A bachelor's degree is documented.",
+        "CCXP, Lean Six Sigma, Agile, Service Design, and Human-Centered Design certifications are not documented, and no master's degree or MBA is listed."
+      ],
+      "resumeTerms": [
+        "human-centered design",
+        "iterative delivery"
+      ]
+    }
+  ],
+  "fitGate": {
+    "supportedOverlap": [
+      "Fifteen years across client strategy, marketing, UX, enterprise product design, experience strategy, and digital transformation meet the role's broad experience range.",
+      "Enterprise work reached more than 7,000 users across 22 brands and included a research discipline across 20+ products, design standards, analytics, and a product design organization scaled from 2 to 30.",
+      "Customer journey mapping, service workflows, customer research, behavioral data, prototypes, accessibility, design systems, and cross-functional handoff are direct evidence.",
+      "The Digital Experience Audit provides a concrete customer-insight and performance workflow built around channel scoring, benchmarks, recommendations, and presentation-ready outputs.",
+      "Current AI work adds self-service and automation proof across brief intake, scoping, claims review, routing, submission capture, and regulatory monitoring.",
+      "Seven-plus years of Fortune 500 client leadership and $2M-$50M+ budgets reinforce the business, stakeholder, and program-management side of the role."
+    ],
+    "unsupportedRequirements": [
+      "Formal enterprise Voice of the Customer program ownership is not documented.",
+      "NPS, CSAT, CES, retention, churn, loyalty, and Customer Lifetime Value dashboard ownership is not documented.",
+      "Board of Directors reporting is not documented.",
+      "Succession planning and management of multiple director-level CX functions are not documented.",
+      "Direct CX budget, technology-investment portfolio, or strategic consulting-partnership ownership is not documented.",
+      "CCXP, Lean Six Sigma, Agile, Service Design, and Human-Centered Design certifications are not documented.",
+      "An MBA or master's degree is not documented."
+    ],
+    "actualMismatches": [
+      "The public leadership record reaches Director level rather than a prior Vice President title.",
+      "The documented operating center is enterprise UX, experience strategy, client leadership, and digital product work rather than formal ownership of an enterprise CX function."
+    ],
+    "missingEvidence": [
+      "A named company-wide CX roadmap and operating model.",
+      "Executive dashboards for NPS, CSAT, CES, retention, churn, loyalty, or CLV.",
+      "Board presentations and enterprise CX performance reporting.",
+      "A reporting structure that includes CX, service design, customer insight, journey, and program directors.",
+      "Measured customer-satisfaction, loyalty, retention, or lifetime-value outcomes tied to the work."
+    ],
+    "coverLetterBridge": {
+      "status": "recommended",
+      "rationale": "We can make the case with a cover letter by connecting enterprise UX transformation, a research practice across 20+ products, a design organization scaled from 2 to 30, 7,000+ users across 22 brands, Fortune 500 client leadership, and AI workflow innovation to the employer's CX mandate. The letter should acknowledge that formal VoC ownership, named CX metrics, Board reporting, and prior VP-level accountability are not documented."
+    },
+    "recommendation": "Proceed as adjacent. Lead with enterprise experience transformation, customer research, journey and service design, cross-functional leadership, analytics, AI workflow innovation, team scale, and $2M-$50M+ program experience. Keep formal VoC ownership, named CX metrics, Board reporting, succession planning, certification claims, and prior VP-level accountability outside the claim set."
+  },
+  "resume": {
+    "foundationId": "wally-mostafa-resume-2026-07-03",
+    "summary": "AI implementation and product strategy lead with 15 years across pharma, enterprise UX, client strategy, and regulated AI delivery. I turn ambiguous workflows into governed AI tools, demo-ready POCs, and build-ready product systems. My strength is bridging client translation, workflow design, model behavior, and adoption so teams can trust and use the product after the demo.",
+    "skills": [
+      {
+        "label": "AI Implementation & Workflow Design",
+        "description": "Governed LLM/VLM workflows, multimodal review, RAG/knowledge bases, prompt-defined criteria, model orchestration, and human review surfaces"
+      },
+      {
+        "label": "Product Strategy & POC Delivery",
+        "description": "Discovery, scoping, requirements, prototype validation, demo narratives, build-ready logic, and production handoff"
+      },
+      {
+        "label": "Regulated Healthcare & Client Delivery",
+        "description": "11 years across pharma/healthcare communications, FDA/HIPAA/MLR workflows, HCP/patient UX, client workshops, and stakeholder adoption"
+      },
+      {
+        "label": "Enterprise UX & Design Systems",
+        "description": "Team scaling (2 to 30), enterprise analytics, workflow UX, data visualization, component libraries, and accessibility (WCAG)"
+      }
+    ],
+    "roles": {
+      "hedgehox": [
+        "Secured an investor for proprietary Claims Detection software by building the functional POC, shaping the executive demo story, and iterating with investors",
+        "Designed Claims Detector workflows that identify promotional claims, surface evidence gaps, and pre-populate audit-ready annotations before MLR submission",
+        "Converted pharma agency needs into AI-powered automation for MLR claim review, brief intake, self-service scoping, review routing, submission capture, and FDA signal monitoring",
+        "Designed the full Xenagos Bio startup biopharma website from scratch, including investor-facing structure, scientific positioning, visual direction, and hidden design-system handoff",
+        "Built Scope Generator for pharma agency finance and operations teams to manage regional rate cards, brands, sub-brands, natural-language scope changes, resourcing, and cost breakdowns",
+        "Developed FDA Warning Tool concepts that connect warning-letter patterns to content-risk guidance and operational improvements for pharma teams"
+      ],
+      "one-block-away": [
+        "Build client-led AI POCs that turn unclear business questions into testable product surfaces, demo flows, and roadmap decisions",
+        "Built ListingPal's AI listing-generation POC and landing page, turning basic property inputs into listing copy, social posts, ad copy, styling direction, and MLS/SEO-ready language in under 90 seconds",
+        "Built WeReady's Bailey Intelligence dashboard, translating founder inputs, GitHub signals, source health, risk scoring, and evidence trails into startup-readiness workflows",
+        "Own product strategy, UX, AI workflow design, front-end build, backend logic, demo readiness, and client iteration from first ask through working prototype",
+        "Currently building the website and sponsor strategy for a Tunisia youth soccer program, positioning the project for player advancement, community support, and donor outreach"
+      ],
+      "kinesso": [
+        "Scaled product design from 2 to 30 people across the US and Poland while leading enterprise experience strategy for analytics used by 7,000+ users across 22 white-label brands",
+        "Led customer research, behavioral analytics, UX, and design governance across a 20+ product suite, partnering with Product and Engineering on data visualization, brand theming, and reusable components",
+        "Built the Digital Experience Audit workflow for channel scoring, benchmarks, recommendations, visualization, operational improvements, and presentation-ready client outputs",
+        "Design-system and analytics work earned 5 Indigo Gold, 4 Indigo Silver, and Red Dot recognition"
+      ],
+      "omnicom": [
+        "Supported oncology accounts as a freelance UX designer, combining UX design and account-management experience to strengthen regulated healthcare work",
+        "Championed human-centered design across account, strategy, creative, and delivery conversations, translating brand goals into clearer user flows, content structure, and digital recommendations"
+      ],
+      "heartbeat": [
+        "Led customer research and experience strategy for pharma and healthcare work, translating stakeholder input, competitive audits, and customer insights into digital product direction",
+        "Led customer journey mapping and service design across site maps, user flows, wireframes, and prototypes for patient, HCP, and internal brand-team experiences",
+        "Partnered across strategy, creative, account, and engineering teams to provide cross-functional leadership and move UX recommendations into build-ready product and campaign experiences"
+      ],
+      "account-management": [
+        "7+ years managing Fortune 500 pharma and healthcare clients with $2M-$50M+ budgets across CNS/neurology, psychiatry, cardiovascular/metabolic, and sleep/wakefulness brands including NUVIGIL, Namenda XR, Lipitor, and Zoloft",
+        "One of two account consumer leads on FCB Health's largest pharma account across an omnichannel experience spanning TV, radio, digital, gaming, Times Square, unbranded campaigns, brand planning, and MLR review",
+        "Translated client strategy into briefs, creative feedback, production requirements, timelines, and MLR-ready deliverables across account, creative, UX, and development teams"
+      ]
+    },
+    "sourceBulletIds": {
+      "hedgehox": [
+        "hedgehox-01",
+        "hedgehox-02",
+        "hedgehox-03",
+        "hedgehox-04",
+        "hedgehox-05",
+        "hedgehox-06"
+      ],
+      "one-block-away": [
+        "one-block-away-01",
+        "one-block-away-02",
+        "one-block-away-03",
+        "one-block-away-04",
+        "one-block-away-05"
+      ],
+      "kinesso": [
+        "kinesso-01",
+        "kinesso-02",
+        "kinesso-03",
+        "kinesso-04"
+      ],
+      "omnicom": [
+        "omnicom-01",
+        "omnicom-02"
+      ],
+      "heartbeat": [
+        "heartbeat-01",
+        "heartbeat-02",
+        "heartbeat-03"
+      ],
+      "account-management": [
+        "account-management-01",
+        "account-management-02",
+        "account-management-03"
+      ]
+    }
+  },
+  "hero": {
+    "eyebrow": "VP, Customer Experience Design & Strategy",
+    "tags": [
+      "Enterprise experience strategy",
+      "Customer research & journeys",
+      "Design governance & AI workflows"
+    ],
+    "intro": "I have led enterprise experience work used by 7,000+ people across 22 brands, built a customer research practice across 20+ products, and scaled product design from 2 to 30. That work sits alongside 15 years in client strategy, UX, digital products, and $2M-$50M+ programs. I bring customer insight, design governance, service workflow, and cross-functional leadership to complex experience transformation."
+  },
+  "contact": {
+    "prompt": "Hiring a CX leader who can connect customer research, journey design, enterprise standards, and digital execution? Email is the fastest way to reach me.",
+    "signoff": "Customer insight · enterprise experience strategy · build-ready transformation"
+  },
+  "copyReview": {
+    "humanizerVersion": "2.2.0",
+    "mode": "surface-only",
+    "status": "passed",
+    "reviewedAt": "2026-07-23T21:01:11.737Z",
+    "copySha256": "ab720beb6bbe0d6f5022e8d8f22284f10f305924260a632c18e5049ad53f0804",
+    "preserved": [
+      "content",
+      "structure",
+      "claims",
+      "ending"
+    ],
+    "rewriteAuthorized": false,
+    "reviewMethod": "humanizer-skill",
+    "semanticPassAttested": true,
+    "staticChecksPassed": true,
+    "finalAntiAiPass": true,
+    "remainingTells": []
+  },
+  "constraints": {
+    "doNotClaim": [
+      "Formal enterprise Voice of the Customer program ownership",
+      "Ownership of NPS, CSAT, CES, retention, churn, loyalty, or Customer Lifetime Value dashboards",
+      "Board of Directors reporting",
+      "Succession planning for a CX organization",
+      "Management of multiple director-level CX functions",
+      "Direct ownership of an enterprise CX budget or technology-investment portfolio",
+      "CCXP certification",
+      "Lean Six Sigma certification",
+      "Agile certification",
+      "Service Design certification",
+      "Human-Centered Design certification",
+      "MBA or master's degree",
+      "Prior Vice President title"
+    ],
+    "blockedTerms": [
+      "owned enterprise VoC",
+      "owned NPS",
+      "owned CSAT",
+      "owned CES",
+      "reported to the Board",
+      "managed CX Directors",
+      "owned the CX budget",
+      "CCXP certified",
+      "Lean Six Sigma certified",
+      "Agile certified",
+      "Service Design certified",
+      "Human-Centered Design certified",
+      "MBA",
+      "former Vice President"
+    ]
+  },
+  "privacy": {
+    "publicSafe": true,
+    "notes": "Contains only the supplied public job description and sanitized evidence from the public resume and portfolio. The source did not identify the employer, so the company is labeled confidential. Recruiter details, application answers, compensation boundaries, and private eligibility information are excluded."
+  },
+  "qa": {
+    "status": "qa-passed",
+    "builtAt": "2026-07-23T21:06:00.953Z",
+    "configInputSha256": "db5cba3119aea38ad10e0ae9ccdd287de5ad51a360a1b5621881973cc4123dcf",
+    "sourceResumeSha256": "57f63ab9eb7d9ca6b8877ae343b706fffa0e1355b7b78e2662378498a8f5c6dd",
+    "resumeFoundation": {
+      "id": "wally-mostafa-resume-2026-07-03",
+      "sourcePdfSha256": "f9b05b6c3c134262b1af6c5734363daf4385cf335407a139779a37d138adf1aa"
+    },
+    "artifactHashes": {
+      "routeSha256": "931f69d1e43d689daa40dfe0bccf713489a7961aadab90895e1ac749ddf3b042",
+      "resumePdfSha256": "05770bb7aee17141b6384a266a95c6aab01e0e58a94f441b067a2333a8a3296f",
+      "scopedProjectSha256": {}
+    },
+    "renderer": {
+      "browser": {
+        "name": "chrome-headless-shell",
+        "version": "Google Chrome for Testing 149.0.7827.55"
+      },
+      "htmlPath": "tmp/tailored-resumes/vice-president-customer-experience-design-strategy.html",
+      "pdfPath": "output/pdf/Wally-Mostafa-Vice-President-Customer-Experience-Design-Strategy-Resume.pdf"
+    },
+    "ats": {
+      "ok": true,
+      "pdfPath": "output/pdf/Wally-Mostafa-Vice-President-Customer-Experience-Design-Strategy-Resume.pdf",
+      "pageCount": 2,
+      "fileSize": 136761,
+      "annotations": [
+        {
+          "page": 1,
+          "uri": "mailto:wmostafa12@gmail.com"
+        },
+        {
+          "page": 1,
+          "uri": "https://linkedin.com/in/wallymo"
+        },
+        {
+          "page": 1,
+          "uri": "https://wallymo.github.io/vice-president-customer-experience-design-strategy/"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/6748"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/4629"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.red-dot.org/project/dxa-digital-experience-audit-55219"
+        }
+      ],
+      "coverage": [
+        {
+          "id": "enterprise-cx-strategy-and-governance",
+          "requirement": "Set an enterprise customer experience vision, roadmap, operating model, and governance standards tied to business goals.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "enterprise experience strategy",
+            "design governance"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "journey-optimization-and-service-design",
+          "requirement": "Lead end-to-end journey optimization through service design and human-centered design across channels.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "customer journey mapping",
+            "service design",
+            "human-centered design"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "customer-insights-and-behavioral-analytics",
+          "requirement": "Run customer research and use feedback, behavioral analytics, and market insight to shape strategic decisions.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "customer research",
+            "behavioral analytics",
+            "customer insights"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "digital-experience-ai-and-automation",
+          "requirement": "Partner with product, UX, engineering, and digital teams to improve customer experiences through AI, self-service, and automation.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "AI-powered automation",
+            "self-service scoping",
+            "Product and Engineering"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "cross-functional-leadership-and-business-growth",
+          "requirement": "Embed customer experience goals across marketing, sales, support, product, operations, IT, and other business functions.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "cross-functional leadership",
+            "client strategy",
+            "stakeholder adoption"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "performance-management-and-cx-metrics",
+          "requirement": "Track customer, operational, and financial performance and turn CX findings into measurable improvement.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "channel scoring",
+            "benchmarks",
+            "operational improvements"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "executive-people-and-budget-leadership",
+          "requirement": "Lead a multi-discipline CX organization, manage budgets and technology investments, and present strategy to executives and the Board.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "team scaling",
+            "$2M-$50M+ budgets",
+            "presentation-ready"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "continuous-improvement-methods-and-credentials",
+          "requirement": "Apply Design Thinking, Lean, Six Sigma, Agile, service design, or human-centered design methods; advanced degrees and certifications are preferred.",
+          "priority": "preferred",
+          "evidenceStatus": "adjacent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "human-centered design"
+          ],
+          "missingTerms": [
+            "iterative delivery"
+          ]
+        }
+      ],
+      "failures": [],
+      "warnings": []
+    },
+    "humanizer": {
+      "status": "passed",
+      "version": "2.2.0",
+      "mode": "surface-only",
+      "reviewedAt": "2026-07-23T21:01:11.737Z",
+      "copySha256": "ab720beb6bbe0d6f5022e8d8f22284f10f305924260a632c18e5049ad53f0804",
+      "reviewMethod": "humanizer-skill",
+      "semanticPassAttested": true,
+      "staticChecksPassed": true
+    },
+    "route": {
+      "viewports": [
+        {
+          "name": "desktop",
+          "screenshot": "tmp/qa/vice-president-customer-experience-design-strategy/desktop.png",
+          "errors": []
+        },
+        {
+          "name": "mobile",
+          "screenshot": "tmp/qa/vice-president-customer-experience-design-strategy/mobile.png",
+          "errors": []
+        }
+      ],
+      "errors": []
+    }
+  }
+}
