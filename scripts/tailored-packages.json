@@ -953,9 +953,26 @@
         "project-06.html"
       ],
       "resumePdfPath": "output/pdf/Wally-Mostafa-Forma-Life-Science-Marketing-General-Interest-Resume.pdf",
-      "publishStatus": "local-only",
+      "publishStatus": "live-verified",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-07-23T00:32:14.869Z"
+      "builtAt": "2026-07-23T00:32:14.869Z",
+      "verification": {
+        "verifiedAt": "2026-07-23T00:37:41.716Z",
+        "routeUrl": "https://wallymo.github.io/forma-life-science-marketing-general-interest/",
+        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-Forma-Life-Science-Marketing-General-Interest-Resume.pdf",
+        "configUrl": "https://wallymo.github.io/scripts/packages/forma-life-science-marketing-general-interest.json",
+        "projectUrls": [
+          "https://wallymo.github.io/project-01.html",
+          "https://wallymo.github.io/project-08.html",
+          "https://wallymo.github.io/project-06.html"
+        ],
+        "configSha256": "eada8f06766e79d835fa63436b7daed31ec469a055d7554b839333743cdd8c2c",
+        "pdfSha256": "09e272a71a29e320ad2a4cf0889b627f86aca84d2f5e8d6431a94e534b35d3a7",
+        "routeSha256": "d75755434374d4a2296a482b65416564bb1f69cd6c6408d4b1aadde16e5139d1",
+        "scopedProjectSha256": {},
+        "configInputSha256": "e1b287a46889dbc525225cf7961373bd274bb880308a4897fcfc233a2ae6260d",
+        "qaBuiltAt": "2026-07-23T00:32:14.869Z"
+      }
     },
     {
       "slug": "fountain-senior-product-designer",
