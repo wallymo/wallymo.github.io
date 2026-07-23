@@ -223,8 +223,11 @@
         "Translate client needs into workflow design, demonstrations, implementation choices, and build-ready product decisions"
       ],
       "one-block-away": [
-        "Lead client discovery, scope definition, presentations, feedback, and iteration from the first ask through working delivery",
-        "Turn unclear client requests into organized briefs, testable concepts, demo narratives, and next-step decisions while keeping stakeholders aligned"
+        "Build client-led AI POCs that turn unclear business questions into testable product surfaces, demo flows, and roadmap decisions",
+        "Built ListingPal's AI listing-generation POC and landing page, turning basic property inputs into listing copy, social posts, ad copy, styling direction, and MLS/SEO-ready language in under 90 seconds",
+        "Built WeReady's Bailey Intelligence dashboard, translating founder inputs, GitHub signals, source health, risk scoring, and evidence trails into startup-readiness workflows",
+        "Own product strategy, UX, AI workflow design, front-end build, backend logic, demo readiness, and client iteration from first ask through working prototype",
+        "Currently building the website and sponsor strategy for a Tunisia youth soccer program, positioning the project for player advancement, community support, and donor outreach"
       ],
       "kinesso": [
         "Scaled a distributed product-design organization from 2 to 30 across the United States and Poland for enterprise analytics used by 7,000+ users across 22 white-label brands",
@@ -266,8 +269,8 @@
     "humanizerVersion": "2.2.0",
     "mode": "surface-only",
     "status": "passed",
-    "reviewedAt": "2026-07-23T03:31:18.321Z",
-    "copySha256": "54afdda2581259c1d1c8b73ccd762f12a18acb2294562285a47db0f9ece73f0f",
+    "reviewedAt": "2026-07-23T03:40:25.434Z",
+    "copySha256": "b1dbca9e7707c42015f43ae3f740989b84844b369dac6f3fba19536535e0c666",
     "preserved": [
       "content",
       "structure",
@@ -313,12 +316,12 @@
   },
   "qa": {
     "status": "qa-passed",
-    "builtAt": "2026-07-23T03:31:50.045Z",
-    "configInputSha256": "16060e26ac00abdd597bf2599328bdcf095f53f9d005cf638208ab15a962d05a",
+    "builtAt": "2026-07-23T03:40:47.164Z",
+    "configInputSha256": "c1fb75e974c0514a0f03c8433ee29e66ef6d138ac0214825e7087d0b4d34e55f",
     "sourceResumeSha256": "9b11ed3b43bb358d2f85aa9d83c4c3c4f2d82a2220e47de8f5c4a9af04bfad4d",
     "artifactHashes": {
       "routeSha256": "215b25630d940702ea8f5cc90dff74b34fde19754c58fdcf512b50d347593f10",
-      "resumePdfSha256": "605fcf89c95fd652a39af15c04e1dbb7b3b0614b99c344a66056dfc00feadd4d",
+      "resumePdfSha256": "03a4ba2a34ac47ee7f9678d36508f497e3e5a71ee35be2d51f89ef57a746b5b0",
       "scopedProjectSha256": {}
     },
     "renderer": {
@@ -333,7 +336,7 @@
       "ok": true,
       "pdfPath": "output/pdf/Wally-Mostafa-Fingerpaint-Medical-Account-Supervisor-Resume.pdf",
       "pageCount": 2,
-      "fileSize": 130461,
+      "fileSize": 134117,
       "annotations": [
         {
           "page": 1,
@@ -466,8 +469,8 @@
       "status": "passed",
       "version": "2.2.0",
       "mode": "surface-only",
-      "reviewedAt": "2026-07-23T03:31:18.321Z",
-      "copySha256": "54afdda2581259c1d1c8b73ccd762f12a18acb2294562285a47db0f9ece73f0f",
+      "reviewedAt": "2026-07-23T03:40:25.434Z",
+      "copySha256": "b1dbca9e7707c42015f43ae3f740989b84844b369dac6f3fba19536535e0c666",
       "reviewMethod": "humanizer-skill",
       "semanticPassAttested": true,
       "staticChecksPassed": true
