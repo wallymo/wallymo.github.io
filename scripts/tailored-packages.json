@@ -1684,9 +1684,26 @@
         "project-06.html"
       ],
       "resumePdfPath": "output/pdf/Wally-Mostafa-Phreesia-Senior-Associate-Client-Solutions-Resume.pdf",
-      "publishStatus": "local-only",
+      "publishStatus": "live-verified",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-07-23T20:38:57.190Z"
+      "builtAt": "2026-07-23T20:38:57.190Z",
+      "verification": {
+        "verifiedAt": "2026-07-23T20:43:24.636Z",
+        "routeUrl": "https://wallymo.github.io/phreesia-senior-associate-client-solutions/",
+        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-Phreesia-Senior-Associate-Client-Solutions-Resume.pdf",
+        "configUrl": "https://wallymo.github.io/scripts/packages/phreesia-senior-associate-client-solutions.json",
+        "projectUrls": [
+          "https://wallymo.github.io/project-01.html",
+          "https://wallymo.github.io/project-04.html",
+          "https://wallymo.github.io/project-06.html"
+        ],
+        "configSha256": "f0951d179e83be49ebf8c37fa343998876feec64502335ecd12a9ba4961046d6",
+        "pdfSha256": "86539384be632b3b46bb47034db06c2ab48a892e9217aa5aa02c49d5b49ce064",
+        "routeSha256": "00a060d3a72278e4ed4f595e83a6d9e9eaab44a783e2d62761c88e203afa415e",
+        "scopedProjectSha256": {},
+        "configInputSha256": "668b079fb9fd927ddc571d26bb730efa8f18e8abe7ec77aca421e828ac4e5399",
+        "qaBuiltAt": "2026-07-23T20:38:57.190Z"
+      }
     },
     {
       "workflowVersion": 2,
