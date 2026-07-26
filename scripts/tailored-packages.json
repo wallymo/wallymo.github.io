@@ -1869,9 +1869,26 @@
         "project-01.html"
       ],
       "resumePdfPath": "output/pdf/Wally-Mostafa-Planning-Pod-Product-Associate-Resume.pdf",
-      "publishStatus": "local-only",
+      "publishStatus": "live-verified",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-07-26T15:33:48.255Z"
+      "builtAt": "2026-07-26T15:33:48.255Z",
+      "verification": {
+        "verifiedAt": "2026-07-26T15:39:48.820Z",
+        "routeUrl": "https://wallymo.github.io/planning-pod-product-associate/",
+        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-Planning-Pod-Product-Associate-Resume.pdf",
+        "configUrl": "https://wallymo.github.io/scripts/packages/planning-pod-product-associate.json",
+        "projectUrls": [
+          "https://wallymo.github.io/project-02.html",
+          "https://wallymo.github.io/project-04.html",
+          "https://wallymo.github.io/project-01.html"
+        ],
+        "configSha256": "9b95854259b81787909e19af6f7c880a29e916f857a0792aa37a402845afddb5",
+        "pdfSha256": "cb31e080078a7c24e935a52f211824992d0da56584a27953d6f08a7a252213ff",
+        "routeSha256": "0aa6f1dbb0ba149d0fb1d25766cd7e68bcbef60134c7829b4293850c86af6bbd",
+        "scopedProjectSha256": {},
+        "configInputSha256": "d063ed510ed93bf4be3f1881674d4d9aabcb6657aa48c50254af112425d0b285",
+        "qaBuiltAt": "2026-07-26T15:33:48.255Z"
+      }
     },
     {
       "workflowVersion": 2,
