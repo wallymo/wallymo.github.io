@@ -1690,9 +1690,27 @@
         "project-02.html"
       ],
       "resumePdfPath": "output/pdf/Wally-Mostafa-NetApp-Senior-Product-Manager-Cloud-Volumes-ONTAP-Resume.pdf",
-      "publishStatus": "local-only",
+      "publishStatus": "live-verified",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-07-26T15:31:24.553Z"
+      "builtAt": "2026-07-26T15:31:24.553Z",
+      "verification": {
+        "verifiedAt": "2026-07-26T16:27:27.345Z",
+        "routeUrl": "https://wallymo.github.io/netapp-senior-product-manager-cloud-volumes-ontap/",
+        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-NetApp-Senior-Product-Manager-Cloud-Volumes-ONTAP-Resume.pdf",
+        "configUrl": "https://wallymo.github.io/scripts/packages/netapp-senior-product-manager-cloud-volumes-ontap.json",
+        "projectUrls": [
+          "https://wallymo.github.io/project-01.html",
+          "https://wallymo.github.io/project-03.html",
+          "https://wallymo.github.io/project-04.html",
+          "https://wallymo.github.io/project-02.html"
+        ],
+        "configSha256": "c2f310d4317f6247da1afbd86d19fd24a0f0424b4b4e72f6f26a47e49f013e48",
+        "pdfSha256": "ac7173786c2d31e38f88d7b23199e252d1f557c2edb063dc1c57dcc04894e386",
+        "routeSha256": "0cd069cbd7297129ad908cd2841bf4d1eee46504166c72f8188fe43d94f0eb01",
+        "scopedProjectSha256": {},
+        "configInputSha256": "3b41402234d80a35a206aaacdba27dccd1f82ffb77f61090ee39ae9466e3e542",
+        "qaBuiltAt": "2026-07-26T15:31:24.553Z"
+      }
     },
     {
       "slug": "noom-design-systems-contract",
