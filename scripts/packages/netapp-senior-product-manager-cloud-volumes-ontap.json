@@ -1,0 +1,581 @@
+{
+  "workflowVersion": 2,
+  "contractRevision": 4,
+  "slug": "netapp-senior-product-manager-cloud-volumes-ontap",
+  "roleTitle": "NetApp Senior Product Manager, Cloud Volumes ONTAP",
+  "artifactStem": "NetApp-Senior-Product-Manager-Cloud-Volumes-ONTAP",
+  "fitClass": "adjacent",
+  "routeMode": "canonical-projects",
+  "selectedProjects": [
+    "project-01.html",
+    "project-03.html",
+    "project-04.html",
+    "project-02.html"
+  ],
+  "job": {
+    "company": "NetApp",
+    "roleTitle": "Senior Product Manager, Cloud Volumes ONTAP",
+    "jobId": "not-listed",
+    "jobUrl": null,
+    "sourceChannel": "chat-pasted-jd",
+    "dateCaptured": "2026-07-26",
+    "location": "Hybrid; specific in-office expectations to be shared during the recruiting process",
+    "atsVendor": "unknown",
+    "rawJd": "Own Every Moment at NetApp. At NetApp, your ideas power innovation. We lead in intelligent data infrastructure, delivering unified storage, integrated data services, and solutions that help organizations unlock the full potential of their data, from AI to multicloud. Job Summary: We are looking for a Senior Product Manager to help define and drive the strategy and roadmap for Cloud Volumes ONTAP. This role is ideal for a strong senior individual contributor who combines customer focus, technical depth, and business judgment to shape product direction and deliver measurable outcomes. The successful candidate will work closely with GTM, cloud partners, and customers to identify growth opportunities, prioritize investments, and bring innovative capabilities to market. Success in this role depends on translating customer and market needs into clear product decisions, helping NetApp strengthen its leadership in hybrid and multi-cloud data management, and driving meaningful business impact. Job Responsibilities: Drive product strategy and business plans for Cloud Volumes ONTAP using a customer-centric and data-driven approach. Own key parts of the product lifecycle, including planning, roadmap development, and prioritization in close partnership with cross-functional stakeholders. Define and prioritize technical requirements that support differentiated value across cloud storage, data management, automation, and operational simplicity. Work directly with major cloud providers including AWS, Microsoft Azure, and Google Cloud to ensure strong integration, alignment with partner priorities, and joint success. Lead the definition and integration of AI-driven and automation capabilities that improve usability, intelligence, and operational efficiency. Gather and synthesize customer feedback, usage data, and market insights to identify product opportunities, improve customer experience, and inform roadmap decisions. Monitor industry trends, competitive dynamics, and adjacent technologies to help position the product effectively and identify future growth areas. Partner closely with GTM, product marketing, support, and field teams to ensure strong product positioning, launch readiness, and customer adoption. Create clear product documentation and support launch materials, messaging, and internal enablement. Establish and track key performance indicators to measure product adoption, customer value, and business outcomes. Lead cross-functional collaboration to align stakeholders, resolve trade-offs, and deliver impactful product outcomes. Act as a strong internal advocate for customer needs, product clarity, and execution excellence. Job Requirements: 10+ years of product management experience in enterprise software, cloud, or storage technology businesses. Proven experience delivering technology products from concept through launch and ongoing iteration. Strong experience working across engineering, product management, GTM, marketing, support, and partner teams. Experience with cloud technologies is required; experience with storage technologies is a strong advantage. Familiarity with cloud platforms and IaaS/PaaS products, especially AWS, Microsoft Azure, and Google Cloud. Proven ability to define product requirements, prioritize effectively, and drive execution across multiple projects and stakeholders. Experience using customer insights, usage analytics, and market data to guide product decisions. Understanding of AI-driven product capabilities, automation, and emerging trends in enterprise software is an advantage. Familiarity with AI governance, compliance, and security considerations is an advantage. Strong analytical, communication, and presentation skills. Demonstrated ability to influence cross-functional teams and drive alignment without relying solely on formal authority. Comfortable working in a fast-paced, dynamic environment with a strong sense of ownership and bias for action. Demonstrated focus on driving measurable customer and business outcomes. Education: Bachelor of Science Degree in Computer Science, a master's degree, or equivalent experience is required. Compensation: The target salary range for this position is 196,350 - 292,600 USD. The salary offered will be determined by the candidate's location, qualifications, experience, and education and may be outside of this range. The range is based on On Target Earnings representing the total potential earnings, which is the sum of the base salary and potential commission earned when performance targets are achieved. Final compensation packages are competitive and in line with industry standards and include a comprehensive benefits package. At NetApp, we embrace a hybrid working environment designed to strengthen connection, collaboration, and culture for all employees. This means that most roles will have some level of in-office and/or in-person expectations, which will be shared during the recruitment process. NetApp is an Equal Opportunity Employer. Applications are reviewed only when submitted through the company website. For select roles, some hiring stages may use artificial intelligence tools to support, rather than replace, human decision-making."
+  },
+  "classification": {
+    "targetLane": "enterprise-cloud-data-product-management",
+    "evidenceMode": "balanced",
+    "primarySource": "resume evidence of 15 years performing product-management responsibilities across client products, regulated digital products, enterprise analytics and design systems, and current cloud-hosted AI products",
+    "supportingSource": "portfolio proof of customer-led roadmaps, structured knowledge bases, evidence and data models, cloud application delivery, AI automation, research across more than 20 products, and enterprise adoption across 7,000-plus users and 22 brands",
+    "hardGateStatus": "pass",
+    "hardGates": [
+      {
+        "gate": "10+ years of product management experience in enterprise software, cloud, or storage technology businesses",
+        "status": "pass",
+        "evidence": "Across 15 years, product management was part of the operating responsibility even when the title sat in account management, UX, or innovation. The work covered customer and market discovery, product strategy, requirements, roadmaps, prioritization, budgets, cross-functional delivery, launch, adoption, revenue responsibility, and iteration. Direct enterprise product ownership is clearest at Kinesso and in the current AI product roles; the package does not claim 10 years under a conventional Product Manager title."
+      },
+      {
+        "gate": "Cloud technology and IaaS/PaaS familiarity",
+        "status": "pass",
+        "evidence": "Current products use cloud-hosted model APIs, Vercel and Railway delivery, Vercel Blob storage, structured knowledge bases, application databases, backend services, source pipelines, and evidence models. Direct ownership of AWS, Azure, or Google Cloud partnerships and storage-platform infrastructure is not documented and remains an explicit adjacent-fit gap."
+      },
+      {
+        "gate": "Concept-through-launch technology product delivery",
+        "status": "pass",
+        "evidence": "Current work owns products from customer discovery and requirements through data and workflow design, front-end and backend build, working software, launch decisions, revenue responsibility, and iteration. Earlier roles add enterprise product roadmaps, research, cross-functional delivery, launch, and adoption."
+      },
+      {
+        "gate": "Bachelor of Science in Computer Science, master's degree, or equivalent experience",
+        "status": "pass",
+        "evidence": "The resume lists a bachelor's degree and 15 years of equivalent product, technical, enterprise, and client-delivery experience. The package does not imply a Computer Science degree or master's degree."
+      },
+      {
+        "gate": "Hybrid location expectations",
+        "status": "not-applicable",
+        "evidence": "The supplied posting says in-office expectations will be shared during recruiting. The public package does not assert a private schedule or relocation commitment."
+      }
+    ]
+  },
+  "requirements": [
+    {
+      "id": "product-strategy-business-plans-roadmap",
+      "text": "Drive product strategy and business plans while owning planning, roadmap development, prioritization, and major product-lifecycle decisions.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Current client work owns product strategy, customer discovery, requirements, roadmap decisions, technical execution, revenue responsibility, launch choices, and iteration.",
+        "At Kinesso, the enterprise design system was an owned product with roadmap, requirements, governance, adoption, and scale across more than 20 products, 7,000-plus users, and 22 brands.",
+        "Account leadership included product planning, budgets, requirements, priorities, cross-functional production, regulated launch, and iteration for Fortune 500 healthcare clients."
+      ],
+      "resumeTerms": [
+        "product strategy",
+        "product lifecycle",
+        "roadmap priorities"
+      ]
+    },
+    {
+      "id": "cloud-storage-data-management-integrations",
+      "text": "Define technical requirements across cloud storage, data management, automation, and operational simplicity while working with AWS, Azure, and Google Cloud.",
+      "priority": "core",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Claims Detector uses structured claim knowledge bases, approved annotations, application databases, evidence models, interchangeable AI backends, and cloud delivery on Vercel and Railway.",
+        "Scope Generator connects rate-card data, brand and sub-brand hierarchies, natural-language changes, costing logic, Vercel Blob storage, and spreadsheet exports.",
+        "Kinesso enterprise analytics work covered data visualization, dashboards, reusable components, white-label product systems, and adoption at scale.",
+        "Direct ONTAP, hyperscaler-partner, and cloud-storage platform ownership is not documented."
+      ],
+      "resumeTerms": [
+        "cloud storage",
+        "application databases",
+        "data visualization"
+      ]
+    },
+    {
+      "id": "ai-automation-capabilities",
+      "text": "Define and integrate AI-driven and automation capabilities that improve usability, intelligence, and operational efficiency.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The Pharma AI Platform spans claims review, screenshot automation, scoping, brief intake, routing, and FDA signal monitoring.",
+        "Claims Detector combines structured knowledge, evidence gaps, multimodal model workflows, audit-ready annotations, and human review.",
+        "Echo reduced one screenshot route from eight hours to ten minutes and helped cut a planned five-day launch to two days."
+      ],
+      "resumeTerms": [
+        "human review",
+        "model backends",
+        "AI workflow design"
+      ]
+    },
+    {
+      "id": "customer-usage-market-insights",
+      "text": "Use customer feedback, usage data, market insight, competitive dynamics, and adjacent technologies to identify opportunities and guide roadmap decisions.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Current client products begin with customer discovery and turn feedback into prioritized requirements, working software, and roadmap decisions.",
+        "At Kinesso, research across more than 20 products used interviews, prototype testing, Typeform, Useberry, Heap analytics, standardized findings, and stakeholder roadshows.",
+        "Account leadership translated customer, market, brand, audience, and regulatory inputs into product plans and launches."
+      ],
+      "resumeTerms": [
+        "customer research",
+        "competitive audits",
+        "Heap analytics",
+        "roadmap decisions"
+      ]
+    },
+    {
+      "id": "gtm-launch-adoption-enablement",
+      "text": "Partner with GTM, product marketing, support, and field teams on positioning, launch readiness, documentation, internal enablement, and customer adoption.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Seven-plus years of account leadership covered brand planning, briefs, product positioning, launch coordination, regulated review, client communication, and cross-functional delivery.",
+        "Current founder work owns product story, demos, launch surfaces, client iteration, sponsor strategy, and revenue responsibility.",
+        "Kinesso work included reusable standards, documentation, stakeholder roadshows, distributed-team adoption, and product experiences serving more than 7,000 users."
+      ],
+      "resumeTerms": [
+        "launch",
+        "adoption",
+        "stakeholder roadshows"
+      ]
+    },
+    {
+      "id": "kpis-customer-business-outcomes",
+      "text": "Establish and track KPIs for product adoption, customer value, revenue, operational performance, and business outcomes.",
+      "priority": "core",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Documented outcomes include enterprise adoption across 7,000-plus users and 22 brands, a three-week to four-day MLR review cycle, an eight-hour to ten-minute screenshot route, and a planned five-day launch reduced to two days.",
+        "Current founder work carries revenue responsibility, while earlier account leadership managed $2M-$50M+ client budgets.",
+        "A mature cloud-storage KPI portfolio covering capacity, reliability, retention, consumption, and hyperscaler economics is not documented."
+      ],
+      "resumeTerms": [
+        "7,000+ users",
+        "commercial delivery",
+        "$2M-$50M+ budgets"
+      ]
+    },
+    {
+      "id": "cross-functional-influence-execution",
+      "text": "Influence engineering, product, GTM, marketing, support, partner, and executive stakeholders without relying on formal authority.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Fifteen years of work spans clients, executives, account, product, engineering, design, research, analytics, strategy, creative, operations, and regulated review teams.",
+        "At Kinesso, distributed product and design work scaled from 2 to 30 people across the United States and Poland.",
+        "Current work turns competing client and stakeholder needs into product decisions, trade-offs, demos, build choices, and measurable next steps."
+      ],
+      "resumeTerms": [
+        "engineering",
+        "stakeholder iteration",
+        "prioritized roadmaps"
+      ]
+    },
+    {
+      "id": "ten-plus-years-product-management",
+      "text": "Bring at least 10 years of product management experience in enterprise software, cloud, or storage technology businesses.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Product management responsibilities run across the full 15-year career: client and market discovery, strategy, requirements, roadmaps, prioritization, budgets, delivery, launch, adoption, revenue responsibility, and iteration.",
+        "The clearest enterprise and technical product proof comes from Kinesso's enterprise analytics and design-system product, Heartbeat digital health products, current AI products, and cloud-hosted data and knowledge workflows.",
+        "Titles varied across account management, UX, experience and innovation, AI implementation, and founder product strategy; the package does not claim 10 years under a conventional Product Manager title."
+      ],
+      "resumeTerms": [
+        "15 years",
+        "product lifecycle",
+        "enterprise analytics",
+        "cloud storage"
+      ]
+    }
+  ],
+  "fitGate": {
+    "supportedOverlap": [
+      "Fifteen years performing product-management responsibilities across client portfolios, regulated digital products, enterprise analytics and design systems, and current AI products.",
+      "Direct ownership of customer discovery, strategy, requirements, roadmaps, prioritization, budgets, cross-functional delivery, launch, revenue responsibility, adoption, and iteration.",
+      "Owned enterprise design-system and analytics product work at Kinesso across more than 20 products, 7,000-plus users, 22 white-label brands, and a distributed team scaled from 2 to 30.",
+      "Current data-product infrastructure spans structured knowledge bases, evidence models, application databases, source health, risk scoring, rate-card data, product hierarchies, APIs, Vercel Blob storage, and cloud-hosted backends.",
+      "Direct AI automation and governance work across multimodal review, model orchestration, claim detection, evidence gaps, human review, audit-ready annotations, and regulated workflows.",
+      "Commercial and customer leadership through current founder revenue responsibility, investor backing, and seven-plus years managing $2M-$50M+ Fortune 500 healthcare portfolios."
+    ],
+    "unsupportedRequirements": [
+      "Direct Cloud Volumes ONTAP or NetApp product experience is not documented.",
+      "Direct ownership of AWS, Microsoft Azure, or Google Cloud partner roadmaps, joint integrations, and co-selling outcomes is not documented.",
+      "Direct storage-platform product management across capacity, performance, replication, backup, resilience, security, and cloud-consumption economics is not documented.",
+      "A mature cloud-infrastructure KPI portfolio covering consumption, retention, reliability, support volume, gross margin, or hyperscaler economics is not documented."
+    ],
+    "actualMismatches": [
+      "The documented data-infrastructure work is at the application and product layer, including knowledge bases, evidence models, data sources, APIs, databases, and cloud storage, rather than enterprise storage infrastructure such as ONTAP.",
+      "Cloud delivery is documented through Vercel, Railway, cloud-hosted model services, and Blob storage rather than direct AWS, Azure, or Google Cloud partner ownership."
+    ],
+    "missingEvidence": [
+      "Named AWS, Azure, or Google Cloud services, IaaS architecture decisions, hyperscaler partnership responsibilities, or joint GTM outcomes.",
+      "A shipped cloud-storage or data-management platform with adoption, consumption, reliability, retention, margin, or customer-value metrics.",
+      "Direct ownership of storage requirements such as performance, replication, backup, resilience, security, cost optimization, or hybrid-cloud operations.",
+      "Quantified revenue from the current business and a formal recurring product KPI cadence."
+    ],
+    "coverLetterBridge": {
+      "status": "recommended",
+      "rationale": "We can make the case with a cover letter by connecting 15 years of functional product management, the Kinesso design-system product, current client product ownership, cloud-hosted data and knowledge workflows, AI automation, customer discovery, GTM experience, and revenue responsibility to NetApp's need for a senior customer-led product operator. The letter must distinguish application-layer data infrastructure from ONTAP and hyperscaler-partner ownership rather than imply storage depth that is not documented."
+    },
+    "recommendation": "Proceed as adjacent. Lead with responsibility-based product-management tenure, the Kinesso design-system product, current end-to-end client product ownership, customer-led roadmaps, cloud-hosted data and knowledge infrastructure, AI automation, enterprise adoption, and commercial judgment. Keep direct ONTAP, storage-platform, and AWS, Azure, or Google Cloud partnership ownership out of the package."
+  },
+  "resume": {
+    "foundationId": "wally-mostafa-resume-2026-07-03",
+    "summary": "AI implementation and product strategy lead with 15 years across pharma, enterprise UX, client strategy, and regulated AI delivery. I turn ambiguous workflows into governed AI tools, demo-ready POCs, and build-ready product systems. My strength is bridging client translation, workflow design, model behavior, and adoption so teams can trust and use the product after the demo.",
+    "skills": [
+      {
+        "label": "AI Implementation & Workflow Design",
+        "description": "Governed LLM/VLM workflows, multimodal review, RAG/knowledge bases, prompt-defined criteria, model orchestration, and human review surfaces"
+      },
+      {
+        "label": "Product Strategy & POC Delivery",
+        "description": "Discovery, scoping, requirements, prototype validation, demo narratives, build-ready logic, and production handoff"
+      },
+      {
+        "label": "Regulated Healthcare & Client Delivery",
+        "description": "11 years across pharma/healthcare communications, FDA/HIPAA/MLR workflows, HCP/patient UX, client workshops, and stakeholder adoption"
+      },
+      {
+        "label": "Enterprise UX & Design Systems",
+        "description": "Team scaling (2 to 30), enterprise analytics, workflow UX, data visualization, component libraries, and accessibility (WCAG)"
+      }
+    ],
+    "roles": {
+      "hedgehox": [
+        "Own product strategy for Claims Detector from customer discovery and requirements through a functional POC, investor backing, roadmap decisions, and ongoing stakeholder iteration",
+        "Designed its data and knowledge workflow around structured claim libraries, approved annotations, evidence gaps, application databases, interchangeable model backends, audit-ready output, and human review",
+        "Manage the product roadmap across MLR claim review, brief intake, scoping, review routing, submission capture, and FDA signal monitoring",
+        "Led the Xenagos Bio website product from investor-facing structure and scientific positioning through visual direction, launch, and design-system handoff",
+        "Built Scope Generator around regional rate-card data, brand and sub-brand hierarchies, natural-language scope changes, costing logic, cloud storage, and spreadsheet export",
+        "Developed FDA Warning Tool concepts that connect warning-letter data and market signals to earlier product and content-risk decisions"
+      ],
+      "one-block-away": [
+        "Build client-led AI POCs that turn unclear business questions into testable product surfaces, demo flows, and roadmap decisions",
+        "Built ListingPal's AI listing-generation POC and landing page, turning basic property inputs into listing copy, social posts, ad copy, styling direction, and MLS/SEO-ready language in under 90 seconds",
+        "Built WeReady's Bailey Intelligence dashboard, translating founder inputs, GitHub signals, source health, risk scoring, and evidence trails into startup-readiness workflows",
+        "Own product strategy, UX, AI workflow design, front-end build, backend logic, demo readiness, and client iteration from first ask through working prototype",
+        "Currently building the website and sponsor strategy for a Tunisia youth soccer program, positioning the project for player advancement, community support, and donor outreach"
+      ],
+      "kinesso": [
+        "Owned the enterprise design-system product while scaling product design from 2 to 30 people across the US and Poland for analytics used by 7,000+ users across 22 white-label brands",
+        "Set product strategy, requirements, roadmap priorities, governance, and adoption for MIE data visualization, dashboard building, brand theming, and reusable analytics components",
+        "Led the Digital Experience Audit product from customer and market inputs through scoring logic, benchmarks, recommendations, data visualization, launch, and client-ready outputs",
+        "Design-system and analytics products earned 5 Indigo Gold, 4 Indigo Silver, and Red Dot recognition",
+        "Built a research practice across 20+ products using interviews, prototype testing, Typeform, Useberry, Heap analytics, standardized findings, and stakeholder roadshows to guide roadmap decisions and continuous improvement"
+      ],
+      "omnicom": [
+        "Managed UX product decisions for oncology accounts, combining customer strategy and account-management experience with regulated digital-product delivery",
+        "Worked across account, strategy, creative, engineering, and delivery teams to turn brand goals into requirements, prioritized user flows, content structure, and build-ready decisions"
+      ],
+      "heartbeat": [
+        "Led customer research and product strategy for pharma and healthcare products, turning stakeholder input, competitive audits, and user needs into roadmap direction",
+        "Defined product experiences through journey maps, site maps, user flows, wireframes, and prototypes for patient, HCP, and internal brand-team users",
+        "Partnered with strategy, creative, account, and engineering teams to prioritize requirements and move products from research through build, regulated launch, and iteration"
+      ],
+      "account-management": [
+        "Owned client product portfolios, commercial delivery, and $2M-$50M+ budgets for Fortune 500 pharma and healthcare brands across CNS, psychiatry, cardiovascular, metabolic, and sleep/wakefulness categories",
+        "As one of two account consumer leads on FCB Health's largest pharma account, led cross-channel product planning and launch across TV, radio, digital, gaming, Times Square, brand planning, and MLR review",
+        "Managed the product lifecycle from customer and market inputs through briefs, requirements, prioritized roadmaps, production, regulated review, launch, and iteration across account, creative, UX, analytics, and development teams"
+      ]
+    },
+    "sourceBulletIds": {
+      "hedgehox": [
+        "hedgehox-01",
+        "hedgehox-02",
+        "hedgehox-03",
+        "hedgehox-04",
+        "hedgehox-05",
+        "hedgehox-06"
+      ],
+      "one-block-away": [
+        "one-block-away-01",
+        "one-block-away-02",
+        "one-block-away-03",
+        "one-block-away-04",
+        "one-block-away-05"
+      ],
+      "kinesso": [
+        "kinesso-01",
+        "kinesso-02",
+        "kinesso-03",
+        "kinesso-04",
+        "addition:netapp-kinesso-product-research"
+      ],
+      "omnicom": [
+        "omnicom-01",
+        "omnicom-02"
+      ],
+      "heartbeat": [
+        "heartbeat-01",
+        "heartbeat-02",
+        "heartbeat-03"
+      ],
+      "account-management": [
+        "account-management-01",
+        "account-management-02",
+        "account-management-03"
+      ]
+    }
+  },
+  "hero": {
+    "eyebrow": "NetApp Senior Product Manager, Cloud Volumes ONTAP",
+    "tags": [
+      "15 years of product ownership",
+      "Cloud data and AI products",
+      "Enterprise roadmaps at scale"
+    ],
+    "intro": "I have owned products throughout my career, even when my title sat in account leadership, UX, or innovation. I managed digital product portfolios for Fortune 500 clients, owned the enterprise design-system product at Kinesso for 7,000-plus users across 22 brands, and now lead client AI products from discovery and data design through roadmap, build, launch, revenue, and iteration. My current work spans knowledge bases, evidence models, APIs, cloud storage, and automation. I bring cloud application and data-product fluency rather than prior ONTAP ownership."
+  },
+  "contact": {
+    "prompt": "Hiring a senior product manager who can turn customer and market signals into clear data-product roadmaps, align engineering and GTM, and grow adoption? I would like to bring 15 years of product ownership to Cloud Volumes ONTAP; email is the fastest way to reach me.",
+    "signoff": "Customer-led roadmaps · cloud data products · AI automation"
+  },
+  "copyReview": {
+    "humanizerVersion": "2.2.0",
+    "mode": "surface-only",
+    "status": "passed",
+    "reviewedAt": "2026-07-26T15:19:26.659Z",
+    "copySha256": "f0f795e0f6e8e6213963795b2e5789a28afa4ca16c113b46e055a02459426841",
+    "preserved": [
+      "content",
+      "structure",
+      "claims",
+      "ending"
+    ],
+    "rewriteAuthorized": false,
+    "reviewMethod": "humanizer-skill",
+    "semanticPassAttested": true,
+    "staticChecksPassed": true,
+    "finalAntiAiPass": true,
+    "remainingTells": []
+  },
+  "constraints": {
+    "doNotClaim": [
+      "Direct NetApp product experience",
+      "Direct Cloud Volumes ONTAP product experience",
+      "Direct ONTAP administration or engineering experience",
+      "Direct enterprise storage-platform product management",
+      "Direct AWS partner-roadmap ownership",
+      "Direct Microsoft Azure partner-roadmap ownership",
+      "Direct Google Cloud partner-roadmap ownership",
+      "Ten years under a conventional Product Manager title",
+      "Computer Science degree",
+      "Master's degree",
+      "Storage systems architect",
+      "Cloud infrastructure architect",
+      "Owned NetApp adoption, retention, reliability, or revenue metrics",
+      "Quantified SaaS ARR or cloud-consumption revenue"
+    ],
+    "blockedTerms": [
+      "NetApp product veteran",
+      "Cloud Volumes ONTAP expert",
+      "ONTAP product owner",
+      "enterprise storage expert",
+      "AWS partnership owner",
+      "Azure partnership owner",
+      "Google Cloud partnership owner",
+      "ten years as a Product Manager",
+      "Computer Science graduate",
+      "storage systems architect",
+      "cloud infrastructure architect",
+      "grew NetApp revenue",
+      "owned SaaS ARR"
+    ]
+  },
+  "privacy": {
+    "publicSafe": true,
+    "notes": "Contains only the public pasted job description and sanitized evidence from the public resume, portfolio, and user-supplied work-history clarification. It includes no recruiter contact details, private application answers, personal compensation boundaries, private eligibility information, or schedule commitments."
+  },
+  "qa": {
+    "status": "qa-passed",
+    "builtAt": "2026-07-26T15:31:24.553Z",
+    "configInputSha256": "3b41402234d80a35a206aaacdba27dccd1f82ffb77f61090ee39ae9466e3e542",
+    "sourceResumeSha256": "375cc6566f5bbad5b95be9da551dfe87824378fb252222409d29ef32d334ca25",
+    "resumeFoundation": {
+      "id": "wally-mostafa-resume-2026-07-03",
+      "sourcePdfSha256": "f9b05b6c3c134262b1af6c5734363daf4385cf335407a139779a37d138adf1aa"
+    },
+    "artifactHashes": {
+      "routeSha256": "0cd069cbd7297129ad908cd2841bf4d1eee46504166c72f8188fe43d94f0eb01",
+      "resumePdfSha256": "ac7173786c2d31e38f88d7b23199e252d1f557c2edb063dc1c57dcc04894e386",
+      "scopedProjectSha256": {}
+    },
+    "renderer": {
+      "browser": {
+        "name": "chrome-headless-shell",
+        "version": "Google Chrome for Testing 149.0.7827.55"
+      },
+      "htmlPath": "tmp/tailored-resumes/netapp-senior-product-manager-cloud-volumes-ontap.html",
+      "pdfPath": "output/pdf/Wally-Mostafa-NetApp-Senior-Product-Manager-Cloud-Volumes-ONTAP-Resume.pdf"
+    },
+    "ats": {
+      "ok": true,
+      "pdfPath": "output/pdf/Wally-Mostafa-NetApp-Senior-Product-Manager-Cloud-Volumes-ONTAP-Resume.pdf",
+      "pageCount": 2,
+      "fileSize": 137454,
+      "annotations": [
+        {
+          "page": 1,
+          "uri": "mailto:wmostafa12@gmail.com"
+        },
+        {
+          "page": 1,
+          "uri": "https://linkedin.com/in/wallymo"
+        },
+        {
+          "page": 1,
+          "uri": "https://wallymo.github.io/netapp-senior-product-manager-cloud-volumes-ontap/"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/6748"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/4629"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.red-dot.org/project/dxa-digital-experience-audit-55219"
+        }
+      ],
+      "coverage": [
+        {
+          "id": "product-strategy-business-plans-roadmap",
+          "requirement": "Drive product strategy and business plans while owning planning, roadmap development, prioritization, and major product-lifecycle decisions.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "product strategy",
+            "product lifecycle",
+            "roadmap priorities"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "cloud-storage-data-management-integrations",
+          "requirement": "Define technical requirements across cloud storage, data management, automation, and operational simplicity while working with AWS, Azure, and Google Cloud.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "cloud storage",
+            "application databases",
+            "data visualization"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "ai-automation-capabilities",
+          "requirement": "Define and integrate AI-driven and automation capabilities that improve usability, intelligence, and operational efficiency.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "human review",
+            "model backends",
+            "AI workflow design"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "customer-usage-market-insights",
+          "requirement": "Use customer feedback, usage data, market insight, competitive dynamics, and adjacent technologies to identify opportunities and guide roadmap decisions.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "customer research",
+            "competitive audits",
+            "Heap analytics",
+            "roadmap decisions"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "gtm-launch-adoption-enablement",
+          "requirement": "Partner with GTM, product marketing, support, and field teams on positioning, launch readiness, documentation, internal enablement, and customer adoption.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "launch",
+            "adoption",
+            "stakeholder roadshows"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "kpis-customer-business-outcomes",
+          "requirement": "Establish and track KPIs for product adoption, customer value, revenue, operational performance, and business outcomes.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "7,000+ users",
+            "commercial delivery",
+            "$2M-$50M+ budgets"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "cross-functional-influence-execution",
+          "requirement": "Influence engineering, product, GTM, marketing, support, partner, and executive stakeholders without relying on formal authority.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "engineering",
+            "stakeholder iteration",
+            "prioritized roadmaps"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "ten-plus-years-product-management",
+          "requirement": "Bring at least 10 years of product management experience in enterprise software, cloud, or storage technology businesses.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "15 years",
+            "product lifecycle",
+            "enterprise analytics",
+            "cloud storage"
+          ],
+          "missingTerms": []
+        }
+      ],
+      "failures": [],
+      "warnings": []
+    },
+    "humanizer": {
+      "status": "passed",
+      "version": "2.2.0",
+      "mode": "surface-only",
+      "reviewedAt": "2026-07-26T15:19:26.659Z",
+      "copySha256": "f0f795e0f6e8e6213963795b2e5789a28afa4ca16c113b46e055a02459426841",
+      "reviewMethod": "humanizer-skill",
+      "semanticPassAttested": true,
+      "staticChecksPassed": true
+    },
+    "route": {
+      "viewports": [
+        {
+          "name": "desktop",
+          "screenshot": "tmp/qa/netapp-senior-product-manager-cloud-volumes-ontap/desktop.png",
+          "errors": []
+        },
+        {
+          "name": "mobile",
+          "screenshot": "tmp/qa/netapp-senior-product-manager-cloud-volumes-ontap/mobile.png",
+          "errors": []
+        }
+      ],
+      "errors": []
+    }
+  }
+}

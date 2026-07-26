@@ -1674,6 +1674,27 @@
       }
     },
     {
+      "workflowVersion": 2,
+      "slug": "netapp-senior-product-manager-cloud-volumes-ontap",
+      "roleTitle": "NetApp Senior Product Manager, Cloud Volumes ONTAP",
+      "artifactStem": "NetApp-Senior-Product-Manager-Cloud-Volumes-ONTAP",
+      "configPath": "scripts/packages/netapp-senior-product-manager-cloud-volumes-ontap.json",
+      "targetLane": "enterprise-cloud-data-product-management",
+      "evidenceMode": "balanced",
+      "fitClass": "adjacent",
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-01.html",
+        "project-03.html",
+        "project-04.html",
+        "project-02.html"
+      ],
+      "resumePdfPath": "output/pdf/Wally-Mostafa-NetApp-Senior-Product-Manager-Cloud-Volumes-ONTAP-Resume.pdf",
+      "publishStatus": "local-only",
+      "qaStatus": "qa-passed",
+      "builtAt": "2026-07-26T15:31:24.553Z"
+    },
+    {
       "slug": "noom-design-systems-contract",
       "roleTitle": "Noom Senior Design Systems Contractor",
       "fitClass": "adjacent",
