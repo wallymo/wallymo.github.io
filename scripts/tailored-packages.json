@@ -1855,6 +1855,26 @@
     },
     {
       "workflowVersion": 2,
+      "slug": "planning-pod-product-associate",
+      "roleTitle": "Planning Pod Product Associate",
+      "artifactStem": "Planning-Pod-Product-Associate",
+      "configPath": "scripts/packages/planning-pod-product-associate.json",
+      "targetLane": "Hands-on AI product operations and customer discovery",
+      "evidenceMode": "balanced",
+      "fitClass": "adjacent",
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-02.html",
+        "project-04.html",
+        "project-01.html"
+      ],
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Planning-Pod-Product-Associate-Resume.pdf",
+      "publishStatus": "local-only",
+      "qaStatus": "qa-passed",
+      "builtAt": "2026-07-26T15:33:48.255Z"
+    },
+    {
+      "workflowVersion": 2,
       "slug": "playlist-senior-product-manager-consumer-platform",
       "roleTitle": "Playlist Senior Product Manager, Consumer Platform",
       "artifactStem": "Playlist-Senior-Product-Manager-Consumer-Platform",

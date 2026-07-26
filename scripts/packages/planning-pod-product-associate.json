@@ -1,0 +1,589 @@
+{
+  "workflowVersion": 2,
+  "contractRevision": 4,
+  "slug": "planning-pod-product-associate",
+  "roleTitle": "Planning Pod Product Associate",
+  "artifactStem": "Planning-Pod-Product-Associate",
+  "fitClass": "adjacent",
+  "routeMode": "canonical-projects",
+  "selectedProjects": [
+    "project-02.html",
+    "project-04.html",
+    "project-01.html"
+  ],
+  "job": {
+    "company": "Planning Pod",
+    "roleTitle": "Product Associate",
+    "jobId": "not-listed",
+    "jobUrl": null,
+    "sourceChannel": "chat-pasted-jd",
+    "dateCaptured": "2026-07-26",
+    "location": "Raleigh, North Carolina, full-time and in person",
+    "compensation": "$55,000-$70,000 per year",
+    "atsVendor": "unknown",
+    "rawJd": "About Planning Pod. Planning Pod is the operating system for the events industry. More than 1,200 event venues and planners run their bookings, clients, contracts, payments, and day-to-day operations on our platform. We have a proven product, a loyal customer base, and a profitable business. We are now building an AI-native version of Planning Pod, designed from the ground up around what large language models make possible. Backed by our own cash flow and by Kirra Capital, we have the speed and ambition of a startup paired with an existing customer base, deep domain knowledge, and the runway to build the right product. We plan to roll this new platform out to our existing customers over the next 6 months. About the Role. This entry-level role will gather product requirements, write documentation, interview customers, and organize the team to make sure we are all moving in one direction. You will work directly with our CTO and alongside a small, hand-picked engineering team dedicated to the new platform. You will learn what it takes to work in a high-performing software team from the inside. No prior full-time work experience is required. Our ideal candidate has excellent organization and writing skills, is an effective communicator, is comfortable talking to customers, and is willing to try new things. You will own entire processes and products from start to finish. Who Should Apply. This role is based in our Raleigh, NC office, full-time, in-person. We are building together, in the same room, and that matters to us. Do not apply unless you are willing and excited to come to the office every day you are working. We expect to move quickly and make mistakes, and you should be willing to take that same perspective, staying focused on results instead of process. We do not want egos. We take our work seriously but not ourselves. We believe work should be fun, engaging, and a key part of your life. Do not apply if you are looking for a paycheck or an easy 9-to-5. This role is for people who want to build something impactful and are willing to invest their time and energy into it. If you have thought about joining McKinsey, Booz, or a big tech rotational program but are not excited about the mission or culture, you might be a perfect fit for us. Our Requirements. 0-2 years of product development or related experience (new grads welcome). Excellent writing and verbal communication skills. Strong critical reasoning and attention to detail. Detailed organization and follow-through. An excellent GPA or proven success in an entry-level capacity. Driven, high-energy, positive, and optimistic. Based in Raleigh, NC (or willing to relocate) and excited to work in-person, full-time, with the team. Your Responsibilities. Interview customers, run product demos, and turn call notes into structured product insights. Write clear, professional product documentation, both internal and customer-facing. Write product requirements and user stories that leave nothing ambiguous for engineering. Organize and run our Jira and agile development processes. Answer developer and customer questions about new features. Investigate and troubleshoot bugs surfaced by customers and internal teams. Plan and coordinate product releases, including the rollout to our existing 1,200+ customers. Conduct product walkthroughs, demos, and webinars for customers and prospects. Some limited travel may be required. Why Planning Pod. You will help launch a new AI-native platform to 1,200+ existing paying customers. You will work directly with the CTO, the engineering team, and the CEO from day one. Real end-to-end ownership from your first week. Startup pace with the backing of a profitable business and Kirra Capital as an investor. Competitive salary plus performance incentives. Healthcare, 401K match, and 15 vacation days growing to 20 with tenure. A clear path to grow into product management as the team and platform scale. Pay: $55,000.00-$70,000.00 per year. Benefits: 401(k), 401(k) matching, dental insurance, health insurance, health savings account, paid time off, and vision insurance. Work Location: In person."
+  },
+  "classification": {
+    "targetLane": "Hands-on AI product operations and customer discovery",
+    "evidenceMode": "balanced",
+    "primarySource": "The resume shows customer and client discovery, product requirements, demo-ready AI POCs, cross-functional delivery, enterprise product scale, and end-to-end ownership.",
+    "supportingSource": "The portfolio shows a repeatable customer-interview practice, structured research documentation, product demos, and working AI workflows built from client needs.",
+    "hardGateStatus": "pass",
+    "hardGates": [
+      {
+        "gate": "Raleigh location and full-time in-person work",
+        "status": "pass",
+        "evidence": "The resume lists Raleigh, North Carolina. Daily in-office willingness is a private decision that should be confirmed before an application is submitted."
+      },
+      {
+        "gate": "Product development or related experience",
+        "status": "pass",
+        "evidence": "The resume documents current AI product strategy and POC delivery, more than three years of enterprise product leadership, and earlier customer research and regulated digital delivery."
+      },
+      {
+        "gate": "Excellent communication, organization, reasoning, and follow-through",
+        "status": "pass",
+        "evidence": "Seven years of Fortune 500 client leadership, investor demos, cross-functional product delivery, research documentation, and programs serving more than 7,000 users show direct written, verbal, and organizational responsibility."
+      },
+      {
+        "gate": "Excellent GPA or proven success in an entry-level capacity",
+        "status": "pass",
+        "evidence": "The resume includes a Rutgers bachelor's degree and a documented progression from account roles into product, research, design, and AI implementation. GPA is not documented, so the package relies on the posting's alternative of proven professional success."
+      }
+    ]
+  },
+  "requirements": [
+    {
+      "id": "customer-interviews-demos-insights",
+      "text": "Interview customers, run demos, and turn call notes into structured product insights.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Built a research practice across a 20+ product suite using customer interviews, transcripts, standardized findings, prototype testing, and stakeholder roadshows.",
+        "Current AI work starts with client questions and turns them into working POCs, demo flows, feedback, and roadmap decisions."
+      ],
+      "resumeTerms": [
+        "customer interviews",
+        "structured findings",
+        "demo flows",
+        "roadmap decisions"
+      ]
+    },
+    {
+      "id": "product-documentation-requirements-user-stories",
+      "text": "Write internal and customer-facing product documentation, product requirements, and unambiguous user stories for engineering.",
+      "priority": "core",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Hedgehox work translates regulated agency needs into scoped AI product requirements, workflow logic, review criteria, and handoff decisions.",
+        "Kinesso research and design-system work used standardized findings, Figma documentation, reusable patterns, and product-engineering collaboration.",
+        "The evidence does not name formal user-story ownership."
+      ],
+      "resumeTerms": [
+        "product requirements",
+        "product documentation",
+        "product and engineering"
+      ]
+    },
+    {
+      "id": "jira-agile-process",
+      "text": "Organize and run Jira and agile development processes.",
+      "priority": "core",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "resumeTerms": [
+        "Jira administration",
+        "sprint planning",
+        "backlog ownership"
+      ]
+    },
+    {
+      "id": "developer-customer-feature-support",
+      "text": "Answer developer and customer questions about new features while keeping teams aligned.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Current work bridges client needs, product behavior, front-end build, backend logic, demos, and implementation choices from first question through working product.",
+        "Earlier roles connected clients, strategy, product, UX, creative, analytics, and engineering around requirements, feedback, and delivery."
+      ],
+      "resumeTerms": [
+        "client questions",
+        "product and engineering",
+        "client iteration"
+      ]
+    },
+    {
+      "id": "bug-investigation-troubleshooting",
+      "text": "Investigate and troubleshoot bugs reported by customers and internal teams.",
+      "priority": "core",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Hands-on AI product work includes front-end build, backend logic, workflow validation, evidence-gap detection, and client iteration.",
+        "The resume and portfolio do not document ownership of a formal customer bug queue or support process."
+      ],
+      "resumeTerms": [
+        "client iteration",
+        "front-end build",
+        "backend logic"
+      ]
+    },
+    {
+      "id": "release-planning-customer-rollout",
+      "text": "Plan product releases and coordinate rollout of the AI-native platform to more than 1,200 existing customers.",
+      "priority": "core",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Led enterprise product experiences and reusable systems used by more than 7,000 people across 22 white-label brands.",
+        "Current product work covers working POCs, implementation choices, build-ready handoffs, and stakeholder adoption.",
+        "A named software release plan or customer migration for 1,200 accounts is not documented."
+      ],
+      "resumeTerms": [
+        "production handoff",
+        "roadmap decisions",
+        "7,000+ users"
+      ]
+    },
+    {
+      "id": "walkthroughs-webinars-prospects",
+      "text": "Conduct product walkthroughs, demos, and webinars for customers and prospects.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The portfolio includes working product walkthroughs and client-facing demo flows for ListingPal, WeReady, and regulated AI tools.",
+        "Investor demos, client workshops, and stakeholder roadshows show direct presentation experience; formal webinar ownership is not documented."
+      ],
+      "resumeTerms": [
+        "demo flows",
+        "client workshops",
+        "stakeholder roadshows"
+      ]
+    },
+    {
+      "id": "ai-native-product-context",
+      "text": "Help build an AI-native product around what large language models make possible.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Current work covers governed LLM and VLM workflows, RAG and knowledge bases, prompt-defined criteria, model orchestration, human review, and working AI POCs.",
+        "Claims Detector, Scope Generator, ListingPal, WeReady, and the FDA Warning Tool apply AI to concrete product workflows."
+      ],
+      "resumeTerms": [
+        "LLM/VLM workflows",
+        "RAG/knowledge bases",
+        "model orchestration",
+        "AI POCs"
+      ]
+    },
+    {
+      "id": "event-industry-domain",
+      "text": "Understand event-venue and planner operations such as bookings, contracts, payments, and day-to-day coordination.",
+      "priority": "context",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "resumeTerms": [
+        "event venue operations",
+        "event planning software",
+        "booking operations"
+      ]
+    }
+  ],
+  "fitGate": {
+    "supportedOverlap": [
+      "Direct customer-discovery proof across a 20+ product suite, including interviews, transcripts, prototype testing, standardized findings, and stakeholder roadshows.",
+      "Current AI product work covers requirements, workflow design, front-end and backend build, working POCs, demos, client iteration, roadmap decisions, and implementation handoff.",
+      "Enterprise product experience reached more than 7,000 users across 22 white-label brands and required product, engineering, business, and stakeholder coordination.",
+      "Seven years of Fortune 500 client leadership support customer conversations, clear briefs, production requirements, timelines, and follow-through.",
+      "The Raleigh location requirement matches the resume.",
+      "The AI-native product context is directly supported by governed LLM and VLM workflows, RAG, model orchestration, and human-review systems."
+    ],
+    "unsupportedRequirements": [
+      "Jira administration and ownership of agile ceremonies are not documented.",
+      "Formal user-story and backlog ownership are not documented.",
+      "A named software release process or migration to 1,200 existing customers is not documented.",
+      "Ownership of a customer bug queue or support operation is not documented.",
+      "Event-venue, planner, booking, contract, or payment-software experience is not documented.",
+      "Formal webinar ownership is not documented."
+    ],
+    "actualMismatches": [
+      "Planning Pod describes a 0-2 year entry-level role, while the resume shows 15 years of experience, former director scope, seven years of Fortune 500 account leadership, and current founder-level product ownership.",
+      "The role is priced at $55,000-$70,000 and framed as a learning path into product management, while the resume already reflects senior product, design, client, and AI leadership."
+    ],
+    "missingEvidence": [
+      "A truthful reason for intentionally pursuing a daily in-office, entry-level role at the stated compensation.",
+      "Confirmed enthusiasm for working in Planning Pod's Raleigh office every workday.",
+      "Named Jira projects, agile ceremonies, user stories, release calendars, bug triage, or customer-support workflows.",
+      "A customer migration or product rollout comparable to 1,200 existing accounts.",
+      "Direct event-industry or venue-management software experience."
+    ],
+    "coverLetterBridge": {
+      "status": "recommended",
+      "rationale": "We can make the case with a cover letter by connecting hands-on customer discovery, structured product requirements, AI POC delivery, product demos, and enterprise adoption to Planning Pod's six-month AI-native rollout. The cover letter must explain why a candidate with 15 years of experience genuinely wants this entry-level, daily in-office role at the stated compensation. That motivation is not in the current evidence and must come from the candidate."
+    },
+    "recommendation": "Proceed as adjacent, with the level mismatch kept visible. Lead with customer interviews, structured findings, product requirements, working AI demos, cross-functional follow-through, and enterprise adoption. Do not claim Jira ownership, formal agile administration, user-story ownership, release management for 1,200 customers, event-software experience, or a personal reason for taking a down-level role."
+  },
+  "resume": {
+    "foundationId": "wally-mostafa-resume-2026-07-03",
+    "summary": "AI implementation and product strategy lead with 15 years across pharma, enterprise UX, client strategy, and regulated AI delivery. I turn ambiguous workflows into governed AI tools, demo-ready POCs, and build-ready product systems. My strength is bridging client translation, workflow design, model behavior, and adoption so teams can trust and use the product after the demo.",
+    "skills": [
+      {
+        "label": "AI Implementation & Workflow Design",
+        "description": "Governed LLM/VLM workflows, multimodal review, RAG/knowledge bases, prompt-defined criteria, model orchestration, and human review surfaces"
+      },
+      {
+        "label": "Product Strategy & POC Delivery",
+        "description": "Discovery, scoping, requirements, prototype validation, demo narratives, build-ready logic, and production handoff"
+      },
+      {
+        "label": "Regulated Healthcare & Client Delivery",
+        "description": "11 years across pharma/healthcare communications, FDA/HIPAA/MLR workflows, HCP/patient UX, client workshops, and stakeholder adoption"
+      },
+      {
+        "label": "Enterprise UX & Design Systems",
+        "description": "Team scaling (2 to 30), enterprise analytics, workflow UX, data visualization, component libraries, and accessibility (WCAG)"
+      }
+    ],
+    "roles": {
+      "hedgehox": [
+        "Secured an investor for proprietary Claims Detection software by building the functional POC, shaping the product story, and iterating with stakeholders",
+        "Designed Claims Detector workflows that identify promotional claims, surface evidence gaps, and pre-populate audit-ready annotations before MLR submission",
+        "Translated pharma agency needs into product requirements for MLR claim review, brief intake, scoping, review routing, submission capture, and FDA signal monitoring",
+        "Designed the full Xenagos Bio startup biopharma website from scratch, including investor-facing structure, scientific positioning, visual direction, and hidden design-system handoff",
+        "Built Scope Generator for pharma agency finance and operations teams to manage regional rate cards, brands, sub-brands, and natural-language scope changes",
+        "Developed FDA Warning Tool concepts that connect warning-letter patterns to content-risk guidance for pharma teams"
+      ],
+      "one-block-away": [
+        "Build client-led AI POCs that turn unclear client questions into structured requirements, testable product surfaces, demo flows, and roadmap decisions",
+        "Built ListingPal's AI listing-generation POC and landing page, turning basic property inputs into listing copy, social posts, ad copy, styling direction, and MLS/SEO-ready language in under 90 seconds",
+        "Built WeReady's Bailey Intelligence dashboard, translating founder inputs, GitHub signals, source health, risk scoring, and evidence trails into startup-readiness workflows",
+        "Own product strategy, UX, AI workflow design, front-end build, backend logic, demo readiness, and client iteration from first question through working prototype",
+        "Currently building the website and sponsor strategy for a Tunisia youth soccer program, positioning the project for player advancement, community support, and donor outreach"
+      ],
+      "kinesso": [
+        "Scaled product design from 2 to 30 people across the US and Poland for enterprise analytics used by 7,000+ users across 22 white-label brands",
+        "Led UX and design-system strategy with product and engineering for MIE data visualization, dashboard building, brand theming, and reusable analytics components",
+        "Built the Digital Experience Audit workflow for channel scoring, benchmarks, recommendations, visualization, and presentation-ready client outputs",
+        "Design-system and analytics work earned 5 Indigo Gold, 4 Indigo Silver, and Red Dot recognition",
+        "Built a repeatable customer-research practice across a 20+ product suite using customer interviews, transcripts, prototype testing, structured findings, Figma product documentation, and stakeholder roadshows"
+      ],
+      "omnicom": [
+        "Supported oncology accounts as a freelance UX designer, combining UX design and account-management experience to strengthen regulated healthcare work",
+        "Worked across account, strategy, creative, and delivery teams to translate brand goals into clearer user flows, content structure, and digital recommendations"
+      ],
+      "heartbeat": [
+        "Led UX research and experience strategy for pharma and healthcare work, translating stakeholder input, competitive audits, and user needs into digital product direction",
+        "Created journey maps, site maps, user flows, wireframes, and prototypes for patient, HCP, and internal brand-team experiences across regulated healthcare programs",
+        "Partnered with strategy, creative, account, and engineering teams to move stakeholder and user findings into prioritized, build-ready product and campaign experiences"
+      ],
+      "account-management": [
+        "7+ years managing Fortune 500 pharma and healthcare clients with $2M-$50M+ budgets across CNS/neurology, psychiatry, cardiovascular/metabolic, and sleep/wakefulness brands including NUVIGIL, Namenda XR, Lipitor, and Zoloft",
+        "One of two account consumer leads on FCB Health's largest pharma account across all verticals: TV, radio, digital, gaming, Times Square, unbranded campaigns, brand planning, and MLR review",
+        "Translated client and brand strategy into briefs, creative feedback, production requirements, priorities, timelines, and MLR-ready delivery across account, creative, UX, and development teams"
+      ]
+    },
+    "sourceBulletIds": {
+      "hedgehox": [
+        "hedgehox-01",
+        "hedgehox-02",
+        "hedgehox-03",
+        "hedgehox-04",
+        "hedgehox-05",
+        "hedgehox-06"
+      ],
+      "one-block-away": [
+        "one-block-away-01",
+        "one-block-away-02",
+        "one-block-away-03",
+        "one-block-away-04",
+        "one-block-away-05"
+      ],
+      "kinesso": [
+        "kinesso-01",
+        "kinesso-02",
+        "kinesso-03",
+        "kinesso-04",
+        "addition:planning-pod-product-associate-01"
+      ],
+      "omnicom": [
+        "omnicom-01",
+        "omnicom-02"
+      ],
+      "heartbeat": [
+        "heartbeat-01",
+        "heartbeat-02",
+        "heartbeat-03"
+      ],
+      "account-management": [
+        "account-management-01",
+        "account-management-02",
+        "account-management-03"
+      ]
+    }
+  },
+  "hero": {
+    "eyebrow": "Planning Pod Product Associate",
+    "tags": [
+      "Customer insight to requirements",
+      "AI POCs and product demos",
+      "Cross-functional follow-through"
+    ],
+    "intro": "Planning Pod is building an AI-native product while preparing 1,200 existing customers for the transition. I bring the hands-on work this role needs: interviewing users across a 20+ product suite, turning client needs into structured product requirements, and building demo-ready AI POCs from the first question through a working product. I have also led enterprise product experiences used by more than 7,000 people across 22 brands, where clear documentation and steady follow-through kept product and engineering teams aligned."
+  },
+  "contact": {
+    "prompt": "Hiring a hands-on product operator who can turn customer conversations into clear requirements and keep an AI-native build moving? Email is the fastest way to reach me.",
+    "signoff": "Customer insight · clear requirements · AI product delivery"
+  },
+  "constraints": {
+    "doNotClaim": [
+      "Jira administration ownership",
+      "Agile ceremony ownership",
+      "Formal backlog ownership",
+      "Formal user-story ownership",
+      "Release management for 1,200 customers",
+      "Customer bug-queue ownership",
+      "Event-venue software experience",
+      "Event-planning software experience",
+      "Booking, contract, or payment-platform ownership",
+      "Formal webinar ownership",
+      "A personal reason for taking an entry-level role",
+      "Confirmed willingness to work in person every day",
+      "Acceptance of the stated compensation"
+    ],
+    "blockedTerms": [
+      "Jira administrator",
+      "owned agile ceremonies",
+      "owned the product backlog",
+      "wrote engineering user stories",
+      "managed a 1,200-customer rollout",
+      "owned customer bug triage",
+      "event software expert",
+      "venue-management expert",
+      "webinar program owner"
+    ]
+  },
+  "privacy": {
+    "publicSafe": true,
+    "notes": "Contains only the public Planning Pod job description and sanitized resume and portfolio evidence. It excludes recruiter contact details, application answers, personal compensation boundaries, private motivation, and unverified daily in-office willingness."
+  },
+  "copyReview": {
+    "humanizerVersion": "2.2.0",
+    "mode": "surface-only",
+    "status": "passed",
+    "reviewedAt": "2026-07-26T15:33:44.534Z",
+    "copySha256": "90e5895f900c4d76c5b54dc3f748126a70a9cb09cbc1597485b41dbc56584dac",
+    "preserved": [
+      "content",
+      "structure",
+      "claims",
+      "ending"
+    ],
+    "rewriteAuthorized": false,
+    "reviewMethod": "humanizer-skill",
+    "semanticPassAttested": true,
+    "staticChecksPassed": true,
+    "finalAntiAiPass": true,
+    "remainingTells": []
+  },
+  "qa": {
+    "status": "qa-passed",
+    "builtAt": "2026-07-26T15:33:48.255Z",
+    "configInputSha256": "d063ed510ed93bf4be3f1881674d4d9aabcb6657aa48c50254af112425d0b285",
+    "sourceResumeSha256": "375cc6566f5bbad5b95be9da551dfe87824378fb252222409d29ef32d334ca25",
+    "resumeFoundation": {
+      "id": "wally-mostafa-resume-2026-07-03",
+      "sourcePdfSha256": "f9b05b6c3c134262b1af6c5734363daf4385cf335407a139779a37d138adf1aa"
+    },
+    "artifactHashes": {
+      "routeSha256": "0aa6f1dbb0ba149d0fb1d25766cd7e68bcbef60134c7829b4293850c86af6bbd",
+      "resumePdfSha256": "cb31e080078a7c24e935a52f211824992d0da56584a27953d6f08a7a252213ff",
+      "scopedProjectSha256": {}
+    },
+    "renderer": {
+      "browser": {
+        "name": "chrome-headless-shell",
+        "version": "Google Chrome for Testing 149.0.7827.55"
+      },
+      "htmlPath": "tmp/tailored-resumes/planning-pod-product-associate.html",
+      "pdfPath": "output/pdf/Wally-Mostafa-Planning-Pod-Product-Associate-Resume.pdf"
+    },
+    "ats": {
+      "ok": true,
+      "pdfPath": "output/pdf/Wally-Mostafa-Planning-Pod-Product-Associate-Resume.pdf",
+      "pageCount": 2,
+      "fileSize": 137247,
+      "annotations": [
+        {
+          "page": 1,
+          "uri": "mailto:wmostafa12@gmail.com"
+        },
+        {
+          "page": 1,
+          "uri": "https://linkedin.com/in/wallymo"
+        },
+        {
+          "page": 1,
+          "uri": "https://wallymo.github.io/planning-pod-product-associate/"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/6748"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/4629"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.red-dot.org/project/dxa-digital-experience-audit-55219"
+        }
+      ],
+      "coverage": [
+        {
+          "id": "customer-interviews-demos-insights",
+          "requirement": "Interview customers, run demos, and turn call notes into structured product insights.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "customer interviews",
+            "structured findings",
+            "demo flows",
+            "roadmap decisions"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "product-documentation-requirements-user-stories",
+          "requirement": "Write internal and customer-facing product documentation, product requirements, and unambiguous user stories for engineering.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "product requirements",
+            "product documentation",
+            "product and engineering"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "jira-agile-process",
+          "requirement": "Organize and run Jira and agile development processes.",
+          "priority": "core",
+          "evidenceStatus": "none",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "Jira administration",
+            "sprint planning",
+            "backlog ownership"
+          ]
+        },
+        {
+          "id": "developer-customer-feature-support",
+          "requirement": "Answer developer and customer questions about new features while keeping teams aligned.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "client questions",
+            "product and engineering",
+            "client iteration"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "bug-investigation-troubleshooting",
+          "requirement": "Investigate and troubleshoot bugs reported by customers and internal teams.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "client iteration",
+            "front-end build",
+            "backend logic"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "release-planning-customer-rollout",
+          "requirement": "Plan product releases and coordinate rollout of the AI-native platform to more than 1,200 existing customers.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "production handoff",
+            "roadmap decisions",
+            "7,000+ users"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "walkthroughs-webinars-prospects",
+          "requirement": "Conduct product walkthroughs, demos, and webinars for customers and prospects.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "demo flows",
+            "client workshops",
+            "stakeholder roadshows"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "ai-native-product-context",
+          "requirement": "Help build an AI-native product around what large language models make possible.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "LLM/VLM workflows",
+            "RAG/knowledge bases",
+            "model orchestration",
+            "AI POCs"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "event-industry-domain",
+          "requirement": "Understand event-venue and planner operations such as bookings, contracts, payments, and day-to-day coordination.",
+          "priority": "context",
+          "evidenceStatus": "none",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "event venue operations",
+            "event planning software",
+            "booking operations"
+          ]
+        }
+      ],
+      "failures": [],
+      "warnings": []
+    },
+    "humanizer": {
+      "status": "passed",
+      "version": "2.2.0",
+      "mode": "surface-only",
+      "reviewedAt": "2026-07-26T15:33:44.534Z",
+      "copySha256": "90e5895f900c4d76c5b54dc3f748126a70a9cb09cbc1597485b41dbc56584dac",
+      "reviewMethod": "humanizer-skill",
+      "semanticPassAttested": true,
+      "staticChecksPassed": true
+    },
+    "route": {
+      "viewports": [
+        {
+          "name": "desktop",
+          "screenshot": "tmp/qa/planning-pod-product-associate/desktop.png",
+          "errors": []
+        },
+        {
+          "name": "mobile",
+          "screenshot": "tmp/qa/planning-pod-product-associate/mobile.png",
+          "errors": []
+        }
+      ],
+      "errors": []
+    }
+  }
+}
