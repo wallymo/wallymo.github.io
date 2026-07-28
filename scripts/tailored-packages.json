@@ -1521,6 +1521,30 @@
     },
     {
       "workflowVersion": 2,
+      "contractRevision": 5,
+      "slug": "media-adtech-account-manager",
+      "roleTitle": "Media & AdTech Account Manager",
+      "artifactStem": "Media-AdTech-Account-Manager",
+      "configPath": "scripts/packages/media-adtech-account-manager.json",
+      "targetLane": "client-account-delivery",
+      "evidenceMode": "resume-primary",
+      "fitClass": "adjacent",
+      "positioningLane": "client-account-delivery",
+      "bridgeType": "operating-center",
+      "applicationStrategy": "transferable",
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-06.html",
+        "project-03.html",
+        "project-02.html"
+      ],
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Media-AdTech-Account-Manager-Resume.pdf",
+      "publishStatus": "local-only",
+      "qaStatus": "qa-passed",
+      "builtAt": "2026-07-28T17:27:19.318Z"
+    },
+    {
+      "workflowVersion": 2,
       "slug": "medspa-ai-product-manager",
       "roleTitle": "MedSpa AI Product Manager",
       "artifactStem": "MedSpa-AI-Product-Manager",

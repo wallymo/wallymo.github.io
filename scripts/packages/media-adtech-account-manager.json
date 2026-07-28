@@ -1,0 +1,854 @@
+{
+  "workflowVersion": 2,
+  "contractRevision": 5,
+  "slug": "media-adtech-account-manager",
+  "roleTitle": "Media & AdTech Account Manager",
+  "artifactStem": "Media-AdTech-Account-Manager",
+  "fitClass": "adjacent",
+  "routeMode": "canonical-projects",
+  "selectedProjects": [
+    "project-06.html",
+    "project-03.html",
+    "project-02.html"
+  ],
+  "job": {
+    "company": "Confidential media and advertising technology company",
+    "roleTitle": "Account Manager",
+    "jobId": "not-provided",
+    "jobUrl": "not-provided",
+    "sourceChannel": "user-provided-job-description",
+    "dateCaptured": "2026-07-28",
+    "location": "Major metropolitan cities such as New York, Chicago, Detroit, and Los Angeles; Raleigh eligibility requires confirmation",
+    "atsVendor": "unknown",
+    "rawJd": "About the job\nOur client is a private equity-backed media and advertising technology company seeking an organized, proactive, and customer-focused Account Manager to join their growing Sales organization as a key member of the Customer Success team. This role is an excellent opportunity for an early-career professional who thrives in a fast-paced, collaborative environment and is passionate about supporting revenue-generating teams. The Account Manager will own pre-sale coordination, campaign execution, and post-sale support across a portfolio of accounts — serving as a critical operational partner to sellers while ensuring seamless coordination between internal teams and clients throughout the full campaign lifecycle.\n\nWorking cross-functionally with Sales, Sales Planning, Ad Operations, Analytics, Commercial Enablement, Finance, and Creative, this individual will help maximize seller productivity, reduce operational friction, deliver successful client outcomes, and create additional selling capacity across the organization.\n\nCandidates need to be in major metropolitan cities like NY, Chicago, Detroit, and Los Angeles.\n\nWhat Success Looks Like\n\nBecoming a trusted partner to the Sales organization by developing strong cross-functional relationships\nTaking ownership of key administrative, proposal, and campaign coordination responsibilities\nImproving seller productivity by reducing operational workload and streamlining account support\nEnsuring campaigns launch successfully, deliver as expected, and consistently exceed client expectations\n\nResponsibilities\n\nSales Support & Pre-Sale Coordination\n\nCoordinate RFP responses and proposal development in partnership with Sales, Sales Planning, and Commercial Enablement\nAssist in developing and customizing client presentations and approved sales materials\nSupport account planning through prospect research and competitive intelligence\nMaintain CRM opportunities, account records, and pipeline information\nCoordinate meetings, agendas, and broader sales logistics\nPartner with Sales Planning on inventory availability, targeting recommendations, and budget scenarios\n\nClient Intelligence & Strategic Account Support\n\nMonitor assigned clients for business updates, earnings announcements, product launches, competitive activity, and marketing initiatives\nPrepare pre-meeting briefs summarizing relevant client news, campaign history, and strategic opportunities\nProactively identify risks, growth opportunities, and industry trends to inform client conversations\nMaintain a strong understanding of each client's planning cycles, business priorities, and annual marketing calendar\n\nCampaign Management & Client Success\n\nCoordinate campaign launches and ensure smooth internal handoffs across teams\nMonitor campaign pacing and delivery while coordinating optimization requests and changes\nCoordinate reporting, measurement studies, attribution requests, and proof-of-performance deliverables\nEnsure ongoing alignment among Sales, Ad Operations, Analytics, and other internal stakeholders throughout campaign execution\nSupport client communication and help resolve campaign-related issues in a timely manner\n\nCreative & Project Management\n\nCoordinate creative asset collection, trafficking, approvals, and version control\nManage project timelines, deliverables, and milestone tracking\nPartner with Creative, Operations, and Commercial Enablement to ensure timely execution\n\nPost-Sale Support & Account Growth\n\nPrepare campaign recap presentations, wrap reports, and performance summaries\nTrack renewals and identify potential upsell and cross-sell opportunities for Sales partners\nCoordinate billing inquiries and invoice follow-up\nProvide ongoing administrative and operational support across assigned accounts\n\nQualifications\n\nRequired\n\n1–2 years of professional experience or relevant internship experience in media sales support, account management, customer success, sales operations, or advertising/marketing services\nStrong project management and organizational skills with the ability to manage multiple priorities simultaneously\nExcellent written, verbal, and interpersonal communication skills\nProficiency with Microsoft Office (particularly Excel and PowerPoint) and AI tools\nAbility to work independently while collaborating effectively across multiple teams\nStrong attention to detail, a proactive mindset, and a genuine commitment to delivering high-quality work\nA customer-first orientation with a sense of ownership, accountability, and willingness to take initiative\n\nPreferred\n\nExperience supporting advertising sales organizations or media companies\nExposure to Salesforce or another CRM platform\nFamiliarity with campaign delivery, media planning, or advertising operations workflows\nUnderstanding of digital media, programmatic advertising, retail media, video advertising, or related industries\nExperience working with campaign measurement, attribution, or analytics partners\n\nEducation\n\nBA/BS degree from an accredited university or equivalent professional experience"
+  },
+  "classification": {
+    "targetLane": "client-account-delivery",
+    "evidenceMode": "resume-primary",
+    "primarySource": "The resume is the main evidence. It documents 7+ years managing Fortune 500 healthcare accounts and $2M-$50M+ budgets, integrated TV, radio, digital, gaming, and high-visibility campaign work, plus briefs, creative feedback, production requirements, timelines, and cross-functional delivery.",
+    "supportingSource": "The portfolio adds Kinesso marketing analytics and Digital Experience Audit proof, including channel scoring, benchmarks, recommendations, data visualization, and presentation-ready client outputs used across enterprise products.",
+    "hardGateStatus": "pass",
+    "hardGates": [
+      {
+        "gate": "Relevant professional experience",
+        "status": "pass",
+        "requirementId": "relevant-experience",
+        "evidence": "The role asks for 1–2 years of relevant experience. The resume shows 7+ years of account management and client strategy in advertising and marketing services, which clears the minimum even though seniority is a recruiter-screen risk."
+      },
+      {
+        "gate": "Major metropolitan location",
+        "status": "pass",
+        "requirementId": "major-metro-location",
+        "evidence": "The posting says candidates need to be in major metropolitan cities like New York, Chicago, Detroit, and Los Angeles. The word 'like' makes the list non-exhaustive, and Raleigh is a metropolitan area, but the employer still needs to confirm that Raleigh is eligible before application."
+      },
+      {
+        "gate": "Bachelor's degree or equivalent professional experience",
+        "status": "pass",
+        "requirementId": "education",
+        "evidence": "The resume documents a BA from Rutgers University and more than 15 years of relevant professional experience."
+      }
+    ]
+  },
+  "requirements": [
+    {
+      "id": "relevant-experience",
+      "text": "Bring 1–2 years of professional or internship experience in media sales support, account management, customer success, sales operations, or advertising and marketing services.",
+      "priority": "hard-gate",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Seven-plus years managing Fortune 500 pharma and healthcare accounts in advertising and marketing services.",
+        "One of two consumer account leads on FCB Health's largest pharma account across TV, radio, digital, gaming, Times Square, brand planning, and MLR review.",
+        "The experience exceeds the stated minimum, although the early-career framing may create an overqualification screen."
+      ],
+      "proofIds": [
+        "account-management-01",
+        "account-management-02"
+      ],
+      "destinations": [
+        "summary",
+        "experience"
+      ],
+      "resumeTerms": [
+        "7+ years",
+        "account management"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "major-metro-location",
+      "text": "Be based in a major metropolitan city like New York, Chicago, Detroit, or Los Angeles.",
+      "priority": "hard-gate",
+      "source": "jd",
+      "confidence": "ambiguous",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "The resume lists Raleigh, North Carolina.",
+        "The posting uses 'like' before its city examples, so it does not clearly state that only the four named cities qualify.",
+        "Employer confirmation is still required before treating Raleigh as application-eligible."
+      ],
+      "proofIds": [],
+      "destinations": [
+        "application-answer"
+      ],
+      "resumeTerms": [
+        "Raleigh, NC"
+      ],
+      "matchMode": "contextual"
+    },
+    {
+      "id": "education",
+      "text": "Hold a BA or BS degree from an accredited university or equivalent professional experience.",
+      "priority": "hard-gate",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "BA in Labor Studies and Employee Relations from Rutgers University.",
+        "More than 15 years of relevant experience across account management, marketing, analytics, client delivery, and product work."
+      ],
+      "proofIds": [],
+      "destinations": [
+        "application-answer"
+      ],
+      "resumeTerms": [
+        "Rutgers University"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "presale-proposals-presentations",
+      "text": "Coordinate RFP responses and proposals, customize client presentations, and support sales planning and account preparation.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Account work translated client and brand strategy into briefs, creative feedback, production requirements, timelines, and client-ready deliverables.",
+        "The Digital Experience Audit produced benchmarks, recommendations, visualizations, and presentation-ready client outputs.",
+        "Formal RFP response ownership, inventory planning, and sales proposal administration are not documented."
+      ],
+      "proofIds": [
+        "account-management-03",
+        "kinesso-03"
+      ],
+      "destinations": [
+        "summary",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "briefs",
+        "presentation-ready client outputs"
+      ],
+      "matchMode": "contextual"
+    },
+    {
+      "id": "client-intelligence",
+      "text": "Research client priorities, competitive activity, campaign history, risks, growth opportunities, and industry trends for account conversations.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Healthcare UX work used stakeholder input, competitive audits, and user needs to guide digital product direction.",
+        "The Digital Experience Audit combined channel scoring, benchmarks, recommendations, visualization, and client-ready outputs.",
+        "Current client-led POCs turn unclear business questions into demonstrations, feedback, and roadmap decisions."
+      ],
+      "proofIds": [
+        "heartbeat-01",
+        "kinesso-03",
+        "one-block-away-01"
+      ],
+      "destinations": [
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "competitive audits",
+        "channel scoring",
+        "benchmarks"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "campaign-management",
+      "text": "Coordinate campaign launches, handoffs, pacing, optimization requests, reporting, measurement, attribution, and client issue resolution.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Direct campaign experience spans TV, radio, digital, gaming, Times Square, unbranded programs, brand planning, and regulated review.",
+        "Account work covered briefs, production requirements, timelines, creative feedback, and cross-functional delivery.",
+        "Direct ownership of campaign pacing, optimization requests, attribution studies, and ad-operations handoffs is not documented."
+      ],
+      "proofIds": [
+        "account-management-02",
+        "account-management-03",
+        "heartbeat-03"
+      ],
+      "destinations": [
+        "summary",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "integrated campaigns",
+        "timelines",
+        "campaign experiences"
+      ],
+      "matchMode": "contextual"
+    },
+    {
+      "id": "creative-project-management",
+      "text": "Coordinate creative assets, approvals, version control, timelines, deliverables, milestones, and cross-functional execution.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Account work translated strategy into briefs, creative feedback, production requirements, timelines, and MLR-ready deliverables.",
+        "Delivery spanned account, creative, UX, strategy, production, development, and client teams.",
+        "Current AI workflow work includes brief intake, scoping, review routing, and submission capture."
+      ],
+      "proofIds": [
+        "account-management-03",
+        "hedgehox-03"
+      ],
+      "destinations": [
+        "skills",
+        "experience"
+      ],
+      "resumeTerms": [
+        "creative feedback",
+        "production requirements",
+        "review routing"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "post-sale-growth-finance",
+      "text": "Prepare campaign recaps, track renewals and growth opportunities, and coordinate billing and invoice follow-up.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Seven-plus years of client account ownership included $2M-$50M+ budgets, brand planning, deliverables, and client follow-through.",
+        "Scope Generator supports rate cards, brands, sub-brands, scope changes, and finance and operations workflows.",
+        "Direct renewal tracking, upsell and cross-sell targets, invoice follow-up, and billing ownership are not documented."
+      ],
+      "proofIds": [
+        "account-management-01",
+        "hedgehox-05"
+      ],
+      "destinations": [
+        "skills",
+        "experience"
+      ],
+      "resumeTerms": [
+        "$2M-$50M+ budgets",
+        "scope changes"
+      ],
+      "matchMode": "contextual"
+    },
+    {
+      "id": "cross-functional-client-ownership",
+      "text": "Work independently, manage competing priorities, communicate clearly, and build trusted relationships across sales, planning, operations, analytics, finance, creative, and clients.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Account leadership covered Fortune 500 clients, large budgets, briefs, timelines, and coordinated delivery.",
+        "Kinesso work scaled across the United States and Poland and supported enterprise products used by 7,000+ people across 22 brands.",
+        "Current work runs from client discovery and scoping through working prototypes and iteration."
+      ],
+      "proofIds": [
+        "account-management-01",
+        "account-management-03",
+        "kinesso-01"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience"
+      ],
+      "resumeTerms": [
+        "cross-functional delivery",
+        "client iteration"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "office-and-ai-tools",
+      "text": "Use Microsoft Office, particularly Excel and PowerPoint, plus AI tools.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "The resume directly documents AI workflow and product work, data visualization, dashboards, and presentation-ready client outputs.",
+        "Microsoft Excel and PowerPoint proficiency are not named in the current resume foundation."
+      ],
+      "proofIds": [
+        "hedgehox-03",
+        "kinesso-02",
+        "kinesso-03"
+      ],
+      "destinations": [
+        "skills",
+        "experience"
+      ],
+      "resumeTerms": [
+        "AI",
+        "data visualization",
+        "presentation-ready"
+      ],
+      "matchMode": "contextual"
+    },
+    {
+      "id": "crm-platform",
+      "text": "Maintain CRM opportunities, account records, and pipeline information, with Salesforce exposure preferred.",
+      "priority": "preferred",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "proofIds": [],
+      "destinations": [
+        "application-answer"
+      ],
+      "resumeTerms": [
+        "Salesforce",
+        "CRM"
+      ],
+      "matchMode": "not-supported"
+    },
+    {
+      "id": "media-advertising-operations",
+      "text": "Bring familiarity with advertising sales, campaign delivery, media planning, digital media, programmatic advertising, retail media, video advertising, or ad operations.",
+      "priority": "preferred",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Direct agency campaign experience includes TV, radio, digital, gaming, Times Square, unbranded campaigns, brand planning, and MLR review.",
+        "Kinesso work covered enterprise marketing analytics, marketing intelligence dashboards, channel scoring, and reusable analytics components.",
+        "Direct advertising sales support, programmatic operations, retail media, media inventory planning, and trafficking ownership are not documented."
+      ],
+      "proofIds": [
+        "account-management-02",
+        "kinesso-02",
+        "kinesso-03"
+      ],
+      "destinations": [
+        "summary",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "marketing analytics",
+        "TV",
+        "radio",
+        "digital"
+      ],
+      "matchMode": "contextual"
+    },
+    {
+      "id": "measurement-attribution-analytics",
+      "text": "Work with campaign measurement, attribution, reporting, analytics partners, and proof-of-performance deliverables.",
+      "priority": "preferred",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "The Digital Experience Audit provided channel scoring, benchmarks, recommendations, visualization, and presentation-ready client outputs.",
+        "Kinesso products supported enterprise marketing analytics used by 7,000+ people across 22 brands.",
+        "Direct campaign attribution ownership and named measurement-partner coordination are not documented."
+      ],
+      "proofIds": [
+        "kinesso-01",
+        "kinesso-03"
+      ],
+      "destinations": [
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "channel scoring",
+        "benchmarks",
+        "recommendations"
+      ],
+      "matchMode": "contextual"
+    }
+  ],
+  "fitGate": {
+    "supportedOverlap": [
+      "Seven-plus years of Fortune 500 account leadership with $2M-$50M+ budgets and direct responsibility for client briefs, creative feedback, production requirements, timelines, and delivery.",
+      "Integrated campaign experience across TV, radio, digital, gaming, Times Square, unbranded work, brand planning, and regulated review.",
+      "Kinesso marketing analytics and Digital Experience Audit work across channel scoring, benchmarks, recommendations, visualization, and presentation-ready client outputs.",
+      "Cross-functional work across account, strategy, creative, UX, development, finance, operations, and client teams.",
+      "Current AI workflow work supports the posting's AI-tools requirement and adds experience with intake, scoping, review routing, and client iteration."
+    ],
+    "unsupportedRequirements": [
+      "Salesforce or another named CRM platform is not documented.",
+      "Direct RFP response ownership, inventory planning, media targeting recommendations, and sales proposal administration are not documented.",
+      "Direct campaign pacing, optimization, trafficking, attribution-study, and ad-operations ownership are not documented.",
+      "Renewal tracking, upsell and cross-sell targets, invoice follow-up, and billing ownership are not documented.",
+      "Microsoft Excel and PowerPoint proficiency are not named in the current resume foundation."
+    ],
+    "actualMismatches": [
+      "The role is framed for an early-career candidate with 1–2 years of experience, while the resume shows 15 years overall and 7+ years in account management.",
+      "The recent operating center is AI implementation, product strategy, UX, and client delivery rather than day-to-day advertising sales administration."
+    ],
+    "missingEvidence": [
+      "Confirmation that Raleigh qualifies under the posting's major-metropolitan-city requirement.",
+      "Named Salesforce or CRM use and ownership of pipeline data hygiene.",
+      "Examples of RFP coordination, media inventory planning, campaign pacing, optimization requests, and proof-of-performance reporting.",
+      "Renewal, upsell, cross-sell, billing, or invoice-follow-up outcomes.",
+      "Direct programmatic, retail media, video advertising, or advertising-operations workflow ownership."
+    ],
+    "coverLetterBridge": {
+      "status": "recommended",
+      "rationale": "We can make the case with a cover letter by connecting 7+ years of account leadership, integrated campaign coordination, Kinesso marketing analytics, and current AI workflow work to the client's need for organized seller support and campaign follow-through. The letter must address the early-career level, the shift from healthcare advertising to media and adtech, and the missing CRM, pacing, attribution, renewal, and billing evidence."
+    },
+    "recommendation": "Proceed as adjacent. Lead with account ownership, integrated campaign delivery, client briefs, cross-functional coordination, and Kinesso analytics. Keep Salesforce, media inventory, pacing, attribution, renewals, billing, and Raleigh eligibility visible as gaps rather than turning them into implied experience."
+  },
+  "positioning": {
+    "laneId": "client-account-delivery",
+    "targetIdentity": "account and client strategy leader",
+    "employerNeed": "Reduce seller workload while keeping proposals, campaign handoffs, reporting, and client follow-through organized.",
+    "bridgeType": "operating-center",
+    "applicationStrategy": "transferable",
+    "bridgeThesis": "account leadership, integrated campaigns, and Kinesso marketing analytics",
+    "proofIds": [
+      "account-management-02",
+      "account-management-03",
+      "kinesso-03"
+    ],
+    "remainingGap": "The resume does not show Salesforce administration, media inventory planning, campaign pacing or attribution ownership, or direct billing and renewal operations. Raleigh eligibility also needs recruiter confirmation."
+  },
+  "resume": {
+    "foundationId": "wally-mostafa-resume-2026-07-03",
+    "summary": "Account and client strategy leader with 7+ years managing Fortune 500 healthcare brands and $2M-$50M+ budgets. I bring account leadership, integrated campaigns, and Kinesso marketing analytics to seller support and campaign operations. My work spans briefs, creative production, timelines, enterprise products used by 7,000+ people across 22 brands, and current AI workflow delivery.",
+    "skillIds": [
+      "client-account-leadership",
+      "program-project-delivery",
+      "client-success-product-adoption",
+      "consultative-sales-solution-delivery"
+    ],
+    "skills": [
+      {
+        "label": "Client & Account Leadership",
+        "description": "Fortune 500 pharma and healthcare accounts, $2M-$50M+ budgets, client briefs, brand planning, and cross-functional delivery"
+      },
+      {
+        "label": "Program & Project Delivery",
+        "description": "Scoping, requirements, timelines, review routing, team coordination, risk visibility, and build-ready handoff across product, design, and client teams"
+      },
+      {
+        "label": "Client Success & Product Adoption",
+        "description": "Client discovery, adoption-focused workflows, training and roadshows, human review, and product decisions based on user needs"
+      },
+      {
+        "label": "Consultative Sales & Solution Delivery",
+        "description": "Discovery-led solution design, POCs, demo narratives, client translation, and product recommendations tied to business needs"
+      }
+    ],
+    "roles": {
+      "hedgehox": [
+        "Secured an investor for proprietary Claims Detection software by building the functional POC, shaping the demo story, and iterating with investors",
+        "Designed Claims Detector workflows that identify promotional claims, surface evidence gaps, and pre-populate audit-ready annotations before MLR submission",
+        "Converted pharma agency needs into AI tools for MLR claim review, brief intake, scoping, review routing, submission capture, and FDA signal monitoring",
+        "Designed the full Xenagos Bio startup biopharma website from scratch, including investor-facing structure, scientific positioning, visual direction, and hidden design-system handoff",
+        "Built Scope Generator for pharma agency finance and operations teams to manage regional rate cards, brands, sub-brands, and natural-language scope changes",
+        "Developed FDA Warning Tool concepts that connect warning-letter patterns to content-risk guidance for pharma teams"
+      ],
+      "one-block-away": [
+        "Build client-led AI POCs that turn unclear business questions into testable product surfaces, demo flows, and roadmap decisions",
+        "Built ListingPal's AI listing-generation POC and landing page, turning basic property inputs into listing copy, social posts, ad copy, styling direction, and MLS/SEO-ready language in under 90 seconds",
+        "Built WeReady's Bailey Intelligence dashboard, translating founder inputs, GitHub signals, source health, risk scoring, and evidence trails into startup-readiness workflows",
+        "Own product strategy, UX, AI workflow design, front-end build, backend logic, demo readiness, and client iteration from first ask through working prototype",
+        "Currently building the website and sponsor strategy for a Tunisia youth soccer program, positioning the project for player advancement, community support, and donor outreach"
+      ],
+      "kinesso": [
+        "Scaled product design from 2 to 30 people across the US and Poland for enterprise marketing analytics used by 7,000+ users across 22 white-label brands",
+        "Led UX and design-system strategy for marketing intelligence dashboards, data visualization, brand theming, and reusable analytics components",
+        "Built the Digital Experience Audit workflow for channel scoring, benchmarks, recommendations, visualization, and presentation-ready client outputs",
+        "Design-system and analytics work earned 5 Indigo Gold, 4 Indigo Silver, and Red Dot recognition"
+      ],
+      "omnicom": [
+        "Supported oncology accounts as a freelance UX designer, combining UX design and account-management experience to strengthen regulated healthcare work",
+        "Championed UX best practices across account, strategy, creative, and delivery conversations, translating brand goals into clearer user flows, content structure, and digital recommendations"
+      ],
+      "heartbeat": [
+        "Led UX research and experience strategy for pharma and healthcare work, translating stakeholder input, competitive audits, and user needs into digital product direction",
+        "Created journey maps, site maps, user flows, wireframes, and prototypes for patient, HCP, and internal brand-team experiences across regulated healthcare programs",
+        "Partnered with strategy, creative, account, and engineering teams to move UX recommendations from research findings into build-ready product and campaign experiences"
+      ],
+      "account-management": [
+        "7+ years managing Fortune 500 pharma and healthcare clients with $2M-$50M+ budgets across CNS/neurology, psychiatry, cardiovascular/metabolic, and sleep/wakefulness brands including NUVIGIL, Namenda XR, Lipitor, and Zoloft",
+        "One of two account consumer leads on FCB Health's largest pharma account, coordinating integrated campaigns across TV, radio, digital, gaming, Times Square, unbranded work, brand planning, and MLR review",
+        "Translated client and brand strategy into briefs, creative feedback, production requirements, timelines, and MLR-ready deliverables across account, creative, UX, and development teams"
+      ]
+    },
+    "sourceBulletIds": {
+      "hedgehox": [
+        "hedgehox-01",
+        "hedgehox-02",
+        "hedgehox-03",
+        "hedgehox-04",
+        "hedgehox-05",
+        "hedgehox-06"
+      ],
+      "one-block-away": [
+        "one-block-away-01",
+        "one-block-away-02",
+        "one-block-away-03",
+        "one-block-away-04",
+        "one-block-away-05"
+      ],
+      "kinesso": [
+        "kinesso-01",
+        "kinesso-02",
+        "kinesso-03",
+        "kinesso-04"
+      ],
+      "omnicom": [
+        "omnicom-01",
+        "omnicom-02"
+      ],
+      "heartbeat": [
+        "heartbeat-01",
+        "heartbeat-02",
+        "heartbeat-03"
+      ],
+      "account-management": [
+        "account-management-01",
+        "account-management-02",
+        "account-management-03"
+      ]
+    }
+  },
+  "hero": {
+    "eyebrow": "Media & AdTech Account Manager",
+    "tags": [
+      "Account leadership",
+      "Campaign coordination",
+      "Marketing analytics"
+    ],
+    "intro": "I've spent 7+ years managing Fortune 500 healthcare accounts and $2M-$50M+ budgets. For this role, I would bring account leadership, integrated campaigns, and Kinesso marketing analytics to seller support, campaign handoffs, and reporting. That work includes TV, radio, digital, gaming, and high-visibility campaigns, plus enterprise products used by 7,000+ people across 22 brands and current AI workflow delivery."
+  },
+  "contact": {
+    "prompt": "Hiring an account manager who can take campaign coordination off sellers' plates and keep clients, creative, operations, and analytics aligned? Email is the fastest way to reach me.",
+    "signoff": "Account leadership · campaign delivery · marketing analytics"
+  },
+  "copyReview": {
+    "humanizerVersion": "2.2.0",
+    "mode": "surface-only",
+    "status": "passed",
+    "reviewedAt": "2026-07-28T17:27:07.738Z",
+    "copySha256": "4f04943bb8578ff3878afff63598858f7b8b041907ed325364288cc3b1c4a381",
+    "preserved": [
+      "content",
+      "structure",
+      "claims",
+      "ending"
+    ],
+    "rewriteAuthorized": false,
+    "reviewMethod": "humanizer-skill",
+    "semanticPassAttested": true,
+    "staticChecksPassed": true,
+    "finalAntiAiPass": true,
+    "remainingTells": []
+  },
+  "constraints": {
+    "doNotClaim": [
+      "Direct Salesforce or CRM administration",
+      "Direct RFP response ownership",
+      "Direct advertising sales organization support",
+      "Programmatic campaign operations",
+      "Retail media ownership",
+      "Campaign pacing, optimization, or attribution ownership",
+      "Media inventory planning, targeting, or budget scenarios",
+      "Renewal, upsell, or cross-sell targets",
+      "Billing or invoice ownership",
+      "Raleigh location confirmed eligible",
+      "Early-career professional"
+    ],
+    "blockedTerms": [
+      "Salesforce administrator",
+      "programmatic media buyer",
+      "owned campaign attribution",
+      "owned renewals",
+      "owned billing",
+      "confirmed Raleigh eligibility"
+    ]
+  },
+  "privacy": {
+    "publicSafe": true,
+    "notes": "Contains only the public job description and sanitized resume and portfolio evidence. It excludes recruiter details, application answers, compensation boundaries, and private eligibility information."
+  },
+  "qa": {
+    "status": "qa-passed",
+    "builtAt": "2026-07-28T17:27:19.318Z",
+    "configInputSha256": "d7035bc4b9f0df2203c46a0d3baee75a671b122794d573e77ebc6a4bf486d3d8",
+    "sourceResumeSha256": "375cc6566f5bbad5b95be9da551dfe87824378fb252222409d29ef32d334ca25",
+    "resumeFoundation": {
+      "id": "wally-mostafa-resume-2026-07-03",
+      "sourcePdfSha256": "f9b05b6c3c134262b1af6c5734363daf4385cf335407a139779a37d138adf1aa"
+    },
+    "artifactHashes": {
+      "routeSha256": "4a267a41bbba45a8bbadf37f24eace48949601addc5da904b451db7175f077a4",
+      "resumePdfSha256": "8e25afd44ba9318ebd3dc4cd1060bcf0e3538423d4e5337617308548d159651a",
+      "scopedProjectSha256": {}
+    },
+    "renderer": {
+      "browser": {
+        "name": "chrome-headless-shell",
+        "version": "Google Chrome for Testing 149.0.7827.55"
+      },
+      "htmlPath": "tmp/tailored-resumes/media-adtech-account-manager.html",
+      "pdfPath": "output/pdf/Wally-Mostafa-Media-AdTech-Account-Manager-Resume.pdf"
+    },
+    "ats": {
+      "ok": true,
+      "pdfPath": "output/pdf/Wally-Mostafa-Media-AdTech-Account-Manager-Resume.pdf",
+      "pageCount": 2,
+      "fileSize": 133166,
+      "annotations": [
+        {
+          "page": 1,
+          "uri": "mailto:wmostafa12@gmail.com"
+        },
+        {
+          "page": 1,
+          "uri": "https://linkedin.com/in/wallymo"
+        },
+        {
+          "page": 1,
+          "uri": "https://wallymo.github.io/media-adtech-account-manager/"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/6748"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/4629"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.red-dot.org/project/dxa-digital-experience-audit-55219"
+        }
+      ],
+      "coverage": [
+        {
+          "id": "relevant-experience",
+          "requirement": "Bring 1–2 years of professional or internship experience in media sales support, account management, customer success, sales operations, or advertising and marketing services.",
+          "priority": "hard-gate",
+          "evidenceStatus": "direct",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "7+ years",
+            "account management"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "major-metro-location",
+          "requirement": "Be based in a major metropolitan city like New York, Chicago, Detroit, or Los Angeles.",
+          "priority": "hard-gate",
+          "evidenceStatus": "adjacent",
+          "matchMode": "contextual",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "Raleigh, NC"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "education",
+          "requirement": "Hold a BA or BS degree from an accredited university or equivalent professional experience.",
+          "priority": "hard-gate",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "Rutgers University"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "presale-proposals-presentations",
+          "requirement": "Coordinate RFP responses and proposals, customize client presentations, and support sales planning and account preparation.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "contextual",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "briefs",
+            "presentation-ready client outputs"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "client-intelligence",
+          "requirement": "Research client priorities, competitive activity, campaign history, risks, growth opportunities, and industry trends for account conversations.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "competitive audits",
+            "channel scoring",
+            "benchmarks"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "campaign-management",
+          "requirement": "Coordinate campaign launches, handoffs, pacing, optimization requests, reporting, measurement, attribution, and client issue resolution.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "contextual",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "integrated campaigns",
+            "timelines",
+            "campaign experiences"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "creative-project-management",
+          "requirement": "Coordinate creative assets, approvals, version control, timelines, deliverables, milestones, and cross-functional execution.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "creative feedback",
+            "production requirements",
+            "review routing"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "post-sale-growth-finance",
+          "requirement": "Prepare campaign recaps, track renewals and growth opportunities, and coordinate billing and invoice follow-up.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "contextual",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "$2M-$50M+ budgets",
+            "scope changes"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "cross-functional-client-ownership",
+          "requirement": "Work independently, manage competing priorities, communicate clearly, and build trusted relationships across sales, planning, operations, analytics, finance, creative, and clients.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "cross-functional delivery",
+            "client iteration"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "office-and-ai-tools",
+          "requirement": "Use Microsoft Office, particularly Excel and PowerPoint, plus AI tools.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "contextual",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "AI",
+            "data visualization",
+            "presentation-ready"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "crm-platform",
+          "requirement": "Maintain CRM opportunities, account records, and pipeline information, with Salesforce exposure preferred.",
+          "priority": "preferred",
+          "evidenceStatus": "none",
+          "matchMode": "not-supported",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "Salesforce",
+            "CRM"
+          ]
+        },
+        {
+          "id": "media-advertising-operations",
+          "requirement": "Bring familiarity with advertising sales, campaign delivery, media planning, digital media, programmatic advertising, retail media, video advertising, or ad operations.",
+          "priority": "preferred",
+          "evidenceStatus": "adjacent",
+          "matchMode": "contextual",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "marketing analytics",
+            "TV",
+            "radio",
+            "digital"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "measurement-attribution-analytics",
+          "requirement": "Work with campaign measurement, attribution, reporting, analytics partners, and proof-of-performance deliverables.",
+          "priority": "preferred",
+          "evidenceStatus": "adjacent",
+          "matchMode": "contextual",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "channel scoring",
+            "benchmarks",
+            "recommendations"
+          ],
+          "missingTerms": []
+        }
+      ],
+      "failures": [],
+      "warnings": []
+    },
+    "humanizer": {
+      "status": "passed",
+      "version": "2.2.0",
+      "mode": "surface-only",
+      "reviewedAt": "2026-07-28T17:27:07.738Z",
+      "copySha256": "4f04943bb8578ff3878afff63598858f7b8b041907ed325364288cc3b1c4a381",
+      "reviewMethod": "humanizer-skill",
+      "semanticPassAttested": true,
+      "staticChecksPassed": true
+    },
+    "route": {
+      "viewports": [
+        {
+          "name": "desktop",
+          "screenshot": "tmp/qa/media-adtech-account-manager/desktop.png",
+          "errors": []
+        },
+        {
+          "name": "mobile",
+          "screenshot": "tmp/qa/media-adtech-account-manager/mobile.png",
+          "errors": []
+        }
+      ],
+      "errors": []
+    }
+  }
+}
