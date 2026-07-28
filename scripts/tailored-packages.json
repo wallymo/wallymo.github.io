@@ -1539,9 +1539,26 @@
         "project-02.html"
       ],
       "resumePdfPath": "output/pdf/Wally-Mostafa-Media-AdTech-Account-Manager-Resume.pdf",
-      "publishStatus": "local-only",
+      "publishStatus": "live-verified",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-07-28T17:27:19.318Z"
+      "builtAt": "2026-07-28T17:27:19.318Z",
+      "verification": {
+        "verifiedAt": "2026-07-28T17:31:55.179Z",
+        "routeUrl": "https://wallymo.github.io/media-adtech-account-manager/",
+        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-Media-AdTech-Account-Manager-Resume.pdf",
+        "configUrl": "https://wallymo.github.io/scripts/packages/media-adtech-account-manager.json",
+        "projectUrls": [
+          "https://wallymo.github.io/project-06.html",
+          "https://wallymo.github.io/project-03.html",
+          "https://wallymo.github.io/project-02.html"
+        ],
+        "configSha256": "96238624651e760d5b0d7bd739bd4295b2c189fe8c7a180209c1a37d0392b2a7",
+        "pdfSha256": "8e25afd44ba9318ebd3dc4cd1060bcf0e3538423d4e5337617308548d159651a",
+        "routeSha256": "4a267a41bbba45a8bbadf37f24eace48949601addc5da904b451db7175f077a4",
+        "scopedProjectSha256": {},
+        "configInputSha256": "d7035bc4b9f0df2203c46a0d3baee75a671b122794d573e77ebc6a4bf486d3d8",
+        "qaBuiltAt": "2026-07-28T17:27:19.318Z"
+      }
     },
     {
       "workflowVersion": 2,
