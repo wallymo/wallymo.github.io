@@ -1,0 +1,779 @@
+{
+  "workflowVersion": 2,
+  "contractRevision": 5,
+  "slug": "real-chemistry-21grams-account-supervisor",
+  "roleTitle": "21GRAMS Account Supervisor",
+  "artifactStem": "Real-Chemistry-21GRAMS-Account-Supervisor",
+  "fitClass": "strong",
+  "routeMode": "canonical-projects",
+  "selectedProjects": [
+    "project-01.html",
+    "project-08.html",
+    "project-06.html"
+  ],
+  "job": {
+    "company": "Real Chemistry / 21GRAMS",
+    "roleTitle": "Account Supervisor",
+    "jobId": "5262885008",
+    "jobUrl": "https://job-boards.greenhouse.io/realchemistry/jobs/5262885008",
+    "sourceChannel": "company-careers",
+    "dateCaptured": "2026-07-28",
+    "location": "Remote - USA; North Carolina; Boston; Carmel; Chicago; Lambertville; Pennsylvania; New York",
+    "atsVendor": "greenhouse",
+    "rawJd": "Real Chemistry is looking for an Account Supervisor to join its 21GRAMS healthcare advertising agency. The role can be remote within the United States or based in a U.S. office. The Account Supervisor serves as a primary contact for assigned client accounts, builds client relationships, responds to client questions and concerns, develops strategies with clients and internal teams, and manages day-to-day project operations across timelines, budgets, and resource allocation. The role leads regular client meetings and presentations, reviews progress and upcoming work, identifies new opportunities, and mentors junior team members. The company expects adaptable, accountable, solutions-oriented work, strong prioritization, curiosity, and responsible use of AI. Qualifications include a bachelor's degree in Business Administration, Marketing, Advertising, or a related field; 2-3 years of Account Management experience; a strong understanding of pharmaceutical marketing regulations and FDA guidelines; leadership of cross-functional teams; strong written and verbal communication; detail, organization, and time management; and Microsoft Office proficiency. The posted pay range is $95,000-$110,000. Employees within one hour of a Real Chemistry office are expected in person two days per week; employees without a nearby office may work remotely and meet periodically for team collaboration."
+  },
+  "classification": {
+    "targetLane": "client-account-delivery",
+    "evidenceMode": "resume-primary",
+    "primarySource": "The resume proves 7+ years of Fortune 500 pharma and healthcare account management, $2M-$50M+ budgets, FCB Health account leadership, brand planning, integrated campaigns, briefs, timelines, and MLR review.",
+    "supportingSource": "The portfolio adds current proof in regulated pharma workflows, biopharma communication, client-facing recommendations, and AI-assisted agency operations.",
+    "hardGateStatus": "pass",
+    "hardGates": [
+      {
+        "gate": "Work within the United States in an eligible remote or listed location",
+        "status": "pass",
+        "requirementId": "location-eligibility",
+        "evidence": "The resume lists Raleigh, North Carolina, and the posting explicitly includes North Carolina and Remote - USA."
+      }
+    ]
+  },
+  "requirements": [
+    {
+      "id": "location-eligibility",
+      "text": "Work within the United States in an eligible remote or listed location.",
+      "priority": "hard-gate",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The resume lists Raleigh, North Carolina, which is included in the posting's eligible locations."
+      ],
+      "proofIds": [],
+      "destinations": [
+        "application-answer"
+      ],
+      "resumeTerms": [
+        "Raleigh, NC"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "client-account-leadership",
+      "text": "Serve as the primary contact for assigned client accounts, build relationships, and address client questions or concerns.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The resume documents 7+ years managing Fortune 500 pharma and healthcare clients with $2M-$50M+ budgets.",
+        "FCB Health experience includes account leadership on the agency's largest pharma account."
+      ],
+      "proofIds": [
+        "account-management-01",
+        "account-management-02",
+        "account-management-03"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "Client & Account Leadership",
+        "Fortune 500 pharma and healthcare accounts",
+        "client briefs"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "client-and-team-strategy",
+      "text": "Develop strategies with clients and internal teams that answer client goals and objectives.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The resume shows brand planning, integrated campaign leadership, and translation of client and brand strategy into briefs and delivery requirements.",
+        "Healthcare UX work translated stakeholder input and user needs into product and campaign direction."
+      ],
+      "proofIds": [
+        "account-management-02",
+        "account-management-03",
+        "heartbeat-01"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "client strategy",
+        "brand planning",
+        "Healthcare Marketing & Brand Strategy"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "project-budget-resource-delivery",
+      "text": "Manage day-to-day client projects across timelines, budgets, resource allocation, and quality.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The resume documents $2M-$50M+ account budgets plus briefs, production requirements, timelines, and cross-functional delivery.",
+        "Kinesso leadership scaled a distributed team from 2 to 30 people."
+      ],
+      "proofIds": [
+        "account-management-01",
+        "account-management-03",
+        "kinesso-01"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience"
+      ],
+      "resumeTerms": [
+        "$2M-$50M+ budgets",
+        "timelines",
+        "Program & Project Delivery"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "client-meetings-and-opportunity",
+      "text": "Lead client meetings and presentations, review progress, discuss upcoming initiatives, and identify opportunities.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Long-term client account leadership supports regular client communication and progress management.",
+        "The Digital Experience Audit produced presentation-ready client recommendations and current POC work includes demo narratives and client iteration."
+      ],
+      "proofIds": [
+        "account-management-01",
+        "kinesso-03",
+        "one-block-away-01"
+      ],
+      "destinations": [
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "Fortune 500 pharma and healthcare clients",
+        "presentation-ready client outputs",
+        "client iteration"
+      ],
+      "matchMode": "contextual"
+    },
+    {
+      "id": "junior-team-mentoring",
+      "text": "Mentor and coach junior team members and support their professional growth.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "The resume directly proves senior leadership through scaling a distributed product-design organization from 2 to 30 people, but it does not spell out formal mentoring duties."
+      ],
+      "proofIds": [
+        "kinesso-01"
+      ],
+      "destinations": [
+        "skills",
+        "experience"
+      ],
+      "resumeTerms": [
+        "Scaled product design from 2 to 30 people",
+        "cross-functional delivery"
+      ],
+      "matchMode": "contextual"
+    },
+    {
+      "id": "account-management-experience",
+      "text": "Bring 2-3 years of Account Management experience.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The resume documents 7+ years of direct pharma and healthcare account management."
+      ],
+      "proofIds": [
+        "account-management-01"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience"
+      ],
+      "resumeTerms": [
+        "7+ years managing",
+        "Account Management & Client Strategy"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "pharma-regulatory-knowledge",
+      "text": "Understand pharmaceutical marketing regulations and FDA guidelines.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The resume documents MLR review at FCB Health and current pharma tools for claim review, submission capture, and FDA signal monitoring."
+      ],
+      "proofIds": [
+        "account-management-02",
+        "hedgehox-02",
+        "hedgehox-03"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "FDA",
+        "MLR",
+        "Regulated Healthcare & Client Delivery"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "cross-functional-leadership",
+      "text": "Lead and motivate cross-functional teams.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The resume shows leadership across account, strategy, creative, UX, engineering, and development teams, plus team growth from 2 to 30 people."
+      ],
+      "proofIds": [
+        "kinesso-01",
+        "account-management-03",
+        "heartbeat-03"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience"
+      ],
+      "resumeTerms": [
+        "cross-functional delivery",
+        "team coordination",
+        "Scaled product design from 2 to 30 people"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "communication-organization",
+      "text": "Communicate complex ideas clearly and manage multiple priorities with strong organization and time management.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The resume shows client-to-team translation through briefs, feedback, production requirements, timelines, and build-ready recommendations."
+      ],
+      "proofIds": [
+        "account-management-03",
+        "heartbeat-03",
+        "hedgehox-03"
+      ],
+      "destinations": [
+        "skills",
+        "experience"
+      ],
+      "resumeTerms": [
+        "Translated client and brand strategy",
+        "timelines",
+        "build-ready handoff"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "bachelors-degree",
+      "text": "Hold a bachelor's degree in Business Administration, Marketing, Advertising, or a related field.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "ambiguous",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "The resume lists a BA in Labor Studies and Employee Relations from Rutgers University plus 15 years of directly relevant account, marketing, and client work."
+      ],
+      "proofIds": [
+        "account-management-01"
+      ],
+      "destinations": [
+        "experience"
+      ],
+      "resumeTerms": [
+        "BA Labor Studies & Employee Relations",
+        "Rutgers University"
+      ],
+      "matchMode": "contextual"
+    },
+    {
+      "id": "microsoft-office",
+      "text": "Use Microsoft Office proficiently.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "proofIds": [],
+      "destinations": [
+        "application-answer"
+      ],
+      "resumeTerms": [
+        "Microsoft Office proficiency"
+      ],
+      "matchMode": "not-supported"
+    }
+  ],
+  "fitGate": {
+    "supportedOverlap": [
+      "7+ years of direct Fortune 500 pharma and healthcare account management with $2M-$50M+ budgets.",
+      "Account leadership on FCB Health's largest pharma business across integrated campaigns, brand planning, and MLR review.",
+      "Direct responsibility for briefs, creative feedback, production requirements, timelines, and regulated cross-functional delivery.",
+      "Current work in pharma claim review, FDA monitoring, scope workflows, and client-led product delivery.",
+      "Senior team leadership through scaling a distributed organization from 2 to 30 people."
+    ],
+    "unsupportedRequirements": [
+      "Microsoft Office proficiency is not stated in the public resume or portfolio."
+    ],
+    "actualMismatches": [],
+    "missingEvidence": [
+      "Formal junior-team mentoring duties are not stated, even though the resume proves senior team leadership.",
+      "The public evidence does not name Microsoft Office."
+    ],
+    "coverLetterBridge": {
+      "status": "not-needed",
+      "rationale": "The resume already proves the role's operating center through direct pharma account leadership, large client budgets, integrated delivery, brand planning, and MLR review. A cover letter is not needed to make the fit credible."
+    },
+    "recommendation": "Proceed as a strong fit. Lead with direct pharma account leadership, client budgets, regulated delivery, and cross-functional execution. Keep Microsoft Office and formal junior mentoring as unverified details instead of adding them to the resume."
+  },
+  "positioning": {
+    "laneId": "client-account-delivery",
+    "targetIdentity": "Healthcare account and client strategy leader",
+    "employerNeed": "Own pharma client relationships and keep strategy, budgets, timelines, and internal teams aligned.",
+    "bridgeType": "direct",
+    "applicationStrategy": "direct",
+    "bridgeThesis": "pharma account leadership",
+    "proofIds": [
+      "account-management-01",
+      "account-management-02",
+      "account-management-03"
+    ],
+    "remainingGap": null
+  },
+  "resume": {
+    "foundationId": "wally-mostafa-resume-2026-07-03",
+    "summary": "Healthcare account and client strategy leader with 15 years across pharma communications, regulated delivery, UX, and AI implementation. I bring 7+ years of pharma account leadership with Fortune 500 clients and $2M-$50M+ budgets, including brand planning, integrated campaigns, briefs, timelines, cross-functional teams, and MLR review. I turn client priorities into clear plans and keep delivery steady.",
+    "skillIds": [
+      "client-account-leadership",
+      "regulated-healthcare-client-delivery",
+      "program-project-delivery",
+      "healthcare-marketing-strategy"
+    ],
+    "skills": [
+      {
+        "label": "Client & Account Leadership",
+        "description": "Fortune 500 pharma and healthcare accounts, $2M-$50M+ budgets, client briefs, brand planning, and cross-functional delivery"
+      },
+      {
+        "label": "Regulated Healthcare & Client Delivery",
+        "description": "11 years across pharma/healthcare communications, FDA/HIPAA/MLR workflows, HCP/patient UX, client workshops, and stakeholder adoption"
+      },
+      {
+        "label": "Program & Project Delivery",
+        "description": "Scoping, requirements, timelines, review routing, team coordination, risk visibility, and build-ready handoff across product, design, and client teams"
+      },
+      {
+        "label": "Healthcare Marketing & Brand Strategy",
+        "description": "Brand planning, campaign and digital strategy, MLR review, patient and HCP experiences, and regulated multi-channel delivery"
+      }
+    ],
+    "roles": {
+      "hedgehox": [
+        "Secured an investor for proprietary Claims Detection software by building the functional POC, shaping the demo story, and iterating with investors",
+        "Designed Claims Detector workflows that identify promotional claims, surface evidence gaps, and pre-populate audit-ready annotations before MLR submission",
+        "Converted pharma agency needs into AI tools for MLR claim review, brief intake, scoping, review routing, submission capture, and FDA signal monitoring",
+        "Designed the full Xenagos Bio startup biopharma website from scratch, including investor-facing structure, scientific positioning, visual direction, and hidden design-system handoff",
+        "Built Scope Generator for pharma agency finance and operations teams to manage regional rate cards, brands, sub-brands, and natural-language scope changes",
+        "Developed FDA Warning Tool concepts that connect warning-letter patterns to content-risk guidance for pharma teams"
+      ],
+      "one-block-away": [
+        "Build client-led AI POCs that turn unclear business questions into testable product surfaces, demo flows, and roadmap decisions",
+        "Built ListingPal's AI listing-generation POC and landing page, turning basic property inputs into listing copy, social posts, ad copy, styling direction, and MLS/SEO-ready language in under 90 seconds",
+        "Built WeReady's Bailey Intelligence dashboard, translating founder inputs, GitHub signals, source health, risk scoring, and evidence trails into startup-readiness workflows",
+        "Own product strategy, UX, AI workflow design, front-end build, backend logic, demo readiness, and client iteration from first ask through working prototype",
+        "Currently building the website and sponsor strategy for a Tunisia youth soccer program, positioning the project for player advancement, community support, and donor outreach"
+      ],
+      "kinesso": [
+        "Scaled product design from 2 to 30 people across the US and Poland for enterprise analytics used by 7,000+ users across 22 white-label brands",
+        "Led UX and design-system strategy for MIE data visualization, dashboard building, brand theming, and reusable analytics components",
+        "Built the Digital Experience Audit workflow for channel scoring, benchmarks, recommendations, visualization, and presentation-ready client outputs",
+        "Design-system and analytics work earned 5 Indigo Gold, 4 Indigo Silver, and Red Dot recognition"
+      ],
+      "omnicom": [
+        "Supported oncology accounts as a freelance UX designer, combining UX design and account-management experience to strengthen regulated healthcare work",
+        "Championed UX best practices across account, strategy, creative, and delivery conversations, translating brand goals into clearer user flows, content structure, and digital recommendations"
+      ],
+      "heartbeat": [
+        "Led UX research and experience strategy for pharma and healthcare work, translating stakeholder input, competitive audits, and user needs into digital product direction",
+        "Created journey maps, site maps, user flows, wireframes, and prototypes for patient, HCP, and internal brand-team experiences across regulated healthcare programs",
+        "Partnered with strategy, creative, account, and engineering teams to move UX recommendations from research findings into build-ready product and campaign experiences"
+      ],
+      "account-management": [
+        "7+ years managing Fortune 500 pharma and healthcare clients with $2M-$50M+ budgets across CNS/neurology, psychiatry, cardiovascular/metabolic, and sleep/wakefulness brands including NUVIGIL, Namenda XR, Lipitor, and Zoloft",
+        "One of two account consumer leads on FCB Health's largest pharma account across all verticals: TV, radio, digital, gaming, Times Square, unbranded campaigns, brand planning, and MLR review",
+        "Translated client and brand strategy into briefs, creative feedback, production requirements, timelines, and MLR-ready deliverables across account, creative, UX, and development teams"
+      ]
+    },
+    "sourceBulletIds": {
+      "hedgehox": [
+        "hedgehox-01",
+        "hedgehox-02",
+        "hedgehox-03",
+        "hedgehox-04",
+        "hedgehox-05",
+        "hedgehox-06"
+      ],
+      "one-block-away": [
+        "one-block-away-01",
+        "one-block-away-02",
+        "one-block-away-03",
+        "one-block-away-04",
+        "one-block-away-05"
+      ],
+      "kinesso": [
+        "kinesso-01",
+        "kinesso-02",
+        "kinesso-03",
+        "kinesso-04"
+      ],
+      "omnicom": [
+        "omnicom-01",
+        "omnicom-02"
+      ],
+      "heartbeat": [
+        "heartbeat-01",
+        "heartbeat-02",
+        "heartbeat-03"
+      ],
+      "account-management": [
+        "account-management-01",
+        "account-management-02",
+        "account-management-03"
+      ]
+    }
+  },
+  "hero": {
+    "eyebrow": "Real Chemistry / 21GRAMS | Account Supervisor",
+    "tags": [
+      "Pharma account leadership",
+      "Client strategy and delivery",
+      "FDA and MLR experience"
+    ],
+    "intro": "I bring 7+ years of pharma account leadership with Fortune 500 clients and $2M-$50M+ budgets, including FCB Health's largest pharma account. I have turned client and brand priorities into briefs, timelines, integrated campaigns, cross-functional delivery, and MLR-reviewed work. For 21GRAMS, that experience helps me stay close to clients and keep regulated healthcare work moving without losing the human point of the assignment."
+  },
+  "contact": {
+    "prompt": "If 21GRAMS needs an Account Supervisor who knows pharma clients, regulated delivery, budgets, and cross-functional agency work, email is the fastest way to reach me.",
+    "signoff": "Pharma account leadership | client strategy | regulated delivery"
+  },
+  "copyReview": {
+    "humanizerVersion": "2.2.0",
+    "mode": "surface-only",
+    "status": "passed",
+    "reviewedAt": "2026-07-28T17:47:43.391Z",
+    "copySha256": "4ecaf33fa41426d18ad3b05ef34a77e8085e1d7a91cb58f7dbe5b282451d83da",
+    "preserved": [
+      "content",
+      "structure",
+      "claims",
+      "ending"
+    ],
+    "rewriteAuthorized": false,
+    "reviewMethod": "humanizer-skill",
+    "semanticPassAttested": true,
+    "staticChecksPassed": true,
+    "finalAntiAiPass": true,
+    "remainingTells": []
+  },
+  "constraints": {
+    "doNotClaim": [
+      "Microsoft Office proficiency",
+      "Formal junior-team mentoring duties",
+      "A prior Account Supervisor title",
+      "A medical, clinical, or scientific degree",
+      "Sales quota ownership",
+      "Formal direct-report counts"
+    ],
+    "blockedTerms": [
+      "Microsoft Office expert",
+      "mentored junior account staff",
+      "former Account Supervisor",
+      "clinical expert",
+      "sales quota",
+      "managed direct reports"
+    ]
+  },
+  "privacy": {
+    "publicSafe": true,
+    "notes": "Contains only the public job posting and sanitized evidence from the public resume and portfolio. It excludes recruiter contact details, application answers, compensation decisions, and private eligibility information."
+  },
+  "qa": {
+    "status": "qa-passed",
+    "builtAt": "2026-07-28T17:51:01.175Z",
+    "configInputSha256": "031cd19325a995c61f7ba3dad23d52f9a599d40a2f2a596bced5760320cb8114",
+    "sourceResumeSha256": "20a50732bd9a83547afc022fa51ab7c232c7f2fe56cf36ac74558cbecf6cdc75",
+    "resumeFoundation": {
+      "id": "wally-mostafa-resume-2026-07-03",
+      "sourcePdfSha256": "f9b05b6c3c134262b1af6c5734363daf4385cf335407a139779a37d138adf1aa"
+    },
+    "artifactHashes": {
+      "routeSha256": "0fbbfd2bd5b3615155dc1191efef7cb24d02130d1e8582114b3f0f45a4e5e59b",
+      "resumePdfSha256": "f05b980d4cebfc97af45b7798667bbc871b84f2ec5f4ef2e022f007ed661f339",
+      "scopedProjectSha256": {}
+    },
+    "renderer": {
+      "browser": {
+        "name": "chrome-headless-shell",
+        "version": "Google Chrome for Testing 149.0.7827.55"
+      },
+      "htmlPath": "tmp/tailored-resumes/real-chemistry-21grams-account-supervisor.html",
+      "pdfPath": "output/pdf/Wally-Mostafa-Real-Chemistry-21GRAMS-Account-Supervisor-Resume.pdf"
+    },
+    "ats": {
+      "ok": true,
+      "pdfPath": "output/pdf/Wally-Mostafa-Real-Chemistry-21GRAMS-Account-Supervisor-Resume.pdf",
+      "pageCount": 2,
+      "fileSize": 134439,
+      "annotations": [
+        {
+          "page": 1,
+          "uri": "mailto:wmostafa12@gmail.com"
+        },
+        {
+          "page": 1,
+          "uri": "https://linkedin.com/in/wallymo"
+        },
+        {
+          "page": 1,
+          "uri": "https://wallymo.github.io/real-chemistry-21grams-account-supervisor/"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/6748"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/4629"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.red-dot.org/project/dxa-digital-experience-audit-55219"
+        }
+      ],
+      "coverage": [
+        {
+          "id": "location-eligibility",
+          "requirement": "Work within the United States in an eligible remote or listed location.",
+          "priority": "hard-gate",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "Raleigh, NC"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "client-account-leadership",
+          "requirement": "Serve as the primary contact for assigned client accounts, build relationships, and address client questions or concerns.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "Client & Account Leadership",
+            "Fortune 500 pharma and healthcare accounts",
+            "client briefs"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "client-and-team-strategy",
+          "requirement": "Develop strategies with clients and internal teams that answer client goals and objectives.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "client strategy",
+            "brand planning",
+            "Healthcare Marketing & Brand Strategy"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "project-budget-resource-delivery",
+          "requirement": "Manage day-to-day client projects across timelines, budgets, resource allocation, and quality.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "$2M-$50M+ budgets",
+            "timelines",
+            "Program & Project Delivery"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "client-meetings-and-opportunity",
+          "requirement": "Lead client meetings and presentations, review progress, discuss upcoming initiatives, and identify opportunities.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "contextual",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "Fortune 500 pharma and healthcare clients",
+            "presentation-ready client outputs",
+            "client iteration"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "junior-team-mentoring",
+          "requirement": "Mentor and coach junior team members and support their professional growth.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "contextual",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "Scaled product design from 2 to 30 people",
+            "cross-functional delivery"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "account-management-experience",
+          "requirement": "Bring 2-3 years of Account Management experience.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "7+ years managing",
+            "Account Management & Client Strategy"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "pharma-regulatory-knowledge",
+          "requirement": "Understand pharmaceutical marketing regulations and FDA guidelines.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "FDA",
+            "MLR",
+            "Regulated Healthcare & Client Delivery"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "cross-functional-leadership",
+          "requirement": "Lead and motivate cross-functional teams.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "cross-functional delivery",
+            "team coordination",
+            "Scaled product design from 2 to 30 people"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "communication-organization",
+          "requirement": "Communicate complex ideas clearly and manage multiple priorities with strong organization and time management.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "Translated client and brand strategy",
+            "timelines",
+            "build-ready handoff"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "bachelors-degree",
+          "requirement": "Hold a bachelor's degree in Business Administration, Marketing, Advertising, or a related field.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "contextual",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "BA Labor Studies & Employee Relations",
+            "Rutgers University"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "microsoft-office",
+          "requirement": "Use Microsoft Office proficiently.",
+          "priority": "core",
+          "evidenceStatus": "none",
+          "matchMode": "not-supported",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "Microsoft Office proficiency"
+          ]
+        }
+      ],
+      "failures": [],
+      "warnings": []
+    },
+    "humanizer": {
+      "status": "passed",
+      "version": "2.2.0",
+      "mode": "surface-only",
+      "reviewedAt": "2026-07-28T17:47:43.391Z",
+      "copySha256": "4ecaf33fa41426d18ad3b05ef34a77e8085e1d7a91cb58f7dbe5b282451d83da",
+      "reviewMethod": "humanizer-skill",
+      "semanticPassAttested": true,
+      "staticChecksPassed": true
+    },
+    "route": {
+      "viewports": [
+        {
+          "name": "desktop",
+          "screenshot": "tmp/qa/real-chemistry-21grams-account-supervisor/desktop.png",
+          "errors": []
+        },
+        {
+          "name": "mobile",
+          "screenshot": "tmp/qa/real-chemistry-21grams-account-supervisor/mobile.png",
+          "errors": []
+        }
+      ],
+      "errors": []
+    }
+  }
+}

@@ -2260,6 +2260,30 @@
       }
     },
     {
+      "workflowVersion": 2,
+      "contractRevision": 5,
+      "slug": "real-chemistry-21grams-account-supervisor",
+      "roleTitle": "21GRAMS Account Supervisor",
+      "artifactStem": "Real-Chemistry-21GRAMS-Account-Supervisor",
+      "configPath": "scripts/packages/real-chemistry-21grams-account-supervisor.json",
+      "targetLane": "client-account-delivery",
+      "evidenceMode": "resume-primary",
+      "fitClass": "strong",
+      "positioningLane": "client-account-delivery",
+      "bridgeType": "direct",
+      "applicationStrategy": "direct",
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-01.html",
+        "project-08.html",
+        "project-06.html"
+      ],
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Real-Chemistry-21GRAMS-Account-Supervisor-Resume.pdf",
+      "publishStatus": "local-only",
+      "qaStatus": "qa-passed",
+      "builtAt": "2026-07-28T17:51:01.175Z"
+    },
+    {
       "slug": "real-chemistry-account-manager",
       "roleTitle": "Real Chemistry Account Manager",
       "fitClass": "strong",
