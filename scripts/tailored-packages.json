@@ -2208,6 +2208,26 @@
       "publishStatus": "local-only"
     },
     {
+      "workflowVersion": 2,
+      "slug": "senior-design-researcher-emerging-technology",
+      "roleTitle": "Senior Design Researcher: Innovation & Emerging Technology",
+      "artifactStem": "Senior-Design-Researcher-Emerging-Technology",
+      "configPath": "scripts/packages/senior-design-researcher-emerging-technology.json",
+      "targetLane": "senior-design-research-for-emerging-technology-and-product-strategy",
+      "evidenceMode": "portfolio-primary",
+      "fitClass": "adjacent",
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-04.html",
+        "project-01.html",
+        "project-06.html"
+      ],
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Senior-Design-Researcher-Emerging-Technology-Resume.pdf",
+      "publishStatus": "local-only",
+      "qaStatus": "qa-passed",
+      "builtAt": "2026-07-28T00:22:30.316Z"
+    },
+    {
       "slug": "senior-enterprise-customer-success-manager",
       "roleTitle": "Senior Customer Success Manager — Enterprise Document Management",
       "fitClass": "adjacent",

@@ -1,0 +1,551 @@
+{
+  "workflowVersion": 2,
+  "contractRevision": 4,
+  "slug": "senior-design-researcher-emerging-technology",
+  "roleTitle": "Senior Design Researcher: Innovation & Emerging Technology",
+  "artifactStem": "Senior-Design-Researcher-Emerging-Technology",
+  "fitClass": "adjacent",
+  "routeMode": "canonical-projects",
+  "selectedProjects": [
+    "project-04.html",
+    "project-01.html",
+    "project-06.html"
+  ],
+  "job": {
+    "company": "Confidential consumer technology client",
+    "roleTitle": "Senior Design Researcher - Innovation & Emerging Technology",
+    "sourceChannel": "chat-pasted-jd",
+    "dateCaptured": "2026-07-27",
+    "location": "Remote or hybrid; some international travel required",
+    "atsVendor": "unknown",
+    "rawJd": "About the job. Title: Senior Design Researcher - Innovation & Emerging Technology. Industry: Consumer Technology / AI / Product Design & Research. Location: Remote/Hybrid (Some International Travel Required). Duration: Contract (Leave Coverage). Hourly Rate: $80. We're seeking an experienced Senior Design Researcher to join an innovative research team focused on understanding how culture, human behavior, and emerging technologies will shape the future of products and services. This role is ideal for someone who thrives in ambiguity, enjoys uncovering future trends, and can transform research findings into compelling stories that influence business and product strategy. Key Responsibilities: Lead qualitative and generative research initiatives focused on emerging technologies, cultural shifts, and evolving customer needs. Synthesize research findings into actionable insights, frameworks, and strategic recommendations. Create visually compelling presentations, reports, and storytelling artifacts using Figma and AI-powered tools. Facilitate workshops and collaborate with product, design, and research teams to bring insights to life. Conduct in-person and remote research, including ethnographic and contextual field studies. Translate long-term insights into near-term product opportunities and innovation roadmaps. Required Qualifications: 7+ years of experience in Design Research, Innovation Research, Strategic Foresight, or related fields. Strong expertise in qualitative research methods including ethnography, co-design, semiotics, and generative research. Exceptional written, verbal, and presentation communication skills. Proven ability to develop polished, visually engaging research deliverables and executive presentations. Experience influencing product strategy through research-driven insights. Bachelor's degree in HCI, Design Research, Social Sciences, or a related field. Preferred Qualifications: Experience researching AI, XR, AR/VR, connected devices, or digital products. Knowledge of future methodologies, trend forecasting, and emerging technology research. Experience working closely with design, engineering, and business stakeholders. Strong proficiency with Figma, AI tools, and visual storytelling techniques."
+  },
+  "classification": {
+    "targetLane": "senior-design-research-for-emerging-technology-and-product-strategy",
+    "evidenceMode": "portfolio-primary",
+    "primarySource": "portfolio",
+    "supportingSource": "resume",
+    "hardGateStatus": "pass",
+    "hardGates": [
+      {
+        "gate": "Seven or more years in design research, innovation research, strategic foresight, or a related field",
+        "status": "pass",
+        "evidence": "The portfolio and resume document UX research and experience strategy beginning in 2018, a research practice built across more than 20 enterprise products from 2020 through 2023, and current AI product discovery and testing work. The positioning does not claim seven years in a dedicated researcher title."
+      },
+      {
+        "gate": "Bachelor's degree in HCI, design research, social sciences, or a related field",
+        "status": "pass",
+        "evidence": "The resume lists a BA in Labor Studies and Employee Relations from Rutgers University, a related social-science field."
+      },
+      {
+        "gate": "Polished research deliverables and executive presentations",
+        "status": "pass",
+        "evidence": "The User Research case study shows Figma-based findings decks, reusable research reports, workshops, and roadshows. The Digital Audit case study shows strategy-ready recommendations, data visualization, executive presentations, and an awards story written and directed by Wally."
+      }
+    ]
+  },
+  "requirements": [
+    {
+      "id": "qualitative-generative-research",
+      "text": "Lead qualitative and generative research on human behavior, emerging technology, and changing customer needs.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Built a qualitative research discipline across more than 20 enterprise products using user interviews, Typeform surveys, Useberry usability testing, Heap behavioral analytics, workshops, beta groups, and standardized findings.",
+        "Led healthcare UX research that translated stakeholder input, competitive audits, patient needs, and healthcare-professional needs into digital product direction."
+      ],
+      "resumeTerms": [
+        "qualitative research",
+        "user interviews",
+        "workshops"
+      ]
+    },
+    {
+      "id": "culture-human-behavior-emerging-technology",
+      "text": "Study cultural shifts, human behavior, and emerging technologies to identify future product and service needs.",
+      "priority": "core",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "The research program recruited users across regions and experience levels to surface local behavior, expectations, and constraints.",
+        "Current work turns customer and regulated-workflow needs into AI products for claim review, content risk, scoping, routing, evidence review, and regulatory monitoring."
+      ],
+      "resumeTerms": [
+        "user needs",
+        "AI tools"
+      ]
+    },
+    {
+      "id": "synthesis-frameworks-strategy",
+      "text": "Synthesize research into actionable insights, frameworks, strategic recommendations, and product direction.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Standardized research reports made findings comparable across Audiences, Activation, Optimization, and Reporting and easier to turn into product decisions.",
+        "The Digital Experience Audit converted channel scoring, benchmarks, and audience insight into recommendations, visualizations, and presentation-ready client outputs."
+      ],
+      "resumeTerms": [
+        "research findings",
+        "strategic recommendations",
+        "product direction"
+      ]
+    },
+    {
+      "id": "visual-storytelling-figma-ai",
+      "text": "Create polished presentations, reports, and storytelling artifacts with Figma and AI-powered tools.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Created Figma research libraries, findings decks, reusable reports, and roadshow materials that helped teams understand and use research.",
+        "Built presentation-ready digital-audit outputs and wrote and directed the award-submission video that explained the product story."
+      ],
+      "resumeTerms": [
+        "Figma documentation",
+        "executive presentations"
+      ]
+    },
+    {
+      "id": "workshops-cross-functional-influence",
+      "text": "Facilitate workshops and influence product strategy with design, engineering, research, business, and senior stakeholders.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Led research roadshows and workshops across four product suites and adapted findings for product, design, engineering, and senior leadership.",
+        "Scaled a distributed product-design team from 2 to 30 while supporting enterprise analytics used by more than 7,000 people across 22 white-label brands."
+      ],
+      "resumeTerms": [
+        "research roadshows",
+        "product, design, engineering",
+        "senior leaders"
+      ]
+    },
+    {
+      "id": "ethnography-contextual-semiotics",
+      "text": "Use ethnography, contextual field studies, co-design, semiotics, and other future-facing qualitative methods.",
+      "priority": "core",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "resumeTerms": [
+        "ethnography",
+        "contextual field studies",
+        "semiotics"
+      ]
+    },
+    {
+      "id": "long-term-to-near-term-roadmaps",
+      "text": "Translate long-term insight into near-term product opportunities and innovation roadmaps.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Client-led AI POCs turn open-ended business questions into testable product surfaces, demo flows, and roadmap decisions.",
+        "Research findings at Kinesso moved into product direction, continuous iteration, and build-ready recommendations across the enterprise suite."
+      ],
+      "resumeTerms": [
+        "roadmap decisions",
+        "product direction"
+      ]
+    },
+    {
+      "id": "emerging-technology-domains",
+      "text": "Bring research experience in AI, XR, AR or VR, connected devices, or digital products.",
+      "priority": "preferred",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Current work includes AI product concepts and working POCs built around LLM and VLM workflows, prompt-defined criteria, model orchestration, evidence gaps, source health, and visible human review.",
+        "The portfolio documents research and product work across more than 20 enterprise digital products."
+      ],
+      "resumeTerms": [
+        "AI tools",
+        "LLM/VLM workflows",
+        "human review"
+      ]
+    },
+    {
+      "id": "strategic-foresight-trend-forecasting",
+      "text": "Apply strategic foresight, future methodologies, trend forecasting, and formal emerging-technology research.",
+      "priority": "preferred",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "resumeTerms": [
+        "strategic foresight",
+        "trend forecasting",
+        "future methodologies"
+      ]
+    }
+  ],
+  "fitGate": {
+    "supportedOverlap": [
+      "The User Research case study directly proves a research discipline built across more than 20 enterprise products, with interviews, Typeform, Useberry, Heap, beta groups, workshops, roadshows, Figma documentation, and standardized findings.",
+      "Research work since 2018 has influenced product direction in enterprise analytics and regulated healthcare, including patient and healthcare-professional experiences.",
+      "The Digital Audit work shows research synthesis, benchmarks, recommendations, data visualization, executive presentations, and a product story that earned Red Dot and Indigo recognition.",
+      "Current AI work adds practical emerging-technology experience through LLM and VLM workflows, prompt-defined criteria, evidence gaps, model orchestration, risk signals, source health, and visible human review.",
+      "Cross-functional leadership includes research roadshows, workshops, distributed teams in the United States and Poland, and communication with product, design, engineering, business, and senior stakeholders."
+    ],
+    "unsupportedRequirements": [
+      "Formal semiotics expertise is not documented.",
+      "Direct ownership of ethnographic or contextual field studies is not documented.",
+      "Formal strategic foresight, future-methodology, or trend-forecasting practice is not documented.",
+      "XR, AR, VR, and connected-device research are not documented."
+    ],
+    "actualMismatches": [],
+    "missingEvidence": [
+      "The portfolio shows interviews, remote research, surveys, usability testing, behavioral analytics, workshops, and co-creation with stakeholders, but it does not label the work as ethnography, contextual inquiry, or semiotics.",
+      "The AI portfolio proves emerging-technology product work more strongly than formal research into long-range cultural change.",
+      "International-travel availability is not confirmed in the provided evidence."
+    ],
+    "coverLetterBridge": {
+      "status": "recommended",
+      "rationale": "We can make the case with a cover letter by connecting the enterprise qualitative-research practice, regulated expert-user research, AI product work, and executive storytelling to the team's emerging-technology research. The letter should state that formal foresight, semiotics, field ethnography, and XR or AR/VR research are not established."
+    },
+    "recommendation": "Proceed as adjacent. Lead with the research system built across more than 20 products, the ability to turn findings into product strategy and visual stories, and current AI product work. Keep the formal foresight, semiotics, field ethnography, XR, AR/VR, and travel gaps explicit."
+  },
+  "resume": {
+    "foundationId": "wally-mostafa-resume-2026-07-03",
+    "summary": "AI implementation and product strategy lead with 15 years across pharma, enterprise UX, client strategy, and regulated AI delivery. I turn ambiguous workflows into governed AI tools, demo-ready POCs, and build-ready product systems. My strength is bridging client translation, workflow design, model behavior, and adoption so teams can trust and use the product after the demo.",
+    "skills": [
+      {
+        "label": "AI Implementation & Workflow Design",
+        "description": "Governed LLM/VLM workflows, multimodal review, RAG/knowledge bases, prompt-defined criteria, model orchestration, and human review surfaces"
+      },
+      {
+        "label": "Product Strategy & POC Delivery",
+        "description": "Discovery, scoping, requirements, prototype validation, demo narratives, build-ready logic, and production handoff"
+      },
+      {
+        "label": "Regulated Healthcare & Client Delivery",
+        "description": "11 years across pharma/healthcare communications, FDA/HIPAA/MLR workflows, HCP/patient UX, client workshops, and stakeholder adoption"
+      },
+      {
+        "label": "Enterprise UX & Design Systems",
+        "description": "Team scaling (2 to 30), enterprise analytics, workflow UX, data visualization, component libraries, and accessibility (WCAG)"
+      }
+    ],
+    "roles": {
+      "hedgehox": [
+        "Secured an investor for proprietary Claims Detection software by building the functional POC, shaping the demo story, and iterating with investors",
+        "Designed Claims Detector workflows that identify promotional claims, surface evidence gaps, and pre-populate audit-ready annotations before MLR submission",
+        "Turned regulated pharma workflow research into AI tools for MLR claim review, brief intake, scoping, review routing, submission capture, and FDA signal monitoring",
+        "Designed the full Xenagos Bio startup biopharma website from scratch, including investor-facing structure, scientific positioning, visual direction, and hidden design-system handoff",
+        "Built Scope Generator for pharma agency finance and operations teams to manage regional rate cards, brands, sub-brands, and natural-language scope changes",
+        "Developed FDA Warning Tool concepts that connect warning-letter patterns to content-risk guidance for pharma teams"
+      ],
+      "one-block-away": [
+        "Build client-led AI POCs that turn open-ended business questions into research questions, testable product surfaces, demo flows, and roadmap decisions",
+        "Built ListingPal's AI listing-generation POC and landing page, turning basic property inputs into listing copy, social posts, ad copy, styling direction, and MLS/SEO-ready language in under 90 seconds",
+        "Built WeReady's Bailey Intelligence dashboard, translating founder inputs, GitHub signals, source health, risk scoring, and evidence trails into startup-readiness workflows",
+        "Own product strategy, UX, AI workflow design, front-end build, backend logic, demo readiness, and client iteration from first ask through working prototype",
+        "Currently building the website and sponsor strategy for a Tunisia youth soccer program, positioning the project for player advancement, community support, and donor outreach"
+      ],
+      "kinesso": [
+        "Scaled product design from 2 to 30 people across the US and Poland for enterprise analytics used by 7,000+ users across 22 white-label brands",
+        "Built a qualitative research discipline across 20+ products using user interviews, Typeform surveys, Useberry usability testing, Heap behavioral analytics, research workshops, research roadshows, Figma documentation, and standardized findings",
+        "Synthesized research findings across Audiences, Activation, Optimization, and Reporting into frameworks, strategic recommendations, executive presentations, and product direction for product, design, engineering, and senior leaders",
+        "Led UX and design-system strategy for MIE data visualization, dashboard building, brand theming, and reusable analytics components",
+        "Built the Digital Experience Audit workflow for channel scoring, benchmarks, recommendations, visualization, and presentation-ready client outputs",
+        "Design-system and analytics work earned 5 Indigo Gold, 4 Indigo Silver, and Red Dot recognition"
+      ],
+      "omnicom": [
+        "Supported oncology accounts as a freelance UX designer, combining UX design and account-management experience to strengthen regulated healthcare work",
+        "Championed UX best practices across account, strategy, creative, and delivery conversations, translating brand goals into clearer user flows, content structure, and digital recommendations"
+      ],
+      "heartbeat": [
+        "Led UX research and experience strategy for pharma and healthcare work, translating stakeholder input, competitive audits, and user needs into digital product direction",
+        "Created journey maps, site maps, user flows, wireframes, and prototypes for patient, HCP, and internal brand-team experiences across regulated healthcare programs",
+        "Partnered with strategy, creative, account, and engineering teams to move UX recommendations from research findings into build-ready product and campaign experiences"
+      ],
+      "account-management": [
+        "7+ years managing Fortune 500 pharma and healthcare clients with $2M-$50M+ budgets across CNS/neurology, psychiatry, cardiovascular/metabolic, and sleep/wakefulness brands including NUVIGIL, Namenda XR, Lipitor, and Zoloft",
+        "One of two account consumer leads on FCB Health's largest pharma account across all verticals: TV, radio, digital, gaming, Times Square, unbranded campaigns, brand planning, and MLR review",
+        "Translated client and brand strategy into briefs, creative feedback, production requirements, timelines, and MLR-ready deliverables across account, creative, UX, and development teams"
+      ]
+    },
+    "sourceBulletIds": {
+      "hedgehox": [
+        "hedgehox-01",
+        "hedgehox-02",
+        "hedgehox-03",
+        "hedgehox-04",
+        "hedgehox-05",
+        "hedgehox-06"
+      ],
+      "one-block-away": [
+        "one-block-away-01",
+        "one-block-away-02",
+        "one-block-away-03",
+        "one-block-away-04",
+        "one-block-away-05"
+      ],
+      "kinesso": [
+        "kinesso-01",
+        "addition:senior-design-researcher-research-discipline",
+        "addition:senior-design-researcher-synthesis",
+        "kinesso-02",
+        "kinesso-03",
+        "kinesso-04"
+      ],
+      "omnicom": [
+        "omnicom-01",
+        "omnicom-02"
+      ],
+      "heartbeat": [
+        "heartbeat-01",
+        "heartbeat-02",
+        "heartbeat-03"
+      ],
+      "account-management": [
+        "account-management-01",
+        "account-management-02",
+        "account-management-03"
+      ]
+    }
+  },
+  "hero": {
+    "eyebrow": "Senior Design Researcher: Innovation & Emerging Technology",
+    "tags": [
+      "Qualitative research systems",
+      "Emerging AI products",
+      "Strategic visual storytelling"
+    ],
+    "intro": "I built a qualitative research practice across more than 20 enterprise products, then used Figma-based reporting to turn interviews, usability tests, behavioral data, and workshops into product direction. I now bring that research judgment to AI product work in regulated environments, where human behavior and product strategy need to stay connected."
+  },
+  "contact": {
+    "prompt": "If you need a senior researcher who can turn qualitative evidence and emerging AI product work into clear opportunities and useful stories, email is the fastest way to reach me.",
+    "signoff": "Qualitative research | AI products | strategic storytelling"
+  },
+  "copyReview": {
+    "humanizerVersion": "2.2.0",
+    "mode": "surface-only",
+    "status": "passed",
+    "reviewedAt": "2026-07-28T00:22:26.667Z",
+    "copySha256": "284514052012d8f472d59ae4b06289bcc0c1df2b41e8ab52630fd82c444754a8",
+    "preserved": [
+      "content",
+      "structure",
+      "claims",
+      "ending"
+    ],
+    "rewriteAuthorized": false,
+    "reviewMethod": "humanizer-skill",
+    "semanticPassAttested": true,
+    "staticChecksPassed": true,
+    "finalAntiAiPass": true,
+    "remainingTells": []
+  },
+  "constraints": {
+    "doNotClaim": [
+      "Formal semiotics expertise",
+      "Ethnographic or contextual field-study ownership",
+      "Formal strategic foresight or trend-forecasting ownership",
+      "International travel availability",
+      "XR or AR/VR research experience"
+    ],
+    "blockedTerms": [
+      "semiotics expert",
+      "ethnography expert",
+      "strategic foresight lead",
+      "XR researcher",
+      "AR/VR researcher"
+    ]
+  },
+  "privacy": {
+    "publicSafe": true,
+    "notes": "Contains only the public job description and sanitized resume and portfolio evidence. It excludes recruiter contact details, application answers, personal compensation boundaries, and private eligibility information."
+  },
+  "qa": {
+    "status": "qa-passed",
+    "builtAt": "2026-07-28T00:22:30.316Z",
+    "configInputSha256": "46c9204e5375d1c15852cbe6de24f3a59409bdfd18cd946106e796776233b61f",
+    "sourceResumeSha256": "375cc6566f5bbad5b95be9da551dfe87824378fb252222409d29ef32d334ca25",
+    "resumeFoundation": {
+      "id": "wally-mostafa-resume-2026-07-03",
+      "sourcePdfSha256": "f9b05b6c3c134262b1af6c5734363daf4385cf335407a139779a37d138adf1aa"
+    },
+    "artifactHashes": {
+      "routeSha256": "522ec87008b7690af2ee479212446c923e0eff885249e30d1e5a5bf9ffe13cdb",
+      "resumePdfSha256": "942563ce02e545f582486d75d228991775468eeb5fa241c9ff8a23f0ac0aa60c",
+      "scopedProjectSha256": {}
+    },
+    "renderer": {
+      "browser": {
+        "name": "chrome-headless-shell",
+        "version": "Google Chrome for Testing 149.0.7827.55"
+      },
+      "htmlPath": "tmp/tailored-resumes/senior-design-researcher-emerging-technology.html",
+      "pdfPath": "output/pdf/Wally-Mostafa-Senior-Design-Researcher-Emerging-Technology-Resume.pdf"
+    },
+    "ats": {
+      "ok": true,
+      "pdfPath": "output/pdf/Wally-Mostafa-Senior-Design-Researcher-Emerging-Technology-Resume.pdf",
+      "pageCount": 2,
+      "fileSize": 138293,
+      "annotations": [
+        {
+          "page": 1,
+          "uri": "mailto:wmostafa12@gmail.com"
+        },
+        {
+          "page": 1,
+          "uri": "https://linkedin.com/in/wallymo"
+        },
+        {
+          "page": 1,
+          "uri": "https://wallymo.github.io/senior-design-researcher-emerging-technology/"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/6748"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/4629"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.red-dot.org/project/dxa-digital-experience-audit-55219"
+        }
+      ],
+      "coverage": [
+        {
+          "id": "qualitative-generative-research",
+          "requirement": "Lead qualitative and generative research on human behavior, emerging technology, and changing customer needs.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "qualitative research",
+            "user interviews",
+            "workshops"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "culture-human-behavior-emerging-technology",
+          "requirement": "Study cultural shifts, human behavior, and emerging technologies to identify future product and service needs.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "user needs",
+            "AI tools"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "synthesis-frameworks-strategy",
+          "requirement": "Synthesize research into actionable insights, frameworks, strategic recommendations, and product direction.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "research findings",
+            "strategic recommendations",
+            "product direction"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "visual-storytelling-figma-ai",
+          "requirement": "Create polished presentations, reports, and storytelling artifacts with Figma and AI-powered tools.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "Figma documentation",
+            "executive presentations"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "workshops-cross-functional-influence",
+          "requirement": "Facilitate workshops and influence product strategy with design, engineering, research, business, and senior stakeholders.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "research roadshows",
+            "product, design, engineering",
+            "senior leaders"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "ethnography-contextual-semiotics",
+          "requirement": "Use ethnography, contextual field studies, co-design, semiotics, and other future-facing qualitative methods.",
+          "priority": "core",
+          "evidenceStatus": "none",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "ethnography",
+            "contextual field studies",
+            "semiotics"
+          ]
+        },
+        {
+          "id": "long-term-to-near-term-roadmaps",
+          "requirement": "Translate long-term insight into near-term product opportunities and innovation roadmaps.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "roadmap decisions",
+            "product direction"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "emerging-technology-domains",
+          "requirement": "Bring research experience in AI, XR, AR or VR, connected devices, or digital products.",
+          "priority": "preferred",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "AI tools",
+            "LLM/VLM workflows",
+            "human review"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "strategic-foresight-trend-forecasting",
+          "requirement": "Apply strategic foresight, future methodologies, trend forecasting, and formal emerging-technology research.",
+          "priority": "preferred",
+          "evidenceStatus": "none",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "strategic foresight",
+            "trend forecasting",
+            "future methodologies"
+          ]
+        }
+      ],
+      "failures": [],
+      "warnings": []
+    },
+    "humanizer": {
+      "status": "passed",
+      "version": "2.2.0",
+      "mode": "surface-only",
+      "reviewedAt": "2026-07-28T00:22:26.667Z",
+      "copySha256": "284514052012d8f472d59ae4b06289bcc0c1df2b41e8ab52630fd82c444754a8",
+      "reviewMethod": "humanizer-skill",
+      "semanticPassAttested": true,
+      "staticChecksPassed": true
+    },
+    "route": {
+      "viewports": [
+        {
+          "name": "desktop",
+          "screenshot": "../../private/tmp/senior-design-researcher.4qkDNK/tmp/qa/senior-design-researcher-emerging-technology/desktop.png",
+          "errors": []
+        },
+        {
+          "name": "mobile",
+          "screenshot": "../../private/tmp/senior-design-researcher.4qkDNK/tmp/qa/senior-design-researcher-emerging-technology/mobile.png",
+          "errors": []
+        }
+      ],
+      "errors": []
+    }
+  }
+}
