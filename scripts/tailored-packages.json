@@ -2279,9 +2279,26 @@
         "project-06.html"
       ],
       "resumePdfPath": "output/pdf/Wally-Mostafa-Real-Chemistry-21GRAMS-Account-Supervisor-Resume.pdf",
-      "publishStatus": "local-only",
+      "publishStatus": "live-verified",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-07-28T17:51:01.175Z"
+      "builtAt": "2026-07-28T17:51:01.175Z",
+      "verification": {
+        "verifiedAt": "2026-07-28T17:53:23.471Z",
+        "routeUrl": "https://wallymo.github.io/real-chemistry-21grams-account-supervisor/",
+        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-Real-Chemistry-21GRAMS-Account-Supervisor-Resume.pdf",
+        "configUrl": "https://wallymo.github.io/scripts/packages/real-chemistry-21grams-account-supervisor.json",
+        "projectUrls": [
+          "https://wallymo.github.io/project-01.html",
+          "https://wallymo.github.io/project-08.html",
+          "https://wallymo.github.io/project-06.html"
+        ],
+        "configSha256": "e9b5dd10690a7355384436e10a9d008b87dcead7e8c2cd0b33d32c133e36a16b",
+        "pdfSha256": "f05b980d4cebfc97af45b7798667bbc871b84f2ec5f4ef2e022f007ed661f339",
+        "routeSha256": "0fbbfd2bd5b3615155dc1191efef7cb24d02130d1e8582114b3f0f45a4e5e59b",
+        "scopedProjectSha256": {},
+        "configInputSha256": "031cd19325a995c61f7ba3dad23d52f9a599d40a2f2a596bced5760320cb8114",
+        "qaBuiltAt": "2026-07-28T17:51:01.175Z"
+      }
     },
     {
       "slug": "real-chemistry-account-manager",
