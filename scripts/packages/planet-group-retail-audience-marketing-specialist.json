@@ -1,0 +1,526 @@
+{
+  "workflowVersion": 2,
+  "contractRevision": 4,
+  "slug": "planet-group-retail-audience-marketing-specialist",
+  "roleTitle": "Retail Audience Marketing Specialist",
+  "artifactStem": "Planet-Group-Retail-Audience-Marketing-Specialist",
+  "fitClass": "adjacent",
+  "routeMode": "canonical-projects",
+  "selectedProjects": [
+    "project-06.html",
+    "project-04.html",
+    "project-02.html"
+  ],
+  "job": {
+    "company": "The Planet Group client",
+    "roleTitle": "Retail Audience Marketing Specialist",
+    "jobId": "not-provided",
+    "jobUrl": "not-provided",
+    "sourceChannel": "user-provided-job-description",
+    "dateCaptured": "2026-07-27",
+    "location": "Remote",
+    "compensation": "USD 48-52 per hour, W2",
+    "duration": "Three months ongoing or long term, with potential to convert",
+    "rawJd": "The Planet Group is looking for a Retail Audience Marketing Specialist for a market-leading technology company. The Retail Audience Marketing team needs a strategic and collaborative marketing expert to drive growth across retail segments and buying audiences. The role develops expertise in store operations, frontline workforce challenges, and customer expectations, then turns that insight into messaging and programs for retail leaders. Responsibilities include defining audience segments, buying triggers, and customer journeys; developing customer-led content, sales talk tracks, campaign assets, and executive briefs; activating programs across campaigns, events, field marketing, and sales plays; and using data, field feedback, and AI-driven insights to improve messaging and programs. Qualifications include six or more years in marketing, content strategy, or audience or industry marketing; strong sales-ready messaging and content; retail marketing or retail go-to-market experience preferred; cross-functional work with sales, field marketing, and product; strong communication; and a bachelor's degree in Marketing, Communications, Business, or a related field. Preferred experience includes B2B SaaS, workforce management, HR technology, industry-specific messaging, campaigns, go-to-market programs, and translating industry insight into strategies that support pipeline and revenue growth."
+  },
+  "classification": {
+    "targetLane": "retail-audience-marketing-and-sales-enablement",
+    "evidenceMode": "resume-primary",
+    "primarySource": "The resume is the main evidence: 7+ years of integrated Fortune 500 marketing and account work, audience and journey research, content structure, campaign briefs, enterprise marketing intelligence, and current part-time retail operations experience at Trader Joe's.",
+    "supportingSource": "The portfolio shows customer research, a Digital Experience Audit that turned channel data into recommendations, AI products shaped through client discovery, and presentation-ready stories used to explain complex products.",
+    "hardGateStatus": "pass",
+    "hardGates": [
+      {
+        "gate": "Six or more years in marketing, content strategy, or audience or industry-focused marketing",
+        "status": "pass",
+        "evidence": "The resume documents 7+ years managing Fortune 500 pharma and healthcare marketing programs across brand planning, integrated campaigns, messaging inputs, briefs, creative production, and regulated delivery."
+      },
+      {
+        "gate": "Retail operations and frontline workforce understanding",
+        "status": "pass",
+        "evidence": "Current part-time work at Trader Joe's in Morrisville provides direct exposure to store operations, customer service, frontline workforce dynamics, staffing, workflow coordination, and customer expectations."
+      },
+      {
+        "gate": "Cross-functional work with sales, field marketing, product, and creative teams",
+        "status": "pass",
+        "evidence": "The resume documents work across account, strategy, creative, UX, product, engineering, finance, operations, and client teams. Direct ownership inside a field marketing organization is not claimed."
+      },
+      {
+        "gate": "Bachelor's degree in Marketing, Communications, Business, or a related field",
+        "status": "pass",
+        "evidence": "BA in Labor Studies and Employee Relations from Rutgers University, supported by more than fifteen years of directly related marketing, client strategy, research, product, and workforce experience."
+      },
+      {
+        "gate": "Remote work in the United States",
+        "status": "pass",
+        "evidence": "The resume lists Raleigh, North Carolina, and the role is remote."
+      }
+    ]
+  },
+  "requirements": [
+    {
+      "id": "retail-audience-segmentation",
+      "text": "Define retail audience segments, buying triggers, and customer journeys around store operations, workforce priorities, retention, and customer experience.",
+      "priority": "core",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Current Trader Joe's work provides direct exposure to store operations, frontline workforce dynamics, staffing, workflow coordination, and customer expectations.",
+        "Healthcare UX work included stakeholder research, competitive audits, journey maps, content structures, user flows, and audience-specific experiences.",
+        "Formal ownership of retail buyer segmentation, buying triggers, and workforce-retention journeys is not documented."
+      ],
+      "resumeTerms": [
+        "store operations",
+        "frontline workforce",
+        "customer experience",
+        "customer journeys"
+      ]
+    },
+    {
+      "id": "retail-messaging-and-content",
+      "text": "Build differentiated retail messaging and customer-led content, including stories, talk tracks, campaign assets, and executive briefs.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Seven-plus years of integrated marketing work turned client and brand strategy into briefs, messaging inputs, creative feedback, production requirements, and campaign deliverables.",
+        "ListingPal turned basic inputs into listing copy, social posts, ad copy, styling direction, and MLS and SEO-ready language.",
+        "The Digital Experience Audit turned complex channel data into benchmarks, recommendations, visualizations, and presentation-ready client outputs."
+      ],
+      "resumeTerms": [
+        "messaging inputs",
+        "campaign",
+        "social posts",
+        "ad copy",
+        "presentation-ready client outputs"
+      ]
+    },
+    {
+      "id": "sales-enablement-and-account-engagement",
+      "text": "Create sales-ready materials that improve account engagement, enable customer conversations, and support pipeline and revenue growth.",
+      "priority": "core",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Direct proof includes client briefs, investor and product demonstrations, presentation-ready recommendations, working POCs, and coordinated campaign materials.",
+        "The Claims Detector demo story helped secure an investor, showing an ability to connect a complex product to a decision.",
+        "Formal ownership of sales talk tracks, account-based marketing, pipeline contribution, deal progression, or revenue attribution is not documented."
+      ],
+      "resumeTerms": [
+        "briefs",
+        "demo story",
+        "client-facing",
+        "presentation-ready"
+      ]
+    },
+    {
+      "id": "program-activation-and-field-alignment",
+      "text": "Turn audience strategy into campaigns, events, field programs, and sales plays that teams can use in real selling moments.",
+      "priority": "core",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Account leadership covered integrated TV, radio, digital, gaming, Times Square, unbranded campaigns, brand planning, timelines, and coordinated delivery.",
+        "Research roadshows, workshops, demonstrations, and client-facing audit outputs helped teams understand and use new product ideas.",
+        "Direct ownership of retail events, field marketing programs, sales plays, and in-market adoption metrics is not documented."
+      ],
+      "resumeTerms": [
+        "integrated campaigns",
+        "brand planning",
+        "workshops",
+        "demonstrations"
+      ]
+    },
+    {
+      "id": "optimization-data-and-ai",
+      "text": "Use data, field feedback, and AI-driven insight to refine segmentation, improve messaging, and scale effective content.",
+      "priority": "core",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The Digital Experience Audit combined channel scoring, benchmarks, recommendations, visualization, and client-ready outputs.",
+        "WeReady translated founder inputs, source health, risk scoring, and evidence trails into a decision workflow.",
+        "Current AI implementation work turns stakeholder needs into testable tools, demonstrations, feedback, and product decisions."
+      ],
+      "resumeTerms": [
+        "channel scoring",
+        "benchmarks",
+        "recommendations",
+        "risk scoring",
+        "AI"
+      ]
+    },
+    {
+      "id": "b2b-saas-workforce-technology",
+      "text": "Bring preferred experience in B2B SaaS, workforce management, HR technology, and industry-specific go-to-market programs.",
+      "priority": "preferred",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Enterprise marketing intelligence products, AI POCs, workflow tools, client demonstrations, and product adoption provide relevant B2B technology context.",
+        "The BA in Labor Studies and Employee Relations plus current retail work adds workforce context.",
+        "Direct workforce management SaaS, HR technology product marketing, and retail technology go-to-market ownership are not documented."
+      ],
+      "resumeTerms": [
+        "enterprise analytics",
+        "workflow",
+        "employee communication"
+      ]
+    }
+  ],
+  "fitGate": {
+    "supportedOverlap": [
+      "Seven-plus years of integrated Fortune 500 marketing and account work across brand planning, messaging inputs, creative briefs, campaign delivery, client communication, and multimillion-dollar programs.",
+      "Current part-time Trader Joe's experience provides direct, recent exposure to store operations, frontline workforce dynamics, customer service, staffing, and customer expectations.",
+      "Audience and journey work through stakeholder research, competitive audits, journey maps, content structures, user flows, and healthcare audience experiences.",
+      "Enterprise marketing intelligence and audit work used data, benchmarks, recommendations, visualizations, and presentation-ready outputs across products used by more than 7,000 people.",
+      "Hands-on AI product and POC work adds customer discovery, product storytelling, demonstrations, feedback loops, and practical use of AI-driven insight."
+    ],
+    "unsupportedRequirements": [
+      "Direct ownership of a retail industry marketing strategy or retail go-to-market program is not documented.",
+      "Formal account-based marketing, sales talk track, sales play, battle card, or field enablement ownership is not documented.",
+      "Pipeline generation, deal acceleration, conversion, and revenue-attribution metrics are not documented.",
+      "Workforce management SaaS and HR technology product marketing experience are not documented.",
+      "Direct ownership of retail industry events and field marketing activation is not documented."
+    ],
+    "actualMismatches": [
+      "The recent professional operating center is AI implementation, product strategy, UX, and client delivery rather than a dedicated retail audience marketing role.",
+      "The retail experience is store-level and current, while the corporate marketing experience comes from pharma, healthcare, enterprise analytics, and early-stage AI products."
+    ],
+    "missingEvidence": [
+      "A retail audience segmentation framework tied to buying triggers, customer journeys, and measurable campaign outcomes.",
+      "Retail sales enablement examples such as talk tracks, battle cards, executive briefs, field plays, and account-based content.",
+      "Pipeline, account engagement, conversion, deal progression, or revenue impact tied to marketing programs.",
+      "Named workforce management, HR technology, retail SaaS, CRM, or marketing automation platforms.",
+      "Retail event programs and proof that sales or field teams adopted the messaging in market."
+    ],
+    "coverLetterBridge": {
+      "status": "recommended",
+      "rationale": "We can make the case with a cover letter by connecting 7+ years of integrated marketing and client strategy, current Trader Joe's store experience, audience research, enterprise marketing intelligence, and AI product storytelling to the client's need for practical retail audience programs. The letter must address the lack of direct retail go-to-market ownership, workforce management SaaS, formal sales enablement, and pipeline metrics."
+    },
+    "recommendation": "Proceed as adjacent. Lead with the combination of established marketing experience and current store-level retail exposure. Use research, messaging, campaign, client, analytics, and AI proof to support the transfer. Do not claim corporate retail marketing, HR technology, workforce management SaaS, account-based marketing, or measured pipeline impact."
+  },
+  "resume": {
+    "foundationId": "wally-mostafa-resume-2026-07-03",
+    "summary": "AI implementation and product strategy lead with 15 years across pharma, enterprise UX, client strategy, and regulated AI delivery. I turn ambiguous workflows into governed AI tools, demo-ready POCs, and build-ready product systems. My strength is bridging client translation, workflow design, model behavior, and adoption so teams can trust and use the product after the demo.",
+    "skills": [
+      {
+        "label": "AI Implementation & Workflow Design",
+        "description": "Governed LLM/VLM workflows, multimodal review, RAG/knowledge bases, prompt-defined criteria, model orchestration, and human review surfaces"
+      },
+      {
+        "label": "Product Strategy & POC Delivery",
+        "description": "Discovery, scoping, requirements, prototype validation, demo narratives, build-ready logic, and production handoff"
+      },
+      {
+        "label": "Regulated Healthcare & Client Delivery",
+        "description": "11 years across pharma/healthcare communications, FDA/HIPAA/MLR workflows, HCP/patient UX, client workshops, and stakeholder adoption"
+      },
+      {
+        "label": "Enterprise UX & Design Systems",
+        "description": "Team scaling (2 to 30), enterprise analytics, workflow UX, data visualization, component libraries, and accessibility (WCAG)"
+      }
+    ],
+    "roles": {
+      "hedgehox": [
+        "Secured an investor for proprietary Claims Detection software by building the functional POC, shaping the decision-ready demo story, and iterating with investors",
+        "Designed Claims Detector workflows that identify promotional claims, surface evidence gaps, and pre-populate audit-ready annotations before MLR submission",
+        "Translated pharma agency needs into client-facing AI tools for claims review, brief intake, scoping, review routing, submission capture, and FDA signal monitoring",
+        "Designed the Xenagos Bio startup website from scratch, including investor-facing content structure, scientific positioning, visual direction, and design-system handoff",
+        "Built Scope Generator for pharma agency finance and operations teams to manage regional rate cards, brands, sub-brands, and natural-language scope changes",
+        "Developed FDA Warning Tool concepts that turn warning-letter patterns into clear content-risk guidance for pharma teams"
+      ],
+      "trader-joes": [
+        "Support daily store operations and customer service in a high-volume retail environment, with firsthand experience of frontline workforce needs, workflow coordination, employee communication, and the day-to-day customer experience"
+      ],
+      "one-block-away": [
+        "Build client-led AI POCs that turn unclear business questions into testable product surfaces, demonstrations, customer stories, and roadmap decisions",
+        "Built ListingPal's AI listing-generation POC and landing page, turning basic property inputs into listing copy, social posts, ad copy, styling direction, and MLS/SEO-ready language in under 90 seconds",
+        "Built WeReady's Bailey Intelligence dashboard, translating founder inputs, source health, risk scoring, and evidence trails into a clear decision workflow",
+        "Own product strategy, UX, AI workflow design, front-end build, backend logic, demo readiness, and client iteration from first ask through working prototype",
+        "Currently building the website and sponsor strategy for a Tunisia youth soccer program, positioning the project for player advancement, community support, and donor outreach"
+      ],
+      "kinesso": [
+        "Scaled product design from 2 to 30 people across the US and Poland for enterprise marketing analytics used by 7,000+ users across 22 white-label brands",
+        "Led UX and design-system strategy for marketing intelligence dashboards, data visualization, brand theming, and reusable analytics components",
+        "Built the Digital Experience Audit workflow for channel scoring, benchmarks, recommendations, visualization, and presentation-ready client outputs",
+        "Design-system and marketing analytics work earned 5 Indigo Gold, 4 Indigo Silver, and Red Dot recognition"
+      ],
+      "omnicom": [
+        "Supported oncology accounts as a freelance UX designer, combining UX design and account-management experience to strengthen regulated healthcare work",
+        "Partnered across account, strategy, creative, and delivery teams, translating brand goals into clearer user flows, content structure, and digital recommendations"
+      ],
+      "heartbeat": [
+        "Led audience research and experience strategy for pharma and healthcare work, translating stakeholder input, competitive audits, and user needs into digital product direction",
+        "Created customer journeys, site maps, user flows, wireframes, and prototypes for patient, HCP, and internal brand-team experiences",
+        "Partnered with strategy, creative, account, and engineering teams to move research findings into build-ready product and campaign experiences"
+      ],
+      "account-management": [
+        "Managed Fortune 500 pharma and healthcare clients for 7+ years, with USD 2M-50M+ budgets across CNS, neurology, psychiatry, cardiovascular, metabolic, and sleep-wakefulness brands including NUVIGIL, Namenda XR, Lipitor, and Zoloft",
+        "Served as one of two consumer account leads on FCB Health's largest pharma account, coordinating integrated campaigns across TV, radio, digital, gaming, Times Square, unbranded work, brand planning, and MLR review",
+        "Translated client and brand strategy into briefs, messaging inputs, creative feedback, production requirements, timelines, and MLR-ready deliverables across account, creative, UX, and development teams"
+      ]
+    },
+    "sourceBulletIds": {
+      "hedgehox": [
+        "hedgehox-01",
+        "hedgehox-02",
+        "hedgehox-03",
+        "hedgehox-04",
+        "hedgehox-05",
+        "hedgehox-06"
+      ],
+      "trader-joes": [
+        "trader-joes-01"
+      ],
+      "one-block-away": [
+        "one-block-away-01",
+        "one-block-away-02",
+        "one-block-away-03",
+        "one-block-away-04",
+        "one-block-away-05"
+      ],
+      "kinesso": [
+        "kinesso-01",
+        "kinesso-02",
+        "kinesso-03",
+        "kinesso-04"
+      ],
+      "omnicom": [
+        "omnicom-01",
+        "omnicom-02"
+      ],
+      "heartbeat": [
+        "heartbeat-01",
+        "heartbeat-02",
+        "heartbeat-03"
+      ],
+      "account-management": [
+        "account-management-01",
+        "account-management-02",
+        "account-management-03"
+      ]
+    }
+  },
+  "hero": {
+    "eyebrow": "Retail Audience Marketing Specialist",
+    "tags": [
+      "Retail audience insight",
+      "Customer-led messaging",
+      "Program activation"
+    ],
+    "intro": "I know this retail audience from two sides. I bring 7+ years leading integrated Fortune 500 marketing programs, and I currently work part time at Trader Joe's, where store operations, frontline communication, and customer expectations are part of the job. At Kinesso, I also built research and audit systems for marketing intelligence products used by 7,000+ people across 22 brands. That mix lets me build retail messaging and content that sales and field teams can actually use."
+  },
+  "contact": {
+    "prompt": "If your client needs a marketer who can connect the store floor to clear audience strategy and useful sales content, email is the fastest way to reach me.",
+    "signoff": "Retail audience insight | customer-led messaging | program activation"
+  },
+  "copyReview": {
+    "humanizerVersion": "2.2.0",
+    "mode": "surface-only",
+    "status": "passed",
+    "reviewedAt": "2026-07-28T00:24:26.730Z",
+    "copySha256": "b72d9f72d0d307274d9e5067fb41aea58808a28cd9993bf5219a86c886a631df",
+    "preserved": [
+      "content",
+      "structure",
+      "claims",
+      "ending"
+    ],
+    "rewriteAuthorized": false,
+    "reviewMethod": "humanizer-skill",
+    "semanticPassAttested": true,
+    "staticChecksPassed": true,
+    "finalAntiAiPass": true,
+    "remainingTells": []
+  },
+  "constraints": {
+    "doNotClaim": [
+      "Direct ownership of a retail industry marketing strategy",
+      "Direct ownership of retail go-to-market programs",
+      "Workforce management SaaS product marketing",
+      "HR technology product marketing",
+      "Account-based marketing ownership",
+      "Sales talk track, battle card, or sales play ownership",
+      "Pipeline generation or revenue attribution",
+      "Retail event or field marketing ownership"
+    ],
+    "blockedTerms": [
+      "owned retail marketing strategy",
+      "owned retail go-to-market",
+      "workforce management SaaS experience",
+      "HR technology product marketing experience",
+      "owned account-based marketing",
+      "built battle cards",
+      "pipeline generation results",
+      "retail event ownership"
+    ]
+  },
+  "privacy": {
+    "publicSafe": true,
+    "notes": "Contains the public job description, sanitized public resume and portfolio evidence, and the user-approved Trader Joe's role, location, and dates for recruiter-facing use. It contains no recruiter details, private application answers, personal compensation boundaries, or private eligibility information."
+  },
+  "qa": {
+    "status": "qa-passed",
+    "builtAt": "2026-07-28T00:24:31.168Z",
+    "configInputSha256": "2cc4489522bfa19f3079a29f367232de9a50cb683bdf0925d7b611d7e3e59a91",
+    "sourceResumeSha256": "4df66be857b3dcf424aa978da3909fab9c482e8a23c14679b3a57b8299bae7f6",
+    "resumeFoundation": {
+      "id": "wally-mostafa-resume-2026-07-03",
+      "sourcePdfSha256": "f9b05b6c3c134262b1af6c5734363daf4385cf335407a139779a37d138adf1aa"
+    },
+    "artifactHashes": {
+      "routeSha256": "816113e6b2ef9fabe9befa10a76bfb9970b0d671c0af0a5acce840b817ca6de2",
+      "resumePdfSha256": "8ead9605d77a98c723bcb69556ef5810604b7736ef5cbec3eac76a6418e2aa28",
+      "scopedProjectSha256": {}
+    },
+    "renderer": {
+      "browser": {
+        "name": "chrome-headless-shell",
+        "version": "Google Chrome for Testing 149.0.7827.55"
+      },
+      "htmlPath": "tmp/tailored-resumes/planet-group-retail-audience-marketing-specialist.html",
+      "pdfPath": "output/pdf/Wally-Mostafa-Planet-Group-Retail-Audience-Marketing-Specialist-Resume.pdf"
+    },
+    "ats": {
+      "ok": true,
+      "pdfPath": "output/pdf/Wally-Mostafa-Planet-Group-Retail-Audience-Marketing-Specialist-Resume.pdf",
+      "pageCount": 2,
+      "fileSize": 152858,
+      "annotations": [
+        {
+          "page": 1,
+          "uri": "mailto:wmostafa12@gmail.com"
+        },
+        {
+          "page": 1,
+          "uri": "https://linkedin.com/in/wallymo"
+        },
+        {
+          "page": 1,
+          "uri": "https://wallymo.github.io/planet-group-retail-audience-marketing-specialist/"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/6748"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/4629"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.red-dot.org/project/dxa-digital-experience-audit-55219"
+        }
+      ],
+      "coverage": [
+        {
+          "id": "retail-audience-segmentation",
+          "requirement": "Define retail audience segments, buying triggers, and customer journeys around store operations, workforce priorities, retention, and customer experience.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "store operations",
+            "frontline workforce",
+            "customer experience",
+            "customer journeys"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "retail-messaging-and-content",
+          "requirement": "Build differentiated retail messaging and customer-led content, including stories, talk tracks, campaign assets, and executive briefs.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "messaging inputs",
+            "campaign",
+            "social posts",
+            "ad copy",
+            "presentation-ready client outputs"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "sales-enablement-and-account-engagement",
+          "requirement": "Create sales-ready materials that improve account engagement, enable customer conversations, and support pipeline and revenue growth.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "briefs",
+            "demo story",
+            "client-facing",
+            "presentation-ready"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "program-activation-and-field-alignment",
+          "requirement": "Turn audience strategy into campaigns, events, field programs, and sales plays that teams can use in real selling moments.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "integrated campaigns",
+            "brand planning",
+            "workshops",
+            "demonstrations"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "optimization-data-and-ai",
+          "requirement": "Use data, field feedback, and AI-driven insight to refine segmentation, improve messaging, and scale effective content.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "channel scoring",
+            "benchmarks",
+            "recommendations",
+            "risk scoring",
+            "AI"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "b2b-saas-workforce-technology",
+          "requirement": "Bring preferred experience in B2B SaaS, workforce management, HR technology, and industry-specific go-to-market programs.",
+          "priority": "preferred",
+          "evidenceStatus": "adjacent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "enterprise analytics",
+            "workflow",
+            "employee communication"
+          ],
+          "missingTerms": []
+        }
+      ],
+      "failures": [],
+      "warnings": []
+    },
+    "humanizer": {
+      "status": "passed",
+      "version": "2.2.0",
+      "mode": "surface-only",
+      "reviewedAt": "2026-07-28T00:24:26.730Z",
+      "copySha256": "b72d9f72d0d307274d9e5067fb41aea58808a28cd9993bf5219a86c886a631df",
+      "reviewMethod": "humanizer-skill",
+      "semanticPassAttested": true,
+      "staticChecksPassed": true
+    },
+    "route": {
+      "viewports": [
+        {
+          "name": "desktop",
+          "screenshot": "tmp/qa/planet-group-retail-audience-marketing-specialist/desktop.png",
+          "errors": []
+        },
+        {
+          "name": "mobile",
+          "screenshot": "tmp/qa/planet-group-retail-audience-marketing-specialist/mobile.png",
+          "errors": []
+        }
+      ],
+      "errors": []
+    }
+  }
+}

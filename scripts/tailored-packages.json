@@ -1894,6 +1894,26 @@
     },
     {
       "workflowVersion": 2,
+      "slug": "planet-group-retail-audience-marketing-specialist",
+      "roleTitle": "Retail Audience Marketing Specialist",
+      "artifactStem": "Planet-Group-Retail-Audience-Marketing-Specialist",
+      "configPath": "scripts/packages/planet-group-retail-audience-marketing-specialist.json",
+      "targetLane": "retail-audience-marketing-and-sales-enablement",
+      "evidenceMode": "resume-primary",
+      "fitClass": "adjacent",
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-06.html",
+        "project-04.html",
+        "project-02.html"
+      ],
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Planet-Group-Retail-Audience-Marketing-Specialist-Resume.pdf",
+      "publishStatus": "local-only",
+      "qaStatus": "qa-passed",
+      "builtAt": "2026-07-28T00:24:31.168Z"
+    },
+    {
+      "workflowVersion": 2,
       "slug": "planning-pod-product-associate",
       "roleTitle": "Planning Pod Product Associate",
       "artifactStem": "Planning-Pod-Product-Associate",
