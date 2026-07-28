@@ -1908,9 +1908,26 @@
         "project-02.html"
       ],
       "resumePdfPath": "output/pdf/Wally-Mostafa-Planet-Group-Retail-Audience-Marketing-Specialist-Resume.pdf",
-      "publishStatus": "local-only",
+      "publishStatus": "live-verified",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-07-28T00:24:31.168Z"
+      "builtAt": "2026-07-28T00:24:31.168Z",
+      "verification": {
+        "verifiedAt": "2026-07-28T00:26:50.038Z",
+        "routeUrl": "https://wallymo.github.io/planet-group-retail-audience-marketing-specialist/",
+        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-Planet-Group-Retail-Audience-Marketing-Specialist-Resume.pdf",
+        "configUrl": "https://wallymo.github.io/scripts/packages/planet-group-retail-audience-marketing-specialist.json",
+        "projectUrls": [
+          "https://wallymo.github.io/project-06.html",
+          "https://wallymo.github.io/project-04.html",
+          "https://wallymo.github.io/project-02.html"
+        ],
+        "configSha256": "9f1e69f98b9d0c406215961b242abc0491a34cb5b7975d6e7052aad0d498e3e6",
+        "pdfSha256": "8ead9605d77a98c723bcb69556ef5810604b7736ef5cbec3eac76a6418e2aa28",
+        "routeSha256": "816113e6b2ef9fabe9befa10a76bfb9970b0d671c0af0a5acce840b817ca6de2",
+        "scopedProjectSha256": {},
+        "configInputSha256": "2cc4489522bfa19f3079a29f367232de9a50cb683bdf0925d7b611d7e3e59a91",
+        "qaBuiltAt": "2026-07-28T00:24:31.168Z"
+      }
     },
     {
       "workflowVersion": 2,
