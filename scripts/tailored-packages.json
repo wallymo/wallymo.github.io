@@ -1937,11 +1937,32 @@
         "project-04.html"
       ],
       "resumePdfPath": "output/pdf/Wally-Mostafa-NIQ-Associate-Client-Manager-Resume.pdf",
-      "publishStatus": "local-only",
+      "publishStatus": "live-verified",
       "qaStatus": "qa-passed",
       "builtAt": "2026-07-29T17:21:21.563Z",
       "coverLetterPdfPath": "output/pdf/Wally-Mostafa-NIQ-Associate-Client-Manager-Cover-Letter.pdf",
-      "coverLetterMarkdownPath": "output/pdf/Wally-Mostafa-NIQ-Associate-Client-Manager-Cover-Letter.md"
+      "coverLetterMarkdownPath": "output/pdf/Wally-Mostafa-NIQ-Associate-Client-Manager-Cover-Letter.md",
+      "verification": {
+        "verifiedAt": "2026-07-29T17:24:19.191Z",
+        "routeUrl": "https://wallymo.github.io/niq-associate-client-manager/",
+        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-NIQ-Associate-Client-Manager-Resume.pdf",
+        "configUrl": "https://wallymo.github.io/scripts/packages/niq-associate-client-manager.json",
+        "projectUrls": [
+          "https://wallymo.github.io/project-06.html",
+          "https://wallymo.github.io/project-03.html",
+          "https://wallymo.github.io/project-04.html"
+        ],
+        "configSha256": "bbaf7b37add3429cfd4b01a42e0a42254eddf1316990dc59867667a97cc9a4e0",
+        "pdfSha256": "642f1612d0c72f3e817e79fda4daa2c0bd281cbf8baaca4897f954dcb2f5faa8",
+        "coverLetterPdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-NIQ-Associate-Client-Manager-Cover-Letter.pdf",
+        "coverLetterMarkdownUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-NIQ-Associate-Client-Manager-Cover-Letter.md",
+        "coverLetterPdfSha256": "5893a61e78cb28c4c1575235aafff7ac7b3e6ac78e2199da26adbe4f3ff1be56",
+        "coverLetterMarkdownSha256": "7b081288e0dcb0543c3bb00b425aff2f92bb3da2b9c4e4d48541e1853971f054",
+        "routeSha256": "c500bab9062f9bb756e827198d34eafb9c2dcab320485c33bea66ba3d12d6014",
+        "scopedProjectSha256": {},
+        "configInputSha256": "56494b7eef93af38af5d8d7c198897ecf9a6bc4d6476b5228f60183013d4434c",
+        "qaBuiltAt": "2026-07-29T17:21:21.563Z"
+      }
     },
     {
       "slug": "noom-design-systems-contract",
