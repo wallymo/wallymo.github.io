@@ -717,6 +717,12 @@ function validateResume(config, errors) {
       );
     }
   }
+  pushError(
+    errors,
+    resume.layoutDensity === undefined ||
+      ['standard', 'compact'].includes(resume.layoutDensity),
+    'resume.layoutDensity must be standard or compact'
+  );
 
   if (
     config.contractRevision !== 4 &&

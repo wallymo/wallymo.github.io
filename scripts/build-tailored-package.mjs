@@ -554,6 +554,49 @@ function buildResume(config, paths) {
     );
   }
   resumeHtml = replaceResumeExperienceSections(resumeHtml, config);
+  if (config.resume.layoutDensity === 'compact') {
+    resumeHtml = resumeHtml.replace(
+      '</head>',
+      `<style data-resume-layout-density="compact">
+  @page { margin: 0.45in; }
+  @media print {
+    header {
+      padding-bottom: 0.55rem;
+      margin-bottom: 0.7rem;
+    }
+    section {
+      margin-bottom: 0.65rem;
+    }
+    .section-title {
+      font-size: 0.72rem;
+      padding-bottom: 2px;
+      margin-bottom: 0.45rem;
+    }
+    .summary,
+    .capabilities-list li,
+    .job-desc li,
+    .awards-list li,
+    .edu {
+      font-size: 9pt;
+      line-height: 1.3;
+    }
+    .job {
+      margin-bottom: 0.65rem;
+    }
+    .job-title {
+      font-size: 10pt;
+    }
+    .job-meta {
+      font-size: 8.5pt;
+    }
+    .job-desc li {
+      margin-bottom: 0.12rem;
+    }
+  }
+</style>
+</head>`
+    );
+  }
   resumeHtml = replacePortfolioLink(resumeHtml, routeUrl);
   return resumeHtml;
 }

@@ -443,6 +443,7 @@ test('revisions 5 and 6 preserve every foundation bullet while allowing edits, a
 
 test('revisions 5 and 6 support relevance-first experience sections without duplicating or dropping roles', () => {
   const relevanceFirst = validConfig();
+  relevanceFirst.resume.layoutDensity = 'compact';
   relevanceFirst.resume.experienceSections = [
     {
       heading: 'Account Management Experience',
@@ -511,6 +512,13 @@ test('revisions 5 and 6 support relevance-first experience sections without dupl
       ],
     },
   ]);
+
+  const invalidDensity = structuredClone(relevanceFirst);
+  invalidDensity.resume.layoutDensity = 'tiny';
+  assert.match(
+    validateV2Config(invalidDensity).join('\n'),
+    /resume\.layoutDensity must be standard or compact/
+  );
 });
 
 test(
@@ -538,6 +546,7 @@ test(
           ],
         },
       ];
+      config.resume.layoutDensity = 'compact';
       approveHumanizerReview(config, {
         reviewedAt: '2026-07-29T12:00:00.000Z',
         semanticPassComplete: true,
