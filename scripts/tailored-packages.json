@@ -743,9 +743,26 @@
         "project-01.html"
       ],
       "resumePdfPath": "output/pdf/Wally-Mostafa-CVS-Health-Account-Manager-Resume.pdf",
-      "publishStatus": "local-only",
+      "publishStatus": "live-verified",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-07-29T16:18:59.762Z"
+      "builtAt": "2026-07-29T16:18:59.762Z",
+      "verification": {
+        "verifiedAt": "2026-07-29T16:22:18.649Z",
+        "routeUrl": "https://wallymo.github.io/cvs-health-account-manager/",
+        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-CVS-Health-Account-Manager-Resume.pdf",
+        "configUrl": "https://wallymo.github.io/scripts/packages/cvs-health-account-manager.json",
+        "projectUrls": [
+          "https://wallymo.github.io/project-06.html",
+          "https://wallymo.github.io/project-02.html",
+          "https://wallymo.github.io/project-01.html"
+        ],
+        "configSha256": "6863213ddd9ca58ef82b2c62395334f5bb8127093233d2a6715180d7d0bf15f8",
+        "pdfSha256": "e8f2eb32e76e1661bb9d0ea3707ed96ba38c6250d2222c43454413aecde1810b",
+        "routeSha256": "f045881e75ae6aaac00fdc16e078ce951e1b0b5812c718c8328a8fa489b4ec33",
+        "scopedProjectSha256": {},
+        "configInputSha256": "764495c7e0ff27a24decb99fd9fe50aae0c1eb4e42dc8e97f643da93a2209799",
+        "qaBuiltAt": "2026-07-29T16:18:59.762Z"
+      }
     },
     {
       "slug": "deloitte-human-capital",
