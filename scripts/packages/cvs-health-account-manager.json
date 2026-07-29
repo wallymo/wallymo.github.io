@@ -1,0 +1,850 @@
+{
+  "workflowVersion": 2,
+  "contractRevision": 6,
+  "slug": "cvs-health-account-manager",
+  "roleTitle": "CVS Health Account Manager",
+  "artifactStem": "CVS-Health-Account-Manager",
+  "fitClass": "strong",
+  "routeMode": "canonical-projects",
+  "selectedProjects": [
+    "project-06.html",
+    "project-02.html",
+    "project-01.html"
+  ],
+  "job": {
+    "company": "CVS Health",
+    "roleTitle": "Account Manager",
+    "sourceChannel": "chat-pasted-jd",
+    "dateCaptured": "2026-07-29",
+    "location": "Work from home; candidates can live anywhere in the United States; up to 25% travel",
+    "atsVendor": "unknown",
+    "rawJd": "CVS Health is building a more connected, convenient, and compassionate health experience. The Account Manager manages client relationships, supports customer satisfaction, and drives customer success. Responsibilities include serving as the primary contact for operational matters; addressing client needs and resolving issues; gathering and processing complex requirements; developing practical solutions; maintaining responsive, reliable, and accurate service; answering customer feedback and escalations; advocating for customers; coordinating internal resources; tracking client issues; reporting on account status, feedback, and improvement opportunities; identifying problems before they escalate; and participating in training and knowledge sharing. The role is work from home and candidates may live anywhere in the United States. Required qualifications include 3+ years in a client or customer service environment or a previous Account Manager role; strong working knowledge of Microsoft Outlook, Excel, PowerPoint, Word, and web-based applications; and the ability to travel up to 25%. PBM knowledge is helpful but not required. Experience with intranet and extranet systems, CRM, or adjudication platforms such as Salesforce, Peoplesafe, or AS400 is preferred. A high school diploma or GED is required and a bachelor's degree is preferred. The anticipated schedule is 40 hours per week, full time. The posted pay range is $43,888-$76,500, with possible bonus, commission, or short-term incentive eligibility. The anticipated application window closes August 14, 2026."
+  },
+  "classification": {
+    "targetLane": "client-account-delivery",
+    "evidenceMode": "resume-primary",
+    "primarySource": "The resume proves 7+ years of Fortune 500 pharma and healthcare account management, $2M-$50M+ budgets, client communication, requirements translation, timelines, risk visibility, and cross-functional delivery.",
+    "supportingSource": "The portfolio adds current proof in practical requirements gathering, client-led problem solving, operational workflow design, performance reporting, and regulated healthcare work.",
+    "hardGateStatus": "pass",
+    "hardGates": [
+      {
+        "gate": "Live in the United States for a work-from-home role",
+        "status": "pass",
+        "requirementId": "location-eligibility",
+        "evidence": "The resume lists Raleigh, North Carolina, and the posting allows candidates anywhere in the United States."
+      },
+      {
+        "gate": "Hold a high school diploma or GED",
+        "status": "pass",
+        "requirementId": "education",
+        "evidence": "The resume lists a bachelor's degree from Rutgers University, which exceeds the stated education minimum."
+      }
+    ]
+  },
+  "requirements": [
+    {
+      "id": "location-eligibility",
+      "text": "Live in the United States for this work-from-home role.",
+      "priority": "hard-gate",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The resume lists Raleigh, North Carolina, and the posting accepts candidates anywhere in the United States."
+      ],
+      "proofIds": [],
+      "destinations": [
+        "application-answer"
+      ],
+      "resumeTerms": [
+        "Raleigh, NC"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "account-management-experience",
+      "text": "Bring 3+ years of experience in a client or customer service environment or a previous Account Manager role.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The resume documents 7+ years of direct Fortune 500 pharma and healthcare account management."
+      ],
+      "proofIds": [
+        "account-management-01"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience"
+      ],
+      "resumeTerms": [
+        "7+ years managing",
+        "Client & Account Leadership"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "client-relationship-ownership",
+      "text": "Build and maintain client relationships as the primary contact for operational matters.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The resume documents long-term ownership of Fortune 500 healthcare relationships and account leadership on FCB Health's largest pharma business.",
+        "Account work translated client and brand needs into briefs, requirements, timelines, and coordinated delivery."
+      ],
+      "proofIds": [
+        "account-management-01",
+        "account-management-02",
+        "account-management-03"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "Fortune 500 healthcare relationships",
+        "client communication",
+        "client and brand needs"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "customer-service-escalations",
+      "text": "Address client needs, inquiries, feedback, and escalations with prompt, reliable service.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "The resume shows high-touch account delivery through client communication, creative feedback, timelines, risk visibility, and cross-functional follow-through.",
+        "Formal escalation case ownership is not named."
+      ],
+      "proofIds": [
+        "account-management-01",
+        "account-management-03"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "client communication",
+        "risk visibility",
+        "cross-functional delivery"
+      ],
+      "matchMode": "contextual"
+    },
+    {
+      "id": "requirements-and-solutions",
+      "text": "Gather and process complex client requirements and develop practical, efficient solutions.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Current work converts pharma agency needs into working tools for review, intake, scoping, routing, and submission capture.",
+        "Client-led POCs turn unclear business questions into testable products, demo flows, and roadmap decisions."
+      ],
+      "proofIds": [
+        "hedgehox-03",
+        "one-block-away-01",
+        "one-block-away-04",
+        "account-management-03"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "requirements",
+        "practical solutions",
+        "unclear business questions"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "account-performance-delivery",
+      "text": "Maintain responsive, reliable, and accurate service execution across the account.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The resume documents high-volume delivery against deadlines and budgets through briefs, production requirements, timelines, risk visibility, and coordinated handoff.",
+        "Current work runs from client discovery through working prototypes and iteration."
+      ],
+      "proofIds": [
+        "account-management-03",
+        "one-block-away-04",
+        "hedgehox-03"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience"
+      ],
+      "resumeTerms": [
+        "timelines",
+        "risk visibility",
+        "client iteration"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "tracking-and-reporting",
+      "text": "Track client issues and report on account status, feedback, and improvement opportunities.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "The Digital Experience Audit turned performance data, channel scoring, benchmarks, and recommendations into presentation-ready client outputs.",
+        "WeReady translates source health, risk scoring, and evidence trails into a decision workflow; formal CRM case reporting is not documented."
+      ],
+      "proofIds": [
+        "kinesso-03",
+        "one-block-away-03",
+        "account-management-03"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "reporting",
+        "performance data",
+        "recommendations"
+      ],
+      "matchMode": "contextual"
+    },
+    {
+      "id": "problem-solving-and-advocacy",
+      "text": "Identify issues early, advocate for the customer, and coordinate internal teams to improve the client experience.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The resume shows client-to-team translation, early risk visibility, and coordinated delivery across account, strategy, creative, UX, product, engineering, and operations.",
+        "Current discovery work turns unclear client needs into practical product decisions and working deliverables."
+      ],
+      "proofIds": [
+        "account-management-03",
+        "heartbeat-03",
+        "one-block-away-01",
+        "one-block-away-04"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "cross-functional delivery",
+        "unclear business questions",
+        "client needs"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "training-and-knowledge-sharing",
+      "text": "Keep skills current through training and share useful knowledge with colleagues.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "The resume documents senior distributed-team leadership through scaling product design from 2 to 30 people and current work in emerging regulated AI workflows.",
+        "Formal training-session participation and knowledge-sharing duties are not named."
+      ],
+      "proofIds": [
+        "kinesso-01",
+        "hedgehox-03"
+      ],
+      "destinations": [
+        "skills",
+        "experience"
+      ],
+      "resumeTerms": [
+        "2 to 30",
+        "AI tools"
+      ],
+      "matchMode": "contextual"
+    },
+    {
+      "id": "microsoft-office",
+      "text": "Use Outlook, Excel, PowerPoint, Word, and web-based applications effectively in day-to-day operations.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "proofIds": [],
+      "destinations": [
+        "application-answer"
+      ],
+      "resumeTerms": [
+        "Microsoft Office proficiency"
+      ],
+      "matchMode": "not-supported"
+    },
+    {
+      "id": "travel-availability",
+      "text": "Be able to travel up to 25%.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "proofIds": [],
+      "destinations": [
+        "application-answer"
+      ],
+      "resumeTerms": [
+        "travel up to 25%"
+      ],
+      "matchMode": "not-supported"
+    },
+    {
+      "id": "pbm-knowledge",
+      "text": "Bring knowledge of the Prescription Benefit Management industry.",
+      "priority": "preferred",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "proofIds": [],
+      "destinations": [
+        "application-answer"
+      ],
+      "resumeTerms": [
+        "Prescription Benefit Management"
+      ],
+      "matchMode": "not-supported"
+    },
+    {
+      "id": "crm-and-adjudication-platforms",
+      "text": "Have experience with intranet, extranet, CRM, or adjudication platforms such as Salesforce, Peoplesafe, or AS400.",
+      "priority": "preferred",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "proofIds": [],
+      "destinations": [
+        "application-answer"
+      ],
+      "resumeTerms": [
+        "Salesforce",
+        "AS400"
+      ],
+      "matchMode": "not-supported"
+    },
+    {
+      "id": "education",
+      "text": "Hold a high school diploma or GED; a bachelor's degree is preferred.",
+      "priority": "hard-gate",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The resume lists a BA in Labor Studies and Employee Relations from Rutgers University."
+      ],
+      "proofIds": [],
+      "destinations": [
+        "experience"
+      ],
+      "resumeTerms": [
+        "Rutgers University",
+        "BA Labor Studies & Employee Relations"
+      ],
+      "matchMode": "exact"
+    }
+  ],
+  "fitGate": {
+    "supportedOverlap": [
+      "7+ years of direct Fortune 500 pharma and healthcare account management with $2M-$50M+ budgets.",
+      "Direct client-to-team translation through briefs, requirements, feedback, timelines, early risk visibility, and cross-functional delivery.",
+      "Current work turns complex healthcare and agency requirements into practical workflows, review tools, and working client-led products.",
+      "The Digital Experience Audit links performance data and channel scoring to benchmarks, recommendations, and client reporting.",
+      "Scaled a distributed product-design organization from 2 to 30 people."
+    ],
+    "unsupportedRequirements": [
+      "Microsoft Outlook, Excel, PowerPoint, and Word proficiency is not stated in the public resume or portfolio.",
+      "Ability to travel up to 25% is a personal eligibility answer and is not established by the public resume.",
+      "PBM knowledge is not documented.",
+      "Named CRM, adjudication, intranet, or extranet platform experience is not documented."
+    ],
+    "actualMismatches": [],
+    "missingEvidence": [
+      "Formal ownership of customer escalation cases and account-status reports is not named.",
+      "The public evidence does not name Microsoft Office, PBM work, Salesforce, Peoplesafe, or AS400.",
+      "Travel availability must be confirmed in the application."
+    ],
+    "coverLetterBridge": {
+      "status": "not-needed",
+      "rationale": "The resume already proves the role's operating center through direct healthcare account leadership, client communication, requirements translation, reporting, and cross-functional delivery. A cover letter is not needed to make the fit credible."
+    },
+    "recommendation": "Proceed as a strong fit. Lead with direct healthcare account leadership, practical requirements work, issue visibility, reporting, and cross-functional follow-through. Keep Microsoft Office, travel availability, PBM, and named platform experience as unverified details instead of adding them to the resume."
+  },
+  "positioning": {
+    "laneId": "client-account-delivery",
+    "targetIdentity": "Healthcare account and client strategy leader",
+    "employerNeed": "Own client relationships, resolve operational issues, track account performance, and turn complex needs into practical solutions.",
+    "bridgeType": "direct",
+    "applicationStrategy": "direct",
+    "bridgeThesis": "turn client needs into practical solutions",
+    "proofIds": [
+      "account-management-01",
+      "account-management-03",
+      "kinesso-03"
+    ],
+    "remainingGap": null
+  },
+  "coverLetter": null,
+  "resume": {
+    "foundationId": "wally-mostafa-resume-2026-07-03",
+    "summary": "Healthcare account and client strategy leader with 15 years across pharma communications, regulated delivery, UX, and AI implementation. I bring 7+ years managing Fortune 500 healthcare relationships and $2M-$50M+ budgets. My work covers client communication, requirements, issue tracking, and reporting, backed by presentation and cross-functional delivery experience. I turn client needs into practical solutions and follow through.",
+    "skillIds": [
+      "client-account-leadership",
+      "client-success-product-adoption",
+      "program-project-delivery",
+      "regulated-healthcare-client-delivery"
+    ],
+    "skills": [
+      {
+        "label": "Client & Account Leadership",
+        "description": "Fortune 500 pharma and healthcare accounts, $2M-$50M+ budgets, client briefs, brand planning, and cross-functional delivery"
+      },
+      {
+        "label": "Client Success & Product Adoption",
+        "description": "Client discovery, adoption-focused workflows, training and roadshows, human review, and product decisions based on user needs"
+      },
+      {
+        "label": "Program & Project Delivery",
+        "description": "Scoping, requirements, timelines, review routing, team coordination, risk visibility, and build-ready handoff across product, design, and client teams"
+      },
+      {
+        "label": "Regulated Healthcare & Client Delivery",
+        "description": "11 years across pharma/healthcare communications, FDA/HIPAA/MLR workflows, HCP/patient UX, client workshops, and stakeholder adoption"
+      }
+    ],
+    "roles": {
+      "hedgehox": [
+        "Secured an investor for proprietary Claims Detection software by building the functional POC, shaping the demo story, and iterating with investors",
+        "Designed Claims Detector workflows that identify promotional claims, surface evidence gaps, and pre-populate audit-ready annotations before MLR submission",
+        "Converted pharma agency needs into AI tools for MLR claim review, brief intake, scoping, review routing, submission capture, and FDA signal monitoring",
+        "Designed the full Xenagos Bio startup biopharma website from scratch, including investor-facing structure, scientific positioning, visual direction, and hidden design-system handoff",
+        "Built Scope Generator for pharma agency finance and operations teams to manage regional rate cards, brands, sub-brands, and natural-language scope changes",
+        "Developed FDA Warning Tool concepts that connect warning-letter patterns to content-risk guidance for pharma teams"
+      ],
+      "one-block-away": [
+        "Build client-led AI POCs that turn unclear business questions and requirements into testable product surfaces, demo flows, and roadmap decisions",
+        "Built ListingPal's AI listing-generation POC and landing page, turning basic property inputs into listing copy, social posts, ad copy, styling direction, and MLS/SEO-ready language in under 90 seconds",
+        "Built WeReady's Bailey Intelligence dashboard, translating founder inputs, GitHub signals, source health, risk scoring, and evidence trails into startup-readiness workflows",
+        "Own product strategy, UX, AI workflow design, front-end build, backend logic, demo readiness, and client iteration from first ask through working prototype",
+        "Currently building the website and sponsor strategy for a Tunisia youth soccer program, positioning the project for player advancement, community support, and donor outreach"
+      ],
+      "kinesso": [
+        "Scaled product design from 2 to 30 people across the US and Poland for enterprise analytics used by 7,000+ users across 22 white-label brands",
+        "Led UX and design-system strategy for MIE data visualization, dashboard building, brand theming, and reusable analytics components",
+        "Built the Digital Experience Audit workflow for performance data, channel scoring, benchmarks, recommendations, visualization, and presentation-ready client reporting",
+        "Design-system and analytics work earned 5 Indigo Gold, 4 Indigo Silver, and Red Dot recognition"
+      ],
+      "omnicom": [
+        "Supported oncology accounts as a freelance UX designer, combining UX design and account-management experience to strengthen regulated healthcare work",
+        "Championed UX best practices across account, strategy, creative, and delivery conversations, translating brand goals into clearer user flows, content structure, and digital recommendations"
+      ],
+      "heartbeat": [
+        "Led UX research and experience strategy for pharma and healthcare work, translating stakeholder input, competitive audits, and user needs into digital product direction",
+        "Created journey maps, site maps, user flows, wireframes, and prototypes for patient, HCP, and internal brand-team experiences across regulated healthcare programs",
+        "Partnered with strategy, creative, account, and engineering teams to move UX recommendations from research findings into build-ready product and campaign experiences"
+      ],
+      "account-management": [
+        "7+ years managing Fortune 500 pharma and healthcare clients with $2M-$50M+ budgets across CNS/neurology, psychiatry, cardiovascular/metabolic, and sleep/wakefulness brands including NUVIGIL, Namenda XR, Lipitor, and Zoloft",
+        "One of two account consumer leads on FCB Health's largest pharma account across all verticals: TV, radio, digital, gaming, Times Square, unbranded campaigns, brand planning, and MLR review",
+        "Translated day-to-day client and brand needs into briefs, creative feedback, production requirements, timelines, and MLR-ready deliverables across account, creative, UX, and development teams"
+      ]
+    },
+    "sourceBulletIds": {
+      "hedgehox": [
+        "hedgehox-01",
+        "hedgehox-02",
+        "hedgehox-03",
+        "hedgehox-04",
+        "hedgehox-05",
+        "hedgehox-06"
+      ],
+      "one-block-away": [
+        "one-block-away-01",
+        "one-block-away-02",
+        "one-block-away-03",
+        "one-block-away-04",
+        "one-block-away-05"
+      ],
+      "kinesso": [
+        "kinesso-01",
+        "kinesso-02",
+        "kinesso-03",
+        "kinesso-04"
+      ],
+      "omnicom": [
+        "omnicom-01",
+        "omnicom-02"
+      ],
+      "heartbeat": [
+        "heartbeat-01",
+        "heartbeat-02",
+        "heartbeat-03"
+      ],
+      "account-management": [
+        "account-management-01",
+        "account-management-02",
+        "account-management-03"
+      ]
+    }
+  },
+  "hero": {
+    "eyebrow": "CVS Health | Account Manager",
+    "tags": [
+      "Healthcare account leadership",
+      "Requirements and issue resolution",
+      "Reporting and follow-through"
+    ],
+    "intro": "I bring 7+ years managing Fortune 500 healthcare clients and $2M-$50M+ budgets. I turn client needs into practical solutions, then carry them into briefs, timelines, and coordinated delivery. I also built reporting and recommendation workflows used across 22 brands, plus tools that make complex pharma requirements easier to manage. For CVS Health, that means clear communication, early issue visibility, and steady follow-through."
+  },
+  "contact": {
+    "prompt": "If CVS Health needs an Account Manager who can own client communication, translate complex requirements, and keep issues visible and reporting clear, email is the fastest way to reach me.",
+    "signoff": "Healthcare accounts | operational problem solving | clear follow-through"
+  },
+  "copyReview": {
+    "humanizerVersion": "2.2.0",
+    "mode": "surface-only",
+    "status": "passed",
+    "reviewedAt": "2026-07-29T16:18:34.331Z",
+    "copySha256": "7e11658b2f30aac1e8fb01fe92049effeaba8c2fae25fa003f3408410b797624",
+    "preserved": [
+      "content",
+      "structure",
+      "claims",
+      "ending"
+    ],
+    "rewriteAuthorized": false,
+    "reviewMethod": "humanizer-skill",
+    "semanticPassAttested": true,
+    "staticChecksPassed": true,
+    "finalAntiAiPass": true,
+    "remainingTells": []
+  },
+  "constraints": {
+    "doNotClaim": [
+      "Microsoft Office proficiency",
+      "Ability to travel up to 25%",
+      "Prescription Benefit Management industry experience",
+      "CVS Caremark experience",
+      "Salesforce account administration",
+      "Peoplesafe experience",
+      "AS400 experience",
+      "Formal customer escalation case ownership",
+      "Formal CRM account-status reporting"
+    ],
+    "blockedTerms": [
+      "Microsoft Office expert",
+      "PBM expert",
+      "CVS Caremark experience",
+      "Salesforce administrator",
+      "Peoplesafe experience",
+      "AS400 experience",
+      "available to travel 25%"
+    ]
+  },
+  "privacy": {
+    "publicSafe": true,
+    "notes": "Contains only the public job posting and sanitized evidence from the public resume and portfolio. It excludes recruiter contact details, application answers, compensation decisions, travel availability, and other private eligibility information."
+  },
+  "qa": {
+    "status": "qa-passed",
+    "builtAt": "2026-07-29T16:18:59.762Z",
+    "configInputSha256": "764495c7e0ff27a24decb99fd9fe50aae0c1eb4e42dc8e97f643da93a2209799",
+    "sourceResumeSha256": "375cc6566f5bbad5b95be9da551dfe87824378fb252222409d29ef32d334ca25",
+    "resumeFoundation": {
+      "id": "wally-mostafa-resume-2026-07-03",
+      "sourcePdfSha256": "f9b05b6c3c134262b1af6c5734363daf4385cf335407a139779a37d138adf1aa"
+    },
+    "artifactHashes": {
+      "routeSha256": "f045881e75ae6aaac00fdc16e078ce951e1b0b5812c718c8328a8fa489b4ec33",
+      "resumePdfSha256": "e8f2eb32e76e1661bb9d0ea3707ed96ba38c6250d2222c43454413aecde1810b",
+      "coverLetterPdfSha256": null,
+      "coverLetterMarkdownSha256": null,
+      "scopedProjectSha256": {}
+    },
+    "renderer": {
+      "browser": {
+        "name": "chrome-headless-shell",
+        "version": "Google Chrome for Testing 149.0.7827.55"
+      },
+      "htmlPath": "tmp/tailored-resumes/cvs-health-account-manager.html",
+      "pdfPath": "output/pdf/Wally-Mostafa-CVS-Health-Account-Manager-Resume.pdf"
+    },
+    "coverLetterRenderer": null,
+    "coverLetter": null,
+    "ats": {
+      "ok": true,
+      "pdfPath": "output/pdf/Wally-Mostafa-CVS-Health-Account-Manager-Resume.pdf",
+      "pageCount": 2,
+      "fileSize": 133646,
+      "annotations": [
+        {
+          "page": 1,
+          "uri": "mailto:wmostafa12@gmail.com"
+        },
+        {
+          "page": 1,
+          "uri": "https://linkedin.com/in/wallymo"
+        },
+        {
+          "page": 1,
+          "uri": "https://wallymo.github.io/cvs-health-account-manager/"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/6748"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/4629"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.red-dot.org/project/dxa-digital-experience-audit-55219"
+        }
+      ],
+      "coverage": [
+        {
+          "id": "location-eligibility",
+          "requirement": "Live in the United States for this work-from-home role.",
+          "priority": "hard-gate",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "Raleigh, NC"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "account-management-experience",
+          "requirement": "Bring 3+ years of experience in a client or customer service environment or a previous Account Manager role.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "7+ years managing",
+            "Client & Account Leadership"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "client-relationship-ownership",
+          "requirement": "Build and maintain client relationships as the primary contact for operational matters.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "Fortune 500 healthcare relationships",
+            "client communication",
+            "client and brand needs"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "customer-service-escalations",
+          "requirement": "Address client needs, inquiries, feedback, and escalations with prompt, reliable service.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "contextual",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "client communication",
+            "risk visibility",
+            "cross-functional delivery"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "requirements-and-solutions",
+          "requirement": "Gather and process complex client requirements and develop practical, efficient solutions.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "requirements",
+            "practical solutions",
+            "unclear business questions"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "account-performance-delivery",
+          "requirement": "Maintain responsive, reliable, and accurate service execution across the account.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "timelines",
+            "risk visibility",
+            "client iteration"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "tracking-and-reporting",
+          "requirement": "Track client issues and report on account status, feedback, and improvement opportunities.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "contextual",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "reporting",
+            "performance data",
+            "recommendations"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "problem-solving-and-advocacy",
+          "requirement": "Identify issues early, advocate for the customer, and coordinate internal teams to improve the client experience.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "cross-functional delivery",
+            "unclear business questions",
+            "client needs"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "training-and-knowledge-sharing",
+          "requirement": "Keep skills current through training and share useful knowledge with colleagues.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "contextual",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "2 to 30",
+            "AI tools"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "microsoft-office",
+          "requirement": "Use Outlook, Excel, PowerPoint, Word, and web-based applications effectively in day-to-day operations.",
+          "priority": "core",
+          "evidenceStatus": "none",
+          "matchMode": "not-supported",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "Microsoft Office proficiency"
+          ]
+        },
+        {
+          "id": "travel-availability",
+          "requirement": "Be able to travel up to 25%.",
+          "priority": "core",
+          "evidenceStatus": "none",
+          "matchMode": "not-supported",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "travel up to 25%"
+          ]
+        },
+        {
+          "id": "pbm-knowledge",
+          "requirement": "Bring knowledge of the Prescription Benefit Management industry.",
+          "priority": "preferred",
+          "evidenceStatus": "none",
+          "matchMode": "not-supported",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "Prescription Benefit Management"
+          ]
+        },
+        {
+          "id": "crm-and-adjudication-platforms",
+          "requirement": "Have experience with intranet, extranet, CRM, or adjudication platforms such as Salesforce, Peoplesafe, or AS400.",
+          "priority": "preferred",
+          "evidenceStatus": "none",
+          "matchMode": "not-supported",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "Salesforce",
+            "AS400"
+          ]
+        },
+        {
+          "id": "education",
+          "requirement": "Hold a high school diploma or GED; a bachelor's degree is preferred.",
+          "priority": "hard-gate",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "Rutgers University",
+            "BA Labor Studies & Employee Relations"
+          ],
+          "missingTerms": []
+        }
+      ],
+      "failures": [],
+      "warnings": []
+    },
+    "humanizer": {
+      "status": "passed",
+      "version": "2.2.0",
+      "mode": "surface-only",
+      "reviewedAt": "2026-07-29T16:18:34.331Z",
+      "copySha256": "7e11658b2f30aac1e8fb01fe92049effeaba8c2fae25fa003f3408410b797624",
+      "reviewMethod": "humanizer-skill",
+      "semanticPassAttested": true,
+      "staticChecksPassed": true
+    },
+    "route": {
+      "viewports": [
+        {
+          "name": "desktop",
+          "screenshot": "tmp/qa/cvs-health-account-manager/desktop.png",
+          "errors": []
+        },
+        {
+          "name": "mobile",
+          "screenshot": "tmp/qa/cvs-health-account-manager/mobile.png",
+          "errors": []
+        }
+      ],
+      "errors": []
+    }
+  }
+}
