@@ -2716,9 +2716,26 @@
         "project-03.html"
       ],
       "resumePdfPath": "output/pdf/Wally-Mostafa-WEX-Account-Executive-Resume.pdf",
-      "publishStatus": "local-only",
+      "publishStatus": "live-verified",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-07-29T00:13:19.718Z"
+      "builtAt": "2026-07-29T00:13:19.718Z",
+      "verification": {
+        "verifiedAt": "2026-07-29T00:18:49.218Z",
+        "routeUrl": "https://wallymo.github.io/wex-account-executive/",
+        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-WEX-Account-Executive-Resume.pdf",
+        "configUrl": "https://wallymo.github.io/scripts/packages/wex-account-executive.json",
+        "projectUrls": [
+          "https://wallymo.github.io/project-06.html",
+          "https://wallymo.github.io/project-01.html",
+          "https://wallymo.github.io/project-03.html"
+        ],
+        "configSha256": "a8592cd7badd1e593ed23880719222dcf0e64b6dd67a32fec8d2a9a02fc9141d",
+        "pdfSha256": "5eba792d99a4b4f5504ed2a70129ad3ad9c9f50c6a93dc63ebe54b56ab544c00",
+        "routeSha256": "57f6c35a6e1a35b023fe869b9187fab169c935d27d1ad175c471f21c5778230f",
+        "scopedProjectSha256": {},
+        "configInputSha256": "8d716c41de57bad73267136a681634ea849cb598e232f4a7e598d991d7a9343d",
+        "qaBuiltAt": "2026-07-29T00:13:19.718Z"
+      }
     },
     {
       "slug": "xo-in-house-creator",
