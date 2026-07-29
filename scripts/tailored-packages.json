@@ -2374,9 +2374,26 @@
         "project-02.html"
       ],
       "resumePdfPath": "output/pdf/Wally-Mostafa-SafeRide-Health-Strategic-Account-Manager-Resume.pdf",
-      "publishStatus": "local-only",
+      "publishStatus": "live-verified",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-07-29T03:08:02.132Z"
+      "builtAt": "2026-07-29T03:08:02.132Z",
+      "verification": {
+        "verifiedAt": "2026-07-29T03:10:04.925Z",
+        "routeUrl": "https://wallymo.github.io/saferide-health-strategic-account-manager/",
+        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-SafeRide-Health-Strategic-Account-Manager-Resume.pdf",
+        "configUrl": "https://wallymo.github.io/scripts/packages/saferide-health-strategic-account-manager.json",
+        "projectUrls": [
+          "https://wallymo.github.io/project-06.html",
+          "https://wallymo.github.io/project-01.html",
+          "https://wallymo.github.io/project-02.html"
+        ],
+        "configSha256": "3f17a5dd89f62dfaf8ab82181c1f894e61262cbafdf11d5ef400aa4d84621e68",
+        "pdfSha256": "c2dc5e6b598317910b1fdbdd476229f78021c654a79c8e2b7ccec7bf801f3517",
+        "routeSha256": "087420c2a8530460375ad8f880731c2e5e1e9182d64f65acf431ff9657496f2b",
+        "scopedProjectSha256": {},
+        "configInputSha256": "fd0ac6f88cf9a153629c5e1bd4276c2b4110bd762023f0573ba909a537846cce",
+        "qaBuiltAt": "2026-07-29T03:08:02.132Z"
+      }
     },
     {
       "slug": "sas-ux-data-visualization",
