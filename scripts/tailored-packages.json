@@ -1660,9 +1660,26 @@
         "project-01.html"
       ],
       "resumePdfPath": "output/pdf/Wally-Mostafa-Model-B-Account-Director-Resume.pdf",
-      "publishStatus": "local-only",
+      "publishStatus": "live-verified",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-07-29T15:55:54.780Z"
+      "builtAt": "2026-07-29T15:55:54.780Z",
+      "verification": {
+        "verifiedAt": "2026-07-29T15:57:19.666Z",
+        "routeUrl": "https://wallymo.github.io/model-b-account-director/",
+        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-Model-B-Account-Director-Resume.pdf",
+        "configUrl": "https://wallymo.github.io/scripts/packages/model-b-account-director.json",
+        "projectUrls": [
+          "https://wallymo.github.io/project-06.html",
+          "https://wallymo.github.io/project-02.html",
+          "https://wallymo.github.io/project-01.html"
+        ],
+        "configSha256": "e9dbae044ff0b44cef4ed3855e156d1f0ad3c683b690d41c24ecb584c2238954",
+        "pdfSha256": "a199b42be6b42296c28544aad7031e11994c62c234c54567f8724b93fc6c2091",
+        "routeSha256": "19d5f09aa67d1b0bd365ccc5adabdb2aa55b6490c9f917868be1588aed804388",
+        "scopedProjectSha256": {},
+        "configInputSha256": "b3a751666e3913699fe5176b384af36b1d62d4f4ad2c145d5aec33eca447b379",
+        "qaBuiltAt": "2026-07-29T15:55:54.780Z"
+      }
     },
     {
       "workflowVersion": 2,
