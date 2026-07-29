@@ -1898,6 +1898,30 @@
     },
     {
       "workflowVersion": 2,
+      "contractRevision": 5,
+      "slug": "pharmaceutical-agency-account-supervisor",
+      "roleTitle": "Pharmaceutical Agency Account Supervisor",
+      "artifactStem": "Pharmaceutical-Agency-Account-Supervisor",
+      "configPath": "scripts/packages/pharmaceutical-agency-account-supervisor.json",
+      "targetLane": "client-account-delivery",
+      "evidenceMode": "resume-primary",
+      "fitClass": "strong",
+      "positioningLane": "client-account-delivery",
+      "bridgeType": "direct",
+      "applicationStrategy": "direct",
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-01.html",
+        "project-08.html",
+        "project-06.html"
+      ],
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Pharmaceutical-Agency-Account-Supervisor-Resume.pdf",
+      "publishStatus": "local-only",
+      "qaStatus": "qa-passed",
+      "builtAt": "2026-07-29T01:03:38.610Z"
+    },
+    {
+      "workflowVersion": 2,
       "slug": "phreesia-senior-associate-client-solutions",
       "roleTitle": "Phreesia Sr. Associate, Client Solutions",
       "artifactStem": "Phreesia-Senior-Associate-Client-Solutions",
