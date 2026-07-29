@@ -2355,6 +2355,30 @@
       "publishStatus": "live-verified"
     },
     {
+      "workflowVersion": 2,
+      "contractRevision": 5,
+      "slug": "saferide-health-strategic-account-manager",
+      "roleTitle": "SafeRide Health Strategic Account Manager",
+      "artifactStem": "SafeRide-Health-Strategic-Account-Manager",
+      "configPath": "scripts/packages/saferide-health-strategic-account-manager.json",
+      "targetLane": "client-account-delivery",
+      "evidenceMode": "resume-primary",
+      "fitClass": "adjacent",
+      "positioningLane": "client-account-delivery",
+      "bridgeType": "operating-center",
+      "applicationStrategy": "transferable",
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-06.html",
+        "project-01.html",
+        "project-02.html"
+      ],
+      "resumePdfPath": "output/pdf/Wally-Mostafa-SafeRide-Health-Strategic-Account-Manager-Resume.pdf",
+      "publishStatus": "local-only",
+      "qaStatus": "qa-passed",
+      "builtAt": "2026-07-29T03:08:02.132Z"
+    },
+    {
       "slug": "sas-ux-data-visualization",
       "roleTitle": "SAS UX Designer, Data Visualization",
       "fitClass": "adjacent",

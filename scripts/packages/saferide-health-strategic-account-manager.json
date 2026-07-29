@@ -1,0 +1,873 @@
+{
+  "workflowVersion": 2,
+  "contractRevision": 5,
+  "slug": "saferide-health-strategic-account-manager",
+  "roleTitle": "SafeRide Health Strategic Account Manager",
+  "artifactStem": "SafeRide-Health-Strategic-Account-Manager",
+  "fitClass": "adjacent",
+  "routeMode": "canonical-projects",
+  "selectedProjects": [
+    "project-06.html",
+    "project-01.html",
+    "project-02.html"
+  ],
+  "job": {
+    "company": "SafeRide Health",
+    "roleTitle": "Strategic Account Manager",
+    "jobId": "264",
+    "jobUrl": "https://saferidehealth.bamboohr.com/careers/264",
+    "sourceChannel": "company-careers",
+    "dateCaptured": "2026-07-28",
+    "location": "Remote - United States",
+    "atsVendor": "bamboohr",
+    "rawJd": "About the job\nAbout The Role\n\nAs a Strategic Account Manager, you will play a pivotal role in fostering long-term client relationships, driving data-driven discussions, and identifying growth opportunities within our embedded account base. You will act as a trusted advisor to our clients, ensuring a seamless experience while coordinating operational goals, performance measures, and contract implementations. This role directly supports SafeRide's mission by strengthening payer partnerships and improving access to care through high-quality transportation solutions.\n\nJob Responsibilities\n\nServe as the primary client liaison and strategic thought partner for assigned accounts, building trusted relationships\n\nLead data-driven conversations with clients to enhance membership services and overall performance\n\nIdentify and drive expansion opportunities within the embedded account base in partnership with Sales\n\nLead expansion implementations in coordination with Strategic Accounts leadership\n\nPartner with Operations to define, implement, and monitor performance measures and operational goals\n\nProactively identify, address, and resolve operational and account-related issues\n\nProvide performance insights and growth recommendations to internal leadership\n\nSupport contract management, including renewals and new agreements, ensuring alignment with operational feasibility\n\nFacilitate contract implementation, training, and compliance requirements\n\nLead development of operational procedures and project management initiatives tied to client contracts\n\nRequired Qualifications\n\nBachelor's degree or equivalent experience\n\n3+ years of experience in Customer Success or Account Management within healthcare, B2B SaaS, or enterprise technology\n\nExperience managing accounts with an Annual Contract Value (ACV) of $500K or greater\n\nStrong written and verbal communication skills\n\nAnalytical mindset with ability to interpret data and drive insights\n\nAbility to manage multiple stakeholders and build consensus across teams\n\nStrong organizational and project management skills\n\nWillingness to travel up to 1x per month\n\nPreferred Qualifications\n\nExperience in consulting or solutions architecture\n\nExperience with HubSpot or other CRM platforms\n\nExperience working in fast-paced, high-growth environments\n\nBenefits\n\nWe offer a remote-first work environment, competitive compensation, and comprehensive benefits including career growth and development opportunities in a mission-driven organization; competitive salary, annual bonus opportunities, and equity options; comprehensive medical, dental, and vision insurance; 401(k) with company match; and generous PTO, paid company holidays, and paid parental leave.\n\nAbout Us\n\nSafeRide Health is a technology and services company dedicated to reducing barriers to care by improving the delivery of non-emergency medical transportation to people across America. SafeRide employs proprietary technology, paired with a nationwide network of vetted transportation providers. This enables payers and health systems to deliver cost-effective, on-demand transportation intelligently, enhancing the patient experience in the process. SafeRide serves the largest Medicare Advantage, Medicaid, and provider programs in the country."
+  },
+  "classification": {
+    "targetLane": "client-account-delivery",
+    "evidenceMode": "resume-primary",
+    "primarySource": "The resume carries the fit call. It shows 7+ years managing Fortune 500 pharma and healthcare clients with $2M-$50M+ budgets, plus brand planning, briefs, timelines, regulated delivery, and cross-functional account work.",
+    "supportingSource": "The portfolio supports the account story with enterprise analytics, benchmarks and recommendations, client-led POCs, and current healthcare workflow implementation. It does not replace missing ACV, renewal, expansion, payer, or CRM proof.",
+    "hardGateStatus": "pass",
+    "hardGates": [
+      {
+        "gate": "Work remotely within the United States",
+        "status": "pass",
+        "requirementId": "location-eligibility",
+        "evidence": "The resume lists Raleigh, North Carolina, and the posting is remote within the United States."
+      },
+      {
+        "gate": "Bachelor's degree or equivalent experience",
+        "status": "pass",
+        "requirementId": "bachelors-degree",
+        "evidence": "The resume lists a BA from Rutgers University."
+      },
+      {
+        "gate": "At least three years of Customer Success or Account Management experience in healthcare, B2B SaaS, or enterprise technology",
+        "status": "pass",
+        "requirementId": "account-management-experience",
+        "evidence": "The resume documents 7+ years of direct Fortune 500 pharma and healthcare account management."
+      }
+    ]
+  },
+  "requirements": [
+    {
+      "id": "location-eligibility",
+      "text": "Work remotely within the United States.",
+      "priority": "hard-gate",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The resume lists Raleigh, North Carolina, and the live posting lists the role as remote within the United States."
+      ],
+      "proofIds": [],
+      "destinations": [
+        "application-answer"
+      ],
+      "resumeTerms": [
+        "Raleigh, NC"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "bachelors-degree",
+      "text": "Hold a bachelor's degree or have equivalent experience.",
+      "priority": "hard-gate",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The resume lists a BA in Labor Studies and Employee Relations from Rutgers University."
+      ],
+      "proofIds": [],
+      "destinations": [
+        "application-answer"
+      ],
+      "resumeTerms": [
+        "BA Labor Studies & Employee Relations",
+        "Rutgers University"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "account-management-experience",
+      "text": "Bring at least three years of Customer Success or Account Management experience in healthcare, B2B SaaS, or enterprise technology.",
+      "priority": "hard-gate",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The resume documents 7+ years managing Fortune 500 pharma and healthcare clients."
+      ],
+      "proofIds": [
+        "account-management-01"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience"
+      ],
+      "resumeTerms": [
+        "7+ years managing",
+        "Fortune 500 pharma and healthcare clients",
+        "Account Management & Client Strategy"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "account-scale-acv",
+      "text": "Manage accounts with an Annual Contract Value of $500K or greater.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "The resume proves responsibility for large Fortune 500 healthcare accounts with $2M-$50M+ budgets.",
+        "Budget scope supports the scale of the work, but the public evidence does not identify those amounts as Annual Contract Value."
+      ],
+      "proofIds": [
+        "account-management-01"
+      ],
+      "destinations": [
+        "summary",
+        "experience",
+        "application-answer"
+      ],
+      "resumeTerms": [
+        "$2M-$50M+ budgets"
+      ],
+      "matchMode": "contextual"
+    },
+    {
+      "id": "client-liaison-thought-partner",
+      "text": "Serve as the primary client liaison and strategic thought partner for assigned accounts.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The resume documents 7+ years managing Fortune 500 pharma and healthcare clients.",
+        "FCB Health experience includes account leadership on the agency's largest pharma account and translation of client strategy into delivery requirements."
+      ],
+      "proofIds": [
+        "account-management-01",
+        "account-management-02",
+        "account-management-03"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "Client & Account Leadership",
+        "Fortune 500 pharma and healthcare accounts",
+        "client briefs"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "data-performance-insights",
+      "text": "Lead data-driven client conversations and provide performance insights and growth recommendations.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Kinesso work turned channel scoring, benchmarks, recommendations, visualization, and presentation-ready outputs into a repeatable client-facing workflow.",
+        "The portfolio shows how Digital Experience Audit converted performance data into strategy and next steps."
+      ],
+      "proofIds": [
+        "kinesso-02",
+        "kinesso-03"
+      ],
+      "destinations": [
+        "summary",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "channel scoring",
+        "benchmarks",
+        "recommendations",
+        "presentation-ready client outputs"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "expansion-growth",
+      "text": "Identify and drive account expansion opportunities in partnership with Sales.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "proofIds": [],
+      "destinations": [
+        "application-answer",
+        "cover-letter"
+      ],
+      "resumeTerms": [
+        "expansion opportunities",
+        "upsell",
+        "cross-sell"
+      ],
+      "matchMode": "not-supported"
+    },
+    {
+      "id": "operational-performance",
+      "text": "Partner with Operations to define and monitor performance measures, operational goals, and account issues.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "The resume shows finance and operations workflow design, analytics, risk visibility, review routing, and cross-functional issue prevention.",
+        "The public evidence does not show formal ownership of payer-service KPIs, transportation operations, or account health metrics."
+      ],
+      "proofIds": [
+        "hedgehox-03",
+        "hedgehox-05",
+        "kinesso-03"
+      ],
+      "destinations": [
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "finance and operations teams",
+        "risk visibility",
+        "review routing"
+      ],
+      "matchMode": "contextual"
+    },
+    {
+      "id": "contract-renewals",
+      "text": "Support contract management, renewals, and new agreements while checking operational feasibility.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "The resume proves large-budget account work plus Scope Generator work for agency finance and operations teams managing rate cards, brands, sub-brands, and scope changes.",
+        "It does not document renewal ownership, contract negotiation, or new-agreement closing."
+      ],
+      "proofIds": [
+        "account-management-01",
+        "hedgehox-05"
+      ],
+      "destinations": [
+        "experience"
+      ],
+      "resumeTerms": [
+        "rate cards",
+        "scope changes",
+        "$2M-$50M+ budgets"
+      ],
+      "matchMode": "contextual"
+    },
+    {
+      "id": "implementation-training-compliance",
+      "text": "Lead implementation, training, and compliance requirements tied to client contracts.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "The resume shows regulated healthcare delivery, client workshops, stakeholder adoption, review routing, MLR work, and implementation from requirements through build-ready handoff.",
+        "It does not show implementation ownership tied to payer contracts or NEMT compliance."
+      ],
+      "proofIds": [
+        "hedgehox-03",
+        "kinesso-01",
+        "account-management-03"
+      ],
+      "destinations": [
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "stakeholder adoption",
+        "review routing",
+        "MLR"
+      ],
+      "matchMode": "contextual"
+    },
+    {
+      "id": "project-management-consensus",
+      "text": "Lead operational procedures and project initiatives while building consensus across multiple stakeholders.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The resume shows scoping, requirements, timelines, review routing, team coordination, risk visibility, and delivery across account, creative, UX, product, development, finance, and operations teams."
+      ],
+      "proofIds": [
+        "hedgehox-03",
+        "account-management-03",
+        "heartbeat-03"
+      ],
+      "destinations": [
+        "skills",
+        "experience"
+      ],
+      "resumeTerms": [
+        "Program & Project Delivery",
+        "team coordination",
+        "timelines"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "travel",
+      "text": "Be willing to travel up to once per month.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "proofIds": [],
+      "destinations": [
+        "application-answer"
+      ],
+      "resumeTerms": [
+        "willing to travel once per month"
+      ],
+      "matchMode": "not-supported"
+    },
+    {
+      "id": "consulting-solutions-architecture",
+      "text": "Bring consulting or solutions architecture experience.",
+      "priority": "preferred",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Current work turns client questions into scoped product requirements, working POCs, demo flows, and roadmap decisions.",
+        "The resume supports consultative solution delivery without claiming a formal solutions architect title."
+      ],
+      "proofIds": [
+        "one-block-away-01",
+        "one-block-away-04",
+        "hedgehox-03"
+      ],
+      "destinations": [
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "client-led AI POCs",
+        "demo flows",
+        "roadmap decisions"
+      ],
+      "matchMode": "contextual"
+    },
+    {
+      "id": "crm-platform",
+      "text": "Use HubSpot or another CRM platform.",
+      "priority": "preferred",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "proofIds": [],
+      "destinations": [
+        "application-answer"
+      ],
+      "resumeTerms": [
+        "HubSpot",
+        "CRM platform"
+      ],
+      "matchMode": "not-supported"
+    }
+  ],
+  "fitGate": {
+    "supportedOverlap": [
+      "7+ years of direct Fortune 500 pharma and healthcare account management with $2M-$50M+ budgets.",
+      "Direct client and brand strategy work across briefs, timelines, production requirements, regulated review, and cross-functional delivery.",
+      "Enterprise analytics proof through channel scoring, benchmarks, recommendations, visualization, and presentation-ready client outputs.",
+      "Implementation and operations adjacency through scoping, review routing, finance workflows, stakeholder adoption, and client-led POCs.",
+      "A BA from Rutgers University and experience leading work across distributed teams and complex stakeholder groups."
+    ],
+    "unsupportedRequirements": [
+      "The public evidence does not identify managed account value as Annual Contract Value.",
+      "Direct ownership of expansion revenue, renewals, new agreements, and contract negotiation is not documented.",
+      "HubSpot or another CRM platform is not named in the resume or portfolio.",
+      "Willingness to travel once per month needs the applicant's confirmation."
+    ],
+    "actualMismatches": [
+      "The documented account-management center is pharma agency and brand delivery, not payer partnerships or non-emergency medical transportation.",
+      "Large client budgets show comparable scale, but they are not the same metric as ACV."
+    ],
+    "missingEvidence": [
+      "A named account with confirmed $500K+ ACV.",
+      "Renewal rate, expansion revenue, retention, or contract-negotiation outcomes.",
+      "Payer, health-plan, Medicare Advantage, Medicaid, or NEMT account ownership.",
+      "HubSpot or other CRM usage and travel confirmation."
+    ],
+    "coverLetterBridge": {
+      "status": "recommended",
+      "rationale": "We can make the case with a cover letter by connecting direct healthcare account leadership, large-budget client delivery, enterprise performance reporting, and later implementation work to SafeRide's need for a strategic payer partner. The letter must not turn client budgets into ACV or imply renewals, expansion revenue, payer ownership, or CRM experience."
+    },
+    "recommendation": "Proceed as an adjacent fit. Lead with direct healthcare account leadership, account scale, data-to-recommendation work, and cross-functional implementation. Keep ACV, expansion, renewals, payer and NEMT experience, CRM usage, and travel confirmation explicit as gaps."
+  },
+  "positioning": {
+    "laneId": "client-account-delivery",
+    "targetIdentity": "Healthcare account and client strategy leader",
+    "employerNeed": "Own payer relationships, turn performance data into useful recommendations, and coordinate operational and contract work across teams.",
+    "bridgeType": "operating-center",
+    "applicationStrategy": "transferable",
+    "bridgeThesis": "healthcare account leadership is strengthened by analytics and implementation work",
+    "proofIds": [
+      "account-management-01",
+      "kinesso-03",
+      "hedgehox-03"
+    ],
+    "remainingGap": "ACV terminology, expansion and renewal ownership, payer and NEMT experience, CRM usage, and travel confirmation are not documented."
+  },
+  "resume": {
+    "foundationId": "wally-mostafa-resume-2026-07-03",
+    "summary": "Healthcare account and client strategy leader looking to make a return to account management. My healthcare account leadership is strengthened by analytics and implementation work. I bring 7+ years managing Fortune 500 pharma relationships and $2M-$50M+ budgets. I turn client needs and performance data into clear recommendations, align cross-functional teams, and keep complex work moving from discovery through delivery.",
+    "skillIds": [
+      "client-account-leadership",
+      "regulated-healthcare-client-delivery",
+      "program-project-delivery",
+      "client-success-product-adoption"
+    ],
+    "skills": [
+      {
+        "label": "Client & Account Leadership",
+        "description": "Fortune 500 pharma and healthcare accounts, $2M-$50M+ budgets, client briefs, brand planning, and cross-functional delivery"
+      },
+      {
+        "label": "Regulated Healthcare & Client Delivery",
+        "description": "11 years across pharma/healthcare communications, FDA/HIPAA/MLR workflows, HCP/patient UX, client workshops, and stakeholder adoption"
+      },
+      {
+        "label": "Program & Project Delivery",
+        "description": "Scoping, requirements, timelines, review routing, team coordination, risk visibility, and build-ready handoff across product, design, and client teams"
+      },
+      {
+        "label": "Client Success & Product Adoption",
+        "description": "Client discovery, adoption-focused workflows, training and roadshows, human review, and product decisions based on user needs"
+      }
+    ],
+    "roles": {
+      "hedgehox": [
+        "Secured an investor for proprietary Claims Detection software by building the functional POC, shaping the demo story, and iterating with investors",
+        "Designed Claims Detector workflows that identify promotional claims, surface evidence gaps, and pre-populate audit-ready annotations before MLR submission",
+        "Converted pharma agency needs into AI tools for MLR claim review, brief intake, scoping, review routing, submission capture, and FDA signal monitoring",
+        "Designed the full Xenagos Bio startup biopharma website from scratch, including investor-facing structure, scientific positioning, visual direction, and hidden design-system handoff",
+        "Built Scope Generator for pharma agency finance and operations teams to manage regional rate cards, brands, sub-brands, and natural-language scope changes",
+        "Developed FDA Warning Tool concepts that connect warning-letter patterns to content-risk guidance for pharma teams"
+      ],
+      "one-block-away": [
+        "Build client-led AI POCs that turn unclear business questions into testable product surfaces, demo flows, and roadmap decisions",
+        "Built ListingPal's AI listing-generation POC and landing page, turning basic property inputs into listing copy, social posts, ad copy, styling direction, and MLS/SEO-ready language in under 90 seconds",
+        "Built WeReady's Bailey Intelligence dashboard, translating founder inputs, GitHub signals, source health, risk scoring, and evidence trails into startup-readiness workflows",
+        "Own product strategy, UX, AI workflow design, front-end build, backend logic, demo readiness, and client iteration from first ask through working prototype",
+        "Currently building the website and sponsor strategy for a Tunisia youth soccer program, positioning the project for player advancement, community support, and donor outreach"
+      ],
+      "kinesso": [
+        "Scaled product design from 2 to 30 people across the US and Poland for enterprise analytics used by 7,000+ users across 22 white-label brands",
+        "Led UX and design-system strategy for MIE data visualization, dashboard building, brand theming, and reusable analytics components",
+        "Built the Digital Experience Audit workflow for channel scoring, benchmarks, recommendations, visualization, and presentation-ready client outputs",
+        "Design-system and analytics work earned 5 Indigo Gold, 4 Indigo Silver, and Red Dot recognition"
+      ],
+      "omnicom": [
+        "Supported oncology accounts as a freelance UX designer, combining UX design and account-management experience to strengthen regulated healthcare work",
+        "Championed UX best practices across account, strategy, creative, and delivery conversations, translating brand goals into clearer user flows, content structure, and digital recommendations"
+      ],
+      "heartbeat": [
+        "Led UX research and experience strategy for pharma and healthcare work, translating stakeholder input, competitive audits, and user needs into digital product direction",
+        "Created journey maps, site maps, user flows, wireframes, and prototypes for patient, HCP, and internal brand-team experiences across regulated healthcare programs",
+        "Partnered with strategy, creative, account, and engineering teams to move UX recommendations from research findings into build-ready product and campaign experiences"
+      ],
+      "account-management": [
+        "7+ years managing Fortune 500 pharma and healthcare clients with $2M-$50M+ budgets across CNS/neurology, psychiatry, cardiovascular/metabolic, and sleep/wakefulness brands including NUVIGIL, Namenda XR, Lipitor, and Zoloft",
+        "One of two account consumer leads on FCB Health's largest pharma account across all verticals: TV, radio, digital, gaming, Times Square, unbranded campaigns, brand planning, and MLR review",
+        "Translated client and brand strategy into briefs, creative feedback, production requirements, timelines, and MLR-ready deliverables across account, creative, UX, and development teams"
+      ]
+    },
+    "sourceBulletIds": {
+      "hedgehox": [
+        "hedgehox-01",
+        "hedgehox-02",
+        "hedgehox-03",
+        "hedgehox-04",
+        "hedgehox-05",
+        "hedgehox-06"
+      ],
+      "one-block-away": [
+        "one-block-away-01",
+        "one-block-away-02",
+        "one-block-away-03",
+        "one-block-away-04",
+        "one-block-away-05"
+      ],
+      "kinesso": [
+        "kinesso-01",
+        "kinesso-02",
+        "kinesso-03",
+        "kinesso-04"
+      ],
+      "omnicom": [
+        "omnicom-01",
+        "omnicom-02"
+      ],
+      "heartbeat": [
+        "heartbeat-01",
+        "heartbeat-02",
+        "heartbeat-03"
+      ],
+      "account-management": [
+        "account-management-01",
+        "account-management-02",
+        "account-management-03"
+      ]
+    }
+  },
+  "hero": {
+    "eyebrow": "SafeRide Health | Strategic Account Manager",
+    "tags": [
+      "Healthcare account leadership",
+      "Performance insights",
+      "Cross-functional implementation"
+    ],
+    "intro": "I am looking to make a return to account management. My healthcare account leadership is strengthened by analytics and implementation work. I bring 7+ years managing Fortune 500 pharma and healthcare relationships and $2M-$50M+ budgets. For SafeRide, I can turn performance data into recommendations, translate client needs into workable plans, and keep operations, product, and delivery teams aligned."
+  },
+  "contact": {
+    "prompt": "If SafeRide needs a Strategic Account Manager who can pair healthcare account leadership with data, implementation, and cross-functional delivery, email is the fastest way to reach me.",
+    "signoff": "Healthcare accounts | performance insights | implementation"
+  },
+  "copyReview": {
+    "humanizerVersion": "2.2.0",
+    "mode": "surface-only",
+    "status": "passed",
+    "reviewedAt": "2026-07-29T03:07:51.430Z",
+    "copySha256": "9183b5c110f90eec7e5f3254d5d6b629fdba08266e6926dce87bc5925fda4370",
+    "preserved": [
+      "content",
+      "structure",
+      "claims",
+      "ending"
+    ],
+    "rewriteAuthorized": false,
+    "reviewMethod": "humanizer-skill",
+    "semanticPassAttested": true,
+    "staticChecksPassed": true,
+    "finalAntiAiPass": true,
+    "remainingTells": []
+  },
+  "constraints": {
+    "doNotClaim": [
+      "$500K+ ACV",
+      "Annual Contract Value",
+      "Expansion revenue ownership",
+      "Renewal ownership",
+      "Contract negotiation ownership",
+      "Payer account ownership",
+      "Medicare Advantage account ownership",
+      "Medicaid account ownership",
+      "NEMT experience",
+      "HubSpot proficiency",
+      "CRM platform proficiency",
+      "Confirmed monthly travel availability"
+    ],
+    "blockedTerms": [
+      "managed $500K ACV",
+      "drove account expansion",
+      "owned renewals",
+      "negotiated client contracts",
+      "managed payer accounts",
+      "Medicare Advantage account manager",
+      "Medicaid account manager",
+      "non-emergency medical transportation experience",
+      "HubSpot expert",
+      "CRM expert",
+      "available to travel monthly"
+    ]
+  },
+  "privacy": {
+    "publicSafe": true,
+    "notes": "Contains only the public job posting and sanitized evidence from the public resume and portfolio. It excludes recruiter contact details, application answers, compensation decisions, and private eligibility information."
+  },
+  "qa": {
+    "status": "qa-passed",
+    "builtAt": "2026-07-29T03:08:02.132Z",
+    "configInputSha256": "fd0ac6f88cf9a153629c5e1bd4276c2b4110bd762023f0573ba909a537846cce",
+    "sourceResumeSha256": "93909f45fd9bc185a4e40d48daea0c5b86d8391c5e6d8ca34d2ab9697852c931",
+    "resumeFoundation": {
+      "id": "wally-mostafa-resume-2026-07-03",
+      "sourcePdfSha256": "f9b05b6c3c134262b1af6c5734363daf4385cf335407a139779a37d138adf1aa"
+    },
+    "artifactHashes": {
+      "routeSha256": "087420c2a8530460375ad8f880731c2e5e1e9182d64f65acf431ff9657496f2b",
+      "resumePdfSha256": "c2dc5e6b598317910b1fdbdd476229f78021c654a79c8e2b7ccec7bf801f3517",
+      "scopedProjectSha256": {}
+    },
+    "renderer": {
+      "browser": {
+        "name": "chrome-headless-shell",
+        "version": "Google Chrome for Testing 149.0.7827.55"
+      },
+      "htmlPath": "tmp/tailored-resumes/saferide-health-strategic-account-manager.html",
+      "pdfPath": "output/pdf/Wally-Mostafa-SafeRide-Health-Strategic-Account-Manager-Resume.pdf"
+    },
+    "ats": {
+      "ok": true,
+      "pdfPath": "output/pdf/Wally-Mostafa-SafeRide-Health-Strategic-Account-Manager-Resume.pdf",
+      "pageCount": 2,
+      "fileSize": 133506,
+      "annotations": [
+        {
+          "page": 1,
+          "uri": "mailto:wmostafa12@gmail.com"
+        },
+        {
+          "page": 1,
+          "uri": "https://linkedin.com/in/wallymo"
+        },
+        {
+          "page": 1,
+          "uri": "https://wallymo.github.io/saferide-health-strategic-account-manager/"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/6748"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/4629"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.red-dot.org/project/dxa-digital-experience-audit-55219"
+        }
+      ],
+      "coverage": [
+        {
+          "id": "location-eligibility",
+          "requirement": "Work remotely within the United States.",
+          "priority": "hard-gate",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "Raleigh, NC"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "bachelors-degree",
+          "requirement": "Hold a bachelor's degree or have equivalent experience.",
+          "priority": "hard-gate",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "BA Labor Studies & Employee Relations",
+            "Rutgers University"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "account-management-experience",
+          "requirement": "Bring at least three years of Customer Success or Account Management experience in healthcare, B2B SaaS, or enterprise technology.",
+          "priority": "hard-gate",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "7+ years managing",
+            "Fortune 500 pharma and healthcare clients",
+            "Account Management & Client Strategy"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "account-scale-acv",
+          "requirement": "Manage accounts with an Annual Contract Value of $500K or greater.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "contextual",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "$2M-$50M+ budgets"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "client-liaison-thought-partner",
+          "requirement": "Serve as the primary client liaison and strategic thought partner for assigned accounts.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "Client & Account Leadership",
+            "Fortune 500 pharma and healthcare accounts",
+            "client briefs"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "data-performance-insights",
+          "requirement": "Lead data-driven client conversations and provide performance insights and growth recommendations.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "channel scoring",
+            "benchmarks",
+            "recommendations",
+            "presentation-ready client outputs"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "expansion-growth",
+          "requirement": "Identify and drive account expansion opportunities in partnership with Sales.",
+          "priority": "core",
+          "evidenceStatus": "none",
+          "matchMode": "not-supported",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "expansion opportunities",
+            "upsell",
+            "cross-sell"
+          ]
+        },
+        {
+          "id": "operational-performance",
+          "requirement": "Partner with Operations to define and monitor performance measures, operational goals, and account issues.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "contextual",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "finance and operations teams",
+            "risk visibility",
+            "review routing"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "contract-renewals",
+          "requirement": "Support contract management, renewals, and new agreements while checking operational feasibility.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "contextual",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "rate cards",
+            "scope changes",
+            "$2M-$50M+ budgets"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "implementation-training-compliance",
+          "requirement": "Lead implementation, training, and compliance requirements tied to client contracts.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "contextual",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "stakeholder adoption",
+            "review routing",
+            "MLR"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "project-management-consensus",
+          "requirement": "Lead operational procedures and project initiatives while building consensus across multiple stakeholders.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "Program & Project Delivery",
+            "team coordination",
+            "timelines"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "travel",
+          "requirement": "Be willing to travel up to once per month.",
+          "priority": "core",
+          "evidenceStatus": "none",
+          "matchMode": "not-supported",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "willing to travel once per month"
+          ]
+        },
+        {
+          "id": "consulting-solutions-architecture",
+          "requirement": "Bring consulting or solutions architecture experience.",
+          "priority": "preferred",
+          "evidenceStatus": "adjacent",
+          "matchMode": "contextual",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "client-led AI POCs",
+            "demo flows",
+            "roadmap decisions"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "crm-platform",
+          "requirement": "Use HubSpot or another CRM platform.",
+          "priority": "preferred",
+          "evidenceStatus": "none",
+          "matchMode": "not-supported",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "HubSpot",
+            "CRM platform"
+          ]
+        }
+      ],
+      "failures": [],
+      "warnings": []
+    },
+    "humanizer": {
+      "status": "passed",
+      "version": "2.2.0",
+      "mode": "surface-only",
+      "reviewedAt": "2026-07-29T03:07:51.430Z",
+      "copySha256": "9183b5c110f90eec7e5f3254d5d6b629fdba08266e6926dce87bc5925fda4370",
+      "reviewMethod": "humanizer-skill",
+      "semanticPassAttested": true,
+      "staticChecksPassed": true
+    },
+    "route": {
+      "viewports": [
+        {
+          "name": "desktop",
+          "screenshot": "tmp/qa/saferide-health-strategic-account-manager/desktop.png",
+          "errors": []
+        },
+        {
+          "name": "mobile",
+          "screenshot": "tmp/qa/saferide-health-strategic-account-manager/mobile.png",
+          "errors": []
+        }
+      ],
+      "errors": []
+    }
+  }
+}
