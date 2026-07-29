@@ -598,6 +598,7 @@ test(
         },
         {
           heading: 'Recent & Complementary Experience',
+          pageBreakBefore: true,
           roleIds: [
             'hedgehox',
             'one-block-away',
@@ -608,6 +609,17 @@ test(
         },
       ];
       config.resume.layoutDensity = 'compact';
+      config.resume.awards = [
+        {
+          label: 'Manny Award 2013',
+          detail: 'Best Non-Branded Campaign, "Get Your Shift Together"',
+        },
+        {
+          label: 'Indigo Awards 2023',
+          detail: 'Design System & Data Visualization: 3x Gold, 2x Silver',
+          href: 'https://www.indigoaward.com/winners/6748',
+        },
+      ];
       approveHumanizerReview(config, {
         reviewedAt: '2026-07-29T12:00:00.000Z',
         semanticPassComplete: true,
@@ -652,10 +664,14 @@ test(
         'RECENT&COMPLEMENTARYEXPERIENCE'
       );
       const recentRole = compactText.indexOf('AIIMPLEMENTATIONPARTNER');
+      const mannyAward = compactText.indexOf('MANNYAWARD2013');
+      const indigoAward = compactText.indexOf('INDIGOAWARDS2023');
       assert.ok(accountHeading >= 0);
       assert.ok(accountRole > accountHeading);
       assert.ok(recentHeading > accountRole);
       assert.ok(recentRole > recentHeading);
+      assert.ok(mannyAward > recentRole);
+      assert.ok(indigoAward > mannyAward);
     } finally {
       rmSync(tempRoot, { recursive: true, force: true });
     }

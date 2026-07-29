@@ -234,6 +234,12 @@ export function humanizerCopyEntries(config) {
         add(`resume.experienceSections[${index}].heading`, section?.heading);
       });
     }
+    if (Array.isArray(config?.resume?.awards)) {
+      config.resume.awards.forEach((award, index) => {
+        add(`resume.awards[${index}].label`, award?.label);
+        add(`resume.awards[${index}].detail`, award?.detail);
+      });
+    }
     if (Array.isArray(config?.resume?.skills)) {
       config.resume.skills.forEach((skill, index) => {
         add(`resume.skills[${index}].label`, skill?.label);
@@ -752,6 +758,12 @@ function validateResume(config, errors) {
             `resume.experienceSections[${sectionIndex}].roleIds contains an unknown role`
           );
         }
+        pushError(
+          errors,
+          section?.pageBreakBefore === undefined ||
+            typeof section.pageBreakBefore === 'boolean',
+          `resume.experienceSections[${sectionIndex}].pageBreakBefore must be a boolean`
+        );
       }
       pushError(
         errors,
@@ -768,6 +780,35 @@ function validateResume(config, errors) {
       ['standard', 'compact'].includes(resume.layoutDensity),
     'resume.layoutDensity must be standard or compact'
   );
+  if (resume.awards !== undefined) {
+    pushError(
+      errors,
+      Array.isArray(resume.awards) &&
+        resume.awards.length >= 1 &&
+        resume.awards.length <= 5,
+      'resume.awards must include 1 to 5 entries'
+    );
+    if (Array.isArray(resume.awards)) {
+      for (const [awardIndex, award] of resume.awards.entries()) {
+        pushError(
+          errors,
+          isNonEmptyString(award?.label),
+          `resume.awards[${awardIndex}].label is required`
+        );
+        pushError(
+          errors,
+          isNonEmptyString(award?.detail),
+          `resume.awards[${awardIndex}].detail is required`
+        );
+        pushError(
+          errors,
+          award?.href === undefined ||
+            /^https:\/\//.test(award.href),
+          `resume.awards[${awardIndex}].href must be an HTTPS URL`
+        );
+      }
+    }
+  }
 
   if (
     config.contractRevision !== 4 &&
@@ -1762,6 +1803,10 @@ export function recruiterFacingClaimViolations(config) {
           ...(config.resume.experienceSections || []).map((section, index) => [
             `resume.experienceSections[${index}].heading`,
             section.heading,
+          ]),
+          ...(config.resume.awards || []).flatMap((award, index) => [
+            [`resume.awards[${index}].label`, award.label],
+            [`resume.awards[${index}].detail`, award.detail],
           ]),
           ...RESUME_ROLE_IDS.flatMap((roleId) =>
             config.resume.roles[roleId].map((bullet, index) => [

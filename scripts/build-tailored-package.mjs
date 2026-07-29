@@ -554,6 +554,27 @@ function buildResume(config, paths) {
     );
   }
   resumeHtml = replaceResumeExperienceSections(resumeHtml, config);
+  if (Array.isArray(config.resume.awards)) {
+    resumeHtml = resumeHtml.replace(
+      /<ul class="awards-list">[\s\S]*?<\/ul>/,
+      `<ul class="awards-list">\n${config.resume.awards
+        .map((award) => {
+          const label = award.href
+            ? `<a href="${escapeHtml(
+                award.href
+              )}" target="_blank" rel="noopener">${escapeHtml(
+                award.label
+              )}</a>`
+            : `<span class="award-label" style="font-weight: 600; color: var(--ink);">${escapeHtml(
+                award.label
+              )}</span>`;
+          return `    <li>\n      ${label}\n      <span class="award-detail"> — ${escapeHtml(
+            award.detail
+          )}</span>\n    </li>`;
+        })
+        .join('\n')}\n  </ul>`
+    );
+  }
   if (config.resume.layoutDensity === 'compact') {
     resumeHtml = resumeHtml.replace(
       '</head>',
@@ -651,7 +672,11 @@ function replaceResumeExperienceSections(resumeHtml, config) {
     .map(
       (section, index) => `<section data-resume-section="${
         index === 0 ? 'experience' : `experience-${index + 1}`
-      }">
+      }"${
+        section.pageBreakBefore
+          ? ' style="break-before: page; page-break-before: always;"'
+          : ''
+      }>
   <div class="section-title">${escapeHtml(section.heading)}</div>
 
 ${section.roleIds.map((roleId) => jobBlocks.get(roleId)).join('\n\n')}

@@ -224,6 +224,24 @@
         "layoutDensity": {
           "enum": ["standard", "compact"]
         },
+        "awards": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 5,
+          "items": {
+            "type": "object",
+            "required": ["label", "detail"],
+            "properties": {
+              "label": { "type": "string", "minLength": 1 },
+              "detail": { "type": "string", "minLength": 1 },
+              "href": {
+                "type": "string",
+                "pattern": "^https://"
+              }
+            },
+            "additionalProperties": false
+          }
+        },
         "experienceSections": {
           "type": "array",
           "minItems": 1,
@@ -247,7 +265,8 @@
                   ]
                 },
                 "uniqueItems": true
-              }
+              },
+              "pageBreakBefore": { "type": "boolean" }
             },
             "additionalProperties": false
           }
