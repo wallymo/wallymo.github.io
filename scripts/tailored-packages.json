@@ -1919,7 +1919,7 @@
     },
     {
       "workflowVersion": 2,
-      "contractRevision": 5,
+      "contractRevision": 6,
       "slug": "niq-associate-client-manager",
       "roleTitle": "NIQ Associate Client Manager",
       "artifactStem": "NIQ-Associate-Client-Manager",
@@ -1937,26 +1937,11 @@
         "project-04.html"
       ],
       "resumePdfPath": "output/pdf/Wally-Mostafa-NIQ-Associate-Client-Manager-Resume.pdf",
-      "publishStatus": "live-verified",
+      "publishStatus": "local-only",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-07-29T16:19:58.855Z",
-      "verification": {
-        "verifiedAt": "2026-07-29T16:23:51.354Z",
-        "routeUrl": "https://wallymo.github.io/niq-associate-client-manager/",
-        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-NIQ-Associate-Client-Manager-Resume.pdf",
-        "configUrl": "https://wallymo.github.io/scripts/packages/niq-associate-client-manager.json",
-        "projectUrls": [
-          "https://wallymo.github.io/project-06.html",
-          "https://wallymo.github.io/project-03.html",
-          "https://wallymo.github.io/project-04.html"
-        ],
-        "configSha256": "dff67b118d7ec6065c7fbae2f7aaae6dea82c883c0f95276d44e31fdca98dd09",
-        "pdfSha256": "6b8d1f1b4955371d76cc647f733a4a637021d4da79da8b7350c187ce526e7e76",
-        "routeSha256": "c500bab9062f9bb756e827198d34eafb9c2dcab320485c33bea66ba3d12d6014",
-        "scopedProjectSha256": {},
-        "configInputSha256": "db296d4c0215f62fe1a0c9750424502fba9c92e207c5946397f1af2a4b55e424",
-        "qaBuiltAt": "2026-07-29T16:19:58.855Z"
-      }
+      "builtAt": "2026-07-29T17:21:21.563Z",
+      "coverLetterPdfPath": "output/pdf/Wally-Mostafa-NIQ-Associate-Client-Manager-Cover-Letter.pdf",
+      "coverLetterMarkdownPath": "output/pdf/Wally-Mostafa-NIQ-Associate-Client-Manager-Cover-Letter.md"
     },
     {
       "slug": "noom-design-systems-contract",

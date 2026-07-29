@@ -1,6 +1,6 @@
 {
   "workflowVersion": 2,
-  "contractRevision": 5,
+  "contractRevision": 6,
   "slug": "niq-associate-client-manager",
   "roleTitle": "NIQ Associate Client Manager",
   "artifactStem": "NIQ-Associate-Client-Manager",
@@ -547,10 +547,29 @@
     "bridgeThesis": "account leadership strengthened by enterprise analytics and research",
     "proofIds": [
       "account-management-01",
-      "kinesso-03",
-      "heartbeat-01"
+      "kinesso-01",
+      "kinesso-03"
     ],
     "remainingGap": "Direct CPG and retail-measurement experience, NielsenIQ or similar syndicated-data tools, category management, hands-on consumer-dataset analysis, partnership expansion, and forecasted-revenue ownership are not documented."
+  },
+  "coverLetter": {
+    "trigger": "bridge-recommended",
+    "date": "2026-07-29",
+    "greeting": "Dear NIQ hiring team,",
+    "paragraphs": [
+      "I am applying for the Associate Client Manager role because it brings together client work I know well. I have spent years building trust with complex accounts and helping teams act on what the data says. I am looking to make a return to account management, and my recent work in enterprise analytics and research has made me a stronger client partner.",
+      "For more than seven years, I managed Fortune 500 pharma and healthcare clients with $2M-$50M+ budgets. As one of two consumer account leads on FCB Health's largest pharma account, I worked across brand planning, integrated campaigns, and MLR review. I translated client priorities into briefs, feedback, production requirements, timelines, and review-ready deliverables across account, strategy, creative, UX, and development teams. That meant staying close to stakeholders, getting to the real issue behind a request, and keeping work moving when priorities shifted.",
+      "At Kinesso, I led work on enterprise marketing analytics used by more than 7,000 people across 22 white-label brands. I built the Digital Experience Audit workflow, turning channel scoring and benchmarks into visualizations and presentation-ready recommendations. That work sharpened how I synthesize complex information and explain what it means for a client's next decision.",
+      "My experience is in healthcare accounts and enterprise marketing analytics rather than CPG consumer measurement. I would be learning NIQ's proprietary platforms and consumer-measurement practice on the job, and I am comfortable being direct about that learning curve. What I bring on day one is the client work. I ask precise questions to find the business issue behind a request, then turn the analysis into a story the internal team can act on.",
+      "NIQ needs an Associate Client Manager who can earn trust and make complex information useful. I would welcome the chance to discuss how my account leadership and analytics background could help your customers make better business decisions."
+    ],
+    "closing": "Sincerely,",
+    "signature": "Wally Mostafa",
+    "proofIds": [
+      "account-management-01",
+      "kinesso-01",
+      "kinesso-03"
+    ]
   },
   "hero": {
     "eyebrow": "NIQ Associate Client Manager",
@@ -569,8 +588,8 @@
     "humanizerVersion": "2.2.0",
     "mode": "surface-only",
     "status": "passed",
-    "reviewedAt": "2026-07-29T16:18:51.377Z",
-    "copySha256": "7c18c07a5512c783d290ef54e2e5ca727436e500d01332ca745fa1af0e430e56",
+    "reviewedAt": "2026-07-29T17:21:10.589Z",
+    "copySha256": "5b5c38608484d8840e32f8a05dcaadf77d2e39dc0df39fdf31e42226fb916c65",
     "preserved": [
       "content",
       "structure",
@@ -618,8 +637,8 @@
   },
   "qa": {
     "status": "qa-passed",
-    "builtAt": "2026-07-29T16:19:58.855Z",
-    "configInputSha256": "db296d4c0215f62fe1a0c9750424502fba9c92e207c5946397f1af2a4b55e424",
+    "builtAt": "2026-07-29T17:21:21.563Z",
+    "configInputSha256": "56494b7eef93af38af5d8d7c198897ecf9a6bc4d6476b5228f60183013d4434c",
     "sourceResumeSha256": "375cc6566f5bbad5b95be9da551dfe87824378fb252222409d29ef32d334ca25",
     "resumeFoundation": {
       "id": "wally-mostafa-resume-2026-07-03",
@@ -627,9 +646,9 @@
     },
     "artifactHashes": {
       "routeSha256": "c500bab9062f9bb756e827198d34eafb9c2dcab320485c33bea66ba3d12d6014",
-      "resumePdfSha256": "6b8d1f1b4955371d76cc647f733a4a637021d4da79da8b7350c187ce526e7e76",
-      "coverLetterPdfSha256": null,
-      "coverLetterMarkdownSha256": null,
+      "resumePdfSha256": "642f1612d0c72f3e817e79fda4daa2c0bd281cbf8baaca4897f954dcb2f5faa8",
+      "coverLetterPdfSha256": "5893a61e78cb28c4c1575235aafff7ac7b3e6ac78e2199da26adbe4f3ff1be56",
+      "coverLetterMarkdownSha256": "7b081288e0dcb0543c3bb00b425aff2f92bb3da2b9c4e4d48541e1853971f054",
       "scopedProjectSha256": {}
     },
     "renderer": {
@@ -640,8 +659,20 @@
       "htmlPath": "tmp/tailored-resumes/niq-associate-client-manager.html",
       "pdfPath": "output/pdf/Wally-Mostafa-NIQ-Associate-Client-Manager-Resume.pdf"
     },
-    "coverLetterRenderer": null,
-    "coverLetter": null,
+    "coverLetterRenderer": {
+      "browser": {
+        "name": "chrome-headless-shell",
+        "version": "Google Chrome for Testing 149.0.7827.55"
+      },
+      "htmlPath": "tmp/tailored-resumes/niq-associate-client-manager-cover-letter.html",
+      "pdfPath": "output/pdf/Wally-Mostafa-NIQ-Associate-Client-Manager-Cover-Letter.pdf"
+    },
+    "coverLetter": {
+      "ok": true,
+      "failures": [],
+      "pageCount": 1,
+      "sizeBytes": 82607
+    },
     "ats": {
       "ok": true,
       "pdfPath": "output/pdf/Wally-Mostafa-NIQ-Associate-Client-Manager-Resume.pdf",
@@ -870,8 +901,8 @@
       "status": "passed",
       "version": "2.2.0",
       "mode": "surface-only",
-      "reviewedAt": "2026-07-29T16:18:51.377Z",
-      "copySha256": "7c18c07a5512c783d290ef54e2e5ca727436e500d01332ca745fa1af0e430e56",
+      "reviewedAt": "2026-07-29T17:21:10.589Z",
+      "copySha256": "5b5c38608484d8840e32f8a05dcaadf77d2e39dc0df39fdf31e42226fb916c65",
       "reviewMethod": "humanizer-skill",
       "semanticPassAttested": true,
       "staticChecksPassed": true
