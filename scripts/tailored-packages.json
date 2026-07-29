@@ -2697,6 +2697,30 @@
       }
     },
     {
+      "workflowVersion": 2,
+      "contractRevision": 5,
+      "slug": "wex-account-executive",
+      "roleTitle": "WEX Account Executive",
+      "artifactStem": "WEX-Account-Executive",
+      "configPath": "scripts/packages/wex-account-executive.json",
+      "targetLane": "customer-success-consultative",
+      "evidenceMode": "resume-primary",
+      "fitClass": "adjacent",
+      "positioningLane": "customer-success-consultative",
+      "bridgeType": "operating-center",
+      "applicationStrategy": "transferable",
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-06.html",
+        "project-01.html",
+        "project-03.html"
+      ],
+      "resumePdfPath": "output/pdf/Wally-Mostafa-WEX-Account-Executive-Resume.pdf",
+      "publishStatus": "local-only",
+      "qaStatus": "qa-passed",
+      "builtAt": "2026-07-29T00:13:19.718Z"
+    },
+    {
       "slug": "xo-in-house-creator",
       "roleTitle": "X&O In-House Creator",
       "fitClass": "adjacent",

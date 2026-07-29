@@ -1,0 +1,760 @@
+{
+  "workflowVersion": 2,
+  "contractRevision": 5,
+  "slug": "wex-account-executive",
+  "roleTitle": "WEX Account Executive",
+  "artifactStem": "WEX-Account-Executive",
+  "fitClass": "adjacent",
+  "routeMode": "canonical-projects",
+  "selectedProjects": [
+    "project-06.html",
+    "project-01.html",
+    "project-03.html"
+  ],
+  "job": {
+    "company": "WEX",
+    "roleTitle": "Account Executive",
+    "sourceChannel": "user-pasted-jd",
+    "dateCaptured": "2026-07-28",
+    "location": "Not stated in the supplied posting",
+    "atsVendor": "unknown",
+    "rawJd": "As an Account Executive at WEX, you are the accountable owner of the post-sale client relationship, responsible for delivering value, strengthening partnerships, and ensuring long-term customer success. You are responsible for protecting and growing accounts, minimizing attrition, driving renewals, and ensuring a world-class client experience. You will serve as the strategic partner and trusted advisor to clients by understanding their goals, operations, and industry, then aligning WEX solutions to help them grow. Your impact will influence account growth and annual recurring revenue through proactive engagement, strategic planning, product enablement, adoption, retention, and loyalty. Within the Mid-market team, you will balance strategic customer engagements with one-to-many digital education and product-awareness programs. Responsibilities include serving as the primary post-sale point of contact; building long-term relationships; understanding client KPIs and growth strategies; leading touchpoints, planning sessions, and business reviews; owning account growth and retention; identifying and closing upsell and cross-sell opportunities; leading renewals; using quarterly business reviews to demonstrate ROI and build expansion roadmaps; guiding clients through product best practices and advanced features; developing enablement plans; driving utilization and preventing churn; coordinating with Sales, Product, Engineering, and Support to resolve issues; sharing product updates; gathering customer feedback; maintaining accurate client and opportunity records; and reporting on satisfaction, renewals, and revenue expansion. Qualifications include 3-5 years of Customer Success or Account Executive experience; a bachelor's degree or equivalent relevant experience; advanced knowledge of HSA, HRA, FSA, Commuter, COBRA, Retiree Billing, and FMLA Billing preferred; strong knowledge of Savings & Spending and COBRA regulatory requirements; a proven record managing client relationships and driving account growth; experience with renewals, expansions, and retention and revenue targets; strong communication, presentation, and relationship-building skills; high accountability; cross-functional and independent work; and proficiency with CRM and client-engagement platforms such as Salesforce. The posted base pay range is $58,500-$70,800."
+  },
+  "classification": {
+    "targetLane": "customer-success-consultative",
+    "evidenceMode": "resume-primary",
+    "primarySource": "The resume directly proves 7+ years of Fortune 500 healthcare account management, $2M-$50M+ budgets, client planning, presentations, and cross-functional delivery.",
+    "supportingSource": "The portfolio adds enterprise analytics, client-led product work, adoption-focused workflows, data visualization, and recommendations tied to business needs.",
+    "hardGateStatus": "pass",
+    "hardGates": [
+      {
+        "gate": "Bring at least 3-5 years of Customer Success or Account Executive experience",
+        "status": "pass",
+        "requirementId": "account-management-experience",
+        "evidence": "The resume documents 7+ years of direct Account Management and Client Strategy work with Fortune 500 pharma and healthcare clients."
+      },
+      {
+        "gate": "Hold a bachelor's degree or equivalent relevant experience",
+        "status": "pass",
+        "requirementId": "education",
+        "evidence": "The resume lists a BA in Labor Studies and Employee Relations from Rutgers University, plus directly relevant account-management experience."
+      }
+    ]
+  },
+  "requirements": [
+    {
+      "id": "account-management-experience",
+      "text": "Bring at least 3-5 years of Customer Success or Account Executive experience.",
+      "priority": "hard-gate",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The resume documents 7+ years managing Fortune 500 pharma and healthcare clients with $2M-$50M+ budgets.",
+        "The resume includes account leadership on FCB Health's largest pharma account."
+      ],
+      "proofIds": [
+        "account-management-01",
+        "account-management-02"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "7+ years managing",
+        "Client & Account Leadership"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "strategic-client-ownership",
+      "text": "Own post-sale client relationships, understand business goals, and act as a strategic partner and trusted advisor.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Seven years of account-management work covers high-value client relationships, brand planning, briefs, feedback, timelines, and regulated delivery.",
+        "Current client-led product work turns unclear business questions into working product decisions."
+      ],
+      "proofIds": [
+        "account-management-01",
+        "account-management-03",
+        "one-block-away-01"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "Fortune 500 pharma and healthcare accounts",
+        "client briefs",
+        "client-led"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "renewal-retention-expansion",
+      "text": "Own renewals, retention, upsell and cross-sell opportunities, and account growth tied to recurring revenue.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "proofIds": [],
+      "destinations": [
+        "application-answer",
+        "cover-letter"
+      ],
+      "resumeTerms": [
+        "renewals",
+        "retention targets",
+        "expansion revenue"
+      ],
+      "matchMode": "not-supported"
+    },
+    {
+      "id": "product-enablement-adoption",
+      "text": "Guide clients through product best practices, education, enablement, and adoption.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Enterprise analytics and white-label products supported 7,000+ users across 22 brands.",
+        "The portfolio documents client discovery, roadshows, product recommendations, human review, and adoption-focused product decisions."
+      ],
+      "proofIds": [
+        "kinesso-01",
+        "heartbeat-01",
+        "one-block-away-01"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "Client Success & Product Adoption",
+        "7,000+ users across 22 white-label brands"
+      ],
+      "matchMode": "contextual"
+    },
+    {
+      "id": "service-ownership-escalation",
+      "text": "Coordinate internal teams, surface friction early, and stay accountable for issue resolution and client satisfaction.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "The resume documents cross-functional delivery across account, creative, UX, product, engineering, and development teams.",
+        "Program and project work covers review routing, team coordination, risk visibility, and build-ready handoff."
+      ],
+      "proofIds": [
+        "account-management-03",
+        "heartbeat-03",
+        "one-block-away-04"
+      ],
+      "destinations": [
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "team coordination",
+        "risk visibility",
+        "cross-functional delivery"
+      ],
+      "matchMode": "contextual"
+    },
+    {
+      "id": "business-reviews-kpis-roi",
+      "text": "Use business reviews, KPIs, account data, and ROI stories to show value and shape account plans.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "The Digital Experience Audit workflow covered channel scoring, benchmarks, recommendations, visualization, and presentation-ready client outputs.",
+        "Kinesso work included enterprise analytics, dashboards, and data visualization used across 22 brands."
+      ],
+      "proofIds": [
+        "kinesso-02",
+        "kinesso-03"
+      ],
+      "destinations": [
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "benchmarks",
+        "recommendations",
+        "presentation-ready client outputs"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "cross-functional-delivery",
+      "text": "Work across Sales, Product, Engineering, Support, and other teams while managing multiple priorities independently.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The resume documents delivery across account, strategy, creative, UX, product, engineering, development, and client teams.",
+        "The resume also shows ownership from client ask through working prototype."
+      ],
+      "proofIds": [
+        "account-management-03",
+        "heartbeat-03",
+        "one-block-away-04"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience"
+      ],
+      "resumeTerms": [
+        "cross-functional delivery",
+        "team coordination",
+        "client iteration"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "communication-presentation-relationships",
+      "text": "Communicate clearly, present well, and build durable relationships across diverse stakeholders.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The resume documents client briefs, brand planning, creative feedback, presentation-ready outputs, and stakeholder translation.",
+        "Account leadership on Fortune 500 healthcare work required coordination across clients and senior cross-functional teams."
+      ],
+      "proofIds": [
+        "account-management-01",
+        "account-management-03",
+        "kinesso-03"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "client briefs",
+        "presentation-ready client outputs",
+        "client translation"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "benefits-domain-knowledge",
+      "text": "Understand HSA, HRA, FSA, Commuter, COBRA, Retiree Billing, FMLA Billing, and related regulatory requirements.",
+      "priority": "preferred",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "proofIds": [],
+      "destinations": [
+        "application-answer",
+        "cover-letter"
+      ],
+      "resumeTerms": [
+        "HSA",
+        "COBRA regulatory requirements"
+      ],
+      "matchMode": "not-supported"
+    },
+    {
+      "id": "crm-client-engagement-platforms",
+      "text": "Use CRM and client-engagement platforms such as Salesforce to maintain accurate account records.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "proofIds": [],
+      "destinations": [
+        "application-answer",
+        "cover-letter"
+      ],
+      "resumeTerms": [
+        "CRM",
+        "Salesforce"
+      ],
+      "matchMode": "not-supported"
+    },
+    {
+      "id": "education",
+      "text": "Hold a bachelor's degree or equivalent relevant experience.",
+      "priority": "hard-gate",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The resume lists a BA in Labor Studies and Employee Relations from Rutgers University."
+      ],
+      "proofIds": [],
+      "destinations": [
+        "experience"
+      ],
+      "resumeTerms": [
+        "BA Labor Studies & Employee Relations",
+        "Rutgers University"
+      ],
+      "matchMode": "exact"
+    }
+  ],
+  "fitGate": {
+    "supportedOverlap": [
+      "7+ years of direct Fortune 500 pharma and healthcare account management with $2M-$50M+ budgets.",
+      "Direct client planning, briefs, presentations, feedback, timelines, and cross-functional delivery.",
+      "Enterprise analytics and white-label products used by 7,000+ people across 22 brands.",
+      "Client-led product work that connects business questions to demos, recommendations, and working product decisions.",
+      "Data-to-recommendation proof through channel scoring, benchmarks, visualization, and presentation-ready outputs."
+    ],
+    "unsupportedRequirements": [
+      "Formal ownership of renewals, retention targets, upsell or cross-sell closes, churn reduction, and recurring-revenue growth is not documented.",
+      "Salesforce or another named CRM and client-engagement platform is not documented.",
+      "HSA, HRA, FSA, Commuter, COBRA, Retiree Billing, and FMLA Billing knowledge is not documented."
+    ],
+    "actualMismatches": [
+      "The documented account-management center is healthcare agency and brand delivery rather than post-sale software account ownership.",
+      "The resume proves client relationships, budgets, digital products, and adoption work, but not direct ownership of renewal and expansion revenue."
+    ],
+    "missingEvidence": [
+      "Renewal rate, retention rate, expansion revenue, churn reduction, and ARR outcomes.",
+      "Salesforce account records, customer-health reporting, and formal renewal or expansion workflows.",
+      "Benefits-administration product and COBRA regulatory experience."
+    ],
+    "coverLetterBridge": {
+      "status": "recommended",
+      "rationale": "We can make the case with a cover letter by connecting 7+ years of account leadership, enterprise product adoption, performance reporting, and regulated healthcare work to WEX's post-sale client model. The letter must be clear that formal renewal, expansion-revenue, CRM, and benefits-administration ownership is not documented."
+    },
+    "recommendation": "Proceed as adjacent. Lead with direct account ownership, large client budgets, product adoption, performance reporting, and cross-functional delivery. Do not imply formal renewal, retention-target, expansion-revenue, Salesforce, or benefits-administration experience."
+  },
+  "positioning": {
+    "laneId": "customer-success-consultative",
+    "targetIdentity": "Account and client strategy leader",
+    "employerNeed": "Protect mid-market client relationships, improve product value, and coordinate internal teams while supporting renewals and account growth.",
+    "bridgeType": "operating-center",
+    "applicationStrategy": "transferable",
+    "bridgeThesis": "account leadership and product adoption",
+    "proofIds": [
+      "account-management-01",
+      "kinesso-03",
+      "one-block-away-04"
+    ],
+    "remainingGap": "The public evidence does not show formal renewal ownership, expansion-revenue targets, Salesforce, or benefits-administration expertise."
+  },
+  "resume": {
+    "foundationId": "wally-mostafa-resume-2026-07-03",
+    "summary": "Account and client strategy leader with 15 years across healthcare, enterprise products, and regulated delivery. I bring 7+ years managing Fortune 500 healthcare relationships and $2M-$50M+ budgets. My work combines account leadership and product adoption with performance reporting, enterprise analytics used by 7,000+ people across 22 brands, and client-led product delivery.",
+    "skillIds": [
+      "client-account-leadership",
+      "client-success-product-adoption",
+      "program-project-delivery",
+      "consultative-sales-solution-delivery"
+    ],
+    "skills": [
+      {
+        "label": "Client & Account Leadership",
+        "description": "Fortune 500 pharma and healthcare accounts, $2M-$50M+ budgets, client briefs, brand planning, and cross-functional delivery"
+      },
+      {
+        "label": "Client Success & Product Adoption",
+        "description": "Client discovery, adoption-focused workflows, training and roadshows, human review, and product decisions based on user needs"
+      },
+      {
+        "label": "Program & Project Delivery",
+        "description": "Scoping, requirements, timelines, review routing, team coordination, risk visibility, and build-ready handoff across product, design, and client teams"
+      },
+      {
+        "label": "Consultative Sales & Solution Delivery",
+        "description": "Discovery-led solution design, POCs, demo narratives, client translation, and product recommendations tied to business needs"
+      }
+    ],
+    "roles": {
+      "hedgehox": [
+        "Secured an investor for proprietary Claims Detection software by building the functional POC, shaping the demo story, and iterating with investors",
+        "Designed Claims Detector workflows that identify promotional claims, surface evidence gaps, and pre-populate audit-ready annotations before MLR submission",
+        "Converted pharma agency needs into AI tools for MLR claim review, brief intake, scoping, review routing, submission capture, and FDA signal monitoring",
+        "Designed the full Xenagos Bio startup biopharma website from scratch, including investor-facing structure, scientific positioning, visual direction, and hidden design-system handoff",
+        "Built Scope Generator for pharma agency finance and operations teams to manage regional rate cards, brands, sub-brands, and natural-language scope changes",
+        "Developed FDA Warning Tool concepts that connect warning-letter patterns to content-risk guidance for pharma teams"
+      ],
+      "one-block-away": [
+        "Build client-led AI POCs that turn unclear business questions into testable product surfaces, demo flows, and roadmap decisions",
+        "Built ListingPal's AI listing-generation POC and landing page, turning basic property inputs into listing copy, social posts, ad copy, styling direction, and MLS/SEO-ready language in under 90 seconds",
+        "Built WeReady's Bailey Intelligence dashboard, translating founder inputs, GitHub signals, source health, risk scoring, and evidence trails into startup-readiness workflows",
+        "Own product strategy, UX, AI workflow design, front-end build, backend logic, demo readiness, and client iteration from first ask through working prototype",
+        "Currently building the website and sponsor strategy for a Tunisia youth soccer program, positioning the project for player advancement, community support, and donor outreach"
+      ],
+      "kinesso": [
+        "Scaled product design from 2 to 30 people across the US and Poland for enterprise analytics used by 7,000+ users across 22 white-label brands",
+        "Led UX and design-system strategy for MIE data visualization, dashboard building, brand theming, and reusable analytics components",
+        "Built the Digital Experience Audit workflow for channel scoring, benchmarks, recommendations, visualization, and presentation-ready client outputs",
+        "Design-system and analytics work earned 5 Indigo Gold, 4 Indigo Silver, and Red Dot recognition"
+      ],
+      "omnicom": [
+        "Supported oncology accounts as a freelance UX designer, combining UX design and account-management experience to strengthen regulated healthcare work",
+        "Championed UX best practices across account, strategy, creative, and delivery conversations, translating brand goals into clearer user flows, content structure, and digital recommendations"
+      ],
+      "heartbeat": [
+        "Led UX research and experience strategy for pharma and healthcare work, translating stakeholder input, competitive audits, and user needs into digital product direction",
+        "Created journey maps, site maps, user flows, wireframes, and prototypes for patient, HCP, and internal brand-team experiences across regulated healthcare programs",
+        "Partnered with strategy, creative, account, and engineering teams to move UX recommendations from research findings into build-ready product and campaign experiences"
+      ],
+      "account-management": [
+        "7+ years managing Fortune 500 pharma and healthcare clients with $2M-$50M+ budgets across CNS/neurology, psychiatry, cardiovascular/metabolic, and sleep/wakefulness brands including NUVIGIL, Namenda XR, Lipitor, and Zoloft",
+        "One of two account consumer leads on FCB Health's largest pharma account across all verticals: TV, radio, digital, gaming, Times Square, unbranded campaigns, brand planning, and MLR review",
+        "Translated client and brand strategy into briefs, creative feedback, production requirements, timelines, and MLR-ready deliverables across account, creative, UX, and development teams"
+      ]
+    },
+    "sourceBulletIds": {
+      "hedgehox": [
+        "hedgehox-01",
+        "hedgehox-02",
+        "hedgehox-03",
+        "hedgehox-04",
+        "hedgehox-05",
+        "hedgehox-06"
+      ],
+      "one-block-away": [
+        "one-block-away-01",
+        "one-block-away-02",
+        "one-block-away-03",
+        "one-block-away-04",
+        "one-block-away-05"
+      ],
+      "kinesso": [
+        "kinesso-01",
+        "kinesso-02",
+        "kinesso-03",
+        "kinesso-04"
+      ],
+      "omnicom": [
+        "omnicom-01",
+        "omnicom-02"
+      ],
+      "heartbeat": [
+        "heartbeat-01",
+        "heartbeat-02",
+        "heartbeat-03"
+      ],
+      "account-management": [
+        "account-management-01",
+        "account-management-02",
+        "account-management-03"
+      ]
+    }
+  },
+  "hero": {
+    "eyebrow": "WEX | Account Executive",
+    "tags": [
+      "Fortune 500 account leadership",
+      "Product adoption and reporting",
+      "Cross-functional delivery"
+    ],
+    "intro": "I have spent 7+ years managing Fortune 500 healthcare clients and $2M-$50M+ budgets, including account leadership on FCB Health's largest pharma business. I also led enterprise analytics used by 7,000+ people across 22 brands and now build client-led product workflows from the first ask through a working prototype. At WEX, I would connect account leadership and product adoption to clear performance reporting and steady cross-functional follow-through."
+  },
+  "contact": {
+    "prompt": "If WEX needs an Account Executive who can build client trust, make product and performance data useful, and keep internal teams moving around the account, email is the fastest way to reach me.",
+    "signoff": "Account leadership | product adoption | clear client delivery"
+  },
+  "copyReview": {
+    "humanizerVersion": "2.2.0",
+    "mode": "surface-only",
+    "status": "passed",
+    "reviewedAt": "2026-07-29T00:13:15.278Z",
+    "copySha256": "7df10463a304ab39ef73e0af893f7e7e10dd472c4a0666df6cd355503ec37ac8",
+    "preserved": [
+      "content",
+      "structure",
+      "claims",
+      "ending"
+    ],
+    "rewriteAuthorized": false,
+    "reviewMethod": "humanizer-skill",
+    "semanticPassAttested": true,
+    "staticChecksPassed": true,
+    "finalAntiAiPass": true,
+    "remainingTells": []
+  },
+  "constraints": {
+    "doNotClaim": [
+      "Formal ownership of contract renewals",
+      "Quantified retention or churn outcomes",
+      "Upsell or cross-sell closes",
+      "Expansion revenue or ARR targets",
+      "Salesforce or named CRM administration",
+      "Formal QBR ownership",
+      "Customer health-score ownership",
+      "HSA, HRA, FSA, Commuter, COBRA, Retiree Billing, or FMLA Billing expertise",
+      "COBRA regulatory expertise"
+    ],
+    "blockedTerms": [
+      "owned renewals",
+      "renewal rate",
+      "retention target",
+      "reduced churn",
+      "closed upsells",
+      "closed cross-sells",
+      "expansion revenue",
+      "ARR target",
+      "Salesforce administrator",
+      "owned QBRs",
+      "customer health scores",
+      "COBRA expert"
+    ]
+  },
+  "privacy": {
+    "publicSafe": true,
+    "notes": "Contains only the public job description and sanitized resume and portfolio evidence. It excludes recruiter contact details, application answers, compensation decisions, and private eligibility information."
+  },
+  "qa": {
+    "status": "qa-passed",
+    "builtAt": "2026-07-29T00:13:19.718Z",
+    "configInputSha256": "8d716c41de57bad73267136a681634ea849cb598e232f4a7e598d991d7a9343d",
+    "sourceResumeSha256": "375cc6566f5bbad5b95be9da551dfe87824378fb252222409d29ef32d334ca25",
+    "resumeFoundation": {
+      "id": "wally-mostafa-resume-2026-07-03",
+      "sourcePdfSha256": "f9b05b6c3c134262b1af6c5734363daf4385cf335407a139779a37d138adf1aa"
+    },
+    "artifactHashes": {
+      "routeSha256": "57f6c35a6e1a35b023fe869b9187fab169c935d27d1ad175c471f21c5778230f",
+      "resumePdfSha256": "5eba792d99a4b4f5504ed2a70129ad3ad9c9f50c6a93dc63ebe54b56ab544c00",
+      "scopedProjectSha256": {}
+    },
+    "renderer": {
+      "browser": {
+        "name": "chrome-headless-shell",
+        "version": "Google Chrome for Testing 149.0.7827.55"
+      },
+      "htmlPath": "tmp/tailored-resumes/wex-account-executive.html",
+      "pdfPath": "output/pdf/Wally-Mostafa-WEX-Account-Executive-Resume.pdf"
+    },
+    "ats": {
+      "ok": true,
+      "pdfPath": "output/pdf/Wally-Mostafa-WEX-Account-Executive-Resume.pdf",
+      "pageCount": 2,
+      "fileSize": 132751,
+      "annotations": [
+        {
+          "page": 1,
+          "uri": "mailto:wmostafa12@gmail.com"
+        },
+        {
+          "page": 1,
+          "uri": "https://linkedin.com/in/wallymo"
+        },
+        {
+          "page": 1,
+          "uri": "https://wallymo.github.io/wex-account-executive/"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/6748"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/4629"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.red-dot.org/project/dxa-digital-experience-audit-55219"
+        }
+      ],
+      "coverage": [
+        {
+          "id": "account-management-experience",
+          "requirement": "Bring at least 3-5 years of Customer Success or Account Executive experience.",
+          "priority": "hard-gate",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "7+ years managing",
+            "Client & Account Leadership"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "strategic-client-ownership",
+          "requirement": "Own post-sale client relationships, understand business goals, and act as a strategic partner and trusted advisor.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "Fortune 500 pharma and healthcare accounts",
+            "client briefs",
+            "client-led"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "renewal-retention-expansion",
+          "requirement": "Own renewals, retention, upsell and cross-sell opportunities, and account growth tied to recurring revenue.",
+          "priority": "core",
+          "evidenceStatus": "none",
+          "matchMode": "not-supported",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "renewals",
+            "retention targets",
+            "expansion revenue"
+          ]
+        },
+        {
+          "id": "product-enablement-adoption",
+          "requirement": "Guide clients through product best practices, education, enablement, and adoption.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "contextual",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "Client Success & Product Adoption",
+            "7,000+ users across 22 white-label brands"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "service-ownership-escalation",
+          "requirement": "Coordinate internal teams, surface friction early, and stay accountable for issue resolution and client satisfaction.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "contextual",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "team coordination",
+            "risk visibility",
+            "cross-functional delivery"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "business-reviews-kpis-roi",
+          "requirement": "Use business reviews, KPIs, account data, and ROI stories to show value and shape account plans.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "benchmarks",
+            "recommendations",
+            "presentation-ready client outputs"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "cross-functional-delivery",
+          "requirement": "Work across Sales, Product, Engineering, Support, and other teams while managing multiple priorities independently.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "cross-functional delivery",
+            "team coordination",
+            "client iteration"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "communication-presentation-relationships",
+          "requirement": "Communicate clearly, present well, and build durable relationships across diverse stakeholders.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "client briefs",
+            "presentation-ready client outputs",
+            "client translation"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "benefits-domain-knowledge",
+          "requirement": "Understand HSA, HRA, FSA, Commuter, COBRA, Retiree Billing, FMLA Billing, and related regulatory requirements.",
+          "priority": "preferred",
+          "evidenceStatus": "none",
+          "matchMode": "not-supported",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "HSA",
+            "COBRA regulatory requirements"
+          ]
+        },
+        {
+          "id": "crm-client-engagement-platforms",
+          "requirement": "Use CRM and client-engagement platforms such as Salesforce to maintain accurate account records.",
+          "priority": "core",
+          "evidenceStatus": "none",
+          "matchMode": "not-supported",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "CRM",
+            "Salesforce"
+          ]
+        },
+        {
+          "id": "education",
+          "requirement": "Hold a bachelor's degree or equivalent relevant experience.",
+          "priority": "hard-gate",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "BA Labor Studies & Employee Relations",
+            "Rutgers University"
+          ],
+          "missingTerms": []
+        }
+      ],
+      "failures": [],
+      "warnings": []
+    },
+    "humanizer": {
+      "status": "passed",
+      "version": "2.2.0",
+      "mode": "surface-only",
+      "reviewedAt": "2026-07-29T00:13:15.278Z",
+      "copySha256": "7df10463a304ab39ef73e0af893f7e7e10dd472c4a0666df6cd355503ec37ac8",
+      "reviewMethod": "humanizer-skill",
+      "semanticPassAttested": true,
+      "staticChecksPassed": true
+    },
+    "route": {
+      "viewports": [
+        {
+          "name": "desktop",
+          "screenshot": "tmp/qa/wex-account-executive/desktop.png",
+          "errors": []
+        },
+        {
+          "name": "mobile",
+          "screenshot": "tmp/qa/wex-account-executive/mobile.png",
+          "errors": []
+        }
+      ],
+      "errors": []
+    }
+  }
+}
