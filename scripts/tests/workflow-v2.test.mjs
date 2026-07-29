@@ -441,6 +441,67 @@ test('revisions 5 and 6 preserve every foundation bullet while allowing edits, a
   );
 });
 
+test('curated resume mode requires explicit user authorization and keeps evidence under the original job', () => {
+  const curated = validConfig();
+  curated.resume.compositionMode = 'curated-user-authorized';
+  curated.resume.curationAuthorization = {
+    authorizedBy: 'user',
+    authorizedAt: '2026-07-29',
+    scope: 'Pure account-management resume only.',
+    reason:
+      'The user authorized removing and rewriting lower-value bullets so direct account work carries more weight.',
+  };
+  for (const roleId of [
+    'hedgehox',
+    'one-block-away',
+    'kinesso',
+    'omnicom',
+    'heartbeat',
+  ]) {
+    curated.resume.roles[roleId] = curated.resume.roles[roleId].slice(0, 1);
+    curated.resume.sourceBulletIds[roleId] =
+      curated.resume.sourceBulletIds[roleId].slice(0, 1);
+  }
+  curated.resume.roles['account-management'].push(
+    'Added a supported account-management result.'
+  );
+  curated.resume.sourceBulletIds['account-management'].push(
+    'addition:account-result'
+  );
+  assert.deepEqual(validateV2Config(curated), []);
+
+  const missingAuthorization = structuredClone(curated);
+  delete missingAuthorization.resume.curationAuthorization;
+  assert.match(
+    validateV2Config(missingAuthorization).join('\n'),
+    /resume\.curationAuthorization is required/
+  );
+
+  const emptyFoundationRole = structuredClone(curated);
+  emptyFoundationRole.resume.roles.hedgehox = [
+    'An addition cannot replace all source evidence for a job.',
+  ];
+  emptyFoundationRole.resume.sourceBulletIds.hedgehox = [
+    'addition:replacement-only',
+  ];
+  assert.match(
+    validateV2Config(emptyFoundationRole).join('\n'),
+    /must retain at least one foundation bullet under its original job/
+  );
+
+  const movedEvidence = structuredClone(curated);
+  movedEvidence.resume.roles.omnicom.push(
+    curated.resume.roles.hedgehox[0]
+  );
+  movedEvidence.resume.sourceBulletIds.omnicom.push(
+    curated.resume.sourceBulletIds.hedgehox[0]
+  );
+  assert.match(
+    validateV2Config(movedEvidence).join('\n'),
+    /contains an unknown source ID/
+  );
+});
+
 test('revisions 5 and 6 support relevance-first experience sections without duplicating or dropping roles', () => {
   const relevanceFirst = validConfig();
   relevanceFirst.resume.layoutDensity = 'compact';

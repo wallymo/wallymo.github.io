@@ -21,6 +21,10 @@ export const CURRENT_CONTRACT_REVISION = 6;
 export const HUMANIZER_VERSION = '2.2.0';
 const SUPPORTED_CONTRACT_REVISIONS = new Set([2, 3, 4, 5, 6]);
 const FLEXIBLE_POSITIONING_REVISIONS = new Set([5, 6]);
+const RESUME_COMPOSITION_MODES = new Set([
+  'foundation-complete',
+  'curated-user-authorized',
+]);
 export const PUBLIC_BASE = 'https://wallymo.github.io/';
 export const RESUME_FOUNDATION_PATH = 'scripts/resume-foundation.json';
 export const RESUME_ROLE_IDS = [
@@ -650,6 +654,47 @@ function validateResume(config, errors) {
   if (!resume || typeof resume !== 'object') {
     return;
   }
+  const compositionMode =
+    resume.compositionMode || 'foundation-complete';
+  const curatedResume = compositionMode === 'curated-user-authorized';
+  pushError(
+    errors,
+    RESUME_COMPOSITION_MODES.has(compositionMode),
+    'resume.compositionMode must be foundation-complete or curated-user-authorized'
+  );
+  if (curatedResume) {
+    const authorization = resume.curationAuthorization;
+    pushError(
+      errors,
+      usesFlexiblePositioningContract(config),
+      'resume curated-user-authorized mode is available only for revisions 5 and 6'
+    );
+    pushError(
+      errors,
+      authorization && typeof authorization === 'object',
+      'resume.curationAuthorization is required for curated-user-authorized mode'
+    );
+    pushError(
+      errors,
+      authorization?.authorizedBy === 'user',
+      'resume.curationAuthorization.authorizedBy must be user'
+    );
+    pushError(
+      errors,
+      /^\d{4}-\d{2}-\d{2}$/.test(authorization?.authorizedAt || ''),
+      'resume.curationAuthorization.authorizedAt must use YYYY-MM-DD'
+    );
+    pushError(
+      errors,
+      isNonEmptyString(authorization?.scope),
+      'resume.curationAuthorization.scope is required'
+    );
+    pushError(
+      errors,
+      isNonEmptyString(authorization?.reason),
+      'resume.curationAuthorization.reason is required'
+    );
+  }
 
   pushError(errors, isNonEmptyString(resume.summary), 'resume.summary is required');
   pushError(errors, Array.isArray(resume.skills) && resume.skills.length >= 4 && resume.skills.length <= 6, 'resume.skills must include 4 to 6 entries');
@@ -863,12 +908,16 @@ function validateResume(config, errors) {
       config.contractRevision === 4
         ? JSON.stringify(retainedFoundationIds) ===
             JSON.stringify(foundationIds)
+        : curatedResume
+          ? retainedFoundationIds.length >= 1
         : retainedFoundationIds.length === foundationIds.length &&
             foundationIds.every((sourceId) =>
               retainedFoundationIds.includes(sourceId)
             ),
       config.contractRevision === 4
         ? `resume.roles.${roleId} must retain every foundation bullet in source order; additions are allowed but removals are blocked`
+        : curatedResume
+          ? `resume.roles.${roleId} must retain at least one foundation bullet under its original job`
         : `resume.roles.${roleId} must retain every foundation bullet exactly once within its original job; within-job reordering and additions are allowed`
     );
   }
@@ -877,7 +926,7 @@ function validateResume(config, errors) {
     new Set(allMappedBulletIds).size === allMappedBulletIds.length,
     'resume.sourceBulletIds must be unique across the full resume'
   );
-  if (usesFlexiblePositioningContract(config)) {
+  if (usesFlexiblePositioningContract(config) && !curatedResume) {
     const foundationIds = RESUME_ROLE_IDS.flatMap((roleId) =>
       (foundation.roles?.[roleId] || []).map((bullet) => bullet.id)
     );
