@@ -1,0 +1,635 @@
+{
+  "workflowVersion": 2,
+  "contractRevision": 6,
+  "slug": "healthcare-account-management",
+  "roleTitle": "Healthcare Account Management & Client Strategy",
+  "artifactStem": "Healthcare-Account-Management",
+  "fitClass": "strong",
+  "routeMode": "canonical-projects",
+  "selectedProjects": [
+    "project-01.html",
+    "project-06.html",
+    "project-02.html"
+  ],
+  "job": {
+    "company": "General recruiter and networking use",
+    "roleTitle": "Healthcare Account Management & Client Strategy",
+    "jobId": "general-profile",
+    "jobUrl": "not-provided",
+    "sourceChannel": "user-requested-general-resume",
+    "dateCaptured": "2026-07-29",
+    "location": "Raleigh, NC; remote opportunities",
+    "atsVendor": "not-applicable",
+    "rawJd": "General recruiter and networking profile, not an employer posting.\n\nTarget: healthcare and pharmaceutical agency account management, client strategy, and adjacent client-services roles.\n\nCore work: own client relationships; manage budgets, briefs, timelines, national broadcast and integrated campaign delivery, cross-functional teams, FDA preclearance, and med-legal and MLR review; use research and campaign performance to guide client recommendations.\n\nResume architecture: use the March 2015 account-management resume as the primary content source. Give direct account work the most space. Keep every later employer and date visible, but retain only the recent bullets that strengthen client discovery, stakeholder alignment, regulated delivery, recommendations, or team leadership.\n\nThis package must be fit-gated again against each employer's actual job description before application."
+  },
+  "classification": {
+    "targetLane": "client-account-delivery",
+    "evidenceMode": "resume-primary",
+    "primarySource": "The March 2015 account-management resume is the main content source. It directly proves account ownership across pharma and consumer brands, $2M-$50M+ budgets, national television launches, FDA and med-legal review, digital and loyalty programs, vendor coordination, and junior account oversight.",
+    "supportingSource": "The current resume and portfolio supply the later chronology and selected proof of client discovery, regulated workflows, presentation-ready recommendations, and cross-functional leadership. Those roles support the story but do not receive equal weight.",
+    "hardGateStatus": "pass",
+    "hardGates": [
+      {
+        "gate": "Bring a bachelor's degree and substantial professional experience in account management or related client services",
+        "status": "pass",
+        "requirementId": "education-and-experience",
+        "evidence": "The resume documents a Rutgers University BA, more than 15 years of professional experience, and 7+ years of direct pharma and healthcare account management from Account Coordinator through Senior Account Executive."
+      }
+    ]
+  },
+  "requirements": [
+    {
+      "id": "education-and-experience",
+      "text": "Bring a bachelor's degree and substantial professional experience in account management or related client services.",
+      "priority": "hard-gate",
+      "source": "jd",
+      "confidence": "contextual",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The resume lists a BA in Labor Studies and Employee Relations from Rutgers University.",
+        "The resume documents 7+ years managing Fortune 500 pharma and healthcare clients, progressing from Account Coordinator through Senior Account Executive."
+      ],
+      "proofIds": [
+        "account-management-01"
+      ],
+      "destinations": [
+        "summary",
+        "experience"
+      ],
+      "resumeTerms": [
+        "Managed Fortune 500 pharma",
+        "Rutgers University"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "client-account-leadership",
+      "text": "Own healthcare and pharmaceutical client relationships, priorities, and day-to-day account direction.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "contextual",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The resume documents 7+ years managing Fortune 500 pharma and healthcare clients with $2M-$50M+ budgets.",
+        "FCB Health experience includes consumer account leadership on the agency's largest pharma account, three national television launches within one year, and a 45% increase in new-to-brand consumers within the first seven weeks."
+      ],
+      "proofIds": [
+        "account-management-01",
+        "account-management-02",
+        "account-management-03",
+        "addition:account-management-caregiver-site"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "Client & Account Leadership",
+        "Fortune 500 pharma and consumer relationships",
+        "$2M-$50M+ budgets"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "strategy-briefs-delivery",
+      "text": "Translate client and brand priorities into briefs, creative feedback, production requirements, timelines, and finished work.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "contextual",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The resume directly documents client leadership across research, briefs, FDA preclearance, med-legal approval, broadcast production, network clearances, digital work, and campaign recommendations.",
+        "Current pharma agency work covers intake, scoping, review routing, submission capture, and finance and operations workflows."
+      ],
+      "proofIds": [
+        "account-management-03",
+        "hedgehox-03",
+        "hedgehox-05"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "market research",
+        "FDA preclearance",
+        "production"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "integrated-regulated-campaigns",
+      "text": "Guide integrated healthcare campaigns and regulated delivery across national broadcast, digital, loyalty, brand planning, and MLR review.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "contextual",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "FCB Health experience includes three national television launches within one year, with a 45% increase in new-to-brand consumers within the first seven weeks.",
+        "Earlier account work includes digital and loyalty strategy, CRM, Times Square NASDAQ, Xbox Live, and social campaign delivery.",
+        "Current work includes pharma claim review, submission capture, and FDA signal monitoring."
+      ],
+      "proofIds": [
+        "account-management-02",
+        "addition:account-management-tough-mudder-pdi",
+        "addition:account-management-nuvigil-integrated",
+        "hedgehox-03"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "national television commercials",
+        "FDA",
+        "MLR"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "budget-program-delivery",
+      "text": "Manage large client budgets, timelines, review paths, risks, and cross-functional delivery.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "contextual",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The resume documents $2M-$50M+ account budgets, client briefs, production requirements, timelines, vendor coordination, regulated approvals, and cross-functional delivery.",
+        "Kinesso leadership scaled a distributed team from 2 to 30 people."
+      ],
+      "proofIds": [
+        "account-management-01",
+        "account-management-03",
+        "kinesso-01"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience"
+      ],
+      "resumeTerms": [
+        "$2M-$50M+ budgets",
+        "Program & Project Delivery",
+        "cross-functional delivery"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "client-discovery-recommendations",
+      "text": "Use discovery, research, analytics, and clear recommendations to help clients make better decisions.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "contextual",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Current client-led POCs turn unclear business questions into testable product surfaces, demos, and roadmap decisions.",
+        "The Digital Experience Audit produced channel scoring, benchmarks, recommendations, visualization, and presentation-ready client outputs.",
+        "Healthcare UX work translated stakeholder input, competitive audits, and user needs into product direction."
+      ],
+      "proofIds": [
+        "one-block-away-01",
+        "kinesso-03",
+        "heartbeat-01"
+      ],
+      "destinations": [
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "Lead client discovery",
+        "benchmarks",
+        "presentation-ready client outputs"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "cross-functional-leadership",
+      "text": "Keep account, strategy, creative, production, UX, engineering, operations, and client teams aligned.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "contextual",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The resume documents coordinated delivery across clients, account, strategy, creative, production, medical and legal review, UX, engineering, development, finance, and operations teams.",
+        "Kinesso work scaled a distributed organization from 2 to 30 people."
+      ],
+      "proofIds": [
+        "account-management-03",
+        "heartbeat-03",
+        "kinesso-01"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience"
+      ],
+      "resumeTerms": [
+        "team coordination",
+        "cross-functional delivery",
+        "2 to 30"
+      ],
+      "matchMode": "recognized-equivalent"
+    }
+  ],
+  "fitGate": {
+    "supportedOverlap": [
+      "7+ years of direct Fortune 500 pharma and healthcare account management with $2M-$50M+ budgets, from Account Coordinator through Senior Account Executive.",
+      "Consumer account leadership on FCB Health's largest pharma business, including three national television launches within one year and a 45% increase in new-to-brand consumers within seven weeks.",
+      "Direct responsibility for market research, FDA preclearance, med-legal approval, broadcast production, network clearances, digital work, and client recommendations.",
+      "Account leadership beyond pharma included Tough Mudder loyalty work and the agency's largest PDI and Nice-Pak account across print, digital, and social.",
+      "Later UX, enterprise analytics, and regulated AI work adds stronger discovery, workflow, and delivery-side judgment.",
+      "The route can connect this resume to relevant pharma, analytics, and client-led product proof without asking the portfolio to replace the account-management evidence."
+    ],
+    "unsupportedRequirements": [],
+    "actualMismatches": [
+      "Recent full-time titles center on AI implementation, product strategy, and UX rather than account management, so the return needs to be stated directly."
+    ],
+    "missingEvidence": [
+      "Employer-specific requirements such as Salesforce or CRM ownership, renewals, retention, quota, contract negotiation, or sales operations must be checked against each posting before this general package is used."
+    ],
+    "coverLetterBridge": {
+      "status": "not-needed",
+      "rationale": "This is a general recruiter and networking resume, not an application to a specific employer. The resume directly proves healthcare account leadership, budgets, integrated delivery, and MLR work. Each future job description still needs its own cover-letter bridge decision."
+    },
+    "recommendation": "Proceed with this curated version as the primary general Account Management resume. The direct account work carries the document; later roles are present only where they strengthen client discovery, regulated delivery, recommendations, or team leadership. Re-run the fit gate for every employer."
+  },
+  "positioning": {
+    "laneId": "client-account-delivery",
+    "targetIdentity": "Healthcare account leader",
+    "employerNeed": "Own healthcare client relationships and keep brand strategy, budgets, timelines, and cross-functional delivery aligned.",
+    "bridgeType": "direct",
+    "applicationStrategy": "direct",
+    "bridgeThesis": "looking to make a return to account management",
+    "proofIds": [
+      "account-management-01",
+      "account-management-02",
+      "account-management-03"
+    ],
+    "remainingGap": null
+  },
+  "resume": {
+    "foundationId": "wally-mostafa-resume-2026-07-03",
+    "compositionMode": "curated-user-authorized",
+    "curationAuthorization": {
+      "authorizedBy": "user",
+      "authorizedAt": "2026-07-29",
+      "scope": "Healthcare Account Management resume only.",
+      "reason": "The user explicitly authorized removing, consolidating, reordering, and rewriting bullets so direct account-management experience receives substantially more weight than later supporting roles."
+    },
+    "layoutDensity": "standard",
+    "summary": "Healthcare account leader looking to make a return to account management after 7+ years with Fortune 500 pharma and consumer brands. I managed $2M-$50M+ budgets and led broadcast, digital, social, CRM, print, and unbranded programs through FDA and med-legal review. Later work in UX, analytics, and AI taught me what delivery teams need from the account lead and where client work tends to get stuck.",
+    "skillIds": [
+      "client-account-leadership",
+      "regulated-healthcare-client-delivery",
+      "program-project-delivery",
+      "healthcare-marketing-strategy"
+    ],
+    "skills": [
+      {
+        "label": "Client & Account Leadership",
+        "description": "Fortune 500 pharma and healthcare accounts, $2M-$50M+ budgets, client briefs, brand planning, and cross-functional delivery"
+      },
+      {
+        "label": "Regulated Healthcare & Client Delivery",
+        "description": "11 years across pharma/healthcare communications, FDA/HIPAA/MLR workflows, HCP/patient UX, client workshops, and stakeholder adoption"
+      },
+      {
+        "label": "Program & Project Delivery",
+        "description": "Scoping, requirements, timelines, review routing, team coordination, risk visibility, and build-ready handoff across product, design, and client teams"
+      },
+      {
+        "label": "Healthcare Marketing & Brand Strategy",
+        "description": "Brand planning, campaign and digital strategy, MLR review, patient and HCP experiences, and regulated multi-channel delivery"
+      }
+    ],
+    "experienceSections": [
+      {
+        "heading": "Account Management Experience",
+        "roleIds": [
+          "account-management"
+        ]
+      },
+      {
+        "heading": "Recent Client & Delivery Experience",
+        "pageBreakBefore": true,
+        "roleIds": [
+          "hedgehox",
+          "one-block-away",
+          "kinesso",
+          "omnicom",
+          "heartbeat"
+        ]
+      }
+    ],
+    "awards": [
+      {
+        "label": "Manny Award 2013",
+        "detail": "Best Non-Branded Campaign, \"Get Your Shift Together\""
+      },
+      {
+        "label": "Pharma Choice Award 2011",
+        "detail": "Bronze, Professional Mobile Site"
+      },
+      {
+        "label": "Selected Design Recognition",
+        "detail": "Red Dot and Indigo awards for enterprise analytics, data visualization, and design systems"
+      }
+    ],
+    "roles": {
+      "hedgehox": [
+        "Translate pharma agency needs into working tools for brief intake, scoping, MLR claim review, review routing, submission capture, and FDA signal monitoring",
+        "Built Scope Generator for pharma agency finance and operations teams to manage rate cards, brands, sub-brands, and natural-language scope changes"
+      ],
+      "one-block-away": [
+        "Lead client discovery and turn unclear business questions into testable product concepts, working POCs, demo flows, and roadmap decisions"
+      ],
+      "kinesso": [
+        "Scaled product design from 2 to 30 people across the US and Poland for enterprise analytics used by 7,000+ users across 22 white-label brands",
+        "Built the Digital Experience Audit workflow for channel scoring, benchmarks, recommendations, visualization, and presentation-ready client outputs"
+      ],
+      "omnicom": [
+        "Supported oncology accounts and brought UX into account, strategy, creative, and delivery conversations to turn brand goals into clearer digital recommendations"
+      ],
+      "heartbeat": [
+        "Partnered with strategy, creative, account, and engineering teams to move pharma research and UX recommendations into build-ready product and campaign experiences"
+      ],
+      "account-management": [
+        "Managed Fortune 500 pharma and consumer relationships and $2M-$50M+ budgets across Prevenar 13, NUVIGIL, Namenda XR, Lipitor, Zoloft, Tough Mudder, PDI, and Nice-Pak, progressing from Account Coordinator through Senior Account Executive",
+        "Served as one of two consumer account leads on FCB Health's largest pharma business and launched three national television commercials within one year; the work drove a 45% increase in new-to-brand consumers within the first seven weeks",
+        "Owned the broadcast workstream from market research and brand medical and legal review through FDA preclearance, pre- and post-production, talent and location coordination, director searches, and network clearances",
+        "Led the launch of an unbranded Alzheimer's caregiver community site, coordinating support resources, digital delivery, sponsorship exploration, and public relations planning",
+        "Managed Namenda XR in-office and national print launch tactics, including sales-representative support materials, while overseeing the account's Assistant Account Executive",
+        "Led the social campaign for a new Tough Mudder loyalty program and oversaw PDI and Nice-Pak, the agency's largest account, across print, digital, and social",
+        "Used campaign metrics to shape digital recommendations for Lipitor's online presence and loyalty program, with the goal of supporting continued prescriptions",
+        "Contributed to NUVIGIL's annual strategy across branded, unbranded, digital, social, and CRM work; coordinated vendor delivery spanning Times Square NASDAQ, Xbox Live, web, radio, and consumer journal programs"
+      ]
+    },
+    "sourceBulletIds": {
+      "hedgehox": [
+        "hedgehox-03",
+        "hedgehox-05"
+      ],
+      "one-block-away": [
+        "one-block-away-01"
+      ],
+      "kinesso": [
+        "kinesso-01",
+        "kinesso-03"
+      ],
+      "omnicom": [
+        "omnicom-01"
+      ],
+      "heartbeat": [
+        "heartbeat-03"
+      ],
+      "account-management": [
+        "account-management-01",
+        "account-management-02",
+        "account-management-03",
+        "addition:account-management-caregiver-site",
+        "addition:account-management-namenda-launch",
+        "addition:account-management-tough-mudder-pdi",
+        "addition:account-management-lipitor-loyalty",
+        "addition:account-management-nuvigil-integrated"
+      ]
+    }
+  },
+  "hero": {
+    "eyebrow": "Healthcare Account Management | Client Strategy",
+    "tags": [
+      "Fortune 500 pharma accounts",
+      "$2M-$50M+ client budgets",
+      "National broadcast, FDA and MLR"
+    ],
+    "intro": "I'm looking to make a return to account management after 7+ years with Fortune 500 pharma and consumer brands. I managed $2M-$50M+ budgets and led national television, digital, social, CRM, print, and unbranded work through FDA and med-legal review. Since then, working inside UX, analytics, and regulated AI has given me a better view of what delivery teams need from the account lead."
+  },
+  "contact": {
+    "prompt": "If you need a healthcare account leader who can own the relationship, guide regulated campaign delivery, and keep internal teams clear on what comes next, email is the fastest way to reach me.",
+    "signoff": "Healthcare account leadership | regulated campaigns | client strategy"
+  },
+  "coverLetter": null,
+  "copyReview": {
+    "humanizerVersion": "2.2.0",
+    "mode": "rewrite-requested",
+    "status": "passed",
+    "reviewedAt": "2026-07-29T23:09:59.959Z",
+    "copySha256": "532420effe497b7a9870c3646e550895f4ed45066089880b729ddfa354d49d07",
+    "preserved": [
+      "claims"
+    ],
+    "rewriteAuthorized": true,
+    "reviewMethod": "humanizer-skill",
+    "semanticPassAttested": true,
+    "staticChecksPassed": true,
+    "finalAntiAiPass": true,
+    "remainingTells": []
+  },
+  "constraints": {
+    "doNotClaim": [
+      "Salesforce or CRM ownership",
+      "Renewal or retention ownership",
+      "Upsell or cross-sell revenue",
+      "Sales quota or closed-won revenue",
+      "Contract negotiation ownership",
+      "Payer, provider, or benefits account ownership",
+      "Current day-to-day account management"
+    ],
+    "blockedTerms": [
+      "Salesforce",
+      "renewal ownership",
+      "retention target",
+      "upsell revenue",
+      "sales quota",
+      "closed-won",
+      "contract negotiation",
+      "payer account",
+      "provider account",
+      "currently managing accounts"
+    ]
+  },
+  "privacy": {
+    "publicSafe": true,
+    "notes": "Contains only a public-safe general target profile and sanitized evidence from the public resume and portfolio. It excludes recruiter details, application answers, compensation boundaries, and private eligibility information."
+  },
+  "qa": {
+    "status": "qa-passed",
+    "builtAt": "2026-07-29T23:10:47.647Z",
+    "configInputSha256": "cee9946e3a0c140517c9a56f8b5d64bcc008dcc9d75dde57bb0b69ef2f0d7b4d",
+    "sourceResumeSha256": "375cc6566f5bbad5b95be9da551dfe87824378fb252222409d29ef32d334ca25",
+    "resumeFoundation": {
+      "id": "wally-mostafa-resume-2026-07-03",
+      "sourcePdfSha256": "f9b05b6c3c134262b1af6c5734363daf4385cf335407a139779a37d138adf1aa"
+    },
+    "artifactHashes": {
+      "routeSha256": "5ad896565fb301b85f52104e7fcac471b7a1b518e0c9db64236a8c00985ee247",
+      "resumePdfSha256": "c24d89603fee5d4cfa31a41c775ecf3e8f2f9d511caaa3dbbb12567b43fa51e9",
+      "coverLetterPdfSha256": null,
+      "coverLetterMarkdownSha256": null,
+      "scopedProjectSha256": {}
+    },
+    "renderer": {
+      "browser": {
+        "name": "chrome-headless-shell",
+        "version": "Google Chrome for Testing 149.0.7827.55"
+      },
+      "htmlPath": "tmp/tailored-resumes/healthcare-account-management.html",
+      "pdfPath": "output/pdf/Wally-Mostafa-Healthcare-Account-Management-Resume.pdf",
+      "fontWait": false
+    },
+    "coverLetterRenderer": null,
+    "coverLetter": null,
+    "ats": {
+      "ok": true,
+      "pdfPath": "output/pdf/Wally-Mostafa-Healthcare-Account-Management-Resume.pdf",
+      "pageCount": 2,
+      "fileSize": 131202,
+      "annotations": [
+        {
+          "page": 1,
+          "uri": "mailto:wmostafa12@gmail.com"
+        },
+        {
+          "page": 1,
+          "uri": "https://linkedin.com/in/wallymo"
+        },
+        {
+          "page": 1,
+          "uri": "https://wallymo.github.io/healthcare-account-management/"
+        }
+      ],
+      "coverage": [
+        {
+          "id": "education-and-experience",
+          "requirement": "Bring a bachelor's degree and substantial professional experience in account management or related client services.",
+          "priority": "hard-gate",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "Managed Fortune 500 pharma",
+            "Rutgers University"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "client-account-leadership",
+          "requirement": "Own healthcare and pharmaceutical client relationships, priorities, and day-to-day account direction.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "Client & Account Leadership",
+            "Fortune 500 pharma and consumer relationships",
+            "$2M-$50M+ budgets"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "strategy-briefs-delivery",
+          "requirement": "Translate client and brand priorities into briefs, creative feedback, production requirements, timelines, and finished work.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "market research",
+            "FDA preclearance",
+            "production"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "integrated-regulated-campaigns",
+          "requirement": "Guide integrated healthcare campaigns and regulated delivery across national broadcast, digital, loyalty, brand planning, and MLR review.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "national television commercials",
+            "FDA",
+            "MLR"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "budget-program-delivery",
+          "requirement": "Manage large client budgets, timelines, review paths, risks, and cross-functional delivery.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "$2M-$50M+ budgets",
+            "Program & Project Delivery",
+            "cross-functional delivery"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "client-discovery-recommendations",
+          "requirement": "Use discovery, research, analytics, and clear recommendations to help clients make better decisions.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "Lead client discovery",
+            "benchmarks",
+            "presentation-ready client outputs"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "cross-functional-leadership",
+          "requirement": "Keep account, strategy, creative, production, UX, engineering, operations, and client teams aligned.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "team coordination",
+            "cross-functional delivery",
+            "2 to 30"
+          ],
+          "missingTerms": []
+        }
+      ],
+      "failures": [],
+      "warnings": []
+    },
+    "humanizer": {
+      "status": "passed",
+      "version": "2.2.0",
+      "mode": "rewrite-requested",
+      "reviewedAt": "2026-07-29T23:09:59.959Z",
+      "copySha256": "532420effe497b7a9870c3646e550895f4ed45066089880b729ddfa354d49d07",
+      "reviewMethod": "humanizer-skill",
+      "semanticPassAttested": true,
+      "staticChecksPassed": true
+    },
+    "route": {
+      "viewports": [
+        {
+          "name": "desktop",
+          "screenshot": "tmp/qa/healthcare-account-management/desktop.png",
+          "errors": []
+        },
+        {
+          "name": "mobile",
+          "screenshot": "tmp/qa/healthcare-account-management/mobile.png",
+          "errors": []
+        }
+      ],
+      "errors": []
+    }
+  }
+}

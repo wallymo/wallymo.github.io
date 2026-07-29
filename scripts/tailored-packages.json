@@ -1237,6 +1237,30 @@
       }
     },
     {
+      "workflowVersion": 2,
+      "contractRevision": 6,
+      "slug": "healthcare-account-management",
+      "roleTitle": "Healthcare Account Management & Client Strategy",
+      "artifactStem": "Healthcare-Account-Management",
+      "configPath": "scripts/packages/healthcare-account-management.json",
+      "targetLane": "client-account-delivery",
+      "evidenceMode": "resume-primary",
+      "fitClass": "strong",
+      "positioningLane": "client-account-delivery",
+      "bridgeType": "direct",
+      "applicationStrategy": "direct",
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-01.html",
+        "project-06.html",
+        "project-02.html"
+      ],
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Healthcare-Account-Management-Resume.pdf",
+      "publishStatus": "local-only",
+      "qaStatus": "qa-passed",
+      "builtAt": "2026-07-29T23:10:47.647Z"
+    },
+    {
       "slug": "healthcare-diagnostics-sales-support",
       "roleTitle": "Healthcare Diagnostics Sales Support",
       "fitClass": "unclassified",
