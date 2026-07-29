@@ -355,20 +355,26 @@
     ],
     "roles": {
       "hedgehox": [
+        "Secured an investor for proprietary Claims Detection software by building the functional POC, shaping the demo story, and iterating with investors",
         "Translate pharma agency needs into working tools for brief intake, scoping, MLR claim review, review routing, submission capture, and FDA signal monitoring",
+        "Designed Claims Detector workflows that identify promotional claims, surface evidence gaps, and pre-populate audit-ready annotations before MLR submission",
         "Built Scope Generator for pharma agency finance and operations teams to manage rate cards, brands, sub-brands, and natural-language scope changes"
       ],
       "one-block-away": [
-        "Lead client discovery and turn unclear business questions into testable product concepts, working POCs, demo flows, and roadmap decisions"
+        "Lead client discovery and turn unclear business questions into testable product concepts, working POCs, demo flows, and roadmap decisions",
+        "Own product strategy, UX, AI workflow design, front-end build, backend logic, demo readiness, and client iteration from first ask through working prototype",
+        "Built ListingPal's AI listing-generation POC and landing page, turning basic property inputs into listing copy, social posts, ad copy, styling direction, and MLS/SEO-ready language in under 90 seconds"
       ],
       "kinesso": [
         "Scaled product design from 2 to 30 people across the US and Poland for enterprise analytics used by 7,000+ users across 22 white-label brands",
+        "Led UX and design-system strategy for MIE data visualization, dashboard building, brand theming, and reusable analytics components",
         "Built the Digital Experience Audit workflow for channel scoring, benchmarks, recommendations, visualization, and presentation-ready client outputs"
       ],
       "omnicom": [
         "Supported oncology accounts and brought UX into account, strategy, creative, and delivery conversations to turn brand goals into clearer digital recommendations"
       ],
       "heartbeat": [
+        "Led UX research and experience strategy for pharma and healthcare work, translating stakeholder input, competitive audits, and user needs into digital product direction",
         "Partnered with strategy, creative, account, and engineering teams to move pharma research and UX recommendations into build-ready product and campaign experiences"
       ],
       "account-management": [
@@ -384,20 +390,26 @@
     },
     "sourceBulletIds": {
       "hedgehox": [
+        "hedgehox-01",
         "hedgehox-03",
+        "hedgehox-02",
         "hedgehox-05"
       ],
       "one-block-away": [
-        "one-block-away-01"
+        "one-block-away-01",
+        "one-block-away-04",
+        "one-block-away-02"
       ],
       "kinesso": [
         "kinesso-01",
+        "kinesso-02",
         "kinesso-03"
       ],
       "omnicom": [
         "omnicom-01"
       ],
       "heartbeat": [
+        "heartbeat-01",
         "heartbeat-03"
       ],
       "account-management": [
@@ -430,8 +442,8 @@
     "humanizerVersion": "2.2.0",
     "mode": "rewrite-requested",
     "status": "passed",
-    "reviewedAt": "2026-07-29T23:23:24.603Z",
-    "copySha256": "9fc653dd76de15fc6f953557011dbfe813985c61941a62f99f15386ade1b2560",
+    "reviewedAt": "2026-07-29T23:34:48.730Z",
+    "copySha256": "84fd30952481f12a9e5854d1769073437c0f20077e581ae0d4646d29b127b0b7",
     "preserved": [
       "claims"
     ],
@@ -471,8 +483,8 @@
   },
   "qa": {
     "status": "qa-passed",
-    "builtAt": "2026-07-29T23:23:28.661Z",
-    "configInputSha256": "a1e365f4975c226d8283d4ad1288f1f5cd573c0e130a41aeb485dc2672a93ff1",
+    "builtAt": "2026-07-29T23:34:52.416Z",
+    "configInputSha256": "dbf0c389a52084490b9cfe445a2741b2ff17c8a3fa6d05e7572c5064f3cacf2d",
     "sourceResumeSha256": "375cc6566f5bbad5b95be9da551dfe87824378fb252222409d29ef32d334ca25",
     "resumeFoundation": {
       "id": "wally-mostafa-resume-2026-07-03",
@@ -480,7 +492,7 @@
     },
     "artifactHashes": {
       "routeSha256": "5ad896565fb301b85f52104e7fcac471b7a1b518e0c9db64236a8c00985ee247",
-      "resumePdfSha256": "b5271b3a90d5ed9f9dc4aea2d89553e7281692048fcd8dcf14c9afcb57d69c68",
+      "resumePdfSha256": "accdeb476bae1e5ac2d6f48c1085de995dede1f41c4365ce96fb96533c8a266e",
       "coverLetterPdfSha256": null,
       "coverLetterMarkdownSha256": null,
       "scopedProjectSha256": {}
@@ -500,7 +512,7 @@
       "ok": true,
       "pdfPath": "output/pdf/Wally-Mostafa-Healthcare-Account-Management-Resume.pdf",
       "pageCount": 2,
-      "fileSize": 132819,
+      "fileSize": 138535,
       "annotations": [
         {
           "page": 1,
@@ -633,8 +645,8 @@
       "status": "passed",
       "version": "2.2.0",
       "mode": "rewrite-requested",
-      "reviewedAt": "2026-07-29T23:23:24.603Z",
-      "copySha256": "9fc653dd76de15fc6f953557011dbfe813985c61941a62f99f15386ade1b2560",
+      "reviewedAt": "2026-07-29T23:34:48.730Z",
+      "copySha256": "84fd30952481f12a9e5854d1769073437c0f20077e581ae0d4646d29b127b0b7",
       "reviewMethod": "humanizer-skill",
       "semanticPassAttested": true,
       "staticChecksPassed": true
