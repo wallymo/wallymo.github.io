@@ -330,16 +330,12 @@
     ],
     "awards": [
       {
-        "label": "Manny Award 2013",
+        "label": "2013 Manny Award Winner",
         "detail": "Best Non-Branded Campaign, \"Get Your Shift Together\""
       },
       {
-        "label": "Pharma Choice Award 2011",
-        "detail": "Bronze, Professional Mobile Site"
-      },
-      {
-        "label": "Selected Design Recognition",
-        "detail": "Red Dot and Indigo awards for enterprise analytics, data visualization, and design systems"
+        "label": "2011 Pharma Choice Winner",
+        "detail": "Bronze Professional Mobile Site"
       }
     ],
     "roles": {
@@ -419,8 +415,8 @@
     "humanizerVersion": "2.2.0",
     "mode": "rewrite-requested",
     "status": "passed",
-    "reviewedAt": "2026-07-29T23:09:59.959Z",
-    "copySha256": "532420effe497b7a9870c3646e550895f4ed45066089880b729ddfa354d49d07",
+    "reviewedAt": "2026-07-29T23:19:51.816Z",
+    "copySha256": "6d204e74c812cbf0f8930357805010ee1cd4686ad64242bc7e6ca987689378b7",
     "preserved": [
       "claims"
     ],
@@ -460,8 +456,8 @@
   },
   "qa": {
     "status": "qa-passed",
-    "builtAt": "2026-07-29T23:10:47.647Z",
-    "configInputSha256": "cee9946e3a0c140517c9a56f8b5d64bcc008dcc9d75dde57bb0b69ef2f0d7b4d",
+    "builtAt": "2026-07-29T23:19:55.962Z",
+    "configInputSha256": "2f12b869be51815ff2ecc47cb2baad22cde65575373e736c9074cd44f0ec5c27",
     "sourceResumeSha256": "375cc6566f5bbad5b95be9da551dfe87824378fb252222409d29ef32d334ca25",
     "resumeFoundation": {
       "id": "wally-mostafa-resume-2026-07-03",
@@ -469,7 +465,7 @@
     },
     "artifactHashes": {
       "routeSha256": "5ad896565fb301b85f52104e7fcac471b7a1b518e0c9db64236a8c00985ee247",
-      "resumePdfSha256": "c24d89603fee5d4cfa31a41c775ecf3e8f2f9d511caaa3dbbb12567b43fa51e9",
+      "resumePdfSha256": "9798487bba819ed113c3396552f29cf6f68c5ee277523e2182ef260901712f35",
       "coverLetterPdfSha256": null,
       "coverLetterMarkdownSha256": null,
       "scopedProjectSha256": {}
@@ -489,7 +485,7 @@
       "ok": true,
       "pdfPath": "output/pdf/Wally-Mostafa-Healthcare-Account-Management-Resume.pdf",
       "pageCount": 2,
-      "fileSize": 131202,
+      "fileSize": 126975,
       "annotations": [
         {
           "page": 1,
@@ -610,8 +606,8 @@
       "status": "passed",
       "version": "2.2.0",
       "mode": "rewrite-requested",
-      "reviewedAt": "2026-07-29T23:09:59.959Z",
-      "copySha256": "532420effe497b7a9870c3646e550895f4ed45066089880b729ddfa354d49d07",
+      "reviewedAt": "2026-07-29T23:19:51.816Z",
+      "copySha256": "6d204e74c812cbf0f8930357805010ee1cd4686ad64242bc7e6ca987689378b7",
       "reviewMethod": "humanizer-skill",
       "semanticPassAttested": true,
       "staticChecksPassed": true
