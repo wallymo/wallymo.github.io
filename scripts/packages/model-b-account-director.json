@@ -1,0 +1,831 @@
+{
+  "workflowVersion": 2,
+  "contractRevision": 5,
+  "slug": "model-b-account-director",
+  "roleTitle": "Model B Account Director / Group Account Director",
+  "artifactStem": "Model-B-Account-Director",
+  "fitClass": "adjacent",
+  "routeMode": "canonical-projects",
+  "selectedProjects": [
+    "project-06.html",
+    "project-02.html",
+    "project-01.html"
+  ],
+  "job": {
+    "company": "Model B",
+    "roleTitle": "Account Director / Group Account Director",
+    "sourceChannel": "chat-pasted-jd",
+    "dateCaptured": "2026-07-29",
+    "location": "Full-time remote; U.S. residents only",
+    "atsVendor": "unknown",
+    "rawJd": "Company Description\n\nModel B is an independent growth marketing consultancy fueling growth by creating magnetic connections between companies and their customers. We deliver outsized growth through our team's leadership, executing plans with a coordinated mix of internal resources and global talent from our Partner Collective network.\n\nRole Description\n\nThis is a full-time remote role for an Account Director / Group Account Director. The AD is responsible for managing and growing client relationships, working with internal teams to drive results and meet client goals, leading and developing business-building Success Plans, managing projects, and participating in the new business development process.\n\nQualifications\n\nMust have a management consultant's mindset, be well-versed in how businesses operate and make money\nAccount Management experience spanning B2C and B2B clients, ideally globally\nFull-funnel marketer, adept across the channel mix\nProject Management expertise\nExperience in managing five to seven client accounts simultaneously\nStrong understanding of digital marketing channels, including search, email, social, and content\nExcellent communication, problem-solving, and analytical skills\n8 or more years of agency or marketing experience required\nU.S. residents only\n\nCompensation\n\n$135,000 salary (max)\nAnnual company profit sharing\nUnlimited PTO\n100% of employee insurance paid, dependents at employee cost\n401(k)"
+  },
+  "classification": {
+    "targetLane": "client-account-delivery",
+    "evidenceMode": "resume-primary",
+    "primarySource": "The resume drives the fit call. It shows 7+ years managing Fortune 500 pharma and healthcare relationships with $2M-$50M+ budgets, integrated campaign leadership, brand planning, briefs, timelines, and cross-functional delivery. The broader career adds more than eight years across agency and marketing work.",
+    "supportingSource": "The portfolio adds consultative business problem-solving, marketing analytics, channel audits, client-led POCs, agency finance workflows, and distributed team leadership. It does not establish five to seven concurrent accounts, global client ownership, or direct ownership of search and email programs.",
+    "hardGateStatus": "pass",
+    "hardGates": [
+      {
+        "gate": "Eight or more years of agency or marketing experience",
+        "status": "pass",
+        "requirementId": "agency-marketing-experience",
+        "evidence": "The resume documents 7+ years in agency account management followed by healthcare UX, Omnicom, Heartbeat, Kinesso marketing intelligence, and current pharma agency workflow work."
+      },
+      {
+        "gate": "U.S. resident",
+        "status": "pass",
+        "requirementId": "us-residency",
+        "evidence": "The resume lists Raleigh, North Carolina."
+      }
+    ]
+  },
+  "requirements": [
+    {
+      "id": "agency-marketing-experience",
+      "text": "Bring eight or more years of agency or marketing experience.",
+      "priority": "hard-gate",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The resume documents 7+ years of direct agency account management and more than 15 years across account strategy, healthcare marketing, UX, marketing analytics, and agency workflow delivery."
+      ],
+      "proofIds": [
+        "account-management-01",
+        "heartbeat-01",
+        "kinesso-03"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience"
+      ],
+      "resumeTerms": [
+        "15 years",
+        "7+ years managing",
+        "Account Management & Client Strategy"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "us-residency",
+      "text": "Be a U.S. resident for this remote role.",
+      "priority": "hard-gate",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The resume lists Raleigh, North Carolina."
+      ],
+      "proofIds": [],
+      "destinations": [
+        "application-answer"
+      ],
+      "resumeTerms": [
+        "Raleigh, NC"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "client-relationship-growth",
+      "text": "Manage and grow client relationships, meet client goals, and develop business-building Success Plans.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "The resume documents 7+ years managing Fortune 500 client relationships, large budgets, brand planning, briefs, timelines, and cross-functional delivery.",
+        "Current client-led POCs turn business questions into testable products, demos, and roadmap decisions.",
+        "Formal Success Plans and quantified relationship-growth outcomes are not named."
+      ],
+      "proofIds": [
+        "account-management-01",
+        "account-management-03",
+        "one-block-away-01"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "Fortune 500 pharma and healthcare accounts",
+        "brand planning",
+        "roadmap decisions"
+      ],
+      "matchMode": "contextual"
+    },
+    {
+      "id": "consultant-business-mindset",
+      "text": "Bring a management consultant's mindset and understand how businesses operate and make money.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Client-led POCs begin with unclear business questions and turn them into testable product surfaces and roadmap decisions.",
+        "Scope Generator supports agency finance and operations teams through rate cards, brands, sub-brands, scopes, and resourcing.",
+        "The resume does not claim a management-consulting title, P&L ownership, or formal profitability consulting."
+      ],
+      "proofIds": [
+        "one-block-away-01",
+        "one-block-away-04",
+        "hedgehox-05"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "Consultative Sales & Solution Delivery",
+        "business questions",
+        "finance and operations teams"
+      ],
+      "matchMode": "contextual"
+    },
+    {
+      "id": "b2c-b2b-global-accounts",
+      "text": "Bring account-management experience across B2C and B2B clients, ideally globally.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "FCB Health work includes direct consumer account leadership across major pharma brands and integrated campaigns.",
+        "Kinesso work adds enterprise products, 22 white-label brands, and a distributed United States and Poland team.",
+        "Direct B2B account ownership and global client-account responsibility are not documented."
+      ],
+      "proofIds": [
+        "account-management-02",
+        "kinesso-01"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience"
+      ],
+      "resumeTerms": [
+        "consumer leads",
+        "enterprise analytics",
+        "US and Poland"
+      ],
+      "matchMode": "contextual"
+    },
+    {
+      "id": "full-funnel-marketing",
+      "text": "Operate as a full-funnel marketer across the channel mix.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "FCB Health account work spanned TV, radio, digital, gaming, Times Square, unbranded campaigns, and brand planning.",
+        "Later work adds campaign experiences, marketing analytics, channel scoring, benchmarks, recommendations, and digital product direction.",
+        "The public evidence does not establish direct ownership of every full-funnel stage."
+      ],
+      "proofIds": [
+        "account-management-02",
+        "heartbeat-03",
+        "kinesso-03"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "integrated campaigns",
+        "campaign and digital strategy",
+        "channel scoring"
+      ],
+      "matchMode": "contextual"
+    },
+    {
+      "id": "project-management",
+      "text": "Bring project-management expertise and coordinate internal teams to meet client goals.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The resume documents client briefs, production requirements, timelines, review routing, team coordination, risk visibility, and cross-functional delivery.",
+        "Current work runs from discovery and scoping through prototype delivery and client iteration."
+      ],
+      "proofIds": [
+        "account-management-03",
+        "hedgehox-03",
+        "one-block-away-04"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience"
+      ],
+      "resumeTerms": [
+        "Program & Project Delivery",
+        "timelines",
+        "team coordination"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "account-load",
+      "text": "Have experience managing five to seven client accounts simultaneously.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "proofIds": [],
+      "destinations": [
+        "application-answer"
+      ],
+      "resumeTerms": [
+        "five to seven client accounts"
+      ],
+      "matchMode": "not-supported"
+    },
+    {
+      "id": "digital-channel-depth",
+      "text": "Understand digital marketing channels including search, email, social, and content.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "The resume documents digital campaigns, digital strategy, channel audits, marketing analytics, content structure, and campaign experiences.",
+        "ListingPal produces social posts, ad copy, and MLS and SEO-ready language.",
+        "Direct search and email channel ownership are not documented."
+      ],
+      "proofIds": [
+        "account-management-02",
+        "kinesso-03",
+        "one-block-away-02"
+      ],
+      "destinations": [
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "digital",
+        "social posts",
+        "SEO-ready language"
+      ],
+      "matchMode": "contextual"
+    },
+    {
+      "id": "new-business-development",
+      "text": "Participate in the new business development process.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "The resume documents an investor secured through a functional POC and demo story, plus discovery-led solution design and client-led POCs.",
+        "Formal agency new-business pipeline, pitch, or proposal ownership is not stated."
+      ],
+      "proofIds": [
+        "hedgehox-01",
+        "one-block-away-01",
+        "one-block-away-04"
+      ],
+      "destinations": [
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "Secured an investor",
+        "demo narratives",
+        "client-led AI POCs"
+      ],
+      "matchMode": "contextual"
+    },
+    {
+      "id": "communication-problem-solving-analysis",
+      "text": "Communicate clearly and bring strong problem-solving and analytical skills.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The resume shows client-to-team translation through briefs, feedback, requirements, workshops, demos, analytics, benchmarks, recommendations, and presentation-ready outputs."
+      ],
+      "proofIds": [
+        "account-management-03",
+        "kinesso-03",
+        "one-block-away-01"
+      ],
+      "destinations": [
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "client translation",
+        "benchmarks",
+        "recommendations"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "team-leadership",
+      "text": "Lead internal resources and coordinate global talent around client plans.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The resume documents scaling product design from 2 to 30 people across the United States and Poland.",
+        "Account and product work aligns strategy, creative, UX, development, finance, operations, and client teams."
+      ],
+      "proofIds": [
+        "kinesso-01",
+        "account-management-03"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience"
+      ],
+      "resumeTerms": [
+        "2 to 30",
+        "US and Poland",
+        "cross-functional delivery"
+      ],
+      "matchMode": "exact"
+    }
+  ],
+  "fitGate": {
+    "supportedOverlap": [
+      "7+ years of direct Fortune 500 account leadership with $2M-$50M+ budgets, brand planning, briefs, timelines, and cross-functional delivery.",
+      "More than eight years across agency and marketing work, including FCB Health, Heartbeat, Omnicom, and Kinesso.",
+      "Integrated campaign experience across TV, radio, digital, gaming, Times Square, unbranded work, brand planning, and regulated review.",
+      "Project-management depth across scoping, requirements, timelines, review routing, team coordination, and client iteration.",
+      "Consultative business problem-solving through client-led POCs, agency finance workflows, marketing analytics, channel audits, and roadmap decisions.",
+      "Senior distributed-team leadership through scaling product design from 2 to 30 people across the United States and Poland."
+    ],
+    "unsupportedRequirements": [
+      "Five to seven simultaneous client accounts are not documented.",
+      "Direct search and email channel ownership are not documented.",
+      "Formal Success Plan ownership and quantified client-growth outcomes are not documented.",
+      "Direct B2B account ownership and global client-account responsibility are not documented.",
+      "Formal agency new-business pipeline, pitch, or proposal ownership is not stated."
+    ],
+    "actualMismatches": [
+      "The recent operating center is UX, marketing analytics, AI implementation, and client-led product work rather than a traditional agency account-management title."
+    ],
+    "missingEvidence": [
+      "A verified example of managing five to seven client accounts at once.",
+      "Named search and email programs with direct channel responsibility.",
+      "A business-building Success Plan with measurable client-growth results.",
+      "B2B client ownership and global client-account scope.",
+      "Direct participation in an agency new-business pitch, proposal, or pipeline."
+    ],
+    "coverLetterBridge": {
+      "status": "recommended",
+      "rationale": "We can make the case with a cover letter by connecting 7+ years of agency account leadership to later consulting, analytics, distributed-team leadership, and client-led product work. The letter should explain why that broader experience strengthens a return to account leadership while leaving account load, named channel ownership, global B2B scope, and formal Success Plans as open gaps."
+    },
+    "recommendation": "Proceed as an adjacent fit. Lead with direct account leadership, integrated campaigns, project delivery, client strategy, and the later consulting and analytics work. Keep five to seven simultaneous accounts, search and email ownership, global B2B account scope, formal Success Plans, and agency new-business ownership visible as gaps."
+  },
+  "positioning": {
+    "laneId": "client-account-delivery",
+    "targetIdentity": "Agency account and client strategy leader",
+    "employerNeed": "Grow client relationships, build practical business plans, and coordinate the right internal and external teams around measurable client goals.",
+    "bridgeType": "operating-center",
+    "applicationStrategy": "transferable",
+    "bridgeThesis": "account leadership with analytics and client-led product work",
+    "proofIds": [
+      "account-management-01",
+      "kinesso-03",
+      "one-block-away-01"
+    ],
+    "remainingGap": "Five to seven simultaneous accounts, direct search and email ownership, global B2B client scope, formal Success Plans, and agency new-business ownership are not documented."
+  },
+  "resume": {
+    "foundationId": "wally-mostafa-resume-2026-07-03",
+    "summary": "Agency account and client strategy leader looking to make a return to account management. My experience combines account leadership with analytics and client-led product work. I bring 15 years across agency, marketing, UX, and AI implementation, including 7+ years managing Fortune 500 relationships and $2M-$50M+ budgets across integrated campaigns, brand planning, timelines, and cross-functional delivery.",
+    "skillIds": [
+      "client-account-leadership",
+      "program-project-delivery",
+      "consultative-sales-solution-delivery",
+      "healthcare-marketing-strategy",
+      "research-experience-strategy"
+    ],
+    "skills": [
+      {
+        "label": "Client & Account Leadership",
+        "description": "Fortune 500 pharma and healthcare accounts, $2M-$50M+ budgets, client briefs, brand planning, and cross-functional delivery"
+      },
+      {
+        "label": "Program & Project Delivery",
+        "description": "Scoping, requirements, timelines, review routing, team coordination, risk visibility, and build-ready handoff across product, design, and client teams"
+      },
+      {
+        "label": "Consultative Sales & Solution Delivery",
+        "description": "Discovery-led solution design, POCs, demo narratives, client translation, and product recommendations tied to business needs"
+      },
+      {
+        "label": "Healthcare Marketing & Brand Strategy",
+        "description": "Brand planning, campaign and digital strategy, MLR review, patient and HCP experiences, and regulated multi-channel delivery"
+      },
+      {
+        "label": "Research & Experience Strategy",
+        "description": "Stakeholder interviews, competitive audits, journey maps, user flows, wireframes, prototypes, usability testing, and research-led product direction"
+      }
+    ],
+    "roles": {
+      "hedgehox": [
+        "Secured an investor for proprietary Claims Detection software by building the functional POC, shaping the demo story, and iterating with investors",
+        "Designed Claims Detector workflows that identify promotional claims, surface evidence gaps, and pre-populate audit-ready annotations before MLR submission",
+        "Converted pharma agency needs into AI tools for MLR claim review, brief intake, scoping, review routing, submission capture, and FDA signal monitoring",
+        "Designed the full Xenagos Bio startup biopharma website from scratch, including investor-facing structure, scientific positioning, visual direction, and hidden design-system handoff",
+        "Built Scope Generator for pharma agency finance and operations teams to manage regional rate cards, brands, sub-brands, and natural-language scope changes",
+        "Developed FDA Warning Tool concepts that connect warning-letter patterns to content-risk guidance for pharma teams"
+      ],
+      "one-block-away": [
+        "Build client-led AI POCs that turn unclear business questions into testable product surfaces, demo flows, and roadmap decisions",
+        "Built ListingPal's AI listing-generation POC and landing page, turning basic property inputs into listing copy, social posts, ad copy, styling direction, and MLS/SEO-ready language in under 90 seconds",
+        "Built WeReady's Bailey Intelligence dashboard, translating founder inputs, GitHub signals, source health, risk scoring, and evidence trails into startup-readiness workflows",
+        "Own product strategy, UX, AI workflow design, front-end build, backend logic, demo readiness, and client iteration from first ask through working prototype",
+        "Currently building the website and sponsor strategy for a Tunisia youth soccer program, positioning the project for player advancement, community support, and donor outreach"
+      ],
+      "kinesso": [
+        "Scaled product design from 2 to 30 people across the US and Poland for enterprise analytics used by 7,000+ users across 22 white-label brands",
+        "Led UX and design-system strategy for MIE data visualization, dashboard building, brand theming, and reusable analytics components",
+        "Built the Digital Experience Audit workflow for channel scoring, benchmarks, recommendations, visualization, and presentation-ready client outputs",
+        "Design-system and analytics work earned 5 Indigo Gold, 4 Indigo Silver, and Red Dot recognition"
+      ],
+      "omnicom": [
+        "Supported oncology accounts as a freelance UX designer, combining UX design and account-management experience to strengthen regulated healthcare work",
+        "Championed UX best practices across account, strategy, creative, and delivery conversations, translating brand goals into clearer user flows, content structure, and digital recommendations"
+      ],
+      "heartbeat": [
+        "Led UX research and experience strategy for pharma and healthcare work, translating stakeholder input, competitive audits, and user needs into digital product direction",
+        "Created journey maps, site maps, user flows, wireframes, and prototypes for patient, HCP, and internal brand-team experiences across regulated healthcare programs",
+        "Partnered with strategy, creative, account, and engineering teams to move UX recommendations from research findings into build-ready product and campaign experiences"
+      ],
+      "account-management": [
+        "7+ years managing Fortune 500 pharma and healthcare clients with $2M-$50M+ budgets across CNS/neurology, psychiatry, cardiovascular/metabolic, and sleep/wakefulness brands including NUVIGIL, Namenda XR, Lipitor, and Zoloft",
+        "One of two account consumer leads on FCB Health's largest pharma account across all verticals: TV, radio, digital, gaming, Times Square, unbranded campaigns, brand planning, and MLR review",
+        "Translated client and brand strategy into briefs, creative feedback, production requirements, timelines, and MLR-ready deliverables across account, creative, UX, and development teams"
+      ]
+    },
+    "sourceBulletIds": {
+      "hedgehox": [
+        "hedgehox-01",
+        "hedgehox-02",
+        "hedgehox-03",
+        "hedgehox-04",
+        "hedgehox-05",
+        "hedgehox-06"
+      ],
+      "one-block-away": [
+        "one-block-away-01",
+        "one-block-away-02",
+        "one-block-away-03",
+        "one-block-away-04",
+        "one-block-away-05"
+      ],
+      "kinesso": [
+        "kinesso-01",
+        "kinesso-02",
+        "kinesso-03",
+        "kinesso-04"
+      ],
+      "omnicom": [
+        "omnicom-01",
+        "omnicom-02"
+      ],
+      "heartbeat": [
+        "heartbeat-01",
+        "heartbeat-02",
+        "heartbeat-03"
+      ],
+      "account-management": [
+        "account-management-01",
+        "account-management-02",
+        "account-management-03"
+      ]
+    }
+  },
+  "constraints": {
+    "doNotClaim": [
+      "Management consultant title",
+      "P&L or profitability ownership",
+      "Five to seven simultaneous client accounts",
+      "Direct search marketing ownership",
+      "Direct email marketing ownership",
+      "Global client-account ownership",
+      "Direct B2B account ownership",
+      "Formal Success Plan ownership",
+      "Quantified client-growth outcomes",
+      "Agency new-business pipeline ownership",
+      "Closed agency new-business wins"
+    ],
+    "blockedTerms": [
+      "management consultant",
+      "owned P&L",
+      "managed seven accounts simultaneously",
+      "owned search marketing",
+      "owned email marketing",
+      "managed global client accounts",
+      "owned B2B accounts",
+      "led formal Success Plans",
+      "drove quantified account growth",
+      "owned the new business pipeline",
+      "closed agency new business"
+    ]
+  },
+  "hero": {
+    "eyebrow": "Model B | Account Director / Group Account Director",
+    "tags": [
+      "Agency account leadership",
+      "Integrated marketing delivery",
+      "Consultative growth planning"
+    ],
+    "intro": "I am looking to make a return to account management with 7+ years leading Fortune 500 pharma relationships and $2M-$50M+ budgets. I would bring account leadership with analytics and client-led product work to Model B. At FCB Health, I was one of two consumer account leads on the agency's largest pharma business across TV, radio, digital, gaming, brand planning, and MLR review."
+  },
+  "contact": {
+    "prompt": "If Model B needs an account leader who can pair agency client ownership with integrated marketing, business problem-solving, and disciplined project delivery, email is the fastest way to reach me.",
+    "signoff": "Agency accounts | integrated marketing | consultative delivery"
+  },
+  "privacy": {
+    "publicSafe": true,
+    "notes": "Contains only the public job posting supplied in chat and sanitized evidence from the public resume and portfolio. It excludes recruiter contact details, application answers, compensation decisions, and private eligibility information."
+  },
+  "copyReview": {
+    "humanizerVersion": "2.2.0",
+    "mode": "surface-only",
+    "status": "passed",
+    "reviewedAt": "2026-07-29T15:55:50.380Z",
+    "copySha256": "4549e001da61a96d8cf7b81b1c6d6a70bdadcd77401424f47501a0bb608160b6",
+    "preserved": [
+      "content",
+      "structure",
+      "claims",
+      "ending"
+    ],
+    "rewriteAuthorized": false,
+    "reviewMethod": "humanizer-skill",
+    "semanticPassAttested": true,
+    "staticChecksPassed": true,
+    "finalAntiAiPass": true,
+    "remainingTells": []
+  },
+  "qa": {
+    "status": "qa-passed",
+    "builtAt": "2026-07-29T15:55:54.780Z",
+    "configInputSha256": "b3a751666e3913699fe5176b384af36b1d62d4f4ad2c145d5aec33eca447b379",
+    "sourceResumeSha256": "5dc5bf084dda0093679ee5ed02fba5d308d2301ea3fd09069c07b0d7eae936b9",
+    "resumeFoundation": {
+      "id": "wally-mostafa-resume-2026-07-03",
+      "sourcePdfSha256": "f9b05b6c3c134262b1af6c5734363daf4385cf335407a139779a37d138adf1aa"
+    },
+    "artifactHashes": {
+      "routeSha256": "19d5f09aa67d1b0bd365ccc5adabdb2aa55b6490c9f917868be1588aed804388",
+      "resumePdfSha256": "a199b42be6b42296c28544aad7031e11994c62c234c54567f8724b93fc6c2091",
+      "scopedProjectSha256": {}
+    },
+    "renderer": {
+      "browser": {
+        "name": "chrome-headless-shell",
+        "version": "Google Chrome for Testing 149.0.7827.55"
+      },
+      "htmlPath": "tmp/tailored-resumes/model-b-account-director.html",
+      "pdfPath": "output/pdf/Wally-Mostafa-Model-B-Account-Director-Resume.pdf"
+    },
+    "ats": {
+      "ok": true,
+      "pdfPath": "output/pdf/Wally-Mostafa-Model-B-Account-Director-Resume.pdf",
+      "pageCount": 2,
+      "fileSize": 135509,
+      "annotations": [
+        {
+          "page": 1,
+          "uri": "mailto:wmostafa12@gmail.com"
+        },
+        {
+          "page": 1,
+          "uri": "https://linkedin.com/in/wallymo"
+        },
+        {
+          "page": 1,
+          "uri": "https://wallymo.github.io/model-b-account-director/"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/6748"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/4629"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.red-dot.org/project/dxa-digital-experience-audit-55219"
+        }
+      ],
+      "coverage": [
+        {
+          "id": "agency-marketing-experience",
+          "requirement": "Bring eight or more years of agency or marketing experience.",
+          "priority": "hard-gate",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "15 years",
+            "7+ years managing",
+            "Account Management & Client Strategy"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "us-residency",
+          "requirement": "Be a U.S. resident for this remote role.",
+          "priority": "hard-gate",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "Raleigh, NC"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "client-relationship-growth",
+          "requirement": "Manage and grow client relationships, meet client goals, and develop business-building Success Plans.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "contextual",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "Fortune 500 pharma and healthcare accounts",
+            "brand planning",
+            "roadmap decisions"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "consultant-business-mindset",
+          "requirement": "Bring a management consultant's mindset and understand how businesses operate and make money.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "contextual",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "Consultative Sales & Solution Delivery",
+            "business questions",
+            "finance and operations teams"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "b2c-b2b-global-accounts",
+          "requirement": "Bring account-management experience across B2C and B2B clients, ideally globally.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "contextual",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "consumer leads",
+            "enterprise analytics",
+            "US and Poland"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "full-funnel-marketing",
+          "requirement": "Operate as a full-funnel marketer across the channel mix.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "contextual",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "integrated campaigns",
+            "campaign and digital strategy",
+            "channel scoring"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "project-management",
+          "requirement": "Bring project-management expertise and coordinate internal teams to meet client goals.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "Program & Project Delivery",
+            "timelines",
+            "team coordination"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "account-load",
+          "requirement": "Have experience managing five to seven client accounts simultaneously.",
+          "priority": "core",
+          "evidenceStatus": "none",
+          "matchMode": "not-supported",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "five to seven client accounts"
+          ]
+        },
+        {
+          "id": "digital-channel-depth",
+          "requirement": "Understand digital marketing channels including search, email, social, and content.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "contextual",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "digital",
+            "social posts",
+            "SEO-ready language"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "new-business-development",
+          "requirement": "Participate in the new business development process.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "contextual",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "Secured an investor",
+            "demo narratives",
+            "client-led AI POCs"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "communication-problem-solving-analysis",
+          "requirement": "Communicate clearly and bring strong problem-solving and analytical skills.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "client translation",
+            "benchmarks",
+            "recommendations"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "team-leadership",
+          "requirement": "Lead internal resources and coordinate global talent around client plans.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "2 to 30",
+            "US and Poland",
+            "cross-functional delivery"
+          ],
+          "missingTerms": []
+        }
+      ],
+      "failures": [],
+      "warnings": []
+    },
+    "humanizer": {
+      "status": "passed",
+      "version": "2.2.0",
+      "mode": "surface-only",
+      "reviewedAt": "2026-07-29T15:55:50.380Z",
+      "copySha256": "4549e001da61a96d8cf7b81b1c6d6a70bdadcd77401424f47501a0bb608160b6",
+      "reviewMethod": "humanizer-skill",
+      "semanticPassAttested": true,
+      "staticChecksPassed": true
+    },
+    "route": {
+      "viewports": [
+        {
+          "name": "desktop",
+          "screenshot": "tmp/qa/model-b-account-director/desktop.png",
+          "errors": []
+        },
+        {
+          "name": "mobile",
+          "screenshot": "tmp/qa/model-b-account-director/mobile.png",
+          "errors": []
+        }
+      ],
+      "errors": []
+    }
+  }
+}

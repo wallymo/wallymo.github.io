@@ -1642,6 +1642,30 @@
     },
     {
       "workflowVersion": 2,
+      "contractRevision": 5,
+      "slug": "model-b-account-director",
+      "roleTitle": "Model B Account Director / Group Account Director",
+      "artifactStem": "Model-B-Account-Director",
+      "configPath": "scripts/packages/model-b-account-director.json",
+      "targetLane": "client-account-delivery",
+      "evidenceMode": "resume-primary",
+      "fitClass": "adjacent",
+      "positioningLane": "client-account-delivery",
+      "bridgeType": "operating-center",
+      "applicationStrategy": "transferable",
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-06.html",
+        "project-02.html",
+        "project-01.html"
+      ],
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Model-B-Account-Director-Resume.pdf",
+      "publishStatus": "local-only",
+      "qaStatus": "qa-passed",
+      "builtAt": "2026-07-29T15:55:54.780Z"
+    },
+    {
+      "workflowVersion": 2,
       "slug": "motive-product-manager-compliance",
       "roleTitle": "Motive Product Manager, Compliance",
       "artifactStem": "Motive-Product-Manager-Compliance",
