@@ -208,9 +208,26 @@
         "project-02.html"
       ],
       "resumePdfPath": "output/pdf/Wally-Mostafa-Account-Management-Experience-First-Resume.pdf",
-      "publishStatus": "local-only",
+      "publishStatus": "live-verified",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-07-29T22:53:01.807Z"
+      "builtAt": "2026-07-29T22:53:01.807Z",
+      "verification": {
+        "verifiedAt": "2026-07-29T22:54:25.372Z",
+        "routeUrl": "https://wallymo.github.io/account-management-experience-first/",
+        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-Account-Management-Experience-First-Resume.pdf",
+        "configUrl": "https://wallymo.github.io/scripts/packages/account-management-experience-first.json",
+        "projectUrls": [
+          "https://wallymo.github.io/project-01.html",
+          "https://wallymo.github.io/project-06.html",
+          "https://wallymo.github.io/project-02.html"
+        ],
+        "configSha256": "e6499c631fa0a735f28dc36da05e6cb895b50d4f17f566d6183e4ce17fc07b96",
+        "pdfSha256": "00e82093978d6a99f091b89892fe318df5182595fb14e4fba87e5c5969477ec9",
+        "routeSha256": "3297c355e6848ea1d7122dc63a0968bfa9f86d347a896c4ef8f35789a3e59f6e",
+        "scopedProjectSha256": {},
+        "configInputSha256": "dccf37d6f8ff012b305bad0cf3122c291cae85e608893a0929e9c8ba755ef3d4",
+        "qaBuiltAt": "2026-07-29T22:53:01.807Z"
+      }
     },
     {
       "workflowVersion": 2,
