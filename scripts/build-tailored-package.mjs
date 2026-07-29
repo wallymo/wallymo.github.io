@@ -20,6 +20,7 @@ import {
   configInputSha256,
   escapeHtml,
   getArtifactPaths,
+  getResumeExperienceSections,
   hasCoverLetterArtifact,
   isMain,
   readJson,
@@ -552,8 +553,69 @@ function buildResume(config, paths) {
       renderBulletItems(config.resume.roles[roleId])
     );
   }
+  resumeHtml = replaceResumeExperienceSections(resumeHtml, config);
   resumeHtml = replacePortfolioLink(resumeHtml, routeUrl);
   return resumeHtml;
+}
+
+function extractBalancedTagBlock(html, startIndex, tagName) {
+  const tagPattern = new RegExp(`<\\/?${tagName}\\b[^>]*>`, 'gi');
+  tagPattern.lastIndex = startIndex;
+  let depth = 0;
+  let started = false;
+  let match;
+
+  while ((match = tagPattern.exec(html))) {
+    if (!started && match.index !== startIndex) {
+      throw new Error(`Expected <${tagName}> at index ${startIndex}`);
+    }
+    started = true;
+    depth += match[0].startsWith('</') ? -1 : 1;
+    if (depth === 0) {
+      return html.slice(startIndex, tagPattern.lastIndex);
+    }
+  }
+  throw new Error(`Could not find the closing </${tagName}> tag`);
+}
+
+function replaceResumeExperienceSections(resumeHtml, config) {
+  const experienceMatch = resumeHtml.match(
+    /<section data-resume-section="experience">[\s\S]*?<\/section>/
+  );
+  if (!experienceMatch) {
+    throw new Error('Could not find the source resume experience section');
+  }
+
+  const sourceSection = experienceMatch[0];
+  const jobBlocks = new Map();
+  for (const roleId of RESUME_ROLE_IDS) {
+    const roleMarker = `data-resume-role="${roleId}"`;
+    const markerIndex = sourceSection.indexOf(roleMarker);
+    const jobStart = sourceSection.lastIndexOf(
+      '<div class="job">',
+      markerIndex
+    );
+    if (markerIndex === -1 || jobStart === -1) {
+      throw new Error(`Could not find the source resume job for ${roleId}`);
+    }
+    jobBlocks.set(
+      roleId,
+      extractBalancedTagBlock(sourceSection, jobStart, 'div')
+    );
+  }
+
+  const replacement = getResumeExperienceSections(config)
+    .map(
+      (section, index) => `<section data-resume-section="${
+        index === 0 ? 'experience' : `experience-${index + 1}`
+      }">
+  <div class="section-title">${escapeHtml(section.heading)}</div>
+
+${section.roleIds.map((roleId) => jobBlocks.get(roleId)).join('\n\n')}
+</section>`
+    )
+    .join('\n\n');
+  return resumeHtml.replace(experienceMatch[0], replacement);
 }
 
 function normalizeRouteQa(result) {

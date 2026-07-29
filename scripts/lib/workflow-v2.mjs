@@ -31,6 +31,12 @@ export const RESUME_ROLE_IDS = [
   'heartbeat',
   'account-management',
 ];
+const DEFAULT_RESUME_EXPERIENCE_SECTIONS = [
+  {
+    heading: 'Experience',
+    roleIds: RESUME_ROLE_IDS,
+  },
+];
 const BRIDGE_TYPES = new Set([
   'direct',
   'operating-center',
@@ -80,6 +86,12 @@ export function usesFlexiblePositioningContract(configOrRevision) {
       ? configOrRevision?.contractRevision
       : configOrRevision;
   return FLEXIBLE_POSITIONING_REVISIONS.has(revision);
+}
+
+export function getResumeExperienceSections(config) {
+  return Array.isArray(config?.resume?.experienceSections)
+    ? config.resume.experienceSections
+    : DEFAULT_RESUME_EXPERIENCE_SECTIONS;
 }
 
 export function hasCoverLetterArtifact(config) {
@@ -213,6 +225,11 @@ export function humanizerCopyEntries(config) {
 
   if (config?.contractRevision !== 4) {
     add('resume.summary', config?.resume?.summary);
+    if (Array.isArray(config?.resume?.experienceSections)) {
+      config.resume.experienceSections.forEach((section, index) => {
+        add(`resume.experienceSections[${index}].heading`, section?.heading);
+      });
+    }
     if (Array.isArray(config?.resume?.skills)) {
       config.resume.skills.forEach((skill, index) => {
         add(`resume.skills[${index}].label`, skill?.label);
@@ -653,6 +670,52 @@ function validateResume(config, errors) {
         resume.roles[roleId].every(isNonEmptyString),
       `resume.roles.${roleId} must be a non-empty string array`
     );
+  }
+  if (resume.experienceSections !== undefined) {
+    pushError(
+      errors,
+      Array.isArray(resume.experienceSections) &&
+        resume.experienceSections.length >= 1 &&
+        resume.experienceSections.length <= 3,
+      'resume.experienceSections must include 1 to 3 sections'
+    );
+    if (Array.isArray(resume.experienceSections)) {
+      const sectionRoleIds = [];
+      for (const [sectionIndex, section] of resume.experienceSections.entries()) {
+        pushError(
+          errors,
+          section && typeof section === 'object',
+          `resume.experienceSections[${sectionIndex}] must be an object`
+        );
+        pushError(
+          errors,
+          isNonEmptyString(section?.heading),
+          `resume.experienceSections[${sectionIndex}].heading is required`
+        );
+        pushError(
+          errors,
+          Array.isArray(section?.roleIds) &&
+            section.roleIds.length > 0 &&
+            section.roleIds.every(isNonEmptyString),
+          `resume.experienceSections[${sectionIndex}].roleIds must be a non-empty string array`
+        );
+        if (Array.isArray(section?.roleIds)) {
+          sectionRoleIds.push(...section.roleIds);
+          pushError(
+            errors,
+            section.roleIds.every((roleId) => RESUME_ROLE_IDS.includes(roleId)),
+            `resume.experienceSections[${sectionIndex}].roleIds contains an unknown role`
+          );
+        }
+      }
+      pushError(
+        errors,
+        sectionRoleIds.length === RESUME_ROLE_IDS.length &&
+          new Set(sectionRoleIds).size === RESUME_ROLE_IDS.length &&
+          RESUME_ROLE_IDS.every((roleId) => sectionRoleIds.includes(roleId)),
+        'resume.experienceSections must place every foundation role exactly once'
+      );
+    }
   }
 
   if (
@@ -1640,6 +1703,10 @@ export function recruiterFacingClaimViolations(config) {
           ...config.resume.skills.flatMap((skill, index) => [
             [`resume.skills[${index}].label`, skill.label],
             [`resume.skills[${index}].description`, skill.description],
+          ]),
+          ...(config.resume.experienceSections || []).map((section, index) => [
+            `resume.experienceSections[${index}].heading`,
+            section.heading,
           ]),
           ...RESUME_ROLE_IDS.flatMap((roleId) =>
             config.resume.roles[roleId].map((bullet, index) => [

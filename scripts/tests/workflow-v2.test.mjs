@@ -26,6 +26,7 @@ import {
   configInputSha256,
   humanizerCopyEntries,
   humanizerViolations,
+  getResumeExperienceSections,
   replaceElementContent,
   replacePortfolioLink,
   resolveChromeExecutable,
@@ -439,6 +440,157 @@ test('revisions 5 and 6 preserve every foundation bullet while allowing edits, a
     /must match the selected foundation skill definitions and order/
   );
 });
+
+test('revisions 5 and 6 support relevance-first experience sections without duplicating or dropping roles', () => {
+  const relevanceFirst = validConfig();
+  relevanceFirst.resume.experienceSections = [
+    {
+      heading: 'Account Management Experience',
+      roleIds: ['account-management'],
+    },
+    {
+      heading: 'Recent & Complementary Experience',
+      roleIds: [
+        'hedgehox',
+        'one-block-away',
+        'kinesso',
+        'omnicom',
+        'heartbeat',
+      ],
+    },
+  ];
+  assert.deepEqual(validateV2Config(relevanceFirst), []);
+  assert.deepEqual(
+    getResumeExperienceSections(relevanceFirst).flatMap(
+      (section) => section.roleIds
+    ),
+    [
+      'account-management',
+      'hedgehox',
+      'one-block-away',
+      'kinesso',
+      'omnicom',
+      'heartbeat',
+    ]
+  );
+  assert.ok(
+    humanizerCopyEntries(relevanceFirst).some(
+      ([field, value]) =>
+        field === 'resume.experienceSections[0].heading' &&
+        value === 'Account Management Experience'
+    )
+  );
+
+  const duplicateRole = structuredClone(relevanceFirst);
+  duplicateRole.resume.experienceSections[1].roleIds.push(
+    'account-management'
+  );
+  assert.match(
+    validateV2Config(duplicateRole).join('\n'),
+    /must place every foundation role exactly once/
+  );
+
+  const missingRole = structuredClone(relevanceFirst);
+  missingRole.resume.experienceSections[1].roleIds.pop();
+  assert.match(
+    validateV2Config(missingRole).join('\n'),
+    /must place every foundation role exactly once/
+  );
+
+  const standard = validConfig();
+  assert.deepEqual(getResumeExperienceSections(standard), [
+    {
+      heading: 'Experience',
+      roleIds: [
+        'hedgehox',
+        'one-block-away',
+        'kinesso',
+        'omnicom',
+        'heartbeat',
+        'account-management',
+      ],
+    },
+  ]);
+});
+
+test(
+  'relevance-first experience sections render in the requested order and pass ATS checks',
+  { timeout: 180_000 },
+  () => {
+    const { tempRoot, config, configPath } = createBuildFixture({
+      slug: 'relevance-first-fixture',
+      artifactStem: 'Relevance-First-Fixture',
+    });
+    try {
+      config.resume.experienceSections = [
+        {
+          heading: 'Account Management Experience',
+          roleIds: ['account-management'],
+        },
+        {
+          heading: 'Recent & Complementary Experience',
+          roleIds: [
+            'hedgehox',
+            'one-block-away',
+            'kinesso',
+            'omnicom',
+            'heartbeat',
+          ],
+        },
+      ];
+      approveHumanizerReview(config, {
+        reviewedAt: '2026-07-29T12:00:00.000Z',
+        semanticPassComplete: true,
+      });
+      writeFileSync(configPath, `${JSON.stringify(config, null, 2)}\n`);
+
+      const result = run(
+        ['scripts/build-tailored-package.mjs', '--config', configPath],
+        {
+          env: {
+            ...process.env,
+            WORKFLOW_REPO_ROOT: tempRoot,
+            CHROME_PATH: resolveChromeExecutable(),
+          },
+        }
+      );
+      assert.equal(result.status, 0, `${result.stdout}\n${result.stderr}`);
+
+      const pdfPath = path.join(
+        tempRoot,
+        'output',
+        'pdf',
+        'Wally-Mostafa-Relevance-First-Fixture-Resume.pdf'
+      );
+      const extracted = run([
+        '-e',
+        [
+          "const { execFileSync } = require('node:child_process');",
+          `const output = execFileSync('pdftotext', ['${pdfPath}', '-'], { encoding: 'utf8' });`,
+          'process.stdout.write(output);',
+        ].join('\n'),
+      ]);
+      assert.equal(extracted.status, 0, extracted.stderr);
+      const compactText = extracted.stdout.toUpperCase().replace(/\s+/g, '');
+      const accountHeading = compactText.indexOf(
+        'ACCOUNTMANAGEMENTEXPERIENCE'
+      );
+      const accountRole = compactText.indexOf(
+        'ACCOUNTMANAGEMENT&CLIENTSTRATEGY'
+      );
+      const recentHeading = compactText.indexOf(
+        'RECENT&COMPLEMENTARYEXPERIENCE'
+      );
+      const recentRole = compactText.indexOf('AIIMPLEMENTATIONPARTNER');
+      assert.ok(accountHeading >= 0);
+      assert.ok(accountRole > accountHeading);
+      assert.ok(recentHeading > accountRole);
+      assert.ok(recentRole > recentHeading);
+    } finally {
+      rmSync(tempRoot, { recursive: true, force: true });
+    }
+  }
+);
 
 test('element replacement preserves literal dollar amounts', () => {
   const html = '<ul data-resume-role="account-management"><li>Old</li></ul>';

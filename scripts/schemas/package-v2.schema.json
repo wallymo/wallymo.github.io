@@ -196,6 +196,34 @@
         },
         "roles": { "type": "object" },
         "foundationId": { "type": "string", "minLength": 1 },
+        "experienceSections": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 3,
+          "items": {
+            "type": "object",
+            "required": ["heading", "roleIds"],
+            "properties": {
+              "heading": { "type": "string", "minLength": 1 },
+              "roleIds": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "enum": [
+                    "hedgehox",
+                    "one-block-away",
+                    "kinesso",
+                    "omnicom",
+                    "heartbeat",
+                    "account-management"
+                  ]
+                },
+                "uniqueItems": true
+              }
+            },
+            "additionalProperties": false
+          }
+        },
         "sourceBulletIds": {
           "type": "object",
           "required": [

@@ -8,6 +8,7 @@ import {
   assertHumanizerReviewCurrent,
   assertValidV2Config,
   ensureRegularFile,
+  getResumeExperienceSections,
   isMain,
   normalizeText,
   readJson,
@@ -225,8 +226,11 @@ export function runAtsCheck({ configPath, pdfPath }) {
   const normalizedResume = normalizeText(extractedText);
   if (usesFlexiblePositioningContract(config)) {
     const foundation = readResumeFoundation();
+    const experienceRoleIds = getResumeExperienceSections(config).flatMap(
+      (section) => section.roleIds
+    );
     let anchorCursor = 0;
-    for (const roleId of Object.keys(foundation.roleHeaders || {})) {
+    for (const roleId of experienceRoleIds) {
       const header = foundation.roleHeaders[roleId];
       for (const [label, value] of [
         ['title', header.title],
@@ -262,11 +266,8 @@ export function runAtsCheck({ configPath, pdfPath }) {
       }
     }
 
-    let bulletCursor = Math.max(
-      0,
-      normalizedResume.indexOf(normalizeText('EXPERIENCE'))
-    );
-    for (const roleId of Object.keys(foundation.roles || {})) {
+    let bulletCursor = 0;
+    for (const roleId of experienceRoleIds) {
       const sourceIds = config.resume.sourceBulletIds[roleId] || [];
       const tailoredBullets = config.resume.roles[roleId] || [];
       for (const [bulletIndex, tailoredBullet] of tailoredBullets.entries()) {
