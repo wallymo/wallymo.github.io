@@ -1727,9 +1727,26 @@
         "project-01.html"
       ],
       "resumePdfPath": "output/pdf/Wally-Mostafa-Microsoft-Senior-Customer-Success-Account-Manager-Resume.pdf",
-      "publishStatus": "local-only",
+      "publishStatus": "live-verified",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-07-29T16:20:44.341Z"
+      "builtAt": "2026-07-29T16:20:44.341Z",
+      "verification": {
+        "verifiedAt": "2026-07-29T16:29:15.295Z",
+        "routeUrl": "https://wallymo.github.io/microsoft-senior-customer-success-account-manager/",
+        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-Microsoft-Senior-Customer-Success-Account-Manager-Resume.pdf",
+        "configUrl": "https://wallymo.github.io/scripts/packages/microsoft-senior-customer-success-account-manager.json",
+        "projectUrls": [
+          "https://wallymo.github.io/project-02.html",
+          "https://wallymo.github.io/project-03.html",
+          "https://wallymo.github.io/project-01.html"
+        ],
+        "configSha256": "d154a3c69b5d8b243eb7dca504f284c2eb2c51cb9bd8036896be1e0da5b141ca",
+        "pdfSha256": "0ee2665291b1e00914952a1d88594791d47c7c9e44c1f0783b1b66f8782e63c5",
+        "routeSha256": "c921c4b2489fe8dc10d6f8f15cd67de1bdbd3a6a60df6323ce9a2103183b0c0f",
+        "scopedProjectSha256": {},
+        "configInputSha256": "c55bbc960ca9d7161e7aea6c6493dbd49358d18c42e4526eb1d16364f849b3cd",
+        "qaBuiltAt": "2026-07-29T16:20:44.341Z"
+      }
     },
     {
       "slug": "modaxo-ai-transformation-manager",
