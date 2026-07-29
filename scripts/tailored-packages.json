@@ -1490,6 +1490,30 @@
       "publishStatus": "tracked-unverified"
     },
     {
+      "workflowVersion": 2,
+      "contractRevision": 5,
+      "slug": "marketing-account-manager-workfront",
+      "roleTitle": "Account Executive II / Marketing Account Manager",
+      "artifactStem": "Marketing-Account-Manager-Workfront",
+      "configPath": "scripts/packages/marketing-account-manager-workfront.json",
+      "targetLane": "client-account-delivery",
+      "evidenceMode": "resume-primary",
+      "fitClass": "adjacent",
+      "positioningLane": "client-account-delivery",
+      "bridgeType": "operating-center",
+      "applicationStrategy": "transferable",
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-06.html",
+        "project-03.html",
+        "project-01.html"
+      ],
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Marketing-Account-Manager-Workfront-Resume.pdf",
+      "publishStatus": "local-only",
+      "qaStatus": "qa-passed",
+      "builtAt": "2026-07-29T16:04:56.140Z"
+    },
+    {
       "slug": "marketing-analyst",
       "roleTitle": "Marketing Analytics & Client Reporting",
       "fitClass": "unclassified",

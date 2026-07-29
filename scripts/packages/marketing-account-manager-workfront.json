@@ -1,0 +1,793 @@
+{
+  "workflowVersion": 2,
+  "contractRevision": 5,
+  "slug": "marketing-account-manager-workfront",
+  "roleTitle": "Account Executive II / Marketing Account Manager",
+  "artifactStem": "Marketing-Account-Manager-Workfront",
+  "fitClass": "adjacent",
+  "routeMode": "canonical-projects",
+  "selectedProjects": [
+    "project-06.html",
+    "project-03.html",
+    "project-01.html"
+  ],
+  "job": {
+    "company": "Confidential Financial Services Client",
+    "roleTitle": "Account Executive II / Account Manager - Marketing",
+    "sourceChannel": "user-provided job description",
+    "dateCaptured": "2026-07-29",
+    "location": "Remote",
+    "atsVendor": "unknown",
+    "rawJd": "Position Name: Account Executive II\n\nDuration: 4+ months with possible extension\n\nAccount Manager - Marketing\nRemote\n\nMust Haves: Heavy project management experience-4 years Workfront platform experience, campaign execution, switchboard operator, detail oriented, client relationship experience, great organizational skills.\n\nRole Summary/Purpose:\n\nThe Account Manager is responsible for both managing & cultivating strong partnerships with key strategic clients/businesses, delivering against client campaign business goals, delivering complex campaigns across multiple marketing execution channels and supporting the continual evolution and integration of holistic planning and delivery for the business.\n\nEssential Responsibilities:\n\nLeverage campaign strategy & execution expertise to drive optimization & efficiency within client campaigns & deliver on key business strategic initiatives with a diligent focus on safety & soundness\nManage campaign execution across multiple marketing channels including direct mail, email, paid media, earned media & Marketplace\nForge strategic relationships with client teams as a trusted advisor and influencer bringing thought leadership and guidance to every conversation by sharing knowledge, encouraging dialogue on insights, and demonstrating strategic thinking\nHelp clients achieve their goals and stay ahead of industry trends, anticipating their needs and leveraging industry knowledge to provide solutions to challenges that align with business goals\nLead cross functional client marketing meetings and collaborate with functional experts to develop execution program solutions to achieve strategic client objectives in New Accounts, Sales, and Net Income goals, optimize marketing opportunities, and share best practices\nThe candidate may, at times, act as Agile team scrum master; manage strategic client projects and lead process improvements across all channels\nServe as liaison and central point of contact with marketing teams for milestone tracking, change control requests, process exceptions, as well as omni channel optimization opportunities\nEstablish and lead regular campaign portfolio review operating process with client marketing teams to drive execution progress, proactively address roadblocks, optimize marketing opportunities, and share best practices\nPartner with internal teams to plan & forecast channel capacity, prioritize campaigns, and proactively manage workload balancing to support the strategic priorities of the business and governance requirements\nIf needed, drive and coordinate client marketing campaign incident management and corrective actions; partnering with remediation subject matter expects and compliance teams\nBuild relationships/networks across key functional areas that support marketing execution plans\nPerform other duties and/or special projects as assigned\n\nQualifications/Requirements:\n\nBachelor's Degree OR in lieu of degree high school diploma/GED and 5+ years of professional experience in sales, marketing, operations in a corporate environment\nA minimum of 4 years of marketing experience to include Project Management and client relationship experience\n\nDesired Characteristics:\n\nExcellent team skills; flexibility to pivot with strategy, regulatory and market evolution; and proven ability to work cross functionally, as well as within own function\nProven client relationship management skill sets, experience developing plans and consistently meeting deadlines\nProject management experience leveraging the Workfront platform for campaign execution\nExcellent organization, communication & critical thinking skills, the ability to navigate in a fast-paced environment, the ability to synthesize information, connect the dots and anticipate needs/impacts across the business\nAgile skill sets, team, process, tools and/or methods experience, a plus\nDemonstrated experience with tactical omnichannel execution across multiple channels and a general understanding of Paid Media execution components including tagging, trafficking, digital audiences (Liveramp) for Search, Social, Display/ Programmatic and Affiliate\nBe curious and embrace change; be a catalyst for new ways of thinking and delivering for the business"
+  },
+  "classification": {
+    "targetLane": "client-account-delivery",
+    "evidenceMode": "resume-primary",
+    "primarySource": "The resume is the main evidence. It documents 7+ years managing Fortune 500 healthcare accounts and $2M-$50M+ budgets, direct Workfront use during account-management delivery, integrated campaign leadership, client briefs, production requirements, timelines, regulated review, and cross-functional execution.",
+    "supportingSource": "The portfolio adds enterprise marketing analytics, channel scoring, benchmarks, presentation-ready recommendations, regulated workflow design, and systems used by 7,000+ people across 22 brands.",
+    "hardGateStatus": "pass",
+    "hardGates": [
+      {
+        "gate": "Four or more years of marketing experience including project management and client relationships",
+        "status": "pass",
+        "requirementId": "marketing-project-client-experience",
+        "evidence": "The resume documents 7+ years managing Fortune 500 healthcare accounts, large budgets, integrated campaigns, briefs, timelines, production requirements, and cross-functional delivery."
+      },
+      {
+        "gate": "Workfront experience for campaign execution",
+        "status": "pass",
+        "requirementId": "workfront",
+        "evidence": "Direct Workfront use is confirmed during the documented account-management period. The exact number of years and any Workfront administration duties remain unconfirmed and are not claimed."
+      },
+      {
+        "gate": "Bachelor's degree or qualifying professional experience",
+        "status": "pass",
+        "requirementId": "education",
+        "evidence": "The resume documents a BA from Rutgers University and more than five years of corporate marketing and client experience."
+      }
+    ]
+  },
+  "requirements": [
+    {
+      "id": "marketing-project-client-experience",
+      "text": "Bring at least four years of marketing experience that includes project management and client relationship work.",
+      "priority": "hard-gate",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Seven-plus years managing Fortune 500 pharma and healthcare clients with $2M-$50M+ budgets.",
+        "Direct responsibility for integrated campaigns, client briefs, production requirements, timelines, regulated review, and cross-functional delivery."
+      ],
+      "proofIds": [
+        "account-management-01",
+        "account-management-02",
+        "account-management-03"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience"
+      ],
+      "resumeTerms": [
+        "7+ years",
+        "project delivery",
+        "client"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "workfront",
+      "text": "Bring Workfront platform experience for campaign execution and project management.",
+      "priority": "hard-gate",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Direct Workfront use during the documented account-management period was confirmed by the candidate.",
+        "Workfront is included only with campaign and account delivery. No exact duration, platform administration, reporting, or planned-hours ownership is claimed."
+      ],
+      "proofIds": [
+        "account-management-03"
+      ],
+      "destinations": [
+        "summary",
+        "experience"
+      ],
+      "resumeTerms": [
+        "Workfront",
+        "campaign execution"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "education",
+      "text": "Hold a bachelor's degree or qualifying professional experience.",
+      "priority": "hard-gate",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "BA in Labor Studies and Employee Relations from Rutgers University.",
+        "More than 15 years of professional experience across account management, marketing, client delivery, analytics, UX, and AI implementation."
+      ],
+      "proofIds": [],
+      "destinations": [
+        "application-answer"
+      ],
+      "resumeTerms": [
+        "Rutgers University"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "omnichannel-campaign-execution",
+      "text": "Manage complex campaign execution across direct mail, email, paid media, earned media, Marketplace, and other marketing channels.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Direct integrated campaign leadership spans TV, radio, digital, gaming, Times Square, unbranded programs, brand planning, and regulated review.",
+        "Account work covered briefs, creative feedback, production requirements, timelines, and cross-functional campaign delivery.",
+        "Direct mail, email, earned media, Marketplace, and hands-on paid-media execution are not specifically documented."
+      ],
+      "proofIds": [
+        "account-management-02",
+        "account-management-03",
+        "heartbeat-03"
+      ],
+      "destinations": [
+        "summary",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "integrated campaigns",
+        "TV",
+        "radio",
+        "digital"
+      ],
+      "matchMode": "contextual"
+    },
+    {
+      "id": "trusted-client-advisor",
+      "text": "Build strategic client relationships, anticipate needs, and guide conversations with informed recommendations.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Seven-plus years managing Fortune 500 healthcare relationships and $2M-$50M+ portfolios.",
+        "Account and UX work translated client goals, stakeholder input, competitive audits, and user needs into briefs and recommendations.",
+        "Current client-led POCs turn unclear business questions into testable solutions and roadmap decisions."
+      ],
+      "proofIds": [
+        "account-management-01",
+        "heartbeat-01",
+        "one-block-away-01"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "client strategy",
+        "client-led"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "cross-functional-project-leadership",
+      "text": "Lead cross-functional marketing meetings and coordinate specialists around campaign goals, milestones, priorities, and delivery.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Account work coordinated client, account, strategy, creative, UX, production, development, and regulated-review teams.",
+        "Kinesso leadership scaled product design from 2 to 30 people across the United States and Poland.",
+        "Program and project delivery evidence includes scoping, requirements, timelines, review routing, team coordination, risk visibility, and handoff."
+      ],
+      "proofIds": [
+        "account-management-03",
+        "kinesso-01",
+        "heartbeat-03"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience"
+      ],
+      "resumeTerms": [
+        "cross-functional",
+        "timelines",
+        "team coordination"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "portfolio-operations",
+      "text": "Run campaign portfolio reviews, milestone tracking, change control, prioritization, capacity planning, workload balancing, and process improvement.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Account-management work required organizing briefs, timelines, production requirements, feedback, routing, budgets, and deliverables across large portfolios.",
+        "Scope Generator supports regional rate cards, brands, sub-brands, scope changes, deliverables, timelines, resourcing, and cost breakdowns.",
+        "Formal campaign portfolio reviews, named capacity-forecasting ownership, and workload-balancing methods are not documented."
+      ],
+      "proofIds": [
+        "account-management-01",
+        "account-management-03",
+        "hedgehox-05"
+      ],
+      "destinations": [
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "scope changes",
+        "timelines",
+        "resourcing"
+      ],
+      "matchMode": "contextual"
+    },
+    {
+      "id": "governance-remediation",
+      "text": "Support campaign governance, incident response, corrective action, and compliance coordination when needed.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Eleven years across pharma and healthcare communications include FDA, HIPAA, and MLR workflows.",
+        "Claims Detector surfaces promotional claims and evidence gaps before MLR submission, and the FDA Warning Tool connects warning-letter patterns to content-risk guidance.",
+        "Formal campaign incident command and corrective-action ownership are not documented."
+      ],
+      "proofIds": [
+        "hedgehox-02",
+        "hedgehox-06",
+        "account-management-02"
+      ],
+      "destinations": [
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "MLR",
+        "evidence gaps",
+        "content-risk"
+      ],
+      "matchMode": "contextual"
+    },
+    {
+      "id": "organization-critical-thinking",
+      "text": "Stay organized, meet deadlines, synthesize information, anticipate business impacts, and pivot in a fast-moving environment.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Large healthcare portfolios required organized delivery across budgets, briefs, timelines, regulatory reviews, and multiple specialist teams.",
+        "Digital Experience Audit work turns channel data into benchmarks, recommendations, visualizations, and client-ready outputs.",
+        "Current AI work converts unclear needs into governed workflows, working prototypes, and decision-ready demonstrations."
+      ],
+      "proofIds": [
+        "account-management-01",
+        "kinesso-03",
+        "one-block-away-01"
+      ],
+      "destinations": [
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "timelines",
+        "benchmarks",
+        "recommendations"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "paid-media-operations",
+      "text": "Understand tagging, trafficking, LiveRamp audiences, search, social, display/programmatic, and affiliate execution.",
+      "priority": "preferred",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "proofIds": [],
+      "destinations": [
+        "application-answer"
+      ],
+      "resumeTerms": [
+        "LiveRamp",
+        "tagging",
+        "trafficking",
+        "programmatic",
+        "affiliate"
+      ],
+      "matchMode": "not-supported"
+    },
+    {
+      "id": "agile-scrum-master",
+      "text": "Bring Agile methods experience and act as a Scrum Master when needed.",
+      "priority": "preferred",
+      "source": "jd",
+      "confidence": "contextual",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Product and POC work uses iterative discovery, prototyping, client feedback, and roadmap decisions.",
+        "Formal Scrum Master ownership or certification is not documented."
+      ],
+      "proofIds": [
+        "one-block-away-01",
+        "one-block-away-04"
+      ],
+      "destinations": [
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "client iteration",
+        "roadmap decisions"
+      ],
+      "matchMode": "contextual"
+    }
+  ],
+  "fitGate": {
+    "supportedOverlap": [
+      "Seven-plus years of Fortune 500 healthcare account leadership with $2M-$50M+ budgets and direct responsibility for integrated campaigns, briefs, timelines, production requirements, regulated review, and client delivery.",
+      "Direct Workfront use during account-management delivery clears the named-platform requirement without attaching an unverified duration or administrative depth to the claim.",
+      "Integrated campaign experience spans TV, radio, digital, gaming, Times Square, unbranded work, brand planning, and MLR review.",
+      "Kinesso work adds enterprise marketing analytics, channel scoring, benchmarks, recommendations, and systems used by 7,000+ people across 22 brands.",
+      "Current AI workflow work adds recent experience with intake, scoping, review routing, submission capture, process design, and client iteration."
+    ],
+    "unsupportedRequirements": [
+      "The exact duration and depth of Workfront use are not documented.",
+      "Direct mail, email, earned media, Marketplace, and hands-on paid-media execution are not specifically documented.",
+      "LiveRamp, tagging, trafficking, search, social, display/programmatic, and affiliate operations are not documented.",
+      "Formal Scrum Master ownership and campaign incident-management leadership are not documented.",
+      "Direct ownership of New Accounts, Sales, and Net Income goals is not documented."
+    ],
+    "actualMismatches": [
+      "The recent operating center is AI implementation, product strategy, UX, analytics, and client delivery rather than day-to-day marketing account management.",
+      "The role is a short-term contract focused on campaign operations, while the resume also shows director-level product and experience leadership."
+    ],
+    "missingEvidence": [
+      "Approximate dates and specific Workfront functions used during the account-management period.",
+      "Named direct-mail, email, paid-media, earned-media, or Marketplace campaigns.",
+      "Examples involving LiveRamp, tagging, trafficking, programmatic, or affiliate execution.",
+      "Formal Agile team or Scrum Master responsibility.",
+      "Campaign incident response, corrective actions, or capacity-forecast ownership."
+    ],
+    "coverLetterBridge": {
+      "status": "recommended",
+      "rationale": "We can make the case with a cover letter by connecting 7+ years of account leadership, integrated healthcare campaigns, direct Workfront use, and later analytics and AI workflow work to the client's need for an organized campaign operator and trusted advisor. The letter should explain the planned return to account management while leaving the paid-media stack, Scrum Master, and exact Workfront-duration gaps visible."
+    },
+    "recommendation": "Proceed as adjacent. Lead with direct account ownership, Workfront, integrated campaign delivery, briefs, timelines, regulated coordination, and cross-functional leadership. Keep the Workfront duration, named paid-media tools, Scrum Master responsibility, incident management, and financial-services campaign ownership as explicit gaps."
+  },
+  "positioning": {
+    "laneId": "client-account-delivery",
+    "targetIdentity": "marketing account and campaign delivery leader",
+    "employerNeed": "Keep complex campaigns, client relationships, milestones, and cross-functional teams moving through Workfront.",
+    "bridgeType": "operating-center",
+    "applicationStrategy": "transferable",
+    "bridgeThesis": "Workfront and integrated campaign delivery",
+    "proofIds": [
+      "account-management-01",
+      "account-management-03",
+      "kinesso-03"
+    ],
+    "remainingGap": "The exact Workfront duration and specific platform functions are not confirmed. LiveRamp, tagging, trafficking, programmatic, affiliate, formal Scrum Master work, and financial-services campaign ownership are not documented."
+  },
+  "resume": {
+    "foundationId": "wally-mostafa-resume-2026-07-03",
+    "summary": "Marketing account and campaign delivery leader with 7+ years managing Fortune 500 healthcare brands and $2M-$50M+ budgets. I am looking to make a return to account management, bringing Workfront and integrated campaign delivery across briefs, timelines, production, and regulated review. Later UX, analytics, and AI workflow work has made me a stronger cross-functional client partner.",
+    "skillIds": [
+      "client-account-leadership",
+      "program-project-delivery",
+      "healthcare-marketing-strategy",
+      "regulated-healthcare-client-delivery"
+    ],
+    "skills": [
+      {
+        "label": "Client & Account Leadership",
+        "description": "Fortune 500 pharma and healthcare accounts, $2M-$50M+ budgets, client briefs, brand planning, and cross-functional delivery"
+      },
+      {
+        "label": "Program & Project Delivery",
+        "description": "Scoping, requirements, timelines, review routing, team coordination, risk visibility, and build-ready handoff across product, design, and client teams"
+      },
+      {
+        "label": "Healthcare Marketing & Brand Strategy",
+        "description": "Brand planning, campaign and digital strategy, MLR review, patient and HCP experiences, and regulated multi-channel delivery"
+      },
+      {
+        "label": "Regulated Healthcare & Client Delivery",
+        "description": "11 years across pharma/healthcare communications, FDA/HIPAA/MLR workflows, HCP/patient UX, client workshops, and stakeholder adoption"
+      }
+    ],
+    "roles": {
+      "hedgehox": [
+        "Secured an investor for proprietary Claims Detection software by building the functional POC, shaping the demo story, and iterating with investors",
+        "Designed Claims Detector workflows that identify promotional claims, surface evidence gaps, and pre-populate audit-ready annotations before MLR submission",
+        "Converted pharma agency needs into AI tools for MLR claim review, brief intake, scoping, review routing, submission capture, and FDA signal monitoring",
+        "Designed the full Xenagos Bio startup biopharma website from scratch, including investor-facing structure, scientific positioning, visual direction, and hidden design-system handoff",
+        "Built Scope Generator for pharma agency finance and operations teams to manage regional rate cards, brands, sub-brands, scope changes, deliverables, timelines, resourcing, and cost breakdowns",
+        "Developed FDA Warning Tool concepts that connect warning-letter patterns to content-risk guidance for pharma teams"
+      ],
+      "one-block-away": [
+        "Build client-led AI POCs that turn unclear business questions into testable product surfaces, demo flows, and roadmap decisions",
+        "Built ListingPal's AI listing-generation POC and landing page, turning basic property inputs into listing copy, social posts, ad copy, styling direction, and MLS/SEO-ready language in under 90 seconds",
+        "Built WeReady's Bailey Intelligence dashboard, translating founder inputs, GitHub signals, source health, risk scoring, and evidence trails into startup-readiness workflows",
+        "Own product strategy, UX, AI workflow design, front-end build, backend logic, demo readiness, and client iteration from first ask through working prototype",
+        "Currently building the website and sponsor strategy for a Tunisia youth soccer program, positioning the project for player advancement, community support, and donor outreach"
+      ],
+      "kinesso": [
+        "Scaled product design from 2 to 30 people across the US and Poland for enterprise marketing analytics used by 7,000+ users across 22 white-label brands",
+        "Led UX and design-system strategy for marketing intelligence dashboards, data visualization, brand theming, and reusable analytics components",
+        "Built the Digital Experience Audit workflow for channel scoring, benchmarks, recommendations, visualization, and presentation-ready client outputs",
+        "Design-system and analytics work earned 5 Indigo Gold, 4 Indigo Silver, and Red Dot recognition"
+      ],
+      "omnicom": [
+        "Supported oncology accounts as a freelance UX designer, combining UX design and account-management experience to strengthen regulated healthcare work",
+        "Championed UX best practices across account, strategy, creative, and delivery conversations, translating brand goals into clearer user flows, content structure, and digital recommendations"
+      ],
+      "heartbeat": [
+        "Led UX research and experience strategy for pharma and healthcare work, translating stakeholder input, competitive audits, and user needs into digital product direction",
+        "Created journey maps, site maps, user flows, wireframes, and prototypes for patient, HCP, and internal brand-team experiences across regulated healthcare programs",
+        "Partnered with strategy, creative, account, and engineering teams to move UX recommendations from research findings into build-ready product and campaign experiences"
+      ],
+      "account-management": [
+        "7+ years managing Fortune 500 pharma and healthcare clients with $2M-$50M+ budgets across CNS/neurology, psychiatry, cardiovascular/metabolic, and sleep/wakefulness brands including NUVIGIL, Namenda XR, Lipitor, and Zoloft",
+        "One of two account consumer leads on FCB Health's largest pharma account, coordinating integrated campaigns across TV, radio, digital, gaming, Times Square, unbranded work, brand planning, and MLR review",
+        "Used Workfront for campaign execution during account-management delivery, translating client and brand strategy into briefs, creative feedback, production requirements, timelines, and MLR-ready deliverables across account, creative, UX, and development teams"
+      ]
+    },
+    "sourceBulletIds": {
+      "hedgehox": [
+        "hedgehox-01",
+        "hedgehox-02",
+        "hedgehox-03",
+        "hedgehox-04",
+        "hedgehox-05",
+        "hedgehox-06"
+      ],
+      "one-block-away": [
+        "one-block-away-01",
+        "one-block-away-02",
+        "one-block-away-03",
+        "one-block-away-04",
+        "one-block-away-05"
+      ],
+      "kinesso": [
+        "kinesso-01",
+        "kinesso-02",
+        "kinesso-03",
+        "kinesso-04"
+      ],
+      "omnicom": [
+        "omnicom-01",
+        "omnicom-02"
+      ],
+      "heartbeat": [
+        "heartbeat-01",
+        "heartbeat-02",
+        "heartbeat-03"
+      ],
+      "account-management": [
+        "account-management-01",
+        "account-management-02",
+        "account-management-03"
+      ]
+    }
+  },
+  "hero": {
+    "eyebrow": "Account Executive II / Marketing Account Manager",
+    "tags": [
+      "Account leadership",
+      "Workfront",
+      "Campaign delivery"
+    ],
+    "intro": "I've spent 7+ years managing Fortune 500 healthcare accounts and $2M-$50M+ budgets. I bring Workfront and integrated campaign delivery from my account-management years, plus the perspective of later enterprise analytics and AI workflow work. I'm looking to make a return to account management, keeping client goals, briefs, timelines, creative teams, and regulated campaign reviews moving together."
+  },
+  "contact": {
+    "prompt": "Hiring an account manager who can keep clients, campaign milestones, and cross-functional teams moving through complex marketing work? Email is the fastest way to reach me.",
+    "signoff": "Account leadership · Workfront · integrated campaigns"
+  },
+  "copyReview": {
+    "humanizerVersion": "2.2.0",
+    "mode": "surface-only",
+    "status": "passed",
+    "reviewedAt": "2026-07-29T16:04:52.152Z",
+    "copySha256": "e8c0b03febcd4bfe2c8fceacf7752abd11d3caac42f68cb8e29876b9e1a113bd",
+    "preserved": [
+      "content",
+      "structure",
+      "claims",
+      "ending"
+    ],
+    "rewriteAuthorized": false,
+    "reviewMethod": "humanizer-skill",
+    "semanticPassAttested": true,
+    "staticChecksPassed": true,
+    "finalAntiAiPass": true,
+    "remainingTells": []
+  },
+  "constraints": {
+    "doNotClaim": [
+      "Four years of Workfront experience",
+      "Workfront platform administration, reporting, or planned-hours ownership",
+      "Direct mail campaign ownership",
+      "Email campaign ownership",
+      "Earned media campaign ownership",
+      "Marketplace campaign ownership",
+      "LiveRamp experience",
+      "Tagging or trafficking ownership",
+      "Programmatic media buying",
+      "Affiliate campaign ownership",
+      "Formal Scrum Master ownership or certification",
+      "Financial services marketing experience",
+      "New Accounts, Sales, or Net Income goal ownership",
+      "Campaign incident-management ownership"
+    ],
+    "blockedTerms": [
+      "4 years of Workfront",
+      "Workfront administrator",
+      "LiveRamp expert",
+      "owned tagging and trafficking",
+      "programmatic media buyer",
+      "certified Scrum Master",
+      "financial services marketing leader",
+      "owned Net Income goals"
+    ]
+  },
+  "privacy": {
+    "publicSafe": true,
+    "notes": "Contains only the public job description and sanitized resume and portfolio evidence. It excludes recruiter details, application answers, compensation boundaries, and private eligibility information."
+  },
+  "qa": {
+    "status": "qa-passed",
+    "builtAt": "2026-07-29T16:04:56.140Z",
+    "configInputSha256": "88d905027a34bc8553078f48b0a1c3168d8cb7af80540d047cbdc4e8c4ab9bbc",
+    "sourceResumeSha256": "375cc6566f5bbad5b95be9da551dfe87824378fb252222409d29ef32d334ca25",
+    "resumeFoundation": {
+      "id": "wally-mostafa-resume-2026-07-03",
+      "sourcePdfSha256": "f9b05b6c3c134262b1af6c5734363daf4385cf335407a139779a37d138adf1aa"
+    },
+    "artifactHashes": {
+      "routeSha256": "24fe0019cc4da26d51cb99b1df100ae2b887ecb5559fb00bfef004311145a2b8",
+      "resumePdfSha256": "9eb18e0836b5943ef1289dfe4f7363382cc57e0b5c491b991b998411ff579970",
+      "scopedProjectSha256": {}
+    },
+    "renderer": {
+      "browser": {
+        "name": "chrome-headless-shell",
+        "version": "Google Chrome for Testing 149.0.7827.55"
+      },
+      "htmlPath": "tmp/tailored-resumes/marketing-account-manager-workfront.html",
+      "pdfPath": "output/pdf/Wally-Mostafa-Marketing-Account-Manager-Workfront-Resume.pdf"
+    },
+    "ats": {
+      "ok": true,
+      "pdfPath": "output/pdf/Wally-Mostafa-Marketing-Account-Manager-Workfront-Resume.pdf",
+      "pageCount": 2,
+      "fileSize": 134708,
+      "annotations": [
+        {
+          "page": 1,
+          "uri": "mailto:wmostafa12@gmail.com"
+        },
+        {
+          "page": 1,
+          "uri": "https://linkedin.com/in/wallymo"
+        },
+        {
+          "page": 1,
+          "uri": "https://wallymo.github.io/marketing-account-manager-workfront/"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/6748"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/4629"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.red-dot.org/project/dxa-digital-experience-audit-55219"
+        }
+      ],
+      "coverage": [
+        {
+          "id": "marketing-project-client-experience",
+          "requirement": "Bring at least four years of marketing experience that includes project management and client relationship work.",
+          "priority": "hard-gate",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "7+ years",
+            "project delivery",
+            "client"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "workfront",
+          "requirement": "Bring Workfront platform experience for campaign execution and project management.",
+          "priority": "hard-gate",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "Workfront",
+            "campaign execution"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "education",
+          "requirement": "Hold a bachelor's degree or qualifying professional experience.",
+          "priority": "hard-gate",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "Rutgers University"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "omnichannel-campaign-execution",
+          "requirement": "Manage complex campaign execution across direct mail, email, paid media, earned media, Marketplace, and other marketing channels.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "contextual",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "integrated campaigns",
+            "TV",
+            "radio",
+            "digital"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "trusted-client-advisor",
+          "requirement": "Build strategic client relationships, anticipate needs, and guide conversations with informed recommendations.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "client strategy",
+            "client-led"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "cross-functional-project-leadership",
+          "requirement": "Lead cross-functional marketing meetings and coordinate specialists around campaign goals, milestones, priorities, and delivery.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "cross-functional",
+            "timelines",
+            "team coordination"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "portfolio-operations",
+          "requirement": "Run campaign portfolio reviews, milestone tracking, change control, prioritization, capacity planning, workload balancing, and process improvement.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "contextual",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "scope changes",
+            "timelines",
+            "resourcing"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "governance-remediation",
+          "requirement": "Support campaign governance, incident response, corrective action, and compliance coordination when needed.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "contextual",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "MLR",
+            "evidence gaps",
+            "content-risk"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "organization-critical-thinking",
+          "requirement": "Stay organized, meet deadlines, synthesize information, anticipate business impacts, and pivot in a fast-moving environment.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "timelines",
+            "benchmarks",
+            "recommendations"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "paid-media-operations",
+          "requirement": "Understand tagging, trafficking, LiveRamp audiences, search, social, display/programmatic, and affiliate execution.",
+          "priority": "preferred",
+          "evidenceStatus": "none",
+          "matchMode": "not-supported",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "LiveRamp",
+            "tagging",
+            "trafficking",
+            "programmatic",
+            "affiliate"
+          ]
+        },
+        {
+          "id": "agile-scrum-master",
+          "requirement": "Bring Agile methods experience and act as a Scrum Master when needed.",
+          "priority": "preferred",
+          "evidenceStatus": "adjacent",
+          "matchMode": "contextual",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "client iteration",
+            "roadmap decisions"
+          ],
+          "missingTerms": []
+        }
+      ],
+      "failures": [],
+      "warnings": []
+    },
+    "humanizer": {
+      "status": "passed",
+      "version": "2.2.0",
+      "mode": "surface-only",
+      "reviewedAt": "2026-07-29T16:04:52.152Z",
+      "copySha256": "e8c0b03febcd4bfe2c8fceacf7752abd11d3caac42f68cb8e29876b9e1a113bd",
+      "reviewMethod": "humanizer-skill",
+      "semanticPassAttested": true,
+      "staticChecksPassed": true
+    },
+    "route": {
+      "viewports": [
+        {
+          "name": "desktop",
+          "screenshot": "../../private/tmp/wally-marketing-account.XqEy54/tmp/qa/marketing-account-manager-workfront/desktop.png",
+          "errors": []
+        },
+        {
+          "name": "mobile",
+          "screenshot": "../../private/tmp/wally-marketing-account.XqEy54/tmp/qa/marketing-account-manager-workfront/mobile.png",
+          "errors": []
+        }
+      ],
+      "errors": []
+    }
+  }
+}
