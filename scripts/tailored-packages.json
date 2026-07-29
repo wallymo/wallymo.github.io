@@ -1916,9 +1916,26 @@
         "project-06.html"
       ],
       "resumePdfPath": "output/pdf/Wally-Mostafa-Pharmaceutical-Agency-Account-Supervisor-Resume.pdf",
-      "publishStatus": "local-only",
+      "publishStatus": "live-verified",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-07-29T01:03:38.610Z"
+      "builtAt": "2026-07-29T01:03:38.610Z",
+      "verification": {
+        "verifiedAt": "2026-07-29T01:05:33.823Z",
+        "routeUrl": "https://wallymo.github.io/pharmaceutical-agency-account-supervisor/",
+        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-Pharmaceutical-Agency-Account-Supervisor-Resume.pdf",
+        "configUrl": "https://wallymo.github.io/scripts/packages/pharmaceutical-agency-account-supervisor.json",
+        "projectUrls": [
+          "https://wallymo.github.io/project-01.html",
+          "https://wallymo.github.io/project-08.html",
+          "https://wallymo.github.io/project-06.html"
+        ],
+        "configSha256": "cd470eb76e1c93b55ff1434aa7c70beadc7c879d186d6ef769e2d3cc9ba4ad2b",
+        "pdfSha256": "7be91a5dbce160c0d71f14144ea7f26b34ce7c4dbda9bb83cb3a61619a8a63fb",
+        "routeSha256": "58414ac7fb9e20eb10dc5f697e85b63f2ffbf0a6c27b318ca4bdf35c08585ae1",
+        "scopedProjectSha256": {},
+        "configInputSha256": "09b307f2fb690e344d58dc34a583c67f3ec044984f90f76aa1e668da92f38fbf",
+        "qaBuiltAt": "2026-07-29T01:03:38.610Z"
+      }
     },
     {
       "workflowVersion": 2,
