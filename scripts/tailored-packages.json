@@ -190,6 +190,30 @@
     },
     {
       "workflowVersion": 2,
+      "contractRevision": 6,
+      "slug": "account-management-experience-first",
+      "roleTitle": "Healthcare Account Management & Client Strategy | Experience First",
+      "artifactStem": "Account-Management-Experience-First",
+      "configPath": "scripts/packages/account-management-experience-first.json",
+      "targetLane": "client-account-delivery",
+      "evidenceMode": "resume-primary",
+      "fitClass": "strong",
+      "positioningLane": "client-account-delivery",
+      "bridgeType": "direct",
+      "applicationStrategy": "direct",
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-01.html",
+        "project-06.html",
+        "project-02.html"
+      ],
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Account-Management-Experience-First-Resume.pdf",
+      "publishStatus": "local-only",
+      "qaStatus": "qa-passed",
+      "builtAt": "2026-07-29T22:53:01.807Z"
+    },
+    {
+      "workflowVersion": 2,
       "slug": "aec-senior-ux-researcher",
       "roleTitle": "Senior UX Researcher — AEC Foundation Model",
       "artifactStem": "AEC-Senior-UX-Researcher",
