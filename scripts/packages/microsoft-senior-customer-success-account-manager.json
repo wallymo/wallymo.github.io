@@ -1,0 +1,861 @@
+{
+  "workflowVersion": 2,
+  "contractRevision": 5,
+  "slug": "microsoft-senior-customer-success-account-manager",
+  "roleTitle": "Microsoft Senior Customer Success Account Manager",
+  "artifactStem": "Microsoft-Senior-Customer-Success-Account-Manager",
+  "fitClass": "adjacent",
+  "routeMode": "canonical-projects",
+  "selectedProjects": [
+    "project-02.html",
+    "project-03.html",
+    "project-01.html"
+  ],
+  "job": {
+    "company": "Microsoft",
+    "roleTitle": "Senior Customer Success Account Manager",
+    "sourceChannel": "user-pasted-jd",
+    "dateCaptured": "2026-07-29",
+    "location": "United States; up to 50% work from home; specific base location not stated in the supplied posting",
+    "atsVendor": "unknown",
+    "rawJd": "Microsoft is hiring Senior Customer Success Account Managers across enterprise, regulated, and partner services organizations in the United States. The CSAM is the delivery leader in the account team and a strategic customer partner responsible for executing Customer Success Contracts, orchestrating cross-functional programs, and helping customers realize business outcomes from Microsoft Cloud solutions and support. Responsibilities include building customer, partner, and internal stakeholder relationships; leading business-value conversations with technical, business, and executive stakeholders; gathering business and IT objectives; contributing to customer success and account plans; aligning Azure, Modern Work, Dynamics, and other Microsoft capabilities to customer priorities; coordinating specialists for complex and cross-cloud scenarios; leading program planning, customer-facing reviews, prioritization, escalation communication, and delivery-resource orchestration; identifying and mitigating blockers to consumption; tracking consumption milestones; driving adoption and usage; and identifying added value that supports retention and reduces churn. Minimum qualifications are a master's degree in a related field plus 3 years of customer success, solution delivery, practice management, customer-facing consulting, or portfolio management experience, or a bachelor's degree plus 4 years, or equivalent experience. The role is not eligible for visa sponsorship and requires U.S. work authorization that does not now or in the future require sponsorship. Preferred qualifications include 10-12+ years of relevant experience depending on degree, 5+ years in the customer industry, Microsoft or competitor cloud certification, ITIL or equivalent service-management certification, PMI or equivalent project-management certification, and Prosci or equivalent change-management certification. The role can work up to 50% from home, with travel varying by assignment. The posted base-pay range is $106,400-$203,600 across the U.S., with a separate range for the San Francisco Bay Area and New York City."
+  },
+  "classification": {
+    "targetLane": "customer-success-consultative",
+    "evidenceMode": "resume-primary",
+    "primarySource": "The resume directly proves 7+ years of Fortune 500 healthcare account leadership, $2M-$50M+ budgets, client planning, stakeholder translation, and cross-functional delivery across a 15-year career.",
+    "supportingSource": "The portfolio adds client-led implementation, enterprise analytics used by 7,000+ people across 22 brands, regulated workflow delivery, and product decisions tied to customer needs and adoption.",
+    "hardGateStatus": "pass",
+    "hardGates": [
+      {
+        "gate": "Meet the degree and experience minimum through a bachelor's degree plus 4+ years in customer success, solution delivery, practice management, customer-facing consulting, or portfolio management, or equivalent experience",
+        "status": "pass",
+        "requirementId": "minimum-education-experience",
+        "evidence": "The resume lists a bachelor's degree from Rutgers University, 7+ years of direct account-management work, and additional customer-facing solution-delivery and portfolio leadership."
+      }
+    ]
+  },
+  "requirements": [
+    {
+      "id": "minimum-education-experience",
+      "text": "Meet the degree and experience minimum through a bachelor's degree plus 4+ years in customer success, solution delivery, practice management, customer-facing consulting, or portfolio management, or equivalent experience.",
+      "priority": "hard-gate",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The resume lists a BA from Rutgers University and 7+ years managing Fortune 500 healthcare clients.",
+        "Current and prior work adds customer-facing consulting, enterprise product delivery, and end-to-end solution implementation."
+      ],
+      "proofIds": [
+        "account-management-01",
+        "one-block-away-01",
+        "kinesso-01"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "7+ years managing",
+        "BA Labor Studies & Employee Relations",
+        "Rutgers University"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "strategic-customer-relationships",
+      "text": "Build trusted relationships with customer, partner, technical, business, and executive stakeholders, and connect customer priorities to business outcomes.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Seven years of account-management work covers high-value customer relationships, brand planning, briefs, feedback, budgets, timelines, and regulated delivery.",
+        "Current client-led product work turns unclear business questions into working product decisions."
+      ],
+      "proofIds": [
+        "account-management-01",
+        "account-management-03",
+        "one-block-away-01"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "Fortune 500 pharma and healthcare accounts",
+        "client briefs",
+        "client-led"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "customer-success-account-planning",
+      "text": "Gather business and IT objectives, contribute to customer success and account plans, and align programs of work to customer priorities.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "The resume documents client strategy, brand planning, scoping, requirements, roadmaps, budgets, timelines, and build-ready handoff.",
+        "The portfolio shows client discovery and product decisions tied to a specific business question."
+      ],
+      "proofIds": [
+        "account-management-02",
+        "account-management-03",
+        "one-block-away-01"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "brand planning",
+        "roadmap decisions",
+        "scoping",
+        "requirements"
+      ],
+      "matchMode": "contextual"
+    },
+    {
+      "id": "microsoft-cloud-technical-relevance",
+      "text": "Understand and align Microsoft solutions such as Azure, Modern Work, and Dynamics to customer needs, including complex and cross-cloud scenarios.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "proofIds": [],
+      "destinations": [
+        "application-answer",
+        "cover-letter"
+      ],
+      "resumeTerms": [
+        "Azure",
+        "Modern Work",
+        "Dynamics"
+      ],
+      "matchMode": "not-supported"
+    },
+    {
+      "id": "program-delivery-orchestration",
+      "text": "Lead customer-facing program planning and reviews, prioritize engagements, coordinate delivery resources, and manage stakeholder expectations.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "The resume documents scoping, requirements, timelines, review routing, team coordination, risk visibility, and delivery across client, product, design, and technical teams.",
+        "Current work covers ownership from the first client ask through a working prototype and client iteration."
+      ],
+      "proofIds": [
+        "account-management-03",
+        "one-block-away-04",
+        "heartbeat-03"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "Program & Project Delivery",
+        "team coordination",
+        "risk visibility",
+        "client iteration"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "adoption-consumption-blockers",
+      "text": "Identify and mitigate blockers to consumption, track milestones, optimize usage, and drive product adoption.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Enterprise analytics and white-label products supported 7,000+ users across 22 brands.",
+        "The resume and portfolio document adoption-focused workflows, client feedback, risk visibility, product recommendations, and decisions based on user needs."
+      ],
+      "proofIds": [
+        "kinesso-01",
+        "one-block-away-01",
+        "one-block-away-04"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "Client Success & Product Adoption",
+        "7,000+ users across 22 white-label brands",
+        "risk visibility"
+      ],
+      "matchMode": "contextual"
+    },
+    {
+      "id": "retention-churn-growth",
+      "text": "Identify opportunities for added value that improve retention, minimize churn, and support account growth.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "proofIds": [],
+      "destinations": [
+        "application-answer",
+        "cover-letter"
+      ],
+      "resumeTerms": [
+        "retention",
+        "churn",
+        "account growth"
+      ],
+      "matchMode": "not-supported"
+    },
+    {
+      "id": "escalation-operational-health",
+      "text": "Lead escalation management and communications while improving customer operational health through delivery methods, processes, and tools.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "The resume documents regulated review routing, risk visibility, structured requirements, timelines, and cross-functional delivery.",
+        "It does not document formal cloud-service escalation ownership or Microsoft delivery methods."
+      ],
+      "proofIds": [
+        "hedgehox-03",
+        "account-management-03",
+        "one-block-away-04"
+      ],
+      "destinations": [
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "review routing",
+        "risk visibility",
+        "cross-functional delivery"
+      ],
+      "matchMode": "contextual"
+    },
+    {
+      "id": "cross-functional-influence",
+      "text": "Influence senior stakeholders and orchestrate specialists across account, delivery, product, and technical teams.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The resume documents coordination across account, strategy, creative, UX, product, engineering, development, finance, operations, and client teams.",
+        "Kinesso leadership scaled a distributed product-design function from 2 to 30 people."
+      ],
+      "proofIds": [
+        "account-management-03",
+        "kinesso-01",
+        "heartbeat-03"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "cross-functional delivery",
+        "Scaled product design from 2 to 30 people",
+        "client teams"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "regulated-industry-experience",
+      "text": "Bring relevant customer-industry experience for enterprise or regulated-service assignments.",
+      "priority": "preferred",
+      "source": "jd",
+      "confidence": "contextual",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The resume documents 11 years across pharma and healthcare communications plus current regulated AI workflow delivery.",
+        "Account-management work includes Fortune 500 healthcare clients and MLR review."
+      ],
+      "proofIds": [
+        "account-management-01",
+        "account-management-02",
+        "hedgehox-03"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "Regulated Healthcare & Client Delivery",
+        "MLR review",
+        "FDA"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "senior-experience-depth",
+      "text": "Bring 10-12+ years of relevant customer success, solution delivery, practice management, customer-facing consulting, or portfolio-management experience depending on degree.",
+      "priority": "preferred",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The resume documents 15 years across client strategy, account management, enterprise portfolio leadership, customer-facing consulting, and solution delivery."
+      ],
+      "proofIds": [
+        "account-management-01",
+        "kinesso-01",
+        "one-block-away-01"
+      ],
+      "destinations": [
+        "summary",
+        "experience"
+      ],
+      "resumeTerms": [
+        "15 years",
+        "7+ years managing"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "preferred-certifications",
+      "text": "Hold a Microsoft or competitor cloud certification, ITIL or equivalent service-management certification, PMI or equivalent project-management certification, and Prosci or equivalent change-management certification.",
+      "priority": "preferred",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "proofIds": [],
+      "destinations": [
+        "application-answer",
+        "cover-letter"
+      ],
+      "resumeTerms": [
+        "Microsoft certification",
+        "ITIL",
+        "PMI",
+        "Prosci"
+      ],
+      "matchMode": "not-supported"
+    },
+    {
+      "id": "location-travel",
+      "text": "Support an assignment that may require an unspecified U.S. base location, up to 50% work from home, and travel that varies by role.",
+      "priority": "context",
+      "source": "jd",
+      "confidence": "ambiguous",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "proofIds": [],
+      "destinations": [
+        "application-answer"
+      ],
+      "resumeTerms": [
+        "up to 50% from home",
+        "travel"
+      ],
+      "matchMode": "not-supported"
+    }
+  ],
+  "fitGate": {
+    "supportedOverlap": [
+      "7+ years of direct Fortune 500 healthcare account leadership with $2M-$50M+ budgets.",
+      "Client planning, stakeholder translation, requirements, timelines, review routing, and cross-functional delivery.",
+      "Enterprise analytics and white-label products used by 7,000+ people across 22 brands.",
+      "Client-led implementation work that connects business questions to working product decisions and adoption.",
+      "Deep regulated-industry context across pharma, healthcare communications, MLR workflows, and current AI delivery."
+    ],
+    "unsupportedRequirements": [
+      "Direct Azure, Modern Work, Dynamics, or Microsoft Cloud solution-alignment experience is not documented.",
+      "Formal ownership of cloud consumption milestones, operational-health metrics, Microsoft delivery methods, and service escalations is not documented.",
+      "Formal retention, churn, renewal, or account-growth outcomes are not documented.",
+      "Microsoft or competitor cloud, ITIL, PMI, and Prosci certifications are not documented."
+    ],
+    "actualMismatches": [
+      "The documented account-management center is regulated healthcare agency and product delivery rather than post-sale Microsoft Cloud customer success.",
+      "The resume proves enterprise products and customer-facing implementation, but not ownership of a cloud-consumption book of business."
+    ],
+    "missingEvidence": [
+      "Azure, Microsoft 365, Dynamics, cross-cloud solution mapping, and cloud-marketplace competitive positioning.",
+      "Consumption milestones, service-health reviews, formal escalation logs, retention, churn, and account-growth outcomes.",
+      "Named customer-success or service-management methodologies and the listed certifications.",
+      "The no-sponsorship requirement remains a private submission-readiness gate and is not established by public resume or portfolio evidence."
+    ],
+    "coverLetterBridge": {
+      "status": "recommended",
+      "rationale": "We can make the case with a cover letter by connecting 7+ years of account leadership, regulated-enterprise delivery, product adoption, and client-facing implementation to Microsoft's need for a delivery leader. The cover letter must address the Microsoft Cloud, consumption, service-management, and certification gaps without implying experience the resume does not show."
+    },
+    "recommendation": "Proceed as adjacent. Lead with customer trust, regulated account leadership, program delivery, enterprise adoption, and business-to-technical translation. Do not imply Microsoft Cloud expertise, consumption ownership, retention or churn outcomes, formal service escalation ownership, or the listed certifications."
+  },
+  "positioning": {
+    "laneId": "customer-success-consultative",
+    "targetIdentity": "Customer delivery and account strategy leader",
+    "employerNeed": "Orchestrate cross-functional programs that connect customer priorities to Microsoft solutions and measurable adoption.",
+    "bridgeType": "operating-center",
+    "applicationStrategy": "transferable",
+    "bridgeThesis": "account leadership and customer-facing implementation",
+    "proofIds": [
+      "account-management-01",
+      "kinesso-01",
+      "one-block-away-04"
+    ],
+    "remainingGap": "The public evidence does not show direct Microsoft Cloud solution alignment, cloud-consumption ownership, formal retention or churn outcomes, or Microsoft, ITIL, PMI, or Prosci certifications."
+  },
+  "resume": {
+    "foundationId": "wally-mostafa-resume-2026-07-03",
+    "summary": "Customer delivery and account strategy leader with 15 years across regulated healthcare, enterprise products, and client delivery. I bring 7+ years managing Fortune 500 healthcare relationships and $2M-$50M+ budgets. My work combines account leadership and customer-facing implementation with enterprise analytics used by 7,000+ people across 22 brands, coordinated programs, and cross-functional delivery from discovery through adoption.",
+    "skillIds": [
+      "client-account-leadership",
+      "client-success-product-adoption",
+      "program-project-delivery",
+      "consultative-sales-solution-delivery"
+    ],
+    "skills": [
+      {
+        "label": "Client & Account Leadership",
+        "description": "Fortune 500 pharma and healthcare accounts, $2M-$50M+ budgets, client briefs, brand planning, and cross-functional delivery"
+      },
+      {
+        "label": "Client Success & Product Adoption",
+        "description": "Client discovery, adoption-focused workflows, training and roadshows, human review, and product decisions based on user needs"
+      },
+      {
+        "label": "Program & Project Delivery",
+        "description": "Scoping, requirements, timelines, review routing, team coordination, risk visibility, and build-ready handoff across product, design, and client teams"
+      },
+      {
+        "label": "Consultative Sales & Solution Delivery",
+        "description": "Discovery-led solution design, POCs, demo narratives, client translation, and product recommendations tied to business needs"
+      }
+    ],
+    "roles": {
+      "hedgehox": [
+        "Secured an investor for proprietary Claims Detection software by building the functional POC, shaping the demo story, and iterating with investors",
+        "Designed Claims Detector workflows that identify promotional claims, surface evidence gaps, and pre-populate audit-ready annotations before MLR submission",
+        "Converted pharma agency needs into AI tools for MLR claim review, brief intake, scoping, review routing, submission capture, and FDA signal monitoring",
+        "Designed the full Xenagos Bio startup biopharma website from scratch, including investor-facing structure, scientific positioning, visual direction, and hidden design-system handoff",
+        "Built Scope Generator for pharma agency finance and operations teams to manage regional rate cards, brands, sub-brands, and natural-language scope changes",
+        "Developed FDA Warning Tool concepts that connect warning-letter patterns to content-risk guidance for pharma teams"
+      ],
+      "one-block-away": [
+        "Build client-led AI POCs that turn unclear business questions into testable product surfaces, demo flows, and roadmap decisions",
+        "Built ListingPal's AI listing-generation POC and landing page, turning basic property inputs into listing copy, social posts, ad copy, styling direction, and MLS/SEO-ready language in under 90 seconds",
+        "Built WeReady's Bailey Intelligence dashboard, translating founder inputs, GitHub signals, source health, risk scoring, and evidence trails into startup-readiness workflows",
+        "Own product strategy, UX, AI workflow design, front-end build, backend logic, demo readiness, and client iteration from first ask through working prototype",
+        "Currently building the website and sponsor strategy for a Tunisia youth soccer program, positioning the project for player advancement, community support, and donor outreach"
+      ],
+      "kinesso": [
+        "Scaled product design from 2 to 30 people across the US and Poland for enterprise analytics used by 7,000+ users across 22 white-label brands",
+        "Led UX and design-system strategy for MIE data visualization, dashboard building, brand theming, and reusable analytics components",
+        "Built the Digital Experience Audit workflow for channel scoring, benchmarks, recommendations, visualization, and presentation-ready client outputs",
+        "Design-system and analytics work earned 5 Indigo Gold, 4 Indigo Silver, and Red Dot recognition"
+      ],
+      "omnicom": [
+        "Supported oncology accounts as a freelance UX designer, combining UX design and account-management experience to strengthen regulated healthcare work",
+        "Championed UX best practices across account, strategy, creative, and delivery conversations, translating brand goals into clearer user flows, content structure, and digital recommendations"
+      ],
+      "heartbeat": [
+        "Led UX research and experience strategy for pharma and healthcare work, translating stakeholder input, competitive audits, and user needs into digital product direction",
+        "Created journey maps, site maps, user flows, wireframes, and prototypes for patient, HCP, and internal brand-team experiences across regulated healthcare programs",
+        "Partnered with strategy, creative, account, and engineering teams to move UX recommendations from research findings into build-ready product and campaign experiences"
+      ],
+      "account-management": [
+        "7+ years managing Fortune 500 pharma and healthcare clients with $2M-$50M+ budgets across CNS/neurology, psychiatry, cardiovascular/metabolic, and sleep/wakefulness brands including NUVIGIL, Namenda XR, Lipitor, and Zoloft",
+        "One of two account consumer leads on FCB Health's largest pharma account across all verticals: TV, radio, digital, gaming, Times Square, unbranded campaigns, brand planning, and MLR review",
+        "Translated client and brand strategy into briefs, creative feedback, production requirements, timelines, and MLR-ready deliverables across account, creative, UX, and development teams"
+      ]
+    },
+    "sourceBulletIds": {
+      "hedgehox": [
+        "hedgehox-01",
+        "hedgehox-02",
+        "hedgehox-03",
+        "hedgehox-04",
+        "hedgehox-05",
+        "hedgehox-06"
+      ],
+      "one-block-away": [
+        "one-block-away-01",
+        "one-block-away-02",
+        "one-block-away-03",
+        "one-block-away-04",
+        "one-block-away-05"
+      ],
+      "kinesso": [
+        "kinesso-01",
+        "kinesso-02",
+        "kinesso-03",
+        "kinesso-04"
+      ],
+      "omnicom": [
+        "omnicom-01",
+        "omnicom-02"
+      ],
+      "heartbeat": [
+        "heartbeat-01",
+        "heartbeat-02",
+        "heartbeat-03"
+      ],
+      "account-management": [
+        "account-management-01",
+        "account-management-02",
+        "account-management-03"
+      ]
+    }
+  },
+  "hero": {
+    "eyebrow": "Microsoft | Senior Customer Success Account Manager",
+    "tags": [
+      "Executive customer relationships",
+      "Program delivery and adoption",
+      "Regulated enterprise experience"
+    ],
+    "intro": "I bring 7+ years managing Fortune 500 healthcare clients and $2M-$50M+ budgets, enterprise analytics used by 7,000+ people across 22 brands, and current client-led product delivery from discovery through working prototype. That experience combines account leadership and customer-facing implementation, which fits Microsoft's need for a delivery leader who can turn customer priorities into coordinated programs, keep business and technical teams aligned, and move adoption forward."
+  },
+  "contact": {
+    "prompt": "If Microsoft needs a Senior CSAM who can build executive customer trust and keep complex delivery moving around customer priorities, email is the fastest way to reach me.",
+    "signoff": "Customer trust | coordinated delivery | product adoption"
+  },
+  "copyReview": {
+    "humanizerVersion": "2.2.0",
+    "mode": "surface-only",
+    "status": "passed",
+    "reviewedAt": "2026-07-29T16:18:01.724Z",
+    "copySha256": "6cd4d4a6e922838edca25fc618102496ccc2e063b661e4f285231341a8bf3209",
+    "preserved": [
+      "content",
+      "structure",
+      "claims",
+      "ending"
+    ],
+    "rewriteAuthorized": false,
+    "reviewMethod": "humanizer-skill",
+    "semanticPassAttested": true,
+    "staticChecksPassed": true,
+    "finalAntiAiPass": true,
+    "remainingTells": []
+  },
+  "constraints": {
+    "doNotClaim": [
+      "Formal Microsoft Customer Success Account Manager experience",
+      "Azure, Microsoft 365, Modern Work, Dynamics, or cross-cloud expertise",
+      "Microsoft Cloud solution architecture or competitive positioning",
+      "Cloud consumption milestone ownership",
+      "Formal ownership of customer operational-health metrics",
+      "Formal cloud-service escalation ownership",
+      "Formal ownership of renewals, retention, churn, or account-growth outcomes",
+      "Microsoft or competitor cloud certification",
+      "ITIL certification",
+      "PMI or equivalent project-management certification",
+      "Prosci or equivalent change-management certification"
+    ],
+    "blockedTerms": [
+      "Microsoft Cloud expert",
+      "Azure expert",
+      "Dynamics expert",
+      "owned consumption milestones",
+      "owned operational health",
+      "led cloud escalations",
+      "retention rate",
+      "reduced churn",
+      "renewal ownership",
+      "Microsoft certified",
+      "ITIL certified",
+      "PMP",
+      "Prosci certified"
+    ]
+  },
+  "privacy": {
+    "publicSafe": true,
+    "notes": "Contains only the public job description and sanitized resume and portfolio evidence. It excludes recruiter contact details, application answers, compensation decisions, and private eligibility information. Work authorization and sponsorship eligibility must be confirmed privately before submission."
+  },
+  "qa": {
+    "status": "qa-passed",
+    "builtAt": "2026-07-29T16:20:44.341Z",
+    "configInputSha256": "c55bbc960ca9d7161e7aea6c6493dbd49358d18c42e4526eb1d16364f849b3cd",
+    "sourceResumeSha256": "57f63ab9eb7d9ca6b8877ae343b706fffa0e1355b7b78e2662378498a8f5c6dd",
+    "resumeFoundation": {
+      "id": "wally-mostafa-resume-2026-07-03",
+      "sourcePdfSha256": "f9b05b6c3c134262b1af6c5734363daf4385cf335407a139779a37d138adf1aa"
+    },
+    "artifactHashes": {
+      "routeSha256": "c921c4b2489fe8dc10d6f8f15cd67de1bdbd3a6a60df6323ce9a2103183b0c0f",
+      "resumePdfSha256": "0ee2665291b1e00914952a1d88594791d47c7c9e44c1f0783b1b66f8782e63c5",
+      "coverLetterPdfSha256": null,
+      "coverLetterMarkdownSha256": null,
+      "scopedProjectSha256": {}
+    },
+    "renderer": {
+      "browser": {
+        "name": "chrome-headless-shell",
+        "version": "Google Chrome for Testing 149.0.7827.55"
+      },
+      "htmlPath": "tmp/tailored-resumes/microsoft-senior-customer-success-account-manager.html",
+      "pdfPath": "output/pdf/Wally-Mostafa-Microsoft-Senior-Customer-Success-Account-Manager-Resume.pdf"
+    },
+    "coverLetterRenderer": null,
+    "coverLetter": null,
+    "ats": {
+      "ok": true,
+      "pdfPath": "output/pdf/Wally-Mostafa-Microsoft-Senior-Customer-Success-Account-Manager-Resume.pdf",
+      "pageCount": 2,
+      "fileSize": 132849,
+      "annotations": [
+        {
+          "page": 1,
+          "uri": "mailto:wmostafa12@gmail.com"
+        },
+        {
+          "page": 1,
+          "uri": "https://linkedin.com/in/wallymo"
+        },
+        {
+          "page": 1,
+          "uri": "https://wallymo.github.io/microsoft-senior-customer-success-account-manager/"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/6748"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/4629"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.red-dot.org/project/dxa-digital-experience-audit-55219"
+        }
+      ],
+      "coverage": [
+        {
+          "id": "minimum-education-experience",
+          "requirement": "Meet the degree and experience minimum through a bachelor's degree plus 4+ years in customer success, solution delivery, practice management, customer-facing consulting, or portfolio management, or equivalent experience.",
+          "priority": "hard-gate",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "7+ years managing",
+            "BA Labor Studies & Employee Relations",
+            "Rutgers University"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "strategic-customer-relationships",
+          "requirement": "Build trusted relationships with customer, partner, technical, business, and executive stakeholders, and connect customer priorities to business outcomes.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "Fortune 500 pharma and healthcare accounts",
+            "client briefs",
+            "client-led"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "customer-success-account-planning",
+          "requirement": "Gather business and IT objectives, contribute to customer success and account plans, and align programs of work to customer priorities.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "contextual",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "brand planning",
+            "roadmap decisions",
+            "scoping",
+            "requirements"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "microsoft-cloud-technical-relevance",
+          "requirement": "Understand and align Microsoft solutions such as Azure, Modern Work, and Dynamics to customer needs, including complex and cross-cloud scenarios.",
+          "priority": "core",
+          "evidenceStatus": "none",
+          "matchMode": "not-supported",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "Azure",
+            "Modern Work",
+            "Dynamics"
+          ]
+        },
+        {
+          "id": "program-delivery-orchestration",
+          "requirement": "Lead customer-facing program planning and reviews, prioritize engagements, coordinate delivery resources, and manage stakeholder expectations.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "Program & Project Delivery",
+            "team coordination",
+            "risk visibility",
+            "client iteration"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "adoption-consumption-blockers",
+          "requirement": "Identify and mitigate blockers to consumption, track milestones, optimize usage, and drive product adoption.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "contextual",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "Client Success & Product Adoption",
+            "7,000+ users across 22 white-label brands",
+            "risk visibility"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "retention-churn-growth",
+          "requirement": "Identify opportunities for added value that improve retention, minimize churn, and support account growth.",
+          "priority": "core",
+          "evidenceStatus": "none",
+          "matchMode": "not-supported",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "retention",
+            "churn",
+            "account growth"
+          ]
+        },
+        {
+          "id": "escalation-operational-health",
+          "requirement": "Lead escalation management and communications while improving customer operational health through delivery methods, processes, and tools.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "contextual",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "review routing",
+            "risk visibility",
+            "cross-functional delivery"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "cross-functional-influence",
+          "requirement": "Influence senior stakeholders and orchestrate specialists across account, delivery, product, and technical teams.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "cross-functional delivery",
+            "Scaled product design from 2 to 30 people",
+            "client teams"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "regulated-industry-experience",
+          "requirement": "Bring relevant customer-industry experience for enterprise or regulated-service assignments.",
+          "priority": "preferred",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "MLR review",
+            "FDA"
+          ],
+          "missingTerms": [
+            "Regulated Healthcare & Client Delivery"
+          ]
+        },
+        {
+          "id": "senior-experience-depth",
+          "requirement": "Bring 10-12+ years of relevant customer success, solution delivery, practice management, customer-facing consulting, or portfolio-management experience depending on degree.",
+          "priority": "preferred",
+          "evidenceStatus": "direct",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "15 years",
+            "7+ years managing"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "preferred-certifications",
+          "requirement": "Hold a Microsoft or competitor cloud certification, ITIL or equivalent service-management certification, PMI or equivalent project-management certification, and Prosci or equivalent change-management certification.",
+          "priority": "preferred",
+          "evidenceStatus": "none",
+          "matchMode": "not-supported",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "Microsoft certification",
+            "ITIL",
+            "PMI",
+            "Prosci"
+          ]
+        },
+        {
+          "id": "location-travel",
+          "requirement": "Support an assignment that may require an unspecified U.S. base location, up to 50% work from home, and travel that varies by role.",
+          "priority": "context",
+          "evidenceStatus": "none",
+          "matchMode": "not-supported",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "up to 50% from home",
+            "travel"
+          ]
+        }
+      ],
+      "failures": [],
+      "warnings": []
+    },
+    "humanizer": {
+      "status": "passed",
+      "version": "2.2.0",
+      "mode": "surface-only",
+      "reviewedAt": "2026-07-29T16:18:01.724Z",
+      "copySha256": "6cd4d4a6e922838edca25fc618102496ccc2e063b661e4f285231341a8bf3209",
+      "reviewMethod": "humanizer-skill",
+      "semanticPassAttested": true,
+      "staticChecksPassed": true
+    },
+    "route": {
+      "viewports": [
+        {
+          "name": "desktop",
+          "screenshot": "../../private/tmp/codex-microsoft-csam.likC3F/tmp/qa/microsoft-senior-customer-success-account-manager/desktop.png",
+          "errors": []
+        },
+        {
+          "name": "mobile",
+          "screenshot": "../../private/tmp/codex-microsoft-csam.likC3F/tmp/qa/microsoft-senior-customer-success-account-manager/mobile.png",
+          "errors": []
+        }
+      ],
+      "errors": []
+    }
+  }
+}

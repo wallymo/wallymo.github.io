@@ -1708,6 +1708,30 @@
       "publishStatus": "uncommitted"
     },
     {
+      "workflowVersion": 2,
+      "contractRevision": 5,
+      "slug": "microsoft-senior-customer-success-account-manager",
+      "roleTitle": "Microsoft Senior Customer Success Account Manager",
+      "artifactStem": "Microsoft-Senior-Customer-Success-Account-Manager",
+      "configPath": "scripts/packages/microsoft-senior-customer-success-account-manager.json",
+      "targetLane": "customer-success-consultative",
+      "evidenceMode": "resume-primary",
+      "fitClass": "adjacent",
+      "positioningLane": "customer-success-consultative",
+      "bridgeType": "operating-center",
+      "applicationStrategy": "transferable",
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-02.html",
+        "project-03.html",
+        "project-01.html"
+      ],
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Microsoft-Senior-Customer-Success-Account-Manager-Resume.pdf",
+      "publishStatus": "local-only",
+      "qaStatus": "qa-passed",
+      "builtAt": "2026-07-29T16:20:44.341Z"
+    },
+    {
       "slug": "modaxo-ai-transformation-manager",
       "roleTitle": "Modaxo AI Transformation Manager",
       "fitClass": "unclassified",
