@@ -1,0 +1,261 @@
+{
+  "workflowVersion": 2,
+  "contractRevision": 6,
+  "slug": "company-role",
+  "roleTitle": "Company Role",
+  "artifactStem": "Company-Role",
+  "fitClass": "strong",
+  "routeMode": "canonical-projects",
+  "selectedProjects": [
+    "project-01.html",
+    "project-02.html",
+    "project-03.html"
+  ],
+  "job": {
+    "company": "Company",
+    "roleTitle": "Role",
+    "jobId": "replace-me",
+    "jobUrl": "https://example.com/job",
+    "sourceChannel": "company-careers",
+    "dateCaptured": "2026-07-16",
+    "location": "Replace with JD location",
+    "atsVendor": "unknown",
+    "rawJd": "Paste the complete job description here."
+  },
+  "classification": {
+    "targetLane": "ai-product-implementation",
+    "evidenceMode": "balanced",
+    "primarySource": "resume",
+    "supportingSource": "portfolio",
+    "hardGateStatus": "pass",
+    "hardGates": [
+      {
+        "gate": "Required location or work authorization",
+        "status": "pass",
+        "requirementId": "eligibility-location",
+        "evidence": "Replace with truthful evidence."
+      }
+    ]
+  },
+  "requirements": [
+    {
+      "id": "eligibility-location",
+      "text": "Meet the role's stated location and work-authorization requirements.",
+      "priority": "hard-gate",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The requirement was reviewed and can be answered truthfully."
+      ],
+      "proofIds": [],
+      "destinations": [
+        "application-answer"
+      ],
+      "resumeTerms": [
+        "Raleigh, NC"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "core-1",
+      "text": "Replace with a core requirement.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Replace with direct source evidence."
+      ],
+      "proofIds": [
+        "hedgehox-03",
+        "one-block-away-04"
+      ],
+      "destinations": [
+        "summary",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "replace with supported JD language"
+      ],
+      "matchMode": "contextual"
+    }
+  ],
+  "fitGate": {
+    "supportedOverlap": [
+      "Replace with the strongest direct overlap."
+    ],
+    "unsupportedRequirements": [],
+    "actualMismatches": [],
+    "missingEvidence": [],
+    "coverLetterBridge": {
+      "status": "not-needed",
+      "rationale": "The resume and portfolio already provide direct evidence for the role's core work, so a cover letter is not needed to make the application credible."
+    },
+    "recommendation": "Proceed with the supported positioning described above."
+  },
+  "positioning": {
+    "laneId": "ai-product-implementation",
+    "targetIdentity": "AI product and implementation leader",
+    "employerNeed": "Turn unclear business needs into working AI products with the review steps teams need.",
+    "bridgeType": "direct",
+    "applicationStrategy": "direct",
+    "bridgeThesis": "connect customer needs, product decisions, and delivery",
+    "proofIds": [
+      "hedgehox-03",
+      "one-block-away-04",
+      "kinesso-01"
+    ],
+    "remainingGap": null
+  },
+  "coverLetter": null,
+  "resume": {
+    "foundationId": "wally-mostafa-resume-2026-07-03",
+    "summary": "AI product and implementation leader with 15 years across healthcare and enterprise software. I connect customer needs, product decisions, and delivery. I have built regulated AI tools from discovery through working software, led systems used by 7,000+ people across 22 brands, and managed $2M-$50M+ Fortune 500 accounts.",
+    "skillIds": [
+      "ai-implementation-workflow-design",
+      "product-strategy-poc-delivery",
+      "regulated-healthcare-client-delivery",
+      "enterprise-ux-design-systems"
+    ],
+    "skills": [
+      {
+        "label": "AI Implementation & Workflow Design",
+        "description": "Governed LLM/VLM workflows, multimodal review, RAG/knowledge bases, prompt-defined criteria, model orchestration, and human review surfaces"
+      },
+      {
+        "label": "Product Strategy & POC Delivery",
+        "description": "Discovery, scoping, requirements, prototype validation, demo narratives, build-ready logic, and production handoff"
+      },
+      {
+        "label": "Regulated Healthcare & Client Delivery",
+        "description": "11 years across pharma/healthcare communications, FDA/HIPAA/MLR workflows, HCP/patient UX, client workshops, and stakeholder adoption"
+      },
+      {
+        "label": "Enterprise UX & Design Systems",
+        "description": "Team scaling (2 to 30), enterprise analytics, workflow UX, data visualization, component libraries, and accessibility (WCAG)"
+      }
+    ],
+    "roles": {
+      "hedgehox": [
+        "Secured an investor for proprietary Claims Detection software by building the functional POC, shaping the demo story, and iterating with investors",
+        "Designed Claims Detector workflows that identify promotional claims, surface evidence gaps, and pre-populate audit-ready annotations before MLR submission",
+        "Converted pharma agency needs into AI tools for MLR claim review, brief intake, scoping, review routing, submission capture, and FDA signal monitoring",
+        "Designed the full Xenagos Bio startup biopharma website from scratch, including investor-facing structure, scientific positioning, visual direction, and hidden design-system handoff",
+        "Built Scope Generator for pharma agency finance and operations teams to manage regional rate cards, brands, sub-brands, and natural-language scope changes",
+        "Developed FDA Warning Tool concepts that connect warning-letter patterns to content-risk guidance for pharma teams"
+      ],
+      "one-block-away": [
+        "Build client-led AI POCs that turn unclear business questions into testable product surfaces, demo flows, and roadmap decisions",
+        "Built ListingPal's AI listing-generation POC and landing page, turning basic property inputs into listing copy, social posts, ad copy, styling direction, and MLS/SEO-ready language in under 90 seconds",
+        "Built WeReady's Bailey Intelligence dashboard, translating founder inputs, GitHub signals, source health, risk scoring, and evidence trails into startup-readiness workflows",
+        "Own product strategy, UX, AI workflow design, front-end build, backend logic, demo readiness, and client iteration from first ask through working prototype",
+        "Currently building the website and sponsor strategy for a Tunisia youth soccer program, positioning the project for player advancement, community support, and donor outreach"
+      ],
+      "kinesso": [
+        "Scaled product design from 2 to 30 people across the US and Poland for enterprise analytics used by 7,000+ users across 22 white-label brands",
+        "Led UX and design-system strategy for MIE data visualization, dashboard building, brand theming, and reusable analytics components",
+        "Built the Digital Experience Audit workflow for channel scoring, benchmarks, recommendations, visualization, and presentation-ready client outputs",
+        "Design-system and analytics work earned 5 Indigo Gold, 4 Indigo Silver, and Red Dot recognition"
+      ],
+      "omnicom": [
+        "Supported oncology accounts as a freelance UX designer, combining UX design and account-management experience to strengthen regulated healthcare work",
+        "Championed UX best practices across account, strategy, creative, and delivery conversations, translating brand goals into clearer user flows, content structure, and digital recommendations"
+      ],
+      "heartbeat": [
+        "Led UX research and experience strategy for pharma and healthcare work, translating stakeholder input, competitive audits, and user needs into digital product direction",
+        "Created journey maps, site maps, user flows, wireframes, and prototypes for patient, HCP, and internal brand-team experiences across regulated healthcare programs",
+        "Partnered with strategy, creative, account, and engineering teams to move UX recommendations from research findings into build-ready product and campaign experiences"
+      ],
+      "account-management": [
+        "7+ years managing Fortune 500 pharma and healthcare clients with $2M-$50M+ budgets across CNS/neurology, psychiatry, cardiovascular/metabolic, and sleep/wakefulness brands including NUVIGIL, Namenda XR, Lipitor, and Zoloft",
+        "One of two account consumer leads on FCB Health's largest pharma account across all verticals: TV, radio, digital, gaming, Times Square, unbranded campaigns, brand planning, and MLR review",
+        "Translated client and brand strategy into briefs, creative feedback, production requirements, timelines, and MLR-ready deliverables across account, creative, UX, and development teams"
+      ]
+    },
+    "sourceBulletIds": {
+      "hedgehox": [
+        "hedgehox-01",
+        "hedgehox-02",
+        "hedgehox-03",
+        "hedgehox-04",
+        "hedgehox-05",
+        "hedgehox-06"
+      ],
+      "one-block-away": [
+        "one-block-away-01",
+        "one-block-away-02",
+        "one-block-away-03",
+        "one-block-away-04",
+        "one-block-away-05"
+      ],
+      "kinesso": [
+        "kinesso-01",
+        "kinesso-02",
+        "kinesso-03",
+        "kinesso-04"
+      ],
+      "omnicom": [
+        "omnicom-01",
+        "omnicom-02"
+      ],
+      "heartbeat": [
+        "heartbeat-01",
+        "heartbeat-02",
+        "heartbeat-03"
+      ],
+      "account-management": [
+        "account-management-01",
+        "account-management-02",
+        "account-management-03"
+      ]
+    }
+  },
+  "hero": {
+    "eyebrow": "Company Role",
+    "tags": [
+      "Role proof lane",
+      "Domain proof lane"
+    ],
+    "intro": "I connect customer needs, product decisions, and delivery. For this role, that means turning unclear requirements into working AI products without losing the review steps teams depend on. I have built regulated tools from discovery through functional software, led enterprise systems used by 7,000+ people across 22 brands, and managed $2M-$50M+ client portfolios."
+  },
+  "contact": {
+    "prompt": "Hiring for this role and proof lane? Email is the fastest way to reach me.",
+    "signoff": "Proof lane one · proof lane two · proof lane three"
+  },
+  "copyReview": {
+    "humanizerVersion": "2.2.0",
+    "mode": "surface-only",
+    "status": "pending",
+    "reviewedAt": null,
+    "copySha256": null,
+    "preserved": [
+      "content",
+      "structure",
+      "claims",
+      "ending"
+    ],
+    "rewriteAuthorized": false,
+    "reviewMethod": "humanizer-skill",
+    "semanticPassAttested": false,
+    "staticChecksPassed": false,
+    "finalAntiAiPass": false,
+    "remainingTells": []
+  },
+  "constraints": {
+    "doNotClaim": [
+      "Literal unsupported resume phrase that must never appear"
+    ],
+    "blockedTerms": [
+      "Another literal unsupported term that must never appear in the PDF"
+    ]
+  },
+  "privacy": {
+    "publicSafe": true,
+    "notes": "Contains only public job-posting text and sanitized evidence. Do not include recruiter contact details, application answers, personal compensation boundaries, or private eligibility details."
+  },
+  "qa": {
+    "status": "pending"
+  }
+}

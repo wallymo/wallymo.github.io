@@ -1,0 +1,743 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://wallymo.github.io/schemas/package-v2.schema.json",
+  "title": "Tailored application package v2",
+  "type": "object",
+  "required": [
+    "workflowVersion",
+    "slug",
+    "roleTitle",
+    "artifactStem",
+    "fitClass",
+    "routeMode",
+    "selectedProjects",
+    "job",
+    "classification",
+    "requirements",
+    "fitGate",
+    "resume",
+    "hero",
+    "contact",
+    "constraints",
+    "privacy",
+    "qa"
+  ],
+  "properties": {
+    "workflowVersion": { "const": 2 },
+    "contractRevision": { "enum": [2, 3, 4, 5, 6] },
+    "slug": { "type": "string", "minLength": 1 },
+    "roleTitle": { "type": "string", "minLength": 1 },
+    "artifactStem": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9]+(?:-[A-Za-z0-9]+)*$"
+    },
+    "fitClass": {
+      "enum": ["strong", "adjacent", "stretch", "not-fit"]
+    },
+    "routeMode": {
+      "enum": ["canonical-projects", "scoped-projects"]
+    },
+    "selectedProjects": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 5,
+      "items": { "pattern": "^project-[0-9]+\\.html$" }
+    },
+    "job": {
+      "type": "object",
+      "required": [
+        "company",
+        "roleTitle",
+        "sourceChannel",
+        "dateCaptured",
+        "rawJd"
+      ]
+    },
+    "classification": {
+      "type": "object",
+      "required": [
+        "targetLane",
+        "evidenceMode",
+        "primarySource",
+        "supportingSource",
+        "hardGateStatus",
+        "hardGates"
+      ],
+      "properties": {
+        "hardGateStatus": { "enum": ["pass", "uncertain", "fail"] },
+        "hardGates": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": ["gate", "status", "evidence"],
+            "properties": {
+              "requirementId": { "type": "string", "minLength": 1 },
+              "status": {
+                "enum": ["pass", "uncertain", "fail", "not-applicable"]
+              }
+            }
+          }
+        }
+      }
+    },
+    "requirements": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "text",
+          "priority",
+          "evidenceStatus",
+          "evidence",
+          "resumeTerms"
+        ],
+        "properties": {
+          "id": { "type": "string", "minLength": 1 },
+          "text": { "type": "string", "minLength": 1 },
+          "priority": {
+            "enum": ["hard-gate", "core", "preferred", "context"]
+          },
+          "evidenceStatus": {
+            "enum": ["direct", "adjacent", "none"]
+          },
+          "evidence": {
+            "type": "array",
+            "items": { "type": "string", "minLength": 1 }
+          },
+          "resumeTerms": {
+            "type": "array",
+            "minItems": 1,
+            "items": { "type": "string", "minLength": 1 }
+          },
+          "source": {
+            "enum": [
+              "jd",
+              "application-form",
+              "employer-policy",
+              "assessment"
+            ]
+          },
+          "confidence": {
+            "enum": ["explicit", "contextual", "ambiguous"]
+          },
+          "proofIds": {
+            "type": "array",
+            "items": { "type": "string", "minLength": 1 },
+            "uniqueItems": true
+          },
+          "destinations": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "enum": [
+                "summary",
+                "skills",
+                "experience",
+                "portfolio",
+                "application-answer",
+                "cover-letter"
+              ]
+            },
+            "uniqueItems": true
+          },
+          "matchMode": {
+            "enum": [
+              "exact",
+              "recognized-equivalent",
+              "contextual",
+              "not-supported"
+            ]
+          }
+        }
+      }
+    },
+    "fitGate": {
+      "type": "object",
+      "required": [
+        "supportedOverlap",
+        "unsupportedRequirements",
+        "actualMismatches",
+        "missingEvidence",
+        "recommendation"
+      ],
+      "properties": {
+        "coverLetterBridge": {
+          "type": "object",
+          "required": ["status", "rationale"],
+          "properties": {
+            "status": {
+              "enum": ["not-needed", "recommended", "not-credible"]
+            },
+            "rationale": { "type": "string", "minLength": 1 }
+          },
+          "additionalProperties": false
+        }
+      }
+    },
+    "resume": {
+      "type": "object",
+      "required": ["summary", "skills", "roles"],
+      "properties": {
+        "summary": { "type": "string", "minLength": 1 },
+        "skillIds": {
+          "type": "array",
+          "minItems": 4,
+          "maxItems": 6,
+          "items": { "type": "string", "minLength": 1 },
+          "uniqueItems": true
+        },
+        "skills": {
+          "type": "array",
+          "minItems": 4,
+          "maxItems": 6
+        },
+        "roles": { "type": "object" },
+        "foundationId": { "type": "string", "minLength": 1 },
+        "sourceBulletIds": {
+          "type": "object",
+          "required": [
+            "hedgehox",
+            "one-block-away",
+            "kinesso",
+            "omnicom",
+            "heartbeat",
+            "account-management"
+          ],
+          "properties": {
+            "hedgehox": {
+              "type": "array",
+              "items": { "type": "string", "minLength": 1 },
+              "uniqueItems": true
+            },
+            "one-block-away": {
+              "type": "array",
+              "items": { "type": "string", "minLength": 1 },
+              "uniqueItems": true
+            },
+            "kinesso": {
+              "type": "array",
+              "items": { "type": "string", "minLength": 1 },
+              "uniqueItems": true
+            },
+            "omnicom": {
+              "type": "array",
+              "items": { "type": "string", "minLength": 1 },
+              "uniqueItems": true
+            },
+            "heartbeat": {
+              "type": "array",
+              "items": { "type": "string", "minLength": 1 },
+              "uniqueItems": true
+            },
+            "account-management": {
+              "type": "array",
+              "items": { "type": "string", "minLength": 1 },
+              "uniqueItems": true
+            }
+          }
+        }
+      }
+    },
+    "positioning": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "laneId",
+        "targetIdentity",
+        "employerNeed",
+        "bridgeType",
+        "applicationStrategy",
+        "bridgeThesis",
+        "proofIds",
+        "remainingGap"
+      ],
+      "properties": {
+        "laneId": { "type": "string", "minLength": 1 },
+        "targetIdentity": { "type": "string", "minLength": 1 },
+        "employerNeed": { "type": "string", "minLength": 1 },
+        "bridgeType": {
+          "enum": [
+            "direct",
+            "operating-center",
+            "domain-transfer",
+            "tool-transfer",
+            "level-transfer",
+            "not-credible"
+          ]
+        },
+        "applicationStrategy": {
+          "enum": [
+            "direct",
+            "transferable",
+            "approved-stretch",
+            "stop"
+          ]
+        },
+        "bridgeThesis": { "type": "string", "minLength": 1 },
+        "proofIds": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 3,
+          "items": { "type": "string", "minLength": 1 },
+          "uniqueItems": true
+        },
+        "remainingGap": {
+          "type": ["string", "null"]
+        }
+      }
+    },
+    "coverLetter": {
+      "type": ["object", "null"],
+      "properties": {
+        "trigger": {
+          "enum": ["bridge-recommended", "user-requested"]
+        },
+        "date": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+        },
+        "greeting": { "type": "string", "minLength": 1 },
+        "paragraphs": {
+          "type": "array",
+          "minItems": 3,
+          "maxItems": 6,
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "closing": { "type": "string", "minLength": 1 },
+        "signature": { "type": "string", "minLength": 1 },
+        "proofIds": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 3,
+          "items": { "type": "string", "minLength": 1 },
+          "uniqueItems": true
+        }
+      },
+      "additionalProperties": false
+    },
+    "hero": {
+      "type": "object",
+      "required": ["eyebrow", "tags", "intro"]
+    },
+    "contact": {
+      "type": "object",
+      "required": ["prompt", "signoff"]
+    },
+    "copyReview": {
+      "type": "object",
+      "required": [
+        "humanizerVersion",
+        "mode",
+        "status",
+        "preserved",
+        "reviewMethod",
+        "semanticPassAttested",
+        "staticChecksPassed",
+        "remainingTells"
+      ],
+      "properties": {
+        "humanizerVersion": { "const": "2.2.0" },
+        "mode": { "enum": ["surface-only", "rewrite-requested"] },
+        "status": { "enum": ["pending", "passed"] },
+        "reviewedAt": {
+          "type": ["string", "null"],
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}\\.\\d{3}Z$"
+        },
+        "copySha256": {
+          "type": ["string", "null"],
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "preserved": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "uniqueItems": true
+        },
+        "rewriteAuthorized": { "type": "boolean" },
+        "reviewMethod": { "const": "humanizer-skill" },
+        "semanticPassAttested": { "type": "boolean" },
+        "staticChecksPassed": { "type": "boolean" },
+        "finalAntiAiPass": { "type": "boolean" },
+        "remainingTells": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 }
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": { "status": { "const": "passed" } }
+          },
+          "then": {
+            "required": [
+              "reviewedAt",
+              "copySha256",
+              "semanticPassAttested",
+              "staticChecksPassed",
+              "finalAntiAiPass"
+            ],
+            "properties": {
+              "reviewedAt": {
+                "type": "string",
+                "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}\\.\\d{3}Z$"
+              },
+              "copySha256": {
+                "type": "string",
+                "pattern": "^[a-f0-9]{64}$"
+              },
+              "semanticPassAttested": { "const": true },
+              "staticChecksPassed": { "const": true },
+              "finalAntiAiPass": { "const": true },
+              "remainingTells": { "maxItems": 0 }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": { "mode": { "const": "surface-only" } }
+          },
+          "then": {
+            "properties": {
+              "preserved": {
+                "allOf": [
+                  { "contains": { "const": "content" } },
+                  { "contains": { "const": "structure" } },
+                  { "contains": { "const": "claims" } },
+                  { "contains": { "const": "ending" } }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": { "mode": { "const": "rewrite-requested" } }
+          },
+          "then": {
+            "required": ["rewriteAuthorized"],
+            "properties": {
+              "rewriteAuthorized": { "const": true },
+              "preserved": { "contains": { "const": "claims" } }
+            }
+          }
+        }
+      ],
+      "additionalProperties": false
+    },
+    "constraints": {
+      "type": "object",
+      "required": ["doNotClaim", "blockedTerms"]
+    },
+    "privacy": {
+      "type": "object",
+      "required": ["publicSafe", "notes"],
+      "properties": {
+        "publicSafe": { "const": true },
+        "notes": { "type": "string", "minLength": 1 }
+      }
+    },
+    "qa": {
+      "type": "object",
+      "required": ["status"]
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "anyOf": [
+          {
+            "required": ["contractRevision"],
+            "properties": {
+              "contractRevision": { "enum": [2, 3, 4, 5, 6] }
+            }
+          },
+          {
+            "properties": {
+              "fitGate": {
+                "required": ["coverLetterBridge"]
+              }
+            }
+          }
+        ]
+      },
+      "then": {
+        "properties": {
+          "fitGate": {
+            "required": ["coverLetterBridge"]
+          }
+        },
+        "allOf": [
+          {
+            "if": {
+              "properties": { "fitClass": { "const": "strong" } }
+            },
+            "then": {
+              "properties": {
+                "fitGate": {
+                  "properties": {
+                    "coverLetterBridge": {
+                      "properties": { "status": { "const": "not-needed" } }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "fitClass": { "enum": ["adjacent", "stretch"] }
+              }
+            },
+            "then": {
+              "properties": {
+                "fitGate": {
+                  "properties": {
+                    "coverLetterBridge": {
+                      "properties": {
+                        "status": {
+                          "enum": ["recommended", "not-credible"]
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": { "fitClass": { "const": "not-fit" } }
+            },
+            "then": {
+              "properties": {
+                "fitGate": {
+                  "properties": {
+                    "coverLetterBridge": {
+                      "properties": { "status": { "const": "not-credible" } }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "fitGate": {
+                  "properties": {
+                    "coverLetterBridge": {
+                      "properties": { "status": { "const": "recommended" } }
+                    }
+                  }
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "classification": {
+                  "properties": {
+                    "hardGateStatus": { "const": "pass" },
+                    "hardGates": {
+                      "items": {
+                        "properties": {
+                          "status": { "enum": ["pass", "not-applicable"] }
+                        }
+                      }
+                    }
+                  }
+                },
+                "fitGate": {
+                  "properties": {
+                    "coverLetterBridge": {
+                      "properties": {
+                        "rationale": {
+                          "pattern": "[Cc][Oo][Vv][Ee][Rr] [Ll][Ee][Tt][Tt][Ee][Rr]"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "if": {
+        "required": ["contractRevision"],
+        "properties": {
+          "contractRevision": { "enum": [3, 4, 5, 6] }
+        }
+      },
+      "then": {
+        "required": ["copyReview"]
+      }
+    },
+    {
+      "if": {
+        "required": ["contractRevision"],
+        "properties": {
+          "contractRevision": { "const": 4 }
+        }
+      },
+      "then": {
+        "properties": {
+          "resume": {
+            "required": ["foundationId", "sourceBulletIds"]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "required": ["contractRevision"],
+        "properties": {
+          "contractRevision": { "enum": [5, 6] }
+        }
+      },
+      "then": {
+        "required": ["positioning", "copyReview"],
+        "properties": {
+          "classification": {
+            "properties": {
+              "hardGates": {
+                "items": {
+                  "required": ["requirementId"]
+                }
+              }
+            }
+          },
+          "requirements": {
+            "items": {
+              "required": [
+                "source",
+                "confidence",
+                "proofIds",
+                "destinations",
+                "matchMode"
+              ]
+            }
+          },
+          "resume": {
+            "required": [
+              "foundationId",
+              "skillIds",
+              "sourceBulletIds"
+            ],
+            "properties": {
+              "summary": {
+                "minLength": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "required": ["contractRevision"],
+        "properties": {
+          "contractRevision": { "const": 6 }
+        }
+      },
+      "then": {
+        "required": ["coverLetter"],
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "fitGate": {
+                  "properties": {
+                    "coverLetterBridge": {
+                      "properties": {
+                        "status": { "const": "recommended" }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "coverLetter": {
+                  "type": "object",
+                  "required": [
+                    "trigger",
+                    "date",
+                    "greeting",
+                    "paragraphs",
+                    "closing",
+                    "signature",
+                    "proofIds"
+                  ],
+                  "properties": {
+                    "trigger": { "const": "bridge-recommended" }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "fitGate": {
+                  "properties": {
+                    "coverLetterBridge": {
+                      "properties": {
+                        "status": { "const": "not-credible" }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "coverLetter": { "const": null }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "fitGate": {
+                  "properties": {
+                    "coverLetterBridge": {
+                      "properties": {
+                        "status": { "const": "not-needed" }
+                      }
+                    }
+                  }
+                },
+                "coverLetter": { "type": "object" }
+              }
+            },
+            "then": {
+              "properties": {
+                "coverLetter": {
+                  "required": [
+                    "trigger",
+                    "date",
+                    "greeting",
+                    "paragraphs",
+                    "closing",
+                    "signature",
+                    "proofIds"
+                  ],
+                  "properties": {
+                    "trigger": { "const": "user-requested" }
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "additionalProperties": true
+}

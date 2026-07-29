@@ -14,16 +14,61 @@ This portfolio supplements a resume. Write for HR reps, recruiters, hiring manag
 - End every post-application recruiter note with this exact line: `Would love to hop on a call to chat about this opening or any other across your desk you might see fit.`
 - Treat each section as a scan stop: what this proves, why it matters, and where to click next.
 
+## Humanized Copy Gate
+
+Run every piece of authored application copy through the `humanizer` skill before showing it to the human, building artifacts, or publishing it. This includes fit-gate explanations, resume summaries, skills, bullets, route metadata and visible copy, cover letters, application answers, recruiter notes, and outreach drafts.
+
+- By default, humanizing is surface-only cleanup. Preserve the content, structure, claims, proof, order, and ending. Do not turn a cleanup request into a rewrite.
+- A broader rewrite is allowed only when the human explicitly asks for one. Mark that review as `rewrite-requested`; even then, preserve factual claims and evidence boundaries.
+- Keep exact employer language when it is truthful and useful for ATS retrieval. Humanizing should remove AI tells, not erase supported job terminology, metrics, product names, credentials, or domain language.
+- Follow the full skill process: draft, identify obvious AI patterns, make a surface edit, ask internally `What makes the below so obviously AI generated?`, note any remaining tells, then revise once more until none remain.
+- Remove inflated significance, promotional filler, vague attribution, superficial `-ing` clauses, formulaic transitions, forced three-part phrasing, synonym cycling, em-dash habits, curly quotes, chatbot artifacts, and generic upbeat endings.
+- Do not add personality by inventing feelings, anecdotes, uncertainty, quotes, or facts. For professional application copy, voice comes from specific proof, natural rhythm, plain language, and first person where appropriate.
+- Do not humanize the raw JD or verbatim source material. Humanize only copy authored for the application.
+- For a package config, finish the skill pass and then run `node scripts/humanizer-check.mjs --config scripts/packages/<slug>.json --approve --semantic-pass-complete`. The last flag explicitly attests that the semantic skill pass happened; static checks alone are not approval. The builder must reject pending, stale, or failed copy reviews.
+- The exact post-application recruiter-note ending remains fixed and must survive the humanizer pass unchanged.
+
+## Role-Specific Evidence Weighting
+
+Do not treat the resume and portfolio as equally important for every role. Before assigning a fit class, identify the role's primary hiring signal, then judge the strongest evidence in the source where a recruiter would expect to find it. Use the other source as supporting proof.
+
+- `portfolio-primary`: UX/UI, product design, visual design, design systems, service design, and portfolio-led research roles. Case studies must prove craft, process, judgment, and outcomes. The resume confirms scope, seniority, domain, and continuity but cannot replace missing work samples.
+- `balanced`: product management, AI product strategy/implementation, innovation, experience strategy, design leadership, and consultative solution-design roles. The resume must prove ownership, scale, stakeholders, and outcomes; the portfolio should validate how the work was framed and executed. Neither source should be asked to carry the whole fit.
+- `resume-primary`: account management, client success, customer success, program/project management, operations, partnerships, strategy, sales, and most solutions-consulting or pre-sales roles. The resume must prove the role's operating center, such as client ownership, renewals, retention, revenue/quota, implementation, adoption, executive relationships, budgets, or delivery. The portfolio is optional supporting evidence for communication, workflow thinking, domain fluency, or solution quality; do not penalize an otherwise credible fit because it lacks design-style case studies.
+- `credential-or-technical-primary`: engineering, architecture, cybersecurity, finance, clinical, and certification-dependent roles. Give priority to explicit resume experience, credentials, repositories, technical artifacts, or equivalent direct evidence. The visual portfolio carries little weight and cannot bridge a missing professional or technical center.
+- Let the JD override the default role family when it explicitly requires a portfolio, work samples, a book of business, quota/renewal history, named tools, certification, clearance, or another hard proof type.
+- Evaluate primary evidence first. Supporting evidence may strengthen confidence or move a borderline role within `adjacent`, but it must not erase a structural gap in the role's primary hiring signal.
+- Missing expected evidence and actual mismatch are different. Absence of case studies matters heavily for a portfolio-primary role; it is usually only a minor evidence gap for a resume-primary role. Conversely, polished case studies do not substitute for direct commercial, operational, technical, or credential evidence when the JD centers on it.
+- State the evidence mode in every fit gate: `portfolio-primary`, `balanced`, `resume-primary`, or `credential-or-technical-primary`. Then explain which source drives the fit call and what the other source contributes.
+- Assign the final fit class from the weighted evidence:
+  - `strong`: the primary source directly proves the role's core work, with supporting evidence reinforcing it.
+  - `adjacent`: the primary source proves a credible nearby operating center, with limited gaps that supporting evidence can partially reduce.
+  - `stretch`: the supporting source suggests capability, but the primary source lacks one or more central requirements recruiters are likely to screen for.
+  - `not-fit`: the role requires a materially different profession, hard qualification, or operating center that neither source supports.
+- After the fit class, make a separate cover-letter bridge call:
+  - `not-needed`: use only for a direct `strong` fit whose resume and portfolio already make the case.
+  - `recommended`: use for an `adjacent` or approved-pending `stretch` fit when all hard gates pass and the overall skill set supports a specific, evidence-backed transfer story. Say plainly, `We can make the case with a cover letter`, then name the transferable skills, the target need they answer, and the gap the letter must address.
+  - `not-credible`: use when a cover letter would have to hide or invent a hard qualification, credential, clearance, materially different profession, central operating-center experience, or other unsupported claim.
+- A cover letter may explain why transferable experience should count; it cannot change the fit class, clear a hard gate, or make unsupported evidence true. A `stretch` still requires explicit approval, and a `not-fit` still stops artifact generation.
+- When the bridge is `recommended` and the package is cleared to build, write the humanized cover letter in the same run and produce its PDF and Markdown artifacts. Do not wait for another request. For a `stretch`, wait only for the stretch approval; once approved, include the letter automatically.
+- For a resume-primary role that clears the gate, tailor the resume as the main argument and treat the matched portfolio route as a concise credibility layer. For a portfolio-primary role, let project selection and case-study relevance carry substantially more of the package argument.
+
 ## Tailored Portfolio Rules
 
 When the human sends a job, start with the fit gate. If it clears as a strong fit or a good/credible adjacent fit, build the matched package immediately—without waiting for a separate tailoring request or confirmation. Build a matched package for a stretch only after explicit approval.
 
-- Start with the fit gate. Compare the JD against `resume.html`, public project pages, and existing role artifacts before creating files.
+- Start with the fit gate. Identify the role's evidence mode, then compare the JD against `resume.html`, public project pages, and existing role artifacts using the Role-Specific Evidence Weighting rules before creating files.
 - For `strong` or `adjacent` results, treat the provided JD itself as authorization to create and publish the matched resume + role-route package. Do not pause after the gate to ask whether to proceed.
 - Keep the public homepage, public resume, and canonical public project pages untouched unless explicitly asked.
 - Use `index.html` as the visual/source shell for each role route. Preserve the current visual system; do not import another route's stale framing.
 - For each JD, the tailored resume PDF under `output/pdf/` is the only recruiter-facing resume artifact. Its `Portfolio` link must point exclusively to that JD's matching route. Do not retain or deliver a tailored resume HTML file; if HTML is needed to render the PDF, keep it temporary and remove it after verification.
-- Preserve the entire current One Block Away LLC founder section from `resume.html` verbatim in every tailored resume. Do not shorten it, summarize it, replace it with generic client-discovery bullets, or drop specific builds unless the human explicitly asks.
+- When the cover-letter bridge is `recommended`, create `Wally-Mostafa-<artifactStem>-Cover-Letter.pdf` and the matching Markdown source under `output/pdf/`. Keep render HTML temporary and remove it after QA. A `not-needed` package skips these files unless the human explicitly asks for a letter. A `not-credible` package must not create one.
+- Use `scripts/lib/cover-letter-template.mjs` for every new or intentionally rebuilt cover letter. Its `real-chemistry-21grams-v1` visual system is canonical: Syne display type, Instrument Sans body type, centered identity and contact block, thin black rule, fixed Letter margins, and no role-specific visual variants. Tailor the content, never the letter's design. The builder must wait for the bundled fonts before printing, and cover-letter QA must reject a missing or stale template version, wrong fonts, shifted layout, non-Letter page, or multi-page result.
+- Use `scripts/resume-foundation.json`, imported from the human-supplied `Wally-Mostafa-Resume.pdf`, as the content floor for every new or rebuilt tailored resume. Keep its role headers, employers, dates, awards, education, and all 23 experience bullets. Write a 45–65-word summary from one foundation positioning lane and select four to six evidence-backed skills from its skill bank.
+- Preserve the complete One Block Away LLC founder section from the foundation in every tailored resume. Do not shorten it, summarize it, replace it with generic client-discovery bullets, or drop specific builds unless the human explicitly asks.
+- Keep the already-approved ATS-safe shell normalization fixed across packages: `Skills`, `Raleigh, NC`, `347-420-3558`, and `2 to 30`. These are baseline parsing choices, not JD-specific edits.
+- Tailoring may change summary emphasis, select foundation skills, and edit experience bullets. Keep every source bullet mapped exactly once under its original employer. Bullet wording and order may change within a job. Never delete, merge, duplicate, or move a source bullet between employers, and never replace concrete experience with a generic summary.
+- Add bullets when supported evidence materially improves the match. Mark additions with a unique `addition:<slug>` source ID. Additions do not authorize removing or hiding any foundation bullet.
 - On the role-specific portfolio route, visible changes are limited to the hero space, the featured projects shown for that JD, and the closing contact/footer positioning. Metadata and resume/download links may change only as package plumbing.
 - Make the hero more intentional than a generic intro. In first person, explain why I fit the role using the employer's domain language, the role's core need, and 2-3 concrete proof points from the resume/projects.
 - Treat the closing contact block as the hero's bookend. Its prompt and short footer sign-off must match the same JD, role family, and proof lanes; never leave the public homepage's default AI/industry positioning on an unrelated tailored route.
@@ -44,21 +89,32 @@ When the human sends a job, start with the fit gate. If it clears as a strong fi
 - Scoped page previous/next links must follow that JD route's selected-project order, and the Wally/logo link plus all-work/back links must return to the JD-specific portfolio route.
 - Do not use query-param shims such as `?from=<role>` to make public case studies pretend to be route-specific pages.
 - Do not rewrite capabilities, trust strip, awards, experience arc, visual system, or other non-project sections unless the human explicitly asks for a broader portfolio edit. The role-specific closing contact/footer copy is the only default exception.
-- Record package intent in `scripts/tailored-packages.json` for any new or updated matched package.
+- For every new or reused package, persist the complete workflow v2 revision 6 config under `scripts/packages/<slug>.json`. Record positioning, requirement source/confidence/proof/destinations, match mode, and the conditional cover-letter contract. A supported core requirement must have resume evidence; a cover letter cannot be its only destination. Ambiguous JD language cannot independently fail a hard gate or produce `not-fit` until the employer or application form confirms it.
+- Treat workflow code, schema, template, test, and contract changes as prerequisite infrastructure. Commit that scoped toolchain before using it to build or publish a real package, and keep the infrastructure commit separate from the package artifact commit. Never publish artifacts generated by uncommitted workflow machinery. If local `main` has diverged, reconcile the toolchain in a clean worktree based on `origin/main`; do not force-push or hide the divergence.
+- Complete and approve the package humanizer review, build it with `node scripts/build-tailored-package.mjs --config scripts/packages/<slug>.json`, and keep `scripts/tailored-packages.json` limited to artifact/verification state.
+- Package configs are public artifacts. Require `privacy.publicSafe: true`; store only public JD text and sanitized evidence. Never put recruiter contact details, application answers, personal compensation boundaries, or private eligibility details in `scripts/packages/`.
+- After the scoped route, config, manifest entry, and package artifacts are committed and pushed, run `node scripts/verify-tailored-route.mjs <slug>`. The package is not `live-verified` until the config, route, projects, resume PDF, and any required cover-letter artifacts return `200` and their live checksums match the QA-approved local files. Commit and push the resulting verification-only manifest update.
+- Before manual submission, use `scripts/application-ledger.mjs ready` to store a private readiness snapshot. It must verify the canonical URL and requisition, live form gates, screening questions, uploaded filename and checksum, parsed fields, stable identity, LinkedIn consistency, narrative-answer humanizer status, duplicates, notices, assessments, and platform warnings. An unavailable or blocked check is not submission-ready.
+- Record a real application only after visible submission proof using `scripts/application-ledger.mjs record`; revisions 5 and 6 require the matching readiness snapshot. A Revision 6 package with a recommended bridge is not ready until the generated cover letter is included. Keep readiness, application stage, assessment events, and outreach states separate. The ignored `.private/applications.json` ledger must never be confused with the public artifact manifest.
 
 ## Job Description Fit Checks
 
 If the human sends a job description that is materially off the mark for the resume, portfolio, or available evidence, speak up before tailoring anything.
 
 - Treat this as a required gate for every resume/job-description turn, not an optional aside.
-- Before creating files, editing a resume, or making a hidden route, compare the JD against `resume.html`, the case studies, and existing role artifacts.
+- Before creating files, editing a resume, or making a hidden route, identify the role's evidence mode and compare the JD against `resume.html`, the case studies, and existing role artifacts with the correct weighting.
 - Classify the role as `strong`, `adjacent`, `stretch`, or `not-fit`.
+- Report a cover-letter bridge verdict immediately after the fit class: `not-needed`, `recommended`, or `not-credible`, with a concrete rationale grounded in the resume and portfolio.
+- When the verdict is `recommended`, say exactly that the case can be made with a cover letter and summarize the honest bridge from the human's broader skill set to the employer's need. If the package is cleared to build, create the humanized cover letter with the resume and route in the same run. Do not pause for a separate cover-letter request.
 - Treat the human's plain-language `good` fit as the existing `adjacent` class: proceed automatically, with narrow and honest positioning.
-- Support the call with concrete mismatches between the job description and local proof from the resume, case studies, or existing artifacts.
+- Support the call with concrete matches and mismatches in the role's primary evidence source, then use the secondary source to reinforce or qualify the decision.
+- Record whether each requirement is explicit, contextual, or ambiguous. Ambiguous or contradictory JD wording can be investigated, but it cannot independently create a hard failure until the employer or application form confirms it.
+- Apply the humanizer surface pass to the fit-gate response before sending it. Preserve the classification, evidence, caveats, recommendation, and final conclusion.
 - Distinguish between "missing evidence" and "actual mismatch" so the human can decide whether to proceed.
 - Do not force-fit the resume, invent experience, or bury the concern inside optimistic copy.
 - If the role is `not-fit`, stop before generating files and suggest how to make it fit honestly: a better target title, a narrower positioning angle, or proof the human would need to supply.
 - If there is still a strategic reason to apply, name the risk and suggest the narrowest honest positioning.
+- Do not recommend a cover-letter bridge when a failed or unresolved hard gate, required credential, clearance, materially different profession, or unsupported central responsibility is the blocker.
 - If the role asks for a different profession than the evidence supports, such as hands-on cybersecurity operations, clinical-device service, finance, engineering, or certified domain work, stop and call out the gap directly before tailoring.
 - If the human acknowledges the risk and says to move forward, proceed without relitigating the decision, but keep the artifact narrowly honest.
 - Speak up again if the work starts depending on unsupported claims, fake confidence, excessive tailoring for a low-fit role, or anything that looks like a rabbit hole.

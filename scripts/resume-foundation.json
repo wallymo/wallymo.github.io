@@ -1,0 +1,447 @@
+{
+  "foundationVersion": 2,
+  "id": "wally-mostafa-resume-2026-07-03",
+  "source": {
+    "fileName": "Wally-Mostafa-Resume.pdf",
+    "sha256": "f9b05b6c3c134262b1af6c5734363daf4385cf335407a139779a37d138adf1aa",
+    "pageCount": 2,
+    "experienceBulletCount": 23
+  },
+  "policy": {
+    "tailoringMode": "evidence-preserving",
+    "allowAdditions": true,
+    "allowRemovals": false,
+    "allowWithinRoleReordering": true,
+    "allowCrossRoleMoves": false
+  },
+  "summary": "AI implementation and product strategy lead with 15 years across pharma, enterprise UX, client strategy, and regulated AI delivery. I turn ambiguous workflows into governed AI tools, demo-ready POCs, and build-ready product systems. My strength is bridging client translation, workflow design, model behavior, and adoption so teams can trust and use the product after the demo.",
+  "skills": [
+    {
+      "label": "AI Implementation & Workflow Design",
+      "description": "Governed LLM/VLM workflows, multimodal review, RAG/knowledge bases, prompt-defined criteria, model orchestration, and human review surfaces"
+    },
+    {
+      "label": "Product Strategy & POC Delivery",
+      "description": "Discovery, scoping, requirements, prototype validation, demo narratives, build-ready logic, and production handoff"
+    },
+    {
+      "label": "Regulated Healthcare & Client Delivery",
+      "description": "11 years across pharma/healthcare communications, FDA/HIPAA/MLR workflows, HCP/patient UX, client workshops, and stakeholder adoption"
+    },
+    {
+      "label": "Enterprise UX & Design Systems",
+      "description": "Team scaling (2 to 30), enterprise analytics, workflow UX, data visualization, component libraries, and accessibility (WCAG)"
+    }
+  ],
+  "skillBank": [
+    {
+      "id": "ai-implementation-workflow-design",
+      "label": "AI Implementation & Workflow Design",
+      "description": "Governed LLM/VLM workflows, multimodal review, RAG/knowledge bases, prompt-defined criteria, model orchestration, and human review surfaces",
+      "evidenceIds": [
+        "hedgehox-02",
+        "hedgehox-03",
+        "one-block-away-01",
+        "one-block-away-04"
+      ]
+    },
+    {
+      "id": "product-strategy-poc-delivery",
+      "label": "Product Strategy & POC Delivery",
+      "description": "Discovery, scoping, requirements, prototype validation, demo narratives, build-ready logic, and production handoff",
+      "evidenceIds": [
+        "hedgehox-01",
+        "one-block-away-01",
+        "one-block-away-04"
+      ]
+    },
+    {
+      "id": "regulated-healthcare-client-delivery",
+      "label": "Regulated Healthcare & Client Delivery",
+      "description": "11 years across pharma/healthcare communications, FDA/HIPAA/MLR workflows, HCP/patient UX, client workshops, and stakeholder adoption",
+      "evidenceIds": [
+        "hedgehox-02",
+        "hedgehox-03",
+        "omnicom-01",
+        "heartbeat-01",
+        "account-management-01"
+      ]
+    },
+    {
+      "id": "enterprise-ux-design-systems",
+      "label": "Enterprise UX & Design Systems",
+      "description": "Team scaling (2 to 30), enterprise analytics, workflow UX, data visualization, component libraries, and accessibility (WCAG)",
+      "evidenceIds": [
+        "kinesso-01",
+        "kinesso-02",
+        "kinesso-03",
+        "kinesso-04"
+      ]
+    },
+    {
+      "id": "research-experience-strategy",
+      "label": "Research & Experience Strategy",
+      "description": "Stakeholder interviews, competitive audits, journey maps, user flows, wireframes, prototypes, usability testing, and research-led product direction",
+      "evidenceIds": [
+        "kinesso-03",
+        "heartbeat-01",
+        "heartbeat-02",
+        "heartbeat-03"
+      ]
+    },
+    {
+      "id": "client-account-leadership",
+      "label": "Client & Account Leadership",
+      "description": "Fortune 500 pharma and healthcare accounts, $2M-$50M+ budgets, client briefs, brand planning, and cross-functional delivery",
+      "evidenceIds": [
+        "omnicom-01",
+        "account-management-01",
+        "account-management-02",
+        "account-management-03"
+      ]
+    },
+    {
+      "id": "program-project-delivery",
+      "label": "Program & Project Delivery",
+      "description": "Scoping, requirements, timelines, review routing, team coordination, risk visibility, and build-ready handoff across product, design, and client teams",
+      "evidenceIds": [
+        "hedgehox-03",
+        "one-block-away-04",
+        "heartbeat-03",
+        "account-management-03"
+      ]
+    },
+    {
+      "id": "healthcare-marketing-strategy",
+      "label": "Healthcare Marketing & Brand Strategy",
+      "description": "Brand planning, campaign and digital strategy, MLR review, patient and HCP experiences, and regulated multi-channel delivery",
+      "evidenceIds": [
+        "omnicom-01",
+        "heartbeat-02",
+        "account-management-02",
+        "account-management-03"
+      ]
+    },
+    {
+      "id": "client-success-product-adoption",
+      "label": "Client Success & Product Adoption",
+      "description": "Client discovery, adoption-focused workflows, training and roadshows, human review, and product decisions based on user needs",
+      "evidenceIds": [
+        "one-block-away-01",
+        "kinesso-01",
+        "heartbeat-01",
+        "account-management-03"
+      ]
+    },
+    {
+      "id": "consultative-sales-solution-delivery",
+      "label": "Consultative Sales & Solution Delivery",
+      "description": "Discovery-led solution design, POCs, demo narratives, client translation, and product recommendations tied to business needs",
+      "evidenceIds": [
+        "hedgehox-01",
+        "one-block-away-01",
+        "one-block-away-04",
+        "account-management-03"
+      ]
+    }
+  ],
+  "positioningLanes": [
+    {
+      "id": "ai-product-implementation",
+      "defaultSkillIds": [
+        "ai-implementation-workflow-design",
+        "product-strategy-poc-delivery",
+        "regulated-healthcare-client-delivery",
+        "program-project-delivery"
+      ],
+      "priorityProofIds": [
+        "hedgehox-01",
+        "hedgehox-03",
+        "one-block-away-04"
+      ]
+    },
+    {
+      "id": "product-ux-design",
+      "defaultSkillIds": [
+        "enterprise-ux-design-systems",
+        "research-experience-strategy",
+        "product-strategy-poc-delivery",
+        "program-project-delivery"
+      ],
+      "priorityProofIds": [
+        "kinesso-01",
+        "kinesso-02",
+        "heartbeat-02"
+      ]
+    },
+    {
+      "id": "research-experience-strategy",
+      "defaultSkillIds": [
+        "research-experience-strategy",
+        "enterprise-ux-design-systems",
+        "regulated-healthcare-client-delivery",
+        "program-project-delivery"
+      ],
+      "priorityProofIds": [
+        "heartbeat-01",
+        "heartbeat-02",
+        "kinesso-03"
+      ]
+    },
+    {
+      "id": "client-account-delivery",
+      "defaultSkillIds": [
+        "client-account-leadership",
+        "regulated-healthcare-client-delivery",
+        "program-project-delivery",
+        "healthcare-marketing-strategy"
+      ],
+      "priorityProofIds": [
+        "account-management-01",
+        "account-management-02",
+        "account-management-03"
+      ]
+    },
+    {
+      "id": "program-project-operations",
+      "defaultSkillIds": [
+        "program-project-delivery",
+        "client-account-leadership",
+        "product-strategy-poc-delivery",
+        "regulated-healthcare-client-delivery"
+      ],
+      "priorityProofIds": [
+        "one-block-away-04",
+        "heartbeat-03",
+        "account-management-03"
+      ]
+    },
+    {
+      "id": "healthcare-marketing-brand",
+      "defaultSkillIds": [
+        "healthcare-marketing-strategy",
+        "regulated-healthcare-client-delivery",
+        "client-account-leadership",
+        "research-experience-strategy"
+      ],
+      "priorityProofIds": [
+        "heartbeat-01",
+        "account-management-01",
+        "account-management-02"
+      ]
+    },
+    {
+      "id": "customer-success-consultative",
+      "defaultSkillIds": [
+        "client-success-product-adoption",
+        "consultative-sales-solution-delivery",
+        "client-account-leadership",
+        "program-project-delivery"
+      ],
+      "priorityProofIds": [
+        "one-block-away-01",
+        "kinesso-01",
+        "account-management-03"
+      ]
+    }
+  ],
+  "assessmentPrepBank": [
+    {
+      "id": "ambiguous-problem-framing",
+      "label": "Ambiguous problem framing",
+      "proofIds": [
+        "one-block-away-01",
+        "one-block-away-04",
+        "heartbeat-01"
+      ]
+    },
+    {
+      "id": "ai-product-delivery",
+      "label": "AI product delivery",
+      "proofIds": [
+        "hedgehox-01",
+        "hedgehox-03",
+        "one-block-away-04"
+      ]
+    },
+    {
+      "id": "regulated-stakeholder-judgment",
+      "label": "Regulated stakeholder judgment",
+      "proofIds": [
+        "hedgehox-02",
+        "hedgehox-03",
+        "account-management-03"
+      ]
+    },
+    {
+      "id": "enterprise-scale-and-leadership",
+      "label": "Enterprise scale and leadership",
+      "proofIds": [
+        "kinesso-01",
+        "kinesso-02",
+        "kinesso-04"
+      ]
+    },
+    {
+      "id": "client-and-commercial-ownership",
+      "label": "Client and commercial ownership",
+      "proofIds": [
+        "account-management-01",
+        "account-management-02",
+        "omnicom-01"
+      ]
+    },
+    {
+      "id": "research-to-action",
+      "label": "Research to action",
+      "proofIds": [
+        "heartbeat-01",
+        "heartbeat-02",
+        "heartbeat-03"
+      ]
+    }
+  ],
+  "roleHeaders": {
+    "hedgehox": {
+      "title": "AI Implementation Partner",
+      "employer": "Hedgehox",
+      "dateRange": "Mar 2024 – Present"
+    },
+    "one-block-away": {
+      "title": "Founder & AI Product Strategist",
+      "employer": "One Block Away LLC",
+      "dateRange": "Jul 2023 – Present"
+    },
+    "kinesso": {
+      "title": "Director, Experience & Innovation",
+      "employer": "Kinesso (IPG)",
+      "dateRange": "Feb 2020 – Jun 2023"
+    },
+    "omnicom": {
+      "title": "Freelance UX Designer",
+      "employer": "Omnicom",
+      "dateRange": "Dec 2019 – Jan 2020"
+    },
+    "heartbeat": {
+      "title": "Sr. UX Designer",
+      "employer": "Heartbeat Ideas",
+      "dateRange": "Aug 2018 – Nov 2019"
+    },
+    "account-management": {
+      "title": "Account Management & Client Strategy",
+      "employer": "RosettaWishbone, FCB Health, Barker DZP, Cline Davis & Mann, Scout Marketing",
+      "dateRange": "Feb 2011 – Jul 2018"
+    }
+  },
+  "educationAnchors": [
+    "BA Labor Studies & Employee Relations",
+    "Rutgers University",
+    "2010"
+  ],
+  "roles": {
+    "hedgehox": [
+      {
+        "id": "hedgehox-01",
+        "text": "Secured an investor for proprietary Claims Detection software by building the functional POC, shaping the demo story, and iterating with investors"
+      },
+      {
+        "id": "hedgehox-02",
+        "text": "Designed Claims Detector workflows that identify promotional claims, surface evidence gaps, and pre-populate audit-ready annotations before MLR submission"
+      },
+      {
+        "id": "hedgehox-03",
+        "text": "Converted pharma agency needs into AI tools for MLR claim review, brief intake, scoping, review routing, submission capture, and FDA signal monitoring"
+      },
+      {
+        "id": "hedgehox-04",
+        "text": "Designed the full Xenagos Bio startup biopharma website from scratch, including investor-facing structure, scientific positioning, visual direction, and hidden design-system handoff"
+      },
+      {
+        "id": "hedgehox-05",
+        "text": "Built Scope Generator for pharma agency finance and operations teams to manage regional rate cards, brands, sub-brands, and natural-language scope changes"
+      },
+      {
+        "id": "hedgehox-06",
+        "text": "Developed FDA Warning Tool concepts that connect warning-letter patterns to content-risk guidance for pharma teams"
+      }
+    ],
+    "one-block-away": [
+      {
+        "id": "one-block-away-01",
+        "text": "Build client-led AI POCs that turn unclear business questions into testable product surfaces, demo flows, and roadmap decisions"
+      },
+      {
+        "id": "one-block-away-02",
+        "text": "Built ListingPal's AI listing-generation POC and landing page, turning basic property inputs into listing copy, social posts, ad copy, styling direction, and MLS/SEO-ready language in under 90 seconds"
+      },
+      {
+        "id": "one-block-away-03",
+        "text": "Built WeReady's Bailey Intelligence dashboard, translating founder inputs, GitHub signals, source health, risk scoring, and evidence trails into startup-readiness workflows"
+      },
+      {
+        "id": "one-block-away-04",
+        "text": "Own product strategy, UX, AI workflow design, front-end build, backend logic, demo readiness, and client iteration from first ask through working prototype"
+      },
+      {
+        "id": "one-block-away-05",
+        "text": "Currently building the website and sponsor strategy for a Tunisia youth soccer program, positioning the project for player advancement, community support, and donor outreach"
+      }
+    ],
+    "kinesso": [
+      {
+        "id": "kinesso-01",
+        "text": "Scaled product design from 2 to 30 people across the US and Poland for enterprise analytics used by 7,000+ users across 22 white-label brands"
+      },
+      {
+        "id": "kinesso-02",
+        "text": "Led UX and design-system strategy for MIE data visualization, dashboard building, brand theming, and reusable analytics components"
+      },
+      {
+        "id": "kinesso-03",
+        "text": "Built the Digital Experience Audit workflow for channel scoring, benchmarks, recommendations, visualization, and presentation-ready client outputs"
+      },
+      {
+        "id": "kinesso-04",
+        "text": "Design-system and analytics work earned 5 Indigo Gold, 4 Indigo Silver, and Red Dot recognition"
+      }
+    ],
+    "omnicom": [
+      {
+        "id": "omnicom-01",
+        "text": "Supported oncology accounts as a freelance UX designer, combining UX design and account-management experience to strengthen regulated healthcare work"
+      },
+      {
+        "id": "omnicom-02",
+        "text": "Championed UX best practices across account, strategy, creative, and delivery conversations, translating brand goals into clearer user flows, content structure, and digital recommendations"
+      }
+    ],
+    "heartbeat": [
+      {
+        "id": "heartbeat-01",
+        "text": "Led UX research and experience strategy for pharma and healthcare work, translating stakeholder input, competitive audits, and user needs into digital product direction"
+      },
+      {
+        "id": "heartbeat-02",
+        "text": "Created journey maps, site maps, user flows, wireframes, and prototypes for patient, HCP, and internal brand-team experiences across regulated healthcare programs"
+      },
+      {
+        "id": "heartbeat-03",
+        "text": "Partnered with strategy, creative, account, and engineering teams to move UX recommendations from research findings into build-ready product and campaign experiences"
+      }
+    ],
+    "account-management": [
+      {
+        "id": "account-management-01",
+        "text": "7+ years managing Fortune 500 pharma and healthcare clients with $2M-$50M+ budgets across CNS/neurology, psychiatry, cardiovascular/metabolic, and sleep/wakefulness brands including NUVIGIL, Namenda XR, Lipitor, and Zoloft"
+      },
+      {
+        "id": "account-management-02",
+        "text": "One of two account consumer leads on FCB Health's largest pharma account across all verticals: TV, radio, digital, gaming, Times Square, unbranded campaigns, brand planning, and MLR review"
+      },
+      {
+        "id": "account-management-03",
+        "text": "Translated client and brand strategy into briefs, creative feedback, production requirements, timelines, and MLR-ready deliverables across account, creative, UX, and development teams"
+      }
+    ]
+  }
+}

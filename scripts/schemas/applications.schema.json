@@ -1,0 +1,432 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://wallymo.github.io/schemas/applications.schema.json",
+  "title": "Private application and outcome ledger",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "applications"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "readiness": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": { "$ref": "#/$defs/readiness" }
+    },
+    "applications": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "applicationId",
+          "packageSlug",
+          "company",
+          "roleTitle",
+          "jobId",
+          "source",
+          "atsVendor",
+          "targetLane",
+          "evidenceMode",
+          "fitClass",
+          "artifactVerification",
+          "appliedAt",
+          "confirmation",
+          "currentStage",
+          "events",
+          "outreach"
+        ],
+        "properties": {
+          "applicationId": { "type": "string", "minLength": 1 },
+          "contractRevision": { "enum": [5, 6] },
+          "packageSlug": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+          },
+          "company": { "type": "string", "minLength": 1 },
+          "roleTitle": { "type": "string", "minLength": 1 },
+          "jobId": { "type": ["string", "null"] },
+          "source": { "type": "string", "minLength": 1 },
+          "atsVendor": { "type": "string", "minLength": 1 },
+          "targetLane": { "type": "string", "minLength": 1 },
+          "evidenceMode": {
+            "enum": [
+              "portfolio-primary",
+              "balanced",
+              "resume-primary",
+              "credential-or-technical-primary"
+            ]
+          },
+          "fitClass": { "enum": ["strong", "adjacent", "stretch"] },
+          "positioningLane": { "type": "string", "minLength": 1 },
+          "bridgeType": { "type": "string", "minLength": 1 },
+          "applicationStrategy": { "type": "string", "minLength": 1 },
+          "coverLetterStatus": {
+            "enum": ["used", "not-used", "not-applicable"]
+          },
+          "requirementCoverage": {
+            "$ref": "#/$defs/requirementCoverage"
+          },
+          "readiness": { "$ref": "#/$defs/readiness" },
+          "artifactVerification": { "$ref": "#/$defs/artifactVerification" },
+          "appliedAt": { "type": "string", "format": "date-time" },
+          "confirmation": { "type": "string", "minLength": 1 },
+          "currentStage": { "$ref": "#/$defs/stage" },
+          "events": {
+            "type": "array",
+            "minItems": 1,
+            "items": { "$ref": "#/$defs/event" }
+          },
+          "outreach": {
+            "type": "array",
+            "items": { "$ref": "#/$defs/outreach" }
+          }
+        },
+        "allOf": [
+          {
+            "if": {
+              "required": ["contractRevision"],
+              "properties": {
+                "contractRevision": { "enum": [5, 6] }
+              }
+            },
+            "then": {
+              "required": [
+                "positioningLane",
+                "bridgeType",
+                "applicationStrategy",
+                "coverLetterStatus",
+                "requirementCoverage",
+                "readiness"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  },
+  "$defs": {
+    "sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "stage": {
+      "enum": [
+        "applied",
+        "recruiter-screen",
+        "hiring-manager",
+        "interview",
+        "offer",
+        "rejected",
+        "withdrawn"
+      ]
+    },
+    "artifactVerification": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "verifiedAt",
+        "configSha256",
+        "routeSha256",
+        "pdfSha256",
+        "scopedProjectSha256"
+      ],
+      "properties": {
+        "verifiedAt": { "type": "string", "format": "date-time" },
+        "configSha256": { "$ref": "#/$defs/sha256" },
+        "routeSha256": { "$ref": "#/$defs/sha256" },
+        "pdfSha256": { "$ref": "#/$defs/sha256" },
+        "coverLetterPdfSha256": { "$ref": "#/$defs/sha256" },
+        "coverLetterMarkdownSha256": { "$ref": "#/$defs/sha256" },
+        "scopedProjectSha256": {
+          "type": "object",
+          "propertyNames": { "pattern": "^project-\\d+\\.html$" },
+          "additionalProperties": { "$ref": "#/$defs/sha256" }
+        }
+      }
+    },
+    "requirementCoverage": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "direct",
+        "adjacent",
+        "notSupported",
+        "exact",
+        "recognizedEquivalent",
+        "contextual"
+      ],
+      "properties": {
+        "direct": { "type": "integer", "minimum": 0 },
+        "adjacent": { "type": "integer", "minimum": 0 },
+        "notSupported": { "type": "integer", "minimum": 0 },
+        "exact": { "type": "integer", "minimum": 0 },
+        "recognizedEquivalent": { "type": "integer", "minimum": 0 },
+        "contextual": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "readiness": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "packageSlug",
+        "contractRevision",
+        "company",
+        "roleTitle",
+        "jobId",
+        "applicationUrl",
+        "atsVendor",
+        "preparedAt",
+        "status",
+        "blockers",
+        "screeningQuestionsStatus",
+        "formHardGateStatus",
+        "parsedFieldsStatus",
+        "identityParityStatus",
+        "narrativeAnswersStatus",
+        "authoredCopySha256",
+        "humanizerReview",
+        "attachedFilename",
+        "uploadedPdfSha256",
+        "identitySha256",
+        "expectedConfigSha256",
+        "expectedPdfSha256",
+        "duplicateStatus",
+        "relatedRoleAcknowledged",
+        "aiProcessingNotice",
+        "automatedProcessingNoticeUrl",
+        "optOutPathStatus",
+        "optOutUrl",
+        "accommodationPathStatus",
+        "accommodationUrl",
+        "assessmentType",
+        "platformIntegrityStatus",
+        "coverLetterStatus",
+        "convertedApplicationId"
+      ],
+      "properties": {
+        "packageSlug": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+        },
+        "contractRevision": { "enum": [5, 6] },
+        "company": { "type": "string", "minLength": 1 },
+        "roleTitle": { "type": "string", "minLength": 1 },
+        "jobId": { "type": "string", "minLength": 1 },
+        "applicationUrl": {
+          "type": "string",
+          "pattern": "^https?://"
+        },
+        "atsVendor": { "type": "string", "minLength": 1 },
+        "preparedAt": { "type": "string", "format": "date-time" },
+        "status": { "enum": ["ready", "blocked"] },
+        "blockers": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "screeningQuestionsStatus": {
+          "enum": ["reviewed", "unavailable"]
+        },
+        "formHardGateStatus": { "enum": ["pass", "blocked"] },
+        "parsedFieldsStatus": {
+          "enum": ["pass", "unavailable", "incorrect"]
+        },
+        "identityParityStatus": {
+          "enum": ["pass", "review-needed", "blocked"]
+        },
+        "narrativeAnswersStatus": {
+          "enum": ["not-applicable", "passed", "pending"]
+        },
+        "authoredCopySha256": {
+          "anyOf": [
+            { "$ref": "#/$defs/sha256" },
+            { "type": "null" }
+          ]
+        },
+        "humanizerReview": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["status", "mode", "semanticPassAttested"],
+          "properties": {
+            "status": { "enum": ["not-applicable", "pending", "passed"] },
+            "mode": { "enum": ["surface-only", "rewrite-requested"] },
+            "semanticPassAttested": { "type": "boolean" }
+          }
+        },
+        "attachedFilename": { "type": "string", "minLength": 1 },
+        "uploadedPdfSha256": { "$ref": "#/$defs/sha256" },
+        "identitySha256": { "$ref": "#/$defs/sha256" },
+        "expectedConfigSha256": { "$ref": "#/$defs/sha256" },
+        "expectedPdfSha256": { "$ref": "#/$defs/sha256" },
+        "duplicateStatus": { "enum": ["clear", "related-role"] },
+        "relatedRoleAcknowledged": { "type": "boolean" },
+        "aiProcessingNotice": { "enum": ["none-seen", "seen", "unknown"] },
+        "automatedProcessingNoticeUrl": {
+          "type": ["string", "null"],
+          "pattern": "^https?://"
+        },
+        "optOutPathStatus": {
+          "enum": ["not-seen", "available", "not-offered"]
+        },
+        "optOutUrl": {
+          "type": ["string", "null"],
+          "pattern": "^https?://"
+        },
+        "accommodationPathStatus": {
+          "enum": ["not-seen", "available", "not-offered"]
+        },
+        "accommodationUrl": {
+          "type": ["string", "null"],
+          "pattern": "^https?://"
+        },
+        "assessmentType": {
+          "enum": [
+            "none",
+            "structured-video",
+            "skills-simulation",
+            "coding",
+            "language",
+            "personality-work-style",
+            "other"
+          ]
+        },
+        "platformIntegrityStatus": { "enum": ["clear", "blocked"] },
+        "coverLetterRequired": { "type": "boolean" },
+        "coverLetterStatus": {
+          "enum": ["used", "not-used", "not-applicable"]
+        },
+        "convertedApplicationId": { "type": ["string", "null"] }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "contractRevision": { "const": 6 }
+            }
+          },
+          "then": {
+            "required": ["coverLetterRequired"]
+          }
+        },
+        {
+          "if": {
+            "required": ["coverLetterRequired"],
+            "properties": {
+              "coverLetterRequired": { "const": true },
+              "status": { "const": "ready" }
+            }
+          },
+          "then": {
+            "properties": {
+              "coverLetterStatus": { "const": "used" }
+            }
+          }
+        }
+      ]
+    },
+    "event": {
+      "oneOf": [
+        { "$ref": "#/$defs/stageEvent" },
+        { "$ref": "#/$defs/assessmentEvent" }
+      ]
+    },
+    "stageEvent": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type", "stage", "at", "source"],
+      "properties": {
+        "type": { "const": "stage" },
+        "stage": { "$ref": "#/$defs/stage" },
+        "at": { "type": "string", "format": "date-time" },
+        "source": { "type": "string", "minLength": 1 },
+        "outcomeCategory": {
+          "enum": [
+            "form-knockout",
+            "ai-application-review",
+            "recruiter-rejection",
+            "assessment-rejection",
+            "interview-outcome",
+            "other",
+            null
+          ]
+        },
+        "person": { "type": ["string", "null"] },
+        "notes": { "type": ["string", "null"] }
+      }
+    },
+    "assessmentEvent": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "type",
+        "assessmentStatus",
+        "assessmentType",
+        "at",
+        "source",
+        "person",
+        "notes",
+        "competencies",
+        "proofIds",
+        "prepCopySha256",
+        "semanticPassAttested"
+      ],
+      "properties": {
+        "type": { "const": "assessment" },
+        "assessmentStatus": {
+          "enum": ["invited", "started", "completed", "result-received"]
+        },
+        "assessmentType": {
+          "enum": [
+            "structured-video",
+            "skills-simulation",
+            "coding",
+            "language",
+            "personality-work-style",
+            "other"
+          ]
+        },
+        "at": { "type": "string", "format": "date-time" },
+        "source": { "type": "string", "minLength": 1 },
+        "person": { "type": ["string", "null"] },
+        "notes": { "type": ["string", "null"] },
+        "competencies": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "proofIds": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "prepCopySha256": {
+          "anyOf": [
+            { "$ref": "#/$defs/sha256" },
+            { "type": "null" }
+          ]
+        },
+        "semanticPassAttested": { "type": "boolean" }
+      }
+    },
+    "outreach": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "channel",
+        "threadKey",
+        "at",
+        "person",
+        "notes"
+      ],
+      "properties": {
+        "status": { "enum": ["draft", "sent", "replied"] },
+        "channel": { "type": "string", "minLength": 1 },
+        "threadKey": { "type": "string", "minLength": 2 },
+        "at": { "type": "string", "format": "date-time" },
+        "person": { "type": ["string", "null"] },
+        "notes": { "type": ["string", "null"] }
+      }
+    }
+  }
+}

@@ -19,6 +19,11 @@
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
 
 <style>
+  @page {
+    size: Letter;
+    margin: 0.5in;
+  }
+
   :root {
     --ink: #1a1714;
     --ink-soft: #38332d;
@@ -229,7 +234,7 @@
     line-height: 1.55;
   }
 
-  /* Capabilities */
+  /* Skills */
   .capabilities-list {
     list-style: none;
   }
@@ -413,11 +418,11 @@
 <header>
   <h1>WALLY MOSTAFA</h1>
   <div class="contact">
-    <a href="mailto:wmostafa12@gmail.com">wmostafa12@gmail.com</a>
+    <a class="print-link" href="mailto:wmostafa12@gmail.com">wmostafa12@gmail.com</a>
     <span class="contact-sep">·</span>
-    <span>347.420.3558</span>
+    <span>347-420-3558</span>
     <span class="contact-sep">·</span>
-    <span>Raleigh Metro, NC</span>
+    <span>Raleigh, NC</span>
     <span class="contact-sep">·</span>
     <a class="print-link" href="https://linkedin.com/in/wallymo" target="_blank" rel="noopener">LinkedIn</a>
     <span class="contact-sep">·</span>
@@ -425,16 +430,16 @@
   </div>
 </header>
 
-<section>
+<section data-resume-section="summary">
   <div class="section-title">Summary</div>
-  <p class="summary">
+  <p class="summary" data-resume-content="summary">
     AI implementation and product strategy lead with 15 years across pharma, enterprise UX, client strategy, and regulated AI delivery. I turn ambiguous workflows into governed AI tools, demo-ready POCs, and build-ready product systems. My strength is bridging client translation, workflow design, model behavior, and adoption so teams can trust and use the product after the demo.
   </p>
 </section>
 
-<section>
-  <div class="section-title">Capabilities</div>
-  <ul class="capabilities-list">
+<section data-resume-section="skills">
+  <div class="section-title">Skills</div>
+  <ul class="capabilities-list" data-resume-content="skills">
     <li>
       <span class="cap-label">AI Implementation & Workflow Design</span>
       <span class="cap-desc"> — Governed LLM/VLM workflows, multimodal review, RAG/knowledge bases, prompt-defined criteria, model orchestration, and human review surfaces</span>
@@ -449,12 +454,12 @@
     </li>
     <li>
       <span class="cap-label">Enterprise UX & Design Systems</span>
-      <span class="cap-desc"> — Team scaling (2→30), enterprise analytics, workflow UX, data visualization, component libraries, and accessibility (WCAG)</span>
+      <span class="cap-desc"> — Team scaling (2 to 30), enterprise analytics, workflow UX, data visualization, component libraries, and accessibility (WCAG)</span>
     </li>
   </ul>
 </section>
 
-<section>
+<section data-resume-section="experience">
   <div class="section-title">Experience</div>
 
   <div class="job">
@@ -462,7 +467,7 @@
       <span class="job-title">AI Implementation Partner</span>
       <span class="job-meta">Hedgehox · Remote · Mar 2024 – Present</span>
     </div>
-    <ul class="job-desc">
+    <ul class="job-desc" data-resume-role="hedgehox">
       <li>Secured an investor for proprietary Claims Detection software by building the functional POC, shaping the demo story, and iterating with investors</li>
       <li>Designed Claims Detector workflows that identify promotional claims, surface evidence gaps, and pre-populate audit-ready annotations before MLR submission</li>
       <li>Converted pharma agency needs into AI tools for MLR claim review, brief intake, scoping, review routing, submission capture, and FDA signal monitoring</li>
@@ -477,7 +482,7 @@
       <span class="job-title">Founder & AI Product Strategist</span>
       <span class="job-meta">One Block Away LLC · Remote · Jul 2023 – Present</span>
     </div>
-    <ul class="job-desc">
+    <ul class="job-desc" data-resume-role="one-block-away">
       <li>Build client-led AI POCs that turn unclear business questions into testable product surfaces, demo flows, and roadmap decisions</li>
       <li>Built ListingPal's AI listing-generation POC and landing page, turning basic property inputs into listing copy, social posts, ad copy, styling direction, and MLS/SEO-ready language in under 90 seconds</li>
       <li>Built WeReady's Bailey Intelligence dashboard, translating founder inputs, GitHub signals, source health, risk scoring, and evidence trails into startup-readiness workflows</li>
@@ -491,7 +496,7 @@
       <span class="job-title">Director, Experience & Innovation</span>
       <span class="job-meta">Kinesso (IPG) · New York, NY · Feb 2020 – Jun 2023</span>
     </div>
-    <ul class="job-desc">
+    <ul class="job-desc" data-resume-role="kinesso">
       <li>Scaled product design from 2 to 30 people across the US and Poland for enterprise analytics used by 7,000+ users across 22 white-label brands</li>
       <li>Led UX and design-system strategy for MIE data visualization, dashboard building, brand theming, and reusable analytics components</li>
       <li>Built the Digital Experience Audit workflow for channel scoring, benchmarks, recommendations, visualization, and presentation-ready client outputs</li>
@@ -504,7 +509,7 @@
       <span class="job-title">Freelance UX Designer</span>
       <span class="job-meta">Omnicom · New York, NY · Dec 2019 – Jan 2020</span>
     </div>
-    <ul class="job-desc">
+    <ul class="job-desc" data-resume-role="omnicom">
       <li>Supported oncology accounts as a freelance UX designer, combining UX design and account-management experience to strengthen regulated healthcare work</li>
       <li>Championed UX best practices across account, strategy, creative, and delivery conversations, translating brand goals into clearer user flows, content structure, and digital recommendations</li>
     </ul>
@@ -515,7 +520,7 @@
       <span class="job-title">Sr. UX Designer</span>
       <span class="job-meta">Heartbeat Ideas · New York, NY · Aug 2018 – Nov 2019</span>
     </div>
-    <ul class="job-desc">
+    <ul class="job-desc" data-resume-role="heartbeat">
       <li>Led UX research and experience strategy for pharma and healthcare work, translating stakeholder input, competitive audits, and user needs into digital product direction</li>
       <li>Created journey maps, site maps, user flows, wireframes, and prototypes for patient, HCP, and internal brand-team experiences across regulated healthcare programs</li>
       <li>Partnered with strategy, creative, account, and engineering teams to move UX recommendations from research findings into build-ready product and campaign experiences</li>
@@ -527,7 +532,7 @@
       <span class="job-title">Account Management & Client Strategy</span>
       <span class="job-meta">RosettaWishbone, FCB Health, Barker DZP, Cline Davis & Mann, Scout Marketing · Feb 2011 – Jul 2018</span>
     </div>
-    <ul class="job-desc">
+    <ul class="job-desc" data-resume-role="account-management">
       <li>7+ years managing Fortune 500 pharma and healthcare clients with $2M-$50M+ budgets across CNS/neurology, psychiatry, cardiovascular/metabolic, and sleep/wakefulness brands including NUVIGIL, Namenda XR, Lipitor, and Zoloft</li>
       <li>One of two account consumer leads on FCB Health's largest pharma account across all verticals: TV, radio, digital, gaming, Times Square, unbranded campaigns, brand planning, and MLR review</li>
       <li>Translated client and brand strategy into briefs, creative feedback, production requirements, timelines, and MLR-ready deliverables across account, creative, UX, and development teams</li>
@@ -535,7 +540,7 @@
   </div>
 </section>
 
-<section>
+<section data-resume-section="awards">
   <div class="section-title">Awards</div>
   <ul class="awards-list">
     <li>
@@ -561,7 +566,7 @@
   </ul>
 </section>
 
-<section>
+<section data-resume-section="education">
   <div class="section-title">Education</div>
   <p class="edu">BA Labor Studies & Employee Relations — Rutgers University, 2010</p>
 </section>

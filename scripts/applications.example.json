@@ -1,0 +1,154 @@
+{
+  "schemaVersion": 1,
+  "readiness": [
+    {
+      "packageSlug": "company-role",
+      "contractRevision": 5,
+      "company": "Company",
+      "roleTitle": "Role",
+      "jobId": "REQ-123",
+      "applicationUrl": "https://careers.example.com/jobs/REQ-123",
+      "atsVendor": "greenhouse",
+      "preparedAt": "2026-07-16T13:50:00.000Z",
+      "status": "ready",
+      "blockers": [],
+      "screeningQuestionsStatus": "reviewed",
+      "formHardGateStatus": "pass",
+      "parsedFieldsStatus": "pass",
+      "identityParityStatus": "pass",
+      "narrativeAnswersStatus": "not-applicable",
+      "authoredCopySha256": null,
+      "humanizerReview": {
+        "status": "not-applicable",
+        "mode": "surface-only",
+        "semanticPassAttested": false
+      },
+      "attachedFilename": "Wally-Mostafa-Company-Role.pdf",
+      "uploadedPdfSha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+      "identitySha256": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+      "expectedConfigSha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "expectedPdfSha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+      "duplicateStatus": "clear",
+      "relatedRoleAcknowledged": false,
+      "aiProcessingNotice": "seen",
+      "automatedProcessingNoticeUrl": "https://careers.example.com/automated-processing",
+      "optOutPathStatus": "available",
+      "optOutUrl": "https://careers.example.com/automated-processing/opt-out",
+      "accommodationPathStatus": "available",
+      "accommodationUrl": "https://careers.example.com/accommodations",
+      "assessmentType": "structured-video",
+      "platformIntegrityStatus": "clear",
+      "coverLetterStatus": "used",
+      "convertedApplicationId": "company-role-20260716T140000Z"
+    }
+  ],
+  "applications": [
+    {
+      "applicationId": "company-role-20260716T140000Z",
+      "contractRevision": 5,
+      "packageSlug": "company-role",
+      "company": "Company",
+      "roleTitle": "Role",
+      "jobId": "REQ-123",
+      "source": "company-careers",
+      "atsVendor": "greenhouse",
+      "targetLane": "ai-product-implementation",
+      "evidenceMode": "balanced",
+      "fitClass": "strong",
+      "positioningLane": "ai-product-implementation",
+      "bridgeType": "direct",
+      "applicationStrategy": "direct",
+      "coverLetterStatus": "used",
+      "requirementCoverage": {
+        "direct": 2,
+        "adjacent": 0,
+        "notSupported": 0,
+        "exact": 1,
+        "recognizedEquivalent": 1,
+        "contextual": 0
+      },
+      "readiness": {
+        "packageSlug": "company-role",
+        "contractRevision": 5,
+        "company": "Company",
+        "roleTitle": "Role",
+        "jobId": "REQ-123",
+        "applicationUrl": "https://careers.example.com/jobs/REQ-123",
+        "atsVendor": "greenhouse",
+        "preparedAt": "2026-07-16T13:50:00.000Z",
+        "status": "ready",
+        "blockers": [],
+        "screeningQuestionsStatus": "reviewed",
+        "formHardGateStatus": "pass",
+        "parsedFieldsStatus": "pass",
+        "identityParityStatus": "pass",
+        "narrativeAnswersStatus": "not-applicable",
+        "authoredCopySha256": null,
+        "humanizerReview": {
+          "status": "not-applicable",
+          "mode": "surface-only",
+          "semanticPassAttested": false
+        },
+        "attachedFilename": "Wally-Mostafa-Company-Role.pdf",
+        "uploadedPdfSha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+        "identitySha256": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+        "expectedConfigSha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "expectedPdfSha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+        "duplicateStatus": "clear",
+        "relatedRoleAcknowledged": false,
+        "aiProcessingNotice": "seen",
+        "automatedProcessingNoticeUrl": "https://careers.example.com/automated-processing",
+        "optOutPathStatus": "available",
+        "optOutUrl": "https://careers.example.com/automated-processing/opt-out",
+        "accommodationPathStatus": "available",
+        "accommodationUrl": "https://careers.example.com/accommodations",
+        "assessmentType": "structured-video",
+        "platformIntegrityStatus": "clear",
+        "coverLetterStatus": "used",
+        "convertedApplicationId": null
+      },
+      "artifactVerification": {
+        "verifiedAt": "2026-07-16T13:45:00.000Z",
+        "configSha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "routeSha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+        "pdfSha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+        "scopedProjectSha256": {}
+      },
+      "appliedAt": "2026-07-16T14:00:00.000Z",
+      "confirmation": "Visible confirmation page or email reference",
+      "currentStage": "applied",
+      "events": [
+        {
+          "type": "stage",
+          "stage": "applied",
+          "at": "2026-07-16T14:00:00.000Z",
+          "source": "application",
+          "notes": "Submission confirmation recorded."
+        },
+        {
+          "type": "assessment",
+          "assessmentStatus": "invited",
+          "assessmentType": "structured-video",
+          "at": "2026-07-16T14:10:00.000Z",
+          "source": "employer-email",
+          "person": null,
+          "notes": "Structured video assessment invitation received.",
+          "competencies": [],
+          "proofIds": [],
+          "prepCopySha256": null,
+          "semanticPassAttested": false
+        }
+      ],
+      "outreach": [
+        {
+          "status": "draft",
+          "channel": "LinkedIn",
+          "threadKey": "linkedin::recruiter name",
+          "at": "2026-07-16T14:15:00.000Z",
+          "person": "Recruiter name",
+          "notes": "Draft exists; it has not been sent."
+        }
+      ]
+    }
+  ]
+}

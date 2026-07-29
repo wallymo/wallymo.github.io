@@ -1,225 +1,254 @@
 #!/usr/bin/env node
 
-import { existsSync, readFileSync } from 'node:fs';
+import { readFileSync } from 'node:fs';
 import { execFileSync } from 'node:child_process';
-import path from 'node:path';
-
-const args = process.argv.slice(2);
+import {
+  PUBLIC_BASE,
+  WORKFLOW_VERSION,
+  getArtifactPaths,
+  hasCoverLetterArtifact,
+  isMain,
+  readJson,
+  readManifest,
+  resolveRepoPath,
+  sha256,
+  writeJson,
+} from './lib/workflow-v2.mjs';
+import { checkPackages } from './check-tailored-packages.mjs';
 
 function usage() {
-  console.error(
-    'Usage: node scripts/verify-tailored-route.mjs <route-slug> <resume-html-path> <resume-pdf-path>'
-  );
-  console.error(
-    'Example: node scripts/verify-tailored-route.mjs yotta-labs output/pdf/wally-mostafa-yotta-labs-ai-systems-research-engineer-resume.html output/pdf/Wally-Mostafa-Yotta-Labs-AI-Systems-Research-Engineer-Resume.pdf'
-  );
+  console.error('Usage: node scripts/verify-tailored-route.mjs <route-slug>');
 }
 
-function fail(message) {
-  console.error(`FAIL: ${message}`);
-  process.exitCode = 1;
+function scopedPaths(pkg, config, paths) {
+  return [
+    paths.routeIndexPath,
+    paths.resumePdfPath,
+    ...(hasCoverLetterArtifact(config)
+      ? [paths.coverLetterPdfPath, paths.coverLetterMarkdownPath]
+      : []),
+    pkg.configPath,
+    'scripts/tailored-packages.json',
+    ...(config.routeMode === 'scoped-projects'
+      ? config.selectedProjects.map((project) => `${paths.slug}/${project}`)
+      : []),
+  ];
 }
 
-function git(args) {
-  return execFileSync('git', args, { encoding: 'utf8' }).trim();
+function gitStatus(paths) {
+  return execFileSync('git', ['status', '--short', '--', ...paths], {
+    cwd: resolveRepoPath('.'),
+    encoding: 'utf8',
+  }).trim();
 }
 
-function runPublicCopyAudit() {
-  try {
-    execFileSync(process.execPath, ['scripts/audit-public-copy.mjs'], {
-      stdio: 'inherit',
-    });
-  } catch {
-    fail('Visible public-copy audit failed');
-  }
-}
-
-function normalizeRouteSlug(slug) {
-  return slug.replace(/^\/+|\/+$/g, '');
-}
-
-function stripHashAndQuery(url) {
-  return url.split('#')[0].split('?')[0];
-}
-
-function extractLocalRefs(html) {
-  const refs = [];
-  const attrPattern = /\b(?:href|src)="([^"]+)"/g;
-  let match;
-  while ((match = attrPattern.exec(html))) {
-    refs.push(match[1]);
-  }
-  return refs;
-}
-
-function assertRoleRouteNavigation(routeSlug, routeIndexPath, resumeHtmlPath) {
-  const routeHtml = readFileSync(routeIndexPath, 'utf8');
-  const routeRefs = extractLocalRefs(routeHtml);
-  const localProjectPages = new Set(
-    routeRefs
-      .map(stripHashAndQuery)
-      .filter((ref) => /^project-\d+\.html$/.test(ref))
-  );
-
-  const publicProjectRefs = routeRefs.filter((ref) =>
-    /^\.\.\/project-\d+\.html(?:[#?].*)?$/.test(ref)
-  );
-
-  if (publicProjectRefs.length) {
-    fail(
-      `Route links to public project pages instead of scoped route pages:\n${[
-        ...new Set(publicProjectRefs),
-      ].join('\n')}`
-    );
-  }
-
-  if (routeHtml.includes('class="work-item') && !localProjectPages.size) {
-    fail('Route has featured project cards but no scoped project page links');
-  }
-
-  const projectPaths = [...localProjectPages].map((page) =>
-    path.join(routeSlug, page)
-  );
-
-  for (const projectPath of projectPaths) {
-    if (!existsSync(projectPath)) {
-      fail(`Missing scoped project page: ${projectPath}`);
-      continue;
-    }
-
-    const projectHtml = readFileSync(projectPath, 'utf8');
-    const projectRefs = extractLocalRefs(projectHtml);
-    const missingLocalAssets = projectRefs.filter((ref) =>
-      /^(assets\/|favicon\.ico|apple-touch-icon\.png|site\.webmanifest)/.test(ref)
-    );
-    const publicProjectLinks = projectRefs.filter((ref) =>
-      /^\.\.\/project-\d+\.html(?:[#?].*)?$/.test(ref)
-    );
-    const outOfBatchProjectLinks = projectRefs
-      .map(stripHashAndQuery)
-      .filter((ref) => /^project-\d+\.html$/.test(ref))
-      .filter((ref) => !localProjectPages.has(ref));
-
-    if (missingLocalAssets.length) {
-      fail(
-        `${projectPath} has root-relative local assets that will break inside ${routeSlug}:\n${[
-          ...new Set(missingLocalAssets),
-        ].join('\n')}`
-      );
-    }
-
-    if (publicProjectLinks.length) {
-      fail(
-        `${projectPath} links back to public project pages:\n${[
-          ...new Set(publicProjectLinks),
-        ].join('\n')}`
-      );
-    }
-
-    if (outOfBatchProjectLinks.length) {
-      fail(
-        `${projectPath} links to project pages outside the scoped batch:\n${[
-          ...new Set(outOfBatchProjectLinks),
-        ].join('\n')}`
-      );
-    }
-
-    if (!/href="index\.html"\s+class="name"/.test(projectHtml)) {
-      fail(`${projectPath} logo link does not return to ${routeSlug}/index.html`);
-    }
-
-    if (!projectHtml.includes('href="index.html#work"')) {
-      fail(`${projectPath} back link does not return to ${routeSlug}/index.html#work`);
-    }
-
-    if (!projectHtml.includes(`href="../${resumeHtmlPath}"`)) {
-      fail(`${projectPath} resume link does not point to ../${resumeHtmlPath}`);
-    }
-
-    if (projectHtml.includes('href="resume.html"')) {
-      fail(`${projectPath} still links to the public resume`);
-    }
-  }
-
-  return projectPaths;
-}
-
-async function assertLive200(label, url) {
+async function fetchLive(url) {
   const cacheBusted = `${url}${url.includes('?') ? '&' : '?'}verify=${Date.now()}`;
   const response = await fetch(cacheBusted, {
-    method: 'GET',
     redirect: 'follow',
     headers: {
       'cache-control': 'no-cache',
       pragma: 'no-cache',
     },
   });
-
   if (response.status !== 200) {
-    fail(`${label} returned ${response.status}: ${url}`);
-  } else {
-    console.log(`OK live ${label}: ${url}`);
+    throw new Error(`${url} returned ${response.status}`);
   }
+  return response;
 }
 
-if (args.length !== 3) {
-  usage();
-  process.exit(2);
-}
-
-const [rawSlug, resumeHtmlPath, resumePdfPath] = args;
-const routeSlug = normalizeRouteSlug(rawSlug);
-const routeIndexPath = path.join(routeSlug, 'index.html');
-const roleProjectPaths = existsSync(routeIndexPath)
-  ? assertRoleRouteNavigation(routeSlug, routeIndexPath, resumeHtmlPath)
-  : [];
-const scopedPaths = [routeIndexPath, ...roleProjectPaths, resumeHtmlPath, resumePdfPath];
-
-for (const filePath of scopedPaths) {
-  if (!existsSync(filePath)) {
-    fail(`Missing file: ${filePath}`);
+export function assertChecksum(label, localBuffer, liveBuffer) {
+  const localChecksum = sha256(localBuffer);
+  const liveChecksum = sha256(liveBuffer);
+  if (localChecksum !== liveChecksum) {
+    throw new Error(
+      `${label} checksum mismatch: local ${localChecksum}, live ${liveChecksum}`
+    );
   }
+  return localChecksum;
 }
 
-const routeHtml = readFileSync(routeIndexPath, 'utf8');
-const resumeHtml = readFileSync(resumeHtmlPath, 'utf8');
-const publicBase = 'https://wallymo.github.io/';
-const liveRouteUrl = `${publicBase}${routeSlug}/`;
-const liveResumeHtmlUrl = `${publicBase}${resumeHtmlPath}`;
-const liveResumePdfUrl = `${publicBase}${resumePdfPath}`;
+export async function fetchPublishedArtifacts(
+  pkg,
+  config,
+  { publicBase = PUBLIC_BASE } = {}
+) {
+  const paths = getArtifactPaths(config);
+  const base = publicBase.endsWith('/') ? publicBase : `${publicBase}/`;
+  const routeUrl = `${base}${paths.slug}/`;
+  const resumePdfUrl = `${base}${paths.resumePdfPath}`;
+  const configUrl = `${base}${pkg.configPath}`;
+  const coverLetterPdfUrl = `${base}${paths.coverLetterPdfPath}`;
+  const coverLetterMarkdownUrl = `${base}${paths.coverLetterMarkdownPath}`;
+  const projectUrls = config.selectedProjects.map((project) =>
+    config.routeMode === 'canonical-projects'
+      ? `${base}${project}`
+      : `${base}${paths.slug}/${project}`
+  );
 
-if (!resumeHtml.includes(`href="${liveRouteUrl}"`)) {
-  fail(`Resume Portfolio link does not point to ${liveRouteUrl}`);
+  const routeResponse = await fetchLive(routeUrl);
+  const liveRoute = Buffer.from(await routeResponse.arrayBuffer());
+  const routeBody = liveRoute.toString('utf8');
+  if (!routeBody.includes(`href="../${paths.resumePdfPath}"`)) {
+    throw new Error(`Live route does not point to ${paths.resumePdfPath}`);
+  }
+  const localRoute = readFileSync(resolveRepoPath(paths.routeIndexPath));
+  const routeSha256 = assertChecksum('Role route', localRoute, liveRoute);
+
+  const configResponse = await fetchLive(configUrl);
+  const liveConfig = Buffer.from(await configResponse.arrayBuffer());
+  const localConfig = readFileSync(resolveRepoPath(pkg.configPath));
+  const configSha256 = assertChecksum(
+    'Package config',
+    localConfig,
+    liveConfig
+  );
+
+  const scopedProjectSha256 = {};
+  for (const [projectIndex, projectUrl] of projectUrls.entries()) {
+    const projectResponse = await fetchLive(projectUrl);
+    if (config.routeMode === 'scoped-projects') {
+      const project = config.selectedProjects[projectIndex];
+      const liveProject = Buffer.from(await projectResponse.arrayBuffer());
+      const localProject = readFileSync(
+        resolveRepoPath(`${paths.slug}/${project}`)
+      );
+      scopedProjectSha256[project] = assertChecksum(
+        `Scoped project ${project}`,
+        localProject,
+        liveProject
+      );
+    }
+  }
+
+  const pdfResponse = await fetchLive(resumePdfUrl);
+  const livePdf = Buffer.from(await pdfResponse.arrayBuffer());
+  const localPdf = readFileSync(resolveRepoPath(paths.resumePdfPath));
+  const pdfSha256 = assertChecksum('Resume PDF', localPdf, livePdf);
+
+  let coverLetterPdfSha256 = null;
+  let coverLetterMarkdownSha256 = null;
+  if (hasCoverLetterArtifact(config)) {
+    const coverLetterPdfResponse = await fetchLive(coverLetterPdfUrl);
+    const liveCoverLetterPdf = Buffer.from(
+      await coverLetterPdfResponse.arrayBuffer()
+    );
+    const localCoverLetterPdf = readFileSync(
+      resolveRepoPath(paths.coverLetterPdfPath)
+    );
+    coverLetterPdfSha256 = assertChecksum(
+      'Cover-letter PDF',
+      localCoverLetterPdf,
+      liveCoverLetterPdf
+    );
+
+    const coverLetterMarkdownResponse = await fetchLive(
+      coverLetterMarkdownUrl
+    );
+    const liveCoverLetterMarkdown = Buffer.from(
+      await coverLetterMarkdownResponse.arrayBuffer()
+    );
+    const localCoverLetterMarkdown = readFileSync(
+      resolveRepoPath(paths.coverLetterMarkdownPath)
+    );
+    coverLetterMarkdownSha256 = assertChecksum(
+      'Cover-letter Markdown',
+      localCoverLetterMarkdown,
+      liveCoverLetterMarkdown
+    );
+  }
+
+  return {
+    routeUrl,
+    resumePdfUrl,
+    configUrl,
+    projectUrls,
+    configSha256,
+    pdfSha256,
+    ...(hasCoverLetterArtifact(config)
+      ? {
+          coverLetterPdfUrl,
+          coverLetterMarkdownUrl,
+          coverLetterPdfSha256,
+          coverLetterMarkdownSha256,
+        }
+      : {}),
+    routeSha256,
+    scopedProjectSha256,
+  };
 }
 
-if (!routeHtml.includes(`href="../${resumeHtmlPath}"`)) {
-  fail(`Route Resume link does not point to ../${resumeHtmlPath}`);
+export async function verifyTailoredRoute(slug, { publicBase = PUBLIC_BASE } = {}) {
+  const manifest = readManifest();
+  const normalizedSlug = slug.replace(/^\/+|\/+$/g, '');
+  const index = manifest.packages.findIndex((pkg) => pkg.slug === normalizedSlug);
+  if (index === -1) {
+    throw new Error(`No package found for ${normalizedSlug}`);
+  }
+  const pkg = manifest.packages[index];
+  if ((pkg.workflowVersion || 1) !== WORKFLOW_VERSION) {
+    throw new Error(
+      `${normalizedSlug} is a legacy package. Convert it to workflowVersion 2 before reuse.`
+    );
+  }
+
+  const localCheck = checkPackages({
+    slug: normalizedSlug,
+    publicBase,
+  });
+  if (localCheck.failures.length) {
+    throw new Error(`Local v2 checks failed:\n${localCheck.failures.join('\n')}`);
+  }
+  const config = readJson(pkg.configPath);
+  const paths = getArtifactPaths(config);
+  const dirty = gitStatus(scopedPaths(pkg, config, paths));
+  if (dirty) {
+    throw new Error(`Scoped files must be committed before live verification:\n${dirty}`);
+  }
+
+  const liveProof = await fetchPublishedArtifacts(pkg, config, {
+    publicBase,
+  });
+
+  const verifiedAt = new Date().toISOString();
+  manifest.packages[index] = {
+    ...pkg,
+    publishStatus: 'live-verified',
+    verification: {
+      verifiedAt,
+      ...liveProof,
+      configInputSha256: config.qa.configInputSha256,
+      qaBuiltAt: config.qa.builtAt,
+    },
+  };
+  writeJson('scripts/tailored-packages.json', manifest);
+
+  return manifest.packages[index].verification;
 }
 
-if (!routeHtml.includes(`href="../${resumePdfPath}"`)) {
-  fail(`Route Download Resume link does not point to ../${resumePdfPath}`);
+async function main() {
+  const args = process.argv.slice(2);
+  if (args.length !== 1 || args.includes('--help')) {
+    usage();
+    process.exit(args.includes('--help') ? 0 : 2);
+  }
+  const result = await verifyTailoredRoute(args[0]);
+  console.log(`OK live route: ${result.routeUrl}`);
+  console.log(`OK live resume PDF: ${result.resumePdfUrl}`);
+  if (result.coverLetterPdfUrl) {
+    console.log(`OK live cover-letter PDF: ${result.coverLetterPdfUrl}`);
+    console.log(
+      `OK live cover-letter Markdown: ${result.coverLetterMarkdownUrl}`
+    );
+  }
+  console.log(`OK live package config: ${result.configUrl}`);
+  console.log(`OK PDF checksum: ${result.pdfSha256}`);
+  console.log('Updated publishStatus to live-verified.');
 }
 
-runPublicCopyAudit();
-
-const status = git(['status', '--short', '--', ...scopedPaths]);
-if (status) {
-  fail(`Scoped files are not committed cleanly:\n${status}`);
-} else {
-  console.log('OK scoped files are committed cleanly');
-}
-
-if (process.exitCode) {
-  process.exit(process.exitCode);
-}
-
-await assertLive200('route', liveRouteUrl);
-for (const projectPath of roleProjectPaths) {
-  await assertLive200(`project ${path.basename(projectPath)}`, `${publicBase}${projectPath}`);
-}
-await assertLive200('resume HTML', liveResumeHtmlUrl);
-await assertLive200('resume PDF', liveResumePdfUrl);
-
-if (!process.exitCode) {
-  console.log('OK tailored route is publish-ready');
+if (isMain(import.meta.url)) {
+  main().catch((error) => {
+    console.error(`FAIL: ${error.message}`);
+    process.exit(1);
+  });
 }
