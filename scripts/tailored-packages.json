@@ -1509,9 +1509,26 @@
         "project-01.html"
       ],
       "resumePdfPath": "output/pdf/Wally-Mostafa-Marketing-Account-Manager-Workfront-Resume.pdf",
-      "publishStatus": "local-only",
+      "publishStatus": "live-verified",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-07-29T16:04:56.140Z"
+      "builtAt": "2026-07-29T16:04:56.140Z",
+      "verification": {
+        "verifiedAt": "2026-07-29T16:10:48.842Z",
+        "routeUrl": "https://wallymo.github.io/marketing-account-manager-workfront/",
+        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-Marketing-Account-Manager-Workfront-Resume.pdf",
+        "configUrl": "https://wallymo.github.io/scripts/packages/marketing-account-manager-workfront.json",
+        "projectUrls": [
+          "https://wallymo.github.io/project-06.html",
+          "https://wallymo.github.io/project-03.html",
+          "https://wallymo.github.io/project-01.html"
+        ],
+        "configSha256": "378465c8e621ad3cd48b10eab48bbd37d812b1dac2f55388a6650c84b7602823",
+        "pdfSha256": "9eb18e0836b5943ef1289dfe4f7363382cc57e0b5c491b991b998411ff579970",
+        "routeSha256": "24fe0019cc4da26d51cb99b1df100ae2b887ecb5559fb00bfef004311145a2b8",
+        "scopedProjectSha256": {},
+        "configInputSha256": "88d905027a34bc8553078f48b0a1c3168d8cb7af80540d047cbdc4e8c4ab9bbc",
+        "qaBuiltAt": "2026-07-29T16:04:56.140Z"
+      }
     },
     {
       "slug": "marketing-analyst",
