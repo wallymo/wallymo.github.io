@@ -1,0 +1,895 @@
+{
+  "workflowVersion": 2,
+  "contractRevision": 5,
+  "slug": "niq-associate-client-manager",
+  "roleTitle": "NIQ Associate Client Manager",
+  "artifactStem": "NIQ-Associate-Client-Manager",
+  "fitClass": "adjacent",
+  "routeMode": "canonical-projects",
+  "selectedProjects": [
+    "project-06.html",
+    "project-03.html",
+    "project-04.html"
+  ],
+  "job": {
+    "company": "NielsenIQ",
+    "roleTitle": "Associate Client Manager",
+    "jobUrl": "https://jobs.smartrecruiters.com/NielsenIQ/744000114645098-associate-client-manager-bevai",
+    "requisitionId": "R26_0004946",
+    "sourceChannel": "chat-pasted job description matched to the official SmartRecruiters posting",
+    "dateCaptured": "2026-07-29",
+    "location": "Remote, United States",
+    "atsVendor": "SmartRecruiters",
+    "rawJd": "At NIQ, we deliver the most complete and clear understanding of consumer buying behavior that reveals new pathways to growth. We are looking to add an Associate Client Manager to join our Customer Success team. This is a remote position for candidates currently located in the United States.\n\nJob Description\n\nPartner with customers to set objectives that drive business impact and maximum client value, building and maintaining strong relationships and deep expertise with adaptability, urgency, and positivity. Develop a consultative approach to client business issues, understanding the industry and what issues a client is facing. Understand and leverage NielsenIQ solutions and apply industry knowledge to conduct advanced issue-based analyses with clear proactive insights and action-oriented recommendations. Lead client presentations with proactive insights and action-oriented recommendations. Drive strategic thought leadership with customers leveraging NielsenIQ tools and assets. Identify opportunities for increased partnership and elevate those opportunities to organizational partners. Facilitate clear day-to-day communications with customers, proving the value of NielsenIQ solutions in support of growth, adoption, and value creation. Ensure client stakeholders buy into outcomes and value NielsenIQ is delivering to them. Understand client structure and organization. Ensure on-time delivery of solutions to achieve forecasted revenue on-time. Work collaboratively with internal partners to ensure work is connected to customer business objectives, delivered on-time, and focused on outcome.\n\nQualifications\n\nThis is a remote position for candidates currently located in the United States. You are flexible and easily adapt in a dynamic work environment. You have a can-do attitude and are able to tell a story using data. You are the first to recognize an opportunity, then turn it into a solution. Curiosity, communication, and critical thinking drive your work. You are comfortable working with complex customer relationships and issue resolution. You are creative in leveraging existing data sources to answer tough questions. You have strong time management skills and are comfortable managing multiple priorities.\n\n3+ years of industry related experience in CPG, Retail, market research, analytics or consulting. Advanced capability in data analysis and synthesis, leveraging large datasets to uncover trends, patterns, and business opportunities. Skilled at managing complex client relationships and solving problems effectively. Strong organizational and time management skills with the ability to manage multiple priorities in a fast-paced, matrixed environment. College or University Undergraduate or Master's degree. Familiarity with NielsenIQ or similar platforms, syndicated data, and retail measurement tools is highly desirable. Category Management experience preferred.\n\nThe anticipated base compensation range is $69,000-$83,000. The role may also be eligible for a sales-based incentive or performance-based bonus. NIQ may use AI tools during recruitment for screening, assessments, scheduling, job matching, communication support, and administrative tasks. Final hiring decisions are made by humans."
+  },
+  "classification": {
+    "targetLane": "customer-success-consultative",
+    "evidenceMode": "resume-primary",
+    "primarySource": "The resume drives this call. It documents 7+ years managing Fortune 500 client relationships and $2M-$50M+ portfolios, complex cross-functional delivery, enterprise marketing analytics used by 7,000+ people across 22 brands, and presentation-ready recommendations.",
+    "supportingSource": "The portfolio adds proof of research synthesis, data visualization, issue framing, and turning scores, benchmarks, and stakeholder questions into clear recommendations and usable product decisions.",
+    "hardGateStatus": "pass",
+    "hardGates": [
+      {
+        "gate": "Current physical location in the United States",
+        "status": "pass",
+        "requirementId": "us-location",
+        "evidence": "The public resume lists Raleigh, North Carolina, which satisfies the stated United States location requirement."
+      },
+      {
+        "gate": "Three or more years in CPG, retail, market research, analytics, or consulting",
+        "status": "pass",
+        "requirementId": "related-industry-experience",
+        "evidence": "The resume documents more than three years across enterprise marketing analytics, research, client consulting, and account leadership. It does not claim direct CPG or retail-measurement experience."
+      },
+      {
+        "gate": "College or university undergraduate or master's degree",
+        "status": "pass",
+        "requirementId": "education",
+        "evidence": "The resume documents a Bachelor of Arts from Rutgers University."
+      }
+    ]
+  },
+  "requirements": [
+    {
+      "id": "us-location",
+      "text": "Be currently located in the United States for this remote position.",
+      "priority": "hard-gate",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The public resume lists Raleigh, North Carolina."
+      ],
+      "proofIds": [],
+      "destinations": [
+        "application-answer"
+      ],
+      "resumeTerms": [
+        "Raleigh, NC"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "related-industry-experience",
+      "text": "Bring three or more years of related experience in CPG, retail, market research, analytics, or consulting.",
+      "priority": "hard-gate",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Enterprise marketing analytics work supported 7,000+ users across 22 white-label brands.",
+        "Research and consulting work turns stakeholder input and unclear business questions into recommendations, working products, and roadmap decisions.",
+        "The experience is not direct CPG or retail measurement."
+      ],
+      "proofIds": [
+        "kinesso-01",
+        "heartbeat-01",
+        "one-block-away-01"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "enterprise marketing analytics",
+        "research",
+        "client-led"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "education",
+      "text": "Hold a college or university undergraduate or master's degree.",
+      "priority": "hard-gate",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "BA in Labor Studies and Employee Relations from Rutgers University."
+      ],
+      "proofIds": [],
+      "destinations": [
+        "application-answer"
+      ],
+      "resumeTerms": [
+        "Rutgers University"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "complex-client-relationships",
+      "text": "Build strong customer relationships, understand client organizations, and resolve complex issues.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Seven-plus years managing Fortune 500 pharma and healthcare clients with $2M-$50M+ budgets.",
+        "One of two account consumer leads on FCB Health's largest pharma account across integrated campaigns, brand planning, and regulated review."
+      ],
+      "proofIds": [
+        "account-management-01",
+        "account-management-02",
+        "account-management-03"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience"
+      ],
+      "resumeTerms": [
+        "Fortune 500",
+        "$2M-$50M+",
+        "account"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "consultative-business-issues",
+      "text": "Use a consultative approach to understand client business issues and turn opportunities into solutions.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Client-led AI POCs turn unclear business questions into testable products, demo flows, and roadmap decisions.",
+        "Account and research work translated client goals, stakeholder input, competitive audits, and user needs into briefs, recommendations, and delivery plans."
+      ],
+      "proofIds": [
+        "one-block-away-01",
+        "heartbeat-01",
+        "account-management-03"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "business questions",
+        "client-led",
+        "recommendations"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "large-dataset-analysis",
+      "text": "Analyze and synthesize large datasets to uncover trends, patterns, and business opportunities.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Led design and delivery around enterprise marketing analytics used by 7,000+ people across 22 brands.",
+        "Built a Digital Experience Audit workflow for channel scoring, benchmarks, recommendations, visualization, and presentation-ready client outputs.",
+        "The resume shows analytics-product and insight-delivery depth more clearly than hands-on statistical analysis of large consumer datasets."
+      ],
+      "proofIds": [
+        "kinesso-01",
+        "kinesso-02",
+        "kinesso-03"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio",
+        "cover-letter"
+      ],
+      "resumeTerms": [
+        "enterprise marketing analytics",
+        "data visualization",
+        "channel scoring"
+      ],
+      "matchMode": "contextual"
+    },
+    {
+      "id": "insight-presentations",
+      "text": "Lead client presentations that turn analysis into proactive insights and action-oriented recommendations.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The Digital Experience Audit produced channel scores, benchmarks, recommendations, visualizations, and presentation-ready client outputs.",
+        "Account leadership covered client briefs, brand planning, creative feedback, and coordinated delivery across complex stakeholders."
+      ],
+      "proofIds": [
+        "kinesso-03",
+        "account-management-02",
+        "account-management-03"
+      ],
+      "destinations": [
+        "summary",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "presentation-ready",
+        "recommendations",
+        "client"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "client-value-adoption",
+      "text": "Show customers the value of NIQ solutions and build stakeholder support for growth, adoption, and business outcomes.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Enterprise analytics and white-label products reached 7,000+ users across 22 brands.",
+        "Current client-led work uses discovery, demos, iteration, and roadmap decisions to make new product workflows usable.",
+        "Formal ownership of client adoption metrics or recurring customer-success programs is not documented."
+      ],
+      "proofIds": [
+        "kinesso-01",
+        "one-block-away-01",
+        "one-block-away-04"
+      ],
+      "destinations": [
+        "skills",
+        "experience",
+        "portfolio",
+        "cover-letter"
+      ],
+      "resumeTerms": [
+        "7,000+ users",
+        "client iteration",
+        "roadmap decisions"
+      ],
+      "matchMode": "contextual"
+    },
+    {
+      "id": "partnership-opportunities",
+      "text": "Recognize opportunities for increased partnership and elevate them to the right internal partners.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Account leadership and client-led consulting required recognizing client needs and turning them into briefs, product concepts, and roadmap decisions.",
+        "The resume does not document upsell, cross-sell, expansion revenue, or formal opportunity-pipeline ownership."
+      ],
+      "proofIds": [
+        "account-management-03",
+        "one-block-away-01"
+      ],
+      "destinations": [
+        "experience",
+        "cover-letter"
+      ],
+      "resumeTerms": [
+        "client strategy",
+        "roadmap decisions"
+      ],
+      "matchMode": "contextual"
+    },
+    {
+      "id": "cross-functional-on-time-delivery",
+      "text": "Coordinate internal partners so work stays tied to customer objectives and is delivered on time.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Account work translated client strategy into briefs, production requirements, timelines, and regulated deliverables across account, strategy, creative, UX, and development teams.",
+        "Program delivery evidence includes scoping, requirements, review routing, team coordination, risk visibility, and build-ready handoff."
+      ],
+      "proofIds": [
+        "account-management-03",
+        "heartbeat-03",
+        "one-block-away-04"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience"
+      ],
+      "resumeTerms": [
+        "timelines",
+        "team coordination",
+        "client"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "forecasted-revenue-delivery",
+      "text": "Deliver solutions on time in support of forecasted revenue.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Managed $2M-$50M+ client budgets and coordinated timelines and deliverables across large account portfolios.",
+        "Direct ownership of forecasted revenue, revenue recognition, or sales forecasting is not documented."
+      ],
+      "proofIds": [
+        "account-management-01",
+        "account-management-03"
+      ],
+      "destinations": [
+        "experience",
+        "cover-letter"
+      ],
+      "resumeTerms": [
+        "$2M-$50M+",
+        "timelines"
+      ],
+      "matchMode": "contextual"
+    },
+    {
+      "id": "matrixed-priorities",
+      "text": "Manage multiple priorities with strong organization and time management in a fast-moving matrixed environment.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Managed complex portfolios across client, account, strategy, creative, production, UX, development, and regulated-review teams.",
+        "Scaled a distributed product-design organization from 2 to 30 people across the United States and Poland."
+      ],
+      "proofIds": [
+        "account-management-01",
+        "account-management-03",
+        "kinesso-01"
+      ],
+      "destinations": [
+        "skills",
+        "experience"
+      ],
+      "resumeTerms": [
+        "timelines",
+        "team coordination",
+        "US and Poland"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "niq-syndicated-retail-tools",
+      "text": "Bring familiarity with NielsenIQ or similar platforms, syndicated data, and retail measurement tools.",
+      "priority": "preferred",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "proofIds": [],
+      "destinations": [
+        "application-answer",
+        "cover-letter"
+      ],
+      "resumeTerms": [
+        "NielsenIQ",
+        "syndicated data",
+        "retail measurement tools"
+      ],
+      "matchMode": "not-supported"
+    },
+    {
+      "id": "category-management",
+      "text": "Bring category management experience.",
+      "priority": "preferred",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "proofIds": [],
+      "destinations": [
+        "application-answer",
+        "cover-letter"
+      ],
+      "resumeTerms": [
+        "category management"
+      ],
+      "matchMode": "not-supported"
+    }
+  ],
+  "fitGate": {
+    "supportedOverlap": [
+      "Seven-plus years managing Fortune 500 client relationships and $2M-$50M+ portfolios.",
+      "Enterprise marketing analytics work used by 7,000+ people across 22 white-label brands.",
+      "A Digital Experience Audit workflow that turned channel scoring and benchmarks into presentation-ready client recommendations.",
+      "Research and consulting work that turns stakeholder input and unclear business questions into clear plans, product decisions, and next steps.",
+      "Direct coordination across client, account, strategy, creative, product, UX, development, finance, and operations teams."
+    ],
+    "unsupportedRequirements": [
+      "NielsenIQ or similar syndicated-data and retail-measurement platforms are not documented.",
+      "Category management and direct CPG or retail-measurement experience are not documented.",
+      "Forecasted revenue, revenue recognition, account expansion, and upsell ownership are not documented."
+    ],
+    "actualMismatches": [
+      "Most of the experience is in healthcare accounts and enterprise marketing analytics, not CPG consumer intelligence or retail measurement.",
+      "The resume shows work around analytics products and client-facing insights. It does not show hands-on statistical analysis of large consumer datasets."
+    ],
+    "missingEvidence": [
+      "NielsenIQ, Discover, POS, panel, RMS, syndicated-data, or comparable retail-measurement platform use.",
+      "Category-management work or direct CPG and retail client examples.",
+      "Quantified client adoption, value creation, partnership expansion, or revenue-forecast outcomes."
+    ],
+    "coverLetterBridge": {
+      "status": "recommended",
+      "rationale": "We can make the case with a cover letter by connecting 7+ years of client leadership, enterprise marketing analytics, research synthesis, and presentation-ready recommendations to NIQ's need for a consultative client partner. The cover letter should address the move into CPG consumer intelligence and the lack of direct NIQ, syndicated-data, and category-management experience."
+    },
+    "recommendation": "Proceed as adjacent. Lead with complex client relationships, data storytelling, consultative problem solving, presentation-ready recommendations, and on-time cross-functional delivery. Keep NIQ platforms, syndicated retail data, category management, hands-on consumer-dataset analysis, partnership expansion, and forecasted-revenue ownership as visible gaps."
+  },
+  "resume": {
+    "foundationId": "wally-mostafa-resume-2026-07-03",
+    "summary": "Client and analytics partner with 7+ years managing Fortune 500 relationships and $2M-$50M+ portfolios. I am looking to make a return to account management, with account leadership strengthened by enterprise analytics and research. My background covers complex client delivery and presentation-ready recommendations, with product, strategy, creative, and technical teams aligned around business goals and deadlines.",
+    "skillIds": [
+      "client-account-leadership",
+      "consultative-sales-solution-delivery",
+      "enterprise-ux-design-systems",
+      "program-project-delivery"
+    ],
+    "skills": [
+      {
+        "label": "Client & Account Leadership",
+        "description": "Fortune 500 pharma and healthcare accounts, $2M-$50M+ budgets, client briefs, brand planning, and cross-functional delivery"
+      },
+      {
+        "label": "Consultative Sales & Solution Delivery",
+        "description": "Discovery-led solution design, POCs, demo narratives, client translation, and product recommendations tied to business needs"
+      },
+      {
+        "label": "Enterprise UX & Design Systems",
+        "description": "Team scaling (2 to 30), enterprise analytics, workflow UX, data visualization, component libraries, and accessibility (WCAG)"
+      },
+      {
+        "label": "Program & Project Delivery",
+        "description": "Scoping, requirements, timelines, review routing, team coordination, risk visibility, and build-ready handoff across product, design, and client teams"
+      }
+    ],
+    "roles": {
+      "hedgehox": [
+        "Secured an investor for proprietary Claims Detection software by building the functional POC, shaping the demo story, and iterating with investors",
+        "Designed Claims Detector workflows that identify promotional claims, surface evidence gaps, and pre-populate audit-ready annotations before MLR submission",
+        "Converted pharma agency needs into AI tools for MLR claim review, brief intake, scoping, review routing, submission capture, and FDA signal monitoring",
+        "Designed the full Xenagos Bio startup biopharma website from scratch, including investor-facing structure, scientific positioning, visual direction, and hidden design-system handoff",
+        "Built Scope Generator for pharma agency finance and operations teams to manage regional rate cards, brands, sub-brands, scope changes, deliverables, timelines, resourcing, and cost breakdowns",
+        "Developed FDA Warning Tool concepts that connect warning-letter patterns to content-risk guidance for pharma teams"
+      ],
+      "one-block-away": [
+        "Build client-led AI POCs that turn unclear business questions into testable product surfaces, demo flows, and roadmap decisions",
+        "Built ListingPal's AI listing-generation POC and landing page, turning basic property inputs into listing copy, social posts, ad copy, styling direction, and MLS/SEO-ready language in under 90 seconds",
+        "Built WeReady's Bailey Intelligence dashboard, translating founder inputs, GitHub signals, source health, risk scoring, and evidence trails into startup-readiness workflows",
+        "Own product strategy, UX, AI workflow design, front-end build, backend logic, demo readiness, and client iteration from first ask through working prototype",
+        "Currently building the website and sponsor strategy for a Tunisia youth soccer program, positioning the project for player advancement, community support, and donor outreach"
+      ],
+      "kinesso": [
+        "Scaled product design from 2 to 30 people across the US and Poland for enterprise marketing analytics used by 7,000+ users across 22 white-label brands",
+        "Led UX and design-system strategy for marketing intelligence dashboards, data visualization, brand theming, and reusable analytics components",
+        "Built the Digital Experience Audit workflow, turning channel scoring and benchmarks into clear recommendations, visualizations, and presentation-ready client stories",
+        "Design-system and analytics work earned 5 Indigo Gold, 4 Indigo Silver, and Red Dot recognition"
+      ],
+      "omnicom": [
+        "Supported oncology accounts as a freelance UX designer, combining UX design and account-management experience to strengthen regulated healthcare work",
+        "Championed UX best practices across account, strategy, creative, and delivery conversations, translating brand goals into clearer user flows, content structure, and digital recommendations"
+      ],
+      "heartbeat": [
+        "Led UX research and experience strategy for pharma and healthcare work, synthesizing stakeholder input, competitive audits, and user needs into digital product direction",
+        "Created journey maps, site maps, user flows, wireframes, and prototypes for patient, HCP, and internal brand-team experiences across regulated healthcare programs",
+        "Partnered with strategy, creative, account, and engineering teams to move UX recommendations from research findings into build-ready product and campaign experiences"
+      ],
+      "account-management": [
+        "7+ years managing Fortune 500 pharma and healthcare clients with $2M-$50M+ budgets across CNS/neurology, psychiatry, cardiovascular/metabolic, and sleep/wakefulness brands including NUVIGIL, Namenda XR, Lipitor, and Zoloft",
+        "One of two account consumer leads on FCB Health's largest pharma account, coordinating integrated campaigns across TV, radio, digital, gaming, Times Square, unbranded work, brand planning, and MLR review",
+        "Translated client and brand strategy into briefs, creative feedback, production requirements, timelines, and MLR-ready deliverables across account, strategy, creative, UX, and development teams"
+      ]
+    },
+    "sourceBulletIds": {
+      "hedgehox": [
+        "hedgehox-01",
+        "hedgehox-02",
+        "hedgehox-03",
+        "hedgehox-04",
+        "hedgehox-05",
+        "hedgehox-06"
+      ],
+      "one-block-away": [
+        "one-block-away-01",
+        "one-block-away-02",
+        "one-block-away-03",
+        "one-block-away-04",
+        "one-block-away-05"
+      ],
+      "kinesso": [
+        "kinesso-01",
+        "kinesso-02",
+        "kinesso-03",
+        "kinesso-04"
+      ],
+      "omnicom": [
+        "omnicom-01",
+        "omnicom-02"
+      ],
+      "heartbeat": [
+        "heartbeat-01",
+        "heartbeat-02",
+        "heartbeat-03"
+      ],
+      "account-management": [
+        "account-management-01",
+        "account-management-02",
+        "account-management-03"
+      ]
+    }
+  },
+  "positioning": {
+    "laneId": "customer-success-consultative",
+    "targetIdentity": "client and analytics partner",
+    "employerNeed": "Build trusted client relationships and turn consumer data into clear recommendations that support business growth.",
+    "bridgeType": "domain-transfer",
+    "applicationStrategy": "transferable",
+    "bridgeThesis": "account leadership strengthened by enterprise analytics and research",
+    "proofIds": [
+      "account-management-01",
+      "kinesso-03",
+      "heartbeat-01"
+    ],
+    "remainingGap": "Direct CPG and retail-measurement experience, NielsenIQ or similar syndicated-data tools, category management, hands-on consumer-dataset analysis, partnership expansion, and forecasted-revenue ownership are not documented."
+  },
+  "hero": {
+    "eyebrow": "NIQ Associate Client Manager",
+    "tags": [
+      "Client relationships",
+      "Data to recommendations",
+      "Cross-functional delivery"
+    ],
+    "intro": "I am looking to make a return to account management, with account leadership strengthened by enterprise analytics and research. I bring 7+ years managing Fortune 500 clients and $2M-$50M+ portfolios, plus analytics products used by 7,000+ people across 22 brands. For NIQ, I can ask better questions and turn data into clear recommendations while keeping client and internal teams aligned around business outcomes."
+  },
+  "contact": {
+    "prompt": "If NIQ needs an Associate Client Manager who can make complex analysis useful and keep delivery tied to client goals, email is the fastest way to reach me.",
+    "signoff": "Client relationships | data to recommendations | delivery"
+  },
+  "copyReview": {
+    "humanizerVersion": "2.2.0",
+    "mode": "surface-only",
+    "status": "passed",
+    "reviewedAt": "2026-07-29T16:18:51.377Z",
+    "copySha256": "7c18c07a5512c783d290ef54e2e5ca727436e500d01332ca745fa1af0e430e56",
+    "preserved": [
+      "content",
+      "structure",
+      "claims",
+      "ending"
+    ],
+    "rewriteAuthorized": false,
+    "reviewMethod": "humanizer-skill",
+    "semanticPassAttested": true,
+    "staticChecksPassed": true,
+    "finalAntiAiPass": true,
+    "remainingTells": []
+  },
+  "constraints": {
+    "doNotClaim": [
+      "NielsenIQ platform experience",
+      "Discover platform proficiency",
+      "Syndicated-data experience",
+      "Retail measurement experience",
+      "POS, panel, or RMS data experience",
+      "Category management experience",
+      "Direct CPG client ownership",
+      "Hands-on statistical analysis of large consumer datasets",
+      "Forecasted revenue ownership",
+      "Revenue recognition ownership",
+      "Upsell, cross-sell, or partnership-expansion ownership",
+      "Formal customer-adoption metrics"
+    ],
+    "blockedTerms": [
+      "NielsenIQ expert",
+      "Discover expert",
+      "syndicated data expert",
+      "retail measurement leader",
+      "POS and panel data expert",
+      "category management leader",
+      "CPG account leader",
+      "owned revenue forecasts",
+      "drove upsell revenue",
+      "advanced consumer data analyst"
+    ]
+  },
+  "privacy": {
+    "publicSafe": true,
+    "notes": "Contains only public job-posting text and sanitized resume and portfolio evidence. It excludes recruiter details, application answers, compensation boundaries, and private eligibility information."
+  },
+  "qa": {
+    "status": "qa-passed",
+    "builtAt": "2026-07-29T16:19:58.855Z",
+    "configInputSha256": "db296d4c0215f62fe1a0c9750424502fba9c92e207c5946397f1af2a4b55e424",
+    "sourceResumeSha256": "375cc6566f5bbad5b95be9da551dfe87824378fb252222409d29ef32d334ca25",
+    "resumeFoundation": {
+      "id": "wally-mostafa-resume-2026-07-03",
+      "sourcePdfSha256": "f9b05b6c3c134262b1af6c5734363daf4385cf335407a139779a37d138adf1aa"
+    },
+    "artifactHashes": {
+      "routeSha256": "c500bab9062f9bb756e827198d34eafb9c2dcab320485c33bea66ba3d12d6014",
+      "resumePdfSha256": "6b8d1f1b4955371d76cc647f733a4a637021d4da79da8b7350c187ce526e7e76",
+      "coverLetterPdfSha256": null,
+      "coverLetterMarkdownSha256": null,
+      "scopedProjectSha256": {}
+    },
+    "renderer": {
+      "browser": {
+        "name": "chrome-headless-shell",
+        "version": "Google Chrome for Testing 149.0.7827.55"
+      },
+      "htmlPath": "tmp/tailored-resumes/niq-associate-client-manager.html",
+      "pdfPath": "output/pdf/Wally-Mostafa-NIQ-Associate-Client-Manager-Resume.pdf"
+    },
+    "coverLetterRenderer": null,
+    "coverLetter": null,
+    "ats": {
+      "ok": true,
+      "pdfPath": "output/pdf/Wally-Mostafa-NIQ-Associate-Client-Manager-Resume.pdf",
+      "pageCount": 2,
+      "fileSize": 134650,
+      "annotations": [
+        {
+          "page": 1,
+          "uri": "mailto:wmostafa12@gmail.com"
+        },
+        {
+          "page": 1,
+          "uri": "https://linkedin.com/in/wallymo"
+        },
+        {
+          "page": 1,
+          "uri": "https://wallymo.github.io/niq-associate-client-manager/"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/6748"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/4629"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.red-dot.org/project/dxa-digital-experience-audit-55219"
+        }
+      ],
+      "coverage": [
+        {
+          "id": "us-location",
+          "requirement": "Be currently located in the United States for this remote position.",
+          "priority": "hard-gate",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "Raleigh, NC"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "related-industry-experience",
+          "requirement": "Bring three or more years of related experience in CPG, retail, market research, analytics, or consulting.",
+          "priority": "hard-gate",
+          "evidenceStatus": "direct",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "enterprise marketing analytics",
+            "research",
+            "client-led"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "education",
+          "requirement": "Hold a college or university undergraduate or master's degree.",
+          "priority": "hard-gate",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "Rutgers University"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "complex-client-relationships",
+          "requirement": "Build strong customer relationships, understand client organizations, and resolve complex issues.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "Fortune 500",
+            "$2M-$50M+",
+            "account"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "consultative-business-issues",
+          "requirement": "Use a consultative approach to understand client business issues and turn opportunities into solutions.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "business questions",
+            "client-led",
+            "recommendations"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "large-dataset-analysis",
+          "requirement": "Analyze and synthesize large datasets to uncover trends, patterns, and business opportunities.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "contextual",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "enterprise marketing analytics",
+            "data visualization",
+            "channel scoring"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "insight-presentations",
+          "requirement": "Lead client presentations that turn analysis into proactive insights and action-oriented recommendations.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "presentation-ready",
+            "recommendations",
+            "client"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "client-value-adoption",
+          "requirement": "Show customers the value of NIQ solutions and build stakeholder support for growth, adoption, and business outcomes.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "contextual",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "7,000+ users",
+            "client iteration",
+            "roadmap decisions"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "partnership-opportunities",
+          "requirement": "Recognize opportunities for increased partnership and elevate them to the right internal partners.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "contextual",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "client strategy",
+            "roadmap decisions"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "cross-functional-on-time-delivery",
+          "requirement": "Coordinate internal partners so work stays tied to customer objectives and is delivered on time.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "timelines",
+            "team coordination",
+            "client"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "forecasted-revenue-delivery",
+          "requirement": "Deliver solutions on time in support of forecasted revenue.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "contextual",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "$2M-$50M+",
+            "timelines"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "matrixed-priorities",
+          "requirement": "Manage multiple priorities with strong organization and time management in a fast-moving matrixed environment.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "timelines",
+            "team coordination",
+            "US and Poland"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "niq-syndicated-retail-tools",
+          "requirement": "Bring familiarity with NielsenIQ or similar platforms, syndicated data, and retail measurement tools.",
+          "priority": "preferred",
+          "evidenceStatus": "none",
+          "matchMode": "not-supported",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "NielsenIQ",
+            "syndicated data",
+            "retail measurement tools"
+          ]
+        },
+        {
+          "id": "category-management",
+          "requirement": "Bring category management experience.",
+          "priority": "preferred",
+          "evidenceStatus": "none",
+          "matchMode": "not-supported",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "category management"
+          ]
+        }
+      ],
+      "failures": [],
+      "warnings": []
+    },
+    "humanizer": {
+      "status": "passed",
+      "version": "2.2.0",
+      "mode": "surface-only",
+      "reviewedAt": "2026-07-29T16:18:51.377Z",
+      "copySha256": "7c18c07a5512c783d290ef54e2e5ca727436e500d01332ca745fa1af0e430e56",
+      "reviewMethod": "humanizer-skill",
+      "semanticPassAttested": true,
+      "staticChecksPassed": true
+    },
+    "route": {
+      "viewports": [
+        {
+          "name": "desktop",
+          "screenshot": "tmp/qa/niq-associate-client-manager/desktop.png",
+          "errors": []
+        },
+        {
+          "name": "mobile",
+          "screenshot": "tmp/qa/niq-associate-client-manager/mobile.png",
+          "errors": []
+        }
+      ],
+      "errors": []
+    }
+  }
+}

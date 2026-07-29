@@ -1877,6 +1877,30 @@
       }
     },
     {
+      "workflowVersion": 2,
+      "contractRevision": 5,
+      "slug": "niq-associate-client-manager",
+      "roleTitle": "NIQ Associate Client Manager",
+      "artifactStem": "NIQ-Associate-Client-Manager",
+      "configPath": "scripts/packages/niq-associate-client-manager.json",
+      "targetLane": "customer-success-consultative",
+      "evidenceMode": "resume-primary",
+      "fitClass": "adjacent",
+      "positioningLane": "customer-success-consultative",
+      "bridgeType": "domain-transfer",
+      "applicationStrategy": "transferable",
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-06.html",
+        "project-03.html",
+        "project-04.html"
+      ],
+      "resumePdfPath": "output/pdf/Wally-Mostafa-NIQ-Associate-Client-Manager-Resume.pdf",
+      "publishStatus": "local-only",
+      "qaStatus": "qa-passed",
+      "builtAt": "2026-07-29T16:19:58.855Z"
+    },
+    {
       "slug": "noom-design-systems-contract",
       "roleTitle": "Noom Senior Design Systems Contractor",
       "fitClass": "adjacent",
