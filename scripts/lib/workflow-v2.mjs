@@ -98,6 +98,28 @@ export function getResumeExperienceSections(config) {
     : DEFAULT_RESUME_EXPERIENCE_SECTIONS;
 }
 
+export function resumeRoleSubEntries(resume, roleId) {
+  const roleValue = resume?.roles?.[roleId];
+  const isSubEntry = (value) =>
+    value !== null && typeof value === 'object' && !Array.isArray(value);
+  return Array.isArray(roleValue) &&
+    roleValue.length > 0 &&
+    roleValue.every(isSubEntry)
+    ? roleValue
+    : null;
+}
+
+export function resumeRoleBulletTexts(resume, roleId) {
+  const subEntries = resumeRoleSubEntries(resume, roleId);
+  if (subEntries) {
+    return subEntries.flatMap((subEntry) =>
+      Array.isArray(subEntry?.bullets) ? subEntry.bullets : []
+    );
+  }
+  const roleValue = resume?.roles?.[roleId];
+  return Array.isArray(roleValue) ? roleValue : [];
+}
+
 export function hasCoverLetterArtifact(config) {
   return Boolean(
     config?.contractRevision === 6 &&
@@ -248,7 +270,18 @@ export function humanizerCopyEntries(config) {
     }
   }
   for (const roleId of RESUME_ROLE_IDS) {
-    addArray(`resume.roles.${roleId}`, config?.resume?.roles?.[roleId]);
+    const subEntries = resumeRoleSubEntries(config?.resume, roleId);
+    if (subEntries) {
+      subEntries.forEach((subEntry, subIndex) => {
+        add(`resume.roles.${roleId}[${subIndex}].title`, subEntry?.title);
+        addArray(
+          `resume.roles.${roleId}[${subIndex}].bullets`,
+          subEntry?.bullets
+        );
+      });
+    } else {
+      addArray(`resume.roles.${roleId}`, config?.resume?.roles?.[roleId]);
+    }
   }
 
   add('hero.eyebrow', config?.hero?.eyebrow);
@@ -714,6 +747,51 @@ function validateResume(config, errors) {
 
   pushError(errors, resume.roles && typeof resume.roles === 'object', 'resume.roles is required');
   for (const roleId of RESUME_ROLE_IDS) {
+    const subEntries = resumeRoleSubEntries(resume, roleId);
+    if (subEntries) {
+      pushError(
+        errors,
+        curatedResume && usesFlexiblePositioningContract(config),
+        `resume.roles.${roleId} sub-entries are available only in curated-user-authorized mode for revisions 5 and 6`
+      );
+      pushError(
+        errors,
+        subEntries.length >= 2 && subEntries.length <= 8,
+        `resume.roles.${roleId} must include 2 to 8 sub-entries`
+      );
+      for (const [subIndex, subEntry] of subEntries.entries()) {
+        const prefix = `resume.roles.${roleId}[${subIndex}]`;
+        pushError(
+          errors,
+          isNonEmptyString(subEntry?.title),
+          `${prefix}.title is required`
+        );
+        pushError(
+          errors,
+          isNonEmptyString(subEntry?.employer),
+          `${prefix}.employer is required`
+        );
+        pushError(
+          errors,
+          isNonEmptyString(subEntry?.dateRange),
+          `${prefix}.dateRange is required`
+        );
+        pushError(
+          errors,
+          subEntry?.location === undefined ||
+            isNonEmptyString(subEntry.location),
+          `${prefix}.location must be a non-empty string when present`
+        );
+        pushError(
+          errors,
+          Array.isArray(subEntry?.bullets) &&
+            subEntry.bullets.length > 0 &&
+            subEntry.bullets.every(isNonEmptyString),
+          `${prefix}.bullets must be a non-empty string array`
+        );
+      }
+      continue;
+    }
     pushError(
       errors,
       Array.isArray(resume.roles?.[roleId]) &&
@@ -901,7 +979,7 @@ function validateResume(config, errors) {
 
   const allMappedBulletIds = [];
   for (const roleId of RESUME_ROLE_IDS) {
-    const roleBullets = resume.roles?.[roleId];
+    const roleBullets = resumeRoleBulletTexts(resume, roleId);
     const sourceBulletIds = resume.sourceBulletIds?.[roleId];
     const foundationBullets = foundation.roles?.[roleId];
     const foundationIds = Array.isArray(foundationBullets)
@@ -1808,12 +1886,21 @@ export function recruiterFacingClaimViolations(config) {
             [`resume.awards[${index}].label`, award.label],
             [`resume.awards[${index}].detail`, award.detail],
           ]),
-          ...RESUME_ROLE_IDS.flatMap((roleId) =>
-            config.resume.roles[roleId].map((bullet, index) => [
-              `resume.roles.${roleId}[${index}]`,
-              bullet,
-            ])
-          ),
+          ...RESUME_ROLE_IDS.flatMap((roleId) => {
+            const subEntries = resumeRoleSubEntries(config.resume, roleId);
+            const titleEntries = subEntries
+              ? subEntries.map((subEntry, subIndex) => [
+                  `resume.roles.${roleId}[${subIndex}].title`,
+                  subEntry.title,
+                ])
+              : [];
+            return [
+              ...titleEntries,
+              ...resumeRoleBulletTexts(config.resume, roleId).map(
+                (bullet, index) => [`resume.roles.${roleId}[${index}]`, bullet]
+              ),
+            ];
+          }),
         ]
       : []),
     ...(hasCoverLetterArtifact(config)

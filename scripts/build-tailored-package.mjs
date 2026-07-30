@@ -32,6 +32,7 @@ import {
   replaceElementContent,
   replacePortfolioLink,
   resolveRepoPath,
+  resumeRoleSubEntries,
   sha256File,
   slugify,
   upsertV2ManifestEntry,
@@ -546,6 +547,9 @@ function buildResume(config, paths) {
     renderSkillItems(skills)
   );
   for (const roleId of RESUME_ROLE_IDS) {
+    if (resumeRoleSubEntries(config.resume, roleId)) {
+      continue;
+    }
     resumeHtml = replaceElementContent(
       resumeHtml,
       'data-resume-role',
@@ -642,6 +646,20 @@ function extractBalancedTagBlock(html, startIndex, tagName) {
   throw new Error(`Could not find the closing </${tagName}> tag`);
 }
 
+function renderSubEntryJob(subEntry) {
+  const meta = [subEntry.employer, subEntry.location, subEntry.dateRange]
+    .filter(Boolean)
+    .map((part) => escapeHtml(part))
+    .join(' · ');
+  return `  <div class="job">
+    <div class="job-header">
+      <span class="job-title">${escapeHtml(subEntry.title)}</span>
+      <span class="job-meta">${meta}</span>
+    </div>
+    <ul class="job-desc">${renderBulletItems(subEntry.bullets)}</ul>
+  </div>`;
+}
+
 function replaceResumeExperienceSections(resumeHtml, config) {
   const experienceMatch = resumeHtml.match(
     /<section data-resume-section="experience">[\s\S]*?<\/section>/
@@ -653,6 +671,11 @@ function replaceResumeExperienceSections(resumeHtml, config) {
   const sourceSection = experienceMatch[0];
   const jobBlocks = new Map();
   for (const roleId of RESUME_ROLE_IDS) {
+    const subEntries = resumeRoleSubEntries(config.resume, roleId);
+    if (subEntries) {
+      jobBlocks.set(roleId, subEntries.map(renderSubEntryJob).join('\n\n'));
+      continue;
+    }
     const roleMarker = `data-resume-role="${roleId}"`;
     const markerIndex = sourceSection.indexOf(roleMarker);
     const jobStart = sourceSection.lastIndexOf(

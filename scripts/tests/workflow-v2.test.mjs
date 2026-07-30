@@ -30,6 +30,8 @@ import {
   replaceElementContent,
   replacePortfolioLink,
   resolveChromeExecutable,
+  resumeRoleBulletTexts,
+  resumeRoleSubEntries,
   validateV2Config,
 } from '../lib/workflow-v2.mjs';
 import {
@@ -502,6 +504,137 @@ test('curated resume mode requires explicit user authorization and keeps evidenc
   );
 });
 
+test('curated resume mode supports per-agency sub-entries with flat source mapping', () => {
+  const curated = validConfig();
+  curated.resume.compositionMode = 'curated-user-authorized';
+  curated.resume.curationAuthorization = {
+    authorizedBy: 'user',
+    authorizedAt: '2026-07-30',
+    scope: 'Healthcare account management resume only.',
+    reason:
+      'The user authorized splitting consolidated account work into per-agency entries with curated bullets.',
+  };
+  const foundationBullets = structuredClone(
+    curated.resume.roles['account-management']
+  );
+  const foundationIds = structuredClone(
+    curated.resume.sourceBulletIds['account-management']
+  );
+  curated.resume.roles['account-management'] = [
+    {
+      title: 'Account Supervisor / Digital Strategist',
+      employer: 'Scout Marketing',
+      location: 'San Diego, CA',
+      dateRange: 'Jun 2015 - Jul 2018',
+      bullets: [
+        'Led the XYREM consumer account across digital, social, TV, and print work.',
+      ],
+    },
+    {
+      title: 'Senior Account Executive',
+      employer: 'FCB Health',
+      dateRange: 'Apr 2011 - Jun 2015',
+      bullets: foundationBullets,
+    },
+  ];
+  curated.resume.sourceBulletIds['account-management'] = [
+    'addition:scout-xyrem-lead',
+    ...foundationIds,
+  ];
+  assert.deepEqual(validateV2Config(curated), []);
+  assert.deepEqual(schemaErrors(curated), []);
+  assert.equal(
+    resumeRoleSubEntries(curated.resume, 'account-management').length,
+    2
+  );
+  assert.equal(resumeRoleSubEntries(curated.resume, 'hedgehox'), null);
+  assert.deepEqual(
+    resumeRoleBulletTexts(curated.resume, 'account-management'),
+    [
+      'Led the XYREM consumer account across digital, social, TV, and print work.',
+      ...foundationBullets,
+    ]
+  );
+
+  const entries = humanizerCopyEntries(curated);
+  assert.ok(
+    entries.some(
+      ([field, value]) =>
+        field === 'resume.roles.account-management[0].title' &&
+        value === 'Account Supervisor / Digital Strategist'
+    )
+  );
+  assert.ok(
+    entries.some(
+      ([field]) => field === 'resume.roles.account-management[1].bullets[2]'
+    )
+  );
+  assert.ok(
+    entries.every(
+      ([field]) =>
+        !/^resume\.roles\..*\.(?:dateRange|employer|location)$/.test(field)
+    )
+  );
+
+  const plainEntries = humanizerCopyEntries(validConfig());
+  assert.ok(
+    plainEntries.some(
+      ([field]) => field === 'resume.roles.account-management[0]'
+    )
+  );
+  assert.ok(
+    plainEntries.every(
+      ([field]) => !field.startsWith('resume.roles.account-management[0].')
+    )
+  );
+
+  const notCurated = validConfig();
+  notCurated.resume.roles['account-management'] = structuredClone(
+    curated.resume.roles['account-management']
+  );
+  notCurated.resume.sourceBulletIds['account-management'] = [
+    'addition:scout-xyrem-lead',
+    ...foundationIds,
+  ];
+  assert.match(
+    validateV2Config(notCurated).join('\n'),
+    /sub-entries are available only in curated-user-authorized mode/
+  );
+
+  const tooFew = structuredClone(curated);
+  tooFew.resume.roles['account-management'] = [
+    structuredClone(curated.resume.roles['account-management'][1]),
+  ];
+  tooFew.resume.sourceBulletIds['account-management'] = [...foundationIds];
+  assert.match(
+    validateV2Config(tooFew).join('\n'),
+    /must include 2 to 8 sub-entries/
+  );
+
+  const missingDate = structuredClone(curated);
+  delete missingDate.resume.roles['account-management'][0].dateRange;
+  assert.match(
+    validateV2Config(missingDate).join('\n'),
+    /account-management\[0\]\.dateRange is required/
+  );
+
+  const emptyBullets = structuredClone(curated);
+  emptyBullets.resume.roles['account-management'][0].bullets = [];
+  assert.match(
+    validateV2Config(emptyBullets).join('\n'),
+    /account-management\[0\]\.bullets must be a non-empty string array/
+  );
+
+  const unmappedBullet = structuredClone(curated);
+  unmappedBullet.resume.sourceBulletIds['account-management'] = [
+    ...foundationIds,
+  ];
+  assert.match(
+    validateV2Config(unmappedBullet).join('\n'),
+    /must map every tailored bullet/
+  );
+});
+
 test('revisions 5 and 6 support relevance-first experience sections without duplicating or dropping roles', () => {
   const relevanceFirst = validConfig();
   relevanceFirst.resume.layoutDensity = 'compact';
@@ -672,6 +805,129 @@ test(
       assert.ok(recentRole > recentHeading);
       assert.ok(mannyAward > recentRole);
       assert.ok(indigoAward > mannyAward);
+    } finally {
+      rmSync(tempRoot, { recursive: true, force: true });
+    }
+  }
+);
+
+test(
+  'curated per-agency sub-entries render as separate jobs and pass ATS checks',
+  { timeout: 180_000 },
+  () => {
+    const { tempRoot, config, configPath } = createBuildFixture({
+      slug: 'per-agency-fixture',
+      artifactStem: 'Per-Agency-Fixture',
+    });
+    try {
+      config.resume.compositionMode = 'curated-user-authorized';
+      config.resume.curationAuthorization = {
+        authorizedBy: 'user',
+        authorizedAt: '2026-07-30',
+        scope: 'Per-agency fixture resume only.',
+        reason:
+          'The user authorized splitting consolidated account work into per-agency entries with curated bullets.',
+      };
+      const foundationBullets = structuredClone(
+        config.resume.roles['account-management']
+      );
+      const foundationIds = structuredClone(
+        config.resume.sourceBulletIds['account-management']
+      );
+      config.resume.roles['account-management'] = [
+        {
+          title: 'Account Supervisor / Digital Strategist',
+          employer: 'Scout Marketing',
+          location: 'San Diego, CA',
+          dateRange: 'Jun 2015 - Jul 2018',
+          bullets: [
+            'Led the XYREM consumer account across digital, social, TV, and print work.',
+          ],
+        },
+        {
+          title: 'Senior Account Manager',
+          employer: 'FCB Health',
+          dateRange: 'Apr 2011 - Jun 2015',
+          bullets: foundationBullets,
+        },
+      ];
+      config.resume.sourceBulletIds['account-management'] = [
+        'addition:scout-xyrem-lead',
+        ...foundationIds,
+      ];
+      config.resume.experienceSections = [
+        {
+          heading: 'Account Management Experience',
+          roleIds: ['account-management'],
+        },
+        {
+          heading: 'Recent & Complementary Experience',
+          roleIds: [
+            'hedgehox',
+            'one-block-away',
+            'kinesso',
+            'omnicom',
+            'heartbeat',
+          ],
+        },
+      ];
+      config.resume.layoutDensity = 'compact';
+      approveHumanizerReview(config, {
+        reviewedAt: '2026-07-30T12:00:00.000Z',
+        semanticPassComplete: true,
+      });
+      writeFileSync(configPath, `${JSON.stringify(config, null, 2)}\n`);
+
+      const result = run(
+        ['scripts/build-tailored-package.mjs', '--config', configPath],
+        {
+          env: {
+            ...process.env,
+            WORKFLOW_REPO_ROOT: tempRoot,
+            CHROME_PATH: resolveChromeExecutable(),
+          },
+        }
+      );
+      assert.equal(result.status, 0, `${result.stdout}\n${result.stderr}`);
+
+      const pdfPath = path.join(
+        tempRoot,
+        'output',
+        'pdf',
+        'Wally-Mostafa-Per-Agency-Fixture-Resume.pdf'
+      );
+      const extracted = run([
+        '-e',
+        [
+          "const { execFileSync } = require('node:child_process');",
+          `const output = execFileSync('pdftotext', ['${pdfPath}', '-'], { encoding: 'utf8' });`,
+          'process.stdout.write(output);',
+        ].join('\n'),
+      ]);
+      assert.equal(extracted.status, 0, extracted.stderr);
+      const compactText = extracted.stdout.toUpperCase().replace(/\s+/g, '');
+      const accountHeading = compactText.indexOf(
+        'ACCOUNTMANAGEMENTEXPERIENCE'
+      );
+      const scoutTitle = compactText.indexOf(
+        'ACCOUNTSUPERVISOR/DIGITALSTRATEGIST'
+      );
+      const scoutMeta = compactText.indexOf('SCOUTMARKETING');
+      const fcbTitle = compactText.indexOf('SENIORACCOUNTMANAGER');
+      const recentHeading = compactText.indexOf(
+        'RECENT&COMPLEMENTARYEXPERIENCE'
+      );
+      const recentRole = compactText.indexOf('AIIMPLEMENTATIONPARTNER');
+      assert.ok(accountHeading >= 0);
+      assert.ok(scoutTitle > accountHeading);
+      assert.ok(scoutMeta > scoutTitle);
+      assert.ok(fcbTitle > scoutMeta);
+      assert.ok(recentHeading > fcbTitle);
+      assert.ok(recentRole > recentHeading);
+      assert.equal(
+        compactText.indexOf('ACCOUNTMANAGEMENT&CLIENTSTRATEGY'),
+        -1
+      );
     } finally {
       rmSync(tempRoot, { recursive: true, force: true });
     }

@@ -15,6 +15,8 @@ import {
   readResumeFoundation,
   relativeRepoPath,
   resolveRepoPath,
+  resumeRoleBulletTexts,
+  resumeRoleSubEntries,
   usesFlexiblePositioningContract,
 } from './lib/workflow-v2.mjs';
 
@@ -231,12 +233,20 @@ export function runAtsCheck({ configPath, pdfPath }) {
     );
     let anchorCursor = 0;
     for (const roleId of experienceRoleIds) {
+      const subEntries = resumeRoleSubEntries(config.resume, roleId);
       const header = foundation.roleHeaders[roleId];
-      for (const [label, value] of [
-        ['title', header.title],
-        ['employer', header.employer],
-        ['date range', header.dateRange],
-      ]) {
+      const headerAnchors = subEntries
+        ? subEntries.flatMap((subEntry) => [
+            ['title', subEntry.title],
+            ['employer', subEntry.employer],
+            ['date range', subEntry.dateRange],
+          ])
+        : [
+            ['title', header.title],
+            ['employer', header.employer],
+            ['date range', header.dateRange],
+          ];
+      for (const [label, value] of headerAnchors) {
         const normalizedAnchor = normalizeText(value);
         const anchorIndex = normalizedResume.indexOf(
           normalizedAnchor,
@@ -269,7 +279,7 @@ export function runAtsCheck({ configPath, pdfPath }) {
     let bulletCursor = 0;
     for (const roleId of experienceRoleIds) {
       const sourceIds = config.resume.sourceBulletIds[roleId] || [];
-      const tailoredBullets = config.resume.roles[roleId] || [];
+      const tailoredBullets = resumeRoleBulletTexts(config.resume, roleId);
       for (const [bulletIndex, tailoredBullet] of tailoredBullets.entries()) {
         const sourceId = sourceIds[bulletIndex] || `unmapped:${roleId}:${bulletIndex}`;
         const normalizedBullet = normalizeText(tailoredBullet);
