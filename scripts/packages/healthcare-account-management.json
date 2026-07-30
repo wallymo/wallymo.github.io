@@ -380,8 +380,8 @@
           "dateRange": "Jun 2015 – Jul 2018",
           "bullets": [
             "Promoted from Senior Account Executive and took the lead on Jazz Pharmaceuticals XYREM consumer work: unbranded campaigns across digital, print, and in-office channels that lifted traffic and engagement on the disease-state site",
-            "Launched the first unbranded social campaign on Facebook and YouTube for the brand and for Jazz, built around real patients telling their own stories",
-            "Ran an unbranded digital campaign bridging disease state and branded work; banners held a 0.37% click-through rate against a 0.17% industry benchmark and doubled qualified traffic to the brand site",
+            "Led the launch of the first unbranded social campaign on Facebook and YouTube for the brand and for Jazz, built around real patients telling their own stories",
+            "Oversaw an unbranded digital campaign bridging disease state and branded work; banners held a 0.37% click-through rate against a 0.17% industry benchmark and doubled qualified traffic to the brand site",
             "Worked with the CEO on agency social strategy, website rebranding, and pro bono programs, and with the VP of Digital Strategy on industry trends that fed client recommendations"
           ]
         },
@@ -420,8 +420,8 @@
           "location": "New York, NY",
           "dateRange": "Apr 2011 – Sep 2013",
           "bullets": [
-            "Built and ran the unbranded Teva NUVIGIL campaign for National Night Shift Workers' Day across Times Square NASDAQ, national television, Xbox Live, radio, outdoor, and consumer journals, which won the 2013 Manny Award for Best Unbranded Campaign",
-            "Delivered the NUVIGIL.com rebrand across professional and consumer desktop and mobile sites, plus a CRM patient support program with an online community for patients on therapy",
+            "Managed development and execution of the unbranded Teva NUVIGIL campaign for National Night Shift Workers' Day across Times Square NASDAQ, national television, Xbox Live, radio, outdoor, and consumer journals, working through media, digital, and print vendors; the campaign won the 2013 Manny Award for Best Unbranded Campaign",
+            "Coordinated the NUVIGIL.com rebrand across professional and consumer desktop and mobile sites with the agency's digital strategy and development teams, plus the launch of a CRM patient support program and its online patient community",
             "Owned weekly client status and financial reporting plus OPDP and review-committee submissions across the professional and consumer business, and contributed to the annual strategic recommendations"
           ]
         },
@@ -523,8 +523,8 @@
   },
   "qa": {
     "status": "qa-passed",
-    "builtAt": "2026-07-30T22:10:57.401Z",
-    "configInputSha256": "10dcf27197ab8baadcd1ac1fe759005a6695cf8d4eaaeea1c4ad333ca6e1f786",
+    "builtAt": "2026-07-30T23:06:45.758Z",
+    "configInputSha256": "04d5d8f5f3c79f8ccdcdae8d4235f1e066a8dc7ee7bf054bd7434b60cbc41735",
     "sourceResumeSha256": "1eb4600cf3467d60d65c7e3a6d8ba167ead45aa262fb7d4c8b75141b5c11446d",
     "resumeFoundation": {
       "id": "wally-mostafa-resume-2026-07-03",
@@ -532,7 +532,7 @@
     },
     "artifactHashes": {
       "routeSha256": "c8fed5e42fc5c317095a68b96594ef1bd2cb638291502e4f181c32e81001df09",
-      "resumePdfSha256": "0034e4aa602ef9b48235aade718ef2685134332d78b6df5cac1959f00b79c3d2",
+      "resumePdfSha256": "ee6549fe766316009aa183089a91a05b7a7ca4cc66f0a7efcf2af1c7276f7cc7",
       "coverLetterPdfSha256": null,
       "coverLetterMarkdownSha256": null,
       "scopedProjectSha256": {}
@@ -552,7 +552,7 @@
       "ok": true,
       "pdfPath": "output/pdf/Wally-Mostafa-Healthcare-Account-Management-Resume.pdf",
       "pageCount": 2,
-      "fileSize": 163564,
+      "fileSize": 163832,
       "annotations": [
         {
           "page": 1,
@@ -685,8 +685,8 @@
       "status": "passed",
       "version": "2.2.0",
       "mode": "rewrite-requested",
-      "reviewedAt": "2026-07-30T22:10:10.349Z",
-      "copySha256": "4e7beb0fbcaf3486a29099040f166d970182fe0654a650e2389ac990e9f88157",
+      "reviewedAt": "2026-07-30T23:06:41.130Z",
+      "copySha256": "a7173e28a20f3fba5b692f45986594b404bf485effca36d7cae6c8abd324f763",
       "reviewMethod": "humanizer-skill",
       "semanticPassAttested": true,
       "staticChecksPassed": true
@@ -711,8 +711,8 @@
     "humanizerVersion": "2.2.0",
     "mode": "rewrite-requested",
     "status": "passed",
-    "reviewedAt": "2026-07-30T22:10:10.349Z",
-    "copySha256": "4e7beb0fbcaf3486a29099040f166d970182fe0654a650e2389ac990e9f88157",
+    "reviewedAt": "2026-07-30T23:06:41.130Z",
+    "copySha256": "a7173e28a20f3fba5b692f45986594b404bf485effca36d7cae6c8abd324f763",
     "preserved": [
       "claims"
     ],
