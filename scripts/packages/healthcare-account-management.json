@@ -312,7 +312,7 @@
         ]
       },
       {
-        "heading": "Recent Client & Delivery Experience",
+        "heading": "Continued Experience",
         "roleIds": [
           "hedgehox",
           "one-block-away",
@@ -523,8 +523,8 @@
   },
   "qa": {
     "status": "qa-passed",
-    "builtAt": "2026-07-31T01:28:45.441Z",
-    "configInputSha256": "da13c8944c3542cd57e15d5069e0b6edd8590aa93d07c0f4f62800079ac0aad5",
+    "builtAt": "2026-07-31T01:54:26.199Z",
+    "configInputSha256": "194d987e41df3e8cadef290025670884d3cd7c601bdf9f52d12c49f6393ea1cd",
     "sourceResumeSha256": "796b107e9ac0aa62e791915feaf7b152b1510d1411b015ce68e84a54a7b435f6",
     "resumeFoundation": {
       "id": "wally-mostafa-resume-2026-07-03",
@@ -532,7 +532,7 @@
     },
     "artifactHashes": {
       "routeSha256": "4b8ef5563917f2c2f7e10c78710bf1bc480e7e68266fb3959f80f1655198885c",
-      "resumePdfSha256": "402cad242130ffba42121dadbc1df7f2a02e65d76709929c8cda001d4a1f1da0",
+      "resumePdfSha256": "f53b67dd22b4fccf3bd0f0a180e367f9e672a444f463c06fbc3178a3bce2772e",
       "coverLetterPdfSha256": null,
       "coverLetterMarkdownSha256": null,
       "scopedProjectSha256": {}
@@ -552,7 +552,7 @@
       "ok": true,
       "pdfPath": "output/pdf/Wally-Mostafa-Healthcare-Account-Management-Resume.pdf",
       "pageCount": 2,
-      "fileSize": 163416,
+      "fileSize": 162032,
       "annotations": [
         {
           "page": 1,
@@ -685,8 +685,8 @@
       "status": "passed",
       "version": "2.2.0",
       "mode": "rewrite-requested",
-      "reviewedAt": "2026-07-31T01:28:41.411Z",
-      "copySha256": "87c7cbe3a38fdd16ad915a9ebefa295145cf5a55103e6e93e8ffc3447974cf4c",
+      "reviewedAt": "2026-07-31T01:54:21.804Z",
+      "copySha256": "f29eb2da73e149976c3f7b28954fde8a06d97a9c1a0dedc394c6b915ebb1e6ec",
       "reviewMethod": "humanizer-skill",
       "semanticPassAttested": true,
       "staticChecksPassed": true
@@ -711,8 +711,8 @@
     "humanizerVersion": "2.2.0",
     "mode": "rewrite-requested",
     "status": "passed",
-    "reviewedAt": "2026-07-31T01:28:41.411Z",
-    "copySha256": "87c7cbe3a38fdd16ad915a9ebefa295145cf5a55103e6e93e8ffc3447974cf4c",
+    "reviewedAt": "2026-07-31T01:54:21.804Z",
+    "copySha256": "f29eb2da73e149976c3f7b28954fde8a06d97a9c1a0dedc394c6b915ebb1e6ec",
     "preserved": [
       "claims"
     ],
