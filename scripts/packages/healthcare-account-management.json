@@ -213,11 +213,11 @@
       "evidenceStatus": "direct",
       "evidence": [
         "Oversaw the Namenda XR Assistant Account Executive while coordinating creative, production, media, and client review teams.",
-        "Partnered with the agency CEO and VP of Digital Strategy on agency positioning, social strategy, and client-facing recommendations."
+        "Worked alongside the HCP team on shared NUVIGIL.com and sales aid work while leading the consumer side of the account."
       ],
       "proofIds": [
         "account-management-03",
-        "addition:scout-agency-operations",
+        "addition:fcb-nuvigil-hcp-collaboration",
         "heartbeat-03"
       ],
       "destinations": [
@@ -329,7 +329,7 @@
       },
       {
         "label": "Pharma Choice Awards 2011",
-        "detail": "Silver Consumer Print, Silver Professional Sales Aid, Bronze Professional Mobile Site"
+        "detail": "Silver Consumer Print, Silver HCP Sales Aid, Bronze HCP Mobile Site"
       },
       {
         "label": "Indigo Awards 2023",
@@ -381,8 +381,7 @@
           "bullets": [
             "Promoted from Senior Account Executive and took the lead on Jazz Pharmaceuticals XYREM consumer work: unbranded campaigns across digital, print, and in-office channels that lifted traffic and engagement on the disease-state site",
             "Led the launch of the first unbranded social campaign on Facebook and YouTube for the brand and for Jazz, built around real patients telling their own stories",
-            "Oversaw an unbranded digital campaign bridging disease state and branded work; banners held a 0.37% click-through rate against a 0.17% industry benchmark and doubled qualified traffic to the brand site",
-            "Worked with the CEO on agency social strategy, website rebranding, and pro bono programs, and with the VP of Digital Strategy on industry trends that fed client recommendations"
+            "Oversaw an unbranded digital campaign bridging disease state and branded work; banners held a 0.37% click-through rate against a 0.17% industry benchmark and doubled qualified traffic to the brand site"
           ]
         },
         {
@@ -422,6 +421,7 @@
           "bullets": [
             "Managed development and execution of the unbranded Teva NUVIGIL campaign for National Night Shift Workers' Day across Times Square NASDAQ, national television, Xbox Live, radio, outdoor, and consumer journals, working through media, digital, and print vendors; the campaign won the 2013 Manny Award for Best Unbranded Campaign",
             "Coordinated the NUVIGIL.com consumer rebrand across desktop and mobile with the agency's digital strategy and development teams, plus the launch of a CRM patient support program and its online patient community",
+            "Worked alongside the HCP team on the NUVIGIL.com HCP site and sales aid, both of which won 2011 Pharma Choice awards",
             "Owned weekly client status and financial reporting plus OPDP and review-committee submissions across the $10M consumer business, and contributed to the annual strategic recommendations"
           ]
         },
@@ -466,7 +466,6 @@
         "addition:scout-xyrem-account-lead",
         "addition:scout-xyrem-unbranded-social",
         "addition:scout-xyrem-bridging-campaign",
-        "addition:scout-agency-operations",
         "account-management-02",
         "account-management-03",
         "addition:fcb-namenda-caregiver-site",
@@ -474,6 +473,7 @@
         "addition:cdm-lipitor-zoloft-digital",
         "account-management-01",
         "addition:fcb-nuvigil-rebrand-crm",
+        "addition:fcb-nuvigil-hcp-collaboration",
         "addition:fcb-nuvigil-client-operations",
         "addition:rosetta-prevenar-client-contact",
         "addition:rosetta-dubai-advisory"
@@ -523,8 +523,8 @@
   },
   "qa": {
     "status": "qa-passed",
-    "builtAt": "2026-07-31T01:24:32.161Z",
-    "configInputSha256": "dca7899e77ed9e708445de1d6372545f945c7a1225784dd0a81da8ff9e54d308",
+    "builtAt": "2026-07-31T01:28:45.441Z",
+    "configInputSha256": "da13c8944c3542cd57e15d5069e0b6edd8590aa93d07c0f4f62800079ac0aad5",
     "sourceResumeSha256": "796b107e9ac0aa62e791915feaf7b152b1510d1411b015ce68e84a54a7b435f6",
     "resumeFoundation": {
       "id": "wally-mostafa-resume-2026-07-03",
@@ -532,7 +532,7 @@
     },
     "artifactHashes": {
       "routeSha256": "4b8ef5563917f2c2f7e10c78710bf1bc480e7e68266fb3959f80f1655198885c",
-      "resumePdfSha256": "5a44e33100c80d9f7dcfeb2e6d69242a830429a8609cc50e9f07b996af4e220f",
+      "resumePdfSha256": "402cad242130ffba42121dadbc1df7f2a02e65d76709929c8cda001d4a1f1da0",
       "coverLetterPdfSha256": null,
       "coverLetterMarkdownSha256": null,
       "scopedProjectSha256": {}
@@ -552,7 +552,7 @@
       "ok": true,
       "pdfPath": "output/pdf/Wally-Mostafa-Healthcare-Account-Management-Resume.pdf",
       "pageCount": 2,
-      "fileSize": 163500,
+      "fileSize": 163416,
       "annotations": [
         {
           "page": 1,
@@ -685,8 +685,8 @@
       "status": "passed",
       "version": "2.2.0",
       "mode": "rewrite-requested",
-      "reviewedAt": "2026-07-31T01:24:27.530Z",
-      "copySha256": "b53c9b0259865ccd7647bd66b373dee28185b23e91f8a27b8fe9f378e3cc1683",
+      "reviewedAt": "2026-07-31T01:28:41.411Z",
+      "copySha256": "87c7cbe3a38fdd16ad915a9ebefa295145cf5a55103e6e93e8ffc3447974cf4c",
       "reviewMethod": "humanizer-skill",
       "semanticPassAttested": true,
       "staticChecksPassed": true
@@ -711,8 +711,8 @@
     "humanizerVersion": "2.2.0",
     "mode": "rewrite-requested",
     "status": "passed",
-    "reviewedAt": "2026-07-31T01:24:27.530Z",
-    "copySha256": "b53c9b0259865ccd7647bd66b373dee28185b23e91f8a27b8fe9f378e3cc1683",
+    "reviewedAt": "2026-07-31T01:28:41.411Z",
+    "copySha256": "87c7cbe3a38fdd16ad915a9ebefa295145cf5a55103e6e93e8ffc3447974cf4c",
     "preserved": [
       "claims"
     ],
