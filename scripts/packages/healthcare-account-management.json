@@ -393,7 +393,7 @@
           "bullets": [
             "One of two consumer account leads on the agency's largest pharma business, managing the Actavis Namenda XR direct-to-consumer launch and its $20M brand budget",
             "Owned the broadcast workstream for three national television commercials in one year, covering market research, med-legal review, FDA preclearance, pre- and post-production, talent and location coordination, director searches, and network clearances; the spots drove a 45% increase in new-to-brand consumers within seven weeks",
-            "Led the launch of an unbranded Alzheimer's caregiver community site with support resources, sponsorship exploration, and public relations pull-through; also oversaw the account's Assistant Account Executive across in-office and national print launch tactics"
+            "Led the launch of an unbranded Alzheimer's caregiver community site with support resources, sponsorship exploration, and public relations pull-through; also oversaw the account's Assistant Account Executive across in-office tactics, national print, and sales representative support materials"
           ]
         },
         {
@@ -523,8 +523,8 @@
   },
   "qa": {
     "status": "qa-passed",
-    "builtAt": "2026-07-31T00:11:10.426Z",
-    "configInputSha256": "ccdd921df0877e53a28b69f7a3580919e7a0f4afb49df3cfe1b68a541fbdf529",
+    "builtAt": "2026-07-31T01:24:32.161Z",
+    "configInputSha256": "dca7899e77ed9e708445de1d6372545f945c7a1225784dd0a81da8ff9e54d308",
     "sourceResumeSha256": "796b107e9ac0aa62e791915feaf7b152b1510d1411b015ce68e84a54a7b435f6",
     "resumeFoundation": {
       "id": "wally-mostafa-resume-2026-07-03",
@@ -532,7 +532,7 @@
     },
     "artifactHashes": {
       "routeSha256": "4b8ef5563917f2c2f7e10c78710bf1bc480e7e68266fb3959f80f1655198885c",
-      "resumePdfSha256": "0aa605764fb0e32c82091a21c77d924b7bed5d87e99687f93f1a66610e76d7a6",
+      "resumePdfSha256": "5a44e33100c80d9f7dcfeb2e6d69242a830429a8609cc50e9f07b996af4e220f",
       "coverLetterPdfSha256": null,
       "coverLetterMarkdownSha256": null,
       "scopedProjectSha256": {}
@@ -552,7 +552,7 @@
       "ok": true,
       "pdfPath": "output/pdf/Wally-Mostafa-Healthcare-Account-Management-Resume.pdf",
       "pageCount": 2,
-      "fileSize": 163431,
+      "fileSize": 163500,
       "annotations": [
         {
           "page": 1,
@@ -685,8 +685,8 @@
       "status": "passed",
       "version": "2.2.0",
       "mode": "rewrite-requested",
-      "reviewedAt": "2026-07-31T00:11:05.744Z",
-      "copySha256": "1b4914511f365d888085d5bb7f0d7b33b61cce98120014050f4159b47c818cbc",
+      "reviewedAt": "2026-07-31T01:24:27.530Z",
+      "copySha256": "b53c9b0259865ccd7647bd66b373dee28185b23e91f8a27b8fe9f378e3cc1683",
       "reviewMethod": "humanizer-skill",
       "semanticPassAttested": true,
       "staticChecksPassed": true
@@ -711,8 +711,8 @@
     "humanizerVersion": "2.2.0",
     "mode": "rewrite-requested",
     "status": "passed",
-    "reviewedAt": "2026-07-31T00:11:05.744Z",
-    "copySha256": "1b4914511f365d888085d5bb7f0d7b33b61cce98120014050f4159b47c818cbc",
+    "reviewedAt": "2026-07-31T01:24:27.530Z",
+    "copySha256": "b53c9b0259865ccd7647bd66b373dee28185b23e91f8a27b8fe9f378e3cc1683",
     "preserved": [
       "claims"
     ],
