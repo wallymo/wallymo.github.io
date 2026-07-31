@@ -25,7 +25,7 @@
   "classification": {
     "targetLane": "client-account-delivery",
     "evidenceMode": "resume-primary",
-    "primarySource": "The 2011-2018 account-management resumes are the main content source. They directly prove account ownership across pharma and consumer brands, brand budgets up to $20M, national television launches, FDA and med-legal review, digital and loyalty programs, vendor coordination, and junior account oversight, with the title progression from Account Coordinator through Account Supervisor.",
+    "primarySource": "The 2011-2018 account-management resumes are the main content source. They directly prove consumer account ownership across pharma and consumer brands, brand budgets up to $20M, national television launches, FDA and med-legal review, digital and loyalty programs, vendor coordination, and junior account oversight, with the title progression from Account Coordinator through Account Supervisor.",
     "supportingSource": "The current resume and portfolio supply the later chronology and selected proof of client discovery, regulated workflows, presentation-ready recommendations, and cross-functional leadership. Those roles support the story but do not receive equal weight.",
     "hardGateStatus": "pass",
     "hardGates": [
@@ -421,8 +421,8 @@
           "dateRange": "Apr 2011 – Sep 2013",
           "bullets": [
             "Managed development and execution of the unbranded Teva NUVIGIL campaign for National Night Shift Workers' Day across Times Square NASDAQ, national television, Xbox Live, radio, outdoor, and consumer journals, working through media, digital, and print vendors; the campaign won the 2013 Manny Award for Best Unbranded Campaign",
-            "Coordinated the NUVIGIL.com rebrand across professional and consumer desktop and mobile sites with the agency's digital strategy and development teams, plus the launch of a CRM patient support program and its online patient community",
-            "Owned weekly client status and financial reporting plus OPDP and review-committee submissions across the $10M professional and consumer business, and contributed to the annual strategic recommendations"
+            "Coordinated the NUVIGIL.com consumer rebrand across desktop and mobile with the agency's digital strategy and development teams, plus the launch of a CRM patient support program and its online patient community",
+            "Owned weekly client status and financial reporting plus OPDP and review-committee submissions across the $10M consumer business, and contributed to the annual strategic recommendations"
           ]
         },
         {
@@ -523,8 +523,8 @@
   },
   "qa": {
     "status": "qa-passed",
-    "builtAt": "2026-07-31T00:04:27.506Z",
-    "configInputSha256": "abb240237745b8c225abcafc6029fc293a5cddd607a34877745b3b65cc3c1545",
+    "builtAt": "2026-07-31T00:11:10.426Z",
+    "configInputSha256": "ccdd921df0877e53a28b69f7a3580919e7a0f4afb49df3cfe1b68a541fbdf529",
     "sourceResumeSha256": "796b107e9ac0aa62e791915feaf7b152b1510d1411b015ce68e84a54a7b435f6",
     "resumeFoundation": {
       "id": "wally-mostafa-resume-2026-07-03",
@@ -532,7 +532,7 @@
     },
     "artifactHashes": {
       "routeSha256": "4b8ef5563917f2c2f7e10c78710bf1bc480e7e68266fb3959f80f1655198885c",
-      "resumePdfSha256": "66ffa624a3443d2963cd9e874a43a5b03c7163cf75c3eea12d6afe5ae80f89d5",
+      "resumePdfSha256": "0aa605764fb0e32c82091a21c77d924b7bed5d87e99687f93f1a66610e76d7a6",
       "coverLetterPdfSha256": null,
       "coverLetterMarkdownSha256": null,
       "scopedProjectSha256": {}
@@ -552,7 +552,7 @@
       "ok": true,
       "pdfPath": "output/pdf/Wally-Mostafa-Healthcare-Account-Management-Resume.pdf",
       "pageCount": 2,
-      "fileSize": 163542,
+      "fileSize": 163431,
       "annotations": [
         {
           "page": 1,
@@ -685,8 +685,8 @@
       "status": "passed",
       "version": "2.2.0",
       "mode": "rewrite-requested",
-      "reviewedAt": "2026-07-31T00:04:22.848Z",
-      "copySha256": "657745b688433dedb96fd708404cdfd892039d89c8d191b2fe5026f442653d8e",
+      "reviewedAt": "2026-07-31T00:11:05.744Z",
+      "copySha256": "1b4914511f365d888085d5bb7f0d7b33b61cce98120014050f4159b47c818cbc",
       "reviewMethod": "humanizer-skill",
       "semanticPassAttested": true,
       "staticChecksPassed": true
@@ -711,8 +711,8 @@
     "humanizerVersion": "2.2.0",
     "mode": "rewrite-requested",
     "status": "passed",
-    "reviewedAt": "2026-07-31T00:04:22.848Z",
-    "copySha256": "657745b688433dedb96fd708404cdfd892039d89c8d191b2fe5026f442653d8e",
+    "reviewedAt": "2026-07-31T00:11:05.744Z",
+    "copySha256": "1b4914511f365d888085d5bb7f0d7b33b61cce98120014050f4159b47c818cbc",
     "preserved": [
       "claims"
     ],
