@@ -108,45 +108,6 @@ function restoreFiles(snapshot) {
   }
 }
 
-function snapshotDirectory(directoryPath) {
-  const absoluteDirectory = resolveRepoPath(directoryPath);
-  if (!existsSync(absoluteDirectory)) {
-    return null;
-  }
-  const files = new Map();
-
-  function walk(currentDirectory) {
-    for (const entry of readdirSync(currentDirectory)) {
-      const absoluteEntry = path.join(currentDirectory, entry);
-      if (statSync(absoluteEntry).isDirectory()) {
-        walk(absoluteEntry);
-      } else {
-        files.set(
-          path.relative(absoluteDirectory, absoluteEntry),
-          readFileSync(absoluteEntry)
-        );
-      }
-    }
-  }
-
-  walk(absoluteDirectory);
-  return files;
-}
-
-function restoreDirectory(directoryPath, snapshot) {
-  const absoluteDirectory = resolveRepoPath(directoryPath);
-  rmSync(absoluteDirectory, { recursive: true, force: true });
-  if (snapshot === null) {
-    return;
-  }
-  mkdirSync(absoluteDirectory, { recursive: true });
-  for (const [relativePath, content] of snapshot) {
-    const absoluteFile = path.join(absoluteDirectory, relativePath);
-    mkdirSync(path.dirname(absoluteFile), { recursive: true });
-    writeFileSync(absoluteFile, content);
-  }
-}
-
 function existingScopedOutputs(slug) {
   const routeDirectory = resolveRepoPath(slug);
   if (!existsSync(routeDirectory) || !statSync(routeDirectory).isDirectory()) {
@@ -711,10 +672,7 @@ ${section.roleIds.map((roleId) => jobBlocks.get(roleId)).join('\n\n')}
 
 function normalizeRouteQa(result) {
   return {
-    viewports: result.viewports.map((viewport) => ({
-      ...viewport,
-      screenshot: relativeRepoPath(viewport.screenshot),
-    })),
+    viewports: result.viewports.map(({ screenshot, ...viewport }) => viewport),
     errors: result.errors,
   };
 }
@@ -797,7 +755,6 @@ export async function buildTailoredPackage({
     absoluteConfigPath,
     'scripts/tailored-packages.json',
   ]);
-  const qaDirectorySnapshot = snapshotDirectory(paths.qaOutputDir);
   try {
     rmSync(resolveRepoPath(paths.qaOutputDir), {
       recursive: true,
@@ -929,7 +886,6 @@ export async function buildTailoredPackage({
     };
   } catch (error) {
     restoreFiles(rollbackSnapshot);
-    restoreDirectory(paths.qaOutputDir, qaDirectorySnapshot);
     throw error;
   } finally {
     rmSync(resolveRepoPath(paths.tempResumeHtmlPath), { force: true });
