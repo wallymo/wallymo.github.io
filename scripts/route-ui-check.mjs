@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 import { execFileSync } from 'node:child_process';
+import { rmSync } from 'node:fs';
 import {
   assertValidV2Config,
   getArtifactPaths,
@@ -42,6 +43,7 @@ export function runRouteUiCheck({ configPath }) {
   assertValidV2Config(config);
   const paths = getArtifactPaths(config);
   const helperPath = resolveRepoPath('scripts/lib/route_ui_check.py');
+  const outputDirectory = resolveRepoPath(paths.qaOutputDir);
   const args = [
     helperPath,
     '--root',
@@ -55,18 +57,20 @@ export function runRouteUiCheck({ configPath }) {
     '--route-mode',
     config.routeMode,
     '--output-dir',
-    resolveRepoPath(paths.qaOutputDir),
+    outputDirectory,
     '--chrome',
     resolveChromeExecutable(),
   ];
   try {
-    return JSON.parse(
+    const result = JSON.parse(
       execFileSync('python3', args, {
         encoding: 'utf8',
         maxBuffer: 10 * 1024 * 1024,
         timeout: 120_000,
       })
     );
+    rmSync(outputDirectory, { recursive: true, force: true });
+    return result;
   } catch (error) {
     try {
       const result = JSON.parse(error.stdout?.toString() || '{}');

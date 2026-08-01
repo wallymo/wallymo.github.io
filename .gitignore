@@ -8,3 +8,5 @@ assets/imagery/logos/*.dmg
 favicon-preview.png
 tmp/
 .private/
+.playwright-cli/
+output/playwright/

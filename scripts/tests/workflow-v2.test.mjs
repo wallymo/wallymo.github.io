@@ -2623,6 +2623,46 @@ test('legacy generator is retired so new packages cannot bypass v2', () => {
 });
 
 test(
+  'failed route QA retains temporary screenshots for diagnosis',
+  { timeout: 180_000 },
+  () => {
+    const { tempRoot, config, configPath } = createBuildFixture({
+      slug: 'route-failure-fixture',
+      artifactStem: 'Route-Failure-Fixture',
+    });
+    try {
+      const routeDirectory = path.join(tempRoot, config.slug);
+      mkdirSync(routeDirectory, { recursive: true });
+      cpSync(
+        path.join(tempRoot, 'index.html'),
+        path.join(routeDirectory, 'index.html')
+      );
+      const result = run(
+        ['scripts/route-ui-check.mjs', '--config', configPath],
+        {
+          env: {
+            ...process.env,
+            WORKFLOW_REPO_ROOT: tempRoot,
+            CHROME_PATH: resolveChromeExecutable(),
+          },
+        }
+      );
+      assert.notEqual(result.status, 0);
+      const qaDirectory = path.join(
+        tempRoot,
+        'tmp',
+        'qa',
+        config.slug
+      );
+      assert.ok(existsSync(path.join(qaDirectory, 'desktop.png')));
+      assert.ok(existsSync(path.join(qaDirectory, 'mobile.png')));
+    } finally {
+      rmSync(tempRoot, { recursive: true, force: true });
+    }
+  }
+);
+
+test(
   'failed post-render QA rolls back every generated artifact and config mutation',
   { timeout: 180_000 },
   () => {
@@ -2757,6 +2797,16 @@ test(
       const savedConfig = JSON.parse(readFileSync(configPath, 'utf8'));
       assert.equal(savedConfig.qa.route.errors.length, 0);
       assert.equal(savedConfig.qa.route.viewports.length, 8);
+      assert.equal(
+        savedConfig.qa.route.viewports.some((viewport) =>
+          Object.hasOwn(viewport, 'screenshot')
+        ),
+        false
+      );
+      assert.equal(
+        existsSync(path.join(tempRoot, 'tmp', 'qa', 'scoped-fixture')),
+        false
+      );
       assert.equal(
         Object.keys(
           savedConfig.qa.artifactHashes.scopedProjectSha256
@@ -2921,6 +2971,7 @@ test(
           path.join(tempRoot, 'overwrite-fixture', 'project-06.html')
         )
       );
+      assert.equal(existsSync(qaDirectory), false);
       const finalManifest = JSON.parse(readFileSync(manifestPath, 'utf8'));
       assert.deepEqual(finalManifest.packages[0].selectedProjects, [
         'project-03.html',
@@ -2996,12 +3047,19 @@ test(
         'tailored-resumes',
         'workflow-v2-fixture-cover-letter.html'
       );
+      const qaDirectory = path.join(
+        tempRoot,
+        'tmp',
+        'qa',
+        'workflow-v2-fixture'
+      );
       assert.ok(existsSync(pdfPath));
       assert.ok(existsSync(coverLetterPdfPath));
       assert.ok(existsSync(coverLetterMarkdownPath));
       assert.ok(existsSync(routePath));
       assert.equal(existsSync(temporaryHtml), false);
       assert.equal(existsSync(temporaryCoverLetterHtml), false);
+      assert.equal(existsSync(qaDirectory), false);
       const coverLetterInfo = spawnSync(
         'pdfinfo',
         [coverLetterPdfPath],
@@ -3052,6 +3110,12 @@ test(
         'centered-rule'
       );
       assert.equal(savedConfig.qa.coverLetterRenderer.fontWait, true);
+      assert.equal(
+        savedConfig.qa.route.viewports.some((viewport) =>
+          Object.hasOwn(viewport, 'screenshot')
+        ),
+        false
+      );
       assert.ok(savedConfig.qa.ats.warnings.length > 0);
       assert.equal(
         savedConfig.qa.configInputSha256,
