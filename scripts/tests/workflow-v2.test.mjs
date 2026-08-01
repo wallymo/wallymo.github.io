@@ -934,6 +934,99 @@ test(
   }
 );
 
+test(
+  'foundation skill drift warns on built packages and still blocks rebuilds',
+  { timeout: 180_000 },
+  () => {
+    const { tempRoot, configPath } = createBuildFixture({
+      slug: 'skill-drift-fixture',
+      artifactStem: 'Skill-Drift-Fixture',
+    });
+    try {
+      const buildResult = run(
+        ['scripts/build-tailored-package.mjs', '--config', configPath],
+        {
+          env: {
+            ...process.env,
+            WORKFLOW_REPO_ROOT: tempRoot,
+            CHROME_PATH: resolveChromeExecutable(),
+          },
+        }
+      );
+      assert.equal(buildResult.status, 0, `${buildResult.stdout}\n${buildResult.stderr}`);
+
+      for (const args of [
+        ['init', '-q'],
+        ['config', 'user.email', 'workflow-v2@example.com'],
+        ['config', 'user.name', 'Workflow v2 Test'],
+        [
+          'add',
+          'skill-drift-fixture/index.html',
+          'output/pdf/Wally-Mostafa-Skill-Drift-Fixture-Resume.pdf',
+          'scripts/packages/skill-drift-fixture.json',
+          'scripts/tailored-packages.json',
+        ],
+        ['commit', '-qm', 'fixture'],
+      ]) {
+        const gitResult = spawnSync('git', args, {
+          cwd: tempRoot,
+          encoding: 'utf8',
+        });
+        assert.equal(gitResult.status, 0, gitResult.stderr);
+      }
+
+      const foundationPath = path.join(
+        tempRoot,
+        'scripts',
+        'resume-foundation.json'
+      );
+      const foundation = JSON.parse(readFileSync(foundationPath, 'utf8'));
+      const builtConfig = JSON.parse(readFileSync(configPath, 'utf8'));
+      const selectedSkillId = builtConfig.resume.skillIds[0];
+      const skill = foundation.skillBank.find(
+        (entry) => entry.id === selectedSkillId
+      );
+      skill.description = `${skill.description} plus a later foundation edit`;
+      writeFileSync(
+        foundationPath,
+        `${JSON.stringify(foundation, null, 2)}\n`
+      );
+
+      const driftCheck = run(
+        ['scripts/check-tailored-packages.mjs', 'skill-drift-fixture'],
+        { env: { ...process.env, WORKFLOW_REPO_ROOT: tempRoot } }
+      );
+      assert.equal(
+        driftCheck.status,
+        0,
+        `${driftCheck.stdout}\n${driftCheck.stderr}`
+      );
+      assert.match(
+        `${driftCheck.stdout}\n${driftCheck.stderr}`,
+        /skills text predates the current resume foundation/
+      );
+
+      const rebuildResult = run(
+        ['scripts/build-tailored-package.mjs', '--config', configPath, '--overwrite'],
+        {
+          env: {
+            ...process.env,
+            WORKFLOW_REPO_ROOT: tempRoot,
+            CHROME_PATH: resolveChromeExecutable(),
+          },
+        }
+      );
+      assert.notEqual(rebuildResult.status, 0);
+      assert.match(
+        `${rebuildResult.stdout}\n${rebuildResult.stderr}`,
+        /resume\.skills must match the selected foundation skill definitions/
+      );
+    } finally {
+      rmSync(tempRoot, { recursive: true, force: true });
+    }
+  }
+);
+
 test('element replacement preserves literal dollar amounts', () => {
   const html = '<ul data-resume-role="account-management"><li>Old</li></ul>';
   const output = replaceElementContent(

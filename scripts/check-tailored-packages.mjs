@@ -7,7 +7,6 @@ import {
   PUBLIC_BASE,
   WORKFLOW_VERSION,
   assertRecruiterFacingClaimsSupported,
-  assertValidV2Config,
   configInputSha256,
   getArtifactPaths,
   hasCoverLetterArtifact,
@@ -17,10 +16,14 @@ import {
   relativeRepoPath,
   resolveRepoPath,
   sha256File,
+  validateV2Config,
 } from './lib/workflow-v2.mjs';
 import {
   COVER_LETTER_TEMPLATE_VERSION,
 } from './lib/cover-letter-template.mjs';
+
+const FOUNDATION_SKILL_DRIFT_ERROR =
+  'resume.skills must match the selected foundation skill definitions and order';
 
 function usage() {
   console.error(
@@ -292,8 +295,27 @@ function checkV2Package(pkg, { publicBase = PUBLIC_BASE } = {}) {
     value: pkg.configPath,
     enumerable: false,
   });
+  const validationErrors = validateV2Config(config);
+  const packageBuilt = config.qa?.status === 'qa-passed';
+  const skillDrift =
+    packageBuilt && validationErrors.includes(FOUNDATION_SKILL_DRIFT_ERROR);
+  const blockingErrors = skillDrift
+    ? validationErrors.filter(
+        (error) => error !== FOUNDATION_SKILL_DRIFT_ERROR
+      )
+    : validationErrors;
+  if (skillDrift) {
+    warnings.push(
+      `${pkg.slug} skills text predates the current resume foundation; rebuild before reuse`
+    );
+  }
+  if (blockingErrors.length) {
+    failures.push(
+      `${pkg.slug} has an invalid v2 package config:\n- ${blockingErrors.join('\n- ')}`
+    );
+    return { failures, warnings };
+  }
   try {
-    assertValidV2Config(config);
     assertRecruiterFacingClaimsSupported(config);
   } catch (error) {
     failures.push(error.message);
