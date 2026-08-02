@@ -261,7 +261,7 @@
     "employerNeed": "Own healthcare client relationships and keep brand strategy, budgets, timelines, and cross-functional delivery aligned.",
     "bridgeType": "direct",
     "applicationStrategy": "direct",
-    "bridgeThesis": "the client work never stopped",
+    "bridgeThesis": "looking to make a return to account management",
     "proofIds": [
       "account-management-01",
       "account-management-02",
@@ -279,7 +279,7 @@
       "reason": "The user authorized splitting the consolidated account-management block into per-agency sub-entries so title progression and tenure are visible, restoring the Scout Marketing and XYREM work with the Account Supervisor title, correcting the account career start date to September 2010, consolidating the 2011 Pharma Choice awards, and rewriting bullets so direct account management leads the resume."
     },
     "layoutDensity": "compact",
-    "summary": "Healthcare account leader with 8 years managing Fortune 500 pharma and consumer brands, from Account Coordinator through Account Supervisor. I later moved into UX, analytics, and AI, but the client work never stopped. I made UX a stronger part of client delivery, grew a design team from 2 to 30, and now lead AI client initiatives from the first conversation through delivery and sale.",
+    "summary": "Looking to make a return to account management after several years leading UX, analytics, and AI work. As a healthcare account leader, I managed Fortune 500 pharma and consumer brands for 8 years, moving from Account Coordinator to Account Supervisor. I kept using those skills. I championed UX, grew a team from 2 to 30, and now lead AI client initiatives from discovery through sale.",
     "skillIds": [
       "client-account-leadership",
       "regulated-healthcare-client-delivery",
@@ -487,7 +487,7 @@
       "Brand budgets up to $20M",
       "National broadcast, FDA and MLR"
     ],
-    "intro": "I'm returning to an account role with 8 years managing Fortune 500 pharma and consumer brands, from Account Coordinator through Account Supervisor. The client work never stopped. I made UX a stronger part of delivery, grew a design team from 2 to 30, and now lead AI client initiatives from the first conversation through delivery and sale. I understand what clients want and what delivery teams need."
+    "intro": "I'm looking to make a return to account management after several years leading UX, analytics, and AI work. I managed Fortune 500 pharma and consumer brands for 8 years, moving from Account Coordinator to Account Supervisor. I kept using those skills. I championed UX, grew a team from 2 to 30, and now lead AI client initiatives from discovery through sale."
   },
   "contact": {
     "prompt": "If you need a healthcare account leader who can own the relationship, guide regulated campaign delivery, and keep internal teams clear on what comes next, email is the fastest way to reach me.",
@@ -523,16 +523,16 @@
   },
   "qa": {
     "status": "qa-passed",
-    "builtAt": "2026-08-01T22:40:05.878Z",
-    "configInputSha256": "3bfad5cdbd26babd0b26af6197b45a38da0eff7eeded7509e88b9f4fffcfa9b7",
+    "builtAt": "2026-08-02T00:39:25.835Z",
+    "configInputSha256": "51a44823c89b71cea2cd45c96faff83ae7f21e6864debe2fb02882acd6e6b92e",
     "sourceResumeSha256": "796b107e9ac0aa62e791915feaf7b152b1510d1411b015ce68e84a54a7b435f6",
     "resumeFoundation": {
       "id": "wally-mostafa-resume-2026-07-03",
       "sourcePdfSha256": "f9b05b6c3c134262b1af6c5734363daf4385cf335407a139779a37d138adf1aa"
     },
     "artifactHashes": {
-      "routeSha256": "c6126809fa9886a649120a5b9fb8cdbdfb767d67a5becb7d2b8033a2564f768f",
-      "resumePdfSha256": "36e3d96aba548497c0d61bd313d6644922671d1882fe8e4a547867a05dab18a5",
+      "routeSha256": "c7ff6581b89e02d79942b78aa4a9741012af934d71a3c2c0c12b97956a27305d",
+      "resumePdfSha256": "9067a2271a88d63bf872a839b4d5f649cb73e14e6941e064faa07245008300c3",
       "coverLetterPdfSha256": null,
       "coverLetterMarkdownSha256": null,
       "scopedProjectSha256": {}
@@ -552,7 +552,7 @@
       "ok": true,
       "pdfPath": "output/pdf/Wally-Mostafa-Healthcare-Account-Management-Resume.pdf",
       "pageCount": 2,
-      "fileSize": 162097,
+      "fileSize": 162119,
       "annotations": [
         {
           "page": 1,
@@ -685,8 +685,8 @@
       "status": "passed",
       "version": "2.2.0",
       "mode": "rewrite-requested",
-      "reviewedAt": "2026-08-01T22:39:46.380Z",
-      "copySha256": "527f6e8dd0184a886039485312bc418add100aa99d30232b58b40dcfdff95d57",
+      "reviewedAt": "2026-08-02T00:39:12.583Z",
+      "copySha256": "2ab7fd6cf945779a9552e197cff3d76e32c57522b4edab167967aaf0b95a10e2",
       "reviewMethod": "humanizer-skill",
       "semanticPassAttested": true,
       "staticChecksPassed": true
@@ -709,8 +709,8 @@
     "humanizerVersion": "2.2.0",
     "mode": "rewrite-requested",
     "status": "passed",
-    "reviewedAt": "2026-08-01T22:39:46.380Z",
-    "copySha256": "527f6e8dd0184a886039485312bc418add100aa99d30232b58b40dcfdff95d57",
+    "reviewedAt": "2026-08-02T00:39:12.583Z",
+    "copySha256": "2ab7fd6cf945779a9552e197cff3d76e32c57522b4edab167967aaf0b95a10e2",
     "preserved": [
       "claims"
     ],
