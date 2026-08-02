@@ -1256,9 +1256,26 @@
         "project-02.html"
       ],
       "resumePdfPath": "output/pdf/Wally-Mostafa-Healthcare-Account-Management-Resume.pdf",
-      "publishStatus": "local-only",
+      "publishStatus": "live-verified",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-08-02T13:27:40.455Z"
+      "builtAt": "2026-08-02T13:27:40.455Z",
+      "verification": {
+        "verifiedAt": "2026-08-02T13:28:36.440Z",
+        "routeUrl": "https://wallymo.github.io/healthcare-account-management/",
+        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-Healthcare-Account-Management-Resume.pdf",
+        "configUrl": "https://wallymo.github.io/scripts/packages/healthcare-account-management.json",
+        "projectUrls": [
+          "https://wallymo.github.io/project-01.html",
+          "https://wallymo.github.io/project-06.html",
+          "https://wallymo.github.io/project-02.html"
+        ],
+        "configSha256": "d0afd10a0f68d043f656bd146633f38c1f079564de241eb9cba7b26a5449f2d9",
+        "pdfSha256": "bd38ccb2a4ff635e965a35052066f9ca67746d9d546fcb47377421399a3f4d68",
+        "routeSha256": "598908a1a5ec526ac4083539c21210d4a980f5f803dd74dacc193d36be390ee2",
+        "scopedProjectSha256": {},
+        "configInputSha256": "caa54b65eb16ac0cec406edca28b8e6d75e861e9360cbaf0149cb4a7a4922963",
+        "qaBuiltAt": "2026-08-02T13:27:40.455Z"
+      }
     },
     {
       "slug": "healthcare-diagnostics-sales-support",
