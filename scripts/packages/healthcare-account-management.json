@@ -279,7 +279,7 @@
       "reason": "The user authorized splitting the consolidated account-management block into per-agency sub-entries so title progression and tenure are visible, restoring the Scout Marketing and XYREM work with the Account Supervisor title, correcting the account career start date to September 2010, consolidating the 2011 Pharma Choice awards, and rewriting bullets so direct account management leads the resume."
     },
     "layoutDensity": "compact",
-    "summary": "Healthcare account leader returning to account management. Across 8 years on Fortune 500 pharma brands I rose from Account Coordinator to Account Supervisor, running budgets up to $20M through FDA, OPDP, and med-legal review. Since then the job never really changed: I grew a UX team from 2 to 30, then ran AI client engagements from discovery through delivery.",
+    "summary": "Healthcare account leader returning to account management. Across 8 years on Fortune 500 pharma brands I rose from Account Coordinator to Account Supervisor, running budgets up to $20M through FDA, OPDP, and med-legal review. Since then the job never changed. In UX that meant design leadership, growing a team from 2 to 30. In AI it means leading client engagements from discovery through delivery.",
     "skillIds": [
       "client-account-leadership",
       "regulated-healthcare-client-delivery",
@@ -487,7 +487,7 @@
       "Brand budgets up to $20M",
       "National broadcast, FDA and MLR"
     ],
-    "intro": "I'm returning to account management after 8 years on Fortune 500 pharma brands, where I rose from Account Coordinator to Account Supervisor running budgets up to $20M through FDA and med-legal review. The job never really changed since: I grew and led a UX team from 2 to 30, then ran AI client engagements from discovery through delivery, learning where client work gets stuck and how to unstick it."
+    "intro": "I'm returning to account management after 8 years on Fortune 500 pharma brands, where I rose from Account Coordinator to Account Supervisor running budgets up to $20M through FDA and med-legal review. Since then the job never changed: design leadership, growing a UX team from 2 to 30, then leading AI client engagements from discovery through delivery. I know where client work gets stuck and how to unstick it."
   },
   "contact": {
     "prompt": "If you need a healthcare account leader who can own the relationship, guide regulated campaign delivery, and keep internal teams clear on what comes next, email is the fastest way to reach me.",
@@ -523,16 +523,16 @@
   },
   "qa": {
     "status": "qa-passed",
-    "builtAt": "2026-08-02T13:25:26.785Z",
-    "configInputSha256": "8005b1d324e48b1624cca671ac7971ea7382e4d8f31f904e693f1107b0627491",
+    "builtAt": "2026-08-02T13:27:40.455Z",
+    "configInputSha256": "caa54b65eb16ac0cec406edca28b8e6d75e861e9360cbaf0149cb4a7a4922963",
     "sourceResumeSha256": "796b107e9ac0aa62e791915feaf7b152b1510d1411b015ce68e84a54a7b435f6",
     "resumeFoundation": {
       "id": "wally-mostafa-resume-2026-07-03",
       "sourcePdfSha256": "f9b05b6c3c134262b1af6c5734363daf4385cf335407a139779a37d138adf1aa"
     },
     "artifactHashes": {
-      "routeSha256": "7080638d50d2ab195ceeedf2be2db888ecfaf2cf4dec179489dfecc8c60994cc",
-      "resumePdfSha256": "0082f7dd576074933670c946be6ab23ffaab2740ffa72161330473cc3342c12e",
+      "routeSha256": "598908a1a5ec526ac4083539c21210d4a980f5f803dd74dacc193d36be390ee2",
+      "resumePdfSha256": "bd38ccb2a4ff635e965a35052066f9ca67746d9d546fcb47377421399a3f4d68",
       "coverLetterPdfSha256": null,
       "coverLetterMarkdownSha256": null,
       "scopedProjectSha256": {}
@@ -552,7 +552,7 @@
       "ok": true,
       "pdfPath": "output/pdf/Wally-Mostafa-Healthcare-Account-Management-Resume.pdf",
       "pageCount": 2,
-      "fileSize": 162093,
+      "fileSize": 162214,
       "annotations": [
         {
           "page": 1,
@@ -685,8 +685,8 @@
       "status": "passed",
       "version": "2.2.0",
       "mode": "rewrite-requested",
-      "reviewedAt": "2026-08-02T13:25:21.427Z",
-      "copySha256": "dcbcff861d5eb2302771d0718c52e6c8a534cb8a631fff82d18c175e7d6e4c01",
+      "reviewedAt": "2026-08-02T13:27:35.523Z",
+      "copySha256": "822e46a3527056755ec2e74ccdc15375dafcbddf0251e860e8546dbf75b71d3b",
       "reviewMethod": "humanizer-skill",
       "semanticPassAttested": true,
       "staticChecksPassed": true
@@ -709,8 +709,8 @@
     "humanizerVersion": "2.2.0",
     "mode": "rewrite-requested",
     "status": "passed",
-    "reviewedAt": "2026-08-02T13:25:21.427Z",
-    "copySha256": "dcbcff861d5eb2302771d0718c52e6c8a534cb8a631fff82d18c175e7d6e4c01",
+    "reviewedAt": "2026-08-02T13:27:35.523Z",
+    "copySha256": "822e46a3527056755ec2e74ccdc15375dafcbddf0251e860e8546dbf75b71d3b",
     "preserved": [
       "claims"
     ],
