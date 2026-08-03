@@ -1,0 +1,714 @@
+{
+  "workflowVersion": 2,
+  "contractRevision": 7,
+  "slug": "cinder-agent-product-manager",
+  "roleTitle": "Cinder Agent Product Manager",
+  "artifactStem": "Cinder-Agent-Product-Manager",
+  "fitClass": "strong",
+  "routeMode": "canonical-projects",
+  "selectedProjects": [
+    "project-01.html",
+    "project-02.html",
+    "project-03.html"
+  ],
+  "job": {
+    "company": "Cinder",
+    "roleTitle": "Agent Product Manager",
+    "jobId": "2c483a08-7d94-4901-babb-5cbd880ce949",
+    "jobUrl": "https://jobs.ashbyhq.com/cinder/2c483a08-7d94-4901-babb-5cbd880ce949/",
+    "sourceChannel": "Cinder careers and Ashby job posting",
+    "dateCaptured": "2026-08-03",
+    "location": "New York, NY; hybrid",
+    "employmentType": "Full time",
+    "compensation": "$130K-$200K base salary plus equity",
+    "atsVendor": "Ashby",
+    "rawJd": "Cinder provides an AI-native platform for trust, safety, and risk. The Agent Product Manager helps design, deploy, and scale AI-powered systems for enterprise customers. This is a hands-on, forward-deployed product role working directly with customers to understand workflows, risks, and goals, then using Cinder's platform to build and iterate on AI-driven solutions in high-stakes environments.\n\nThe role moves between product thinking and execution: shaping solutions with customers, partnering with Engineering and Design, and feeding field insight into Cinder's product roadmap. Responsibilities include designing, configuring, and iterating on AI agents through prompt logic, workflows, and policies; understanding customer workflows, pain points, and risk tolerance; optimizing systems based on real-world performance; advising operators and executives on safe AI deployment and adoption; defining success and tradeoffs; representing Cinder in customer conversations; translating customer pain points into product signals and roadmap input; prioritizing platform improvements from real usage; and supporting pilots, launches, deployments, expansions, and key customer moments with Sales, Customer Success, Engineering, Design, and Leadership.\n\nCandidates should have at least two years of relevant experience in product management, consulting, engineering, operations, or a similar problem-solving role; strong technical intuition around AI- or ML-powered systems without needing to train models; comfort working directly with customers in ambiguous or high-stakes situations; clear communication across technical and non-technical audiences; and the ability to help define the playbook while executing day to day.\n\nPreferred experience includes AI agents, LLM-powered products, or ML-driven workflows; Trust & Safety, risk, fraud, integrity, or compliance-adjacent work; embedded enterprise customer experience in a technical, advisory, or forward-deployed role; and comfort operating between product strategy and hands-on execution. The position is based in New York City and is hybrid."
+  },
+  "classification": {
+    "targetLane": "ai-product-implementation",
+    "evidenceMode": "balanced",
+    "primarySource": "The resume directly shows customer discovery, AI workflow design, working POCs, product requirements, client iteration, enterprise platform leadership, and delivery across ambiguous regulated environments.",
+    "supportingSource": "The portfolio validates governed AI workflows, human review, product discovery, rapid prototyping, enterprise systems, and the decisions that moved each product from an unclear need toward a working solution.",
+    "hardGateStatus": "pass",
+    "hardGates": [
+      {
+        "gate": "At least two years of relevant product, consulting, engineering, operations, or similar problem-solving experience",
+        "status": "pass",
+        "requirementId": "relevant-product-and-implementation-experience",
+        "evidence": "Current AI product and implementation work, founder-led product ownership, and enterprise product leadership provide more than two years of directly relevant experience."
+      },
+      {
+        "gate": "Technical intuition around AI- or ML-powered systems",
+        "status": "pass",
+        "requirementId": "ai-workflow-design-and-iteration",
+        "evidence": "The resume and portfolio document governed LLM and VLM workflows, prompt-defined criteria, model orchestration, human review, front-end and backend logic, prototype validation, and production handoff."
+      },
+      {
+        "gate": "Comfort working directly with customers in ambiguous and high-stakes situations",
+        "status": "pass",
+        "requirementId": "customer-discovery-and-strategic-partnership",
+        "evidence": "Current engagements run from client discovery through working prototypes and delivery, supported by eight years managing Fortune 500 healthcare clients in regulated environments."
+      }
+    ]
+  },
+  "requirements": [
+    {
+      "id": "relevant-product-and-implementation-experience",
+      "text": "Bring at least two years of relevant product management, consulting, engineering, operations, or similar problem-solving experience.",
+      "priority": "hard-gate",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "One Block Away work leads client discovery, product strategy, AI workflow design, working POCs, roadmap decisions, demos, and client iteration.",
+        "Hedgehox work translates regulated customer needs into product requirements and functional AI tools."
+      ],
+      "proofIds": [
+        "one-block-away-01",
+        "one-block-away-04",
+        "hedgehox-03"
+      ],
+      "destinations": [
+        "summary",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "client discovery",
+        "AI workflow design",
+        "working prototype"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "ai-workflow-design-and-iteration",
+      "text": "Design, configure, deploy, and iterate on AI-powered systems using prompt logic, workflows, policies, and observed performance.",
+      "priority": "hard-gate",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Current work designs governed LLM and VLM workflows using prompt-defined criteria, model orchestration, human review, functional POCs, and production handoff.",
+        "Claims Detector applies structured review logic to promotional claims, evidence gaps, and audit-ready annotations."
+      ],
+      "proofIds": [
+        "hedgehox-02",
+        "hedgehox-03",
+        "one-block-away-04"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "AI workflows",
+        "prompt-defined criteria",
+        "human review",
+        "production handoff"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "customer-discovery-and-strategic-partnership",
+      "text": "Work directly with enterprise customers to understand workflows, pain points, goals, and risk tolerance, then act as a trusted product partner.",
+      "priority": "hard-gate",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Current work starts with client discovery and turns unclear business questions into working products, demos, and roadmap decisions.",
+        "Eight years of Fortune 500 account leadership show direct client ownership, communication, prioritization, and regulated delivery."
+      ],
+      "proofIds": [
+        "one-block-away-01",
+        "account-management-01",
+        "account-management-03"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience"
+      ],
+      "resumeTerms": [
+        "client discovery",
+        "client iteration",
+        "Fortune 500"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "feedback-loops-and-product-direction",
+      "text": "Turn customer pain points and observed system behavior into product signals, roadmap input, and platform improvements.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "One Block Away work moves from customer discovery through testable concepts, working POCs, demos, and roadmap decisions.",
+        "Heartbeat and Kinesso work translated stakeholder input, research, and product use into prioritized product direction."
+      ],
+      "proofIds": [
+        "one-block-away-01",
+        "heartbeat-01",
+        "kinesso-03"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "roadmap decisions",
+        "product direction",
+        "user needs"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "cross-functional-pilots-and-delivery",
+      "text": "Partner with Engineering, Design, Sales, Customer Success, and leadership during pilots, launches, deployments, and key customer moments.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Current work spans client discovery, product strategy, UX, AI workflows, front-end and backend decisions, demos, and delivery.",
+        "Kinesso leadership grew a distributed product design team from 2 to 30 while supporting enterprise analytics used by more than 7,000 people."
+      ],
+      "proofIds": [
+        "one-block-away-04",
+        "kinesso-01",
+        "heartbeat-03"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "engineering teams",
+        "2 to 30",
+        "7,000+"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "high-stakes-risk-and-human-review",
+      "text": "Operate effectively in high-stakes AI environments, with useful experience in Trust & Safety, risk, fraud, integrity, or compliance-adjacent work.",
+      "priority": "preferred",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Direct adjacent evidence includes regulated claims review, evidence gaps, audit-ready annotations, human review, FDA signal monitoring, risk scoring, and evidence trails.",
+        "The record does not establish direct platform Trust & Safety, fraud, abuse, or integrity ownership."
+      ],
+      "proofIds": [
+        "hedgehox-02",
+        "hedgehox-06",
+        "one-block-away-03"
+      ],
+      "destinations": [
+        "summary",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "regulated",
+        "risk scoring",
+        "evidence trails",
+        "human review"
+      ],
+      "matchMode": "contextual"
+    },
+    {
+      "id": "fast-ambiguous-ownership",
+      "text": "Move quickly through ambiguity, help define the playbook, and own work from product thinking through hands-on execution.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Current product work begins with unclear business questions and carries them through requirements, prototypes, implementation choices, demos, and client delivery.",
+        "Founder-led work requires independent ownership across product strategy, UX, AI workflow design, and working software."
+      ],
+      "proofIds": [
+        "one-block-away-01",
+        "one-block-away-04",
+        "hedgehox-01"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "ambiguous",
+        "working POCs",
+        "delivery"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "clear-customer-and-technical-communication",
+      "text": "Communicate clearly and build trust with technical and non-technical customers, operators, executives, and internal teams.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Eight years of Fortune 500 client leadership required clear communication across brand, account, creative, UX, development, and regulated review teams.",
+        "Current work translates technical product behavior into client demos, product stories, decisions, and delivery plans."
+      ],
+      "proofIds": [
+        "account-management-03",
+        "hedgehox-01",
+        "one-block-away-01"
+      ],
+      "destinations": [
+        "skills",
+        "experience"
+      ],
+      "resumeTerms": [
+        "client discovery",
+        "demo narratives",
+        "development teams"
+      ],
+      "matchMode": "recognized-equivalent"
+    }
+  ],
+  "fitGate": {
+    "resumeBase": {
+      "mode": "ai-product-implementation",
+      "sourceProfiles": [
+        {
+          "id": "ai-product-implementation",
+          "version": 1
+        }
+      ],
+      "leadProfileId": "ai-product-implementation",
+      "accountPresentation": "consolidated",
+      "action": "tailor-to-jd",
+      "rationale": "Cinder's Agent Product Manager role is centered on AI product implementation, customer workflow discovery, hands-on solution design, and product feedback loops. Account leadership strengthens the customer-facing case but is not a separate account-ownership operating center."
+    },
+    "supportedOverlap": [
+      "Current work leads customer discovery and turns ambiguous workflows into product requirements, governed AI workflows, working POCs, demos, and roadmap decisions.",
+      "Direct AI-product evidence includes LLM and VLM workflows, prompt-defined criteria, model orchestration, human review, front-end and backend logic, and production handoff.",
+      "Regulated claims-review products and risk-scoring dashboards provide credible high-stakes, compliance-adjacent experience.",
+      "Enterprise product leadership supported analytics used by 7,000+ people across 22 white-label brands and scaled a product design team from 2 to 30.",
+      "Eight years of Fortune 500 client leadership support trusted advising, clear communication, tradeoff management, and follow-through.",
+      "Portfolio work shows hands-on product thinking and execution rather than strategy documents alone."
+    ],
+    "unsupportedRequirements": [
+      "Direct ownership of a Trust & Safety, fraud, abuse, or integrity platform.",
+      "Documented deployment and scaling of production AI agents across large enterprise customer environments.",
+      "Named model-evaluation, observability, or incident-response ownership.",
+      "Formal enterprise SaaS expansion, renewal, or implementation ownership."
+    ],
+    "actualMismatches": [],
+    "missingEvidence": [
+      "Direct Trust & Safety platform experience; the supported bridge is regulated risk, human review, and compliance-adjacent product work.",
+      "Production-scale AI agent deployment and optimization metrics.",
+      "NYC hybrid availability or willingness to relocate is not documented and should be discussed with the recruiter.",
+      "A conventional Product Manager title sequence; the product case rests on direct responsibility-level evidence."
+    ],
+    "coverLetterBridge": {
+      "status": "not-needed",
+      "rationale": "The role's central work is directly visible in the resume and portfolio, and this package is intended for a warm introduction to Cinder's lead recruiter. A cover letter would add little before that conversation."
+    },
+    "recommendation": "Proceed with a Cinder-specific Agent Product Manager package. Lead with client discovery, governed AI workflow design, working products, feedback loops, enterprise scale, and regulated-risk judgment. Keep direct Trust & Safety experience, production-scale agent deployment, and NYC availability as open discussion points."
+  },
+  "positioning": {
+    "laneId": "ai-product-implementation",
+    "targetIdentity": "Agent Product Manager",
+    "employerNeed": "Design and deploy useful AI-powered solutions with customers, learn from real usage, and turn those lessons into stronger product direction.",
+    "bridgeType": "direct",
+    "applicationStrategy": "direct",
+    "bridgeThesis": "discovery, AI implementation, and product direction",
+    "proofIds": [
+      "one-block-away-01",
+      "hedgehox-02",
+      "kinesso-01"
+    ],
+    "remainingGap": null
+  },
+  "coverLetter": null,
+  "resume": {
+    "foundationId": "wally-mostafa-resume-2026-07-03",
+    "compositionMode": "foundation-complete",
+    "layoutDensity": "compact",
+    "summary": "Agent Product Manager who connects discovery, AI implementation, and product direction to turn ambiguous customer workflows into working, governed tools. I shape requirements, design AI and human-review workflows, and carry client engagements through prototypes, demos, and delivery. My work includes regulated claims-review products, risk-scoring dashboards, enterprise platforms used by 7,000+ people, and a product design team grown from 2 to 30.",
+    "skillIds": [
+      "ai-implementation-workflow-design",
+      "product-strategy-poc-delivery",
+      "client-success-product-adoption",
+      "enterprise-ux-design-systems"
+    ],
+    "skills": [
+      {
+        "label": "AI Implementation & Workflow Design",
+        "description": "Governed LLM/VLM workflows, multimodal review, RAG/knowledge bases, prompt-defined criteria, model orchestration, and human review surfaces"
+      },
+      {
+        "label": "Product Strategy & POC Delivery",
+        "description": "Discovery, scoping, requirements, prototype validation, demo narratives, build-ready logic, and production handoff"
+      },
+      {
+        "label": "Client Success & Product Adoption",
+        "description": "Client discovery, adoption-focused workflows, training and roadshows, human review, and product decisions based on user needs"
+      },
+      {
+        "label": "Enterprise UX & Design Systems",
+        "description": "Team scaling (2 to 30), enterprise analytics, workflow UX, data visualization, component libraries, and accessibility (WCAG)"
+      }
+    ],
+    "roles": {
+      "hedgehox": [
+        "Secured an investor for proprietary Claims Detection software by building the functional POC, shaping the product story, and iterating with stakeholders",
+        "Designed human-in-the-loop Claims Detector workflows that identify promotional claims, surface evidence gaps, and pre-populate audit-ready annotations before MLR submission",
+        "Turn pharma agency needs into product requirements and working tools for MLR claim review, brief intake, scoping, review routing, submission capture, and FDA signal monitoring",
+        "Designed the full Xenagos Bio startup biopharma website from scratch, including investor-facing structure, scientific positioning, visual direction, and hidden design-system handoff",
+        "Built Scope Generator for pharma agency finance and operations teams to manage regional rate cards, brands, sub-brands, and natural-language scope changes",
+        "Developed FDA Warning Tool concepts that connect warning-letter patterns to content-risk guidance for pharma teams"
+      ],
+      "one-block-away": [
+        "Lead client discovery to understand workflows, pain points, and goals, then turn them into testable product concepts, AI workflows, working POCs, demo flows, and roadmap decisions",
+        "Built ListingPal's AI listing-generation POC and landing page, turning basic property inputs into listing copy, social posts, ad copy, styling direction, and MLS/SEO-ready language in under 90 seconds",
+        "Built WeReady's Bailey Intelligence dashboard, translating founder inputs, GitHub signals, source health, risk scoring, and evidence trails into startup-readiness workflows",
+        "Own product strategy, UX, AI workflow design, front-end build, backend logic, demo readiness, and client iteration from first ask through working prototype",
+        "Currently building the website and sponsor strategy for a Tunisia youth soccer program, positioning the project for player advancement, community support, and donor outreach"
+      ],
+      "kinesso": [
+        "Scaled product design from 2 to 30 people across the US and Poland for enterprise analytics used by 7,000+ users across 22 white-label brands",
+        "Led UX and design-system strategy for MIE data visualization, dashboard building, brand theming, and reusable analytics components",
+        "Built the Digital Experience Audit workflow for channel scoring, benchmarks, recommendations, visualization, and presentation-ready client outputs",
+        "Design-system and analytics work earned 5 Indigo Gold, 4 Indigo Silver, and Red Dot recognition"
+      ],
+      "omnicom": [
+        "Supported oncology accounts as a freelance UX designer, combining UX design and account-management experience to strengthen regulated healthcare work",
+        "Championed UX best practices across account, strategy, creative, and delivery conversations, translating brand goals into clearer user flows, content structure, and digital recommendations"
+      ],
+      "heartbeat": [
+        "Led UX research and experience strategy for pharma and healthcare work, translating stakeholder input, competitive audits, and user needs into digital product direction",
+        "Created journey maps, site maps, user flows, wireframes, and prototypes for patient, HCP, and internal brand-team experiences across regulated healthcare programs",
+        "Partnered with strategy, creative, account, and engineering teams to move research findings into prioritized, build-ready product and campaign experiences"
+      ],
+      "account-management": [
+        "8 years managing Fortune 500 pharma and healthcare clients and brand budgets up to $20M across CNS/neurology, psychiatry, cardiovascular/metabolic, and sleep/wakefulness brands including NUVIGIL, Namenda XR, Lipitor, and Zoloft",
+        "One of two account consumer leads on FCB Health's largest pharma account across all verticals: TV, radio, digital, gaming, Times Square, unbranded campaigns, brand planning, and MLR review",
+        "Translated client and brand strategy into briefs, creative feedback, production requirements, priorities, timelines, and MLR-ready delivery across account, creative, UX, and development teams"
+      ]
+    },
+    "sourceBulletIds": {
+      "hedgehox": [
+        "hedgehox-01",
+        "hedgehox-02",
+        "hedgehox-03",
+        "hedgehox-04",
+        "hedgehox-05",
+        "hedgehox-06"
+      ],
+      "one-block-away": [
+        "one-block-away-01",
+        "one-block-away-02",
+        "one-block-away-03",
+        "one-block-away-04",
+        "one-block-away-05"
+      ],
+      "kinesso": [
+        "kinesso-01",
+        "kinesso-02",
+        "kinesso-03",
+        "kinesso-04"
+      ],
+      "omnicom": [
+        "omnicom-01",
+        "omnicom-02"
+      ],
+      "heartbeat": [
+        "heartbeat-01",
+        "heartbeat-02",
+        "heartbeat-03"
+      ],
+      "account-management": [
+        "account-management-01",
+        "account-management-02",
+        "account-management-03"
+      ]
+    }
+  },
+  "hero": {
+    "eyebrow": "Cinder | Agent Product Manager",
+    "tags": [
+      "AI workflow design",
+      "Customer discovery",
+      "Product strategy to delivery"
+    ],
+    "intro": "I connect discovery, AI implementation, and product direction. I turn ambiguous, high-stakes workflows into governed tools, working POCs, and roadmap decisions. That includes human-in-the-loop claims review, risk-scoring dashboards, enterprise products used by 7,000+ people, and client engagements I lead from the first conversation through delivery."
+  },
+  "contact": {
+    "prompt": "If Cinder needs an Agent Product Manager who can work directly with customers, translate messy workflows into AI product decisions, and stay close through implementation, email is the fastest way to reach me.",
+    "signoff": "Customer discovery | AI workflow design | product delivery"
+  },
+  "copyReview": {
+    "humanizerVersion": "2.2.0",
+    "mode": "rewrite-requested",
+    "status": "passed",
+    "reviewedAt": "2026-08-03T20:44:55.965Z",
+    "copySha256": "eecbe41416e46bc0070bb24984d854b40e434ce76fb9b145f4934f3e49802fd1",
+    "preserved": [
+      "claims"
+    ],
+    "rewriteAuthorized": true,
+    "reviewMethod": "humanizer-skill",
+    "semanticPassAttested": true,
+    "staticChecksPassed": true,
+    "finalAntiAiPass": true,
+    "remainingTells": []
+  },
+  "constraints": {
+    "doNotClaim": [
+      "Direct Trust & Safety, fraud, abuse, or integrity platform ownership",
+      "Production-scale AI agent deployment or optimization metrics",
+      "Model training, fine-tuning, or ML engineering ownership",
+      "Named AI evaluation, observability, or incident-response ownership",
+      "Formal enterprise SaaS expansion, renewal, or implementation ownership",
+      "Python, SQL, API debugging, or systems-architecture ownership",
+      "NYC hybrid availability or willingness to relocate"
+    ],
+    "blockedTerms": [
+      "Trust & Safety expert",
+      "deployed production AI agents at scale",
+      "trained machine-learning models",
+      "owned model evaluation",
+      "enterprise SaaS expansion",
+      "Python developer",
+      "SQL expert",
+      "based in New York"
+    ]
+  },
+  "privacy": {
+    "publicSafe": true,
+    "notes": "Contains only the public Cinder Agent Product Manager posting and public-safe evidence from the resume and portfolio. It excludes recruiter identity, outreach details, compensation boundaries, relocation decisions, and private application answers."
+  },
+  "qa": {
+    "status": "qa-passed",
+    "builtAt": "2026-08-03T20:45:00.291Z",
+    "configInputSha256": "a1e9880b33f68ec1757042a3ceb691909a0e2be6a8b3798073dec20a3b5bb5fa",
+    "sourceResumeSha256": "2265313e78b596a2b37d6d8f9a95081e4321b4047f142a5f0ddf22449cab4b9c",
+    "resumeFoundation": {
+      "id": "wally-mostafa-resume-2026-07-03",
+      "sourcePdfSha256": "f9b05b6c3c134262b1af6c5734363daf4385cf335407a139779a37d138adf1aa"
+    },
+    "resumeBase": {
+      "mode": "ai-product-implementation",
+      "sourceProfiles": [
+        {
+          "id": "ai-product-implementation",
+          "version": 1
+        }
+      ],
+      "leadProfileId": "ai-product-implementation",
+      "accountPresentation": "consolidated",
+      "action": "tailor-to-jd",
+      "registryVersion": 1,
+      "registrySha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108"
+    },
+    "artifactHashes": {
+      "routeSha256": "14c804d0b5c5b9feed38181c3be79567924d5db342715879251ddfdaac0931b4",
+      "resumePdfSha256": "5b5ee24474bc9fc680b0ab2b06357c1642f76938628d3b2cb75207bd81f759a5",
+      "coverLetterPdfSha256": null,
+      "coverLetterMarkdownSha256": null,
+      "scopedProjectSha256": {}
+    },
+    "renderer": {
+      "browser": {
+        "name": "chrome-headless-shell",
+        "version": "Google Chrome for Testing 149.0.7827.55"
+      },
+      "htmlPath": "tmp/tailored-resumes/cinder-agent-product-manager.html",
+      "pdfPath": "output/pdf/Wally-Mostafa-Cinder-Agent-Product-Manager-Resume.pdf",
+      "fontWait": false
+    },
+    "coverLetterRenderer": null,
+    "coverLetter": null,
+    "ats": {
+      "ok": true,
+      "pdfPath": "output/pdf/Wally-Mostafa-Cinder-Agent-Product-Manager-Resume.pdf",
+      "pageCount": 2,
+      "fileSize": 150344,
+      "annotations": [
+        {
+          "page": 1,
+          "uri": "mailto:wmostafa12@gmail.com"
+        },
+        {
+          "page": 1,
+          "uri": "https://linkedin.com/in/wallymo"
+        },
+        {
+          "page": 1,
+          "uri": "https://wallymo.github.io/cinder-agent-product-manager/"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/6748"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/4629"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.red-dot.org/project/dxa-digital-experience-audit-55219"
+        }
+      ],
+      "coverage": [
+        {
+          "id": "relevant-product-and-implementation-experience",
+          "requirement": "Bring at least two years of relevant product management, consulting, engineering, operations, or similar problem-solving experience.",
+          "priority": "hard-gate",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "client discovery",
+            "AI workflow design",
+            "working prototype"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "ai-workflow-design-and-iteration",
+          "requirement": "Design, configure, deploy, and iterate on AI-powered systems using prompt logic, workflows, policies, and observed performance.",
+          "priority": "hard-gate",
+          "evidenceStatus": "direct",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "AI workflows",
+            "prompt-defined criteria",
+            "human review",
+            "production handoff"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "customer-discovery-and-strategic-partnership",
+          "requirement": "Work directly with enterprise customers to understand workflows, pain points, goals, and risk tolerance, then act as a trusted product partner.",
+          "priority": "hard-gate",
+          "evidenceStatus": "direct",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "client discovery",
+            "client iteration",
+            "Fortune 500"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "feedback-loops-and-product-direction",
+          "requirement": "Turn customer pain points and observed system behavior into product signals, roadmap input, and platform improvements.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "roadmap decisions",
+            "product direction",
+            "user needs"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "cross-functional-pilots-and-delivery",
+          "requirement": "Partner with Engineering, Design, Sales, Customer Success, and leadership during pilots, launches, deployments, and key customer moments.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "engineering teams",
+            "2 to 30",
+            "7,000+"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "high-stakes-risk-and-human-review",
+          "requirement": "Operate effectively in high-stakes AI environments, with useful experience in Trust & Safety, risk, fraud, integrity, or compliance-adjacent work.",
+          "priority": "preferred",
+          "evidenceStatus": "adjacent",
+          "matchMode": "contextual",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "regulated",
+            "risk scoring",
+            "evidence trails",
+            "human review"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "fast-ambiguous-ownership",
+          "requirement": "Move quickly through ambiguity, help define the playbook, and own work from product thinking through hands-on execution.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "ambiguous",
+            "working POCs",
+            "delivery"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "clear-customer-and-technical-communication",
+          "requirement": "Communicate clearly and build trust with technical and non-technical customers, operators, executives, and internal teams.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "client discovery",
+            "demo narratives",
+            "development teams"
+          ],
+          "missingTerms": []
+        }
+      ],
+      "failures": [],
+      "warnings": []
+    },
+    "humanizer": {
+      "status": "passed",
+      "version": "2.2.0",
+      "mode": "rewrite-requested",
+      "reviewedAt": "2026-08-03T20:44:55.965Z",
+      "copySha256": "eecbe41416e46bc0070bb24984d854b40e434ce76fb9b145f4934f3e49802fd1",
+      "reviewMethod": "humanizer-skill",
+      "semanticPassAttested": true,
+      "staticChecksPassed": true
+    },
+    "route": {
+      "viewports": [
+        {
+          "name": "desktop",
+          "errors": []
+        },
+        {
+          "name": "mobile",
+          "errors": []
+        }
+      ],
+      "errors": []
+    }
+  }
+}
