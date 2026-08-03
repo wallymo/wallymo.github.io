@@ -1211,14 +1211,6 @@ function validateResume(config, errors, profileRegistry = null) {
     const skillsById = new Map(skillBank.map((skill) => [skill.id, skill]));
     pushError(
       errors,
-      wordCount(resume.summary) >= 45 &&
-        (config.contractRevision !== 7 || wordCount(resume.summary) <= 65),
-      config.contractRevision === 7
-        ? 'resume.summary must be 45 to 65 words for revision 7'
-        : 'resume.summary must be at least 45 words for revisions 5 and 6'
-    );
-    pushError(
-      errors,
       !/\b(?:Wally|he|him|his)\b/i.test(resume.summary || ''),
       'resume.summary must use first person or an implied first-person professional identity'
     );

@@ -516,7 +516,7 @@ Required groups:
 - `positioning`: lane, target identity, employer need, bridge type, application strategy, bridge thesis, proof IDs, and remaining gap;
 - `requirements`: requirement-to-evidence matrix with source, confidence, proof IDs, destinations, and match mode;
 - `package`: route mode, selected projects, resume PDF path;
-- `copy`: a 45–65-word summary, four to six foundation skill selections, every mapped experience bullet, hero, and contact copy;
+- `copy`: a concise summary that fits the page-one layout, four to six foundation skill selections, every mapped experience bullet, hero, and contact copy;
 - `constraints`: unsupported claims and important boundaries;
 - `privacy`: explicit confirmation that committed JD and evidence fields contain only public or sanitized material;
 - `qa`: last render/check results.

@@ -725,6 +725,23 @@ test('pure account and pure AI roles remain single-profile despite incidental te
   assert.equal(aiProduct.fitGate.resumeBase.mode, 'ai-product-implementation');
 });
 
+test('resume summaries have no hard word-count gate', () => {
+  const shortSummary = validConfig();
+  shortSummary.resume.summary =
+    'AI product and implementation leader. I connect customer needs, product decisions, and delivery.';
+  assert.ok(shortSummary.resume.summary.trim().split(/\s+/).length < 45);
+  assert.deepEqual(validateV2Config(shortSummary), []);
+
+  const longSummary = validConfig();
+  longSummary.resume.summary = [
+    longSummary.resume.summary,
+    'My work also includes client discovery, regulated review workflows, enterprise design leadership, product adoption, and cross-functional delivery across healthcare and large software organizations.',
+    'That range gives me a practical view of how a useful idea becomes a working product and how teams earn confidence in it.',
+  ].join(' ');
+  assert.ok(longSummary.resume.summary.trim().split(/\s+/).length > 65);
+  assert.deepEqual(validateV2Config(longSummary), []);
+});
+
 test('revision 7 hybrid-selective draws from both evidence pools without concatenating them', () => {
   const hybrid = hybridSelectiveConfig();
   const { registry } = resumeBaseFixtureData();
