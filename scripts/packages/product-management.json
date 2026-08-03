@@ -320,24 +320,6 @@
         "description": "Client discovery, adoption-focused workflows, training and roadshows, human review, and product decisions based on user needs"
       }
     ],
-    "experienceSections": [
-      {
-        "heading": "Product Management & Leadership Experience",
-        "roleIds": [
-          "hedgehox",
-          "one-block-away",
-          "kinesso"
-        ]
-      },
-      {
-        "heading": "Earlier Client & Experience Strategy",
-        "roleIds": [
-          "omnicom",
-          "heartbeat",
-          "account-management"
-        ]
-      }
-    ],
     "roles": {
       "hedgehox": [
         "Secured an investor for proprietary Claims Detection software by building the functional POC, shaping the product story, and iterating with investors",
@@ -430,8 +412,8 @@
     "humanizerVersion": "2.2.0",
     "mode": "rewrite-requested",
     "status": "passed",
-    "reviewedAt": "2026-08-03T19:10:17.825Z",
-    "copySha256": "4ee04a9649b568c4609f36c4d791bc0257cfd29ee7289099794eba502e6c23ea",
+    "reviewedAt": "2026-08-03T19:53:05.461Z",
+    "copySha256": "aa68d180eecf05d972f7b57b3549a9ef390f78155f466fd9959e9829b4a5c010",
     "preserved": [
       "claims"
     ],
@@ -469,8 +451,8 @@
   },
   "qa": {
     "status": "qa-passed",
-    "builtAt": "2026-08-03T19:12:11.742Z",
-    "configInputSha256": "df06d1b7a87bffab39c5cfd5f4f6d754d36f22aec33c4d7b39d8dc527c1eda43",
+    "builtAt": "2026-08-03T19:53:13.295Z",
+    "configInputSha256": "1be4f9d4202f262955f1e2531cbdb5b45f4fdd44d266924f40c7b58ce79c34c7",
     "sourceResumeSha256": "2265313e78b596a2b37d6d8f9a95081e4321b4047f142a5f0ddf22449cab4b9c",
     "resumeFoundation": {
       "id": "wally-mostafa-resume-2026-07-03",
@@ -492,7 +474,7 @@
     },
     "artifactHashes": {
       "routeSha256": "7cd11203965bd04f92a0af7b57888de808c8d6a6969e6acdca189af696894f68",
-      "resumePdfSha256": "2580fc32849dadcb56e215d4f3e67a9996db4fc2764418917ea2b0ccc405b99f",
+      "resumePdfSha256": "94cfa6dec6fd193f674dad8ade81a0f7e9ded5103f60c083ae724c9c158e4fe9",
       "coverLetterPdfSha256": null,
       "coverLetterMarkdownSha256": null,
       "scopedProjectSha256": {}
@@ -512,7 +494,7 @@
       "ok": true,
       "pdfPath": "output/pdf/Wally-Mostafa-Product-Management-Resume.pdf",
       "pageCount": 2,
-      "fileSize": 152641,
+      "fileSize": 148993,
       "annotations": [
         {
           "page": 1,
@@ -650,8 +632,8 @@
       "status": "passed",
       "version": "2.2.0",
       "mode": "rewrite-requested",
-      "reviewedAt": "2026-08-03T19:10:17.825Z",
-      "copySha256": "4ee04a9649b568c4609f36c4d791bc0257cfd29ee7289099794eba502e6c23ea",
+      "reviewedAt": "2026-08-03T19:53:05.461Z",
+      "copySha256": "aa68d180eecf05d972f7b57b3549a9ef390f78155f466fd9959e9829b4a5c010",
       "reviewMethod": "humanizer-skill",
       "semanticPassAttested": true,
       "staticChecksPassed": true
