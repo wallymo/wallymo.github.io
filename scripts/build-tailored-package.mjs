@@ -545,19 +545,19 @@ function buildResume(config, paths) {
     resumeHtml = resumeHtml.replace(
       '</head>',
       `<style data-resume-layout-density="compact">
-  @page { margin: 0.45in; }
+  @page { margin: 0.4in; }
   @media print {
     header {
-      padding-bottom: 0.55rem;
-      margin-bottom: 0.7rem;
+      padding-bottom: 0.45rem;
+      margin-bottom: 0.55rem;
     }
     section {
-      margin-bottom: 0.65rem;
+      margin-bottom: 0.5rem;
     }
     .section-title {
       font-size: 0.72rem;
       padding-bottom: 2px;
-      margin-bottom: 0.45rem;
+      margin-bottom: 0.35rem;
     }
     .summary,
     .capabilities-list li,
@@ -568,7 +568,7 @@ function buildResume(config, paths) {
       line-height: 1.3;
     }
     .job {
-      margin-bottom: 0.65rem;
+      margin-bottom: 0.45rem;
     }
     .job-title {
       font-size: 10pt;
@@ -577,7 +577,7 @@ function buildResume(config, paths) {
       font-size: 8.5pt;
     }
     .job-desc li {
-      margin-bottom: 0.12rem;
+      margin-bottom: 0.08rem;
     }
   }
 </style>
