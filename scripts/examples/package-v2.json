@@ -1,6 +1,6 @@
 {
   "workflowVersion": 2,
-  "contractRevision": 6,
+  "contractRevision": 7,
   "slug": "company-role",
   "roleTitle": "Company Role",
   "artifactStem": "Company-Role",
@@ -93,6 +93,19 @@
       "status": "not-needed",
       "rationale": "The resume and portfolio already provide direct evidence for the role's core work, so a cover letter is not needed to make the application credible."
     },
+    "resumeBase": {
+      "mode": "ai-product-implementation",
+      "sourceProfiles": [
+        {
+          "id": "ai-product-implementation",
+          "version": 1
+        }
+      ],
+      "leadProfileId": "ai-product-implementation",
+      "accountPresentation": "consolidated",
+      "action": "tailor-to-jd",
+      "rationale": "The role's primary operating center is AI product implementation, with account leadership serving as supporting evidence."
+    },
     "recommendation": "Proceed with the supported positioning described above."
   },
   "positioning": {
@@ -112,6 +125,7 @@
   "coverLetter": null,
   "resume": {
     "foundationId": "wally-mostafa-resume-2026-07-03",
+    "compositionMode": "foundation-complete",
     "summary": "AI product and implementation leader with 15 years across healthcare and enterprise software. I connect customer needs, product decisions, and delivery. I have built regulated AI tools from discovery through working software, led systems used by 7,000+ people across 22 brands, and managed $2M-$50M+ Fortune 500 accounts.",
     "skillIds": [
       "ai-implementation-workflow-design",

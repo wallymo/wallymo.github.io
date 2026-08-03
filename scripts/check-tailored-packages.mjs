@@ -5,6 +5,7 @@ import { execFileSync } from 'node:child_process';
 import path from 'node:path';
 import {
   PUBLIC_BASE,
+  RESUME_BASE_PROFILES_PATH,
   WORKFLOW_VERSION,
   assertRecruiterFacingClaimsSupported,
   configInputSha256,
@@ -98,6 +99,7 @@ function collectScopedPaths(config, paths) {
       ? [paths.coverLetterPdfPath, paths.coverLetterMarkdownPath]
       : []),
     config.__configRelativePath,
+    ...(config.contractRevision === 7 ? [RESUME_BASE_PROFILES_PATH] : []),
     'scripts/tailored-packages.json',
     ...(config.routeMode === 'scoped-projects'
       ? config.selectedProjects.map((project) => `${paths.slug}/${project}`)
@@ -140,6 +142,9 @@ function validateLiveVerification(
       'coverLetterMarkdownUrl'
     );
   }
+  if (config.contractRevision === 7) {
+    requiredVerificationFields.push('resumeBaseProfilesUrl');
+  }
   for (const field of requiredVerificationFields) {
     if (typeof verification[field] !== 'string' || !verification[field]) {
       failures.push(`${pkg.slug} verification ${field} is missing`);
@@ -162,6 +167,13 @@ function validateLiveVerification(
             config.qa.artifactHashes?.coverLetterPdfSha256,
           coverLetterMarkdownSha256:
             config.qa.artifactHashes?.coverLetterMarkdownSha256,
+        }
+      : {}),
+    ...(config.contractRevision === 7
+      ? {
+          resumeBaseProfilesSha256: sha256File(
+            RESUME_BASE_PROFILES_PATH
+          ),
         }
       : {}),
   };
@@ -329,6 +341,15 @@ function checkV2Package(pkg, { publicBase = PUBLIC_BASE } = {}) {
     fitClass: config.fitClass,
     routeMode: config.routeMode,
     resumePdfPath: paths.resumePdfPath,
+    ...(config.contractRevision === 7
+      ? {
+          resumeBaseMode: config.fitGate.resumeBase.mode,
+          resumeBaseLeadProfile: config.fitGate.resumeBase.leadProfileId,
+          resumeBaseAction: config.fitGate.resumeBase.action,
+          accountPresentation:
+            config.fitGate.resumeBase.accountPresentation,
+        }
+      : {}),
     ...(hasCoverLetterArtifact(config)
       ? {
           coverLetterPdfPath: paths.coverLetterPdfPath,
@@ -370,8 +391,33 @@ function checkV2Package(pkg, { publicBase = PUBLIC_BASE } = {}) {
   if (!sameList(pkg.selectedProjects || [], config.selectedProjects)) {
     failures.push(`${pkg.slug} manifest selectedProjects do not match its config`);
   }
+  if (
+    config.contractRevision === 7 &&
+    JSON.stringify(pkg.resumeBaseProfiles) !==
+      JSON.stringify(config.fitGate.resumeBase.sourceProfiles)
+  ) {
+    failures.push(`${pkg.slug} manifest resumeBaseProfiles do not match its config`);
+  }
   if (pkg.qaStatus !== 'qa-passed' || config.qa.status !== 'qa-passed') {
     failures.push(`${pkg.slug} QA status is not qa-passed`);
+  }
+  if (config.contractRevision === 7) {
+    const registry = readJson(RESUME_BASE_PROFILES_PATH);
+    const expectedResumeBaseQa = {
+      mode: config.fitGate.resumeBase.mode,
+      sourceProfiles: config.fitGate.resumeBase.sourceProfiles,
+      leadProfileId: config.fitGate.resumeBase.leadProfileId,
+      accountPresentation: config.fitGate.resumeBase.accountPresentation,
+      action: config.fitGate.resumeBase.action,
+      registryVersion: registry.registryVersion,
+      registrySha256: sha256File(RESUME_BASE_PROFILES_PATH),
+    };
+    if (
+      JSON.stringify(config.qa.resumeBase) !==
+      JSON.stringify(expectedResumeBaseQa)
+    ) {
+      failures.push(`${pkg.slug} resume-base QA is missing or stale`);
+    }
   }
   if (config.qa.configInputSha256 !== configInputSha256(config)) {
     failures.push(`${pkg.slug} config changed after QA`);

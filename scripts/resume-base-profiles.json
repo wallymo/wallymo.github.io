@@ -1,0 +1,275 @@
+{
+  "registryVersion": 1,
+  "foundationId": "wally-mostafa-resume-2026-07-03",
+  "profiles": {
+    "ai-product-implementation": {
+      "version": 1,
+      "label": "AI/Product Implementation",
+      "generalArtifact": {
+        "resumePdfPath": "assets/Wally-Mostafa-Resume.pdf",
+        "portfolioPath": "/"
+      },
+      "allowedPositioningLaneIds": [
+        "ai-product-implementation",
+        "product-ux-design",
+        "research-experience-strategy",
+        "program-project-operations",
+        "healthcare-marketing-brand"
+      ],
+      "defaultAccountPresentation": "consolidated",
+      "requiredSourceIds": {
+        "hedgehox": [
+          "hedgehox-01",
+          "hedgehox-02",
+          "hedgehox-03",
+          "hedgehox-04",
+          "hedgehox-05",
+          "hedgehox-06"
+        ],
+        "one-block-away": [
+          "one-block-away-01",
+          "one-block-away-02",
+          "one-block-away-03",
+          "one-block-away-04",
+          "one-block-away-05"
+        ],
+        "kinesso": [
+          "kinesso-01",
+          "kinesso-02",
+          "kinesso-03",
+          "kinesso-04"
+        ],
+        "omnicom": [
+          "omnicom-01",
+          "omnicom-02"
+        ],
+        "heartbeat": [
+          "heartbeat-01",
+          "heartbeat-02",
+          "heartbeat-03"
+        ],
+        "account-management": [
+          "account-management-01",
+          "account-management-02",
+          "account-management-03"
+        ]
+      },
+      "coreProofIds": [
+        "hedgehox-01",
+        "hedgehox-02",
+        "hedgehox-03",
+        "hedgehox-04",
+        "hedgehox-05",
+        "hedgehox-06",
+        "one-block-away-01",
+        "one-block-away-02",
+        "one-block-away-03",
+        "one-block-away-04",
+        "one-block-away-05",
+        "kinesso-01",
+        "kinesso-02",
+        "kinesso-03",
+        "kinesso-04",
+        "omnicom-01",
+        "omnicom-02",
+        "heartbeat-01",
+        "heartbeat-02",
+        "heartbeat-03"
+      ]
+    },
+    "account-leadership": {
+      "version": 1,
+      "label": "Account Leadership",
+      "generalArtifact": {
+        "resumePdfPath": "output/pdf/Wally-Mostafa-Healthcare-Account-Management-Resume.pdf",
+        "portfolioPath": "/healthcare-account-management/"
+      },
+      "allowedPositioningLaneIds": [
+        "client-account-delivery",
+        "customer-success-consultative"
+      ],
+      "defaultAccountPresentation": "agency-progression",
+      "requiredSourceIds": {
+        "hedgehox": [
+          "hedgehox-01",
+          "hedgehox-02",
+          "hedgehox-03",
+          "hedgehox-05"
+        ],
+        "one-block-away": [
+          "one-block-away-01",
+          "one-block-away-02",
+          "one-block-away-03",
+          "one-block-away-04",
+          "one-block-away-05"
+        ],
+        "kinesso": [
+          "kinesso-01",
+          "kinesso-02",
+          "kinesso-03"
+        ],
+        "omnicom": [
+          "omnicom-01"
+        ],
+        "heartbeat": [
+          "heartbeat-01",
+          "heartbeat-02",
+          "heartbeat-03"
+        ],
+        "account-management": [
+          "addition:scout-xyrem-account-lead",
+          "addition:scout-xyrem-unbranded-social",
+          "addition:scout-xyrem-bridging-campaign",
+          "account-management-02",
+          "account-management-03",
+          "addition:fcb-namenda-caregiver-site",
+          "addition:barker-tough-mudder-pdi",
+          "addition:cdm-lipitor-zoloft-digital",
+          "account-management-01",
+          "addition:fcb-nuvigil-rebrand-crm",
+          "addition:fcb-nuvigil-hcp-collaboration",
+          "addition:fcb-nuvigil-client-operations",
+          "addition:rosetta-prevenar-client-contact",
+          "addition:rosetta-dubai-advisory"
+        ]
+      },
+      "coreProofIds": [
+        "addition:scout-xyrem-account-lead",
+        "addition:scout-xyrem-unbranded-social",
+        "addition:scout-xyrem-bridging-campaign",
+        "account-management-01",
+        "account-management-02",
+        "account-management-03",
+        "addition:fcb-namenda-caregiver-site",
+        "addition:barker-tough-mudder-pdi",
+        "addition:cdm-lipitor-zoloft-digital",
+        "addition:fcb-nuvigil-rebrand-crm",
+        "addition:fcb-nuvigil-hcp-collaboration",
+        "addition:fcb-nuvigil-client-operations",
+        "addition:rosetta-prevenar-client-contact",
+        "addition:rosetta-dubai-advisory"
+      ],
+      "accountSubEntries": [
+        {
+          "title": "Account Supervisor / Digital Strategist",
+          "employer": "Scout Marketing",
+          "location": "San Diego, CA",
+          "dateRange": "Jun 2015 – Jul 2018",
+          "sourceIds": [
+            "addition:scout-xyrem-account-lead",
+            "addition:scout-xyrem-unbranded-social",
+            "addition:scout-xyrem-bridging-campaign"
+          ]
+        },
+        {
+          "title": "Senior Account Executive",
+          "employer": "FCB Health",
+          "location": "New York, NY",
+          "dateRange": "Jun 2014 – Jun 2015",
+          "sourceIds": [
+            "account-management-02",
+            "account-management-03",
+            "addition:fcb-namenda-caregiver-site"
+          ]
+        },
+        {
+          "title": "Senior Account Executive",
+          "employer": "Barker DZP",
+          "location": "New York, NY",
+          "dateRange": "Dec 2013 – May 2014",
+          "sourceIds": [
+            "addition:barker-tough-mudder-pdi"
+          ]
+        },
+        {
+          "title": "Senior Account Executive",
+          "employer": "Cline Davis & Mann",
+          "location": "New York, NY",
+          "dateRange": "Sep 2013 – Dec 2013",
+          "sourceIds": [
+            "addition:cdm-lipitor-zoloft-digital"
+          ]
+        },
+        {
+          "title": "Assistant Account Executive to Account Executive",
+          "employer": "FCB Health",
+          "location": "New York, NY",
+          "dateRange": "Apr 2011 – Sep 2013",
+          "sourceIds": [
+            "account-management-01",
+            "addition:fcb-nuvigil-rebrand-crm",
+            "addition:fcb-nuvigil-hcp-collaboration",
+            "addition:fcb-nuvigil-client-operations"
+          ]
+        },
+        {
+          "title": "Account Coordinator",
+          "employer": "RosettaWishbone",
+          "location": "New York, NY",
+          "dateRange": "Sep 2010 – Mar 2011",
+          "sourceIds": [
+            "addition:rosetta-prevenar-client-contact",
+            "addition:rosetta-dubai-advisory"
+          ]
+        }
+      ]
+    }
+  },
+  "evidenceAdditions": [
+    {
+      "id": "addition:scout-xyrem-account-lead",
+      "roleId": "account-management",
+      "text": "Promoted from Senior Account Executive and took the lead on Jazz Pharmaceuticals XYREM consumer work: unbranded campaigns across digital, print, and in-office channels that lifted traffic and engagement on the disease-state site"
+    },
+    {
+      "id": "addition:scout-xyrem-unbranded-social",
+      "roleId": "account-management",
+      "text": "Led the launch of the first unbranded social campaign on Facebook and YouTube for the brand and for Jazz, built around real patients telling their own stories"
+    },
+    {
+      "id": "addition:scout-xyrem-bridging-campaign",
+      "roleId": "account-management",
+      "text": "Oversaw an unbranded digital campaign bridging disease state and branded work; banners held a 0.37% click-through rate against a 0.17% industry benchmark and doubled qualified traffic to the brand site"
+    },
+    {
+      "id": "addition:fcb-namenda-caregiver-site",
+      "roleId": "account-management",
+      "text": "Led the launch of an unbranded Alzheimer's caregiver community site with support resources, sponsorship exploration, and public relations pull-through; also oversaw the account's Assistant Account Executive across in-office tactics, national print, and sales representative support materials"
+    },
+    {
+      "id": "addition:barker-tough-mudder-pdi",
+      "roleId": "account-management",
+      "text": "Led the social campaign for a new Tough Mudder loyalty program and oversaw PDI and Nice-Pak, the agency's largest account, across print, digital, and social"
+    },
+    {
+      "id": "addition:cdm-lipitor-zoloft-digital",
+      "roleId": "account-management",
+      "text": "Used campaign metrics to shape Pfizer digital recommendations for Lipitor's online presence and loyalty program during loss of exclusivity, and piloted a Zoloft savings offer to test market response"
+    },
+    {
+      "id": "addition:fcb-nuvigil-rebrand-crm",
+      "roleId": "account-management",
+      "text": "Coordinated the NUVIGIL.com consumer rebrand across desktop and mobile with the agency's digital strategy and development teams, plus the launch of a CRM patient support program and its online patient community"
+    },
+    {
+      "id": "addition:fcb-nuvigil-hcp-collaboration",
+      "roleId": "account-management",
+      "text": "Worked alongside the HCP team on the NUVIGIL.com HCP site and sales aid, both of which won 2011 Pharma Choice awards"
+    },
+    {
+      "id": "addition:fcb-nuvigil-client-operations",
+      "roleId": "account-management",
+      "text": "Owned weekly client status and financial reporting plus OPDP and review-committee submissions across the $10M consumer business, and contributed to the annual strategic recommendations"
+    },
+    {
+      "id": "addition:rosetta-prevenar-client-contact",
+      "roleId": "account-management",
+      "text": "Primary client contact across brand teams, national affiliates, and vendors on an award-winning global unbranded pneumococcal disease awareness campaign for the Pfizer Prevenar 13 adult pre-launch"
+    },
+    {
+      "id": "addition:rosetta-dubai-advisory",
+      "roleId": "account-management",
+      "text": "Facilitated an Africa and Middle East advisory board in Dubai and owned project briefs, scopes of work, key opinion leader communications, and client status and financial reports"
+    }
+  ]
+}

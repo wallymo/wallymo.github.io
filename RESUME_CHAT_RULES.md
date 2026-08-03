@@ -10,28 +10,29 @@ No standalone paste/upload UI. Do this in chat from the job description the user
 4. Make a separate cover-letter bridge call: `not-needed` for a direct strong fit, `recommended` when all hard gates pass and the overall skill set supports a credible transfer story, or `not-credible` when persuasion would require hiding or inventing a structural gap. When recommended, say plainly, `We can make the case with a cover letter`, and identify the evidence-backed bridge.
 5. Stop if the role is `not-fit`. Do not create route, resume, PDF, or cover-letter files. Instead, explain the blocker and suggest the narrowest honest way to make the opportunity fit, such as a different title target, a narrower positioning angle, or missing proof the human would need to supply.
 6. Stop on `stretch` unless the human explicitly asks to proceed after seeing the risk. A recommended cover-letter bridge does not replace this approval. If approved, proceed only with narrow honest positioning.
-7. Choose the route mode: use `canonical-projects` by default; use `scoped-projects` only when the case-study pages themselves need role-specific framing or route-local navigation.
-8. Persist a v2 revision 6 package config at `scripts/packages/<slug>.json` using `scripts/examples/package-v2.json` as the contract. Select one evidence-backed positioning lane, write a sharp 45–65-word summary, choose four to six skills from the foundation bank, map every source bullet exactly once under its original employer, and use unique `addition:<slug>` IDs only for new supported bullets.
+7. Select the Revision 7 resume base from the JD's operating center: `account-leadership`, `ai-product-implementation`, or `hybrid-selective`. Industry does not decide the base. Use hybrid only when both disciplines are direct core responsibilities, then record the lead profile, account presentation, `tailor-to-jd` action, and rationale.
+8. Choose the route mode and persist a v2 Revision 7 package config at `scripts/packages/<slug>.json` using `scripts/examples/package-v2.json` as the contract. Use `canonical-projects` by default and `scoped-projects` only when case-study pages need role-specific framing. Write a 45–65-word summary, choose four to six supported skills, preserve evidence attribution and role metadata, and use unique `addition:<slug>` IDs only for new supported bullets.
 9. Run the complete `humanizer` skill over all authored copy. Unless the human explicitly requested a rewrite, make surface-only changes and preserve the content, structure, claims, proof, order, and ending. Complete the skill's final anti-AI audit before approval.
 10. Run `node scripts/humanizer-check.mjs --config scripts/packages/<slug>.json --approve --semantic-pass-complete`. This attests that the full semantic skill pass is complete; the static scan cannot approve copy by itself. Use `--rewrite-requested` only when the human explicitly requested a rewrite. Any later copy change invalidates this approval.
 11. Run `node scripts/build-tailored-package.mjs --config scripts/packages/<slug>.json`. Use `--allow-stretch` only after explicit approval and `--overwrite` only when intentionally rebuilding the same package.
 12. Treat builder success as `qa-passed`, not published. Review its advisory requirement-coverage warnings. Desktop/mobile screenshots are temporary diagnostics: a passing build deletes them automatically, while a failing build leaves them under ignored `tmp/qa/<slug>/` for inspection.
-13. Keep `/`, canonical project pages, and the public resume untouched unless explicitly authorized. The v2 builder reads only from `resume.html`; it does not use another tailored resume.
+13. Keep `/`, canonical project pages, and the public resume untouched unless explicitly authorized. The v2 builder uses the canonical resume shell plus the versioned evidence profiles; it never treats an arbitrary tailored resume as a new source.
 14. Keep the tailored resume PDF as the only recruiter-facing resume artifact. Temporary HTML lives under ignored `tmp/tailored-resumes/` and must be removed after successful rendering.
 15. If the bridge verdict is `recommended`, apply the same humanizer process and create the matching cover-letter PDF and Markdown under `output/pdf/` in the same build. Do not wait for another request. A strong `not-needed` package skips the letter unless the human asks for one; a `not-credible` package never creates one. Any render HTML remains temporary and private. Every new or rebuilt letter uses the locked `real-chemistry-21grams-v1` visual template; only the role-specific content changes.
 16. Treat the role-specific `Portfolio` annotation as publish-blocking. The route, selected scoped files, config, manifest entry, and PDF must be committed and pushed before live verification.
 17. Re-check the staged diff and publish only the current package's scoped files. Leave unrelated dirty worktree changes alone.
 18. Run `node scripts/verify-tailored-route.mjs <route-slug>` after publication. It must verify live `200` responses and local/live config, route, scoped-project, and PDF checksum parity before changing `publishStatus` to `live-verified`. Commit and push the resulting verification-only manifest update.
 19. Before submission, inspect the live form and write a private readiness snapshot with `node scripts/application-ledger.mjs ready ...`. Review screening questions, form hard gates, the uploaded filename and checksum, parsed identity and work-history fields, LinkedIn consistency, narrative answers, duplicate roles, automated-processing notices, assessments, and platform warnings. A blocked or unavailable check means the application is not submission-ready.
-20. Submit manually. Only after visible submission confirmation, run `node scripts/application-ledger.mjs record ...`. Revisions 5 and 6 require the matching readiness snapshot. Revision 6 readiness must show that a recommended cover letter was included. Log assessment events, outreach drafts, sent messages, replies, and later stages as distinct dated events.
+20. Submit manually. Only after visible submission confirmation, run `node scripts/application-ledger.mjs record ...`. Revisions 5, 6, and 7 require the matching readiness snapshot. Revision 6 or 7 readiness must show that a recommended cover letter was included. Log assessment events, outreach drafts, sent messages, replies, and later stages as distinct dated events.
 
 ## Output Contract
 
 - Output a tailored resume in the same visual and structural style as `resume.html` and `assets/Wally-Mostafa-Resume.pdf`.
 - Start each new tailored resume from `resume.html` or the current canonical resume shell. Do not use another role-specific tailored resume as the source template unless you are updating that exact same role.
-- Treat `scripts/resume-foundation.json` as the content floor. Tailor the 45–65-word summary, choose four to six skills from its evidence-backed bank, and edit experience-bullet wording. Do not change role headers, employers, dates, awards, or education.
+- Treat `scripts/resume-foundation.json` as the shared evidence catalog and `scripts/resume-base-profiles.json` as the versioned Account Leadership and AI/Product evidence registry. Tailor the summary, choose four to six supported skills, and edit experience-bullet wording without changing source attribution, employers, titles, dates, awards, or education.
 - Keep the fixed ATS-safe shell normalization (`Skills`, `Raleigh, NC`, `347-420-3558`, and `2 to 30`) unchanged across packages.
-- Retain all 23 foundation bullets. Each source ID must appear exactly once under its original employer. Wording and order may change within that job, and additions must use unique `addition:<slug>` IDs. Never shorten the resume by deleting, merging, duplicating, or moving existing experience.
+- In a pure base mode, retain that profile's required evidence. In `hybrid-selective`, choose the strongest JD-matched evidence from both profiles; do not concatenate both complete resumes or require all combined evidence items. Every selected source ID stays exactly once under its original employer, and additions use unique `addition:<slug>` IDs.
+- Preserve the complete One Block Away section in every mode unless the human separately authorizes an exception. Keep the output to two readable pages; hybrid access to both pools is not permission to shrink the type or overwhelm the reader.
 - Keep it recruiter-facing: concise, concrete, chronological, ATS-readable.
 - Every authored line must pass the `humanizer` skill. The default is surface-only cleanup; keep content, structure, claims, and endings intact unless the human asks for a rewrite.
 - Do not output fit scores, match rates, leverage/missing analysis, or proof-link lists unless explicitly requested. The cover-letter bridge verdict is always part of the fit gate. A recommended letter is part of the built package and is not held for a second request.
@@ -46,7 +47,12 @@ No standalone paste/upload UI. Do this in chat from the job description the user
 ## Fit Gate Contract
 
 - Fit gate comes before all artifact work.
-- Required gate output: evidence mode, primary source, fit class, cover-letter bridge verdict and rationale, supported overlap, unsupported requirements, actual mismatches, and the recommended path.
+- Required gate output: evidence mode, primary source, fit class, cover-letter bridge verdict and rationale, resume-base mode/action/rationale, supported overlap, unsupported requirements, actual mismatches, and the recommended path.
+- Select `account-leadership` when client relationships, account planning, budgets, delivery, retention, or adoption form the primary operating center. This applies across industries, not only healthcare.
+- Select `ai-product-implementation` when AI delivery, product ownership, workflow design, UX, research, or implementation form the primary operating center. A healthcare employer does not make an AI/product role account-led.
+- Select `hybrid-selective` only when both disciplines appear as direct core responsibilities. Generic client language in an AI role or generic technology language in an account role is not enough. `leadProfileId` determines the summary emphasis and section order without limiting truthful evidence selection.
+- Use `accountPresentation: agency-progression` when account tenure, seniority, or title progression is a central screen. Use `consolidated` when account leadership supports an AI/product-led role but is not the primary tenure screen.
+- Every employer JD requires `action: tailor-to-jd`. `use-existing` is limited to general networking without an employer JD.
 - `portfolio-primary`: UX/UI, product design, visual design, design systems, service design, and portfolio-led research. Case studies drive the fit call; the resume supports seniority, scope, and continuity.
 - `balanced`: product management, AI product strategy/implementation, innovation, experience strategy, design leadership, and consultative solution design. Resume ownership/outcomes and portfolio execution evidence both matter.
 - `resume-primary`: account/client/customer success, program or project management, operations, partnerships, strategy, sales, and most solutions consulting or pre-sales. The resume drives the fit call through direct ownership and outcomes; the portfolio is a credibility layer and should not be treated as a required UX-style book.
@@ -97,7 +103,7 @@ Use the Lenovo workflow as the default route pattern and the Sogeti workflow onl
 
 ## Visual Style
 
-- Letter-size resume, ideally two pages.
+- Letter-size resume, two readable pages.
 - White page, no card frame, no portfolio-site nav.
 - Centered uppercase name: `WALLY MOSTAFA`.
 - Contact line: `wmostafa12@gmail.com · 347-420-3558 · Raleigh, NC · LinkedIn · Portfolio`.
@@ -110,6 +116,7 @@ Use the Lenovo workflow as the default route pattern and the Sogeti workflow onl
 ## Source Of Truth
 
 - Base resume content: `scripts/resume-foundation.json`, imported from the attached `Wally-Mostafa-Resume.pdf`.
+- Versioned resume-base decisions and evidence pools: `scripts/resume-base-profiles.json`.
 - Resume shell and PDF styling reference: `resume.html` and `assets/Wally-Mostafa-Resume.pdf`.
 - Keep claims grounded in existing portfolio/resume evidence.
 - Do not inflate frontend/tooling claims beyond what the resume and project pages support.
@@ -120,15 +127,15 @@ Use the Lenovo workflow as the default route pattern and the Sogeti workflow onl
 ## Tailoring Logic
 
 - Read the JD for title, seniority, domain, and repeated requirements.
-- Do not skip the fit gate. The first tailoring decision is whether the role is `strong`, `adjacent`, `stretch`, or `not-fit` based on evidence in `resume.html`, the full public project pool (`project-01.html` through `project-07.html`), and existing artifacts.
+- Do not skip the fit gate. First decide whether the role is `strong`, `adjacent`, `stretch`, or `not-fit`, then choose the resume base from the role's primary operating center. Make both calls from evidence in the resume profiles, the full public project pool (`project-01.html` through `project-07.html`), and existing artifacts.
 - Select the role route's projects as an argument: put the strongest matching case study first, keep the set to 3 by default, and include a fourth only when it adds distinct proof the first three do not cover.
 - If the fit is `not-fit`, do not generate artifacts. Return the blocker and the honest make-it-fit path instead.
 - For stretch roles, keep the artifact honest: emphasize supported adjacency and explicitly avoid unsupported claims such as certifications, hands-on domain operations, platform ownership, or direct tool/framework experience that the source materials do not prove.
 - After the human accepts the risk, do not keep arguing the fit. Continue the workflow, but interrupt if the requested positioning would require fabrication, fake confidence, or disproportionate work for a low-fit role.
-- Write a 45–65-word summary around one foundation positioning lane. Open with the target identity and make the honest bridge clear without defensive language.
+- Write a 45–65-word summary around the selected lead profile and a compatible positioning lane. Open with the target identity and make the honest bridge clear without defensive language.
 - Select four to six foundation skills that best support the target identity. Do not invent or rewrite skill-bank claims.
-- Edit the wording of each existing bullet to surface supported JD terminology and ATS matches while preserving that bullet's underlying experience, proof, and scope.
-- Keep every source bullet in its original role. Reorder only within that role when it improves the argument. Add supported bullets when useful, but do not remove, merge, duplicate, move, or demote existing experience.
+- Edit selected bullets to surface supported JD terminology and ATS matches while preserving each bullet's underlying experience, proof, and scope.
+- Keep every selected source bullet in its original role. Reorder only within that role when it improves the argument. Pure modes preserve the complete selected profile; hybrid mode selects against the JD from both profiles while retaining the complete One Block Away section. Never duplicate or move evidence.
 - Keep strongest supported proof points visible:
   - Claims Detector investor outcome
   - MLR/regulated pharma AI workflows
@@ -141,7 +148,7 @@ Use the Lenovo workflow as the default route pattern and the Sogeti workflow onl
 
 ## Delivery In Chat
 
-- If the user provides a JD and asks to tailor the resume, create and publish the matched resume + role route workflow unless they explicitly ask for resume text only or local-only files.
+- If the user provides a JD and asks to tailor the resume, set `action: tailor-to-jd` and create and publish the matched resume + role route workflow unless they explicitly ask for resume text only or local-only files. Use an existing healthcare or AI networking resume without changes only when no employer JD is being evaluated.
 - Build through the v2 package command so the render, ATS preflight, link checks, and desktop/mobile route QA run consistently.
 - Verify the role route locally and, after pushing, run the live verifier for config/route/project/PDF `200` responses and checksum parity.
 - Keep the answer tight: mention the artifact path and any important caveat only.

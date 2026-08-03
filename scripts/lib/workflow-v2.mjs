@@ -17,16 +17,20 @@ const moduleDir = path.dirname(fileURLToPath(import.meta.url));
 const defaultRepoRoot = path.resolve(moduleDir, '..', '..');
 
 export const WORKFLOW_VERSION = 2;
-export const CURRENT_CONTRACT_REVISION = 6;
+export const CURRENT_CONTRACT_REVISION = 7;
 export const HUMANIZER_VERSION = '2.2.0';
-const SUPPORTED_CONTRACT_REVISIONS = new Set([2, 3, 4, 5, 6]);
-const FLEXIBLE_POSITIONING_REVISIONS = new Set([5, 6]);
+const SUPPORTED_CONTRACT_REVISIONS = new Set([2, 3, 4, 5, 6, 7]);
+const FLEXIBLE_POSITIONING_REVISIONS = new Set([5, 6, 7]);
 const RESUME_COMPOSITION_MODES = new Set([
   'foundation-complete',
   'curated-user-authorized',
+  'profile-complete',
+  'hybrid-selective',
 ]);
 export const PUBLIC_BASE = 'https://wallymo.github.io/';
 export const RESUME_FOUNDATION_PATH = 'scripts/resume-foundation.json';
+export const RESUME_BASE_PROFILES_PATH =
+  'scripts/resume-base-profiles.json';
 export const RESUME_ROLE_IDS = [
   'hedgehox',
   'one-block-away',
@@ -80,6 +84,16 @@ const REQUIREMENT_MATCH_MODES = new Set([
   'contextual',
   'not-supported',
 ]);
+const RESUME_BASE_MODES = new Set([
+  'account-leadership',
+  'ai-product-implementation',
+  'hybrid-selective',
+]);
+const RESUME_BASE_ACTIONS = new Set(['use-existing', 'tailor-to-jd']);
+const ACCOUNT_PRESENTATIONS = new Set([
+  'agency-progression',
+  'consolidated',
+]);
 const RESUME_DESTINATIONS = new Set(['summary', 'skills', 'experience']);
 const DEFENSIVE_POSITIONING_PATTERN =
   /\b(?:i may not|i do not have|i don't have|while i have not|while i haven't|although i|not a perfect fit|my background is closest|without pretending)\b/i;
@@ -122,7 +136,7 @@ export function resumeRoleBulletTexts(resume, roleId) {
 
 export function hasCoverLetterArtifact(config) {
   return Boolean(
-    config?.contractRevision === 6 &&
+    config?.contractRevision >= 6 &&
       config?.coverLetter &&
       typeof config.coverLetter === 'object'
   );
@@ -130,7 +144,7 @@ export function hasCoverLetterArtifact(config) {
 
 export function bridgeRequiresCoverLetter(config) {
   return Boolean(
-    config?.contractRevision === 6 &&
+    config?.contractRevision >= 6 &&
       config?.fitGate?.coverLetterBridge?.status === 'recommended'
   );
 }
@@ -156,6 +170,10 @@ export function readJson(filePath) {
 
 export function readResumeFoundation() {
   return readJson(RESUME_FOUNDATION_PATH);
+}
+
+export function readResumeBaseProfiles() {
+  return readJson(RESUME_BASE_PROFILES_PATH);
 }
 
 export function writeJson(filePath, value) {
@@ -243,6 +261,7 @@ export function humanizerCopyEntries(config) {
     'fitGate.coverLetterBridge.rationale',
     config?.fitGate?.coverLetterBridge?.rationale
   );
+  add('fitGate.resumeBase.rationale', config?.fitGate?.resumeBase?.rationale);
   add('fitGate.recommendation', config?.fitGate?.recommendation);
   add('coverLetter.greeting', config?.coverLetter?.greeting);
   addArray('coverLetter.paragraphs', config?.coverLetter?.paragraphs);
@@ -538,6 +557,257 @@ function foundationBulletIdMap(foundation) {
   return idToRole;
 }
 
+function resumeEvidenceIdMap(foundation, profileRegistry = null) {
+  const idToRole = foundationBulletIdMap(foundation);
+  for (const evidence of profileRegistry?.evidenceAdditions || []) {
+    if (isNonEmptyString(evidence?.id) && isNonEmptyString(evidence?.roleId)) {
+      idToRole.set(evidence.id, evidence.roleId);
+    }
+  }
+  return idToRole;
+}
+
+function profileSourceIds(profile) {
+  return new Set(
+    RESUME_ROLE_IDS.flatMap((roleId) => profile?.requiredSourceIds?.[roleId] || [])
+  );
+}
+
+function selectedResumeBaseProfiles(resumeBase, profileRegistry) {
+  if (!Array.isArray(resumeBase?.sourceProfiles)) {
+    return [];
+  }
+  return resumeBase.sourceProfiles
+    .map((sourceProfile) => {
+      const profile = profileRegistry?.profiles?.[sourceProfile?.id];
+      return profile
+        ? {
+            id: sourceProfile.id,
+            requestedVersion: sourceProfile.version,
+            profile,
+          }
+        : null;
+    })
+    .filter(Boolean);
+}
+
+function isGeneralNetworkingJob(job) {
+  return Boolean(
+    job?.jobId === 'general-profile' &&
+      job?.sourceChannel === 'user-requested-general-resume'
+  );
+}
+
+function validateResumeBaseGate(
+  config,
+  errors,
+  foundation,
+  profileRegistry
+) {
+  if (config?.contractRevision !== 7) {
+    return;
+  }
+
+  pushError(
+    errors,
+    profileRegistry && typeof profileRegistry === 'object',
+    'resume base profile registry is required for revision 7'
+  );
+  if (!profileRegistry || typeof profileRegistry !== 'object') {
+    return;
+  }
+  pushError(
+    errors,
+    profileRegistry.registryVersion === 1,
+    'resume base profile registryVersion must be 1'
+  );
+  pushError(
+    errors,
+    profileRegistry.foundationId === foundation?.id,
+    'resume base profile registry must reference the current resume foundation'
+  );
+
+  const resumeBase = config?.fitGate?.resumeBase;
+  pushError(
+    errors,
+    resumeBase && typeof resumeBase === 'object' && !Array.isArray(resumeBase),
+    'fitGate.resumeBase is required for revision 7'
+  );
+  if (!resumeBase || typeof resumeBase !== 'object' || Array.isArray(resumeBase)) {
+    return;
+  }
+
+  pushError(
+    errors,
+    RESUME_BASE_MODES.has(resumeBase.mode),
+    'fitGate.resumeBase.mode must be account-leadership, ai-product-implementation, or hybrid-selective'
+  );
+  pushError(
+    errors,
+    RESUME_BASE_ACTIONS.has(resumeBase.action),
+    'fitGate.resumeBase.action must be use-existing or tailor-to-jd'
+  );
+  pushError(
+    errors,
+    ACCOUNT_PRESENTATIONS.has(resumeBase.accountPresentation),
+    'fitGate.resumeBase.accountPresentation must be agency-progression or consolidated'
+  );
+  pushError(
+    errors,
+    isNonEmptyString(resumeBase.rationale),
+    'fitGate.resumeBase.rationale is required'
+  );
+  pushError(
+    errors,
+    Array.isArray(resumeBase.sourceProfiles) &&
+      resumeBase.sourceProfiles.length >= 1 &&
+      resumeBase.sourceProfiles.length <= 2,
+    'fitGate.resumeBase.sourceProfiles must include one or two profiles'
+  );
+
+  const sourceProfileIds = Array.isArray(resumeBase.sourceProfiles)
+    ? resumeBase.sourceProfiles.map((sourceProfile) => sourceProfile?.id)
+    : [];
+  pushError(
+    errors,
+    new Set(sourceProfileIds).size === sourceProfileIds.length,
+    'fitGate.resumeBase.sourceProfiles must not contain duplicates'
+  );
+  for (const [index, sourceProfile] of (
+    resumeBase.sourceProfiles || []
+  ).entries()) {
+    const profile = profileRegistry.profiles?.[sourceProfile?.id];
+    pushError(
+      errors,
+      profile && typeof profile === 'object',
+      `fitGate.resumeBase.sourceProfiles[${index}].id is unknown`
+    );
+    pushError(
+      errors,
+      Number.isInteger(sourceProfile?.version) &&
+        sourceProfile.version === profile?.version,
+      `fitGate.resumeBase.sourceProfiles[${index}].version must match the profile registry`
+    );
+  }
+
+  const expectedProfileIds =
+    resumeBase.mode === 'hybrid-selective'
+      ? ['account-leadership', 'ai-product-implementation']
+      : [resumeBase.mode];
+  pushError(
+    errors,
+    sourceProfileIds.length === expectedProfileIds.length &&
+      expectedProfileIds.every((profileId) => sourceProfileIds.includes(profileId)),
+    'fitGate.resumeBase.sourceProfiles must match the selected base mode'
+  );
+  pushError(
+    errors,
+    expectedProfileIds.includes(resumeBase.leadProfileId),
+    'fitGate.resumeBase.leadProfileId must be one of the selected source profiles'
+  );
+  if (resumeBase.mode !== 'hybrid-selective') {
+    pushError(
+      errors,
+      resumeBase.leadProfileId === resumeBase.mode,
+      'a single-profile resume must lead with its selected profile'
+    );
+  }
+
+  const generalNetworking = isGeneralNetworkingJob(config?.job);
+  pushError(
+    errors,
+    resumeBase.action !== 'use-existing' || generalNetworking,
+    'fitGate.resumeBase.action use-existing is allowed only for a general networking profile'
+  );
+  pushError(
+    errors,
+    generalNetworking || resumeBase.action === 'tailor-to-jd',
+    'every employer job description must use fitGate.resumeBase.action tailor-to-jd'
+  );
+
+  const compositionMode = config?.resume?.compositionMode || 'foundation-complete';
+  const expectedCompositionMode =
+    resumeBase.mode === 'account-leadership'
+      ? 'profile-complete'
+      : resumeBase.mode === 'hybrid-selective'
+        ? 'hybrid-selective'
+        : 'foundation-complete';
+  pushError(
+    errors,
+    compositionMode === 'curated-user-authorized' ||
+      compositionMode === expectedCompositionMode,
+    `resume.compositionMode must be ${expectedCompositionMode} for ${resumeBase.mode}`
+  );
+  if (resumeBase.mode === 'account-leadership') {
+    pushError(
+      errors,
+      resumeBase.accountPresentation === 'agency-progression',
+      'account-leadership resumes must use agency-progression presentation'
+    );
+  }
+  if (resumeBase.mode === 'ai-product-implementation') {
+    pushError(
+      errors,
+      resumeBase.accountPresentation === 'consolidated',
+      'ai-product-implementation resumes must use consolidated account presentation'
+    );
+  }
+
+  const selectedProfiles = selectedResumeBaseProfiles(
+    resumeBase,
+    profileRegistry
+  );
+  const leadProfile = selectedProfiles.find(
+    ({ id }) => id === resumeBase.leadProfileId
+  )?.profile;
+  const targetLane = config?.positioning?.laneId;
+  pushError(
+    errors,
+    leadProfile?.allowedPositioningLaneIds?.includes(targetLane),
+    'positioning.laneId is not compatible with the selected lead resume profile'
+  );
+
+  if (resumeBase.mode === 'hybrid-selective') {
+    const firstRoleId = config?.resume?.experienceSections?.[0]?.roleIds?.[0];
+    pushError(
+      errors,
+      isNonEmptyString(firstRoleId),
+      'hybrid-selective resumes must define experienceSections so the lead profile controls section order'
+    );
+    pushError(
+      errors,
+      resumeBase.leadProfileId === 'account-leadership'
+        ? firstRoleId === 'account-management'
+        : isNonEmptyString(firstRoleId) && firstRoleId !== 'account-management',
+      'hybrid-selective experienceSections must begin with the selected lead profile'
+    );
+    const mappedIds = mappedResumeIds(config?.resume);
+    const accountCoreIds = new Set(
+      profileRegistry.profiles?.['account-leadership']?.coreProofIds || []
+    );
+    const aiCoreIds = new Set(
+      profileRegistry.profiles?.['ai-product-implementation']?.coreProofIds || []
+    );
+    const directCoreRequirements = (config?.requirements || []).filter(
+      (requirement) =>
+        requirement?.priority === 'core' &&
+        requirement?.evidenceStatus === 'direct' &&
+        Array.isArray(requirement?.proofIds)
+    );
+    const provesProfile = (profileIds) =>
+      directCoreRequirements.some((requirement) =>
+        requirement.proofIds.some(
+          (proofId) => profileIds.has(proofId) && mappedIds.has(proofId)
+        )
+      );
+    pushError(
+      errors,
+      provesProfile(accountCoreIds) && provesProfile(aiCoreIds),
+      'hybrid-selective requires direct core requirements backed by selected account-leadership and AI/product evidence'
+    );
+  }
+}
+
 function mappedResumeIds(resume) {
   return new Set(
     RESUME_ROLE_IDS.flatMap(
@@ -687,7 +957,7 @@ export function deriveHardGateStatus(hardGates = []) {
   return 'pass';
 }
 
-function validateResume(config, errors) {
+function validateResume(config, errors, profileRegistry = null) {
   const resume = config.resume;
   pushError(errors, resume && typeof resume === 'object', 'resume is required');
   if (!resume || typeof resume !== 'object') {
@@ -696,17 +966,28 @@ function validateResume(config, errors) {
   const compositionMode =
     resume.compositionMode || 'foundation-complete';
   const curatedResume = compositionMode === 'curated-user-authorized';
+  const profileComplete = compositionMode === 'profile-complete';
+  const hybridSelective = compositionMode === 'hybrid-selective';
+  const agencyPresentation =
+    config?.fitGate?.resumeBase?.accountPresentation === 'agency-progression';
   pushError(
     errors,
     RESUME_COMPOSITION_MODES.has(compositionMode),
-    'resume.compositionMode must be foundation-complete or curated-user-authorized'
+    'resume.compositionMode must be foundation-complete, curated-user-authorized, profile-complete, or hybrid-selective'
   );
+  if (profileComplete || hybridSelective) {
+    pushError(
+      errors,
+      config.contractRevision === 7,
+      `${compositionMode} mode is available only for revision 7`
+    );
+  }
   if (curatedResume) {
     const authorization = resume.curationAuthorization;
     pushError(
       errors,
       usesFlexiblePositioningContract(config),
-      'resume curated-user-authorized mode is available only for revisions 5 and 6'
+      'resume curated-user-authorized mode is available only for revisions 5, 6, and 7'
     );
     pushError(
       errors,
@@ -751,8 +1032,12 @@ function validateResume(config, errors) {
     if (subEntries) {
       pushError(
         errors,
-        curatedResume && usesFlexiblePositioningContract(config),
-        `resume.roles.${roleId} sub-entries are available only in curated-user-authorized mode for revisions 5 and 6`
+        (curatedResume ||
+          (config.contractRevision === 7 &&
+            agencyPresentation &&
+            (profileComplete || hybridSelective))) &&
+          usesFlexiblePositioningContract(config),
+        `resume.roles.${roleId} sub-entries require curated authorization or a revision 7 agency-progression base`
       );
       pushError(
         errors,
@@ -926,8 +1211,11 @@ function validateResume(config, errors) {
     const skillsById = new Map(skillBank.map((skill) => [skill.id, skill]));
     pushError(
       errors,
-      wordCount(resume.summary) >= 45 && wordCount(resume.summary) <= 65,
-      'resume.summary must be 45 to 65 words for revisions 5 and 6'
+      wordCount(resume.summary) >= 45 &&
+        (config.contractRevision !== 7 || wordCount(resume.summary) <= 65),
+      config.contractRevision === 7
+        ? 'resume.summary must be 45 to 65 words for revision 7'
+        : 'resume.summary must be at least 45 words for revisions 5 and 6'
     );
     pushError(
       errors,
@@ -977,6 +1265,15 @@ function validateResume(config, errors) {
     'resume.sourceBulletIds is required for revision 4'
   );
 
+  const evidenceIdToRole = resumeEvidenceIdMap(foundation, profileRegistry);
+  const resumeBase = config?.fitGate?.resumeBase;
+  const accountProfile = profileRegistry?.profiles?.['account-leadership'];
+  const selectedProfile =
+    resumeBase?.mode === 'account-leadership'
+      ? accountProfile
+      : resumeBase?.mode === 'ai-product-implementation'
+        ? profileRegistry?.profiles?.['ai-product-implementation']
+        : null;
   const allMappedBulletIds = [];
   for (const roleId of RESUME_ROLE_IDS) {
     const roleBullets = resumeRoleBulletTexts(resume, roleId);
@@ -1019,9 +1316,19 @@ function validateResume(config, errors) {
       ),
       `resume.sourceBulletIds.${roleId} contains an unknown source ID`
     );
+    pushError(
+      errors,
+      sourceBulletIds.every(
+        (sourceId) =>
+          !evidenceIdToRole.has(sourceId) ||
+          evidenceIdToRole.get(sourceId) === roleId
+      ),
+      `resume.sourceBulletIds.${roleId} moves approved evidence from its original job`
+    );
     const retainedFoundationIds = sourceBulletIds.filter((sourceId) =>
       foundationIdSet.has(sourceId)
     );
+    const requiredProfileIds = selectedProfile?.requiredSourceIds?.[roleId] || [];
     pushError(
       errors,
       config.contractRevision === 4
@@ -1029,6 +1336,16 @@ function validateResume(config, errors) {
             JSON.stringify(foundationIds)
         : curatedResume
           ? retainedFoundationIds.length >= 1
+        : profileComplete
+          ? requiredProfileIds.every((sourceId) =>
+              sourceBulletIds.includes(sourceId)
+            )
+        : hybridSelective
+          ? roleId === 'one-block-away'
+            ? foundationIds.every((sourceId) =>
+                sourceBulletIds.includes(sourceId)
+              )
+            : retainedFoundationIds.length >= 1
         : retainedFoundationIds.length === foundationIds.length &&
             foundationIds.every((sourceId) =>
               retainedFoundationIds.includes(sourceId)
@@ -1037,6 +1354,12 @@ function validateResume(config, errors) {
         ? `resume.roles.${roleId} must retain every foundation bullet in source order; additions are allowed but removals are blocked`
         : curatedResume
           ? `resume.roles.${roleId} must retain at least one foundation bullet under its original job`
+        : profileComplete
+          ? `resume.roles.${roleId} must retain every required ${resumeBase?.mode || 'selected'} profile source ID exactly once`
+        : hybridSelective
+          ? roleId === 'one-block-away'
+            ? 'hybrid-selective resumes must retain the complete One Block Away foundation section'
+            : `hybrid-selective resumes must retain at least one foundation bullet under ${roleId}`
         : `resume.roles.${roleId} must retain every foundation bullet exactly once within its original job; within-job reordering and additions are allowed`
     );
   }
@@ -1045,7 +1368,10 @@ function validateResume(config, errors) {
     new Set(allMappedBulletIds).size === allMappedBulletIds.length,
     'resume.sourceBulletIds must be unique across the full resume'
   );
-  if (usesFlexiblePositioningContract(config) && !curatedResume) {
+  if (
+    usesFlexiblePositioningContract(config) &&
+    compositionMode === 'foundation-complete'
+  ) {
     const foundationIds = RESUME_ROLE_IDS.flatMap((roleId) =>
       (foundation.roles?.[roleId] || []).map((bullet) => bullet.id)
     );
@@ -1056,7 +1382,7 @@ function validateResume(config, errors) {
       errors,
       foundationIds.length === 23 &&
         new Set(foundationIds).size === 23,
-      'revisions 5 and 6 require exactly 23 unique foundation bullets'
+      'foundation-complete resumes require exactly 23 unique foundation bullets'
     );
     pushError(
       errors,
@@ -1064,12 +1390,82 @@ function validateResume(config, errors) {
         foundationIds.every((sourceId) =>
           mappedFoundationIds.includes(sourceId)
         ),
-      'revisions 5 and 6 must retain all 23 foundation bullet IDs exactly once'
+      'foundation-complete resumes must retain all 23 foundation bullet IDs exactly once'
+    );
+  }
+
+  if (
+    config.contractRevision === 7 &&
+    (profileComplete || hybridSelective) &&
+    agencyPresentation
+  ) {
+    const subEntries = resumeRoleSubEntries(resume, 'account-management');
+    const expectedSubEntries = accountProfile?.accountSubEntries || [];
+    pushError(
+      errors,
+      Array.isArray(subEntries) && subEntries.length === expectedSubEntries.length,
+      'agency-progression resumes must preserve every approved account-history sub-entry'
+    );
+    if (Array.isArray(subEntries) && subEntries.length === expectedSubEntries.length) {
+      const flatAccountIds = resume.sourceBulletIds?.['account-management'] || [];
+      let sourceOffset = 0;
+      for (const [index, subEntry] of subEntries.entries()) {
+        const expected = expectedSubEntries[index];
+        const selectedIds = flatAccountIds.slice(
+          sourceOffset,
+          sourceOffset + subEntry.bullets.length
+        );
+        sourceOffset += subEntry.bullets.length;
+        for (const field of ['title', 'employer', 'location', 'dateRange']) {
+          pushError(
+            errors,
+            (subEntry?.[field] ?? null) === (expected?.[field] ?? null),
+            `resume.roles.account-management[${index}].${field} must match the approved account profile`
+          );
+        }
+        const expectedIds = new Set(expected?.sourceIds || []);
+        const approvedAccountIds = profileSourceIds(accountProfile);
+        pushError(
+          errors,
+          selectedIds.every(
+            (sourceId) =>
+              !approvedAccountIds.has(sourceId) || expectedIds.has(sourceId)
+          ),
+          `resume.roles.account-management[${index}] moves approved evidence to the wrong agency entry`
+        );
+        if (profileComplete) {
+          pushError(
+            errors,
+            [...expectedIds].every((sourceId) =>
+              selectedIds.includes(sourceId)
+            ),
+            `resume.roles.account-management[${index}] must retain its complete approved account evidence`
+          );
+        } else {
+          pushError(
+            errors,
+            selectedIds.some((sourceId) => expectedIds.has(sourceId)),
+            `resume.roles.account-management[${index}] must retain evidence from its approved agency entry`
+          );
+        }
+      }
+    }
+  }
+
+  if (
+    config.contractRevision === 7 &&
+    hybridSelective &&
+    !agencyPresentation
+  ) {
+    pushError(
+      errors,
+      resumeRoleSubEntries(resume, 'account-management') === null,
+      'hybrid-selective consolidated account presentation must use the consolidated account block'
     );
   }
 }
 
-function validatePositioning(config, errors, foundation) {
+function validatePositioning(config, errors, foundation, profileRegistry = null) {
   if (!usesFlexiblePositioningContract(config)) {
     return;
   }
@@ -1077,7 +1473,7 @@ function validatePositioning(config, errors, foundation) {
   pushError(
     errors,
     positioning && typeof positioning === 'object',
-    'positioning is required for revisions 5 and 6'
+    'positioning is required for revisions 5, 6, and 7'
   );
   if (!positioning || typeof positioning !== 'object') {
     return;
@@ -1086,7 +1482,10 @@ function validatePositioning(config, errors, foundation) {
   const laneIds = new Set(
     (foundation?.positioningLanes || []).map((lane) => lane.id)
   );
-  const proofIds = new Set(foundationBulletIdMap(foundation).keys());
+  const proofIds = new Set(
+    resumeEvidenceIdMap(foundation, profileRegistry).keys()
+  );
+  const selectedResumeProofIds = mappedResumeIds(config?.resume);
   const skillIds = new Set(
     (foundation?.skillBank || []).map((skill) => skill.id)
   );
@@ -1200,6 +1599,15 @@ function validatePositioning(config, errors, foundation) {
       positioning.proofIds.every((proofId) => proofIds.has(proofId)),
       'positioning.proofIds contains an unknown foundation proof ID'
     );
+    if (config.contractRevision === 7) {
+      pushError(
+        errors,
+        positioning.proofIds.every((proofId) =>
+          selectedResumeProofIds.has(proofId)
+        ),
+        'revision 7 positioning.proofIds must be present in the selected resume evidence'
+      );
+    }
   }
   pushError(
     errors,
@@ -1262,7 +1670,7 @@ function validatePositioning(config, errors, foundation) {
 }
 
 function validateCoverLetter(config, errors, foundation) {
-  if (config.contractRevision !== 6) {
+  if (config.contractRevision !== 6 && config.contractRevision !== 7) {
     return;
   }
 
@@ -1285,7 +1693,10 @@ function validateCoverLetter(config, errors, foundation) {
     );
   }
   if (coverLetter === null || coverLetter === undefined) {
-    if (config.contractRevision === 6 && coverLetter === undefined) {
+    if (
+      (config.contractRevision === 6 || config.contractRevision === 7) &&
+      coverLetter === undefined
+    ) {
       errors.push('coverLetter must be explicitly set to an object or null');
     }
     return;
@@ -1418,7 +1829,7 @@ export function validateV2Config(
     errors,
     config?.contractRevision === undefined ||
       SUPPORTED_CONTRACT_REVISIONS.has(config?.contractRevision),
-    'contractRevision must be 2, 3, 4, 5, or 6 when present'
+    'contractRevision must be 2, 3, 4, 5, 6, or 7 when present'
   );
   if (requireCurrentContract) {
     pushError(
@@ -1555,6 +1966,7 @@ export function validateV2Config(
   }
 
   let foundation = null;
+  let profileRegistry = null;
   if (usesFlexiblePositioningContract(config)) {
     try {
       foundation = readResumeFoundation();
@@ -1562,10 +1974,18 @@ export function validateV2Config(
       errors.push(`resume foundation could not be read: ${error.message}`);
     }
   }
+  if (config?.contractRevision === 7) {
+    try {
+      profileRegistry = readResumeBaseProfiles();
+    } catch (error) {
+      errors.push(`resume base profiles could not be read: ${error.message}`);
+    }
+  }
 
+  validateResumeBaseGate(config, errors, foundation, profileRegistry);
   validateRequirements(config, errors, foundation);
-  validateResume(config, errors);
-  validatePositioning(config, errors, foundation);
+  validateResume(config, errors, profileRegistry);
+  validatePositioning(config, errors, foundation, profileRegistry);
   validateCoverLetter(config, errors, foundation);
 
   if (
@@ -1669,8 +2089,11 @@ export function validateV2Config(
     if (usesFlexiblePositioningContract(config)) {
       pushError(
         errors,
-        wordCount(hero.intro) >= 45 && wordCount(hero.intro) <= 70,
-        'hero.intro must be 45 to 70 words for revisions 5 and 6'
+        wordCount(hero.intro) >= 45 &&
+          (config.contractRevision !== 7 || wordCount(hero.intro) <= 70),
+        config.contractRevision === 7
+          ? 'hero.intro must be 45 to 70 words for revision 7'
+          : 'hero.intro must be at least 45 words for revisions 5 and 6'
       );
       pushError(
         errors,
@@ -1840,6 +2263,16 @@ export function assertValidV2Config(config, options) {
 }
 
 export function assertBuildAllowed(config, { allowStretch = false } = {}) {
+  if (
+    config?.contractRevision === 7 &&
+    config?.fitGate?.resumeBase?.action === 'use-existing'
+  ) {
+    const profileId = config.fitGate.resumeBase.leadProfileId;
+    const profile = readResumeBaseProfiles().profiles?.[profileId];
+    throw new Error(
+      `Resume-base gate selected use-existing. Use ${profile?.generalArtifact?.resumePdfPath || profileId} without generating a new package.`
+    );
+  }
   const derivedHardGateStatus = deriveHardGateStatus(
     config.classification.hardGates
   );
@@ -2114,6 +2547,16 @@ export function upsertV2ManifestEntry(config, qa = {}) {
     positioningLane: config.positioning?.laneId,
     bridgeType: config.positioning?.bridgeType,
     applicationStrategy: config.positioning?.applicationStrategy,
+    ...(config.contractRevision === 7
+      ? {
+          resumeBaseMode: config.fitGate.resumeBase.mode,
+          resumeBaseLeadProfile: config.fitGate.resumeBase.leadProfileId,
+          resumeBaseAction: config.fitGate.resumeBase.action,
+          accountPresentation:
+            config.fitGate.resumeBase.accountPresentation,
+          resumeBaseProfiles: config.fitGate.resumeBase.sourceProfiles,
+        }
+      : {}),
     routeMode: config.routeMode,
     selectedProjects: config.selectedProjects,
     resumePdfPath: paths.resumePdfPath,

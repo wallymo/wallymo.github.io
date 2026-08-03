@@ -25,6 +25,7 @@ import {
   isMain,
   readJson,
   readManifest,
+  readResumeBaseProfiles,
   readResumeFoundation,
   relativeRepoPath,
   renderBulletItems,
@@ -817,6 +818,8 @@ export async function buildTailoredPackage({
     }
     const routeQaResult = runRouteUiCheck({ configPath: absoluteConfigPath });
     const builtAt = new Date().toISOString();
+    const resumeBaseProfiles =
+      config.contractRevision === 7 ? readResumeBaseProfiles() : null;
     const qa = {
       status: 'qa-passed',
       builtAt,
@@ -826,6 +829,21 @@ export async function buildTailoredPackage({
         id: readResumeFoundation().id,
         sourcePdfSha256: readResumeFoundation().source.sha256,
       },
+      resumeBase:
+        config.contractRevision === 7
+          ? {
+              mode: config.fitGate.resumeBase.mode,
+              sourceProfiles: config.fitGate.resumeBase.sourceProfiles,
+              leadProfileId: config.fitGate.resumeBase.leadProfileId,
+              accountPresentation:
+                config.fitGate.resumeBase.accountPresentation,
+              action: config.fitGate.resumeBase.action,
+              registryVersion: resumeBaseProfiles.registryVersion,
+              registrySha256: sha256File(
+                'scripts/resume-base-profiles.json'
+              ),
+            }
+          : null,
       artifactHashes: {
         routeSha256: sha256File(paths.routeIndexPath),
         resumePdfSha256: sha256File(paths.resumePdfPath),

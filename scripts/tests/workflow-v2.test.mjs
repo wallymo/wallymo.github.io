@@ -19,6 +19,7 @@ import path from 'node:path';
 import { spawnSync } from 'node:child_process';
 import test from 'node:test';
 import {
+  RESUME_ROLE_IDS,
   approveHumanizerReview,
   assertBuildAllowed,
   assertHumanizerReviewCurrent,
@@ -105,6 +106,291 @@ function validConfig() {
       'utf8'
     )
   );
+}
+
+function revision6Config() {
+  const config = validConfig();
+  config.contractRevision = 6;
+  delete config.fitGate.resumeBase;
+  delete config.resume.compositionMode;
+  return config;
+}
+
+function resumeBaseFixtureData() {
+  const foundation = JSON.parse(
+    readFileSync(
+      path.join(repoRoot, 'scripts', 'resume-foundation.json'),
+      'utf8'
+    )
+  );
+  const registry = JSON.parse(
+    readFileSync(
+      path.join(repoRoot, 'scripts', 'resume-base-profiles.json'),
+      'utf8'
+    )
+  );
+  const evidenceText = new Map();
+  for (const [roleId, bullets] of Object.entries(foundation.roles)) {
+    for (const bullet of bullets) {
+      evidenceText.set(bullet.id, { roleId, text: bullet.text });
+    }
+  }
+  for (const evidence of registry.evidenceAdditions) {
+    evidenceText.set(evidence.id, {
+      roleId: evidence.roleId,
+      text: evidence.text,
+    });
+  }
+  return { foundation, registry, evidenceText };
+}
+
+function accountLeadershipConfig() {
+  const config = validConfig();
+  const { foundation, registry, evidenceText } = resumeBaseFixtureData();
+  const profile = registry.profiles['account-leadership'];
+
+  config.classification.targetLane = 'client-account-delivery';
+  config.classification.evidenceMode = 'resume-primary';
+  config.classification.primarySource =
+    'The resume directly proves sustained account ownership, client leadership, budgets, and coordinated delivery.';
+  config.classification.supportingSource =
+    'The portfolio supports later UX, analytics, and AI delivery judgment.';
+  config.requirements[1] = {
+    ...config.requirements[1],
+    id: 'core-account-leadership',
+    text: 'Own strategic client relationships and coordinated account delivery.',
+    evidence: [
+      'Eight years of direct account leadership covered client relationships, budgets, briefs, and cross-functional delivery.',
+    ],
+    proofIds: ['account-management-02'],
+    resumeTerms: ['account leadership'],
+    matchMode: 'exact',
+  };
+  config.fitGate.resumeBase = {
+    mode: 'account-leadership',
+    sourceProfiles: [{ id: 'account-leadership', version: 1 }],
+    leadProfileId: 'account-leadership',
+    accountPresentation: 'agency-progression',
+    action: 'tailor-to-jd',
+    rationale:
+      'The role is centered on account ownership, client relationships, and coordinated delivery rather than AI product implementation.',
+  };
+  config.fitGate.supportedOverlap = [
+    'Eight years of direct account management and later client-facing product work match the role operating center.',
+  ];
+  config.fitGate.recommendation =
+    'Proceed from the Account Leadership base and tailor the positioning to the employer job description.';
+  config.positioning = {
+    laneId: 'client-account-delivery',
+    targetIdentity: 'account and client leader',
+    employerNeed:
+      'Own strategic relationships and keep client priorities, account decisions, and delivery aligned.',
+    bridgeType: 'direct',
+    applicationStrategy: 'direct',
+    bridgeThesis: 'connect client priorities, account decisions, and delivery',
+    proofIds: [
+      'account-management-02',
+      'account-management-03',
+      'kinesso-01',
+    ],
+    remainingGap: null,
+  };
+  config.resume.compositionMode = 'profile-complete';
+  config.resume.layoutDensity = 'compact';
+  config.resume.summary =
+    'Account and client leader with 15 years across healthcare, enterprise products, and AI-enabled delivery. I connect client priorities, account decisions, and delivery through eight years managing Fortune 500 relationships and budgets up to $20M, later UX leadership that grew a team from 2 to 30, and current work taking client-led AI initiatives from discovery through working products.';
+  config.resume.skillIds = [
+    'client-account-leadership',
+    'program-project-delivery',
+    'client-success-product-adoption',
+    'consultative-sales-solution-delivery',
+  ];
+  config.resume.skills = config.resume.skillIds.map((skillId) => {
+    const skill = foundation.skillBank.find((candidate) => candidate.id === skillId);
+    return { label: skill.label, description: skill.description };
+  });
+  config.resume.experienceSections = [
+    {
+      heading: 'Account Management Experience',
+      roleIds: ['account-management'],
+    },
+    {
+      heading: 'Most Recent Experience',
+      roleIds: [
+        'hedgehox',
+        'one-block-away',
+        'kinesso',
+        'omnicom',
+        'heartbeat',
+      ],
+    },
+  ];
+  for (const roleId of RESUME_ROLE_IDS) {
+    if (roleId === 'account-management') {
+      continue;
+    }
+    const sourceIds = profile.requiredSourceIds[roleId];
+    config.resume.sourceBulletIds[roleId] = [...sourceIds];
+    config.resume.roles[roleId] = sourceIds.map(
+      (sourceId) => evidenceText.get(sourceId).text
+    );
+  }
+  config.resume.roles['account-management'] = profile.accountSubEntries.map(
+    (subEntry) => ({
+      title: subEntry.title,
+      employer: subEntry.employer,
+      location: subEntry.location,
+      dateRange: subEntry.dateRange,
+      bullets: subEntry.sourceIds.map(
+        (sourceId) => evidenceText.get(sourceId).text
+      ),
+    })
+  );
+  config.resume.sourceBulletIds['account-management'] =
+    profile.accountSubEntries.flatMap((subEntry) => subEntry.sourceIds);
+  config.hero.intro =
+    'I connect client priorities, account decisions, and delivery. For this role, I bring eight years managing Fortune 500 accounts and budgets up to $20M, experience leading integrated programs across complex teams, and recent UX and AI work that strengthened discovery, solution design, adoption, and client follow-through from the first conversation through a working product.';
+  return config;
+}
+
+function hybridSelectiveConfig() {
+  const config = accountLeadershipConfig();
+  config.fitGate.resumeBase = {
+    mode: 'hybrid-selective',
+    sourceProfiles: [
+      { id: 'account-leadership', version: 1 },
+      { id: 'ai-product-implementation', version: 1 },
+    ],
+    leadProfileId: 'account-leadership',
+    accountPresentation: 'agency-progression',
+    action: 'tailor-to-jd',
+    rationale:
+      'The role gives core weight to strategic account ownership and client-facing AI product implementation.',
+  };
+  config.resume.compositionMode = 'hybrid-selective';
+
+  const keepRoleIds = {
+    hedgehox: ['hedgehox-03'],
+    'one-block-away': [
+      'one-block-away-01',
+      'one-block-away-02',
+      'one-block-away-03',
+      'one-block-away-04',
+      'one-block-away-05',
+    ],
+    kinesso: ['kinesso-01'],
+    omnicom: ['omnicom-01'],
+    heartbeat: ['heartbeat-01'],
+  };
+  for (const [roleId, sourceIds] of Object.entries(keepRoleIds)) {
+    const oldIds = config.resume.sourceBulletIds[roleId];
+    const oldBullets = config.resume.roles[roleId];
+    config.resume.sourceBulletIds[roleId] = [...sourceIds];
+    config.resume.roles[roleId] = sourceIds.map(
+      (sourceId) => oldBullets[oldIds.indexOf(sourceId)]
+    );
+  }
+  const accountIdsByEntry = [
+    ['addition:scout-xyrem-account-lead'],
+    ['account-management-02'],
+    ['addition:barker-tough-mudder-pdi'],
+    ['addition:cdm-lipitor-zoloft-digital'],
+    ['account-management-01'],
+    ['addition:rosetta-prevenar-client-contact'],
+  ];
+  const originalAccountIds = config.resume.sourceBulletIds['account-management'];
+  const originalAccountBullets = resumeRoleBulletTexts(
+    config.resume,
+    'account-management'
+  );
+  config.resume.roles['account-management'] =
+    config.resume.roles['account-management'].map((subEntry, index) => ({
+      ...subEntry,
+      bullets: accountIdsByEntry[index].map(
+        (sourceId) => originalAccountBullets[originalAccountIds.indexOf(sourceId)]
+      ),
+    }));
+  config.resume.sourceBulletIds['account-management'] =
+    accountIdsByEntry.flat();
+  config.requirements[1].proofIds = ['account-management-02'];
+  config.requirements.push({
+    id: 'core-ai-implementation',
+    text: 'Translate client needs into working AI workflows and products.',
+    priority: 'core',
+    source: 'jd',
+    confidence: 'explicit',
+    evidenceStatus: 'direct',
+    evidence: [
+      'Current work converts client and agency needs into functional AI tools and review workflows.',
+    ],
+    proofIds: ['hedgehox-03'],
+    destinations: ['summary', 'experience', 'portfolio'],
+    resumeTerms: ['AI implementation'],
+    matchMode: 'exact',
+  });
+  config.positioning.proofIds = [
+    'account-management-02',
+    'hedgehox-03',
+    'kinesso-01',
+  ];
+  return config;
+}
+
+function aiLedHybridSelectiveConfig() {
+  const config = hybridSelectiveConfig();
+  const { foundation, evidenceText } = resumeBaseFixtureData();
+  config.classification.targetLane = 'ai-product-implementation';
+  config.classification.evidenceMode = 'balanced';
+  config.classification.primarySource =
+    'The resume and portfolio directly prove client-facing AI workflow design, product decisions, and functional implementation.';
+  config.classification.supportingSource =
+    'Earlier account leadership supports strategic relationship ownership and coordinated delivery.';
+  config.fitGate.resumeBase.leadProfileId = 'ai-product-implementation';
+  config.fitGate.resumeBase.accountPresentation = 'consolidated';
+  config.fitGate.resumeBase.rationale =
+    'AI product implementation is the lead discipline, while direct strategic account ownership remains a core responsibility rather than incidental client contact.';
+  config.positioning = {
+    laneId: 'ai-product-implementation',
+    targetIdentity: 'client-facing AI product implementation leader',
+    employerNeed:
+      'Turn client priorities into useful AI workflows while owning strategic relationships and delivery decisions.',
+    bridgeType: 'direct',
+    applicationStrategy: 'direct',
+    bridgeThesis: 'turn client priorities into working AI workflows',
+    proofIds: ['hedgehox-03', 'account-management-02', 'one-block-away-01'],
+    remainingGap: null,
+  };
+  config.resume.summary =
+    'Client-facing AI product implementation leader with 15 years across healthcare, enterprise platforms, and account delivery. I turn client priorities into working AI workflows, guide product decisions from discovery through implementation, and bring eight years of earlier account leadership managing Fortune 500 relationships and budgets up to $20M. The result is practical delivery grounded in both client trust and product judgment.';
+  config.resume.skillIds = [
+    'ai-implementation-workflow-design',
+    'product-strategy-poc-delivery',
+    'client-account-leadership',
+    'program-project-delivery',
+  ];
+  config.resume.skills = config.resume.skillIds.map((skillId) => {
+    const skill = foundation.skillBank.find((candidate) => candidate.id === skillId);
+    return { label: skill.label, description: skill.description };
+  });
+  config.resume.experienceSections = [
+    {
+      heading: 'AI & Product Implementation Experience',
+      roleIds: ['hedgehox', 'one-block-away', 'kinesso', 'omnicom', 'heartbeat'],
+    },
+    {
+      heading: 'Account Leadership Experience',
+      roleIds: ['account-management'],
+    },
+  ];
+  config.resume.roles['account-management'] = [
+    evidenceText.get('account-management-02').text,
+  ];
+  config.resume.sourceBulletIds['account-management'] = [
+    'account-management-02',
+  ];
+  config.hero.intro =
+    'I turn client priorities into working AI workflows. For this role, I bring current implementation work across regulated review, brief intake, scoping, and decision support; enterprise product leadership at scale; and eight years of earlier account ownership that taught me how to guide relationships, budgets, and cross-functional delivery without losing sight of what the client needs.';
+  return config;
 }
 
 function recommendedCoverLetter() {
@@ -257,6 +543,10 @@ function createBuildFixture({
     path.join(tempRoot, 'scripts', 'resume-foundation.json')
   );
   cpSync(
+    path.join(repoRoot, 'scripts', 'resume-base-profiles.json'),
+    path.join(tempRoot, 'scripts', 'resume-base-profiles.json')
+  );
+  cpSync(
     path.join(repoRoot, 'scripts', 'lib', 'pdf_inspect.py'),
     path.join(tempRoot, 'scripts', 'lib', 'pdf_inspect.py')
   );
@@ -359,7 +649,162 @@ test('v2 example satisfies the enforced config contract', () => {
   assert.deepEqual(validateV2Config(validConfig()), []);
 });
 
-test('revisions 5 and 6 preserve every foundation bullet while allowing edits, additions, and within-role reordering', () => {
+test('revision 7 requires a valid resume-base decision and reserves use-existing for networking', () => {
+  const missingDecision = validConfig();
+  delete missingDecision.fitGate.resumeBase;
+  assert.match(
+    validateV2Config(missingDecision).join('\n'),
+    /fitGate\.resumeBase is required for revision 7/
+  );
+  assert.ok(schemaErrors(missingDecision).length > 0);
+
+  const employerReuse = validConfig();
+  employerReuse.fitGate.resumeBase.action = 'use-existing';
+  assert.match(
+    validateV2Config(employerReuse).join('\n'),
+    /use-existing is allowed only for a general networking profile|every employer job description must use.*tailor-to-jd/
+  );
+
+  const networkingReuse = validConfig();
+  networkingReuse.job.jobId = 'general-profile';
+  networkingReuse.job.sourceChannel = 'user-requested-general-resume';
+  networkingReuse.fitGate.resumeBase.action = 'use-existing';
+  assert.deepEqual(validateV2Config(networkingReuse), []);
+  assert.throws(
+    () => assertBuildAllowed(networkingReuse),
+    /selected use-existing.*Wally-Mostafa-Resume\.pdf/
+  );
+
+  const incompatibleLane = validConfig();
+  incompatibleLane.classification.targetLane = 'client-account-delivery';
+  incompatibleLane.positioning.laneId = 'client-account-delivery';
+  assert.match(
+    validateV2Config(incompatibleLane).join('\n'),
+    /positioning\.laneId is not compatible with the selected lead resume profile/
+  );
+});
+
+test('revision 7 account-leadership profile preserves the approved agency progression and evidence floor', () => {
+  const account = accountLeadershipConfig();
+  assert.deepEqual(validateV2Config(account), []);
+  assert.deepEqual(schemaErrors(account), []);
+  assert.equal(
+    resumeRoleSubEntries(account.resume, 'account-management').length,
+    6
+  );
+  assert.equal(account.resume.sourceBulletIds['one-block-away'].length, 5);
+
+  const removedEvidence = structuredClone(account);
+  removedEvidence.resume.roles['account-management'][0].bullets.shift();
+  removedEvidence.resume.sourceBulletIds['account-management'].shift();
+  assert.match(
+    validateV2Config(removedEvidence).join('\n'),
+    /must retain every required account-leadership profile source ID|must retain its complete approved account evidence/
+  );
+
+  const changedEmployer = structuredClone(account);
+  changedEmployer.resume.roles['account-management'][0].employer =
+    'Different Agency';
+  assert.match(
+    validateV2Config(changedEmployer).join('\n'),
+    /employer must match the approved account profile/
+  );
+});
+
+test('pure account and pure AI roles remain single-profile despite incidental technology or client language', () => {
+  const account = accountLeadershipConfig();
+  account.job.rawJd =
+    'Own strategic accounts and coordinated delivery for a technology-enabled service.';
+  assert.deepEqual(validateV2Config(account), []);
+  assert.equal(account.fitGate.resumeBase.mode, 'account-leadership');
+
+  const aiProduct = validConfig();
+  aiProduct.job.rawJd =
+    'Lead AI product implementation through client discovery and workflow design.';
+  assert.deepEqual(validateV2Config(aiProduct), []);
+  assert.equal(aiProduct.fitGate.resumeBase.mode, 'ai-product-implementation');
+});
+
+test('revision 7 hybrid-selective draws from both evidence pools without concatenating them', () => {
+  const hybrid = hybridSelectiveConfig();
+  const { registry } = resumeBaseFixtureData();
+  const combinedProfileIds = new Set(
+    Object.values(registry.profiles).flatMap((profile) =>
+      Object.values(profile.requiredSourceIds).flat()
+    )
+  );
+  assert.deepEqual(validateV2Config(hybrid), []);
+  assert.deepEqual(schemaErrors(hybrid), []);
+  const selectedEvidenceCount = Object.values(
+    hybrid.resume.sourceBulletIds
+  ).flat().length;
+  assert.equal(combinedProfileIds.size, 34);
+  assert.ok(selectedEvidenceCount < combinedProfileIds.size);
+  assert.equal(hybrid.resume.sourceBulletIds['one-block-away'].length, 5);
+
+  const missingAiCore = structuredClone(hybrid);
+  missingAiCore.requirements = missingAiCore.requirements.filter(
+    (requirement) => requirement.id !== 'core-ai-implementation'
+  );
+  assert.match(
+    validateV2Config(missingAiCore).join('\n'),
+    /hybrid-selective requires direct core requirements backed by selected account-leadership and AI\/product evidence/
+  );
+
+  const missingFounderEvidence = structuredClone(hybrid);
+  missingFounderEvidence.resume.roles['one-block-away'].pop();
+  missingFounderEvidence.resume.sourceBulletIds['one-block-away'].pop();
+  assert.match(
+    validateV2Config(missingFounderEvidence).join('\n'),
+    /must retain the complete One Block Away foundation section/
+  );
+
+  const wrongAgency = structuredClone(hybrid);
+  const scoutId = wrongAgency.resume.sourceBulletIds['account-management'][0];
+  wrongAgency.resume.sourceBulletIds['account-management'][0] =
+    'addition:barker-tough-mudder-pdi';
+  wrongAgency.resume.sourceBulletIds['account-management'][2] = scoutId;
+  assert.match(
+    validateV2Config(wrongAgency).join('\n'),
+    /moves approved evidence to the wrong agency entry/
+  );
+});
+
+test('revision 7 supports an AI-led hybrid with consolidated account evidence', () => {
+  const hybrid = aiLedHybridSelectiveConfig();
+  assert.deepEqual(validateV2Config(hybrid), []);
+  assert.deepEqual(schemaErrors(hybrid), []);
+  assert.equal(
+    hybrid.fitGate.resumeBase.leadProfileId,
+    'ai-product-implementation'
+  );
+  assert.equal(hybrid.fitGate.resumeBase.accountPresentation, 'consolidated');
+  assert.equal(
+    resumeRoleSubEntries(hybrid.resume, 'account-management'),
+    null
+  );
+  assert.equal(
+    hybrid.resume.experienceSections[0].heading,
+    'AI & Product Implementation Experience'
+  );
+
+  const wrongLeadOrder = aiLedHybridSelectiveConfig();
+  wrongLeadOrder.resume.experienceSections.reverse();
+  assert.match(
+    validateV2Config(wrongLeadOrder).join('\n'),
+    /experienceSections must begin with the selected lead profile/
+  );
+
+  const invalidAgencyBlocks = aiLedHybridSelectiveConfig();
+  invalidAgencyBlocks.resume.roles['account-management'] =
+    hybridSelectiveConfig().resume.roles['account-management'];
+  assert.match(
+    validateV2Config(invalidAgencyBlocks).join('\n'),
+    /consolidated account presentation must use the consolidated account block/
+  );
+});
+
+test('revisions 5 through 7 preserve every foundation bullet in foundation-complete mode', () => {
   const edited = validConfig();
   edited.resume.roles.hedgehox[0] =
     'Built and iterated the functional Claims Detection POC that secured an investor.';
@@ -444,7 +889,7 @@ test('revisions 5 and 6 preserve every foundation bullet while allowing edits, a
 });
 
 test('curated resume mode requires explicit user authorization and keeps evidence under the original job', () => {
-  const curated = validConfig();
+  const curated = revision6Config();
   curated.resume.compositionMode = 'curated-user-authorized';
   curated.resume.curationAuthorization = {
     authorizedBy: 'user',
@@ -505,7 +950,7 @@ test('curated resume mode requires explicit user authorization and keeps evidenc
 });
 
 test('curated resume mode supports per-agency sub-entries with flat source mapping', () => {
-  const curated = validConfig();
+  const curated = revision6Config();
   curated.resume.compositionMode = 'curated-user-authorized';
   curated.resume.curationAuthorization = {
     authorizedBy: 'user',
@@ -588,7 +1033,7 @@ test('curated resume mode supports per-agency sub-entries with flat source mappi
     )
   );
 
-  const notCurated = validConfig();
+  const notCurated = revision6Config();
   notCurated.resume.roles['account-management'] = structuredClone(
     curated.resume.roles['account-management']
   );
@@ -598,7 +1043,7 @@ test('curated resume mode supports per-agency sub-entries with flat source mappi
   ];
   assert.match(
     validateV2Config(notCurated).join('\n'),
-    /sub-entries are available only in curated-user-authorized mode/
+    /sub-entries require curated authorization or a revision 7 agency-progression base/
   );
 
   const tooFew = structuredClone(curated);
@@ -1179,6 +1624,10 @@ test('humanizer CLI records the reviewed copy and builder rejects pending copy',
       path.join(repoRoot, 'scripts', 'resume-foundation.json'),
       path.join(tempRoot, 'scripts', 'resume-foundation.json')
     );
+    cpSync(
+      path.join(repoRoot, 'scripts', 'resume-base-profiles.json'),
+      path.join(tempRoot, 'scripts', 'resume-base-profiles.json')
+    );
     const config = validConfig();
     config.slug = 'humanizer-gate';
     config.artifactStem = 'Humanizer-Gate';
@@ -1634,6 +2083,10 @@ test('builder requires the current contract for new and reused packages', () => 
       path.join(repoRoot, 'scripts', 'resume-foundation.json'),
       path.join(tempRoot, 'scripts', 'resume-foundation.json')
     );
+    cpSync(
+      path.join(repoRoot, 'scripts', 'resume-base-profiles.json'),
+      path.join(tempRoot, 'scripts', 'resume-base-profiles.json')
+    );
 
     const missingBridge = validConfig();
     missingBridge.slug = 'missing-bridge';
@@ -1686,7 +2139,7 @@ test('builder requires the current contract for new and reused packages', () => 
     assert.notEqual(reusedBuild.status, 0);
     assert.match(
       reusedBuild.stderr,
-      /contractRevision must be 6 for new or rebuilt packages/
+      /contractRevision must be 7 for new or rebuilt packages/
     );
     assert.equal(existsSync(path.join(tempRoot, 'previous-contract')), false);
   } finally {
@@ -1767,6 +2220,10 @@ test('not-fit builder exits before creating route or PDF files', () => {
       path.join(repoRoot, 'scripts', 'resume-foundation.json'),
       path.join(tempRoot, 'scripts', 'resume-foundation.json')
     );
+    cpSync(
+      path.join(repoRoot, 'scripts', 'resume-base-profiles.json'),
+      path.join(tempRoot, 'scripts', 'resume-base-profiles.json')
+    );
     const config = setFit(validConfig(), 'not-fit');
     config.slug = 'not-fit-fixture';
     config.artifactStem = 'Not-Fit-Fixture';
@@ -1838,7 +2295,7 @@ test('checksum parity rejects a different live artifact', () => {
 });
 
 test(
-  'live verification rejects an unpushed package config even when route artifacts match',
+  'live verification rejects an unpushed package config or resume-base registry',
   { timeout: 180_000 },
   async () => {
     const { tempRoot, configPath } = createBuildFixture({
@@ -1878,6 +2335,24 @@ test(
             publicBase: fixtureServer.publicBase,
           }),
         /Package config checksum mismatch/
+      );
+      await new Promise((resolve) => server.close(resolve));
+      server = undefined;
+
+      const registryServer = await startFixtureServer(tempRoot, {
+        transform(relativePath, content) {
+          return relativePath === 'scripts/resume-base-profiles.json'
+            ? Buffer.concat([content, Buffer.from(' ')])
+            : content;
+        },
+      });
+      server = registryServer.server;
+      await assert.rejects(
+        () =>
+          verifyTailoredRoute('config-parity-fixture', {
+            publicBase: registryServer.publicBase,
+          }),
+        /Resume base profiles checksum mismatch/
       );
       const manifest = JSON.parse(
         readFileSync(
@@ -2012,7 +2487,7 @@ test('private ledger rejects identity fingerprint rotation across readiness snap
   delete disguisedRevision.applications[0].readiness;
   assert.match(
     validateLedger(disguisedRevision).join('\n'),
-    /readiness is required for revisions 5 and 6/
+    /readiness is required for revisions 5, 6, and 7/
   );
 
   const missingBacklink = JSON.parse(
@@ -2048,7 +2523,7 @@ test('private ledger rejects identity fingerprint rotation across readiness snap
   downgradedRevision.applications[0].contractRevision = 4;
   assert.match(
     validateLedger(downgradedRevision).join('\n'),
-    /contractRevision must be 5 or 6 when present/
+    /contractRevision must be 5, 6, or 7 when present/
   );
 
   const mismatchedIdentityFields = JSON.parse(
@@ -3072,6 +3547,96 @@ test(
         'project-06.html',
       ]);
       assert.equal(finalManifest.packages[0].verification, undefined);
+    } finally {
+      rmSync(tempRoot, { recursive: true, force: true });
+    }
+  }
+);
+
+test(
+  'hybrid-selective fixture builds a readable two-page package with base metadata',
+  { timeout: 180_000 },
+  () => {
+    const fixture = createBuildFixture({
+      slug: 'hybrid-selective-fixture',
+      artifactStem: 'Hybrid-Selective-Fixture',
+    });
+    const { tempRoot, configPath } = fixture;
+    try {
+      const config = hybridSelectiveConfig();
+      config.slug = 'hybrid-selective-fixture';
+      config.roleTitle = 'Hybrid Selective Fixture';
+      config.artifactStem = 'Hybrid-Selective-Fixture';
+      config.job.company = 'Fixture Company';
+      config.job.roleTitle = 'Hybrid Client AI Lead';
+      config.job.jobId = 'hybrid-fixture';
+      config.job.rawJd =
+        'Own strategic client relationships and translate client needs into working AI workflows.';
+      config.hero.eyebrow = 'Hybrid Client AI Lead';
+      config.constraints.blockedTerms = ['Python engineering'];
+      approveHumanizerReview(config, {
+        reviewedAt: '2026-08-02T12:00:00.000Z',
+        semanticPassComplete: true,
+      });
+      writeFileSync(configPath, `${JSON.stringify(config, null, 2)}\n`);
+
+      const result = run(
+        ['scripts/build-tailored-package.mjs', '--config', configPath],
+        {
+          env: {
+            ...process.env,
+            WORKFLOW_REPO_ROOT: tempRoot,
+            CHROME_PATH: resolveChromeExecutable(),
+          },
+        }
+      );
+      assert.equal(result.status, 0, `${result.stdout}\n${result.stderr}`);
+
+      const pdfPath = path.join(
+        tempRoot,
+        'output',
+        'pdf',
+        'Wally-Mostafa-Hybrid-Selective-Fixture-Resume.pdf'
+      );
+      const pdfInfo = spawnSync('pdfinfo', [pdfPath], { encoding: 'utf8' });
+      assert.equal(pdfInfo.status, 0, pdfInfo.stderr);
+      const pageCount = Number(pdfInfo.stdout.match(/^Pages:\s+(\d+)$/m)?.[1]);
+      assert.ok(pageCount >= 1 && pageCount <= 2);
+
+      const savedConfig = JSON.parse(readFileSync(configPath, 'utf8'));
+      assert.equal(savedConfig.qa.ats.ok, true);
+      assert.ok(
+        savedConfig.qa.ats.annotations.some(
+          (annotation) =>
+            annotation.uri ===
+            'https://wallymo.github.io/hybrid-selective-fixture/'
+        )
+      );
+      assert.equal(savedConfig.qa.resumeBase.mode, 'hybrid-selective');
+      assert.equal(savedConfig.qa.resumeBase.registryVersion, 1);
+      assert.match(savedConfig.qa.resumeBase.registrySha256, /^[a-f0-9]{64}$/);
+      assert.equal(
+        savedConfig.qa.resumeBase.leadProfileId,
+        'account-leadership'
+      );
+      const manifest = JSON.parse(
+        readFileSync(
+          path.join(tempRoot, 'scripts', 'tailored-packages.json'),
+          'utf8'
+        )
+      );
+      assert.equal(manifest.packages[0].resumeBaseMode, 'hybrid-selective');
+      assert.equal(
+        manifest.packages[0].accountPresentation,
+        'agency-progression'
+      );
+      assert.match(
+        readFileSync(
+          path.join(tempRoot, 'hybrid-selective-fixture', 'index.html'),
+          'utf8'
+        ),
+        /Wally-Mostafa-Hybrid-Selective-Fixture-Resume\.pdf/
+      );
     } finally {
       rmSync(tempRoot, { recursive: true, force: true });
     }

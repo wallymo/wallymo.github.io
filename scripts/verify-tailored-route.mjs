@@ -4,6 +4,7 @@ import { readFileSync } from 'node:fs';
 import { execFileSync } from 'node:child_process';
 import {
   PUBLIC_BASE,
+  RESUME_BASE_PROFILES_PATH,
   WORKFLOW_VERSION,
   getArtifactPaths,
   hasCoverLetterArtifact,
@@ -28,6 +29,7 @@ function scopedPaths(pkg, config, paths) {
       ? [paths.coverLetterPdfPath, paths.coverLetterMarkdownPath]
       : []),
     pkg.configPath,
+    ...(config.contractRevision === 7 ? [RESUME_BASE_PROFILES_PATH] : []),
     'scripts/tailored-packages.json',
     ...(config.routeMode === 'scoped-projects'
       ? config.selectedProjects.map((project) => `${paths.slug}/${project}`)
@@ -80,6 +82,7 @@ export async function fetchPublishedArtifacts(
   const configUrl = `${base}${pkg.configPath}`;
   const coverLetterPdfUrl = `${base}${paths.coverLetterPdfPath}`;
   const coverLetterMarkdownUrl = `${base}${paths.coverLetterMarkdownPath}`;
+  const resumeBaseProfilesUrl = `${base}${RESUME_BASE_PROFILES_PATH}`;
   const projectUrls = config.selectedProjects.map((project) =>
     config.routeMode === 'canonical-projects'
       ? `${base}${project}`
@@ -103,6 +106,20 @@ export async function fetchPublishedArtifacts(
     localConfig,
     liveConfig
   );
+
+  let resumeBaseProfilesSha256 = null;
+  if (config.contractRevision === 7) {
+    const profileResponse = await fetchLive(resumeBaseProfilesUrl);
+    const liveProfiles = Buffer.from(await profileResponse.arrayBuffer());
+    const localProfiles = readFileSync(
+      resolveRepoPath(RESUME_BASE_PROFILES_PATH)
+    );
+    resumeBaseProfilesSha256 = assertChecksum(
+      'Resume base profiles',
+      localProfiles,
+      liveProfiles
+    );
+  }
 
   const scopedProjectSha256 = {};
   for (const [projectIndex, projectUrl] of projectUrls.entries()) {
@@ -165,6 +182,9 @@ export async function fetchPublishedArtifacts(
     projectUrls,
     configSha256,
     pdfSha256,
+    ...(config.contractRevision === 7
+      ? { resumeBaseProfilesUrl, resumeBaseProfilesSha256 }
+      : {}),
     ...(hasCoverLetterArtifact(config)
       ? {
           coverLetterPdfUrl,
@@ -242,6 +262,9 @@ async function main() {
     );
   }
   console.log(`OK live package config: ${result.configUrl}`);
+  if (result.resumeBaseProfilesUrl) {
+    console.log(`OK live resume base profiles: ${result.resumeBaseProfilesUrl}`);
+  }
   console.log(`OK PDF checksum: ${result.pdfSha256}`);
   console.log('Updated publishStatus to live-verified.');
 }

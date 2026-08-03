@@ -109,7 +109,7 @@ const EVIDENCE_MODES = new Set([
   'credential-or-technical-primary',
 ]);
 const SHA256_PATTERN = /^[a-f0-9]{64}$/;
-const GOVERNED_CONTRACT_REVISIONS = new Set([5, 6]);
+const GOVERNED_CONTRACT_REVISIONS = new Set([5, 6, 7]);
 
 function isGovernedContractRevision(value) {
   return GOVERNED_CONTRACT_REVISIONS.has(value);
@@ -318,13 +318,15 @@ function validateReadiness(value, prefix, errors) {
     }
   }
   if (!isGovernedContractRevision(value.contractRevision)) {
-    errors.push(`${prefix}.contractRevision must be 5 or 6`);
+    errors.push(`${prefix}.contractRevision must be 5, 6, or 7`);
   }
   if (
-    value.contractRevision === 6 &&
+    value.contractRevision >= 6 &&
     !isBoolean(value.coverLetterRequired)
   ) {
-    errors.push(`${prefix}.coverLetterRequired must be boolean for revision 6`);
+    errors.push(
+      `${prefix}.coverLetterRequired must be boolean for revisions 6 and 7`
+    );
   }
   if (!isValidUrl(value.applicationUrl)) {
     errors.push(`${prefix}.applicationUrl must be an HTTP or HTTPS URL`);
@@ -541,7 +543,9 @@ export function validateLedger(ledger) {
       application.contractRevision !== undefined &&
       !isGovernedContractRevision(application.contractRevision)
     ) {
-      errors.push(`${prefix}.contractRevision must be 5 or 6 when present`);
+      errors.push(
+        `${prefix}.contractRevision must be 5, 6, or 7 when present`
+      );
     }
     const isGovernedRevision = isGovernedContractRevision(
       application.contractRevision
@@ -556,11 +560,13 @@ export function validateLedger(ledger) {
         'readiness',
       ]) {
         if (application[field] === undefined) {
-          errors.push(`${prefix}.${field} is required for revisions 5 and 6`);
+          errors.push(
+            `${prefix}.${field} is required for revisions 5, 6, and 7`
+          );
         }
       }
       if (!isNonEmptyString(application.jobId)) {
-        errors.push(`${prefix}.jobId is required for revisions 5 and 6`);
+        errors.push(`${prefix}.jobId is required for revisions 5, 6, and 7`);
       }
     }
     if (!isNullableString(application.jobId)) {
@@ -1248,7 +1254,7 @@ export async function prepareApplication(
   );
   if (!isGovernedContractRevision(config.contractRevision)) {
     throw new Error(
-      'Submission readiness is required only for governed revision 5 or 6 packages; legacy packages retain their historical application flow'
+      'Submission readiness is required only for governed revision 5, 6, or 7 packages; legacy packages retain their historical application flow'
     );
   }
   if (!pkg.verification) {
