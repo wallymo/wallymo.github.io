@@ -1277,6 +1277,79 @@ test(
 );
 
 test(
+  'showcase routes drop the positioning sections and retitle the work grid',
+  { timeout: 180_000 },
+  () => {
+    const { tempRoot, config, configPath } = createBuildFixture({
+      slug: 'showcase-route-fixture',
+      artifactStem: 'Showcase-Route-Fixture',
+    });
+    try {
+      const invalidPresentation = structuredClone(config);
+      invalidPresentation.route = { presentation: 'billboard' };
+      assert.match(
+        validateV2Config(invalidPresentation).join('\n'),
+        /route\.presentation must be full or showcase/
+      );
+      const emptyHeading = structuredClone(config);
+      emptyHeading.route = { presentation: 'showcase', workHeading: ' ' };
+      assert.match(
+        validateV2Config(emptyHeading).join('\n'),
+        /route\.workHeading must be a non-empty string/
+      );
+
+      config.route = {
+        presentation: 'showcase',
+        workHeading: 'A few pieces of relevant work.',
+      };
+      assert.ok(
+        humanizerCopyEntries(config).some(
+          ([field, value]) =>
+            field === 'route.workHeading' &&
+            value === 'A few pieces of relevant work.'
+        )
+      );
+      approveHumanizerReview(config, {
+        reviewedAt: '2026-08-03T12:00:00.000Z',
+        semanticPassComplete: true,
+      });
+      assert.deepEqual(validateV2Config(config), []);
+      writeFileSync(configPath, `${JSON.stringify(config, null, 2)}\n`);
+
+      const result = run(
+        ['scripts/build-tailored-package.mjs', '--config', configPath],
+        {
+          env: {
+            ...process.env,
+            WORKFLOW_REPO_ROOT: tempRoot,
+            CHROME_PATH: resolveChromeExecutable(),
+          },
+        }
+      );
+      assert.equal(result.status, 0, `${result.stdout}\n${result.stderr}`);
+
+      const routeHtml = readFileSync(
+        path.join(tempRoot, 'showcase-route-fixture', 'index.html'),
+        'utf8'
+      );
+      assert.ok(routeHtml.includes('A few pieces of relevant work.'));
+      assert.ok(!routeHtml.includes('Proof for the lane.'));
+      assert.ok(!routeHtml.includes('id="how-i-build"'));
+      assert.ok(!routeHtml.includes('id="capabilities"'));
+      assert.ok(!routeHtml.includes('id="arc"'));
+      assert.ok(!routeHtml.includes('converging into AI implementation'));
+      assert.ok(!routeHtml.includes('href="#how-i-build"'));
+      assert.ok(!routeHtml.includes('href="#arc"'));
+      assert.ok(routeHtml.includes('id="awards"'));
+      assert.ok(routeHtml.includes('trust-strip'));
+      assert.ok(routeHtml.includes('id="contact"'));
+    } finally {
+      rmSync(tempRoot, { recursive: true, force: true });
+    }
+  }
+);
+
+test(
   'curated per-agency sub-entries render as separate jobs and pass ATS checks',
   { timeout: 180_000 },
   () => {

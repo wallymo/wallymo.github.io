@@ -462,6 +462,31 @@ function buildRoute(config, paths) {
     `<div class="work-grid">\n\n      ${workGrid}\n\n    </div>`,
     'work grid'
   );
+  if ((config.route?.presentation || 'full') === 'showcase') {
+    for (const sectionId of ['how-i-build', 'capabilities', 'arc']) {
+      routeHtml = replaceFirst(
+        routeHtml,
+        new RegExp(
+          `\\s*<section\\b[^>]*\\bid="${sectionId}"[\\s\\S]*?<\\/section>`
+        ),
+        '',
+        `${sectionId} section`
+      );
+      routeHtml = routeHtml.replace(
+        new RegExp(`\\s*<li><a href="#${sectionId}">[^<]*<\\/a><\\/li>`),
+        ''
+      );
+    }
+  }
+  if (config.route?.workHeading) {
+    routeHtml = replaceFirst(
+      routeHtml,
+      /(<section id="work">[\s\S]*?<h2 class="section-title reveal">)[\s\S]*?(<\/h2>)/,
+      (_match, openingHtml, closingTag) =>
+        `${openingHtml}${escapeHtml(config.route.workHeading)}${closingTag}`,
+      'work heading'
+    );
+  }
   return routeHtml;
 }
 

@@ -308,6 +308,7 @@ export function humanizerCopyEntries(config) {
   add('hero.intro', config?.hero?.intro);
   add('contact.prompt', config?.contact?.prompt);
   add('contact.signoff', config?.contact?.signoff);
+  add('route.workHeading', config?.route?.workHeading);
   return entries;
 }
 
@@ -2113,6 +2114,24 @@ export function validateV2Config(
   pushError(errors, /email/i.test(contact?.prompt || ''), 'contact.prompt must make email the clear next step');
   pushError(errors, isNonEmptyString(contact?.signoff), 'contact.signoff is required');
 
+  const route = config?.route;
+  if (route !== undefined) {
+    pushError(errors, route && typeof route === 'object', 'route must be an object');
+    if (route && typeof route === 'object') {
+      pushError(
+        errors,
+        route.presentation === undefined ||
+          ['full', 'showcase'].includes(route.presentation),
+        'route.presentation must be full or showcase'
+      );
+      pushError(
+        errors,
+        route.workHeading === undefined || isNonEmptyString(route.workHeading),
+        'route.workHeading must be a non-empty string when present'
+      );
+    }
+  }
+
   const constraints = config?.constraints;
   pushError(errors, constraints && typeof constraints === 'object', 'constraints is required');
   pushError(errors, isStringArray(constraints?.doNotClaim), 'constraints.doNotClaim must be a string array');
@@ -2351,6 +2370,10 @@ export function recruiterFacingClaimViolations(config) {
     ['hero.intro', config.hero.intro],
     ['contact.prompt', config.contact.prompt],
     ['contact.signoff', config.contact.signoff],
+    ...(typeof config.route?.workHeading === 'string' &&
+    config.route.workHeading.trim()
+      ? [['route.workHeading', config.route.workHeading]]
+      : []),
   ];
   const prohibitedPhrases = [
     ...config.constraints.doNotClaim,
