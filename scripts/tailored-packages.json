@@ -1695,9 +1695,28 @@
         "project-01.html"
       ],
       "resumePdfPath": "output/pdf/Wally-Mostafa-Marketing-Resume.pdf",
-      "publishStatus": "local-only",
+      "publishStatus": "live-verified",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-08-03T19:53:17.106Z"
+      "builtAt": "2026-08-03T19:53:17.106Z",
+      "verification": {
+        "verifiedAt": "2026-08-03T19:54:52.363Z",
+        "routeUrl": "https://wallymo.github.io/marketing/",
+        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-Marketing-Resume.pdf",
+        "configUrl": "https://wallymo.github.io/scripts/packages/marketing.json",
+        "projectUrls": [
+          "https://wallymo.github.io/project-06.html",
+          "https://wallymo.github.io/project-04.html",
+          "https://wallymo.github.io/project-01.html"
+        ],
+        "configSha256": "8f600e5a722f77400fd3e6930f8ab51fe845bc52b7b14264626ca39a00bb4069",
+        "pdfSha256": "86ae1de09829b770c402a67dbed0d04a8ddcae1f7da800fec62d9a2a243e20e6",
+        "resumeBaseProfilesUrl": "https://wallymo.github.io/scripts/resume-base-profiles.json",
+        "resumeBaseProfilesSha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108",
+        "routeSha256": "cb0ceffca02996b7cf5d9241f740a34a5141bce9f08c08452a240b00120bf573",
+        "scopedProjectSha256": {},
+        "configInputSha256": "45a3e0b228fa4daafb673aea6f807d02dafd51bdf2cd47ca38a85ddeb401e463",
+        "qaBuiltAt": "2026-08-03T19:53:17.106Z"
+      }
     },
     {
       "workflowVersion": 2,
