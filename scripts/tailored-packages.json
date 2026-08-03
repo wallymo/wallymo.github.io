@@ -2611,9 +2611,28 @@
         "project-06.html"
       ],
       "resumePdfPath": "output/pdf/Wally-Mostafa-Product-Management-Resume.pdf",
-      "publishStatus": "local-only",
+      "publishStatus": "live-verified",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-08-03T19:12:11.742Z"
+      "builtAt": "2026-08-03T19:12:11.742Z",
+      "verification": {
+        "verifiedAt": "2026-08-03T19:14:11.150Z",
+        "routeUrl": "https://wallymo.github.io/product-management/",
+        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-Product-Management-Resume.pdf",
+        "configUrl": "https://wallymo.github.io/scripts/packages/product-management.json",
+        "projectUrls": [
+          "https://wallymo.github.io/project-02.html",
+          "https://wallymo.github.io/project-03.html",
+          "https://wallymo.github.io/project-06.html"
+        ],
+        "configSha256": "a13c90b5df55fb9b3371d77d1fd9cd35309a78e7e813bc8a54c6d19f11135bae",
+        "pdfSha256": "2580fc32849dadcb56e215d4f3e67a9996db4fc2764418917ea2b0ccc405b99f",
+        "resumeBaseProfilesUrl": "https://wallymo.github.io/scripts/resume-base-profiles.json",
+        "resumeBaseProfilesSha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108",
+        "routeSha256": "7cd11203965bd04f92a0af7b57888de808c8d6a6969e6acdca189af696894f68",
+        "scopedProjectSha256": {},
+        "configInputSha256": "df06d1b7a87bffab39c5cfd5f4f6d754d36f22aec33c4d7b39d8dc527c1eda43",
+        "qaBuiltAt": "2026-08-03T19:12:11.742Z"
+      }
     },
     {
       "slug": "product-management-ai-evaluator",
