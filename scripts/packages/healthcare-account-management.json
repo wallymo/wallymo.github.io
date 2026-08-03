@@ -5,7 +5,7 @@
   "roleTitle": "Healthcare Account Management & Client Strategy",
   "artifactStem": "Healthcare-Account-Management",
   "fitClass": "strong",
-  "routeMode": "canonical-projects",
+  "routeMode": "scoped-projects",
   "selectedProjects": [
     "project-01.html",
     "project-06.html",
@@ -536,8 +536,8 @@
   },
   "qa": {
     "status": "qa-passed",
-    "builtAt": "2026-08-03T23:25:09.056Z",
-    "configInputSha256": "fac5f83a8ac994d0c7c40423e4245ed312b73ab363f71b122b19e9827c0ef5ae",
+    "builtAt": "2026-08-03T23:35:40.667Z",
+    "configInputSha256": "bfd5f0102c94deafdfbbfff666faea91c40b8e70bb93fc574dd8ad3a22d88b1d",
     "sourceResumeSha256": "2265313e78b596a2b37d6d8f9a95081e4321b4047f142a5f0ddf22449cab4b9c",
     "resumeFoundation": {
       "id": "wally-mostafa-resume-2026-07-03",
@@ -558,11 +558,15 @@
       "registrySha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108"
     },
     "artifactHashes": {
-      "routeSha256": "c1c5d25b2464eddcd70a29895f60b8aa785464607a1df147b4e4476ba0f8a315",
-      "resumePdfSha256": "306abe5e43b24f01f6f3d179d64560ec9b61754465f1cd8ab14e101612045dac",
+      "routeSha256": "eb47652ef8fd0a884ede3ca4b40bdc17fb20e0896441dc23a6007969f8f709ff",
+      "resumePdfSha256": "825764525de411ecc718d03a790ba8e8eb7a0cd919c005bcfb7fb55281031ca7",
       "coverLetterPdfSha256": null,
       "coverLetterMarkdownSha256": null,
-      "scopedProjectSha256": {}
+      "scopedProjectSha256": {
+        "project-01.html": "0a29b972448bbd2ef6d35bb1bfb967d5befa0e9917289232fe0754607e251d70",
+        "project-06.html": "b354958a6b6912febc952d7f70f12b30aff2ad2b8081c54065cb37016326b850",
+        "project-02.html": "a2b25e01f7e54cd59c317673f58cd8eeadd6a185a914293130e6eae9e0682bce"
+      }
     },
     "renderer": {
       "browser": {
@@ -725,7 +729,31 @@
           "errors": []
         },
         {
+          "name": "desktop-project-01",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-06",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-02",
+          "errors": []
+        },
+        {
           "name": "mobile",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-01",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-06",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-02",
           "errors": []
         }
       ],
