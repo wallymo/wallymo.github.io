@@ -1,6 +1,6 @@
 {
   "workflowVersion": 2,
-  "contractRevision": 6,
+  "contractRevision": 7,
   "slug": "healthcare-account-management",
   "roleTitle": "Healthcare Account Management & Client Strategy",
   "artifactStem": "Healthcare-Account-Management",
@@ -234,6 +234,19 @@
     }
   ],
   "fitGate": {
+    "resumeBase": {
+      "mode": "account-leadership",
+      "sourceProfiles": [
+        {
+          "id": "account-leadership",
+          "version": 1
+        }
+      ],
+      "leadProfileId": "account-leadership",
+      "accountPresentation": "agency-progression",
+      "action": "use-existing",
+      "rationale": "This is the approved healthcare account-leadership networking profile. Direct account ownership, regulated pharma delivery, budgets, and title progression are the primary operating center; UX and AI remain supporting evidence."
+    },
     "supportedOverlap": [
       "8 years of direct Fortune 500 pharma and healthcare account management with brand budgets up to $20M, from Account Coordinator through Account Supervisor and Digital Strategist.",
       "Three years leading the Jazz Pharmaceuticals XYREM consumer account at Scout Marketing, including the first unbranded social campaign for the brand and for Jazz.",
@@ -257,11 +270,11 @@
   },
   "positioning": {
     "laneId": "client-account-delivery",
-    "targetIdentity": "Healthcare account leader",
+    "targetIdentity": "healthcare account management",
     "employerNeed": "Own healthcare client relationships and keep brand strategy, budgets, timelines, and cross-functional delivery aligned.",
     "bridgeType": "direct",
     "applicationStrategy": "direct",
-    "bridgeThesis": "back to account management",
+    "bridgeThesis": "keeping the relationship at the center",
     "proofIds": [
       "account-management-01",
       "account-management-02",
@@ -279,7 +292,7 @@
       "reason": "The user authorized splitting the consolidated account-management block into per-agency sub-entries so title progression and tenure are visible, restoring the Scout Marketing and XYREM work with the Account Supervisor title, correcting the account career start date to September 2010, consolidating the 2011 Pharma Choice awards, and rewriting bullets so direct account management leads the resume."
     },
     "layoutDensity": "compact",
-    "summary": "Healthcare account leader. Eight years on Fortune 500 pharma took me from Account Coordinator to Account Supervisor, running budgets up to $20M through FDA, OPDP, and med-legal review. The job never changed. In UX that meant design leadership, growing a team from 2 to 30. In AI it means leading client engagements from discovery through delivery. Now bringing it all back to account management.",
+    "summary": "Looking to make a return to healthcare account management. Over eight years on Fortune 500 pharma brands, I progressed from Account Coordinator to Account Supervisor, managed budgets up to $20M, and guided work through FDA, OPDP, and med-legal review. In UX, I grew a design team from 2 to 30. Today, I lead client AI engagements from discovery through delivery. I'm coming back with deeper experience building teams, shaping products, and using AI to solve client problems while keeping the relationship at the center.",
     "skillIds": [
       "client-account-leadership",
       "regulated-healthcare-client-delivery",
@@ -487,7 +500,7 @@
       "Brand budgets up to $20M",
       "National broadcast, FDA and MLR"
     ],
-    "intro": "I'm a healthcare account leader. Eight years on Fortune 500 pharma took me from Account Coordinator to Account Supervisor, running budgets up to $20M through FDA and med-legal review. The job never changed. In UX that meant design leadership, growing a team from 2 to 30. In AI it means leading client engagements from discovery through delivery. Now I'm bringing it all back to account management."
+    "intro": "I'm returning to healthcare account management with eight years on Fortune 500 pharma brands, progression from Account Coordinator to Account Supervisor, and budgets up to $20M across FDA and med-legal review. Since then, I've grown a design team from 2 to 30 and led client AI engagements from discovery through delivery, using that broader experience while keeping the relationship at the center."
   },
   "contact": {
     "prompt": "If you need a healthcare account leader who can own the relationship, guide regulated campaign delivery, and keep internal teams clear on what comes next, email is the fastest way to reach me.",
@@ -523,16 +536,30 @@
   },
   "qa": {
     "status": "qa-passed",
-    "builtAt": "2026-08-02T13:34:37.978Z",
-    "configInputSha256": "cc0634cccc087519cbf0267242191318ca8b9d3be80bb211252b3736a9013f26",
+    "builtAt": "2026-08-03T18:18:21.848Z",
+    "configInputSha256": "bec7549911aa4742896489b4ab729d27c6665801b41bc2c1c534a0a1e6a15f66",
     "sourceResumeSha256": "796b107e9ac0aa62e791915feaf7b152b1510d1411b015ce68e84a54a7b435f6",
     "resumeFoundation": {
       "id": "wally-mostafa-resume-2026-07-03",
       "sourcePdfSha256": "f9b05b6c3c134262b1af6c5734363daf4385cf335407a139779a37d138adf1aa"
     },
+    "resumeBase": {
+      "mode": "account-leadership",
+      "sourceProfiles": [
+        {
+          "id": "account-leadership",
+          "version": 1
+        }
+      ],
+      "leadProfileId": "account-leadership",
+      "accountPresentation": "agency-progression",
+      "action": "use-existing",
+      "registryVersion": 1,
+      "registrySha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108"
+    },
     "artifactHashes": {
-      "routeSha256": "693991d9c22cc11fd6d22c389d91f24973b654ddb2b6c030553d89a41c2ae1bd",
-      "resumePdfSha256": "c525794642b22f4b3064cf3f41c00b45d381c3f82c5eb7d9a31f64a5e28095e7",
+      "routeSha256": "88f290696611ef50e11cab5116c78cd828a4bfa8c457ac192ea80d3f9379fecf",
+      "resumePdfSha256": "11333ce36ec783c5dc4ba0f8315a0b96a54834cf1e044f085b8b8126a9e5a7cc",
       "coverLetterPdfSha256": null,
       "coverLetterMarkdownSha256": null,
       "scopedProjectSha256": {}
@@ -552,7 +579,7 @@
       "ok": true,
       "pdfPath": "output/pdf/Wally-Mostafa-Healthcare-Account-Management-Resume.pdf",
       "pageCount": 2,
-      "fileSize": 161505,
+      "fileSize": 161642,
       "annotations": [
         {
           "page": 1,
@@ -685,8 +712,8 @@
       "status": "passed",
       "version": "2.2.0",
       "mode": "rewrite-requested",
-      "reviewedAt": "2026-08-02T13:34:33.186Z",
-      "copySha256": "2903cef318e6f22f6cdc8f81b9b00e664af6ffb1786d3cac2760de6ad4825b90",
+      "reviewedAt": "2026-08-03T18:16:21.346Z",
+      "copySha256": "23a9b324c00893d6a9dc06056f85d9ab121bf5efa573d92dd4da3328aac8c7a9",
       "reviewMethod": "humanizer-skill",
       "semanticPassAttested": true,
       "staticChecksPassed": true
@@ -709,8 +736,8 @@
     "humanizerVersion": "2.2.0",
     "mode": "rewrite-requested",
     "status": "passed",
-    "reviewedAt": "2026-08-02T13:34:33.186Z",
-    "copySha256": "2903cef318e6f22f6cdc8f81b9b00e664af6ffb1786d3cac2760de6ad4825b90",
+    "reviewedAt": "2026-08-03T18:16:21.346Z",
+    "copySha256": "23a9b324c00893d6a9dc06056f85d9ab121bf5efa573d92dd4da3328aac8c7a9",
     "preserved": [
       "claims"
     ],

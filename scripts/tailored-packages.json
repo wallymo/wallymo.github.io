@@ -1238,7 +1238,7 @@
     },
     {
       "workflowVersion": 2,
-      "contractRevision": 6,
+      "contractRevision": 7,
       "slug": "healthcare-account-management",
       "roleTitle": "Healthcare Account Management & Client Strategy",
       "artifactStem": "Healthcare-Account-Management",
@@ -1256,26 +1256,19 @@
         "project-02.html"
       ],
       "resumePdfPath": "output/pdf/Wally-Mostafa-Healthcare-Account-Management-Resume.pdf",
-      "publishStatus": "live-verified",
+      "publishStatus": "local-only",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-08-02T13:34:37.978Z",
-      "verification": {
-        "verifiedAt": "2026-08-02T13:35:33.876Z",
-        "routeUrl": "https://wallymo.github.io/healthcare-account-management/",
-        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-Healthcare-Account-Management-Resume.pdf",
-        "configUrl": "https://wallymo.github.io/scripts/packages/healthcare-account-management.json",
-        "projectUrls": [
-          "https://wallymo.github.io/project-01.html",
-          "https://wallymo.github.io/project-06.html",
-          "https://wallymo.github.io/project-02.html"
-        ],
-        "configSha256": "4ad682c942ce18b60d35d8a512fa75d664eeaa43d4751b68198bc9ccc09f897a",
-        "pdfSha256": "c525794642b22f4b3064cf3f41c00b45d381c3f82c5eb7d9a31f64a5e28095e7",
-        "routeSha256": "693991d9c22cc11fd6d22c389d91f24973b654ddb2b6c030553d89a41c2ae1bd",
-        "scopedProjectSha256": {},
-        "configInputSha256": "cc0634cccc087519cbf0267242191318ca8b9d3be80bb211252b3736a9013f26",
-        "qaBuiltAt": "2026-08-02T13:34:37.978Z"
-      }
+      "builtAt": "2026-08-03T18:18:21.848Z",
+      "resumeBaseMode": "account-leadership",
+      "resumeBaseLeadProfile": "account-leadership",
+      "resumeBaseAction": "use-existing",
+      "accountPresentation": "agency-progression",
+      "resumeBaseProfiles": [
+        {
+          "id": "account-leadership",
+          "version": 1
+        }
+      ]
     },
     {
       "slug": "healthcare-diagnostics-sales-support",
