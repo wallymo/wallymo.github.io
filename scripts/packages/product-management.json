@@ -1,0 +1,673 @@
+{
+  "workflowVersion": 2,
+  "contractRevision": 7,
+  "slug": "product-management",
+  "roleTitle": "Product Management & Product Strategy",
+  "artifactStem": "Product-Management",
+  "fitClass": "strong",
+  "routeMode": "canonical-projects",
+  "selectedProjects": [
+    "project-02.html",
+    "project-03.html",
+    "project-06.html"
+  ],
+  "job": {
+    "company": "General recruiter and networking use",
+    "roleTitle": "Product Management & Product Strategy",
+    "jobId": "general-profile",
+    "jobUrl": "not-provided",
+    "sourceChannel": "user-requested-general-resume",
+    "dateCaptured": "2026-08-03",
+    "location": "Raleigh, NC; remote opportunities",
+    "atsVendor": "not-applicable",
+    "rawJd": "General recruiter and networking profile, not an employer posting.\n\nTarget: Product Manager, Senior Product Manager, Product Strategy Lead, and adjacent client-facing product roles.\n\nCore work: understand customer and business problems; lead discovery; translate needs into product decisions, requirements, priorities, and roadmaps; align stakeholders and cross-functional teams; guide iterative delivery; and improve products through user feedback, adoption signals, and measurable outcomes.\n\nResume architecture: lead with direct product strategy and ownership across One Block Away, Hedgehox, and Kinesso. Use UX as evidence of customer discovery and product judgment. Consolidate earlier account leadership as evidence of client understanding, commercial context, and cross-functional delivery. Keep AI as a product-building capability rather than the primary identity.\n\nThis package must be fit-gated again against each employer's actual job description before application."
+  },
+  "classification": {
+    "targetLane": "ai-product-implementation",
+    "evidenceMode": "balanced",
+    "primarySource": "The resume directly shows product discovery, product strategy, working prototypes, roadmap decisions, client iteration, enterprise platform scale, user research, team leadership, and cross-functional delivery.",
+    "supportingSource": "The portfolio shows how product problems were framed and turned into POCs, enterprise workflows, data products, and reusable systems. It supports the product-management story without replacing the resume's ownership evidence.",
+    "hardGateStatus": "pass",
+    "hardGates": [
+      {
+        "gate": "Bring a bachelor's degree and meaningful product-management or closely related experience",
+        "status": "pass",
+        "requirementId": "education-and-product-experience",
+        "evidence": "The resume documents a Rutgers University BA and current product ownership spanning discovery, product strategy, requirements, roadmap decisions, working prototypes, stakeholder iteration, and delivery."
+      }
+    ]
+  },
+  "requirements": [
+    {
+      "id": "education-and-product-experience",
+      "text": "Bring a bachelor's degree and meaningful product-management or closely related experience.",
+      "priority": "hard-gate",
+      "source": "jd",
+      "confidence": "contextual",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The resume shows a Rutgers University BA and product ownership across current AI implementation and founder-led product work."
+      ],
+      "proofIds": [
+        "one-block-away-04"
+      ],
+      "destinations": [
+        "summary",
+        "experience"
+      ],
+      "resumeTerms": [
+        "Product leader",
+        "product strategy"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "product-discovery-strategy-roadmaps",
+      "text": "Lead product discovery, define the problem, shape product strategy, and turn findings into requirements, priorities, and roadmap decisions.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "contextual",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "One Block Away work turns unclear client questions into testable product concepts, working POCs, demo flows, and roadmap decisions.",
+        "Hedgehox work translates pharma agency needs into product requirements and working tools."
+      ],
+      "proofIds": [
+        "one-block-away-01",
+        "one-block-away-04",
+        "hedgehox-03"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "Product Strategy",
+        "requirements",
+        "roadmap decisions"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "iterative-product-delivery",
+      "text": "Guide products from discovery through prototypes, stakeholder feedback, working software, and implementation.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "contextual",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Current founder work owns product strategy, UX, AI workflow design, front-end build, backend logic, demos, and client iteration through working prototypes.",
+        "Claims Detector secured investor support through a functional POC and iterative product story."
+      ],
+      "proofIds": [
+        "one-block-away-04",
+        "hedgehox-01"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "prototype validation",
+        "working prototype",
+        "client iteration"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "customer-research-product-direction",
+      "text": "Use customer discovery, stakeholder input, research, and product feedback to guide product direction.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "contextual",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Heartbeat work translated stakeholder input, competitive audits, and user needs into digital product direction.",
+        "Kinesso and One Block Away work used research, client discovery, and iteration to shape product workflows."
+      ],
+      "proofIds": [
+        "heartbeat-01",
+        "heartbeat-02",
+        "one-block-away-01"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "user needs",
+        "product direction",
+        "client discovery"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "cross-functional-product-leadership",
+      "text": "Align business, product, design, engineering, data, operations, and client teams around clear product decisions and delivery.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "contextual",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Product work spans client discovery, strategy, UX, AI workflows, front-end and backend decisions, demos, and iteration.",
+        "Kinesso product leadership scaled a team from 2 to 30 across the US and Poland while supporting enterprise analytics."
+      ],
+      "proofIds": [
+        "one-block-away-04",
+        "kinesso-01",
+        "heartbeat-03"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "cross-functional delivery",
+        "2 to 30",
+        "engineering teams"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "enterprise-products-adoption",
+      "text": "Lead products and platforms at enterprise scale with attention to adoption, reusable systems, and measurable outcomes.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "contextual",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Kinesso work supported enterprise analytics used by 7,000+ people across 22 white-label brands.",
+        "The Digital Experience Audit translated channel data into scoring, benchmarks, recommendations, visualization, and client outputs."
+      ],
+      "proofIds": [
+        "kinesso-01",
+        "kinesso-02",
+        "kinesso-03"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "7,000+ users",
+        "22 white-label brands",
+        "Product Adoption"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "technical-product-translation",
+      "text": "Translate business needs into product requirements and work effectively with technical teams through implementation.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "contextual",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Hedgehox work turns pharma workflow needs into AI tools for claim review, scoping, routing, submission capture, and FDA monitoring.",
+        "Earlier UX work moved product recommendations into build-ready experiences with engineering teams."
+      ],
+      "proofIds": [
+        "hedgehox-03",
+        "one-block-away-04",
+        "heartbeat-03"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience"
+      ],
+      "resumeTerms": [
+        "technical delivery",
+        "build-ready",
+        "product requirements"
+      ],
+      "matchMode": "recognized-equivalent"
+    }
+  ],
+  "fitGate": {
+    "resumeBase": {
+      "mode": "ai-product-implementation",
+      "sourceProfiles": [
+        {
+          "id": "ai-product-implementation",
+          "version": 1
+        }
+      ],
+      "leadProfileId": "ai-product-implementation",
+      "accountPresentation": "consolidated",
+      "action": "tailor-to-jd",
+      "rationale": "This recruiter brief is product-led. The AI/Product evidence pool provides the direct product strategy, discovery, implementation, enterprise platform, research, and adoption evidence; account leadership remains supporting evidence."
+    },
+    "supportedOverlap": [
+      "Current product work covers client discovery, product strategy, requirements, working prototypes, demo flows, roadmap decisions, and client iteration.",
+      "Enterprise platform leadership supported analytics used by 7,000+ users across 22 white-label brands.",
+      "Product design leadership scaled a team from 2 to 30 across the US and Poland.",
+      "Research and UX work consistently translated stakeholder input and user needs into product direction and build-ready experiences.",
+      "AI implementation work turns regulated business workflows into functional tools from discovery through delivery.",
+      "Eight years of account leadership supports client understanding, stakeholder communication, priorities, and commercial context."
+    ],
+    "unsupportedRequirements": [
+      "Formal ownership of a mature backlog, technical user stories, or acceptance criteria.",
+      "Named Scrum ceremonies, sprint planning, or release cadence ownership.",
+      "Product P&L, pricing, or packaging ownership.",
+      "Quarterly OKR or KPI reporting cadence."
+    ],
+    "actualMismatches": [],
+    "missingEvidence": [
+      "A named backlog-management example using Jira, Azure DevOps, or a similar system.",
+      "A formal sprint-planning, release-management, or capacity-planning example.",
+      "Direct product P&L, pricing, or packaging ownership.",
+      "A documented quarterly product KPI or OKR reporting cadence.",
+      "A long conventional Product Manager title sequence; the product-management case rests on direct responsibility-level evidence instead."
+    ],
+    "coverLetterBridge": {
+      "status": "not-needed",
+      "rationale": "This is a general recruiter and networking resume rather than an employer application. The resume and portfolio directly establish the supported product-management work. Each employer job description still needs its own bridge decision."
+    },
+    "recommendation": "Proceed as a general Product Management recruiter profile. Lead with product ownership, discovery, working software, enterprise scale, user research, and cross-functional delivery. Keep formal backlog, Scrum, P&L, and KPI-cadence claims out unless a future job-specific evidence review supports them."
+  },
+  "positioning": {
+    "laneId": "ai-product-implementation",
+    "targetIdentity": "Product leader",
+    "employerNeed": "Turn customer and business problems into clear product decisions, aligned teams, working products, and useful outcomes.",
+    "bridgeType": "direct",
+    "applicationStrategy": "direct",
+    "bridgeThesis": "connect customer needs, cross-functional teams, and practical delivery",
+    "proofIds": [
+      "one-block-away-04",
+      "kinesso-01",
+      "hedgehox-03"
+    ],
+    "remainingGap": null
+  },
+  "coverLetter": null,
+  "resume": {
+    "foundationId": "wally-mostafa-resume-2026-07-03",
+    "compositionMode": "foundation-complete",
+    "layoutDensity": "compact",
+    "summary": "Product leader who turns unclear business problems into product decisions, working software, and roadmaps. I have built AI tools from discovery through delivery, led enterprise platforms used by 7,000+ people across 22 brands, and grown a product design team from 2 to 30. My background in UX and client leadership helps me connect customer needs, cross-functional teams, and practical delivery.",
+    "skillIds": [
+      "product-strategy-poc-delivery",
+      "research-experience-strategy",
+      "program-project-delivery",
+      "client-success-product-adoption"
+    ],
+    "skills": [
+      {
+        "label": "Product Strategy & POC Delivery",
+        "description": "Discovery, scoping, requirements, prototype validation, demo narratives, build-ready logic, and production handoff"
+      },
+      {
+        "label": "Research & Experience Strategy",
+        "description": "Stakeholder interviews, competitive audits, journey maps, user flows, wireframes, prototypes, usability testing, and research-led product direction"
+      },
+      {
+        "label": "Program & Project Delivery",
+        "description": "Scoping, requirements, timelines, review routing, team coordination, risk visibility, and build-ready handoff across product, design, and client teams"
+      },
+      {
+        "label": "Client Success & Product Adoption",
+        "description": "Client discovery, adoption-focused workflows, training and roadshows, human review, and product decisions based on user needs"
+      }
+    ],
+    "experienceSections": [
+      {
+        "heading": "Product Management & Leadership Experience",
+        "roleIds": [
+          "hedgehox",
+          "one-block-away",
+          "kinesso"
+        ]
+      },
+      {
+        "heading": "Earlier Client & Experience Strategy",
+        "roleIds": [
+          "omnicom",
+          "heartbeat",
+          "account-management"
+        ]
+      }
+    ],
+    "roles": {
+      "hedgehox": [
+        "Secured an investor for proprietary Claims Detection software by building the functional POC, shaping the product story, and iterating with investors",
+        "Designed Claims Detector workflows that identify promotional claims, surface evidence gaps, and pre-populate audit-ready annotations before MLR submission",
+        "Turn pharma agency needs into product requirements and working tools for MLR claim review, brief intake, scoping, review routing, submission capture, and FDA signal monitoring",
+        "Designed the full Xenagos Bio startup biopharma website from scratch, including investor-facing structure, scientific positioning, visual direction, and hidden design-system handoff",
+        "Built Scope Generator for pharma agency finance and operations teams to manage regional rate cards, brands, sub-brands, and natural-language scope changes",
+        "Developed FDA Warning Tool concepts that connect warning-letter patterns to content-risk guidance for pharma teams"
+      ],
+      "one-block-away": [
+        "Lead client product discovery, turning unclear business questions into testable product concepts, working POCs, demo flows, and roadmap decisions",
+        "Built ListingPal's AI listing-generation POC and landing page, turning basic property inputs into listing copy, social posts, ad copy, styling direction, and MLS/SEO-ready language in under 90 seconds",
+        "Built WeReady's Bailey Intelligence dashboard, translating founder inputs, GitHub signals, source health, risk scoring, and evidence trails into startup-readiness workflows",
+        "Own product strategy, UX, AI workflow design, front-end build, backend logic, demo readiness, and client iteration from first ask through working prototype",
+        "Currently building the website and sponsor strategy for a Tunisia youth soccer program, positioning the project for player advancement, community support, and donor outreach"
+      ],
+      "kinesso": [
+        "Scaled product design from 2 to 30 people across the US and Poland for enterprise analytics used by 7,000+ users across 22 white-label brands",
+        "Led UX and design-system strategy for MIE data visualization, dashboard building, brand theming, and reusable analytics components",
+        "Built the Digital Experience Audit workflow for channel scoring, benchmarks, recommendations, visualization, and presentation-ready client outputs",
+        "Design-system and analytics work earned 5 Indigo Gold, 4 Indigo Silver, and Red Dot recognition"
+      ],
+      "omnicom": [
+        "Supported oncology accounts as a freelance UX designer, combining UX design and account-management experience to strengthen regulated healthcare work",
+        "Championed UX best practices across account, strategy, creative, and delivery conversations, translating brand goals into clearer user flows, content structure, and digital recommendations"
+      ],
+      "heartbeat": [
+        "Led UX research and experience strategy for pharma and healthcare work, translating stakeholder input, competitive audits, and user needs into digital product direction",
+        "Created journey maps, site maps, user flows, wireframes, and prototypes for patient, HCP, and internal brand-team experiences across regulated healthcare programs",
+        "Partnered with strategy, creative, account, and engineering teams to move research findings into prioritized, build-ready product and campaign experiences"
+      ],
+      "account-management": [
+        "8 years managing Fortune 500 pharma and healthcare clients and brand budgets up to $20M across CNS/neurology, psychiatry, cardiovascular/metabolic, and sleep/wakefulness brands including NUVIGIL, Namenda XR, Lipitor, and Zoloft",
+        "One of two account consumer leads on FCB Health's largest pharma account across all verticals: TV, radio, digital, gaming, Times Square, unbranded campaigns, brand planning, and MLR review",
+        "Translated client and brand strategy into briefs, creative feedback, production requirements, priorities, timelines, and MLR-ready delivery across account, creative, UX, and development teams"
+      ]
+    },
+    "sourceBulletIds": {
+      "hedgehox": [
+        "hedgehox-01",
+        "hedgehox-02",
+        "hedgehox-03",
+        "hedgehox-04",
+        "hedgehox-05",
+        "hedgehox-06"
+      ],
+      "one-block-away": [
+        "one-block-away-01",
+        "one-block-away-02",
+        "one-block-away-03",
+        "one-block-away-04",
+        "one-block-away-05"
+      ],
+      "kinesso": [
+        "kinesso-01",
+        "kinesso-02",
+        "kinesso-03",
+        "kinesso-04"
+      ],
+      "omnicom": [
+        "omnicom-01",
+        "omnicom-02"
+      ],
+      "heartbeat": [
+        "heartbeat-01",
+        "heartbeat-02",
+        "heartbeat-03"
+      ],
+      "account-management": [
+        "account-management-01",
+        "account-management-02",
+        "account-management-03"
+      ]
+    }
+  },
+  "hero": {
+    "eyebrow": "Product Management | Product Strategy",
+    "tags": [
+      "Discovery to roadmap",
+      "Enterprise product scale",
+      "Cross-functional delivery"
+    ],
+    "intro": "I connect customer needs, cross-functional teams, and practical delivery. My product work spans discovery, strategy, working POCs, enterprise analytics used by 7,000+ people across 22 brands, and team growth from 2 to 30. UX depth and hands-on AI implementation help me make product decisions grounded in what users need and what the team can realistically ship."
+  },
+  "contact": {
+    "prompt": "If you need a product leader who can turn unclear needs into product decisions and keep discovery, delivery, and adoption connected, email is the fastest way to reach me.",
+    "signoff": "Product strategy | customer discovery | practical delivery"
+  },
+  "copyReview": {
+    "humanizerVersion": "2.2.0",
+    "mode": "rewrite-requested",
+    "status": "passed",
+    "reviewedAt": "2026-08-03T19:10:17.825Z",
+    "copySha256": "4ee04a9649b568c4609f36c4d791bc0257cfd29ee7289099794eba502e6c23ea",
+    "preserved": [
+      "claims"
+    ],
+    "rewriteAuthorized": true,
+    "reviewMethod": "humanizer-skill",
+    "semanticPassAttested": true,
+    "staticChecksPassed": true,
+    "finalAntiAiPass": true,
+    "remainingTells": []
+  },
+  "constraints": {
+    "doNotClaim": [
+      "Formal Scrum ownership",
+      "Jira or Azure DevOps backlog ownership",
+      "Technical user-story or acceptance-criteria ownership",
+      "Product P&L, pricing, or packaging ownership",
+      "Quarterly KPI or OKR reporting cadence",
+      "SaaS revenue, quota, renewal, or expansion ownership",
+      "Engineering architecture ownership"
+    ],
+    "blockedTerms": [
+      "owned sprint planning",
+      "managed the backlog",
+      "product P&L",
+      "pricing strategy",
+      "quarterly OKRs",
+      "quota attainment",
+      "renewal ownership",
+      "engineering architect"
+    ]
+  },
+  "privacy": {
+    "publicSafe": true,
+    "notes": "Contains only a public-safe general product-management target profile and sanitized evidence from the public resume and portfolio. It excludes recruiter details, application answers, compensation boundaries, and private eligibility information."
+  },
+  "qa": {
+    "status": "qa-passed",
+    "builtAt": "2026-08-03T19:12:11.742Z",
+    "configInputSha256": "df06d1b7a87bffab39c5cfd5f4f6d754d36f22aec33c4d7b39d8dc527c1eda43",
+    "sourceResumeSha256": "2265313e78b596a2b37d6d8f9a95081e4321b4047f142a5f0ddf22449cab4b9c",
+    "resumeFoundation": {
+      "id": "wally-mostafa-resume-2026-07-03",
+      "sourcePdfSha256": "f9b05b6c3c134262b1af6c5734363daf4385cf335407a139779a37d138adf1aa"
+    },
+    "resumeBase": {
+      "mode": "ai-product-implementation",
+      "sourceProfiles": [
+        {
+          "id": "ai-product-implementation",
+          "version": 1
+        }
+      ],
+      "leadProfileId": "ai-product-implementation",
+      "accountPresentation": "consolidated",
+      "action": "tailor-to-jd",
+      "registryVersion": 1,
+      "registrySha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108"
+    },
+    "artifactHashes": {
+      "routeSha256": "7cd11203965bd04f92a0af7b57888de808c8d6a6969e6acdca189af696894f68",
+      "resumePdfSha256": "2580fc32849dadcb56e215d4f3e67a9996db4fc2764418917ea2b0ccc405b99f",
+      "coverLetterPdfSha256": null,
+      "coverLetterMarkdownSha256": null,
+      "scopedProjectSha256": {}
+    },
+    "renderer": {
+      "browser": {
+        "name": "chrome-headless-shell",
+        "version": "Google Chrome for Testing 149.0.7827.55"
+      },
+      "htmlPath": "tmp/tailored-resumes/product-management.html",
+      "pdfPath": "output/pdf/Wally-Mostafa-Product-Management-Resume.pdf",
+      "fontWait": false
+    },
+    "coverLetterRenderer": null,
+    "coverLetter": null,
+    "ats": {
+      "ok": true,
+      "pdfPath": "output/pdf/Wally-Mostafa-Product-Management-Resume.pdf",
+      "pageCount": 2,
+      "fileSize": 152641,
+      "annotations": [
+        {
+          "page": 1,
+          "uri": "mailto:wmostafa12@gmail.com"
+        },
+        {
+          "page": 1,
+          "uri": "https://linkedin.com/in/wallymo"
+        },
+        {
+          "page": 1,
+          "uri": "https://wallymo.github.io/product-management/"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/6748"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/4629"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.red-dot.org/project/dxa-digital-experience-audit-55219"
+        }
+      ],
+      "coverage": [
+        {
+          "id": "education-and-product-experience",
+          "requirement": "Bring a bachelor's degree and meaningful product-management or closely related experience.",
+          "priority": "hard-gate",
+          "evidenceStatus": "direct",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "Product leader",
+            "product strategy"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "product-discovery-strategy-roadmaps",
+          "requirement": "Lead product discovery, define the problem, shape product strategy, and turn findings into requirements, priorities, and roadmap decisions.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "Product Strategy",
+            "requirements",
+            "roadmap decisions"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "iterative-product-delivery",
+          "requirement": "Guide products from discovery through prototypes, stakeholder feedback, working software, and implementation.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "prototype validation",
+            "working prototype",
+            "client iteration"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "customer-research-product-direction",
+          "requirement": "Use customer discovery, stakeholder input, research, and product feedback to guide product direction.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "user needs",
+            "product direction",
+            "client discovery"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "cross-functional-product-leadership",
+          "requirement": "Align business, product, design, engineering, data, operations, and client teams around clear product decisions and delivery.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "2 to 30",
+            "engineering teams"
+          ],
+          "missingTerms": [
+            "cross-functional delivery"
+          ]
+        },
+        {
+          "id": "enterprise-products-adoption",
+          "requirement": "Lead products and platforms at enterprise scale with attention to adoption, reusable systems, and measurable outcomes.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "7,000+ users",
+            "22 white-label brands",
+            "Product Adoption"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "technical-product-translation",
+          "requirement": "Translate business needs into product requirements and work effectively with technical teams through implementation.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "build-ready",
+            "product requirements"
+          ],
+          "missingTerms": [
+            "technical delivery"
+          ]
+        }
+      ],
+      "failures": [],
+      "warnings": [
+        "cross-functional-product-leadership: supported core language missing from the PDF: cross-functional delivery",
+        "technical-product-translation: supported core language missing from the PDF: technical delivery"
+      ]
+    },
+    "humanizer": {
+      "status": "passed",
+      "version": "2.2.0",
+      "mode": "rewrite-requested",
+      "reviewedAt": "2026-08-03T19:10:17.825Z",
+      "copySha256": "4ee04a9649b568c4609f36c4d791bc0257cfd29ee7289099794eba502e6c23ea",
+      "reviewMethod": "humanizer-skill",
+      "semanticPassAttested": true,
+      "staticChecksPassed": true
+    },
+    "route": {
+      "viewports": [
+        {
+          "name": "desktop",
+          "errors": []
+        },
+        {
+          "name": "mobile",
+          "errors": []
+        }
+      ],
+      "errors": []
+    }
+  }
+}

@@ -2582,6 +2582,40 @@
       }
     },
     {
+      "workflowVersion": 2,
+      "contractRevision": 7,
+      "slug": "product-management",
+      "roleTitle": "Product Management & Product Strategy",
+      "artifactStem": "Product-Management",
+      "configPath": "scripts/packages/product-management.json",
+      "targetLane": "ai-product-implementation",
+      "evidenceMode": "balanced",
+      "fitClass": "strong",
+      "positioningLane": "ai-product-implementation",
+      "bridgeType": "direct",
+      "applicationStrategy": "direct",
+      "resumeBaseMode": "ai-product-implementation",
+      "resumeBaseLeadProfile": "ai-product-implementation",
+      "resumeBaseAction": "tailor-to-jd",
+      "accountPresentation": "consolidated",
+      "resumeBaseProfiles": [
+        {
+          "id": "ai-product-implementation",
+          "version": 1
+        }
+      ],
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-02.html",
+        "project-03.html",
+        "project-06.html"
+      ],
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Product-Management-Resume.pdf",
+      "publishStatus": "local-only",
+      "qaStatus": "qa-passed",
+      "builtAt": "2026-08-03T19:12:11.742Z"
+    },
+    {
       "slug": "product-management-ai-evaluator",
       "roleTitle": "Product Management AI Evaluator",
       "fitClass": "unclassified",
