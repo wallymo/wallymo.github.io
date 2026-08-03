@@ -617,9 +617,28 @@
         "project-03.html"
       ],
       "resumePdfPath": "output/pdf/Wally-Mostafa-Cinder-Agent-Product-Manager-Resume.pdf",
-      "publishStatus": "local-only",
+      "publishStatus": "live-verified",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-08-03T20:45:00.291Z"
+      "builtAt": "2026-08-03T20:45:00.291Z",
+      "verification": {
+        "verifiedAt": "2026-08-03T20:46:20.254Z",
+        "routeUrl": "https://wallymo.github.io/cinder-agent-product-manager/",
+        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-Cinder-Agent-Product-Manager-Resume.pdf",
+        "configUrl": "https://wallymo.github.io/scripts/packages/cinder-agent-product-manager.json",
+        "projectUrls": [
+          "https://wallymo.github.io/project-01.html",
+          "https://wallymo.github.io/project-02.html",
+          "https://wallymo.github.io/project-03.html"
+        ],
+        "configSha256": "5d04fc6031b8e29b2d25d2e19eb635edb641d52544c4ccac7d53e94bc797c6a9",
+        "pdfSha256": "5b5ee24474bc9fc680b0ab2b06357c1642f76938628d3b2cb75207bd81f759a5",
+        "resumeBaseProfilesUrl": "https://wallymo.github.io/scripts/resume-base-profiles.json",
+        "resumeBaseProfilesSha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108",
+        "routeSha256": "14c804d0b5c5b9feed38181c3be79567924d5db342715879251ddfdaac0931b4",
+        "scopedProjectSha256": {},
+        "configInputSha256": "a1e9880b33f68ec1757042a3ceb691909a0e2be6a8b3798073dec20a3b5bb5fa",
+        "qaBuiltAt": "2026-08-03T20:45:00.291Z"
+      }
     },
     {
       "slug": "cinteot-ai-product-owner",
