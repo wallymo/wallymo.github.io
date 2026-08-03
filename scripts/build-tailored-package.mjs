@@ -691,7 +691,10 @@ export async function buildTailoredPackage({
   });
   config.slug = slugify(config.slug);
   assertValidV2Config(config, { requireCurrentContract: true });
-  assertBuildAllowed(config, { allowStretch });
+  assertBuildAllowed(config, {
+    allowStretch,
+    allowExistingRefresh: overwrite,
+  });
   assertHumanizerReviewCurrent(config);
   assertRecruiterFacingClaimsSupported(config);
   const paths = getArtifactPaths(config);

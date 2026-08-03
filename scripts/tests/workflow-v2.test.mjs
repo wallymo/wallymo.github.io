@@ -674,6 +674,9 @@ test('revision 7 requires a valid resume-base decision and reserves use-existing
     () => assertBuildAllowed(networkingReuse),
     /selected use-existing.*Wally-Mostafa-Resume\.pdf/
   );
+  assert.doesNotThrow(() =>
+    assertBuildAllowed(networkingReuse, { allowExistingRefresh: true })
+  );
 
   const incompatibleLane = validConfig();
   incompatibleLane.classification.targetLane = 'client-account-delivery';

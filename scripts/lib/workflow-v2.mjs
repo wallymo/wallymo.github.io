@@ -2254,10 +2254,17 @@ export function assertValidV2Config(config, options) {
   }
 }
 
-export function assertBuildAllowed(config, { allowStretch = false } = {}) {
+export function assertBuildAllowed(
+  config,
+  { allowStretch = false, allowExistingRefresh = false } = {}
+) {
   if (
     config?.contractRevision === 7 &&
-    config?.fitGate?.resumeBase?.action === 'use-existing'
+    config?.fitGate?.resumeBase?.action === 'use-existing' &&
+    !(
+      allowExistingRefresh &&
+      isGeneralNetworkingJob(config?.job)
+    )
   ) {
     const profileId = config.fitGate.resumeBase.leadProfileId;
     const profile = readResumeBaseProfiles().profiles?.[profileId];
