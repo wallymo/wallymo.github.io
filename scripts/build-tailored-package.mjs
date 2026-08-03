@@ -462,6 +462,13 @@ function buildRoute(config, paths) {
     `<div class="work-grid">\n\n      ${workGrid}\n\n    </div>`,
     'work grid'
   );
+  if (config.routeMode === 'scoped-projects') {
+    for (const project of config.selectedProjects) {
+      routeHtml = routeHtml
+        .split(`href="../${project}"`)
+        .join(`href="${project}"`);
+    }
+  }
   if ((config.route?.presentation || 'full') === 'showcase') {
     for (const sectionId of ['how-i-build', 'capabilities', 'arc']) {
       routeHtml = replaceFirst(
@@ -477,6 +484,14 @@ function buildRoute(config, paths) {
         ''
       );
     }
+    routeHtml = routeHtml.replace(
+      /\s*<p class="work-more reveal">[\s\S]*?<\/p>/,
+      ''
+    );
+    routeHtml = routeHtml.replace(
+      /<a href="\.\.\/project-\d+\.html">([\s\S]*?)<\/a>/g,
+      '$1'
+    );
   }
   if (config.route?.workHeading) {
     routeHtml = replaceFirst(

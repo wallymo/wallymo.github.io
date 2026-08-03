@@ -1353,6 +1353,9 @@ test(
       assert.ok(routeHtml.includes('id="contact"'));
       assert.ok(routeHtml.includes('Thanks for stopping by.'));
       assert.ok(!routeHtml.includes("Let's talk."));
+      assert.ok(!routeHtml.includes('Also from this period'));
+      assert.ok(!routeHtml.includes('project-07.html'));
+      assert.ok(!/<a href="\.\.\/project-\d+\.html">/.test(routeHtml));
     } finally {
       rmSync(tempRoot, { recursive: true, force: true });
     }
