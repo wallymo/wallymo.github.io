@@ -101,6 +101,16 @@
       ]
     },
     {
+      "id": "account-management-client-leadership",
+      "label": "Account Management & Client Leadership",
+      "description": "Client relationships, budgets up to $20M, briefs, scopes, timelines, status and financial reporting, vendor coordination, and cross-functional delivery",
+      "evidenceIds": [
+        "account-management-01",
+        "account-management-02",
+        "account-management-03"
+      ]
+    },
+    {
       "id": "program-project-delivery",
       "label": "Program & Project Delivery",
       "description": "Scoping, requirements, timelines, review routing, team coordination, risk visibility, and build-ready handoff across product, design, and client teams",
