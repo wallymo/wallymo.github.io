@@ -1667,6 +1667,40 @@
     },
     {
       "workflowVersion": 2,
+      "contractRevision": 7,
+      "slug": "marketing",
+      "roleTitle": "Marketing & Brand Strategy",
+      "artifactStem": "Marketing",
+      "configPath": "scripts/packages/marketing.json",
+      "targetLane": "healthcare-marketing-brand",
+      "evidenceMode": "resume-primary",
+      "fitClass": "strong",
+      "positioningLane": "healthcare-marketing-brand",
+      "bridgeType": "direct",
+      "applicationStrategy": "direct",
+      "resumeBaseMode": "ai-product-implementation",
+      "resumeBaseLeadProfile": "ai-product-implementation",
+      "resumeBaseAction": "tailor-to-jd",
+      "accountPresentation": "consolidated",
+      "resumeBaseProfiles": [
+        {
+          "id": "ai-product-implementation",
+          "version": 1
+        }
+      ],
+      "routeMode": "canonical-projects",
+      "selectedProjects": [
+        "project-06.html",
+        "project-04.html",
+        "project-01.html"
+      ],
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Marketing-Resume.pdf",
+      "publishStatus": "local-only",
+      "qaStatus": "qa-passed",
+      "builtAt": "2026-08-03T19:33:15.202Z"
+    },
+    {
+      "workflowVersion": 2,
       "contractRevision": 5,
       "slug": "marketing-account-manager-workfront",
       "roleTitle": "Account Executive II / Marketing Account Manager",

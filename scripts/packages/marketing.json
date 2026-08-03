@@ -1,0 +1,717 @@
+{
+  "workflowVersion": 2,
+  "contractRevision": 7,
+  "slug": "marketing",
+  "roleTitle": "Marketing & Brand Strategy",
+  "artifactStem": "Marketing",
+  "fitClass": "strong",
+  "routeMode": "canonical-projects",
+  "selectedProjects": [
+    "project-06.html",
+    "project-04.html",
+    "project-01.html"
+  ],
+  "job": {
+    "company": "General recruiter and networking use",
+    "roleTitle": "Marketing & Brand Strategy",
+    "jobId": "general-profile",
+    "jobUrl": "not-provided",
+    "sourceChannel": "user-requested-general-resume",
+    "dateCaptured": "2026-08-03",
+    "location": "Raleigh, NC; remote opportunities",
+    "atsVendor": "not-applicable",
+    "rawJd": "General recruiter and networking profile, not an employer posting.\n\nTarget: Marketing Manager, Brand Strategist, Integrated Marketing Lead, Marketing Strategy Lead, and adjacent client-facing marketing roles.\n\nCore work: understand audience and business needs; shape brand and campaign strategy; translate strategy into briefs and creative direction; coordinate cross-functional delivery across channels; use research and performance signals to improve the work; and help teams apply AI in practical marketing workflows.\n\nResume architecture: lead with recent marketing innovation across AI tools, digital products, enterprise analytics, and customer experience. Use the earlier brand, campaign, and account work as direct proof of integrated marketing, audience strategy, budgets, creative development, and regulated delivery. Keep UX and product experience as evidence of customer insight and digital execution.\n\nThis package must be fit-gated again against each employer's actual job description before application."
+  },
+  "classification": {
+    "targetLane": "healthcare-marketing-brand",
+    "evidenceMode": "resume-primary",
+    "primarySource": "The resume directly shows eight years managing Fortune 500 pharma marketing, brand budgets up to $20M, integrated campaigns across television and digital channels, brand planning, creative briefs, audience research, MLR review, and cross-functional delivery.",
+    "supportingSource": "The portfolio adds proof of marketing analytics, audience research, enterprise experience strategy, regulated content workflows, and practical AI implementation. It strengthens the modern marketing story without replacing the resume's campaign evidence.",
+    "hardGateStatus": "pass",
+    "hardGates": [
+      {
+        "gate": "Bring a bachelor's degree and meaningful marketing, brand, or closely related experience",
+        "status": "pass",
+        "requirementId": "education-and-marketing-experience",
+        "evidence": "The resume documents a Rutgers University BA and eight years of direct Fortune 500 pharma marketing, followed by UX, enterprise experience, and AI work that continued the same audience-first discipline."
+      }
+    ]
+  },
+  "requirements": [
+    {
+      "id": "education-and-marketing-experience",
+      "text": "Bring a bachelor's degree and meaningful marketing, brand, or closely related experience.",
+      "priority": "hard-gate",
+      "source": "jd",
+      "confidence": "contextual",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The resume shows a Rutgers University BA and eight years managing Fortune 500 pharma marketing and brand budgets up to $20M."
+      ],
+      "proofIds": [
+        "account-management-01"
+      ],
+      "destinations": [
+        "summary",
+        "experience"
+      ],
+      "resumeTerms": [
+        "Marketing and brand strategy leader",
+        "8 years"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "brand-strategy-integrated-campaigns",
+      "text": "Shape brand strategy and guide integrated campaigns across creative, digital, social, broadcast, and other customer touchpoints.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "contextual",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Account leadership covered brand planning and integrated marketing across television, radio, digital, gaming, Times Square, and unbranded campaigns.",
+        "The work translated brand strategy into briefs, creative feedback, production requirements, and finished delivery."
+      ],
+      "proofIds": [
+        "account-management-02",
+        "account-management-03"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "Brand Strategy",
+        "integrated marketing",
+        "brand planning"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "audience-research-insight",
+      "text": "Use audience research, competitive context, stakeholder input, and customer needs to guide marketing and experience strategy.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "contextual",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Heartbeat work translated stakeholder input, competitive audits, and user needs into digital product and campaign direction.",
+        "Kinesso's Digital Experience Audit converted channel data into benchmarks, recommendations, and presentation-ready client outputs."
+      ],
+      "proofIds": [
+        "heartbeat-01",
+        "heartbeat-02",
+        "kinesso-03"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "customer insight",
+        "competitive audits",
+        "user needs"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "creative-briefs-cross-functional-delivery",
+      "text": "Turn marketing strategy into clear briefs, creative direction, priorities, timelines, review paths, and coordinated execution.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "contextual",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Eight years of account leadership translated client and brand strategy into briefs, feedback, production requirements, priorities, timelines, and MLR-ready delivery.",
+        "Later UX work kept account, strategy, creative, engineering, and delivery teams aligned around clearer customer experiences."
+      ],
+      "proofIds": [
+        "account-management-03",
+        "omnicom-02",
+        "heartbeat-03"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "creative direction",
+        "creative briefs",
+        "cross-functional delivery"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "digital-omnichannel-experience",
+      "text": "Guide connected marketing and customer experiences across digital, social, content, campaign, and product surfaces.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "contextual",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Direct marketing experience spans television, radio, digital, social, gaming, Times Square, patient and HCP experiences, and unbranded campaigns.",
+        "UX and enterprise roles expanded that work into research, customer journeys, data visualization, and reusable digital systems."
+      ],
+      "proofIds": [
+        "account-management-02",
+        "heartbeat-02",
+        "kinesso-02"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "digital",
+        "social",
+        "customer experiences"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "measurement-optimization",
+      "text": "Use campaign, channel, and experience signals to identify opportunities and make clear recommendations.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "contextual",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The Digital Experience Audit workflow covered channel scoring, benchmarks, recommendations, visualization, and client outputs.",
+        "Enterprise analytics and audience research supported product and experience decisions at scale."
+      ],
+      "proofIds": [
+        "kinesso-01",
+        "kinesso-03",
+        "heartbeat-01"
+      ],
+      "destinations": [
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "channel scoring",
+        "benchmarks",
+        "recommendations"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "regulated-marketing-delivery",
+      "text": "Guide marketing work through regulated review while keeping brand, audience, creative, and delivery needs aligned.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "contextual",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Account and UX roles covered MLR review, patient and HCP experiences, and regulated multi-channel delivery.",
+        "Current AI tools support promotional claim review, evidence gaps, submission capture, review routing, and FDA monitoring."
+      ],
+      "proofIds": [
+        "account-management-02",
+        "hedgehox-02",
+        "hedgehox-03"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "MLR review",
+        "promotional claims",
+        "FDA"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "ai-enabled-marketing-innovation",
+      "text": "Apply AI and product thinking to practical marketing, content, workflow, and customer-experience problems.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "contextual",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Hedgehox work turns pharma marketing workflows into working tools for claim review, scoping, routing, and content-risk guidance.",
+        "One Block Away products generate listing copy, social content, ad copy, styling direction, and sponsor strategy from customer inputs."
+      ],
+      "proofIds": [
+        "hedgehox-03",
+        "one-block-away-02",
+        "one-block-away-05"
+      ],
+      "destinations": [
+        "summary",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "AI tools",
+        "marketing workflows",
+        "social content"
+      ],
+      "matchMode": "recognized-equivalent"
+    }
+  ],
+  "fitGate": {
+    "resumeBase": {
+      "mode": "ai-product-implementation",
+      "sourceProfiles": [
+        {
+          "id": "ai-product-implementation",
+          "version": 1
+        }
+      ],
+      "leadProfileId": "ai-product-implementation",
+      "accountPresentation": "consolidated",
+      "action": "tailor-to-jd",
+      "rationale": "This general recruiter brief centers on marketing and brand strategy rather than account ownership. The AI/Product profile supplies the approved healthcare-marketing-brand lane, preserves the complete direct campaign evidence in consolidated form, and uses UX and AI as supporting marketing capabilities."
+    },
+    "supportedOverlap": [
+      "Eight years managing Fortune 500 pharma marketing and brand budgets up to $20M across integrated campaigns, brand planning, creative development, and MLR review.",
+      "Integrated marketing experience across television, radio, digital, social, gaming, Times Square, unbranded work, and patient and HCP experiences.",
+      "Audience and experience strategy grounded in stakeholder input, competitive audits, user needs, journeys, flows, and prototypes.",
+      "Enterprise analytics and audit workflows used by 7,000+ people across 22 white-label brands, with channel scoring, benchmarks, and recommendations.",
+      "Cross-functional leadership across account, strategy, creative, UX, engineering, operations, and client teams.",
+      "Current AI tools for regulated marketing workflows, content-risk review, listing content, social posts, ad copy, and sponsor strategy."
+    ],
+    "unsupportedRequirements": [
+      "Direct paid-media planning, buying, or acquisition-budget ownership.",
+      "Named marketing-automation, CRM, analytics, or campaign-management platform ownership.",
+      "Lifecycle email, retention, loyalty, or subscription-growth ownership.",
+      "SEO, SEM, ecommerce, or conversion-rate ownership.",
+      "Direct revenue attribution, marketing-sourced pipeline, or growth-quota ownership."
+    ],
+    "actualMismatches": [],
+    "missingEvidence": [
+      "A recent formal Marketing title; recent roles apply marketing judgment through UX, enterprise products, and AI implementation.",
+      "Named hands-on use of HubSpot, Marketo, Salesforce, GA4, Adobe Campaign, or a comparable martech stack.",
+      "A paid-media budget, acquisition funnel, or cost-per-acquisition example.",
+      "Direct ownership of lifecycle email, retention targets, ecommerce, SEO, or SEM.",
+      "A documented marketing-sourced revenue or pipeline target."
+    ],
+    "coverLetterBridge": {
+      "status": "not-needed",
+      "rationale": "This is a general recruiter and networking resume rather than an employer application. The resume directly establishes the supported marketing and brand work. Each employer job description still needs its own bridge decision."
+    },
+    "recommendation": "Proceed as a general Marketing and Brand Strategy recruiter profile. Lead with direct campaign, brand, audience, and delivery evidence, then show how UX and AI broaden the work. Re-run the fit gate for every employer and keep unsupported martech, performance-media, lifecycle, and revenue claims explicit."
+  },
+  "positioning": {
+    "laneId": "healthcare-marketing-brand",
+    "targetIdentity": "Marketing and brand strategy leader",
+    "employerNeed": "Turn audience and business needs into clear brand strategy, useful experiences, coordinated campaigns, and work teams can deliver.",
+    "bridgeType": "direct",
+    "applicationStrategy": "direct",
+    "bridgeThesis": "connect customer insight and creative direction with practical execution",
+    "proofIds": [
+      "account-management-02",
+      "heartbeat-01",
+      "kinesso-03"
+    ],
+    "remainingGap": null
+  },
+  "coverLetter": null,
+  "resume": {
+    "foundationId": "wally-mostafa-resume-2026-07-03",
+    "compositionMode": "foundation-complete",
+    "layoutDensity": "compact",
+    "summary": "Marketing and brand strategy leader with experience across integrated campaigns, client strategy, UX, enterprise products, and AI-enabled delivery. I spent eight years managing Fortune 500 pharma marketing across television, digital, social, gaming, and brand planning, then carried that audience-first discipline into UX and AI. I connect customer insight and creative direction with practical execution.",
+    "skillIds": [
+      "healthcare-marketing-strategy",
+      "research-experience-strategy",
+      "client-account-leadership",
+      "program-project-delivery"
+    ],
+    "skills": [
+      {
+        "label": "Healthcare Marketing & Brand Strategy",
+        "description": "Brand planning, campaign and digital strategy, MLR review, patient and HCP experiences, and regulated multi-channel delivery"
+      },
+      {
+        "label": "Research & Experience Strategy",
+        "description": "Stakeholder interviews, competitive audits, journey maps, user flows, wireframes, prototypes, usability testing, and research-led product direction"
+      },
+      {
+        "label": "Client & Account Leadership",
+        "description": "Fortune 500 pharma and healthcare accounts, brand budgets up to $20M, client briefs, brand planning, and cross-functional delivery"
+      },
+      {
+        "label": "Program & Project Delivery",
+        "description": "Scoping, requirements, timelines, review routing, team coordination, risk visibility, and build-ready handoff across product, design, and client teams"
+      }
+    ],
+    "experienceSections": [
+      {
+        "heading": "Recent Marketing Innovation & Product Experience",
+        "roleIds": [
+          "hedgehox",
+          "one-block-away",
+          "kinesso"
+        ]
+      },
+      {
+        "heading": "Brand, Campaign & Client Experience",
+        "roleIds": [
+          "omnicom",
+          "heartbeat",
+          "account-management"
+        ]
+      }
+    ],
+    "roles": {
+      "hedgehox": [
+        "Secured an investor for proprietary Claims Detection software by building the functional POC, shaping the product story, and iterating with investors",
+        "Designed Claims Detector workflows that identify promotional claims, surface evidence gaps, and pre-populate audit-ready annotations before MLR submission",
+        "Turn pharma marketing and agency needs into AI tools for claim review, brief intake, scoping, review routing, submission capture, and FDA signal monitoring",
+        "Designed the full Xenagos Bio startup biopharma website from scratch, including investor-facing structure, scientific positioning, visual direction, and hidden design-system handoff",
+        "Built Scope Generator for pharma agency finance and operations teams to manage regional rate cards, brands, sub-brands, and natural-language scope changes",
+        "Developed FDA Warning Tool concepts that connect warning-letter patterns to content-risk guidance for pharma marketing teams"
+      ],
+      "one-block-away": [
+        "Lead client discovery and turn unclear business questions into testable product concepts, working POCs, demo flows, and roadmap decisions",
+        "Built ListingPal's AI listing-generation POC and landing page, turning basic property inputs into listing copy, social content, ad copy, styling direction, and MLS/SEO-ready language in under 90 seconds",
+        "Built WeReady's Bailey Intelligence dashboard, translating founder inputs, GitHub signals, source health, risk scoring, and evidence trails into startup-readiness workflows",
+        "Own product strategy, UX, AI workflow design, front-end build, backend logic, demo readiness, and client iteration from first ask through working prototype",
+        "Currently building the website and sponsor strategy for a Tunisia youth soccer program, positioning the project for player advancement, community support, and donor outreach"
+      ],
+      "kinesso": [
+        "Scaled product design from 2 to 30 people across the US and Poland for enterprise analytics used by 7,000+ users across 22 white-label brands",
+        "Led UX and design-system strategy for MIE data visualization, dashboard building, brand theming, and reusable analytics components",
+        "Built the Digital Experience Audit workflow for channel scoring, benchmarks, recommendations, visualization, and presentation-ready client outputs",
+        "Design-system and analytics work earned 5 Indigo Gold, 4 Indigo Silver, and Red Dot recognition"
+      ],
+      "omnicom": [
+        "Supported oncology accounts as a freelance UX designer, combining UX design and account-management experience to strengthen regulated healthcare marketing",
+        "Championed UX best practices across account, strategy, creative, and delivery conversations, translating brand goals into clearer user flows, content structure, and digital recommendations"
+      ],
+      "heartbeat": [
+        "Led UX research and experience strategy for pharma and healthcare marketing, translating stakeholder input, competitive audits, and user needs into digital product direction",
+        "Created journey maps, site maps, user flows, wireframes, and prototypes for patient, HCP, and internal brand-team experiences across regulated healthcare programs",
+        "Partnered with strategy, creative, account, and engineering teams to move research findings into prioritized, build-ready product and campaign experiences"
+      ],
+      "account-management": [
+        "8 years managing Fortune 500 pharma and healthcare clients and brand budgets up to $20M across CNS/neurology, psychiatry, cardiovascular/metabolic, and sleep/wakefulness brands including NUVIGIL, Namenda XR, Lipitor, and Zoloft",
+        "Led integrated marketing across television, radio, digital, gaming, Times Square, unbranded campaigns, brand planning, and MLR review as one of two consumer account leads on FCB Health's largest pharma account",
+        "Translated client and brand strategy into creative briefs, feedback, production requirements, priorities, timelines, and MLR-ready delivery across account, creative, UX, and development teams"
+      ]
+    },
+    "sourceBulletIds": {
+      "hedgehox": [
+        "hedgehox-01",
+        "hedgehox-02",
+        "hedgehox-03",
+        "hedgehox-04",
+        "hedgehox-05",
+        "hedgehox-06"
+      ],
+      "one-block-away": [
+        "one-block-away-01",
+        "one-block-away-02",
+        "one-block-away-03",
+        "one-block-away-04",
+        "one-block-away-05"
+      ],
+      "kinesso": [
+        "kinesso-01",
+        "kinesso-02",
+        "kinesso-03",
+        "kinesso-04"
+      ],
+      "omnicom": [
+        "omnicom-01",
+        "omnicom-02"
+      ],
+      "heartbeat": [
+        "heartbeat-01",
+        "heartbeat-02",
+        "heartbeat-03"
+      ],
+      "account-management": [
+        "account-management-01",
+        "account-management-02",
+        "account-management-03"
+      ]
+    }
+  },
+  "hero": {
+    "eyebrow": "Marketing | Brand Strategy",
+    "tags": [
+      "Integrated campaigns",
+      "Audience-first strategy",
+      "AI-enabled marketing"
+    ],
+    "intro": "I connect customer insight and creative direction with practical execution. My marketing work spans Fortune 500 pharma campaigns, brand planning, audience research, enterprise experience strategy, and AI tools for regulated teams. I bring eight years of direct account and campaign leadership, plus UX and product experience that helps turn complex needs into clearer messages and work teams can deliver."
+  },
+  "contact": {
+    "prompt": "If you need a marketing leader who can turn audience and business needs into clear strategy and keep creative, client, and delivery teams moving together, email is the fastest way to reach me.",
+    "signoff": "Brand strategy | audience insight | integrated delivery"
+  },
+  "copyReview": {
+    "humanizerVersion": "2.2.0",
+    "mode": "rewrite-requested",
+    "status": "passed",
+    "reviewedAt": "2026-08-03T19:32:59.369Z",
+    "copySha256": "1396eadd51c31eec348197021238142298199d8a6b59e239eb7fe2bca5bed908",
+    "preserved": [
+      "claims"
+    ],
+    "rewriteAuthorized": true,
+    "reviewMethod": "humanizer-skill",
+    "semanticPassAttested": true,
+    "staticChecksPassed": true,
+    "finalAntiAiPass": true,
+    "remainingTells": []
+  },
+  "constraints": {
+    "doNotClaim": [
+      "Direct paid-media planning or buying ownership",
+      "Performance-marketing or acquisition-budget ownership",
+      "HubSpot, Marketo, Salesforce, GA4, or Adobe Campaign ownership",
+      "Lifecycle email, retention, or subscription-growth ownership",
+      "SEO, SEM, ecommerce, or conversion-rate ownership",
+      "Marketing-sourced pipeline, revenue attribution, or growth-quota ownership",
+      "Recent full-time Marketing title"
+    ],
+    "blockedTerms": [
+      "owned paid media",
+      "performance marketing budget",
+      "HubSpot expert",
+      "Marketo expert",
+      "Salesforce Marketing Cloud",
+      "owned lifecycle marketing",
+      "SEO strategy owner",
+      "marketing-sourced revenue",
+      "current Marketing Director"
+    ]
+  },
+  "privacy": {
+    "publicSafe": true,
+    "notes": "Contains only a public-safe general marketing and brand-strategy target profile and sanitized evidence from the public resume and portfolio. It excludes recruiter details, application answers, compensation boundaries, and private eligibility information."
+  },
+  "qa": {
+    "status": "qa-passed",
+    "builtAt": "2026-08-03T19:33:15.202Z",
+    "configInputSha256": "9d6b16b7402118eda675557de04259b213c72614e42ec67e932e5427e57f0398",
+    "sourceResumeSha256": "2265313e78b596a2b37d6d8f9a95081e4321b4047f142a5f0ddf22449cab4b9c",
+    "resumeFoundation": {
+      "id": "wally-mostafa-resume-2026-07-03",
+      "sourcePdfSha256": "f9b05b6c3c134262b1af6c5734363daf4385cf335407a139779a37d138adf1aa"
+    },
+    "resumeBase": {
+      "mode": "ai-product-implementation",
+      "sourceProfiles": [
+        {
+          "id": "ai-product-implementation",
+          "version": 1
+        }
+      ],
+      "leadProfileId": "ai-product-implementation",
+      "accountPresentation": "consolidated",
+      "action": "tailor-to-jd",
+      "registryVersion": 1,
+      "registrySha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108"
+    },
+    "artifactHashes": {
+      "routeSha256": "cb0ceffca02996b7cf5d9241f740a34a5141bce9f08c08452a240b00120bf573",
+      "resumePdfSha256": "e1df32a88f09bb70e012309fea2556178fcc2c0fcffe2cf7c1d0ceb33b25c416",
+      "coverLetterPdfSha256": null,
+      "coverLetterMarkdownSha256": null,
+      "scopedProjectSha256": {}
+    },
+    "renderer": {
+      "browser": {
+        "name": "chrome-headless-shell",
+        "version": "Google Chrome for Testing 149.0.7827.55"
+      },
+      "htmlPath": "tmp/tailored-resumes/marketing.html",
+      "pdfPath": "output/pdf/Wally-Mostafa-Marketing-Resume.pdf",
+      "fontWait": false
+    },
+    "coverLetterRenderer": null,
+    "coverLetter": null,
+    "ats": {
+      "ok": true,
+      "pdfPath": "output/pdf/Wally-Mostafa-Marketing-Resume.pdf",
+      "pageCount": 2,
+      "fileSize": 154329,
+      "annotations": [
+        {
+          "page": 1,
+          "uri": "mailto:wmostafa12@gmail.com"
+        },
+        {
+          "page": 1,
+          "uri": "https://linkedin.com/in/wallymo"
+        },
+        {
+          "page": 1,
+          "uri": "https://wallymo.github.io/marketing/"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/6748"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/4629"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.red-dot.org/project/dxa-digital-experience-audit-55219"
+        }
+      ],
+      "coverage": [
+        {
+          "id": "education-and-marketing-experience",
+          "requirement": "Bring a bachelor's degree and meaningful marketing, brand, or closely related experience.",
+          "priority": "hard-gate",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "Marketing and brand strategy leader",
+            "8 years"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "brand-strategy-integrated-campaigns",
+          "requirement": "Shape brand strategy and guide integrated campaigns across creative, digital, social, broadcast, and other customer touchpoints.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "Brand Strategy",
+            "integrated marketing",
+            "brand planning"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "audience-research-insight",
+          "requirement": "Use audience research, competitive context, stakeholder input, and customer needs to guide marketing and experience strategy.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "customer insight",
+            "competitive audits",
+            "user needs"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "creative-briefs-cross-functional-delivery",
+          "requirement": "Turn marketing strategy into clear briefs, creative direction, priorities, timelines, review paths, and coordinated execution.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "creative direction",
+            "creative briefs",
+            "cross-functional delivery"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "digital-omnichannel-experience",
+          "requirement": "Guide connected marketing and customer experiences across digital, social, content, campaign, and product surfaces.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "digital",
+            "social"
+          ],
+          "missingTerms": [
+            "customer experiences"
+          ]
+        },
+        {
+          "id": "measurement-optimization",
+          "requirement": "Use campaign, channel, and experience signals to identify opportunities and make clear recommendations.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "channel scoring",
+            "benchmarks",
+            "recommendations"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "regulated-marketing-delivery",
+          "requirement": "Guide marketing work through regulated review while keeping brand, audience, creative, and delivery needs aligned.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "MLR review",
+            "promotional claims",
+            "FDA"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "ai-enabled-marketing-innovation",
+          "requirement": "Apply AI and product thinking to practical marketing, content, workflow, and customer-experience problems.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "AI tools",
+            "social content"
+          ],
+          "missingTerms": [
+            "marketing workflows"
+          ]
+        }
+      ],
+      "failures": [],
+      "warnings": [
+        "digital-omnichannel-experience: supported core language missing from the PDF: customer experiences",
+        "ai-enabled-marketing-innovation: supported core language missing from the PDF: marketing workflows"
+      ]
+    },
+    "humanizer": {
+      "status": "passed",
+      "version": "2.2.0",
+      "mode": "rewrite-requested",
+      "reviewedAt": "2026-08-03T19:32:59.369Z",
+      "copySha256": "1396eadd51c31eec348197021238142298199d8a6b59e239eb7fe2bca5bed908",
+      "reviewMethod": "humanizer-skill",
+      "semanticPassAttested": true,
+      "staticChecksPassed": true
+    },
+    "route": {
+      "viewports": [
+        {
+          "name": "desktop",
+          "errors": []
+        },
+        {
+          "name": "mobile",
+          "errors": []
+        }
+      ],
+      "errors": []
+    }
+  }
+}
