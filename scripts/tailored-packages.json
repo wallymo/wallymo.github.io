@@ -149,9 +149,9 @@
     },
     {
       "workflowVersion": 2,
-      "contractRevision": 6,
+      "contractRevision": 7,
       "slug": "account-management",
-      "roleTitle": "Healthcare Account Management & Client Strategy",
+      "roleTitle": "Account Management & Client Leadership",
       "artifactStem": "Account-Management",
       "configPath": "scripts/packages/account-management.json",
       "targetLane": "client-account-delivery",
@@ -162,31 +162,24 @@
       "applicationStrategy": "direct",
       "routeMode": "canonical-projects",
       "selectedProjects": [
-        "project-01.html",
-        "project-06.html",
-        "project-02.html"
+        "project-02.html",
+        "project-03.html",
+        "project-06.html"
       ],
       "resumePdfPath": "output/pdf/Wally-Mostafa-Account-Management-Resume.pdf",
-      "publishStatus": "live-verified",
+      "publishStatus": "local-only",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-07-29T18:13:51.672Z",
-      "verification": {
-        "verifiedAt": "2026-07-29T18:18:14.760Z",
-        "routeUrl": "https://wallymo.github.io/account-management/",
-        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-Account-Management-Resume.pdf",
-        "configUrl": "https://wallymo.github.io/scripts/packages/account-management.json",
-        "projectUrls": [
-          "https://wallymo.github.io/project-01.html",
-          "https://wallymo.github.io/project-06.html",
-          "https://wallymo.github.io/project-02.html"
-        ],
-        "configSha256": "cf051b6f467c93f013a76550ed8bc7b812f6632d5668f533836c28441de14b27",
-        "pdfSha256": "06829c4725f393615cf438fc9a1c973453e6d1b16374e49842bd791e71d7823c",
-        "routeSha256": "937165e1f92246df76e8db60eb3b6fcd35d46c476299cc8021962477b98bea82",
-        "scopedProjectSha256": {},
-        "configInputSha256": "ac5fe92d472882567c43c05fe6a5470ae9f0c46c726ff230720771bf82edbed9",
-        "qaBuiltAt": "2026-07-29T18:13:51.672Z"
-      }
+      "builtAt": "2026-08-03T21:59:24.799Z",
+      "resumeBaseMode": "account-leadership",
+      "resumeBaseLeadProfile": "account-leadership",
+      "resumeBaseAction": "use-existing",
+      "accountPresentation": "agency-progression",
+      "resumeBaseProfiles": [
+        {
+          "id": "account-leadership",
+          "version": 1
+        }
+      ]
     },
     {
       "workflowVersion": 2,
