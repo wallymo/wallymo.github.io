@@ -500,10 +500,10 @@
       "Brand budgets up to $20M",
       "National broadcast, FDA and MLR"
     ],
-    "intro": "I'm returning to healthcare account management with eight years on Fortune 500 pharma brands, progression from Account Coordinator to Account Supervisor, and budgets up to $20M across FDA and med-legal review. Since then, I've grown a design team from 2 to 30 and led client AI engagements from discovery through delivery, using that broader experience while keeping the relationship at the center."
+    "intro": "I'm returning to healthcare account management after eight years on Fortune 500 pharma brands, Account Coordinator through Account Supervisor, with budgets up to $20M under FDA and med-legal review. This page is a short showcase of relevant work from the years since, built inside UX, analytics, and AI engagements while keeping the relationship at the center."
   },
   "contact": {
-    "prompt": "If you need a healthcare account leader who can own the relationship, guide regulated campaign delivery, and keep internal teams clear on what comes next, email is the fastest way to reach me.",
+    "prompt": "If any of this work is relevant to a role you're hiring for, email is the easiest way to reach me.",
     "signoff": "Healthcare account leadership | regulated campaigns | client strategy"
   },
   "coverLetter": null,
@@ -536,9 +536,9 @@
   },
   "qa": {
     "status": "qa-passed",
-    "builtAt": "2026-08-03T18:18:21.848Z",
-    "configInputSha256": "bec7549911aa4742896489b4ab729d27c6665801b41bc2c1c534a0a1e6a15f66",
-    "sourceResumeSha256": "796b107e9ac0aa62e791915feaf7b152b1510d1411b015ce68e84a54a7b435f6",
+    "builtAt": "2026-08-03T23:12:17.126Z",
+    "configInputSha256": "1863989878962bc94207188ec5c49de8ffba29035e52887ffb897c99ecab6ad6",
+    "sourceResumeSha256": "2265313e78b596a2b37d6d8f9a95081e4321b4047f142a5f0ddf22449cab4b9c",
     "resumeFoundation": {
       "id": "wally-mostafa-resume-2026-07-03",
       "sourcePdfSha256": "f9b05b6c3c134262b1af6c5734363daf4385cf335407a139779a37d138adf1aa"
@@ -558,8 +558,8 @@
       "registrySha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108"
     },
     "artifactHashes": {
-      "routeSha256": "88f290696611ef50e11cab5116c78cd828a4bfa8c457ac192ea80d3f9379fecf",
-      "resumePdfSha256": "11333ce36ec783c5dc4ba0f8315a0b96a54834cf1e044f085b8b8126a9e5a7cc",
+      "routeSha256": "3a7a2d339f97dc56e46033f47f02f5c1a2eefde3a09552fdf8badf41e0ecd200",
+      "resumePdfSha256": "2d6b8ac97361c26c9749e4a00e931d96233d7f3ca3d810178d66556ae9463bfe",
       "coverLetterPdfSha256": null,
       "coverLetterMarkdownSha256": null,
       "scopedProjectSha256": {}
@@ -712,8 +712,8 @@
       "status": "passed",
       "version": "2.2.0",
       "mode": "rewrite-requested",
-      "reviewedAt": "2026-08-03T18:16:21.346Z",
-      "copySha256": "23a9b324c00893d6a9dc06056f85d9ab121bf5efa573d92dd4da3328aac8c7a9",
+      "reviewedAt": "2026-08-03T23:12:13.397Z",
+      "copySha256": "b8c33480b247bfbb9a2ce6530e4d32d063da7f7763bfd85f961fedf620f0b130",
       "reviewMethod": "humanizer-skill",
       "semanticPassAttested": true,
       "staticChecksPassed": true
@@ -736,8 +736,8 @@
     "humanizerVersion": "2.2.0",
     "mode": "rewrite-requested",
     "status": "passed",
-    "reviewedAt": "2026-08-03T18:16:21.346Z",
-    "copySha256": "23a9b324c00893d6a9dc06056f85d9ab121bf5efa573d92dd4da3328aac8c7a9",
+    "reviewedAt": "2026-08-03T23:12:13.397Z",
+    "copySha256": "b8c33480b247bfbb9a2ce6530e4d32d063da7f7763bfd85f961fedf620f0b130",
     "preserved": [
       "claims"
     ],
@@ -747,5 +747,9 @@
     "staticChecksPassed": true,
     "finalAntiAiPass": true,
     "remainingTells": []
+  },
+  "route": {
+    "presentation": "showcase",
+    "workHeading": "A few pieces of relevant work."
   }
 }
