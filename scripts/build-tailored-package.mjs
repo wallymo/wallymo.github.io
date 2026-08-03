@@ -492,6 +492,14 @@ function buildRoute(config, paths) {
       /<a href="\.\.\/project-\d+\.html">([\s\S]*?)<\/a>/g,
       '$1'
     );
+    routeHtml = routeHtml.replace(
+      /\s*<div class="section-label reveal">Get in touch<\/div>/,
+      ''
+    );
+    routeHtml = routeHtml.replace(
+      /\s*<p class="contact-subtitle reveal">[\s\S]*?<\/p>/,
+      ''
+    );
   }
   if (config.route?.workHeading) {
     routeHtml = replaceFirst(
