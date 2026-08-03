@@ -488,7 +488,8 @@
       "type": "object",
       "properties": {
         "presentation": { "enum": ["full", "showcase"] },
-        "workHeading": { "type": "string", "minLength": 1 }
+        "workHeading": { "type": "string", "minLength": 1 },
+        "contactHeading": { "type": "string", "minLength": 1 }
       },
       "additionalProperties": false
     },

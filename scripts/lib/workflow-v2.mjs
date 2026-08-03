@@ -309,6 +309,7 @@ export function humanizerCopyEntries(config) {
   add('contact.prompt', config?.contact?.prompt);
   add('contact.signoff', config?.contact?.signoff);
   add('route.workHeading', config?.route?.workHeading);
+  add('route.contactHeading', config?.route?.contactHeading);
   return entries;
 }
 
@@ -2129,6 +2130,12 @@ export function validateV2Config(
         route.workHeading === undefined || isNonEmptyString(route.workHeading),
         'route.workHeading must be a non-empty string when present'
       );
+      pushError(
+        errors,
+        route.contactHeading === undefined ||
+          isNonEmptyString(route.contactHeading),
+        'route.contactHeading must be a non-empty string when present'
+      );
     }
   }
 
@@ -2373,6 +2380,10 @@ export function recruiterFacingClaimViolations(config) {
     ...(typeof config.route?.workHeading === 'string' &&
     config.route.workHeading.trim()
       ? [['route.workHeading', config.route.workHeading]]
+      : []),
+    ...(typeof config.route?.contactHeading === 'string' &&
+    config.route.contactHeading.trim()
+      ? [['route.contactHeading', config.route.contactHeading]]
       : []),
   ];
   const prohibitedPhrases = [

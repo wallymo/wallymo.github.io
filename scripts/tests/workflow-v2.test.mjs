@@ -1301,12 +1301,20 @@ test(
       config.route = {
         presentation: 'showcase',
         workHeading: 'A few pieces of relevant work.',
+        contactHeading: 'Thanks for stopping by.',
       };
       assert.ok(
         humanizerCopyEntries(config).some(
           ([field, value]) =>
             field === 'route.workHeading' &&
             value === 'A few pieces of relevant work.'
+        )
+      );
+      assert.ok(
+        humanizerCopyEntries(config).some(
+          ([field, value]) =>
+            field === 'route.contactHeading' &&
+            value === 'Thanks for stopping by.'
         )
       );
       approveHumanizerReview(config, {
@@ -1343,6 +1351,8 @@ test(
       assert.ok(routeHtml.includes('id="awards"'));
       assert.ok(routeHtml.includes('trust-strip'));
       assert.ok(routeHtml.includes('id="contact"'));
+      assert.ok(routeHtml.includes('Thanks for stopping by.'));
+      assert.ok(!routeHtml.includes("Let's talk."));
     } finally {
       rmSync(tempRoot, { recursive: true, force: true });
     }

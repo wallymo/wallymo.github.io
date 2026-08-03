@@ -487,6 +487,15 @@ function buildRoute(config, paths) {
       'work heading'
     );
   }
+  if (config.route?.contactHeading) {
+    routeHtml = replaceFirst(
+      routeHtml,
+      /(<section class="contact"[\s\S]*?<h2 class="reveal">)[\s\S]*?(<\/h2>)/,
+      (_match, openingHtml, closingTag) =>
+        `${openingHtml}${escapeHtml(config.route.contactHeading)}${closingTag}`,
+      'contact heading'
+    );
+  }
   return routeHtml;
 }
 
