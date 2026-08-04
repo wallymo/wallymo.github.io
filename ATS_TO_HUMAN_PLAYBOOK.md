@@ -304,10 +304,10 @@ Never convert adjacent work into an official title the person did not hold.
 
 #### Portfolio rules
 
-- Keep `canonical-projects` as the default.
+- Use `scoped-projects` with `route.presentation: "showcase"` and `route.heroIntent: "resume-support"` as the default. Use canonical projects only as an explicit opt-out when the public portfolio belongs in the recruiter path.
 - Select three projects by default, ordered as an argument for the role.
-- Use the route hero to explain the fit in first person with two or three concrete proofs.
-- Make the closing block a concise bookend to the same role story.
+- Let the resume make the fit argument. Use the showcase hero to introduce recent work that may be relevant to the role, without stacking proof points or promising what the candidate would bring.
+- Keep the showcase closing simple: thank the visitor and make email and the resume easy to reach.
 - Keep canonical case studies and the public homepage unchanged unless broader edits are explicitly requested.
 - Publish and verify every route used by a recruiter-facing PDF before calling the package ready.
 

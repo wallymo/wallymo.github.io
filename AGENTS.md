@@ -10,7 +10,7 @@ This portfolio supplements a resume. Write for HR reps, recruiters, hiring manag
 - Lead with role fit, outcomes, scale, and proof.
 - Prefer short claims over manifesto-style explanation.
 - Keep personality, but remove anything that slows comprehension.
-- Write tailored-route hero intros in first person. They may directly explain why I fit the role, but never use third-person candidate-summary copy (`Wally`, `he`, `him`, or `his`).
+- Write tailored-route hero intros in first person. On showcase routes, keep them understated and frame the page as supporting material for the resume; full routes may explain fit more directly. Never use third-person candidate-summary copy (`Wally`, `he`, `him`, or `his`).
 - End every post-application recruiter note with this exact line: `Would love to hop on a call to chat about this opening or any other across your desk you might see fit.`
 - Treat each section as a scan stop: what this proves, why it matters, and where to click next.
 
@@ -73,9 +73,9 @@ When the human sends a job, start with the fit gate. If it clears as a strong fi
 - Tailoring may change summary emphasis, select supported skills, and edit selected experience bullets. Pure modes retain every evidence item required by the chosen profile. Hybrid mode chooses the strongest JD-matched evidence from both pools without requiring all combined items. Keep every selected source ID mapped exactly once under its original employer. Bullet wording and order may change within a job. Never duplicate or move a source ID between employers, alter protected employer/date metadata, or replace concrete experience with a generic summary.
 - Add bullets when supported evidence materially improves the match. Mark additions with a unique `addition:<slug>` source ID. Additions do not authorize removing or hiding any foundation bullet.
 - On the role-specific portfolio route, visible changes are limited to the hero space, the featured projects shown for that JD, and the closing contact/footer positioning. Metadata and resume/download links may change only as package plumbing.
-- Make the hero more intentional than a generic intro. In first person, explain why I fit the role using the employer's domain language, the role's core need, and 2-3 concrete proof points from the resume/projects.
+- On a showcase route, use the hero as a quiet handoff from the resume: say this is a look at recent work that may be relevant to the role. Do not pitch the candidate, restate the resume argument, stack proof points, or say what I would bring to the employer. On an explicitly `full` route, the hero may explain fit more directly using grounded employer language and proof.
 - Treat the closing contact block as the hero's bookend. Its prompt and short footer sign-off must match the same JD, role family, and proof lanes; never leave the public homepage's default AI/industry positioning on an unrelated tailored route.
-- Keep the closing CTA direct and recruiter-friendly: name the kind of leader or problem the employer is hiring for, then make email the clear next step. Do not repeat the full hero or introduce new claims.
+- Keep a showcase closing simple: thank the visitor and make email and the resume easy to reach. A full-route closing may name the kind of leader or problem the employer is hiring for. Do not repeat the hero or introduce new claims.
 - Do not overclaim. Strong fit copy should be sharper and more direct, not inflated.
 - Pick 3 relevant projects by default, ordered by role relevance rather than default chronology. Use 4 only when the JD genuinely spans multiple proof lanes. Use 5 only if the human explicitly asks for a deeper version.
   - `project-01.html` — Pharma AI Platform: regulated pharma AI, MLR, FDA/HIPAA, agency workflows, LLM/VLM implementation.
@@ -85,7 +85,7 @@ When the human sends a job, start with the fit gate. If it clears as a strong fi
   - `project-05.html` — Splash Design System: component systems, Figma, design ops, personas, system governance, award-backed UX.
   - `project-06.html` — Digital Audit Experience: audit workflows, AI-powered data visualization, benchmarking, recommendations, awards.
   - `project-07.html` — Other Highlights: design leadership, accessibility, innovation challenge, service-desk product UX.
-- Use the self-contained showcase pattern by default: `routeMode: "scoped-projects"` with `route.presentation: "showcase"`. Route cards, scoped case studies, in-body project links, logos, all-work links, and previous/next links must keep recruiters inside the employer-specific package.
+- Use the self-contained showcase pattern by default: `routeMode: "scoped-projects"` with `route.presentation: "showcase"` and `route.heroIntent: "resume-support"`. Route cards, scoped case studies, in-body project links, logos, all-work links, and previous/next links must keep recruiters inside the employer-specific package.
 - Use `canonical-projects` or `route.presentation: "full"` only as an explicit opt-out when the canonical public portfolio or fuller homepage narrative is intentionally part of the proof path.
 - If a tailored route includes scoped project pages, update every project card, back link, breadcrumb, previous link, and next-project link to keep recruiters inside the role-specific project sequence.
 - Global rule for scoped project pages: if a route reorders or renumbers selected projects, each scoped project page must show that route-local number and sequence, not its canonical public-site number. The selected-work card's visible number, title, and order are the source of truth for that scoped route.

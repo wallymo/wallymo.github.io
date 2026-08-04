@@ -318,6 +318,7 @@ export function humanizerCopyEntries(config) {
   add('hero.intro', config?.hero?.intro);
   add('contact.prompt', config?.contact?.prompt);
   add('contact.signoff', config?.contact?.signoff);
+  add('route.heroIntent', config?.route?.heroIntent);
   add('route.workHeading', config?.route?.workHeading);
   add('route.contactHeading', config?.route?.contactHeading);
   return entries;
@@ -2091,14 +2092,26 @@ export function validateV2Config(
   if (isNonEmptyString(hero?.intro)) {
     pushError(errors, !/\b(?:Wally|he|him|his)\b/i.test(hero.intro), 'hero.intro must use first person');
     if (usesFlexiblePositioningContract(config)) {
-      pushError(
-        errors,
-        wordCount(hero.intro) >= 45 &&
-          (config.contractRevision !== 7 || wordCount(hero.intro) <= 70),
-        config.contractRevision === 7
-          ? 'hero.intro must be 45 to 70 words for revision 7'
-          : 'hero.intro must be at least 45 words for revisions 5 and 6'
-      );
+      const heroWordCount = wordCount(hero.intro);
+      const usesSupportingShowcaseHero =
+        config.contractRevision === CURRENT_CONTRACT_REVISION &&
+        config.route?.presentation === 'showcase';
+      if (usesSupportingShowcaseHero) {
+        pushError(
+          errors,
+          heroWordCount >= 20 && heroWordCount <= 70,
+          'showcase hero.intro must be 20 to 70 words'
+        );
+      } else {
+        pushError(
+          errors,
+          heroWordCount >= 45 &&
+            (config.contractRevision !== 7 || heroWordCount <= 70),
+          config.contractRevision === 7
+            ? 'hero.intro must be 45 to 70 words for revision 7'
+            : 'hero.intro must be at least 45 words for revisions 5 and 6'
+        );
+      }
       pushError(
         errors,
         !DEFENSIVE_POSITIONING_PATTERN.test(hero.intro),
@@ -2109,13 +2122,15 @@ export function validateV2Config(
         normalizeText(hero.intro) !== normalizeText(config.resume?.summary),
         'hero.intro must not duplicate resume.summary'
       );
-      pushError(
-        errors,
-        normalizeText(hero.intro).includes(
-          normalizeText(config.positioning?.bridgeThesis)
-        ),
-        'hero.intro must contain positioning.bridgeThesis'
-      );
+      if (!usesSupportingShowcaseHero) {
+        pushError(
+          errors,
+          normalizeText(hero.intro).includes(
+            normalizeText(config.positioning?.bridgeThesis)
+          ),
+          'hero.intro must contain positioning.bridgeThesis'
+        );
+      }
     }
   }
 
@@ -2137,6 +2152,17 @@ export function validateV2Config(
       );
       pushError(
         errors,
+        route.heroIntent === undefined || route.heroIntent === 'resume-support',
+        'route.heroIntent must be resume-support when present'
+      );
+      pushError(
+        errors,
+        route.heroIntent !== 'resume-support' ||
+          route.presentation === 'showcase',
+        'route.heroIntent resume-support requires route.presentation showcase'
+      );
+      pushError(
+        errors,
         route.workHeading === undefined || isNonEmptyString(route.workHeading),
         'route.workHeading must be a non-empty string when present'
       );
@@ -2154,6 +2180,12 @@ export function validateV2Config(
       route && typeof route === 'object' &&
         ['full', 'showcase'].includes(route.presentation),
       'route.presentation must be explicitly set to full or showcase for new or rebuilt packages'
+    );
+    pushError(
+      errors,
+      route?.presentation !== 'showcase' ||
+        route?.heroIntent === 'resume-support',
+      'showcase routes require route.heroIntent resume-support for new or rebuilt packages'
     );
   }
   pushError(

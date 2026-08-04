@@ -26,6 +26,7 @@ import {
   assertRecruiterFacingClaimsSupported,
   configInputSha256,
   humanizerCopyEntries,
+  humanizerCopySha256,
   humanizerViolations,
   getResumeExperienceSections,
   getRoutePresentation,
@@ -114,6 +115,8 @@ function revision6Config() {
   config.contractRevision = 6;
   delete config.fitGate.resumeBase;
   delete config.resume.compositionMode;
+  config.hero.intro =
+    'I connect customer needs, product decisions, and delivery. For this role, that means turning unclear requirements into working AI products without losing the review steps teams depend on. I have built regulated tools from discovery through functional software, led enterprise systems used by 7,000+ people across 22 brands, and managed $2M-$50M+ client portfolios.';
   return config;
 }
 
@@ -580,6 +583,7 @@ function createBuildFixture({
   config.routeMode = routeMode;
   if (routeMode === 'canonical-projects') {
     config.route.presentation = 'full';
+    delete config.route.heroIntent;
   }
   config.selectedProjects = selectedProjects;
   config.job.company = 'Fixture Company';
@@ -1307,6 +1311,10 @@ test(
         validateV2Config(leakyShowcase, { requireCurrentContract: true }).join('\n'),
         /route\.presentation showcase requires routeMode scoped-projects/
       );
+      assert.match(
+        validateV2Config(leakyShowcase, { requireCurrentContract: true }).join('\n'),
+        /showcase routes require route\.heroIntent resume-support/
+      );
       const omittedPresentation = structuredClone(config);
       delete omittedPresentation.route;
       assert.match(
@@ -1338,10 +1346,47 @@ test(
 
       config.route = {
         presentation: 'showcase',
+        heroIntent: 'resume-support',
         workHeading: 'A few pieces of relevant work.',
         contactHeading: 'Thanks for stopping by.',
       };
       config.routeMode = 'scoped-projects';
+      config.hero.intro =
+        "Here are a few things I've been working on lately. I picked the projects that may be relevant to this role. The resume covers my background in more detail.";
+      const withoutHeroIntent = structuredClone(config);
+      delete withoutHeroIntent.route.heroIntent;
+      assert.notEqual(
+        humanizerCopySha256(withoutHeroIntent),
+        humanizerCopySha256(config)
+      );
+      const historicalLengthShowcase = structuredClone(config);
+      historicalLengthShowcase.hero.intro = `I ${Array.from(
+        { length: 64 },
+        () => 'work'
+      ).join(' ')}`;
+      assert.doesNotMatch(
+        validateV2Config(historicalLengthShowcase).join('\n'),
+        /showcase hero\.intro must be 20 to 70 words/
+      );
+      const revisionSixShowcase = revision6Config();
+      revisionSixShowcase.hero.intro =
+        "Here are a few things I've been working on lately. I picked the projects that may be relevant to this role. The resume covers my background in more detail.";
+      assert.match(
+        validateV2Config(revisionSixShowcase).join('\n'),
+        /hero\.intro must be at least 45 words for revisions 5 and 6/
+      );
+      const fullRouteWithShowcaseHero = structuredClone(config);
+      fullRouteWithShowcaseHero.route.presentation = 'full';
+      delete fullRouteWithShowcaseHero.route.heroIntent;
+      fullRouteWithShowcaseHero.routeMode = 'canonical-projects';
+      assert.match(
+        validateV2Config(fullRouteWithShowcaseHero).join('\n'),
+        /hero\.intro must be 45 to 70 words|hero\.intro must contain positioning\.bridgeThesis/
+      );
+      const fullRouteWithHeroIntent = structuredClone(config);
+      fullRouteWithHeroIntent.route.presentation = 'full';
+      fullRouteWithHeroIntent.routeMode = 'canonical-projects';
+      assert.ok(schemaErrors(fullRouteWithHeroIntent).length > 0);
       assert.ok(
         humanizerCopyEntries(config).some(
           ([field, value]) =>

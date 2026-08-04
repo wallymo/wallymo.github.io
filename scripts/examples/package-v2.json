@@ -232,7 +232,7 @@
       "Role proof lane",
       "Domain proof lane"
     ],
-    "intro": "I connect customer needs, product decisions, and delivery. For this role, that means turning unclear requirements into working AI products without losing the review steps teams depend on. I have built regulated tools from discovery through functional software, led enterprise systems used by 7,000+ people across 22 brands, and managed $2M-$50M+ client portfolios."
+    "intro": "Here are a few things I've been working on lately. I picked the projects that may be relevant to this role. The resume covers my background in more detail."
   },
   "contact": {
     "prompt": "Hiring for this role and proof lane? Email is the fastest way to reach me.",
@@ -240,6 +240,7 @@
   },
   "route": {
     "presentation": "showcase",
+    "heroIntent": "resume-support",
     "workHeading": "Selected work.",
     "contactHeading": "Thanks for stopping by."
   },

@@ -488,6 +488,7 @@
       "type": "object",
       "properties": {
         "presentation": { "enum": ["full", "showcase"] },
+        "heroIntent": { "const": "resume-support" },
         "workHeading": { "type": "string", "minLength": 1 },
         "contactHeading": { "type": "string", "minLength": 1 }
       },
@@ -626,6 +627,29 @@
       "then": {
         "properties": {
           "routeMode": { "const": "scoped-projects" }
+        }
+      }
+    },
+    {
+      "if": {
+        "required": ["route"],
+        "properties": {
+          "route": {
+            "required": ["heroIntent"],
+            "properties": {
+              "heroIntent": { "const": "resume-support" }
+            }
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "route": {
+            "required": ["presentation"],
+            "properties": {
+              "presentation": { "const": "showcase" }
+            }
+          }
         }
       }
     },
