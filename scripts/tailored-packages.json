@@ -634,32 +634,9 @@
         "project-03.html"
       ],
       "resumePdfPath": "output/pdf/Wally-Mostafa-Cinder-Agent-Product-Manager-Resume.pdf",
-      "publishStatus": "live-verified",
+      "publishStatus": "local-only",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-08-04T19:40:30.882Z",
-      "verification": {
-        "verifiedAt": "2026-08-04T19:42:38.731Z",
-        "routeUrl": "https://wallymo.github.io/cinder-agent-product-manager/",
-        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-Cinder-Agent-Product-Manager-Resume.pdf",
-        "configUrl": "https://wallymo.github.io/scripts/packages/cinder-agent-product-manager.json",
-        "projectUrls": [
-          "https://wallymo.github.io/cinder-agent-product-manager/project-01.html",
-          "https://wallymo.github.io/cinder-agent-product-manager/project-02.html",
-          "https://wallymo.github.io/cinder-agent-product-manager/project-03.html"
-        ],
-        "configSha256": "9effe5e0657c26bcf7113412b3839cb2cdfd741bbed49aa50bf170dcb73d481e",
-        "pdfSha256": "f7aae12722c6b4b97baf58bc3ec2d9286f841ced9468ffc2afa178575645abd8",
-        "resumeBaseProfilesUrl": "https://wallymo.github.io/scripts/resume-base-profiles.json",
-        "resumeBaseProfilesSha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108",
-        "routeSha256": "49dcc29281878205bd8c3feb5cefa58ed7a0e36d7eb947dffa2ef95cabdc0950",
-        "scopedProjectSha256": {
-          "project-01.html": "4b96ded0439261ae63fa2c58281ae5e6ad22a098c38d60db372b138efef0e7ec",
-          "project-02.html": "4a32ef4570cb51e983f2a178a8580b07c83d0d731a7af86d06435927f8452453",
-          "project-03.html": "3d17937a0c7aa5e88fe3bd5d626a6c5a8cfff278b641b4fa13ed410000fe26b0"
-        },
-        "configInputSha256": "5534e567b5409942b56148feb392f6963f42c61be26d57acb87927f1d199c671",
-        "qaBuiltAt": "2026-08-04T19:40:30.882Z"
-      }
+      "builtAt": "2026-08-04T19:48:43.197Z"
     },
     {
       "slug": "cinteot-ai-product-owner",
