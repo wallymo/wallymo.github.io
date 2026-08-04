@@ -449,7 +449,7 @@
       "Customer discovery",
       "Product strategy to delivery"
     ],
-    "intro": "I connect discovery, AI implementation, and product direction. Below are three examples of how I've done that: a governed claims-review product, quick AI POCs, and an enterprise platform used by 7,000+ people. That's the work I'd bring to Cinder when a customer's high-stakes workflow needs to become a product people can use with the right safeguards."
+    "intro": "Here are a few things I've been working on lately. I picked the projects that may be relevant to the Agent Product Manager role at Cinder. The resume covers my background in more detail."
   },
   "contact": {
     "prompt": "Email is the best way to reach me.",
@@ -457,6 +457,7 @@
   },
   "route": {
     "presentation": "showcase",
+    "heroIntent": "resume-support",
     "workHeading": "What I've been up to.",
     "contactHeading": "Thanks for stopping by."
   },
@@ -464,8 +465,8 @@
     "humanizerVersion": "2.2.0",
     "mode": "rewrite-requested",
     "status": "passed",
-    "reviewedAt": "2026-08-04T13:58:35.191Z",
-    "copySha256": "96411a3c9acbccae86080f23c64f85bd0beee82567ba378933ba6b22497d064b",
+    "reviewedAt": "2026-08-04T19:40:15.316Z",
+    "copySha256": "9e64fc98d4abbf2ac9989824c8b779cd3fe0b79df2d7b1c36dc24e0d37116a86",
     "preserved": [
       "claims"
     ],
@@ -503,8 +504,8 @@
   },
   "qa": {
     "status": "qa-passed",
-    "builtAt": "2026-08-04T14:13:46.268Z",
-    "configInputSha256": "c60b7271623e2d4c03acb0412ec7db90bf9e3e097f97b7c0c86afdecda74eb27",
+    "builtAt": "2026-08-04T19:40:30.882Z",
+    "configInputSha256": "5534e567b5409942b56148feb392f6963f42c61be26d57acb87927f1d199c671",
     "sourceResumeSha256": "2265313e78b596a2b37d6d8f9a95081e4321b4047f142a5f0ddf22449cab4b9c",
     "resumeFoundation": {
       "id": "wally-mostafa-resume-2026-07-03",
@@ -525,8 +526,8 @@
       "registrySha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108"
     },
     "artifactHashes": {
-      "routeSha256": "4ed0ce4ee83bd0b5e1e7d3bd1a8da09e0548b4b1c597b13bd25a5ea97c58f349",
-      "resumePdfSha256": "6d123b812cc95bb65e0385640abb9e115563de9e1dc0a9280f68c28d639f8a03",
+      "routeSha256": "49dcc29281878205bd8c3feb5cefa58ed7a0e36d7eb947dffa2ef95cabdc0950",
+      "resumePdfSha256": "f7aae12722c6b4b97baf58bc3ec2d9286f841ced9468ffc2afa178575645abd8",
       "coverLetterPdfSha256": null,
       "coverLetterMarkdownSha256": null,
       "scopedProjectSha256": {
@@ -542,7 +543,8 @@
       },
       "htmlPath": "tmp/tailored-resumes/cinder-agent-product-manager.html",
       "pdfPath": "output/pdf/Wally-Mostafa-Cinder-Agent-Product-Manager-Resume.pdf",
-      "fontWait": false
+      "fontWait": true,
+      "fontProfile": "portfolio-pdf"
     },
     "coverLetterRenderer": null,
     "coverLetter": null,
@@ -550,7 +552,7 @@
       "ok": true,
       "pdfPath": "output/pdf/Wally-Mostafa-Cinder-Agent-Product-Manager-Resume.pdf",
       "pageCount": 2,
-      "fileSize": 150344,
+      "fileSize": 72433,
       "annotations": [
         {
           "page": 1,
@@ -577,6 +579,9 @@
           "uri": "https://www.red-dot.org/project/dxa-digital-experience-audit-55219"
         }
       ],
+      "fontCompatibility": {
+        "type3Fonts": false
+      },
       "coverage": [
         {
           "id": "relevant-product-and-implementation-experience",
@@ -700,8 +705,8 @@
       "status": "passed",
       "version": "2.2.0",
       "mode": "rewrite-requested",
-      "reviewedAt": "2026-08-04T13:58:35.191Z",
-      "copySha256": "96411a3c9acbccae86080f23c64f85bd0beee82567ba378933ba6b22497d064b",
+      "reviewedAt": "2026-08-04T19:40:15.316Z",
+      "copySha256": "9e64fc98d4abbf2ac9989824c8b779cd3fe0b79df2d7b1c36dc24e0d37116a86",
       "reviewMethod": "humanizer-skill",
       "semanticPassAttested": true,
       "staticChecksPassed": true
