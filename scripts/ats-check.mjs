@@ -121,6 +121,7 @@ export function runAtsCheck({ configPath, pdfPath }) {
   let firstPageText = '';
   let pageCount = null;
   let inspection = { annotations: [] };
+  let fonts = '';
 
   try {
     extractedText = commandOutput('pdftotext', ['-layout', absolutePdfPath, '-']);
@@ -154,6 +155,12 @@ export function runAtsCheck({ configPath, pdfPath }) {
     failures.push(`PDF annotation inspection failed: ${error.message}`);
   }
 
+  try {
+    fonts = commandOutput('pdffonts', [absolutePdfPath]);
+  } catch (error) {
+    failures.push(`PDF font inspection failed: ${error.message}`);
+  }
+
   if (!extractedText.trim()) {
     failures.push('PDF text extraction is empty');
   }
@@ -171,6 +178,11 @@ export function runAtsCheck({ configPath, pdfPath }) {
   }
   if (statSync(absolutePdfPath).size > MAX_PDF_BYTES) {
     failures.push(`PDF exceeds the ${MAX_PDF_BYTES}-byte parser limit`);
+  }
+  if (/\bType\s+3\b/i.test(fonts)) {
+    failures.push(
+      'PDF contains Type 3 fonts, which can disappear in Adobe Acrobat on Windows'
+    );
   }
 
   const firstLines = extractedText.split(/\r?\n/).slice(0, 16).join(' ');
@@ -339,6 +351,9 @@ export function runAtsCheck({ configPath, pdfPath }) {
     pageCount,
     fileSize: existsSync(absolutePdfPath) ? statSync(absolutePdfPath).size : null,
     annotations: inspection.annotations,
+    fontCompatibility: {
+      type3Fonts: /\bType\s+3\b/i.test(fonts),
+    },
     coverage,
     failures,
     warnings,

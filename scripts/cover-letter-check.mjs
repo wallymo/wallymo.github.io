@@ -171,6 +171,11 @@ export function runCoverLetterCheck({ configPath, pdfPath }) {
       'Cover letter is missing the canonical Instrument Sans body font'
     );
   }
+  if (/\bType\s+3\b/i.test(fonts)) {
+    failures.push(
+      'Cover letter contains Type 3 fonts, which can disappear in Adobe Acrobat on Windows'
+    );
+  }
   const sizeBytes = statSync(absolutePdfPath).size;
   if (sizeBytes > MAX_PDF_BYTES) {
     failures.push(`Cover letter exceeds the ${MAX_PDF_BYTES}-byte parser limit`);
@@ -276,6 +281,7 @@ export function runCoverLetterCheck({ configPath, pdfPath }) {
     fonts: {
       display: 'Syne 800',
       body: 'Instrument Sans 400/600',
+      type3Fonts: /\bType\s+3\b/i.test(fonts),
     },
     layout: {
       page: 'Letter',

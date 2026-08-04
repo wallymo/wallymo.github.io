@@ -47,7 +47,8 @@ export function renderResumePdf({
   htmlPath,
   pdfPath,
   chromePath,
-  waitForFonts = false,
+  waitForFonts = true,
+  fontProfile = 'portfolio-pdf',
 } = {}) {
   const absoluteHtmlPath = ensureRegularFile(htmlPath, 'resume HTML');
   const absolutePdfPath = resolveRepoPath(pdfPath);
@@ -71,6 +72,8 @@ export function renderResumePdf({
           absolutePdfPath,
           '--chrome',
           executable,
+          '--font-profile',
+          fontProfile,
         ],
         {
           stdio: ['ignore', 'pipe', 'pipe'],
@@ -125,6 +128,7 @@ export function renderResumePdf({
     htmlPath: relativeRepoPath(absoluteHtmlPath),
     pdfPath: relativeRepoPath(absolutePdfPath),
     fontWait: waitForFonts,
+    fontProfile,
   };
 }
 

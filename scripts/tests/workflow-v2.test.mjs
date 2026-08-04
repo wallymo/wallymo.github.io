@@ -16,7 +16,7 @@ import {
 import { createServer } from 'node:http';
 import os from 'node:os';
 import path from 'node:path';
-import { spawnSync } from 'node:child_process';
+import { execFileSync, spawnSync } from 'node:child_process';
 import test from 'node:test';
 import {
   RESUME_ROLE_IDS,
@@ -3755,6 +3755,11 @@ test(
       assert.equal(pdfInfo.status, 0, pdfInfo.stderr);
       const pageCount = Number(pdfInfo.stdout.match(/^Pages:\s+(\d+)$/m)?.[1]);
       assert.ok(pageCount >= 1 && pageCount <= 2);
+      const resumeFonts = execFileSync('pdffonts', [pdfPath], {
+        encoding: 'utf8',
+      });
+      assert.doesNotMatch(resumeFonts, /\bType\s+3\b/i);
+      assert.match(resumeFonts, /CID TrueType/i);
 
       const savedConfig = JSON.parse(readFileSync(configPath, 'utf8'));
       assert.equal(savedConfig.qa.ats.ok, true);
@@ -3867,6 +3872,11 @@ test(
       assert.ok(existsSync(pdfPath));
       assert.ok(existsSync(coverLetterPdfPath));
       assert.ok(existsSync(coverLetterMarkdownPath));
+      const coverLetterFonts = execFileSync('pdffonts', [coverLetterPdfPath], {
+        encoding: 'utf8',
+      });
+      assert.doesNotMatch(coverLetterFonts, /\bType\s+3\b/i);
+      assert.match(coverLetterFonts, /CID TrueType/i);
       assert.ok(existsSync(routePath));
       assert.equal(existsSync(temporaryHtml), false);
       assert.equal(existsSync(temporaryCoverLetterHtml), false);
