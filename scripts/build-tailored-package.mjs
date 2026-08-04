@@ -349,7 +349,14 @@ function stripLegacyRouteQueryShim(html, project) {
     throw new Error(`Could not remove legacy Varonis query shim from ${project}`);
   }
 
-  const strippedHtml = `${html.slice(0, shimStart)}${html.slice(shimClose + 5)}`;
+  const shimLineStart = html.lastIndexOf('\n', shimStart) + 1;
+  const removalStart =
+    html.slice(shimLineStart, shimStart).trim() === ''
+      ? shimLineStart
+      : shimStart;
+  const strippedHtml = `${html.slice(0, removalStart)}${html.slice(
+    shimClose + 5
+  )}`;
   if (strippedHtml.includes(legacyGuard)) {
     throw new Error(
       `Legacy Varonis query shim remains in scoped project ${project}`

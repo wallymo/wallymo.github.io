@@ -3504,6 +3504,7 @@ test(
           html,
           /params\.get\('from'\) !== 'varonis'|searchParams\.set\('from', 'varonis'\)|href = 'varonis\//
         );
+        assert.doesNotMatch(html, /[ \t]+$/m);
         assert.match(
           html,
           new RegExp(
