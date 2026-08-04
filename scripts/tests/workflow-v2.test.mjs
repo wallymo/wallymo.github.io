@@ -3500,6 +3500,10 @@ test(
           html,
           /href="\.\.\/output\/pdf\/Wally-Mostafa-Scoped-Fixture-Resume\.pdf"/
         );
+        assert.doesNotMatch(
+          html,
+          /params\.get\('from'\) !== 'varonis'|searchParams\.set\('from', 'varonis'\)|href = 'varonis\//
+        );
         assert.match(
           html,
           new RegExp(

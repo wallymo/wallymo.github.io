@@ -338,6 +338,26 @@ function setRouteLocalProjectNumber(html, routeLocalNumber, project) {
   );
 }
 
+function stripLegacyRouteQueryShim(html, project) {
+  const legacyGuard = "if (params.get('from') !== 'varonis') return;";
+  const guardIndex = html.indexOf(legacyGuard);
+  if (guardIndex === -1) return html;
+
+  const shimStart = html.lastIndexOf('(() => {', guardIndex);
+  const shimClose = html.indexOf('})();', guardIndex);
+  if (shimStart === -1 || shimClose === -1) {
+    throw new Error(`Could not remove legacy Varonis query shim from ${project}`);
+  }
+
+  const strippedHtml = `${html.slice(0, shimStart)}${html.slice(shimClose + 5)}`;
+  if (strippedHtml.includes(legacyGuard)) {
+    throw new Error(
+      `Legacy Varonis query shim remains in scoped project ${project}`
+    );
+  }
+  return strippedHtml;
+}
+
 function buildScopedProjectHtml(project, config, paths, index, titlesByProject) {
   const routeLocalNumber = String(index + 1).padStart(2, '0');
   const nextProjectHtml = buildRouteLocalNextProject(
@@ -363,7 +383,7 @@ function buildScopedProjectHtml(project, config, paths, index, titlesByProject) 
     )
     .replace(/\bhref="index\.html#work"/g, 'href="index.html#work"');
   const scopedHtml = setRouteLocalProjectNumber(
-    scopedHtmlWithRefs,
+    stripLegacyRouteQueryShim(scopedHtmlWithRefs, project),
     routeLocalNumber,
     project
   );
