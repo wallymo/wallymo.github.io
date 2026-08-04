@@ -5,7 +5,7 @@
   "roleTitle": "Cinder Agent Product Manager",
   "artifactStem": "Cinder-Agent-Product-Manager",
   "fitClass": "strong",
-  "routeMode": "canonical-projects",
+  "routeMode": "scoped-projects",
   "selectedProjects": [
     "project-01.html",
     "project-02.html",
@@ -449,18 +449,23 @@
       "Customer discovery",
       "Product strategy to delivery"
     ],
-    "intro": "I connect discovery, AI implementation, and product direction. I turn ambiguous, high-stakes workflows into governed tools, working POCs, and roadmap decisions. That includes human-in-the-loop claims review, risk-scoring dashboards, enterprise products used by 7,000+ people, and client engagements I lead from the first conversation through delivery."
+    "intro": "I connect discovery, AI implementation, and product direction. Below are three examples of how I've done that: a governed claims-review product, quick AI POCs, and an enterprise platform used by 7,000+ people. That's the work I'd bring to Cinder when a customer's high-stakes workflow needs to become a product people can use with the right safeguards."
   },
   "contact": {
-    "prompt": "If Cinder needs an Agent Product Manager who can work directly with customers, translate messy workflows into AI product decisions, and stay close through implementation, email is the fastest way to reach me.",
+    "prompt": "Email is the best way to reach me.",
     "signoff": "Customer discovery | AI workflow design | product delivery"
+  },
+  "route": {
+    "presentation": "showcase",
+    "workHeading": "What I've been up to.",
+    "contactHeading": "Thanks for stopping by."
   },
   "copyReview": {
     "humanizerVersion": "2.2.0",
     "mode": "rewrite-requested",
     "status": "passed",
-    "reviewedAt": "2026-08-03T20:44:55.965Z",
-    "copySha256": "eecbe41416e46bc0070bb24984d854b40e434ce76fb9b145f4934f3e49802fd1",
+    "reviewedAt": "2026-08-04T13:58:35.191Z",
+    "copySha256": "96411a3c9acbccae86080f23c64f85bd0beee82567ba378933ba6b22497d064b",
     "preserved": [
       "claims"
     ],
@@ -498,8 +503,8 @@
   },
   "qa": {
     "status": "qa-passed",
-    "builtAt": "2026-08-03T20:45:00.291Z",
-    "configInputSha256": "a1e9880b33f68ec1757042a3ceb691909a0e2be6a8b3798073dec20a3b5bb5fa",
+    "builtAt": "2026-08-04T14:13:46.268Z",
+    "configInputSha256": "c60b7271623e2d4c03acb0412ec7db90bf9e3e097f97b7c0c86afdecda74eb27",
     "sourceResumeSha256": "2265313e78b596a2b37d6d8f9a95081e4321b4047f142a5f0ddf22449cab4b9c",
     "resumeFoundation": {
       "id": "wally-mostafa-resume-2026-07-03",
@@ -520,11 +525,15 @@
       "registrySha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108"
     },
     "artifactHashes": {
-      "routeSha256": "14c804d0b5c5b9feed38181c3be79567924d5db342715879251ddfdaac0931b4",
-      "resumePdfSha256": "5b5ee24474bc9fc680b0ab2b06357c1642f76938628d3b2cb75207bd81f759a5",
+      "routeSha256": "4ed0ce4ee83bd0b5e1e7d3bd1a8da09e0548b4b1c597b13bd25a5ea97c58f349",
+      "resumePdfSha256": "6d123b812cc95bb65e0385640abb9e115563de9e1dc0a9280f68c28d639f8a03",
       "coverLetterPdfSha256": null,
       "coverLetterMarkdownSha256": null,
-      "scopedProjectSha256": {}
+      "scopedProjectSha256": {
+        "project-01.html": "4b96ded0439261ae63fa2c58281ae5e6ad22a098c38d60db372b138efef0e7ec",
+        "project-02.html": "4a32ef4570cb51e983f2a178a8580b07c83d0d731a7af86d06435927f8452453",
+        "project-03.html": "3d17937a0c7aa5e88fe3bd5d626a6c5a8cfff278b641b4fa13ed410000fe26b0"
+      }
     },
     "renderer": {
       "browser": {
@@ -691,8 +700,8 @@
       "status": "passed",
       "version": "2.2.0",
       "mode": "rewrite-requested",
-      "reviewedAt": "2026-08-03T20:44:55.965Z",
-      "copySha256": "eecbe41416e46bc0070bb24984d854b40e434ce76fb9b145f4934f3e49802fd1",
+      "reviewedAt": "2026-08-04T13:58:35.191Z",
+      "copySha256": "96411a3c9acbccae86080f23c64f85bd0beee82567ba378933ba6b22497d064b",
       "reviewMethod": "humanizer-skill",
       "semanticPassAttested": true,
       "staticChecksPassed": true
@@ -704,7 +713,31 @@
           "errors": []
         },
         {
+          "name": "desktop-project-01",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-02",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-03",
+          "errors": []
+        },
+        {
           "name": "mobile",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-01",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-02",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-03",
           "errors": []
         }
       ],
