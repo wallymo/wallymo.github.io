@@ -21,6 +21,7 @@ import {
   escapeHtml,
   getArtifactPaths,
   getResumeExperienceSections,
+  getRoutePresentation,
   hasCoverLetterArtifact,
   isMain,
   readJson,
@@ -469,7 +470,12 @@ function buildRoute(config, paths) {
         .join(`href="${project}"`);
     }
   }
-  if ((config.route?.presentation || 'full') === 'showcase') {
+  if (getRoutePresentation(config) === 'showcase') {
+    if (config.routeMode !== 'scoped-projects') {
+      console.warn(
+        'WARN: showcase presentation with canonical-projects lets case studies link back to the homepage; pair it with routeMode "scoped-projects"'
+      );
+    }
     for (const sectionId of ['how-i-build', 'capabilities', 'arc']) {
       routeHtml = replaceFirst(
         routeHtml,

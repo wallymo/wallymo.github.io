@@ -112,6 +112,16 @@ export function getResumeExperienceSections(config) {
     : DEFAULT_RESUME_EXPERIENCE_SECTIONS;
 }
 
+export function getRoutePresentation(config) {
+  if (config?.route?.presentation) {
+    return config.route.presentation;
+  }
+  return usesFlexiblePositioningContract(config) &&
+    config?.classification?.targetLane === 'client-account-delivery'
+    ? 'showcase'
+    : 'full';
+}
+
 export function resumeRoleSubEntries(resume, roleId) {
   const roleValue = resume?.roles?.[roleId];
   const isSubEntry = (value) =>

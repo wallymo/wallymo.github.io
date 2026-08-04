@@ -28,6 +28,7 @@ import {
   humanizerCopyEntries,
   humanizerViolations,
   getResumeExperienceSections,
+  getRoutePresentation,
   replaceElementContent,
   replacePortfolioLink,
   resolveChromeExecutable,
@@ -1297,6 +1298,20 @@ test(
         validateV2Config(emptyHeading).join('\n'),
         /route\.workHeading must be a non-empty string/
       );
+
+      const accountLane = structuredClone(config);
+      delete accountLane.route;
+      accountLane.classification.targetLane = 'client-account-delivery';
+      assert.equal(getRoutePresentation(accountLane), 'showcase');
+      accountLane.route = { presentation: 'full' };
+      assert.equal(getRoutePresentation(accountLane), 'full');
+      const otherLane = structuredClone(config);
+      delete otherLane.route;
+      assert.notEqual(
+        otherLane.classification.targetLane,
+        'client-account-delivery'
+      );
+      assert.equal(getRoutePresentation(otherLane), 'full');
 
       config.route = {
         presentation: 'showcase',
