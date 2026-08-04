@@ -536,7 +536,7 @@
   },
   "qa": {
     "status": "qa-passed",
-    "builtAt": "2026-08-03T23:47:41.790Z",
+    "builtAt": "2026-08-04T19:19:30.826Z",
     "configInputSha256": "bfd5f0102c94deafdfbbfff666faea91c40b8e70bb93fc574dd8ad3a22d88b1d",
     "sourceResumeSha256": "2265313e78b596a2b37d6d8f9a95081e4321b4047f142a5f0ddf22449cab4b9c",
     "resumeFoundation": {
@@ -559,13 +559,13 @@
     },
     "artifactHashes": {
       "routeSha256": "7bca3a105c7269a3c4eb529115e1d24d3bf53aa7173ffe5541944ddb2f0f2a92",
-      "resumePdfSha256": "eefc90adf23a0647a7d8b70bd069b89b41ceb2c9c84cc0ad41382d54d8bd27f4",
+      "resumePdfSha256": "978e2e1537f6d9bb1d8b8bebe157e5a2e0b919b7cf2bbf8729ec33e62ab35543",
       "coverLetterPdfSha256": null,
       "coverLetterMarkdownSha256": null,
       "scopedProjectSha256": {
-        "project-01.html": "0a29b972448bbd2ef6d35bb1bfb967d5befa0e9917289232fe0754607e251d70",
+        "project-01.html": "ce4b4c4dd9ff25d7d1df0106fe3b2a61cd6bb0ff060f4cad336f6caa75774851",
         "project-06.html": "b354958a6b6912febc952d7f70f12b30aff2ad2b8081c54065cb37016326b850",
-        "project-02.html": "a2b25e01f7e54cd59c317673f58cd8eeadd6a185a914293130e6eae9e0682bce"
+        "project-02.html": "b7c56a1a1e9b3637e5acbe059848f3974c579ec21f201cd54788a31ef73e87de"
       }
     },
     "renderer": {
@@ -575,7 +575,8 @@
       },
       "htmlPath": "tmp/tailored-resumes/healthcare-account-management.html",
       "pdfPath": "output/pdf/Wally-Mostafa-Healthcare-Account-Management-Resume.pdf",
-      "fontWait": false
+      "fontWait": true,
+      "fontProfile": "portfolio-pdf"
     },
     "coverLetterRenderer": null,
     "coverLetter": null,
@@ -583,7 +584,7 @@
       "ok": true,
       "pdfPath": "output/pdf/Wally-Mostafa-Healthcare-Account-Management-Resume.pdf",
       "pageCount": 2,
-      "fileSize": 161642,
+      "fileSize": 81587,
       "annotations": [
         {
           "page": 1,
@@ -610,6 +611,9 @@
           "uri": "https://www.red-dot.org/project/dxa-digital-experience-audit-55219"
         }
       ],
+      "fontCompatibility": {
+        "type3Fonts": false
+      },
       "coverage": [
         {
           "id": "education-and-experience",
