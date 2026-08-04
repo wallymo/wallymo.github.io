@@ -167,7 +167,7 @@
         "project-06.html"
       ],
       "resumePdfPath": "output/pdf/Wally-Mostafa-Account-Management-Resume.pdf",
-      "publishStatus": "local-only",
+      "publishStatus": "live-verified",
       "qaStatus": "qa-passed",
       "builtAt": "2026-08-04T00:10:22.783Z",
       "resumeBaseMode": "account-leadership",
@@ -179,7 +179,30 @@
           "id": "account-leadership",
           "version": 1
         }
-      ]
+      ],
+      "verification": {
+        "verifiedAt": "2026-08-04T00:11:21.959Z",
+        "routeUrl": "https://wallymo.github.io/account-management/",
+        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-Account-Management-Resume.pdf",
+        "configUrl": "https://wallymo.github.io/scripts/packages/account-management.json",
+        "projectUrls": [
+          "https://wallymo.github.io/account-management/project-02.html",
+          "https://wallymo.github.io/account-management/project-03.html",
+          "https://wallymo.github.io/account-management/project-06.html"
+        ],
+        "configSha256": "288da1dd65104ff062039e04662308e506132cb2ed3ecb4f48c0f3bf92fd0008",
+        "pdfSha256": "dc57012db18dc4be8c59554692a64b6feaa5d54726552c945748728b51ca2b2d",
+        "resumeBaseProfilesUrl": "https://wallymo.github.io/scripts/resume-base-profiles.json",
+        "resumeBaseProfilesSha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108",
+        "routeSha256": "bd7c01ba77f806ec7fbc21ce620bf5ee10ec8f5688630ae30ef6d7f83e1ff25b",
+        "scopedProjectSha256": {
+          "project-02.html": "79cd47a346a931d1fa90eefd9ac7146d414a9b6a426defd54aac7ea7411b583e",
+          "project-03.html": "07de56b2440b4128cf8517e1051ecc0894496ce1395597adb57a0b0090867c11",
+          "project-06.html": "a4d949e7afee6b357d9968589fe6c233cf15420bd4ad451f6f026b4b0bc85de5"
+        },
+        "configInputSha256": "41ec0144a14b0d43bcfe60bf63077b20a66dcb686ef657fa2f0f400840bebafc",
+        "qaBuiltAt": "2026-08-04T00:10:22.783Z"
+      }
     },
     {
       "workflowVersion": 2,
