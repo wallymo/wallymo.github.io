@@ -578,6 +578,9 @@ function createBuildFixture({
   config.artifactStem = artifactStem;
   setFit(config, fitClass);
   config.routeMode = routeMode;
+  if (routeMode === 'canonical-projects') {
+    config.route.presentation = 'full';
+  }
   config.selectedProjects = selectedProjects;
   config.job.company = 'Fixture Company';
   config.job.roleTitle = 'Fixture Role';
@@ -1298,6 +1301,26 @@ test(
         validateV2Config(emptyHeading).join('\n'),
         /route\.workHeading must be a non-empty string/
       );
+      const leakyShowcase = structuredClone(config);
+      leakyShowcase.route = { presentation: 'showcase' };
+      assert.match(
+        validateV2Config(leakyShowcase, { requireCurrentContract: true }).join('\n'),
+        /route\.presentation showcase requires routeMode scoped-projects/
+      );
+      const omittedPresentation = structuredClone(config);
+      delete omittedPresentation.route;
+      assert.match(
+        validateV2Config(omittedPresentation, {
+          requireCurrentContract: true,
+        }).join('\n'),
+        /route\.presentation must be explicitly set to full or showcase/
+      );
+      const historicalOmission = structuredClone(config);
+      delete historicalOmission.route;
+      assert.doesNotMatch(
+        validateV2Config(historicalOmission).join('\n'),
+        /route\.presentation must be explicitly set/
+      );
 
       const accountLane = structuredClone(config);
       delete accountLane.route;
@@ -1318,6 +1341,7 @@ test(
         workHeading: 'A few pieces of relevant work.',
         contactHeading: 'Thanks for stopping by.',
       };
+      config.routeMode = 'scoped-projects';
       assert.ok(
         humanizerCopyEntries(config).some(
           ([field, value]) =>

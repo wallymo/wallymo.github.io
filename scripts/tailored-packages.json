@@ -3,7 +3,8 @@
   "generatedFrom": "current-filesystem",
   "defaults": {
     "newPackageWorkflowVersion": 2,
-    "newPackageRouteMode": "canonical-projects",
+    "newPackageRouteMode": "scoped-projects",
+    "newPackageRoutePresentation": "showcase",
     "newPackageFitGate": "strong-or-adjacent-only"
   },
   "workflowVersions": [

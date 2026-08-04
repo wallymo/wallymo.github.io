@@ -613,6 +613,24 @@
   "allOf": [
     {
       "if": {
+        "required": ["route"],
+        "properties": {
+          "route": {
+            "required": ["presentation"],
+            "properties": {
+              "presentation": { "const": "showcase" }
+            }
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "routeMode": { "const": "scoped-projects" }
+        }
+      }
+    },
+    {
+      "if": {
         "anyOf": [
           {
             "required": ["contractRevision"],

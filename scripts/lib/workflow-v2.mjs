@@ -2148,6 +2148,21 @@ export function validateV2Config(
       );
     }
   }
+  if (requireCurrentContract) {
+    pushError(
+      errors,
+      route && typeof route === 'object' &&
+        ['full', 'showcase'].includes(route.presentation),
+      'route.presentation must be explicitly set to full or showcase for new or rebuilt packages'
+    );
+  }
+  pushError(
+    errors,
+    !requireCurrentContract ||
+      getRoutePresentation(config) !== 'showcase' ||
+      config?.routeMode === 'scoped-projects',
+    'route.presentation showcase requires routeMode scoped-projects'
+  );
 
   const constraints = config?.constraints;
   pushError(errors, constraints && typeof constraints === 'object', 'constraints is required');

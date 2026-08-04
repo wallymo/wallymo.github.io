@@ -85,8 +85,8 @@ When the human sends a job, start with the fit gate. If it clears as a strong fi
   - `project-05.html` — Splash Design System: component systems, Figma, design ops, personas, system governance, award-backed UX.
   - `project-06.html` — Digital Audit Experience: audit workflows, AI-powered data visualization, benchmarking, recommendations, awards.
   - `project-07.html` — Other Highlights: design leadership, accessibility, innovation challenge, service-desk product UX.
-- Use `canonical-projects` by default: route cards can be tailored and reordered, but they link to public `../project-*.html` pages whose page numbers and navigation stay canonical.
-- Use `scoped-projects` only when role-local case-study framing or route-local navigation is worth the extra maintenance.
+- Use the self-contained showcase pattern by default: `routeMode: "scoped-projects"` with `route.presentation: "showcase"`. Route cards, scoped case studies, in-body project links, logos, all-work links, and previous/next links must keep recruiters inside the employer-specific package.
+- Use `canonical-projects` or `route.presentation: "full"` only as an explicit opt-out when the canonical public portfolio or fuller homepage narrative is intentionally part of the proof path.
 - If a tailored route includes scoped project pages, update every project card, back link, breadcrumb, previous link, and next-project link to keep recruiters inside the role-specific project sequence.
 - Global rule for scoped project pages: if a route reorders or renumbers selected projects, each scoped project page must show that route-local number and sequence, not its canonical public-site number. The selected-work card's visible number, title, and order are the source of truth for that scoped route.
 - Scoped page previous/next links must follow that JD route's selected-project order, and the Wally/logo link plus all-work/back links must return to the JD-specific portfolio route.

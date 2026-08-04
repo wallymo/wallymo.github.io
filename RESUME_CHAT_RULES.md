@@ -11,7 +11,7 @@ No standalone paste/upload UI. Do this in chat from the job description the user
 5. Stop if the role is `not-fit`. Do not create route, resume, PDF, or cover-letter files. Instead, explain the blocker and suggest the narrowest honest way to make the opportunity fit, such as a different title target, a narrower positioning angle, or missing proof the human would need to supply.
 6. Stop on `stretch` unless the human explicitly asks to proceed after seeing the risk. A recommended cover-letter bridge does not replace this approval. If approved, proceed only with narrow honest positioning.
 7. Select the Revision 7 resume base from the JD's operating center: `account-leadership`, `ai-product-implementation`, or `hybrid-selective`. Industry does not decide the base. Use hybrid only when both disciplines are direct core responsibilities, then record the lead profile, account presentation, `tailor-to-jd` action, and rationale.
-8. Choose the route mode and persist a v2 Revision 7 package config at `scripts/packages/<slug>.json` using `scripts/examples/package-v2.json` as the contract. Use `canonical-projects` by default and `scoped-projects` only when case-study pages need role-specific framing. Write a concise summary that fits the page-one layout, choose four to six supported skills, preserve evidence attribution and role metadata, and use unique `addition:<slug>` IDs only for new supported bullets.
+8. Persist a v2 Revision 7 package config at `scripts/packages/<slug>.json` using `scripts/examples/package-v2.json` as the contract. Use the self-contained showcase pattern by default: `routeMode: "scoped-projects"` plus `route.presentation: "showcase"`. Use `full` or `canonical-projects` only as an explicit, intentional opt-out when the public portfolio narrative is part of the role's proof. Write a concise summary that fits the page-one layout, choose four to six supported skills, preserve evidence attribution and role metadata, and use unique `addition:<slug>` IDs only for new supported bullets.
 9. Run the complete `humanizer` skill over all authored copy. Unless the human explicitly requested a rewrite, make surface-only changes and preserve the content, structure, claims, proof, order, and ending. Complete the skill's final anti-AI audit before approval.
 10. Run `node scripts/humanizer-check.mjs --config scripts/packages/<slug>.json --approve --semantic-pass-complete`. This attests that the full semantic skill pass is complete; the static scan cannot approve copy by itself. Use `--rewrite-requested` only when the human explicitly requested a rewrite. Any later copy change invalidates this approval.
 11. Run `node scripts/build-tailored-package.mjs --config scripts/packages/<slug>.json`. Use `--allow-stretch` only after explicit approval and `--overwrite` only when intentionally rebuilding the same package.
@@ -74,12 +74,12 @@ No standalone paste/upload UI. Do this in chat from the job description the user
 
 ## Matched Portfolio Route
 
-Use the Lenovo workflow as the default route pattern and the Sogeti workflow only when scoped project pages are truly needed.
+Use the self-contained employer-specific showcase as the default route pattern.
 
 - Create a route at `/<company-or-role-slug>/` using `index.html` as the base. Do not copy a different role route as the starting point; that leaks old role framing and stale artifact links.
 - Keep the public homepage `/`, public `resume.html`, and `assets/Wally-Mostafa-Resume.pdf` untouched unless the user explicitly asks to change the global site.
-- Use `canonical-projects` by default: featured cards can be reordered and tailored, but they link to public `../project-*.html` pages whose numbering and navigation remain canonical.
-- Use `scoped-projects` only when the role needs route-local case-study framing, route-local numbering, or recruiter navigation that must stay inside the role package.
+- Use `scoped-projects` with `route.presentation: "showcase"` by default. The route, selected case studies, and all return paths must stay inside the employer-specific package.
+- Use `canonical-projects` or `route.presentation: "full"` only as an explicit opt-out when the canonical public portfolio or fuller homepage narrative is intentionally part of the recruiter path.
 - Tailor only the route areas that support the JD-specific proof path:
   - Hidden metadata: page title, meta description, and Open Graph URL/title/description.
   - Hero space: eyebrow, tagline chips, and a first-person intro that directly explains why I fit this role using grounded proof.

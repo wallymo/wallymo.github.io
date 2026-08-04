@@ -5,7 +5,7 @@
   "roleTitle": "Company Role",
   "artifactStem": "Company-Role",
   "fitClass": "strong",
-  "routeMode": "canonical-projects",
+  "routeMode": "scoped-projects",
   "selectedProjects": [
     "project-01.html",
     "project-02.html",
@@ -237,6 +237,11 @@
   "contact": {
     "prompt": "Hiring for this role and proof lane? Email is the fastest way to reach me.",
     "signoff": "Proof lane one · proof lane two · proof lane three"
+  },
+  "route": {
+    "presentation": "showcase",
+    "workHeading": "Selected work.",
+    "contactHeading": "Thanks for stopping by."
   },
   "copyReview": {
     "humanizerVersion": "2.2.0",
