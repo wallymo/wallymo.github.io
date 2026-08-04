@@ -5,7 +5,7 @@
   "roleTitle": "Account Management & Client Leadership",
   "artifactStem": "Account-Management",
   "fitClass": "strong",
-  "routeMode": "canonical-projects",
+  "routeMode": "scoped-projects",
   "selectedProjects": [
     "project-02.html",
     "project-03.html",
@@ -504,10 +504,10 @@
       "Budgets up to $20M",
       "UX, product and AI perspective"
     ],
-    "intro": "I'm an account management leader returning with eight years of direct experience, progression from Account Coordinator to Account Supervisor, and budgets up to $20M. Since then, I've grown a team from 2 to 30 and led client engagements from discovery through delivery. I bring that broader view to clearer briefs, stronger teams, practical AI, and better client outcomes while keeping the relationship at the center."
+    "intro": "I'm returning to account management after eight years running Fortune 500 accounts, Account Coordinator through Account Supervisor, with budgets up to $20M. What's below is extra: a look at what I've been up to since, and what I'm up to now. It's the work that makes me a different account person, still keeping the relationship at the center."
   },
   "contact": {
-    "prompt": "If you need an account leader who can understand the client, give the team a clear path forward, and carry work from the first conversation through delivery, email is the fastest way to reach me.",
+    "prompt": "Email is the best way to reach me.",
     "signoff": "Account leadership | client strategy | cross-functional delivery"
   },
   "coverLetter": null,
@@ -542,8 +542,8 @@
   },
   "qa": {
     "status": "qa-passed",
-    "builtAt": "2026-08-03T21:59:24.799Z",
-    "configInputSha256": "6db021931f0081d41e352e085dbeb82dff23e4bb52411d4fc456bf82f813eec2",
+    "builtAt": "2026-08-04T00:10:22.783Z",
+    "configInputSha256": "41ec0144a14b0d43bcfe60bf63077b20a66dcb686ef657fa2f0f400840bebafc",
     "sourceResumeSha256": "2265313e78b596a2b37d6d8f9a95081e4321b4047f142a5f0ddf22449cab4b9c",
     "resumeFoundation": {
       "id": "wally-mostafa-resume-2026-07-03",
@@ -564,11 +564,15 @@
       "registrySha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108"
     },
     "artifactHashes": {
-      "routeSha256": "e50ede93d7cf47278169ee422b01d3f5caef0aa11adfc56a599bda0bd3b960e4",
-      "resumePdfSha256": "9cb2aa4a4445620b2f27b7ab6622d24fab8f094d8ef13dcf4983257b02480775",
+      "routeSha256": "bd7c01ba77f806ec7fbc21ce620bf5ee10ec8f5688630ae30ef6d7f83e1ff25b",
+      "resumePdfSha256": "dc57012db18dc4be8c59554692a64b6feaa5d54726552c945748728b51ca2b2d",
       "coverLetterPdfSha256": null,
       "coverLetterMarkdownSha256": null,
-      "scopedProjectSha256": {}
+      "scopedProjectSha256": {
+        "project-02.html": "79cd47a346a931d1fa90eefd9ac7146d414a9b6a426defd54aac7ea7411b583e",
+        "project-03.html": "07de56b2440b4128cf8517e1051ecc0894496ce1395597adb57a0b0090867c11",
+        "project-06.html": "a4d949e7afee6b357d9968589fe6c233cf15420bd4ad451f6f026b4b0bc85de5"
+      }
     },
     "renderer": {
       "browser": {
@@ -718,8 +722,8 @@
       "status": "passed",
       "version": "2.2.0",
       "mode": "rewrite-requested",
-      "reviewedAt": "2026-08-03T21:59:20.460Z",
-      "copySha256": "71a3a9fc55f4d1a973c3067febce1f17fc641cc627b8bf2dc4c3b75c12125b91",
+      "reviewedAt": "2026-08-04T00:10:14.575Z",
+      "copySha256": "f000289c986eea8019716641109c4fb3eb90a67f5875a5de27686ea593a3fa5c",
       "reviewMethod": "humanizer-skill",
       "semanticPassAttested": true,
       "staticChecksPassed": true
@@ -731,7 +735,31 @@
           "errors": []
         },
         {
+          "name": "desktop-project-02",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-03",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-06",
+          "errors": []
+        },
+        {
           "name": "mobile",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-02",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-03",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-06",
           "errors": []
         }
       ],
@@ -742,8 +770,8 @@
     "humanizerVersion": "2.2.0",
     "mode": "rewrite-requested",
     "status": "passed",
-    "reviewedAt": "2026-08-03T21:59:20.460Z",
-    "copySha256": "71a3a9fc55f4d1a973c3067febce1f17fc641cc627b8bf2dc4c3b75c12125b91",
+    "reviewedAt": "2026-08-04T00:10:14.575Z",
+    "copySha256": "f000289c986eea8019716641109c4fb3eb90a67f5875a5de27686ea593a3fa5c",
     "preserved": [
       "claims"
     ],
@@ -753,5 +781,10 @@
     "staticChecksPassed": true,
     "finalAntiAiPass": true,
     "remainingTells": []
+  },
+  "route": {
+    "presentation": "showcase",
+    "workHeading": "What I've been up to.",
+    "contactHeading": "Thanks for stopping by."
   }
 }

@@ -160,16 +160,16 @@
       "positioningLane": "client-account-delivery",
       "bridgeType": "direct",
       "applicationStrategy": "direct",
-      "routeMode": "canonical-projects",
+      "routeMode": "scoped-projects",
       "selectedProjects": [
         "project-02.html",
         "project-03.html",
         "project-06.html"
       ],
       "resumePdfPath": "output/pdf/Wally-Mostafa-Account-Management-Resume.pdf",
-      "publishStatus": "live-verified",
+      "publishStatus": "local-only",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-08-03T21:59:24.799Z",
+      "builtAt": "2026-08-04T00:10:22.783Z",
       "resumeBaseMode": "account-leadership",
       "resumeBaseLeadProfile": "account-leadership",
       "resumeBaseAction": "use-existing",
@@ -179,26 +179,7 @@
           "id": "account-leadership",
           "version": 1
         }
-      ],
-      "verification": {
-        "verifiedAt": "2026-08-03T22:01:01.431Z",
-        "routeUrl": "https://wallymo.github.io/account-management/",
-        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-Account-Management-Resume.pdf",
-        "configUrl": "https://wallymo.github.io/scripts/packages/account-management.json",
-        "projectUrls": [
-          "https://wallymo.github.io/project-02.html",
-          "https://wallymo.github.io/project-03.html",
-          "https://wallymo.github.io/project-06.html"
-        ],
-        "configSha256": "8a71e6ef0ef7aa32df749eb9b424cfd2cce891e9291dad4ae57160509890b3e8",
-        "pdfSha256": "9cb2aa4a4445620b2f27b7ab6622d24fab8f094d8ef13dcf4983257b02480775",
-        "resumeBaseProfilesUrl": "https://wallymo.github.io/scripts/resume-base-profiles.json",
-        "resumeBaseProfilesSha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108",
-        "routeSha256": "e50ede93d7cf47278169ee422b01d3f5caef0aa11adfc56a599bda0bd3b960e4",
-        "scopedProjectSha256": {},
-        "configInputSha256": "6db021931f0081d41e352e085dbeb82dff23e4bb52411d4fc456bf82f813eec2",
-        "qaBuiltAt": "2026-08-03T21:59:24.799Z"
-      }
+      ]
     },
     {
       "workflowVersion": 2,
