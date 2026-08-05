@@ -1716,6 +1716,40 @@
       "publishStatus": "tracked-unverified"
     },
     {
+      "workflowVersion": 2,
+      "contractRevision": 7,
+      "slug": "lonely-planet-account-manager",
+      "roleTitle": "Lonely Planet Account Manager, Integrated Marketing",
+      "artifactStem": "Lonely-Planet-Account-Manager",
+      "configPath": "scripts/packages/lonely-planet-account-manager.json",
+      "targetLane": "client-account-delivery",
+      "evidenceMode": "resume-primary",
+      "fitClass": "strong",
+      "positioningLane": "client-account-delivery",
+      "bridgeType": "direct",
+      "applicationStrategy": "direct",
+      "resumeBaseMode": "account-leadership",
+      "resumeBaseLeadProfile": "account-leadership",
+      "resumeBaseAction": "tailor-to-jd",
+      "accountPresentation": "agency-progression",
+      "resumeBaseProfiles": [
+        {
+          "id": "account-leadership",
+          "version": 1
+        }
+      ],
+      "routeMode": "scoped-projects",
+      "selectedProjects": [
+        "project-06.html",
+        "project-02.html",
+        "project-03.html"
+      ],
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Lonely-Planet-Account-Manager-Resume.pdf",
+      "publishStatus": "local-only",
+      "qaStatus": "qa-passed",
+      "builtAt": "2026-08-05T01:26:01.004Z"
+    },
+    {
       "slug": "m3-mi-client-success-consultant",
       "roleTitle": "Healthcare Client Success & Data Products",
       "fitClass": "unclassified",

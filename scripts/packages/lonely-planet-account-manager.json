@@ -1,0 +1,861 @@
+{
+  "workflowVersion": 2,
+  "contractRevision": 7,
+  "slug": "lonely-planet-account-manager",
+  "roleTitle": "Lonely Planet Account Manager, Integrated Marketing",
+  "artifactStem": "Lonely-Planet-Account-Manager",
+  "fitClass": "strong",
+  "routeMode": "scoped-projects",
+  "selectedProjects": [
+    "project-06.html",
+    "project-02.html",
+    "project-03.html"
+  ],
+  "job": {
+    "company": "Lonely Planet / Red Ventures",
+    "roleTitle": "Account Manager, Integrated Marketing",
+    "jobId": "not-provided",
+    "jobUrl": "not-provided",
+    "sourceChannel": "user-provided job description",
+    "dateCaptured": "2026-08-04",
+    "location": "Location not provided; Eastern Standard Time hours required",
+    "employmentType": "Contract through the end of 2026",
+    "atsVendor": "unknown",
+    "rawJd": "Contract position through the end of the year. Must be able to work Eastern Standard Time hours.\n\nWe're looking for an organized, proactive, and client-focused Account Manager to join our Integrated Marketing team. Reporting to the Senior Account Manager, you'll be responsible for bringing sold partnership programs to life, serving as the primary day-to-day contact for clients while coordinating cross-functional teams to ensure campaigns are delivered seamlessly.\n\nYou'll manage integrated campaigns for tourism boards and travel-adjacent brands across categories including financial services, retail, insurance, transportation, and hospitality. Success in this role requires exceptional project management, clear communication, and the ability to thrive in a fast-paced environment with multiple stakeholders and international clients.\n\nWhat You'll Do\n\nOwn the execution of integrated marketing campaigns from kickoff through final reporting and wrap-up.\nServe as the primary day-to-day contact for clients during campaign execution, building trusted relationships and ensuring an outstanding client experience.\nPartner with Sales and Pre-Sales teams to develop a deep understanding of sold programs and campaign objectives before launch.\nLead internal kickoff meetings and coordinate timelines, deliverables, approvals, and communication across cross-functional teams.\nCollaborate with Editorial, Creative, Video, Social, Ad Operations, Production, and other internal stakeholders to keep projects on track.\nMonitor campaign progress, proactively identify risks, and communicate solutions before issues arise.\nManage client feedback and revision cycles while balancing business objectives with creative integrity.\nCoordinate campaign reporting, performance recaps, and final deliverables.\nHelp refine internal workflows and identify opportunities to improve operational efficiency.\n\nWhat We're Looking For\n\n3-5+ years of account management, client services, and/or integrated marketing experience.\nExperience managing branded content, media, or integrated marketing campaigns.\nOutstanding organizational skills with the ability to manage multiple projects simultaneously.\nStrong written and verbal communication skills with confidence interacting with both clients and senior internal stakeholders.\nComfortable working in a fast-paced environment with clients and partners across multiple time zones.\nProven ability to collaborate across cross-functional teams and keep complex projects moving forward.\nHighly proactive, detail-oriented, and solutions-focused.\nPassion for travel, storytelling, media, or destination marketing is a plus."
+  },
+  "classification": {
+    "targetLane": "client-account-delivery",
+    "evidenceMode": "resume-primary",
+    "primarySource": "The resume directly shows eight years of agency account-management progression, primary client contact, integrated campaign delivery, budgets up to $20M, reporting, approvals, and coordination across client, creative, media, production, digital, and vendor teams.",
+    "supportingSource": "The portfolio adds recent evidence of client discovery, workflow improvement, enterprise delivery, analytics, and presentation-ready reporting. It supports the account story rather than replacing it.",
+    "hardGateStatus": "pass",
+    "hardGates": [
+      {
+        "gate": "Bring at least three to five years of account management, client services, or integrated marketing experience",
+        "status": "pass",
+        "requirementId": "account-management-tenure",
+        "evidence": "The resume documents eight years of direct account-management progression from Account Coordinator through Account Supervisor."
+      },
+      {
+        "gate": "Work Eastern Standard Time hours",
+        "status": "pass",
+        "requirementId": "eastern-time-hours",
+        "evidence": "The resume lists Raleigh, North Carolina, which is in the Eastern Time Zone. Contract availability will be reconfirmed during application readiness."
+      }
+    ]
+  },
+  "requirements": [
+    {
+      "id": "account-management-tenure",
+      "text": "Bring at least three to five years of account management, client services, or integrated marketing experience.",
+      "priority": "hard-gate",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The resume documents eight years of direct account-management experience and title progression from Account Coordinator through Account Supervisor.",
+        "The work included Fortune 500 clients, large brand budgets, primary client-contact responsibilities, and integrated campaign delivery."
+      ],
+      "proofIds": [
+        "account-management-01",
+        "addition:scout-xyrem-account-lead",
+        "addition:rosetta-prevenar-client-contact"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience"
+      ],
+      "resumeTerms": [
+        "eight years",
+        "Account Supervisor"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "eastern-time-hours",
+      "text": "Be able to work Eastern Standard Time hours for a contract running through the end of the year.",
+      "priority": "hard-gate",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The resume lists Raleigh, North Carolina, which aligns with Eastern Time working hours.",
+        "Contract availability is an application-readiness confirmation rather than a resume claim."
+      ],
+      "proofIds": [],
+      "destinations": [
+        "application-answer"
+      ],
+      "resumeTerms": [
+        "Raleigh, NC"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "integrated-campaign-execution",
+      "text": "Own branded-content, media, and integrated marketing campaigns from kickoff through reporting and wrap-up.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Agency account work covered national television, digital, social, radio, outdoor, print, gaming, CRM support, and in-office programs.",
+        "The record includes campaign planning, production, approvals, launch, performance measurement, and client reporting."
+      ],
+      "proofIds": [
+        "account-management-01",
+        "account-management-02",
+        "account-management-03",
+        "addition:scout-xyrem-bridging-campaign"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience"
+      ],
+      "resumeTerms": [
+        "integrated campaigns",
+        "national television",
+        "Facebook and YouTube"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "day-to-day-client-contact",
+      "text": "Serve as the primary day-to-day client contact, build trust, manage feedback, and communicate with senior stakeholders.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Direct account leadership included primary client-contact responsibility across brand teams, national affiliates, vendors, and agency partners.",
+        "Later client work continues from discovery through demos, iteration, and delivery."
+      ],
+      "proofIds": [
+        "addition:rosetta-prevenar-client-contact",
+        "addition:scout-xyrem-account-lead",
+        "one-block-away-01"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience"
+      ],
+      "resumeTerms": [
+        "primary client contact",
+        "Account Management & Client Leadership"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "project-management-and-approvals",
+      "text": "Lead kickoffs and coordinate briefs, timelines, deliverables, approvals, feedback, revisions, and solutions across multiple projects.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The resume shows ownership of briefs, scopes, timelines, client status, financial reporting, review submissions, production requirements, and finished delivery.",
+        "Recent workflow and product work adds requirements, review routing, risk visibility, and build-ready handoff."
+      ],
+      "proofIds": [
+        "account-management-03",
+        "addition:fcb-nuvigil-client-operations",
+        "addition:rosetta-dubai-advisory",
+        "hedgehox-03"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "Program & Project Delivery",
+        "weekly client status",
+        "review routing"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "cross-functional-campaign-teams",
+      "text": "Coordinate Editorial, Creative, Video, Social, Ad Operations, Production, Sales, Pre-Sales, and other internal stakeholders.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Documented campaign work coordinated client, account, strategy, creative, production, digital, media, social, development, regulatory, and vendor teams.",
+        "The resume does not separately name Editorial or Ad Operations ownership, so those disciplines remain a narrow evidence gap."
+      ],
+      "proofIds": [
+        "account-management-03",
+        "addition:fcb-nuvigil-rebrand-crm",
+        "heartbeat-03"
+      ],
+      "destinations": [
+        "summary",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "cross-functional teams",
+        "strategy, creative, account, and engineering teams"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "reporting-performance-and-recaps",
+      "text": "Coordinate campaign reporting, performance recaps, recommendations, and final deliverables.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Account work included weekly client status and financial reporting, campaign metrics, benchmarks, and annual strategic recommendations.",
+        "Recent enterprise work built a reporting workflow for channel scoring, benchmarks, recommendations, visualization, and presentation-ready client outputs."
+      ],
+      "proofIds": [
+        "addition:fcb-nuvigil-client-operations",
+        "addition:cdm-lipitor-zoloft-digital",
+        "kinesso-03"
+      ],
+      "destinations": [
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "client status and financial reporting",
+        "presentation-ready client outputs"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "international-and-multi-time-zone-work",
+      "text": "Work comfortably with international clients and partners across multiple time zones.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "The resume shows primary contact with national affiliates and vendors plus ownership of an Africa and Middle East advisory board in Dubai.",
+        "It does not establish a continuing portfolio of international tourism clients across multiple time zones."
+      ],
+      "proofIds": [
+        "addition:rosetta-prevenar-client-contact",
+        "addition:rosetta-dubai-advisory"
+      ],
+      "destinations": [
+        "experience"
+      ],
+      "resumeTerms": [
+        "Dubai"
+      ],
+      "matchMode": "contextual"
+    },
+    {
+      "id": "workflow-improvement",
+      "text": "Refine internal workflows and identify practical opportunities to improve operational efficiency.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Current work includes a Scope Generator for agency finance and operations teams and tools for review routing, submission capture, and workflow handoff.",
+        "The Digital Experience Audit turned channel scoring and recommendations into a repeatable client-output workflow."
+      ],
+      "proofIds": [
+        "hedgehox-05",
+        "hedgehox-03",
+        "kinesso-03"
+      ],
+      "destinations": [
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "Scope Generator",
+        "Digital Experience Audit workflow"
+      ],
+      "matchMode": "recognized-equivalent"
+    }
+  ],
+  "fitGate": {
+    "resumeBase": {
+      "mode": "account-leadership",
+      "sourceProfiles": [
+        {
+          "id": "account-leadership",
+          "version": 1
+        }
+      ],
+      "leadProfileId": "account-leadership",
+      "accountPresentation": "agency-progression",
+      "action": "tailor-to-jd",
+      "rationale": "The role's operating center is direct client ownership and integrated campaign delivery. Account Leadership is the correct base, with agency progression showing the required tenure and later product, UX, analytics, and AI work providing supporting evidence."
+    },
+    "supportedOverlap": [
+      "Eight years of direct agency account-management progression from Account Coordinator through Account Supervisor.",
+      "Primary client contact across brand teams, affiliates, vendors, and an international advisory board.",
+      "Integrated campaign delivery across television, digital, social, print, radio, outdoor, gaming, CRM support, and in-office programs.",
+      "Budgets up to $20M plus briefs, scopes, timelines, approvals, client status, financial reporting, and finished delivery.",
+      "Campaign measurement and recommendations, including work that doubled qualified traffic and television tied to a 45% increase in new-to-brand consumers within seven weeks.",
+      "Recent workflow improvement, analytics, product, UX, and AI implementation work that supports organized cross-functional delivery."
+    ],
+    "unsupportedRequirements": [],
+    "actualMismatches": [
+      "The most recent full-time titles center on AI implementation, product strategy, and UX rather than account management, although direct client leadership continued across that work."
+    ],
+    "missingEvidence": [
+      "No direct tourism-board, destination-marketing, or travel-media account experience is documented.",
+      "Editorial and Ad Operations are not named as owned disciplines in the source evidence.",
+      "The resume shows international stakeholder work but not a continuing portfolio of international clients across multiple time zones."
+    ],
+    "coverLetterBridge": {
+      "status": "not-needed",
+      "rationale": "The resume directly proves the role's operating center through eight years of account leadership, integrated campaign execution, day-to-day client contact, project coordination, reporting, and cross-functional delivery. The travel-industry gap is preferred rather than required, so a cover letter is not needed to make the fit credible."
+    },
+    "recommendation": "Proceed with a tailored Account Leadership resume and a sealed Lonely Planet showcase. Lead with direct agency account progression and integrated campaign delivery; keep later product, UX, analytics, and AI work as the supporting layer."
+  },
+  "positioning": {
+    "laneId": "client-account-delivery",
+    "targetIdentity": "account manager",
+    "employerNeed": "Bring sold partnership programs to life by keeping clients, timelines, approvals, reporting, and cross-functional teams aligned from kickoff through wrap-up.",
+    "bridgeType": "direct",
+    "applicationStrategy": "direct",
+    "bridgeThesis": "the day-to-day link between clients and cross-functional teams",
+    "proofIds": [
+      "addition:rosetta-prevenar-client-contact",
+      "addition:fcb-nuvigil-client-operations",
+      "account-management-03"
+    ],
+    "remainingGap": null
+  },
+  "coverLetter": null,
+  "resume": {
+    "foundationId": "wally-mostafa-resume-2026-07-03",
+    "compositionMode": "profile-complete",
+    "layoutDensity": "compact",
+    "summary": "Account manager with eight years of agency experience leading Fortune 500 client relationships and integrated campaigns across television, digital, social, print, radio, outdoor, and in-office channels. I managed budgets up to $20M, served as the day-to-day link between clients and cross-functional teams, and kept briefs, timelines, approvals, vendors, and reporting aligned. Since then, product, UX, analytics, and AI implementation work have sharpened how I turn feedback into clear next steps and keep complex delivery moving.",
+    "skillIds": [
+      "account-management-client-leadership",
+      "program-project-delivery",
+      "healthcare-marketing-strategy",
+      "consultative-sales-solution-delivery"
+    ],
+    "skills": [
+      {
+        "label": "Account Management & Client Leadership",
+        "description": "Client relationships, budgets up to $20M, briefs, scopes, timelines, status and financial reporting, vendor coordination, and cross-functional delivery"
+      },
+      {
+        "label": "Program & Project Delivery",
+        "description": "Scoping, requirements, timelines, review routing, team coordination, risk visibility, and build-ready handoff across product, design, and client teams"
+      },
+      {
+        "label": "Healthcare Marketing & Brand Strategy",
+        "description": "Brand planning, campaign and digital strategy, MLR review, patient and HCP experiences, and regulated multi-channel delivery"
+      },
+      {
+        "label": "Consultative Sales & Solution Delivery",
+        "description": "Discovery-led solution design, POCs, demo narratives, client translation, and product recommendations tied to business needs"
+      }
+    ],
+    "experienceSections": [
+      {
+        "heading": "Account Management Experience",
+        "roleIds": [
+          "account-management"
+        ]
+      },
+      {
+        "heading": "Most Recent Experience",
+        "roleIds": [
+          "hedgehox",
+          "one-block-away",
+          "kinesso",
+          "omnicom",
+          "heartbeat"
+        ]
+      }
+    ],
+    "awards": [
+      {
+        "label": "Indigo Awards 2023",
+        "detail": "Design System & Data Visualization: 3x Gold, 2x Silver",
+        "href": "https://www.indigoaward.com/winners/6748"
+      },
+      {
+        "label": "Indigo Awards 2022",
+        "detail": "Digital Audit Experience: 2x Gold, 2x Silver",
+        "href": "https://www.indigoaward.com/winners/4629"
+      },
+      {
+        "label": "Red Dot Awards 2021",
+        "detail": "Brands & Communication Design",
+        "href": "https://www.red-dot.org/project/dxa-digital-experience-audit-55219"
+      },
+      {
+        "label": "Manny Award 2013",
+        "detail": "Best Unbranded Campaign, \"Get Your Shift Together\""
+      },
+      {
+        "label": "Pharma Choice Awards 2011",
+        "detail": "Silver Consumer Print, Silver HCP Sales Aid, Bronze HCP Mobile Site"
+      }
+    ],
+    "roles": {
+      "hedgehox": [
+        "Built Scope Generator for agency finance and operations teams to manage regional rate cards, brands, sub-brands, and natural-language scope changes",
+        "Secured an investor for proprietary Claims Detection software by building the functional POC, shaping the demo story, and iterating with investors",
+        "Translate client and agency needs into working tools for claim review, brief intake, scoping, review routing, submission capture, and FDA signal monitoring",
+        "Designed human-in-the-loop Claims Detector workflows that identify promotional claims, surface evidence gaps, and pre-populate audit-ready annotations before review"
+      ],
+      "one-block-away": [
+        "Lead client discovery and turn unclear business questions into testable product concepts, working POCs, demo flows, and roadmap decisions",
+        "Built ListingPal's AI listing-generation POC and landing page, turning basic property inputs into listing copy, social posts, ad copy, styling direction, and MLS/SEO-ready language in under 90 seconds",
+        "Built WeReady's Bailey Intelligence dashboard, translating founder inputs, GitHub signals, source health, risk scoring, and evidence trails into startup-readiness workflows",
+        "Own product strategy, UX, AI workflow design, front-end build, backend logic, demo readiness, and client iteration from first ask through working prototype",
+        "Currently building the website and sponsor strategy for a Tunisia youth soccer program, positioning the project for player advancement, community support, and donor outreach"
+      ],
+      "kinesso": [
+        "Scaled product design from 2 to 30 people across the US and Poland for enterprise analytics used by 7,000+ users across 22 white-label brands",
+        "Led UX and design-system strategy for MIE data visualization, dashboard building, brand theming, and reusable analytics components",
+        "Built the Digital Experience Audit workflow for channel scoring, benchmarks, recommendations, visualization, and presentation-ready client outputs"
+      ],
+      "omnicom": [
+        "Supported client teams as a freelance UX designer, using account-management experience to translate brand goals into clearer digital recommendations"
+      ],
+      "heartbeat": [
+        "Led UX research and experience strategy, translating stakeholder input, competitive audits, and user needs into digital product direction",
+        "Created journey maps, site maps, user flows, wireframes, and prototypes for customer-facing and internal brand-team experiences across regulated programs",
+        "Partnered with strategy, creative, account, and engineering teams to move UX recommendations from research findings into build-ready product and campaign experiences"
+      ],
+      "account-management": [
+        {
+          "title": "Account Supervisor / Digital Strategist",
+          "employer": "Scout Marketing",
+          "location": "San Diego, CA",
+          "dateRange": "Jun 2015 – Jul 2018",
+          "bullets": [
+            "Promoted from Senior Account Executive and took the lead on Jazz Pharmaceuticals XYREM consumer work: unbranded campaigns across digital, print, and in-office channels that lifted traffic and engagement on the disease-state site",
+            "Led the launch of the first unbranded social campaign on Facebook and YouTube for the brand and for Jazz, built around real patients telling their own stories",
+            "Oversaw an unbranded digital campaign bridging disease state and branded work; banners held a 0.37% click-through rate against a 0.17% industry benchmark and doubled qualified traffic to the brand site"
+          ]
+        },
+        {
+          "title": "Senior Account Executive",
+          "employer": "FCB Health",
+          "location": "New York, NY",
+          "dateRange": "Jun 2014 – Jun 2015",
+          "bullets": [
+            "One of two consumer account leads on the agency's largest pharma business, managing the Actavis Namenda XR direct-to-consumer launch and its $20M brand budget",
+            "Owned the broadcast workstream for three national television commercials in one year, covering market research, med-legal review, FDA preclearance, pre- and post-production, talent and location coordination, director searches, and network clearances; the spots drove a 45% increase in new-to-brand consumers within seven weeks",
+            "Led the launch of an unbranded Alzheimer's caregiver community site with support resources, sponsorship exploration, and public relations pull-through; also oversaw the account's Assistant Account Executive across in-office tactics, national print, and sales representative support materials"
+          ]
+        },
+        {
+          "title": "Senior Account Executive",
+          "employer": "Barker DZP",
+          "location": "New York, NY",
+          "dateRange": "Dec 2013 – May 2014",
+          "bullets": [
+            "Led the social campaign for a new Tough Mudder loyalty program and oversaw PDI and Nice-Pak, the agency's largest account, across print, digital, and social"
+          ]
+        },
+        {
+          "title": "Senior Account Executive",
+          "employer": "Cline Davis & Mann",
+          "location": "New York, NY",
+          "dateRange": "Sep 2013 – Dec 2013",
+          "bullets": [
+            "Used campaign metrics to shape Pfizer digital recommendations for Lipitor's online presence and loyalty program during loss of exclusivity, and piloted a Zoloft savings offer to test market response"
+          ]
+        },
+        {
+          "title": "Assistant Account Executive to Account Executive",
+          "employer": "FCB Health",
+          "location": "New York, NY",
+          "dateRange": "Apr 2011 – Sep 2013",
+          "bullets": [
+            "Managed development and execution of the unbranded Teva NUVIGIL campaign for National Night Shift Workers' Day across Times Square NASDAQ, national television, Xbox Live, radio, outdoor, and consumer journals, working through media, digital, and print vendors; the campaign won the 2013 Manny Award for Best Unbranded Campaign",
+            "Coordinated the NUVIGIL.com consumer rebrand across desktop and mobile with the agency's digital strategy and development teams, plus the launch of a CRM patient support program and its online patient community",
+            "Worked alongside the HCP team on the NUVIGIL.com HCP site and sales aid, both of which won 2011 Pharma Choice awards",
+            "Owned weekly client status and financial reporting plus OPDP and review-committee submissions across the $10M consumer business, and contributed to the annual strategic recommendations"
+          ]
+        },
+        {
+          "title": "Account Coordinator",
+          "employer": "RosettaWishbone",
+          "location": "New York, NY",
+          "dateRange": "Sep 2010 – Mar 2011",
+          "bullets": [
+            "Primary client contact across brand teams, national affiliates, and vendors on an award-winning global unbranded pneumococcal disease awareness campaign for the Pfizer Prevenar 13 adult pre-launch",
+            "Facilitated an Africa and Middle East advisory board in Dubai and owned project briefs, scopes of work, key opinion leader communications, and client status and financial reports"
+          ]
+        }
+      ]
+    },
+    "sourceBulletIds": {
+      "hedgehox": [
+        "hedgehox-05",
+        "hedgehox-01",
+        "hedgehox-03",
+        "hedgehox-02"
+      ],
+      "one-block-away": [
+        "one-block-away-01",
+        "one-block-away-02",
+        "one-block-away-03",
+        "one-block-away-04",
+        "one-block-away-05"
+      ],
+      "kinesso": [
+        "kinesso-01",
+        "kinesso-02",
+        "kinesso-03"
+      ],
+      "omnicom": [
+        "omnicom-01"
+      ],
+      "heartbeat": [
+        "heartbeat-01",
+        "heartbeat-02",
+        "heartbeat-03"
+      ],
+      "account-management": [
+        "addition:scout-xyrem-account-lead",
+        "addition:scout-xyrem-unbranded-social",
+        "addition:scout-xyrem-bridging-campaign",
+        "account-management-02",
+        "account-management-03",
+        "addition:fcb-namenda-caregiver-site",
+        "addition:barker-tough-mudder-pdi",
+        "addition:cdm-lipitor-zoloft-digital",
+        "account-management-01",
+        "addition:fcb-nuvigil-rebrand-crm",
+        "addition:fcb-nuvigil-hcp-collaboration",
+        "addition:fcb-nuvigil-client-operations",
+        "addition:rosetta-prevenar-client-contact",
+        "addition:rosetta-dubai-advisory"
+      ]
+    }
+  },
+  "hero": {
+    "eyebrow": "Lonely Planet | Selected Work",
+    "tags": [
+      "Integrated campaign delivery",
+      "Client services",
+      "Cross-functional coordination"
+    ],
+    "intro": "Here are a few recent projects that may be useful context alongside my resume for the Account Manager role. The resume covers my agency account background; this page offers a closer look at more recent work."
+  },
+  "contact": {
+    "prompt": "Email is the best way to reach me.",
+    "signoff": "Client service | integrated delivery | clear reporting"
+  },
+  "route": {
+    "presentation": "showcase",
+    "heroIntent": "resume-support",
+    "workHeading": "Selected work.",
+    "contactHeading": "Thanks for stopping by."
+  },
+  "copyReview": {
+    "humanizerVersion": "2.2.0",
+    "mode": "surface-only",
+    "status": "passed",
+    "reviewedAt": "2026-08-05T01:25:47.191Z",
+    "copySha256": "428235863d359233936185a78c1781360ab8de1b99996b1bb531cbf63fbbd9d2",
+    "preserved": [
+      "content",
+      "structure",
+      "claims",
+      "ending"
+    ],
+    "rewriteAuthorized": false,
+    "reviewMethod": "humanizer-skill",
+    "semanticPassAttested": true,
+    "staticChecksPassed": true,
+    "finalAntiAiPass": true,
+    "remainingTells": []
+  },
+  "constraints": {
+    "doNotClaim": [
+      "Direct tourism-board or destination-marketing account ownership",
+      "A travel-media client portfolio",
+      "Formal Editorial or Ad Operations management",
+      "Current day-to-day Account Manager title",
+      "Renewal, retention, quota, expansion-revenue, or contract-negotiation ownership",
+      "Salesforce or enterprise CRM administration"
+    ],
+    "blockedTerms": [
+      "tourism-board account owner",
+      "destination marketing expert",
+      "travel-media portfolio",
+      "Editorial manager",
+      "Ad Operations manager",
+      "currently managing accounts",
+      "renewal ownership",
+      "sales quota",
+      "contract negotiation",
+      "Salesforce"
+    ]
+  },
+  "privacy": {
+    "publicSafe": true,
+    "notes": "Contains only the public job description and public-safe evidence from the resume and portfolio. It excludes recruiter details, application answers, compensation boundaries, private eligibility information, and submission state."
+  },
+  "qa": {
+    "status": "qa-passed",
+    "builtAt": "2026-08-05T01:26:01.004Z",
+    "configInputSha256": "88392f08d6ab714bd8257cd2149e670c96807dc22106611f9f5d392f3a1ff91f",
+    "sourceResumeSha256": "2265313e78b596a2b37d6d8f9a95081e4321b4047f142a5f0ddf22449cab4b9c",
+    "resumeFoundation": {
+      "id": "wally-mostafa-resume-2026-07-03",
+      "sourcePdfSha256": "f9b05b6c3c134262b1af6c5734363daf4385cf335407a139779a37d138adf1aa"
+    },
+    "resumeBase": {
+      "mode": "account-leadership",
+      "sourceProfiles": [
+        {
+          "id": "account-leadership",
+          "version": 1
+        }
+      ],
+      "leadProfileId": "account-leadership",
+      "accountPresentation": "agency-progression",
+      "action": "tailor-to-jd",
+      "registryVersion": 1,
+      "registrySha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108"
+    },
+    "artifactHashes": {
+      "routeSha256": "343f7068d846dc77922ac5b97d20f9ef4a5e1cb35be03558d9e33faa2be5b175",
+      "resumePdfSha256": "7af1b3a6e0185d4b6296796b914c6991706a5f248916f9f6fc6cdaa48ef8dda9",
+      "coverLetterPdfSha256": null,
+      "coverLetterMarkdownSha256": null,
+      "scopedProjectSha256": {
+        "project-06.html": "fff11692794e4702f5b3528d148debf49822b681e461122b980bfd829956b416",
+        "project-02.html": "0422f9d883b95b8f92841aece0c46ad623a18a760a81ccfd8aacfd2595320ed6",
+        "project-03.html": "fef6cac610c99f8653d71578e92add3abc5b91e19523c6332f7211cd6ffd4a18"
+      }
+    },
+    "renderer": {
+      "browser": {
+        "name": "chrome-headless-shell",
+        "version": "Google Chrome for Testing 149.0.7827.55"
+      },
+      "htmlPath": "tmp/tailored-resumes/lonely-planet-account-manager.html",
+      "pdfPath": "output/pdf/Wally-Mostafa-Lonely-Planet-Account-Manager-Resume.pdf",
+      "fontWait": true,
+      "fontProfile": "portfolio-pdf"
+    },
+    "coverLetterRenderer": null,
+    "coverLetter": null,
+    "ats": {
+      "ok": true,
+      "pdfPath": "output/pdf/Wally-Mostafa-Lonely-Planet-Account-Manager-Resume.pdf",
+      "pageCount": 2,
+      "fileSize": 83409,
+      "annotations": [
+        {
+          "page": 1,
+          "uri": "mailto:wmostafa12@gmail.com"
+        },
+        {
+          "page": 1,
+          "uri": "https://linkedin.com/in/wallymo"
+        },
+        {
+          "page": 1,
+          "uri": "https://wallymo.github.io/lonely-planet-account-manager/"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/6748"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/4629"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.red-dot.org/project/dxa-digital-experience-audit-55219"
+        }
+      ],
+      "fontCompatibility": {
+        "type3Fonts": false
+      },
+      "coverage": [
+        {
+          "id": "account-management-tenure",
+          "requirement": "Bring at least three to five years of account management, client services, or integrated marketing experience.",
+          "priority": "hard-gate",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "eight years",
+            "Account Supervisor"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "eastern-time-hours",
+          "requirement": "Be able to work Eastern Standard Time hours for a contract running through the end of the year.",
+          "priority": "hard-gate",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "Raleigh, NC"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "integrated-campaign-execution",
+          "requirement": "Own branded-content, media, and integrated marketing campaigns from kickoff through reporting and wrap-up.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "integrated campaigns",
+            "national television",
+            "Facebook and YouTube"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "day-to-day-client-contact",
+          "requirement": "Serve as the primary day-to-day client contact, build trust, manage feedback, and communicate with senior stakeholders.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "primary client contact",
+            "Account Management & Client Leadership"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "project-management-and-approvals",
+          "requirement": "Lead kickoffs and coordinate briefs, timelines, deliverables, approvals, feedback, revisions, and solutions across multiple projects.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "Program & Project Delivery",
+            "weekly client status",
+            "review routing"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "cross-functional-campaign-teams",
+          "requirement": "Coordinate Editorial, Creative, Video, Social, Ad Operations, Production, Sales, Pre-Sales, and other internal stakeholders.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "cross-functional teams",
+            "strategy, creative, account, and engineering teams"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "reporting-performance-and-recaps",
+          "requirement": "Coordinate campaign reporting, performance recaps, recommendations, and final deliverables.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "client status and financial reporting",
+            "presentation-ready client outputs"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "international-and-multi-time-zone-work",
+          "requirement": "Work comfortably with international clients and partners across multiple time zones.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "contextual",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "Dubai"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "workflow-improvement",
+          "requirement": "Refine internal workflows and identify practical opportunities to improve operational efficiency.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "Scope Generator",
+            "Digital Experience Audit workflow"
+          ],
+          "missingTerms": []
+        }
+      ],
+      "failures": [],
+      "warnings": []
+    },
+    "humanizer": {
+      "status": "passed",
+      "version": "2.2.0",
+      "mode": "surface-only",
+      "reviewedAt": "2026-08-05T01:25:47.191Z",
+      "copySha256": "428235863d359233936185a78c1781360ab8de1b99996b1bb531cbf63fbbd9d2",
+      "reviewMethod": "humanizer-skill",
+      "semanticPassAttested": true,
+      "staticChecksPassed": true
+    },
+    "route": {
+      "viewports": [
+        {
+          "name": "desktop",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-06",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-02",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-03",
+          "errors": []
+        },
+        {
+          "name": "mobile",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-06",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-02",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-03",
+          "errors": []
+        }
+      ],
+      "errors": []
+    }
+  }
+}
