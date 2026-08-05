@@ -17,9 +17,9 @@
     "roleTitle": "Director, Product Design",
     "jobId": "d91cbdb3-bfdb-4ef9-87f9-c7d548a3c4e4",
     "jobUrl": "https://jobs.ashbyhq.com/bubble/d91cbdb3-bfdb-4ef9-87f9-c7d548a3c4e4",
-    "sourceChannel": "Bubble careers and Ashby job posting",
+    "sourceChannel": "User-supplied job description, Bubble careers, and live Ashby job posting",
     "dateCaptured": "2026-08-05",
-    "location": "New York City metro; hybrid; relocation assistance available",
+    "location": "Remote; NYC, New York or San Francisco, California listed; NYC collaboration prioritized; relocation assistance available",
     "employmentType": "Full time",
     "compensation": "$200K-$259K base salary plus equity",
     "atsVendor": "Ashby",
@@ -33,24 +33,24 @@
     "hardGateStatus": "pass",
     "hardGates": [
       {
-        "gate": "Be within the New York City metro area or use Bubble's stated relocation-assistance path",
+        "gate": "Current residence must be compatible with Bubble's remote role and NYC collaboration preference",
         "status": "pass",
         "requirementId": "nyc-hybrid-relocation-path",
-        "evidence": "The resume truthfully lists Raleigh, and the posting explicitly provides relocation assistance. Current residence therefore does not block the application package; relocation willingness and work authorization remain private readiness answers before submission."
+        "evidence": "The resume truthfully lists Raleigh, and the live posting accepts remote candidates while prioritizing NYC collaboration or relocation. Current residence does not block the application package; travel or relocation willingness and work authorization remain private readiness answers before submission."
       }
     ]
   },
   "requirements": [
     {
       "id": "nyc-hybrid-relocation-path",
-      "text": "Be within the New York City metro area for hybrid work or use Bubble's stated relocation-assistance path.",
+      "text": "Be compatible with Bubble's remote work model while recognizing its preference for regular New York City collaboration or relocation.",
       "priority": "hard-gate",
       "source": "jd",
       "confidence": "explicit",
       "evidenceStatus": "direct",
       "evidence": [
         "The resume lists Raleigh, North Carolina rather than New York City.",
-        "Bubble explicitly offers relocation assistance, so the current location has a stated resolution path."
+        "The live posting accepts remote candidates and offers relocation assistance while prioritizing candidates who can work from or travel regularly to New York City."
       ],
       "proofIds": [],
       "destinations": [
@@ -316,7 +316,7 @@
       "Specific hiring plans, interview loops, and senior-design recruiting outcomes.",
       "Direct reports, coaching cadence, performance reviews, and career-development examples.",
       "PLG SaaS growth metrics and named responsibility for activation, conversion, retention, or monetization.",
-      "Current New York City residence, relocation willingness, and United States work authorization must be confirmed privately before submission."
+      "United States work authorization, sponsorship needs, and willingness to travel regularly to New York City or relocate must be confirmed privately before submission."
     ],
     "coverLetterBridge": {
       "status": "recommended",
@@ -510,8 +510,8 @@
     "humanizerVersion": "2.2.0",
     "mode": "surface-only",
     "status": "passed",
-    "reviewedAt": "2026-08-05T14:25:51.771Z",
-    "copySha256": "bd6c3790ace8ea74f21a93b82a2456c439e97150cb973b9a3a0a0d23160b3e29",
+    "reviewedAt": "2026-08-05T14:30:38.840Z",
+    "copySha256": "4724bb2feb545a47e90a32f28506a91ae3d1a1d0c9606c4a762dd7850ccf88bb",
     "preserved": [
       "content",
       "structure",
@@ -556,8 +556,8 @@
   },
   "qa": {
     "status": "qa-passed",
-    "builtAt": "2026-08-05T14:26:01.977Z",
-    "configInputSha256": "d89fddc71f6fd00f667e08487c4aecaea72a1dc1805e9d1758a3e9e05fb252f0",
+    "builtAt": "2026-08-05T14:30:49.853Z",
+    "configInputSha256": "33b01c0d0e7f6b2f5d616283c04306cf879325da2ff4c35f8d881c9e5833204f",
     "sourceResumeSha256": "2265313e78b596a2b37d6d8f9a95081e4321b4047f142a5f0ddf22449cab4b9c",
     "resumeFoundation": {
       "id": "wally-mostafa-resume-2026-07-03",
@@ -579,8 +579,8 @@
     },
     "artifactHashes": {
       "routeSha256": "8d162516fa5fa9965e518bec731a5fddef6f6b45ddc815726aa09540d91aa9ce",
-      "resumePdfSha256": "c38ac1db3ff7e3f7813c915d84553f76874c9bf090f0769763da74d0ab5aedab",
-      "coverLetterPdfSha256": "7fe16bc6b7ff41a0fd08deff79d39498cf8d22c5a1664882c2ffb86c158cfff9",
+      "resumePdfSha256": "29be5d139299227bb7e3b3362e5d0f1ba18dad921cc365014f6484f069a653b0",
+      "coverLetterPdfSha256": "8f642c9fbcde4748e965ffacf8a515a2ac8dae410d92b3c61bb03880223dda13",
       "coverLetterMarkdownSha256": "453f05674c5c696a4a3e19fc4e9b01ec000df9d203f6f755a6857d181c3ab108",
       "scopedProjectSha256": {
         "project-07.html": "c1f423c044c80f3a73eb4d0d64748956ab471de32b1ed15e25f16f76986a5414",
@@ -663,7 +663,7 @@
       "coverage": [
         {
           "id": "nyc-hybrid-relocation-path",
-          "requirement": "Be within the New York City metro area for hybrid work or use Bubble's stated relocation-assistance path.",
+          "requirement": "Be compatible with Bubble's remote work model while recognizing its preference for regular New York City collaboration or relocation.",
           "priority": "hard-gate",
           "evidenceStatus": "direct",
           "matchMode": "contextual",
@@ -790,8 +790,8 @@
       "status": "passed",
       "version": "2.2.0",
       "mode": "surface-only",
-      "reviewedAt": "2026-08-05T14:25:51.771Z",
-      "copySha256": "bd6c3790ace8ea74f21a93b82a2456c439e97150cb973b9a3a0a0d23160b3e29",
+      "reviewedAt": "2026-08-05T14:30:38.840Z",
+      "copySha256": "4724bb2feb545a47e90a32f28506a91ae3d1a1d0c9606c4a762dd7850ccf88bb",
       "reviewMethod": "humanizer-skill",
       "semanticPassAttested": true,
       "staticChecksPassed": true
