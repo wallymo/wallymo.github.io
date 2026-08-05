@@ -376,14 +376,13 @@
   },
   "coverLetter": {
     "trigger": "bridge-recommended",
-    "date": "2026-08-04",
+    "date": "2026-08-05",
     "greeting": "Dear Inizio Evoke hiring team,",
     "paragraphs": [
-      "I am applying for the Senior Account Director role with Inizio Evoke. I spent eight years in healthcare and pharmaceutical agency account management, progressing from Account Coordinator to Account Supervisor. I led Fortune 500 client relationships, managed brand budgets up to $20M, and kept complex work moving across client, strategy, creative, production, media, and regulatory teams.",
-      "At FCB Health, I was one of two consumer account leads on the agency's largest pharmaceutical business. I managed the $20M Namenda XR direct-to-consumer launch and owned the broadcast workstream for three national television commercials in one year, including market research, med-legal review, FDA preclearance, production, talent and location coordination, and network clearances. The spots drove a 45% increase in new-to-brand consumers within seven weeks.",
-      "Earlier at FCB Health, I owned weekly client status and financial reporting, OPDP and review-committee submissions, and annual strategic recommendations across a $10M consumer business. At RosettaWishbone, I was the primary client contact across brand teams, national affiliates, and vendors, and I handled briefs, scopes of work, key opinion leader communication, client status, and financial reporting for an Africa and Middle East advisory board.",
-      "What I have done since has made me a stronger account leader. At Kinesso, I grew a distributed design team from 2 to 30 and led work for enterprise analytics used by 7,000+ people across 22 brands. Today, I build tools for pharmaceutical agencies that support claim review, brief intake, scoping, review routing, and MLR preparation. It changed how I guide teams and use data, with a much clearer view of where regulated workflows break down.",
-      "This role is a return to work I know well, at a level that benefits from what I learned afterward. I would welcome the chance to discuss how my agency account background and the work I have done since could support Inizio Evoke's clients and teams."
+      "I am applying for the Senior Account Director role with Inizio Evoke. During my second and most recent stint at FCB Health, I was one of two consumer account leads on the agency's largest pharmaceutical business. I managed the $20M Namenda XR direct-to-consumer launch and led the broadcast workstream for three national television commercials in one year. The work covered market research, med-legal review, FDA preclearance, production, talent and location coordination, and network clearances. The spots drove a 45% increase in new-to-brand consumers within seven weeks. Earlier at FCB Health, I supported the $10M NUVIGIL consumer business, owning weekly client status and financial reporting, OPDP submissions, multichannel campaign delivery, and annual strategic recommendations.",
+      "After FCB Health, I joined Scout Marketing as an Account Supervisor / Digital Strategist and led Jazz Pharmaceuticals' XYREM consumer work. I guided unbranded campaigns across digital, print, and in-office channels, including Jazz's first unbranded social campaign and a digital program that doubled qualified traffic to the brand site. Earlier in my account career at RosettaWishbone, I was the primary client contact across brand teams, national affiliates, and vendors. I also handled briefs, scopes of work, key opinion leader communication, client status, and financial reporting for an Africa and Middle East advisory board in Dubai.",
+      "Since my last titled account role, I have stayed close to clients while adding experience in team leadership, analytics, and regulated workflow design. At Kinesso, I grew a distributed design team from 2 to 30 and led work for enterprise analytics used by 7,000+ people across 22 brands. Today, I build tools for pharmaceutical agencies that support claim review, brief intake, scoping, review routing, and MLR preparation. I am coming back to account leadership with a clearer view of how teams work and where delivery breaks down. I am also better at turning data into recommendations clients can use.",
+      "The role makes sense for where I am now: it brings me back to healthcare account leadership with more experience building teams and improving delivery. I would welcome the chance to discuss how that background could support Inizio Evoke's clients and teams."
     ],
     "closing": "Sincerely,",
     "signature": "Wally Mostafa",
@@ -613,17 +612,14 @@
   },
   "copyReview": {
     "humanizerVersion": "2.2.0",
-    "mode": "surface-only",
+    "mode": "rewrite-requested",
     "status": "passed",
-    "reviewedAt": "2026-08-05T02:45:21.401Z",
-    "copySha256": "96d00bf94f8963382d3ed520e2f79712c92e47c049b618bc12f64d7d760a292e",
+    "reviewedAt": "2026-08-05T13:06:04.160Z",
+    "copySha256": "d4b04ae08f4f73bdb320f962faf1cac47c80e3d1623dabe2e2a0bbce37a905a1",
     "preserved": [
-      "content",
-      "structure",
-      "claims",
-      "ending"
+      "claims"
     ],
-    "rewriteAuthorized": false,
+    "rewriteAuthorized": true,
     "reviewMethod": "humanizer-skill",
     "semanticPassAttested": true,
     "staticChecksPassed": true,
@@ -661,8 +657,8 @@
   },
   "qa": {
     "status": "qa-passed",
-    "builtAt": "2026-08-05T02:45:37.482Z",
-    "configInputSha256": "e3dc562a897713053c02aaed2f91e91766570c2264eeaf9566d672491c6bc1c9",
+    "builtAt": "2026-08-05T13:06:19.317Z",
+    "configInputSha256": "5b4a802af0bf3d0324549cd0ea2cd29d9cb56f01d064925902d42b1bb4f5e93c",
     "sourceResumeSha256": "2265313e78b596a2b37d6d8f9a95081e4321b4047f142a5f0ddf22449cab4b9c",
     "resumeFoundation": {
       "id": "wally-mostafa-resume-2026-07-03",
@@ -684,9 +680,9 @@
     },
     "artifactHashes": {
       "routeSha256": "a27c0ab2cceafaf66e08bfa2cebd9791d4d46c75ec32acbf3f49575e6191991d",
-      "resumePdfSha256": "8775fd82f6e9d88b250e2aedceaae7c2780d925a0814c8f54aa06317ba1a17ea",
-      "coverLetterPdfSha256": "8be08bc984c3a9ce6b9b6077e0f6d7127b2211562c7db077fbd968ee8a350b8e",
-      "coverLetterMarkdownSha256": "e3d92fde8292f26c78c9d94ca38b0d155a00a955bf23dd3ee4bbaa4861dd3c30",
+      "resumePdfSha256": "30c13b38d869c9e5affc5213c1365dcbf99c0ebaf0e567379504d76c7f6b92c2",
+      "coverLetterPdfSha256": "38408c9359ae2ae51c783902ba982b5a3c98e9754188ae0f774cf5fd4720c890",
+      "coverLetterMarkdownSha256": "d4b3ca1b8f065bf4be96f447e993e33a3b54eb16eb1c8adb0891ea70562e3d1c",
       "scopedProjectSha256": {
         "project-01.html": "d1e7b2cb3c93b3320b6771729ae469a5eef124c85501adeea0638de4193f0bf4",
         "project-06.html": "df082e05e7648c402081e5ec5aedb243d65fcf50137371234c3f1e7efa3dd9eb",
@@ -717,7 +713,7 @@
       "ok": true,
       "failures": [],
       "pageCount": 1,
-      "sizeBytes": 24768,
+      "sizeBytes": 25688,
       "templateVersion": "real-chemistry-21grams-v1",
       "fonts": {
         "display": "Syne 800",
@@ -894,9 +890,9 @@
     "humanizer": {
       "status": "passed",
       "version": "2.2.0",
-      "mode": "surface-only",
-      "reviewedAt": "2026-08-05T02:45:21.401Z",
-      "copySha256": "96d00bf94f8963382d3ed520e2f79712c92e47c049b618bc12f64d7d760a292e",
+      "mode": "rewrite-requested",
+      "reviewedAt": "2026-08-05T13:06:04.160Z",
+      "copySha256": "d4b04ae08f4f73bdb320f962faf1cac47c80e3d1623dabe2e2a0bbce37a905a1",
       "reviewMethod": "humanizer-skill",
       "semanticPassAttested": true,
       "staticChecksPassed": true

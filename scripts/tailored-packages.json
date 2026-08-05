@@ -1551,36 +1551,9 @@
       "resumePdfPath": "output/pdf/Wally-Mostafa-Inizio-Evoke-Senior-Account-Director-Resume.pdf",
       "coverLetterPdfPath": "output/pdf/Wally-Mostafa-Inizio-Evoke-Senior-Account-Director-Cover-Letter.pdf",
       "coverLetterMarkdownPath": "output/pdf/Wally-Mostafa-Inizio-Evoke-Senior-Account-Director-Cover-Letter.md",
-      "publishStatus": "live-verified",
+      "publishStatus": "local-only",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-08-05T02:45:37.482Z",
-      "verification": {
-        "verifiedAt": "2026-08-05T02:47:09.184Z",
-        "routeUrl": "https://wallymo.github.io/inizio-evoke-senior-account-director/",
-        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-Inizio-Evoke-Senior-Account-Director-Resume.pdf",
-        "configUrl": "https://wallymo.github.io/scripts/packages/inizio-evoke-senior-account-director.json",
-        "projectUrls": [
-          "https://wallymo.github.io/inizio-evoke-senior-account-director/project-01.html",
-          "https://wallymo.github.io/inizio-evoke-senior-account-director/project-06.html",
-          "https://wallymo.github.io/inizio-evoke-senior-account-director/project-03.html"
-        ],
-        "configSha256": "b00a0675be87c52d5c630cbcb0ed7cbb70abc333dc76591c205d1b75c23b0bd1",
-        "pdfSha256": "8775fd82f6e9d88b250e2aedceaae7c2780d925a0814c8f54aa06317ba1a17ea",
-        "resumeBaseProfilesUrl": "https://wallymo.github.io/scripts/resume-base-profiles.json",
-        "resumeBaseProfilesSha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108",
-        "coverLetterPdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-Inizio-Evoke-Senior-Account-Director-Cover-Letter.pdf",
-        "coverLetterMarkdownUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-Inizio-Evoke-Senior-Account-Director-Cover-Letter.md",
-        "coverLetterPdfSha256": "8be08bc984c3a9ce6b9b6077e0f6d7127b2211562c7db077fbd968ee8a350b8e",
-        "coverLetterMarkdownSha256": "e3d92fde8292f26c78c9d94ca38b0d155a00a955bf23dd3ee4bbaa4861dd3c30",
-        "routeSha256": "a27c0ab2cceafaf66e08bfa2cebd9791d4d46c75ec32acbf3f49575e6191991d",
-        "scopedProjectSha256": {
-          "project-01.html": "d1e7b2cb3c93b3320b6771729ae469a5eef124c85501adeea0638de4193f0bf4",
-          "project-06.html": "df082e05e7648c402081e5ec5aedb243d65fcf50137371234c3f1e7efa3dd9eb",
-          "project-03.html": "67bf792e9d79fa21c78b92b8b186c523cc2b9aa0b1dcb0d4e28b40a44c6eb789"
-        },
-        "configInputSha256": "e3dc562a897713053c02aaed2f91e91766570c2264eeaf9566d672491c6bc1c9",
-        "qaBuiltAt": "2026-08-05T02:45:37.482Z"
-      }
+      "builtAt": "2026-08-05T13:06:19.317Z"
     },
     {
       "workflowVersion": 2,
