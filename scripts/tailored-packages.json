@@ -1745,11 +1745,38 @@
         "project-03.html"
       ],
       "resumePdfPath": "output/pdf/Wally-Mostafa-Lonely-Planet-Account-Manager-Resume.pdf",
-      "publishStatus": "local-only",
+      "publishStatus": "live-verified",
       "qaStatus": "qa-passed",
       "builtAt": "2026-08-05T01:38:23.796Z",
       "coverLetterPdfPath": "output/pdf/Wally-Mostafa-Lonely-Planet-Account-Manager-Cover-Letter.pdf",
-      "coverLetterMarkdownPath": "output/pdf/Wally-Mostafa-Lonely-Planet-Account-Manager-Cover-Letter.md"
+      "coverLetterMarkdownPath": "output/pdf/Wally-Mostafa-Lonely-Planet-Account-Manager-Cover-Letter.md",
+      "verification": {
+        "verifiedAt": "2026-08-05T01:39:59.629Z",
+        "routeUrl": "https://wallymo.github.io/lonely-planet-account-manager/",
+        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-Lonely-Planet-Account-Manager-Resume.pdf",
+        "configUrl": "https://wallymo.github.io/scripts/packages/lonely-planet-account-manager.json",
+        "projectUrls": [
+          "https://wallymo.github.io/lonely-planet-account-manager/project-06.html",
+          "https://wallymo.github.io/lonely-planet-account-manager/project-02.html",
+          "https://wallymo.github.io/lonely-planet-account-manager/project-03.html"
+        ],
+        "configSha256": "bd9de9c7080765f021b41870ecb6784aebcc7aa2edb1c1b49c1c5e74132430ba",
+        "pdfSha256": "343661f46beaa8c9b7a41afe41436f778752a78141dd51900dc144bc3a4f7b3a",
+        "resumeBaseProfilesUrl": "https://wallymo.github.io/scripts/resume-base-profiles.json",
+        "resumeBaseProfilesSha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108",
+        "coverLetterPdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-Lonely-Planet-Account-Manager-Cover-Letter.pdf",
+        "coverLetterMarkdownUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-Lonely-Planet-Account-Manager-Cover-Letter.md",
+        "coverLetterPdfSha256": "e0924948c3d57a543050450e9e7c5b7a7c71e673e401640166f6fa801c11eb8e",
+        "coverLetterMarkdownSha256": "58c040337ec471f0eaad993d9e00aeeb6ae00a42bc468bbb8c7e6c4f4ff3f9cb",
+        "routeSha256": "343f7068d846dc77922ac5b97d20f9ef4a5e1cb35be03558d9e33faa2be5b175",
+        "scopedProjectSha256": {
+          "project-06.html": "fff11692794e4702f5b3528d148debf49822b681e461122b980bfd829956b416",
+          "project-02.html": "0422f9d883b95b8f92841aece0c46ad623a18a760a81ccfd8aacfd2595320ed6",
+          "project-03.html": "fef6cac610c99f8653d71578e92add3abc5b91e19523c6332f7211cd6ffd4a18"
+        },
+        "configInputSha256": "8d80874cee0f5e9c4287fba32024065d0c40c743c24636d87a89d7c38dcd1369",
+        "qaBuiltAt": "2026-08-05T01:38:23.796Z"
+      }
     },
     {
       "slug": "m3-mi-client-success-consultant",
