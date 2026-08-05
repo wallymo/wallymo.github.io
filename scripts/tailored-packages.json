@@ -1551,9 +1551,36 @@
       "resumePdfPath": "output/pdf/Wally-Mostafa-Inizio-Evoke-Senior-Account-Director-Resume.pdf",
       "coverLetterPdfPath": "output/pdf/Wally-Mostafa-Inizio-Evoke-Senior-Account-Director-Cover-Letter.pdf",
       "coverLetterMarkdownPath": "output/pdf/Wally-Mostafa-Inizio-Evoke-Senior-Account-Director-Cover-Letter.md",
-      "publishStatus": "local-only",
+      "publishStatus": "live-verified",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-08-05T13:06:19.317Z"
+      "builtAt": "2026-08-05T13:06:19.317Z",
+      "verification": {
+        "verifiedAt": "2026-08-05T13:08:51.147Z",
+        "routeUrl": "https://wallymo.github.io/inizio-evoke-senior-account-director/",
+        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-Inizio-Evoke-Senior-Account-Director-Resume.pdf",
+        "configUrl": "https://wallymo.github.io/scripts/packages/inizio-evoke-senior-account-director.json",
+        "projectUrls": [
+          "https://wallymo.github.io/inizio-evoke-senior-account-director/project-01.html",
+          "https://wallymo.github.io/inizio-evoke-senior-account-director/project-06.html",
+          "https://wallymo.github.io/inizio-evoke-senior-account-director/project-03.html"
+        ],
+        "configSha256": "1f3f3372af31de969015006406ab3e75b35b35998aeb8a84fa9b023cf63e8d73",
+        "pdfSha256": "30c13b38d869c9e5affc5213c1365dcbf99c0ebaf0e567379504d76c7f6b92c2",
+        "resumeBaseProfilesUrl": "https://wallymo.github.io/scripts/resume-base-profiles.json",
+        "resumeBaseProfilesSha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108",
+        "coverLetterPdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-Inizio-Evoke-Senior-Account-Director-Cover-Letter.pdf",
+        "coverLetterMarkdownUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-Inizio-Evoke-Senior-Account-Director-Cover-Letter.md",
+        "coverLetterPdfSha256": "38408c9359ae2ae51c783902ba982b5a3c98e9754188ae0f774cf5fd4720c890",
+        "coverLetterMarkdownSha256": "d4b3ca1b8f065bf4be96f447e993e33a3b54eb16eb1c8adb0891ea70562e3d1c",
+        "routeSha256": "a27c0ab2cceafaf66e08bfa2cebd9791d4d46c75ec32acbf3f49575e6191991d",
+        "scopedProjectSha256": {
+          "project-01.html": "d1e7b2cb3c93b3320b6771729ae469a5eef124c85501adeea0638de4193f0bf4",
+          "project-06.html": "df082e05e7648c402081e5ec5aedb243d65fcf50137371234c3f1e7efa3dd9eb",
+          "project-03.html": "67bf792e9d79fa21c78b92b8b186c523cc2b9aa0b1dcb0d4e28b40a44c6eb789"
+        },
+        "configInputSha256": "5b4a802af0bf3d0324549cd0ea2cd29d9cb56f01d064925902d42b1bb4f5e93c",
+        "qaBuiltAt": "2026-08-05T13:06:19.317Z"
+      }
     },
     {
       "workflowVersion": 2,
