@@ -2529,10 +2529,10 @@
     {
       "workflowVersion": 2,
       "contractRevision": 7,
-      "slug": "onemain-lead-product-designer-catalyst",
+      "slug": "onemain-enterprise-product-design",
       "roleTitle": "OneMain Financial Enterprise Product Design",
-      "artifactStem": "OneMain-Lead-Product-Designer-Catalyst",
-      "configPath": "scripts/packages/onemain-lead-product-designer-catalyst.json",
+      "artifactStem": "OneMain-Enterprise-Product-Design",
+      "configPath": "scripts/packages/onemain-enterprise-product-design.json",
       "targetLane": "product-ux-design",
       "evidenceMode": "portfolio-primary",
       "fitClass": "strong",
@@ -2556,35 +2556,10 @@
         "project-04.html",
         "project-01.html"
       ],
-      "resumePdfPath": "output/pdf/Wally-Mostafa-OneMain-Lead-Product-Designer-Catalyst-Resume.pdf",
-      "publishStatus": "live-verified",
+      "resumePdfPath": "output/pdf/Wally-Mostafa-OneMain-Enterprise-Product-Design-Resume.pdf",
+      "publishStatus": "local-only",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-08-05T16:05:52.427Z",
-      "verification": {
-        "verifiedAt": "2026-08-05T16:10:10.744Z",
-        "routeUrl": "https://wallymo.github.io/onemain-lead-product-designer-catalyst/",
-        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-OneMain-Lead-Product-Designer-Catalyst-Resume.pdf",
-        "configUrl": "https://wallymo.github.io/scripts/packages/onemain-lead-product-designer-catalyst.json",
-        "projectUrls": [
-          "https://wallymo.github.io/onemain-lead-product-designer-catalyst/project-03.html",
-          "https://wallymo.github.io/onemain-lead-product-designer-catalyst/project-05.html",
-          "https://wallymo.github.io/onemain-lead-product-designer-catalyst/project-04.html",
-          "https://wallymo.github.io/onemain-lead-product-designer-catalyst/project-01.html"
-        ],
-        "configSha256": "97c3d7776cbba2dbe3d886a0d54420906f16f93729105d7470930ddd6edb6215",
-        "pdfSha256": "38ae517ae8d0cd6001aa0411181c418e5e5e981859d4221af558d87e599c2133",
-        "resumeBaseProfilesUrl": "https://wallymo.github.io/scripts/resume-base-profiles.json",
-        "resumeBaseProfilesSha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108",
-        "routeSha256": "e0870d3ebafeeffb6b4b30720edcc355739ecb7fa2a8390bb8ac851befa9b1c0",
-        "scopedProjectSha256": {
-          "project-03.html": "8f5f047e3f1412ec54cdf129e737441de238a84e9db68b562e5c5a5f7adf3e87",
-          "project-05.html": "a4e7b42a06726c27f64728d94e8e67ca4689f23260bec9d157ea4b23926c01b3",
-          "project-04.html": "f725205c25f965b25b2b84096f0c4aba2060b38e0ddf77ad83c5a03e3cee6ae0",
-          "project-01.html": "51883071d190504c2de16bed36f3bfcd11cbf585cf7979373aa7f9a9f12f5526"
-        },
-        "configInputSha256": "5ea643839ab27062c2b6eb6ab340aad3ca25243c2f9e649aed6adedd6c61f182",
-        "qaBuiltAt": "2026-08-05T16:05:52.427Z"
-      }
+      "builtAt": "2026-08-05T16:11:21.329Z"
     },
     {
       "workflowVersion": 2,

@@ -1,9 +1,9 @@
 {
   "workflowVersion": 2,
   "contractRevision": 7,
-  "slug": "onemain-lead-product-designer-catalyst",
+  "slug": "onemain-enterprise-product-design",
   "roleTitle": "OneMain Financial Enterprise Product Design",
-  "artifactStem": "OneMain-Lead-Product-Designer-Catalyst",
+  "artifactStem": "OneMain-Enterprise-Product-Design",
   "fitClass": "strong",
   "routeMode": "scoped-projects",
   "selectedProjects": [
@@ -602,8 +602,8 @@
   },
   "qa": {
     "status": "qa-passed",
-    "builtAt": "2026-08-05T16:05:52.427Z",
-    "configInputSha256": "5ea643839ab27062c2b6eb6ab340aad3ca25243c2f9e649aed6adedd6c61f182",
+    "builtAt": "2026-08-05T16:11:21.329Z",
+    "configInputSha256": "f7f2b1807daa7f3d003b9f7159f63bd4a6c95732d392052302da0aa5db0d1ea6",
     "sourceResumeSha256": "2265313e78b596a2b37d6d8f9a95081e4321b4047f142a5f0ddf22449cab4b9c",
     "resumeFoundation": {
       "id": "wally-mostafa-resume-2026-07-03",
@@ -624,15 +624,15 @@
       "registrySha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108"
     },
     "artifactHashes": {
-      "routeSha256": "e0870d3ebafeeffb6b4b30720edcc355739ecb7fa2a8390bb8ac851befa9b1c0",
-      "resumePdfSha256": "38ae517ae8d0cd6001aa0411181c418e5e5e981859d4221af558d87e599c2133",
+      "routeSha256": "814d03e3388fe4a98f7b091e23060e10ec7dca2b8e97230f5f1fa8ce49e885ad",
+      "resumePdfSha256": "24e2019ae6173711398f104e074c562dd0a543bf2ee4af1f317369309611f420",
       "coverLetterPdfSha256": null,
       "coverLetterMarkdownSha256": null,
       "scopedProjectSha256": {
-        "project-03.html": "8f5f047e3f1412ec54cdf129e737441de238a84e9db68b562e5c5a5f7adf3e87",
-        "project-05.html": "a4e7b42a06726c27f64728d94e8e67ca4689f23260bec9d157ea4b23926c01b3",
-        "project-04.html": "f725205c25f965b25b2b84096f0c4aba2060b38e0ddf77ad83c5a03e3cee6ae0",
-        "project-01.html": "51883071d190504c2de16bed36f3bfcd11cbf585cf7979373aa7f9a9f12f5526"
+        "project-03.html": "1dbf9927ea17230c07aaa90ceadfba151492547a2fadaf5503e7a21104be2930",
+        "project-05.html": "62630f66de217ec14f7c606f66331561b2185f36b2a83ad5042250eaec0028fe",
+        "project-04.html": "e646b1254c998dbcbc7995767f61d39d1804fc8756b72f367480d7827c0eef58",
+        "project-01.html": "fd09e4caeb12c97af13b24fa40136b2b51fe3be4014ef055c5065e2c07205e4c"
       }
     },
     "renderer": {
@@ -640,8 +640,8 @@
         "name": "chrome-headless-shell",
         "version": "Google Chrome for Testing 149.0.7827.55"
       },
-      "htmlPath": "tmp/tailored-resumes/onemain-lead-product-designer-catalyst.html",
-      "pdfPath": "output/pdf/Wally-Mostafa-OneMain-Lead-Product-Designer-Catalyst-Resume.pdf",
+      "htmlPath": "tmp/tailored-resumes/onemain-enterprise-product-design.html",
+      "pdfPath": "output/pdf/Wally-Mostafa-OneMain-Enterprise-Product-Design-Resume.pdf",
       "fontWait": true,
       "fontProfile": "portfolio-pdf"
     },
@@ -649,9 +649,9 @@
     "coverLetter": null,
     "ats": {
       "ok": true,
-      "pdfPath": "output/pdf/Wally-Mostafa-OneMain-Lead-Product-Designer-Catalyst-Resume.pdf",
+      "pdfPath": "output/pdf/Wally-Mostafa-OneMain-Enterprise-Product-Design-Resume.pdf",
       "pageCount": 2,
-      "fileSize": 72751,
+      "fileSize": 72746,
       "annotations": [
         {
           "page": 1,
@@ -663,7 +663,7 @@
         },
         {
           "page": 1,
-          "uri": "https://wallymo.github.io/onemain-lead-product-designer-catalyst/"
+          "uri": "https://wallymo.github.io/onemain-enterprise-product-design/"
         },
         {
           "page": 2,
