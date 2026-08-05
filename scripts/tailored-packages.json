@@ -2528,6 +2528,41 @@
     },
     {
       "workflowVersion": 2,
+      "contractRevision": 7,
+      "slug": "onemain-lead-product-designer-catalyst",
+      "roleTitle": "OneMain Financial Lead Product Designer, UX Design (Catalyst)",
+      "artifactStem": "OneMain-Lead-Product-Designer-Catalyst",
+      "configPath": "scripts/packages/onemain-lead-product-designer-catalyst.json",
+      "targetLane": "product-ux-design",
+      "evidenceMode": "portfolio-primary",
+      "fitClass": "strong",
+      "positioningLane": "product-ux-design",
+      "bridgeType": "direct",
+      "applicationStrategy": "direct",
+      "resumeBaseMode": "ai-product-implementation",
+      "resumeBaseLeadProfile": "ai-product-implementation",
+      "resumeBaseAction": "tailor-to-jd",
+      "accountPresentation": "consolidated",
+      "resumeBaseProfiles": [
+        {
+          "id": "ai-product-implementation",
+          "version": 1
+        }
+      ],
+      "routeMode": "scoped-projects",
+      "selectedProjects": [
+        "project-03.html",
+        "project-05.html",
+        "project-04.html",
+        "project-01.html"
+      ],
+      "resumePdfPath": "output/pdf/Wally-Mostafa-OneMain-Lead-Product-Designer-Catalyst-Resume.pdf",
+      "publishStatus": "local-only",
+      "qaStatus": "qa-passed",
+      "builtAt": "2026-08-05T15:56:38.276Z"
+    },
+    {
+      "workflowVersion": 2,
       "slug": "ox-director-user-experience",
       "roleTitle": "OX Director, User Experience",
       "artifactStem": "OX-Director-User-Experience",

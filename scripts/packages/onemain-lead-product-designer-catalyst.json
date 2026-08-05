@@ -1,0 +1,898 @@
+{
+  "workflowVersion": 2,
+  "contractRevision": 7,
+  "slug": "onemain-lead-product-designer-catalyst",
+  "roleTitle": "OneMain Financial Lead Product Designer, UX Design (Catalyst)",
+  "artifactStem": "OneMain-Lead-Product-Designer-Catalyst",
+  "fitClass": "strong",
+  "routeMode": "scoped-projects",
+  "selectedProjects": [
+    "project-03.html",
+    "project-05.html",
+    "project-04.html",
+    "project-01.html"
+  ],
+  "job": {
+    "company": "OneMain Financial",
+    "roleTitle": "Lead Product Designer, UX Design (Catalyst)",
+    "jobId": "R2604-50582",
+    "jobUrl": "https://jobs.onemainfinancial.com/job/baltimore/lead-product-designer-ux-design-catalyst/21631/94442160224",
+    "sourceChannel": "Recruiter-led opportunity; job description captured from the live official OneMain Financial posting",
+    "dateCaptured": "2026-08-05",
+    "location": "Baltimore, MD; hybrid Tuesday through Thursday",
+    "employmentType": "Full time",
+    "compensation": "$150K-$165K target base salary for Baltimore, plus performance-based compensation",
+    "atsVendor": "Workday",
+    "rawJd": "About OneMain Financial\n\nOneMain Financial is the largest non-bank lender in the U.S., serving millions of customers with responsible, transparent credit solutions. We are a digital-focused company transforming how customers interact with financial products and how our teams deliver those experiences.\n\nAbout the Digital Team\n\nThe Digital team is focused on modernizing our platforms and transforming both customer and team member experiences. A key initiative within this effort is Catalyst, a multi-year transformation to modernize our core origination and servicing platform and enable scalable, efficient, and intuitive workflows.\n\nAbout the Role\n\nWe are seeking a Lead Designer, User Experience Design to play a critical role in shaping experiences within Catalyst. This is a senior individual contributor role focused on designing complex, end-to-end workflows that support internal users across the loan lifecycle.\n\nYou will partner closely with Product, Engineering, and business stakeholders to translate complex systems into intuitive, scalable experiences. This role combines strong execution with ownership, requiring the ability to influence decisions, simplify complexity, and deliver measurable outcomes.\n\nKey Responsibilities\n\nDesign and deliver end-to-end user experiences across complex operational workflows. Simplify highly integrated systems into intuitive, efficient, and scalable designs. Drive measurable outcomes through data-informed design decisions and iteration. Partner with Product, Engineering, Risk, and Operations to influence decisions and align on solutions. Design within a regulated environment, balancing usability with compliance requirements. Contribute to and extend design systems to ensure consistency across experiences. Ensure accessibility and inclusive design standards are met.\n\nRequirements\n\nBachelor's degree in Design, Human-Computer Interaction, or related field, or equivalent experience. 7+ years of experience in Product Design, UX Design, or related fields. Proven experience designing end-to-end experiences across complex systems or workflows. Strong systems thinking and ability to simplify complex problems. Experience influencing product and engineering decisions in cross-functional environments. Experience working in Agile or similar delivery models. Strong communication and stakeholder management skills. Experience using AI-powered tools in day-to-day design work and applying sound judgment to identify where AI can add meaningful value to user experiences and team workflows.\n\nPreferred Skills\n\nExperience designing internal tools, operational platforms, or workflow-based systems. Experience in financial services or other regulated industries. Experience working within platform-based ecosystems. Familiarity with AI-powered tools or emerging technologies.\n\nLocation\n\nThis role is hybrid. Candidates should be located within a commutable distance to the Baltimore office and work in the office Tuesday, Wednesday, and Thursday."
+  },
+  "classification": {
+    "targetLane": "product-ux-design",
+    "evidenceMode": "portfolio-primary",
+    "primarySource": "The portfolio directly shows complex enterprise workflow UX, research across more than 20 products, scalable design systems, data-informed iteration, accessibility, regulated product work, and current AI-assisted product design.",
+    "supportingSource": "The resume confirms nearly eight years in UX and product design, product-design team growth from 2 to 30, enterprise scale across 7,000+ users and 22 white-label brands, cross-functional delivery, and 15 years of stakeholder-facing digital work.",
+    "hardGateStatus": "pass",
+    "hardGates": [
+      {
+        "gate": "Bachelor's degree in a related field or equivalent experience",
+        "status": "pass",
+        "requirementId": "degree-or-equivalent-experience",
+        "evidence": "The resume documents a Rutgers University BA plus nearly eight years of directly relevant UX and product-design experience. The posting explicitly accepts equivalent experience."
+      },
+      {
+        "gate": "7+ years in Product Design, UX Design, or related fields",
+        "status": "pass",
+        "requirementId": "seven-plus-years-product-ux",
+        "evidence": "Directly titled UX and product-design work runs from August 2018 through current hands-on product design and implementation work, supported by earlier digital client delivery."
+      },
+      {
+        "gate": "Hybrid work within commuting distance of Baltimore Tuesday through Thursday",
+        "status": "pass",
+        "requirementId": "baltimore-hybrid-schedule",
+        "evidence": "The recruiter is managing location logistics, and the user explicitly instructed that relocation should not block the package. The resume retains Raleigh, NC and makes no Baltimore-residency or commutability claim."
+      }
+    ]
+  },
+  "requirements": [
+    {
+      "id": "degree-or-equivalent-experience",
+      "text": "Bring a bachelor's degree in Design, Human-Computer Interaction, or a related field, or equivalent experience.",
+      "priority": "hard-gate",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The resume lists a Rutgers University BA and nearly eight years of directly relevant UX and product-design experience."
+      ],
+      "proofIds": [],
+      "destinations": [
+        "summary",
+        "experience"
+      ],
+      "resumeTerms": [
+        "BA",
+        "product design"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "seven-plus-years-product-ux",
+      "text": "Bring 7+ years of experience in Product Design, UX Design, or related fields.",
+      "priority": "hard-gate",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Directly titled UX and product-design work runs from August 2018 through current hands-on product design and implementation work."
+      ],
+      "proofIds": [
+        "heartbeat-01",
+        "kinesso-01",
+        "one-block-away-04"
+      ],
+      "destinations": [
+        "summary",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "nearly eight years",
+        "UX and product design"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "baltimore-hybrid-schedule",
+      "text": "Work within commuting distance of Baltimore in the office Tuesday through Thursday.",
+      "priority": "hard-gate",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The recruiter is managing location logistics, and the resume truthfully retains Raleigh, NC without claiming Baltimore residence or commutability."
+      ],
+      "proofIds": [],
+      "destinations": [
+        "application-answer"
+      ],
+      "resumeTerms": [
+        "Raleigh, NC"
+      ],
+      "matchMode": "contextual"
+    },
+    {
+      "id": "complex-operational-workflows",
+      "text": "Design end-to-end experiences across complex operational workflows and integrated systems.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The enterprise portfolio covers analytics, audit, dashboard, navigation, theming, and governance workflows used across a 20+ product suite.",
+        "Current regulated AI work covers claim review, brief intake, scoping, routing, submission capture, and FDA signal monitoring."
+      ],
+      "proofIds": [
+        "kinesso-02",
+        "kinesso-03",
+        "hedgehox-02",
+        "hedgehox-03"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "complex workflows",
+        "enterprise analytics",
+        "workflow UX"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "systems-thinking-and-scale",
+      "text": "Use systems thinking to simplify complex problems into intuitive, efficient, and scalable designs.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Kinesso work connected data visualization, dashboard building, brand theming, navigation, personalization, and reusable components across enterprise products used by 7,000+ people and 22 brands.",
+        "The Splash Design System case study documents reusable system patterns across more than 20 products."
+      ],
+      "proofIds": [
+        "kinesso-01",
+        "kinesso-02"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "systems thinking",
+        "7,000+ users",
+        "22 white-label brands"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "data-informed-design-and-iteration",
+      "text": "Drive outcomes through data-informed design decisions, research, and iteration.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The User Research case study documents interviews, Typeform feedback, Useberry prototype testing, Heap behavioral data, beta groups, standardized findings, and recurring feedback loops across more than 20 products.",
+        "Current product work uses client feedback and working prototypes to guide product and roadmap decisions."
+      ],
+      "proofIds": [
+        "addition:onemain-research-discipline",
+        "one-block-away-01",
+        "one-block-away-04"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "user research",
+        "prototype testing",
+        "behavioral data",
+        "user feedback loops"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "cross-functional-influence-and-delivery",
+      "text": "Influence Product, Engineering, Risk, Operations, and business stakeholders in Agile or similar delivery models.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Resume evidence shows product, engineering, strategy, creative, account, operations, and client collaboration from research and requirements through build-ready handoff.",
+        "The documented delivery model is iterative and cross-functional, although named Agile ceremonies and tools are not stated."
+      ],
+      "proofIds": [
+        "hedgehox-03",
+        "one-block-away-04",
+        "heartbeat-03",
+        "account-management-03"
+      ],
+      "destinations": [
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "cross-functional delivery",
+        "product and engineering teams",
+        "build-ready handoff"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "regulated-design-and-compliance",
+      "text": "Design within a regulated environment while balancing usability and compliance requirements.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Eleven years of pharma and healthcare work include FDA, HIPAA, med-legal, and MLR workflows for client, reviewer, patient, HCP, and brand-team users.",
+        "Claims Detector makes compliance review and evidence gaps visible before MLR submission."
+      ],
+      "proofIds": [
+        "hedgehox-02",
+        "heartbeat-02",
+        "account-management-02"
+      ],
+      "destinations": [
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "regulated",
+        "compliance",
+        "FDA",
+        "MLR"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "design-systems-accessibility-inclusive-design",
+      "text": "Extend design systems and meet accessibility and inclusive-design standards.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The resume and portfolio show enterprise design-system strategy, reusable components, navigation, personalization, system-adherence tooling, accessibility direction, and WCAG knowledge.",
+        "The work earned Indigo and Red Dot recognition across design systems, visualization, digital tools, and interaction."
+      ],
+      "proofIds": [
+        "kinesso-02",
+        "kinesso-04"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "design systems",
+        "accessibility",
+        "WCAG"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "ai-powered-design-judgment",
+      "text": "Use AI-powered tools in design work and judge where AI can improve user experiences and team workflows.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Current work owns AI product strategy, UX, model workflow design, front-end and backend decisions, human-review patterns, prototype validation, and client iteration.",
+        "The Pharma AI Platform case study shows bounded use of AI across regulated review, scoping, routing, and monitoring workflows."
+      ],
+      "proofIds": [
+        "hedgehox-02",
+        "hedgehox-03",
+        "one-block-away-04"
+      ],
+      "destinations": [
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "AI Implementation & Workflow Design",
+        "human review",
+        "AI workflow design"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "internal-tools-platform-ecosystems",
+      "text": "Bring experience with internal tools, operational platforms, workflow-based systems, or platform ecosystems.",
+      "priority": "preferred",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Enterprise work includes an analytics and workflow suite used by 7,000+ people across 22 white-label brands, supported by reusable research and design-system practices.",
+        "Regulated AI tools support internal agency finance, operations, review, and compliance teams."
+      ],
+      "proofIds": [
+        "kinesso-01",
+        "kinesso-02",
+        "hedgehox-03",
+        "hedgehox-05"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "enterprise platforms",
+        "internal brand-team experiences",
+        "workflow-based systems"
+      ],
+      "matchMode": "exact"
+    }
+  ],
+  "fitGate": {
+    "resumeBase": {
+      "mode": "ai-product-implementation",
+      "sourceProfiles": [
+        {
+          "id": "ai-product-implementation",
+          "version": 1
+        }
+      ],
+      "leadProfileId": "ai-product-implementation",
+      "accountPresentation": "consolidated",
+      "action": "tailor-to-jd",
+      "rationale": "The role's operating center is enterprise product design across workflows, research, design systems, accessibility, AI-assisted practice, and cross-functional delivery. The AI/Product Implementation base carries the direct UX, research, regulated-product, enterprise-system, and implementation evidence; account leadership remains supporting context."
+    },
+    "supportedOverlap": [
+      "Nearly eight years of hands-on UX and product-design work across enterprise, regulated, and AI products.",
+      "Enterprise product-design leadership at a platform suite used by 7,000+ people across 22 white-label brands.",
+      "Product-design team growth from 2 to 30 across the United States and Poland.",
+      "A user research discipline built across more than 20 products with Figma documentation, prototype testing, behavioral data, and recurring feedback loops.",
+      "Design-system leadership across reusable components, navigation, theming, personalization, system adherence, and accessibility.",
+      "Current regulated AI product work across complex workflows, human review, working prototypes, and cross-functional handoff."
+    ],
+    "unsupportedRequirements": [
+      "Direct financial-services or lending-product design experience is not documented.",
+      "Named Agile ceremonies, sprint ownership, Jira, or similar delivery tooling is not documented.",
+      "A specific business KPI or operational-efficiency result tied to a launched workflow is not documented."
+    ],
+    "actualMismatches": [],
+    "missingEvidence": [
+      "Loan-origination and servicing-domain work.",
+      "A named Agile delivery cadence or tool set.",
+      "A measured business or operational KPI tied to a specific product-design release.",
+      "Formal accessibility certification is not documented."
+    ],
+    "coverLetterBridge": {
+      "status": "not-needed",
+      "rationale": "This is a direct portfolio-primary fit. The selected work already proves complex enterprise workflow UX, research, design systems, regulated delivery, accessibility, cross-functional influence, and practical AI use. Financial-services experience is preferred rather than required, so a cover letter is not needed to make the core case."
+    },
+    "recommendation": "Proceed as strong. Lead with enterprise workflow UX, research and design-system practice, regulated product delivery, accessibility, and practical AI use. Keep direct lending experience, named Agile tooling, formal accessibility certification, and unmeasured business outcomes outside the claim set."
+  },
+  "positioning": {
+    "laneId": "product-ux-design",
+    "targetIdentity": "Lead product designer",
+    "employerNeed": "Modernize complex loan-origination and servicing workflows for internal users across a regulated platform.",
+    "bridgeType": "direct",
+    "applicationStrategy": "direct",
+    "bridgeThesis": "bring systems thinking, user research, and design systems to complex workflows and scalable operational platforms",
+    "proofIds": [
+      "kinesso-01",
+      "kinesso-02",
+      "hedgehox-02"
+    ],
+    "remainingGap": null
+  },
+  "coverLetter": null,
+  "resume": {
+    "foundationId": "wally-mostafa-resume-2026-07-03",
+    "compositionMode": "foundation-complete",
+    "layoutDensity": "compact",
+    "summary": "Lead product designer with nearly eight years in UX and product design, backed by 15 years across enterprise platforms, regulated digital work, and client strategy. I scaled product design from 2 to 30, built research and design-system practices across 20+ products, and shaped enterprise analytics used by 7,000+ people across 22 white-label brands. I bring systems thinking, user research, and design systems to complex workflows and scalable operational platforms. My work supports cross-functional delivery with product and engineering teams, turning user evidence into accessible tools people can use.",
+    "skillIds": [
+      "enterprise-ux-design-systems",
+      "research-experience-strategy",
+      "program-project-delivery",
+      "regulated-healthcare-client-delivery",
+      "ai-implementation-workflow-design"
+    ],
+    "skills": [
+      {
+        "label": "Enterprise UX & Design Systems",
+        "description": "Team scaling (2 to 30), enterprise analytics, workflow UX, data visualization, component libraries, and accessibility (WCAG)"
+      },
+      {
+        "label": "Research & Experience Strategy",
+        "description": "Stakeholder interviews, competitive audits, journey maps, user flows, wireframes, prototypes, usability testing, and research-led product direction"
+      },
+      {
+        "label": "Program & Project Delivery",
+        "description": "Scoping, requirements, timelines, review routing, team coordination, risk visibility, and build-ready handoff across product, design, and client teams"
+      },
+      {
+        "label": "Regulated Healthcare & Client Delivery",
+        "description": "11 years across pharma/healthcare communications, FDA/HIPAA/MLR workflows, HCP/patient UX, client workshops, and stakeholder adoption"
+      },
+      {
+        "label": "AI Implementation & Workflow Design",
+        "description": "Governed LLM/VLM workflows, multimodal review, RAG/knowledge bases, prompt-defined criteria, model orchestration, and human review surfaces"
+      }
+    ],
+    "awards": [
+      {
+        "label": "Indigo Awards 2023",
+        "detail": "Design System & Data Visualization: 3x Gold, 2x Silver",
+        "href": "https://www.indigoaward.com/winners/6748"
+      },
+      {
+        "label": "Indigo Awards 2022",
+        "detail": "Digital Audit Experience: 2x Gold, 2x Silver",
+        "href": "https://www.indigoaward.com/winners/4629"
+      },
+      {
+        "label": "Red Dot Awards 2021",
+        "detail": "Brands & Communication Design",
+        "href": "https://www.red-dot.org/project/dxa-digital-experience-audit-55219"
+      }
+    ],
+    "roles": {
+      "hedgehox": [
+        "Designed compliance review workflows that identify promotional claims, surface evidence gaps, and pre-populate audit-ready annotations before MLR submission",
+        "Turn pharma agency needs into product requirements and working AI tools for claim review, brief intake, scoping, review routing, submission capture, and FDA signal monitoring",
+        "Built Scope Generator for pharma agency finance and operations teams to manage regional rate cards, brands, sub-brands, and natural-language scope changes",
+        "Developed FDA Warning Tool concepts that connect warning-letter patterns to content-risk guidance for pharma teams",
+        "Secured an investor for proprietary Claims Detection software by building the functional POC, shaping the product story, and iterating with investors",
+        "Designed the full Xenagos Bio startup biopharma website from scratch, including investor-facing structure, scientific positioning, visual direction, and hidden design-system handoff"
+      ],
+      "one-block-away": [
+        "Lead client discovery and turn unclear business questions into testable product concepts, working POCs, demo flows, and roadmap decisions",
+        "Built ListingPal's AI listing-generation POC and landing page, turning basic property inputs into listing copy, social posts, ad copy, styling direction, and MLS/SEO-ready language in under 90 seconds",
+        "Built WeReady's Bailey Intelligence dashboard, translating founder inputs, GitHub signals, source health, risk scoring, and evidence trails into startup-readiness workflows",
+        "Own product strategy, UX, AI workflow design, front-end build, backend logic, demo readiness, and client iteration from first ask through working prototype",
+        "Currently building the website and sponsor strategy for a Tunisia youth soccer program, positioning the project for player advancement, community support, and donor outreach"
+      ],
+      "kinesso": [
+        "Scaled product design from 2 to 30 people across the United States and Poland for enterprise analytics used by 7,000+ users across 22 white-label brands",
+        "Built a user research discipline across 20+ products using repeatable methods, Figma documentation, prototype testing, behavioral data, and user feedback loops",
+        "Led UX and design-system strategy for enterprise SaaS data visualization, dashboard building, brand theming, navigation, personalization, and reusable analytics components",
+        "Built the Digital Experience Audit workflow for channel scoring, benchmarks, recommendations, visualization, and presentation-ready client outputs",
+        "Design-system and analytics work earned 5 Indigo Gold, 4 Indigo Silver, and Red Dot recognition"
+      ],
+      "omnicom": [
+        "Supported oncology accounts as a freelance UX designer, combining UX design and account-management experience to strengthen regulated healthcare work",
+        "Championed UX best practices across account, strategy, creative, and delivery conversations, translating brand goals into clearer user flows, content structure, and digital recommendations"
+      ],
+      "heartbeat": [
+        "Led UX research and experience strategy for pharma and healthcare work, translating stakeholder input, competitive audits, and user needs into digital product direction",
+        "Created journey maps, site maps, user flows, wireframes, and prototypes for patient, HCP, and internal brand-team experiences across regulated healthcare programs",
+        "Partnered with strategy, creative, account, and engineering teams to move UX recommendations from research findings into build-ready product and campaign experiences"
+      ],
+      "account-management": [
+        "8 years managing Fortune 500 pharma and healthcare clients and brand budgets up to $20M across CNS/neurology, psychiatry, cardiovascular/metabolic, and sleep/wakefulness brands including NUVIGIL, Namenda XR, Lipitor, and Zoloft",
+        "One of two account consumer leads on FCB Health's largest pharma account across television, radio, digital, gaming, Times Square, unbranded campaigns, brand planning, and MLR review",
+        "Translated client and brand strategy into briefs, creative feedback, production requirements, timelines, and MLR-ready delivery across account, creative, UX, and development teams"
+      ]
+    },
+    "sourceBulletIds": {
+      "hedgehox": [
+        "hedgehox-02",
+        "hedgehox-03",
+        "hedgehox-05",
+        "hedgehox-06",
+        "hedgehox-01",
+        "hedgehox-04"
+      ],
+      "one-block-away": [
+        "one-block-away-01",
+        "one-block-away-02",
+        "one-block-away-03",
+        "one-block-away-04",
+        "one-block-away-05"
+      ],
+      "kinesso": [
+        "kinesso-01",
+        "addition:onemain-research-discipline",
+        "kinesso-02",
+        "kinesso-03",
+        "kinesso-04"
+      ],
+      "omnicom": [
+        "omnicom-01",
+        "omnicom-02"
+      ],
+      "heartbeat": [
+        "heartbeat-01",
+        "heartbeat-02",
+        "heartbeat-03"
+      ],
+      "account-management": [
+        "account-management-01",
+        "account-management-02",
+        "account-management-03"
+      ]
+    }
+  },
+  "hero": {
+    "eyebrow": "OneMain Financial | Selected Work",
+    "tags": [
+      "Enterprise workflows",
+      "Design systems",
+      "User research",
+      "Regulated AI"
+    ],
+    "intro": "This page brings together four projects that may be useful alongside my resume for the Lead Product Designer, UX Design (Catalyst) role. The work centers on enterprise workflows and the research, systems, and regulated AI practice behind them."
+  },
+  "contact": {
+    "prompt": "Email is the best way to reach me.",
+    "signoff": "Enterprise workflow UX | research | design systems"
+  },
+  "route": {
+    "presentation": "showcase",
+    "heroIntent": "resume-support",
+    "workHeading": "Selected work.",
+    "contactHeading": "Thanks for stopping by."
+  },
+  "copyReview": {
+    "humanizerVersion": "2.2.0",
+    "mode": "surface-only",
+    "status": "passed",
+    "reviewedAt": "2026-08-05T15:56:27.890Z",
+    "copySha256": "dddb1b22ff4f0363f13a2c1a8372ef3b4c56c7356f93dec4c939669b238f0f2f",
+    "preserved": [
+      "content",
+      "structure",
+      "claims",
+      "ending"
+    ],
+    "rewriteAuthorized": false,
+    "reviewMethod": "humanizer-skill",
+    "semanticPassAttested": true,
+    "staticChecksPassed": true,
+    "finalAntiAiPass": true,
+    "remainingTells": []
+  },
+  "constraints": {
+    "doNotClaim": [
+      "Direct financial-services or lending-product design experience",
+      "Direct work on loan-origination or loan-servicing platforms",
+      "Current Baltimore residency or a verified commute",
+      "Specific knowledge of OneMain's internal systems",
+      "Named Agile ceremonies, certifications, or delivery tools",
+      "Quantitative business outcomes beyond documented usage, team scale, and awards",
+      "Formal accessibility certification"
+    ],
+    "blockedTerms": [
+      "financial-services product designer",
+      "lending product designer",
+      "loan-origination expert",
+      "loan-servicing expert",
+      "based in Baltimore",
+      "Agile certified",
+      "Scrum Master",
+      "formal accessibility certification",
+      "measurable revenue impact"
+    ]
+  },
+  "privacy": {
+    "publicSafe": true,
+    "notes": "Contains only the public OneMain Financial job description and public-safe evidence from the resume and portfolio. It excludes recruiter contact details, private eligibility answers, compensation boundaries, application answers, and submission state."
+  },
+  "qa": {
+    "status": "qa-passed",
+    "builtAt": "2026-08-05T15:56:38.276Z",
+    "configInputSha256": "aa11fb36c1944b3a4d053a4ccc3207fa2ec7d49f02309711ac520b481d1902b0",
+    "sourceResumeSha256": "2265313e78b596a2b37d6d8f9a95081e4321b4047f142a5f0ddf22449cab4b9c",
+    "resumeFoundation": {
+      "id": "wally-mostafa-resume-2026-07-03",
+      "sourcePdfSha256": "f9b05b6c3c134262b1af6c5734363daf4385cf335407a139779a37d138adf1aa"
+    },
+    "resumeBase": {
+      "mode": "ai-product-implementation",
+      "sourceProfiles": [
+        {
+          "id": "ai-product-implementation",
+          "version": 1
+        }
+      ],
+      "leadProfileId": "ai-product-implementation",
+      "accountPresentation": "consolidated",
+      "action": "tailor-to-jd",
+      "registryVersion": 1,
+      "registrySha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108"
+    },
+    "artifactHashes": {
+      "routeSha256": "bf089cef176bc81a40c10593e18d08e987078a71d853e700779077531a095bba",
+      "resumePdfSha256": "4299924d0cb58b640a136692487407badae5343eab26300ca91b2a3d0241b80a",
+      "coverLetterPdfSha256": null,
+      "coverLetterMarkdownSha256": null,
+      "scopedProjectSha256": {
+        "project-03.html": "8f5f047e3f1412ec54cdf129e737441de238a84e9db68b562e5c5a5f7adf3e87",
+        "project-05.html": "a4e7b42a06726c27f64728d94e8e67ca4689f23260bec9d157ea4b23926c01b3",
+        "project-04.html": "f725205c25f965b25b2b84096f0c4aba2060b38e0ddf77ad83c5a03e3cee6ae0",
+        "project-01.html": "51883071d190504c2de16bed36f3bfcd11cbf585cf7979373aa7f9a9f12f5526"
+      }
+    },
+    "renderer": {
+      "browser": {
+        "name": "chrome-headless-shell",
+        "version": "Google Chrome for Testing 149.0.7827.55"
+      },
+      "htmlPath": "tmp/tailored-resumes/onemain-lead-product-designer-catalyst.html",
+      "pdfPath": "output/pdf/Wally-Mostafa-OneMain-Lead-Product-Designer-Catalyst-Resume.pdf",
+      "fontWait": true,
+      "fontProfile": "portfolio-pdf"
+    },
+    "coverLetterRenderer": null,
+    "coverLetter": null,
+    "ats": {
+      "ok": true,
+      "pdfPath": "output/pdf/Wally-Mostafa-OneMain-Lead-Product-Designer-Catalyst-Resume.pdf",
+      "pageCount": 2,
+      "fileSize": 72771,
+      "annotations": [
+        {
+          "page": 1,
+          "uri": "mailto:wmostafa12@gmail.com"
+        },
+        {
+          "page": 1,
+          "uri": "https://linkedin.com/in/wallymo"
+        },
+        {
+          "page": 1,
+          "uri": "https://wallymo.github.io/onemain-lead-product-designer-catalyst/"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/6748"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/4629"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.red-dot.org/project/dxa-digital-experience-audit-55219"
+        }
+      ],
+      "fontCompatibility": {
+        "type3Fonts": false
+      },
+      "coverage": [
+        {
+          "id": "degree-or-equivalent-experience",
+          "requirement": "Bring a bachelor's degree in Design, Human-Computer Interaction, or a related field, or equivalent experience.",
+          "priority": "hard-gate",
+          "evidenceStatus": "direct",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "BA",
+            "product design"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "seven-plus-years-product-ux",
+          "requirement": "Bring 7+ years of experience in Product Design, UX Design, or related fields.",
+          "priority": "hard-gate",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "nearly eight years",
+            "UX and product design"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "baltimore-hybrid-schedule",
+          "requirement": "Work within commuting distance of Baltimore in the office Tuesday through Thursday.",
+          "priority": "hard-gate",
+          "evidenceStatus": "direct",
+          "matchMode": "contextual",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "Raleigh, NC"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "complex-operational-workflows",
+          "requirement": "Design end-to-end experiences across complex operational workflows and integrated systems.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "complex workflows",
+            "enterprise analytics",
+            "workflow UX"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "systems-thinking-and-scale",
+          "requirement": "Use systems thinking to simplify complex problems into intuitive, efficient, and scalable designs.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "systems thinking",
+            "7,000+ users",
+            "22 white-label brands"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "data-informed-design-and-iteration",
+          "requirement": "Drive outcomes through data-informed design decisions, research, and iteration.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "user research",
+            "prototype testing",
+            "behavioral data",
+            "user feedback loops"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "cross-functional-influence-and-delivery",
+          "requirement": "Influence Product, Engineering, Risk, Operations, and business stakeholders in Agile or similar delivery models.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "cross-functional delivery",
+            "product and engineering teams",
+            "build-ready handoff"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "regulated-design-and-compliance",
+          "requirement": "Design within a regulated environment while balancing usability and compliance requirements.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "regulated",
+            "compliance",
+            "FDA",
+            "MLR"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "design-systems-accessibility-inclusive-design",
+          "requirement": "Extend design systems and meet accessibility and inclusive-design standards.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "design systems",
+            "accessibility",
+            "WCAG"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "ai-powered-design-judgment",
+          "requirement": "Use AI-powered tools in design work and judge where AI can improve user experiences and team workflows.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "AI Implementation & Workflow Design",
+            "human review",
+            "AI workflow design"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "internal-tools-platform-ecosystems",
+          "requirement": "Bring experience with internal tools, operational platforms, workflow-based systems, or platform ecosystems.",
+          "priority": "preferred",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "enterprise platforms",
+            "internal brand-team experiences"
+          ],
+          "missingTerms": [
+            "workflow-based systems"
+          ]
+        }
+      ],
+      "failures": [],
+      "warnings": []
+    },
+    "humanizer": {
+      "status": "passed",
+      "version": "2.2.0",
+      "mode": "surface-only",
+      "reviewedAt": "2026-08-05T15:56:27.890Z",
+      "copySha256": "dddb1b22ff4f0363f13a2c1a8372ef3b4c56c7356f93dec4c939669b238f0f2f",
+      "reviewMethod": "humanizer-skill",
+      "semanticPassAttested": true,
+      "staticChecksPassed": true
+    },
+    "route": {
+      "viewports": [
+        {
+          "name": "desktop",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-03",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-05",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-04",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-01",
+          "errors": []
+        },
+        {
+          "name": "mobile",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-03",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-05",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-04",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-01",
+          "errors": []
+        }
+      ],
+      "errors": []
+    }
+  }
+}
