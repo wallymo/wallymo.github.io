@@ -1521,6 +1521,42 @@
     },
     {
       "workflowVersion": 2,
+      "contractRevision": 7,
+      "slug": "inizio-evoke-senior-account-director",
+      "roleTitle": "Inizio Evoke Senior Account Director",
+      "artifactStem": "Inizio-Evoke-Senior-Account-Director",
+      "configPath": "scripts/packages/inizio-evoke-senior-account-director.json",
+      "targetLane": "client-account-delivery",
+      "evidenceMode": "resume-primary",
+      "fitClass": "adjacent",
+      "positioningLane": "client-account-delivery",
+      "bridgeType": "level-transfer",
+      "applicationStrategy": "transferable",
+      "resumeBaseMode": "account-leadership",
+      "resumeBaseLeadProfile": "account-leadership",
+      "resumeBaseAction": "tailor-to-jd",
+      "accountPresentation": "agency-progression",
+      "resumeBaseProfiles": [
+        {
+          "id": "account-leadership",
+          "version": 1
+        }
+      ],
+      "routeMode": "scoped-projects",
+      "selectedProjects": [
+        "project-01.html",
+        "project-06.html",
+        "project-03.html"
+      ],
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Inizio-Evoke-Senior-Account-Director-Resume.pdf",
+      "coverLetterPdfPath": "output/pdf/Wally-Mostafa-Inizio-Evoke-Senior-Account-Director-Cover-Letter.pdf",
+      "coverLetterMarkdownPath": "output/pdf/Wally-Mostafa-Inizio-Evoke-Senior-Account-Director-Cover-Letter.md",
+      "publishStatus": "local-only",
+      "qaStatus": "qa-passed",
+      "builtAt": "2026-08-05T02:45:37.482Z"
+    },
+    {
+      "workflowVersion": 2,
       "slug": "inizio-growth-enablement-launch-specialist",
       "roleTitle": "Inizio Engage Growth Enablement and Launch Specialist",
       "artifactStem": "Inizio-Growth-Enablement-Launch-Specialist",
