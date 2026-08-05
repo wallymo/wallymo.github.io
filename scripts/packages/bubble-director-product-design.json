@@ -7,19 +7,19 @@
   "fitClass": "stretch",
   "routeMode": "scoped-projects",
   "selectedProjects": [
-    "project-07.html",
     "project-04.html",
     "project-05.html",
-    "project-02.html"
+    "project-02.html",
+    "project-07.html"
   ],
   "job": {
     "company": "Bubble",
     "roleTitle": "Director, Product Design",
     "jobId": "d91cbdb3-bfdb-4ef9-87f9-c7d548a3c4e4",
     "jobUrl": "https://jobs.ashbyhq.com/bubble/d91cbdb3-bfdb-4ef9-87f9-c7d548a3c4e4",
-    "sourceChannel": "User-supplied job description, Bubble careers, and live Ashby job posting",
+    "sourceChannel": "Recruiter-provided job description supplied by the user",
     "dateCaptured": "2026-08-05",
-    "location": "Remote; NYC, New York or San Francisco, California listed; NYC collaboration prioritized; relocation assistance available",
+    "location": "New York City metro; hybrid; relocation assistance available",
     "employmentType": "Full time",
     "compensation": "$200K-$259K base salary plus equity",
     "atsVendor": "Ashby",
@@ -33,24 +33,24 @@
     "hardGateStatus": "pass",
     "hardGates": [
       {
-        "gate": "Current residence must be compatible with Bubble's remote role and NYC collaboration preference",
+        "gate": "Be within the New York City metro area or use Bubble's stated relocation-assistance path",
         "status": "pass",
         "requirementId": "nyc-hybrid-relocation-path",
-        "evidence": "The resume truthfully lists Raleigh, and the live posting accepts remote candidates while prioritizing NYC collaboration or relocation. Current residence does not block the application package; travel or relocation willingness and work authorization remain private readiness answers before submission."
+        "evidence": "The resume truthfully lists Raleigh, and the recruiter-provided job description explicitly offers relocation assistance. Current residence therefore does not block the package; relocation willingness and work authorization remain private facts that are not claimed."
       }
     ]
   },
   "requirements": [
     {
       "id": "nyc-hybrid-relocation-path",
-      "text": "Be compatible with Bubble's remote work model while recognizing its preference for regular New York City collaboration or relocation.",
+      "text": "Be within the New York City metro area for hybrid work or use Bubble's stated relocation-assistance path.",
       "priority": "hard-gate",
       "source": "jd",
       "confidence": "explicit",
       "evidenceStatus": "direct",
       "evidence": [
         "The resume lists Raleigh, North Carolina rather than New York City.",
-        "The live posting accepts remote candidates and offers relocation assistance while prioritizing candidates who can work from or travel regularly to New York City."
+        "The recruiter-provided job description explicitly offers relocation assistance, so the current location has a stated resolution path."
       ],
       "proofIds": [],
       "destinations": [
@@ -316,7 +316,7 @@
       "Specific hiring plans, interview loops, and senior-design recruiting outcomes.",
       "Direct reports, coaching cadence, performance reviews, and career-development examples.",
       "PLG SaaS growth metrics and named responsibility for activation, conversion, retention, or monetization.",
-      "United States work authorization, sponsorship needs, and willingness to travel regularly to New York City or relocate must be confirmed privately before submission."
+      "Current New York City residence, relocation willingness, and United States work authorization are not established in the supplied materials."
     ],
     "coverLetterBridge": {
       "status": "recommended",
@@ -510,8 +510,8 @@
     "humanizerVersion": "2.2.0",
     "mode": "surface-only",
     "status": "passed",
-    "reviewedAt": "2026-08-05T14:30:38.840Z",
-    "copySha256": "4724bb2feb545a47e90a32f28506a91ae3d1a1d0c9606c4a762dd7850ccf88bb",
+    "reviewedAt": "2026-08-05T14:38:06.356Z",
+    "copySha256": "4b6f2e61bdb2b5fcd6b1e63ada8f5ae48b30c9aff807928b8f56d7c9e89d42d3",
     "preserved": [
       "content",
       "structure",
@@ -556,8 +556,8 @@
   },
   "qa": {
     "status": "qa-passed",
-    "builtAt": "2026-08-05T14:30:49.853Z",
-    "configInputSha256": "33b01c0d0e7f6b2f5d616283c04306cf879325da2ff4c35f8d881c9e5833204f",
+    "builtAt": "2026-08-05T14:38:26.653Z",
+    "configInputSha256": "3b71a573959cdeeb651b163eff0e0338ff7c2825410260c2ac35c1332a0c6128",
     "sourceResumeSha256": "2265313e78b596a2b37d6d8f9a95081e4321b4047f142a5f0ddf22449cab4b9c",
     "resumeFoundation": {
       "id": "wally-mostafa-resume-2026-07-03",
@@ -578,15 +578,15 @@
       "registrySha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108"
     },
     "artifactHashes": {
-      "routeSha256": "8d162516fa5fa9965e518bec731a5fddef6f6b45ddc815726aa09540d91aa9ce",
-      "resumePdfSha256": "29be5d139299227bb7e3b3362e5d0f1ba18dad921cc365014f6484f069a653b0",
-      "coverLetterPdfSha256": "8f642c9fbcde4748e965ffacf8a515a2ac8dae410d92b3c61bb03880223dda13",
+      "routeSha256": "40273ebb7996d47c44ee8fc4069f82bf4d075029e8d7ba411063ed2c70c39f8b",
+      "resumePdfSha256": "0fdbf19dc91ecfe0a4e2fb9177ae5d2589f8c6fffe2c469ce56d786459a17aee",
+      "coverLetterPdfSha256": "adba36d469238c83fe07fbb13660436763df3395272fac365a3b63df1d01f44c",
       "coverLetterMarkdownSha256": "453f05674c5c696a4a3e19fc4e9b01ec000df9d203f6f755a6857d181c3ab108",
       "scopedProjectSha256": {
-        "project-07.html": "c1f423c044c80f3a73eb4d0d64748956ab471de32b1ed15e25f16f76986a5414",
-        "project-04.html": "fae7b7f130b8f26613d283381a4d4eb2519c4e89c0de50f2b7fd33268f256cb7",
-        "project-05.html": "f6decd16edbd6c6e2bc55968a2be7864fe3e02c65191ff0549d053b72fed5532",
-        "project-02.html": "f066e3064aa9131667cc28c627c35bcb294b756de2d6ec6aea15628dd9e1d01a"
+        "project-04.html": "34b0ff83b0005300dcc01624d96cc9fdd504279b53aea82d549c6584a9a5f4ff",
+        "project-05.html": "156633d0acaad06c9dd27af007351df17aeb53c3cbad7eec1169c0270e041d42",
+        "project-02.html": "e98ce2cf969ee3a51170036754352f20892dc20bf71d08962288c32664ef722e",
+        "project-07.html": "7877c135cb646c2c1c5e673c8d8f77ab8ec5f72ed12ae0a9f9124d985231b979"
       }
     },
     "renderer": {
@@ -663,7 +663,7 @@
       "coverage": [
         {
           "id": "nyc-hybrid-relocation-path",
-          "requirement": "Be compatible with Bubble's remote work model while recognizing its preference for regular New York City collaboration or relocation.",
+          "requirement": "Be within the New York City metro area for hybrid work or use Bubble's stated relocation-assistance path.",
           "priority": "hard-gate",
           "evidenceStatus": "direct",
           "matchMode": "contextual",
@@ -790,8 +790,8 @@
       "status": "passed",
       "version": "2.2.0",
       "mode": "surface-only",
-      "reviewedAt": "2026-08-05T14:30:38.840Z",
-      "copySha256": "4724bb2feb545a47e90a32f28506a91ae3d1a1d0c9606c4a762dd7850ccf88bb",
+      "reviewedAt": "2026-08-05T14:38:06.356Z",
+      "copySha256": "4b6f2e61bdb2b5fcd6b1e63ada8f5ae48b30c9aff807928b8f56d7c9e89d42d3",
       "reviewMethod": "humanizer-skill",
       "semanticPassAttested": true,
       "staticChecksPassed": true
@@ -800,10 +800,6 @@
       "viewports": [
         {
           "name": "desktop",
-          "errors": []
-        },
-        {
-          "name": "desktop-project-07",
           "errors": []
         },
         {
@@ -819,11 +815,11 @@
           "errors": []
         },
         {
-          "name": "mobile",
+          "name": "desktop-project-07",
           "errors": []
         },
         {
-          "name": "mobile-project-07",
+          "name": "mobile",
           "errors": []
         },
         {
@@ -836,6 +832,10 @@
         },
         {
           "name": "mobile-project-02",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-07",
           "errors": []
         }
       ],
