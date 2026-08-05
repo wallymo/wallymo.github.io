@@ -319,17 +319,17 @@
     ],
     "coverLetterBridge": {
       "status": "not-needed",
-      "rationale": "The role's central work is directly visible in the resume and portfolio, and this package is intended for a warm introduction to Cinder's lead recruiter. A cover letter would add little before that conversation."
+      "rationale": "The resume and portfolio give a recruiter enough context for an introductory conversation. A cover letter would add little before that conversation."
     },
-    "recommendation": "Proceed with a Cinder-specific Agent Product Manager package. Lead with client discovery, governed AI workflow design, working products, feedback loops, enterprise scale, and regulated-risk judgment. Keep direct Trust & Safety experience, production-scale agent deployment, and NYC availability as open discussion points."
+    "recommendation": "Proceed with a recruiter-introduction package for Cinder. Lead with client discovery, AI workflow design, enterprise UX, regulated-risk judgment, and delivery. Keep direct Trust & Safety experience, production-scale agent deployment, and NYC availability as open discussion points."
   },
   "positioning": {
     "laneId": "ai-product-implementation",
-    "targetIdentity": "Product Manager",
+    "targetIdentity": "pharma account leadership, enterprise UX, and practical AI implementation",
     "employerNeed": "Design and deploy useful AI-powered solutions with customers, learn from real usage, and turn those lessons into stronger product direction.",
     "bridgeType": "direct",
     "applicationStrategy": "direct",
-    "bridgeThesis": "discovery, AI implementation, and product direction",
+    "bridgeThesis": "complex needs from discovery through delivery",
     "proofIds": [
       "one-block-away-01",
       "hedgehox-02",
@@ -342,7 +342,7 @@
     "foundationId": "wally-mostafa-resume-2026-07-03",
     "compositionMode": "foundation-complete",
     "layoutDensity": "compact",
-    "summary": "Product Manager who connects discovery, AI implementation, and product direction to turn ambiguous customer workflows into working, governed tools. I shape requirements, design AI and human-review workflows, and carry client engagements through prototypes, demos, and delivery. My work includes regulated claims-review products, risk-scoring dashboards, enterprise platforms used by 7,000+ people, and a product design team grown from 2 to 30.",
+    "summary": "My background spans pharma account leadership, enterprise UX, and practical AI implementation. I spent eight years leading Fortune 500 healthcare accounts. I later grew a design team from 2 to 30 and led UX work for enterprise platforms used by 7,000+ people. Today, I build regulated AI tools and working POCs, taking complex needs from discovery through delivery.",
     "skillIds": [
       "ai-implementation-workflow-design",
       "product-strategy-poc-delivery",
@@ -443,17 +443,17 @@
     }
   },
   "hero": {
-    "eyebrow": "Cinder | Product Management",
+    "eyebrow": "Cinder | Selected Work",
     "tags": [
       "AI workflow design",
-      "Customer discovery",
-      "Product strategy to delivery"
+      "Enterprise UX",
+      "Client delivery"
     ],
-    "intro": "Here are a few things I've been working on lately. I picked the projects that may be relevant to product management at Cinder. The resume covers my background in more detail."
+    "intro": "Here are a few things I've been working on lately. I picked projects that may be useful context alongside my resume, especially around AI workflows, enterprise UX, and client-facing delivery."
   },
   "contact": {
     "prompt": "Email is the best way to reach me.",
-    "signoff": "Customer discovery | AI workflow design | product delivery"
+    "signoff": "Client discovery | AI workflow design | enterprise UX"
   },
   "route": {
     "presentation": "showcase",
@@ -465,8 +465,8 @@
     "humanizerVersion": "2.2.0",
     "mode": "rewrite-requested",
     "status": "passed",
-    "reviewedAt": "2026-08-04T19:48:25.555Z",
-    "copySha256": "93ddc7ca037b00e96fceb4277bd5a3cddce19d0a1691cd90311cb53190cd22c9",
+    "reviewedAt": "2026-08-05T00:51:11.418Z",
+    "copySha256": "76879c23ad75ad580a752697f010b8ac7957ed6f76ed7180ca53688a5e52272f",
     "preserved": [
       "claims"
     ],
@@ -504,8 +504,8 @@
   },
   "qa": {
     "status": "qa-passed",
-    "builtAt": "2026-08-04T19:48:43.197Z",
-    "configInputSha256": "84943a109795d3473b332bd7663f08d53a2b72267220f72f37c30ba6a0cf55e2",
+    "builtAt": "2026-08-05T00:51:25.804Z",
+    "configInputSha256": "794707b16d43241c2205773c03dcfe7ff6418caa93d14e4f1d07bea7038b93db",
     "sourceResumeSha256": "2265313e78b596a2b37d6d8f9a95081e4321b4047f142a5f0ddf22449cab4b9c",
     "resumeFoundation": {
       "id": "wally-mostafa-resume-2026-07-03",
@@ -526,8 +526,8 @@
       "registrySha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108"
     },
     "artifactHashes": {
-      "routeSha256": "b77567e00bbfee3cc59b4f073c81df80dba7c6ae39b3e05102540ceb42f43324",
-      "resumePdfSha256": "032b806a30031aa9f0920bca07d314b4673a24f67309b5672badb7c111809a0e",
+      "routeSha256": "a2b8612b9338d0858409d0b4115af2a4a7979f287d21532c87e72596138e069a",
+      "resumePdfSha256": "1f04c82b40373f288d8e02ec979ff4769788c2840f3cc80b4f6c751158f494ac",
       "coverLetterPdfSha256": null,
       "coverLetterMarkdownSha256": null,
       "scopedProjectSha256": {
@@ -552,7 +552,7 @@
       "ok": true,
       "pdfPath": "output/pdf/Wally-Mostafa-Cinder-Agent-Product-Manager-Resume.pdf",
       "pageCount": 2,
-      "fileSize": 72387,
+      "fileSize": 72345,
       "annotations": [
         {
           "page": 1,
@@ -677,11 +677,12 @@
           "matchMode": "exact",
           "status": "covered-directly",
           "matchedTerms": [
-            "ambiguous",
             "working POCs",
             "delivery"
           ],
-          "missingTerms": []
+          "missingTerms": [
+            "ambiguous"
+          ]
         },
         {
           "id": "clear-customer-and-technical-communication",
@@ -699,14 +700,16 @@
         }
       ],
       "failures": [],
-      "warnings": []
+      "warnings": [
+        "fast-ambiguous-ownership: supported core language missing from the PDF: ambiguous"
+      ]
     },
     "humanizer": {
       "status": "passed",
       "version": "2.2.0",
       "mode": "rewrite-requested",
-      "reviewedAt": "2026-08-04T19:48:25.555Z",
-      "copySha256": "93ddc7ca037b00e96fceb4277bd5a3cddce19d0a1691cd90311cb53190cd22c9",
+      "reviewedAt": "2026-08-05T00:51:11.418Z",
+      "copySha256": "76879c23ad75ad580a752697f010b8ac7957ed6f76ed7180ca53688a5e52272f",
       "reviewMethod": "humanizer-skill",
       "semanticPassAttested": true,
       "staticChecksPassed": true
