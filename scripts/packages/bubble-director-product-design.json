@@ -1,0 +1,845 @@
+{
+  "workflowVersion": 2,
+  "contractRevision": 7,
+  "slug": "bubble-director-product-design",
+  "roleTitle": "Bubble Director, Product Design",
+  "artifactStem": "Bubble-Director-Product-Design",
+  "fitClass": "stretch",
+  "routeMode": "scoped-projects",
+  "selectedProjects": [
+    "project-07.html",
+    "project-04.html",
+    "project-05.html",
+    "project-02.html"
+  ],
+  "job": {
+    "company": "Bubble",
+    "roleTitle": "Director, Product Design",
+    "jobId": "d91cbdb3-bfdb-4ef9-87f9-c7d548a3c4e4",
+    "jobUrl": "https://jobs.ashbyhq.com/bubble/d91cbdb3-bfdb-4ef9-87f9-c7d548a3c4e4",
+    "sourceChannel": "Bubble careers and Ashby job posting",
+    "dateCaptured": "2026-08-05",
+    "location": "New York City metro; hybrid; relocation assistance available",
+    "employmentType": "Full time",
+    "compensation": "$200K-$259K base salary plus equity",
+    "atsVendor": "Ashby",
+    "rawJd": "JOIN BUBBLE\nTitle: Director, Product Design\nCompensation Range: $200K-$259K; offers equity\nLocation: Hybrid NYC\n\nWe built Bubble with a clear mission: to empower everyone to create software. Our AI visual development platform lets anyone, from first-time entrepreneurs to enterprise teams, take an idea from prompt to fully functional, scalable app across web, iOS, and Android. With over 6 million users in more than 100 countries, Bubble is breaking down the barriers to entrepreneurship and innovation worldwide.\n\nOur Product\nBubble is a fully visual AI app builder that lets people move beyond prototypes and launch real apps. Users can chat with AI for speed and edit directly for control. Bubble's visual editor supports design, privacy rules, programming logic, web and native mobile editing, hosting, security, database management, and automatic scaling.\n\nAbout the team\nBubble has four product designers and is growing the team with two open roles and more growth planned. Product Design owns the end-to-end experience of building apps on Bubble, including the home screen, the agent that helps users create and edit apps, and the editor where users design apps, define workflows, and manage data. The team drives the UX, user research and testing, and UI for these experiences.\n\nAbout the role\nBubble is seeking a Director of Product Design to lead the product design team. The role reports to the VP, Product and is responsible for building the team, putting design processes in place, refining the design system, and iterating on the design vision. The role will help make Bubble easy to learn and intuitive from idea through production-ready app.\n\nIn this role you will lead product designers, identify development and growth opportunities, and provide regular coaching and feedback; drive product design hiring by defining the hiring and interview plan and leading interviews; establish product design best practices and processes across discovery and delivery; help the team explore and validate designs efficiently and scope and iterate on launches; refine Bubble's design system and apply it consistently; lead by example through user conversations, cross-functional collaboration, opportunity identification, and idea validation; and refine the product vision, ideal customer profile, and ideal user journey through research and validation.\n\nAbout you\n10+ years of product design experience on challenging UX problems, including PLG SaaS. 5+ years leading design teams, ideally scaling teams in a high-growth startup. Interest in AI and no-code development, with prior experience a nice-to-have. A track record of recruiting senior talent and developing high-performing teams. Deep experience guiding teams through user research, design exploration and refinement, and iteration. A passion for design best practices and systems that help teams scale. The ability to make pragmatic prioritization, scope, and design decisions while balancing user needs, design vision, and business objectives.\n\nCompensation\nThe estimated salary range is $200,000 to $259,000. Actual pay is based on skills, qualifications, experience, and market demand.\n\nLocation\nBubble is currently considering candidates who are authorized to work in the United States and are within the New York City metro area. Relocation assistance is available to candidates interested in moving to the area.\n\nBenefits include health coverage, 401(k) matching, wellness and work-enablement stipends, generous PTO, and a sabbatical program. Bubble encourages candidates to apply even if they do not meet every qualification."
+  },
+  "classification": {
+    "targetLane": "product-ux-design",
+    "evidenceMode": "portfolio-primary",
+    "primarySource": "The portfolio directly shows product-design leadership, a research discipline built across more than 20 products, enterprise design systems, complex workflow UX, usability testing, cross-functional practice building, and current hands-on AI product work.",
+    "supportingSource": "The resume confirms a Director-level experience role, product-design team growth from 2 to 30, enterprise scale across 7,000+ users and 22 brands, nearly eight years in directly titled UX and product-design work, and 15 years across digital delivery and client strategy.",
+    "hardGateStatus": "pass",
+    "hardGates": [
+      {
+        "gate": "Be within the New York City metro area or use Bubble's stated relocation-assistance path",
+        "status": "pass",
+        "requirementId": "nyc-hybrid-relocation-path",
+        "evidence": "The resume truthfully lists Raleigh, and the posting explicitly provides relocation assistance. Current residence therefore does not block the application package; relocation willingness and work authorization remain private readiness answers before submission."
+      }
+    ]
+  },
+  "requirements": [
+    {
+      "id": "nyc-hybrid-relocation-path",
+      "text": "Be within the New York City metro area for hybrid work or use Bubble's stated relocation-assistance path.",
+      "priority": "hard-gate",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The resume lists Raleigh, North Carolina rather than New York City.",
+        "Bubble explicitly offers relocation assistance, so the current location has a stated resolution path."
+      ],
+      "proofIds": [],
+      "destinations": [
+        "application-answer"
+      ],
+      "resumeTerms": [
+        "Raleigh, NC"
+      ],
+      "matchMode": "contextual"
+    },
+    {
+      "id": "product-design-and-plg-saas-tenure",
+      "text": "Bring 10+ years of product design experience on difficult UX problems, including PLG SaaS.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "The record shows nearly eight years in directly titled UX, product-design, and experience-leadership work, backed by 15 years across digital products, client strategy, and delivery.",
+        "The portfolio documents complex enterprise SaaS UX across analytics, workflows, research, and reusable systems, but does not establish a full 10 years of product-design tenure or direct PLG growth ownership."
+      ],
+      "proofIds": [
+        "heartbeat-01",
+        "kinesso-02",
+        "one-block-away-04"
+      ],
+      "destinations": [
+        "summary",
+        "experience",
+        "portfolio",
+        "cover-letter"
+      ],
+      "resumeTerms": [
+        "product design",
+        "enterprise UX",
+        "SaaS"
+      ],
+      "matchMode": "contextual"
+    },
+    {
+      "id": "design-team-leadership-and-scale",
+      "text": "Bring 5+ years leading design teams, ideally while scaling a high-growth startup team.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "At Kinesso, the candidate joined as the second product-design hire, held a Director-level experience role, and helped scale product design to 30 people across the United States and Poland.",
+        "The documented Director tenure is shorter than five years and took place inside a global enterprise rather than a high-growth startup."
+      ],
+      "proofIds": [
+        "kinesso-01"
+      ],
+      "destinations": [
+        "summary",
+        "experience",
+        "portfolio",
+        "cover-letter"
+      ],
+      "resumeTerms": [
+        "2 to 30",
+        "product design team"
+      ],
+      "matchMode": "contextual"
+    },
+    {
+      "id": "design-hiring-and-coaching",
+      "text": "Recruit senior product-design talent and provide regular coaching, feedback, development, and growth support.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "none",
+      "evidence": [
+        "The portfolio documents team growth and practice standards, but it does not document ownership of hiring plans, interview loops, performance reviews, or regular coaching."
+      ],
+      "proofIds": [],
+      "destinations": [
+        "application-answer"
+      ],
+      "resumeTerms": [
+        "design hiring",
+        "regular coaching and feedback",
+        "performance management"
+      ],
+      "matchMode": "not-supported"
+    },
+    {
+      "id": "design-process-discovery-delivery",
+      "text": "Establish product-design practices across discovery, validation, delivery, launch scoping, and iteration.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The User Research case study shows a practice built from scratch across 20+ products using reusable methods, Figma documentation, testing, findings, beta groups, and feedback loops.",
+        "Current AI product work runs from client discovery through product strategy, UX, workflow design, working prototypes, validation, and delivery."
+      ],
+      "proofIds": [
+        "addition:bubble-research-discipline",
+        "one-block-away-01",
+        "one-block-away-04"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "Research & Experience Strategy",
+        "prototype validation",
+        "client iteration"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "design-system-leadership",
+      "text": "Refine a modern, intuitive design system and apply it consistently across the product.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The portfolio shows design-system strategy across a 20+ product suite, including 500 components, 140 styles, 300 icons, 50 personas, living documentation, personalization, and system-adherence auditing.",
+        "The resume documents design-system and analytics work that earned Indigo and Red Dot recognition."
+      ],
+      "proofIds": [
+        "kinesso-02",
+        "kinesso-04"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "design-system strategy",
+        "reusable analytics components"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "user-research-and-validation",
+      "text": "Guide teams through user research, design exploration, refinement, testing, and idea validation.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The portfolio documents interviews, competitive audits, user lists, prototype testing, behavioral data, standardized findings, beta groups, reusable research infrastructure, and ongoing feedback loops.",
+        "Earlier UX work used journeys, user flows, wireframes, and prototypes to turn user needs into product direction and build-ready experiences."
+      ],
+      "proofIds": [
+        "addition:bubble-research-discipline",
+        "heartbeat-01",
+        "heartbeat-02"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "user research",
+        "usability testing",
+        "prototypes"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "product-vision-user-journey-and-business-balance",
+      "text": "Refine the product vision, ideal customer profile, and user journey while balancing user needs, design quality, scope, and business objectives.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Current work turns client needs into product strategy, working concepts, roadmap decisions, and delivery choices.",
+        "The record directly covers journey mapping, user needs, product direction, scoping, and client priorities, but does not name formal ideal-customer-profile ownership."
+      ],
+      "proofIds": [
+        "one-block-away-01",
+        "one-block-away-04",
+        "heartbeat-02"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "product strategy",
+        "roadmap decisions",
+        "journey maps"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "ai-and-no-code-product-interest",
+      "text": "Bring interest in AI and no-code development; prior experience is useful but optional.",
+      "priority": "preferred",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Current work includes hands-on AI product strategy, UX, governed model workflows, front-end and backend decisions, working POCs, and client iteration.",
+        "No direct Bubble platform or named no-code development experience is documented."
+      ],
+      "proofIds": [
+        "hedgehox-02",
+        "one-block-away-04"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio",
+        "cover-letter"
+      ],
+      "resumeTerms": [
+        "AI workflow design",
+        "working prototype"
+      ],
+      "matchMode": "contextual"
+    }
+  ],
+  "fitGate": {
+    "resumeBase": {
+      "mode": "ai-product-implementation",
+      "sourceProfiles": [
+        {
+          "id": "ai-product-implementation",
+          "version": 1
+        }
+      ],
+      "leadProfileId": "ai-product-implementation",
+      "accountPresentation": "consolidated",
+      "action": "tailor-to-jd",
+      "rationale": "The role's operating center is product-design leadership across research, design systems, product vision, AI workflows, and delivery. The AI/Product Implementation base carries the direct UX, product, research, enterprise-system, and hands-on implementation evidence; account leadership is supporting context."
+    },
+    "supportedOverlap": [
+      "A Director-level experience role with product-design team growth from 2 to 30 across the United States and Poland.",
+      "Enterprise product work used by 7,000+ people across 22 white-label brands.",
+      "A UX research discipline built from scratch across 20+ products with reusable methods, Figma documentation, prototype testing, behavioral data, and feedback loops.",
+      "An award-winning design system spanning components, styles, icons, personas, navigation, personalization, and system-adherence tooling.",
+      "Current hands-on AI product work across discovery, UX, workflow design, working prototypes, validation, and delivery.",
+      "Fifteen years of digital delivery and client strategy support stakeholder communication, scope decisions, and business context."
+    ],
+    "unsupportedRequirements": [
+      "A documented track record of owning design hiring plans and interview loops.",
+      "Regular coaching, performance feedback, career development, or performance-management ownership.",
+      "Direct Bubble platform or named no-code development experience.",
+      "Formal ownership of PLG acquisition, activation, conversion, or retention metrics."
+    ],
+    "actualMismatches": [
+      "The record shows nearly eight years in directly titled UX, product-design, and experience-leadership work rather than the requested 10+ years of product design.",
+      "The documented Director-level design leadership period is shorter than the requested 5+ years leading design teams."
+    ],
+    "missingEvidence": [
+      "Specific hiring plans, interview loops, and senior-design recruiting outcomes.",
+      "Direct reports, coaching cadence, performance reviews, and career-development examples.",
+      "PLG SaaS growth metrics and named responsibility for activation, conversion, retention, or monetization.",
+      "Current New York City residence, relocation willingness, and United States work authorization must be confirmed privately before submission."
+    ],
+    "coverLetterBridge": {
+      "status": "recommended",
+      "rationale": "We can make the case with a cover letter by connecting 15 years of digital product and client work to nearly eight years of direct UX and product-design practice, Director-level team growth from 2 to 30, a research discipline across 20+ products, enterprise design-system leadership, and current hands-on AI product delivery. The cover letter must keep the shorter design-tenure and formal hiring and coaching gaps visible rather than implying they are already proven."
+    },
+    "recommendation": "Proceed as a user-approved stretch. Lead with the portfolio's direct proof of design leadership, research operations, design systems, complex workflow UX, and AI product delivery. Keep the requested tenure, formal hiring and coaching ownership, PLG metrics, no-code experience, and private eligibility answers outside the claim set."
+  },
+  "positioning": {
+    "laneId": "product-ux-design",
+    "targetIdentity": "product design and experience leader",
+    "employerNeed": "Grow the product-design practice, strengthen research and design systems, and make an AI visual development platform easier to learn and use.",
+    "bridgeType": "level-transfer",
+    "applicationStrategy": "approved-stretch",
+    "bridgeThesis": "connect research, design systems, team growth, and hands-on product delivery",
+    "proofIds": [
+      "kinesso-01",
+      "kinesso-02",
+      "one-block-away-04"
+    ],
+    "remainingGap": "The evidence does not establish 10+ years in product-design roles, 5+ years of formal design-team leadership, or ownership of hiring plans and regular coaching."
+  },
+  "coverLetter": {
+    "trigger": "bridge-recommended",
+    "date": "2026-08-05",
+    "greeting": "Dear Bubble hiring team,",
+    "paragraphs": [
+      "I am applying for the Director, Product Design role at Bubble. My background spans product design, UX research, design systems, client strategy, and hands-on AI product delivery. The common thread is making complex tools easier to understand, use, and improve.",
+      "At Kinesso, I joined product design as the second hire and later served as Director, Experience & Innovation. I helped scale the function from 2 to 30 people across the United States and Poland while supporting enterprise products used by 7,000+ people across 22 brands. I also built a UX research discipline across more than 20 products so teams had a repeatable way to interview users, test prototypes, share findings, and bring feedback into product decisions.",
+      "Design systems were another major part of that work. I led UX and system strategy for analytics, dashboard building, brand theming, reusable components, navigation, and personalization. The portfolio shows how research changed product behavior, how shared standards helped design and development work together, and how the system stayed useful as the suite and team grew.",
+      "My current work brings that foundation into AI products. I lead discovery, product strategy, UX, AI workflow design, front-end and backend decisions, demo readiness, and client iteration through working prototypes. That hands-on loop has made me especially interested in Bubble's challenge: giving people the speed of AI while preserving enough structure and control to build something real.",
+      "My route into product design is less conventional than a 10-year design-only title sequence. The direct record is nearly eight years in UX, product design, and experience leadership, supported by earlier digital client work and 15 years across complex delivery. It also does not document formal ownership of team recruiting or a five-year coaching record. What I can show is the work of building a design function, creating research and system practices, setting standards, and staying close to users and delivery.",
+      "Bubble needs a leader who can make a powerful platform feel learnable without flattening what it can do. I would welcome the chance to talk about the team, the product vision, and where my experience could be useful."
+    ],
+    "closing": "Sincerely,",
+    "signature": "Wally Mostafa",
+    "proofIds": [
+      "kinesso-01",
+      "kinesso-02",
+      "one-block-away-04"
+    ]
+  },
+  "resume": {
+    "foundationId": "wally-mostafa-resume-2026-07-03",
+    "compositionMode": "foundation-complete",
+    "layoutDensity": "compact",
+    "summary": "Product design and experience leader with nearly eight years in UX and product design, backed by 15 years across digital delivery, client strategy, and AI implementation. I scaled a product design team from 2 to 30, built research and design-system practices across 20+ products, and led enterprise UX for platforms used by 7,000+ people across 22 brands. Today I connect research, design systems, team growth, and hands-on product delivery through working AI products.",
+    "skillIds": [
+      "enterprise-ux-design-systems",
+      "research-experience-strategy",
+      "product-strategy-poc-delivery",
+      "ai-implementation-workflow-design",
+      "program-project-delivery"
+    ],
+    "skills": [
+      {
+        "label": "Enterprise UX & Design Systems",
+        "description": "Team scaling (2 to 30), enterprise analytics, workflow UX, data visualization, component libraries, and accessibility (WCAG)"
+      },
+      {
+        "label": "Research & Experience Strategy",
+        "description": "Stakeholder interviews, competitive audits, journey maps, user flows, wireframes, prototypes, usability testing, and research-led product direction"
+      },
+      {
+        "label": "Product Strategy & POC Delivery",
+        "description": "Discovery, scoping, requirements, prototype validation, demo narratives, build-ready logic, and production handoff"
+      },
+      {
+        "label": "AI Implementation & Workflow Design",
+        "description": "Governed LLM/VLM workflows, multimodal review, RAG/knowledge bases, prompt-defined criteria, model orchestration, and human review surfaces"
+      },
+      {
+        "label": "Program & Project Delivery",
+        "description": "Scoping, requirements, timelines, review routing, team coordination, risk visibility, and build-ready handoff across product, design, and client teams"
+      }
+    ],
+    "awards": [
+      {
+        "label": "Indigo Awards 2023",
+        "detail": "Design System & Data Visualization: 3x Gold, 2x Silver",
+        "href": "https://www.indigoaward.com/winners/6748"
+      },
+      {
+        "label": "Indigo Awards 2022",
+        "detail": "Digital Audit Experience: 2x Gold, 2x Silver",
+        "href": "https://www.indigoaward.com/winners/4629"
+      },
+      {
+        "label": "Red Dot Awards 2021",
+        "detail": "Brands & Communication Design",
+        "href": "https://www.red-dot.org/project/dxa-digital-experience-audit-55219"
+      }
+    ],
+    "roles": {
+      "hedgehox": [
+        "Secured an investor for proprietary Claims Detection software by building the functional POC, shaping the product story, and iterating with investors",
+        "Designed human-review workflows that identify promotional claims, surface evidence gaps, and pre-populate audit-ready annotations before MLR submission",
+        "Turn pharma agency needs into product requirements and working AI tools for claim review, brief intake, scoping, review routing, submission capture, and FDA signal monitoring",
+        "Designed the full Xenagos Bio startup biopharma website from scratch, including investor-facing structure, scientific positioning, visual direction, and hidden design-system handoff",
+        "Built Scope Generator for pharma agency finance and operations teams to manage regional rate cards, brands, sub-brands, and natural-language scope changes",
+        "Developed FDA Warning Tool concepts that connect warning-letter patterns to content-risk guidance for pharma teams"
+      ],
+      "one-block-away": [
+        "Lead client discovery and turn unclear business questions into testable product concepts, working POCs, demo flows, and roadmap decisions",
+        "Built ListingPal's AI listing-generation POC and landing page, turning basic property inputs into listing copy, social posts, ad copy, styling direction, and MLS/SEO-ready language in under 90 seconds",
+        "Built WeReady's Bailey Intelligence dashboard, translating founder inputs, GitHub signals, source health, risk scoring, and evidence trails into startup-readiness workflows",
+        "Own product strategy, UX, AI workflow design, front-end build, backend logic, demo readiness, and client iteration from first ask through working prototype",
+        "Currently building the website and sponsor strategy for a Tunisia youth soccer program, positioning the project for player advancement, community support, and donor outreach"
+      ],
+      "kinesso": [
+        "Scaled product design from 2 to 30 people across the United States and Poland for enterprise analytics used by 7,000+ users across 22 white-label brands",
+        "Built a user research discipline across 20+ products using repeatable methods, Figma documentation, prototype testing, behavioral data, and user feedback loops",
+        "Led UX and design-system strategy for enterprise SaaS data visualization, dashboard building, brand theming, navigation, personalization, and reusable analytics components",
+        "Built the Digital Experience Audit workflow for channel scoring, benchmarks, recommendations, visualization, and presentation-ready client outputs",
+        "Design-system and analytics work earned 5 Indigo Gold, 4 Indigo Silver, and Red Dot recognition"
+      ],
+      "omnicom": [
+        "Supported oncology accounts as a freelance UX designer, combining UX design and account-management experience to strengthen regulated healthcare work",
+        "Championed UX best practices across account, strategy, creative, and delivery conversations, translating brand goals into clearer user flows, content structure, and digital recommendations"
+      ],
+      "heartbeat": [
+        "Led UX research and experience strategy for pharma and healthcare work, translating stakeholder input, competitive audits, and user needs into digital product direction",
+        "Created journey maps, site maps, user flows, wireframes, and prototypes for patient, HCP, and internal brand-team experiences across regulated healthcare programs",
+        "Partnered with strategy, creative, account, and engineering teams to move UX recommendations from research findings into build-ready product and campaign experiences"
+      ],
+      "account-management": [
+        "8 years managing Fortune 500 pharma and healthcare clients and brand budgets up to $20M across CNS/neurology, psychiatry, cardiovascular/metabolic, and sleep/wakefulness brands including NUVIGIL, Namenda XR, Lipitor, and Zoloft",
+        "One of two account consumer leads on FCB Health's largest pharma account across television, radio, digital, gaming, Times Square, unbranded campaigns, brand planning, and MLR review",
+        "Translated client and brand strategy into briefs, creative feedback, production requirements, timelines, and MLR-ready delivery across account, creative, UX, and development teams"
+      ]
+    },
+    "sourceBulletIds": {
+      "hedgehox": [
+        "hedgehox-01",
+        "hedgehox-02",
+        "hedgehox-03",
+        "hedgehox-04",
+        "hedgehox-05",
+        "hedgehox-06"
+      ],
+      "one-block-away": [
+        "one-block-away-01",
+        "one-block-away-02",
+        "one-block-away-03",
+        "one-block-away-04",
+        "one-block-away-05"
+      ],
+      "kinesso": [
+        "kinesso-01",
+        "addition:bubble-research-discipline",
+        "kinesso-02",
+        "kinesso-03",
+        "kinesso-04"
+      ],
+      "omnicom": [
+        "omnicom-01",
+        "omnicom-02"
+      ],
+      "heartbeat": [
+        "heartbeat-01",
+        "heartbeat-02",
+        "heartbeat-03"
+      ],
+      "account-management": [
+        "account-management-01",
+        "account-management-02",
+        "account-management-03"
+      ]
+    }
+  },
+  "hero": {
+    "eyebrow": "Bubble | Selected Work",
+    "tags": [
+      "Design leadership",
+      "Research systems",
+      "Design systems",
+      "AI product delivery"
+    ],
+    "intro": "Here are four recent projects that may be useful context alongside my resume for the Director, Product Design role. They cover product-design team growth, research systems, design-system work, and hands-on AI product delivery."
+  },
+  "contact": {
+    "prompt": "Email is the best way to reach me.",
+    "signoff": "Product design leadership | research systems | AI product delivery"
+  },
+  "route": {
+    "presentation": "showcase",
+    "heroIntent": "resume-support",
+    "workHeading": "Selected work.",
+    "contactHeading": "Thanks for stopping by."
+  },
+  "copyReview": {
+    "humanizerVersion": "2.2.0",
+    "mode": "surface-only",
+    "status": "passed",
+    "reviewedAt": "2026-08-05T14:25:51.771Z",
+    "copySha256": "bd6c3790ace8ea74f21a93b82a2456c439e97150cb973b9a3a0a0d23160b3e29",
+    "preserved": [
+      "content",
+      "structure",
+      "claims",
+      "ending"
+    ],
+    "rewriteAuthorized": false,
+    "reviewMethod": "humanizer-skill",
+    "semanticPassAttested": true,
+    "staticChecksPassed": true,
+    "finalAntiAiPass": true,
+    "remainingTells": []
+  },
+  "constraints": {
+    "doNotClaim": [
+      "10+ years of product-design experience",
+      "5+ years of formal design-team leadership",
+      "Formal ownership of design hiring plans or interview loops",
+      "Regular coaching, performance feedback, or career-development ownership",
+      "Direct PLG SaaS growth ownership",
+      "Bubble platform or named no-code development experience",
+      "Current New York City residency",
+      "Willingness to relocate",
+      "United States work authorization"
+    ],
+    "blockedTerms": [
+      "ten years of product design",
+      "five years leading design teams",
+      "owned design hiring",
+      "managed performance reviews",
+      "PLG growth leader",
+      "Bubble expert",
+      "no-code expert",
+      "based in New York City",
+      "willing to relocate",
+      "authorized to work in the United States"
+    ]
+  },
+  "privacy": {
+    "publicSafe": true,
+    "notes": "Contains only the public job description and public-safe evidence from the resume and portfolio. It excludes recruiter details, private eligibility answers, relocation intent, application answers, compensation boundaries, and submission state."
+  },
+  "qa": {
+    "status": "qa-passed",
+    "builtAt": "2026-08-05T14:26:01.977Z",
+    "configInputSha256": "d89fddc71f6fd00f667e08487c4aecaea72a1dc1805e9d1758a3e9e05fb252f0",
+    "sourceResumeSha256": "2265313e78b596a2b37d6d8f9a95081e4321b4047f142a5f0ddf22449cab4b9c",
+    "resumeFoundation": {
+      "id": "wally-mostafa-resume-2026-07-03",
+      "sourcePdfSha256": "f9b05b6c3c134262b1af6c5734363daf4385cf335407a139779a37d138adf1aa"
+    },
+    "resumeBase": {
+      "mode": "ai-product-implementation",
+      "sourceProfiles": [
+        {
+          "id": "ai-product-implementation",
+          "version": 1
+        }
+      ],
+      "leadProfileId": "ai-product-implementation",
+      "accountPresentation": "consolidated",
+      "action": "tailor-to-jd",
+      "registryVersion": 1,
+      "registrySha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108"
+    },
+    "artifactHashes": {
+      "routeSha256": "8d162516fa5fa9965e518bec731a5fddef6f6b45ddc815726aa09540d91aa9ce",
+      "resumePdfSha256": "c38ac1db3ff7e3f7813c915d84553f76874c9bf090f0769763da74d0ab5aedab",
+      "coverLetterPdfSha256": "7fe16bc6b7ff41a0fd08deff79d39498cf8d22c5a1664882c2ffb86c158cfff9",
+      "coverLetterMarkdownSha256": "453f05674c5c696a4a3e19fc4e9b01ec000df9d203f6f755a6857d181c3ab108",
+      "scopedProjectSha256": {
+        "project-07.html": "c1f423c044c80f3a73eb4d0d64748956ab471de32b1ed15e25f16f76986a5414",
+        "project-04.html": "fae7b7f130b8f26613d283381a4d4eb2519c4e89c0de50f2b7fd33268f256cb7",
+        "project-05.html": "f6decd16edbd6c6e2bc55968a2be7864fe3e02c65191ff0549d053b72fed5532",
+        "project-02.html": "f066e3064aa9131667cc28c627c35bcb294b756de2d6ec6aea15628dd9e1d01a"
+      }
+    },
+    "renderer": {
+      "browser": {
+        "name": "chrome-headless-shell",
+        "version": "Google Chrome for Testing 149.0.7827.55"
+      },
+      "htmlPath": "tmp/tailored-resumes/bubble-director-product-design.html",
+      "pdfPath": "output/pdf/Wally-Mostafa-Bubble-Director-Product-Design-Resume.pdf",
+      "fontWait": true,
+      "fontProfile": "portfolio-pdf"
+    },
+    "coverLetterRenderer": {
+      "browser": {
+        "name": "chrome-headless-shell",
+        "version": "Google Chrome for Testing 149.0.7827.55"
+      },
+      "htmlPath": "tmp/tailored-resumes/bubble-director-product-design-cover-letter.html",
+      "pdfPath": "output/pdf/Wally-Mostafa-Bubble-Director-Product-Design-Cover-Letter.pdf",
+      "fontWait": true,
+      "fontProfile": "portfolio-pdf"
+    },
+    "coverLetter": {
+      "ok": true,
+      "failures": [],
+      "pageCount": 1,
+      "sizeBytes": 25103,
+      "templateVersion": "real-chemistry-21grams-v1",
+      "fonts": {
+        "display": "Syne 800",
+        "body": "Instrument Sans 400/600",
+        "type3Fonts": false
+      },
+      "layout": {
+        "page": "Letter",
+        "margin": "0.58in 0.62in",
+        "header": "centered-rule"
+      }
+    },
+    "ats": {
+      "ok": true,
+      "pdfPath": "output/pdf/Wally-Mostafa-Bubble-Director-Product-Design-Resume.pdf",
+      "pageCount": 2,
+      "fileSize": 72332,
+      "annotations": [
+        {
+          "page": 1,
+          "uri": "mailto:wmostafa12@gmail.com"
+        },
+        {
+          "page": 1,
+          "uri": "https://linkedin.com/in/wallymo"
+        },
+        {
+          "page": 1,
+          "uri": "https://wallymo.github.io/bubble-director-product-design/"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/6748"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/4629"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.red-dot.org/project/dxa-digital-experience-audit-55219"
+        }
+      ],
+      "fontCompatibility": {
+        "type3Fonts": false
+      },
+      "coverage": [
+        {
+          "id": "nyc-hybrid-relocation-path",
+          "requirement": "Be within the New York City metro area for hybrid work or use Bubble's stated relocation-assistance path.",
+          "priority": "hard-gate",
+          "evidenceStatus": "direct",
+          "matchMode": "contextual",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "Raleigh, NC"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "product-design-and-plg-saas-tenure",
+          "requirement": "Bring 10+ years of product design experience on difficult UX problems, including PLG SaaS.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "contextual",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "product design",
+            "enterprise UX",
+            "SaaS"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "design-team-leadership-and-scale",
+          "requirement": "Bring 5+ years leading design teams, ideally while scaling a high-growth startup team.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "contextual",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "2 to 30",
+            "product design team"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "design-hiring-and-coaching",
+          "requirement": "Recruit senior product-design talent and provide regular coaching, feedback, development, and growth support.",
+          "priority": "core",
+          "evidenceStatus": "none",
+          "matchMode": "not-supported",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "design hiring",
+            "regular coaching and feedback",
+            "performance management"
+          ]
+        },
+        {
+          "id": "design-process-discovery-delivery",
+          "requirement": "Establish product-design practices across discovery, validation, delivery, launch scoping, and iteration.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "Research & Experience Strategy",
+            "prototype validation",
+            "client iteration"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "design-system-leadership",
+          "requirement": "Refine a modern, intuitive design system and apply it consistently across the product.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "design-system strategy",
+            "reusable analytics components"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "user-research-and-validation",
+          "requirement": "Guide teams through user research, design exploration, refinement, testing, and idea validation.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "user research",
+            "usability testing",
+            "prototypes"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "product-vision-user-journey-and-business-balance",
+          "requirement": "Refine the product vision, ideal customer profile, and user journey while balancing user needs, design quality, scope, and business objectives.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "product strategy",
+            "roadmap decisions",
+            "journey maps"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "ai-and-no-code-product-interest",
+          "requirement": "Bring interest in AI and no-code development; prior experience is useful but optional.",
+          "priority": "preferred",
+          "evidenceStatus": "adjacent",
+          "matchMode": "contextual",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "AI workflow design",
+            "working prototype"
+          ],
+          "missingTerms": []
+        }
+      ],
+      "failures": [],
+      "warnings": []
+    },
+    "humanizer": {
+      "status": "passed",
+      "version": "2.2.0",
+      "mode": "surface-only",
+      "reviewedAt": "2026-08-05T14:25:51.771Z",
+      "copySha256": "bd6c3790ace8ea74f21a93b82a2456c439e97150cb973b9a3a0a0d23160b3e29",
+      "reviewMethod": "humanizer-skill",
+      "semanticPassAttested": true,
+      "staticChecksPassed": true
+    },
+    "route": {
+      "viewports": [
+        {
+          "name": "desktop",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-07",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-04",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-05",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-02",
+          "errors": []
+        },
+        {
+          "name": "mobile",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-07",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-04",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-05",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-02",
+          "errors": []
+        }
+      ],
+      "errors": []
+    }
+  }
+}

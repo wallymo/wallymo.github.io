@@ -526,6 +526,43 @@
       "publishStatus": "tracked-unverified"
     },
     {
+      "workflowVersion": 2,
+      "contractRevision": 7,
+      "slug": "bubble-director-product-design",
+      "roleTitle": "Bubble Director, Product Design",
+      "artifactStem": "Bubble-Director-Product-Design",
+      "configPath": "scripts/packages/bubble-director-product-design.json",
+      "targetLane": "product-ux-design",
+      "evidenceMode": "portfolio-primary",
+      "fitClass": "stretch",
+      "positioningLane": "product-ux-design",
+      "bridgeType": "level-transfer",
+      "applicationStrategy": "approved-stretch",
+      "resumeBaseMode": "ai-product-implementation",
+      "resumeBaseLeadProfile": "ai-product-implementation",
+      "resumeBaseAction": "tailor-to-jd",
+      "accountPresentation": "consolidated",
+      "resumeBaseProfiles": [
+        {
+          "id": "ai-product-implementation",
+          "version": 1
+        }
+      ],
+      "routeMode": "scoped-projects",
+      "selectedProjects": [
+        "project-07.html",
+        "project-04.html",
+        "project-05.html",
+        "project-02.html"
+      ],
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Bubble-Director-Product-Design-Resume.pdf",
+      "coverLetterPdfPath": "output/pdf/Wally-Mostafa-Bubble-Director-Product-Design-Cover-Letter.pdf",
+      "coverLetterMarkdownPath": "output/pdf/Wally-Mostafa-Bubble-Director-Product-Design-Cover-Letter.md",
+      "publishStatus": "local-only",
+      "qaStatus": "qa-passed",
+      "builtAt": "2026-08-05T14:26:01.977Z"
+    },
+    {
       "slug": "business-presentation-consultant",
       "roleTitle": "Business Presentation Consultant (PowerPoint)",
       "fitClass": "adjacent",
