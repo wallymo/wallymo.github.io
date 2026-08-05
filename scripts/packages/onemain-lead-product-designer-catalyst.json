@@ -2,7 +2,7 @@
   "workflowVersion": 2,
   "contractRevision": 7,
   "slug": "onemain-lead-product-designer-catalyst",
-  "roleTitle": "OneMain Financial Lead Product Designer, UX Design (Catalyst)",
+  "roleTitle": "OneMain Financial Enterprise Product Design",
   "artifactStem": "OneMain-Lead-Product-Designer-Catalyst",
   "fitClass": "strong",
   "routeMode": "scoped-projects",
@@ -543,7 +543,7 @@
       "User research",
       "Regulated AI"
     ],
-    "intro": "This page brings together four projects that may be useful alongside my resume for the Lead Product Designer, UX Design (Catalyst) role. The work centers on enterprise workflows and the research, systems, and regulated AI practice behind them."
+    "intro": "This page brings together four projects that may be useful alongside my resume. The work focuses on enterprise workflows, research, design systems, and regulated AI."
   },
   "contact": {
     "prompt": "Email is the best way to reach me.",
@@ -559,8 +559,8 @@
     "humanizerVersion": "2.2.0",
     "mode": "surface-only",
     "status": "passed",
-    "reviewedAt": "2026-08-05T15:56:27.890Z",
-    "copySha256": "dddb1b22ff4f0363f13a2c1a8372ef3b4c56c7356f93dec4c939669b238f0f2f",
+    "reviewedAt": "2026-08-05T16:05:41.850Z",
+    "copySha256": "6dd1b81c024d0e92220c8b055f7d832e3bd1e79e4e5bda6b13b253a06d7c2742",
     "preserved": [
       "content",
       "structure",
@@ -602,8 +602,8 @@
   },
   "qa": {
     "status": "qa-passed",
-    "builtAt": "2026-08-05T15:56:38.276Z",
-    "configInputSha256": "aa11fb36c1944b3a4d053a4ccc3207fa2ec7d49f02309711ac520b481d1902b0",
+    "builtAt": "2026-08-05T16:05:52.427Z",
+    "configInputSha256": "5ea643839ab27062c2b6eb6ab340aad3ca25243c2f9e649aed6adedd6c61f182",
     "sourceResumeSha256": "2265313e78b596a2b37d6d8f9a95081e4321b4047f142a5f0ddf22449cab4b9c",
     "resumeFoundation": {
       "id": "wally-mostafa-resume-2026-07-03",
@@ -624,8 +624,8 @@
       "registrySha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108"
     },
     "artifactHashes": {
-      "routeSha256": "bf089cef176bc81a40c10593e18d08e987078a71d853e700779077531a095bba",
-      "resumePdfSha256": "4299924d0cb58b640a136692487407badae5343eab26300ca91b2a3d0241b80a",
+      "routeSha256": "e0870d3ebafeeffb6b4b30720edcc355739ecb7fa2a8390bb8ac851befa9b1c0",
+      "resumePdfSha256": "38ae517ae8d0cd6001aa0411181c418e5e5e981859d4221af558d87e599c2133",
       "coverLetterPdfSha256": null,
       "coverLetterMarkdownSha256": null,
       "scopedProjectSha256": {
@@ -651,7 +651,7 @@
       "ok": true,
       "pdfPath": "output/pdf/Wally-Mostafa-OneMain-Lead-Product-Designer-Catalyst-Resume.pdf",
       "pageCount": 2,
-      "fileSize": 72771,
+      "fileSize": 72751,
       "annotations": [
         {
           "page": 1,
@@ -843,8 +843,8 @@
       "status": "passed",
       "version": "2.2.0",
       "mode": "surface-only",
-      "reviewedAt": "2026-08-05T15:56:27.890Z",
-      "copySha256": "dddb1b22ff4f0363f13a2c1a8372ef3b4c56c7356f93dec4c939669b238f0f2f",
+      "reviewedAt": "2026-08-05T16:05:41.850Z",
+      "copySha256": "6dd1b81c024d0e92220c8b055f7d832e3bd1e79e4e5bda6b13b253a06d7c2742",
       "reviewMethod": "humanizer-skill",
       "semanticPassAttested": true,
       "staticChecksPassed": true
