@@ -558,9 +558,38 @@
       "resumePdfPath": "output/pdf/Wally-Mostafa-Bubble-Director-Product-Design-Resume.pdf",
       "coverLetterPdfPath": "output/pdf/Wally-Mostafa-Bubble-Director-Product-Design-Cover-Letter.pdf",
       "coverLetterMarkdownPath": "output/pdf/Wally-Mostafa-Bubble-Director-Product-Design-Cover-Letter.md",
-      "publishStatus": "local-only",
+      "publishStatus": "live-verified",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-08-05T14:38:26.653Z"
+      "builtAt": "2026-08-05T14:38:26.653Z",
+      "verification": {
+        "verifiedAt": "2026-08-05T14:41:48.152Z",
+        "routeUrl": "https://wallymo.github.io/bubble-director-product-design/",
+        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-Bubble-Director-Product-Design-Resume.pdf",
+        "configUrl": "https://wallymo.github.io/scripts/packages/bubble-director-product-design.json",
+        "projectUrls": [
+          "https://wallymo.github.io/bubble-director-product-design/project-04.html",
+          "https://wallymo.github.io/bubble-director-product-design/project-05.html",
+          "https://wallymo.github.io/bubble-director-product-design/project-02.html",
+          "https://wallymo.github.io/bubble-director-product-design/project-07.html"
+        ],
+        "configSha256": "224037413e5bfeb2f879d51880162c6215b6665f9a16c1b4eb0fbf8aae267239",
+        "pdfSha256": "0fdbf19dc91ecfe0a4e2fb9177ae5d2589f8c6fffe2c469ce56d786459a17aee",
+        "resumeBaseProfilesUrl": "https://wallymo.github.io/scripts/resume-base-profiles.json",
+        "resumeBaseProfilesSha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108",
+        "coverLetterPdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-Bubble-Director-Product-Design-Cover-Letter.pdf",
+        "coverLetterMarkdownUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-Bubble-Director-Product-Design-Cover-Letter.md",
+        "coverLetterPdfSha256": "adba36d469238c83fe07fbb13660436763df3395272fac365a3b63df1d01f44c",
+        "coverLetterMarkdownSha256": "453f05674c5c696a4a3e19fc4e9b01ec000df9d203f6f755a6857d181c3ab108",
+        "routeSha256": "40273ebb7996d47c44ee8fc4069f82bf4d075029e8d7ba411063ed2c70c39f8b",
+        "scopedProjectSha256": {
+          "project-04.html": "34b0ff83b0005300dcc01624d96cc9fdd504279b53aea82d549c6584a9a5f4ff",
+          "project-05.html": "156633d0acaad06c9dd27af007351df17aeb53c3cbad7eec1169c0270e041d42",
+          "project-02.html": "e98ce2cf969ee3a51170036754352f20892dc20bf71d08962288c32664ef722e",
+          "project-07.html": "7877c135cb646c2c1c5e673c8d8f77ab8ec5f72ed12ae0a9f9124d985231b979"
+        },
+        "configInputSha256": "3b71a573959cdeeb651b163eff0e0338ff7c2825410260c2ac35c1332a0c6128",
+        "qaBuiltAt": "2026-08-05T14:38:26.653Z"
+      }
     },
     {
       "slug": "business-presentation-consultant",
