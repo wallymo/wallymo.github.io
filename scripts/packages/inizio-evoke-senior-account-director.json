@@ -379,10 +379,11 @@
     "date": "2026-08-05",
     "greeting": "Dear Inizio Evoke hiring team,",
     "paragraphs": [
-      "I am applying for the Senior Account Director role with Inizio Evoke. During my second and most recent stint at FCB Health, I was one of two consumer account leads on the agency's largest pharmaceutical business. I managed the $20M Namenda XR direct-to-consumer launch and led the broadcast workstream for three national television commercials in one year. The work covered market research, med-legal review, FDA preclearance, production, talent and location coordination, and network clearances. The spots drove a 45% increase in new-to-brand consumers within seven weeks. Earlier at FCB Health, I supported the $10M NUVIGIL consumer business, owning weekly client status and financial reporting, OPDP submissions, multichannel campaign delivery, and annual strategic recommendations.",
-      "After FCB Health, I joined Scout Marketing as an Account Supervisor / Digital Strategist and led Jazz Pharmaceuticals' XYREM consumer work. I guided unbranded campaigns across digital, print, and in-office channels, including Jazz's first unbranded social campaign and a digital program that doubled qualified traffic to the brand site. Earlier in my account career at RosettaWishbone, I was the primary client contact across brand teams, national affiliates, and vendors. I also handled briefs, scopes of work, key opinion leader communication, client status, and financial reporting for an Africa and Middle East advisory board in Dubai.",
-      "Since my last titled account role, I have stayed close to clients while adding experience in team leadership, analytics, and regulated workflow design. At Kinesso, I grew a distributed design team from 2 to 30 and led work for enterprise analytics used by 7,000+ people across 22 brands. Today, I build tools for pharmaceutical agencies that support claim review, brief intake, scoping, review routing, and MLR preparation. I am coming back to account leadership with a clearer view of how teams work and where delivery breaks down. I am also better at turning data into recommendations clients can use.",
-      "The role makes sense for where I am now: it brings me back to healthcare account leadership with more experience building teams and improving delivery. I would welcome the chance to discuss how that background could support Inizio Evoke's clients and teams."
+      "I am applying for the Senior Account Director role at Inizio Evoke. I spent eight years managing healthcare and pharmaceutical accounts, with day-to-day responsibility for client relationships, regulated multichannel work, budgets, scopes, and performance recommendations. Since then, I have led UX teams and built AI tools for pharmaceutical agencies. I believe I am a good fit because I know the account work firsthand and have learned how to improve the systems behind it.",
+      "FCB Health was the center of my agency career. During my second stint there, I was one of two consumer account leads on the agency's largest pharmaceutical business and managed the $20M Namenda XR direct-to-consumer launch. I led the broadcast workstream for three national commercials in one year, from market research and med-legal review through FDA preclearance, production, and network clearance. The spots drove a 45% increase in new-to-brand consumers within seven weeks. Earlier, on the $10M NUVIGIL consumer business, I owned weekly client status and financial reporting, OPDP submissions, multichannel delivery, and annual strategic recommendations.",
+      "My account-management experience began at RosettaWishbone, where I was the primary contact across client brand teams, national affiliates, and vendors. I handled briefs, scopes of work, key opinion leader communication, client status, and financial reporting for Pfizer work, including an Africa and Middle East advisory board in Dubai. At Scout Marketing, I was promoted to Account Supervisor / Digital Strategist and led Jazz Pharmaceuticals' XYREM consumer work across digital, print, and in-office channels. That included Jazz's first unbranded social campaign and a digital program that doubled qualified traffic to the brand site.",
+      "After account management, I moved into pharmaceutical UX and then enterprise design leadership. At Heartbeat Ideas, I translated research and stakeholder input into patient, HCP, and brand-team experiences. At Kinesso, I grew a distributed design team from 2 to 30 and led enterprise analytics work used by more than 7,000 people across 22 brands. Today, I build AI tools for pharmaceutical agencies that support claim review, brief intake, scoping, review routing, and MLR preparation. That work has sharpened how I diagnose delivery problems and help teams make clearer decisions.",
+      "I am ready to return to healthcare account leadership with more experience leading teams and improving how work gets delivered. I would welcome the chance to discuss what that could look like at Inizio Evoke."
     ],
     "closing": "Sincerely,",
     "signature": "Wally Mostafa",
@@ -614,8 +615,8 @@
     "humanizerVersion": "2.2.0",
     "mode": "rewrite-requested",
     "status": "passed",
-    "reviewedAt": "2026-08-05T13:06:04.160Z",
-    "copySha256": "d4b04ae08f4f73bdb320f962faf1cac47c80e3d1623dabe2e2a0bbce37a905a1",
+    "reviewedAt": "2026-08-05T16:05:07.699Z",
+    "copySha256": "07af23f3f016a4c0cf7db6b7e4848ffcad6419a09c90ce5ac453052a22beb245",
     "preserved": [
       "claims"
     ],
@@ -657,8 +658,8 @@
   },
   "qa": {
     "status": "qa-passed",
-    "builtAt": "2026-08-05T13:06:19.317Z",
-    "configInputSha256": "5b4a802af0bf3d0324549cd0ea2cd29d9cb56f01d064925902d42b1bb4f5e93c",
+    "builtAt": "2026-08-05T16:05:29.510Z",
+    "configInputSha256": "8c8f9d920ba3bbc50de86eccc7bbe2c4e39323598582cca2e3a44368ec42f4a7",
     "sourceResumeSha256": "2265313e78b596a2b37d6d8f9a95081e4321b4047f142a5f0ddf22449cab4b9c",
     "resumeFoundation": {
       "id": "wally-mostafa-resume-2026-07-03",
@@ -680,9 +681,9 @@
     },
     "artifactHashes": {
       "routeSha256": "a27c0ab2cceafaf66e08bfa2cebd9791d4d46c75ec32acbf3f49575e6191991d",
-      "resumePdfSha256": "30c13b38d869c9e5affc5213c1365dcbf99c0ebaf0e567379504d76c7f6b92c2",
-      "coverLetterPdfSha256": "38408c9359ae2ae51c783902ba982b5a3c98e9754188ae0f774cf5fd4720c890",
-      "coverLetterMarkdownSha256": "d4b3ca1b8f065bf4be96f447e993e33a3b54eb16eb1c8adb0891ea70562e3d1c",
+      "resumePdfSha256": "bc861f65831f3dd2339fc960b69559049abb62ab7d625c0ce3182c637eb05831",
+      "coverLetterPdfSha256": "c39135040f76b040c959811b991dbf2d1936cc4130e2d8d972eb081daea8bb1f",
+      "coverLetterMarkdownSha256": "81f75e48297bcbed1574b6431f7d93a40da22a2b905018cde2f99fef89152fe2",
       "scopedProjectSha256": {
         "project-01.html": "d1e7b2cb3c93b3320b6771729ae469a5eef124c85501adeea0638de4193f0bf4",
         "project-06.html": "df082e05e7648c402081e5ec5aedb243d65fcf50137371234c3f1e7efa3dd9eb",
@@ -713,7 +714,7 @@
       "ok": true,
       "failures": [],
       "pageCount": 1,
-      "sizeBytes": 25688,
+      "sizeBytes": 26219,
       "templateVersion": "real-chemistry-21grams-v1",
       "fonts": {
         "display": "Syne 800",
@@ -891,8 +892,8 @@
       "status": "passed",
       "version": "2.2.0",
       "mode": "rewrite-requested",
-      "reviewedAt": "2026-08-05T13:06:04.160Z",
-      "copySha256": "d4b04ae08f4f73bdb320f962faf1cac47c80e3d1623dabe2e2a0bbce37a905a1",
+      "reviewedAt": "2026-08-05T16:05:07.699Z",
+      "copySha256": "07af23f3f016a4c0cf7db6b7e4848ffcad6419a09c90ce5ac453052a22beb245",
       "reviewMethod": "humanizer-skill",
       "semanticPassAttested": true,
       "staticChecksPassed": true
