@@ -12,7 +12,7 @@
     "project-03.html"
   ],
   "job": {
-    "company": "Lonely Planet / Red Ventures",
+    "company": "Lonely Planet",
     "roleTitle": "Account Manager, Integrated Marketing",
     "jobId": "not-provided",
     "jobUrl": "not-provided",
@@ -328,13 +328,31 @@
     "applicationStrategy": "direct",
     "bridgeThesis": "the day-to-day link between clients and cross-functional teams",
     "proofIds": [
-      "addition:rosetta-prevenar-client-contact",
-      "addition:fcb-nuvigil-client-operations",
+      "account-management-01",
+      "account-management-02",
       "account-management-03"
     ],
     "remainingGap": null
   },
-  "coverLetter": null,
+  "coverLetter": {
+    "trigger": "user-requested",
+    "date": "2026-08-04",
+    "greeting": "Dear Lonely Planet hiring team,",
+    "paragraphs": [
+      "I am applying for the Account Manager, Integrated Marketing role with Lonely Planet. I spent eight years in agency account management, progressing from Account Coordinator to Account Supervisor while leading Fortune 500 relationships and integrated campaigns. Staying close to the client while keeping a complicated campaign moving is familiar territory for me.",
+      "At FCB Health, I was one of two consumer account leads on the agency's largest pharma business and managed a $20M brand budget. I also owned the broadcast workstream for three national television commercials in one year, coordinating market research, med-legal review, production, talent and location logistics, and network clearances. The spots drove a 45% increase in new-to-brand consumers within seven weeks.",
+      "Earlier, I managed a national campaign across Times Square NASDAQ, television, Xbox Live, radio, outdoor, and consumer journals while working with media, digital, and print vendors. At RosettaWishbone, I served as the primary client contact across brand teams, national affiliates, and vendors. I also owned briefs, scopes, stakeholder communication, client status, and financial reporting for an Africa and Middle East advisory board in Dubai.",
+      "My work since account management has made me more useful to clients and delivery teams. In UX, enterprise product, analytics, and AI implementation roles, I have learned to turn feedback into clear next steps, improve internal workflows, and make complex information easier to act on. At Kinesso, I built a repeatable audit workflow that turned channel scoring and benchmarks into presentation-ready recommendations.",
+      "The job calls for someone who can understand what was sold, get the right people moving, handle feedback, and bring the campaign home with useful reporting. That is the kind of account work I want to return to. I would welcome the chance to discuss how my agency background and more recent product work could support the team."
+    ],
+    "closing": "Sincerely,",
+    "signature": "Wally Mostafa",
+    "proofIds": [
+      "account-management-01",
+      "account-management-02",
+      "account-management-03"
+    ]
+  },
   "resume": {
     "foundationId": "wally-mostafa-resume-2026-07-03",
     "compositionMode": "profile-complete",
@@ -567,8 +585,8 @@
     "humanizerVersion": "2.2.0",
     "mode": "surface-only",
     "status": "passed",
-    "reviewedAt": "2026-08-05T01:25:47.191Z",
-    "copySha256": "428235863d359233936185a78c1781360ab8de1b99996b1bb531cbf63fbbd9d2",
+    "reviewedAt": "2026-08-05T01:38:14.392Z",
+    "copySha256": "e6a32ad135407f4925b6c11edd387f94238c81fdbf564577d2881fc2b7c5732c",
     "preserved": [
       "content",
       "structure",
@@ -610,8 +628,8 @@
   },
   "qa": {
     "status": "qa-passed",
-    "builtAt": "2026-08-05T01:26:01.004Z",
-    "configInputSha256": "88392f08d6ab714bd8257cd2149e670c96807dc22106611f9f5d392f3a1ff91f",
+    "builtAt": "2026-08-05T01:38:23.796Z",
+    "configInputSha256": "8d80874cee0f5e9c4287fba32024065d0c40c743c24636d87a89d7c38dcd1369",
     "sourceResumeSha256": "2265313e78b596a2b37d6d8f9a95081e4321b4047f142a5f0ddf22449cab4b9c",
     "resumeFoundation": {
       "id": "wally-mostafa-resume-2026-07-03",
@@ -633,9 +651,9 @@
     },
     "artifactHashes": {
       "routeSha256": "343f7068d846dc77922ac5b97d20f9ef4a5e1cb35be03558d9e33faa2be5b175",
-      "resumePdfSha256": "7af1b3a6e0185d4b6296796b914c6991706a5f248916f9f6fc6cdaa48ef8dda9",
-      "coverLetterPdfSha256": null,
-      "coverLetterMarkdownSha256": null,
+      "resumePdfSha256": "343661f46beaa8c9b7a41afe41436f778752a78141dd51900dc144bc3a4f7b3a",
+      "coverLetterPdfSha256": "e0924948c3d57a543050450e9e7c5b7a7c71e673e401640166f6fa801c11eb8e",
+      "coverLetterMarkdownSha256": "58c040337ec471f0eaad993d9e00aeeb6ae00a42bc468bbb8c7e6c4f4ff3f9cb",
       "scopedProjectSha256": {
         "project-06.html": "fff11692794e4702f5b3528d148debf49822b681e461122b980bfd829956b416",
         "project-02.html": "0422f9d883b95b8f92841aece0c46ad623a18a760a81ccfd8aacfd2595320ed6",
@@ -652,8 +670,33 @@
       "fontWait": true,
       "fontProfile": "portfolio-pdf"
     },
-    "coverLetterRenderer": null,
-    "coverLetter": null,
+    "coverLetterRenderer": {
+      "browser": {
+        "name": "chrome-headless-shell",
+        "version": "Google Chrome for Testing 149.0.7827.55"
+      },
+      "htmlPath": "tmp/tailored-resumes/lonely-planet-account-manager-cover-letter.html",
+      "pdfPath": "output/pdf/Wally-Mostafa-Lonely-Planet-Account-Manager-Cover-Letter.pdf",
+      "fontWait": true,
+      "fontProfile": "portfolio-pdf"
+    },
+    "coverLetter": {
+      "ok": true,
+      "failures": [],
+      "pageCount": 1,
+      "sizeBytes": 24515,
+      "templateVersion": "real-chemistry-21grams-v1",
+      "fonts": {
+        "display": "Syne 800",
+        "body": "Instrument Sans 400/600",
+        "type3Fonts": false
+      },
+      "layout": {
+        "page": "Letter",
+        "margin": "0.58in 0.62in",
+        "header": "centered-rule"
+      }
+    },
     "ats": {
       "ok": true,
       "pdfPath": "output/pdf/Wally-Mostafa-Lonely-Planet-Account-Manager-Resume.pdf",
@@ -814,8 +857,8 @@
       "status": "passed",
       "version": "2.2.0",
       "mode": "surface-only",
-      "reviewedAt": "2026-08-05T01:25:47.191Z",
-      "copySha256": "428235863d359233936185a78c1781360ab8de1b99996b1bb531cbf63fbbd9d2",
+      "reviewedAt": "2026-08-05T01:38:14.392Z",
+      "copySha256": "e6a32ad135407f4925b6c11edd387f94238c81fdbf564577d2881fc2b7c5732c",
       "reviewMethod": "humanizer-skill",
       "semanticPassAttested": true,
       "staticChecksPassed": true

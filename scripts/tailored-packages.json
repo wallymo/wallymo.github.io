@@ -1745,32 +1745,11 @@
         "project-03.html"
       ],
       "resumePdfPath": "output/pdf/Wally-Mostafa-Lonely-Planet-Account-Manager-Resume.pdf",
-      "publishStatus": "live-verified",
+      "publishStatus": "local-only",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-08-05T01:26:01.004Z",
-      "verification": {
-        "verifiedAt": "2026-08-05T01:29:25.338Z",
-        "routeUrl": "https://wallymo.github.io/lonely-planet-account-manager/",
-        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-Lonely-Planet-Account-Manager-Resume.pdf",
-        "configUrl": "https://wallymo.github.io/scripts/packages/lonely-planet-account-manager.json",
-        "projectUrls": [
-          "https://wallymo.github.io/lonely-planet-account-manager/project-06.html",
-          "https://wallymo.github.io/lonely-planet-account-manager/project-02.html",
-          "https://wallymo.github.io/lonely-planet-account-manager/project-03.html"
-        ],
-        "configSha256": "143b6b0de87121cf9adcdb4fb476a05b5cf8f067f6e25f485c877440eb3e26c3",
-        "pdfSha256": "7af1b3a6e0185d4b6296796b914c6991706a5f248916f9f6fc6cdaa48ef8dda9",
-        "resumeBaseProfilesUrl": "https://wallymo.github.io/scripts/resume-base-profiles.json",
-        "resumeBaseProfilesSha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108",
-        "routeSha256": "343f7068d846dc77922ac5b97d20f9ef4a5e1cb35be03558d9e33faa2be5b175",
-        "scopedProjectSha256": {
-          "project-06.html": "fff11692794e4702f5b3528d148debf49822b681e461122b980bfd829956b416",
-          "project-02.html": "0422f9d883b95b8f92841aece0c46ad623a18a760a81ccfd8aacfd2595320ed6",
-          "project-03.html": "fef6cac610c99f8653d71578e92add3abc5b91e19523c6332f7211cd6ffd4a18"
-        },
-        "configInputSha256": "88392f08d6ab714bd8257cd2149e670c96807dc22106611f9f5d392f3a1ff91f",
-        "qaBuiltAt": "2026-08-05T01:26:01.004Z"
-      }
+      "builtAt": "2026-08-05T01:38:23.796Z",
+      "coverLetterPdfPath": "output/pdf/Wally-Mostafa-Lonely-Planet-Account-Manager-Cover-Letter.pdf",
+      "coverLetterMarkdownPath": "output/pdf/Wally-Mostafa-Lonely-Planet-Account-Manager-Cover-Letter.md"
     },
     {
       "slug": "m3-mi-client-success-consultant",
