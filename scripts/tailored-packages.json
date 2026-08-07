@@ -2627,6 +2627,40 @@
     },
     {
       "workflowVersion": 2,
+      "contractRevision": 7,
+      "slug": "pharma-ux-networking",
+      "roleTitle": "Pharma UX & Experience Design",
+      "artifactStem": "Pharma-UX",
+      "configPath": "scripts/packages/pharma-ux-networking.json",
+      "targetLane": "product-ux-design",
+      "evidenceMode": "portfolio-primary",
+      "fitClass": "strong",
+      "positioningLane": "product-ux-design",
+      "bridgeType": "direct",
+      "applicationStrategy": "direct",
+      "resumeBaseMode": "ai-product-implementation",
+      "resumeBaseLeadProfile": "ai-product-implementation",
+      "resumeBaseAction": "tailor-to-jd",
+      "accountPresentation": "consolidated",
+      "resumeBaseProfiles": [
+        {
+          "id": "ai-product-implementation",
+          "version": 1
+        }
+      ],
+      "routeMode": "scoped-projects",
+      "selectedProjects": [
+        "project-01.html",
+        "project-03.html",
+        "project-04.html"
+      ],
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Pharma-UX-Resume.pdf",
+      "publishStatus": "local-only",
+      "qaStatus": "qa-passed",
+      "builtAt": "2026-08-07T14:17:20.129Z"
+    },
+    {
+      "workflowVersion": 2,
       "contractRevision": 5,
       "slug": "pharmaceutical-agency-account-supervisor",
       "roleTitle": "Pharmaceutical Agency Account Supervisor",

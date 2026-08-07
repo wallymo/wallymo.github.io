@@ -1,0 +1,660 @@
+{
+  "workflowVersion": 2,
+  "contractRevision": 7,
+  "slug": "pharma-ux-networking",
+  "roleTitle": "Pharma UX & Experience Design",
+  "artifactStem": "Pharma-UX",
+  "fitClass": "strong",
+  "routeMode": "scoped-projects",
+  "selectedProjects": [
+    "project-01.html",
+    "project-03.html",
+    "project-04.html"
+  ],
+  "job": {
+    "company": "General pharma agency networking use",
+    "roleTitle": "Pharma UX & Experience Design",
+    "jobId": "general-profile",
+    "jobUrl": "not-provided",
+    "sourceChannel": "user-requested-general-resume",
+    "dateCaptured": "2026-08-07",
+    "location": "Raleigh, NC; remote opportunities",
+    "atsVendor": "not-applicable",
+    "rawJd": "General networking profile, not an employer posting.\n\nAudience: experience-design, UX, product-design, and innovation leaders at pharmaceutical and healthcare agencies.\n\nFocus: pharma UX and experience strategy; patient, HCP, and internal brand-team experiences; research and journey design; enterprise product design and design systems; regulated workflows; cross-functional delivery; and practical AI tools for agency work.\n\nThe resume and matched portfolio route should support a warm introduction. The resume carries the career argument. The portfolio uses a quiet showcase hero, the existing work content, and a simple closing rather than a second sales pitch.\n\nThis package must be fit-gated again against any future employer job description."
+  },
+  "classification": {
+    "targetLane": "product-ux-design",
+    "evidenceMode": "portfolio-primary",
+    "primarySource": "The portfolio directly shows pharma workflow design, patient and HCP experience work, enterprise UX, research, data visualization, and reusable design systems.",
+    "supportingSource": "The resume confirms nearly eight years in UX and product design, a 15-year healthcare and client-strategy background, team growth from 2 to 30, enterprise scale across 7,000+ users and 22 brands, and current regulated product work.",
+    "hardGateStatus": "pass",
+    "hardGates": [
+      {
+        "gate": "Direct UX and product-design experience",
+        "status": "pass",
+        "requirementId": "ux-product-design-experience",
+        "evidence": "Direct UX and product-design work runs from Heartbeat Ideas in August 2018 through current product strategy, workflow design, and hands-on prototypes."
+      },
+      {
+        "gate": "Direct pharmaceutical and regulated healthcare experience",
+        "status": "pass",
+        "requirementId": "pharma-regulated-experience",
+        "evidence": "The record includes pharma account leadership, patient and HCP UX, oncology work, MLR review, FDA and HIPAA requirements, and current AI tools for pharma agency workflows."
+      }
+    ]
+  },
+  "requirements": [
+    {
+      "id": "ux-product-design-experience",
+      "text": "Show direct UX and product-design experience with clear ownership of research, workflows, prototypes, systems, and delivery.",
+      "priority": "hard-gate",
+      "source": "jd",
+      "confidence": "contextual",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Directly titled UX and experience-design work began in August 2018 and continues through current product and workflow design.",
+        "Kinesso leadership grew product design from 2 to 30 and supported enterprise analytics used by 7,000+ people across 22 white-label brands."
+      ],
+      "proofIds": [
+        "heartbeat-01",
+        "heartbeat-02",
+        "kinesso-01",
+        "kinesso-02"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "nearly eight years",
+        "UX and product design",
+        "2 to 30"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "pharma-regulated-experience",
+      "text": "Bring direct pharmaceutical and healthcare experience across regulated digital work and agency delivery.",
+      "priority": "hard-gate",
+      "source": "jd",
+      "confidence": "contextual",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Heartbeat work covered research, journeys, flows, wireframes, and prototypes for patient, HCP, and internal brand-team experiences.",
+        "Current Hedgehox work covers MLR claim review, review routing, submission capture, FDA monitoring, agency scoping, and biopharma web design."
+      ],
+      "proofIds": [
+        "hedgehox-02",
+        "hedgehox-03",
+        "hedgehox-04",
+        "heartbeat-01",
+        "heartbeat-02",
+        "omnicom-01"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "pharma",
+        "patient",
+        "HCP",
+        "MLR"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "research-experience-strategy",
+      "text": "Use research and experience strategy to turn user and stakeholder needs into clear product direction.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "contextual",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Heartbeat work used stakeholder input, competitive audits, and user needs to guide regulated product and campaign experiences.",
+        "The portfolio documents journey mapping, user flows, prototypes, usability work, research operations, and enterprise feedback loops."
+      ],
+      "proofIds": [
+        "heartbeat-01",
+        "heartbeat-02",
+        "heartbeat-03",
+        "kinesso-03"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "Research & Experience Strategy",
+        "journey maps",
+        "user flows",
+        "prototypes"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "enterprise-ux-design-systems",
+      "text": "Lead enterprise UX and reusable systems for complex products at scale.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "contextual",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Kinesso work covered enterprise analytics, data visualization, dashboard building, brand theming, reusable components, and design leadership across a distributed team.",
+        "The Enterprise Design System case study shows the work in context, including the Digital Experience Audit workflow and award recognition."
+      ],
+      "proofIds": [
+        "kinesso-01",
+        "kinesso-02",
+        "kinesso-03",
+        "kinesso-04"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "Enterprise UX & Design Systems",
+        "7,000+",
+        "22 white-label brands"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "product-strategy-regulated-workflows",
+      "text": "Carry product and workflow design from discovery into prototypes and build-ready delivery.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "contextual",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Hedgehox and One Block Away work covers discovery, requirements, product surfaces, working POCs, demos, roadmap decisions, and client iteration.",
+        "Claims Detector makes promotional claims, evidence gaps, and audit-ready annotations visible before MLR submission."
+      ],
+      "proofIds": [
+        "hedgehox-02",
+        "hedgehox-03",
+        "one-block-away-01",
+        "one-block-away-04"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "Product Strategy & POC Delivery",
+        "prototype validation",
+        "build-ready"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "agency-client-context",
+      "text": "Work across strategy, creative, account, product, and engineering teams with a clear understanding of pharma agency delivery.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "contextual",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Eight years of direct pharma account leadership provides client, brand, budget, brief, timeline, and MLR context.",
+        "Later UX work carried that context into research, design recommendations, prototypes, and engineering handoff."
+      ],
+      "proofIds": [
+        "heartbeat-03",
+        "omnicom-02",
+        "account-management-01",
+        "account-management-03"
+      ],
+      "destinations": [
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "pharma agency",
+        "account",
+        "strategy",
+        "engineering"
+      ],
+      "matchMode": "recognized-equivalent"
+    }
+  ],
+  "fitGate": {
+    "resumeBase": {
+      "mode": "ai-product-implementation",
+      "sourceProfiles": [
+        {
+          "id": "ai-product-implementation",
+          "version": 1
+        }
+      ],
+      "leadProfileId": "ai-product-implementation",
+      "accountPresentation": "consolidated",
+      "action": "tailor-to-jd",
+      "rationale": "This networking variant is built around UX, research, product design, and regulated workflow design. The AI/Product profile holds the direct experience evidence; earlier account leadership stays consolidated as pharma agency context."
+    },
+    "supportedOverlap": [
+      "Nearly eight years of directly titled UX and product-design work.",
+      "Pharma UX for patient, HCP, and internal brand-team experiences.",
+      "Current regulated product work for MLR review, routing, submission capture, FDA monitoring, scoping, and biopharma web design.",
+      "Enterprise experience-design leadership across 7,000+ users, 22 white-label brands, and a team grown from 2 to 30.",
+      "Eight years of earlier pharma account leadership, which adds agency, client, brand, budget, and review context."
+    ],
+    "unsupportedRequirements": [],
+    "actualMismatches": [],
+    "missingEvidence": [
+      "There is no employer job description for this networking package. Any specific opening still needs its own fit gate and proof review."
+    ],
+    "coverLetterBridge": {
+      "status": "not-needed",
+      "rationale": "This is a warm networking introduction rather than an employer application. The resume and portfolio directly establish the UX, pharma, research, enterprise-design, and regulated-workflow story."
+    },
+    "recommendation": "Use this package for warm introductions to pharma agency experience, UX, product-design, and innovation leaders. Keep the portfolio as a quiet supporting exhibit and run a fresh fit gate before using it for a specific opening."
+  },
+  "positioning": {
+    "laneId": "product-ux-design",
+    "targetIdentity": "Pharma UX and experience design leader",
+    "employerNeed": "Give a pharma agency experience leader a clear look at relevant UX, enterprise-design, and regulated-workflow work.",
+    "bridgeType": "direct",
+    "applicationStrategy": "direct",
+    "bridgeThesis": "research and user needs",
+    "proofIds": [
+      "heartbeat-02",
+      "kinesso-01",
+      "hedgehox-02"
+    ],
+    "remainingGap": null
+  },
+  "coverLetter": null,
+  "resume": {
+    "foundationId": "wally-mostafa-resume-2026-07-03",
+    "compositionMode": "foundation-complete",
+    "layoutDensity": "compact",
+    "summary": "Pharma UX and experience design leader with nearly eight years in UX and product design, backed by a 15-year career across pharma, healthcare, enterprise platforms, and client strategy. I use research and user needs to shape journeys, prototypes, reusable systems, and build-ready direction. At Kinesso, I grew product design from 2 to 30 and led design for enterprise analytics used by 7,000+ people across 22 brands. My pharma work includes patient, HCP, and internal experiences within FDA, HIPAA, and MLR requirements.",
+    "skillIds": [
+      "research-experience-strategy",
+      "regulated-healthcare-client-delivery",
+      "enterprise-ux-design-systems",
+      "product-strategy-poc-delivery"
+    ],
+    "skills": [
+      {
+        "label": "Research & Experience Strategy",
+        "description": "Stakeholder interviews, competitive audits, journey maps, user flows, wireframes, prototypes, usability testing, and research-led product direction"
+      },
+      {
+        "label": "Regulated Healthcare & Client Delivery",
+        "description": "11 years across pharma/healthcare communications, FDA/HIPAA/MLR workflows, HCP/patient UX, client workshops, and stakeholder adoption"
+      },
+      {
+        "label": "Enterprise UX & Design Systems",
+        "description": "Team scaling (2 to 30), enterprise analytics, workflow UX, data visualization, component libraries, and accessibility (WCAG)"
+      },
+      {
+        "label": "Product Strategy & POC Delivery",
+        "description": "Discovery, scoping, requirements, prototype validation, demo narratives, build-ready logic, and production handoff"
+      }
+    ],
+    "roles": {
+      "hedgehox": [
+        "Designed Claims Detector workflows that identify promotional claims, surface evidence gaps, and pre-populate audit-ready annotations before MLR submission",
+        "Converted pharma agency needs into AI tools for MLR claim review, brief intake, scoping, review routing, submission capture, and FDA signal monitoring",
+        "Designed the full Xenagos Bio startup biopharma website from scratch, including investor-facing structure, scientific positioning, visual direction, and hidden design-system handoff",
+        "Built Scope Generator for pharma agency finance and operations teams to manage regional rate cards, brands, sub-brands, and natural-language scope changes",
+        "Developed FDA Warning Tool concepts that connect warning-letter patterns to content-risk guidance for pharma teams",
+        "Secured an investor for proprietary Claims Detection software by building the functional POC, shaping the demo story, and iterating with investors"
+      ],
+      "one-block-away": [
+        "Build client-led AI POCs that turn unclear business questions into testable product surfaces, demo flows, and roadmap decisions",
+        "Built ListingPal's AI listing-generation POC and landing page, turning basic property inputs into listing copy, social posts, ad copy, styling direction, and MLS/SEO-ready language in under 90 seconds",
+        "Built WeReady's Bailey Intelligence dashboard, translating founder inputs, GitHub signals, source health, risk scoring, and evidence trails into startup-readiness workflows",
+        "Own product strategy, UX, AI workflow design, front-end build, backend logic, demo readiness, and client iteration from first ask through working prototype",
+        "Currently building the website and sponsor strategy for a Tunisia youth soccer program, positioning the project for player advancement, community support, and donor outreach"
+      ],
+      "kinesso": [
+        "Scaled product design from 2 to 30 people across the US and Poland for enterprise analytics used by 7,000+ users across 22 white-label brands",
+        "Led UX and design-system strategy for MIE data visualization, dashboard building, brand theming, and reusable analytics components",
+        "Built the Digital Experience Audit workflow for channel scoring, benchmarks, recommendations, visualization, and presentation-ready client outputs",
+        "Design-system and analytics work earned 5 Indigo Gold, 4 Indigo Silver, and Red Dot recognition"
+      ],
+      "omnicom": [
+        "Supported oncology accounts as a freelance UX designer, combining UX design and account-management experience to strengthen regulated healthcare work",
+        "Championed UX best practices across account, strategy, creative, and delivery conversations, translating brand goals into clearer user flows, content structure, and digital recommendations"
+      ],
+      "heartbeat": [
+        "Led UX research and experience strategy for pharma and healthcare work, translating stakeholder input, competitive audits, and user needs into digital product direction",
+        "Created journey maps, site maps, user flows, wireframes, and prototypes for patient, HCP, and internal brand-team experiences across regulated healthcare programs",
+        "Partnered with strategy, creative, account, and engineering teams to move UX recommendations from research findings into build-ready product and campaign experiences"
+      ],
+      "account-management": [
+        "8 years managing Fortune 500 pharma and healthcare clients and brand budgets up to $20M across CNS/neurology, psychiatry, cardiovascular/metabolic, and sleep/wakefulness brands including NUVIGIL, Namenda XR, Lipitor, and Zoloft",
+        "One of two account consumer leads on FCB Health's largest pharma account across all verticals: TV, radio, digital, gaming, Times Square, unbranded campaigns, brand planning, and MLR review",
+        "Translated client and brand strategy into briefs, creative feedback, production requirements, timelines, and MLR-ready deliverables across account, creative, UX, and development teams"
+      ]
+    },
+    "sourceBulletIds": {
+      "hedgehox": [
+        "hedgehox-02",
+        "hedgehox-03",
+        "hedgehox-04",
+        "hedgehox-05",
+        "hedgehox-06",
+        "hedgehox-01"
+      ],
+      "one-block-away": [
+        "one-block-away-01",
+        "one-block-away-02",
+        "one-block-away-03",
+        "one-block-away-04",
+        "one-block-away-05"
+      ],
+      "kinesso": [
+        "kinesso-01",
+        "kinesso-02",
+        "kinesso-03",
+        "kinesso-04"
+      ],
+      "omnicom": [
+        "omnicom-01",
+        "omnicom-02"
+      ],
+      "heartbeat": [
+        "heartbeat-01",
+        "heartbeat-02",
+        "heartbeat-03"
+      ],
+      "account-management": [
+        "account-management-01",
+        "account-management-02",
+        "account-management-03"
+      ]
+    }
+  },
+  "hero": {
+    "eyebrow": "Pharma UX | Selected Work",
+    "tags": [
+      "Pharma UX",
+      "Experience strategy",
+      "Enterprise design systems"
+    ],
+    "intro": "I've included a few projects that may be useful context for my pharma UX and experience-design work. My resume covers the broader background."
+  },
+  "contact": {
+    "prompt": "Email and my resume are below.",
+    "signoff": "UX and experience design | Raleigh, NC"
+  },
+  "route": {
+    "presentation": "showcase",
+    "heroIntent": "resume-support",
+    "workHeading": "Selected work.",
+    "contactHeading": "Thanks for taking a look."
+  },
+  "copyReview": {
+    "humanizerVersion": "2.2.0",
+    "mode": "surface-only",
+    "status": "passed",
+    "reviewedAt": "2026-08-07T14:15:44.423Z",
+    "copySha256": "106ac079ac10c4ae987bb4879fe3c39fa59c97a27c048f2691f7ffa8a62fc146",
+    "preserved": [
+      "content",
+      "structure",
+      "claims",
+      "ending"
+    ],
+    "rewriteAuthorized": false,
+    "reviewMethod": "humanizer-skill",
+    "semanticPassAttested": true,
+    "staticChecksPassed": true,
+    "finalAntiAiPass": true,
+    "remainingTells": []
+  },
+  "constraints": {
+    "doNotClaim": [
+      "15 years in UX",
+      "15 years of UX",
+      "clinical product ownership",
+      "hands-on software engineering",
+      "scaled Claims Detector platform"
+    ],
+    "blockedTerms": [
+      "15 years in UX",
+      "15 years of UX",
+      "clinical product ownership",
+      "hands-on software engineering",
+      "scaled Claims Detector platform"
+    ]
+  },
+  "privacy": {
+    "publicSafe": true,
+    "notes": "Contains only a public-safe general pharma UX networking brief and sanitized evidence from the public resume and portfolio. It excludes recruiter details, application answers, compensation boundaries, and private eligibility information."
+  },
+  "qa": {
+    "status": "qa-passed",
+    "builtAt": "2026-08-07T14:17:20.129Z",
+    "configInputSha256": "3dd4deb981558edbe850b68a5efc355cc31ee828792c3f153902fadcac9c527b",
+    "sourceResumeSha256": "2265313e78b596a2b37d6d8f9a95081e4321b4047f142a5f0ddf22449cab4b9c",
+    "resumeFoundation": {
+      "id": "wally-mostafa-resume-2026-07-03",
+      "sourcePdfSha256": "f9b05b6c3c134262b1af6c5734363daf4385cf335407a139779a37d138adf1aa"
+    },
+    "resumeBase": {
+      "mode": "ai-product-implementation",
+      "sourceProfiles": [
+        {
+          "id": "ai-product-implementation",
+          "version": 1
+        }
+      ],
+      "leadProfileId": "ai-product-implementation",
+      "accountPresentation": "consolidated",
+      "action": "tailor-to-jd",
+      "registryVersion": 1,
+      "registrySha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108"
+    },
+    "artifactHashes": {
+      "routeSha256": "f3408009a7de55d97ae8693688707cb4853b6b18849609196d5e0a9c9e6ccb91",
+      "resumePdfSha256": "c5e80dea25904ba5812af8f6a669ec16395c9d2775b1f97d65c02f562c59d3f0",
+      "coverLetterPdfSha256": null,
+      "coverLetterMarkdownSha256": null,
+      "scopedProjectSha256": {
+        "project-01.html": "6f0c2eb46107c02d36e39582699c700c16d9b03e97b23bba5c945b62f2ec5be6",
+        "project-03.html": "eeb8685550e7467b1cd72715503f32fbb233d1146f0dfe5451997bdac560abed",
+        "project-04.html": "deb716cdc2e4f4791d825fd139d5427f2e264ce9708d2c2cd786af67cf4655b3"
+      }
+    },
+    "renderer": {
+      "browser": {
+        "name": "chrome-headless-shell",
+        "version": "Google Chrome for Testing 149.0.7827.55"
+      },
+      "htmlPath": "tmp/tailored-resumes/pharma-ux-networking.html",
+      "pdfPath": "output/pdf/Wally-Mostafa-Pharma-UX-Resume.pdf",
+      "fontWait": true,
+      "fontProfile": "portfolio-pdf"
+    },
+    "coverLetterRenderer": null,
+    "coverLetter": null,
+    "ats": {
+      "ok": true,
+      "pdfPath": "output/pdf/Wally-Mostafa-Pharma-UX-Resume.pdf",
+      "pageCount": 2,
+      "fileSize": 72426,
+      "annotations": [
+        {
+          "page": 1,
+          "uri": "mailto:wmostafa12@gmail.com"
+        },
+        {
+          "page": 1,
+          "uri": "https://linkedin.com/in/wallymo"
+        },
+        {
+          "page": 1,
+          "uri": "https://wallymo.github.io/pharma-ux-networking/"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/6748"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/4629"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.red-dot.org/project/dxa-digital-experience-audit-55219"
+        }
+      ],
+      "fontCompatibility": {
+        "type3Fonts": false
+      },
+      "coverage": [
+        {
+          "id": "ux-product-design-experience",
+          "requirement": "Show direct UX and product-design experience with clear ownership of research, workflows, prototypes, systems, and delivery.",
+          "priority": "hard-gate",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "nearly eight years",
+            "UX and product design",
+            "2 to 30"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "pharma-regulated-experience",
+          "requirement": "Bring direct pharmaceutical and healthcare experience across regulated digital work and agency delivery.",
+          "priority": "hard-gate",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "pharma",
+            "patient",
+            "HCP",
+            "MLR"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "research-experience-strategy",
+          "requirement": "Use research and experience strategy to turn user and stakeholder needs into clear product direction.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "Research & Experience Strategy",
+            "journey maps",
+            "user flows",
+            "prototypes"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "enterprise-ux-design-systems",
+          "requirement": "Lead enterprise UX and reusable systems for complex products at scale.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "Enterprise UX & Design Systems",
+            "7,000+",
+            "22 white-label brands"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "product-strategy-regulated-workflows",
+          "requirement": "Carry product and workflow design from discovery into prototypes and build-ready delivery.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "Product Strategy & POC Delivery",
+            "prototype validation",
+            "build-ready"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "agency-client-context",
+          "requirement": "Work across strategy, creative, account, product, and engineering teams with a clear understanding of pharma agency delivery.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "pharma agency",
+            "account",
+            "strategy",
+            "engineering"
+          ],
+          "missingTerms": []
+        }
+      ],
+      "failures": [],
+      "warnings": []
+    },
+    "humanizer": {
+      "status": "passed",
+      "version": "2.2.0",
+      "mode": "surface-only",
+      "reviewedAt": "2026-08-07T14:15:44.423Z",
+      "copySha256": "106ac079ac10c4ae987bb4879fe3c39fa59c97a27c048f2691f7ffa8a62fc146",
+      "reviewMethod": "humanizer-skill",
+      "semanticPassAttested": true,
+      "staticChecksPassed": true
+    },
+    "route": {
+      "viewports": [
+        {
+          "name": "desktop",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-01",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-03",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-04",
+          "errors": []
+        },
+        {
+          "name": "mobile",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-01",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-03",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-04",
+          "errors": []
+        }
+      ],
+      "errors": []
+    }
+  }
+}
