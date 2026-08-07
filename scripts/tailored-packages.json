@@ -3155,9 +3155,36 @@
       "resumePdfPath": "output/pdf/Wally-Mostafa-Real-Chemistry-Account-Director-Healthcare-Communications-Resume.pdf",
       "coverLetterPdfPath": "output/pdf/Wally-Mostafa-Real-Chemistry-Account-Director-Healthcare-Communications-Cover-Letter.pdf",
       "coverLetterMarkdownPath": "output/pdf/Wally-Mostafa-Real-Chemistry-Account-Director-Healthcare-Communications-Cover-Letter.md",
-      "publishStatus": "local-only",
+      "publishStatus": "live-verified",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-08-07T14:00:19.180Z"
+      "builtAt": "2026-08-07T14:00:19.180Z",
+      "verification": {
+        "verifiedAt": "2026-08-07T14:02:50.474Z",
+        "routeUrl": "https://wallymo.github.io/real-chemistry-account-director-healthcare-communications/",
+        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-Real-Chemistry-Account-Director-Healthcare-Communications-Resume.pdf",
+        "configUrl": "https://wallymo.github.io/scripts/packages/real-chemistry-account-director-healthcare-communications.json",
+        "projectUrls": [
+          "https://wallymo.github.io/real-chemistry-account-director-healthcare-communications/project-01.html",
+          "https://wallymo.github.io/real-chemistry-account-director-healthcare-communications/project-06.html",
+          "https://wallymo.github.io/real-chemistry-account-director-healthcare-communications/project-03.html"
+        ],
+        "configSha256": "0f7c9f8b7c44fde5aaecc9c2b90143c41b3be75aefb10952d78450f7acf883f3",
+        "pdfSha256": "9c9b1438a1119f4857ad62bf82050a5bdaa079842c7bbc4894b1cdd472359909",
+        "resumeBaseProfilesUrl": "https://wallymo.github.io/scripts/resume-base-profiles.json",
+        "resumeBaseProfilesSha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108",
+        "coverLetterPdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-Real-Chemistry-Account-Director-Healthcare-Communications-Cover-Letter.pdf",
+        "coverLetterMarkdownUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-Real-Chemistry-Account-Director-Healthcare-Communications-Cover-Letter.md",
+        "coverLetterPdfSha256": "05f3b14de93faa039a5102e8a6b143aa53547613f1bb91cfccb894f2167428b1",
+        "coverLetterMarkdownSha256": "a8b3ba8d233b77aaebeface49fc87f2f5e9b01afff5d5c9e97e7ddb606b0e933",
+        "routeSha256": "86ddbda9ba431bf66fcc1b3bd33c9ee75eb6562094869b9333b9cb83eee54388",
+        "scopedProjectSha256": {
+          "project-01.html": "7cf073aeb8cc3629947c7cac175d4a3c2c60a09de4173836e50683cff8885d2b",
+          "project-06.html": "65db70fb26666f8f3ca685571dccc3f3e0c032d7bfb711adbed69476a98037a4",
+          "project-03.html": "9f5f160e36a55513372853245f241b8c82c5db5fce312878729ffc1079fefa3c"
+        },
+        "configInputSha256": "839177f601f72169a425e5b6c866343b7ef006683cee1374bc029373e028d2e5",
+        "qaBuiltAt": "2026-08-07T14:00:19.180Z"
+      }
     },
     {
       "slug": "real-chemistry-account-manager",
