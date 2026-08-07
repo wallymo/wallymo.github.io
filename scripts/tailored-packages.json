@@ -3748,9 +3748,32 @@
         "project-04.html"
       ],
       "resumePdfPath": "output/pdf/Wally-Mostafa-UX-Product-Design-Resume.pdf",
-      "publishStatus": "local-only",
+      "publishStatus": "live-verified",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-08-07T23:48:26.150Z"
+      "builtAt": "2026-08-07T23:48:26.150Z",
+      "verification": {
+        "verifiedAt": "2026-08-07T23:49:41.606Z",
+        "routeUrl": "https://wallymo.github.io/ux-product-design/",
+        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-UX-Product-Design-Resume.pdf",
+        "configUrl": "https://wallymo.github.io/scripts/packages/ux-product-design.json",
+        "projectUrls": [
+          "https://wallymo.github.io/ux-product-design/project-05.html",
+          "https://wallymo.github.io/ux-product-design/project-03.html",
+          "https://wallymo.github.io/ux-product-design/project-04.html"
+        ],
+        "configSha256": "3b77af95d9381c9b866f99b6f9ec3735c66eb38be3ef9b8635dc440882742b14",
+        "pdfSha256": "01e70a6c3c4117fabaab77d85ae03aa79fc0aafd4b6d619a2399559cec41593c",
+        "resumeBaseProfilesUrl": "https://wallymo.github.io/scripts/resume-base-profiles.json",
+        "resumeBaseProfilesSha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108",
+        "routeSha256": "37395a3de804a4dded55080cf3bb10ec022801abe7472265877daaf2cab8e9e3",
+        "scopedProjectSha256": {
+          "project-05.html": "5b21e8796c919fd002fa2d0c92fc7ff5f9a05aef4e2b08fb053b94341e65fb2e",
+          "project-03.html": "af74e71c10b4e0fa0553532c2c0fb2efb06f9241a0f0b9883e42b9df988f3f26",
+          "project-04.html": "79da0c283985dc8ad80dc54cd6c3344c31c1e96d8a93d0808b842e7452a6a784"
+        },
+        "configInputSha256": "8eb8863598f89292da939bb17aee72610445c88b9938be469bd6db66432aeaa7",
+        "qaBuiltAt": "2026-08-07T23:48:26.150Z"
+      }
     },
     {
       "workflowVersion": 2,
