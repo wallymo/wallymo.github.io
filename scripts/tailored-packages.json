@@ -2655,9 +2655,32 @@
         "project-04.html"
       ],
       "resumePdfPath": "output/pdf/Wally-Mostafa-Pharma-UX-Resume.pdf",
-      "publishStatus": "local-only",
+      "publishStatus": "live-verified",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-08-07T14:17:20.129Z"
+      "builtAt": "2026-08-07T14:17:20.129Z",
+      "verification": {
+        "verifiedAt": "2026-08-07T14:22:43.746Z",
+        "routeUrl": "https://wallymo.github.io/pharma-ux-networking/",
+        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-Pharma-UX-Resume.pdf",
+        "configUrl": "https://wallymo.github.io/scripts/packages/pharma-ux-networking.json",
+        "projectUrls": [
+          "https://wallymo.github.io/pharma-ux-networking/project-01.html",
+          "https://wallymo.github.io/pharma-ux-networking/project-03.html",
+          "https://wallymo.github.io/pharma-ux-networking/project-04.html"
+        ],
+        "configSha256": "244a879d25a79d90181b989d2756b51f9e2d449b83607a4a97d28cc29b2362e8",
+        "pdfSha256": "c5e80dea25904ba5812af8f6a669ec16395c9d2775b1f97d65c02f562c59d3f0",
+        "resumeBaseProfilesUrl": "https://wallymo.github.io/scripts/resume-base-profiles.json",
+        "resumeBaseProfilesSha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108",
+        "routeSha256": "f3408009a7de55d97ae8693688707cb4853b6b18849609196d5e0a9c9e6ccb91",
+        "scopedProjectSha256": {
+          "project-01.html": "6f0c2eb46107c02d36e39582699c700c16d9b03e97b23bba5c945b62f2ec5be6",
+          "project-03.html": "eeb8685550e7467b1cd72715503f32fbb233d1146f0dfe5451997bdac560abed",
+          "project-04.html": "deb716cdc2e4f4791d825fd139d5427f2e264ce9708d2c2cd786af67cf4655b3"
+        },
+        "configInputSha256": "3dd4deb981558edbe850b68a5efc355cc31ee828792c3f153902fadcac9c527b",
+        "qaBuiltAt": "2026-08-07T14:17:20.129Z"
+      }
     },
     {
       "workflowVersion": 2,
