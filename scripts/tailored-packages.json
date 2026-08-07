@@ -3130,6 +3130,42 @@
     {
       "workflowVersion": 2,
       "contractRevision": 7,
+      "slug": "real-chemistry-21grams-senior-account-executive",
+      "roleTitle": "21GRAMS Senior Account Executive",
+      "artifactStem": "Real-Chemistry-21GRAMS-Senior-Account-Executive",
+      "configPath": "scripts/packages/real-chemistry-21grams-senior-account-executive.json",
+      "targetLane": "client-account-delivery",
+      "evidenceMode": "resume-primary",
+      "fitClass": "strong",
+      "positioningLane": "client-account-delivery",
+      "bridgeType": "direct",
+      "applicationStrategy": "direct",
+      "resumeBaseMode": "account-leadership",
+      "resumeBaseLeadProfile": "account-leadership",
+      "resumeBaseAction": "tailor-to-jd",
+      "accountPresentation": "agency-progression",
+      "resumeBaseProfiles": [
+        {
+          "id": "account-leadership",
+          "version": 1
+        }
+      ],
+      "routeMode": "scoped-projects",
+      "selectedProjects": [
+        "project-01.html",
+        "project-06.html",
+        "project-03.html"
+      ],
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Real-Chemistry-21GRAMS-Senior-Account-Executive-Resume.pdf",
+      "coverLetterPdfPath": "output/pdf/Wally-Mostafa-Real-Chemistry-21GRAMS-Senior-Account-Executive-Cover-Letter.pdf",
+      "coverLetterMarkdownPath": "output/pdf/Wally-Mostafa-Real-Chemistry-21GRAMS-Senior-Account-Executive-Cover-Letter.md",
+      "publishStatus": "local-only",
+      "qaStatus": "qa-passed",
+      "builtAt": "2026-08-07T14:15:59.390Z"
+    },
+    {
+      "workflowVersion": 2,
+      "contractRevision": 7,
       "slug": "real-chemistry-account-director-healthcare-communications",
       "roleTitle": "Real Chemistry Account Director (Healthcare Communications)",
       "artifactStem": "Real-Chemistry-Account-Director-Healthcare-Communications",
