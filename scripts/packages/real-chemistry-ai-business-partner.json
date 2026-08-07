@@ -420,7 +420,25 @@
     ],
     "remainingGap": null
   },
-  "coverLetter": null,
+  "coverLetter": {
+    "trigger": "user-requested",
+    "date": "2026-08-07",
+    "greeting": "Dear Real Chemistry hiring team,",
+    "paragraphs": [
+      "I am applying for the AI Business Partner role at Real Chemistry. The role's focus on useful AI fits the way I work. I start with a real business problem, build something people can test, and use their feedback to decide what should scale. My background combines healthcare communications, enterprise product leadership, client strategy, and current hands-on AI implementation.",
+      "At Hedgehox, I turn pharma agency workflows into AI tools for MLR claim review, brief intake, scoping, review routing, submission capture, and FDA signal monitoring. Claims Detector identifies promotional claims, surfaces evidence gaps, and prepares audit-ready annotations for human review before MLR submission. I built the functional POC, shaped the demo with investors, and secured an investor. I also built Scope Generator for agency finance and operations teams managing rate cards, brands, sub-brands, and natural-language scope changes.",
+      "Through One Block Away, I lead client discovery and turn unclear business questions into working POCs. ListingPal produces a listing campaign from basic property inputs in under 90 seconds. WeReady turns founder inputs, GitHub signals, source health, risk scoring, and evidence trails into a startup-readiness dashboard. I stay with each POC from product strategy and workflow design through a working demo and client iteration.",
+      "Earlier agency and enterprise work taught me how to bring technical and non-technical teams together. I spent eight years managing Fortune 500 pharma and healthcare clients, translating brand strategy into briefs, feedback, production requirements, timelines, and MLR-ready deliverables. At Kinesso, I helped grow a distributed product design team from 2 to 30 and led work for enterprise analytics used by more than 7,000 people across 22 brands. That experience still shapes how I explain technical choices, gather feedback, and design for adoption.",
+      "I would welcome the chance to discuss how this background could help Real Chemistry turn healthcare business needs into practical AI solutions that teams can use."
+    ],
+    "closing": "Sincerely,",
+    "signature": "Wally Mostafa",
+    "proofIds": [
+      "hedgehox-03",
+      "one-block-away-04",
+      "account-management-03"
+    ]
+  },
   "resume": {
     "foundationId": "wally-mostafa-resume-2026-07-03",
     "compositionMode": "foundation-complete",
@@ -553,8 +571,8 @@
     "humanizerVersion": "2.2.0",
     "mode": "surface-only",
     "status": "passed",
-    "reviewedAt": "2026-08-07T13:58:40.002Z",
-    "copySha256": "a1db4b10522989f91fac6a55836ceb274312ba650f0cafddcf4d517889c045e5",
+    "reviewedAt": "2026-08-07T14:15:08.289Z",
+    "copySha256": "f5b3c3e992cd3268438d8cafa60375fabdbc708793dcb88245e3521821cda3f6",
     "preserved": [
       "content",
       "structure",
@@ -595,8 +613,8 @@
   },
   "qa": {
     "status": "qa-passed",
-    "builtAt": "2026-08-07T14:00:56.993Z",
-    "configInputSha256": "fee477fb3a21bf9c731bc3c34656723e38376d84faf7276fe5cf15f1f68a103a",
+    "builtAt": "2026-08-07T14:15:18.161Z",
+    "configInputSha256": "e17e96bbc911bf5413cd5212b2afab3c5dadb0749119650c5594a0e41bc1fd47",
     "sourceResumeSha256": "2265313e78b596a2b37d6d8f9a95081e4321b4047f142a5f0ddf22449cab4b9c",
     "resumeFoundation": {
       "id": "wally-mostafa-resume-2026-07-03",
@@ -618,9 +636,9 @@
     },
     "artifactHashes": {
       "routeSha256": "bec20daacd18a541b6936a34de8e307576a6aff85b47ec9970deb8ea1df34313",
-      "resumePdfSha256": "9a491488bf0f5ca465047488f0a60d32589b4b908a0587f90a0ee9a6fd35c82e",
-      "coverLetterPdfSha256": null,
-      "coverLetterMarkdownSha256": null,
+      "resumePdfSha256": "e01574b2bb9c8688d0ea0f76a9faebb2f5b05e864edd549533372fed69109600",
+      "coverLetterPdfSha256": "f2f1e62346a693a99f22bb99e03e6fbc2f76c33e4062c15d33a72869201e6816",
+      "coverLetterMarkdownSha256": "f525b2b9d26dc56a24346882e48c076434cdb9838d9a451d776fb3fde337bc4a",
       "scopedProjectSha256": {
         "project-01.html": "7e7e69cfb2fdd49d233bab8803ef168f1f754eb1b4ee73d061e9eff582fa1717",
         "project-02.html": "160f7715cc55ad50bef51f085d5ee94a4a58b38f1b6618ea72e771bec3902902",
@@ -637,8 +655,33 @@
       "fontWait": true,
       "fontProfile": "portfolio-pdf"
     },
-    "coverLetterRenderer": null,
-    "coverLetter": null,
+    "coverLetterRenderer": {
+      "browser": {
+        "name": "chrome-headless-shell",
+        "version": "Google Chrome for Testing 149.0.7827.55"
+      },
+      "htmlPath": "tmp/tailored-resumes/real-chemistry-ai-business-partner-cover-letter.html",
+      "pdfPath": "output/pdf/Wally-Mostafa-Real-Chemistry-AI-Business-Partner-Cover-Letter.pdf",
+      "fontWait": true,
+      "fontProfile": "portfolio-pdf"
+    },
+    "coverLetter": {
+      "ok": true,
+      "failures": [],
+      "pageCount": 1,
+      "sizeBytes": 24599,
+      "templateVersion": "real-chemistry-21grams-v1",
+      "fonts": {
+        "display": "Syne 800",
+        "body": "Instrument Sans 400/600",
+        "type3Fonts": false
+      },
+      "layout": {
+        "page": "Letter",
+        "margin": "0.58in 0.62in",
+        "header": "centered-rule"
+      }
+    },
     "ats": {
       "ok": true,
       "pdfPath": "output/pdf/Wally-Mostafa-Real-Chemistry-AI-Business-Partner-Resume.pdf",
@@ -841,8 +884,8 @@
       "status": "passed",
       "version": "2.2.0",
       "mode": "surface-only",
-      "reviewedAt": "2026-08-07T13:58:40.002Z",
-      "copySha256": "a1db4b10522989f91fac6a55836ceb274312ba650f0cafddcf4d517889c045e5",
+      "reviewedAt": "2026-08-07T14:15:08.289Z",
+      "copySha256": "f5b3c3e992cd3268438d8cafa60375fabdbc708793dcb88245e3521821cda3f6",
       "reviewMethod": "humanizer-skill",
       "semanticPassAttested": true,
       "staticChecksPassed": true
