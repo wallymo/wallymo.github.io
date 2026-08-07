@@ -2994,9 +2994,32 @@
         "project-06.html"
       ],
       "resumePdfPath": "output/pdf/Wally-Mostafa-Product-Experience-Strategy-Resume.pdf",
-      "publishStatus": "local-only",
+      "publishStatus": "live-verified",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-08-07T14:12:31.249Z"
+      "builtAt": "2026-08-07T14:12:31.249Z",
+      "verification": {
+        "verifiedAt": "2026-08-07T14:14:04.193Z",
+        "routeUrl": "https://wallymo.github.io/product-management/",
+        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-Product-Experience-Strategy-Resume.pdf",
+        "configUrl": "https://wallymo.github.io/scripts/packages/product-management.json",
+        "projectUrls": [
+          "https://wallymo.github.io/product-management/project-02.html",
+          "https://wallymo.github.io/product-management/project-03.html",
+          "https://wallymo.github.io/product-management/project-06.html"
+        ],
+        "configSha256": "4dfcc0750c9a4c495914d444ad02132377c1f9de6c0a3f70017f3bb2d9ceb916",
+        "pdfSha256": "c6a73f6db7f9fda47f15a30e9387dcaf3251bb8405cc1291da33ee905714d9e7",
+        "resumeBaseProfilesUrl": "https://wallymo.github.io/scripts/resume-base-profiles.json",
+        "resumeBaseProfilesSha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108",
+        "routeSha256": "367e8d5663076d5caa2a644169b5b49626f763ba2e7ac00314260b0af6e636ce",
+        "scopedProjectSha256": {
+          "project-02.html": "ff75aa21c7302f69366cdfc22cdd66239b8c6a1e52d2e2e0eed0bd554c0d4bb1",
+          "project-03.html": "66dbff1f5ce2bfb35c90516b2f184266e74c89b5f123742f4c7814dce5cf7cd0",
+          "project-06.html": "b8b24fee73749fe584c170c22ec0b07f600b313788cf1228638581f4b69301db"
+        },
+        "configInputSha256": "d34e44f2113f1bfc1df332b9d3e921c22d2c1cd984d62d7da48c2cbf971a34e4",
+        "qaBuiltAt": "2026-08-07T14:12:31.249Z"
+      }
     },
     {
       "slug": "product-management-ai-evaluator",
