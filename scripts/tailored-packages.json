@@ -3124,6 +3124,42 @@
       }
     },
     {
+      "workflowVersion": 2,
+      "contractRevision": 7,
+      "slug": "real-chemistry-account-director-healthcare-communications",
+      "roleTitle": "Real Chemistry Account Director (Healthcare Communications)",
+      "artifactStem": "Real-Chemistry-Account-Director-Healthcare-Communications",
+      "configPath": "scripts/packages/real-chemistry-account-director-healthcare-communications.json",
+      "targetLane": "client-account-delivery",
+      "evidenceMode": "resume-primary",
+      "fitClass": "adjacent",
+      "positioningLane": "client-account-delivery",
+      "bridgeType": "level-transfer",
+      "applicationStrategy": "transferable",
+      "resumeBaseMode": "account-leadership",
+      "resumeBaseLeadProfile": "account-leadership",
+      "resumeBaseAction": "tailor-to-jd",
+      "accountPresentation": "agency-progression",
+      "resumeBaseProfiles": [
+        {
+          "id": "account-leadership",
+          "version": 1
+        }
+      ],
+      "routeMode": "scoped-projects",
+      "selectedProjects": [
+        "project-01.html",
+        "project-06.html",
+        "project-03.html"
+      ],
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Real-Chemistry-Account-Director-Healthcare-Communications-Resume.pdf",
+      "coverLetterPdfPath": "output/pdf/Wally-Mostafa-Real-Chemistry-Account-Director-Healthcare-Communications-Cover-Letter.pdf",
+      "coverLetterMarkdownPath": "output/pdf/Wally-Mostafa-Real-Chemistry-Account-Director-Healthcare-Communications-Cover-Letter.md",
+      "publishStatus": "local-only",
+      "qaStatus": "qa-passed",
+      "builtAt": "2026-08-07T14:00:19.180Z"
+    },
+    {
       "slug": "real-chemistry-account-manager",
       "roleTitle": "Real Chemistry Account Manager",
       "fitClass": "strong",

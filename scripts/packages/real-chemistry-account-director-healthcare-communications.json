@@ -1,0 +1,977 @@
+{
+  "workflowVersion": 2,
+  "contractRevision": 7,
+  "slug": "real-chemistry-account-director-healthcare-communications",
+  "roleTitle": "Real Chemistry Account Director (Healthcare Communications)",
+  "artifactStem": "Real-Chemistry-Account-Director-Healthcare-Communications",
+  "fitClass": "adjacent",
+  "routeMode": "scoped-projects",
+  "selectedProjects": [
+    "project-01.html",
+    "project-06.html",
+    "project-03.html"
+  ],
+  "job": {
+    "company": "Real Chemistry",
+    "roleTitle": "Account Director (Healthcare Communications)",
+    "sourceChannel": "User-provided public job description",
+    "dateCaptured": "2026-08-07",
+    "location": "Boston, MA; Carmel, IN; Chicago, IL; Lambertville, NJ; San Francisco, CA; or remote within the US depending on team and business needs",
+    "employmentType": "Full-time; hybrid or remote depending on team and business needs",
+    "rawJd": "Account Director (Healthcare Communications)\nBoston - Massachusetts; Carmel - Indiana; Chicago - Illinois; Lambertville - New Jersey; San Francisco - California; United States\nAt Real Chemistry, making the world a healthier place isn’t just an aspiration—it’s our everyday reality. Our drive to transform healthcare is informed by our blend of deep scientific expertise, human-centred creativity, and AI-driven insights, fostering a unique environment where innovation thrives and our people are impact-obsessed. As a global agency, we provide a full suite of services across healthcare communications and marketing to our clients, including top players in the pharmaceutical and biotech industries.\n\nOur #LifeatRealChem culture is rooted in our people—we believe we are best together and are committed to excellence for both our clients and colleagues. Whether you're a seasoned professional or just starting your career, if you share our passion for healthcare and connection, we invite you to explore our opportunities.\n\nDiscover your purpose. Embrace innovation. Experience #LifeatRealChem.\n\nJob Summary:\n\nReal Chemistry is looking for an Account Director to join our growing team!\n\nThe Account Director is responsible for client relationships and serves as a trusted partner to clients. The ideal candidate for this role has a stellar client services reputation and is passionate about health care and digital health. In addition to leading client engagements, they will manage and galvanize cross-functional team members to think smarter, work effectively, drive innovative and integrated solutions, and deliver groundbreaking results and client satisfaction.\n\nThis is a hybrid role, based in any of our US offices—including New York City, Boston, Chicago, Carmel, or San Francisco—or remotely within the US, depending on team and business needs.\n\nWhat you’ll do:\n\nDevelop and maintain productive client relationships to ensure that recommendations and results surpass client expectations.\nInitiate ongoing communication with clients to manage expectations; ensure staffing resources and performance expectations are met; provide strategic counsel.\nContribute to overall client financial management; establish and meet internal client revenue targets.\nProvide proactive counsel on research findings, the external marketplace, competitive pressures and brand influences to sell agency expertise, gain consensus on creative ideas, and develop central initiatives.\nLead multiple client engagements of varying sizes in a fast-paced environment.\nCollaborate to drive strategic solutions that respond to business and communications challenges.\nIdentify new opportunities to help Real Chemistry’s business and brand.\nBuild thoughtful, clear, concise decks that outline business objectives.\nThoroughly understand our capabilities and demonstrate a passion for healthcare, digital, and communications to help spot opportunities for the client to achieve greater success, reach a broader audience, and use all the tools at their disposal.\nEncourage and lead internal teams to ensure technical and operational excellence in all executions.\nManage execution and project challenges, utilizing technical and influence skills to problem solve and keep projects timely and on-budget\nPartner throughout the business to streamline, elevate, and innovate our tactical processes.\nPartner with shared service leads to identify, develop and grow integrated business (social media/digital, content) through trend-spotting, strategic recommendations, and introducing clients to the full scope of Real Chemistry’s capabilities.\nDevelop understanding of the pitch process.\nLead account and cross-functional teams to encourage excellence and integrity in all matters.\nOperate as a talent ambassador for Real Chemistry by participating in recruiting events.\nEmpower teams through engaging and active management and career development practices.\nSet clear performance objectives and utilize all management tools to communicate alignment and performance measures.\nThis position is a perfect fit for you if:\n\n​Our Company values – Best Together, Impact-Obsessed, Excellence Expected, Evolve Alwaysand Accountability with an “I” – really speak to you.\nYou are adaptable, resilient, and OK with adjusting your scope, responsibilities, and focus as we grow. When things change, so do we. We’re always evolving.\nYou are proactive, driven, and resourceful with strong prioritization skills and a desire to dive into the data.\nYou are highly organized self-starter, able to work independently and under tight deadlines.\nWhat you should have:\n\nBachelor’s degree in communications, marketing or a related field or equivalent experience is required.\n8+ years in a professional environment within the public relations, communications, and / or advertising industries.\nProficiency in the constantly evolving digital landscape and the impact to clients’ business.\nExceptional project management skills; demonstrated ability to meet timelines, prioritize, and manage detailed budgets.\nOutstanding business & data communication skills. Can explain complex technical terms, clinical trials, and studies pertaining to the brand. Able to communicate critical information to management and the client.\nProven ability to lead account teams and become a trusted client partner.\nExperience identifying organic new business; some exposure to new business pitch work.\nSome management experience of junior staff required – interns, associates.\nHigh energy, able to effectively operate in fast-paced, growing and evolving environment\nThe position may require some domestic travel for client meetings and conferences (10 percent)."
+  },
+  "classification": {
+    "targetLane": "client-account-delivery",
+    "evidenceMode": "resume-primary",
+    "primarySource": "The resume documents eight years of healthcare and pharmaceutical agency account progression, primary client contact, Fortune 500 relationships, budgets up to $20M, multichannel delivery, MLR and OPDP review, scopes, client reporting, and strategic recommendations.",
+    "supportingSource": "The portfolio adds recent evidence of regulated pharma workflow design, data-led recommendations, enterprise team leadership, and presentation-ready client outputs. It strengthens the return to account leadership without replacing the direct agency record.",
+    "hardGateStatus": "pass",
+    "hardGates": [
+      {
+        "gate": "Hold a bachelor's degree in communications, marketing, or a related field, or bring equivalent experience",
+        "status": "pass",
+        "requirementId": "degree-or-equivalent-experience",
+        "evidence": "The resume lists a BA from Rutgers University plus 15 years of directly relevant work across healthcare communications, agency accounts, digital strategy, UX, and AI implementation."
+      },
+      {
+        "gate": "Bring at least eight years in a professional environment within public relations, communications, or advertising",
+        "status": "pass",
+        "requirementId": "communications-advertising-tenure",
+        "evidence": "The resume documents 15 years of professional experience, including eight years of direct healthcare and pharmaceutical agency account work."
+      }
+    ]
+  },
+  "requirements": [
+    {
+      "id": "degree-or-equivalent-experience",
+      "text": "Hold a bachelor's degree in communications, marketing, or a related field, or bring equivalent experience.",
+      "priority": "hard-gate",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The resume lists a BA in Labor Studies and Employee Relations from Rutgers University plus 15 years of directly relevant healthcare communications, agency, marketing, and client work."
+      ],
+      "proofIds": [
+        "account-management-01"
+      ],
+      "destinations": [
+        "experience"
+      ],
+      "resumeTerms": [
+        "BA Labor Studies & Employee Relations",
+        "Rutgers University"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "communications-advertising-tenure",
+      "text": "Bring at least eight years in a professional environment within public relations, communications, and/or advertising.",
+      "priority": "hard-gate",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The resume documents 15 years of professional experience, including eight years of healthcare and pharmaceutical agency account work and later healthcare UX, analytics, and communications work."
+      ],
+      "proofIds": [
+        "account-management-01",
+        "heartbeat-01"
+      ],
+      "destinations": [
+        "summary",
+        "experience"
+      ],
+      "resumeTerms": [
+        "eight years",
+        "healthcare communications"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "trusted-client-partner",
+      "text": "Develop productive client relationships, communicate proactively, manage expectations, and serve as a trusted strategic partner.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "At RosettaWishbone, the resume names primary client-contact responsibility across brand teams, national affiliates, and vendors.",
+        "At Scout Marketing and FCB Health, it shows account-lead responsibility, client status, recommendations, and delivery across major pharmaceutical brands."
+      ],
+      "proofIds": [
+        "addition:rosetta-prevenar-client-contact",
+        "addition:scout-xyrem-account-lead",
+        "addition:fcb-nuvigil-client-operations"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience"
+      ],
+      "resumeTerms": [
+        "primary client contact",
+        "Client relationships"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "financial-management-and-revenue-targets",
+      "text": "Contribute to client financial management and establish and meet internal client revenue targets.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "The resume directly supports brand budgets up to $20M, weekly financial reporting, scopes, rate cards, deliverables, timelines, and role-level resourcing.",
+        "Formal ownership and attainment of internal client revenue targets are not documented."
+      ],
+      "proofIds": [
+        "account-management-01",
+        "addition:fcb-nuvigil-client-operations",
+        "addition:rosetta-dubai-advisory",
+        "hedgehox-05"
+      ],
+      "destinations": [
+        "skills",
+        "experience",
+        "cover-letter"
+      ],
+      "resumeTerms": [
+        "budgets up to $20M",
+        "financial reporting"
+      ],
+      "matchMode": "contextual"
+    },
+    {
+      "id": "strategic-counsel-and-data-communication",
+      "text": "Turn research, marketplace signals, competitive pressure, brand influences, and data into clear strategic counsel, recommendations, and business decks.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The resume documents market research, brand planning, annual strategic recommendations, competitive audits, campaign measurement, and presentation-ready client outputs.",
+        "The Digital Experience Audit translates channel scores, benchmarks, and recommendations into clear client deliverables."
+      ],
+      "proofIds": [
+        "account-management-03",
+        "addition:cdm-lipitor-zoloft-digital",
+        "heartbeat-01",
+        "kinesso-03"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "strategic recommendations",
+        "presentation-ready client outputs"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "integrated-digital-healthcare-delivery",
+      "text": "Lead multiple integrated healthcare communications engagements across digital, social, content, and other channels.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The resume covers healthcare programs across television, digital, social, print, radio, outdoor, gaming, CRM support, and in-office channels.",
+        "The work spans multiple brands, agencies, budgets, vendors, and regulated review paths."
+      ],
+      "proofIds": [
+        "account-management-01",
+        "account-management-02",
+        "addition:scout-xyrem-unbranded-social",
+        "addition:fcb-nuvigil-rebrand-crm"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience"
+      ],
+      "resumeTerms": [
+        "regulated multi-channel delivery",
+        "digital",
+        "social"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "technical-clinical-and-regulated-communication",
+      "text": "Explain complex technical terms, clinical trials, and studies while showing strong healthcare, digital, and communications judgment.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The resume documents 11 years across pharma and healthcare communications, including patient and HCP experiences, brand teams, market research, FDA preclearance, OPDP, med-legal, review-committee, and MLR workflows.",
+        "Current Claims Detector work turns promotional claims and evidence gaps into audit-ready annotations for human review."
+      ],
+      "proofIds": [
+        "account-management-01",
+        "account-management-03",
+        "heartbeat-02",
+        "hedgehox-02"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "pharma/healthcare communications",
+        "FDA/OPDP/med-legal review"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "cross-functional-team-and-project-leadership",
+      "text": "Lead account and cross-functional teams, manage project challenges, protect timelines and budgets, and improve tactical processes.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The resume shows cross-functional delivery across account, strategy, creative, production, media, UX, engineering, and vendors on budgets up to $20M.",
+        "Later work adds growth of a distributed design team from 2 to 30 and workflow improvements for scoping, analytics, and regulated review."
+      ],
+      "proofIds": [
+        "account-management-02",
+        "account-management-03",
+        "kinesso-01",
+        "hedgehox-05"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "cross-functional delivery",
+        "2 to 30"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "people-management-and-development",
+      "text": "Manage junior staff, set expectations, support performance, and contribute to career development and recruiting.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "The resume documents oversight of an Assistant Account Executive and later growth of a distributed design team from 2 to 30.",
+        "Formal recent ownership of junior account-team performance objectives, career development, or recruiting events is not documented."
+      ],
+      "proofIds": [
+        "addition:fcb-namenda-caregiver-site",
+        "kinesso-01"
+      ],
+      "destinations": [
+        "summary",
+        "experience",
+        "cover-letter"
+      ],
+      "resumeTerms": [
+        "Assistant Account Executive",
+        "2 to 30"
+      ],
+      "matchMode": "contextual"
+    },
+    {
+      "id": "organic-growth-and-pitch-work",
+      "text": "Identify organic growth opportunities, introduce integrated capabilities, and contribute to new-business pitches.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "The resume directly supports client discovery, recommendations, scopes, demo narratives, and an investor close.",
+        "Formal healthcare-agency organic growth ownership, pitch leadership, and win outcomes are not documented."
+      ],
+      "proofIds": [
+        "one-block-away-01",
+        "hedgehox-01",
+        "addition:rosetta-dubai-advisory"
+      ],
+      "destinations": [
+        "skills",
+        "experience",
+        "cover-letter"
+      ],
+      "resumeTerms": [
+        "client discovery",
+        "demo story"
+      ],
+      "matchMode": "contextual"
+    },
+    {
+      "id": "domestic-travel",
+      "text": "Be available for up to 10 percent domestic travel for client meetings and conferences when required.",
+      "priority": "context",
+      "source": "jd",
+      "confidence": "ambiguous",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "The resume documents prior international client travel to facilitate an advisory board, but current availability for up to 10 percent domestic travel is not confirmed."
+      ],
+      "proofIds": [
+        "addition:rosetta-dubai-advisory"
+      ],
+      "destinations": [
+        "experience"
+      ],
+      "resumeTerms": [
+        "advisory board in Dubai"
+      ],
+      "matchMode": "contextual"
+    }
+  ],
+  "fitGate": {
+    "resumeBase": {
+      "mode": "account-leadership",
+      "sourceProfiles": [
+        {
+          "id": "account-leadership",
+          "version": 1
+        }
+      ],
+      "leadProfileId": "account-leadership",
+      "accountPresentation": "agency-progression",
+      "action": "tailor-to-jd",
+      "rationale": "The role is centered on healthcare client relationships, account planning, budgets, integrated communications delivery, and team leadership. Account Leadership is the right base, and agency progression is necessary because the posting screens for both tenure and seniority."
+    },
+    "supportedOverlap": [
+      "Eight years of healthcare and pharmaceutical agency account progression, from Account Coordinator through Account Supervisor and Digital Strategist.",
+      "Primary client-contact and account-lead responsibility across Pfizer, Teva, Actavis, Jazz Pharmaceuticals, and other large client work.",
+      "Brand budgets up to $20M, weekly client status and financial reporting, scopes, briefs, timelines, and cross-functional delivery.",
+      "Integrated programs across television, digital, social, print, radio, outdoor, gaming, CRM support, and in-office channels.",
+      "Direct FDA preclearance, OPDP, med-legal, review-committee, and MLR workflow experience.",
+      "Later team growth from 2 to 30 plus analytics, presentation, UX, and pharma workflow work that strengthens senior client leadership."
+    ],
+    "unsupportedRequirements": [
+      "Formal ownership and attainment of internal client revenue targets are not documented.",
+      "Quantified organic account growth or healthcare-agency pitch wins are not documented.",
+      "Recent junior account-team performance management, career-development ownership, and recruiting-event participation are not documented."
+    ],
+    "actualMismatches": [
+      "The most recent full-time titles center on AI implementation, product strategy, and UX rather than account management.",
+      "The highest documented account title is Account Supervisor / Digital Strategist rather than Account Director."
+    ],
+    "missingEvidence": [
+      "Client revenue-target attainment, margin, profitability, or quantified account-growth outcomes.",
+      "Healthcare-agency organic new-business ownership and pitch-win outcomes.",
+      "Recent Account Director-level ownership of junior account-team objectives, performance, and career development.",
+      "Confirmed availability for up to 10 percent domestic travel."
+    ],
+    "coverLetterBridge": {
+      "status": "recommended",
+      "rationale": "We can make the case with a cover letter by connecting eight years of healthcare agency account leadership to the team growth, analytics, product judgment, and regulated AI workflow work that followed. The letter must address the move back into account leadership without implying revenue-target ownership, quantified organic growth, agency pitch wins, or recent Account Director title experience."
+    },
+    "recommendation": "Proceed with a narrowly tailored Account Leadership package. Let the healthcare agency progression and client record carry the resume. Use the cover letter to explain why later team leadership, analytics, UX, and pharma workflow work strengthens the return to client services. Keep revenue targets, quantified organic growth, pitch wins, and recent Account Director-level people management visible as gaps rather than implying them."
+  },
+  "positioning": {
+    "laneId": "client-account-delivery",
+    "targetIdentity": "healthcare account leader",
+    "employerNeed": "Lead healthcare client relationships while keeping integrated communications, budgets, teams, data, and regulated delivery aligned.",
+    "bridgeType": "level-transfer",
+    "applicationStrategy": "transferable",
+    "bridgeThesis": "deeper team leadership, analytics, and product judgment back to account leadership",
+    "proofIds": [
+      "account-management-02",
+      "account-management-03",
+      "kinesso-01"
+    ],
+    "remainingGap": "Internal client revenue-target ownership, quantified organic growth, agency pitch wins, and recent Account Director-level people management are not documented."
+  },
+  "coverLetter": {
+    "trigger": "bridge-recommended",
+    "date": "2026-08-07",
+    "greeting": "Dear Real Chemistry hiring team,",
+    "paragraphs": [
+      "I am applying for the Account Director (Healthcare Communications) role at Real Chemistry. I spent eight years managing healthcare and pharmaceutical accounts, with day-to-day responsibility for client relationships, regulated multichannel work, budgets, scopes, and strategic recommendations. Since then, I have led UX teams and built AI tools for pharmaceutical agencies. I know the account work firsthand and have learned how to improve the systems behind it.",
+      "FCB Health was the center of my agency career. During my second stint there, I was one of two consumer account leads on the agency's largest pharmaceutical business and managed the $20M Namenda XR direct-to-consumer launch. I led the broadcast workstream for three national commercials in one year, from market research and med-legal review through FDA preclearance, production, and network clearance. The spots drove a 45% increase in new-to-brand consumers within seven weeks. Earlier, on the $10M NUVIGIL consumer business, I owned weekly client status and financial reporting, OPDP submissions, multichannel delivery, and annual strategic recommendations.",
+      "My account-management experience began at RosettaWishbone, where I was the primary contact across client brand teams, national affiliates, and vendors. I handled briefs, scopes of work, key opinion leader communication, client status, and financial reporting for Pfizer work, including an Africa and Middle East advisory board in Dubai. At Scout Marketing, I was promoted to Account Supervisor / Digital Strategist and led Jazz Pharmaceuticals' XYREM consumer work across digital, print, and in-office channels. That included Jazz's first unbranded social campaign and a digital program that doubled qualified traffic to the brand site.",
+      "After account management, I moved into pharmaceutical UX and then enterprise design leadership. At Heartbeat Ideas, I translated research and stakeholder input into patient, HCP, and brand-team experiences. At Kinesso, I grew a distributed design team from 2 to 30 and led enterprise analytics work used by more than 7,000 people across 22 brands. Today, I build AI tools for pharmaceutical agencies that support claim review, brief intake, scoping, review routing, and MLR preparation. That work keeps me close to the way account teams turn research, data, and technical constraints into clear recommendations.",
+      "I am ready to return to healthcare account leadership with more experience leading teams, presenting data, and improving how work gets delivered. I would welcome the chance to discuss the Account Director (Healthcare Communications) role with Real Chemistry."
+    ],
+    "closing": "Sincerely,",
+    "signature": "Wally Mostafa",
+    "proofIds": [
+      "account-management-02",
+      "account-management-03",
+      "kinesso-01"
+    ]
+  },
+  "resume": {
+    "foundationId": "wally-mostafa-resume-2026-07-03",
+    "compositionMode": "profile-complete",
+    "layoutDensity": "compact",
+    "summary": "Healthcare account leader with eight years in pharmaceutical agency account management, progressing from Account Coordinator to Account Supervisor. I led Fortune 500 relationships and budgets up to $20M across integrated programs, FDA/OPDP/med-legal review, client reporting, and strategic recommendations. Since then, I have grown a design team from 2 to 30 and built analytics and MLR workflow tools, bringing deeper team leadership, analytics, and product judgment back to account leadership.",
+    "skillIds": [
+      "account-management-client-leadership",
+      "regulated-healthcare-client-delivery",
+      "healthcare-marketing-strategy",
+      "program-project-delivery"
+    ],
+    "skills": [
+      {
+        "label": "Account Management & Client Leadership",
+        "description": "Client relationships, budgets up to $20M, briefs, scopes, timelines, status and financial reporting, vendor coordination, and cross-functional delivery"
+      },
+      {
+        "label": "Regulated Healthcare & Client Delivery",
+        "description": "11 years across pharma/healthcare communications, FDA/HIPAA/MLR workflows, HCP/patient UX, client workshops, and stakeholder adoption"
+      },
+      {
+        "label": "Healthcare Marketing & Brand Strategy",
+        "description": "Brand planning, campaign and digital strategy, MLR review, patient and HCP experiences, and regulated multi-channel delivery"
+      },
+      {
+        "label": "Program & Project Delivery",
+        "description": "Scoping, requirements, timelines, review routing, team coordination, risk visibility, and build-ready handoff across product, design, and client teams"
+      }
+    ],
+    "experienceSections": [
+      {
+        "heading": "Account Management Experience",
+        "roleIds": [
+          "account-management"
+        ]
+      },
+      {
+        "heading": "Most Recent Experience",
+        "roleIds": [
+          "hedgehox",
+          "one-block-away",
+          "kinesso",
+          "omnicom",
+          "heartbeat"
+        ]
+      }
+    ],
+    "awards": [
+      {
+        "label": "Manny Award 2013",
+        "detail": "Best Unbranded Campaign, \"Get Your Shift Together\""
+      },
+      {
+        "label": "Pharma Choice Awards 2011",
+        "detail": "Silver Consumer Print, Silver HCP Sales Aid, Bronze HCP Mobile Site"
+      },
+      {
+        "label": "Indigo Awards 2023",
+        "detail": "Design System & Data Visualization: 3x Gold, 2x Silver",
+        "href": "https://www.indigoaward.com/winners/6748"
+      }
+    ],
+    "roles": {
+      "hedgehox": [
+        "Secured an investor for proprietary Claims Detection software by building the functional POC, shaping the demo story, and iterating with investors",
+        "Designed Claims Detector workflows that identify promotional claims, surface evidence gaps, and pre-populate audit-ready annotations before MLR submission",
+        "Translate pharma agency needs into working tools for MLR claim review, brief intake, scoping, review routing, submission capture, and FDA signal monitoring",
+        "Built Scope Generator for pharma agency finance and operations teams to manage regional rate cards, brands, sub-brands, and natural-language scope changes"
+      ],
+      "one-block-away": [
+        "Lead client discovery and turn unclear business questions into testable product concepts, working POCs, demo flows, and roadmap decisions",
+        "Built ListingPal's AI listing-generation POC and landing page, turning basic property inputs into listing copy, social posts, ad copy, styling direction, and MLS/SEO-ready language in under 90 seconds",
+        "Built WeReady's Bailey Intelligence dashboard, translating founder inputs, GitHub signals, source health, risk scoring, and evidence trails into startup-readiness workflows",
+        "Own product strategy, UX, AI workflow design, front-end build, backend logic, demo readiness, and client iteration from first ask through working prototype",
+        "Currently building the website and sponsor strategy for a Tunisia youth soccer program, positioning the project for player advancement, community support, and donor outreach"
+      ],
+      "kinesso": [
+        "Scaled product design from 2 to 30 people across the US and Poland for enterprise analytics used by 7,000+ users across 22 white-label brands",
+        "Led UX and design-system strategy for MIE data visualization, dashboard building, brand theming, and reusable analytics components",
+        "Built the Digital Experience Audit workflow for channel scoring, benchmarks, recommendations, visualization, and presentation-ready client outputs"
+      ],
+      "omnicom": [
+        "Supported oncology accounts as a freelance UX designer, combining UX design and account-management experience to strengthen regulated healthcare work"
+      ],
+      "heartbeat": [
+        "Led UX research and experience strategy for pharma and healthcare work, translating stakeholder input, competitive audits, and user needs into digital product direction",
+        "Created journey maps, site maps, user flows, wireframes, and prototypes for patient, HCP, and internal brand-team experiences across regulated healthcare programs",
+        "Partnered with strategy, creative, account, and engineering teams to move UX recommendations from research findings into build-ready product and campaign experiences"
+      ],
+      "account-management": [
+        {
+          "title": "Account Supervisor / Digital Strategist",
+          "employer": "Scout Marketing",
+          "location": "San Diego, CA",
+          "dateRange": "Jun 2015 – Jul 2018",
+          "bullets": [
+            "Promoted from Senior Account Executive and took the lead on Jazz Pharmaceuticals XYREM consumer work: unbranded campaigns across digital, print, and in-office channels that lifted traffic and engagement on the disease-state site",
+            "Led the launch of the first unbranded social campaign on Facebook and YouTube for the brand and for Jazz, built around real patients telling their own stories",
+            "Oversaw an unbranded digital campaign bridging disease state and branded work; banners held a 0.37% click-through rate against a 0.17% industry benchmark and doubled qualified traffic to the brand site"
+          ]
+        },
+        {
+          "title": "Senior Account Executive",
+          "employer": "FCB Health",
+          "location": "New York, NY",
+          "dateRange": "Jun 2014 – Jun 2015",
+          "bullets": [
+            "One of two consumer account leads on the agency's largest pharma business, managing the Actavis Namenda XR direct-to-consumer launch and its $20M brand budget",
+            "Owned the broadcast workstream for three national television commercials in one year, covering market research, med-legal review, FDA preclearance, pre- and post-production, talent and location coordination, director searches, and network clearances; the spots drove a 45% increase in new-to-brand consumers within seven weeks",
+            "Led the launch of an unbranded Alzheimer's caregiver community site with support resources, sponsorship exploration, and public relations pull-through; also oversaw the account's Assistant Account Executive across in-office tactics, national print, and sales representative support materials"
+          ]
+        },
+        {
+          "title": "Senior Account Executive",
+          "employer": "Barker DZP",
+          "location": "New York, NY",
+          "dateRange": "Dec 2013 – May 2014",
+          "bullets": [
+            "Led the social campaign for a new Tough Mudder loyalty program and oversaw PDI and Nice-Pak, the agency's largest account, across print, digital, and social"
+          ]
+        },
+        {
+          "title": "Senior Account Executive",
+          "employer": "Cline Davis & Mann",
+          "location": "New York, NY",
+          "dateRange": "Sep 2013 – Dec 2013",
+          "bullets": [
+            "Used campaign metrics to shape Pfizer digital recommendations for Lipitor's online presence and loyalty program during loss of exclusivity, and piloted a Zoloft savings offer to test market response"
+          ]
+        },
+        {
+          "title": "Assistant Account Executive to Account Executive",
+          "employer": "FCB Health",
+          "location": "New York, NY",
+          "dateRange": "Apr 2011 – Sep 2013",
+          "bullets": [
+            "Managed development and execution of the unbranded Teva NUVIGIL campaign for National Night Shift Workers' Day across Times Square NASDAQ, national television, Xbox Live, radio, outdoor, and consumer journals, working through media, digital, and print vendors; the campaign won the 2013 Manny Award for Best Unbranded Campaign",
+            "Coordinated the NUVIGIL.com consumer rebrand across desktop and mobile with the agency's digital strategy and development teams, plus the launch of a CRM patient support program and its online patient community",
+            "Worked alongside the HCP team on the NUVIGIL.com HCP site and sales aid, both of which won 2011 Pharma Choice awards",
+            "Owned weekly client status and financial reporting plus OPDP and review-committee submissions across the $10M consumer business, and contributed to the annual strategic recommendations"
+          ]
+        },
+        {
+          "title": "Account Coordinator",
+          "employer": "RosettaWishbone",
+          "location": "New York, NY",
+          "dateRange": "Sep 2010 – Mar 2011",
+          "bullets": [
+            "Primary client contact across brand teams, national affiliates, and vendors on an award-winning global unbranded pneumococcal disease awareness campaign for the Pfizer Prevenar 13 adult pre-launch",
+            "Facilitated an Africa and Middle East advisory board in Dubai and owned project briefs, scopes of work, key opinion leader communications, and client status and financial reports"
+          ]
+        }
+      ]
+    },
+    "sourceBulletIds": {
+      "hedgehox": [
+        "hedgehox-01",
+        "hedgehox-02",
+        "hedgehox-03",
+        "hedgehox-05"
+      ],
+      "one-block-away": [
+        "one-block-away-01",
+        "one-block-away-02",
+        "one-block-away-03",
+        "one-block-away-04",
+        "one-block-away-05"
+      ],
+      "kinesso": [
+        "kinesso-01",
+        "kinesso-02",
+        "kinesso-03"
+      ],
+      "omnicom": [
+        "omnicom-01"
+      ],
+      "heartbeat": [
+        "heartbeat-01",
+        "heartbeat-02",
+        "heartbeat-03"
+      ],
+      "account-management": [
+        "addition:scout-xyrem-account-lead",
+        "addition:scout-xyrem-unbranded-social",
+        "addition:scout-xyrem-bridging-campaign",
+        "account-management-02",
+        "account-management-03",
+        "addition:fcb-namenda-caregiver-site",
+        "addition:barker-tough-mudder-pdi",
+        "addition:cdm-lipitor-zoloft-digital",
+        "account-management-01",
+        "addition:fcb-nuvigil-rebrand-crm",
+        "addition:fcb-nuvigil-hcp-collaboration",
+        "addition:fcb-nuvigil-client-operations",
+        "addition:rosetta-prevenar-client-contact",
+        "addition:rosetta-dubai-advisory"
+      ]
+    }
+  },
+  "hero": {
+    "eyebrow": "Real Chemistry | Selected Work",
+    "tags": [
+      "Healthcare communications",
+      "Data-led client recommendations",
+      "Cross-functional team leadership"
+    ],
+    "intro": "Here are a few recent projects that may be useful context alongside my resume for the Account Director role. The resume covers my healthcare agency account background; this page offers a closer look at the analytics, UX, and AI work that came afterward."
+  },
+  "contact": {
+    "prompt": "Email is the best way to reach me.",
+    "signoff": "Healthcare communications | integrated delivery | data-led recommendations"
+  },
+  "route": {
+    "presentation": "showcase",
+    "heroIntent": "resume-support",
+    "workHeading": "Selected work.",
+    "contactHeading": "Thanks for stopping by."
+  },
+  "copyReview": {
+    "humanizerVersion": "2.2.0",
+    "mode": "surface-only",
+    "status": "passed",
+    "reviewedAt": "2026-08-07T14:00:09.917Z",
+    "copySha256": "b25aec0ee8fd8054f9662883663fe520c2dd5ee6317699f867244ef6fa906d21",
+    "preserved": [
+      "content",
+      "structure",
+      "claims",
+      "ending"
+    ],
+    "rewriteAuthorized": false,
+    "reviewMethod": "humanizer-skill",
+    "semanticPassAttested": true,
+    "staticChecksPassed": true,
+    "finalAntiAiPass": true,
+    "remainingTells": []
+  },
+  "constraints": {
+    "doNotClaim": [
+      "Current Account Director title or current day-to-day pharma account ownership",
+      "Formal ownership or attainment of internal client revenue targets, P&L, margin, forecast, or profitability goals",
+      "Quantified organic account growth, upsell, expansion, renewal, retention, or healthcare-agency new-business revenue",
+      "Formal healthcare-agency pitch leadership or pitch wins",
+      "Recent junior account-team performance management, career-development ownership, or recruiting-event participation beyond the documented evidence",
+      "Clinical or scientific subject-matter expertise beyond the documented healthcare communications and regulated-workflow record",
+      "Confirmed availability for up to 10 percent domestic travel",
+      "Salesforce, enterprise CRM administration, quota ownership, or contract negotiation"
+    ],
+    "blockedTerms": [
+      "currently an Account Director",
+      "current pharma account lead",
+      "client revenue target owner",
+      "P&L owner",
+      "forecast owner",
+      "profitability owner",
+      "organic growth revenue",
+      "renewal ownership",
+      "agency new-business wins",
+      "pitch win rate",
+      "clinical expert",
+      "scientific expert",
+      "available for 10 percent travel",
+      "Salesforce",
+      "sales quota",
+      "contract negotiation"
+    ]
+  },
+  "privacy": {
+    "publicSafe": true,
+    "notes": "Contains only the user-provided public job description and public-safe evidence from the resume and portfolio. It excludes recruiter details, application answers, compensation decisions, private eligibility information, and submission state."
+  },
+  "qa": {
+    "status": "qa-passed",
+    "builtAt": "2026-08-07T14:00:19.180Z",
+    "configInputSha256": "839177f601f72169a425e5b6c866343b7ef006683cee1374bc029373e028d2e5",
+    "sourceResumeSha256": "2265313e78b596a2b37d6d8f9a95081e4321b4047f142a5f0ddf22449cab4b9c",
+    "resumeFoundation": {
+      "id": "wally-mostafa-resume-2026-07-03",
+      "sourcePdfSha256": "f9b05b6c3c134262b1af6c5734363daf4385cf335407a139779a37d138adf1aa"
+    },
+    "resumeBase": {
+      "mode": "account-leadership",
+      "sourceProfiles": [
+        {
+          "id": "account-leadership",
+          "version": 1
+        }
+      ],
+      "leadProfileId": "account-leadership",
+      "accountPresentation": "agency-progression",
+      "action": "tailor-to-jd",
+      "registryVersion": 1,
+      "registrySha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108"
+    },
+    "artifactHashes": {
+      "routeSha256": "86ddbda9ba431bf66fcc1b3bd33c9ee75eb6562094869b9333b9cb83eee54388",
+      "resumePdfSha256": "9c9b1438a1119f4857ad62bf82050a5bdaa079842c7bbc4894b1cdd472359909",
+      "coverLetterPdfSha256": "05f3b14de93faa039a5102e8a6b143aa53547613f1bb91cfccb894f2167428b1",
+      "coverLetterMarkdownSha256": "a8b3ba8d233b77aaebeface49fc87f2f5e9b01afff5d5c9e97e7ddb606b0e933",
+      "scopedProjectSha256": {
+        "project-01.html": "7cf073aeb8cc3629947c7cac175d4a3c2c60a09de4173836e50683cff8885d2b",
+        "project-06.html": "65db70fb26666f8f3ca685571dccc3f3e0c032d7bfb711adbed69476a98037a4",
+        "project-03.html": "9f5f160e36a55513372853245f241b8c82c5db5fce312878729ffc1079fefa3c"
+      }
+    },
+    "renderer": {
+      "browser": {
+        "name": "chrome-headless-shell",
+        "version": "Google Chrome for Testing 149.0.7827.55"
+      },
+      "htmlPath": "tmp/tailored-resumes/real-chemistry-account-director-healthcare-communications.html",
+      "pdfPath": "output/pdf/Wally-Mostafa-Real-Chemistry-Account-Director-Healthcare-Communications-Resume.pdf",
+      "fontWait": true,
+      "fontProfile": "portfolio-pdf"
+    },
+    "coverLetterRenderer": {
+      "browser": {
+        "name": "chrome-headless-shell",
+        "version": "Google Chrome for Testing 149.0.7827.55"
+      },
+      "htmlPath": "tmp/tailored-resumes/real-chemistry-account-director-healthcare-communications-cover-letter.html",
+      "pdfPath": "output/pdf/Wally-Mostafa-Real-Chemistry-Account-Director-Healthcare-Communications-Cover-Letter.pdf",
+      "fontWait": true,
+      "fontProfile": "portfolio-pdf"
+    },
+    "coverLetter": {
+      "ok": true,
+      "failures": [],
+      "pageCount": 1,
+      "sizeBytes": 26410,
+      "templateVersion": "real-chemistry-21grams-v1",
+      "fonts": {
+        "display": "Syne 800",
+        "body": "Instrument Sans 400/600",
+        "type3Fonts": false
+      },
+      "layout": {
+        "page": "Letter",
+        "margin": "0.58in 0.62in",
+        "header": "centered-rule"
+      }
+    },
+    "ats": {
+      "ok": true,
+      "pdfPath": "output/pdf/Wally-Mostafa-Real-Chemistry-Account-Director-Healthcare-Communications-Resume.pdf",
+      "pageCount": 2,
+      "fileSize": 81134,
+      "annotations": [
+        {
+          "page": 1,
+          "uri": "mailto:wmostafa12@gmail.com"
+        },
+        {
+          "page": 1,
+          "uri": "https://linkedin.com/in/wallymo"
+        },
+        {
+          "page": 1,
+          "uri": "https://wallymo.github.io/real-chemistry-account-director-healthcare-communications/"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/6748"
+        }
+      ],
+      "fontCompatibility": {
+        "type3Fonts": false
+      },
+      "coverage": [
+        {
+          "id": "degree-or-equivalent-experience",
+          "requirement": "Hold a bachelor's degree in communications, marketing, or a related field, or bring equivalent experience.",
+          "priority": "hard-gate",
+          "evidenceStatus": "direct",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "BA Labor Studies & Employee Relations",
+            "Rutgers University"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "communications-advertising-tenure",
+          "requirement": "Bring at least eight years in a professional environment within public relations, communications, and/or advertising.",
+          "priority": "hard-gate",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "eight years",
+            "healthcare communications"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "trusted-client-partner",
+          "requirement": "Develop productive client relationships, communicate proactively, manage expectations, and serve as a trusted strategic partner.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "primary client contact",
+            "Client relationships"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "financial-management-and-revenue-targets",
+          "requirement": "Contribute to client financial management and establish and meet internal client revenue targets.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "contextual",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "budgets up to $20M",
+            "financial reporting"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "strategic-counsel-and-data-communication",
+          "requirement": "Turn research, marketplace signals, competitive pressure, brand influences, and data into clear strategic counsel, recommendations, and business decks.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "strategic recommendations",
+            "presentation-ready client outputs"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "integrated-digital-healthcare-delivery",
+          "requirement": "Lead multiple integrated healthcare communications engagements across digital, social, content, and other channels.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "regulated multi-channel delivery",
+            "digital",
+            "social"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "technical-clinical-and-regulated-communication",
+          "requirement": "Explain complex technical terms, clinical trials, and studies while showing strong healthcare, digital, and communications judgment.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "pharma/healthcare communications",
+            "FDA/OPDP/med-legal review"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "cross-functional-team-and-project-leadership",
+          "requirement": "Lead account and cross-functional teams, manage project challenges, protect timelines and budgets, and improve tactical processes.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "cross-functional delivery",
+            "2 to 30"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "people-management-and-development",
+          "requirement": "Manage junior staff, set expectations, support performance, and contribute to career development and recruiting.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "contextual",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "Assistant Account Executive",
+            "2 to 30"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "organic-growth-and-pitch-work",
+          "requirement": "Identify organic growth opportunities, introduce integrated capabilities, and contribute to new-business pitches.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "contextual",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "client discovery",
+            "demo story"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "domestic-travel",
+          "requirement": "Be available for up to 10 percent domestic travel for client meetings and conferences when required.",
+          "priority": "context",
+          "evidenceStatus": "adjacent",
+          "matchMode": "contextual",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "advisory board in Dubai"
+          ],
+          "missingTerms": []
+        }
+      ],
+      "failures": [],
+      "warnings": []
+    },
+    "humanizer": {
+      "status": "passed",
+      "version": "2.2.0",
+      "mode": "surface-only",
+      "reviewedAt": "2026-08-07T14:00:09.917Z",
+      "copySha256": "b25aec0ee8fd8054f9662883663fe520c2dd5ee6317699f867244ef6fa906d21",
+      "reviewMethod": "humanizer-skill",
+      "semanticPassAttested": true,
+      "staticChecksPassed": true
+    },
+    "route": {
+      "viewports": [
+        {
+          "name": "desktop",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-01",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-06",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-03",
+          "errors": []
+        },
+        {
+          "name": "mobile",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-01",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-06",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-03",
+          "errors": []
+        }
+      ],
+      "errors": []
+    }
+  }
+}
