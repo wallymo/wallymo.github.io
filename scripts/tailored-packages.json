@@ -3233,11 +3233,38 @@
         "project-03.html"
       ],
       "resumePdfPath": "output/pdf/Wally-Mostafa-Real-Chemistry-AI-Business-Partner-Resume.pdf",
-      "publishStatus": "local-only",
+      "publishStatus": "live-verified",
       "qaStatus": "qa-passed",
       "builtAt": "2026-08-07T14:15:18.161Z",
       "coverLetterPdfPath": "output/pdf/Wally-Mostafa-Real-Chemistry-AI-Business-Partner-Cover-Letter.pdf",
-      "coverLetterMarkdownPath": "output/pdf/Wally-Mostafa-Real-Chemistry-AI-Business-Partner-Cover-Letter.md"
+      "coverLetterMarkdownPath": "output/pdf/Wally-Mostafa-Real-Chemistry-AI-Business-Partner-Cover-Letter.md",
+      "verification": {
+        "verifiedAt": "2026-08-07T14:16:53.578Z",
+        "routeUrl": "https://wallymo.github.io/real-chemistry-ai-business-partner/",
+        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-Real-Chemistry-AI-Business-Partner-Resume.pdf",
+        "configUrl": "https://wallymo.github.io/scripts/packages/real-chemistry-ai-business-partner.json",
+        "projectUrls": [
+          "https://wallymo.github.io/real-chemistry-ai-business-partner/project-01.html",
+          "https://wallymo.github.io/real-chemistry-ai-business-partner/project-02.html",
+          "https://wallymo.github.io/real-chemistry-ai-business-partner/project-03.html"
+        ],
+        "configSha256": "fd2918f8e5eb4268f74c42b34ea3a427457e0a7c28e9d1c4e04bf735d463c4c6",
+        "pdfSha256": "e01574b2bb9c8688d0ea0f76a9faebb2f5b05e864edd549533372fed69109600",
+        "resumeBaseProfilesUrl": "https://wallymo.github.io/scripts/resume-base-profiles.json",
+        "resumeBaseProfilesSha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108",
+        "coverLetterPdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-Real-Chemistry-AI-Business-Partner-Cover-Letter.pdf",
+        "coverLetterMarkdownUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-Real-Chemistry-AI-Business-Partner-Cover-Letter.md",
+        "coverLetterPdfSha256": "f2f1e62346a693a99f22bb99e03e6fbc2f76c33e4062c15d33a72869201e6816",
+        "coverLetterMarkdownSha256": "f525b2b9d26dc56a24346882e48c076434cdb9838d9a451d776fb3fde337bc4a",
+        "routeSha256": "bec20daacd18a541b6936a34de8e307576a6aff85b47ec9970deb8ea1df34313",
+        "scopedProjectSha256": {
+          "project-01.html": "7e7e69cfb2fdd49d233bab8803ef168f1f754eb1b4ee73d061e9eff582fa1717",
+          "project-02.html": "160f7715cc55ad50bef51f085d5ee94a4a58b38f1b6618ea72e771bec3902902",
+          "project-03.html": "9e0082917f2e988c2db3b2873545731e3c1d7c309f842f753b14e6e54686a173"
+        },
+        "configInputSha256": "e17e96bbc911bf5413cd5212b2afab3c5dadb0749119650c5594a0e41bc1fd47",
+        "qaBuiltAt": "2026-08-07T14:15:18.161Z"
+      }
     },
     {
       "workflowVersion": 2,
