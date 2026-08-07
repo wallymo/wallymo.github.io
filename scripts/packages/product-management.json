@@ -2,10 +2,10 @@
   "workflowVersion": 2,
   "contractRevision": 7,
   "slug": "product-management",
-  "roleTitle": "Product Management & Product Strategy",
-  "artifactStem": "Product-Management",
+  "roleTitle": "Product & Experience Strategy",
+  "artifactStem": "Product-Experience-Strategy",
   "fitClass": "strong",
-  "routeMode": "canonical-projects",
+  "routeMode": "scoped-projects",
   "selectedProjects": [
     "project-02.html",
     "project-03.html",
@@ -13,20 +13,20 @@
   ],
   "job": {
     "company": "General recruiter and networking use",
-    "roleTitle": "Product Management & Product Strategy",
+    "roleTitle": "Product & Experience Strategy",
     "jobId": "general-profile",
     "jobUrl": "not-provided",
     "sourceChannel": "user-requested-general-resume",
-    "dateCaptured": "2026-08-03",
+    "dateCaptured": "2026-08-07",
     "location": "Raleigh, NC; remote opportunities",
     "atsVendor": "not-applicable",
-    "rawJd": "General recruiter and networking profile, not an employer posting.\n\nTarget: Product Manager, Senior Product Manager, Product Strategy Lead, and adjacent client-facing product roles.\n\nCore work: understand customer and business problems; lead discovery; translate needs into product decisions, requirements, priorities, and roadmaps; align stakeholders and cross-functional teams; guide iterative delivery; and improve products through user feedback, adoption signals, and measurable outcomes.\n\nResume architecture: lead with direct product strategy and ownership across One Block Away, Hedgehox, and Kinesso. Use UX as evidence of customer discovery and product judgment. Consolidate earlier account leadership as evidence of client understanding, commercial context, and cross-functional delivery. Keep AI as a product-building capability rather than the primary identity.\n\nThis package must be fit-gated again against each employer's actual job description before application."
+    "rawJd": "General recruiter and networking profile, not an employer posting.\n\nTarget: Director of Experience Strategy, Director of Product Design, Product Strategy Lead, Senior Product Manager for digital experiences, and AI Product or Implementation Lead.\n\nCore work: understand customer and business problems; lead discovery; shape product and experience direction; translate needs into requirements, priorities, prototypes, and roadmaps; guide product-design teams and cross-functional delivery; and use AI where it solves a real workflow problem.\n\nResume architecture: lead with product strategy, experience leadership, enterprise UX, team growth, and hands-on product delivery across One Block Away, Hedgehox, Kinesso, and Heartbeat. Keep AI as a practical product-building capability. Consolidate earlier account leadership as evidence of client understanding and delivery, not as the target role or industry.\n\nThis package must be fit-gated again against each employer's actual job description before application."
   },
   "classification": {
     "targetLane": "ai-product-implementation",
     "evidenceMode": "balanced",
-    "primarySource": "The resume directly shows product discovery, product strategy, working prototypes, roadmap decisions, client iteration, enterprise platform scale, user research, team leadership, and cross-functional delivery.",
-    "supportingSource": "The portfolio shows how product problems were framed and turned into POCs, enterprise workflows, data products, and reusable systems. It supports the product-management story without replacing the resume's ownership evidence.",
+    "primarySource": "The resume directly shows product discovery, experience strategy, product-design leadership, working prototypes, roadmap decisions, enterprise platform scale, user research, team growth, and cross-functional delivery.",
+    "supportingSource": "The portfolio shows how product and experience problems became POCs, enterprise workflows, data products, and reusable systems. It supports the resume's leadership and delivery evidence without replacing it.",
     "hardGateStatus": "pass",
     "hardGates": [
       {
@@ -56,7 +56,6 @@
         "experience"
       ],
       "resumeTerms": [
-        "Product leader",
         "product strategy"
       ],
       "matchMode": "recognized-equivalent"
@@ -170,7 +169,7 @@
         "portfolio"
       ],
       "resumeTerms": [
-        "cross-functional delivery",
+        "product, design, and client teams",
         "2 to 30",
         "engineering teams"
       ],
@@ -201,7 +200,7 @@
       "resumeTerms": [
         "7,000+ users",
         "22 white-label brands",
-        "Product Adoption"
+        "enterprise analytics"
       ],
       "matchMode": "exact"
     },
@@ -227,7 +226,7 @@
         "experience"
       ],
       "resumeTerms": [
-        "technical delivery",
+        "front-end build",
         "build-ready",
         "product requirements"
       ],
@@ -245,8 +244,8 @@
       ],
       "leadProfileId": "ai-product-implementation",
       "accountPresentation": "consolidated",
-      "action": "tailor-to-jd",
-      "rationale": "This recruiter brief is product-led. The AI/Product evidence pool provides the direct product strategy, discovery, implementation, enterprise platform, research, and adoption evidence; account leadership remains supporting evidence."
+      "action": "use-existing",
+      "rationale": "This is a general recruiter profile centered on product strategy, experience leadership, and practical AI implementation. The AI/Product evidence pool provides direct discovery, enterprise UX, team leadership, implementation, research, and adoption evidence; account leadership remains supporting context."
     },
     "supportedOverlap": [
       "Current product work covers client discovery, product strategy, requirements, working prototypes, demo flows, roadmap decisions, and client iteration.",
@@ -272,17 +271,17 @@
     ],
     "coverLetterBridge": {
       "status": "not-needed",
-      "rationale": "This is a general recruiter and networking resume rather than an employer application. The resume and portfolio directly establish the supported product-management work. Each employer job description still needs its own bridge decision."
+      "rationale": "This is a general recruiter and networking resume rather than an employer application. The resume and portfolio directly establish the supported product, experience-strategy, design-leadership, and AI-implementation work. Each employer job description still needs its own bridge decision."
     },
-    "recommendation": "Proceed as a general Product Management recruiter profile. Lead with product ownership, discovery, working software, enterprise scale, user research, and cross-functional delivery. Keep formal backlog, Scrum, P&L, and KPI-cadence claims out unless a future job-specific evidence review supports them."
+    "recommendation": "Use this as the general Product & Experience Strategy recruiter profile. Lead with experience strategy, product-design leadership, product direction, enterprise scale, and working AI products. Keep formal backlog, Scrum, P&L, and KPI-cadence claims out unless a future job-specific evidence review supports them."
   },
   "positioning": {
     "laneId": "ai-product-implementation",
-    "targetIdentity": "Product leader",
-    "employerNeed": "Turn customer and business problems into clear product decisions, aligned teams, working products, and useful outcomes.",
+    "targetIdentity": "product and experience strategy",
+    "employerNeed": "Turn customer and business problems into useful product direction, strong experiences, aligned teams, and working products.",
     "bridgeType": "direct",
     "applicationStrategy": "direct",
-    "bridgeThesis": "connect customer needs, cross-functional teams, and practical delivery",
+    "bridgeThesis": "product design and AI implementation",
     "proofIds": [
       "one-block-away-04",
       "kinesso-01",
@@ -295,29 +294,29 @@
     "foundationId": "wally-mostafa-resume-2026-07-03",
     "compositionMode": "foundation-complete",
     "layoutDensity": "compact",
-    "summary": "Product leader who turns unclear business problems into product decisions, working software, and roadmaps. I have built AI tools from discovery through delivery, led enterprise platforms used by 7,000+ people across 22 brands, and grown a product design team from 2 to 30. My background in UX and client leadership helps me connect customer needs, cross-functional teams, and practical delivery.",
+    "summary": "I lead product and experience strategy, with hands-on work in product design and AI implementation. I led enterprise UX and design systems for platforms used by 7,000+ people across 22 brands and grew a product design team from 2 to 30. Today I turn client problems into AI products and working POCs, carrying the work from discovery into delivery. Earlier client leadership keeps me focused on both the business need and the people using the product.",
     "skillIds": [
-      "product-strategy-poc-delivery",
       "research-experience-strategy",
-      "program-project-delivery",
-      "client-success-product-adoption"
+      "enterprise-ux-design-systems",
+      "product-strategy-poc-delivery",
+      "program-project-delivery"
     ],
     "skills": [
-      {
-        "label": "Product Strategy & POC Delivery",
-        "description": "Discovery, scoping, requirements, prototype validation, demo narratives, build-ready logic, and production handoff"
-      },
       {
         "label": "Research & Experience Strategy",
         "description": "Stakeholder interviews, competitive audits, journey maps, user flows, wireframes, prototypes, usability testing, and research-led product direction"
       },
       {
-        "label": "Program & Project Delivery",
-        "description": "Scoping, requirements, timelines, review routing, team coordination, risk visibility, and build-ready handoff across product, design, and client teams"
+        "label": "Enterprise UX & Design Systems",
+        "description": "Team scaling (2 to 30), enterprise analytics, workflow UX, data visualization, component libraries, and accessibility (WCAG)"
       },
       {
-        "label": "Client Success & Product Adoption",
-        "description": "Client discovery, adoption-focused workflows, training and roadshows, human review, and product decisions based on user needs"
+        "label": "Product Strategy & POC Delivery",
+        "description": "Discovery, scoping, requirements, prototype validation, demo narratives, build-ready logic, and production handoff"
+      },
+      {
+        "label": "Program & Project Delivery",
+        "description": "Scoping, requirements, timelines, review routing, team coordination, risk visibility, and build-ready handoff across product, design, and client teams"
       }
     ],
     "roles": {
@@ -330,7 +329,7 @@
         "Developed FDA Warning Tool concepts that connect warning-letter patterns to content-risk guidance for pharma teams"
       ],
       "one-block-away": [
-        "Lead client product discovery, turning unclear business questions into testable product concepts, working POCs, demo flows, and roadmap decisions",
+        "Lead client discovery, turning unclear business questions into testable product concepts, working POCs, demo flows, and roadmap decisions",
         "Built ListingPal's AI listing-generation POC and landing page, turning basic property inputs into listing copy, social posts, ad copy, styling direction, and MLS/SEO-ready language in under 90 seconds",
         "Built WeReady's Bailey Intelligence dashboard, translating founder inputs, GitHub signals, source health, risk scoring, and evidence trails into startup-readiness workflows",
         "Own product strategy, UX, AI workflow design, front-end build, backend logic, demo readiness, and client iteration from first ask through working prototype",
@@ -395,25 +394,31 @@
       ]
     }
   },
+  "route": {
+    "presentation": "showcase",
+    "heroIntent": "resume-support",
+    "workHeading": "Selected work.",
+    "contactHeading": "Thanks for taking a look."
+  },
   "hero": {
-    "eyebrow": "Product Management | Product Strategy",
+    "eyebrow": "Product & Experience Strategy | Selected Work",
     "tags": [
-      "Discovery to roadmap",
-      "Enterprise product scale",
-      "Cross-functional delivery"
+      "Experience strategy",
+      "Product design leadership",
+      "Practical AI implementation"
     ],
-    "intro": "I connect customer needs, cross-functional teams, and practical delivery. My product work spans discovery, strategy, working POCs, enterprise analytics used by 7,000+ people across 22 brands, and team growth from 2 to 30. UX depth and hands-on AI implementation help me make product decisions grounded in what users need and what the team can realistically ship."
+    "intro": "This is a look at recent work that may be relevant to product strategy, experience leadership, and AI implementation roles. The resume covers the broader career story; these examples show how I frame problems and move ideas into working products."
   },
   "contact": {
-    "prompt": "If you need a product leader who can turn unclear needs into product decisions and keep discovery, delivery, and adoption connected, email is the fastest way to reach me.",
-    "signoff": "Product strategy | customer discovery | practical delivery"
+    "prompt": "Email and my resume are below.",
+    "signoff": "Product and experience strategy | Raleigh, NC"
   },
   "copyReview": {
     "humanizerVersion": "2.2.0",
     "mode": "rewrite-requested",
     "status": "passed",
-    "reviewedAt": "2026-08-03T19:53:05.461Z",
-    "copySha256": "aa68d180eecf05d972f7b57b3549a9ef390f78155f466fd9959e9829b4a5c010",
+    "reviewedAt": "2026-08-07T14:12:22.701Z",
+    "copySha256": "0651a961ed965310d7cba628eb79f5c65efc9ca53531bd2d01f4e9618ac6b6df",
     "preserved": [
       "claims"
     ],
@@ -447,12 +452,12 @@
   },
   "privacy": {
     "publicSafe": true,
-    "notes": "Contains only a public-safe general product-management target profile and sanitized evidence from the public resume and portfolio. It excludes recruiter details, application answers, compensation boundaries, and private eligibility information."
+    "notes": "Contains only a public-safe general product and experience strategy profile and sanitized evidence from the public resume and portfolio. It excludes recruiter details, application answers, compensation boundaries, and private eligibility information."
   },
   "qa": {
     "status": "qa-passed",
-    "builtAt": "2026-08-03T19:53:13.295Z",
-    "configInputSha256": "1be4f9d4202f262955f1e2531cbdb5b45f4fdd44d266924f40c7b58ce79c34c7",
+    "builtAt": "2026-08-07T14:12:31.249Z",
+    "configInputSha256": "d34e44f2113f1bfc1df332b9d3e921c22d2c1cd984d62d7da48c2cbf971a34e4",
     "sourceResumeSha256": "2265313e78b596a2b37d6d8f9a95081e4321b4047f142a5f0ddf22449cab4b9c",
     "resumeFoundation": {
       "id": "wally-mostafa-resume-2026-07-03",
@@ -468,16 +473,20 @@
       ],
       "leadProfileId": "ai-product-implementation",
       "accountPresentation": "consolidated",
-      "action": "tailor-to-jd",
+      "action": "use-existing",
       "registryVersion": 1,
       "registrySha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108"
     },
     "artifactHashes": {
-      "routeSha256": "7cd11203965bd04f92a0af7b57888de808c8d6a6969e6acdca189af696894f68",
-      "resumePdfSha256": "94cfa6dec6fd193f674dad8ade81a0f7e9ded5103f60c083ae724c9c158e4fe9",
+      "routeSha256": "367e8d5663076d5caa2a644169b5b49626f763ba2e7ac00314260b0af6e636ce",
+      "resumePdfSha256": "c6a73f6db7f9fda47f15a30e9387dcaf3251bb8405cc1291da33ee905714d9e7",
       "coverLetterPdfSha256": null,
       "coverLetterMarkdownSha256": null,
-      "scopedProjectSha256": {}
+      "scopedProjectSha256": {
+        "project-02.html": "ff75aa21c7302f69366cdfc22cdd66239b8c6a1e52d2e2e0eed0bd554c0d4bb1",
+        "project-03.html": "66dbff1f5ce2bfb35c90516b2f184266e74c89b5f123742f4c7814dce5cf7cd0",
+        "project-06.html": "b8b24fee73749fe584c170c22ec0b07f600b313788cf1228638581f4b69301db"
+      }
     },
     "renderer": {
       "browser": {
@@ -485,16 +494,17 @@
         "version": "Google Chrome for Testing 149.0.7827.55"
       },
       "htmlPath": "tmp/tailored-resumes/product-management.html",
-      "pdfPath": "output/pdf/Wally-Mostafa-Product-Management-Resume.pdf",
-      "fontWait": false
+      "pdfPath": "output/pdf/Wally-Mostafa-Product-Experience-Strategy-Resume.pdf",
+      "fontWait": true,
+      "fontProfile": "portfolio-pdf"
     },
     "coverLetterRenderer": null,
     "coverLetter": null,
     "ats": {
       "ok": true,
-      "pdfPath": "output/pdf/Wally-Mostafa-Product-Management-Resume.pdf",
+      "pdfPath": "output/pdf/Wally-Mostafa-Product-Experience-Strategy-Resume.pdf",
       "pageCount": 2,
-      "fileSize": 148993,
+      "fileSize": 72165,
       "annotations": [
         {
           "page": 1,
@@ -521,6 +531,9 @@
           "uri": "https://www.red-dot.org/project/dxa-digital-experience-audit-55219"
         }
       ],
+      "fontCompatibility": {
+        "type3Fonts": false
+      },
       "coverage": [
         {
           "id": "education-and-product-experience",
@@ -530,7 +543,6 @@
           "matchMode": "recognized-equivalent",
           "status": "covered-directly",
           "matchedTerms": [
-            "Product leader",
             "product strategy"
           ],
           "missingTerms": []
@@ -585,12 +597,11 @@
           "matchMode": "recognized-equivalent",
           "status": "covered-directly",
           "matchedTerms": [
+            "product, design, and client teams",
             "2 to 30",
             "engineering teams"
           ],
-          "missingTerms": [
-            "cross-functional delivery"
-          ]
+          "missingTerms": []
         },
         {
           "id": "enterprise-products-adoption",
@@ -602,7 +613,7 @@
           "matchedTerms": [
             "7,000+ users",
             "22 white-label brands",
-            "Product Adoption"
+            "enterprise analytics"
           ],
           "missingTerms": []
         },
@@ -614,26 +625,22 @@
           "matchMode": "recognized-equivalent",
           "status": "covered-directly",
           "matchedTerms": [
+            "front-end build",
             "build-ready",
             "product requirements"
           ],
-          "missingTerms": [
-            "technical delivery"
-          ]
+          "missingTerms": []
         }
       ],
       "failures": [],
-      "warnings": [
-        "cross-functional-product-leadership: supported core language missing from the PDF: cross-functional delivery",
-        "technical-product-translation: supported core language missing from the PDF: technical delivery"
-      ]
+      "warnings": []
     },
     "humanizer": {
       "status": "passed",
       "version": "2.2.0",
       "mode": "rewrite-requested",
-      "reviewedAt": "2026-08-03T19:53:05.461Z",
-      "copySha256": "aa68d180eecf05d972f7b57b3549a9ef390f78155f466fd9959e9829b4a5c010",
+      "reviewedAt": "2026-08-07T14:12:22.701Z",
+      "copySha256": "0651a961ed965310d7cba628eb79f5c65efc9ca53531bd2d01f4e9618ac6b6df",
       "reviewMethod": "humanizer-skill",
       "semanticPassAttested": true,
       "staticChecksPassed": true
@@ -645,7 +652,31 @@
           "errors": []
         },
         {
+          "name": "desktop-project-02",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-03",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-06",
+          "errors": []
+        },
+        {
           "name": "mobile",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-02",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-03",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-06",
           "errors": []
         }
       ],
