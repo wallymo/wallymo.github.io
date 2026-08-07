@@ -1,0 +1,888 @@
+{
+  "workflowVersion": 2,
+  "contractRevision": 7,
+  "slug": "real-chemistry-ai-business-partner",
+  "roleTitle": "Real Chemistry AI Business Partner",
+  "artifactStem": "Real-Chemistry-AI-Business-Partner",
+  "fitClass": "strong",
+  "routeMode": "scoped-projects",
+  "selectedProjects": [
+    "project-01.html",
+    "project-02.html",
+    "project-03.html"
+  ],
+  "job": {
+    "company": "Real Chemistry",
+    "roleTitle": "AI Business Partner",
+    "jobId": "not-provided",
+    "jobUrl": "not-provided",
+    "sourceChannel": "user-provided job description",
+    "dateCaptured": "2026-08-07",
+    "location": "Boston, MA; Carmel, IN; Chicago, IL; Lambertville, NJ; other US offices; or remote within the US",
+    "employmentType": "Hybrid or remote within the US, depending on team and business needs",
+    "atsVendor": "unknown",
+    "rawJd": "AI Business Partner\nBoston - Massachusetts; Carmel - Indiana; Chicago - Illinois; Lambertville - New Jersey; Remote - USA\nAt Real Chemistry, making the world a healthier place isn’t just an aspiration—it’s our everyday reality. Our drive to transform healthcare is informed by our blend of deep scientific expertise, human-centred creativity, and AI-driven insights, fostering a unique environment where innovation thrives and our people are impact-obsessed. As a global agency, we provide a full suite of services across healthcare communications and marketing to our clients, including top players in the pharmaceutical and biotech industries.\n\nOur #LifeatRealChem culture is rooted in our people—we believe we are best together and are committed to excellence for both our clients and colleagues. Whether you're a seasoned professional or just starting your career, if you share our passion for healthcare and connection, we invite you to explore our opportunities.\n\nDiscover your purpose. Embrace innovation. Experience #LifeatRealChem.\n\nThe AI Business Partner translates business priorities into practical AI solutions that improve how work gets done. Sitting at the intersection of business strategy, domain expertise, and applied AI, this role identifies high-value opportunities, builds working prototypes and pilots, and partners cross-functionally to scale successful solutions.\nThis role is ideal for someone who can move fluidly from ambiguity to action — working with stakeholders to define problems, rapidly testing ideas using modern generative AI tools, and helping the organization adopt AI in ways that are useful, responsible, and aligned with business needs. \n\nThis is a hybrid role, based in any of our US offices—including New York City, Boston, Chicago, Carmel, or San Francisco—or remotely within the US, depending on team and business needs.\n\nWhat you’ll do:\n\nAI Opportunity Identification & Prioritization\n\nIdentify high-value opportunities to apply generative AI across workflows, deliverables, and business processes.\nTranslate strategic priorities and business challenges into clearly scoped AI use cases, pilots, and solution concepts.\nAssess opportunities based on business value, feasibility, user needs, adoption potential, and risk.\nPartner with leaders and subject matter experts to prioritize initiatives that can drive meaningful efficiency, quality, or innovation gains.\nPrototyping & Solution Development\n\nBuild and iterate on working prototypes, pilots, and lightweight AI-enabled tools using modern development environments, LLM APIs, agentic workflows, and related technologies.\nDesign prompts, workflows, and tool interactions that guide AI behavior toward accurate, useful, and contextually relevant outcomes.\nTest solutions quickly, incorporate user feedback, and refine prototypes based on real-world usage and evolving requirements.\nMove ideas from concept to demonstrable value, balancing speed, practicality, and quality.\nCross-Functional Delivery & Scaling\n\nPartner closely with AI technical teams, engineering, product, and business stakeholders to transition validated prototypes into scalable, production-ready solutions where appropriate.\nHelp define requirements, document learnings, and support handoffs that enable successful implementation and longer-term sustainability.\nWork across technical and non-technical teams to align on priorities, solution design, success metrics, and rollout approach.\nUse strong judgment to determine when to continue iterating independently and when to engage specialized technical partners.\nAdoption, Enablement & Change Management\n\nSupport successful adoption of AI solutions by creating practical guidance, training, onboarding materials, and usage playbooks.\nCommunicate AI concepts, capabilities, and limitations in clear, accessible language for non-technical audiences.\nHelp build AI fluency across the organization by enabling teams to use tools responsibly and effectively in their day-to-day work.\nFoster a culture of experimentation, continuous learning, and practical innovation.\nGovernance, Quality & Responsible AI\n\nHelp ensure AI solutions are designed and applied in ways that are responsible, compliant, and appropriate for a regulated healthcare communications environment.\nIncorporate considerations related to privacy, safety, quality, transparency, and human oversight into solution design and rollout.\nPartner with relevant stakeholders to align AI use with organizational standards, governance expectations, and evolving best practices.\nPromote thoughtful experimentation while maintaining appropriate safeguards and quality controls. \nDomain Expertise Application\n\nApply strong understanding of healthcare communications, including advertising, activation, communications, and medical domains, to shape relevant and impactful AI solutions.\nEnsure solutions reflect real-world workflows, stakeholder needs, and the nuances of regulated client environments.\nTranslate domain knowledge into practical requirements that improve usability, relevance, and business fit.\nWhat you should have: \n\nBachelor’s degree, preferably in Computer Science, Data Science or related engineering discipline, or equivalent practical experience in a relevant field.\nExperience in AI innovation, product, or a related area (e.g., Claude Code, Cursor).\nExperience in digital strategy, consulting, healthcare communications, or a related area (e.g., Claude Code, Cursor).\nHands-on experience building, testing, and iterating on generative AI workflows, prototypes, copilots, agents, or similar solutions.\nFamiliarity Proficiency with LLM APIs, prompting strategies, AI-assisted development environments, and modern tools used to prototype AI-enabled workflows.\nStrong ability to translate ambiguous business needs into practical, testable AI use cases and solution concepts.\nExcellent communication and stakeholder management skills, with the ability to work effectively across technical and non-technical audiences. Exceptional communication and stakeholder management skills, with a proven ability to influence and collaborate effectively across technical and non-technical audiences with the ability to translate technical concepts for a non-technical audience\nStrong problem-solving, prioritization, and execution skills in fast-moving, ambiguous environments.\nAbility to evaluate solutions through the lens of usefulness, risk, quality, and business impact.\nSkills and Competencies\n\nAgentic Workflows; AI - Artificial Intelligence; Large Language Models (LLMs); Machine Learning\nCoding; Programming Languages; Software Engineering\nProduct Demonstration; Technical Troubleshooting\nImplementation Management; Solution Delivery; Solution Design\nClient Relationship Management; Problem Analysis; Workflow Analysis\nThis position is crucial in driving the execution of AI strategies at Real Chemistry, ensuring that AI initiatives are not only innovative but also practical, effective, and aligned with real-world needs. The chosen candidate will play a pivotal role in enhancing the organization's capabilities and fostering a culture of AI-driven innovation and continuous improvement."
+  },
+  "classification": {
+    "targetLane": "ai-product-implementation",
+    "evidenceMode": "balanced",
+    "primarySource": "The resume shows AI opportunity framing, working POCs, regulated healthcare delivery, cross-functional product work, stakeholder communication, and adoption across client and enterprise settings.",
+    "supportingSource": "The portfolio shows the working products behind those claims, including pharma review and agency-operations tools, client-led AI POCs, modern model workflows, and enterprise systems.",
+    "hardGateStatus": "pass",
+    "hardGates": [
+      {
+        "gate": "Bachelor's degree or equivalent practical experience in a relevant field",
+        "status": "pass",
+        "requirementId": "education-or-equivalent-experience",
+        "evidence": "The resume documents a bachelor's degree plus 15 years across healthcare communications, client strategy, enterprise product work, and applied AI. The degree is not in a preferred technical discipline, but the posting explicitly accepts equivalent practical experience."
+      },
+      {
+        "gate": "Hands-on experience building and iterating on generative AI workflows, prototypes, copilots, agents, or similar solutions",
+        "status": "pass",
+        "requirementId": "hands-on-generative-ai-prototyping",
+        "evidence": "Current work includes functional AI POCs, LLM and VLM review workflows, model orchestration, prompt-defined criteria, front-end build, backend logic, demos, client feedback, and production handoff."
+      },
+      {
+        "gate": "US office or remote-US location",
+        "status": "pass",
+        "requirementId": "us-location",
+        "evidence": "The resume lists Raleigh, North Carolina and current remote roles. The posting allows remote work within the United States, depending on team and business needs."
+      }
+    ]
+  },
+  "requirements": [
+    {
+      "id": "education-or-equivalent-experience",
+      "text": "Hold a bachelor's degree, preferably in a technical discipline, or bring equivalent practical experience in a relevant field.",
+      "priority": "hard-gate",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The resume lists a BA from Rutgers University.",
+        "Fifteen years of relevant work includes healthcare communications, enterprise product delivery, and current applied-AI implementation."
+      ],
+      "proofIds": [
+        "hedgehox-03",
+        "one-block-away-04",
+        "kinesso-01"
+      ],
+      "destinations": [
+        "summary",
+        "experience"
+      ],
+      "resumeTerms": [
+        "BA Labor Studies & Employee Relations",
+        "Rutgers University"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "ai-opportunity-framing-and-prioritization",
+      "text": "Identify valuable AI opportunities and turn business priorities into scoped use cases, pilots, and solution concepts.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "One Block Away work starts with unclear client questions and turns them into testable product concepts, working POCs, and roadmap decisions.",
+        "Hedgehox work translates recurring pharma agency needs into practical AI tools across intake, scoping, review, submission, and regulatory monitoring."
+      ],
+      "proofIds": [
+        "one-block-away-01",
+        "hedgehox-03",
+        "hedgehox-05"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "scoped AI use cases",
+        "working POCs",
+        "roadmap decisions"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "hands-on-generative-ai-prototyping",
+      "text": "Build, test, and iterate on generative AI workflows, prototypes, copilots, agents, or similar tools.",
+      "priority": "hard-gate",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Claims Detector, ListingPal, WeReady, Scope Generator, BriefFlow, Echo, Route Validator, and the FDA Warning Tool provide direct prototype and workflow evidence.",
+        "Current roles own AI workflow design, front-end build, backend logic, demo readiness, stakeholder feedback, and production handoff."
+      ],
+      "proofIds": [
+        "hedgehox-01",
+        "hedgehox-03",
+        "one-block-away-02",
+        "one-block-away-03",
+        "one-block-away-04"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "LLM",
+        "VLM",
+        "working POCs",
+        "prototype",
+        "front-end build",
+        "backend logic"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "llm-tools-prompts-and-development-environments",
+      "text": "Use LLM APIs, prompting strategies, AI-assisted development environments, and modern prototyping tools.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The portfolio documents Gemini API use, interchangeable Gemini, Claude, and GPT backends, prompt-defined criteria, model orchestration, RAG and knowledge workflows, and working product stacks.",
+        "The resume documents LLM and VLM workflows, prompt-defined criteria, front-end build, backend logic, and prototype delivery."
+      ],
+      "proofIds": [
+        "hedgehox-02",
+        "hedgehox-05",
+        "one-block-away-04"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "LLM/VLM workflows",
+        "prompt-defined criteria",
+        "model orchestration",
+        "front-end build",
+        "backend logic"
+      ],
+      "matchMode": "contextual"
+    },
+    {
+      "id": "cross-functional-delivery-and-scaling",
+      "text": "Work with AI technical teams, engineering, product, and business stakeholders to move validated prototypes toward scalable delivery.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Current work spans client discovery, product strategy, UX, AI workflows, working prototypes, demos, and production handoff.",
+        "Heartbeat and Kinesso work moved research and product direction into build-ready delivery across engineering, strategy, account, creative, analytics, and leadership teams."
+      ],
+      "proofIds": [
+        "one-block-away-04",
+        "heartbeat-03",
+        "kinesso-01"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "production handoff",
+        "engineering teams",
+        "build-ready"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "adoption-enablement-and-change",
+      "text": "Support adoption through practical guidance, training, onboarding, playbooks, and clear communication for non-technical teams.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The evidence bank documents training, roadshows, adoption-focused workflows, client workshops, and product decisions based on user needs.",
+        "Kinesso work built repeatable systems across a distributed design organization and enterprise products used by more than 7,000 people."
+      ],
+      "proofIds": [
+        "kinesso-01",
+        "heartbeat-01",
+        "account-management-03"
+      ],
+      "destinations": [
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "training and roadshows",
+        "stakeholder adoption",
+        "7,000+"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "responsible-ai-and-regulated-quality",
+      "text": "Build privacy, safety, quality, transparency, human oversight, and governance into AI work for regulated healthcare communications.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Claims Detector surfaces evidence gaps and pre-populates audit-ready annotations for human review before MLR submission.",
+        "The wider pharma AI work covers FDA, HIPAA, MLR, submission capture, review routing, and regulatory signal monitoring."
+      ],
+      "proofIds": [
+        "hedgehox-02",
+        "hedgehox-03",
+        "hedgehox-06"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "FDA/HIPAA/MLR workflows",
+        "human review",
+        "evidence gaps",
+        "audit-ready annotations"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "healthcare-communications-domain",
+      "text": "Apply healthcare communications experience across advertising, activation, communications, or medical work.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The resume documents 11 years across pharma and healthcare communications, including account leadership, brand planning, UX, MLR review, and patient and HCP experiences.",
+        "Current AI work is designed around real pharma agency workflows and regulated client environments."
+      ],
+      "proofIds": [
+        "account-management-01",
+        "account-management-02",
+        "account-management-03",
+        "heartbeat-02",
+        "hedgehox-03"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "healthcare communications",
+        "HCP/patient UX",
+        "brand planning",
+        "MLR review"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "stakeholder-communication-and-influence",
+      "text": "Communicate with technical and non-technical stakeholders, translate technical concepts clearly, and influence cross-functional decisions.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Eight years of Fortune 500 account leadership required clear communication across clients, brand teams, account, strategy, creative, UX, development, and regulated review groups.",
+        "Current work translates product behavior into demos, requirements, decisions, and handoff plans."
+      ],
+      "proofIds": [
+        "account-management-03",
+        "hedgehox-01",
+        "one-block-away-01"
+      ],
+      "destinations": [
+        "skills",
+        "experience"
+      ],
+      "resumeTerms": [
+        "client discovery",
+        "demo narratives",
+        "engineering teams"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "coding-and-software-engineering-depth",
+      "text": "Bring coding, programming-language, software-engineering, troubleshooting, and implementation skills.",
+      "priority": "preferred",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "The portfolio shows working product stacks, front-end and backend implementation, Gemini API use, model backends, browser automation, and technical product troubleshooting.",
+        "The record does not establish conventional software-engineering tenure or programming-language proficiency."
+      ],
+      "proofIds": [
+        "one-block-away-04",
+        "hedgehox-05"
+      ],
+      "destinations": [
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "front-end build",
+        "backend logic",
+        "implementation"
+      ],
+      "matchMode": "contextual"
+    },
+    {
+      "id": "us-location",
+      "text": "Work from a listed US office or remotely within the United States, depending on team needs.",
+      "priority": "hard-gate",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The resume lists Raleigh, North Carolina and current remote roles."
+      ],
+      "proofIds": [],
+      "destinations": [
+        "experience",
+        "application-answer"
+      ],
+      "resumeTerms": [
+        "Raleigh, NC",
+        "Remote"
+      ],
+      "matchMode": "exact"
+    }
+  ],
+  "fitGate": {
+    "resumeBase": {
+      "mode": "ai-product-implementation",
+      "sourceProfiles": [
+        {
+          "id": "ai-product-implementation",
+          "version": 1
+        }
+      ],
+      "leadProfileId": "ai-product-implementation",
+      "accountPresentation": "consolidated",
+      "action": "tailor-to-jd",
+      "rationale": "The role is centered on AI opportunity framing, workflow design, prototyping, responsible delivery, and adoption. Healthcare account leadership strengthens the domain and stakeholder case but is not a separate account-ownership operating center."
+    },
+    "supportedOverlap": [
+      "Current Hedgehox work turns pharma agency needs into working AI tools for MLR claim review, brief intake, scoping, review routing, submission capture, and FDA monitoring.",
+      "One Block Away work turns unclear client questions into scoped product concepts, working POCs, demos, and roadmap decisions, with direct ownership of product strategy, UX, AI workflow design, front-end build, backend logic, and client iteration.",
+      "The resume documents 11 years in pharma and healthcare communications, including Fortune 500 client leadership, brand planning, patient and HCP experiences, and MLR delivery.",
+      "Kinesso work adds enterprise scale, cross-functional leadership, repeatable workflows, and adoption across products used by more than 7,000 people and 22 white-label brands.",
+      "The portfolio makes the technical implementation visible through model workflows, Gemini API use, working product stacks, human review, and production handoff."
+    ],
+    "unsupportedRequirements": [
+      "Claude Code and Cursor are examples in the posting, but named proficiency with either tool is not established in the resume or portfolio.",
+      "Conventional software-engineering tenure and programming-language proficiency are not documented.",
+      "Production-scale engineering ownership and AI rollout metrics across a large organization are not documented.",
+      "A formal organization-wide AI enablement curriculum or playbook with measured adoption outcomes is not documented."
+    ],
+    "actualMismatches": [
+      "The bachelor's degree is in Labor Studies and Employee Relations rather than a preferred technical discipline; the posting also accepts equivalent practical experience."
+    ],
+    "missingEvidence": [
+      "Named programming languages and conventional software-engineering depth.",
+      "Direct ownership of production AI operations after handoff.",
+      "Measured adoption, quality, or efficiency outcomes for an organization-wide AI rollout."
+    ],
+    "coverLetterBridge": {
+      "status": "not-needed",
+      "rationale": "The resume and portfolio already prove the role's central mix of healthcare communications, business-to-AI translation, working prototypes, regulated judgment, stakeholder management, and implementation. A cover letter is not needed to make the application credible."
+    },
+    "recommendation": "Proceed as a strong fit. Lead with healthcare business translation, working AI prototypes, responsible regulated workflows, stakeholder adoption, and cross-functional delivery. Keep software-engineering tenure, programming-language depth, named Claude Code or Cursor use, and production-operations ownership out of the claim set."
+  },
+  "positioning": {
+    "laneId": "ai-product-implementation",
+    "targetIdentity": "AI business partner and implementation lead",
+    "employerNeed": "Turn healthcare business priorities into useful, responsible AI pilots and help teams adopt what works.",
+    "bridgeType": "direct",
+    "applicationStrategy": "direct",
+    "bridgeThesis": "turn healthcare business priorities into scoped AI use cases, working POCs, and practical rollout plans",
+    "proofIds": [
+      "hedgehox-03",
+      "one-block-away-04",
+      "account-management-03"
+    ],
+    "remainingGap": null
+  },
+  "coverLetter": null,
+  "resume": {
+    "foundationId": "wally-mostafa-resume-2026-07-03",
+    "compositionMode": "foundation-complete",
+    "layoutDensity": "compact",
+    "summary": "AI business partner and implementation lead with 15 years spanning healthcare communications, client strategy, enterprise product work, and regulated AI delivery. I turn healthcare business priorities into scoped AI use cases, working POCs, and practical rollout plans. Recent work includes LLM and VLM review workflows, client-led product discovery, stakeholder testing, and production handoff.",
+    "skillIds": [
+      "ai-implementation-workflow-design",
+      "product-strategy-poc-delivery",
+      "regulated-healthcare-client-delivery",
+      "client-success-product-adoption",
+      "program-project-delivery"
+    ],
+    "skills": [
+      {
+        "label": "AI Implementation & Workflow Design",
+        "description": "Governed LLM/VLM workflows, multimodal review, RAG/knowledge bases, prompt-defined criteria, model orchestration, and human review surfaces"
+      },
+      {
+        "label": "Product Strategy & POC Delivery",
+        "description": "Discovery, scoping, requirements, prototype validation, demo narratives, build-ready logic, and production handoff"
+      },
+      {
+        "label": "Regulated Healthcare & Client Delivery",
+        "description": "11 years across pharma/healthcare communications, FDA/HIPAA/MLR workflows, HCP/patient UX, client workshops, and stakeholder adoption"
+      },
+      {
+        "label": "Client Success & Product Adoption",
+        "description": "Client discovery, adoption-focused workflows, training and roadshows, human review, and product decisions based on user needs"
+      },
+      {
+        "label": "Program & Project Delivery",
+        "description": "Scoping, requirements, timelines, review routing, team coordination, risk visibility, and build-ready handoff across product, design, and client teams"
+      }
+    ],
+    "roles": {
+      "hedgehox": [
+        "Built the functional Claims Detector POC, shaped the demo story, iterated with investors, and secured an investor",
+        "Designed Claims Detector workflows that identify promotional claims, surface evidence gaps, and pre-populate audit-ready annotations before MLR submission",
+        "Turn pharma agency workflow needs into scoped AI use cases and working tools for MLR claim review, brief intake, scoping, review routing, submission capture, and FDA signal monitoring",
+        "Designed the full Xenagos Bio startup biopharma website from scratch, including investor-facing structure, scientific positioning, visual direction, and hidden design-system handoff",
+        "Built Scope Generator for pharma agency finance and operations teams to manage regional rate cards, brands, sub-brands, and natural-language scope changes",
+        "Developed FDA Warning Tool concepts that connect warning-letter patterns to content-risk guidance for pharma teams"
+      ],
+      "one-block-away": [
+        "Lead client discovery to understand workflows and business needs, then turn unclear questions into scoped use cases, working POCs, demo flows, and roadmap decisions",
+        "Built ListingPal's AI listing-generation POC and landing page, turning basic property inputs into listing copy, social posts, ad copy, styling direction, and MLS/SEO-ready language in under 90 seconds",
+        "Built WeReady's Bailey Intelligence dashboard, translating founder inputs, GitHub signals, source health, risk scoring, and evidence trails into startup-readiness workflows",
+        "Own product strategy, UX, AI workflow design, front-end build, backend logic, demo readiness, and client iteration from first ask through working prototype",
+        "Currently building the website and sponsor strategy for a Tunisia youth soccer program, positioning the project for player advancement, community support, and donor outreach"
+      ],
+      "kinesso": [
+        "Scaled product design from 2 to 30 people across the US and Poland for enterprise analytics used by 7,000+ users across 22 white-label brands",
+        "Led UX and design-system strategy for MIE data visualization, dashboard building, brand theming, and reusable analytics components",
+        "Built the Digital Experience Audit workflow for channel scoring, benchmarks, recommendations, visualization, and presentation-ready client outputs",
+        "Design-system and analytics work earned 5 Indigo Gold, 4 Indigo Silver, and Red Dot recognition"
+      ],
+      "omnicom": [
+        "Supported oncology accounts as a freelance UX designer, combining UX design and account-management experience to strengthen regulated healthcare work",
+        "Championed UX best practices across account, strategy, creative, and delivery conversations, translating brand goals into clearer user flows, content structure, and digital recommendations"
+      ],
+      "heartbeat": [
+        "Led UX research and experience strategy for pharma and healthcare work, translating stakeholder input, competitive audits, and user needs into digital product direction",
+        "Created journey maps, site maps, user flows, wireframes, and prototypes for patient, HCP, and internal brand-team experiences across regulated healthcare programs",
+        "Partnered with strategy, creative, account, and engineering teams to move UX recommendations from research findings into build-ready product and campaign experiences"
+      ],
+      "account-management": [
+        "8 years managing Fortune 500 pharma and healthcare clients and brand budgets up to $20M across CNS/neurology, psychiatry, cardiovascular/metabolic, and sleep/wakefulness brands including NUVIGIL, Namenda XR, Lipitor, and Zoloft",
+        "One of two account consumer leads on FCB Health's largest pharma account across all verticals: TV, radio, digital, gaming, Times Square, unbranded campaigns, brand planning, and MLR review",
+        "Translated client and brand strategy into briefs, creative feedback, production requirements, timelines, and MLR-ready deliverables across account, creative, UX, and development teams"
+      ]
+    },
+    "sourceBulletIds": {
+      "hedgehox": [
+        "hedgehox-01",
+        "hedgehox-02",
+        "hedgehox-03",
+        "hedgehox-04",
+        "hedgehox-05",
+        "hedgehox-06"
+      ],
+      "one-block-away": [
+        "one-block-away-01",
+        "one-block-away-02",
+        "one-block-away-03",
+        "one-block-away-04",
+        "one-block-away-05"
+      ],
+      "kinesso": [
+        "kinesso-01",
+        "kinesso-02",
+        "kinesso-03",
+        "kinesso-04"
+      ],
+      "omnicom": [
+        "omnicom-01",
+        "omnicom-02"
+      ],
+      "heartbeat": [
+        "heartbeat-01",
+        "heartbeat-02",
+        "heartbeat-03"
+      ],
+      "account-management": [
+        "account-management-01",
+        "account-management-02",
+        "account-management-03"
+      ]
+    }
+  },
+  "hero": {
+    "eyebrow": "Real Chemistry | Selected Work",
+    "tags": [
+      "Healthcare AI workflows",
+      "Working POCs",
+      "Enterprise adoption and delivery"
+    ],
+    "intro": "Here are a few things I've been working on lately. I picked projects that may be useful context alongside my resume, especially around regulated healthcare AI, client-led POCs, and enterprise workflow adoption."
+  },
+  "contact": {
+    "prompt": "Email is the best way to reach me.",
+    "signoff": "Healthcare AI | working POCs | enterprise delivery"
+  },
+  "route": {
+    "presentation": "showcase",
+    "heroIntent": "resume-support",
+    "workHeading": "What I've been up to.",
+    "contactHeading": "Thanks for stopping by."
+  },
+  "copyReview": {
+    "humanizerVersion": "2.2.0",
+    "mode": "surface-only",
+    "status": "passed",
+    "reviewedAt": "2026-08-07T13:58:40.002Z",
+    "copySha256": "a1db4b10522989f91fac6a55836ceb274312ba650f0cafddcf4d517889c045e5",
+    "preserved": [
+      "content",
+      "structure",
+      "claims",
+      "ending"
+    ],
+    "rewriteAuthorized": false,
+    "reviewMethod": "humanizer-skill",
+    "semanticPassAttested": true,
+    "staticChecksPassed": true,
+    "finalAntiAiPass": true,
+    "remainingTells": []
+  },
+  "constraints": {
+    "doNotClaim": [
+      "Software engineer or machine-learning engineer",
+      "Programming-language proficiency",
+      "Claude Code or Cursor proficiency",
+      "Production-scale AI operations ownership",
+      "Formal organization-wide AI training ownership",
+      "Measured enterprise AI adoption or efficiency outcomes"
+    ],
+    "blockedTerms": [
+      "software engineer",
+      "machine learning engineer",
+      "expert programmer",
+      "programming-language expert",
+      "Claude Code expert",
+      "Cursor expert",
+      "owned production AI operations",
+      "trained the entire organization",
+      "measured enterprise-wide adoption"
+    ]
+  },
+  "privacy": {
+    "publicSafe": true,
+    "notes": "Contains only the public job description supplied by the user and public-safe evidence from the resume and portfolio. It excludes recruiter details, application answers, compensation decisions, private eligibility information, and submission state."
+  },
+  "qa": {
+    "status": "qa-passed",
+    "builtAt": "2026-08-07T14:00:56.993Z",
+    "configInputSha256": "fee477fb3a21bf9c731bc3c34656723e38376d84faf7276fe5cf15f1f68a103a",
+    "sourceResumeSha256": "2265313e78b596a2b37d6d8f9a95081e4321b4047f142a5f0ddf22449cab4b9c",
+    "resumeFoundation": {
+      "id": "wally-mostafa-resume-2026-07-03",
+      "sourcePdfSha256": "f9b05b6c3c134262b1af6c5734363daf4385cf335407a139779a37d138adf1aa"
+    },
+    "resumeBase": {
+      "mode": "ai-product-implementation",
+      "sourceProfiles": [
+        {
+          "id": "ai-product-implementation",
+          "version": 1
+        }
+      ],
+      "leadProfileId": "ai-product-implementation",
+      "accountPresentation": "consolidated",
+      "action": "tailor-to-jd",
+      "registryVersion": 1,
+      "registrySha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108"
+    },
+    "artifactHashes": {
+      "routeSha256": "bec20daacd18a541b6936a34de8e307576a6aff85b47ec9970deb8ea1df34313",
+      "resumePdfSha256": "9a491488bf0f5ca465047488f0a60d32589b4b908a0587f90a0ee9a6fd35c82e",
+      "coverLetterPdfSha256": null,
+      "coverLetterMarkdownSha256": null,
+      "scopedProjectSha256": {
+        "project-01.html": "7e7e69cfb2fdd49d233bab8803ef168f1f754eb1b4ee73d061e9eff582fa1717",
+        "project-02.html": "160f7715cc55ad50bef51f085d5ee94a4a58b38f1b6618ea72e771bec3902902",
+        "project-03.html": "9e0082917f2e988c2db3b2873545731e3c1d7c309f842f753b14e6e54686a173"
+      }
+    },
+    "renderer": {
+      "browser": {
+        "name": "chrome-headless-shell",
+        "version": "Google Chrome for Testing 149.0.7827.55"
+      },
+      "htmlPath": "tmp/tailored-resumes/real-chemistry-ai-business-partner.html",
+      "pdfPath": "output/pdf/Wally-Mostafa-Real-Chemistry-AI-Business-Partner-Resume.pdf",
+      "fontWait": true,
+      "fontProfile": "portfolio-pdf"
+    },
+    "coverLetterRenderer": null,
+    "coverLetter": null,
+    "ats": {
+      "ok": true,
+      "pdfPath": "output/pdf/Wally-Mostafa-Real-Chemistry-AI-Business-Partner-Resume.pdf",
+      "pageCount": 2,
+      "fileSize": 72791,
+      "annotations": [
+        {
+          "page": 1,
+          "uri": "mailto:wmostafa12@gmail.com"
+        },
+        {
+          "page": 1,
+          "uri": "https://linkedin.com/in/wallymo"
+        },
+        {
+          "page": 1,
+          "uri": "https://wallymo.github.io/real-chemistry-ai-business-partner/"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/6748"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/4629"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.red-dot.org/project/dxa-digital-experience-audit-55219"
+        }
+      ],
+      "fontCompatibility": {
+        "type3Fonts": false
+      },
+      "coverage": [
+        {
+          "id": "education-or-equivalent-experience",
+          "requirement": "Hold a bachelor's degree, preferably in a technical discipline, or bring equivalent practical experience in a relevant field.",
+          "priority": "hard-gate",
+          "evidenceStatus": "direct",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "BA Labor Studies & Employee Relations",
+            "Rutgers University"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "ai-opportunity-framing-and-prioritization",
+          "requirement": "Identify valuable AI opportunities and turn business priorities into scoped use cases, pilots, and solution concepts.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "scoped AI use cases",
+            "working POCs",
+            "roadmap decisions"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "hands-on-generative-ai-prototyping",
+          "requirement": "Build, test, and iterate on generative AI workflows, prototypes, copilots, agents, or similar tools.",
+          "priority": "hard-gate",
+          "evidenceStatus": "direct",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "LLM",
+            "VLM",
+            "working POCs",
+            "prototype",
+            "front-end build",
+            "backend logic"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "llm-tools-prompts-and-development-environments",
+          "requirement": "Use LLM APIs, prompting strategies, AI-assisted development environments, and modern prototyping tools.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "contextual",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "LLM/VLM workflows",
+            "prompt-defined criteria",
+            "model orchestration",
+            "front-end build",
+            "backend logic"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "cross-functional-delivery-and-scaling",
+          "requirement": "Work with AI technical teams, engineering, product, and business stakeholders to move validated prototypes toward scalable delivery.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "production handoff",
+            "engineering teams",
+            "build-ready"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "adoption-enablement-and-change",
+          "requirement": "Support adoption through practical guidance, training, onboarding, playbooks, and clear communication for non-technical teams.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "training and roadshows",
+            "stakeholder adoption",
+            "7,000+"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "responsible-ai-and-regulated-quality",
+          "requirement": "Build privacy, safety, quality, transparency, human oversight, and governance into AI work for regulated healthcare communications.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "FDA/HIPAA/MLR workflows",
+            "human review",
+            "evidence gaps",
+            "audit-ready annotations"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "healthcare-communications-domain",
+          "requirement": "Apply healthcare communications experience across advertising, activation, communications, or medical work.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "healthcare communications",
+            "HCP/patient UX",
+            "brand planning",
+            "MLR review"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "stakeholder-communication-and-influence",
+          "requirement": "Communicate with technical and non-technical stakeholders, translate technical concepts clearly, and influence cross-functional decisions.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "client discovery",
+            "demo narratives",
+            "engineering teams"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "coding-and-software-engineering-depth",
+          "requirement": "Bring coding, programming-language, software-engineering, troubleshooting, and implementation skills.",
+          "priority": "preferred",
+          "evidenceStatus": "adjacent",
+          "matchMode": "contextual",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "front-end build",
+            "backend logic",
+            "implementation"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "us-location",
+          "requirement": "Work from a listed US office or remotely within the United States, depending on team needs.",
+          "priority": "hard-gate",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "Raleigh, NC",
+            "Remote"
+          ],
+          "missingTerms": []
+        }
+      ],
+      "failures": [],
+      "warnings": []
+    },
+    "humanizer": {
+      "status": "passed",
+      "version": "2.2.0",
+      "mode": "surface-only",
+      "reviewedAt": "2026-08-07T13:58:40.002Z",
+      "copySha256": "a1db4b10522989f91fac6a55836ceb274312ba650f0cafddcf4d517889c045e5",
+      "reviewMethod": "humanizer-skill",
+      "semanticPassAttested": true,
+      "staticChecksPassed": true
+    },
+    "route": {
+      "viewports": [
+        {
+          "name": "desktop",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-01",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-02",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-03",
+          "errors": []
+        },
+        {
+          "name": "mobile",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-01",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-02",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-03",
+          "errors": []
+        }
+      ],
+      "errors": []
+    }
+  }
+}

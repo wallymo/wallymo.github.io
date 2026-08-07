@@ -3174,6 +3174,40 @@
     },
     {
       "workflowVersion": 2,
+      "contractRevision": 7,
+      "slug": "real-chemistry-ai-business-partner",
+      "roleTitle": "Real Chemistry AI Business Partner",
+      "artifactStem": "Real-Chemistry-AI-Business-Partner",
+      "configPath": "scripts/packages/real-chemistry-ai-business-partner.json",
+      "targetLane": "ai-product-implementation",
+      "evidenceMode": "balanced",
+      "fitClass": "strong",
+      "positioningLane": "ai-product-implementation",
+      "bridgeType": "direct",
+      "applicationStrategy": "direct",
+      "resumeBaseMode": "ai-product-implementation",
+      "resumeBaseLeadProfile": "ai-product-implementation",
+      "resumeBaseAction": "tailor-to-jd",
+      "accountPresentation": "consolidated",
+      "resumeBaseProfiles": [
+        {
+          "id": "ai-product-implementation",
+          "version": 1
+        }
+      ],
+      "routeMode": "scoped-projects",
+      "selectedProjects": [
+        "project-01.html",
+        "project-02.html",
+        "project-03.html"
+      ],
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Real-Chemistry-AI-Business-Partner-Resume.pdf",
+      "publishStatus": "local-only",
+      "qaStatus": "qa-passed",
+      "builtAt": "2026-08-07T14:00:56.993Z"
+    },
+    {
+      "workflowVersion": 2,
       "contractRevision": 5,
       "slug": "saferide-health-strategic-account-manager",
       "roleTitle": "SafeRide Health Strategic Account Manager",
