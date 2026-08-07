@@ -3159,9 +3159,36 @@
       "resumePdfPath": "output/pdf/Wally-Mostafa-Real-Chemistry-21GRAMS-Senior-Account-Executive-Resume.pdf",
       "coverLetterPdfPath": "output/pdf/Wally-Mostafa-Real-Chemistry-21GRAMS-Senior-Account-Executive-Cover-Letter.pdf",
       "coverLetterMarkdownPath": "output/pdf/Wally-Mostafa-Real-Chemistry-21GRAMS-Senior-Account-Executive-Cover-Letter.md",
-      "publishStatus": "local-only",
+      "publishStatus": "live-verified",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-08-07T14:15:59.390Z"
+      "builtAt": "2026-08-07T14:15:59.390Z",
+      "verification": {
+        "verifiedAt": "2026-08-07T14:19:01.938Z",
+        "routeUrl": "https://wallymo.github.io/real-chemistry-21grams-senior-account-executive/",
+        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-Real-Chemistry-21GRAMS-Senior-Account-Executive-Resume.pdf",
+        "configUrl": "https://wallymo.github.io/scripts/packages/real-chemistry-21grams-senior-account-executive.json",
+        "projectUrls": [
+          "https://wallymo.github.io/real-chemistry-21grams-senior-account-executive/project-01.html",
+          "https://wallymo.github.io/real-chemistry-21grams-senior-account-executive/project-06.html",
+          "https://wallymo.github.io/real-chemistry-21grams-senior-account-executive/project-03.html"
+        ],
+        "configSha256": "b402de5549d537af12e65391a8c10ae257e0ccf0648483d49c26899f25e84c38",
+        "pdfSha256": "416abf7dbeb675089a25cb81814b5ac958437bdf5be13eca897560607b1746a0",
+        "resumeBaseProfilesUrl": "https://wallymo.github.io/scripts/resume-base-profiles.json",
+        "resumeBaseProfilesSha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108",
+        "coverLetterPdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-Real-Chemistry-21GRAMS-Senior-Account-Executive-Cover-Letter.pdf",
+        "coverLetterMarkdownUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-Real-Chemistry-21GRAMS-Senior-Account-Executive-Cover-Letter.md",
+        "coverLetterPdfSha256": "f8d40aa1dd1cee59ba5c1345ed82144723d5f6ff7e3027e88270166766150375",
+        "coverLetterMarkdownSha256": "5ae024fcc0c432341638e6d383053b4089cea1f11ac99396137396a363d4cf5f",
+        "routeSha256": "a48b2a71edb9972c953a9b4462447073b80ede663d7b38f194b8c1f0d1a930f7",
+        "scopedProjectSha256": {
+          "project-01.html": "a97ff9abcdfde494e0fb5273b469ef5f7f122f37e0be639e26bc2b66297e28bc",
+          "project-06.html": "bee138ca3623ee9995a30724ab5f3df91043e2521b1267dcc0db0699e6057f18",
+          "project-03.html": "1aa162180048185d7408f23542054ad9846eba277d4553e7ed5afa4f9ddba7c3"
+        },
+        "configInputSha256": "7979578fb5e1aa6f00c02268ae1f5d63e6c73d1b5a4eacd1d322308ea522af25",
+        "qaBuiltAt": "2026-08-07T14:15:59.390Z"
+      }
     },
     {
       "workflowVersion": 2,
