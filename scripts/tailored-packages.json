@@ -3229,9 +3229,32 @@
         "project-03.html"
       ],
       "resumePdfPath": "output/pdf/Wally-Mostafa-Real-Chemistry-AI-Business-Partner-Resume.pdf",
-      "publishStatus": "local-only",
+      "publishStatus": "live-verified",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-08-07T14:00:56.993Z"
+      "builtAt": "2026-08-07T14:00:56.993Z",
+      "verification": {
+        "verifiedAt": "2026-08-07T14:04:20.493Z",
+        "routeUrl": "https://wallymo.github.io/real-chemistry-ai-business-partner/",
+        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-Real-Chemistry-AI-Business-Partner-Resume.pdf",
+        "configUrl": "https://wallymo.github.io/scripts/packages/real-chemistry-ai-business-partner.json",
+        "projectUrls": [
+          "https://wallymo.github.io/real-chemistry-ai-business-partner/project-01.html",
+          "https://wallymo.github.io/real-chemistry-ai-business-partner/project-02.html",
+          "https://wallymo.github.io/real-chemistry-ai-business-partner/project-03.html"
+        ],
+        "configSha256": "447ce5c4e1878491fa1e6d76788694b9a2ce35a2b49deefc4dcc90a059de35a9",
+        "pdfSha256": "9a491488bf0f5ca465047488f0a60d32589b4b908a0587f90a0ee9a6fd35c82e",
+        "resumeBaseProfilesUrl": "https://wallymo.github.io/scripts/resume-base-profiles.json",
+        "resumeBaseProfilesSha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108",
+        "routeSha256": "bec20daacd18a541b6936a34de8e307576a6aff85b47ec9970deb8ea1df34313",
+        "scopedProjectSha256": {
+          "project-01.html": "7e7e69cfb2fdd49d233bab8803ef168f1f754eb1b4ee73d061e9eff582fa1717",
+          "project-02.html": "160f7715cc55ad50bef51f085d5ee94a4a58b38f1b6618ea72e771bec3902902",
+          "project-03.html": "9e0082917f2e988c2db3b2873545731e3c1d7c309f842f753b14e6e54686a173"
+        },
+        "configInputSha256": "fee477fb3a21bf9c731bc3c34656723e38376d84faf7276fe5cf15f1f68a103a",
+        "qaBuiltAt": "2026-08-07T14:00:56.993Z"
+      }
     },
     {
       "workflowVersion": 2,
