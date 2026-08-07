@@ -1,0 +1,614 @@
+{
+  "workflowVersion": 2,
+  "contractRevision": 7,
+  "slug": "ux-product-design",
+  "roleTitle": "UX & Product Design",
+  "artifactStem": "UX-Product-Design",
+  "fitClass": "strong",
+  "routeMode": "scoped-projects",
+  "selectedProjects": [
+    "project-05.html",
+    "project-03.html",
+    "project-04.html"
+  ],
+  "job": {
+    "company": "General recruiter and networking use",
+    "roleTitle": "UX & Product Design",
+    "jobId": "general-profile",
+    "jobUrl": "not-provided",
+    "sourceChannel": "user-requested-general-resume",
+    "dateCaptured": "2026-08-07",
+    "location": "Raleigh, NC; remote opportunities",
+    "atsVendor": "not-applicable",
+    "rawJd": "General UX and product-design networking profile, not an employer posting.\n\nAudience: design leaders considering senior UX, product design, experience strategy, design-system, and design-leadership talent.\n\nCore work: turn research, complex workflows, and business goals into clear product experiences; build reusable design systems; make data-heavy products easier to use; work across discovery, prototypes, validation, and engineering handoff; and guide cross-functional product delivery.\n\nResume architecture: lead with enterprise UX, design systems, research, team growth, and hands-on product delivery across One Block Away, Hedgehox, Kinesso, Omnicom, and Heartbeat. Keep AI as a current product-building context, not as a substitute for design evidence. Earlier account leadership supports stakeholder and delivery credibility.\n\nThis package must be fit-gated again against any future employer job description."
+  },
+  "classification": {
+    "targetLane": "product-ux-design",
+    "evidenceMode": "portfolio-primary",
+    "primarySource": "The portfolio directly shows research, complex workflow design, enterprise product design, design systems, accessibility, data visualization, prototypes, and delivery decisions.",
+    "supportingSource": "The resume confirms UX leadership, team growth, enterprise scale, cross-functional delivery, and current hands-on product work.",
+    "hardGateStatus": "pass",
+    "hardGates": [
+      {
+        "gate": "Direct UX and product-design experience with portfolio evidence of the design process",
+        "status": "pass",
+        "requirementId": "end-to-end-ux-product-design",
+        "evidence": "The portfolio documents research, workflows, prototypes, enterprise systems, accessibility, final interfaces, and outcomes. The resume confirms seniority, scale, and delivery."
+      }
+    ]
+  },
+  "requirements": [
+    {
+      "id": "end-to-end-ux-product-design",
+      "text": "Lead product design from discovery through user flows, prototypes, validation, and engineering handoff.",
+      "priority": "hard-gate",
+      "source": "jd",
+      "confidence": "contextual",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Current product work covers discovery, product strategy, UX, working prototypes, demonstrations, and client iteration.",
+        "Heartbeat work includes journey maps, site maps, user flows, wireframes, prototypes, and build-ready handoff."
+      ],
+      "proofIds": [
+        "one-block-away-01",
+        "one-block-away-04",
+        "heartbeat-02",
+        "heartbeat-03"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "user flows",
+        "working prototype",
+        "build-ready"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "research-and-validation",
+      "text": "Use user research and behavioral evidence to frame problems, test ideas, and guide product decisions.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "contextual",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Built a research practice across 20+ products using interviews, prototype testing, behavioral data, workshops, roadshows, and reusable Figma documentation.",
+        "Led stakeholder research, competitive audits, journey mapping, and experience strategy in healthcare and enterprise software."
+      ],
+      "proofIds": [
+        "addition:ux-product-design-research-practice",
+        "heartbeat-01",
+        "heartbeat-02"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "user research",
+        "Figma documentation",
+        "prototype testing"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "design-systems-and-accessibility",
+      "text": "Create scalable design systems and accessible product standards for complex product suites.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "contextual",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Led enterprise UX and design-system strategy for analytics used by 7,000+ people across 22 white-label brands.",
+        "Helped shape a 500-component design system with accessibility, WCAG, keyboard interaction, and governance guidance."
+      ],
+      "proofIds": [
+        "kinesso-01",
+        "kinesso-02",
+        "addition:ux-product-design-system-scale"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "design systems",
+        "component libraries",
+        "accessibility",
+        "WCAG"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "complex-workflows-and-data-products",
+      "text": "Make complex workflows, analytics, and data-heavy product experiences clear and usable.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "contextual",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Designed enterprise analytics, dashboards, white-label systems, data visualization, audit workflows, and presentation-ready outputs.",
+        "Current work translates regulated review, evidence gaps, finance operations, risk signals, and model output into usable product workflows."
+      ],
+      "proofIds": [
+        "hedgehox-02",
+        "hedgehox-03",
+        "one-block-away-03",
+        "kinesso-02",
+        "kinesso-03"
+      ],
+      "destinations": [
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "workflow UX",
+        "data visualization",
+        "dashboard"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "cross-functional-product-delivery",
+      "text": "Work with product, engineering, client, strategy, and delivery partners to move designs into build-ready products.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "contextual",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Led UX and design-system work with product and engineering teams across a large enterprise product suite.",
+        "Moved research and UX recommendations into build-ready experiences with strategy, creative, account, and engineering partners."
+      ],
+      "proofIds": [
+        "kinesso-02",
+        "heartbeat-03",
+        "account-management-03"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience"
+      ],
+      "resumeTerms": [
+        "product, design, and client teams",
+        "engineering teams",
+        "build-ready"
+      ],
+      "matchMode": "exact"
+    }
+  ],
+  "fitGate": {
+    "resumeBase": {
+      "mode": "ai-product-implementation",
+      "sourceProfiles": [
+        {
+          "id": "ai-product-implementation",
+          "version": 1
+        }
+      ],
+      "leadProfileId": "ai-product-implementation",
+      "accountPresentation": "consolidated",
+      "action": "use-existing",
+      "rationale": "This is a general UX and product-design networking profile. The AI/Product Implementation evidence pool contains the direct UX, research, design-system, enterprise-product, workflow-design, and hands-on delivery evidence. Earlier account leadership remains supporting context."
+    },
+    "supportedOverlap": [
+      "The portfolio shows research, journey mapping, information architecture, workflows, prototypes, design systems, accessibility, final interfaces, and engineering handoff.",
+      "Enterprise product work supported 7,000+ users across 22 white-label brands and product-design team growth from 2 to 30.",
+      "Research proof includes a practice built across 20+ products using interviews, prototype testing, behavioral data, workshops, roadshows, and reusable Figma documentation.",
+      "Current work connects discovery, product strategy, UX, AI workflow design, working prototypes, demo readiness, and client iteration.",
+      "Earlier healthcare and account work adds regulated-delivery experience and strong stakeholder context without replacing the design argument."
+    ],
+    "unsupportedRequirements": [],
+    "actualMismatches": [],
+    "missingEvidence": [
+      "No employer-specific job description was provided, so this package is a general design-networking artifact rather than an ATS match for one opening."
+    ],
+    "coverLetterBridge": {
+      "status": "not-needed",
+      "rationale": "This is a direct, portfolio-primary design profile rather than an employer application. The resume and selected work already establish the design story, and there is no job-specific gap for a cover letter to address."
+    },
+    "recommendation": "Use this as the general UX and product-design resume for design-leadership introductions. Build a separate employer package only when a specific job description materially changes the evidence or positioning."
+  },
+  "positioning": {
+    "laneId": "product-ux-design",
+    "targetIdentity": "UX and product design leader",
+    "employerNeed": "Turn research and complex workflows into clear, accessible product experiences and reusable systems that teams can build and scale.",
+    "bridgeType": "direct",
+    "applicationStrategy": "direct",
+    "bridgeThesis": "UX and product design",
+    "proofIds": [
+      "kinesso-01",
+      "kinesso-02",
+      "heartbeat-02"
+    ],
+    "remainingGap": null
+  },
+  "coverLetter": null,
+  "resume": {
+    "foundationId": "wally-mostafa-resume-2026-07-03",
+    "compositionMode": "foundation-complete",
+    "layoutDensity": "compact",
+    "summary": "UX and product design leader with nearly eight years of hands-on UX work and 15 years across product, client strategy, and digital delivery. I grew a product design team from 2 to 30 and led enterprise UX for platforms used by 7,000+ people across 22 brands. I also built a research practice across 20+ products and now carry product work from discovery through working prototypes and handoff.",
+    "skillIds": [
+      "enterprise-ux-design-systems",
+      "research-experience-strategy",
+      "product-strategy-poc-delivery",
+      "program-project-delivery"
+    ],
+    "skills": [
+      {
+        "label": "Enterprise UX & Design Systems",
+        "description": "Team scaling (2 to 30), enterprise analytics, workflow UX, data visualization, component libraries, and accessibility (WCAG)"
+      },
+      {
+        "label": "Research & Experience Strategy",
+        "description": "Stakeholder interviews, competitive audits, journey maps, user flows, wireframes, prototypes, usability testing, and research-led product direction"
+      },
+      {
+        "label": "Product Strategy & POC Delivery",
+        "description": "Discovery, scoping, requirements, prototype validation, demo narratives, build-ready logic, and production handoff"
+      },
+      {
+        "label": "Program & Project Delivery",
+        "description": "Scoping, requirements, timelines, review routing, team coordination, risk visibility, and build-ready handoff across product, design, and client teams"
+      }
+    ],
+    "roles": {
+      "hedgehox": [
+        "Secured an investor for proprietary Claims Detection software by building the functional POC, shaping the product story, and iterating with investors",
+        "Designed Claims Detector workflows that identify promotional claims, surface evidence gaps, and pre-populate audit-ready annotations before MLR submission",
+        "Turn pharma agency needs into product requirements and working tools for MLR claim review, brief intake, scoping, review routing, submission capture, and FDA signal monitoring",
+        "Designed the full Xenagos Bio startup biopharma website from scratch, including investor-facing structure, scientific positioning, visual direction, and hidden design-system handoff",
+        "Built Scope Generator for pharma agency finance and operations teams to manage regional rate cards, brands, sub-brands, and natural-language scope changes",
+        "Developed FDA Warning Tool concepts that connect warning-letter patterns to content-risk guidance for pharma teams"
+      ],
+      "one-block-away": [
+        "Lead client discovery, turning unclear business questions into testable product concepts, working POCs, demo flows, and roadmap decisions",
+        "Built ListingPal's AI listing-generation POC and landing page, turning basic property inputs into listing copy, social posts, ad copy, styling direction, and MLS/SEO-ready language in under 90 seconds",
+        "Built WeReady's Bailey Intelligence dashboard, translating founder inputs, GitHub signals, source health, risk scoring, and evidence trails into startup-readiness workflows",
+        "Own product strategy, UX, AI workflow design, front-end build, backend logic, demo readiness, and client iteration from first ask through working prototype",
+        "Currently building the website and sponsor strategy for a Tunisia youth soccer program, positioning the project for player advancement, community support, and donor outreach"
+      ],
+      "kinesso": [
+        "Scaled product design from 2 to 30 people across the US and Poland for enterprise analytics used by 7,000+ users across 22 white-label brands",
+        "Built a user research practice across 20+ products using interviews, prototype testing, behavioral data, workshops, roadshows, and reusable Figma documentation",
+        "Led UX and design-system strategy for MIE data visualization, dashboard building, brand theming, and reusable analytics components",
+        "Helped shape a 500-component design system with 140 styles, 300 icons, and 50 personas, plus accessibility, WCAG, keyboard interaction, and design governance",
+        "Built the Digital Experience Audit workflow for channel scoring, benchmarks, recommendations, visualization, and presentation-ready client outputs",
+        "Design-system and analytics work earned 5 Indigo Gold, 4 Indigo Silver, and Red Dot recognition"
+      ],
+      "omnicom": [
+        "Supported oncology accounts as a freelance UX designer, combining UX design and account-management experience to strengthen regulated healthcare work",
+        "Championed UX best practices across account, strategy, creative, and delivery conversations, translating brand goals into clearer user flows, content structure, and digital recommendations"
+      ],
+      "heartbeat": [
+        "Led UX research and experience strategy for pharma and healthcare work, translating stakeholder input, competitive audits, and user needs into digital product direction",
+        "Created journey maps, site maps, user flows, wireframes, and prototypes for patient, HCP, and internal brand-team experiences across regulated healthcare programs",
+        "Partnered with strategy, creative, account, and engineering teams to move research findings into prioritized, build-ready product and campaign experiences"
+      ],
+      "account-management": [
+        "8 years managing Fortune 500 pharma and healthcare clients and brand budgets up to $20M across CNS/neurology, psychiatry, cardiovascular/metabolic, and sleep/wakefulness brands including NUVIGIL, Namenda XR, Lipitor, and Zoloft",
+        "One of two account consumer leads on FCB Health's largest pharma account across all verticals: TV, radio, digital, gaming, Times Square, unbranded campaigns, brand planning, and MLR review",
+        "Translated client and brand strategy into briefs, creative feedback, production requirements, priorities, timelines, and MLR-ready delivery across account, creative, UX, and development teams"
+      ]
+    },
+    "sourceBulletIds": {
+      "hedgehox": [
+        "hedgehox-01",
+        "hedgehox-02",
+        "hedgehox-03",
+        "hedgehox-04",
+        "hedgehox-05",
+        "hedgehox-06"
+      ],
+      "one-block-away": [
+        "one-block-away-01",
+        "one-block-away-02",
+        "one-block-away-03",
+        "one-block-away-04",
+        "one-block-away-05"
+      ],
+      "kinesso": [
+        "kinesso-01",
+        "addition:ux-product-design-research-practice",
+        "kinesso-02",
+        "addition:ux-product-design-system-scale",
+        "kinesso-03",
+        "kinesso-04"
+      ],
+      "omnicom": [
+        "omnicom-01",
+        "omnicom-02"
+      ],
+      "heartbeat": [
+        "heartbeat-01",
+        "heartbeat-02",
+        "heartbeat-03"
+      ],
+      "account-management": [
+        "account-management-01",
+        "account-management-02",
+        "account-management-03"
+      ]
+    }
+  },
+  "route": {
+    "presentation": "showcase",
+    "heroIntent": "resume-support",
+    "workHeading": "Selected work.",
+    "contactHeading": "Thanks for taking a look."
+  },
+  "hero": {
+    "eyebrow": "UX & Product Design | Selected Work",
+    "tags": [
+      "Design systems",
+      "Enterprise product design",
+      "Research & experience strategy"
+    ],
+    "intro": "This is a look at recent work that may be relevant to UX and product-design conversations. The resume covers the broader career story; these examples show how I work across design systems, research, complex workflows, and product delivery."
+  },
+  "contact": {
+    "prompt": "Email and my resume are below.",
+    "signoff": "UX and product design | Raleigh, NC"
+  },
+  "constraints": {
+    "doNotClaim": [
+      "Formal accessibility certification",
+      "Dedicated accessibility auditor ownership",
+      "A specific number of direct reports",
+      "Formal performance management",
+      "Named-tool proficiency beyond documented evidence",
+      "Formal agile methodology ownership",
+      "Hands-on software engineering",
+      "Networking, cloud infrastructure, or security engineering ownership"
+    ],
+    "blockedTerms": [
+      "accessibility certified",
+      "accessibility auditor",
+      "direct reports",
+      "performance manager",
+      "tool expert",
+      "agile coach",
+      "software engineer",
+      "network engineer",
+      "cloud architect",
+      "security engineer"
+    ]
+  },
+  "privacy": {
+    "publicSafe": true,
+    "notes": "Contains only a public-safe general UX and product-design profile and sanitized evidence from the public resume and portfolio. It excludes recruiter details, application answers, compensation boundaries, and private eligibility information."
+  },
+  "copyReview": {
+    "humanizerVersion": "2.2.0",
+    "mode": "surface-only",
+    "status": "passed",
+    "reviewedAt": "2026-08-07T23:48:17.757Z",
+    "copySha256": "70b2deddda2e6b0d60505fa1a8cab428c6c32f95c800f235ed6cf809a8363c59",
+    "preserved": [
+      "content",
+      "structure",
+      "claims",
+      "ending"
+    ],
+    "rewriteAuthorized": false,
+    "reviewMethod": "humanizer-skill",
+    "semanticPassAttested": true,
+    "staticChecksPassed": true,
+    "finalAntiAiPass": true,
+    "remainingTells": []
+  },
+  "qa": {
+    "status": "qa-passed",
+    "builtAt": "2026-08-07T23:48:26.150Z",
+    "configInputSha256": "8eb8863598f89292da939bb17aee72610445c88b9938be469bd6db66432aeaa7",
+    "sourceResumeSha256": "2265313e78b596a2b37d6d8f9a95081e4321b4047f142a5f0ddf22449cab4b9c",
+    "resumeFoundation": {
+      "id": "wally-mostafa-resume-2026-07-03",
+      "sourcePdfSha256": "f9b05b6c3c134262b1af6c5734363daf4385cf335407a139779a37d138adf1aa"
+    },
+    "resumeBase": {
+      "mode": "ai-product-implementation",
+      "sourceProfiles": [
+        {
+          "id": "ai-product-implementation",
+          "version": 1
+        }
+      ],
+      "leadProfileId": "ai-product-implementation",
+      "accountPresentation": "consolidated",
+      "action": "use-existing",
+      "registryVersion": 1,
+      "registrySha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108"
+    },
+    "artifactHashes": {
+      "routeSha256": "37395a3de804a4dded55080cf3bb10ec022801abe7472265877daaf2cab8e9e3",
+      "resumePdfSha256": "01e70a6c3c4117fabaab77d85ae03aa79fc0aafd4b6d619a2399559cec41593c",
+      "coverLetterPdfSha256": null,
+      "coverLetterMarkdownSha256": null,
+      "scopedProjectSha256": {
+        "project-05.html": "5b21e8796c919fd002fa2d0c92fc7ff5f9a05aef4e2b08fb053b94341e65fb2e",
+        "project-03.html": "af74e71c10b4e0fa0553532c2c0fb2efb06f9241a0f0b9883e42b9df988f3f26",
+        "project-04.html": "79da0c283985dc8ad80dc54cd6c3344c31c1e96d8a93d0808b842e7452a6a784"
+      }
+    },
+    "renderer": {
+      "browser": {
+        "name": "chrome-headless-shell",
+        "version": "Google Chrome for Testing 149.0.7827.55"
+      },
+      "htmlPath": "tmp/tailored-resumes/ux-product-design.html",
+      "pdfPath": "output/pdf/Wally-Mostafa-UX-Product-Design-Resume.pdf",
+      "fontWait": true,
+      "fontProfile": "portfolio-pdf"
+    },
+    "coverLetterRenderer": null,
+    "coverLetter": null,
+    "ats": {
+      "ok": true,
+      "pdfPath": "output/pdf/Wally-Mostafa-UX-Product-Design-Resume.pdf",
+      "pageCount": 2,
+      "fileSize": 73657,
+      "annotations": [
+        {
+          "page": 1,
+          "uri": "mailto:wmostafa12@gmail.com"
+        },
+        {
+          "page": 1,
+          "uri": "https://linkedin.com/in/wallymo"
+        },
+        {
+          "page": 1,
+          "uri": "https://wallymo.github.io/ux-product-design/"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/6748"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/4629"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.red-dot.org/project/dxa-digital-experience-audit-55219"
+        }
+      ],
+      "fontCompatibility": {
+        "type3Fonts": false
+      },
+      "coverage": [
+        {
+          "id": "end-to-end-ux-product-design",
+          "requirement": "Lead product design from discovery through user flows, prototypes, validation, and engineering handoff.",
+          "priority": "hard-gate",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "user flows",
+            "working prototype",
+            "build-ready"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "research-and-validation",
+          "requirement": "Use user research and behavioral evidence to frame problems, test ideas, and guide product decisions.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "user research",
+            "Figma documentation",
+            "prototype testing"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "design-systems-and-accessibility",
+          "requirement": "Create scalable design systems and accessible product standards for complex product suites.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "design systems",
+            "component libraries",
+            "accessibility",
+            "WCAG"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "complex-workflows-and-data-products",
+          "requirement": "Make complex workflows, analytics, and data-heavy product experiences clear and usable.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "workflow UX",
+            "data visualization",
+            "dashboard"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "cross-functional-product-delivery",
+          "requirement": "Work with product, engineering, client, strategy, and delivery partners to move designs into build-ready products.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "product, design, and client teams",
+            "engineering teams",
+            "build-ready"
+          ],
+          "missingTerms": []
+        }
+      ],
+      "failures": [],
+      "warnings": []
+    },
+    "humanizer": {
+      "status": "passed",
+      "version": "2.2.0",
+      "mode": "surface-only",
+      "reviewedAt": "2026-08-07T23:48:17.757Z",
+      "copySha256": "70b2deddda2e6b0d60505fa1a8cab428c6c32f95c800f235ed6cf809a8363c59",
+      "reviewMethod": "humanizer-skill",
+      "semanticPassAttested": true,
+      "staticChecksPassed": true
+    },
+    "route": {
+      "viewports": [
+        {
+          "name": "desktop",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-05",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-03",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-04",
+          "errors": []
+        },
+        {
+          "name": "mobile",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-05",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-03",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-04",
+          "errors": []
+        }
+      ],
+      "errors": []
+    }
+  }
+}
