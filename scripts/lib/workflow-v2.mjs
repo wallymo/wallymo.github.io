@@ -2163,6 +2163,12 @@ export function validateV2Config(
       );
       pushError(
         errors,
+        route.projectCardStats === undefined ||
+          ['visible', 'hidden'].includes(route.projectCardStats),
+        'route.projectCardStats must be visible or hidden when present'
+      );
+      pushError(
+        errors,
         route.workHeading === undefined || isNonEmptyString(route.workHeading),
         'route.workHeading must be a non-empty string when present'
       );

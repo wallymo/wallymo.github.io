@@ -489,6 +489,7 @@
       "properties": {
         "presentation": { "enum": ["full", "showcase"] },
         "heroIntent": { "const": "resume-support" },
+        "projectCardStats": { "enum": ["visible", "hidden"] },
         "workHeading": { "type": "string", "minLength": 1 },
         "contactHeading": { "type": "string", "minLength": 1 }
       },

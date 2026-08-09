@@ -278,8 +278,19 @@ function buildWorkGrid(indexHtml, config) {
   const cardsByProject = extractWorkCards(indexHtml);
   return config.selectedProjects
     .map((project, index) => {
-      const card =
+      let card =
         cardsByProject.get(project) || buildFallbackWorkCard(project);
+      if (
+        config.route?.projectCardStats === 'hidden' &&
+        /<div\b[^>]*class="work-stats"[^>]*>/.test(card)
+      ) {
+        card = replaceDivByExactClass(
+          card,
+          'work-stats',
+          '',
+          `${project} work stats`
+        ).replace(/^[ \t]+$/gm, '');
+      }
       const href =
         config.routeMode === 'canonical-projects' ? `../${project}` : project;
       return card

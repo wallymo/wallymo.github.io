@@ -1347,6 +1347,7 @@ test(
       config.route = {
         presentation: 'showcase',
         heroIntent: 'resume-support',
+        projectCardStats: 'hidden',
         workHeading: 'A few pieces of relevant work.',
         contactHeading: 'Thanks for stopping by.',
       };
@@ -1425,6 +1426,8 @@ test(
         'utf8'
       );
       assert.ok(routeHtml.includes('A few pieces of relevant work.'));
+      assert.ok(!routeHtml.includes('class="work-stats"'));
+      assert.ok(routeHtml.includes('class="work-tags"'));
       assert.ok(!routeHtml.includes('Proof for the lane.'));
       assert.ok(!routeHtml.includes('id="how-i-build"'));
       assert.ok(!routeHtml.includes('id="capabilities"'));
