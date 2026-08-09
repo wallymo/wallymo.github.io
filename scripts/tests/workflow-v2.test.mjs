@@ -2477,6 +2477,14 @@ test('Portfolio replacement works with attributes after href', () => {
   assert.doesNotMatch(output, /stale-role/);
   assert.equal((output.match(/target="_blank"/g) || []).length, 2);
   assert.equal((output.match(/rel="noopener"/g) || []).length, 2);
+
+  const customLabelOutput = replacePortfolioLink(
+    source,
+    route,
+    'AI Showcase'
+  );
+  assert.equal((customLabelOutput.match(/>AI Showcase<\/a>/g) || []).length, 2);
+  assert.doesNotMatch(customLabelOutput, />Portfolio<\/a>/);
 });
 
 test('checksum parity rejects a different live artifact', () => {

@@ -685,7 +685,11 @@ function buildResume(config, paths) {
 </head>`
     );
   }
-  resumeHtml = replacePortfolioLink(resumeHtml, routeUrl);
+  resumeHtml = replacePortfolioLink(
+    resumeHtml,
+    routeUrl,
+    config.resume.portfolioLinkLabel || 'Portfolio'
+  );
   return resumeHtml;
 }
 

@@ -280,6 +280,7 @@ export function humanizerCopyEntries(config) {
 
   if (config?.contractRevision !== 4) {
     add('resume.summary', config?.resume?.summary);
+    add('resume.portfolioLinkLabel', config?.resume?.portfolioLinkLabel);
     if (Array.isArray(config?.resume?.experienceSections)) {
       config.resume.experienceSections.forEach((section, index) => {
         add(`resume.experienceSections[${index}].heading`, section?.heading);
@@ -1155,6 +1156,12 @@ function validateResume(config, errors, profileRegistry = null) {
     resume.layoutDensity === undefined ||
       ['standard', 'compact'].includes(resume.layoutDensity),
     'resume.layoutDensity must be standard or compact'
+  );
+  pushError(
+    errors,
+    resume.portfolioLinkLabel === undefined ||
+      isNonEmptyString(resume.portfolioLinkLabel),
+    'resume.portfolioLinkLabel must be a non-empty string when present'
   );
   if (resume.awards !== undefined) {
     pushError(
@@ -2395,6 +2402,14 @@ export function recruiterFacingClaimViolations(config) {
     ...(usesFlexiblePositioningContract(config)
       ? [
           ['resume.summary', config.resume.summary],
+          ...(config.resume.portfolioLinkLabel
+            ? [
+                [
+                  'resume.portfolioLinkLabel',
+                  config.resume.portfolioLinkLabel,
+                ],
+              ]
+            : []),
           ...config.resume.skills.flatMap((skill, index) => [
             [`resume.skills[${index}].label`, skill.label],
             [`resume.skills[${index}].description`, skill.description],
@@ -2510,8 +2525,13 @@ export function replaceElementContent(html, attribute, value, replacement) {
   );
 }
 
-export function replacePortfolioLink(html, routeUrl) {
+export function replacePortfolioLink(
+  html,
+  routeUrl,
+  linkLabel = 'Portfolio'
+) {
   let replacementCount = 0;
+  const escapedLinkLabel = escapeHtml(linkLabel);
   const output = html.replace(/<a\b([^>]*)>\s*Portfolio\s*<\/a>/gi, (full, rawAttributes) => {
     let attributes = rawAttributes;
     if (/\bhref="[^"]*"/i.test(attributes)) {
@@ -2526,7 +2546,7 @@ export function replacePortfolioLink(html, routeUrl) {
       attributes += ' rel="noopener"';
     }
     replacementCount += 1;
-    return `<a${attributes}>Portfolio</a>`;
+    return `<a${attributes}>${escapedLinkLabel}</a>`;
   });
   if (replacementCount === 0) {
     throw new Error('Could not find the Portfolio contact link');
