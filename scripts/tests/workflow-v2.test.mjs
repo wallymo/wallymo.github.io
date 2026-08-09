@@ -53,6 +53,7 @@ import {
   COVER_LETTER_TEMPLATE_VERSION,
   buildCoverLetterHtml,
 } from '../lib/cover-letter-template.mjs';
+import { splitJobBlockWithContinuation } from '../build-tailored-package.mjs';
 
 const repoRoot = path.resolve(import.meta.dirname, '..', '..');
 const node = process.execPath;
@@ -1187,29 +1188,62 @@ test('revisions 5 and 6 support relevance-first experience sections without dupl
     /resume\.layoutDensity must be standard or compact/
   );
 
-  const pageSplittable = structuredClone(relevanceFirst);
-  pageSplittable.resume.allowPageBreakInsideRoles = ['kinesso'];
-  assert.deepEqual(validateV2Config(pageSplittable), []);
-  assert.deepEqual(schemaErrors(pageSplittable), []);
+  const roleContinuation = structuredClone(relevanceFirst);
+  roleContinuation.resume.roleContinuationBreaks = [
+    { roleId: 'kinesso', afterBullet: 1 },
+  ];
+  assert.deepEqual(validateV2Config(roleContinuation), []);
+  assert.deepEqual(schemaErrors(roleContinuation), []);
 
-  const unknownPageSplittableRole = structuredClone(pageSplittable);
-  unknownPageSplittableRole.resume.allowPageBreakInsideRoles = ['unknown'];
-  assert.match(
-    validateV2Config(unknownPageSplittableRole).join('\n'),
-    /resume\.allowPageBreakInsideRoles contains an unknown role/
-  );
-  assert.ok(schemaErrors(unknownPageSplittableRole).length > 0);
-
-  const duplicatePageSplittableRole = structuredClone(pageSplittable);
-  duplicatePageSplittableRole.resume.allowPageBreakInsideRoles = [
-    'kinesso',
-    'kinesso',
+  const unknownContinuationRole = structuredClone(roleContinuation);
+  unknownContinuationRole.resume.roleContinuationBreaks = [
+    { roleId: 'unknown', afterBullet: 1 },
   ];
   assert.match(
-    validateV2Config(duplicatePageSplittableRole).join('\n'),
-    /resume\.allowPageBreakInsideRoles must not contain duplicates/
+    validateV2Config(unknownContinuationRole).join('\n'),
+    /resume\.roleContinuationBreaks\[0\]\.roleId contains an unknown role/
   );
-  assert.ok(schemaErrors(duplicatePageSplittableRole).length > 0);
+  assert.ok(schemaErrors(unknownContinuationRole).length > 0);
+
+  const duplicateContinuationRole = structuredClone(roleContinuation);
+  duplicateContinuationRole.resume.roleContinuationBreaks = [
+    { roleId: 'kinesso', afterBullet: 1 },
+    { roleId: 'kinesso', afterBullet: 2 },
+  ];
+  assert.match(
+    validateV2Config(duplicateContinuationRole).join('\n'),
+    /resume\.roleContinuationBreaks must not repeat a role/
+  );
+
+  const terminalContinuationBreak = structuredClone(roleContinuation);
+  terminalContinuationBreak.resume.roleContinuationBreaks[0].afterBullet =
+    terminalContinuationBreak.resume.roles.kinesso.length;
+  assert.match(
+    validateV2Config(terminalContinuationBreak).join('\n'),
+    /afterBullet must leave at least one bullet before and after the break/
+  );
+
+  const splitJob = splitJobBlockWithContinuation(
+    `<div class="job">
+      <div class="job-header">
+        <span class="job-title">Director, Experience &amp; Innovation</span>
+        <span class="job-meta">Kinesso (IPG)</span>
+      </div>
+      <ul class="job-desc" data-resume-role="kinesso">
+        <li>First bullet</li>
+        <li>Second bullet</li>
+        <li>Third bullet</li>
+      </ul>
+    </div>`,
+    2
+  );
+  assert.match(splitJob, /class="job job--continuation"/);
+  assert.match(splitJob, /Experience &amp; Innovation \(continued\)/);
+  assert.equal((splitJob.match(/First bullet/g) || []).length, 1);
+  assert.equal((splitJob.match(/Second bullet/g) || []).length, 1);
+  assert.equal((splitJob.match(/Third bullet/g) || []).length, 1);
+  assert.ok(splitJob.indexOf('Second bullet') < splitJob.indexOf('(continued)'));
+  assert.ok(splitJob.indexOf('(continued)') < splitJob.indexOf('Third bullet'));
 });
 
 test(
@@ -1239,7 +1273,6 @@ test(
         },
       ];
       config.resume.layoutDensity = 'compact';
-      config.resume.allowPageBreakInsideRoles = ['kinesso'];
       config.resume.awards = [
         {
           label: 'Manny Award 2013',

@@ -1163,25 +1163,49 @@ function validateResume(config, errors, profileRegistry = null) {
       isNonEmptyString(resume.portfolioLinkLabel),
     'resume.portfolioLinkLabel must be a non-empty string when present'
   );
-  if (resume.allowPageBreakInsideRoles !== undefined) {
+  if (resume.roleContinuationBreaks !== undefined) {
     pushError(
       errors,
-      Array.isArray(resume.allowPageBreakInsideRoles),
-      'resume.allowPageBreakInsideRoles must be an array when present'
+      Array.isArray(resume.roleContinuationBreaks) &&
+        resume.roleContinuationBreaks.length >= 1 &&
+        resume.roleContinuationBreaks.length <= RESUME_ROLE_IDS.length,
+      'resume.roleContinuationBreaks must include 1 to 6 entries when present'
     );
-    if (Array.isArray(resume.allowPageBreakInsideRoles)) {
+    if (Array.isArray(resume.roleContinuationBreaks)) {
+      const continuationRoleIds = [];
+      for (const [index, continuation] of
+        resume.roleContinuationBreaks.entries()) {
+        const prefix = `resume.roleContinuationBreaks[${index}]`;
+        const roleId = continuation?.roleId;
+        const bulletCount = resumeRoleBulletTexts(resume, roleId).length;
+        continuationRoleIds.push(roleId);
+        pushError(
+          errors,
+          continuation && typeof continuation === 'object',
+          `${prefix} must be an object`
+        );
+        pushError(
+          errors,
+          RESUME_ROLE_IDS.includes(roleId),
+          `${prefix}.roleId contains an unknown role`
+        );
+        pushError(
+          errors,
+          resumeRoleSubEntries(resume, roleId) === null,
+          `${prefix}.roleId cannot use per-agency sub-entries`
+        );
+        pushError(
+          errors,
+          Number.isInteger(continuation?.afterBullet) &&
+            continuation.afterBullet >= 1 &&
+            continuation.afterBullet < bulletCount,
+          `${prefix}.afterBullet must leave at least one bullet before and after the break`
+        );
+      }
       pushError(
         errors,
-        resume.allowPageBreakInsideRoles.every((roleId) =>
-          RESUME_ROLE_IDS.includes(roleId)
-        ),
-        'resume.allowPageBreakInsideRoles contains an unknown role'
-      );
-      pushError(
-        errors,
-        new Set(resume.allowPageBreakInsideRoles).size ===
-          resume.allowPageBreakInsideRoles.length,
-        'resume.allowPageBreakInsideRoles must not contain duplicates'
+        new Set(continuationRoleIds).size === continuationRoleIds.length,
+        'resume.roleContinuationBreaks must not repeat a role'
       );
     }
   }

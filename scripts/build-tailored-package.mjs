@@ -617,22 +617,14 @@ function buildResume(config, paths) {
     );
   }
   resumeHtml = replaceResumeExperienceSections(resumeHtml, config);
-  if (config.resume.allowPageBreakInsideRoles?.length) {
+  if (config.resume.roleContinuationBreaks?.length) {
     resumeHtml = resumeHtml.replace(
       '</head>',
-      `<style data-resume-page-splitting="role-specific">
+      `<style data-resume-page-splitting="role-continuation">
   @media print {
-    .job.job--page-splittable {
-      break-inside: auto;
-      page-break-inside: auto;
-    }
-    .job.job--page-splittable .job-header {
-      break-after: avoid;
-      page-break-after: avoid;
-    }
-    .job.job--page-splittable .job-desc li {
-      break-inside: avoid;
-      page-break-inside: avoid;
+    .job.job--continuation {
+      break-before: page;
+      page-break-before: always;
     }
   }
 </style>
@@ -731,20 +723,56 @@ function extractBalancedTagBlock(html, startIndex, tagName) {
   throw new Error(`Could not find the closing </${tagName}> tag`);
 }
 
-function renderSubEntryJob(subEntry, allowPageBreakInside = false) {
+function renderSubEntryJob(subEntry) {
   const meta = [subEntry.employer, subEntry.location, subEntry.dateRange]
     .filter(Boolean)
     .map((part) => escapeHtml(part))
     .join(' · ');
-  return `  <div class="job${
-    allowPageBreakInside ? ' job--page-splittable' : ''
-  }">
+  return `  <div class="job">
     <div class="job-header">
       <span class="job-title">${escapeHtml(subEntry.title)}</span>
       <span class="job-meta">${meta}</span>
     </div>
     <ul class="job-desc">${renderBulletItems(subEntry.bullets)}</ul>
   </div>`;
+}
+
+export function splitJobBlockWithContinuation(jobBlock, afterBullet) {
+  const listMatch = jobBlock.match(/<ul\b[^>]*>[\s\S]*?<\/ul>/i);
+  if (!listMatch) {
+    throw new Error('Could not find the resume job bullet list');
+  }
+  const listHtml = listMatch[0];
+  const listOpen = listHtml.match(/^<ul\b[^>]*>/i)?.[0];
+  const bulletItems = [...listHtml.matchAll(/<li\b[^>]*>[\s\S]*?<\/li>/gi)].map(
+    (match) => match[0]
+  );
+  if (
+    !listOpen ||
+    !Number.isInteger(afterBullet) ||
+    afterBullet < 1 ||
+    afterBullet >= bulletItems.length
+  ) {
+    throw new Error('Invalid resume role continuation break');
+  }
+  const jobBeforeList = jobBlock.slice(0, listMatch.index);
+  const jobAfterList = jobBlock.slice(listMatch.index + listHtml.length);
+  const renderChunk = (prefix, items) => `${prefix}${listOpen}\n${items
+    .map((item) => `      ${item}`)
+    .join('\n')}\n    </ul>${jobAfterList}`;
+  const continuationPrefix = jobBeforeList
+    .replace('<div class="job">', '<div class="job job--continuation">')
+    .replace(
+      /(<span class="job-title">)([\s\S]*?)(<\/span>)/i,
+      '$1$2 (continued)$3'
+    );
+  return `${renderChunk(
+    jobBeforeList,
+    bulletItems.slice(0, afterBullet)
+  )}\n\n${renderChunk(
+    continuationPrefix,
+    bulletItems.slice(afterBullet)
+  )}`;
 }
 
 function replaceResumeExperienceSections(resumeHtml, config) {
@@ -757,20 +785,15 @@ function replaceResumeExperienceSections(resumeHtml, config) {
 
   const sourceSection = experienceMatch[0];
   const jobBlocks = new Map();
-  const pageSplittableRoles = new Set(
-    config.resume.allowPageBreakInsideRoles || []
+  const continuationBreaks = new Map(
+    (config.resume.roleContinuationBreaks || []).map(
+      ({ roleId, afterBullet }) => [roleId, afterBullet]
+    )
   );
   for (const roleId of RESUME_ROLE_IDS) {
     const subEntries = resumeRoleSubEntries(config.resume, roleId);
     if (subEntries) {
-      jobBlocks.set(
-        roleId,
-        subEntries
-          .map((subEntry) =>
-            renderSubEntryJob(subEntry, pageSplittableRoles.has(roleId))
-          )
-          .join('\n\n')
-      );
+      jobBlocks.set(roleId, subEntries.map(renderSubEntryJob).join('\n\n'));
       continue;
     }
     const roleMarker = `data-resume-role="${roleId}"`;
@@ -783,10 +806,10 @@ function replaceResumeExperienceSections(resumeHtml, config) {
       throw new Error(`Could not find the source resume job for ${roleId}`);
     }
     let jobBlock = extractBalancedTagBlock(sourceSection, jobStart, 'div');
-    if (pageSplittableRoles.has(roleId)) {
-      jobBlock = jobBlock.replace(
-        '<div class="job">',
-        '<div class="job job--page-splittable">'
+    if (continuationBreaks.has(roleId)) {
+      jobBlock = splitJobBlockWithContinuation(
+        jobBlock,
+        continuationBreaks.get(roleId)
       );
     }
     jobBlocks.set(roleId, jobBlock);
