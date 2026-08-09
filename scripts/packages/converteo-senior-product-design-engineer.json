@@ -346,6 +346,12 @@
     "compositionMode": "foundation-complete",
     "layoutDensity": "compact",
     "portfolioLinkLabel": "AI Showcase",
+    "roleContinuationBreaks": [
+      {
+        "roleId": "kinesso",
+        "afterBullet": 4
+      }
+    ],
     "summary": "Product designer and AI product builder with 15 years across digital delivery, enterprise UX, client strategy, and hands-on AI implementation. I use research, Figma, design systems, and AI-assisted development to turn unclear ideas into polished working prototypes and build-ready handoffs. Recent work includes LLM and VLM review workflows, React product surfaces, model orchestration, and client-led POCs. Earlier enterprise work scaled design from 2 to 30 and supported 7,000+ users across 22 brands.",
     "skillIds": [
       "enterprise-ux-design-systems",
@@ -536,8 +542,8 @@
   },
   "qa": {
     "status": "qa-passed",
-    "builtAt": "2026-08-09T23:21:35.294Z",
-    "configInputSha256": "0c526023d8d06303a446ec4af87fa60bc1936b33481ef0751e6cc2e80d5e44df",
+    "builtAt": "2026-08-09T23:41:17.253Z",
+    "configInputSha256": "a5e227c06701f9527d73f064bb41418162bde617aa4cb6a23483d5f114138bdf",
     "sourceResumeSha256": "2265313e78b596a2b37d6d8f9a95081e4321b4047f142a5f0ddf22449cab4b9c",
     "resumeFoundation": {
       "id": "wally-mostafa-resume-2026-07-03",
@@ -559,7 +565,7 @@
     },
     "artifactHashes": {
       "routeSha256": "464eb9d55e3e65df903cac59c8da9bbd4f0c85bcd8fe074c63db162529ab2be7",
-      "resumePdfSha256": "60619c60503ad0e607b7976061936a622818dc62962266237d272add5dad6526",
+      "resumePdfSha256": "98f704f01bcb07e656c19e1e104ad01fd314b44218d70c51ba857e41bec8de9c",
       "coverLetterPdfSha256": null,
       "coverLetterMarkdownSha256": null,
       "scopedProjectSha256": {
@@ -584,7 +590,7 @@
       "ok": true,
       "pdfPath": "output/pdf/Wally-Mostafa-Converteo-Senior-Product-Design-Engineer-Resume.pdf",
       "pageCount": 2,
-      "fileSize": 76663,
+      "fileSize": 77514,
       "annotations": [
         {
           "page": 1,
