@@ -456,6 +456,7 @@
   "route": {
     "presentation": "showcase",
     "heroIntent": "resume-support",
+    "projectCardStats": "hidden",
     "workHeading": "Current AI and AI-assisted work.",
     "contactHeading": "Thanks for taking a look."
   },
@@ -530,8 +531,8 @@
   },
   "qa": {
     "status": "qa-passed",
-    "builtAt": "2026-08-09T20:45:47.420Z",
-    "configInputSha256": "d656614127928d61366c744ae0f84d89fe415d0ffb606649d1b184b7489a3553",
+    "builtAt": "2026-08-09T21:30:14.144Z",
+    "configInputSha256": "20cb3761ddab278de832290264f3df2fe70921d91dbe46e244c1594e2b37508d",
     "sourceResumeSha256": "2265313e78b596a2b37d6d8f9a95081e4321b4047f142a5f0ddf22449cab4b9c",
     "resumeFoundation": {
       "id": "wally-mostafa-resume-2026-07-03",
@@ -552,8 +553,8 @@
       "registrySha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108"
     },
     "artifactHashes": {
-      "routeSha256": "d23e985fd1dcb109351a7ee23803d86a85d4d28ce6377dc2bf78412ffb6bd7e8",
-      "resumePdfSha256": "fea472df74e8a7a14b490280d27a0809da8a20114eb74a9435879d3a7ec3d798",
+      "routeSha256": "464eb9d55e3e65df903cac59c8da9bbd4f0c85bcd8fe074c63db162529ab2be7",
+      "resumePdfSha256": "b5ee60baa4ddac0539325e6b00534c280672961e2106c4fd70e998038784ff29",
       "coverLetterPdfSha256": null,
       "coverLetterMarkdownSha256": null,
       "scopedProjectSha256": {
