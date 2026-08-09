@@ -882,6 +882,40 @@
     },
     {
       "workflowVersion": 2,
+      "contractRevision": 7,
+      "slug": "converteo-senior-product-design-engineer",
+      "roleTitle": "Senior Product Design Engineer",
+      "artifactStem": "Converteo-Senior-Product-Design-Engineer",
+      "configPath": "scripts/packages/converteo-senior-product-design-engineer.json",
+      "targetLane": "ai-product-implementation",
+      "evidenceMode": "portfolio-primary",
+      "fitClass": "strong",
+      "positioningLane": "ai-product-implementation",
+      "bridgeType": "direct",
+      "applicationStrategy": "direct",
+      "resumeBaseMode": "ai-product-implementation",
+      "resumeBaseLeadProfile": "ai-product-implementation",
+      "resumeBaseAction": "tailor-to-jd",
+      "accountPresentation": "consolidated",
+      "resumeBaseProfiles": [
+        {
+          "id": "ai-product-implementation",
+          "version": 1
+        }
+      ],
+      "routeMode": "scoped-projects",
+      "selectedProjects": [
+        "project-01.html",
+        "project-02.html",
+        "project-08.html"
+      ],
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Converteo-Senior-Product-Design-Engineer-Resume.pdf",
+      "publishStatus": "local-only",
+      "qaStatus": "qa-passed",
+      "builtAt": "2026-08-09T20:45:47.420Z"
+    },
+    {
+      "workflowVersion": 2,
       "slug": "cotton-incorporated-manager-trade-marketing",
       "roleTitle": "Cotton Incorporated Manager, Trade Marketing",
       "artifactStem": "Cotton-Incorporated-Manager-Trade-Marketing",
