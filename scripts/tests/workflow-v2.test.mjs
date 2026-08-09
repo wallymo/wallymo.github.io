@@ -1186,6 +1186,30 @@ test('revisions 5 and 6 support relevance-first experience sections without dupl
     validateV2Config(invalidDensity).join('\n'),
     /resume\.layoutDensity must be standard or compact/
   );
+
+  const pageSplittable = structuredClone(relevanceFirst);
+  pageSplittable.resume.allowPageBreakInsideRoles = ['kinesso'];
+  assert.deepEqual(validateV2Config(pageSplittable), []);
+  assert.deepEqual(schemaErrors(pageSplittable), []);
+
+  const unknownPageSplittableRole = structuredClone(pageSplittable);
+  unknownPageSplittableRole.resume.allowPageBreakInsideRoles = ['unknown'];
+  assert.match(
+    validateV2Config(unknownPageSplittableRole).join('\n'),
+    /resume\.allowPageBreakInsideRoles contains an unknown role/
+  );
+  assert.ok(schemaErrors(unknownPageSplittableRole).length > 0);
+
+  const duplicatePageSplittableRole = structuredClone(pageSplittable);
+  duplicatePageSplittableRole.resume.allowPageBreakInsideRoles = [
+    'kinesso',
+    'kinesso',
+  ];
+  assert.match(
+    validateV2Config(duplicatePageSplittableRole).join('\n'),
+    /resume\.allowPageBreakInsideRoles must not contain duplicates/
+  );
+  assert.ok(schemaErrors(duplicatePageSplittableRole).length > 0);
 });
 
 test(
@@ -1215,6 +1239,7 @@ test(
         },
       ];
       config.resume.layoutDensity = 'compact';
+      config.resume.allowPageBreakInsideRoles = ['kinesso'];
       config.resume.awards = [
         {
           label: 'Manny Award 2013',

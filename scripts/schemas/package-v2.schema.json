@@ -311,6 +311,20 @@
           "type": "string",
           "minLength": 1
         },
+        "allowPageBreakInsideRoles": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "hedgehox",
+              "one-block-away",
+              "kinesso",
+              "omnicom",
+              "heartbeat",
+              "account-management"
+            ]
+          },
+          "uniqueItems": true
+        },
         "awards": {
           "type": "array",
           "minItems": 1,

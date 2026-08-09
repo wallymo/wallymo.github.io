@@ -1163,6 +1163,28 @@ function validateResume(config, errors, profileRegistry = null) {
       isNonEmptyString(resume.portfolioLinkLabel),
     'resume.portfolioLinkLabel must be a non-empty string when present'
   );
+  if (resume.allowPageBreakInsideRoles !== undefined) {
+    pushError(
+      errors,
+      Array.isArray(resume.allowPageBreakInsideRoles),
+      'resume.allowPageBreakInsideRoles must be an array when present'
+    );
+    if (Array.isArray(resume.allowPageBreakInsideRoles)) {
+      pushError(
+        errors,
+        resume.allowPageBreakInsideRoles.every((roleId) =>
+          RESUME_ROLE_IDS.includes(roleId)
+        ),
+        'resume.allowPageBreakInsideRoles contains an unknown role'
+      );
+      pushError(
+        errors,
+        new Set(resume.allowPageBreakInsideRoles).size ===
+          resume.allowPageBreakInsideRoles.length,
+        'resume.allowPageBreakInsideRoles must not contain duplicates'
+      );
+    }
+  }
   if (resume.awards !== undefined) {
     pushError(
       errors,

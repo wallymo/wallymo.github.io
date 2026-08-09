@@ -617,6 +617,28 @@ function buildResume(config, paths) {
     );
   }
   resumeHtml = replaceResumeExperienceSections(resumeHtml, config);
+  if (config.resume.allowPageBreakInsideRoles?.length) {
+    resumeHtml = resumeHtml.replace(
+      '</head>',
+      `<style data-resume-page-splitting="role-specific">
+  @media print {
+    .job.job--page-splittable {
+      break-inside: auto;
+      page-break-inside: auto;
+    }
+    .job.job--page-splittable .job-header {
+      break-after: avoid;
+      page-break-after: avoid;
+    }
+    .job.job--page-splittable .job-desc li {
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+  }
+</style>
+</head>`
+    );
+  }
   if (Array.isArray(config.resume.awards)) {
     resumeHtml = resumeHtml.replace(
       /<ul class="awards-list">[\s\S]*?<\/ul>/,
@@ -709,12 +731,14 @@ function extractBalancedTagBlock(html, startIndex, tagName) {
   throw new Error(`Could not find the closing </${tagName}> tag`);
 }
 
-function renderSubEntryJob(subEntry) {
+function renderSubEntryJob(subEntry, allowPageBreakInside = false) {
   const meta = [subEntry.employer, subEntry.location, subEntry.dateRange]
     .filter(Boolean)
     .map((part) => escapeHtml(part))
     .join(' · ');
-  return `  <div class="job">
+  return `  <div class="job${
+    allowPageBreakInside ? ' job--page-splittable' : ''
+  }">
     <div class="job-header">
       <span class="job-title">${escapeHtml(subEntry.title)}</span>
       <span class="job-meta">${meta}</span>
@@ -733,10 +757,20 @@ function replaceResumeExperienceSections(resumeHtml, config) {
 
   const sourceSection = experienceMatch[0];
   const jobBlocks = new Map();
+  const pageSplittableRoles = new Set(
+    config.resume.allowPageBreakInsideRoles || []
+  );
   for (const roleId of RESUME_ROLE_IDS) {
     const subEntries = resumeRoleSubEntries(config.resume, roleId);
     if (subEntries) {
-      jobBlocks.set(roleId, subEntries.map(renderSubEntryJob).join('\n\n'));
+      jobBlocks.set(
+        roleId,
+        subEntries
+          .map((subEntry) =>
+            renderSubEntryJob(subEntry, pageSplittableRoles.has(roleId))
+          )
+          .join('\n\n')
+      );
       continue;
     }
     const roleMarker = `data-resume-role="${roleId}"`;
@@ -748,10 +782,14 @@ function replaceResumeExperienceSections(resumeHtml, config) {
     if (markerIndex === -1 || jobStart === -1) {
       throw new Error(`Could not find the source resume job for ${roleId}`);
     }
-    jobBlocks.set(
-      roleId,
-      extractBalancedTagBlock(sourceSection, jobStart, 'div')
-    );
+    let jobBlock = extractBalancedTagBlock(sourceSection, jobStart, 'div');
+    if (pageSplittableRoles.has(roleId)) {
+      jobBlock = jobBlock.replace(
+        '<div class="job">',
+        '<div class="job job--page-splittable">'
+      );
+    }
+    jobBlocks.set(roleId, jobBlock);
   }
 
   const replacement = getResumeExperienceSections(config)
