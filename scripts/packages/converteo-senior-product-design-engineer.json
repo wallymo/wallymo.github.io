@@ -536,7 +536,7 @@
   },
   "qa": {
     "status": "qa-passed",
-    "builtAt": "2026-08-09T23:17:33.185Z",
+    "builtAt": "2026-08-09T23:21:35.294Z",
     "configInputSha256": "0c526023d8d06303a446ec4af87fa60bc1936b33481ef0751e6cc2e80d5e44df",
     "sourceResumeSha256": "2265313e78b596a2b37d6d8f9a95081e4321b4047f142a5f0ddf22449cab4b9c",
     "resumeFoundation": {
@@ -559,13 +559,13 @@
     },
     "artifactHashes": {
       "routeSha256": "464eb9d55e3e65df903cac59c8da9bbd4f0c85bcd8fe074c63db162529ab2be7",
-      "resumePdfSha256": "e304dd384fbdce9935b73ee70df214eb3fde8d7ed813886135e0abb23c289bbe",
+      "resumePdfSha256": "60619c60503ad0e607b7976061936a622818dc62962266237d272add5dad6526",
       "coverLetterPdfSha256": null,
       "coverLetterMarkdownSha256": null,
       "scopedProjectSha256": {
-        "project-01.html": "956c1392414f7983460ba95c9793b53fee098ff31974d768115b82307a11c4f9",
-        "project-02.html": "4a40620e72e7da0b5939aa6250ee3735c2612554acd9c3bf433bf95be9cb8067",
-        "project-08.html": "1f904336ce153fd47f25b657a11883f8f07865fa94623431b12b0bbcd244c373"
+        "project-01.html": "e4eee60a0f1e25c262a7437bd2f2a0270aff09d4201fa4de649375071d6696d6",
+        "project-02.html": "7089c93d7c21085402039f46eb4d4303d3f01fd8e0c2722cdb7addd392d852b0",
+        "project-08.html": "325651362b58bbbcc39b69f05083d16ef09161c8344372662a3fbc4828617894"
       }
     },
     "renderer": {
