@@ -3570,6 +3570,12 @@ test(
             )}</div>`
           )
         );
+        const projectNavigation = html.match(
+          /<div class="nav-projects">([\s\S]*?)<\/div>/
+        )?.[1];
+        assert.ok(projectNavigation);
+        assert.equal((projectNavigation.match(/<a\b/g) || []).length, 2);
+        assert.doesNotMatch(html, /<div class="label">Next Project<\/div>/);
       }
       const savedConfig = JSON.parse(readFileSync(configPath, 'utf8'));
       assert.equal(savedConfig.qa.route.errors.length, 0);

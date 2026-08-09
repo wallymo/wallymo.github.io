@@ -324,10 +324,6 @@ function buildRouteLocalNextProject(project, config, titlesByProject) {
     `    <a href="${previousProject}">&larr; ${escapeHtml(previousTitle)}</a>`,
     `    <a href="${nextProject}">${escapeHtml(nextTitle)} &rarr;</a>`,
     '  </div>',
-    '  <div style="margin-top: var(--space-xl);">',
-    '    <div class="label">Next Project</div>',
-    `    <a href="${nextProject}">${escapeHtml(nextTitle)} &rarr;</a>`,
-    '  </div>',
     '</div>',
   ].join('\n');
 }
