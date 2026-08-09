@@ -345,6 +345,7 @@
     "foundationId": "wally-mostafa-resume-2026-07-03",
     "compositionMode": "foundation-complete",
     "layoutDensity": "compact",
+    "portfolioLinkLabel": "AI Showcase",
     "summary": "Product designer and AI product builder with 15 years across digital delivery, enterprise UX, client strategy, and hands-on AI implementation. I use research, Figma, design systems, and AI-assisted development to turn unclear ideas into polished working prototypes and build-ready handoffs. Recent work includes LLM and VLM review workflows, React product surfaces, model orchestration, and client-led POCs. Earlier enterprise work scaled design from 2 to 30 and supported 7,000+ users across 22 brands.",
     "skillIds": [
       "enterprise-ux-design-systems",
@@ -395,7 +396,8 @@
       "kinesso": [
         "Scaled product design from 2 to 30 people across the US and Poland for enterprise analytics used by 7,000+ users across 22 white-label brands",
         "Led UX and design-system strategy for MIE data visualization, dashboard building, brand theming, and reusable analytics components",
-        "Built the Digital Experience Audit workflow for channel scoring, benchmarks, recommendations, visualization, and presentation-ready client outputs",
+        "Built the foundation for a UX research practice across 20+ products, establishing interviews, prototype testing, workshops, roadshows, and reusable Figma documentation as part of project planning and delivery",
+        "Collaborated on the overall UX/UI build of a Digital Experience Audit workflow for channel scoring, benchmarks, recommendations, visualization, and presentation-ready client outputs",
         "Design-system and analytics work earned 5 Indigo Gold, 4 Indigo Silver, and Red Dot recognition"
       ],
       "omnicom": [
@@ -433,6 +435,7 @@
       "kinesso": [
         "kinesso-01",
         "kinesso-02",
+        "addition:converteo-ux-research-practice",
         "kinesso-03",
         "kinesso-04"
       ],
@@ -514,8 +517,8 @@
     "humanizerVersion": "2.2.0",
     "mode": "surface-only",
     "status": "passed",
-    "reviewedAt": "2026-08-09T20:42:21.356Z",
-    "copySha256": "41a784dff3075ed8092306118d345107d4d716392b6266ca6ac9097aeac22f76",
+    "reviewedAt": "2026-08-09T23:02:44.129Z",
+    "copySha256": "744c410f4af3dacd3e9d40900752dae7f6f269e343838d9dddd06e6356a4def8",
     "preserved": [
       "content",
       "structure",
@@ -531,8 +534,8 @@
   },
   "qa": {
     "status": "qa-passed",
-    "builtAt": "2026-08-09T21:30:14.144Z",
-    "configInputSha256": "20cb3761ddab278de832290264f3df2fe70921d91dbe46e244c1594e2b37508d",
+    "builtAt": "2026-08-09T23:03:01.054Z",
+    "configInputSha256": "165600abf25781c360559e414a43e364913f6e6474ba79ddee6c41259cc66904",
     "sourceResumeSha256": "2265313e78b596a2b37d6d8f9a95081e4321b4047f142a5f0ddf22449cab4b9c",
     "resumeFoundation": {
       "id": "wally-mostafa-resume-2026-07-03",
@@ -554,7 +557,7 @@
     },
     "artifactHashes": {
       "routeSha256": "464eb9d55e3e65df903cac59c8da9bbd4f0c85bcd8fe074c63db162529ab2be7",
-      "resumePdfSha256": "b5ee60baa4ddac0539325e6b00534c280672961e2106c4fd70e998038784ff29",
+      "resumePdfSha256": "ca55ea2e5837ee782e776d22b4cedcc4539685855a485749609376789f422766",
       "coverLetterPdfSha256": null,
       "coverLetterMarkdownSha256": null,
       "scopedProjectSha256": {
@@ -579,7 +582,7 @@
       "ok": true,
       "pdfPath": "output/pdf/Wally-Mostafa-Converteo-Senior-Product-Design-Engineer-Resume.pdf",
       "pageCount": 2,
-      "fileSize": 74636,
+      "fileSize": 75631,
       "annotations": [
         {
           "page": 1,
@@ -758,8 +761,8 @@
       "status": "passed",
       "version": "2.2.0",
       "mode": "surface-only",
-      "reviewedAt": "2026-08-09T20:42:21.356Z",
-      "copySha256": "41a784dff3075ed8092306118d345107d4d716392b6266ca6ac9097aeac22f76",
+      "reviewedAt": "2026-08-09T23:02:44.129Z",
+      "copySha256": "744c410f4af3dacd3e9d40900752dae7f6f269e343838d9dddd06e6356a4def8",
       "reviewMethod": "humanizer-skill",
       "semanticPassAttested": true,
       "staticChecksPassed": true
