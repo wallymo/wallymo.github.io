@@ -401,6 +401,7 @@
       ],
       "kinesso": [
         "Scaled product design from 2 to 30 people across the US and Poland for enterprise analytics used by 7,000+ users across 22 white-label brands",
+        "Partnered with the Head of Design to create onboarding materials, career growth roadmaps, and employee review workflows for new hires and existing team members",
         "Led UX research and strategy for a marketing intelligence suite across data visualization, dashboard building, brand theming, and reusable analytics components",
         "Built the foundation for a UX research practice across 20+ products, establishing interviews, prototype testing, workshops, roadshows, and reusable Figma documentation as part of project planning and delivery",
         "Team lead for workshops on product discovery, ecosystem mapping, innovation, and user research, first for Kinesso teams and later for groups across IPG",
@@ -443,6 +444,7 @@
       ],
       "kinesso": [
         "kinesso-01",
+        "addition:converteo-kinesso-employee-growth-workflows",
         "kinesso-02",
         "addition:converteo-ux-research-practice",
         "addition:converteo-kinesso-workshops",
@@ -529,8 +531,8 @@
     "humanizerVersion": "2.2.0",
     "mode": "surface-only",
     "status": "passed",
-    "reviewedAt": "2026-08-10T01:24:02.290Z",
-    "copySha256": "afdb123d633074406ff00787d8bdea1a12a8ac45f39786b4f196806a353789ed",
+    "reviewedAt": "2026-08-10T01:26:07.973Z",
+    "copySha256": "2f248361b12ef96b842a7e00b59f6da20f751753f0f65ee8774f1aae5008df71",
     "preserved": [
       "content",
       "structure",
@@ -546,8 +548,8 @@
   },
   "qa": {
     "status": "qa-passed",
-    "builtAt": "2026-08-10T01:24:11.526Z",
-    "configInputSha256": "279da820b3e34658c2e2f338c3fa1149e1beb72413acb0c2a4288c7241ad4906",
+    "builtAt": "2026-08-10T01:26:16.494Z",
+    "configInputSha256": "7d9fc9a0720107d19453781a734d86d11f111f7444f79c83e4d7d3a11c30ad0a",
     "sourceResumeSha256": "2265313e78b596a2b37d6d8f9a95081e4321b4047f142a5f0ddf22449cab4b9c",
     "resumeFoundation": {
       "id": "wally-mostafa-resume-2026-07-03",
@@ -569,7 +571,7 @@
     },
     "artifactHashes": {
       "routeSha256": "464eb9d55e3e65df903cac59c8da9bbd4f0c85bcd8fe074c63db162529ab2be7",
-      "resumePdfSha256": "63e2f897806bc1283f41eaacf2f2b2a1e862cea3fd732f27302213be4728adcd",
+      "resumePdfSha256": "2a222a58d49373e004b34651e9daee9b1e396e82cbffd7d4c4686cefd225428c",
       "coverLetterPdfSha256": null,
       "coverLetterMarkdownSha256": null,
       "scopedProjectSha256": {
@@ -594,7 +596,7 @@
       "ok": true,
       "pdfPath": "output/pdf/Wally-Mostafa-Converteo-Senior-Product-Design-Engineer-Resume.pdf",
       "pageCount": 2,
-      "fileSize": 79285,
+      "fileSize": 80095,
       "annotations": [
         {
           "page": 1,
@@ -773,8 +775,8 @@
       "status": "passed",
       "version": "2.2.0",
       "mode": "surface-only",
-      "reviewedAt": "2026-08-10T01:24:02.290Z",
-      "copySha256": "afdb123d633074406ff00787d8bdea1a12a8ac45f39786b4f196806a353789ed",
+      "reviewedAt": "2026-08-10T01:26:07.973Z",
+      "copySha256": "2f248361b12ef96b842a7e00b59f6da20f751753f0f65ee8774f1aae5008df71",
       "reviewMethod": "humanizer-skill",
       "semanticPassAttested": true,
       "staticChecksPassed": true
