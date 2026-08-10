@@ -910,32 +910,9 @@
         "project-08.html"
       ],
       "resumePdfPath": "output/pdf/Wally-Mostafa-Converteo-Senior-Product-Design-Engineer-Resume.pdf",
-      "publishStatus": "live-verified",
+      "publishStatus": "local-only",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-08-10T01:04:07.042Z",
-      "verification": {
-        "verifiedAt": "2026-08-10T01:05:17.963Z",
-        "routeUrl": "https://wallymo.github.io/converteo-senior-product-design-engineer/",
-        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-Converteo-Senior-Product-Design-Engineer-Resume.pdf",
-        "configUrl": "https://wallymo.github.io/scripts/packages/converteo-senior-product-design-engineer.json",
-        "projectUrls": [
-          "https://wallymo.github.io/converteo-senior-product-design-engineer/project-01.html",
-          "https://wallymo.github.io/converteo-senior-product-design-engineer/project-02.html",
-          "https://wallymo.github.io/converteo-senior-product-design-engineer/project-08.html"
-        ],
-        "configSha256": "7be899419e7b7ff15855f270c5a2345b85cff0991f1ebc263c3af55ba4e6a68a",
-        "pdfSha256": "98f8c9a10a27de5ad72866c73210f7adf6cf9e81d94d40e2f6da8bd287a064ba",
-        "resumeBaseProfilesUrl": "https://wallymo.github.io/scripts/resume-base-profiles.json",
-        "resumeBaseProfilesSha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108",
-        "routeSha256": "464eb9d55e3e65df903cac59c8da9bbd4f0c85bcd8fe074c63db162529ab2be7",
-        "scopedProjectSha256": {
-          "project-01.html": "e4eee60a0f1e25c262a7437bd2f2a0270aff09d4201fa4de649375071d6696d6",
-          "project-02.html": "7089c93d7c21085402039f46eb4d4303d3f01fd8e0c2722cdb7addd392d852b0",
-          "project-08.html": "325651362b58bbbcc39b69f05083d16ef09161c8344372662a3fbc4828617894"
-        },
-        "configInputSha256": "5320557d882305cf58e72ff5f507d332817fed504b9945893a0b5c7134602a83",
-        "qaBuiltAt": "2026-08-10T01:04:07.042Z"
-      }
+      "builtAt": "2026-08-10T01:06:36.980Z"
     },
     {
       "workflowVersion": 2,
