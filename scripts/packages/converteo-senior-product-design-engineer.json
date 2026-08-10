@@ -400,15 +400,15 @@
         "Currently building the website and sponsor strategy for a Tunisia youth soccer program, positioning the project for player advancement, community support, and donor outreach"
       ],
       "kinesso": [
-        "Scaled product design from 2 to 30 people across the US and Poland for enterprise analytics used by 7,000+ users across 22 white-label brands",
-        "Partnered with the Head of Design to create the team's first onboarding materials, career growth roadmaps, and employee review workflows for new hires and existing team members",
-        "Led UX research and strategy for a marketing intelligence suite across data visualization, dashboard building, brand theming, and reusable analytics components",
-        "Built Kinesso's first UX research practice and standardized design workflow across 20+ products; introduced interviews, prototype testing, reusable Figma documentation, and UX checkpoints into project plans",
-        "Team lead for workshops on product discovery, ecosystem mapping, innovation, and user research, first for Kinesso teams and later for groups across IPG",
-        "UX lead for user research and design on Kanvas, Kinesso's developer-first API services library; collaborated with C-suite stakeholders on monetization and go-to-market planning for launch",
-        "Led a three-person team to second place in Kinesso's inaugural innovation challenge with an accessibility panel concept that drew attention from IPG's global CEOs",
-        "Collaborated on the overall UX/UI build of a Digital Experience Audit workflow for channel scoring, benchmarks, recommendations, visualization, and presentation-ready client outputs",
-        "Design-system and analytics work earned 5 Indigo Gold, 4 Indigo Silver, and Red Dot recognition"
+        "Scaled product design from 2 to 30 across the US and Poland, hiring and staffing designers, leading critiques and quality reviews, and planning scope, resources, and engineering handoff across 20+ products",
+        "Partnered with the Head of Design to create the team's first onboarding program, career roadmaps, coaching structure, and performance review workflows for new and existing employees",
+        "Built Kinesso's first UX research practice across 20+ products, including participant recruitment, interviews, prototype testing, beta groups, behavioral analytics, research tooling, shared Figma documentation, and UX checkpoints in project plans",
+        "Led UX research and strategy for a marketing intelligence suite used by 7,000+ people across 22 white-label brands; turned findings and adoption data into roadmap priorities for navigation, dashboards, brand theming, personalization, and product support",
+        "Helped shape and govern a design system with 500 components, 140 styles, 300 icons, and 50 personas, including accessibility and design quality standards; the work earned 5 Indigo Gold, 4 Indigo Silver, and Red Dot recognition",
+        "Led workshops on product discovery, ecosystem mapping, innovation, and user research; expanded the program from Kinesso teams to IPG groups and presented recommendations to executives and clients",
+        "UX lead for research and design on Kanvas, Kinesso's developer-first API services library; partnered with product and engineering on roadmap priorities and with C-suite stakeholders on monetization and go-to-market planning",
+        "Collaborated on the UX/UI build of Digital Experience Audit, turning channel scoring, benchmarks, and recommendations into a repeatable workflow with data visualization and presentation-ready client outputs",
+        "Led a three-person team to second place in Kinesso's inaugural innovation challenge with an accessibility panel concept; later advised the next cohort and contributed to accessibility playbook and keyboard interaction standards"
       ],
       "omnicom": [
         "Supported oncology accounts as a freelance UX designer, combining UX design and account-management experience to strengthen regulated healthcare work",
@@ -531,8 +531,8 @@
     "humanizerVersion": "2.2.0",
     "mode": "surface-only",
     "status": "passed",
-    "reviewedAt": "2026-08-10T01:35:52.154Z",
-    "copySha256": "e4b24dd6d74a4297e086f019f564bd8ff7b86738400e0a6a0cb4d8ce94062f4f",
+    "reviewedAt": "2026-08-10T02:02:01.716Z",
+    "copySha256": "afb970a58e36c3bfb258f439bbcf711178b0f954772292bee37889195cba64e7",
     "preserved": [
       "content",
       "structure",
@@ -548,8 +548,8 @@
   },
   "qa": {
     "status": "qa-passed",
-    "builtAt": "2026-08-10T01:36:01.371Z",
-    "configInputSha256": "c937539e86f11669fae5c22fd24e9bae1a372c31079e7589614887ccce575199",
+    "builtAt": "2026-08-10T02:02:10.210Z",
+    "configInputSha256": "4d752c147bd6add95e342959cadefc57289ac34f81d791e20375c508389a6aac",
     "sourceResumeSha256": "2265313e78b596a2b37d6d8f9a95081e4321b4047f142a5f0ddf22449cab4b9c",
     "resumeFoundation": {
       "id": "wally-mostafa-resume-2026-07-03",
@@ -571,7 +571,7 @@
     },
     "artifactHashes": {
       "routeSha256": "464eb9d55e3e65df903cac59c8da9bbd4f0c85bcd8fe074c63db162529ab2be7",
-      "resumePdfSha256": "1cefa95c2caeb15e37b540a710c1f7faf2eb35ea9d32b7678f046b031eb62378",
+      "resumePdfSha256": "a2f55a18c2e3d9a0dcdecd27d68fecf1b45c078f8b9d505bae5a40cdb3e03b1d",
       "coverLetterPdfSha256": null,
       "coverLetterMarkdownSha256": null,
       "scopedProjectSha256": {
@@ -596,7 +596,7 @@
       "ok": true,
       "pdfPath": "output/pdf/Wally-Mostafa-Converteo-Senior-Product-Design-Engineer-Resume.pdf",
       "pageCount": 2,
-      "fileSize": 80160,
+      "fileSize": 81368,
       "annotations": [
         {
           "page": 1,
@@ -775,8 +775,8 @@
       "status": "passed",
       "version": "2.2.0",
       "mode": "surface-only",
-      "reviewedAt": "2026-08-10T01:35:52.154Z",
-      "copySha256": "e4b24dd6d74a4297e086f019f564bd8ff7b86738400e0a6a0cb4d8ce94062f4f",
+      "reviewedAt": "2026-08-10T02:02:01.716Z",
+      "copySha256": "afb970a58e36c3bfb258f439bbcf711178b0f954772292bee37889195cba64e7",
       "reviewMethod": "humanizer-skill",
       "semanticPassAttested": true,
       "staticChecksPassed": true
