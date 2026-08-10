@@ -376,8 +376,8 @@
         "Scaled product design from 2 to 30 across the US and Poland, with responsibility for hiring, staffing, scope, resource planning, quality reviews, and engineering handoff",
         "Built Kinesso's first UX research practice across 20+ products, with interviews, testing, analytics, and UX checkpoints",
         "Led UX research and strategy for a marketing intelligence suite used by 7,000+ people across 22 white-label brands, using findings and adoption data to set roadmap and product-support priorities",
-        "Led discovery, ecosystem mapping, innovation, and research workshops across Kinesso and IPG, presenting recommendations to executives and clients",
-        "Led research and design for Kanvas, aligning product, engineering, and C-suite leaders on roadmap and go-to-market planning",
+        "Helped shape and govern a design system with 500 components, 140 styles, 300 icons, and 50 personas, including accessibility and design-quality standards; the work earned 5 Indigo Gold, 4 Indigo Silver, and Red Dot recognition",
+        "UX lead for research and design on Kanvas, Kinesso's developer-first API services library; partnered with product and engineering on roadmap priorities and with C-suite stakeholders on monetization and go-to-market planning",
         "Helped build the Digital Experience Audit platform, turning channel scores, benchmarks, and recommendations into a repeatable workflow with data visualization and client-ready outputs"
       ],
       "omnicom": [
@@ -469,7 +469,7 @@
         "kinesso-01",
         "kinesso-06",
         "kinesso-02",
-        "kinesso-07",
+        "kinesso-04",
         "kinesso-08",
         "kinesso-03"
       ],
@@ -542,8 +542,8 @@
   },
   "qa": {
     "status": "qa-passed",
-    "builtAt": "2026-08-10T03:44:04.900Z",
-    "configInputSha256": "4a4f102a3274c5ed0fef3ab5da66e3270caeb7ed96e6ae579039162b64961bf2",
+    "builtAt": "2026-08-10T03:50:10.444Z",
+    "configInputSha256": "b01ee4c69400d9da6691b87ca22c25b61dfacff55fa59791b69f7153c45466b9",
     "sourceResumeSha256": "2265313e78b596a2b37d6d8f9a95081e4321b4047f142a5f0ddf22449cab4b9c",
     "resumeFoundation": {
       "id": "wally-mostafa-resume-2026-07-03",
@@ -565,7 +565,7 @@
     },
     "artifactHashes": {
       "routeSha256": "7bca3a105c7269a3c4eb529115e1d24d3bf53aa7173ffe5541944ddb2f0f2a92",
-      "resumePdfSha256": "4f91709de72672773dc7d5c6357c1c9aee1566c427f380f15b950f031822f1e6",
+      "resumePdfSha256": "31811c7616a7b35b1c3a3c48d6cf3017f75b8d2112c361f6ccf499df8fbbe774",
       "coverLetterPdfSha256": null,
       "coverLetterMarkdownSha256": null,
       "scopedProjectSha256": {
@@ -590,7 +590,7 @@
       "ok": true,
       "pdfPath": "output/pdf/Wally-Mostafa-Healthcare-Account-Management-Resume.pdf",
       "pageCount": 2,
-      "fileSize": 84126,
+      "fileSize": 84855,
       "annotations": [
         {
           "page": 1,
@@ -726,8 +726,8 @@
       "status": "passed",
       "version": "2.2.0",
       "mode": "rewrite-requested",
-      "reviewedAt": "2026-08-10T03:43:55.813Z",
-      "copySha256": "b47d75128e5ac5987e930c292b18af3f82aa29c84bdcdccc2526162703c2a836",
+      "reviewedAt": "2026-08-10T03:50:01.441Z",
+      "copySha256": "51d16648befd316a08a228e4d36e9b7a0111e5f2e13253b228b540d675358146",
       "reviewMethod": "humanizer-skill",
       "semanticPassAttested": true,
       "staticChecksPassed": true
@@ -774,8 +774,8 @@
     "humanizerVersion": "2.2.0",
     "mode": "rewrite-requested",
     "status": "passed",
-    "reviewedAt": "2026-08-10T03:43:55.813Z",
-    "copySha256": "b47d75128e5ac5987e930c292b18af3f82aa29c84bdcdccc2526162703c2a836",
+    "reviewedAt": "2026-08-10T03:50:01.441Z",
+    "copySha256": "51d16648befd316a08a228e4d36e9b7a0111e5f2e13253b228b540d675358146",
     "preserved": [
       "claims"
     ],
