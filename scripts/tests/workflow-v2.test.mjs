@@ -1262,7 +1262,6 @@ test(
         },
         {
           heading: 'Recent & Complementary Experience',
-          pageBreakBefore: true,
           roleIds: [
             'hedgehox',
             'one-block-away',
@@ -1570,6 +1569,19 @@ test(
           ],
         },
       ];
+      const retainedKinessoIds = [
+        'kinesso-01',
+        'kinesso-02',
+        'kinesso-03',
+        'kinesso-04',
+      ];
+      const originalKinessoIds = config.resume.sourceBulletIds.kinesso;
+      const originalKinessoBullets = config.resume.roles.kinesso;
+      config.resume.sourceBulletIds.kinesso = [...retainedKinessoIds];
+      config.resume.roles.kinesso = retainedKinessoIds.map(
+        (sourceId) =>
+          originalKinessoBullets[originalKinessoIds.indexOf(sourceId)]
+      );
       config.resume.layoutDensity = 'compact';
       approveHumanizerReview(config, {
         reviewedAt: '2026-07-30T12:00:00.000Z',

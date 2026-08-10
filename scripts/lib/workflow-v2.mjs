@@ -186,6 +186,19 @@ export function readResumeBaseProfiles() {
   return readJson(RESUME_BASE_PROFILES_PATH);
 }
 
+function foundationRoleIdsForVersion(foundation, roleId, version) {
+  const explicitOrder = foundation?.versionRoleOrders?.[String(version)]?.[roleId];
+  if (Array.isArray(explicitOrder)) {
+    return [...explicitOrder];
+  }
+  return (foundation?.roles?.[roleId] || [])
+    .filter(
+      (bullet) =>
+        (bullet.introducedInFoundationVersion || 1) <= version
+    )
+    .map((bullet) => bullet.id);
+}
+
 export function writeJson(filePath, value) {
   writeFileSync(resolveRepoPath(filePath), `${JSON.stringify(value, null, 2)}\n`);
 }
@@ -971,7 +984,12 @@ export function deriveHardGateStatus(hardGates = []) {
   return 'pass';
 }
 
-function validateResume(config, errors, profileRegistry = null) {
+function validateResume(
+  config,
+  errors,
+  profileRegistry = null,
+  { requireCurrentContract = false } = {}
+) {
   const resume = config.resume;
   pushError(errors, resume && typeof resume === 'object', 'resume is required');
   if (!resume || typeof resume !== 'object') {
@@ -1259,6 +1277,26 @@ function validateResume(config, errors, profileRegistry = null) {
     resume.foundationId === foundation.id,
     `resume.foundationId must be ${foundation.id}`
   );
+  const currentFoundationVersion = Number.isInteger(foundation.foundationVersion)
+    ? foundation.foundationVersion
+    : 1;
+  const requestedFoundationVersion = Number.isInteger(resume.foundationVersion)
+    ? resume.foundationVersion
+    : Math.min(2, currentFoundationVersion);
+  pushError(
+    errors,
+    Number.isInteger(requestedFoundationVersion) &&
+      requestedFoundationVersion >= 1 &&
+      requestedFoundationVersion <= currentFoundationVersion,
+    `resume.foundationVersion must be between 1 and ${currentFoundationVersion}`
+  );
+  if (requireCurrentContract && compositionMode === 'foundation-complete') {
+    pushError(
+      errors,
+      resume.foundationVersion === currentFoundationVersion,
+      `resume.foundationVersion must be ${currentFoundationVersion} for new or rebuilt foundation-complete packages`
+    );
+  }
   if (config.contractRevision === 4) {
     pushError(
       errors,
@@ -1340,6 +1378,11 @@ function validateResume(config, errors, profileRegistry = null) {
     const foundationIds = Array.isArray(foundationBullets)
       ? foundationBullets.map((bullet) => bullet.id)
       : [];
+    const requiredFoundationIds = foundationRoleIdsForVersion(
+      foundation,
+      roleId,
+      requestedFoundationVersion
+    );
     const foundationIdSet = new Set(foundationIds);
     const validAdditionId = (value) =>
       /^addition:[a-z0-9]+(?:-[a-z0-9]+)*$/.test(value);
@@ -1386,12 +1429,15 @@ function validateResume(config, errors, profileRegistry = null) {
     const retainedFoundationIds = sourceBulletIds.filter((sourceId) =>
       foundationIdSet.has(sourceId)
     );
+    const retainedRequiredFoundationIds = retainedFoundationIds.filter(
+      (sourceId) => requiredFoundationIds.includes(sourceId)
+    );
     const requiredProfileIds = selectedProfile?.requiredSourceIds?.[roleId] || [];
     pushError(
       errors,
       config.contractRevision === 4
-        ? JSON.stringify(retainedFoundationIds) ===
-            JSON.stringify(foundationIds)
+        ? JSON.stringify(retainedRequiredFoundationIds) ===
+            JSON.stringify(requiredFoundationIds)
         : curatedResume
           ? retainedFoundationIds.length >= 1
         : profileComplete
@@ -1404,9 +1450,10 @@ function validateResume(config, errors, profileRegistry = null) {
                 sourceBulletIds.includes(sourceId)
               )
             : retainedFoundationIds.length >= 1
-        : retainedFoundationIds.length === foundationIds.length &&
-            foundationIds.every((sourceId) =>
-              retainedFoundationIds.includes(sourceId)
+        : retainedRequiredFoundationIds.length ===
+            requiredFoundationIds.length &&
+            requiredFoundationIds.every((sourceId) =>
+              retainedRequiredFoundationIds.includes(sourceId)
             ),
       config.contractRevision === 4
         ? `resume.roles.${roleId} must retain every foundation bullet in source order; additions are allowed but removals are blocked`
@@ -1418,7 +1465,7 @@ function validateResume(config, errors, profileRegistry = null) {
           ? roleId === 'one-block-away'
             ? 'hybrid-selective resumes must retain the complete One Block Away foundation section'
             : `hybrid-selective resumes must retain at least one foundation bullet under ${roleId}`
-        : `resume.roles.${roleId} must retain every foundation bullet exactly once within its original job; within-job reordering and additions are allowed`
+        : `resume.roles.${roleId} must retain every foundation bullet for version ${requestedFoundationVersion} exactly once within its original job; within-job reordering and additions are allowed`
     );
   }
   pushError(
@@ -1431,24 +1478,28 @@ function validateResume(config, errors, profileRegistry = null) {
     compositionMode === 'foundation-complete'
   ) {
     const foundationIds = RESUME_ROLE_IDS.flatMap((roleId) =>
-      (foundation.roles?.[roleId] || []).map((bullet) => bullet.id)
+      foundationRoleIdsForVersion(
+        foundation,
+        roleId,
+        requestedFoundationVersion
+      )
     );
     const mappedFoundationIds = allMappedBulletIds.filter(
       (sourceId) => !sourceId.startsWith('addition:')
     );
     pushError(
       errors,
-      foundationIds.length === 23 &&
-        new Set(foundationIds).size === 23,
-      'foundation-complete resumes require exactly 23 unique foundation bullets'
+      foundationIds.length > 0 &&
+        new Set(foundationIds).size === foundationIds.length,
+      `foundation-complete resumes require unique foundation version ${requestedFoundationVersion} bullet IDs`
     );
     pushError(
       errors,
-      mappedFoundationIds.length === 23 &&
+      mappedFoundationIds.length === foundationIds.length &&
         foundationIds.every((sourceId) =>
           mappedFoundationIds.includes(sourceId)
         ),
-      'foundation-complete resumes must retain all 23 foundation bullet IDs exactly once'
+      `foundation-complete resumes must retain all ${foundationIds.length} foundation version ${requestedFoundationVersion} bullet IDs exactly once`
     );
   }
 
@@ -2042,7 +2093,7 @@ export function validateV2Config(
 
   validateResumeBaseGate(config, errors, foundation, profileRegistry);
   validateRequirements(config, errors, foundation);
-  validateResume(config, errors, profileRegistry);
+  validateResume(config, errors, profileRegistry, { requireCurrentContract });
   validatePositioning(config, errors, foundation, profileRegistry);
   validateCoverLetter(config, errors, foundation);
 

@@ -277,6 +277,7 @@
           }
         },
         "foundationId": { "type": "string", "minLength": 1 },
+        "foundationVersion": { "type": "integer", "minimum": 1 },
         "compositionMode": {
           "enum": [
             "foundation-complete",

@@ -1,5 +1,5 @@
 {
-  "foundationVersion": 2,
+  "foundationVersion": 3,
   "id": "wally-mostafa-resume-2026-07-03",
   "source": {
     "fileName": "Wally-Mostafa-Resume.pdf",
@@ -13,6 +13,16 @@
     "allowRemovals": false,
     "allowWithinRoleReordering": true,
     "allowCrossRoleMoves": false
+  },
+  "versionRoleOrders": {
+    "2": {
+      "kinesso": [
+        "kinesso-01",
+        "kinesso-02",
+        "kinesso-03",
+        "kinesso-04"
+      ]
+    }
   },
   "summary": "AI implementation and product strategy lead with 15 years across pharma, enterprise UX, client strategy, and regulated AI delivery. I turn ambiguous workflows into governed AI tools, demo-ready POCs, and build-ready product systems. My strength is bridging client translation, workflow design, model behavior, and adoption so teams can trust and use the product after the demo.",
   "skills": [
@@ -52,7 +62,8 @@
       "evidenceIds": [
         "hedgehox-01",
         "one-block-away-01",
-        "one-block-away-04"
+        "one-block-away-04",
+        "kinesso-08"
       ]
     },
     {
@@ -75,7 +86,10 @@
         "kinesso-01",
         "kinesso-02",
         "kinesso-03",
-        "kinesso-04"
+        "kinesso-04",
+        "kinesso-05",
+        "kinesso-06",
+        "kinesso-09"
       ]
     },
     {
@@ -83,7 +97,9 @@
       "label": "Research & Experience Strategy",
       "description": "Stakeholder interviews, competitive audits, journey maps, user flows, wireframes, prototypes, usability testing, and research-led product direction",
       "evidenceIds": [
-        "kinesso-03",
+        "kinesso-02",
+        "kinesso-06",
+        "kinesso-07",
         "heartbeat-01",
         "heartbeat-02",
         "heartbeat-03"
@@ -117,6 +133,8 @@
       "evidenceIds": [
         "hedgehox-03",
         "one-block-away-04",
+        "kinesso-01",
+        "kinesso-08",
         "heartbeat-03",
         "account-management-03"
       ]
@@ -138,7 +156,9 @@
       "description": "Client discovery, adoption-focused workflows, training and roadshows, human review, and product decisions based on user needs",
       "evidenceIds": [
         "one-block-away-01",
-        "kinesso-01",
+        "kinesso-02",
+        "kinesso-07",
+        "kinesso-08",
         "heartbeat-01",
         "account-management-03"
       ]
@@ -151,6 +171,8 @@
         "hedgehox-01",
         "one-block-away-01",
         "one-block-away-04",
+        "kinesso-07",
+        "kinesso-08",
         "account-management-03"
       ]
     }
@@ -180,8 +202,8 @@
       ],
       "priorityProofIds": [
         "kinesso-01",
-        "kinesso-02",
-        "heartbeat-02"
+        "kinesso-04",
+        "kinesso-06"
       ]
     },
     {
@@ -193,9 +215,10 @@
         "program-project-delivery"
       ],
       "priorityProofIds": [
+        "kinesso-06",
+        "kinesso-02",
         "heartbeat-01",
-        "heartbeat-02",
-        "kinesso-03"
+        "heartbeat-02"
       ]
     },
     {
@@ -250,7 +273,8 @@
       ],
       "priorityProofIds": [
         "one-block-away-01",
-        "kinesso-01",
+        "kinesso-07",
+        "kinesso-08",
         "account-management-03"
       ]
     }
@@ -305,6 +329,8 @@
       "id": "research-to-action",
       "label": "Research to action",
       "proofIds": [
+        "kinesso-06",
+        "kinesso-02",
         "heartbeat-01",
         "heartbeat-02",
         "heartbeat-03"
@@ -400,19 +426,44 @@
     "kinesso": [
       {
         "id": "kinesso-01",
-        "text": "Scaled product design from 2 to 30 people across the US and Poland for enterprise analytics used by 7,000+ users across 22 white-label brands"
+        "text": "Scaled product design from 2 to 30 across the US and Poland, hiring and staffing designers, leading critiques and quality reviews, and planning scope, resources, and engineering handoff across 20+ products"
+      },
+      {
+        "id": "kinesso-05",
+        "introducedInFoundationVersion": 3,
+        "text": "Partnered with the Head of Design to create the team's first onboarding program, career roadmaps, coaching structure, and performance review workflows for new and existing employees"
+      },
+      {
+        "id": "kinesso-06",
+        "introducedInFoundationVersion": 3,
+        "text": "Built Kinesso's first UX research practice across 20+ products, including participant recruitment, interviews, prototype testing, beta groups, behavioral analytics, research tooling, shared Figma documentation, and UX checkpoints in project plans"
       },
       {
         "id": "kinesso-02",
-        "text": "Led UX and design-system strategy for MIE data visualization, dashboard building, brand theming, and reusable analytics components"
-      },
-      {
-        "id": "kinesso-03",
-        "text": "Built the Digital Experience Audit workflow for channel scoring, benchmarks, recommendations, visualization, and presentation-ready client outputs"
+        "text": "Led UX research and strategy for a marketing intelligence suite used by 7,000+ people across 22 white-label brands; turned findings and adoption data into roadmap priorities for navigation, dashboards, brand theming, personalization, and product support"
       },
       {
         "id": "kinesso-04",
-        "text": "Design-system and analytics work earned 5 Indigo Gold, 4 Indigo Silver, and Red Dot recognition"
+        "text": "Helped shape and govern a design system with 500 components, 140 styles, 300 icons, and 50 personas, including accessibility and design quality standards; the work earned 5 Indigo Gold, 4 Indigo Silver, and Red Dot recognition"
+      },
+      {
+        "id": "kinesso-07",
+        "introducedInFoundationVersion": 3,
+        "text": "Led workshops on product discovery, ecosystem mapping, innovation, and user research; expanded the program from Kinesso teams to IPG groups and presented recommendations to executives and clients"
+      },
+      {
+        "id": "kinesso-08",
+        "introducedInFoundationVersion": 3,
+        "text": "UX lead for research and design on Kanvas, Kinesso's developer-first API services library; partnered with product and engineering on roadmap priorities and with C-suite stakeholders on monetization and go-to-market planning"
+      },
+      {
+        "id": "kinesso-03",
+        "text": "Collaborated on the UX/UI build of Digital Experience Audit, turning channel scoring, benchmarks, and recommendations into a repeatable workflow with data visualization and presentation-ready client outputs"
+      },
+      {
+        "id": "kinesso-09",
+        "introducedInFoundationVersion": 3,
+        "text": "Led a three-person team to second place in Kinesso's inaugural innovation challenge with an accessibility panel concept; later advised the next cohort and contributed to accessibility playbook and keyboard interaction standards"
       }
     ],
     "omnicom": [
