@@ -373,12 +373,12 @@
         "Own product strategy, UX, AI workflow design, front-end build, backend logic, demo readiness, and client iteration from first ask through working prototype"
       ],
       "kinesso": [
-        "Scaled product design from 2 to 30 across the US and Poland, leading hiring, staffing, and delivery across 20+ products",
+        "Scaled product design from 2 to 30 across the US and Poland, with responsibility for hiring, staffing, scope, resource planning, quality reviews, and engineering handoff across 20+ products",
         "Built Kinesso's first UX research practice across 20+ products, with interviews, testing, analytics, and UX checkpoints",
-        "Led research and strategy for a 7,000-user, 22-brand marketing intelligence suite, turning adoption data into roadmap priorities",
-        "Led discovery and research workshops across Kinesso and IPG, presenting recommendations to executives and clients",
+        "Led UX research and strategy for a marketing intelligence suite used by 7,000+ people across 22 white-label brands, using findings and adoption data to set roadmap and product-support priorities",
+        "Led discovery, ecosystem mapping, innovation, and research workshops across Kinesso and IPG, presenting recommendations to executives and clients",
         "Led research and design for Kanvas, aligning product, engineering, and C-suite leaders on roadmap and go-to-market planning",
-        "Helped build Digital Experience Audit, turning channel scores, benchmarks, and recommendations into client-ready outputs"
+        "Helped build the Digital Experience Audit platform, turning channel scores, benchmarks, and recommendations into a repeatable workflow with data visualization and client-ready outputs"
       ],
       "omnicom": [
         "Supported oncology accounts as a freelance UX designer, combining UX design and account-management experience to strengthen regulated healthcare work"
@@ -542,8 +542,8 @@
   },
   "qa": {
     "status": "qa-passed",
-    "builtAt": "2026-08-10T03:26:04.644Z",
-    "configInputSha256": "98d644a3953581c85a04a66f476261d88fbf79b5f05f669de94dbf019b85c40e",
+    "builtAt": "2026-08-10T03:41:54.287Z",
+    "configInputSha256": "ce7bdac4dc4c3efba4a8c81de275e2120acd1855a53c0843ff65cbcc4b381675",
     "sourceResumeSha256": "2265313e78b596a2b37d6d8f9a95081e4321b4047f142a5f0ddf22449cab4b9c",
     "resumeFoundation": {
       "id": "wally-mostafa-resume-2026-07-03",
@@ -565,7 +565,7 @@
     },
     "artifactHashes": {
       "routeSha256": "7bca3a105c7269a3c4eb529115e1d24d3bf53aa7173ffe5541944ddb2f0f2a92",
-      "resumePdfSha256": "062029adda3600a296c8c778aae583fc9ff133fcf24e21bf84910585d2653d1d",
+      "resumePdfSha256": "5f6699b8e45306a7d877e6e7e74e529d4b62840ce8b09358f0105e181c01ae78",
       "coverLetterPdfSha256": null,
       "coverLetterMarkdownSha256": null,
       "scopedProjectSha256": {
@@ -590,7 +590,7 @@
       "ok": true,
       "pdfPath": "output/pdf/Wally-Mostafa-Healthcare-Account-Management-Resume.pdf",
       "pageCount": 2,
-      "fileSize": 83680,
+      "fileSize": 84149,
       "annotations": [
         {
           "page": 1,
@@ -726,8 +726,8 @@
       "status": "passed",
       "version": "2.2.0",
       "mode": "rewrite-requested",
-      "reviewedAt": "2026-08-10T03:25:55.361Z",
-      "copySha256": "ee310ec2dcd5d8535128bb6e3304352aa8c3561192449365df6bfe764e6efc56",
+      "reviewedAt": "2026-08-10T03:41:44.564Z",
+      "copySha256": "b3002446e212c323f3c3c21a0457407fb0ef57fc095bbf874090f226a3703d95",
       "reviewMethod": "humanizer-skill",
       "semanticPassAttested": true,
       "staticChecksPassed": true
@@ -774,8 +774,8 @@
     "humanizerVersion": "2.2.0",
     "mode": "rewrite-requested",
     "status": "passed",
-    "reviewedAt": "2026-08-10T03:25:55.361Z",
-    "copySha256": "ee310ec2dcd5d8535128bb6e3304352aa8c3561192449365df6bfe764e6efc56",
+    "reviewedAt": "2026-08-10T03:41:44.564Z",
+    "copySha256": "b3002446e212c323f3c3c21a0457407fb0ef57fc095bbf874090f226a3703d95",
     "preserved": [
       "claims"
     ],
