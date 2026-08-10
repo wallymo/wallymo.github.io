@@ -910,9 +910,32 @@
         "project-08.html"
       ],
       "resumePdfPath": "output/pdf/Wally-Mostafa-Converteo-Senior-Product-Design-Engineer-Resume.pdf",
-      "publishStatus": "local-only",
+      "publishStatus": "live-verified",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-08-10T01:28:23.898Z"
+      "builtAt": "2026-08-10T01:28:23.898Z",
+      "verification": {
+        "verifiedAt": "2026-08-10T01:29:33.849Z",
+        "routeUrl": "https://wallymo.github.io/converteo-senior-product-design-engineer/",
+        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-Converteo-Senior-Product-Design-Engineer-Resume.pdf",
+        "configUrl": "https://wallymo.github.io/scripts/packages/converteo-senior-product-design-engineer.json",
+        "projectUrls": [
+          "https://wallymo.github.io/converteo-senior-product-design-engineer/project-01.html",
+          "https://wallymo.github.io/converteo-senior-product-design-engineer/project-02.html",
+          "https://wallymo.github.io/converteo-senior-product-design-engineer/project-08.html"
+        ],
+        "configSha256": "f5f7fb9ec30c2504c4ccb074e6a8c5463112ca0d408f04270327d9d97a026d91",
+        "pdfSha256": "95d4e147ad300997e3f47d8b1ea8558df60796a7a4a2728762386e9aec71295c",
+        "resumeBaseProfilesUrl": "https://wallymo.github.io/scripts/resume-base-profiles.json",
+        "resumeBaseProfilesSha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108",
+        "routeSha256": "464eb9d55e3e65df903cac59c8da9bbd4f0c85bcd8fe074c63db162529ab2be7",
+        "scopedProjectSha256": {
+          "project-01.html": "e4eee60a0f1e25c262a7437bd2f2a0270aff09d4201fa4de649375071d6696d6",
+          "project-02.html": "7089c93d7c21085402039f46eb4d4303d3f01fd8e0c2722cdb7addd392d852b0",
+          "project-08.html": "325651362b58bbbcc39b69f05083d16ef09161c8344372662a3fbc4828617894"
+        },
+        "configInputSha256": "17373b4cf2b061ec6c323f6ffe03910797877d6aaef69973f2988189cc664bae",
+        "qaBuiltAt": "2026-08-10T01:28:23.898Z"
+      }
     },
     {
       "workflowVersion": 2,
