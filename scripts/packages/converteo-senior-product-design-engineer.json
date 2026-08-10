@@ -401,7 +401,7 @@
       ],
       "kinesso": [
         "Scaled product design from 2 to 30 people across the US and Poland for enterprise analytics used by 7,000+ users across 22 white-label brands",
-        "Partnered with the Head of Design to create onboarding materials, career growth roadmaps, and employee review workflows for new hires and existing team members",
+        "Partnered with the Head of Design to create the team's first onboarding materials, career growth roadmaps, and employee review workflows for new hires and existing team members",
         "Led UX research and strategy for a marketing intelligence suite across data visualization, dashboard building, brand theming, and reusable analytics components",
         "Built the foundation for a UX research practice across 20+ products, establishing interviews, prototype testing, workshops, roadshows, and reusable Figma documentation as part of project planning and delivery",
         "Team lead for workshops on product discovery, ecosystem mapping, innovation, and user research, first for Kinesso teams and later for groups across IPG",
@@ -531,8 +531,8 @@
     "humanizerVersion": "2.2.0",
     "mode": "surface-only",
     "status": "passed",
-    "reviewedAt": "2026-08-10T01:26:07.973Z",
-    "copySha256": "2f248361b12ef96b842a7e00b59f6da20f751753f0f65ee8774f1aae5008df71",
+    "reviewedAt": "2026-08-10T01:28:15.354Z",
+    "copySha256": "3e3440324b53b1386b7b35bd31d54532e8434ca2295f907d5d0f612f1f57c37b",
     "preserved": [
       "content",
       "structure",
@@ -548,8 +548,8 @@
   },
   "qa": {
     "status": "qa-passed",
-    "builtAt": "2026-08-10T01:26:16.494Z",
-    "configInputSha256": "7d9fc9a0720107d19453781a734d86d11f111f7444f79c83e4d7d3a11c30ad0a",
+    "builtAt": "2026-08-10T01:28:23.898Z",
+    "configInputSha256": "17373b4cf2b061ec6c323f6ffe03910797877d6aaef69973f2988189cc664bae",
     "sourceResumeSha256": "2265313e78b596a2b37d6d8f9a95081e4321b4047f142a5f0ddf22449cab4b9c",
     "resumeFoundation": {
       "id": "wally-mostafa-resume-2026-07-03",
@@ -571,7 +571,7 @@
     },
     "artifactHashes": {
       "routeSha256": "464eb9d55e3e65df903cac59c8da9bbd4f0c85bcd8fe074c63db162529ab2be7",
-      "resumePdfSha256": "2a222a58d49373e004b34651e9daee9b1e396e82cbffd7d4c4686cefd225428c",
+      "resumePdfSha256": "95d4e147ad300997e3f47d8b1ea8558df60796a7a4a2728762386e9aec71295c",
       "coverLetterPdfSha256": null,
       "coverLetterMarkdownSha256": null,
       "scopedProjectSha256": {
@@ -596,7 +596,7 @@
       "ok": true,
       "pdfPath": "output/pdf/Wally-Mostafa-Converteo-Senior-Product-Design-Engineer-Resume.pdf",
       "pageCount": 2,
-      "fileSize": 80095,
+      "fileSize": 80138,
       "annotations": [
         {
           "page": 1,
@@ -775,8 +775,8 @@
       "status": "passed",
       "version": "2.2.0",
       "mode": "surface-only",
-      "reviewedAt": "2026-08-10T01:26:07.973Z",
-      "copySha256": "2f248361b12ef96b842a7e00b59f6da20f751753f0f65ee8774f1aae5008df71",
+      "reviewedAt": "2026-08-10T01:28:15.354Z",
+      "copySha256": "3e3440324b53b1386b7b35bd31d54532e8434ca2295f907d5d0f612f1f57c37b",
       "reviewMethod": "humanizer-skill",
       "semanticPassAttested": true,
       "staticChecksPassed": true
