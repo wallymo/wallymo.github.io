@@ -1453,7 +1453,7 @@
         "project-02.html"
       ],
       "resumePdfPath": "output/pdf/Wally-Mostafa-Healthcare-Account-Management-Resume.pdf",
-      "publishStatus": "local-only",
+      "publishStatus": "live-verified",
       "qaStatus": "qa-passed",
       "builtAt": "2026-08-10T03:41:54.287Z",
       "resumeBaseMode": "account-leadership",
@@ -1465,7 +1465,30 @@
           "id": "account-leadership",
           "version": 1
         }
-      ]
+      ],
+      "verification": {
+        "verifiedAt": "2026-08-10T03:42:50.560Z",
+        "routeUrl": "https://wallymo.github.io/healthcare-account-management/",
+        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-Healthcare-Account-Management-Resume.pdf",
+        "configUrl": "https://wallymo.github.io/scripts/packages/healthcare-account-management.json",
+        "projectUrls": [
+          "https://wallymo.github.io/healthcare-account-management/project-01.html",
+          "https://wallymo.github.io/healthcare-account-management/project-06.html",
+          "https://wallymo.github.io/healthcare-account-management/project-02.html"
+        ],
+        "configSha256": "ca1abd78bf281f78b93928b265775122e9074725e7cc45b5e638e79417a07bd4",
+        "pdfSha256": "5f6699b8e45306a7d877e6e7e74e529d4b62840ce8b09358f0105e181c01ae78",
+        "resumeBaseProfilesUrl": "https://wallymo.github.io/scripts/resume-base-profiles.json",
+        "resumeBaseProfilesSha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108",
+        "routeSha256": "7bca3a105c7269a3c4eb529115e1d24d3bf53aa7173ffe5541944ddb2f0f2a92",
+        "scopedProjectSha256": {
+          "project-01.html": "34c6785ff5391155eee0228a7665843c3f518238d23bc9bf689f3cd38487571e",
+          "project-06.html": "249a4eb98f88b52312d664d842d70d55c37d49143597ff62a8627450a811982d",
+          "project-02.html": "643cdc79860f15c207cd6ee3bf3b6e02632d1d99255b1c320e0acf35e944574f"
+        },
+        "configInputSha256": "ce7bdac4dc4c3efba4a8c81de275e2120acd1855a53c0843ff65cbcc4b381675",
+        "qaBuiltAt": "2026-08-10T03:41:54.287Z"
+      }
     },
     {
       "slug": "healthcare-diagnostics-sales-support",
