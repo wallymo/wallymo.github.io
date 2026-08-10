@@ -343,6 +343,7 @@
   },
   "resume": {
     "foundationId": "wally-mostafa-resume-2026-07-03",
+    "foundationVersion": 3,
     "compositionMode": "foundation-complete",
     "layoutDensity": "compact",
     "portfolioLinkLabel": "AI Showcase",
@@ -444,14 +445,14 @@
       ],
       "kinesso": [
         "kinesso-01",
-        "addition:converteo-kinesso-employee-growth-workflows",
+        "kinesso-05",
+        "kinesso-06",
         "kinesso-02",
-        "addition:converteo-ux-research-practice",
-        "addition:converteo-kinesso-workshops",
-        "addition:converteo-kanvas-api-library",
-        "addition:converteo-accessibility-innovation-challenge",
+        "kinesso-04",
+        "kinesso-07",
+        "kinesso-08",
         "kinesso-03",
-        "kinesso-04"
+        "kinesso-09"
       ],
       "omnicom": [
         "omnicom-01",
@@ -548,8 +549,8 @@
   },
   "qa": {
     "status": "qa-passed",
-    "builtAt": "2026-08-10T02:02:10.210Z",
-    "configInputSha256": "4d752c147bd6add95e342959cadefc57289ac34f81d791e20375c508389a6aac",
+    "builtAt": "2026-08-10T02:44:45.424Z",
+    "configInputSha256": "570b56f4a609e65a6f7f03b79e7a68eeb14b55a01c962e291ecdb249ba651b44",
     "sourceResumeSha256": "2265313e78b596a2b37d6d8f9a95081e4321b4047f142a5f0ddf22449cab4b9c",
     "resumeFoundation": {
       "id": "wally-mostafa-resume-2026-07-03",
@@ -571,7 +572,7 @@
     },
     "artifactHashes": {
       "routeSha256": "464eb9d55e3e65df903cac59c8da9bbd4f0c85bcd8fe074c63db162529ab2be7",
-      "resumePdfSha256": "a2f55a18c2e3d9a0dcdecd27d68fecf1b45c078f8b9d505bae5a40cdb3e03b1d",
+      "resumePdfSha256": "0b8af0bd31686d3a1941e80ae97bee1498fc738523ac60df972d857b3cb9b3f3",
       "coverLetterPdfSha256": null,
       "coverLetterMarkdownSha256": null,
       "scopedProjectSha256": {
