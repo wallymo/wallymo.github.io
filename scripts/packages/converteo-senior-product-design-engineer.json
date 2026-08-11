@@ -556,7 +556,7 @@
   },
   "qa": {
     "status": "qa-passed",
-    "builtAt": "2026-08-11T19:52:17.040Z",
+    "builtAt": "2026-08-11T19:58:03.276Z",
     "configInputSha256": "42d2b698f2237ccee80b9738d899c3c84358a72906418ff86d18aeaac919ef31",
     "sourceResumeSha256": "2265313e78b596a2b37d6d8f9a95081e4321b4047f142a5f0ddf22449cab4b9c",
     "resumeFoundation": {
@@ -579,7 +579,7 @@
     },
     "artifactHashes": {
       "routeSha256": "ccf590347a26778f4da4a2d141f5dc3da318883c7391a4cea0df5599f93ba75d",
-      "resumePdfSha256": "666ebc7a9c5e09d870cba5bd8882e0a21843747129e810ab67687273ec5daf33",
+      "resumePdfSha256": "183438cafd5874d1af31679b54231964d0c277dda3691249db620a74ac033cbe",
       "coverLetterPdfSha256": null,
       "coverLetterMarkdownSha256": null,
       "scopedProjectSha256": {
@@ -589,8 +589,8 @@
         "project-06.html": "898778ac0fa78563b61c3ae48e10a0606f436eeab93258e250bff8a2be5b43a8"
       },
       "scopedProjectAssetSha256": {
-        "assets/imagery/converteo/dxa/dxa-questionnaire-prada.png": "9040cda502d84c3caab686ff71bd142af4bc31fb4f4c0edb44dc5d7982b51902",
-        "assets/imagery/converteo/dxa/dxa-results-prada.png": "0307f3faeb4d1e45bcce978b78d11250848d984a74ed5ed07ed46964f5c8efa3"
+        "assets/imagery/converteo/dxa/dxa-questionnaire-prada.png": "bf883b47c3dde163300ea7adeeeb883b30017343fc4190bb8b0e598919f4a381",
+        "assets/imagery/converteo/dxa/dxa-results-prada.png": "b2c8fd6c54427d05e7f110d8e51469c59cf108aa6e18381c055617463fa22113"
       }
     },
     "renderer": {

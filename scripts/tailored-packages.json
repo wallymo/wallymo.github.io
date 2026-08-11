@@ -911,42 +911,9 @@
         "project-06.html"
       ],
       "resumePdfPath": "output/pdf/Wally-Mostafa-Converteo-Senior-Product-Design-Engineer-Resume.pdf",
-      "publishStatus": "live-verified",
+      "publishStatus": "local-only",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-08-11T19:52:17.040Z",
-      "verification": {
-        "verifiedAt": "2026-08-11T19:53:22.969Z",
-        "routeUrl": "https://wallymo.github.io/converteo-senior-product-design-engineer/",
-        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-Converteo-Senior-Product-Design-Engineer-Resume.pdf",
-        "configUrl": "https://wallymo.github.io/scripts/packages/converteo-senior-product-design-engineer.json",
-        "projectUrls": [
-          "https://wallymo.github.io/converteo-senior-product-design-engineer/project-01.html",
-          "https://wallymo.github.io/converteo-senior-product-design-engineer/project-02.html",
-          "https://wallymo.github.io/converteo-senior-product-design-engineer/project-08.html",
-          "https://wallymo.github.io/converteo-senior-product-design-engineer/project-06.html"
-        ],
-        "configSha256": "42965cca77903ad1b7fcf8ef16d4e3d5fc04b993ac7342c552f0bcc4c1676939",
-        "pdfSha256": "666ebc7a9c5e09d870cba5bd8882e0a21843747129e810ab67687273ec5daf33",
-        "resumeBaseProfilesUrl": "https://wallymo.github.io/scripts/resume-base-profiles.json",
-        "resumeBaseProfilesSha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108",
-        "routeSha256": "ccf590347a26778f4da4a2d141f5dc3da318883c7391a4cea0df5599f93ba75d",
-        "scopedProjectSha256": {
-          "project-01.html": "66e0907d0ed0afefc7186f737c2c848b49438a0b70928711701fc3bb360e4498",
-          "project-02.html": "7089c93d7c21085402039f46eb4d4303d3f01fd8e0c2722cdb7addd392d852b0",
-          "project-08.html": "aee1fc580d340226da9e29f85f0b98474c607cbf1e150efe32fa3095c27a62ba",
-          "project-06.html": "898778ac0fa78563b61c3ae48e10a0606f436eeab93258e250bff8a2be5b43a8"
-        },
-        "scopedProjectAssetUrls": [
-          "https://wallymo.github.io/assets/imagery/converteo/dxa/dxa-questionnaire-prada.png",
-          "https://wallymo.github.io/assets/imagery/converteo/dxa/dxa-results-prada.png"
-        ],
-        "scopedProjectAssetSha256": {
-          "assets/imagery/converteo/dxa/dxa-questionnaire-prada.png": "9040cda502d84c3caab686ff71bd142af4bc31fb4f4c0edb44dc5d7982b51902",
-          "assets/imagery/converteo/dxa/dxa-results-prada.png": "0307f3faeb4d1e45bcce978b78d11250848d984a74ed5ed07ed46964f5c8efa3"
-        },
-        "configInputSha256": "42d2b698f2237ccee80b9738d899c3c84358a72906418ff86d18aeaac919ef31",
-        "qaBuiltAt": "2026-08-11T19:52:17.040Z"
-      }
+      "builtAt": "2026-08-11T19:58:03.276Z"
     },
     {
       "workflowVersion": 2,
