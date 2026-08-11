@@ -294,7 +294,7 @@
       "confidence": "explicit",
       "evidenceStatus": "direct",
       "evidence": [
-        "The resume documents client briefs, status reporting, strategic recommendations, workshops, roadshows, demos, and presentation-ready outputs.",
+        "The resume documents client briefs, status reporting, strategic recommendations, workshops, roadshows, demos, and client-ready outputs.",
         "Client and executive communication spans agency accounts, enterprise products, investor-facing POCs, and international stakeholder work."
       ],
       "proofIds": [
@@ -309,7 +309,7 @@
       ],
       "resumeTerms": [
         "client status",
-        "presentation-ready"
+        "client-ready outputs"
       ],
       "matchMode": "recognized-equivalent"
     },
@@ -383,7 +383,7 @@
     "employerNeed": "Steward client relationships, guide strategic decisions, translate opportunities into scoped work, and keep multidisciplinary teams aligned on strategy, budget, and timing.",
     "bridgeType": "level-transfer",
     "applicationStrategy": "transferable",
-    "bridgeThesis": "agency account leadership strengthened by later strategy, team, and technology delivery",
+    "bridgeThesis": "agency account leadership with broader delivery experience",
     "proofIds": [
       "account-management-02",
       "account-management-03",
@@ -414,13 +414,12 @@
     "foundationId": "wally-mostafa-resume-2026-07-03",
     "compositionMode": "profile-complete",
     "layoutDensity": "compact",
-    "summary": "Client strategy leader with eight years in agency account management. I bring agency account leadership strengthened by later strategy, team, and technology delivery. I managed Fortune 500 relationships and budgets up to $20M, owned client status and financial reporting, and guided brand planning, briefs, scopes, timelines, and multichannel programs. My later UX, analytics, and AI work taught me how to guide multidisciplinary teams through complex decisions and into practical plans.",
+    "summary": "Client strategy leader with eight years in agency account management. I bring agency account leadership with broader delivery experience across strategy, teams, and technology. I managed Fortune 500 relationships and budgets up to $20M, owned client status and financial reporting, and guided brand planning, scopes, timelines, and multichannel programs. My later UX, analytics, and AI work turns complex decisions into practical plans.",
     "skillIds": [
       "account-management-client-leadership",
       "program-project-delivery",
       "consultative-sales-solution-delivery",
-      "research-experience-strategy",
-      "product-strategy-poc-delivery"
+      "research-experience-strategy"
     ],
     "skills": [
       {
@@ -438,10 +437,6 @@
       {
         "label": "Research & Experience Strategy",
         "description": "Stakeholder interviews, competitive audits, journey maps, user flows, wireframes, prototypes, usability testing, and research-led product direction"
-      },
-      {
-        "label": "Product Strategy & POC Delivery",
-        "description": "Discovery, scoping, requirements, prototype validation, demo narratives, build-ready logic, and production handoff"
       }
     ],
     "experienceSections": [
@@ -467,19 +462,6 @@
         "label": "Indigo Awards 2023",
         "detail": "Design System & Data Visualization: 3x Gold, 2x Silver",
         "href": "https://www.indigoaward.com/winners/6748"
-      },
-      {
-        "label": "Red Dot Awards 2021",
-        "detail": "Brands & Communication Design",
-        "href": "https://www.red-dot.org/project/dxa-digital-experience-audit-55219"
-      },
-      {
-        "label": "Manny Award 2013",
-        "detail": "Best Unbranded Campaign, \"Get Your Shift Together\""
-      },
-      {
-        "label": "Pharma Choice Awards 2011",
-        "detail": "Silver Consumer Print, Silver HCP Sales Aid, Bronze HCP Mobile Site"
       }
     ],
     "roles": {
@@ -497,9 +479,12 @@
         "Currently building the website and sponsor strategy for a Tunisia youth soccer program, positioning the project for player advancement, community support, and donor outreach"
       ],
       "kinesso": [
-        "Scaled product design from 2 to 30 people across the US and Poland for enterprise analytics used by 7,000+ users across 22 white-label brands",
-        "Led UX and design-system strategy for MIE data visualization, dashboard building, brand theming, and reusable analytics components",
-        "Built the Digital Experience Audit workflow for channel scoring, benchmarks, recommendations, visualization, and presentation-ready client outputs"
+        "Scaled product design from 2 to 30 across the US and Poland, with responsibility for hiring, staffing, scope, resource planning, quality reviews, and engineering handoff",
+        "Built Kinesso's first UX research practice across 20+ products, with interviews, testing, analytics, and UX checkpoints",
+        "Led UX research and strategy for a marketing intelligence suite used by 7,000+ people across 22 white-label brands, using findings and adoption data to set roadmap and product-support priorities",
+        "Helped shape and govern a design system with 500 components, 140 styles, 300 icons, and 50 personas, including accessibility and design-quality standards; the work earned 5 Indigo Gold, 4 Indigo Silver, and Red Dot recognition",
+        "UX lead for research and design on Kanvas, Kinesso's developer-first API services library; partnered with product and engineering on roadmap priorities and with C-suite stakeholders on monetization and go-to-market planning",
+        "Helped build the Digital Experience Audit platform, turning channel scores, benchmarks, and recommendations into a repeatable workflow with data visualization and client-ready outputs"
       ],
       "omnicom": [
         "Supported oncology accounts as a freelance UX designer, combining UX design and account-management experience to strengthen regulated healthcare work"
@@ -590,7 +575,10 @@
       ],
       "kinesso": [
         "kinesso-01",
+        "kinesso-06",
         "kinesso-02",
+        "kinesso-04",
+        "kinesso-08",
         "kinesso-03"
       ],
       "omnicom": [
@@ -642,8 +630,8 @@
     "humanizerVersion": "2.2.0",
     "mode": "surface-only",
     "status": "passed",
-    "reviewedAt": "2026-08-11T15:29:13.410Z",
-    "copySha256": "03b52293985fb864490c9f031d01b6e2d80935d7aae5c86792a8be633136e96b",
+    "reviewedAt": "2026-08-11T15:44:03.515Z",
+    "copySha256": "7cc3dc794a94f1005dfa4a532c624e0f2fa4c080393d55db901562e907902897",
     "preserved": [
       "content",
       "structure",
@@ -687,8 +675,8 @@
   },
   "qa": {
     "status": "qa-passed",
-    "builtAt": "2026-08-11T15:29:23.875Z",
-    "configInputSha256": "a6058803e6edddcd5b9eaf52f38201bf07443d0f9ed444b8a5a88381a5bd2bdf",
+    "builtAt": "2026-08-11T15:44:14.039Z",
+    "configInputSha256": "254d4e4449ec3c861836ea59766b5b7b58c1baa9fe6f01aa382689a2b8dadfc0",
     "sourceResumeSha256": "2265313e78b596a2b37d6d8f9a95081e4321b4047f142a5f0ddf22449cab4b9c",
     "resumeFoundation": {
       "id": "wally-mostafa-resume-2026-07-03",
@@ -710,8 +698,8 @@
     },
     "artifactHashes": {
       "routeSha256": "eaa7d082ef06ec149f2428bb5e00563d3412f0df384607c030e1fda43f196277",
-      "resumePdfSha256": "908efd5314eaf664a857ed8676feba953cfdd24f830989464fd490dffd572c2b",
-      "coverLetterPdfSha256": "866e486c8a7efa607fb3ed013fe462679b3771ea5de5512ba0040674c4afaaae",
+      "resumePdfSha256": "b6ea3be0d8548284a4d882da9fdfb8cbdf1bc017d0eff692d512619b9a224607",
+      "coverLetterPdfSha256": "0825df9309d4800afc22d700cc45a19bf8964b41afb67ae626412275e83ec033",
       "coverLetterMarkdownSha256": "ca825992dad036d7ae06c66f7eadb73d6ee3d0749621b675361aa2f5b35820aa",
       "scopedProjectSha256": {
         "project-06.html": "0068ed64b08237421e6da59d4e2cebcaee27b20dbf51dc5570af3078707979b2",
@@ -760,7 +748,7 @@
       "ok": true,
       "pdfPath": "output/pdf/Wally-Mostafa-OX-Associate-Director-Client-Strategy-Resume.pdf",
       "pageCount": 2,
-      "fileSize": 83244,
+      "fileSize": 82297,
       "annotations": [
         {
           "page": 1,
@@ -777,10 +765,6 @@
         {
           "page": 2,
           "uri": "https://www.indigoaward.com/winners/6748"
-        },
-        {
-          "page": 2,
-          "uri": "https://www.red-dot.org/project/dxa-digital-experience-audit-55219"
         }
       ],
       "fontCompatibility": {
@@ -913,7 +897,7 @@
           "status": "covered-directly",
           "matchedTerms": [
             "client status",
-            "presentation-ready"
+            "client-ready outputs"
           ],
           "missingTerms": []
         },
@@ -937,8 +921,8 @@
       "status": "passed",
       "version": "2.2.0",
       "mode": "surface-only",
-      "reviewedAt": "2026-08-11T15:29:13.410Z",
-      "copySha256": "03b52293985fb864490c9f031d01b6e2d80935d7aae5c86792a8be633136e96b",
+      "reviewedAt": "2026-08-11T15:44:03.515Z",
+      "copySha256": "7cc3dc794a94f1005dfa4a532c624e0f2fa4c080393d55db901562e907902897",
       "reviewMethod": "humanizer-skill",
       "semanticPassAttested": true,
       "staticChecksPassed": true
