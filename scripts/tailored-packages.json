@@ -2645,6 +2645,42 @@
     },
     {
       "workflowVersion": 2,
+      "contractRevision": 7,
+      "slug": "ox-associate-director-client-strategy",
+      "roleTitle": "OX Associate Director, Client Strategy",
+      "artifactStem": "OX-Associate-Director-Client-Strategy",
+      "configPath": "scripts/packages/ox-associate-director-client-strategy.json",
+      "targetLane": "client-account-delivery",
+      "evidenceMode": "resume-primary",
+      "fitClass": "adjacent",
+      "positioningLane": "client-account-delivery",
+      "bridgeType": "level-transfer",
+      "applicationStrategy": "transferable",
+      "resumeBaseMode": "account-leadership",
+      "resumeBaseLeadProfile": "account-leadership",
+      "resumeBaseAction": "tailor-to-jd",
+      "accountPresentation": "agency-progression",
+      "resumeBaseProfiles": [
+        {
+          "id": "account-leadership",
+          "version": 1
+        }
+      ],
+      "routeMode": "scoped-projects",
+      "selectedProjects": [
+        "project-06.html",
+        "project-02.html",
+        "project-03.html"
+      ],
+      "resumePdfPath": "output/pdf/Wally-Mostafa-OX-Associate-Director-Client-Strategy-Resume.pdf",
+      "coverLetterPdfPath": "output/pdf/Wally-Mostafa-OX-Associate-Director-Client-Strategy-Cover-Letter.pdf",
+      "coverLetterMarkdownPath": "output/pdf/Wally-Mostafa-OX-Associate-Director-Client-Strategy-Cover-Letter.md",
+      "publishStatus": "local-only",
+      "qaStatus": "qa-passed",
+      "builtAt": "2026-08-11T15:29:23.875Z"
+    },
+    {
+      "workflowVersion": 2,
       "slug": "ox-director-user-experience",
       "roleTitle": "OX Director, User Experience",
       "artifactStem": "OX-Director-User-Experience",
