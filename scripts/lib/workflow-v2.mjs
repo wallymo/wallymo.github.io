@@ -2351,6 +2351,43 @@ export function validateV2Config(
           }
         }
       }
+      const projectStatRemovals = route.projectStatRemovals;
+      pushError(
+        errors,
+        projectStatRemovals === undefined ||
+          (projectStatRemovals &&
+            typeof projectStatRemovals === 'object' &&
+            !Array.isArray(projectStatRemovals)),
+        'route.projectStatRemovals must be an object when present'
+      );
+      if (
+        projectStatRemovals &&
+        typeof projectStatRemovals === 'object' &&
+        !Array.isArray(projectStatRemovals)
+      ) {
+        pushError(
+          errors,
+          config.routeMode === 'scoped-projects',
+          'route.projectStatRemovals requires routeMode scoped-projects'
+        );
+        for (const [project, removals] of Object.entries(
+          projectStatRemovals
+        )) {
+          pushError(
+            errors,
+            config.selectedProjects?.includes(project),
+            `route.projectStatRemovals references an unselected project: ${project}`
+          );
+          pushError(
+            errors,
+            Array.isArray(removals) &&
+              removals.length > 0 &&
+              removals.every(isNonEmptyString) &&
+              new Set(removals).size === removals.length,
+            `route.projectStatRemovals.${project} must be a non-empty array of unique strings`
+          );
+        }
+      }
     }
   }
   if (requireCurrentContract) {

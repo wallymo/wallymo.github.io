@@ -365,6 +365,51 @@ function applyScopedProjectAssetOverrides(html, project, config) {
   );
 }
 
+function applyScopedProjectStatRemovals(html, project, config) {
+  const removals = config.route?.projectStatRemovals?.[project];
+  if (!removals) return html;
+
+  const pending = new Set(removals);
+  const statPattern =
+    /\s*<div class="stat">\s*<span class="stat-number">([^<]+)<\/span>\s*<span class="stat-label">([^<]+)<\/span>\s*<\/div>/g;
+  const updatedHtml = html.replace(
+    statPattern,
+    (statHtml, statNumber, statLabel) => {
+      const statKey = `${statNumber.trim()} / ${statLabel.trim()}`;
+      if (!pending.has(statKey)) return statHtml;
+      pending.delete(statKey);
+      return '';
+    }
+  );
+  if (pending.size) {
+    throw new Error(
+      `Could not find scoped stat removal in ${project}: ${[
+        ...pending,
+      ].join(', ')}`
+    );
+  }
+  if (!updatedHtml.includes('<div class="stats-bar">')) {
+    throw new Error(`Could not find stats bar to center in ${project}`);
+  }
+  const centeredHtml = updatedHtml.replace(
+    '<div class="stats-bar">',
+    '<div class="stats-bar stats-bar--centered">'
+  );
+  return centeredHtml.replace(
+    '</head>',
+    [
+      '<style data-scoped-stat-removals>',
+      '  .stats-bar--centered { justify-content: center; text-align: center; }',
+      '  .stats-bar--centered .stat { align-items: center; }',
+      '  @media (max-width: 760px) {',
+      '    .stats-bar--centered .stat:last-child:nth-child(odd) { grid-column: 1 / -1; }',
+      '  }',
+      '</style>',
+      '</head>',
+    ].join('\n')
+  );
+}
+
 function setRouteLocalProjectNumber(html, routeLocalNumber, project) {
   const numberPattern =
     /<div class="project-number">\s*[^<]+?\s*<\/div>/;
@@ -435,7 +480,11 @@ function buildScopedProjectHtml(project, config, paths, index, titlesByProject) 
     .replace(/\bhref="index\.html#work"/g, 'href="index.html#work"');
   const scopedHtml = setRouteLocalProjectNumber(
     applyScopedProjectAssetOverrides(
-      stripLegacyRouteQueryShim(scopedHtmlWithRefs, project),
+      applyScopedProjectStatRemovals(
+        stripLegacyRouteQueryShim(scopedHtmlWithRefs, project),
+        project,
+        config
+      ),
       project,
       config
     ),

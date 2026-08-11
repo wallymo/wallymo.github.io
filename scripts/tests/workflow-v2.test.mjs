@@ -3606,6 +3606,9 @@ test(
             'assets/ux-wally/dxa-questionnaire.png',
         },
       };
+      config.route.projectStatRemovals = {
+        'project-06.html': ['DXA / Audit platform'],
+      };
       assert.deepEqual(schemaErrors(config), []);
       writeFileSync(configPath, `${JSON.stringify(config, null, 2)}\n`);
       const canonicalProjectPath = path.join(tempRoot, 'project-06.html');
@@ -3689,6 +3692,20 @@ test(
           assert.match(
             html,
             /src="\.\.\/assets\/ux-wally\/dxa-questionnaire\.png"/
+          );
+          assert.doesNotMatch(html, /<span class="stat-number">DXA<\/span>/);
+          assert.doesNotMatch(
+            html,
+            /<span class="stat-label">Audit platform<\/span>/
+          );
+          assert.equal((html.match(/<div class="stat">/g) || []).length, 3);
+          assert.match(
+            html,
+            /<div class="stats-bar stats-bar--centered">/
+          );
+          assert.match(
+            html,
+            /\.stats-bar--centered \.stat:last-child:nth-child\(odd\) \{ grid-column: 1 \/ -1; \}/
           );
         }
       }
