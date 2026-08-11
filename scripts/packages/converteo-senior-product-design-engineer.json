@@ -487,6 +487,13 @@
       "project-06.html": [
         "DXA / Audit platform"
       ]
+    },
+    "projectVideoInsertions": {
+      "project-06.html": {
+        "src": "assets/video/converteo/dxa/dxa-awards-video.mp4",
+        "poster": "assets/imagery/converteo/dxa/dxa-awards-video-poster.jpg",
+        "placement": "inside-section-before-pullquote"
+      }
     }
   },
   "hero": {
@@ -561,8 +568,8 @@
   },
   "qa": {
     "status": "qa-passed",
-    "builtAt": "2026-08-11T23:32:34.612Z",
-    "configInputSha256": "2b84683adecbf777b3f91304fe810db00bc605610e8f14b1389d9f4b1da315b9",
+    "builtAt": "2026-08-11T23:58:22.137Z",
+    "configInputSha256": "02390b566cdf75437610067a68f482d8159af70cfed4c787fa7b4d382c1954c3",
     "sourceResumeSha256": "2265313e78b596a2b37d6d8f9a95081e4321b4047f142a5f0ddf22449cab4b9c",
     "resumeFoundation": {
       "id": "wally-mostafa-resume-2026-07-03",
@@ -584,18 +591,20 @@
     },
     "artifactHashes": {
       "routeSha256": "ccf590347a26778f4da4a2d141f5dc3da318883c7391a4cea0df5599f93ba75d",
-      "resumePdfSha256": "bd52ccaa81337c6a604f33a56cdecee51e10be0a2f5945a2c92f4e2904eb4ac8",
+      "resumePdfSha256": "13b8b3fa077054f6d734eab560e85129ca3b7c73f8d9c781969d56c148f148eb",
       "coverLetterPdfSha256": null,
       "coverLetterMarkdownSha256": null,
       "scopedProjectSha256": {
         "project-01.html": "66e0907d0ed0afefc7186f737c2c848b49438a0b70928711701fc3bb360e4498",
         "project-02.html": "7089c93d7c21085402039f46eb4d4303d3f01fd8e0c2722cdb7addd392d852b0",
         "project-08.html": "aee1fc580d340226da9e29f85f0b98474c607cbf1e150efe32fa3095c27a62ba",
-        "project-06.html": "40b09161553d7c0abbdd2a0d14c5eec2b8093a62875bb0ff6aed34039434c602"
+        "project-06.html": "f11f1979153201f7d154d478dda09b3352e632945a31e0e09c8d4f83e374e35c"
       },
       "scopedProjectAssetSha256": {
+        "assets/imagery/converteo/dxa/dxa-awards-video-poster.jpg": "f2238fd49c82d0392f57154bdac0a5ef1876c9cb948afcfe6d03d64c3fe6b8e0",
         "assets/imagery/converteo/dxa/dxa-questionnaire-prada.png": "3745f77df97bf7ad3fe874028d7f433ed2cd0d7d1a08d25a9feb905c1435bce5",
-        "assets/imagery/converteo/dxa/dxa-results-prada.png": "b2c8fd6c54427d05e7f110d8e51469c59cf108aa6e18381c055617463fa22113"
+        "assets/imagery/converteo/dxa/dxa-results-prada.png": "b2c8fd6c54427d05e7f110d8e51469c59cf108aa6e18381c055617463fa22113",
+        "assets/video/converteo/dxa/dxa-awards-video.mp4": "582e0a0fca9ef6aa65b726448c7396060280ef8c86eb0395c3c7c9ff297984e6"
       }
     },
     "renderer": {

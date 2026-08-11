@@ -24,6 +24,19 @@
     .stats-bar--centered .stat:last-child:nth-child(odd) { grid-column: 1 / -1; }
   }
 </style>
+<style data-scoped-project-video>
+  .scoped-project-video { margin-top: var(--space-xl); }
+  .scoped-project-video video {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: var(--radius-l);
+    background: #000;
+    box-shadow: 0 24px 58px rgba(0, 0, 0, 0.3);
+  }
+</style>
 </head>
 <body>
 
@@ -157,6 +170,12 @@
       <li><strong>Indigo 2022</strong><span>Five wins: 2x Gold, 2x Silver, and 1x Bronze across digital design, tools, interaction, interface, and navigation categories.</span></li>
       <li><strong>Awards video</strong><span>I wrote and directed the awards submission video that helped explain the product story.</span></li>
     </ul>
+  </div>
+  <div class="inner scoped-project-video" data-reveal>
+    <video controls preload="metadata" playsinline aria-label="Awards submission video" poster="../assets/imagery/converteo/dxa/dxa-awards-video-poster.jpg">
+      <source src="../assets/video/converteo/dxa/dxa-awards-video.mp4" type="video/mp4">
+      Your browser does not support HTML video.
+    </video>
   </div>
 </section>
 
