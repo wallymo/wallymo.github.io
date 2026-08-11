@@ -12,6 +12,7 @@ import {
   readJson,
   readManifest,
   resolveRepoPath,
+  scopedProjectReplacementAssets,
   sha256,
   writeJson,
 } from './lib/workflow-v2.mjs';
@@ -34,6 +35,7 @@ function scopedPaths(pkg, config, paths) {
     ...(config.routeMode === 'scoped-projects'
       ? config.selectedProjects.map((project) => `${paths.slug}/${project}`)
       : []),
+    ...scopedProjectReplacementAssets(config),
   ];
 }
 
@@ -88,6 +90,10 @@ export async function fetchPublishedArtifacts(
       ? `${base}${project}`
       : `${base}${paths.slug}/${project}`
   );
+  const replacementAssets = scopedProjectReplacementAssets(config);
+  const scopedProjectAssetUrls = replacementAssets.map(
+    (assetPath) => `${base}${assetPath}`
+  );
 
   const routeResponse = await fetchLive(routeUrl);
   const liveRoute = Buffer.from(await routeResponse.arrayBuffer());
@@ -136,6 +142,19 @@ export async function fetchPublishedArtifacts(
         liveProject
       );
     }
+  }
+
+  const scopedProjectAssetSha256 = {};
+  for (const [assetIndex, assetUrl] of scopedProjectAssetUrls.entries()) {
+    const assetPath = replacementAssets[assetIndex];
+    const assetResponse = await fetchLive(assetUrl);
+    const liveAsset = Buffer.from(await assetResponse.arrayBuffer());
+    const localAsset = readFileSync(resolveRepoPath(assetPath));
+    scopedProjectAssetSha256[assetPath] = assertChecksum(
+      `Scoped project replacement asset ${assetPath}`,
+      localAsset,
+      liveAsset
+    );
   }
 
   const pdfResponse = await fetchLive(resumePdfUrl);
@@ -195,6 +214,8 @@ export async function fetchPublishedArtifacts(
       : {}),
     routeSha256,
     scopedProjectSha256,
+    scopedProjectAssetUrls,
+    scopedProjectAssetSha256,
   };
 }
 

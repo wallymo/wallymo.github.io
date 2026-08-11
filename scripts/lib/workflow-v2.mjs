@@ -122,6 +122,16 @@ export function getRoutePresentation(config) {
     : 'full';
 }
 
+export function scopedProjectReplacementAssets(config) {
+  return [
+    ...new Set(
+      Object.values(config?.route?.projectAssetOverrides || {}).flatMap(
+        (overrides) => Object.values(overrides || {})
+      )
+    ),
+  ].sort();
+}
+
 export function resumeRoleSubEntries(resume, roleId) {
   const roleValue = resume?.roles?.[roleId];
   const isSubEntry = (value) =>
@@ -2282,6 +2292,65 @@ export function validateV2Config(
           isNonEmptyString(route.contactHeading),
         'route.contactHeading must be a non-empty string when present'
       );
+      const projectAssetOverrides = route.projectAssetOverrides;
+      pushError(
+        errors,
+        projectAssetOverrides === undefined ||
+          (projectAssetOverrides &&
+            typeof projectAssetOverrides === 'object' &&
+            !Array.isArray(projectAssetOverrides)),
+        'route.projectAssetOverrides must be an object when present'
+      );
+      if (
+        projectAssetOverrides &&
+        typeof projectAssetOverrides === 'object' &&
+        !Array.isArray(projectAssetOverrides)
+      ) {
+        pushError(
+          errors,
+          config.routeMode === 'scoped-projects',
+          'route.projectAssetOverrides requires routeMode scoped-projects'
+        );
+        for (const [project, overrides] of Object.entries(
+          projectAssetOverrides
+        )) {
+          pushError(
+            errors,
+            config.selectedProjects?.includes(project),
+            `route.projectAssetOverrides references an unselected project: ${project}`
+          );
+          pushError(
+            errors,
+            overrides &&
+              typeof overrides === 'object' &&
+              !Array.isArray(overrides) &&
+              Object.keys(overrides).length > 0,
+            `route.projectAssetOverrides.${project} must be a non-empty object`
+          );
+          if (
+            overrides &&
+            typeof overrides === 'object' &&
+            !Array.isArray(overrides)
+          ) {
+            for (const [sourceAsset, replacementAsset] of Object.entries(
+              overrides
+            )) {
+              pushError(
+                errors,
+                /^assets\/[^\s]+$/.test(sourceAsset) &&
+                  !sourceAsset.split('/').includes('..'),
+                `invalid scoped project source asset: ${sourceAsset}`
+              );
+              pushError(
+                errors,
+                /^assets\/[^\s]+$/.test(replacementAsset) &&
+                  !replacementAsset.split('/').includes('..'),
+                `invalid scoped project replacement asset: ${replacementAsset}`
+              );
+            }
+          }
+        }
+      }
     }
   }
   if (requireCurrentContract) {

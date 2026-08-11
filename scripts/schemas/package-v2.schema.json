@@ -522,7 +522,23 @@
         "heroIntent": { "const": "resume-support" },
         "projectCardStats": { "enum": ["visible", "hidden"] },
         "workHeading": { "type": "string", "minLength": 1 },
-        "contactHeading": { "type": "string", "minLength": 1 }
+        "contactHeading": { "type": "string", "minLength": 1 },
+        "projectAssetOverrides": {
+          "type": "object",
+          "minProperties": 1,
+          "propertyNames": { "pattern": "^project-\\d+\\.html$" },
+          "additionalProperties": {
+            "type": "object",
+            "minProperties": 1,
+            "propertyNames": {
+              "pattern": "^assets/(?!\\.\\.(?:/|$))(?!.*?/\\.\\.(?:/|$))\\S+$"
+            },
+            "additionalProperties": {
+              "type": "string",
+              "pattern": "^assets/(?!\\.\\.(?:/|$))(?!.*?/\\.\\.(?:/|$))\\S+$"
+            }
+          }
+        }
       },
       "additionalProperties": false
     },

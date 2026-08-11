@@ -35,6 +35,7 @@ import {
   replacePortfolioLink,
   resolveRepoPath,
   resumeRoleSubEntries,
+  scopedProjectReplacementAssets,
   sha256File,
   slugify,
   upsertV2ManifestEntry,
@@ -328,6 +329,42 @@ function buildRouteLocalNextProject(project, config, titlesByProject) {
   ].join('\n');
 }
 
+function applyScopedProjectAssetOverrides(html, project, config) {
+  const overrides = config.route?.projectAssetOverrides?.[project];
+  if (!overrides) return html;
+
+  const referenceBoundary = "(?=$|[\"'?#\\s),>])";
+  const escapePattern = (reference) =>
+    reference.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+
+  const replacements = new Map(
+    Object.entries(overrides).map(([sourceAsset, replacementAsset]) => [
+      `../${sourceAsset}`,
+      `../${replacementAsset}`,
+    ])
+  );
+  for (const sourceReference of replacements.keys()) {
+    const sourcePattern = new RegExp(
+      `${escapePattern(sourceReference)}${referenceBoundary}`
+    );
+    if (!sourcePattern.test(html)) {
+      throw new Error(
+        `Could not find scoped asset override source in ${project}: ${sourceReference.slice(3)}`
+      );
+    }
+  }
+  const referencePattern = new RegExp(
+    [...replacements.keys()]
+      .sort((left, right) => right.length - left.length)
+      .map(escapePattern)
+      .join('|') + referenceBoundary,
+    'g'
+  );
+  return html.replace(referencePattern, (reference) =>
+    replacements.get(reference)
+  );
+}
+
 function setRouteLocalProjectNumber(html, routeLocalNumber, project) {
   const numberPattern =
     /<div class="project-number">\s*[^<]+?\s*<\/div>/;
@@ -397,7 +434,11 @@ function buildScopedProjectHtml(project, config, paths, index, titlesByProject) 
     )
     .replace(/\bhref="index\.html#work"/g, 'href="index.html#work"');
   const scopedHtml = setRouteLocalProjectNumber(
-    stripLegacyRouteQueryShim(scopedHtmlWithRefs, project),
+    applyScopedProjectAssetOverrides(
+      stripLegacyRouteQueryShim(scopedHtmlWithRefs, project),
+      project,
+      config
+    ),
     routeLocalNumber,
     project
   );
@@ -866,6 +907,14 @@ export async function buildTailoredPackage({
       throw new Error(`Missing selected project: ${project}`);
     }
   }
+  for (const replacementAsset of scopedProjectReplacementAssets(config)) {
+    const replacementPath = resolveRepoPath(replacementAsset);
+    if (!existsSync(replacementPath) || !statSync(replacementPath).isFile()) {
+      throw new Error(
+        `Missing scoped project replacement asset: ${replacementAsset}`
+      );
+    }
+  }
 
   const manifestBeforeBuild = readManifest();
   const previousPackage = manifestBeforeBuild.packages.find(
@@ -1027,6 +1076,12 @@ export async function buildTailoredPackage({
                 ])
               )
             : {},
+        scopedProjectAssetSha256: Object.fromEntries(
+          scopedProjectReplacementAssets(config).map((assetPath) => [
+            assetPath,
+            sha256File(assetPath),
+          ])
+        ),
       },
       renderer: renderResult,
       coverLetterRenderer: coverLetterRenderResult,

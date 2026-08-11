@@ -39,6 +39,7 @@ import {
 } from '../lib/workflow-v2.mjs';
 import {
   assertChecksum,
+  fetchPublishedArtifacts,
   verifyTailoredRoute,
 } from '../verify-tailored-route.mjs';
 import {
@@ -3586,7 +3587,7 @@ test(
 test(
   'scoped-project v2 packages rewrite nested resources and QA every page',
   { timeout: 180_000 },
-  () => {
+  async () => {
     const { tempRoot, configPath } = createBuildFixture({
       slug: 'scoped-fixture',
       artifactStem: 'Scoped-Fixture',
@@ -3598,6 +3599,40 @@ test(
       ],
     });
     try {
+      const config = JSON.parse(readFileSync(configPath, 'utf8'));
+      config.route.projectAssetOverrides = {
+        'project-06.html': {
+          'assets/ux-wally/dxa-results.png':
+            'assets/ux-wally/dxa-questionnaire.png',
+        },
+      };
+      assert.deepEqual(schemaErrors(config), []);
+      writeFileSync(configPath, `${JSON.stringify(config, null, 2)}\n`);
+      const canonicalProjectPath = path.join(tempRoot, 'project-06.html');
+      const canonicalProjectHtml = readFileSync(canonicalProjectPath, 'utf8');
+      writeFileSync(
+        canonicalProjectPath,
+        canonicalProjectHtml.replace(
+          'assets/ux-wally/dxa-results.png',
+          'assets/ux-wally/dxa-results.png2'
+        )
+      );
+      const prefixCollisionResult = run(
+        ['scripts/build-tailored-package.mjs', '--config', configPath],
+        {
+          env: {
+            ...process.env,
+            WORKFLOW_REPO_ROOT: tempRoot,
+            CHROME_PATH: resolveChromeExecutable(),
+          },
+        }
+      );
+      assert.notEqual(prefixCollisionResult.status, 0);
+      assert.match(
+        `${prefixCollisionResult.stdout}\n${prefixCollisionResult.stderr}`,
+        /Could not find scoped asset override source/
+      );
+      writeFileSync(canonicalProjectPath, canonicalProjectHtml);
       const result = run(
         ['scripts/build-tailored-package.mjs', '--config', configPath],
         {
@@ -3646,6 +3681,16 @@ test(
         assert.ok(projectNavigation);
         assert.equal((projectNavigation.match(/<a\b/g) || []).length, 2);
         assert.doesNotMatch(html, /<div class="label">Next Project<\/div>/);
+        if (project === 'project-06.html') {
+          assert.doesNotMatch(
+            html,
+            /src="\.\.\/assets\/ux-wally\/dxa-results\.png"/
+          );
+          assert.match(
+            html,
+            /src="\.\.\/assets\/ux-wally\/dxa-questionnaire\.png"/
+          );
+        }
       }
       const savedConfig = JSON.parse(readFileSync(configPath, 'utf8'));
       assert.equal(savedConfig.qa.route.errors.length, 0);
@@ -3666,6 +3711,55 @@ test(
         ).length,
         3
       );
+      assert.deepEqual(
+        Object.keys(
+          savedConfig.qa.artifactHashes.scopedProjectAssetSha256
+        ),
+        ['assets/ux-wally/dxa-questionnaire.png']
+      );
+
+      let corruptReplacementAsset = false;
+      const fixtureServer = await startFixtureServer(tempRoot, {
+        transform(relativePath, content) {
+          return corruptReplacementAsset &&
+            relativePath === 'assets/ux-wally/dxa-questionnaire.png'
+            ? Buffer.concat([content, Buffer.from('stale')])
+            : content;
+        },
+      });
+      const previousRepoRoot = process.env.WORKFLOW_REPO_ROOT;
+      process.env.WORKFLOW_REPO_ROOT = tempRoot;
+      try {
+        const manifest = JSON.parse(
+          readFileSync(
+            path.join(tempRoot, 'scripts', 'tailored-packages.json'),
+            'utf8'
+          )
+        );
+        const liveProof = await fetchPublishedArtifacts(
+          manifest.packages[0],
+          savedConfig,
+          { publicBase: fixtureServer.publicBase }
+        );
+        assert.deepEqual(Object.keys(liveProof.scopedProjectAssetSha256), [
+          'assets/ux-wally/dxa-questionnaire.png',
+        ]);
+        corruptReplacementAsset = true;
+        await assert.rejects(
+          () =>
+            fetchPublishedArtifacts(manifest.packages[0], savedConfig, {
+              publicBase: fixtureServer.publicBase,
+            }),
+          /Scoped project replacement asset .* checksum mismatch/
+        );
+      } finally {
+        fixtureServer.server.close();
+        if (previousRepoRoot === undefined) {
+          delete process.env.WORKFLOW_REPO_ROOT;
+        } else {
+          process.env.WORKFLOW_REPO_ROOT = previousRepoRoot;
+        }
+      }
     } finally {
       rmSync(tempRoot, { recursive: true, force: true });
     }
