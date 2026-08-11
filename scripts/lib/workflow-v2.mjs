@@ -122,12 +122,17 @@ export function getRoutePresentation(config) {
     : 'full';
 }
 
-export function scopedProjectReplacementAssets(config) {
+export function scopedProjectAssets(config) {
   return [
     ...new Set(
-      Object.values(config?.route?.projectAssetOverrides || {}).flatMap(
-        (overrides) => Object.values(overrides || {})
-      )
+      [
+        ...Object.values(config?.route?.projectAssetOverrides || {}).flatMap(
+          (overrides) => Object.values(overrides || {})
+        ),
+        ...Object.values(config?.route?.projectVideoInsertions || {}).flatMap(
+          (video) => [video?.src, video?.poster].filter(Boolean)
+        ),
+      ]
     ),
   ].sort();
 }
@@ -2386,6 +2391,63 @@ export function validateV2Config(
               new Set(removals).size === removals.length,
             `route.projectStatRemovals.${project} must be a non-empty array of unique strings`
           );
+        }
+      }
+      const projectVideoInsertions = route.projectVideoInsertions;
+      pushError(
+        errors,
+        projectVideoInsertions === undefined ||
+          (projectVideoInsertions &&
+            typeof projectVideoInsertions === 'object' &&
+            !Array.isArray(projectVideoInsertions)),
+        'route.projectVideoInsertions must be an object when present'
+      );
+      if (
+        projectVideoInsertions &&
+        typeof projectVideoInsertions === 'object' &&
+        !Array.isArray(projectVideoInsertions)
+      ) {
+        pushError(
+          errors,
+          config.routeMode === 'scoped-projects',
+          'route.projectVideoInsertions requires routeMode scoped-projects'
+        );
+        const isSafeRepoAsset = (assetPath) =>
+          isNonEmptyString(assetPath) &&
+          !assetPath.startsWith('/') &&
+          !assetPath.split('/').includes('..');
+        for (const [project, video] of Object.entries(
+          projectVideoInsertions
+        )) {
+          pushError(
+            errors,
+            config.selectedProjects?.includes(project),
+            `route.projectVideoInsertions references an unselected project: ${project}`
+          );
+          pushError(
+            errors,
+            video && typeof video === 'object' && !Array.isArray(video),
+            `route.projectVideoInsertions.${project} must be an object`
+          );
+          if (video && typeof video === 'object' && !Array.isArray(video)) {
+            pushError(
+              errors,
+              isSafeRepoAsset(video.src) && /\.mp4$/i.test(video.src),
+              `route.projectVideoInsertions.${project}.src must be a safe MP4 path`
+            );
+            pushError(
+              errors,
+              video.poster === undefined ||
+                (isSafeRepoAsset(video.poster) &&
+                  /\.(?:jpe?g|png|webp)$/i.test(video.poster)),
+              `route.projectVideoInsertions.${project}.poster must be a safe image path when present`
+            );
+            pushError(
+              errors,
+              video.placement === 'inside-section-before-pullquote',
+              `route.projectVideoInsertions.${project}.placement must be inside-section-before-pullquote`
+            );
+          }
         }
       }
     }

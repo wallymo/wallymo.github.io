@@ -3609,6 +3609,22 @@ test(
       config.route.projectStatRemovals = {
         'project-06.html': ['DXA / Audit platform'],
       };
+      config.route.projectVideoInsertions = {
+        'project-06.html': {
+          src: 'fixtures/dxa-awards.mp4',
+          poster: 'fixtures/dxa-awards.jpg',
+          placement: 'inside-section-before-pullquote',
+        },
+      };
+      mkdirSync(path.join(tempRoot, 'fixtures'), { recursive: true });
+      writeFileSync(
+        path.join(tempRoot, 'fixtures', 'dxa-awards.mp4'),
+        Buffer.from('fixture-video')
+      );
+      writeFileSync(
+        path.join(tempRoot, 'fixtures', 'dxa-awards.jpg'),
+        Buffer.from('fixture-poster')
+      );
       assert.deepEqual(schemaErrors(config), []);
       writeFileSync(configPath, `${JSON.stringify(config, null, 2)}\n`);
       const canonicalProjectPath = path.join(tempRoot, 'project-06.html');
@@ -3707,6 +3723,19 @@ test(
             html,
             /\.stats-bar--centered \.stat:last-child:nth-child\(odd\) \{ grid-column: 1 \/ -1; \}/
           );
+          assert.match(
+            html,
+            /<video controls preload="metadata" playsinline aria-label="Awards submission video" poster="\.\.\/fixtures\/dxa-awards\.jpg">/
+          );
+          assert.match(
+            html,
+            /<source src="\.\.\/fixtures\/dxa-awards\.mp4" type="video\/mp4">/
+          );
+          assert.match(html, /<style data-scoped-project-video>/);
+          assert.match(
+            html,
+            /<div class="inner scoped-project-video" data-reveal>[\s\S]*?<\/video>\s*<\/div>\s*<\/section>\s*<div class="pullquote">/
+          );
         }
       }
       const savedConfig = JSON.parse(readFileSync(configPath, 'utf8'));
@@ -3732,14 +3761,18 @@ test(
         Object.keys(
           savedConfig.qa.artifactHashes.scopedProjectAssetSha256
         ),
-        ['assets/ux-wally/dxa-questionnaire.png']
+        [
+          'assets/ux-wally/dxa-questionnaire.png',
+          'fixtures/dxa-awards.jpg',
+          'fixtures/dxa-awards.mp4',
+        ]
       );
 
-      let corruptReplacementAsset = false;
+      let corruptScopedAsset = false;
       const fixtureServer = await startFixtureServer(tempRoot, {
         transform(relativePath, content) {
-          return corruptReplacementAsset &&
-            relativePath === 'assets/ux-wally/dxa-questionnaire.png'
+          return corruptScopedAsset &&
+            relativePath === 'fixtures/dxa-awards.mp4'
             ? Buffer.concat([content, Buffer.from('stale')])
             : content;
         },
@@ -3760,14 +3793,16 @@ test(
         );
         assert.deepEqual(Object.keys(liveProof.scopedProjectAssetSha256), [
           'assets/ux-wally/dxa-questionnaire.png',
+          'fixtures/dxa-awards.jpg',
+          'fixtures/dxa-awards.mp4',
         ]);
-        corruptReplacementAsset = true;
+        corruptScopedAsset = true;
         await assert.rejects(
           () =>
             fetchPublishedArtifacts(manifest.packages[0], savedConfig, {
               publicBase: fixtureServer.publicBase,
             }),
-          /Scoped project replacement asset .* checksum mismatch/
+          /Scoped project asset .* checksum mismatch/
         );
       } finally {
         fixtureServer.server.close();

@@ -549,6 +549,27 @@
             "uniqueItems": true,
             "items": { "type": "string", "minLength": 1 }
           }
+        },
+        "projectVideoInsertions": {
+          "type": "object",
+          "minProperties": 1,
+          "propertyNames": { "pattern": "^project-\\d+\\.html$" },
+          "additionalProperties": {
+            "type": "object",
+            "required": ["src", "placement"],
+            "properties": {
+              "src": {
+                "type": "string",
+                "pattern": "^(?!/)(?!.*(?:^|/)\\.\\.(?:/|$))\\S+\\.mp4$"
+              },
+              "poster": {
+                "type": "string",
+                "pattern": "^(?!/)(?!.*(?:^|/)\\.\\.(?:/|$))\\S+\\.(?:jpg|jpeg|png|webp)$"
+              },
+              "placement": { "const": "inside-section-before-pullquote" }
+            },
+            "additionalProperties": false
+          }
         }
       },
       "additionalProperties": false

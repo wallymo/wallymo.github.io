@@ -12,7 +12,7 @@ import {
   readJson,
   readManifest,
   resolveRepoPath,
-  scopedProjectReplacementAssets,
+  scopedProjectAssets,
   sha256,
   writeJson,
 } from './lib/workflow-v2.mjs';
@@ -35,7 +35,7 @@ function scopedPaths(pkg, config, paths) {
     ...(config.routeMode === 'scoped-projects'
       ? config.selectedProjects.map((project) => `${paths.slug}/${project}`)
       : []),
-    ...scopedProjectReplacementAssets(config),
+    ...scopedProjectAssets(config),
   ];
 }
 
@@ -90,7 +90,7 @@ export async function fetchPublishedArtifacts(
       ? `${base}${project}`
       : `${base}${paths.slug}/${project}`
   );
-  const replacementAssets = scopedProjectReplacementAssets(config);
+  const replacementAssets = scopedProjectAssets(config);
   const scopedProjectAssetUrls = replacementAssets.map(
     (assetPath) => `${base}${assetPath}`
   );
@@ -151,7 +151,7 @@ export async function fetchPublishedArtifacts(
     const liveAsset = Buffer.from(await assetResponse.arrayBuffer());
     const localAsset = readFileSync(resolveRepoPath(assetPath));
     scopedProjectAssetSha256[assetPath] = assertChecksum(
-      `Scoped project replacement asset ${assetPath}`,
+      `Scoped project asset ${assetPath}`,
       localAsset,
       liveAsset
     );

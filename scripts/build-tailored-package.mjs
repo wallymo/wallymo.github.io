@@ -35,7 +35,7 @@ import {
   replacePortfolioLink,
   resolveRepoPath,
   resumeRoleSubEntries,
-  scopedProjectReplacementAssets,
+  scopedProjectAssets,
   sha256File,
   slugify,
   upsertV2ManifestEntry,
@@ -410,6 +410,51 @@ function applyScopedProjectStatRemovals(html, project, config) {
   );
 }
 
+function applyScopedProjectVideoInsertion(html, project, config) {
+  const video = config.route?.projectVideoInsertions?.[project];
+  if (!video) return html;
+
+  const pullquoteIndex = html.indexOf('<div class="pullquote">');
+  const sectionCloseIndex = html.lastIndexOf('</section>', pullquoteIndex);
+  if (pullquoteIndex === -1 || sectionCloseIndex === -1) {
+    throw new Error(`Could not place scoped project video in ${project}`);
+  }
+  const posterAttribute = video.poster
+    ? ` poster="../${video.poster}"`
+    : '';
+  const videoMarkup = [
+    '  <div class="inner scoped-project-video" data-reveal>',
+    `    <video controls preload="metadata" playsinline aria-label="Awards submission video"${posterAttribute}>`,
+    `      <source src="../${video.src}" type="video/mp4">`,
+    '      Your browser does not support HTML video.',
+    '    </video>',
+    '  </div>',
+    '',
+  ].join('\n');
+  const withVideo = `${html.slice(0, sectionCloseIndex)}${videoMarkup}${html.slice(
+    sectionCloseIndex
+  )}`;
+  return withVideo.replace(
+    '</head>',
+    [
+      '<style data-scoped-project-video>',
+      '  .scoped-project-video { margin-top: var(--space-xl); }',
+      '  .scoped-project-video video {',
+      '    display: block;',
+      '    width: 100%;',
+      '    height: auto;',
+      '    aspect-ratio: 16 / 9;',
+      '    border: 1px solid rgba(255, 255, 255, 0.14);',
+      '    border-radius: var(--radius-l);',
+      '    background: #000;',
+      '    box-shadow: 0 24px 58px rgba(0, 0, 0, 0.3);',
+      '  }',
+      '</style>',
+      '</head>',
+    ].join('\n')
+  );
+}
+
 function setRouteLocalProjectNumber(html, routeLocalNumber, project) {
   const numberPattern =
     /<div class="project-number">\s*[^<]+?\s*<\/div>/;
@@ -479,9 +524,13 @@ function buildScopedProjectHtml(project, config, paths, index, titlesByProject) 
     )
     .replace(/\bhref="index\.html#work"/g, 'href="index.html#work"');
   const scopedHtml = setRouteLocalProjectNumber(
-    applyScopedProjectAssetOverrides(
-      applyScopedProjectStatRemovals(
-        stripLegacyRouteQueryShim(scopedHtmlWithRefs, project),
+    applyScopedProjectVideoInsertion(
+      applyScopedProjectAssetOverrides(
+        applyScopedProjectStatRemovals(
+          stripLegacyRouteQueryShim(scopedHtmlWithRefs, project),
+          project,
+          config
+        ),
         project,
         config
       ),
@@ -956,11 +1005,11 @@ export async function buildTailoredPackage({
       throw new Error(`Missing selected project: ${project}`);
     }
   }
-  for (const replacementAsset of scopedProjectReplacementAssets(config)) {
-    const replacementPath = resolveRepoPath(replacementAsset);
-    if (!existsSync(replacementPath) || !statSync(replacementPath).isFile()) {
+  for (const scopedAsset of scopedProjectAssets(config)) {
+    const scopedAssetPath = resolveRepoPath(scopedAsset);
+    if (!existsSync(scopedAssetPath) || !statSync(scopedAssetPath).isFile()) {
       throw new Error(
-        `Missing scoped project replacement asset: ${replacementAsset}`
+        `Missing scoped project asset: ${scopedAsset}`
       );
     }
   }
@@ -1126,7 +1175,7 @@ export async function buildTailoredPackage({
               )
             : {},
         scopedProjectAssetSha256: Object.fromEntries(
-          scopedProjectReplacementAssets(config).map((assetPath) => [
+          scopedProjectAssets(config).map((assetPath) => [
             assetPath,
             sha256File(assetPath),
           ])

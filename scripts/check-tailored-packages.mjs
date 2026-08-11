@@ -16,7 +16,7 @@ import {
   readJson,
   relativeRepoPath,
   resolveRepoPath,
-  scopedProjectReplacementAssets,
+  scopedProjectAssets,
   sha256File,
   validateV2Config,
 } from './lib/workflow-v2.mjs';
@@ -105,7 +105,7 @@ function collectScopedPaths(config, paths) {
     ...(config.routeMode === 'scoped-projects'
       ? config.selectedProjects.map((project) => `${paths.slug}/${project}`)
       : []),
-    ...scopedProjectReplacementAssets(config),
+    ...scopedProjectAssets(config),
   ];
 }
 
@@ -209,14 +209,14 @@ function validateLiveVerification(
       );
     }
   }
-  const replacementAssets = scopedProjectReplacementAssets(config);
+  const replacementAssets = scopedProjectAssets(config);
   const expectedAssetHashes =
     config.qa.artifactHashes?.scopedProjectAssetSha256 || {};
   const actualAssetHashes = verification.scopedProjectAssetSha256 || {};
   for (const assetPath of replacementAssets) {
     if (actualAssetHashes[assetPath] !== expectedAssetHashes[assetPath]) {
       failures.push(
-        `${pkg.slug} verification checksum is stale for scoped replacement asset ${assetPath}`
+        `${pkg.slug} verification checksum is stale for scoped project asset ${assetPath}`
       );
     }
   }
@@ -270,7 +270,7 @@ function validateLiveVerification(
     )
   ) {
     failures.push(
-      `${pkg.slug} verification scoped replacement asset URLs are incorrect`
+      `${pkg.slug} verification scoped project asset URLs are incorrect`
     );
   }
 }
@@ -557,14 +557,14 @@ function checkV2Package(pkg, { publicBase = PUBLIC_BASE } = {}) {
         failures.push(`${pkg.slug} scoped project changed after QA: ${project}`);
       }
     }
-    for (const assetPath of scopedProjectReplacementAssets(config)) {
+    for (const assetPath of scopedProjectAssets(config)) {
       const expectedHash =
         config.qa.artifactHashes?.scopedProjectAssetSha256?.[assetPath];
       if (!existsSync(resolveRepoPath(assetPath))) {
-        failures.push(`${pkg.slug} missing scoped replacement asset: ${assetPath}`);
+        failures.push(`${pkg.slug} missing scoped project asset: ${assetPath}`);
       } else if (expectedHash !== sha256File(assetPath)) {
         failures.push(
-          `${pkg.slug} scoped replacement asset changed after QA: ${assetPath}`
+          `${pkg.slug} scoped project asset changed after QA: ${assetPath}`
         );
       }
     }
