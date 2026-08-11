@@ -2675,9 +2675,36 @@
       "resumePdfPath": "output/pdf/Wally-Mostafa-OX-Associate-Director-Client-Strategy-Resume.pdf",
       "coverLetterPdfPath": "output/pdf/Wally-Mostafa-OX-Associate-Director-Client-Strategy-Cover-Letter.pdf",
       "coverLetterMarkdownPath": "output/pdf/Wally-Mostafa-OX-Associate-Director-Client-Strategy-Cover-Letter.md",
-      "publishStatus": "local-only",
+      "publishStatus": "live-verified",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-08-11T15:44:14.039Z"
+      "builtAt": "2026-08-11T15:44:14.039Z",
+      "verification": {
+        "verifiedAt": "2026-08-11T15:47:29.173Z",
+        "routeUrl": "https://wallymo.github.io/ox-associate-director-client-strategy/",
+        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-OX-Associate-Director-Client-Strategy-Resume.pdf",
+        "configUrl": "https://wallymo.github.io/scripts/packages/ox-associate-director-client-strategy.json",
+        "projectUrls": [
+          "https://wallymo.github.io/ox-associate-director-client-strategy/project-06.html",
+          "https://wallymo.github.io/ox-associate-director-client-strategy/project-02.html",
+          "https://wallymo.github.io/ox-associate-director-client-strategy/project-03.html"
+        ],
+        "configSha256": "4ea9d7149b04d3d632e108153c0c0138653d338f41467fc2aa5a99a31ef1e5d0",
+        "pdfSha256": "b6ea3be0d8548284a4d882da9fdfb8cbdf1bc017d0eff692d512619b9a224607",
+        "resumeBaseProfilesUrl": "https://wallymo.github.io/scripts/resume-base-profiles.json",
+        "resumeBaseProfilesSha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108",
+        "coverLetterPdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-OX-Associate-Director-Client-Strategy-Cover-Letter.pdf",
+        "coverLetterMarkdownUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-OX-Associate-Director-Client-Strategy-Cover-Letter.md",
+        "coverLetterPdfSha256": "0825df9309d4800afc22d700cc45a19bf8964b41afb67ae626412275e83ec033",
+        "coverLetterMarkdownSha256": "ca825992dad036d7ae06c66f7eadb73d6ee3d0749621b675361aa2f5b35820aa",
+        "routeSha256": "eaa7d082ef06ec149f2428bb5e00563d3412f0df384607c030e1fda43f196277",
+        "scopedProjectSha256": {
+          "project-06.html": "0068ed64b08237421e6da59d4e2cebcaee27b20dbf51dc5570af3078707979b2",
+          "project-02.html": "dde60872c383975fc22a8cc5ab2c08ba3996659ecd0429cfa88ed28d6218efe4",
+          "project-03.html": "5952bcfec3c74add8e372b31c8b234b12570b45bdc4404d9bf8270b8de43d00f"
+        },
+        "configInputSha256": "254d4e4449ec3c861836ea59766b5b7b58c1baa9fe6f01aa382689a2b8dadfc0",
+        "qaBuiltAt": "2026-08-11T15:44:14.039Z"
+      }
     },
     {
       "workflowVersion": 2,
