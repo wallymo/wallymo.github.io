@@ -907,35 +907,13 @@
       "selectedProjects": [
         "project-01.html",
         "project-02.html",
-        "project-08.html"
+        "project-08.html",
+        "project-06.html"
       ],
       "resumePdfPath": "output/pdf/Wally-Mostafa-Converteo-Senior-Product-Design-Engineer-Resume.pdf",
-      "publishStatus": "live-verified",
+      "publishStatus": "local-only",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-08-10T02:44:45.424Z",
-      "verification": {
-        "verifiedAt": "2026-08-10T02:46:44.495Z",
-        "routeUrl": "https://wallymo.github.io/converteo-senior-product-design-engineer/",
-        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-Converteo-Senior-Product-Design-Engineer-Resume.pdf",
-        "configUrl": "https://wallymo.github.io/scripts/packages/converteo-senior-product-design-engineer.json",
-        "projectUrls": [
-          "https://wallymo.github.io/converteo-senior-product-design-engineer/project-01.html",
-          "https://wallymo.github.io/converteo-senior-product-design-engineer/project-02.html",
-          "https://wallymo.github.io/converteo-senior-product-design-engineer/project-08.html"
-        ],
-        "configSha256": "0f21b81f1781424eba0dcaf6d2ed922c3d73946f005a2ac997aa54f8c87a0eaa",
-        "pdfSha256": "0b8af0bd31686d3a1941e80ae97bee1498fc738523ac60df972d857b3cb9b3f3",
-        "resumeBaseProfilesUrl": "https://wallymo.github.io/scripts/resume-base-profiles.json",
-        "resumeBaseProfilesSha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108",
-        "routeSha256": "464eb9d55e3e65df903cac59c8da9bbd4f0c85bcd8fe074c63db162529ab2be7",
-        "scopedProjectSha256": {
-          "project-01.html": "e4eee60a0f1e25c262a7437bd2f2a0270aff09d4201fa4de649375071d6696d6",
-          "project-02.html": "7089c93d7c21085402039f46eb4d4303d3f01fd8e0c2722cdb7addd392d852b0",
-          "project-08.html": "325651362b58bbbcc39b69f05083d16ef09161c8344372662a3fbc4828617894"
-        },
-        "configInputSha256": "570b56f4a609e65a6f7f03b79e7a68eeb14b55a01c962e291ecdb249ba651b44",
-        "qaBuiltAt": "2026-08-10T02:44:45.424Z"
-      }
+      "builtAt": "2026-08-11T19:52:17.040Z"
     },
     {
       "workflowVersion": 2,

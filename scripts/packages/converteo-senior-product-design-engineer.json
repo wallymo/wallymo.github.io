@@ -476,7 +476,13 @@
     "heroIntent": "resume-support",
     "projectCardStats": "hidden",
     "workHeading": "Current AI and AI-assisted work.",
-    "contactHeading": "Thanks for taking a look."
+    "contactHeading": "Thanks for taking a look.",
+    "projectAssetOverrides": {
+      "project-06.html": {
+        "assets/ux-wally/dxa-results.png": "assets/imagery/converteo/dxa/dxa-results-prada.png",
+        "assets/ux-wally/dxa-questionnaire.png": "assets/imagery/converteo/dxa/dxa-questionnaire-prada.png"
+      }
+    }
   },
   "hero": {
     "eyebrow": "Converteo | Current AI Work",
@@ -490,7 +496,8 @@
   "selectedProjects": [
     "project-01.html",
     "project-02.html",
-    "project-08.html"
+    "project-08.html",
+    "project-06.html"
   ],
   "contact": {
     "prompt": "Email and the matched resume are below.",
@@ -549,8 +556,8 @@
   },
   "qa": {
     "status": "qa-passed",
-    "builtAt": "2026-08-10T02:44:45.424Z",
-    "configInputSha256": "570b56f4a609e65a6f7f03b79e7a68eeb14b55a01c962e291ecdb249ba651b44",
+    "builtAt": "2026-08-11T19:52:17.040Z",
+    "configInputSha256": "42d2b698f2237ccee80b9738d899c3c84358a72906418ff86d18aeaac919ef31",
     "sourceResumeSha256": "2265313e78b596a2b37d6d8f9a95081e4321b4047f142a5f0ddf22449cab4b9c",
     "resumeFoundation": {
       "id": "wally-mostafa-resume-2026-07-03",
@@ -571,14 +578,19 @@
       "registrySha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108"
     },
     "artifactHashes": {
-      "routeSha256": "464eb9d55e3e65df903cac59c8da9bbd4f0c85bcd8fe074c63db162529ab2be7",
-      "resumePdfSha256": "0b8af0bd31686d3a1941e80ae97bee1498fc738523ac60df972d857b3cb9b3f3",
+      "routeSha256": "ccf590347a26778f4da4a2d141f5dc3da318883c7391a4cea0df5599f93ba75d",
+      "resumePdfSha256": "666ebc7a9c5e09d870cba5bd8882e0a21843747129e810ab67687273ec5daf33",
       "coverLetterPdfSha256": null,
       "coverLetterMarkdownSha256": null,
       "scopedProjectSha256": {
-        "project-01.html": "e4eee60a0f1e25c262a7437bd2f2a0270aff09d4201fa4de649375071d6696d6",
+        "project-01.html": "66e0907d0ed0afefc7186f737c2c848b49438a0b70928711701fc3bb360e4498",
         "project-02.html": "7089c93d7c21085402039f46eb4d4303d3f01fd8e0c2722cdb7addd392d852b0",
-        "project-08.html": "325651362b58bbbcc39b69f05083d16ef09161c8344372662a3fbc4828617894"
+        "project-08.html": "aee1fc580d340226da9e29f85f0b98474c607cbf1e150efe32fa3095c27a62ba",
+        "project-06.html": "898778ac0fa78563b61c3ae48e10a0606f436eeab93258e250bff8a2be5b43a8"
+      },
+      "scopedProjectAssetSha256": {
+        "assets/imagery/converteo/dxa/dxa-questionnaire-prada.png": "9040cda502d84c3caab686ff71bd142af4bc31fb4f4c0edb44dc5d7982b51902",
+        "assets/imagery/converteo/dxa/dxa-results-prada.png": "0307f3faeb4d1e45bcce978b78d11250848d984a74ed5ed07ed46964f5c8efa3"
       }
     },
     "renderer": {
@@ -801,6 +813,10 @@
           "errors": []
         },
         {
+          "name": "desktop-project-06",
+          "errors": []
+        },
+        {
           "name": "mobile",
           "errors": []
         },
@@ -814,6 +830,10 @@
         },
         {
           "name": "mobile-project-08",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-06",
           "errors": []
         }
       ],
