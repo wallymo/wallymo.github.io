@@ -410,6 +410,116 @@ function applyScopedProjectStatRemovals(html, project, config) {
   );
 }
 
+function applyScopedProjectFullWidthSections(html, project, config) {
+  const sections = config.route?.projectFullWidthSections?.[project];
+  if (!sections) return html;
+
+  let updatedHtml = html;
+  for (const section of sections) {
+    const { asset, copyMode } = section;
+    const assetReference = `../${asset}`;
+    const assetIndex = updatedHtml.indexOf(`src="${assetReference}"`);
+    if (assetIndex === -1) {
+      throw new Error(
+        `Could not find full-width section asset in ${project}: ${asset}`
+      );
+    }
+    const innerStart = updatedHtml.lastIndexOf(
+      '<div class="product-inner',
+      assetIndex
+    );
+    if (innerStart === -1) {
+      throw new Error(
+        `Could not find product section for full-width asset in ${project}: ${asset}`
+      );
+    }
+    const productInnerHtml = extractBalancedTagBlock(
+      updatedHtml,
+      innerStart,
+      'div'
+    );
+    if (assetIndex >= innerStart + productInnerHtml.length) {
+      throw new Error(
+        `Full-width asset must belong to a product section in ${project}: ${asset}`
+      );
+    }
+    const innerTagEnd = updatedHtml.indexOf('>', innerStart);
+    const innerTag = updatedHtml.slice(innerStart, innerTagEnd + 1);
+    if (innerTag.includes('product-inner--full-visual')) {
+      throw new Error(
+        `Full-width section assets must reference different sections in ${project}`
+      );
+    }
+    const presentationClass =
+      copyMode === 'heading-only' ? ' product-inner--heading-only' : '';
+    const updatedInnerTag = innerTag.replace(
+      /class="([^"]*\bproduct-inner\b[^"]*)"/,
+      `class="$1 product-inner--full-visual${presentationClass}"`
+    );
+    updatedHtml = `${updatedHtml.slice(0, innerStart)}${updatedInnerTag}${updatedHtml.slice(
+      innerTagEnd + 1
+    )}`;
+  }
+
+  return updatedHtml.replace(
+    '</head>',
+    [
+      '<style data-scoped-full-width-sections>',
+      '  .product-inner--full-visual {',
+      '    grid-template-columns: minmax(0, 1fr);',
+      '    gap: clamp(24px, 3vw, 40px);',
+      '    align-items: start;',
+      '  }',
+      '  .product-inner--full-visual.reverse { direction: ltr; }',
+      '  .product-inner--full-visual .product-image {',
+      '    aspect-ratio: 16 / 9;',
+      '    padding: 0;',
+      '    border: 0;',
+      '    background: transparent;',
+      '    box-shadow: 0 24px 58px rgba(26, 23, 20, 0.14);',
+      '  }',
+      '  .product-inner--full-visual .product-image::before { display: none; }',
+      '  .product-inner--full-visual .product-image img {',
+      '    max-height: none;',
+      '    object-fit: contain;',
+      '  }',
+      '  .product-inner--full-visual .product-text {',
+      '    max-width: none;',
+      '    display: grid;',
+      '    grid-template-columns: minmax(160px, 0.35fr) minmax(0, 1fr);',
+      '    column-gap: var(--space-xl);',
+      '    align-items: baseline;',
+      '  }',
+      '  .product-inner--full-visual .product-tag {',
+      '    grid-column: 1;',
+      '    margin-bottom: 0;',
+      '  }',
+      '  .product-inner--full-visual .product-title {',
+      '    grid-column: 2;',
+      '    max-width: 32ch;',
+      '    margin-bottom: 0;',
+      '  }',
+      '  .product-inner--heading-only .product-lede,',
+      '  .product-inner--heading-only .product-points {',
+      '    display: none;',
+      '  }',
+      '  @media (max-width: 760px) {',
+      '    .product-inner--full-visual { gap: var(--space-l); }',
+      '    .product-inner--full-visual .product-text { display: block; }',
+      '    .product-inner--full-visual .product-tag {',
+      '      margin-bottom: var(--space-xs);',
+      '    }',
+      '    .product-inner--full-visual .product-title {',
+      '      max-width: none;',
+      '      margin-bottom: var(--space-s);',
+      '    }',
+      '  }',
+      '</style>',
+      '</head>',
+    ].join('\n')
+  );
+}
+
 function applyScopedProjectPullquoteOverride(html, project, config) {
   const pullquote = config.route?.projectPullquoteOverrides?.[project];
   if (!pullquote) return html;
@@ -543,8 +653,12 @@ function buildScopedProjectHtml(project, config, paths, index, titlesByProject) 
     applyScopedProjectVideoInsertion(
       applyScopedProjectPullquoteOverride(
         applyScopedProjectAssetOverrides(
-          applyScopedProjectStatRemovals(
-            stripLegacyRouteQueryShim(scopedHtmlWithRefs, project),
+          applyScopedProjectFullWidthSections(
+            applyScopedProjectStatRemovals(
+              stripLegacyRouteQueryShim(scopedHtmlWithRefs, project),
+              project,
+              config
+            ),
             project,
             config
           ),

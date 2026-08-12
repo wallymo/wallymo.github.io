@@ -3624,6 +3624,18 @@ test(
       config.route.projectStatRemovals = {
         'project-06.html': ['DXA / Audit platform'],
       };
+      config.route.projectFullWidthSections = {
+        'project-06.html': [
+          {
+            asset: 'assets/ux-wally/dxa.jpg',
+            copyMode: 'heading-only',
+          },
+          {
+            asset: 'assets/ux-wally/dxa-results.png',
+            copyMode: 'heading-only',
+          },
+        ],
+      };
       config.route.projectPullquoteOverrides = {
         'project-06.html': 'From audit scores to clear priorities.',
       };
@@ -3658,6 +3670,9 @@ test(
           'assets/ux-wally/dxa-results.png2'
         )
       );
+      config.route.projectFullWidthSections['project-06.html'][1].asset =
+        'assets/ux-wally/dxa-results.png2';
+      writeFileSync(configPath, `${JSON.stringify(config, null, 2)}\n`);
       const prefixCollisionResult = run(
         ['scripts/build-tailored-package.mjs', '--config', configPath],
         {
@@ -3674,6 +3689,52 @@ test(
         /Could not find scoped asset override source/
       );
       writeFileSync(canonicalProjectPath, canonicalProjectHtml);
+      config.route.projectFullWidthSections['project-06.html'][1].asset =
+        'assets/ux-wally/dxa-results.png';
+
+      config.route.projectFullWidthSections['project-06.html'][0].asset =
+        'assets/ux-wally/dxa.jp';
+      writeFileSync(configPath, `${JSON.stringify(config, null, 2)}\n`);
+      const fullWidthPrefixCollisionResult = run(
+        ['scripts/build-tailored-package.mjs', '--config', configPath],
+        {
+          env: {
+            ...process.env,
+            WORKFLOW_REPO_ROOT: tempRoot,
+            CHROME_PATH: resolveChromeExecutable(),
+          },
+        }
+      );
+      assert.notEqual(fullWidthPrefixCollisionResult.status, 0);
+      assert.match(
+        `${fullWidthPrefixCollisionResult.stdout}\n${fullWidthPrefixCollisionResult.stderr}`,
+        /Could not find full-width section asset/
+      );
+
+      config.route.projectFullWidthSections['project-06.html'][0].asset =
+        'assets/ux-wally/dxa.jpg';
+      config.route.projectFullWidthSections['project-06.html'][1].asset =
+        'assets/ux-wally/dxa-questionnaire.png';
+      writeFileSync(configPath, `${JSON.stringify(config, null, 2)}\n`);
+      const unsupportedSectionResult = run(
+        ['scripts/build-tailored-package.mjs', '--config', configPath],
+        {
+          env: {
+            ...process.env,
+            WORKFLOW_REPO_ROOT: tempRoot,
+            CHROME_PATH: resolveChromeExecutable(),
+          },
+        }
+      );
+      assert.notEqual(unsupportedSectionResult.status, 0);
+      assert.match(
+        `${unsupportedSectionResult.stdout}\n${unsupportedSectionResult.stderr}`,
+        /Full-width asset must belong to a product section/
+      );
+
+      config.route.projectFullWidthSections['project-06.html'][1].asset =
+        'assets/ux-wally/dxa-results.png';
+      writeFileSync(configPath, `${JSON.stringify(config, null, 2)}\n`);
       const result = run(
         ['scripts/build-tailored-package.mjs', '--config', configPath],
         {
@@ -3740,6 +3801,19 @@ test(
           assert.match(
             html,
             /<div class="stats-bar stats-bar--centered">/
+          );
+          assert.equal(
+            (
+              html.match(
+                /class="[^"]*\bproduct-inner--full-visual\b[^"]*"/g
+              ) || []
+            ).length,
+            2
+          );
+          assert.match(html, /<style data-scoped-full-width-sections>/);
+          assert.match(
+            html,
+            /\.product-inner--heading-only \.product-lede,[\s\S]*?\.product-inner--heading-only \.product-points \{[\s\S]*?display: none;/
           );
           assert.match(
             html,

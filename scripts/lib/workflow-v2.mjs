@@ -2404,6 +2404,55 @@ export function validateV2Config(
           );
         }
       }
+      const projectFullWidthSections = route.projectFullWidthSections;
+      pushError(
+        errors,
+        projectFullWidthSections === undefined ||
+          (projectFullWidthSections &&
+            typeof projectFullWidthSections === 'object' &&
+            !Array.isArray(projectFullWidthSections)),
+        'route.projectFullWidthSections must be an object when present'
+      );
+      if (
+        projectFullWidthSections &&
+        typeof projectFullWidthSections === 'object' &&
+        !Array.isArray(projectFullWidthSections)
+      ) {
+        pushError(
+          errors,
+          config.routeMode === 'scoped-projects',
+          'route.projectFullWidthSections requires routeMode scoped-projects'
+        );
+        for (const [project, sections] of Object.entries(
+          projectFullWidthSections
+        )) {
+          pushError(
+            errors,
+            config.selectedProjects?.includes(project),
+            `route.projectFullWidthSections references an unselected project: ${project}`
+          );
+          pushError(
+            errors,
+            Array.isArray(sections) &&
+              sections.length > 0 &&
+              sections.every(
+                (section) =>
+                  section &&
+                  typeof section === 'object' &&
+                  !Array.isArray(section) &&
+                  Object.keys(section).every((key) =>
+                    ['asset', 'copyMode'].includes(key)
+                  ) &&
+                  /^assets\/[^\s]+$/.test(section.asset) &&
+                  !section.asset.split('/').includes('..') &&
+                  section.copyMode === 'heading-only'
+              ) &&
+              new Set(sections.map((section) => section.asset)).size ===
+                sections.length,
+            `route.projectFullWidthSections.${project} must be a non-empty array of unique safe section definitions`
+          );
+        }
+      }
       const projectPullquoteOverrides = route.projectPullquoteOverrides;
       pushError(
         errors,

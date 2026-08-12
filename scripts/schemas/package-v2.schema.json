@@ -550,6 +550,27 @@
             "items": { "type": "string", "minLength": 1 }
           }
         },
+        "projectFullWidthSections": {
+          "type": "object",
+          "minProperties": 1,
+          "propertyNames": { "pattern": "^project-\\d+\\.html$" },
+          "additionalProperties": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "required": ["asset", "copyMode"],
+              "properties": {
+                "asset": {
+                  "type": "string",
+                  "pattern": "^assets/(?!\\.\\.(?:/|$))(?!.*?/\\.\\.(?:/|$))\\S+$"
+                },
+                "copyMode": { "const": "heading-only" }
+              },
+              "additionalProperties": false
+            }
+          }
+        },
         "projectPullquoteOverrides": {
           "type": "object",
           "minProperties": 1,
