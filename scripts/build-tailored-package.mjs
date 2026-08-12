@@ -520,6 +520,105 @@ function applyScopedProjectFullWidthSections(html, project, config) {
   );
 }
 
+function applyScopedProjectFigureRemovals(html, project, config) {
+  const removals = config.route?.projectFigureRemovals?.[project];
+  if (!removals) return html;
+
+  let updatedHtml = html;
+  for (const asset of removals) {
+    const assetReference = `../${asset}`;
+    const assetNeedle = `src="${assetReference}"`;
+    const assetIndex = updatedHtml.indexOf(assetNeedle);
+    if (assetIndex === -1) {
+      throw new Error(
+        `Could not find scoped figure removal asset in ${project}: ${asset}`
+      );
+    }
+    if (
+      updatedHtml.indexOf(assetNeedle, assetIndex + assetNeedle.length) !== -1
+    ) {
+      throw new Error(
+        `Scoped figure removal asset must be unique in ${project}: ${asset}`
+      );
+    }
+
+    const figureStart = updatedHtml.lastIndexOf('<figure', assetIndex);
+    if (figureStart === -1) {
+      throw new Error(
+        `Could not find figure for scoped removal asset in ${project}: ${asset}`
+      );
+    }
+    const figureHtml = extractBalancedTagBlock(
+      updatedHtml,
+      figureStart,
+      'figure'
+    );
+    if (assetIndex >= figureStart + figureHtml.length) {
+      throw new Error(
+        `Scoped figure removal asset must belong to a figure in ${project}: ${asset}`
+      );
+    }
+
+    const pairStart = updatedHtml.lastIndexOf(
+      '<div class="image-pair',
+      figureStart
+    );
+    if (pairStart === -1) {
+      throw new Error(
+        `Scoped figure removal must belong to an image pair in ${project}: ${asset}`
+      );
+    }
+    const pairHtml = extractBalancedTagBlock(updatedHtml, pairStart, 'div');
+    if (figureStart >= pairStart + pairHtml.length) {
+      throw new Error(
+        `Scoped figure removal must belong to an image pair in ${project}: ${asset}`
+      );
+    }
+
+    const figureOffset = figureStart - pairStart;
+    const figureLineStart = pairHtml.lastIndexOf('\n', figureOffset - 1) + 1;
+    const removalStart = /^\s*$/.test(
+      pairHtml.slice(figureLineStart, figureOffset)
+    )
+      ? figureLineStart
+      : figureOffset;
+    const figureEnd = figureOffset + figureHtml.length;
+    const removalEnd = pairHtml[figureEnd] === '\n' ? figureEnd + 1 : figureEnd;
+    let updatedPairHtml = `${pairHtml.slice(0, removalStart)}${pairHtml.slice(
+      removalEnd
+    )}`;
+    const remainingFigureCount = (updatedPairHtml.match(/<figure\b/g) || [])
+      .length;
+    if (remainingFigureCount === 0) {
+      throw new Error(
+        `Scoped figure removal cannot empty an image pair in ${project}: ${asset}`
+      );
+    }
+    if (remainingFigureCount === 1) {
+      updatedPairHtml = updatedPairHtml.replace(
+        /class="([^"]*\bimage-pair\b[^"]*)"/,
+        'class="$1 image-pair--single"'
+      );
+    }
+    updatedHtml = `${updatedHtml.slice(0, pairStart)}${updatedPairHtml}${updatedHtml.slice(
+      pairStart + pairHtml.length
+    )}`;
+  }
+
+  return updatedHtml.replace(
+    '</head>',
+    [
+      '<style data-scoped-figure-removals>',
+      '  .image-pair--single {',
+      '    grid-template-columns: minmax(0, 900px);',
+      '    justify-content: center;',
+      '  }',
+      '</style>',
+      '</head>',
+    ].join('\n')
+  );
+}
+
 function applyScopedProjectPullquoteOverride(html, project, config) {
   const pullquote = config.route?.projectPullquoteOverrides?.[project];
   if (!pullquote) return html;
@@ -653,9 +752,13 @@ function buildScopedProjectHtml(project, config, paths, index, titlesByProject) 
     applyScopedProjectVideoInsertion(
       applyScopedProjectPullquoteOverride(
         applyScopedProjectAssetOverrides(
-          applyScopedProjectFullWidthSections(
-            applyScopedProjectStatRemovals(
-              stripLegacyRouteQueryShim(scopedHtmlWithRefs, project),
+          applyScopedProjectFigureRemovals(
+            applyScopedProjectFullWidthSections(
+              applyScopedProjectStatRemovals(
+                stripLegacyRouteQueryShim(scopedHtmlWithRefs, project),
+                project,
+                config
+              ),
               project,
               config
             ),

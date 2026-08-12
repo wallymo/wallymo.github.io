@@ -571,6 +571,20 @@
             }
           }
         },
+        "projectFigureRemovals": {
+          "type": "object",
+          "minProperties": 1,
+          "propertyNames": { "pattern": "^project-\\d+\\.html$" },
+          "additionalProperties": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "pattern": "^assets/(?!\\.\\.(?:/|$))(?!.*?/\\.\\.(?:/|$))\\S+$"
+            }
+          }
+        },
         "projectPullquoteOverrides": {
           "type": "object",
           "minProperties": 1,

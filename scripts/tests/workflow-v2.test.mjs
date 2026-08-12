@@ -3636,6 +3636,9 @@ test(
           },
         ],
       };
+      config.route.projectFigureRemovals = {
+        'project-06.html': ['assets/ux-wally/dxa-channels.png'],
+      };
       config.route.projectPullquoteOverrides = {
         'project-06.html': 'From audit scores to clear priorities.',
       };
@@ -3811,6 +3814,19 @@ test(
             2
           );
           assert.match(html, /<style data-scoped-full-width-sections>/);
+          assert.match(
+            html,
+            /<div class="image-pair image-pair--single">/
+          );
+          assert.match(html, /<style data-scoped-figure-removals>/);
+          assert.doesNotMatch(
+            html,
+            /<figcaption class="image-caption">Audit creation<\/figcaption>/
+          );
+          assert.doesNotMatch(
+            html,
+            /src="\.\.\/assets\/ux-wally\/dxa-channels\.png"/
+          );
           assert.match(
             html,
             /\.product-inner--heading-only \.product-lede,[\s\S]*?\.product-inner--heading-only \.product-points \{[\s\S]*?display: none;/

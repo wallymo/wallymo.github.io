@@ -2453,6 +2453,47 @@ export function validateV2Config(
           );
         }
       }
+      const projectFigureRemovals = route.projectFigureRemovals;
+      pushError(
+        errors,
+        projectFigureRemovals === undefined ||
+          (projectFigureRemovals &&
+            typeof projectFigureRemovals === 'object' &&
+            !Array.isArray(projectFigureRemovals)),
+        'route.projectFigureRemovals must be an object when present'
+      );
+      if (
+        projectFigureRemovals &&
+        typeof projectFigureRemovals === 'object' &&
+        !Array.isArray(projectFigureRemovals)
+      ) {
+        pushError(
+          errors,
+          config.routeMode === 'scoped-projects',
+          'route.projectFigureRemovals requires routeMode scoped-projects'
+        );
+        for (const [project, removals] of Object.entries(
+          projectFigureRemovals
+        )) {
+          pushError(
+            errors,
+            config.selectedProjects?.includes(project),
+            `route.projectFigureRemovals references an unselected project: ${project}`
+          );
+          pushError(
+            errors,
+            Array.isArray(removals) &&
+              removals.length > 0 &&
+              removals.every(
+                (asset) =>
+                  /^assets\/[^\s]+$/.test(asset) &&
+                  !asset.split('/').includes('..')
+              ) &&
+              new Set(removals).size === removals.length,
+            `route.projectFigureRemovals.${project} must be a non-empty array of unique safe asset paths`
+          );
+        }
+      }
       const projectPullquoteOverrides = route.projectPullquoteOverrides;
       pushError(
         errors,
