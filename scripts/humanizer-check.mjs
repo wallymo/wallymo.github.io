@@ -119,7 +119,9 @@ export function runHumanizerCheck({
   const absoluteConfigPath = resolveRepoPath(configPath);
   assertPackageConfigPath(absoluteConfigPath);
   const config = readJson(absoluteConfigPath);
-  assertValidV2Config(config, { requireCurrentContract: true });
+  if (!approve) {
+    assertValidV2Config(config, { requireCurrentContract: true });
+  }
 
   const violations = humanizerViolations(config);
   if (violations.length) {
@@ -136,6 +138,7 @@ export function runHumanizerCheck({
       rewriteAuthorized: rewriteRequested,
       semanticPassComplete,
     });
+    assertValidV2Config(config, { requireCurrentContract: true });
     writeJson(absoluteConfigPath, config);
   } else {
     assertHumanizerReviewCurrent(config);

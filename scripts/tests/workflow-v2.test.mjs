@@ -1984,6 +1984,21 @@ test('humanizer CLI records the reviewed copy and builder rejects pending copy',
     assert.notEqual(staleAts.status, 0);
     assert.match(staleAts.stderr, /copySha256 is stale/);
 
+    const staleReapproval = run(
+      [
+        'scripts/humanizer-check.mjs',
+        '--config',
+        configPath,
+        '--approve',
+        '--semantic-pass-complete',
+      ],
+      { env: { ...process.env, WORKFLOW_REPO_ROOT: tempRoot } }
+    );
+    assert.equal(staleReapproval.status, 0, staleReapproval.stderr);
+    const reapproved = JSON.parse(readFileSync(configPath, 'utf8'));
+    assert.equal(reapproved.copyReview.status, 'passed');
+    assert.equal(reapproved.copyReview.copySha256, humanizerCopySha256(reapproved));
+
     const outsidePath = path.join(tempRoot, 'outside.json');
     writeFileSync(outsidePath, `${JSON.stringify(config, null, 2)}\n`);
     const outsideApproval = run(
