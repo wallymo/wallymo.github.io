@@ -3609,6 +3609,13 @@ test(
       config.route.projectStatRemovals = {
         'project-06.html': ['DXA / Audit platform'],
       };
+      config.route.projectPullquoteOverrides = {
+        'project-06.html': 'From audit scores to clear priorities.',
+      };
+      approveHumanizerReview(config, {
+        reviewedAt: '2026-07-22T12:00:00.000Z',
+        semanticPassComplete: true,
+      });
       config.route.projectVideoInsertions = {
         'project-06.html': {
           src: 'fixtures/dxa-awards.mp4',
@@ -3735,6 +3742,14 @@ test(
           assert.match(
             html,
             /<div class="inner scoped-project-video" data-reveal>[\s\S]*?<\/video>\s*<\/div>\s*<\/section>\s*<div class="pullquote">/
+          );
+          assert.match(
+            html,
+            /<blockquote>From audit scores to clear priorities\.<\/blockquote>/
+          );
+          assert.doesNotMatch(
+            html,
+            /<blockquote>Audit data became a usable product story\.<\/blockquote>/
           );
         }
       }

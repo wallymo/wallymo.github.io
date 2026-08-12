@@ -550,6 +550,12 @@
             "items": { "type": "string", "minLength": 1 }
           }
         },
+        "projectPullquoteOverrides": {
+          "type": "object",
+          "minProperties": 1,
+          "propertyNames": { "pattern": "^project-\\d+\\.html$" },
+          "additionalProperties": { "type": "string", "minLength": 1 }
+        },
         "projectVideoInsertions": {
           "type": "object",
           "minProperties": 1,

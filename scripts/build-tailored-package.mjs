@@ -410,6 +410,22 @@ function applyScopedProjectStatRemovals(html, project, config) {
   );
 }
 
+function applyScopedProjectPullquoteOverride(html, project, config) {
+  const pullquote = config.route?.projectPullquoteOverrides?.[project];
+  if (!pullquote) return html;
+
+  const pullquotePattern =
+    /(<div class="pullquote">\s*<blockquote>)([\s\S]*?)(<\/blockquote>)/;
+  if (!pullquotePattern.test(html)) {
+    throw new Error(`Could not find scoped pullquote in ${project}`);
+  }
+  return html.replace(
+    pullquotePattern,
+    (_match, openingHtml, _existingCopy, closingHtml) =>
+      `${openingHtml}${escapeHtml(pullquote)}${closingHtml}`
+  );
+}
+
 function applyScopedProjectVideoInsertion(html, project, config) {
   const video = config.route?.projectVideoInsertions?.[project];
   if (!video) return html;
@@ -525,9 +541,13 @@ function buildScopedProjectHtml(project, config, paths, index, titlesByProject) 
     .replace(/\bhref="index\.html#work"/g, 'href="index.html#work"');
   const scopedHtml = setRouteLocalProjectNumber(
     applyScopedProjectVideoInsertion(
-      applyScopedProjectAssetOverrides(
-        applyScopedProjectStatRemovals(
-          stripLegacyRouteQueryShim(scopedHtmlWithRefs, project),
+      applyScopedProjectPullquoteOverride(
+        applyScopedProjectAssetOverrides(
+          applyScopedProjectStatRemovals(
+            stripLegacyRouteQueryShim(scopedHtmlWithRefs, project),
+            project,
+            config
+          ),
           project,
           config
         ),

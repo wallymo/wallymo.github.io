@@ -350,6 +350,17 @@ export function humanizerCopyEntries(config) {
   add('route.heroIntent', config?.route?.heroIntent);
   add('route.workHeading', config?.route?.workHeading);
   add('route.contactHeading', config?.route?.contactHeading);
+  if (
+    config?.route?.projectPullquoteOverrides &&
+    typeof config.route.projectPullquoteOverrides === 'object' &&
+    !Array.isArray(config.route.projectPullquoteOverrides)
+  ) {
+    for (const [project, pullquote] of Object.entries(
+      config.route.projectPullquoteOverrides
+    )) {
+      add(`route.projectPullquoteOverrides.${project}`, pullquote);
+    }
+  }
   return entries;
 }
 
@@ -2393,6 +2404,40 @@ export function validateV2Config(
           );
         }
       }
+      const projectPullquoteOverrides = route.projectPullquoteOverrides;
+      pushError(
+        errors,
+        projectPullquoteOverrides === undefined ||
+          (projectPullquoteOverrides &&
+            typeof projectPullquoteOverrides === 'object' &&
+            !Array.isArray(projectPullquoteOverrides)),
+        'route.projectPullquoteOverrides must be an object when present'
+      );
+      if (
+        projectPullquoteOverrides &&
+        typeof projectPullquoteOverrides === 'object' &&
+        !Array.isArray(projectPullquoteOverrides)
+      ) {
+        pushError(
+          errors,
+          config.routeMode === 'scoped-projects',
+          'route.projectPullquoteOverrides requires routeMode scoped-projects'
+        );
+        for (const [project, pullquote] of Object.entries(
+          projectPullquoteOverrides
+        )) {
+          pushError(
+            errors,
+            config.selectedProjects?.includes(project),
+            `route.projectPullquoteOverrides references an unselected project: ${project}`
+          );
+          pushError(
+            errors,
+            isNonEmptyString(pullquote),
+            `route.projectPullquoteOverrides.${project} must be a non-empty string`
+          );
+        }
+      }
       const projectVideoInsertions = route.projectVideoInsertions;
       pushError(
         errors,
@@ -2728,6 +2773,12 @@ export function recruiterFacingClaimViolations(config) {
     config.route.contactHeading.trim()
       ? [['route.contactHeading', config.route.contactHeading]]
       : []),
+    ...Object.entries(config.route?.projectPullquoteOverrides || {}).map(
+      ([project, pullquote]) => [
+        `route.projectPullquoteOverrides.${project}`,
+        pullquote,
+      ]
+    ),
   ];
   const prohibitedPhrases = [
     ...config.constraints.doNotClaim,
