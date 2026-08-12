@@ -2,14 +2,16 @@
   "workflowVersion": 2,
   "contractRevision": 7,
   "slug": "pharma-ux-networking",
-  "roleTitle": "Pharma UX & Experience Design",
+  "roleTitle": "UX Design Selected Work",
   "artifactStem": "Pharma-UX",
   "fitClass": "strong",
   "routeMode": "scoped-projects",
   "selectedProjects": [
     "project-01.html",
     "project-03.html",
-    "project-04.html"
+    "project-04.html",
+    "project-05.html",
+    "project-06.html"
   ],
   "job": {
     "company": "General pharma agency networking use",
@@ -277,8 +279,15 @@
   "coverLetter": null,
   "resume": {
     "foundationId": "wally-mostafa-resume-2026-07-03",
+    "foundationVersion": 3,
     "compositionMode": "foundation-complete",
     "layoutDensity": "compact",
+    "roleContinuationBreaks": [
+      {
+        "roleId": "kinesso",
+        "afterBullet": 4
+      }
+    ],
     "summary": "Pharma UX and experience design leader with nearly eight years in UX and product design, backed by a 15-year career across pharma, healthcare, enterprise platforms, and client strategy. I use research and user needs to shape journeys, prototypes, reusable systems, and build-ready direction. At Kinesso, I grew product design from 2 to 30 and led design for enterprise analytics used by 7,000+ people across 22 brands. My pharma work includes patient, HCP, and internal experiences within FDA, HIPAA, and MLR requirements.",
     "skillIds": [
       "research-experience-strategy",
@@ -321,10 +330,15 @@
         "Currently building the website and sponsor strategy for a Tunisia youth soccer program, positioning the project for player advancement, community support, and donor outreach"
       ],
       "kinesso": [
-        "Scaled product design from 2 to 30 people across the US and Poland for enterprise analytics used by 7,000+ users across 22 white-label brands",
-        "Led UX and design-system strategy for MIE data visualization, dashboard building, brand theming, and reusable analytics components",
-        "Built the Digital Experience Audit workflow for channel scoring, benchmarks, recommendations, visualization, and presentation-ready client outputs",
-        "Design-system and analytics work earned 5 Indigo Gold, 4 Indigo Silver, and Red Dot recognition"
+        "Scaled product design from 2 to 30 across the US and Poland, hiring and staffing designers, leading critiques and quality reviews, and planning scope, resources, and engineering handoff across 20+ products",
+        "Partnered with the Head of Design to create the team's first onboarding program, career roadmaps, coaching structure, and performance review workflows for new and existing employees",
+        "Built Kinesso's first UX research practice across 20+ products, including participant recruitment, interviews, prototype testing, beta groups, behavioral analytics, research tooling, shared Figma documentation, and UX checkpoints in project plans",
+        "Led UX research and strategy for a marketing intelligence suite used by 7,000+ people across 22 white-label brands; turned findings and adoption data into roadmap priorities for navigation, dashboards, brand theming, personalization, and product support",
+        "Helped shape and govern a design system with 500 components, 140 styles, 300 icons, and 50 personas, including accessibility and design quality standards; the work earned 5 Indigo Gold, 4 Indigo Silver, and Red Dot recognition",
+        "Led workshops on product discovery, ecosystem mapping, innovation, and user research; expanded the program from Kinesso teams to IPG groups and presented recommendations to executives and clients",
+        "UX lead for research and design on Kanvas, Kinesso's developer-first API services library; partnered with product and engineering on roadmap priorities and with C-suite stakeholders on monetization and go-to-market planning",
+        "Collaborated on the UX/UI build of Digital Experience Audit, turning channel scoring, benchmarks, and recommendations into a repeatable workflow with data visualization and presentation-ready client outputs",
+        "Led a three-person team to second place in Kinesso's inaugural innovation challenge with an accessibility panel concept; later advised the next cohort and contributed to accessibility playbook and keyboard interaction standards"
       ],
       "omnicom": [
         "Supported oncology accounts as a freelance UX designer, combining UX design and account-management experience to strengthen regulated healthcare work",
@@ -359,9 +373,14 @@
       ],
       "kinesso": [
         "kinesso-01",
+        "kinesso-05",
+        "kinesso-06",
         "kinesso-02",
+        "kinesso-04",
+        "kinesso-07",
+        "kinesso-08",
         "kinesso-03",
-        "kinesso-04"
+        "kinesso-09"
       ],
       "omnicom": [
         "omnicom-01",
@@ -380,13 +399,13 @@
     }
   },
   "hero": {
-    "eyebrow": "Pharma UX | Selected Work",
+    "eyebrow": "UX Design | Selected Work",
     "tags": [
-      "Pharma UX",
-      "Experience strategy",
-      "Enterprise design systems"
+      "UX research",
+      "Product design",
+      "Design systems"
     ],
-    "intro": "I've included a few projects that may be useful context for my pharma UX and experience-design work. My resume covers the broader background."
+    "intro": "I've pulled together five projects that show how I work across research, product design, design systems, and regulated workflows. My resume has the full career history."
   },
   "contact": {
     "prompt": "Email and my resume are below.",
@@ -395,22 +414,19 @@
   "route": {
     "presentation": "showcase",
     "heroIntent": "resume-support",
-    "workHeading": "Selected work.",
+    "workHeading": "Selected projects.",
     "contactHeading": "Thanks for taking a look."
   },
   "copyReview": {
     "humanizerVersion": "2.2.0",
-    "mode": "surface-only",
+    "mode": "rewrite-requested",
     "status": "passed",
-    "reviewedAt": "2026-08-07T14:15:44.423Z",
-    "copySha256": "106ac079ac10c4ae987bb4879fe3c39fa59c97a27c048f2691f7ffa8a62fc146",
+    "reviewedAt": "2026-08-12T22:28:15.459Z",
+    "copySha256": "236d4cdcaf8ba65bfbabfa4b88d303914bee0b81aab0472591f5148df4d6779c",
     "preserved": [
-      "content",
-      "structure",
-      "claims",
-      "ending"
+      "claims"
     ],
-    "rewriteAuthorized": false,
+    "rewriteAuthorized": true,
     "reviewMethod": "humanizer-skill",
     "semanticPassAttested": true,
     "staticChecksPassed": true,
@@ -439,8 +455,8 @@
   },
   "qa": {
     "status": "qa-passed",
-    "builtAt": "2026-08-07T14:17:20.129Z",
-    "configInputSha256": "3dd4deb981558edbe850b68a5efc355cc31ee828792c3f153902fadcac9c527b",
+    "builtAt": "2026-08-12T22:30:06.555Z",
+    "configInputSha256": "359d7d863cc192aa368419b0d7fa99b1366dcbf509c6164bc7d83bbb0a4c4833",
     "sourceResumeSha256": "2265313e78b596a2b37d6d8f9a95081e4321b4047f142a5f0ddf22449cab4b9c",
     "resumeFoundation": {
       "id": "wally-mostafa-resume-2026-07-03",
@@ -461,15 +477,18 @@
       "registrySha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108"
     },
     "artifactHashes": {
-      "routeSha256": "f3408009a7de55d97ae8693688707cb4853b6b18849609196d5e0a9c9e6ccb91",
-      "resumePdfSha256": "c5e80dea25904ba5812af8f6a669ec16395c9d2775b1f97d65c02f562c59d3f0",
+      "routeSha256": "5b3ee4a275a0866f97fc6a5a5f94de259b84b79c34ff6a516f714b44116a4a45",
+      "resumePdfSha256": "f452295105dc2082b4b476f75966993391cc4c81f3901685a718f07f20f0c5ba",
       "coverLetterPdfSha256": null,
       "coverLetterMarkdownSha256": null,
       "scopedProjectSha256": {
-        "project-01.html": "6f0c2eb46107c02d36e39582699c700c16d9b03e97b23bba5c945b62f2ec5be6",
-        "project-03.html": "eeb8685550e7467b1cd72715503f32fbb233d1146f0dfe5451997bdac560abed",
-        "project-04.html": "deb716cdc2e4f4791d825fd139d5427f2e264ce9708d2c2cd786af67cf4655b3"
-      }
+        "project-01.html": "6705ad7c7de734a5cf22a285f55daa32bb4fec6f5f00c88553197cb6e3992147",
+        "project-03.html": "756744571ff294f85ee0a6d8b26cb55a6bdfb532eece116f8e6c1888c31c9864",
+        "project-04.html": "cf79e4360da9e93a4a17ded245341482d45b61e9da3245cec6f954d3d9bb6ab7",
+        "project-05.html": "75c8c2afd843ed9565d94c22c8acaffdca31d048257464adebf0a93f5a6c19ad",
+        "project-06.html": "0fc1612e80c324aa7cf0d78e9d02c99b0bf8ec915de26f94438da86b4855dead"
+      },
+      "scopedProjectAssetSha256": {}
     },
     "renderer": {
       "browser": {
@@ -487,7 +506,7 @@
       "ok": true,
       "pdfPath": "output/pdf/Wally-Mostafa-Pharma-UX-Resume.pdf",
       "pageCount": 2,
-      "fileSize": 72426,
+      "fileSize": 79099,
       "annotations": [
         {
           "page": 1,
@@ -612,9 +631,9 @@
     "humanizer": {
       "status": "passed",
       "version": "2.2.0",
-      "mode": "surface-only",
-      "reviewedAt": "2026-08-07T14:15:44.423Z",
-      "copySha256": "106ac079ac10c4ae987bb4879fe3c39fa59c97a27c048f2691f7ffa8a62fc146",
+      "mode": "rewrite-requested",
+      "reviewedAt": "2026-08-12T22:28:15.459Z",
+      "copySha256": "236d4cdcaf8ba65bfbabfa4b88d303914bee0b81aab0472591f5148df4d6779c",
       "reviewMethod": "humanizer-skill",
       "semanticPassAttested": true,
       "staticChecksPassed": true
@@ -638,6 +657,14 @@
           "errors": []
         },
         {
+          "name": "desktop-project-05",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-06",
+          "errors": []
+        },
+        {
           "name": "mobile",
           "errors": []
         },
@@ -651,6 +678,14 @@
         },
         {
           "name": "mobile-project-04",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-05",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-06",
           "errors": []
         }
       ],
