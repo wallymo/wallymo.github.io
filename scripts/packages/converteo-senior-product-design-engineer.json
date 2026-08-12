@@ -479,6 +479,7 @@
     "contactHeading": "Thanks for taking a look.",
     "projectAssetOverrides": {
       "project-06.html": {
+        "assets/ux-wally/dxa.jpg": "assets/ux-wally/dxa-channels.png",
         "assets/ux-wally/dxa-results.png": "assets/imagery/converteo/dxa/dxa-results-prada.png",
         "assets/ux-wally/dxa-questionnaire.png": "assets/imagery/converteo/dxa/dxa-questionnaire-prada.png"
       }
@@ -486,6 +487,23 @@
     "projectStatRemovals": {
       "project-06.html": [
         "DXA / Audit platform"
+      ]
+    },
+    "projectFullWidthSections": {
+      "project-06.html": [
+        {
+          "asset": "assets/ux-wally/dxa.jpg",
+          "copyMode": "heading-only"
+        },
+        {
+          "asset": "assets/ux-wally/dxa-results.png",
+          "copyMode": "heading-only"
+        }
+      ]
+    },
+    "projectFigureRemovals": {
+      "project-06.html": [
+        "assets/ux-wally/dxa-channels.png"
       ]
     },
     "projectPullquoteOverrides": {
@@ -554,7 +572,7 @@
     "humanizerVersion": "2.2.0",
     "mode": "surface-only",
     "status": "passed",
-    "reviewedAt": "2026-08-12T00:07:14.196Z",
+    "reviewedAt": "2026-08-12T01:01:53.005Z",
     "copySha256": "e8a852e0c2b444342cddff5da9b2c42f463f84bf544979f8ea74364fabb8ec40",
     "preserved": [
       "content",
@@ -571,8 +589,8 @@
   },
   "qa": {
     "status": "qa-passed",
-    "builtAt": "2026-08-12T00:07:54.753Z",
-    "configInputSha256": "b11c27be277e297d6edf9aba363ed7a84b053e7713870c28bc046a76cc38d415",
+    "builtAt": "2026-08-12T01:02:57.857Z",
+    "configInputSha256": "9c4b05f3756caa323f2bc5019317c5928a9d244116b95f3a1d313fae45ea39f3",
     "sourceResumeSha256": "2265313e78b596a2b37d6d8f9a95081e4321b4047f142a5f0ddf22449cab4b9c",
     "resumeFoundation": {
       "id": "wally-mostafa-resume-2026-07-03",
@@ -594,19 +612,20 @@
     },
     "artifactHashes": {
       "routeSha256": "ccf590347a26778f4da4a2d141f5dc3da318883c7391a4cea0df5599f93ba75d",
-      "resumePdfSha256": "b9a46708a0849641f23a4365cd6a1fd0bdbc1adab175eb65f8f82de7de686fef",
+      "resumePdfSha256": "683eaf361767abdf82a3d359aac541d0bd368a80f698070f0c346944304f18e6",
       "coverLetterPdfSha256": null,
       "coverLetterMarkdownSha256": null,
       "scopedProjectSha256": {
         "project-01.html": "66e0907d0ed0afefc7186f737c2c848b49438a0b70928711701fc3bb360e4498",
         "project-02.html": "7089c93d7c21085402039f46eb4d4303d3f01fd8e0c2722cdb7addd392d852b0",
         "project-08.html": "aee1fc580d340226da9e29f85f0b98474c607cbf1e150efe32fa3095c27a62ba",
-        "project-06.html": "9c0d838c7b7e1791e251f6348252cee0290dcff86ec8f5610b2749c8b4092d36"
+        "project-06.html": "04ed8a32f975144daa7a87510cafe3ee21e525b7694ea5b882f59eb0de5c1cd8"
       },
       "scopedProjectAssetSha256": {
         "assets/imagery/converteo/dxa/dxa-awards-video-poster.jpg": "f2238fd49c82d0392f57154bdac0a5ef1876c9cb948afcfe6d03d64c3fe6b8e0",
         "assets/imagery/converteo/dxa/dxa-questionnaire-prada.png": "3745f77df97bf7ad3fe874028d7f433ed2cd0d7d1a08d25a9feb905c1435bce5",
         "assets/imagery/converteo/dxa/dxa-results-prada.png": "b2c8fd6c54427d05e7f110d8e51469c59cf108aa6e18381c055617463fa22113",
+        "assets/ux-wally/dxa-channels.png": "ce08a3ebea79566300b82860ab6dec036dd19d3072f50b20c81059c166ac3b94",
         "assets/video/converteo/dxa/dxa-awards-video.mp4": "582e0a0fca9ef6aa65b726448c7396060280ef8c86eb0395c3c7c9ff297984e6"
       }
     },
@@ -805,7 +824,7 @@
       "status": "passed",
       "version": "2.2.0",
       "mode": "surface-only",
-      "reviewedAt": "2026-08-12T00:07:14.196Z",
+      "reviewedAt": "2026-08-12T01:01:53.005Z",
       "copySha256": "e8a852e0c2b444342cddff5da9b2c42f463f84bf544979f8ea74364fabb8ec40",
       "reviewMethod": "humanizer-skill",
       "semanticPassAttested": true,

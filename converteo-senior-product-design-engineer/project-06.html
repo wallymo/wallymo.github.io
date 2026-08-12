@@ -24,6 +24,63 @@
     .stats-bar--centered .stat:last-child:nth-child(odd) { grid-column: 1 / -1; }
   }
 </style>
+<style data-scoped-full-width-sections>
+  .product-inner--full-visual {
+    grid-template-columns: minmax(0, 1fr);
+    gap: clamp(24px, 3vw, 40px);
+    align-items: start;
+  }
+  .product-inner--full-visual.reverse { direction: ltr; }
+  .product-inner--full-visual .product-image {
+    aspect-ratio: 16 / 9;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    box-shadow: 0 24px 58px rgba(26, 23, 20, 0.14);
+  }
+  .product-inner--full-visual .product-image::before { display: none; }
+  .product-inner--full-visual .product-image img {
+    max-height: none;
+    object-fit: contain;
+  }
+  .product-inner--full-visual .product-text {
+    max-width: none;
+    display: grid;
+    grid-template-columns: minmax(160px, 0.35fr) minmax(0, 1fr);
+    column-gap: var(--space-xl);
+    align-items: baseline;
+  }
+  .product-inner--full-visual .product-tag {
+    grid-column: 1;
+    margin-bottom: 0;
+  }
+  .product-inner--full-visual .product-title {
+    grid-column: 2;
+    max-width: 32ch;
+    margin-bottom: 0;
+  }
+  .product-inner--heading-only .product-lede,
+  .product-inner--heading-only .product-points {
+    display: none;
+  }
+  @media (max-width: 760px) {
+    .product-inner--full-visual { gap: var(--space-l); }
+    .product-inner--full-visual .product-text { display: block; }
+    .product-inner--full-visual .product-tag {
+      margin-bottom: var(--space-xs);
+    }
+    .product-inner--full-visual .product-title {
+      max-width: none;
+      margin-bottom: var(--space-s);
+    }
+  }
+</style>
+<style data-scoped-figure-removals>
+  .image-pair--single {
+    grid-template-columns: minmax(0, 900px);
+    justify-content: center;
+  }
+</style>
 <style data-scoped-project-video>
   .scoped-project-video { margin-top: var(--space-xl); }
   .scoped-project-video video {
@@ -92,9 +149,9 @@
 </div>
 
 <div class="product-section">
-  <div class="product-inner">
+  <div class="product-inner product-inner--full-visual product-inner--heading-only">
     <div class="product-image" data-reveal>
-      <img src="../assets/ux-wally/dxa.jpg" alt="Digital Audit Experience hero visual">
+      <img src="../assets/ux-wally/dxa-channels.png" alt="Digital Audit Experience hero visual">
     </div>
     <div class="product-text">
       <span class="product-tag">Digital audit product</span>
@@ -110,7 +167,7 @@
 </div>
 
 <div class="product-section product-section--warm">
-  <div class="product-inner reverse">
+  <div class="product-inner reverse product-inner--full-visual product-inner--heading-only">
     <div class="product-image product-image--contain product-image--light" data-reveal>
       <img src="../assets/imagery/converteo/dxa/dxa-results-prada.png" alt="DXA audit results, benchmarks, and recommendation engine">
     </div>
@@ -131,13 +188,7 @@
   <div class="inner">
     <div class="section-label">Audit Creation</div>
     <h2 class="section-heading">The product made audit setup visible and structured.</h2>
-    <div class="image-pair">
-      <figure>
-        <div class="product-image product-image--contain product-image--light" data-reveal>
-          <img src="../assets/ux-wally/dxa-channels.png" alt="DXA audit creation channels and categories flow">
-        </div>
-        <figcaption class="image-caption">Audit creation</figcaption>
-      </figure>
+    <div class="image-pair image-pair--single">
       <figure>
         <div class="product-image product-image--contain product-image--light" data-reveal>
           <img src="../assets/imagery/converteo/dxa/dxa-questionnaire-prada.png" alt="DXA questionnaire progress interface">
