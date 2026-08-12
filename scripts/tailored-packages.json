@@ -2794,9 +2794,38 @@
         "project-06.html"
       ],
       "resumePdfPath": "output/pdf/Wally-Mostafa-Pharma-UX-Resume.pdf",
-      "publishStatus": "local-only",
+      "publishStatus": "live-verified",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-08-12T22:30:06.555Z"
+      "builtAt": "2026-08-12T22:30:06.555Z",
+      "verification": {
+        "verifiedAt": "2026-08-12T22:33:32.515Z",
+        "routeUrl": "https://wallymo.github.io/pharma-ux-networking/",
+        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-Pharma-UX-Resume.pdf",
+        "configUrl": "https://wallymo.github.io/scripts/packages/pharma-ux-networking.json",
+        "projectUrls": [
+          "https://wallymo.github.io/pharma-ux-networking/project-01.html",
+          "https://wallymo.github.io/pharma-ux-networking/project-03.html",
+          "https://wallymo.github.io/pharma-ux-networking/project-04.html",
+          "https://wallymo.github.io/pharma-ux-networking/project-05.html",
+          "https://wallymo.github.io/pharma-ux-networking/project-06.html"
+        ],
+        "configSha256": "f0c0279c0c5e2bfb3da544cf132b6a20abf93489b0ca44c7546f70aeafca3481",
+        "pdfSha256": "f452295105dc2082b4b476f75966993391cc4c81f3901685a718f07f20f0c5ba",
+        "resumeBaseProfilesUrl": "https://wallymo.github.io/scripts/resume-base-profiles.json",
+        "resumeBaseProfilesSha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108",
+        "routeSha256": "5b3ee4a275a0866f97fc6a5a5f94de259b84b79c34ff6a516f714b44116a4a45",
+        "scopedProjectSha256": {
+          "project-01.html": "6705ad7c7de734a5cf22a285f55daa32bb4fec6f5f00c88553197cb6e3992147",
+          "project-03.html": "756744571ff294f85ee0a6d8b26cb55a6bdfb532eece116f8e6c1888c31c9864",
+          "project-04.html": "cf79e4360da9e93a4a17ded245341482d45b61e9da3245cec6f954d3d9bb6ab7",
+          "project-05.html": "75c8c2afd843ed9565d94c22c8acaffdca31d048257464adebf0a93f5a6c19ad",
+          "project-06.html": "0fc1612e80c324aa7cf0d78e9d02c99b0bf8ec915de26f94438da86b4855dead"
+        },
+        "scopedProjectAssetUrls": [],
+        "scopedProjectAssetSha256": {},
+        "configInputSha256": "359d7d863cc192aa368419b0d7fa99b1366dcbf509c6164bc7d83bbb0a4c4833",
+        "qaBuiltAt": "2026-08-12T22:30:06.555Z"
+      }
     },
     {
       "workflowVersion": 2,
