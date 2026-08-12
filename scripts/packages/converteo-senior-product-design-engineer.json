@@ -488,6 +488,9 @@
         "DXA / Audit platform"
       ]
     },
+    "projectPullquoteOverrides": {
+      "project-06.html": "From audit scores to clear priorities."
+    },
     "projectVideoInsertions": {
       "project-06.html": {
         "src": "assets/video/converteo/dxa/dxa-awards-video.mp4",
@@ -551,8 +554,8 @@
     "humanizerVersion": "2.2.0",
     "mode": "surface-only",
     "status": "passed",
-    "reviewedAt": "2026-08-10T02:02:01.716Z",
-    "copySha256": "afb970a58e36c3bfb258f439bbcf711178b0f954772292bee37889195cba64e7",
+    "reviewedAt": "2026-08-12T00:07:14.196Z",
+    "copySha256": "e8a852e0c2b444342cddff5da9b2c42f463f84bf544979f8ea74364fabb8ec40",
     "preserved": [
       "content",
       "structure",
@@ -568,8 +571,8 @@
   },
   "qa": {
     "status": "qa-passed",
-    "builtAt": "2026-08-11T23:58:22.137Z",
-    "configInputSha256": "02390b566cdf75437610067a68f482d8159af70cfed4c787fa7b4d382c1954c3",
+    "builtAt": "2026-08-12T00:07:54.753Z",
+    "configInputSha256": "b11c27be277e297d6edf9aba363ed7a84b053e7713870c28bc046a76cc38d415",
     "sourceResumeSha256": "2265313e78b596a2b37d6d8f9a95081e4321b4047f142a5f0ddf22449cab4b9c",
     "resumeFoundation": {
       "id": "wally-mostafa-resume-2026-07-03",
@@ -591,14 +594,14 @@
     },
     "artifactHashes": {
       "routeSha256": "ccf590347a26778f4da4a2d141f5dc3da318883c7391a4cea0df5599f93ba75d",
-      "resumePdfSha256": "13b8b3fa077054f6d734eab560e85129ca3b7c73f8d9c781969d56c148f148eb",
+      "resumePdfSha256": "b9a46708a0849641f23a4365cd6a1fd0bdbc1adab175eb65f8f82de7de686fef",
       "coverLetterPdfSha256": null,
       "coverLetterMarkdownSha256": null,
       "scopedProjectSha256": {
         "project-01.html": "66e0907d0ed0afefc7186f737c2c848b49438a0b70928711701fc3bb360e4498",
         "project-02.html": "7089c93d7c21085402039f46eb4d4303d3f01fd8e0c2722cdb7addd392d852b0",
         "project-08.html": "aee1fc580d340226da9e29f85f0b98474c607cbf1e150efe32fa3095c27a62ba",
-        "project-06.html": "f11f1979153201f7d154d478dda09b3352e632945a31e0e09c8d4f83e374e35c"
+        "project-06.html": "9c0d838c7b7e1791e251f6348252cee0290dcff86ec8f5610b2749c8b4092d36"
       },
       "scopedProjectAssetSha256": {
         "assets/imagery/converteo/dxa/dxa-awards-video-poster.jpg": "f2238fd49c82d0392f57154bdac0a5ef1876c9cb948afcfe6d03d64c3fe6b8e0",
@@ -802,8 +805,8 @@
       "status": "passed",
       "version": "2.2.0",
       "mode": "surface-only",
-      "reviewedAt": "2026-08-10T02:02:01.716Z",
-      "copySha256": "afb970a58e36c3bfb258f439bbcf711178b0f954772292bee37889195cba64e7",
+      "reviewedAt": "2026-08-12T00:07:14.196Z",
+      "copySha256": "e8a852e0c2b444342cddff5da9b2c42f463f84bf544979f8ea74364fabb8ec40",
       "reviewMethod": "humanizer-skill",
       "semanticPassAttested": true,
       "staticChecksPassed": true
