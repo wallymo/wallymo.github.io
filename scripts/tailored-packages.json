@@ -1175,6 +1175,42 @@
     },
     {
       "workflowVersion": 2,
+      "contractRevision": 7,
+      "slug": "extensishr-project-manager",
+      "roleTitle": "ExtensisHR Project Manager",
+      "artifactStem": "ExtensisHR-Project-Manager",
+      "configPath": "scripts/packages/extensishr-project-manager.json",
+      "targetLane": "client-account-delivery",
+      "evidenceMode": "resume-primary",
+      "fitClass": "adjacent",
+      "positioningLane": "client-account-delivery",
+      "bridgeType": "operating-center",
+      "applicationStrategy": "transferable",
+      "resumeBaseMode": "account-leadership",
+      "resumeBaseLeadProfile": "account-leadership",
+      "resumeBaseAction": "tailor-to-jd",
+      "accountPresentation": "agency-progression",
+      "resumeBaseProfiles": [
+        {
+          "id": "account-leadership",
+          "version": 1
+        }
+      ],
+      "routeMode": "scoped-projects",
+      "selectedProjects": [
+        "project-06.html",
+        "project-03.html",
+        "project-02.html"
+      ],
+      "resumePdfPath": "output/pdf/Wally-Mostafa-ExtensisHR-Project-Manager-Resume.pdf",
+      "coverLetterPdfPath": "output/pdf/Wally-Mostafa-ExtensisHR-Project-Manager-Cover-Letter.pdf",
+      "coverLetterMarkdownPath": "output/pdf/Wally-Mostafa-ExtensisHR-Project-Manager-Cover-Letter.md",
+      "publishStatus": "local-only",
+      "qaStatus": "qa-passed",
+      "builtAt": "2026-08-13T16:37:39.296Z"
+    },
+    {
+      "workflowVersion": 2,
       "slug": "fieldguide-executive-assistant",
       "roleTitle": "Fieldguide Executive Assistant",
       "artifactStem": "Fieldguide-Executive-Assistant",

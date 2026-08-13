@@ -1,0 +1,1029 @@
+{
+  "workflowVersion": 2,
+  "contractRevision": 7,
+  "slug": "extensishr-project-manager",
+  "fitClass": "adjacent",
+  "classification": {
+    "targetLane": "client-account-delivery",
+    "evidenceMode": "resume-primary",
+    "primarySource": "The resume documents eight years of agency account leadership with briefs, scopes, timelines, budgets up to $20M, weekly status and financial reporting, vendor coordination, regulated approvals, and delivery across client, creative, production, UX, engineering, finance, and operations teams.",
+    "supportingSource": "The portfolio adds recent proof of workflow design, enterprise delivery, stakeholder research, executive presentations, technology implementation, risk visibility, and practical use of AI. It supports the project-delivery case without replacing the resume.",
+    "hardGateStatus": "pass",
+    "hardGates": [
+      {
+        "gate": "Bring at least three to five years of project-management-related experience across cross-functional initiatives, stakeholders, risks, timelines, and delivery",
+        "status": "pass",
+        "requirementId": "project-management-tenure",
+        "evidence": "The resume documents eight years of agency account delivery with direct ownership of briefs, scopes, timelines, budgets, status reporting, vendor coordination, approvals, and cross-functional execution."
+      }
+    ]
+  },
+  "artifactStem": "ExtensisHR-Project-Manager",
+  "roleTitle": "ExtensisHR Project Manager",
+  "job": {
+    "company": "ExtensisHR",
+    "roleTitle": "Project Manager",
+    "jobId": "6622",
+    "jobUrl": "https://careers-extensishr.icims.com/jobs/6622/project-manager/job",
+    "sourceChannel": "company-careers",
+    "dateCaptured": "2026-08-13",
+    "location": "Hybrid or remote depending on business needs and employee accommodation; specific office location not stated",
+    "employmentType": "not-provided",
+    "atsVendor": "iCIMS",
+    "rawJd": "Project Manager\n\nCategory: Project Management\nCompany: ExtensisHR\n\nWho We Are:\nExtensisHR, one of the largest Professional Employer Organizations (PEOs) in the U.S. with client employees in all fifty states, is looking for talented people to join our team. Our HR offerings include personalized services for HR, employee benefits, payroll and taxes, employer risk, compliance, and employee management. Today, we manage over $3 billion in employment-related costs annually.\n\nWho You Are:\nThe Project Manager is responsible for leading cross-functional projects that support ExtensisHR's strategic initiatives, operational improvements, and business priorities. This role partners with business stakeholders, technology teams, and vendors to plan, execute, and deliver projects that drive business value. The successful candidate will be comfortable managing multiple priorities, facilitating collaboration across teams, and ensuring projects remain on track to meet objectives.\n\nAs a member of the PMO, the Project Manager provides structure, communication, and accountability throughout the project lifecycle. This individual will manage plans, coordinate stakeholders, track risks and dependencies, facilitate issue resolution, and support business outcomes.\n\nWhat You'll Do:\nProject Leadership:\n- Lead cross-functional projects from initiation through implementation that support business goals.\n- Partner with business leaders to define project objectives, scope, timeline, success measures, and project plans.\n- Translate business objectives into actionable project plans, milestones, and deliverables.\n- Drive project momentum, accountability, and decision-making in evolving or ambiguous environments.\n- Manage multiple high-priority initiatives while balancing competing business needs and resource constraints.\n\nProject Execution:\n- Develop and maintain project plans, timelines, RAID logs, requirements, status reporting, and project documentation.\n- Identify, manage, and mitigate project risks, issues, dependencies, and resource constraints.\n- Ensure projects are delivered on time, within scope, and aligned to business objectives.\n- Manage scope changes, schedules, and stakeholder expectations throughout the project lifecycle.\n- Coordinate internal teams and third-party vendors.\n- Follow established PMO standards and contribute to continuous improvement.\n\nStakeholder and Executive Engagement:\n- Build partnerships across departments and with senior leadership.\n- Facilitate alignment across business, operational, and technology teams.\n- Prepare and present executive-ready status updates, recommendations, risks, decisions, and action plans.\n- Lead project meetings, team workshops, stakeholder discussions, and status updates.\n- Escalate issues appropriately and recommend resolutions.\n- Assist with project-to-operations transition planning to support ownership and adoption.\n\nAI Utilization and Literacy:\n- Use and understand AI tools and technologies to improve productivity, decision-making, and performance. Maintain awareness of emerging AI applications, apply AI tools ethically and effectively, and continue developing AI proficiency.\n\nWhat You Bring:\nRequired Qualifications:\n- 3-5+ years of project management-related experience managing cross-functional initiatives, stakeholders, risks, timelines, and project delivery.\n- Proven success managing complex, cross-functional projects with multiple stakeholders, dependencies, and competing priorities.\n- Experience working with business leaders, project sponsors, and cross-functional stakeholders.\n- Ability to take initiative, solve problems proactively, and manage projects independently.\n- Strong leadership, facilitation, problem-solving, and organizational skills.\n- Excellent written and verbal communication skills, including executive-level presentations and reporting.\n- Experience with project management methodologies, frameworks, and reporting.\n- Advanced proficiency with Microsoft Office Suite and project management tools.\n\nPreferred Qualifications:\n- PMP or CAPM certification strongly preferred.\n- Experience in PEO, payroll, HR outsourcing, benefits administration, professional employer services, or related industries.\n- Experience leading transformation, process improvement, automation, or technology implementation initiatives.\n- Experience working with CRM systems, HRIS systems, and enterprise business systems.\n- Familiarity with Agile, Hybrid, and traditional project delivery methodologies.\n- Experience supporting executive steering committees, PMOs, and organizational change initiatives.\n\nThe role may be performed in a hybrid or remote setting depending on business needs and employee accommodation. Occasional travel may be required. Position salary: $100,000-$115,000."
+  },
+  "fitGate": {
+    "resumeBase": {
+      "mode": "account-leadership",
+      "sourceProfiles": [
+        {
+          "id": "account-leadership",
+          "version": 1
+        }
+      ],
+      "leadProfileId": "account-leadership",
+      "accountPresentation": "agency-progression",
+      "action": "tailor-to-jd",
+      "rationale": "The role's operating center is project delivery through stakeholder alignment, planning, budgets, schedules, vendors, reporting, and implementation. Account Leadership is the correct base, and the agency progression shows more than the required project-management-related tenure. Later enterprise, UX, workflow, and AI work provides supporting implementation evidence."
+    },
+    "supportedOverlap": [
+      "Eight years of agency account-delivery progression with direct ownership of briefs, scopes, timelines, budgets, status reporting, approvals, and cross-functional execution.",
+      "Budgets up to $20M plus weekly client status and financial reporting across complex regulated programs.",
+      "Coordination across clients, brand teams, strategy, creative, production, media, UX, product, engineering, finance, operations, regulatory teams, and vendors.",
+      "Enterprise leadership that grew a distributed team from 2 to 30 while planning scope, resources, quality reviews, and engineering handoff across more than 20 products.",
+      "Recent process-improvement and technology work that turns unclear needs into working tools, repeatable workflows, project plans, executive recommendations, and adoption decisions.",
+      "Direct use of AI in workflow design, prototyping, risk review, client discovery, and decision support."
+    ],
+    "unsupportedRequirements": [
+      "Formal ownership of RAID logs, PMO governance, or executive steering committees is not documented.",
+      "Advanced Microsoft Office proficiency and a named commercial project-management platform are not documented.",
+      "PMP or CAPM certification is not documented.",
+      "PEO, payroll, benefits administration, HR outsourcing, or HRIS experience is not documented.",
+      "Formal Agile, Hybrid, or traditional project-delivery credentials and named methodology ownership are not documented."
+    ],
+    "actualMismatches": [
+      "The recent documented operating center spans AI implementation, product strategy, and UX rather than a dedicated PMO title, although the delivery responsibilities overlap directly."
+    ],
+    "missingEvidence": [
+      "Named RAID-log ownership, dependency tracking, and PMO reporting standards.",
+      "Advanced Microsoft Office and named project-management-tool proficiency.",
+      "PMP or CAPM certification.",
+      "PEO, payroll, benefits, HR outsourcing, or HRIS delivery.",
+      "Formal executive steering committee support and organizational-change metrics."
+    ],
+    "coverLetterBridge": {
+      "status": "recommended",
+      "rationale": "We can make the case with a cover letter by connecting eight years of account delivery, budgets up to $20M, scopes, timelines, status reporting, vendors, and cross-functional execution with later enterprise and technology implementation work. The letter must explain the move into a dedicated PMO role without implying PMP or CAPM certification, PEO or HRIS experience, RAID ownership, or named project-management tools."
+    },
+    "recommendation": "Proceed as adjacent with an Account Leadership resume and a sealed ExtensisHR showcase. Let the agency progression, budgets, project planning, status reporting, vendor coordination, and cross-functional delivery carry the resume. Use the cover letter to connect later enterprise, workflow, and AI implementation work to a dedicated PMO role while keeping the certification, PEO, HRIS, RAID, and named-tool gaps visible."
+  },
+  "positioning": {
+    "laneId": "client-account-delivery",
+    "targetIdentity": "project manager and client-delivery leader",
+    "employerNeed": "Give complex cross-functional initiatives the plans, communication, risk visibility, and accountability needed to move from business objective through implementation and operational handoff.",
+    "bridgeType": "operating-center",
+    "applicationStrategy": "transferable",
+    "bridgeThesis": "account and implementation leadership grounded in project delivery",
+    "proofIds": [
+      "account-management-03",
+      "kinesso-01",
+      "hedgehox-05"
+    ],
+    "remainingGap": "Formal PMO and RAID ownership, PMP or CAPM certification, PEO and HRIS experience, and named Office or project-management-tool proficiency are not documented."
+  },
+  "hero": {
+    "eyebrow": "ExtensisHR | Selected Work",
+    "tags": [
+      "Project delivery",
+      "Cross-functional leadership",
+      "AI-enabled workflows"
+    ],
+    "intro": "Here are a few recent projects that may be useful context alongside my resume for the Project Manager role. The resume covers my account-delivery background; this page offers a closer look at later workflow, enterprise, and implementation work."
+  },
+  "route": {
+    "presentation": "showcase",
+    "heroIntent": "resume-support",
+    "workHeading": "Selected work.",
+    "contactHeading": "Thanks for stopping by."
+  },
+  "contact": {
+    "prompt": "Email is the best way to reach me.",
+    "signoff": "Project delivery | stakeholder alignment | practical AI"
+  },
+  "selectedProjects": [
+    "project-06.html",
+    "project-03.html",
+    "project-02.html"
+  ],
+  "routeMode": "scoped-projects",
+  "resume": {
+    "foundationId": "wally-mostafa-resume-2026-07-03",
+    "compositionMode": "profile-complete",
+    "layoutDensity": "compact",
+    "summary": "Project manager and client-delivery leader with eight years of agency account experience and later work in enterprise technology and workflow improvement. I bring account and implementation leadership grounded in project delivery. I managed budgets up to $20M, owned briefs, scopes, project plans, timelines, client status and financial reporting, and coordinated stakeholders and vendors across complex programs. Recent work adds resource planning, executive presentations, risk visibility, AI-enabled workflows, and implementation handoff.",
+    "skillIds": [
+      "account-management-client-leadership",
+      "program-project-delivery",
+      "client-success-product-adoption",
+      "ai-implementation-workflow-design"
+    ],
+    "skills": [
+      {
+        "label": "Account Management & Client Leadership",
+        "description": "Client relationships, budgets up to $20M, briefs, scopes, timelines, status and financial reporting, vendor coordination, and cross-functional delivery"
+      },
+      {
+        "label": "Program & Project Delivery",
+        "description": "Scoping, requirements, timelines, review routing, team coordination, risk visibility, and build-ready handoff across product, design, and client teams"
+      },
+      {
+        "label": "Client Success & Product Adoption",
+        "description": "Client discovery, adoption-focused workflows, training and roadshows, human review, and product decisions based on user needs"
+      },
+      {
+        "label": "AI Implementation & Workflow Design",
+        "description": "Governed LLM/VLM workflows, multimodal review, RAG/knowledge bases, prompt-defined criteria, model orchestration, and human review surfaces"
+      }
+    ],
+    "experienceSections": [
+      {
+        "heading": "Project & Account Delivery Experience",
+        "roleIds": [
+          "account-management"
+        ]
+      },
+      {
+        "heading": "Most Recent Experience",
+        "roleIds": [
+          "hedgehox",
+          "one-block-away",
+          "kinesso",
+          "omnicom",
+          "heartbeat"
+        ]
+      }
+    ],
+    "awards": [
+      {
+        "label": "Indigo Awards 2023",
+        "detail": "Design System & Data Visualization: 3x Gold, 2x Silver",
+        "href": "https://www.indigoaward.com/winners/6748"
+      }
+    ],
+    "roles": {
+      "hedgehox": [
+        "Built Scope Generator for agency finance and operations teams to manage regional rate cards, brands, sub-brands, and natural-language scope changes",
+        "Translate pharma agency needs into working tools for brief intake, scoping, review routing, submission capture, claim review, and FDA signal monitoring",
+        "Designed Claims Detector workflows that surface evidence gaps, prepare audit-ready annotations, and keep human review in the approval path",
+        "Secured an investor for proprietary Claims Detection software by building the functional POC, shaping the demo story, and iterating with investors"
+      ],
+      "one-block-away": [
+        "Lead client discovery and turn unclear business questions into testable product concepts, working POCs, demo flows, and roadmap decisions",
+        "Built ListingPal's AI listing-generation POC and landing page, turning basic property inputs into listing copy, social posts, ad copy, styling direction, and MLS/SEO-ready language in under 90 seconds",
+        "Built WeReady's Bailey Intelligence dashboard, translating founder inputs, GitHub signals, source health, risk scoring, and evidence trails into startup-readiness workflows",
+        "Own product strategy, UX, AI workflow design, front-end build, backend logic, demo readiness, and client iteration from first ask through working prototype",
+        "Currently building the website and sponsor strategy for a Tunisia youth soccer program, positioning the project for player advancement, community support, and donor outreach"
+      ],
+      "kinesso": [
+        "Scaled product design from 2 to 30 across the US and Poland, with responsibility for hiring, staffing, scope, resource planning, quality reviews, and engineering handoff across 20+ products",
+        "Built Kinesso's first UX research practice across 20+ products, adding interviews, testing, analytics, shared documentation, and UX checkpoints to project plans",
+        "Led UX research and strategy for a marketing intelligence suite used by 7,000+ people across 22 white-label brands, using findings and adoption data to set roadmap and product-support priorities",
+        "Led workshops on product discovery, ecosystem mapping, innovation, and research, then presented recommendations to executives and clients",
+        "Helped build the Digital Experience Audit platform, turning channel scores, benchmarks, and recommendations into a repeatable workflow with data visualization and client-ready outputs"
+      ],
+      "omnicom": [
+        "Supported oncology accounts as a freelance UX designer, combining UX design and account-management experience to strengthen regulated healthcare work"
+      ],
+      "heartbeat": [
+        "Led UX research and experience strategy for pharma and healthcare work, translating stakeholder input, competitive audits, and user needs into digital product direction",
+        "Created journey maps, site maps, user flows, wireframes, and prototypes for patient, HCP, and internal brand-team experiences across regulated healthcare programs",
+        "Partnered with strategy, creative, account, and engineering teams to move UX recommendations from research findings into build-ready product and campaign experiences"
+      ],
+      "account-management": [
+        {
+          "title": "Account Supervisor / Digital Strategist",
+          "employer": "Scout Marketing",
+          "location": "San Diego, CA",
+          "dateRange": "Jun 2015 – Jul 2018",
+          "bullets": [
+            "Promoted from Senior Account Executive and took the lead on Jazz Pharmaceuticals XYREM consumer work: unbranded campaigns across digital, print, and in-office channels that lifted traffic and engagement on the disease-state site",
+            "Led the launch of the first unbranded social campaign on Facebook and YouTube for the brand and for Jazz, built around real patients telling their own stories",
+            "Oversaw an unbranded digital campaign bridging disease state and branded work; banners held a 0.37% click-through rate against a 0.17% industry benchmark and doubled qualified traffic to the brand site"
+          ]
+        },
+        {
+          "title": "Senior Account Executive",
+          "employer": "FCB Health",
+          "location": "New York, NY",
+          "dateRange": "Jun 2014 – Jun 2015",
+          "bullets": [
+            "One of two consumer account leads on the agency's largest pharma business, managing the Actavis Namenda XR direct-to-consumer launch and its $20M brand budget",
+            "Owned the broadcast workstream for three national television commercials in one year, covering market research, med-legal review, FDA preclearance, pre- and post-production, talent and location coordination, director searches, and network clearances; the spots drove a 45% increase in new-to-brand consumers within seven weeks",
+            "Led the launch of an unbranded Alzheimer's caregiver community site with support resources, sponsorship exploration, and public relations pull-through; also oversaw the account's Assistant Account Executive across in-office tactics, national print, and sales representative support materials"
+          ]
+        },
+        {
+          "title": "Senior Account Executive",
+          "employer": "Barker DZP",
+          "location": "New York, NY",
+          "dateRange": "Dec 2013 – May 2014",
+          "bullets": [
+            "Led the social campaign for a new Tough Mudder loyalty program and oversaw PDI and Nice-Pak, the agency's largest account, across print, digital, and social"
+          ]
+        },
+        {
+          "title": "Senior Account Executive",
+          "employer": "Cline Davis & Mann",
+          "location": "New York, NY",
+          "dateRange": "Sep 2013 – Dec 2013",
+          "bullets": [
+            "Used campaign metrics to shape Pfizer digital recommendations for Lipitor's online presence and loyalty program during loss of exclusivity, and piloted a Zoloft savings offer to test market response"
+          ]
+        },
+        {
+          "title": "Assistant Account Executive to Account Executive",
+          "employer": "FCB Health",
+          "location": "New York, NY",
+          "dateRange": "Apr 2011 – Sep 2013",
+          "bullets": [
+            "Managed development and execution of the unbranded Teva NUVIGIL campaign for National Night Shift Workers' Day across Times Square NASDAQ, national television, Xbox Live, radio, outdoor, and consumer journals, working through media, digital, and print vendors; the campaign won the 2013 Manny Award for Best Unbranded Campaign",
+            "Coordinated the NUVIGIL.com consumer rebrand across desktop and mobile with the agency's digital strategy and development teams, plus the launch of a CRM patient support program and its online patient community",
+            "Worked alongside the HCP team on the NUVIGIL.com HCP site and sales aid, both of which won 2011 Pharma Choice awards",
+            "Owned weekly client status and financial reporting plus OPDP and review-committee submissions across the $10M consumer business, and contributed to the annual strategic recommendations"
+          ]
+        },
+        {
+          "title": "Account Coordinator",
+          "employer": "RosettaWishbone",
+          "location": "New York, NY",
+          "dateRange": "Sep 2010 – Mar 2011",
+          "bullets": [
+            "Primary client contact across brand teams, national affiliates, and vendors on an award-winning global unbranded pneumococcal disease awareness campaign for the Pfizer Prevenar 13 adult pre-launch",
+            "Facilitated an Africa and Middle East advisory board in Dubai and owned project briefs, scopes of work, key opinion leader communications, and client status and financial reports"
+          ]
+        }
+      ]
+    },
+    "sourceBulletIds": {
+      "hedgehox": [
+        "hedgehox-05",
+        "hedgehox-03",
+        "hedgehox-02",
+        "hedgehox-01"
+      ],
+      "one-block-away": [
+        "one-block-away-01",
+        "one-block-away-02",
+        "one-block-away-03",
+        "one-block-away-04",
+        "one-block-away-05"
+      ],
+      "kinesso": [
+        "kinesso-01",
+        "kinesso-06",
+        "kinesso-02",
+        "kinesso-07",
+        "kinesso-03"
+      ],
+      "omnicom": [
+        "omnicom-01"
+      ],
+      "heartbeat": [
+        "heartbeat-01",
+        "heartbeat-02",
+        "heartbeat-03"
+      ],
+      "account-management": [
+        "addition:scout-xyrem-account-lead",
+        "addition:scout-xyrem-unbranded-social",
+        "addition:scout-xyrem-bridging-campaign",
+        "account-management-02",
+        "account-management-03",
+        "addition:fcb-namenda-caregiver-site",
+        "addition:barker-tough-mudder-pdi",
+        "addition:cdm-lipitor-zoloft-digital",
+        "account-management-01",
+        "addition:fcb-nuvigil-rebrand-crm",
+        "addition:fcb-nuvigil-hcp-collaboration",
+        "addition:fcb-nuvigil-client-operations",
+        "addition:rosetta-prevenar-client-contact",
+        "addition:rosetta-dubai-advisory"
+      ]
+    }
+  },
+  "requirements": [
+    {
+      "id": "project-management-tenure",
+      "text": "Bring at least three to five years of project-management-related experience managing cross-functional initiatives, stakeholders, risks, timelines, and delivery.",
+      "priority": "hard-gate",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The resume documents eight years of agency account delivery with briefs, scopes, timelines, budgets, status reporting, vendors, approvals, and cross-functional execution.",
+        "Later enterprise, UX, and implementation work adds resource planning, project-plan checkpoints, workflow design, risk visibility, and build-ready handoff."
+      ],
+      "proofIds": [
+        "account-management-03",
+        "addition:fcb-nuvigil-client-operations",
+        "kinesso-01"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience"
+      ],
+      "resumeTerms": [
+        "Project manager",
+        "eight years",
+        "project plans"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "cross-functional-project-leadership",
+      "text": "Lead complex cross-functional projects from initiation through implementation while balancing dependencies, priorities, and resource constraints.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Agency account delivery coordinated client, strategy, creative, production, media, digital, development, regulatory, finance, and vendor teams.",
+        "Kinesso work planned staffing, scope, resources, quality reviews, and engineering handoff across more than 20 products."
+      ],
+      "proofIds": [
+        "account-management-03",
+        "kinesso-01",
+        "heartbeat-03"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "cross-functional delivery",
+        "resource planning",
+        "engineering handoff"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "objectives-scope-timelines-and-plans",
+      "text": "Partner with business leaders to define objectives, scope, timelines, success measures, milestones, and actionable project plans.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The account record includes project briefs, scopes of work, production requirements, timelines, financial reports, and strategic recommendations.",
+        "Research and product work connects stakeholder needs and adoption data to project-plan checkpoints, roadmaps, and implementation decisions."
+      ],
+      "proofIds": [
+        "addition:rosetta-dubai-advisory",
+        "kinesso-06",
+        "kinesso-02"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "briefs",
+        "scopes",
+        "project plans",
+        "roadmap"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "project-controls-risk-and-reporting",
+      "text": "Maintain plans, requirements, status reporting, project documentation, risks, issues, dependencies, scope changes, and schedules.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "The resume directly supports weekly client status and financial reporting, scopes, timelines, review routing, approvals, risk visibility, and resource planning.",
+        "Formal RAID-log ownership and named PMO documentation standards are not documented."
+      ],
+      "proofIds": [
+        "addition:fcb-nuvigil-client-operations",
+        "hedgehox-02",
+        "kinesso-01"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience"
+      ],
+      "resumeTerms": [
+        "status and financial reporting",
+        "risk visibility",
+        "review routing"
+      ],
+      "matchMode": "contextual"
+    },
+    {
+      "id": "stakeholder-and-executive-engagement",
+      "text": "Align business, operational, and technology stakeholders and present executive-ready updates, recommendations, risks, decisions, and action plans.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The resume documents client status, financial reports, annual strategic recommendations, international advisory-board facilitation, workshops, and presentations to executives and clients.",
+        "Recent product work translates stakeholder input into roadmaps, working prototypes, recommendations, and handoff decisions."
+      ],
+      "proofIds": [
+        "addition:rosetta-dubai-advisory",
+        "kinesso-07",
+        "one-block-away-01"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "executives and clients",
+        "workshops",
+        "client status"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "vendor-and-team-coordination",
+      "text": "Coordinate internal teams and third-party vendors while managing expectations and resolving issues.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The account record includes direct coordination with client teams, national affiliates, media, digital, print, production, development, and outside vendors.",
+        "Later work adds engineering handoff, stakeholder workshops, quality reviews, and client iteration."
+      ],
+      "proofIds": [
+        "account-management-03",
+        "account-management-01",
+        "addition:rosetta-prevenar-client-contact"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience"
+      ],
+      "resumeTerms": [
+        "vendor coordination",
+        "cross-functional delivery"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "transformation-process-and-technology",
+      "text": "Lead transformation, process improvement, automation, or technology implementation and support the move from project delivery into sustainable operations.",
+      "priority": "preferred",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Current work converts agency finance, review, intake, and regulatory needs into working workflow tools.",
+        "Kinesso work created repeatable research and audit workflows and supported engineering handoff across enterprise products."
+      ],
+      "proofIds": [
+        "hedgehox-05",
+        "hedgehox-03",
+        "kinesso-03"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "technology implementation",
+        "workflow improvement",
+        "build-ready handoff"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "ai-utilization-and-literacy",
+      "text": "Use AI tools ethically and effectively to improve productivity, decision-making, and role performance.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Hedgehox work applies AI to claim review, brief intake, scoping, review routing, submission capture, and regulatory monitoring with human review.",
+        "One Block Away work uses AI to turn client questions into working POCs, risk views, demos, and product decisions."
+      ],
+      "proofIds": [
+        "hedgehox-03",
+        "hedgehox-02",
+        "one-block-away-04"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "AI-enabled workflows",
+        "human review",
+        "AI workflow design"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "office-and-project-tools",
+      "text": "Bring advanced Microsoft Office proficiency and experience with project-management tools, methodologies, frameworks, and reporting.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "The resume documents project planning, shared documentation, status and financial reporting, workflow tools, research tooling, and presentation-ready client outputs.",
+        "Advanced Microsoft Office proficiency and a named commercial project-management platform are not documented."
+      ],
+      "proofIds": [
+        "addition:fcb-nuvigil-client-operations",
+        "kinesso-06",
+        "kinesso-03"
+      ],
+      "destinations": [
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "shared documentation",
+        "status and financial reporting",
+        "workflow"
+      ],
+      "matchMode": "contextual"
+    },
+    {
+      "id": "preferred-certification-and-hr-domain",
+      "text": "Prefer PMP or CAPM certification plus experience in PEO, payroll, HR outsourcing, benefits administration, professional employer services, or HRIS.",
+      "priority": "preferred",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "proofIds": [],
+      "destinations": [
+        "application-answer"
+      ],
+      "resumeTerms": [
+        "PMP certification",
+        "professional employer organization experience",
+        "HRIS implementation"
+      ],
+      "matchMode": "not-supported"
+    },
+    {
+      "id": "enterprise-systems-and-change",
+      "text": "Prefer CRM or enterprise-system experience plus familiarity with organizational change and structured project-delivery methods.",
+      "priority": "preferred",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "The resume documents a CRM patient-support launch, enterprise products used by more than 7,000 people across 22 brands, onboarding workflows, roadshows, and adoption-focused research.",
+        "Formal Agile, Hybrid, traditional methodology, PMO, and steering-committee ownership are not documented."
+      ],
+      "proofIds": [
+        "addition:fcb-nuvigil-rebrand-crm",
+        "kinesso-02",
+        "kinesso-07"
+      ],
+      "destinations": [
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "CRM patient support program",
+        "7,000+",
+        "adoption"
+      ],
+      "matchMode": "contextual"
+    },
+    {
+      "id": "work-setting-and-travel",
+      "text": "Work in the employer's hybrid or remote setting as business needs require and travel occasionally.",
+      "priority": "context",
+      "source": "jd",
+      "confidence": "ambiguous",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "The resume lists Raleigh, North Carolina and current remote roles.",
+        "The posting does not state a primary office, required commuting radius, or travel frequency, so this must be confirmed during application readiness."
+      ],
+      "proofIds": [],
+      "destinations": [
+        "application-answer"
+      ],
+      "resumeTerms": [
+        "Raleigh, NC",
+        "Remote"
+      ],
+      "matchMode": "contextual"
+    }
+  ],
+  "coverLetter": {
+    "trigger": "bridge-recommended",
+    "date": "2026-08-13",
+    "greeting": "Dear ExtensisHR hiring team,",
+    "paragraphs": [
+      "I am applying for the Project Manager role at ExtensisHR. I spent eight years in agency account leadership, where the work centered on project plans, budgets, timelines, status reporting, vendors, approvals, and cross-functional delivery. Since then, I have led enterprise product work and built technology workflows that make complex decisions easier to manage. I am interested in bringing that background into a dedicated PMO role.",
+      "At FCB Health, I was one of two consumer account leads on the agency's largest pharmaceutical business and managed the $20M Namenda XR direct-to-consumer launch. I also owned the broadcast workstream for three national television commercials in one year, coordinating research, regulatory review, production, talent and location logistics, and network clearances. Earlier, on the $10M NUVIGIL consumer business, I owned weekly client status and financial reporting, multichannel delivery, review-committee submissions, and annual strategic recommendations.",
+      "At Kinesso, I helped grow a distributed product design team from 2 to 30 while planning staffing, scope, resources, quality reviews, and engineering handoff across more than 20 products. I built the company's first UX research practice with checkpoints in project plans, led workshops on product discovery and ecosystem mapping, and presented recommendations to executives and clients. I also helped turn a digital audit method into a repeatable workflow with benchmarks, recommendations, and client-ready reporting.",
+      "My current work sits between business needs and implementation. At Hedgehox, I built a Scope Generator for agency finance and operations teams and helped turn brief intake, review routing, submission capture, and regulatory monitoring into working tools. Through One Block Away, I lead discovery, define the problem, build a testable POC, gather feedback, and turn the result into a clear next decision. AI is part of that work, but the point is always a better process and a useful handoff.",
+      "My titles have spanned account leadership, UX, product strategy, and implementation. The common thread is giving complicated work enough structure to move: clarify the objective, make the plan visible, keep stakeholders aligned, surface risks early, and close the loop. I would welcome a conversation about bringing that approach to ExtensisHR's PMO."
+    ],
+    "closing": "Sincerely,",
+    "signature": "Wally Mostafa",
+    "proofIds": [
+      "account-management-03",
+      "kinesso-01",
+      "hedgehox-05"
+    ]
+  },
+  "constraints": {
+    "doNotClaim": [
+      "Current or former dedicated PMO Project Manager title",
+      "Formal RAID-log, PMO-governance, or executive-steering-committee ownership",
+      "PMP or CAPM certification",
+      "PEO, payroll, benefits administration, HR outsourcing, professional employer services, or HRIS experience",
+      "Advanced Microsoft Office proficiency or named commercial project-management-platform expertise",
+      "Formal Agile, Hybrid, waterfall, or traditional methodology credentials",
+      "Guaranteed office attendance or travel availability before the employer clarifies location and frequency"
+    ],
+    "blockedTerms": [
+      "PMP-certified",
+      "CAPM-certified",
+      "professional employer organization expert",
+      "payroll implementation",
+      "HRIS implementation",
+      "RAID log owner",
+      "PMO governance lead",
+      "steering committee owner",
+      "advanced Microsoft Office",
+      "Microsoft Project expert",
+      "Workfront expert",
+      "Smartsheet expert",
+      "Agile practitioner",
+      "waterfall practitioner"
+    ]
+  },
+  "copyReview": {
+    "humanizerVersion": "2.2.0",
+    "mode": "surface-only",
+    "status": "passed",
+    "reviewedAt": "2026-08-13T16:35:56.629Z",
+    "copySha256": "a59d24d89d613595db74395792ca48ca211d08385a9447d88d4b977c873b1119",
+    "preserved": [
+      "content",
+      "structure",
+      "claims",
+      "ending"
+    ],
+    "rewriteAuthorized": false,
+    "reviewMethod": "humanizer-skill",
+    "semanticPassAttested": true,
+    "staticChecksPassed": true,
+    "finalAntiAiPass": true,
+    "remainingTells": []
+  },
+  "qa": {
+    "status": "qa-passed",
+    "builtAt": "2026-08-13T16:37:39.296Z",
+    "configInputSha256": "83694a859f52953749acbe7f72cecbce3a04353ba822e3087f349b00a3425f32",
+    "sourceResumeSha256": "2265313e78b596a2b37d6d8f9a95081e4321b4047f142a5f0ddf22449cab4b9c",
+    "resumeFoundation": {
+      "id": "wally-mostafa-resume-2026-07-03",
+      "sourcePdfSha256": "f9b05b6c3c134262b1af6c5734363daf4385cf335407a139779a37d138adf1aa"
+    },
+    "resumeBase": {
+      "mode": "account-leadership",
+      "sourceProfiles": [
+        {
+          "id": "account-leadership",
+          "version": 1
+        }
+      ],
+      "leadProfileId": "account-leadership",
+      "accountPresentation": "agency-progression",
+      "action": "tailor-to-jd",
+      "registryVersion": 1,
+      "registrySha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108"
+    },
+    "artifactHashes": {
+      "routeSha256": "d9e4540af28a85986623a4fdd55144cde14ee399166ed0b75af9c289828855d4",
+      "resumePdfSha256": "dcd12e5cbde7fe6f772d6e4e3529c158a1792bbd9bf0be47cab9e85c5ce22390",
+      "coverLetterPdfSha256": "73b7db0f38110d66978f53bf093c38ba4caa3a29fbe646d53c40a6961e348ff0",
+      "coverLetterMarkdownSha256": "a9f3fc119c04e3539106d0c08c74646f0ccd9c5b18fd2d8b40dba1f603513e13",
+      "scopedProjectSha256": {
+        "project-06.html": "22eff04668532815b4a60f8e935d5f3ea6ca0a91e013ed52b378d4e72fd2fad5",
+        "project-03.html": "cc2a754eeaf97c1cd12ec87bbe85442dee8e1a483b385942d1d3cabda87d8802",
+        "project-02.html": "ddcdbbd17902748552155d0fa33c16f17d492984092ea08849c71a5e38a8feff"
+      },
+      "scopedProjectAssetSha256": {}
+    },
+    "renderer": {
+      "browser": {
+        "name": "chrome-headless-shell",
+        "version": "Google Chrome for Testing 149.0.7827.55"
+      },
+      "htmlPath": "tmp/tailored-resumes/extensishr-project-manager.html",
+      "pdfPath": "output/pdf/Wally-Mostafa-ExtensisHR-Project-Manager-Resume.pdf",
+      "fontWait": true,
+      "fontProfile": "portfolio-pdf"
+    },
+    "coverLetterRenderer": {
+      "browser": {
+        "name": "chrome-headless-shell",
+        "version": "Google Chrome for Testing 149.0.7827.55"
+      },
+      "htmlPath": "tmp/tailored-resumes/extensishr-project-manager-cover-letter.html",
+      "pdfPath": "output/pdf/Wally-Mostafa-ExtensisHR-Project-Manager-Cover-Letter.pdf",
+      "fontWait": true,
+      "fontProfile": "portfolio-pdf"
+    },
+    "coverLetter": {
+      "ok": true,
+      "failures": [],
+      "pageCount": 1,
+      "sizeBytes": 25322,
+      "templateVersion": "real-chemistry-21grams-v1",
+      "fonts": {
+        "display": "Syne 800",
+        "body": "Instrument Sans 400/600",
+        "type3Fonts": false
+      },
+      "layout": {
+        "page": "Letter",
+        "margin": "0.58in 0.62in",
+        "header": "centered-rule"
+      }
+    },
+    "ats": {
+      "ok": true,
+      "pdfPath": "output/pdf/Wally-Mostafa-ExtensisHR-Project-Manager-Resume.pdf",
+      "pageCount": 2,
+      "fileSize": 81370,
+      "annotations": [
+        {
+          "page": 1,
+          "uri": "mailto:wmostafa12@gmail.com"
+        },
+        {
+          "page": 1,
+          "uri": "https://linkedin.com/in/wallymo"
+        },
+        {
+          "page": 1,
+          "uri": "https://wallymo.github.io/extensishr-project-manager/"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/6748"
+        }
+      ],
+      "fontCompatibility": {
+        "type3Fonts": false
+      },
+      "coverage": [
+        {
+          "id": "project-management-tenure",
+          "requirement": "Bring at least three to five years of project-management-related experience managing cross-functional initiatives, stakeholders, risks, timelines, and delivery.",
+          "priority": "hard-gate",
+          "evidenceStatus": "direct",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "Project manager",
+            "eight years",
+            "project plans"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "cross-functional-project-leadership",
+          "requirement": "Lead complex cross-functional projects from initiation through implementation while balancing dependencies, priorities, and resource constraints.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "cross-functional delivery",
+            "resource planning",
+            "engineering handoff"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "objectives-scope-timelines-and-plans",
+          "requirement": "Partner with business leaders to define objectives, scope, timelines, success measures, milestones, and actionable project plans.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "briefs",
+            "scopes",
+            "project plans",
+            "roadmap"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "project-controls-risk-and-reporting",
+          "requirement": "Maintain plans, requirements, status reporting, project documentation, risks, issues, dependencies, scope changes, and schedules.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "contextual",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "status and financial reporting",
+            "risk visibility",
+            "review routing"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "stakeholder-and-executive-engagement",
+          "requirement": "Align business, operational, and technology stakeholders and present executive-ready updates, recommendations, risks, decisions, and action plans.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "executives and clients",
+            "workshops",
+            "client status"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "vendor-and-team-coordination",
+          "requirement": "Coordinate internal teams and third-party vendors while managing expectations and resolving issues.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "vendor coordination",
+            "cross-functional delivery"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "transformation-process-and-technology",
+          "requirement": "Lead transformation, process improvement, automation, or technology implementation and support the move from project delivery into sustainable operations.",
+          "priority": "preferred",
+          "evidenceStatus": "direct",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "workflow improvement",
+            "build-ready handoff"
+          ],
+          "missingTerms": [
+            "technology implementation"
+          ]
+        },
+        {
+          "id": "ai-utilization-and-literacy",
+          "requirement": "Use AI tools ethically and effectively to improve productivity, decision-making, and role performance.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "AI-enabled workflows",
+            "human review",
+            "AI workflow design"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "office-and-project-tools",
+          "requirement": "Bring advanced Microsoft Office proficiency and experience with project-management tools, methodologies, frameworks, and reporting.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "contextual",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "shared documentation",
+            "status and financial reporting",
+            "workflow"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "preferred-certification-and-hr-domain",
+          "requirement": "Prefer PMP or CAPM certification plus experience in PEO, payroll, HR outsourcing, benefits administration, professional employer services, or HRIS.",
+          "priority": "preferred",
+          "evidenceStatus": "none",
+          "matchMode": "not-supported",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "PMP certification",
+            "professional employer organization experience",
+            "HRIS implementation"
+          ]
+        },
+        {
+          "id": "enterprise-systems-and-change",
+          "requirement": "Prefer CRM or enterprise-system experience plus familiarity with organizational change and structured project-delivery methods.",
+          "priority": "preferred",
+          "evidenceStatus": "adjacent",
+          "matchMode": "contextual",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "CRM patient support program",
+            "7,000+",
+            "adoption"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "work-setting-and-travel",
+          "requirement": "Work in the employer's hybrid or remote setting as business needs require and travel occasionally.",
+          "priority": "context",
+          "evidenceStatus": "adjacent",
+          "matchMode": "contextual",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "Raleigh, NC",
+            "Remote"
+          ],
+          "missingTerms": []
+        }
+      ],
+      "failures": [],
+      "warnings": []
+    },
+    "humanizer": {
+      "status": "passed",
+      "version": "2.2.0",
+      "mode": "surface-only",
+      "reviewedAt": "2026-08-13T16:35:56.629Z",
+      "copySha256": "a59d24d89d613595db74395792ca48ca211d08385a9447d88d4b977c873b1119",
+      "reviewMethod": "humanizer-skill",
+      "semanticPassAttested": true,
+      "staticChecksPassed": true
+    },
+    "route": {
+      "viewports": [
+        {
+          "name": "desktop",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-06",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-03",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-02",
+          "errors": []
+        },
+        {
+          "name": "mobile",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-06",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-03",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-02",
+          "errors": []
+        }
+      ],
+      "errors": []
+    }
+  },
+  "privacy": {
+    "publicSafe": true,
+    "notes": "Contains only the public ExtensisHR job description and public-safe evidence from the resume and portfolio. It excludes recruiter details, application answers, compensation decisions, private eligibility information, and submission state."
+  }
+}
