@@ -1205,9 +1205,38 @@
       "resumePdfPath": "output/pdf/Wally-Mostafa-ExtensisHR-Project-Manager-Resume.pdf",
       "coverLetterPdfPath": "output/pdf/Wally-Mostafa-ExtensisHR-Project-Manager-Cover-Letter.pdf",
       "coverLetterMarkdownPath": "output/pdf/Wally-Mostafa-ExtensisHR-Project-Manager-Cover-Letter.md",
-      "publishStatus": "local-only",
+      "publishStatus": "live-verified",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-08-13T16:37:39.296Z"
+      "builtAt": "2026-08-13T16:37:39.296Z",
+      "verification": {
+        "verifiedAt": "2026-08-13T16:41:39.638Z",
+        "routeUrl": "https://wallymo.github.io/extensishr-project-manager/",
+        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-ExtensisHR-Project-Manager-Resume.pdf",
+        "configUrl": "https://wallymo.github.io/scripts/packages/extensishr-project-manager.json",
+        "projectUrls": [
+          "https://wallymo.github.io/extensishr-project-manager/project-06.html",
+          "https://wallymo.github.io/extensishr-project-manager/project-03.html",
+          "https://wallymo.github.io/extensishr-project-manager/project-02.html"
+        ],
+        "configSha256": "e3b27a00362ed3eb8db50a16f0d2db39f88902f0e561c4cd4abdfe1a60de37b9",
+        "pdfSha256": "dcd12e5cbde7fe6f772d6e4e3529c158a1792bbd9bf0be47cab9e85c5ce22390",
+        "resumeBaseProfilesUrl": "https://wallymo.github.io/scripts/resume-base-profiles.json",
+        "resumeBaseProfilesSha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108",
+        "coverLetterPdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-ExtensisHR-Project-Manager-Cover-Letter.pdf",
+        "coverLetterMarkdownUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-ExtensisHR-Project-Manager-Cover-Letter.md",
+        "coverLetterPdfSha256": "73b7db0f38110d66978f53bf093c38ba4caa3a29fbe646d53c40a6961e348ff0",
+        "coverLetterMarkdownSha256": "a9f3fc119c04e3539106d0c08c74646f0ccd9c5b18fd2d8b40dba1f603513e13",
+        "routeSha256": "d9e4540af28a85986623a4fdd55144cde14ee399166ed0b75af9c289828855d4",
+        "scopedProjectSha256": {
+          "project-06.html": "22eff04668532815b4a60f8e935d5f3ea6ca0a91e013ed52b378d4e72fd2fad5",
+          "project-03.html": "cc2a754eeaf97c1cd12ec87bbe85442dee8e1a483b385942d1d3cabda87d8802",
+          "project-02.html": "ddcdbbd17902748552155d0fa33c16f17d492984092ea08849c71a5e38a8feff"
+        },
+        "scopedProjectAssetUrls": [],
+        "scopedProjectAssetSha256": {},
+        "configInputSha256": "83694a859f52953749acbe7f72cecbce3a04353ba822e3087f349b00a3425f32",
+        "qaBuiltAt": "2026-08-13T16:37:39.296Z"
+      }
     },
     {
       "workflowVersion": 2,
