@@ -127,7 +127,7 @@ Use the self-contained employer-specific showcase as the default route pattern.
 ## Tailoring Logic
 
 - Read the JD for title, seniority, domain, and repeated requirements.
-- Do not skip the fit gate. First decide whether the role is `strong`, `adjacent`, `stretch`, or `not-fit`, then choose the resume base from the role's primary operating center. Make both calls from evidence in the resume profiles, the full public project pool (`project-01.html` through `project-07.html`), and existing artifacts.
+- Do not skip the fit gate. First decide whether the role is `strong`, `adjacent`, `stretch`, or `not-fit`, then choose the resume base from the role's primary operating center. Make both calls from evidence in the resume profiles, the full public project pool (`project-01.html` through `project-08.html`), and existing artifacts.
 - Select the role route's projects as an argument: put the strongest matching case study first, keep the set to 3 by default, and include a fourth only when it adds distinct proof the first three do not cover.
 - If the fit is `not-fit`, do not generate artifacts. Return the blocker and the honest make-it-fit path instead.
 - For stretch roles, keep the artifact honest: emphasize supported adjacency and explicitly avoid unsupported claims such as certifications, hands-on domain operations, platform ownership, or direct tool/framework experience that the source materials do not prove.

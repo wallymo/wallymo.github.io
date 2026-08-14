@@ -80,11 +80,12 @@ When the human sends a job, start with the fit gate. If it clears as a strong fi
 - Pick 3 relevant projects by default, ordered by role relevance rather than default chronology. Use 4 only when the JD genuinely spans multiple proof lanes. Use 5 only if the human explicitly asks for a deeper version.
   - `project-01.html` — Pharma AI Platform: regulated pharma AI, MLR, FDA/HIPAA, agency workflows, LLM/VLM implementation.
   - `project-02.html` — The POC Guy: AI POCs, client discovery, rapid prototypes, vertical testing, early product validation.
-  - `project-03.html` — Enterprise Design System: enterprise UX, data visualization, white-label systems, design leadership, team scale.
+  - `project-03.html` — Enterprise Data Visualization: MIE dashboard UX, visualization systems, white-label analytics, DXA data storytelling, and enterprise scale.
   - `project-04.html` — User Research: research ops, interviews, Figma documentation, roadshows, user-centered product practice.
   - `project-05.html` — Splash Design System: component systems, Figma, design ops, personas, system governance, award-backed UX.
   - `project-06.html` — Digital Audit Experience: audit workflows, AI-powered data visualization, benchmarking, recommendations, awards.
   - `project-07.html` — Other Highlights: design leadership, accessibility, innovation challenge, service-desk product UX.
+  - `project-08.html` — Xenagos Biopharma Website: AI-assisted design and build, investor-facing scientific communication, information architecture, visual direction, and design-system handoff.
 - Use the self-contained showcase pattern by default: `routeMode: "scoped-projects"` with `route.presentation: "showcase"` and `route.heroIntent: "resume-support"`. Route cards, scoped case studies, in-body project links, logos, all-work links, and previous/next links must keep recruiters inside the employer-specific package.
 - Use `canonical-projects` or `route.presentation: "full"` only as an explicit opt-out when the canonical public portfolio or fuller homepage narrative is intentionally part of the proof path.
 - If a tailored route includes scoped project pages, update every project card, back link, breadcrumb, previous link, and next-project link to keep recruiters inside the role-specific project sequence.
