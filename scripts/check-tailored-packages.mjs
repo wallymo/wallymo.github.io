@@ -359,6 +359,10 @@ function validateScopedProjectRedirects(config, paths, failures) {
     const canonicalUrl = `${PUBLIC_BASE}${paths.slug}/${target}`;
     const expectedMarkers = [
       '<meta name="robots" content="noindex">',
+      '<meta property="og:title" content="',
+      '<meta property="og:description" content="',
+      '<meta property="og:type" content="website">',
+      `<meta property="og:url" content="${canonicalUrl}">`,
       `<meta http-equiv="refresh" content="0; url=${target}">`,
       `<link rel="canonical" href="${canonicalUrl}">`,
       `window.location.replace(${JSON.stringify(target)})`,

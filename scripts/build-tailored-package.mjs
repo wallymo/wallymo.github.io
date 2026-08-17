@@ -800,17 +800,38 @@ function buildScopedProjectHtml(project, config, paths, index, titlesByProject) 
 
 function buildScopedProjectRedirectHtml({
   paths,
+  source,
   target,
   title,
 }) {
   const escapedTarget = escapeHtml(target);
   const escapedTitle = escapeHtml(title);
   const canonicalUrl = `${PUBLIC_BASE}${paths.slug}/${target}`;
+  const sourceHtml = readFileSync(resolveRepoPath(source), 'utf8');
+  const sourceDescription = sourceHtml.match(
+    /<meta name="description" content="([^"]*)">/
+  )?.[1];
+  const sourceOgTitle = sourceHtml.match(
+    /<meta property="og:title" content="([^"]*)">/
+  )?.[1];
+  const sourceOgDescription = sourceHtml.match(
+    /<meta property="og:description" content="([^"]*)">/
+  )?.[1];
+  const description =
+    sourceDescription || sourceOgDescription || `${escapedTitle} case study.`;
+  const ogTitle = sourceOgTitle || `${escapedTitle} — Wally Mostafa`;
+  const ogDescription = sourceOgDescription || description;
   return `<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="${description}">
   <meta name="robots" content="noindex">
+  <meta property="og:title" content="${ogTitle}">
+  <meta property="og:description" content="${ogDescription}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="${canonicalUrl}">
   <meta http-equiv="refresh" content="0; url=${escapedTarget}">
   <link rel="canonical" href="${canonicalUrl}">
   <title>${escapedTitle} | Wally Mostafa</title>
@@ -1378,6 +1399,7 @@ export async function buildTailoredPackage({
           `${paths.slug}/${source}`,
           buildScopedProjectRedirectHtml({
             paths,
+            source,
             target,
             title:
               titlesByProject.get(source) ||

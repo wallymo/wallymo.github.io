@@ -3845,6 +3845,15 @@ test(
         redirectHtml,
         /<link rel="canonical" href="https:\/\/wallymo\.github\.io\/scoped-fixture\/project-02\.html">/
       );
+      assert.match(redirectHtml, /<meta property="og:title" content="[^"]+">/);
+      assert.match(
+        redirectHtml,
+        /<meta property="og:description" content="[^"]+">/
+      );
+      assert.match(
+        redirectHtml,
+        /<meta property="og:url" content="https:\/\/wallymo\.github\.io\/scoped-fixture\/project-02\.html">/
+      );
       assert.match(
         redirectHtml,
         /window\.location\.replace\("project-02\.html"\)/
