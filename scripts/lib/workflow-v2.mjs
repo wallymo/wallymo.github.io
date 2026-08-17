@@ -139,6 +139,12 @@ export function scopedProjectEntries(config) {
   }));
 }
 
+export function scopedProjectRedirectEntries(config) {
+  return scopedProjectEntries(config)
+    .filter(({ source, output }) => source !== output)
+    .map(({ source, output }) => ({ source, target: output }));
+}
+
 export function scopedProjectAssets(config) {
   return [
     ...new Set(
@@ -2367,6 +2373,16 @@ export function validateV2Config(
           errors,
           new Set(scopedFilenames).size === scopedFilenames.length,
           'route.projectAliases must produce unique scoped project filenames'
+        );
+        const redirectSources = scopedProjectRedirectEntries(config).map(
+          ({ source }) => source
+        );
+        pushError(
+          errors,
+          redirectSources.every(
+            (source) => !scopedFilenames.includes(source)
+          ),
+          'route.projectAliases redirect paths must not collide with scoped project filenames'
         );
       }
       const projectAssetOverrides = route.projectAssetOverrides;

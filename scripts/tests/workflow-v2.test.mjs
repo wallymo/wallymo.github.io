@@ -37,6 +37,7 @@ import {
   resumeRoleSubEntries,
   scopedProjectEntries,
   scopedProjectFilename,
+  scopedProjectRedirectEntries,
   validateV2Config,
 } from '../lib/workflow-v2.mjs';
 import {
@@ -1418,6 +1419,9 @@ test(
         { source: 'project-02.html', output: 'project-09.html' },
         { source: 'project-03.html', output: 'project-03.html' },
       ]);
+      assert.deepEqual(scopedProjectRedirectEntries(validAliases), [
+        { source: 'project-02.html', target: 'project-09.html' },
+      ]);
       assert.doesNotMatch(
         validateV2Config(validAliases).join('\n'),
         /route\.projectAliases/
@@ -1464,6 +1468,15 @@ test(
       assert.match(
         validateV2Config(collidingAlias).join('\n'),
         /must produce unique scoped project filenames/
+      );
+      const redirectCollision = structuredClone(validAliases);
+      redirectCollision.route.projectAliases = {
+        'project-01.html': 'project-02.html',
+        'project-02.html': 'project-01.html',
+      };
+      assert.match(
+        validateV2Config(redirectCollision).join('\n'),
+        /redirect paths must not collide with scoped project filenames/
       );
 
       config.route = {
@@ -3818,8 +3831,25 @@ test(
       assert.equal(result.status, 0, `${result.stdout}\n${result.stderr}`);
       assert.equal(
         existsSync(path.join(tempRoot, 'scoped-fixture', 'project-06.html')),
-        false
+        true
       );
+      const redirectHtml = readFileSync(
+        path.join(tempRoot, 'scoped-fixture', 'project-06.html'),
+        'utf8'
+      );
+      assert.match(
+        redirectHtml,
+        /<meta http-equiv="refresh" content="0; url=project-02\.html">/
+      );
+      assert.match(
+        redirectHtml,
+        /<link rel="canonical" href="https:\/\/wallymo\.github\.io\/scoped-fixture\/project-02\.html">/
+      );
+      assert.match(
+        redirectHtml,
+        /window\.location\.replace\("project-02\.html"\)/
+      );
+      assert.match(redirectHtml, /href="project-02\.html"/);
       const scopedOutputs = [
         'project-03.html',
         'project-02.html',
@@ -3963,11 +3993,11 @@ test(
         Object.keys(
           savedConfig.qa.artifactHashes.scopedProjectSha256
         ).length,
-        3
+        4
       );
       assert.deepEqual(
         Object.keys(savedConfig.qa.artifactHashes.scopedProjectSha256),
-        scopedOutputs
+        [...scopedOutputs, 'project-06.html']
       );
       assert.deepEqual(
         Object.keys(
@@ -3981,12 +4011,22 @@ test(
       );
 
       let corruptScopedAsset = false;
+      let corruptScopedRedirect = false;
       const fixtureServer = await startFixtureServer(tempRoot, {
         transform(relativePath, content) {
-          return corruptScopedAsset &&
+          if (
+            corruptScopedAsset &&
             relativePath === 'fixtures/dxa-awards.mp4'
-            ? Buffer.concat([content, Buffer.from('stale')])
-            : content;
+          ) {
+            return Buffer.concat([content, Buffer.from('stale')]);
+          }
+          if (
+            corruptScopedRedirect &&
+            relativePath === 'scoped-fixture/project-06.html'
+          ) {
+            return Buffer.concat([content, Buffer.from('stale')]);
+          }
+          return content;
         },
       });
       const previousRepoRoot = process.env.WORKFLOW_REPO_ROOT;
@@ -4008,7 +4048,13 @@ test(
           `${fixtureServer.publicBase}scoped-fixture/project-02.html`,
           `${fixtureServer.publicBase}scoped-fixture/project-07.html`,
         ]);
-        assert.deepEqual(Object.keys(liveProof.scopedProjectSha256), scopedOutputs);
+        assert.deepEqual(liveProof.redirectUrls, [
+          `${fixtureServer.publicBase}scoped-fixture/project-06.html`,
+        ]);
+        assert.deepEqual(Object.keys(liveProof.scopedProjectSha256), [
+          ...scopedOutputs,
+          'project-06.html',
+        ]);
         assert.deepEqual(Object.keys(liveProof.scopedProjectAssetSha256), [
           'assets/ux-wally/dxa-questionnaire.png',
           'fixtures/dxa-awards.jpg',
@@ -4021,6 +4067,15 @@ test(
               publicBase: fixtureServer.publicBase,
             }),
           /Scoped project asset .* checksum mismatch/
+        );
+        corruptScopedAsset = false;
+        corruptScopedRedirect = true;
+        await assert.rejects(
+          () =>
+            fetchPublishedArtifacts(manifest.packages[0], savedConfig, {
+              publicBase: fixtureServer.publicBase,
+            }),
+          /Scoped project redirect project-06\.html checksum mismatch/
         );
       } finally {
         fixtureServer.server.close();

@@ -38,6 +38,7 @@ import {
   scopedProjectAssets,
   scopedProjectEntries,
   scopedProjectFilename,
+  scopedProjectRedirectEntries,
   sha256File,
   slugify,
   upsertV2ManifestEntry,
@@ -797,6 +798,31 @@ function buildScopedProjectHtml(project, config, paths, index, titlesByProject) 
   );
 }
 
+function buildScopedProjectRedirectHtml({
+  paths,
+  target,
+  title,
+}) {
+  const escapedTarget = escapeHtml(target);
+  const escapedTitle = escapeHtml(title);
+  const canonicalUrl = `${PUBLIC_BASE}${paths.slug}/${target}`;
+  return `<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="robots" content="noindex">
+  <meta http-equiv="refresh" content="0; url=${escapedTarget}">
+  <link rel="canonical" href="${canonicalUrl}">
+  <title>${escapedTitle} | Wally Mostafa</title>
+  <script>window.location.replace(${JSON.stringify(target)});</script>
+</head>
+<body>
+  <p>This project moved to <a href="${escapedTarget}">${escapedTitle}</a>.</p>
+</body>
+</html>
+`;
+}
+
 function buildRoute(config, paths) {
   const indexHtml = readFileSync(resolveRepoPath('index.html'), 'utf8');
   let routeHtml = rewriteRootRefsForRoute(indexHtml);
@@ -1278,6 +1304,9 @@ export async function buildTailoredPackage({
     trackedOutputs.push(
       ...scopedProjectEntries(config).map(
         ({ output }) => `${paths.slug}/${output}`
+      ),
+      ...scopedProjectRedirectEntries(config).map(
+        ({ source }) => `${paths.slug}/${source}`
       )
     );
   }
@@ -1342,6 +1371,18 @@ export async function buildTailoredPackage({
         writeText(
           `${paths.slug}/${scopedFilename}`,
           buildScopedProjectHtml(project, config, paths, index, titlesByProject)
+        );
+      }
+      for (const { source, target } of scopedProjectRedirectEntries(config)) {
+        writeText(
+          `${paths.slug}/${source}`,
+          buildScopedProjectRedirectHtml({
+            paths,
+            target,
+            title:
+              titlesByProject.get(source) ||
+              canonicalProjectDetails(source).title,
+          })
         );
       }
     }
@@ -1420,9 +1461,14 @@ export async function buildTailoredPackage({
         scopedProjectSha256:
           config.routeMode === 'scoped-projects'
             ? Object.fromEntries(
-                scopedProjectEntries(config).map(({ output }) => [
-                  output,
-                  sha256File(`${paths.slug}/${output}`),
+                [
+                  ...scopedProjectEntries(config).map(({ output }) => output),
+                  ...scopedProjectRedirectEntries(config).map(
+                    ({ source }) => source
+                  ),
+                ].map((project) => [
+                  project,
+                  sha256File(`${paths.slug}/${project}`),
                 ])
               )
             : {},
@@ -1468,9 +1514,14 @@ export async function buildTailoredPackage({
         : null,
       scopedProjectPaths:
         config.routeMode === 'scoped-projects'
-          ? scopedProjectEntries(config).map(
-              ({ output }) => `${paths.slug}/${output}`
-            )
+          ? [
+              ...scopedProjectEntries(config).map(
+                ({ output }) => `${paths.slug}/${output}`
+              ),
+              ...scopedProjectRedirectEntries(config).map(
+                ({ source }) => `${paths.slug}/${source}`
+              ),
+            ]
           : [],
       qa,
     };

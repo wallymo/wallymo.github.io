@@ -14,6 +14,7 @@ import {
   resolveRepoPath,
   scopedProjectAssets,
   scopedProjectFilename,
+  scopedProjectRedirectEntries,
   sha256,
   writeJson,
 } from './lib/workflow-v2.mjs';
@@ -89,6 +90,10 @@ export async function fetchPublishedArtifacts(
       ? `${base}${project}`
       : `${base}${paths.slug}/${scopedProjectFilename(config, project)}`
   );
+  const scopedProjectRedirects = scopedProjectRedirectEntries(config);
+  const redirectUrls = scopedProjectRedirects.map(
+    ({ source }) => `${base}${paths.slug}/${source}`
+  );
   const replacementAssets = scopedProjectAssets(config);
   const scopedProjectAssetUrls = replacementAssets.map(
     (assetPath) => `${base}${assetPath}`
@@ -142,6 +147,20 @@ export async function fetchPublishedArtifacts(
         liveProject
       );
     }
+  }
+
+  for (const [redirectIndex, redirectUrl] of redirectUrls.entries()) {
+    const { source } = scopedProjectRedirects[redirectIndex];
+    const redirectResponse = await fetchLive(redirectUrl);
+    const liveRedirect = Buffer.from(await redirectResponse.arrayBuffer());
+    const localRedirect = readFileSync(
+      resolveRepoPath(`${paths.slug}/${source}`)
+    );
+    scopedProjectSha256[source] = assertChecksum(
+      `Scoped project redirect ${source}`,
+      localRedirect,
+      liveRedirect
+    );
   }
 
   const scopedProjectAssetSha256 = {};
@@ -199,6 +218,7 @@ export async function fetchPublishedArtifacts(
     resumePdfUrl,
     configUrl,
     projectUrls,
+    redirectUrls,
     configSha256,
     pdfSha256,
     ...(config.contractRevision === 7

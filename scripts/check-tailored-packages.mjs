@@ -19,6 +19,7 @@ import {
   scopedProjectAssets,
   scopedProjectEntries,
   scopedProjectFilename,
+  scopedProjectRedirectEntries,
   sha256File,
   validateV2Config,
 } from './lib/workflow-v2.mjs';
@@ -105,9 +106,14 @@ function collectScopedPaths(config, paths) {
     ...(config.contractRevision === 7 ? [RESUME_BASE_PROFILES_PATH] : []),
     'scripts/tailored-packages.json',
     ...(config.routeMode === 'scoped-projects'
-      ? scopedProjectEntries(config).map(
-          ({ output }) => `${paths.slug}/${output}`
-        )
+      ? [
+          ...scopedProjectEntries(config).map(
+            ({ output }) => `${paths.slug}/${output}`
+          ),
+          ...scopedProjectRedirectEntries(config).map(
+            ({ source }) => `${paths.slug}/${source}`
+          ),
+        ]
       : []),
     ...scopedProjectAssets(config),
   ];
@@ -237,6 +243,9 @@ function validateLiveVerification(
       ? `${base}${project}`
       : `${base}${paths.slug}/${scopedProjectFilename(config, project)}`
   );
+  const expectedRedirectUrls = scopedProjectRedirectEntries(config).map(
+    ({ source }) => `${base}${paths.slug}/${source}`
+  );
   const expectedProjectAssetUrls = replacementAssets.map(
     (assetPath) => `${base}${assetPath}`
   );
@@ -265,6 +274,9 @@ function validateLiveVerification(
   }
   if (!sameList(verification.projectUrls || [], expectedProjectUrls)) {
     failures.push(`${pkg.slug} verification project URLs are incorrect`);
+  }
+  if (!sameList(verification.redirectUrls || [], expectedRedirectUrls)) {
+    failures.push(`${pkg.slug} verification redirect URLs are incorrect`);
   }
   if (
     replacementAssets.length &&
@@ -332,6 +344,28 @@ function validateScopedProjects(config, paths, routeHtml, failures) {
       )
     ) {
       failures.push(`${projectPath} contains root-relative resources`);
+    }
+  }
+}
+
+function validateScopedProjectRedirects(config, paths, failures) {
+  for (const { source, target } of scopedProjectRedirectEntries(config)) {
+    const redirectPath = `${paths.slug}/${source}`;
+    if (!existsSync(resolveRepoPath(redirectPath))) {
+      failures.push(`missing scoped project redirect: ${redirectPath}`);
+      continue;
+    }
+    const redirectHtml = readFileSync(resolveRepoPath(redirectPath), 'utf8');
+    const canonicalUrl = `${PUBLIC_BASE}${paths.slug}/${target}`;
+    const expectedMarkers = [
+      '<meta name="robots" content="noindex">',
+      `<meta http-equiv="refresh" content="0; url=${target}">`,
+      `<link rel="canonical" href="${canonicalUrl}">`,
+      `window.location.replace(${JSON.stringify(target)})`,
+      `href="${target}"`,
+    ];
+    if (expectedMarkers.some((marker) => !redirectHtml.includes(marker))) {
+      failures.push(`${redirectPath} does not redirect cleanly to ${target}`);
     }
   }
 }
@@ -562,15 +596,20 @@ function checkV2Package(pkg, { publicBase = PUBLIC_BASE } = {}) {
     }
   } else {
     validateScopedProjects(config, paths, routeHtml, failures);
-    for (const { output } of scopedProjectEntries(config)) {
+    validateScopedProjectRedirects(config, paths, failures);
+    const expectedScopedProjectFiles = [
+      ...scopedProjectEntries(config).map(({ output }) => output),
+      ...scopedProjectRedirectEntries(config).map(({ source }) => source),
+    ];
+    for (const project of expectedScopedProjectFiles) {
       const expectedHash =
-        config.qa.artifactHashes?.scopedProjectSha256?.[output];
-      const projectPath = `${paths.slug}/${output}`;
+        config.qa.artifactHashes?.scopedProjectSha256?.[project];
+      const projectPath = `${paths.slug}/${project}`;
       if (
         existsSync(resolveRepoPath(projectPath)) &&
         expectedHash !== sha256File(projectPath)
       ) {
-        failures.push(`${pkg.slug} scoped project changed after QA: ${output}`);
+        failures.push(`${pkg.slug} scoped project changed after QA: ${project}`);
       }
     }
     for (const assetPath of scopedProjectAssets(config)) {
@@ -587,9 +626,12 @@ function checkV2Package(pkg, { publicBase = PUBLIC_BASE } = {}) {
   }
   const expectedScopedProjects =
     config.routeMode === 'scoped-projects'
-      ? scopedProjectEntries(config)
-          .map(({ output }) => output)
-          .sort()
+      ? [
+          ...scopedProjectEntries(config).map(({ output }) => output),
+          ...scopedProjectRedirectEntries(config).map(
+            ({ source }) => source
+          ),
+        ].sort()
       : [];
   const unexpectedScopedProjects = existingScopedProjects(paths).filter(
     (project) => !expectedScopedProjects.includes(project)
