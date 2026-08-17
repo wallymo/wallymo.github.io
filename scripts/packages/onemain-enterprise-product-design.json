@@ -8,6 +8,7 @@
   "routeMode": "scoped-projects",
   "selectedProjects": [
     "project-03.html",
+    "project-09.html",
     "project-05.html",
     "project-04.html",
     "project-01.html"
@@ -189,7 +190,7 @@
         "Current product work uses client feedback and working prototypes to guide product and roadmap decisions."
       ],
       "proofIds": [
-        "addition:onemain-research-discipline",
+        "kinesso-06",
         "one-block-away-01",
         "one-block-away-04"
       ],
@@ -409,6 +410,7 @@
   "coverLetter": null,
   "resume": {
     "foundationId": "wally-mostafa-resume-2026-07-03",
+    "foundationVersion": 3,
     "compositionMode": "foundation-complete",
     "layoutDensity": "compact",
     "summary": "Lead product designer with nearly eight years in UX and product design, backed by 15 years across enterprise platforms, regulated digital work, and client strategy. I scaled product design from 2 to 30, built research and design-system practices across 20+ products, and shaped enterprise analytics used by 7,000+ people across 22 white-label brands. I bring systems thinking, user research, and design systems to complex workflows and scalable operational platforms. My work supports cross-functional delivery with product and engineering teams, turning user evidence into accessible tools people can use.",
@@ -476,10 +478,14 @@
       ],
       "kinesso": [
         "Scaled product design from 2 to 30 people across the United States and Poland for enterprise analytics used by 7,000+ users across 22 white-label brands",
-        "Built a user research discipline across 20+ products using repeatable methods, Figma documentation, prototype testing, behavioral data, and user feedback loops",
+        "Partnered with the Head of Design to create the team's first onboarding program, career roadmaps, coaching structure, and performance review workflows for new and existing employees",
+        "Built Kinesso's first UX research practice across 20+ products, including participant recruitment, interviews, prototype testing, beta groups, behavioral data, research tooling, shared Figma documentation, user feedback loops, and UX checkpoints in project plans",
         "Led UX and design-system strategy for enterprise SaaS data visualization, dashboard building, brand theming, navigation, personalization, and reusable analytics components",
         "Built the Digital Experience Audit workflow for channel scoring, benchmarks, recommendations, visualization, and presentation-ready client outputs",
-        "Design-system and analytics work earned 5 Indigo Gold, 4 Indigo Silver, and Red Dot recognition"
+        "Design-system and analytics work earned 5 Indigo Gold, 4 Indigo Silver, and Red Dot recognition",
+        "Led workshops on product discovery, ecosystem mapping, innovation, and user research; expanded the program from Kinesso teams to IPG groups and presented recommendations to executives and clients",
+        "UX lead for research and design on Kanvas, Kinesso's developer-first API services library; partnered with product and engineering on roadmap priorities and with C-suite stakeholders on monetization and go-to-market planning",
+        "Led a three-person team to second place in Kinesso's inaugural innovation challenge with an accessibility panel concept; later advised the next cohort and contributed to accessibility playbook and keyboard interaction standards"
       ],
       "omnicom": [
         "Supported oncology accounts as a freelance UX designer, combining UX design and account-management experience to strengthen regulated healthcare work",
@@ -514,10 +520,14 @@
       ],
       "kinesso": [
         "kinesso-01",
-        "addition:onemain-research-discipline",
+        "kinesso-05",
+        "kinesso-06",
         "kinesso-02",
         "kinesso-03",
-        "kinesso-04"
+        "kinesso-04",
+        "kinesso-07",
+        "kinesso-08",
+        "kinesso-09"
       ],
       "omnicom": [
         "omnicom-01",
@@ -543,7 +553,7 @@
       "User research",
       "Regulated AI"
     ],
-    "intro": "This page brings together four projects that may be useful alongside my resume. The work focuses on enterprise workflows, research, design systems, and regulated AI."
+    "intro": "This page brings together five projects that may be useful alongside my resume. The work focuses on enterprise workflows, research, design systems, and regulated AI."
   },
   "contact": {
     "prompt": "Email is the best way to reach me.",
@@ -559,8 +569,8 @@
     "humanizerVersion": "2.2.0",
     "mode": "surface-only",
     "status": "passed",
-    "reviewedAt": "2026-08-05T16:05:41.850Z",
-    "copySha256": "6dd1b81c024d0e92220c8b055f7d832e3bd1e79e4e5bda6b13b253a06d7c2742",
+    "reviewedAt": "2026-08-17T21:05:16.304Z",
+    "copySha256": "c91a541bc3843e6df72488394e096a99d9e013cee6406d751e3c1a632ef6b728",
     "preserved": [
       "content",
       "structure",
@@ -602,8 +612,8 @@
   },
   "qa": {
     "status": "qa-passed",
-    "builtAt": "2026-08-05T16:11:21.329Z",
-    "configInputSha256": "f7f2b1807daa7f3d003b9f7159f63bd4a6c95732d392052302da0aa5db0d1ea6",
+    "builtAt": "2026-08-17T21:05:28.257Z",
+    "configInputSha256": "cb97fcc6f6edd4627cb2a078f822e8e5be279e67858ef1155dc2f93ddc35542f",
     "sourceResumeSha256": "2265313e78b596a2b37d6d8f9a95081e4321b4047f142a5f0ddf22449cab4b9c",
     "resumeFoundation": {
       "id": "wally-mostafa-resume-2026-07-03",
@@ -624,16 +634,18 @@
       "registrySha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108"
     },
     "artifactHashes": {
-      "routeSha256": "814d03e3388fe4a98f7b091e23060e10ec7dca2b8e97230f5f1fa8ce49e885ad",
-      "resumePdfSha256": "24e2019ae6173711398f104e074c562dd0a543bf2ee4af1f317369309611f420",
+      "routeSha256": "b2e6299cdd4233e8258fb6d57bde402d08917fdb54c2e5f4c5cb24a7d13e8961",
+      "resumePdfSha256": "e98a6ee0a863bc361a3a8cbe16ba63a25572f0200deed8ecb3a516c899e2d34b",
       "coverLetterPdfSha256": null,
       "coverLetterMarkdownSha256": null,
       "scopedProjectSha256": {
-        "project-03.html": "1dbf9927ea17230c07aaa90ceadfba151492547a2fadaf5503e7a21104be2930",
-        "project-05.html": "62630f66de217ec14f7c606f66331561b2185f36b2a83ad5042250eaec0028fe",
-        "project-04.html": "e646b1254c998dbcbc7995767f61d39d1804fc8756b72f367480d7827c0eef58",
-        "project-01.html": "fd09e4caeb12c97af13b24fa40136b2b51fe3be4014ef055c5065e2c07205e4c"
-      }
+        "project-03.html": "ad2994fe1c58e273314b4b6920f55cf5766936d4ce978f41f4b383da327b81fd",
+        "project-09.html": "7acf0d101be90e4831885a2887ec89d19c8b40f4714c13c156efab7e94c9b13d",
+        "project-05.html": "56a4988916b54cf3264dbc8032188462b82b296eb444c1965fbecf372aa7eb9b",
+        "project-04.html": "d693107fe92f844e2dbf53c4b597d701538832712f1ce254267b092bb2f2cfef",
+        "project-01.html": "1062efb0ef87e62ab09ed70cf14741e61d0e7e49f98063c3cf7d3e8efd56ac9e"
+      },
+      "scopedProjectAssetSha256": {}
     },
     "renderer": {
       "browser": {
@@ -651,7 +663,7 @@
       "ok": true,
       "pdfPath": "output/pdf/Wally-Mostafa-OneMain-Enterprise-Product-Design-Resume.pdf",
       "pageCount": 2,
-      "fileSize": 72746,
+      "fileSize": 77051,
       "annotations": [
         {
           "page": 1,
@@ -843,8 +855,8 @@
       "status": "passed",
       "version": "2.2.0",
       "mode": "surface-only",
-      "reviewedAt": "2026-08-05T16:05:41.850Z",
-      "copySha256": "6dd1b81c024d0e92220c8b055f7d832e3bd1e79e4e5bda6b13b253a06d7c2742",
+      "reviewedAt": "2026-08-17T21:05:16.304Z",
+      "copySha256": "c91a541bc3843e6df72488394e096a99d9e013cee6406d751e3c1a632ef6b728",
       "reviewMethod": "humanizer-skill",
       "semanticPassAttested": true,
       "staticChecksPassed": true
@@ -857,6 +869,10 @@
         },
         {
           "name": "desktop-project-03",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-09",
           "errors": []
         },
         {
@@ -877,6 +893,10 @@
         },
         {
           "name": "mobile-project-03",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-09",
           "errors": []
         },
         {
