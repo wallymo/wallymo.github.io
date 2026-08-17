@@ -2697,38 +2697,9 @@
         "project-01.html"
       ],
       "resumePdfPath": "output/pdf/Wally-Mostafa-OneMain-Enterprise-Product-Design-Resume.pdf",
-      "publishStatus": "live-verified",
+      "publishStatus": "tracked-unverified",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-08-17T21:05:28.257Z",
-      "verification": {
-        "verifiedAt": "2026-08-17T21:09:45.165Z",
-        "routeUrl": "https://wallymo.github.io/onemain-enterprise-product-design/",
-        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-OneMain-Enterprise-Product-Design-Resume.pdf",
-        "configUrl": "https://wallymo.github.io/scripts/packages/onemain-enterprise-product-design.json",
-        "projectUrls": [
-          "https://wallymo.github.io/onemain-enterprise-product-design/project-03.html",
-          "https://wallymo.github.io/onemain-enterprise-product-design/project-09.html",
-          "https://wallymo.github.io/onemain-enterprise-product-design/project-05.html",
-          "https://wallymo.github.io/onemain-enterprise-product-design/project-04.html",
-          "https://wallymo.github.io/onemain-enterprise-product-design/project-01.html"
-        ],
-        "configSha256": "11793435730b375db809d85254bf3c89a4ab9000bd5a7e81214c076139c62bec",
-        "pdfSha256": "e98a6ee0a863bc361a3a8cbe16ba63a25572f0200deed8ecb3a516c899e2d34b",
-        "resumeBaseProfilesUrl": "https://wallymo.github.io/scripts/resume-base-profiles.json",
-        "resumeBaseProfilesSha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108",
-        "routeSha256": "b2e6299cdd4233e8258fb6d57bde402d08917fdb54c2e5f4c5cb24a7d13e8961",
-        "scopedProjectSha256": {
-          "project-03.html": "ad2994fe1c58e273314b4b6920f55cf5766936d4ce978f41f4b383da327b81fd",
-          "project-09.html": "7acf0d101be90e4831885a2887ec89d19c8b40f4714c13c156efab7e94c9b13d",
-          "project-05.html": "56a4988916b54cf3264dbc8032188462b82b296eb444c1965fbecf372aa7eb9b",
-          "project-04.html": "d693107fe92f844e2dbf53c4b597d701538832712f1ce254267b092bb2f2cfef",
-          "project-01.html": "1062efb0ef87e62ab09ed70cf14741e61d0e7e49f98063c3cf7d3e8efd56ac9e"
-        },
-        "scopedProjectAssetUrls": [],
-        "scopedProjectAssetSha256": {},
-        "configInputSha256": "cb97fcc6f6edd4627cb2a078f822e8e5be279e67858ef1155dc2f93ddc35542f",
-        "qaBuiltAt": "2026-08-17T21:05:28.257Z"
-      }
+      "builtAt": "2026-08-17T21:18:30.487Z"
     },
     {
       "workflowVersion": 2,
