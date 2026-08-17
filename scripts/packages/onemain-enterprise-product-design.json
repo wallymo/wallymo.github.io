@@ -569,7 +569,7 @@
     "humanizerVersion": "2.2.0",
     "mode": "surface-only",
     "status": "passed",
-    "reviewedAt": "2026-08-17T21:18:18.380Z",
+    "reviewedAt": "2026-08-17T21:33:14.843Z",
     "copySha256": "c91a541bc3843e6df72488394e096a99d9e013cee6406d751e3c1a632ef6b728",
     "preserved": [
       "content",
@@ -612,8 +612,8 @@
   },
   "qa": {
     "status": "qa-passed",
-    "builtAt": "2026-08-17T21:18:30.487Z",
-    "configInputSha256": "4697a5ae5a019285110d1f58dc61c8fba4d0c09f9118fe68ad39c583c21a1459",
+    "builtAt": "2026-08-17T21:33:27.445Z",
+    "configInputSha256": "ed01e9f9aa7dda18521323dfb51db0212f7dd25d04a265ae0ba3e22ec6ee996e",
     "sourceResumeSha256": "2265313e78b596a2b37d6d8f9a95081e4321b4047f142a5f0ddf22449cab4b9c",
     "resumeFoundation": {
       "id": "wally-mostafa-resume-2026-07-03",
@@ -635,12 +635,12 @@
     },
     "artifactHashes": {
       "routeSha256": "8356e27456a03886bcd1f181f6e98fc2875f365525002b1507cc56b963cdaeed",
-      "resumePdfSha256": "47734c5665981b93ce5ec20325441fcaf43834887dcdf25fc8183730e9f6f647",
+      "resumePdfSha256": "2c1538959e218ebcce38eecc437c985f5907b957e18c3100c37672f8e3448e8e",
       "coverLetterPdfSha256": null,
       "coverLetterMarkdownSha256": null,
       "scopedProjectSha256": {
         "project-03.html": "1b55daf2b04673fd2e5ef1b8538e4c09088ffbaf248e8030ca52aadc1f4f8eb1",
-        "project-09.html": "329c2b2e62856225fc2e6f2bdc57f7a44e68750ea1bf8e36abe06a455bd84a2e",
+        "project-09.html": "810f7e9336c8283c67b6db2026f82fb159c27cab67c3253a639bac020983b9c3",
         "project-05.html": "56a4988916b54cf3264dbc8032188462b82b296eb444c1965fbecf372aa7eb9b",
         "project-04.html": "d693107fe92f844e2dbf53c4b597d701538832712f1ce254267b092bb2f2cfef",
         "project-01.html": "b396c746a5ca5b9116ede2152721f6ff5fb02d54d6d0ef131843afefbb9887f6"
@@ -855,7 +855,7 @@
       "status": "passed",
       "version": "2.2.0",
       "mode": "surface-only",
-      "reviewedAt": "2026-08-17T21:18:18.380Z",
+      "reviewedAt": "2026-08-17T21:33:14.843Z",
       "copySha256": "c91a541bc3843e6df72488394e096a99d9e013cee6406d751e3c1a632ef6b728",
       "reviewMethod": "humanizer-skill",
       "semanticPassAttested": true,
