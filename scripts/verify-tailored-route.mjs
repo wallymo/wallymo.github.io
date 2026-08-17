@@ -13,6 +13,7 @@ import {
   readManifest,
   resolveRepoPath,
   scopedProjectAssets,
+  scopedProjectFilename,
   sha256,
   writeJson,
 } from './lib/workflow-v2.mjs';
@@ -32,9 +33,7 @@ function scopedPaths(pkg, config, paths) {
     pkg.configPath,
     ...(config.contractRevision === 7 ? [RESUME_BASE_PROFILES_PATH] : []),
     'scripts/tailored-packages.json',
-    ...(config.routeMode === 'scoped-projects'
-      ? config.selectedProjects.map((project) => `${paths.slug}/${project}`)
-      : []),
+    ...(config.routeMode === 'scoped-projects' ? [paths.slug] : []),
     ...scopedProjectAssets(config),
   ];
 }
@@ -88,7 +87,7 @@ export async function fetchPublishedArtifacts(
   const projectUrls = config.selectedProjects.map((project) =>
     config.routeMode === 'canonical-projects'
       ? `${base}${project}`
-      : `${base}${paths.slug}/${project}`
+      : `${base}${paths.slug}/${scopedProjectFilename(config, project)}`
   );
   const replacementAssets = scopedProjectAssets(config);
   const scopedProjectAssetUrls = replacementAssets.map(
@@ -132,12 +131,13 @@ export async function fetchPublishedArtifacts(
     const projectResponse = await fetchLive(projectUrl);
     if (config.routeMode === 'scoped-projects') {
       const project = config.selectedProjects[projectIndex];
+      const scopedFilename = scopedProjectFilename(config, project);
       const liveProject = Buffer.from(await projectResponse.arrayBuffer());
       const localProject = readFileSync(
-        resolveRepoPath(`${paths.slug}/${project}`)
+        resolveRepoPath(`${paths.slug}/${scopedFilename}`)
       );
-      scopedProjectSha256[project] = assertChecksum(
-        `Scoped project ${project}`,
+      scopedProjectSha256[scopedFilename] = assertChecksum(
+        `Scoped project ${scopedFilename}`,
         localProject,
         liveProject
       );

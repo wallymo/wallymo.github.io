@@ -17,6 +17,8 @@ import {
   relativeRepoPath,
   resolveRepoPath,
   scopedProjectAssets,
+  scopedProjectEntries,
+  scopedProjectFilename,
   sha256File,
   validateV2Config,
 } from './lib/workflow-v2.mjs';
@@ -103,7 +105,9 @@ function collectScopedPaths(config, paths) {
     ...(config.contractRevision === 7 ? [RESUME_BASE_PROFILES_PATH] : []),
     'scripts/tailored-packages.json',
     ...(config.routeMode === 'scoped-projects'
-      ? config.selectedProjects.map((project) => `${paths.slug}/${project}`)
+      ? scopedProjectEntries(config).map(
+          ({ output }) => `${paths.slug}/${output}`
+        )
       : []),
     ...scopedProjectAssets(config),
   ];
@@ -231,7 +235,7 @@ function validateLiveVerification(
   const expectedProjectUrls = config.selectedProjects.map((project) =>
     config.routeMode === 'canonical-projects'
       ? `${base}${project}`
-      : `${base}${paths.slug}/${project}`
+      : `${base}${paths.slug}/${scopedProjectFilename(config, project)}`
   );
   const expectedProjectAssetUrls = replacementAssets.map(
     (assetPath) => `${base}${assetPath}`
@@ -277,23 +281,23 @@ function validateLiveVerification(
 
 function validateScopedProjects(config, paths, routeHtml, failures) {
   const workNumbers = extractWorkCardNumbers(routeHtml);
-  for (const [index, project] of config.selectedProjects.entries()) {
-    const projectPath = `${paths.slug}/${project}`;
+  const scopedProjects = scopedProjectEntries(config);
+  for (const [index, { source, output }] of scopedProjects.entries()) {
+    const projectPath = `${paths.slug}/${output}`;
     if (!existsSync(resolveRepoPath(projectPath))) {
       failures.push(`missing scoped project: ${projectPath}`);
       continue;
     }
     const projectHtml = readFileSync(resolveRepoPath(projectPath), 'utf8');
     const previous =
-      config.selectedProjects[
-        (index - 1 + config.selectedProjects.length) % config.selectedProjects.length
-      ];
-    const next =
-      config.selectedProjects[(index + 1) % config.selectedProjects.length];
+      scopedProjects[
+        (index - 1 + scopedProjects.length) % scopedProjects.length
+      ].output;
+    const next = scopedProjects[(index + 1) % scopedProjects.length].output;
     const projectNumber = projectHtml.match(
       /class="project-number"\s*>\s*([^<]+?)\s*<\/div>/
     )?.[1]?.trim();
-    const expectedNumber = workNumbers.get(project);
+    const expectedNumber = workNumbers.get(output);
 
     if (projectNumber !== expectedNumber) {
       failures.push(
@@ -311,6 +315,16 @@ function validateScopedProjects(config, paths, routeHtml, failures) {
     }
     if (!projectHtml.includes('href="index.html#work"')) {
       failures.push(`${projectPath} does not return to the route work section`);
+    }
+    if (config.route?.projectAliases?.[source]) {
+      const expectedOgUrl = `${PUBLIC_BASE}${paths.slug}/${output}`;
+      if (
+        !projectHtml.includes(
+          `<meta property="og:url" content="${expectedOgUrl}">`
+        )
+      ) {
+        failures.push(`${projectPath} does not use its scoped Open Graph URL`);
+      }
     }
     if (
       /\b(?:href|src)="(?:assets\/|favicon\.ico|apple-touch-icon\.png|site\.webmanifest)/.test(
@@ -514,7 +528,9 @@ function checkV2Package(pkg, { publicBase = PUBLIC_BASE } = {}) {
 
   const routeHtml = readFileSync(resolveRepoPath(paths.routeIndexPath), 'utf8');
   const expectedWorkLinks = config.selectedProjects.map((project) =>
-    config.routeMode === 'canonical-projects' ? `../${project}` : project
+    config.routeMode === 'canonical-projects'
+      ? `../${project}`
+      : scopedProjectFilename(config, project)
   );
   const actualWorkLinks = extractWorkLinks(routeHtml);
   if (!sameList(actualWorkLinks, expectedWorkLinks)) {
@@ -546,15 +562,15 @@ function checkV2Package(pkg, { publicBase = PUBLIC_BASE } = {}) {
     }
   } else {
     validateScopedProjects(config, paths, routeHtml, failures);
-    for (const project of config.selectedProjects) {
+    for (const { output } of scopedProjectEntries(config)) {
       const expectedHash =
-        config.qa.artifactHashes?.scopedProjectSha256?.[project];
-      const projectPath = `${paths.slug}/${project}`;
+        config.qa.artifactHashes?.scopedProjectSha256?.[output];
+      const projectPath = `${paths.slug}/${output}`;
       if (
         existsSync(resolveRepoPath(projectPath)) &&
         expectedHash !== sha256File(projectPath)
       ) {
-        failures.push(`${pkg.slug} scoped project changed after QA: ${project}`);
+        failures.push(`${pkg.slug} scoped project changed after QA: ${output}`);
       }
     }
     for (const assetPath of scopedProjectAssets(config)) {
@@ -571,7 +587,9 @@ function checkV2Package(pkg, { publicBase = PUBLIC_BASE } = {}) {
   }
   const expectedScopedProjects =
     config.routeMode === 'scoped-projects'
-      ? [...config.selectedProjects].sort()
+      ? scopedProjectEntries(config)
+          .map(({ output }) => output)
+          .sort()
       : [];
   const unexpectedScopedProjects = existingScopedProjects(paths).filter(
     (project) => !expectedScopedProjects.includes(project)

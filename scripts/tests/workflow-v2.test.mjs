@@ -35,6 +35,8 @@ import {
   resolveChromeExecutable,
   resumeRoleBulletTexts,
   resumeRoleSubEntries,
+  scopedProjectEntries,
+  scopedProjectFilename,
   validateV2Config,
 } from '../lib/workflow-v2.mjs';
 import {
@@ -1401,6 +1403,68 @@ test(
         'client-account-delivery'
       );
       assert.equal(getRoutePresentation(otherLane), 'full');
+
+      const validAliases = structuredClone(config);
+      validAliases.routeMode = 'scoped-projects';
+      validAliases.route.projectAliases = {
+        'project-02.html': 'project-09.html',
+      };
+      assert.equal(
+        scopedProjectFilename(validAliases, 'project-02.html'),
+        'project-09.html'
+      );
+      assert.deepEqual(scopedProjectEntries(validAliases), [
+        { source: 'project-01.html', output: 'project-01.html' },
+        { source: 'project-02.html', output: 'project-09.html' },
+        { source: 'project-03.html', output: 'project-03.html' },
+      ]);
+      assert.doesNotMatch(
+        validateV2Config(validAliases).join('\n'),
+        /route\.projectAliases/
+      );
+      assert.deepEqual(schemaErrors(validAliases), []);
+
+      const malformedProjectList = structuredClone(validAliases);
+      malformedProjectList.selectedProjects = {};
+      assert.deepEqual(scopedProjectEntries(malformedProjectList), []);
+      assert.doesNotThrow(() => validateV2Config(malformedProjectList));
+      assert.match(
+        validateV2Config(malformedProjectList).join('\n'),
+        /selectedProjects must include 3 to 5 projects/
+      );
+
+      const canonicalAliases = structuredClone(validAliases);
+      canonicalAliases.routeMode = 'canonical-projects';
+      assert.match(
+        validateV2Config(canonicalAliases).join('\n'),
+        /route\.projectAliases requires routeMode scoped-projects/
+      );
+      assert.ok(schemaErrors(canonicalAliases).length > 0);
+      const unselectedAlias = structuredClone(validAliases);
+      unselectedAlias.route.projectAliases = {
+        'project-08.html': 'project-09.html',
+      };
+      assert.match(
+        validateV2Config(unselectedAlias).join('\n'),
+        /route\.projectAliases references an unselected project/
+      );
+      const invalidAlias = structuredClone(validAliases);
+      invalidAlias.route.projectAliases = {
+        'project-02.html': '../project-09.html',
+      };
+      assert.match(
+        validateV2Config(invalidAlias).join('\n'),
+        /must be a project HTML filename/
+      );
+      assert.ok(schemaErrors(invalidAlias).length > 0);
+      const collidingAlias = structuredClone(validAliases);
+      collidingAlias.route.projectAliases = {
+        'project-01.html': 'project-02.html',
+      };
+      assert.match(
+        validateV2Config(collidingAlias).join('\n'),
+        /must produce unique scoped project filenames/
+      );
 
       config.route = {
         presentation: 'showcase',
@@ -3615,6 +3679,9 @@ test(
     });
     try {
       const config = JSON.parse(readFileSync(configPath, 'utf8'));
+      config.route.projectAliases = {
+        'project-06.html': 'project-02.html',
+      };
       config.route.projectAssetOverrides = {
         'project-06.html': {
           'assets/ux-wally/dxa-results.png':
@@ -3749,11 +3816,26 @@ test(
         }
       );
       assert.equal(result.status, 0, `${result.stdout}\n${result.stderr}`);
-      for (const [projectIndex, project] of [
+      assert.equal(
+        existsSync(path.join(tempRoot, 'scoped-fixture', 'project-06.html')),
+        false
+      );
+      const scopedOutputs = [
         'project-03.html',
-        'project-06.html',
+        'project-02.html',
         'project-07.html',
-      ].entries()) {
+      ];
+      const routeHtml = readFileSync(
+        path.join(tempRoot, 'scoped-fixture', 'index.html'),
+        'utf8'
+      );
+      assert.deepEqual(
+        [...routeHtml.matchAll(/class="work-item reveal"[^>]*href="([^"]+)"|href="([^"]+)"[^>]*class="work-item reveal"/g)].map(
+          (match) => match[1] || match[2]
+        ),
+        scopedOutputs
+      );
+      for (const [projectIndex, project] of scopedOutputs.entries()) {
         const html = readFileSync(
           path.join(tempRoot, 'scoped-fixture', project),
           'utf8'
@@ -3780,13 +3862,19 @@ test(
             )}</div>`
           )
         );
+        assert.match(
+          html,
+          new RegExp(
+            `<meta property="og:url" content="https://wallymo.github.io/scoped-fixture/${project}">`
+          )
+        );
         const projectNavigation = html.match(
           /<div class="nav-projects">([\s\S]*?)<\/div>/
         )?.[1];
         assert.ok(projectNavigation);
         assert.equal((projectNavigation.match(/<a\b/g) || []).length, 2);
         assert.doesNotMatch(html, /<div class="label">Next Project<\/div>/);
-        if (project === 'project-06.html') {
+        if (project === 'project-02.html') {
           assert.doesNotMatch(
             html,
             /src="\.\.\/assets\/ux-wally\/dxa-results\.png"/
@@ -3878,6 +3966,10 @@ test(
         3
       );
       assert.deepEqual(
+        Object.keys(savedConfig.qa.artifactHashes.scopedProjectSha256),
+        scopedOutputs
+      );
+      assert.deepEqual(
         Object.keys(
           savedConfig.qa.artifactHashes.scopedProjectAssetSha256
         ),
@@ -3911,6 +4003,12 @@ test(
           savedConfig,
           { publicBase: fixtureServer.publicBase }
         );
+        assert.deepEqual(liveProof.projectUrls, [
+          `${fixtureServer.publicBase}scoped-fixture/project-03.html`,
+          `${fixtureServer.publicBase}scoped-fixture/project-02.html`,
+          `${fixtureServer.publicBase}scoped-fixture/project-07.html`,
+        ]);
+        assert.deepEqual(Object.keys(liveProof.scopedProjectSha256), scopedOutputs);
         assert.deepEqual(Object.keys(liveProof.scopedProjectAssetSha256), [
           'assets/ux-wally/dxa-questionnaire.png',
           'fixtures/dxa-awards.jpg',

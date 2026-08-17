@@ -9,6 +9,7 @@ import {
   readJson,
   resolveChromeExecutable,
   resolveRepoPath,
+  scopedProjectEntries,
 } from './lib/workflow-v2.mjs';
 
 function usage() {
@@ -42,6 +43,10 @@ export function runRouteUiCheck({ configPath }) {
   const config = readJson(configPath);
   assertValidV2Config(config);
   const paths = getArtifactPaths(config);
+  const routeProjects =
+    config.routeMode === 'scoped-projects'
+      ? scopedProjectEntries(config).map(({ output }) => output)
+      : config.selectedProjects;
   const helperPath = resolveRepoPath('scripts/lib/route_ui_check.py');
   const outputDirectory = resolveRepoPath(paths.qaOutputDir);
   const args = [
@@ -53,7 +58,7 @@ export function runRouteUiCheck({ configPath }) {
     '--resume-pdf',
     paths.resumePdfPath,
     '--selected-projects',
-    JSON.stringify(config.selectedProjects),
+    JSON.stringify(routeProjects),
     '--route-mode',
     config.routeMode,
     '--output-dir',

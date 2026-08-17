@@ -523,6 +523,15 @@
         "projectCardStats": { "enum": ["visible", "hidden"] },
         "workHeading": { "type": "string", "minLength": 1 },
         "contactHeading": { "type": "string", "minLength": 1 },
+        "projectAliases": {
+          "type": "object",
+          "minProperties": 1,
+          "propertyNames": { "pattern": "^project-\\d+\\.html$" },
+          "additionalProperties": {
+            "type": "string",
+            "pattern": "^project-\\d+\\.html$"
+          }
+        },
         "projectAssetOverrides": {
           "type": "object",
           "minProperties": 1,
@@ -742,6 +751,21 @@
             "properties": {
               "presentation": { "const": "showcase" }
             }
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "routeMode": { "const": "scoped-projects" }
+        }
+      }
+    },
+    {
+      "if": {
+        "required": ["route"],
+        "properties": {
+          "route": {
+            "required": ["projectAliases"]
           }
         }
       },

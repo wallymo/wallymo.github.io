@@ -122,6 +122,23 @@ export function getRoutePresentation(config) {
     : 'full';
 }
 
+export function scopedProjectFilename(config, project) {
+  if (config?.routeMode !== 'scoped-projects') {
+    return project;
+  }
+  return config?.route?.projectAliases?.[project] || project;
+}
+
+export function scopedProjectEntries(config) {
+  const selectedProjects = Array.isArray(config?.selectedProjects)
+    ? config.selectedProjects
+    : [];
+  return selectedProjects.map((project) => ({
+    source: project,
+    output: scopedProjectFilename(config, project),
+  }));
+}
+
 export function scopedProjectAssets(config) {
   return [
     ...new Set(
@@ -2308,6 +2325,50 @@ export function validateV2Config(
           isNonEmptyString(route.contactHeading),
         'route.contactHeading must be a non-empty string when present'
       );
+      const projectAliases = route.projectAliases;
+      pushError(
+        errors,
+        projectAliases === undefined ||
+          (projectAliases &&
+            typeof projectAliases === 'object' &&
+            !Array.isArray(projectAliases) &&
+            Object.keys(projectAliases).length > 0),
+        'route.projectAliases must be a non-empty object when present'
+      );
+      if (
+        projectAliases &&
+        typeof projectAliases === 'object' &&
+        !Array.isArray(projectAliases)
+      ) {
+        const selectedProjects = Array.isArray(config.selectedProjects)
+          ? config.selectedProjects
+          : [];
+        pushError(
+          errors,
+          config.routeMode === 'scoped-projects',
+          'route.projectAliases requires routeMode scoped-projects'
+        );
+        for (const [project, alias] of Object.entries(projectAliases)) {
+          pushError(
+            errors,
+            selectedProjects.includes(project),
+            `route.projectAliases references an unselected project: ${project}`
+          );
+          pushError(
+            errors,
+            /^project-\d+\.html$/.test(alias),
+            `route.projectAliases.${project} must be a project HTML filename`
+          );
+        }
+        const scopedFilenames = scopedProjectEntries(config).map(
+          ({ output }) => output
+        );
+        pushError(
+          errors,
+          new Set(scopedFilenames).size === scopedFilenames.length,
+          'route.projectAliases must produce unique scoped project filenames'
+        );
+      }
       const projectAssetOverrides = route.projectAssetOverrides;
       pushError(
         errors,

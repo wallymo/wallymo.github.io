@@ -36,6 +36,8 @@ import {
   resolveRepoPath,
   resumeRoleSubEntries,
   scopedProjectAssets,
+  scopedProjectEntries,
+  scopedProjectFilename,
   sha256File,
   slugify,
   upsertV2ManifestEntry,
@@ -293,7 +295,9 @@ function buildWorkGrid(indexHtml, config) {
         ).replace(/^[ \t]+$/gm, '');
       }
       const href =
-        config.routeMode === 'canonical-projects' ? `../${project}` : project;
+        config.routeMode === 'canonical-projects'
+          ? `../${project}`
+          : scopedProjectFilename(config, project);
       return card
         .replace(/href="project-\d+\.html"/, `href="${href}"`)
         .replace(
@@ -313,6 +317,8 @@ function buildRouteLocalNextProject(project, config, titlesByProject) {
     ];
   const nextProject =
     config.selectedProjects[(index + 1) % config.selectedProjects.length];
+  const previousHref = scopedProjectFilename(config, previousProject);
+  const nextHref = scopedProjectFilename(config, nextProject);
   const previousTitle =
     titlesByProject.get(previousProject) || previousProject.replace(/\.html$/, '');
   const nextTitle =
@@ -322,8 +328,8 @@ function buildRouteLocalNextProject(project, config, titlesByProject) {
     '<!-- NEXT -->',
     '<div class="next-project">',
     '  <div class="nav-projects">',
-    `    <a href="${previousProject}">&larr; ${escapeHtml(previousTitle)}</a>`,
-    `    <a href="${nextProject}">${escapeHtml(nextTitle)} &rarr;</a>`,
+    `    <a href="${previousHref}">&larr; ${escapeHtml(previousTitle)}</a>`,
+    `    <a href="${nextHref}">${escapeHtml(nextTitle)} &rarr;</a>`,
     '  </div>',
     '</div>',
   ].join('\n');
@@ -726,6 +732,8 @@ function stripLegacyRouteQueryShim(html, project) {
 
 function buildScopedProjectHtml(project, config, paths, index, titlesByProject) {
   const routeLocalNumber = String(index + 1).padStart(2, '0');
+  const scopedFilename = scopedProjectFilename(config, project);
+  const scopedUrl = `${PUBLIC_BASE}${paths.slug}/${scopedFilename}`;
   const nextProjectHtml = buildRouteLocalNextProject(
     project,
     config,
@@ -747,7 +755,11 @@ function buildScopedProjectHtml(project, config, paths, index, titlesByProject) 
       /\bhref="index\.html"\s+class="name"/g,
       'href="index.html" class="name"'
     )
-    .replace(/\bhref="index\.html#work"/g, 'href="index.html#work"');
+    .replace(/\bhref="index\.html#work"/g, 'href="index.html#work"')
+    .replace(
+      /<meta property="og:url" content="[^"]*">/,
+      `<meta property="og:url" content="${scopedUrl}">`
+    );
   const scopedHtml = setRouteLocalProjectNumber(
     applyScopedProjectVideoInsertion(
       applyScopedProjectPullquoteOverride(
@@ -877,7 +889,7 @@ function buildRoute(config, paths) {
     for (const project of config.selectedProjects) {
       routeHtml = routeHtml
         .split(`href="../${project}"`)
-        .join(`href="${project}"`);
+        .join(`href="${scopedProjectFilename(config, project)}"`);
     }
   }
   if (getRoutePresentation(config) === 'showcase') {
@@ -1264,7 +1276,9 @@ export async function buildTailoredPackage({
   }
   if (config.routeMode === 'scoped-projects') {
     trackedOutputs.push(
-      ...config.selectedProjects.map((project) => `${paths.slug}/${project}`)
+      ...scopedProjectEntries(config).map(
+        ({ output }) => `${paths.slug}/${output}`
+      )
     );
   }
   if (!overwrite) {
@@ -1324,8 +1338,9 @@ export async function buildTailoredPackage({
         }
       }
       for (const [index, project] of config.selectedProjects.entries()) {
+        const scopedFilename = scopedProjectFilename(config, project);
         writeText(
-          `${paths.slug}/${project}`,
+          `${paths.slug}/${scopedFilename}`,
           buildScopedProjectHtml(project, config, paths, index, titlesByProject)
         );
       }
@@ -1405,9 +1420,9 @@ export async function buildTailoredPackage({
         scopedProjectSha256:
           config.routeMode === 'scoped-projects'
             ? Object.fromEntries(
-                config.selectedProjects.map((project) => [
-                  project,
-                  sha256File(`${paths.slug}/${project}`),
+                scopedProjectEntries(config).map(({ output }) => [
+                  output,
+                  sha256File(`${paths.slug}/${output}`),
                 ])
               )
             : {},
@@ -1453,7 +1468,9 @@ export async function buildTailoredPackage({
         : null,
       scopedProjectPaths:
         config.routeMode === 'scoped-projects'
-          ? config.selectedProjects.map((project) => `${paths.slug}/${project}`)
+          ? scopedProjectEntries(config).map(
+              ({ output }) => `${paths.slug}/${output}`
+            )
           : [],
       qa,
     };
