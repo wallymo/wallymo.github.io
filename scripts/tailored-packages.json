@@ -3677,37 +3677,9 @@
         "project-04.html"
       ],
       "resumePdfPath": "output/pdf/Wally-Mostafa-Samsara-Senior-Product-Designer-AI-Workflows-Resume.pdf",
-      "publishStatus": "live-verified",
+      "publishStatus": "local-only",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-08-24T09:16:17.274Z",
-      "verification": {
-        "verifiedAt": "2026-08-24T09:26:37.943Z",
-        "routeUrl": "https://wallymo.github.io/samsara-senior-product-designer-ai-workflows/",
-        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-Samsara-Senior-Product-Designer-AI-Workflows-Resume.pdf",
-        "configUrl": "https://wallymo.github.io/scripts/packages/samsara-senior-product-designer-ai-workflows.json",
-        "projectUrls": [
-          "https://wallymo.github.io/samsara-senior-product-designer-ai-workflows/project-01.html",
-          "https://wallymo.github.io/samsara-senior-product-designer-ai-workflows/project-02.html",
-          "https://wallymo.github.io/samsara-senior-product-designer-ai-workflows/project-05.html",
-          "https://wallymo.github.io/samsara-senior-product-designer-ai-workflows/project-04.html"
-        ],
-        "redirectUrls": [],
-        "configSha256": "6928d5c7f47a8af1ac2c8ac034ec556ceb0e6c8cf6b2cabc3f94c43f934e2aa0",
-        "pdfSha256": "0efd7703da3619cb711b8fa03742aef24a28ff9a1a52f7404fe682a5af541a99",
-        "resumeBaseProfilesUrl": "https://wallymo.github.io/scripts/resume-base-profiles.json",
-        "resumeBaseProfilesSha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108",
-        "routeSha256": "aaf63db7870ab55b4fb456acb59b347abf37ddb69d6ee602d1f66085baeeb3d1",
-        "scopedProjectSha256": {
-          "project-01.html": "49fe5b92f57a6ece02efb9362b4502eeaf027a792e298f4ea1f0a495f100d0df",
-          "project-02.html": "4066fcfba6fc59dfabab3ec02b9257ff7886a77060f2b02dfe30831880e04ee2",
-          "project-05.html": "d41c06cca72fc53e2765f1519ffc03b7fc7219b38b11f481c8fc2f5c59798efb",
-          "project-04.html": "fbb6dbd0b148c8dfd2b2a414d6c2f928b6457aa8684498a7df10c005c058c0df"
-        },
-        "scopedProjectAssetUrls": [],
-        "scopedProjectAssetSha256": {},
-        "configInputSha256": "832b039bf9efb51bfbe95a5bc7aeb36228e203dd7a9548a5ee6df3db1ec0dcb4",
-        "qaBuiltAt": "2026-08-24T09:16:17.274Z"
-      }
+      "builtAt": "2026-08-24T14:32:19.700Z"
     },
     {
       "slug": "sas-ux-data-visualization",

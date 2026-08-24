@@ -509,6 +509,9 @@
   "route": {
     "presentation": "showcase",
     "heroIntent": "resume-support",
+    "showcaseSections": [
+      "capabilities"
+    ],
     "workHeading": "Recent work.",
     "contactHeading": "Thanks for taking a look."
   },
@@ -516,8 +519,8 @@
     "humanizerVersion": "2.2.0",
     "mode": "surface-only",
     "status": "passed",
-    "reviewedAt": "2026-08-24T09:14:27.934Z",
-    "copySha256": "c33b2f0657f0b0d9711e7c2a02b71e7ae21472e7de9d6fb6efbbd517cb0fcb70",
+    "reviewedAt": "2026-08-24T14:32:00.433Z",
+    "copySha256": "104d6ec4413ba5149289359fc772c8cc5edd457181f6133279e606e85af79aaf",
     "preserved": [
       "content",
       "structure",
@@ -557,8 +560,8 @@
   },
   "qa": {
     "status": "qa-passed",
-    "builtAt": "2026-08-24T09:16:17.274Z",
-    "configInputSha256": "832b039bf9efb51bfbe95a5bc7aeb36228e203dd7a9548a5ee6df3db1ec0dcb4",
+    "builtAt": "2026-08-24T14:32:19.700Z",
+    "configInputSha256": "181b19c1186bef9f9a20cbb4b68643615048c3b6404572b821e21a9d26bab43d",
     "sourceResumeSha256": "2265313e78b596a2b37d6d8f9a95081e4321b4047f142a5f0ddf22449cab4b9c",
     "resumeFoundation": {
       "id": "wally-mostafa-resume-2026-07-03",
@@ -579,8 +582,8 @@
       "registrySha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108"
     },
     "artifactHashes": {
-      "routeSha256": "aaf63db7870ab55b4fb456acb59b347abf37ddb69d6ee602d1f66085baeeb3d1",
-      "resumePdfSha256": "0efd7703da3619cb711b8fa03742aef24a28ff9a1a52f7404fe682a5af541a99",
+      "routeSha256": "e2221e4ada54c6eb9be9e89b83f6e196be3d3191aaf1ca51d201723d0dc5075a",
+      "resumePdfSha256": "6881ac02603e0088008c10c0db161f758acdde975dae1d2c3835e54751fe2253",
       "coverLetterPdfSha256": null,
       "coverLetterMarkdownSha256": null,
       "scopedProjectSha256": {
@@ -783,8 +786,8 @@
       "status": "passed",
       "version": "2.2.0",
       "mode": "surface-only",
-      "reviewedAt": "2026-08-24T09:14:27.934Z",
-      "copySha256": "c33b2f0657f0b0d9711e7c2a02b71e7ae21472e7de9d6fb6efbbd517cb0fcb70",
+      "reviewedAt": "2026-08-24T14:32:00.433Z",
+      "copySha256": "104d6ec4413ba5149289359fc772c8cc5edd457181f6133279e606e85af79aaf",
       "reviewMethod": "humanizer-skill",
       "semanticPassAttested": true,
       "staticChecksPassed": true
