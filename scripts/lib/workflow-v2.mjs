@@ -21,6 +21,7 @@ export const CURRENT_CONTRACT_REVISION = 7;
 export const HUMANIZER_VERSION = '2.2.0';
 const SUPPORTED_CONTRACT_REVISIONS = new Set([2, 3, 4, 5, 6, 7]);
 const FLEXIBLE_POSITIONING_REVISIONS = new Set([5, 6, 7]);
+const SHOWCASE_SECTION_IDS = ['how-i-build', 'capabilities', 'arc'];
 const RESUME_COMPOSITION_MODES = new Set([
   'foundation-complete',
   'curated-user-authorized',
@@ -272,6 +273,68 @@ export function configInputSha256(config) {
   return sha256(JSON.stringify(buildInput));
 }
 
+function decodeRecruiterFacingHtmlText(value) {
+  return value
+    .replace(/&nbsp;/gi, ' ')
+    .replace(/&amp;/gi, '&')
+    .replace(/&lt;/gi, '<')
+    .replace(/&gt;/gi, '>')
+    .replace(/&quot;/gi, '"')
+    .replace(/&#39;|&apos;/gi, "'")
+    .replace(/&rsquo;|&lsquo;/gi, "'")
+    .replace(/&rdquo;|&ldquo;/gi, '"')
+    .replace(/&mdash;|&#8212;/gi, '-')
+    .replace(/&ndash;|&#8211;/gi, '-');
+}
+
+function recruiterFacingHtmlText(html) {
+  const accessibilityText = [
+    ...html.matchAll(
+      /\b(?:aria-label|aria-description|alt|title)\s*=\s*(["'])([\s\S]*?)\1/gi
+    ),
+  ].map((match) => match[2]);
+  const visibleText = html
+    .replace(/<script[\s\S]*?<\/script>/gi, ' ')
+    .replace(/<style[\s\S]*?<\/style>/gi, ' ')
+    .replace(/<svg[\s\S]*?<\/svg>/gi, ' ')
+    .replace(/<!--[\s\S]*?-->/g, ' ')
+    .replace(/<[^>]+>/g, ' ');
+  return decodeRecruiterFacingHtmlText(
+    [visibleText, ...accessibilityText].join(' ')
+  )
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+export function showcaseSectionCopyEntries(config) {
+  if (getRoutePresentation(config) !== 'showcase') {
+    return [];
+  }
+  const sectionIds = Array.isArray(config?.route?.showcaseSections)
+    ? config.route.showcaseSections.filter((sectionId) =>
+        SHOWCASE_SECTION_IDS.includes(sectionId)
+      )
+    : [];
+  if (!sectionIds.length) {
+    return [];
+  }
+  const indexHtml = readFileSync(resolveRepoPath('index.html'), 'utf8');
+  return sectionIds.map((sectionId) => {
+    const section = indexHtml.match(
+      new RegExp(
+        `<section\\b[^>]*\\bid="${sectionId}"[\\s\\S]*?<\\/section>`
+      )
+    )?.[0];
+    if (!section) {
+      throw new Error(`Missing canonical showcase section: ${sectionId}`);
+    }
+    return [
+      `route.showcaseSections.${sectionId}`,
+      recruiterFacingHtmlText(section),
+    ];
+  });
+}
+
 export function humanizerCopyEntries(config) {
   const entries = [];
   const add = (field, value) => {
@@ -373,6 +436,12 @@ export function humanizerCopyEntries(config) {
   add('route.heroIntent', config?.route?.heroIntent);
   add('route.workHeading', config?.route?.workHeading);
   add('route.contactHeading', config?.route?.contactHeading);
+  for (const [field, value] of showcaseSectionCopyEntries(config)) {
+    add(
+      field,
+      value.replace(/—/g, ' - ').replace(/[“”]/g, '"').replace(/\s+/g, ' ')
+    );
+  }
   if (
     config?.route?.projectPullquoteOverrides &&
     typeof config.route.projectPullquoteOverrides === 'object' &&
@@ -2331,6 +2400,24 @@ export function validateV2Config(
           isNonEmptyString(route.contactHeading),
         'route.contactHeading must be a non-empty string when present'
       );
+      const showcaseSections = route.showcaseSections;
+      pushError(
+        errors,
+        showcaseSections === undefined ||
+          (Array.isArray(showcaseSections) &&
+            showcaseSections.length >= 1 &&
+            showcaseSections.length <= SHOWCASE_SECTION_IDS.length &&
+            new Set(showcaseSections).size === showcaseSections.length &&
+            showcaseSections.every((sectionId) =>
+              SHOWCASE_SECTION_IDS.includes(sectionId)
+            )),
+        'route.showcaseSections must be a unique list containing how-i-build, capabilities, or arc'
+      );
+      pushError(
+        errors,
+        showcaseSections === undefined || route.presentation === 'showcase',
+        'route.showcaseSections requires route.presentation showcase'
+      );
       const projectAliases = route.projectAliases;
       pushError(
         errors,
@@ -2874,7 +2961,7 @@ export function assertBuildAllowed(
   }
 }
 
-export function recruiterFacingClaimViolations(config) {
+export function recruiterFacingClaimViolations(config, additionalCopy = []) {
   const recruiterFacingCopy = [
     ...(usesFlexiblePositioningContract(config)
       ? [
@@ -2946,6 +3033,8 @@ export function recruiterFacingClaimViolations(config) {
         pullquote,
       ]
     ),
+    ...showcaseSectionCopyEntries(config),
+    ...additionalCopy,
   ];
   const prohibitedPhrases = [
     ...config.constraints.doNotClaim,
@@ -2967,8 +3056,8 @@ export function recruiterFacingClaimViolations(config) {
   return [...new Set(violations)];
 }
 
-export function assertRecruiterFacingClaimsSupported(config) {
-  const violations = recruiterFacingClaimViolations(config);
+export function assertRecruiterFacingClaimsSupported(config, additionalCopy) {
+  const violations = recruiterFacingClaimViolations(config, additionalCopy);
   if (violations.length) {
     throw new Error(
       `Recruiter-facing route copy contains unsupported claims:\n- ${violations.join(

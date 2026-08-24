@@ -945,7 +945,11 @@ function buildRoute(config, paths) {
         'WARN: showcase presentation with canonical-projects lets case studies link back to the homepage; pair it with routeMode "scoped-projects"'
       );
     }
+    const showcaseSections = new Set(config.route?.showcaseSections || []);
     for (const sectionId of ['how-i-build', 'capabilities', 'arc']) {
+      if (showcaseSections.has(sectionId)) {
+        continue;
+      }
       routeHtml = replaceFirst(
         routeHtml,
         new RegExp(

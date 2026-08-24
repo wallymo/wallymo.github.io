@@ -1346,7 +1346,7 @@ test(
 );
 
 test(
-  'showcase routes drop the positioning sections and retitle the work grid',
+  'showcase routes drop positioning sections by default and allow explicit section restores',
   { timeout: 180_000 },
   () => {
     const { tempRoot, config, configPath } = createBuildFixture({
@@ -1366,6 +1366,26 @@ test(
         validateV2Config(emptyHeading).join('\n'),
         /route\.workHeading must be a non-empty string/
       );
+      const invalidShowcaseSections = structuredClone(config);
+      invalidShowcaseSections.route = {
+        presentation: 'showcase',
+        showcaseSections: ['capabilities', 'capabilities'],
+      };
+      assert.match(
+        validateV2Config(invalidShowcaseSections).join('\n'),
+        /route\.showcaseSections must be a unique list/
+      );
+      assert.ok(schemaErrors(invalidShowcaseSections).length > 0);
+      const fullWithShowcaseSections = structuredClone(config);
+      fullWithShowcaseSections.route = {
+        presentation: 'full',
+        showcaseSections: ['capabilities'],
+      };
+      assert.match(
+        validateV2Config(fullWithShowcaseSections).join('\n'),
+        /route\.showcaseSections requires route\.presentation showcase/
+      );
+      assert.ok(schemaErrors(fullWithShowcaseSections).length > 0);
       const leakyShowcase = structuredClone(config);
       leakyShowcase.route = { presentation: 'showcase' };
       assert.match(
@@ -1537,6 +1557,14 @@ test(
             value === 'Thanks for stopping by.'
         )
       );
+      const inheritedArcReview = structuredClone(config);
+      inheritedArcReview.route.showcaseSections = ['arc'];
+      assert.doesNotThrow(() =>
+        approveHumanizerReview(inheritedArcReview, {
+          reviewedAt: '2026-08-03T12:00:00.000Z',
+          semanticPassComplete: true,
+        })
+      );
       approveHumanizerReview(config, {
         reviewedAt: '2026-08-03T12:00:00.000Z',
         semanticPassComplete: true,
@@ -1581,6 +1609,85 @@ test(
       assert.ok(!routeHtml.includes('Also from this period'));
       assert.ok(!routeHtml.includes('project-07.html'));
       assert.ok(!/<a href="\.\.\/project-\d+\.html">/.test(routeHtml));
+
+      const approvedCopySha256 = config.copyReview.copySha256;
+      config.route.showcaseSections = ['how-i-build'];
+      assert.notEqual(humanizerCopySha256(config), approvedCopySha256);
+      assert.throws(
+        () => assertHumanizerReviewCurrent(config),
+        /copySha256 is stale/
+      );
+      approveHumanizerReview(config, {
+        reviewedAt: '2026-08-03T12:00:00.000Z',
+        semanticPassComplete: true,
+      });
+      config.constraints.blockedTerms = ['AI product build sequence'];
+      writeFileSync(configPath, `${JSON.stringify(config, null, 2)}\n`);
+      const unsupportedRestore = run(
+        [
+          'scripts/build-tailored-package.mjs',
+          '--config',
+          configPath,
+          '--overwrite',
+        ],
+        {
+          env: {
+            ...process.env,
+            WORKFLOW_REPO_ROOT: tempRoot,
+            CHROME_PATH: resolveChromeExecutable(),
+          },
+        }
+      );
+      assert.notEqual(unsupportedRestore.status, 0);
+      assert.match(
+        unsupportedRestore.stderr,
+        /route\.showcaseSections\.how-i-build contains unsupported language: AI product build sequence/
+      );
+
+      config.route.showcaseSections = ['capabilities'];
+      config.constraints.blockedTerms = ['Python engineering'];
+      assert.throws(
+        () => assertHumanizerReviewCurrent(config),
+        /copySha256 is stale/
+      );
+      approveHumanizerReview(config, {
+        reviewedAt: '2026-08-03T12:00:00.000Z',
+        semanticPassComplete: true,
+      });
+      assert.deepEqual(validateV2Config(config), []);
+      assert.deepEqual(schemaErrors(config), []);
+      writeFileSync(configPath, `${JSON.stringify(config, null, 2)}\n`);
+      const restoredResult = run(
+        [
+          'scripts/build-tailored-package.mjs',
+          '--config',
+          configPath,
+          '--overwrite',
+        ],
+        {
+          env: {
+            ...process.env,
+            WORKFLOW_REPO_ROOT: tempRoot,
+            CHROME_PATH: resolveChromeExecutable(),
+          },
+        }
+      );
+      assert.equal(
+        restoredResult.status,
+        0,
+        `${restoredResult.stdout}\n${restoredResult.stderr}`
+      );
+      const restoredRouteHtml = readFileSync(
+        path.join(tempRoot, 'showcase-route-fixture', 'index.html'),
+        'utf8'
+      );
+      assert.ok(restoredRouteHtml.includes('id="capabilities"'));
+      assert.ok(restoredRouteHtml.includes('Where I create leverage.'));
+      assert.ok(restoredRouteHtml.includes('href="#capabilities"'));
+      assert.ok(!restoredRouteHtml.includes('id="how-i-build"'));
+      assert.ok(!restoredRouteHtml.includes('id="arc"'));
+      assert.ok(!restoredRouteHtml.includes('href="#how-i-build"'));
+      assert.ok(!restoredRouteHtml.includes('href="#arc"'));
     } finally {
       rmSync(tempRoot, { recursive: true, force: true });
     }

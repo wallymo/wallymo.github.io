@@ -523,6 +523,15 @@
         "projectCardStats": { "enum": ["visible", "hidden"] },
         "workHeading": { "type": "string", "minLength": 1 },
         "contactHeading": { "type": "string", "minLength": 1 },
+        "showcaseSections": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 3,
+          "uniqueItems": true,
+          "items": {
+            "enum": ["how-i-build", "capabilities", "arc"]
+          }
+        },
         "projectAliases": {
           "type": "object",
           "minProperties": 1,
@@ -622,6 +631,17 @@
           }
         }
       },
+      "allOf": [
+        {
+          "if": { "required": ["showcaseSections"] },
+          "then": {
+            "required": ["presentation"],
+            "properties": {
+              "presentation": { "const": "showcase" }
+            }
+          }
+        }
+      ],
       "additionalProperties": false
     },
     "copyReview": {

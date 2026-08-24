@@ -78,7 +78,7 @@ Use the self-contained employer-specific showcase as the default route pattern.
 
 - Create a route at `/<company-or-role-slug>/` using `index.html` as the base. Do not copy a different role route as the starting point; that leaks old role framing and stale artifact links.
 - Keep the public homepage `/`, public `resume.html`, and `assets/Wally-Mostafa-Resume.pdf` untouched unless the user explicitly asks to change the global site.
-- Use `scoped-projects` with `route.presentation: "showcase"` and `route.heroIntent: "resume-support"` by default. The route, selected case studies, and all return paths must stay inside the employer-specific package.
+- Use `scoped-projects` with `route.presentation: "showcase"` and `route.heroIntent: "resume-support"` by default. The route, selected case studies, and all return paths must stay inside the employer-specific package. If the human explicitly asks to restore How I Build, capabilities, or the career arc without the full homepage narrative, add only the requested section IDs to `route.showcaseSections`.
 - Use `canonical-projects` or `route.presentation: "full"` only as an explicit opt-out when the canonical public portfolio or fuller homepage narrative is intentionally part of the recruiter path.
 - Tailor only the route areas that support the JD-specific proof path:
   - Hidden metadata: page title, meta description, and Open Graph URL/title/description.
