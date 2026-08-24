@@ -3647,6 +3647,41 @@
       }
     },
     {
+      "workflowVersion": 2,
+      "contractRevision": 7,
+      "slug": "samsara-senior-product-designer-ai-workflows",
+      "roleTitle": "Senior Product Designer - AI / Agentic Workflows",
+      "artifactStem": "Samsara-Senior-Product-Designer-AI-Workflows",
+      "configPath": "scripts/packages/samsara-senior-product-designer-ai-workflows.json",
+      "targetLane": "ai-product-implementation",
+      "evidenceMode": "portfolio-primary",
+      "fitClass": "strong",
+      "positioningLane": "ai-product-implementation",
+      "bridgeType": "direct",
+      "applicationStrategy": "direct",
+      "resumeBaseMode": "ai-product-implementation",
+      "resumeBaseLeadProfile": "ai-product-implementation",
+      "resumeBaseAction": "tailor-to-jd",
+      "accountPresentation": "consolidated",
+      "resumeBaseProfiles": [
+        {
+          "id": "ai-product-implementation",
+          "version": 1
+        }
+      ],
+      "routeMode": "scoped-projects",
+      "selectedProjects": [
+        "project-01.html",
+        "project-02.html",
+        "project-05.html",
+        "project-04.html"
+      ],
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Samsara-Senior-Product-Designer-AI-Workflows-Resume.pdf",
+      "publishStatus": "local-only",
+      "qaStatus": "qa-passed",
+      "builtAt": "2026-08-24T09:16:17.274Z"
+    },
+    {
       "slug": "sas-ux-data-visualization",
       "roleTitle": "SAS UX Designer, Data Visualization",
       "fitClass": "adjacent",

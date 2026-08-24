@@ -1,0 +1,838 @@
+{
+  "workflowVersion": 2,
+  "contractRevision": 7,
+  "slug": "samsara-senior-product-designer-ai-workflows",
+  "roleTitle": "Senior Product Designer - AI / Agentic Workflows",
+  "artifactStem": "Samsara-Senior-Product-Designer-AI-Workflows",
+  "fitClass": "strong",
+  "routeMode": "scoped-projects",
+  "selectedProjects": [
+    "project-01.html",
+    "project-02.html",
+    "project-05.html",
+    "project-04.html"
+  ],
+  "job": {
+    "company": "Samsara (via Academy)",
+    "roleTitle": "Senior Product Designer - AI / Agentic Workflows",
+    "jobId": "0b68460b-280f-41d1-aeb2-b7e2d0c234b1",
+    "jobUrl": "https://jobs.lever.co/Academy/0b68460b-280f-41d1-aeb2-b7e2d0c234b1",
+    "sourceChannel": "user-provided-job-url",
+    "dateCaptured": "2026-08-24",
+    "location": "Fully remote; candidates in a Samsara entity country strongly preferred",
+    "atsVendor": "Lever",
+    "rawJd": "WHO WE ARE:\nSamsara (NYSE: IOT) is the pioneer of the Connected Operations Cloud, a platform that helps organizations with physical operations use Internet of Things data to improve safety, efficiency, and sustainability. The platform supports industries including agriculture, construction, field services, transportation, and manufacturing. Product areas include Video-Based Safety, Vehicle Telematics, Apps and Driver Workflows, and Equipment Monitoring.\n\nABOUT THE ROLE\nAs a Senior Product Designer at Samsara, you will provide design expertise and execution for strategic initiatives, delivering end-to-end experiences that affect customers and business objectives. You will own design for the AI and agentic workflows product area, shaping how the platform surfaces intelligent automation and decision-making for physical operations teams. You will collaborate closely with Product and Engineering, work directly with customers, influence strategy, and ship well-crafted designs.\n\nYOU SHOULD APPLY IF\n- You want to affect the industries that run our world.\n- You are the architect of your own career and want room to experiment and develop your craft in a hyper-growth environment.\n- You are energized by the opportunity to digitize large sectors of the global economy.\n- You want to work with a high-calibre team.\n\nWHAT YOU'LL DO\n- Own the UX for a product area or surface, shipping designs that unlock customer and business value.\n- Collaborate closely with product and engineering on strategy, planning, and execution.\n- Work directly with customers to understand their needs, validate designs, and inform strategy.\n- Provide expertise and knowledge transfer to Samsara's internal design team.\n- Deliver agreed-upon project deliverables on time and to spec.\n\nMINIMUM REQUIREMENTS\n- 5+ years of product design experience designing UX/UI for web and mobile applications.\n- Direct experience designing AI or agentic workflow products strongly preferred.\n- Strong interaction and visual design skills.\n- Portfolio and/or case studies showing design craft and the ability to solve user problems with quantified impact, required to be considered.\n- Demonstrated proficiency with AI tools such as Cursor, Claude Code, and Figma Make.\n- Experience prototyping in real codebases and comfort working in GitHub.\n- Proven experience in fast-paced, high-growth environments.\n- Strong cross-functional collaboration skills.\n\nIDEAL CANDIDATE\n- High craft with pragmatic, proactive execution.\n- Comfortable with zero-to-one and early-stage work where the path is not fully defined.\n- Self-directed and resourceful.\n- Refined taste, strong product instincts, and a bias toward solving real customer problems.\n- Curious, hands-on, and resilient, with the ability to move between strategy and polished execution.\n\nCONTRACT DETAILS\nDuration: 6 months, with conversion potential if based in a country where Samsara has legal entities.\nHours: 40 hours per week, no overtime.\nLocation: Fully remote.\nRate: $90-$110 per hour.\nStart: ASAP.\nCandidates based in a Samsara entity country are strongly preferred. Eligible countries are the United States, United Kingdom, Canada, France, Germany, Netherlands, Poland, India, Taiwan, and Mexico. All offers depend on the individual's ability to secure and maintain the legal right to work in their respective country."
+  },
+  "classification": {
+    "targetLane": "ai-product-implementation",
+    "evidenceMode": "portfolio-primary",
+    "primarySource": "The portfolio shows current AI workflow design, working product prototypes, customer research, interaction decisions, and enterprise design-system work with quantified outcomes.",
+    "supportingSource": "The resume confirms more than five years in product design, cross-functional delivery, research leadership, enterprise scale, and hands-on AI implementation.",
+    "hardGateStatus": "pass",
+    "hardGates": [
+      {
+        "gate": "5+ years of product design experience for web and mobile applications",
+        "status": "pass",
+        "requirementId": "product-design-tenure",
+        "evidence": "Design-titled work runs from Senior UX Designer in 2018 through current AI product and implementation work."
+      },
+      {
+        "gate": "Portfolio or case studies with craft, user-problem framing, and quantified impact",
+        "status": "pass",
+        "requirementId": "portfolio-quantified-impact",
+        "evidence": "The selected work documents working AI products, a design system with 500 components, research across 20+ products, and enterprise products used by 7,000+ people across 22 brands."
+      }
+    ]
+  },
+  "requirements": [
+    {
+      "id": "product-design-tenure",
+      "text": "Bring at least five years of product design experience across web and mobile UX/UI.",
+      "priority": "hard-gate",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The resume shows design-titled work from August 2018 through current AI product and implementation roles."
+      ],
+      "proofIds": [
+        "heartbeat-02",
+        "kinesso-02",
+        "one-block-away-04"
+      ],
+      "destinations": [
+        "summary",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "8 years",
+        "product design"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "end-to-end-product-design",
+      "text": "Own end-to-end UX for a product area and ship polished designs that create customer and business value.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Current work covers product strategy, UX, AI workflow design, front-end build, backend logic, demo readiness, and client iteration through a working prototype.",
+        "Enterprise work turned research and adoption data into roadmap priorities for analytics used by 7,000+ people across 22 brands."
+      ],
+      "proofIds": [
+        "one-block-away-04",
+        "kinesso-02",
+        "heartbeat-03"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "product flows",
+        "working prototypes",
+        "build-ready"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "ai-agentic-workflow-design",
+      "text": "Design AI and agentic workflow products that make model decisions and automation useful to customers.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Claims Detector maps model output, evidence gaps, review criteria, and human decisions into a regulated product workflow.",
+        "Bailey Intelligence turns founder inputs, GitHub signals, source health, and risk scoring into a multi-source readiness workflow."
+      ],
+      "proofIds": [
+        "hedgehox-02",
+        "one-block-away-03",
+        "one-block-away-04"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "LLM/VLM workflows",
+        "model orchestration",
+        "human review surfaces"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "interaction-visual-craft",
+      "text": "Apply strong interaction and visual design craft across product flows, components, and polished interfaces.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The Splash case study documents a design system with 500 components, 140 styles, 300 icons, and 50 personas.",
+        "Enterprise design and data-visualization work earned Indigo and Red Dot recognition."
+      ],
+      "proofIds": [
+        "hedgehox-04",
+        "kinesso-04",
+        "heartbeat-02"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "Figma",
+        "design systems",
+        "component libraries"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "portfolio-quantified-impact",
+      "text": "Show case studies that connect design craft and user problems to quantified impact.",
+      "priority": "hard-gate",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The selected portfolio work includes more than 100 responsive screenshots in under five minutes, a listing product that produces output in under 90 seconds, a 500-component system, and a research practice spanning 20+ products.",
+        "The resume adds enterprise scale of 7,000+ people across 22 brands and nine Indigo awards plus Red Dot recognition."
+      ],
+      "proofIds": [
+        "kinesso-02",
+        "kinesso-04",
+        "one-block-away-02"
+      ],
+      "destinations": [
+        "summary",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "7,000+",
+        "500 components"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "ai-tools-real-codebases-github",
+      "text": "Use AI design and development tools to prototype in real codebases and work comfortably in GitHub.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The public portfolio documents Figma, Claude Code, Codex, browser-based inspection, and GitHub as part of the current build workflow.",
+        "The candidate confirmed direct use of Cursor and Figma Make for this application."
+      ],
+      "proofIds": [
+        "addition:samsara-ai-assisted-prototyping",
+        "one-block-away-04",
+        "kinesso-04"
+      ],
+      "destinations": [
+        "summary",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "Cursor",
+        "Claude Code",
+        "Figma Make",
+        "GitHub"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "customer-research-validation",
+      "text": "Work directly with customers to understand needs, validate designs, and inform product strategy.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Built a research practice across 20+ products using participant recruitment, interviews, prototype testing, beta groups, and behavioral analytics.",
+        "Current POC work starts with unclear client questions and uses the working product to sharpen roadmap decisions."
+      ],
+      "proofIds": [
+        "kinesso-06",
+        "one-block-away-01",
+        "heartbeat-01"
+      ],
+      "destinations": [
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "stakeholder interviews",
+        "prototype testing",
+        "client iteration"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "product-engineering-collaboration",
+      "text": "Collaborate with product and engineering on strategy, planning, execution, and build-ready handoff.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Kanvas work paired product and engineering roadmap decisions with executive input on monetization and go-to-market planning.",
+        "Healthcare UX work moved research findings into build-ready experiences with strategy, creative, account, and engineering partners."
+      ],
+      "proofIds": [
+        "kinesso-08",
+        "heartbeat-03",
+        "one-block-away-04"
+      ],
+      "destinations": [
+        "skills",
+        "experience"
+      ],
+      "resumeTerms": [
+        "product and engineering",
+        "build-ready",
+        "production handoff"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "zero-to-one-execution",
+      "text": "Move zero-to-one work forward in a fast, ambiguous environment without heavy structure.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "One Block Away turns unclear business questions into working POCs, demo flows, and roadmap decisions.",
+        "Kinesso work grew a design team from 2 to 30 while supporting more than 20 products."
+      ],
+      "proofIds": [
+        "one-block-away-01",
+        "one-block-away-04",
+        "kinesso-01"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "client-led AI POCs",
+        "demo readiness",
+        "roadmap decisions"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "remote-eligible-country",
+      "text": "Work remotely from a country where Samsara has a legal entity.",
+      "priority": "context",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The resume lists Raleigh, North Carolina, and the United States is named in the posting's eligible-country list."
+      ],
+      "proofIds": [],
+      "destinations": [
+        "application-answer"
+      ],
+      "resumeTerms": [
+        "Raleigh, NC"
+      ],
+      "matchMode": "contextual"
+    }
+  ],
+  "fitGate": {
+    "supportedOverlap": [
+      "The selected portfolio work covers AI product flows, model behavior, human review, and working prototypes instead of concept-only screens.",
+      "The enterprise work shows interaction design, visual systems, research, and delivery at a scale of 7,000+ people across 22 brands.",
+      "Current build practice includes Figma, Figma Make, Cursor, Claude Code, Codex, browser inspection, and GitHub-based workflows.",
+      "The resume shows more than five years in product design and direct collaboration with customers, product teams, and engineers."
+    ],
+    "unsupportedRequirements": [],
+    "actualMismatches": [],
+    "missingEvidence": [
+      "The portfolio does not show connected-operations or IoT domain work. The posting does not list that background as a requirement."
+    ],
+    "coverLetterBridge": {
+      "status": "not-needed",
+      "rationale": "The resume and case studies already show the role's main work: senior product design, AI workflow UX, customer research, polished prototypes, design systems, and cross-functional delivery."
+    },
+    "resumeBase": {
+      "mode": "ai-product-implementation",
+      "sourceProfiles": [
+        {
+          "id": "ai-product-implementation",
+          "version": 1
+        }
+      ],
+      "leadProfileId": "ai-product-implementation",
+      "accountPresentation": "consolidated",
+      "action": "tailor-to-jd",
+      "rationale": "The role centers on product design, AI workflow UX, research, prototyping, and engineering collaboration. The AI/Product Implementation profile carries the direct evidence, while account work remains supporting client context."
+    },
+    "recommendation": "Proceed with the product-design and AI-workflow evidence. Keep IoT experience and conventional engineering ownership out of the claim set."
+  },
+  "positioning": {
+    "laneId": "ai-product-implementation",
+    "targetIdentity": "senior product designer and AI product builder",
+    "employerNeed": "Own AI workflow UX, work directly with customers, and turn product strategy into polished designs and working prototypes.",
+    "bridgeType": "direct",
+    "applicationStrategy": "direct",
+    "bridgeThesis": "turn customer problems into tested AI workflows and working prototypes",
+    "proofIds": [
+      "hedgehox-02",
+      "one-block-away-04",
+      "kinesso-06"
+    ],
+    "remainingGap": null
+  },
+  "coverLetter": null,
+  "resume": {
+    "foundationId": "wally-mostafa-resume-2026-07-03",
+    "foundationVersion": 3,
+    "compositionMode": "foundation-complete",
+    "layoutDensity": "compact",
+    "portfolioLinkLabel": "Portfolio",
+    "roleContinuationBreaks": [
+      {
+        "roleId": "kinesso",
+        "afterBullet": 2
+      }
+    ],
+    "summary": "Senior product designer and AI product builder with 8 years in product design. I turn customer problems into tested AI workflows and working prototypes, then carry them into polished product flows and build-ready handoffs. I use Figma, Figma Make, Cursor, Claude Code, Codex, and GitHub-based workflows to prototype in real codebases. Recent AI work covers LLM/VLM review tools, model orchestration, and human review. Earlier enterprise work supported 7,000+ people across 22 brands and helped scale design from 2 to 30.",
+    "skillIds": [
+      "enterprise-ux-design-systems",
+      "ai-implementation-workflow-design",
+      "product-strategy-poc-delivery",
+      "research-experience-strategy",
+      "program-project-delivery"
+    ],
+    "skills": [
+      {
+        "label": "Enterprise UX & Design Systems",
+        "description": "Team scaling (2 to 30), enterprise analytics, workflow UX, data visualization, component libraries, and accessibility (WCAG)"
+      },
+      {
+        "label": "AI Implementation & Workflow Design",
+        "description": "Governed LLM/VLM workflows, multimodal review, RAG/knowledge bases, prompt-defined criteria, model orchestration, and human review surfaces"
+      },
+      {
+        "label": "Product Strategy & POC Delivery",
+        "description": "Discovery, scoping, requirements, prototype validation, demo narratives, build-ready logic, and production handoff"
+      },
+      {
+        "label": "Research & Experience Strategy",
+        "description": "Stakeholder interviews, competitive audits, journey maps, user flows, wireframes, prototypes, usability testing, and research-led product direction"
+      },
+      {
+        "label": "Program & Project Delivery",
+        "description": "Scoping, requirements, timelines, review routing, team coordination, risk visibility, and build-ready handoff across product, design, and client teams"
+      }
+    ],
+    "roles": {
+      "hedgehox": [
+        "Secured an investor for proprietary Claims Detection software by building the functional POC, shaping the product story, and iterating with investors",
+        "Designed Claims Detector workflows that identify promotional claims, surface evidence gaps, and pre-populate audit-ready annotations before MLR submission",
+        "Turn pharma agency needs into product requirements and working AI tools for MLR claim review, brief intake, scoping, review routing, submission capture, and FDA signal monitoring",
+        "Designed the full Xenagos Bio startup biopharma website from scratch, including investor-facing structure, scientific positioning, visual direction, and hidden design-system handoff",
+        "Built Scope Generator for pharma agency finance and operations teams to manage regional rate cards, brands, sub-brands, and natural-language scope changes",
+        "Developed FDA Warning Tool concepts that connect warning-letter patterns to content-risk guidance for pharma teams"
+      ],
+      "one-block-away": [
+        "Build client-led AI POCs that turn unclear business questions into testable product surfaces, demo flows, and roadmap decisions",
+        "Built ListingPal's AI listing-generation POC and landing page, turning basic property inputs into listing copy, social posts, ad copy, styling direction, and MLS/SEO-ready language in under 90 seconds",
+        "Built WeReady's Bailey Intelligence dashboard, translating founder inputs, GitHub signals, source health, risk scoring, and evidence trails into startup-readiness workflows",
+        "Use Figma, Figma Make, Cursor, Claude Code, Codex, and GitHub to turn ideas into working browser prototypes and revise them with clients",
+        "Own product strategy, UX, AI workflow design, front-end build, backend logic, demo readiness, and client iteration from first ask through working prototype",
+        "Currently building the website and sponsor strategy for a Tunisia youth soccer program, positioning the project for player advancement, community support, and donor outreach"
+      ],
+      "kinesso": [
+        "Scaled product design from 2 to 30 across the US and Poland, hiring and staffing designers, leading critiques and quality reviews, and planning scope, resources, and engineering handoff across 20+ products",
+        "Partnered with the Head of Design to create the team's first onboarding program, career roadmaps, coaching structure, and performance review workflows for new and existing employees",
+        "Built Kinesso's first UX research practice across 20+ products, including participant recruitment, interviews, prototype testing, beta groups, behavioral analytics, research tooling, shared Figma documentation, and UX checkpoints in project plans",
+        "Led UX research and strategy for a marketing intelligence suite used by 7,000+ people across 22 white-label brands; turned findings and adoption data into roadmap priorities for navigation, dashboards, brand theming, personalization, and product support",
+        "Helped shape and govern a design system with 500 components, 140 styles, 300 icons, and 50 personas, including accessibility and design quality standards; the work earned 5 Indigo Gold, 4 Indigo Silver, and Red Dot recognition",
+        "Led workshops on product discovery, ecosystem mapping, innovation, and user research; expanded the program from Kinesso teams to IPG groups and presented recommendations to executives and clients",
+        "UX lead for research and design on Kanvas, Kinesso's developer-first API services library; partnered with product and engineering on roadmap priorities and with C-suite stakeholders on monetization and go-to-market planning",
+        "Collaborated on the UX/UI build of Digital Experience Audit, turning channel scoring, benchmarks, and recommendations into a repeatable workflow with data visualization and presentation-ready client outputs",
+        "Led a three-person team to second place in Kinesso's inaugural innovation challenge with an accessibility panel concept; later advised the next cohort and contributed to accessibility playbook and keyboard interaction standards"
+      ],
+      "omnicom": [
+        "Supported oncology accounts as a freelance UX designer, combining UX design and account-management experience to strengthen regulated healthcare work",
+        "Championed UX best practices across account, strategy, creative, and delivery conversations, translating brand goals into clearer user flows, content structure, and digital recommendations"
+      ],
+      "heartbeat": [
+        "Led UX research and experience strategy for pharma and healthcare work, translating stakeholder input, competitive audits, and user needs into digital product direction",
+        "Created journey maps, site maps, user flows, wireframes, and prototypes for patient, HCP, and internal brand-team experiences across regulated healthcare programs",
+        "Partnered with strategy, creative, account, and engineering teams to move research findings into prioritized, build-ready product and campaign experiences"
+      ],
+      "account-management": [
+        "8 years managing Fortune 500 pharma and healthcare clients and brand budgets up to $20M across CNS/neurology, psychiatry, cardiovascular/metabolic, and sleep/wakefulness brands including NUVIGIL, Namenda XR, Lipitor, and Zoloft",
+        "One of two account consumer leads on FCB Health's largest pharma account across all verticals: TV, radio, digital, gaming, Times Square, unbranded campaigns, brand planning, and MLR review",
+        "Translated client and brand strategy into briefs, creative feedback, production requirements, priorities, timelines, and MLR-ready delivery across account, creative, UX, and development teams"
+      ]
+    },
+    "sourceBulletIds": {
+      "hedgehox": [
+        "hedgehox-01",
+        "hedgehox-02",
+        "hedgehox-03",
+        "hedgehox-04",
+        "hedgehox-05",
+        "hedgehox-06"
+      ],
+      "one-block-away": [
+        "one-block-away-01",
+        "one-block-away-02",
+        "one-block-away-03",
+        "addition:samsara-ai-assisted-prototyping",
+        "one-block-away-04",
+        "one-block-away-05"
+      ],
+      "kinesso": [
+        "kinesso-01",
+        "kinesso-05",
+        "kinesso-06",
+        "kinesso-02",
+        "kinesso-04",
+        "kinesso-07",
+        "kinesso-08",
+        "kinesso-03",
+        "kinesso-09"
+      ],
+      "omnicom": [
+        "omnicom-01",
+        "omnicom-02"
+      ],
+      "heartbeat": [
+        "heartbeat-01",
+        "heartbeat-02",
+        "heartbeat-03"
+      ],
+      "account-management": [
+        "account-management-01",
+        "account-management-02",
+        "account-management-03"
+      ]
+    }
+  },
+  "hero": {
+    "eyebrow": "Samsara | Senior Product Designer",
+    "tags": [
+      "AI workflow design",
+      "Working product prototypes",
+      "Research and design systems"
+    ],
+    "intro": "This is a look at recent work that may be relevant to Samsara's Senior Product Designer role. I included AI workflow design, working product prototypes, customer research, and enterprise design systems."
+  },
+  "contact": {
+    "prompt": "Email and the matched resume are below.",
+    "signoff": "Product design | AI workflows | Raleigh, NC"
+  },
+  "route": {
+    "presentation": "showcase",
+    "heroIntent": "resume-support",
+    "workHeading": "Recent work.",
+    "contactHeading": "Thanks for taking a look."
+  },
+  "copyReview": {
+    "humanizerVersion": "2.2.0",
+    "mode": "surface-only",
+    "status": "passed",
+    "reviewedAt": "2026-08-24T09:14:27.934Z",
+    "copySha256": "c33b2f0657f0b0d9711e7c2a02b71e7ae21472e7de9d6fb6efbbd517cb0fcb70",
+    "preserved": [
+      "content",
+      "structure",
+      "claims",
+      "ending"
+    ],
+    "rewriteAuthorized": false,
+    "reviewMethod": "humanizer-skill",
+    "semanticPassAttested": true,
+    "staticChecksPassed": true,
+    "finalAntiAiPass": true,
+    "remainingTells": []
+  },
+  "constraints": {
+    "doNotClaim": [
+      "Conventional software engineering ownership",
+      "Personally hand-coded every system",
+      "Production infrastructure or model-operations ownership",
+      "Samsara, IoT, or connected-operations product experience",
+      "Sole ownership of the full Kinesso design system",
+      "30 direct reports"
+    ],
+    "blockedTerms": [
+      "conventional software engineer",
+      "hand-coded every system",
+      "production infrastructure owner",
+      "model operations owner",
+      "Samsara product experience",
+      "IoT product experience",
+      "sole design-system owner",
+      "30 direct reports"
+    ]
+  },
+  "privacy": {
+    "publicSafe": true,
+    "notes": "Contains only the public job description and sanitized evidence from the public resume and portfolio. It excludes recruiter details, application answers, personal compensation boundaries, and private eligibility details."
+  },
+  "qa": {
+    "status": "qa-passed",
+    "builtAt": "2026-08-24T09:16:17.274Z",
+    "configInputSha256": "832b039bf9efb51bfbe95a5bc7aeb36228e203dd7a9548a5ee6df3db1ec0dcb4",
+    "sourceResumeSha256": "2265313e78b596a2b37d6d8f9a95081e4321b4047f142a5f0ddf22449cab4b9c",
+    "resumeFoundation": {
+      "id": "wally-mostafa-resume-2026-07-03",
+      "sourcePdfSha256": "f9b05b6c3c134262b1af6c5734363daf4385cf335407a139779a37d138adf1aa"
+    },
+    "resumeBase": {
+      "mode": "ai-product-implementation",
+      "sourceProfiles": [
+        {
+          "id": "ai-product-implementation",
+          "version": 1
+        }
+      ],
+      "leadProfileId": "ai-product-implementation",
+      "accountPresentation": "consolidated",
+      "action": "tailor-to-jd",
+      "registryVersion": 1,
+      "registrySha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108"
+    },
+    "artifactHashes": {
+      "routeSha256": "aaf63db7870ab55b4fb456acb59b347abf37ddb69d6ee602d1f66085baeeb3d1",
+      "resumePdfSha256": "0efd7703da3619cb711b8fa03742aef24a28ff9a1a52f7404fe682a5af541a99",
+      "coverLetterPdfSha256": null,
+      "coverLetterMarkdownSha256": null,
+      "scopedProjectSha256": {
+        "project-01.html": "49fe5b92f57a6ece02efb9362b4502eeaf027a792e298f4ea1f0a495f100d0df",
+        "project-02.html": "4066fcfba6fc59dfabab3ec02b9257ff7886a77060f2b02dfe30831880e04ee2",
+        "project-05.html": "d41c06cca72fc53e2765f1519ffc03b7fc7219b38b11f481c8fc2f5c59798efb",
+        "project-04.html": "fbb6dbd0b148c8dfd2b2a414d6c2f928b6457aa8684498a7df10c005c058c0df"
+      },
+      "scopedProjectAssetSha256": {}
+    },
+    "renderer": {
+      "browser": {
+        "name": "chrome-headless-shell",
+        "version": "Google Chrome for Testing 149.0.7827.55"
+      },
+      "htmlPath": "tmp/tailored-resumes/samsara-senior-product-designer-ai-workflows.html",
+      "pdfPath": "output/pdf/Wally-Mostafa-Samsara-Senior-Product-Designer-AI-Workflows-Resume.pdf",
+      "fontWait": true,
+      "fontProfile": "portfolio-pdf"
+    },
+    "coverLetterRenderer": null,
+    "coverLetter": null,
+    "ats": {
+      "ok": true,
+      "pdfPath": "output/pdf/Wally-Mostafa-Samsara-Senior-Product-Designer-AI-Workflows-Resume.pdf",
+      "pageCount": 2,
+      "fileSize": 81057,
+      "annotations": [
+        {
+          "page": 1,
+          "uri": "mailto:wmostafa12@gmail.com"
+        },
+        {
+          "page": 1,
+          "uri": "https://linkedin.com/in/wallymo"
+        },
+        {
+          "page": 1,
+          "uri": "https://wallymo.github.io/samsara-senior-product-designer-ai-workflows/"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/6748"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/4629"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.red-dot.org/project/dxa-digital-experience-audit-55219"
+        }
+      ],
+      "fontCompatibility": {
+        "type3Fonts": false
+      },
+      "coverage": [
+        {
+          "id": "product-design-tenure",
+          "requirement": "Bring at least five years of product design experience across web and mobile UX/UI.",
+          "priority": "hard-gate",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "8 years",
+            "product design"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "end-to-end-product-design",
+          "requirement": "Own end-to-end UX for a product area and ship polished designs that create customer and business value.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "product flows",
+            "working prototypes",
+            "build-ready"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "ai-agentic-workflow-design",
+          "requirement": "Design AI and agentic workflow products that make model decisions and automation useful to customers.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "LLM/VLM workflows",
+            "model orchestration",
+            "human review surfaces"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "interaction-visual-craft",
+          "requirement": "Apply strong interaction and visual design craft across product flows, components, and polished interfaces.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "Figma",
+            "design systems",
+            "component libraries"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "portfolio-quantified-impact",
+          "requirement": "Show case studies that connect design craft and user problems to quantified impact.",
+          "priority": "hard-gate",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "7,000+",
+            "500 components"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "ai-tools-real-codebases-github",
+          "requirement": "Use AI design and development tools to prototype in real codebases and work comfortably in GitHub.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "Cursor",
+            "Claude Code",
+            "Figma Make",
+            "GitHub"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "customer-research-validation",
+          "requirement": "Work directly with customers to understand needs, validate designs, and inform product strategy.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "stakeholder interviews",
+            "prototype testing",
+            "client iteration"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "product-engineering-collaboration",
+          "requirement": "Collaborate with product and engineering on strategy, planning, execution, and build-ready handoff.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "product and engineering",
+            "build-ready",
+            "production handoff"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "zero-to-one-execution",
+          "requirement": "Move zero-to-one work forward in a fast, ambiguous environment without heavy structure.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "client-led AI POCs",
+            "demo readiness",
+            "roadmap decisions"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "remote-eligible-country",
+          "requirement": "Work remotely from a country where Samsara has a legal entity.",
+          "priority": "context",
+          "evidenceStatus": "direct",
+          "matchMode": "contextual",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "Raleigh, NC"
+          ],
+          "missingTerms": []
+        }
+      ],
+      "failures": [],
+      "warnings": []
+    },
+    "humanizer": {
+      "status": "passed",
+      "version": "2.2.0",
+      "mode": "surface-only",
+      "reviewedAt": "2026-08-24T09:14:27.934Z",
+      "copySha256": "c33b2f0657f0b0d9711e7c2a02b71e7ae21472e7de9d6fb6efbbd517cb0fcb70",
+      "reviewMethod": "humanizer-skill",
+      "semanticPassAttested": true,
+      "staticChecksPassed": true
+    },
+    "route": {
+      "viewports": [
+        {
+          "name": "desktop",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-01",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-02",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-05",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-04",
+          "errors": []
+        },
+        {
+          "name": "mobile",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-01",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-02",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-05",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-04",
+          "errors": []
+        }
+      ],
+      "errors": []
+    }
+  }
+}
