@@ -30,9 +30,17 @@ Card extraction, fallback cards, aliased filenames, scoped numbering, previous/n
 links, matched resume destinations, and optional statistics are retained.
 
 The project stack measures the selected cards after fonts load. At widths of at
-least 1120px it stacks only if the tallest card fits below the fixed navigation and
-all preceding card headers. Heights are equalized without shrinking type so mixed
-selections leave the stack together. Smaller viewports use flat cards.
+least 1120px it stacks when the tallest card fits below the fixed navigation.
+Preceding headers use up to 46px spacing, reduced to fit the available height.
+When those headers would become unreadable, cards share a compact sticky position
+without header labels. Heights are equalized without shrinking type so mixed
+selections leave the stack together. Narrower windows or windows too short for a
+complete active card use flat cards.
+
+Native sticky controls positioning, and scale progress follows the grid's current
+position without ScrollTrigger refresh state. Font completion, resizing, and
+history restoration recalculate the layout. Versioned stylesheet and script URLs
+prevent older revision assets being reused after an update.
 
 Chapters use native sticky positioning with scroll-driven state changes when the
 whole panel fits. Otherwise, they use unpinned tabs. Arrow keys, Home, and End change
@@ -41,20 +49,27 @@ and no JavaScript show all three chapters as a static sequence.
 
 Presentation lives in `assets/portfolio-revision/revision.css` and `revision.js`.
 All nine selectable projects have optimized WebP thumbnails registered in
-`scripts/lib/project-card-media.mjs`. The two vendor scripts preserve B4's GSAP
-3.12.5 version; no B4 font, palette, logo, or theme-query navigation was imported.
+`scripts/lib/project-card-media.mjs`. GSAP 3.12.5 handles optional chapter fades;
+sticky behavior works even if it fails to load. No B4 font, palette, logo, or
+theme-query navigation was imported.
 
 ## Verification
 
 - 51 workflow tests passed against the revised homepage, including full temporary
   package builds, chapter-copy approval, old selective-section configurations,
   reordered three/four/five selections, aliases, and fallback imagery.
-- Temporary JD fixtures checked 247 local references, including every thumbnail,
+- Temporary JD fixtures checked 244 local references, including every thumbnail,
   scoped case destination, previous/next sequence, and resume link.
 - Browser checks covered desktop, short laptop, tablet, and phones down to 320px;
   complete-card fit; keyboard tabs; forward/backward scroll; interrupted transitions;
   responsive changes; reduced motion; no JavaScript; and the legacy anchor.
 - Independent interaction review confirmed the stack and chapter restoration fixes.
+- A subsequent cross-browser regression pass covered 42 scenarios in Chrome and
+  WebKit: repeated reloads, history navigation, resizing, three/four/five selected
+  projects, layout shifts, reduced motion, and unavailable animation libraries.
+  Both engines also passed the static no-JavaScript check. The actual Chrome and
+  Safari windows were refreshed and visually checked for sticky overlap and the
+  project-to-chapter handoff.
 - Checksums confirmed 20 original-checkout source files were unchanged. All 566
   protected revision files checked against the baseline were unchanged, including
   employer pages/configurations, resumes, the package manifest, and canonical cases.

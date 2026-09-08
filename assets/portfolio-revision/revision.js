@@ -4,22 +4,19 @@
   const work = document.getElementById('work');
   const chapters = document.getElementById('chapters');
   const cards = [...(work?.querySelectorAll('.work-grid > .work-item') || [])];
+  const grid = work?.querySelector('.work-grid');
   const panels = [...(chapters?.querySelectorAll('.chapter-state') || [])];
   const tabs = [...(chapters?.querySelectorAll('.chapter-tab') || [])];
-  const shell = chapters?.querySelector('.chapter-shell');
   const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
   const gsap = window.gsap;
-  const ScrollTrigger = window.ScrollTrigger;
-  if (gsap && ScrollTrigger) gsap.registerPlugin(ScrollTrigger);
-  const canAnimate = Boolean(gsap && ScrollTrigger);
-  let triggers = [];
+  const canAnimate = Boolean(gsap);
   let chaptersPinned = false;
   let chapterAnimation;
   let choosingChapter = false;
   let selected = 0;
   let chapterTop = 0;
   let chapterTravel = 0;
-  let stackPositions = [];
+  let stackOffsets = [];
   let resizeFrame;
   let entryFrame;
   let lastSize = '';
@@ -69,14 +66,13 @@
     card.addEventListener('focus', () => {
       if (!work.classList.contains('work-stack-active')) return;
       const index = cards.indexOf(card);
-      instantScroll(stackPositions[index]);
+      instantScroll(grid.getBoundingClientRect().top + window.scrollY + stackOffsets[index]);
     });
   });
 
   function clearStack() {
-    triggers.forEach((trigger) => trigger.kill());
-    triggers = [];
-    work?.classList.remove('work-stack-active');
+    stackOffsets = [];
+    work?.classList.remove('work-stack-active', 'work-stack-compact');
     cards.forEach((card) => {
       card.classList.remove('is-covered');
       gsap?.killTweensOf(card);
@@ -90,34 +86,42 @@
 
   function setupStack() {
     clearStack();
-    if (!work || !canAnimate || motion.matches || window.innerWidth < 1120 || cards.length < 2) return;
+    if (!grid || motion.matches || window.innerWidth < 1120 || cards.length < 2) return;
     const top = navOffset();
-    const step = 46;
-    // Measure the real selected cards. A short viewport gets the complete flat layout.
+    // Keep the active card complete. Browser chrome and zoom can change usable
+    // height, so compress the preceding headers before falling back to flat cards.
     const heights = cards.map((card) => card.getBoundingClientRect().height);
     const cardHeight = Math.max(...heights);
-    if (cardHeight + top + (cards.length - 1) * step + 24 > window.innerHeight) return;
+    const available = window.innerHeight - top - cardHeight - 24;
+    if (available < 0) return;
+    const headerStep = Math.min(46, available / (cards.length - 1));
+    const step = headerStep >= 32 ? headerStep : 0;
     // Equal heights keep mixed JD selections aligned as they leave the stack.
     // This only adds room; it never reduces type or clips a taller card.
     cards.forEach((card) => { card.style.minHeight = `${cardHeight}px`; });
-    stackPositions = cards.map((card, i) => card.getBoundingClientRect().top + window.scrollY - top - i * step);
+    const gridTop = grid.getBoundingClientRect().top;
+    stackOffsets = cards.map((card, i) => card.getBoundingClientRect().top - gridTop - top - i * step);
     cards.forEach((card, i) => {
       card.style.setProperty('--stack-top', `${top + i * step}px`);
       card.style.setProperty('--stack-index', String(i + 1));
     });
     work.style.setProperty('--stack-tail', `${Math.min(140, window.innerHeight * .15)}px`);
     work.classList.add('work-stack-active');
+    work.classList.toggle('work-stack-compact', step === 0);
+    syncStack();
+  }
+
+  function syncStack() {
+    if (!stackOffsets.length) return;
+    // Native sticky owns positioning. Read the grid's current position instead
+    // of caching document-level animation starts that can drift after a refresh.
+    const position = -grid.getBoundingClientRect().top;
+    const end = stackOffsets.at(-1);
     cards.slice(0, -1).forEach((card, i) => {
-      const start = stackPositions[i];
-      const end = stackPositions[cards.length - 1];
-      triggers.push(ScrollTrigger.create({
-        start, end,
-        onUpdate: (self) => {
-          const scale = 1 - .12 * ((cards.length - 1 - i) / (cards.length - 1)) * self.progress;
-          gsap.set(card, { scale });
-          card.classList.toggle('is-covered', window.scrollY >= stackPositions[i + 1] - 8);
-        },
-      }));
+      const progress = Math.max(0, Math.min(1, (position - stackOffsets[i]) / (end - stackOffsets[i])));
+      const scale = 1 - .12 * ((cards.length - 1 - i) / (cards.length - 1)) * progress;
+      card.style.transform = `scale(${scale})`;
+      card.classList.toggle('is-covered', position >= stackOffsets[i + 1] - 8);
     });
   }
 
@@ -180,7 +184,7 @@
     const frame = window.innerHeight - chapterTop - 24;
     const panelHeight = chapters.querySelector('.chapter-stage').getBoundingClientRect().height;
     const introHeight = chapters.querySelector('.chapter-intro').getBoundingClientRect().height;
-    if (!canAnimate || window.innerWidth < 1120 || Math.max(panelHeight, introHeight) + 96 > frame) return;
+    if (window.innerWidth < 1120 || Math.max(panelHeight, introHeight) + 96 > frame) return;
     chapterTravel = Math.round(window.innerHeight * 1.25);
     chapters.style.setProperty('--chapter-top', `${chapterTop}px`);
     chapters.style.setProperty('--chapter-frame-height', `${frame}px`);
@@ -255,26 +259,27 @@
   function setup() {
     setupStack();
     setupChapters();
-    ScrollTrigger?.refresh();
     resetBeforeChapterEntry();
   }
   setup();
   // Fonts can change the fit decision; images have explicit intrinsic dimensions.
   (document.fonts?.ready || Promise.resolve()).then(() => { setup(); followAnchor(); });
+  document.fonts?.addEventListener('loadingdone', setup);
   // On reload/back navigation, the browser can restore its old scroll position
   // after the first font/layout pass. Resolve chapter bookmarks after restoration.
   window.addEventListener('pageshow', () => {
     (document.fonts?.ready || Promise.resolve()).then(() => requestAnimationFrame(() => {
-      ScrollTrigger?.refresh();
+      setup();
       anchorHandled = false;
       followAnchor();
     }));
   });
   window.addEventListener('hashchange', () => { anchorHandled = false; followAnchor(); });
   window.addEventListener('scroll', () => {
-    if (entryFrame || !chapters || motion.matches) return;
+    if (entryFrame || motion.matches) return;
     entryFrame = requestAnimationFrame(() => {
       entryFrame = undefined;
+      syncStack();
       syncChapterScroll();
     });
   }, { passive: true });

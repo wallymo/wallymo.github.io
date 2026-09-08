@@ -82,6 +82,7 @@ html, body { overflow-x: clip; }
   transition: opacity 180ms cubic-bezier(.22, 1, .36, 1);
 }
 #work.work-stack-active .work-item.is-covered .work-stack-label { opacity: 1; }
+#work.work-stack-compact .work-stack-label { display: none; }
 #work.work-stack-active .work-item:focus-visible .work-stack-label { opacity: 0; }
 @media (hover: hover) and (pointer: fine) {
   #work .work-item:hover { border-color: #bc7951; }
