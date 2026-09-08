@@ -85,6 +85,7 @@ When the human sends a job, start with the fit gate. If it clears as a strong fi
   - `project-05.html` — Splash Design System: component systems, Figma, design ops, personas, system governance, award-backed UX.
   - `project-06.html` — Digital Audit Experience: audit workflows, AI-powered data visualization, benchmarking, recommendations, awards.
   - `project-07.html` — Other Highlights: design leadership, accessibility, innovation challenge, service-desk product UX.
+- New JD showcase configurations must explicitly include `route.showcaseSections: ["chapters"]`. Keep the three career chapters directly after selected work and include their inherited visible and accessible copy in the humanizer and claim review. Existing packages are not migrated automatically; older section selections remain valid.
 - Use the self-contained showcase pattern by default: `routeMode: "scoped-projects"` with `route.presentation: "showcase"` and `route.heroIntent: "resume-support"`. Route cards, scoped case studies, in-body project links, logos, all-work links, and previous/next links must keep recruiters inside the employer-specific package.
 - Use `canonical-projects` or `route.presentation: "full"` only as an explicit opt-out when the canonical public portfolio or fuller homepage narrative is intentionally part of the proof path.
 - If a tailored route includes scoped project pages, update every project card, back link, breadcrumb, previous link, and next-project link to keep recruiters inside the role-specific project sequence.

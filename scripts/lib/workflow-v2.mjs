@@ -21,7 +21,7 @@ export const CURRENT_CONTRACT_REVISION = 7;
 export const HUMANIZER_VERSION = '2.2.0';
 const SUPPORTED_CONTRACT_REVISIONS = new Set([2, 3, 4, 5, 6, 7]);
 const FLEXIBLE_POSITIONING_REVISIONS = new Set([5, 6, 7]);
-const SHOWCASE_SECTION_IDS = ['how-i-build', 'capabilities', 'arc'];
+export const SHOWCASE_SECTION_IDS = ['chapters', 'how-i-build', 'capabilities', 'arc'];
 const RESUME_COMPOSITION_MODES = new Set([
   'foundation-complete',
   'curated-user-authorized',
@@ -2411,7 +2411,7 @@ export function validateV2Config(
             showcaseSections.every((sectionId) =>
               SHOWCASE_SECTION_IDS.includes(sectionId)
             )),
-        'route.showcaseSections must be a unique list containing how-i-build, capabilities, or arc'
+        'route.showcaseSections must be a unique list containing chapters, how-i-build, capabilities, or arc'
       );
       pushError(
         errors,

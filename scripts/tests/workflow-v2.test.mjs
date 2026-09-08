@@ -30,6 +30,8 @@ import {
   humanizerViolations,
   getResumeExperienceSections,
   getRoutePresentation,
+  getArtifactPaths,
+  showcaseSectionCopyEntries,
   replaceElementContent,
   replacePortfolioLink,
   resolveChromeExecutable,
@@ -57,7 +59,7 @@ import {
   COVER_LETTER_TEMPLATE_VERSION,
   buildCoverLetterHtml,
 } from '../lib/cover-letter-template.mjs';
-import { splitJobBlockWithContinuation } from '../build-tailored-package.mjs';
+import { buildRoute, buildScopedProjectHtml, splitJobBlockWithContinuation } from '../build-tailored-package.mjs';
 
 const repoRoot = path.resolve(import.meta.dirname, '..', '..');
 const node = process.execPath;
@@ -107,12 +109,16 @@ function schemaErrors(config) {
 }
 
 function validConfig() {
-  return JSON.parse(
+  const config = JSON.parse(
     readFileSync(
       path.join(repoRoot, 'scripts', 'examples', 'package-v2.json'),
       'utf8'
     )
   );
+  // Keep historical fixtures focused on their original contract. New-package
+  // chapter defaults are tested explicitly against the unmodified template.
+  delete config.route.showcaseSections;
+  return config;
 }
 
 function revision6Config() {
@@ -538,6 +544,8 @@ function createBuildFixture({
     'project-05.html',
     'project-06.html',
     'project-07.html',
+    'project-08.html',
+    'project-09.html',
     'favicon.ico',
     'apple-touch-icon.png',
     'site.webmanifest',
@@ -1558,7 +1566,7 @@ test(
         )
       );
       const inheritedArcReview = structuredClone(config);
-      inheritedArcReview.route.showcaseSections = ['arc'];
+      inheritedArcReview.route.showcaseSections = ['capabilities'];
       assert.doesNotThrow(() =>
         approveHumanizerReview(inheritedArcReview, {
           reviewedAt: '2026-08-03T12:00:00.000Z',
@@ -4691,3 +4699,115 @@ test(
     }
   }
 );
+
+test('revision showcase cards preserve three, four, and five project selections, images, aliases, and scoped sequence', () => {
+  const { tempRoot, config } = createBuildFixture({ routeMode: 'scoped-projects' });
+  const previousRepoRoot = process.env.WORKFLOW_REPO_ROOT;
+  try {
+    process.env.WORKFLOW_REPO_ROOT = tempRoot;
+    // Model the four-card revision even when this test runs against the legacy shell.
+    const homepageSelection = new Set(['project-01.html', 'project-09.html', 'project-02.html', 'project-05.html']);
+    let shell = readFileSync(path.join(tempRoot, 'index.html'), 'utf8').replace(
+      /<a\b(?=[^>]*\bclass="[^"]*\bwork-item\b[^"]*")[^>]*\bhref="(project-\d+\.html)"[^>]*>[\s\S]*?<\/a>/g,
+      (card, project) => homepageSelection.has(project) ? card : ''
+    );
+    shell = shell.replace(/\s*<section\b[^>]*\bid="arc"[\s\S]*?<\/section>/, '');
+    if (!shell.includes('id="chapters"')) {
+      shell = shell.replace(/(<section\b[^>]*\bid="how-i-build")/, '<section id="chapters"><h2>Three chapters. One through-line.</h2><p>I managed client work, designed products, and implemented AI workflows.</p></section>\n$1');
+    }
+    writeFileSync(path.join(tempRoot, 'index.html'), shell);
+    config.route.showcaseSections = ['chapters', 'how-i-build'];
+    config.route.projectAliases = { 'project-04.html': 'project-10.html' };
+    const selections = [
+      ['project-04.html', 'project-01.html', 'project-05.html'],
+      ['project-05.html', 'project-04.html', 'project-02.html', 'project-03.html'],
+      ['project-09.html', 'project-04.html', 'project-08.html', 'project-06.html', 'project-07.html'],
+    ];
+    for (const selectedProjects of selections) {
+      config.selectedProjects = selectedProjects;
+      for (const projectCardStats of ['visible', 'hidden']) {
+        config.route.projectCardStats = projectCardStats;
+        const paths = getArtifactPaths(config);
+        const html = buildRoute(config, paths);
+        const cards = [...html.matchAll(/<a\b(?=[^>]*\bclass="[^"]*\bwork-item\b[^"]*")[^>]*\bhref="([^"]+)"[^>]*>[\s\S]*?<\/a>/g)];
+        assert.deepEqual(cards.map((card) => card[1]), selectedProjects.map((project) => scopedProjectFilename(config, project)));
+        for (const [index, card] of cards.entries()) {
+          assert.equal((card[0].match(/class="work-media"/g) || []).length, 1);
+          assert.match(card[0], new RegExp(`<div class="work-number">${String(index + 1).padStart(2, '0')}</div>`));
+          assert.ok(card[0].indexOf('class="work-meta"') < card[0].indexOf('class="work-media"'));
+          assert.ok(card[0].indexOf('class="work-media"') < card[0].indexOf('class="work-body"'));
+          const media = card[0].match(/<div class="work-media">[\s\S]*?<img[^>]*src="([^"]+)"[^>]*>/)?.[0];
+          assert.ok(media, `Missing media for ${selectedProjects[index]}`);
+          const src = media.match(/\bsrc="([^"]+)"/)[1];
+          assert.ok(existsSync(path.resolve(tempRoot, paths.slug, src)), `${src} must exist`);
+          assert.match(media, /\balt="[^\"]+"/);
+          assert.match(media, /\bwidth="\d+"/);
+          assert.match(media, /\bheight="\d+"/);
+          if (projectCardStats === 'hidden') assert.doesNotMatch(card[0], /class="work-stats"/);
+        }
+        assert.equal((html.match(/id="chapters"/g) || []).length, 1);
+        assert.ok(html.indexOf('id="work"') < html.indexOf('id="chapters"'));
+        assert.ok(html.indexOf('id="chapters"') < html.indexOf('id="how-i-build"'));
+        assert.doesNotMatch(html, /id="arc"|href="#arc"|\?theme=b4/);
+        assert.match(html, new RegExp(`href="../${paths.resumePdfPath}"`));
+        assert.doesNotMatch(html, /href="(?:\.\.\/)?resume\.html"/);
+        const titles = new Map(selectedProjects.map((project) => [project, project]));
+        for (const [index, project] of selectedProjects.entries()) {
+          const scoped = buildScopedProjectHtml(project, config, paths, index, titles);
+          const previous = scopedProjectFilename(config, selectedProjects[(index - 1 + selectedProjects.length) % selectedProjects.length]);
+          const next = scopedProjectFilename(config, selectedProjects[(index + 1) % selectedProjects.length]);
+          assert.match(scoped, new RegExp(`<div class="project-number">${String(index + 1).padStart(2, '0')}</div>`));
+          assert.ok(scoped.includes(`href="${previous}"`));
+          assert.ok(scoped.includes(`href="${next}"`));
+          assert.match(scoped, /href="index.html" class="name"/);
+          assert.match(scoped, /href="index.html#work"/);
+        }
+      }
+    }
+    // Missing legacy arc removal is harmless, but requesting that absent section fails.
+    config.route.showcaseSections = ['arc'];
+    assert.throws(() => buildRoute(config, getArtifactPaths(config)), /Missing canonical showcase section: arc/);
+    delete config.route.showcaseSections;
+    const historical = buildRoute(config, getArtifactPaths(config));
+    assert.doesNotMatch(historical, /id="chapters"|id="how-i-build"|id="arc"/);
+  } finally {
+    if (previousRepoRoot === undefined) delete process.env.WORKFLOW_REPO_ROOT;
+    else process.env.WORKFLOW_REPO_ROOT = previousRepoRoot;
+    rmSync(tempRoot, { recursive: true, force: true });
+  }
+});
+
+test('new showcase templates opt into chapters and inherited chapter copy participates in humanizer and claim gates', () => {
+  const template = JSON.parse(readFileSync(path.join(repoRoot, 'scripts/examples/package-v2.json'), 'utf8'));
+  assert.deepEqual(template.route.showcaseSections, ['chapters']);
+  assert.deepEqual(schemaErrors(template), []);
+  const tempRoot = mkdtempSync(path.join(os.tmpdir(), 'workflow-chapter-copy-'));
+  const previousRepoRoot = process.env.WORKFLOW_REPO_ROOT;
+  try {
+    process.env.WORKFLOW_REPO_ROOT = tempRoot;
+    const source = '<section id="chapters"><h2>Three chapters. One through-line.</h2><button aria-label="Read the account chapter">Account Management</button><p>I worked with client teams.</p></section>';
+    writeFileSync(path.join(tempRoot, 'index.html'), source);
+    const entries = showcaseSectionCopyEntries(template);
+    assert.equal(entries.length, 1);
+    assert.equal(entries[0][0], 'route.showcaseSections.chapters');
+    assert.match(entries[0][1], /Account Management.*I worked with client teams.*Read the account chapter/);
+    assert.ok(humanizerCopyEntries(template).some(([key]) => key === 'route.showcaseSections.chapters'));
+    approveHumanizerReview(template, { reviewedAt: '2026-09-07T12:00:00.000Z', semanticPassComplete: true });
+    const before = humanizerCopySha256(template);
+    writeFileSync(path.join(tempRoot, 'index.html'), source.replace('client teams', 'agency teams'));
+    assert.notEqual(humanizerCopySha256(template), before);
+    assert.throws(() => assertHumanizerReviewCurrent(template), /copySha256 is stale/);
+    writeFileSync(path.join(tempRoot, 'index.html'), source.replace('Read the account chapter', 'Read about account work'));
+    assert.notEqual(humanizerCopySha256(template), before);
+    template.constraints.blockedTerms = ['I worked with client teams'];
+    assert.throws(() => assertRecruiterFacingClaimsSupported(template), /route.showcaseSections.chapters contains unsupported language/);
+    writeFileSync(path.join(tempRoot, 'index.html'), '<main></main>');
+    assert.throws(() => humanizerCopySha256(template), /Missing canonical showcase section: chapters/);
+    delete template.route.showcaseSections;
+    assert.doesNotThrow(() => humanizerCopySha256(template));
+  } finally {
+    if (previousRepoRoot === undefined) delete process.env.WORKFLOW_REPO_ROOT;
+    else process.env.WORKFLOW_REPO_ROOT = previousRepoRoot;
+    rmSync(tempRoot, { recursive: true, force: true });
+  }
+});

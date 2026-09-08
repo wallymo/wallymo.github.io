@@ -13,6 +13,7 @@ import path from 'node:path';
 import {
   PUBLIC_BASE,
   RESUME_ROLE_IDS,
+  SHOWCASE_SECTION_IDS,
   assertBuildAllowed,
   assertHumanizerReviewCurrent,
   assertRecruiterFacingClaimsSupported,
@@ -49,6 +50,7 @@ import {
   buildCoverLetterHtml,
   buildCoverLetterMarkdown,
 } from './lib/cover-letter-template.mjs';
+import { addWorkCardMedia } from './lib/project-card-media.mjs';
 import { renderResumePdf } from './render-resume-pdf.mjs';
 import { runAtsCheck } from './ats-check.mjs';
 import { runCoverLetterCheck } from './cover-letter-check.mjs';
@@ -278,12 +280,13 @@ function buildFallbackWorkCard(project) {
     .join('\n');
 }
 
-function buildWorkGrid(indexHtml, config) {
+export function buildWorkGrid(indexHtml, config) {
   const cardsByProject = extractWorkCards(indexHtml);
   return config.selectedProjects
     .map((project, index) => {
       let card =
         cardsByProject.get(project) || buildFallbackWorkCard(project);
+      card = addWorkCardMedia(card, project);
       if (
         config.route?.projectCardStats === 'hidden' &&
         /<div\b[^>]*class="work-stats"[^>]*>/.test(card)
@@ -731,7 +734,7 @@ function stripLegacyRouteQueryShim(html, project) {
   return strippedHtml;
 }
 
-function buildScopedProjectHtml(project, config, paths, index, titlesByProject) {
+export function buildScopedProjectHtml(project, config, paths, index, titlesByProject) {
   const routeLocalNumber = String(index + 1).padStart(2, '0');
   const scopedFilename = scopedProjectFilename(config, project);
   const scopedUrl = `${PUBLIC_BASE}${paths.slug}/${scopedFilename}`;
@@ -844,7 +847,7 @@ function buildScopedProjectRedirectHtml({
 `;
 }
 
-function buildRoute(config, paths) {
+export function buildRoute(config, paths) {
   const indexHtml = readFileSync(resolveRepoPath('index.html'), 'utf8');
   let routeHtml = rewriteRootRefsForRoute(indexHtml);
   const routeUrl = `${PUBLIC_BASE}${paths.slug}/`;
@@ -946,18 +949,19 @@ function buildRoute(config, paths) {
       );
     }
     const showcaseSections = new Set(config.route?.showcaseSections || []);
-    for (const sectionId of ['how-i-build', 'capabilities', 'arc']) {
+    for (const sectionId of SHOWCASE_SECTION_IDS) {
+      const sectionPattern = new RegExp(
+        `\\s*<section\\b[^>]*\\bid="${sectionId}"[\\s\\S]*?<\\/section>`
+      );
       if (showcaseSections.has(sectionId)) {
+        if (!sectionPattern.test(routeHtml)) {
+          throw new Error(`Missing canonical showcase section: ${sectionId}`);
+        }
         continue;
       }
-      routeHtml = replaceFirst(
-        routeHtml,
-        new RegExp(
-          `\\s*<section\\b[^>]*\\bid="${sectionId}"[\\s\\S]*?<\\/section>`
-        ),
-        '',
-        `${sectionId} section`
-      );
+      // An older shell can omit chapters; a revised shell can omit the old arc.
+      // Only an explicitly retained section is required to exist.
+      routeHtml = routeHtml.replace(sectionPattern, '');
       routeHtml = routeHtml.replace(
         new RegExp(`\\s*<li><a href="#${sectionId}">[^<]*<\\/a><\\/li>`),
         ''
