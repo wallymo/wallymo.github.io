@@ -13,7 +13,7 @@
   if (gsap && ScrollTrigger) gsap.registerPlugin(ScrollTrigger);
   const canAnimate = Boolean(gsap && ScrollTrigger);
   let triggers = [];
-  let chapterTrigger;
+  let chaptersPinned = false;
   let chapterAnimation;
   let choosingChapter = false;
   let selected = 0;
@@ -21,6 +21,7 @@
   let chapterTravel = 0;
   let stackPositions = [];
   let resizeFrame;
+  let entryFrame;
   let lastSize = '';
   let anchorHandled = false;
   const instantScroll = (top) => window.scrollTo({ top, behavior: 'instant' });
@@ -151,10 +152,9 @@
 
   function setupChapters() {
     if (!chapters || !panels.length) return;
-    chapterTrigger?.kill();
     chapterAnimation?.kill();
     chapterAnimation = undefined;
-    chapterTrigger = undefined;
+    chaptersPinned = false;
     chapters.classList.remove('chapters-pinned', 'chapters-enhanced');
     panels.forEach((panel) => {
       gsap?.killTweensOf(panel.children);
@@ -186,27 +186,27 @@
     chapters.style.setProperty('--chapter-frame-height', `${frame}px`);
     chapters.style.setProperty('--chapter-travel', `${chapterTravel}px`);
     chapters.classList.add('chapters-pinned');
-    chapterTrigger = ScrollTrigger.create({
-      trigger: chapters,
-      start: `top ${chapterTop}`,
-      end: `+=${chapterTravel}`,
-      onUpdate: (self) => {
-        if (choosingChapter) return;
-        const next = Math.min(panels.length - 1, Math.floor(self.progress * panels.length));
-        if (next !== selected) activate(next, true);
-      },
-    });
-    const progress = Math.max(0, Math.min(1, (window.scrollY - chapterTrigger.start) / chapterTravel));
-    activate(Math.min(panels.length - 1, Math.floor(progress * panels.length)));
+    chaptersPinned = true;
+    syncChapterScroll(false);
+  }
+
+  function syncChapterScroll(animate = true) {
+    if (!chapters || motion.matches || choosingChapter) return;
+    if (!chaptersPinned) { resetBeforeChapterEntry(); return; }
+    // Read the native sticky section itself. A cached animation trigger start can
+    // become stale during refresh, restoration, or changes to the projects above.
+    const progress = Math.max(0, Math.min(1, (chapterTop - chapters.getBoundingClientRect().top) / chapterTravel));
+    const next = Math.min(panels.length - 1, Math.floor(progress * panels.length));
+    if (next !== selected) activate(next, animate);
   }
 
   function chooseChapter(index, animate) {
     if (motion.matches) return;
-    if (chapterTrigger) {
-      const position = chapterTrigger.start + chapterTravel * ((index + .3) / panels.length);
+    if (chaptersPinned) {
+      const start = chapters.getBoundingClientRect().top + window.scrollY - chapterTop;
+      const position = start + chapterTravel * ((index + .3) / panels.length);
       choosingChapter = true;
       instantScroll(position);
-      ScrollTrigger.update();
       choosingChapter = false;
     }
     activate(index, animate);
@@ -230,19 +230,54 @@
     if (!chapters || !['#arc', '#chapters'].includes(window.location.hash)) return;
     if (window.location.hash === '#arc') history.replaceState(null, '', `${location.pathname}${location.search}#chapters`);
     if (!anchorHandled) {
+      if (!motion.matches) activate(0);
       instantScroll(chapters.getBoundingClientRect().top + window.scrollY - navOffset());
       anchorHandled = true;
     }
   }
+
+  function resetBeforeChapterEntry() {
+    // Unpinned tabs have no scroll trigger to rewind their selected state.
+    // Reset while the section is below the viewport, before it enters again.
+    if (!chapters || motion.matches || chaptersPinned || selected === 0) return;
+    if (chapters.getBoundingClientRect().top >= window.innerHeight) activate(0);
+  }
+
+  document.querySelectorAll('a[href="#chapters"], a[href="#arc"]').forEach((link) => {
+    link.addEventListener('click', (event) => {
+      if (!chapters) return;
+      event.preventDefault();
+      if (location.hash !== '#chapters') history.pushState(null, '', `${location.pathname}${location.search}#chapters`);
+      anchorHandled = false;
+      followAnchor();
+    });
+  });
   function setup() {
     setupStack();
     setupChapters();
     ScrollTrigger?.refresh();
+    resetBeforeChapterEntry();
   }
   setup();
   // Fonts can change the fit decision; images have explicit intrinsic dimensions.
   (document.fonts?.ready || Promise.resolve()).then(() => { setup(); followAnchor(); });
+  // On reload/back navigation, the browser can restore its old scroll position
+  // after the first font/layout pass. Resolve chapter bookmarks after restoration.
+  window.addEventListener('pageshow', () => {
+    (document.fonts?.ready || Promise.resolve()).then(() => requestAnimationFrame(() => {
+      ScrollTrigger?.refresh();
+      anchorHandled = false;
+      followAnchor();
+    }));
+  });
   window.addEventListener('hashchange', () => { anchorHandled = false; followAnchor(); });
+  window.addEventListener('scroll', () => {
+    if (entryFrame || !chapters || motion.matches) return;
+    entryFrame = requestAnimationFrame(() => {
+      entryFrame = undefined;
+      syncChapterScroll();
+    });
+  }, { passive: true });
   window.addEventListener('resize', () => {
     if (window.innerWidth > 640 && nav?.classList.contains('menu-open')) setMenu(false);
     const size = `${window.innerWidth}:${window.innerHeight}`;
