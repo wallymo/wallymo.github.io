@@ -1217,7 +1217,7 @@
     .work-meta { position: static; }
   }
 
-  @media (max-width: 640px) {
+  @media (max-width: 1119px) {
     /* Nav: hide desktop links, show hamburger */
     nav .links { display: none; }
     nav .mobile-menu-btn { display: flex; }
@@ -1268,6 +1268,9 @@
     #nav.menu-open .hamburger-icon { display: none !important; }
     #nav.menu-open .close-icon { display: block !important; }
 
+  }
+
+  @media (max-width: 640px) {
     /* Padding consistency: 24px sides */
     section { padding-left: 24px; padding-right: 24px; }
     .hero { padding-left: 24px; padding-right: 24px; }
@@ -1361,11 +1364,11 @@
     }
   }
 </style>
-<link rel="stylesheet" href="assets/portfolio-revision/revision.css?v=501401199e70">
+<link rel="stylesheet" href="assets/portfolio-revision/revision.css?v=f08d9a55e3ab">
 </head>
 <body>
 
-<canvas class="hero-canvas" id="hero-canvas" aria-hidden="true"></canvas>
+<canvas class="hero-canvas" id="hero-canvas" aria-hidden="true" data-state="fallback"></canvas>
 
 <nav id="nav">
   <a href="index.html" class="name">Wally Mostafa</a>
@@ -1774,7 +1777,7 @@
 <section class="awards" id="awards">
   <div class="section-inner">
     <div class="section-label reveal">Awards</div>
-    <h2 class="section-title reveal" style="font-weight: 600; max-width: 26ch;">Industry recognition.</h2>
+    <h2 class="section-title reveal" style="max-width: 26ch;">Industry recognition.</h2>
     <p class="awards-context reveal">The Red Dot and Indigo wins came from the <a href="project-06.html">Digital Audit Experience</a> and <a href="project-05.html">Splash design system</a> work at Kinesso.</p>
     <div class="awards-grid stagger reveal">
       <div class="award-item">
@@ -1828,131 +1831,12 @@
   </div>
 </footer>
 
-<script>
-  /* Progressive enhancement: hide elements only when JS + observer are available.
-     If anything fails, content stays visible (no opacity:0 default). */
-  (function() {
-    if (!('IntersectionObserver' in window)) return; // No observer = no animation, content stays visible
+<!-- Reading content stays visible; motion is reserved for the hero, projects, and chapters. -->
 
-    // Hide elements now that we know we can reveal them
-    document.querySelectorAll('.reveal').forEach(function(el) {
-      el.classList.add('reveal-pending');
-    });
-    document.querySelectorAll('.stagger.reveal').forEach(function(el) {
-      el.classList.add('stagger-pending');
-    });
-
-    var observer = new IntersectionObserver(function(entries) {
-      entries.forEach(function(entry) {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-          observer.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.08, rootMargin: '0px 0px -20px 0px' });
-
-    document.querySelectorAll('.reveal-pending').forEach(function(el) {
-      observer.observe(el);
-    });
-
-    // Timeline: observe the whole .arc-timeline container so all items
-    // trigger together and the CSS nth-child stagger fires as one sequence
-    var arcTimeline = document.querySelector('.arc-timeline');
-    if (arcTimeline) {
-      var timelineObserver = new IntersectionObserver(function(entries) {
-        entries.forEach(function(entry) {
-          if (entry.isIntersecting) {
-            entry.target.querySelectorAll('.reveal-pending').forEach(function(item) {
-              item.classList.add('visible');
-            });
-            timelineObserver.unobserve(entry.target);
-          }
-        });
-      }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
-      timelineObserver.observe(arcTimeline);
-    }
-
-    // Safety net: reveal everything after 2.5s regardless
-    setTimeout(function() {
-      document.querySelectorAll('.reveal-pending:not(.visible)').forEach(function(el) {
-        el.classList.add('visible');
-      });
-    }, 2500);
-  })();
-</script>
-
-<!-- HERO: Gradient Morph — Canvas2D -->
-<script>
-(function() {
-  var canvas = document.getElementById('hero-canvas');
-  if (!canvas) return;
-  var ctx = canvas.getContext('2d');
-  if (!ctx) return;
-
-  var W, H, startTime = Date.now();
-
-  function resize() {
-    W = canvas.width = window.innerWidth;
-    H = canvas.height = window.innerHeight;
-  }
-  window.addEventListener('resize', resize);
-  resize();
-
-  var paused = false;
-  document.addEventListener('visibilitychange', function() { paused = document.hidden; });
-
-  var blobs = [
-    { x: -0.05, y: 0.1,  r: 0.6,  sx: 0.12, sy: 0.08, drift: 0.3, color: [196, 90, 45] },
-    { x: 1.05,  y: 0.2,  r: 0.55, sx: 0.09, sy: 0.13, drift: 0.28, color: [92, 85, 80] },
-    { x: 0.5,   y: 0.45, r: 0.55, sx: 0.1,  sy: 0.1,  drift: 0.25, color: [212, 204, 194] },
-    { x: 0.1,   y: 0.85, r: 0.55, sx: 0.13, sy: 0.1,  drift: 0.32, color: [196, 90, 45] },
-    { x: 0.95,  y: 0.7,  r: 0.5,  sx: 0.1,  sy: 0.14, drift: 0.28, color: [168, 144, 128] },
-    { x: 0.35,  y: -0.05,r: 0.5,  sx: 0.14, sy: 0.07, drift: 0.26, color: [230, 223, 213] },
-    { x: 0.7,   y: 0.5,  r: 0.45, sx: 0.11, sy: 0.09, drift: 0.3,  color: [196, 90, 45] },
-  ];
-
-  function draw() {
-    requestAnimationFrame(draw);
-    if (paused) return;
-
-    var t = (Date.now() - startTime) / 1000;
-    ctx.clearRect(0, 0, W, H);
-
-    for (var i = 0; i < blobs.length; i++) {
-      var b = blobs[i];
-      var d = b.drift;
-      var cx = (b.x + Math.sin(t * b.sx + i * 2.1) * d + Math.cos(t * b.sx * 0.7 + i) * d * 0.5) * W;
-      var cy = (b.y + Math.cos(t * b.sy + i * 1.7) * d + Math.sin(t * b.sy * 0.6 + i * 3.1) * d * 0.4) * H;
-      var radius = b.r * Math.min(W, H) * (1 + Math.sin(t * 0.04 + i) * 0.12);
-
-      var grad = ctx.createRadialGradient(cx, cy, 0, cx, cy, radius);
-      var c = b.color;
-      grad.addColorStop(0, 'rgba(' + c[0] + ',' + c[1] + ',' + c[2] + ', 0.28)');
-      grad.addColorStop(0.35, 'rgba(' + c[0] + ',' + c[1] + ',' + c[2] + ', 0.12)');
-      grad.addColorStop(1, 'rgba(' + c[0] + ',' + c[1] + ',' + c[2] + ', 0)');
-
-      ctx.fillStyle = grad;
-      ctx.fillRect(0, 0, W, H);
-    }
-  }
-
-  setTimeout(function() { canvas.classList.add('loaded'); }, 600);
-  draw();
-
-  // Dim canvas when dark #work section is in view
-  var workSection = document.getElementById('work');
-  if (workSection && 'IntersectionObserver' in window) {
-    var dimObserver = new IntersectionObserver(function(entries) {
-      entries.forEach(function(entry) {
-        canvas.style.opacity = entry.isIntersecting ? '0.4' : '';
-      });
-    }, { threshold: 0.15 });
-    dimObserver.observe(workSection);
-  }
-})();
-</script>
+<!-- HERO: the original bulbs, scoped to the visible hero. -->
+<script src="assets/portfolio-revision/hero-atmosphere.js?v=b6a7f5250cfe"></script>
 
 <script src="assets/vendor/gsap-3.12.5.min.js"></script>
-<script src="assets/portfolio-revision/revision.js?v=0a7e446c7d45"></script>
+<script src="assets/portfolio-revision/revision.js?v=0c18a9a05513"></script>
 </body>
 </html>

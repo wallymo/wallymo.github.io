@@ -37,6 +37,9 @@
     if (restoreFocus) menuButton.focus();
   }
   menuButton?.addEventListener('click', () => setMenu(!nav.classList.contains('menu-open')));
+  window.addEventListener('resize', () => {
+    if (window.innerWidth >= 1120 && nav?.classList.contains('menu-open')) setMenu(false);
+  }, { passive: true });
   menuLinks.forEach((link) => link.addEventListener('click', () => {
     if (nav.classList.contains('menu-open')) setMenu(false);
   }));
