@@ -132,6 +132,12 @@
     chapterAnimation?.kill();
     chapterAnimation = undefined;
     selected = Math.max(0, Math.min(panels.length - 1, index));
+    const period = panels[selected].querySelector('.chapter-period');
+    const label = chapters.querySelector('.chapter-window-label');
+    if (label && period) {
+      const name = period.querySelector('span').textContent;
+      label.textContent = `${name} · ${period.textContent.slice(name.length).trim()}`;
+    }
     panels.forEach((panel, i) => {
       const active = i === selected;
       // Always restore the full state before starting another transition.

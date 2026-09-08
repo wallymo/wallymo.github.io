@@ -26,7 +26,7 @@ Local revision on `codex/wally-portfolio-revision`, based on published commit
   and chapter sections repeat the field without cutting off the bulbs.
 - Ordinary section headings share the 1140px rail and a 32px-to-44.8px scale;
   project cards intentionally extend to 1280px. Hero composition stays unchanged.
-- Chapters use a warm folder panel for the story, with a metadata header and evidence
+- Chapters use a warm digital “Proof file” window for the story, with a straight title bar and evidence
   rules. Its intro and navigation remain outside. How I Build emphasizes its numbered
   process, and the tool groups stay quiet. Capabilities retain the prominent verbs.
 - Awards form one ruled recognition strip, with separate name/description lines and
@@ -91,7 +91,7 @@ theme-query navigation was imported.
   complete-card fit; keyboard tabs; forward/backward scroll; interrupted transitions;
   responsive changes; reduced motion; no JavaScript; and the legacy anchor.
 - Independent interaction review confirmed the stack and chapter restoration fixes.
-- The restored chapter folder passed 16 Chrome/WebKit checks across desktop, short
+- The earlier chapter container passed 16 Chrome/WebKit checks across desktop, short
   laptop, tablet, and 320px/390px phones. Added panel height is included in the
   existing fit calculation; keyboard switching, interrupted transitions, reduced
   motion, and no-JavaScript reading remain intact. No chapter copy changed.
@@ -122,3 +122,7 @@ theme-query navigation was imported.
 Workflow infrastructure was committed separately as `e3c7906` before rendering the
 revision fixtures. QA fixtures and diagnostic images stay ignored under `tmp/qa/`.
 No existing employer package was rebuilt, and nothing was pushed or deployed.
+
+- Restored B4’s digital “Proof file” title bar in place of the physical folder tab.
+  Sixteen Chrome/WebKit checks passed across six viewport sizes plus reduced-motion
+  and no-JavaScript modes. Chapter article markup is unchanged.
