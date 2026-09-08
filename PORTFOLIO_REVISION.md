@@ -26,7 +26,8 @@ Local revision on `codex/wally-portfolio-revision`, based on published commit
   and chapter sections repeat the field without cutting off the bulbs.
 - Ordinary section headings share the 1140px rail and a 32px-to-44.8px scale;
   project cards intentionally extend to 1280px. Hero composition stays unchanged.
-- Chapters use open content with evidence rules. How I Build emphasizes its numbered
+- Chapters use a warm folder panel for the story, with a metadata header and evidence
+  rules. Its intro and navigation remain outside. How I Build emphasizes its numbered
   process, and the tool groups stay quiet. Capabilities retain the prominent verbs.
 - Awards form one ruled recognition strip, with separate name/description lines and
   stacked phone entries. Contact and footer share one continuous dark finish.
@@ -90,6 +91,10 @@ theme-query navigation was imported.
   complete-card fit; keyboard tabs; forward/backward scroll; interrupted transitions;
   responsive changes; reduced motion; no JavaScript; and the legacy anchor.
 - Independent interaction review confirmed the stack and chapter restoration fixes.
+- The restored chapter folder passed 16 Chrome/WebKit checks across desktop, short
+  laptop, tablet, and 320px/390px phones. Added panel height is included in the
+  existing fit calculation; keyboard switching, interrupted transitions, reduced
+  motion, and no-JavaScript reading remain intact. No chapter copy changed.
 - A subsequent cross-browser regression pass covered 42 scenarios in Chrome and
   WebKit: repeated reloads, history navigation, resizing, three/four/five selected
   projects, layout shifts, reduced motion, and unavailable animation libraries.

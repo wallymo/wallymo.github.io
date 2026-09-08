@@ -17,7 +17,9 @@ gutters. Only project cards extend to a 1280px gallery rail. Preserve the hero's
 established composition. Mobile gutters are 24px, reducing to 16px below 360px.
 Use the compact navigation menu below 1120px, before desktop links begin to wrap.
 
-The chapter evidence is open: no outer panel box, with rules separating the facts.
+The chapter story sits inside a warm paper folder panel with a small tab edge and
+a ruled metadata header. The section intro and chapter navigation stay outside.
+Keep evidence rows separated by rules within the panel.
 How I Build emphasizes the numbered process; tools remain quiet supporting groups.
 Capabilities keep the open two-column structure and first-person verbs. Recognition
 is one ruled strip, with separate title/detail blocks and stacked mobile entries.
@@ -49,7 +51,8 @@ motion is requested. Reduced motion/no JavaScript retain a static hero atmospher
 ## Components and motion
 
 Controls and project cards use the existing 4px radius; project images use 12px.
-Do not introduce boxes around open content. Use rules and type to group evidence.
+The chapter folder is the intentional container for career evidence. Keep other
+open content unboxed; use rules and type to group it.
 Maintain native project stacking at eligible desktop sizes, adaptive header spacing,
 flat layouts when a complete card cannot fit, and correct final-card release.
 Chapters retain tabs, keyboard selected states, direct anchors, interrupted-transition
