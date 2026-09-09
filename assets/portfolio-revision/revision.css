@@ -207,7 +207,7 @@ nav .nav-cta:hover, .btn-primary:hover { background: var(--accent-hover); }
   line-height: 1.5;
 }
 .stage-chrome > span:first-child { color: var(--chapter-accent); font-weight: 600; }
-.chapter-window-label { display: none; }
+.chapter-window-label { display: none; font-size: 16px; font-weight: 500; }
 #chapters.chapters-enhanced .chapter-window-label { display: inline; }
 #chapters.chapters-enhanced .stage-chrome { grid-area: 1 / 1; }
 #chapters.chapters-enhanced .chapter-period {
@@ -237,7 +237,7 @@ nav .nav-cta:hover, .btn-primary:hover { background: var(--accent-hover); }
   border-radius: var(--radius-s) var(--radius-s) 0 0;
   background: var(--surface-warm);
   color: var(--ink-muted);
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
 }
