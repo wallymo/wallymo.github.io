@@ -136,7 +136,10 @@
     const label = chapters.querySelector('.chapter-window-label');
     if (label && period) {
       const name = period.querySelector('span').textContent;
-      label.textContent = `${name} · ${period.textContent.slice(name.length).trim()}`;
+      const years = document.createElement('span');
+      years.className = 'chapter-years';
+      years.textContent = period.textContent.slice(name.length).trim();
+      label.replaceChildren(document.createTextNode(`${name} · `), years);
     }
     panels.forEach((panel, i) => {
       const active = i === selected;

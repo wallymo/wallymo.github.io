@@ -241,7 +241,9 @@ nav .nav-cta:hover, .btn-primary:hover { background: var(--accent-hover); }
   font-weight: 500;
   line-height: 1.5;
 }
-.chapter-period span { color: var(--chapter-accent); }
+.chapter-period { color: var(--chapter-accent); }
+.chapter-period span { color: var(--ink-muted); }
+.chapter-years { color: var(--chapter-accent); }
 .chapter-state h3 { margin: 0 0 22px; font-family: var(--font-display); font-size: clamp(25px, 2.3vw, 32px); line-height: 1.13; font-weight: 700; letter-spacing: -.03em; }
 .chapter-state > p:not(.chapter-period) { color: var(--ink-soft); font-size: 17px; line-height: 1.55; margin: 0 0 26px; }
 .chapter-points { margin: 0; }
