@@ -430,3 +430,5 @@ body > footer { color: var(--dark-muted); background-color: var(--dark-base); bo
   }
 }
 
+/* Local homepage flow trial: Chapters leads directly into Capabilities. */
+#how-i-build[hidden] { display: none; }
