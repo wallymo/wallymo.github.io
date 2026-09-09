@@ -452,3 +452,7 @@ body > footer { color: var(--dark-muted); background-color: var(--dark-base); bo
     background: var(--rule);
   }
 }
+
+@media (prefers-reduced-motion: reduce) {
+  .chapter-backdrop > * { stroke-dashoffset: 0 !important; }
+}
