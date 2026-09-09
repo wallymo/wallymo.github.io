@@ -402,3 +402,53 @@ body > footer { color: var(--dark-muted); background-color: var(--dark-base); bo
   /* Keep the hero still when reduced motion is requested. */
   #hero-canvas { display: none; }
 }
+
+/* Original B4 chapter marks draw behind the evidence as each chapter advances. */
+.chapter-state { position: relative; isolation: isolate; }
+.chapter-backdrop {
+  position: absolute;
+  z-index: -1;
+  pointer-events: none;
+  left: 50%;
+  top: 50%;
+  width: min(78%, 410px);
+  height: auto;
+  aspect-ratio: 1;
+  transform: translate(-50%, -50%);
+  color: var(--chapter-accent);
+  opacity: .09;
+}
+.chapter-backdrop > * {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 1;
+  stroke-dashoffset: 0;
+}
+.chapter-tabs::before {
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: 26px;
+  bottom: 26px;
+  width: 1px;
+  background: var(--rule);
+}
+.chapter-tab { position: relative; }
+.chapter-tab::before { position: relative; z-index: 1; }
+@media (max-width: 1119px) {
+  .chapter-tabs::before { display: none; }
+  .chapter-tab { padding-top: 24px; }
+  .chapter-tab::before { display: block; position: absolute; left: 0; top: 0; width: 10px; }
+  .chapter-tab:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: calc(100% + 12px);
+    height: 1px;
+    background: var(--rule);
+  }
+}

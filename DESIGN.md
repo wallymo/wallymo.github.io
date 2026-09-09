@@ -67,3 +67,9 @@ destinations. New JD routes inherit the visual shell; existing packages are not
 rebuilt. Review the whole page in Chrome and Safari and test repeated loads,
 resizing, reduced motion, contrast, and three/four/five-project fixtures before
 making a local revision commit. Publishing remains a separate decision.
+
+Chapter windows reuse B4’s radial, nested-frame, and star marks as centered clay
+backgrounds at 9% opacity. Strokes follow chapter scroll progress; tab selection
+shows the complete mark, and reduced motion keeps every mark static. Keep marks
+out of text transitions. Connect chapter circles vertically on desktop and
+horizontally in the compact tab layout.
