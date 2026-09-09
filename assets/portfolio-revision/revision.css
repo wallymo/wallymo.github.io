@@ -403,30 +403,7 @@ body > footer { color: var(--dark-muted); background-color: var(--dark-base); bo
   #hero-canvas { display: none; }
 }
 
-/* Original B4 chapter marks draw behind the evidence as each chapter advances. */
-.chapter-state { position: relative; isolation: isolate; }
-.chapter-backdrop {
-  position: absolute;
-  z-index: -1;
-  pointer-events: none;
-  left: 50%;
-  top: 50%;
-  width: min(78%, 410px);
-  height: auto;
-  aspect-ratio: 1;
-  transform: translate(-50%, -50%);
-  color: var(--chapter-accent);
-  opacity: .09;
-}
-.chapter-backdrop > * {
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 1.2;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-dasharray: 1;
-  stroke-dashoffset: 0;
-}
+/* Connect the career chapter navigation. */
 .chapter-tabs::before {
   content: '';
   position: absolute;
@@ -453,6 +430,3 @@ body > footer { color: var(--dark-muted); background-color: var(--dark-base); bo
   }
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .chapter-backdrop > * { stroke-dashoffset: 0 !important; }
-}

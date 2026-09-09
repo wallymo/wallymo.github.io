@@ -128,16 +128,6 @@
     });
   }
 
-  const contentChildren = (panel) => [...panel.children].filter(child => !child.classList.contains('chapter-backdrop'));
-  function drawChapterMark(progress) {
-    if (motion.matches) return;
-    const strokes = [...panels[selected].querySelectorAll('.chapter-backdrop > *')];
-    strokes.forEach((stroke, i) => {
-      const drawn = Math.max(0, Math.min(1, progress * 1.7 - (i / strokes.length) * .7));
-      stroke.style.strokeDashoffset = String(1 - drawn);
-    });
-  }
-
   function activate(index, animate = false) {
     chapterAnimation?.kill();
     chapterAnimation = undefined;
@@ -155,8 +145,8 @@
       const active = i === selected;
       // Always restore the full state before starting another transition.
       // This keeps rapid clicks, reverse scroll, and resize from stranding faded text.
-      gsap?.killTweensOf(contentChildren(panel));
-      for (const child of contentChildren(panel)) {
+      gsap?.killTweensOf(panel.children);
+      for (const child of panel.children) {
         child.style.removeProperty('opacity');
         child.style.removeProperty('transform');
       }
@@ -167,12 +157,11 @@
       tabs[i].setAttribute('aria-selected', String(active));
       tabs[i].tabIndex = active ? 0 : -1;
     });
-    drawChapterMark(1);
     if (animate && canAnimate && !motion.matches) {
       // Set + to avoids a delayed fromTo start-state restoring hidden content
       // after a keyboard action has already interrupted the animation.
-      gsap.set(contentChildren(panels[selected]), { opacity: 0, y: 12 });
-      chapterAnimation = gsap.to(contentChildren(panels[selected]),
+      gsap.set(panels[selected].children, { opacity: 0, y: 12 });
+      chapterAnimation = gsap.to(panels[selected].children,
         { opacity: 1, y: 0, duration: .34, stagger: .045, ease: 'power2.out', clearProps: 'opacity,transform' });
     }
   }
@@ -184,8 +173,8 @@
     chaptersPinned = false;
     chapters.classList.remove('chapters-pinned', 'chapters-enhanced');
     panels.forEach((panel) => {
-      gsap?.killTweensOf(contentChildren(panel));
-      for (const child of contentChildren(panel)) {
+      gsap?.killTweensOf(panel.children);
+      for (const child of panel.children) {
         child.style.removeProperty('opacity');
         child.style.removeProperty('transform');
       }
@@ -195,7 +184,6 @@
       panel.removeAttribute('role');
       panel.removeAttribute('aria-labelledby');
     });
-    chapters.querySelectorAll('.chapter-backdrop > *').forEach(stroke => stroke.style.removeProperty('stroke-dashoffset'));
     if (motion.matches) return;
     chapters.querySelector('.chapter-tabs').setAttribute('aria-orientation', window.innerWidth >= 1120 ? 'vertical' : 'horizontal');
     chapters.classList.add('chapters-enhanced');
@@ -220,18 +208,12 @@
 
   function syncChapterScroll(animate = true) {
     if (!chapters || motion.matches || choosingChapter) return;
-    if (!chaptersPinned) {
-      resetBeforeChapterEntry();
-      const bounds = chapters.querySelector('.chapter-stage').getBoundingClientRect();
-      if (bounds.top < innerHeight && bounds.bottom > 0) drawChapterMark(Math.max(.15, Math.min(1, (innerHeight - bounds.top) / (innerHeight * .65))));
-      return;
-    }
+    if (!chaptersPinned) { resetBeforeChapterEntry(); return; }
     // Read the native sticky section itself. A cached animation trigger start can
     // become stale during refresh, restoration, or changes to the projects above.
     const progress = Math.max(0, Math.min(1, (chapterTop - chapters.getBoundingClientRect().top) / chapterTravel));
     const next = Math.min(panels.length - 1, Math.floor(progress * panels.length));
     if (next !== selected) activate(next, animate);
-    drawChapterMark(.15 + .85 * Math.min(1, (progress * panels.length - next) / .8));
   }
 
   function chooseChapter(index, animate) {
