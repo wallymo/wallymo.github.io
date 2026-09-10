@@ -169,7 +169,10 @@ nav .nav-cta:hover, .btn-primary:hover { background: var(--accent-hover); }
 #chapters {
   /* Parchment stays steady; the shared clay and taupe bulbs carry progression. */
   --chapter-bg-account: oklch(94.18% .0120 79.78);
-  --chapter-accent: #903e20;
+  --chapter-accent: #803819;
+  --chapter-quiet-text: #4e4742;
+  --chapter-clay-y: 50%;
+  --chapter-taupe-y: 20%;
   position: relative;
   padding: 0 var(--page-gutter);
   background-color: var(--chapter-bg-account);
@@ -180,41 +183,43 @@ nav .nav-cta:hover, .btn-primary:hover { background: var(--accent-hover); }
 }
 /* The same circular 0/35/100 falloff as the rest of the site. Opacity crossfades
    finish independently of scrolling and cannot tint or move foreground content. */
-#chapters::before, #chapters::after {
+#chapters .chapter-shell::before, #chapters .chapter-shell::after {
   content: '';
   position: absolute;
-  inset: 0;
+  inset: 0 calc((100% - 100vw) / 2);
   z-index: -1;
   pointer-events: none;
-  background-size: 100% calc(var(--bulb-radius) * 2);
-  background-repeat: repeat-y;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
   transition: opacity 650ms cubic-bezier(.22,1,.36,1);
 }
-#chapters::before {
-  background-image: radial-gradient(circle var(--bulb-radius) at 5% 50%,
-    rgb(var(--bulb-clay) / .24) 0%, rgb(var(--bulb-clay) / .10) 35%, rgb(var(--bulb-clay) / 0) 100%);
-  background-position: 0 0;
-  opacity: .5;
+#chapters .chapter-shell::before {
+  background-image: radial-gradient(circle var(--bulb-radius) at 5% var(--chapter-clay-y),
+    rgb(var(--bulb-clay) / .28) 0%, rgb(var(--bulb-clay) / .12) 35%, rgb(var(--bulb-clay) / 0) 100%);
+  opacity: .7;
 }
-#chapters::after {
-  background-image: radial-gradient(circle var(--bulb-radius) at 95% 50%,
-    rgb(var(--bulb-taupe) / .24) 0%, rgb(var(--bulb-taupe) / .10) 35%, rgb(var(--bulb-taupe) / 0) 100%);
-  background-position: 0 calc(var(--bulb-radius) * -1);
-  opacity: .45;
+#chapters .chapter-shell::after {
+  background-image: radial-gradient(circle var(--bulb-radius) at 95% var(--chapter-taupe-y),
+    rgb(var(--bulb-taupe) / .28) 0%, rgb(var(--bulb-taupe) / .12) 35%, rgb(var(--bulb-taupe) / 0) 100%);
+  opacity: .35;
 }
-#chapters[data-active-chapter='ux']::before { opacity: .18; }
-#chapters[data-active-chapter='ux']::after { opacity: 1; }
-#chapters[data-active-chapter='ai']::before { opacity: 1; }
-#chapters[data-active-chapter='ai']::after { opacity: .3; }
+#chapters[data-active-chapter='ux'] .chapter-shell::before { opacity: .05; }
+#chapters[data-active-chapter='ux'] .chapter-shell::after { opacity: 1; }
+#chapters[data-active-chapter='ai'] .chapter-shell::before { opacity: 1; }
+#chapters[data-active-chapter='ai'] .chapter-shell::after { opacity: .05; }
+@media (max-width: 1119px) {
+  /* Keep the bulb cores in the open intro area above the opaque window. */
+  #chapters { --chapter-clay-y: 240px; --chapter-taupe-y: 140px; }
+}
 @media (prefers-reduced-motion: reduce) {
-  #chapters[data-active-chapter]::before { opacity: .5; transition: none !important; }
-  #chapters[data-active-chapter]::after { opacity: .45; transition: none !important; }
+  #chapters[data-active-chapter] .chapter-shell::before { opacity: .7; transition: none !important; }
+  #chapters[data-active-chapter] .chapter-shell::after { opacity: .35; transition: none !important; }
 }
-.chapter-shell { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); align-items: center; gap: 64px; max-width: var(--max-w); margin: 0 auto; padding: 96px 0; }
+.chapter-shell { position: relative; isolation: isolate; display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); align-items: center; gap: 64px; max-width: var(--max-w); margin: 0 auto; padding: 96px 0; }
 #chapters:not(.chapters-enhanced) .chapter-shell { align-items: start; }
 .chapter-intro h2 { margin: 0 0 24px; font-family: var(--font-display); font-size: var(--section-heading-size); line-height: 1.1; font-weight: 700; letter-spacing: -.045em; }
 .chapter-intro h2 span { display: block; }
-.chapter-intro > p { max-width: 29rem; margin: 0 0 30px; color: var(--ink-muted); font-size: 18px; line-height: 1.6; }
+.chapter-intro > p { max-width: 29rem; margin: 0 0 30px; color: var(--chapter-quiet-text); font-size: 18px; line-height: 1.6; }
 .chapter-eyebrow { display: block; margin-bottom: 24px; color: var(--chapter-accent); font-size: 13px; font-weight: 600; letter-spacing: .09em; text-transform: uppercase; }
 .chapter-tabs { display: none; }
 /* B4's digital Proof file window, adapted to Wally's warm surfaces. */
@@ -287,7 +292,7 @@ nav .nav-cta:hover, .btn-primary:hover { background: var(--accent-hover); }
 .chapter-point dt { font-size: 14px; line-height: 1.5; font-weight: 600; }
 .chapter-point dd { margin: 0; color: var(--ink-muted); font-size: 14px; line-height: 1.5; }
 #chapters.chapters-enhanced .chapter-tabs { display: grid; position: relative; gap: 4px; }
-.chapter-tab { display: flex; align-items: center; gap: 15px; min-height: 52px; padding: 10px 0; color: var(--ink-muted); background: none; border: 0; text-align: left; font: 500 17px/1.4 var(--font-body); cursor: pointer; transition: color 180ms cubic-bezier(.22,1,.36,1); }
+.chapter-tab { display: flex; align-items: center; gap: 15px; min-height: 52px; padding: 10px 0; color: var(--chapter-quiet-text); background: none; border: 0; text-align: left; font: 500 17px/1.4 var(--font-body); cursor: pointer; transition: color 180ms cubic-bezier(.22,1,.36,1); }
 .chapter-tab::before { content: ''; flex: 0 0 10px; height: 10px; border: 1px solid var(--ink-muted); border-radius: 50%; background: var(--surface-warm); }
 .chapter-tab[aria-selected='true'] { color: var(--ink); }
 .chapter-tab[aria-selected='true']::before { background: var(--chapter-accent); border-color: var(--chapter-accent); }

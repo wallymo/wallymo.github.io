@@ -74,13 +74,17 @@ Chapters keeps a steady parchment #F0EBE3 base, defined in OKLCH. Full-section
 solid color changes were rejected in visual review. Instead, the existing round
 clay/taupe bulbs carry progression: balanced for Account Management, taupe-led for
 UX, and clay-led for AI. Keep the middle of the section quiet and the Proof file
-opaque. Both fields use the shared radius and 0/35/100 falloff, with .24/.10 core
-and shoulder values. Their opacities are .5/.45 for Account, .18/1 for UX, and
-1/.3 for AI. Crossfade opacity over 650ms with cubic-bezier(.22,1,.36,1), without
+opaque. Both fields use the shared radius and the hero's 0/35/100 falloff, with
+.28/.12 core and shoulder values. Their opacities are .7/.35 for Account, .05/1
+for UX, and 1/.05 for AI. Attach the fields to the chapter shell so they stay
+alongside the pinned content instead of disappearing along the tall scroll track.
+On compact layouts, keep the bulb centers in the exposed intro at 240px and 140px
+from the top. Crossfade opacity over 650ms with cubic-bezier(.22,1,.36,1), without
 scroll scrubbing, a flat section tint, or icon wallpaper.
 The existing activation function sets data-active-chapter for scrolling, clicks,
 and keyboard input. Preserve the current state during layout recalculation.
-Exposed labels and focus use #903E20; Proof file colors remain unchanged. Reserve
+Exposed labels and focus use #803819; supporting intro and tab text use #4E4742
+to preserve contrast under the stronger light. Proof file colors remain unchanged. Reserve
 two title-bar label lines on small phones so chapter changes do not move the window.
 Reduced motion and no JavaScript show all three chapters on static parchment
 with the balanced Account bulb field.
