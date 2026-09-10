@@ -8,6 +8,7 @@
   const panels = [...(chapters?.querySelectorAll('.chapter-state') || [])];
   const tabs = [...(chapters?.querySelectorAll('.chapter-tab') || [])];
   const journey = chapters?.querySelector('.chapter-journey');
+  const chapterFrame = chapters?.querySelector('.chapter-frame');
   const chapterNav = chapters?.querySelector('.chapter-tabs');
   const identities = panels.map(panel => panel.querySelector('.chapter-identity'));
   const proofs = panels.map(panel => panel.querySelector('.chapter-proof'));
@@ -202,15 +203,15 @@
   }
 
   function setupChapters() {
-    if (!chapters || !journey || !panels.length) return;
+    if (!chapters || !journey || !chapterFrame || !panels.length) return;
     // Keep the last reading position: responsive CSS can move the old layout
     // above the viewport before its resize event reaches this measurement pass.
     const wasInside = chapterLayoutReady && chapterReading;
     const previouslyPinned = chaptersPinned;
     clearChapterAnimations();
     chaptersPinned = false;
-    chapters.classList.remove('chapters-pinned', 'chapters-measuring', 'chapters-enhanced');
-    for (const property of ['--chapter-padding', '--chapter-identity-height', '--chapter-proof-height',
+    chapters.classList.remove('chapters-pinned', 'chapters-measuring', 'chapters-compact');
+    for (const property of ['--chapter-identity-height', '--chapter-proof-height',
       '--chapter-content-height', '--chapter-nav-top', '--chapter-frame-height', '--chapter-travel']) {
       chapters.style.removeProperty(property);
     }
@@ -230,21 +231,29 @@
 
     if (!motion.matches && window.innerWidth >= 1120) {
       chapters.classList.add('chapters-measuring');
-      const identityHeight = Math.max(...identities.map(el => el.getBoundingClientRect().height));
-      const proofHeight = Math.max(...proofs.map(el => el.getBoundingClientRect().height));
-      const contentHeight = Math.max(proofHeight, identityHeight + 28 + chapterNav.getBoundingClientRect().height);
-      // Keep the entry close to its introduction instead of centering a short
-      // composition inside an entire viewport of padding.
-      const padding = 32;
-      const frame = contentHeight + padding * 2;
-      if (frame <= window.innerHeight - chapterTop - 24) {
-        chaptersPinned = true;
-        chapterTravel = Math.round(window.innerHeight * 1.25);
-        chapters.style.setProperty('--chapter-padding', `${padding}px`);
+      function measureFrame() {
+        for (const property of ['--chapter-identity-height', '--chapter-proof-height', '--chapter-content-height']) {
+          chapters.style.removeProperty(property);
+        }
+        const identityHeight = Math.max(...identities.map(el => el.getBoundingClientRect().height));
+        const proofHeight = Math.max(...proofs.map(el => el.getBoundingClientRect().height));
+        const navigationGap = parseFloat(getComputedStyle(chapters).getPropertyValue('--chapter-navigation-gap'));
+        const contentHeight = Math.max(proofHeight, identityHeight + navigationGap + chapterNav.getBoundingClientRect().height);
         chapters.style.setProperty('--chapter-identity-height', `${identityHeight}px`);
         chapters.style.setProperty('--chapter-proof-height', `${proofHeight}px`);
         chapters.style.setProperty('--chapter-content-height', `${contentHeight}px`);
-        chapters.style.setProperty('--chapter-nav-top', `${padding + identityHeight + 28}px`);
+        chapters.style.setProperty('--chapter-nav-top', `${identityHeight + navigationGap}px`);
+        return chapterFrame.getBoundingClientRect().height;
+      }
+      const available = window.innerHeight - chapterTop - 24;
+      let frame = measureFrame();
+      if (frame > available) {
+        chapters.classList.add('chapters-compact');
+        frame = measureFrame();
+      }
+      if (frame <= available) {
+        chaptersPinned = true;
+        chapterTravel = Math.round(window.innerHeight * 1.25);
         chapters.style.setProperty('--chapter-frame-height', `${frame}px`);
         chapters.style.setProperty('--chapter-travel', `${chapterTravel}px`);
         chapters.classList.add('chapters-pinned');
@@ -256,7 +265,7 @@
           tabs[i].setAttribute('role', 'tab');
           tabs[i].setAttribute('aria-controls', panel.id);
         });
-      }
+      } else chapters.classList.remove('chapters-compact');
       chapters.classList.remove('chapters-measuring');
     }
     chapterLayoutSize = `${window.innerWidth}:${window.innerHeight}`;
@@ -277,7 +286,7 @@
     chapterReading = bounds.top <= readingLine && bounds.bottom > navOffset();
     let next = 0;
     if (chaptersPinned) {
-      // The introduction sits above this track and must not consume chapter one.
+      // The complete frame, including the introduction, stays in view together.
       const progress = Math.max(0, Math.min(1, (chapterTop - journey.getBoundingClientRect().top) / chapterTravel));
       next = Math.min(panels.length - 1, Math.floor(progress * panels.length));
     } else {

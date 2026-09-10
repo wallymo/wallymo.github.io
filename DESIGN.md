@@ -72,9 +72,11 @@ making a local revision commit. Publishing remains a separate decision.
 
 The section introduction is a compact opening band: heading on the left and the
 existing sentence on the right at desktop widths, stacked on smaller screens.
-Keep 56px between this band's content and the first pinned chapter (24px intro
-padding plus 32px journey padding). Size the pinned frame to its content plus
-64px, rather than vertically centering content inside a viewport-height frame.
+Include the opening band in the sticky frame, so the intro, identity, navigation,
+and entire Proof file remain together in one desktop viewport. Use 24px frame
+padding and a 24px gap below the intro where the complete composition fits. A
+second measured layout uses 16px frame padding and gap, 20px Proof file padding,
+and tighter evidence spacing. Font sizes and all evidence remain unchanged.
 During desktop pinning, the active chapter identity sits left of the steady Proof file window:
 96–112px Syne numbers, a quiet total, 40–44px two-line chapter names, and clay dates.
 Names and dates derive from the existing period metadata; static HTML also contains
@@ -82,15 +84,21 @@ them for no-JavaScript reading. Exposed labels and focus use #803819, with #4E47
 for supporting text. The window retains its original cream and clay colors.
 
 Connected navigation sits under the desktop identity. Completed circles fill, the
-active circle has a ring, and the line fills through the active chapter. A chapter
-change moves the incoming identity 16px over 320ms with the existing ease; backward
+active circle has a ring, and the line fills through the active chapter. The active
+circle also has a faint clay halo that breathes over 3.8 seconds using opacity
+and a small scale change. Do not pulse the line or labels. Reduced motion retains
+the static ring and removes the halo. A chapter change moves the incoming identity
+16px over 320ms with the existing ease; backward
 navigation reverses direction. Evidence has a short reading-content transition,
 while the window frame remains fixed. Cancel interrupted animation effects before
 presenting the latest selected state.
 
-Measure all identities, the navigation, and the tallest Proof file before enabling
-pinning at widths of at least 1120px. Start scroll progression at the journey frame,
-not the introductory heading. Preserve the selected chapter when switching layouts.
+Measure the entire frame, including the introduction, all identities, navigation,
+and the tallest Proof file, before enabling pinning at widths of at least 1120px.
+Try normal spacing first, then compact spacing. Reserve the fixed navigation and
+24px beneath the frame; never scale text or clip evidence to pass the fit check.
+Start scroll progression at the whole journey frame. Preserve the selected chapter
+when switching layouts.
 If the complete arrangement cannot fit, show all three chapter blocks in a single
 column with 48px gaps, 64px numbers, and 32px names. Navigation becomes native anchor
 links; the active indicator follows each chapter crossing the upper third of the

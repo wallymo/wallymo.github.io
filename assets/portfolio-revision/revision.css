@@ -171,6 +171,9 @@ nav .nav-cta:hover, .btn-primary:hover { background: var(--accent-hover); }
   --chapter-accent: #803819;
   --chapter-quiet-text: #4e4742;
   --chapter-progress: 0;
+  --chapter-frame-padding: 24px;
+  --chapter-intro-gap: 24px;
+  --chapter-navigation-gap: 28px;
   --bulb-core: .22;
   --bulb-shoulder: .094;
   --bulb-secondary-core: .18;
@@ -191,6 +194,7 @@ nav .nav-cta:hover, .btn-primary:hover { background: var(--accent-hover); }
 .chapter-intro > p { max-width: 55ch; margin: 0; color: var(--chapter-quiet-text); font-size: 1.125rem; line-height: 1.6; }
 .chapter-eyebrow { display: block; margin-bottom: 24px; color: var(--chapter-accent); font-size: .8125rem; font-weight: 600; letter-spacing: .09em; text-transform: uppercase; }
 .chapter-journey { overflow-anchor: none; }
+.chapter-frame { max-width: var(--max-w); margin: 0 auto; }
 .chapter-shell { position: relative; isolation: isolate; max-width: var(--max-w); margin: 0 auto; padding-bottom: 96px; }
 .chapter-state { position: relative; scroll-margin-top: var(--chapter-top, 80px); }
 /* One steady field follows the pinned composition. In the readable sequence,
@@ -250,13 +254,32 @@ nav .nav-cta:hover, .btn-primary:hover { background: var(--accent-hover); }
 .chapter-tab.is-complete::before, .chapter-tab.is-current::before { background: var(--chapter-accent); border-color: var(--chapter-accent); }
 .chapter-tab.is-current { color: var(--ink); font-weight: 600; }
 .chapter-tab.is-current::before { box-shadow: 0 0 0 3px var(--chapter-bg), 0 0 0 4px var(--chapter-accent); }
+.chapter-tab.is-current::after {
+  content: '';
+  position: absolute;
+  left: -4px;
+  top: -4px;
+  width: 18px;
+  height: 18px;
+  border: 1px solid var(--chapter-accent);
+  border-radius: 50%;
+  box-shadow: 0 0 8px 2px rgb(128 56 25 / .32);
+  pointer-events: none;
+  animation: chapter-current-glow 3.8s ease-in-out infinite;
+}
+@keyframes chapter-current-glow {
+  0%, 100% { opacity: .12; transform: scale(.92); }
+  50% { opacity: .32; transform: scale(1.16); }
+}
 .chapter-tab:focus-visible { outline: 2px solid var(--chapter-accent); outline-offset: 5px; }
 .chapter-state:focus-visible { outline: 2px solid var(--chapter-accent); outline-offset: 8px; }
 .chapter-tabs::before, .chapter-tabs::after { content: ''; position: absolute; top: 5px; left: 5px; width: calc((100% + 12px) * 2 / 3); height: 1px; background: var(--rule); pointer-events: none; }
 .chapter-tabs::after { background: var(--chapter-accent); transform: scaleX(var(--chapter-progress)); transform-origin: left; transition: transform 320ms cubic-bezier(.22,1,.36,1); }
 
 /* The measurement layout matches the pinned layout without adding a scroll track. */
-#chapters:is(.chapters-pinned, .chapters-measuring) .chapter-shell { padding: var(--chapter-padding, 32px) 0; }
+#chapters:is(.chapters-pinned, .chapters-measuring) .chapter-frame { padding: var(--chapter-frame-padding) 0; }
+#chapters:is(.chapters-pinned, .chapters-measuring) .chapter-intro { padding: 0 0 var(--chapter-intro-gap); }
+#chapters:is(.chapters-pinned, .chapters-measuring) .chapter-shell { padding: 0; }
 #chapters:is(.chapters-pinned, .chapters-measuring) .chapter-entries { display: grid; min-height: var(--chapter-content-height, 0px); }
 #chapters:is(.chapters-pinned, .chapters-measuring) .chapter-state { display: grid; grid-area: 1 / 1; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); align-items: start; gap: 64px; margin: 0; visibility: hidden; pointer-events: none; }
 #chapters:is(.chapters-pinned, .chapters-measuring) .chapter-state.is-active { visibility: visible; pointer-events: auto; }
@@ -267,13 +290,27 @@ nav .nav-cta:hover, .btn-primary:hover { background: var(--accent-hover); }
 #chapters:is(.chapters-pinned, .chapters-measuring) .chapter-tabs { position: absolute; left: 0; top: var(--chapter-nav-top, 380px); width: calc((100% - 64px) * .4); grid-template-columns: 1fr; gap: 4px; margin: 0; z-index: 2; }
 #chapters:is(.chapters-pinned, .chapters-measuring) .chapter-tab { min-height: 52px; padding: 10px 0 10px 26px; font-size: 1.0625rem; }
 #chapters:is(.chapters-pinned, .chapters-measuring) .chapter-tab::before { top: 21px; }
+#chapters:is(.chapters-pinned, .chapters-measuring) .chapter-tab.is-current::after { top: 17px; }
 #chapters:is(.chapters-pinned, .chapters-measuring) .chapter-tabs::before,
 #chapters:is(.chapters-pinned, .chapters-measuring) .chapter-tabs::after { top: 26px; bottom: 26px; left: 5px; width: 1px; height: auto; }
 #chapters:is(.chapters-pinned, .chapters-measuring) .chapter-tabs::after { transform: scaleY(var(--chapter-progress)); transform-origin: top; }
 #chapters.chapters-pinned .chapter-journey { min-height: calc(var(--chapter-frame-height) + var(--chapter-travel)); }
-#chapters.chapters-pinned .chapter-shell { position: sticky; top: var(--chapter-top); min-height: var(--chapter-frame-height); }
+#chapters.chapters-pinned .chapter-frame { position: sticky; top: var(--chapter-top); min-height: var(--chapter-frame-height); }
+/* A second measured fit uses tighter spacing, with the same font sizes and
+   complete evidence. The introduction remains part of the pinned composition. */
+#chapters.chapters-compact {
+  --chapter-frame-padding: 16px;
+  --chapter-intro-gap: 16px;
+  --chapter-navigation-gap: 20px;
+}
+#chapters.chapters-compact .chapter-intro { row-gap: 12px; }
+#chapters.chapters-compact .chapter-copy { padding: 20px; }
+#chapters.chapters-compact .chapter-copy h4 { margin-bottom: 16px; }
+#chapters.chapters-compact .chapter-copy > p { margin-bottom: 16px; }
+#chapters.chapters-compact .chapter-point { padding-block: 10px; }
 @media (prefers-reduced-motion: reduce) {
   #chapters .chapter-tabs::after { transition: none !important; }
+  #chapters .chapter-tab.is-current::after { display: none; animation: none; }
 }
 
 /* The process leads; the tool inventory is supporting material. */
