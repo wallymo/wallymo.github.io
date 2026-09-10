@@ -71,6 +71,8 @@ making a local revision commit. Publishing remains a separate decision.
 Keep Proof file panels clear of background icons. Connect chapter circles
 vertically on desktop and horizontally in the compact tab layout.
 The original B4 chapter marks form centered wallpaper behind the entire chapter
-shell at 5% opacity. Scroll draws each symbol and leaves faint traces of earlier
-chapters. Keep the Proof file surface opaque. Reduced motion and no JavaScript
+shell at 5% opacity. Each symbol draws automatically on section entry or chapter
+selection, independent of scroll distance, with faint traces of earlier chapters.
+Fit the full SVG inside the section with a 24px inset; never crop its strokes.
+Keep the Proof file surface opaque. Reduced motion and no JavaScript
 show a static composition; the wallpaper never changes document height.

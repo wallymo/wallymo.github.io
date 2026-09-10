@@ -129,15 +129,25 @@
     });
   }
 
-  function drawChapterWallpaper(progress) {
-    if (motion.matches || document.hidden) return;
+  let wallpaperVisible = false;
+  let wallpaperIndex = -1;
+  let wallpaperAnimations = [];
+  function revealChapterWallpaper(replay = false) {
+    if (motion.matches || document.hidden || !wallpaperVisible) return;
+    if (!replay && wallpaperIndex === selected) return;
+    wallpaperAnimations.forEach(animation => animation.cancel());
+    wallpaperAnimations = [];
+    wallpaperIndex = selected;
     chapterMarks.forEach((mark, index) => {
-      const amount = Math.max(0, Math.min(1, progress - index));
-      // Earlier chapters leave a quiet trace as the next symbol is drawn.
-      mark.style.opacity = amount === 0 ? '0' : progress >= index + 1 ? '.22' : '1';
-      [...mark.children].forEach((stroke, i, strokes) => {
-        const drawn = Math.max(0, Math.min(1, amount * 1.6 - i / strokes.length * .6));
-        stroke.style.strokeDashoffset = String(1 - drawn);
+      mark.style.opacity = index === selected ? '1' : index < selected ? '.22' : '0';
+      [...mark.children].forEach((stroke, i) => {
+        stroke.style.removeProperty('stroke-dashoffset');
+        if (index === selected && stroke.animate) {
+          wallpaperAnimations.push(stroke.animate(
+            [{ strokeDashoffset: '1' }, { strokeDashoffset: '0' }],
+            { duration: 1300, delay: i * 140, easing: 'cubic-bezier(.22,1,.36,1)', fill: 'backwards' }
+          ));
+        }
       });
     });
   }
@@ -146,7 +156,7 @@
     chapterAnimation?.kill();
     chapterAnimation = undefined;
     selected = Math.max(0, Math.min(panels.length - 1, index));
-    drawChapterWallpaper(selected + .85);
+    revealChapterWallpaper();
     const period = panels[selected].querySelector('.chapter-period');
     const label = chapters.querySelector('.chapter-window-label');
     if (label && period) {
@@ -187,6 +197,9 @@
     chapterAnimation = undefined;
     chaptersPinned = false;
     chapters.classList.remove('chapters-pinned', 'chapters-enhanced');
+    wallpaperAnimations.forEach(animation => animation.cancel());
+    wallpaperAnimations = [];
+    wallpaperIndex = -1;
     chapterMarks.forEach(mark => {
       mark.style.removeProperty('opacity');
       [...mark.children].forEach(stroke => stroke.style.removeProperty('stroke-dashoffset'));
@@ -227,21 +240,12 @@
 
   function syncChapterScroll(animate = true) {
     if (!chapters || motion.matches || choosingChapter) return;
-    if (!chaptersPinned) {
-      resetBeforeChapterEntry();
-      const bounds = chapters.querySelector('.chapter-shell').getBoundingClientRect();
-      if (bounds.top < innerHeight && bounds.bottom > 0) {
-        const amount = Math.max(.12, Math.min(.99, (innerHeight - bounds.top) / (innerHeight + bounds.height) * 1.6));
-        drawChapterWallpaper(selected + amount);
-      }
-      return;
-    }
+    if (!chaptersPinned) { resetBeforeChapterEntry(); return; }
     // Read the native sticky section itself. A cached animation trigger start can
     // become stale during refresh, restoration, or changes to the projects above.
     const progress = Math.max(0, Math.min(1, (chapterTop - chapters.getBoundingClientRect().top) / chapterTravel));
     const next = Math.min(panels.length - 1, Math.floor(progress * panels.length));
     if (next !== selected) activate(next, animate);
-    drawChapterWallpaper(Math.min(panels.length - .001, progress * panels.length + .08));
   }
 
   function chooseChapter(index, animate) {
@@ -333,7 +337,19 @@
     resizeFrame = requestAnimationFrame(setup);
   });
   motion.addEventListener('change', setup);
+  if (chapters && 'IntersectionObserver' in window) {
+    new IntersectionObserver(([entry]) => {
+      wallpaperVisible = entry.isIntersecting;
+      if (wallpaperVisible) revealChapterWallpaper(true);
+      else wallpaperAnimations.forEach(animation => animation.pause());
+    }, { threshold: 0, rootMargin: '-12% 0px -12% 0px' }).observe(chapters.querySelector('.chapter-shell'));
+  }
   document.addEventListener('visibilitychange', () => {
-    if (!document.hidden) syncChapterScroll(false);
+    if (document.hidden) wallpaperAnimations.forEach(animation => animation.pause());
+    else if (wallpaperVisible) {
+      syncChapterScroll(false);
+      revealChapterWallpaper();
+      wallpaperAnimations.filter(animation => animation.playState === 'paused').forEach(animation => animation.play());
+    }
   });
 })();

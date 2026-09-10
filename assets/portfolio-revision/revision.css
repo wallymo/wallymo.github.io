@@ -194,8 +194,10 @@ nav .nav-cta:hover, .btn-primary:hover { background: var(--accent-hover); }
   position: absolute;
   left: 50%;
   top: 50%;
-  width: min(1000px, 110vw);
-  height: auto;
+  width: calc(100% - 48px);
+  height: calc(100% - 48px);
+  max-width: 1000px;
+  max-height: 1000px;
   transform: translate(-50%, -50%);
 }
 .chapter-wallpaper g { opacity: .33; }
