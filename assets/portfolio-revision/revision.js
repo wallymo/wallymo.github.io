@@ -7,7 +7,6 @@
   const grid = work?.querySelector('.work-grid');
   const panels = [...(chapters?.querySelectorAll('.chapter-state') || [])];
   const tabs = [...(chapters?.querySelectorAll('.chapter-tab') || [])];
-  const chapterMarks = [...(chapters?.querySelectorAll('[data-chapter-mark]') || [])];
   const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
   const gsap = window.gsap;
   const canAnimate = Boolean(gsap);
@@ -129,34 +128,12 @@
     });
   }
 
-  let wallpaperVisible = false;
-  let wallpaperIndex = -1;
-  let wallpaperAnimations = [];
-  function revealChapterWallpaper(replay = false) {
-    if (motion.matches || document.hidden || !wallpaperVisible) return;
-    if (!replay && wallpaperIndex === selected) return;
-    wallpaperAnimations.forEach(animation => animation.cancel());
-    wallpaperAnimations = [];
-    wallpaperIndex = selected;
-    chapterMarks.forEach((mark, index) => {
-      mark.style.opacity = index === selected ? '1' : index < selected ? '.22' : '0';
-      [...mark.children].forEach((stroke, i) => {
-        stroke.style.removeProperty('stroke-dashoffset');
-        if (index === selected && stroke.animate) {
-          wallpaperAnimations.push(stroke.animate(
-            [{ strokeDashoffset: '1' }, { strokeDashoffset: '0' }],
-            { duration: 1300, delay: i * 140, easing: 'cubic-bezier(.22,1,.36,1)', fill: 'backwards' }
-          ));
-        }
-      });
-    });
-  }
-
   function activate(index, animate = false) {
     chapterAnimation?.kill();
     chapterAnimation = undefined;
     selected = Math.max(0, Math.min(panels.length - 1, index));
-    revealChapterWallpaper();
+    // Content, tabs, and background always share the same selected chapter.
+    chapters.dataset.activeChapter = ['account', 'ux', 'ai'][selected];
     const period = panels[selected].querySelector('.chapter-period');
     const label = chapters.querySelector('.chapter-window-label');
     if (label && period) {
@@ -197,13 +174,6 @@
     chapterAnimation = undefined;
     chaptersPinned = false;
     chapters.classList.remove('chapters-pinned', 'chapters-enhanced');
-    wallpaperAnimations.forEach(animation => animation.cancel());
-    wallpaperAnimations = [];
-    wallpaperIndex = -1;
-    chapterMarks.forEach(mark => {
-      mark.style.removeProperty('opacity');
-      [...mark.children].forEach(stroke => stroke.style.removeProperty('stroke-dashoffset'));
-    });
     panels.forEach((panel) => {
       gsap?.killTweensOf(panel.children);
       for (const child of panel.children) {
@@ -216,7 +186,11 @@
       panel.removeAttribute('role');
       panel.removeAttribute('aria-labelledby');
     });
-    if (motion.matches) return;
+    if (motion.matches) {
+      selected = 0;
+      chapters.dataset.activeChapter = 'account';
+      return;
+    }
     chapters.querySelector('.chapter-tabs').setAttribute('aria-orientation', window.innerWidth >= 1120 ? 'vertical' : 'horizontal');
     chapters.classList.add('chapters-enhanced');
     panels.forEach((panel, i) => {
@@ -337,19 +311,4 @@
     resizeFrame = requestAnimationFrame(setup);
   });
   motion.addEventListener('change', setup);
-  if (chapters && 'IntersectionObserver' in window) {
-    new IntersectionObserver(([entry]) => {
-      wallpaperVisible = entry.isIntersecting;
-      if (wallpaperVisible) revealChapterWallpaper(true);
-      else wallpaperAnimations.forEach(animation => animation.pause());
-    }, { threshold: 0, rootMargin: '-12% 0px -12% 0px' }).observe(chapters.querySelector('.chapter-shell'));
-  }
-  document.addEventListener('visibilitychange', () => {
-    if (document.hidden) wallpaperAnimations.forEach(animation => animation.pause());
-    else if (wallpaperVisible) {
-      syncChapterScroll(false);
-      revealChapterWallpaper();
-      wallpaperAnimations.filter(animation => animation.playState === 'paused').forEach(animation => animation.play());
-    }
-  });
 })();

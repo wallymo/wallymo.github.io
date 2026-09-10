@@ -167,53 +167,50 @@ nav .nav-cta:hover, .btn-primary:hover { background: var(--accent-hover); }
 }
 
 #chapters {
-  --chapter-accent: var(--accent-text);
+  /* Parchment stays steady; the shared clay and taupe bulbs carry progression. */
+  --chapter-bg-account: oklch(94.18% .0120 79.78);
+  --chapter-accent: #903e20;
   position: relative;
   padding: 0 var(--page-gutter);
-  background-color: var(--surface-warm);
+  background-color: var(--chapter-bg-account);
+  background-image: none;
   color: var(--ink);
   border-block: 1px solid var(--rule);
   scroll-margin-top: 54px;
 }
-.chapter-shell { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); align-items: center; gap: 64px; max-width: var(--max-w); margin: 0 auto; padding: 96px 0; }
-.chapter-shell { position: relative; isolation: isolate; }
-/* Section wallpaper shares the sticky frame; the Proof file stays opaque above it. */
-.chapter-wallpaper {
+/* The same circular 0/35/100 falloff as the rest of the site. Opacity crossfades
+   finish independently of scrolling and cannot tint or move foreground content. */
+#chapters::before, #chapters::after {
+  content: '';
   position: absolute;
+  inset: 0;
   z-index: -1;
-  inset-block: 0;
-  left: 50%;
-  width: 100vw;
-  transform: translateX(-50%);
-  overflow: clip;
   pointer-events: none;
-  color: var(--chapter-accent);
-  opacity: .05;
+  background-size: 100% calc(var(--bulb-radius) * 2);
+  background-repeat: repeat-y;
+  transition: opacity 650ms cubic-bezier(.22,1,.36,1);
 }
-.chapter-wallpaper svg {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  width: calc(100% - 48px);
-  height: calc(100% - 48px);
-  max-width: 1000px;
-  max-height: 1000px;
-  transform: translate(-50%, -50%);
+#chapters::before {
+  background-image: radial-gradient(circle var(--bulb-radius) at 5% 50%,
+    rgb(var(--bulb-clay) / .24) 0%, rgb(var(--bulb-clay) / .10) 35%, rgb(var(--bulb-clay) / 0) 100%);
+  background-position: 0 0;
+  opacity: .5;
 }
-.chapter-wallpaper g { opacity: .33; }
-.chapter-wallpaper g > * {
-  fill: none;
-  stroke: currentColor;
-  stroke-width: .45;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-dasharray: 1;
-  stroke-dashoffset: 0;
+#chapters::after {
+  background-image: radial-gradient(circle var(--bulb-radius) at 95% 50%,
+    rgb(var(--bulb-taupe) / .24) 0%, rgb(var(--bulb-taupe) / .10) 35%, rgb(var(--bulb-taupe) / 0) 100%);
+  background-position: 0 calc(var(--bulb-radius) * -1);
+  opacity: .45;
 }
+#chapters[data-active-chapter='ux']::before { opacity: .18; }
+#chapters[data-active-chapter='ux']::after { opacity: 1; }
+#chapters[data-active-chapter='ai']::before { opacity: 1; }
+#chapters[data-active-chapter='ai']::after { opacity: .3; }
 @media (prefers-reduced-motion: reduce) {
-  .chapter-wallpaper g { opacity: .33 !important; }
-  .chapter-wallpaper g > * { stroke-dashoffset: 0 !important; }
+  #chapters[data-active-chapter]::before { opacity: .5; transition: none !important; }
+  #chapters[data-active-chapter]::after { opacity: .45; transition: none !important; }
 }
+.chapter-shell { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); align-items: center; gap: 64px; max-width: var(--max-w); margin: 0 auto; padding: 96px 0; }
 #chapters:not(.chapters-enhanced) .chapter-shell { align-items: start; }
 .chapter-intro h2 { margin: 0 0 24px; font-family: var(--font-display); font-size: var(--section-heading-size); line-height: 1.1; font-weight: 700; letter-spacing: -.045em; }
 .chapter-intro h2 span { display: block; }
@@ -222,6 +219,7 @@ nav .nav-cta:hover, .btn-primary:hover { background: var(--accent-hover); }
 .chapter-tabs { display: none; }
 /* B4's digital Proof file window, adapted to Wally's warm surfaces. */
 .chapter-stage {
+  --chapter-accent: var(--accent-text);
   position: relative;
   min-width: 0;
   border: 1px solid var(--rule);
@@ -419,6 +417,10 @@ body > footer { color: var(--dark-muted); background-color: var(--dark-base); bo
   .contact-links { align-items: flex-start; }
   .contact { padding-block: 72px; }
   .footer-inner { flex-direction: column; align-items: flex-start; gap: 16px; padding-top: 24px; }
+}
+@media (max-width: 400px) {
+  /* Reserve two label lines so shorter chapter names do not move the window. */
+  .chapter-window-label { min-height: 3em; }
 }
 @media (max-width: 359px) {
   :root { --page-gutter: 16px; }

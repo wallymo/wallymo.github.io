@@ -20,7 +20,7 @@ Use the compact navigation menu below 1120px, before desktop links begin to wrap
 The chapter story sits inside a warm digital “Proof file” window with a straight title bar
 showing the active chapter and dates. The section intro and chapter navigation stay outside.
 Keep evidence rows separated by rules within the panel.
-How I Build emphasizes the numbered process; tools remain quiet supporting groups.
+How I Build remains hidden in the revision; Chapters flows directly to Capabilities.
 Capabilities keep the open two-column structure and first-person verbs. Recognition
 is one ruled strip, with separate title/detail blocks and stacked mobile entries.
 
@@ -70,9 +70,17 @@ making a local revision commit. Publishing remains a separate decision.
 
 Keep Proof file panels clear of background icons. Connect chapter circles
 vertically on desktop and horizontally in the compact tab layout.
-The original B4 chapter marks form centered wallpaper behind the entire chapter
-shell at 5% opacity. Each symbol draws automatically on section entry or chapter
-selection, independent of scroll distance, with faint traces of earlier chapters.
-Fit the full SVG inside the section with a 24px inset; never crop its strokes.
-Keep the Proof file surface opaque. Reduced motion and no JavaScript
-show a static composition; the wallpaper never changes document height.
+Chapters keeps a steady parchment #F0EBE3 base, defined in OKLCH. Full-section
+solid color changes were rejected in visual review. Instead, the existing round
+clay/taupe bulbs carry progression: balanced for Account Management, taupe-led for
+UX, and clay-led for AI. Keep the middle of the section quiet and the Proof file
+opaque. Both fields use the shared radius and 0/35/100 falloff, with .24/.10 core
+and shoulder values. Their opacities are .5/.45 for Account, .18/1 for UX, and
+1/.3 for AI. Crossfade opacity over 650ms with cubic-bezier(.22,1,.36,1), without
+scroll scrubbing, a flat section tint, or icon wallpaper.
+The existing activation function sets data-active-chapter for scrolling, clicks,
+and keyboard input. Preserve the current state during layout recalculation.
+Exposed labels and focus use #903E20; Proof file colors remain unchanged. Reserve
+two title-bar label lines on small phones so chapter changes do not move the window.
+Reduced motion and no JavaScript show all three chapters on static parchment
+with the balanced Account bulb field.
