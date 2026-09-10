@@ -70,8 +70,12 @@ making a local revision commit. Publishing remains a separate decision.
 
 ## Chapter identity
 
-The section heading and introduction sit above the chapter journey. During desktop
-pinning, the active chapter identity sits left of the steady Proof file window:
+The section introduction is a compact opening band: heading on the left and the
+existing sentence on the right at desktop widths, stacked on smaller screens.
+Keep 56px between this band's content and the first pinned chapter (24px intro
+padding plus 32px journey padding). Size the pinned frame to its content plus
+64px, rather than vertically centering content inside a viewport-height frame.
+During desktop pinning, the active chapter identity sits left of the steady Proof file window:
 96–112px Syne numbers, a quiet total, 40–44px two-line chapter names, and clay dates.
 Names and dates derive from the existing period metadata; static HTML also contains
 them for no-JavaScript reading. Exposed labels and focus use #803819, with #4E4742
@@ -93,6 +97,12 @@ links; the active indicator follows each chapter crossing the upper third of the
 usable viewport. Reduced motion and no JavaScript retain this readable sequence.
 
 Keep the parchment #F0EBE3 background steady. Bulbs use the shared circular field at
-clay core/shoulder .10/.043 and taupe .08/.035, with no chapter-dependent changes.
+clay core/shoulder .22/.094 and taupe .18/.077, with no chapter-dependent changes.
+Attach the field behind the pinned shell, with clay beside the chapter number and
+taupe at the window's outer edge, so the light stays present during scrolling.
+On compact screens, each chapter block owns the same field. Let the light extend
+up behind the intro; clip decorative spill at the section boundary with overflow:
+clip, which does not create a scrolling ancestor. Keep all fields in the shell's
+background layer and the intro above it; never tint the cream Proof file or copy.
 Chapter identity must remain unmistakable even with decorative backgrounds disabled.
 Proof files remain clear of background icons.

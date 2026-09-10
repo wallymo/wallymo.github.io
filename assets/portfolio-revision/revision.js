@@ -233,11 +233,13 @@
       const identityHeight = Math.max(...identities.map(el => el.getBoundingClientRect().height));
       const proofHeight = Math.max(...proofs.map(el => el.getBoundingClientRect().height));
       const contentHeight = Math.max(proofHeight, identityHeight + 28 + chapterNav.getBoundingClientRect().height);
-      const frame = window.innerHeight - chapterTop - 24;
-      if (contentHeight + 96 <= frame) {
+      // Keep the entry close to its introduction instead of centering a short
+      // composition inside an entire viewport of padding.
+      const padding = 32;
+      const frame = contentHeight + padding * 2;
+      if (frame <= window.innerHeight - chapterTop - 24) {
         chaptersPinned = true;
         chapterTravel = Math.round(window.innerHeight * 1.25);
-        const padding = (frame - contentHeight) / 2;
         chapters.style.setProperty('--chapter-padding', `${padding}px`);
         chapters.style.setProperty('--chapter-identity-height', `${identityHeight}px`);
         chapters.style.setProperty('--chapter-proof-height', `${proofHeight}px`);
