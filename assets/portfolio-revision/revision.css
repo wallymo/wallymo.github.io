@@ -176,6 +176,42 @@ nav .nav-cta:hover, .btn-primary:hover { background: var(--accent-hover); }
   scroll-margin-top: 54px;
 }
 .chapter-shell { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); align-items: center; gap: 64px; max-width: var(--max-w); margin: 0 auto; padding: 96px 0; }
+.chapter-shell { position: relative; isolation: isolate; }
+/* Section wallpaper shares the sticky frame; the Proof file stays opaque above it. */
+.chapter-wallpaper {
+  position: absolute;
+  z-index: -1;
+  inset-block: 0;
+  left: 50%;
+  width: 100vw;
+  transform: translateX(-50%);
+  overflow: clip;
+  pointer-events: none;
+  color: var(--chapter-accent);
+  opacity: .05;
+}
+.chapter-wallpaper svg {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: min(1000px, 110vw);
+  height: auto;
+  transform: translate(-50%, -50%);
+}
+.chapter-wallpaper g { opacity: .33; }
+.chapter-wallpaper g > * {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: .45;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 1;
+  stroke-dashoffset: 0;
+}
+@media (prefers-reduced-motion: reduce) {
+  .chapter-wallpaper g { opacity: .33 !important; }
+  .chapter-wallpaper g > * { stroke-dashoffset: 0 !important; }
+}
 #chapters:not(.chapters-enhanced) .chapter-shell { align-items: start; }
 .chapter-intro h2 { margin: 0 0 24px; font-family: var(--font-display); font-size: var(--section-heading-size); line-height: 1.1; font-weight: 700; letter-spacing: -.045em; }
 .chapter-intro h2 span { display: block; }

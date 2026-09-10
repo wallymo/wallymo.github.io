@@ -7,6 +7,7 @@
   const grid = work?.querySelector('.work-grid');
   const panels = [...(chapters?.querySelectorAll('.chapter-state') || [])];
   const tabs = [...(chapters?.querySelectorAll('.chapter-tab') || [])];
+  const chapterMarks = [...(chapters?.querySelectorAll('[data-chapter-mark]') || [])];
   const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
   const gsap = window.gsap;
   const canAnimate = Boolean(gsap);
@@ -128,10 +129,24 @@
     });
   }
 
+  function drawChapterWallpaper(progress) {
+    if (motion.matches || document.hidden) return;
+    chapterMarks.forEach((mark, index) => {
+      const amount = Math.max(0, Math.min(1, progress - index));
+      // Earlier chapters leave a quiet trace as the next symbol is drawn.
+      mark.style.opacity = amount === 0 ? '0' : progress >= index + 1 ? '.22' : '1';
+      [...mark.children].forEach((stroke, i, strokes) => {
+        const drawn = Math.max(0, Math.min(1, amount * 1.6 - i / strokes.length * .6));
+        stroke.style.strokeDashoffset = String(1 - drawn);
+      });
+    });
+  }
+
   function activate(index, animate = false) {
     chapterAnimation?.kill();
     chapterAnimation = undefined;
     selected = Math.max(0, Math.min(panels.length - 1, index));
+    drawChapterWallpaper(selected + .85);
     const period = panels[selected].querySelector('.chapter-period');
     const label = chapters.querySelector('.chapter-window-label');
     if (label && period) {
@@ -172,6 +187,10 @@
     chapterAnimation = undefined;
     chaptersPinned = false;
     chapters.classList.remove('chapters-pinned', 'chapters-enhanced');
+    chapterMarks.forEach(mark => {
+      mark.style.removeProperty('opacity');
+      [...mark.children].forEach(stroke => stroke.style.removeProperty('stroke-dashoffset'));
+    });
     panels.forEach((panel) => {
       gsap?.killTweensOf(panel.children);
       for (const child of panel.children) {
@@ -208,12 +227,21 @@
 
   function syncChapterScroll(animate = true) {
     if (!chapters || motion.matches || choosingChapter) return;
-    if (!chaptersPinned) { resetBeforeChapterEntry(); return; }
+    if (!chaptersPinned) {
+      resetBeforeChapterEntry();
+      const bounds = chapters.querySelector('.chapter-shell').getBoundingClientRect();
+      if (bounds.top < innerHeight && bounds.bottom > 0) {
+        const amount = Math.max(.12, Math.min(.99, (innerHeight - bounds.top) / (innerHeight + bounds.height) * 1.6));
+        drawChapterWallpaper(selected + amount);
+      }
+      return;
+    }
     // Read the native sticky section itself. A cached animation trigger start can
     // become stale during refresh, restoration, or changes to the projects above.
     const progress = Math.max(0, Math.min(1, (chapterTop - chapters.getBoundingClientRect().top) / chapterTravel));
     const next = Math.min(panels.length - 1, Math.floor(progress * panels.length));
     if (next !== selected) activate(next, animate);
+    drawChapterWallpaper(Math.min(panels.length - .001, progress * panels.length + .08));
   }
 
   function chooseChapter(index, animate) {
@@ -226,6 +254,7 @@
       choosingChapter = false;
     }
     activate(index, animate);
+    if (chaptersPinned) syncChapterScroll(false);
   }
   tabs.forEach((tab, index) => {
     tab.addEventListener('click', () => chooseChapter(index, true));
@@ -304,4 +333,7 @@
     resizeFrame = requestAnimationFrame(setup);
   });
   motion.addEventListener('change', setup);
+  document.addEventListener('visibilitychange', () => {
+    if (!document.hidden) syncChapterScroll(false);
+  });
 })();

@@ -70,3 +70,7 @@ making a local revision commit. Publishing remains a separate decision.
 
 Keep Proof file panels clear of background icons. Connect chapter circles
 vertically on desktop and horizontally in the compact tab layout.
+The original B4 chapter marks form centered wallpaper behind the entire chapter
+shell at 5% opacity. Scroll draws each symbol and leaves faint traces of earlier
+chapters. Keep the Proof file surface opaque. Reduced motion and no JavaScript
+show a static composition; the wallpaper never changes document height.
