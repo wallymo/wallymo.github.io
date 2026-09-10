@@ -55,8 +55,8 @@ The chapter window is the intentional container for career evidence. Keep other
 open content unboxed; use rules and type to group it.
 Maintain native project stacking at eligible desktop sizes, adaptive header spacing,
 flat layouts when a complete card cannot fit, and correct final-card release.
-Chapters retain tabs, keyboard selected states, direct anchors, interrupted-transition
-restoration, and a static full sequence for reduced motion/no JavaScript. Reading
+Chapters retain desktop tabs, keyboard selected states, direct anchors, interrupted-transition
+restoration, and a full scrolling sequence on compact screens or with reduced motion/no JavaScript. Reading
 sections remain visible from first paint; do not hide their content behind entrance
 fade observers or timers.
 
@@ -68,23 +68,31 @@ rebuilt. Review the whole page in Chrome and Safari and test repeated loads,
 resizing, reduced motion, contrast, and three/four/five-project fixtures before
 making a local revision commit. Publishing remains a separate decision.
 
-Keep Proof file panels clear of background icons. Connect chapter circles
-vertically on desktop and horizontally in the compact tab layout.
-Chapters keeps a steady parchment #F0EBE3 base, defined in OKLCH. Full-section
-solid color changes were rejected in visual review. Instead, the existing round
-clay/taupe bulbs carry progression: balanced for Account Management, taupe-led for
-UX, and clay-led for AI. Keep the middle of the section quiet and the Proof file
-opaque. Both fields use the shared radius and the hero's 0/35/100 falloff, with
-.28/.12 core and shoulder values. Their opacities are .7/.35 for Account, .05/1
-for UX, and 1/.05 for AI. Attach the fields to the chapter shell so they stay
-alongside the pinned content instead of disappearing along the tall scroll track.
-On compact layouts, keep the bulb centers in the exposed intro at 240px and 140px
-from the top. Crossfade opacity over 650ms with cubic-bezier(.22,1,.36,1), without
-scroll scrubbing, a flat section tint, or icon wallpaper.
-The existing activation function sets data-active-chapter for scrolling, clicks,
-and keyboard input. Preserve the current state during layout recalculation.
-Exposed labels and focus use #803819; supporting intro and tab text use #4E4742
-to preserve contrast under the stronger light. Proof file colors remain unchanged. Reserve
-two title-bar label lines on small phones so chapter changes do not move the window.
-Reduced motion and no JavaScript show all three chapters on static parchment
-with the balanced Account bulb field.
+## Chapter identity
+
+The section heading and introduction sit above the chapter journey. During desktop
+pinning, the active chapter identity sits left of the steady Proof file window:
+96–112px Syne numbers, a quiet total, 40–44px two-line chapter names, and clay dates.
+Names and dates derive from the existing period metadata; static HTML also contains
+them for no-JavaScript reading. Exposed labels and focus use #803819, with #4E4742
+for supporting text. The window retains its original cream and clay colors.
+
+Connected navigation sits under the desktop identity. Completed circles fill, the
+active circle has a ring, and the line fills through the active chapter. A chapter
+change moves the incoming identity 16px over 320ms with the existing ease; backward
+navigation reverses direction. Evidence has a short reading-content transition,
+while the window frame remains fixed. Cancel interrupted animation effects before
+presenting the latest selected state.
+
+Measure all identities, the navigation, and the tallest Proof file before enabling
+pinning at widths of at least 1120px. Start scroll progression at the journey frame,
+not the introductory heading. Preserve the selected chapter when switching layouts.
+If the complete arrangement cannot fit, show all three chapter blocks in a single
+column with 48px gaps, 64px numbers, and 32px names. Navigation becomes native anchor
+links; the active indicator follows each chapter crossing the upper third of the
+usable viewport. Reduced motion and no JavaScript retain this readable sequence.
+
+Keep the parchment #F0EBE3 background steady. Bulbs use the shared circular field at
+clay core/shoulder .10/.043 and taupe .08/.035, with no chapter-dependent changes.
+Chapter identity must remain unmistakable even with decorative backgrounds disabled.
+Proof files remain clear of background icons.

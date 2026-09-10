@@ -7,11 +7,18 @@
   const grid = work?.querySelector('.work-grid');
   const panels = [...(chapters?.querySelectorAll('.chapter-state') || [])];
   const tabs = [...(chapters?.querySelectorAll('.chapter-tab') || [])];
+  const journey = chapters?.querySelector('.chapter-journey');
+  const chapterNav = chapters?.querySelector('.chapter-tabs');
+  const identities = panels.map(panel => panel.querySelector('.chapter-identity'));
+  const proofs = panels.map(panel => panel.querySelector('.chapter-proof'));
   const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
   const gsap = window.gsap;
-  const canAnimate = Boolean(gsap);
   let chaptersPinned = false;
-  let chapterAnimation;
+  let chapterAnimations = [];
+  let chapterLayoutReady = false;
+  let chapterReading = false;
+  let chapterLayoutSize = '';
+  let chapterLayoutMotion = motion.matches;
   let choosingChapter = false;
   let selected = 0;
   let chapterTop = 0;
@@ -128,142 +135,202 @@
     });
   }
 
+  // The existing period remains the source for names, numbering, and dates.
+  // Matching static markup keeps the same identities readable without JavaScript.
+  panels.forEach((panel, index) => {
+    const period = panel.querySelector('.chapter-period');
+    const match = period?.firstElementChild?.textContent.match(/^(\d+) \/ (.+)$/);
+    if (!match) return;
+    const identity = identities[index];
+    identity.querySelector('.chapter-number').textContent = match[1];
+    identity.querySelector('.chapter-total').textContent = `/ ${String(panels.length).padStart(2, '0')}`;
+    const words = match[2].split(' ');
+    const first = document.createElement('span');
+    const second = document.createElement('span');
+    first.textContent = words.shift();
+    second.textContent = words.join(' ');
+    identity.querySelector('.chapter-name').replaceChildren(first, document.createTextNode(' '), second);
+    identity.querySelector('.chapter-dates').textContent = period.querySelector('.chapter-years').textContent;
+  });
+
+  function clearChapterAnimations() {
+    chapterAnimations.forEach(animation => animation.cancel());
+    chapterAnimations = [];
+  }
+
   function activate(index, animate = false) {
-    chapterAnimation?.kill();
-    chapterAnimation = undefined;
+    const previous = selected;
+    clearChapterAnimations();
     selected = Math.max(0, Math.min(panels.length - 1, index));
-    // Content, tabs, and background always share the same selected chapter.
     chapters.dataset.activeChapter = ['account', 'ux', 'ai'][selected];
-    const period = panels[selected].querySelector('.chapter-period');
-    const label = chapters.querySelector('.chapter-window-label');
-    if (label && period) {
-      const name = period.querySelector('span').textContent;
-      const years = document.createElement('span');
-      years.className = 'chapter-years';
-      years.textContent = period.textContent.slice(name.length).trim();
-      label.replaceChildren(document.createTextNode(`${name} · `), years);
-    }
+    chapters.style.setProperty('--chapter-progress', String(selected / Math.max(1, panels.length - 1)));
     panels.forEach((panel, i) => {
       const active = i === selected;
-      // Always restore the full state before starting another transition.
-      // This keeps rapid clicks, reverse scroll, and resize from stranding faded text.
-      gsap?.killTweensOf(panel.children);
-      for (const child of panel.children) {
-        child.style.removeProperty('opacity');
-        child.style.removeProperty('transform');
-      }
       panel.classList.toggle('is-active', active);
-      panel.setAttribute('aria-hidden', String(!active));
-      panel.inert = !active;
-      panel.tabIndex = active ? 0 : -1;
-      tabs[i].setAttribute('aria-selected', String(active));
-      tabs[i].tabIndex = active ? 0 : -1;
+      panel.inert = chaptersPinned && !active;
+      if (chaptersPinned) {
+        panel.setAttribute('aria-hidden', String(!active));
+        panel.tabIndex = active ? 0 : -1;
+      } else {
+        panel.removeAttribute('aria-hidden');
+        panel.removeAttribute('tabindex');
+      }
+      tabs[i].classList.toggle('is-current', active);
+      tabs[i].classList.toggle('is-complete', i < selected);
+      if (chaptersPinned) {
+        tabs[i].setAttribute('aria-selected', String(active));
+        tabs[i].removeAttribute('aria-current');
+        tabs[i].tabIndex = active ? 0 : -1;
+      } else {
+        tabs[i].removeAttribute('aria-selected');
+        tabs[i].removeAttribute('tabindex');
+        if (active) tabs[i].setAttribute('aria-current', 'step');
+        else tabs[i].removeAttribute('aria-current');
+      }
     });
-    if (animate && canAnimate && !motion.matches) {
-      // Set + to avoids a delayed fromTo start-state restoring hidden content
-      // after a keyboard action has already interrupted the animation.
-      gsap.set(panels[selected].children, { opacity: 0, y: 12 });
-      chapterAnimation = gsap.to(panels[selected].children,
-        { opacity: 1, y: 0, duration: .34, stagger: .045, ease: 'power2.out', clearProps: 'opacity,transform' });
+    if (animate && previous !== selected && chaptersPinned && !motion.matches && identities[selected].animate) {
+      const direction = selected > previous ? 1 : -1;
+      chapterAnimations.push(identities[selected].animate([
+        { opacity: .25, transform: `translateY(${direction * 16}px)` },
+        { opacity: 1, transform: 'translateY(0)' }
+      ], { duration: 320, easing: 'cubic-bezier(.22,1,.36,1)' }));
+      chapterAnimations.push(panels[selected].querySelector('.chapter-copy').animate([
+        { opacity: .35, transform: 'translateY(8px)' },
+        { opacity: 1, transform: 'translateY(0)' }
+      ], { duration: 340, easing: 'cubic-bezier(.22,1,.36,1)' }));
     }
   }
 
   function setupChapters() {
-    if (!chapters || !panels.length) return;
-    chapterAnimation?.kill();
-    chapterAnimation = undefined;
+    if (!chapters || !journey || !panels.length) return;
+    // Keep the last reading position: responsive CSS can move the old layout
+    // above the viewport before its resize event reaches this measurement pass.
+    const wasInside = chapterLayoutReady && chapterReading;
+    const previouslyPinned = chaptersPinned;
+    clearChapterAnimations();
     chaptersPinned = false;
-    chapters.classList.remove('chapters-pinned', 'chapters-enhanced');
-    panels.forEach((panel) => {
-      gsap?.killTweensOf(panel.children);
-      for (const child of panel.children) {
-        child.style.removeProperty('opacity');
-        child.style.removeProperty('transform');
-      }
+    chapters.classList.remove('chapters-pinned', 'chapters-measuring', 'chapters-enhanced');
+    for (const property of ['--chapter-padding', '--chapter-identity-height', '--chapter-proof-height',
+      '--chapter-content-height', '--chapter-nav-top', '--chapter-frame-height', '--chapter-travel']) {
+      chapters.style.removeProperty(property);
+    }
+    chapterTop = navOffset();
+    chapters.style.setProperty('--chapter-top', `${chapterTop}px`);
+    chapterNav.setAttribute('role', 'navigation');
+    chapterNav.removeAttribute('aria-orientation');
+    panels.forEach((panel, i) => {
       panel.inert = false;
       panel.removeAttribute('aria-hidden');
       panel.removeAttribute('tabindex');
       panel.removeAttribute('role');
-      panel.removeAttribute('aria-labelledby');
+      panel.setAttribute('aria-labelledby', identities[i].querySelector('.chapter-name').id);
+      tabs[i].removeAttribute('role');
+      tabs[i].removeAttribute('aria-controls');
     });
-    if (motion.matches) {
-      selected = 0;
-      chapters.dataset.activeChapter = 'account';
-      return;
+
+    if (!motion.matches && window.innerWidth >= 1120) {
+      chapters.classList.add('chapters-measuring');
+      const identityHeight = Math.max(...identities.map(el => el.getBoundingClientRect().height));
+      const proofHeight = Math.max(...proofs.map(el => el.getBoundingClientRect().height));
+      const contentHeight = Math.max(proofHeight, identityHeight + 28 + chapterNav.getBoundingClientRect().height);
+      const frame = window.innerHeight - chapterTop - 24;
+      if (contentHeight + 96 <= frame) {
+        chaptersPinned = true;
+        chapterTravel = Math.round(window.innerHeight * 1.25);
+        const padding = (frame - contentHeight) / 2;
+        chapters.style.setProperty('--chapter-padding', `${padding}px`);
+        chapters.style.setProperty('--chapter-identity-height', `${identityHeight}px`);
+        chapters.style.setProperty('--chapter-proof-height', `${proofHeight}px`);
+        chapters.style.setProperty('--chapter-content-height', `${contentHeight}px`);
+        chapters.style.setProperty('--chapter-nav-top', `${padding + identityHeight + 28}px`);
+        chapters.style.setProperty('--chapter-frame-height', `${frame}px`);
+        chapters.style.setProperty('--chapter-travel', `${chapterTravel}px`);
+        chapters.classList.add('chapters-pinned');
+        chapterNav.setAttribute('role', 'tablist');
+        chapterNav.setAttribute('aria-orientation', 'vertical');
+        panels.forEach((panel, i) => {
+          panel.setAttribute('role', 'tabpanel');
+          panel.setAttribute('aria-labelledby', tabs[i].id);
+          tabs[i].setAttribute('role', 'tab');
+          tabs[i].setAttribute('aria-controls', panel.id);
+        });
+      }
+      chapters.classList.remove('chapters-measuring');
     }
-    chapters.querySelector('.chapter-tabs').setAttribute('aria-orientation', window.innerWidth >= 1120 ? 'vertical' : 'horizontal');
-    chapters.classList.add('chapters-enhanced');
-    panels.forEach((panel, i) => {
-      panel.setAttribute('role', 'tabpanel');
-      panel.setAttribute('aria-labelledby', tabs[i].id);
-    });
+    chapterLayoutSize = `${window.innerWidth}:${window.innerHeight}`;
+    chapterLayoutMotion = motion.matches;
     activate(selected);
-    chapterTop = navOffset();
-    const frame = window.innerHeight - chapterTop - 24;
-    const panelHeight = chapters.querySelector('.chapter-stage').getBoundingClientRect().height;
-    const introHeight = chapters.querySelector('.chapter-intro').getBoundingClientRect().height;
-    if (window.innerWidth < 1120 || Math.max(panelHeight, introHeight) + 96 > frame) return;
-    chapterTravel = Math.round(window.innerHeight * 1.25);
-    chapters.style.setProperty('--chapter-top', `${chapterTop}px`);
-    chapters.style.setProperty('--chapter-frame-height', `${frame}px`);
-    chapters.style.setProperty('--chapter-travel', `${chapterTravel}px`);
-    chapters.classList.add('chapters-pinned');
-    chaptersPinned = true;
-    syncChapterScroll(false);
+    if (wasInside && chaptersPinned) chooseChapter(selected, false);
+    else if (wasInside && previouslyPinned) {
+      instantScroll(panels[selected].getBoundingClientRect().top + window.scrollY - chapterTop);
+    } else syncChapterScroll(false);
+    chapterLayoutReady = true;
   }
 
   function syncChapterScroll(animate = true) {
-    if (!chapters || motion.matches || choosingChapter) return;
-    if (!chaptersPinned) { resetBeforeChapterEntry(); return; }
-    // Read the native sticky section itself. A cached animation trigger start can
-    // become stale during refresh, restoration, or changes to the projects above.
-    const progress = Math.max(0, Math.min(1, (chapterTop - chapters.getBoundingClientRect().top) / chapterTravel));
-    const next = Math.min(panels.length - 1, Math.floor(progress * panels.length));
+    if (!chapters || !journey || choosingChapter) return;
+    if (chapterLayoutSize !== `${window.innerWidth}:${window.innerHeight}` || chapterLayoutMotion !== motion.matches) return;
+    const readingLine = navOffset() + (window.innerHeight - navOffset()) / 3;
+    const bounds = journey.getBoundingClientRect();
+    chapterReading = bounds.top <= readingLine && bounds.bottom > navOffset();
+    let next = 0;
+    if (chaptersPinned) {
+      // The introduction sits above this track and must not consume chapter one.
+      const progress = Math.max(0, Math.min(1, (chapterTop - journey.getBoundingClientRect().top) / chapterTravel));
+      next = Math.min(panels.length - 1, Math.floor(progress * panels.length));
+    } else {
+      panels.forEach((panel, i) => {
+        if (panel.getBoundingClientRect().top <= readingLine) next = i;
+      });
+    }
     if (next !== selected) activate(next, animate);
   }
 
   function chooseChapter(index, animate) {
-    if (motion.matches) return;
-    if (chaptersPinned) {
-      const start = chapters.getBoundingClientRect().top + window.scrollY - chapterTop;
-      const position = start + chapterTravel * ((index + .3) / panels.length);
-      choosingChapter = true;
-      instantScroll(position);
-      choosingChapter = false;
-    }
+    if (!chaptersPinned) return;
+    const start = journey.getBoundingClientRect().top + window.scrollY - chapterTop;
+    choosingChapter = true;
+    instantScroll(start + chapterTravel * ((index + .3) / panels.length));
     activate(index, animate);
-    if (chaptersPinned) syncChapterScroll(false);
+    choosingChapter = false;
+    chapterReading = true;
   }
   tabs.forEach((tab, index) => {
-    tab.addEventListener('click', () => chooseChapter(index, true));
-    tab.addEventListener('keydown', (event) => {
+    tab.addEventListener('click', event => {
+      if (!chaptersPinned) return; // Ordinary anchors reveal the static sequence.
+      event.preventDefault();
+      chooseChapter(index, true);
+    });
+    tab.addEventListener('keydown', event => {
+      if (!chaptersPinned) return;
       let next;
       if (['ArrowRight', 'ArrowDown'].includes(event.key)) next = (index + 1) % tabs.length;
       if (['ArrowLeft', 'ArrowUp'].includes(event.key)) next = (index - 1 + tabs.length) % tabs.length;
       if (event.key === 'Home') next = 0;
       if (event.key === 'End') next = tabs.length - 1;
+      if (event.key === ' ') next = index;
       if (next === undefined) return;
       event.preventDefault();
-      chooseChapter(next, false);
+      chooseChapter(next, true);
       tabs[next].focus({ preventScroll: true });
     });
   });
 
   function followAnchor() {
-    if (!chapters || !['#arc', '#chapters'].includes(window.location.hash)) return;
-    if (window.location.hash === '#arc') history.replaceState(null, '', `${location.pathname}${location.search}#chapters`);
-    if (!anchorHandled) {
-      if (!motion.matches) activate(0);
+    if (!chapters || anchorHandled) return;
+    const chapterIndex = panels.findIndex(panel => `#${panel.id}` === window.location.hash);
+    if (['#arc', '#chapters'].includes(window.location.hash)) {
+      if (window.location.hash === '#arc') history.replaceState(null, '', `${location.pathname}${location.search}#chapters`);
+      activate(0);
       instantScroll(chapters.getBoundingClientRect().top + window.scrollY - navOffset());
-      anchorHandled = true;
-    }
-  }
-
-  function resetBeforeChapterEntry() {
-    // Unpinned tabs have no scroll trigger to rewind their selected state.
-    // Reset while the section is below the viewport, before it enters again.
-    if (!chapters || motion.matches || chaptersPinned || selected === 0) return;
-    if (chapters.getBoundingClientRect().top >= window.innerHeight) activate(0);
+    } else if (chapterIndex >= 0) {
+      if (chaptersPinned) chooseChapter(chapterIndex, false);
+      else {
+        instantScroll(panels[chapterIndex].getBoundingClientRect().top + window.scrollY - navOffset());
+        activate(chapterIndex);
+      }
+    } else return;
+    anchorHandled = true;
   }
 
   document.querySelectorAll('a[href="#chapters"], a[href="#arc"]').forEach((link) => {
@@ -278,7 +345,6 @@
   function setup() {
     setupStack();
     setupChapters();
-    resetBeforeChapterEntry();
   }
   setup();
   // Fonts can change the fit decision; images have explicit intrinsic dimensions.
@@ -295,7 +361,7 @@
   });
   window.addEventListener('hashchange', () => { anchorHandled = false; followAnchor(); });
   window.addEventListener('scroll', () => {
-    if (entryFrame || motion.matches) return;
+    if (entryFrame) return;
     entryFrame = requestAnimationFrame(() => {
       entryFrame = undefined;
       syncStack();
