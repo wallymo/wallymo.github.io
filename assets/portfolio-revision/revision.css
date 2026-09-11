@@ -174,6 +174,7 @@ nav .nav-cta:hover, .btn-primary:hover { background: var(--accent-hover); }
   --chapter-frame-padding: 24px;
   --chapter-intro-gap: 24px;
   --chapter-navigation-gap: 28px;
+  --chapter-reading-inset: 24px;
   --bulb-core: .22;
   --bulb-shoulder: .094;
   --bulb-secondary-core: .18;
@@ -284,7 +285,7 @@ nav .nav-cta:hover, .btn-primary:hover { background: var(--accent-hover); }
 .chapter-tabs::after { background: var(--chapter-accent); transform: scaleX(var(--chapter-progress)); transform-origin: left; transition: transform 320ms cubic-bezier(.22,1,.36,1); }
 
 /* The measurement layout matches the pinned layout without adding a scroll track. */
-#chapters:is(.chapters-pinned, .chapters-measuring) .chapter-frame { padding: var(--chapter-frame-padding) 0; }
+#chapters:is(.chapters-pinned, .chapters-measuring) .chapter-frame { padding: calc(var(--chapter-frame-padding) + var(--chapter-reading-inset)) 0 var(--chapter-frame-padding); }
 #chapters:is(.chapters-pinned, .chapters-measuring) .chapter-intro { padding: 0 0 var(--chapter-intro-gap); }
 #chapters:is(.chapters-pinned, .chapters-measuring) .chapter-shell { padding: 0; }
 #chapters:is(.chapters-pinned, .chapters-measuring) .chapter-entries { display: grid; min-height: var(--chapter-content-height, 0px); }
@@ -301,8 +302,10 @@ nav .nav-cta:hover, .btn-primary:hover { background: var(--accent-hover); }
 #chapters:is(.chapters-pinned, .chapters-measuring) .chapter-tabs::before,
 #chapters:is(.chapters-pinned, .chapters-measuring) .chapter-tabs::after { top: 26px; bottom: 26px; left: 5px; width: 1px; height: auto; }
 #chapters:is(.chapters-pinned, .chapters-measuring) .chapter-tabs::after { transform: scaleY(var(--chapter-progress)); transform-origin: top; }
-#chapters.chapters-pinned .chapter-journey { min-height: calc(var(--chapter-frame-height) + var(--chapter-travel)); }
-#chapters.chapters-pinned .chapter-frame { position: sticky; top: var(--chapter-top); min-height: var(--chapter-frame-height); }
+/* The scroll track includes a full screen, not just the shorter reading content.
+   The following section stays below that screen until the final chapter releases. */
+#chapters.chapters-pinned .chapter-journey { min-height: calc(var(--chapter-stage-height) + var(--chapter-travel)); }
+#chapters.chapters-pinned .chapter-frame { position: sticky; top: var(--chapter-top); min-height: var(--chapter-stage-height); }
 /* A second measured fit uses tighter spacing, with the same font sizes and
    complete evidence. The introduction remains part of the pinned composition. */
 #chapters.chapters-compact {

@@ -212,7 +212,7 @@
     chaptersPinned = false;
     chapters.classList.remove('chapters-pinned', 'chapters-measuring', 'chapters-compact');
     for (const property of ['--chapter-identity-height', '--chapter-proof-height',
-      '--chapter-content-height', '--chapter-nav-top', '--chapter-frame-height', '--chapter-travel', '--chapter-light-anchor']) {
+      '--chapter-content-height', '--chapter-nav-top', '--chapter-stage-height', '--chapter-travel', '--chapter-light-anchor']) {
       chapters.style.removeProperty(property);
     }
     chapterTop = navOffset();
@@ -230,6 +230,11 @@
     });
 
     if (!motion.matches && window.innerWidth >= 1120) {
+      // Dock the complete stage at the navigation edge. Its own reading inset
+      // preserves the established content position inside that full screen.
+      const readingInset = parseFloat(getComputedStyle(chapters).getPropertyValue('--chapter-reading-inset'));
+      chapterTop = navOffset() - readingInset;
+      chapters.style.setProperty('--chapter-top', `${chapterTop}px`);
       chapters.classList.add('chapters-measuring');
       function measureFrame() {
         for (const property of ['--chapter-identity-height', '--chapter-proof-height', '--chapter-content-height']) {
@@ -258,7 +263,7 @@
         // with the frame while the section enters or leaves the viewport.
         const shellOffset = chapterFrame.querySelector('.chapter-shell').getBoundingClientRect().top - chapterFrame.getBoundingClientRect().top;
         chapters.style.setProperty('--chapter-light-anchor', `${chapterTop + shellOffset}px`);
-        chapters.style.setProperty('--chapter-frame-height', `${frame}px`);
+        chapters.style.setProperty('--chapter-stage-height', `${window.innerHeight - chapterTop}px`);
         chapters.style.setProperty('--chapter-travel', `${chapterTravel}px`);
         chapters.classList.add('chapters-pinned');
         chapterNav.setAttribute('role', 'tablist');
@@ -269,7 +274,11 @@
           tabs[i].setAttribute('role', 'tab');
           tabs[i].setAttribute('aria-controls', panel.id);
         });
-      } else chapters.classList.remove('chapters-compact');
+      } else {
+        chapters.classList.remove('chapters-compact');
+        chapterTop = navOffset();
+        chapters.style.setProperty('--chapter-top', `${chapterTop}px`);
+      }
       chapters.classList.remove('chapters-measuring');
     }
     chapterLayoutSize = `${window.innerWidth}:${window.innerHeight}`;
@@ -337,7 +346,7 @@
     if (['#arc', '#chapters'].includes(window.location.hash)) {
       if (window.location.hash === '#arc') history.replaceState(null, '', `${location.pathname}${location.search}#chapters`);
       activate(0);
-      instantScroll(chapters.getBoundingClientRect().top + window.scrollY - navOffset());
+      instantScroll(journey.getBoundingClientRect().top + window.scrollY - chapterTop);
     } else if (chapterIndex >= 0) {
       if (chaptersPinned) chooseChapter(chapterIndex, false);
       else {

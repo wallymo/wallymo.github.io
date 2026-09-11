@@ -73,9 +73,11 @@ making a local revision commit. Publishing remains a separate decision.
 The section introduction is a compact opening band: heading on the left and the
 existing sentence on the right at desktop widths, stacked on smaller screens.
 Include the opening band in the sticky frame, so the intro, identity, navigation,
-and entire Proof file remain together in one desktop viewport. Use 24px frame
-padding and a 24px gap below the intro where the complete composition fits. A
-second measured layout uses 16px frame padding and gap, 20px Proof file padding,
+and entire Proof file remain together in one desktop viewport. Dock the stage at
+the navigation's bottom edge and fill the remaining viewport height. Keep a 24px
+reading inset inside its top edge, then use 24px frame padding and a 24px gap below
+the intro where the complete composition fits. A second measured layout uses
+16px frame padding and gap, 20px Proof file padding,
 and tighter evidence spacing. Font sizes and all evidence remain unchanged.
 During desktop pinning, the active chapter identity sits left of the steady Proof file window:
 96–112px Syne numbers, a quiet total, 40–44px two-line chapter names, and clay dates.
@@ -96,9 +98,13 @@ presenting the latest selected state.
 Measure the entire frame, including the introduction, all identities, navigation,
 and the tallest Proof file, before enabling pinning at widths of at least 1120px.
 Try normal spacing first, then compact spacing. Reserve the fixed navigation and
-24px beneath the frame; never scale text or clip evidence to pass the fit check.
-Start scroll progression at the whole journey frame. Preserve the selected chapter
-when switching layouts.
+24px beneath the reading content; never scale text or clip evidence to pass the fit check.
+Start scroll progression when the stage docks below the navigation. Size the
+journey to the full stage height plus chapter travel, not the shorter content
+height. The following section must remain below the viewport throughout pinning;
+after the last chapter, the whole stage moves out as the next section moves in
+at their shared edge. Do not resize the stage during scrolling. Preserve the
+selected chapter when switching layouts.
 If the complete arrangement cannot fit, show all three chapter blocks in a single
 column with 48px gaps, 64px numbers, and 32px names. Navigation becomes native anchor
 links; the active indicator follows each chapter crossing the upper third of the
