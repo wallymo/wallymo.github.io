@@ -212,7 +212,7 @@
     chaptersPinned = false;
     chapters.classList.remove('chapters-pinned', 'chapters-measuring', 'chapters-compact');
     for (const property of ['--chapter-identity-height', '--chapter-proof-height',
-      '--chapter-content-height', '--chapter-nav-top', '--chapter-frame-height', '--chapter-travel']) {
+      '--chapter-content-height', '--chapter-nav-top', '--chapter-frame-height', '--chapter-travel', '--chapter-light-anchor']) {
       chapters.style.removeProperty(property);
     }
     chapterTop = navOffset();
@@ -254,6 +254,10 @@
       if (frame <= available) {
         chaptersPinned = true;
         chapterTravel = Math.round(window.innerHeight * 1.25);
+        // Resolve the settled light position once per layout. It must not ride
+        // with the frame while the section enters or leaves the viewport.
+        const shellOffset = chapterFrame.querySelector('.chapter-shell').getBoundingClientRect().top - chapterFrame.getBoundingClientRect().top;
+        chapters.style.setProperty('--chapter-light-anchor', `${chapterTop + shellOffset}px`);
         chapters.style.setProperty('--chapter-frame-height', `${frame}px`);
         chapters.style.setProperty('--chapter-travel', `${chapterTravel}px`);
         chapters.classList.add('chapters-pinned');

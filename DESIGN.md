@@ -106,11 +106,15 @@ usable viewport. Reduced motion and no JavaScript retain this readable sequence.
 
 Keep the parchment #F0EBE3 background steady. Bulbs use the shared circular field at
 clay core/shoulder .22/.094 and taupe .18/.077, with no chapter-dependent changes.
-Attach the field behind the pinned shell, with clay beside the chapter number and
-taupe at the window's outer edge, so the light stays present during scrolling.
+For pinned desktop layouts, keep the field fixed to the viewport and clip it to
+the Chapters section. Measure its settled position beside the number and window
+once per layout, including the navigation and intro offsets. The light must stay
+stationary during section entry, pinning, and release; do not attach it to the
+moving content or add scroll-driven background transforms.
 On compact screens, each chapter block owns the same field. Let the light extend
 up behind the intro; clip decorative spill at the section boundary with overflow:
-clip, which does not create a scrolling ancestor. Keep all fields in the shell's
-background layer and the intro above it; never tint the cream Proof file or copy.
+clip, which does not create a scrolling ancestor. A section clip-path also confines
+the fixed desktop field. Keep desktop light below the whole section's content and
+static fields below the shell content; never tint the cream Proof file or copy.
 Chapter identity must remain unmistakable even with decorative backgrounds disabled.
 Proof files remain clear of background icons.

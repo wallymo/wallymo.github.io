@@ -197,9 +197,10 @@ nav .nav-cta:hover, .btn-primary:hover { background: var(--accent-hover); }
 .chapter-frame { max-width: var(--max-w); margin: 0 auto; }
 .chapter-shell { position: relative; isolation: isolate; max-width: var(--max-w); margin: 0 auto; padding-bottom: 96px; }
 .chapter-state { position: relative; scroll-margin-top: var(--chapter-top, 80px); }
-/* One steady field follows the pinned composition. In the readable sequence,
-   each chapter owns the same field beside its identity and window. */
-.chapter-state::before, #chapters.chapters-pinned .chapter-shell::before {
+/* Desktop light stays fixed throughout entry, pinning, and release. The readable
+   sequence retains a field beside each chapter's identity and window. */
+.chapter-state::before, #chapters.chapters-pinned::before {
+  --chapter-light-origin: var(--chapter-bulb-lift);
   content: '';
   position: absolute;
   top: calc(var(--chapter-bulb-lift) * -1);
@@ -209,14 +210,20 @@ nav .nav-cta:hover, .btn-primary:hover { background: var(--accent-hover); }
   z-index: -1;
   pointer-events: none;
   background-image:
-    radial-gradient(circle var(--bulb-radius) at 8% calc(var(--chapter-bulb-lift) + 104px),
+    radial-gradient(circle var(--bulb-radius) at 8% calc(var(--chapter-light-origin) + 104px),
       rgb(var(--bulb-clay) / var(--bulb-core)) 0%,
       rgb(var(--bulb-clay) / var(--bulb-shoulder)) 35%,
       rgb(var(--bulb-clay) / 0) 100%),
-    radial-gradient(circle var(--bulb-radius) at 96% calc(var(--chapter-bulb-lift) + 64px),
+    radial-gradient(circle var(--bulb-radius) at 96% calc(var(--chapter-light-origin) + 64px),
       rgb(var(--bulb-taupe) / var(--bulb-secondary-core)) 0%,
       rgb(var(--bulb-taupe) / var(--bulb-secondary-shoulder)) 35%,
       rgb(var(--bulb-taupe) / 0) 100%);
+}
+#chapters.chapters-pinned { clip-path: inset(0); }
+#chapters.chapters-pinned::before {
+  --chapter-light-origin: var(--chapter-light-anchor);
+  position: fixed;
+  inset: 0;
 }
 #chapters.chapters-pinned .chapter-state::before { content: none; }
 @media (min-width: 1120px) {
