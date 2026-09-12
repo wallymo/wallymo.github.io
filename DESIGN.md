@@ -87,8 +87,9 @@ for supporting text. The window retains its original cream and clay colors.
 
 Connected navigation sits under the desktop identity. Completed circles fill, the
 active circle has a ring, and the line fills through the active chapter. The active
-circle also has a faint clay halo that breathes over 3.8 seconds using opacity
-and a small scale change. Do not pulse the line or labels. Reduced motion retains
+circle also has a visible clay halo that breathes over 3.8 seconds, moving from
+20% to 78% opacity and .9 to 1.5 scale with a soft glow. Keep the center dot steady;
+do not pulse the line or labels. Reduced motion retains
 the static ring and removes the halo. A chapter change moves the incoming identity
 16px over 320ms with the existing ease; backward
 navigation reverses direction. Evidence has a short reading-content transition,

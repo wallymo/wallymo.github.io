@@ -271,13 +271,13 @@ nav .nav-cta:hover, .btn-primary:hover { background: var(--accent-hover); }
   height: 18px;
   border: 1px solid var(--chapter-accent);
   border-radius: 50%;
-  box-shadow: 0 0 8px 2px rgb(128 56 25 / .32);
+  box-shadow: 0 0 10px 3px rgb(128 56 25 / .45);
   pointer-events: none;
   animation: chapter-current-glow 3.8s ease-in-out infinite;
 }
 @keyframes chapter-current-glow {
-  0%, 100% { opacity: .12; transform: scale(.92); }
-  50% { opacity: .32; transform: scale(1.16); }
+  0%, 100% { opacity: .2; transform: scale(.9); }
+  50% { opacity: .78; transform: scale(1.5); }
 }
 .chapter-tab:focus-visible { outline: 2px solid var(--chapter-accent); outline-offset: 5px; }
 .chapter-state:focus-visible { outline: 2px solid var(--chapter-accent); outline-offset: 8px; }
