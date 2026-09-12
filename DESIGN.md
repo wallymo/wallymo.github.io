@@ -70,8 +70,12 @@ making a local revision commit. Publishing remains a separate decision.
 
 ## Chapter identity
 
-The section introduction is a compact opening band: heading on the left and the
-existing sentence on the right at desktop widths, stacked on smaller screens.
+The section introduction is a compact opening band on the 1140px content rail.
+At desktop widths, the heading occupies one line with the three-sentence summary
+on one line beneath it. Keep the existing type sizes; allow natural wrapping on
+smaller screens. Bold only the summary sentence matching `data-active-chapter`,
+so scroll, tabs, and keyboard navigation share the existing chapter state. Reserve
+each sentence's bold width to prevent movement when emphasis changes.
 Include the opening band in the sticky frame, so the intro, identity, navigation,
 and entire Proof file remain together in one desktop viewport. Dock the stage at
 the navigation's bottom edge and fill the remaining viewport height. Keep a 24px

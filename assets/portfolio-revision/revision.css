@@ -193,6 +193,13 @@ nav .nav-cta:hover, .btn-primary:hover { background: var(--accent-hover); }
 .chapter-intro h2 { margin: 0 0 24px; font-family: var(--font-display); font-weight: 700; }
 .chapter-intro h2 span { display: block; }
 .chapter-intro > p { max-width: 55ch; margin: 0; color: var(--chapter-quiet-text); font-size: 1.125rem; line-height: 1.6; }
+.chapter-summary-clause { display: inline-grid; vertical-align: bottom; max-width: 100%; }
+.chapter-summary-clause > span, .chapter-summary-clause::after { grid-area: 1 / 1; }
+/* Reserve the bold width so changing chapters never nudges the other sentences. */
+.chapter-summary-clause::after { content: attr(data-copy); visibility: hidden; font-weight: 700; }
+#chapters[data-active-chapter="account"] .chapter-summary-clause[data-chapter="account"],
+#chapters[data-active-chapter="ux"] .chapter-summary-clause[data-chapter="ux"],
+#chapters[data-active-chapter="ai"] .chapter-summary-clause[data-chapter="ai"] { font-weight: 700; color: var(--ink); }
 .chapter-eyebrow { display: block; margin-bottom: 24px; color: var(--chapter-accent); font-size: .8125rem; font-weight: 600; letter-spacing: .09em; text-transform: uppercase; }
 .chapter-journey { overflow-anchor: none; }
 .chapter-frame { max-width: var(--max-w); margin: 0 auto; }
@@ -228,10 +235,11 @@ nav .nav-cta:hover, .btn-primary:hover { background: var(--accent-hover); }
 }
 #chapters.chapters-pinned .chapter-state::before { content: none; }
 @media (min-width: 1120px) {
-  .chapter-intro { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); grid-template-areas: 'eyebrow .' 'title summary'; gap: 16px 64px; padding-bottom: 24px; }
+  .chapter-intro { display: grid; grid-template-columns: minmax(0, 1fr); grid-template-areas: 'eyebrow' 'title' 'summary'; gap: 16px; padding-bottom: 24px; }
   .chapter-intro .chapter-eyebrow { grid-area: eyebrow; margin: 0; }
   .chapter-intro h2 { grid-area: title; margin: 0; }
-  .chapter-intro > p { grid-area: summary; align-self: end; max-width: 40ch; }
+  .chapter-intro h2 span { display: inline; }
+  .chapter-intro > p { grid-area: summary; max-width: none; }
 }
 .chapter-state + .chapter-state { margin-top: 48px; }
 .chapter-identity { margin-bottom: 24px; }
