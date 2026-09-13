@@ -4027,7 +4027,15 @@ test(
         )?.[1];
         assert.ok(projectNavigation);
         assert.equal((projectNavigation.match(/<a\b/g) || []).length, 2);
-        assert.doesNotMatch(html, /<div class="label">Next Project<\/div>/);
+        assert.match(html, /<div class="label">Next Project<\/div>/);
+        assert.match(
+          html,
+          new RegExp(
+            `<a class="next-project-preview" href="${
+              scopedOutputs[(projectIndex + 1) % scopedOutputs.length]
+            }">`
+          )
+        );
         if (project === 'project-02.html') {
           assert.doesNotMatch(
             html,

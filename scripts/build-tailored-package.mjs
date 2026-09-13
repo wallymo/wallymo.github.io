@@ -50,7 +50,10 @@ import {
   buildCoverLetterHtml,
   buildCoverLetterMarkdown,
 } from './lib/cover-letter-template.mjs';
-import { addWorkCardMedia } from './lib/project-card-media.mjs';
+import {
+  PROJECT_CARD_MEDIA,
+  addWorkCardMedia,
+} from './lib/project-card-media.mjs';
 import { renderResumePdf } from './render-resume-pdf.mjs';
 import { runAtsCheck } from './ats-check.mjs';
 import { runCoverLetterCheck } from './cover-letter-check.mjs';
@@ -242,13 +245,16 @@ function canonicalProjectDetails(project) {
     .filter(Boolean)
     .slice(0, 4);
   return {
-    title: text(/<h1>([\s\S]*?)<\/h1>/, project.replace(/\.html$/, '')),
+    title: text(
+      /<h1\b[^>]*>([\s\S]*?)<\/h1>/i,
+      project.replace(/\.html$/, '')
+    ),
     role: text(
-      /<div class="project-role">([\s\S]*?)<\/div>/,
+      /<div\b(?=[^>]*\bclass="[^"]*\bproject-role\b[^"]*")[^>]*>([\s\S]*?)<\/div>/i,
       'Selected portfolio work'
     ),
     summary: text(
-      /<p class="project-summary">([\s\S]*?)<\/p>/,
+      /<p\b(?=[^>]*\bclass="[^"]*\bproject-summary\b[^"]*")[^>]*>([\s\S]*?)<\/p>/i,
       'A selected proof point for this role.'
     ),
     tags,
@@ -313,7 +319,12 @@ export function buildWorkGrid(indexHtml, config) {
     .join('\n\n      ');
 }
 
-function buildRouteLocalNextProject(project, config, titlesByProject) {
+function buildRouteLocalNextProject(
+  project,
+  config,
+  titlesByProject,
+  { richPreview = false } = {}
+) {
   const index = config.selectedProjects.indexOf(project);
   const previousProject =
     config.selectedProjects[
@@ -327,6 +338,45 @@ function buildRouteLocalNextProject(project, config, titlesByProject) {
     titlesByProject.get(previousProject) || previousProject.replace(/\.html$/, '');
   const nextTitle =
     titlesByProject.get(nextProject) || nextProject.replace(/\.html$/, '');
+
+  if (richPreview) {
+    const media = PROJECT_CARD_MEDIA[nextProject.replace(/\.html$/, '')];
+    if (!media) {
+      throw new Error(
+        `No project card media registered for next-project preview ${nextProject}`
+      );
+    }
+    return [
+      '<!-- NEXT -->',
+      '<div class="next-project">',
+      '  <div class="next-project-inner" data-motion-reveal>',
+      '    <div class="next-project-heading">',
+      '      <div class="label">Next Project</div>',
+      '      <span class="next-project-number">Continue exploring</span>',
+      '    </div>',
+      `    <a class="next-project-preview" href="${escapeHtml(nextHref)}">`,
+      '      <span class="next-project-copy">',
+      `        <strong>${escapeHtml(nextTitle)}</strong>`,
+      '        <span>Explore next case <b aria-hidden="true">&rarr;</b></span>',
+      '      </span>',
+      '      <span class="next-project-media">',
+      `        <img src="../${escapeHtml(media.src)}" alt="${escapeHtml(
+        media.alt
+      )}" width="${media.width}" height="${media.height}" loading="lazy" decoding="async">`,
+      '      </span>',
+      '    </a>',
+      '    <div class="nav-projects">',
+      `      <a href="${escapeHtml(previousHref)}">&larr; ${escapeHtml(
+        previousTitle
+      )}</a>`,
+      `      <a href="${escapeHtml(nextHref)}">${escapeHtml(
+        nextTitle
+      )} &rarr;</a>`,
+      '    </div>',
+      '  </div>',
+      '</div>',
+    ].join('\n');
+  }
 
   return [
     '<!-- NEXT -->',
@@ -699,6 +749,43 @@ function setRouteLocalProjectNumber(html, routeLocalNumber, project) {
       `<div class="project-number">${routeLocalNumber}</div>`
     );
   }
+
+  const richProjectShell =
+    /<div\b(?=[^>]*\bclass="[^"]*\bproject-hero-card\b[^"]*")[^>]*>/i.test(
+      html
+    );
+  const projectIndexPattern =
+    /<div\b(?=[^>]*\bclass="[^"]*\bproject-index\b[^"]*")[^>]*>/i;
+  const projectIndexMatch = richProjectShell
+    ? html.match(projectIndexPattern)
+    : null;
+  if (projectIndexMatch?.index !== undefined) {
+    const start = projectIndexMatch.index;
+    const block = extractBalancedTagBlock(html, start, 'div');
+    const closeIndex = block.lastIndexOf('</div>');
+    const lineStart = html.lastIndexOf('\n', start) + 1;
+    const indentation = html.slice(lineStart, start).match(/^\s*/)?.[0] || '';
+    const childIndentation = `${indentation}  `;
+    const updatedBlock = `${block.slice(0, closeIndex).trimEnd()}\n${childIndentation}<div class="project-number">${routeLocalNumber}</div>\n${indentation}</div>`;
+    return `${html.slice(0, start)}${updatedBlock}${html.slice(
+      start + block.length
+    )}`;
+  }
+
+  const projectEyebrowPattern =
+    /<([a-z][a-z0-9]*)\b(?=[^>]*\bclass="[^"]*\bproject-eyebrow\b[^"]*")[^>]*>([\s\S]*?)<\/\1>/i;
+  if (richProjectShell && projectEyebrowPattern.test(html)) {
+    return html.replace(
+      projectEyebrowPattern,
+      (_match, _tagName, eyebrowHtml) => [
+        '<div class="project-index">',
+        `  <span class="project-index-label">${eyebrowHtml.trim()}</span>`,
+        `  <div class="project-number">${routeLocalNumber}</div>`,
+        '</div>',
+      ].join('\n')
+    );
+  }
+
   return replaceFirst(
     html,
     /(<div\b[^>]*class="[^"]*\bproject-hero\b[^"]*"[^>]*>)/,
@@ -738,12 +825,18 @@ export function buildScopedProjectHtml(project, config, paths, index, titlesByPr
   const routeLocalNumber = String(index + 1).padStart(2, '0');
   const scopedFilename = scopedProjectFilename(config, project);
   const scopedUrl = `${PUBLIC_BASE}${paths.slug}/${scopedFilename}`;
+  const sourceHtml = readFileSync(resolveRepoPath(project), 'utf8');
   const nextProjectHtml = buildRouteLocalNextProject(
     project,
     config,
-    titlesByProject
+    titlesByProject,
+    {
+      richPreview:
+        /<a\b(?=[^>]*\bclass="[^"]*\bnext-project-preview\b[^"]*")[^>]*>/i.test(
+          sourceHtml
+        ),
+    }
   );
-  const sourceHtml = readFileSync(resolveRepoPath(project), 'utf8');
 
   const scopedHtmlWithRefs = sourceHtml
     .replace(/\b(href|src)="assets\//g, '$1="../assets/')

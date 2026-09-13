@@ -1,13 +1,13 @@
 # ATS-to-Human Job Application Playbook
 
-**Status:** Workflow v2 revision 6 implemented; legacy packages remain historical
-**Assessed:** 2026-07-15; revision 6 implemented 2026-07-29
+**Status:** Workflow v2 revision 7 implemented; legacy packages remain historical
+**Assessed:** 2026-07-15; revision 7 current as of 2026-09-13
 **Scope:** Wally Mostafa's JD-to-resume-to-portfolio-to-application workflow
 **Companion audit:** `WORKFLOW_ENHANCEMENTS.md`
 
 This document expands the technical backlog in `WORKFLOW_ENHANCEMENTS.md` into an end-to-end application system. The original document should remain as the implementation audit. This playbook becomes the strategic source of truth for deciding which roles to pursue, building a truthful ATS-readable package, reaching a person, and learning from outcomes.
 
-Workflow v2 revision 6 applies to new and intentionally rebuilt packages. Build with `node scripts/build-tailored-package.mjs --config scripts/packages/<slug>.json`, publish the scoped route, config, manifest, resume PDF, and any required cover-letter files, then run `node scripts/verify-tailored-route.mjs <slug>`. Complete the private submission gate with `node scripts/application-ledger.mjs ready ...` at the first accessible pre-submission point. Historical package and ledger records remain valid until intentionally reused.
+Workflow v2 revision 7 applies to new and intentionally rebuilt packages. Build with `node scripts/build-tailored-package.mjs --config scripts/packages/<slug>.json`, publish the scoped route, config, manifest, resume PDF, and any required cover-letter files, then run `node scripts/verify-tailored-route.mjs <slug>`. Complete the private submission gate with `node scripts/application-ledger.mjs ready ...` at the first accessible pre-submission point. Historical package and ledger records remain valid until intentionally reused.
 
 The goal is not to “trick” an ATS. The goal is to make a qualified application:
 
@@ -543,7 +543,7 @@ Do not use this as the primary outcome tracker.
 
 Purpose: one record for each actual submission.
 
-The portfolio repository is public, so the real ledger is ignored by Git. Commit only `scripts/applications.example.json` and `scripts/schemas/applications.schema.json`. Use `scripts/application-ledger.mjs ready` for a private pre-submission snapshot, then `record` only after visible confirmation. Use `event`, `assessment`, `outreach`, and `report` for later outcomes. Revisions 5 and 6 retain their contract revision, require matching readiness, and recompute readiness, duplicate, attachment, and live-package checks before writing. Revision 6 also blocks readiness when a recommended cover letter was not included.
+The portfolio repository is public, so the real ledger is ignored by Git. Commit only `scripts/applications.example.json` and `scripts/schemas/applications.schema.json`. Use `scripts/application-ledger.mjs ready` for a private pre-submission snapshot, then `record` only after visible confirmation. Use `event`, `assessment`, `outreach`, and `report` for later outcomes. Revisions 5, 6, and 7 retain their contract revision, require matching readiness, and recompute readiness, duplicate, attachment, and live-package checks before writing. Revision 6 or 7 also blocks readiness when a recommended cover letter was not included.
 
 Suggested shape:
 
