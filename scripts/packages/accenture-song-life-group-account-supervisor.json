@@ -435,13 +435,13 @@
     ],
     "experienceSections": [
       {
-        "heading": "Healthcare Account Management",
+        "heading": "Relevant Experience",
         "roleIds": [
           "account-management"
         ]
       },
       {
-        "heading": "Leadership & Recent Experience",
+        "heading": "Continued Experience",
         "roleIds": [
           "hedgehox",
           "one-block-away",
@@ -631,8 +631,8 @@
     "humanizerVersion": "2.2.0",
     "mode": "surface-only",
     "status": "passed",
-    "reviewedAt": "2026-09-13T23:03:18.166Z",
-    "copySha256": "373f5e50abbbe5f48b5479764fd18a67abcebdc300bae083e794fe8883d0a8c2",
+    "reviewedAt": "2026-09-13T23:36:48.412Z",
+    "copySha256": "b79079062c4b636e75c0c8a9a06b680a4824b40bee80df148c1578f3fbbf733f",
     "preserved": [
       "content",
       "structure",
@@ -670,8 +670,8 @@
   },
   "qa": {
     "status": "qa-passed",
-    "builtAt": "2026-09-13T23:03:32.463Z",
-    "configInputSha256": "e275bd47e123dbfb727c38fbc3750dd75b7ad4d9730f9a3e2d98651493bde670",
+    "builtAt": "2026-09-13T23:37:03.147Z",
+    "configInputSha256": "ab5f3fc52d8c429af0974f6c1d20c3f747a594b27ef23b4eaefd6b8dfa1576e5",
     "sourceResumeSha256": "2265313e78b596a2b37d6d8f9a95081e4321b4047f142a5f0ddf22449cab4b9c",
     "resumeFoundation": {
       "id": "wally-mostafa-resume-2026-07-03",
@@ -693,7 +693,7 @@
     },
     "artifactHashes": {
       "routeSha256": "d8359594dcc194e8ca05c430862ed98f7a19b830721529d81b2d6592ad62accc",
-      "resumePdfSha256": "d97e0035ace07b3f690fe64cba2c17b33c7c613cb1fed2d9ac47fdcbb7452396",
+      "resumePdfSha256": "2bc2e7a12066f80164a0eb052e5d57de4d3fc39ab56c6f078827f7fd816b7a81",
       "coverLetterPdfSha256": null,
       "coverLetterMarkdownSha256": null,
       "scopedProjectSha256": {
@@ -719,7 +719,7 @@
       "ok": true,
       "pdfPath": "output/pdf/Wally-Mostafa-Accenture-Song-Life-Group-Account-Supervisor-Resume.pdf",
       "pageCount": 2,
-      "fileSize": 81821,
+      "fileSize": 81599,
       "annotations": [
         {
           "page": 1,
@@ -912,8 +912,8 @@
       "status": "passed",
       "version": "2.2.0",
       "mode": "surface-only",
-      "reviewedAt": "2026-09-13T23:03:18.166Z",
-      "copySha256": "373f5e50abbbe5f48b5479764fd18a67abcebdc300bae083e794fe8883d0a8c2",
+      "reviewedAt": "2026-09-13T23:36:48.412Z",
+      "copySha256": "b79079062c4b636e75c0c8a9a06b680a4824b40bee80df148c1578f3fbbf733f",
       "reviewMethod": "humanizer-skill",
       "semanticPassAttested": true,
       "staticChecksPassed": true
