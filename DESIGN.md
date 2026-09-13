@@ -17,12 +17,20 @@ gutters. Only project cards extend to a 1280px gallery rail. Preserve the hero's
 established composition. Mobile gutters are 24px, reducing to 16px below 360px.
 Use the compact navigation menu below 1120px, before desktop links begin to wrap.
 
+The client logo strip stays static, with centered rows of six on desktop, four on tablet, and three on phones. Balance each existing mark by visible size and optical center; preserve the original artwork. Keep the shared monochrome tone at rest and reveal original brand colors on hover, without moving or resizing the marks. Kinesso uses its artwork's pink on hover so its white lettering stays visible on the light surface.
+
 The chapter story sits inside a warm digital “Proof file” window with a straight title bar
 showing the active chapter and dates. The section intro and chapter navigation stay outside.
 Keep evidence rows separated by rules within the panel.
 How I Build remains hidden in the revision; Chapters flows directly to Capabilities.
-Capabilities keep the open two-column structure and first-person verbs. Recognition
+Capabilities use the approved Fields layout: four illustrated columns on desktop, two columns on tablet, and a single stack on mobile. Use the lowercase headings discover, design, build, and lead. Follow each heading with one short, semibold takeaway and a quieter supporting sentence. Keep the illustrations compact, all nine proof points, and one project link per capability. Emphasize meaningful proof figures; align desktop evidence and work links. Keep AI-assisted development explicit. Use one structural divider between fields; work links have no bottom rule. Recognition
 is one ruled strip, with separate title/detail blocks and stacked mobile entries.
+The heading leads directly into the awards. Hovering the Red Dot and either Indigo
+link brings back the earlier concept's circular logo badge beside the pointer.
+Track movement directly with a 4px gap and vertical centering; no trailing or
+scale animation that changes the perceived distance. Flip sides only at an edge.
+Keep native link behavior and keyboard focus; omit the decorative follower for
+touch and reduced motion, and clear it on pointer exit, scrolling, or window blur.
 
 ## Color and surface roles
 
@@ -67,6 +75,50 @@ destinations. New JD routes inherit the visual shell; existing packages are not
 rebuilt. Review the whole page in Chrome and Safari and test repeated loads,
 resizing, reduced motion, contrast, and three/four/five-project fixtures before
 making a local revision commit. Publishing remains a separate decision.
+
+## Project-page shell and future JD packages
+
+All nine canonical `project-01.html` through `project-09.html` sources use
+`assets/portfolio-revision/project-page-motion-v1.css` and its companion script.
+Project 01 is the approved control. The other eight opt into `project-story-v1`
+for their existing case-study content; do not force them into the pharma-specific
+initiative map or Pharma OS story. Keep their original claims and evidence.
+
+Use the homepage hero atmosphere renderer unchanged. The shared shell pairs a
+Syne title and role summary with actual project imagery on a dark surface. Open
+intro sections use a heading on the left and ruled evidence rows on the right;
+stack these on mobile. Preserve the shared warm paper, clay, image radii, and
+1140px reading rail. Long display titles use container-relative sizing so whole
+words remain readable at narrow widths without a JavaScript text-fit dependency.
+
+Project content uses the approved Editorial Handoff at 0.5 speed: media enters
+with 12px of horizontal movement over 960ms; copy rises 6px over 720ms with
+200ms, 340ms, and 480ms offsets. Fades finish in 400ms, and the complete handoff
+finishes within 1200ms. Entries play once as content comes into view; media stays
+in normal document flow with no sticky image columns. Native scrolling, the hero
+entrance, and the existing bulb atmosphere remain unchanged. Lifecycle changes,
+reduced motion, disabled JavaScript, and keyboard focus must retain fully visible
+content. No extra preloaders, cursor effects, or scroll-jacking. The Pharma OS
+loop remains specific to Project 01, with its existing pause, offscreen, and
+reduced-motion handling.
+Product images declare width, height, and matching `--media-ratio` metadata so
+lazy loading reserves their actual space before the image arrives.
+
+Preserve `main#project-content`, `.site-nav`, the exact `.project-number` div
+hook on numbered canonical pages, and the outer `.next-project` div. Other
+Highlights remains unnumbered on the public source, but receives a route-local
+number inside its existing index row when included in a tailored selection.
+The scoped renderer must retain the rich next-project preview and derive its
+image, title, destination, and sequence from that package's selected projects.
+All shared asset references, resume links, logo/back links, and in-body project
+links must resolve inside the scoped package correctly, including project aliases.
+
+Run `node --test scripts/tests/*.test.mjs` after changing the shell or renderer.
+The rollout regression covers all nine sources plus reordered three-, four-, and
+five-project selections, including unfeatured work. Existing employer packages
+remain snapshots; do not rebuild them automatically. Commit workflow changes
+before using them to generate a real JD package, and keep package artifact commits
+separate. A local QA pass is not a pushed release, live verification, or submission.
 
 ## Chapter identity
 

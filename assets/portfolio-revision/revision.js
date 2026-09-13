@@ -1,4 +1,4 @@
-/* Progressive enhancement for the revision's selected work and career chapters. */
+/* Progressive enhancement for the revision's work, chapters, and award links. */
 (() => {
   'use strict';
   const work = document.getElementById('work');
@@ -401,4 +401,59 @@
     resizeFrame = requestAnimationFrame(setup);
   });
   motion.addEventListener('change', setup);
+})();
+
+// Decorative logo follower; the award names remain ordinary accessible links.
+(() => {
+  'use strict';
+  const cursor = document.querySelector('.award-cursor');
+  const targets = [...document.querySelectorAll('#awards [data-award-cursor]')];
+  if (!cursor || !targets.length) return;
+
+  const finePointer = matchMedia('(hover: hover) and (pointer: fine)');
+  const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
+  let controller;
+
+  function hide() {
+    cursor.classList.remove('is-visible');
+  }
+
+  function follow(event) {
+    if (event.pointerType === 'touch') return;
+    cursor.dataset.award = event.currentTarget.dataset.awardCursor;
+    // Track the pointer directly: easing made the gap vary with movement speed.
+    const gap = 4;
+    const size = cursor.offsetWidth;
+    const x = event.clientX + size + gap > innerWidth
+      ? event.clientX - size - gap : event.clientX + gap;
+    const y = Math.max(gap, Math.min(event.clientY - size / 2, innerHeight - size - gap));
+    cursor.style.transform = `translate3d(${x}px, ${y}px, 0)`;
+    cursor.classList.add('is-visible');
+  }
+
+  function setup() {
+    controller?.abort();
+    hide();
+    document.documentElement.classList.remove('award-cursor-enabled');
+    if (!finePointer.matches || reducedMotion.matches) return;
+
+    controller = new AbortController();
+    const options = { signal: controller.signal };
+    document.documentElement.classList.add('award-cursor-enabled');
+    targets.forEach(target => {
+      target.addEventListener('pointerenter', follow, options);
+      target.addEventListener('pointermove', follow, options);
+      target.addEventListener('pointerleave', hide, options);
+      target.addEventListener('pointercancel', hide, options);
+      target.addEventListener('click', hide, options);
+    });
+    window.addEventListener('scroll', hide, { ...options, passive: true });
+    window.addEventListener('resize', hide, options);
+    window.addEventListener('blur', hide, options);
+    document.addEventListener('keydown', hide, options);
+    document.addEventListener('visibilitychange', hide, options);
+  }
+  finePointer.addEventListener('change', setup);
+  reducedMotion.addEventListener('change', setup);
+  setup();
 })();

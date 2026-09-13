@@ -68,7 +68,94 @@ html, body { overflow-x: clip; }
 }
 .trust-strip, .how-i-build, .awards { background-color: var(--surface); }
 .capabilities { background-color: var(--surface-warm); }
-.trust-strip { --bulb-core: .17; --bulb-shoulder: .075; }
+/* Center the visible marks in equal cells; brand widths balance optical weight. */
+.trust-strip { --bulb-core: .17; --bulb-shoulder: .075; scroll-margin-top: 60px; }
+.trust-filters { position: absolute; width: 0; height: 0; overflow: hidden; pointer-events: none; }
+.trust-names {
+  --trust-columns: 6;
+  --trust-gap: 24px;
+  --logo-scale: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 24px var(--trust-gap);
+  max-width: var(--max-w);
+  margin: 0 auto;
+}
+.trust-logo {
+  flex: 0 1 calc((100% - (var(--trust-columns) - 1) * var(--trust-gap)) / var(--trust-columns));
+  min-width: 0;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  --logo-filter: brightness(0);
+  cursor: default;
+  -webkit-user-select: none;
+  user-select: none;
+}
+.trust-logo img {
+  display: block;
+  /* Let the parent handle hover; images should not activate Safari text selection. */
+  pointer-events: none;
+  -webkit-user-drag: none;
+  width: calc(var(--logo-width) * var(--logo-scale));
+  max-width: 100%;
+  height: auto;
+  max-height: 64px;
+  object-fit: contain;
+  filter: var(--logo-filter) opacity(.6);
+  transform: translateY(calc(var(--logo-y, 0px) * var(--logo-scale)));
+  transition: filter .25s ease;
+}
+/* Reveal the source artwork's original colors without changing size or position. */
+.trust-logo:hover img { filter: brightness(1) opacity(1); }
+.trust-logo--mudder:hover img { filter: url(#trust-mudder-ink) brightness(1) opacity(1); }
+/* Keep Kinesso's silhouette in one paint layer. Safari can drop an animated SVG filter. */
+.trust-logo--kinesso { display: grid; place-items: center; }
+.trust-logo--kinesso img, .trust-logo--kinesso::after { grid-area: 1 / 1; }
+/* The image retains its dimensions and accessible name; the mask supplies the visible ink. */
+.trust-logo--kinesso img { opacity: 0; }
+.trust-logo--kinesso::after {
+  content: '';
+  width: calc(var(--logo-width) * var(--logo-scale));
+  max-width: 100%;
+  aspect-ratio: 666 / 240;
+  background-color: rgb(0 0 0 / .6);
+  -webkit-mask: url('../imagery/logos/logo-kinesso-clean.webp') center / contain no-repeat;
+  mask: url('../imagery/logos/logo-kinesso-clean.webp') center / contain no-repeat;
+  pointer-events: none;
+  transition: background-color .25s ease;
+}
+.trust-logo--kinesso:hover::after { background-color: #ff00c4; }
+.trust-logo--sony { --logo-width: 108px; }
+.trust-logo--amazon { --logo-width: 120px; --logo-y: 4px; }
+.trust-logo--nestle { --logo-width: 84px; --logo-y: -4px; }
+.trust-logo--novartis { --logo-width: 154px; --logo-y: -3px; }
+.trust-logo--merck { --logo-width: 132px; }
+.trust-logo--pfizer { --logo-width: 104px; }
+.trust-logo--kinesso { --logo-width: 114px; }
+/* This source's ink alpha peaks at 20%; restore it before applying the shared tone. */
+.trust-logo--mudder { --logo-width: 118px; --logo-filter: url(#trust-mudder-ink) brightness(0); }
+.trust-logo--pdi { --logo-width: 80px; --logo-y: -3px; }
+.trust-logo--ipg { --logo-width: 92px; }
+.trust-logo--tunnel { --logo-width: 80px; }
+@media (max-width: 1100px) {
+  .trust-names { --trust-columns: 4; gap: 20px var(--trust-gap); }
+}
+@media (max-width: 640px) {
+  .trust-strip { padding-block: 32px; }
+  .trust-names { --trust-columns: 3; --trust-gap: 12px; --logo-scale: .8; gap: 16px var(--trust-gap); }
+  .trust-logo { height: 64px; }
+  .trust-logo img { max-height: 54px; }
+}
+@media (max-width: 359px) {
+  .trust-names { --logo-scale: .72; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .trust-logo img, .trust-logo--kinesso::after { transition: none; }
+}
 nav .nav-cta:hover, .btn-primary:hover { background: var(--accent-hover); }
 #work {
   position: relative;
@@ -192,7 +279,7 @@ nav .nav-cta:hover, .btn-primary:hover { background: var(--accent-hover); }
 .chapter-intro { position: relative; z-index: 1; max-width: var(--max-w); margin: 0 auto; padding: 64px 0 32px; }
 .chapter-intro h2 { margin: 0 0 24px; font-family: var(--font-display); font-weight: 700; }
 .chapter-intro h2 span { display: block; }
-.chapter-intro > p { max-width: 55ch; margin: 0; color: var(--chapter-quiet-text); font-size: 1.125rem; line-height: 1.6; }
+.chapter-intro > p { max-width: 55ch; margin: 0; padding-bottom: 16px; color: var(--chapter-quiet-text); font-size: 1.125rem; line-height: 1.6; }
 .chapter-summary-clause { display: inline-grid; vertical-align: bottom; max-width: 100%; }
 .chapter-summary-clause > span, .chapter-summary-clause::after { grid-area: 1 / 1; }
 /* Reserve the bold width so changing chapters never nudges the other sentences. */
@@ -232,6 +319,8 @@ nav .nav-cta:hover, .btn-primary:hover { background: var(--accent-hover); }
   --chapter-light-origin: var(--chapter-light-anchor);
   position: fixed;
   inset: 0;
+  /* Keep the stationary light below the measured nav edge without shifting its center. */
+  clip-path: inset(var(--chapter-top, 0px) 0 0);
 }
 #chapters.chapters-pinned .chapter-state::before { content: none; }
 @media (min-width: 1120px) {
@@ -358,11 +447,125 @@ nav .nav-cta:hover, .btn-primary:hover { background: var(--accent-hover); }
 }
 .hib-tool:last-child { padding-right: 0; margin-right: 0; border-right: 0; }
 .hib-tool--accent { color: var(--accent-text); }
-.cap-item h3 { font-size: clamp(26px, 2.3vw, 32px); line-height: 1.2; margin-bottom: 20px; }
-.cap-item h3 em { color: var(--accent-text); }
-.cap-proof { border-left: 0; padding-left: 0; margin-top: 20px; }
-.cap-proof li { padding-left: 16px; position: relative; }
-.cap-proof li::before { content: ''; position: absolute; left: 0; top: .7em; width: 4px; height: 4px; border-radius: 50%; background: var(--accent-text); }
+/* Fields: four open capabilities, with one structural divider per boundary. */
+#capabilities { --cap-ease: cubic-bezier(.22, 1, .36, 1); padding-block: clamp(56px, 5vw, 80px); scroll-margin-top: 54px; }
+#capabilities .cap-header { margin-bottom: 26px; }
+#capabilities .section-title { max-width: none; margin-bottom: 0; }
+#capabilities .cap-fields { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); }
+#capabilities .cap-field {
+  display: grid;
+  grid-template-rows: 126px auto auto 1fr;
+  align-content: start;
+  min-width: 0;
+  padding-inline: 22px;
+  border-left: 1px solid var(--rule);
+}
+#capabilities .cap-field:first-child { padding-left: 0; border-left: 0; }
+#capabilities .cap-field:last-child { padding-right: 0; }
+#capabilities .cap-field-art {
+  width: 100%; max-width: 170px; height: 114px;
+  align-self: center; justify-self: center; overflow: visible;
+  fill: none; stroke: var(--ink); stroke-width: 1.3;
+}
+#capabilities .cap-field-art .solid { fill: var(--ink); stroke: none; }
+#capabilities .cap-field-art .rust { fill: var(--accent); stroke: none; }
+#capabilities .cap-field-art .rust-line { stroke: var(--accent); }
+#capabilities .cap-field-art .faint { stroke: #b7aa9d; }
+#capabilities .cap-field-art .paper { fill: var(--surface-warm); }
+#capabilities .cap-name {
+  margin: 0 0 16px;
+  font: 600 29px/1.15 var(--font-display);
+  letter-spacing: -.045em;
+}
+#capabilities .cap-verb { position: relative; display: inline-block; color: var(--accent-text); }
+#capabilities .cap-hand-rule {
+  position: absolute; left: 0; bottom: -9px; width: 100%; height: 9px;
+  overflow: visible; fill: none; stroke: var(--accent); stroke-width: 1.6; stroke-linecap: round;
+  clip-path: inset(0 100% 0 0); transition: clip-path .45s var(--cap-ease);
+}
+#capabilities .cap-description { margin: 0 0 20px; }
+#capabilities .cap-summary { margin: 0 0 9px; color: var(--ink); font-size: 17px; line-height: 1.4; font-weight: 600; text-wrap: pretty; }
+#capabilities .cap-method { margin: 0; color: var(--ink-soft); font-size: 14px; line-height: 1.55; }
+@supports (grid-template-rows: subgrid) {
+  @media (min-width: 1101px) {
+    #capabilities .cap-fields { grid-template-rows: 126px auto auto 1fr; }
+    #capabilities .cap-field { grid-row: span 4; grid-template-rows: subgrid; }
+  }
+}
+#capabilities .cap-evidence {
+  display: flex; flex-direction: column; align-items: flex-start;
+  border-top: 1px solid var(--rule); padding-top: 16px;
+}
+#capabilities .cap-evidence-label {
+  margin: 0 0 10px; color: var(--ink-muted);
+  font-size: 10px; line-height: 1.6; font-weight: 600; letter-spacing: .1em; text-transform: uppercase;
+}
+#capabilities .cap-proof { flex: 1; padding: 0; margin: 0; list-style: none; }
+#capabilities .cap-proof li { position: relative; padding-left: 12px; color: var(--ink-muted); font-size: 14px; line-height: 1.5; }
+#capabilities .cap-proof li + li { margin-top: 9px; }
+#capabilities .cap-proof strong { color: var(--ink-soft); font-weight: 600; }
+#capabilities .cap-proof li::before {
+  content: ''; position: absolute; left: 0; top: 10px;
+  width: 3px; height: 3px; background: var(--accent-text); border-radius: 50%;
+}
+#capabilities .cap-evidence > a {
+  display: inline-flex; align-items: center; justify-content: space-between;
+  gap: 7px; width: 100%; min-height: 44px; margin-top: 18px;
+  color: var(--ink); font-size: 13px; font-weight: 500; text-decoration: none;
+  border: 0;
+}
+#capabilities .cap-evidence > a:hover { color: var(--accent-text); }
+#capabilities .cap-evidence > a:focus-visible { outline: 2px solid var(--accent-text); outline-offset: 4px; border-radius: var(--radius-s); }
+#capabilities .cap-evidence > a::after {
+  content: ''; width: 20px; height: 20px; flex: none; background: currentColor;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M5 12h14m-6-6 6 6-6 6' fill='none' stroke='black' stroke-width='1.2'/%3E%3C/svg%3E") center / contain no-repeat;
+  transition: transform .25s var(--cap-ease);
+}
+#capabilities .cap-evidence > a:is(:hover, :focus-visible)::after { transform: translateX(3px); }
+#capabilities .moving { transition: transform .7s var(--cap-ease); transform-box: fill-box; transform-origin: center; }
+#capabilities .cap-field:is(:hover, :focus-within) .aperture { transform: rotate(45deg); }
+#capabilities .cap-field:is(:hover, :focus-within) .frame-part { transform: translate(8px, -8px); }
+#capabilities .cap-field:is(:hover, :focus-within) .block-part { transform: translateY(-9px); }
+#capabilities .cap-field:is(:hover, :focus-within) .bracket-part { transform: translateX(-8px); }
+#capabilities .cap-field:is(:hover, :focus-within) .cap-hand-rule { clip-path: inset(0); }
+@media (min-width: 1280px) {
+  #capabilities .cap-name { font-size: 34px; }
+  #capabilities .cap-field { padding-inline: 26px; }
+}
+@media (max-width: 1100px) {
+  #capabilities .cap-fields { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 36px 0; }
+  #capabilities .cap-field { grid-template-rows: 126px auto auto 1fr; padding-inline: 24px; }
+  #capabilities .cap-field:nth-child(odd) { padding-left: 0; border-left: 0; }
+  #capabilities .cap-field:nth-child(even) { padding-right: 0; }
+  #capabilities .cap-field:nth-child(n+3) { padding-top: 26px; border-top: 1px solid var(--rule); }
+  #capabilities .cap-name { font-size: 34px; }
+}
+@media (max-width: 760px) {
+  #capabilities .cap-header { margin-bottom: 30px; }
+  #capabilities .cap-fields { display: block; }
+  #capabilities .cap-field,
+  #capabilities .cap-field:first-child,
+  #capabilities .cap-field:last-child,
+  #capabilities .cap-field:nth-child(even),
+  #capabilities .cap-field:nth-child(odd) {
+    display: grid; grid-template-columns: 104px minmax(0, 1fr); grid-template-rows: auto auto auto;
+    gap: 0 12px; padding: 25px 0 30px; border-left: 0; border-top: 1px solid var(--rule);
+  }
+  #capabilities .cap-field:first-child { padding-top: 0; border-top: 0; }
+  #capabilities .cap-field-art { width: 102px; height: 100px; grid-column: 1; grid-row: 1; justify-self: start; }
+  #capabilities .cap-name { grid-column: 2; grid-row: 1; font-size: 29px; align-self: center; margin: 0; white-space: nowrap; }
+  #capabilities .cap-description { grid-column: 1 / -1; grid-row: 2; margin: 12px 0 18px; }
+  #capabilities .cap-summary { font-size: 18px; }
+  #capabilities .cap-method { font-size: 15px; }
+  #capabilities .cap-evidence { grid-column: 1 / -1; grid-row: 3; border-top: 0; padding-top: 0; }
+  #capabilities .cap-evidence-label { display: none; }
+  #capabilities .cap-proof li { font-size: 15px; }
+  #capabilities .cap-evidence > a { font-size: 14px; margin-top: 10px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  #capabilities .moving, #capabilities .cap-evidence > a::after { transform: none !important; transition: none; }
+  #capabilities .cap-hand-rule { transition: none; }
+}
 
 /* One recognition strip, with clear title and description rows. */
 .awards-grid { grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 0; border-block: 1px solid var(--rule); }
@@ -374,6 +577,20 @@ nav .nav-cta:hover, .btn-primary:hover { background: var(--accent-hover); }
 a.award-name { border-bottom: 0; text-decoration: underline; text-decoration-color: var(--rule); text-underline-offset: 4px; text-decoration-thickness: 1px; }
 a.award-name:hover { color: var(--accent-text); text-decoration-color: currentColor; }
 .award-detail { display: block; margin-top: 12px; font-size: 14px; line-height: 1.55; }
+
+/* Restore the circular award badges from the earlier recognition concept. */
+.award-cursor { position: fixed; z-index: 80; top: 0; left: 0; display: none; width: 58px; height: 58px; pointer-events: none; }
+.award-cursor-face { display: grid; width: 100%; height: 100%; place-items: center; opacity: 0; transition: opacity .12s ease-out; }
+.award-cursor.is-visible .award-cursor-face { opacity: 1; }
+.award-cursor-mark { position: relative; width: 54px; height: 54px; overflow: hidden; border: 1px solid var(--rule); border-radius: 50%; background: #fff; box-shadow: 0 10px 26px rgb(26 23 20 / .2); }
+.award-cursor-logo { position: absolute; display: none; max-width: none; user-select: none; -webkit-user-drag: none; }
+.award-cursor[data-award="red-dot"] .award-logo-red-dot { top: 3px; left: 50%; display: block; width: 48px; height: auto; transform: translateX(-50%); }
+.award-cursor[data-award="indigo"] .award-cursor-mark { background: var(--ink); }
+.award-cursor[data-award="indigo"] .award-logo-indigo { top: 50%; left: 50%; display: block; width: 40px; height: auto; transform: translate(-50%, -50%); }
+@media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  html.award-cursor-enabled .award-cursor { display: block; }
+  a.award-name[data-award-cursor] { cursor: pointer; }
+}
 
 /* Contact and footer share the same field and align its phase at their join. */
 .contact, body > footer {
@@ -432,8 +649,6 @@ body > footer { color: var(--dark-muted); background-color: var(--dark-base); bo
   .hib-step { grid-template-columns: 3.5rem minmax(0, 1fr); gap: 16px; }
   .hib-step::before { font-size: 28px; }
   .hib-stack { gap: 24px; }
-  .cap-grid { grid-template-columns: 1fr; }
-  .cap-item { padding-block: 28px; }
   .awards-grid { grid-template-columns: 1fr; }
   .award-item, .award-item:first-child, .award-item:last-child { padding: 24px 0; border-right: 0; }
   .award-item + .award-item { border-top: 1px solid var(--rule); }

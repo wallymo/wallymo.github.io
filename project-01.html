@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="project-motion-v1">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -337,10 +337,15 @@
     .os-orchestration.is-converging .os-node-track{transform:translate(-50%,-50%) scale(0.38);opacity:0.02}
   }
 </style>
+<link rel="stylesheet" href="assets/portfolio-revision/project-page-motion-v1.css?v=editorial-handoff-half">
+<script defer src="assets/portfolio-revision/project-page-motion-v1.js?v=editorial-handoff-half"></script>
+<script defer src="assets/portfolio-revision/hero-atmosphere.js"></script>
 </head>
 <body>
 
-<nav>
+<canvas class="hero-canvas" id="hero-canvas" aria-hidden="true" data-state="fallback"></canvas>
+<a class="skip-link" href="#project-content">Skip to content</a>
+<nav class="site-nav" aria-label="Main navigation">
   <a href="index.html" class="name">Wally Mostafa</a>
   <div style="display:flex;align-items:center;gap:var(--space-m)">
     <a href="index.html#work" class="back">← All Work</a>
@@ -348,83 +353,86 @@
   </div>
 </nav>
 
-<div class="project-hero">
-  <div class="project-number">01</div>
-  <h1>Pharma AI Platform</h1>
-  <div class="project-role">Hedgehox · AI Implementation Partner · 2024–Present</div>
-  <p class="project-summary">
-            I translate pharma agency problems into working AI tools: claims review, screenshot capture, scoping, brief intake, routing, and regulatory monitoring.
-          </p>
+<main id="project-content">
+<div class="project-hero hero">
+  <div class="project-hero-card">
+    <div class="project-hero-copy">
+      <div class="project-index" data-motion-entry="number">
+        <span class="project-index-label">Case study</span>
+        <div class="project-number">01</div>
+      </div>
+      <h1 data-motion-entry="title">Pharma AI Platform</h1>
+      <div class="project-role" data-motion-entry="role">Hedgehox · AI Implementation Partner · 2024–Present</div>
+      <p class="project-summary" data-motion-entry="summary">
+        I translate pharma agency problems into working AI tools: claims review, screenshot capture, scoping, brief intake, routing, and regulatory monitoring.
+      </p>
+      <a class="project-hero-jump" href="#initiative-claims" data-motion-entry="action">Explore the work <span aria-hidden="true">↓</span></a>
+    </div>
+    <figure class="project-hero-media" data-motion-entry="media">
+      <figcaption><span>Claims Detector</span><span>Review workspace</span></figcaption>
+      <img src="assets/portfolio-revision/project-01.webp" alt="Claims Detector document review with highlighted claims and approval controls" width="960" height="566">
+      <div class="hero-proof"><strong>3 wks → 4 days</strong><span>MLR review cycle</span></div>
+    </figure>
+  </div>
 </div>
 
 <!-- INTRO -->
-<section style="background:var(--surface-tint);">
+<section class="case-file-section" data-motion-reveal>
   <div class="inner">
-    <div class="section-label">My Role</div>
-    <h2 class="section-heading">From client ask to working product.</h2>
-    <ul class="outcomes role-cards">
-      <li>
-        <span class="role-icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24">
-            <path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"></path>
-          </svg>
-        </span>
-        <strong>Client translation</strong>
-        <span>Translate messy stakeholder requests into scoped product requirements.</span>
-      </li>
-      <li>
-        <span class="role-icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24">
-            <path d="M9 11l3 3L22 4"></path>
-            <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
-          </svg>
-        </span>
-        <strong>UX validation</strong>
-        <span>Map review behavior, prototype the workflow, and test what reviewers actually need.</span>
-      </li>
-      <li>
-        <span class="role-icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24">
-            <rect x="4" y="4" width="16" height="16" rx="2"></rect>
-            <rect x="9" y="9" width="6" height="6"></rect>
-            <path d="M9 1v3"></path>
-            <path d="M15 1v3"></path>
-            <path d="M9 20v3"></path>
-            <path d="M15 20v3"></path>
-            <path d="M20 9h3"></path>
-            <path d="M20 14h3"></path>
-            <path d="M1 9h3"></path>
-            <path d="M1 14h3"></path>
-          </svg>
-        </span>
-        <strong>AI execution</strong>
-        <span>Build the interface, logic, and model workflow so the work survives handoff.</span>
-      </li>
-    </ul>
+    <div class="case-file">
+      <div class="case-file-body">
+        <header class="case-file-heading">
+          <div class="section-label">My Role</div>
+          <h2 class="section-heading">From client ask to working product.</h2>
+        </header>
+        <div class="case-file-grid">
+          <ul class="outcomes role-cards">
+            <li>
+              <span class="role-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"></path>
+                </svg>
+              </span>
+              <strong>Client translation</strong>
+              <span>Translate messy stakeholder requests into scoped product requirements.</span>
+            </li>
+            <li>
+              <span class="role-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <path d="M9 11l3 3L22 4"></path>
+                  <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+                </svg>
+              </span>
+              <strong>UX validation</strong>
+              <span>Map review behavior, prototype the workflow, and test what reviewers actually need.</span>
+            </li>
+            <li>
+              <span class="role-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <rect x="4" y="4" width="16" height="16" rx="2"></rect>
+                  <rect x="9" y="9" width="6" height="6"></rect>
+                  <path d="M9 1v3"></path>
+                  <path d="M15 1v3"></path>
+                  <path d="M9 20v3"></path>
+                  <path d="M15 20v3"></path>
+                  <path d="M20 9h3"></path>
+                  <path d="M20 14h3"></path>
+                  <path d="M1 9h3"></path>
+                  <path d="M1 14h3"></path>
+                </svg>
+              </span>
+              <strong>AI execution</strong>
+              <span>Build the interface, logic, and model workflow so the work survives handoff.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
-<div class="stats-bar">
-  <div class="stat">
-    <span class="stat-number">3 wks → 4 days</span>
-    <span class="stat-label">MLR review cycle</span>
-  </div>
-  <div class="stat">
-    <span class="stat-number">FDA / HIPAA</span>
-    <span class="stat-label">Compliance domain</span>
-  </div>
-  <div class="stat">
-    <span class="stat-number">Multimodal</span>
-    <span class="stat-label">Text + image + video AI</span>
-  </div>
-  <div class="stat">
-    <span class="stat-number">End-to-end</span>
-    <span class="stat-label">Discovery to production</span>
-  </div>
-</div>
-
 <!-- CURRENT INITIATIVES -->
-<section class="initiative-section">
+<section class="initiative-section" data-motion-reveal>
   <div class="inner initiative-shell">
     <div class="initiative-copy">
       <div class="section-label">Current Initiatives</div>
@@ -442,37 +450,37 @@
           <span>Signals</span>
         </div>
 
-        <div class="initiative-node initiative-node--brief initiative-node--top" role="listitem" data-stage="Intake">
+        <div class="initiative-node initiative-node--brief initiative-node--top" role="listitem" data-stage="Intake" data-initiative="brief">
           <div>
             <strong>Brief Generator</strong>
             <em>AI turns client inputs into kickoff docs</em>
           </div>
         </div>
-        <div class="initiative-node initiative-node--scope initiative-node--top" role="listitem" data-stage="Planning">
+        <div class="initiative-node initiative-node--scope initiative-node--top" role="listitem" data-stage="Planning" data-initiative="scope">
           <div>
             <strong>Scope Generator</strong>
             <em>AI-assisted scopes and resourcing</em>
           </div>
         </div>
-        <div class="initiative-node initiative-node--echo initiative-node--top" role="listitem" data-stage="Production">
+        <div class="initiative-node initiative-node--echo initiative-node--top" role="listitem" data-stage="Production" data-initiative="echo">
           <div>
             <strong>Echo</strong>
             <em>AI-assisted submission capture routes</em>
           </div>
         </div>
-        <div class="initiative-node initiative-node--claims initiative-node--bottom" role="listitem" data-stage="MLR review">
+        <div class="initiative-node initiative-node--claims initiative-node--bottom" role="listitem" data-stage="MLR review" data-initiative="claims">
           <div>
             <strong>Claims Detector</strong>
             <em>AI claim pickup and pre-submission annotation</em>
           </div>
         </div>
-        <div class="initiative-node initiative-node--route initiative-node--bottom" role="listitem" data-stage="Review routing">
+        <div class="initiative-node initiative-node--route initiative-node--bottom" role="listitem" data-stage="Review routing" data-initiative="route">
           <div>
             <strong>Route Validator</strong>
             <em>AI checks the review path before handoff</em>
           </div>
         </div>
-        <div class="initiative-node initiative-node--fda initiative-node--bottom" role="listitem" data-stage="Signals">
+        <div class="initiative-node initiative-node--fda initiative-node--bottom" role="listitem" data-stage="Signals" data-initiative="fda">
           <div>
             <strong>FDA Warning Tool</strong>
             <em>AI turns regulatory precedent into guidance</em>
@@ -483,19 +491,28 @@
   </div>
 </section>
 
+<div class="initiative-story">
+  <nav class="initiative-progress" aria-label="Explore the six Pharma AI initiatives">
+    <div class="initiative-progress-inner">
+      <span class="initiative-progress-label">Six initiatives</span>
+      <div class="initiative-progress-links">
+        <a href="#initiative-claims" data-initiative-link="claims"><span>01</span> Claims</a>
+        <a href="#initiative-echo" data-initiative-link="echo"><span>02</span> Echo</a>
+        <a href="#initiative-scope" data-initiative-link="scope"><span>03</span> Scope</a>
+        <a href="#initiative-brief" data-initiative-link="brief"><span>04</span> Brief</a>
+        <a href="#initiative-route" data-initiative-link="route"><span>05</span> Route</a>
+        <a href="#initiative-fda" data-initiative-link="fda"><span>06</span> FDA</a>
+      </div>
+    </div>
+  </nav>
+
 <!-- ════════════════════════════════════════ -->
 <!-- PRODUCT 1: CLAIM DETECTOR               -->
 <!-- ════════════════════════════════════════ -->
-<div class="product-section" style="background:var(--surface-tint);">
+<div class="product-section" id="initiative-claims" data-initiative="claims" data-motion-reveal>
   <div class="product-inner">
-    <div class="product-image product-image--icon" aria-label="Claims Detector AI compliance review icon">
-      <div class="product-icon-card">
-        <svg viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M12 3 5 6v5c0 4.2 2.6 8 7 10 4.4-2 7-5.8 7-10V6l-7-3Z"></path>
-          <path d="m9 12 2 2 4-5"></path>
-        </svg>
-        <span class="product-image-label">AI compliance review</span>
-      </div>
+    <div class="product-image product-image--claims">
+      <img src="assets/imagery/ClaimsDetector2.png" alt="Claims Detector document review interface with claims and supporting evidence" width="2880" height="1708" loading="lazy" decoding="async" style="--media-ratio: 2880 / 1708">
     </div>
     <div class="product-text">
       <span class="product-tag">Initiative</span>
@@ -529,10 +546,10 @@
 <!-- ════════════════════════════════════════ -->
 <!-- PRODUCT 2: AUTOMATED SCREENSHOT TOOL     -->
 <!-- ════════════════════════════════════════ -->
-<div class="product-section">
+<div class="product-section" id="initiative-echo" data-initiative="echo" data-motion-reveal>
   <div class="product-inner reverse">
     <div class="product-image">
-      <img src="assets/imagery/echo-thumbnail.png" alt="Echo AI-assisted landing page preview for submission-ready screenshots">
+      <img src="assets/imagery/echo-thumbnail.png" alt="Echo AI-assisted landing page preview for submission-ready screenshots" width="2880" height="1628" loading="lazy" decoding="async" style="--media-ratio: 2880 / 1628">
     </div>
     <div class="product-text">
       <span class="product-tag">Initiative</span>
@@ -561,10 +578,10 @@
 <!-- ════════════════════════════════════════ -->
 <!-- PRODUCT 3: SCOPE GENERATOR              -->
 <!-- ════════════════════════════════════════ -->
-<div class="product-section" style="background:var(--surface-tint);">
+<div class="product-section" id="initiative-scope" data-initiative="scope" data-motion-reveal>
   <div class="product-inner">
     <div class="product-image">
-      <img src="assets/imagery/scope-generator-thumbnail.png" alt="AI Scope Generator scoping grid preview with role-level hours and cost breakdown">
+      <img src="assets/imagery/scope-generator-thumbnail.png" alt="AI Scope Generator scoping grid preview with role-level hours and cost breakdown" width="2846" height="1616" loading="lazy" decoding="async" style="--media-ratio: 2846 / 1616">
     </div>
     <div class="product-text">
       <span class="product-tag">Initiative</span>
@@ -593,10 +610,10 @@
 <!-- ════════════════════════════════════════ -->
 <!-- PRODUCT 4: BRIEF GENERATOR              -->
 <!-- ════════════════════════════════════════ -->
-<div class="product-section">
+<div class="product-section" id="initiative-brief" data-initiative="brief" data-motion-reveal>
   <div class="product-inner reverse">
     <div class="product-image">
-      <img src="assets/imagery/briefflow-thumbnail.png" alt="AI-powered BriefFlow interface preview with table of contents and business impact sections">
+      <img src="assets/imagery/briefflow-thumbnail.png" alt="AI-powered BriefFlow interface preview with table of contents and business impact sections" width="2848" height="1630" loading="lazy" decoding="async" style="--media-ratio: 2848 / 1630">
     </div>
     <div class="product-text">
       <span class="product-tag">Initiative</span>
@@ -625,7 +642,7 @@
 <!-- ════════════════════════════════════════ -->
 <!-- PRODUCT 5: ROUTE VALIDATOR              -->
 <!-- ════════════════════════════════════════ -->
-<div class="product-section" style="background:var(--surface-tint);">
+<div class="product-section" id="initiative-route" data-initiative="route" data-motion-reveal>
   <div class="product-inner">
     <div class="product-image product-image--icon" aria-label="Route Validator AI review routing icon">
       <div class="product-icon-card">
@@ -665,7 +682,7 @@
 <!-- ════════════════════════════════════════ -->
 <!-- PRODUCT 6: FDA WARNING TOOL             -->
 <!-- ════════════════════════════════════════ -->
-<div class="product-section">
+<div class="product-section" id="initiative-fda" data-initiative="fda" data-motion-reveal>
   <div class="product-inner reverse">
     <div class="product-image product-image--icon" aria-label="FDA Warning Tool AI regulatory signals icon">
       <div class="product-icon-card">
@@ -701,13 +718,20 @@
   </div>
 </div>
 
+</div>
+
 <!-- ════════════════════════════════════════ -->
 <!-- PHARMA OS — THE GRAND PLAN              -->
 <!-- ════════════════════════════════════════ -->
-<section class="os-finale">
+<section class="os-finale" id="pharma-os" data-motion-reveal>
   <div class="os-inner">
-    <div class="section-label">Where It's All Going</div>
-    <h2 class="section-heading">Six initiatives. One operating system. Pharma OS.</h2>
+    <div class="os-heading-row">
+      <div class="os-heading-copy">
+        <div class="section-label">Where It's All Going</div>
+        <h2 class="section-heading">Six initiatives. One operating system. Pharma OS.</h2>
+      </div>
+      <button class="motion-toggle" type="button" data-motion-toggle aria-pressed="false"><span data-motion-toggle-label>Pause motion</span></button>
+    </div>
     <p>
       Each AI initiative solves a real workflow problem now: brief intake, scope planning, screenshot capture, claims review, routing, and regulatory monitoring. Pharma OS connects those pieces into one operating layer from kickoff to approval.
     </p>
@@ -772,62 +796,29 @@
 
 <!-- NEXT -->
 <div class="next-project">
-  <div class="nav-projects">
-    <a href="project-03.html">← Enterprise Data Visualization</a>
-    <a href="project-08.html">Xenagos Biopharma Website →</a>
-  </div>
-  <div style="margin-top: var(--space-xl);">
-    <div class="label">Next Project</div>
-    <a href="project-08.html">Xenagos Biopharma Website →</a>
+  <div class="next-project-inner" data-motion-reveal>
+    <div class="next-project-heading">
+      <div class="label">Next Project</div>
+      <span class="next-project-number">Continue exploring</span>
+    </div>
+    <a class="next-project-preview" href="project-08.html">
+      <span class="next-project-copy">
+        <strong>Xenagos Biopharma Website</strong>
+        <span>Explore next case <b aria-hidden="true">→</b></span>
+      </span>
+      <span class="next-project-media">
+        <img src="assets/portfolio-revision/project-08.webp" alt="Xenagos Biopharma website preview" width="960" height="733" loading="lazy" decoding="async">
+      </span>
+    </a>
+    <div class="nav-projects">
+      <a href="project-03.html">← Enterprise Data Visualization</a>
+      <a href="project-08.html">Xenagos Biopharma Website →</a>
+    </div>
   </div>
 </div>
 
+</main>
 <footer>&copy; 2026 Wally Mostafa · Raleigh, NC</footer>
-
-<script>
-  (() => {
-    const params = new URLSearchParams(window.location.search);
-    if (params.get('from') !== 'varonis') return;
-
-    const nameLink = document.querySelector('nav .name');
-    const allWorkLink = document.querySelector('nav .back');
-    const resumeLink = document.querySelector('nav .nav-cta');
-
-    if (nameLink) nameLink.href = 'varonis/';
-    if (allWorkLink) allWorkLink.href = 'varonis/#work';
-    if (resumeLink) resumeLink.href = 'output/pdf/wally-mostafa-varonis-data-ai-security-product-resume.html';
-
-    document.querySelectorAll('a[href^="project-"]').forEach((link) => {
-      const url = new URL(link.getAttribute('href'), window.location.href);
-      url.searchParams.set('from', 'varonis');
-      link.href = `${url.pathname.split('/').pop()}${url.search}`;
-    });
-  })();
-
-  (() => {
-    const orchestration = document.querySelector(".os-orchestration");
-    if (!orchestration || !("IntersectionObserver" in window)) return;
-    let startTimer;
-    let hasStarted = false;
-
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (!entry?.isIntersecting) return;
-        if (!hasStarted) {
-          hasStarted = true;
-          startTimer = window.setTimeout(() => {
-            orchestration.classList.add("is-converging");
-          }, 1500);
-        }
-        observer.disconnect();
-      },
-      { threshold: 0.35 },
-    );
-
-    observer.observe(orchestration);
-    window.addEventListener("pagehide", () => window.clearTimeout(startTimer), { once: true });
-  })();
-</script>
 
 </body>
 </html>

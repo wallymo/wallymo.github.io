@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="project-motion-v1 project-story-v1">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,10 +32,13 @@
     margin: 0 auto;
   }
 </style>
+<link rel="stylesheet" href="assets/portfolio-revision/project-page-motion-v1.css?v=editorial-handoff-half">
 </head>
 <body>
+<canvas class="hero-canvas" id="hero-canvas" aria-hidden="true" data-state="fallback"></canvas>
+<a class="skip-link" href="#project-content">Skip to content</a>
 
-<nav>
+<nav class="site-nav" aria-label="Main navigation">
   <a href="index.html" class="name">Wally Mostafa</a>
   <div class="nav-actions">
     <a href="index.html#work" class="back">&larr; All Work</a>
@@ -43,12 +46,17 @@
   </div>
 </nav>
 
-<main>
-<div class="project-hero">
-  <div class="project-number">05</div>
-  <h1>Whitelabel Builder</h1>
-  <div class="project-role">Kinesso (IPG) &middot; UX Research &amp; Workflow Strategy</div>
-  <p class="project-summary">
+<main id="project-content">
+<div class="project-hero hero">
+  <div class="project-hero-card">
+    <div class="project-hero-copy">
+      <div class="project-index" data-motion-entry="number">
+        <span class="project-index-label">Case study</span>
+        <div class="project-number">05</div>
+      </div>
+  <h1 class="project-title--long" data-motion-entry="title">Whitelabel Builder</h1>
+  <div class="project-role" data-motion-entry="role">Kinesso (IPG) &middot; UX Research &amp; Workflow Strategy</div>
+  <p class="project-summary" data-motion-entry="summary">
     I led the UX research and workflow strategy for a shipped tool that helped Marketing Intelligence Engine (MIE) teams prepare branded product environments for new clients from day one. The work connected client onboarding, white-label brand rules, and application-level changes in one guided flow.
   </p>
   <div class="hero-topline" aria-label="Case study themes">
@@ -57,17 +65,32 @@
     <span class="hero-pill">Enterprise Products</span>
     <span class="hero-pill">Design System</span>
   </div>
+      <a class="project-hero-jump" href="#research-synthesis" data-motion-entry="action">Explore the work <span aria-hidden="true">↓</span></a>
+    </div>
+    <figure class="project-hero-media" data-motion-entry="media">
+      <figcaption><span>Whitelabel Builder</span></figcaption>
+      <img src="assets/portfolio-revision/project-09.webp" alt="Whitelabel Builder branded product environment editor" width="960" height="683" decoding="async" fetchpriority="high">
+    </figure>
+  </div>
 </div>
 
-<section style="background:var(--surface-tint);">
+<section class="case-file-section" data-motion-reveal>
   <div class="inner">
-    <div class="section-label">The problem</div>
-    <h2 class="section-heading">Every new client needed a branded environment. The setup needed to work across a product suite.</h2>
-    <ul class="outcomes">
+    <div class="case-file">
+      <div class="case-file-body">
+        <header class="case-file-heading">
+          <div class="section-label">The problem</div>
+          <h2 class="section-heading">Every new client needed a branded environment. The setup needed to work across a product suite.</h2>
+        </header>
+        <div class="case-file-grid">
+          <ul class="outcomes role-cards">
       <li><strong>Primary users</strong><span>MIE teams across different verticals onboarding enterprise clients such as Sony, Amazon, and Walmart.</span></li>
       <li><strong>Operating challenge</strong><span>Teams had to manage brand-level and application-level changes while keeping the experience consistent across products.</span></li>
       <li><strong>My role</strong><span>I led the research and workflow definition, then collaborated with the UI designers who created the screens shown here. Together, we translated the findings into a flow that worked within the existing design system.</span></li>
-    </ul>
+          </ul>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -90,10 +113,10 @@
   </div>
 </div>
 
-<div class="product-section">
+<div class="product-section" id="research-synthesis" data-motion-reveal>
   <div class="product-inner">
-    <div class="product-image product-image--source whitelabel-screen" data-reveal>
-      <img src="assets/imagery/whitelabel-builder/whitelabel-task-entry.png" alt="Whitelabel Builder start screen offering create, edit white-label, and edit application tasks" width="1440" height="1024" loading="lazy" decoding="async">
+    <div class="product-image product-image--source whitelabel-screen">
+      <img src="assets/imagery/whitelabel-builder/whitelabel-task-entry.png" alt="Whitelabel Builder start screen offering create, edit white-label, and edit application tasks" width="1440" height="1024" loading="lazy" decoding="async" style="--media-ratio: 1440 / 1024">
     </div>
     <div class="product-text">
       <span class="product-tag">Research synthesis</span>
@@ -108,10 +131,10 @@
   </div>
 </div>
 
-<div class="product-section product-section--warm">
+<div class="product-section product-section--warm" data-motion-reveal>
   <div class="product-inner reverse">
-    <div class="product-image product-image--source whitelabel-screen" data-reveal>
-      <img src="assets/imagery/whitelabel-builder/whitelabel-brand-selection.png" alt="Whitelabel Builder screen for selecting one or more branded environments to edit" width="1440" height="1024" loading="lazy" decoding="async">
+    <div class="product-image product-image--source whitelabel-screen">
+      <img src="assets/imagery/whitelabel-builder/whitelabel-brand-selection.png" alt="Whitelabel Builder screen for selecting one or more branded environments to edit" width="1440" height="1024" loading="lazy" decoding="async" style="--media-ratio: 1440 / 1024">
     </div>
     <div class="product-text">
       <span class="product-tag">Decision path</span>
@@ -126,7 +149,7 @@
   </div>
 </div>
 
-<section class="dark">
+<section class="dark story-section" data-motion-reveal>
   <div class="inner">
     <div class="section-label">Workflow governance</div>
     <h2 class="section-heading">The research turned platform rules into decisions teams could understand.</h2>
@@ -138,10 +161,10 @@
   </div>
 </section>
 
-<div class="product-section">
+<div class="product-section" data-motion-reveal>
   <div class="product-inner">
-    <div class="product-image product-image--source whitelabel-screen" data-reveal>
-      <img src="assets/imagery/whitelabel-builder/whitelabel-live-preview.jpg" alt="Whitelabel Builder editor showing brand controls beside a live application preview" width="1440" height="1024" loading="lazy" decoding="async">
+    <div class="product-image product-image--source whitelabel-screen">
+      <img src="assets/imagery/whitelabel-builder/whitelabel-live-preview.jpg" alt="Whitelabel Builder editor showing brand controls beside a live application preview" width="1440" height="1024" loading="lazy" decoding="async" style="--media-ratio: 1440 / 1024">
     </div>
     <div class="product-text">
       <span class="product-tag">Preview and control</span>
@@ -156,10 +179,10 @@
   </div>
 </div>
 
-<div class="product-section product-section--warm">
+<div class="product-section product-section--warm" data-motion-reveal>
   <div class="product-inner reverse">
-    <div class="product-image product-image--source whitelabel-screen" data-reveal>
-      <img src="assets/imagery/whitelabel-builder/whitelabel-login-preview.jpg" alt="Whitelabel Builder login editor with logo, button, and gradient controls beside a branded preview" width="1440" height="1024" loading="lazy" decoding="async">
+    <div class="product-image product-image--source whitelabel-screen">
+      <img src="assets/imagery/whitelabel-builder/whitelabel-login-preview.jpg" alt="Whitelabel Builder login editor with logo, button, and gradient controls beside a branded preview" width="1440" height="1024" loading="lazy" decoding="async" style="--media-ratio: 1440 / 1024">
     </div>
     <div class="product-text">
       <span class="product-tag">Day-one personalization</span>
@@ -174,13 +197,13 @@
   </div>
 </div>
 
-<div class="product-section">
+<div class="product-section" data-motion-reveal>
   <div class="inner">
     <div class="section-label">Final checkpoint</div>
     <h2 class="section-heading">A final review protected the last step before release.</h2>
     <figure class="single-screen">
-      <div class="product-image product-image--source whitelabel-screen" data-reveal>
-        <img src="assets/imagery/whitelabel-builder/whitelabel-review-submit.jpg" alt="Review and submit screen summarizing changes across two white-label environments" width="1440" height="1024" loading="lazy" decoding="async">
+      <div class="product-image product-image--source whitelabel-screen">
+        <img src="assets/imagery/whitelabel-builder/whitelabel-review-submit.jpg" alt="Review and submit screen summarizing changes across two white-label environments" width="1440" height="1024" loading="lazy" decoding="async" style="--media-ratio: 1440 / 1024">
       </div>
       <figcaption class="image-caption">Review changes across environments</figcaption>
     </figure>
@@ -198,35 +221,32 @@
 </div>
 
 <div class="next-project">
-  <div class="label">Next Project</div>
-  <a href="project-04.html">User Research &rarr;</a>
-  <div class="nav-sub"><a href="project-03.html">&larr; Enterprise Data Visualization</a></div>
+  <div class="next-project-inner" data-motion-reveal>
+    <div class="next-project-heading">
+      <div class="label">Next Project</div>
+      <span class="next-project-number">Continue exploring</span>
+    </div>
+    <a class="next-project-preview" href="project-04.html">
+      <span class="next-project-copy">
+        <strong>User Research</strong>
+        <span>Explore next case <b aria-hidden="true">→</b></span>
+      </span>
+      <span class="next-project-media">
+        <img src="assets/portfolio-revision/project-04.webp" alt="User Research project preview" width="960" height="636" loading="lazy" decoding="async">
+      </span>
+    </a>
+    <div class="nav-projects">
+      <a href="project-03.html">&larr; Enterprise Data Visualization</a>
+      <a href="index.html#work">All Work &rarr;</a>
+    </div>
+  </div>
 </div>
 </main>
 
 <footer>&copy; 2026 Wally Mostafa &middot; Raleigh, NC</footer>
 
-<script>
-  (() => {
-    const revealElements = document.querySelectorAll('[data-reveal]');
-    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-    if (!revealElements.length || prefersReducedMotion || !('IntersectionObserver' in window)) {
-      revealElements.forEach((element) => element.classList.add('is-visible'));
-      return;
-    }
-
-    const observer = new IntersectionObserver((entries, activeObserver) => {
-      entries.forEach((entry) => {
-        if (!entry.isIntersecting) return;
-        entry.target.classList.add('is-visible');
-        activeObserver.unobserve(entry.target);
-      });
-    }, { threshold: 0.18, rootMargin: '0px 0px -8% 0px' });
-
-    revealElements.forEach((element) => observer.observe(element));
-  })();
-</script>
+<script defer src="assets/portfolio-revision/hero-atmosphere.js"></script>
+<script defer src="assets/portfolio-revision/project-page-motion-v1.js?v=editorial-handoff-half"></script>
 
 </body>
 </html>
