@@ -408,7 +408,7 @@
     "foundationId": "wally-mostafa-resume-2026-07-03",
     "compositionMode": "profile-complete",
     "layoutDensity": "compact",
-    "summary": "Healthcare account leader with eight years on Fortune 500 pharma brands and budgets up to $20M. I moved from Account Coordinator to Account Supervisor, turning client needs into briefs, strategy, creative feedback, production plans, scopes, financial reporting, and MLR-ready delivery. Since then, I have grown a design group from 2 to 30 and built workflow tools for pharma agencies.",
+    "summary": "Healthcare account leader with eight years guiding Fortune 500 pharma brands through national launches and regulated delivery. Three national TV launches at FCB Health drove a 45% increase in new-to-brand consumers within seven weeks; an unbranded Scout Marketing campaign doubled qualified traffic. I turned client needs into briefs, creative feedback, production requirements, and MLR-ready delivery, then grew a design group from 2 to 30.",
     "skillIds": [
       "account-management-client-leadership",
       "regulated-healthcare-client-delivery",
@@ -631,8 +631,8 @@
     "humanizerVersion": "2.2.0",
     "mode": "surface-only",
     "status": "passed",
-    "reviewedAt": "2026-09-13T22:49:33.390Z",
-    "copySha256": "a8d92aa8818c01eb678d58677bffb1a64f56fa5608e7c7f80989f432953d8cb9",
+    "reviewedAt": "2026-09-13T22:56:12.786Z",
+    "copySha256": "e216d15b669bf342658900e889ca89d67ba4d94c68f53e75c21fe84b20e85bc6",
     "preserved": [
       "content",
       "structure",
@@ -670,8 +670,8 @@
   },
   "qa": {
     "status": "qa-passed",
-    "builtAt": "2026-09-13T22:49:48.151Z",
-    "configInputSha256": "b592649fe39c8a7c621826efc6a50ac87525fce198901feaf4e32a71fcc49f5f",
+    "builtAt": "2026-09-13T22:56:27.300Z",
+    "configInputSha256": "25fdcb5d5b3ac4f40d3c43a4f137e9e7f43d343fac86da1ee59ff353384ca22d",
     "sourceResumeSha256": "2265313e78b596a2b37d6d8f9a95081e4321b4047f142a5f0ddf22449cab4b9c",
     "resumeFoundation": {
       "id": "wally-mostafa-resume-2026-07-03",
@@ -693,7 +693,7 @@
     },
     "artifactHashes": {
       "routeSha256": "d8359594dcc194e8ca05c430862ed98f7a19b830721529d81b2d6592ad62accc",
-      "resumePdfSha256": "3b4abc6a55c7db335c7861b84c92f82ab9dab0ea3b593864836b20109a60550b",
+      "resumePdfSha256": "d14051d7c79a4e855ecd7b46e9ed40eb7b15785e73f2ccc1c5cf97c3c9fa164e",
       "coverLetterPdfSha256": null,
       "coverLetterMarkdownSha256": null,
       "scopedProjectSha256": {
@@ -719,7 +719,7 @@
       "ok": true,
       "pdfPath": "output/pdf/Wally-Mostafa-Accenture-Song-Life-Group-Account-Supervisor-Resume.pdf",
       "pageCount": 2,
-      "fileSize": 81820,
+      "fileSize": 81967,
       "annotations": [
         {
           "page": 1,
@@ -793,11 +793,10 @@
           "status": "covered-directly",
           "matchedTerms": [
             "creative feedback",
+            "production requirements",
             "cross-functional delivery"
           ],
-          "missingTerms": [
-            "production requirements"
-          ]
+          "missingTerms": []
         },
         {
           "id": "pharma-domain-and-regulated-review",
@@ -907,16 +906,14 @@
         }
       ],
       "failures": [],
-      "warnings": [
-        "creative-producer-workflow: supported core language missing from the PDF: production requirements"
-      ]
+      "warnings": []
     },
     "humanizer": {
       "status": "passed",
       "version": "2.2.0",
       "mode": "surface-only",
-      "reviewedAt": "2026-09-13T22:49:33.390Z",
-      "copySha256": "a8d92aa8818c01eb678d58677bffb1a64f56fa5608e7c7f80989f432953d8cb9",
+      "reviewedAt": "2026-09-13T22:56:12.786Z",
+      "copySha256": "e216d15b669bf342658900e889ca89d67ba4d94c68f53e75c21fe84b20e85bc6",
       "reviewMethod": "humanizer-skill",
       "semanticPassAttested": true,
       "staticChecksPassed": true
