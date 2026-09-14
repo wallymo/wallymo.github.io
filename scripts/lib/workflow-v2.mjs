@@ -22,6 +22,20 @@ export const HUMANIZER_VERSION = '2.2.0';
 const SUPPORTED_CONTRACT_REVISIONS = new Set([2, 3, 4, 5, 6, 7]);
 const FLEXIBLE_POSITIONING_REVISIONS = new Set([5, 6, 7]);
 export const SHOWCASE_SECTION_IDS = ['chapters', 'how-i-build', 'capabilities', 'arc'];
+
+export function getShowcaseSectionIds(config) {
+  if (getRoutePresentation(config) !== 'showcase') {
+    return [];
+  }
+  const configured = Array.isArray(config?.route?.showcaseSections)
+    ? config.route.showcaseSections.filter((sectionId) =>
+        SHOWCASE_SECTION_IDS.includes(sectionId)
+      )
+    : [];
+  return configured.includes('capabilities')
+    ? configured
+    : [...configured, 'capabilities'];
+}
 const RESUME_COMPOSITION_MODES = new Set([
   'foundation-complete',
   'curated-user-authorized',
@@ -307,17 +321,8 @@ function recruiterFacingHtmlText(html) {
 }
 
 export function showcaseSectionCopyEntries(config) {
-  if (getRoutePresentation(config) !== 'showcase') {
-    return [];
-  }
-  const sectionIds = Array.isArray(config?.route?.showcaseSections)
-    ? config.route.showcaseSections.filter((sectionId) =>
-        SHOWCASE_SECTION_IDS.includes(sectionId)
-      )
-    : [];
-  if (!sectionIds.length) {
-    return [];
-  }
+  const sectionIds = getShowcaseSectionIds(config);
+  if (!sectionIds.length) return [];
   const indexHtml = readFileSync(resolveRepoPath('index.html'), 'utf8');
   return sectionIds.map((sectionId) => {
     const section = indexHtml.match(
@@ -2408,10 +2413,11 @@ export function validateV2Config(
             showcaseSections.length >= 1 &&
             showcaseSections.length <= SHOWCASE_SECTION_IDS.length &&
             new Set(showcaseSections).size === showcaseSections.length &&
+            showcaseSections.includes('capabilities') &&
             showcaseSections.every((sectionId) =>
               SHOWCASE_SECTION_IDS.includes(sectionId)
             )),
-        'route.showcaseSections must be a unique list containing chapters, how-i-build, capabilities, or arc'
+        'route.showcaseSections must be a unique list that includes capabilities and may also contain chapters, how-i-build, or arc'
       );
       pushError(
         errors,

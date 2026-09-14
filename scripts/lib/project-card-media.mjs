@@ -32,7 +32,7 @@ export const PROJECT_CARD_MEDIA = Object.freeze({
     "height": 540
   },
   "project-06": {
-    "src": "assets/portfolio-revision/project-06.webp",
+    "src": "assets/portfolio-revision/project-06-clean.webp",
     "alt": "Digital Audit Experience screens showing performance scores and benchmark charts",
     "width": 960,
     "height": 540

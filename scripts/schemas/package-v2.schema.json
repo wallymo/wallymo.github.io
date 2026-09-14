@@ -528,6 +528,7 @@
           "minItems": 1,
           "maxItems": 4,
           "uniqueItems": true,
+          "contains": { "const": "capabilities" },
           "items": {
             "enum": ["chapters", "how-i-build", "capabilities", "arc"]
           }

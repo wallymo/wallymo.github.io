@@ -23,6 +23,7 @@ import {
   getArtifactPaths,
   getResumeExperienceSections,
   getRoutePresentation,
+  getShowcaseSectionIds,
   hasCoverLetterArtifact,
   isMain,
   readJson,
@@ -1040,7 +1041,7 @@ export function buildRoute(config, paths) {
         'WARN: showcase presentation with canonical-projects lets case studies link back to the homepage; pair it with routeMode "scoped-projects"'
       );
     }
-    const showcaseSections = new Set(config.route?.showcaseSections || []);
+    const showcaseSections = new Set(getShowcaseSectionIds(config));
     for (const sectionId of SHOWCASE_SECTION_IDS) {
       const sectionPattern = new RegExp(
         `\\s*<section\\b[^>]*\\bid="${sectionId}"[\\s\\S]*?<\\/section>`

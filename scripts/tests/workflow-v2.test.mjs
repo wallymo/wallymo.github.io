@@ -1354,7 +1354,7 @@ test(
 );
 
 test(
-  'showcase routes drop positioning sections by default and allow explicit section restores',
+  'showcase routes always retain capabilities and allow additional section restores',
   { timeout: 180_000 },
   () => {
     const { tempRoot, config, configPath } = createBuildFixture({
@@ -1384,6 +1384,16 @@ test(
         /route\.showcaseSections must be a unique list/
       );
       assert.ok(schemaErrors(invalidShowcaseSections).length > 0);
+      const missingCapabilities = structuredClone(config);
+      missingCapabilities.route = {
+        presentation: 'showcase',
+        showcaseSections: ['chapters'],
+      };
+      assert.match(
+        validateV2Config(missingCapabilities).join('\n'),
+        /showcaseSections must be a unique list that includes capabilities/
+      );
+      assert.ok(schemaErrors(missingCapabilities).length > 0);
       const fullWithShowcaseSections = structuredClone(config);
       fullWithShowcaseSections.route = {
         presentation: 'full',
@@ -1601,10 +1611,11 @@ test(
       assert.ok(routeHtml.includes('class="work-tags"'));
       assert.ok(!routeHtml.includes('Proof for the lane.'));
       assert.ok(!routeHtml.includes('id="how-i-build"'));
-      assert.ok(!routeHtml.includes('id="capabilities"'));
+      assert.ok(routeHtml.includes('id="capabilities"'));
       assert.ok(!routeHtml.includes('id="arc"'));
       assert.ok(!routeHtml.includes('converging into AI implementation'));
       assert.ok(!routeHtml.includes('href="#how-i-build"'));
+      assert.ok(routeHtml.includes('href="#capabilities"'));
       assert.ok(!routeHtml.includes('href="#arc"'));
       assert.ok(routeHtml.includes('id="awards"'));
       assert.ok(routeHtml.includes('trust-strip'));
@@ -1619,7 +1630,7 @@ test(
       assert.ok(!/<a href="\.\.\/project-\d+\.html">/.test(routeHtml));
 
       const approvedCopySha256 = config.copyReview.copySha256;
-      config.route.showcaseSections = ['how-i-build'];
+      config.route.showcaseSections = ['capabilities', 'how-i-build'];
       assert.notEqual(humanizerCopySha256(config), approvedCopySha256);
       assert.throws(
         () => assertHumanizerReviewCurrent(config),
@@ -3822,7 +3833,7 @@ test(
       config.route.projectFullWidthSections = {
         'project-06.html': [
           {
-            asset: 'assets/ux-wally/dxa.jpg',
+            asset: 'assets/ux-wally/dxa-clean.jpg',
             copyMode: 'heading-only',
           },
           {
@@ -3910,7 +3921,7 @@ test(
       );
 
       config.route.projectFullWidthSections['project-06.html'][0].asset =
-        'assets/ux-wally/dxa.jpg';
+        'assets/ux-wally/dxa-clean.jpg';
       config.route.projectFullWidthSections['project-06.html'][1].asset =
         'assets/ux-wally/dxa-questionnaire.png';
       writeFileSync(configPath, `${JSON.stringify(config, null, 2)}\n`);
@@ -4724,7 +4735,7 @@ test('revision showcase cards preserve three, four, and five project selections,
       shell = shell.replace(/(<section\b[^>]*\bid="how-i-build")/, '<section id="chapters"><h2>Three chapters. One through-line.</h2><p>I managed client work, designed products, and implemented AI workflows.</p></section>\n$1');
     }
     writeFileSync(path.join(tempRoot, 'index.html'), shell);
-    config.route.showcaseSections = ['chapters', 'how-i-build'];
+    config.route.showcaseSections = ['chapters', 'how-i-build', 'capabilities'];
     config.route.projectAliases = { 'project-04.html': 'project-10.html' };
     const selections = [
       ['project-04.html', 'project-01.html', 'project-05.html'],
@@ -4778,6 +4789,7 @@ test('revision showcase cards preserve three, four, and five project selections,
     delete config.route.showcaseSections;
     const historical = buildRoute(config, getArtifactPaths(config));
     assert.doesNotMatch(historical, /id="chapters"|id="how-i-build"|id="arc"/);
+    assert.match(historical, /id="capabilities"/);
   } finally {
     if (previousRepoRoot === undefined) delete process.env.WORKFLOW_REPO_ROOT;
     else process.env.WORKFLOW_REPO_ROOT = previousRepoRoot;
@@ -4785,20 +4797,22 @@ test('revision showcase cards preserve three, four, and five project selections,
   }
 });
 
-test('new showcase templates opt into chapters and inherited chapter copy participates in humanizer and claim gates', () => {
+test('new showcase templates retain chapters and capabilities in humanizer and claim gates', () => {
   const template = JSON.parse(readFileSync(path.join(repoRoot, 'scripts/examples/package-v2.json'), 'utf8'));
-  assert.deepEqual(template.route.showcaseSections, ['chapters']);
+  assert.deepEqual(template.route.showcaseSections, ['chapters', 'capabilities']);
   assert.deepEqual(schemaErrors(template), []);
   const tempRoot = mkdtempSync(path.join(os.tmpdir(), 'workflow-chapter-copy-'));
   const previousRepoRoot = process.env.WORKFLOW_REPO_ROOT;
   try {
     process.env.WORKFLOW_REPO_ROOT = tempRoot;
-    const source = '<section id="chapters"><h2>Three chapters. One through-line.</h2><button aria-label="Read the account chapter">Account Management</button><p>I worked with client teams.</p></section>';
+    const source = '<section id="chapters"><h2>Three chapters. One through-line.</h2><button aria-label="Read the account chapter">Account Management</button><p>I worked with client teams.</p></section><section id="capabilities"><h2>Where I create leverage.</h2><p>I turn research into product direction.</p></section>';
     writeFileSync(path.join(tempRoot, 'index.html'), source);
     const entries = showcaseSectionCopyEntries(template);
-    assert.equal(entries.length, 1);
+    assert.equal(entries.length, 2);
     assert.equal(entries[0][0], 'route.showcaseSections.chapters');
     assert.match(entries[0][1], /Account Management.*I worked with client teams.*Read the account chapter/);
+    assert.equal(entries[1][0], 'route.showcaseSections.capabilities');
+    assert.match(entries[1][1], /Where I create leverage.*research into product direction/);
     assert.ok(humanizerCopyEntries(template).some(([key]) => key === 'route.showcaseSections.chapters'));
     approveHumanizerReview(template, { reviewedAt: '2026-09-07T12:00:00.000Z', semanticPassComplete: true });
     const before = humanizerCopySha256(template);
@@ -4812,7 +4826,7 @@ test('new showcase templates opt into chapters and inherited chapter copy partic
     writeFileSync(path.join(tempRoot, 'index.html'), '<main></main>');
     assert.throws(() => humanizerCopySha256(template), /Missing canonical showcase section: chapters/);
     delete template.route.showcaseSections;
-    assert.doesNotThrow(() => humanizerCopySha256(template));
+    assert.throws(() => humanizerCopySha256(template), /Missing canonical showcase section: capabilities/);
   } finally {
     if (previousRepoRoot === undefined) delete process.env.WORKFLOW_REPO_ROOT;
     else process.env.WORKFLOW_REPO_ROOT = previousRepoRoot;
