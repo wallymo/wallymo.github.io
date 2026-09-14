@@ -77,10 +77,10 @@ When the human sends a job, start with the fit gate. If it clears as a strong fi
 - Treat the closing contact block as the hero's bookend. Its prompt and short footer sign-off must match the same JD, role family, and proof lanes; never leave the public homepage's default AI/industry positioning on an unrelated tailored route.
 - Keep a showcase closing simple: thank the visitor and make email and the resume easy to reach. A full-route closing may name the kind of leader or problem the employer is hiring for. Do not repeat the hero or introduce new claims.
 - Do not overclaim. Strong fit copy should be sharper and more direct, not inflated.
-- Pick 3 relevant projects by default, ordered by role relevance rather than default chronology. Use 4 only when the JD genuinely spans multiple proof lanes. Use 5 only if the human explicitly asks for a deeper version.
+- For every new or intentionally rebuilt tailored route, pick 3 role-relevant projects and order them by relevance rather than default chronology, then include `project-03.html` — Enterprise Data Visualization — as the signature fourth project. If Enterprise Data Visualization is already one of the 3 strongest role matches, move it to fourth and replace its earlier slot with the next-best role-relevant project. Keep an existing verified package unchanged unless it is intentionally rebuilt. Use only 3 projects when the human explicitly asks for a compact three-project route, and use 5 only when the human explicitly asks for a deeper version.
   - `project-01.html` — Pharma AI Platform: regulated pharma AI, MLR, FDA/HIPAA, agency workflows, LLM/VLM implementation.
   - `project-02.html` — The POC Guy: AI POCs, client discovery, rapid prototypes, vertical testing, early product validation.
-  - `project-03.html` — Enterprise Design System: enterprise UX, data visualization, white-label systems, design leadership, team scale.
+  - `project-03.html` — Enterprise Data Visualization: enterprise analytics, complex data made usable, white-label systems, design leadership, team scale, and award-video proof.
   - `project-04.html` — User Research: research ops, interviews, Figma documentation, roadshows, user-centered product practice.
   - `project-05.html` — Splash Design System: component systems, Figma, design ops, personas, system governance, award-backed UX.
   - `project-06.html` — Digital Audit Experience: audit workflows, AI-powered data visualization, benchmarking, recommendations, awards.

@@ -4877,6 +4877,12 @@ test('scoped showcase capability lanes link consistently to selected route proje
 
 test('new showcase templates retain chapters and capabilities in humanizer and claim gates', () => {
   const template = JSON.parse(readFileSync(path.join(repoRoot, 'scripts/examples/package-v2.json'), 'utf8'));
+  assert.deepEqual(template.selectedProjects, [
+    'project-01.html',
+    'project-02.html',
+    'project-04.html',
+    'project-03.html',
+  ]);
   assert.deepEqual(template.route.showcaseSections, ['chapters', 'capabilities']);
   assert.deepEqual(schemaErrors(template), []);
   const tempRoot = mkdtempSync(path.join(os.tmpdir(), 'workflow-chapter-copy-'));
