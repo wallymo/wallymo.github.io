@@ -459,6 +459,11 @@
         "href": "https://www.indigoaward.com/winners/6748"
       },
       {
+        "label": "Red Dot Awards 2021",
+        "detail": "Brands & Communication Design",
+        "href": "https://www.red-dot.org/project/dxa-digital-experience-audit-55219"
+      },
+      {
         "label": "Manny Award 2013",
         "detail": "Best Unbranded Campaign, \"Get Your Shift Together\""
       },
@@ -639,8 +644,8 @@
     "humanizerVersion": "2.2.0",
     "mode": "surface-only",
     "status": "passed",
-    "reviewedAt": "2026-09-14T01:02:41.477Z",
-    "copySha256": "1936580a0e33f533b3ace04bf47c9bf71d154106dc78d13cefd9e02700435a5d",
+    "reviewedAt": "2026-09-14T01:41:36.057Z",
+    "copySha256": "2d82394e90f911c3f2a4aed45e6729b0a906bbdde268464c503031120a258db9",
     "preserved": [
       "content",
       "structure",
@@ -678,8 +683,8 @@
   },
   "qa": {
     "status": "qa-passed",
-    "builtAt": "2026-09-14T01:21:49.843Z",
-    "configInputSha256": "65d93b67fc5dbbdf378956ebc41476c8a4ed7e66b4cb892a19fdfda8aea81d4c",
+    "builtAt": "2026-09-14T01:41:58.998Z",
+    "configInputSha256": "b85dbc4826140084469714667d804caa4c77df4e97439abd5e37cf696bfdac68",
     "sourceResumeSha256": "2265313e78b596a2b37d6d8f9a95081e4321b4047f142a5f0ddf22449cab4b9c",
     "resumeFoundation": {
       "id": "wally-mostafa-resume-2026-07-03",
@@ -701,7 +706,7 @@
     },
     "artifactHashes": {
       "routeSha256": "4f3e428e3bf7f0a0c90f89b0d6bf203284f716cc5b7907f815c5e93e483a85a9",
-      "resumePdfSha256": "9224daa9ff322a1eaa8b5afb1c02e578ca773d4211483e0e04bb8757934d0f19",
+      "resumePdfSha256": "4b6344244943f3296e8ad8ec934590a7ebcae2dca25fa87108c4221120edfae7",
       "coverLetterPdfSha256": null,
       "coverLetterMarkdownSha256": null,
       "scopedProjectSha256": {
@@ -728,7 +733,7 @@
       "ok": true,
       "pdfPath": "output/pdf/Wally-Mostafa-Accenture-Song-Life-Group-Account-Supervisor-Resume.pdf",
       "pageCount": 2,
-      "fileSize": 81722,
+      "fileSize": 82927,
       "annotations": [
         {
           "page": 1,
@@ -745,6 +750,10 @@
         {
           "page": 2,
           "uri": "https://www.indigoaward.com/winners/6748"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.red-dot.org/project/dxa-digital-experience-audit-55219"
         }
       ],
       "fontCompatibility": {
@@ -921,8 +930,8 @@
       "status": "passed",
       "version": "2.2.0",
       "mode": "surface-only",
-      "reviewedAt": "2026-09-14T01:02:41.477Z",
-      "copySha256": "1936580a0e33f533b3ace04bf47c9bf71d154106dc78d13cefd9e02700435a5d",
+      "reviewedAt": "2026-09-14T01:41:36.057Z",
+      "copySha256": "2d82394e90f911c3f2a4aed45e6729b0a906bbdde268464c503031120a258db9",
       "reviewMethod": "humanizer-skill",
       "semanticPassAttested": true,
       "staticChecksPassed": true
