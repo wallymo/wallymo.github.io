@@ -1404,6 +1404,36 @@ test(
         /route\.showcaseSections requires route\.presentation showcase/
       );
       assert.ok(schemaErrors(fullWithShowcaseSections).length > 0);
+      const validCapabilityProjects = structuredClone(config);
+      validCapabilityProjects.routeMode = 'scoped-projects';
+      validCapabilityProjects.route = {
+        presentation: 'showcase',
+        heroIntent: 'resume-support',
+        capabilityProjects: {
+          discover: 'project-01.html',
+          design: 'project-02.html',
+          build: 'project-03.html',
+          lead: 'project-01.html',
+        },
+      };
+      assert.doesNotMatch(
+        validateV2Config(validCapabilityProjects).join('\n'),
+        /route\.capabilityProjects/
+      );
+      assert.deepEqual(schemaErrors(validCapabilityProjects), []);
+      const unselectedCapabilityProject = structuredClone(validCapabilityProjects);
+      unselectedCapabilityProject.route.capabilityProjects.design = 'project-07.html';
+      assert.match(
+        validateV2Config(unselectedCapabilityProject).join('\n'),
+        /route\.capabilityProjects\.design references an unselected project/
+      );
+      const incompleteCapabilityProjects = structuredClone(validCapabilityProjects);
+      delete incompleteCapabilityProjects.route.capabilityProjects.lead;
+      assert.match(
+        validateV2Config(incompleteCapabilityProjects).join('\n'),
+        /route\.capabilityProjects must map discover, design, build, and lead/
+      );
+      assert.ok(schemaErrors(incompleteCapabilityProjects).length > 0);
       const leakyShowcase = structuredClone(config);
       leakyShowcase.route = { presentation: 'showcase' };
       assert.match(
@@ -4790,6 +4820,54 @@ test('revision showcase cards preserve three, four, and five project selections,
     const historical = buildRoute(config, getArtifactPaths(config));
     assert.doesNotMatch(historical, /id="chapters"|id="how-i-build"|id="arc"/);
     assert.match(historical, /id="capabilities"/);
+  } finally {
+    if (previousRepoRoot === undefined) delete process.env.WORKFLOW_REPO_ROOT;
+    else process.env.WORKFLOW_REPO_ROOT = previousRepoRoot;
+    rmSync(tempRoot, { recursive: true, force: true });
+  }
+});
+
+test('scoped showcase capability lanes link consistently to selected route projects', () => {
+  const { tempRoot, config } = createBuildFixture({
+    routeMode: 'scoped-projects',
+    selectedProjects: [
+      'project-01.html',
+      'project-04.html',
+      'project-06.html',
+      'project-07.html',
+    ],
+  });
+  const previousRepoRoot = process.env.WORKFLOW_REPO_ROOT;
+  try {
+    process.env.WORKFLOW_REPO_ROOT = tempRoot;
+    config.route.showcaseSections = ['capabilities'];
+    config.route.capabilityProjects = {
+      discover: 'project-04.html',
+      design: 'project-06.html',
+      build: 'project-01.html',
+      lead: 'project-07.html',
+    };
+    const html = buildRoute(config, getArtifactPaths(config));
+    const capabilities = html.match(
+      /<section\b[^>]*\bid="capabilities"[\s\S]*?<\/section>/
+    )?.[0];
+    assert.ok(capabilities);
+    const expected = new Map([
+      ['discover', ['project-04.html', 'User Research']],
+      ['design', ['project-06.html', 'Digital Audit Experience']],
+      ['build', ['project-01.html', 'Pharma AI Platform']],
+      ['lead', ['project-07.html', 'Other Highlights']],
+    ]);
+    for (const [laneId, [href, title]] of expected) {
+      const article = capabilities.match(
+        new RegExp(
+          `<article\\b(?=[^>]*\\bdata-capability="${laneId}")[\\s\\S]*?<\\/article>`
+        )
+      )?.[0];
+      assert.ok(article, `Missing ${laneId} capability`);
+      assert.match(article, new RegExp(`<a href="${href}">${title}<\\/a>`));
+    }
+    assert.equal((capabilities.match(/<a href="project-\d+\.html">/g) || []).length, 4);
   } finally {
     if (previousRepoRoot === undefined) delete process.env.WORKFLOW_REPO_ROOT;
     else process.env.WORKFLOW_REPO_ROOT = previousRepoRoot;

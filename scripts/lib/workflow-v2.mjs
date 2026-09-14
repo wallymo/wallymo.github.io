@@ -22,6 +22,7 @@ export const HUMANIZER_VERSION = '2.2.0';
 const SUPPORTED_CONTRACT_REVISIONS = new Set([2, 3, 4, 5, 6, 7]);
 const FLEXIBLE_POSITIONING_REVISIONS = new Set([5, 6, 7]);
 export const SHOWCASE_SECTION_IDS = ['chapters', 'how-i-build', 'capabilities', 'arc'];
+export const CAPABILITY_LANE_IDS = ['discover', 'design', 'build', 'lead'];
 
 export function getShowcaseSectionIds(config) {
   if (getRoutePresentation(config) !== 'showcase') {
@@ -2424,6 +2425,45 @@ export function validateV2Config(
         showcaseSections === undefined || route.presentation === 'showcase',
         'route.showcaseSections requires route.presentation showcase'
       );
+      const capabilityProjects = route.capabilityProjects;
+      pushError(
+        errors,
+        capabilityProjects === undefined ||
+          (capabilityProjects &&
+            typeof capabilityProjects === 'object' &&
+            !Array.isArray(capabilityProjects) &&
+            Object.keys(capabilityProjects).length === CAPABILITY_LANE_IDS.length &&
+            CAPABILITY_LANE_IDS.every((laneId) =>
+              /^project-\d+\.html$/.test(capabilityProjects[laneId] || '')
+            )),
+        'route.capabilityProjects must map discover, design, build, and lead to project HTML filenames'
+      );
+      if (
+        capabilityProjects &&
+        typeof capabilityProjects === 'object' &&
+        !Array.isArray(capabilityProjects)
+      ) {
+        const selectedProjects = Array.isArray(config.selectedProjects)
+          ? config.selectedProjects
+          : [];
+        pushError(
+          errors,
+          config.routeMode === 'scoped-projects' && route.presentation === 'showcase',
+          'route.capabilityProjects requires a scoped showcase route'
+        );
+        for (const [laneId, project] of Object.entries(capabilityProjects)) {
+          pushError(
+            errors,
+            CAPABILITY_LANE_IDS.includes(laneId),
+            `route.capabilityProjects contains an unknown capability lane: ${laneId}`
+          );
+          pushError(
+            errors,
+            selectedProjects.includes(project),
+            `route.capabilityProjects.${laneId} references an unselected project: ${project}`
+          );
+        }
+      }
       const projectAliases = route.projectAliases;
       pushError(
         errors,

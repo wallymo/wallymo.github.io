@@ -510,7 +510,8 @@ nav .nav-cta:hover, .btn-primary:hover { background: var(--accent-hover); }
 }
 #capabilities .cap-evidence > a {
   display: inline-flex; align-items: center; justify-content: space-between;
-  gap: 7px; width: 100%; min-height: 44px; margin-top: 18px;
+  gap: 12px; width: 100%; min-height: 48px; margin-top: 28px;
+  padding-top: 4px;
   color: var(--ink); font-size: 13px; font-weight: 500; text-decoration: none;
   border: 0;
 }
@@ -560,7 +561,7 @@ nav .nav-cta:hover, .btn-primary:hover { background: var(--accent-hover); }
   #capabilities .cap-evidence { grid-column: 1 / -1; grid-row: 3; border-top: 0; padding-top: 0; }
   #capabilities .cap-evidence-label { display: none; }
   #capabilities .cap-proof li { font-size: 15px; }
-  #capabilities .cap-evidence > a { font-size: 14px; margin-top: 10px; }
+  #capabilities .cap-evidence > a { font-size: 14px; margin-top: 18px; }
 }
 @media (prefers-reduced-motion: reduce) {
   #capabilities .moving, #capabilities .cap-evidence > a::after { transform: none !important; transition: none; }

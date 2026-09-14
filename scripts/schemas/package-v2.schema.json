@@ -533,6 +533,17 @@
             "enum": ["chapters", "how-i-build", "capabilities", "arc"]
           }
         },
+        "capabilityProjects": {
+          "type": "object",
+          "required": ["discover", "design", "build", "lead"],
+          "properties": {
+            "discover": { "type": "string", "pattern": "^project-\\d+\\.html$" },
+            "design": { "type": "string", "pattern": "^project-\\d+\\.html$" },
+            "build": { "type": "string", "pattern": "^project-\\d+\\.html$" },
+            "lead": { "type": "string", "pattern": "^project-\\d+\\.html$" }
+          },
+          "additionalProperties": false
+        },
         "projectAliases": {
           "type": "object",
           "minProperties": 1,
@@ -635,6 +646,15 @@
       "allOf": [
         {
           "if": { "required": ["showcaseSections"] },
+          "then": {
+            "required": ["presentation"],
+            "properties": {
+              "presentation": { "const": "showcase" }
+            }
+          }
+        },
+        {
+          "if": { "required": ["capabilityProjects"] },
           "then": {
             "required": ["presentation"],
             "properties": {
@@ -787,6 +807,21 @@
         "properties": {
           "route": {
             "required": ["projectAliases"]
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "routeMode": { "const": "scoped-projects" }
+        }
+      }
+    },
+    {
+      "if": {
+        "required": ["route"],
+        "properties": {
+          "route": {
+            "required": ["capabilityProjects"]
           }
         }
       },

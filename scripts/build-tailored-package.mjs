@@ -11,6 +11,7 @@ import {
 } from 'node:fs';
 import path from 'node:path';
 import {
+  CAPABILITY_LANE_IDS,
   PUBLIC_BASE,
   RESUME_ROLE_IDS,
   SHOWCASE_SECTION_IDS,
@@ -260,6 +261,36 @@ function canonicalProjectDetails(project) {
     ),
     tags,
   };
+}
+
+export function applyCapabilityProjectLinks(routeHtml, config, indexHtml) {
+  const capabilityProjects = config.route?.capabilityProjects;
+  if (!capabilityProjects) return routeHtml;
+
+  const titlesByProject = extractWorkCardTitles(indexHtml);
+  let updatedHtml = routeHtml;
+  for (const laneId of CAPABILITY_LANE_IDS) {
+    const project = capabilityProjects[laneId];
+    const href = scopedProjectFilename(config, project);
+    const title =
+      titlesByProject.get(project) || canonicalProjectDetails(project).title;
+    const articlePattern = new RegExp(
+      `<article\\b(?=[^>]*\\bclass="[^"]*\\bcap-field\\b[^"]*")(?=[^>]*\\bdata-capability="${laneId}")[^>]*>[\\s\\S]*?<\\/article>`
+    );
+    const article = updatedHtml.match(articlePattern)?.[0];
+    if (!article) {
+      throw new Error(`Missing capability field: ${laneId}`);
+    }
+    const linkedArticle = article.replace(
+      /<a href="[^"]*project-\d+\.html">[\s\S]*?<\/a>(?=\s*<\/div>\s*<\/article>)/,
+      `<a href="${href}">${escapeHtml(title)}</a>`
+    );
+    if (linkedArticle === article) {
+      throw new Error(`Missing capability project link: ${laneId}`);
+    }
+    updatedHtml = updatedHtml.replace(articlePattern, linkedArticle);
+  }
+  return updatedHtml;
 }
 
 function buildFallbackWorkCard(project) {
@@ -1028,6 +1059,7 @@ export function buildRoute(config, paths) {
     `<div class="work-grid">\n\n      ${workGrid}\n\n    </div>`,
     'work grid'
   );
+  routeHtml = applyCapabilityProjectLinks(routeHtml, config, indexHtml);
   if (config.routeMode === 'scoped-projects') {
     for (const project of config.selectedProjects) {
       routeHtml = routeHtml
