@@ -623,7 +623,8 @@
     "presentation": "showcase",
     "heroIntent": "resume-support",
     "showcaseSections": [
-      "chapters"
+      "chapters",
+      "capabilities"
     ],
     "workHeading": "Selected work.",
     "contactHeading": "Thanks for taking a look."
@@ -632,8 +633,8 @@
     "humanizerVersion": "2.2.0",
     "mode": "surface-only",
     "status": "passed",
-    "reviewedAt": "2026-09-14T00:39:40.857Z",
-    "copySha256": "2e11ad37dd35c3fc38d45a6663ed52d2200520a6af36419c85c3970a391f7df2",
+    "reviewedAt": "2026-09-14T01:02:41.477Z",
+    "copySha256": "1936580a0e33f533b3ace04bf47c9bf71d154106dc78d13cefd9e02700435a5d",
     "preserved": [
       "content",
       "structure",
@@ -671,8 +672,8 @@
   },
   "qa": {
     "status": "qa-passed",
-    "builtAt": "2026-09-14T00:40:58.444Z",
-    "configInputSha256": "c8dfb2b69d5a1d3441522152066c707aefc2d3e811185b488357387a0d32ffe2",
+    "builtAt": "2026-09-14T01:04:05.784Z",
+    "configInputSha256": "7cd73cf53cc4e912eacc10f4fb75537c0f920e7fcfafef0ec404e6a5e65b7ad4",
     "sourceResumeSha256": "2265313e78b596a2b37d6d8f9a95081e4321b4047f142a5f0ddf22449cab4b9c",
     "resumeFoundation": {
       "id": "wally-mostafa-resume-2026-07-03",
@@ -693,14 +694,14 @@
       "registrySha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108"
     },
     "artifactHashes": {
-      "routeSha256": "c9a7c94c6209f5ab29049c6c5878c43bdc8afa5565d63fee833f680d667d589d",
-      "resumePdfSha256": "957a8895ed0a9f5cd4fc1e609f1d397cbadcfc4282f9f621593bfb76f0b9925b",
+      "routeSha256": "dbd4a41e293d75bd0acf6d9bfdc4f076592eaeb31f6427fed18cbe88f83ee68d",
+      "resumePdfSha256": "1fc95e197e6fa55b37ac65eb5296d8dfc1494d9581184ee09fc1179ce1855d48",
       "coverLetterPdfSha256": null,
       "coverLetterMarkdownSha256": null,
       "scopedProjectSha256": {
         "project-01.html": "aa9996887fc4e478c13bde847f9e9d65724ba05ac0927f476594101d574fe70c",
-        "project-04.html": "5d6aa43b085ebbd4e9c68cd9a87a30db252346dcce3e370579000a96ac8b2cfc",
-        "project-06.html": "db35f04d8507be01d232c9c14d804f8c7e8f6ebfc048c74aa67a5ff5d96d4368",
+        "project-04.html": "f239597466b8fce4629e518dbe83619b5032bfc29d745ce2a87e6f6a36d0d9a7",
+        "project-06.html": "e207bb1cee4ce14f0b0a91783d288f0da5fe06f7fa3acd596ff66b54fd10991b",
         "project-07.html": "195d6ac4b7b7087276048daffb3ca404b213cfaf376a9ad2d73443976eb6a0ab"
       },
       "scopedProjectAssetSha256": {}
@@ -914,8 +915,8 @@
       "status": "passed",
       "version": "2.2.0",
       "mode": "surface-only",
-      "reviewedAt": "2026-09-14T00:39:40.857Z",
-      "copySha256": "2e11ad37dd35c3fc38d45a6663ed52d2200520a6af36419c85c3970a391f7df2",
+      "reviewedAt": "2026-09-14T01:02:41.477Z",
+      "copySha256": "1936580a0e33f533b3ace04bf47c9bf71d154106dc78d13cefd9e02700435a5d",
       "reviewMethod": "humanizer-skill",
       "semanticPassAttested": true,
       "staticChecksPassed": true
