@@ -178,9 +178,35 @@
         "project-07.html"
       ],
       "resumePdfPath": "output/pdf/Wally-Mostafa-Accenture-Song-Life-Group-Account-Supervisor-Resume.pdf",
-      "publishStatus": "local-only",
+      "publishStatus": "live-verified",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-09-14T00:27:56.626Z"
+      "builtAt": "2026-09-14T00:27:56.626Z",
+      "verification": {
+        "verifiedAt": "2026-09-14T00:30:28.807Z",
+        "routeUrl": "https://wallymo.github.io/accenture-song-life-group-account-supervisor/",
+        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-Accenture-Song-Life-Group-Account-Supervisor-Resume.pdf",
+        "configUrl": "https://wallymo.github.io/scripts/packages/accenture-song-life-group-account-supervisor.json",
+        "projectUrls": [
+          "https://wallymo.github.io/accenture-song-life-group-account-supervisor/project-01.html",
+          "https://wallymo.github.io/accenture-song-life-group-account-supervisor/project-06.html",
+          "https://wallymo.github.io/accenture-song-life-group-account-supervisor/project-07.html"
+        ],
+        "redirectUrls": [],
+        "configSha256": "7b7e7f4e20affe04a310eb104a181f0090c3e21dcefc9ff9a36424813d7f4d55",
+        "pdfSha256": "aed6c8f442d6be8cdb7892a5b54fa73a029cfe07a575afb4e355fd0d35e29d24",
+        "resumeBaseProfilesUrl": "https://wallymo.github.io/scripts/resume-base-profiles.json",
+        "resumeBaseProfilesSha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108",
+        "routeSha256": "d8359594dcc194e8ca05c430862ed98f7a19b830721529d81b2d6592ad62accc",
+        "scopedProjectSha256": {
+          "project-01.html": "5fd0049c0ad92208d2ba914403dab312a8c9df4b5898e41ec88e3cba5fc0047a",
+          "project-06.html": "9bb117090d26e09a4bfadd1dd92271f2d5759296e1480d4ff194af978246f911",
+          "project-07.html": "07a56c085be30fe773eefafbe211cf02cc44dfb6c0099485b4af6c8450f6aa92"
+        },
+        "scopedProjectAssetUrls": [],
+        "scopedProjectAssetSha256": {},
+        "configInputSha256": "e93b6cbd5fe3d16ccad0120743e129e3eafc4aa3933a653ae270b6a90c4de6c2",
+        "qaBuiltAt": "2026-09-14T00:27:56.626Z"
+      }
     },
     {
       "workflowVersion": 2,
