@@ -352,7 +352,6 @@ function buildRouteLocalNextProject(
       '  <div class="next-project-inner" data-motion-reveal>',
       '    <div class="next-project-heading">',
       '      <div class="label">Next Project</div>',
-      '      <span class="next-project-number">Continue exploring</span>',
       '    </div>',
       `    <a class="next-project-preview" href="${escapeHtml(nextHref)}">`,
       '      <span class="next-project-copy">',
