@@ -501,7 +501,7 @@
           "location": "San Diego, CA",
           "dateRange": "Jun 2015 – Jul 2018",
           "bullets": [
-            "Promoted from Senior Account Executive and took the lead on Jazz Pharmaceuticals XYREM consumer work: unbranded campaigns across digital, print, and in-office channels that lifted traffic and engagement on the disease-state site",
+            "Promoted from Senior Account Executive and took the lead on Jazz Pharmaceuticals XYREM consumer work: unbranded campaigns across social media, digital, print, and in-office channels that lifted traffic and engagement on the disease-state site",
             "Led the launch of the first unbranded social campaign on Facebook and YouTube for the brand and for Jazz, built around real patients telling their own stories",
             "Oversaw an unbranded digital campaign bridging disease state and branded work; banners held a 0.37% click-through rate against a 0.17% industry benchmark and doubled qualified traffic to the brand site"
           ]
@@ -631,8 +631,8 @@
     "humanizerVersion": "2.2.0",
     "mode": "surface-only",
     "status": "passed",
-    "reviewedAt": "2026-09-13T23:46:36.150Z",
-    "copySha256": "29a52bdc5a2df6ca5c4528cd69294b722a7c2ecb6352e0826f017c8ac01f26cf",
+    "reviewedAt": "2026-09-14T00:27:41.532Z",
+    "copySha256": "2e11ad37dd35c3fc38d45a6663ed52d2200520a6af36419c85c3970a391f7df2",
     "preserved": [
       "content",
       "structure",
@@ -670,8 +670,8 @@
   },
   "qa": {
     "status": "qa-passed",
-    "builtAt": "2026-09-13T23:46:51.162Z",
-    "configInputSha256": "58d6b305d2836860ddc8c1102f68f325fcaef754494a70e0a511dbc7f85b998c",
+    "builtAt": "2026-09-14T00:27:56.626Z",
+    "configInputSha256": "e93b6cbd5fe3d16ccad0120743e129e3eafc4aa3933a653ae270b6a90c4de6c2",
     "sourceResumeSha256": "2265313e78b596a2b37d6d8f9a95081e4321b4047f142a5f0ddf22449cab4b9c",
     "resumeFoundation": {
       "id": "wally-mostafa-resume-2026-07-03",
@@ -693,7 +693,7 @@
     },
     "artifactHashes": {
       "routeSha256": "d8359594dcc194e8ca05c430862ed98f7a19b830721529d81b2d6592ad62accc",
-      "resumePdfSha256": "bb63f54d0e65b50bcad27d78eb92959c531a495d69b1ea071e0868c047d8007b",
+      "resumePdfSha256": "aed6c8f442d6be8cdb7892a5b54fa73a029cfe07a575afb4e355fd0d35e29d24",
       "coverLetterPdfSha256": null,
       "coverLetterMarkdownSha256": null,
       "scopedProjectSha256": {
@@ -719,7 +719,7 @@
       "ok": true,
       "pdfPath": "output/pdf/Wally-Mostafa-Accenture-Song-Life-Group-Account-Supervisor-Resume.pdf",
       "pageCount": 2,
-      "fileSize": 81680,
+      "fileSize": 81722,
       "annotations": [
         {
           "page": 1,
@@ -912,8 +912,8 @@
       "status": "passed",
       "version": "2.2.0",
       "mode": "surface-only",
-      "reviewedAt": "2026-09-13T23:46:36.150Z",
-      "copySha256": "29a52bdc5a2df6ca5c4528cd69294b722a7c2ecb6352e0826f017c8ac01f26cf",
+      "reviewedAt": "2026-09-14T00:27:41.532Z",
+      "copySha256": "2e11ad37dd35c3fc38d45a6663ed52d2200520a6af36419c85c3970a391f7df2",
       "reviewMethod": "humanizer-skill",
       "semanticPassAttested": true,
       "staticChecksPassed": true
