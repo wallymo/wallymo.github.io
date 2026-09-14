@@ -8,6 +8,7 @@
   "routeMode": "scoped-projects",
   "selectedProjects": [
     "project-01.html",
+    "project-04.html",
     "project-06.html",
     "project-07.html"
   ],
@@ -631,7 +632,7 @@
     "humanizerVersion": "2.2.0",
     "mode": "surface-only",
     "status": "passed",
-    "reviewedAt": "2026-09-14T00:27:41.532Z",
+    "reviewedAt": "2026-09-14T00:39:40.857Z",
     "copySha256": "2e11ad37dd35c3fc38d45a6663ed52d2200520a6af36419c85c3970a391f7df2",
     "preserved": [
       "content",
@@ -670,8 +671,8 @@
   },
   "qa": {
     "status": "qa-passed",
-    "builtAt": "2026-09-14T00:27:56.626Z",
-    "configInputSha256": "e93b6cbd5fe3d16ccad0120743e129e3eafc4aa3933a653ae270b6a90c4de6c2",
+    "builtAt": "2026-09-14T00:40:58.444Z",
+    "configInputSha256": "c8dfb2b69d5a1d3441522152066c707aefc2d3e811185b488357387a0d32ffe2",
     "sourceResumeSha256": "2265313e78b596a2b37d6d8f9a95081e4321b4047f142a5f0ddf22449cab4b9c",
     "resumeFoundation": {
       "id": "wally-mostafa-resume-2026-07-03",
@@ -692,14 +693,15 @@
       "registrySha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108"
     },
     "artifactHashes": {
-      "routeSha256": "d8359594dcc194e8ca05c430862ed98f7a19b830721529d81b2d6592ad62accc",
-      "resumePdfSha256": "aed6c8f442d6be8cdb7892a5b54fa73a029cfe07a575afb4e355fd0d35e29d24",
+      "routeSha256": "c9a7c94c6209f5ab29049c6c5878c43bdc8afa5565d63fee833f680d667d589d",
+      "resumePdfSha256": "957a8895ed0a9f5cd4fc1e609f1d397cbadcfc4282f9f621593bfb76f0b9925b",
       "coverLetterPdfSha256": null,
       "coverLetterMarkdownSha256": null,
       "scopedProjectSha256": {
-        "project-01.html": "5fd0049c0ad92208d2ba914403dab312a8c9df4b5898e41ec88e3cba5fc0047a",
-        "project-06.html": "9bb117090d26e09a4bfadd1dd92271f2d5759296e1480d4ff194af978246f911",
-        "project-07.html": "07a56c085be30fe773eefafbe211cf02cc44dfb6c0099485b4af6c8450f6aa92"
+        "project-01.html": "aa9996887fc4e478c13bde847f9e9d65724ba05ac0927f476594101d574fe70c",
+        "project-04.html": "5d6aa43b085ebbd4e9c68cd9a87a30db252346dcce3e370579000a96ac8b2cfc",
+        "project-06.html": "db35f04d8507be01d232c9c14d804f8c7e8f6ebfc048c74aa67a5ff5d96d4368",
+        "project-07.html": "195d6ac4b7b7087276048daffb3ca404b213cfaf376a9ad2d73443976eb6a0ab"
       },
       "scopedProjectAssetSha256": {}
     },
@@ -912,7 +914,7 @@
       "status": "passed",
       "version": "2.2.0",
       "mode": "surface-only",
-      "reviewedAt": "2026-09-14T00:27:41.532Z",
+      "reviewedAt": "2026-09-14T00:39:40.857Z",
       "copySha256": "2e11ad37dd35c3fc38d45a6663ed52d2200520a6af36419c85c3970a391f7df2",
       "reviewMethod": "humanizer-skill",
       "semanticPassAttested": true,
@@ -929,6 +931,10 @@
           "errors": []
         },
         {
+          "name": "desktop-project-04",
+          "errors": []
+        },
+        {
           "name": "desktop-project-06",
           "errors": []
         },
@@ -942,6 +948,10 @@
         },
         {
           "name": "mobile-project-01",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-04",
           "errors": []
         },
         {
