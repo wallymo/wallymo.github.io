@@ -626,6 +626,12 @@
       "chapters",
       "capabilities"
     ],
+    "capabilityProjects": {
+      "discover": "project-04.html",
+      "design": "project-06.html",
+      "build": "project-01.html",
+      "lead": "project-07.html"
+    },
     "workHeading": "Selected work.",
     "contactHeading": "Thanks for taking a look."
   },
@@ -672,8 +678,8 @@
   },
   "qa": {
     "status": "qa-passed",
-    "builtAt": "2026-09-14T01:04:05.784Z",
-    "configInputSha256": "7cd73cf53cc4e912eacc10f4fb75537c0f920e7fcfafef0ec404e6a5e65b7ad4",
+    "builtAt": "2026-09-14T01:21:49.843Z",
+    "configInputSha256": "65d93b67fc5dbbdf378956ebc41476c8a4ed7e66b4cb892a19fdfda8aea81d4c",
     "sourceResumeSha256": "2265313e78b596a2b37d6d8f9a95081e4321b4047f142a5f0ddf22449cab4b9c",
     "resumeFoundation": {
       "id": "wally-mostafa-resume-2026-07-03",
@@ -694,8 +700,8 @@
       "registrySha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108"
     },
     "artifactHashes": {
-      "routeSha256": "dbd4a41e293d75bd0acf6d9bfdc4f076592eaeb31f6427fed18cbe88f83ee68d",
-      "resumePdfSha256": "1fc95e197e6fa55b37ac65eb5296d8dfc1494d9581184ee09fc1179ce1855d48",
+      "routeSha256": "4f3e428e3bf7f0a0c90f89b0d6bf203284f716cc5b7907f815c5e93e483a85a9",
+      "resumePdfSha256": "9224daa9ff322a1eaa8b5afb1c02e578ca773d4211483e0e04bb8757934d0f19",
       "coverLetterPdfSha256": null,
       "coverLetterMarkdownSha256": null,
       "scopedProjectSha256": {
