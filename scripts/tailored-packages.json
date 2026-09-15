@@ -232,7 +232,7 @@
         "project-03.html"
       ],
       "resumePdfPath": "output/pdf/Wally-Mostafa-Account-Management-Resume.pdf",
-      "publishStatus": "local-only",
+      "publishStatus": "live-verified",
       "qaStatus": "qa-passed",
       "builtAt": "2026-09-15T14:48:48.931Z",
       "resumeBaseMode": "account-leadership",
@@ -244,7 +244,35 @@
           "id": "account-leadership",
           "version": 1
         }
-      ]
+      ],
+      "verification": {
+        "verifiedAt": "2026-09-15T14:55:49.336Z",
+        "routeUrl": "https://wallymo.github.io/account-management/",
+        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-Account-Management-Resume.pdf",
+        "configUrl": "https://wallymo.github.io/scripts/packages/account-management.json",
+        "projectUrls": [
+          "https://wallymo.github.io/account-management/project-02.html",
+          "https://wallymo.github.io/account-management/project-06.html",
+          "https://wallymo.github.io/account-management/project-04.html",
+          "https://wallymo.github.io/account-management/project-03.html"
+        ],
+        "redirectUrls": [],
+        "configSha256": "c32cee99e6c87b6d55f4a7d68a17e0bb718074c0abf7be472f0c9751a3ae0fe3",
+        "pdfSha256": "3644e8895ff9420b4b53a2e4f42a020e6bf5218f85511a932ffa29e9e14cdecd",
+        "resumeBaseProfilesUrl": "https://wallymo.github.io/scripts/resume-base-profiles.json",
+        "resumeBaseProfilesSha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108",
+        "routeSha256": "0b13a09b6408e790c07d10069d62e7fe62e61e9e9090818015723124e3bc9b43",
+        "scopedProjectSha256": {
+          "project-02.html": "d68680668b18b948c3c278eec0d1c99e9a15fa899069dbb4a0df12f2fbf2a1fe",
+          "project-06.html": "dd50660ac70b8c22cc7a3cd548b92813d8ee200e92f4761af5961a4e9e8f912c",
+          "project-04.html": "762d1111fc7ea538bde43b4da4c703fc23be4b4ad2922806e73b4ca8f361b405",
+          "project-03.html": "92ec560c0ab874df2313d55299bda3141cd0fd52d8e6c2b7531f4b1954caf86e"
+        },
+        "scopedProjectAssetUrls": [],
+        "scopedProjectAssetSha256": {},
+        "configInputSha256": "15ed20f76477a1fcb7e84a35b0a590ff8dd7e64673cb928cfd85f66fbfa97492",
+        "qaBuiltAt": "2026-09-15T14:48:48.931Z"
+      }
     },
     {
       "workflowVersion": 2,
