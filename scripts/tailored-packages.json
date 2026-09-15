@@ -661,6 +661,43 @@
       }
     },
     {
+      "workflowVersion": 2,
+      "contractRevision": 7,
+      "slug": "buildops-mobile-product-manager",
+      "roleTitle": "BuildOps Mobile Product Manager",
+      "artifactStem": "BuildOps-Mobile-Product-Manager",
+      "configPath": "scripts/packages/buildops-mobile-product-manager.json",
+      "targetLane": "product-ux-design",
+      "evidenceMode": "balanced",
+      "fitClass": "adjacent",
+      "positioningLane": "product-ux-design",
+      "bridgeType": "operating-center",
+      "applicationStrategy": "transferable",
+      "resumeBaseMode": "ai-product-implementation",
+      "resumeBaseLeadProfile": "ai-product-implementation",
+      "resumeBaseAction": "tailor-to-jd",
+      "accountPresentation": "consolidated",
+      "resumeBaseProfiles": [
+        {
+          "id": "ai-product-implementation",
+          "version": 1
+        }
+      ],
+      "routeMode": "scoped-projects",
+      "selectedProjects": [
+        "project-09.html",
+        "project-02.html",
+        "project-04.html",
+        "project-03.html"
+      ],
+      "resumePdfPath": "output/pdf/Wally-Mostafa-BuildOps-Mobile-Product-Manager-Resume.pdf",
+      "coverLetterPdfPath": "output/pdf/Wally-Mostafa-BuildOps-Mobile-Product-Manager-Cover-Letter.pdf",
+      "coverLetterMarkdownPath": "output/pdf/Wally-Mostafa-BuildOps-Mobile-Product-Manager-Cover-Letter.md",
+      "publishStatus": "local-only",
+      "qaStatus": "qa-passed",
+      "builtAt": "2026-09-15T15:37:19.894Z"
+    },
+    {
       "slug": "business-presentation-consultant",
       "roleTitle": "Business Presentation Consultant (PowerPoint)",
       "fitClass": "adjacent",

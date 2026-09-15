@@ -1,0 +1,932 @@
+{
+  "workflowVersion": 2,
+  "contractRevision": 7,
+  "slug": "buildops-mobile-product-manager",
+  "roleTitle": "BuildOps Mobile Product Manager",
+  "artifactStem": "BuildOps-Mobile-Product-Manager",
+  "fitClass": "adjacent",
+  "routeMode": "scoped-projects",
+  "selectedProjects": [
+    "project-09.html",
+    "project-02.html",
+    "project-04.html",
+    "project-03.html"
+  ],
+  "job": {
+    "company": "BuildOps",
+    "roleTitle": "Product Manager, Mobile",
+    "jobId": "not-provided",
+    "jobUrl": "not-provided",
+    "sourceChannel": "user-provided job description",
+    "dateCaptured": "2026-09-15",
+    "location": "Raleigh, NC; Los Angeles, CA; San Francisco, CA; Toronto, ON; or an eligible U.S. state",
+    "employmentType": "Hybrid work schedule",
+    "compensation": "Raleigh: $115,000-$140,000 base; LA/SF: $118,000-$147,000 base; Toronto: CAD 100,000-125,000 base; annual bonus opportunity",
+    "atsVendor": "unknown",
+    "rawJd": "About the job\nAbout The Job\n\nAt BuildOps, we’re building a groundbreaking software solution, purpose-built to support today’s commercial contractors. From helping our customers manage their service department all the way to project management, we’re breaking the mold and building a team that invests in our mission statement. We love driven, self-motivated folks experienced in tech start-ups and thrive in fast-paced environments. Could you be our next hire?\n\nThis candidate will join a well-funded, fast-growing technology startup with the unique opportunity to help build out a critical function for the company.\n\nAs a Product Manager on our Mobile team, you'll be the connective tissue between engineering, design, and the technicians who rely on our app every day out in the field. You'll run point on sprint planning, grooming, and retros, turn customer feedback into well-scoped tickets, and make the fast, in-the-weeds prioritization calls that keep the team shipping. Over time, you'll build deep expertise in the core mechanics that make a great mobile experience — navigation, data loading, and offline sync — and become the person other product domains turn to when they need their features to work well on mobile.\n\nWhat You'll Do:\n\nDrive sprint cadence for the mobile team — leading grooming, planning, and retros, and keeping the team focused on the right work at the right time\nWrite clear, well-scoped tickets and make the day-to-day prioritization calls (bug vs. task, now vs. next) that keep the backlog healthy and the team unblocked\nOwn release notes and feature announcements for mobile, keeping customers and the company informed on what's shipping\nMeet directly with customers and field technicians to gather feedback and turn it into concrete product improvements\nSpot when engineers are blocked and escalate quickly to keep execution moving\nEnsure fix versions and release scope stay aligned with the broader roadmap, partnering with engineering leads to ship predictably\nDevelop deep fluency in the technical fundamentals of the mobile experience — navigation, data loading, and offline sync — and use that expertise to help other product domains design features that work well on mobile\n\nWhat We Look For:\n\n2+ years of product management experience, or equivalent experience (engineering, QA, technical program management) with direct exposure to shipping software\nStrong organizational skills — comfortable owning the mechanics of agile execution (grooming, planning, standups, retros) and keeping a backlog clean and current\nClear written communication — you can write a good ticket, a crisp release note, and an announcement people actually read\nComfortable talking directly to customers and translating open-ended feedback into a scoped, actionable ticket\nGenuine curiosity about how mobile apps work under the hood — navigation patterns, data loading, offline/sync behavior — and the persistence to dig in\nA bias toward action: you'd rather ship something this sprint and iterate than wait for the perfect plan\n\nBonus:\n\nExperience with native or hybrid mobile apps (iOS, Android, or React Native) from a PM, QA, or engineering seat\nFamiliarity with field service, construction, or other frontline/offline-first mobile use cases\nExperience with Jira, Confluence, and mobile release/CI tooling\n\nCompensation\n\nRaleigh: $115,000 - $140,000 base + annual bonus opportunity \nLA/SF: $118,000 - $147,000 base + annual bonus opportunity \nToronto: 100,000 - 125,000 CAD base + annual bonus opportunity\n\nWhat we offer:\n\nGenerous equity grant, become an owner in our company!\nA comprehensive benefits package\nFlexible PTO and hybrid work schedules\nOne-time work-from-home allowance\nHubs in Los Angeles, San Francisco, Toronto, and Raleigh with hybrid work schedules and lunch provided for in-office days\nCompany events and team-building activities, both in-person and virtual\nFast-paced, collaborative, and dynamic work environment\nOpportunities for growth and career advancement\nChance to work with cutting-edge technology and innovative solutions\nThe chance to get in on the ground floor and build something truly groundbreaking for ourselves and our amazing customers\n\nWe welcome applicants from across the U.S. where we are registered to do business and able to support employment. Currently, this excludes the following states: Alaska, Hawaii, Kentucky, Mississippi, Nebraska, New Mexico, North Dakota, Rhode Island, South Dakota, West Virginia, and Wyoming. This list is based solely on operational and compliance considerations and is reviewed from time to time as our footprint grows.\n\nAbout BuildOps\n\nJoin BuildOps, the largest commercial trade platform in the country, as we transform the multi-billion dollar commercial contracting industry!\n\nWe’re not just talking incremental improvements—we’re talking a full-scale revolution, empowering the hardworking heroes who build and maintain the infrastructure that keeps our world running. See why contractors choose Buildops here.\n\nThis is your chance to be part of a rocketship. We’re fresh off a $1 billion valuation and a $127M Series C funding round (part of over $275M raised to date) led by industry-leading investors like Meritech Capital, BOND, and SE Ventures, backed by Schneider Electric (Reuters, TechCrunch, LA Business Journal) . Our latest investors join our team of industry heavyweights like Next47, former Twitter CEO Dick Costolo, former Salesforce President Gavin Patterson, and Boost Mobile CEO Stephen Stokols. Their investment is fueling our aggressive growth and our commitment to equipping contractors with AI-driven tools to conquer chaos, boost efficiency, skyrocket profitability, and ultimately, deliver exceptional service.\n\nAt BuildOps, we’re changing the game and doing the best work of our careers. You’ll be a key player in a company that’s truly making a difference for the backbone of our economy. If you’re ready to tackle big challenges, work with a passionate team, and build something extraordinary, BuildOps is the place for you. 🚀"
+  },
+  "classification": {
+    "targetLane": "product-ux-design",
+    "evidenceMode": "balanced",
+    "primarySource": "The resume shows responsibility-level work across client discovery, requirements, roadmap decisions, user research, enterprise products, and engineering handoff. It does not show formal ownership of mobile sprints, tickets, releases, or offline synchronization.",
+    "supportingSource": "The portfolio shows the work behind those claims, including user research, a tested and shipped white-label workflow, navigation decisions, and cross-functional enterprise product systems. It supports the resume but cannot replace the missing Agile and native-mobile evidence.",
+    "hardGateStatus": "pass",
+    "hardGates": [
+      {
+        "gate": "Bring at least two years of product management or equivalent experience with direct exposure to shipping software.",
+        "status": "pass",
+        "requirementId": "product-experience-and-software-shipping",
+        "evidence": "The resume shows more than six years of related product, research, and delivery responsibility across enterprise software and current product work. The portfolio independently documents a tested and shipped enterprise workflow. This is responsibility-level equivalent evidence rather than a conventional Product Manager title sequence."
+      },
+      {
+        "gate": "Work from a United States location where BuildOps can employ the candidate.",
+        "status": "pass",
+        "requirementId": "eligible-us-location",
+        "evidence": "The resume lists Raleigh, North Carolina. Raleigh has its own compensation band in the posting, and North Carolina is not listed among the excluded states."
+      }
+    ]
+  },
+  "requirements": [
+    {
+      "id": "product-experience-and-software-shipping",
+      "text": "Bring at least two years of product management or equivalent experience with direct exposure to shipping software.",
+      "priority": "hard-gate",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Current work covers product strategy, customer-led POCs, requirements, roadmap decisions, validation, and working prototypes.",
+        "Kinesso work covered more than 20 enterprise products used by 7,000+ people, while the portfolio documents a tested and shipped workflow."
+      ],
+      "proofIds": [
+        "one-block-away-01",
+        "one-block-away-04",
+        "kinesso-02"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio",
+        "cover-letter"
+      ],
+      "resumeTerms": [
+        "product strategy",
+        "roadmap decisions",
+        "working prototype"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "mobile-team-agile-cadence",
+      "text": "Drive grooming, sprint planning, standups, and retrospectives while keeping the mobile team focused and unblocked.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Kinesso work included scope, resource planning, quality reviews, and engineering handoff across more than 20 products.",
+        "The evidence does not name ownership of grooming, planning, standups, retrospectives, or a formal sprint cadence."
+      ],
+      "proofIds": [
+        "kinesso-01",
+        "heartbeat-03",
+        "one-block-away-04"
+      ],
+      "destinations": [
+        "skills",
+        "experience",
+        "cover-letter"
+      ],
+      "resumeTerms": [
+        "scope",
+        "quality reviews",
+        "engineering handoff"
+      ],
+      "matchMode": "contextual"
+    },
+    {
+      "id": "tickets-backlog-and-prioritization",
+      "text": "Write well-scoped tickets, keep the backlog current, and make day-to-day bug, task, now, and next prioritization calls.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Current work turns open-ended client needs into requirements, workflows, testable product surfaces, and roadmap decisions.",
+        "Kinesso research and adoption data informed roadmap priorities, but formal ticket authorship and backlog ownership are not documented."
+      ],
+      "proofIds": [
+        "one-block-away-01",
+        "hedgehox-03",
+        "kinesso-02"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio",
+        "cover-letter"
+      ],
+      "resumeTerms": [
+        "requirements",
+        "roadmap decisions",
+        "roadmap priorities"
+      ],
+      "matchMode": "contextual"
+    },
+    {
+      "id": "release-notes-and-announcements",
+      "text": "Own mobile release notes and feature announcements for customers and internal teams.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "proofIds": [],
+      "destinations": [
+        "application-answer"
+      ],
+      "resumeTerms": [
+        "release notes",
+        "feature announcements"
+      ],
+      "matchMode": "not-supported"
+    },
+    {
+      "id": "customer-and-technician-feedback",
+      "text": "Meet directly with customers and field technicians, then turn open-ended feedback into concrete product improvements.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "One Block Away begins with client-led questions and turns them into product concepts, demos, and roadmap decisions.",
+        "Kinesso research included interviews, testing, beta groups, analytics, and findings translated into product priorities.",
+        "Direct work with field technicians is not documented."
+      ],
+      "proofIds": [
+        "one-block-away-01",
+        "kinesso-06",
+        "kinesso-02"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio",
+        "cover-letter"
+      ],
+      "resumeTerms": [
+        "client discovery",
+        "interviews",
+        "user needs"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "engineering-blockers-and-roadmap-alignment",
+      "text": "Spot engineering blockers, escalate quickly, and keep fix versions and release scope aligned with the broader roadmap.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "The resume supports scope, resource planning, cross-functional timelines, engineering handoff, and roadmap priorities.",
+        "A named blocker escalation, fix-version process, or mobile release-scope example is not documented."
+      ],
+      "proofIds": [
+        "kinesso-01",
+        "heartbeat-03",
+        "account-management-03"
+      ],
+      "destinations": [
+        "skills",
+        "experience",
+        "cover-letter"
+      ],
+      "resumeTerms": [
+        "engineering handoff",
+        "timelines",
+        "roadmap priorities"
+      ],
+      "matchMode": "contextual"
+    },
+    {
+      "id": "mobile-technical-fluency",
+      "text": "Develop fluency in mobile navigation, data loading, and offline synchronization and use it when shaping cross-domain features.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Kinesso research and roadmap work directly addressed navigation and product-support needs across an enterprise suite.",
+        "Current product work includes responsibility for workflow behavior and backend logic.",
+        "Mobile data loading, offline synchronization, and native application architecture are not documented."
+      ],
+      "proofIds": [
+        "kinesso-02",
+        "kinesso-08",
+        "one-block-away-04"
+      ],
+      "destinations": [
+        "summary",
+        "experience",
+        "portfolio",
+        "cover-letter"
+      ],
+      "resumeTerms": [
+        "navigation",
+        "backend logic",
+        "product support"
+      ],
+      "matchMode": "contextual"
+    },
+    {
+      "id": "clear-written-communication",
+      "text": "Write clear tickets, release notes, and announcements that technical and non-technical audiences can use.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "The resume supports briefs, requirements, shared research documentation, demo narratives, and build-ready handoff.",
+        "A ticket, release-note, or feature-announcement sample is not documented."
+      ],
+      "proofIds": [
+        "account-management-03",
+        "kinesso-06",
+        "one-block-away-04"
+      ],
+      "destinations": [
+        "skills",
+        "experience",
+        "cover-letter"
+      ],
+      "resumeTerms": [
+        "briefs",
+        "requirements",
+        "shared Figma documentation"
+      ],
+      "matchMode": "contextual"
+    },
+    {
+      "id": "bias-to-action",
+      "text": "Make practical scope decisions, ship quickly, and iterate from observed feedback.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Current work turns unclear questions into working POCs, demos, client feedback, and roadmap decisions.",
+        "Claims Detector reached a functional POC and secured investor backing through a working product and iterative demo story."
+      ],
+      "proofIds": [
+        "one-block-away-01",
+        "one-block-away-04",
+        "hedgehox-01"
+      ],
+      "destinations": [
+        "summary",
+        "experience",
+        "portfolio",
+        "cover-letter"
+      ],
+      "resumeTerms": [
+        "working POCs",
+        "functional POC",
+        "client iteration"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "preferred-mobile-domain-and-tools",
+      "text": "Prefer native or hybrid mobile experience, field-service or construction context, Jira, Confluence, and mobile release or CI tooling.",
+      "priority": "preferred",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "proofIds": [],
+      "destinations": [
+        "application-answer"
+      ],
+      "resumeTerms": [
+        "React Native",
+        "field service",
+        "Jira",
+        "Confluence"
+      ],
+      "matchMode": "not-supported"
+    },
+    {
+      "id": "eligible-us-location",
+      "text": "Work from a United States state where BuildOps is registered to employ staff.",
+      "priority": "hard-gate",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The resume lists Raleigh, North Carolina.",
+        "The posting includes a Raleigh compensation band and does not exclude North Carolina."
+      ],
+      "proofIds": [],
+      "destinations": [
+        "application-answer"
+      ],
+      "resumeTerms": [
+        "Raleigh, NC",
+        "Remote"
+      ],
+      "matchMode": "exact"
+    }
+  ],
+  "fitGate": {
+    "supportedOverlap": [
+      "Current product work covers client discovery, requirements, working POCs, roadmap decisions, validation, and client iteration.",
+      "Kinesso work spanned more than 20 enterprise products used by 7,000+ people across 22 white-label brands, with direct research, scope, resource planning, quality review, and engineering-handoff responsibilities.",
+      "Research evidence includes interviews, prototype testing, beta groups, behavioral analytics, shared documentation, and findings translated into product priorities.",
+      "The Whitelabel Builder portfolio case shows direct exposure to shipped software: research and workflow definition, interviews with product managers and developers, mapped dependencies, testing, and release.",
+      "Navigation is directly supported through research and roadmap work that made a large product suite more relevant and easier to use.",
+      "Eight years of client leadership support clear briefs, production requirements, timelines, stakeholder communication, and practical follow-through."
+    ],
+    "unsupportedRequirements": [
+      "Formal ownership of grooming, sprint planning, standups, retrospectives, or an Agile delivery cadence is not documented.",
+      "Jira tickets, user stories, acceptance criteria, backlog hygiene, and bug-versus-feature triage are not documented.",
+      "Release notes, feature announcements, fix-version ownership, and mobile release-scope management are not documented.",
+      "Native or hybrid mobile product experience and technical ownership of data loading, offline behavior, or synchronization are not documented.",
+      "Construction, field-service, or other frontline offline-first product experience is not documented.",
+      "Jira, Confluence, React Native, and mobile release or CI tooling are not documented."
+    ],
+    "actualMismatches": [
+      "The documented operating center combines product strategy, UX, research, AI implementation, and enterprise web software, while this role centers on tactical mobile delivery and Agile team operations.",
+      "The industry record is healthcare, enterprise analytics, and AI products rather than construction or field service.",
+      "The resume may read senior for an execution-heavy Product Manager role that asks for two or more years of experience."
+    ],
+    "missingEvidence": [
+      "A named sprint cadence covering grooming, planning, standups, and retrospectives.",
+      "Examples of tickets, acceptance criteria, backlog maintenance, and day-to-day bug or feature prioritization.",
+      "Release notes, feature announcements, fix versions, release scope, and predictable-shipping metrics.",
+      "A specific example of identifying and escalating an engineering blocker.",
+      "Native mobile navigation, data-loading, offline-sync, or release-tooling ownership.",
+      "Direct research with field technicians or construction and field-service customers."
+    ],
+    "coverLetterBridge": {
+      "status": "recommended",
+      "rationale": "We can make the case with a cover letter by connecting more than six years of responsibility-level product work, customer research, workflow definition, roadmap decisions, enterprise software delivery, and close product-engineering collaboration to BuildOps' need for a hands-on mobile PM. The letter keeps formal mobile-team ownership as an honest growth area rather than implying prior ownership of Agile ceremonies, Jira backlogs, release notes, native mobile delivery, or offline-sync systems."
+    },
+    "resumeBase": {
+      "mode": "ai-product-implementation",
+      "sourceProfiles": [
+        {
+          "id": "ai-product-implementation",
+          "version": 1
+        }
+      ],
+      "leadProfileId": "ai-product-implementation",
+      "accountPresentation": "consolidated",
+      "action": "tailor-to-jd",
+      "rationale": "The role's operating center is customer-led product delivery, workflow definition, prioritization, and close design-engineering collaboration. The AI/Product Implementation base holds the direct product, research, workflow, and enterprise evidence. Account experience strengthens the communication case but does not make this a hybrid operating center."
+    },
+    "recommendation": "Proceed as adjacent with the AI/Product Implementation base, a quiet BuildOps showcase, and a cover letter. Lead with customer research, workflow requirements, navigation, roadmap decisions, enterprise product scale, engineering collaboration, and hands-on iteration. Keep formal Agile, backlog, release, native-mobile, field-service, and named-tool claims out."
+  },
+  "positioning": {
+    "laneId": "product-ux-design",
+    "targetIdentity": "product and experience strategy lead",
+    "employerNeed": "Keep the mobile team moving by turning field feedback into scoped work, making daily priority calls, and coordinating design and engineering around release scope.",
+    "bridgeType": "operating-center",
+    "applicationStrategy": "transferable",
+    "bridgeThesis": "customer research and workflow leadership",
+    "proofIds": [
+      "one-block-away-01",
+      "kinesso-02",
+      "kinesso-06"
+    ],
+    "remainingGap": "Formal sprint and backlog ownership, release communication, native-mobile delivery, offline-sync depth, field-service experience, and named Jira, Confluence, or mobile CI tooling are not documented."
+  },
+  "coverLetter": {
+    "trigger": "bridge-recommended",
+    "date": "2026-09-15",
+    "greeting": "Dear BuildOps hiring team,",
+    "paragraphs": [
+      "I am applying for the Product Manager, Mobile role at BuildOps. My background spans product strategy, enterprise UX, customer research, and hands-on product delivery. For more than six years, I have worked closely with product and engineering teams, turning open-ended needs into requirements, working product flows, roadmap decisions, and testable software.",
+      "At Kinesso, I led research and UX strategy for a 20+ product marketing intelligence suite used by 7,000+ people across 22 white-label brands. I built the company's first UX research practice with interviews, prototype testing, beta groups, behavioral analytics, and shared documentation. The work turned findings and adoption data into roadmap priorities for navigation, dashboards, personalization, and product support. One shipped workflow, Whitelabel Builder, grew from interviews with product managers and developers through requirements, workflow prototypes, usability testing, and release.",
+      "Today, through One Block Away, I lead discovery for client-led products and POCs. I frame the question, map the workflow, turn it into a testable product surface, and use the demo to make the next roadmap decision. Earlier account work taught me to write clear briefs, manage production requirements and timelines, and keep business, creative, UX, and development teams working from the same decision.",
+      "I am applying with responsibility-level product experience rather than a conventional Product Manager title sequence. The role would put my existing work into a more formal mobile-team cadence. BuildOps expects the person to deepen mobile technical expertise over time, and that is the honest growth edge in my background: I bring navigation, workflow, research, and product-engineering collaboration, but not prior ownership of native releases or offline synchronization.",
+      "I would welcome the chance to talk about how that background could support BuildOps' mobile team and the technicians who depend on it in the field."
+    ],
+    "closing": "Sincerely,",
+    "signature": "Wally Mostafa",
+    "proofIds": [
+      "one-block-away-01",
+      "kinesso-02",
+      "kinesso-06"
+    ]
+  },
+  "resume": {
+    "foundationId": "wally-mostafa-resume-2026-07-03",
+    "foundationVersion": 3,
+    "compositionMode": "foundation-complete",
+    "layoutDensity": "compact",
+    "summary": "Product and experience strategy lead with more than six years across enterprise software, customer research, and hands-on product delivery. My work centers on customer research and workflow leadership, turning user and stakeholder feedback into requirements, product flows, roadmap decisions, and build-ready direction. At Kinesso, I led research and UX across 20+ products used by 7,000+ people and worked with product and engineering on navigation, product support, and platform priorities. Today I carry client-led products from discovery through working POCs, validation, and handoff.",
+    "skillIds": [
+      "product-strategy-poc-delivery",
+      "research-experience-strategy",
+      "program-project-delivery",
+      "enterprise-ux-design-systems"
+    ],
+    "skills": [
+      {
+        "label": "Product Strategy & POC Delivery",
+        "description": "Discovery, scoping, requirements, prototype validation, demo narratives, build-ready logic, and production handoff"
+      },
+      {
+        "label": "Research & Experience Strategy",
+        "description": "Stakeholder interviews, competitive audits, journey maps, user flows, wireframes, prototypes, usability testing, and research-led product direction"
+      },
+      {
+        "label": "Program & Project Delivery",
+        "description": "Scoping, requirements, timelines, review routing, team coordination, risk visibility, and build-ready handoff across product, design, and client teams"
+      },
+      {
+        "label": "Enterprise UX & Design Systems",
+        "description": "Team scaling (2 to 30), enterprise analytics, workflow UX, data visualization, component libraries, and accessibility (WCAG)"
+      }
+    ],
+    "roles": {
+      "hedgehox": [
+        "Secured an investor for proprietary Claims Detection software by building the functional POC, shaping the demo story, and iterating with investors",
+        "Designed Claims Detector workflows that identify promotional claims, surface evidence gaps, and pre-populate audit-ready annotations before MLR submission",
+        "Turn pharma agency needs into product requirements and working tools for MLR claim review, brief intake, scoping, review routing, submission capture, and FDA signal monitoring",
+        "Designed the full Xenagos Bio startup biopharma website from scratch, including investor-facing structure, scientific positioning, visual direction, and hidden design-system handoff",
+        "Built Scope Generator for pharma agency finance and operations teams to manage regional rate cards, brands, sub-brands, and natural-language scope changes",
+        "Developed FDA Warning Tool concepts that connect warning-letter patterns to content-risk guidance for pharma teams"
+      ],
+      "one-block-away": [
+        "Lead client discovery and turn unclear business questions into requirements, testable product workflows, working POCs, demo flows, and roadmap decisions",
+        "Built ListingPal's AI listing-generation POC and landing page, turning basic property inputs into listing copy, social posts, ad copy, styling direction, and MLS/SEO-ready language in under 90 seconds",
+        "Built WeReady's Bailey Intelligence dashboard, translating founder inputs, GitHub signals, source health, risk scoring, and evidence trails into startup-readiness workflows",
+        "Own product strategy, UX, AI workflow design, front-end build, backend logic, demo readiness, and client iteration from first ask through working prototype",
+        "Currently building the website and sponsor strategy for a Tunisia youth soccer program, positioning the project for player advancement, community support, and donor outreach"
+      ],
+      "kinesso": [
+        "Scaled product design from 2 to 30 across the US and Poland, hiring and staffing designers, leading critiques and quality reviews, and planning scope, resources, and engineering handoff across 20+ products",
+        "Partnered with the Head of Design to create the team's first onboarding program, career roadmaps, coaching structure, and performance review workflows for new and existing employees",
+        "Built Kinesso's first UX research practice across 20+ products, including participant recruitment, interviews, prototype testing, beta groups, behavioral analytics, research tooling, shared Figma documentation, and UX checkpoints in project plans",
+        "Led UX research and strategy for a marketing intelligence suite used by 7,000+ people across 22 white-label brands; turned findings and adoption data into roadmap priorities for navigation, dashboards, brand theming, personalization, and product support",
+        "Helped shape and govern a design system with 500 components, 140 styles, 300 icons, and 50 personas, including accessibility and design quality standards; the work earned 5 Indigo Gold, 4 Indigo Silver, and Red Dot recognition",
+        "Led workshops on product discovery, ecosystem mapping, innovation, and user research; expanded the program from Kinesso teams to IPG groups and presented recommendations to executives and clients",
+        "UX lead for research and design on Kanvas, Kinesso's developer-first API services library; partnered with product and engineering on roadmap priorities and with C-suite stakeholders on monetization and go-to-market planning",
+        "Collaborated on the UX/UI build of Digital Experience Audit, turning channel scoring, benchmarks, and recommendations into a repeatable workflow with data visualization and presentation-ready client outputs",
+        "Led a three-person team to second place in Kinesso's inaugural innovation challenge with an accessibility panel concept; later advised the next cohort and contributed to accessibility playbook and keyboard interaction standards"
+      ],
+      "omnicom": [
+        "Supported oncology accounts as a freelance UX designer, combining UX design and account-management experience to strengthen regulated healthcare work",
+        "Championed UX best practices across account, strategy, creative, and delivery conversations, translating brand goals into clearer user flows, content structure, and digital recommendations"
+      ],
+      "heartbeat": [
+        "Led UX research and experience strategy for pharma and healthcare work, translating stakeholder input, competitive audits, and user needs into digital product direction",
+        "Created journey maps, site maps, user flows, wireframes, and prototypes for patient, HCP, and internal brand-team experiences across regulated healthcare programs",
+        "Partnered with strategy, creative, account, and engineering teams to move UX recommendations from research findings into build-ready product and campaign experiences"
+      ],
+      "account-management": [
+        "8 years managing Fortune 500 pharma and healthcare clients and brand budgets up to $20M across CNS/neurology, psychiatry, cardiovascular/metabolic, and sleep/wakefulness brands including NUVIGIL, Namenda XR, Lipitor, and Zoloft",
+        "One of two account consumer leads on FCB Health's largest pharma account across all verticals: TV, radio, digital, gaming, Times Square, unbranded campaigns, brand planning, and MLR review",
+        "Translated client and brand strategy into briefs, creative feedback, production requirements, priorities, timelines, and MLR-ready delivery across account, creative, UX, and development teams"
+      ]
+    },
+    "sourceBulletIds": {
+      "hedgehox": [
+        "hedgehox-01",
+        "hedgehox-02",
+        "hedgehox-03",
+        "hedgehox-04",
+        "hedgehox-05",
+        "hedgehox-06"
+      ],
+      "one-block-away": [
+        "one-block-away-01",
+        "one-block-away-02",
+        "one-block-away-03",
+        "one-block-away-04",
+        "one-block-away-05"
+      ],
+      "kinesso": [
+        "kinesso-01",
+        "kinesso-05",
+        "kinesso-06",
+        "kinesso-02",
+        "kinesso-04",
+        "kinesso-07",
+        "kinesso-08",
+        "kinesso-03",
+        "kinesso-09"
+      ],
+      "omnicom": [
+        "omnicom-01",
+        "omnicom-02"
+      ],
+      "heartbeat": [
+        "heartbeat-01",
+        "heartbeat-02",
+        "heartbeat-03"
+      ],
+      "account-management": [
+        "account-management-01",
+        "account-management-02",
+        "account-management-03"
+      ]
+    }
+  },
+  "hero": {
+    "eyebrow": "BuildOps | Selected Work",
+    "tags": [
+      "Product workflows",
+      "User research",
+      "Enterprise delivery"
+    ],
+    "intro": "Here are a few recent projects that may be useful context alongside my resume for the Mobile Product Manager role. I chose work focused on user research, product workflows, and collaboration with product and engineering teams."
+  },
+  "contact": {
+    "prompt": "Email is the best way to reach me. My resume is available here as well.",
+    "signoff": "Product workflows | user research | enterprise delivery"
+  },
+  "route": {
+    "presentation": "showcase",
+    "heroIntent": "resume-support",
+    "showcaseSections": [
+      "chapters"
+    ],
+    "workHeading": "Selected product work.",
+    "contactHeading": "Thanks for taking a look."
+  },
+  "copyReview": {
+    "humanizerVersion": "2.2.0",
+    "mode": "surface-only",
+    "status": "passed",
+    "reviewedAt": "2026-09-15T15:36:56.414Z",
+    "copySha256": "f20163ac49fc45ffc11a458852ada868186b86501dd876a1e5373be8458c3a3a",
+    "preserved": [
+      "content",
+      "structure",
+      "claims",
+      "ending"
+    ],
+    "rewriteAuthorized": false,
+    "reviewMethod": "humanizer-skill",
+    "semanticPassAttested": true,
+    "staticChecksPassed": true,
+    "finalAntiAiPass": true,
+    "remainingTells": []
+  },
+  "constraints": {
+    "doNotClaim": [
+      "Owned mobile sprint ceremonies",
+      "Managed a Jira backlog",
+      "Wrote mobile release notes",
+      "Native mobile Product Manager",
+      "Offline synchronization expert",
+      "Field-service product experience",
+      "Construction software experience",
+      "React Native experience",
+      "Mobile CI ownership",
+      "Conventional Product Manager tenure",
+      "Fast-growth SaaS operator"
+    ],
+    "blockedTerms": [
+      "Jira expert",
+      "Confluence expert",
+      "React Native PM",
+      "offline-sync expert",
+      "owned fix versions",
+      "field technician research",
+      "construction SaaS",
+      "mobile release owner"
+    ]
+  },
+  "privacy": {
+    "publicSafe": true,
+    "notes": "Contains only the public BuildOps job description supplied by the user and public-safe evidence from the resume and portfolio. It excludes recruiter details, application answers, compensation decisions, private eligibility information, and submission state."
+  },
+  "qa": {
+    "status": "qa-passed",
+    "builtAt": "2026-09-15T15:37:19.894Z",
+    "configInputSha256": "4af35ba0fbb83f55999164de5bb2c64717b2cdcda0a59d08cd93608c06c600ed",
+    "sourceResumeSha256": "2265313e78b596a2b37d6d8f9a95081e4321b4047f142a5f0ddf22449cab4b9c",
+    "resumeFoundation": {
+      "id": "wally-mostafa-resume-2026-07-03",
+      "sourcePdfSha256": "f9b05b6c3c134262b1af6c5734363daf4385cf335407a139779a37d138adf1aa"
+    },
+    "resumeBase": {
+      "mode": "ai-product-implementation",
+      "sourceProfiles": [
+        {
+          "id": "ai-product-implementation",
+          "version": 1
+        }
+      ],
+      "leadProfileId": "ai-product-implementation",
+      "accountPresentation": "consolidated",
+      "action": "tailor-to-jd",
+      "registryVersion": 1,
+      "registrySha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108"
+    },
+    "artifactHashes": {
+      "routeSha256": "6e71f80e7150b21f367ba4f5af1d1dc91f9f8e5cef6fdacc8c5ea023e2192917",
+      "resumePdfSha256": "f4712adb6ed8c8dea102ee12ae321ad8f40555052f5a4628582b818a536e4b07",
+      "coverLetterPdfSha256": "7a5409b8c839a567ea915c9b80ca288fb04df42e1435a250a84efb01012c4a0e",
+      "coverLetterMarkdownSha256": "6d541a4d9e73f7d1bf742b9fd6538be17eced48d958c91cc899f506c1754121a",
+      "scopedProjectSha256": {
+        "project-09.html": "cb150c350d07d22cd452b841f7683e5f016bac5db30a3862cfe05d7e110ed3b3",
+        "project-02.html": "b4ae963af883fa209a508b67dbc9ff0d7fae5aa6bef755f7a8482683c51a8337",
+        "project-04.html": "d7d457230446c968a1a3636de86e47c2ff7e824a2f5600134f625cc4fde4ab0f",
+        "project-03.html": "479a9f0cfd5c2e510f022e2bf4781a9a814d45fde6c74119f788f433d7bae48b"
+      },
+      "scopedProjectAssetSha256": {}
+    },
+    "renderer": {
+      "browser": {
+        "name": "chrome-headless-shell",
+        "version": "Google Chrome for Testing 151.0.7922.34"
+      },
+      "htmlPath": "tmp/tailored-resumes/buildops-mobile-product-manager.html",
+      "pdfPath": "output/pdf/Wally-Mostafa-BuildOps-Mobile-Product-Manager-Resume.pdf",
+      "fontWait": true,
+      "fontProfile": "portfolio-pdf"
+    },
+    "coverLetterRenderer": {
+      "browser": {
+        "name": "chrome-headless-shell",
+        "version": "Google Chrome for Testing 151.0.7922.34"
+      },
+      "htmlPath": "tmp/tailored-resumes/buildops-mobile-product-manager-cover-letter.html",
+      "pdfPath": "output/pdf/Wally-Mostafa-BuildOps-Mobile-Product-Manager-Cover-Letter.pdf",
+      "fontWait": true,
+      "fontProfile": "portfolio-pdf"
+    },
+    "coverLetter": {
+      "ok": true,
+      "failures": [],
+      "pageCount": 1,
+      "sizeBytes": 24478,
+      "templateVersion": "real-chemistry-21grams-v1",
+      "fonts": {
+        "display": "Syne 800",
+        "body": "Instrument Sans 400/600",
+        "type3Fonts": false
+      },
+      "layout": {
+        "page": "Letter",
+        "margin": "0.58in 0.62in",
+        "header": "centered-rule"
+      }
+    },
+    "ats": {
+      "ok": true,
+      "pdfPath": "output/pdf/Wally-Mostafa-BuildOps-Mobile-Product-Manager-Resume.pdf",
+      "pageCount": 2,
+      "fileSize": 78197,
+      "annotations": [
+        {
+          "page": 1,
+          "uri": "mailto:wmostafa12@gmail.com"
+        },
+        {
+          "page": 1,
+          "uri": "https://linkedin.com/in/wallymo"
+        },
+        {
+          "page": 1,
+          "uri": "https://wallymo.github.io/buildops-mobile-product-manager/"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/6748"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/4629"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.red-dot.org/project/dxa-digital-experience-audit-55219"
+        }
+      ],
+      "fontCompatibility": {
+        "type3Fonts": false
+      },
+      "coverage": [
+        {
+          "id": "product-experience-and-software-shipping",
+          "requirement": "Bring at least two years of product management or equivalent experience with direct exposure to shipping software.",
+          "priority": "hard-gate",
+          "evidenceStatus": "direct",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "product strategy",
+            "roadmap decisions",
+            "working prototype"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "mobile-team-agile-cadence",
+          "requirement": "Drive grooming, sprint planning, standups, and retrospectives while keeping the mobile team focused and unblocked.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "contextual",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "scope",
+            "quality reviews",
+            "engineering handoff"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "tickets-backlog-and-prioritization",
+          "requirement": "Write well-scoped tickets, keep the backlog current, and make day-to-day bug, task, now, and next prioritization calls.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "contextual",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "requirements",
+            "roadmap decisions",
+            "roadmap priorities"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "release-notes-and-announcements",
+          "requirement": "Own mobile release notes and feature announcements for customers and internal teams.",
+          "priority": "core",
+          "evidenceStatus": "none",
+          "matchMode": "not-supported",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "release notes",
+            "feature announcements"
+          ]
+        },
+        {
+          "id": "customer-and-technician-feedback",
+          "requirement": "Meet directly with customers and field technicians, then turn open-ended feedback into concrete product improvements.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "client discovery",
+            "interviews",
+            "user needs"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "engineering-blockers-and-roadmap-alignment",
+          "requirement": "Spot engineering blockers, escalate quickly, and keep fix versions and release scope aligned with the broader roadmap.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "contextual",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "engineering handoff",
+            "timelines",
+            "roadmap priorities"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "mobile-technical-fluency",
+          "requirement": "Develop fluency in mobile navigation, data loading, and offline synchronization and use it when shaping cross-domain features.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "contextual",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "navigation",
+            "backend logic",
+            "product support"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "clear-written-communication",
+          "requirement": "Write clear tickets, release notes, and announcements that technical and non-technical audiences can use.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "contextual",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "briefs",
+            "requirements",
+            "shared Figma documentation"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "bias-to-action",
+          "requirement": "Make practical scope decisions, ship quickly, and iterate from observed feedback.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "working POCs",
+            "functional POC",
+            "client iteration"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "preferred-mobile-domain-and-tools",
+          "requirement": "Prefer native or hybrid mobile experience, field-service or construction context, Jira, Confluence, and mobile release or CI tooling.",
+          "priority": "preferred",
+          "evidenceStatus": "none",
+          "matchMode": "not-supported",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "React Native",
+            "field service",
+            "Jira",
+            "Confluence"
+          ]
+        },
+        {
+          "id": "eligible-us-location",
+          "requirement": "Work from a United States state where BuildOps is registered to employ staff.",
+          "priority": "hard-gate",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "Raleigh, NC",
+            "Remote"
+          ],
+          "missingTerms": []
+        }
+      ],
+      "failures": [],
+      "warnings": []
+    },
+    "humanizer": {
+      "status": "passed",
+      "version": "2.2.0",
+      "mode": "surface-only",
+      "reviewedAt": "2026-09-15T15:36:56.414Z",
+      "copySha256": "f20163ac49fc45ffc11a458852ada868186b86501dd876a1e5373be8458c3a3a",
+      "reviewMethod": "humanizer-skill",
+      "semanticPassAttested": true,
+      "staticChecksPassed": true
+    },
+    "route": {
+      "viewports": [
+        {
+          "name": "desktop",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-09",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-02",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-04",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-03",
+          "errors": []
+        },
+        {
+          "name": "mobile",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-09",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-02",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-04",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-03",
+          "errors": []
+        }
+      ],
+      "errors": []
+    }
+  }
+}
