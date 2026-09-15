@@ -4106,9 +4106,41 @@
       "resumePdfPath": "output/pdf/Wally-Mostafa-Tallwave-AI-Deployment-Strategist-Resume.pdf",
       "coverLetterPdfPath": "output/pdf/Wally-Mostafa-Tallwave-AI-Deployment-Strategist-Cover-Letter.pdf",
       "coverLetterMarkdownPath": "output/pdf/Wally-Mostafa-Tallwave-AI-Deployment-Strategist-Cover-Letter.md",
-      "publishStatus": "local-only",
+      "publishStatus": "live-verified",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-09-15T21:43:03.046Z"
+      "builtAt": "2026-09-15T21:43:03.046Z",
+      "verification": {
+        "verifiedAt": "2026-09-15T21:44:36.798Z",
+        "routeUrl": "https://wallymo.github.io/tallwave-ai-deployment-strategist/",
+        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-Tallwave-AI-Deployment-Strategist-Resume.pdf",
+        "configUrl": "https://wallymo.github.io/scripts/packages/tallwave-ai-deployment-strategist.json",
+        "projectUrls": [
+          "https://wallymo.github.io/tallwave-ai-deployment-strategist/project-01.html",
+          "https://wallymo.github.io/tallwave-ai-deployment-strategist/project-02.html",
+          "https://wallymo.github.io/tallwave-ai-deployment-strategist/project-04.html",
+          "https://wallymo.github.io/tallwave-ai-deployment-strategist/project-03.html"
+        ],
+        "redirectUrls": [],
+        "configSha256": "c989cdf13ae31906ab64c73dd3e152bddacd357ec4e514ab148321f8bb0357b9",
+        "pdfSha256": "edac6c13b9b5b214965ddd2851ffddd9fdf82138b6eb62b88c59c6f4504f3137",
+        "resumeBaseProfilesUrl": "https://wallymo.github.io/scripts/resume-base-profiles.json",
+        "resumeBaseProfilesSha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108",
+        "coverLetterPdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-Tallwave-AI-Deployment-Strategist-Cover-Letter.pdf",
+        "coverLetterMarkdownUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-Tallwave-AI-Deployment-Strategist-Cover-Letter.md",
+        "coverLetterPdfSha256": "ef47f41a305a330d0d757af37a2b7e60d7f0f656fd48800de8d646fb1d732f5e",
+        "coverLetterMarkdownSha256": "0b39fd7d7db095e3e6b8d802502f32c48cb4a8d19857351ecb280a225449c075",
+        "routeSha256": "b21a62e2228a1f75af0440741dc14fbf8ab27b4333b632ba3053f5cfd14eedfd",
+        "scopedProjectSha256": {
+          "project-01.html": "843b021c26523873293bf3593141cacc2eab1f42418be453bf3f94d40ef6fa0d",
+          "project-02.html": "893d4b74f164d475b0a642c6c9627e52c4342d9b6cff57a40baa2100d8ee8d76",
+          "project-04.html": "34dd17b03c6ae4fa80593e6e1ffd9cda0c1848edb9d804b85f4b50f976aa478e",
+          "project-03.html": "e7ba5cabb47ed1bb5b1ea2807e63f481cfe0339cdfa51e4702be4efa618c3092"
+        },
+        "scopedProjectAssetUrls": [],
+        "scopedProjectAssetSha256": {},
+        "configInputSha256": "cd455127fe8513ebacaad842390b38c4bcfb55f2f644cef6c8be49597ee9d643",
+        "qaBuiltAt": "2026-09-15T21:43:03.046Z"
+      }
     },
     {
       "slug": "targetbase-senior-director-strategy",
