@@ -428,6 +428,12 @@
     "foundationVersion": 3,
     "compositionMode": "foundation-complete",
     "layoutDensity": "compact",
+    "roleContinuationBreaks": [
+      {
+        "roleId": "kinesso",
+        "afterBullet": 2
+      }
+    ],
     "summary": "Product and experience strategy lead with more than six years across enterprise software, customer research, and hands-on product delivery. My work centers on customer research and workflow leadership, turning user and stakeholder feedback into requirements, product flows, roadmap decisions, and build-ready direction. At Kinesso, I led research and UX across 20+ products used by 7,000+ people and worked with product and engineering on navigation, product support, and platform priorities. Today I carry client-led products from discovery through working POCs, validation, and handoff.",
     "skillIds": [
       "product-strategy-poc-delivery",
@@ -470,10 +476,10 @@
         "Currently building the website and sponsor strategy for a Tunisia youth soccer program, positioning the project for player advancement, community support, and donor outreach"
       ],
       "kinesso": [
+        "Led UX research and strategy for a marketing intelligence suite used by 7,000+ people across 22 white-label brands; turned findings and adoption data into roadmap priorities for navigation, dashboards, brand theming, personalization, and product support",
         "Scaled product design from 2 to 30 across the US and Poland, hiring and staffing designers, leading critiques and quality reviews, and planning scope, resources, and engineering handoff across 20+ products",
         "Partnered with the Head of Design to create the team's first onboarding program, career roadmaps, coaching structure, and performance review workflows for new and existing employees",
         "Built Kinesso's first UX research practice across 20+ products, including participant recruitment, interviews, prototype testing, beta groups, behavioral analytics, research tooling, shared Figma documentation, and UX checkpoints in project plans",
-        "Led UX research and strategy for a marketing intelligence suite used by 7,000+ people across 22 white-label brands; turned findings and adoption data into roadmap priorities for navigation, dashboards, brand theming, personalization, and product support",
         "Helped shape and govern a design system with 500 components, 140 styles, 300 icons, and 50 personas, including accessibility and design quality standards; the work earned 5 Indigo Gold, 4 Indigo Silver, and Red Dot recognition",
         "Led workshops on product discovery, ecosystem mapping, innovation, and user research; expanded the program from Kinesso teams to IPG groups and presented recommendations to executives and clients",
         "UX lead for research and design on Kanvas, Kinesso's developer-first API services library; partnered with product and engineering on roadmap priorities and with C-suite stakeholders on monetization and go-to-market planning",
@@ -512,10 +518,10 @@
         "one-block-away-05"
       ],
       "kinesso": [
+        "kinesso-02",
         "kinesso-01",
         "kinesso-05",
         "kinesso-06",
-        "kinesso-02",
         "kinesso-04",
         "kinesso-07",
         "kinesso-08",
@@ -564,8 +570,8 @@
     "humanizerVersion": "2.2.0",
     "mode": "surface-only",
     "status": "passed",
-    "reviewedAt": "2026-09-15T15:36:56.414Z",
-    "copySha256": "f20163ac49fc45ffc11a458852ada868186b86501dd876a1e5373be8458c3a3a",
+    "reviewedAt": "2026-09-15T17:49:38.424Z",
+    "copySha256": "dbf17f6b8ec81a5289912838ca34fff6c9fe6e23679c45e06edb767a55e23a42",
     "preserved": [
       "content",
       "structure",
@@ -610,8 +616,8 @@
   },
   "qa": {
     "status": "qa-passed",
-    "builtAt": "2026-09-15T15:37:19.894Z",
-    "configInputSha256": "4af35ba0fbb83f55999164de5bb2c64717b2cdcda0a59d08cd93608c06c600ed",
+    "builtAt": "2026-09-15T17:49:58.685Z",
+    "configInputSha256": "2bb0a3791bdd13802ba81463908102278db072a07e9eb2c01662800691903c2c",
     "sourceResumeSha256": "2265313e78b596a2b37d6d8f9a95081e4321b4047f142a5f0ddf22449cab4b9c",
     "resumeFoundation": {
       "id": "wally-mostafa-resume-2026-07-03",
@@ -633,8 +639,8 @@
     },
     "artifactHashes": {
       "routeSha256": "6e71f80e7150b21f367ba4f5af1d1dc91f9f8e5cef6fdacc8c5ea023e2192917",
-      "resumePdfSha256": "f4712adb6ed8c8dea102ee12ae321ad8f40555052f5a4628582b818a536e4b07",
-      "coverLetterPdfSha256": "7a5409b8c839a567ea915c9b80ca288fb04df42e1435a250a84efb01012c4a0e",
+      "resumePdfSha256": "1ff5a7eb31eb79f3a290280a99793080b6fe6b59701ea76342cb9c6a4f292f9e",
+      "coverLetterPdfSha256": "26ffeae9d8d8365a810c5039667cfd2ea7e3c87bce70723792c3c0bdb00b0beb",
       "coverLetterMarkdownSha256": "6d541a4d9e73f7d1bf742b9fd6538be17eced48d958c91cc899f506c1754121a",
       "scopedProjectSha256": {
         "project-09.html": "cb150c350d07d22cd452b841f7683e5f016bac5db30a3862cfe05d7e110ed3b3",
@@ -685,7 +691,7 @@
       "ok": true,
       "pdfPath": "output/pdf/Wally-Mostafa-BuildOps-Mobile-Product-Manager-Resume.pdf",
       "pageCount": 2,
-      "fileSize": 78197,
+      "fileSize": 79192,
       "annotations": [
         {
           "page": 1,
@@ -877,8 +883,8 @@
       "status": "passed",
       "version": "2.2.0",
       "mode": "surface-only",
-      "reviewedAt": "2026-09-15T15:36:56.414Z",
-      "copySha256": "f20163ac49fc45ffc11a458852ada868186b86501dd876a1e5373be8458c3a3a",
+      "reviewedAt": "2026-09-15T17:49:38.424Z",
+      "copySha256": "dbf17f6b8ec81a5289912838ca34fff6c9fe6e23679c45e06edb767a55e23a42",
       "reviewMethod": "humanizer-skill",
       "semanticPassAttested": true,
       "staticChecksPassed": true

@@ -693,41 +693,9 @@
       "resumePdfPath": "output/pdf/Wally-Mostafa-BuildOps-Mobile-Product-Manager-Resume.pdf",
       "coverLetterPdfPath": "output/pdf/Wally-Mostafa-BuildOps-Mobile-Product-Manager-Cover-Letter.pdf",
       "coverLetterMarkdownPath": "output/pdf/Wally-Mostafa-BuildOps-Mobile-Product-Manager-Cover-Letter.md",
-      "publishStatus": "live-verified",
+      "publishStatus": "local-only",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-09-15T15:37:19.894Z",
-      "verification": {
-        "verifiedAt": "2026-09-15T15:45:20.412Z",
-        "routeUrl": "https://wallymo.github.io/buildops-mobile-product-manager/",
-        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-BuildOps-Mobile-Product-Manager-Resume.pdf",
-        "configUrl": "https://wallymo.github.io/scripts/packages/buildops-mobile-product-manager.json",
-        "projectUrls": [
-          "https://wallymo.github.io/buildops-mobile-product-manager/project-09.html",
-          "https://wallymo.github.io/buildops-mobile-product-manager/project-02.html",
-          "https://wallymo.github.io/buildops-mobile-product-manager/project-04.html",
-          "https://wallymo.github.io/buildops-mobile-product-manager/project-03.html"
-        ],
-        "redirectUrls": [],
-        "configSha256": "dc70cbe393dc6e873936434326eadc6c9b9c662abb6c8d6cef922d87866d9bf8",
-        "pdfSha256": "f4712adb6ed8c8dea102ee12ae321ad8f40555052f5a4628582b818a536e4b07",
-        "resumeBaseProfilesUrl": "https://wallymo.github.io/scripts/resume-base-profiles.json",
-        "resumeBaseProfilesSha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108",
-        "coverLetterPdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-BuildOps-Mobile-Product-Manager-Cover-Letter.pdf",
-        "coverLetterMarkdownUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-BuildOps-Mobile-Product-Manager-Cover-Letter.md",
-        "coverLetterPdfSha256": "7a5409b8c839a567ea915c9b80ca288fb04df42e1435a250a84efb01012c4a0e",
-        "coverLetterMarkdownSha256": "6d541a4d9e73f7d1bf742b9fd6538be17eced48d958c91cc899f506c1754121a",
-        "routeSha256": "6e71f80e7150b21f367ba4f5af1d1dc91f9f8e5cef6fdacc8c5ea023e2192917",
-        "scopedProjectSha256": {
-          "project-09.html": "cb150c350d07d22cd452b841f7683e5f016bac5db30a3862cfe05d7e110ed3b3",
-          "project-02.html": "b4ae963af883fa209a508b67dbc9ff0d7fae5aa6bef755f7a8482683c51a8337",
-          "project-04.html": "d7d457230446c968a1a3636de86e47c2ff7e824a2f5600134f625cc4fde4ab0f",
-          "project-03.html": "479a9f0cfd5c2e510f022e2bf4781a9a814d45fde6c74119f788f433d7bae48b"
-        },
-        "scopedProjectAssetUrls": [],
-        "scopedProjectAssetSha256": {},
-        "configInputSha256": "4af35ba0fbb83f55999164de5bb2c64717b2cdcda0a59d08cd93608c06c600ed",
-        "qaBuiltAt": "2026-09-15T15:37:19.894Z"
-      }
+      "builtAt": "2026-09-15T17:49:58.685Z"
     },
     {
       "slug": "business-presentation-consultant",
