@@ -8,8 +8,9 @@
   "routeMode": "scoped-projects",
   "selectedProjects": [
     "project-02.html",
-    "project-03.html",
-    "project-06.html"
+    "project-06.html",
+    "project-04.html",
+    "project-03.html"
   ],
   "job": {
     "company": "General recruiter and networking use",
@@ -17,7 +18,7 @@
     "jobId": "general-profile",
     "jobUrl": "not-provided",
     "sourceChannel": "user-requested-general-resume",
-    "dateCaptured": "2026-08-03",
+    "dateCaptured": "2026-09-15",
     "location": "Raleigh, NC; remote opportunities",
     "atsVendor": "not-applicable",
     "rawJd": "General recruiter and networking profile, not an employer posting.\n\nTarget: Account Manager, Senior Account Manager, Account Supervisor, Client Services, Client Partner, and adjacent relationship-led delivery roles across agencies, brands, technology-enabled services, and other industries.\n\nCore work: own client relationships; understand the business problem behind the request; translate priorities into clear briefs, scopes, budgets, timelines, and delivery plans; keep cross-functional teams aligned; use research, performance signals, and product understanding to make useful recommendations; and carry work from discovery through delivery.\n\nResume architecture: lead with eight years of direct account management, broken out by agency so title progression and tenure are visible. Keep the verified healthcare and pharma history as evidence, but frame it as transferable client leadership rather than the target industry. Follow with recent UX, enterprise product, team leadership, and AI implementation experience that strengthens the account-management case.\n\nThis package must be fit-gated again against each employer's actual job description before application. Renewals, retention, quota, expansion revenue, contract negotiation, Salesforce, CRM administration, and SaaS portfolio ownership remain unsupported unless a future evidence review establishes them."
@@ -498,13 +499,13 @@
     }
   },
   "hero": {
-    "eyebrow": "Account Management | Client Leadership",
+    "eyebrow": "Account Management | Selected Work",
     "tags": [
-      "8 years of account leadership",
-      "Budgets up to $20M",
-      "UX, product and AI perspective"
+      "Client discovery",
+      "Cross-functional delivery",
+      "Enterprise product work"
     ],
-    "intro": "I'm returning to account management after eight years running Fortune 500 accounts, Account Coordinator through Account Supervisor, with budgets up to $20M. What's below is extra: a look at what I've been up to since, and what I'm up to now. It's the work that makes me a different account person, still keeping the relationship at the center."
+    "intro": "I pulled together four recent projects to go with my account management resume. They show the client discovery, cross-functional delivery, product adoption, and enterprise work that followed my agency account roles."
   },
   "contact": {
     "prompt": "Email is the best way to reach me.",
@@ -542,8 +543,8 @@
   },
   "qa": {
     "status": "qa-passed",
-    "builtAt": "2026-08-04T00:10:22.783Z",
-    "configInputSha256": "41ec0144a14b0d43bcfe60bf63077b20a66dcb686ef657fa2f0f400840bebafc",
+    "builtAt": "2026-09-15T14:48:48.931Z",
+    "configInputSha256": "15ed20f76477a1fcb7e84a35b0a590ff8dd7e64673cb928cfd85f66fbfa97492",
     "sourceResumeSha256": "2265313e78b596a2b37d6d8f9a95081e4321b4047f142a5f0ddf22449cab4b9c",
     "resumeFoundation": {
       "id": "wally-mostafa-resume-2026-07-03",
@@ -564,24 +565,27 @@
       "registrySha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108"
     },
     "artifactHashes": {
-      "routeSha256": "bd7c01ba77f806ec7fbc21ce620bf5ee10ec8f5688630ae30ef6d7f83e1ff25b",
-      "resumePdfSha256": "dc57012db18dc4be8c59554692a64b6feaa5d54726552c945748728b51ca2b2d",
+      "routeSha256": "0b13a09b6408e790c07d10069d62e7fe62e61e9e9090818015723124e3bc9b43",
+      "resumePdfSha256": "3644e8895ff9420b4b53a2e4f42a020e6bf5218f85511a932ffa29e9e14cdecd",
       "coverLetterPdfSha256": null,
       "coverLetterMarkdownSha256": null,
       "scopedProjectSha256": {
-        "project-02.html": "79cd47a346a931d1fa90eefd9ac7146d414a9b6a426defd54aac7ea7411b583e",
-        "project-03.html": "07de56b2440b4128cf8517e1051ecc0894496ce1395597adb57a0b0090867c11",
-        "project-06.html": "a4d949e7afee6b357d9968589fe6c233cf15420bd4ad451f6f026b4b0bc85de5"
-      }
+        "project-02.html": "d68680668b18b948c3c278eec0d1c99e9a15fa899069dbb4a0df12f2fbf2a1fe",
+        "project-06.html": "dd50660ac70b8c22cc7a3cd548b92813d8ee200e92f4761af5961a4e9e8f912c",
+        "project-04.html": "762d1111fc7ea538bde43b4da4c703fc23be4b4ad2922806e73b4ca8f361b405",
+        "project-03.html": "92ec560c0ab874df2313d55299bda3141cd0fd52d8e6c2b7531f4b1954caf86e"
+      },
+      "scopedProjectAssetSha256": {}
     },
     "renderer": {
       "browser": {
         "name": "chrome-headless-shell",
-        "version": "Google Chrome for Testing 149.0.7827.55"
+        "version": "Google Chrome for Testing 151.0.7922.34"
       },
       "htmlPath": "tmp/tailored-resumes/account-management.html",
       "pdfPath": "output/pdf/Wally-Mostafa-Account-Management-Resume.pdf",
-      "fontWait": false
+      "fontWait": true,
+      "fontProfile": "portfolio-pdf"
     },
     "coverLetterRenderer": null,
     "coverLetter": null,
@@ -589,7 +593,7 @@
       "ok": true,
       "pdfPath": "output/pdf/Wally-Mostafa-Account-Management-Resume.pdf",
       "pageCount": 2,
-      "fileSize": 160207,
+      "fileSize": 81204,
       "annotations": [
         {
           "page": 1,
@@ -616,6 +620,9 @@
           "uri": "https://www.red-dot.org/project/dxa-digital-experience-audit-55219"
         }
       ],
+      "fontCompatibility": {
+        "type3Fonts": false
+      },
       "coverage": [
         {
           "id": "education-and-account-experience",
@@ -721,9 +728,9 @@
     "humanizer": {
       "status": "passed",
       "version": "2.2.0",
-      "mode": "rewrite-requested",
-      "reviewedAt": "2026-08-04T00:10:14.575Z",
-      "copySha256": "f000289c986eea8019716641109c4fb3eb90a67f5875a5de27686ea593a3fa5c",
+      "mode": "surface-only",
+      "reviewedAt": "2026-09-15T14:48:09.592Z",
+      "copySha256": "5b7fcf7141fe3771c94cc8eb1a7b05972068a8ba12724b5c31f6043ea138cbef",
       "reviewMethod": "humanizer-skill",
       "semanticPassAttested": true,
       "staticChecksPassed": true
@@ -739,11 +746,15 @@
           "errors": []
         },
         {
-          "name": "desktop-project-03",
+          "name": "desktop-project-06",
           "errors": []
         },
         {
-          "name": "desktop-project-06",
+          "name": "desktop-project-04",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-03",
           "errors": []
         },
         {
@@ -755,11 +766,15 @@
           "errors": []
         },
         {
-          "name": "mobile-project-03",
+          "name": "mobile-project-06",
           "errors": []
         },
         {
-          "name": "mobile-project-06",
+          "name": "mobile-project-04",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-03",
           "errors": []
         }
       ],
@@ -768,14 +783,17 @@
   },
   "copyReview": {
     "humanizerVersion": "2.2.0",
-    "mode": "rewrite-requested",
+    "mode": "surface-only",
     "status": "passed",
-    "reviewedAt": "2026-08-04T00:10:14.575Z",
-    "copySha256": "f000289c986eea8019716641109c4fb3eb90a67f5875a5de27686ea593a3fa5c",
+    "reviewedAt": "2026-09-15T14:48:09.592Z",
+    "copySha256": "5b7fcf7141fe3771c94cc8eb1a7b05972068a8ba12724b5c31f6043ea138cbef",
     "preserved": [
-      "claims"
+      "content",
+      "structure",
+      "claims",
+      "ending"
     ],
-    "rewriteAuthorized": true,
+    "rewriteAuthorized": false,
     "reviewMethod": "humanizer-skill",
     "semanticPassAttested": true,
     "staticChecksPassed": true,
@@ -784,7 +802,18 @@
   },
   "route": {
     "presentation": "showcase",
-    "workHeading": "What I've been up to.",
+    "heroIntent": "resume-support",
+    "showcaseSections": [
+      "chapters",
+      "capabilities"
+    ],
+    "capabilityProjects": {
+      "discover": "project-04.html",
+      "design": "project-06.html",
+      "build": "project-02.html",
+      "lead": "project-03.html"
+    },
+    "workHeading": "Selected work.",
     "contactHeading": "Thanks for stopping by."
   }
 }
