@@ -254,7 +254,7 @@
   "route": {
     "presentation": "showcase",
     "heroIntent": "resume-support",
-    "showcaseSections": ["chapters", "capabilities"],
+    "showcaseSections": ["chapters"],
     "workHeading": "Selected work.",
     "contactHeading": "Thanks for stopping by."
   },

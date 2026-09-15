@@ -28,14 +28,12 @@ export function getShowcaseSectionIds(config) {
   if (getRoutePresentation(config) !== 'showcase') {
     return [];
   }
-  const configured = Array.isArray(config?.route?.showcaseSections)
-    ? config.route.showcaseSections.filter((sectionId) =>
-        SHOWCASE_SECTION_IDS.includes(sectionId)
-      )
-    : [];
-  return configured.includes('capabilities')
-    ? configured
-    : [...configured, 'capabilities'];
+  if (Array.isArray(config?.route?.showcaseSections)) {
+    return config.route.showcaseSections.filter((sectionId) =>
+      SHOWCASE_SECTION_IDS.includes(sectionId)
+    );
+  }
+  return ['capabilities'];
 }
 const RESUME_COMPOSITION_MODES = new Set([
   'foundation-complete',
@@ -2414,11 +2412,10 @@ export function validateV2Config(
             showcaseSections.length >= 1 &&
             showcaseSections.length <= SHOWCASE_SECTION_IDS.length &&
             new Set(showcaseSections).size === showcaseSections.length &&
-            showcaseSections.includes('capabilities') &&
             showcaseSections.every((sectionId) =>
               SHOWCASE_SECTION_IDS.includes(sectionId)
             )),
-        'route.showcaseSections must be a unique list that includes capabilities and may also contain chapters, how-i-build, or arc'
+        'route.showcaseSections must be a unique list containing chapters, how-i-build, capabilities, or arc'
       );
       pushError(
         errors,

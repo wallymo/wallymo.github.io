@@ -1354,7 +1354,7 @@ test(
 );
 
 test(
-  'showcase routes always retain capabilities and allow additional section restores',
+  'showcase routes preserve legacy capabilities and allow explicit section sets',
   { timeout: 180_000 },
   () => {
     const { tempRoot, config, configPath } = createBuildFixture({
@@ -1384,16 +1384,19 @@ test(
         /route\.showcaseSections must be a unique list/
       );
       assert.ok(schemaErrors(invalidShowcaseSections).length > 0);
-      const missingCapabilities = structuredClone(config);
-      missingCapabilities.route = {
+      const chaptersOnly = structuredClone(config);
+      chaptersOnly.routeMode = 'scoped-projects';
+      chaptersOnly.route = {
         presentation: 'showcase',
+        heroIntent: 'resume-support',
         showcaseSections: ['chapters'],
       };
-      assert.match(
-        validateV2Config(missingCapabilities).join('\n'),
-        /showcaseSections must be a unique list that includes capabilities/
-      );
-      assert.ok(schemaErrors(missingCapabilities).length > 0);
+      approveHumanizerReview(chaptersOnly, {
+        reviewedAt: '2026-08-03T12:00:00.000Z',
+        semanticPassComplete: true,
+      });
+      assert.deepEqual(validateV2Config(chaptersOnly), []);
+      assert.deepEqual(schemaErrors(chaptersOnly), []);
       const fullWithShowcaseSections = structuredClone(config);
       fullWithShowcaseSections.route = {
         presentation: 'full',
@@ -2119,6 +2122,7 @@ test('humanizer review is surface-only, blocks AI tells, and expires after copy 
 test('humanizer CLI records the reviewed copy and builder rejects pending copy', () => {
   const tempRoot = mkdtempSync(path.join(os.tmpdir(), 'humanizer-gate-test-'));
   try {
+    cpSync(path.join(repoRoot, 'index.html'), path.join(tempRoot, 'index.html'));
     mkdirSync(path.join(tempRoot, 'scripts', 'packages'), { recursive: true });
     cpSync(
       path.join(repoRoot, 'scripts', 'resume-foundation.json'),
@@ -4875,7 +4879,7 @@ test('scoped showcase capability lanes link consistently to selected route proje
   }
 });
 
-test('new showcase templates retain chapters and capabilities in humanizer and claim gates', () => {
+test('new showcase templates retain chapters in humanizer and claim gates', () => {
   const template = JSON.parse(readFileSync(path.join(repoRoot, 'scripts/examples/package-v2.json'), 'utf8'));
   assert.deepEqual(template.selectedProjects, [
     'project-01.html',
@@ -4883,7 +4887,7 @@ test('new showcase templates retain chapters and capabilities in humanizer and c
     'project-04.html',
     'project-03.html',
   ]);
-  assert.deepEqual(template.route.showcaseSections, ['chapters', 'capabilities']);
+  assert.deepEqual(template.route.showcaseSections, ['chapters']);
   assert.deepEqual(schemaErrors(template), []);
   const tempRoot = mkdtempSync(path.join(os.tmpdir(), 'workflow-chapter-copy-'));
   const previousRepoRoot = process.env.WORKFLOW_REPO_ROOT;
@@ -4892,11 +4896,9 @@ test('new showcase templates retain chapters and capabilities in humanizer and c
     const source = '<section id="chapters"><h2>Three chapters. One through-line.</h2><button aria-label="Read the account chapter">Account Management</button><p>I worked with client teams.</p></section><section id="capabilities"><h2>Where I create leverage.</h2><p>I turn research into product direction.</p></section>';
     writeFileSync(path.join(tempRoot, 'index.html'), source);
     const entries = showcaseSectionCopyEntries(template);
-    assert.equal(entries.length, 2);
+    assert.equal(entries.length, 1);
     assert.equal(entries[0][0], 'route.showcaseSections.chapters');
     assert.match(entries[0][1], /Account Management.*I worked with client teams.*Read the account chapter/);
-    assert.equal(entries[1][0], 'route.showcaseSections.capabilities');
-    assert.match(entries[1][1], /Where I create leverage.*research into product direction/);
     assert.ok(humanizerCopyEntries(template).some(([key]) => key === 'route.showcaseSections.chapters'));
     approveHumanizerReview(template, { reviewedAt: '2026-09-07T12:00:00.000Z', semanticPassComplete: true });
     const before = humanizerCopySha256(template);

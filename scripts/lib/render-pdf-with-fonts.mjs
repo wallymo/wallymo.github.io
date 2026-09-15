@@ -115,7 +115,7 @@ const browser = await chromium.launch({
 try {
   const page = await browser.newPage();
   await page.goto(pathToFileURL(path.resolve(options.htmlPath)).href, {
-    waitUntil: 'load',
+    waitUntil: 'domcontentloaded',
     timeout: 30_000,
   });
   if (options.fontProfile === 'portfolio-pdf') {
