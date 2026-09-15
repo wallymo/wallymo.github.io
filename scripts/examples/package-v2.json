@@ -126,7 +126,7 @@
   "coverLetter": null,
   "resume": {
     "foundationId": "wally-mostafa-resume-2026-07-03",
-    "foundationVersion": 3,
+    "foundationVersion": 4,
     "compositionMode": "foundation-complete",
     "layoutDensity": "compact",
     "summary": "AI product and implementation leader with 15 years across healthcare and enterprise software. I connect customer needs, product decisions, and delivery. I have built regulated AI tools from discovery through working software, led systems used by 7,000+ people across 22 brands, and managed $2M-$50M+ Fortune 500 accounts.",
@@ -188,7 +188,9 @@
       "heartbeat": [
         "Led UX research and experience strategy for pharma and healthcare work, translating stakeholder input, competitive audits, and user needs into digital product direction",
         "Created journey maps, site maps, user flows, wireframes, and prototypes for patient, HCP, and internal brand-team experiences across regulated healthcare programs",
-        "Partnered with strategy, creative, account, and engineering teams to move UX recommendations from research findings into build-ready product and campaign experiences"
+        "Partnered with strategy, creative, account, and engineering teams to move UX recommendations from research findings into build-ready product and campaign experiences",
+        "Led research and creation of an oncology-wide design system for interactive visual aids (iVAs) at a major pharma company, with the goal of improving field usability and development efficiency",
+        "Member of Heartbeat's ETCH (Experiential Technology) group, which ran business-driven sprints exploring voice, AR/VR, and facial recognition for agency and client use"
       ],
       "account-management": [
         "7+ years managing Fortune 500 pharma and healthcare clients with $2M-$50M+ budgets across CNS/neurology, psychiatry, cardiovascular/metabolic, and sleep/wakefulness brands including NUVIGIL, Namenda XR, Lipitor, and Zoloft",
@@ -230,7 +232,9 @@
       "heartbeat": [
         "heartbeat-01",
         "heartbeat-02",
-        "heartbeat-03"
+        "heartbeat-03",
+        "heartbeat-04",
+        "heartbeat-05"
       ],
       "account-management": [
         "account-management-01",

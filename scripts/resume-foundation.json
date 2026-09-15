@@ -1,5 +1,5 @@
 {
-  "foundationVersion": 3,
+  "foundationVersion": 4,
   "id": "wally-mostafa-resume-2026-07-03",
   "source": {
     "fileName": "Wally-Mostafa-Resume.pdf",
@@ -89,7 +89,8 @@
         "kinesso-04",
         "kinesso-05",
         "kinesso-06",
-        "kinesso-09"
+        "kinesso-09",
+        "heartbeat-04"
       ]
     },
     {
@@ -102,7 +103,8 @@
         "kinesso-07",
         "heartbeat-01",
         "heartbeat-02",
-        "heartbeat-03"
+        "heartbeat-03",
+        "heartbeat-04"
       ]
     },
     {
@@ -333,7 +335,8 @@
         "kinesso-02",
         "heartbeat-01",
         "heartbeat-02",
-        "heartbeat-03"
+        "heartbeat-03",
+        "heartbeat-04"
       ]
     }
   ],
@@ -488,6 +491,16 @@
       {
         "id": "heartbeat-03",
         "text": "Partnered with strategy, creative, account, and engineering teams to move UX recommendations from research findings into build-ready product and campaign experiences"
+      },
+      {
+        "id": "heartbeat-04",
+        "introducedInFoundationVersion": 4,
+        "text": "Led research and creation of an oncology-wide design system for interactive visual aids (iVAs) at a major pharma company, with the goal of improving field usability and development efficiency"
+      },
+      {
+        "id": "heartbeat-05",
+        "introducedInFoundationVersion": 4,
+        "text": "Member of Heartbeat's ETCH (Experiential Technology) group, which ran business-driven sprints exploring voice, AR/VR, and facial recognition for agency and client use"
       }
     ],
     "account-management": [

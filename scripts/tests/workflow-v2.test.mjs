@@ -851,6 +851,12 @@ test('revisions 5 through 7 preserve every foundation bullet in foundation-compl
     'Built and iterated the functional Claims Detection POC that secured an investor.';
   assert.deepEqual(validateV2Config(edited), []);
 
+  const legacyFoundationV3 = validConfig();
+  legacyFoundationV3.resume.foundationVersion = 3;
+  legacyFoundationV3.resume.roles.heartbeat.splice(-2);
+  legacyFoundationV3.resume.sourceBulletIds.heartbeat.splice(-2);
+  assert.deepEqual(validateV2Config(legacyFoundationV3), []);
+
   const added = validConfig();
   added.resume.roles.hedgehox.push(
     'Added a supported JD-specific result without replacing prior experience.'
