@@ -1,0 +1,1011 @@
+{
+  "workflowVersion": 2,
+  "contractRevision": 7,
+  "slug": "tallwave-ai-deployment-strategist",
+  "roleTitle": "Tallwave AI Deployment Strategist",
+  "artifactStem": "Tallwave-AI-Deployment-Strategist",
+  "fitClass": "adjacent",
+  "routeMode": "scoped-projects",
+  "selectedProjects": [
+    "project-01.html",
+    "project-02.html",
+    "project-04.html",
+    "project-03.html"
+  ],
+  "job": {
+    "company": "Tallwave",
+    "roleTitle": "AI Deployment Strategist",
+    "jobId": "M2Hl0bYK6q",
+    "jobUrl": "https://tallwave.applytojob.com/apply/M2Hl0bYK6q/AI-Deployment-Strategist",
+    "sourceChannel": "user-provided Jobgether description; employer and role verified against Tallwave's official JazzHR posting",
+    "dateCaptured": "2026-09-15",
+    "location": "Remote within the United States; regular client-site travel required",
+    "employmentType": "Full-time",
+    "atsVendor": "JazzHR",
+    "rawJd": "About the job\nThis position is listed on behalf of a partner company, who manages all applications and next steps. Our partner is looking for an AI Deployment Strategist based in the United States.\n\nThis role combines consulting, product thinking, workshop facilitation, and hands-on AI development to help large enterprises overcome delivery bottlenecks.\n\nYou will work directly with client teams to understand how work gets done, identify meaningful constraints, and turn those insights into actionable hypotheses.\n\nYou will prototype AI-powered solutions using coding agents and real data, then test them within live workflows.\n\nThe role is highly collaborative, pairing you with an Engagement Lead and Platform Engineer on individual client engagements.\n\nYou will work with mature, process-heavy organizations where adoption, measurable outcomes, and practical execution matter more than theoretical recommendations.\n\nThis is an early-career opportunity with significant ownership and a defined path toward leading engagements.\n\nRemote work is available across the U.S., with regular travel to client sites required for in-person discovery and diagnosis.\n\nAccountabilities\n\nDiagnose operational bottlenecks: Design and facilitate workshops, interviews, diagnosis sessions, and process-mapping exercises to understand how work moves through complex organizations and identify the constraints that have the greatest impact on delivery. \nDevelop actionable hypotheses: Distinguish genuine workflow constraints from lower-impact frustrations, quantify problems where possible, and define hypotheses with clear mechanisms, metrics, and timeframes that can be tested. \nPrototype AI solutions: Build functional AI-powered tool prototypes using coding agents such as Claude Code, Cursor, or comparable platforms, working with real data, real tasks, and real workflows. \nOwn AI workflows: Develop and refine prompts, agent flows, and evaluation approaches while determining whether AI-generated outputs are sufficiently useful, accurate, and reliable for testing. \nDrive adoption: Work directly with users, observe how they interact with new solutions, remove adoption barriers, and iterate until the technology is being used effectively in live work. \nMeasure and adapt: Monitor results against defined hypotheses, identify meaningful signals, communicate when assumptions are not supported, and recommend practical pivots or next steps. \nAdvise client stakeholders: Translate findings and prototypes into concise, decision-ready recommendations for sponsors and senior stakeholders, while helping prioritize the problems and opportunities worth pursuing. \nBuild trusted relationships: Work closely with operators, leaders, and client sponsors to establish credibility, navigate complex organizations, and keep engagements moving despite organizational constraints. \nCollaborate within a delivery pod: Partner daily with an Engagement Lead and Platform Engineer while contributing to the overall success of each client engagement. \nSupport continuous improvement: Bring a bias toward experimentation, speed, evidence, and practical implementation rather than extended analysis without action. \n\nRequirements\n\nProfessional experience: 2–5 years of experience in product management, UX design, service design, product design, digital product consulting, or a closely related discipline. \nWorkshop facilitation: Demonstrated experience designing and facilitating workshops with real stakeholders and converting workshop outcomes into clear decisions or actions. \nHands-on AI development: Experience building and shipping a working prototype using an AI coding agent such as Claude Code, Cursor, or a comparable tool; candidates should be able to describe or demonstrate what they built. \nAI fluency: Working knowledge of LLMs, AI agents, retrieval, evaluation, and the practical limitations of AI systems sufficient to design useful workflows around them. \nProduct and problem-solving mindset: Ability to identify critical problems in ambiguous environments, structure complex situations, and move quickly from discovery to experimentation. \nBias toward action: Comfortable shipping an imperfect but useful solution quickly, testing assumptions, and improving based on evidence and user feedback. \nCommunication skills: Strong ability to communicate clearly with both working teams and senior stakeholders, including the confidence to ask challenging questions and openly reconsider assumptions. \nWriting skills: Ability to produce concise, structured, decision-oriented documentation that communicates findings and recommendations effectively. \nClient presence: Comfortable working directly with directors, operators, sponsors, and other stakeholders in large organizations and earning trust through practical results. \nAdaptability: Comfortable operating in ambiguous, fast-moving environments where priorities evolve and experimentation is encouraged. \nNice to have: Experience with UX and product design, especially designers who combine design expertise with hands-on building skills. \nNice to have: Experience working within large or regulated enterprises, particularly in consumer goods, financial services, healthcare, or similarly complex environments. \nNice to have: Light scripting or data-analysis skills that enable you to inspect datasets and investigate problems independently. \nNice to have: Experience running design sprints, build weeks, or other time-boxed innovation and delivery formats. \nWork authorization: Must be legally authorized to work in the United States, reside within the 50 states, and not require current or future visa sponsorship. \nTravel: Willingness and ability to travel regularly to client sites is required, as discovery and diagnosis may take place in person. \n\nBenefits\n\nCompetitive compensation with opportunities for career growth and increased responsibility. \nComprehensive medical, dental, and vision coverage. \n401(k) plan. \nEmployer-paid short-term disability, long-term disability, and life insurance. \nRemote work with flexibility around working from a home office or other approved workspace. \nGenerous paid time off policy. \nCareer development opportunities and a clear path toward leading client engagements. \nCollaborative, highly skilled teams with opportunities to work alongside experienced consultants, engineers, designers, and client leaders. \nA culture that values curiosity, continuous improvement, rigorous execution, empathy, collaboration, and diverse perspectives. \nOpportunities to work on ambitious digital transformation initiatives with large enterprise clients. \nRegular exposure to emerging AI development practices and hands-on use of AI coding agents. \nSome travel opportunities associated with client engagements. \n\nHow Jobgether Works\n\nWe use an AI-powered matching process to ensure your application is reviewed quickly, objectively, and fairly against the role's core requirements. Our system identifies the top-fitting candidates, and this shortlist is then shared directly with the hiring company. The final decision and next steps (interviews, assessments) are managed by their internal team.\n\nWe appreciate your interest and wish you the best!\n\n Why Apply Through Jobgether?\n\nData Privacy Notice: By submitting your application, you acknowledge that Jobgether will process your personal data to evaluate your candidacy and share relevant information with the hiring employer. This processing is based on legitimate interest and pre-contractual measures under applicable data protection laws (including GDPR). You may exercise your rights (access, rectification, erasure, objection) at any time.\n\nWe may use artificial intelligence (AI) tools to support parts of the hiring process, such as reviewing applications, analyzing resumes, or assessing responses and identifying potential inconsistencies or verification signals in application materials based on available information. These tools assist our recruitment team but do not replace human judgment. Final hiring decisions are ultimately made by humans. If you would like more information about how your data is processed, please contact us."
+  },
+  "classification": {
+    "targetLane": "ai-product-implementation",
+    "evidenceMode": "balanced",
+    "primarySource": "The resume shows hands-on AI implementation, workshop facilitation, workflow research, enterprise product delivery, client leadership, and working POCs. It also makes the seniority mismatch visible.",
+    "supportingSource": "The portfolio shows the work behind those claims, including Claude Code and Codex in the build loop, regulated AI workflows, client-led POCs, research methods, and enterprise products used at scale.",
+    "hardGateStatus": "pass",
+    "hardGates": [
+      {
+        "gate": "Live in the United States, hold legal authorization to work in the United States, and require no current or future visa sponsorship.",
+        "status": "pass",
+        "requirementId": "us-work-authorization-and-residence",
+        "evidence": "The resume lists Raleigh, North Carolina. The candidate previously confirmed a stricter United States eligibility requirement privately; the public package records only that sanitized confirmation."
+      },
+      {
+        "gate": "Have shipped a working prototype with Claude Code, Cursor, or a comparable AI coding agent and be able to show it.",
+        "status": "pass",
+        "requirementId": "working-ai-coding-agent-prototype",
+        "evidence": "The public portfolio ties client-led POC builds to Claude Code and Codex, documents the prompt-code-run-inspect-revise loop, and shows working examples including ListingPal and WeReady."
+      },
+      {
+        "gate": "Be willing and able to travel regularly to client sites for in-person discovery and diagnosis.",
+        "status": "pass",
+        "requirementId": "regular-client-site-travel",
+        "evidence": "The candidate confirmed the mandatory travel requirement privately. This public package records only the sanitized confirmation."
+      }
+    ]
+  },
+  "requirements": [
+    {
+      "id": "us-work-authorization-and-residence",
+      "text": "Live in the United States, hold legal authorization to work in the United States, and require no current or future visa sponsorship.",
+      "priority": "hard-gate",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The resume lists Raleigh, North Carolina.",
+        "The candidate previously confirmed a stricter United States eligibility requirement privately; this public config stores only the sanitized confirmation."
+      ],
+      "proofIds": [],
+      "destinations": [
+        "experience",
+        "application-answer"
+      ],
+      "resumeTerms": [
+        "Raleigh, NC"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "working-ai-coding-agent-prototype",
+      "text": "Build and ship a working prototype with Claude Code, Cursor, or a comparable AI coding agent and be able to show it.",
+      "priority": "hard-gate",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The public homepage ties The POC Guy builds to Claude Code and Codex.",
+        "The portfolio shows working client-led POCs, including ListingPal and WeReady, with product flows and demos."
+      ],
+      "proofIds": [
+        "one-block-away-01",
+        "one-block-away-02",
+        "one-block-away-03",
+        "one-block-away-04"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "AI coding agents",
+        "Claude Code",
+        "Codex",
+        "working POCs"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "relevant-product-design-consulting-experience",
+      "text": "Bring two to five years of experience in product management, UX, service design, product design, digital product consulting, or a related discipline.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The resume shows more than six years in enterprise UX and product work, plus current AI product strategy and implementation.",
+        "The experience exceeds the posting's stated early-career range, which creates a level mismatch rather than a missing qualification."
+      ],
+      "proofIds": [
+        "one-block-away-01",
+        "kinesso-02",
+        "heartbeat-01"
+      ],
+      "destinations": [
+        "summary",
+        "experience"
+      ],
+      "resumeTerms": [
+        "15 years",
+        "enterprise UX",
+        "product strategy"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "workshop-facilitation-and-synthesis",
+      "text": "Design and facilitate stakeholder workshops, interviews, diagnosis sessions, and process-mapping exercises, then turn the output into decisions.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Kinesso work includes workshops on product discovery, ecosystem mapping, innovation, and user research, followed by recommendations to executives and clients.",
+        "The research practice covered interviews, prototype testing, beta groups, behavioral analytics, and shared documentation."
+      ],
+      "proofIds": [
+        "kinesso-07",
+        "kinesso-06"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "Led workshops",
+        "product discovery",
+        "ecosystem mapping"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "workflow-diagnosis-and-testable-hypotheses",
+      "text": "Find the constraint inside an ambiguous workflow and frame a testable hypothesis with a clear mechanism, metric, and timeframe.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "One Block Away work turns unclear client questions into testable POCs and roadmap decisions.",
+        "Kinesso research used interviews, prototype testing, beta groups, behavioral analytics, and adoption data to identify product priorities.",
+        "The evidence does not include a formal hypothesis artifact with a mechanism, metric, and timeframe."
+      ],
+      "proofIds": [
+        "one-block-away-01",
+        "kinesso-06",
+        "kinesso-02"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "client discovery",
+        "workflow mapping",
+        "roadmap decisions"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "llm-agents-retrieval-and-evaluation",
+      "text": "Understand LLMs, AI agents, retrieval, evaluation, and model limitations well enough to design useful workflows around them.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The resume documents LLM and VLM workflows, RAG and knowledge bases, prompt-defined criteria, model orchestration, and human review.",
+        "Claims Detector and WeReady show evidence handling, source trails, scoring logic, and review steps."
+      ],
+      "proofIds": [
+        "hedgehox-02",
+        "one-block-away-03",
+        "one-block-away-04"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "LLM",
+        "VLM",
+        "RAG",
+        "prompt-defined criteria",
+        "model orchestration"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "adoption-evaluation-and-measurement",
+      "text": "Test AI tools in live work, remove adoption barriers, evaluate output quality, and measure results against the original hypothesis.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Kinesso research included prototype testing, beta groups, behavioral analytics, adoption data, and roadmap decisions across enterprise products.",
+        "Current AI work shows human review, client iteration, and working POCs, but it does not document sustained AI adoption metrics in a large live enterprise workflow."
+      ],
+      "proofIds": [
+        "kinesso-06",
+        "kinesso-02",
+        "hedgehox-02"
+      ],
+      "destinations": [
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "prototype testing",
+        "adoption data",
+        "human review"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "decision-ready-client-communication",
+      "text": "Present concise findings and recommendations to operators, directors, sponsors, and senior stakeholders while keeping complex engagements moving.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Kinesso work includes recommendations presented to executives and clients.",
+        "Eight years of Fortune 500 healthcare account leadership required clear briefs, feedback, timelines, review routing, and cross-functional decisions.",
+        "Current work includes client discovery, investor demos, and roadmap decisions."
+      ],
+      "proofIds": [
+        "kinesso-07",
+        "account-management-03",
+        "one-block-away-01"
+      ],
+      "destinations": [
+        "skills",
+        "experience"
+      ],
+      "resumeTerms": [
+        "executives and clients",
+        "client discovery",
+        "presentation-ready"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "bias-for-action-and-fast-experimentation",
+      "text": "Ship an imperfect but useful solution quickly, test assumptions, and improve it from evidence and user feedback.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The POC Guy case study describes reducing each ask to the smallest version that could prove or disprove the idea.",
+        "ListingPal turns a lightweight property intake into a working campaign output in under 90 seconds."
+      ],
+      "proofIds": [
+        "one-block-away-01",
+        "one-block-away-02"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "working POCs",
+        "in under 90 seconds"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "design-and-regulated-enterprise-background",
+      "text": "Bring UX or product design experience and familiarity with large or regulated enterprises.",
+      "priority": "preferred",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The resume documents enterprise UX leadership, research, product design, and design-system work.",
+        "Healthcare experience spans regulated pharma workflows, patient and HCP experiences, and Fortune 500 client delivery."
+      ],
+      "proofIds": [
+        "kinesso-01",
+        "heartbeat-02",
+        "account-management-01"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "enterprise UX",
+        "regulated AI workflows",
+        "Fortune 500"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "light-scripting-and-data-comfort",
+      "text": "Use light scripting or data-analysis skills to inspect datasets and investigate problems independently.",
+      "priority": "preferred",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "The portfolio and resume show front-end build, backend logic, browser automation, scoring workflows, and behavioral analytics.",
+        "Independent scripting proficiency is not stated as a standalone claim."
+      ],
+      "proofIds": [
+        "one-block-away-04",
+        "kinesso-06"
+      ],
+      "destinations": [
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "front-end",
+        "backend",
+        "behavioral analytics"
+      ],
+      "matchMode": "contextual"
+    },
+    {
+      "id": "time-boxed-innovation-formats",
+      "text": "Have experience running design sprints, build weeks, or similar time-boxed innovation formats.",
+      "priority": "preferred",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Kinesso work includes an innovation challenge and workshops on innovation, but the committed foundation does not name a design sprint or build week."
+      ],
+      "proofIds": [
+        "kinesso-07",
+        "kinesso-09"
+      ],
+      "destinations": [
+        "experience"
+      ],
+      "resumeTerms": [
+        "innovation",
+        "innovation challenge"
+      ],
+      "matchMode": "contextual"
+    },
+    {
+      "id": "regular-client-site-travel",
+      "text": "Be willing and able to travel regularly to client sites for in-person discovery and diagnosis.",
+      "priority": "hard-gate",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The candidate confirmed willingness and ability to travel regularly to client sites. This public config stores only the sanitized confirmation."
+      ],
+      "proofIds": [],
+      "destinations": [
+        "application-answer"
+      ],
+      "resumeTerms": [
+        "regular client-site travel"
+      ],
+      "matchMode": "exact"
+    }
+  ],
+  "fitGate": {
+    "supportedOverlap": [
+      "Current work turns unclear client and agency problems into working AI POCs, review workflows, demos, and product decisions.",
+      "The public portfolio ties client-led POC builds to Claude Code and Codex and shows the prompt, build, inspect, and revise loop.",
+      "Kinesso work directly supports workshops, ecosystem mapping, interviews, prototype testing, beta groups, behavioral analytics, adoption data, and executive recommendations.",
+      "The resume documents enterprise products used by 7,000+ people across 22 brands and eight years of Fortune 500 healthcare client leadership with budgets up to $20M.",
+      "Healthcare, enterprise UX, regulated workflow, and design-system experience match Tallwave's preferred designer-builder profile."
+    ],
+    "unsupportedRequirements": [
+      "Cursor proficiency is not established.",
+      "A formal AI evaluation set with documented thresholds is not shown.",
+      "Sustained AI adoption metrics inside a large live enterprise workflow are not documented.",
+      "Independent light-scripting proficiency is not stated."
+    ],
+    "actualMismatches": [
+      "Tallwave calls this an early-career role and asks for two to five years, while the resume shows 15 years and recent director and founder titles."
+    ],
+    "missingEvidence": [
+      "A formal hypothesis artifact with a mechanism, metric, and timeframe.",
+      "A named evaluation set, scoring threshold, and acceptance decision for an AI workflow.",
+      "Longitudinal adoption, quality, or efficiency results from a live enterprise AI deployment.",
+      "An exact delivery-pod example with an Engagement Lead and Platform Engineer."
+    ],
+    "coverLetterBridge": {
+      "status": "recommended",
+      "rationale": "We can make the case with a cover letter by explaining that the hands-on deployment focus is intentional despite the senior titles, then connecting current AI POCs, enterprise workshops, client communication, and adoption work to Tallwave's delivery model. The letter keeps formal evaluation depth, live enterprise AI metrics, and the level mismatch visible."
+    },
+    "resumeBase": {
+      "mode": "ai-product-implementation",
+      "sourceProfiles": [
+        {
+          "id": "ai-product-implementation",
+          "version": 1
+        }
+      ],
+      "leadProfileId": "ai-product-implementation",
+      "accountPresentation": "consolidated",
+      "action": "tailor-to-jd",
+      "rationale": "The role's operating center is workflow diagnosis, AI-assisted product delivery, UX research, prototyping, evaluation, and adoption. The AI/Product Implementation base carries the direct evidence. Account leadership supports client presence but does not make this a hybrid role."
+    },
+    "recommendation": "Proceed as an adjacent fit. Lead with workflow diagnosis, workshops, Claude Code and Codex POCs, model-aware review, and enterprise adoption work. Address the early-career level directly in the cover letter. Keep Cursor, conventional software-engineering tenure, formal evaluation frameworks, live-enterprise AI metrics, and scripting proficiency out of the claim set."
+  },
+  "positioning": {
+    "laneId": "ai-product-implementation",
+    "targetIdentity": "AI deployment and product strategist",
+    "employerNeed": "Diagnose enterprise workflow constraints, build useful AI tool slices with coding agents, and stay with users until the work produces a measurable signal.",
+    "bridgeType": "level-transfer",
+    "applicationStrategy": "transferable",
+    "bridgeThesis": "diagnose real workflows, build useful AI POCs, and test them with users",
+    "proofIds": [
+      "hedgehox-03",
+      "one-block-away-04",
+      "kinesso-07"
+    ],
+    "remainingGap": "The role targets two to five years and expects formal evaluation and live-workflow adoption proof that the current record only partially documents."
+  },
+  "coverLetter": {
+    "trigger": "bridge-recommended",
+    "date": "2026-09-15",
+    "greeting": "Dear Tallwave hiring team,",
+    "paragraphs": [
+      "I am applying for Tallwave's AI Deployment Strategist role because its hands-on shape matches the work I want to keep doing: diagnose how a team works, build a useful first version, and test it with the people who will use it. My background is more senior than the posting's target range, but my recent work is deliberately close to discovery and delivery. I am looking for a seat where I can stay in that loop while growing toward leading engagements.",
+      "At Hedgehox, I turn recurring pharma agency problems into AI tools for claim review, brief intake, scoping, review routing, submission capture, and regulatory monitoring. I built the functional Claims Detector POC, shaped the demo with investors, and secured an investor. The workflow identifies promotional claims, surfaces evidence gaps, and prepares audit-ready annotations for human review. That work has taught me to move quickly without treating model output as finished work.",
+      "Through One Block Away, I lead client discovery and use Claude Code and Codex to build working POCs from unclear questions. ListingPal turns basic property inputs into campaign material in under 90 seconds. WeReady combines live sources, risk scoring, and evidence trails in a startup-readiness dashboard. I stay with the work from product strategy and UX through workflow design, implementation, demo preparation, and client iteration.",
+      "Earlier, I built Kinesso's first UX research practice across more than 20 products and led workshops on product discovery, ecosystem mapping, innovation, and user research. I presented recommendations to executives and clients, and used interviews, prototype testing, beta groups, behavioral analytics, and adoption data to shape roadmap decisions. I also spent eight years managing Fortune 500 healthcare clients and budgets up to $20M. I am comfortable asking direct questions, presenting to senior stakeholders, and keeping complicated work moving. I would like to discuss how that mix could help Tallwave put useful AI tools into real enterprise workflows."
+    ],
+    "closing": "Sincerely,",
+    "signature": "Wally Mostafa",
+    "proofIds": [
+      "hedgehox-03",
+      "one-block-away-04",
+      "kinesso-07"
+    ]
+  },
+  "resume": {
+    "foundationId": "wally-mostafa-resume-2026-07-03",
+    "foundationVersion": 4,
+    "compositionMode": "foundation-complete",
+    "layoutDensity": "compact",
+    "roleContinuationBreaks": [
+      {
+        "roleId": "kinesso",
+        "afterBullet": 2
+      }
+    ],
+    "summary": "AI deployment and product strategist with 15 years across enterprise UX, client delivery, and regulated AI workflows. I diagnose real workflows, build useful AI POCs, and test them with users. Recent work includes LLM and VLM review tools, client-led POCs built with AI coding agents including Claude Code and Codex, workshops, and enterprise products used by 7,000+ people across 22 brands.",
+    "skillIds": [
+      "ai-implementation-workflow-design",
+      "product-strategy-poc-delivery",
+      "research-experience-strategy",
+      "client-success-product-adoption"
+    ],
+    "skills": [
+      {
+        "label": "AI Implementation & Workflow Design",
+        "description": "Governed LLM/VLM workflows, multimodal review, RAG/knowledge bases, prompt-defined criteria, model orchestration, and human review surfaces"
+      },
+      {
+        "label": "Product Strategy & POC Delivery",
+        "description": "Discovery, scoping, requirements, prototype validation, demo narratives, build-ready logic, and production handoff"
+      },
+      {
+        "label": "Research & Experience Strategy",
+        "description": "Stakeholder interviews, competitive audits, journey maps, user flows, wireframes, prototypes, usability testing, and research-led product direction"
+      },
+      {
+        "label": "Client Success & Product Adoption",
+        "description": "Client discovery, adoption-focused workflows, training and roadshows, human review, and product decisions based on user needs"
+      }
+    ],
+    "roles": {
+      "hedgehox": [
+        "Turn recurring pharma agency problems into AI workflows for MLR claim review, brief intake, scoping, review routing, submission capture, and FDA signal monitoring",
+        "Built the functional Claims Detector POC, shaped the demo story, iterated with investors, and secured an investor",
+        "Designed Claims Detector workflows with prompt-defined review criteria that identify promotional claims, surface evidence gaps, and pre-populate audit-ready annotations before MLR submission",
+        "Designed the full Xenagos Bio startup biopharma website from scratch, including investor-facing structure, scientific positioning, visual direction, and hidden design-system handoff",
+        "Built Scope Generator for pharma agency finance and operations teams to manage regional rate cards, brands, sub-brands, and natural-language scope changes",
+        "Developed FDA Warning Tool concepts that connect warning-letter patterns to content-risk guidance for pharma teams"
+      ],
+      "one-block-away": [
+        "Lead client discovery and workflow mapping, then turn unclear business questions into testable AI use cases, working POCs, demo flows, and roadmap decisions",
+        "Use Claude Code and Codex to turn product and UX decisions into working POCs, covering workflow logic, interface build, backend behavior, demos, and client iteration",
+        "Built ListingPal's AI listing-generation POC and landing page, turning basic property inputs into listing copy, social posts, ad copy, styling direction, and MLS/SEO-ready language in under 90 seconds",
+        "Built WeReady's Bailey Intelligence dashboard, translating founder inputs, GitHub signals, source health, risk scoring, and evidence trails into startup-readiness workflows",
+        "Currently building the website and sponsor strategy for a Tunisia youth soccer program, positioning the project for player advancement, community support, and donor outreach"
+      ],
+      "kinesso": [
+        "Led workshops on product discovery, ecosystem mapping, innovation, and user research; expanded the program from Kinesso teams to IPG groups and presented recommendations to executives and clients",
+        "Built Kinesso's first UX research practice across 20+ products, including participant recruitment, interviews, prototype testing, beta groups, behavioral analytics, research tooling, shared Figma documentation, and UX checkpoints in project plans",
+        "Led UX research and strategy for a marketing intelligence suite used by 7,000+ people across 22 white-label brands; turned findings and adoption data into roadmap priorities for navigation, dashboards, brand theming, personalization, and product support",
+        "Scaled product design from 2 to 30 across the US and Poland, hiring and staffing designers, leading critiques and quality reviews, and planning scope, resources, and engineering handoff across 20+ products",
+        "UX lead for research and design on Kanvas, Kinesso's developer-first API services library; partnered with product and engineering on roadmap priorities and with C-suite stakeholders on monetization and go-to-market planning",
+        "Collaborated on the UX/UI build of Digital Experience Audit, turning channel scoring, benchmarks, and recommendations into a repeatable workflow with data visualization and presentation-ready client outputs",
+        "Helped shape and govern a design system with 500 components, 140 styles, 300 icons, and 50 personas, including accessibility and design quality standards; the work earned 5 Indigo Gold, 4 Indigo Silver, and Red Dot recognition",
+        "Partnered with the Head of Design to create the team's first onboarding program, career roadmaps, coaching structure, and performance review workflows for new and existing employees",
+        "Led a three-person team to second place in Kinesso's inaugural innovation challenge with an accessibility panel concept; later advised the next cohort and contributed to accessibility playbook and keyboard interaction standards"
+      ],
+      "omnicom": [
+        "Supported oncology accounts as a freelance UX designer, combining UX design and account-management experience to strengthen regulated healthcare work",
+        "Championed UX best practices across account, strategy, creative, and delivery conversations, translating brand goals into clearer user flows, content structure, and digital recommendations"
+      ],
+      "heartbeat": [
+        "Led UX research and experience strategy for pharma and healthcare work, translating stakeholder input, competitive audits, and user needs into digital product direction",
+        "Created journey maps, site maps, user flows, wireframes, and prototypes for patient, HCP, and internal brand-team experiences across regulated healthcare programs",
+        "Partnered with strategy, creative, account, and engineering teams to move UX recommendations from research findings into build-ready product and campaign experiences",
+        "Led research and creation of an oncology-wide design system for interactive visual aids (iVAs) at a major pharma company, with the goal of improving field usability and development efficiency",
+        "Member of Heartbeat's ETCH (Experiential Technology) group, which ran business-driven sprints exploring voice, AR/VR, and facial recognition for agency and client use"
+      ],
+      "account-management": [
+        "8 years managing Fortune 500 pharma and healthcare clients and brand budgets up to $20M across CNS/neurology, psychiatry, cardiovascular/metabolic, and sleep/wakefulness brands including NUVIGIL, Namenda XR, Lipitor, and Zoloft",
+        "One of two account consumer leads on FCB Health's largest pharma account across all verticals: TV, radio, digital, gaming, Times Square, unbranded campaigns, brand planning, and MLR review",
+        "Translated client and brand strategy into briefs, creative feedback, production requirements, timelines, and MLR-ready deliverables across account, creative, UX, and development teams"
+      ]
+    },
+    "sourceBulletIds": {
+      "hedgehox": [
+        "hedgehox-03",
+        "hedgehox-01",
+        "hedgehox-02",
+        "hedgehox-04",
+        "hedgehox-05",
+        "hedgehox-06"
+      ],
+      "one-block-away": [
+        "one-block-away-01",
+        "one-block-away-04",
+        "one-block-away-02",
+        "one-block-away-03",
+        "one-block-away-05"
+      ],
+      "kinesso": [
+        "kinesso-07",
+        "kinesso-06",
+        "kinesso-02",
+        "kinesso-01",
+        "kinesso-08",
+        "kinesso-03",
+        "kinesso-04",
+        "kinesso-05",
+        "kinesso-09"
+      ],
+      "omnicom": [
+        "omnicom-01",
+        "omnicom-02"
+      ],
+      "heartbeat": [
+        "heartbeat-01",
+        "heartbeat-02",
+        "heartbeat-03",
+        "heartbeat-04",
+        "heartbeat-05"
+      ],
+      "account-management": [
+        "account-management-01",
+        "account-management-02",
+        "account-management-03"
+      ]
+    }
+  },
+  "hero": {
+    "eyebrow": "Tallwave | Selected Work",
+    "tags": [
+      "Workflow diagnosis",
+      "AI-assisted POCs",
+      "Enterprise research and adoption"
+    ],
+    "intro": "Here is a look at recent work that may be relevant to the AI Deployment Strategist role, especially around workflow research, working AI POCs, and enterprise product adoption. My resume covers the broader background."
+  },
+  "contact": {
+    "prompt": "Email is the easiest way to reach me about the AI Deployment Strategist role.",
+    "signoff": "Workflow discovery | AI-assisted POCs | enterprise adoption"
+  },
+  "route": {
+    "presentation": "showcase",
+    "heroIntent": "resume-support",
+    "showcaseSections": [
+      "chapters"
+    ],
+    "workHeading": "Selected deployment work.",
+    "contactHeading": "Thanks for taking a look."
+  },
+  "copyReview": {
+    "humanizerVersion": "2.2.0",
+    "mode": "surface-only",
+    "status": "passed",
+    "reviewedAt": "2026-09-15T21:41:24.076Z",
+    "copySha256": "4251d112029559938c21d888169d85b19979e06f20dfc46221e7054258b77ed3",
+    "preserved": [
+      "content",
+      "structure",
+      "claims",
+      "ending"
+    ],
+    "rewriteAuthorized": false,
+    "reviewMethod": "humanizer-skill",
+    "semanticPassAttested": true,
+    "staticChecksPassed": true,
+    "finalAntiAiPass": true,
+    "remainingTells": []
+  },
+  "constraints": {
+    "doNotClaim": [
+      "Cursor proficiency",
+      "conventional software-engineering tenure",
+      "formal AI evaluation framework ownership",
+      "production-scale AI operations ownership",
+      "measured enterprise AI adoption",
+      "independent scripting proficiency"
+    ],
+    "blockedTerms": [
+      "Cursor expert",
+      "software engineer",
+      "production AI operations"
+    ]
+  },
+  "privacy": {
+    "publicSafe": true,
+    "notes": "Contains only the public job description, sanitized eligibility confirmation, and public-safe resume and portfolio evidence. It excludes recruiter details, application answers, compensation decisions, private eligibility details, and submission state."
+  },
+  "qa": {
+    "status": "qa-passed",
+    "builtAt": "2026-09-15T21:43:03.046Z",
+    "configInputSha256": "cd455127fe8513ebacaad842390b38c4bcfb55f2f644cef6c8be49597ee9d643",
+    "sourceResumeSha256": "8273f9c5f9038a159fa1d9ecc813e2c23069e37c7ef6dd0effe5439cef217fd7",
+    "resumeFoundation": {
+      "id": "wally-mostafa-resume-2026-07-03",
+      "sourcePdfSha256": "f9b05b6c3c134262b1af6c5734363daf4385cf335407a139779a37d138adf1aa"
+    },
+    "resumeBase": {
+      "mode": "ai-product-implementation",
+      "sourceProfiles": [
+        {
+          "id": "ai-product-implementation",
+          "version": 1
+        }
+      ],
+      "leadProfileId": "ai-product-implementation",
+      "accountPresentation": "consolidated",
+      "action": "tailor-to-jd",
+      "registryVersion": 1,
+      "registrySha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108"
+    },
+    "artifactHashes": {
+      "routeSha256": "b21a62e2228a1f75af0440741dc14fbf8ab27b4333b632ba3053f5cfd14eedfd",
+      "resumePdfSha256": "edac6c13b9b5b214965ddd2851ffddd9fdf82138b6eb62b88c59c6f4504f3137",
+      "coverLetterPdfSha256": "ef47f41a305a330d0d757af37a2b7e60d7f0f656fd48800de8d646fb1d732f5e",
+      "coverLetterMarkdownSha256": "0b39fd7d7db095e3e6b8d802502f32c48cb4a8d19857351ecb280a225449c075",
+      "scopedProjectSha256": {
+        "project-01.html": "843b021c26523873293bf3593141cacc2eab1f42418be453bf3f94d40ef6fa0d",
+        "project-02.html": "893d4b74f164d475b0a642c6c9627e52c4342d9b6cff57a40baa2100d8ee8d76",
+        "project-04.html": "34dd17b03c6ae4fa80593e6e1ffd9cda0c1848edb9d804b85f4b50f976aa478e",
+        "project-03.html": "e7ba5cabb47ed1bb5b1ea2807e63f481cfe0339cdfa51e4702be4efa618c3092"
+      },
+      "scopedProjectAssetSha256": {}
+    },
+    "renderer": {
+      "browser": {
+        "name": "Google Chrome",
+        "version": "Google Chrome 152.0.7977.83"
+      },
+      "htmlPath": "tmp/tailored-resumes/tallwave-ai-deployment-strategist.html",
+      "pdfPath": "output/pdf/Wally-Mostafa-Tallwave-AI-Deployment-Strategist-Resume.pdf",
+      "fontWait": true,
+      "fontProfile": "portfolio-pdf"
+    },
+    "coverLetterRenderer": {
+      "browser": {
+        "name": "Google Chrome",
+        "version": "Google Chrome 152.0.7977.83"
+      },
+      "htmlPath": "tmp/tailored-resumes/tallwave-ai-deployment-strategist-cover-letter.html",
+      "pdfPath": "output/pdf/Wally-Mostafa-Tallwave-AI-Deployment-Strategist-Cover-Letter.pdf",
+      "fontWait": true,
+      "fontProfile": "portfolio-pdf"
+    },
+    "coverLetter": {
+      "ok": true,
+      "failures": [],
+      "pageCount": 1,
+      "sizeBytes": 24555,
+      "templateVersion": "real-chemistry-21grams-v1",
+      "fonts": {
+        "display": "Syne 800",
+        "body": "Instrument Sans 400/600",
+        "type3Fonts": false
+      },
+      "layout": {
+        "page": "Letter",
+        "margin": "0.58in 0.62in",
+        "header": "centered-rule"
+      }
+    },
+    "ats": {
+      "ok": true,
+      "pdfPath": "output/pdf/Wally-Mostafa-Tallwave-AI-Deployment-Strategist-Resume.pdf",
+      "pageCount": 2,
+      "fileSize": 80964,
+      "annotations": [
+        {
+          "page": 1,
+          "uri": "mailto:wmostafa12@gmail.com"
+        },
+        {
+          "page": 1,
+          "uri": "https://linkedin.com/in/wallymo"
+        },
+        {
+          "page": 1,
+          "uri": "https://wallymo.github.io/tallwave-ai-deployment-strategist/"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/6748"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/4629"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.red-dot.org/project/dxa-digital-experience-audit-55219"
+        }
+      ],
+      "fontCompatibility": {
+        "type3Fonts": false
+      },
+      "coverage": [
+        {
+          "id": "us-work-authorization-and-residence",
+          "requirement": "Live in the United States, hold legal authorization to work in the United States, and require no current or future visa sponsorship.",
+          "priority": "hard-gate",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "Raleigh, NC"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "working-ai-coding-agent-prototype",
+          "requirement": "Build and ship a working prototype with Claude Code, Cursor, or a comparable AI coding agent and be able to show it.",
+          "priority": "hard-gate",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "AI coding agents",
+            "Claude Code",
+            "Codex",
+            "working POCs"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "relevant-product-design-consulting-experience",
+          "requirement": "Bring two to five years of experience in product management, UX, service design, product design, digital product consulting, or a related discipline.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "15 years",
+            "enterprise UX",
+            "product strategy"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "workshop-facilitation-and-synthesis",
+          "requirement": "Design and facilitate stakeholder workshops, interviews, diagnosis sessions, and process-mapping exercises, then turn the output into decisions.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "Led workshops",
+            "product discovery",
+            "ecosystem mapping"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "workflow-diagnosis-and-testable-hypotheses",
+          "requirement": "Find the constraint inside an ambiguous workflow and frame a testable hypothesis with a clear mechanism, metric, and timeframe.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "client discovery",
+            "workflow mapping",
+            "roadmap decisions"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "llm-agents-retrieval-and-evaluation",
+          "requirement": "Understand LLMs, AI agents, retrieval, evaluation, and model limitations well enough to design useful workflows around them.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "LLM",
+            "VLM",
+            "RAG",
+            "prompt-defined criteria",
+            "model orchestration"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "adoption-evaluation-and-measurement",
+          "requirement": "Test AI tools in live work, remove adoption barriers, evaluate output quality, and measure results against the original hypothesis.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "prototype testing",
+            "adoption data",
+            "human review"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "decision-ready-client-communication",
+          "requirement": "Present concise findings and recommendations to operators, directors, sponsors, and senior stakeholders while keeping complex engagements moving.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "executives and clients",
+            "client discovery",
+            "presentation-ready"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "bias-for-action-and-fast-experimentation",
+          "requirement": "Ship an imperfect but useful solution quickly, test assumptions, and improve it from evidence and user feedback.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "working POCs",
+            "in under 90 seconds"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "design-and-regulated-enterprise-background",
+          "requirement": "Bring UX or product design experience and familiarity with large or regulated enterprises.",
+          "priority": "preferred",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "enterprise UX",
+            "regulated AI workflows",
+            "Fortune 500"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "light-scripting-and-data-comfort",
+          "requirement": "Use light scripting or data-analysis skills to inspect datasets and investigate problems independently.",
+          "priority": "preferred",
+          "evidenceStatus": "adjacent",
+          "matchMode": "contextual",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "backend",
+            "behavioral analytics"
+          ],
+          "missingTerms": [
+            "front-end"
+          ]
+        },
+        {
+          "id": "time-boxed-innovation-formats",
+          "requirement": "Have experience running design sprints, build weeks, or similar time-boxed innovation formats.",
+          "priority": "preferred",
+          "evidenceStatus": "adjacent",
+          "matchMode": "contextual",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "innovation",
+            "innovation challenge"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "regular-client-site-travel",
+          "requirement": "Be willing and able to travel regularly to client sites for in-person discovery and diagnosis.",
+          "priority": "hard-gate",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "regular client-site travel"
+          ]
+        }
+      ],
+      "failures": [],
+      "warnings": []
+    },
+    "humanizer": {
+      "status": "passed",
+      "version": "2.2.0",
+      "mode": "surface-only",
+      "reviewedAt": "2026-09-15T21:41:24.076Z",
+      "copySha256": "4251d112029559938c21d888169d85b19979e06f20dfc46221e7054258b77ed3",
+      "reviewMethod": "humanizer-skill",
+      "semanticPassAttested": true,
+      "staticChecksPassed": true
+    },
+    "route": {
+      "viewports": [
+        {
+          "name": "desktop",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-01",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-02",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-04",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-03",
+          "errors": []
+        },
+        {
+          "name": "mobile",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-01",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-02",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-04",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-03",
+          "errors": []
+        }
+      ],
+      "errors": []
+    }
+  }
+}
