@@ -4076,9 +4076,41 @@
       "resumePdfPath": "output/pdf/Wally-Mostafa-Senior-Product-Manager-AI-Competitive-Intelligence-Resume.pdf",
       "coverLetterPdfPath": "output/pdf/Wally-Mostafa-Senior-Product-Manager-AI-Competitive-Intelligence-Cover-Letter.pdf",
       "coverLetterMarkdownPath": "output/pdf/Wally-Mostafa-Senior-Product-Manager-AI-Competitive-Intelligence-Cover-Letter.md",
-      "publishStatus": "local-only",
+      "publishStatus": "live-verified",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-09-16T15:00:02.000Z"
+      "builtAt": "2026-09-16T15:00:02.000Z",
+      "verification": {
+        "verifiedAt": "2026-09-16T15:02:22.453Z",
+        "routeUrl": "https://wallymo.github.io/senior-product-manager-ai-competitive-intelligence/",
+        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-Senior-Product-Manager-AI-Competitive-Intelligence-Resume.pdf",
+        "configUrl": "https://wallymo.github.io/scripts/packages/senior-product-manager-ai-competitive-intelligence.json",
+        "projectUrls": [
+          "https://wallymo.github.io/senior-product-manager-ai-competitive-intelligence/project-02.html",
+          "https://wallymo.github.io/senior-product-manager-ai-competitive-intelligence/project-06.html",
+          "https://wallymo.github.io/senior-product-manager-ai-competitive-intelligence/project-04.html",
+          "https://wallymo.github.io/senior-product-manager-ai-competitive-intelligence/project-03.html"
+        ],
+        "redirectUrls": [],
+        "configSha256": "800e6f3dd95b437ec0b3a7320c2d1b0e52acb0962b730b893fbd7ddd91b09df3",
+        "pdfSha256": "622a8dc46741b6bc506dc6545e400a1dff1bac2efa89e8427fe3016833e8193d",
+        "resumeBaseProfilesUrl": "https://wallymo.github.io/scripts/resume-base-profiles.json",
+        "resumeBaseProfilesSha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108",
+        "coverLetterPdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-Senior-Product-Manager-AI-Competitive-Intelligence-Cover-Letter.pdf",
+        "coverLetterMarkdownUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-Senior-Product-Manager-AI-Competitive-Intelligence-Cover-Letter.md",
+        "coverLetterPdfSha256": "f2ec52661e59115cb41c27bf808b9b31f8ab88909af42aa5b9f58ecf78600916",
+        "coverLetterMarkdownSha256": "4c7fefb51650011f6275775afafb42d627ad42abafa47c729211fb8855cf2ad6",
+        "routeSha256": "e842885f155b7b0dafb565856542ddbf1f0ac6e5cf789aeb59d90961446767c4",
+        "scopedProjectSha256": {
+          "project-02.html": "af06cae5ee2915cf0b3582d8e7b580b5050405a7d036259790059836a9c143e2",
+          "project-06.html": "67ab483a3e67c6652015efa2ef46edef4d03395ec203506b509c0b490bad736c",
+          "project-04.html": "e7edce5bda57b6fbc6fd6ba9c814dc22e659ade5a09e25f9b5089d3509213bac",
+          "project-03.html": "199a2d0bceee214ba80341ea3f08a8493d1bd9454671b143e25e3c4cef7ce63c"
+        },
+        "scopedProjectAssetUrls": [],
+        "scopedProjectAssetSha256": {},
+        "configInputSha256": "4f8952f6083c17ce104f87282871be43fc9d930a1aeb8270005a8276b4c8e676",
+        "qaBuiltAt": "2026-09-16T15:00:02.000Z"
+      }
     },
     {
       "slug": "service-link-ai-enablement",
