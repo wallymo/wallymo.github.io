@@ -1,0 +1,852 @@
+{
+  "workflowVersion": 2,
+  "contractRevision": 7,
+  "slug": "infosys-architecture-consultant-3",
+  "roleTitle": "Infosys Architecture Consultant 3",
+  "artifactStem": "Infosys-Architecture-Consultant-3",
+  "fitClass": "stretch",
+  "routeMode": "scoped-projects",
+  "selectedProjects": [
+    "project-01.html",
+    "project-02.html",
+    "project-04.html",
+    "project-03.html"
+  ],
+  "job": {
+    "company": "Infosys",
+    "roleTitle": "Architecture Consultant 3",
+    "jobId": "not-provided",
+    "jobUrl": "not-provided",
+    "sourceChannel": "user-provided job description",
+    "dateCaptured": "2026-09-16",
+    "location": "United States; travel and/or relocation may be required",
+    "employmentType": "not-provided",
+    "atsVendor": "unknown",
+    "rawJd": "The Infosys Engineering unit focuses on product-centric value delivery through data-first engineering, value-stream management, AI, machine learning, and predictive analytics. The Architecture Consultant 3 creates business requirement documents from stakeholder workshops and interviews; reviews, proposes, and develops scalable, reliable, and maintainable solution architectures; recommends technologies, tools, and platforms; develops integration strategies; resolves complex technical challenges during build, deployment, and support; advises development teams and clients; identifies system risks and performance improvements; maintains a knowledge base; and contributes architectural input to proposals and RFPs. Required skills include end-to-end AI solution architecture, prompt engineering, and knowledge-retrieval architecture using vector databases and semantic search. Preferred experience includes architecture governance and reviews; cloud and platform engineering; data and integration architecture; AI-driven software engineering; executive stakeholder management; value-stream discovery workshops; AI strategy and roadmap definition; and pre-sales and solutioning. A bachelor's degree or an experience-based equivalent is required. Travel or relocation may be required. Candidates must be authorized to work for any employer in the United States without current or future employer-based sponsorship."
+  },
+  "classification": {
+    "targetLane": "ai-product-implementation",
+    "evidenceMode": "credential-or-technical-primary",
+    "primarySource": "The resume shows applied AI implementation, prompt-defined workflows, RAG and knowledge-base patterns, product requirements, front-end and backend logic, client workshops, and cross-functional delivery. It does not document production AI architecture ownership, vector-database implementation, or cloud-platform engineering.",
+    "supportingSource": "The portfolio validates working AI POCs, governed review workflows, semantic-search direction, enterprise systems, stakeholder discovery, and roadmap decisions. It supports an implementation story but does not replace the missing production-architecture evidence.",
+    "hardGateStatus": "pass",
+    "hardGates": [
+      {
+        "gate": "Bachelor's degree or the stated progressive-experience equivalent",
+        "status": "pass",
+        "requirementId": "degree-or-equivalent",
+        "evidence": "BA in Labor Studies and Employee Relations from Rutgers University, 2010."
+      }
+    ]
+  },
+  "requirements": [
+    {
+      "id": "degree-or-equivalent",
+      "text": "Hold a bachelor's degree or the stated progressive-experience equivalent.",
+      "priority": "hard-gate",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The resume documents a BA in Labor Studies and Employee Relations from Rutgers University."
+      ],
+      "proofIds": [],
+      "destinations": [
+        "experience"
+      ],
+      "resumeTerms": [
+        "BA Labor Studies & Employee Relations",
+        "Rutgers University"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "work-authorization",
+      "text": "Be authorized to work for any employer in the United States without current or future employer-based sponsorship.",
+      "priority": "context",
+      "source": "employer-policy",
+      "confidence": "explicit",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "proofIds": [],
+      "destinations": [
+        "application-answer"
+      ],
+      "resumeTerms": [
+        "work authorization"
+      ],
+      "matchMode": "not-supported"
+    },
+    {
+      "id": "travel-and-relocation",
+      "text": "Travel or relocate to work and project locations when required.",
+      "priority": "context",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "proofIds": [],
+      "destinations": [
+        "application-answer"
+      ],
+      "resumeTerms": [
+        "travel",
+        "relocation"
+      ],
+      "matchMode": "not-supported"
+    },
+    {
+      "id": "requirements-workshops-and-documentation",
+      "text": "Gather stakeholder input through workshops and interviews and turn it into clear business, functional, and non-functional requirements.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Current AI work turns client and agency needs into product requirements, review logic, working tools, demos, and roadmap decisions.",
+        "Kinesso work included discovery, ecosystem-mapping, innovation, and user-research workshops with recommendations presented to executives and clients."
+      ],
+      "proofIds": [
+        "hedgehox-03",
+        "one-block-away-01",
+        "kinesso-07"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "requirements",
+        "workshops",
+        "stakeholder interviews"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "end-to-end-ai-solution-architecture",
+      "text": "Design and review end-to-end AI solution architectures that are scalable, reliable, maintainable, and aligned with business goals.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Current work owns product strategy, UX, AI workflow design, front-end build, backend logic, demo readiness, and client iteration through a working prototype.",
+        "The evidence supports application-level AI implementation and build-ready handoff, not production-scale architecture authority."
+      ],
+      "proofIds": [
+        "one-block-away-04",
+        "hedgehox-03"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "AI workflow design",
+        "front-end build",
+        "backend logic",
+        "production handoff"
+      ],
+      "matchMode": "contextual"
+    },
+    {
+      "id": "prompt-engineering-and-governed-ai",
+      "text": "Apply prompt engineering and governed AI practices to working solution designs.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Claims Detector uses prompt-defined review criteria, model orchestration, evidence-gap handling, audit-ready annotations, and human review.",
+        "The resume documents governed LLM and VLM workflows plus RAG and knowledge-base patterns."
+      ],
+      "proofIds": [
+        "hedgehox-02",
+        "one-block-away-04"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "prompt-defined criteria",
+        "governed LLM/VLM workflows",
+        "human review"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "vector-database-retrieval-architecture",
+      "text": "Design knowledge-retrieval architecture using vector databases and semantic search.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "proofIds": [],
+      "destinations": [
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "vector databases",
+        "semantic search"
+      ],
+      "matchMode": "not-supported"
+    },
+    {
+      "id": "technology-selection-and-integration",
+      "text": "Assess technologies, tools, and platforms and define integration strategies across systems and data flows.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Current POCs combine model workflows, product logic, front-end and backend implementation, structured data, storage, and export paths.",
+        "Kanvas work involved a developer-first API services library and roadmap collaboration with product, engineering, and C-suite stakeholders."
+      ],
+      "proofIds": [
+        "one-block-away-04",
+        "kinesso-08"
+      ],
+      "destinations": [
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "backend logic",
+        "API services library",
+        "engineering handoff"
+      ],
+      "matchMode": "contextual"
+    },
+    {
+      "id": "architecture-governance-cloud-and-production-support",
+      "text": "Lead architecture governance, cloud and platform engineering decisions, deployment support, performance monitoring, technical risk management, and production optimization.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "proofIds": [],
+      "destinations": [
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "architecture governance",
+        "cloud platform engineering",
+        "performance monitoring"
+      ],
+      "matchMode": "not-supported"
+    },
+    {
+      "id": "executive-stakeholders-roadmaps-and-presales",
+      "text": "Lead executive stakeholder conversations, value-stream discovery, AI roadmap definition, and pre-sales solutioning or proposal support.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Current work moves from client discovery through working POCs, investor demos, and roadmap decisions.",
+        "Kinesso work included executive workshops, product roadmaps, monetization, and go-to-market planning, but the source record does not document formal RFP architecture ownership."
+      ],
+      "proofIds": [
+        "hedgehox-01",
+        "one-block-away-01",
+        "kinesso-07",
+        "kinesso-08"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "executives and clients",
+        "roadmap decisions",
+        "go-to-market planning"
+      ],
+      "matchMode": "contextual"
+    },
+    {
+      "id": "team-guidance-knowledge-sharing-and-reuse",
+      "text": "Guide delivery teams, mentor colleagues, and create reusable documentation, frameworks, and knowledge assets.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Kinesso leadership scaled product design from 2 to 30, created onboarding and career-development structures, and governed a large reusable design system.",
+        "Enterprise work included quality reviews, shared research documentation, reusable components, accessibility standards, and engineering handoff."
+      ],
+      "proofIds": [
+        "kinesso-01",
+        "kinesso-05",
+        "kinesso-04"
+      ],
+      "destinations": [
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "2 to 30",
+        "coaching structure",
+        "reusable components"
+      ],
+      "matchMode": "recognized-equivalent"
+    }
+  ],
+  "fitGate": {
+    "resumeBase": {
+      "mode": "ai-product-implementation",
+      "sourceProfiles": [
+        {
+          "id": "ai-product-implementation",
+          "version": 1
+        }
+      ],
+      "leadProfileId": "ai-product-implementation",
+      "accountPresentation": "consolidated",
+      "action": "tailor-to-jd",
+      "rationale": "The role is centered on AI solution design, implementation guidance, workflow discovery, and technical delivery. The AI/Product Implementation base is the only credible source profile; account experience supports stakeholder work but does not create architecture qualifications."
+    },
+    "supportedOverlap": [
+      "Applied AI work turns client needs into requirements, governed workflows, working POCs, demo narratives, and roadmap decisions.",
+      "Direct prompt-related evidence includes prompt-defined review criteria, RAG and knowledge-base patterns, model orchestration, and human review.",
+      "Current builds include product strategy, UX, front-end work, backend logic, structured data, demos, and client iteration.",
+      "Enterprise work supports workshops, executive recommendations, reusable systems, design governance, team scaling, mentoring, and engineering handoff.",
+      "Eight years of Fortune 500 client leadership support stakeholder management, delivery discipline, and cross-functional communication."
+    ],
+    "unsupportedRequirements": [
+      "Vector-database implementation and retrieval-architecture ownership are not documented.",
+      "Production-scale AI solution architecture, architecture review authority, and architecture governance are not documented.",
+      "Cloud and platform engineering, data-integration architecture, performance monitoring, and production incident resolution are not documented.",
+      "Formal RFP architecture ownership is not documented."
+    ],
+    "actualMismatches": [
+      "The role's primary operating center is technical architecture, while the strongest evidence centers on product, UX, workflow design, and prototype-scale AI implementation.",
+      "Semantic search appears as future product direction rather than a delivered vector-retrieval architecture."
+    ],
+    "missingEvidence": [
+      "A production architecture diagram with technology-selection rationale, integrations, deployment topology, scalability, reliability, and maintainability decisions.",
+      "A delivered vector-database and semantic-search implementation with retrieval evaluation and operational results.",
+      "Named cloud services, architecture-review responsibilities, production support outcomes, and system-performance metrics.",
+      "Work authorization plus travel or relocation availability must be confirmed privately before submission."
+    ],
+    "coverLetterBridge": {
+      "status": "not-credible",
+      "rationale": "A cover letter cannot credibly replace the missing vector-database, cloud-platform, production-architecture, and architecture-governance evidence. The package therefore presents only the supported AI implementation and stakeholder work."
+    },
+    "recommendation": "Proceed only as the user-approved stretch. Lead with requirements, prompt-defined workflows, working AI POCs, enterprise systems, workshops, and stakeholder delivery. Keep vector databases, cloud architecture, production scalability, architecture governance, and RFP ownership out of the claim set."
+  },
+  "positioning": {
+    "laneId": "ai-product-implementation",
+    "targetIdentity": "AI implementation and product strategy lead",
+    "employerNeed": "Turn stakeholder needs into governed AI solutions and help cross-functional teams move from discovery into delivery.",
+    "bridgeType": "operating-center",
+    "applicationStrategy": "approved-stretch",
+    "bridgeThesis": "translate stakeholder needs into requirements, governed workflows, working POCs, and build-ready decisions",
+    "proofIds": [
+      "hedgehox-03",
+      "one-block-away-04",
+      "kinesso-07"
+    ],
+    "remainingGap": "The current evidence does not establish vector-database implementation, production cloud architecture, architecture governance, or system-performance ownership."
+  },
+  "coverLetter": null,
+  "resume": {
+    "foundationId": "wally-mostafa-resume-2026-07-03",
+    "foundationVersion": 4,
+    "compositionMode": "foundation-complete",
+    "layoutDensity": "compact",
+    "summary": "AI implementation and product strategy lead with 15 years across client strategy, enterprise UX, and regulated delivery. I translate stakeholder needs into requirements, governed workflows, working POCs, and build-ready decisions. Recent work includes prompt-defined review, RAG and knowledge-base patterns, model orchestration, front-end and backend logic, executive workshops, and cross-functional delivery.",
+    "skillIds": [
+      "ai-implementation-workflow-design",
+      "product-strategy-poc-delivery",
+      "program-project-delivery",
+      "consultative-sales-solution-delivery"
+    ],
+    "skills": [
+      {
+        "label": "AI Implementation & Workflow Design",
+        "description": "Governed LLM/VLM workflows, multimodal review, RAG/knowledge bases, prompt-defined criteria, model orchestration, and human review surfaces"
+      },
+      {
+        "label": "Product Strategy & POC Delivery",
+        "description": "Discovery, scoping, requirements, prototype validation, demo narratives, build-ready logic, and production handoff"
+      },
+      {
+        "label": "Program & Project Delivery",
+        "description": "Scoping, requirements, timelines, review routing, team coordination, risk visibility, and build-ready handoff across product, design, and client teams"
+      },
+      {
+        "label": "Consultative Sales & Solution Delivery",
+        "description": "Discovery-led solution design, POCs, demo narratives, client translation, and product recommendations tied to business needs"
+      }
+    ],
+    "roles": {
+      "hedgehox": [
+        "Secured an investor for proprietary Claims Detection software by building the functional POC, shaping the demo story, and iterating with investors",
+        "Designed Claims Detector workflows with prompt-defined review criteria that identify promotional claims, surface evidence gaps, and pre-populate audit-ready annotations before MLR submission",
+        "Turn pharma agency needs into product requirements and working tools for MLR claim review, brief intake, scoping, review routing, submission capture, and FDA signal monitoring",
+        "Designed the full Xenagos Bio startup biopharma website from scratch, including investor-facing structure, scientific positioning, visual direction, and hidden design-system handoff",
+        "Built Scope Generator for pharma agency finance and operations teams to manage regional rate cards, brands, sub-brands, and natural-language scope changes",
+        "Developed FDA Warning Tool concepts that connect warning-letter patterns to content-risk guidance for pharma teams"
+      ],
+      "one-block-away": [
+        "Lead client discovery and turn unclear business questions into requirements, testable product workflows, working POCs, demo flows, and roadmap decisions",
+        "Built ListingPal's AI listing-generation POC and landing page, turning basic property inputs into listing copy, social posts, ad copy, styling direction, and MLS/SEO-ready language in under 90 seconds",
+        "Built WeReady's Bailey Intelligence dashboard, translating founder inputs, GitHub signals, source health, risk scoring, and evidence trails into startup-readiness workflows",
+        "Own product strategy, UX, AI workflow design, front-end build, backend logic, demo readiness, and client iteration from first ask through working prototype",
+        "Currently building the website and sponsor strategy for a Tunisia youth soccer program, positioning the project for player advancement, community support, and donor outreach"
+      ],
+      "kinesso": [
+        "Scaled product design from 2 to 30 across the US and Poland, hiring and staffing designers, leading critiques and quality reviews, and planning scope, resources, and engineering handoff across 20+ products",
+        "Partnered with the Head of Design to create the team's first onboarding program, career roadmaps, coaching structure, and performance review workflows for new and existing employees",
+        "Built Kinesso's first UX research practice across 20+ products, including participant recruitment, interviews, prototype testing, beta groups, behavioral analytics, research tooling, shared Figma documentation, and UX checkpoints in project plans",
+        "Led UX research and strategy for a marketing intelligence suite used by 7,000+ people across 22 white-label brands; turned findings and adoption data into roadmap priorities for navigation, dashboards, brand theming, personalization, and product support",
+        "Helped shape and govern a design system with 500 components, 140 styles, 300 icons, and 50 personas, including accessibility and design quality standards; the work earned 5 Indigo Gold, 4 Indigo Silver, and Red Dot recognition",
+        "Led workshops on product discovery, ecosystem mapping, innovation, and user research; expanded the program from Kinesso teams to IPG groups and presented recommendations to executives and clients",
+        "UX lead for research and design on Kanvas, Kinesso's developer-first API services library; partnered with product and engineering on roadmap priorities and with C-suite stakeholders on monetization and go-to-market planning",
+        "Collaborated on the UX/UI build of Digital Experience Audit, turning channel scoring, benchmarks, and recommendations into a repeatable workflow with data visualization and presentation-ready client outputs",
+        "Led a three-person team to second place in Kinesso's inaugural innovation challenge with an accessibility panel concept; later advised the next cohort and contributed to accessibility playbook and keyboard interaction standards"
+      ],
+      "omnicom": [
+        "Supported oncology accounts as a freelance UX designer, combining UX design and account-management experience to strengthen regulated healthcare work",
+        "Championed UX best practices across account, strategy, creative, and delivery conversations, translating brand goals into clearer user flows, content structure, and digital recommendations"
+      ],
+      "heartbeat": [
+        "Led UX research and experience strategy for pharma and healthcare work, translating stakeholder input, competitive audits, and user needs into digital product direction",
+        "Created journey maps, site maps, user flows, wireframes, and prototypes for patient, HCP, and internal brand-team experiences across regulated healthcare programs",
+        "Partnered with strategy, creative, account, and engineering teams to move UX recommendations from research findings into build-ready product and campaign experiences",
+        "Led research and creation of an oncology-wide design system for interactive visual aids at a major pharma company, with the goal of improving field usability and development efficiency",
+        "Joined Heartbeat's ETCH experiential-technology group for business-driven sprints exploring voice, AR/VR, and facial recognition for agency and client use"
+      ],
+      "account-management": [
+        "8 years managing Fortune 500 pharma and healthcare clients and brand budgets up to $20M across CNS/neurology, psychiatry, cardiovascular/metabolic, and sleep/wakefulness brands including NUVIGIL, Namenda XR, Lipitor, and Zoloft",
+        "One of two account consumer leads on FCB Health's largest pharma account across all verticals: TV, radio, digital, gaming, Times Square, unbranded campaigns, brand planning, and MLR review",
+        "Translated client and brand strategy into briefs, creative feedback, production requirements, timelines, and MLR-ready deliverables across account, creative, UX, and development teams"
+      ]
+    },
+    "sourceBulletIds": {
+      "hedgehox": [
+        "hedgehox-01",
+        "hedgehox-02",
+        "hedgehox-03",
+        "hedgehox-04",
+        "hedgehox-05",
+        "hedgehox-06"
+      ],
+      "one-block-away": [
+        "one-block-away-01",
+        "one-block-away-02",
+        "one-block-away-03",
+        "one-block-away-04",
+        "one-block-away-05"
+      ],
+      "kinesso": [
+        "kinesso-01",
+        "kinesso-05",
+        "kinesso-06",
+        "kinesso-02",
+        "kinesso-04",
+        "kinesso-07",
+        "kinesso-08",
+        "kinesso-03",
+        "kinesso-09"
+      ],
+      "omnicom": [
+        "omnicom-01",
+        "omnicom-02"
+      ],
+      "heartbeat": [
+        "heartbeat-01",
+        "heartbeat-02",
+        "heartbeat-03",
+        "heartbeat-04",
+        "heartbeat-05"
+      ],
+      "account-management": [
+        "account-management-01",
+        "account-management-02",
+        "account-management-03"
+      ]
+    }
+  },
+  "hero": {
+    "eyebrow": "Infosys | Selected Work",
+    "tags": [
+      "AI workflow design",
+      "Client discovery",
+      "Enterprise systems"
+    ],
+    "intro": "Here is a look at recent work that may be relevant to the Architecture Consultant 3 role, especially around AI workflows, product requirements, client discovery, and enterprise systems. My resume covers the broader background."
+  },
+  "contact": {
+    "prompt": "Email is the easiest way to reach me about the Architecture Consultant 3 role.",
+    "signoff": "AI implementation | workflow design | client delivery"
+  },
+  "route": {
+    "presentation": "showcase",
+    "heroIntent": "resume-support",
+    "showcaseSections": [
+      "chapters"
+    ],
+    "workHeading": "Selected AI and enterprise work.",
+    "contactHeading": "Thanks for taking a look."
+  },
+  "copyReview": {
+    "humanizerVersion": "2.2.0",
+    "mode": "surface-only",
+    "status": "passed",
+    "reviewedAt": "2026-09-16T14:56:15.726Z",
+    "copySha256": "548459d260ea67d3191d0f78901fc03ae13f6b53ecec7002215d4f8d7ecd753a",
+    "preserved": [
+      "content",
+      "structure",
+      "claims",
+      "ending"
+    ],
+    "rewriteAuthorized": false,
+    "reviewMethod": "humanizer-skill",
+    "semanticPassAttested": true,
+    "staticChecksPassed": true,
+    "finalAntiAiPass": true,
+    "remainingTells": []
+  },
+  "constraints": {
+    "doNotClaim": [
+      "Production-scale AI solution architecture ownership",
+      "Vector-database implementation or retrieval-architecture ownership",
+      "Cloud or platform engineering ownership",
+      "Data-integration architecture ownership",
+      "Architecture governance or formal architecture-review authority",
+      "Production deployment, incident response, system-performance, or optimization ownership",
+      "Formal RFP architecture ownership",
+      "Conventional software-engineering or ML-engineering tenure",
+      "United States work authorization, travel availability, or willingness to relocate"
+    ],
+    "blockedTerms": [
+      "AI solution architect",
+      "vector database expert",
+      "cloud architect",
+      "platform engineer",
+      "data architect",
+      "architecture governance lead",
+      "production incident owner",
+      "RFP architecture lead",
+      "authorized to work without sponsorship",
+      "willing to relocate"
+    ]
+  },
+  "privacy": {
+    "publicSafe": true,
+    "notes": "Contains only the public Infosys job description supplied by the user and public-safe evidence from the resume and portfolio. It excludes recruiter details, private eligibility information, application answers, compensation boundaries, and submission state."
+  },
+  "qa": {
+    "status": "qa-passed",
+    "builtAt": "2026-09-16T14:59:52.193Z",
+    "configInputSha256": "c7ef1f0639b1b634b5838831659ac2222b7805ff14051f6a61b2397322c095e1",
+    "sourceResumeSha256": "8273f9c5f9038a159fa1d9ecc813e2c23069e37c7ef6dd0effe5439cef217fd7",
+    "resumeFoundation": {
+      "id": "wally-mostafa-resume-2026-07-03",
+      "sourcePdfSha256": "f9b05b6c3c134262b1af6c5734363daf4385cf335407a139779a37d138adf1aa"
+    },
+    "resumeBase": {
+      "mode": "ai-product-implementation",
+      "sourceProfiles": [
+        {
+          "id": "ai-product-implementation",
+          "version": 1
+        }
+      ],
+      "leadProfileId": "ai-product-implementation",
+      "accountPresentation": "consolidated",
+      "action": "tailor-to-jd",
+      "registryVersion": 1,
+      "registrySha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108"
+    },
+    "artifactHashes": {
+      "routeSha256": "15f74cad92cd738c093b0b3f5e7850cf7d718113c8deb916be82d845c13a993b",
+      "resumePdfSha256": "84a012a4ebecd7b64bb5dbd04e7c79f9d8f87790be3b3f6cd02022d34395ed41",
+      "coverLetterPdfSha256": null,
+      "coverLetterMarkdownSha256": null,
+      "scopedProjectSha256": {
+        "project-01.html": "3a8cde17d33bba3e638be04ccfc5038e75368b2ea9f0db4e9a08feb0135a3f78",
+        "project-02.html": "9ac2254e883c17aa4f062a88be170cf1d58ebafd84364ebdbe1b0c01195e7135",
+        "project-04.html": "a1bbbee41d074a7c1398fee473dfe60701ec396c8aac3b3d56da701d92c5d02f",
+        "project-03.html": "129a209de57464102c5e188a280e640e07cbd78ac27c51f233a45e71b7ca2463"
+      },
+      "scopedProjectAssetSha256": {}
+    },
+    "renderer": {
+      "browser": {
+        "name": "chrome-headless-shell",
+        "version": "Google Chrome for Testing 151.0.7922.34"
+      },
+      "htmlPath": "tmp/tailored-resumes/infosys-architecture-consultant-3.html",
+      "pdfPath": "output/pdf/Wally-Mostafa-Infosys-Architecture-Consultant-3-Resume.pdf",
+      "fontWait": true,
+      "fontProfile": "portfolio-pdf"
+    },
+    "coverLetterRenderer": null,
+    "coverLetter": null,
+    "ats": {
+      "ok": true,
+      "pdfPath": "output/pdf/Wally-Mostafa-Infosys-Architecture-Consultant-3-Resume.pdf",
+      "pageCount": 2,
+      "fileSize": 79616,
+      "annotations": [
+        {
+          "page": 1,
+          "uri": "mailto:wmostafa12@gmail.com"
+        },
+        {
+          "page": 1,
+          "uri": "https://linkedin.com/in/wallymo"
+        },
+        {
+          "page": 1,
+          "uri": "https://wallymo.github.io/infosys-architecture-consultant-3/"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/6748"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/4629"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.red-dot.org/project/dxa-digital-experience-audit-55219"
+        }
+      ],
+      "fontCompatibility": {
+        "type3Fonts": false
+      },
+      "coverage": [
+        {
+          "id": "degree-or-equivalent",
+          "requirement": "Hold a bachelor's degree or the stated progressive-experience equivalent.",
+          "priority": "hard-gate",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "BA Labor Studies & Employee Relations",
+            "Rutgers University"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "work-authorization",
+          "requirement": "Be authorized to work for any employer in the United States without current or future employer-based sponsorship.",
+          "priority": "context",
+          "evidenceStatus": "none",
+          "matchMode": "not-supported",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "work authorization"
+          ]
+        },
+        {
+          "id": "travel-and-relocation",
+          "requirement": "Travel or relocate to work and project locations when required.",
+          "priority": "context",
+          "evidenceStatus": "none",
+          "matchMode": "not-supported",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "travel",
+            "relocation"
+          ]
+        },
+        {
+          "id": "requirements-workshops-and-documentation",
+          "requirement": "Gather stakeholder input through workshops and interviews and turn it into clear business, functional, and non-functional requirements.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "requirements",
+            "workshops"
+          ],
+          "missingTerms": [
+            "stakeholder interviews"
+          ]
+        },
+        {
+          "id": "end-to-end-ai-solution-architecture",
+          "requirement": "Design and review end-to-end AI solution architectures that are scalable, reliable, maintainable, and aligned with business goals.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "contextual",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "AI workflow design",
+            "front-end build",
+            "backend logic",
+            "production handoff"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "prompt-engineering-and-governed-ai",
+          "requirement": "Apply prompt engineering and governed AI practices to working solution designs.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "prompt-defined criteria",
+            "governed LLM/VLM workflows",
+            "human review"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "vector-database-retrieval-architecture",
+          "requirement": "Design knowledge-retrieval architecture using vector databases and semantic search.",
+          "priority": "core",
+          "evidenceStatus": "none",
+          "matchMode": "not-supported",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "vector databases",
+            "semantic search"
+          ]
+        },
+        {
+          "id": "technology-selection-and-integration",
+          "requirement": "Assess technologies, tools, and platforms and define integration strategies across systems and data flows.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "contextual",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "backend logic",
+            "API services library",
+            "engineering handoff"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "architecture-governance-cloud-and-production-support",
+          "requirement": "Lead architecture governance, cloud and platform engineering decisions, deployment support, performance monitoring, technical risk management, and production optimization.",
+          "priority": "core",
+          "evidenceStatus": "none",
+          "matchMode": "not-supported",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "architecture governance",
+            "cloud platform engineering",
+            "performance monitoring"
+          ]
+        },
+        {
+          "id": "executive-stakeholders-roadmaps-and-presales",
+          "requirement": "Lead executive stakeholder conversations, value-stream discovery, AI roadmap definition, and pre-sales solutioning or proposal support.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "contextual",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "executives and clients",
+            "roadmap decisions",
+            "go-to-market planning"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "team-guidance-knowledge-sharing-and-reuse",
+          "requirement": "Guide delivery teams, mentor colleagues, and create reusable documentation, frameworks, and knowledge assets.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "2 to 30",
+            "coaching structure"
+          ],
+          "missingTerms": [
+            "reusable components"
+          ]
+        }
+      ],
+      "failures": [],
+      "warnings": [
+        "requirements-workshops-and-documentation: supported core language missing from the PDF: stakeholder interviews",
+        "team-guidance-knowledge-sharing-and-reuse: supported core language missing from the PDF: reusable components"
+      ]
+    },
+    "humanizer": {
+      "status": "passed",
+      "version": "2.2.0",
+      "mode": "surface-only",
+      "reviewedAt": "2026-09-16T14:56:15.726Z",
+      "copySha256": "548459d260ea67d3191d0f78901fc03ae13f6b53ecec7002215d4f8d7ecd753a",
+      "reviewMethod": "humanizer-skill",
+      "semanticPassAttested": true,
+      "staticChecksPassed": true
+    },
+    "route": {
+      "viewports": [
+        {
+          "name": "desktop",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-01",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-02",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-04",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-03",
+          "errors": []
+        },
+        {
+          "name": "mobile",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-01",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-02",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-04",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-03",
+          "errors": []
+        }
+      ],
+      "errors": []
+    }
+  }
+}
