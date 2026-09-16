@@ -4016,6 +4016,43 @@
       "notes": "PDF-only recruiter artifact per current Tailored Portfolio Rules; temporary render HTML removed after local verification. Adjacent fit: direct SaaS renewal ownership, formal EBR cadence, and named customer-success platform experience are not claimed."
     },
     {
+      "workflowVersion": 2,
+      "contractRevision": 7,
+      "slug": "senior-product-manager-ai-competitive-intelligence",
+      "roleTitle": "Senior Product Manager - AI Competitive Intelligence",
+      "artifactStem": "Senior-Product-Manager-AI-Competitive-Intelligence",
+      "configPath": "scripts/packages/senior-product-manager-ai-competitive-intelligence.json",
+      "targetLane": "ai-product-implementation",
+      "evidenceMode": "balanced",
+      "fitClass": "adjacent",
+      "positioningLane": "ai-product-implementation",
+      "bridgeType": "operating-center",
+      "applicationStrategy": "transferable",
+      "resumeBaseMode": "ai-product-implementation",
+      "resumeBaseLeadProfile": "ai-product-implementation",
+      "resumeBaseAction": "tailor-to-jd",
+      "accountPresentation": "consolidated",
+      "resumeBaseProfiles": [
+        {
+          "id": "ai-product-implementation",
+          "version": 1
+        }
+      ],
+      "routeMode": "scoped-projects",
+      "selectedProjects": [
+        "project-02.html",
+        "project-06.html",
+        "project-04.html",
+        "project-03.html"
+      ],
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Senior-Product-Manager-AI-Competitive-Intelligence-Resume.pdf",
+      "coverLetterPdfPath": "output/pdf/Wally-Mostafa-Senior-Product-Manager-AI-Competitive-Intelligence-Cover-Letter.pdf",
+      "coverLetterMarkdownPath": "output/pdf/Wally-Mostafa-Senior-Product-Manager-AI-Competitive-Intelligence-Cover-Letter.md",
+      "publishStatus": "local-only",
+      "qaStatus": "qa-passed",
+      "builtAt": "2026-09-16T15:00:02.000Z"
+    },
+    {
       "slug": "service-link-ai-enablement",
       "roleTitle": "Service-Link AI Enablement Lead",
       "fitClass": "unclassified",

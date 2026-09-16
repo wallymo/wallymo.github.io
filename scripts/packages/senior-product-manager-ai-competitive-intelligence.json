@@ -1,0 +1,940 @@
+{
+  "workflowVersion": 2,
+  "contractRevision": 7,
+  "slug": "senior-product-manager-ai-competitive-intelligence",
+  "roleTitle": "Senior Product Manager - AI Competitive Intelligence",
+  "artifactStem": "Senior-Product-Manager-AI-Competitive-Intelligence",
+  "fitClass": "adjacent",
+  "routeMode": "scoped-projects",
+  "selectedProjects": [
+    "project-02.html",
+    "project-06.html",
+    "project-04.html",
+    "project-03.html"
+  ],
+  "job": {
+    "company": "Confidential Employer",
+    "roleTitle": "Senior Product Manager",
+    "jobId": "not-listed",
+    "jobUrl": "https://www.linkedin.com/jobs/view/sr-product-manager-at-jobs-via-dice-4407636064",
+    "sourceChannel": "User-pasted job description; matching public listing found via Jobs via Dice",
+    "dateCaptured": "2026-09-16",
+    "location": "Raleigh, NC in the matching public listing; not stated in the pasted description",
+    "atsVendor": "unknown",
+    "rawJd": "We're hiring a hands-on Senior Product Manager to lead an AI-driven competitive intelligence and conversational search platform that delivers deeper, more actionable insights than general-purpose AI chat products. The role owns product strategy and execution, from quarterly planning and metrics to features that extract data, create derivative datasets, and assemble them into a usable knowledge graph.\n\nResponsibilities include owning the strategy and roadmap for an AI-driven, NLP-based competitive benchmarking product; leading data extraction and knowledge graph initiatives across company, people, event, and open-web data; delivering conversational search with embeddings and Boolean search; building SaaS AI capabilities with APIs and connectors; translating NLP, embeddings, knowledge graphs, LLM orchestration, and agentic workflows into customer value and go-to-market messaging; partnering with data science and engineering on data requirements, evaluation frameworks, and model strategy; conducting discovery with business users in financial and professional services; driving execution across engineering, data, design, and go-to-market teams; and supporting customer-facing conversations with sales and customer success.\n\nFirst-90-day outcomes include ingesting and normalizing customer and market documents, generating derivative datasets and knowledge graph assets, improving data freshness through extraction and AI enrichment, launching conversational search with embeddings and Boolean search, defining a scalable AI model strategy and evaluation criteria, and setting metrics for adoption, answer quality, time-to-insight, data freshness, search effectiveness, and cost-performance.\n\nQualifications include 5-8+ years of product management experience with at least 3 years leading AI/ML, NLP, search, or knowledge graph products; commercial judgment; cross-functional leadership; hands-on familiarity with LLMs, embeddings, NLP, retrieval/search, and agentic workflows; quarterly planning and metric-driven product development; clear technical and customer communication; analytical problem solving; and relevant work in professional services, financial services, competitive intelligence, or market research. Nice-to-haves include vector or semantic search, conversational AI, knowledge graphs, NLP pipelines, AI data enrichment, and products that combine structured and unstructured data."
+  },
+  "classification": {
+    "targetLane": "ai-product-implementation",
+    "evidenceMode": "balanced",
+    "primarySource": "The resume shows current AI product strategy and implementation, enterprise intelligence products, roadmap decisions, user research, commercial leadership, API-platform work, and customer-facing delivery. It does not show direct production ownership of a vector-search or knowledge-graph platform.",
+    "supportingSource": "The portfolio shows governed AI workflows, the Bailey Intelligence dashboard, source health and evidence trails, competitive benchmarking, semantic-search direction, research practice, and enterprise analytics used at scale.",
+    "hardGateStatus": "pass",
+    "hardGates": [
+      {
+        "gate": "Bring 5-8+ years of product management experience, including at least 3 years leading AI, ML, NLP, search, or knowledge-graph products.",
+        "status": "pass",
+        "requirementId": "product-leadership-tenure",
+        "evidence": "Current AI product and implementation work runs from July 2023 to present. Kinesso adds more than three years of enterprise product leadership across a marketing intelligence suite. The record supports the responsibility level, but not five to eight years under a conventional Product Manager title or three years leading a production search or knowledge-graph platform."
+      },
+      {
+        "gate": "Bring hands-on familiarity with LLMs, embeddings, NLP, retrieval or search, and agentic workflows.",
+        "status": "pass",
+        "requirementId": "llm-retrieval-search-fluency",
+        "evidence": "The resume documents LLM and VLM workflows, RAG and knowledge bases, model orchestration, prompt-defined criteria, human review, and working AI POCs. Bailey Intelligence includes source coverage, evidence trails, and a planned semantic-search layer. Direct embeddings, Boolean-search, and vector-platform ownership are not documented."
+      },
+      {
+        "gate": "Show commercial judgment and the ability to explain technical product value to customers, executives, and cross-functional teams.",
+        "status": "pass",
+        "requirementId": "commercial-and-customer-translation",
+        "evidence": "The record includes eight years of Fortune 500 account leadership, investor demos, C-suite monetization and go-to-market planning, client workshops, executive presentations, and current product demos."
+      }
+    ]
+  },
+  "requirements": [
+    {
+      "id": "product-leadership-tenure",
+      "text": "Bring 5-8+ years of product management experience, including at least 3 years leading AI, ML, NLP, search, or knowledge-graph products.",
+      "priority": "hard-gate",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Current AI product and implementation work runs from July 2023 to present and covers discovery, requirements, workflow design, working POCs, roadmap decisions, demos, and client iteration.",
+        "Kinesso work adds more than three years of enterprise product leadership across a marketing intelligence suite used by 7,000+ people across 22 brands.",
+        "The record does not establish five to eight years under a conventional Product Manager title or three years leading a production search or knowledge-graph platform."
+      ],
+      "proofIds": [
+        "one-block-away-01",
+        "one-block-away-04",
+        "kinesso-02"
+      ],
+      "destinations": [
+        "summary",
+        "experience",
+        "portfolio",
+        "cover-letter"
+      ],
+      "resumeTerms": [
+        "AI product",
+        "roadmap decisions",
+        "marketing intelligence suite"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "strategy-roadmap-okrs-and-metrics",
+      "text": "Own product strategy, roadmap, quarterly planning, OKRs, and outcome-focused metrics for an AI competitive-benchmarking product.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Current work turns customer needs into product requirements, working POCs, roadmap decisions, and implementation choices.",
+        "Kinesso research and adoption data shaped roadmap priorities across more than 20 products.",
+        "Formal ownership of quarterly OKRs and a search-product metric system is not documented."
+      ],
+      "proofIds": [
+        "one-block-away-01",
+        "kinesso-02",
+        "kinesso-06"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "cover-letter"
+      ],
+      "resumeTerms": [
+        "product strategy",
+        "roadmap decisions",
+        "adoption data"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "data-extraction-and-knowledge-graph",
+      "text": "Lead data extraction, normalization, enrichment, derivative datasets, and knowledge-graph creation across structured and unstructured sources.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Bailey Intelligence combines founder inputs, GitHub signals, government and academic sources, source health, risk scoring, and evidence trails in a structured decision workflow.",
+        "Claims Detector and the FDA Warning Tool organize source material into review criteria, evidence gaps, annotations, and risk guidance.",
+        "Direct ownership of a production extraction pipeline, derivative data model, or knowledge graph is not documented."
+      ],
+      "proofIds": [
+        "one-block-away-03",
+        "hedgehox-02",
+        "hedgehox-06"
+      ],
+      "destinations": [
+        "skills",
+        "experience",
+        "portfolio",
+        "cover-letter"
+      ],
+      "resumeTerms": [
+        "RAG/knowledge bases",
+        "source health",
+        "evidence trails"
+      ],
+      "matchMode": "contextual"
+    },
+    {
+      "id": "conversational-vector-and-boolean-search",
+      "text": "Deliver conversational search using embeddings, vector or semantic retrieval, and Boolean search.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "The resume documents RAG and knowledge bases, model orchestration, prompt-defined criteria, and AI workflow design.",
+        "The Bailey portfolio case frames source-linked semantic search as the next product layer rather than a completed launch.",
+        "Embeddings, vector-search infrastructure, Boolean-search implementation, and production search-quality metrics are not documented."
+      ],
+      "proofIds": [
+        "one-block-away-03",
+        "one-block-away-04",
+        "hedgehox-02"
+      ],
+      "destinations": [
+        "skills",
+        "portfolio",
+        "cover-letter"
+      ],
+      "resumeTerms": [
+        "RAG/knowledge bases",
+        "model orchestration"
+      ],
+      "matchMode": "contextual"
+    },
+    {
+      "id": "saas-apis-and-connectors",
+      "text": "Build SaaS AI capabilities on modern architectures and connect them to an existing product portfolio through APIs and connectors.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Kanvas was a developer-first API services library shaped with product, engineering, and C-suite stakeholders.",
+        "Current work covers product strategy, front-end build, backend logic, AI workflows, and production handoff for working POCs.",
+        "Direct ownership of SaaS connectors, API contracts, cloud architecture, or legacy-platform integration is not documented."
+      ],
+      "proofIds": [
+        "kinesso-08",
+        "one-block-away-04"
+      ],
+      "destinations": [
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "API services library",
+        "backend behavior",
+        "production handoff"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "commercial-and-customer-translation",
+      "text": "Translate technical AI concepts into customer value, go-to-market narratives, and clear business outcomes.",
+      "priority": "hard-gate",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Eight years of Fortune 500 account leadership support customer communication, business judgment, prioritization, and cross-functional delivery.",
+        "Current work includes investor demos, product stories, client workshops, and turning technical behavior into decisions.",
+        "Kanvas work included C-suite monetization and go-to-market planning."
+      ],
+      "proofIds": [
+        "account-management-01",
+        "hedgehox-01",
+        "kinesso-08"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "cover-letter"
+      ],
+      "resumeTerms": [
+        "go-to-market planning",
+        "demo story",
+        "Fortune 500"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "llm-retrieval-search-fluency",
+      "text": "Bring hands-on familiarity with LLMs, embeddings, NLP, retrieval or search, and agentic workflows.",
+      "priority": "hard-gate",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "The resume documents governed LLM and VLM workflows, RAG and knowledge bases, prompt-defined criteria, model orchestration, human review, and working AI POCs.",
+        "The evidence supports applied LLM and retrieval fluency but not direct embeddings, NLP-pipeline, or search-platform ownership."
+      ],
+      "proofIds": [
+        "hedgehox-02",
+        "hedgehox-03",
+        "one-block-away-04"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio",
+        "cover-letter"
+      ],
+      "resumeTerms": [
+        "LLM/VLM workflows",
+        "RAG/knowledge bases",
+        "model orchestration"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "data-science-evaluation-and-model-strategy",
+      "text": "Partner with data science and engineering on data requirements, evaluation frameworks, model strategy, and cost-performance decisions.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Current AI work defines prompt criteria, model behavior, evidence handling, human review, implementation choices, and product handoff.",
+        "Kinesso work partnered with product and engineering on enterprise analytics, roadmaps, and reusable platform systems.",
+        "Formal evaluation frameworks, model-selection criteria, and inference cost-performance ownership are not documented."
+      ],
+      "proofIds": [
+        "hedgehox-02",
+        "one-block-away-04",
+        "kinesso-02"
+      ],
+      "destinations": [
+        "skills",
+        "experience",
+        "cover-letter"
+      ],
+      "resumeTerms": [
+        "prompt-defined criteria",
+        "model orchestration",
+        "product and engineering"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "discovery-and-competitive-intelligence",
+      "text": "Run discovery and validation with business users in professional services, financial services, market research, or competitive intelligence.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Kinesso work covered a marketing intelligence suite, competitive audits, interviews, prototype testing, beta groups, behavioral analytics, and executive recommendations.",
+        "Current work starts with customer discovery and turns unclear questions into testable products.",
+        "Direct financial-services, M&A, or dedicated competitive-intelligence product experience is not documented."
+      ],
+      "proofIds": [
+        "kinesso-02",
+        "kinesso-06",
+        "kinesso-07",
+        "one-block-away-01"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio",
+        "cover-letter"
+      ],
+      "resumeTerms": [
+        "marketing intelligence",
+        "competitive audits",
+        "client discovery"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "cross-functional-execution-and-adoption",
+      "text": "Drive execution across engineering, data, design, sales, customer success, and go-to-market teams, remove blockers, and support product adoption.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Current work spans product strategy, UX, AI workflow design, front-end build, backend logic, demos, and client iteration.",
+        "Kinesso leadership scaled a distributed design team from 2 to 30 and partnered across product, engineering, research, analytics, and executive stakeholders.",
+        "Account leadership adds customer-facing coordination across strategy, creative, UX, development, and regulated review teams."
+      ],
+      "proofIds": [
+        "one-block-away-04",
+        "kinesso-01",
+        "account-management-03"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "client iteration",
+        "product and engineering",
+        "engineering handoff"
+      ],
+      "matchMode": "exact"
+    }
+  ],
+  "fitGate": {
+    "supportedOverlap": [
+      "Current work owns AI product discovery, requirements, workflow design, working POCs, roadmap decisions, demos, and client iteration.",
+      "The resume documents LLM and VLM workflows, RAG and knowledge bases, prompt-defined criteria, model orchestration, evidence handling, and human review.",
+      "Bailey Intelligence combines live sources, source health, risk scoring, and evidence trails, with source-linked semantic search identified as the next product layer.",
+      "Kinesso work directly supports enterprise marketing intelligence, competitive audits, research, API-platform strategy, analytics, roadmap priorities, and adoption across 7,000+ people and 22 brands.",
+      "Eight years of Fortune 500 account leadership, investor demos, executive presentations, and go-to-market planning support the commercial and customer-facing side of the role.",
+      "Cross-functional leadership connects clients, executives, product, engineering, design, research, analytics, strategy, and delivery."
+    ],
+    "unsupportedRequirements": [
+      "Direct production ownership of embeddings, vector search, Boolean search, or a search-quality measurement program.",
+      "A shipped conversational-search product rather than a planned source-linked semantic-search layer.",
+      "Knowledge-graph architecture, node and relationship modeling, or production graph operations.",
+      "A production data-extraction and enrichment pipeline with derivative datasets and freshness metrics.",
+      "Formal AI evaluation-framework ownership, model-switching criteria, or inference cost-performance management.",
+      "Quarterly OKR ownership and Jira-based product operations are not named in the public evidence.",
+      "Direct professional-services, financial-services, M&A, or dedicated competitive-intelligence product ownership."
+    ],
+    "actualMismatches": [
+      "The recent operating center combines AI product strategy, implementation, UX, and client-led POC delivery rather than a conventional Senior Product Manager title sequence.",
+      "The strongest search proof is RAG and knowledge-base fluency plus a planned semantic-search layer, not a production embedding, Boolean, or vector-search launch.",
+      "Enterprise intelligence and benchmarking experience is credible, but financial-services and M&A use cases are not documented."
+    ],
+    "missingEvidence": [
+      "A shipped conversational-search product with relevance, answer-quality, latency, and search-success metrics.",
+      "A knowledge graph with documented entities, relationships, provenance, and update logic.",
+      "A data ingestion, normalization, enrichment, and derivative-dataset pipeline running in production.",
+      "A formal model evaluation and selection framework covering quality, cost, latency, and switching criteria.",
+      "Quarterly product planning artifacts with OKRs, KPI reviews, and Jira backlog ownership.",
+      "Direct discovery with financial-services, M&A, or competitive-intelligence users."
+    ],
+    "coverLetterBridge": {
+      "status": "recommended",
+      "rationale": "We can make the case with a cover letter by connecting current AI product ownership, Bailey's source-backed intelligence model, enterprise marketing-intelligence leadership, API-platform work, customer discovery, and commercial communication to the role's need. The letter must keep production embeddings, Boolean search, knowledge graphs, data pipelines, formal evaluation ownership, and financial-services experience as open gaps."
+    },
+    "resumeBase": {
+      "mode": "ai-product-implementation",
+      "sourceProfiles": [
+        {
+          "id": "ai-product-implementation",
+          "version": 1
+        }
+      ],
+      "leadProfileId": "ai-product-implementation",
+      "accountPresentation": "consolidated",
+      "action": "tailor-to-jd",
+      "rationale": "The role's center is AI product strategy, workflow design, retrieval-aware product decisions, enterprise analytics, research, and implementation. The AI/Product Implementation base carries the direct evidence. Account leadership supports commercial communication but does not make this a hybrid operating-center role."
+    },
+    "recommendation": "Proceed as an adjacent fit. Lead with AI product ownership, source-backed intelligence workflows, enterprise marketing intelligence, customer discovery, API-platform work, and commercial translation. Keep embeddings, vector and Boolean search, knowledge graphs, production data pipelines, formal model evaluation, Jira, and financial-services claims out of the package."
+  },
+  "positioning": {
+    "laneId": "ai-product-implementation",
+    "targetIdentity": "AI product and implementation leader",
+    "employerNeed": "Turn mixed company and market data into reliable competitive intelligence, ship a useful conversational-search experience, and make the technical story commercially clear.",
+    "bridgeType": "operating-center",
+    "applicationStrategy": "transferable",
+    "bridgeThesis": "turn unclear business questions into source-backed AI workflows, working POCs, and roadmap decisions",
+    "proofIds": [
+      "one-block-away-03",
+      "kinesso-02",
+      "kinesso-08"
+    ],
+    "remainingGap": "Direct production ownership of embeddings, Boolean and vector search, knowledge graphs, data pipelines, and formal AI evaluation is not documented."
+  },
+  "coverLetter": {
+    "trigger": "bridge-recommended",
+    "date": "2026-09-16",
+    "greeting": "Dear hiring team,",
+    "paragraphs": [
+      "I am applying for the Senior Product Manager role with Confidential Employer because it brings together the parts of product work where I am strongest: finding the business question, shaping the AI workflow, and making a technical product useful to customers. My background spans current AI product implementation, enterprise marketing intelligence, UX research, and eight years of Fortune 500 client leadership.",
+      "Through One Block Away, I lead client discovery and turn unclear questions into working AI POCs, demo flows, and roadmap decisions. I built WeReady's Bailey Intelligence dashboard around founder inputs, GitHub signals, government and academic sources, source health, risk scoring, and evidence trails. The case study is clear that source-linked semantic search is the next layer, not a feature I have already shipped. At Hedgehox, I turn recurring agency problems into governed AI workflows for claims review, evidence gaps, scoping, routing, and regulatory monitoring.",
+      "Earlier, I led research and UX strategy for Kinesso's marketing intelligence suite, used by more than 7,000 people across 22 white-label brands. Interviews, prototype testing, beta groups, behavioral analytics, and adoption data became roadmap priorities across more than 20 products. I also led research and design for Kanvas, a developer-first API services library, partnering with product and engineering on the roadmap and with C-suite stakeholders on monetization and go-to-market planning.",
+      "I would bring direct product, customer, and commercial leadership from adjacent AI and intelligence products. I would not present my background as production ownership of embeddings, Boolean search, knowledge graphs, or data pipelines. The useful bridge is my experience defining the customer problem, organizing source-backed workflows, translating technical behavior into decisions, and working with engineering and data partners to move a product from idea to a testable release.",
+      "I would welcome a conversation about how that mix could help the team build a competitive-intelligence product customers can trust and use."
+    ],
+    "closing": "Sincerely,",
+    "signature": "Wally Mostafa",
+    "proofIds": [
+      "one-block-away-03",
+      "kinesso-02",
+      "kinesso-08"
+    ]
+  },
+  "resume": {
+    "foundationId": "wally-mostafa-resume-2026-07-03",
+    "foundationVersion": 4,
+    "compositionMode": "foundation-complete",
+    "layoutDensity": "compact",
+    "roleContinuationBreaks": [
+      {
+        "roleId": "kinesso",
+        "afterBullet": 3
+      }
+    ],
+    "summary": "AI product and implementation leader with 15 years across enterprise intelligence, customer strategy, UX, and regulated AI workflows. I turn unclear business questions into source-backed AI workflows, working POCs, and roadmap decisions. Recent work includes LLM and VLM review tools, RAG and knowledge bases, an intelligence dashboard built around live sources and evidence trails, and enterprise products used by 7,000+ people across 22 brands.",
+    "skillIds": [
+      "ai-implementation-workflow-design",
+      "product-strategy-poc-delivery",
+      "research-experience-strategy",
+      "consultative-sales-solution-delivery"
+    ],
+    "skills": [
+      {
+        "label": "AI Implementation & Workflow Design",
+        "description": "Governed LLM/VLM workflows, multimodal review, RAG/knowledge bases, prompt-defined criteria, model orchestration, and human review surfaces"
+      },
+      {
+        "label": "Product Strategy & POC Delivery",
+        "description": "Discovery, scoping, requirements, prototype validation, demo narratives, build-ready logic, and production handoff"
+      },
+      {
+        "label": "Research & Experience Strategy",
+        "description": "Stakeholder interviews, competitive audits, journey maps, user flows, wireframes, prototypes, usability testing, and research-led product direction"
+      },
+      {
+        "label": "Consultative Sales & Solution Delivery",
+        "description": "Discovery-led solution design, POCs, demo narratives, client translation, and product recommendations tied to business needs"
+      }
+    ],
+    "roles": {
+      "hedgehox": [
+        "Turn recurring pharma agency problems into AI workflows for MLR claim review, brief intake, scoping, review routing, submission capture, and FDA signal monitoring",
+        "Built the functional Claims Detector POC, shaped the demo story, iterated with investors, and secured an investor",
+        "Designed Claims Detector workflows with prompt-defined review criteria that identify promotional claims, surface evidence gaps, and pre-populate audit-ready annotations before MLR submission",
+        "Designed the full Xenagos Bio startup biopharma website from scratch, including investor-facing structure, scientific positioning, visual direction, and hidden design-system handoff",
+        "Built Scope Generator for pharma agency finance and operations teams to manage regional rate cards, brands, sub-brands, and natural-language scope changes",
+        "Developed FDA Warning Tool concepts that connect warning-letter patterns to content-risk guidance for pharma teams"
+      ],
+      "one-block-away": [
+        "Lead client discovery and turn unclear business questions into testable AI use cases, working POCs, demo flows, and roadmap decisions",
+        "Use Claude Code and Codex to turn product and UX decisions into working POCs, covering workflow logic, interface build, backend behavior, demos, and client iteration",
+        "Built WeReady's Bailey Intelligence dashboard, translating founder inputs, GitHub signals, source health, risk scoring, and evidence trails into startup-readiness workflows",
+        "Built ListingPal's AI listing-generation POC and landing page, turning basic property inputs into listing copy, social posts, ad copy, styling direction, and MLS/SEO-ready language in under 90 seconds",
+        "Currently building the website and sponsor strategy for a Tunisia youth soccer program, positioning the project for player advancement, community support, and donor outreach"
+      ],
+      "kinesso": [
+        "Led UX research and strategy for a marketing intelligence suite used by 7,000+ people across 22 white-label brands; turned findings and adoption data into roadmap priorities for navigation, dashboards, brand theming, personalization, and product support",
+        "UX lead for research and design on Kanvas, Kinesso's developer-first API services library; partnered with product and engineering on roadmap priorities and with C-suite stakeholders on monetization and go-to-market planning",
+        "Collaborated on the UX/UI build of Digital Experience Audit, turning channel scoring, benchmarks, and recommendations into a repeatable workflow with data visualization and presentation-ready client outputs",
+        "Built Kinesso's first UX research practice across 20+ products, including participant recruitment, interviews, prototype testing, beta groups, behavioral analytics, research tooling, shared Figma documentation, and UX checkpoints in project plans",
+        "Led workshops on product discovery, ecosystem mapping, innovation, and user research; expanded the program from Kinesso teams to IPG groups and presented recommendations to executives and clients",
+        "Scaled product design from 2 to 30 across the US and Poland, hiring and staffing designers, leading critiques and quality reviews, and planning scope, resources, and engineering handoff across 20+ products",
+        "Helped shape and govern a design system with 500 components, 140 styles, 300 icons, and 50 personas, including accessibility and design quality standards; the work earned 5 Indigo Gold, 4 Indigo Silver, and Red Dot recognition",
+        "Partnered with the Head of Design to create the team's first onboarding program, career roadmaps, coaching structure, and performance review workflows for new and existing employees",
+        "Led a three-person team to second place in Kinesso's inaugural innovation challenge with an accessibility panel concept; later advised the next cohort and contributed to accessibility playbook and keyboard interaction standards"
+      ],
+      "omnicom": [
+        "Supported oncology accounts as a freelance UX designer, combining UX design and account-management experience to strengthen regulated healthcare work",
+        "Championed UX best practices across account, strategy, creative, and delivery conversations, translating brand goals into clearer user flows, content structure, and digital recommendations"
+      ],
+      "heartbeat": [
+        "Led UX research and experience strategy for pharma and healthcare work, translating stakeholder input, competitive audits, and user needs into digital product direction",
+        "Created journey maps, site maps, user flows, wireframes, and prototypes for patient, HCP, and internal brand-team experiences across regulated healthcare programs",
+        "Partnered with strategy, creative, account, and engineering teams to move UX recommendations from research findings into build-ready product and campaign experiences",
+        "Led research and creation of an oncology-wide design system for interactive visual aids (iVAs) at a major pharma company, with the goal of improving field usability and development efficiency",
+        "Member of Heartbeat's ETCH (Experiential Technology) group, which ran business-driven sprints exploring voice, AR/VR, and facial recognition for agency and client use"
+      ],
+      "account-management": [
+        "8 years managing Fortune 500 pharma and healthcare clients and brand budgets up to $20M across CNS/neurology, psychiatry, cardiovascular/metabolic, and sleep/wakefulness brands including NUVIGIL, Namenda XR, Lipitor, and Zoloft",
+        "One of two account consumer leads on FCB Health's largest pharma account across all verticals: TV, radio, digital, gaming, Times Square, unbranded campaigns, brand planning, and MLR review",
+        "Translated client and brand strategy into briefs, creative feedback, production requirements, timelines, and MLR-ready deliverables across account, creative, UX, and development teams"
+      ]
+    },
+    "sourceBulletIds": {
+      "hedgehox": [
+        "hedgehox-03",
+        "hedgehox-01",
+        "hedgehox-02",
+        "hedgehox-04",
+        "hedgehox-05",
+        "hedgehox-06"
+      ],
+      "one-block-away": [
+        "one-block-away-01",
+        "one-block-away-04",
+        "one-block-away-03",
+        "one-block-away-02",
+        "one-block-away-05"
+      ],
+      "kinesso": [
+        "kinesso-02",
+        "kinesso-08",
+        "kinesso-03",
+        "kinesso-06",
+        "kinesso-07",
+        "kinesso-01",
+        "kinesso-04",
+        "kinesso-05",
+        "kinesso-09"
+      ],
+      "omnicom": [
+        "omnicom-01",
+        "omnicom-02"
+      ],
+      "heartbeat": [
+        "heartbeat-01",
+        "heartbeat-02",
+        "heartbeat-03",
+        "heartbeat-04",
+        "heartbeat-05"
+      ],
+      "account-management": [
+        "account-management-01",
+        "account-management-02",
+        "account-management-03"
+      ]
+    }
+  },
+  "hero": {
+    "eyebrow": "Senior Product Manager | Selected Work",
+    "tags": [
+      "AI product workflows",
+      "Enterprise intelligence",
+      "Customer discovery"
+    ],
+    "intro": "Here is a look at recent work that may be relevant to the Senior Product Manager role, especially around AI workflows, source-backed intelligence, benchmarking, and enterprise product decisions. My resume covers the broader background."
+  },
+  "contact": {
+    "prompt": "Email is the easiest way to reach me about the Senior Product Manager role.",
+    "signoff": "AI product strategy | enterprise intelligence | customer discovery"
+  },
+  "route": {
+    "presentation": "showcase",
+    "heroIntent": "resume-support",
+    "showcaseSections": [
+      "chapters"
+    ],
+    "workHeading": "Selected product and intelligence work.",
+    "contactHeading": "Thanks for taking a look."
+  },
+  "constraints": {
+    "doNotClaim": [
+      "Five to eight years under a conventional Product Manager title",
+      "Three years leading a production search or knowledge-graph platform",
+      "Production embeddings or vector-search ownership",
+      "Boolean-search implementation ownership",
+      "Knowledge-graph architecture or operations ownership",
+      "Production data-ingestion or enrichment pipeline ownership",
+      "Formal AI model-evaluation framework ownership",
+      "Inference cost-performance or model-switching ownership",
+      "Formal quarterly OKR ownership",
+      "Jira proficiency",
+      "Financial-services or M&A product experience",
+      "Apache Solr experience",
+      "Data-science or machine-learning engineering ownership"
+    ],
+    "blockedTerms": [
+      "knowledge graph expert",
+      "vector search owner",
+      "embeddings expert",
+      "Boolean search developer",
+      "data pipeline owner",
+      "Apache Solr",
+      "data scientist",
+      "machine learning engineer",
+      "Jira expert"
+    ]
+  },
+  "privacy": {
+    "publicSafe": true,
+    "notes": "Contains only the public pasted job description, a matching public listing, and public-safe evidence from the resume and portfolio. It excludes recruiter details, application answers, compensation decisions, private eligibility information, and submission state."
+  },
+  "qa": {
+    "status": "qa-passed",
+    "builtAt": "2026-09-16T15:00:02.000Z",
+    "configInputSha256": "4f8952f6083c17ce104f87282871be43fc9d930a1aeb8270005a8276b4c8e676",
+    "sourceResumeSha256": "8273f9c5f9038a159fa1d9ecc813e2c23069e37c7ef6dd0effe5439cef217fd7",
+    "resumeFoundation": {
+      "id": "wally-mostafa-resume-2026-07-03",
+      "sourcePdfSha256": "f9b05b6c3c134262b1af6c5734363daf4385cf335407a139779a37d138adf1aa"
+    },
+    "resumeBase": {
+      "mode": "ai-product-implementation",
+      "sourceProfiles": [
+        {
+          "id": "ai-product-implementation",
+          "version": 1
+        }
+      ],
+      "leadProfileId": "ai-product-implementation",
+      "accountPresentation": "consolidated",
+      "action": "tailor-to-jd",
+      "registryVersion": 1,
+      "registrySha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108"
+    },
+    "artifactHashes": {
+      "routeSha256": "e842885f155b7b0dafb565856542ddbf1f0ac6e5cf789aeb59d90961446767c4",
+      "resumePdfSha256": "622a8dc46741b6bc506dc6545e400a1dff1bac2efa89e8427fe3016833e8193d",
+      "coverLetterPdfSha256": "f2ec52661e59115cb41c27bf808b9b31f8ab88909af42aa5b9f58ecf78600916",
+      "coverLetterMarkdownSha256": "4c7fefb51650011f6275775afafb42d627ad42abafa47c729211fb8855cf2ad6",
+      "scopedProjectSha256": {
+        "project-02.html": "af06cae5ee2915cf0b3582d8e7b580b5050405a7d036259790059836a9c143e2",
+        "project-06.html": "67ab483a3e67c6652015efa2ef46edef4d03395ec203506b509c0b490bad736c",
+        "project-04.html": "e7edce5bda57b6fbc6fd6ba9c814dc22e659ade5a09e25f9b5089d3509213bac",
+        "project-03.html": "199a2d0bceee214ba80341ea3f08a8493d1bd9454671b143e25e3c4cef7ce63c"
+      },
+      "scopedProjectAssetSha256": {}
+    },
+    "renderer": {
+      "browser": {
+        "name": "chrome-headless-shell",
+        "version": "Google Chrome for Testing 151.0.7922.34"
+      },
+      "htmlPath": "tmp/tailored-resumes/senior-product-manager-ai-competitive-intelligence.html",
+      "pdfPath": "output/pdf/Wally-Mostafa-Senior-Product-Manager-AI-Competitive-Intelligence-Resume.pdf",
+      "fontWait": true,
+      "fontProfile": "portfolio-pdf"
+    },
+    "coverLetterRenderer": {
+      "browser": {
+        "name": "chrome-headless-shell",
+        "version": "Google Chrome for Testing 151.0.7922.34"
+      },
+      "htmlPath": "tmp/tailored-resumes/senior-product-manager-ai-competitive-intelligence-cover-letter.html",
+      "pdfPath": "output/pdf/Wally-Mostafa-Senior-Product-Manager-AI-Competitive-Intelligence-Cover-Letter.pdf",
+      "fontWait": true,
+      "fontProfile": "portfolio-pdf"
+    },
+    "coverLetter": {
+      "ok": true,
+      "failures": [],
+      "pageCount": 1,
+      "sizeBytes": 24456,
+      "templateVersion": "real-chemistry-21grams-v1",
+      "fonts": {
+        "display": "Syne 800",
+        "body": "Instrument Sans 400/600",
+        "type3Fonts": false
+      },
+      "layout": {
+        "page": "Letter",
+        "margin": "0.58in 0.62in",
+        "header": "centered-rule"
+      }
+    },
+    "ats": {
+      "ok": true,
+      "pdfPath": "output/pdf/Wally-Mostafa-Senior-Product-Manager-AI-Competitive-Intelligence-Resume.pdf",
+      "pageCount": 2,
+      "fileSize": 80884,
+      "annotations": [
+        {
+          "page": 1,
+          "uri": "mailto:wmostafa12@gmail.com"
+        },
+        {
+          "page": 1,
+          "uri": "https://linkedin.com/in/wallymo"
+        },
+        {
+          "page": 1,
+          "uri": "https://wallymo.github.io/senior-product-manager-ai-competitive-intelligence/"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/6748"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/4629"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.red-dot.org/project/dxa-digital-experience-audit-55219"
+        }
+      ],
+      "fontCompatibility": {
+        "type3Fonts": false
+      },
+      "coverage": [
+        {
+          "id": "product-leadership-tenure",
+          "requirement": "Bring 5-8+ years of product management experience, including at least 3 years leading AI, ML, NLP, search, or knowledge-graph products.",
+          "priority": "hard-gate",
+          "evidenceStatus": "adjacent",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "AI product",
+            "roadmap decisions",
+            "marketing intelligence suite"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "strategy-roadmap-okrs-and-metrics",
+          "requirement": "Own product strategy, roadmap, quarterly planning, OKRs, and outcome-focused metrics for an AI competitive-benchmarking product.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "product strategy",
+            "roadmap decisions",
+            "adoption data"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "data-extraction-and-knowledge-graph",
+          "requirement": "Lead data extraction, normalization, enrichment, derivative datasets, and knowledge-graph creation across structured and unstructured sources.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "contextual",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "RAG/knowledge bases",
+            "source health",
+            "evidence trails"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "conversational-vector-and-boolean-search",
+          "requirement": "Deliver conversational search using embeddings, vector or semantic retrieval, and Boolean search.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "contextual",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "RAG/knowledge bases",
+            "model orchestration"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "saas-apis-and-connectors",
+          "requirement": "Build SaaS AI capabilities on modern architectures and connect them to an existing product portfolio through APIs and connectors.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "API services library",
+            "backend behavior",
+            "production handoff"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "commercial-and-customer-translation",
+          "requirement": "Translate technical AI concepts into customer value, go-to-market narratives, and clear business outcomes.",
+          "priority": "hard-gate",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "go-to-market planning",
+            "demo story",
+            "Fortune 500"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "llm-retrieval-search-fluency",
+          "requirement": "Bring hands-on familiarity with LLMs, embeddings, NLP, retrieval or search, and agentic workflows.",
+          "priority": "hard-gate",
+          "evidenceStatus": "adjacent",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "LLM/VLM workflows",
+            "RAG/knowledge bases",
+            "model orchestration"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "data-science-evaluation-and-model-strategy",
+          "requirement": "Partner with data science and engineering on data requirements, evaluation frameworks, model strategy, and cost-performance decisions.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "prompt-defined criteria",
+            "model orchestration",
+            "product and engineering"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "discovery-and-competitive-intelligence",
+          "requirement": "Run discovery and validation with business users in professional services, financial services, market research, or competitive intelligence.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "marketing intelligence",
+            "competitive audits",
+            "client discovery"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "cross-functional-execution-and-adoption",
+          "requirement": "Drive execution across engineering, data, design, sales, customer success, and go-to-market teams, remove blockers, and support product adoption.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "client iteration",
+            "product and engineering",
+            "engineering handoff"
+          ],
+          "missingTerms": []
+        }
+      ],
+      "failures": [],
+      "warnings": []
+    },
+    "humanizer": {
+      "status": "passed",
+      "version": "2.2.0",
+      "mode": "surface-only",
+      "reviewedAt": "2026-09-16T14:58:58.619Z",
+      "copySha256": "23e11823ab4d2ea0716fc9680569a09ddfff41d31c722086ab4840a0b7c5c3e2",
+      "reviewMethod": "humanizer-skill",
+      "semanticPassAttested": true,
+      "staticChecksPassed": true
+    },
+    "route": {
+      "viewports": [
+        {
+          "name": "desktop",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-02",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-06",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-04",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-03",
+          "errors": []
+        },
+        {
+          "name": "mobile",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-02",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-06",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-04",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-03",
+          "errors": []
+        }
+      ],
+      "errors": []
+    }
+  },
+  "copyReview": {
+    "humanizerVersion": "2.2.0",
+    "mode": "surface-only",
+    "status": "passed",
+    "reviewedAt": "2026-09-16T14:58:58.619Z",
+    "copySha256": "23e11823ab4d2ea0716fc9680569a09ddfff41d31c722086ab4840a0b7c5c3e2",
+    "preserved": [
+      "content",
+      "structure",
+      "claims",
+      "ending"
+    ],
+    "rewriteAuthorized": false,
+    "reviewMethod": "humanizer-skill",
+    "semanticPassAttested": true,
+    "staticChecksPassed": true,
+    "finalAntiAiPass": true,
+    "remainingTells": []
+  }
+}
