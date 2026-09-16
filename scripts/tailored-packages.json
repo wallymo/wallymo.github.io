@@ -1190,9 +1190,41 @@
       "resumePdfPath": "output/pdf/Wally-Mostafa-CREO-AI-Enablement-Consultant-Resume.pdf",
       "coverLetterPdfPath": "output/pdf/Wally-Mostafa-CREO-AI-Enablement-Consultant-Cover-Letter.pdf",
       "coverLetterMarkdownPath": "output/pdf/Wally-Mostafa-CREO-AI-Enablement-Consultant-Cover-Letter.md",
-      "publishStatus": "local-only",
+      "publishStatus": "live-verified",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-09-16T14:55:20.124Z"
+      "builtAt": "2026-09-16T14:55:20.124Z",
+      "verification": {
+        "verifiedAt": "2026-09-16T14:57:26.348Z",
+        "routeUrl": "https://wallymo.github.io/creo-ai-enablement-consultant/",
+        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-CREO-AI-Enablement-Consultant-Resume.pdf",
+        "configUrl": "https://wallymo.github.io/scripts/packages/creo-ai-enablement-consultant.json",
+        "projectUrls": [
+          "https://wallymo.github.io/creo-ai-enablement-consultant/project-01.html",
+          "https://wallymo.github.io/creo-ai-enablement-consultant/project-04.html",
+          "https://wallymo.github.io/creo-ai-enablement-consultant/project-02.html",
+          "https://wallymo.github.io/creo-ai-enablement-consultant/project-03.html"
+        ],
+        "redirectUrls": [],
+        "configSha256": "47d2a8df1ba6cb145713ad1ad80f6e542976c2e21b0499b37e757eee9ebcca27",
+        "pdfSha256": "85587d975892e4998c53037de924c4350926f96db70f13d94e8eea4295fa8632",
+        "resumeBaseProfilesUrl": "https://wallymo.github.io/scripts/resume-base-profiles.json",
+        "resumeBaseProfilesSha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108",
+        "coverLetterPdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-CREO-AI-Enablement-Consultant-Cover-Letter.pdf",
+        "coverLetterMarkdownUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-CREO-AI-Enablement-Consultant-Cover-Letter.md",
+        "coverLetterPdfSha256": "b41587e8634bf53c9df6df122beb11eba7e6bde937859d7b0512cad4f942120b",
+        "coverLetterMarkdownSha256": "c3f572e37a83a4d834ea1fddf5cf6baced184296ed0f80a12bcd67b2b300f4c6",
+        "routeSha256": "0e72db6711fdc8cbd91dbffaf2727c5a0a2648ea368bd5e3fbc8534b93232770",
+        "scopedProjectSha256": {
+          "project-01.html": "133c889055b30e002eddf3d7d9fa2b5feee95b00652db1aec6445e44569cfd40",
+          "project-04.html": "ac8094e611767e9740e6d61fdc74802d8a65c829c5e16a7ca87c718cac4ad181",
+          "project-02.html": "02d6e79f7345cea79684f6a39e31d1c3bb6617bfa6383e3747499879af232589",
+          "project-03.html": "57348772a5949bfa80b8cd224074bfb1075400bb7d25b690b5a6fef33121fd1f"
+        },
+        "scopedProjectAssetUrls": [],
+        "scopedProjectAssetSha256": {},
+        "configInputSha256": "35bfabb2637f2625cce129caa511b82cad3cdaa74a83b09bceac71b337ce2c63",
+        "qaBuiltAt": "2026-09-16T14:55:20.124Z"
+      }
     },
     {
       "workflowVersion": 2,
