@@ -1304,9 +1304,41 @@
       "resumePdfPath": "output/pdf/Wally-Mostafa-CX-Lead-Digital-Customer-Experience-Resume.pdf",
       "coverLetterPdfPath": "output/pdf/Wally-Mostafa-CX-Lead-Digital-Customer-Experience-Cover-Letter.pdf",
       "coverLetterMarkdownPath": "output/pdf/Wally-Mostafa-CX-Lead-Digital-Customer-Experience-Cover-Letter.md",
-      "publishStatus": "local-only",
+      "publishStatus": "live-verified",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-09-16T14:45:53.420Z"
+      "builtAt": "2026-09-16T14:45:53.420Z",
+      "verification": {
+        "verifiedAt": "2026-09-16T15:40:26.880Z",
+        "routeUrl": "https://wallymo.github.io/cx-lead-digital-customer-experience/",
+        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-CX-Lead-Digital-Customer-Experience-Resume.pdf",
+        "configUrl": "https://wallymo.github.io/scripts/packages/cx-lead-digital-customer-experience.json",
+        "projectUrls": [
+          "https://wallymo.github.io/cx-lead-digital-customer-experience/project-04.html",
+          "https://wallymo.github.io/cx-lead-digital-customer-experience/project-06.html",
+          "https://wallymo.github.io/cx-lead-digital-customer-experience/project-09.html",
+          "https://wallymo.github.io/cx-lead-digital-customer-experience/project-03.html"
+        ],
+        "redirectUrls": [],
+        "configSha256": "ed3491ef0079bb1563a8a46c5aa1299af7d87cc9750cc5af39576373721d9d7f",
+        "pdfSha256": "0f5444b809c1abbc9a773a055606136177f8b3dedf25930bccb9ba244607ce32",
+        "resumeBaseProfilesUrl": "https://wallymo.github.io/scripts/resume-base-profiles.json",
+        "resumeBaseProfilesSha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108",
+        "coverLetterPdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-CX-Lead-Digital-Customer-Experience-Cover-Letter.pdf",
+        "coverLetterMarkdownUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-CX-Lead-Digital-Customer-Experience-Cover-Letter.md",
+        "coverLetterPdfSha256": "e3550102ade8b733f2cabdc8d9cd27efdb36a75fbb33427271743349d13b1b64",
+        "coverLetterMarkdownSha256": "ca229ea3dc938921dbdd57d1b6594faa1a0493292200fb6cf5500e9ba57bc3ec",
+        "routeSha256": "18b9a4b88c024d1cd00d7d0dddf216e1cd37b35c36d25560f55c8d39ee52598b",
+        "scopedProjectSha256": {
+          "project-04.html": "a0c1f92e40f33fcdab6843149430c9c4ba5c931ffaee4309058b71dd57d81208",
+          "project-06.html": "f0982639c2623720a77d8a234a12e11e5006d88c0fcd55d8887771df19250977",
+          "project-09.html": "94413faac75c4a97fe3a90f35891c2b7293c512c454752154f054ae181fcd217",
+          "project-03.html": "cd5aa334ffcbb6f5bcb82ce8f1640a48387258fe9adfa55ca0ab440e315a29a8"
+        },
+        "scopedProjectAssetUrls": [],
+        "scopedProjectAssetSha256": {},
+        "configInputSha256": "467c047b956a2efba4211a29c37b86e3de935f1480f961c1ebba58b1eb7d0f6c",
+        "qaBuiltAt": "2026-09-16T14:45:53.420Z"
+      }
     },
     {
       "slug": "deloitte-human-capital",
