@@ -1,0 +1,1021 @@
+{
+  "workflowVersion": 2,
+  "contractRevision": 7,
+  "slug": "cx-lead-digital-customer-experience",
+  "roleTitle": "CX Lead",
+  "artifactStem": "CX-Lead-Digital-Customer-Experience",
+  "fitClass": "adjacent",
+  "routeMode": "scoped-projects",
+  "selectedProjects": [
+    "project-04.html",
+    "project-06.html",
+    "project-09.html",
+    "project-03.html"
+  ],
+  "job": {
+    "company": "Confidential Employer",
+    "roleTitle": "CX Lead",
+    "jobId": "not-provided",
+    "jobUrl": "not-provided",
+    "sourceChannel": "user-provided job description",
+    "dateCaptured": "2026-09-16",
+    "location": "Not stated",
+    "employmentType": "Not stated",
+    "compensation": "Not stated",
+    "atsVendor": "unknown",
+    "rawJd": "Summary\n\nThe CX Lead will execute the regional digital customer experience strategy and drive optimization and continuous improvement across digital customer journeys. This role partners with Digital, Marketing, Sales, UX, Analytics, and business teams to deliver seamless, customer-centric, data-informed experiences across web, eCommerce, and digital tools.\n\nResponsibilities\n\nExecute digital customer experience strategy and roadmap.\nLead CX initiatives across B2B and eCommerce digital channels.\nApply customer journey thinking, UX principles, content storytelling, and behavioral analytics.\nIdentify friction points and opportunities to improve engagement, usability, and conversion.\nSupport CRO, personalization, and optimization of digital tools and eCommerce experiences.\nOwn planning, coordination, and delivery of CX projects.\nManage multiple workstreams, timelines, documentation, risks, and dependencies.\nCollaborate with UX, content, Marketing, Product, Analytics, and Digital teams.\nTrack performance, KPIs, and provide actionable insights to leadership.\n\nQualifications\n\n5-7 years of experience in customer experience, UX, digital marketing, digital operations, CRM, or related roles.\nExperience leading CX or digital initiatives from concept through execution.\nExperience with customer research, journey mapping, and analytics.\nStrong project management and cross-functional collaboration skills.\nWorking knowledge of digital platforms, MarTech, CMS, CRM, testing, and analytics tools.\nData-informed mindset with strong communication skills.\nBachelor's degree in Marketing, Business, or related field, or equivalent experience."
+  },
+  "classification": {
+    "targetLane": "product-ux-design",
+    "evidenceMode": "balanced",
+    "primarySource": "The resume directly supports the role's CX, UX, research, analytics, roadmap, project-delivery, and cross-functional operating center. It also documents digital campaign, consumer web, CRM, and client leadership experience, but it does not show end-to-end eCommerce or CRO ownership.",
+    "supportingSource": "The portfolio shows the work behind the resume through customer research, journey and workflow design, enterprise personalization, behavioral data, digital performance audits, and client-ready analytics. It strengthens the fit but does not fill the eCommerce and named-platform gaps.",
+    "hardGateStatus": "pass",
+    "hardGates": [
+      {
+        "gate": "Bring 5-7 years of experience in customer experience, UX, digital marketing, digital operations, CRM, or a related field.",
+        "status": "pass",
+        "requirementId": "relevant-experience",
+        "evidence": "The resume documents more than six years of enterprise UX, customer research, digital product, and experience-strategy work, plus eight years of client and digital campaign leadership."
+      },
+      {
+        "gate": "Hold a bachelor's degree in Marketing, Business, or a related field, or equivalent experience.",
+        "status": "pass",
+        "requirementId": "degree-or-equivalent",
+        "evidence": "The resume lists a BA in Labor Studies and Employee Relations from Rutgers University, alongside directly relevant professional experience."
+      }
+    ]
+  },
+  "requirements": [
+    {
+      "id": "relevant-experience",
+      "text": "Bring 5-7 years of experience in customer experience, UX, digital marketing, digital operations, CRM, or a related field.",
+      "priority": "hard-gate",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Kinesso work covered more than six years of enterprise UX, research, analytics, digital product strategy, and design leadership across a 20+ product suite.",
+        "Earlier agency work covered digital campaigns, consumer web experiences, CRM, brand planning, client leadership, and cross-functional delivery."
+      ],
+      "proofIds": [
+        "kinesso-02",
+        "kinesso-06",
+        "addition:fcb-nuvigil-rebrand-crm"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio",
+        "cover-letter"
+      ],
+      "resumeTerms": [
+        "customer experience",
+        "enterprise UX",
+        "CRM"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "degree-or-equivalent",
+      "text": "Hold a bachelor's degree in Marketing, Business, or a related field, or bring equivalent experience.",
+      "priority": "hard-gate",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The resume lists a BA in Labor Studies and Employee Relations from Rutgers University."
+      ],
+      "proofIds": [],
+      "destinations": [
+        "application-answer"
+      ],
+      "resumeTerms": [
+        "BA Labor Studies & Employee Relations",
+        "Rutgers University"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "cx-strategy-roadmap-and-execution",
+      "text": "Execute a digital customer experience strategy and roadmap and lead digital initiatives from concept through delivery.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Kinesso research and adoption data became roadmap priorities for navigation, dashboards, brand theming, personalization, and product support across 20+ products.",
+        "Current product work moves from client discovery and workflow definition through working prototypes, validation, roadmap decisions, and handoff."
+      ],
+      "proofIds": [
+        "kinesso-02",
+        "one-block-away-01",
+        "one-block-away-04"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio",
+        "cover-letter"
+      ],
+      "resumeTerms": [
+        "digital journey leadership",
+        "roadmap priorities",
+        "working prototype"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "b2b-and-ecommerce-channels",
+      "text": "Lead customer experience initiatives across B2B and eCommerce digital channels.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Kinesso work covered a B2B marketing-intelligence suite used by 7,000+ people across 22 white-label brands.",
+        "Agency work covered consumer websites, digital campaigns, CRM, loyalty, and patient communities.",
+        "Direct ownership of an eCommerce storefront, checkout funnel, merchandising program, or commerce roadmap is not documented."
+      ],
+      "proofIds": [
+        "kinesso-02",
+        "addition:fcb-nuvigil-rebrand-crm",
+        "addition:cdm-lipitor-zoloft-digital"
+      ],
+      "destinations": [
+        "summary",
+        "experience",
+        "portfolio",
+        "cover-letter"
+      ],
+      "resumeTerms": [
+        "B2B products",
+        "consumer web",
+        "digital campaigns"
+      ],
+      "matchMode": "contextual"
+    },
+    {
+      "id": "journeys-ux-content-and-behavioral-analytics",
+      "text": "Apply customer journey thinking, UX principles, content storytelling, research, and behavioral analytics.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Heartbeat work included customer journey maps, site maps, user flows, wireframes, prototypes, stakeholder input, and competitive audits.",
+        "Kinesso's research practice used interviews, prototype testing, beta groups, behavioral analytics, research tooling, and shared documentation.",
+        "Omnicom work translated brand goals into user flows, content structure, and digital recommendations."
+      ],
+      "proofIds": [
+        "heartbeat-01",
+        "heartbeat-02",
+        "kinesso-06",
+        "omnicom-02"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio",
+        "cover-letter"
+      ],
+      "resumeTerms": [
+        "customer journey maps",
+        "behavioral analytics",
+        "content structure"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "friction-engagement-usability-and-conversion",
+      "text": "Find friction and improve engagement, usability, and conversion across digital journeys.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Research, usability testing, adoption data, and behavioral analytics informed navigation, dashboards, personalization, and product-support priorities.",
+        "A Pfizer digital program used campaign metrics to shape online and loyalty recommendations, and a Jazz digital campaign doubled qualified traffic against its benchmark.",
+        "Formal conversion-funnel ownership and a repeatable CRO program are not documented."
+      ],
+      "proofIds": [
+        "kinesso-02",
+        "kinesso-06",
+        "addition:cdm-lipitor-zoloft-digital",
+        "addition:scout-xyrem-bridging-campaign"
+      ],
+      "destinations": [
+        "summary",
+        "experience",
+        "portfolio",
+        "cover-letter"
+      ],
+      "resumeTerms": [
+        "usability testing",
+        "campaign metrics",
+        "qualified traffic"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "cro-personalization-and-optimization",
+      "text": "Support CRO, personalization, and optimization of digital tools and eCommerce experiences.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Kinesso roadmap work directly covered personalization, white-label brand theming, navigation, dashboards, and product support.",
+        "The Digital Experience Audit turned channel scoring, benchmarks, and recommendations into a repeatable optimization workflow.",
+        "The evidence does not show ownership of a formal CRO practice or eCommerce testing program."
+      ],
+      "proofIds": [
+        "kinesso-02",
+        "kinesso-03",
+        "kinesso-04"
+      ],
+      "destinations": [
+        "summary",
+        "experience",
+        "portfolio",
+        "cover-letter"
+      ],
+      "resumeTerms": [
+        "personalization",
+        "channel scoring",
+        "benchmarks"
+      ],
+      "matchMode": "contextual"
+    },
+    {
+      "id": "project-planning-and-multiple-workstreams",
+      "text": "Own planning, coordination, documentation, risks, dependencies, timelines, and delivery across multiple CX workstreams.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Kinesso work included scope, staffing, resources, quality reviews, project-plan checkpoints, and engineering handoff across more than 20 products.",
+        "Eight years of account leadership included briefs, production requirements, priorities, timelines, budgets, status reporting, and cross-functional delivery."
+      ],
+      "proofIds": [
+        "kinesso-01",
+        "kinesso-06",
+        "account-management-01",
+        "account-management-03"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "cover-letter"
+      ],
+      "resumeTerms": [
+        "across 20+ products",
+        "timelines",
+        "risk visibility"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "cross-functional-collaboration",
+      "text": "Collaborate with UX, content, Marketing, Product, Analytics, Digital, Sales, and business teams.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Work across Kinesso, Heartbeat, Omnicom, and account-management roles connected product, engineering, analytics, design, content, strategy, creative, client, and delivery teams.",
+        "The resume documents clear translation from business and customer needs into shared requirements, research findings, product decisions, and build-ready delivery."
+      ],
+      "proofIds": [
+        "heartbeat-03",
+        "omnicom-02",
+        "account-management-03",
+        "kinesso-08"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "cover-letter"
+      ],
+      "resumeTerms": [
+        "cross-functional delivery",
+        "Product and Engineering",
+        "build-ready"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "performance-kpis-and-insights",
+      "text": "Track performance and KPIs and turn the findings into actionable insight for leadership.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Kinesso work used behavioral and adoption data to set roadmap priorities and turned channel scoring, benchmarks, and recommendations into client-ready outputs.",
+        "Agency work used campaign metrics to shape digital recommendations and included regular client status and financial reporting."
+      ],
+      "proofIds": [
+        "kinesso-02",
+        "kinesso-03",
+        "addition:cdm-lipitor-zoloft-digital"
+      ],
+      "destinations": [
+        "summary",
+        "experience",
+        "portfolio",
+        "cover-letter"
+      ],
+      "resumeTerms": [
+        "adoption data",
+        "channel scoring",
+        "benchmarks"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "digital-platforms-martech-cms-crm-testing-analytics",
+      "text": "Bring working knowledge of digital platforms, MarTech, CMS, CRM, testing, and analytics tools.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "The resume supports enterprise digital platforms, a marketing-intelligence suite, CRM patient support, consumer websites, prototype testing, behavioral analytics, research tools, and digital performance audits.",
+        "A specific CMS, experimentation platform, CRM product, or named MarTech stack is not documented."
+      ],
+      "proofIds": [
+        "kinesso-02",
+        "kinesso-06",
+        "addition:fcb-nuvigil-rebrand-crm"
+      ],
+      "destinations": [
+        "experience",
+        "portfolio",
+        "cover-letter"
+      ],
+      "resumeTerms": [
+        "marketing intelligence suite",
+        "CRM patient support program",
+        "behavioral analytics"
+      ],
+      "matchMode": "contextual"
+    },
+    {
+      "id": "communication-and-leadership",
+      "text": "Use strong communication and a data-informed mindset to guide teams and leadership decisions.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Kinesso work included workshops, executive and client recommendations, shared research documentation, and a product-design organization scaled from 2 to 30.",
+        "Client roles required briefs, feedback, timelines, status reporting, and recommendations across senior stakeholders and delivery teams."
+      ],
+      "proofIds": [
+        "kinesso-01",
+        "kinesso-07",
+        "account-management-03"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "cover-letter"
+      ],
+      "resumeTerms": [
+        "executives and clients",
+        "communication",
+        "cross-functional delivery"
+      ],
+      "matchMode": "exact"
+    }
+  ],
+  "fitGate": {
+    "supportedOverlap": [
+      "More than six years of enterprise UX, customer research, analytics, and digital product leadership directly match the role's CX operating center.",
+      "Kinesso work covered 20+ B2B products used by 7,000+ people across 22 white-label brands and turned research and adoption data into roadmap priorities.",
+      "Research evidence includes customer interviews, journey maps, prototype testing, beta groups, behavioral analytics, usability work, and shared documentation.",
+      "Digital optimization evidence includes personalization, brand theming, navigation, dashboards, channel scoring, benchmarks, and recommendations.",
+      "Project and leadership evidence includes scaling product design from 2 to 30, coordinating more than 20 products, and managing Fortune 500 client work with budgets up to $20M.",
+      "Earlier digital marketing work adds consumer websites, campaign metrics, a loyalty program, CRM patient support, online communities, and cross-functional campaign delivery."
+    ],
+    "unsupportedRequirements": [
+      "Direct ownership of an eCommerce storefront, checkout funnel, merchandising program, or commerce roadmap is not documented.",
+      "A formal CRO program, experimentation roadmap, or conversion-rate target is not documented.",
+      "Named CMS, CRM, A/B testing, analytics, and MarTech platforms are not documented in the public evidence.",
+      "Sales-team partnership is implied by broader client and go-to-market work but is not documented as a distinct CX workstream."
+    ],
+    "actualMismatches": [
+      "The strongest documented CX work is enterprise B2B software, healthcare digital experiences, and marketing analytics rather than eCommerce operations.",
+      "The public evidence shows analytics-informed product and campaign decisions, but not ownership of a commerce conversion funnel."
+    ],
+    "missingEvidence": [
+      "A named eCommerce journey with product detail, cart, checkout, fulfillment, or post-purchase ownership.",
+      "A CRO test plan with hypothesis, experiment, conversion metric, and measured lift.",
+      "Specific CMS, CRM, testing, analytics, and personalization platforms used hands-on.",
+      "A CX scorecard tied to conversion, revenue, repeat purchase, or another commerce KPI."
+    ],
+    "coverLetterBridge": {
+      "status": "recommended",
+      "rationale": "We can make the case with a cover letter by connecting enterprise CX strategy, B2B digital products, customer research, journey mapping, behavioral analytics, personalization, digital campaign performance, CRM, and cross-functional delivery to the employer's need. The letter keeps direct eCommerce and formal CRO ownership as the honest gap."
+    },
+    "resumeBase": {
+      "mode": "hybrid-selective",
+      "sourceProfiles": [
+        {
+          "id": "ai-product-implementation",
+          "version": 1
+        },
+        {
+          "id": "account-leadership",
+          "version": 1
+        }
+      ],
+      "leadProfileId": "ai-product-implementation",
+      "accountPresentation": "consolidated",
+      "action": "tailor-to-jd",
+      "rationale": "The role's center is customer experience, research, analytics, digital product strategy, and delivery, so the AI/Product Implementation profile leads. Direct consumer-web, CRM, campaign-performance, and multi-channel delivery evidence from the Account Leadership profile materially supports the same core requirements, which justifies a selective hybrid rather than incidental account support."
+    },
+    "recommendation": "Proceed as adjacent with a selective hybrid resume, a quiet CX showcase, and a cover letter. Lead with enterprise CX, customer research, journey mapping, behavioral analytics, B2B digital products, personalization, project delivery, and cross-functional leadership. Keep eCommerce, CRO ownership, and named platform proficiency outside the claim set."
+  },
+  "positioning": {
+    "laneId": "product-ux-design",
+    "targetIdentity": "customer experience and product strategy lead",
+    "employerNeed": "Improve digital customer journeys by combining research, UX, analytics, content, and disciplined delivery across B2B and eCommerce channels.",
+    "bridgeType": "operating-center",
+    "applicationStrategy": "transferable",
+    "bridgeThesis": "enterprise CX and digital journey leadership",
+    "proofIds": [
+      "kinesso-02",
+      "kinesso-06",
+      "heartbeat-02"
+    ],
+    "remainingGap": "Direct eCommerce journey ownership, formal CRO program leadership, and named CMS, CRM, testing, and MarTech platform proficiency are not documented."
+  },
+  "coverLetter": {
+    "trigger": "bridge-recommended",
+    "date": "2026-09-16",
+    "greeting": "Dear hiring team,",
+    "paragraphs": [
+      "I am applying for the CX Lead role with Confidential Employer. My background combines enterprise customer experience, product strategy, research, analytics, and digital delivery. For more than six years, I have led UX and experience work across a large B2B product suite, backed by eight years managing digital campaigns, consumer web programs, CRM work, and cross-functional client delivery.",
+      "At Kinesso, I led research and UX strategy for more than 20 products used by 7,000+ people across 22 white-label brands. I built the company's first UX research practice with interviews, prototype testing, beta groups, behavioral analytics, and shared documentation. Findings and adoption data became roadmap priorities for navigation, dashboards, personalization, brand theming, and product support. I also helped turn channel scoring, benchmarks, and recommendations into a repeatable digital experience audit with client-ready outputs.",
+      "Earlier agency roles gave me another side of the customer journey. I worked across consumer websites, digital campaigns, loyalty, CRM patient support, online communities, and integrated brand programs. That work required clear briefs, timelines, production coordination, status reporting, and close partnership across strategy, content, UX, creative, development, and client teams.",
+      "The clearest gap is direct ownership of an eCommerce storefront and a formal CRO program. I would not present my background as if I already owned a checkout funnel or a named experimentation stack. What I do bring is the operating discipline around it: research the journey, find the friction, connect behavior and performance data to priorities, coordinate the work, and keep the customer need visible through delivery.",
+      "I would welcome a conversation about how that mix of enterprise CX, digital strategy, and delivery leadership could support the team's regional customer experience roadmap."
+    ],
+    "closing": "Sincerely,",
+    "signature": "Wally Mostafa",
+    "proofIds": [
+      "kinesso-02",
+      "kinesso-06",
+      "heartbeat-02"
+    ]
+  },
+  "resume": {
+    "foundationId": "wally-mostafa-resume-2026-07-03",
+    "foundationVersion": 4,
+    "compositionMode": "hybrid-selective",
+    "layoutDensity": "compact",
+    "experienceSections": [
+      {
+        "heading": "Product & Experience Leadership",
+        "roleIds": [
+          "one-block-away",
+          "hedgehox",
+          "kinesso"
+        ]
+      },
+      {
+        "heading": "Digital CX & Client Leadership",
+        "roleIds": [
+          "heartbeat",
+          "omnicom",
+          "account-management"
+        ]
+      }
+    ],
+    "roleContinuationBreaks": [
+      {
+        "roleId": "kinesso",
+        "afterBullet": 3
+      }
+    ],
+    "summary": "Customer experience and product strategy lead with 15 years across enterprise UX, digital products, research, analytics, marketing, and client delivery. My work is grounded in enterprise CX and digital journey leadership across 20+ B2B products used by 7,000+ people, where customer research, behavioral analytics, and adoption data shaped roadmap priorities for navigation, personalization, dashboards, and product support. Earlier agency work adds consumer web, CRM, digital campaigns, budgets, timelines, and cross-functional delivery.",
+    "skillIds": [
+      "research-experience-strategy",
+      "enterprise-ux-design-systems",
+      "program-project-delivery",
+      "client-success-product-adoption",
+      "client-account-leadership"
+    ],
+    "skills": [
+      {
+        "label": "Research & Experience Strategy",
+        "description": "Stakeholder interviews, competitive audits, journey maps, user flows, wireframes, prototypes, usability testing, and research-led product direction"
+      },
+      {
+        "label": "Enterprise UX & Design Systems",
+        "description": "Team scaling (2 to 30), enterprise analytics, workflow UX, data visualization, component libraries, and accessibility (WCAG)"
+      },
+      {
+        "label": "Program & Project Delivery",
+        "description": "Scoping, requirements, timelines, review routing, team coordination, risk visibility, and build-ready handoff across product, design, and client teams"
+      },
+      {
+        "label": "Client Success & Product Adoption",
+        "description": "Client discovery, adoption-focused workflows, training and roadshows, human review, and product decisions based on user needs"
+      },
+      {
+        "label": "Client & Account Leadership",
+        "description": "Fortune 500 pharma and healthcare accounts, brand budgets up to $20M, client briefs, brand planning, and cross-functional delivery"
+      }
+    ],
+    "roles": {
+      "hedgehox": [
+        "Turn pharma agency needs into product requirements and working tools for MLR claim review, brief intake, scoping, review routing, submission capture, and FDA signal monitoring"
+      ],
+      "one-block-away": [
+        "Lead client discovery and turn unclear business questions into requirements, testable product workflows, working POCs, demo flows, and roadmap decisions",
+        "Built ListingPal's AI listing-generation POC and landing page, turning basic property inputs into listing copy, social posts, ad copy, styling direction, and MLS/SEO-ready language in under 90 seconds",
+        "Built WeReady's Bailey Intelligence dashboard, translating founder inputs, GitHub signals, source health, risk scoring, and evidence trails into startup-readiness workflows",
+        "Own product strategy, UX, AI workflow design, front-end build, backend logic, demo readiness, and client iteration from first ask through working prototype",
+        "Currently building the website and sponsor strategy for a Tunisia youth soccer program, positioning the project for player advancement, community support, and donor outreach"
+      ],
+      "kinesso": [
+        "Led UX research and strategy for a marketing intelligence suite used by 7,000+ people across 22 white-label brands; turned findings and adoption data into roadmap priorities for navigation, dashboards, brand theming, personalization, and product support",
+        "Built Kinesso's first UX research practice across 20+ products, including participant recruitment, interviews, prototype testing, beta groups, behavioral analytics, research tooling, shared Figma documentation, and UX checkpoints in project plans",
+        "Scaled product design from 2 to 30 across the US and Poland, hiring and staffing designers, leading critiques and quality reviews, and planning scope, resources, and engineering handoff across 20+ products",
+        "Collaborated on the UX/UI build of Digital Experience Audit, turning channel scoring, benchmarks, and recommendations into a repeatable workflow with data visualization and presentation-ready client outputs",
+        "Led workshops on product discovery, ecosystem mapping, innovation, and user research; expanded the program from Kinesso teams to IPG groups and presented recommendations to executives and clients",
+        "UX lead for research and design on Kanvas, Kinesso's developer-first API services library; partnered with product and engineering on roadmap priorities and with C-suite stakeholders on monetization and go-to-market planning"
+      ],
+      "omnicom": [
+        "Championed UX best practices across account, strategy, creative, and delivery conversations, translating brand goals into clearer user flows, content structure, and digital recommendations"
+      ],
+      "heartbeat": [
+        "Led UX research and experience strategy for pharma and healthcare work, translating stakeholder input, competitive audits, and user needs into digital product direction",
+        "Created customer journey maps, site maps, user flows, wireframes, and prototypes for patient, HCP, and internal brand-team experiences across regulated healthcare programs",
+        "Partnered with strategy, creative, account, and engineering teams to move UX recommendations from research findings into build-ready product and campaign experiences",
+        "Led research and creation of an oncology-wide design system for interactive visual aids at a major pharma company, with the goal of improving field usability and development efficiency"
+      ],
+      "account-management": [
+        "One of two account consumer leads on FCB Health's largest pharma account across all verticals: TV, radio, digital, gaming, Times Square, unbranded campaigns, brand planning, and MLR review",
+        "Translated client and brand strategy into briefs, creative feedback, production requirements, priorities, timelines, and MLR-ready delivery across account, creative, UX, and development teams",
+        "Used campaign metrics to shape Pfizer digital recommendations for Lipitor's online presence and loyalty program during loss of exclusivity, and piloted a Zoloft savings offer to test market response",
+        "Coordinated the NUVIGIL.com consumer rebrand across desktop and mobile with the agency's digital strategy and development teams, plus the launch of a CRM patient support program and its online patient community",
+        "Oversaw an unbranded digital campaign bridging disease state and branded work; banners held a 0.37% click-through rate against a 0.17% industry benchmark and doubled qualified traffic to the brand site"
+      ]
+    },
+    "sourceBulletIds": {
+      "hedgehox": [
+        "hedgehox-03"
+      ],
+      "one-block-away": [
+        "one-block-away-01",
+        "one-block-away-02",
+        "one-block-away-03",
+        "one-block-away-04",
+        "one-block-away-05"
+      ],
+      "kinesso": [
+        "kinesso-02",
+        "kinesso-06",
+        "kinesso-01",
+        "kinesso-03",
+        "kinesso-07",
+        "kinesso-08"
+      ],
+      "omnicom": [
+        "omnicom-02"
+      ],
+      "heartbeat": [
+        "heartbeat-01",
+        "heartbeat-02",
+        "heartbeat-03",
+        "heartbeat-04"
+      ],
+      "account-management": [
+        "account-management-02",
+        "account-management-03",
+        "addition:cdm-lipitor-zoloft-digital",
+        "addition:fcb-nuvigil-rebrand-crm",
+        "addition:scout-xyrem-bridging-campaign"
+      ]
+    }
+  },
+  "hero": {
+    "eyebrow": "CX Lead | Selected Work",
+    "tags": [
+      "Customer research",
+      "Digital journeys",
+      "Experience optimization"
+    ],
+    "intro": "Here are a few projects that may be useful context alongside my resume for the CX Lead role. I chose work focused on customer research, digital journey design, personalization, analytics, and continuous improvement."
+  },
+  "contact": {
+    "prompt": "Email is the best way to reach me. My resume is available here as well.",
+    "signoff": "Customer research | digital journeys | experience optimization"
+  },
+  "constraints": {
+    "doNotClaim": [
+      "Owned an eCommerce storefront",
+      "Owned checkout conversion",
+      "Led a formal CRO program",
+      "Owned a commerce experimentation roadmap",
+      "Hands-on CMS administration",
+      "Named MarTech platform proficiency",
+      "Named CRM platform proficiency",
+      "A/B testing platform ownership",
+      "Revenue attribution ownership",
+      "Sales operations ownership"
+    ],
+    "blockedTerms": [
+      "eCommerce leader",
+      "CRO lead",
+      "checkout optimization",
+      "CMS expert",
+      "MarTech expert",
+      "CRM administrator",
+      "owned conversion",
+      "commerce roadmap owner"
+    ]
+  },
+  "privacy": {
+    "publicSafe": true,
+    "notes": "Contains only the public job description supplied by the user and public-safe evidence from the resume and portfolio. The employer is unnamed in the source, so the public config uses Confidential Employer. It excludes recruiter details, application answers, private eligibility information, and submission state."
+  },
+  "route": {
+    "presentation": "showcase",
+    "heroIntent": "resume-support",
+    "showcaseSections": [
+      "chapters"
+    ],
+    "workHeading": "Selected customer experience work.",
+    "contactHeading": "Thanks for taking a look."
+  },
+  "copyReview": {
+    "humanizerVersion": "2.2.0",
+    "mode": "surface-only",
+    "status": "passed",
+    "reviewedAt": "2026-09-16T14:45:37.403Z",
+    "copySha256": "c578beef2f6f7744c4720aa524b1bd975c62a8a9bdfbf32eef5fd03b08e25601",
+    "preserved": [
+      "content",
+      "structure",
+      "claims",
+      "ending"
+    ],
+    "rewriteAuthorized": false,
+    "reviewMethod": "humanizer-skill",
+    "semanticPassAttested": true,
+    "staticChecksPassed": true,
+    "finalAntiAiPass": true,
+    "remainingTells": []
+  },
+  "qa": {
+    "status": "qa-passed",
+    "builtAt": "2026-09-16T14:45:53.420Z",
+    "configInputSha256": "467c047b956a2efba4211a29c37b86e3de935f1480f961c1ebba58b1eb7d0f6c",
+    "sourceResumeSha256": "8273f9c5f9038a159fa1d9ecc813e2c23069e37c7ef6dd0effe5439cef217fd7",
+    "resumeFoundation": {
+      "id": "wally-mostafa-resume-2026-07-03",
+      "sourcePdfSha256": "f9b05b6c3c134262b1af6c5734363daf4385cf335407a139779a37d138adf1aa"
+    },
+    "resumeBase": {
+      "mode": "hybrid-selective",
+      "sourceProfiles": [
+        {
+          "id": "ai-product-implementation",
+          "version": 1
+        },
+        {
+          "id": "account-leadership",
+          "version": 1
+        }
+      ],
+      "leadProfileId": "ai-product-implementation",
+      "accountPresentation": "consolidated",
+      "action": "tailor-to-jd",
+      "registryVersion": 1,
+      "registrySha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108"
+    },
+    "artifactHashes": {
+      "routeSha256": "18b9a4b88c024d1cd00d7d0dddf216e1cd37b35c36d25560f55c8d39ee52598b",
+      "resumePdfSha256": "0f5444b809c1abbc9a773a055606136177f8b3dedf25930bccb9ba244607ce32",
+      "coverLetterPdfSha256": "e3550102ade8b733f2cabdc8d9cd27efdb36a75fbb33427271743349d13b1b64",
+      "coverLetterMarkdownSha256": "ca229ea3dc938921dbdd57d1b6594faa1a0493292200fb6cf5500e9ba57bc3ec",
+      "scopedProjectSha256": {
+        "project-04.html": "a0c1f92e40f33fcdab6843149430c9c4ba5c931ffaee4309058b71dd57d81208",
+        "project-06.html": "f0982639c2623720a77d8a234a12e11e5006d88c0fcd55d8887771df19250977",
+        "project-09.html": "94413faac75c4a97fe3a90f35891c2b7293c512c454752154f054ae181fcd217",
+        "project-03.html": "cd5aa334ffcbb6f5bcb82ce8f1640a48387258fe9adfa55ca0ab440e315a29a8"
+      },
+      "scopedProjectAssetSha256": {}
+    },
+    "renderer": {
+      "browser": {
+        "name": "Google Chrome",
+        "version": "Google Chrome 152.0.7977.83"
+      },
+      "htmlPath": "tmp/tailored-resumes/cx-lead-digital-customer-experience.html",
+      "pdfPath": "output/pdf/Wally-Mostafa-CX-Lead-Digital-Customer-Experience-Resume.pdf",
+      "fontWait": true,
+      "fontProfile": "portfolio-pdf"
+    },
+    "coverLetterRenderer": {
+      "browser": {
+        "name": "Google Chrome",
+        "version": "Google Chrome 152.0.7977.83"
+      },
+      "htmlPath": "tmp/tailored-resumes/cx-lead-digital-customer-experience-cover-letter.html",
+      "pdfPath": "output/pdf/Wally-Mostafa-CX-Lead-Digital-Customer-Experience-Cover-Letter.pdf",
+      "fontWait": true,
+      "fontProfile": "portfolio-pdf"
+    },
+    "coverLetter": {
+      "ok": true,
+      "failures": [],
+      "pageCount": 1,
+      "sizeBytes": 24021,
+      "templateVersion": "real-chemistry-21grams-v1",
+      "fonts": {
+        "display": "Syne 800",
+        "body": "Instrument Sans 400/600",
+        "type3Fonts": false
+      },
+      "layout": {
+        "page": "Letter",
+        "margin": "0.58in 0.62in",
+        "header": "centered-rule"
+      }
+    },
+    "ats": {
+      "ok": true,
+      "pdfPath": "output/pdf/Wally-Mostafa-CX-Lead-Digital-Customer-Experience-Resume.pdf",
+      "pageCount": 2,
+      "fileSize": 75645,
+      "annotations": [
+        {
+          "page": 1,
+          "uri": "mailto:wmostafa12@gmail.com"
+        },
+        {
+          "page": 1,
+          "uri": "https://linkedin.com/in/wallymo"
+        },
+        {
+          "page": 1,
+          "uri": "https://wallymo.github.io/cx-lead-digital-customer-experience/"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/6748"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/4629"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.red-dot.org/project/dxa-digital-experience-audit-55219"
+        }
+      ],
+      "fontCompatibility": {
+        "type3Fonts": false
+      },
+      "coverage": [
+        {
+          "id": "relevant-experience",
+          "requirement": "Bring 5-7 years of experience in customer experience, UX, digital marketing, digital operations, CRM, or a related field.",
+          "priority": "hard-gate",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "customer experience",
+            "enterprise UX",
+            "CRM"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "degree-or-equivalent",
+          "requirement": "Hold a bachelor's degree in Marketing, Business, or a related field, or bring equivalent experience.",
+          "priority": "hard-gate",
+          "evidenceStatus": "direct",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "BA Labor Studies & Employee Relations",
+            "Rutgers University"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "cx-strategy-roadmap-and-execution",
+          "requirement": "Execute a digital customer experience strategy and roadmap and lead digital initiatives from concept through delivery.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "digital journey leadership",
+            "roadmap priorities",
+            "working prototype"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "b2b-and-ecommerce-channels",
+          "requirement": "Lead customer experience initiatives across B2B and eCommerce digital channels.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "contextual",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "B2B products",
+            "consumer web",
+            "digital campaigns"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "journeys-ux-content-and-behavioral-analytics",
+          "requirement": "Apply customer journey thinking, UX principles, content storytelling, research, and behavioral analytics.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "customer journey maps",
+            "behavioral analytics",
+            "content structure"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "friction-engagement-usability-and-conversion",
+          "requirement": "Find friction and improve engagement, usability, and conversion across digital journeys.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "usability testing",
+            "campaign metrics",
+            "qualified traffic"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "cro-personalization-and-optimization",
+          "requirement": "Support CRO, personalization, and optimization of digital tools and eCommerce experiences.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "contextual",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "personalization",
+            "channel scoring",
+            "benchmarks"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "project-planning-and-multiple-workstreams",
+          "requirement": "Own planning, coordination, documentation, risks, dependencies, timelines, and delivery across multiple CX workstreams.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "across 20+ products",
+            "timelines",
+            "risk visibility"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "cross-functional-collaboration",
+          "requirement": "Collaborate with UX, content, Marketing, Product, Analytics, Digital, Sales, and business teams.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "cross-functional delivery",
+            "Product and Engineering",
+            "build-ready"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "performance-kpis-and-insights",
+          "requirement": "Track performance and KPIs and turn the findings into actionable insight for leadership.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "adoption data",
+            "channel scoring",
+            "benchmarks"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "digital-platforms-martech-cms-crm-testing-analytics",
+          "requirement": "Bring working knowledge of digital platforms, MarTech, CMS, CRM, testing, and analytics tools.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "contextual",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "marketing intelligence suite",
+            "CRM patient support program",
+            "behavioral analytics"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "communication-and-leadership",
+          "requirement": "Use strong communication and a data-informed mindset to guide teams and leadership decisions.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "executives and clients",
+            "communication",
+            "cross-functional delivery"
+          ],
+          "missingTerms": []
+        }
+      ],
+      "failures": [],
+      "warnings": []
+    },
+    "humanizer": {
+      "status": "passed",
+      "version": "2.2.0",
+      "mode": "surface-only",
+      "reviewedAt": "2026-09-16T14:45:37.403Z",
+      "copySha256": "c578beef2f6f7744c4720aa524b1bd975c62a8a9bdfbf32eef5fd03b08e25601",
+      "reviewMethod": "humanizer-skill",
+      "semanticPassAttested": true,
+      "staticChecksPassed": true
+    },
+    "route": {
+      "viewports": [
+        {
+          "name": "desktop",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-04",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-06",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-09",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-03",
+          "errors": []
+        },
+        {
+          "name": "mobile",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-04",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-06",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-09",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-03",
+          "errors": []
+        }
+      ],
+      "errors": []
+    }
+  }
+}

@@ -1268,6 +1268,47 @@
       }
     },
     {
+      "workflowVersion": 2,
+      "contractRevision": 7,
+      "slug": "cx-lead-digital-customer-experience",
+      "roleTitle": "CX Lead",
+      "artifactStem": "CX-Lead-Digital-Customer-Experience",
+      "configPath": "scripts/packages/cx-lead-digital-customer-experience.json",
+      "targetLane": "product-ux-design",
+      "evidenceMode": "balanced",
+      "fitClass": "adjacent",
+      "positioningLane": "product-ux-design",
+      "bridgeType": "operating-center",
+      "applicationStrategy": "transferable",
+      "resumeBaseMode": "hybrid-selective",
+      "resumeBaseLeadProfile": "ai-product-implementation",
+      "resumeBaseAction": "tailor-to-jd",
+      "accountPresentation": "consolidated",
+      "resumeBaseProfiles": [
+        {
+          "id": "ai-product-implementation",
+          "version": 1
+        },
+        {
+          "id": "account-leadership",
+          "version": 1
+        }
+      ],
+      "routeMode": "scoped-projects",
+      "selectedProjects": [
+        "project-04.html",
+        "project-06.html",
+        "project-09.html",
+        "project-03.html"
+      ],
+      "resumePdfPath": "output/pdf/Wally-Mostafa-CX-Lead-Digital-Customer-Experience-Resume.pdf",
+      "coverLetterPdfPath": "output/pdf/Wally-Mostafa-CX-Lead-Digital-Customer-Experience-Cover-Letter.pdf",
+      "coverLetterMarkdownPath": "output/pdf/Wally-Mostafa-CX-Lead-Digital-Customer-Experience-Cover-Letter.md",
+      "publishStatus": "local-only",
+      "qaStatus": "qa-passed",
+      "builtAt": "2026-09-16T14:45:53.420Z"
+    },
+    {
       "slug": "deloitte-human-capital",
       "roleTitle": "Deloitte Human Capital - Organization, Workforce & Change",
       "fitClass": "unclassified",
