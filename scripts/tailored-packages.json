@@ -4264,9 +4264,41 @@
       "resumePdfPath": "output/pdf/Wally-Mostafa-SP-Global-Lead-Product-Manager-MCP-AI-Agents-Resume.pdf",
       "coverLetterPdfPath": "output/pdf/Wally-Mostafa-SP-Global-Lead-Product-Manager-MCP-AI-Agents-Cover-Letter.pdf",
       "coverLetterMarkdownPath": "output/pdf/Wally-Mostafa-SP-Global-Lead-Product-Manager-MCP-AI-Agents-Cover-Letter.md",
-      "publishStatus": "local-only",
+      "publishStatus": "live-verified",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-09-16T15:12:12.008Z"
+      "builtAt": "2026-09-16T15:12:12.008Z",
+      "verification": {
+        "verifiedAt": "2026-09-16T15:13:35.767Z",
+        "routeUrl": "https://wallymo.github.io/sp-global-lead-product-manager-mcp-ai-agents/",
+        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-SP-Global-Lead-Product-Manager-MCP-AI-Agents-Resume.pdf",
+        "configUrl": "https://wallymo.github.io/scripts/packages/sp-global-lead-product-manager-mcp-ai-agents.json",
+        "projectUrls": [
+          "https://wallymo.github.io/sp-global-lead-product-manager-mcp-ai-agents/project-01.html",
+          "https://wallymo.github.io/sp-global-lead-product-manager-mcp-ai-agents/project-02.html",
+          "https://wallymo.github.io/sp-global-lead-product-manager-mcp-ai-agents/project-04.html",
+          "https://wallymo.github.io/sp-global-lead-product-manager-mcp-ai-agents/project-03.html"
+        ],
+        "redirectUrls": [],
+        "configSha256": "18155a4ce064ebef1f46c7809f8f8800260857be3947f71232917882c2953a01",
+        "pdfSha256": "ab21b6556967cc57e7f6ec2fb05e013438a406c277c56875ce3407259476b9fc",
+        "resumeBaseProfilesUrl": "https://wallymo.github.io/scripts/resume-base-profiles.json",
+        "resumeBaseProfilesSha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108",
+        "coverLetterPdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-SP-Global-Lead-Product-Manager-MCP-AI-Agents-Cover-Letter.pdf",
+        "coverLetterMarkdownUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-SP-Global-Lead-Product-Manager-MCP-AI-Agents-Cover-Letter.md",
+        "coverLetterPdfSha256": "a5ad445dbd1e1d24ce3aa9c40976afb9b96a6cc62b6264387d2611120b35f818",
+        "coverLetterMarkdownSha256": "3bbfdcdb2bade9590148bf84e6383c194071327a933c8e676d040e2afb794a50",
+        "routeSha256": "37e20fc9b4fc24bb3d0761f41facf916ec807b33c6475d54d7107cb56091d47a",
+        "scopedProjectSha256": {
+          "project-01.html": "3cc16c13ec8f5bc59df6a084b9b62252f9b9be5cc2dfe051879211ee93f6e8ac",
+          "project-02.html": "f818ffb57ffee7e1bb55887370fabb1d389b171c49d5d9fb6aac4228c1f40c8d",
+          "project-04.html": "21773466bb444c24f9c0a66c15b27403d21771b813fd85e8bbfed6c88a4e04bf",
+          "project-03.html": "1bf584da44502f7e1892f2b1f4dd13a689a50f8e733c536d057ef1c736cc1e20"
+        },
+        "scopedProjectAssetUrls": [],
+        "scopedProjectAssetSha256": {},
+        "configInputSha256": "ad0408287d2aa82ef6326d82fdd2db557fc9125b10ca8acdef035fc08635f45e",
+        "qaBuiltAt": "2026-09-16T15:12:12.008Z"
+      }
     },
     {
       "slug": "street-digital",
