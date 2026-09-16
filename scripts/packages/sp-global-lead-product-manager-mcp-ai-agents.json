@@ -317,6 +317,12 @@
     "foundationVersion": 4,
     "compositionMode": "foundation-complete",
     "layoutDensity": "compact",
+    "roleContinuationBreaks": [
+      {
+        "roleId": "kinesso",
+        "afterBullet": 2
+      }
+    ],
     "summary": "AI product strategy and implementation leader with 15 years across enterprise platforms, customer research, regulated delivery, and client work. I turn ambiguous workflows into working AI products and roadmap decisions, from discovery and requirements through POCs, implementation, and handoff. Recent work includes LLM/VLM workflows, RAG/knowledge bases, AI coding agents, API product strategy, and enterprise products used by 7,000+ people across 22 brands.",
     "skillIds": [
       "ai-implementation-workflow-design",
@@ -513,8 +519,8 @@
   },
   "qa": {
     "status": "qa-passed",
-    "builtAt": "2026-09-16T14:53:35.619Z",
-    "configInputSha256": "cbb8cf46bfb171551f4e80d82f3392acb078590c74ed58373019adefe1d292ce",
+    "builtAt": "2026-09-16T15:12:12.008Z",
+    "configInputSha256": "ad0408287d2aa82ef6326d82fdd2db557fc9125b10ca8acdef035fc08635f45e",
     "sourceResumeSha256": "8273f9c5f9038a159fa1d9ecc813e2c23069e37c7ef6dd0effe5439cef217fd7",
     "resumeFoundation": {
       "id": "wally-mostafa-resume-2026-07-03",
@@ -536,8 +542,8 @@
     },
     "artifactHashes": {
       "routeSha256": "37e20fc9b4fc24bb3d0761f41facf916ec807b33c6475d54d7107cb56091d47a",
-      "resumePdfSha256": "5151dcf7848013756e6380259abd05d8d9e58faa2412a70291ee30829449a6e9",
-      "coverLetterPdfSha256": "4a307e14a7537f7df56dc015297243b81a093413da4d0c0d1c662f1ef59c1fe1",
+      "resumePdfSha256": "ab21b6556967cc57e7f6ec2fb05e013438a406c277c56875ce3407259476b9fc",
+      "coverLetterPdfSha256": "a5ad445dbd1e1d24ce3aa9c40976afb9b96a6cc62b6264387d2611120b35f818",
       "coverLetterMarkdownSha256": "3bbfdcdb2bade9590148bf84e6383c194071327a933c8e676d040e2afb794a50",
       "scopedProjectSha256": {
         "project-01.html": "3cc16c13ec8f5bc59df6a084b9b62252f9b9be5cc2dfe051879211ee93f6e8ac",
@@ -588,7 +594,7 @@
       "ok": true,
       "pdfPath": "output/pdf/Wally-Mostafa-SP-Global-Lead-Product-Manager-MCP-AI-Agents-Resume.pdf",
       "pageCount": 2,
-      "fileSize": 79996,
+      "fileSize": 81013,
       "annotations": [
         {
           "page": 1,
