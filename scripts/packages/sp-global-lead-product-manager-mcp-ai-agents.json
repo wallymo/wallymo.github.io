@@ -1,0 +1,794 @@
+{
+  "workflowVersion": 2,
+  "contractRevision": 7,
+  "slug": "sp-global-lead-product-manager-mcp-ai-agents",
+  "roleTitle": "S&P Global Lead Product Manager, MCP & AI Agents Platform",
+  "artifactStem": "SP-Global-Lead-Product-Manager-MCP-AI-Agents",
+  "fitClass": "adjacent",
+  "routeMode": "scoped-projects",
+  "selectedProjects": [
+    "project-01.html",
+    "project-02.html",
+    "project-04.html",
+    "project-03.html"
+  ],
+  "job": {
+    "company": "S&P Global Market Intelligence",
+    "roleTitle": "Lead Product Manager, MCP & AI Agents Platform",
+    "sourceChannel": "user-provided job description",
+    "dateCaptured": "2026-09-16",
+    "compensation": "$101,000 to $175,000 base salary, plus annual incentive plan and benefits",
+    "rawJd": "About the role\n\nThe team\n\nThe Enterprise Solutions business within S&P Global Market Intelligence provides industry-leading data, software, and services that support investment management, enterprise data management, regulatory compliance, and private markets solutions. The Private Markets product team is responsible for products that support the entire investment lifecycle across Private Equity, Venture Capital, Real Estate, Infrastructure, and Private Credit markets. As part of the flagship iLEVEL product organization, you will work with a highly collaborative team of product leaders, technology professionals, and market experts focused on delivering innovative solutions for investment professionals. The team values customer-centricity, innovation, execution excellence, and continuous learning.\n\nResponsibilities and impact\n\nWe are seeking a Lead Product Manager to drive our MCP & AI Agents Platform initiatives. This leader will own the vision, strategy, and execution for both the MCP connector ecosystem, enabling seamless integration of private markets data and content sources, and the AI Analyst capabilities being developed within our flagship iLEVEL platform.\n\nAs a Lead Product Manager, you will lead zero-to-one product efforts, building and scaling net new product offerings in a high-growth, fast-moving environment, leveraging agents, agentic workflows, and LLMs to build new products that deliver value to clients. This role will require working closely with engineering, design, product, data science, marketing, and go-to-market teams to drive new AI products to success.\n\nThis is a highly cross-functional and visible role suited for a hands-on builder who thrives at the intersection of AI, customer-centric product development, and financial technology.\n\nCompensation and benefits\n\nS&P Global states that the anticipated base salary range for this position is $101,000 to $175,000. Final base salary for this role will be based on the individual's geographic location, experience level, skill set, training, licenses, and certifications. In addition to base compensation, this role is eligible for an annual incentive plan and additional S&P Global benefits.\n\nBasic required qualifications\n\nExperience in FinTech, SaaS, AI, or other technology-driven environments, with a track record of launching and scaling products.\n\nStrategic and customer-focused thinker who can develop deep domain expertise, simplify complex problems, and translate insights into impactful product strategies.\n\nStrong product operator skilled in agile delivery, product requirements, data-driven decision-making, KPI management, and cross-functional execution.\n\nExceptional communicator and collaborator who thrives in fast-paced, ambiguous environments and can align Product, Engineering, Design, and Go-to-Market teams around a shared vision.\n\nAdditional preferred qualifications\n\nHands-on AI product builder with experience applying emerging AI technologies, including LLMs, agents, retrieval systems, and modern AI development tools."
+  },
+  "classification": {
+    "targetLane": "ai-product-implementation",
+    "evidenceMode": "balanced",
+    "primarySource": "The resume shows current AI product strategy, customer discovery, requirements, working POCs, enterprise product delivery, API product work, adoption data, and cross-functional leadership. It also keeps the private-markets and direct MCP ownership gaps visible.",
+    "supportingSource": "The portfolio shows the product work behind those claims, including regulated LLM and VLM workflows, AI-agent-assisted POCs, customer research, and enterprise data products used at scale.",
+    "hardGateStatus": "pass",
+    "hardGates": [
+      {
+        "gate": "Experience in FinTech, SaaS, AI, or another technology-driven environment, with a record of launching and scaling products.",
+        "status": "pass",
+        "requirementId": "technology-product-launch-and-scale",
+        "evidence": "Current work covers AI product strategy and working POCs, while Kinesso work covers enterprise product systems used by more than 7,000 people across 22 brands. The evidence is in AI and enterprise technology rather than private-markets FinTech."
+      }
+    ]
+  },
+  "requirements": [
+    {
+      "id": "technology-product-launch-and-scale",
+      "text": "Bring experience in FinTech, SaaS, AI, or another technology-driven environment, with a record of launching and scaling products.",
+      "priority": "hard-gate",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "One Block Away and Hedgehox show current AI product strategy, implementation, and working POCs.",
+        "Kinesso evidence covers enterprise products used by more than 7,000 people across 22 brands and product design delivery across more than 20 products."
+      ],
+      "proofIds": [
+        "one-block-away-04",
+        "kinesso-02",
+        "kinesso-01"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "AI product strategy",
+        "working POCs",
+        "7,000+"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "mcp-connector-platform",
+      "text": "Own the vision, strategy, and execution for an MCP connector ecosystem that integrates private-markets data and content sources.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Kanvas work covered a developer-first API services library, roadmap priorities, engineering collaboration, monetization, and go-to-market planning.",
+        "WeReady combines live sources, source health, risk scoring, and evidence trails in a working product workflow.",
+        "Direct ownership of an MCP connector ecosystem or private-markets data integrations is not documented."
+      ],
+      "proofIds": [
+        "kinesso-08",
+        "one-block-away-03"
+      ],
+      "destinations": [
+        "summary",
+        "experience",
+        "portfolio",
+        "cover-letter"
+      ],
+      "resumeTerms": [
+        "API services library",
+        "live sources",
+        "evidence trails"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "zero-to-one-ai-product-delivery",
+      "text": "Lead zero-to-one AI product efforts and move new offerings from discovery through build, validation, and scale.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "One Block Away owns product strategy, UX, AI workflow design, interface work, backend logic, demos, and client iteration from first ask through working prototype.",
+        "Hedgehox work converts recurring agency problems into AI tools and includes a functional Claims Detector POC that secured an investor."
+      ],
+      "proofIds": [
+        "one-block-away-04",
+        "one-block-away-01",
+        "hedgehox-01"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "working POCs",
+        "first ask",
+        "working prototype"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "customer-product-strategy",
+      "text": "Build customer and domain understanding, simplify complex problems, and turn insights into product strategy and roadmap decisions.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "One Block Away uses client discovery and workflow mapping to turn unclear business questions into testable product surfaces and roadmap decisions.",
+        "Kinesso research combined interviews, prototype testing, beta groups, behavioral analytics, and adoption data to shape roadmap priorities."
+      ],
+      "proofIds": [
+        "one-block-away-01",
+        "kinesso-02",
+        "kinesso-06"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "client discovery",
+        "customer research",
+        "roadmap priorities"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "product-operations-data-and-kpis",
+      "text": "Operate products through agile delivery, requirements, data-driven decisions, KPI management, and cross-functional execution.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "The resume documents requirements, prototype validation, engineering handoff, behavioral analytics, adoption data, product-support signals, and roadmap prioritization.",
+        "Formal agile ownership and a named KPI operating cadence are not documented."
+      ],
+      "proofIds": [
+        "one-block-away-04",
+        "kinesso-02",
+        "kinesso-01"
+      ],
+      "destinations": [
+        "skills",
+        "experience",
+        "cover-letter"
+      ],
+      "resumeTerms": [
+        "requirements",
+        "adoption data",
+        "engineering handoff"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "cross-functional-product-leadership",
+      "text": "Align Product, Engineering, Design, Data Science, Marketing, and Go-to-Market teams around a shared product vision.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Kanvas work partnered with product and engineering on roadmap priorities and with C-suite stakeholders on monetization and go-to-market planning.",
+        "The broader resume shows delivery across product, engineering, design, research, strategy, account, and executive teams. Direct data-science leadership is not documented."
+      ],
+      "proofIds": [
+        "kinesso-08",
+        "kinesso-01",
+        "heartbeat-03"
+      ],
+      "destinations": [
+        "skills",
+        "experience",
+        "cover-letter"
+      ],
+      "resumeTerms": [
+        "product and engineering",
+        "C-suite",
+        "go-to-market planning"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "llm-agents-retrieval-tools",
+      "text": "Build AI products with LLMs, agents, retrieval systems, and modern AI development tools.",
+      "priority": "preferred",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The resume documents governed LLM and VLM workflows, RAG and knowledge bases, model orchestration, prompt-defined criteria, AI coding agents, and human review.",
+        "The portfolio shows client-led POCs built with Claude Code and Codex."
+      ],
+      "proofIds": [
+        "hedgehox-02",
+        "one-block-away-04"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "LLM/VLM workflows",
+        "RAG/knowledge bases",
+        "AI coding agents",
+        "model orchestration"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "private-markets-domain",
+      "text": "Develop product depth across the private-markets investment lifecycle and the needs of investment professionals.",
+      "priority": "context",
+      "source": "jd",
+      "confidence": "contextual",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "proofIds": [],
+      "destinations": [
+        "cover-letter"
+      ],
+      "resumeTerms": [
+        "private markets",
+        "investment lifecycle"
+      ],
+      "matchMode": "not-supported"
+    }
+  ],
+  "fitGate": {
+    "supportedOverlap": [
+      "Current work covers AI product strategy, requirements, working POCs, agent-assisted implementation, model-aware review, and client iteration.",
+      "Kinesso work supports enterprise product leadership, customer research, adoption data, roadmap decisions, engineering handoff, and scale across 7,000+ users and 22 brands.",
+      "Kanvas provides adjacent connector-platform evidence through a developer-first API services library, product and engineering roadmaps, monetization, and go-to-market planning.",
+      "Fifteen years of product, UX, account, and client work support communication across executives, customers, product, engineering, design, research, strategy, and delivery teams."
+    ],
+    "unsupportedRequirements": [
+      "Direct ownership of an MCP connector ecosystem is not documented.",
+      "Private Equity, Venture Capital, Real Estate, Infrastructure, Private Credit, and iLEVEL domain experience are not documented.",
+      "Formal retrieval evaluation, production agent monitoring, and AI Analyst KPI ownership are not documented.",
+      "Direct data-science team leadership is not documented."
+    ],
+    "actualMismatches": [
+      "The recent operating center is AI implementation, product strategy, enterprise UX, and client-led POC delivery rather than conventional Lead Product Manager ownership in financial technology.",
+      "The direct domain record is regulated healthcare and marketing technology, not private markets."
+    ],
+    "missingEvidence": [
+      "An MCP server or connector portfolio with published integration, adoption, reliability, and business outcomes.",
+      "A production AI analyst product with retrieval quality, evaluation thresholds, usage, latency, and customer-value metrics.",
+      "A private-markets product roadmap or workflow covering fund operations, portfolio monitoring, valuation, or investment reporting.",
+      "A named agile and KPI operating cadence owned in a formal product-management role."
+    ],
+    "coverLetterBridge": {
+      "status": "recommended",
+      "rationale": "We can make the case with a cover letter by connecting current AI POCs, governed LLM workflows, API product strategy, customer research, and enterprise-scale product delivery to S&P Global's AI Analyst and connector-platform needs. The letter must keep direct MCP ownership, private-markets domain depth, formal retrieval evaluation, and conventional Lead Product Manager tenure visible as gaps."
+    },
+    "resumeBase": {
+      "mode": "ai-product-implementation",
+      "sourceProfiles": [
+        {
+          "id": "ai-product-implementation",
+          "version": 1
+        }
+      ],
+      "leadProfileId": "ai-product-implementation",
+      "accountPresentation": "consolidated",
+      "action": "tailor-to-jd",
+      "rationale": "The role's operating center is AI product strategy, zero-to-one delivery, requirements, agent workflows, customer research, and cross-functional product execution. The AI/Product Implementation base carries the direct evidence. Account leadership strengthens stakeholder communication but does not make this a hybrid role."
+    },
+    "recommendation": "Proceed as an adjacent fit. Lead with AI product strategy, zero-to-one POCs, customer research, the Kanvas API services library, enterprise data products, and cross-functional delivery. Keep private-markets expertise, MCP ecosystem ownership, formal retrieval evaluation, data-science leadership, and conventional Lead Product Manager tenure out of the claim set."
+  },
+  "positioning": {
+    "laneId": "ai-product-implementation",
+    "targetIdentity": "AI product strategy and implementation leader",
+    "employerNeed": "Own a customer-led AI Analyst and connector platform from vision and requirements through working product, cross-functional execution, adoption, and measurable client value.",
+    "bridgeType": "domain-transfer",
+    "applicationStrategy": "transferable",
+    "bridgeThesis": "turn ambiguous workflows into working AI products and roadmap decisions",
+    "proofIds": [
+      "one-block-away-04",
+      "kinesso-08",
+      "kinesso-02"
+    ],
+    "remainingGap": "Direct MCP connector ownership, private-markets product experience, formal retrieval evaluation, and conventional Lead Product Manager tenure are not documented."
+  },
+  "resume": {
+    "foundationId": "wally-mostafa-resume-2026-07-03",
+    "foundationVersion": 4,
+    "compositionMode": "foundation-complete",
+    "layoutDensity": "compact",
+    "summary": "AI product strategy and implementation leader with 15 years across enterprise platforms, customer research, regulated delivery, and client work. I turn ambiguous workflows into working AI products and roadmap decisions, from discovery and requirements through POCs, implementation, and handoff. Recent work includes LLM/VLM workflows, RAG/knowledge bases, AI coding agents, API product strategy, and enterprise products used by 7,000+ people across 22 brands.",
+    "skillIds": [
+      "ai-implementation-workflow-design",
+      "product-strategy-poc-delivery",
+      "research-experience-strategy",
+      "program-project-delivery"
+    ],
+    "skills": [
+      {
+        "label": "AI Implementation & Workflow Design",
+        "description": "Governed LLM/VLM workflows, multimodal review, RAG/knowledge bases, prompt-defined criteria, model orchestration, and human review surfaces"
+      },
+      {
+        "label": "Product Strategy & POC Delivery",
+        "description": "Discovery, scoping, requirements, prototype validation, demo narratives, build-ready logic, and production handoff"
+      },
+      {
+        "label": "Research & Experience Strategy",
+        "description": "Stakeholder interviews, competitive audits, journey maps, user flows, wireframes, prototypes, usability testing, and research-led product direction"
+      },
+      {
+        "label": "Program & Project Delivery",
+        "description": "Scoping, requirements, timelines, review routing, team coordination, risk visibility, and build-ready handoff across product, design, and client teams"
+      }
+    ],
+    "roles": {
+      "hedgehox": [
+        "Lead product strategy and requirements for a connected pharma AI platform spanning brief intake, scoping, review routing, submission capture, MLR claim review, and FDA signal monitoring",
+        "Built the functional Claims Detector POC, shaped the demo story, iterated with investors, and secured an investor",
+        "Designed Claims Detector workflows with prompt-defined review criteria that identify promotional claims, surface evidence gaps, and pre-populate audit-ready annotations before MLR submission",
+        "Designed the full Xenagos Bio startup biopharma website from scratch, including investor-facing structure, scientific positioning, visual direction, and hidden design-system handoff",
+        "Built Scope Generator for pharma agency finance and operations teams to manage regional rate cards, brands, sub-brands, and natural-language scope changes",
+        "Developed FDA Warning Tool concepts that connect warning-letter patterns to content-risk guidance for pharma teams"
+      ],
+      "one-block-away": [
+        "Lead client discovery and workflow mapping, then turn unclear business questions into testable AI use cases, working POCs, demo flows, and roadmap decisions",
+        "Built ListingPal's AI listing-generation POC and landing page, turning basic property inputs into listing copy, social posts, ad copy, styling direction, and MLS/SEO-ready language in under 90 seconds",
+        "Built WeReady's Bailey Intelligence dashboard, translating founder inputs, live sources, source health, risk scoring, and evidence trails into startup-readiness workflows",
+        "Own product strategy, UX, AI workflow design, front-end build, backend logic, demo readiness, and client iteration from first ask through working prototype using AI coding agents including Claude Code and Codex",
+        "Currently building the website and sponsor strategy for a Tunisia youth soccer program, positioning the project for player advancement, community support, and donor outreach"
+      ],
+      "kinesso": [
+        "UX lead for research and design on Kanvas, Kinesso's developer-first API services library; partnered with product and engineering on roadmap priorities and with C-suite stakeholders on monetization and go-to-market planning",
+        "Led UX research and strategy for a marketing intelligence suite used by 7,000+ people across 22 white-label brands; turned findings and adoption data into roadmap priorities for navigation, dashboards, brand theming, personalization, and product support",
+        "Built Kinesso's first UX research practice across 20+ products, including participant recruitment, interviews, prototype testing, beta groups, behavioral analytics, research tooling, shared Figma documentation, and UX checkpoints in project plans",
+        "Led workshops on product discovery, ecosystem mapping, innovation, and user research; expanded the program from Kinesso teams to IPG groups and presented recommendations to executives and clients",
+        "Scaled product design from 2 to 30 across the US and Poland, hiring and staffing designers, leading critiques and quality reviews, and planning scope, resources, and engineering handoff across 20+ products",
+        "Collaborated on the UX/UI build of Digital Experience Audit, turning channel scoring, benchmarks, and recommendations into a repeatable workflow with data visualization and presentation-ready client outputs",
+        "Helped shape and govern a design system with 500 components, 140 styles, 300 icons, and 50 personas, including accessibility and design quality standards; the work earned 5 Indigo Gold, 4 Indigo Silver, and Red Dot recognition",
+        "Partnered with the Head of Design to create the team's first onboarding program, career roadmaps, coaching structure, and performance review workflows for new and existing employees",
+        "Led a three-person team to second place in Kinesso's inaugural innovation challenge with an accessibility panel concept; later advised the next cohort and contributed to accessibility playbook and keyboard interaction standards"
+      ],
+      "omnicom": [
+        "Supported oncology accounts as a freelance UX designer, combining UX design and account-management experience to strengthen regulated healthcare work",
+        "Championed UX best practices across account, strategy, creative, and delivery conversations, translating brand goals into clearer user flows, content structure, and digital recommendations"
+      ],
+      "heartbeat": [
+        "Led UX research and experience strategy for pharma and healthcare work, translating stakeholder input, competitive audits, and user needs into digital product direction",
+        "Created journey maps, site maps, user flows, wireframes, and prototypes for patient, HCP, and internal brand-team experiences across regulated healthcare programs",
+        "Partnered with strategy, creative, account, and engineering teams to move UX recommendations from research findings into build-ready product and campaign experiences",
+        "Led research and creation of an oncology-wide design system for interactive visual aids at a major pharma company, with the goal of improving field usability and development efficiency",
+        "Member of Heartbeat's ETCH group, which ran business-driven sprints exploring voice, AR/VR, and facial recognition for agency and client use"
+      ],
+      "account-management": [
+        "8 years managing Fortune 500 pharma and healthcare clients and brand budgets up to $20M across CNS/neurology, psychiatry, cardiovascular/metabolic, and sleep/wakefulness brands including NUVIGIL, Namenda XR, Lipitor, and Zoloft",
+        "One of two account consumer leads on FCB Health's largest pharma account across all verticals: TV, radio, digital, gaming, Times Square, unbranded campaigns, brand planning, and MLR review",
+        "Translated client and brand strategy into briefs, creative feedback, production requirements, timelines, and MLR-ready deliverables across account, creative, UX, and development teams"
+      ]
+    },
+    "sourceBulletIds": {
+      "hedgehox": [
+        "hedgehox-03",
+        "hedgehox-01",
+        "hedgehox-02",
+        "hedgehox-04",
+        "hedgehox-05",
+        "hedgehox-06"
+      ],
+      "one-block-away": [
+        "one-block-away-01",
+        "one-block-away-02",
+        "one-block-away-03",
+        "one-block-away-04",
+        "one-block-away-05"
+      ],
+      "kinesso": [
+        "kinesso-08",
+        "kinesso-02",
+        "kinesso-06",
+        "kinesso-07",
+        "kinesso-01",
+        "kinesso-03",
+        "kinesso-04",
+        "kinesso-05",
+        "kinesso-09"
+      ],
+      "omnicom": [
+        "omnicom-01",
+        "omnicom-02"
+      ],
+      "heartbeat": [
+        "heartbeat-01",
+        "heartbeat-02",
+        "heartbeat-03",
+        "heartbeat-04",
+        "heartbeat-05"
+      ],
+      "account-management": [
+        "account-management-01",
+        "account-management-02",
+        "account-management-03"
+      ]
+    }
+  },
+  "coverLetter": {
+    "trigger": "bridge-recommended",
+    "date": "2026-09-16",
+    "greeting": "Dear S&P Global hiring team,",
+    "paragraphs": [
+      "I am applying for S&P Global Market Intelligence's Lead Product Manager, MCP & AI Agents Platform role because the work sits close to the problems I have been solving: finding a useful AI product inside a complex workflow, making the requirements concrete, and carrying the idea into a working product. My recent work covers AI product strategy, agent-assisted POCs, governed review workflows, API product strategy, customer research, and enterprise product delivery.",
+      "At Hedgehox, I turn recurring pharma agency problems into AI tools for claim review, brief intake, scoping, review routing, submission capture, and regulatory monitoring. I built the functional Claims Detector POC, shaped the investor demo, and secured an investor. Through One Block Away, I lead client discovery and use Claude Code and Codex to build working POCs from unclear questions. The work stays close to the full product loop: requirements, workflow logic, interface and backend behavior, demos, and client iteration.",
+      "Earlier, I led research and design for Kanvas, Kinesso's developer-first API services library, partnering with product and engineering on roadmap priorities and with C-suite stakeholders on monetization and go-to-market planning. I also led research and strategy for an enterprise intelligence suite used by more than 7,000 people across 22 brands. Interviews, prototype testing, beta groups, behavioral analytics, and adoption data shaped the roadmap, while close work with product, engineering, and design kept decisions moving into delivery.",
+      "This would be a domain move from regulated healthcare and marketing technology into financial information products, and I have not owned an MCP connector ecosystem. The relevant bridge is the work itself: learning a complex domain, translating customer and data needs into a product model, aligning technical and business teams, and testing whether the product is useful. I would welcome a conversation about how that experience could support the MCP and AI Analyst roadmap inside iLEVEL."
+    ],
+    "closing": "Sincerely,",
+    "signature": "Wally Mostafa",
+    "proofIds": [
+      "one-block-away-04",
+      "kinesso-08",
+      "kinesso-02"
+    ]
+  },
+  "hero": {
+    "eyebrow": "S&P Global | Selected Work",
+    "tags": [
+      "AI product strategy",
+      "Zero-to-one POCs",
+      "Enterprise data and research"
+    ],
+    "intro": "Here is a look at recent work that may be relevant to the Lead Product Manager role, including AI product strategy, client-led POCs, customer research, and enterprise data products. My resume covers the broader background."
+  },
+  "contact": {
+    "prompt": "Email is the easiest way to reach me about the Lead Product Manager role.",
+    "signoff": "AI product strategy | zero-to-one POCs | enterprise data products"
+  },
+  "route": {
+    "presentation": "showcase",
+    "heroIntent": "resume-support",
+    "showcaseSections": [
+      "chapters"
+    ],
+    "workHeading": "Selected AI product work.",
+    "contactHeading": "Thanks for taking a look."
+  },
+  "constraints": {
+    "doNotClaim": [
+      "direct private-markets product expertise",
+      "ownership of an MCP connector ecosystem",
+      "production AI Analyst ownership",
+      "formal retrieval evaluation operations",
+      "data-science team leadership",
+      "conventional Lead Product Manager tenure",
+      "formal agile or KPI program ownership"
+    ],
+    "blockedTerms": [
+      "private markets expert",
+      "owned MCP connector ecosystem",
+      "data science leader",
+      "production AI Analyst owner"
+    ]
+  },
+  "privacy": {
+    "publicSafe": true,
+    "notes": "Contains only the user-provided public job description and public-safe resume and portfolio evidence. It excludes recruiter details, application answers, compensation decisions, private eligibility details, and submission state."
+  },
+  "copyReview": {
+    "humanizerVersion": "2.2.0",
+    "mode": "surface-only",
+    "status": "passed",
+    "reviewedAt": "2026-09-16T14:53:18.172Z",
+    "copySha256": "d833c1189541d185434429a795ddb402afedb028bd802887093309c27dc29c77",
+    "preserved": [
+      "content",
+      "structure",
+      "claims",
+      "ending"
+    ],
+    "rewriteAuthorized": false,
+    "reviewMethod": "humanizer-skill",
+    "semanticPassAttested": true,
+    "staticChecksPassed": true,
+    "finalAntiAiPass": true,
+    "remainingTells": []
+  },
+  "qa": {
+    "status": "qa-passed",
+    "builtAt": "2026-09-16T14:53:35.619Z",
+    "configInputSha256": "cbb8cf46bfb171551f4e80d82f3392acb078590c74ed58373019adefe1d292ce",
+    "sourceResumeSha256": "8273f9c5f9038a159fa1d9ecc813e2c23069e37c7ef6dd0effe5439cef217fd7",
+    "resumeFoundation": {
+      "id": "wally-mostafa-resume-2026-07-03",
+      "sourcePdfSha256": "f9b05b6c3c134262b1af6c5734363daf4385cf335407a139779a37d138adf1aa"
+    },
+    "resumeBase": {
+      "mode": "ai-product-implementation",
+      "sourceProfiles": [
+        {
+          "id": "ai-product-implementation",
+          "version": 1
+        }
+      ],
+      "leadProfileId": "ai-product-implementation",
+      "accountPresentation": "consolidated",
+      "action": "tailor-to-jd",
+      "registryVersion": 1,
+      "registrySha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108"
+    },
+    "artifactHashes": {
+      "routeSha256": "37e20fc9b4fc24bb3d0761f41facf916ec807b33c6475d54d7107cb56091d47a",
+      "resumePdfSha256": "5151dcf7848013756e6380259abd05d8d9e58faa2412a70291ee30829449a6e9",
+      "coverLetterPdfSha256": "4a307e14a7537f7df56dc015297243b81a093413da4d0c0d1c662f1ef59c1fe1",
+      "coverLetterMarkdownSha256": "3bbfdcdb2bade9590148bf84e6383c194071327a933c8e676d040e2afb794a50",
+      "scopedProjectSha256": {
+        "project-01.html": "3cc16c13ec8f5bc59df6a084b9b62252f9b9be5cc2dfe051879211ee93f6e8ac",
+        "project-02.html": "f818ffb57ffee7e1bb55887370fabb1d389b171c49d5d9fb6aac4228c1f40c8d",
+        "project-04.html": "21773466bb444c24f9c0a66c15b27403d21771b813fd85e8bbfed6c88a4e04bf",
+        "project-03.html": "1bf584da44502f7e1892f2b1f4dd13a689a50f8e733c536d057ef1c736cc1e20"
+      },
+      "scopedProjectAssetSha256": {}
+    },
+    "renderer": {
+      "browser": {
+        "name": "Google Chrome",
+        "version": "Google Chrome 152.0.7977.83"
+      },
+      "htmlPath": "tmp/tailored-resumes/sp-global-lead-product-manager-mcp-ai-agents.html",
+      "pdfPath": "output/pdf/Wally-Mostafa-SP-Global-Lead-Product-Manager-MCP-AI-Agents-Resume.pdf",
+      "fontWait": true,
+      "fontProfile": "portfolio-pdf"
+    },
+    "coverLetterRenderer": {
+      "browser": {
+        "name": "Google Chrome",
+        "version": "Google Chrome 152.0.7977.83"
+      },
+      "htmlPath": "tmp/tailored-resumes/sp-global-lead-product-manager-mcp-ai-agents-cover-letter.html",
+      "pdfPath": "output/pdf/Wally-Mostafa-SP-Global-Lead-Product-Manager-MCP-AI-Agents-Cover-Letter.pdf",
+      "fontWait": true,
+      "fontProfile": "portfolio-pdf"
+    },
+    "coverLetter": {
+      "ok": true,
+      "failures": [],
+      "pageCount": 1,
+      "sizeBytes": 24964,
+      "templateVersion": "real-chemistry-21grams-v1",
+      "fonts": {
+        "display": "Syne 800",
+        "body": "Instrument Sans 400/600",
+        "type3Fonts": false
+      },
+      "layout": {
+        "page": "Letter",
+        "margin": "0.58in 0.62in",
+        "header": "centered-rule"
+      }
+    },
+    "ats": {
+      "ok": true,
+      "pdfPath": "output/pdf/Wally-Mostafa-SP-Global-Lead-Product-Manager-MCP-AI-Agents-Resume.pdf",
+      "pageCount": 2,
+      "fileSize": 79996,
+      "annotations": [
+        {
+          "page": 1,
+          "uri": "mailto:wmostafa12@gmail.com"
+        },
+        {
+          "page": 1,
+          "uri": "https://linkedin.com/in/wallymo"
+        },
+        {
+          "page": 1,
+          "uri": "https://wallymo.github.io/sp-global-lead-product-manager-mcp-ai-agents/"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/6748"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/4629"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.red-dot.org/project/dxa-digital-experience-audit-55219"
+        }
+      ],
+      "fontCompatibility": {
+        "type3Fonts": false
+      },
+      "coverage": [
+        {
+          "id": "technology-product-launch-and-scale",
+          "requirement": "Bring experience in FinTech, SaaS, AI, or another technology-driven environment, with a record of launching and scaling products.",
+          "priority": "hard-gate",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "AI product strategy",
+            "working POCs",
+            "7,000+"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "mcp-connector-platform",
+          "requirement": "Own the vision, strategy, and execution for an MCP connector ecosystem that integrates private-markets data and content sources.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "API services library",
+            "live sources",
+            "evidence trails"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "zero-to-one-ai-product-delivery",
+          "requirement": "Lead zero-to-one AI product efforts and move new offerings from discovery through build, validation, and scale.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "working POCs",
+            "first ask",
+            "working prototype"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "customer-product-strategy",
+          "requirement": "Build customer and domain understanding, simplify complex problems, and turn insights into product strategy and roadmap decisions.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "client discovery",
+            "customer research",
+            "roadmap priorities"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "product-operations-data-and-kpis",
+          "requirement": "Operate products through agile delivery, requirements, data-driven decisions, KPI management, and cross-functional execution.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "requirements",
+            "adoption data",
+            "engineering handoff"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "cross-functional-product-leadership",
+          "requirement": "Align Product, Engineering, Design, Data Science, Marketing, and Go-to-Market teams around a shared product vision.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "product and engineering",
+            "C-suite",
+            "go-to-market planning"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "llm-agents-retrieval-tools",
+          "requirement": "Build AI products with LLMs, agents, retrieval systems, and modern AI development tools.",
+          "priority": "preferred",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "LLM/VLM workflows",
+            "RAG/knowledge bases",
+            "AI coding agents",
+            "model orchestration"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "private-markets-domain",
+          "requirement": "Develop product depth across the private-markets investment lifecycle and the needs of investment professionals.",
+          "priority": "context",
+          "evidenceStatus": "none",
+          "matchMode": "not-supported",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "private markets",
+            "investment lifecycle"
+          ]
+        }
+      ],
+      "failures": [],
+      "warnings": []
+    },
+    "humanizer": {
+      "status": "passed",
+      "version": "2.2.0",
+      "mode": "surface-only",
+      "reviewedAt": "2026-09-16T14:53:18.172Z",
+      "copySha256": "d833c1189541d185434429a795ddb402afedb028bd802887093309c27dc29c77",
+      "reviewMethod": "humanizer-skill",
+      "semanticPassAttested": true,
+      "staticChecksPassed": true
+    },
+    "route": {
+      "viewports": [
+        {
+          "name": "desktop",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-01",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-02",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-04",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-03",
+          "errors": []
+        },
+        {
+          "name": "mobile",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-01",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-02",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-04",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-03",
+          "errors": []
+        }
+      ],
+      "errors": []
+    }
+  }
+}

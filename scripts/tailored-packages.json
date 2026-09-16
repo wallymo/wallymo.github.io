@@ -4100,6 +4100,43 @@
       "publishStatus": "live-verified"
     },
     {
+      "workflowVersion": 2,
+      "contractRevision": 7,
+      "slug": "sp-global-lead-product-manager-mcp-ai-agents",
+      "roleTitle": "S&P Global Lead Product Manager, MCP & AI Agents Platform",
+      "artifactStem": "SP-Global-Lead-Product-Manager-MCP-AI-Agents",
+      "configPath": "scripts/packages/sp-global-lead-product-manager-mcp-ai-agents.json",
+      "targetLane": "ai-product-implementation",
+      "evidenceMode": "balanced",
+      "fitClass": "adjacent",
+      "positioningLane": "ai-product-implementation",
+      "bridgeType": "domain-transfer",
+      "applicationStrategy": "transferable",
+      "resumeBaseMode": "ai-product-implementation",
+      "resumeBaseLeadProfile": "ai-product-implementation",
+      "resumeBaseAction": "tailor-to-jd",
+      "accountPresentation": "consolidated",
+      "resumeBaseProfiles": [
+        {
+          "id": "ai-product-implementation",
+          "version": 1
+        }
+      ],
+      "routeMode": "scoped-projects",
+      "selectedProjects": [
+        "project-01.html",
+        "project-02.html",
+        "project-04.html",
+        "project-03.html"
+      ],
+      "resumePdfPath": "output/pdf/Wally-Mostafa-SP-Global-Lead-Product-Manager-MCP-AI-Agents-Resume.pdf",
+      "coverLetterPdfPath": "output/pdf/Wally-Mostafa-SP-Global-Lead-Product-Manager-MCP-AI-Agents-Cover-Letter.pdf",
+      "coverLetterMarkdownPath": "output/pdf/Wally-Mostafa-SP-Global-Lead-Product-Manager-MCP-AI-Agents-Cover-Letter.md",
+      "publishStatus": "local-only",
+      "qaStatus": "qa-passed",
+      "builtAt": "2026-09-16T14:53:35.619Z"
+    },
+    {
       "slug": "street-digital",
       "roleTitle": "Street Digital - Implementations Manager",
       "fitClass": "unclassified",
