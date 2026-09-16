@@ -1962,9 +1962,37 @@
         "project-03.html"
       ],
       "resumePdfPath": "output/pdf/Wally-Mostafa-Infosys-Architecture-Consultant-3-Resume.pdf",
-      "publishStatus": "local-only",
+      "publishStatus": "live-verified",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-09-16T14:59:52.193Z"
+      "builtAt": "2026-09-16T14:59:52.193Z",
+      "verification": {
+        "verifiedAt": "2026-09-16T15:02:27.496Z",
+        "routeUrl": "https://wallymo.github.io/infosys-architecture-consultant-3/",
+        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-Infosys-Architecture-Consultant-3-Resume.pdf",
+        "configUrl": "https://wallymo.github.io/scripts/packages/infosys-architecture-consultant-3.json",
+        "projectUrls": [
+          "https://wallymo.github.io/infosys-architecture-consultant-3/project-01.html",
+          "https://wallymo.github.io/infosys-architecture-consultant-3/project-02.html",
+          "https://wallymo.github.io/infosys-architecture-consultant-3/project-04.html",
+          "https://wallymo.github.io/infosys-architecture-consultant-3/project-03.html"
+        ],
+        "redirectUrls": [],
+        "configSha256": "bc5ec4e9786447d359c4b36c400e04c1bc67d8d0175129b7a48730e61dd914d7",
+        "pdfSha256": "84a012a4ebecd7b64bb5dbd04e7c79f9d8f87790be3b3f6cd02022d34395ed41",
+        "resumeBaseProfilesUrl": "https://wallymo.github.io/scripts/resume-base-profiles.json",
+        "resumeBaseProfilesSha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108",
+        "routeSha256": "15f74cad92cd738c093b0b3f5e7850cf7d718113c8deb916be82d845c13a993b",
+        "scopedProjectSha256": {
+          "project-01.html": "3a8cde17d33bba3e638be04ccfc5038e75368b2ea9f0db4e9a08feb0135a3f78",
+          "project-02.html": "9ac2254e883c17aa4f062a88be170cf1d58ebafd84364ebdbe1b0c01195e7135",
+          "project-04.html": "a1bbbee41d074a7c1398fee473dfe60701ec396c8aac3b3d56da701d92c5d02f",
+          "project-03.html": "129a209de57464102c5e188a280e640e07cbd78ac27c51f233a45e71b7ca2463"
+        },
+        "scopedProjectAssetUrls": [],
+        "scopedProjectAssetSha256": {},
+        "configInputSha256": "c7ef1f0639b1b634b5838831659ac2222b7805ff14051f6a61b2397322c095e1",
+        "qaBuiltAt": "2026-09-16T14:59:52.193Z"
+      }
     },
     {
       "workflowVersion": 2,
