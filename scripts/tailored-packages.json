@@ -1159,6 +1159,43 @@
     },
     {
       "workflowVersion": 2,
+      "contractRevision": 7,
+      "slug": "creo-ai-enablement-consultant",
+      "roleTitle": "CREO AI Enablement Consultant",
+      "artifactStem": "CREO-AI-Enablement-Consultant",
+      "configPath": "scripts/packages/creo-ai-enablement-consultant.json",
+      "targetLane": "ai-product-implementation",
+      "evidenceMode": "balanced",
+      "fitClass": "adjacent",
+      "positioningLane": "ai-product-implementation",
+      "bridgeType": "operating-center",
+      "applicationStrategy": "transferable",
+      "resumeBaseMode": "ai-product-implementation",
+      "resumeBaseLeadProfile": "ai-product-implementation",
+      "resumeBaseAction": "tailor-to-jd",
+      "accountPresentation": "consolidated",
+      "resumeBaseProfiles": [
+        {
+          "id": "ai-product-implementation",
+          "version": 1
+        }
+      ],
+      "routeMode": "scoped-projects",
+      "selectedProjects": [
+        "project-01.html",
+        "project-04.html",
+        "project-02.html",
+        "project-03.html"
+      ],
+      "resumePdfPath": "output/pdf/Wally-Mostafa-CREO-AI-Enablement-Consultant-Resume.pdf",
+      "coverLetterPdfPath": "output/pdf/Wally-Mostafa-CREO-AI-Enablement-Consultant-Cover-Letter.pdf",
+      "coverLetterMarkdownPath": "output/pdf/Wally-Mostafa-CREO-AI-Enablement-Consultant-Cover-Letter.md",
+      "publishStatus": "local-only",
+      "qaStatus": "qa-passed",
+      "builtAt": "2026-09-16T14:55:20.124Z"
+    },
+    {
+      "workflowVersion": 2,
       "contractRevision": 6,
       "slug": "cvs-health-account-manager",
       "roleTitle": "CVS Health Account Manager",

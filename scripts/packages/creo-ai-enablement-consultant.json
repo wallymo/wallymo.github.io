@@ -1,0 +1,1137 @@
+{
+  "workflowVersion": 2,
+  "contractRevision": 7,
+  "slug": "creo-ai-enablement-consultant",
+  "roleTitle": "CREO AI Enablement Consultant",
+  "artifactStem": "CREO-AI-Enablement-Consultant",
+  "fitClass": "adjacent",
+  "routeMode": "scoped-projects",
+  "selectedProjects": [
+    "project-01.html",
+    "project-04.html",
+    "project-02.html",
+    "project-03.html"
+  ],
+  "job": {
+    "company": "CREO",
+    "roleTitle": "AI Enablement Consultant",
+    "jobId": "not-provided",
+    "jobUrl": "not-provided",
+    "sourceChannel": "user-provided job description",
+    "dateCaptured": "2026-09-16",
+    "location": "Not provided",
+    "employmentType": "Not provided",
+    "atsVendor": "unknown",
+    "rawJd": "JOB DESCRIPTION OVERVIEW \nCREO’s AI Enablement practice helps life sciences, healthcare, and technology organizations unlock the value of AI through strategy, governance, adoption change management, and hands-on training. As a Consultant on this team, you will own client engagements end to end — leading teams to stand up AI Champions programs, launch workshop series, operationalize governance frameworks, and drive measurable adoption at scale. \nThis role blends deep AI Enablement expertise with the autonomy, leadership, and accountability of a seasoned consultant. You will serve as a trusted advisor to client-side Chief AI Officers, or those delegated to lead AI, and their champion communities, mentor junior staff, shape delivery strategy, and actively grow the offering through business development. You live the CREO values, and you are always learning and always teaching. \nPOSITION RESPONSIBILITIES \nLead and Deliver AI Enablement Engagements \nYou will own client AI programs across the full lifecycle — from discovery and planning through delivery, adoption, and ongoing program leadership. \n\n- Lead and manage client engagements focused on AI readiness assessments, governance frameworks, champion programs, workshop series, and use-case discovery, with significant autonomy over scope, approach, and outcomes. \n\n\n- Oversee the end-to-end lifecycle of AI enablement projects, from initial assessment and requirements gathering through implementation, adoption, and post-deployment support. \n\n\n- Direct discovery and working sessions to identify and assess AI use cases based on business value, feasibility, risk, and adoption readiness, translating client pain points into practical opportunities such as chatbots, workflow automations, knowledge management tools, and analytics assistants. \n\n\n- Manage multiple concurrent workstreams and engagement teams, tracking scope, schedule, deliverables, risks, and action items, and serving as the delegated Project Manager where required. \n\n\n- Act as a trusted advisor and right hand to client-side AI leaders, program leads, and champion communities — driving decisions, capturing outcomes, and sustaining momentum between sessions. \n\n\n- Collaborate with AI engineers and solution architects to translate technical work into narratives that land with executives and end users, and partner with clients and technical teams to deploy specialized AI or machine learning tools into client environments when needed. \n\n\n- Support AI solutions in regulated or compliance-sensitive environments by documenting requirements, risks, controls, and user guidance to the quality standard clients expect. \n\n\n- Mentor and develop junior staff, ensuring engagements meet client expectations, are completed on time, and align with industry best practices and emerging technologies. \n\n\n- Maintain personal billable utilization at the rate of 1700 hours per year. \n\nDevelop AI-Focused Client Deliverables \nYou will produce polished, insight-rich artifacts that make complex AI concepts accessible and actionable for client leadership and end users. \n\n- Build client-ready PowerPoint decks, workshop materials, playbooks, and written reports that communicate complex AI concepts clearly and compellingly to non-technical audiences. \n\n\n- Develop AI strategy documents, adoption roadmaps, solution architectures, and financial models that articulate business value and demonstrate measurable impact. \n\n\n- Produce governance artifacts including AI solution intake forms, risk models, use-case inventories, and executive-ready status reports with strong attention to quality and client-readiness. \n\n\n- Develop and maintain enablement assets such as dashboards, SharePoint sites, training repositories, champion community hubs, prompt libraries, and intranet content that sustain adoption after each engagement. \n\nFacilitate AI Upskilling, Training, and Champion Programs \nYou will help non-technical users understand, adopt, and get lasting value from AI tools and solutions. \n\n- Design and facilitate CREO’s AI Foundations workshops, champion kick-offs, hands-on labs, case contests, and recurring office hours for client teams. \n\n\n- Lead AI adoption change management — internal comms, awareness campaigns, and community-building — that turns pilots into organization-wide deployments. \n\n\n- Coordinate training logistics and attendee experience across in-person and remote modalities, ensuring every session translates into adoptable use cases. \n\n\n- Package lessons learned, reusable templates, and engagement materials into scalable assets for future CREO AI Enablement work. \n\nDrive AI Tool Fluency — Always Learning, Always Teaching \nAI is moving fast. You will be expected to stay current and bring what you learn back to clients and colleagues. \n\n- Continuously evaluate new AI tools, platforms, and agent frameworks, staying current on emerging capabilities relevant to client work. \n\n\n- Actively use AI in your own daily work — drafting, summarization, research, deck development, and analysis — demonstrating practical value through what you produce. \n\n\n- Share what you learn through internal knowledge shares, client office hours, and champion enablement sessions, helping the rest of the CREO team and our clients get sharper, faster. \n\nContribute to Business Development \nYou will help grow the AI Enablement offering and position CREO as a trusted partner and thought leader. \n\n- Achieve an annual sales target, as communicated separately. \n\n\n- Identify AI-driven opportunities within existing client relationships and help acquire new clients, conducting AI readiness assessments and preparing proposals for enablement engagements. \n\n\n- Foster relationships with senior executives and champion communities, influencing decision-makers to drive revenue growth and expand CREO’s AI consulting offerings. \n \n\nCommunicate with Clarity and Executive Presence \nStrong communication is non-negotiable. You will regularly translate complex work for non-technical audiences and sustain momentum across client teams. \n\n- Record and summarize technical and executive discussions during client and internal meetings, ensuring decisions and action items are captured and circulated to the right stakeholders. \n\n- \n- Translate stakeholder interviews, use-case discovery sessions, and workshop outputs into structured written artifacts the client can act on. \n- \n- Communicate clearly, concisely, and confidently in both written and verbal form across technical and non-technical audiences, up to and including executive leadership. \n- Exhibit communication and collaboration best practices including which tool when and adjusting messaging to the audience. \n\nREQUIRED SKILLS & QUALIFICATIONS \n\nWe hire for expertise, leadership, and the drive to bring others along. If you meet most of these qualifications and are excited about this work, we encourage you to apply. \n \n\n- 5+ years of consulting experience or equivalent work experience, including leading engagements and mentoring junior staff. \n\n\n- Bachelor’s degree in a relevant field; master’s or equivalent post-graduate degree (or in process) preferred. \n\n\n- Proven ability to design and deliver AI-enabled solutions — tools, automations, chatbots, workflow assistants, analytics tools, or internal productivity applications — that drive adoption and business value. \n\n\n- Demonstrated leadership managing project teams and client engagements with significant autonomy and accountability for outcomes. \n\n\n- Exceptional verbal and written communication skills; attention to detail; able to explain AI concepts clearly to non-technical audiences and present to senior-level stakeholders without sacrificing accuracy. \n\n\n- Advanced expertise in PowerPoint, Word, Excel, and Outlook, with a portfolio of polished, client-ready deliverables, models, roadmaps, and presentations. \n\n\n- Deep working fluency with the Microsoft 365 suite (Teams, SharePoint, OneDrive, Planner, OneNote). \n\n\n- Hands-on experience with generative AI tools (Copilot, Azure Foundry, OpenAI, Anthropic, etc.) and a genuine desire to adopt and teach new AI tools as they emerge. \n\n\n- Experience working with cloud environments such as Microsoft Azure and AWS to support AI application deployment, user management, provisioning, and automation tasks. \n\n\n- Proven ability to manage multiple concurrent workstreams on tight deadlines with shifting priorities. \n\n\n- Experience contributing to business development, including proposal writing, client relationship management, and identifying new service opportunities. \n\n\n- Commitment to CREO’s core values and making a meaningful difference in the world. \n \n\nPREFERRED QUALIFICATIONS\n\n- Experience in Project, program or change management; PMP or Prosci (in progress or completed) a plus. \n\n\n- Experience leading or delivering technical training, or within a Learning and Development function or practice. \n\n\n- Experience designing, leading, or facilitating training workshops or enablement programs. \n\n\n- Exposure to life sciences, biotech, healthcare, or other regulated industries. \n\n\n- Experience with or knowledge of AI or machine learning tools such as AlphaFold, Chai-1, language models, and NLP workflows. \n\n\n- Hands-on experience building SharePoint sites, Power Apps, or Power Automate flows. \n\n\n- Familiarity with AI governance concepts: responsible AI, risk frameworks, and enterprise AI policies. \n\n- \n- Experience supporting champion communities, internal enablement groups, or AI adoption programs. \n- \n- Relevant AI certifications such as Generative AI for Everyone (DeepLearning.AI), Microsoft AI Fundamentals, etc. \n​​​​​Please note: This application may be reviewed in part by automated systems to help identify qualified candidates.​​​​​​​"
+  },
+  "classification": {
+    "targetLane": "ai-product-implementation",
+    "evidenceMode": "balanced",
+    "primarySource": "The resume shows healthcare client leadership, working AI POCs, workshops, mentoring, regulated delivery, and executive communication. It also keeps the missing formal AI Champions, Microsoft 365 administration, cloud support, and quota evidence visible.",
+    "supportingSource": "The portfolio shows the working healthcare AI tools, research operating model, workshop practices, human-review controls, and enterprise systems behind the resume claims.",
+    "hardGateStatus": "pass",
+    "hardGates": [
+      {
+        "gate": "Bachelor's degree in a relevant field",
+        "status": "pass",
+        "requirementId": "bachelors-degree-relevant-field",
+        "evidence": "The resume lists a BA in Labor Studies and Employee Relations from Rutgers University. That background is relevant to workforce adoption and organizational change, and it is reinforced by 15 years of client, product, and team leadership."
+      },
+      {
+        "gate": "Five or more years of consulting or equivalent work, including engagement leadership and junior-staff mentoring",
+        "status": "pass",
+        "requirementId": "consulting-engagement-leadership",
+        "evidence": "The resume documents eight years of Fortune 500 healthcare account leadership, enterprise product leadership, a design team scaled from 2 to 30, and onboarding, coaching, and performance-review systems."
+      },
+      {
+        "gate": "Proven ability to design and deliver AI-enabled solutions that support adoption and business value",
+        "status": "pass",
+        "requirementId": "ai-solution-design-and-delivery",
+        "evidence": "Current work includes governed LLM and VLM review workflows, client-led POCs, AI scoping and intake tools, demos, stakeholder feedback, and production handoff."
+      }
+    ]
+  },
+  "requirements": [
+    {
+      "id": "bachelors-degree-relevant-field",
+      "text": "Hold a bachelor's degree in a relevant field; a master's or equivalent postgraduate degree is preferred.",
+      "priority": "hard-gate",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The resume lists a BA in Labor Studies and Employee Relations from Rutgers University.",
+        "The degree supports the role's workforce adoption and organizational-change responsibilities, while the work history supplies the AI, client, and delivery experience."
+      ],
+      "proofIds": [],
+      "destinations": [
+        "experience"
+      ],
+      "resumeTerms": [
+        "BA Labor Studies & Employee Relations",
+        "Rutgers University"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "consulting-engagement-leadership",
+      "text": "Bring at least five years of consulting or equivalent work, including engagement leadership and mentoring junior staff.",
+      "priority": "hard-gate",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Eight years of Fortune 500 healthcare account leadership required ownership of briefs, budgets, timelines, client decisions, and cross-functional delivery.",
+        "Kinesso work scaled a distributed design organization from 2 to 30 and established onboarding, coaching, and performance-review systems."
+      ],
+      "proofIds": [
+        "account-management-01",
+        "kinesso-01",
+        "kinesso-05"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience"
+      ],
+      "resumeTerms": [
+        "15 years",
+        "Scaled product design from 2 to 30",
+        "coaching"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "ai-solution-design-and-delivery",
+      "text": "Design and deliver AI-enabled solutions such as tools, automations, chatbots, workflow assistants, analytics tools, or productivity applications.",
+      "priority": "hard-gate",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Hedgehox work turns pharma agency needs into working AI tools for claim review, intake, scoping, routing, submission capture, and regulatory monitoring.",
+        "One Block Away work turns client questions into testable AI use cases, working POCs, demos, and roadmap decisions."
+      ],
+      "proofIds": [
+        "hedgehox-03",
+        "one-block-away-01",
+        "one-block-away-04"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "AI workflows",
+        "working POCs",
+        "client discovery"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "end-to-end-ai-enablement-engagements",
+      "text": "Own AI readiness, governance, champion, workshop, and use-case engagements from discovery through adoption and ongoing program leadership.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Current work covers discovery, use-case framing, governed AI workflow design, working POCs, demos, feedback, and handoff.",
+        "Kinesso work covers workshops, research operations, onboarding, coaching, adoption data, and repeatable practices across enterprise teams.",
+        "The evidence does not show a formal AI Champions program or a named enterprise AI readiness engagement."
+      ],
+      "proofIds": [
+        "one-block-away-01",
+        "kinesso-07",
+        "kinesso-05"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio",
+        "cover-letter"
+      ],
+      "resumeTerms": [
+        "client discovery",
+        "Led workshops",
+        "onboarding program",
+        "stakeholder adoption"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "program-project-and-workstream-management",
+      "text": "Manage concurrent workstreams, engagement teams, scope, schedules, deliverables, risks, action items, and client decisions with significant autonomy.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The resume documents scoping, requirements, timelines, review routing, team coordination, risk visibility, and build-ready handoff.",
+        "Kinesso leadership covered scope, staffing, quality reviews, and engineering handoff across more than 20 products.",
+        "Healthcare account leadership covered Fortune 500 clients and budgets up to $20M."
+      ],
+      "proofIds": [
+        "kinesso-01",
+        "account-management-01",
+        "account-management-03"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience"
+      ],
+      "resumeTerms": [
+        "20+ products",
+        "budgets up to $20M",
+        "timelines",
+        "team coordination"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "client-ready-deliverables-and-executive-communication",
+      "text": "Create polished decks, workshop materials, playbooks, reports, roadmaps, models, dashboards, and executive updates that make AI clear to non-technical audiences.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Enterprise work includes presentation-ready client outputs, data visualization, executive recommendations, demo narratives, journey maps, and build-ready product documentation.",
+        "Eight years of account leadership required translating strategy into briefs, feedback, requirements, timelines, and regulated deliverables."
+      ],
+      "proofIds": [
+        "kinesso-03",
+        "kinesso-07",
+        "account-management-03"
+      ],
+      "destinations": [
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "presentation-ready client outputs",
+        "executives and clients",
+        "briefs"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "training-facilitation-and-change-adoption",
+      "text": "Design and facilitate workshops, labs, office hours, training, communications, and community programs that help non-technical users adopt AI.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Kinesso work includes workshops on discovery, ecosystem mapping, innovation, and research, plus onboarding, coaching, and shared practices.",
+        "The research program expanded from Kinesso teams to IPG groups and helped others champion research through documentation and workshops.",
+        "The evidence does not document a formal AI curriculum, AI office-hours program, or AI champion community."
+      ],
+      "proofIds": [
+        "kinesso-07",
+        "kinesso-05",
+        "kinesso-06"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio",
+        "cover-letter"
+      ],
+      "resumeTerms": [
+        "Led workshops",
+        "onboarding program",
+        "coaching",
+        "shared Figma documentation"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "regulated-ai-governance-and-risk",
+      "text": "Document AI requirements, risks, controls, responsible-use guidance, and governance artifacts for regulated or compliance-sensitive environments.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Claims Detector uses prompt-defined criteria, evidence-gap surfacing, audit-ready annotations, and human final review before MLR submission.",
+        "The resume documents FDA, HIPAA, and MLR workflows and product governance across healthcare and enterprise work."
+      ],
+      "proofIds": [
+        "hedgehox-02",
+        "hedgehox-03",
+        "account-management-02"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "FDA/HIPAA/MLR workflows",
+        "human review",
+        "evidence gaps"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "generative-ai-tool-fluency",
+      "text": "Use and continuously evaluate generative AI tools, platforms, and agent frameworks in daily work, then teach practical uses to clients and colleagues.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The public portfolio documents Claude Code, Codex, Gemini, LLM and VLM workflows, prompt-defined criteria, RAG, and model orchestration.",
+        "Current roles use those tools to move from client discovery through working prototypes, demos, and iteration."
+      ],
+      "proofIds": [
+        "hedgehox-02",
+        "one-block-away-04"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "LLM",
+        "VLM",
+        "Claude Code",
+        "Codex"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "business-development-and-sales-contribution",
+      "text": "Contribute to business development through proposals, readiness assessments, relationship growth, new-service opportunities, and an annual sales target.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Current work includes client discovery, demo narratives, investor iteration, and an investor secured for Claims Detector.",
+        "Kinesso work includes executive collaboration on monetization and go-to-market planning for Kanvas.",
+        "The evidence does not establish proposal ownership, a consulting sales quota, or revenue against an annual target."
+      ],
+      "proofIds": [
+        "hedgehox-01",
+        "kinesso-08",
+        "one-block-away-01"
+      ],
+      "destinations": [
+        "skills",
+        "experience",
+        "cover-letter"
+      ],
+      "resumeTerms": [
+        "secured an investor",
+        "monetization and go-to-market planning",
+        "demo flows"
+      ],
+      "matchMode": "contextual"
+    },
+    {
+      "id": "advanced-microsoft-office-and-m365",
+      "text": "Bring advanced expertise in PowerPoint, Word, Excel, and Outlook plus deep working fluency across Teams, SharePoint, OneDrive, Planner, and OneNote.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "proofIds": [],
+      "destinations": [
+        "application-answer"
+      ],
+      "resumeTerms": [
+        "PowerPoint",
+        "Word",
+        "Excel",
+        "Outlook",
+        "SharePoint"
+      ],
+      "matchMode": "not-supported"
+    },
+    {
+      "id": "cloud-deployment-and-administration-support",
+      "text": "Support AI deployment, user management, provisioning, and automation in cloud environments such as Azure and AWS.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "proofIds": [],
+      "destinations": [
+        "application-answer"
+      ],
+      "resumeTerms": [
+        "Azure",
+        "AWS",
+        "user management",
+        "provisioning"
+      ],
+      "matchMode": "not-supported"
+    },
+    {
+      "id": "billable-utilization-expectation",
+      "text": "Maintain personal billable utilization at 1,700 hours per year.",
+      "priority": "context",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "proofIds": [],
+      "destinations": [
+        "application-answer"
+      ],
+      "resumeTerms": [
+        "1,700 billable hours"
+      ],
+      "matchMode": "not-supported"
+    },
+    {
+      "id": "sharepoint-power-platform-builds",
+      "text": "Have hands-on experience building SharePoint sites, Power Apps, or Power Automate flows.",
+      "priority": "preferred",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "proofIds": [],
+      "destinations": [
+        "application-answer"
+      ],
+      "resumeTerms": [
+        "SharePoint",
+        "Power Apps",
+        "Power Automate"
+      ],
+      "matchMode": "not-supported"
+    },
+    {
+      "id": "formal-project-change-or-ai-certifications",
+      "text": "Bring or be pursuing PMP, Prosci, Microsoft AI Fundamentals, or a comparable AI or change-management certification.",
+      "priority": "preferred",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "proofIds": [],
+      "destinations": [
+        "application-answer"
+      ],
+      "resumeTerms": [
+        "PMP",
+        "Prosci",
+        "Microsoft AI Fundamentals"
+      ],
+      "matchMode": "not-supported"
+    },
+    {
+      "id": "life-sciences-ai-and-nlp-exposure",
+      "text": "Bring exposure to life sciences, biotech, healthcare, or regulated industries and knowledge of AI or machine-learning tools such as language models and NLP workflows.",
+      "priority": "preferred",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The resume documents 11 years across pharma and healthcare communications plus current regulated AI delivery.",
+        "Current work includes language-model workflows for claim review, intake, scoping, routing, and regulatory monitoring."
+      ],
+      "proofIds": [
+        "hedgehox-03",
+        "account-management-01"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "11 years",
+        "pharma",
+        "healthcare",
+        "LLM"
+      ],
+      "matchMode": "exact"
+    }
+  ],
+  "fitGate": {
+    "supportedOverlap": [
+      "Current Hedgehox work turns regulated pharma problems into working AI tools for claim review, intake, scoping, routing, submission capture, and FDA monitoring.",
+      "One Block Away work covers client discovery, use-case framing, working POCs, demos, and iteration from first ask through prototype.",
+      "Kinesso work directly supports workshops, mentoring, onboarding, research operations, adoption data, executive recommendations, and enterprise-scale delivery.",
+      "Eight years of Fortune 500 healthcare account leadership supports trusted-advisor communication, scope and timeline ownership, regulated delivery, and cross-functional coordination.",
+      "The portfolio makes governance and enablement tangible through human-review controls, evidence trails, research documentation, workshops, and reusable operating practices."
+    ],
+    "unsupportedRequirements": [
+      "A formal AI Champions program, AI office-hours series, or organization-wide AI curriculum is not documented.",
+      "Deep Microsoft 365 administration across SharePoint, OneDrive, Planner, and OneNote is not documented.",
+      "Azure or AWS deployment support, user management, provisioning, and automation ownership are not documented.",
+      "Annual sales-target ownership and formal proposal ownership are not documented.",
+      "PMP, Prosci, Microsoft AI Fundamentals, and comparable formal certifications are not documented."
+    ],
+    "actualMismatches": [],
+    "missingEvidence": [
+      "Measured adoption outcomes from a formal enterprise AI enablement program.",
+      "A named AI Champions community or recurring AI training program.",
+      "Advanced Microsoft Office and Microsoft 365 suite proficiency.",
+      "Cloud administration or AI deployment support in Azure or AWS.",
+      "Consulting quota attainment and proposal ownership."
+    ],
+    "coverLetterBridge": {
+      "status": "recommended",
+      "rationale": "We can make the case with a cover letter by connecting healthcare client leadership, enterprise workshops and coaching, regulated AI workflow delivery, and working POCs to CREO's enablement model. The cover letter should keep formal AI Champions, Microsoft 365 administration, cloud support, certification, and sales-target gaps visible."
+    },
+    "resumeBase": {
+      "mode": "ai-product-implementation",
+      "sourceProfiles": [
+        {
+          "id": "ai-product-implementation",
+          "version": 1
+        }
+      ],
+      "leadProfileId": "ai-product-implementation",
+      "accountPresentation": "consolidated",
+      "action": "tailor-to-jd",
+      "rationale": "The role's operating center is AI use-case discovery, governed workflow design, workshop facilitation, implementation, and adoption. The AI/Product Implementation base carries the direct evidence. Healthcare account leadership strengthens the trusted-advisor case but does not make account ownership the primary hiring center."
+    },
+    "recommendation": "Proceed as an adjacent fit. Lead with regulated healthcare AI workflows, workshops, mentoring, client leadership, and practical POC delivery. Keep AI Champions program ownership, deep Microsoft 365 administration, Azure or AWS deployment support, certifications, proposal ownership, and sales-quota attainment out of the claim set."
+  },
+  "positioning": {
+    "laneId": "ai-product-implementation",
+    "targetIdentity": "AI enablement and implementation lead",
+    "employerNeed": "Lead regulated healthcare AI engagements from discovery through adoption, with useful training, practical governance, and client-ready delivery.",
+    "bridgeType": "operating-center",
+    "applicationStrategy": "transferable",
+    "bridgeThesis": "lead discovery, workshops, and delivery from an unclear business need to a working POC",
+    "proofIds": [
+      "hedgehox-03",
+      "kinesso-07",
+      "account-management-03"
+    ],
+    "remainingGap": "The record does not yet show a formal AI Champions program, deep Microsoft 365 administration, Azure or AWS deployment support, or annual consulting sales-target ownership."
+  },
+  "coverLetter": {
+    "trigger": "bridge-recommended",
+    "date": "2026-09-16",
+    "greeting": "Dear CREO hiring team,",
+    "paragraphs": [
+      "I am applying for the CREO AI Enablement Consultant role because it brings together the work I have been building toward across healthcare client leadership, enterprise UX, and hands-on AI delivery. I know how to take an unclear business problem, run the discovery, shape a practical workflow, and give people something they can test and use. That is the thread connecting my account, product, research, and AI work.",
+      "At Hedgehox, I turn recurring pharma agency problems into AI tools for claim review, brief intake, scoping, review routing, submission capture, and regulatory monitoring. I built the functional Claims Detector POC, shaped the demo with investors, and secured an investor. The workflow identifies promotional claims, surfaces evidence gaps, and prepares audit-ready annotations for human review before MLR submission. It is practical AI built around the standards and judgment regulated teams already need.",
+      "My enablement experience comes from building the systems that help teams adopt a new way of working. At Kinesso, I built the first UX research practice across more than 20 products, led workshops on discovery and ecosystem mapping, and expanded that program to other IPG groups. I also helped grow a distributed design team from 2 to 30 and created onboarding, coaching, and performance-review systems with the Head of Design. The products supported more than 7,000 people across 22 brands, so the work had to be clear, repeatable, and useful after the workshop ended.",
+      "Earlier, I spent eight years managing Fortune 500 healthcare clients and brand budgets up to $20M. That taught me how to run difficult conversations, translate between specialists and executives, keep regulated work moving, and make the next decision clear. Through One Block Away, I now apply that same discipline to client-led AI POCs built with Claude Code and Codex. I would welcome the chance to discuss how this mix could help CREO lead practical AI enablement programs for healthcare and life sciences clients."
+    ],
+    "closing": "Sincerely,",
+    "signature": "Wally Mostafa",
+    "proofIds": [
+      "hedgehox-03",
+      "kinesso-07",
+      "account-management-03"
+    ]
+  },
+  "resume": {
+    "foundationId": "wally-mostafa-resume-2026-07-03",
+    "foundationVersion": 4,
+    "compositionMode": "foundation-complete",
+    "layoutDensity": "compact",
+    "roleContinuationBreaks": [
+      {
+        "roleId": "kinesso",
+        "afterBullet": 2
+      }
+    ],
+    "summary": "AI enablement and implementation lead with 15 years across healthcare client leadership, enterprise UX, and regulated AI workflows. I lead discovery, workshops, and delivery from an unclear business need to a working POC, practical guidance, and stakeholder adoption. Recent work includes governed LLM and VLM review tools, client-led AI workflows, and enterprise products used by 7,000+ people across 22 brands.",
+    "skillIds": [
+      "ai-implementation-workflow-design",
+      "program-project-delivery",
+      "regulated-healthcare-client-delivery",
+      "client-success-product-adoption",
+      "consultative-sales-solution-delivery"
+    ],
+    "skills": [
+      {
+        "label": "AI Implementation & Workflow Design",
+        "description": "Governed LLM/VLM workflows, multimodal review, RAG/knowledge bases, prompt-defined criteria, model orchestration, and human review surfaces"
+      },
+      {
+        "label": "Program & Project Delivery",
+        "description": "Scoping, requirements, timelines, review routing, team coordination, risk visibility, and build-ready handoff across product, design, and client teams"
+      },
+      {
+        "label": "Regulated Healthcare & Client Delivery",
+        "description": "11 years across pharma/healthcare communications, FDA/HIPAA/MLR workflows, HCP/patient UX, client workshops, and stakeholder adoption"
+      },
+      {
+        "label": "Client Success & Product Adoption",
+        "description": "Client discovery, adoption-focused workflows, training and roadshows, human review, and product decisions based on user needs"
+      },
+      {
+        "label": "Consultative Sales & Solution Delivery",
+        "description": "Discovery-led solution design, POCs, demo narratives, client translation, and product recommendations tied to business needs"
+      }
+    ],
+    "roles": {
+      "hedgehox": [
+        "Turn recurring pharma agency problems into AI workflows for MLR claim review, brief intake, scoping, review routing, submission capture, and FDA signal monitoring",
+        "Built the functional Claims Detector POC, shaped the demo story, iterated with investors, and secured an investor",
+        "Designed Claims Detector workflows with prompt-defined review criteria that identify promotional claims, surface evidence gaps, and pre-populate audit-ready annotations before MLR submission",
+        "Built Scope Generator for pharma agency finance and operations teams to manage regional rate cards, brands, sub-brands, and natural-language scope changes",
+        "Developed FDA Warning Tool concepts that connect warning-letter patterns to content-risk guidance for pharma teams",
+        "Designed the full Xenagos Bio startup biopharma website from scratch, including investor-facing structure, scientific positioning, visual direction, and hidden design-system handoff"
+      ],
+      "one-block-away": [
+        "Lead client discovery and workflow mapping, then turn unclear business questions into testable AI use cases, working POCs, demo flows, and roadmap decisions",
+        "Use Claude Code and Codex to turn product and UX decisions into working POCs, covering workflow logic, interface build, backend behavior, demos, and client iteration",
+        "Built ListingPal's AI listing-generation POC and landing page, turning basic property inputs into listing copy, social posts, ad copy, styling direction, and MLS/SEO-ready language in under 90 seconds",
+        "Built WeReady's Bailey Intelligence dashboard, translating founder inputs, GitHub signals, source health, risk scoring, and evidence trails into startup-readiness workflows",
+        "Currently building the website and sponsor strategy for a Tunisia youth soccer program, positioning the project for player advancement, community support, and donor outreach"
+      ],
+      "kinesso": [
+        "Led workshops on product discovery, ecosystem mapping, innovation, and user research; expanded the program from Kinesso teams to IPG groups and presented recommendations to executives and clients",
+        "Built Kinesso's first UX research practice across 20+ products, including participant recruitment, interviews, prototype testing, beta groups, behavioral analytics, research tooling, shared Figma documentation, and UX checkpoints in project plans",
+        "Scaled product design from 2 to 30 across the US and Poland, hiring and staffing designers, leading critiques and quality reviews, and planning scope, resources, and engineering handoff across 20+ products",
+        "Partnered with the Head of Design to create the team's first onboarding program, career roadmaps, coaching structure, and performance review workflows for new and existing employees",
+        "Led UX research and strategy for a marketing intelligence suite used by 7,000+ people across 22 white-label brands; turned findings and adoption data into roadmap priorities for navigation, dashboards, brand theming, personalization, and product support",
+        "UX lead for research and design on Kanvas, Kinesso's developer-first API services library; partnered with product and engineering on roadmap priorities and with C-suite stakeholders on monetization and go-to-market planning",
+        "Collaborated on the UX/UI build of Digital Experience Audit, turning channel scoring, benchmarks, and recommendations into a repeatable workflow with data visualization and presentation-ready client outputs",
+        "Helped shape and govern a design system with 500 components, 140 styles, 300 icons, and 50 personas, including accessibility and design quality standards; the work earned 5 Indigo Gold, 4 Indigo Silver, and Red Dot recognition",
+        "Led a three-person team to second place in Kinesso's inaugural innovation challenge with an accessibility panel concept; later advised the next cohort and contributed to accessibility playbook and keyboard interaction standards"
+      ],
+      "omnicom": [
+        "Supported oncology accounts as a freelance UX designer, combining UX design and account-management experience to strengthen regulated healthcare work",
+        "Championed UX best practices across account, strategy, creative, and delivery conversations, translating brand goals into clearer user flows, content structure, and digital recommendations"
+      ],
+      "heartbeat": [
+        "Led UX research and experience strategy for pharma and healthcare work, translating stakeholder input, competitive audits, and user needs into digital product direction",
+        "Created journey maps, site maps, user flows, wireframes, and prototypes for patient, HCP, and internal brand-team experiences across regulated healthcare programs",
+        "Partnered with strategy, creative, account, and engineering teams to move UX recommendations from research findings into build-ready product and campaign experiences",
+        "Led research and creation of an oncology-wide design system for interactive visual aids (iVAs) at a major pharma company, with the goal of improving field usability and development efficiency",
+        "Member of Heartbeat's ETCH (Experiential Technology) group, which ran business-driven sprints exploring voice, AR/VR, and facial recognition for agency and client use"
+      ],
+      "account-management": [
+        "8 years managing Fortune 500 pharma and healthcare clients and brand budgets up to $20M across CNS/neurology, psychiatry, cardiovascular/metabolic, and sleep/wakefulness brands including NUVIGIL, Namenda XR, Lipitor, and Zoloft",
+        "One of two account consumer leads on FCB Health's largest pharma account across all verticals: TV, radio, digital, gaming, Times Square, unbranded campaigns, brand planning, and MLR review",
+        "Translated client and brand strategy into briefs, creative feedback, production requirements, timelines, and MLR-ready deliverables across account, creative, UX, and development teams"
+      ]
+    },
+    "sourceBulletIds": {
+      "hedgehox": [
+        "hedgehox-03",
+        "hedgehox-01",
+        "hedgehox-02",
+        "hedgehox-05",
+        "hedgehox-06",
+        "hedgehox-04"
+      ],
+      "one-block-away": [
+        "one-block-away-01",
+        "one-block-away-04",
+        "one-block-away-02",
+        "one-block-away-03",
+        "one-block-away-05"
+      ],
+      "kinesso": [
+        "kinesso-07",
+        "kinesso-06",
+        "kinesso-01",
+        "kinesso-05",
+        "kinesso-02",
+        "kinesso-08",
+        "kinesso-03",
+        "kinesso-04",
+        "kinesso-09"
+      ],
+      "omnicom": [
+        "omnicom-01",
+        "omnicom-02"
+      ],
+      "heartbeat": [
+        "heartbeat-01",
+        "heartbeat-02",
+        "heartbeat-03",
+        "heartbeat-04",
+        "heartbeat-05"
+      ],
+      "account-management": [
+        "account-management-01",
+        "account-management-02",
+        "account-management-03"
+      ]
+    }
+  },
+  "hero": {
+    "eyebrow": "CREO | Selected Work",
+    "tags": [
+      "Regulated healthcare AI",
+      "Workshops and adoption",
+      "Governed POC delivery"
+    ],
+    "intro": "Here is a look at recent work that may be relevant to CREO's AI Enablement Consultant role, especially around regulated AI workflows, workshop-led discovery, and practical adoption. My resume covers the broader background."
+  },
+  "contact": {
+    "prompt": "Email is the easiest way to reach me about the AI Enablement Consultant role.",
+    "signoff": "Healthcare AI | enablement workshops | governed delivery"
+  },
+  "route": {
+    "presentation": "showcase",
+    "heroIntent": "resume-support",
+    "showcaseSections": [
+      "chapters"
+    ],
+    "workHeading": "Selected enablement work.",
+    "contactHeading": "Thanks for taking a look."
+  },
+  "constraints": {
+    "doNotClaim": [
+      "formal AI Champions program ownership",
+      "deep Microsoft 365 administration",
+      "SharePoint, Power Apps, or Power Automate development",
+      "Azure or AWS deployment administration",
+      "user provisioning ownership",
+      "PMP or Prosci certification",
+      "annual consulting sales quota attainment",
+      "formal proposal ownership",
+      "production-scale cloud infrastructure ownership"
+    ],
+    "blockedTerms": [
+      "AI Champions program leader",
+      "Microsoft 365 expert",
+      "Azure administrator",
+      "AWS administrator",
+      "Power Automate developer",
+      "PMP certified",
+      "Prosci certified",
+      "quota carrier"
+    ]
+  },
+  "privacy": {
+    "publicSafe": true,
+    "notes": "Contains only the public job description supplied by the user and public-safe evidence from the resume and portfolio. It excludes recruiter details, application answers, compensation decisions, private eligibility information, and submission state."
+  },
+  "qa": {
+    "status": "qa-passed",
+    "builtAt": "2026-09-16T14:55:20.124Z",
+    "configInputSha256": "35bfabb2637f2625cce129caa511b82cad3cdaa74a83b09bceac71b337ce2c63",
+    "sourceResumeSha256": "8273f9c5f9038a159fa1d9ecc813e2c23069e37c7ef6dd0effe5439cef217fd7",
+    "resumeFoundation": {
+      "id": "wally-mostafa-resume-2026-07-03",
+      "sourcePdfSha256": "f9b05b6c3c134262b1af6c5734363daf4385cf335407a139779a37d138adf1aa"
+    },
+    "resumeBase": {
+      "mode": "ai-product-implementation",
+      "sourceProfiles": [
+        {
+          "id": "ai-product-implementation",
+          "version": 1
+        }
+      ],
+      "leadProfileId": "ai-product-implementation",
+      "accountPresentation": "consolidated",
+      "action": "tailor-to-jd",
+      "registryVersion": 1,
+      "registrySha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108"
+    },
+    "artifactHashes": {
+      "routeSha256": "0e72db6711fdc8cbd91dbffaf2727c5a0a2648ea368bd5e3fbc8534b93232770",
+      "resumePdfSha256": "85587d975892e4998c53037de924c4350926f96db70f13d94e8eea4295fa8632",
+      "coverLetterPdfSha256": "b41587e8634bf53c9df6df122beb11eba7e6bde937859d7b0512cad4f942120b",
+      "coverLetterMarkdownSha256": "c3f572e37a83a4d834ea1fddf5cf6baced184296ed0f80a12bcd67b2b300f4c6",
+      "scopedProjectSha256": {
+        "project-01.html": "133c889055b30e002eddf3d7d9fa2b5feee95b00652db1aec6445e44569cfd40",
+        "project-04.html": "ac8094e611767e9740e6d61fdc74802d8a65c829c5e16a7ca87c718cac4ad181",
+        "project-02.html": "02d6e79f7345cea79684f6a39e31d1c3bb6617bfa6383e3747499879af232589",
+        "project-03.html": "57348772a5949bfa80b8cd224074bfb1075400bb7d25b690b5a6fef33121fd1f"
+      },
+      "scopedProjectAssetSha256": {}
+    },
+    "renderer": {
+      "browser": {
+        "name": "Google Chrome",
+        "version": "Google Chrome 152.0.7977.83"
+      },
+      "htmlPath": "tmp/tailored-resumes/creo-ai-enablement-consultant.html",
+      "pdfPath": "output/pdf/Wally-Mostafa-CREO-AI-Enablement-Consultant-Resume.pdf",
+      "fontWait": true,
+      "fontProfile": "portfolio-pdf"
+    },
+    "coverLetterRenderer": {
+      "browser": {
+        "name": "Google Chrome",
+        "version": "Google Chrome 152.0.7977.83"
+      },
+      "htmlPath": "tmp/tailored-resumes/creo-ai-enablement-consultant-cover-letter.html",
+      "pdfPath": "output/pdf/Wally-Mostafa-CREO-AI-Enablement-Consultant-Cover-Letter.pdf",
+      "fontWait": true,
+      "fontProfile": "portfolio-pdf"
+    },
+    "coverLetter": {
+      "ok": true,
+      "failures": [],
+      "pageCount": 1,
+      "sizeBytes": 24659,
+      "templateVersion": "real-chemistry-21grams-v1",
+      "fonts": {
+        "display": "Syne 800",
+        "body": "Instrument Sans 400/600",
+        "type3Fonts": false
+      },
+      "layout": {
+        "page": "Letter",
+        "margin": "0.58in 0.62in",
+        "header": "centered-rule"
+      }
+    },
+    "ats": {
+      "ok": true,
+      "pdfPath": "output/pdf/Wally-Mostafa-CREO-AI-Enablement-Consultant-Resume.pdf",
+      "pageCount": 2,
+      "fileSize": 81442,
+      "annotations": [
+        {
+          "page": 1,
+          "uri": "mailto:wmostafa12@gmail.com"
+        },
+        {
+          "page": 1,
+          "uri": "https://linkedin.com/in/wallymo"
+        },
+        {
+          "page": 1,
+          "uri": "https://wallymo.github.io/creo-ai-enablement-consultant/"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/6748"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/4629"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.red-dot.org/project/dxa-digital-experience-audit-55219"
+        }
+      ],
+      "fontCompatibility": {
+        "type3Fonts": false
+      },
+      "coverage": [
+        {
+          "id": "bachelors-degree-relevant-field",
+          "requirement": "Hold a bachelor's degree in a relevant field; a master's or equivalent postgraduate degree is preferred.",
+          "priority": "hard-gate",
+          "evidenceStatus": "direct",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "BA Labor Studies & Employee Relations",
+            "Rutgers University"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "consulting-engagement-leadership",
+          "requirement": "Bring at least five years of consulting or equivalent work, including engagement leadership and mentoring junior staff.",
+          "priority": "hard-gate",
+          "evidenceStatus": "direct",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "15 years",
+            "Scaled product design from 2 to 30",
+            "coaching"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "ai-solution-design-and-delivery",
+          "requirement": "Design and deliver AI-enabled solutions such as tools, automations, chatbots, workflow assistants, analytics tools, or productivity applications.",
+          "priority": "hard-gate",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "AI workflows",
+            "working POCs",
+            "client discovery"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "end-to-end-ai-enablement-engagements",
+          "requirement": "Own AI readiness, governance, champion, workshop, and use-case engagements from discovery through adoption and ongoing program leadership.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "client discovery",
+            "Led workshops",
+            "onboarding program",
+            "stakeholder adoption"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "program-project-and-workstream-management",
+          "requirement": "Manage concurrent workstreams, engagement teams, scope, schedules, deliverables, risks, action items, and client decisions with significant autonomy.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "20+ products",
+            "budgets up to $20M",
+            "timelines",
+            "team coordination"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "client-ready-deliverables-and-executive-communication",
+          "requirement": "Create polished decks, workshop materials, playbooks, reports, roadmaps, models, dashboards, and executive updates that make AI clear to non-technical audiences.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "presentation-ready client outputs",
+            "executives and clients",
+            "briefs"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "training-facilitation-and-change-adoption",
+          "requirement": "Design and facilitate workshops, labs, office hours, training, communications, and community programs that help non-technical users adopt AI.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "Led workshops",
+            "onboarding program",
+            "coaching",
+            "shared Figma documentation"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "regulated-ai-governance-and-risk",
+          "requirement": "Document AI requirements, risks, controls, responsible-use guidance, and governance artifacts for regulated or compliance-sensitive environments.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "FDA/HIPAA/MLR workflows",
+            "human review",
+            "evidence gaps"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "generative-ai-tool-fluency",
+          "requirement": "Use and continuously evaluate generative AI tools, platforms, and agent frameworks in daily work, then teach practical uses to clients and colleagues.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "LLM",
+            "VLM",
+            "Claude Code",
+            "Codex"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "business-development-and-sales-contribution",
+          "requirement": "Contribute to business development through proposals, readiness assessments, relationship growth, new-service opportunities, and an annual sales target.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "contextual",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "secured an investor",
+            "monetization and go-to-market planning",
+            "demo flows"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "advanced-microsoft-office-and-m365",
+          "requirement": "Bring advanced expertise in PowerPoint, Word, Excel, and Outlook plus deep working fluency across Teams, SharePoint, OneDrive, Planner, and OneNote.",
+          "priority": "core",
+          "evidenceStatus": "none",
+          "matchMode": "not-supported",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "PowerPoint",
+            "Word",
+            "Excel",
+            "Outlook",
+            "SharePoint"
+          ]
+        },
+        {
+          "id": "cloud-deployment-and-administration-support",
+          "requirement": "Support AI deployment, user management, provisioning, and automation in cloud environments such as Azure and AWS.",
+          "priority": "core",
+          "evidenceStatus": "none",
+          "matchMode": "not-supported",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "Azure",
+            "AWS",
+            "user management",
+            "provisioning"
+          ]
+        },
+        {
+          "id": "billable-utilization-expectation",
+          "requirement": "Maintain personal billable utilization at 1,700 hours per year.",
+          "priority": "context",
+          "evidenceStatus": "none",
+          "matchMode": "not-supported",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "1,700 billable hours"
+          ]
+        },
+        {
+          "id": "sharepoint-power-platform-builds",
+          "requirement": "Have hands-on experience building SharePoint sites, Power Apps, or Power Automate flows.",
+          "priority": "preferred",
+          "evidenceStatus": "none",
+          "matchMode": "not-supported",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "SharePoint",
+            "Power Apps",
+            "Power Automate"
+          ]
+        },
+        {
+          "id": "formal-project-change-or-ai-certifications",
+          "requirement": "Bring or be pursuing PMP, Prosci, Microsoft AI Fundamentals, or a comparable AI or change-management certification.",
+          "priority": "preferred",
+          "evidenceStatus": "none",
+          "matchMode": "not-supported",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "PMP",
+            "Prosci",
+            "Microsoft AI Fundamentals"
+          ]
+        },
+        {
+          "id": "life-sciences-ai-and-nlp-exposure",
+          "requirement": "Bring exposure to life sciences, biotech, healthcare, or regulated industries and knowledge of AI or machine-learning tools such as language models and NLP workflows.",
+          "priority": "preferred",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "11 years",
+            "pharma",
+            "healthcare",
+            "LLM"
+          ],
+          "missingTerms": []
+        }
+      ],
+      "failures": [],
+      "warnings": []
+    },
+    "humanizer": {
+      "status": "passed",
+      "version": "2.2.0",
+      "mode": "surface-only",
+      "reviewedAt": "2026-09-16T14:53:25.246Z",
+      "copySha256": "f565101d058c3120326c24a53181cb2db988919a1a5dd11c9669741c6f474130",
+      "reviewMethod": "humanizer-skill",
+      "semanticPassAttested": true,
+      "staticChecksPassed": true
+    },
+    "route": {
+      "viewports": [
+        {
+          "name": "desktop",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-01",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-04",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-02",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-03",
+          "errors": []
+        },
+        {
+          "name": "mobile",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-01",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-04",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-02",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-03",
+          "errors": []
+        }
+      ],
+      "errors": []
+    }
+  },
+  "copyReview": {
+    "humanizerVersion": "2.2.0",
+    "mode": "surface-only",
+    "status": "passed",
+    "reviewedAt": "2026-09-16T14:53:25.246Z",
+    "copySha256": "f565101d058c3120326c24a53181cb2db988919a1a5dd11c9669741c6f474130",
+    "preserved": [
+      "content",
+      "structure",
+      "claims",
+      "ending"
+    ],
+    "rewriteAuthorized": false,
+    "reviewMethod": "humanizer-skill",
+    "semanticPassAttested": true,
+    "staticChecksPassed": true,
+    "finalAntiAiPass": true,
+    "remainingTells": []
+  }
+}
