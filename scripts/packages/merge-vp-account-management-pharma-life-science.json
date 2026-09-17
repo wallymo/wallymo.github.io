@@ -1,0 +1,978 @@
+{
+  "workflowVersion": 2,
+  "contractRevision": 7,
+  "slug": "merge-vp-account-management-pharma-life-science",
+  "roleTitle": "MERGE VP, Account Management - Pharma / Life Science",
+  "artifactStem": "MERGE-VP-Account-Management-Pharma-Life-Science",
+  "fitClass": "adjacent",
+  "routeMode": "scoped-projects",
+  "selectedProjects": [
+    "project-01.html",
+    "project-06.html",
+    "project-04.html",
+    "project-03.html"
+  ],
+  "job": {
+    "company": "MERGE",
+    "roleTitle": "VP, Account Management - Pharma / Life Science",
+    "jobId": "8097367",
+    "jobUrl": "https://job-boards.greenhouse.io/mergeworld/jobs/8097367",
+    "sourceChannel": "User-provided MERGE job description, verified against the MERGE Greenhouse posting",
+    "dateCaptured": "2026-09-17",
+    "location": "Raleigh, NC",
+    "employmentType": "Full-time",
+    "atsVendor": "greenhouse",
+    "rawJd": "MERGE is a marketing and technology agency purpose-built for health and wellness. The VP, Account Management - Pharma / Life Science role is both a team and business leadership position and a trusted strategic-advisor role for high-impact healthcare accounts.\n\nWhat You'll Do:\n- Act as the primary advocate and trusted expert for pharma and biotech clients, partnering with executive and C-suite leaders to connect marketing initiatives to business goals.\n- Direct a $5-7M book of business, deliver on revenue forecasts, and identify incremental growth opportunities.\n- Oversee complex marketing programs, digital experiences, paid media, and multichannel strategy across HCP and DTC audiences.\n- Lead, delegate to, and mentor cross-functional agency teams while building a positive culture.\n- Establish short- and long-term account and brand roadmaps.\n\nWhat You'll Bring:\n- 8-10+ years of agency account-management experience with deep pharmaceutical marketing specialization.\n- A track record leading integrated campaigns for both HCP and patient or consumer audiences.\n- Success managing agency accounts of $5M or more and leading cross-functional teams.\n- High-trust relationships with executive-level client stakeholders.\n- A record of meeting or exceeding revenue forecasts and expanding accounts.\n- Strong team management and talent-development skills.\n\nBonus:\n- Experience in CNS drug categories, including neurology, psychiatry, or neurodegenerative conditions."
+  },
+  "classification": {
+    "targetLane": "client-account-delivery",
+    "evidenceMode": "resume-primary",
+    "primarySource": "The resume documents eight years of pharmaceutical agency account progression, Fortune 500 client relationships, consumer and multichannel campaigns, direct responsibility for $10M and $20M businesses, regulated review, strategic recommendations, CNS brands, and junior-team oversight.",
+    "supportingSource": "The portfolio adds recent proof of regulated pharma workflow design, HCP and patient experience work, analytics, executive-facing product strategy, and growth of a distributed team from 2 to 30. It strengthens the VP case without replacing the missing revenue-forecast and account-expansion record.",
+    "hardGateStatus": "pass",
+    "hardGates": [
+      {
+        "gate": "Bring 8-10+ years of agency account-management experience with deep pharmaceutical specialization",
+        "status": "pass",
+        "requirementId": "agency-account-tenure",
+        "evidence": "The resume documents eight years of direct agency account management from Account Coordinator through Account Supervisor, covering television, digital, social, print, radio, outdoor, gaming, CRM support, and in-office channels."
+      },
+      {
+        "gate": "Manage a mid-to-large agency account of $5M or more",
+        "status": "pass",
+        "requirementId": "book-of-business-scale",
+        "evidence": "The resume documents direct responsibility for a $20M DTC launch and weekly client and financial reporting across a $10M consumer business."
+      }
+    ]
+  },
+  "requirements": [
+    {
+      "id": "agency-account-tenure",
+      "text": "Bring 8-10+ years of agency account-management experience with deep specialization in pharmaceutical marketing.",
+      "priority": "hard-gate",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The resume documents eight years of direct agency account management from Account Coordinator through Account Supervisor.",
+        "The work covers television, digital, social, print, radio, outdoor, gaming, CRM support, and in-office channels."
+      ],
+      "proofIds": [
+        "account-management-01",
+        "account-management-02",
+        "addition:scout-xyrem-account-lead"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience"
+      ],
+      "resumeTerms": [
+        "eight years",
+        "Account Supervisor",
+        "television"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "integrated-hcp-dtc",
+      "text": "Lead comprehensive, integrated pharmaceutical campaigns across both HCP and patient or consumer audiences.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "The account record directly supports large DTC launches and multichannel consumer programs.",
+        "The resume also documents collaboration with the NUVIGIL HCP team and later UX leadership for HCP, patient, and brand-team experiences, but not the same depth of direct HCP account leadership as the DTC record."
+      ],
+      "proofIds": [
+        "account-management-02",
+        "addition:fcb-nuvigil-hcp-collaboration",
+        "heartbeat-02"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "direct-to-consumer",
+        "HCP",
+        "patient"
+      ],
+      "matchMode": "contextual"
+    },
+    {
+      "id": "strategic-client-partnership",
+      "text": "Serve as a trusted strategic advisor to executive and C-suite pharmaceutical client stakeholders.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The account record includes primary client-contact responsibility, annual strategic recommendations, brand planning, and presentations across major pharmaceutical accounts.",
+        "Later work includes executive and client presentations plus C-suite partnership on monetization and go-to-market planning."
+      ],
+      "proofIds": [
+        "addition:fcb-nuvigil-client-operations",
+        "addition:rosetta-prevenar-client-contact",
+        "kinesso-04"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "strategic recommendations",
+        "primary client contact",
+        "C-suite stakeholders"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "book-of-business-scale",
+      "text": "Manage a mid-to-large agency account or book of business of $5M or more.",
+      "priority": "hard-gate",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The FCB record includes direct responsibility for a $20M DTC launch and weekly client and financial reporting across a $10M consumer business.",
+        "The application form's $5M-$7M+ budget screen is supported by that documented account scale."
+      ],
+      "proofIds": [
+        "account-management-02",
+        "addition:fcb-nuvigil-client-operations"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience"
+      ],
+      "resumeTerms": [
+        "$20M brand budget",
+        "$10M consumer business"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "revenue-forecast-performance",
+      "text": "Meet or exceed revenue forecasts for a $5-7M book of business.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "The resume directly supports brand budgets up to $20M, weekly financial reporting, scopes of work, rate cards, deliverables, timelines, and resourcing.",
+        "Ownership of revenue forecasts and a record of meeting or exceeding forecast targets are not documented."
+      ],
+      "proofIds": [
+        "account-management-02",
+        "addition:fcb-nuvigil-client-operations",
+        "hedgehox-05"
+      ],
+      "destinations": [
+        "skills",
+        "experience",
+        "cover-letter"
+      ],
+      "resumeTerms": [
+        "$20M brand budget",
+        "financial reporting",
+        "budgets up to $20M"
+      ],
+      "matchMode": "contextual"
+    },
+    {
+      "id": "existing-account-growth",
+      "text": "Identify and convert incremental growth opportunities within existing pharmaceutical accounts.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "The resume supports client discovery, strategic recommendations, product decisions tied to business needs, and development of new account solutions.",
+        "Quantified organic growth, expansion revenue, upsell, and retention outcomes are not documented."
+      ],
+      "proofIds": [
+        "one-block-away-01",
+        "account-management-03",
+        "addition:scout-xyrem-account-lead"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "cover-letter"
+      ],
+      "resumeTerms": [
+        "client discovery",
+        "strategic recommendations",
+        "Client relationships"
+      ],
+      "matchMode": "contextual"
+    },
+    {
+      "id": "omnichannel-hcp-dtc",
+      "text": "Oversee complex digital experiences, paid media, and omnichannel strategy across HCP and DTC audiences.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "The account record covers television, radio, digital, gaming, print, outdoor, social, CRM support, in-office channels, and collaboration with media partners.",
+        "DTC leadership is direct. HCP work is supported through NUVIGIL collaboration and later HCP UX, but paid-media ownership and equivalent HCP account leadership are not documented."
+      ],
+      "proofIds": [
+        "account-management-01",
+        "addition:fcb-nuvigil-hcp-collaboration",
+        "heartbeat-02"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "multichannel",
+        "HCP",
+        "DTC"
+      ],
+      "matchMode": "contextual"
+    },
+    {
+      "id": "long-term-brand-vision",
+      "text": "Set short- and long-term roadmaps that connect brand strategy, client goals, and delivery priorities.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The resume documents annual strategic recommendations, brand planning, product roadmaps, strategic briefs, and priorities across account, strategy, creative, UX, development, and media partners.",
+        "Later product and AI work adds roadmap decisions and operating-system thinking for pharmaceutical agency workflows."
+      ],
+      "proofIds": [
+        "addition:fcb-nuvigil-client-operations",
+        "one-block-away-01",
+        "hedgehox-03"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience"
+      ],
+      "resumeTerms": [
+        "strategic recommendations",
+        "roadmap decisions",
+        "brand planning"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "team-management-and-mentoring",
+      "text": "Lead, delegate to, and mentor cross-functional agency teams while cultivating talent and a positive culture.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The resume documents oversight of an Assistant Account Executive on the Namenda XR business.",
+        "Later leadership includes hiring, staffing, coaching, quality review, and scaling a distributed team from 2 to 30 across the United States and Poland."
+      ],
+      "proofIds": [
+        "addition:fcb-namenda-caregiver-site",
+        "kinesso-01"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "cover-letter"
+      ],
+      "resumeTerms": [
+        "Assistant Account Executive",
+        "2 to 30"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "cns-experience",
+      "text": "Bring experience in CNS categories such as neurology, psychiatry, or neurodegenerative conditions.",
+      "priority": "preferred",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The account record includes Namenda XR in Alzheimer's disease, XYREM in narcolepsy, NUVIGIL in sleep and wakefulness, and Zoloft in psychiatry."
+      ],
+      "proofIds": [
+        "account-management-01",
+        "account-management-02",
+        "addition:scout-xyrem-account-lead",
+        "addition:cdm-lipitor-zoloft-digital"
+      ],
+      "destinations": [
+        "summary",
+        "experience"
+      ],
+      "resumeTerms": [
+        "CNS",
+        "neurology",
+        "psychiatry"
+      ],
+      "matchMode": "exact"
+    }
+  ],
+  "fitGate": {
+    "resumeBase": {
+      "mode": "account-leadership",
+      "sourceProfiles": [
+        {
+          "id": "account-leadership",
+          "version": 1
+        }
+      ],
+      "leadProfileId": "account-leadership",
+      "accountPresentation": "agency-progression",
+      "action": "tailor-to-jd",
+      "rationale": "The role is centered on pharmaceutical client relationships, a $5-7M book of business, revenue growth, HCP and DTC campaigns, executive counsel, and agency-team leadership. Account Leadership is the right base, and agency progression must stay visible because the posting screens for both tenure and seniority."
+    },
+    "supportedOverlap": [
+      "Eight years of healthcare and pharmaceutical agency account progression, from Account Coordinator through Account Supervisor and Digital Strategist.",
+      "Primary client-contact and account-lead responsibility across Pfizer, Teva, Actavis, Jazz Pharmaceuticals, and other large client work.",
+      "Direct responsibility for a $20M DTC launch and weekly client and financial reporting across a $10M consumer business.",
+      "DTC and multichannel programs across television, digital, social, print, radio, outdoor, gaming, CRM support, and in-office channels.",
+      "Direct FDA preclearance, OPDP, med-legal, review-committee, and MLR workflow experience.",
+      "CNS-category experience across Alzheimer's disease, narcolepsy, sleep and wakefulness, and psychiatry brands.",
+      "Junior account oversight plus later executive-facing work and growth of a distributed team from 2 to 30."
+    ],
+    "unsupportedRequirements": [
+      "Ownership of revenue forecasts and a record of meeting or exceeding forecast targets are not documented.",
+      "Quantified organic account growth, expansion revenue, retention, or upsell outcomes are not documented.",
+      "DTC leadership is much stronger than the record of direct HCP account leadership; paid-media ownership is also not documented."
+    ],
+    "actualMismatches": [
+      "The most recent full-time titles center on AI implementation, product strategy, and UX rather than account management.",
+      "The highest documented account title is Account Supervisor / Digital Strategist rather than Account Director or Vice President."
+    ],
+    "missingEvidence": [
+      "Revenue-forecast ownership and a documented record of hitting or exceeding those targets.",
+      "Quantified expansion, retention, upsell, or incremental account-growth outcomes.",
+      "Recent day-to-day ownership of a pharmaceutical agency account team at the VP level.",
+      "A comprehensive record of leading integrated HCP and DTC account strategy with equal depth across both audiences."
+    ],
+    "coverLetterBridge": {
+      "status": "recommended",
+      "rationale": "We can make the case with a cover letter by connecting eight years of pharmaceutical agency account leadership and $10M-$20M consumer-business responsibility to the team growth, executive-facing strategy, HCP experience, analytics, and regulated workflow work that followed. The letter must address the move back into account leadership without implying revenue-forecast ownership, quantified account expansion, equal HCP and DTC leadership depth, or a current VP title."
+    },
+    "recommendation": "Proceed as an adjacent fit with a narrowly tailored Account Leadership package. Let the pharmaceutical agency progression, CNS work, DTC campaigns, $10M-$20M account scale, client relationships, regulated delivery, and team leadership carry the resume. Use the cover letter to connect the later HCP, executive, analytics, and team-building work to a VP remit. Keep revenue forecasts, quantified account expansion, HCP leadership depth, and recent VP-level account ownership visible as gaps."
+  },
+  "positioning": {
+    "laneId": "client-account-delivery",
+    "targetIdentity": "pharmaceutical account leader",
+    "employerNeed": "Lead a $5-7M pharmaceutical book of business across executive client counsel, HCP and DTC programs, revenue growth, long-term brand strategy, and agency-team development.",
+    "bridgeType": "level-transfer",
+    "applicationStrategy": "transferable",
+    "bridgeThesis": "broader team, HCP, analytics, and product experience back to account leadership",
+    "proofIds": [
+      "account-management-02",
+      "account-management-03",
+      "kinesso-01"
+    ],
+    "remainingGap": "Revenue-forecast ownership, quantified account expansion, equal depth leading HCP and DTC account strategy, and recent VP-level pharmaceutical account ownership are not documented."
+  },
+  "coverLetter": {
+    "trigger": "bridge-recommended",
+    "date": "2026-09-17",
+    "greeting": "Dear MERGE hiring team,",
+    "paragraphs": [
+      "I am applying for the VP, Account Management - Pharma / Life Science role at MERGE. I spent eight years managing pharmaceutical agency accounts, with responsibility for client relationships, large consumer businesses, multichannel campaigns, regulated review, strategic recommendations, and team delivery. Since then, I have led enterprise UX teams, advised executives, and built workflow tools for pharmaceutical agencies. That combination gives me a broader operating view than I had earlier in my account career.",
+      "At FCB Health, I was one of two consumer account leads on the agency's largest pharmaceutical business and managed the $20M Namenda XR direct-to-consumer launch. I led the broadcast workstream for three national commercials in one year, from market research and med-legal review through FDA preclearance, production, and network clearance. The spots drove a 45% increase in new-to-brand consumers within seven weeks. Earlier, on the $10M NUVIGIL consumer business, I owned weekly client status and financial reporting, OPDP submissions, multichannel delivery, and annual strategic recommendations. I also worked alongside the HCP team on the NUVIGIL site and sales aid.",
+      "CNS work has been a consistent part of my pharmaceutical background. It includes Namenda XR in Alzheimer's disease, XYREM in narcolepsy, NUVIGIL in sleep and wakefulness, and Zoloft in psychiatry. At Scout Marketing, I was promoted to Account Supervisor / Digital Strategist and led XYREM consumer work across digital, print, social, and in-office channels. The work included Jazz's first unbranded social campaign and a digital program that doubled qualified traffic to the brand site.",
+      "The work that followed added the leadership range I would bring back to account management. At Heartbeat Ideas, I turned research into patient, HCP, and brand-team experiences. At Kinesso, I grew a distributed design team from 2 to 30, led analytics work used by more than 7,000 people across 22 brands, and partnered with C-suite stakeholders on monetization and go-to-market planning. Today, I build pharmaceutical agency tools for claim review, brief intake, scoping, review routing, and MLR preparation.",
+      "My record is strongest in DTC account leadership, large-budget stewardship, and cross-functional delivery. Setting commercial forecasts and carrying measured expansion targets would be a step up in scope, not something I would claim from my earlier roles. I am interested in MERGE because the role connects that responsibility with the pharmaceutical, CNS, team-leadership, and technology experience I already bring. I would welcome the chance to discuss the fit."
+    ],
+    "closing": "Sincerely,",
+    "signature": "Wally Mostafa",
+    "proofIds": [
+      "account-management-02",
+      "account-management-03",
+      "kinesso-01"
+    ]
+  },
+  "resume": {
+    "foundationId": "wally-mostafa-resume-2026-07-03",
+    "compositionMode": "profile-complete",
+    "layoutDensity": "compact",
+    "summary": "Pharmaceutical account leader with eight years in agencies, progressing from Account Coordinator to Account Supervisor. I led Fortune 500 client relationships, CNS brands, DTC and multichannel programs, a $20M launch, and weekly reporting across a $10M consumer business. Since then, I have grown a team from 2 to 30, partnered with C-suite stakeholders, and built pharma workflow tools, bringing broader team, HCP, analytics, and product experience back to account leadership.",
+    "skillIds": [
+      "account-management-client-leadership",
+      "healthcare-marketing-strategy",
+      "regulated-healthcare-client-delivery",
+      "program-project-delivery"
+    ],
+    "skills": [
+      {
+        "label": "Account Management & Client Leadership",
+        "description": "Client relationships, budgets up to $20M, briefs, scopes, timelines, status and financial reporting, vendor coordination, and cross-functional delivery"
+      },
+      {
+        "label": "Healthcare Marketing & Brand Strategy",
+        "description": "Brand planning, campaign and digital strategy, MLR review, patient and HCP experiences, and regulated multi-channel delivery"
+      },
+      {
+        "label": "Regulated Healthcare & Client Delivery",
+        "description": "11 years across pharma/healthcare communications, FDA/HIPAA/MLR workflows, HCP/patient UX, client workshops, and stakeholder adoption"
+      },
+      {
+        "label": "Program & Project Delivery",
+        "description": "Scoping, requirements, timelines, review routing, team coordination, risk visibility, and build-ready handoff across product, design, and client teams"
+      }
+    ],
+    "experienceSections": [
+      {
+        "heading": "Account Management Experience",
+        "roleIds": [
+          "account-management"
+        ]
+      },
+      {
+        "heading": "Most Recent Experience",
+        "roleIds": [
+          "hedgehox",
+          "one-block-away",
+          "kinesso",
+          "omnicom",
+          "heartbeat"
+        ]
+      }
+    ],
+    "awards": [
+      {
+        "label": "Manny Award 2013",
+        "detail": "Best Unbranded Campaign, \"Get Your Shift Together\""
+      },
+      {
+        "label": "Pharma Choice Awards 2011",
+        "detail": "Silver Consumer Print, Silver HCP Sales Aid, Bronze HCP Mobile Site"
+      },
+      {
+        "label": "Indigo Awards 2023",
+        "detail": "Design System & Data Visualization: 3x Gold, 2x Silver",
+        "href": "https://www.indigoaward.com/winners/6748"
+      }
+    ],
+    "roles": {
+      "hedgehox": [
+        "Secured an investor for proprietary Claims Detection software by building the functional POC, shaping the demo story, and iterating with investors",
+        "Designed Claims Detector workflows that identify promotional claims, surface evidence gaps, and pre-populate audit-ready annotations before MLR submission",
+        "Translate pharma agency needs into working tools for MLR claim review, brief intake, scoping, review routing, submission capture, and FDA signal monitoring",
+        "Built Scope Generator for pharma agency finance and operations teams to manage regional rate cards, brands, sub-brands, and natural-language scope changes"
+      ],
+      "one-block-away": [
+        "Lead client discovery and turn unclear business questions into testable product concepts, working POCs, demo flows, and roadmap decisions",
+        "Built ListingPal's AI listing-generation POC and landing page, turning basic property inputs into listing copy, social posts, ad copy, styling direction, and MLS/SEO-ready language in under 90 seconds",
+        "Built WeReady's Bailey Intelligence dashboard, translating founder inputs, GitHub signals, source health, risk scoring, and evidence trails into startup-readiness workflows",
+        "Own product strategy, UX, AI workflow design, front-end build, backend logic, demo readiness, and client iteration from first ask through working prototype",
+        "Currently building the website and sponsor strategy for a Tunisia youth soccer program, positioning the project for player advancement, community support, and donor outreach"
+      ],
+      "kinesso": [
+        "Scaled product design from 2 to 30 people across the US and Poland for enterprise analytics used by 7,000+ users across 22 white-label brands",
+        "Led UX and design-system strategy for MIE data visualization, dashboard building, brand theming, and reusable analytics components",
+        "Partnered with product and engineering on roadmap priorities and with C-suite stakeholders on monetization and go-to-market planning for Kanvas, Kinesso's developer-first API services library",
+        "Built the Digital Experience Audit workflow for channel scoring, benchmarks, recommendations, visualization, and presentation-ready client outputs"
+      ],
+      "omnicom": [
+        "Supported oncology accounts as a freelance UX designer, combining UX design and account-management experience to strengthen regulated healthcare work"
+      ],
+      "heartbeat": [
+        "Led UX research and experience strategy for pharma and healthcare work, translating stakeholder input, competitive audits, and user needs into digital product direction",
+        "Created journey maps, site maps, user flows, wireframes, and prototypes for patient, HCP, and internal brand-team experiences across regulated healthcare programs",
+        "Partnered with strategy, creative, account, and engineering teams to move UX recommendations from research findings into build-ready product and campaign experiences"
+      ],
+      "account-management": [
+        {
+          "title": "Account Supervisor / Digital Strategist",
+          "employer": "Scout Marketing",
+          "location": "San Diego, CA",
+          "dateRange": "Jun 2015 – Jul 2018",
+          "bullets": [
+            "Promoted from Senior Account Executive and took the lead on Jazz Pharmaceuticals XYREM consumer work: unbranded campaigns across digital, print, and in-office channels that lifted traffic and engagement on the disease-state site",
+            "Led the launch of the first unbranded social campaign on Facebook and YouTube for the brand and for Jazz, built around real patients telling their own stories",
+            "Oversaw an unbranded digital campaign bridging disease state and branded work; banners held a 0.37% click-through rate against a 0.17% industry benchmark and doubled qualified traffic to the brand site"
+          ]
+        },
+        {
+          "title": "Senior Account Executive",
+          "employer": "FCB Health",
+          "location": "New York, NY",
+          "dateRange": "Jun 2014 – Jun 2015",
+          "bullets": [
+            "One of two consumer account leads on the agency's largest pharma business, managing the Actavis Namenda XR direct-to-consumer launch and its $20M brand budget",
+            "Owned the broadcast workstream for three national television commercials in one year, covering market research, med-legal review, FDA preclearance, pre- and post-production, talent and location coordination, director searches, and network clearances; the spots drove a 45% increase in new-to-brand consumers within seven weeks",
+            "Led the launch of an unbranded Alzheimer's caregiver community site with support resources, sponsorship exploration, and public relations pull-through; also oversaw the account's Assistant Account Executive across in-office tactics, national print, and sales representative support materials"
+          ]
+        },
+        {
+          "title": "Senior Account Executive",
+          "employer": "Barker DZP",
+          "location": "New York, NY",
+          "dateRange": "Dec 2013 – May 2014",
+          "bullets": [
+            "Led the social campaign for a new Tough Mudder loyalty program and oversaw PDI and Nice-Pak, the agency's largest account, across print, digital, and social"
+          ]
+        },
+        {
+          "title": "Senior Account Executive",
+          "employer": "Cline Davis & Mann",
+          "location": "New York, NY",
+          "dateRange": "Sep 2013 – Dec 2013",
+          "bullets": [
+            "Used campaign metrics to shape Pfizer digital recommendations for Lipitor's online presence and loyalty program during loss of exclusivity, and piloted a Zoloft savings offer to test market response"
+          ]
+        },
+        {
+          "title": "Assistant Account Executive to Account Executive",
+          "employer": "FCB Health",
+          "location": "New York, NY",
+          "dateRange": "Apr 2011 – Sep 2013",
+          "bullets": [
+            "Managed development and execution of the unbranded Teva NUVIGIL campaign for National Night Shift Workers' Day across Times Square NASDAQ, national television, Xbox Live, radio, outdoor, and consumer journals, working through media, digital, and print vendors; the campaign won the 2013 Manny Award for Best Unbranded Campaign",
+            "Coordinated the NUVIGIL.com consumer rebrand across desktop and mobile with the agency's digital strategy and development teams, plus the launch of a CRM patient support program and its online patient community",
+            "Worked alongside the HCP team on the NUVIGIL.com HCP site and sales aid, both of which won 2011 Pharma Choice awards",
+            "Owned weekly client status and financial reporting plus OPDP and review-committee submissions across the $10M consumer business, and contributed to the annual strategic recommendations"
+          ]
+        },
+        {
+          "title": "Account Coordinator",
+          "employer": "RosettaWishbone",
+          "location": "New York, NY",
+          "dateRange": "Sep 2010 – Mar 2011",
+          "bullets": [
+            "Primary client contact across brand teams, national affiliates, and vendors on an award-winning global unbranded pneumococcal disease awareness campaign for the Pfizer Prevenar 13 adult pre-launch",
+            "Facilitated an Africa and Middle East advisory board in Dubai and owned project briefs, scopes of work, key opinion leader communications, and client status and financial reports"
+          ]
+        }
+      ]
+    },
+    "sourceBulletIds": {
+      "hedgehox": [
+        "hedgehox-01",
+        "hedgehox-02",
+        "hedgehox-03",
+        "hedgehox-05"
+      ],
+      "one-block-away": [
+        "one-block-away-01",
+        "one-block-away-02",
+        "one-block-away-03",
+        "one-block-away-04",
+        "one-block-away-05"
+      ],
+      "kinesso": [
+        "kinesso-01",
+        "kinesso-02",
+        "kinesso-04",
+        "kinesso-03"
+      ],
+      "omnicom": [
+        "omnicom-01"
+      ],
+      "heartbeat": [
+        "heartbeat-01",
+        "heartbeat-02",
+        "heartbeat-03"
+      ],
+      "account-management": [
+        "addition:scout-xyrem-account-lead",
+        "addition:scout-xyrem-unbranded-social",
+        "addition:scout-xyrem-bridging-campaign",
+        "account-management-02",
+        "account-management-03",
+        "addition:fcb-namenda-caregiver-site",
+        "addition:barker-tough-mudder-pdi",
+        "addition:cdm-lipitor-zoloft-digital",
+        "account-management-01",
+        "addition:fcb-nuvigil-rebrand-crm",
+        "addition:fcb-nuvigil-hcp-collaboration",
+        "addition:fcb-nuvigil-client-operations",
+        "addition:rosetta-prevenar-client-contact",
+        "addition:rosetta-dubai-advisory"
+      ]
+    }
+  },
+  "hero": {
+    "eyebrow": "MERGE | VP, Account Management | Selected Work",
+    "tags": [
+      "Regulated pharma workflows",
+      "Patient, HCP, and CNS work",
+      "Cross-functional team leadership"
+    ],
+    "intro": "Here are a few recent projects that may be useful alongside my resume for the VP, Account Management role. The resume covers my pharmaceutical agency and CNS background; this page gives a closer look at the healthcare, HCP, analytics, team-leadership, and AI work that followed."
+  },
+  "contact": {
+    "prompt": "Email is the best way to reach me.",
+    "signoff": "Pharma account leadership | CNS | patient and HCP work"
+  },
+  "route": {
+    "presentation": "showcase",
+    "heroIntent": "resume-support",
+    "workHeading": "Selected work.",
+    "contactHeading": "Thanks for stopping by.",
+    "showcaseSections": [
+      "chapters"
+    ]
+  },
+  "copyReview": {
+    "humanizerVersion": "2.2.0",
+    "mode": "surface-only",
+    "status": "passed",
+    "reviewedAt": "2026-09-17T18:24:44.576Z",
+    "copySha256": "6d178c7bc18c39783f9c55a37f27fb7b80bf1867feea9ee47784a9dc39d44da1",
+    "preserved": [
+      "content",
+      "structure",
+      "claims",
+      "ending"
+    ],
+    "rewriteAuthorized": false,
+    "reviewMethod": "humanizer-skill",
+    "semanticPassAttested": true,
+    "staticChecksPassed": true,
+    "finalAntiAiPass": true,
+    "remainingTells": []
+  },
+  "constraints": {
+    "doNotClaim": [
+      "Current Vice President or Account Director title or current day-to-day pharmaceutical account ownership",
+      "Revenue-forecast ownership or a record of meeting or exceeding forecast targets",
+      "Quantified account growth, upsell, expansion, renewal, retention, or agency new-business revenue",
+      "Formal healthcare-agency new-business pipeline ownership or pitch wins",
+      "Paid-media ownership or equal depth leading HCP and DTC account strategy",
+      "Recent VP-level pharmaceutical account-team management",
+      "Salesforce, enterprise CRM administration, quota ownership, or contract negotiation"
+    ],
+    "blockedTerms": [
+      "currently a Vice President",
+      "currently an Account Director",
+      "current pharma account lead",
+      "revenue forecast owner",
+      "exceeded revenue forecasts",
+      "account expansion revenue",
+      "renewal ownership",
+      "agency new-business wins",
+      "paid media owner",
+      "led integrated HCP and DTC strategy",
+      "Salesforce",
+      "sales quota",
+      "contract negotiation"
+    ]
+  },
+  "privacy": {
+    "publicSafe": true,
+    "notes": "Contains only the public MERGE VP posting and public-safe evidence from the resume and portfolio. It excludes recruiter contact information, application answers, compensation decisions, private eligibility information, and submission state."
+  },
+  "qa": {
+    "status": "qa-passed",
+    "builtAt": "2026-09-17T18:25:17.639Z",
+    "configInputSha256": "11f2c5714ed66429fe6ed112cbfafed78939364dcd799d49e38bfe33e128ab60",
+    "sourceResumeSha256": "8273f9c5f9038a159fa1d9ecc813e2c23069e37c7ef6dd0effe5439cef217fd7",
+    "resumeFoundation": {
+      "id": "wally-mostafa-resume-2026-07-03",
+      "sourcePdfSha256": "f9b05b6c3c134262b1af6c5734363daf4385cf335407a139779a37d138adf1aa"
+    },
+    "resumeBase": {
+      "mode": "account-leadership",
+      "sourceProfiles": [
+        {
+          "id": "account-leadership",
+          "version": 1
+        }
+      ],
+      "leadProfileId": "account-leadership",
+      "accountPresentation": "agency-progression",
+      "action": "tailor-to-jd",
+      "registryVersion": 1,
+      "registrySha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108"
+    },
+    "artifactHashes": {
+      "routeSha256": "7837c37451fe101c28ea3ad4a4d0568773d221b8d85b1899e639b9f9d8818c38",
+      "resumePdfSha256": "c7e943c282c7f20e27368f1b0bf5951fbe8ae5d7615aaa31c208a6982142fa69",
+      "coverLetterPdfSha256": "a8fd85724262ce74b672904c9149191d1ac323d232b97c507b034398aa658674",
+      "coverLetterMarkdownSha256": "871ac3db23d47ac0e8b1b5f08d92b16260624d08f7105bbd1d0b287e500851e8",
+      "scopedProjectSha256": {
+        "project-01.html": "1a7866bd184970c6e9c7ce2add9a88bd03efd56ea1ee721702c69f290ad92871",
+        "project-06.html": "9a88ab909b7a796fe10770e9dd44d2d0185a3e408b2df63fddc4dfb92dbba3d8",
+        "project-04.html": "dd180ccf3522ea5ab0202edd7bf6aad972b214e55c02c079b6f4377a13b80cc0",
+        "project-03.html": "58d053d901a97d8559330a4ed284d51d720e3a831d29c239a44b6c62afc06194"
+      },
+      "scopedProjectAssetSha256": {}
+    },
+    "renderer": {
+      "browser": {
+        "name": "chrome-headless-shell",
+        "version": "Google Chrome for Testing 151.0.7922.34"
+      },
+      "htmlPath": "tmp/tailored-resumes/merge-vp-account-management-pharma-life-science.html",
+      "pdfPath": "output/pdf/Wally-Mostafa-MERGE-VP-Account-Management-Pharma-Life-Science-Resume.pdf",
+      "fontWait": true,
+      "fontProfile": "portfolio-pdf"
+    },
+    "coverLetterRenderer": {
+      "browser": {
+        "name": "chrome-headless-shell",
+        "version": "Google Chrome for Testing 151.0.7922.34"
+      },
+      "htmlPath": "tmp/tailored-resumes/merge-vp-account-management-pharma-life-science-cover-letter.html",
+      "pdfPath": "output/pdf/Wally-Mostafa-MERGE-VP-Account-Management-Pharma-Life-Science-Cover-Letter.pdf",
+      "fontWait": true,
+      "fontProfile": "portfolio-pdf"
+    },
+    "coverLetter": {
+      "ok": true,
+      "failures": [],
+      "pageCount": 1,
+      "sizeBytes": 26394,
+      "templateVersion": "real-chemistry-21grams-v1",
+      "fonts": {
+        "display": "Syne 800",
+        "body": "Instrument Sans 400/600",
+        "type3Fonts": false
+      },
+      "layout": {
+        "page": "Letter",
+        "margin": "0.58in 0.62in",
+        "header": "centered-rule"
+      }
+    },
+    "ats": {
+      "ok": true,
+      "pdfPath": "output/pdf/Wally-Mostafa-MERGE-VP-Account-Management-Pharma-Life-Science-Resume.pdf",
+      "pageCount": 2,
+      "fileSize": 82266,
+      "annotations": [
+        {
+          "page": 1,
+          "uri": "mailto:wmostafa12@gmail.com"
+        },
+        {
+          "page": 1,
+          "uri": "https://linkedin.com/in/wallymo"
+        },
+        {
+          "page": 1,
+          "uri": "https://wallymo.github.io/merge-vp-account-management-pharma-life-science/"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/6748"
+        }
+      ],
+      "fontCompatibility": {
+        "type3Fonts": false
+      },
+      "coverage": [
+        {
+          "id": "agency-account-tenure",
+          "requirement": "Bring 8-10+ years of agency account-management experience with deep specialization in pharmaceutical marketing.",
+          "priority": "hard-gate",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "eight years",
+            "Account Supervisor",
+            "television"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "integrated-hcp-dtc",
+          "requirement": "Lead comprehensive, integrated pharmaceutical campaigns across both HCP and patient or consumer audiences.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "contextual",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "direct-to-consumer",
+            "HCP",
+            "patient"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "strategic-client-partnership",
+          "requirement": "Serve as a trusted strategic advisor to executive and C-suite pharmaceutical client stakeholders.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "strategic recommendations",
+            "primary client contact",
+            "C-suite stakeholders"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "book-of-business-scale",
+          "requirement": "Manage a mid-to-large agency account or book of business of $5M or more.",
+          "priority": "hard-gate",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "$20M brand budget",
+            "$10M consumer business"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "revenue-forecast-performance",
+          "requirement": "Meet or exceed revenue forecasts for a $5-7M book of business.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "contextual",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "$20M brand budget",
+            "financial reporting",
+            "budgets up to $20M"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "existing-account-growth",
+          "requirement": "Identify and convert incremental growth opportunities within existing pharmaceutical accounts.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "contextual",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "client discovery",
+            "strategic recommendations",
+            "Client relationships"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "omnichannel-hcp-dtc",
+          "requirement": "Oversee complex digital experiences, paid media, and omnichannel strategy across HCP and DTC audiences.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "contextual",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "multichannel",
+            "HCP",
+            "DTC"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "long-term-brand-vision",
+          "requirement": "Set short- and long-term roadmaps that connect brand strategy, client goals, and delivery priorities.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "strategic recommendations",
+            "roadmap decisions",
+            "brand planning"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "team-management-and-mentoring",
+          "requirement": "Lead, delegate to, and mentor cross-functional agency teams while cultivating talent and a positive culture.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "Assistant Account Executive",
+            "2 to 30"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "cns-experience",
+          "requirement": "Bring experience in CNS categories such as neurology, psychiatry, or neurodegenerative conditions.",
+          "priority": "preferred",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "CNS"
+          ],
+          "missingTerms": [
+            "neurology",
+            "psychiatry"
+          ]
+        }
+      ],
+      "failures": [],
+      "warnings": []
+    },
+    "humanizer": {
+      "status": "passed",
+      "version": "2.2.0",
+      "mode": "surface-only",
+      "reviewedAt": "2026-09-17T18:24:44.576Z",
+      "copySha256": "6d178c7bc18c39783f9c55a37f27fb7b80bf1867feea9ee47784a9dc39d44da1",
+      "reviewMethod": "humanizer-skill",
+      "semanticPassAttested": true,
+      "staticChecksPassed": true
+    },
+    "route": {
+      "viewports": [
+        {
+          "name": "desktop",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-01",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-06",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-04",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-03",
+          "errors": []
+        },
+        {
+          "name": "mobile",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-01",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-06",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-04",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-03",
+          "errors": []
+        }
+      ],
+      "errors": []
+    }
+  }
+}

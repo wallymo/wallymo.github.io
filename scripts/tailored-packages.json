@@ -2898,6 +2898,43 @@
       }
     },
     {
+      "workflowVersion": 2,
+      "contractRevision": 7,
+      "slug": "merge-vp-account-management-pharma-life-science",
+      "roleTitle": "MERGE VP, Account Management - Pharma / Life Science",
+      "artifactStem": "MERGE-VP-Account-Management-Pharma-Life-Science",
+      "configPath": "scripts/packages/merge-vp-account-management-pharma-life-science.json",
+      "targetLane": "client-account-delivery",
+      "evidenceMode": "resume-primary",
+      "fitClass": "adjacent",
+      "positioningLane": "client-account-delivery",
+      "bridgeType": "level-transfer",
+      "applicationStrategy": "transferable",
+      "resumeBaseMode": "account-leadership",
+      "resumeBaseLeadProfile": "account-leadership",
+      "resumeBaseAction": "tailor-to-jd",
+      "accountPresentation": "agency-progression",
+      "resumeBaseProfiles": [
+        {
+          "id": "account-leadership",
+          "version": 1
+        }
+      ],
+      "routeMode": "scoped-projects",
+      "selectedProjects": [
+        "project-01.html",
+        "project-06.html",
+        "project-04.html",
+        "project-03.html"
+      ],
+      "resumePdfPath": "output/pdf/Wally-Mostafa-MERGE-VP-Account-Management-Pharma-Life-Science-Resume.pdf",
+      "coverLetterPdfPath": "output/pdf/Wally-Mostafa-MERGE-VP-Account-Management-Pharma-Life-Science-Cover-Letter.pdf",
+      "coverLetterMarkdownPath": "output/pdf/Wally-Mostafa-MERGE-VP-Account-Management-Pharma-Life-Science-Cover-Letter.md",
+      "publishStatus": "local-only",
+      "qaStatus": "qa-passed",
+      "builtAt": "2026-09-17T18:25:17.639Z"
+    },
+    {
       "slug": "mi-case-ai-integration-engineer",
       "roleTitle": "Mi-Case AI Integration Engineer / Specialist",
       "fitClass": "unclassified",
