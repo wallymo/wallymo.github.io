@@ -5101,9 +5101,37 @@
         "project-03.html"
       ],
       "resumePdfPath": "output/pdf/Wally-Mostafa-Targetbase-Account-Supervisor-Resume.pdf",
-      "publishStatus": "local-only",
+      "publishStatus": "live-verified",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-09-17T18:57:04.082Z"
+      "builtAt": "2026-09-17T18:57:04.082Z",
+      "verification": {
+        "verifiedAt": "2026-09-17T19:38:55.318Z",
+        "routeUrl": "https://wallymo.github.io/targetbase-account-supervisor/",
+        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-Targetbase-Account-Supervisor-Resume.pdf",
+        "configUrl": "https://wallymo.github.io/scripts/packages/targetbase-account-supervisor.json",
+        "projectUrls": [
+          "https://wallymo.github.io/targetbase-account-supervisor/project-01.html",
+          "https://wallymo.github.io/targetbase-account-supervisor/project-06.html",
+          "https://wallymo.github.io/targetbase-account-supervisor/project-04.html",
+          "https://wallymo.github.io/targetbase-account-supervisor/project-03.html"
+        ],
+        "redirectUrls": [],
+        "configSha256": "7443cba80ca31121746cf5b97cd78a4c92c3c975153cab6cca80884d861a3a43",
+        "pdfSha256": "6e47b81b9e51421352afc2d5256b2e0a02d7f45c3febae3cef809d415b1d3fdf",
+        "resumeBaseProfilesUrl": "https://wallymo.github.io/scripts/resume-base-profiles.json",
+        "resumeBaseProfilesSha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108",
+        "routeSha256": "81fc9a5029cd1ebbe85defd7b01567d9221bc449f5b58605c62e9339709b0094",
+        "scopedProjectSha256": {
+          "project-01.html": "b866fc24545da33b98990e5f40c4d09f0c3b8aca1e6afdad4f657102f12e2d5d",
+          "project-06.html": "ae850c646390b3afe4663d59fdde3f3cdc6a8a56c40529bbaa24b1349ebbbcbb",
+          "project-04.html": "b20e9a79b364f9c183ff3f53cc8a4254eee3a9a9d25a3323c571812afde947b8",
+          "project-03.html": "cbe1e7b843d143130b88168245d63c9c272e3f091c5ee9003d73e13ddc9a3c40"
+        },
+        "scopedProjectAssetUrls": [],
+        "scopedProjectAssetSha256": {},
+        "configInputSha256": "86724fdf8d1e7465d97fdbfc1dfc4f70c9eec4304770ef3669becb6992cecaf3",
+        "qaBuiltAt": "2026-09-17T18:57:04.082Z"
+      }
     },
     {
       "slug": "targetbase-senior-director-strategy",
