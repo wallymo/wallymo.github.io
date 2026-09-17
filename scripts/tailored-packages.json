@@ -2689,9 +2689,37 @@
         "project-03.html"
       ],
       "resumePdfPath": "output/pdf/Wally-Mostafa-MMA-Senior-Client-Manager-Rx-Solutions-Resume.pdf",
-      "publishStatus": "local-only",
+      "publishStatus": "live-verified",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-09-17T18:38:51.745Z"
+      "builtAt": "2026-09-17T18:38:51.745Z",
+      "verification": {
+        "verifiedAt": "2026-09-17T18:41:04.413Z",
+        "routeUrl": "https://wallymo.github.io/marsh-mclennan-agency-senior-client-manager-rx-solutions/",
+        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-MMA-Senior-Client-Manager-Rx-Solutions-Resume.pdf",
+        "configUrl": "https://wallymo.github.io/scripts/packages/marsh-mclennan-agency-senior-client-manager-rx-solutions.json",
+        "projectUrls": [
+          "https://wallymo.github.io/marsh-mclennan-agency-senior-client-manager-rx-solutions/project-01.html",
+          "https://wallymo.github.io/marsh-mclennan-agency-senior-client-manager-rx-solutions/project-06.html",
+          "https://wallymo.github.io/marsh-mclennan-agency-senior-client-manager-rx-solutions/project-04.html",
+          "https://wallymo.github.io/marsh-mclennan-agency-senior-client-manager-rx-solutions/project-03.html"
+        ],
+        "redirectUrls": [],
+        "configSha256": "1e6709096bdb01a3f7c1bf069c1e4786bb0648bb84da121a04b6b24e6d9cccb6",
+        "pdfSha256": "d0be914e6978a634c8ecdfb3bc09d37d6724c8104f48d52bba48663c2359cabc",
+        "resumeBaseProfilesUrl": "https://wallymo.github.io/scripts/resume-base-profiles.json",
+        "resumeBaseProfilesSha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108",
+        "routeSha256": "dc70328b529722ae432f4f011da9f6a1783aa2b8f72286aca11cc7108647146b",
+        "scopedProjectSha256": {
+          "project-01.html": "b5693b94d00c4295b52248a2c0ce4dd469f7ae701eca14606300815942e2b5c2",
+          "project-06.html": "c87f249aa0e23626fbe82189955975fa277447bd3220a6d58fcf09464bb27cea",
+          "project-04.html": "6c989d520b9202c8097368173b730588288cecfd88dba5748bf720eba1d519a7",
+          "project-03.html": "557280b6ad96f40ab3fe412772d726a453ea8ef99aaef6e53c65a6429a68f824"
+        },
+        "scopedProjectAssetUrls": [],
+        "scopedProjectAssetSha256": {},
+        "configInputSha256": "cd19b11cdbad2fa04de878028021d02dad82a7f4d76b8d215f38008fb534378e",
+        "qaBuiltAt": "2026-09-17T18:38:51.745Z"
+      }
     },
     {
       "slug": "maximus-principal-ai-strategy",
