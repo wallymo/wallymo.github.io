@@ -570,11 +570,43 @@
         "project-03.html"
       ],
       "resumePdfPath": "output/pdf/Wally-Mostafa-Bnberry-Product-Manager-Resume.pdf",
-      "publishStatus": "local-only",
+      "publishStatus": "live-verified",
       "qaStatus": "qa-passed",
       "builtAt": "2026-09-17T14:46:44.199Z",
       "coverLetterPdfPath": "output/pdf/Wally-Mostafa-Bnberry-Product-Manager-Cover-Letter.pdf",
-      "coverLetterMarkdownPath": "output/pdf/Wally-Mostafa-Bnberry-Product-Manager-Cover-Letter.md"
+      "coverLetterMarkdownPath": "output/pdf/Wally-Mostafa-Bnberry-Product-Manager-Cover-Letter.md",
+      "verification": {
+        "verifiedAt": "2026-09-17T14:48:41.718Z",
+        "routeUrl": "https://wallymo.github.io/bnberry-product-manager/",
+        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-Bnberry-Product-Manager-Resume.pdf",
+        "configUrl": "https://wallymo.github.io/scripts/packages/bnberry-product-manager.json",
+        "projectUrls": [
+          "https://wallymo.github.io/bnberry-product-manager/project-04.html",
+          "https://wallymo.github.io/bnberry-product-manager/project-06.html",
+          "https://wallymo.github.io/bnberry-product-manager/project-02.html",
+          "https://wallymo.github.io/bnberry-product-manager/project-03.html"
+        ],
+        "redirectUrls": [],
+        "configSha256": "dabfe05c912cb0f64b51323d726215144f3b4752abc31328e5bf21124c9b5a39",
+        "pdfSha256": "fd5d83724949c3edecdd10e38d3921ca7398f71a3a01e6f273da1cffedc4d20d",
+        "resumeBaseProfilesUrl": "https://wallymo.github.io/scripts/resume-base-profiles.json",
+        "resumeBaseProfilesSha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108",
+        "coverLetterPdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-Bnberry-Product-Manager-Cover-Letter.pdf",
+        "coverLetterMarkdownUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-Bnberry-Product-Manager-Cover-Letter.md",
+        "coverLetterPdfSha256": "e98d45e2f68134d1a205573065276af2e6ef3f01e0d5c8ad054ed1ddb5fec876",
+        "coverLetterMarkdownSha256": "ec0c56105aed14543ba18ae00dcecb48818c37fdb7a76af5935f1933c282f8b3",
+        "routeSha256": "0aacf51087e9e1d43383035f1623949d57d2b5893b4cff7b28ed6c9529a8aaa5",
+        "scopedProjectSha256": {
+          "project-04.html": "d836f5d3628ed48e0f87e68f2702f67801aa5858781815c648bdeb5f7bd8a6f9",
+          "project-06.html": "e14ab873799b0675c77c8bbea810ab6576b2c0f8d925e0beed943f27a8b4e45f",
+          "project-02.html": "3c887eacf581df95c90893f459019fa70fb92f67c940a986f2e406df554549e4",
+          "project-03.html": "91a5fdbd72514e260e00de44ff8078090e9de8b09c3b39ded565ead579a5a186"
+        },
+        "scopedProjectAssetUrls": [],
+        "scopedProjectAssetSha256": {},
+        "configInputSha256": "33966e6de68b937c9de5178f73521b3157c19cdb6532d86a49abb60006e18452",
+        "qaBuiltAt": "2026-09-17T14:46:44.199Z"
+      }
     },
     {
       "slug": "boulevard-medspa-new-frontiers",
