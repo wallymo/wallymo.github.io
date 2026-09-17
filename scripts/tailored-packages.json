@@ -4437,6 +4437,41 @@
       }
     },
     {
+      "workflowVersion": 2,
+      "contractRevision": 7,
+      "slug": "strategic-client-advisor",
+      "roleTitle": "Strategic Client Advisor",
+      "artifactStem": "Strategic-Client-Advisor",
+      "configPath": "scripts/packages/strategic-client-advisor.json",
+      "targetLane": "client-account-delivery",
+      "evidenceMode": "resume-primary",
+      "fitClass": "stretch",
+      "positioningLane": "client-account-delivery",
+      "bridgeType": "operating-center",
+      "applicationStrategy": "approved-stretch",
+      "resumeBaseMode": "account-leadership",
+      "resumeBaseLeadProfile": "account-leadership",
+      "resumeBaseAction": "tailor-to-jd",
+      "accountPresentation": "agency-progression",
+      "resumeBaseProfiles": [
+        {
+          "id": "account-leadership",
+          "version": 1
+        }
+      ],
+      "routeMode": "scoped-projects",
+      "selectedProjects": [
+        "project-02.html",
+        "project-06.html",
+        "project-04.html",
+        "project-03.html"
+      ],
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Strategic-Client-Advisor-Resume.pdf",
+      "publishStatus": "local-only",
+      "qaStatus": "qa-passed",
+      "builtAt": "2026-09-17T14:35:53.860Z"
+    },
+    {
       "slug": "street-digital",
       "roleTitle": "Street Digital - Implementations Manager",
       "fitClass": "unclassified",

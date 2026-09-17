@@ -1,0 +1,967 @@
+{
+  "workflowVersion": 2,
+  "contractRevision": 7,
+  "slug": "strategic-client-advisor",
+  "roleTitle": "Strategic Client Advisor",
+  "artifactStem": "Strategic-Client-Advisor",
+  "fitClass": "stretch",
+  "routeMode": "scoped-projects",
+  "selectedProjects": [
+    "project-02.html",
+    "project-06.html",
+    "project-04.html",
+    "project-03.html"
+  ],
+  "job": {
+    "company": "Confidential Employer",
+    "roleTitle": "Strategic Client Advisor",
+    "jobId": "not-provided",
+    "jobUrl": "not-provided",
+    "sourceChannel": "user-provided job description",
+    "dateCaptured": "2026-09-17",
+    "location": "not-provided",
+    "employmentType": "not-provided",
+    "atsVendor": "unknown",
+    "rawJd": "We are seeking a senior-level Strategic Client Advisor to drive client engagement, business development, and revenue growth within the legal and professional services sectors. This consultative, client-facing role will cultivate relationships with key stakeholders, shape service solutions, and identify opportunities to expand existing accounts while developing new business. The ideal candidate combines strong relationship management skills with a strategic approach to client growth and market development.\n\nKey responsibilities include generating new business through networking, referrals, industry events, and targeted outreach; developing relationships with law firms, corporate legal departments, and other professional services organizations; leading discovery and consultative discussions; partnering with consultants, subject matter experts, operations, and leadership on engagement strategies and proposals; advancing opportunities through the full business development lifecycle; expanding existing accounts through cross-selling; presenting proposals and recommendations to executives; representing the organization at industry events; maintaining pipeline and opportunity data in CRM systems; and supporting the transition from business development to service delivery.\n\nThe role also conducts needs assessments, designs customized service approaches, facilitates stakeholder planning, supports engagement implementation, builds strategic account plans, contributes to pricing and competitive positioning, uses market intelligence to find growth opportunities, mentors team members, and helps refine service offerings and go-to-market strategy.\n\nThe preferred background is 10 or more years in professional services, including legal services, accounting, consulting, engineering, financial advisory, or another client-driven advisory business. Candidates should have relationships with C-suite executives, managing partners, general counsel, or other senior decision-makers; a record of originating and closing complex opportunities; experience leading client engagements and strategic projects; consultative solution-development skill; business acumen; proposal and pricing experience; executive communication; and the ability to manage several pursuits and engagements at once. Experience in business development, consulting, client advisory, account management, engagement leadership, or practice development within a professional-services environment is preferred. The opportunity is intended for someone who has worked in a revenue-generating, client-facing capacity with ownership of relationships, projects, and business outcomes."
+  },
+  "classification": {
+    "targetLane": "client-account-delivery",
+    "evidenceMode": "resume-primary",
+    "primarySource": "The resume documents eight years of agency account-management progression, Fortune 500 client relationships, budgets up to $20M, primary client contact, scopes, financial reporting, strategic recommendations, and multidisciplinary delivery. It does not document new-business origination, quota, closed-won revenue, sales-pipeline ownership, or account-expansion revenue.",
+    "supportingSource": "The portfolio adds client discovery, tailored product concepts, executive recommendations, market and user research, and presentation-ready client outputs. It supports consultative advisory work but cannot replace the missing revenue-development record.",
+    "hardGateStatus": "pass",
+    "hardGates": [
+      {
+        "gate": "Bring senior client-facing experience in a professional-services or client-driven advisory environment",
+        "status": "pass",
+        "requirementId": "professional-services-tenure",
+        "evidence": "The resume documents 15 years across agency services, enterprise products, UX consulting, and client-led AI work, including eight years of direct account-management progression."
+      }
+    ]
+  },
+  "requirements": [
+    {
+      "id": "professional-services-tenure",
+      "text": "Bring 10 or more years of senior client-facing experience in professional services or another client-driven advisory business.",
+      "priority": "hard-gate",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The resume documents 15 years across agency services, enterprise products, UX consulting, and client-led AI delivery.",
+        "Eight years were in direct agency account management, progressing from Account Coordinator to Account Supervisor."
+      ],
+      "proofIds": [
+        "account-management-01",
+        "one-block-away-01"
+      ],
+      "destinations": [
+        "summary",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "15 years",
+        "eight years",
+        "account management"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "senior-client-relationships",
+      "text": "Develop and maintain relationships with executives and senior decision-makers.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The account record includes primary client contact, Fortune 500 relationships, brand planning, budgets up to $20M, and strategic recommendations.",
+        "Kinesso work included workshops and recommendations presented to executives and clients."
+      ],
+      "proofIds": [
+        "account-management-01",
+        "kinesso-07"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "Fortune 500 relationships",
+        "executives and clients",
+        "strategic recommendations"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "consultative-discovery-and-solutions",
+      "text": "Lead discovery, assess client needs, and develop tailored service approaches and recommendations.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Current client work turns unclear business questions into requirements, working POCs, demo flows, and roadmap decisions.",
+        "Earlier account and UX work translated client strategy, research, and performance data into briefs, scopes, product direction, and recommendations."
+      ],
+      "proofIds": [
+        "one-block-away-01",
+        "account-management-03",
+        "heartbeat-01"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "client discovery",
+        "scopes",
+        "recommendations"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "new-business-generation",
+      "text": "Generate new business through networking, referrals, events, and targeted outreach.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "proofIds": [],
+      "destinations": [
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "new business generation",
+        "targeted outreach"
+      ],
+      "matchMode": "not-supported"
+    },
+    {
+      "id": "originate-pursue-close-opportunities",
+      "text": "Originate, pursue, and close complex business opportunities across an extended sales cycle.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "proofIds": [],
+      "destinations": [
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "closed-won revenue",
+        "sales cycle ownership"
+      ],
+      "matchMode": "not-supported"
+    },
+    {
+      "id": "account-expansion-and-revenue-growth",
+      "text": "Expand existing accounts through cross-selling and additional service opportunities, with accountability for revenue growth.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "proofIds": [],
+      "destinations": [
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "cross-selling",
+        "expansion revenue"
+      ],
+      "matchMode": "not-supported"
+    },
+    {
+      "id": "engagement-strategy-and-delivery",
+      "text": "Lead client engagements from opportunity assessment through planning, implementation, and service delivery.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The resume documents briefs, scopes, budgets, timelines, vendor coordination, financial reporting, and integrated delivery.",
+        "Current client-led work runs from discovery and product framing through working POCs, demos, iteration, and roadmap decisions."
+      ],
+      "proofIds": [
+        "account-management-03",
+        "one-block-away-04"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "scopes",
+        "timelines",
+        "client iteration"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "executive-presentations-and-recommendations",
+      "text": "Present proposals, strategic recommendations, and service approaches to executive stakeholders.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The account record includes annual strategic recommendations and client-facing brand planning.",
+        "Kinesso work included workshops and recommendations for executives and clients, supported by presentation-ready audit outputs."
+      ],
+      "proofIds": [
+        "addition:fcb-nuvigil-client-operations",
+        "kinesso-07",
+        "kinesso-03"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "strategic recommendations",
+        "presentation-ready client outputs",
+        "executives and clients"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "proposals-pricing-and-competitive-positioning",
+      "text": "Support proposal development, pricing strategy, competitive positioning, and customized service design.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "The account record includes scopes of work, budgets, financial reporting, strategic recommendations, and competitive and performance analysis.",
+        "Scope Generator supports regional rate cards and natural-language scope changes, but the record does not prove proposal or pricing ownership."
+      ],
+      "proofIds": [
+        "hedgehox-05",
+        "addition:rosetta-dubai-advisory",
+        "heartbeat-01"
+      ],
+      "destinations": [
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "rate cards",
+        "scopes of work",
+        "competitive audits"
+      ],
+      "matchMode": "contextual"
+    },
+    {
+      "id": "crm-pipeline-management",
+      "text": "Maintain accurate client, opportunity, and sales-pipeline information in a CRM system.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "proofIds": [],
+      "destinations": [
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "sales CRM",
+        "pipeline management"
+      ],
+      "matchMode": "not-supported"
+    },
+    {
+      "id": "cross-functional-leadership",
+      "text": "Partner with consultants, subject matter experts, operations, and leadership while mentoring team members.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The resume documents delivery across client, strategy, creative, UX, production, development, research, analytics, and engineering teams.",
+        "Kinesso leadership scaled a distributed design team from 2 to 30 and included hiring, staffing, critiques, quality reviews, and delivery planning."
+      ],
+      "proofIds": [
+        "account-management-03",
+        "kinesso-01"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "cross-functional delivery",
+        "2 to 30",
+        "quality reviews"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "legal-and-professional-services-network",
+      "text": "Bring relationships or business-development experience across law firms, corporate legal departments, or closely related professional-services sectors.",
+      "priority": "preferred",
+      "source": "jd",
+      "confidence": "contextual",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Agency account leadership and current client-led product work are in client-driven professional-services environments.",
+        "The public evidence does not show law-firm, general-counsel, litigation-support, accounting, engineering, or financial-advisory relationships."
+      ],
+      "proofIds": [
+        "account-management-01",
+        "one-block-away-01"
+      ],
+      "destinations": [
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "agency services",
+        "client-led"
+      ],
+      "matchMode": "contextual"
+    }
+  ],
+  "fitGate": {
+    "resumeBase": {
+      "mode": "account-leadership",
+      "sourceProfiles": [
+        {
+          "id": "account-leadership",
+          "version": 1
+        }
+      ],
+      "leadProfileId": "account-leadership",
+      "accountPresentation": "agency-progression",
+      "action": "tailor-to-jd",
+      "rationale": "The role is centered on client relationships, discovery, account planning, budgets, executive communication, and service delivery, with business development as the central unsupported requirement. Account Leadership is the only credible base, and agency progression is necessary because the posting screens for tenure and seniority."
+    },
+    "supportedOverlap": [
+      "Eight years of direct agency account-management progression from Account Coordinator through Account Supervisor.",
+      "Fortune 500 client relationships, budgets up to $20M, primary client contact, scopes, financial reporting, strategic recommendations, and multidisciplinary delivery.",
+      "Current client work runs from discovery and needs translation through working POCs, demos, client iteration, and roadmap decisions.",
+      "Enterprise leadership includes executive and client workshops, presentation-ready recommendations, a distributed team grown from 2 to 30, and work across more than 20 products."
+    ],
+    "unsupportedRequirements": [
+      "New-business generation through networking, referrals, events, and targeted outreach is not documented.",
+      "Opportunity origination, full sales-cycle ownership, and closed-won revenue are not documented.",
+      "Cross-selling, expansion-revenue ownership, quota attainment, and revenue-growth results are not documented.",
+      "Sales-pipeline and CRM ownership, proposal ownership, and pricing authority are not documented.",
+      "Legal-services relationships and experience with law firms, managing partners, general counsel, or litigation-support organizations are not documented."
+    ],
+    "actualMismatches": [
+      "The role's center is revenue-generating business development, while the strongest direct evidence centers on client relationships, account delivery, strategy, and product work.",
+      "The documented industry base is healthcare, advertising, enterprise products, UX, and practical AI rather than legal and professional-services business development."
+    ],
+    "missingEvidence": [
+      "New business sourced, qualified, proposed, and closed, with deal values or revenue results.",
+      "Strategic account expansion, cross-selling, quota, pipeline, or CRM metrics.",
+      "Proposal, pricing, negotiation, and competitive-positioning ownership.",
+      "A legal-services or professional-services network tied to business-development outcomes."
+    ],
+    "coverLetterBridge": {
+      "status": "not-credible",
+      "rationale": "A cover letter cannot establish the missing new-business origination, sales-cycle, revenue-growth, CRM-pipeline, pricing, or legal-sector evidence. The package therefore presents only the supported client-leadership and consultative-delivery record."
+    },
+    "recommendation": "Proceed only as the user-approved stretch. Lead with senior client relationships, discovery, scopes, budgets, executive recommendations, multidisciplinary delivery, and practical solution development. Keep new-business origination, closed-won revenue, quota, cross-selling, pipeline, CRM, pricing ownership, and legal-sector relationships out of the claim set."
+  },
+  "positioning": {
+    "laneId": "client-account-delivery",
+    "targetIdentity": "Senior client and account leader",
+    "employerNeed": "Understand complex client needs, shape useful service approaches, guide executive conversations, and carry engagements into delivery.",
+    "bridgeType": "operating-center",
+    "applicationStrategy": "approved-stretch",
+    "bridgeThesis": "turn client needs into clear plans and practical solutions",
+    "proofIds": [
+      "account-management-01",
+      "one-block-away-01",
+      "kinesso-07"
+    ],
+    "remainingGap": "The current evidence does not establish new-business origination, full sales-cycle ownership, closed-won revenue, cross-selling, CRM pipeline ownership, pricing authority, or legal-sector relationships."
+  },
+  "route": {
+    "presentation": "showcase",
+    "heroIntent": "resume-support",
+    "showcaseSections": [
+      "chapters"
+    ],
+    "workHeading": "Selected client and strategy work.",
+    "contactHeading": "Thanks for taking a look."
+  },
+  "hero": {
+    "eyebrow": "Strategic Client Advisor | Selected Work",
+    "tags": [
+      "Client discovery",
+      "Strategic recommendations",
+      "Cross-functional delivery"
+    ],
+    "intro": "Here is a look at recent work that may be useful alongside my resume for the Strategic Client Advisor role. The resume covers my account-management background; these projects show how I approach discovery, client decisions, and multidisciplinary delivery."
+  },
+  "contact": {
+    "prompt": "Thank you for taking a look. Email is the easiest way to reach me about the Strategic Client Advisor role.",
+    "signoff": "Client leadership | consultative discovery | practical delivery"
+  },
+  "constraints": {
+    "doNotClaim": [
+      "New-business generation, business-development quota, or revenue-growth ownership",
+      "Opportunity origination, full sales-cycle ownership, or closed-won results",
+      "Cross-selling, upselling, expansion revenue, renewals, or retention ownership",
+      "Sales-pipeline forecasting, Salesforce, or enterprise CRM administration",
+      "Proposal ownership, pricing authority, contract negotiation, or procurement ownership",
+      "Law-firm, corporate-legal-department, managing-partner, general-counsel, litigation-support, accounting, engineering, or financial-advisory relationships",
+      "Current day-to-day ownership of a book of business or a Strategic Client Advisor title"
+    ],
+    "blockedTerms": [
+      "business development leader",
+      "revenue growth owner",
+      "quota attainment",
+      "closed-won",
+      "full sales cycle",
+      "cross-selling",
+      "expansion revenue",
+      "pipeline owner",
+      "Salesforce",
+      "pricing strategy owner",
+      "contract negotiation",
+      "legal services network",
+      "general counsel relationships",
+      "current book of business"
+    ]
+  },
+  "privacy": {
+    "publicSafe": true,
+    "notes": "Contains only the public job description supplied by the user and public-safe evidence from the resume and portfolio. It excludes recruiter details, application answers, compensation boundaries, private eligibility information, and submission state."
+  },
+  "resume": {
+    "foundationId": "wally-mostafa-resume-2026-07-03",
+    "compositionMode": "profile-complete",
+    "layoutDensity": "compact",
+    "summary": "Senior client and account leader with 15 years across agency services, enterprise products, UX, and client-led AI delivery. I turn client needs into clear plans and practical solutions, backed by eight years of direct account-management progression from Account Coordinator to Account Supervisor. I managed Fortune 500 relationships and budgets up to $20M, owned briefs, scopes, client reporting, and strategic recommendations, and coordinated multidisciplinary delivery. Since then, I have grown a team from 2 to 30 and led client work from discovery through a working product decision.",
+    "skillIds": [
+      "account-management-client-leadership",
+      "consultative-sales-solution-delivery",
+      "program-project-delivery",
+      "research-experience-strategy"
+    ],
+    "skills": [
+      {
+        "label": "Account Management & Client Leadership",
+        "description": "Client relationships, budgets up to $20M, briefs, scopes, timelines, status and financial reporting, vendor coordination, and cross-functional delivery"
+      },
+      {
+        "label": "Consultative Sales & Solution Delivery",
+        "description": "Discovery-led solution design, POCs, demo narratives, client translation, and product recommendations tied to business needs"
+      },
+      {
+        "label": "Program & Project Delivery",
+        "description": "Scoping, requirements, timelines, review routing, team coordination, risk visibility, and build-ready handoff across product, design, and client teams"
+      },
+      {
+        "label": "Research & Experience Strategy",
+        "description": "Stakeholder interviews, competitive audits, journey maps, user flows, wireframes, prototypes, usability testing, and research-led product direction"
+      }
+    ],
+    "experienceSections": [
+      {
+        "heading": "Account Management Experience",
+        "roleIds": [
+          "account-management"
+        ]
+      },
+      {
+        "heading": "Most Recent Experience",
+        "roleIds": [
+          "hedgehox",
+          "one-block-away",
+          "kinesso",
+          "omnicom",
+          "heartbeat"
+        ]
+      }
+    ],
+    "awards": [
+      {
+        "label": "Manny Award 2013",
+        "detail": "Best Unbranded Campaign, \"Get Your Shift Together\""
+      },
+      {
+        "label": "Pharma Choice Awards 2011",
+        "detail": "Silver Consumer Print, Silver HCP Sales Aid, Bronze HCP Mobile Site"
+      },
+      {
+        "label": "Indigo Awards 2023",
+        "detail": "Design System & Data Visualization: 3x Gold, 2x Silver",
+        "href": "https://www.indigoaward.com/winners/6748"
+      }
+    ],
+    "roles": {
+      "hedgehox": [
+        "Secured an investor for proprietary Claims Detection software by building the functional POC, shaping the demo story, and iterating with investors",
+        "Designed Claims Detector workflows that identify promotional claims, surface evidence gaps, and pre-populate audit-ready annotations before MLR submission",
+        "Translate pharma agency needs into working tools for MLR claim review, brief intake, scoping, review routing, submission capture, and FDA signal monitoring",
+        "Built Scope Generator for pharma agency finance and operations teams to manage regional rate cards, brands, sub-brands, and natural-language scope changes"
+      ],
+      "one-block-away": [
+        "Lead client discovery and turn unclear business questions into testable product concepts, working POCs, demo flows, and roadmap decisions",
+        "Own product strategy, UX, AI workflow design, front-end build, backend logic, demo readiness, and client iteration from first ask through working prototype",
+        "Built ListingPal's AI listing-generation POC and landing page, turning basic property inputs into listing copy, social posts, ad copy, styling direction, and MLS/SEO-ready language in under 90 seconds",
+        "Built WeReady's Bailey Intelligence dashboard, translating founder inputs, GitHub signals, source health, risk scoring, and evidence trails into startup-readiness workflows",
+        "Currently building the website and sponsor strategy for a Tunisia youth soccer program, positioning the project for player advancement, community support, and donor outreach"
+      ],
+      "kinesso": [
+        "Led UX research and strategy for a marketing intelligence suite used by 7,000+ people across 22 white-label brands; turned findings and adoption data into roadmap priorities for navigation, dashboards, brand theming, personalization, and product support",
+        "Built the Digital Experience Audit workflow for channel scoring, benchmarks, recommendations, visualization, and presentation-ready client outputs",
+        "Scaled product design from 2 to 30 people across the US and Poland, hiring and staffing designers, leading critiques and quality reviews, and planning scope, resources, and engineering handoff across 20+ products",
+        "Led workshops on product discovery, ecosystem mapping, innovation, and user research; expanded the program from Kinesso teams to IPG groups and presented recommendations to executives and clients"
+      ],
+      "omnicom": [
+        "Supported oncology accounts as a freelance UX designer, combining UX design and account-management experience to strengthen regulated healthcare work"
+      ],
+      "heartbeat": [
+        "Led UX research and experience strategy for pharma and healthcare work, translating stakeholder input, competitive audits, and user needs into digital product direction",
+        "Created journey maps, site maps, user flows, wireframes, and prototypes for patient, HCP, and internal brand-team experiences across regulated healthcare programs",
+        "Partnered with strategy, creative, account, and engineering teams to move UX recommendations from research findings into build-ready product and campaign experiences"
+      ],
+      "account-management": [
+        {
+          "title": "Account Supervisor / Digital Strategist",
+          "employer": "Scout Marketing",
+          "location": "San Diego, CA",
+          "dateRange": "Jun 2015 – Jul 2018",
+          "bullets": [
+            "Promoted from Senior Account Executive and took the lead on Jazz Pharmaceuticals XYREM consumer work: unbranded campaigns across digital, print, and in-office channels that lifted traffic and engagement on the disease-state site",
+            "Led the launch of the first unbranded social campaign on Facebook and YouTube for the brand and for Jazz, built around real patients telling their own stories",
+            "Oversaw an unbranded digital campaign bridging disease state and branded work; banners held a 0.37% click-through rate against a 0.17% industry benchmark and doubled qualified traffic to the brand site"
+          ]
+        },
+        {
+          "title": "Senior Account Executive",
+          "employer": "FCB Health",
+          "location": "New York, NY",
+          "dateRange": "Jun 2014 – Jun 2015",
+          "bullets": [
+            "One of two consumer account leads on the agency's largest pharma business, managing the Actavis Namenda XR direct-to-consumer launch and its $20M brand budget",
+            "Owned the broadcast workstream for three national television commercials in one year, covering market research, med-legal review, FDA preclearance, pre- and post-production, talent and location coordination, director searches, and network clearances; the spots drove a 45% increase in new-to-brand consumers within seven weeks",
+            "Led the launch of an unbranded Alzheimer's caregiver community site with support resources, sponsorship exploration, and public relations pull-through; also oversaw the account's Assistant Account Executive across in-office tactics, national print, and sales representative support materials"
+          ]
+        },
+        {
+          "title": "Senior Account Executive",
+          "employer": "Barker DZP",
+          "location": "New York, NY",
+          "dateRange": "Dec 2013 – May 2014",
+          "bullets": [
+            "Led the social campaign for a new Tough Mudder loyalty program and oversaw PDI and Nice-Pak, the agency's largest account, across print, digital, and social"
+          ]
+        },
+        {
+          "title": "Senior Account Executive",
+          "employer": "Cline Davis & Mann",
+          "location": "New York, NY",
+          "dateRange": "Sep 2013 – Dec 2013",
+          "bullets": [
+            "Used campaign metrics to shape Pfizer digital recommendations for Lipitor's online presence and loyalty program during loss of exclusivity, and piloted a Zoloft savings offer to test market response"
+          ]
+        },
+        {
+          "title": "Assistant Account Executive to Account Executive",
+          "employer": "FCB Health",
+          "location": "New York, NY",
+          "dateRange": "Apr 2011 – Sep 2013",
+          "bullets": [
+            "Managed development and execution of the unbranded Teva NUVIGIL campaign for National Night Shift Workers' Day across Times Square NASDAQ, national television, Xbox Live, radio, outdoor, and consumer journals, working through media, digital, and print vendors; the campaign won the 2013 Manny Award for Best Unbranded Campaign",
+            "Coordinated the NUVIGIL.com consumer rebrand across desktop and mobile with the agency's digital strategy and development teams, plus the launch of a CRM patient support program and its online patient community",
+            "Worked alongside the HCP team on the NUVIGIL.com HCP site and sales aid, both of which won 2011 Pharma Choice awards",
+            "Owned weekly client status and financial reporting plus OPDP and review-committee submissions across the $10M consumer business, and contributed to the annual strategic recommendations"
+          ]
+        },
+        {
+          "title": "Account Coordinator",
+          "employer": "RosettaWishbone",
+          "location": "New York, NY",
+          "dateRange": "Sep 2010 – Mar 2011",
+          "bullets": [
+            "Primary client contact across brand teams, national affiliates, and vendors on an award-winning global unbranded pneumococcal disease awareness campaign for the Pfizer Prevenar 13 adult pre-launch",
+            "Facilitated an Africa and Middle East advisory board in Dubai and owned project briefs, scopes of work, key opinion leader communications, and client status and financial reports"
+          ]
+        }
+      ]
+    },
+    "sourceBulletIds": {
+      "hedgehox": [
+        "hedgehox-01",
+        "hedgehox-02",
+        "hedgehox-03",
+        "hedgehox-05"
+      ],
+      "one-block-away": [
+        "one-block-away-01",
+        "one-block-away-04",
+        "one-block-away-02",
+        "one-block-away-03",
+        "one-block-away-05"
+      ],
+      "kinesso": [
+        "kinesso-02",
+        "kinesso-03",
+        "kinesso-01",
+        "kinesso-07"
+      ],
+      "omnicom": [
+        "omnicom-01"
+      ],
+      "heartbeat": [
+        "heartbeat-01",
+        "heartbeat-02",
+        "heartbeat-03"
+      ],
+      "account-management": [
+        "addition:scout-xyrem-account-lead",
+        "addition:scout-xyrem-unbranded-social",
+        "addition:scout-xyrem-bridging-campaign",
+        "account-management-02",
+        "account-management-03",
+        "addition:fcb-namenda-caregiver-site",
+        "addition:barker-tough-mudder-pdi",
+        "addition:cdm-lipitor-zoloft-digital",
+        "account-management-01",
+        "addition:fcb-nuvigil-rebrand-crm",
+        "addition:fcb-nuvigil-hcp-collaboration",
+        "addition:fcb-nuvigil-client-operations",
+        "addition:rosetta-prevenar-client-contact",
+        "addition:rosetta-dubai-advisory"
+      ]
+    }
+  },
+  "copyReview": {
+    "humanizerVersion": "2.2.0",
+    "mode": "surface-only",
+    "status": "passed",
+    "reviewedAt": "2026-09-17T14:35:20.836Z",
+    "copySha256": "951fd4f5b978c56faf43aab4a15f52b2df3b7a5a4420c11996019ae44e73087c",
+    "preserved": [
+      "content",
+      "structure",
+      "claims",
+      "ending"
+    ],
+    "rewriteAuthorized": false,
+    "reviewMethod": "humanizer-skill",
+    "semanticPassAttested": true,
+    "staticChecksPassed": true,
+    "finalAntiAiPass": true,
+    "remainingTells": []
+  },
+  "coverLetter": null,
+  "qa": {
+    "status": "qa-passed",
+    "builtAt": "2026-09-17T14:35:53.860Z",
+    "configInputSha256": "c85738bb18381fc89078c9a857b439e8811803c72052f7df592f86d3f8616603",
+    "sourceResumeSha256": "8273f9c5f9038a159fa1d9ecc813e2c23069e37c7ef6dd0effe5439cef217fd7",
+    "resumeFoundation": {
+      "id": "wally-mostafa-resume-2026-07-03",
+      "sourcePdfSha256": "f9b05b6c3c134262b1af6c5734363daf4385cf335407a139779a37d138adf1aa"
+    },
+    "resumeBase": {
+      "mode": "account-leadership",
+      "sourceProfiles": [
+        {
+          "id": "account-leadership",
+          "version": 1
+        }
+      ],
+      "leadProfileId": "account-leadership",
+      "accountPresentation": "agency-progression",
+      "action": "tailor-to-jd",
+      "registryVersion": 1,
+      "registrySha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108"
+    },
+    "artifactHashes": {
+      "routeSha256": "e8ba25dd4b1f75f2c1dcf644fe752205dddfe9347a7e4811660348bec1e60d27",
+      "resumePdfSha256": "d563e2636625a3a0192b12f81508e9b21fd6340198f5917bdab9e76abf3fd851",
+      "coverLetterPdfSha256": null,
+      "coverLetterMarkdownSha256": null,
+      "scopedProjectSha256": {
+        "project-02.html": "4878a24b4f547f3a4a1ce78a594011de5124290285cb2db58a292a678ff252bc",
+        "project-06.html": "b96a38f27d04af84b4c912b8c60ffbc7e21a23cc8e64bbaebf94ffab079ffe58",
+        "project-04.html": "d7110830aaadeb2f381bf94bd3e13428cbc875168eb26bc3766eb01d82c5d7a3",
+        "project-03.html": "708c09a5eca582681be8c992cfba162985bbb992c87dc92530c06c69e5d34b69"
+      },
+      "scopedProjectAssetSha256": {}
+    },
+    "renderer": {
+      "browser": {
+        "name": "chrome-headless-shell",
+        "version": "Google Chrome for Testing 151.0.7922.34"
+      },
+      "htmlPath": "tmp/tailored-resumes/strategic-client-advisor.html",
+      "pdfPath": "output/pdf/Wally-Mostafa-Strategic-Client-Advisor-Resume.pdf",
+      "fontWait": true,
+      "fontProfile": "portfolio-pdf"
+    },
+    "coverLetterRenderer": null,
+    "coverLetter": null,
+    "ats": {
+      "ok": true,
+      "pdfPath": "output/pdf/Wally-Mostafa-Strategic-Client-Advisor-Resume.pdf",
+      "pageCount": 2,
+      "fileSize": 82672,
+      "annotations": [
+        {
+          "page": 1,
+          "uri": "mailto:wmostafa12@gmail.com"
+        },
+        {
+          "page": 1,
+          "uri": "https://linkedin.com/in/wallymo"
+        },
+        {
+          "page": 1,
+          "uri": "https://wallymo.github.io/strategic-client-advisor/"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/6748"
+        }
+      ],
+      "fontCompatibility": {
+        "type3Fonts": false
+      },
+      "coverage": [
+        {
+          "id": "professional-services-tenure",
+          "requirement": "Bring 10 or more years of senior client-facing experience in professional services or another client-driven advisory business.",
+          "priority": "hard-gate",
+          "evidenceStatus": "direct",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "15 years",
+            "eight years",
+            "account management"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "senior-client-relationships",
+          "requirement": "Develop and maintain relationships with executives and senior decision-makers.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "Fortune 500 relationships",
+            "executives and clients",
+            "strategic recommendations"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "consultative-discovery-and-solutions",
+          "requirement": "Lead discovery, assess client needs, and develop tailored service approaches and recommendations.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "client discovery",
+            "scopes",
+            "recommendations"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "new-business-generation",
+          "requirement": "Generate new business through networking, referrals, events, and targeted outreach.",
+          "priority": "core",
+          "evidenceStatus": "none",
+          "matchMode": "not-supported",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "new business generation",
+            "targeted outreach"
+          ]
+        },
+        {
+          "id": "originate-pursue-close-opportunities",
+          "requirement": "Originate, pursue, and close complex business opportunities across an extended sales cycle.",
+          "priority": "core",
+          "evidenceStatus": "none",
+          "matchMode": "not-supported",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "closed-won revenue",
+            "sales cycle ownership"
+          ]
+        },
+        {
+          "id": "account-expansion-and-revenue-growth",
+          "requirement": "Expand existing accounts through cross-selling and additional service opportunities, with accountability for revenue growth.",
+          "priority": "core",
+          "evidenceStatus": "none",
+          "matchMode": "not-supported",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "cross-selling",
+            "expansion revenue"
+          ]
+        },
+        {
+          "id": "engagement-strategy-and-delivery",
+          "requirement": "Lead client engagements from opportunity assessment through planning, implementation, and service delivery.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "scopes",
+            "timelines",
+            "client iteration"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "executive-presentations-and-recommendations",
+          "requirement": "Present proposals, strategic recommendations, and service approaches to executive stakeholders.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "strategic recommendations",
+            "presentation-ready client outputs",
+            "executives and clients"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "proposals-pricing-and-competitive-positioning",
+          "requirement": "Support proposal development, pricing strategy, competitive positioning, and customized service design.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "contextual",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "rate cards",
+            "scopes of work",
+            "competitive audits"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "crm-pipeline-management",
+          "requirement": "Maintain accurate client, opportunity, and sales-pipeline information in a CRM system.",
+          "priority": "core",
+          "evidenceStatus": "none",
+          "matchMode": "not-supported",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "sales CRM",
+            "pipeline management"
+          ]
+        },
+        {
+          "id": "cross-functional-leadership",
+          "requirement": "Partner with consultants, subject matter experts, operations, and leadership while mentoring team members.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "cross-functional delivery",
+            "2 to 30",
+            "quality reviews"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "legal-and-professional-services-network",
+          "requirement": "Bring relationships or business-development experience across law firms, corporate legal departments, or closely related professional-services sectors.",
+          "priority": "preferred",
+          "evidenceStatus": "adjacent",
+          "matchMode": "contextual",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "agency services",
+            "client-led"
+          ],
+          "missingTerms": []
+        }
+      ],
+      "failures": [],
+      "warnings": []
+    },
+    "humanizer": {
+      "status": "passed",
+      "version": "2.2.0",
+      "mode": "surface-only",
+      "reviewedAt": "2026-09-17T14:35:20.836Z",
+      "copySha256": "951fd4f5b978c56faf43aab4a15f52b2df3b7a5a4420c11996019ae44e73087c",
+      "reviewMethod": "humanizer-skill",
+      "semanticPassAttested": true,
+      "staticChecksPassed": true
+    },
+    "route": {
+      "viewports": [
+        {
+          "name": "desktop",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-02",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-06",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-04",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-03",
+          "errors": []
+        },
+        {
+          "name": "mobile",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-02",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-06",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-04",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-03",
+          "errors": []
+        }
+      ],
+      "errors": []
+    }
+  }
+}
