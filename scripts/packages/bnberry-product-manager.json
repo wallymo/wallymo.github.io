@@ -1,0 +1,914 @@
+{
+  "workflowVersion": 2,
+  "contractRevision": 7,
+  "slug": "bnberry-product-manager",
+  "roleTitle": "Bnberry Product Manager",
+  "artifactStem": "Bnberry-Product-Manager",
+  "fitClass": "stretch",
+  "routeMode": "scoped-projects",
+  "selectedProjects": [
+    "project-04.html",
+    "project-06.html",
+    "project-02.html",
+    "project-03.html"
+  ],
+  "job": {
+    "company": "Bnberry",
+    "roleTitle": "Product Manager",
+    "jobId": "not-provided",
+    "jobUrl": "not-provided",
+    "sourceChannel": "user-provided job description",
+    "dateCaptured": "2026-09-17",
+    "location": "not-provided",
+    "employmentType": "not-provided",
+    "atsVendor": "unknown",
+    "rawJd": "Bnberry is transforming the $87 billion travel tech industry by changing how hotels and resorts connect with guests worldwide. The role owns DBS end to end across the traveler booking experience, hotel workflows and business value, and hotel discovery through search and AI tools. Responsibilities include defining product vision and roadmap; owning calendars, date selection, room and rate selection, checkout, confirmation, availability, rates, cancellation policies, and PMS/CRS or booking-engine dependencies; translating hotel onboarding, reporting, and adoption needs into product decisions; partnering with Marketing and specialists on SEO and GEO capabilities; interviewing hoteliers and travelers; running usability tests; defining success metrics before building; using experiment results to guide iteration; working with Design and Engineering through detailed user journeys; aligning Engineering, Design, Sales, and Customer Success; and taking responsibility for product outcomes. Requirements include three or more years of product management experience owning customer-facing products, with relevant hospitality technology or travel-booking experience; a demonstrable US-market connection; hands-on research; analytical and experimentation skills; comfort with detailed user journeys and practical iteration; and the ability to work independently through ambiguity. The ideal candidate has worked in hotel technology, B2B hospitality platforms, or a B2C travel product with an actual booking journey. Deep hotel-distribution-system exposure is a plus rather than a prerequisite. The candidate should be fluent in both traveler and hotel needs and able to learn emerging SEO and GEO capabilities without personally executing SEO."
+  },
+  "classification": {
+    "targetLane": "product-ux-design",
+    "evidenceMode": "balanced",
+    "primarySource": "The resume shows more than three years of current responsibility-level product ownership, customer research, enterprise platforms, roadmap decisions, adoption data, working POCs, and cross-functional delivery. It does not show hotel technology, a travel-booking product, or ownership of booking-funnel performance.",
+    "supportingSource": "The portfolio validates research operations, user journeys, usability testing, workflow products, reporting, enterprise analytics, and practical AI implementation. It supports the product and experience case but cannot replace direct hotel-booking evidence.",
+    "hardGateStatus": "pass",
+    "hardGates": [
+      {
+        "gate": "Demonstrable connection to the United States market",
+        "status": "pass",
+        "requirementId": "us-market-connection",
+        "evidence": "The resume shows a Raleigh, North Carolina base and a career serving United States clients and teams in New York, San Diego, and distributed enterprise organizations."
+      }
+    ]
+  },
+  "requirements": [
+    {
+      "id": "us-market-connection",
+      "text": "Show a relevant, demonstrable connection to the United States market.",
+      "priority": "hard-gate",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The resume lists Raleigh, North Carolina and documents United States client, product, and team experience."
+      ],
+      "proofIds": [
+        "kinesso-01",
+        "account-management-01"
+      ],
+      "destinations": [
+        "experience"
+      ],
+      "resumeTerms": [
+        "Raleigh, NC",
+        "US"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "customer-facing-product-ownership",
+      "text": "Bring at least three years of product management experience owning customer-facing products.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Since July 2023, One Block Away work has owned product strategy, customer discovery, UX, implementation, demos, iteration, and roadmap decisions from first ask through working prototype.",
+        "Earlier Kinesso work shaped enterprise products used by more than 7,000 people across 22 brands."
+      ],
+      "proofIds": [
+        "one-block-away-01",
+        "one-block-away-04",
+        "kinesso-02"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "Own product strategy",
+        "first ask",
+        "working prototype"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "hospitality-or-travel-booking-domain",
+      "text": "Bring relevant experience in hotel technology, a B2B hospitality platform, or a B2C travel product with an actual booking journey.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "proofIds": [],
+      "destinations": [
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "hotel technology",
+        "travel booking"
+      ],
+      "matchMode": "not-supported"
+    },
+    {
+      "id": "booking-journey-and-commercial-logic",
+      "text": "Own a booking journey across calendars, dates, rooms, rates, checkout, confirmation, availability, and cancellation logic.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "proofIds": [],
+      "destinations": [
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "booking journey",
+        "room and rate selection",
+        "cancellation policies"
+      ],
+      "matchMode": "not-supported"
+    },
+    {
+      "id": "hotel-workflows-adoption-and-value",
+      "text": "Turn hotel onboarding, reporting, adoption, and ROI needs into product decisions and measurable business value.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Kinesso work used findings and adoption data to set roadmap priorities for navigation, dashboards, personalization, and product support.",
+        "The Digital Experience Audit turned scoring, benchmarks, recommendations, and reporting into a repeatable client workflow.",
+        "The experience is enterprise and client focused rather than hotel specific."
+      ],
+      "proofIds": [
+        "kinesso-02",
+        "kinesso-03",
+        "kinesso-05"
+      ],
+      "destinations": [
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "onboarding program",
+        "adoption data",
+        "client outputs"
+      ],
+      "matchMode": "contextual"
+    },
+    {
+      "id": "search-ai-and-geo-discovery",
+      "text": "Shape product capabilities that improve hotel visibility across search engines and AI discovery tools while partnering with Marketing and specialists.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "ListingPal turned property inputs into MLS and SEO-ready language through a working AI POC.",
+        "Current work covers AI workflow design, customer discovery, product requirements, and implementation, but not hotel GEO performance or search-visibility measurement."
+      ],
+      "proofIds": [
+        "one-block-away-02",
+        "one-block-away-04"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "MLS/SEO-ready language",
+        "AI workflow design"
+      ],
+      "matchMode": "contextual"
+    },
+    {
+      "id": "customer-research-and-usability",
+      "text": "Interview customers, run usability tests, and turn qualitative and quantitative findings into clear product priorities.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Kinesso research covered participant recruitment, interviews, prototype testing, beta groups, behavioral analytics, shared documentation, and findings tied to roadmap priorities.",
+        "Heartbeat work included stakeholder research, journey maps, user flows, wireframes, and prototypes."
+      ],
+      "proofIds": [
+        "kinesso-06",
+        "kinesso-02",
+        "heartbeat-01",
+        "heartbeat-02"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "interviews",
+        "prototype testing",
+        "behavioral analytics",
+        "usability testing"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "experimentation-metrics-and-conversion",
+      "text": "Define success metrics before building, diagnose funnel friction, test improvements, and measure conversion, adoption, and retention.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "The resume supports prototype validation, behavioral analytics, adoption data, and findings used for roadmap decisions.",
+        "It does not document booking conversion, hotel adoption, retention, or a controlled experimentation program."
+      ],
+      "proofIds": [
+        "kinesso-02",
+        "kinesso-06",
+        "one-block-away-01"
+      ],
+      "destinations": [
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "behavioral analytics",
+        "adoption data",
+        "prototype validation"
+      ],
+      "matchMode": "contextual"
+    },
+    {
+      "id": "detailed-user-journeys-and-iteration",
+      "text": "Work through detailed user journeys with Design and Engineering, make tradeoffs, and ship practical iterations.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Heartbeat work created journey maps, user flows, wireframes, and prototypes and moved findings into build-ready experiences.",
+        "Current One Block Away work owns product strategy, UX, front-end build, backend logic, demos, and client iteration."
+      ],
+      "proofIds": [
+        "heartbeat-02",
+        "heartbeat-03",
+        "one-block-away-04"
+      ],
+      "destinations": [
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "journey maps",
+        "user flows",
+        "working prototype",
+        "engineering handoff"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "cross-functional-product-alignment",
+      "text": "Align Engineering, Design, Sales, Customer Success, and other partners around product priorities and outcomes.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The resume documents cross-functional work across product, engineering, design, research, strategy, account, clients, executives, and delivery teams.",
+        "Kanvas work partnered with product and engineering on roadmap priorities and with executives on monetization and go-to-market planning."
+      ],
+      "proofIds": [
+        "kinesso-08",
+        "heartbeat-03",
+        "account-management-03"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "product and engineering",
+        "executives and clients"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "independent-ambiguity-and-prioritization",
+      "text": "Operate independently through ambiguity and prioritize by customer and business value.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Founder and consulting work begins with unclear business questions and moves through discovery, working POCs, client iteration, and roadmap decisions.",
+        "Enterprise research turned user findings and adoption data into product priorities."
+      ],
+      "proofIds": [
+        "one-block-away-01",
+        "one-block-away-04",
+        "kinesso-02"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "unclear business questions",
+        "roadmap decisions"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "hotel-distribution-integrations",
+      "text": "Understand how PMS, CRS, and booking-engine integrations shape availability, rates, policies, failure cases, and the guest experience.",
+      "priority": "preferred",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "proofIds": [],
+      "destinations": [
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "PMS",
+        "CRS",
+        "booking-engine integrations"
+      ],
+      "matchMode": "not-supported"
+    }
+  ],
+  "fitGate": {
+    "resumeBase": {
+      "mode": "ai-product-implementation",
+      "sourceProfiles": [
+        {
+          "id": "ai-product-implementation",
+          "version": 1
+        }
+      ],
+      "leadProfileId": "ai-product-implementation",
+      "accountPresentation": "consolidated",
+      "action": "tailor-to-jd",
+      "rationale": "The role is centered on product vision, customer research, user journeys, workflow decisions, adoption, and practical AI discovery. The AI/Product Implementation base carries the direct product, research, workflow, and implementation evidence. Account experience strengthens cross-functional and customer communication but does not make this a hybrid operating center."
+    },
+    "supportedOverlap": [
+      "Current work owns product strategy, customer discovery, UX, AI workflows, front-end build, backend logic, demos, iteration, and roadmap decisions from first ask through working prototype.",
+      "Kinesso work built a research practice across more than 20 products using interviews, prototype testing, beta groups, behavioral analytics, shared documentation, and findings tied to roadmap priorities.",
+      "Enterprise product work supported more than 7,000 people across 22 brands and connected research, adoption data, reporting, product support, and engineering handoff.",
+      "ListingPal provides adjacent search and AI evidence through property inputs, AI-generated content, and MLS and SEO-ready language.",
+      "Fifteen years of product, experience, account, and client work support communication across executives, customers, product, engineering, design, strategy, and delivery teams.",
+      "A Raleigh, North Carolina base and a United States career provide direct US-market grounding."
+    ],
+    "unsupportedRequirements": [
+      "Direct hotel technology, hospitality platform, or B2C travel-booking product experience is not documented.",
+      "Ownership of calendars, date selection, room and rate choice, checkout, confirmation, availability, or cancellation logic is not documented.",
+      "PMS, CRS, booking-engine integration, and hotel-distribution-system experience are not documented.",
+      "Hotelier and traveler interviews, booking-funnel conversion, hotel adoption, and hotel retention metrics are not documented.",
+      "Hotel SEO or GEO product ownership and search-visibility measurement are not documented.",
+      "A conventional Product Manager title sequence is not documented."
+    ],
+    "actualMismatches": [
+      "The strongest domain record is regulated healthcare, enterprise marketing technology, and practical AI products rather than hospitality or travel booking.",
+      "The documented product work centers on research, workflows, enterprise UX, AI implementation, and client-led POCs rather than a live booking funnel and hotel-distribution logic."
+    ],
+    "missingEvidence": [
+      "A launched hotel or travel-booking product with direct ownership of the booking journey.",
+      "Booking conversion, abandonment, experiment, hotel adoption, or retention metrics.",
+      "A PMS, CRS, booking-engine, or hotel-distribution integration with documented dependencies and failure cases.",
+      "Research with hoteliers and travelers tied to room, rate, checkout, and confirmation decisions.",
+      "Hotel search or GEO capabilities with measured discovery and booking outcomes."
+    ],
+    "coverLetterBridge": {
+      "status": "not-credible",
+      "rationale": "A cover letter cannot credibly replace the missing hotel-technology, travel-booking, booking-funnel, and distribution-system evidence. The package therefore presents only the supported product, research, workflow, adoption, and AI work."
+    },
+    "recommendation": "Proceed only as the user-approved stretch. Lead with customer research, workflow design, adoption data, practical AI products, and cross-functional delivery. Keep hotel technology, travel booking, booking conversion, PMS or CRS integration, hotel adoption, and GEO performance out of the claim set."
+  },
+  "positioning": {
+    "laneId": "product-ux-design",
+    "targetIdentity": "product and experience strategy lead",
+    "employerNeed": "Connect customer research, traveler-facing product decisions, business workflows, adoption, and emerging AI discovery into a coherent product direction.",
+    "bridgeType": "domain-transfer",
+    "applicationStrategy": "approved-stretch",
+    "bridgeThesis": "connect customer research, workflow design, adoption data, and practical AI implementation",
+    "proofIds": [
+      "one-block-away-04",
+      "kinesso-06",
+      "kinesso-02"
+    ],
+    "remainingGap": "The current evidence does not establish hotel technology, a B2C travel-booking product, booking-funnel metrics, PMS or CRS integrations, or hotel search and GEO performance ownership."
+  },
+  "coverLetter": null,
+  "resume": {
+    "foundationId": "wally-mostafa-resume-2026-07-03",
+    "foundationVersion": 4,
+    "compositionMode": "foundation-complete",
+    "layoutDensity": "compact",
+    "roleContinuationBreaks": [
+      {
+        "roleId": "kinesso",
+        "afterBullet": 2
+      }
+    ],
+    "summary": "Product and experience strategy lead with 15 years across customer research, enterprise platforms, AI implementation, and client delivery. I connect customer research, workflow design, adoption data, and practical AI implementation to turn unclear needs into testable products and roadmap decisions. Recent work includes user interviews, usability testing, behavioral analytics, working POCs, and enterprise products used by 7,000+ people across 22 brands.",
+    "skillIds": [
+      "product-strategy-poc-delivery",
+      "research-experience-strategy",
+      "client-success-product-adoption",
+      "ai-implementation-workflow-design"
+    ],
+    "skills": [
+      {
+        "label": "Product Strategy & POC Delivery",
+        "description": "Discovery, scoping, requirements, prototype validation, demo narratives, build-ready logic, and production handoff"
+      },
+      {
+        "label": "Research & Experience Strategy",
+        "description": "Stakeholder interviews, competitive audits, journey maps, user flows, wireframes, prototypes, usability testing, and research-led product direction"
+      },
+      {
+        "label": "Client Success & Product Adoption",
+        "description": "Client discovery, adoption-focused workflows, training and roadshows, human review, and product decisions based on user needs"
+      },
+      {
+        "label": "AI Implementation & Workflow Design",
+        "description": "Governed LLM/VLM workflows, multimodal review, RAG/knowledge bases, prompt-defined criteria, model orchestration, and human review surfaces"
+      }
+    ],
+    "roles": {
+      "hedgehox": [
+        "Turn pharma agency needs into product requirements and working tools for MLR claim review, brief intake, scoping, review routing, submission capture, and FDA signal monitoring",
+        "Secured an investor for proprietary Claims Detection software by building the functional POC, shaping the demo story, and iterating with investors",
+        "Designed Claims Detector workflows that identify promotional claims, surface evidence gaps, and pre-populate audit-ready annotations before MLR submission",
+        "Designed the full Xenagos Bio startup biopharma website from scratch, including investor-facing structure, scientific positioning, visual direction, and hidden design-system handoff",
+        "Built Scope Generator for pharma agency finance and operations teams to manage regional rate cards, brands, sub-brands, and natural-language scope changes",
+        "Developed FDA Warning Tool concepts that connect warning-letter patterns to content-risk guidance for pharma teams"
+      ],
+      "one-block-away": [
+        "Lead client discovery and workflow mapping, then turn unclear business questions into testable product surfaces, working POCs, demo flows, and roadmap decisions",
+        "Built ListingPal's AI listing-generation POC and landing page, turning basic property inputs into listing copy, social posts, ad copy, styling direction, and MLS/SEO-ready language in under 90 seconds",
+        "Built WeReady's Bailey Intelligence dashboard, translating founder inputs, GitHub signals, source health, risk scoring, and evidence trails into startup-readiness workflows",
+        "Own product strategy, UX, AI workflow design, front-end build, backend logic, demo readiness, and client iteration from first ask through working prototype",
+        "Currently building the website and sponsor strategy for a Tunisia youth soccer program, positioning the project for player advancement, community support, and donor outreach"
+      ],
+      "kinesso": [
+        "Built Kinesso's first UX research practice across 20+ products, including participant recruitment, interviews, prototype testing, beta groups, behavioral analytics, research tooling, shared Figma documentation, and UX checkpoints in project plans",
+        "Led UX research and strategy for a marketing intelligence suite used by 7,000+ people across 22 white-label brands; turned findings and adoption data into roadmap priorities for navigation, dashboards, brand theming, personalization, and product support",
+        "Scaled product design from 2 to 30 across the US and Poland, hiring and staffing designers, leading critiques and quality reviews, and planning scope, resources, and engineering handoff across 20+ products",
+        "Partnered with the Head of Design to create the team's first onboarding program, career roadmaps, coaching structure, and performance review workflows for new and existing employees",
+        "Collaborated on the UX/UI build of Digital Experience Audit, turning channel scoring, benchmarks, recommendations, and client outputs into a repeatable workflow with data visualization",
+        "Led workshops on product discovery, ecosystem mapping, innovation, and user research; expanded the program from Kinesso teams to IPG groups and presented recommendations to executives and clients",
+        "UX lead for research and design on Kanvas, Kinesso's developer-first API services library; partnered with product and engineering on roadmap priorities and with C-suite stakeholders on monetization and go-to-market planning",
+        "Helped shape and govern a design system with 500 components, 140 styles, 300 icons, and 50 personas, including accessibility and design quality standards; the work earned 5 Indigo Gold, 4 Indigo Silver, and Red Dot recognition",
+        "Led a three-person team to second place in Kinesso's inaugural innovation challenge with an accessibility panel concept; later advised the next cohort and contributed to accessibility playbook and keyboard interaction standards"
+      ],
+      "omnicom": [
+        "Supported oncology accounts as a freelance UX designer, combining UX design and account-management experience to strengthen regulated healthcare work",
+        "Championed UX best practices across account, strategy, creative, and delivery conversations, translating brand goals into clearer user flows, content structure, and digital recommendations"
+      ],
+      "heartbeat": [
+        "Led UX research and experience strategy for pharma and healthcare work, translating stakeholder input, competitive audits, and user needs into digital product direction",
+        "Created journey maps, site maps, user flows, wireframes, and prototypes for patient, HCP, and internal brand-team experiences across regulated healthcare programs",
+        "Partnered with strategy, creative, account, and engineering teams to move UX recommendations from research findings into build-ready product and campaign experiences",
+        "Led research and creation of an oncology-wide design system for interactive visual aids at a major pharma company, with the goal of improving field usability and development efficiency",
+        "Member of Heartbeat's ETCH group, which ran business-driven sprints exploring voice, AR/VR, and facial recognition for agency and client use"
+      ],
+      "account-management": [
+        "8 years managing Fortune 500 pharma and healthcare clients and brand budgets up to $20M across CNS/neurology, psychiatry, cardiovascular/metabolic, and sleep/wakefulness brands including NUVIGIL, Namenda XR, Lipitor, and Zoloft",
+        "One of two account consumer leads on FCB Health's largest pharma account across all verticals: TV, radio, digital, gaming, Times Square, unbranded campaigns, brand planning, and MLR review",
+        "Translated client and brand strategy into briefs, creative feedback, production requirements, timelines, and MLR-ready deliverables across account, creative, UX, and development teams"
+      ]
+    },
+    "sourceBulletIds": {
+      "hedgehox": [
+        "hedgehox-03",
+        "hedgehox-01",
+        "hedgehox-02",
+        "hedgehox-04",
+        "hedgehox-05",
+        "hedgehox-06"
+      ],
+      "one-block-away": [
+        "one-block-away-01",
+        "one-block-away-02",
+        "one-block-away-03",
+        "one-block-away-04",
+        "one-block-away-05"
+      ],
+      "kinesso": [
+        "kinesso-06",
+        "kinesso-02",
+        "kinesso-01",
+        "kinesso-05",
+        "kinesso-03",
+        "kinesso-07",
+        "kinesso-08",
+        "kinesso-04",
+        "kinesso-09"
+      ],
+      "omnicom": [
+        "omnicom-01",
+        "omnicom-02"
+      ],
+      "heartbeat": [
+        "heartbeat-01",
+        "heartbeat-02",
+        "heartbeat-03",
+        "heartbeat-04",
+        "heartbeat-05"
+      ],
+      "account-management": [
+        "account-management-01",
+        "account-management-02",
+        "account-management-03"
+      ]
+    }
+  },
+  "hero": {
+    "eyebrow": "Bnberry | Selected Work",
+    "tags": [
+      "Customer research",
+      "Workflow and adoption",
+      "Practical AI products"
+    ],
+    "intro": "Here is a look at recent work that may be relevant to Bnberry's Product Manager role, especially customer research, workflow design, adoption, and practical AI products. My resume covers the broader background."
+  },
+  "contact": {
+    "prompt": "Email is the easiest way to reach me about the Product Manager role.",
+    "signoff": "Customer research | workflow design | product adoption"
+  },
+  "route": {
+    "presentation": "showcase",
+    "heroIntent": "resume-support",
+    "showcaseSections": [
+      "chapters"
+    ],
+    "workHeading": "Selected product and research work.",
+    "contactHeading": "Thanks for taking a look."
+  },
+  "copyReview": {
+    "humanizerVersion": "2.2.0",
+    "mode": "surface-only",
+    "status": "passed",
+    "reviewedAt": "2026-09-17T14:26:42.455Z",
+    "copySha256": "408b8e2e43b6371b6c71ad6ace9a8b7f713cfba198c5d2348acbad10466dd441",
+    "preserved": [
+      "content",
+      "structure",
+      "claims",
+      "ending"
+    ],
+    "rewriteAuthorized": false,
+    "reviewMethod": "humanizer-skill",
+    "semanticPassAttested": true,
+    "staticChecksPassed": true,
+    "finalAntiAiPass": true,
+    "remainingTells": []
+  },
+  "constraints": {
+    "doNotClaim": [
+      "Direct hotel technology, hospitality platform, or B2C travel-booking product experience",
+      "Booking-journey ownership across dates, rooms, rates, checkout, confirmation, availability, or cancellation policies",
+      "PMS, CRS, booking-engine, or hotel-distribution-system integration experience",
+      "Hotelier or traveler research",
+      "Booking conversion, hotel adoption, or hotel retention ownership",
+      "Hotel SEO or GEO product ownership or performance measurement",
+      "Conventional Product Manager title history"
+    ],
+    "blockedTerms": [
+      "hospitality product manager",
+      "hotel technology experience",
+      "travel booking owner",
+      "booking UX owner",
+      "PMS integration",
+      "CRS integration",
+      "booking conversion owner",
+      "hotel retention owner",
+      "GEO product owner"
+    ]
+  },
+  "privacy": {
+    "publicSafe": true,
+    "notes": "Contains only the public Bnberry job description supplied by the user and public-safe evidence from the resume and portfolio. It excludes recruiter details, private eligibility information, application answers, compensation boundaries, and submission state."
+  },
+  "qa": {
+    "status": "qa-passed",
+    "builtAt": "2026-09-17T14:30:40.648Z",
+    "configInputSha256": "6354ee118e839f393c18841325e60e10b8b0381f8385db5385a60b5056556e1c",
+    "sourceResumeSha256": "8273f9c5f9038a159fa1d9ecc813e2c23069e37c7ef6dd0effe5439cef217fd7",
+    "resumeFoundation": {
+      "id": "wally-mostafa-resume-2026-07-03",
+      "sourcePdfSha256": "f9b05b6c3c134262b1af6c5734363daf4385cf335407a139779a37d138adf1aa"
+    },
+    "resumeBase": {
+      "mode": "ai-product-implementation",
+      "sourceProfiles": [
+        {
+          "id": "ai-product-implementation",
+          "version": 1
+        }
+      ],
+      "leadProfileId": "ai-product-implementation",
+      "accountPresentation": "consolidated",
+      "action": "tailor-to-jd",
+      "registryVersion": 1,
+      "registrySha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108"
+    },
+    "artifactHashes": {
+      "routeSha256": "0aacf51087e9e1d43383035f1623949d57d2b5893b4cff7b28ed6c9529a8aaa5",
+      "resumePdfSha256": "2c5e9018b60db55e906d86bb8a323db72537fc628adf3e478bca6a1ef921b4c0",
+      "coverLetterPdfSha256": null,
+      "coverLetterMarkdownSha256": null,
+      "scopedProjectSha256": {
+        "project-04.html": "d836f5d3628ed48e0f87e68f2702f67801aa5858781815c648bdeb5f7bd8a6f9",
+        "project-06.html": "e14ab873799b0675c77c8bbea810ab6576b2c0f8d925e0beed943f27a8b4e45f",
+        "project-02.html": "3c887eacf581df95c90893f459019fa70fb92f67c940a986f2e406df554549e4",
+        "project-03.html": "91a5fdbd72514e260e00de44ff8078090e9de8b09c3b39ded565ead579a5a186"
+      },
+      "scopedProjectAssetSha256": {}
+    },
+    "renderer": {
+      "browser": {
+        "name": "chrome-headless-shell",
+        "version": "Google Chrome for Testing 151.0.7922.34"
+      },
+      "htmlPath": "tmp/tailored-resumes/bnberry-product-manager.html",
+      "pdfPath": "output/pdf/Wally-Mostafa-Bnberry-Product-Manager-Resume.pdf",
+      "fontWait": true,
+      "fontProfile": "portfolio-pdf"
+    },
+    "coverLetterRenderer": null,
+    "coverLetter": null,
+    "ats": {
+      "ok": true,
+      "pdfPath": "output/pdf/Wally-Mostafa-Bnberry-Product-Manager-Resume.pdf",
+      "pageCount": 2,
+      "fileSize": 80702,
+      "annotations": [
+        {
+          "page": 1,
+          "uri": "mailto:wmostafa12@gmail.com"
+        },
+        {
+          "page": 1,
+          "uri": "https://linkedin.com/in/wallymo"
+        },
+        {
+          "page": 1,
+          "uri": "https://wallymo.github.io/bnberry-product-manager/"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/6748"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/4629"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.red-dot.org/project/dxa-digital-experience-audit-55219"
+        }
+      ],
+      "fontCompatibility": {
+        "type3Fonts": false
+      },
+      "coverage": [
+        {
+          "id": "us-market-connection",
+          "requirement": "Show a relevant, demonstrable connection to the United States market.",
+          "priority": "hard-gate",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "Raleigh, NC",
+            "US"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "customer-facing-product-ownership",
+          "requirement": "Bring at least three years of product management experience owning customer-facing products.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "Own product strategy",
+            "first ask",
+            "working prototype"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "hospitality-or-travel-booking-domain",
+          "requirement": "Bring relevant experience in hotel technology, a B2B hospitality platform, or a B2C travel product with an actual booking journey.",
+          "priority": "core",
+          "evidenceStatus": "none",
+          "matchMode": "not-supported",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "hotel technology",
+            "travel booking"
+          ]
+        },
+        {
+          "id": "booking-journey-and-commercial-logic",
+          "requirement": "Own a booking journey across calendars, dates, rooms, rates, checkout, confirmation, availability, and cancellation logic.",
+          "priority": "core",
+          "evidenceStatus": "none",
+          "matchMode": "not-supported",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "booking journey",
+            "room and rate selection",
+            "cancellation policies"
+          ]
+        },
+        {
+          "id": "hotel-workflows-adoption-and-value",
+          "requirement": "Turn hotel onboarding, reporting, adoption, and ROI needs into product decisions and measurable business value.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "contextual",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "onboarding program",
+            "adoption data",
+            "client outputs"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "search-ai-and-geo-discovery",
+          "requirement": "Shape product capabilities that improve hotel visibility across search engines and AI discovery tools while partnering with Marketing and specialists.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "contextual",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "MLS/SEO-ready language",
+            "AI workflow design"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "customer-research-and-usability",
+          "requirement": "Interview customers, run usability tests, and turn qualitative and quantitative findings into clear product priorities.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "interviews",
+            "prototype testing",
+            "behavioral analytics",
+            "usability testing"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "experimentation-metrics-and-conversion",
+          "requirement": "Define success metrics before building, diagnose funnel friction, test improvements, and measure conversion, adoption, and retention.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "contextual",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "behavioral analytics",
+            "adoption data",
+            "prototype validation"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "detailed-user-journeys-and-iteration",
+          "requirement": "Work through detailed user journeys with Design and Engineering, make tradeoffs, and ship practical iterations.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "journey maps",
+            "user flows",
+            "working prototype",
+            "engineering handoff"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "cross-functional-product-alignment",
+          "requirement": "Align Engineering, Design, Sales, Customer Success, and other partners around product priorities and outcomes.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "product and engineering",
+            "executives and clients"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "independent-ambiguity-and-prioritization",
+          "requirement": "Operate independently through ambiguity and prioritize by customer and business value.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "unclear business questions",
+            "roadmap decisions"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "hotel-distribution-integrations",
+          "requirement": "Understand how PMS, CRS, and booking-engine integrations shape availability, rates, policies, failure cases, and the guest experience.",
+          "priority": "preferred",
+          "evidenceStatus": "none",
+          "matchMode": "not-supported",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "PMS",
+            "CRS",
+            "booking-engine integrations"
+          ]
+        }
+      ],
+      "failures": [],
+      "warnings": []
+    },
+    "humanizer": {
+      "status": "passed",
+      "version": "2.2.0",
+      "mode": "surface-only",
+      "reviewedAt": "2026-09-17T14:26:42.455Z",
+      "copySha256": "408b8e2e43b6371b6c71ad6ace9a8b7f713cfba198c5d2348acbad10466dd441",
+      "reviewMethod": "humanizer-skill",
+      "semanticPassAttested": true,
+      "staticChecksPassed": true
+    },
+    "route": {
+      "viewports": [
+        {
+          "name": "desktop",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-04",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-06",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-02",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-03",
+          "errors": []
+        },
+        {
+          "name": "mobile",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-04",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-06",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-02",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-03",
+          "errors": []
+        }
+      ],
+      "errors": []
+    }
+  }
+}
