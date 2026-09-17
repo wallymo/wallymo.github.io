@@ -154,20 +154,22 @@ while the window frame remains fixed. Cancel interrupted animation effects befor
 presenting the latest selected state.
 
 Measure the entire frame, including the introduction, all identities, navigation,
-and the tallest Proof file, before enabling pinning at widths of at least 1120px.
-Try normal spacing first, then compact and short-desktop spacing. Measure against
-the actual sticky stage below the fixed navigation; never scale text or clip evidence
-to pass the fit check.
+and the tallest Proof file at widths of at least 1120px. Try normal spacing first,
+then compact and short-desktop spacing. Measure against the actual sticky stage
+below the fixed navigation; never scale text or clip evidence to pass the fit check.
+Desktop width always enables the chapter transition. When the full composition is
+taller than the viewport, keep the introduction in normal flow and pin the chapter
+stage immediately after it; do not fall back to the static mobile sequence.
 Start scroll progression when the stage docks below the navigation. Size the
 journey to the full stage height plus chapter travel, not the shorter content
 height. The following section must remain below the viewport throughout pinning;
 after the last chapter, the whole stage moves out as the next section moves in
 at their shared edge. Do not resize the stage during scrolling. Preserve the
 selected chapter when switching layouts.
-If the complete arrangement cannot fit, show all three chapter blocks in a single
-column with 48px gaps, 64px numbers, and 32px names. Navigation becomes native anchor
-links; the active indicator follows each chapter crossing the upper third of the
-usable viewport. Reduced motion and no JavaScript retain this readable sequence.
+Below desktop width, show all three chapter blocks in a single column with 48px gaps,
+64px numbers, and 32px names. Navigation becomes native anchor links; the active
+indicator follows each chapter crossing the upper third of the usable viewport.
+Reduced motion and no JavaScript retain this readable sequence.
 
 Keep the parchment #F0EBE3 background steady. Bulbs use the shared circular field at
 clay core/shoulder .22/.094 and taupe .18/.077, with no chapter-dependent changes.

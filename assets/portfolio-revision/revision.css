@@ -335,6 +335,8 @@ nav .nav-cta:hover, .btn-primary:hover { background: var(--accent-hover); }
 .chapter-count { display: flex; align-items: baseline; gap: 14px; margin-bottom: 20px; }
 .chapter-number { min-width: 2ch; font: 700 4rem/.95 var(--font-display); letter-spacing: -.06em; font-variant-numeric: tabular-nums; color: var(--chapter-accent); }
 .chapter-total { color: var(--chapter-quiet-text); font: 500 .875rem/1.4 var(--font-body); }
+/* Older generated routes can still carry the removed decorative chapter marks. */
+.chapter-mark { display: none !important; }
 .chapter-name { margin: 0 0 16px; font: 700 2rem/1.05 var(--font-display); letter-spacing: -.035em; }
 .chapter-name span { display: block; }
 .chapter-dates { margin: 0; color: var(--chapter-accent); font-size: 1rem; line-height: 1.5; }
@@ -403,6 +405,24 @@ nav .nav-cta:hover, .btn-primary:hover { background: var(--accent-hover); }
    The following section stays below that screen until the final chapter releases. */
 #chapters.chapters-pinned .chapter-journey { min-height: calc(var(--chapter-stage-height) + var(--chapter-travel)); }
 #chapters.chapters-pinned .chapter-frame { position: sticky; top: var(--chapter-top); min-height: var(--chapter-stage-height); }
+/* Short desktop windows keep the transition without clipping the opening band.
+   The intro reads in normal flow; the chapter stage then pins for all three states. */
+#chapters.chapters-pinned.chapters-short .chapter-journey,
+#chapters.chapters-pinned.chapters-short .chapter-frame {
+  min-height: calc(var(--chapter-intro-height) + var(--chapter-stage-height) + var(--chapter-travel));
+}
+#chapters.chapters-pinned.chapters-short .chapter-frame { position: relative; top: auto; }
+#chapters:is(.chapters-pinned, .chapters-measuring).chapters-short .chapter-intro { padding: 48px 0 28px; }
+#chapters.chapters-pinned.chapters-short .chapter-shell {
+  position: sticky;
+  top: var(--chapter-top);
+  min-height: var(--chapter-stage-height);
+}
+#chapters.chapters-pinned.chapters-short .chapter-proof {
+  max-height: var(--chapter-stage-height);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
 /* A second measured fit uses tighter spacing, with the same font sizes and
    complete evidence. The introduction remains part of the pinned composition. */
 #chapters.chapters-compact {
@@ -416,8 +436,8 @@ nav .nav-cta:hover, .btn-primary:hover { background: var(--accent-hover); }
 #chapters.chapters-compact .chapter-copy h4 { margin-bottom: 16px; }
 #chapters.chapters-compact .chapter-copy > p { margin-bottom: 16px; }
 #chapters.chapters-compact .chapter-point { padding-block: 10px; }
-/* Narrow desktop windows get one final spacing-only fit before falling back to
-   the readable static sequence. Type size and chapter evidence stay intact. */
+/* Narrow desktop windows get one final spacing-only fit before the short-stage
+   layout takes over. Type size and chapter evidence stay intact. */
 #chapters.chapters-tight {
   --chapter-frame-padding: 8px;
   --chapter-intro-gap: 8px;

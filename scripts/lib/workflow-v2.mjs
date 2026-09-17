@@ -2422,6 +2422,19 @@ export function validateV2Config(
         showcaseSections === undefined || route.presentation === 'showcase',
         'route.showcaseSections requires route.presentation showcase'
       );
+      if (
+        requireCurrentContract &&
+        getRoutePresentation(config) === 'showcase'
+      ) {
+        pushError(
+          errors,
+          Array.isArray(showcaseSections) &&
+            ['chapters', 'capabilities'].every((sectionId) =>
+              showcaseSections.includes(sectionId)
+            ),
+          'new or rebuilt showcase routes must include chapters and capabilities in route.showcaseSections'
+        );
+      }
       const capabilityProjects = route.capabilityProjects;
       pushError(
         errors,

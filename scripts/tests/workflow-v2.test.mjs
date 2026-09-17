@@ -109,16 +109,12 @@ function schemaErrors(config) {
 }
 
 function validConfig() {
-  const config = JSON.parse(
+  return JSON.parse(
     readFileSync(
       path.join(repoRoot, 'scripts', 'examples', 'package-v2.json'),
       'utf8'
     )
   );
-  // Keep historical fixtures focused on their original contract. New-package
-  // chapter defaults are tested explicitly against the unmodified template.
-  delete config.route.showcaseSections;
-  return config;
 }
 
 function revision6Config() {
@@ -597,6 +593,9 @@ function createBuildFixture({
   if (routeMode === 'canonical-projects') {
     config.route.presentation = 'full';
     delete config.route.heroIntent;
+    delete config.route.showcaseSections;
+  } else {
+    config.route.showcaseSections = ['chapters', 'capabilities'];
   }
   config.selectedProjects = selectedProjects;
   config.job.company = 'Fixture Company';
@@ -1360,7 +1359,7 @@ test(
 );
 
 test(
-  'showcase routes preserve legacy capabilities and allow explicit section sets',
+  'showcase routes preserve historical section sets and require Chapters plus Capabilities on rebuild',
   { timeout: 180_000 },
   () => {
     const { tempRoot, config, configPath } = createBuildFixture({
@@ -1403,6 +1402,10 @@ test(
       });
       assert.deepEqual(validateV2Config(chaptersOnly), []);
       assert.deepEqual(schemaErrors(chaptersOnly), []);
+      assert.match(
+        validateV2Config(chaptersOnly, { requireCurrentContract: true }).join('\n'),
+        /must include chapters and capabilities/
+      );
       const fullWithShowcaseSections = structuredClone(config);
       fullWithShowcaseSections.route = {
         presentation: 'full',
@@ -1560,6 +1563,7 @@ test(
         presentation: 'showcase',
         heroIntent: 'resume-support',
         projectCardStats: 'hidden',
+        showcaseSections: ['chapters', 'capabilities'],
         workHeading: 'A few pieces of relevant work.',
         contactHeading: 'Thanks for stopping by.',
       };
@@ -1650,7 +1654,9 @@ test(
       assert.ok(routeHtml.includes('class="work-tags"'));
       assert.ok(!routeHtml.includes('Proof for the lane.'));
       assert.ok(!routeHtml.includes('id="how-i-build"'));
+      assert.ok(routeHtml.includes('id="chapters"'));
       assert.ok(routeHtml.includes('id="capabilities"'));
+      assert.ok(!routeHtml.includes('chapter-mark'));
       assert.ok(!routeHtml.includes('id="arc"'));
       assert.ok(!routeHtml.includes('converging into AI implementation'));
       assert.ok(!routeHtml.includes('href="#how-i-build"'));
@@ -1669,7 +1675,7 @@ test(
       assert.ok(!/<a href="\.\.\/project-\d+\.html">/.test(routeHtml));
 
       const approvedCopySha256 = config.copyReview.copySha256;
-      config.route.showcaseSections = ['capabilities', 'how-i-build'];
+      config.route.showcaseSections = ['chapters', 'capabilities', 'how-i-build'];
       assert.notEqual(humanizerCopySha256(config), approvedCopySha256);
       assert.throws(
         () => assertHumanizerReviewCurrent(config),
@@ -1702,7 +1708,7 @@ test(
         /route\.showcaseSections\.how-i-build contains unsupported language: AI product build sequence/
       );
 
-      config.route.showcaseSections = ['capabilities'];
+      config.route.showcaseSections = ['chapters', 'capabilities'];
       config.constraints.blockedTerms = ['Python engineering'];
       assert.throws(
         () => assertHumanizerReviewCurrent(config),
@@ -4161,7 +4167,7 @@ test(
       }
       const savedConfig = JSON.parse(readFileSync(configPath, 'utf8'));
       assert.equal(savedConfig.qa.route.errors.length, 0);
-      assert.equal(savedConfig.qa.route.viewports.length, 8);
+      assert.equal(savedConfig.qa.route.viewports.length, 10);
       assert.equal(
         savedConfig.qa.route.viewports.some((viewport) =>
           Object.hasOwn(viewport, 'screenshot')
@@ -4885,7 +4891,7 @@ test('scoped showcase capability lanes link consistently to selected route proje
   }
 });
 
-test('new showcase templates retain chapters in humanizer and claim gates', () => {
+test('new showcase templates retain Chapters and Capabilities in humanizer and claim gates', () => {
   const template = JSON.parse(readFileSync(path.join(repoRoot, 'scripts/examples/package-v2.json'), 'utf8'));
   assert.deepEqual(template.selectedProjects, [
     'project-01.html',
@@ -4893,7 +4899,7 @@ test('new showcase templates retain chapters in humanizer and claim gates', () =
     'project-04.html',
     'project-03.html',
   ]);
-  assert.deepEqual(template.route.showcaseSections, ['chapters']);
+  assert.deepEqual(template.route.showcaseSections, ['chapters', 'capabilities']);
   assert.deepEqual(schemaErrors(template), []);
   const tempRoot = mkdtempSync(path.join(os.tmpdir(), 'workflow-chapter-copy-'));
   const previousRepoRoot = process.env.WORKFLOW_REPO_ROOT;
@@ -4902,10 +4908,13 @@ test('new showcase templates retain chapters in humanizer and claim gates', () =
     const source = '<section id="chapters"><h2>Three chapters. One through-line.</h2><button aria-label="Read the account chapter">Account Management</button><p>I worked with client teams.</p></section><section id="capabilities"><h2>Where I create leverage.</h2><p>I turn research into product direction.</p></section>';
     writeFileSync(path.join(tempRoot, 'index.html'), source);
     const entries = showcaseSectionCopyEntries(template);
-    assert.equal(entries.length, 1);
+    assert.equal(entries.length, 2);
     assert.equal(entries[0][0], 'route.showcaseSections.chapters');
     assert.match(entries[0][1], /Account Management.*I worked with client teams.*Read the account chapter/);
+    assert.equal(entries[1][0], 'route.showcaseSections.capabilities');
+    assert.match(entries[1][1], /Where I create leverage.*research into product direction/);
     assert.ok(humanizerCopyEntries(template).some(([key]) => key === 'route.showcaseSections.chapters'));
+    assert.ok(humanizerCopyEntries(template).some(([key]) => key === 'route.showcaseSections.capabilities'));
     approveHumanizerReview(template, { reviewedAt: '2026-09-07T12:00:00.000Z', semanticPassComplete: true });
     const before = humanizerCopySha256(template);
     writeFileSync(path.join(tempRoot, 'index.html'), source.replace('client teams', 'agency teams'));
@@ -4924,4 +4933,14 @@ test('new showcase templates retain chapters in humanizer and claim gates', () =
     else process.env.WORKFLOW_REPO_ROOT = previousRepoRoot;
     rmSync(tempRoot, { recursive: true, force: true });
   }
+});
+
+test('canonical Chapters contains no decorative mark or replay implementation', () => {
+  const homepage = readFileSync(path.join(repoRoot, 'index.html'), 'utf8');
+  const revisionScript = readFileSync(
+    path.join(repoRoot, 'assets', 'portfolio-revision', 'revision.js'),
+    'utf8'
+  );
+  assert.doesNotMatch(homepage, /chapter-mark/);
+  assert.doesNotMatch(revisionScript, /iconReplay|chapterReplay|replayChapterMark/);
 });

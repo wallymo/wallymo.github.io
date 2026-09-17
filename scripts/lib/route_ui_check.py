@@ -63,6 +63,8 @@ def main() -> int:
                 expected_work_links=None,
                 expect_project_back=False,
                 expected_project_number=None,
+                expect_route_contract=False,
+                expect_chapter_motion=False,
             ):
                 page = context.new_page()
                 console_errors = []
@@ -83,7 +85,12 @@ def main() -> int:
                         local_failures.append(f"{response.status} {response.url}")
 
                 page.on("response", record_response)
-                page.goto(url, wait_until="networkidle")
+                # These are local static pages. Waiting for network-idle is both
+                # unnecessary and flaky when a page contains media or a font
+                # request that stays open, so gate on the parsed document and
+                # give layout/route scripts one frame to settle instead.
+                page.goto(url, wait_until="domcontentloaded")
+                page.wait_for_timeout(150)
 
                 overflow = page.evaluate(
                     "() => document.documentElement.scrollWidth > document.documentElement.clientWidth"
@@ -99,6 +106,58 @@ def main() -> int:
                 check_errors = []
                 if overflow:
                     check_errors.append("horizontal overflow")
+                if expect_route_contract:
+                    if page.locator("#chapters").count() != 1:
+                        check_errors.append("route must include exactly one Chapters section")
+                    if page.locator("#capabilities").count() != 1:
+                        check_errors.append("route must include exactly one Capabilities section")
+                    if page.locator("#chapters .chapter-mark").count() != 0:
+                        check_errors.append("Chapters must not include decorative iconography")
+                if expect_chapter_motion and page.locator("#chapters").count() == 1:
+                    try:
+                        page.wait_for_function(
+                            "document.querySelector('#chapters')?.classList.contains('chapters-pinned')",
+                            timeout=5000,
+                        )
+                        chapter_scroll = page.evaluate(
+                            """() => {
+                              const chapters = document.querySelector('#chapters');
+                              const journey = chapters.querySelector('.chapter-journey');
+                              const styles = getComputedStyle(chapters);
+                              const chapterTop = parseFloat(styles.getPropertyValue('--chapter-top'));
+                              const startOffset = parseFloat(styles.getPropertyValue('--chapter-intro-height')) || 0;
+                              const travel = parseFloat(styles.getPropertyValue('--chapter-travel'));
+                              return {
+                                start: journey.getBoundingClientRect().top + scrollY + startOffset - chapterTop,
+                                travel,
+                              };
+                            }"""
+                        )
+                        chapter_states = []
+                        for fraction in (0.1, 0.45, 0.8):
+                            page.evaluate(
+                                "([start, travel, fraction]) => scrollTo(0, start + travel * fraction)",
+                                [
+                                    chapter_scroll["start"],
+                                    chapter_scroll["travel"],
+                                    fraction,
+                                ],
+                            )
+                            page.wait_for_timeout(100)
+                            chapter_states.append(
+                                page.locator("#chapters").get_attribute(
+                                    "data-active-chapter"
+                                )
+                            )
+                        if chapter_states != ["account", "ux", "ai"]:
+                            check_errors.append(
+                                f"desktop Chapters did not progress account -> ux -> ai: {chapter_states}"
+                            )
+                        page.evaluate("scrollTo(0, 0)")
+                    except Exception as error:
+                        check_errors.append(
+                            f"desktop Chapters animation unavailable: {error}"
+                        )
                 if expected_work_links is not None:
                     work_links = page.locator("a.work-item").evaluate_all(
                         "(links) => links.map((link) => link.getAttribute('href'))"
@@ -166,6 +225,8 @@ def main() -> int:
                     name,
                     f"{name}.png",
                     expected_work_links=expected_project_links,
+                    expect_route_contract=True,
+                    expect_chapter_motion=name == "desktop",
                 )
                 if args.route_mode == "scoped-projects":
                     for project_index, project in enumerate(selected_projects):
@@ -178,6 +239,24 @@ def main() -> int:
                             expect_project_back=True,
                             expected_project_number=f"{project_index + 1:02d}",
                         )
+                context.close()
+
+            # Route-only desktop checks cover the fit points that previously
+            # made Chapters fall back to a static sequence intermittently.
+            for name, width, height in [
+                ("desktop-laptop", 1280, 720),
+                ("desktop-short", 1440, 600),
+            ]:
+                context = browser.new_context(viewport={"width": width, "height": height})
+                inspect_page(
+                    context,
+                    route_url,
+                    name,
+                    f"{name}.png",
+                    expected_work_links=expected_project_links,
+                    expect_route_contract=True,
+                    expect_chapter_motion=True,
+                )
                 context.close()
 
             browser.close()

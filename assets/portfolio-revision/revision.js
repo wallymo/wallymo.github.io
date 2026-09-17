@@ -9,6 +9,7 @@
   const tabs = [...(chapters?.querySelectorAll('.chapter-tab') || [])];
   const journey = chapters?.querySelector('.chapter-journey');
   const chapterFrame = chapters?.querySelector('.chapter-frame');
+  const chapterShell = chapters?.querySelector('.chapter-shell');
   const chapterNav = chapters?.querySelector('.chapter-tabs');
   const identities = panels.map(panel => panel.querySelector('.chapter-identity'));
   const proofs = panels.map(panel => panel.querySelector('.chapter-proof'));
@@ -24,6 +25,7 @@
   let selected = 0;
   let chapterTop = 0;
   let chapterTravel = 0;
+  let chapterStartOffset = 0;
   let stackOffsets = [];
   let resizeFrame;
   let entryFrame;
@@ -210,11 +212,12 @@
     const previouslyPinned = chaptersPinned;
     clearChapterAnimations();
     chaptersPinned = false;
-    chapters.classList.remove('chapters-pinned', 'chapters-measuring', 'chapters-compact', 'chapters-tight');
+    chapters.classList.remove('chapters-pinned', 'chapters-measuring', 'chapters-compact', 'chapters-tight', 'chapters-short');
     for (const property of ['--chapter-identity-height', '--chapter-proof-height',
-      '--chapter-content-height', '--chapter-nav-top', '--chapter-stage-height', '--chapter-travel', '--chapter-light-anchor']) {
+      '--chapter-content-height', '--chapter-nav-top', '--chapter-stage-height', '--chapter-travel', '--chapter-light-anchor', '--chapter-intro-height']) {
       chapters.style.removeProperty(property);
     }
+    chapterStartOffset = 0;
     chapterTop = navOffset();
     chapters.style.setProperty('--chapter-top', `${chapterTop}px`);
     chapterNav.setAttribute('role', 'navigation');
@@ -263,29 +266,32 @@
         chapters.classList.add('chapters-tight');
         frame = measureFrame();
       }
-      if (frame <= available) {
-        chaptersPinned = true;
-        chapterTravel = Math.round(window.innerHeight * 1.25);
-        // Resolve the settled light position once per layout. It must not ride
-        // with the frame while the section enters or leaves the viewport.
-        const shellOffset = chapterFrame.querySelector('.chapter-shell').getBoundingClientRect().top - chapterFrame.getBoundingClientRect().top;
-        chapters.style.setProperty('--chapter-light-anchor', `${chapterTop + shellOffset}px`);
-        chapters.style.setProperty('--chapter-stage-height', `${window.innerHeight - chapterTop}px`);
-        chapters.style.setProperty('--chapter-travel', `${chapterTravel}px`);
-        chapters.classList.add('chapters-pinned');
-        chapterNav.setAttribute('role', 'tablist');
-        chapterNav.setAttribute('aria-orientation', 'vertical');
-        panels.forEach((panel, i) => {
-          panel.setAttribute('role', 'tabpanel');
-          panel.setAttribute('aria-labelledby', tabs[i].id);
-          tabs[i].setAttribute('role', 'tab');
-          tabs[i].setAttribute('aria-controls', panel.id);
-        });
-      } else {
-        chapters.classList.remove('chapters-compact', 'chapters-tight');
-        chapterTop = navOffset();
-        chapters.style.setProperty('--chapter-top', `${chapterTop}px`);
+      // Desktop width always keeps the chapter transition. If the complete
+      // composition is taller than the viewport, the introduction stays in
+      // normal flow and the smaller chapter stage pins immediately after it.
+      // This avoids the previous intermittent static fallback.
+      if (frame > available) {
+        chapters.classList.add('chapters-short');
+        chapterStartOffset = chapterShell.getBoundingClientRect().top - chapterFrame.getBoundingClientRect().top;
+        chapters.style.setProperty('--chapter-intro-height', `${chapterStartOffset}px`);
       }
+      chaptersPinned = true;
+      chapterTravel = Math.round(window.innerHeight * 1.25);
+      // Resolve the settled light position once per layout. It must not ride
+      // with the frame while the section enters or leaves the viewport.
+      const shellOffset = chapterShell.getBoundingClientRect().top - chapterFrame.getBoundingClientRect().top;
+      chapters.style.setProperty('--chapter-light-anchor', `${chapterTop + (chapterStartOffset ? 0 : shellOffset)}px`);
+      chapters.style.setProperty('--chapter-stage-height', `${window.innerHeight - chapterTop}px`);
+      chapters.style.setProperty('--chapter-travel', `${chapterTravel}px`);
+      chapters.classList.add('chapters-pinned');
+      chapterNav.setAttribute('role', 'tablist');
+      chapterNav.setAttribute('aria-orientation', 'vertical');
+      panels.forEach((panel, i) => {
+        panel.setAttribute('role', 'tabpanel');
+        panel.setAttribute('aria-labelledby', tabs[i].id);
+        tabs[i].setAttribute('role', 'tab');
+        tabs[i].setAttribute('aria-controls', panel.id);
+      });
       chapters.classList.remove('chapters-measuring');
     }
     chapterLayoutSize = `${window.innerWidth}:${window.innerHeight}`;
@@ -307,7 +313,7 @@
     let next = 0;
     if (chaptersPinned) {
       // The complete frame, including the introduction, stays in view together.
-      const progress = Math.max(0, Math.min(1, (chapterTop - journey.getBoundingClientRect().top) / chapterTravel));
+      const progress = Math.max(0, Math.min(1, (chapterTop - journey.getBoundingClientRect().top - chapterStartOffset) / chapterTravel));
       next = Math.min(panels.length - 1, Math.floor(progress * panels.length));
     } else {
       panels.forEach((panel, i) => {
@@ -319,7 +325,7 @@
 
   function chooseChapter(index, animate) {
     if (!chaptersPinned) return;
-    const start = journey.getBoundingClientRect().top + window.scrollY - chapterTop;
+    const start = journey.getBoundingClientRect().top + window.scrollY + chapterStartOffset - chapterTop;
     choosingChapter = true;
     instantScroll(start + chapterTravel * ((index + .3) / panels.length));
     activate(index, animate);
