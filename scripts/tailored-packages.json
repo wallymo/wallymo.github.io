@@ -4069,9 +4069,37 @@
         "project-03.html"
       ],
       "resumePdfPath": "output/pdf/Wally-Mostafa-ProPharma-Business-Development-Regulatory-Sciences-Resume.pdf",
-      "publishStatus": "local-only",
+      "publishStatus": "live-verified",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-09-17T18:29:00.821Z"
+      "builtAt": "2026-09-17T18:29:00.821Z",
+      "verification": {
+        "verifiedAt": "2026-09-17T18:33:14.808Z",
+        "routeUrl": "https://wallymo.github.io/propharma-regulatory-science-business-development/",
+        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-ProPharma-Business-Development-Regulatory-Sciences-Resume.pdf",
+        "configUrl": "https://wallymo.github.io/scripts/packages/propharma-regulatory-science-business-development.json",
+        "projectUrls": [
+          "https://wallymo.github.io/propharma-regulatory-science-business-development/project-01.html",
+          "https://wallymo.github.io/propharma-regulatory-science-business-development/project-02.html",
+          "https://wallymo.github.io/propharma-regulatory-science-business-development/project-06.html",
+          "https://wallymo.github.io/propharma-regulatory-science-business-development/project-03.html"
+        ],
+        "redirectUrls": [],
+        "configSha256": "e0b9d8dc7086f5ff4e6a2a68519662784a935650f18757de1f9e2e547d17c7ae",
+        "pdfSha256": "c05844cb9d8573dd026ea78d1816c6c65acd232104333b3c590c63cec226ba03",
+        "resumeBaseProfilesUrl": "https://wallymo.github.io/scripts/resume-base-profiles.json",
+        "resumeBaseProfilesSha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108",
+        "routeSha256": "00d4c86bf7aba122764952f71fba827fdda06b737d03186c0c81e24a19466b68",
+        "scopedProjectSha256": {
+          "project-01.html": "119125e67abaa80d21274b4a877a9c41e1b04cee347d7fbe42e5b59d3d1b4a67",
+          "project-02.html": "255f9c0647ffd760cb881d7f4be9d03da7cceb253497e187cb262478d7f129cb",
+          "project-06.html": "a543fb9b81a16c2f0f1f16574f6061bd9c7ad6f54647eabb5ab364731554d3dd",
+          "project-03.html": "955081bb813dc0c6f0b0cb6b845e993c778da765911efd22e7adf2b49f35daa0"
+        },
+        "scopedProjectAssetUrls": [],
+        "scopedProjectAssetSha256": {},
+        "configInputSha256": "79bc4f02e40a9210b31d970a0dc50ca59edf8604f7a56ccd6cfd3ac77d3ea8ad",
+        "qaBuiltAt": "2026-09-17T18:29:00.821Z"
+      }
     },
     {
       "workflowVersion": 2,
