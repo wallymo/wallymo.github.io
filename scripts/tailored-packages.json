@@ -4492,9 +4492,37 @@
         "project-03.html"
       ],
       "resumePdfPath": "output/pdf/Wally-Mostafa-Sedulo-Client-Engagement-Manager-Resume.pdf",
-      "publishStatus": "local-only",
+      "publishStatus": "live-verified",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-09-17T18:25:39.006Z"
+      "builtAt": "2026-09-17T18:25:39.006Z",
+      "verification": {
+        "verifiedAt": "2026-09-17T18:33:07.475Z",
+        "routeUrl": "https://wallymo.github.io/sedulo-client-engagement-manager/",
+        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-Sedulo-Client-Engagement-Manager-Resume.pdf",
+        "configUrl": "https://wallymo.github.io/scripts/packages/sedulo-client-engagement-manager.json",
+        "projectUrls": [
+          "https://wallymo.github.io/sedulo-client-engagement-manager/project-01.html",
+          "https://wallymo.github.io/sedulo-client-engagement-manager/project-04.html",
+          "https://wallymo.github.io/sedulo-client-engagement-manager/project-06.html",
+          "https://wallymo.github.io/sedulo-client-engagement-manager/project-03.html"
+        ],
+        "redirectUrls": [],
+        "configSha256": "f55825e111fab5a8f877a3eb6478af6e37adb348c9e11d4b07dbafb1da806af0",
+        "pdfSha256": "681be3c18feacba0225e33b126e93a0632782f1740e0a1b0cc1afc2323413010",
+        "resumeBaseProfilesUrl": "https://wallymo.github.io/scripts/resume-base-profiles.json",
+        "resumeBaseProfilesSha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108",
+        "routeSha256": "0f9268c2b64258d04323e8a9dca73806dfba30483cd3399109fc15b54fac694a",
+        "scopedProjectSha256": {
+          "project-01.html": "12418ee6470c9977535b36568cca40e22cffae1b76642f46994a3010f1dde47f",
+          "project-04.html": "7d64c0f582ef2580e833ce21f14bca564247e8a79660d00325ff146d56809f84",
+          "project-06.html": "fcc15f672b886a20af0add44f43978f8363df8de9c71705d96af099dd77819fa",
+          "project-03.html": "ae6b9237132bdaa61c4466db2970baaedb628e9b6b9c9fbdca4a3d69c3198257"
+        },
+        "scopedProjectAssetUrls": [],
+        "scopedProjectAssetSha256": {},
+        "configInputSha256": "a91a16676bf83a13c2fda2cbfff24a15eb3cfdb7e227a6fba87a2f0ebb28932d",
+        "qaBuiltAt": "2026-09-17T18:25:39.006Z"
+      }
     },
     {
       "workflowVersion": 2,
