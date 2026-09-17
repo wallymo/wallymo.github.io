@@ -335,8 +335,6 @@ nav .nav-cta:hover, .btn-primary:hover { background: var(--accent-hover); }
 .chapter-count { display: flex; align-items: baseline; gap: 14px; margin-bottom: 20px; }
 .chapter-number { min-width: 2ch; font: 700 4rem/.95 var(--font-display); letter-spacing: -.06em; font-variant-numeric: tabular-nums; color: var(--chapter-accent); }
 .chapter-total { color: var(--chapter-quiet-text); font: 500 .875rem/1.4 var(--font-body); }
-.chapter-mark { flex: 0 0 auto; align-self: center; width: clamp(3.5rem, 5.5vw, 4.5rem); height: clamp(3.5rem, 5.5vw, 4.5rem); margin-left: auto; overflow: visible; color: var(--chapter-accent); transform-origin: 50% 50%; }
-.chapter-mark :is(line, circle, rect, path) { fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; vector-effect: non-scaling-stroke; }
 .chapter-name { margin: 0 0 16px; font: 700 2rem/1.05 var(--font-display); letter-spacing: -.035em; }
 .chapter-name span { display: block; }
 .chapter-dates { margin: 0; color: var(--chapter-accent); font-size: 1rem; line-height: 1.5; }
@@ -433,8 +431,6 @@ nav .nav-cta:hover, .btn-primary:hover { background: var(--accent-hover); }
 @media (prefers-reduced-motion: reduce) {
   #chapters .chapter-tabs::after { transition: none !important; }
   #chapters .chapter-tab.is-current::after { display: none; animation: none; }
-  #chapters .chapter-mark { opacity: 1 !important; transform: none !important; }
-  #chapters .chapter-mark :is(line, circle, rect, path) { stroke-dashoffset: 0 !important; }
 }
 
 /* The process leads; the tool inventory is supporting material. */
