@@ -1,0 +1,1010 @@
+{
+  "workflowVersion": 2,
+  "contractRevision": 7,
+  "slug": "sedulo-client-engagement-manager",
+  "roleTitle": "Sedulo Group Client Engagement Manager",
+  "artifactStem": "Sedulo-Client-Engagement-Manager",
+  "fitClass": "stretch",
+  "routeMode": "scoped-projects",
+  "selectedProjects": [
+    "project-01.html",
+    "project-04.html",
+    "project-06.html",
+    "project-03.html"
+  ],
+  "job": {
+    "company": "Sedulo Group",
+    "roleTitle": "Client Engagement Manager",
+    "jobId": "not-provided",
+    "jobUrl": "not-provided",
+    "sourceChannel": "user-provided public job description",
+    "dateCaptured": "2026-09-17",
+    "location": "Remote; occasional travel for team meetings, client engagements, and industry events",
+    "employmentType": "Full-time",
+    "atsVendor": "unknown",
+    "rawJd": "About the job\nWho We Are\n\nImagine the opportunity to work with some of today’s top pharmaceutical, biotech, and medical device companies. Imagine a career where every day brings something new, something different, something challenging. This is what it’s like to work at Sedulo Group.\n\nSedulo Group (www.sedulogroup.com), named one of Consulting Magazine’s Best Firms to Work For and recognized by Inc. Magazine as one of the fastest growing privately held consulting firms in America, is a thought leader in the integration of competitive strategy, competitive intelligence, and market research.\n\nWe are a competitive strategy consultancy that works on behalf of our clients to understand their competitive environment and outmaneuver their competition. Our work shapes strategy at the highest levels of the life sciences industry and, by extension, positively impacts patients’ lives.\n\nAbout The Role\n\nWe are seeking an experienced and driven Client Engagement Manager (CEM) to join our Life Sciences Strategy & Intelligence practice. The CEM is a key client-facing role responsible for leading day-to-day project delivery, guiding analyst teams, and ensuring that Sedulo consistently exceeds client expectations.\n\nThis role requires someone who can synthesize complex scientific, clinical, and commercial information into clear, strategic insights, while managing multiple client relationships with confidence and professionalism.\n\nWhat You’ll Do\n\nLead client engagements from project initiation through delivery, serving as the primary day-to-day contact and trusted advisor to client stakeholders\nDesign comprehensive research plans aligned to client objectives, coordinating with research specialists to ensure the work delivers meaningful, actionable insights\nGuide, mentor, and oversee analyst teams, providing structure, direction, and quality control across research, analysis, and deliverable development\nSynthesize complex scientific, clinical, and commercial data into compelling insights and recommendations in an executive-level writing style\nDevelop and deliver client-ready outputs including strategic landscape assessments, monitoring reports, and actionable intelligence summaries\nLead and participate in scenario planning workshops, helping clients anticipate competitive moves and shape strategy\nDrive project management activities, ensuring proper project setup, resource allocation, and budget management, while maintaining clear objectives, timelines, workflows, and quality standards across multiple client engagements\nFoster strong client relationships, anticipating needs, managing expectations, and consistently delivering above expectations\nSupport business development efforts through background research for proposals, participation in proposal meetings, and representing Sedulo at industry events\n\nOur Ideal Candidate\n\nEducation\n\nBachelor’s degree in a life sciences discipline (Biology, Biochemistry, Pharmacology, or related field) required\nAdvanced degree (MS, PhD, MBA) preferred\n\nExperience\n\n3–6 years of relevant experience in life sciences consulting, competitive intelligence, or strategic insights roles\nDemonstrated success managing client engagements and leading project teams in the pharmaceutical or biotech sector\nStrong understanding of drug development processes, therapeutic landscapes, and the intersection of scientific, clinical, and commercial drivers\nProven ability to deliver high-quality, executive-level deliverables in PowerPoint and Word\n\nSkills & Attributes\n\nExcellent written and verbal communication skills with the ability to distill information into concise, actionable insights tied to key client objectives\nStrong project management skill set, with the ability to manage multiple projects and priorities effectively\nInquisitive nature and analytical thinking, with the ability to connect dots across diverse information sources\nWillingness and desire to work across multiple therapeutic areas, adapting quickly to new domains\nStrong interpersonal and collaboration skills; able to work effectively across internal and external teams\nAbility to lead, mentor, and coach individuals to develop their analytical and consulting capabilities\nHigh attention to detail, intellectual curiosity, and pride in producing top-tier client deliverables\nAdvanced proficiency in Excel and PowerPoint\n\nCompensation & Benefits\n\nCompetitive base salary\nPerformance-based bonus\nComprehensive benefits package (health, vision, dental, life and disability, 401k with match, PTO, holidays, and professional development)\nRemote position with opportunities to travel occasionally for team meetings, client engagements, and industry events\n\nWhy Sedulo?\n\nAt Sedulo, you will:\n\nLead high-impact client engagements that influence top-tier life sciences strategies\nWork directly with global pharma and biotech leaders\nContribute to business growth and represent Sedulo in the industry\nJoin a firm recognized for excellence, growth, and culture\nCollaborate with colleagues who share your commitment to quality, curiosity, and insight"
+  },
+  "classification": {
+    "targetLane": "client-account-delivery",
+    "evidenceMode": "credential-or-technical-primary",
+    "primarySource": "The resume documents eight years of pharmaceutical agency account progression, primary client contact, budgets up to $20M, regulated delivery, strategic recommendations, and multidisciplinary team leadership. It does not document a life-sciences degree or dedicated competitive-intelligence consulting.",
+    "supportingSource": "The portfolio adds regulated pharma workflows, user research, enterprise marketing intelligence, competitive audits, data visualization, and presentation-ready recommendations. It supports the client-delivery bridge but cannot replace scientific, clinical, or drug-development credentials.",
+    "hardGateStatus": "pass",
+    "hardGates": [
+      {
+        "gate": "Hold a bachelor's degree",
+        "status": "pass",
+        "requirementId": "bachelors-degree",
+        "evidence": "The resume lists a BA in Labor Studies and Employee Relations from Rutgers University, 2010. The required life-sciences discipline is recorded separately as an explicit unsupported requirement."
+      }
+    ]
+  },
+  "requirements": [
+    {
+      "id": "bachelors-degree",
+      "text": "Hold a bachelor's degree.",
+      "priority": "hard-gate",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The resume lists a BA in Labor Studies and Employee Relations from Rutgers University, 2010."
+      ],
+      "proofIds": [],
+      "destinations": [
+        "experience"
+      ],
+      "resumeTerms": [
+        "BA Labor Studies & Employee Relations",
+        "Rutgers University"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "life-sciences-discipline",
+      "text": "Hold the required bachelor's degree in biology, biochemistry, pharmacology, or another life-sciences discipline.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "proofIds": [],
+      "destinations": [
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "life-sciences degree"
+      ],
+      "matchMode": "not-supported"
+    },
+    {
+      "id": "life-sciences-consulting-intelligence",
+      "text": "Bring three to six years in life-sciences consulting, competitive intelligence, or strategic insights.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Eight years of pharmaceutical account leadership cover client strategy, research, budgets, regulated delivery, and recommendations.",
+        "Kinesso work adds a marketing intelligence suite, competitive audits, research practice, and presentation-ready recommendations, but not dedicated life-sciences competitive-intelligence consulting."
+      ],
+      "proofIds": [
+        "account-management-01",
+        "kinesso-02",
+        "heartbeat-01"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "pharmaceutical account",
+        "marketing intelligence",
+        "competitive audits"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "client-engagement-leadership",
+      "text": "Lead client engagements from initiation through delivery as the primary day-to-day contact and trusted advisor.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The account record includes primary client contact, Fortune 500 relationships, project briefs, scopes, timelines, regulated review, financial reporting, and strategic recommendations.",
+        "Current client work runs from discovery and product framing through working POCs, demos, iteration, and roadmap decisions."
+      ],
+      "proofIds": [
+        "account-management-03",
+        "addition:rosetta-prevenar-client-contact",
+        "one-block-away-01"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "primary client contact",
+        "client discovery",
+        "strategic recommendations"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "research-planning",
+      "text": "Design research plans tied to client objectives and coordinate specialists through delivery.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Kinesso work built a research practice across more than 20 products with recruitment, interviews, prototype testing, beta groups, analytics, documentation, and project checkpoints.",
+        "Heartbeat work translated stakeholder input, competitive audits, and user needs into research-led product direction."
+      ],
+      "proofIds": [
+        "kinesso-06",
+        "heartbeat-01"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "research practice",
+        "competitive audits",
+        "client objectives"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "team-guidance-and-quality",
+      "text": "Guide, mentor, and oversee analyst teams while maintaining structure, direction, and quality control.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Kinesso leadership scaled a distributed product-design team from 2 to 30 through hiring, staffing, critiques, quality reviews, resource planning, and engineering handoff.",
+        "The record supports team leadership and quality control, but not direct management of competitive-intelligence analysts."
+      ],
+      "proofIds": [
+        "kinesso-01"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "2 to 30",
+        "quality reviews",
+        "planning scope, resources"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "scientific-clinical-commercial-synthesis",
+      "text": "Synthesize complex scientific, clinical, and commercial information into strategic insights and recommendations.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Pharmaceutical agency work translated brand strategy, market research, campaign metrics, med-legal requirements, and commercial objectives into recommendations and delivery plans.",
+        "The record does not establish scientific or clinical evidence synthesis as a professional specialty."
+      ],
+      "proofIds": [
+        "account-management-03",
+        "addition:cdm-lipitor-zoloft-digital",
+        "heartbeat-01"
+      ],
+      "destinations": [
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "market research",
+        "campaign metrics",
+        "strategic recommendations"
+      ],
+      "matchMode": "contextual"
+    },
+    {
+      "id": "executive-ready-deliverables",
+      "text": "Develop executive-ready strategic assessments, monitoring reports, and actionable intelligence summaries.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "The account record includes weekly client status and financial reporting plus annual strategic recommendations.",
+        "Kinesso work produced channel scoring, benchmarks, recommendations, data visualization, and presentation-ready client outputs."
+      ],
+      "proofIds": [
+        "addition:fcb-nuvigil-client-operations",
+        "kinesso-03"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "client status and financial reporting",
+        "presentation-ready client outputs",
+        "strategic recommendations"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "scenario-planning-workshops",
+      "text": "Lead scenario-planning workshops focused on competitive moves and strategy.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "proofIds": [],
+      "destinations": [
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "scenario planning"
+      ],
+      "matchMode": "not-supported"
+    },
+    {
+      "id": "project-resources-budgets",
+      "text": "Manage project setup, resources, budgets, timelines, workflows, priorities, and quality across several engagements.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The resume documents budgets up to $20M, scopes, timelines, vendor coordination, regulated review, status and financial reporting, and multidisciplinary delivery.",
+        "Kinesso leadership included staffing, resource planning, quality reviews, and engineering handoff across more than 20 products."
+      ],
+      "proofIds": [
+        "account-management-02",
+        "account-management-03",
+        "kinesso-01"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "budgets up to $20M",
+        "planning scope, resources",
+        "timelines"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "drug-development-and-therapeutic-landscapes",
+      "text": "Understand drug development, therapeutic landscapes, and the relationship among scientific, clinical, and commercial drivers.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "proofIds": [],
+      "destinations": [
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "drug development",
+        "therapeutic landscapes"
+      ],
+      "matchMode": "not-supported"
+    },
+    {
+      "id": "office-proficiency",
+      "text": "Bring advanced proficiency in Excel and PowerPoint and deliver high-quality work in PowerPoint and Word.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "The record includes presentation-ready client outputs, executive recommendations, financial reporting, and data visualization.",
+        "Advanced named proficiency in Excel, PowerPoint, and Word is not documented in the resume foundation."
+      ],
+      "proofIds": [
+        "kinesso-03",
+        "addition:fcb-nuvigil-client-operations"
+      ],
+      "destinations": [
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "presentation-ready client outputs",
+        "financial reporting"
+      ],
+      "matchMode": "contextual"
+    },
+    {
+      "id": "business-development-support",
+      "text": "Support proposals, proposal meetings, and representation at industry events.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "The resume documents scopes of work, client presentations, executive recommendations, and advisory-board facilitation.",
+        "Proposal ownership and industry-event representation are not documented."
+      ],
+      "proofIds": [
+        "addition:rosetta-dubai-advisory",
+        "kinesso-07"
+      ],
+      "destinations": [
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "scopes of work",
+        "advisory board",
+        "client status and financial reports"
+      ],
+      "matchMode": "contextual"
+    }
+  ],
+  "fitGate": {
+    "resumeBase": {
+      "mode": "account-leadership",
+      "sourceProfiles": [
+        {
+          "id": "account-leadership",
+          "version": 1
+        }
+      ],
+      "leadProfileId": "account-leadership",
+      "accountPresentation": "agency-progression",
+      "action": "tailor-to-jd",
+      "rationale": "The role centers on client relationships, project delivery, budgets, research coordination, executive communication, and team guidance. Account Leadership is the credible base, and agency progression matters because Sedulo screens for direct life-sciences client tenure."
+    },
+    "supportedOverlap": [
+      "Eight years of pharmaceutical agency account progression, including primary client contact, budgets up to $20M, scopes, timelines, regulated review, reporting, and strategic recommendations.",
+      "Work across CNS, neurology, psychiatry, cardiovascular, metabolic, sleep and wakefulness, pneumococcal disease, and oncology accounts.",
+      "A research practice built across more than 20 products using interviews, prototype testing, beta groups, analytics, shared documentation, and project checkpoints.",
+      "A distributed team grown from 2 to 30 with hiring, staffing, critiques, quality reviews, resource planning, and engineering handoff.",
+      "Marketing intelligence, competitive audits, client-ready data visualization, executive workshops, and presentation-ready recommendations."
+    ],
+    "unsupportedRequirements": [
+      "A bachelor's degree in biology, biochemistry, pharmacology, or another life-sciences discipline.",
+      "Dedicated life-sciences competitive-intelligence or strategic-insights consulting.",
+      "Scientific and clinical evidence synthesis as a professional specialty.",
+      "Drug-development process expertise and therapeutic-landscape analysis.",
+      "Competitive scenario-planning workshops and formal intelligence-monitoring deliverables.",
+      "Advanced named proficiency in Excel, PowerPoint, and Word.",
+      "Proposal ownership and industry-event representation."
+    ],
+    "actualMismatches": [
+      "The documented degree is in Labor Studies and Employee Relations rather than a life-sciences discipline.",
+      "The strongest life-sciences experience is pharmaceutical agency account leadership and regulated digital delivery rather than scientific competitive-intelligence consulting.",
+      "The documented research practice is UX and marketing intelligence, not clinical or therapeutic-area intelligence."
+    ],
+    "missingEvidence": [
+      "A qualifying life-sciences degree.",
+      "Competitive landscape assessments, monitoring reports, and scenario-planning outputs for pharmaceutical or biotech clients.",
+      "Direct synthesis of scientific publications, clinical-trial data, pipelines, and commercial market signals.",
+      "Drug-development and therapeutic-landscape work tied to client recommendations.",
+      "Advanced Excel, PowerPoint, and Word proficiency stated in the source record."
+    ],
+    "coverLetterBridge": {
+      "status": "not-credible",
+      "rationale": "A cover letter cannot replace the required life-sciences degree, direct scientific competitive-intelligence practice, or drug-development expertise. The package therefore presents only the supported pharmaceutical client-leadership, research, team, and delivery record."
+    },
+    "recommendation": "Proceed only as the user-approved stretch. Lead with pharmaceutical client leadership, budgets, research planning, team guidance, regulated delivery, and executive-ready recommendations. Keep the life-sciences degree, scientific and clinical synthesis, drug-development expertise, scenario planning, direct competitive-intelligence practice, advanced Office proficiency, and proposal ownership out of the claim set."
+  },
+  "positioning": {
+    "laneId": "client-account-delivery",
+    "targetIdentity": "Pharma client engagement and delivery leader",
+    "employerNeed": "Lead complex life-sciences engagements, guide project teams, and turn research into clear recommendations for clients.",
+    "bridgeType": "domain-transfer",
+    "applicationStrategy": "approved-stretch",
+    "bridgeThesis": "turn client objectives into clear research plans, coordinated teams, and client-ready recommendations",
+    "proofIds": [
+      "account-management-03",
+      "kinesso-06",
+      "kinesso-01"
+    ],
+    "remainingGap": "The current evidence does not establish a life-sciences degree, dedicated competitive-intelligence consulting, scientific or clinical synthesis, drug-development expertise, scenario planning, or advanced named Office proficiency."
+  },
+  "route": {
+    "presentation": "showcase",
+    "heroIntent": "resume-support",
+    "showcaseSections": [
+      "chapters"
+    ],
+    "workHeading": "Selected healthcare, research, and strategy work.",
+    "contactHeading": "Thanks for taking a look."
+  },
+  "hero": {
+    "eyebrow": "Sedulo Group | Client Engagement Manager",
+    "tags": [
+      "Pharma client delivery",
+      "Research planning",
+      "Executive-ready outputs"
+    ],
+    "intro": "Here is a look at recent work that may be useful alongside my resume for Sedulo Group's Client Engagement Manager role. The resume covers my pharmaceutical account background; these projects show how I approach research, complex information, client decisions, and multidisciplinary delivery."
+  },
+  "contact": {
+    "prompt": "Thank you for taking a look. Email is the easiest way to reach me about the Client Engagement Manager role.",
+    "signoff": "Pharma client leadership | research planning | delivery"
+  },
+  "constraints": {
+    "doNotClaim": [
+      "A bachelor's degree in biology, biochemistry, pharmacology, or another life-sciences discipline",
+      "Dedicated competitive-intelligence or strategic-insights consulting",
+      "Scientific or clinical evidence synthesis as a professional specialty",
+      "Drug-development process expertise or therapeutic-landscape analysis",
+      "Competitive scenario-planning ownership",
+      "Advanced proficiency in Excel, PowerPoint, or Word",
+      "Proposal ownership or industry-event representation",
+      "Direct management of competitive-intelligence analysts"
+    ],
+    "blockedTerms": [
+      "life-sciences degree",
+      "competitive intelligence consultant",
+      "scientific intelligence expert",
+      "clinical intelligence",
+      "drug development expert",
+      "therapeutic landscape expert",
+      "scenario planning lead",
+      "advanced Excel",
+      "advanced PowerPoint",
+      "advanced Word",
+      "proposal owner",
+      "analyst team manager"
+    ]
+  },
+  "privacy": {
+    "publicSafe": true,
+    "notes": "Contains only the public job description supplied by the user and public-safe evidence from the resume and portfolio. It excludes recruiter details, application answers, compensation boundaries, private eligibility information, and submission state."
+  },
+  "resume": {
+    "foundationId": "wally-mostafa-resume-2026-07-03",
+    "compositionMode": "profile-complete",
+    "layoutDensity": "compact",
+    "summary": "Pharma client engagement and delivery leader with 15 years across agency services, enterprise products, UX, and client-led AI work. I turn client objectives into clear research plans, coordinated teams, and client-ready recommendations. Across eight years of pharmaceutical account progression, I managed Fortune 500 relationships and budgets up to $20M, owned briefs, scopes, reporting, and regulated delivery, and worked across several therapeutic areas. I later built a research practice across more than 20 products and grew a distributed team from 2 to 30.",
+    "skillIds": [
+      "account-management-client-leadership",
+      "research-experience-strategy",
+      "program-project-delivery",
+      "regulated-healthcare-client-delivery"
+    ],
+    "skills": [
+      {
+        "label": "Account Management & Client Leadership",
+        "description": "Client relationships, budgets up to $20M, briefs, scopes, timelines, status and financial reporting, vendor coordination, and cross-functional delivery"
+      },
+      {
+        "label": "Research & Experience Strategy",
+        "description": "Stakeholder interviews, competitive audits, journey maps, user flows, wireframes, prototypes, usability testing, and research-led product direction"
+      },
+      {
+        "label": "Program & Project Delivery",
+        "description": "Scoping, requirements, timelines, review routing, team coordination, risk visibility, and build-ready handoff across product, design, and client teams"
+      },
+      {
+        "label": "Regulated Healthcare & Client Delivery",
+        "description": "11 years across pharma/healthcare communications, FDA/HIPAA/MLR workflows, HCP/patient UX, client workshops, and stakeholder adoption"
+      }
+    ],
+    "experienceSections": [
+      {
+        "heading": "Account Management Experience",
+        "roleIds": [
+          "account-management"
+        ]
+      },
+      {
+        "heading": "Most Recent Experience",
+        "roleIds": [
+          "hedgehox",
+          "one-block-away",
+          "kinesso",
+          "omnicom",
+          "heartbeat"
+        ]
+      }
+    ],
+    "awards": [
+      {
+        "label": "Manny Award 2013",
+        "detail": "Best Unbranded Campaign, \"Get Your Shift Together\""
+      },
+      {
+        "label": "Pharma Choice Awards 2011",
+        "detail": "Silver Consumer Print, Silver HCP Sales Aid, Bronze HCP Mobile Site"
+      },
+      {
+        "label": "Indigo Awards 2023",
+        "detail": "Design System & Data Visualization: 3x Gold, 2x Silver",
+        "href": "https://www.indigoaward.com/winners/6748"
+      }
+    ],
+    "roles": {
+      "hedgehox": [
+        "Secured an investor for proprietary Claims Detection software by building the functional POC, shaping the demo story, and iterating with investors",
+        "Designed Claims Detector workflows that identify promotional claims, surface evidence gaps, and pre-populate audit-ready annotations before MLR submission",
+        "Translate pharma agency needs into working tools for MLR claim review, brief intake, scoping, review routing, submission capture, and FDA signal monitoring",
+        "Built Scope Generator for pharma agency finance and operations teams to manage regional rate cards, brands, sub-brands, and natural-language scope changes"
+      ],
+      "one-block-away": [
+        "Lead client discovery and turn unclear business questions into testable product concepts, working POCs, demo flows, and roadmap decisions",
+        "Own product strategy, UX, AI workflow design, front-end build, backend logic, demo readiness, and client iteration from first ask through working prototype",
+        "Built ListingPal's AI listing-generation POC and landing page, turning basic property inputs into listing copy, social posts, ad copy, styling direction, and MLS/SEO-ready language in under 90 seconds",
+        "Built WeReady's Bailey Intelligence dashboard, translating founder inputs, GitHub signals, source health, risk scoring, and evidence trails into startup-readiness workflows",
+        "Currently building the website and sponsor strategy for a Tunisia youth soccer program, positioning the project for player advancement, community support, and donor outreach"
+      ],
+      "kinesso": [
+        "Built Kinesso's first UX research practice across 20+ products, including participant recruitment, interviews, prototype testing, beta groups, behavioral analytics, research tooling, shared Figma documentation, and UX checkpoints in project plans",
+        "Led UX research and strategy for a marketing intelligence suite used by 7,000+ people across 22 white-label brands; turned findings and adoption data into roadmap priorities for navigation, dashboards, brand theming, personalization, and product support",
+        "Built the Digital Experience Audit workflow for channel scoring, benchmarks, recommendations, visualization, and presentation-ready client outputs",
+        "Scaled product design from 2 to 30 people across the US and Poland, hiring and staffing designers, leading critiques and quality reviews, and planning scope, resources, and engineering handoff across 20+ products"
+      ],
+      "omnicom": [
+        "Supported oncology accounts as a freelance UX designer, combining UX design and account-management experience to strengthen regulated healthcare work"
+      ],
+      "heartbeat": [
+        "Led UX research and experience strategy for pharma and healthcare work, translating stakeholder input, competitive audits, and user needs into digital product direction",
+        "Created journey maps, site maps, user flows, wireframes, and prototypes for patient, HCP, and internal brand-team experiences across regulated healthcare programs",
+        "Partnered with strategy, creative, account, and engineering teams to move UX recommendations from research findings into build-ready product and campaign experiences"
+      ],
+      "account-management": [
+        {
+          "title": "Account Supervisor / Digital Strategist",
+          "employer": "Scout Marketing",
+          "location": "San Diego, CA",
+          "dateRange": "Jun 2015 – Jul 2018",
+          "bullets": [
+            "Promoted from Senior Account Executive and took the lead on Jazz Pharmaceuticals XYREM consumer work: unbranded campaigns across digital, print, and in-office channels that lifted traffic and engagement on the disease-state site",
+            "Led the launch of the first unbranded social campaign on Facebook and YouTube for the brand and for Jazz, built around real patients telling their own stories",
+            "Oversaw an unbranded digital campaign bridging disease state and branded work; banners held a 0.37% click-through rate against a 0.17% industry benchmark and doubled qualified traffic to the brand site"
+          ]
+        },
+        {
+          "title": "Senior Account Executive",
+          "employer": "FCB Health",
+          "location": "New York, NY",
+          "dateRange": "Jun 2014 – Jun 2015",
+          "bullets": [
+            "One of two consumer account leads on the agency's largest pharma business, managing the Actavis Namenda XR direct-to-consumer launch and its $20M brand budget",
+            "Owned the broadcast workstream for three national television commercials in one year, covering market research, med-legal review, FDA preclearance, pre- and post-production, talent and location coordination, director searches, and network clearances; the spots drove a 45% increase in new-to-brand consumers within seven weeks",
+            "Led the launch of an unbranded Alzheimer's caregiver community site with support resources, sponsorship exploration, and public relations pull-through; also oversaw the account's Assistant Account Executive across in-office tactics, national print, and sales representative support materials"
+          ]
+        },
+        {
+          "title": "Senior Account Executive",
+          "employer": "Barker DZP",
+          "location": "New York, NY",
+          "dateRange": "Dec 2013 – May 2014",
+          "bullets": [
+            "Led the social campaign for a new Tough Mudder loyalty program and oversaw PDI and Nice-Pak, the agency's largest account, across print, digital, and social"
+          ]
+        },
+        {
+          "title": "Senior Account Executive",
+          "employer": "Cline Davis & Mann",
+          "location": "New York, NY",
+          "dateRange": "Sep 2013 – Dec 2013",
+          "bullets": [
+            "Used campaign metrics to shape Pfizer digital recommendations for Lipitor's online presence and loyalty program during loss of exclusivity, and piloted a Zoloft savings offer to test market response"
+          ]
+        },
+        {
+          "title": "Assistant Account Executive to Account Executive",
+          "employer": "FCB Health",
+          "location": "New York, NY",
+          "dateRange": "Apr 2011 – Sep 2013",
+          "bullets": [
+            "Managed development and execution of the unbranded Teva NUVIGIL campaign for National Night Shift Workers' Day across Times Square NASDAQ, national television, Xbox Live, radio, outdoor, and consumer journals, working through media, digital, and print vendors; the campaign won the 2013 Manny Award for Best Unbranded Campaign",
+            "Coordinated the NUVIGIL.com consumer rebrand across desktop and mobile with the agency's digital strategy and development teams, plus the launch of a CRM patient support program and its online patient community",
+            "Worked alongside the HCP team on the NUVIGIL.com HCP site and sales aid, both of which won 2011 Pharma Choice awards",
+            "Owned weekly client status and financial reporting plus OPDP and review-committee submissions across the $10M consumer business, and contributed to the annual strategic recommendations"
+          ]
+        },
+        {
+          "title": "Account Coordinator",
+          "employer": "RosettaWishbone",
+          "location": "New York, NY",
+          "dateRange": "Sep 2010 – Mar 2011",
+          "bullets": [
+            "Primary client contact across brand teams, national affiliates, and vendors on an award-winning global unbranded pneumococcal disease awareness campaign for the Pfizer Prevenar 13 adult pre-launch",
+            "Facilitated an Africa and Middle East advisory board in Dubai and owned project briefs, scopes of work, key opinion leader communications, and client status and financial reports"
+          ]
+        }
+      ]
+    },
+    "sourceBulletIds": {
+      "hedgehox": [
+        "hedgehox-01",
+        "hedgehox-02",
+        "hedgehox-03",
+        "hedgehox-05"
+      ],
+      "one-block-away": [
+        "one-block-away-01",
+        "one-block-away-04",
+        "one-block-away-02",
+        "one-block-away-03",
+        "one-block-away-05"
+      ],
+      "kinesso": [
+        "kinesso-06",
+        "kinesso-02",
+        "kinesso-03",
+        "kinesso-01"
+      ],
+      "omnicom": [
+        "omnicom-01"
+      ],
+      "heartbeat": [
+        "heartbeat-01",
+        "heartbeat-02",
+        "heartbeat-03"
+      ],
+      "account-management": [
+        "addition:scout-xyrem-account-lead",
+        "addition:scout-xyrem-unbranded-social",
+        "addition:scout-xyrem-bridging-campaign",
+        "account-management-02",
+        "account-management-03",
+        "addition:fcb-namenda-caregiver-site",
+        "addition:barker-tough-mudder-pdi",
+        "addition:cdm-lipitor-zoloft-digital",
+        "account-management-01",
+        "addition:fcb-nuvigil-rebrand-crm",
+        "addition:fcb-nuvigil-hcp-collaboration",
+        "addition:fcb-nuvigil-client-operations",
+        "addition:rosetta-prevenar-client-contact",
+        "addition:rosetta-dubai-advisory"
+      ]
+    }
+  },
+  "copyReview": {
+    "humanizerVersion": "2.2.0",
+    "mode": "surface-only",
+    "status": "passed",
+    "reviewedAt": "2026-09-17T18:22:31.723Z",
+    "copySha256": "c83ccb0ed4fc944ed13435f3b5d676ef04107836e410211118b46c06a654ab0d",
+    "preserved": [
+      "content",
+      "structure",
+      "claims",
+      "ending"
+    ],
+    "rewriteAuthorized": false,
+    "reviewMethod": "humanizer-skill",
+    "semanticPassAttested": true,
+    "staticChecksPassed": true,
+    "finalAntiAiPass": true,
+    "remainingTells": []
+  },
+  "coverLetter": null,
+  "qa": {
+    "status": "qa-passed",
+    "builtAt": "2026-09-17T18:25:39.006Z",
+    "configInputSha256": "a91a16676bf83a13c2fda2cbfff24a15eb3cfdb7e227a6fba87a2f0ebb28932d",
+    "sourceResumeSha256": "8273f9c5f9038a159fa1d9ecc813e2c23069e37c7ef6dd0effe5439cef217fd7",
+    "resumeFoundation": {
+      "id": "wally-mostafa-resume-2026-07-03",
+      "sourcePdfSha256": "f9b05b6c3c134262b1af6c5734363daf4385cf335407a139779a37d138adf1aa"
+    },
+    "resumeBase": {
+      "mode": "account-leadership",
+      "sourceProfiles": [
+        {
+          "id": "account-leadership",
+          "version": 1
+        }
+      ],
+      "leadProfileId": "account-leadership",
+      "accountPresentation": "agency-progression",
+      "action": "tailor-to-jd",
+      "registryVersion": 1,
+      "registrySha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108"
+    },
+    "artifactHashes": {
+      "routeSha256": "0f9268c2b64258d04323e8a9dca73806dfba30483cd3399109fc15b54fac694a",
+      "resumePdfSha256": "681be3c18feacba0225e33b126e93a0632782f1740e0a1b0cc1afc2323413010",
+      "coverLetterPdfSha256": null,
+      "coverLetterMarkdownSha256": null,
+      "scopedProjectSha256": {
+        "project-01.html": "12418ee6470c9977535b36568cca40e22cffae1b76642f46994a3010f1dde47f",
+        "project-04.html": "7d64c0f582ef2580e833ce21f14bca564247e8a79660d00325ff146d56809f84",
+        "project-06.html": "fcc15f672b886a20af0add44f43978f8363df8de9c71705d96af099dd77819fa",
+        "project-03.html": "ae6b9237132bdaa61c4466db2970baaedb628e9b6b9c9fbdca4a3d69c3198257"
+      },
+      "scopedProjectAssetSha256": {}
+    },
+    "renderer": {
+      "browser": {
+        "name": "chrome-headless-shell",
+        "version": "Google Chrome for Testing 151.0.7922.34"
+      },
+      "htmlPath": "tmp/tailored-resumes/sedulo-client-engagement-manager.html",
+      "pdfPath": "output/pdf/Wally-Mostafa-Sedulo-Client-Engagement-Manager-Resume.pdf",
+      "fontWait": true,
+      "fontProfile": "portfolio-pdf"
+    },
+    "coverLetterRenderer": null,
+    "coverLetter": null,
+    "ats": {
+      "ok": true,
+      "pdfPath": "output/pdf/Wally-Mostafa-Sedulo-Client-Engagement-Manager-Resume.pdf",
+      "pageCount": 2,
+      "fileSize": 82752,
+      "annotations": [
+        {
+          "page": 1,
+          "uri": "mailto:wmostafa12@gmail.com"
+        },
+        {
+          "page": 1,
+          "uri": "https://linkedin.com/in/wallymo"
+        },
+        {
+          "page": 1,
+          "uri": "https://wallymo.github.io/sedulo-client-engagement-manager/"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/6748"
+        }
+      ],
+      "fontCompatibility": {
+        "type3Fonts": false
+      },
+      "coverage": [
+        {
+          "id": "bachelors-degree",
+          "requirement": "Hold a bachelor's degree.",
+          "priority": "hard-gate",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "BA Labor Studies & Employee Relations",
+            "Rutgers University"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "life-sciences-discipline",
+          "requirement": "Hold the required bachelor's degree in biology, biochemistry, pharmacology, or another life-sciences discipline.",
+          "priority": "core",
+          "evidenceStatus": "none",
+          "matchMode": "not-supported",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "life-sciences degree"
+          ]
+        },
+        {
+          "id": "life-sciences-consulting-intelligence",
+          "requirement": "Bring three to six years in life-sciences consulting, competitive intelligence, or strategic insights.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "pharmaceutical account",
+            "marketing intelligence",
+            "competitive audits"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "client-engagement-leadership",
+          "requirement": "Lead client engagements from initiation through delivery as the primary day-to-day contact and trusted advisor.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "primary client contact",
+            "client discovery",
+            "strategic recommendations"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "research-planning",
+          "requirement": "Design research plans tied to client objectives and coordinate specialists through delivery.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "research practice",
+            "competitive audits",
+            "client objectives"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "team-guidance-and-quality",
+          "requirement": "Guide, mentor, and oversee analyst teams while maintaining structure, direction, and quality control.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "2 to 30",
+            "quality reviews",
+            "planning scope, resources"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "scientific-clinical-commercial-synthesis",
+          "requirement": "Synthesize complex scientific, clinical, and commercial information into strategic insights and recommendations.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "contextual",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "market research",
+            "campaign metrics",
+            "strategic recommendations"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "executive-ready-deliverables",
+          "requirement": "Develop executive-ready strategic assessments, monitoring reports, and actionable intelligence summaries.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "client status and financial reporting",
+            "presentation-ready client outputs",
+            "strategic recommendations"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "scenario-planning-workshops",
+          "requirement": "Lead scenario-planning workshops focused on competitive moves and strategy.",
+          "priority": "core",
+          "evidenceStatus": "none",
+          "matchMode": "not-supported",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "scenario planning"
+          ]
+        },
+        {
+          "id": "project-resources-budgets",
+          "requirement": "Manage project setup, resources, budgets, timelines, workflows, priorities, and quality across several engagements.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "budgets up to $20M",
+            "planning scope, resources",
+            "timelines"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "drug-development-and-therapeutic-landscapes",
+          "requirement": "Understand drug development, therapeutic landscapes, and the relationship among scientific, clinical, and commercial drivers.",
+          "priority": "core",
+          "evidenceStatus": "none",
+          "matchMode": "not-supported",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "drug development",
+            "therapeutic landscapes"
+          ]
+        },
+        {
+          "id": "office-proficiency",
+          "requirement": "Bring advanced proficiency in Excel and PowerPoint and deliver high-quality work in PowerPoint and Word.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "contextual",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "presentation-ready client outputs",
+            "financial reporting"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "business-development-support",
+          "requirement": "Support proposals, proposal meetings, and representation at industry events.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "contextual",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "scopes of work",
+            "advisory board",
+            "client status and financial reports"
+          ],
+          "missingTerms": []
+        }
+      ],
+      "failures": [],
+      "warnings": []
+    },
+    "humanizer": {
+      "status": "passed",
+      "version": "2.2.0",
+      "mode": "surface-only",
+      "reviewedAt": "2026-09-17T18:22:31.723Z",
+      "copySha256": "c83ccb0ed4fc944ed13435f3b5d676ef04107836e410211118b46c06a654ab0d",
+      "reviewMethod": "humanizer-skill",
+      "semanticPassAttested": true,
+      "staticChecksPassed": true
+    },
+    "route": {
+      "viewports": [
+        {
+          "name": "desktop",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-01",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-04",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-06",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-03",
+          "errors": []
+        },
+        {
+          "name": "mobile",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-01",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-04",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-06",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-03",
+          "errors": []
+        }
+      ],
+      "errors": []
+    }
+  }
+}
