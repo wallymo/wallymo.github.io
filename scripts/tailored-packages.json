@@ -2647,6 +2647,41 @@
     },
     {
       "workflowVersion": 2,
+      "contractRevision": 7,
+      "slug": "medical-communications-client-partnerships-manager",
+      "roleTitle": "Medical Communications Client Partnerships Manager",
+      "artifactStem": "Medical-Communications-Client-Partnerships-Manager",
+      "configPath": "scripts/packages/medical-communications-client-partnerships-manager.json",
+      "targetLane": "client-account-delivery",
+      "evidenceMode": "resume-primary",
+      "fitClass": "strong",
+      "positioningLane": "client-account-delivery",
+      "bridgeType": "direct",
+      "applicationStrategy": "direct",
+      "resumeBaseMode": "account-leadership",
+      "resumeBaseLeadProfile": "account-leadership",
+      "resumeBaseAction": "tailor-to-jd",
+      "accountPresentation": "agency-progression",
+      "resumeBaseProfiles": [
+        {
+          "id": "account-leadership",
+          "version": 1
+        }
+      ],
+      "routeMode": "scoped-projects",
+      "selectedProjects": [
+        "project-01.html",
+        "project-06.html",
+        "project-04.html",
+        "project-03.html"
+      ],
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Medical-Communications-Client-Partnerships-Manager-Resume.pdf",
+      "publishStatus": "local-only",
+      "qaStatus": "qa-passed",
+      "builtAt": "2026-09-17T14:40:31.075Z"
+    },
+    {
+      "workflowVersion": 2,
       "slug": "medspa-ai-product-manager",
       "roleTitle": "MedSpa AI Product Manager",
       "artifactStem": "MedSpa-AI-Product-Manager",
