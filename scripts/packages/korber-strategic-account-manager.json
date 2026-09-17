@@ -1,0 +1,1048 @@
+{
+  "workflowVersion": 2,
+  "contractRevision": 7,
+  "slug": "korber-strategic-account-manager",
+  "roleTitle": "Körber Strategic Account Manager",
+  "artifactStem": "Korber-Strategic-Account-Manager",
+  "fitClass": "stretch",
+  "routeMode": "scoped-projects",
+  "selectedProjects": [
+    "project-01.html",
+    "project-02.html",
+    "project-06.html",
+    "project-03.html"
+  ],
+  "job": {
+    "company": "Körber",
+    "roleTitle": "Strategic Account Manager",
+    "jobId": "4449683113",
+    "jobUrl": "https://www.linkedin.com/jobs/view/4449683113",
+    "sourceChannel": "user-provided job description, title verified on LinkedIn",
+    "dateCaptured": "2026-09-17",
+    "location": "United States",
+    "employmentType": "Full-time",
+    "atsVendor": "unknown",
+    "rawJd": "Körber is hiring a Strategic Account Manager in the United States. The role drives strategic account strategies and is the lead point of contact for customer account management matters. Responsibilities include developing global account strategies for Pharma, Biotech, and Cell & Gene customers; managing the central customer relationship, satisfaction, steering, escalations, and contract matters; creating and quantifying value solutions with Product Management; consulting customers on global MES programs; reporting account progress and business objectives to executive management; advancing the Strategic Account Management methodology; communicating monthly and quarterly initiative progress; collaborating with internal and external resources; and forecasting and tracking account metrics. Required experience includes a strong MES sales record, five to ten years of sales experience, precise communication from department to C-Level, decision influence and negotiation, matrix and global-team collaboration, short-term and strategic planning, organization in a fast-paced environment, regulated-industry IT project delivery, travel to customer and corporate sites, CRM software, and Microsoft Office. IPMA or PMP certification is a plus. Körber Business Area Pharma provides MES software, including Werum PAS-X, to pharmaceutical and biotech manufacturers."
+  },
+  "classification": {
+    "targetLane": "client-account-delivery",
+    "evidenceMode": "resume-primary",
+    "primarySource": "The resume proves eight years of direct pharma account leadership, Fortune 500 customer relationships, budgets up to $20M, client and financial reporting, global stakeholder coordination, regulated delivery, and recent technology implementation work. It does not prove MES sales, quota attainment, pipeline ownership, or contract negotiation.",
+    "supportingSource": "The portfolio validates regulated pharma workflows, client discovery, working technology products, product collaboration, enterprise analytics, and decision-ready recommendations. It supports the account and technology story but cannot replace direct MES sales evidence.",
+    "hardGateStatus": "pass",
+    "hardGates": [
+      {
+        "gate": "Experience defining and delivering technology projects in a regulated industry",
+        "status": "pass",
+        "requirementId": "regulated-technology-delivery",
+        "evidence": "The resume and portfolio document regulated pharma workflow design, FDA and MLR review processes, digital product delivery, and recent AI tools taken from client need through working implementation."
+      }
+    ]
+  },
+  "requirements": [
+    {
+      "id": "regulated-technology-delivery",
+      "text": "Bring experience defining and delivering IT or technology projects in a regulated industry.",
+      "priority": "hard-gate",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Current work converts pharma agency needs into working tools for MLR claim review, intake, scoping, routing, submissions, and FDA monitoring.",
+        "Earlier account and UX work delivered digital programs through FDA, OPDP, and MLR review."
+      ],
+      "proofIds": [
+        "hedgehox-03",
+        "heartbeat-03",
+        "account-management-03"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "Regulated Healthcare & Client Delivery",
+        "MLR",
+        "FDA"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "strategic-account-leadership",
+      "text": "Drive account strategy and act as the lead customer contact for strategic pharma accounts.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The resume documents eight years of pharma and healthcare account progression from Account Coordinator through Account Supervisor.",
+        "Work included primary client contact, brand planning, budgets up to $20M, briefs, scopes, status reporting, and finished delivery."
+      ],
+      "proofIds": [
+        "account-management-01",
+        "account-management-02",
+        "addition:rosetta-prevenar-client-contact"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience"
+      ],
+      "resumeTerms": [
+        "eight years",
+        "Account Supervisor",
+        "primary client contact"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "mes-sales-record",
+      "text": "Show a strong track record of sales in the MES space.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "proofIds": [],
+      "destinations": [
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "MES sales",
+        "Werum PAS-X"
+      ],
+      "matchMode": "not-supported"
+    },
+    {
+      "id": "five-to-ten-years-sales",
+      "text": "Bring five to ten years of sales experience.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "proofIds": [],
+      "destinations": [
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "sales quota",
+        "closed-won revenue"
+      ],
+      "matchMode": "not-supported"
+    },
+    {
+      "id": "global-pharma-account-strategy",
+      "text": "Develop global account strategies for Pharma, Biotech, and Cell & Gene customers.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "The resume shows US and Poland team leadership plus primary client contact on a global Pfizer Prevenar 13 disease-awareness program.",
+        "The documented domain is pharma communications and regulated technology rather than manufacturing software sales."
+      ],
+      "proofIds": [
+        "kinesso-01",
+        "addition:rosetta-prevenar-client-contact",
+        "addition:rosetta-dubai-advisory"
+      ],
+      "destinations": [
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "US and Poland",
+        "global unbranded",
+        "Dubai"
+      ],
+      "matchMode": "contextual"
+    },
+    {
+      "id": "customer-interface-and-escalation",
+      "text": "Manage the central customer relationship, satisfaction, steering, escalations, and contract matters.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "The resume proves primary customer contact, relationship ownership, status reporting, scopes, budgets, timelines, and issue coordination.",
+        "Formal contract negotiation and procurement ownership are not documented."
+      ],
+      "proofIds": [
+        "account-management-01",
+        "account-management-03",
+        "addition:fcb-nuvigil-client-operations"
+      ],
+      "destinations": [
+        "skills",
+        "experience"
+      ],
+      "resumeTerms": [
+        "primary client contact",
+        "client status and financial reports",
+        "scopes of work"
+      ],
+      "matchMode": "contextual"
+    },
+    {
+      "id": "value-solutions-and-product-collaboration",
+      "text": "Create and quantify value solutions with Product Management and help shape the product portfolio.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Current client work turns unclear business questions into working POCs, demo flows, and roadmap decisions.",
+        "Kinesso work used research, adoption data, benchmarks, and recommendations to guide enterprise product priorities and client outputs."
+      ],
+      "proofIds": [
+        "one-block-away-01",
+        "one-block-away-04",
+        "kinesso-02",
+        "kinesso-03"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "AI POCs",
+        "roadmap decisions",
+        "benchmarks and recommendations"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "global-mes-program-consulting",
+      "text": "Provide management support and consulting to customers running global MES programs.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "proofIds": [],
+      "destinations": [
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "global MES programs",
+        "manufacturing execution systems"
+      ],
+      "matchMode": "not-supported"
+    },
+    {
+      "id": "executive-communication-and-influence",
+      "text": "Communicate from department teams through C-Level stakeholders and influence decisions through clear recommendations.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Kanvas work partnered with product and engineering on roadmap priorities and with C-suite stakeholders on monetization and go-to-market planning.",
+        "Agency work translated strategy into client-ready briefs, recommendations, status reports, and delivery decisions."
+      ],
+      "proofIds": [
+        "kinesso-08",
+        "account-management-03"
+      ],
+      "destinations": [
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "C-suite stakeholders",
+        "go-to-market planning"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "reporting-and-account-metrics",
+      "text": "Report monthly and quarterly progress, track account metrics, and connect short-term initiatives to strategic goals.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The resume documents weekly client status and financial reporting plus campaign and product metrics used to shape recommendations.",
+        "Measured work includes a 0.37% click-through rate against a 0.17% benchmark, doubled qualified traffic, and a 45% increase in new-to-brand consumers within seven weeks."
+      ],
+      "proofIds": [
+        "addition:fcb-nuvigil-client-operations",
+        "addition:scout-xyrem-bridging-campaign",
+        "account-management-03"
+      ],
+      "destinations": [
+        "skills",
+        "experience"
+      ],
+      "resumeTerms": [
+        "weekly client status and financial reporting",
+        "0.37% click-through rate",
+        "45% increase"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "matrix-and-global-team-delivery",
+      "text": "Drive results across a matrix organization and work effectively with global teams.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Kinesso work scaled product design from 2 to 30 across the US and Poland and coordinated product, engineering, research, design, and executive stakeholders.",
+        "Agency work coordinated clients, affiliates, vendors, creative, production, media, digital, and review teams."
+      ],
+      "proofIds": [
+        "kinesso-01",
+        "account-management-03",
+        "addition:rosetta-prevenar-client-contact"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience"
+      ],
+      "resumeTerms": [
+        "US and Poland",
+        "cross-functional delivery"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "crm-and-office-tools",
+      "text": "Bring experience with CRM software and Microsoft Office.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "The resume documents coordination of a CRM patient-support program from the business and delivery side.",
+        "It does not document CRM administration, a named CRM platform, or Microsoft Office proficiency."
+      ],
+      "proofIds": [
+        "addition:fcb-nuvigil-rebrand-crm"
+      ],
+      "destinations": [
+        "experience"
+      ],
+      "resumeTerms": [
+        "CRM patient support program"
+      ],
+      "matchMode": "contextual"
+    },
+    {
+      "id": "travel-availability",
+      "text": "Be willing to travel to customer sites and corporate offices.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "proofIds": [],
+      "destinations": [
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "willing to travel"
+      ],
+      "matchMode": "not-supported"
+    },
+    {
+      "id": "project-management-certification",
+      "text": "Bring IPMA or PMP certification as a preferred qualification.",
+      "priority": "preferred",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "proofIds": [],
+      "destinations": [
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "IPMA",
+        "PMP"
+      ],
+      "matchMode": "not-supported"
+    }
+  ],
+  "fitGate": {
+    "resumeBase": {
+      "mode": "account-leadership",
+      "sourceProfiles": [
+        {
+          "id": "account-leadership",
+          "version": 1
+        }
+      ],
+      "leadProfileId": "account-leadership",
+      "accountPresentation": "agency-progression",
+      "action": "tailor-to-jd",
+      "rationale": "The role's operating center is strategic customer ownership, account planning, reporting, and commercial relationship management. Account Leadership is the closest truthful base, with agency progression proving tenure and later UX, product, and AI work supporting regulated technology delivery."
+    },
+    "supportedOverlap": [
+      "Eight years of direct pharma and healthcare account progression from Account Coordinator through Account Supervisor.",
+      "Fortune 500 customer relationships, budgets up to $20M, primary client contact, scopes, timelines, reporting, vendors, and finished delivery.",
+      "Global and matrix experience across US and Poland teams, international affiliates, vendors, and an advisory board in Dubai.",
+      "Campaign and product metrics used to shape recommendations, including doubled qualified traffic and a 45% increase in new-to-brand consumers within seven weeks.",
+      "Recent regulated technology work covers pharma workflow discovery, product requirements, working POCs, review routing, and FDA monitoring.",
+      "Enterprise product work connected research, adoption data, analytics, roadmap priorities, product and engineering teams, and C-suite go-to-market planning."
+    ],
+    "unsupportedRequirements": [
+      "A strong MES sales record and experience selling Werum PAS-X or another manufacturing execution system are not documented.",
+      "Five to ten years of sales quota, pipeline, new-logo, or closed-won revenue ownership are not documented.",
+      "Global MES program consulting and biopharma manufacturing-operations experience are not documented.",
+      "Contract negotiation, procurement, and enterprise software deal ownership are not documented.",
+      "A named CRM platform, Microsoft Office proficiency, IPMA or PMP certification, and current travel availability are not documented."
+    ],
+    "actualMismatches": [
+      "The role is centered on enterprise MES sales, while the direct account background is in pharma communications and regulated program delivery.",
+      "Recent full-time work centers on UX, product strategy, and AI implementation rather than sales forecasting and commercial account expansion."
+    ],
+    "missingEvidence": [
+      "MES platform knowledge, manufacturing customer examples, and Werum PAS-X experience.",
+      "Quota attainment, pipeline value, deal size, renewal or expansion revenue, and closed-won results.",
+      "Contract negotiation, procurement, CRM forecasting, and formal account-plan ownership.",
+      "Private confirmation of travel availability and any named business software experience."
+    ],
+    "coverLetterBridge": {
+      "status": "not-credible",
+      "rationale": "A cover letter cannot credibly replace the missing MES sales, quota, pipeline, contract negotiation, and manufacturing-software evidence. The package therefore presents only the supported pharma account leadership, regulated delivery, product collaboration, and technology implementation work."
+    },
+    "recommendation": "Proceed only as the user-approved stretch. Lead with direct pharma account progression, customer ownership, regulated delivery, reporting, global teamwork, and product collaboration. Keep MES sales, quota attainment, pipeline ownership, contract negotiation, Werum PAS-X experience, and manufacturing-operations expertise out of the claim set."
+  },
+  "positioning": {
+    "laneId": "client-account-delivery",
+    "targetIdentity": "pharma strategic account leader",
+    "employerNeed": "Own strategic customer relationships, quantify value, coordinate product and delivery teams, and report account progress to executives.",
+    "bridgeType": "operating-center",
+    "applicationStrategy": "approved-stretch",
+    "bridgeThesis": "connect customer priorities, regulated delivery, product teams, and business decisions",
+    "proofIds": [
+      "account-management-01",
+      "one-block-away-01",
+      "kinesso-08"
+    ],
+    "remainingGap": "The current evidence does not establish MES sales, Werum PAS-X experience, quota or pipeline ownership, global MES program consulting, or contract negotiation."
+  },
+  "resume": {
+    "foundationId": "wally-mostafa-resume-2026-07-03",
+    "foundationVersion": 4,
+    "compositionMode": "profile-complete",
+    "layoutDensity": "compact",
+    "summary": "Pharma strategic account leader with eight years managing Fortune 500 healthcare relationships and budgets up to $20M. I connect customer priorities, regulated delivery, product teams, and business decisions across briefs, scopes, reporting, and cross-functional programs. Since then, enterprise UX and AI implementation work has added product strategy, global team leadership, and practical pharma technology delivery to that account foundation.",
+    "skillIds": [
+      "account-management-client-leadership",
+      "regulated-healthcare-client-delivery",
+      "program-project-delivery",
+      "client-success-product-adoption"
+    ],
+    "skills": [
+      {
+        "label": "Account Management & Client Leadership",
+        "description": "Client relationships, budgets up to $20M, briefs, scopes, timelines, status and financial reporting, vendor coordination, and cross-functional delivery"
+      },
+      {
+        "label": "Regulated Healthcare & Client Delivery",
+        "description": "11 years across pharma/healthcare communications, FDA/HIPAA/MLR workflows, HCP/patient UX, client workshops, and stakeholder adoption"
+      },
+      {
+        "label": "Program & Project Delivery",
+        "description": "Scoping, requirements, timelines, review routing, team coordination, risk visibility, and build-ready handoff across product, design, and client teams"
+      },
+      {
+        "label": "Client Success & Product Adoption",
+        "description": "Client discovery, adoption-focused workflows, training and roadshows, human review, and product decisions based on user needs"
+      }
+    ],
+    "experienceSections": [
+      {
+        "heading": "Account Management Experience",
+        "roleIds": [
+          "account-management"
+        ]
+      },
+      {
+        "heading": "Leadership & Recent Experience",
+        "roleIds": [
+          "hedgehox",
+          "one-block-away",
+          "kinesso",
+          "omnicom",
+          "heartbeat"
+        ]
+      }
+    ],
+    "awards": [
+      {
+        "label": "Indigo Awards 2023",
+        "detail": "Design System & Data Visualization: 3x Gold, 2x Silver",
+        "href": "https://www.indigoaward.com/winners/6748"
+      },
+      {
+        "label": "Indigo Awards 2022",
+        "detail": "Digital Audit Experience: 2x Gold, 2x Silver",
+        "href": "https://www.indigoaward.com/winners/4629"
+      },
+      {
+        "label": "Red Dot Awards 2021",
+        "detail": "Brands & Communication Design",
+        "href": "https://www.red-dot.org/project/dxa-digital-experience-audit-55219"
+      },
+      {
+        "label": "Manny Award 2013",
+        "detail": "Best Unbranded Campaign, \"Get Your Shift Together\""
+      },
+      {
+        "label": "Pharma Choice Awards 2011",
+        "detail": "Silver Consumer Print, Silver HCP Sales Aid, Bronze HCP Mobile Site"
+      }
+    ],
+    "roles": {
+      "hedgehox": [
+        "Translate pharma agency needs into working tools for MLR claim review, brief intake, scoping, review routing, submission capture, and FDA signal monitoring",
+        "Built Scope Generator for pharma agency finance and operations teams to manage regional rate cards, brands, sub-brands, and natural-language scope changes",
+        "Secured an investor for proprietary Claims Detection software by building the functional POC, shaping the demo story, and iterating with investors",
+        "Designed human-in-the-loop Claims Detector workflows that identify promotional claims, surface evidence gaps, and pre-populate audit-ready annotations before review"
+      ],
+      "one-block-away": [
+        "Build client-led AI POCs that turn unclear business questions into testable product surfaces, demo flows, and roadmap decisions",
+        "Built ListingPal's AI listing-generation POC and landing page, turning basic property inputs into listing copy, social posts, ad copy, styling direction, and MLS/SEO-ready language in under 90 seconds",
+        "Built WeReady's Bailey Intelligence dashboard, translating founder inputs, GitHub signals, source health, risk scoring, and evidence trails into startup-readiness workflows",
+        "Own product strategy, UX, AI workflow design, front-end build, backend logic, demo readiness, and client iteration from first ask through working prototype",
+        "Currently building the website and sponsor strategy for a Tunisia youth soccer program, positioning the project for player advancement, community support, and donor outreach"
+      ],
+      "kinesso": [
+        "Scaled product design from 2 to 30 across the US and Poland, hiring and staffing designers, leading critiques and quality reviews, and planning scope, resources, and engineering handoff across 20+ products",
+        "Led UX research and strategy for a marketing intelligence suite used by 7,000+ people across 22 white-label brands; turned findings and adoption data into roadmap priorities for navigation, dashboards, brand theming, personalization, and product support",
+        "UX lead for research and design on Kanvas, Kinesso's developer-first API services library; partnered with product and engineering on roadmap priorities and with C-suite stakeholders on monetization and go-to-market planning",
+        "Collaborated on the UX/UI build of Digital Experience Audit, turning channel scoring, benchmarks and recommendations into a repeatable workflow with data visualization and presentation-ready client outputs"
+      ],
+      "omnicom": [
+        "Supported oncology accounts as a freelance UX designer, combining UX design and account-management experience to strengthen regulated healthcare work"
+      ],
+      "heartbeat": [
+        "Led UX research and experience strategy for pharma and healthcare work, translating stakeholder input, competitive audits, and user needs into digital product direction",
+        "Created journey maps, site maps, user flows, wireframes, and prototypes for patient, HCP, and internal brand-team experiences across regulated healthcare programs",
+        "Partnered with strategy, creative, account, and engineering teams to move UX recommendations from research findings into build-ready product and campaign experiences"
+      ],
+      "account-management": [
+        {
+          "title": "Account Supervisor / Digital Strategist",
+          "employer": "Scout Marketing",
+          "location": "San Diego, CA",
+          "dateRange": "Jun 2015 – Jul 2018",
+          "bullets": [
+            "Promoted from Senior Account Executive and took the lead on Jazz Pharmaceuticals XYREM consumer work: unbranded campaigns across digital, print, and in-office channels that lifted traffic and engagement on the disease-state site",
+            "Led the launch of the first unbranded social campaign on Facebook and YouTube for the brand and for Jazz, built around real patients telling their own stories",
+            "Oversaw an unbranded digital campaign bridging disease state and branded work; banners held a 0.37% click-through rate against a 0.17% industry benchmark and doubled qualified traffic to the brand site"
+          ]
+        },
+        {
+          "title": "Senior Account Executive",
+          "employer": "FCB Health",
+          "location": "New York, NY",
+          "dateRange": "Jun 2014 – Jun 2015",
+          "bullets": [
+            "One of two consumer account leads on the agency's largest pharma business, managing the Actavis Namenda XR direct-to-consumer launch and its $20M brand budget",
+            "Owned the broadcast workstream for three national television commercials in one year, covering market research, med-legal review, FDA preclearance, pre- and post-production, talent and location coordination, director searches, and network clearances; the spots drove a 45% increase in new-to-brand consumers within seven weeks",
+            "Led the launch of an unbranded Alzheimer's caregiver community site with support resources, sponsorship exploration, and public relations pull-through; also oversaw the account's Assistant Account Executive across in-office tactics, national print, and sales representative support materials"
+          ]
+        },
+        {
+          "title": "Senior Account Executive",
+          "employer": "Barker DZP",
+          "location": "New York, NY",
+          "dateRange": "Dec 2013 – May 2014",
+          "bullets": [
+            "Led the social campaign for a new Tough Mudder loyalty program and oversaw PDI and Nice-Pak, the agency's largest account, across print, digital, and social"
+          ]
+        },
+        {
+          "title": "Senior Account Executive",
+          "employer": "Cline Davis & Mann",
+          "location": "New York, NY",
+          "dateRange": "Sep 2013 – Dec 2013",
+          "bullets": [
+            "Used campaign metrics to shape Pfizer digital recommendations for Lipitor's online presence and loyalty program during loss of exclusivity, and piloted a Zoloft savings offer to test market response"
+          ]
+        },
+        {
+          "title": "Assistant Account Executive to Account Executive",
+          "employer": "FCB Health",
+          "location": "New York, NY",
+          "dateRange": "Apr 2011 – Sep 2013",
+          "bullets": [
+            "Managed development and execution of the unbranded Teva NUVIGIL campaign for National Night Shift Workers' Day across Times Square NASDAQ, national television, Xbox Live, radio, outdoor, and consumer journals, working through media, digital, and print vendors; the campaign won the 2013 Manny Award for Best Unbranded Campaign",
+            "Coordinated the NUVIGIL.com consumer rebrand across desktop and mobile with the agency's digital strategy and development teams, plus the launch of a CRM patient support program and its online patient community",
+            "Worked alongside the HCP team on the NUVIGIL.com HCP site and sales aid, both of which won 2011 Pharma Choice awards",
+            "Owned weekly client status and financial reporting plus OPDP and review-committee submissions across the $10M consumer business, and contributed to the annual strategic recommendations"
+          ]
+        },
+        {
+          "title": "Account Coordinator",
+          "employer": "RosettaWishbone",
+          "location": "New York, NY",
+          "dateRange": "Sep 2010 – Mar 2011",
+          "bullets": [
+            "Primary client contact across brand teams, national affiliates, and vendors on an award-winning global unbranded pneumococcal disease awareness campaign for the Pfizer Prevenar 13 adult pre-launch",
+            "Facilitated an Africa and Middle East advisory board in Dubai and owned project briefs, scopes of work, key opinion leader communications, and client status and financial reports"
+          ]
+        }
+      ]
+    },
+    "sourceBulletIds": {
+      "hedgehox": [
+        "hedgehox-03",
+        "hedgehox-05",
+        "hedgehox-01",
+        "hedgehox-02"
+      ],
+      "one-block-away": [
+        "one-block-away-01",
+        "one-block-away-02",
+        "one-block-away-03",
+        "one-block-away-04",
+        "one-block-away-05"
+      ],
+      "kinesso": [
+        "kinesso-01",
+        "kinesso-02",
+        "kinesso-08",
+        "kinesso-03"
+      ],
+      "omnicom": [
+        "omnicom-01"
+      ],
+      "heartbeat": [
+        "heartbeat-01",
+        "heartbeat-02",
+        "heartbeat-03"
+      ],
+      "account-management": [
+        "addition:scout-xyrem-account-lead",
+        "addition:scout-xyrem-unbranded-social",
+        "addition:scout-xyrem-bridging-campaign",
+        "account-management-02",
+        "account-management-03",
+        "addition:fcb-namenda-caregiver-site",
+        "addition:barker-tough-mudder-pdi",
+        "addition:cdm-lipitor-zoloft-digital",
+        "account-management-01",
+        "addition:fcb-nuvigil-rebrand-crm",
+        "addition:fcb-nuvigil-hcp-collaboration",
+        "addition:fcb-nuvigil-client-operations",
+        "addition:rosetta-prevenar-client-contact",
+        "addition:rosetta-dubai-advisory"
+      ]
+    }
+  },
+  "hero": {
+    "eyebrow": "Körber | Selected Work",
+    "tags": [
+      "Pharma account leadership",
+      "Regulated delivery",
+      "Enterprise products"
+    ],
+    "intro": "I've pulled together four recent projects that may be useful alongside my resume for the Strategic Account Manager role. They cover regulated pharma workflows, client discovery, enterprise products, and decision-ready recommendations."
+  },
+  "contact": {
+    "prompt": "Email is the best way to reach me.",
+    "signoff": "Pharma account leadership | regulated delivery | product collaboration"
+  },
+  "route": {
+    "presentation": "showcase",
+    "heroIntent": "resume-support",
+    "showcaseSections": [
+      "chapters"
+    ],
+    "workHeading": "Selected work.",
+    "contactHeading": "Thanks for taking a look."
+  },
+  "copyReview": {
+    "humanizerVersion": "2.2.0",
+    "mode": "surface-only",
+    "status": "passed",
+    "reviewedAt": "2026-09-17T14:38:21.232Z",
+    "copySha256": "da709168d4a77497d8047c002de5f1152032233ad0bd140a8ff8481f1d38219d",
+    "preserved": [
+      "content",
+      "structure",
+      "claims",
+      "ending"
+    ],
+    "rewriteAuthorized": false,
+    "reviewMethod": "humanizer-skill",
+    "semanticPassAttested": true,
+    "staticChecksPassed": true,
+    "finalAntiAiPass": true,
+    "remainingTells": []
+  },
+  "constraints": {
+    "doNotClaim": [
+      "MES or Werum PAS-X sales experience",
+      "Manufacturing execution system expertise",
+      "Biopharma manufacturing-operations ownership",
+      "Global MES program management or consulting",
+      "Sales quota, closed-won revenue, new-logo, pipeline, or sales-forecast ownership",
+      "Renewal, retention, or expansion-revenue ownership",
+      "Contract negotiation, procurement, or enterprise software deal ownership",
+      "Salesforce or enterprise CRM administration",
+      "IPMA or PMP certification",
+      "Travel availability"
+    ],
+    "blockedTerms": [
+      "MES sales leader",
+      "Werum PAS-X expert",
+      "manufacturing execution system expert",
+      "global MES program manager",
+      "quota attainment",
+      "closed-won revenue",
+      "sales pipeline owner",
+      "contract negotiation",
+      "Salesforce administrator",
+      "PMP certified",
+      "willing to travel"
+    ]
+  },
+  "coverLetter": null,
+  "privacy": {
+    "publicSafe": true,
+    "notes": "Contains only the public Körber job description, the public LinkedIn posting, and public-safe evidence from the resume and portfolio. It excludes recruiter details, private eligibility information, application answers, compensation boundaries, and submission state."
+  },
+  "qa": {
+    "status": "qa-passed",
+    "builtAt": "2026-09-17T14:40:35.172Z",
+    "configInputSha256": "692b437b10cc955ab7c26f6b94f08ca7cc53f36f32c15086656542d348b72276",
+    "sourceResumeSha256": "8273f9c5f9038a159fa1d9ecc813e2c23069e37c7ef6dd0effe5439cef217fd7",
+    "resumeFoundation": {
+      "id": "wally-mostafa-resume-2026-07-03",
+      "sourcePdfSha256": "f9b05b6c3c134262b1af6c5734363daf4385cf335407a139779a37d138adf1aa"
+    },
+    "resumeBase": {
+      "mode": "account-leadership",
+      "sourceProfiles": [
+        {
+          "id": "account-leadership",
+          "version": 1
+        }
+      ],
+      "leadProfileId": "account-leadership",
+      "accountPresentation": "agency-progression",
+      "action": "tailor-to-jd",
+      "registryVersion": 1,
+      "registrySha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108"
+    },
+    "artifactHashes": {
+      "routeSha256": "2f1a62c2cc7bf66d48a426692ea0d3292810fcef21fd429caecfb77de0873d6a",
+      "resumePdfSha256": "89977da8b2aba118e9a3201037a3299b6c5cb5be9040ffa3881c88b36a755037",
+      "coverLetterPdfSha256": null,
+      "coverLetterMarkdownSha256": null,
+      "scopedProjectSha256": {
+        "project-01.html": "8ad83e3145e963098016558ec9a4b8c45a496048256f4eb8906af0d719f1496b",
+        "project-02.html": "37d94248650b114f7809411930a95853a1e88a7c81fa7efdd7f08c7dc520d5ff",
+        "project-06.html": "f0b5160818fb8b9af8b2d0225a89562342b610b34e7c9a1f10b5be585a9801c8",
+        "project-03.html": "2324abb4815141ac22fe430b056e001f9d5f51d86b8529e575e73ed3a096fe8e"
+      },
+      "scopedProjectAssetSha256": {}
+    },
+    "renderer": {
+      "browser": {
+        "name": "chrome-headless-shell",
+        "version": "Google Chrome for Testing 151.0.7922.34"
+      },
+      "htmlPath": "tmp/tailored-resumes/korber-strategic-account-manager.html",
+      "pdfPath": "output/pdf/Wally-Mostafa-Korber-Strategic-Account-Manager-Resume.pdf",
+      "fontWait": true,
+      "fontProfile": "portfolio-pdf"
+    },
+    "coverLetterRenderer": null,
+    "coverLetter": null,
+    "ats": {
+      "ok": true,
+      "pdfPath": "output/pdf/Wally-Mostafa-Korber-Strategic-Account-Manager-Resume.pdf",
+      "pageCount": 2,
+      "fileSize": 84774,
+      "annotations": [
+        {
+          "page": 1,
+          "uri": "mailto:wmostafa12@gmail.com"
+        },
+        {
+          "page": 1,
+          "uri": "https://linkedin.com/in/wallymo"
+        },
+        {
+          "page": 1,
+          "uri": "https://wallymo.github.io/korber-strategic-account-manager/"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/6748"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/4629"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.red-dot.org/project/dxa-digital-experience-audit-55219"
+        }
+      ],
+      "fontCompatibility": {
+        "type3Fonts": false
+      },
+      "coverage": [
+        {
+          "id": "regulated-technology-delivery",
+          "requirement": "Bring experience defining and delivering IT or technology projects in a regulated industry.",
+          "priority": "hard-gate",
+          "evidenceStatus": "direct",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "Regulated Healthcare & Client Delivery",
+            "MLR",
+            "FDA"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "strategic-account-leadership",
+          "requirement": "Drive account strategy and act as the lead customer contact for strategic pharma accounts.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "eight years",
+            "Account Supervisor",
+            "primary client contact"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "mes-sales-record",
+          "requirement": "Show a strong track record of sales in the MES space.",
+          "priority": "core",
+          "evidenceStatus": "none",
+          "matchMode": "not-supported",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "MES sales",
+            "Werum PAS-X"
+          ]
+        },
+        {
+          "id": "five-to-ten-years-sales",
+          "requirement": "Bring five to ten years of sales experience.",
+          "priority": "core",
+          "evidenceStatus": "none",
+          "matchMode": "not-supported",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "sales quota",
+            "closed-won revenue"
+          ]
+        },
+        {
+          "id": "global-pharma-account-strategy",
+          "requirement": "Develop global account strategies for Pharma, Biotech, and Cell & Gene customers.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "contextual",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "US and Poland",
+            "global unbranded",
+            "Dubai"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "customer-interface-and-escalation",
+          "requirement": "Manage the central customer relationship, satisfaction, steering, escalations, and contract matters.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "contextual",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "primary client contact",
+            "client status and financial reports",
+            "scopes of work"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "value-solutions-and-product-collaboration",
+          "requirement": "Create and quantify value solutions with Product Management and help shape the product portfolio.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "AI POCs",
+            "roadmap decisions",
+            "benchmarks and recommendations"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "global-mes-program-consulting",
+          "requirement": "Provide management support and consulting to customers running global MES programs.",
+          "priority": "core",
+          "evidenceStatus": "none",
+          "matchMode": "not-supported",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "global MES programs",
+            "manufacturing execution systems"
+          ]
+        },
+        {
+          "id": "executive-communication-and-influence",
+          "requirement": "Communicate from department teams through C-Level stakeholders and influence decisions through clear recommendations.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "C-suite stakeholders",
+            "go-to-market planning"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "reporting-and-account-metrics",
+          "requirement": "Report monthly and quarterly progress, track account metrics, and connect short-term initiatives to strategic goals.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "weekly client status and financial reporting",
+            "0.37% click-through rate",
+            "45% increase"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "matrix-and-global-team-delivery",
+          "requirement": "Drive results across a matrix organization and work effectively with global teams.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "US and Poland",
+            "cross-functional delivery"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "crm-and-office-tools",
+          "requirement": "Bring experience with CRM software and Microsoft Office.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "contextual",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "CRM patient support program"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "travel-availability",
+          "requirement": "Be willing to travel to customer sites and corporate offices.",
+          "priority": "core",
+          "evidenceStatus": "none",
+          "matchMode": "not-supported",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "willing to travel"
+          ]
+        },
+        {
+          "id": "project-management-certification",
+          "requirement": "Bring IPMA or PMP certification as a preferred qualification.",
+          "priority": "preferred",
+          "evidenceStatus": "none",
+          "matchMode": "not-supported",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "IPMA",
+            "PMP"
+          ]
+        }
+      ],
+      "failures": [],
+      "warnings": []
+    },
+    "humanizer": {
+      "status": "passed",
+      "version": "2.2.0",
+      "mode": "surface-only",
+      "reviewedAt": "2026-09-17T14:38:21.232Z",
+      "copySha256": "da709168d4a77497d8047c002de5f1152032233ad0bd140a8ff8481f1d38219d",
+      "reviewMethod": "humanizer-skill",
+      "semanticPassAttested": true,
+      "staticChecksPassed": true
+    },
+    "route": {
+      "viewports": [
+        {
+          "name": "desktop",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-01",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-02",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-06",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-03",
+          "errors": []
+        },
+        {
+          "name": "mobile",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-01",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-02",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-06",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-03",
+          "errors": []
+        }
+      ],
+      "errors": []
+    }
+  }
+}

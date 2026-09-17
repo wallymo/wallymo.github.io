@@ -2311,6 +2311,41 @@
       "publishStatus": "live-verified"
     },
     {
+      "workflowVersion": 2,
+      "contractRevision": 7,
+      "slug": "korber-strategic-account-manager",
+      "roleTitle": "Körber Strategic Account Manager",
+      "artifactStem": "Korber-Strategic-Account-Manager",
+      "configPath": "scripts/packages/korber-strategic-account-manager.json",
+      "targetLane": "client-account-delivery",
+      "evidenceMode": "resume-primary",
+      "fitClass": "stretch",
+      "positioningLane": "client-account-delivery",
+      "bridgeType": "operating-center",
+      "applicationStrategy": "approved-stretch",
+      "resumeBaseMode": "account-leadership",
+      "resumeBaseLeadProfile": "account-leadership",
+      "resumeBaseAction": "tailor-to-jd",
+      "accountPresentation": "agency-progression",
+      "resumeBaseProfiles": [
+        {
+          "id": "account-leadership",
+          "version": 1
+        }
+      ],
+      "routeMode": "scoped-projects",
+      "selectedProjects": [
+        "project-01.html",
+        "project-02.html",
+        "project-06.html",
+        "project-03.html"
+      ],
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Korber-Strategic-Account-Manager-Resume.pdf",
+      "publishStatus": "local-only",
+      "qaStatus": "qa-passed",
+      "builtAt": "2026-09-17T14:40:35.172Z"
+    },
+    {
       "slug": "leadventure-product-specialist",
       "roleTitle": "LeadVenture Product Specialist",
       "fitClass": "adjacent",
