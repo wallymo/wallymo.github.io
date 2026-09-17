@@ -136,7 +136,7 @@ def main() -> int:
                         chapter_states = []
                         for fraction in (0.1, 0.45, 0.8):
                             page.evaluate(
-                                "([start, travel, fraction]) => scrollTo(0, start + travel * fraction)",
+                                "([start, travel, fraction]) => scrollTo({ top: start + travel * fraction, behavior: 'instant' })",
                                 [
                                     chapter_scroll["start"],
                                     chapter_scroll["travel"],
@@ -153,7 +153,7 @@ def main() -> int:
                             check_errors.append(
                                 f"desktop Chapters did not progress account -> ux -> ai: {chapter_states}"
                             )
-                        page.evaluate("scrollTo(0, 0)")
+                        page.evaluate("scrollTo({ top: 0, behavior: 'instant' })")
                     except Exception as error:
                         check_errors.append(
                             f"desktop Chapters animation unavailable: {error}"
