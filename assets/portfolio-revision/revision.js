@@ -12,10 +12,13 @@
   const chapterNav = chapters?.querySelector('.chapter-tabs');
   const identities = panels.map(panel => panel.querySelector('.chapter-identity'));
   const proofs = panels.map(panel => panel.querySelector('.chapter-proof'));
+  const chapterMarks = panels.map(panel => panel.querySelector('.chapter-mark'));
   const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
   const gsap = window.gsap;
   let chaptersPinned = false;
   let chapterAnimations = [];
+  let chapterReplayCall;
+  let chapterReplayTimeline;
   let chapterLayoutReady = false;
   let chapterReading = false;
   let chapterLayoutSize = '';
@@ -159,9 +162,92 @@
     chapterAnimations = [];
   }
 
+  function chapterIsVisible() {
+    if (!chapters) return false;
+    const bounds = chapters.getBoundingClientRect();
+    return bounds.top < window.innerHeight && bounds.bottom > navOffset();
+  }
+
+  function settleChapterMarks() {
+    chapterMarks.forEach((mark) => {
+      if (!mark) return;
+      mark.style.removeProperty('opacity');
+      mark.style.removeProperty('transform');
+      mark.querySelectorAll('line, circle, rect, path').forEach((stroke) => {
+        stroke.style.removeProperty('stroke-dasharray');
+        stroke.style.removeProperty('stroke-dashoffset');
+      });
+    });
+  }
+
+  function stopChapterReplay(settle = true) {
+    chapterReplayCall?.kill();
+    chapterReplayTimeline?.kill();
+    chapterReplayCall = undefined;
+    chapterReplayTimeline = undefined;
+    if (gsap) gsap.killTweensOf(chapterMarks.filter(Boolean));
+    if (settle) settleChapterMarks();
+    if (chapters) chapters.dataset.iconReplay = motion.matches ? 'disabled' : 'idle';
+  }
+
+  function scheduleChapterReplay(index, delay = 4.5) {
+    if (!chapters || !gsap || motion.matches || document.hidden || !chapterIsVisible()) return;
+    chapterReplayCall?.kill();
+    chapters.dataset.iconReplay = 'scheduled';
+    chapterReplayCall = gsap.delayedCall(delay, () => {
+      chapterReplayCall = undefined;
+      if (index !== selected || document.hidden || !chapterIsVisible()) {
+        chapters.dataset.iconReplay = 'idle';
+        return;
+      }
+      replayChapterMark(index);
+    });
+  }
+
+  function replayChapterMark(index) {
+    const mark = chapterMarks[index];
+    if (!mark || !gsap) return;
+    const strokes = [...mark.querySelectorAll('line, circle, rect, path')];
+    gsap.killTweensOf([mark, ...strokes]);
+    chapters.dataset.iconReplay = 'animating';
+    chapters.dataset.iconReplayMark = chapters.dataset.activeChapter;
+    chapters.dataset.iconReplayCount = String((Number(chapters.dataset.iconReplayCount) || 0) + 1);
+    chapterReplayTimeline = gsap.timeline({
+      defaults: { overwrite: true },
+      onComplete: () => {
+        chapterReplayTimeline = undefined;
+        settleChapterMarks();
+        scheduleChapterReplay(index, 6);
+      }
+    });
+    chapterReplayTimeline
+      .to(mark, { opacity: 0, scale: .965, transformOrigin: '50% 50%', duration: .24, ease: 'power2.out' })
+      .add(() => {
+        strokes.forEach((stroke) => {
+          const length = Math.max(1, stroke.getTotalLength());
+          gsap.set(stroke, { strokeDasharray: length, strokeDashoffset: length });
+        });
+        gsap.set(mark, { opacity: 1, scale: 1 });
+      })
+      .to(strokes, { strokeDashoffset: 0, duration: .56, stagger: .035, ease: 'power3.out' });
+  }
+
+  function syncChapterReplay(delay = 4.5) {
+    if (!chapters || !gsap || motion.matches) {
+      stopChapterReplay();
+      return;
+    }
+    if (!chapterIsVisible() || document.hidden) {
+      stopChapterReplay();
+      return;
+    }
+    if (!chapterReplayCall && !chapterReplayTimeline) scheduleChapterReplay(selected, delay);
+  }
+
   function activate(index, animate = false) {
     const previous = selected;
     clearChapterAnimations();
+    stopChapterReplay();
     selected = Math.max(0, Math.min(panels.length - 1, index));
     chapters.dataset.activeChapter = ['account', 'ux', 'ai'][selected];
     chapters.style.setProperty('--chapter-progress', String(selected / Math.max(1, panels.length - 1)));
@@ -200,6 +286,7 @@
         { opacity: 1, transform: 'translateY(0)' }
       ], { duration: 340, easing: 'cubic-bezier(.22,1,.36,1)' }));
     }
+    scheduleChapterReplay(selected, 4.5);
   }
 
   function setupChapters() {
@@ -355,6 +442,7 @@
       }
     } else return;
     anchorHandled = true;
+    requestAnimationFrame(() => syncChapterReplay(4.5));
   }
 
   document.querySelectorAll('a[href="#chapters"], a[href="#arc"]').forEach((link) => {
@@ -390,6 +478,7 @@
       entryFrame = undefined;
       syncStack();
       syncChapterScroll();
+      syncChapterReplay();
     });
   }, { passive: true });
   window.addEventListener('resize', () => {
@@ -400,7 +489,11 @@
     cancelAnimationFrame(resizeFrame);
     resizeFrame = requestAnimationFrame(setup);
   });
-  motion.addEventListener('change', setup);
+  motion.addEventListener('change', () => { setup(); syncChapterReplay(); });
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden) stopChapterReplay();
+    else syncChapterReplay(3);
+  });
 })();
 
 // Decorative logo follower; the award names remain ordinary accessible links.
