@@ -5229,9 +5229,37 @@
         "project-03.html"
       ],
       "resumePdfPath": "output/pdf/Wally-Mostafa-UX-Product-Design-Resume.pdf",
-      "publishStatus": "local-only",
+      "publishStatus": "live-verified",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-09-17T20:16:25.120Z"
+      "builtAt": "2026-09-17T20:16:25.120Z",
+      "verification": {
+        "verifiedAt": "2026-09-17T20:17:47.711Z",
+        "routeUrl": "https://wallymo.github.io/ux-product-design/",
+        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-UX-Product-Design-Resume.pdf",
+        "configUrl": "https://wallymo.github.io/scripts/packages/ux-product-design.json",
+        "projectUrls": [
+          "https://wallymo.github.io/ux-product-design/project-05.html",
+          "https://wallymo.github.io/ux-product-design/project-04.html",
+          "https://wallymo.github.io/ux-product-design/project-06.html",
+          "https://wallymo.github.io/ux-product-design/project-03.html"
+        ],
+        "redirectUrls": [],
+        "configSha256": "3ffdeb6401b1973cbf597d7f0f19ab3cc128fe70087c6cd508a0c66466f0e832",
+        "pdfSha256": "faefbf8a0326321572e51ca425a90fb7a8bd8950d25edad241ef4997d6c16cbf",
+        "resumeBaseProfilesUrl": "https://wallymo.github.io/scripts/resume-base-profiles.json",
+        "resumeBaseProfilesSha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108",
+        "routeSha256": "e44173c5d5c12a4812f3436fc55c26a9bcb6f246718d411a48cab0aa2759e7d3",
+        "scopedProjectSha256": {
+          "project-05.html": "860d46f5479e6bd03935f844dbd0f7ac9b3fcc09992d24a849131cd49d8e8fd1",
+          "project-04.html": "54f9abef4ea9b7bcce82c2d172ef97e47176e356f73571a24ff5f40664b129db",
+          "project-06.html": "8f2d591661747cc72604b8c3707dca1fa6fe106ad2ae7de0975ce2b5fe2c6ecf",
+          "project-03.html": "71474dd106f67c6ac269d5acc468ec40612cb032f418bd6bd066814e1ae40fde"
+        },
+        "scopedProjectAssetUrls": [],
+        "scopedProjectAssetSha256": {},
+        "configInputSha256": "d30fad03d69d005c18095e190a345d77de917ee37871e9d2661809e59a508e43",
+        "qaBuiltAt": "2026-09-17T20:16:25.120Z"
+      }
     },
     {
       "workflowVersion": 2,
