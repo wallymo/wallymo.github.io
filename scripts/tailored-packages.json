@@ -2659,6 +2659,41 @@
       "publishStatus": "tracked-unverified"
     },
     {
+      "workflowVersion": 2,
+      "contractRevision": 7,
+      "slug": "marsh-mclennan-agency-senior-client-manager-rx-solutions",
+      "roleTitle": "MMA Senior Client Manager Rx Solutions",
+      "artifactStem": "MMA-Senior-Client-Manager-Rx-Solutions",
+      "configPath": "scripts/packages/marsh-mclennan-agency-senior-client-manager-rx-solutions.json",
+      "targetLane": "client-account-delivery",
+      "evidenceMode": "resume-primary",
+      "fitClass": "stretch",
+      "positioningLane": "client-account-delivery",
+      "bridgeType": "operating-center",
+      "applicationStrategy": "approved-stretch",
+      "resumeBaseMode": "account-leadership",
+      "resumeBaseLeadProfile": "account-leadership",
+      "resumeBaseAction": "tailor-to-jd",
+      "accountPresentation": "agency-progression",
+      "resumeBaseProfiles": [
+        {
+          "id": "account-leadership",
+          "version": 1
+        }
+      ],
+      "routeMode": "scoped-projects",
+      "selectedProjects": [
+        "project-01.html",
+        "project-06.html",
+        "project-04.html",
+        "project-03.html"
+      ],
+      "resumePdfPath": "output/pdf/Wally-Mostafa-MMA-Senior-Client-Manager-Rx-Solutions-Resume.pdf",
+      "publishStatus": "local-only",
+      "qaStatus": "qa-passed",
+      "builtAt": "2026-09-17T18:38:51.745Z"
+    },
+    {
       "slug": "maximus-principal-ai-strategy",
       "roleTitle": "Principal Consultant - AI Strategy",
       "fitClass": "unclassified",

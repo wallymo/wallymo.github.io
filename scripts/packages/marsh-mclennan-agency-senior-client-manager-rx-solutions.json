@@ -1,0 +1,997 @@
+{
+  "workflowVersion": 2,
+  "contractRevision": 7,
+  "slug": "marsh-mclennan-agency-senior-client-manager-rx-solutions",
+  "roleTitle": "MMA Senior Client Manager Rx Solutions",
+  "artifactStem": "MMA-Senior-Client-Manager-Rx-Solutions",
+  "fitClass": "stretch",
+  "routeMode": "scoped-projects",
+  "selectedProjects": [
+    "project-01.html",
+    "project-06.html",
+    "project-04.html",
+    "project-03.html"
+  ],
+  "job": {
+    "company": "Marsh McLennan Agency",
+    "roleTitle": "Senior Client Manager Rx Solutions",
+    "jobId": "not-provided",
+    "jobUrl": "not-provided",
+    "sourceChannel": "user-provided job description",
+    "dateCaptured": "2026-09-17",
+    "location": "not provided",
+    "employmentType": "not provided",
+    "atsVendor": "not provided",
+    "rawJd": "Marsh McLennan Agency is hiring a Senior Client Manager for its Rx Solutions team. MMA provides business insurance, employee health and benefits, retirement, and private client insurance solutions. Rx Solutions uses clinical analytics, pharmacy contract language, formulary strategy, employee purchasing trends, and ongoing program management to identify savings and improve pharmacy benefits.\n\nThe Senior Client Manager manages client deliverables, supports Regional Directors, and works with the Rx Solutions team, MMA field teams, pharmacy benefit managers, and strategic partners to meet deadlines. The role is the primary resource for pharmacy questions, reviews draft contracts against MMA provisions and best practices, helps analyze and negotiate employer pharmacy-benefit contracts, tracks deliverables, coordinates reporting and presentations, communicates with clients and company representatives, and follows industry changes for compliance and risk reduction. The work supports sales growth, client retention, savings opportunities, clinical and formulary recommendations, and member engagement.\n\nRequired qualifications include a bachelor's degree or equivalent career experience; knowledge of pharmacy terminology, pharmacy cost drivers, and PBM contracts; aptitude for data analytics; at least ten years of Account Management, Pharmacy Benefit Management, and/or Carrier experience; and permanent ongoing US work authorization without sponsorship. Pharmacy pricing or underwriting is preferred. Current Life and Health licensure, or the ability to obtain it within 90 days, is also preferred."
+  },
+  "classification": {
+    "targetLane": "client-account-delivery",
+    "evidenceMode": "resume-primary",
+    "primarySource": "The resume proves eight years of direct pharmaceutical account leadership, Fortune 500 client relationships, budgets up to $20M, client and financial reporting, regulated review, cross-functional delivery, and analytics-backed recommendations. It does not prove PBM work, pharmacy-benefit contract expertise, pharmacy pricing, or ten years in account management, PBM, or carrier roles.",
+    "supportingSource": "The portfolio validates regulated healthcare workflows, enterprise analytics, research, data visualization, and presentation-ready recommendations. It strengthens the client-management and analytics case but cannot replace direct PBM, formulary, pharmacy-cost, or contract-negotiation experience.",
+    "hardGateStatus": "pass",
+    "hardGates": [
+      {
+        "gate": "Hold a bachelor's degree or equivalent career experience",
+        "status": "pass",
+        "requirementId": "bachelors-degree",
+        "evidence": "The resume lists a BA in Labor Studies and Employee Relations from Rutgers University."
+      }
+    ]
+  },
+  "requirements": [
+    {
+      "id": "bachelors-degree",
+      "text": "Hold a bachelor's degree or equivalent career experience.",
+      "priority": "hard-gate",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The resume lists a BA in Labor Studies and Employee Relations from Rutgers University."
+      ],
+      "proofIds": [],
+      "destinations": [
+        "experience"
+      ],
+      "resumeTerms": [
+        "BA Labor Studies & Employee Relations",
+        "Rutgers University"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "ten-years-account-pbm-carrier",
+      "text": "Bring at least ten years of Account Management, Pharmacy Benefit Management, and/or Carrier experience.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "The resume documents eight years of pharma and healthcare account progression from Account Coordinator through Account Supervisor.",
+        "Later roles remained client-facing but were centered on UX, product strategy, and AI implementation rather than Account Management, PBM, or Carrier work."
+      ],
+      "proofIds": [
+        "account-management-01"
+      ],
+      "destinations": [
+        "summary",
+        "experience"
+      ],
+      "resumeTerms": [
+        "eight years",
+        "Account Supervisor"
+      ],
+      "matchMode": "contextual"
+    },
+    {
+      "id": "pbm-pharmacy-knowledge",
+      "text": "Know pharmacy terminology, the drivers of pharmacy costs, and PBM contracts.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "proofIds": [],
+      "destinations": [
+        "application-answer"
+      ],
+      "resumeTerms": [
+        "PBM contracts",
+        "pharmacy cost drivers"
+      ],
+      "matchMode": "not-supported"
+    },
+    {
+      "id": "data-analytics-aptitude",
+      "text": "Bring an aptitude for data analytics and use analysis to support client recommendations.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Kinesso work used research, adoption data, channel scoring, benchmarks, and data visualization to guide roadmap priorities and presentation-ready client recommendations.",
+        "Agency work used campaign metrics to shape recommendations and documented measured outcomes against industry benchmarks."
+      ],
+      "proofIds": [
+        "kinesso-02",
+        "kinesso-03",
+        "addition:scout-xyrem-bridging-campaign"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "enterprise analytics",
+        "benchmarks and recommendations",
+        "data visualization"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "client-deliverables-and-coordination",
+      "text": "Manage client deliverables and deadlines while coordinating internal teams, field partners, PBMs, and strategic partners.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The resume documents primary client contact, briefs, scopes, timelines, budgets, vendors, status reporting, and cross-functional delivery across pharmaceutical programs.",
+        "Later work coordinated product, engineering, research, design, and executive stakeholders across more than 20 products."
+      ],
+      "proofIds": [
+        "addition:rosetta-prevenar-client-contact",
+        "account-management-03",
+        "kinesso-01"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "primary client contact",
+        "status and financial reporting",
+        "cross-functional delivery"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "pbm-contract-review-and-negotiation",
+      "text": "Review, analyze, and help negotiate employer pharmacy-benefit contracts against MMA provisions and best practices.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "proofIds": [],
+      "destinations": [
+        "application-answer"
+      ],
+      "resumeTerms": [
+        "PBM contract review",
+        "contract negotiation"
+      ],
+      "matchMode": "not-supported"
+    },
+    {
+      "id": "pharmacy-clinical-formulary-strategy",
+      "text": "Answer pharmacy questions and use clinical, formulary, contract, and employee purchasing information to recommend program changes and savings opportunities.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "proofIds": [],
+      "destinations": [
+        "application-answer"
+      ],
+      "resumeTerms": [
+        "clinical and formulary management",
+        "employee purchasing trends"
+      ],
+      "matchMode": "not-supported"
+    },
+    {
+      "id": "reporting-presentations-and-issues",
+      "text": "Track deliverables, coordinate accurate reporting and presentations, and communicate with clients and company representatives about potential issues.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The resume documents weekly client status and financial reporting, client-ready presentations, budgets, timelines, vendor coordination, and risk visibility.",
+        "Digital Experience Audit turned channel scoring, benchmarks, and recommendations into repeatable reports and presentation-ready client outputs."
+      ],
+      "proofIds": [
+        "addition:fcb-nuvigil-client-operations",
+        "account-management-03",
+        "kinesso-03"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "client status and financial reporting",
+        "presentation-ready client outputs",
+        "risk visibility"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "sales-growth-and-client-retention",
+      "text": "Support sales growth and client retention by delivering useful, data-backed client solutions.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "contextual",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "The resume shows client relationships, analytics-backed recommendations, measured campaign outcomes, and practical client solutions.",
+        "Formal ownership of sales growth, renewals, retention targets, or expansion revenue is not documented."
+      ],
+      "proofIds": [
+        "addition:scout-xyrem-bridging-campaign",
+        "kinesso-03",
+        "one-block-away-01"
+      ],
+      "destinations": [
+        "summary",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "client relationships",
+        "recommendations",
+        "client-led"
+      ],
+      "matchMode": "contextual"
+    },
+    {
+      "id": "industry-compliance-and-risk",
+      "text": "Stay current on industry changes to support compliance and reduce client risk.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "The resume documents FDA, OPDP, med-legal, MLR, HIPAA, and review-committee work across regulated healthcare programs.",
+        "The documented compliance experience is pharmaceutical communications and workflow review, not pharmacy-benefit regulation."
+      ],
+      "proofIds": [
+        "account-management-02",
+        "addition:fcb-nuvigil-client-operations",
+        "hedgehox-03"
+      ],
+      "destinations": [
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "FDA",
+        "MLR",
+        "regulated healthcare"
+      ],
+      "matchMode": "contextual"
+    },
+    {
+      "id": "permanent-us-work-authorization",
+      "text": "Have permanent ongoing US work authorization without current or future sponsorship.",
+      "priority": "context",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "proofIds": [],
+      "destinations": [
+        "application-answer"
+      ],
+      "resumeTerms": [
+        "permanent US work authorization"
+      ],
+      "matchMode": "not-supported"
+    },
+    {
+      "id": "pharmacy-pricing-underwriting",
+      "text": "Bring pharmacy pricing or underwriting experience as a preferred qualification.",
+      "priority": "preferred",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "proofIds": [],
+      "destinations": [
+        "application-answer"
+      ],
+      "resumeTerms": [
+        "pharmacy pricing",
+        "underwriting"
+      ],
+      "matchMode": "not-supported"
+    },
+    {
+      "id": "life-health-license",
+      "text": "Hold a current Life and Health license or be able to obtain one within 90 days as a preferred qualification.",
+      "priority": "preferred",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "proofIds": [],
+      "destinations": [
+        "application-answer"
+      ],
+      "resumeTerms": [
+        "Life and Health license"
+      ],
+      "matchMode": "not-supported"
+    }
+  ],
+  "fitGate": {
+    "resumeBase": {
+      "mode": "account-leadership",
+      "sourceProfiles": [
+        {
+          "id": "account-leadership",
+          "version": 1
+        }
+      ],
+      "leadProfileId": "account-leadership",
+      "accountPresentation": "agency-progression",
+      "action": "tailor-to-jd",
+      "rationale": "The role's operating center is client ownership, deliverable management, reporting, analytics, and partner coordination within a pharmacy-benefits practice. Account Leadership is the closest truthful base, with agency progression proving direct tenure and later UX, analytics, and AI work supporting the transferable parts of the role."
+    },
+    "supportedOverlap": [
+      "Eight years of direct pharmaceutical and healthcare account progression from Account Coordinator through Account Supervisor.",
+      "Fortune 500 client relationships, budgets up to $20M, primary client contact, scopes, timelines, reporting, vendors, and finished delivery.",
+      "Campaign and product data used to shape recommendations, including channel scoring, benchmarks, data visualization, and presentation-ready client outputs.",
+      "Regulated healthcare experience across FDA, OPDP, med-legal, MLR, HIPAA, and review-committee workflows.",
+      "Cross-functional coordination across client, account, strategy, creative, production, media, digital, UX, product, engineering, analytics, and vendor teams."
+    ],
+    "unsupportedRequirements": [
+      "PBM experience, pharmacy terminology, pharmacy cost drivers, and employer pharmacy-benefit contracts are not documented.",
+      "Clinical and formulary management, employee pharmacy purchasing trends, and member-engagement strategy are not documented.",
+      "Pharmacy-contract analysis or negotiation, pricing, underwriting, and savings modeling are not documented.",
+      "The resume shows eight years of direct account management rather than the stated minimum of ten years in Account Management, PBM, and/or Carrier work.",
+      "Life and Health licensure and private confirmation of permanent US work authorization are not documented in the public package."
+    ],
+    "actualMismatches": [
+      "The role is centered on pharmacy-benefit client management and PBM contract expertise, while the direct account background is in pharmaceutical communications and regulated digital delivery.",
+      "The documented direct account-management tenure is eight years, below the posting's ten-year minimum."
+    ],
+    "missingEvidence": [
+      "PBM, carrier, or employer pharmacy-benefit client examples.",
+      "Pharmacy contract review, pricing, underwriting, clinical or formulary analysis, and quantified savings recommendations.",
+      "Sales-growth, renewal, retention, or account-expansion ownership.",
+      "Private confirmation of permanent US work authorization and the ability to obtain Life and Health licensure within 90 days."
+    ],
+    "coverLetterBridge": {
+      "status": "not-credible",
+      "rationale": "A cover letter cannot credibly replace the missing PBM, pharmacy-cost, formulary, contract-analysis, contract-negotiation, and ten-year experience evidence. The package therefore presents only the supported pharmaceutical account leadership, regulated delivery, analytics, reporting, and cross-functional work."
+    },
+    "recommendation": "Proceed only as the user-approved stretch. Lead with pharmaceutical account progression, client ownership, regulated delivery, analytics-backed recommendations, reporting, and cross-functional coordination. Keep PBM experience, pharmacy-benefit expertise, contract analysis or negotiation, pricing, underwriting, formulary work, member engagement, savings modeling, and ten years of direct account tenure out of the claim set."
+  },
+  "positioning": {
+    "laneId": "client-account-delivery",
+    "targetIdentity": "healthcare client leader",
+    "employerNeed": "Manage Rx Solutions client deliverables, pharmacy-contract questions, PBM collaboration, reporting, and analytics-backed recommendations that support savings and retention.",
+    "bridgeType": "operating-center",
+    "applicationStrategy": "approved-stretch",
+    "bridgeThesis": "connect pharma account leadership, regulated delivery, and analytics-backed recommendations to client management",
+    "proofIds": [
+      "account-management-01",
+      "account-management-03",
+      "kinesso-03"
+    ],
+    "remainingGap": "The current evidence does not establish PBM or carrier experience, pharmacy-cost and formulary knowledge, employer pharmacy-contract analysis or negotiation, pharmacy pricing or underwriting, or the stated ten years of direct account, PBM, or carrier tenure."
+  },
+  "resume": {
+    "foundationId": "wally-mostafa-resume-2026-07-03",
+    "foundationVersion": 4,
+    "compositionMode": "profile-complete",
+    "layoutDensity": "compact",
+    "summary": "Healthcare client leader with eight years in pharmaceutical agency account management. I connect pharma account leadership, regulated delivery, and analytics-backed recommendations to client management across briefs, budgets, reporting, and cross-functional programs. Later enterprise UX and AI implementation work added data visualization, research, and practical healthcare workflow design.",
+    "skillIds": [
+      "account-management-client-leadership",
+      "regulated-healthcare-client-delivery",
+      "program-project-delivery",
+      "enterprise-ux-design-systems"
+    ],
+    "skills": [
+      {
+        "label": "Account Management & Client Leadership",
+        "description": "Client relationships, budgets up to $20M, briefs, scopes, timelines, status and financial reporting, vendor coordination, and cross-functional delivery"
+      },
+      {
+        "label": "Regulated Healthcare & Client Delivery",
+        "description": "11 years across pharma/healthcare communications, FDA/HIPAA/MLR workflows, HCP/patient UX, client workshops, and stakeholder adoption"
+      },
+      {
+        "label": "Program & Project Delivery",
+        "description": "Scoping, requirements, timelines, review routing, team coordination, risk visibility, and build-ready handoff across product, design, and client teams"
+      },
+      {
+        "label": "Enterprise UX & Design Systems",
+        "description": "Team scaling (2 to 30), enterprise analytics, workflow UX, data visualization, component libraries, and accessibility (WCAG)"
+      }
+    ],
+    "experienceSections": [
+      {
+        "heading": "Account Management Experience",
+        "roleIds": [
+          "account-management"
+        ]
+      },
+      {
+        "heading": "Leadership & Recent Experience",
+        "roleIds": [
+          "hedgehox",
+          "one-block-away",
+          "kinesso",
+          "omnicom",
+          "heartbeat"
+        ]
+      }
+    ],
+    "awards": [
+      {
+        "label": "Indigo Awards 2023",
+        "detail": "Design System & Data Visualization: 3x Gold, 2x Silver",
+        "href": "https://www.indigoaward.com/winners/6748"
+      },
+      {
+        "label": "Indigo Awards 2022",
+        "detail": "Digital Audit Experience: 2x Gold, 2x Silver",
+        "href": "https://www.indigoaward.com/winners/4629"
+      },
+      {
+        "label": "Red Dot Awards 2021",
+        "detail": "Brands & Communication Design",
+        "href": "https://www.red-dot.org/project/dxa-digital-experience-audit-55219"
+      },
+      {
+        "label": "Manny Award 2013",
+        "detail": "Best Unbranded Campaign, \"Get Your Shift Together\""
+      },
+      {
+        "label": "Pharma Choice Awards 2011",
+        "detail": "Silver Consumer Print, Silver HCP Sales Aid, Bronze HCP Mobile Site"
+      }
+    ],
+    "roles": {
+      "hedgehox": [
+        "Translate pharma agency needs into working tools for MLR claim review, brief intake, scoping, review routing, submission capture, and FDA signal monitoring",
+        "Built Scope Generator for pharma agency finance and operations teams to manage regional rate cards, brands, sub-brands, and natural-language scope changes",
+        "Secured an investor for proprietary Claims Detection software by building the functional POC, shaping the demo story, and iterating with investors",
+        "Designed human-in-the-loop Claims Detector workflows that identify promotional claims, surface evidence gaps, and pre-populate audit-ready annotations before review"
+      ],
+      "one-block-away": [
+        "Build client-led AI POCs that turn unclear business questions into testable product surfaces, demo flows, and roadmap decisions",
+        "Built ListingPal's AI listing-generation POC and landing page, turning basic property inputs into listing copy, social posts, ad copy, styling direction, and MLS/SEO-ready language in under 90 seconds",
+        "Built WeReady's Bailey Intelligence dashboard, translating founder inputs, GitHub signals, source health, risk scoring, and evidence trails into startup-readiness workflows",
+        "Own product strategy, UX, AI workflow design, front-end build, backend logic, demo readiness, and client iteration from first ask through working prototype",
+        "Currently building the website and sponsor strategy for a Tunisia youth soccer program, positioning the project for player advancement, community support, and donor outreach"
+      ],
+      "kinesso": [
+        "Scaled product design from 2 to 30 across the US and Poland, hiring and staffing designers, leading critiques and quality reviews, and planning scope, resources, and engineering handoff across 20+ products",
+        "Led UX research and strategy for a marketing intelligence suite used by 7,000+ people across 22 white-label brands; turned findings and adoption data into roadmap priorities for navigation, dashboards, brand theming, personalization, and product support",
+        "UX lead for research and design on Kanvas, Kinesso's developer-first API services library; partnered with product and engineering on roadmap priorities and with C-suite stakeholders on monetization and go-to-market planning",
+        "Collaborated on the UX/UI build of Digital Experience Audit, turning channel scoring, benchmarks, and recommendations into a repeatable workflow with data visualization and presentation-ready client outputs"
+      ],
+      "omnicom": [
+        "Supported oncology accounts as a freelance UX designer, combining UX design and account-management experience to strengthen regulated healthcare work"
+      ],
+      "heartbeat": [
+        "Led UX research and experience strategy for pharma and healthcare work, translating stakeholder input, competitive audits, and user needs into digital product direction",
+        "Created journey maps, site maps, user flows, wireframes, and prototypes for patient, HCP, and internal brand-team experiences across regulated healthcare programs",
+        "Partnered with strategy, creative, account, and engineering teams to move UX recommendations from research findings into build-ready product and campaign experiences"
+      ],
+      "account-management": [
+        {
+          "title": "Account Supervisor / Digital Strategist",
+          "employer": "Scout Marketing",
+          "location": "San Diego, CA",
+          "dateRange": "Jun 2015 – Jul 2018",
+          "bullets": [
+            "Promoted from Senior Account Executive and took the lead on Jazz Pharmaceuticals XYREM consumer work: unbranded campaigns across digital, print, and in-office channels that lifted traffic and engagement on the disease-state site",
+            "Led the launch of the first unbranded social campaign on Facebook and YouTube for the brand and for Jazz, built around real patients telling their own stories",
+            "Oversaw an unbranded digital campaign bridging disease state and branded work; banners held a 0.37% click-through rate against a 0.17% industry benchmark and doubled qualified traffic to the brand site"
+          ]
+        },
+        {
+          "title": "Senior Account Executive",
+          "employer": "FCB Health",
+          "location": "New York, NY",
+          "dateRange": "Jun 2014 – Jun 2015",
+          "bullets": [
+            "One of two consumer account leads on the agency's largest pharma business, managing the Actavis Namenda XR direct-to-consumer launch and its $20M brand budget",
+            "Owned the broadcast workstream for three national television commercials in one year, covering market research, med-legal review, FDA preclearance, pre- and post-production, talent and location coordination, director searches, and network clearances; the spots drove a 45% increase in new-to-brand consumers within seven weeks",
+            "Led the launch of an unbranded Alzheimer's caregiver community site with support resources, sponsorship exploration, and public relations pull-through; also oversaw the account's Assistant Account Executive across in-office tactics, national print, and sales representative support materials"
+          ]
+        },
+        {
+          "title": "Senior Account Executive",
+          "employer": "Barker DZP",
+          "location": "New York, NY",
+          "dateRange": "Dec 2013 – May 2014",
+          "bullets": [
+            "Led the social campaign for a new Tough Mudder loyalty program and oversaw PDI and Nice-Pak, the agency's largest account, across print, digital, and social"
+          ]
+        },
+        {
+          "title": "Senior Account Executive",
+          "employer": "Cline Davis & Mann",
+          "location": "New York, NY",
+          "dateRange": "Sep 2013 – Dec 2013",
+          "bullets": [
+            "Used campaign metrics to shape Pfizer digital recommendations for Lipitor's online presence and loyalty program during loss of exclusivity, and piloted a Zoloft savings offer to test market response"
+          ]
+        },
+        {
+          "title": "Assistant Account Executive to Account Executive",
+          "employer": "FCB Health",
+          "location": "New York, NY",
+          "dateRange": "Apr 2011 – Sep 2013",
+          "bullets": [
+            "Managed development and execution of the unbranded Teva NUVIGIL campaign for National Night Shift Workers' Day across Times Square NASDAQ, national television, Xbox Live, radio, outdoor, and consumer journals, working through media, digital, and print vendors; the campaign won the 2013 Manny Award for Best Unbranded Campaign",
+            "Coordinated the NUVIGIL.com consumer rebrand across desktop and mobile with the agency's digital strategy and development teams, plus the launch of a CRM patient support program and its online patient community",
+            "Worked alongside the HCP team on the NUVIGIL.com HCP site and sales aid, both of which won 2011 Pharma Choice awards",
+            "Owned weekly client status and financial reporting plus OPDP and review-committee submissions across the $10M consumer business, and contributed to the annual strategic recommendations"
+          ]
+        },
+        {
+          "title": "Account Coordinator",
+          "employer": "RosettaWishbone",
+          "location": "New York, NY",
+          "dateRange": "Sep 2010 – Mar 2011",
+          "bullets": [
+            "Primary client contact across brand teams, national affiliates, and vendors on an award-winning global unbranded pneumococcal disease awareness campaign for the Pfizer Prevenar 13 adult pre-launch",
+            "Facilitated an Africa and Middle East advisory board in Dubai and owned project briefs, scopes of work, key opinion leader communications, and client status and financial reports"
+          ]
+        }
+      ]
+    },
+    "sourceBulletIds": {
+      "hedgehox": [
+        "hedgehox-03",
+        "hedgehox-05",
+        "hedgehox-01",
+        "hedgehox-02"
+      ],
+      "one-block-away": [
+        "one-block-away-01",
+        "one-block-away-02",
+        "one-block-away-03",
+        "one-block-away-04",
+        "one-block-away-05"
+      ],
+      "kinesso": [
+        "kinesso-01",
+        "kinesso-02",
+        "kinesso-08",
+        "kinesso-03"
+      ],
+      "omnicom": [
+        "omnicom-01"
+      ],
+      "heartbeat": [
+        "heartbeat-01",
+        "heartbeat-02",
+        "heartbeat-03"
+      ],
+      "account-management": [
+        "addition:scout-xyrem-account-lead",
+        "addition:scout-xyrem-unbranded-social",
+        "addition:scout-xyrem-bridging-campaign",
+        "account-management-02",
+        "account-management-03",
+        "addition:fcb-namenda-caregiver-site",
+        "addition:barker-tough-mudder-pdi",
+        "addition:cdm-lipitor-zoloft-digital",
+        "account-management-01",
+        "addition:fcb-nuvigil-rebrand-crm",
+        "addition:fcb-nuvigil-hcp-collaboration",
+        "addition:fcb-nuvigil-client-operations",
+        "addition:rosetta-prevenar-client-contact",
+        "addition:rosetta-dubai-advisory"
+      ]
+    }
+  },
+  "hero": {
+    "eyebrow": "MMA Rx Solutions | Selected Work",
+    "tags": [
+      "Pharma account leadership",
+      "Analytics and recommendations",
+      "Regulated workflows"
+    ],
+    "intro": "I've pulled together four recent projects that may be useful alongside my resume for the Senior Client Manager role. They show regulated healthcare workflows, analytics, research, and client-ready recommendations."
+  },
+  "contact": {
+    "prompt": "Email is the best way to reach me.",
+    "signoff": "Healthcare client leadership | analytics | regulated delivery"
+  },
+  "route": {
+    "presentation": "showcase",
+    "heroIntent": "resume-support",
+    "showcaseSections": [
+      "chapters"
+    ],
+    "workHeading": "Selected work.",
+    "contactHeading": "Thanks for taking a look."
+  },
+  "copyReview": {
+    "humanizerVersion": "2.2.0",
+    "mode": "surface-only",
+    "status": "passed",
+    "reviewedAt": "2026-09-17T18:37:40.020Z",
+    "copySha256": "0dadec08be9acfacf2e8cc1b1f91877597a7469dceadec386c115869ed4e7b62",
+    "preserved": [
+      "content",
+      "structure",
+      "claims",
+      "ending"
+    ],
+    "rewriteAuthorized": false,
+    "reviewMethod": "humanizer-skill",
+    "semanticPassAttested": true,
+    "staticChecksPassed": true,
+    "finalAntiAiPass": true,
+    "remainingTells": []
+  },
+  "constraints": {
+    "doNotClaim": [
+      "PBM, carrier, or employer pharmacy-benefit experience",
+      "Pharmacy terminology or pharmacy cost-driver expertise",
+      "PBM contract review, analysis, or negotiation",
+      "Clinical or formulary management",
+      "Employee pharmacy purchasing-trend analysis",
+      "Pharmacy pricing, underwriting, or savings modeling",
+      "Member-engagement strategy for pharmacy benefits",
+      "Sales growth, renewal, retention, or expansion-revenue ownership",
+      "Ten years of direct Account Management, PBM, or Carrier experience",
+      "Current Life and Health licensure",
+      "Permanent US work authorization"
+    ],
+    "blockedTerms": [
+      "PBM expert",
+      "pharmacy-benefit expert",
+      "pharmacy cost expert",
+      "PBM contract negotiation",
+      "formulary management",
+      "pharmacy underwriting",
+      "pharmacy savings model",
+      "member engagement owner",
+      "renewal ownership",
+      "ten years of account management",
+      "Life and Health licensed",
+      "authorized to work permanently"
+    ]
+  },
+  "coverLetter": null,
+  "privacy": {
+    "publicSafe": true,
+    "notes": "Contains only the user-provided public MMA job description and public-safe evidence from the resume and portfolio. It excludes recruiter details, private eligibility information, application answers, compensation boundaries, and submission state."
+  },
+  "qa": {
+    "status": "qa-passed",
+    "builtAt": "2026-09-17T18:38:51.745Z",
+    "configInputSha256": "cd19b11cdbad2fa04de878028021d02dad82a7f4d76b8d215f38008fb534378e",
+    "sourceResumeSha256": "8273f9c5f9038a159fa1d9ecc813e2c23069e37c7ef6dd0effe5439cef217fd7",
+    "resumeFoundation": {
+      "id": "wally-mostafa-resume-2026-07-03",
+      "sourcePdfSha256": "f9b05b6c3c134262b1af6c5734363daf4385cf335407a139779a37d138adf1aa"
+    },
+    "resumeBase": {
+      "mode": "account-leadership",
+      "sourceProfiles": [
+        {
+          "id": "account-leadership",
+          "version": 1
+        }
+      ],
+      "leadProfileId": "account-leadership",
+      "accountPresentation": "agency-progression",
+      "action": "tailor-to-jd",
+      "registryVersion": 1,
+      "registrySha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108"
+    },
+    "artifactHashes": {
+      "routeSha256": "dc70328b529722ae432f4f011da9f6a1783aa2b8f72286aca11cc7108647146b",
+      "resumePdfSha256": "d0be914e6978a634c8ecdfb3bc09d37d6724c8104f48d52bba48663c2359cabc",
+      "coverLetterPdfSha256": null,
+      "coverLetterMarkdownSha256": null,
+      "scopedProjectSha256": {
+        "project-01.html": "b5693b94d00c4295b52248a2c0ce4dd469f7ae701eca14606300815942e2b5c2",
+        "project-06.html": "c87f249aa0e23626fbe82189955975fa277447bd3220a6d58fcf09464bb27cea",
+        "project-04.html": "6c989d520b9202c8097368173b730588288cecfd88dba5748bf720eba1d519a7",
+        "project-03.html": "557280b6ad96f40ab3fe412772d726a453ea8ef99aaef6e53c65a6429a68f824"
+      },
+      "scopedProjectAssetSha256": {}
+    },
+    "renderer": {
+      "browser": {
+        "name": "chrome-headless-shell",
+        "version": "Google Chrome for Testing 151.0.7922.34"
+      },
+      "htmlPath": "tmp/tailored-resumes/marsh-mclennan-agency-senior-client-manager-rx-solutions.html",
+      "pdfPath": "output/pdf/Wally-Mostafa-MMA-Senior-Client-Manager-Rx-Solutions-Resume.pdf",
+      "fontWait": true,
+      "fontProfile": "portfolio-pdf"
+    },
+    "coverLetterRenderer": null,
+    "coverLetter": null,
+    "ats": {
+      "ok": true,
+      "pdfPath": "output/pdf/Wally-Mostafa-MMA-Senior-Client-Manager-Rx-Solutions-Resume.pdf",
+      "pageCount": 2,
+      "fileSize": 84953,
+      "annotations": [
+        {
+          "page": 1,
+          "uri": "mailto:wmostafa12@gmail.com"
+        },
+        {
+          "page": 1,
+          "uri": "https://linkedin.com/in/wallymo"
+        },
+        {
+          "page": 1,
+          "uri": "https://wallymo.github.io/marsh-mclennan-agency-senior-client-manager-rx-solutions/"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/6748"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/4629"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.red-dot.org/project/dxa-digital-experience-audit-55219"
+        }
+      ],
+      "fontCompatibility": {
+        "type3Fonts": false
+      },
+      "coverage": [
+        {
+          "id": "bachelors-degree",
+          "requirement": "Hold a bachelor's degree or equivalent career experience.",
+          "priority": "hard-gate",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "BA Labor Studies & Employee Relations",
+            "Rutgers University"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "ten-years-account-pbm-carrier",
+          "requirement": "Bring at least ten years of Account Management, Pharmacy Benefit Management, and/or Carrier experience.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "contextual",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "eight years",
+            "Account Supervisor"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "pbm-pharmacy-knowledge",
+          "requirement": "Know pharmacy terminology, the drivers of pharmacy costs, and PBM contracts.",
+          "priority": "core",
+          "evidenceStatus": "none",
+          "matchMode": "not-supported",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "PBM contracts",
+            "pharmacy cost drivers"
+          ]
+        },
+        {
+          "id": "data-analytics-aptitude",
+          "requirement": "Bring an aptitude for data analytics and use analysis to support client recommendations.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "enterprise analytics",
+            "benchmarks and recommendations",
+            "data visualization"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "client-deliverables-and-coordination",
+          "requirement": "Manage client deliverables and deadlines while coordinating internal teams, field partners, PBMs, and strategic partners.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "primary client contact",
+            "status and financial reporting",
+            "cross-functional delivery"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "pbm-contract-review-and-negotiation",
+          "requirement": "Review, analyze, and help negotiate employer pharmacy-benefit contracts against MMA provisions and best practices.",
+          "priority": "core",
+          "evidenceStatus": "none",
+          "matchMode": "not-supported",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "PBM contract review",
+            "contract negotiation"
+          ]
+        },
+        {
+          "id": "pharmacy-clinical-formulary-strategy",
+          "requirement": "Answer pharmacy questions and use clinical, formulary, contract, and employee purchasing information to recommend program changes and savings opportunities.",
+          "priority": "core",
+          "evidenceStatus": "none",
+          "matchMode": "not-supported",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "clinical and formulary management",
+            "employee purchasing trends"
+          ]
+        },
+        {
+          "id": "reporting-presentations-and-issues",
+          "requirement": "Track deliverables, coordinate accurate reporting and presentations, and communicate with clients and company representatives about potential issues.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "client status and financial reporting",
+            "presentation-ready client outputs",
+            "risk visibility"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "sales-growth-and-client-retention",
+          "requirement": "Support sales growth and client retention by delivering useful, data-backed client solutions.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "contextual",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "client relationships",
+            "recommendations",
+            "client-led"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "industry-compliance-and-risk",
+          "requirement": "Stay current on industry changes to support compliance and reduce client risk.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "contextual",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "FDA",
+            "MLR",
+            "regulated healthcare"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "permanent-us-work-authorization",
+          "requirement": "Have permanent ongoing US work authorization without current or future sponsorship.",
+          "priority": "context",
+          "evidenceStatus": "none",
+          "matchMode": "not-supported",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "permanent US work authorization"
+          ]
+        },
+        {
+          "id": "pharmacy-pricing-underwriting",
+          "requirement": "Bring pharmacy pricing or underwriting experience as a preferred qualification.",
+          "priority": "preferred",
+          "evidenceStatus": "none",
+          "matchMode": "not-supported",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "pharmacy pricing",
+            "underwriting"
+          ]
+        },
+        {
+          "id": "life-health-license",
+          "requirement": "Hold a current Life and Health license or be able to obtain one within 90 days as a preferred qualification.",
+          "priority": "preferred",
+          "evidenceStatus": "none",
+          "matchMode": "not-supported",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "Life and Health license"
+          ]
+        }
+      ],
+      "failures": [],
+      "warnings": []
+    },
+    "humanizer": {
+      "status": "passed",
+      "version": "2.2.0",
+      "mode": "surface-only",
+      "reviewedAt": "2026-09-17T18:37:40.020Z",
+      "copySha256": "0dadec08be9acfacf2e8cc1b1f91877597a7469dceadec386c115869ed4e7b62",
+      "reviewMethod": "humanizer-skill",
+      "semanticPassAttested": true,
+      "staticChecksPassed": true
+    },
+    "route": {
+      "viewports": [
+        {
+          "name": "desktop",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-01",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-06",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-04",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-03",
+          "errors": []
+        },
+        {
+          "name": "mobile",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-01",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-06",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-04",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-03",
+          "errors": []
+        }
+      ],
+      "errors": []
+    }
+  }
+}
