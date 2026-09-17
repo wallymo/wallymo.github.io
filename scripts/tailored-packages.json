@@ -2341,9 +2341,37 @@
         "project-03.html"
       ],
       "resumePdfPath": "output/pdf/Wally-Mostafa-Korber-Strategic-Account-Manager-Resume.pdf",
-      "publishStatus": "local-only",
+      "publishStatus": "live-verified",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-09-17T14:40:35.172Z"
+      "builtAt": "2026-09-17T14:40:35.172Z",
+      "verification": {
+        "verifiedAt": "2026-09-17T14:46:28.463Z",
+        "routeUrl": "https://wallymo.github.io/korber-strategic-account-manager/",
+        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-Korber-Strategic-Account-Manager-Resume.pdf",
+        "configUrl": "https://wallymo.github.io/scripts/packages/korber-strategic-account-manager.json",
+        "projectUrls": [
+          "https://wallymo.github.io/korber-strategic-account-manager/project-01.html",
+          "https://wallymo.github.io/korber-strategic-account-manager/project-02.html",
+          "https://wallymo.github.io/korber-strategic-account-manager/project-06.html",
+          "https://wallymo.github.io/korber-strategic-account-manager/project-03.html"
+        ],
+        "redirectUrls": [],
+        "configSha256": "96b998f1b7b63bf8bbbfc3965901a50b10c4e38b48028745b91329b353a3daf5",
+        "pdfSha256": "89977da8b2aba118e9a3201037a3299b6c5cb5be9040ffa3881c88b36a755037",
+        "resumeBaseProfilesUrl": "https://wallymo.github.io/scripts/resume-base-profiles.json",
+        "resumeBaseProfilesSha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108",
+        "routeSha256": "2f1a62c2cc7bf66d48a426692ea0d3292810fcef21fd429caecfb77de0873d6a",
+        "scopedProjectSha256": {
+          "project-01.html": "8ad83e3145e963098016558ec9a4b8c45a496048256f4eb8906af0d719f1496b",
+          "project-02.html": "37d94248650b114f7809411930a95853a1e88a7c81fa7efdd7f08c7dc520d5ff",
+          "project-06.html": "f0b5160818fb8b9af8b2d0225a89562342b610b34e7c9a1f10b5be585a9801c8",
+          "project-03.html": "2324abb4815141ac22fe430b056e001f9d5f51d86b8529e575e73ed3a096fe8e"
+        },
+        "scopedProjectAssetUrls": [],
+        "scopedProjectAssetSha256": {},
+        "configInputSha256": "692b437b10cc955ab7c26f6b94f08ca7cc53f36f32c15086656542d348b72276",
+        "qaBuiltAt": "2026-09-17T14:40:35.172Z"
+      }
     },
     {
       "slug": "leadventure-product-specialist",
