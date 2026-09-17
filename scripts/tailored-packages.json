@@ -2676,9 +2676,37 @@
         "project-03.html"
       ],
       "resumePdfPath": "output/pdf/Wally-Mostafa-Medical-Communications-Client-Partnerships-Manager-Resume.pdf",
-      "publishStatus": "local-only",
+      "publishStatus": "live-verified",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-09-17T14:40:31.075Z"
+      "builtAt": "2026-09-17T14:40:31.075Z",
+      "verification": {
+        "verifiedAt": "2026-09-17T14:42:53.470Z",
+        "routeUrl": "https://wallymo.github.io/medical-communications-client-partnerships-manager/",
+        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-Medical-Communications-Client-Partnerships-Manager-Resume.pdf",
+        "configUrl": "https://wallymo.github.io/scripts/packages/medical-communications-client-partnerships-manager.json",
+        "projectUrls": [
+          "https://wallymo.github.io/medical-communications-client-partnerships-manager/project-01.html",
+          "https://wallymo.github.io/medical-communications-client-partnerships-manager/project-06.html",
+          "https://wallymo.github.io/medical-communications-client-partnerships-manager/project-04.html",
+          "https://wallymo.github.io/medical-communications-client-partnerships-manager/project-03.html"
+        ],
+        "redirectUrls": [],
+        "configSha256": "ec07841664d8df4d70688a1d6f161e917bc4f19e267575af56387294e6ad26fa",
+        "pdfSha256": "d8d4984e8c58f693a94cd5afe205ddf74a44009d9fcdb900963e3abc4346d648",
+        "resumeBaseProfilesUrl": "https://wallymo.github.io/scripts/resume-base-profiles.json",
+        "resumeBaseProfilesSha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108",
+        "routeSha256": "ea5921f1a1242dcb0136fef0e4829a7ff0361d5980fa46fdf7269bee9c06f955",
+        "scopedProjectSha256": {
+          "project-01.html": "abd0583ffb03409acf7ad69f69ef93215b3bb385bfb629aba7486db20adf626f",
+          "project-06.html": "f94bccbabc85ec16cd7024df1b0f4cb9d771597f317e4f7ba2b070137afdf179",
+          "project-04.html": "dc5406dba6b9fd86456348391a0558ee36c254413d31f700ca96d63bc76dcabe",
+          "project-03.html": "106d40501dc96109362fa62650f7ed03f487ae72db3eefb3227c8a8df80fb900"
+        },
+        "scopedProjectAssetUrls": [],
+        "scopedProjectAssetSha256": {},
+        "configInputSha256": "3bffff91a13992d9367b3fa48be6bd83ddbb2b7c6e518fb4b61f79a76e7e974e",
+        "qaBuiltAt": "2026-09-17T14:40:31.075Z"
+      }
     },
     {
       "workflowVersion": 2,
