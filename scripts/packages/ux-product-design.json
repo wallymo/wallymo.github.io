@@ -245,7 +245,7 @@
         "afterBullet": 3
       }
     ],
-    "summary": "UX and product design leader with nearly eight years of hands-on UX work and 15 years across product, client strategy, and digital delivery. I grew a product design team from 2 to 30 and led enterprise UX for platforms used by 7,000+ people across 22 brands. I also built a research practice across 20+ products and now carry product work from discovery through working prototypes and handoff.",
+    "summary": "UX and product design leader with a career that began in healthcare client services and moved into experience strategy, enterprise software, and product delivery. That background gives me a practical view of both the user and the business, which I use to turn complex problems into clear product direction and usable experiences.",
     "skillIds": [
       "enterprise-ux-design-systems",
       "research-experience-strategy",
@@ -412,17 +412,14 @@
   },
   "copyReview": {
     "humanizerVersion": "2.2.0",
-    "mode": "surface-only",
+    "mode": "rewrite-requested",
     "status": "passed",
-    "reviewedAt": "2026-09-17T20:06:52.878Z",
-    "copySha256": "f51d9801486f68f3471504cd5f5c0fdd155bccdb4e5c61e5d6f8d42392ce4467",
+    "reviewedAt": "2026-09-17T20:16:06.622Z",
+    "copySha256": "cf5533dc32e69ebb04d18e4f2e0d4dd5da27e56cfb7ed1b03759c7509b460739",
     "preserved": [
-      "content",
-      "structure",
-      "claims",
-      "ending"
+      "claims"
     ],
-    "rewriteAuthorized": false,
+    "rewriteAuthorized": true,
     "reviewMethod": "humanizer-skill",
     "semanticPassAttested": true,
     "staticChecksPassed": true,
@@ -431,8 +428,8 @@
   },
   "qa": {
     "status": "qa-passed",
-    "builtAt": "2026-09-17T20:10:37.820Z",
-    "configInputSha256": "4d39582fc47ee414862b5f899e9fbd99a91035037354373f88d8164b0bf605c6",
+    "builtAt": "2026-09-17T20:16:25.120Z",
+    "configInputSha256": "d30fad03d69d005c18095e190a345d77de917ee37871e9d2661809e59a508e43",
     "sourceResumeSha256": "8273f9c5f9038a159fa1d9ecc813e2c23069e37c7ef6dd0effe5439cef217fd7",
     "resumeFoundation": {
       "id": "wally-mostafa-resume-2026-07-03",
@@ -454,7 +451,7 @@
     },
     "artifactHashes": {
       "routeSha256": "e44173c5d5c12a4812f3436fc55c26a9bcb6f246718d411a48cab0aa2759e7d3",
-      "resumePdfSha256": "ac57c839c0da6206577ce1bfebf794ba34406dea4a7c13428c784bafc4f992e1",
+      "resumePdfSha256": "faefbf8a0326321572e51ca425a90fb7a8bd8950d25edad241ef4997d6c16cbf",
       "coverLetterPdfSha256": null,
       "coverLetterMarkdownSha256": null,
       "scopedProjectSha256": {
@@ -481,7 +478,7 @@
       "ok": true,
       "pdfPath": "output/pdf/Wally-Mostafa-UX-Product-Design-Resume.pdf",
       "pageCount": 2,
-      "fileSize": 80509,
+      "fileSize": 80377,
       "annotations": [
         {
           "page": 1,
@@ -590,9 +587,9 @@
     "humanizer": {
       "status": "passed",
       "version": "2.2.0",
-      "mode": "surface-only",
-      "reviewedAt": "2026-09-17T20:06:52.878Z",
-      "copySha256": "f51d9801486f68f3471504cd5f5c0fdd155bccdb4e5c61e5d6f8d42392ce4467",
+      "mode": "rewrite-requested",
+      "reviewedAt": "2026-09-17T20:16:06.622Z",
+      "copySha256": "cf5533dc32e69ebb04d18e4f2e0d4dd5da27e56cfb7ed1b03759c7509b460739",
       "reviewMethod": "humanizer-skill",
       "semanticPassAttested": true,
       "staticChecksPassed": true

@@ -5229,37 +5229,9 @@
         "project-03.html"
       ],
       "resumePdfPath": "output/pdf/Wally-Mostafa-UX-Product-Design-Resume.pdf",
-      "publishStatus": "live-verified",
+      "publishStatus": "local-only",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-09-17T20:10:37.820Z",
-      "verification": {
-        "verifiedAt": "2026-09-17T20:11:35.555Z",
-        "routeUrl": "https://wallymo.github.io/ux-product-design/",
-        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-UX-Product-Design-Resume.pdf",
-        "configUrl": "https://wallymo.github.io/scripts/packages/ux-product-design.json",
-        "projectUrls": [
-          "https://wallymo.github.io/ux-product-design/project-05.html",
-          "https://wallymo.github.io/ux-product-design/project-04.html",
-          "https://wallymo.github.io/ux-product-design/project-06.html",
-          "https://wallymo.github.io/ux-product-design/project-03.html"
-        ],
-        "redirectUrls": [],
-        "configSha256": "280c06167c2d9f9aaaeb80b79318594126912c508ea7d7532acab3e663edf6a0",
-        "pdfSha256": "ac57c839c0da6206577ce1bfebf794ba34406dea4a7c13428c784bafc4f992e1",
-        "resumeBaseProfilesUrl": "https://wallymo.github.io/scripts/resume-base-profiles.json",
-        "resumeBaseProfilesSha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108",
-        "routeSha256": "e44173c5d5c12a4812f3436fc55c26a9bcb6f246718d411a48cab0aa2759e7d3",
-        "scopedProjectSha256": {
-          "project-05.html": "860d46f5479e6bd03935f844dbd0f7ac9b3fcc09992d24a849131cd49d8e8fd1",
-          "project-04.html": "54f9abef4ea9b7bcce82c2d172ef97e47176e356f73571a24ff5f40664b129db",
-          "project-06.html": "8f2d591661747cc72604b8c3707dca1fa6fe106ad2ae7de0975ce2b5fe2c6ecf",
-          "project-03.html": "71474dd106f67c6ac269d5acc468ec40612cb032f418bd6bd066814e1ae40fde"
-        },
-        "scopedProjectAssetUrls": [],
-        "scopedProjectAssetSha256": {},
-        "configInputSha256": "4d39582fc47ee414862b5f899e9fbd99a91035037354373f88d8164b0bf605c6",
-        "qaBuiltAt": "2026-09-17T20:10:37.820Z"
-      }
+      "builtAt": "2026-09-17T20:16:25.120Z"
     },
     {
       "workflowVersion": 2,
