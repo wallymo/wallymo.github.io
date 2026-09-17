@@ -2861,9 +2861,41 @@
       "resumePdfPath": "output/pdf/Wally-Mostafa-MERGE-Account-Director-Pharma-Life-Science-Resume.pdf",
       "coverLetterPdfPath": "output/pdf/Wally-Mostafa-MERGE-Account-Director-Pharma-Life-Science-Cover-Letter.pdf",
       "coverLetterMarkdownPath": "output/pdf/Wally-Mostafa-MERGE-Account-Director-Pharma-Life-Science-Cover-Letter.md",
-      "publishStatus": "local-only",
+      "publishStatus": "live-verified",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-09-17T18:09:39.481Z"
+      "builtAt": "2026-09-17T18:09:39.481Z",
+      "verification": {
+        "verifiedAt": "2026-09-17T18:13:28.185Z",
+        "routeUrl": "https://wallymo.github.io/merge-account-director-pharma-life-science/",
+        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-MERGE-Account-Director-Pharma-Life-Science-Resume.pdf",
+        "configUrl": "https://wallymo.github.io/scripts/packages/merge-account-director-pharma-life-science.json",
+        "projectUrls": [
+          "https://wallymo.github.io/merge-account-director-pharma-life-science/project-01.html",
+          "https://wallymo.github.io/merge-account-director-pharma-life-science/project-06.html",
+          "https://wallymo.github.io/merge-account-director-pharma-life-science/project-04.html",
+          "https://wallymo.github.io/merge-account-director-pharma-life-science/project-03.html"
+        ],
+        "redirectUrls": [],
+        "configSha256": "0804284d9e3e1f7fa1a21f59ea472a2520f7fc4618d041efdb0598f6d72ea1da",
+        "pdfSha256": "524b76255af002a8412ca7addc3ca0001975479210f61586f81dc9001f09dc4e",
+        "resumeBaseProfilesUrl": "https://wallymo.github.io/scripts/resume-base-profiles.json",
+        "resumeBaseProfilesSha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108",
+        "coverLetterPdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-MERGE-Account-Director-Pharma-Life-Science-Cover-Letter.pdf",
+        "coverLetterMarkdownUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-MERGE-Account-Director-Pharma-Life-Science-Cover-Letter.md",
+        "coverLetterPdfSha256": "7f755e1085108c101e80c089713fab175591cab50585f70eddfe8d8f870c17c5",
+        "coverLetterMarkdownSha256": "d43068fbf1ab9d72538fe6dcc18391c8c47935430c4c8418b4bd9bceb4a4e309",
+        "routeSha256": "9a0f7a80fa8c05ca4e5738a7be4ebfd0fbb0f843be0bee106ee22f756f329e16",
+        "scopedProjectSha256": {
+          "project-01.html": "02baa38412b7d99f7a6c807d3089d5a9c0b413234bf5c40fb79d1b88b7e15243",
+          "project-06.html": "5cbf526789fb9482f5a5330a55fa84e066d76390aa5192d455289db320e5cd12",
+          "project-04.html": "08d1a8ac022fac58b6b5263608a282837c21e7ed607c3e5d29b14e5558f21d75",
+          "project-03.html": "70c190a9bcece73f979ebb5997b17db8e6eba4ed0c892b0952a83d050a08fcc0"
+        },
+        "scopedProjectAssetUrls": [],
+        "scopedProjectAssetSha256": {},
+        "configInputSha256": "723f5c9dbf3036ac664d62c9f5d4474d301c0faeb220787c4b7b1adc882528e4",
+        "qaBuiltAt": "2026-09-17T18:09:39.481Z"
+      }
     },
     {
       "slug": "mi-case-ai-integration-engineer",
