@@ -133,8 +133,9 @@ and entire Proof file remain together in one desktop viewport. Dock the stage at
 the navigation's bottom edge and fill the remaining viewport height. Keep a 24px
 reading inset inside its top edge, then use 24px frame padding and a 24px gap below
 the intro where the complete composition fits. A second measured layout uses
-16px frame padding and gap, 20px Proof file padding,
-and tighter evidence spacing. Font sizes and all evidence remain unchanged.
+12px frame padding and intro gap, 20px Proof file padding, and tighter evidence
+spacing. A third spacing-only fit for short desktop windows uses 8px frame and
+intro gaps with 16px Proof file padding. Font sizes and all evidence remain unchanged.
 During desktop pinning, the active chapter identity sits left of the steady Proof file window:
 96–112px Syne numbers, a quiet total, 40–44px two-line chapter names, and clay dates.
 Names and dates derive from the existing period metadata; static HTML also contains
@@ -154,8 +155,9 @@ presenting the latest selected state.
 
 Measure the entire frame, including the introduction, all identities, navigation,
 and the tallest Proof file, before enabling pinning at widths of at least 1120px.
-Try normal spacing first, then compact spacing. Reserve the fixed navigation and
-24px beneath the reading content; never scale text or clip evidence to pass the fit check.
+Try normal spacing first, then compact and short-desktop spacing. Measure against
+the actual sticky stage below the fixed navigation; never scale text or clip evidence
+to pass the fit check.
 Start scroll progression when the stage docks below the navigation. Size the
 journey to the full stage height plus chapter travel, not the shorter content
 height. The following section must remain below the viewport throughout pinning;

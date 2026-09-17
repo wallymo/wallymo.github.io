@@ -408,15 +408,28 @@ nav .nav-cta:hover, .btn-primary:hover { background: var(--accent-hover); }
 /* A second measured fit uses tighter spacing, with the same font sizes and
    complete evidence. The introduction remains part of the pinned composition. */
 #chapters.chapters-compact {
-  --chapter-frame-padding: 16px;
-  --chapter-intro-gap: 16px;
-  --chapter-navigation-gap: 20px;
+  --chapter-frame-padding: 12px;
+  --chapter-intro-gap: 12px;
+  --chapter-navigation-gap: 16px;
 }
-#chapters.chapters-compact .chapter-intro { row-gap: 12px; }
+#chapters.chapters-compact .chapter-intro { row-gap: 8px; }
+#chapters.chapters-compact .chapter-intro > p { padding-bottom: 0; }
 #chapters.chapters-compact .chapter-copy { padding: 20px; }
 #chapters.chapters-compact .chapter-copy h4 { margin-bottom: 16px; }
 #chapters.chapters-compact .chapter-copy > p { margin-bottom: 16px; }
 #chapters.chapters-compact .chapter-point { padding-block: 10px; }
+/* Narrow desktop windows get one final spacing-only fit before falling back to
+   the readable static sequence. Type size and chapter evidence stay intact. */
+#chapters.chapters-tight {
+  --chapter-frame-padding: 8px;
+  --chapter-intro-gap: 8px;
+  --chapter-navigation-gap: 12px;
+}
+#chapters.chapters-tight .chapter-intro { row-gap: 6px; }
+#chapters.chapters-tight .chapter-copy { padding: 16px; }
+#chapters.chapters-tight .chapter-copy h4 { margin-bottom: 12px; }
+#chapters.chapters-tight .chapter-copy > p { margin-bottom: 12px; }
+#chapters.chapters-tight .chapter-point { padding-block: 8px; }
 @media (prefers-reduced-motion: reduce) {
   #chapters .chapter-tabs::after { transition: none !important; }
   #chapters .chapter-tab.is-current::after { display: none; animation: none; }

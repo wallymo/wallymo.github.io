@@ -297,7 +297,7 @@
     const previouslyPinned = chaptersPinned;
     clearChapterAnimations();
     chaptersPinned = false;
-    chapters.classList.remove('chapters-pinned', 'chapters-measuring', 'chapters-compact');
+    chapters.classList.remove('chapters-pinned', 'chapters-measuring', 'chapters-compact', 'chapters-tight');
     for (const property of ['--chapter-identity-height', '--chapter-proof-height',
       '--chapter-content-height', '--chapter-nav-top', '--chapter-stage-height', '--chapter-travel', '--chapter-light-anchor']) {
       chapters.style.removeProperty(property);
@@ -337,10 +337,17 @@
         chapters.style.setProperty('--chapter-nav-top', `${identityHeight + navigationGap}px`);
         return chapterFrame.getBoundingClientRect().height;
       }
-      const available = window.innerHeight - chapterTop - 24;
+      // The sticky stage already begins below the fixed navigation. Measure
+      // against that real stage instead of reserving a second safety gap that
+      // can incorrectly disable the sequence on standard laptop viewports.
+      const available = window.innerHeight - chapterTop;
       let frame = measureFrame();
       if (frame > available) {
         chapters.classList.add('chapters-compact');
+        frame = measureFrame();
+      }
+      if (frame > available) {
+        chapters.classList.add('chapters-tight');
         frame = measureFrame();
       }
       if (frame <= available) {
@@ -362,7 +369,7 @@
           tabs[i].setAttribute('aria-controls', panel.id);
         });
       } else {
-        chapters.classList.remove('chapters-compact');
+        chapters.classList.remove('chapters-compact', 'chapters-tight');
         chapterTop = navOffset();
         chapters.style.setProperty('--chapter-top', `${chapterTop}px`);
       }
