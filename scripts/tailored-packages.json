@@ -570,37 +570,11 @@
         "project-03.html"
       ],
       "resumePdfPath": "output/pdf/Wally-Mostafa-Bnberry-Product-Manager-Resume.pdf",
-      "publishStatus": "live-verified",
+      "publishStatus": "local-only",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-09-17T14:30:40.648Z",
-      "verification": {
-        "verifiedAt": "2026-09-17T14:32:40.161Z",
-        "routeUrl": "https://wallymo.github.io/bnberry-product-manager/",
-        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-Bnberry-Product-Manager-Resume.pdf",
-        "configUrl": "https://wallymo.github.io/scripts/packages/bnberry-product-manager.json",
-        "projectUrls": [
-          "https://wallymo.github.io/bnberry-product-manager/project-04.html",
-          "https://wallymo.github.io/bnberry-product-manager/project-06.html",
-          "https://wallymo.github.io/bnberry-product-manager/project-02.html",
-          "https://wallymo.github.io/bnberry-product-manager/project-03.html"
-        ],
-        "redirectUrls": [],
-        "configSha256": "8b638f8ff1ba5280f8584acbc08c6ce8670f9d1a62ecdaced896c6a3f5030829",
-        "pdfSha256": "2c5e9018b60db55e906d86bb8a323db72537fc628adf3e478bca6a1ef921b4c0",
-        "resumeBaseProfilesUrl": "https://wallymo.github.io/scripts/resume-base-profiles.json",
-        "resumeBaseProfilesSha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108",
-        "routeSha256": "0aacf51087e9e1d43383035f1623949d57d2b5893b4cff7b28ed6c9529a8aaa5",
-        "scopedProjectSha256": {
-          "project-04.html": "d836f5d3628ed48e0f87e68f2702f67801aa5858781815c648bdeb5f7bd8a6f9",
-          "project-06.html": "e14ab873799b0675c77c8bbea810ab6576b2c0f8d925e0beed943f27a8b4e45f",
-          "project-02.html": "3c887eacf581df95c90893f459019fa70fb92f67c940a986f2e406df554549e4",
-          "project-03.html": "91a5fdbd72514e260e00de44ff8078090e9de8b09c3b39ded565ead579a5a186"
-        },
-        "scopedProjectAssetUrls": [],
-        "scopedProjectAssetSha256": {},
-        "configInputSha256": "6354ee118e839f393c18841325e60e10b8b0381f8385db5385a60b5056556e1c",
-        "qaBuiltAt": "2026-09-17T14:30:40.648Z"
-      }
+      "builtAt": "2026-09-17T14:46:44.199Z",
+      "coverLetterPdfPath": "output/pdf/Wally-Mostafa-Bnberry-Product-Manager-Cover-Letter.pdf",
+      "coverLetterMarkdownPath": "output/pdf/Wally-Mostafa-Bnberry-Product-Manager-Cover-Letter.md"
     },
     {
       "slug": "boulevard-medspa-new-frontiers",

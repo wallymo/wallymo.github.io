@@ -102,7 +102,8 @@
       "evidence": [],
       "proofIds": [],
       "destinations": [
-        "portfolio"
+        "portfolio",
+        "cover-letter"
       ],
       "resumeTerms": [
         "hotel technology",
@@ -120,7 +121,8 @@
       "evidence": [],
       "proofIds": [],
       "destinations": [
-        "portfolio"
+        "portfolio",
+        "cover-letter"
       ],
       "resumeTerms": [
         "booking journey",
@@ -149,7 +151,8 @@
       "destinations": [
         "skills",
         "experience",
-        "portfolio"
+        "portfolio",
+        "cover-letter"
       ],
       "resumeTerms": [
         "onboarding program",
@@ -177,7 +180,8 @@
         "summary",
         "skills",
         "experience",
-        "portfolio"
+        "portfolio",
+        "cover-letter"
       ],
       "resumeTerms": [
         "MLS/SEO-ready language",
@@ -206,7 +210,8 @@
         "summary",
         "skills",
         "experience",
-        "portfolio"
+        "portfolio",
+        "cover-letter"
       ],
       "resumeTerms": [
         "interviews",
@@ -235,7 +240,8 @@
       "destinations": [
         "skills",
         "experience",
-        "portfolio"
+        "portfolio",
+        "cover-letter"
       ],
       "resumeTerms": [
         "behavioral analytics",
@@ -263,7 +269,8 @@
       "destinations": [
         "skills",
         "experience",
-        "portfolio"
+        "portfolio",
+        "cover-letter"
       ],
       "resumeTerms": [
         "journey maps",
@@ -339,7 +346,8 @@
       "evidence": [],
       "proofIds": [],
       "destinations": [
-        "portfolio"
+        "portfolio",
+        "cover-letter"
       ],
       "resumeTerms": [
         "PMS",
@@ -391,10 +399,10 @@
       "Hotel search or GEO capabilities with measured discovery and booking outcomes."
     ],
     "coverLetterBridge": {
-      "status": "not-credible",
-      "rationale": "A cover letter cannot credibly replace the missing hotel-technology, travel-booking, booking-funnel, and distribution-system evidence. The package therefore presents only the supported product, research, workflow, adoption, and AI work."
+      "status": "recommended",
+      "rationale": "We can make the case with a cover letter by connecting direct product ownership, customer research, detailed journey and workflow design, adoption data, behavioral analytics, practical AI work, and cross-functional delivery to DBS. The letter must state plainly that hotel technology, travel booking, PMS or CRS integrations, and booking-funnel ownership are new territory rather than implying prior experience."
     },
-    "recommendation": "Proceed only as the user-approved stretch. Lead with customer research, workflow design, adoption data, practical AI products, and cross-functional delivery. Keep hotel technology, travel booking, booking conversion, PMS or CRS integration, hotel adoption, and GEO performance out of the claim set."
+    "recommendation": "Proceed as the user-approved stretch with a gap-forward cover letter. Lead with customer research, workflow design, adoption data, practical AI products, and cross-functional delivery. State that hotel technology, travel booking, booking conversion, PMS or CRS integration, hotel adoption, and GEO performance are the learning curve, not prior experience."
   },
   "positioning": {
     "laneId": "product-ux-design",
@@ -410,7 +418,24 @@
     ],
     "remainingGap": "The current evidence does not establish hotel technology, a B2C travel-booking product, booking-funnel metrics, PMS or CRS integrations, or hotel search and GEO performance ownership."
   },
-  "coverLetter": null,
+  "coverLetter": {
+    "trigger": "bridge-recommended",
+    "date": "2026-09-17",
+    "greeting": "Dear Bnberry hiring team,",
+    "paragraphs": [
+      "I am applying for Bnberry's Product Manager role with a clear understanding of the domain gap in my background: I have not worked on lodging platforms or owned a live reservation funnel. What I do bring is the product work around that domain: customer research, detailed journey and workflow design, product prioritization, adoption, analytics, and cross-functional delivery from discovery through working software.",
+      "At Kinesso, I built the first UX research practice across more than 20 products and led research and experience strategy for an enterprise platform suite used by more than 7,000 people across 22 brands. Interviews, prototype testing, beta groups, behavioral analytics, and adoption data shaped roadmap priorities for navigation, dashboards, personalization, and product support. I also helped turn channel scoring, benchmarks, and recommendations into a repeatable client-facing reporting workflow. That work taught me how to connect user friction, platform constraints, adoption, and business value in one product decision.",
+      "Today, through One Block Away, I own product strategy, UX, AI workflow design, front-end build, backend logic, demos, and client iteration from first ask through working prototype. ListingPal turns basic property inputs into MLS and SEO-ready content in under 90 seconds. Other products have started with an unclear business problem and become a structured workflow, testable product surface, and practical roadmap. That gives me a useful base for working with Marketing and specialists on search and AI discovery without claiming to be an SEO practitioner.",
+      "The lodging-specific learning curve would be the systems and commercial rules behind inventory, pricing, policy exceptions, failure cases, and funnel metrics. My way into a new domain is direct: interview the people who run it, map the exceptions, work through dependencies with Engineering, establish a baseline, ship a small change, and measure what happened. I have used that method across regulated healthcare and enterprise platforms. I would welcome a conversation about applying it to the guest journey and hotel workflows behind DBS."
+    ],
+    "closing": "Sincerely,",
+    "signature": "Wally Mostafa",
+    "proofIds": [
+      "one-block-away-04",
+      "kinesso-06",
+      "kinesso-02"
+    ]
+  },
   "resume": {
     "foundationId": "wally-mostafa-resume-2026-07-03",
     "foundationVersion": 4,
@@ -562,8 +587,8 @@
     "humanizerVersion": "2.2.0",
     "mode": "surface-only",
     "status": "passed",
-    "reviewedAt": "2026-09-17T14:26:42.455Z",
-    "copySha256": "408b8e2e43b6371b6c71ad6ace9a8b7f713cfba198c5d2348acbad10466dd441",
+    "reviewedAt": "2026-09-17T14:46:18.567Z",
+    "copySha256": "b3dee2c0f78bfb692142d0172ae0dbe8f9618448170ca24ba9e60170dcd85e54",
     "preserved": [
       "content",
       "structure",
@@ -605,8 +630,8 @@
   },
   "qa": {
     "status": "qa-passed",
-    "builtAt": "2026-09-17T14:30:40.648Z",
-    "configInputSha256": "6354ee118e839f393c18841325e60e10b8b0381f8385db5385a60b5056556e1c",
+    "builtAt": "2026-09-17T14:46:44.199Z",
+    "configInputSha256": "33966e6de68b937c9de5178f73521b3157c19cdb6532d86a49abb60006e18452",
     "sourceResumeSha256": "8273f9c5f9038a159fa1d9ecc813e2c23069e37c7ef6dd0effe5439cef217fd7",
     "resumeFoundation": {
       "id": "wally-mostafa-resume-2026-07-03",
@@ -628,9 +653,9 @@
     },
     "artifactHashes": {
       "routeSha256": "0aacf51087e9e1d43383035f1623949d57d2b5893b4cff7b28ed6c9529a8aaa5",
-      "resumePdfSha256": "2c5e9018b60db55e906d86bb8a323db72537fc628adf3e478bca6a1ef921b4c0",
-      "coverLetterPdfSha256": null,
-      "coverLetterMarkdownSha256": null,
+      "resumePdfSha256": "fd5d83724949c3edecdd10e38d3921ca7398f71a3a01e6f273da1cffedc4d20d",
+      "coverLetterPdfSha256": "e98d45e2f68134d1a205573065276af2e6ef3f01e0d5c8ad054ed1ddb5fec876",
+      "coverLetterMarkdownSha256": "ec0c56105aed14543ba18ae00dcecb48818c37fdb7a76af5935f1933c282f8b3",
       "scopedProjectSha256": {
         "project-04.html": "d836f5d3628ed48e0f87e68f2702f67801aa5858781815c648bdeb5f7bd8a6f9",
         "project-06.html": "e14ab873799b0675c77c8bbea810ab6576b2c0f8d925e0beed943f27a8b4e45f",
@@ -649,8 +674,33 @@
       "fontWait": true,
       "fontProfile": "portfolio-pdf"
     },
-    "coverLetterRenderer": null,
-    "coverLetter": null,
+    "coverLetterRenderer": {
+      "browser": {
+        "name": "chrome-headless-shell",
+        "version": "Google Chrome for Testing 151.0.7922.34"
+      },
+      "htmlPath": "tmp/tailored-resumes/bnberry-product-manager-cover-letter.html",
+      "pdfPath": "output/pdf/Wally-Mostafa-Bnberry-Product-Manager-Cover-Letter.pdf",
+      "fontWait": true,
+      "fontProfile": "portfolio-pdf"
+    },
+    "coverLetter": {
+      "ok": true,
+      "failures": [],
+      "pageCount": 1,
+      "sizeBytes": 24456,
+      "templateVersion": "real-chemistry-21grams-v1",
+      "fonts": {
+        "display": "Syne 800",
+        "body": "Instrument Sans 400/600",
+        "type3Fonts": false
+      },
+      "layout": {
+        "page": "Letter",
+        "margin": "0.58in 0.62in",
+        "header": "centered-rule"
+      }
+    },
     "ats": {
       "ok": true,
       "pdfPath": "output/pdf/Wally-Mostafa-Bnberry-Product-Manager-Resume.pdf",
@@ -859,8 +909,8 @@
       "status": "passed",
       "version": "2.2.0",
       "mode": "surface-only",
-      "reviewedAt": "2026-09-17T14:26:42.455Z",
-      "copySha256": "408b8e2e43b6371b6c71ad6ace9a8b7f713cfba198c5d2348acbad10466dd441",
+      "reviewedAt": "2026-09-17T14:46:18.567Z",
+      "copySha256": "b3dee2c0f78bfb692142d0172ae0dbe8f9618448170ca24ba9e60170dcd85e54",
       "reviewMethod": "humanizer-skill",
       "semanticPassAttested": true,
       "staticChecksPassed": true
