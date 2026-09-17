@@ -4040,6 +4040,41 @@
     },
     {
       "workflowVersion": 2,
+      "contractRevision": 7,
+      "slug": "propharma-regulatory-science-business-development",
+      "roleTitle": "ProPharma Business Development - Regulatory Sciences",
+      "artifactStem": "ProPharma-Business-Development-Regulatory-Sciences",
+      "configPath": "scripts/packages/propharma-regulatory-science-business-development.json",
+      "targetLane": "client-account-delivery",
+      "evidenceMode": "resume-primary",
+      "fitClass": "stretch",
+      "positioningLane": "client-account-delivery",
+      "bridgeType": "operating-center",
+      "applicationStrategy": "approved-stretch",
+      "resumeBaseMode": "account-leadership",
+      "resumeBaseLeadProfile": "account-leadership",
+      "resumeBaseAction": "tailor-to-jd",
+      "accountPresentation": "agency-progression",
+      "resumeBaseProfiles": [
+        {
+          "id": "account-leadership",
+          "version": 1
+        }
+      ],
+      "routeMode": "scoped-projects",
+      "selectedProjects": [
+        "project-01.html",
+        "project-02.html",
+        "project-06.html",
+        "project-03.html"
+      ],
+      "resumePdfPath": "output/pdf/Wally-Mostafa-ProPharma-Business-Development-Regulatory-Sciences-Resume.pdf",
+      "publishStatus": "local-only",
+      "qaStatus": "qa-passed",
+      "builtAt": "2026-09-17T18:29:00.821Z"
+    },
+    {
+      "workflowVersion": 2,
       "contractRevision": 5,
       "slug": "real-chemistry-21grams-account-supervisor",
       "roleTitle": "21GRAMS Account Supervisor",

@@ -1,0 +1,1027 @@
+{
+  "workflowVersion": 2,
+  "contractRevision": 7,
+  "slug": "propharma-regulatory-science-business-development",
+  "roleTitle": "ProPharma Business Development - Regulatory Sciences",
+  "artifactStem": "ProPharma-Business-Development-Regulatory-Sciences",
+  "fitClass": "stretch",
+  "routeMode": "scoped-projects",
+  "selectedProjects": [
+    "project-01.html",
+    "project-02.html",
+    "project-06.html",
+    "project-03.html"
+  ],
+  "job": {
+    "company": "ProPharma",
+    "roleTitle": "Business Development - Regulatory Science Services",
+    "sourceChannel": "User-provided public job description",
+    "dateCaptured": "2026-09-17",
+    "location": "Remote; business travel when needed",
+    "employmentType": "Remote",
+    "rawJd": "About the job\n\nFor the past 25 years, ProPharma has improved the health and wellness of patients by providing advice and expertise that empowers biotech, med device, and pharmaceutical organizations of all sizes to confidently advance scientific breakthroughs and introduce new therapies. ProPharma partners with its clients through an advise-build-operate model across the complete product lifecycle. With deep domain expertise in regulatory sciences, clinical research solutions, quality & compliance, pharmacovigilance, medical information, and R&D technology, ProPharma offers an end-to-end suite of fully customizable consulting solutions that de-risk and accelerate our partners' most high-profile drug and device programs.\n\nJob Description\n\nWe are looking for someone to join our Business Development team with a primary focus on selling Regulatory Science Services.\n\nRemote work, business travel when needed.\n\nEssential Functions\n\n- Develop and maintain long-term client relationships resulting in the expansion of our client base, build awareness of our company services and generate revenue.\n- Uncover immediate needs to target market through leads and follow ups, executing internal and external initiatives to drive profitable growth.\n- Support direct sales initiative by creating and participating in sales meetings and presentations.\n- Identify and attend key conferences and trade shows to increase company visibility and business opportunities.\n- Negotiate contracts and agreements.\n- Generate new leads and opportunities.\n- Develop and write proposals for submission to prospective clients.\n- Initiate and facilitate pre-work with a client as needed (e.g. CDA/NDA, MSA, SOW, meeting preparations).\n- Act as a liaison between ProPharma and potential clients (e.g., setting up capability presentations, teleconference).\n- Document leads, opportunities, proposals, and related activities in CRM.\n- Liaise with client during proposal negotiation.\n- Work closely with client-facing teams outside of the Business Development function on sales strategies based on market research and competitor analyses and execute sales plan based on those strategies.\n- Conduct sales follow-up and order close with prospective customers.\n- Work with Marketing to coordinate promotions, participate in events, and conduct follow-up contact with prospective clients.\n- Utilize internal data tracking tools to record and monitor ongoing sales activities and for producing sales metrics reports as needed.\n- Ensure communications are coordinated with internal stakeholders, and support sales plan objectives.\n- Participate in regular Business Development team meetings and meetings with key stakeholders.\n- Other duties as assigned.\n\nNecessary Skills And Abilities\n\n- Proven team builder and team player who can focus and continuously reinforce efforts to meet goals.\n- Strong presence and confidence during presentations to customers.\n- Exceptional time management skills.\n- Excellent analytical skills and the ability to assess and resolve difficult business situations.\n- A problem solver - analyzing and problem resolution at both a strategic and functional level.\n- High level of ambition, resilient and flexible - able to deal with ambiguity and change, within a midsize but high-growth business.\n- A self-starter with a driving personality and willingness to take on responsibilities in a proactive manner.\n\nEducational Requirements\n\n- Bachelor's degree in a related field.\n\nExperience Requirements\n\n- At least 5 years of sales or recruiting experience within the life sciences field. Specific focus on Quality & Compliance services."
+  },
+  "classification": {
+    "targetLane": "client-account-delivery",
+    "evidenceMode": "resume-primary",
+    "primarySource": "The resume documents eight years of pharmaceutical agency account progression, long-term Fortune 500 client relationships, primary client contact, budgets up to $20M, scopes of work, client and financial reporting, strategic recommendations, presentations, and regulated delivery. It does not document five years of life-sciences sales or recruiting, lead generation, quota, closed-won revenue, or Quality & Compliance services sales.",
+    "supportingSource": "The portfolio adds regulated pharma workflow knowledge, FDA and MLR review context, client discovery, working demonstrations, market and user research, analytics, and presentation-ready recommendations. It supports consultative conversations but cannot replace the missing business-development record.",
+    "hardGateStatus": "pass",
+    "hardGates": [
+      {
+        "gate": "Hold a bachelor's degree in a related field",
+        "status": "pass",
+        "requirementId": "bachelors-degree",
+        "evidence": "The resume lists a BA in Labor Studies and Employee Relations from Rutgers University plus a long record in life-sciences client services."
+      }
+    ]
+  },
+  "requirements": [
+    {
+      "id": "bachelors-degree",
+      "text": "Hold a bachelor's degree in a related field.",
+      "priority": "hard-gate",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "The resume lists a BA in Labor Studies and Employee Relations from Rutgers University.",
+        "The professional record includes eight years in pharmaceutical agency account work and later healthcare product, UX, and regulated-workflow experience."
+      ],
+      "proofIds": [],
+      "destinations": [
+        "experience"
+      ],
+      "resumeTerms": [
+        "BA Labor Studies & Employee Relations",
+        "Rutgers University"
+      ],
+      "matchMode": "contextual"
+    },
+    {
+      "id": "life-sciences-sales-tenure",
+      "text": "Bring at least five years of sales or recruiting experience within life sciences.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "proofIds": [],
+      "destinations": [
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "life sciences sales",
+        "sales tenure"
+      ],
+      "matchMode": "not-supported"
+    },
+    {
+      "id": "quality-compliance-services-sales",
+      "text": "Bring a specific sales focus on Quality & Compliance services.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "proofIds": [],
+      "destinations": [
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "Quality & Compliance services sales"
+      ],
+      "matchMode": "not-supported"
+    },
+    {
+      "id": "client-relationships-and-growth",
+      "text": "Develop long-term client relationships that expand the client base, build service awareness, and generate revenue.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "The resume documents eight years of pharmaceutical agency account work, primary client contact, Fortune 500 relationships, and budgets up to $20M.",
+        "It does not document account-expansion revenue, quota, or new-client acquisition."
+      ],
+      "proofIds": [
+        "account-management-01",
+        "account-management-02",
+        "addition:rosetta-prevenar-client-contact"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience"
+      ],
+      "resumeTerms": [
+        "client relationships",
+        "primary client contact",
+        "budgets up to $20M"
+      ],
+      "matchMode": "contextual"
+    },
+    {
+      "id": "lead-generation-and-prospecting",
+      "text": "Generate and follow up on leads and opportunities in the target market.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "proofIds": [],
+      "destinations": [
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "lead generation",
+        "prospecting"
+      ],
+      "matchMode": "not-supported"
+    },
+    {
+      "id": "sales-meetings-and-presentations",
+      "text": "Create and participate in sales meetings, capability presentations, and prospective-client calls.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Current work includes client discovery, functional POCs, demo stories, investor presentations, workshops, and presentation-ready recommendations.",
+        "The record does not establish ownership of formal sales meetings or capability presentations for Regulatory Science Services."
+      ],
+      "proofIds": [
+        "hedgehox-01",
+        "one-block-away-01",
+        "kinesso-03",
+        "kinesso-07"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "demo story",
+        "presentation-ready client outputs",
+        "executives and clients"
+      ],
+      "matchMode": "contextual"
+    },
+    {
+      "id": "conferences-and-events",
+      "text": "Identify and attend conferences, trade shows, and promotional events to create business opportunities.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "proofIds": [],
+      "destinations": [
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "trade shows",
+        "conference business development"
+      ],
+      "matchMode": "not-supported"
+    },
+    {
+      "id": "proposals-contracts-and-prework",
+      "text": "Write proposals, negotiate contracts and agreements, and facilitate CDA, NDA, MSA, SOW, and meeting preparation.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "The account record documents project briefs, scopes of work, budgets, status and financial reporting, vendor coordination, and client meeting preparation.",
+        "Scope Generator work includes rate cards and scope changes, but proposal ownership, contract negotiation, and CDA, NDA, or MSA ownership are not documented."
+      ],
+      "proofIds": [
+        "hedgehox-05",
+        "addition:rosetta-dubai-advisory",
+        "account-management-03"
+      ],
+      "destinations": [
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "scopes of work",
+        "rate cards",
+        "financial reporting"
+      ],
+      "matchMode": "contextual"
+    },
+    {
+      "id": "crm-sales-activity-tracking",
+      "text": "Document leads, opportunities, proposals, activities, and sales metrics in CRM and internal tracking tools.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "proofIds": [],
+      "destinations": [
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "CRM opportunity tracking",
+        "sales metrics"
+      ],
+      "matchMode": "not-supported"
+    },
+    {
+      "id": "market-and-competitor-analysis",
+      "text": "Work with client-facing teams on sales strategies informed by market research and competitor analysis.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "The resume documents market research, competitive audits, campaign metrics, annual strategic recommendations, and client-facing product recommendations.",
+        "The record does not establish sales-plan ownership."
+      ],
+      "proofIds": [
+        "account-management-03",
+        "addition:cdm-lipitor-zoloft-digital",
+        "heartbeat-01"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "market research",
+        "competitive audits",
+        "strategic recommendations"
+      ],
+      "matchMode": "contextual"
+    },
+    {
+      "id": "sales-follow-up-and-close",
+      "text": "Conduct sales follow-up and close orders with prospective clients.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "proofIds": [],
+      "destinations": [
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "sales close",
+        "closed-won revenue"
+      ],
+      "matchMode": "not-supported"
+    },
+    {
+      "id": "regulated-life-sciences-context",
+      "text": "Understand the life-sciences environment and communicate credibly about regulated client needs.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "contextual",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The resume documents pharmaceutical agency work across multiple therapeutic areas, FDA preclearance, OPDP and review-committee submissions, med-legal review, and MLR workflows.",
+        "Recent tools support promotional-claim review, evidence-gap detection, review routing, submission capture, and FDA signal monitoring."
+      ],
+      "proofIds": [
+        "account-management-02",
+        "addition:fcb-nuvigil-client-operations",
+        "hedgehox-02",
+        "hedgehox-03"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "FDA preclearance",
+        "OPDP",
+        "MLR"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "cross-functional-coordination",
+      "text": "Coordinate communication with internal stakeholders and work closely with client-facing, marketing, and delivery teams.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The resume documents work across client, strategy, creative, media, production, UX, development, research, analytics, engineering, finance, and vendor teams.",
+        "It also shows briefs, scopes, timelines, review routing, financial reporting, and coordinated delivery."
+      ],
+      "proofIds": [
+        "account-management-03",
+        "one-block-away-04",
+        "kinesso-01"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "cross-functional delivery",
+        "team coordination",
+        "review routing"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "presentation-analysis-and-problem-solving",
+      "text": "Bring presentation confidence, analytical judgment, problem solving, time management, resilience, and proactive ownership.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The resume documents client and executive presentations, analytics and benchmark workflows, strategic recommendations, complex delivery, team growth, and ownership from discovery through working product decisions.",
+        "The account record shows simultaneous multichannel work, budgets, timelines, vendors, and regulated review."
+      ],
+      "proofIds": [
+        "one-block-away-04",
+        "kinesso-01",
+        "kinesso-03",
+        "account-management-02"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "presentation-ready client outputs",
+        "risk visibility",
+        "client iteration"
+      ],
+      "matchMode": "recognized-equivalent"
+    }
+  ],
+  "fitGate": {
+    "resumeBase": {
+      "mode": "account-leadership",
+      "sourceProfiles": [
+        {
+          "id": "account-leadership",
+          "version": 1
+        }
+      ],
+      "leadProfileId": "account-leadership",
+      "accountPresentation": "agency-progression",
+      "action": "tailor-to-jd",
+      "rationale": "The credible operating center is pharmaceutical account leadership, client relationships, presentations, scopes, financial reporting, and regulated delivery. The Account Leadership base keeps that evidence primary while preserving the unsupported sales and Quality & Compliance requirements as visible gaps."
+    },
+    "supportedOverlap": [
+      "Eight years of pharmaceutical agency account progression from Account Coordinator through Account Supervisor.",
+      "Fortune 500 client relationships, primary client contact, budgets up to $20M, briefs, scopes of work, client and financial reporting, strategic recommendations, and multidisciplinary delivery.",
+      "Direct regulated-work evidence across FDA preclearance, OPDP and review-committee submissions, med-legal review, MLR workflows, promotional-claim review, and FDA signal monitoring.",
+      "Client discovery, working demonstrations, market and user research, competitive audits, executive workshops, and presentation-ready recommendations."
+    ],
+    "unsupportedRequirements": [
+      "Five years of life-sciences sales or recruiting experience is not documented.",
+      "Selling Quality & Compliance services is not documented.",
+      "Lead generation, prospecting, opportunity origination, sales follow-up, order close, quota, and closed-won revenue are not documented.",
+      "Sales CRM and pipeline ownership, proposal ownership, contract negotiation, CDA, NDA, MSA, and pricing authority are not documented.",
+      "Conference and trade-show business development is not documented."
+    ],
+    "actualMismatches": [
+      "The role's center is net-new Regulatory Science Services sales, while the strongest direct evidence centers on pharmaceutical client relationships, account delivery, strategy, and regulated marketing workflows.",
+      "The Quality & Compliance requirement is a services-sales specialization; regulated agency work and MLR familiarity are useful context but are not equivalent."
+    ],
+    "missingEvidence": [
+      "A five-year life-sciences sales or recruiting record with Quality & Compliance services focus.",
+      "Self-sourced pipeline, qualified opportunities, proposals, negotiations, closed deals, and revenue results.",
+      "CRM pipeline hygiene, forecasts, sales activity reporting, and close metrics.",
+      "CDA, NDA, MSA, contract, and proposal ownership tied to prospective clients.",
+      "Conference, trade-show, and event-driven lead generation."
+    ],
+    "coverLetterBridge": {
+      "status": "not-credible",
+      "rationale": "A cover letter cannot establish five years of life-sciences sales or recruiting, Quality & Compliance services sales, lead generation, pipeline ownership, negotiation, or closed revenue. The package therefore stays with the supported client-leadership and regulated-delivery record."
+    },
+    "recommendation": "Proceed only as the user-approved stretch. Lead with pharmaceutical client leadership, regulated-work fluency, presentations, scopes, financial reporting, research, and cross-functional delivery. Keep sales tenure, Quality & Compliance services sales, lead generation, quota, pipeline, proposals, negotiation, and closed revenue out of the claim set."
+  },
+  "positioning": {
+    "laneId": "client-account-delivery",
+    "targetIdentity": "Life sciences client and account leader",
+    "employerNeed": "Build trusted client relationships, understand regulated needs, present clear service approaches, and coordinate the people and pre-work required to move an opportunity forward.",
+    "bridgeType": "operating-center",
+    "applicationStrategy": "approved-stretch",
+    "bridgeThesis": "turn complex client needs into clear plans and practical solutions",
+    "proofIds": [
+      "account-management-01",
+      "hedgehox-03",
+      "kinesso-03"
+    ],
+    "remainingGap": "The current evidence does not establish five years of life-sciences sales or recruiting, Quality & Compliance services sales, lead generation, sales-pipeline ownership, proposal and contract negotiation, or closed revenue."
+  },
+  "route": {
+    "presentation": "showcase",
+    "heroIntent": "resume-support",
+    "showcaseSections": [
+      "chapters"
+    ],
+    "workHeading": "Selected regulated and client work.",
+    "contactHeading": "Thanks for taking a look."
+  },
+  "hero": {
+    "eyebrow": "ProPharma | Selected Work",
+    "tags": [
+      "Regulated pharma workflows",
+      "Client presentations",
+      "Cross-functional delivery"
+    ],
+    "intro": "I pulled together four recent projects that may be useful alongside my resume for the Business Development role. The resume covers my pharmaceutical account background; these examples offer a closer look at regulated workflow, client discovery, presentation, and analytics work that came next."
+  },
+  "contact": {
+    "prompt": "Thank you for taking a look. Email and the matched resume are below.",
+    "signoff": "Life sciences clients | regulated delivery | practical solutions"
+  },
+  "constraints": {
+    "doNotClaim": [
+      "Five years of life-sciences sales or recruiting experience",
+      "Quality & Compliance services sales experience",
+      "New-lead generation, prospecting, opportunity origination, or client-base expansion",
+      "Quota attainment, sales targets, closed-won revenue, order close, or profitable-growth ownership",
+      "Sales-pipeline, opportunity, forecast, or CRM administration",
+      "Proposal ownership, pricing authority, contract negotiation, CDA, NDA, or MSA ownership",
+      "Conference or trade-show business development results",
+      "Current Business Development or Regulatory Science Services title",
+      "Regulatory-science consulting or Quality & Compliance subject-matter expertise"
+    ],
+    "blockedTerms": [
+      "life sciences sales leader",
+      "Quality & Compliance sales",
+      "generated new leads",
+      "owned the sales pipeline",
+      "quota attainment",
+      "closed-won revenue",
+      "negotiated contracts",
+      "owned proposals",
+      "CRM administrator",
+      "regulatory science expert",
+      "Quality & Compliance expert"
+    ]
+  },
+  "privacy": {
+    "publicSafe": true,
+    "notes": "Contains only the public job description supplied by the user and public-safe evidence from the resume and portfolio. It excludes recruiter details, application answers, compensation boundaries, private eligibility information, and submission state."
+  },
+  "resume": {
+    "foundationId": "wally-mostafa-resume-2026-07-03",
+    "compositionMode": "profile-complete",
+    "layoutDensity": "compact",
+    "summary": "Life sciences client and account leader with eight years of pharmaceutical agency experience and 15 years across client services, product strategy, UX, and practical AI. I turn complex client needs into clear plans and practical solutions, backed by Fortune 500 relationships, budgets up to $20M, scopes of work, financial reporting, strategic recommendations, and regulated delivery. More recent work adds MLR workflow design, client discovery, working demonstrations, market research, and presentation-ready recommendations.",
+    "skillIds": [
+      "account-management-client-leadership",
+      "healthcare-marketing-strategy",
+      "consultative-sales-solution-delivery",
+      "program-project-delivery"
+    ],
+    "skills": [
+      {
+        "label": "Account Management & Client Leadership",
+        "description": "Client relationships, budgets up to $20M, briefs, scopes, timelines, status and financial reporting, vendor coordination, and cross-functional delivery"
+      },
+      {
+        "label": "Healthcare Marketing & Brand Strategy",
+        "description": "Brand planning, campaign and digital strategy, MLR review, patient and HCP experiences, and regulated multi-channel delivery"
+      },
+      {
+        "label": "Consultative Sales & Solution Delivery",
+        "description": "Discovery-led solution design, POCs, demo narratives, client translation, and product recommendations tied to business needs"
+      },
+      {
+        "label": "Program & Project Delivery",
+        "description": "Scoping, requirements, timelines, review routing, team coordination, risk visibility, and build-ready handoff across product, design, and client teams"
+      }
+    ],
+    "experienceSections": [
+      {
+        "heading": "Life Sciences Account Experience",
+        "roleIds": [
+          "account-management"
+        ]
+      },
+      {
+        "heading": "Recent Client & Product Experience",
+        "roleIds": [
+          "hedgehox",
+          "one-block-away",
+          "kinesso",
+          "omnicom",
+          "heartbeat"
+        ]
+      }
+    ],
+    "awards": [
+      {
+        "label": "Manny Award 2013",
+        "detail": "Best Unbranded Campaign, \"Get Your Shift Together\""
+      },
+      {
+        "label": "Pharma Choice Awards 2011",
+        "detail": "Silver Consumer Print, Silver HCP Sales Aid, Bronze HCP Mobile Site"
+      },
+      {
+        "label": "Indigo Awards 2023",
+        "detail": "Design System & Data Visualization: 3x Gold, 2x Silver",
+        "href": "https://www.indigoaward.com/winners/6748"
+      }
+    ],
+    "roles": {
+      "hedgehox": [
+        "Translate pharma agency needs into working tools for MLR claim review, brief intake, scoping, review routing, submission capture, and FDA signal monitoring",
+        "Designed Claims Detector workflows that identify promotional claims, surface evidence gaps, and pre-populate audit-ready annotations before MLR submission",
+        "Built Scope Generator for pharma agency finance and operations teams to manage regional rate cards, brands, sub-brands, and natural-language scope changes",
+        "Secured an investor for proprietary Claims Detection software by building the functional POC, shaping the demo story, and iterating with investors"
+      ],
+      "one-block-away": [
+        "Lead client discovery and turn unclear business questions into testable product concepts, working POCs, demo flows, and roadmap decisions",
+        "Own product strategy, UX, AI workflow design, front-end build, backend logic, demo readiness, and client iteration from first ask through working prototype",
+        "Built ListingPal's AI listing-generation POC and landing page, turning basic property inputs into listing copy, social posts, ad copy, styling direction, and MLS/SEO-ready language in under 90 seconds",
+        "Built WeReady's Bailey Intelligence dashboard, translating founder inputs, GitHub signals, source health, risk scoring, and evidence trails into startup-readiness workflows",
+        "Currently building the website and sponsor strategy for a Tunisia youth soccer program, positioning the project for player advancement, community support, and donor outreach"
+      ],
+      "kinesso": [
+        "Led workshops on product discovery, ecosystem mapping, innovation, and user research; expanded the program from Kinesso teams to IPG groups and presented recommendations to executives and clients",
+        "Built the Digital Experience Audit workflow for channel scoring, benchmarks, recommendations, visualization, and presentation-ready client outputs",
+        "Scaled product design from 2 to 30 people across the US and Poland, hiring and staffing designers, leading critiques and quality reviews, and planning scope, resources, and engineering handoff across 20+ products",
+        "Led UX research and strategy for a marketing intelligence suite used by 7,000+ people across 22 white-label brands; turned findings and adoption data into roadmap priorities for navigation, dashboards, brand theming, personalization, and product support"
+      ],
+      "omnicom": [
+        "Supported oncology accounts as a freelance UX designer, combining UX design and account-management experience to strengthen regulated healthcare work"
+      ],
+      "heartbeat": [
+        "Led UX research and experience strategy for pharma and healthcare work, translating stakeholder input, competitive audits, and user needs into digital product direction",
+        "Created journey maps, site maps, user flows, wireframes, and prototypes for patient, HCP, and internal brand-team experiences across regulated healthcare programs",
+        "Partnered with strategy, creative, account, and engineering teams to move UX recommendations from research findings into build-ready product and campaign experiences"
+      ],
+      "account-management": [
+        {
+          "title": "Account Supervisor / Digital Strategist",
+          "employer": "Scout Marketing",
+          "location": "San Diego, CA",
+          "dateRange": "Jun 2015 – Jul 2018",
+          "bullets": [
+            "Promoted from Senior Account Executive and took the lead on Jazz Pharmaceuticals XYREM consumer work: unbranded campaigns across digital, print, and in-office channels that lifted traffic and engagement on the disease-state site",
+            "Led the launch of the first unbranded social campaign on Facebook and YouTube for the brand and for Jazz, built around real patients telling their own stories",
+            "Oversaw an unbranded digital campaign bridging disease state and branded work; banners held a 0.37% click-through rate against a 0.17% industry benchmark and doubled qualified traffic to the brand site"
+          ]
+        },
+        {
+          "title": "Senior Account Executive",
+          "employer": "FCB Health",
+          "location": "New York, NY",
+          "dateRange": "Jun 2014 – Jun 2015",
+          "bullets": [
+            "One of two consumer account leads on the agency's largest pharma business, managing the Actavis Namenda XR direct-to-consumer launch and its $20M brand budget",
+            "Owned the broadcast workstream for three national television commercials in one year, covering market research, med-legal review, FDA preclearance, pre- and post-production, talent and location coordination, director searches, and network clearances; the spots drove a 45% increase in new-to-brand consumers within seven weeks",
+            "Led the launch of an unbranded Alzheimer's caregiver community site with support resources, sponsorship exploration, and public relations pull-through; also oversaw the account's Assistant Account Executive across in-office tactics, national print, and sales representative support materials"
+          ]
+        },
+        {
+          "title": "Senior Account Executive",
+          "employer": "Barker DZP",
+          "location": "New York, NY",
+          "dateRange": "Dec 2013 – May 2014",
+          "bullets": [
+            "Led the social campaign for a new Tough Mudder loyalty program and oversaw PDI and Nice-Pak, the agency's largest account, across print, digital, and social"
+          ]
+        },
+        {
+          "title": "Senior Account Executive",
+          "employer": "Cline Davis & Mann",
+          "location": "New York, NY",
+          "dateRange": "Sep 2013 – Dec 2013",
+          "bullets": [
+            "Used campaign metrics to shape Pfizer digital recommendations for Lipitor's online presence and loyalty program during loss of exclusivity, and piloted a Zoloft savings offer to test market response"
+          ]
+        },
+        {
+          "title": "Assistant Account Executive to Account Executive",
+          "employer": "FCB Health",
+          "location": "New York, NY",
+          "dateRange": "Apr 2011 – Sep 2013",
+          "bullets": [
+            "Managed development and execution of the unbranded Teva NUVIGIL campaign for National Night Shift Workers' Day across Times Square NASDAQ, national television, Xbox Live, radio, outdoor, and consumer journals, working through media, digital, and print vendors; the campaign won the 2013 Manny Award for Best Unbranded Campaign",
+            "Coordinated the NUVIGIL.com consumer rebrand across desktop and mobile with the agency's digital strategy and development teams, plus the launch of a CRM patient support program and its online patient community",
+            "Worked alongside the HCP team on the NUVIGIL.com HCP site and sales aid, both of which won 2011 Pharma Choice awards",
+            "Owned weekly client status and financial reporting plus OPDP and review-committee submissions across the $10M consumer business, and contributed to the annual strategic recommendations"
+          ]
+        },
+        {
+          "title": "Account Coordinator",
+          "employer": "RosettaWishbone",
+          "location": "New York, NY",
+          "dateRange": "Sep 2010 – Mar 2011",
+          "bullets": [
+            "Primary client contact across brand teams, national affiliates, and vendors on an award-winning global unbranded pneumococcal disease awareness campaign for the Pfizer Prevenar 13 adult pre-launch",
+            "Facilitated an Africa and Middle East advisory board in Dubai and owned project briefs, scopes of work, key opinion leader communications, and client status and financial reports"
+          ]
+        }
+      ]
+    },
+    "sourceBulletIds": {
+      "hedgehox": [
+        "hedgehox-03",
+        "hedgehox-02",
+        "hedgehox-05",
+        "hedgehox-01"
+      ],
+      "one-block-away": [
+        "one-block-away-01",
+        "one-block-away-04",
+        "one-block-away-02",
+        "one-block-away-03",
+        "one-block-away-05"
+      ],
+      "kinesso": [
+        "kinesso-07",
+        "kinesso-03",
+        "kinesso-01",
+        "kinesso-02"
+      ],
+      "omnicom": [
+        "omnicom-01"
+      ],
+      "heartbeat": [
+        "heartbeat-01",
+        "heartbeat-02",
+        "heartbeat-03"
+      ],
+      "account-management": [
+        "addition:scout-xyrem-account-lead",
+        "addition:scout-xyrem-unbranded-social",
+        "addition:scout-xyrem-bridging-campaign",
+        "account-management-02",
+        "account-management-03",
+        "addition:fcb-namenda-caregiver-site",
+        "addition:barker-tough-mudder-pdi",
+        "addition:cdm-lipitor-zoloft-digital",
+        "account-management-01",
+        "addition:fcb-nuvigil-rebrand-crm",
+        "addition:fcb-nuvigil-hcp-collaboration",
+        "addition:fcb-nuvigil-client-operations",
+        "addition:rosetta-prevenar-client-contact",
+        "addition:rosetta-dubai-advisory"
+      ]
+    }
+  },
+  "coverLetter": null,
+  "copyReview": {
+    "humanizerVersion": "2.2.0",
+    "mode": "surface-only",
+    "status": "passed",
+    "reviewedAt": "2026-09-17T18:27:12.591Z",
+    "copySha256": "3d6408bc6dcd28725720341332201901b50ff55f136cf8de7239d234c7b47a56",
+    "preserved": [
+      "content",
+      "structure",
+      "claims",
+      "ending"
+    ],
+    "rewriteAuthorized": false,
+    "reviewMethod": "humanizer-skill",
+    "semanticPassAttested": true,
+    "staticChecksPassed": true,
+    "finalAntiAiPass": true,
+    "remainingTells": []
+  },
+  "qa": {
+    "status": "qa-passed",
+    "builtAt": "2026-09-17T18:29:00.821Z",
+    "configInputSha256": "79bc4f02e40a9210b31d970a0dc50ca59edf8604f7a56ccd6cfd3ac77d3ea8ad",
+    "sourceResumeSha256": "8273f9c5f9038a159fa1d9ecc813e2c23069e37c7ef6dd0effe5439cef217fd7",
+    "resumeFoundation": {
+      "id": "wally-mostafa-resume-2026-07-03",
+      "sourcePdfSha256": "f9b05b6c3c134262b1af6c5734363daf4385cf335407a139779a37d138adf1aa"
+    },
+    "resumeBase": {
+      "mode": "account-leadership",
+      "sourceProfiles": [
+        {
+          "id": "account-leadership",
+          "version": 1
+        }
+      ],
+      "leadProfileId": "account-leadership",
+      "accountPresentation": "agency-progression",
+      "action": "tailor-to-jd",
+      "registryVersion": 1,
+      "registrySha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108"
+    },
+    "artifactHashes": {
+      "routeSha256": "00d4c86bf7aba122764952f71fba827fdda06b737d03186c0c81e24a19466b68",
+      "resumePdfSha256": "c05844cb9d8573dd026ea78d1816c6c65acd232104333b3c590c63cec226ba03",
+      "coverLetterPdfSha256": null,
+      "coverLetterMarkdownSha256": null,
+      "scopedProjectSha256": {
+        "project-01.html": "119125e67abaa80d21274b4a877a9c41e1b04cee347d7fbe42e5b59d3d1b4a67",
+        "project-02.html": "255f9c0647ffd760cb881d7f4be9d03da7cceb253497e187cb262478d7f129cb",
+        "project-06.html": "a543fb9b81a16c2f0f1f16574f6061bd9c7ad6f54647eabb5ab364731554d3dd",
+        "project-03.html": "955081bb813dc0c6f0b0cb6b845e993c778da765911efd22e7adf2b49f35daa0"
+      },
+      "scopedProjectAssetSha256": {}
+    },
+    "renderer": {
+      "browser": {
+        "name": "chrome-headless-shell",
+        "version": "Google Chrome for Testing 151.0.7922.34"
+      },
+      "htmlPath": "tmp/tailored-resumes/propharma-regulatory-science-business-development.html",
+      "pdfPath": "output/pdf/Wally-Mostafa-ProPharma-Business-Development-Regulatory-Sciences-Resume.pdf",
+      "fontWait": true,
+      "fontProfile": "portfolio-pdf"
+    },
+    "coverLetterRenderer": null,
+    "coverLetter": null,
+    "ats": {
+      "ok": true,
+      "pdfPath": "output/pdf/Wally-Mostafa-ProPharma-Business-Development-Regulatory-Sciences-Resume.pdf",
+      "pageCount": 2,
+      "fileSize": 82450,
+      "annotations": [
+        {
+          "page": 1,
+          "uri": "mailto:wmostafa12@gmail.com"
+        },
+        {
+          "page": 1,
+          "uri": "https://linkedin.com/in/wallymo"
+        },
+        {
+          "page": 1,
+          "uri": "https://wallymo.github.io/propharma-regulatory-science-business-development/"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/6748"
+        }
+      ],
+      "fontCompatibility": {
+        "type3Fonts": false
+      },
+      "coverage": [
+        {
+          "id": "bachelors-degree",
+          "requirement": "Hold a bachelor's degree in a related field.",
+          "priority": "hard-gate",
+          "evidenceStatus": "adjacent",
+          "matchMode": "contextual",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "BA Labor Studies & Employee Relations",
+            "Rutgers University"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "life-sciences-sales-tenure",
+          "requirement": "Bring at least five years of sales or recruiting experience within life sciences.",
+          "priority": "core",
+          "evidenceStatus": "none",
+          "matchMode": "not-supported",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "life sciences sales",
+            "sales tenure"
+          ]
+        },
+        {
+          "id": "quality-compliance-services-sales",
+          "requirement": "Bring a specific sales focus on Quality & Compliance services.",
+          "priority": "core",
+          "evidenceStatus": "none",
+          "matchMode": "not-supported",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "Quality & Compliance services sales"
+          ]
+        },
+        {
+          "id": "client-relationships-and-growth",
+          "requirement": "Develop long-term client relationships that expand the client base, build service awareness, and generate revenue.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "contextual",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "client relationships",
+            "primary client contact",
+            "budgets up to $20M"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "lead-generation-and-prospecting",
+          "requirement": "Generate and follow up on leads and opportunities in the target market.",
+          "priority": "core",
+          "evidenceStatus": "none",
+          "matchMode": "not-supported",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "lead generation",
+            "prospecting"
+          ]
+        },
+        {
+          "id": "sales-meetings-and-presentations",
+          "requirement": "Create and participate in sales meetings, capability presentations, and prospective-client calls.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "contextual",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "demo story",
+            "presentation-ready client outputs",
+            "executives and clients"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "conferences-and-events",
+          "requirement": "Identify and attend conferences, trade shows, and promotional events to create business opportunities.",
+          "priority": "core",
+          "evidenceStatus": "none",
+          "matchMode": "not-supported",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "trade shows",
+            "conference business development"
+          ]
+        },
+        {
+          "id": "proposals-contracts-and-prework",
+          "requirement": "Write proposals, negotiate contracts and agreements, and facilitate CDA, NDA, MSA, SOW, and meeting preparation.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "contextual",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "scopes of work",
+            "rate cards",
+            "financial reporting"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "crm-sales-activity-tracking",
+          "requirement": "Document leads, opportunities, proposals, activities, and sales metrics in CRM and internal tracking tools.",
+          "priority": "core",
+          "evidenceStatus": "none",
+          "matchMode": "not-supported",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "CRM opportunity tracking",
+            "sales metrics"
+          ]
+        },
+        {
+          "id": "market-and-competitor-analysis",
+          "requirement": "Work with client-facing teams on sales strategies informed by market research and competitor analysis.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "contextual",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "market research",
+            "competitive audits",
+            "strategic recommendations"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "sales-follow-up-and-close",
+          "requirement": "Conduct sales follow-up and close orders with prospective clients.",
+          "priority": "core",
+          "evidenceStatus": "none",
+          "matchMode": "not-supported",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "sales close",
+            "closed-won revenue"
+          ]
+        },
+        {
+          "id": "regulated-life-sciences-context",
+          "requirement": "Understand the life-sciences environment and communicate credibly about regulated client needs.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "FDA preclearance",
+            "OPDP",
+            "MLR"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "cross-functional-coordination",
+          "requirement": "Coordinate communication with internal stakeholders and work closely with client-facing, marketing, and delivery teams.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "cross-functional delivery",
+            "team coordination",
+            "review routing"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "presentation-analysis-and-problem-solving",
+          "requirement": "Bring presentation confidence, analytical judgment, problem solving, time management, resilience, and proactive ownership.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "presentation-ready client outputs",
+            "risk visibility",
+            "client iteration"
+          ],
+          "missingTerms": []
+        }
+      ],
+      "failures": [],
+      "warnings": []
+    },
+    "humanizer": {
+      "status": "passed",
+      "version": "2.2.0",
+      "mode": "surface-only",
+      "reviewedAt": "2026-09-17T18:27:12.591Z",
+      "copySha256": "3d6408bc6dcd28725720341332201901b50ff55f136cf8de7239d234c7b47a56",
+      "reviewMethod": "humanizer-skill",
+      "semanticPassAttested": true,
+      "staticChecksPassed": true
+    },
+    "route": {
+      "viewports": [
+        {
+          "name": "desktop",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-01",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-02",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-06",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-03",
+          "errors": []
+        },
+        {
+          "name": "mobile",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-01",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-02",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-06",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-03",
+          "errors": []
+        }
+      ],
+      "errors": []
+    }
+  }
+}
