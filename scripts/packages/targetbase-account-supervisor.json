@@ -1,0 +1,972 @@
+{
+  "workflowVersion": 2,
+  "contractRevision": 7,
+  "slug": "targetbase-account-supervisor",
+  "roleTitle": "Targetbase Account Supervisor",
+  "artifactStem": "Targetbase-Account-Supervisor",
+  "fitClass": "strong",
+  "routeMode": "scoped-projects",
+  "selectedProjects": [
+    "project-01.html",
+    "project-06.html",
+    "project-04.html",
+    "project-03.html"
+  ],
+  "job": {
+    "company": "Targetbase",
+    "roleTitle": "Account Supervisor",
+    "jobId": "not-provided",
+    "jobUrl": "not-provided",
+    "sourceChannel": "user-provided job description",
+    "dateCaptured": "2026-09-17",
+    "location": "not provided",
+    "employmentType": "not provided",
+    "atsVendor": "not provided",
+    "rawJd": "Targetbase is a data-driven strategic marketing agency that integrates technology, analytics, creative, digital, and strategy to improve consumer experience, engagement, and client outcomes.\n\nThe Account Supervisor leads agency resources and serves as the daily client contact, keeping projects on time, on specification, within scope, and on budget with completed planning and documentation. The role identifies opportunities to grow the agency and the client's business.\n\nResponsibilities include managing schedules, budgets, deadlines, scope, plans, estimates, change requests, project financials, revenue forecasting inputs, and resource projections; learning Targetbase tools and processes; anticipating client needs; managing project suppliers; monitoring competitors; supporting current programs; working with SBA, Technology, Creative, and other cross-functional teams; communicating project status and changes; building client trust through timely delivery; helping develop short- and long-term targeting and direct-marketing guidance; integrating agency competencies; supporting direct reports; and promoting a positive team culture.\n\nQualifications include five or more years of digital or omnichannel campaign experience, preferably in a marketing or digital agency; enthusiasm for consumer marketing and customer journeys; a solid understanding of relational database technology and CRM principles and applications; pharma or high-science healthcare exposure preferred; client-facing experience; a track record leading marketing projects with creative, strategy, and analytics teams; and a bachelor's degree in Marketing, Advertising, Communications, Business, or Liberal Arts. The role also requires clear communication, independent project management, comfort with fast-paced work, understanding of analytics, technology, and creative processes, strong organization, initiative, and the ability to learn new ideas quickly."
+  },
+  "classification": {
+    "targetLane": "client-account-delivery",
+    "evidenceMode": "resume-primary",
+    "primarySource": "The resume directly documents eight years of agency account progression from Account Coordinator through Account Supervisor, five or more years of digital and omnichannel campaign work, Fortune 500 client relationships, budgets up to $20M, daily client contact, integrated delivery, CRM campaign support, scopes of work, financial reporting, vendor coordination, and regulated pharma experience.",
+    "supportingSource": "The portfolio adds recent proof of customer-journey work, analytics and reporting, workflow design, cross-functional delivery, and team leadership. It reinforces the account story but does not substitute for direct ownership of relational-database systems, revenue forecasting, formal procurement paperwork, or change control.",
+    "hardGateStatus": "pass",
+    "hardGates": [
+      {
+        "gate": "Bring five or more years of digital or omnichannel campaign experience, preferably in a marketing or digital agency",
+        "status": "pass",
+        "requirementId": "agency-omnichannel-tenure",
+        "evidence": "The resume documents eight years of agency account-management progression and omnichannel campaign work across digital, CRM, social, television, radio, print, outdoor, gaming, and in-office programs."
+      },
+      {
+        "gate": "Hold a bachelor's degree in a listed or related field",
+        "status": "pass",
+        "requirementId": "bachelors-degree",
+        "evidence": "The resume lists a Rutgers University BA in Labor Studies and Employee Relations, a liberal-arts degree."
+      }
+    ]
+  },
+  "requirements": [
+    {
+      "id": "agency-omnichannel-tenure",
+      "text": "Bring five or more years of digital or omnichannel campaign experience, preferably in a marketing or digital agency.",
+      "priority": "hard-gate",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The resume documents eight years of agency account-management progression from Account Coordinator through Account Supervisor.",
+        "Campaign work spans digital, CRM, social, television, radio, print, outdoor, gaming, and in-office channels."
+      ],
+      "proofIds": [
+        "account-management-01",
+        "account-management-02",
+        "addition:fcb-nuvigil-rebrand-crm"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience"
+      ],
+      "resumeTerms": [
+        "eight years",
+        "Account Supervisor",
+        "omnichannel"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "bachelors-degree",
+      "text": "Hold a bachelor's degree in Marketing, Advertising, Communications, Business, Liberal Arts, or a related field.",
+      "priority": "hard-gate",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The resume lists a BA in Labor Studies and Employee Relations from Rutgers University."
+      ],
+      "proofIds": [],
+      "destinations": [
+        "experience"
+      ],
+      "resumeTerms": [
+        "BA Labor Studies & Employee Relations",
+        "Rutgers University"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "day-to-day-client-leadership",
+      "text": "Act as the daily client contact, understand client needs, manage expectations, communicate clearly, and build trust through reliable delivery.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Account leadership included primary client-contact responsibility across brand teams, national affiliates, vendors, and agency partners.",
+        "The resume documents client needs translated into briefs, creative feedback, production requirements, timelines, and completed delivery."
+      ],
+      "proofIds": [
+        "addition:rosetta-prevenar-client-contact",
+        "addition:scout-xyrem-account-lead",
+        "account-management-03"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "primary client contact",
+        "client relationships",
+        "client needs"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "project-scope-budget-delivery",
+      "text": "Lead projects through scope definition, planning, schedules, budgets, deadlines, estimates, deliverables, and changes.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The resume documents budgets up to $20M, project briefs, scopes of work, production requirements, timelines, status reporting, and finished delivery.",
+        "Recent work includes a Scope Generator for agency finance and operations teams that manages rate cards and natural-language scope changes."
+      ],
+      "proofIds": [
+        "account-management-03",
+        "addition:rosetta-dubai-advisory",
+        "hedgehox-05"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience"
+      ],
+      "resumeTerms": [
+        "Program & Project Delivery",
+        "scopes of work",
+        "budgets up to $20M"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "project-financials-and-resourcing",
+      "text": "Own project financials, track client and internal budgets, and provide accurate inputs for revenue forecasting and resource projections.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "The resume documents brand budgets up to $20M plus weekly client financial reporting across a $10M consumer business.",
+        "Later leadership includes scope and resource planning across more than 20 products, but explicit revenue-forecasting ownership is not documented."
+      ],
+      "proofIds": [
+        "account-management-01",
+        "addition:fcb-nuvigil-client-operations",
+        "kinesso-01"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience"
+      ],
+      "resumeTerms": [
+        "budgets up to $20M",
+        "financial reporting",
+        "resource planning"
+      ],
+      "matchMode": "contextual"
+    },
+    {
+      "id": "customer-journey-crm-and-data",
+      "text": "Apply consumer-marketing, customer-journey, CRM, and relational-database principles to direct and targeted marketing programs.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "The resume directly documents a CRM patient support program, online patient community, customer journey maps, campaign metrics, and enterprise analytics.",
+        "Relational-database technology ownership or administration is not documented and is not claimed."
+      ],
+      "proofIds": [
+        "addition:fcb-nuvigil-rebrand-crm",
+        "heartbeat-02",
+        "kinesso-02"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "CRM patient support program",
+        "journey maps",
+        "enterprise analytics"
+      ],
+      "matchMode": "contextual"
+    },
+    {
+      "id": "pharma-and-high-science-exposure",
+      "text": "Bring exposure to pharma or high-science healthcare marketing.",
+      "priority": "preferred",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The resume documents eight years of direct pharmaceutical account work plus later healthcare UX and regulated AI workflow experience.",
+        "Account work spans multiple therapeutic areas and includes MLR, med-legal review, FDA preclearance, and OPDP submissions."
+      ],
+      "proofIds": [
+        "account-management-01",
+        "account-management-02",
+        "hedgehox-03"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "pharma",
+        "MLR review",
+        "FDA preclearance"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "cross-functional-agency-collaboration",
+      "text": "Lead marketing projects with creative, strategy, analytics, technology, and other cross-functional teams.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The resume documents delivery across account, strategy, creative, production, media, digital, development, UX, engineering, regulatory, analytics, and vendor teams.",
+        "Recent work turns channel scoring, benchmarks, and recommendations into presentation-ready client outputs."
+      ],
+      "proofIds": [
+        "account-management-03",
+        "heartbeat-03",
+        "kinesso-03"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "cross-functional delivery",
+        "strategy, creative, account, and engineering teams",
+        "presentation-ready client outputs"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "strategy-growth-and-competitive-guidance",
+      "text": "Anticipate client needs, monitor competitors, identify growth opportunities, and help shape short- and long-term targeting and direct-marketing guidance.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Account work includes campaign metrics, competitive context, brand planning, annual strategic recommendations, digital recommendations, and loyalty-program strategy.",
+        "Recent product work turns unclear business questions into testable concepts, demos, and roadmap decisions."
+      ],
+      "proofIds": [
+        "addition:cdm-lipitor-zoloft-digital",
+        "addition:fcb-nuvigil-client-operations",
+        "one-block-away-01"
+      ],
+      "destinations": [
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "digital recommendations",
+        "competitive audits",
+        "roadmap decisions"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "suppliers-maintenance-and-change-control",
+      "text": "Manage project suppliers, program maintenance, and documented change control, including terms and required paperwork.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "The resume documents primary contact with vendors plus coordination of media, digital, print, production, talent, locations, directors, and network clearances.",
+        "Recent work supports natural-language scope changes, but formal supplier terms, procurement paperwork, maintenance ownership, and change-control ownership are not documented."
+      ],
+      "proofIds": [
+        "addition:rosetta-prevenar-client-contact",
+        "account-management-02",
+        "hedgehox-05"
+      ],
+      "destinations": [
+        "skills",
+        "experience"
+      ],
+      "resumeTerms": [
+        "vendor coordination",
+        "vendors",
+        "scope changes"
+      ],
+      "matchMode": "contextual"
+    },
+    {
+      "id": "team-leadership-communication-and-pace",
+      "text": "Communicate clearly, manage demanding work independently, learn quickly, and support direct reports and a positive team culture.",
+      "priority": "preferred",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The resume documents oversight of an Assistant Account Executive and leadership of a distributed team that grew from 2 to 30.",
+        "Later leadership includes onboarding, career roadmaps, coaching of people managers, structured feedback, and performance-review workflows."
+      ],
+      "proofIds": [
+        "addition:fcb-namenda-caregiver-site",
+        "kinesso-01",
+        "kinesso-05"
+      ],
+      "destinations": [
+        "summary",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "Assistant Account Executive",
+        "2 to 30",
+        "career roadmaps"
+      ],
+      "matchMode": "recognized-equivalent"
+    }
+  ],
+  "fitGate": {
+    "resumeBase": {
+      "mode": "account-leadership",
+      "sourceProfiles": [
+        {
+          "id": "account-leadership",
+          "version": 1
+        }
+      ],
+      "leadProfileId": "account-leadership",
+      "accountPresentation": "agency-progression",
+      "action": "tailor-to-jd",
+      "rationale": "The role's operating center is agency account leadership: daily client contact, omnichannel campaign delivery, scopes, budgets, financial reporting, vendors, and cross-functional coordination. The Account Leadership base makes the required tenure and title progression the primary evidence."
+    },
+    "supportedOverlap": [
+      "Eight years of agency account-management progression from Account Coordinator through Account Supervisor, exceeding the five-year campaign requirement.",
+      "Fortune 500 pharma and consumer client relationships, brand budgets up to $20M, and omnichannel work across digital, CRM, social, television, radio, print, outdoor, gaming, and in-office programs.",
+      "Daily client contact, briefs, scopes of work, production requirements, timelines, status and financial reporting, vendors, and cross-functional delivery.",
+      "A CRM patient support program, customer journey work, campaign metrics, competitive audits, enterprise analytics, benchmarks, and presentation-ready recommendations.",
+      "Direct pharma experience across multiple therapeutic areas plus MLR, med-legal, FDA preclearance, OPDP, and review-committee workflows.",
+      "Junior-team oversight, career roadmaps, coaching of people managers, and growth of a distributed design organization from 2 to 30."
+    ],
+    "unsupportedRequirements": [
+      "Relational-database technology ownership or administration is not documented.",
+      "Direct ownership of revenue forecasting is not documented.",
+      "Formal ownership of supplier terms, procurement paperwork, program maintenance, and change control is not documented."
+    ],
+    "actualMismatches": [
+      "Recent full-time titles center on AI implementation, product strategy, and UX rather than account management, although client leadership and cross-functional delivery continued across that work."
+    ],
+    "missingEvidence": [
+      "The record shows a CRM patient support program, online community, journey mapping, campaign metrics, and enterprise analytics, but not relational-database architecture or administration.",
+      "The record shows budgets up to $20M, financial reporting, scope planning, and resource planning, but not revenue-forecasting ownership.",
+      "Vendor coordination and scope changes are documented; supplier terms, required procurement paperwork, maintenance ownership, and a formal change-control process are not."
+    ],
+    "coverLetterBridge": {
+      "status": "not-needed",
+      "rationale": "The resume directly proves the role's center through agency account progression, daily client leadership, omnichannel campaigns, budgets, scopes, financial reporting, vendors, CRM campaign support, pharma experience, and cross-functional delivery. A cover letter is not needed to make the case credible."
+    },
+    "recommendation": "Proceed as a strong fit with an Account Leadership resume and a scoped Targetbase showcase. Lead with direct agency account progression and omnichannel delivery. Keep relational-database ownership, revenue forecasting, formal procurement paperwork, and change-control ownership out of the claim set."
+  },
+  "positioning": {
+    "laneId": "client-account-delivery",
+    "targetIdentity": "Account Supervisor",
+    "employerNeed": "Own the daily client relationship and keep consumer strategy, analytics, technology, creative, scopes, budgets, vendors, and delivery aligned.",
+    "bridgeType": "direct",
+    "applicationStrategy": "direct",
+    "bridgeThesis": "daily client contact",
+    "proofIds": [
+      "account-management-01",
+      "account-management-02",
+      "account-management-03"
+    ],
+    "remainingGap": null
+  },
+  "resume": {
+    "foundationId": "wally-mostafa-resume-2026-07-03",
+    "compositionMode": "profile-complete",
+    "layoutDensity": "compact",
+    "summary": "Account Supervisor with eight years of agency experience leading omnichannel work for Fortune 500 pharma and consumer brands across digital, CRM, social, broadcast, print, and in-office channels. I was the daily client contact, managed budgets up to $20M, and kept client needs, briefs, scopes, timelines, financial reporting, vendors, and cross-functional delivery aligned. Since then, I have led product, UX, analytics, and AI implementation work. That experience helps me turn customer journeys and data into clear plans for clients and delivery teams.",
+    "skillIds": [
+      "account-management-client-leadership",
+      "program-project-delivery",
+      "healthcare-marketing-strategy",
+      "research-experience-strategy"
+    ],
+    "skills": [
+      {
+        "label": "Account Management & Client Leadership",
+        "description": "Client relationships, budgets up to $20M, briefs, scopes, timelines, status and financial reporting, vendor coordination, and cross-functional delivery"
+      },
+      {
+        "label": "Program & Project Delivery",
+        "description": "Scoping, requirements, timelines, review routing, team coordination, risk visibility, and build-ready handoff across product, design, and client teams"
+      },
+      {
+        "label": "Healthcare Marketing & Brand Strategy",
+        "description": "Brand planning, campaign and digital strategy, MLR review, patient and HCP experiences, and regulated multi-channel delivery"
+      },
+      {
+        "label": "Research & Experience Strategy",
+        "description": "Stakeholder interviews, competitive audits, journey maps, user flows, wireframes, prototypes, usability testing, and research-led product direction"
+      }
+    ],
+    "experienceSections": [
+      {
+        "heading": "Relevant Experience",
+        "roleIds": [
+          "account-management"
+        ]
+      },
+      {
+        "heading": "Continued Experience",
+        "roleIds": [
+          "hedgehox",
+          "one-block-away",
+          "kinesso",
+          "omnicom",
+          "heartbeat"
+        ]
+      }
+    ],
+    "awards": [
+      {
+        "label": "Indigo Awards 2023",
+        "detail": "Design System & Data Visualization: 3x Gold, 2x Silver",
+        "href": "https://www.indigoaward.com/winners/6748"
+      },
+      {
+        "label": "Red Dot Awards 2021",
+        "detail": "Brands & Communication Design",
+        "href": "https://www.red-dot.org/project/dxa-digital-experience-audit-55219"
+      },
+      {
+        "label": "Manny Award 2013",
+        "detail": "Best Unbranded Campaign, \"Get Your Shift Together\""
+      },
+      {
+        "label": "Pharma Choice Awards 2011",
+        "detail": "Silver Consumer Print, Silver HCP Sales Aid, Bronze HCP Mobile Site"
+      }
+    ],
+    "roles": {
+      "hedgehox": [
+        "Built Scope Generator for pharma agency finance and operations teams to manage regional rate cards, brands, sub-brands, and natural-language scope changes",
+        "Secured an investment from The Bloc, a pharma agency, for proprietary Claims Detection software by building the functional POC and refining the demo with their team",
+        "Translate pharma agency needs into working tools for MLR claim review, brief intake, scoping, review routing, submission capture, and FDA signal monitoring",
+        "Designed human-in-the-loop Claims Detector workflows that identify promotional claims, surface evidence gaps, and pre-populate audit-ready annotations before review"
+      ],
+      "one-block-away": [
+        "Lead client discovery and turn unclear business questions into testable product concepts, working POCs, demo flows, and roadmap decisions",
+        "Built ListingPal's AI listing-generation POC and landing page, turning basic property inputs into listing copy, social posts, ad copy, styling direction, and MLS/SEO-ready language in under 90 seconds",
+        "Built WeReady's Bailey Intelligence dashboard, translating founder inputs, GitHub signals, source health, risk scoring, and evidence trails into startup-readiness workflows",
+        "Own product strategy, UX, AI workflow design, front-end build, backend logic, demo readiness, and client iteration from first ask through working prototype",
+        "Currently building the website and sponsor strategy for a Tunisia youth soccer program, positioning the project for player advancement, community support, and donor outreach"
+      ],
+      "kinesso": [
+        "Scaled product design from 2 to 30 people across the US and Poland, with hiring, staffing, scope and resource planning, quality reviews, and engineering handoff across 20+ enterprise analytics products used by 7,000+ people across 22 white-label brands",
+        "Led UX and design-system strategy for MIE data visualization, dashboard building, brand theming, and reusable analytics components",
+        "Built the Digital Experience Audit workflow for channel scoring, benchmarks, recommendations, visualization, and presentation-ready client outputs",
+        "Built onboarding and career roadmaps, coached people managers, introduced structured team feedback, and helped formalize performance-review workflows"
+      ],
+      "omnicom": [
+        "Supported client teams as a freelance UX designer, using account-management experience to translate brand goals into clearer digital recommendations"
+      ],
+      "heartbeat": [
+        "Led UX research and experience strategy, translating stakeholder input, competitive audits, and user needs into digital product direction",
+        "Created journey maps, site maps, user flows, wireframes, and prototypes for customer-facing and internal brand-team experiences across regulated programs",
+        "Partnered with strategy, creative, account, and engineering teams to move UX recommendations from research findings into build-ready product and campaign experiences"
+      ],
+      "account-management": [
+        {
+          "title": "Account Supervisor / Digital Strategist",
+          "employer": "Scout Marketing",
+          "location": "San Diego, CA",
+          "dateRange": "Jun 2015 – Jul 2018",
+          "bullets": [
+            "Promoted from Senior Account Executive and took the lead on Jazz Pharmaceuticals XYREM consumer work: unbranded campaigns across social media, digital, print, and in-office channels that lifted traffic and engagement on the disease-state site",
+            "Led the launch of the first unbranded social campaign on Facebook and YouTube for the brand and for Jazz, built around real patients telling their own stories",
+            "Oversaw an unbranded digital campaign bridging disease state and branded work; banners held a 0.37% click-through rate against a 0.17% industry benchmark and doubled qualified traffic to the brand site"
+          ]
+        },
+        {
+          "title": "Senior Account Executive",
+          "employer": "FCB Health",
+          "location": "New York, NY",
+          "dateRange": "Jun 2014 – Jun 2015",
+          "bullets": [
+            "One of two consumer account leads on the agency's largest pharma business, managing the Actavis Namenda XR direct-to-consumer launch and its $20M brand budget",
+            "Owned the broadcast workstream for three national television commercials in one year, covering market research, med-legal review, FDA preclearance, pre- and post-production, talent and location coordination, director searches, and network clearances; the spots drove a 45% increase in new-to-brand consumers within seven weeks",
+            "Led the launch of an unbranded Alzheimer's caregiver community site with support resources, sponsorship exploration, and public relations pull-through; also oversaw the account's Assistant Account Executive across in-office tactics, national print, and sales representative support materials"
+          ]
+        },
+        {
+          "title": "Senior Account Executive",
+          "employer": "Barker DZP",
+          "location": "New York, NY",
+          "dateRange": "Dec 2013 – May 2014",
+          "bullets": [
+            "Led the social campaign for a new Tough Mudder loyalty program and oversaw PDI and Nice-Pak, the agency's largest account, across print, digital, and social"
+          ]
+        },
+        {
+          "title": "Senior Account Executive",
+          "employer": "Cline Davis & Mann",
+          "location": "New York, NY",
+          "dateRange": "Sep 2013 – Dec 2013",
+          "bullets": [
+            "Used campaign metrics to shape Pfizer digital recommendations for Lipitor's online presence and loyalty program during loss of exclusivity, and piloted a Zoloft savings offer to test market response"
+          ]
+        },
+        {
+          "title": "Assistant Account Executive to Account Executive",
+          "employer": "FCB Health",
+          "location": "New York, NY",
+          "dateRange": "Apr 2011 – Sep 2013",
+          "bullets": [
+            "Managed development and execution of the unbranded Teva NUVIGIL campaign for National Night Shift Workers' Day across Times Square NASDAQ, national television, Xbox Live, radio, outdoor, and consumer journals, working through media, digital, and print vendors; the campaign won the 2013 Manny Award for Best Unbranded Campaign",
+            "Coordinated the NUVIGIL.com consumer rebrand across desktop and mobile with the agency's digital strategy and development teams, plus the launch of a CRM patient support program and its online patient community",
+            "Worked alongside the HCP team on the NUVIGIL.com HCP site and sales aid, both of which won 2011 Pharma Choice awards",
+            "Owned weekly client status and financial reporting plus OPDP and review-committee submissions across the $10M consumer business, and contributed to the annual strategic recommendations"
+          ]
+        },
+        {
+          "title": "Account Coordinator",
+          "employer": "RosettaWishbone",
+          "location": "New York, NY",
+          "dateRange": "Sep 2010 – Mar 2011",
+          "bullets": [
+            "Primary client contact across brand teams, national affiliates, and vendors on an award-winning global unbranded pneumococcal disease awareness campaign for the Pfizer Prevenar 13 adult pre-launch",
+            "Facilitated an Africa and Middle East advisory board in Dubai and owned project briefs, scopes of work, key opinion leader communications, and client status and financial reports"
+          ]
+        }
+      ]
+    },
+    "sourceBulletIds": {
+      "hedgehox": [
+        "hedgehox-05",
+        "hedgehox-01",
+        "hedgehox-03",
+        "hedgehox-02"
+      ],
+      "one-block-away": [
+        "one-block-away-01",
+        "one-block-away-02",
+        "one-block-away-03",
+        "one-block-away-04",
+        "one-block-away-05"
+      ],
+      "kinesso": [
+        "kinesso-01",
+        "kinesso-02",
+        "kinesso-03",
+        "kinesso-05"
+      ],
+      "omnicom": [
+        "omnicom-01"
+      ],
+      "heartbeat": [
+        "heartbeat-01",
+        "heartbeat-02",
+        "heartbeat-03"
+      ],
+      "account-management": [
+        "addition:scout-xyrem-account-lead",
+        "addition:scout-xyrem-unbranded-social",
+        "addition:scout-xyrem-bridging-campaign",
+        "account-management-02",
+        "account-management-03",
+        "addition:fcb-namenda-caregiver-site",
+        "addition:barker-tough-mudder-pdi",
+        "addition:cdm-lipitor-zoloft-digital",
+        "account-management-01",
+        "addition:fcb-nuvigil-rebrand-crm",
+        "addition:fcb-nuvigil-hcp-collaboration",
+        "addition:fcb-nuvigil-client-operations",
+        "addition:rosetta-prevenar-client-contact",
+        "addition:rosetta-dubai-advisory"
+      ]
+    }
+  },
+  "hero": {
+    "eyebrow": "Targetbase | Selected Work",
+    "tags": [
+      "Customer journey strategy",
+      "Analytics and reporting",
+      "Regulated workflows"
+    ],
+    "intro": "I pulled together four recent projects that may be useful alongside my resume for the Account Supervisor role. The resume covers my agency account background; these examples offer a closer look at the workflow, analytics, customer journey, and team leadership work that came next."
+  },
+  "contact": {
+    "prompt": "Email and the matched resume are below.",
+    "signoff": "Account leadership | omnichannel delivery | customer experience"
+  },
+  "route": {
+    "presentation": "showcase",
+    "heroIntent": "resume-support",
+    "showcaseSections": [
+      "chapters"
+    ],
+    "workHeading": "Selected work.",
+    "contactHeading": "Thanks for taking a look."
+  },
+  "copyReview": {
+    "humanizerVersion": "2.2.0",
+    "mode": "surface-only",
+    "status": "passed",
+    "reviewedAt": "2026-09-17T18:10:58.967Z",
+    "copySha256": "1cff21d800c1f26900fb9f4739884d0c8f70fe6a49cc9ae630b96dbb4d09310e",
+    "preserved": [
+      "content",
+      "structure",
+      "claims",
+      "ending"
+    ],
+    "rewriteAuthorized": false,
+    "reviewMethod": "humanizer-skill",
+    "semanticPassAttested": true,
+    "staticChecksPassed": true,
+    "finalAntiAiPass": true,
+    "remainingTells": []
+  },
+  "constraints": {
+    "doNotClaim": [
+      "Relational-database architecture, administration, or ownership",
+      "Ownership of revenue forecasting",
+      "Ownership of internal Targetbase budgets",
+      "Ownership of supplier terms or procurement paperwork",
+      "Formal change-control ownership",
+      "Current Targetbase Account Supervisor title",
+      "Renewal, quota, or revenue-growth ownership"
+    ],
+    "blockedTerms": [
+      "owned relational databases",
+      "owned revenue forecasting",
+      "owned procurement paperwork",
+      "owned change control",
+      "current Targetbase Account Supervisor",
+      "renewal ownership",
+      "sales quota"
+    ]
+  },
+  "privacy": {
+    "publicSafe": true,
+    "notes": "Contains only the user-provided public job description and public-safe resume and portfolio evidence. It excludes recruiter contact information, application answers, compensation decisions, private eligibility information, and submission state."
+  },
+  "qa": {
+    "status": "qa-passed",
+    "builtAt": "2026-09-17T18:11:51.685Z",
+    "configInputSha256": "58d2097fb18ee49f00a8b98d71735a916d44ecbd9b47ff552e72e70ccdbd75df",
+    "sourceResumeSha256": "8273f9c5f9038a159fa1d9ecc813e2c23069e37c7ef6dd0effe5439cef217fd7",
+    "resumeFoundation": {
+      "id": "wally-mostafa-resume-2026-07-03",
+      "sourcePdfSha256": "f9b05b6c3c134262b1af6c5734363daf4385cf335407a139779a37d138adf1aa"
+    },
+    "resumeBase": {
+      "mode": "account-leadership",
+      "sourceProfiles": [
+        {
+          "id": "account-leadership",
+          "version": 1
+        }
+      ],
+      "leadProfileId": "account-leadership",
+      "accountPresentation": "agency-progression",
+      "action": "tailor-to-jd",
+      "registryVersion": 1,
+      "registrySha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108"
+    },
+    "artifactHashes": {
+      "routeSha256": "b5483af6c6319e05dec9a497466efc51013d5f5b726588fc17619b72ae419dc7",
+      "resumePdfSha256": "5ee9b435dd178cb85959723980ab674b2a10abf1d0853aaba5546924b288b43c",
+      "coverLetterPdfSha256": null,
+      "coverLetterMarkdownSha256": null,
+      "scopedProjectSha256": {
+        "project-01.html": "b866fc24545da33b98990e5f40c4d09f0c3b8aca1e6afdad4f657102f12e2d5d",
+        "project-06.html": "ae850c646390b3afe4663d59fdde3f3cdc6a8a56c40529bbaa24b1349ebbbcbb",
+        "project-04.html": "b20e9a79b364f9c183ff3f53cc8a4254eee3a9a9d25a3323c571812afde947b8",
+        "project-03.html": "cbe1e7b843d143130b88168245d63c9c272e3f091c5ee9003d73e13ddc9a3c40"
+      },
+      "scopedProjectAssetSha256": {}
+    },
+    "renderer": {
+      "browser": {
+        "name": "chrome-headless-shell",
+        "version": "Google Chrome for Testing 151.0.7922.34"
+      },
+      "htmlPath": "tmp/tailored-resumes/targetbase-account-supervisor.html",
+      "pdfPath": "output/pdf/Wally-Mostafa-Targetbase-Account-Supervisor-Resume.pdf",
+      "fontWait": true,
+      "fontProfile": "portfolio-pdf"
+    },
+    "coverLetterRenderer": null,
+    "coverLetter": null,
+    "ats": {
+      "ok": true,
+      "pdfPath": "output/pdf/Wally-Mostafa-Targetbase-Account-Supervisor-Resume.pdf",
+      "pageCount": 2,
+      "fileSize": 83596,
+      "annotations": [
+        {
+          "page": 1,
+          "uri": "mailto:wmostafa12@gmail.com"
+        },
+        {
+          "page": 1,
+          "uri": "https://linkedin.com/in/wallymo"
+        },
+        {
+          "page": 1,
+          "uri": "https://wallymo.github.io/targetbase-account-supervisor/"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/6748"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.red-dot.org/project/dxa-digital-experience-audit-55219"
+        }
+      ],
+      "fontCompatibility": {
+        "type3Fonts": false
+      },
+      "coverage": [
+        {
+          "id": "agency-omnichannel-tenure",
+          "requirement": "Bring five or more years of digital or omnichannel campaign experience, preferably in a marketing or digital agency.",
+          "priority": "hard-gate",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "eight years",
+            "Account Supervisor",
+            "omnichannel"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "bachelors-degree",
+          "requirement": "Hold a bachelor's degree in Marketing, Advertising, Communications, Business, Liberal Arts, or a related field.",
+          "priority": "hard-gate",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "BA Labor Studies & Employee Relations",
+            "Rutgers University"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "day-to-day-client-leadership",
+          "requirement": "Act as the daily client contact, understand client needs, manage expectations, communicate clearly, and build trust through reliable delivery.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "primary client contact",
+            "client relationships",
+            "client needs"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "project-scope-budget-delivery",
+          "requirement": "Lead projects through scope definition, planning, schedules, budgets, deadlines, estimates, deliverables, and changes.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "Program & Project Delivery",
+            "scopes of work",
+            "budgets up to $20M"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "project-financials-and-resourcing",
+          "requirement": "Own project financials, track client and internal budgets, and provide accurate inputs for revenue forecasting and resource projections.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "contextual",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "budgets up to $20M",
+            "financial reporting",
+            "resource planning"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "customer-journey-crm-and-data",
+          "requirement": "Apply consumer-marketing, customer-journey, CRM, and relational-database principles to direct and targeted marketing programs.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "contextual",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "CRM patient support program",
+            "journey maps",
+            "enterprise analytics"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "pharma-and-high-science-exposure",
+          "requirement": "Bring exposure to pharma or high-science healthcare marketing.",
+          "priority": "preferred",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "pharma",
+            "MLR review",
+            "FDA preclearance"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "cross-functional-agency-collaboration",
+          "requirement": "Lead marketing projects with creative, strategy, analytics, technology, and other cross-functional teams.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "cross-functional delivery",
+            "strategy, creative, account, and engineering teams",
+            "presentation-ready client outputs"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "strategy-growth-and-competitive-guidance",
+          "requirement": "Anticipate client needs, monitor competitors, identify growth opportunities, and help shape short- and long-term targeting and direct-marketing guidance.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "digital recommendations",
+            "competitive audits",
+            "roadmap decisions"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "suppliers-maintenance-and-change-control",
+          "requirement": "Manage project suppliers, program maintenance, and documented change control, including terms and required paperwork.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "contextual",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "vendor coordination",
+            "vendors",
+            "scope changes"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "team-leadership-communication-and-pace",
+          "requirement": "Communicate clearly, manage demanding work independently, learn quickly, and support direct reports and a positive team culture.",
+          "priority": "preferred",
+          "evidenceStatus": "direct",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "Assistant Account Executive",
+            "2 to 30",
+            "career roadmaps"
+          ],
+          "missingTerms": []
+        }
+      ],
+      "failures": [],
+      "warnings": []
+    },
+    "humanizer": {
+      "status": "passed",
+      "version": "2.2.0",
+      "mode": "surface-only",
+      "reviewedAt": "2026-09-17T18:10:58.967Z",
+      "copySha256": "1cff21d800c1f26900fb9f4739884d0c8f70fe6a49cc9ae630b96dbb4d09310e",
+      "reviewMethod": "humanizer-skill",
+      "semanticPassAttested": true,
+      "staticChecksPassed": true
+    },
+    "route": {
+      "viewports": [
+        {
+          "name": "desktop",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-01",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-06",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-04",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-03",
+          "errors": []
+        },
+        {
+          "name": "mobile",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-01",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-06",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-04",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-03",
+          "errors": []
+        }
+      ],
+      "errors": []
+    }
+  },
+  "coverLetter": null
+}
