@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="project-motion-v1 project-story-v1">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +8,7 @@
 <meta property="og:title" content="Splash Design System — Wally Mostafa">
 <meta property="og:description" content="Research-backed enterprise design system for a 20+ product suite, including 500 components, 140 styles, 300 icons, and 50 personas.">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://wallymo.github.io/project-05.html">
+<meta property="og:url" content="https://wallymo.github.io/ux-product-design/project-05.html">
 <link rel="icon" href="../favicon.ico?v=2" sizes="any">
 <link rel="apple-touch-icon" href="../apple-touch-icon.png?v=2">
 <link rel="manifest" href="../site.webmanifest?v=2">
@@ -17,10 +17,14 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/ux-wally/project-page.css">
+<link rel="stylesheet" href="../assets/portfolio-revision/project-page-motion-v1.css?v=editorial-handoff-half">
 </head>
 <body>
 
-<nav>
+<canvas class="hero-canvas" id="hero-canvas" aria-hidden="true" data-state="fallback"></canvas>
+<a class="skip-link" href="#project-content">Skip to content</a>
+
+<nav class="site-nav" aria-label="Main navigation">
   <a href="index.html" class="name">Wally Mostafa</a>
   <div class="nav-actions">
     <a href="index.html#work" class="back">&larr; All Work</a>
@@ -28,31 +32,52 @@
   </div>
 </nav>
 
-<div class="project-hero">
-  <div class="project-number">01</div>
-  <h1>Splash Design System</h1>
-  <div class="project-role">Kinesso (IPG) &middot; Lead UX Designer &amp; Researcher</div>
-  <p class="project-summary">
-    I helped shape an award-winning, research-backed design system for a 20+ product suite moving toward a more contemporary, scalable SaaS experience.
-  </p>
-  <div class="hero-topline" aria-label="Case study themes">
-    <span class="hero-pill hero-pill--accent">Design Systems</span>
-    <span class="hero-pill">Research</span>
-    <span class="hero-pill">Atomic Design</span>
-    <span class="hero-pill">Design Ops</span>
-    <span class="hero-pill">Indigo Awards</span>
+<main id="project-content">
+<div class="project-hero hero">
+  <div class="project-hero-card">
+    <div class="project-hero-copy">
+      <div class="project-index" data-motion-entry="number">
+        <span class="project-index-label">Case study</span>
+        <div class="project-number">01</div>
+      </div>
+      <h1 data-motion-entry="title">Splash Design System</h1>
+      <div class="project-role" data-motion-entry="role">Kinesso (IPG) &middot; Lead UX Designer &amp; Researcher</div>
+      <p class="project-summary" data-motion-entry="summary">
+        I helped shape an award-winning, research-backed design system for a 20+ product suite moving toward a more contemporary, scalable SaaS experience.
+      </p>
+      <div class="hero-topline" aria-label="Case study themes">
+        <span class="hero-pill hero-pill--accent">Design Systems</span>
+        <span class="hero-pill">Research</span>
+        <span class="hero-pill">Atomic Design</span>
+        <span class="hero-pill">Design Ops</span>
+        <span class="hero-pill">Indigo Awards</span>
+      </div>
+      <a class="project-hero-jump" href="#system-foundation" data-motion-entry="action">Explore the work <span aria-hidden="true">↓</span></a>
+    </div>
+    <figure class="project-hero-media" data-motion-entry="media">
+      <figcaption><span>Splash Design System</span></figcaption>
+      <img src="../assets/portfolio-revision/project-05.webp" alt="Splash Design System interface" width="960" height="540" decoding="async">
+    </figure>
   </div>
 </div>
 
-<section style="background:var(--surface-tint);">
+<section class="case-file-section" data-motion-reveal>
   <div class="inner">
-    <div class="section-label">The Problem</div>
-    <h2 class="section-heading">A fragmented product suite needed one design language.</h2>
-    <ul class="outcomes">
-      <li><strong>Challenge</strong><span>A developer-led environment created inconsistency across products, hindering usability and brand cohesion.</span></li>
-      <li><strong>Solution</strong><span>A research-backed design system with components, styles, icons, personas, and system behaviors created from scratch.</span></li>
-      <li><strong>Impact</strong><span>Unified design, development, and product teams while earning 2023 Indigo Design Awards recognition.</span></li>
-    </ul>
+    <div class="case-file">
+      <div class="case-file-body">
+        <header class="case-file-heading">
+          <div class="section-label">The Problem</div>
+          <h2 class="section-heading">A fragmented product suite needed one design language.</h2>
+        </header>
+        <div class="case-file-grid">
+          <ul class="outcomes role-cards">
+            <li><strong>Challenge</strong><span>A developer-led environment created inconsistency across products, hindering usability and brand cohesion.</span></li>
+            <li><strong>Solution</strong><span>A research-backed design system with components, styles, icons, personas, and system behaviors created from scratch.</span></li>
+            <li><strong>Impact</strong><span>Unified design, development, and product teams while earning 2023 Indigo Design Awards recognition.</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -75,10 +100,10 @@
   </div>
 </div>
 
-<div class="product-section">
+<div class="product-section" id="system-foundation" data-motion-reveal>
   <div class="product-inner">
-    <div class="product-image" data-reveal>
-      <img src="../assets/ux-wally/design-system.jpg" alt="Splash Design System hero visual">
+    <div class="product-image">
+      <img src="../assets/ux-wally/design-system.jpg" alt="Splash Design System hero visual" width="3194" height="1796" loading="lazy" decoding="async" style="--media-ratio: 3194 / 1796">
     </div>
     <div class="product-text">
       <span class="product-tag">System foundation</span>
@@ -93,10 +118,10 @@
   </div>
 </div>
 
-<div class="product-section product-section--warm">
+<div class="product-section product-section--warm" data-motion-reveal>
   <div class="product-inner reverse">
-    <div class="product-image product-image--contain product-image--light" data-reveal>
-      <img src="../assets/ux-wally/design-system-pillars.png" alt="Splash design system pillars and component foundations">
+    <div class="product-image product-image--contain product-image--light">
+      <img src="../assets/ux-wally/design-system-pillars.png" alt="Splash design system pillars and component foundations" width="4320" height="3018" loading="lazy" decoding="async" style="--media-ratio: 4320 / 3018">
     </div>
     <div class="product-text">
       <span class="product-tag">System pillars</span>
@@ -111,10 +136,10 @@
   </div>
 </div>
 
-<div class="product-section">
+<div class="product-section" data-motion-reveal>
   <div class="product-inner">
-    <div class="product-image product-image--contain product-image--light" data-reveal>
-      <img src="../assets/ux-wally/design-system-beauty.png" alt="Beauty shot of the Splash design system">
+    <div class="product-image product-image--contain product-image--light">
+      <img src="../assets/ux-wally/design-system-beauty.png" alt="Beauty shot of the Splash design system" width="2250" height="1500" loading="lazy" decoding="async" style="--media-ratio: 2250 / 1500">
     </div>
     <div class="product-text">
       <span class="product-tag">Recognition</span>
@@ -129,7 +154,7 @@
   </div>
 </div>
 
-<section class="dark">
+<section class="dark story-section" data-motion-reveal>
   <div class="inner">
     <div class="section-label">Research Impact</div>
     <h2 class="section-heading">Research turned the system into product behavior, not just UI inventory.</h2>
@@ -142,10 +167,10 @@
   </div>
 </section>
 
-<div class="product-section">
+<div class="product-section" data-motion-reveal>
   <div class="product-inner">
-    <div class="product-image product-image--contain product-image--light" data-reveal>
-      <img src="../assets/ux-wally/design-system-navigation.png" alt="Splash system-wide navigation interface">
+    <div class="product-image product-image--contain product-image--light">
+      <img src="../assets/ux-wally/design-system-navigation.png" alt="Splash system-wide navigation interface" width="3879" height="2430" loading="lazy" decoding="async" style="--media-ratio: 3879 / 2430">
     </div>
     <div class="product-text">
       <span class="product-tag">System-wide navigation</span>
@@ -155,10 +180,10 @@
   </div>
 </div>
 
-<div class="product-section product-section--warm">
+<div class="product-section product-section--warm" data-motion-reveal>
   <div class="product-inner reverse">
-    <div class="product-image product-image--contain product-image--light" data-reveal>
-      <img src="../assets/ux-wally/design-system-color-picker.png" alt="Global color picker for branded data visualization">
+    <div class="product-image product-image--contain product-image--light">
+      <img src="../assets/ux-wally/design-system-color-picker.png" alt="Global color picker for branded data visualization" width="1840" height="1336" loading="lazy" decoding="async" style="--media-ratio: 1840 / 1336">
     </div>
     <div class="product-text">
       <span class="product-tag">Global color picker</span>
@@ -168,10 +193,10 @@
   </div>
 </div>
 
-<div class="product-section">
+<div class="product-section" data-motion-reveal>
   <div class="product-inner">
-    <div class="product-image product-image--contain product-image--light" data-reveal>
-      <img src="../assets/ux-wally/design-system-design-bot.png" alt="Design Bot quality audit workflow">
+    <div class="product-image product-image--contain product-image--light">
+      <img src="../assets/ux-wally/design-system-design-bot.png" alt="Design Bot quality audit workflow" width="3708" height="2882" loading="lazy" decoding="async" style="--media-ratio: 3708 / 2882">
     </div>
     <div class="product-text">
       <span class="product-tag">Design excellence</span>
@@ -181,20 +206,20 @@
   </div>
 </div>
 
-<div class="product-section product-section--warm">
+<div class="product-section product-section--warm" data-motion-reveal>
   <div class="inner">
     <div class="section-label">Personalization &amp; White Label</div>
     <h2 class="section-heading">The system supported tailored experiences without breaking its own rules.</h2>
     <div class="image-pair">
       <figure>
-        <div class="product-image product-image--contain product-image--light" data-reveal>
-          <img src="../assets/ux-wally/design-system-personalization-cutout.png" alt="Personalized dashboard and profile experience">
+        <div class="product-image product-image--contain product-image--light">
+          <img src="../assets/ux-wally/design-system-personalization-cutout.png" alt="Personalized dashboard and profile experience" width="612" height="408" loading="lazy" decoding="async" style="--media-ratio: 612 / 408">
         </div>
         <figcaption class="image-caption">Personalization</figcaption>
       </figure>
       <figure>
-        <div class="product-image product-image--contain product-image--light" data-reveal>
-          <img src="../assets/ux-wally/design-system-white-label.jpg" alt="White-label automation builder interface">
+        <div class="product-image product-image--contain product-image--light">
+          <img src="../assets/ux-wally/design-system-white-label.jpg" alt="White-label automation builder interface" width="1440" height="1024" loading="lazy" decoding="async" style="--media-ratio: 1440 / 1024">
         </div>
         <figcaption class="image-caption">White-label automation</figcaption>
       </figure>
@@ -209,39 +234,32 @@
 
 <!-- NEXT -->
 <div class="next-project">
-  <div class="nav-projects">
-    <a href="project-04.html">&larr; User Research</a>
-    <a href="project-03.html">Enterprise Design System &rarr;</a>
-  </div>
-  <div style="margin-top: var(--space-xl);">
-    <div class="label">Next Project</div>
-    <a href="project-03.html">Enterprise Design System &rarr;</a>
+  <div class="next-project-inner" data-motion-reveal>
+    <div class="next-project-heading">
+      <div class="label">Next Project</div>
+    </div>
+    <a class="next-project-preview" href="project-04.html">
+      <span class="next-project-copy">
+        <strong>User Research</strong>
+        <span>Explore next case <b aria-hidden="true">&rarr;</b></span>
+      </span>
+      <span class="next-project-media">
+        <img src="../assets/portfolio-revision/project-04.webp" alt="People reviewing printed charts and research materials" width="960" height="636" loading="lazy" decoding="async">
+      </span>
+    </a>
+    <div class="nav-projects">
+      <a href="project-03.html">&larr; Enterprise Data Visualization</a>
+      <a href="project-04.html">User Research &rarr;</a>
+    </div>
   </div>
 </div>
 
+</main>
+
 <footer>&copy; 2026 Wally Mostafa &middot; Raleigh, NC</footer>
 
-<script>
-  (() => {
-    const revealElements = document.querySelectorAll('[data-reveal]');
-    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-    if (!revealElements.length || prefersReducedMotion || !('IntersectionObserver' in window)) {
-      revealElements.forEach((element) => element.classList.add('is-visible'));
-      return;
-    }
-
-    const observer = new IntersectionObserver((entries, activeObserver) => {
-      entries.forEach((entry) => {
-        if (!entry.isIntersecting) return;
-        entry.target.classList.add('is-visible');
-        activeObserver.unobserve(entry.target);
-      });
-    }, { threshold: 0.18, rootMargin: '0px 0px -8% 0px' });
-
-    revealElements.forEach((element) => observer.observe(element));
-  })();
-</script>
+<script src="../assets/portfolio-revision/hero-atmosphere.js" defer></script>
+<script src="../assets/portfolio-revision/project-page-motion-v1.js?v=editorial-handoff-half" defer></script>
 
 </body>
 </html>

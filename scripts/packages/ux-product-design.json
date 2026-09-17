@@ -8,8 +8,9 @@
   "routeMode": "scoped-projects",
   "selectedProjects": [
     "project-05.html",
-    "project-03.html",
-    "project-04.html"
+    "project-04.html",
+    "project-06.html",
+    "project-03.html"
   ],
   "job": {
     "company": "General recruiter and networking use",
@@ -80,7 +81,7 @@
         "Led stakeholder research, competitive audits, journey mapping, and experience strategy in healthcare and enterprise software."
       ],
       "proofIds": [
-        "addition:ux-product-design-research-practice",
+        "kinesso-06",
         "heartbeat-01",
         "heartbeat-02"
       ],
@@ -111,7 +112,7 @@
       "proofIds": [
         "kinesso-01",
         "kinesso-02",
-        "addition:ux-product-design-system-scale"
+        "kinesso-04"
       ],
       "destinations": [
         "summary",
@@ -197,8 +198,8 @@
       ],
       "leadProfileId": "ai-product-implementation",
       "accountPresentation": "consolidated",
-      "action": "use-existing",
-      "rationale": "This is a general UX and product-design networking profile. The AI/Product Implementation evidence pool contains the direct UX, research, design-system, enterprise-product, workflow-design, and hands-on delivery evidence. Earlier account leadership remains supporting context."
+      "action": "tailor-to-jd",
+      "rationale": "This general UX and product-design networking package needs a dedicated resume because the canonical artifact leads with AI implementation. The AI/Product Implementation evidence pool still provides the direct UX, research, design-system, enterprise-product, workflow-design, and hands-on delivery evidence. Earlier account leadership remains supporting context."
     },
     "supportedOverlap": [
       "The portfolio shows research, journey mapping, information architecture, workflows, prototypes, design systems, accessibility, final interfaces, and engineering handoff.",
@@ -235,8 +236,15 @@
   "coverLetter": null,
   "resume": {
     "foundationId": "wally-mostafa-resume-2026-07-03",
+    "foundationVersion": 4,
     "compositionMode": "foundation-complete",
     "layoutDensity": "compact",
+    "roleContinuationBreaks": [
+      {
+        "roleId": "kinesso",
+        "afterBullet": 3
+      }
+    ],
     "summary": "UX and product design leader with nearly eight years of hands-on UX work and 15 years across product, client strategy, and digital delivery. I grew a product design team from 2 to 30 and led enterprise UX for platforms used by 7,000+ people across 22 brands. I also built a research practice across 20+ products and now carry product work from discovery through working prototypes and handoff.",
     "skillIds": [
       "enterprise-ux-design-systems",
@@ -279,12 +287,15 @@
         "Currently building the website and sponsor strategy for a Tunisia youth soccer program, positioning the project for player advancement, community support, and donor outreach"
       ],
       "kinesso": [
-        "Scaled product design from 2 to 30 people across the US and Poland for enterprise analytics used by 7,000+ users across 22 white-label brands",
-        "Built a user research practice across 20+ products using interviews, prototype testing, behavioral data, workshops, roadshows, and reusable Figma documentation",
-        "Led UX and design-system strategy for MIE data visualization, dashboard building, brand theming, and reusable analytics components",
-        "Helped shape a 500-component design system with 140 styles, 300 icons, and 50 personas, plus accessibility, WCAG, keyboard interaction, and design governance",
-        "Built the Digital Experience Audit workflow for channel scoring, benchmarks, recommendations, visualization, and presentation-ready client outputs",
-        "Design-system and analytics work earned 5 Indigo Gold, 4 Indigo Silver, and Red Dot recognition"
+        "Scaled product design from 2 to 30 across the US and Poland, hiring and staffing designers, leading critiques and quality reviews, and planning scope, resources, and engineering handoff across 20+ products",
+        "Built Kinesso's first UX research practice across 20+ products, including participant recruitment, interviews, prototype testing, beta groups, behavioral analytics, research tooling, shared Figma documentation, and UX checkpoints in project plans",
+        "Led UX research and strategy for a marketing intelligence suite used by 7,000+ people across 22 white-label brands; turned findings and adoption data into roadmap priorities for navigation, dashboards, brand theming, personalization, and product support",
+        "Helped shape and govern a design system with 500 components, 140 styles, 300 icons, and 50 personas, including accessibility and design quality standards; the work earned 5 Indigo Gold, 4 Indigo Silver, and Red Dot recognition",
+        "Partnered with the Head of Design to create the team's first onboarding program, career roadmaps, coaching structure, and performance review workflows for new and existing employees",
+        "Led workshops on product discovery, ecosystem mapping, innovation, and user research; expanded the program from Kinesso teams to IPG groups and presented recommendations to executives and clients",
+        "UX lead for research and design on Kanvas, Kinesso's developer-first API services library; partnered with product and engineering on roadmap priorities and with C-suite stakeholders on monetization and go-to-market planning",
+        "Collaborated on the UX/UI build of Digital Experience Audit, turning channel scoring, benchmarks, and recommendations into a repeatable workflow with data visualization and presentation-ready client outputs",
+        "Led a three-person team to second place in Kinesso's inaugural innovation challenge with an accessibility panel concept; later advised the next cohort and contributed to accessibility playbook and keyboard interaction standards"
       ],
       "omnicom": [
         "Supported oncology accounts as a freelance UX designer, combining UX design and account-management experience to strengthen regulated healthcare work",
@@ -293,7 +304,9 @@
       "heartbeat": [
         "Led UX research and experience strategy for pharma and healthcare work, translating stakeholder input, competitive audits, and user needs into digital product direction",
         "Created journey maps, site maps, user flows, wireframes, and prototypes for patient, HCP, and internal brand-team experiences across regulated healthcare programs",
-        "Partnered with strategy, creative, account, and engineering teams to move research findings into prioritized, build-ready product and campaign experiences"
+        "Partnered with strategy, creative, account, and engineering teams to move UX recommendations from research findings into build-ready product and campaign experiences",
+        "Led research and creation of an oncology-wide design system for interactive visual aids (iVAs) at a major pharma company, with the goal of improving field usability and development efficiency",
+        "Member of Heartbeat's ETCH (Experiential Technology) group, which ran business-driven sprints exploring voice, AR/VR, and facial recognition for agency and client use"
       ],
       "account-management": [
         "8 years managing Fortune 500 pharma and healthcare clients and brand budgets up to $20M across CNS/neurology, psychiatry, cardiovascular/metabolic, and sleep/wakefulness brands including NUVIGIL, Namenda XR, Lipitor, and Zoloft",
@@ -319,11 +332,14 @@
       ],
       "kinesso": [
         "kinesso-01",
-        "addition:ux-product-design-research-practice",
+        "kinesso-06",
         "kinesso-02",
-        "addition:ux-product-design-system-scale",
+        "kinesso-04",
+        "kinesso-05",
+        "kinesso-07",
+        "kinesso-08",
         "kinesso-03",
-        "kinesso-04"
+        "kinesso-09"
       ],
       "omnicom": [
         "omnicom-01",
@@ -332,7 +348,9 @@
       "heartbeat": [
         "heartbeat-01",
         "heartbeat-02",
-        "heartbeat-03"
+        "heartbeat-03",
+        "heartbeat-04",
+        "heartbeat-05"
       ],
       "account-management": [
         "account-management-01",
@@ -344,6 +362,10 @@
   "route": {
     "presentation": "showcase",
     "heroIntent": "resume-support",
+    "showcaseSections": [
+      "chapters",
+      "capabilities"
+    ],
     "workHeading": "Selected work.",
     "contactHeading": "Thanks for taking a look."
   },
@@ -392,8 +414,8 @@
     "humanizerVersion": "2.2.0",
     "mode": "surface-only",
     "status": "passed",
-    "reviewedAt": "2026-08-07T23:48:17.757Z",
-    "copySha256": "70b2deddda2e6b0d60505fa1a8cab428c6c32f95c800f235ed6cf809a8363c59",
+    "reviewedAt": "2026-09-17T20:06:52.878Z",
+    "copySha256": "f51d9801486f68f3471504cd5f5c0fdd155bccdb4e5c61e5d6f8d42392ce4467",
     "preserved": [
       "content",
       "structure",
@@ -409,9 +431,9 @@
   },
   "qa": {
     "status": "qa-passed",
-    "builtAt": "2026-08-07T23:48:26.150Z",
-    "configInputSha256": "8eb8863598f89292da939bb17aee72610445c88b9938be469bd6db66432aeaa7",
-    "sourceResumeSha256": "2265313e78b596a2b37d6d8f9a95081e4321b4047f142a5f0ddf22449cab4b9c",
+    "builtAt": "2026-09-17T20:10:37.820Z",
+    "configInputSha256": "4d39582fc47ee414862b5f899e9fbd99a91035037354373f88d8164b0bf605c6",
+    "sourceResumeSha256": "8273f9c5f9038a159fa1d9ecc813e2c23069e37c7ef6dd0effe5439cef217fd7",
     "resumeFoundation": {
       "id": "wally-mostafa-resume-2026-07-03",
       "sourcePdfSha256": "f9b05b6c3c134262b1af6c5734363daf4385cf335407a139779a37d138adf1aa"
@@ -426,25 +448,27 @@
       ],
       "leadProfileId": "ai-product-implementation",
       "accountPresentation": "consolidated",
-      "action": "use-existing",
+      "action": "tailor-to-jd",
       "registryVersion": 1,
       "registrySha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108"
     },
     "artifactHashes": {
-      "routeSha256": "37395a3de804a4dded55080cf3bb10ec022801abe7472265877daaf2cab8e9e3",
-      "resumePdfSha256": "01e70a6c3c4117fabaab77d85ae03aa79fc0aafd4b6d619a2399559cec41593c",
+      "routeSha256": "e44173c5d5c12a4812f3436fc55c26a9bcb6f246718d411a48cab0aa2759e7d3",
+      "resumePdfSha256": "ac57c839c0da6206577ce1bfebf794ba34406dea4a7c13428c784bafc4f992e1",
       "coverLetterPdfSha256": null,
       "coverLetterMarkdownSha256": null,
       "scopedProjectSha256": {
-        "project-05.html": "5b21e8796c919fd002fa2d0c92fc7ff5f9a05aef4e2b08fb053b94341e65fb2e",
-        "project-03.html": "af74e71c10b4e0fa0553532c2c0fb2efb06f9241a0f0b9883e42b9df988f3f26",
-        "project-04.html": "79da0c283985dc8ad80dc54cd6c3344c31c1e96d8a93d0808b842e7452a6a784"
-      }
+        "project-05.html": "860d46f5479e6bd03935f844dbd0f7ac9b3fcc09992d24a849131cd49d8e8fd1",
+        "project-04.html": "54f9abef4ea9b7bcce82c2d172ef97e47176e356f73571a24ff5f40664b129db",
+        "project-06.html": "8f2d591661747cc72604b8c3707dca1fa6fe106ad2ae7de0975ce2b5fe2c6ecf",
+        "project-03.html": "71474dd106f67c6ac269d5acc468ec40612cb032f418bd6bd066814e1ae40fde"
+      },
+      "scopedProjectAssetSha256": {}
     },
     "renderer": {
       "browser": {
         "name": "chrome-headless-shell",
-        "version": "Google Chrome for Testing 149.0.7827.55"
+        "version": "Google Chrome for Testing 151.0.7922.34"
       },
       "htmlPath": "tmp/tailored-resumes/ux-product-design.html",
       "pdfPath": "output/pdf/Wally-Mostafa-UX-Product-Design-Resume.pdf",
@@ -457,7 +481,7 @@
       "ok": true,
       "pdfPath": "output/pdf/Wally-Mostafa-UX-Product-Design-Resume.pdf",
       "pageCount": 2,
-      "fileSize": 73657,
+      "fileSize": 80509,
       "annotations": [
         {
           "page": 1,
@@ -567,8 +591,8 @@
       "status": "passed",
       "version": "2.2.0",
       "mode": "surface-only",
-      "reviewedAt": "2026-08-07T23:48:17.757Z",
-      "copySha256": "70b2deddda2e6b0d60505fa1a8cab428c6c32f95c800f235ed6cf809a8363c59",
+      "reviewedAt": "2026-09-17T20:06:52.878Z",
+      "copySha256": "f51d9801486f68f3471504cd5f5c0fdd155bccdb4e5c61e5d6f8d42392ce4467",
       "reviewMethod": "humanizer-skill",
       "semanticPassAttested": true,
       "staticChecksPassed": true
@@ -584,11 +608,15 @@
           "errors": []
         },
         {
-          "name": "desktop-project-03",
+          "name": "desktop-project-04",
           "errors": []
         },
         {
-          "name": "desktop-project-04",
+          "name": "desktop-project-06",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-03",
           "errors": []
         },
         {
@@ -600,11 +628,23 @@
           "errors": []
         },
         {
+          "name": "mobile-project-04",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-06",
+          "errors": []
+        },
+        {
           "name": "mobile-project-03",
           "errors": []
         },
         {
-          "name": "mobile-project-04",
+          "name": "desktop-laptop",
+          "errors": []
+        },
+        {
+          "name": "desktop-short",
           "errors": []
         }
       ],
