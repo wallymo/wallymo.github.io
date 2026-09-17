@@ -4467,9 +4467,37 @@
         "project-03.html"
       ],
       "resumePdfPath": "output/pdf/Wally-Mostafa-Strategic-Client-Advisor-Resume.pdf",
-      "publishStatus": "local-only",
+      "publishStatus": "live-verified",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-09-17T14:35:53.860Z"
+      "builtAt": "2026-09-17T14:35:53.860Z",
+      "verification": {
+        "verifiedAt": "2026-09-17T14:37:41.840Z",
+        "routeUrl": "https://wallymo.github.io/strategic-client-advisor/",
+        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-Strategic-Client-Advisor-Resume.pdf",
+        "configUrl": "https://wallymo.github.io/scripts/packages/strategic-client-advisor.json",
+        "projectUrls": [
+          "https://wallymo.github.io/strategic-client-advisor/project-02.html",
+          "https://wallymo.github.io/strategic-client-advisor/project-06.html",
+          "https://wallymo.github.io/strategic-client-advisor/project-04.html",
+          "https://wallymo.github.io/strategic-client-advisor/project-03.html"
+        ],
+        "redirectUrls": [],
+        "configSha256": "828bbdb31627a27b929a783ed497ebfec0b685995e3a33981d2b80ed9546102a",
+        "pdfSha256": "d563e2636625a3a0192b12f81508e9b21fd6340198f5917bdab9e76abf3fd851",
+        "resumeBaseProfilesUrl": "https://wallymo.github.io/scripts/resume-base-profiles.json",
+        "resumeBaseProfilesSha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108",
+        "routeSha256": "e8ba25dd4b1f75f2c1dcf644fe752205dddfe9347a7e4811660348bec1e60d27",
+        "scopedProjectSha256": {
+          "project-02.html": "4878a24b4f547f3a4a1ce78a594011de5124290285cb2db58a292a678ff252bc",
+          "project-06.html": "b96a38f27d04af84b4c912b8c60ffbc7e21a23cc8e64bbaebf94ffab079ffe58",
+          "project-04.html": "d7110830aaadeb2f381bf94bd3e13428cbc875168eb26bc3766eb01d82c5d7a3",
+          "project-03.html": "708c09a5eca582681be8c992cfba162985bbb992c87dc92530c06c69e5d34b69"
+        },
+        "scopedProjectAssetUrls": [],
+        "scopedProjectAssetSha256": {},
+        "configInputSha256": "c85738bb18381fc89078c9a857b439e8811803c72052f7df592f86d3f8616603",
+        "qaBuiltAt": "2026-09-17T14:35:53.860Z"
+      }
     },
     {
       "slug": "street-digital",
