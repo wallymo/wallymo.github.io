@@ -353,13 +353,16 @@
     });
   });
 
-  function followAnchor() {
+  function followAnchor({ smooth = false } = {}) {
     if (!chapters || anchorHandled) return;
     const chapterIndex = panels.findIndex(panel => `#${panel.id}` === window.location.hash);
     if (['#arc', '#chapters'].includes(window.location.hash)) {
       if (window.location.hash === '#arc') history.replaceState(null, '', `${location.pathname}${location.search}#chapters`);
       activate(0);
-      instantScroll(journey.getBoundingClientRect().top + window.scrollY - chapterTop);
+      window.scrollTo({
+        top: journey.getBoundingClientRect().top + window.scrollY - chapterTop,
+        behavior: smooth && !motion.matches ? 'smooth' : 'instant'
+      });
     } else if (chapterIndex >= 0) {
       if (chaptersPinned) chooseChapter(chapterIndex, false);
       else {
@@ -376,7 +379,7 @@
       event.preventDefault();
       if (location.hash !== '#chapters') history.pushState(null, '', `${location.pathname}${location.search}#chapters`);
       anchorHandled = false;
-      followAnchor();
+      followAnchor({ smooth: true });
     });
   });
   function setup() {
