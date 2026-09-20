@@ -1,0 +1,221 @@
+/* Proof Grid case-study skin. Original content, layout, and motion remain in the
+   canonical project pages. This stylesheet only supplies the visual treatment. */
+html.proof-grid-case-study {
+  --ink: #18191b;
+  --ink-soft: #43474d;
+  --ink-muted: #676c73;
+  --surface: #f7f7f4;
+  --surface-warm: #eef3ff;
+  --surface-tint: #fcfcfa;
+  --surface-deep: #d6d8da;
+  --accent: #2454c6;
+  --accent-text: #2454c6;
+  --accent-hover: #193b91;
+  --accent-bright: #ff90d1;
+  --accent-light: rgb(36 84 198 / .08);
+  --rule: #18191b;
+  --rule-light: #d6d8da;
+  --radius-s: 0px;
+  --radius-m: 0px;
+  --radius-l: 0px;
+  --font-display: "Syne", sans-serif;
+  --font-body: "Avenir Next", Avenir, "Segoe UI", Helvetica, Arial, sans-serif;
+  --font-mono: "SFMono-Regular", "SF Mono", Consolas, monospace;
+  --dark-base: #18191b;
+  --dark-raised: #222326;
+  --dark-text: #fcfcfa;
+  --dark-body: #d6d8da;
+  --dark-secondary: #b9bdc2;
+  --dark-muted: #a8adb4;
+  --dark-rule: #676c73;
+  --dark-accent: #ff90d1;
+  --dark-hover-rule: #e548a5;
+  --bulb-clay: 36 84 198;
+  --bulb-taupe: 229 72 165;
+  --case-grid:
+    repeating-linear-gradient(30deg, transparent 0, transparent 47px,
+      rgb(229 72 165 / .055) 47px, rgb(229 72 165 / .055) 48px),
+    repeating-linear-gradient(-30deg, transparent 0, transparent 47px,
+      rgb(36 84 198 / .065) 47px, rgb(36 84 198 / .065) 48px);
+  color-scheme: light;
+}
+
+html.proof-grid-case-study ::selection { background: #2454c6; color: #fff; }
+html.proof-grid-case-study .site-nav {
+  background: rgb(247 247 244 / .94);
+  border-bottom-color: var(--ink);
+}
+html.proof-grid-case-study .site-nav .name { font-family: var(--font-body); }
+html.proof-grid-case-study :is(.nav-cta, .project-hero-jump, .btn-demo) {
+  background: var(--accent);
+  color: #fff;
+  border-radius: 0;
+  box-shadow: 3px 3px 0 rgb(36 84 198 / .20);
+}
+html.proof-grid-case-study :is(.nav-cta, .project-hero-jump, .btn-demo):hover {
+  background: var(--accent-hover);
+}
+html.proof-grid-case-study.project-motion-v1 :is(
+  .project-index-label,
+  .project-number,
+  .section-label,
+  .product-tag,
+  .next-project .label,
+  .poc-kicker,
+  .poc-detail h5,
+  .project-fact > span,
+  .hero-pill
+) {
+  font-family: var(--font-mono);
+}
+
+/* Open hero: grid around the evidence, no outer container or new ornament. */
+html.proof-grid-case-study .project-hero { isolation: isolate; }
+html.proof-grid-case-study .project-hero::before {
+  background-image: var(--case-grid);
+  background-size: 96px 166px;
+  background-position: center;
+  background-repeat: repeat;
+  opacity: 1;
+}
+html.proof-grid-case-study #hero-canvas[data-state='running'] ~ main .project-hero::before { opacity: 1; }
+html.proof-grid-case-study .hero-canvas {
+  filter: hue-rotate(178deg) saturate(1.45) contrast(1.03);
+  mix-blend-mode: multiply;
+}
+html.proof-grid-case-study .project-role { font-weight: 400; }
+html.proof-grid-case-study .project-hero-media {
+  border-color: var(--dark-rule);
+  border-radius: 0;
+  box-shadow: 7px 7px 0 rgb(36 84 198 / .20);
+}
+html.proof-grid-case-study .project-hero-media figcaption { color: #8fcfe0; }
+html.proof-grid-case-study .project-hero-media figcaption span:only-child { color: #8fcfe0; }
+html.proof-grid-case-study .hero-proof strong { color: #ff90d1; }
+html.proof-grid-case-study :is(.project-hero-media img, .product-image, .product-image img, .next-project-media img) { border-radius: 0; }
+
+/* Reading and product evidence stay quiet; only the opening/ending carry grid. */
+html.proof-grid-case-study :is(
+  .case-file-section,
+  .initiative-section,
+  .product-section,
+  .os-finale,
+  .story-section,
+  .poc-section,
+  .project-feature,
+  .pullquote,
+  body > footer
+) {
+  background-image: none;
+}
+html.proof-grid-case-study .case-file-section { background-color: #eef3ff; }
+html.proof-grid-case-study.project-motion-v1 :is(
+  .story-section--warm,
+  .poc-section--warm,
+  .project-feature--alt,
+  .product-section--warm
+) {
+  background-color: #eef3ff;
+}
+html.proof-grid-case-study :is(.role-cards li strong, .initiative-node strong, .product-title, .os-node strong) {
+  font-family: var(--font-body);
+}
+html.proof-grid-case-study .product-tag { color: #a90f68; }
+/* Center media against its adjacent copy without changing the mobile stack. */
+@media (min-width: 801px) {
+  html.proof-grid-case-study .product-inner > .product-image { align-self: center; }
+}
+html.proof-grid-case-study .initiative-progress {
+  background: rgb(247 247 244 / .98);
+  border-color: var(--ink);
+}
+html.proof-grid-case-study .initiative-progress a.is-current { color: var(--accent-text); }
+html.proof-grid-case-study .product-points { border-color: var(--rule-light); }
+html.proof-grid-case-study .product-points li { border-color: var(--rule-light); }
+html.proof-grid-case-study .demo-callout { border-left-color: #a90f68; }
+html.proof-grid-case-study .product-image--icon { background: transparent; }
+html.proof-grid-case-study .product-icon-card { background: transparent; }
+html.proof-grid-case-study .product-icon-card::after { border-color: #e548a5; }
+
+/* The shared editorial template: square evidence frames and open ruled facts. */
+html.proof-grid-case-study :is(.product-image, .poc-media-frame, .video-frame) {
+  border-radius: 0;
+  box-shadow: 6px 6px 0 rgb(36 84 198 / .16);
+}
+html.proof-grid-case-study :is(
+  .product-image img,
+  .poc-media-frame img,
+  .video-frame img,
+  .image-pair img,
+  .whitelabel-screen img
+) {
+  border-radius: 0;
+}
+html.proof-grid-case-study :is(.stats-bar, .project-fact, .outcomes:not(.role-cards) li) {
+  border-color: var(--rule);
+}
+html.proof-grid-case-study :is(.stat-number, .project-fact strong, .poc-detail h5) {
+  font-family: var(--font-body);
+}
+
+/* POC page adapter. Its bespoke layout and video behavior remain untouched. */
+html.proof-grid-case-study .poc-video-play { background: var(--accent); }
+html.proof-grid-case-study .poc-video-card img { background: var(--dark-base); }
+html.proof-grid-case-study .poc-video-label {
+  border-radius: 0;
+  background: rgb(24 25 27 / .88);
+}
+html.proof-grid-case-study .poc-bullets li::before { background: #e548a5; }
+html.proof-grid-case-study :is(.poc-link:not(.poc-link--secondary), .video-play-button) {
+  background: var(--accent);
+}
+html.proof-grid-case-study .poc-link:not(.poc-link--secondary) {
+  border-color: var(--accent);
+  border-radius: 0;
+  box-shadow: 3px 3px 0 rgb(36 84 198 / .20);
+}
+html.proof-grid-case-study .poc-link--secondary { border-radius: 0; }
+html.proof-grid-case-study .demo-callout {
+  border-radius: 0;
+  border-left: 3px solid #a90f68;
+  font-family: var(--font-body);
+}
+html.proof-grid-case-study .pullquote blockquote { border-left-color: #e548a5; }
+
+/* Data-visualization page adapter. Keep its film cards and award links intact. */
+html.proof-grid-case-study .video-play-button { box-shadow: 4px 4px 0 rgb(229 72 165 / .30); }
+html.proof-grid-case-study :is(.fact-link, .text-link, .poc-text-link) {
+  border-bottom-color: rgb(36 84 198 / .42);
+}
+
+/* Preserve the full Pharma OS choreography and pause control. */
+html.proof-grid-case-study :is(.os-orchestration, .os-core, .os-node, .motion-toggle) { border-radius: 0; }
+html.proof-grid-case-study .os-core {
+  background: #1f2c4b;
+  border-color: #2454c6;
+  box-shadow: 5px 5px 0 rgb(36 84 198 / .20);
+}
+html.proof-grid-case-study .os-core strong { color: var(--dark-text); }
+html.proof-grid-case-study .os-orchestration::before { border-color: #676c73; }
+html.proof-grid-case-study .motion-toggle { color: var(--dark-body); }
+
+/* Repeat the same grid at the handoff, always outside the solid preview card. */
+html.proof-grid-case-study .next-project { isolation: isolate; background-image: none; }
+html.proof-grid-case-study .next-project::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background-image: var(--case-grid);
+  background-size: 96px 166px;
+  background-position: center;
+  mask-image: linear-gradient(to bottom, transparent, #000 20%, #000 80%, transparent);
+  -webkit-mask-image: linear-gradient(to bottom, transparent, #000 20%, #000 80%, transparent);
+}
+html.proof-grid-case-study .next-project-preview {
+  border-radius: 0;
+  box-shadow: 6px 6px 0 rgb(36 84 198 / .20);
+}
+html.proof-grid-case-study .next-project-copy > span { color: var(--dark-secondary); }
+html.proof-grid-case-study .nav-projects a { color: var(--dark-body); }

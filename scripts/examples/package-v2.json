@@ -257,6 +257,7 @@
   },
   "route": {
     "presentation": "showcase",
+    "designConcept": "editorial-proof",
     "heroIntent": "resume-support",
     "showcaseSections": ["chapters", "capabilities"],
     "workHeading": "Selected work.",

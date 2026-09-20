@@ -24,7 +24,9 @@ import {
   assertBuildAllowed,
   assertHumanizerReviewCurrent,
   assertRecruiterFacingClaimsSupported,
+  buildDesignConceptCss,
   configInputSha256,
+  getDesignConceptId,
   humanizerCopyEntries,
   humanizerCopySha256,
   humanizerViolations,
@@ -571,6 +573,15 @@ function createBuildFixture({
     path.join(repoRoot, 'scripts', 'lib', 'render-pdf-with-fonts.mjs'),
     path.join(tempRoot, 'scripts', 'lib', 'render-pdf-with-fonts.mjs')
   );
+  mkdirSync(path.join(tempRoot, 'concepts', 'proof-grid'), {
+    recursive: true,
+  });
+  for (const sourceFile of ['homepage.css', 'case-study.css']) {
+    cpSync(
+      path.join(repoRoot, 'concepts', 'proof-grid', sourceFile),
+      path.join(tempRoot, 'concepts', 'proof-grid', sourceFile)
+    );
+  }
   writeFileSync(
     path.join(tempRoot, 'scripts', 'tailored-packages.json'),
     `${JSON.stringify(
@@ -667,6 +678,104 @@ async function startFixtureServer(tempRoot, { transform } = {}) {
 
 test('v2 example satisfies the enforced config contract', () => {
   assert.deepEqual(validateV2Config(validConfig()), []);
+});
+
+test('design concepts default historically, require an explicit current choice, and constrain Proof Grid to scoped routes', () => {
+  const editorial = validConfig();
+  assert.equal(getDesignConceptId(editorial), 'editorial-proof');
+  assert.match(buildDesignConceptCss(editorial), /Editorial Proof \(editorial-proof\)/);
+
+  const historical = structuredClone(editorial);
+  delete historical.route.designConcept;
+  assert.equal(getDesignConceptId(historical), 'editorial-proof');
+  assert.doesNotMatch(
+    validateV2Config(historical).join('\n'),
+    /route\.designConcept/
+  );
+  assert.match(
+    validateV2Config(historical, { requireCurrentContract: true }).join('\n'),
+    /route\.designConcept must be explicitly set/
+  );
+  assert.deepEqual(schemaErrors(historical), []);
+
+  const unknown = structuredClone(editorial);
+  unknown.route.designConcept = 'unknown-concept';
+  assert.match(
+    validateV2Config(unknown).join('\n'),
+    /route\.designConcept must be editorial-proof or proof-grid/
+  );
+  assert.ok(schemaErrors(unknown).length > 0);
+
+  const canonicalProofGrid = structuredClone(editorial);
+  canonicalProofGrid.route.designConcept = 'proof-grid';
+  canonicalProofGrid.routeMode = 'canonical-projects';
+  assert.match(
+    validateV2Config(canonicalProofGrid).join('\n'),
+    /proof-grid requires routeMode scoped-projects/
+  );
+  assert.ok(schemaErrors(canonicalProofGrid).length > 0);
+
+  const scopedProofGrid = structuredClone(canonicalProofGrid);
+  scopedProofGrid.routeMode = 'scoped-projects';
+  assert.doesNotMatch(
+    validateV2Config(scopedProofGrid).join('\n'),
+    /route\.designConcept/
+  );
+  assert.deepEqual(schemaErrors(scopedProofGrid), []);
+});
+
+test('Proof Grid snapshots both source skins and stamps route-local homepage and project HTML', () => {
+  const { tempRoot, config } = createBuildFixture({
+    routeMode: 'scoped-projects',
+  });
+  const previousRepoRoot = process.env.WORKFLOW_REPO_ROOT;
+  try {
+    process.env.WORKFLOW_REPO_ROOT = tempRoot;
+    config.route.designConcept = 'proof-grid';
+    const paths = getArtifactPaths(config);
+    const routeHtml = buildRoute(config, paths);
+    assert.match(
+      routeHtml,
+      /<html\b(?=[^>]*\bclass="[^"]*\bproof-grid-homepage\b)(?=[^>]*\bdata-design-concept="proof-grid")[^>]*>/
+    );
+    assert.match(
+      routeHtml,
+      /<link\b(?=[^>]*\bhref="design-concept\.css")(?=[^>]*\bdata-design-concept-stylesheet\b)[^>]*>/
+    );
+
+    const titles = new Map(
+      config.selectedProjects.map((project) => [project, project])
+    );
+    const projectHtml = buildScopedProjectHtml(
+      config.selectedProjects[0],
+      config,
+      paths,
+      0,
+      titles
+    );
+    assert.match(
+      projectHtml,
+      /<html\b(?=[^>]*\bclass="[^"]*\bproof-grid-case-study\b)(?=[^>]*\bdata-design-concept="proof-grid")[^>]*>/
+    );
+    assert.match(projectHtml, /href="design-concept\.css"/);
+
+    const snapshotCss = buildDesignConceptCss(config);
+    for (const sourceFile of ['homepage.css', 'case-study.css']) {
+      const sourceCss = readFileSync(
+        path.join(tempRoot, 'concepts', 'proof-grid', sourceFile),
+        'utf8'
+      ).trimEnd();
+      assert.ok(snapshotCss.includes(sourceCss));
+      assert.match(
+        snapshotCss,
+        new RegExp(`Source: concepts/proof-grid/${sourceFile.replace('.', '\\.')} \\*/\\n`)
+      );
+    }
+  } finally {
+    if (previousRepoRoot === undefined) delete process.env.WORKFLOW_REPO_ROOT;
+    else process.env.WORKFLOW_REPO_ROOT = previousRepoRoot;
+    rmSync(tempRoot, { recursive: true, force: true });
+  }
 });
 
 test('revision 7 requires a valid resume-base decision and reserves use-existing for networking', () => {
@@ -1561,6 +1670,7 @@ test(
 
       config.route = {
         presentation: 'showcase',
+        designConcept: 'editorial-proof',
         heroIntent: 'resume-support',
         projectCardStats: 'hidden',
         showcaseSections: ['chapters', 'capabilities'],
@@ -3813,6 +3923,12 @@ test(
       );
       assert.equal(
         existsSync(
+          path.join(tempRoot, 'rollback-fixture', 'design-concept.css')
+        ),
+        false
+      );
+      assert.equal(
+        existsSync(
           path.join(
             tempRoot,
             'output',
@@ -3864,6 +3980,7 @@ test(
     });
     try {
       const config = JSON.parse(readFileSync(configPath, 'utf8'));
+      config.route.designConcept = 'proof-grid';
       config.route.projectAliases = {
         'project-06.html': 'project-02.html',
       };
@@ -4040,6 +4157,8 @@ test(
         path.join(tempRoot, 'scoped-fixture', 'index.html'),
         'utf8'
       );
+      assert.match(routeHtml, /data-design-concept="proof-grid"/);
+      assert.match(routeHtml, /\bproof-grid-homepage\b/);
       assert.deepEqual(
         [...routeHtml.matchAll(/class="work-item reveal"[^>]*href="([^"]+)"|href="([^"]+)"[^>]*class="work-item reveal"/g)].map(
           (match) => match[1] || match[2]
@@ -4051,6 +4170,9 @@ test(
           path.join(tempRoot, 'scoped-fixture', project),
           'utf8'
         );
+        assert.match(html, /data-design-concept="proof-grid"/);
+        assert.match(html, /\bproof-grid-case-study\b/);
+        assert.match(html, /href="design-concept\.css"/);
         assert.doesNotMatch(
           html,
           /\b(?:href|src)="(?:assets\/|favicon\.ico|apple-touch-icon\.png|site\.webmanifest)/
@@ -4184,6 +4306,15 @@ test(
         ).length,
         4
       );
+      assert.match(
+        savedConfig.qa.artifactHashes.designConceptCssSha256,
+        /^[a-f0-9]{64}$/
+      );
+      assert.ok(
+        existsSync(
+          path.join(tempRoot, 'scoped-fixture', 'design-concept.css')
+        )
+      );
       assert.deepEqual(
         Object.keys(savedConfig.qa.artifactHashes.scopedProjectSha256),
         [...scopedOutputs, 'project-06.html']
@@ -4201,8 +4332,15 @@ test(
 
       let corruptScopedAsset = false;
       let corruptScopedRedirect = false;
+      let corruptDesignConceptCss = false;
       const fixtureServer = await startFixtureServer(tempRoot, {
         transform(relativePath, content) {
+          if (
+            corruptDesignConceptCss &&
+            relativePath === 'scoped-fixture/design-concept.css'
+          ) {
+            return Buffer.concat([content, Buffer.from('stale')]);
+          }
           if (
             corruptScopedAsset &&
             relativePath === 'fixtures/dxa-awards.mp4'
@@ -4249,6 +4387,20 @@ test(
           'fixtures/dxa-awards.jpg',
           'fixtures/dxa-awards.mp4',
         ]);
+        assert.equal(
+          liveProof.designConceptCssUrl,
+          `${fixtureServer.publicBase}scoped-fixture/design-concept.css`
+        );
+        assert.match(liveProof.designConceptCssSha256, /^[a-f0-9]{64}$/);
+        corruptDesignConceptCss = true;
+        await assert.rejects(
+          () =>
+            fetchPublishedArtifacts(manifest.packages[0], savedConfig, {
+              publicBase: fixtureServer.publicBase,
+            }),
+          /Design-concept CSS checksum mismatch/
+        );
+        corruptDesignConceptCss = false;
         corruptScopedAsset = true;
         await assert.rejects(
           () =>
@@ -4579,6 +4731,11 @@ test(
         'workflow-v2-fixture',
         'index.html'
       );
+      const designConceptCssPath = path.join(
+        tempRoot,
+        'workflow-v2-fixture',
+        'design-concept.css'
+      );
       const temporaryHtml = path.join(
         tempRoot,
         'tmp',
@@ -4618,6 +4775,13 @@ test(
       assert.doesNotMatch(coverLetterFonts, /\bType\s+3\b/i);
       assert.match(coverLetterFonts, /CID TrueType/i);
       assert.ok(existsSync(routePath));
+      assert.ok(existsSync(designConceptCssPath));
+      const designConceptCss = readFileSync(designConceptCssPath, 'utf8');
+      assert.match(designConceptCss, /Editorial Proof \(editorial-proof\)/);
+      const builtRouteHtml = readFileSync(routePath, 'utf8');
+      assert.match(builtRouteHtml, /data-design-concept="editorial-proof"/);
+      assert.match(builtRouteHtml, /\beditorial-proof-homepage\b/);
+      assert.match(builtRouteHtml, /href="design-concept\.css"/);
       assert.equal(existsSync(temporaryHtml), false);
       assert.equal(existsSync(temporaryCoverLetterHtml), false);
       assert.equal(existsSync(qaDirectory), false);
@@ -4640,6 +4804,11 @@ test(
         )
       );
       assert.equal(manifest.packages[0].workflowVersion, 2);
+      assert.equal(manifest.packages[0].designConcept, 'editorial-proof');
+      assert.equal(
+        manifest.packages[0].designConceptCssPath,
+        'workflow-v2-fixture/design-concept.css'
+      );
       assert.equal(manifest.packages[0].resumeHtmlPath, undefined);
       assert.equal(
         manifest.packages[0].coverLetterPdfPath,
@@ -4652,6 +4821,10 @@ test(
       assert.equal(manifest.packages[0].qaStatus, 'qa-passed');
       const savedConfig = JSON.parse(readFileSync(configPath, 'utf8'));
       assert.equal(savedConfig.qa.ats.ok, true);
+      assert.match(
+        savedConfig.qa.artifactHashes.designConceptCssSha256,
+        /^[a-f0-9]{64}$/
+      );
       assert.equal(savedConfig.qa.coverLetter.ok, true);
       assert.equal(savedConfig.qa.coverLetter.pageCount, 1);
       assert.equal(
@@ -4723,6 +4896,7 @@ test(
         [
           'add',
           'workflow-v2-fixture/index.html',
+          'workflow-v2-fixture/design-concept.css',
           'output/pdf/Wally-Mostafa-Workflow-V2-Fixture-Resume.pdf',
           'output/pdf/Wally-Mostafa-Workflow-V2-Fixture-Cover-Letter.pdf',
           'output/pdf/Wally-Mostafa-Workflow-V2-Fixture-Cover-Letter.md',
@@ -4747,6 +4921,22 @@ test(
         }
       );
       assert.equal(cleanCheck.status, 0, cleanCheck.stderr);
+      appendFileSync(designConceptCssPath, '\n/* post-QA mutation */\n');
+      const staleDesignCheck = run(
+        ['scripts/check-tailored-packages.mjs', 'workflow-v2-fixture'],
+        {
+          env: {
+            ...process.env,
+            WORKFLOW_REPO_ROOT: tempRoot,
+          },
+        }
+      );
+      assert.notEqual(staleDesignCheck.status, 0);
+      assert.match(
+        staleDesignCheck.stderr,
+        /design-concept CSS changed after QA/
+      );
+      writeFileSync(designConceptCssPath, designConceptCss);
       appendFileSync(routePath, '\n<!-- post-QA mutation -->\n');
       const staleCheck = run(
         ['scripts/check-tailored-packages.mjs', 'workflow-v2-fixture'],

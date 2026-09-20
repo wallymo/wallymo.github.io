@@ -519,6 +519,7 @@
       "type": "object",
       "properties": {
         "presentation": { "enum": ["full", "showcase"] },
+        "designConcept": { "enum": ["editorial-proof", "proof-grid"] },
         "heroIntent": { "const": "resume-support" },
         "projectCardStats": { "enum": ["visible", "hidden"] },
         "workHeading": { "type": "string", "minLength": 1 },
@@ -782,6 +783,24 @@
     }
   },
   "allOf": [
+    {
+      "if": {
+        "required": ["route"],
+        "properties": {
+          "route": {
+            "required": ["designConcept"],
+            "properties": {
+              "designConcept": { "const": "proof-grid" }
+            }
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "routeMode": { "const": "scoped-projects" }
+        }
+      }
+    },
     {
       "if": {
         "required": ["route"],

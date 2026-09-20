@@ -27,6 +27,7 @@ function usage() {
 function scopedPaths(pkg, config, paths) {
   return [
     paths.routeIndexPath,
+    ...(config.route?.designConcept ? [paths.designConceptCssPath] : []),
     paths.resumePdfPath,
     ...(hasCoverLetterArtifact(config)
       ? [paths.coverLetterPdfPath, paths.coverLetterMarkdownPath]
@@ -80,6 +81,7 @@ export async function fetchPublishedArtifacts(
   const paths = getArtifactPaths(config);
   const base = publicBase.endsWith('/') ? publicBase : `${publicBase}/`;
   const routeUrl = `${base}${paths.slug}/`;
+  const designConceptCssUrl = `${base}${paths.designConceptCssPath}`;
   const resumePdfUrl = `${base}${paths.resumePdfPath}`;
   const configUrl = `${base}${pkg.configPath}`;
   const coverLetterPdfUrl = `${base}${paths.coverLetterPdfPath}`;
@@ -107,6 +109,22 @@ export async function fetchPublishedArtifacts(
   }
   const localRoute = readFileSync(resolveRepoPath(paths.routeIndexPath));
   const routeSha256 = assertChecksum('Role route', localRoute, liveRoute);
+
+  let designConceptCssSha256 = null;
+  if (config.route?.designConcept) {
+    const designConceptCssResponse = await fetchLive(designConceptCssUrl);
+    const liveDesignConceptCss = Buffer.from(
+      await designConceptCssResponse.arrayBuffer()
+    );
+    const localDesignConceptCss = readFileSync(
+      resolveRepoPath(paths.designConceptCssPath)
+    );
+    designConceptCssSha256 = assertChecksum(
+      'Design-concept CSS',
+      localDesignConceptCss,
+      liveDesignConceptCss
+    );
+  }
 
   const configResponse = await fetchLive(configUrl);
   const liveConfig = Buffer.from(await configResponse.arrayBuffer());
@@ -217,6 +235,9 @@ export async function fetchPublishedArtifacts(
     routeUrl,
     resumePdfUrl,
     configUrl,
+    ...(config.route?.designConcept
+      ? { designConceptCssUrl, designConceptCssSha256 }
+      : {}),
     projectUrls,
     redirectUrls,
     configSha256,
@@ -295,6 +316,9 @@ async function main() {
   }
   const result = await verifyTailoredRoute(args[0]);
   console.log(`OK live route: ${result.routeUrl}`);
+  if (result.designConceptCssUrl) {
+    console.log(`OK live design-concept CSS: ${result.designConceptCssUrl}`);
+  }
   console.log(`OK live resume PDF: ${result.resumePdfUrl}`);
   if (result.coverLetterPdfUrl) {
     console.log(`OK live cover-letter PDF: ${result.coverLetterPdfUrl}`);

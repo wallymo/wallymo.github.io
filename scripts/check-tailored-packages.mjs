@@ -10,6 +10,8 @@ import {
   assertRecruiterFacingClaimsSupported,
   configInputSha256,
   getArtifactPaths,
+  getDesignConcept,
+  getDesignConceptId,
   hasCoverLetterArtifact,
   isMain,
   readManifest,
@@ -98,6 +100,7 @@ function sameList(actual, expected) {
 function collectScopedPaths(config, paths) {
   return [
     paths.routeIndexPath,
+    ...(config.route?.designConcept ? [paths.designConceptCssPath] : []),
     paths.resumePdfPath,
     ...(hasCoverLetterArtifact(config)
       ? [paths.coverLetterPdfPath, paths.coverLetterMarkdownPath]
@@ -117,6 +120,27 @@ function collectScopedPaths(config, paths) {
       : []),
     ...scopedProjectAssets(config),
   ];
+}
+
+function validateDesignConceptMarkup(html, config, surface, filePath, failures) {
+  const concept = getDesignConcept(config);
+  const className =
+    surface === 'homepage' ? concept.homepageClass : concept.projectClass;
+  const htmlTag = html.match(/<html\b[^>]*>/i)?.[0] || '';
+  if (!htmlTag.includes(`data-design-concept="${getDesignConceptId(config)}"`)) {
+    failures.push(`${filePath} is missing its design-concept data marker`);
+  }
+  const classValue = htmlTag.match(/\bclass="([^"]*)"/i)?.[1] || '';
+  if (!classValue.split(/\s+/).includes(className)) {
+    failures.push(`${filePath} is missing design-concept class ${className}`);
+  }
+  if (
+    !/<link\b(?=[^>]*\bhref="design-concept\.css")(?=[^>]*\bdata-design-concept-stylesheet\b)[^>]*>/i.test(
+      html
+    )
+  ) {
+    failures.push(`${filePath} is missing its local design-concept stylesheet`);
+  }
 }
 
 function existingScopedProjects(paths) {
@@ -157,6 +181,9 @@ function validateLiveVerification(
   if (config.contractRevision === 7) {
     requiredVerificationFields.push('resumeBaseProfilesUrl');
   }
+  if (config.route?.designConcept) {
+    requiredVerificationFields.push('designConceptCssUrl');
+  }
   for (const field of requiredVerificationFields) {
     if (typeof verification[field] !== 'string' || !verification[field]) {
       failures.push(`${pkg.slug} verification ${field} is missing`);
@@ -173,6 +200,12 @@ function validateLiveVerification(
     configSha256: sha256File(pkg.configPath),
     routeSha256: config.qa.artifactHashes?.routeSha256,
     pdfSha256: config.qa.artifactHashes?.resumePdfSha256,
+    ...(config.route?.designConcept
+      ? {
+          designConceptCssSha256:
+            config.qa.artifactHashes?.designConceptCssSha256,
+        }
+      : {}),
     ...(hasCoverLetterArtifact(config)
       ? {
           coverLetterPdfSha256:
@@ -235,6 +268,7 @@ function validateLiveVerification(
   const expectedRouteUrl = `${base}${paths.slug}/`;
   const expectedPdfUrl = `${base}${paths.resumePdfPath}`;
   const expectedConfigUrl = `${base}${pkg.configPath}`;
+  const expectedDesignConceptCssUrl = `${base}${paths.designConceptCssPath}`;
   const expectedCoverLetterPdfUrl = `${base}${paths.coverLetterPdfPath}`;
   const expectedCoverLetterMarkdownUrl =
     `${base}${paths.coverLetterMarkdownPath}`;
@@ -257,6 +291,12 @@ function validateLiveVerification(
   }
   if (verification.configUrl !== expectedConfigUrl) {
     failures.push(`${pkg.slug} verification config URL is incorrect`);
+  }
+  if (
+    config.route?.designConcept &&
+    verification.designConceptCssUrl !== expectedDesignConceptCssUrl
+  ) {
+    failures.push(`${pkg.slug} verification design-concept CSS URL is incorrect`);
   }
   if (
     hasCoverLetterArtifact(config) &&
@@ -301,6 +341,15 @@ function validateScopedProjects(config, paths, routeHtml, failures) {
       continue;
     }
     const projectHtml = readFileSync(resolveRepoPath(projectPath), 'utf8');
+    if (config.route?.designConcept) {
+      validateDesignConceptMarkup(
+        projectHtml,
+        config,
+        'project',
+        projectPath,
+        failures
+      );
+    }
     const previous =
       scopedProjects[
         (index - 1 + scopedProjects.length) % scopedProjects.length
@@ -420,6 +469,12 @@ function checkV2Package(pkg, { publicBase = PUBLIC_BASE } = {}) {
     fitClass: config.fitClass,
     routeMode: config.routeMode,
     resumePdfPath: paths.resumePdfPath,
+    ...(config.route?.designConcept
+      ? {
+          designConcept: getDesignConceptId(config),
+          designConceptCssPath: paths.designConceptCssPath,
+        }
+      : {}),
     ...(config.contractRevision === 7
       ? {
           resumeBaseMode: config.fitGate.resumeBase.mode,
@@ -504,6 +559,7 @@ function checkV2Package(pkg, { publicBase = PUBLIC_BASE } = {}) {
 
   for (const filePath of [
     paths.routeIndexPath,
+    ...(config.route?.designConcept ? [paths.designConceptCssPath] : []),
     paths.resumePdfPath,
     ...(hasCoverLetterArtifact(config)
       ? [paths.coverLetterPdfPath, paths.coverLetterMarkdownPath]
@@ -520,6 +576,14 @@ function checkV2Package(pkg, { publicBase = PUBLIC_BASE } = {}) {
     config.qa.artifactHashes?.routeSha256 !== sha256File(paths.routeIndexPath)
   ) {
     failures.push(`${pkg.slug} route changed after QA`);
+  }
+  if (
+    config.route?.designConcept &&
+    existsSync(resolveRepoPath(paths.designConceptCssPath)) &&
+    config.qa.artifactHashes?.designConceptCssSha256 !==
+      sha256File(paths.designConceptCssPath)
+  ) {
+    failures.push(`${pkg.slug} design-concept CSS changed after QA`);
   }
   if (
     existsSync(resolveRepoPath(paths.resumePdfPath)) &&
@@ -565,6 +629,15 @@ function checkV2Package(pkg, { publicBase = PUBLIC_BASE } = {}) {
   }
 
   const routeHtml = readFileSync(resolveRepoPath(paths.routeIndexPath), 'utf8');
+  if (config.route?.designConcept) {
+    validateDesignConceptMarkup(
+      routeHtml,
+      config,
+      'homepage',
+      paths.routeIndexPath,
+      failures
+    );
+  }
   const expectedWorkLinks = config.selectedProjects.map((project) =>
     config.routeMode === 'canonical-projects'
       ? `../${project}`

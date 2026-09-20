@@ -23,6 +23,53 @@ const SUPPORTED_CONTRACT_REVISIONS = new Set([2, 3, 4, 5, 6, 7]);
 const FLEXIBLE_POSITIONING_REVISIONS = new Set([5, 6, 7]);
 export const SHOWCASE_SECTION_IDS = ['chapters', 'how-i-build', 'capabilities', 'arc'];
 export const CAPABILITY_LANE_IDS = ['discover', 'design', 'build', 'lead'];
+export const DEFAULT_DESIGN_CONCEPT_ID = 'editorial-proof';
+export const DESIGN_CONCEPTS = Object.freeze({
+  'editorial-proof': Object.freeze({
+    id: 'editorial-proof',
+    name: 'Editorial Proof',
+    homepageClass: 'editorial-proof-homepage',
+    projectClass: 'editorial-proof-case-study',
+    cssSources: Object.freeze([]),
+  }),
+  'proof-grid': Object.freeze({
+    id: 'proof-grid',
+    name: 'Proof Grid',
+    homepageClass: 'proof-grid-homepage',
+    projectClass: 'proof-grid-case-study',
+    cssSources: Object.freeze([
+      'concepts/proof-grid/homepage.css',
+      'concepts/proof-grid/case-study.css',
+    ]),
+  }),
+});
+export const DESIGN_CONCEPT_IDS = Object.freeze(Object.keys(DESIGN_CONCEPTS));
+
+export function getDesignConceptId(config) {
+  return config?.route?.designConcept || DEFAULT_DESIGN_CONCEPT_ID;
+}
+
+export function getDesignConcept(config) {
+  const conceptId = getDesignConceptId(config);
+  const concept = DESIGN_CONCEPTS[conceptId];
+  if (!concept) {
+    throw new Error(`Unknown design concept: ${conceptId}`);
+  }
+  return concept;
+}
+
+export function buildDesignConceptCss(config) {
+  const concept = getDesignConcept(config);
+  const header = `/* Design concept snapshot: ${concept.name} (${concept.id}). */`;
+  if (concept.cssSources.length === 0) {
+    return `${header}\n/* Canonical portfolio styles remain the Editorial Proof control. */\n`;
+  }
+  const sourceBlocks = concept.cssSources.map((sourcePath) => {
+    const sourceCss = readFileSync(resolveRepoPath(sourcePath), 'utf8').trimEnd();
+    return `/* Source: ${sourcePath} */\n${sourceCss}`;
+  });
+  return `${header}\n${sourceBlocks.join('\n\n')}\n`;
+}
 
 export function getShowcaseSectionIds(config) {
   if (getRoutePresentation(config) !== 'showcase') {
@@ -2378,6 +2425,18 @@ export function validateV2Config(
       );
       pushError(
         errors,
+        route.designConcept === undefined ||
+          DESIGN_CONCEPT_IDS.includes(route.designConcept),
+        `route.designConcept must be ${DESIGN_CONCEPT_IDS.join(' or ')}`
+      );
+      pushError(
+        errors,
+        route.designConcept !== 'proof-grid' ||
+          config.routeMode === 'scoped-projects',
+        'route.designConcept proof-grid requires routeMode scoped-projects'
+      );
+      pushError(
+        errors,
         route.heroIntent === undefined || route.heroIntent === 'resume-support',
         'route.heroIntent must be resume-support when present'
       );
@@ -2810,6 +2869,13 @@ export function validateV2Config(
   if (requireCurrentContract) {
     pushError(
       errors,
+      route &&
+        typeof route === 'object' &&
+        DESIGN_CONCEPT_IDS.includes(route.designConcept),
+      'route.designConcept must be explicitly set for new or rebuilt packages'
+    );
+    pushError(
+      errors,
       route && typeof route === 'object' &&
         ['full', 'showcase'].includes(route.presentation),
       'route.presentation must be explicitly set to full or showcase for new or rebuilt packages'
@@ -3128,6 +3194,7 @@ export function getArtifactPaths(config) {
   return {
     slug,
     routeIndexPath: `${slug}/index.html`,
+    designConceptCssPath: `${slug}/design-concept.css`,
     resumePdfPath: `output/pdf/Wally-Mostafa-${config.artifactStem}-Resume.pdf`,
     tempResumeHtmlPath: `tmp/tailored-resumes/${slug}.html`,
     coverLetterPdfPath: `output/pdf/Wally-Mostafa-${config.artifactStem}-Cover-Letter.pdf`,
@@ -3302,7 +3369,9 @@ export function upsertV2ManifestEntry(config, qa = {}) {
         }
       : {}),
     routeMode: config.routeMode,
+    designConcept: getDesignConceptId(config),
     selectedProjects: config.selectedProjects,
+    designConceptCssPath: paths.designConceptCssPath,
     resumePdfPath: paths.resumePdfPath,
     ...(hasCoverLetterArtifact(config)
       ? {

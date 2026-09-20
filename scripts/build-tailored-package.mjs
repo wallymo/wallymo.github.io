@@ -19,9 +19,11 @@ import {
   assertHumanizerReviewCurrent,
   assertRecruiterFacingClaimsSupported,
   assertValidV2Config,
+  buildDesignConceptCss,
   configInputSha256,
   escapeHtml,
   getArtifactPaths,
+  getDesignConcept,
   getResumeExperienceSections,
   getRoutePresentation,
   getShowcaseSectionIds,
@@ -137,6 +139,7 @@ function manifestPackageOutputs(pkg) {
   }
   return [
     `${pkg.slug}/index.html`,
+    pkg.designConceptCssPath,
     pkg.resumePdfPath,
     pkg.resumeHtmlPath,
     pkg.coverLetterPdfPath,
@@ -154,6 +157,48 @@ function replaceFirst(html, pattern, replacement, label) {
     throw new Error(`Could not replace ${label}`);
   }
   return html.replace(pattern, replacement);
+}
+
+function stampDesignConcept(html, config, surface) {
+  const concept = getDesignConcept(config);
+  const className =
+    surface === 'homepage' ? concept.homepageClass : concept.projectClass;
+  let stampedHtml = replaceFirst(
+    html,
+    /<html\b[^>]*>/i,
+    (openingTag) => {
+      let nextTag = openingTag.replace(
+        /\sdata-design-concept="[^"]*"/i,
+        ''
+      );
+      const classMatch = nextTag.match(/\sclass="([^"]*)"/i);
+      if (classMatch) {
+        const classNames = classMatch[1].split(/\s+/).filter(Boolean);
+        if (!classNames.includes(className)) classNames.push(className);
+        nextTag = nextTag.replace(
+          /\sclass="[^"]*"/i,
+          ` class="${classNames.join(' ')}"`
+        );
+      } else {
+        nextTag = nextTag.replace(/>$/, ` class="${className}">`);
+      }
+      return nextTag.replace(
+        />$/,
+        ` data-design-concept="${concept.id}">`
+      );
+    },
+    `${surface} html design-concept marker`
+  );
+  stampedHtml = stampedHtml.replace(
+    /\s*<link\b[^>]*\bdata-design-concept-stylesheet\b[^>]*>/gi,
+    ''
+  );
+  return replaceFirst(
+    stampedHtml,
+    /<\/head>/i,
+    '  <link rel="stylesheet" href="design-concept.css" data-design-concept-stylesheet>\n</head>',
+    `${surface} design-concept stylesheet`
+  );
 }
 
 function replaceDivByExactClass(html, className, replacement, label) {
@@ -917,12 +962,12 @@ export function buildScopedProjectHtml(project, config, paths, index, titlesByPr
     routeLocalNumber,
     project
   );
-  return replaceDivByExactClass(
+  return stampDesignConcept(replaceDivByExactClass(
     scopedHtml,
     'next-project',
     nextProjectHtml,
     `next-project navigation for ${project}`
-  );
+  ), config, 'project');
 }
 
 function buildScopedProjectRedirectHtml({
@@ -1127,7 +1172,7 @@ export function buildRoute(config, paths) {
       'contact heading'
     );
   }
-  return routeHtml;
+  return stampDesignConcept(routeHtml, config, 'homepage');
 }
 
 function buildResume(config, paths) {
@@ -1447,7 +1492,11 @@ export async function buildTailoredPackage({
   const previousPackage = manifestBeforeBuild.packages.find(
     (pkg) => pkg.slug === paths.slug
   );
-  const trackedOutputs = [paths.routeIndexPath, paths.resumePdfPath];
+  const trackedOutputs = [
+    paths.routeIndexPath,
+    paths.designConceptCssPath,
+    paths.resumePdfPath,
+  ];
   if (hasCoverLetterArtifact(config)) {
     trackedOutputs.push(
       paths.coverLetterPdfPath,
@@ -1478,6 +1527,7 @@ export async function buildTailoredPackage({
   }
 
   const routeHtml = buildRoute(config, paths);
+  const designConceptCss = buildDesignConceptCss(config);
   const resumeHtml = buildResume(config, paths);
   const coverLetterMarkdown = hasCoverLetterArtifact(config)
     ? buildCoverLetterMarkdown(config, paths)
@@ -1508,6 +1558,7 @@ export async function buildTailoredPackage({
       force: true,
     });
     writeText(paths.routeIndexPath, routeHtml);
+    writeText(paths.designConceptCssPath, designConceptCss);
     if (config.routeMode === 'scoped-projects') {
       const titlesByProject = extractWorkCardTitles(
         readFileSync(resolveRepoPath('index.html'), 'utf8')
@@ -1606,6 +1657,7 @@ export async function buildTailoredPackage({
           : null,
       artifactHashes: {
         routeSha256: sha256File(paths.routeIndexPath),
+        designConceptCssSha256: sha256File(paths.designConceptCssPath),
         resumePdfSha256: sha256File(paths.resumePdfPath),
         coverLetterPdfSha256: hasCoverLetterArtifact(config)
           ? sha256File(paths.coverLetterPdfPath)
@@ -1660,6 +1712,7 @@ export async function buildTailoredPackage({
     return {
       configPath: relativeRepoPath(absoluteConfigPath),
       routePath: paths.routeIndexPath,
+      designConceptCssPath: paths.designConceptCssPath,
       resumePdfPath: paths.resumePdfPath,
       coverLetterPdfPath: hasCoverLetterArtifact(config)
         ? paths.coverLetterPdfPath
@@ -1693,6 +1746,7 @@ async function main() {
   const options = parseArgs(process.argv.slice(2));
   const result = await buildTailoredPackage(options);
   console.log(`OK built v2 package ${result.routePath}`);
+  console.log(`Design-concept CSS: ${result.designConceptCssPath}`);
   console.log(`Resume PDF: ${result.resumePdfPath}`);
   if (result.coverLetterPdfPath) {
     console.log(`Cover-letter PDF: ${result.coverLetterPdfPath}`);
