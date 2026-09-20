@@ -12,7 +12,6 @@ import {
 import path from 'node:path';
 import {
   CAPABILITY_LANE_IDS,
-  PUBLIC_BASE,
   RESUME_ROLE_IDS,
   SHOWCASE_SECTION_IDS,
   assertBuildAllowed,
@@ -24,6 +23,8 @@ import {
   escapeHtml,
   getArtifactPaths,
   getDesignConcept,
+  getPackagePublicBase,
+  getPackageRepository,
   getResumeExperienceSections,
   getRoutePresentation,
   getShowcaseSectionIds,
@@ -900,7 +901,9 @@ function stripLegacyRouteQueryShim(html, project) {
 export function buildScopedProjectHtml(project, config, paths, index, titlesByProject) {
   const routeLocalNumber = String(index + 1).padStart(2, '0');
   const scopedFilename = scopedProjectFilename(config, project);
-  const scopedUrl = `${PUBLIC_BASE}${paths.slug}/${scopedFilename}`;
+  const scopedUrl = `${getPackagePublicBase(config)}${
+    paths.slug
+  }/${scopedFilename}`;
   const sourceHtml = readFileSync(resolveRepoPath(project), 'utf8');
   const nextProjectHtml = buildRouteLocalNextProject(
     project,
@@ -971,6 +974,7 @@ export function buildScopedProjectHtml(project, config, paths, index, titlesByPr
 }
 
 function buildScopedProjectRedirectHtml({
+  config,
   paths,
   source,
   target,
@@ -978,7 +982,9 @@ function buildScopedProjectRedirectHtml({
 }) {
   const escapedTarget = escapeHtml(target);
   const escapedTitle = escapeHtml(title);
-  const canonicalUrl = `${PUBLIC_BASE}${paths.slug}/${target}`;
+  const canonicalUrl = `${getPackagePublicBase(config)}${
+    paths.slug
+  }/${target}`;
   const sourceHtml = readFileSync(resolveRepoPath(source), 'utf8');
   const sourceDescription = sourceHtml.match(
     /<meta name="description" content="([^"]*)">/
@@ -1019,7 +1025,7 @@ function buildScopedProjectRedirectHtml({
 export function buildRoute(config, paths) {
   const indexHtml = readFileSync(resolveRepoPath('index.html'), 'utf8');
   let routeHtml = rewriteRootRefsForRoute(indexHtml);
-  const routeUrl = `${PUBLIC_BASE}${paths.slug}/`;
+  const routeUrl = `${getPackagePublicBase(config)}${paths.slug}/`;
   const description = `Wally Mostafa's work for ${config.roleTitle}.`;
   const tags = config.hero.tags
     .map((tag) => `    <span>${escapeHtml(tag)}</span>`)
@@ -1186,7 +1192,7 @@ function buildResume(config, paths) {
     usesFlexiblePositioningContract(config)
       ? config.resume.skills
       : foundation.skills;
-  const routeUrl = `${PUBLIC_BASE}${paths.slug}/`;
+  const routeUrl = `${getPackagePublicBase(config)}${paths.slug}/`;
   const description = `Wally Mostafa's resume for ${config.roleTitle}.`;
 
   resumeHtml = resumeHtml
@@ -1582,6 +1588,7 @@ export async function buildTailoredPackage({
         writeText(
           `${paths.slug}/${source}`,
           buildScopedProjectRedirectHtml({
+            config,
             paths,
             source,
             target,
@@ -1712,6 +1719,8 @@ export async function buildTailoredPackage({
     return {
       configPath: relativeRepoPath(absoluteConfigPath),
       routePath: paths.routeIndexPath,
+      publicBase: getPackagePublicBase(config),
+      publishRepository: getPackageRepository(config),
       designConceptCssPath: paths.designConceptCssPath,
       resumePdfPath: paths.resumePdfPath,
       coverLetterPdfPath: hasCoverLetterArtifact(config)
@@ -1746,6 +1755,9 @@ async function main() {
   const options = parseArgs(process.argv.slice(2));
   const result = await buildTailoredPackage(options);
   console.log(`OK built v2 package ${result.routePath}`);
+  console.log(
+    `Publish target: ${result.publishRepository} (${result.publicBase})`
+  );
   console.log(`Design-concept CSS: ${result.designConceptCssPath}`);
   console.log(`Resume PDF: ${result.resumePdfPath}`);
   if (result.coverLetterPdfPath) {

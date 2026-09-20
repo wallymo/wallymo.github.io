@@ -18,8 +18,9 @@ exact version even if the public homepage changes later.
 ## Proof Grid
 
 - Role: challenger
-- Public route: <https://wallymo.github.io/proof-grid/>
-- Compatibility route: <https://wallymo.github.io/concepts/proof-grid/>
+- Public root: <https://wallymostafa.github.io/>
+- Publish repository: `wallymostafa/wallymostafa.github.io`
+- Legacy preview routes: <https://wallymo.github.io/proof-grid/> and <https://wallymo.github.io/concepts/proof-grid/>
 - Stable ID for tailored-package configs: `proof-grid`
 - Preserved source: Git tag `portfolio-concept/proof-grid-v1`
 - Source: `concepts/proof-grid/`
@@ -34,5 +35,7 @@ inside that package.
 
 Set `route.designConcept` to `editorial-proof` or `proof-grid`. A tailored
 resume still contains one Portfolio link, and that link points to the generated
-role route using the selected concept. If both designs are tested against the
+role route on the selected concept's public root. Editorial Proof packages
+publish to `wallymo/wallymo.github.io`; Proof Grid packages publish to
+`wallymostafa/wallymostafa.github.io`. If both designs are tested against the
 same JD, build two separately named packages so each PDF has its own route.

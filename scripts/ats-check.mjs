@@ -4,10 +4,11 @@ import { execFileSync } from 'node:child_process';
 import { existsSync, statSync } from 'node:fs';
 import path from 'node:path';
 import {
-  PUBLIC_BASE,
+  DESIGN_CONCEPT_PUBLIC_BASES,
   assertHumanizerReviewCurrent,
   assertValidV2Config,
   ensureRegularFile,
+  getPackagePublicBase,
   getResumeExperienceSections,
   isMain,
   normalizeText,
@@ -221,8 +222,13 @@ export function runAtsCheck({ configPath, pdfPath }) {
   }
 
   const uris = inspection.annotations.map((annotation) => annotation.uri);
-  const expectedPortfolio = `${PUBLIC_BASE}${config.slug}/`;
-  const portfolioUris = uris.filter((uri) => uri.startsWith(PUBLIC_BASE));
+  const packagePublicBase = getPackagePublicBase(config);
+  const expectedPortfolio = `${packagePublicBase}${config.slug}/`;
+  const portfolioUris = uris.filter((uri) =>
+    DESIGN_CONCEPT_PUBLIC_BASES.some((publicBase) =>
+      uri.startsWith(publicBase)
+    )
+  );
   if (
     portfolioUris.length !== 1 ||
     portfolioUris[0] !== expectedPortfolio

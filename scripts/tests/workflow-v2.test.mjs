@@ -19,6 +19,7 @@ import path from 'node:path';
 import { execFileSync, spawnSync } from 'node:child_process';
 import test from 'node:test';
 import {
+  DESIGN_CONCEPTS,
   RESUME_ROLE_IDS,
   approveHumanizerReview,
   assertBuildAllowed,
@@ -33,6 +34,8 @@ import {
   getResumeExperienceSections,
   getRoutePresentation,
   getArtifactPaths,
+  getPackagePublicBase,
+  getPackageRepository,
   showcaseSectionCopyEntries,
   replaceElementContent,
   replacePortfolioLink,
@@ -683,6 +686,11 @@ test('v2 example satisfies the enforced config contract', () => {
 test('design concepts default historically, require an explicit current choice, and constrain Proof Grid to scoped routes', () => {
   const editorial = validConfig();
   assert.equal(getDesignConceptId(editorial), 'editorial-proof');
+  assert.equal(getPackagePublicBase(editorial), 'https://wallymo.github.io/');
+  assert.equal(
+    getPackageRepository(editorial),
+    'wallymo/wallymo.github.io'
+  );
   assert.match(buildDesignConceptCss(editorial), /Editorial Proof \(editorial-proof\)/);
 
   const historical = structuredClone(editorial);
@@ -717,11 +725,49 @@ test('design concepts default historically, require an explicit current choice, 
 
   const scopedProofGrid = structuredClone(canonicalProofGrid);
   scopedProofGrid.routeMode = 'scoped-projects';
+  assert.equal(
+    getPackagePublicBase(scopedProofGrid),
+    'https://wallymostafa.github.io/'
+  );
+  assert.equal(
+    getPackageRepository(scopedProofGrid),
+    'wallymostafa/wallymostafa.github.io'
+  );
+  assert.notEqual(
+    configInputSha256(scopedProofGrid),
+    configInputSha256(editorial)
+  );
+  assert.equal(
+    humanizerCopySha256(scopedProofGrid),
+    humanizerCopySha256(editorial)
+  );
   assert.doesNotMatch(
     validateV2Config(scopedProofGrid).join('\n'),
     /route\.designConcept/
   );
   assert.deepEqual(schemaErrors(scopedProofGrid), []);
+
+  const conceptRegistry = JSON.parse(
+    readFileSync(
+      path.join(repoRoot, 'concepts', 'portfolio-concepts.json'),
+      'utf8'
+    )
+  );
+  assert.deepEqual(
+    conceptRegistry.concepts.map(({ id }) => id),
+    Object.keys(DESIGN_CONCEPTS)
+  );
+  for (const concept of conceptRegistry.concepts) {
+    assert.equal(DESIGN_CONCEPTS[concept.id].publicUrl, concept.publicUrl);
+    assert.equal(DESIGN_CONCEPTS[concept.id].repository, concept.repository);
+  }
+
+  const proofGridLetter = structuredClone(scopedProofGrid);
+  setFit(proofGridLetter, 'adjacent');
+  assert.match(
+    buildCoverLetterHtml(proofGridLetter, getArtifactPaths(proofGridLetter)),
+    /href="https:\/\/wallymostafa\.github\.io\/company-role\/">Portfolio<\/a>/
+  );
 });
 
 test('Proof Grid snapshots both source skins and stamps route-local homepage and project HTML', () => {
@@ -742,6 +788,10 @@ test('Proof Grid snapshots both source skins and stamps route-local homepage and
       routeHtml,
       /<link\b(?=[^>]*\bhref="design-concept\.css")(?=[^>]*\bdata-design-concept-stylesheet\b)[^>]*>/
     );
+    assert.match(
+      routeHtml,
+      /<meta property="og:url" content="https:\/\/wallymostafa\.github\.io\/workflow-v2-fixture\/">/
+    );
 
     const titles = new Map(
       config.selectedProjects.map((project) => [project, project])
@@ -758,6 +808,10 @@ test('Proof Grid snapshots both source skins and stamps route-local homepage and
       /<html\b(?=[^>]*\bclass="[^"]*\bproof-grid-case-study\b)(?=[^>]*\bdata-design-concept="proof-grid")[^>]*>/
     );
     assert.match(projectHtml, /href="design-concept\.css"/);
+    assert.match(
+      projectHtml,
+      /<meta property="og:url" content="https:\/\/wallymostafa\.github\.io\/workflow-v2-fixture\/project-01\.html">/
+    );
 
     const snapshotCss = buildDesignConceptCss(config);
     for (const sourceFile of ['homepage.css', 'case-study.css']) {
@@ -4132,7 +4186,7 @@ test(
       );
       assert.match(
         redirectHtml,
-        /<link rel="canonical" href="https:\/\/wallymo\.github\.io\/scoped-fixture\/project-02\.html">/
+        /<link rel="canonical" href="https:\/\/wallymostafa\.github\.io\/scoped-fixture\/project-02\.html">/
       );
       assert.match(redirectHtml, /<meta property="og:title" content="[^"]+">/);
       assert.match(
@@ -4141,7 +4195,7 @@ test(
       );
       assert.match(
         redirectHtml,
-        /<meta property="og:url" content="https:\/\/wallymo\.github\.io\/scoped-fixture\/project-02\.html">/
+        /<meta property="og:url" content="https:\/\/wallymostafa\.github\.io\/scoped-fixture\/project-02\.html">/
       );
       assert.match(
         redirectHtml,
@@ -4198,7 +4252,7 @@ test(
         assert.match(
           html,
           new RegExp(
-            `<meta property="og:url" content="https://wallymo.github.io/scoped-fixture/${project}">`
+            `<meta property="og:url" content="https://wallymostafa.github.io/scoped-fixture/${project}">`
           )
         );
         const projectNavigation = html.match(
@@ -4288,6 +4342,13 @@ test(
         }
       }
       const savedConfig = JSON.parse(readFileSync(configPath, 'utf8'));
+      assert.ok(
+        savedConfig.qa.ats.annotations.some(
+          (annotation) =>
+            annotation.uri ===
+            'https://wallymostafa.github.io/scoped-fixture/'
+        )
+      );
       assert.equal(savedConfig.qa.route.errors.length, 0);
       assert.equal(savedConfig.qa.route.viewports.length, 10);
       assert.equal(
@@ -4365,6 +4426,14 @@ test(
             'utf8'
           )
         );
+        assert.equal(
+          manifest.packages[0].publicBase,
+          'https://wallymostafa.github.io/'
+        );
+        assert.equal(
+          manifest.packages[0].publishRepository,
+          'wallymostafa/wallymostafa.github.io'
+        );
         const liveProof = await fetchPublishedArtifacts(
           manifest.packages[0],
           savedConfig,
@@ -4390,6 +4459,11 @@ test(
         assert.equal(
           liveProof.designConceptCssUrl,
           `${fixtureServer.publicBase}scoped-fixture/design-concept.css`
+        );
+        assert.equal(liveProof.publicBase, fixtureServer.publicBase);
+        assert.equal(
+          liveProof.publishRepository,
+          'wallymostafa/wallymostafa.github.io'
         );
         assert.match(liveProof.designConceptCssSha256, /^[a-f0-9]{64}$/);
         corruptDesignConceptCss = true;
@@ -4805,6 +4879,14 @@ test(
       );
       assert.equal(manifest.packages[0].workflowVersion, 2);
       assert.equal(manifest.packages[0].designConcept, 'editorial-proof');
+      assert.equal(
+        manifest.packages[0].publicBase,
+        'https://wallymo.github.io/'
+      );
+      assert.equal(
+        manifest.packages[0].publishRepository,
+        'wallymo/wallymo.github.io'
+      );
       assert.equal(
         manifest.packages[0].designConceptCssPath,
         'workflow-v2-fixture/design-concept.css'

@@ -3,10 +3,11 @@
 import { readFileSync } from 'node:fs';
 import { execFileSync } from 'node:child_process';
 import {
-  PUBLIC_BASE,
   RESUME_BASE_PROFILES_PATH,
   WORKFLOW_VERSION,
   getArtifactPaths,
+  getPackagePublicBase,
+  getPackageRepository,
   hasCoverLetterArtifact,
   isMain,
   readJson,
@@ -76,10 +77,13 @@ export function assertChecksum(label, localBuffer, liveBuffer) {
 export async function fetchPublishedArtifacts(
   pkg,
   config,
-  { publicBase = PUBLIC_BASE } = {}
+  { publicBase } = {}
 ) {
   const paths = getArtifactPaths(config);
-  const base = publicBase.endsWith('/') ? publicBase : `${publicBase}/`;
+  const resolvedPublicBase = publicBase || getPackagePublicBase(config);
+  const base = resolvedPublicBase.endsWith('/')
+    ? resolvedPublicBase
+    : `${resolvedPublicBase}/`;
   const routeUrl = `${base}${paths.slug}/`;
   const designConceptCssUrl = `${base}${paths.designConceptCssPath}`;
   const resumePdfUrl = `${base}${paths.resumePdfPath}`;
@@ -236,6 +240,12 @@ export async function fetchPublishedArtifacts(
     resumePdfUrl,
     configUrl,
     ...(config.route?.designConcept
+      ? {
+          publicBase: base,
+          publishRepository: getPackageRepository(config),
+        }
+      : {}),
+    ...(config.route?.designConcept
       ? { designConceptCssUrl, designConceptCssSha256 }
       : {}),
     projectUrls,
@@ -260,7 +270,7 @@ export async function fetchPublishedArtifacts(
   };
 }
 
-export async function verifyTailoredRoute(slug, { publicBase = PUBLIC_BASE } = {}) {
+export async function verifyTailoredRoute(slug, { publicBase } = {}) {
   const manifest = readManifest();
   const normalizedSlug = slug.replace(/^\/+|\/+$/g, '');
   const index = manifest.packages.findIndex((pkg) => pkg.slug === normalizedSlug);
@@ -318,6 +328,9 @@ async function main() {
   console.log(`OK live route: ${result.routeUrl}`);
   if (result.designConceptCssUrl) {
     console.log(`OK live design-concept CSS: ${result.designConceptCssUrl}`);
+  }
+  if (result.publishRepository) {
+    console.log(`OK publish repository: ${result.publishRepository}`);
   }
   console.log(`OK live resume PDF: ${result.resumePdfUrl}`);
   if (result.coverLetterPdfUrl) {

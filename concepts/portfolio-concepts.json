@@ -6,6 +6,10 @@
       "name": "Editorial Proof",
       "role": "control",
       "publicUrl": "https://wallymo.github.io/",
+      "repository": "wallymo/wallymo.github.io",
+      "homepageClass": "editorial-proof-homepage",
+      "projectClass": "editorial-proof-case-study",
+      "cssSources": [],
       "preservedGitTag": "portfolio-concept/editorial-proof-v1",
       "preservedCommit": "ddc69d9a01d5bb7a4e949bd23cdf384b7e79ddd7"
     },
@@ -13,7 +17,14 @@
       "id": "proof-grid",
       "name": "Proof Grid",
       "role": "challenger",
-      "publicUrl": "https://wallymo.github.io/proof-grid/",
+      "publicUrl": "https://wallymostafa.github.io/",
+      "repository": "wallymostafa/wallymostafa.github.io",
+      "homepageClass": "proof-grid-homepage",
+      "projectClass": "proof-grid-case-study",
+      "cssSources": [
+        "concepts/proof-grid/homepage.css",
+        "concepts/proof-grid/case-study.css"
+      ],
       "compatibilityUrl": "https://wallymo.github.io/concepts/proof-grid/",
       "preservedGitTag": "portfolio-concept/proof-grid-v1",
       "sourcePath": "concepts/proof-grid/"

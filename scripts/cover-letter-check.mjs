@@ -3,10 +3,11 @@
 import { execFileSync } from 'node:child_process';
 import { statSync } from 'node:fs';
 import {
-  PUBLIC_BASE,
+  DESIGN_CONCEPT_PUBLIC_BASES,
   assertHumanizerReviewCurrent,
   assertValidV2Config,
   ensureRegularFile,
+  getPackagePublicBase,
   hasCoverLetterArtifact,
   isMain,
   normalizeText,
@@ -203,9 +204,21 @@ export function runCoverLetterCheck({ configPath, pdfPath }) {
   }
 
   const uris = inspection.annotations.map((annotation) => annotation.uri);
-  const expectedPortfolio = `${PUBLIC_BASE}${config.slug}/`;
-  if (!uris.includes(expectedPortfolio)) {
-    failures.push(`Cover-letter Portfolio link must point to ${expectedPortfolio}`);
+  const expectedPortfolio = `${getPackagePublicBase(config)}${config.slug}/`;
+  const portfolioUris = uris.filter((uri) =>
+    DESIGN_CONCEPT_PUBLIC_BASES.some((publicBase) =>
+      uri.startsWith(publicBase)
+    )
+  );
+  if (
+    portfolioUris.length !== 1 ||
+    portfolioUris[0] !== expectedPortfolio
+  ) {
+    failures.push(
+      `Cover-letter Portfolio annotations must point exclusively to ${expectedPortfolio}; found ${
+        portfolioUris.join(', ') || '<none>'
+      }`
+    );
   }
   if (!uris.includes('https://linkedin.com/in/wallymo')) {
     failures.push('Cover-letter LinkedIn annotation is missing or incorrect');

@@ -4,7 +4,6 @@ import { existsSync, readFileSync, readdirSync, statSync } from 'node:fs';
 import { execFileSync } from 'node:child_process';
 import path from 'node:path';
 import {
-  PUBLIC_BASE,
   RESUME_BASE_PROFILES_PATH,
   WORKFLOW_VERSION,
   assertRecruiterFacingClaimsSupported,
@@ -12,6 +11,8 @@ import {
   getArtifactPaths,
   getDesignConcept,
   getDesignConceptId,
+  getPackagePublicBase,
+  getPackageRepository,
   hasCoverLetterArtifact,
   isMain,
   readManifest,
@@ -182,7 +183,11 @@ function validateLiveVerification(
     requiredVerificationFields.push('resumeBaseProfilesUrl');
   }
   if (config.route?.designConcept) {
-    requiredVerificationFields.push('designConceptCssUrl');
+    requiredVerificationFields.push(
+      'designConceptCssUrl',
+      'publicBase',
+      'publishRepository'
+    );
   }
   for (const field of requiredVerificationFields) {
     if (typeof verification[field] !== 'string' || !verification[field]) {
@@ -294,6 +299,18 @@ function validateLiveVerification(
   }
   if (
     config.route?.designConcept &&
+    verification.publicBase !== base
+  ) {
+    failures.push(`${pkg.slug} verification public base is incorrect`);
+  }
+  if (
+    config.route?.designConcept &&
+    verification.publishRepository !== getPackageRepository(config)
+  ) {
+    failures.push(`${pkg.slug} verification publish repository is incorrect`);
+  }
+  if (
+    config.route?.designConcept &&
     verification.designConceptCssUrl !== expectedDesignConceptCssUrl
   ) {
     failures.push(`${pkg.slug} verification design-concept CSS URL is incorrect`);
@@ -331,7 +348,13 @@ function validateLiveVerification(
   }
 }
 
-function validateScopedProjects(config, paths, routeHtml, failures) {
+function validateScopedProjects(
+  config,
+  paths,
+  routeHtml,
+  failures,
+  publicBase
+) {
   const workNumbers = extractWorkCardNumbers(routeHtml);
   const scopedProjects = scopedProjectEntries(config);
   for (const [index, { source, output }] of scopedProjects.entries()) {
@@ -378,7 +401,7 @@ function validateScopedProjects(config, paths, routeHtml, failures) {
       failures.push(`${projectPath} does not return to the route work section`);
     }
     if (config.route?.projectAliases?.[source]) {
-      const expectedOgUrl = `${PUBLIC_BASE}${paths.slug}/${output}`;
+      const expectedOgUrl = `${publicBase}${paths.slug}/${output}`;
       if (
         !projectHtml.includes(
           `<meta property="og:url" content="${expectedOgUrl}">`
@@ -397,7 +420,7 @@ function validateScopedProjects(config, paths, routeHtml, failures) {
   }
 }
 
-function validateScopedProjectRedirects(config, paths, failures) {
+function validateScopedProjectRedirects(config, paths, failures, publicBase) {
   for (const { source, target } of scopedProjectRedirectEntries(config)) {
     const redirectPath = `${paths.slug}/${source}`;
     if (!existsSync(resolveRepoPath(redirectPath))) {
@@ -405,7 +428,7 @@ function validateScopedProjectRedirects(config, paths, failures) {
       continue;
     }
     const redirectHtml = readFileSync(resolveRepoPath(redirectPath), 'utf8');
-    const canonicalUrl = `${PUBLIC_BASE}${paths.slug}/${target}`;
+    const canonicalUrl = `${publicBase}${paths.slug}/${target}`;
     const expectedMarkers = [
       '<meta name="robots" content="noindex">',
       '<meta property="og:title" content="',
@@ -423,7 +446,7 @@ function validateScopedProjectRedirects(config, paths, failures) {
   }
 }
 
-function checkV2Package(pkg, { publicBase = PUBLIC_BASE } = {}) {
+function checkV2Package(pkg, { publicBase } = {}) {
   const failures = [];
   const warnings = [];
   if (!pkg.configPath || !existsSync(resolveRepoPath(pkg.configPath))) {
@@ -461,6 +484,10 @@ function checkV2Package(pkg, { publicBase = PUBLIC_BASE } = {}) {
     failures.push(error.message);
     return { failures, warnings };
   }
+  const resolvedPublicBase = publicBase || getPackagePublicBase(config);
+  const packagePublicBase = resolvedPublicBase.endsWith('/')
+    ? resolvedPublicBase
+    : `${resolvedPublicBase}/`;
   const paths = getArtifactPaths(config);
   const expectedFields = {
     slug: paths.slug,
@@ -473,6 +500,8 @@ function checkV2Package(pkg, { publicBase = PUBLIC_BASE } = {}) {
       ? {
           designConcept: getDesignConceptId(config),
           designConceptCssPath: paths.designConceptCssPath,
+          publicBase: getPackagePublicBase(config),
+          publishRepository: getPackageRepository(config),
         }
       : {}),
     ...(config.contractRevision === 7
@@ -672,8 +701,19 @@ function checkV2Package(pkg, { publicBase = PUBLIC_BASE } = {}) {
       }
     }
   } else {
-    validateScopedProjects(config, paths, routeHtml, failures);
-    validateScopedProjectRedirects(config, paths, failures);
+    validateScopedProjects(
+      config,
+      paths,
+      routeHtml,
+      failures,
+      packagePublicBase
+    );
+    validateScopedProjectRedirects(
+      config,
+      paths,
+      failures,
+      packagePublicBase
+    );
     const expectedScopedProjectFiles = [
       ...scopedProjectEntries(config).map(({ output }) => output),
       ...scopedProjectRedirectEntries(config).map(({ source }) => source),
@@ -726,7 +766,13 @@ function checkV2Package(pkg, { publicBase = PUBLIC_BASE } = {}) {
     warnings.push(`${pkg.slug} is local-only but scoped files are clean`);
   }
   if (pkg.publishStatus === 'live-verified') {
-    validateLiveVerification(pkg, config, paths, failures, publicBase);
+    validateLiveVerification(
+      pkg,
+      config,
+      paths,
+      failures,
+      packagePublicBase
+    );
   } else if (pkg.verification !== undefined) {
     failures.push(`${pkg.slug} local-only package must not retain verification metadata`);
   }
@@ -750,7 +796,7 @@ function checkLegacyPackage(pkg) {
 export function checkPackages({
   slug = null,
   includeLegacy = false,
-  publicBase = PUBLIC_BASE,
+  publicBase,
 } = {}) {
   const manifest = readManifest();
   if (manifest.schemaVersion !== 2) {

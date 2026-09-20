@@ -18,6 +18,8 @@ In curated mode only, a foundation role may be split into two to eight per-emplo
 
 New packages use `route.presentation: "showcase"`, `route.heroIntent: "resume-support"`, and `routeMode: "scoped-projects"` by default. The route should read as a quiet, employer-specific exhibit of relevant work rather than a second positioning pitch. Its hero supports the resume: it briefly introduces recent work that may be relevant to the role without restating the resume case, stacking proof points, or promising what the candidate would bring. The intent field is required when a showcase package is newly built or intentionally rebuilt, so copy approved under the older sales-oriented hero policy cannot be reused without a fresh pass. New package templates explicitly set `route.showcaseSections: ["chapters", "capabilities"]`, retaining the homepage's three career chapters immediately after selected work and the Capabilities section on every route. Review both inherited sections through the humanizer and claim gates; changes to their visible or accessible copy invalidate the copy approval. How I Build, the legacy career arc, and the "Also from this period" strip are omitted unless selected. `route.showcaseSections` accepts `chapters`, `how-i-build`, `capabilities`, and legacy `arc`, but every new or rebuilt showcase must include both `chapters` and `capabilities`; only optional listed sections and their nav links remain beyond those two. Existing configurations keep their published state until intentionally rebuilt, at which point the current builder requires both sections. A missing unselected optional section is harmless; a missing required or explicitly retained section fails the build. Scoped case-study pages keep every card, in-body project link, logo, all-work link, and previous/next link inside the employer-specific route. A showcase package using `canonical-projects` is invalid. Set `route.presentation` to `full` explicitly only when the fuller homepage narrative is intentionally required; existing packages are not migrated automatically. Optional `route.workHeading` and `route.contactHeading` replace the work-section and contact-section headings; both are authored copy and go through the humanizer and claim gates. Showcase mode reduces the contact section to its heading and links, omitting the section label and the `contact.prompt` subtitle; the prompt stays required because full-presentation routes and the copy gates still use it.
 
+Every new or rebuilt package also sets `route.designConcept`. Editorial Proof (`editorial-proof`) publishes to `wallymo/wallymo.github.io` at `https://wallymo.github.io/`. Proof Grid (`proof-grid`) requires scoped project pages and publishes to `wallymostafa/wallymostafa.github.io` at `https://wallymostafa.github.io/`. The concept registry is authoritative for the public root and repository; generated route metadata, resume and cover-letter links, manifest records, package checks, application readiness, and live verification must resolve the same target. Historical configs without the field continue to resolve to Editorial Proof.
+
 Revision 5 also separates package QA from submission readiness. A built package can pass locally, but it is not submission-ready until the live form, uploaded file, parsed fields, screening answers, identity consistency, duplicates, and platform notices have been checked.
 
 Revision 6 removes the cover-letter handoff gap. When the fit gate marks the bridge `recommended`, the config must include the evidence-backed letter and the builder creates its PDF and Markdown with the resume package. Every new or intentionally rebuilt letter uses the locked `real-chemistry-21grams-v1` template in `scripts/lib/cover-letter-template.mjs`, based on the approved Real Chemistry/21GRAMS letter. The role changes the words, not the visual system: Syne display type, Instrument Sans body type, a centered identity block, thin black rule, and fixed Letter margins remain constant. The renderer waits for the bundled fonts before printing, and QA rejects visual-template drift. The workflow also inspects the one-page PDF, removes the temporary HTML, records artifact checksums, and includes both files in live verification. A `not-needed` package skips the letter unless the human explicitly asks for one. A `not-credible` package cannot create one.
@@ -68,15 +70,23 @@ The PDF preflight confirms that the tailored summary and selected skills extract
 
 ## Publish and verify
 
-Stage only the current package's route, scoped project pages when present, config, resume PDF, conditional cover-letter PDF and Markdown, and manifest entry. After committing and pushing:
+Commit the built package in the workflow source repository. When the manifest's `publishRepository` is a separate checkout, stage the verifier-required public files into that checkout:
+
+```bash
+node scripts/stage-tailored-package.mjs \
+  --config scripts/packages/<slug>.json \
+  --target-root /absolute/path/to/the/publish-checkout
+```
+
+The stager copies only the route, package-local design CSS, resume, conditional cover letter, public config, Revision 7 resume-base registry, and scoped replacement assets. It validates the target GitHub remote and refuses unrelated dirty files or differing artifacts unless an intentional rebuild is reviewed and rerun with `--overwrite`. Commit and push the staged files in the registered publish repository. After that repository deploys:
 
 ```bash
 node scripts/verify-tailored-route.mjs <slug>
 ```
 
-The verifier requires clean scoped files, checks the live resume-base registry for Revision 7, then checks route, project, resume PDF, config, and conditional cover-letter responses, compares the local and live checksums, and updates the manifest to `live-verified`.
+The verifier resolves the package's concept-specific public root, requires clean scoped files, checks the live resume-base registry for Revision 7, then checks route, project, design-concept CSS, resume PDF, config, and conditional cover-letter responses. It compares local and live checksums, records the public root and publish repository, and updates the manifest to `live-verified`.
 
-The verification update intentionally dirties `scripts/tailored-packages.json`. Commit and push that verification-only manifest change as the final publication record.
+The verification update intentionally dirties `scripts/tailored-packages.json` in the workflow source checkout. Commit and push that verification-only manifest change there as the final publication record; the publish repository remains a minimal public artifact mirror.
 
 ## Complete the submission gate
 

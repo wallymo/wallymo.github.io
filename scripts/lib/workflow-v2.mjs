@@ -24,26 +24,57 @@ const FLEXIBLE_POSITIONING_REVISIONS = new Set([5, 6, 7]);
 export const SHOWCASE_SECTION_IDS = ['chapters', 'how-i-build', 'capabilities', 'arc'];
 export const CAPABILITY_LANE_IDS = ['discover', 'design', 'build', 'lead'];
 export const DEFAULT_DESIGN_CONCEPT_ID = 'editorial-proof';
-export const DESIGN_CONCEPTS = Object.freeze({
-  'editorial-proof': Object.freeze({
-    id: 'editorial-proof',
-    name: 'Editorial Proof',
-    homepageClass: 'editorial-proof-homepage',
-    projectClass: 'editorial-proof-case-study',
-    cssSources: Object.freeze([]),
-  }),
-  'proof-grid': Object.freeze({
-    id: 'proof-grid',
-    name: 'Proof Grid',
-    homepageClass: 'proof-grid-homepage',
-    projectClass: 'proof-grid-case-study',
-    cssSources: Object.freeze([
-      'concepts/proof-grid/homepage.css',
-      'concepts/proof-grid/case-study.css',
-    ]),
-  }),
-});
+const designConceptRegistry = JSON.parse(
+  readFileSync(
+    path.resolve(defaultRepoRoot, 'concepts', 'portfolio-concepts.json'),
+    'utf8'
+  )
+);
+if (
+  designConceptRegistry.schemaVersion !== 1 ||
+  !Array.isArray(designConceptRegistry.concepts)
+) {
+  throw new Error('Invalid concepts/portfolio-concepts.json registry');
+}
+const designConceptRegistryIds = designConceptRegistry.concepts.map(
+  (concept) => concept?.id
+);
+if (
+  new Set(designConceptRegistryIds).size !== designConceptRegistryIds.length ||
+  designConceptRegistry.concepts.some(
+    (concept) =>
+      !concept ||
+      typeof concept.id !== 'string' ||
+      typeof concept.name !== 'string' ||
+      !/^https:\/\/[^/]+\/$/.test(concept.publicUrl || '') ||
+      !/^[^/]+\/[^/]+$/.test(concept.repository || '') ||
+      typeof concept.homepageClass !== 'string' ||
+      typeof concept.projectClass !== 'string' ||
+      !Array.isArray(concept.cssSources)
+  )
+) {
+  throw new Error('Invalid design concept entry in concepts/portfolio-concepts.json');
+}
+export const DESIGN_CONCEPTS = Object.freeze(
+  Object.fromEntries(
+    designConceptRegistry.concepts.map((concept) => [
+      concept.id,
+      Object.freeze({
+        ...concept,
+        cssSources: Object.freeze([...(concept.cssSources || [])]),
+      }),
+    ])
+  )
+);
 export const DESIGN_CONCEPT_IDS = Object.freeze(Object.keys(DESIGN_CONCEPTS));
+export const DESIGN_CONCEPT_PUBLIC_BASES = Object.freeze([
+  ...new Set(Object.values(DESIGN_CONCEPTS).map((concept) => concept.publicUrl)),
+]);
+if (!DESIGN_CONCEPTS[DEFAULT_DESIGN_CONCEPT_ID]) {
+  throw new Error(
+    `Missing default design concept: ${DEFAULT_DESIGN_CONCEPT_ID}`
+  );
+}
 
 export function getDesignConceptId(config) {
   return config?.route?.designConcept || DEFAULT_DESIGN_CONCEPT_ID;
@@ -56,6 +87,14 @@ export function getDesignConcept(config) {
     throw new Error(`Unknown design concept: ${conceptId}`);
   }
   return concept;
+}
+
+export function getPackagePublicBase(config) {
+  return getDesignConcept(config).publicUrl;
+}
+
+export function getPackageRepository(config) {
+  return getDesignConcept(config).repository;
 }
 
 export function buildDesignConceptCss(config) {
@@ -88,7 +127,7 @@ const RESUME_COMPOSITION_MODES = new Set([
   'profile-complete',
   'hybrid-selective',
 ]);
-export const PUBLIC_BASE = 'https://wallymo.github.io/';
+export const PUBLIC_BASE = DESIGN_CONCEPTS[DEFAULT_DESIGN_CONCEPT_ID].publicUrl;
 export const RESUME_FOUNDATION_PATH = 'scripts/resume-foundation.json';
 export const RESUME_BASE_PROFILES_PATH =
   'scripts/resume-base-profiles.json';
@@ -3370,6 +3409,8 @@ export function upsertV2ManifestEntry(config, qa = {}) {
       : {}),
     routeMode: config.routeMode,
     designConcept: getDesignConceptId(config),
+    publicBase: getPackagePublicBase(config),
+    publishRepository: getPackageRepository(config),
     selectedProjects: config.selectedProjects,
     designConceptCssPath: paths.designConceptCssPath,
     resumePdfPath: paths.resumePdfPath,

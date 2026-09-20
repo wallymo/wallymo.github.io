@@ -12,7 +12,6 @@ import {
 } from 'node:fs';
 import path from 'node:path';
 import {
-  PUBLIC_BASE,
   WORKFLOW_VERSION,
   bridgeRequiresCoverLetter,
   findManifestPackage,
@@ -1136,7 +1135,7 @@ export function applicationDuplicateStatus(
 
 export async function prepareApplication(
   options,
-  { publicBase = PUBLIC_BASE } = {}
+  { publicBase } = {}
 ) {
   requireFields(options, [
     'package',
@@ -1417,7 +1416,7 @@ export async function prepareApplication(
 
 export async function recordApplication(
   options,
-  { publicBase = PUBLIC_BASE } = {}
+  { publicBase } = {}
 ) {
   requireFields(options, ['package', 'confirmation', 'appliedAt']);
   assertIso(options.appliedAt, '--applied-at');

@@ -1,7 +1,7 @@
 import { pathToFileURL } from 'node:url';
 import {
-  PUBLIC_BASE,
   escapeHtml,
+  getPackagePublicBase,
   resolveRepoPath,
 } from './workflow-v2.mjs';
 
@@ -18,7 +18,7 @@ export function formatCoverLetterDate(value) {
 }
 
 export function buildCoverLetterMarkdown(config, paths) {
-  const routeUrl = `${PUBLIC_BASE}${paths.slug}/`;
+  const routeUrl = `${getPackagePublicBase(config)}${paths.slug}/`;
   const letter = config.coverLetter;
   return [
     '# Wally Mostafa',
@@ -39,7 +39,7 @@ export function buildCoverLetterMarkdown(config, paths) {
 }
 
 export function buildCoverLetterHtml(config, paths) {
-  const routeUrl = `${PUBLIC_BASE}${paths.slug}/`;
+  const routeUrl = `${getPackagePublicBase(config)}${paths.slug}/`;
   const letter = config.coverLetter;
   const instrumentSansUrl = pathToFileURL(
     resolveRepoPath(
