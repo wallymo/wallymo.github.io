@@ -4,10 +4,10 @@ import { execFileSync } from 'node:child_process';
 import { existsSync, statSync } from 'node:fs';
 import path from 'node:path';
 import {
-  DESIGN_CONCEPT_PUBLIC_BASES,
   assertHumanizerReviewCurrent,
   assertValidV2Config,
   ensureRegularFile,
+  getDesignConceptPublicBases,
   getPackagePublicBase,
   getResumeExperienceSections,
   isMain,
@@ -225,7 +225,7 @@ export function runAtsCheck({ configPath, pdfPath }) {
   const packagePublicBase = getPackagePublicBase(config);
   const expectedPortfolio = `${packagePublicBase}${config.slug}/`;
   const portfolioUris = uris.filter((uri) =>
-    DESIGN_CONCEPT_PUBLIC_BASES.some((publicBase) =>
+    getDesignConceptPublicBases().some((publicBase) =>
       uri.startsWith(publicBase)
     )
   );

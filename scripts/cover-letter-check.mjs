@@ -3,10 +3,10 @@
 import { execFileSync } from 'node:child_process';
 import { statSync } from 'node:fs';
 import {
-  DESIGN_CONCEPT_PUBLIC_BASES,
   assertHumanizerReviewCurrent,
   assertValidV2Config,
   ensureRegularFile,
+  getDesignConceptPublicBases,
   getPackagePublicBase,
   hasCoverLetterArtifact,
   isMain,
@@ -206,7 +206,7 @@ export function runCoverLetterCheck({ configPath, pdfPath }) {
   const uris = inspection.annotations.map((annotation) => annotation.uri);
   const expectedPortfolio = `${getPackagePublicBase(config)}${config.slug}/`;
   const portfolioUris = uris.filter((uri) =>
-    DESIGN_CONCEPT_PUBLIC_BASES.some((publicBase) =>
+    getDesignConceptPublicBases().some((publicBase) =>
       uri.startsWith(publicBase)
     )
   );

@@ -78,7 +78,7 @@ node scripts/stage-tailored-package.mjs \
   --target-root /absolute/path/to/the/publish-checkout
 ```
 
-The stager copies only the route, package-local design CSS, resume, conditional cover letter, public config, Revision 7 resume-base registry, and scoped replacement assets. It validates the target GitHub remote and refuses unrelated dirty files or differing artifacts unless an intentional rebuild is reviewed and rerun with `--overwrite`. Commit and push the staged files in the registered publish repository. After that repository deploys:
+The stager copies only the declared route pages, package-local design CSS, resume, conditional cover letter, public config, Revision 7 resume-base registry, scoped replacement assets, and the local asset dependency closure referenced by those files. It fails on missing local references, refuses source or target paths with symlinked ancestors, re-crawls the staged target, and writes `.portfolio-deployments/<slug>.json` as the deterministic ownership and checksum record. It excludes undeclared route files, validates the exact `github.com` target remote, and refuses unrelated dirty files, differing artifacts, or retired package-owned files unless an intentional rebuild is reviewed and rerun with `--overwrite`. Every target mutation is backed up before copying; a failed copy, retirement, record write, or post-stage verification rolls the checkout back, while successful retirement keeps a temporary recovery backup. Commit and push the staged files in the registered publish repository. After that repository deploys:
 
 ```bash
 node scripts/verify-tailored-route.mjs <slug>

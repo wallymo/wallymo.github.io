@@ -24,57 +24,78 @@ const FLEXIBLE_POSITIONING_REVISIONS = new Set([5, 6, 7]);
 export const SHOWCASE_SECTION_IDS = ['chapters', 'how-i-build', 'capabilities', 'arc'];
 export const CAPABILITY_LANE_IDS = ['discover', 'design', 'build', 'lead'];
 export const DEFAULT_DESIGN_CONCEPT_ID = 'editorial-proof';
-const designConceptRegistry = JSON.parse(
-  readFileSync(
-    path.resolve(defaultRepoRoot, 'concepts', 'portfolio-concepts.json'),
-    'utf8'
-  )
-);
-if (
-  designConceptRegistry.schemaVersion !== 1 ||
-  !Array.isArray(designConceptRegistry.concepts)
-) {
-  throw new Error('Invalid concepts/portfolio-concepts.json registry');
+const designConceptRegistryCache = new Map();
+
+export function getDesignConcepts() {
+  const repoRoot = getRepoRoot();
+  const registryPath = path.resolve(
+    repoRoot,
+    'concepts',
+    'portfolio-concepts.json'
+  );
+  if (designConceptRegistryCache.has(registryPath)) {
+    return designConceptRegistryCache.get(registryPath);
+  }
+  const registry = JSON.parse(readFileSync(registryPath, 'utf8'));
+  if (registry.schemaVersion !== 1 || !Array.isArray(registry.concepts)) {
+    throw new Error('Invalid concepts/portfolio-concepts.json registry');
+  }
+  const registryIds = registry.concepts.map((concept) => concept?.id);
+  if (
+    new Set(registryIds).size !== registryIds.length ||
+    registry.concepts.some(
+      (concept) =>
+        !concept ||
+        typeof concept.id !== 'string' ||
+        typeof concept.name !== 'string' ||
+        !/^https:\/\/[^/]+\/$/.test(concept.publicUrl || '') ||
+        !/^[^/]+\/[^/]+$/.test(concept.repository || '') ||
+        typeof concept.homepageClass !== 'string' ||
+        typeof concept.projectClass !== 'string' ||
+        !Array.isArray(concept.cssSources)
+    )
+  ) {
+    throw new Error(
+      'Invalid design concept entry in concepts/portfolio-concepts.json'
+    );
+  }
+  const concepts = Object.freeze(
+    Object.fromEntries(
+      registry.concepts.map((concept) => [
+        concept.id,
+        Object.freeze({
+          ...concept,
+          cssSources: Object.freeze([...(concept.cssSources || [])]),
+        }),
+      ])
+    )
+  );
+  if (!concepts[DEFAULT_DESIGN_CONCEPT_ID]) {
+    throw new Error(
+      `Missing default design concept: ${DEFAULT_DESIGN_CONCEPT_ID}`
+    );
+  }
+  designConceptRegistryCache.set(registryPath, concepts);
+  return concepts;
 }
-const designConceptRegistryIds = designConceptRegistry.concepts.map(
-  (concept) => concept?.id
-);
-if (
-  new Set(designConceptRegistryIds).size !== designConceptRegistryIds.length ||
-  designConceptRegistry.concepts.some(
-    (concept) =>
-      !concept ||
-      typeof concept.id !== 'string' ||
-      typeof concept.name !== 'string' ||
-      !/^https:\/\/[^/]+\/$/.test(concept.publicUrl || '') ||
-      !/^[^/]+\/[^/]+$/.test(concept.repository || '') ||
-      typeof concept.homepageClass !== 'string' ||
-      typeof concept.projectClass !== 'string' ||
-      !Array.isArray(concept.cssSources)
-  )
-) {
-  throw new Error('Invalid design concept entry in concepts/portfolio-concepts.json');
+
+export function getDesignConceptIds() {
+  return Object.keys(getDesignConcepts());
 }
-export const DESIGN_CONCEPTS = Object.freeze(
-  Object.fromEntries(
-    designConceptRegistry.concepts.map((concept) => [
-      concept.id,
-      Object.freeze({
-        ...concept,
-        cssSources: Object.freeze([...(concept.cssSources || [])]),
-      }),
-    ])
-  )
-);
+
+export function getDesignConceptPublicBases() {
+  return [
+    ...new Set(
+      Object.values(getDesignConcepts()).map((concept) => concept.publicUrl)
+    ),
+  ];
+}
+
+export const DESIGN_CONCEPTS = getDesignConcepts();
 export const DESIGN_CONCEPT_IDS = Object.freeze(Object.keys(DESIGN_CONCEPTS));
 export const DESIGN_CONCEPT_PUBLIC_BASES = Object.freeze([
   ...new Set(Object.values(DESIGN_CONCEPTS).map((concept) => concept.publicUrl)),
 ]);
-if (!DESIGN_CONCEPTS[DEFAULT_DESIGN_CONCEPT_ID]) {
-  throw new Error(
-    `Missing default design concept: ${DEFAULT_DESIGN_CONCEPT_ID}`
-  );
-}
 
 export function getDesignConceptId(config) {
   return config?.route?.designConcept || DEFAULT_DESIGN_CONCEPT_ID;
@@ -82,7 +103,7 @@ export function getDesignConceptId(config) {
 
 export function getDesignConcept(config) {
   const conceptId = getDesignConceptId(config);
-  const concept = DESIGN_CONCEPTS[conceptId];
+  const concept = getDesignConcepts()[conceptId];
   if (!concept) {
     throw new Error(`Unknown design concept: ${conceptId}`);
   }
@@ -127,7 +148,7 @@ const RESUME_COMPOSITION_MODES = new Set([
   'profile-complete',
   'hybrid-selective',
 ]);
-export const PUBLIC_BASE = DESIGN_CONCEPTS[DEFAULT_DESIGN_CONCEPT_ID].publicUrl;
+export const PUBLIC_BASE = getDesignConcepts()[DEFAULT_DESIGN_CONCEPT_ID].publicUrl;
 export const RESUME_FOUNDATION_PATH = 'scripts/resume-foundation.json';
 export const RESUME_BASE_PROFILES_PATH =
   'scripts/resume-base-profiles.json';
@@ -2125,6 +2146,7 @@ export function validateV2Config(
   { requireCurrentContract = false } = {}
 ) {
   const errors = [];
+  const designConceptIds = getDesignConceptIds();
   const fitClasses = new Set(['strong', 'adjacent', 'stretch', 'not-fit']);
   const routeModes = new Set(['canonical-projects', 'scoped-projects']);
   const evidenceModes = new Set([
@@ -2465,8 +2487,8 @@ export function validateV2Config(
       pushError(
         errors,
         route.designConcept === undefined ||
-          DESIGN_CONCEPT_IDS.includes(route.designConcept),
-        `route.designConcept must be ${DESIGN_CONCEPT_IDS.join(' or ')}`
+          designConceptIds.includes(route.designConcept),
+        `route.designConcept must be ${designConceptIds.join(' or ')}`
       );
       pushError(
         errors,
@@ -2910,7 +2932,7 @@ export function validateV2Config(
       errors,
       route &&
         typeof route === 'object' &&
-        DESIGN_CONCEPT_IDS.includes(route.designConcept),
+        designConceptIds.includes(route.designConcept),
       'route.designConcept must be explicitly set for new or rebuilt packages'
     );
     pushError(

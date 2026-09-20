@@ -527,6 +527,19 @@ function assertDirectorySnapshot(directoryPath, expected) {
   }
 }
 
+function copyDesignConceptRegistry(targetRoot) {
+  const targetPath = path.join(
+    targetRoot,
+    'concepts',
+    'portfolio-concepts.json'
+  );
+  mkdirSync(path.dirname(targetPath), { recursive: true });
+  cpSync(
+    path.join(repoRoot, 'concepts', 'portfolio-concepts.json'),
+    targetPath
+  );
+}
+
 function createBuildFixture({
   slug = 'workflow-v2-fixture',
   artifactStem = 'Workflow-V2-Fixture',
@@ -535,6 +548,7 @@ function createBuildFixture({
   selectedProjects = ['project-01.html', 'project-02.html', 'project-03.html'],
 } = {}) {
   const tempRoot = mkdtempSync(path.join(os.tmpdir(), 'workflow-v2-fixture-'));
+  copyDesignConceptRegistry(tempRoot);
   for (const file of [
     'index.html',
     'resume.html',
@@ -2298,6 +2312,7 @@ test('humanizer review is surface-only, blocks AI tells, and expires after copy 
 test('humanizer CLI records the reviewed copy and builder rejects pending copy', () => {
   const tempRoot = mkdtempSync(path.join(os.tmpdir(), 'humanizer-gate-test-'));
   try {
+    copyDesignConceptRegistry(tempRoot);
     cpSync(path.join(repoRoot, 'index.html'), path.join(tempRoot, 'index.html'));
     mkdirSync(path.join(tempRoot, 'scripts', 'packages'), { recursive: true });
     cpSync(
@@ -2471,6 +2486,7 @@ test('humanizer CLI records the reviewed copy and builder rejects pending copy',
 
     const symlinkRoot = path.join(tempRoot, 'symlink-root');
     const externalPackages = path.join(tempRoot, 'external-packages');
+    copyDesignConceptRegistry(symlinkRoot);
     mkdirSync(path.join(symlinkRoot, 'scripts'), { recursive: true });
     mkdirSync(externalPackages);
     const externalConfigPath = path.join(externalPackages, 'package.json');
@@ -2773,6 +2789,7 @@ test('JSON schema keeps revision 2 valid and enforces current copy review', () =
 test('builder requires the current contract for new and reused packages', () => {
   const tempRoot = mkdtempSync(path.join(os.tmpdir(), 'bridge-contract-test-'));
   try {
+    copyDesignConceptRegistry(tempRoot);
     mkdirSync(path.join(tempRoot, 'scripts', 'packages'), { recursive: true });
     cpSync(
       path.join(repoRoot, 'scripts', 'resume-foundation.json'),
@@ -2910,6 +2927,7 @@ test('unsupported claims are blocked in recruiter-facing route copy', () => {
 test('not-fit builder exits before creating route or PDF files', () => {
   const tempRoot = mkdtempSync(path.join(os.tmpdir(), 'workflow-v2-not-fit-'));
   try {
+    copyDesignConceptRegistry(tempRoot);
     mkdirSync(path.join(tempRoot, 'scripts', 'packages'), { recursive: true });
     cpSync(
       path.join(repoRoot, 'scripts', 'resume-foundation.json'),
@@ -3856,6 +3874,7 @@ test('malformed PDFs fail the ATS preflight while keyword coverage stays advisor
 test('legacy inventory is non-blocking by default', () => {
   const tempRoot = mkdtempSync(path.join(os.tmpdir(), 'workflow-v2-legacy-'));
   try {
+    copyDesignConceptRegistry(tempRoot);
     mkdirSync(path.join(tempRoot, 'scripts'), { recursive: true });
     writeFileSync(
       path.join(tempRoot, 'scripts', 'tailored-packages.json'),
@@ -5176,6 +5195,7 @@ test('new showcase templates retain Chapters and Capabilities in humanizer and c
   const tempRoot = mkdtempSync(path.join(os.tmpdir(), 'workflow-chapter-copy-'));
   const previousRepoRoot = process.env.WORKFLOW_REPO_ROOT;
   try {
+    copyDesignConceptRegistry(tempRoot);
     process.env.WORKFLOW_REPO_ROOT = tempRoot;
     const source = '<section id="chapters"><h2>Three chapters. One through-line.</h2><button aria-label="Read the account chapter">Account Management</button><p>I worked with client teams.</p></section><section id="capabilities"><h2>Where I create leverage.</h2><p>I turn research into product direction.</p></section>';
     writeFileSync(path.join(tempRoot, 'index.html'), source);
