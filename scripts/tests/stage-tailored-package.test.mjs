@@ -75,8 +75,8 @@ function writeMinimalStageSource(sourceRoot, { routeHtml }) {
           {
             id: 'proof-grid',
             name: 'Proof Grid',
-            publicUrl: 'https://wallymostafa.github.io/',
-            repository: 'wallymostafa/wallymostafa.github.io',
+            publicUrl: 'https://wally-mostafa.github.io/',
+            repository: 'wally-mostafa/wally-mostafa.github.io',
             homepageClass: 'proof-grid-homepage',
             projectClass: 'proof-grid-case-study',
             cssSources: ['concepts/proof-grid/homepage.css'],
@@ -121,22 +121,22 @@ function initializeStageTarget(targetRoot, extraPaths = []) {
     'remote',
     'add',
     'origin',
-    'git@github.com:wallymostafa/wallymostafa.github.io.git',
+    'git@github.com:wally-mostafa/wally-mostafa.github.io.git',
   ]);
 }
 
 test('GitHub remote URLs normalize to owner/repository', () => {
   assert.equal(
     githubRepositoryFromRemote(
-      'https://github.com/wallymostafa/wallymostafa.github.io.git'
+      'https://github.com/wally-mostafa/wally-mostafa.github.io.git'
     ),
-    'wallymostafa/wallymostafa.github.io'
+    'wally-mostafa/wally-mostafa.github.io'
   );
   assert.equal(
     githubRepositoryFromRemote(
-      'git@github.com:wallymostafa/wallymostafa.github.io.git'
+      'git@github.com:wally-mostafa/wally-mostafa.github.io.git'
     ),
-    'wallymostafa/wallymostafa.github.io'
+    'wally-mostafa/wally-mostafa.github.io'
   );
   assert.equal(
     githubRepositoryFromRemote('https://example.com/owner/repository.git'),
@@ -144,13 +144,13 @@ test('GitHub remote URLs normalize to owner/repository', () => {
   );
   assert.equal(
     githubRepositoryFromRemote(
-      'git@notgithub.com:wallymostafa/wallymostafa.github.io.git'
+      'git@notgithub.com:wally-mostafa/wally-mostafa.github.io.git'
     ),
     null
   );
   assert.equal(
     githubRepositoryFromRemote(
-      'https://evil.example/github.com/wallymostafa/wallymostafa.github.io'
+      'https://evil.example/github.com/wally-mostafa/wally-mostafa.github.io'
     ),
     null
   );
@@ -208,8 +208,8 @@ test('staging enforces the registered repository, dirty guard, and overwrite rev
             {
               id: 'proof-grid',
               name: 'Proof Grid',
-              publicUrl: 'https://wallymostafa.github.io/',
-              repository: 'wallymostafa/wallymostafa.github.io',
+              publicUrl: 'https://wally-mostafa.github.io/',
+              repository: 'wally-mostafa/wally-mostafa.github.io',
               homepageClass: 'proof-grid-homepage',
               projectClass: 'proof-grid-case-study',
               cssSources: ['concepts/proof-grid/homepage.css'],
@@ -309,14 +309,14 @@ test('staging enforces the registered repository, dirty guard, and overwrite rev
           targetRoot,
           validatePackage: false,
         }),
-      /does not match wallymostafa\/wallymostafa\.github\.io/
+      /does not match wally-mostafa\/wally-mostafa\.github\.io/
     );
 
     git(targetRoot, [
       'remote',
       'set-url',
       'origin',
-      'git@github.com:wallymostafa/wallymostafa.github.io.git',
+      'git@github.com:wally-mostafa/wally-mostafa.github.io.git',
     ]);
     assert.throws(
       () =>
@@ -334,8 +334,11 @@ test('staging enforces the registered repository, dirty guard, and overwrite rev
       targetRoot,
       validatePackage: false,
     });
-    assert.equal(staged.publishRepository, 'wallymostafa/wallymostafa.github.io');
-    assert.equal(staged.publicBase, 'https://wallymostafa.github.io/');
+    assert.equal(
+      staged.publishRepository,
+      'wally-mostafa/wally-mostafa.github.io'
+    );
+    assert.equal(staged.publicBase, 'https://wally-mostafa.github.io/');
     assert.ok(staged.copied.includes('proof-grid-fixture/index.html'));
     assert.equal(
       readFileSync(path.join(targetRoot, 'assets/fixture.png'), 'utf8'),

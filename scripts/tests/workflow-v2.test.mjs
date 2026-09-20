@@ -741,11 +741,11 @@ test('design concepts default historically, require an explicit current choice, 
   scopedProofGrid.routeMode = 'scoped-projects';
   assert.equal(
     getPackagePublicBase(scopedProofGrid),
-    'https://wallymostafa.github.io/'
+    'https://wally-mostafa.github.io/'
   );
   assert.equal(
     getPackageRepository(scopedProofGrid),
-    'wallymostafa/wallymostafa.github.io'
+    'wally-mostafa/wally-mostafa.github.io'
   );
   assert.notEqual(
     configInputSha256(scopedProofGrid),
@@ -780,7 +780,7 @@ test('design concepts default historically, require an explicit current choice, 
   setFit(proofGridLetter, 'adjacent');
   assert.match(
     buildCoverLetterHtml(proofGridLetter, getArtifactPaths(proofGridLetter)),
-    /href="https:\/\/wallymostafa\.github\.io\/company-role\/">Portfolio<\/a>/
+    /href="https:\/\/wally-mostafa\.github\.io\/company-role\/">Portfolio<\/a>/
   );
 });
 
@@ -804,7 +804,7 @@ test('Proof Grid snapshots both source skins and stamps route-local homepage and
     );
     assert.match(
       routeHtml,
-      /<meta property="og:url" content="https:\/\/wallymostafa\.github\.io\/workflow-v2-fixture\/">/
+      /<meta property="og:url" content="https:\/\/wally-mostafa\.github\.io\/workflow-v2-fixture\/">/
     );
 
     const titles = new Map(
@@ -824,7 +824,7 @@ test('Proof Grid snapshots both source skins and stamps route-local homepage and
     assert.match(projectHtml, /href="design-concept\.css"/);
     assert.match(
       projectHtml,
-      /<meta property="og:url" content="https:\/\/wallymostafa\.github\.io\/workflow-v2-fixture\/project-01\.html">/
+      /<meta property="og:url" content="https:\/\/wally-mostafa\.github\.io\/workflow-v2-fixture\/project-01\.html">/
     );
 
     const snapshotCss = buildDesignConceptCss(config);
@@ -4205,7 +4205,7 @@ test(
       );
       assert.match(
         redirectHtml,
-        /<link rel="canonical" href="https:\/\/wallymostafa\.github\.io\/scoped-fixture\/project-02\.html">/
+        /<link rel="canonical" href="https:\/\/wally-mostafa\.github\.io\/scoped-fixture\/project-02\.html">/
       );
       assert.match(redirectHtml, /<meta property="og:title" content="[^"]+">/);
       assert.match(
@@ -4214,7 +4214,7 @@ test(
       );
       assert.match(
         redirectHtml,
-        /<meta property="og:url" content="https:\/\/wallymostafa\.github\.io\/scoped-fixture\/project-02\.html">/
+        /<meta property="og:url" content="https:\/\/wally-mostafa\.github\.io\/scoped-fixture\/project-02\.html">/
       );
       assert.match(
         redirectHtml,
@@ -4271,7 +4271,7 @@ test(
         assert.match(
           html,
           new RegExp(
-            `<meta property="og:url" content="https://wallymostafa.github.io/scoped-fixture/${project}">`
+            `<meta property="og:url" content="https://wally-mostafa.github.io/scoped-fixture/${project}">`
           )
         );
         const projectNavigation = html.match(
@@ -4365,7 +4365,7 @@ test(
         savedConfig.qa.ats.annotations.some(
           (annotation) =>
             annotation.uri ===
-            'https://wallymostafa.github.io/scoped-fixture/'
+            'https://wally-mostafa.github.io/scoped-fixture/'
         )
       );
       assert.equal(savedConfig.qa.route.errors.length, 0);
@@ -4447,11 +4447,11 @@ test(
         );
         assert.equal(
           manifest.packages[0].publicBase,
-          'https://wallymostafa.github.io/'
+          'https://wally-mostafa.github.io/'
         );
         assert.equal(
           manifest.packages[0].publishRepository,
-          'wallymostafa/wallymostafa.github.io'
+          'wally-mostafa/wally-mostafa.github.io'
         );
         const liveProof = await fetchPublishedArtifacts(
           manifest.packages[0],
@@ -4482,7 +4482,7 @@ test(
         assert.equal(liveProof.publicBase, fixtureServer.publicBase);
         assert.equal(
           liveProof.publishRepository,
-          'wallymostafa/wallymostafa.github.io'
+          'wally-mostafa/wally-mostafa.github.io'
         );
         assert.match(liveProof.designConceptCssSha256, /^[a-f0-9]{64}$/);
         corruptDesignConceptCss = true;

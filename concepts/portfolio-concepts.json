@@ -17,8 +17,8 @@
       "id": "proof-grid",
       "name": "Proof Grid",
       "role": "challenger",
-      "publicUrl": "https://wallymostafa.github.io/",
-      "repository": "wallymostafa/wallymostafa.github.io",
+      "publicUrl": "https://wally-mostafa.github.io/",
+      "repository": "wally-mostafa/wally-mostafa.github.io",
       "homepageClass": "proof-grid-homepage",
       "projectClass": "proof-grid-case-study",
       "cssSources": [
