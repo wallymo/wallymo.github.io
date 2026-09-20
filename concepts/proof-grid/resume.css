@@ -1,0 +1,276 @@
+/*
+ * Proof Grid resume skin.
+ *
+ * Screen-only by design: the canonical resume markup, content, PDF, and print
+ * stylesheet remain untouched. The concept wrapper adds the marker class.
+ */
+
+@media screen {
+  html.proof-grid-resume {
+    --ink: #18191b;
+    --ink-soft: #43474d;
+    --ink-muted: #676c73;
+    --surface: #f7f7f4;
+    --surface-warm: #eef3ff;
+    --surface-deep: #d6d8da;
+    --accent: #2454c6;
+    --accent-hover: #193b91;
+    --rule: #18191b;
+    --rule-light: #d6d8da;
+    --font-display: "Syne", sans-serif;
+    --font-body: "Avenir Next", Avenir, "Segoe UI", Helvetica, Arial, sans-serif;
+    --font-mono: "SFMono-Regular", "SF Mono", "Roboto Mono", Consolas, monospace;
+    --pg-pink: #e548a5;
+    --pg-pink-deep: #a90f68;
+    --pg-cobalt: #2454c6;
+    --pg-cyan: #079fc4;
+    --pg-blue-wash: #eef3ff;
+    --pg-paper: #fcfcfa;
+    color-scheme: light;
+    background: var(--surface);
+  }
+
+  html.proof-grid-resume body {
+    color: var(--ink);
+    background: var(--surface);
+    font-family: var(--font-body);
+  }
+
+  html.proof-grid-resume ::selection {
+    color: #fff;
+    background: var(--pg-cobalt);
+  }
+
+  html.proof-grid-resume :focus-visible {
+    outline: 2px solid var(--pg-cobalt);
+    outline-offset: 3px;
+  }
+
+  /* Fixed utility controls keep their behavior and receive Proof Grid materials. */
+  html.proof-grid-resume .back-btn {
+    min-height: 44px;
+    color: var(--ink-soft);
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+  }
+
+  html.proof-grid-resume .back-btn:hover,
+  html.proof-grid-resume .back-btn:focus-visible {
+    color: var(--pg-cobalt);
+  }
+
+  html.proof-grid-resume .action-btn {
+    min-height: 44px;
+    color: #fff;
+    background: var(--pg-cobalt);
+    border: 1px solid var(--ink);
+    border-radius: 0;
+    box-shadow: 3px 3px 0 rgb(36 84 198 / 0.2);
+    font-family: var(--font-body);
+    transition: background 0.2s, color 0.2s, transform 0.15s, box-shadow 0.15s;
+  }
+
+  html.proof-grid-resume .action-btn:hover,
+  html.proof-grid-resume .action-btn:focus-visible {
+    color: #fff;
+    background: var(--accent-hover);
+    box-shadow: 4px 4px 0 rgb(36 84 198 / 0.24);
+  }
+
+  html.proof-grid-resume .action-btn.secondary {
+    color: var(--ink);
+    background: var(--pg-paper);
+    border-color: var(--ink);
+    box-shadow: 3px 3px 0 rgb(229 72 165 / 0.24);
+  }
+
+  html.proof-grid-resume .action-btn.secondary:hover,
+  html.proof-grid-resume .action-btn.secondary:focus-visible {
+    color: var(--pg-pink-deep);
+    background: #fff0f8;
+    border-color: var(--ink);
+    box-shadow: 4px 4px 0 rgb(229 72 165 / 0.28);
+  }
+
+  /* Open masthead: the grid is a quiet signal, never a hero container. */
+  html.proof-grid-resume .resume > header {
+    isolation: isolate;
+    position: relative;
+    padding: 2rem 1rem 1.1rem;
+    border-bottom: 2px solid var(--ink);
+    overflow: hidden;
+  }
+
+  html.proof-grid-resume .resume > header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background-image:
+      repeating-linear-gradient(
+        30deg,
+        transparent 0,
+        transparent 47px,
+        rgb(229 72 165 / 0.06) 47px,
+        rgb(229 72 165 / 0.06) 48px
+      ),
+      repeating-linear-gradient(
+        -30deg,
+        transparent 0,
+        transparent 47px,
+        rgb(36 84 198 / 0.07) 47px,
+        rgb(36 84 198 / 0.07) 48px
+      ),
+      linear-gradient(to bottom, rgb(238 243 255 / 0.74), rgb(247 247 244 / 0.2));
+    background-size: 96px 166px, 96px 166px, 100% 100%;
+  }
+
+  html.proof-grid-resume .resume > header h1 {
+    color: var(--ink);
+    font-family: var(--font-display);
+    font-weight: 800;
+    letter-spacing: -0.04em;
+  }
+
+  html.proof-grid-resume .contact {
+    color: var(--ink-soft);
+  }
+
+  html.proof-grid-resume .contact a,
+  html.proof-grid-resume .awards-list a {
+    color: var(--pg-cobalt);
+    border-bottom-color: rgb(36 84 198 / 0.38);
+  }
+
+  html.proof-grid-resume .contact a:hover,
+  html.proof-grid-resume .contact a:focus-visible,
+  html.proof-grid-resume .awards-list a:hover,
+  html.proof-grid-resume .awards-list a:focus-visible {
+    color: var(--pg-pink-deep);
+    border-bottom-color: var(--pg-pink);
+  }
+
+  html.proof-grid-resume .contact-sep {
+    color: var(--pg-pink-deep);
+  }
+
+  /* Section rules turn the document into a compact evidence ledger. */
+  html.proof-grid-resume .section-title {
+    color: var(--pg-cobalt);
+    border-bottom-color: var(--ink);
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    position: relative;
+  }
+
+  html.proof-grid-resume .summary,
+  html.proof-grid-resume .cap-desc,
+  html.proof-grid-resume .job-desc li,
+  html.proof-grid-resume .award-detail,
+  html.proof-grid-resume .edu {
+    color: var(--ink-soft);
+  }
+
+  html.proof-grid-resume .cap-label {
+    color: var(--ink);
+    font-weight: 700;
+  }
+
+  html.proof-grid-resume .job {
+    padding-bottom: 0.15rem;
+    border-bottom: 1px solid var(--rule-light);
+  }
+
+  html.proof-grid-resume .job:last-child {
+    border-bottom: 0;
+  }
+
+  html.proof-grid-resume .job-title {
+    color: var(--ink);
+    font-family: var(--font-display);
+    font-weight: 700;
+    letter-spacing: -0.015em;
+  }
+
+  html.proof-grid-resume .job-meta {
+    color: var(--pg-cobalt);
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    font-style: normal;
+  }
+
+  html.proof-grid-resume .job-desc li::marker {
+    color: var(--pg-pink-deep);
+  }
+
+  html.proof-grid-resume .awards-list a {
+    font-weight: 700;
+  }
+
+  @media (max-width: 620px) {
+    html.proof-grid-resume body {
+      padding: 5.25rem 1rem 2rem;
+    }
+
+    html.proof-grid-resume .back-btn {
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      font-size: 0.66rem;
+    }
+
+    html.proof-grid-resume .action-bar {
+      position: absolute;
+      top: 0.7rem;
+      right: 1rem;
+      gap: 0.4rem;
+    }
+
+    html.proof-grid-resume .action-btn {
+      gap: 0.3rem;
+      padding: 0.55rem 0.65rem;
+      font-size: 0.72rem;
+    }
+
+    html.proof-grid-resume .action-btn svg {
+      width: 14px;
+      height: 14px;
+    }
+
+    html.proof-grid-resume .resume > header {
+      padding: 1.5rem 0.65rem 1rem;
+    }
+
+    html.proof-grid-resume .resume > header h1 {
+      font-size: clamp(1.45rem, 8vw, 1.8rem);
+    }
+
+    html.proof-grid-resume .contact {
+      row-gap: 0.35rem;
+    }
+
+    html.proof-grid-resume .contact-sep {
+      display: none;
+    }
+
+    html.proof-grid-resume .job-meta {
+      flex-basis: 100%;
+      line-height: 1.45;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html.proof-grid-resume .action-btn,
+    html.proof-grid-resume .back-btn,
+    html.proof-grid-resume .back-btn svg,
+    html.proof-grid-resume .contact a,
+    html.proof-grid-resume .awards-list a {
+      transition: none;
+    }
+  }
+}
