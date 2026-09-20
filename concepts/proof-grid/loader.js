@@ -2,6 +2,9 @@
   "use strict";
 
   const preview = document.getElementById("portfolio-preview");
+  const scriptBaseUrl = document.currentScript?.src
+    ? new URL(".", document.currentScript.src)
+    : new URL(".", window.location.href);
   // The homepage, resume, and all nine canonical case studies participate in
   // this concept. Source pages remain untouched; the wrapper injects the
   // appropriate reversible Proof Grid skin after each iframe navigation.
@@ -69,7 +72,7 @@
     const skin = previewDocument.createElement("link");
     skin.id = "proof-grid-stylesheet";
     skin.rel = "stylesheet";
-    skin.href = new URL(selectedSkin.file, window.location.href).href;
+    skin.href = new URL(selectedSkin.file, scriptBaseUrl).href;
     skin.addEventListener("load", async () => {
       previewDocument.documentElement.dataset.proofGridSkin = "ready";
       await previewDocument.fonts?.ready;

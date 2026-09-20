@@ -18,7 +18,8 @@ exact version even if the public homepage changes later.
 ## Proof Grid
 
 - Role: challenger
-- Public route: <https://wallymo.github.io/concepts/proof-grid/>
+- Public route: <https://wallymo.github.io/proof-grid/>
+- Compatibility route: <https://wallymo.github.io/concepts/proof-grid/>
 - Stable ID for tailored-package configs: `proof-grid`
 - Preserved source: Git tag `portfolio-concept/proof-grid-v1`
 - Source: `concepts/proof-grid/`
