@@ -367,6 +367,12 @@
       "chapters",
       "capabilities"
     ],
+    "capabilityProjects": {
+      "discover": "project-04.html",
+      "design": "project-05.html",
+      "build": "project-06.html",
+      "lead": "project-03.html"
+    },
     "workHeading": "Selected work.",
     "contactHeading": "Thanks for taking a look."
   },
@@ -415,7 +421,7 @@
     "humanizerVersion": "2.2.0",
     "mode": "surface-only",
     "status": "passed",
-    "reviewedAt": "2026-09-21T00:13:35.676Z",
+    "reviewedAt": "2026-09-21T19:52:07.030Z",
     "copySha256": "cf5533dc32e69ebb04d18e4f2e0d4dd5da27e56cfb7ed1b03759c7509b460739",
     "preserved": [
       "content",
@@ -432,8 +438,8 @@
   },
   "qa": {
     "status": "qa-passed",
-    "builtAt": "2026-09-21T00:14:03.277Z",
-    "configInputSha256": "b731d79b715adaf637a15d9ab101417514171665488d4e01a41ed032c31f2575",
+    "builtAt": "2026-09-21T19:52:28.181Z",
+    "configInputSha256": "8b48a90492d315995df89300f54f47a91d2f7c2fc15bec63bf38da9b7c96f2df",
     "sourceResumeSha256": "8273f9c5f9038a159fa1d9ecc813e2c23069e37c7ef6dd0effe5439cef217fd7",
     "resumeFoundation": {
       "id": "wally-mostafa-resume-2026-07-03",
@@ -454,9 +460,9 @@
       "registrySha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108"
     },
     "artifactHashes": {
-      "routeSha256": "bf1c8e7c6f177f4ff9bb9ed5566880a8ab4204c5d83ea8a5c79af6b4f6489512",
-      "designConceptCssSha256": "63a166a968c50a7aae46c4659b830ed50da1ee429e9a3c0fcd5a486ddfde7100",
-      "resumePdfSha256": "b3eb22d91636ead49e478167dfba164434eb0069286cc2b261de7ef71af420c2",
+      "routeSha256": "9c1bd51591fa504546483fdcda81264cb1a4266a897865e05917843e39a5099b",
+      "designConceptCssSha256": "73052eae58d446422f0ff921361877b1ca4e0062ec7ee25daace39b4a4791195",
+      "resumePdfSha256": "d2a0ab38eba1a80495a01b179a02607e382a085b9ba7e940e5a3818e5d2fff8b",
       "coverLetterPdfSha256": null,
       "coverLetterMarkdownSha256": null,
       "scopedProjectSha256": {
@@ -593,7 +599,7 @@
       "status": "passed",
       "version": "2.2.0",
       "mode": "surface-only",
-      "reviewedAt": "2026-09-21T00:13:35.676Z",
+      "reviewedAt": "2026-09-21T19:52:07.030Z",
       "copySha256": "cf5533dc32e69ebb04d18e4f2e0d4dd5da27e56cfb7ed1b03759c7509b460739",
       "reviewMethod": "humanizer-skill",
       "semanticPassAttested": true,
