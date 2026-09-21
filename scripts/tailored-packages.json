@@ -542,6 +542,46 @@
     {
       "workflowVersion": 2,
       "contractRevision": 7,
+      "slug": "biolumina",
+      "roleTitle": "Experience Strategy & Digital Transformation",
+      "artifactStem": "BioLumina",
+      "configPath": "scripts/packages/biolumina.json",
+      "targetLane": "research-experience-strategy",
+      "evidenceMode": "balanced",
+      "fitClass": "strong",
+      "positioningLane": "research-experience-strategy",
+      "bridgeType": "direct",
+      "applicationStrategy": "direct",
+      "resumeBaseMode": "ai-product-implementation",
+      "resumeBaseLeadProfile": "ai-product-implementation",
+      "resumeBaseAction": "tailor-to-jd",
+      "accountPresentation": "consolidated",
+      "resumeBaseProfiles": [
+        {
+          "id": "ai-product-implementation",
+          "version": 1
+        }
+      ],
+      "routeMode": "scoped-projects",
+      "designConcept": "proof-grid",
+      "publicBase": "https://wally-mostafa.github.io/",
+      "publishRepository": "wally-mostafa/wally-mostafa.github.io",
+      "selectedProjects": [
+        "project-08.html",
+        "project-01.html",
+        "project-04.html",
+        "project-03.html",
+        "project-05.html"
+      ],
+      "designConceptCssPath": "biolumina/design-concept.css",
+      "resumePdfPath": "output/pdf/Wally-Mostafa-BioLumina-Resume.pdf",
+      "publishStatus": "local-only",
+      "qaStatus": "qa-passed",
+      "builtAt": "2026-09-21T22:32:48.067Z"
+    },
+    {
+      "workflowVersion": 2,
+      "contractRevision": 7,
       "slug": "bnberry-product-manager",
       "roleTitle": "Bnberry Product Manager",
       "artifactStem": "Bnberry-Product-Manager",
