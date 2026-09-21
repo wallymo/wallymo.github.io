@@ -1623,6 +1623,36 @@ test(
         /route\.capabilityProjects must map discover, design, build, and lead/
       );
       assert.ok(schemaErrors(incompleteCapabilityProjects).length > 0);
+      const validCapabilityEmphasis = structuredClone(validCapabilityProjects);
+      validCapabilityEmphasis.route.showcaseSections = ['capabilities'];
+      validCapabilityEmphasis.route.capabilityEmphasis = {
+        build: ['pharma', 'finance', 'operations'],
+      };
+      assert.doesNotMatch(
+        validateV2Config(validCapabilityEmphasis).join('\n'),
+        /route\.capabilityEmphasis/
+      );
+      assert.deepEqual(schemaErrors(validCapabilityEmphasis), []);
+      const invalidCapabilityEmphasis = structuredClone(validCapabilityEmphasis);
+      invalidCapabilityEmphasis.route.capabilityEmphasis.unknown = ['proof'];
+      assert.match(
+        validateV2Config(invalidCapabilityEmphasis).join('\n'),
+        /route\.capabilityEmphasis/
+      );
+      assert.ok(schemaErrors(invalidCapabilityEmphasis).length > 0);
+      const hiddenCapabilityEmphasis = structuredClone(validCapabilityEmphasis);
+      hiddenCapabilityEmphasis.route.showcaseSections = ['chapters'];
+      assert.match(
+        validateV2Config(hiddenCapabilityEmphasis).join('\n'),
+        /route\.capabilityEmphasis requires capabilities/
+      );
+      const paddedCapabilityEmphasis = structuredClone(validCapabilityEmphasis);
+      paddedCapabilityEmphasis.route.capabilityEmphasis.build = [' pharma'];
+      assert.match(
+        validateV2Config(paddedCapabilityEmphasis).join('\n'),
+        /route\.capabilityEmphasis/
+      );
+      assert.ok(schemaErrors(paddedCapabilityEmphasis).length > 0);
       const leakyShowcase = structuredClone(config);
       leakyShowcase.route = { presentation: 'showcase' };
       assert.match(
@@ -5175,6 +5205,61 @@ test('scoped showcase capability lanes link consistently to selected route proje
       assert.match(article, new RegExp(`<a href="${href}">${title}<\\/a>`));
     }
     assert.equal((capabilities.match(/<a href="project-\d+\.html">/g) || []).length, 4);
+  } finally {
+    if (previousRepoRoot === undefined) delete process.env.WORKFLOW_REPO_ROOT;
+    else process.env.WORKFLOW_REPO_ROOT = previousRepoRoot;
+    rmSync(tempRoot, { recursive: true, force: true });
+  }
+});
+
+test('route capability emphasis highlights exact proof phrases without changing canonical copy', () => {
+  const { tempRoot, config } = createBuildFixture({
+    routeMode: 'scoped-projects',
+    selectedProjects: [
+      'project-01.html',
+      'project-04.html',
+      'project-06.html',
+      'project-07.html',
+    ],
+  });
+  const previousRepoRoot = process.env.WORKFLOW_REPO_ROOT;
+  try {
+    process.env.WORKFLOW_REPO_ROOT = tempRoot;
+    config.route.showcaseSections = ['capabilities'];
+    config.route.capabilityEmphasis = {
+      build: ['pharma', 'finance', 'operations'],
+    };
+    const html = buildRoute(config, getArtifactPaths(config));
+    const buildCapability = html.match(
+      /<article\b(?=[^>]*\bdata-capability="build")[\s\S]*?<\/article>/
+    )?.[0];
+    assert.ok(buildCapability);
+    assert.match(
+      buildCapability,
+      /POCs across <strong>pharma<\/strong>, <strong>finance<\/strong>, and <strong>operations<\/strong>/
+    );
+    assert.doesNotMatch(
+      readFileSync(path.join(tempRoot, 'index.html'), 'utf8'),
+      /POCs across <strong>pharma<\/strong>/
+    );
+    const missingPhrase = structuredClone(config);
+    missingPhrase.route.capabilityEmphasis = { build: ['healthcare'] };
+    assert.throws(
+      () => buildRoute(missingPhrase, getArtifactPaths(missingPhrase)),
+      /must identify exactly one proof item \(found 0\)/
+    );
+    const ambiguousPhrase = structuredClone(config);
+    ambiguousPhrase.route.capabilityEmphasis = { build: ['and'] };
+    assert.throws(
+      () => buildRoute(ambiguousPhrase, getArtifactPaths(ambiguousPhrase)),
+      /must identify exactly one proof item \(found 3\)/
+    );
+    const markupPhrase = structuredClone(config);
+    markupPhrase.route.capabilityEmphasis = { build: ['class'] };
+    assert.throws(
+      () => buildRoute(markupPhrase, getArtifactPaths(markupPhrase)),
+      /must identify exactly one proof item \(found 0\)/
+    );
   } finally {
     if (previousRepoRoot === undefined) delete process.env.WORKFLOW_REPO_ROOT;
     else process.env.WORKFLOW_REPO_ROOT = previousRepoRoot;

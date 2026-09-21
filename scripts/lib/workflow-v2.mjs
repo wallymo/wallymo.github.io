@@ -2594,6 +2594,41 @@ export function validateV2Config(
           );
         }
       }
+      const capabilityEmphasis = route.capabilityEmphasis;
+      pushError(
+        errors,
+        capabilityEmphasis === undefined ||
+          (capabilityEmphasis &&
+            typeof capabilityEmphasis === 'object' &&
+            !Array.isArray(capabilityEmphasis) &&
+            Object.keys(capabilityEmphasis).length >= 1 &&
+            Object.keys(capabilityEmphasis).length <= CAPABILITY_LANE_IDS.length &&
+            Object.entries(capabilityEmphasis).every(
+              ([laneId, phrases]) =>
+                CAPABILITY_LANE_IDS.includes(laneId) &&
+                Array.isArray(phrases) &&
+                phrases.length >= 1 &&
+                new Set(phrases).size === phrases.length &&
+                phrases.every(
+                  (phrase) =>
+                    isNonEmptyString(phrase) && phrase.trim() === phrase
+                )
+            )),
+        'route.capabilityEmphasis must map capability lanes to unique, non-empty phrases'
+      );
+      if (
+        capabilityEmphasis &&
+        typeof capabilityEmphasis === 'object' &&
+        !Array.isArray(capabilityEmphasis)
+      ) {
+        pushError(
+          errors,
+          route.presentation !== 'showcase' ||
+            (Array.isArray(showcaseSections) &&
+              showcaseSections.includes('capabilities')),
+          'route.capabilityEmphasis requires capabilities in route.showcaseSections'
+        );
+      }
       const projectAliases = route.projectAliases;
       pushError(
         errors,

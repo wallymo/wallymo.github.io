@@ -339,6 +339,89 @@ export function applyCapabilityProjectLinks(routeHtml, config, indexHtml) {
   return updatedHtml;
 }
 
+function emphasizeUniqueTextPhrase(html, phrase, laneId) {
+  const escapedPhrase = escapeHtml(phrase);
+  const segments = html.split(/(<[^>]+>)/g);
+  const matches = [];
+  for (let index = 0; index < segments.length; index += 2) {
+    let offset = segments[index].indexOf(escapedPhrase);
+    while (offset !== -1) {
+      matches.push({ index, offset });
+      offset = segments[index].indexOf(
+        escapedPhrase,
+        offset + escapedPhrase.length
+      );
+    }
+  }
+  if (matches.length !== 1) {
+    throw new Error(
+      `Capability emphasis phrase in ${laneId} must match exactly once: ${phrase} (found ${matches.length})`
+    );
+  }
+  const [{ index, offset }] = matches;
+  const text = segments[index];
+  segments[index] = `${text.slice(0, offset)}<strong>${escapedPhrase}</strong>${text.slice(
+    offset + escapedPhrase.length
+  )}`;
+  return segments.join('');
+}
+
+function htmlText(html) {
+  return html
+    .split(/(<[^>]+>)/g)
+    .filter((_, index) => index % 2 === 0)
+    .join('');
+}
+
+export function applyCapabilityEmphasis(routeHtml, config) {
+  const capabilityEmphasis = config.route?.capabilityEmphasis;
+  if (!capabilityEmphasis) return routeHtml;
+
+  let updatedHtml = routeHtml;
+  for (const [laneId, phrases] of Object.entries(capabilityEmphasis)) {
+    const articlePattern = new RegExp(
+      `<article\\b(?=[^>]*\\bclass="[^"]*\\bcap-field\\b[^"]*")(?=[^>]*\\bdata-capability="${laneId}")[^>]*>[\\s\\S]*?<\\/article>`
+    );
+    const article = updatedHtml.match(articlePattern)?.[0];
+    if (!article) {
+      throw new Error(`Missing capability field: ${laneId}`);
+    }
+    const proofPattern =
+      /<ul\b(?=[^>]*\bclass="[^"]*\bcap-proof\b[^"]*")[^>]*>[\s\S]*?<\/ul>/;
+    const originalProof = article.match(proofPattern)?.[0];
+    if (!originalProof) {
+      throw new Error(`Missing capability proof list: ${laneId}`);
+    }
+    const proofItems = [
+      ...originalProof.matchAll(/<li\b[^>]*>[\s\S]*?<\/li>/g),
+    ].map((match) => match[0]);
+    const matchingItems = proofItems.filter((item) => {
+      const text = htmlText(item);
+      return phrases.every((phrase) => text.includes(escapeHtml(phrase)));
+    });
+    if (matchingItems.length !== 1) {
+      throw new Error(
+        `Capability emphasis phrases in ${laneId} must identify exactly one proof item (found ${matchingItems.length})`
+      );
+    }
+    const originalItem = matchingItems[0];
+    let emphasizedItem = originalItem;
+    for (const phrase of phrases) {
+      emphasizedItem = emphasizeUniqueTextPhrase(
+        emphasizedItem,
+        phrase,
+        laneId
+      );
+    }
+    const emphasizedProof = originalProof.replace(originalItem, emphasizedItem);
+    updatedHtml = updatedHtml.replace(
+      article,
+      article.replace(originalProof, emphasizedProof)
+    );
+  }
+  return updatedHtml;
+}
+
 function buildFallbackWorkCard(project) {
   const details = canonicalProjectDetails(project);
   const tags = details.tags
@@ -1111,6 +1194,7 @@ export function buildRoute(config, paths) {
     'work grid'
   );
   routeHtml = applyCapabilityProjectLinks(routeHtml, config, indexHtml);
+  routeHtml = applyCapabilityEmphasis(routeHtml, config);
   if (config.routeMode === 'scoped-projects') {
     for (const project of config.selectedProjects) {
       routeHtml = routeHtml
