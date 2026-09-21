@@ -373,6 +373,13 @@
       "build": "project-06.html",
       "lead": "project-03.html"
     },
+    "capabilityEmphasis": {
+      "build": [
+        "pharma",
+        "finance",
+        "operations"
+      ]
+    },
     "workHeading": "Selected work.",
     "contactHeading": "Thanks for taking a look."
   },
@@ -438,8 +445,8 @@
   },
   "qa": {
     "status": "qa-passed",
-    "builtAt": "2026-09-21T19:52:28.181Z",
-    "configInputSha256": "8b48a90492d315995df89300f54f47a91d2f7c2fc15bec63bf38da9b7c96f2df",
+    "builtAt": "2026-09-21T20:21:27.763Z",
+    "configInputSha256": "60fa683fb8044a9bc8c8d297b038cc13876a5194f31d23e750f61361c95cfe64",
     "sourceResumeSha256": "8273f9c5f9038a159fa1d9ecc813e2c23069e37c7ef6dd0effe5439cef217fd7",
     "resumeFoundation": {
       "id": "wally-mostafa-resume-2026-07-03",
@@ -460,9 +467,9 @@
       "registrySha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108"
     },
     "artifactHashes": {
-      "routeSha256": "9c1bd51591fa504546483fdcda81264cb1a4266a897865e05917843e39a5099b",
+      "routeSha256": "251199f47512f2fbcb8fffd654f1a528d9720bb80e8c0224e25358516fab4b31",
       "designConceptCssSha256": "73052eae58d446422f0ff921361877b1ca4e0062ec7ee25daace39b4a4791195",
-      "resumePdfSha256": "d2a0ab38eba1a80495a01b179a02607e382a085b9ba7e940e5a3818e5d2fff8b",
+      "resumePdfSha256": "b26a84933b85c0f9089c40c140380dd440158c79078b3b0edd54eb145a1805de",
       "coverLetterPdfSha256": null,
       "coverLetterMarkdownSha256": null,
       "scopedProjectSha256": {

@@ -5233,41 +5233,9 @@
       ],
       "designConceptCssPath": "ux-design-lead/design-concept.css",
       "resumePdfPath": "output/pdf/Wally-Mostafa-UX-Design-Lead-Resume.pdf",
-      "publishStatus": "live-verified",
+      "publishStatus": "local-only",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-09-21T19:52:28.181Z",
-      "verification": {
-        "verifiedAt": "2026-09-21T19:58:56.954Z",
-        "routeUrl": "https://wally-mostafa.github.io/ux-design-lead/",
-        "resumePdfUrl": "https://wally-mostafa.github.io/output/pdf/Wally-Mostafa-UX-Design-Lead-Resume.pdf",
-        "configUrl": "https://wally-mostafa.github.io/scripts/packages/ux-design-lead.json",
-        "publicBase": "https://wally-mostafa.github.io/",
-        "publishRepository": "wally-mostafa/wally-mostafa.github.io",
-        "designConceptCssUrl": "https://wally-mostafa.github.io/ux-design-lead/design-concept.css",
-        "designConceptCssSha256": "73052eae58d446422f0ff921361877b1ca4e0062ec7ee25daace39b4a4791195",
-        "projectUrls": [
-          "https://wally-mostafa.github.io/ux-design-lead/project-05.html",
-          "https://wally-mostafa.github.io/ux-design-lead/project-04.html",
-          "https://wally-mostafa.github.io/ux-design-lead/project-06.html",
-          "https://wally-mostafa.github.io/ux-design-lead/project-03.html"
-        ],
-        "redirectUrls": [],
-        "configSha256": "4201d4399de2ee19c38f29e24027f62af70f702601adfb21b58496473f5a515e",
-        "pdfSha256": "d2a0ab38eba1a80495a01b179a02607e382a085b9ba7e940e5a3818e5d2fff8b",
-        "resumeBaseProfilesUrl": "https://wally-mostafa.github.io/scripts/resume-base-profiles.json",
-        "resumeBaseProfilesSha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108",
-        "routeSha256": "9c1bd51591fa504546483fdcda81264cb1a4266a897865e05917843e39a5099b",
-        "scopedProjectSha256": {
-          "project-05.html": "bd23627faa2470245930687b2221fa029fc5aaf32a4bafcca1e2122ae239b807",
-          "project-04.html": "57ed841f445fe959d427f8a691fb68da92647355087312565cba96b95e85a3fc",
-          "project-06.html": "a8d58dc118e949fc5c6f133c29b63fa2fead8667aa3933cd4ca693e1e9ae0115",
-          "project-03.html": "5477b8b07d7249947021499470143be8ecc8837df2c70a8854e1cf7547ee3c8f"
-        },
-        "scopedProjectAssetUrls": [],
-        "scopedProjectAssetSha256": {},
-        "configInputSha256": "8b48a90492d315995df89300f54f47a91d2f7c2fc15bec63bf38da9b7c96f2df",
-        "qaBuiltAt": "2026-09-21T19:52:28.181Z"
-      }
+      "builtAt": "2026-09-21T20:21:27.763Z"
     },
     {
       "workflowVersion": 2,
