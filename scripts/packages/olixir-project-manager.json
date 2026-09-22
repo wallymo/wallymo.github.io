@@ -1,0 +1,904 @@
+{
+  "workflowVersion": 2,
+  "contractRevision": 7,
+  "slug": "olixir-project-manager",
+  "artifactStem": "OLIXIR-Project-Manager",
+  "roleTitle": "OLIXIR Project Manager",
+  "classification": {
+    "targetLane": "client-account-delivery",
+    "evidenceMode": "resume-primary",
+    "primarySource": "The resume documents eight years of pharmaceutical agency account delivery, including prior FCB Health experience, multichannel campaigns, $10M-$20M brand budgets, briefs, scopes, timelines, weekly status and financial reporting, vendor coordination, regulated review, and cross-functional execution.",
+    "supportingSource": "The portfolio adds recent proof of workflow design, enterprise delivery, quality systems, stakeholder research, implementation handoffs, and practical tools for regulated healthcare teams. It supports the delivery story without replacing the resume.",
+    "hardGateStatus": "pass",
+    "hardGates": [
+      {
+        "gate": "Bring at least three years of project management, production, marketing operations, administration, or related experience",
+        "status": "pass",
+        "requirementId": "project-management-related-experience",
+        "evidence": "The resume documents eight years in closely related healthcare agency account delivery with direct responsibility for briefs, scopes, timelines, budgets, status reporting, vendors, approvals, and multichannel execution."
+      },
+      {
+        "gate": "Bring pharmaceutical marketing and advertising experience",
+        "status": "pass",
+        "requirementId": "pharma-marketing-and-advertising",
+        "evidence": "The resume documents seven-plus years managing Fortune 500 pharmaceutical accounts and later patient, HCP, oncology, MLR, and regulated healthcare product work."
+      }
+    ]
+  },
+  "fitClass": "strong",
+  "job": {
+    "company": "OLIXIR USA",
+    "roleTitle": "Freelance Project Management",
+    "jobId": "public-proxy-4458760588",
+    "jobUrl": "https://www.linkedin.com/jobs/view/project-manager-at-olixir-new-york-4458760588",
+    "sourceChannel": "user-requested-company-targeted-outreach-with-public-jd-proxy",
+    "dateCaptured": "2026-09-22",
+    "location": "New York, NY in the public comparator posting; freelance work setting is unconfirmed",
+    "employmentType": "freelance or contract; exact classification, duration, hours, and rate are unconfirmed",
+    "atsVendor": "not-applicable-for-warm-introduction",
+    "rawJd": "Company-targeted freelance project-management brief based on the user's stated OLIXIR opportunity and OLIXIR New York's current public Project Manager posting. The public posting is a functional proxy, not proof of the private freelance scope or terms.\n\nOLIXIR context: OLIXIR USA was formerly FCB Health New York and is part of Omnicom Health. The agency describes itself as a full-service healthcare marketing agency working with healthcare and life-sciences brands.\n\nPublic Project Manager comparator: The Project Manager owns client deliverables for an assigned brand from project planning through final delivery, with responsibility for timing, quality, and budget. The role guides multichannel development and works across Account Management, Finance, Production, Creative, Editorial, Technology, and Strategy.\n\nCore responsibilities include managing mid-complexity multichannel deliverables from concept to deployment; following agency procedures and tools such as Workfront, Egnyte, and Teams; providing status updates and meeting documentation; serving as the point of contact for project routing and quality control; coordinating third-party vendors and client digital teams; tracking estimates and financial or timesheet reports; escalating issues with proposed solutions; supporting scopes of work, briefs, timelines, estimates, and process improvement; communicating upcoming deadlines, revisions, and next steps; supporting junior staff; participating in finance meetings; and keeping project files and administrative work accurate and current.\n\nThe posting requests three or more years in project management, production, marketing operations or administration, or a related field, plus pharmaceutical marketing and advertising experience. Microsoft Office and Adobe Acrobat proficiency are requested. Basic knowledge of project-management or financial tools is listed as a plus rather than a hard requirement.\n\nThe public posting is full-time and lists a New York office schedule. The user's opportunity is described as freelance. Contract classification, work location, weekly hours, duration, rate, manager, assigned brand, and exact tool expectations must be confirmed privately before engagement."
+  },
+  "fitGate": {
+    "resumeBase": {
+      "mode": "account-leadership",
+      "sourceProfiles": [
+        {
+          "id": "account-leadership",
+          "version": 1
+        }
+      ],
+      "leadProfileId": "account-leadership",
+      "accountPresentation": "agency-progression",
+      "action": "tailor-to-jd",
+      "rationale": "The work centers on healthcare agency delivery across briefs, scopes, schedules, budgets, production, vendors, approvals, reporting, and cross-functional coordination. Account Leadership is the correct base because it contains the direct FCB Health and pharmaceutical agency record. Later UX, enterprise, and workflow work adds useful implementation evidence."
+    },
+    "supportedOverlap": [
+      "Eight years of healthcare and pharmaceutical agency account-delivery progression with briefs, scopes, timelines, budgets, status reporting, approvals, and cross-functional execution.",
+      "Direct prior experience at FCB Health in New York, the agency named by OLIXIR USA as its predecessor.",
+      "Management of $10M-$20M pharmaceutical brand work plus weekly client status and financial reporting.",
+      "Multichannel delivery across television, digital, mobile, print, radio, gaming, social, in-office materials, and CRM programs.",
+      "Coordination across clients, account, strategy, creative, production, media, digital, development, regulatory teams, finance, and outside vendors.",
+      "Later leadership in enterprise products and regulated workflow tools adds resource planning, quality reviews, risk visibility, approval routing, and engineering handoff."
+    ],
+    "unsupportedRequirements": [
+      "Direct proficiency with Workfront, Egnyte, Microsoft Project, SAP, or another named project or financial platform is not documented.",
+      "Adobe Acrobat and Microsoft Office proficiency are not explicitly documented in the resume evidence.",
+      "A current or former dedicated Project Manager title is not documented."
+    ],
+    "actualMismatches": [],
+    "missingEvidence": [
+      "The freelance scope, assigned brand, weekly hours, duration, rate, employment classification, reporting line, and work setting have not been provided.",
+      "The exact OLIXIR tool stack for this freelance engagement has not been confirmed."
+    ],
+    "coverLetterBridge": {
+      "status": "not-needed",
+      "rationale": "The resume directly proves the operating center through pharmaceutical agency delivery, prior FCB Health experience, multichannel work, budgets, timelines, reporting, vendors, regulated review, and cross-functional coordination. The warm introduction and matched portfolio make a cover letter unnecessary."
+    },
+    "recommendation": "Proceed as a strong fit for an OLIXIR healthcare-agency project-management conversation. Lead with the prior FCB Health connection and the delivery work already performed inside account roles. Keep named-tool proficiency and all freelance terms unconfirmed until the contact provides the actual scope."
+  },
+  "positioning": {
+    "laneId": "client-account-delivery",
+    "targetIdentity": "healthcare agency project and client-delivery leader",
+    "employerNeed": "Keep multichannel healthcare work moving from brief through final delivery with clear timelines, budgets, status, routing, quality control, and cross-functional coordination.",
+    "bridgeType": "direct",
+    "applicationStrategy": "direct",
+    "bridgeThesis": "multichannel project delivery grounded in pharma account leadership",
+    "proofIds": [
+      "account-management-01",
+      "account-management-03",
+      "addition:fcb-nuvigil-client-operations"
+    ],
+    "remainingGap": null
+  },
+  "requirements": [
+    {
+      "id": "project-management-related-experience",
+      "text": "Bring at least three years of project management, production, marketing operations, administration, or related experience.",
+      "priority": "hard-gate",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Eight years of agency account delivery included briefs, scopes, timelines, budgets, status and financial reporting, vendors, approvals, and multichannel execution.",
+        "Later enterprise and product work adds staffing, resource planning, quality reviews, project-plan checkpoints, and implementation handoff."
+      ],
+      "proofIds": [
+        "account-management-03",
+        "addition:fcb-nuvigil-client-operations",
+        "kinesso-01"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience"
+      ],
+      "resumeTerms": [
+        "eight years",
+        "project delivery",
+        "timelines"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "pharma-marketing-and-advertising",
+      "text": "Bring pharmaceutical marketing and advertising experience.",
+      "priority": "hard-gate",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Seven-plus years of direct pharmaceutical account leadership covered national campaigns, brand budgets, strategic recommendations, and regulated review.",
+        "Later work includes patient and HCP experience strategy, oncology UX, MLR workflows, FDA monitoring, and regulated healthcare products."
+      ],
+      "proofIds": [
+        "account-management-01",
+        "account-management-02",
+        "heartbeat-01"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "pharmaceutical advertising",
+        "MLR",
+        "HCP"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "multichannel-project-delivery",
+      "text": "Own mid-complexity multichannel deliverables from concept through deployment while managing timing, quality, and budget.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Managed pharmaceutical campaigns across television, digital, mobile, print, radio, gaming, social, in-office materials, and CRM programs.",
+        "Owned budgets, production requirements, timelines, regulatory review, network clearances, and final delivery across complex programs."
+      ],
+      "proofIds": [
+        "account-management-01",
+        "account-management-02",
+        "account-management-03"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "multichannel",
+        "$10M-$20M",
+        "quality reviews"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "cross-functional-agency-collaboration",
+      "text": "Coordinate Account Management, Finance, Production, Creative, Editorial, Technology, Strategy, vendors, and client digital teams.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Agency work coordinated clients, account, strategy, creative, production, media, digital, development, finance, regulatory teams, and outside vendors.",
+        "Later UX and enterprise work moved recommendations into build-ready delivery with product and engineering partners."
+      ],
+      "proofIds": [
+        "account-management-03",
+        "heartbeat-03",
+        "kinesso-01"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience"
+      ],
+      "resumeTerms": [
+        "cross-functional",
+        "vendor coordination",
+        "engineering handoff"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "status-documentation-routing-and-quality",
+      "text": "Provide status updates, document next steps, manage project routing, maintain organized files, and protect quality and timing.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Owned weekly client status and financial reporting plus review-committee submissions on a $10M pharmaceutical business.",
+        "Current work builds structured intake, review routing, evidence annotations, approval steps, and submission records into healthcare workflow tools."
+      ],
+      "proofIds": [
+        "addition:fcb-nuvigil-client-operations",
+        "hedgehox-02",
+        "hedgehox-03"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "status and financial reporting",
+        "review routing",
+        "quality reviews"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "scope-estimates-and-financial-coordination",
+      "text": "Support scopes of work, estimates, timelines, financial reporting, and finance-team coordination.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Owned project briefs, scopes of work, timelines, client status, and financial reports across pharmaceutical agency accounts.",
+        "Built a Scope Generator for agency finance and operations teams around rate cards, brands, sub-brands, deliverables, resourcing, and scope changes."
+      ],
+      "proofIds": [
+        "addition:rosetta-dubai-advisory",
+        "addition:fcb-nuvigil-client-operations",
+        "hedgehox-05"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "scopes",
+        "financial reporting",
+        "rate cards"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "risk-escalation-and-process-improvement",
+      "text": "Identify bottlenecks, escalate issues with proposed solutions, and contribute to process improvement.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Current workflow work turns missing information, evidence gaps, regulatory signals, and delivery risks into visible review steps and next decisions.",
+        "Enterprise leadership included resource planning, quality reviews, research checkpoints, and repeatable client-ready workflows."
+      ],
+      "proofIds": [
+        "hedgehox-02",
+        "hedgehox-03",
+        "kinesso-03"
+      ],
+      "destinations": [
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "risk visibility",
+        "evidence gaps",
+        "repeatable workflow"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "office-adobe-and-agency-tools",
+      "text": "Use Microsoft Office, Adobe Acrobat, and agency project or financial tools; Workfront, Egnyte, Microsoft Project, or SAP knowledge is useful.",
+      "priority": "preferred",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "The resume documents status and financial reporting, shared documentation, review routing, presentations, workflow tools, and project plans.",
+        "Direct proficiency with the named software is not documented and will not be claimed."
+      ],
+      "proofIds": [
+        "addition:fcb-nuvigil-client-operations",
+        "kinesso-06",
+        "hedgehox-05"
+      ],
+      "destinations": [
+        "skills",
+        "experience"
+      ],
+      "resumeTerms": [
+        "status and financial reporting",
+        "shared documentation",
+        "workflow tools"
+      ],
+      "matchMode": "contextual"
+    },
+    {
+      "id": "freelance-engagement-terms",
+      "text": "Confirm the freelance scope, assigned brand, manager, work setting, weekly hours, duration, classification, rate, and required tools.",
+      "priority": "context",
+      "source": "jd",
+      "confidence": "ambiguous",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "proofIds": [],
+      "destinations": [
+        "application-answer"
+      ],
+      "resumeTerms": [
+        "freelance scope",
+        "weekly hours",
+        "contract rate"
+      ],
+      "matchMode": "not-supported"
+    }
+  ],
+  "constraints": {
+    "doNotClaim": [
+      "A current or former dedicated Project Manager title",
+      "Current employment, affiliation, or inside status with OLIXIR",
+      "Workfront, Egnyte, Microsoft Project, SAP, Microsoft Office, Adobe Acrobat, or other named-tool proficiency beyond documented evidence",
+      "PMP, CAPM, Scrum, Agile, waterfall, or other project-management certification or methodology ownership",
+      "Formal PMO, RAID-log, utilization, margin, or change-control ownership",
+      "Confirmed New York office attendance, travel availability, remote status, weekly hours, duration, employment classification, or contract rate",
+      "Knowledge of the private freelance scope beyond what the user provided"
+    ],
+    "blockedTerms": [
+      "OLIXIR employee",
+      "OLIXIR insider",
+      "PMP-certified",
+      "CAPM-certified",
+      "Workfront expert",
+      "Egnyte expert",
+      "Microsoft Project expert",
+      "SAP expert",
+      "advanced Microsoft Office",
+      "Adobe Acrobat expert",
+      "PMO lead",
+      "RAID log owner",
+      "Agile project manager",
+      "waterfall project manager",
+      "confirmed remote",
+      "confirmed onsite"
+    ]
+  },
+  "resume": {
+    "foundationId": "wally-mostafa-resume-2026-07-03",
+    "compositionMode": "profile-complete",
+    "layoutDensity": "compact",
+    "roleTitleOverrides": {
+      "hedgehox": "AI Implementation Lead"
+    },
+    "summary": "Healthcare agency project and client-delivery leader with eight years across pharmaceutical advertising and multichannel project delivery grounded in pharma account leadership. At FCB Health in New York, now OLIXIR USA, I managed $10M-$20M brand work and owned briefs, scopes, timelines, weekly status and financial reporting, vendor coordination, and regulated review. Later UX, enterprise product, and AI workflow work strengthened how I plan digital delivery, organize approvals, surface risks, and move cross-functional teams toward a clear handoff.",
+    "skillIds": [
+      "account-management-client-leadership",
+      "program-project-delivery",
+      "regulated-healthcare-client-delivery",
+      "healthcare-marketing-strategy"
+    ],
+    "skills": [
+      {
+        "label": "Account Management & Client Leadership",
+        "description": "Client relationships, budgets up to $20M, briefs, scopes, timelines, status and financial reporting, vendor coordination, and cross-functional delivery"
+      },
+      {
+        "label": "Program & Project Delivery",
+        "description": "Scoping, requirements, timelines, review routing, team coordination, risk visibility, and build-ready handoff across product, design, and client teams"
+      },
+      {
+        "label": "Regulated Healthcare & Client Delivery",
+        "description": "11 years across pharma/healthcare communications, FDA/HIPAA/MLR workflows, HCP/patient UX, client workshops, and stakeholder adoption"
+      },
+      {
+        "label": "Healthcare Marketing & Brand Strategy",
+        "description": "Brand planning, campaign and digital strategy, MLR review, patient and HCP experiences, and regulated multi-channel delivery"
+      }
+    ],
+    "experienceSections": [
+      {
+        "heading": "Healthcare Agency Delivery Experience",
+        "roleIds": [
+          "account-management"
+        ]
+      },
+      {
+        "heading": "Continued Product & Workflow Experience",
+        "roleIds": [
+          "hedgehox",
+          "one-block-away",
+          "kinesso",
+          "omnicom",
+          "heartbeat"
+        ]
+      }
+    ],
+    "awards": [
+      {
+        "label": "Indigo Awards 2023",
+        "detail": "Design System & Data Visualization: 3x Gold, 2x Silver",
+        "href": "https://www.indigoaward.com/winners/6748"
+      }
+    ],
+    "roles": {
+      "hedgehox": [
+        "Built Scope Generator for agency finance and operations teams to manage regional rate cards, brands, sub-brands, and natural-language scope changes",
+        "Translate pharma agency needs into working tools for brief intake, scoping, review routing, submission capture, claim review, and FDA signal monitoring",
+        "Designed Claims Detector workflows that surface evidence gaps, prepare audit-ready annotations, and keep human review in the approval path",
+        "Secured an investor for proprietary Claims Detection software by building the functional POC, shaping the demo story, and iterating with investors"
+      ],
+      "one-block-away": [
+        "Lead client discovery and turn unclear business questions into testable product concepts, working POCs, demo flows, and roadmap decisions",
+        "Built ListingPal's AI listing-generation POC and landing page, turning basic property inputs into listing copy, social posts, ad copy, styling direction, and MLS/SEO-ready language in under 90 seconds",
+        "Built WeReady's Bailey Intelligence dashboard, translating founder inputs, GitHub signals, source health, risk scoring, and evidence trails into startup-readiness workflows",
+        "Own product strategy, UX, AI workflow design, front-end build, backend logic, demo readiness, and client iteration from first ask through working prototype",
+        "Currently building the website and sponsor strategy for a Tunisia youth soccer program, positioning the project for player advancement, community support, and donor outreach"
+      ],
+      "kinesso": [
+        "Scaled product design from 2 to 30 across the US and Poland, with responsibility for hiring, staffing, scope, resource planning, quality reviews, and engineering handoff across 20+ products",
+        "Built Kinesso's first UX research practice across 20+ products, adding interviews, testing, analytics, shared documentation, and UX checkpoints to project plans",
+        "Led UX research and strategy for a marketing intelligence suite used by 7,000+ people across 22 white-label brands, using findings and adoption data to set roadmap and product-support priorities",
+        "Led workshops on product discovery, ecosystem mapping, innovation, and research, then presented recommendations to executives and clients",
+        "Helped build the Digital Experience Audit platform, turning channel scores, benchmarks, and recommendations into a repeatable workflow with data visualization and client-ready outputs"
+      ],
+      "omnicom": [
+        "Supported oncology accounts as a freelance UX designer, combining UX design and account-management experience to strengthen regulated healthcare work"
+      ],
+      "heartbeat": [
+        "Led UX research and experience strategy for pharma and healthcare work, translating stakeholder input, competitive audits, and user needs into digital product direction",
+        "Created journey maps, site maps, user flows, wireframes, and prototypes for patient, HCP, and internal brand-team experiences across regulated healthcare programs",
+        "Partnered with strategy, creative, account, and engineering teams to move UX recommendations from research findings into build-ready product and campaign experiences"
+      ],
+      "account-management": [
+        {
+          "title": "Account Supervisor / Digital Strategist",
+          "employer": "Scout Marketing",
+          "location": "San Diego, CA",
+          "dateRange": "Jun 2015 – Jul 2018",
+          "bullets": [
+            "Promoted from Senior Account Executive and took the lead on Jazz Pharmaceuticals XYREM consumer work: unbranded campaigns across digital, print, and in-office channels that lifted traffic and engagement on the disease-state site",
+            "Led the launch of the first unbranded social campaign on Facebook and YouTube for the brand and for Jazz, built around real patients telling their own stories",
+            "Oversaw an unbranded digital campaign bridging disease state and branded work; banners held a 0.37% click-through rate against a 0.17% industry benchmark and doubled qualified traffic to the brand site"
+          ]
+        },
+        {
+          "title": "Senior Account Executive",
+          "employer": "FCB Health",
+          "location": "New York, NY",
+          "dateRange": "Jun 2014 – Jun 2015",
+          "bullets": [
+            "One of two consumer account leads on the agency's largest pharma business, managing the Actavis Namenda XR direct-to-consumer launch and its $20M brand budget",
+            "Owned the broadcast workstream for three national television commercials in one year, covering market research, med-legal review, FDA preclearance, pre- and post-production, talent and location coordination, director searches, and network clearances; the spots drove a 45% increase in new-to-brand consumers within seven weeks",
+            "Led the launch of an unbranded Alzheimer's caregiver community site with support resources, sponsorship exploration, and public relations pull-through; also oversaw the account's Assistant Account Executive across in-office tactics, national print, and sales representative support materials"
+          ]
+        },
+        {
+          "title": "Senior Account Executive",
+          "employer": "Barker DZP",
+          "location": "New York, NY",
+          "dateRange": "Dec 2013 – May 2014",
+          "bullets": [
+            "Led the social campaign for a new Tough Mudder loyalty program and oversaw PDI and Nice-Pak, the agency's largest account, across print, digital, and social"
+          ]
+        },
+        {
+          "title": "Senior Account Executive",
+          "employer": "Cline Davis & Mann",
+          "location": "New York, NY",
+          "dateRange": "Sep 2013 – Dec 2013",
+          "bullets": [
+            "Used campaign metrics to shape Pfizer digital recommendations for Lipitor's online presence and loyalty program during loss of exclusivity, and piloted a Zoloft savings offer to test market response"
+          ]
+        },
+        {
+          "title": "Assistant Account Executive to Account Executive",
+          "employer": "FCB Health",
+          "location": "New York, NY",
+          "dateRange": "Apr 2011 – Sep 2013",
+          "bullets": [
+            "Managed development and execution of the unbranded Teva NUVIGIL campaign for National Night Shift Workers' Day across Times Square NASDAQ, national television, Xbox Live, radio, outdoor, and consumer journals, working through media, digital, and print vendors; the campaign won the 2013 Manny Award for Best Unbranded Campaign",
+            "Coordinated the NUVIGIL.com consumer rebrand across desktop and mobile with the agency's digital strategy and development teams, plus the launch of a CRM patient support program and its online patient community",
+            "Worked alongside the HCP team on the NUVIGIL.com HCP site and sales aid, both of which won 2011 Pharma Choice awards",
+            "Owned weekly client status and financial reporting plus OPDP and review-committee submissions across the $10M consumer business, and contributed to the annual strategic recommendations"
+          ]
+        },
+        {
+          "title": "Account Coordinator",
+          "employer": "RosettaWishbone",
+          "location": "New York, NY",
+          "dateRange": "Sep 2010 – Mar 2011",
+          "bullets": [
+            "Primary client contact across brand teams, national affiliates, and vendors on an award-winning global unbranded pneumococcal disease awareness campaign for the Pfizer Prevenar 13 adult pre-launch",
+            "Facilitated an Africa and Middle East advisory board in Dubai and owned project briefs, scopes of work, key opinion leader communications, and client status and financial reports"
+          ]
+        }
+      ]
+    },
+    "sourceBulletIds": {
+      "hedgehox": [
+        "hedgehox-05",
+        "hedgehox-03",
+        "hedgehox-02",
+        "hedgehox-01"
+      ],
+      "one-block-away": [
+        "one-block-away-01",
+        "one-block-away-02",
+        "one-block-away-03",
+        "one-block-away-04",
+        "one-block-away-05"
+      ],
+      "kinesso": [
+        "kinesso-01",
+        "kinesso-06",
+        "kinesso-02",
+        "kinesso-07",
+        "kinesso-03"
+      ],
+      "omnicom": [
+        "omnicom-01"
+      ],
+      "heartbeat": [
+        "heartbeat-01",
+        "heartbeat-02",
+        "heartbeat-03"
+      ],
+      "account-management": [
+        "addition:scout-xyrem-account-lead",
+        "addition:scout-xyrem-unbranded-social",
+        "addition:scout-xyrem-bridging-campaign",
+        "account-management-02",
+        "account-management-03",
+        "addition:fcb-namenda-caregiver-site",
+        "addition:barker-tough-mudder-pdi",
+        "addition:cdm-lipitor-zoloft-digital",
+        "account-management-01",
+        "addition:fcb-nuvigil-rebrand-crm",
+        "addition:fcb-nuvigil-hcp-collaboration",
+        "addition:fcb-nuvigil-client-operations",
+        "addition:rosetta-prevenar-client-contact",
+        "addition:rosetta-dubai-advisory"
+      ]
+    }
+  },
+  "routeMode": "scoped-projects",
+  "route": {
+    "designConcept": "proof-grid",
+    "presentation": "showcase",
+    "heroIntent": "resume-support",
+    "showcaseSections": [
+      "chapters",
+      "capabilities"
+    ],
+    "capabilityProjects": {
+      "discover": "project-06.html",
+      "design": "project-05.html",
+      "build": "project-01.html",
+      "lead": "project-03.html"
+    },
+    "workHeading": "Selected work.",
+    "contactHeading": "Thanks for taking a look."
+  },
+  "hero": {
+    "eyebrow": "OLIXIR | Selected Work",
+    "tags": [
+      "Healthcare project delivery",
+      "Multichannel agency work",
+      "Workflow & quality systems"
+    ],
+    "intro": "I pulled together a few projects that may be useful alongside my resume for the OLIXIR project-management conversation. They show later work in regulated healthcare workflows, repeatable delivery systems, team coordination, and enterprise platforms."
+  },
+  "selectedProjects": [
+    "project-01.html",
+    "project-06.html",
+    "project-05.html",
+    "project-03.html"
+  ],
+  "contact": {
+    "prompt": "Email and my resume are below.",
+    "signoff": "Healthcare agency delivery | Raleigh, NC"
+  },
+  "coverLetter": null,
+  "copyReview": {
+    "humanizerVersion": "2.2.0",
+    "mode": "surface-only",
+    "status": "passed",
+    "reviewedAt": "2026-09-22T16:35:01.624Z",
+    "copySha256": "3c8461135b54d97c92e0d6604f6d70303c795cd307ca54cb829429c5f566e832",
+    "preserved": [
+      "content",
+      "structure",
+      "claims",
+      "ending"
+    ],
+    "rewriteAuthorized": false,
+    "reviewMethod": "humanizer-skill",
+    "semanticPassAttested": true,
+    "staticChecksPassed": true,
+    "finalAntiAiPass": true,
+    "remainingTells": []
+  },
+  "qa": {
+    "status": "qa-passed",
+    "builtAt": "2026-09-22T16:35:25.148Z",
+    "configInputSha256": "27647cfc2a0aef2800f540aca890324f0243279896e3ec61a5b4f98f2b4cf1df",
+    "sourceResumeSha256": "309a2ea377c45481d6826da8559d707319f85f53e6d68b3e10a537d1864e91e7",
+    "resumeFoundation": {
+      "id": "wally-mostafa-resume-2026-07-03",
+      "sourcePdfSha256": "f9b05b6c3c134262b1af6c5734363daf4385cf335407a139779a37d138adf1aa"
+    },
+    "resumeBase": {
+      "mode": "account-leadership",
+      "sourceProfiles": [
+        {
+          "id": "account-leadership",
+          "version": 1
+        }
+      ],
+      "leadProfileId": "account-leadership",
+      "accountPresentation": "agency-progression",
+      "action": "tailor-to-jd",
+      "registryVersion": 1,
+      "registrySha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108"
+    },
+    "artifactHashes": {
+      "routeSha256": "b84a2cf043cb6f195f7a5304f4caa8da125223d26a8b8afda4a3c5f24ea54e3b",
+      "designConceptCssSha256": "73052eae58d446422f0ff921361877b1ca4e0062ec7ee25daace39b4a4791195",
+      "resumePdfSha256": "f5e29341f5cb1f823965041b7a9d112a92d4d3dfb77b1e66437a49e190c11ec9",
+      "coverLetterPdfSha256": null,
+      "coverLetterMarkdownSha256": null,
+      "scopedProjectSha256": {
+        "project-01.html": "6024c4e95791e1a4f313ad76143ae19c7e7dee660d25cec21d1ccec7edc5019b",
+        "project-06.html": "dd086527e501be143e840032a9057c96614e5be9b6c87fab5769093bd2593264",
+        "project-05.html": "dd29122cc00ab923eca75ff632a534b2d42d9ded7c0d16cda4fe7da954bd2a9b",
+        "project-03.html": "7eebf0f914a02e4dba7c4f07a64ddd201712cd7ad2f55480ba32258b0bf031ac"
+      },
+      "scopedProjectAssetSha256": {}
+    },
+    "renderer": {
+      "browser": {
+        "name": "chrome-headless-shell",
+        "version": "Google Chrome for Testing 153.0.8010.12"
+      },
+      "htmlPath": "tmp/tailored-resumes/olixir-project-manager.html",
+      "pdfPath": "output/pdf/Wally-Mostafa-OLIXIR-Project-Manager-Resume.pdf",
+      "fontWait": true,
+      "fontProfile": "portfolio-pdf"
+    },
+    "coverLetterRenderer": null,
+    "coverLetter": null,
+    "ats": {
+      "ok": true,
+      "pdfPath": "output/pdf/Wally-Mostafa-OLIXIR-Project-Manager-Resume.pdf",
+      "pageCount": 2,
+      "fileSize": 81466,
+      "annotations": [
+        {
+          "page": 1,
+          "uri": "mailto:wmostafa12@gmail.com"
+        },
+        {
+          "page": 1,
+          "uri": "https://linkedin.com/in/wallymo"
+        },
+        {
+          "page": 1,
+          "uri": "https://wally-mostafa.github.io/olixir-project-manager/"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/6748"
+        }
+      ],
+      "fontCompatibility": {
+        "type3Fonts": false
+      },
+      "coverage": [
+        {
+          "id": "project-management-related-experience",
+          "requirement": "Bring at least three years of project management, production, marketing operations, administration, or related experience.",
+          "priority": "hard-gate",
+          "evidenceStatus": "direct",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "eight years",
+            "project delivery",
+            "timelines"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "pharma-marketing-and-advertising",
+          "requirement": "Bring pharmaceutical marketing and advertising experience.",
+          "priority": "hard-gate",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "pharmaceutical advertising",
+            "MLR",
+            "HCP"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "multichannel-project-delivery",
+          "requirement": "Own mid-complexity multichannel deliverables from concept through deployment while managing timing, quality, and budget.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "multichannel",
+            "$10M-$20M",
+            "quality reviews"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "cross-functional-agency-collaboration",
+          "requirement": "Coordinate Account Management, Finance, Production, Creative, Editorial, Technology, Strategy, vendors, and client digital teams.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "cross-functional",
+            "vendor coordination",
+            "engineering handoff"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "status-documentation-routing-and-quality",
+          "requirement": "Provide status updates, document next steps, manage project routing, maintain organized files, and protect quality and timing.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "status and financial reporting",
+            "review routing",
+            "quality reviews"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "scope-estimates-and-financial-coordination",
+          "requirement": "Support scopes of work, estimates, timelines, financial reporting, and finance-team coordination.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "scopes",
+            "financial reporting",
+            "rate cards"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "risk-escalation-and-process-improvement",
+          "requirement": "Identify bottlenecks, escalate issues with proposed solutions, and contribute to process improvement.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "risk visibility",
+            "evidence gaps",
+            "repeatable workflow"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "office-adobe-and-agency-tools",
+          "requirement": "Use Microsoft Office, Adobe Acrobat, and agency project or financial tools; Workfront, Egnyte, Microsoft Project, or SAP knowledge is useful.",
+          "priority": "preferred",
+          "evidenceStatus": "adjacent",
+          "matchMode": "contextual",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "status and financial reporting",
+            "shared documentation"
+          ],
+          "missingTerms": [
+            "workflow tools"
+          ]
+        },
+        {
+          "id": "freelance-engagement-terms",
+          "requirement": "Confirm the freelance scope, assigned brand, manager, work setting, weekly hours, duration, classification, rate, and required tools.",
+          "priority": "context",
+          "evidenceStatus": "none",
+          "matchMode": "not-supported",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "freelance scope",
+            "weekly hours",
+            "contract rate"
+          ]
+        }
+      ],
+      "failures": [],
+      "warnings": []
+    },
+    "humanizer": {
+      "status": "passed",
+      "version": "2.2.0",
+      "mode": "surface-only",
+      "reviewedAt": "2026-09-22T16:35:01.624Z",
+      "copySha256": "3c8461135b54d97c92e0d6604f6d70303c795cd307ca54cb829429c5f566e832",
+      "reviewMethod": "humanizer-skill",
+      "semanticPassAttested": true,
+      "staticChecksPassed": true
+    },
+    "route": {
+      "viewports": [
+        {
+          "name": "desktop",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-01",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-06",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-05",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-03",
+          "errors": []
+        },
+        {
+          "name": "mobile",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-01",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-06",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-05",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-03",
+          "errors": []
+        },
+        {
+          "name": "desktop-stack",
+          "errors": []
+        },
+        {
+          "name": "desktop-laptop",
+          "errors": []
+        },
+        {
+          "name": "desktop-short",
+          "errors": []
+        }
+      ],
+      "errors": []
+    }
+  },
+  "privacy": {
+    "publicSafe": true,
+    "notes": "Contains only the user's public-safe role description, OLIXIR's public company and job information, and sanitized evidence from the public resume and portfolio. It excludes the contact's identity, private messages, compensation decisions, personal eligibility details, and submission state."
+  }
+}
