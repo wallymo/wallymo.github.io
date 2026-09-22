@@ -27,6 +27,8 @@
   let chapterTravel = 0;
   let chapterStartOffset = 0;
   let stackOffsets = [];
+  let stackExitOffsets = [];
+  let stackStep = 0;
   let resizeFrame;
   let entryFrame;
   let lastSize = '';
@@ -85,6 +87,8 @@
 
   function clearStack() {
     stackOffsets = [];
+    stackExitOffsets = [];
+    stackStep = 0;
     work?.classList.remove('work-stack-active', 'work-stack-compact', 'work-stack-condensed');
     work?.style.removeProperty('--stack-step');
     cards.forEach((card) => {
@@ -121,6 +125,8 @@
       card.style.setProperty('--stack-top', `${top + i * step}px`);
       card.style.setProperty('--stack-index', String(i + 1));
     });
+    stackExitOffsets = cards.map(() => 0);
+    stackStep = step;
     work.style.setProperty('--stack-tail', `${Math.min(140, window.innerHeight * .15)}px`);
     work.style.setProperty('--stack-step', `${step}px`);
     work.classList.add('work-stack-active');
@@ -134,10 +140,20 @@
     // of caching document-level animation starts that can drift after a refresh.
     const position = -grid.getBoundingClientRect().top;
     const end = stackOffsets.at(-1);
+    // Native sticky releases cards at different moments because their top
+    // insets differ. Batch the reads, remove the prior frame's correction,
+    // then keep every covered card locked to the final card's exit path.
+    const nativeTops = cards.map((card, i) => (
+      card.getBoundingClientRect().top - (stackExitOffsets[i] || 0)
+    ));
+    const lastTop = nativeTops.at(-1);
     cards.slice(0, -1).forEach((card, i) => {
       const progress = Math.max(0, Math.min(1, (position - stackOffsets[i]) / (end - stackOffsets[i])));
       const scale = 1 - .12 * ((cards.length - 1 - i) / (cards.length - 1)) * progress;
-      card.style.transform = `scale(${scale})`;
+      const desiredTop = lastTop - (cards.length - 1 - i) * stackStep;
+      const exitOffset = Math.min(0, desiredTop - nativeTops[i]);
+      stackExitOffsets[i] = exitOffset;
+      card.style.transform = `translate3d(0, ${exitOffset}px, 0) scale(${scale})`;
       card.classList.toggle('is-covered', position >= stackOffsets[i + 1] - 8);
     });
   }

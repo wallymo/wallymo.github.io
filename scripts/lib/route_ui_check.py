@@ -169,6 +169,8 @@ def main() -> int:
                         )
                 if expect_work_stack:
                     try:
+                        page.evaluate("scrollTo({ top: 0, behavior: 'instant' })")
+                        page.wait_for_timeout(32)
                         page.wait_for_function(
                             "document.querySelector('#work')?.classList.contains('work-stack-active')",
                             timeout=5000,
@@ -292,6 +294,7 @@ def main() -> int:
                               return {
                                 gap,
                                 step,
+                                lastTop,
                                 gridHeight: grid.getBoundingClientRect().height,
                                 tailHeight,
                                 documentTops: cards.map((card) => card.getBoundingClientRect().top + scrollY),
@@ -327,8 +330,15 @@ def main() -> int:
 
                         exit_failures = []
                         release_start = exit_setup["releaseStart"]
-                        release_sweep = int(max(expected_gap, exit_setup["step"])) + 48
-                        for offset in range(-release_sweep, release_sweep + 1, 4):
+                        release_lead = int(max(expected_gap, exit_setup["step"])) + 48
+                        release_tail = int(exit_setup["lastTop"] + exit_setup["step"]) + 48
+                        page.evaluate(
+                            "(top) => scrollTo({ top, behavior: 'instant' })",
+                            release_start - release_lead,
+                        )
+                        page.wait_for_timeout(250)
+                        previous_tops = None
+                        for offset in range(-release_lead, release_tail + 1, 4):
                             page.evaluate(
                                 "(top) => scrollTo({ top, behavior: 'instant' })",
                                 release_start + offset,
@@ -342,12 +352,17 @@ def main() -> int:
                                   return {
                                     scrollY,
                                     step,
+                                    tops: cards.map((card) => card.getBoundingClientRect().top),
                                     pairs: cards.slice(0, -1).map((card, index) => {
                                       const next = cards[index + 1];
                                       const cardRect = card.getBoundingClientRect();
                                       const nextRect = next.getBoundingClientRect();
                                       const titleRect = card.querySelector('h3').getBoundingClientRect();
-                                      const labelRect = card.querySelector('.work-stack-label').getBoundingClientRect();
+                                      const label = card.querySelector('.work-stack-label');
+                                      const labelRect = label.getBoundingClientRect();
+                                      const labelContentBottom = Math.max(
+                                        ...[...label.children].map((child) => child.getBoundingClientRect().bottom)
+                                      );
                                       const exposedTitlePixels = Math.max(
                                         0,
                                         Math.min(titleRect.bottom, nextRect.top)
@@ -356,24 +371,47 @@ def main() -> int:
                                       return {
                                         index,
                                         gap: nextRect.top - cardRect.top,
+                                        covered: card.classList.contains('is-covered'),
+                                        labelOpacity: parseFloat(getComputedStyle(label).opacity),
+                                        labelContentBottom,
+                                        nextTop: nextRect.top,
                                         exposedTitlePixels,
                                       };
                                     }),
                                   };
                                 }"""
                             )
+                            if previous_tops is not None:
+                                frame_deltas = [
+                                    current - previous
+                                    for current, previous in zip(
+                                        exit_state["tops"], previous_tops
+                                    )
+                                ]
+                                if max(frame_deltas) - min(frame_deltas) > 1:
+                                    if len(exit_failures) < 20:
+                                        exit_failures.append(
+                                            {
+                                                "scrollY": exit_state["scrollY"],
+                                                "unsynchronizedFrameDeltas": frame_deltas,
+                                            }
+                                        )
+                            previous_tops = exit_state["tops"]
                             for pair in exit_state["pairs"]:
                                 if (
-                                    pair["gap"] < -1
-                                    or pair["gap"] > exit_state["step"] + 1
+                                    abs(pair["gap"] - exit_state["step"]) > 1
+                                    or not pair["covered"]
+                                    or pair["labelOpacity"] < 0.99
+                                    or pair["labelContentBottom"] > pair["nextTop"] + 1
                                     or pair["exposedTitlePixels"] > 1
                                 ):
-                                    exit_failures.append(
-                                        {
-                                            "scrollY": exit_state["scrollY"],
-                                            **pair,
-                                        }
-                                    )
+                                    if len(exit_failures) < 20:
+                                        exit_failures.append(
+                                            {
+                                                "scrollY": exit_state["scrollY"],
+                                                **pair,
+                                            }
+                                        )
                         if exit_failures:
                             check_errors.append(
                                 "desktop work stack exit exposes covered content or breaks its rail: "
