@@ -3647,9 +3647,41 @@
       ],
       "designConceptCssPath": "olixir-account-director/design-concept.css",
       "resumePdfPath": "output/pdf/Wally-Mostafa-OLIXIR-Account-Director-Resume.pdf",
-      "publishStatus": "local-only",
+      "publishStatus": "live-verified",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-09-22T16:42:27.587Z"
+      "builtAt": "2026-09-22T16:42:27.587Z",
+      "verification": {
+        "verifiedAt": "2026-09-22T16:47:12.284Z",
+        "routeUrl": "https://wally-mostafa.github.io/olixir-account-director/",
+        "resumePdfUrl": "https://wally-mostafa.github.io/output/pdf/Wally-Mostafa-OLIXIR-Account-Director-Resume.pdf",
+        "configUrl": "https://wally-mostafa.github.io/scripts/packages/olixir-account-director.json",
+        "publicBase": "https://wally-mostafa.github.io/",
+        "publishRepository": "wally-mostafa/wally-mostafa.github.io",
+        "designConceptCssUrl": "https://wally-mostafa.github.io/olixir-account-director/design-concept.css",
+        "designConceptCssSha256": "73052eae58d446422f0ff921361877b1ca4e0062ec7ee25daace39b4a4791195",
+        "projectUrls": [
+          "https://wally-mostafa.github.io/olixir-account-director/project-01.html",
+          "https://wally-mostafa.github.io/olixir-account-director/project-06.html",
+          "https://wally-mostafa.github.io/olixir-account-director/project-03.html",
+          "https://wally-mostafa.github.io/olixir-account-director/project-07.html"
+        ],
+        "redirectUrls": [],
+        "configSha256": "73a688964827035d37460cb44f904fa1156c7c90bbe0b9d1925ee54aec6247b7",
+        "pdfSha256": "6dd160212dc56e8ba63ef3f77c8c2c74b6794e1f88295ba014dc2d8a8abdea50",
+        "resumeBaseProfilesUrl": "https://wally-mostafa.github.io/scripts/resume-base-profiles.json",
+        "resumeBaseProfilesSha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108",
+        "routeSha256": "f42fa45f4725ce69ef0ff18100a4c2c6b052b583fb9e41a7f249d35e57d85b0f",
+        "scopedProjectSha256": {
+          "project-01.html": "0ca86f99fe58cf5bc232fe0192f3e2f65f400554bdbff6ff0691cb5ec3cc4c15",
+          "project-06.html": "d7c4990cfce600dd3c23f97b9eb51e4a85e34f168330c952aaa8fccf24ac1072",
+          "project-03.html": "40388cc31479edd8a7650c914759ddb2b2de6315b2969cf18c2fc3504c596206",
+          "project-07.html": "70d255cb9301242826cfb23db85a36b914114618186cc3f0abb229458236fee1"
+        },
+        "scopedProjectAssetUrls": [],
+        "scopedProjectAssetSha256": {},
+        "configInputSha256": "6e5be39894679b97eaf5028392413bfec3e5ef72f6ff825e900cbf0b6ad65f79",
+        "qaBuiltAt": "2026-09-22T16:42:27.587Z"
+      }
     },
     {
       "slug": "omidria-product-marketing",
