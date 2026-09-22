@@ -542,6 +542,47 @@
     {
       "workflowVersion": 2,
       "contractRevision": 7,
+      "slug": "avalere-health-account-director",
+      "roleTitle": "Avalere Health Account Director",
+      "artifactStem": "Avalere-Health-Account-Director",
+      "configPath": "scripts/packages/avalere-health-account-director.json",
+      "targetLane": "client-account-delivery",
+      "evidenceMode": "resume-primary",
+      "fitClass": "adjacent",
+      "positioningLane": "client-account-delivery",
+      "bridgeType": "level-transfer",
+      "applicationStrategy": "transferable",
+      "resumeBaseMode": "account-leadership",
+      "resumeBaseLeadProfile": "account-leadership",
+      "resumeBaseAction": "tailor-to-jd",
+      "accountPresentation": "agency-progression",
+      "resumeBaseProfiles": [
+        {
+          "id": "account-leadership",
+          "version": 1
+        }
+      ],
+      "routeMode": "scoped-projects",
+      "designConcept": "editorial-proof",
+      "publicBase": "https://wallymo.github.io/",
+      "publishRepository": "wallymo/wallymo.github.io",
+      "selectedProjects": [
+        "project-01.html",
+        "project-06.html",
+        "project-02.html",
+        "project-03.html"
+      ],
+      "designConceptCssPath": "avalere-health-account-director/design-concept.css",
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Avalere-Health-Account-Director-Resume.pdf",
+      "coverLetterPdfPath": "output/pdf/Wally-Mostafa-Avalere-Health-Account-Director-Cover-Letter.pdf",
+      "coverLetterMarkdownPath": "output/pdf/Wally-Mostafa-Avalere-Health-Account-Director-Cover-Letter.md",
+      "publishStatus": "local-only",
+      "qaStatus": "qa-passed",
+      "builtAt": "2026-09-22T19:15:22.987Z"
+    },
+    {
+      "workflowVersion": 2,
+      "contractRevision": 7,
       "slug": "biolumina",
       "roleTitle": "Experience Strategy & Digital Transformation",
       "artifactStem": "BioLumina",
@@ -3544,77 +3585,6 @@
     {
       "workflowVersion": 2,
       "contractRevision": 7,
-      "slug": "olixir-project-manager",
-      "roleTitle": "OLIXIR Project Manager",
-      "artifactStem": "OLIXIR-Project-Manager",
-      "configPath": "scripts/packages/olixir-project-manager.json",
-      "targetLane": "client-account-delivery",
-      "evidenceMode": "resume-primary",
-      "fitClass": "strong",
-      "positioningLane": "client-account-delivery",
-      "bridgeType": "direct",
-      "applicationStrategy": "direct",
-      "resumeBaseMode": "account-leadership",
-      "resumeBaseLeadProfile": "account-leadership",
-      "resumeBaseAction": "tailor-to-jd",
-      "accountPresentation": "agency-progression",
-      "resumeBaseProfiles": [
-        {
-          "id": "account-leadership",
-          "version": 1
-        }
-      ],
-      "routeMode": "scoped-projects",
-      "designConcept": "proof-grid",
-      "publicBase": "https://wally-mostafa.github.io/",
-      "publishRepository": "wally-mostafa/wally-mostafa.github.io",
-      "selectedProjects": [
-        "project-01.html",
-        "project-06.html",
-        "project-05.html",
-        "project-03.html"
-      ],
-      "designConceptCssPath": "olixir-project-manager/design-concept.css",
-      "resumePdfPath": "output/pdf/Wally-Mostafa-OLIXIR-Project-Manager-Resume.pdf",
-      "publishStatus": "live-verified",
-      "qaStatus": "qa-passed",
-      "builtAt": "2026-09-22T16:35:25.148Z",
-      "verification": {
-        "verifiedAt": "2026-09-22T16:40:58.403Z",
-        "routeUrl": "https://wally-mostafa.github.io/olixir-project-manager/",
-        "resumePdfUrl": "https://wally-mostafa.github.io/output/pdf/Wally-Mostafa-OLIXIR-Project-Manager-Resume.pdf",
-        "configUrl": "https://wally-mostafa.github.io/scripts/packages/olixir-project-manager.json",
-        "publicBase": "https://wally-mostafa.github.io/",
-        "publishRepository": "wally-mostafa/wally-mostafa.github.io",
-        "designConceptCssUrl": "https://wally-mostafa.github.io/olixir-project-manager/design-concept.css",
-        "designConceptCssSha256": "73052eae58d446422f0ff921361877b1ca4e0062ec7ee25daace39b4a4791195",
-        "projectUrls": [
-          "https://wally-mostafa.github.io/olixir-project-manager/project-01.html",
-          "https://wally-mostafa.github.io/olixir-project-manager/project-06.html",
-          "https://wally-mostafa.github.io/olixir-project-manager/project-05.html",
-          "https://wally-mostafa.github.io/olixir-project-manager/project-03.html"
-        ],
-        "redirectUrls": [],
-        "configSha256": "0e3b2e0907778732194253845a1c800d037e01a2143a2f1317cab8cb9ca4d09a",
-        "pdfSha256": "f5e29341f5cb1f823965041b7a9d112a92d4d3dfb77b1e66437a49e190c11ec9",
-        "resumeBaseProfilesUrl": "https://wally-mostafa.github.io/scripts/resume-base-profiles.json",
-        "resumeBaseProfilesSha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108",
-        "routeSha256": "b84a2cf043cb6f195f7a5304f4caa8da125223d26a8b8afda4a3c5f24ea54e3b",
-        "scopedProjectSha256": {
-          "project-01.html": "6024c4e95791e1a4f313ad76143ae19c7e7dee660d25cec21d1ccec7edc5019b",
-          "project-06.html": "dd086527e501be143e840032a9057c96614e5be9b6c87fab5769093bd2593264",
-          "project-05.html": "dd29122cc00ab923eca75ff632a534b2d42d9ded7c0d16cda4fe7da954bd2a9b",
-          "project-03.html": "7eebf0f914a02e4dba7c4f07a64ddd201712cd7ad2f55480ba32258b0bf031ac"
-        },
-        "scopedProjectAssetUrls": [],
-        "scopedProjectAssetSha256": {},
-        "configInputSha256": "27647cfc2a0aef2800f540aca890324f0243279896e3ec61a5b4f98f2b4cf1df",
-        "qaBuiltAt": "2026-09-22T16:35:25.148Z"
-      }
-    },
-    {
-      "workflowVersion": 2,
-      "contractRevision": 7,
       "slug": "olixir-account-director",
       "roleTitle": "OLIXIR Account Director",
       "artifactStem": "OLIXIR-Account-Director",
@@ -3681,6 +3651,77 @@
         "scopedProjectAssetSha256": {},
         "configInputSha256": "6e5be39894679b97eaf5028392413bfec3e5ef72f6ff825e900cbf0b6ad65f79",
         "qaBuiltAt": "2026-09-22T16:42:27.587Z"
+      }
+    },
+    {
+      "workflowVersion": 2,
+      "contractRevision": 7,
+      "slug": "olixir-project-manager",
+      "roleTitle": "OLIXIR Project Manager",
+      "artifactStem": "OLIXIR-Project-Manager",
+      "configPath": "scripts/packages/olixir-project-manager.json",
+      "targetLane": "client-account-delivery",
+      "evidenceMode": "resume-primary",
+      "fitClass": "strong",
+      "positioningLane": "client-account-delivery",
+      "bridgeType": "direct",
+      "applicationStrategy": "direct",
+      "resumeBaseMode": "account-leadership",
+      "resumeBaseLeadProfile": "account-leadership",
+      "resumeBaseAction": "tailor-to-jd",
+      "accountPresentation": "agency-progression",
+      "resumeBaseProfiles": [
+        {
+          "id": "account-leadership",
+          "version": 1
+        }
+      ],
+      "routeMode": "scoped-projects",
+      "designConcept": "proof-grid",
+      "publicBase": "https://wally-mostafa.github.io/",
+      "publishRepository": "wally-mostafa/wally-mostafa.github.io",
+      "selectedProjects": [
+        "project-01.html",
+        "project-06.html",
+        "project-05.html",
+        "project-03.html"
+      ],
+      "designConceptCssPath": "olixir-project-manager/design-concept.css",
+      "resumePdfPath": "output/pdf/Wally-Mostafa-OLIXIR-Project-Manager-Resume.pdf",
+      "publishStatus": "live-verified",
+      "qaStatus": "qa-passed",
+      "builtAt": "2026-09-22T16:35:25.148Z",
+      "verification": {
+        "verifiedAt": "2026-09-22T16:40:58.403Z",
+        "routeUrl": "https://wally-mostafa.github.io/olixir-project-manager/",
+        "resumePdfUrl": "https://wally-mostafa.github.io/output/pdf/Wally-Mostafa-OLIXIR-Project-Manager-Resume.pdf",
+        "configUrl": "https://wally-mostafa.github.io/scripts/packages/olixir-project-manager.json",
+        "publicBase": "https://wally-mostafa.github.io/",
+        "publishRepository": "wally-mostafa/wally-mostafa.github.io",
+        "designConceptCssUrl": "https://wally-mostafa.github.io/olixir-project-manager/design-concept.css",
+        "designConceptCssSha256": "73052eae58d446422f0ff921361877b1ca4e0062ec7ee25daace39b4a4791195",
+        "projectUrls": [
+          "https://wally-mostafa.github.io/olixir-project-manager/project-01.html",
+          "https://wally-mostafa.github.io/olixir-project-manager/project-06.html",
+          "https://wally-mostafa.github.io/olixir-project-manager/project-05.html",
+          "https://wally-mostafa.github.io/olixir-project-manager/project-03.html"
+        ],
+        "redirectUrls": [],
+        "configSha256": "0e3b2e0907778732194253845a1c800d037e01a2143a2f1317cab8cb9ca4d09a",
+        "pdfSha256": "f5e29341f5cb1f823965041b7a9d112a92d4d3dfb77b1e66437a49e190c11ec9",
+        "resumeBaseProfilesUrl": "https://wally-mostafa.github.io/scripts/resume-base-profiles.json",
+        "resumeBaseProfilesSha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108",
+        "routeSha256": "b84a2cf043cb6f195f7a5304f4caa8da125223d26a8b8afda4a3c5f24ea54e3b",
+        "scopedProjectSha256": {
+          "project-01.html": "6024c4e95791e1a4f313ad76143ae19c7e7dee660d25cec21d1ccec7edc5019b",
+          "project-06.html": "dd086527e501be143e840032a9057c96614e5be9b6c87fab5769093bd2593264",
+          "project-05.html": "dd29122cc00ab923eca75ff632a534b2d42d9ded7c0d16cda4fe7da954bd2a9b",
+          "project-03.html": "7eebf0f914a02e4dba7c4f07a64ddd201712cd7ad2f55480ba32258b0bf031ac"
+        },
+        "scopedProjectAssetUrls": [],
+        "scopedProjectAssetSha256": {},
+        "configInputSha256": "27647cfc2a0aef2800f540aca890324f0243279896e3ec61a5b4f98f2b4cf1df",
+        "qaBuiltAt": "2026-09-22T16:35:25.148Z"
       }
     },
     {
