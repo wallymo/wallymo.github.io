@@ -575,43 +575,9 @@
       ],
       "designConceptCssPath": "biolumina/design-concept.css",
       "resumePdfPath": "output/pdf/Wally-Mostafa-BioLumina-Resume.pdf",
-      "publishStatus": "live-verified",
+      "publishStatus": "local-only",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-09-21T22:32:48.067Z",
-      "verification": {
-        "verifiedAt": "2026-09-21T22:36:42.092Z",
-        "routeUrl": "https://wally-mostafa.github.io/biolumina/",
-        "resumePdfUrl": "https://wally-mostafa.github.io/output/pdf/Wally-Mostafa-BioLumina-Resume.pdf",
-        "configUrl": "https://wally-mostafa.github.io/scripts/packages/biolumina.json",
-        "publicBase": "https://wally-mostafa.github.io/",
-        "publishRepository": "wally-mostafa/wally-mostafa.github.io",
-        "designConceptCssUrl": "https://wally-mostafa.github.io/biolumina/design-concept.css",
-        "designConceptCssSha256": "73052eae58d446422f0ff921361877b1ca4e0062ec7ee25daace39b4a4791195",
-        "projectUrls": [
-          "https://wally-mostafa.github.io/biolumina/project-08.html",
-          "https://wally-mostafa.github.io/biolumina/project-01.html",
-          "https://wally-mostafa.github.io/biolumina/project-04.html",
-          "https://wally-mostafa.github.io/biolumina/project-03.html",
-          "https://wally-mostafa.github.io/biolumina/project-05.html"
-        ],
-        "redirectUrls": [],
-        "configSha256": "3981f8bf25ca2acdfc41303df1b8597085b31059a63251c91ce6f8bdad5900b3",
-        "pdfSha256": "95a7e91451545fe304e57bf84cf31a487d0ed47336da3a62e0b5aac764316045",
-        "resumeBaseProfilesUrl": "https://wally-mostafa.github.io/scripts/resume-base-profiles.json",
-        "resumeBaseProfilesSha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108",
-        "routeSha256": "29e6c9f6eadd6e449db0007b31f9328b6ca62681ce5cd217a4fbb08929070259",
-        "scopedProjectSha256": {
-          "project-08.html": "934413f7d79dbc8a1ca862f104495a86fdc376a12977723028d841ce416a60b2",
-          "project-01.html": "05049631d5e35b71b44ffac1e7fcc04b3f7453413428b914495ee1ef73770c62",
-          "project-04.html": "5090b26d5e1ad0ac0a5dc36fd7101d85c2c668364eab5c096955ee39ba8ded94",
-          "project-03.html": "ce2b75c4e3d7b791c9a0716b1be1fb564194dcbb65d39f98af579068e5093773",
-          "project-05.html": "0b31655627cecb22537e0a03a2dcf4f09fc4b18a920d3e463ffaa90eaee948c5"
-        },
-        "scopedProjectAssetUrls": [],
-        "scopedProjectAssetSha256": {},
-        "configInputSha256": "a86e51fe4a784fdd7d61848c39b8d79279567bd649ae615f24c96cb8ed790c0d",
-        "qaBuiltAt": "2026-09-21T22:32:48.067Z"
-      }
+      "builtAt": "2026-09-22T00:23:35.310Z"
     },
     {
       "workflowVersion": 2,
@@ -5307,41 +5273,9 @@
       ],
       "designConceptCssPath": "ux-design-lead/design-concept.css",
       "resumePdfPath": "output/pdf/Wally-Mostafa-UX-Design-Lead-Resume.pdf",
-      "publishStatus": "live-verified",
+      "publishStatus": "local-only",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-09-21T20:21:27.763Z",
-      "verification": {
-        "verifiedAt": "2026-09-21T20:25:13.525Z",
-        "routeUrl": "https://wally-mostafa.github.io/ux-design-lead/",
-        "resumePdfUrl": "https://wally-mostafa.github.io/output/pdf/Wally-Mostafa-UX-Design-Lead-Resume.pdf",
-        "configUrl": "https://wally-mostafa.github.io/scripts/packages/ux-design-lead.json",
-        "publicBase": "https://wally-mostafa.github.io/",
-        "publishRepository": "wally-mostafa/wally-mostafa.github.io",
-        "designConceptCssUrl": "https://wally-mostafa.github.io/ux-design-lead/design-concept.css",
-        "designConceptCssSha256": "73052eae58d446422f0ff921361877b1ca4e0062ec7ee25daace39b4a4791195",
-        "projectUrls": [
-          "https://wally-mostafa.github.io/ux-design-lead/project-05.html",
-          "https://wally-mostafa.github.io/ux-design-lead/project-04.html",
-          "https://wally-mostafa.github.io/ux-design-lead/project-06.html",
-          "https://wally-mostafa.github.io/ux-design-lead/project-03.html"
-        ],
-        "redirectUrls": [],
-        "configSha256": "6ebcacfc3c1c6544ca5babec9d747997e5db71e026cf984ce2cb8751937b7b73",
-        "pdfSha256": "b26a84933b85c0f9089c40c140380dd440158c79078b3b0edd54eb145a1805de",
-        "resumeBaseProfilesUrl": "https://wally-mostafa.github.io/scripts/resume-base-profiles.json",
-        "resumeBaseProfilesSha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108",
-        "routeSha256": "251199f47512f2fbcb8fffd654f1a528d9720bb80e8c0224e25358516fab4b31",
-        "scopedProjectSha256": {
-          "project-05.html": "bd23627faa2470245930687b2221fa029fc5aaf32a4bafcca1e2122ae239b807",
-          "project-04.html": "57ed841f445fe959d427f8a691fb68da92647355087312565cba96b95e85a3fc",
-          "project-06.html": "a8d58dc118e949fc5c6f133c29b63fa2fead8667aa3933cd4ca693e1e9ae0115",
-          "project-03.html": "5477b8b07d7249947021499470143be8ecc8837df2c70a8854e1cf7547ee3c8f"
-        },
-        "scopedProjectAssetUrls": [],
-        "scopedProjectAssetSha256": {},
-        "configInputSha256": "60fa683fb8044a9bc8c8d297b038cc13876a5194f31d23e750f61361c95cfe64",
-        "qaBuiltAt": "2026-09-21T20:21:27.763Z"
-      }
+      "builtAt": "2026-09-22T00:23:56.238Z"
     },
     {
       "workflowVersion": 2,
