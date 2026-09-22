@@ -81,8 +81,15 @@
     card.addEventListener('focus', () => {
       if (!work.classList.contains('work-stack-active')) return;
       const index = cards.indexOf(card);
+      // Focus-visible deliberately reveals the complete card by suppressing its
+      // transform. Clear the hidden correction so blur can measure cleanly.
+      if (card.matches(':focus-visible')) {
+        stackExitOffsets[index] = 0;
+        card.style.removeProperty('transform');
+      }
       instantScroll(grid.getBoundingClientRect().top + window.scrollY + stackOffsets[index]);
     });
+    card.addEventListener('blur', syncStack);
   });
 
   function clearStack() {
@@ -144,7 +151,8 @@
     // insets differ. Batch the reads, remove the prior frame's correction,
     // then keep every covered card locked to the final card's exit path.
     const nativeTops = cards.map((card, i) => (
-      card.getBoundingClientRect().top - (stackExitOffsets[i] || 0)
+      card.getBoundingClientRect().top
+        - (card.matches(':focus-visible') ? 0 : (stackExitOffsets[i] || 0))
     ));
     const lastTop = nativeTops.at(-1);
     cards.slice(0, -1).forEach((card, i) => {
