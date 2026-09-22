@@ -19,7 +19,7 @@ html.proof-grid-case-study {
   --radius-m: 0px;
   --radius-l: 0px;
   --font-display: "Syne", sans-serif;
-  --font-body: "Avenir Next", Avenir, "Segoe UI", Helvetica, Arial, sans-serif;
+  --font-body: "Instrument Sans", sans-serif;
   --font-mono: "SFMono-Regular", "SF Mono", Consolas, monospace;
   --dark-base: #18191b;
   --dark-raised: #222326;
@@ -41,14 +41,17 @@ html.proof-grid-case-study {
 }
 
 html.proof-grid-case-study ::selection { background: #2454c6; color: #fff; }
+html.proof-grid-case-study :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
 html.proof-grid-case-study .site-nav {
   background: rgb(247 247 244 / .94);
   border-bottom-color: var(--ink);
 }
 html.proof-grid-case-study .site-nav .name { font-family: var(--font-body); }
 html.proof-grid-case-study :is(.nav-cta, .project-hero-jump, .btn-demo) {
+  min-height: 48px;
   background: var(--accent);
   color: #fff;
+  border: 1px solid var(--ink);
   border-radius: 0;
   box-shadow: 3px 3px 0 rgb(36 84 198 / .20);
 }

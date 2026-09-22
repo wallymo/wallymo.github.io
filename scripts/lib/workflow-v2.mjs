@@ -2217,7 +2217,7 @@ export function validateV2Config(
   pushError(errors, /^[A-Za-z0-9]+(?:-[A-Za-z0-9]+)*$/.test(config?.artifactStem || ''), 'artifactStem must contain only letters, numbers, and hyphens');
   pushError(errors, fitClasses.has(config?.fitClass), 'fitClass must be strong, adjacent, stretch, or not-fit');
   pushError(errors, routeModes.has(config?.routeMode), 'routeMode must be canonical-projects or scoped-projects');
-  pushError(errors, Array.isArray(config?.selectedProjects) && config.selectedProjects.length >= 3 && config.selectedProjects.length <= 5, 'selectedProjects must include 3 to 5 projects');
+  pushError(errors, Array.isArray(config?.selectedProjects) && config.selectedProjects.length >= 3 && config.selectedProjects.length <= 6, 'selectedProjects must include 3 to 6 projects');
   if (Array.isArray(config?.selectedProjects)) {
     pushError(
       errors,

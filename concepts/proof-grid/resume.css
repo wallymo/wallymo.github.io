@@ -18,8 +18,8 @@
     --rule: #18191b;
     --rule-light: #d6d8da;
     --font-display: "Syne", sans-serif;
-    --font-body: "Avenir Next", Avenir, "Segoe UI", Helvetica, Arial, sans-serif;
-    --font-mono: "SFMono-Regular", "SF Mono", "Roboto Mono", Consolas, monospace;
+    --font-body: "Instrument Sans", sans-serif;
+    --font-mono: "SFMono-Regular", "SF Mono", Consolas, monospace;
     --pg-pink: #e548a5;
     --pg-pink-deep: #a90f68;
     --pg-cobalt: #2454c6;
@@ -34,6 +34,8 @@
     color: var(--ink);
     background: var(--surface);
     font-family: var(--font-body);
+    font-size: 1rem;
+    line-height: 1.55;
   }
 
   html.proof-grid-resume ::selection {
@@ -44,6 +46,26 @@
   html.proof-grid-resume :focus-visible {
     outline: 2px solid var(--pg-cobalt);
     outline-offset: 3px;
+  }
+
+  html.proof-grid-resume .skip-link {
+    position: fixed;
+    top: 0.75rem;
+    left: 0.75rem;
+    z-index: 1000;
+    padding: 0.7rem 0.9rem;
+    color: #fff;
+    background: var(--pg-cobalt);
+    border: 1px solid var(--ink);
+    box-shadow: 3px 3px 0 var(--pg-pink);
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    font-weight: 700;
+    transform: translateY(-180%);
+  }
+
+  html.proof-grid-resume .skip-link:focus {
+    transform: translateY(0);
   }
 
   /* Fixed utility controls keep their behavior and receive Proof Grid materials. */
@@ -174,6 +196,8 @@
   html.proof-grid-resume .award-detail,
   html.proof-grid-resume .edu {
     color: var(--ink-soft);
+    font-size: 0.95rem;
+    line-height: 1.55;
   }
 
   html.proof-grid-resume .cap-label {
@@ -195,6 +219,7 @@
     font-family: var(--font-display);
     font-weight: 700;
     letter-spacing: -0.015em;
+    font-size: 1.05rem;
   }
 
   html.proof-grid-resume .job-meta {
@@ -221,7 +246,7 @@
       position: absolute;
       top: 1rem;
       left: 1rem;
-      font-size: 0.66rem;
+      font-size: 0;
     }
 
     html.proof-grid-resume .action-bar {

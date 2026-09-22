@@ -1016,6 +1016,14 @@ export function buildScopedProjectHtml(project, config, paths, index, titlesByPr
     )
     .replace(/\bhref="index\.html#work"/g, 'href="index.html#work"')
     .replace(
+      /(<a\b[^>]*href="index\.html#work"[^>]*>)\s*(?:&larr;|←)\s*All Work\s*(<\/a>)/gi,
+      '$1← Selected Work$2'
+    )
+    .replace(
+      /(<a\b[^>]*href="index\.html#work"[^>]*>)\s*All Work\s*(?:&rarr;|→)\s*(<\/a>)/gi,
+      '$1Selected Work →$2'
+    )
+    .replace(
       /<meta property="og:url" content="[^"]*">/,
       `<meta property="og:url" content="${scopedUrl}">`
     );

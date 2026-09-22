@@ -242,11 +242,12 @@ nav .nav-cta:hover, .btn-primary:hover { background: var(--accent-hover); }
   min-height: 56px; padding: 8px 24px;
   color: var(--dark-label); background: var(--dark-raised);
   border-bottom: 1px solid var(--dark-rule);
-  font: 500 13px/1.4 var(--font-body);
+  font: 500 12px/1.2 var(--font-body);
   opacity: 0; pointer-events: none;
   transition: opacity 180ms cubic-bezier(.22, 1, .36, 1);
 }
 #work.work-stack-condensed .work-stack-label { height: var(--stack-step); min-height: 0; padding-block: 0; }
+#work.work-stack-active .work-stack-label > span { transform: translateY(-2px); }
 #work.work-stack-active .work-stack-label > span:first-child { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 #work.work-stack-active .work-stack-label > span:last-child { flex: 0 0 auto; }
 #work.work-stack-active .work-item.is-covered .work-stack-label { opacity: 1; }

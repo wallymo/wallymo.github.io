@@ -150,7 +150,8 @@
 
   @media print {
     .action-bar,
-    .back-btn {
+    .back-btn,
+    .skip-link {
       display: none;
     }
     body {
@@ -399,9 +400,11 @@
 </head>
 <body>
 
-<a class="back-btn" href="index.html" aria-label="Back to homepage">
+<a class="skip-link" href="#resume-content">Skip to resume</a>
+
+<a class="back-btn" href="index.html" aria-label="Back to portfolio">
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
-  Back
+  Portfolio
 </a>
 
 <div class="action-bar">
@@ -415,7 +418,7 @@
   </a>
 </div>
 
-<div class="resume">
+<main class="resume" id="resume-content">
 
 <header>
   <h1>WALLY MOSTAFA</h1>
@@ -573,7 +576,7 @@
   <p class="edu">BA Labor Studies & Employee Relations — Rutgers University, 2010</p>
 </section>
 
-</div>
+</main>
 
 <script>
 async function shareResume() {

@@ -2,6 +2,7 @@ import assert from 'node:assert/strict';
 import {
   cpSync,
   existsSync,
+  mkdirSync,
   mkdtempSync,
   readFileSync,
   rmSync,
@@ -87,6 +88,11 @@ function makeProjectFixture() {
   for (const project of canonicalProjects) {
     cpSync(path.join(repoRoot, project), path.join(tempRoot, project));
   }
+  mkdirSync(path.join(tempRoot, 'concepts'), { recursive: true });
+  cpSync(
+    path.join(repoRoot, 'concepts', 'portfolio-concepts.json'),
+    path.join(tempRoot, 'concepts', 'portfolio-concepts.json')
+  );
   return tempRoot;
 }
 
@@ -223,7 +229,7 @@ test('all nine canonical project sources use the shared project-story shell and 
   }
 });
 
-test('reordered three, four, and five project routes render route-local rich previews, including hidden 09 and 07', () => {
+test('reordered three through six project routes render route-local rich previews, including hidden 09 and 07', () => {
   const tempRoot = makeProjectFixture();
   try {
     withRepoRoot(tempRoot, () => {
@@ -245,6 +251,14 @@ test('reordered three, four, and five project routes render route-local rich pre
           'project-09.html',
           'project-08.html',
           'project-04.html',
+        ],
+        [
+          'project-01.html',
+          'project-05.html',
+          'project-03.html',
+          'project-08.html',
+          'project-04.html',
+          'project-07.html',
         ],
       ];
 

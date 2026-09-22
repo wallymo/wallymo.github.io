@@ -1563,7 +1563,7 @@ test(
       const recentHeading = compactText.indexOf(
         'RECENT&COMPLEMENTARYEXPERIENCE'
       );
-      const recentRole = compactText.indexOf('AIIMPLEMENTATIONPARTNER');
+      const recentRole = compactText.indexOf('AIIMPLEMENTATIONLEAD');
       const mannyAward = compactText.indexOf('MANNYAWARD2013');
       const indigoAward = compactText.indexOf('INDIGOAWARDS2023');
       assert.ok(accountHeading >= 0);
@@ -1764,8 +1764,31 @@ test(
       assert.doesNotThrow(() => validateV2Config(malformedProjectList));
       assert.match(
         validateV2Config(malformedProjectList).join('\n'),
-        /selectedProjects must include 3 to 5 projects/
+        /selectedProjects must include 3 to 6 projects/
       );
+
+      const sixProjectList = structuredClone(config);
+      sixProjectList.selectedProjects = [
+        'project-01.html',
+        'project-02.html',
+        'project-03.html',
+        'project-04.html',
+        'project-05.html',
+        'project-06.html',
+      ];
+      assert.doesNotMatch(
+        validateV2Config(sixProjectList).join('\n'),
+        /selectedProjects must include/
+      );
+      assert.deepEqual(schemaErrors(sixProjectList), []);
+
+      const sevenProjectList = structuredClone(sixProjectList);
+      sevenProjectList.selectedProjects.push('project-07.html');
+      assert.match(
+        validateV2Config(sevenProjectList).join('\n'),
+        /selectedProjects must include 3 to 6 projects/
+      );
+      assert.ok(schemaErrors(sevenProjectList).length > 0);
 
       const canonicalAliases = structuredClone(validAliases);
       canonicalAliases.routeMode = 'canonical-projects';
@@ -5137,7 +5160,7 @@ test(
   }
 );
 
-test('revision showcase cards preserve three, four, and five project selections, images, aliases, and scoped sequence', () => {
+test('revision showcase cards preserve three through six project selections, images, aliases, and scoped sequence', () => {
   const { tempRoot, config } = createBuildFixture({ routeMode: 'scoped-projects' });
   const previousRepoRoot = process.env.WORKFLOW_REPO_ROOT;
   try {
@@ -5159,6 +5182,7 @@ test('revision showcase cards preserve three, four, and five project selections,
       ['project-04.html', 'project-01.html', 'project-05.html'],
       ['project-05.html', 'project-04.html', 'project-02.html', 'project-03.html'],
       ['project-09.html', 'project-04.html', 'project-08.html', 'project-06.html', 'project-07.html'],
+      ['project-01.html', 'project-05.html', 'project-03.html', 'project-08.html', 'project-04.html', 'project-07.html'],
     ];
     for (const selectedProjects of selections) {
       config.selectedProjects = selectedProjects;

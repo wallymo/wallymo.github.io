@@ -40,7 +40,7 @@
     "selectedProjects": {
       "type": "array",
       "minItems": 3,
-      "maxItems": 5,
+      "maxItems": 6,
       "items": { "pattern": "^project-[0-9]+\\.html$" }
     },
     "job": {
