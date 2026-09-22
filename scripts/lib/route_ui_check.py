@@ -274,6 +274,111 @@ def main() -> int:
                             check_errors.append(
                                 f"covered project name rail is not visible: {covered_state}"
                             )
+
+                        page.evaluate("scrollTo({ top: 0, behavior: 'instant' })")
+                        page.wait_for_timeout(32)
+                        exit_setup = page.evaluate(
+                            """() => {
+                              const work = document.querySelector('#work');
+                              const grid = work.querySelector('.work-grid');
+                              const cards = [...grid.querySelectorAll(':scope > .work-item')];
+                              const gap = parseFloat(getComputedStyle(grid).gap);
+                              const step = parseFloat(getComputedStyle(work).getPropertyValue('--stack-step'));
+                              const gridBottom = grid.getBoundingClientRect().bottom + scrollY;
+                              const last = cards.at(-1);
+                              const lastTop = parseFloat(getComputedStyle(last).top);
+                              const lastHeight = last.offsetHeight;
+                              const tailHeight = parseFloat(getComputedStyle(grid, '::after').height);
+                              return {
+                                gap,
+                                step,
+                                gridHeight: grid.getBoundingClientRect().height,
+                                tailHeight,
+                                documentTops: cards.map((card) => card.getBoundingClientRect().top + scrollY),
+                                cardHeights: cards.map((card) => card.getBoundingClientRect().height),
+                                releaseStart: gridBottom - lastTop - lastHeight,
+                              };
+                            }"""
+                        )
+                        expected_gap = exit_setup["gap"]
+                        document_tops = exit_setup["documentTops"]
+                        card_heights = exit_setup["cardHeights"]
+                        expected_grid_height = (
+                            sum(card_heights)
+                            + expected_gap * (len(card_heights) - 1)
+                            + exit_setup["tailHeight"]
+                        )
+                        if abs(exit_setup["gridHeight"] - expected_grid_height) > 2:
+                            check_errors.append(
+                                "desktop work stack changed its total scroll length: "
+                                f"expected {expected_grid_height}, found {exit_setup['gridHeight']}"
+                            )
+                        for index in range(len(document_tops) - 1):
+                            measured_gap = (
+                                document_tops[index + 1]
+                                - document_tops[index]
+                                - card_heights[index]
+                            )
+                            if abs(measured_gap - expected_gap) > 1:
+                                check_errors.append(
+                                    "desktop work stack changed its document spacing: "
+                                    f"expected {expected_gap}, found {measured_gap} at card {index + 1}"
+                                )
+
+                        exit_failures = []
+                        release_start = exit_setup["releaseStart"]
+                        release_sweep = int(max(expected_gap, exit_setup["step"])) + 48
+                        for offset in range(-release_sweep, release_sweep + 1, 4):
+                            page.evaluate(
+                                "(top) => scrollTo({ top, behavior: 'instant' })",
+                                release_start + offset,
+                            )
+                            page.wait_for_timeout(32)
+                            exit_state = page.evaluate(
+                                """() => {
+                                  const work = document.querySelector('#work');
+                                  const cards = [...work.querySelectorAll('.work-grid > .work-item')];
+                                  const step = parseFloat(getComputedStyle(work).getPropertyValue('--stack-step'));
+                                  return {
+                                    scrollY,
+                                    step,
+                                    pairs: cards.slice(0, -1).map((card, index) => {
+                                      const next = cards[index + 1];
+                                      const cardRect = card.getBoundingClientRect();
+                                      const nextRect = next.getBoundingClientRect();
+                                      const titleRect = card.querySelector('h3').getBoundingClientRect();
+                                      const labelRect = card.querySelector('.work-stack-label').getBoundingClientRect();
+                                      const exposedTitlePixels = Math.max(
+                                        0,
+                                        Math.min(titleRect.bottom, nextRect.top)
+                                          - Math.max(titleRect.top, labelRect.bottom)
+                                      );
+                                      return {
+                                        index,
+                                        gap: nextRect.top - cardRect.top,
+                                        exposedTitlePixels,
+                                      };
+                                    }),
+                                  };
+                                }"""
+                            )
+                            for pair in exit_state["pairs"]:
+                                if (
+                                    pair["gap"] < -1
+                                    or pair["gap"] > exit_state["step"] + 1
+                                    or pair["exposedTitlePixels"] > 1
+                                ):
+                                    exit_failures.append(
+                                        {
+                                            "scrollY": exit_state["scrollY"],
+                                            **pair,
+                                        }
+                                    )
+                        if exit_failures:
+                            check_errors.append(
+                                "desktop work stack exit exposes covered content or breaks its rail: "
+                                f"{exit_failures}"
+                            )
                         page.evaluate("scrollTo({ top: 0, behavior: 'instant' })")
                     except Exception as error:
                         check_errors.append(f"desktop work stack unavailable: {error}")
