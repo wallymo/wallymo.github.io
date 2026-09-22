@@ -30,9 +30,9 @@
   --shadow-m: 6px 6px 0 rgb(36 84 198 / 0.16);
   --shadow-l: 10px 10px 0 rgb(36 84 198 / 0.14);
 
-  --font-display: "Avenir Next", Avenir, "Segoe UI", Helvetica, Arial, sans-serif;
-  --font-body: "Avenir Next", Avenir, "Segoe UI", Helvetica, Arial, sans-serif;
-  --font-mono: "SFMono-Regular", "SF Mono", "Roboto Mono", Consolas, monospace;
+  --font-display: "Syne", sans-serif;
+  --font-body: "Instrument Sans", sans-serif;
+  --font-mono: "SFMono-Regular", "SF Mono", Consolas, monospace;
 
   --pg-pink: #e548a5;
   --pg-pink-deep: #a90f68;
@@ -72,7 +72,28 @@
 }
 
 .proof-grid-homepage :focus-visible {
-  outline-color: var(--pg-cobalt);
+  outline: 2px solid var(--pg-cobalt);
+  outline-offset: 3px;
+}
+
+.proof-grid-homepage .skip-link {
+  position: fixed;
+  top: 0.75rem;
+  left: 0.75rem;
+  z-index: 1000;
+  padding: 0.7rem 0.9rem;
+  color: #fff;
+  background: var(--pg-cobalt);
+  border: 1px solid var(--ink);
+  box-shadow: 3px 3px 0 var(--pg-pink);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  transform: translateY(-180%);
+}
+
+.proof-grid-homepage .skip-link:focus {
+  transform: translateY(0);
 }
 
 /* Navigation: same box and responsive behavior, Proof Grid materials. */
@@ -108,6 +129,7 @@
 }
 
 .proof-grid-homepage nav .nav-cta {
+  min-height: 48px;
   color: #fff !important;
   background: var(--pg-cobalt);
   border: 1px solid var(--ink);
@@ -212,7 +234,12 @@
   color: var(--ink-soft);
 }
 
+.proof-grid-homepage .hero-pill--accent {
+  border-color: rgb(36 84 198 / 0.28);
+}
+
 .proof-grid-homepage .btn-primary {
+  min-height: 48px;
   color: #fff;
   background: var(--pg-cobalt);
   border: 1px solid var(--ink);
@@ -319,6 +346,15 @@
 .proof-grid-homepage #work .tag,
 .proof-grid-homepage #work .work-stack-label {
   font-family: var(--font-mono);
+}
+
+.proof-grid-homepage #work .work-stack-label {
+  font-size: 0.75rem;
+  line-height: 1.2;
+}
+
+.proof-grid-homepage #work .work-number::before {
+  content: "Selected / ";
 }
 
 .proof-grid-homepage #work .work-number,
@@ -687,7 +723,7 @@ html.proof-grid-case-study {
   --radius-m: 0px;
   --radius-l: 0px;
   --font-display: "Syne", sans-serif;
-  --font-body: "Avenir Next", Avenir, "Segoe UI", Helvetica, Arial, sans-serif;
+  --font-body: "Instrument Sans", sans-serif;
   --font-mono: "SFMono-Regular", "SF Mono", Consolas, monospace;
   --dark-base: #18191b;
   --dark-raised: #222326;
@@ -709,14 +745,17 @@ html.proof-grid-case-study {
 }
 
 html.proof-grid-case-study ::selection { background: #2454c6; color: #fff; }
+html.proof-grid-case-study :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
 html.proof-grid-case-study .site-nav {
   background: rgb(247 247 244 / .94);
   border-bottom-color: var(--ink);
 }
 html.proof-grid-case-study .site-nav .name { font-family: var(--font-body); }
 html.proof-grid-case-study :is(.nav-cta, .project-hero-jump, .btn-demo) {
+  min-height: 48px;
   background: var(--accent);
   color: #fff;
+  border: 1px solid var(--ink);
   border-radius: 0;
   box-shadow: 3px 3px 0 rgb(36 84 198 / .20);
 }
