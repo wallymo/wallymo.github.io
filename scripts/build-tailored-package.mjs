@@ -1478,6 +1478,18 @@ export function splitJobBlockWithContinuation(jobBlock, afterBullet) {
   )}`;
 }
 
+export function replaceJobTitle(jobBlock, title) {
+  const titlePattern = /(<span class="job-title">)([\s\S]*?)(<\/span>)/i;
+  if (!titlePattern.test(jobBlock)) {
+    throw new Error('Could not find the resume job title');
+  }
+  return jobBlock.replace(
+    titlePattern,
+    (_match, openingTag, _existingTitle, closingTag) =>
+      `${openingTag}${escapeHtml(title)}${closingTag}`
+  );
+}
+
 function replaceResumeExperienceSections(resumeHtml, config) {
   const experienceMatch = resumeHtml.match(
     /<section data-resume-section="experience">[\s\S]*?<\/section>/
@@ -1509,6 +1521,10 @@ function replaceResumeExperienceSections(resumeHtml, config) {
       throw new Error(`Could not find the source resume job for ${roleId}`);
     }
     let jobBlock = extractBalancedTagBlock(sourceSection, jobStart, 'div');
+    const titleOverride = config.resume.roleTitleOverrides?.[roleId];
+    if (titleOverride) {
+      jobBlock = replaceJobTitle(jobBlock, titleOverride);
+    }
     if (continuationBreaks.has(roleId)) {
       jobBlock = splitJobBlockWithContinuation(
         jobBlock,

@@ -64,7 +64,12 @@ import {
   COVER_LETTER_TEMPLATE_VERSION,
   buildCoverLetterHtml,
 } from '../lib/cover-letter-template.mjs';
-import { buildRoute, buildScopedProjectHtml, splitJobBlockWithContinuation } from '../build-tailored-package.mjs';
+import {
+  buildRoute,
+  buildScopedProjectHtml,
+  replaceJobTitle,
+  splitJobBlockWithContinuation,
+} from '../build-tailored-package.mjs';
 
 const repoRoot = path.resolve(import.meta.dirname, '..', '..');
 const node = process.execPath;
@@ -1388,6 +1393,44 @@ test('revisions 5 and 6 support relevance-first experience sections without dupl
   ];
   assert.deepEqual(validateV2Config(roleContinuation), []);
   assert.deepEqual(schemaErrors(roleContinuation), []);
+
+  const roleTitleOverride = structuredClone(relevanceFirst);
+  roleTitleOverride.resume.roleTitleOverrides = {
+    hedgehox: 'AI Implementation Lead',
+  };
+  assert.deepEqual(validateV2Config(roleTitleOverride), []);
+  assert.deepEqual(schemaErrors(roleTitleOverride), []);
+  assert.ok(
+    humanizerCopyEntries(roleTitleOverride).some(
+      ([field, value]) =>
+        field === 'resume.roleTitleOverrides.hedgehox' &&
+        value === 'AI Implementation Lead'
+    )
+  );
+  assert.match(
+    replaceJobTitle(
+      '<span class="job-title">AI Implementation Partner</span>',
+      'AI Implementation Lead & Product Strategist'
+    ),
+    />AI Implementation Lead &amp; Product Strategist<\//
+  );
+
+  const unknownRoleTitleOverride = structuredClone(roleTitleOverride);
+  unknownRoleTitleOverride.resume.roleTitleOverrides = {
+    unknown: 'Unknown Role',
+  };
+  assert.match(
+    validateV2Config(unknownRoleTitleOverride).join('\n'),
+    /resume\.roleTitleOverrides\.unknown contains an unknown role/
+  );
+  assert.ok(schemaErrors(unknownRoleTitleOverride).length > 0);
+
+  const emptyRoleTitleOverride = structuredClone(roleTitleOverride);
+  emptyRoleTitleOverride.resume.roleTitleOverrides = { hedgehox: '' };
+  assert.match(
+    validateV2Config(emptyRoleTitleOverride).join('\n'),
+    /resume\.roleTitleOverrides\.hedgehox must be a non-empty string/
+  );
 
   const unknownContinuationRole = structuredClone(roleContinuation);
   unknownContinuationRole.resume.roleContinuationBreaks = [

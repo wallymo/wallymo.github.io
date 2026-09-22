@@ -312,6 +312,19 @@
           "type": "string",
           "minLength": 1
         },
+        "roleTitleOverrides": {
+          "type": "object",
+          "minProperties": 1,
+          "properties": {
+            "hedgehox": { "type": "string", "minLength": 1 },
+            "one-block-away": { "type": "string", "minLength": 1 },
+            "kinesso": { "type": "string", "minLength": 1 },
+            "omnicom": { "type": "string", "minLength": 1 },
+            "heartbeat": { "type": "string", "minLength": 1 },
+            "account-management": { "type": "string", "minLength": 1 }
+          },
+          "additionalProperties": false
+        },
         "roleContinuationBreaks": {
           "type": "array",
           "minItems": 1,

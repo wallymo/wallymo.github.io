@@ -506,6 +506,11 @@ export function humanizerCopyEntries(config) {
   if (config?.contractRevision !== 4) {
     add('resume.summary', config?.resume?.summary);
     add('resume.portfolioLinkLabel', config?.resume?.portfolioLinkLabel);
+    for (const [roleId, title] of Object.entries(
+      config?.resume?.roleTitleOverrides || {}
+    )) {
+      add(`resume.roleTitleOverrides.${roleId}`, title);
+    }
     if (Array.isArray(config?.resume?.experienceSections)) {
       config.resume.experienceSections.forEach((section, index) => {
         add(`resume.experienceSections[${index}].heading`, section?.heading);
@@ -1288,6 +1293,34 @@ function validateResume(
   }
 
   pushError(errors, resume.roles && typeof resume.roles === 'object', 'resume.roles is required');
+  if (resume.roleTitleOverrides !== undefined) {
+    const overrides = resume.roleTitleOverrides;
+    pushError(
+      errors,
+      overrides !== null &&
+        typeof overrides === 'object' &&
+        !Array.isArray(overrides),
+      'resume.roleTitleOverrides must be an object'
+    );
+    if (
+      overrides !== null &&
+      typeof overrides === 'object' &&
+      !Array.isArray(overrides)
+    ) {
+      for (const [roleId, title] of Object.entries(overrides)) {
+        pushError(
+          errors,
+          RESUME_ROLE_IDS.includes(roleId),
+          `resume.roleTitleOverrides.${roleId} contains an unknown role`
+        );
+        pushError(
+          errors,
+          isNonEmptyString(title),
+          `resume.roleTitleOverrides.${roleId} must be a non-empty string`
+        );
+      }
+    }
+  }
   for (const roleId of RESUME_ROLE_IDS) {
     const subEntries = resumeRoleSubEntries(resume, roleId);
     if (subEntries) {
@@ -3192,6 +3225,12 @@ export function recruiterFacingClaimViolations(config, additionalCopy = []) {
                 ],
               ]
             : []),
+          ...Object.entries(config.resume.roleTitleOverrides || {}).map(
+            ([roleId, title]) => [
+              `resume.roleTitleOverrides.${roleId}`,
+              title,
+            ]
+          ),
           ...config.resume.skills.flatMap((skill, index) => [
             [`resume.skills[${index}].label`, skill.label],
             [`resume.skills[${index}].description`, skill.description],
