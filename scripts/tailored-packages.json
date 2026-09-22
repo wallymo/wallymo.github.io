@@ -577,7 +577,7 @@
       "resumePdfPath": "output/pdf/Wally-Mostafa-BioLumina-Resume.pdf",
       "publishStatus": "local-only",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-09-22T02:24:38.937Z"
+      "builtAt": "2026-09-22T02:39:51.700Z"
     },
     {
       "workflowVersion": 2,
@@ -5275,7 +5275,7 @@
       "resumePdfPath": "output/pdf/Wally-Mostafa-UX-Design-Lead-Resume.pdf",
       "publishStatus": "local-only",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-09-22T02:25:03.284Z"
+      "builtAt": "2026-09-22T02:40:15.238Z"
     },
     {
       "workflowVersion": 2,

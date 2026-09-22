@@ -445,7 +445,7 @@
   },
   "qa": {
     "status": "qa-passed",
-    "builtAt": "2026-09-22T02:25:03.284Z",
+    "builtAt": "2026-09-22T02:40:15.238Z",
     "configInputSha256": "60fa683fb8044a9bc8c8d297b038cc13876a5194f31d23e750f61361c95cfe64",
     "sourceResumeSha256": "8273f9c5f9038a159fa1d9ecc813e2c23069e37c7ef6dd0effe5439cef217fd7",
     "resumeFoundation": {
@@ -467,9 +467,9 @@
       "registrySha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108"
     },
     "artifactHashes": {
-      "routeSha256": "5d6f50aa3a3d39b9b14ebf43466d8c053028a5698ebfdfa841964027d5ca0374",
+      "routeSha256": "f2cd753b8531f3b468a23267d8bb5a4f1fcecefe9534c93c88665e6d9f05b516",
       "designConceptCssSha256": "73052eae58d446422f0ff921361877b1ca4e0062ec7ee25daace39b4a4791195",
-      "resumePdfSha256": "1d1e4c1e0efda7528ad5682d6667d5c12ccc61de0ea444b2d4f9fc8734075c65",
+      "resumePdfSha256": "4e0f4dd77c3449329eb4d5d08cf3503afcc2df5f0852962b6e60f08c27572595",
       "coverLetterPdfSha256": null,
       "coverLetterMarkdownSha256": null,
       "scopedProjectSha256": {
