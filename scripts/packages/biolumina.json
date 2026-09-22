@@ -437,8 +437,8 @@
     "humanizerVersion": "2.2.0",
     "mode": "rewrite-requested",
     "status": "passed",
-    "reviewedAt": "2026-09-22T03:26:19.725Z",
-    "copySha256": "3fcc70e24f0b97810d0e6eb84d27170e8d8fe56dd3de62dc9e20a58a5d880d0f",
+    "reviewedAt": "2026-09-22T03:53:15.248Z",
+    "copySha256": "2d33097c7d6984909d3de05f9dfdc80309fce32f796deba1beeab4c7dc7e33cb",
     "preserved": [
       "claims"
     ],
@@ -451,8 +451,8 @@
   },
   "qa": {
     "status": "qa-passed",
-    "builtAt": "2026-09-22T03:36:05.000Z",
-    "configInputSha256": "dea59228c9260667bf0cb51e158bf5fc86f175fe6dd49ec5802326cf1c533898",
+    "builtAt": "2026-09-22T03:54:50.448Z",
+    "configInputSha256": "d6afc08bf2495538f3c53a8e3073e476ea14e8dab7cd2421e3c78d903127b456",
     "sourceResumeSha256": "8273f9c5f9038a159fa1d9ecc813e2c23069e37c7ef6dd0effe5439cef217fd7",
     "resumeFoundation": {
       "id": "wally-mostafa-resume-2026-07-03",
@@ -473,9 +473,9 @@
       "registrySha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108"
     },
     "artifactHashes": {
-      "routeSha256": "f4d8fb21dde5c4d0e7513a75f8208add5fd325b6f0d52a56c753abf64d6c841f",
+      "routeSha256": "6fd8947b0ab38cef57d67e6884cad308db1f438c2682b5d997b07b9b6b69be6f",
       "designConceptCssSha256": "73052eae58d446422f0ff921361877b1ca4e0062ec7ee25daace39b4a4791195",
-      "resumePdfSha256": "bdf9f94e9fe9e2464dcb7914c06f57138753c25755273f88b46fe1de3d38e26f",
+      "resumePdfSha256": "5c5a8f42569408f4b5f124694af0366611b075c0bb8e9ff89915db923e7e38a0",
       "coverLetterPdfSha256": null,
       "coverLetterMarkdownSha256": null,
       "scopedProjectSha256": {
@@ -489,8 +489,8 @@
     },
     "renderer": {
       "browser": {
-        "name": "Google Chrome",
-        "version": "Google Chrome 153.0.8010.48"
+        "name": "chrome-headless-shell",
+        "version": "Google Chrome for Testing 153.0.8010.12"
       },
       "htmlPath": "tmp/tailored-resumes/biolumina.html",
       "pdfPath": "output/pdf/Wally-Mostafa-BioLumina-Resume.pdf",
@@ -503,7 +503,7 @@
       "ok": true,
       "pdfPath": "output/pdf/Wally-Mostafa-BioLumina-Resume.pdf",
       "pageCount": 2,
-      "fileSize": 81330,
+      "fileSize": 81209,
       "annotations": [
         {
           "page": 1,
@@ -612,8 +612,8 @@
       "status": "passed",
       "version": "2.2.0",
       "mode": "rewrite-requested",
-      "reviewedAt": "2026-09-22T03:26:19.725Z",
-      "copySha256": "3fcc70e24f0b97810d0e6eb84d27170e8d8fe56dd3de62dc9e20a58a5d880d0f",
+      "reviewedAt": "2026-09-22T03:53:15.248Z",
+      "copySha256": "2d33097c7d6984909d3de05f9dfdc80309fce32f796deba1beeab4c7dc7e33cb",
       "reviewMethod": "humanizer-skill",
       "semanticPassAttested": true,
       "staticChecksPassed": true
