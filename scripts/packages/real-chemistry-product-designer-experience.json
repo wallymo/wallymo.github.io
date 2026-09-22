@@ -1,0 +1,789 @@
+{
+  "workflowVersion": 2,
+  "contractRevision": 7,
+  "slug": "real-chemistry-product-designer-experience",
+  "roleTitle": "Product Designer",
+  "artifactStem": "Real-Chemistry-Product-Designer-2026",
+  "fitClass": "strong",
+  "routeMode": "scoped-projects",
+  "selectedProjects": [
+    "project-05.html",
+    "project-01.html",
+    "project-04.html",
+    "project-03.html"
+  ],
+  "job": {
+    "company": "Real Chemistry",
+    "roleTitle": "Product Designer",
+    "jobId": "5423576008",
+    "jobUrl": "https://job-boards.greenhouse.io/realchemistry/jobs/5423576008",
+    "sourceChannel": "employer-greenhouse",
+    "dateCaptured": "2026-09-22",
+    "location": "Remote - USA; Raleigh, NC",
+    "atsVendor": "greenhouse",
+    "rawJd": "At Real Chemistry, making the world a healthier place isn’t just an aspiration—it’s our everyday reality. Our drive to transform healthcare is informed by our blend of deep scientific expertise, human-centred creativity, and AI-driven insights, fostering a unique environment where innovation thrives and our people are impact-obsessed. As a global agency, we provide a full suite of services across healthcare communications and marketing to our clients, including top players in the pharmaceutical and biotech industries.\nOur #LifeatRealChem culture is rooted in our people—we believe we are best together and are committed to excellence for both our clients and colleagues. Whether you're a seasoned professional or just starting your career, if you share our passion for healthcare and connection, we invite you to explore our opportunities.\nDiscover your purpose. Embrace innovation. Experience #LifeatRealChem.\nReal Chemistry Media\nReal Chemistry Media is transforming how medical and healthcare marketers engage healthcare professionals (HCPs) and consumers through data, technology, and omnichannel innovation. Real Chemistry Media's product and technology teams sit at the heart of this meaningful work by building tools that increase impact. In support of our mission to help life-changing medicines and therapies reach their full market potential, we are building an enterprise platform for omnichannel orchestration in healthcare marketing.\nOur technology enables healthcare organizations to design, deploy, and optimize HCP journeys through a scalable, self-service product that connects to their existing marketing and data systems. The platform is live with early users and on track with rapid growth milestones, so the decisions made over the next year will be influential in shaping the product's future.\nWe are hiring a\nProduct Designer\nto define how this platform works and how it feels to use. Reporting to the VP, Product, you will work closely with product management, engineering, and data science to take complex workflows and turn them into easy to use, intuitive interfaces that fit thoughtfully into the platform system. The team is small and we're building a lot, so there are a lot of opportunities for ownership and influence.\nWhat You'll Do:\nOwn the product design and user experience of the platform, from early exploration through shipped interface and iteration.\nMaintain and evolve the design system so new features fit into it or thoughtfully evolve it as the platform grows.\nWork side-by-side with front-end engineers to establish design-to-engineering best practices and workflows.\nSet a high bar for design quality across the platform, building visual and interaction craft into design decisions and feedback.\nDesign how AI features appear in the product and how users understand and interact with them.\nPartner with product management and engineering on problem definition, scope, and sequencing from the beginning of each effort.\nRun research and usability sessions with users and turn what you learn into design decisions.\nWhat You Should Have:\n4+ years designing B2B or enterprise software interfaces for workflow-heavy products.\nA portfolio showing component libraries, data display, and navigation and interaction patterns you designed and maintained.\nExperience designing data-dense interfaces that simplify complex tasks.\nTechnical fluency with front-end concepts and modern design-to-code workflows, including prototyping in code or with AI coding tools.\nExperience designing AI and LLM-driven features, including how models are described and how trust is reinforced in the interface.\nSkill at breaking large, ambiguous problems into work that can ship in pieces.\nExpertise and enthusiasm about inclusive design and how exceeding accessibility standards improves products.\nAbility to communicate design rationale and drive buy-in with technical and non-technical audiences.\nBonus points for martech, adtech, orchestration tooling, or healthcare experience.\nPay Range:\n$100,000-$120,000\nThis is the pay range the Company believes it will pay for this position at the time of this posting.  Consistent with applicable law, compensation will be determined based on job-related, non-discriminatory factors including but not limited to work experience, skills, certifications, and geographical location. The Company reserves the right to modify this pay range at any time\nReal Chemistry is proud to be Great Place to Work® certified; check out what our people shared about our culture and workplace on our Great Places to Work Profile\nhere\n.\nWe believe we can do our best when feeling our best, which is why we’ve put together a benefits program designed to give you the support you and your family need at every stage of life. Real Chemistry offers a comprehensive benefit program and perks, tailored to your region. Globally, this includes offices in our key markets with free snacks to keep you running all day long, generous holiday and paid time off, options for private medical, dental, and vison plans, and support in saving for the future. Other perks include mental wellness coaching and support and access to more than 13,000 online classes with LinkedIn Learning.  Learn more about our great benefits and perks and search specific offerings in your region at:\nwww.realchemistrybenefits.com\n.\nAt Real Chemistry, we believe we're at our best when we're connected. Our Real Hybrid and Regional Teams (Real HART) approach is designed to foster collaboration, learning, innovation, and meaningful relationships while providing flexibility where appropriate.\nBecause our workforce spans multiple countries, regions, and client needs, work arrangements may vary by role and location. Some positions offer hybrid or remote flexibility, while others require regular in-office presence. For example, certain teams and regions, including some of our UK operations, have office-based requirements. Your recruiter will discuss the specific expectations for the role you're pursuing during the interview process and keep you informed throughout the hiring journey. For employees located within a one-hour commute of a Real Chemistry office, we require in-person attendance two days per week, either from a Real Chemistry office or when working onsite with clients. Employees in regions without a nearby office may work remotely and come together throughout the year for collaboration, culture-building, learning, and team connection opportunities. While these guidelines reflect our current workplace model, we understand that everyone’s circumstances are unique. If you require additional flexibility, we welcome an open conversation with your recruiter and our HR team to discuss your needs and determine what may be possible.\nReal Chemistry is an Equal Opportunity employer. We continually strive to build and sustain an inclusive and equitable work environment where our employees feel empowered to leverage all they bring from their personal lived experience and professional expertise, to make our team the best in the industry. We encourage motivated and qualified applicants to apply without regard to race, color, religion, sex (including pregnancy), sexual orientation, gender identity/expression, ethnic or national origin, age, physical or mental disability, genetic information, marital information, or any other characteristic protected by federal, state, or local employment discrimination laws where Real Chemistry operates. Should you require accommodations throughout the interview process please let your recruiter know.\n*Notice: Real Chemistry and its affiliates' names are being misused by scammers through messaging services, fake websites, and apps. Do not share personal or financial information or make payments to any unverified sources claiming to be connected to Real Chemistry. We are working to stop these unauthorized activities and protect our community. Read more\nhere\n."
+  },
+  "classification": {
+    "targetLane": "product-ux-design",
+    "evidenceMode": "portfolio-primary",
+    "primarySource": "The portfolio shows enterprise analytics interfaces, a component system, healthcare research, HCP and patient UX, and a human-reviewed pharma AI workflow. Those case studies are the main proof for this design role.",
+    "supportingSource": "The resume confirms senior UX work, enterprise scale across 22 brands, research across 20+ products, pharma agency experience, and current AI-assisted product work.",
+    "hardGateStatus": "pass",
+    "hardGates": [
+      {
+        "gate": "Four or more years designing B2B or enterprise software interfaces for complex workflows",
+        "status": "pass",
+        "requirementId": "enterprise-product-design",
+        "evidence": "Kinesso enterprise analytics and design-system work ran from 2020 to 2023; Heartbeat, Omnicom, and current product work extend the design practice."
+      },
+      {
+        "gate": "Portfolio showing component libraries, data display, navigation, and interaction patterns",
+        "status": "pass",
+        "requirementId": "portfolio-component-data-interaction",
+        "evidence": "Splash Design System, Enterprise Data Visualization, and Digital Audit Experience show the requested craft and process."
+      },
+      {
+        "gate": "Work remotely within the United States",
+        "status": "pass",
+        "requirementId": "us-remote",
+        "evidence": "Resume lists Raleigh, NC, and the employer posting includes Remote - USA."
+      }
+    ]
+  },
+  "requirements": [
+    {
+      "id": "enterprise-product-design",
+      "text": "Design B2B or enterprise software interfaces for workflow-heavy products from exploration through shipped iteration.",
+      "priority": "hard-gate",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Enterprise analytics UX served 7,000+ users across 22 white-label brands.",
+        "Current work covers product discovery, UX, prototypes, and client iteration."
+      ],
+      "proofIds": [
+        "kinesso-02",
+        "one-block-away-01",
+        "one-block-away-04"
+      ],
+      "destinations": [
+        "summary",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "enterprise analytics",
+        "workflow UX",
+        "product design"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "portfolio-component-data-interaction",
+      "text": "Show component libraries, data displays, navigation, and interaction patterns in the portfolio.",
+      "priority": "hard-gate",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Splash Design System documents reusable components and governance.",
+        "Enterprise Data Visualization and Digital Audit Experience show data display and navigation work."
+      ],
+      "proofIds": [
+        "kinesso-02",
+        "kinesso-03",
+        "kinesso-04"
+      ],
+      "destinations": [
+        "portfolio",
+        "experience"
+      ],
+      "resumeTerms": [
+        "design system",
+        "data visualization",
+        "navigation"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "healthcare-marketing-platform",
+      "text": "Design a self-service healthcare marketing platform for HCP journeys and omnichannel workflows.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Pharma agency experience includes HCP and patient work across regulated programs.",
+        "Current Pharma AI Platform work turns agency review and operations into usable workflows."
+      ],
+      "proofIds": [
+        "heartbeat-02",
+        "hedgehox-02",
+        "hedgehox-03",
+        "account-management-02"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "healthcare marketing",
+        "HCP",
+        "pharma workflow"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "ai-interface-trust",
+      "text": "Design AI and LLM features so users understand model behavior and can trust the interface.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Claims Detector surfaces promotional claims and evidence gaps for human MLR review.",
+        "Current AI POCs expose source-backed decisions and review states."
+      ],
+      "proofIds": [
+        "hedgehox-02",
+        "one-block-away-03"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "AI workflows",
+        "human review",
+        "evidence gaps"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "research-usability",
+      "text": "Run research and usability sessions and apply findings to product design.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Built a UX research practice across 20+ products using interviews, prototype tests, beta groups, and behavioral analytics.",
+        "Heartbeat work included stakeholder research and patient/HCP UX."
+      ],
+      "proofIds": [
+        "kinesso-06",
+        "heartbeat-01",
+        "heartbeat-02"
+      ],
+      "destinations": [
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "user research",
+        "prototype testing",
+        "usability"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "design-system-accessibility",
+      "text": "Maintain a design system and apply inclusive design and accessibility standards.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Helped shape and govern a 500-component design system with accessibility and design-quality standards.",
+        "Contributed keyboard interaction guidance and accessibility playbook work."
+      ],
+      "proofIds": [
+        "kinesso-04",
+        "kinesso-09",
+        "heartbeat-04"
+      ],
+      "destinations": [
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "design system",
+        "components",
+        "accessibility"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "design-to-engineering",
+      "text": "Work with front-end engineers and use modern design-to-code workflows, including prototypes made with code or AI coding tools.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Worked with product and engineering teams on build-ready UX and design-system handoff.",
+        "Current AI-assisted work carries product strategy and UX through working prototypes."
+      ],
+      "proofIds": [
+        "kinesso-08",
+        "heartbeat-03",
+        "one-block-away-04",
+        "hedgehox-04"
+      ],
+      "destinations": [
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "engineering handoff",
+        "AI-assisted prototype"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "us-remote",
+      "text": "Work from a listed United States office or an eligible remote United States location.",
+      "priority": "hard-gate",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Resume lists Raleigh, NC."
+      ],
+      "proofIds": [
+        "account-management-01"
+      ],
+      "destinations": [
+        "experience"
+      ],
+      "resumeTerms": [
+        "Raleigh, NC",
+        "Remote"
+      ],
+      "matchMode": "exact"
+    }
+  ],
+  "fitGate": {
+    "resumeBase": {
+      "mode": "ai-product-implementation",
+      "sourceProfiles": [
+        {
+          "id": "ai-product-implementation",
+          "version": 1
+        }
+      ],
+      "leadProfileId": "ai-product-implementation",
+      "accountPresentation": "consolidated",
+      "action": "tailor-to-jd",
+      "rationale": "The role centers on product design, workflow UX, research, design systems, and AI interfaces. The AI/Product Implementation pool contains the direct evidence; account leadership supports healthcare context without deciding the base."
+    },
+    "supportedOverlap": [
+      "The portfolio shows enterprise analytics, component systems, navigation, research, and data-heavy interfaces.",
+      "Claims Detector provides a concrete example of AI output and evidence presented for human review in a pharma workflow.",
+      "The resume confirms more than four years of UX work, 22-brand enterprise scale, and HCP/patient healthcare experience."
+    ],
+    "unsupportedRequirements": [],
+    "actualMismatches": [],
+    "missingEvidence": [
+      "The resume should not imply conventional hand-coded front-end engineering. Show AI-assisted prototyping and design-to-engineering handoff as the supported path."
+    ],
+    "coverLetterBridge": {
+      "status": "not-needed",
+      "rationale": "The portfolio and resume directly show the requested enterprise UX, design-system, research, healthcare, and AI workflow work. The remaining technical-fluency caveat should be stated narrowly in the resume and portfolio, not bridged with a letter."
+    },
+    "recommendation": "Build a design-led resume and scoped portfolio route for this opening, then confirm the live form details before submitting."
+  },
+  "positioning": {
+    "laneId": "product-ux-design",
+    "targetIdentity": "Product Designer",
+    "employerNeed": "Make a complex healthcare marketing platform clear to use, with a coherent design system, trustworthy AI features, and research-backed decisions.",
+    "bridgeType": "direct",
+    "applicationStrategy": "direct",
+    "bridgeThesis": "enterprise analytics, healthcare marketing, and AI workflows",
+    "proofIds": [
+      "kinesso-02",
+      "kinesso-04",
+      "hedgehox-02"
+    ],
+    "remainingGap": null
+  },
+  "coverLetter": null,
+  "resume": {
+    "foundationId": "wally-mostafa-resume-2026-07-03",
+    "foundationVersion": 4,
+    "compositionMode": "foundation-complete",
+    "layoutDensity": "compact",
+    "roleTitleOverrides": {
+      "hedgehox": "AI Implementation Lead"
+    },
+    "roleContinuationBreaks": [
+      {
+        "roleId": "kinesso",
+        "afterBullet": 3
+      }
+    ],
+    "summary": "Product designer and UX leader across enterprise analytics, healthcare marketing, and AI workflows. I led research for a product suite used across 22 brands and helped govern its 500-component design system. My current work turns pharma review needs into working AI prototypes.",
+    "skillIds": [
+      "enterprise-ux-design-systems",
+      "research-experience-strategy",
+      "ai-implementation-workflow-design",
+      "regulated-healthcare-client-delivery"
+    ],
+    "skills": [
+      {
+        "label": "Enterprise UX & Design Systems",
+        "description": "Team scaling (2 to 30), enterprise analytics, workflow UX, data visualization, component libraries, and accessibility (WCAG)"
+      },
+      {
+        "label": "Research & Experience Strategy",
+        "description": "Stakeholder interviews, competitive audits, journey maps, user flows, wireframes, prototypes, usability testing, and research-led product direction"
+      },
+      {
+        "label": "AI Implementation & Workflow Design",
+        "description": "Governed LLM/VLM workflows, multimodal review, RAG/knowledge bases, prompt-defined criteria, model orchestration, and human review surfaces"
+      },
+      {
+        "label": "Regulated Healthcare & Client Delivery",
+        "description": "11 years across pharma/healthcare communications, FDA/HIPAA/MLR workflows, HCP/patient UX, client workshops, and stakeholder adoption"
+      }
+    ],
+    "roles": {
+      "hedgehox": [
+        "Designed Claims Detector workflows that identify promotional claims, surface evidence gaps, and pre-populate audit-ready annotations before MLR submission",
+        "Turn pharma agency needs into product requirements and working tools for MLR claim review, brief intake, scoping, review routing, submission capture, and FDA signal monitoring",
+        "Designed the full Xenagos Bio startup biopharma website from scratch, including investor-facing structure, scientific positioning, visual direction, and hidden design-system handoff",
+        "Secured an investor for proprietary Claims Detection software by building the functional POC, shaping the product story, and iterating with investors",
+        "Built Scope Generator for pharma agency finance and operations teams to manage regional rate cards, brands, sub-brands, and natural-language scope changes",
+        "Developed FDA Warning Tool concepts that connect warning-letter patterns to content-risk guidance for pharma teams"
+      ],
+      "one-block-away": [
+        "Lead client discovery, turning unclear business questions into testable product concepts, working POCs, demo flows, and roadmap decisions",
+        "Built ListingPal's AI listing-generation POC and landing page, turning basic property inputs into listing copy, social posts, ad copy, styling direction, and MLS/SEO-ready language in under 90 seconds",
+        "Built WeReady's Bailey Intelligence dashboard, translating founder inputs, GitHub signals, source health, risk scoring, and evidence trails into startup-readiness workflows",
+        "Use AI-assisted building tools to carry product strategy and UX through working front-end and backend prototypes, demos, and client iteration",
+        "Currently building the website and sponsor strategy for a Tunisia youth soccer program, positioning the project for player advancement, community support, and donor outreach"
+      ],
+      "kinesso": [
+        "Led UX research and strategy for a marketing intelligence suite used by 7,000+ people across 22 white-label brands; turned findings and adoption data into roadmap priorities for navigation, dashboards, brand theming, personalization, and product support",
+        "Helped shape and govern a design system with 500 components, 140 styles, 300 icons, and 50 personas, including accessibility and design quality standards; the work earned 5 Indigo Gold, 4 Indigo Silver, and Red Dot recognition",
+        "Built Kinesso's first UX research practice across 20+ products, including participant recruitment, interviews, prototype testing, beta groups, behavioral analytics, research tooling, shared Figma documentation, and UX checkpoints in project plans",
+        "Collaborated on the UX/UI build of Digital Experience Audit, turning channel scoring, benchmarks, and recommendations into a repeatable workflow with data visualization and presentation-ready client outputs",
+        "Scaled product design from 2 to 30 across the US and Poland, hiring and staffing designers, leading critiques and quality reviews, and planning scope, resources, and engineering handoff across 20+ products",
+        "UX lead for research and design on Kanvas, Kinesso's developer-first API services library; partnered with product and engineering on roadmap priorities and with C-suite stakeholders on monetization and go-to-market planning",
+        "Led workshops on product discovery, ecosystem mapping, innovation, and user research; expanded the program from Kinesso teams to IPG groups and presented recommendations to executives and clients",
+        "Led a three-person team to second place in Kinesso's inaugural innovation challenge with an accessibility panel concept; later advised the next cohort and contributed to accessibility playbook and keyboard interaction standards",
+        "Partnered with the Head of Design to create the team's first onboarding program, career roadmaps, coaching structure, and performance review workflows for new and existing employees"
+      ],
+      "omnicom": [
+        "Supported oncology accounts as a freelance UX designer, combining UX design and account-management experience to strengthen regulated healthcare work",
+        "Championed UX best practices across account, strategy, creative, and delivery conversations, translating brand goals into clearer user flows, content structure, and digital recommendations"
+      ],
+      "heartbeat": [
+        "Led research and creation of an oncology-wide design system for interactive visual aids (iVAs) at a major pharma company, with the goal of improving field usability and development efficiency",
+        "Created journey maps, site maps, user flows, wireframes, and prototypes for patient, HCP, and internal brand-team experiences across regulated healthcare programs",
+        "Led UX research and experience strategy for pharma and healthcare work, translating stakeholder input, competitive audits, and user needs into digital product direction",
+        "Partnered with strategy, creative, account, and engineering teams to move UX recommendations from research findings into build-ready product and campaign experiences",
+        "Member of Heartbeat's ETCH (Experiential Technology) group, which ran business-driven sprints exploring voice, AR/VR, and facial recognition for agency and client use"
+      ],
+      "account-management": [
+        "8 years managing Fortune 500 pharma and healthcare clients and brand budgets up to $20M across CNS/neurology, psychiatry, cardiovascular/metabolic, and sleep/wakefulness brands including NUVIGIL, Namenda XR, Lipitor, and Zoloft",
+        "One of two account consumer leads on FCB Health's largest pharma account across all verticals: TV, radio, digital, gaming, Times Square, unbranded campaigns, brand planning, and MLR review",
+        "Translated client and brand strategy into briefs, creative feedback, production requirements, priorities, timelines, and MLR-ready delivery across account, creative, UX, and development teams"
+      ]
+    },
+    "sourceBulletIds": {
+      "hedgehox": [
+        "hedgehox-02",
+        "hedgehox-03",
+        "hedgehox-04",
+        "hedgehox-01",
+        "hedgehox-05",
+        "hedgehox-06"
+      ],
+      "one-block-away": [
+        "one-block-away-01",
+        "one-block-away-02",
+        "one-block-away-03",
+        "one-block-away-04",
+        "one-block-away-05"
+      ],
+      "kinesso": [
+        "kinesso-02",
+        "kinesso-04",
+        "kinesso-06",
+        "kinesso-03",
+        "kinesso-01",
+        "kinesso-08",
+        "kinesso-07",
+        "kinesso-09",
+        "kinesso-05"
+      ],
+      "omnicom": [
+        "omnicom-01",
+        "omnicom-02"
+      ],
+      "heartbeat": [
+        "heartbeat-04",
+        "heartbeat-02",
+        "heartbeat-01",
+        "heartbeat-03",
+        "heartbeat-05"
+      ],
+      "account-management": [
+        "account-management-01",
+        "account-management-02",
+        "account-management-03"
+      ]
+    }
+  },
+  "route": {
+    "designConcept": "proof-grid",
+    "presentation": "showcase",
+    "heroIntent": "resume-support",
+    "showcaseSections": [
+      "chapters",
+      "capabilities"
+    ],
+    "capabilityProjects": {
+      "discover": "project-04.html",
+      "design": "project-05.html",
+      "build": "project-01.html",
+      "lead": "project-03.html"
+    },
+    "workHeading": "Selected work.",
+    "contactHeading": "Thanks for taking a look."
+  },
+  "hero": {
+    "eyebrow": "Real Chemistry | Product Designer",
+    "tags": [
+      "Product design",
+      "Design systems",
+      "Healthcare AI"
+    ],
+    "intro": "Here are four projects that may be relevant to the Product Designer role at Real Chemistry. My resume has the broader career context."
+  },
+  "contact": {
+    "prompt": "Email and my resume are below.",
+    "signoff": "Product design and healthcare workflows | Raleigh, NC"
+  },
+  "constraints": {
+    "doNotClaim": [
+      "Conventional software engineering ownership",
+      "Production ML or model operations",
+      "Formal accessibility certification",
+      "A specific number of direct reports",
+      "Named-tool proficiency beyond documented evidence",
+      "Formal Agile ownership",
+      "A deployed pharma AI product where only a working POC exists"
+    ],
+    "blockedTerms": [
+      "software engineer",
+      "ML engineer",
+      "accessibility certified",
+      "direct reports",
+      "Agile coach"
+    ]
+  },
+  "privacy": {
+    "publicSafe": true,
+    "notes": "Public employer job description and public-safe resume/portfolio evidence only. No recruiter details, private eligibility, compensation boundaries, or application answers."
+  },
+  "qa": {
+    "status": "qa-passed",
+    "builtAt": "2026-09-22T23:25:02.904Z",
+    "configInputSha256": "3a3f8fa9d857ef76092a69d464d5ee41359f377c4c3c3ac5379f6657fd406f5a",
+    "sourceResumeSha256": "309a2ea377c45481d6826da8559d707319f85f53e6d68b3e10a537d1864e91e7",
+    "resumeFoundation": {
+      "id": "wally-mostafa-resume-2026-07-03",
+      "sourcePdfSha256": "f9b05b6c3c134262b1af6c5734363daf4385cf335407a139779a37d138adf1aa"
+    },
+    "resumeBase": {
+      "mode": "ai-product-implementation",
+      "sourceProfiles": [
+        {
+          "id": "ai-product-implementation",
+          "version": 1
+        }
+      ],
+      "leadProfileId": "ai-product-implementation",
+      "accountPresentation": "consolidated",
+      "action": "tailor-to-jd",
+      "registryVersion": 1,
+      "registrySha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108"
+    },
+    "artifactHashes": {
+      "routeSha256": "e79296949c56666b342e3aed6c241c976a0a2fba9a8b17516f306094c8311077",
+      "designConceptCssSha256": "73052eae58d446422f0ff921361877b1ca4e0062ec7ee25daace39b4a4791195",
+      "resumePdfSha256": "8e5c546640fc1802b594c2501df1701aee909bf91cd982a150a0f5d19a8c699d",
+      "coverLetterPdfSha256": null,
+      "coverLetterMarkdownSha256": null,
+      "scopedProjectSha256": {
+        "project-05.html": "89e0c22971dc2338cc0136efd15eb545032136aa9576102d7447ad645cd8c09f",
+        "project-01.html": "cd472837ff17b05d4cb8a860edd20956c574166877123a53808e8505401c7528",
+        "project-04.html": "85bab6438408a8ab792ae06448d95f298b6f95b8165dd09c4383f337ee43f8c0",
+        "project-03.html": "c7091b5332bd1af3de9961506fcf2c57beb7d3e916c11c4aaa32940aa47dec0f"
+      },
+      "scopedProjectAssetSha256": {}
+    },
+    "renderer": {
+      "browser": {
+        "name": "chrome-headless-shell",
+        "version": "Google Chrome for Testing 153.0.8010.12"
+      },
+      "htmlPath": "tmp/tailored-resumes/real-chemistry-product-designer-experience.html",
+      "pdfPath": "output/pdf/Wally-Mostafa-Real-Chemistry-Product-Designer-2026-Resume.pdf",
+      "fontWait": true,
+      "fontProfile": "portfolio-pdf"
+    },
+    "coverLetterRenderer": null,
+    "coverLetter": null,
+    "ats": {
+      "ok": true,
+      "pdfPath": "output/pdf/Wally-Mostafa-Real-Chemistry-Product-Designer-2026-Resume.pdf",
+      "pageCount": 2,
+      "fileSize": 80835,
+      "annotations": [
+        {
+          "page": 1,
+          "uri": "mailto:wmostafa12@gmail.com"
+        },
+        {
+          "page": 1,
+          "uri": "https://linkedin.com/in/wallymo"
+        },
+        {
+          "page": 1,
+          "uri": "https://wally-mostafa.github.io/real-chemistry-product-designer-experience/"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/6748"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/4629"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.red-dot.org/project/dxa-digital-experience-audit-55219"
+        }
+      ],
+      "fontCompatibility": {
+        "type3Fonts": false
+      },
+      "coverage": [
+        {
+          "id": "enterprise-product-design",
+          "requirement": "Design B2B or enterprise software interfaces for workflow-heavy products from exploration through shipped iteration.",
+          "priority": "hard-gate",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "enterprise analytics",
+            "workflow UX",
+            "product design"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "portfolio-component-data-interaction",
+          "requirement": "Show component libraries, data displays, navigation, and interaction patterns in the portfolio.",
+          "priority": "hard-gate",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "design system",
+            "data visualization",
+            "navigation"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "healthcare-marketing-platform",
+          "requirement": "Design a self-service healthcare marketing platform for HCP journeys and omnichannel workflows.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "healthcare marketing",
+            "HCP"
+          ],
+          "missingTerms": [
+            "pharma workflow"
+          ]
+        },
+        {
+          "id": "ai-interface-trust",
+          "requirement": "Design AI and LLM features so users understand model behavior and can trust the interface.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "AI workflows",
+            "human review",
+            "evidence gaps"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "research-usability",
+          "requirement": "Run research and usability sessions and apply findings to product design.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "user research",
+            "prototype testing",
+            "usability"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "design-system-accessibility",
+          "requirement": "Maintain a design system and apply inclusive design and accessibility standards.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "design system",
+            "components",
+            "accessibility"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "design-to-engineering",
+          "requirement": "Work with front-end engineers and use modern design-to-code workflows, including prototypes made with code or AI coding tools.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "engineering handoff"
+          ],
+          "missingTerms": [
+            "AI-assisted prototype"
+          ]
+        },
+        {
+          "id": "us-remote",
+          "requirement": "Work from a listed United States office or an eligible remote United States location.",
+          "priority": "hard-gate",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "Raleigh, NC",
+            "Remote"
+          ],
+          "missingTerms": []
+        }
+      ],
+      "failures": [],
+      "warnings": [
+        "healthcare-marketing-platform: supported core language missing from the PDF: pharma workflow",
+        "design-to-engineering: supported core language missing from the PDF: AI-assisted prototype"
+      ]
+    },
+    "humanizer": {
+      "status": "passed",
+      "version": "2.2.0",
+      "mode": "surface-only",
+      "reviewedAt": "2026-09-22T23:24:37.208Z",
+      "copySha256": "d5f029893efc39c4bf09b704eebda2e1f8e49bd9ef522b44559149c6f681801b",
+      "reviewMethod": "humanizer-skill",
+      "semanticPassAttested": true,
+      "staticChecksPassed": true
+    },
+    "route": {
+      "viewports": [
+        {
+          "name": "desktop",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-05",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-01",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-04",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-03",
+          "errors": []
+        },
+        {
+          "name": "mobile",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-05",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-01",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-04",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-03",
+          "errors": []
+        },
+        {
+          "name": "desktop-stack",
+          "errors": []
+        },
+        {
+          "name": "desktop-laptop",
+          "errors": []
+        },
+        {
+          "name": "desktop-short",
+          "errors": []
+        }
+      ],
+      "errors": []
+    }
+  },
+  "copyReview": {
+    "humanizerVersion": "2.2.0",
+    "mode": "surface-only",
+    "status": "passed",
+    "reviewedAt": "2026-09-22T23:24:37.208Z",
+    "copySha256": "d5f029893efc39c4bf09b704eebda2e1f8e49bd9ef522b44559149c6f681801b",
+    "preserved": [
+      "content",
+      "structure",
+      "claims",
+      "ending"
+    ],
+    "rewriteAuthorized": false,
+    "reviewMethod": "humanizer-skill",
+    "semanticPassAttested": true,
+    "staticChecksPassed": true,
+    "finalAntiAiPass": true,
+    "remainingTells": []
+  }
+}
