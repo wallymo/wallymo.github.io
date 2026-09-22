@@ -286,7 +286,7 @@
         "Lead Pharma AI Platform work across six agency workflows: brief intake, scope planning, submission capture, MLR claims review, review routing, and FDA monitoring; Echo cut one screenshot route from 8 hours to 10 minutes",
         "Secured investor backing for Claims Detector with a functional POC, a clear product story, and direct iteration with investors",
         "Designed Claims Detector as a human-reviewed MLR pre-screening workflow that finds promotional claims, surfaces evidence gaps, and pre-populates audit-ready annotations; one review cycle fell from 3 weeks to 4 days",
-        "Also designed Xenagos Bio's investor-facing biopharma website, translating scientific positioning into a clear digital story and reusable design-system handoff",
+        "Led the AI-assisted design and build of Xenagos Bio's website and reusable design system, translating precision-oncology positioning into an investor-facing site the team could maintain",
         "Built Scope Generator for pharma agency finance and operations teams, turning rate cards, brands, and project inputs into budget-ready scopes and resourcing plans",
         "Developed FDA Warning Tool concepts that turn warning-letter patterns into practical content-risk guidance for pharma teams"
       ],
@@ -437,8 +437,8 @@
     "humanizerVersion": "2.2.0",
     "mode": "rewrite-requested",
     "status": "passed",
-    "reviewedAt": "2026-09-22T03:19:12.536Z",
-    "copySha256": "bd8469dbc9fbf5ce1402a35b4ba236fa5ff9eb0e6c607a1e34d77b98b36a814e",
+    "reviewedAt": "2026-09-22T03:26:19.725Z",
+    "copySha256": "3fcc70e24f0b97810d0e6eb84d27170e8d8fe56dd3de62dc9e20a58a5d880d0f",
     "preserved": [
       "claims"
     ],
@@ -451,8 +451,8 @@
   },
   "qa": {
     "status": "qa-passed",
-    "builtAt": "2026-09-22T03:19:29.898Z",
-    "configInputSha256": "e8431fa07496d45126c5451a82f02e5008388e27be798de9faacd1af6bfbead0",
+    "builtAt": "2026-09-22T03:26:38.386Z",
+    "configInputSha256": "dea59228c9260667bf0cb51e158bf5fc86f175fe6dd49ec5802326cf1c533898",
     "sourceResumeSha256": "8273f9c5f9038a159fa1d9ecc813e2c23069e37c7ef6dd0effe5439cef217fd7",
     "resumeFoundation": {
       "id": "wally-mostafa-resume-2026-07-03",
@@ -475,7 +475,7 @@
     "artifactHashes": {
       "routeSha256": "cd9446f1cd6cf6ac4ba6b220db6f2e8a553bc830342337189e49ceaa1b7c3ae7",
       "designConceptCssSha256": "73052eae58d446422f0ff921361877b1ca4e0062ec7ee25daace39b4a4791195",
-      "resumePdfSha256": "270b7a743e633c3e5ebbca240c40d26b3894e19e91a02636d534460d078847aa",
+      "resumePdfSha256": "bdf9f94e9fe9e2464dcb7914c06f57138753c25755273f88b46fe1de3d38e26f",
       "coverLetterPdfSha256": null,
       "coverLetterMarkdownSha256": null,
       "scopedProjectSha256": {
@@ -503,7 +503,7 @@
       "ok": true,
       "pdfPath": "output/pdf/Wally-Mostafa-BioLumina-Resume.pdf",
       "pageCount": 2,
-      "fileSize": 81060,
+      "fileSize": 81330,
       "annotations": [
         {
           "page": 1,
@@ -612,8 +612,8 @@
       "status": "passed",
       "version": "2.2.0",
       "mode": "rewrite-requested",
-      "reviewedAt": "2026-09-22T03:19:12.536Z",
-      "copySha256": "bd8469dbc9fbf5ce1402a35b4ba236fa5ff9eb0e6c607a1e34d77b98b36a814e",
+      "reviewedAt": "2026-09-22T03:26:19.725Z",
+      "copySha256": "3fcc70e24f0b97810d0e6eb84d27170e8d8fe56dd3de62dc9e20a58a5d880d0f",
       "reviewMethod": "humanizer-skill",
       "semanticPassAttested": true,
       "staticChecksPassed": true
