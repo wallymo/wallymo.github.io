@@ -7,11 +7,11 @@
   "fitClass": "strong",
   "routeMode": "scoped-projects",
   "selectedProjects": [
-    "project-08.html",
     "project-01.html",
-    "project-04.html",
+    "project-05.html",
     "project-03.html",
-    "project-05.html"
+    "project-08.html",
+    "project-04.html"
   ],
   "job": {
     "company": "BioLumina",
@@ -451,8 +451,8 @@
   },
   "qa": {
     "status": "qa-passed",
-    "builtAt": "2026-09-22T03:54:50.448Z",
-    "configInputSha256": "d6afc08bf2495538f3c53a8e3073e476ea14e8dab7cd2421e3c78d903127b456",
+    "builtAt": "2026-09-22T03:59:30.818Z",
+    "configInputSha256": "c02a80a44565c01b91ffa6d39e73fa8df9ee633e23b4983dea1de2ab5f86c574",
     "sourceResumeSha256": "8273f9c5f9038a159fa1d9ecc813e2c23069e37c7ef6dd0effe5439cef217fd7",
     "resumeFoundation": {
       "id": "wally-mostafa-resume-2026-07-03",
@@ -473,17 +473,17 @@
       "registrySha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108"
     },
     "artifactHashes": {
-      "routeSha256": "6fd8947b0ab38cef57d67e6884cad308db1f438c2682b5d997b07b9b6b69be6f",
+      "routeSha256": "c74e1fd82f997f97f209201b2e143eef447759e02b64d619f396a3feb0e128b3",
       "designConceptCssSha256": "73052eae58d446422f0ff921361877b1ca4e0062ec7ee25daace39b4a4791195",
-      "resumePdfSha256": "5c5a8f42569408f4b5f124694af0366611b075c0bb8e9ff89915db923e7e38a0",
+      "resumePdfSha256": "f28290eb2d689a6c012d698a1b7bcdfd91b1da8b75aab2ca93b2101444dfa30d",
       "coverLetterPdfSha256": null,
       "coverLetterMarkdownSha256": null,
       "scopedProjectSha256": {
-        "project-08.html": "934413f7d79dbc8a1ca862f104495a86fdc376a12977723028d841ce416a60b2",
-        "project-01.html": "05049631d5e35b71b44ffac1e7fcc04b3f7453413428b914495ee1ef73770c62",
-        "project-04.html": "5090b26d5e1ad0ac0a5dc36fd7101d85c2c668364eab5c096955ee39ba8ded94",
-        "project-03.html": "ce2b75c4e3d7b791c9a0716b1be1fb564194dcbb65d39f98af579068e5093773",
-        "project-05.html": "0b31655627cecb22537e0a03a2dcf4f09fc4b18a920d3e463ffaa90eaee948c5"
+        "project-01.html": "b75af397d1d120400ebf52921e27a6f42d3e8db971d0baf7123185b88a2f4f5c",
+        "project-05.html": "8f41e63f28ac27f5efbe496052b286b53351666948a193f897179924a460ecda",
+        "project-03.html": "ed872c621c7058f2c262dd11020d1b89a158b0294a24e8e4a8762f69f80f0eaf",
+        "project-08.html": "4528d7c46485211af817f527225507b412f2af4b5a0251a0c3343acf33270c79",
+        "project-04.html": "218418b01bfcb0d21e65c329dd191c327243574d358c461245cafd560e7459b0"
       },
       "scopedProjectAssetSha256": {}
     },
@@ -625,19 +625,7 @@
           "errors": []
         },
         {
-          "name": "desktop-project-08",
-          "errors": []
-        },
-        {
           "name": "desktop-project-01",
-          "errors": []
-        },
-        {
-          "name": "desktop-project-04",
-          "errors": []
-        },
-        {
-          "name": "desktop-project-03",
           "errors": []
         },
         {
@@ -645,11 +633,19 @@
           "errors": []
         },
         {
-          "name": "mobile",
+          "name": "desktop-project-03",
           "errors": []
         },
         {
-          "name": "mobile-project-08",
+          "name": "desktop-project-08",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-04",
+          "errors": []
+        },
+        {
+          "name": "mobile",
           "errors": []
         },
         {
@@ -657,7 +653,7 @@
           "errors": []
         },
         {
-          "name": "mobile-project-04",
+          "name": "mobile-project-05",
           "errors": []
         },
         {
@@ -665,7 +661,11 @@
           "errors": []
         },
         {
-          "name": "mobile-project-05",
+          "name": "mobile-project-08",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-04",
           "errors": []
         },
         {
