@@ -3912,6 +3912,45 @@
     {
       "workflowVersion": 2,
       "contractRevision": 7,
+      "slug": "pantherx-account-director",
+      "roleTitle": "PANTHERx Rare Pharmacy Account Director",
+      "artifactStem": "PANTHERx-Account-Director",
+      "configPath": "scripts/packages/pantherx-account-director.json",
+      "targetLane": "client-account-delivery",
+      "evidenceMode": "resume-primary",
+      "fitClass": "stretch",
+      "positioningLane": "client-account-delivery",
+      "bridgeType": "domain-transfer",
+      "applicationStrategy": "approved-stretch",
+      "resumeBaseMode": "account-leadership",
+      "resumeBaseLeadProfile": "account-leadership",
+      "resumeBaseAction": "tailor-to-jd",
+      "accountPresentation": "agency-progression",
+      "resumeBaseProfiles": [
+        {
+          "id": "account-leadership",
+          "version": 1
+        }
+      ],
+      "routeMode": "scoped-projects",
+      "designConcept": "editorial-proof",
+      "publicBase": "https://wallymo.github.io/",
+      "publishRepository": "wallymo/wallymo.github.io",
+      "selectedProjects": [
+        "project-01.html",
+        "project-06.html",
+        "project-04.html",
+        "project-03.html"
+      ],
+      "designConceptCssPath": "pantherx-account-director/design-concept.css",
+      "resumePdfPath": "output/pdf/Wally-Mostafa-PANTHERx-Account-Director-Resume.pdf",
+      "publishStatus": "local-only",
+      "qaStatus": "qa-passed",
+      "builtAt": "2026-09-22T19:17:23.703Z"
+    },
+    {
+      "workflowVersion": 2,
+      "contractRevision": 7,
       "slug": "pharma-ux-networking",
       "roleTitle": "UX Design Selected Work",
       "artifactStem": "Pharma-UX",

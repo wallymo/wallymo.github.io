@@ -1,0 +1,733 @@
+{
+  "workflowVersion": 2,
+  "contractRevision": 7,
+  "slug": "pantherx-account-director",
+  "roleTitle": "PANTHERx Rare Pharmacy Account Director",
+  "artifactStem": "PANTHERx-Account-Director",
+  "fitClass": "stretch",
+  "routeMode": "scoped-projects",
+  "selectedProjects": [
+    "project-01.html",
+    "project-06.html",
+    "project-04.html",
+    "project-03.html"
+  ],
+  "job": {
+    "company": "PANTHERx Rare Pharmacy",
+    "roleTitle": "Account Director",
+    "jobId": "4456256782",
+    "jobUrl": "https://www.linkedin.com/jobs/view/account-director-at-pantherx-rare-pharmacy-4456256782/",
+    "sourceChannel": "LinkedIn employer posting",
+    "dateCaptured": "2026-09-22",
+    "location": "Pittsburgh, PA (Remote); occasional travel to headquarters or manufacturer sites",
+    "employmentType": "Full-time; remote",
+    "atsVendor": "linkedin-easy-apply",
+    "rawJd": "7,000 Diseases - 500 Treatments - 1 Rare Pharmacy\nPANTHERx is the nation’s largest rare disease pharmacy, and we put the patient experience at the top of everything that we do.\nIf you are looking for a career in the healthcare field that embraces authentic dedication to patient care, you don’t need to look beyond PANTHERx. In every line of service, in every position and area of expertise, PANTHERx associates are driven to provide the highest quality outcomes for our patients.\nWe Are Seeking Team Members Who\nAre inspired and compassionate problem solvers;\nProduce high quality work;\nThrive in the excitement of the ever-challenging environment of modern medicine; and\nAre committed to achieving superior health outcomes for people living with rare and devastating diseases.\nAt PANTHERx, we know our employees are the driving force in what we do. We cultivate talent and encourage growth within PANTHERx so that our associates can continue to explore their interests and expand their careers. Guided by our mission to provide uncompromising quality every day, we continue our strategic growth to further reach those affected by rare diseases.\nJoin the PANTHERx team, and define your own RxARE future in healthcare!\nLocation\n: Pittsburgh, PA (Remote)\nClassification\n: Exempt\nStatus:\nFull-Time\nReports To:\nDirector, Account Management\nPurpose\nThe Account Director is a proactive business partner who drives strategic outcomes for assigned, complex pharmacy manufacturer programs through data-driven insights, collaboration, and operational excellence. This role is pivotal in driving business forward, skillfully influencing senior stakeholders through data-driven insights to uphold excellence in client relationships and program execution. The Account Director owns advanced business objectives and partners cross-functionally to align and deliver on shared goals, drive program growth and efficiencies, and support long-term success. This role requires occasional travel to PANTHER headquarters or manufacturer sites for in-person meetings and events.\nResponsibilities\nServes as the proactive, primary point of contact for assigned complex manufacturer partner delivering timely, strategic, and value-focused communication.\nResponds to inquiries with promptness, professionalism, and a solutions-oriented mindset.\nCollaborates across internal departments and external stakeholders to ensure alignment on program objectives and deliverables.\nDelivers measurable value to clients through performance outcomes, innovation, and partnership optimization.\nDisplays value that PANTHERx brings to patients through use of advanced analytics.\nDrives critical program insights and recommendations with comprehensive business metrics.\nTranslates data into strategic insights related to drug utilization, patient engagement, and payer performance.\nLeads the preparation and delivery of quarterly business reviews (QBRs) using actionable analytics and strategic insights.\nObserves and reports on program KPIs, SLAs, and other contractual metrics.\nEnsures adherence to contractual obligations while driving enhanced performance through internal collaboration and business process improvements.\nUtilizes comprehensive knowledge of operational processes and data mapping to ensure precise data transmission to partners, proactively identifying and resolving any discrepancies.\nOwns end-to-end program execution and business outcomes, including identifying and resolving issues, partner engagement, and performance tracking.\nLeads the implementation and execution of advanced manufacturer programs.\nSupports product launches, staff training, and critical business initiatives in partnership with manufacturer stakeholders.\nMonitors and analyzes trends in program performance (e.g., conversion, adherence, persistence) to identify opportunities for continuous improvement.\nExecutes program health checks at cadence agreed upon with partner, reports findings, works with key stakeholders on any actionable items, and displays positive findings.\nStreamlines communication between internal product inventory team and manufacturer supply chain to meet the flux of the industry, avoids disruption to patient care, and maintains cost and efficiencies for both parties.\nOwns ancillary business relationships specific to program (e.g. buy and bill, wholesale, In Office Dispense Networks, etc.)\nClearly conveys expectations, provides constructive feedback, and facilitates open, two-way communication within the teams to drive collaboration and performance.\nProvides leadership support to the operations team as assigned, including performance tracking and reviews and delivers continuous feedback.\nAttends in-person meetings and events at PANTHER headquarters or manufacturer locations as required.\nOther duties as required.\nRequired Qualifications\nBachelor's degree in Health Science, Business, Marketing or related discipline.\nMinimum of six (6) years of experience in healthcare, pharma, client services, or strategic program management.\nDemonstrated experience using data analytics and insights to drive business outcomes.\nProven ability to collaborate across departments and influence stakeholders at all levels.\nStrong critical thinking, problem-solving, and independent decision-making skills.\nStrong organizational skills with the ability to manage multiple tasks, prioritize effectively, and meet deadlines in a fast-paced environment.\nExecutive presence, with proven ability to influence senior and C-suite stakeholders\nDemonstrated ability to drive success in complex, high-value client programs through data insight and operational leadership.\nPrior leadership experience.\nAbility to travel as required to meet clients and attend industry events.\nPreferred Qualifications\nAdvanced Degree (e.g. PharmD, Ph.D., MBA, etc.) in Health Science, Business, Marketing, or related discipline.\nExperience in enterprise account management with pharma/healthcare client leadership experience.\nExperience supporting pharmaceutical manufacturers or specialty pharmacy operations.\nProficiency in advanced reporting/BI tools (Tableau, Power BI, etc.).\nExperience in process improvement (Lean Six Sigma, etc.).\nPMP or equivalent certification.\nKnowledge of commercial drug launch strategy, specialty pharmacy, market access, PBM relations, or healthcare data.\nWork Environment\nThis job functions in a professional home or office environment. This role routinely uses standard office equipment such as computers, phones, photocopiers, and fax machines.\nPhysical Demands\nWhile performing the duties of this job, the employee is regularly required to sit, see, talk, or hear. The employee frequently is required to stand; walk; use hands and fingers to handle or feel; and reach with hands and arms. Visual acuity is necessary for tasks such as reading or working with various forms of data for extended periods. Reasonable accommodation may be made to enable individuals with disabilities to perform the essential functions of the job.\nBenefits\nHybrid, remote and flexible on-site work schedules are available, based on the position. PANTHERx Rare Pharmacy also affords an excellent benefit package, including but not limited to medical, dental, vision, health savings and flexible spending accounts, 401K with employer matching, employer-paid life insurance and short/long term disability coverage, and an Employee Assistance Program! Generous paid time off is also available to all full-time employees, as well as limited paid time off for part-time employees. Of course we offer paid holidays too!\nEqual Opportunity\nPANTHERx Rare Pharmacy is an equal opportunity employer, and does not discriminate in recruiting, hiring, promotions or any term or condition of employment based on race, age, religion, gender, ethnicity, sexual orientation, gender identity, disability, protected veteran's status, or any other characteristic protected by federal, state or local laws."
+  },
+  "classification": {
+    "targetLane": "client-account-delivery",
+    "evidenceMode": "resume-primary",
+    "primarySource": "The resume proves eight years of pharma client service, regulated delivery, budgets, reporting, and team coordination.",
+    "supportingSource": "The portfolio shows analytics, data visualization, patient and HCP experience, and pharma workflow design. It does not show specialty pharmacy operations.",
+    "hardGateStatus": "pass",
+    "hardGates": [
+      {
+        "gate": "Bachelor degree in a related discipline",
+        "status": "pass",
+        "requirementId": "bachelor-degree",
+        "evidence": "The resume lists a Rutgers University BA."
+      },
+      {
+        "gate": "At least six years in healthcare, pharma, client services, or strategic program management",
+        "status": "pass",
+        "requirementId": "healthcare-client-tenure",
+        "evidence": "Eight years of direct healthcare and pharma agency account work are documented."
+      }
+    ]
+  },
+  "requirements": [
+    {
+      "id": "bachelor-degree",
+      "text": "Bachelor degree in Health Science, Business, Marketing, or related discipline.",
+      "priority": "hard-gate",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Rutgers BA plus eight years of healthcare client work."
+      ],
+      "proofIds": [
+        "account-management-01"
+      ],
+      "destinations": [
+        "experience"
+      ],
+      "resumeTerms": [
+        "Rutgers University"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "healthcare-client-tenure",
+      "text": "At least six years in healthcare, pharma, client services, or strategic program management.",
+      "priority": "hard-gate",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Eight years of healthcare and pharma agency account management."
+      ],
+      "proofIds": [
+        "account-management-01",
+        "account-management-02"
+      ],
+      "destinations": [
+        "summary",
+        "experience"
+      ],
+      "resumeTerms": [
+        "eight years",
+        "pharma"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "manufacturer-partnerships",
+      "text": "Lead complex manufacturer partnerships and program outcomes.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Pharmaceutical brand-team relationships and multichannel program leadership are documented; manufacturer program operations are not."
+      ],
+      "proofIds": [
+        "addition:rosetta-prevenar-client-contact",
+        "account-management-02"
+      ],
+      "destinations": [
+        "summary",
+        "experience"
+      ],
+      "resumeTerms": [
+        "client relationships"
+      ],
+      "matchMode": "contextual"
+    },
+    {
+      "id": "analytics-and-qbrs",
+      "text": "Use program metrics, analytics, and business reviews to identify improvements.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "The resume shows campaign measurement, financial and client reporting, and an analytics audit workflow. Specialty pharmacy QBR metrics are not documented."
+      ],
+      "proofIds": [
+        "addition:cdm-lipitor-zoloft-digital",
+        "kinesso-03"
+      ],
+      "destinations": [
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "campaign metrics",
+        "client outputs"
+      ],
+      "matchMode": "contextual"
+    },
+    {
+      "id": "pharmacy-operations",
+      "text": "Lead specialty pharmacy operations, utilization, adherence, payer performance, and inventory coordination.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "proofIds": [],
+      "destinations": [
+        "application-answer"
+      ],
+      "resumeTerms": [
+        "specialty pharmacy operations"
+      ],
+      "matchMode": "not-supported"
+    },
+    {
+      "id": "cross-functional-leadership",
+      "text": "Coordinate internal teams and senior stakeholders to deliver complex client programs.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The agency record includes client and vendor leadership; later work grew a distributed team from 2 to 30."
+      ],
+      "proofIds": [
+        "account-management-02",
+        "kinesso-01"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience"
+      ],
+      "resumeTerms": [
+        "cross-functional delivery",
+        "2 to 30"
+      ],
+      "matchMode": "exact"
+    }
+  ],
+  "fitGate": {
+    "resumeBase": {
+      "mode": "account-leadership",
+      "sourceProfiles": [
+        {
+          "id": "account-leadership",
+          "version": 1
+        }
+      ],
+      "leadProfileId": "account-leadership",
+      "accountPresentation": "agency-progression",
+      "action": "tailor-to-jd",
+      "rationale": "The role centers on manufacturer relationships and program delivery. The closest primary evidence is the Account Leadership profile and agency progression."
+    },
+    "supportedOverlap": [
+      "Eight years in pharmaceutical agency account management.",
+      "Client contact, regulated programs, budgets, reporting, and cross-functional delivery.",
+      "Later analytics, team leadership, and patient-focused workflow work."
+    ],
+    "unsupportedRequirements": [
+      "Specialty pharmacy manufacturer program ownership is not documented.",
+      "Payer, adherence, utilization, inventory, and supply-chain performance ownership is not documented.",
+      "Named BI tools and pharmacy operations certifications are not documented."
+    ],
+    "actualMismatches": [
+      "The direct account record is pharmaceutical marketing, while this role centers on rare-disease pharmacy operations."
+    ],
+    "missingEvidence": [
+      "Specialty pharmacy program operations and patient/payer metrics.",
+      "Inventory and manufacturer supply-chain coordination."
+    ],
+    "coverLetterBridge": {
+      "status": "not-credible",
+      "rationale": "A cover letter cannot replace direct specialty pharmacy operations and manufacturer program ownership, which are central to this role."
+    },
+    "recommendation": "Proceed only as an approved stretch with the specialty pharmacy gap visible and no operational claims."
+  },
+  "positioning": {
+    "laneId": "client-account-delivery",
+    "targetIdentity": "healthcare account leader",
+    "employerNeed": "Lead manufacturer relationships and complex patient-support programs through data and operational coordination.",
+    "bridgeType": "domain-transfer",
+    "applicationStrategy": "approved-stretch",
+    "bridgeThesis": "regulated client delivery and product judgment for manufacturer partnerships",
+    "proofIds": [
+      "account-management-02",
+      "kinesso-03",
+      "heartbeat-01"
+    ],
+    "remainingGap": "Direct specialty pharmacy program, payer, adherence, and inventory ownership is not documented."
+  },
+  "coverLetter": null,
+  "resume": {
+    "foundationId": "wally-mostafa-resume-2026-07-03",
+    "compositionMode": "profile-complete",
+    "layoutDensity": "compact",
+    "summary": "Healthcare account leader with eight years in pharmaceutical agency client service, including senior brand-team relationships, budgets up to $20M, multichannel delivery, and regulated review. I later led enterprise analytics and patient-focused UX work, bringing regulated client delivery and product judgment for manufacturer partnerships. My direct experience is in pharmaceutical marketing.",
+    "skillIds": [
+      "account-management-client-leadership",
+      "regulated-healthcare-client-delivery",
+      "healthcare-marketing-strategy",
+      "program-project-delivery"
+    ],
+    "skills": [
+      {
+        "label": "Account Management & Client Leadership",
+        "description": "Client relationships, budgets up to $20M, briefs, scopes, timelines, status and financial reporting, vendor coordination, and cross-functional delivery"
+      },
+      {
+        "label": "Regulated Healthcare & Client Delivery",
+        "description": "11 years across pharma/healthcare communications, FDA/HIPAA/MLR workflows, HCP/patient UX, client workshops, and stakeholder adoption"
+      },
+      {
+        "label": "Healthcare Marketing & Brand Strategy",
+        "description": "Brand planning, campaign and digital strategy, MLR review, patient and HCP experiences, and regulated multi-channel delivery"
+      },
+      {
+        "label": "Program & Project Delivery",
+        "description": "Scoping, requirements, timelines, review routing, team coordination, risk visibility, and build-ready handoff across product, design, and client teams"
+      }
+    ],
+    "experienceSections": [
+      {
+        "heading": "Account Management Experience",
+        "roleIds": [
+          "account-management"
+        ]
+      },
+      {
+        "heading": "Most Recent Experience",
+        "roleIds": [
+          "hedgehox",
+          "one-block-away",
+          "kinesso",
+          "omnicom",
+          "heartbeat"
+        ]
+      }
+    ],
+    "awards": [
+      {
+        "label": "Manny Award 2013",
+        "detail": "Best Unbranded Campaign, \"Get Your Shift Together\""
+      },
+      {
+        "label": "Pharma Choice Awards 2011",
+        "detail": "Silver Consumer Print, Silver HCP Sales Aid, Bronze HCP Mobile Site"
+      },
+      {
+        "label": "Indigo Awards 2023",
+        "detail": "Design System & Data Visualization: 3x Gold, 2x Silver",
+        "href": "https://www.indigoaward.com/winners/6748"
+      }
+    ],
+    "roles": {
+      "hedgehox": [
+        "Secured an investor for proprietary Claims Detection software by building the functional POC, shaping the demo story, and iterating with investors",
+        "Designed Claims Detector workflows that identify promotional claims, surface evidence gaps, and pre-populate audit-ready annotations before MLR submission",
+        "Translate pharma agency needs into working tools for MLR claim review, brief intake, scoping, review routing, submission capture, and FDA signal monitoring",
+        "Built Scope Generator for pharma agency finance and operations teams to manage regional rate cards, brands, sub-brands, and natural-language scope changes"
+      ],
+      "one-block-away": [
+        "Lead client discovery and turn unclear business questions into testable product concepts, working POCs, demo flows, and roadmap decisions",
+        "Built ListingPal's AI listing-generation POC and landing page, turning basic property inputs into listing copy, social posts, ad copy, styling direction, and MLS/SEO-ready language in under 90 seconds",
+        "Built WeReady's Bailey Intelligence dashboard, translating founder inputs, GitHub signals, source health, risk scoring, and evidence trails into startup-readiness workflows",
+        "Own product strategy, UX, AI workflow design, front-end build, backend logic, demo readiness, and client iteration from first ask through working prototype",
+        "Currently building the website and sponsor strategy for a Tunisia youth soccer program, positioning the project for player advancement, community support, and donor outreach"
+      ],
+      "kinesso": [
+        "Scaled product design from 2 to 30 people across the US and Poland for enterprise analytics used by 7,000+ users across 22 white-label brands",
+        "Led UX and design-system strategy for MIE data visualization, dashboard building, brand theming, and reusable analytics components",
+        "Built the Digital Experience Audit workflow for channel scoring, benchmarks, recommendations, visualization, and presentation-ready client outputs"
+      ],
+      "omnicom": [
+        "Supported oncology accounts as a freelance UX designer, combining UX design and account-management experience to strengthen regulated healthcare work"
+      ],
+      "heartbeat": [
+        "Led UX research and experience strategy for pharma and healthcare work, translating stakeholder input, competitive audits, and user needs into digital product direction",
+        "Created journey maps, site maps, user flows, wireframes, and prototypes for patient, HCP, and internal brand-team experiences across regulated healthcare programs",
+        "Partnered with strategy, creative, account, and engineering teams to move UX recommendations from research findings into build-ready product and campaign experiences"
+      ],
+      "account-management": [
+        {
+          "title": "Account Supervisor / Digital Strategist",
+          "employer": "Scout Marketing",
+          "location": "San Diego, CA",
+          "dateRange": "Jun 2015 – Jul 2018",
+          "bullets": [
+            "Promoted from Senior Account Executive and took the lead on Jazz Pharmaceuticals XYREM consumer work: unbranded campaigns across digital, print, and in-office channels that lifted traffic and engagement on the disease-state site",
+            "Led the launch of the first unbranded social campaign on Facebook and YouTube for the brand and for Jazz, built around real patients telling their own stories",
+            "Oversaw an unbranded digital campaign bridging disease state and branded work; banners held a 0.37% click-through rate against a 0.17% industry benchmark and doubled qualified traffic to the brand site"
+          ]
+        },
+        {
+          "title": "Senior Account Executive",
+          "employer": "FCB Health",
+          "location": "New York, NY",
+          "dateRange": "Jun 2014 – Jun 2015",
+          "bullets": [
+            "One of two consumer account leads on the agency's largest pharma business, managing the Actavis Namenda XR direct-to-consumer launch and its $20M brand budget",
+            "Owned the broadcast workstream for three national television commercials in one year, covering market research, med-legal review, FDA preclearance, pre- and post-production, talent and location coordination, director searches, and network clearances; the spots drove a 45% increase in new-to-brand consumers within seven weeks",
+            "Led the launch of an unbranded Alzheimer's caregiver community site with support resources, sponsorship exploration, and public relations pull-through; also oversaw the account's Assistant Account Executive across in-office tactics, national print, and sales representative support materials"
+          ]
+        },
+        {
+          "title": "Senior Account Executive",
+          "employer": "Barker DZP",
+          "location": "New York, NY",
+          "dateRange": "Dec 2013 – May 2014",
+          "bullets": [
+            "Led the social campaign for a new Tough Mudder loyalty program and oversaw PDI and Nice-Pak, the agency's largest account, across print, digital, and social"
+          ]
+        },
+        {
+          "title": "Senior Account Executive",
+          "employer": "Cline Davis & Mann",
+          "location": "New York, NY",
+          "dateRange": "Sep 2013 – Dec 2013",
+          "bullets": [
+            "Used campaign metrics to shape Pfizer digital recommendations for Lipitor's online presence and loyalty program during loss of exclusivity, and piloted a Zoloft savings offer to test market response"
+          ]
+        },
+        {
+          "title": "Assistant Account Executive to Account Executive",
+          "employer": "FCB Health",
+          "location": "New York, NY",
+          "dateRange": "Apr 2011 – Sep 2013",
+          "bullets": [
+            "Managed development and execution of the unbranded Teva NUVIGIL campaign for National Night Shift Workers' Day across Times Square NASDAQ, national television, Xbox Live, radio, outdoor, and consumer journals, working through media, digital, and print vendors; the campaign won the 2013 Manny Award for Best Unbranded Campaign",
+            "Coordinated the NUVIGIL.com consumer rebrand across desktop and mobile with the agency's digital strategy and development teams, plus the launch of a CRM patient support program and its online patient community",
+            "Worked alongside the HCP team on the NUVIGIL.com HCP site and sales aid, both of which won 2011 Pharma Choice awards",
+            "Owned weekly client status and financial reporting plus OPDP and review-committee submissions across the $10M consumer business, and contributed to the annual strategic recommendations"
+          ]
+        },
+        {
+          "title": "Account Coordinator",
+          "employer": "RosettaWishbone",
+          "location": "New York, NY",
+          "dateRange": "Sep 2010 – Mar 2011",
+          "bullets": [
+            "Primary client contact across brand teams, national affiliates, and vendors on an award-winning global unbranded pneumococcal disease awareness campaign for the Pfizer Prevenar 13 adult pre-launch",
+            "Facilitated an Africa and Middle East advisory board in Dubai and owned project briefs, scopes of work, key opinion leader communications, and client status and financial reports"
+          ]
+        }
+      ]
+    },
+    "sourceBulletIds": {
+      "hedgehox": [
+        "hedgehox-01",
+        "hedgehox-02",
+        "hedgehox-03",
+        "hedgehox-05"
+      ],
+      "one-block-away": [
+        "one-block-away-01",
+        "one-block-away-02",
+        "one-block-away-03",
+        "one-block-away-04",
+        "one-block-away-05"
+      ],
+      "kinesso": [
+        "kinesso-01",
+        "kinesso-02",
+        "kinesso-03"
+      ],
+      "omnicom": [
+        "omnicom-01"
+      ],
+      "heartbeat": [
+        "heartbeat-01",
+        "heartbeat-02",
+        "heartbeat-03"
+      ],
+      "account-management": [
+        "addition:scout-xyrem-account-lead",
+        "addition:scout-xyrem-unbranded-social",
+        "addition:scout-xyrem-bridging-campaign",
+        "account-management-02",
+        "account-management-03",
+        "addition:fcb-namenda-caregiver-site",
+        "addition:barker-tough-mudder-pdi",
+        "addition:cdm-lipitor-zoloft-digital",
+        "account-management-01",
+        "addition:fcb-nuvigil-rebrand-crm",
+        "addition:fcb-nuvigil-hcp-collaboration",
+        "addition:fcb-nuvigil-client-operations",
+        "addition:rosetta-prevenar-client-contact",
+        "addition:rosetta-dubai-advisory"
+      ]
+    },
+    "roleTitleOverrides": {
+      "hedgehox": "AI Implementation Lead"
+    }
+  },
+  "hero": {
+    "eyebrow": "PANTHERx | Selected Work",
+    "tags": [
+      "Regulated healthcare",
+      "Analytics and recommendations",
+      "Patient experience"
+    ],
+    "intro": "Here are a few projects that may be useful alongside my resume for the Account Director role. The resume covers my pharmaceutical account background; this page shows the analytics, patient experience, and workflow work that followed."
+  },
+  "contact": {
+    "prompt": "Thanks for taking a look. Email and the resume are below.",
+    "signoff": "Pharma client work | analytics | patient experience"
+  },
+  "route": {
+    "presentation": "showcase",
+    "heroIntent": "resume-support",
+    "workHeading": "Selected work.",
+    "contactHeading": "Thanks for stopping by.",
+    "showcaseSections": [
+      "chapters",
+      "capabilities"
+    ],
+    "designConcept": "editorial-proof"
+  },
+  "constraints": {
+    "doNotClaim": [
+      "Formal revenue projection, margin, profitability, invoicing, or collections ownership",
+      "Quantified account expansion, retention, upsell, or new-business revenue",
+      "Current agency Account Director title",
+      "Named PowerPoint proficiency without evidence",
+      "Specialty pharmacy, PBM, payer, adherence, or inventory program ownership",
+      "Rare-disease manufacturer account ownership",
+      "Tableau, Power BI, PMP, or Lean Six Sigma proficiency"
+    ],
+    "blockedTerms": [
+      "P&L owner",
+      "forecast owner",
+      "profitability owner",
+      "account expansion revenue",
+      "agency new-business wins",
+      "PowerPoint expert",
+      "specialty pharmacy leader",
+      "PBM expert",
+      "inventory owner",
+      "PMP certified",
+      "Power BI expert"
+    ]
+  },
+  "privacy": {
+    "publicSafe": true,
+    "notes": "Contains only public job text and public-safe evidence; no application answers, personal address, or eligibility details."
+  },
+  "qa": {
+    "status": "qa-passed",
+    "builtAt": "2026-09-22T19:17:23.703Z",
+    "configInputSha256": "97a6a8ee7329a77b191eb58104e2a1a8b392287d29cb5fe12a6c63add23ed930",
+    "sourceResumeSha256": "309a2ea377c45481d6826da8559d707319f85f53e6d68b3e10a537d1864e91e7",
+    "resumeFoundation": {
+      "id": "wally-mostafa-resume-2026-07-03",
+      "sourcePdfSha256": "f9b05b6c3c134262b1af6c5734363daf4385cf335407a139779a37d138adf1aa"
+    },
+    "resumeBase": {
+      "mode": "account-leadership",
+      "sourceProfiles": [
+        {
+          "id": "account-leadership",
+          "version": 1
+        }
+      ],
+      "leadProfileId": "account-leadership",
+      "accountPresentation": "agency-progression",
+      "action": "tailor-to-jd",
+      "registryVersion": 1,
+      "registrySha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108"
+    },
+    "artifactHashes": {
+      "routeSha256": "64e5b15133de10a66d8b71bf46af2974fcff9fa01925d166af4a497338de6b6d",
+      "designConceptCssSha256": "b0888b6dc13bd1e5526259a5435dd84911b2007f68715d23d600bbc14ee7c9fd",
+      "resumePdfSha256": "b96068218ef604762d3c9509f00064a0539779e9a5fd35349ca7143be9b72025",
+      "coverLetterPdfSha256": null,
+      "coverLetterMarkdownSha256": null,
+      "scopedProjectSha256": {
+        "project-01.html": "ad3bc2e4e5f1d828e96f0b3a3b8795f8295adb3636f2f260fbcb265a938659bc",
+        "project-06.html": "472d41458dacdc03301ee9818cee189a42d2c15d7ea64300d1d08f350c37f655",
+        "project-04.html": "8eb1cfbb97219af48bbfa1c35d76c728a23d69735a0747c6f6d9304433d6c83e",
+        "project-03.html": "781c7cddf72175c58d3e2a0e8069946d77cf4f8cfbbfa99e78aaaf14e4ffc0e6"
+      },
+      "scopedProjectAssetSha256": {}
+    },
+    "renderer": {
+      "browser": {
+        "name": "chrome-headless-shell",
+        "version": "Google Chrome for Testing 153.0.8010.12"
+      },
+      "htmlPath": "tmp/tailored-resumes/pantherx-account-director.html",
+      "pdfPath": "output/pdf/Wally-Mostafa-PANTHERx-Account-Director-Resume.pdf",
+      "fontWait": true,
+      "fontProfile": "portfolio-pdf"
+    },
+    "coverLetterRenderer": null,
+    "coverLetter": null,
+    "ats": {
+      "ok": true,
+      "pdfPath": "output/pdf/Wally-Mostafa-PANTHERx-Account-Director-Resume.pdf",
+      "pageCount": 2,
+      "fileSize": 80876,
+      "annotations": [
+        {
+          "page": 1,
+          "uri": "mailto:wmostafa12@gmail.com"
+        },
+        {
+          "page": 1,
+          "uri": "https://linkedin.com/in/wallymo"
+        },
+        {
+          "page": 1,
+          "uri": "https://wallymo.github.io/pantherx-account-director/"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/6748"
+        }
+      ],
+      "fontCompatibility": {
+        "type3Fonts": false
+      },
+      "coverage": [
+        {
+          "id": "bachelor-degree",
+          "requirement": "Bachelor degree in Health Science, Business, Marketing, or related discipline.",
+          "priority": "hard-gate",
+          "evidenceStatus": "direct",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "Rutgers University"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "healthcare-client-tenure",
+          "requirement": "At least six years in healthcare, pharma, client services, or strategic program management.",
+          "priority": "hard-gate",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "eight years",
+            "pharma"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "manufacturer-partnerships",
+          "requirement": "Lead complex manufacturer partnerships and program outcomes.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "contextual",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "client relationships"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "analytics-and-qbrs",
+          "requirement": "Use program metrics, analytics, and business reviews to identify improvements.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "contextual",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "campaign metrics",
+            "client outputs"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "pharmacy-operations",
+          "requirement": "Lead specialty pharmacy operations, utilization, adherence, payer performance, and inventory coordination.",
+          "priority": "core",
+          "evidenceStatus": "none",
+          "matchMode": "not-supported",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "specialty pharmacy operations"
+          ]
+        },
+        {
+          "id": "cross-functional-leadership",
+          "requirement": "Coordinate internal teams and senior stakeholders to deliver complex client programs.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "cross-functional delivery",
+            "2 to 30"
+          ],
+          "missingTerms": []
+        }
+      ],
+      "failures": [],
+      "warnings": []
+    },
+    "humanizer": {
+      "status": "passed",
+      "version": "2.2.0",
+      "mode": "surface-only",
+      "reviewedAt": "2026-09-22T19:16:54.810Z",
+      "copySha256": "5c05e431a33b3abce2e6249a02a0aa49b96d51e6b317e1ca6f0fea61453d3bc5",
+      "reviewMethod": "humanizer-skill",
+      "semanticPassAttested": true,
+      "staticChecksPassed": true
+    },
+    "route": {
+      "viewports": [
+        {
+          "name": "desktop",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-01",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-06",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-04",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-03",
+          "errors": []
+        },
+        {
+          "name": "mobile",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-01",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-06",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-04",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-03",
+          "errors": []
+        },
+        {
+          "name": "desktop-stack",
+          "errors": []
+        },
+        {
+          "name": "desktop-laptop",
+          "errors": []
+        },
+        {
+          "name": "desktop-short",
+          "errors": []
+        }
+      ],
+      "errors": []
+    }
+  },
+  "copyReview": {
+    "humanizerVersion": "2.2.0",
+    "mode": "surface-only",
+    "status": "passed",
+    "reviewedAt": "2026-09-22T19:16:54.810Z",
+    "copySha256": "5c05e431a33b3abce2e6249a02a0aa49b96d51e6b317e1ca6f0fea61453d3bc5",
+    "preserved": [
+      "content",
+      "structure",
+      "claims",
+      "ending"
+    ],
+    "rewriteAuthorized": false,
+    "reviewMethod": "humanizer-skill",
+    "semanticPassAttested": true,
+    "staticChecksPassed": true,
+    "finalAntiAiPass": true,
+    "remainingTells": []
+  }
+}
