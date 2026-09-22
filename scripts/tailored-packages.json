@@ -4883,9 +4883,41 @@
       ],
       "designConceptCssPath": "real-chemistry-product-designer/design-concept.css",
       "resumePdfPath": "output/pdf/Wally-Mostafa-Real-Chemistry-Product-Designer-Resume.pdf",
-      "publishStatus": "local-only",
+      "publishStatus": "live-verified",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-09-22T23:01:55.883Z"
+      "builtAt": "2026-09-22T23:01:55.883Z",
+      "verification": {
+        "verifiedAt": "2026-09-22T23:04:13.214Z",
+        "routeUrl": "https://wallymo.github.io/real-chemistry-product-designer/",
+        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-Real-Chemistry-Product-Designer-Resume.pdf",
+        "configUrl": "https://wallymo.github.io/scripts/packages/real-chemistry-product-designer.json",
+        "publicBase": "https://wallymo.github.io/",
+        "publishRepository": "wallymo/wallymo.github.io",
+        "designConceptCssUrl": "https://wallymo.github.io/real-chemistry-product-designer/design-concept.css",
+        "designConceptCssSha256": "b0888b6dc13bd1e5526259a5435dd84911b2007f68715d23d600bbc14ee7c9fd",
+        "projectUrls": [
+          "https://wallymo.github.io/real-chemistry-product-designer/project-05.html",
+          "https://wallymo.github.io/real-chemistry-product-designer/project-01.html",
+          "https://wallymo.github.io/real-chemistry-product-designer/project-04.html",
+          "https://wallymo.github.io/real-chemistry-product-designer/project-03.html"
+        ],
+        "redirectUrls": [],
+        "configSha256": "73cf784907e1ee5248ff688b31fa461b43e35470a93ec64db9dacdf79f9bc317",
+        "pdfSha256": "30e8c5e2ea3bd86cb9a627bc99e2695f843eec7e4ed8e1eb031d447710c43055",
+        "resumeBaseProfilesUrl": "https://wallymo.github.io/scripts/resume-base-profiles.json",
+        "resumeBaseProfilesSha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108",
+        "routeSha256": "d786a7e474627198930c651da2f063fd177d946aa96ea1ab685f9c9568f1e5be",
+        "scopedProjectSha256": {
+          "project-05.html": "247653ccad328b9d978d33245391709df6c1ebc84ac82d172355ee858a514df7",
+          "project-01.html": "bc5c0372ecea361a4509b7e28e04200724f6cc25266a1b42b1a385388a24b5b9",
+          "project-04.html": "72f945fb4c3bb739bbeb549e60febda3300447efa419f891df0a04c0051e043b",
+          "project-03.html": "9d5478a0784b80d943f719395e2b0ab2a7a9afb309f4924aac197756242eb17d"
+        },
+        "scopedProjectAssetUrls": [],
+        "scopedProjectAssetSha256": {},
+        "configInputSha256": "9bf082562b9598499e71173b5e809196f1fcda84891550c64c1ccde5ea50b127",
+        "qaBuiltAt": "2026-09-22T23:01:55.883Z"
+      }
     },
     {
       "workflowVersion": 2,
