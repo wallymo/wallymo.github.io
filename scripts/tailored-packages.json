@@ -4850,6 +4850,45 @@
     },
     {
       "workflowVersion": 2,
+      "contractRevision": 7,
+      "slug": "real-chemistry-product-designer",
+      "roleTitle": "Product Designer",
+      "artifactStem": "Real-Chemistry-Product-Designer",
+      "configPath": "scripts/packages/real-chemistry-product-designer.json",
+      "targetLane": "product-ux-design",
+      "evidenceMode": "portfolio-primary",
+      "fitClass": "strong",
+      "positioningLane": "product-ux-design",
+      "bridgeType": "direct",
+      "applicationStrategy": "direct",
+      "resumeBaseMode": "ai-product-implementation",
+      "resumeBaseLeadProfile": "ai-product-implementation",
+      "resumeBaseAction": "tailor-to-jd",
+      "accountPresentation": "consolidated",
+      "resumeBaseProfiles": [
+        {
+          "id": "ai-product-implementation",
+          "version": 1
+        }
+      ],
+      "routeMode": "scoped-projects",
+      "designConcept": "editorial-proof",
+      "publicBase": "https://wallymo.github.io/",
+      "publishRepository": "wallymo/wallymo.github.io",
+      "selectedProjects": [
+        "project-05.html",
+        "project-01.html",
+        "project-04.html",
+        "project-03.html"
+      ],
+      "designConceptCssPath": "real-chemistry-product-designer/design-concept.css",
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Real-Chemistry-Product-Designer-Resume.pdf",
+      "publishStatus": "local-only",
+      "qaStatus": "qa-passed",
+      "builtAt": "2026-09-22T23:01:55.883Z"
+    },
+    {
+      "workflowVersion": 2,
       "contractRevision": 5,
       "slug": "saferide-health-strategic-account-manager",
       "roleTitle": "SafeRide Health Strategic Account Manager",
