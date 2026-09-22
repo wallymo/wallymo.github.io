@@ -85,7 +85,8 @@
 
   function clearStack() {
     stackOffsets = [];
-    work?.classList.remove('work-stack-active', 'work-stack-compact');
+    work?.classList.remove('work-stack-active', 'work-stack-compact', 'work-stack-condensed');
+    work?.style.removeProperty('--stack-step');
     cards.forEach((card) => {
       card.classList.remove('is-covered');
       gsap?.killTweensOf(card);
@@ -101,14 +102,16 @@
     clearStack();
     if (!grid || motion.matches || window.innerWidth < 1120 || cards.length < 2) return;
     const top = navOffset();
-    // Keep the active card complete. Browser chrome and zoom can change usable
-    // height, so compress the preceding headers before falling back to flat cards.
+    // Keep the active card complete while preserving a readable title rail for
+    // every covered card. If the viewport cannot fit both, use ordinary flat
+    // cards instead of stacking every card at the same coordinate.
     const heights = cards.map((card) => card.getBoundingClientRect().height);
     const cardHeight = Math.max(...heights);
     const available = window.innerHeight - top - cardHeight - 24;
-    if (available < 0) return;
+    const minimumHeaderStep = cards.length > 4 ? 26 : 32;
     const headerStep = Math.min(46, available / (cards.length - 1));
-    const step = headerStep >= 32 ? headerStep : 0;
+    if (headerStep < minimumHeaderStep) return;
+    const step = headerStep;
     // Equal heights keep mixed JD selections aligned as they leave the stack.
     // This only adds room; it never reduces type or clips a taller card.
     cards.forEach((card) => { card.style.minHeight = `${cardHeight}px`; });
@@ -119,8 +122,9 @@
       card.style.setProperty('--stack-index', String(i + 1));
     });
     work.style.setProperty('--stack-tail', `${Math.min(140, window.innerHeight * .15)}px`);
+    work.style.setProperty('--stack-step', `${step}px`);
     work.classList.add('work-stack-active');
-    work.classList.toggle('work-stack-compact', step === 0);
+    work.classList.toggle('work-stack-condensed', step < 32);
     syncStack();
   }
 

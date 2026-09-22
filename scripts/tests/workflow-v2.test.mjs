@@ -4399,7 +4399,7 @@ test(
         )
       );
       assert.equal(savedConfig.qa.route.errors.length, 0);
-      assert.equal(savedConfig.qa.route.viewports.length, 10);
+      assert.equal(savedConfig.qa.route.viewports.length, 11);
       assert.equal(
         savedConfig.qa.route.viewports.some((viewport) =>
           Object.hasOwn(viewport, 'screenshot')

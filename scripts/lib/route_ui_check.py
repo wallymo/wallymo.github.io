@@ -65,6 +65,7 @@ def main() -> int:
                 expected_project_number=None,
                 expect_route_contract=False,
                 expect_chapter_motion=False,
+                expect_work_stack=False,
             ):
                 page = context.new_page()
                 console_errors = []
@@ -166,6 +167,116 @@ def main() -> int:
                         check_errors.append(
                             f"project order mismatch: expected {expected_work_links}, found {work_links}"
                         )
+                if expect_work_stack:
+                    try:
+                        page.wait_for_function(
+                            "document.querySelector('#work')?.classList.contains('work-stack-active')",
+                            timeout=5000,
+                        )
+                        stack_state = page.evaluate(
+                            """() => {
+                              const work = document.querySelector('#work');
+                              const cards = [...work.querySelectorAll('.work-grid > .work-item')];
+                              return {
+                                compact: work.classList.contains('work-stack-compact'),
+                                viewportHeight: innerHeight,
+                                tops: cards.map((card) => parseFloat(getComputedStyle(card).top)),
+                                labels: cards.map((card) => {
+                                  const label = card.querySelector('.work-stack-label');
+                                  const style = getComputedStyle(label);
+                                  return {
+                                    display: style.display,
+                                    height: label.offsetHeight,
+                                    title: card.querySelector('h3')?.textContent.trim() || '',
+                                    number: card.querySelector('.work-number')?.textContent.trim() || '',
+                                    labelTitle: label.firstElementChild?.textContent.trim() || '',
+                                    labelNumber: label.lastElementChild?.textContent.trim() || '',
+                                  };
+                                }),
+                                cardHeight: cards.at(-1).getBoundingClientRect().height,
+                              };
+                            }"""
+                        )
+                        if stack_state["compact"]:
+                            check_errors.append("desktop work stack entered compact mode")
+                        tops = stack_state["tops"]
+                        steps = [
+                            tops[index + 1] - tops[index]
+                            for index in range(len(tops) - 1)
+                        ]
+                        if not steps or min(steps) < 26:
+                            check_errors.append(
+                                f"desktop work stack lacks readable staggered rails: {tops}"
+                            )
+                        if (
+                            tops
+                            and tops[-1] + stack_state["cardHeight"]
+                            > stack_state["viewportHeight"] + 1
+                        ):
+                            check_errors.append(
+                                "desktop work stack does not keep the active card in view: "
+                                f"{tops[-1]} + {stack_state['cardHeight']} > "
+                                f"{stack_state['viewportHeight']}"
+                            )
+                        if any(
+                            label["display"] == "none" or label["height"] < 25
+                            for label in stack_state["labels"]
+                        ):
+                            check_errors.append(
+                                f"desktop work stack labels are not readable: {stack_state['labels']}"
+                            )
+                        if any(
+                            label["labelTitle"] != label["title"]
+                            or label["labelNumber"] != label["number"]
+                            for label in stack_state["labels"]
+                        ):
+                            check_errors.append(
+                                f"desktop work stack labels do not match their projects: {stack_state['labels']}"
+                            )
+
+                        page.evaluate(
+                            """() => {
+                              const cards = [...document.querySelectorAll('#work .work-grid > .work-item')];
+                              const second = cards[1];
+                              const stickyTop = parseFloat(getComputedStyle(second).top);
+                              const target = second.getBoundingClientRect().top + scrollY - stickyTop + 12;
+                              scrollTo({ top: target, behavior: 'instant' });
+                            }"""
+                        )
+                        page.wait_for_timeout(250)
+                        covered_state = page.evaluate(
+                            """() => {
+                              const cards = [...document.querySelectorAll('#work .work-grid > .work-item')];
+                              const first = cards[0];
+                              const second = cards[1];
+                              const label = first.querySelector('.work-stack-label');
+                              const labelTitle = label.firstElementChild;
+                              const labelNumber = label.lastElementChild;
+                              const labelStyle = getComputedStyle(label);
+                              return {
+                                covered: first.classList.contains('is-covered'),
+                                labelOpacity: parseFloat(labelStyle.opacity),
+                                titleBottom: labelTitle.getBoundingClientRect().bottom,
+                                numberBottom: labelNumber.getBoundingClientRect().bottom,
+                                nextTop: second.getBoundingClientRect().top,
+                              };
+                            }"""
+                        )
+                        if (
+                            not covered_state["covered"]
+                            or covered_state["labelOpacity"] < 0.99
+                            or max(
+                                covered_state["titleBottom"],
+                                covered_state["numberBottom"],
+                            )
+                            > covered_state["nextTop"] + 1
+                        ):
+                            check_errors.append(
+                                f"covered project name rail is not visible: {covered_state}"
+                            )
+                        page.evaluate("scrollTo({ top: 0, behavior: 'instant' })")
+                    except Exception as error:
+                        check_errors.append(f"desktop work stack unavailable: {error}")
                 if not resume_links or any(
                     not link.endswith(expected_resume_suffix) for link in resume_links
                 ):
@@ -244,6 +355,7 @@ def main() -> int:
             # Route-only desktop checks cover the fit points that previously
             # made Chapters fall back to a static sequence intermittently.
             for name, width, height in [
+                ("desktop-stack", 1440, 800),
                 ("desktop-laptop", 1280, 720),
                 ("desktop-short", 1440, 600),
             ]:
@@ -256,6 +368,7 @@ def main() -> int:
                     expected_work_links=expected_project_links,
                     expect_route_contract=True,
                     expect_chapter_motion=True,
+                    expect_work_stack=name == "desktop-stack",
                 )
                 context.close()
 
