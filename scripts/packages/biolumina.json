@@ -280,19 +280,19 @@
     ],
     "roles": {
       "hedgehox": [
-        "Secured an investor for proprietary Claims Detection software by building the functional POC, shaping the product story, and iterating with investors",
-        "Designed Claims Detector workflows that identify promotional claims, surface evidence gaps, and pre-populate audit-ready annotations before MLR submission",
-        "Turn pharma agency needs into product requirements and working tools for MLR claim review, brief intake, scoping, review routing, submission capture, and FDA signal monitoring",
-        "Designed the full Xenagos Bio startup biopharma website from scratch, including investor-facing structure, scientific positioning, visual direction, and hidden design-system handoff",
-        "Built Scope Generator for pharma agency finance and operations teams to manage regional rate cards, brands, sub-brands, and natural-language scope changes",
-        "Developed FDA Warning Tool concepts that connect warning-letter patterns to content-risk guidance for pharma teams"
+        "Turn pharma agency needs into product requirements and working tools for MLR review, intake, scoping, routing, submissions, and FDA monitoring",
+        "Secured investor backing for proprietary Claims Detection software with a functional POC and a product story refined through investor feedback",
+        "Designed Claims Detector to identify promotional claims, flag evidence gaps, and pre-populate audit-ready annotations before MLR submission",
+        "Designed Xenagos Bio's biopharma website from scratch, including its investor-facing structure, scientific positioning, visual direction, and design-system handoff",
+        "Built Scope Generator for pharma agency finance and operations teams to manage rate cards, brands, sub-brands, and natural-language scope changes",
+        "Developed FDA Warning Tool concepts that connect warning-letter patterns to practical content-risk guidance for pharma teams"
       ],
       "one-block-away": [
-        "Lead client discovery, turning unclear business questions into testable product concepts, working POCs, demo flows, and roadmap decisions",
-        "Built ListingPal's AI listing-generation POC and landing page, turning basic property inputs into listing copy, social posts, ad copy, styling direction, and MLS/SEO-ready language in under 90 seconds",
-        "Built WeReady's Bailey Intelligence dashboard, translating founder inputs, GitHub signals, source health, risk scoring, and evidence trails into startup-readiness workflows",
-        "Own product strategy, UX, AI workflow design, front-end build, backend logic, demo readiness, and client iteration from first ask through working prototype",
-        "Currently building the website and sponsor strategy for a Tunisia youth soccer program, positioning the project for player advancement, community support, and donor outreach"
+        "Lead client discovery and turn unclear business questions into testable product concepts, working POCs, demo flows, and roadmap decisions",
+        "Own delivery from product strategy and UX through AI workflow design, front-end and backend logic, demos, and client iteration",
+        "Built WeReady's startup-readiness POC, including the WeReady Score and Bailey Intelligence, with source-backed analysis across code, business, investment, and UX",
+        "Built ListingPal's AI listing POC and landing page; it turns property inputs into MLS/SEO-ready listings, social and ad copy, and styling direction in under 90 seconds",
+        "Building the website and sponsor strategy for a Tunisia youth soccer program to support player advancement, community backing, and donor outreach"
       ],
       "kinesso": [
         "Scaled product design from 2 to 30 across the US and Poland, hiring and staffing designers, leading critiques and quality reviews, and planning scope, resources, and engineering handoff across 20+ products",
@@ -324,18 +324,18 @@
     },
     "sourceBulletIds": {
       "hedgehox": [
+        "hedgehox-03",
         "hedgehox-01",
         "hedgehox-02",
-        "hedgehox-03",
         "hedgehox-04",
         "hedgehox-05",
         "hedgehox-06"
       ],
       "one-block-away": [
         "one-block-away-01",
-        "one-block-away-02",
-        "one-block-away-03",
         "one-block-away-04",
+        "one-block-away-03",
+        "one-block-away-02",
         "one-block-away-05"
       ],
       "kinesso": [
@@ -432,17 +432,14 @@
   },
   "copyReview": {
     "humanizerVersion": "2.2.0",
-    "mode": "surface-only",
+    "mode": "rewrite-requested",
     "status": "passed",
-    "reviewedAt": "2026-09-21T22:32:33.009Z",
-    "copySha256": "fdc179e925a32cb937ea627401cb66f423e4c232e3a60c8b81a32c9ff1584c74",
+    "reviewedAt": "2026-09-22T02:52:07.103Z",
+    "copySha256": "a2fab87182c18dca7f5d777cc3cd467ae3a268c8d035fb7ea83ad1582545659c",
     "preserved": [
-      "content",
-      "structure",
-      "claims",
-      "ending"
+      "claims"
     ],
-    "rewriteAuthorized": false,
+    "rewriteAuthorized": true,
     "reviewMethod": "humanizer-skill",
     "semanticPassAttested": true,
     "staticChecksPassed": true,
@@ -451,8 +448,8 @@
   },
   "qa": {
     "status": "qa-passed",
-    "builtAt": "2026-09-22T02:39:51.700Z",
-    "configInputSha256": "a86e51fe4a784fdd7d61848c39b8d79279567bd649ae615f24c96cb8ed790c0d",
+    "builtAt": "2026-09-22T02:52:36.983Z",
+    "configInputSha256": "dac0efd1cf46a5bf2d17a6ec49896241429cf512cfa1d211adf934266d18d4aa",
     "sourceResumeSha256": "8273f9c5f9038a159fa1d9ecc813e2c23069e37c7ef6dd0effe5439cef217fd7",
     "resumeFoundation": {
       "id": "wally-mostafa-resume-2026-07-03",
@@ -475,7 +472,7 @@
     "artifactHashes": {
       "routeSha256": "cd9446f1cd6cf6ac4ba6b220db6f2e8a553bc830342337189e49ceaa1b7c3ae7",
       "designConceptCssSha256": "73052eae58d446422f0ff921361877b1ca4e0062ec7ee25daace39b4a4791195",
-      "resumePdfSha256": "3cef5eab9b95f7bbba416b70a2f34ca1c3177978ae40ad670c46ce2fb020f494",
+      "resumePdfSha256": "63bc71b675265e9deefe34987026f30e14674de4f04e806af2ed01e61b1890c5",
       "coverLetterPdfSha256": null,
       "coverLetterMarkdownSha256": null,
       "scopedProjectSha256": {
@@ -503,7 +500,7 @@
       "ok": true,
       "pdfPath": "output/pdf/Wally-Mostafa-BioLumina-Resume.pdf",
       "pageCount": 2,
-      "fileSize": 80933,
+      "fileSize": 80703,
       "annotations": [
         {
           "page": 1,
@@ -611,9 +608,9 @@
     "humanizer": {
       "status": "passed",
       "version": "2.2.0",
-      "mode": "surface-only",
-      "reviewedAt": "2026-09-21T22:32:33.009Z",
-      "copySha256": "fdc179e925a32cb937ea627401cb66f423e4c232e3a60c8b81a32c9ff1584c74",
+      "mode": "rewrite-requested",
+      "reviewedAt": "2026-09-22T02:52:07.103Z",
+      "copySha256": "a2fab87182c18dca7f5d777cc3cd467ae3a268c8d035fb7ea83ad1582545659c",
       "reviewMethod": "humanizer-skill",
       "semanticPassAttested": true,
       "staticChecksPassed": true
