@@ -575,9 +575,43 @@
       ],
       "designConceptCssPath": "biolumina/design-concept.css",
       "resumePdfPath": "output/pdf/Wally-Mostafa-BioLumina-Resume.pdf",
-      "publishStatus": "local-only",
+      "publishStatus": "live-verified",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-09-22T02:39:51.700Z"
+      "builtAt": "2026-09-22T02:39:51.700Z",
+      "verification": {
+        "verifiedAt": "2026-09-22T02:43:37.113Z",
+        "routeUrl": "https://wally-mostafa.github.io/biolumina/",
+        "resumePdfUrl": "https://wally-mostafa.github.io/output/pdf/Wally-Mostafa-BioLumina-Resume.pdf",
+        "configUrl": "https://wally-mostafa.github.io/scripts/packages/biolumina.json",
+        "publicBase": "https://wally-mostafa.github.io/",
+        "publishRepository": "wally-mostafa/wally-mostafa.github.io",
+        "designConceptCssUrl": "https://wally-mostafa.github.io/biolumina/design-concept.css",
+        "designConceptCssSha256": "73052eae58d446422f0ff921361877b1ca4e0062ec7ee25daace39b4a4791195",
+        "projectUrls": [
+          "https://wally-mostafa.github.io/biolumina/project-08.html",
+          "https://wally-mostafa.github.io/biolumina/project-01.html",
+          "https://wally-mostafa.github.io/biolumina/project-04.html",
+          "https://wally-mostafa.github.io/biolumina/project-03.html",
+          "https://wally-mostafa.github.io/biolumina/project-05.html"
+        ],
+        "redirectUrls": [],
+        "configSha256": "adf246a683697e97a59a5aeae2923ccbcdc1b7d5e962156a7c5cd29e851fa144",
+        "pdfSha256": "3cef5eab9b95f7bbba416b70a2f34ca1c3177978ae40ad670c46ce2fb020f494",
+        "resumeBaseProfilesUrl": "https://wally-mostafa.github.io/scripts/resume-base-profiles.json",
+        "resumeBaseProfilesSha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108",
+        "routeSha256": "cd9446f1cd6cf6ac4ba6b220db6f2e8a553bc830342337189e49ceaa1b7c3ae7",
+        "scopedProjectSha256": {
+          "project-08.html": "934413f7d79dbc8a1ca862f104495a86fdc376a12977723028d841ce416a60b2",
+          "project-01.html": "05049631d5e35b71b44ffac1e7fcc04b3f7453413428b914495ee1ef73770c62",
+          "project-04.html": "5090b26d5e1ad0ac0a5dc36fd7101d85c2c668364eab5c096955ee39ba8ded94",
+          "project-03.html": "ce2b75c4e3d7b791c9a0716b1be1fb564194dcbb65d39f98af579068e5093773",
+          "project-05.html": "0b31655627cecb22537e0a03a2dcf4f09fc4b18a920d3e463ffaa90eaee948c5"
+        },
+        "scopedProjectAssetUrls": [],
+        "scopedProjectAssetSha256": {},
+        "configInputSha256": "a86e51fe4a784fdd7d61848c39b8d79279567bd649ae615f24c96cb8ed790c0d",
+        "qaBuiltAt": "2026-09-22T02:39:51.700Z"
+      }
     },
     {
       "workflowVersion": 2,
