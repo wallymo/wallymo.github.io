@@ -260,7 +260,10 @@ export function runAtsCheck({ configPath, pdfPath }) {
             ['date range', subEntry.dateRange],
           ])
         : [
-            ['title', header.title],
+            [
+              'title',
+              config.resume.roleTitleOverrides?.[roleId] || header.title,
+            ],
             ['employer', header.employer],
             ['date range', header.dateRange],
           ];

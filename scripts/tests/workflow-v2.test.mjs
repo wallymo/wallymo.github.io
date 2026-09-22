@@ -4785,6 +4785,9 @@ test(
         'Own strategic client relationships and translate client needs into working AI workflows.';
       config.hero.eyebrow = 'Hybrid Client AI Lead';
       config.constraints.blockedTerms = ['Python engineering'];
+      config.resume.roleTitleOverrides = {
+        hedgehox: 'AI Implementation Lead',
+      };
       approveHumanizerReview(config, {
         reviewedAt: '2026-08-02T12:00:00.000Z',
         semanticPassComplete: true,
@@ -4813,6 +4816,11 @@ test(
       assert.equal(pdfInfo.status, 0, pdfInfo.stderr);
       const pageCount = Number(pdfInfo.stdout.match(/^Pages:\s+(\d+)$/m)?.[1]);
       assert.ok(pageCount >= 1 && pageCount <= 2);
+      const resumeText = execFileSync('pdftotext', [pdfPath, '-'], {
+        encoding: 'utf8',
+      });
+      assert.match(resumeText, /AI Implementation Lead/);
+      assert.doesNotMatch(resumeText, /AI Implementation Partner/);
       const resumeFonts = execFileSync('pdffonts', [pdfPath], {
         encoding: 'utf8',
       });
