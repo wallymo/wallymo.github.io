@@ -576,9 +576,45 @@
       "resumePdfPath": "output/pdf/Wally-Mostafa-Avalere-Health-Account-Director-Resume.pdf",
       "coverLetterPdfPath": "output/pdf/Wally-Mostafa-Avalere-Health-Account-Director-Cover-Letter.pdf",
       "coverLetterMarkdownPath": "output/pdf/Wally-Mostafa-Avalere-Health-Account-Director-Cover-Letter.md",
-      "publishStatus": "local-only",
+      "publishStatus": "live-verified",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-09-22T19:15:22.987Z"
+      "builtAt": "2026-09-22T19:15:22.987Z",
+      "verification": {
+        "verifiedAt": "2026-09-22T19:19:33.994Z",
+        "routeUrl": "https://wallymo.github.io/avalere-health-account-director/",
+        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-Avalere-Health-Account-Director-Resume.pdf",
+        "configUrl": "https://wallymo.github.io/scripts/packages/avalere-health-account-director.json",
+        "publicBase": "https://wallymo.github.io/",
+        "publishRepository": "wallymo/wallymo.github.io",
+        "designConceptCssUrl": "https://wallymo.github.io/avalere-health-account-director/design-concept.css",
+        "designConceptCssSha256": "b0888b6dc13bd1e5526259a5435dd84911b2007f68715d23d600bbc14ee7c9fd",
+        "projectUrls": [
+          "https://wallymo.github.io/avalere-health-account-director/project-01.html",
+          "https://wallymo.github.io/avalere-health-account-director/project-06.html",
+          "https://wallymo.github.io/avalere-health-account-director/project-02.html",
+          "https://wallymo.github.io/avalere-health-account-director/project-03.html"
+        ],
+        "redirectUrls": [],
+        "configSha256": "524ba7414d3219354286a56cff0ceb8dfebc2df70b9a68a933fc39649d294829",
+        "pdfSha256": "4a3f00ed31a055d6d2940d304eec23db78871d53f6fd2a2bb080114edfd4d20f",
+        "resumeBaseProfilesUrl": "https://wallymo.github.io/scripts/resume-base-profiles.json",
+        "resumeBaseProfilesSha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108",
+        "coverLetterPdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-Avalere-Health-Account-Director-Cover-Letter.pdf",
+        "coverLetterMarkdownUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-Avalere-Health-Account-Director-Cover-Letter.md",
+        "coverLetterPdfSha256": "26d580e4742b785016881a17163edbe92c249be6ed933a8a3ecfd8e44da2647f",
+        "coverLetterMarkdownSha256": "917cf9201800d1eef1cdf067935e033d74874c0b54dedbed2f195af6796f63f9",
+        "routeSha256": "2331d46149706541f2074b41ef7fd297ea404e7355c22d7e1ec9b79490614b5c",
+        "scopedProjectSha256": {
+          "project-01.html": "b88b5d904d9acde06e11ec7db8937f2a61b06cdbbf78dc1350dc2775da2585f9",
+          "project-06.html": "9a81d6772313082eb50f0b2802871bf160eda73c7219bc167661142deb9b10d5",
+          "project-02.html": "a97ea99617709cd70618bda581295b2ab5af74b57b55db8017f7f6f741e1f9cc",
+          "project-03.html": "c8b4e3895ce5a85e7a247db15ea660ae1fe683242ab0176fbc8468b0d4a46e86"
+        },
+        "scopedProjectAssetUrls": [],
+        "scopedProjectAssetSha256": {},
+        "configInputSha256": "f48123d4620b7f4b7f9919d3859c4ca7792b4b9ae67edbbef49de88f4f3dd0e7",
+        "qaBuiltAt": "2026-09-22T19:15:22.987Z"
+      }
     },
     {
       "workflowVersion": 2,
