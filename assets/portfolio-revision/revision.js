@@ -155,7 +155,7 @@
     work.style.setProperty('--stack-tail', `${Math.min(140, window.innerHeight * .15)}px`);
     work.style.setProperty('--stack-step', `${step}px`);
     work.classList.add('work-stack-active');
-    work.classList.toggle('work-stack-condensed', step < 32);
+    work.classList.toggle('work-stack-condensed', step <= minimumHeaderStep);
     syncStack();
   }
 
