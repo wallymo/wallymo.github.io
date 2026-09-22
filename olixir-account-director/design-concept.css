@@ -1,0 +1,889 @@
+/* Design concept snapshot: Proof Grid (proof-grid). */
+/* Source: concepts/proof-grid/homepage.css */
+/*
+ * Proof Grid homepage design-system skin.
+ *
+ * This stylesheet intentionally changes presentation only. The production
+ * homepage supplies every section, layout, breakpoint, animation, and script.
+ */
+
+.proof-grid-homepage {
+  --ink: #18191b;
+  --ink-soft: #43474d;
+  --ink-muted: #676c73;
+  --surface: #f7f7f4;
+  --surface-warm: #eef3ff;
+  --surface-deep: #d6d8da;
+  --surface-tint: #fcfcfa;
+  --accent: #e548a5;
+  --accent-hover: #a90f68;
+  --accent-light: rgb(229 72 165 / 0.08);
+  --accent-text: #a90f68;
+  --accent-bright: #ff90d1;
+  --rule: #18191b;
+  --rule-light: #d6d8da;
+
+  --radius-s: 0px;
+  --radius-m: 0px;
+  --radius-l: 0px;
+  --shadow-s: 3px 3px 0 rgb(36 84 198 / 0.18);
+  --shadow-m: 6px 6px 0 rgb(36 84 198 / 0.16);
+  --shadow-l: 10px 10px 0 rgb(36 84 198 / 0.14);
+
+  --font-display: "Avenir Next", Avenir, "Segoe UI", Helvetica, Arial, sans-serif;
+  --font-body: "Avenir Next", Avenir, "Segoe UI", Helvetica, Arial, sans-serif;
+  --font-mono: "SFMono-Regular", "SF Mono", "Roboto Mono", Consolas, monospace;
+
+  --pg-pink: #e548a5;
+  --pg-pink-deep: #a90f68;
+  --pg-cyan: #079fc4;
+  --pg-cobalt: #2454c6;
+  --pg-blue-wash: #eef3ff;
+  --pg-pink-wash: #fff0f8;
+
+  --dark-base: #18191b;
+  --dark-raised: #222326;
+  --dark-text: #fcfcfa;
+  --dark-body: #d6d8da;
+  --dark-secondary: #b9bdc2;
+  --dark-muted: #9da2a8;
+  --dark-rule: #43474d;
+  --dark-accent: #ff90d1;
+  --dark-accent-rule: #a90f68;
+  --dark-hover-rule: #e548a5;
+  --dark-label: #eef3ff;
+  --dark-shadow: rgb(0 0 0 / 0.72);
+  --bulb-clay: 36 84 198;
+  --bulb-taupe: 229 72 165;
+
+  color-scheme: light;
+  background: var(--surface);
+}
+
+.proof-grid-homepage body {
+  color: var(--ink);
+  background: var(--surface);
+  font-family: var(--font-body);
+}
+
+.proof-grid-homepage ::selection {
+  color: #fff;
+  background: var(--pg-cobalt);
+}
+
+.proof-grid-homepage :focus-visible {
+  outline-color: var(--pg-cobalt);
+}
+
+/* Navigation: same box and responsive behavior, Proof Grid materials. */
+.proof-grid-homepage nav {
+  background: rgb(247 247 244 / 0.94);
+  border-bottom-color: var(--ink);
+  box-shadow: 0 4px 0 rgb(36 84 198 / 0.06);
+}
+
+.proof-grid-homepage nav .name,
+.proof-grid-homepage nav .links a {
+  font-family: var(--font-mono);
+}
+
+.proof-grid-homepage nav .name {
+  color: var(--ink);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.proof-grid-homepage nav .links a {
+  color: var(--ink-soft);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.055em;
+}
+
+.proof-grid-homepage nav .links a:hover,
+.proof-grid-homepage nav .links a:focus-visible {
+  color: var(--pg-cobalt);
+}
+
+.proof-grid-homepage nav .nav-cta {
+  color: #fff !important;
+  background: var(--pg-cobalt);
+  border: 1px solid var(--ink);
+  box-shadow: 3px 3px 0 var(--pg-pink);
+}
+
+.proof-grid-homepage nav .nav-cta:hover,
+.proof-grid-homepage nav .nav-cta:focus-visible {
+  color: #fff !important;
+  background: var(--pg-pink-deep);
+}
+
+.proof-grid-homepage .mobile-menu-btn {
+  color: var(--ink);
+}
+
+/* Hero: original composition and reveal timing, with Proof Grid's technical field. */
+.proof-grid-homepage .hero {
+  isolation: isolate;
+}
+
+.proof-grid-homepage .hero::before {
+  opacity: 1;
+  background-color: transparent;
+  background-image:
+    repeating-linear-gradient(
+      30deg,
+      transparent 0,
+      transparent 47px,
+      rgb(229 72 165 / 0.055) 47px,
+      rgb(229 72 165 / 0.055) 48px
+    ),
+    repeating-linear-gradient(
+      -30deg,
+      transparent 0,
+      transparent 47px,
+      rgb(36 84 198 / 0.055) 47px,
+      rgb(36 84 198 / 0.055) 48px
+    ),
+    radial-gradient(circle at 10% 20%, rgb(229 72 165 / 0.14), transparent 30rem),
+    radial-gradient(circle at 88% 65%, rgb(36 84 198 / 0.14), transparent 34rem),
+    linear-gradient(to bottom, transparent, rgb(247 247 244 / 0.25));
+  background-position: center;
+  background-repeat: repeat, repeat, no-repeat, no-repeat, no-repeat;
+  background-size: 96px 166px, 96px 166px, 100% 100%, 100% 100%, 100% 100%;
+}
+
+.proof-grid-homepage .hero-canvas[data-state="running"] ~ .hero::before {
+  opacity: 1;
+}
+
+.proof-grid-homepage .hero-canvas {
+  filter: hue-rotate(178deg) saturate(1.45) contrast(1.03);
+  mix-blend-mode: multiply;
+}
+
+.proof-grid-homepage .hero-eyebrow,
+.proof-grid-homepage .section-label,
+.proof-grid-homepage .chapter-eyebrow {
+  color: var(--pg-cobalt);
+  font-family: var(--font-mono);
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.proof-grid-homepage .hero h1 {
+  color: var(--ink);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+}
+
+/* The portfolio's signature type anchors the Proof Grid palette and materials.
+   Keep Avenir for reading text and the smaller component headings. */
+.proof-grid-homepage .hero h1,
+.proof-grid-homepage .section-title,
+.proof-grid-homepage #chapters .chapter-intro h2,
+.proof-grid-homepage .contact h2 {
+  font-family: "Syne", sans-serif;
+}
+
+.proof-grid-homepage .hero-tagline span {
+  color: var(--ink-soft);
+  font-size: clamp(0.875rem, 1.2vw, 0.95rem);
+  font-weight: 400;
+}
+
+.proof-grid-homepage .hero-tagline span::before {
+  width: 2px;
+  background: var(--pg-cobalt);
+  border-radius: 0;
+}
+
+.proof-grid-homepage .hero-tagline span:nth-child(2)::before {
+  background: var(--pg-pink);
+}
+
+.proof-grid-homepage .hero-tagline span:nth-child(3)::before {
+  background: var(--pg-cyan);
+}
+
+.proof-grid-homepage .hero-intro {
+  color: var(--ink-soft);
+}
+
+.proof-grid-homepage .btn-primary {
+  color: #fff;
+  background: var(--pg-cobalt);
+  border: 1px solid var(--ink);
+  box-shadow: 5px 5px 0 var(--pg-pink);
+}
+
+.proof-grid-homepage .btn-primary:hover,
+.proof-grid-homepage .btn-primary:focus-visible {
+  background: var(--pg-pink-deep);
+}
+
+.proof-grid-homepage .btn-ghost {
+  color: var(--ink-soft);
+  border-bottom-color: var(--ink);
+}
+
+.proof-grid-homepage .btn-ghost:hover,
+.proof-grid-homepage .btn-ghost:focus-visible {
+  color: var(--pg-cobalt);
+  border-bottom-color: var(--pg-cobalt);
+}
+
+/* Trust strip: original logo grid and hover reveal. */
+.proof-grid-homepage .trust-strip {
+  --bulb-core: 0;
+  --bulb-shoulder: 0;
+  --bulb-secondary-core: 0;
+  --bulb-secondary-shoulder: 0;
+  background-color: var(--surface-tint);
+  background-image: none;
+  border-block: 1px solid var(--ink);
+}
+
+.proof-grid-homepage .trust-logo {
+  border-right: 1px solid var(--rule-light);
+}
+
+.proof-grid-homepage .trust-logo:nth-child(6),
+.proof-grid-homepage .trust-logo:last-child {
+  border-right: 0;
+}
+
+.proof-grid-homepage .trust-logo img {
+  filter: grayscale(1) contrast(1.2) opacity(0.62);
+}
+
+.proof-grid-homepage .trust-logo:hover img {
+  filter: none;
+}
+
+.proof-grid-homepage .trust-logo--kinesso::after {
+  background-color: var(--ink);
+}
+
+.proof-grid-homepage .trust-logo--kinesso:hover::after {
+  background-color: var(--pg-pink);
+}
+
+/* Selected work: exact card stack, reskinned as Proof Grid's dark proof system. */
+.proof-grid-homepage #work {
+  --bulb-core: 0.13;
+  --bulb-shoulder: 0.05;
+  --bulb-secondary-core: 0.11;
+  --bulb-secondary-shoulder: 0.045;
+  background-color: var(--dark-base);
+  background-image:
+    radial-gradient(circle var(--bulb-radius) at 5% 50%, rgb(36 84 198 / var(--bulb-core)) 0%, transparent 72%),
+    radial-gradient(circle var(--bulb-radius) at 95% 50%, rgb(229 72 165 / var(--bulb-secondary-core)) 0%, transparent 72%);
+  background-size: 100% calc(var(--bulb-radius) * 2);
+}
+
+.proof-grid-homepage #work .section-label {
+  color: var(--pg-cyan);
+  font-family: var(--font-mono);
+}
+
+.proof-grid-homepage #work .work-item {
+  background: #222326;
+  border-color: #676c73;
+  box-shadow: 7px 7px 0 rgb(36 84 198 / 0.3);
+}
+
+.proof-grid-homepage #work .work-item:nth-child(even) {
+  box-shadow: 7px 7px 0 rgb(229 72 165 / 0.28);
+}
+
+.proof-grid-homepage #work .work-item::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  z-index: 3;
+  height: 3px;
+  background: var(--pg-cobalt);
+  pointer-events: none;
+}
+
+.proof-grid-homepage #work .work-item:nth-child(even)::before {
+  background: var(--pg-pink);
+}
+
+.proof-grid-homepage #work .work-number,
+.proof-grid-homepage #work .work-meta .role,
+.proof-grid-homepage #work .stat-label,
+.proof-grid-homepage #work .tag,
+.proof-grid-homepage #work .work-stack-label {
+  font-family: var(--font-mono);
+}
+
+.proof-grid-homepage #work .work-number,
+.proof-grid-homepage #work .tag {
+  color: #8fcfe0;
+}
+
+.proof-grid-homepage #work .work-item:nth-child(even) .work-number,
+.proof-grid-homepage #work .work-item:nth-child(even) .tag {
+  color: #ff90d1;
+}
+
+.proof-grid-homepage #work .tag {
+  background: rgb(7 159 196 / 0.08);
+  border-color: rgb(7 159 196 / 0.48);
+}
+
+.proof-grid-homepage #work .work-item:nth-child(even) .tag {
+  background: rgb(229 72 165 / 0.08);
+  border-color: rgb(229 72 165 / 0.52);
+}
+
+.proof-grid-homepage #work .work-media img {
+  border: 1px solid #676c73;
+}
+
+.proof-grid-homepage #work .work-stats,
+.proof-grid-homepage #work .stat {
+  border-color: #676c73;
+}
+
+.proof-grid-homepage #work .work-link {
+  border-bottom-color: #676c73;
+}
+
+.proof-grid-homepage #work .work-item:hover,
+.proof-grid-homepage #work .work-item:focus-visible {
+  border-color: var(--pg-pink);
+}
+
+.proof-grid-homepage #work .work-item:hover .work-meta h3,
+.proof-grid-homepage #work .work-item:focus-visible .work-meta h3,
+.proof-grid-homepage #work .work-item:hover .work-link,
+.proof-grid-homepage #work .work-item:focus-visible .work-link {
+  color: #ff90d1;
+  border-bottom-color: #ff90d1;
+}
+
+.proof-grid-homepage #work.work-stack-active .work-stack-label {
+  background: #222326;
+  border-bottom-color: #676c73;
+}
+
+/* Chapters: identical pinned journey, with the Proof Grid blue field and signal color. */
+.proof-grid-homepage #chapters {
+  --chapter-bg: #eef3ff;
+  --chapter-accent: #2454c6;
+  --chapter-quiet-text: #43474d;
+  --bulb-core: 0;
+  --bulb-shoulder: 0;
+  --bulb-secondary-core: 0;
+  --bulb-secondary-shoulder: 0;
+  background-color: var(--chapter-bg);
+  border-block-color: var(--ink);
+}
+
+.proof-grid-homepage .chapter-state::before,
+.proof-grid-homepage #chapters.chapters-pinned::before {
+  background-image:
+    repeating-linear-gradient(
+      30deg,
+      transparent 0,
+      transparent 47px,
+      rgb(36 84 198 / 0.065) 47px,
+      rgb(36 84 198 / 0.065) 48px
+    ),
+    repeating-linear-gradient(
+      -30deg,
+      transparent 0,
+      transparent 47px,
+      rgb(229 72 165 / 0.055) 47px,
+      rgb(229 72 165 / 0.055) 48px
+    );
+  background-size: 96px 166px, 96px 166px;
+}
+
+.proof-grid-homepage .chapter-eyebrow {
+  color: var(--pg-pink-deep);
+}
+
+.proof-grid-homepage .chapter-proof {
+  background: var(--surface-tint);
+  border-color: var(--ink);
+  box-shadow: 7px 7px 0 rgb(229 72 165 / 0.2);
+}
+
+.proof-grid-homepage .stage-chrome {
+  color: var(--ink-soft);
+  background: var(--pg-pink-wash);
+  border-bottom-color: var(--ink);
+  font-family: var(--font-mono);
+}
+
+.proof-grid-homepage .stage-chrome > span:first-child,
+.proof-grid-homepage .chapter-years {
+  color: var(--pg-pink-deep);
+}
+
+.proof-grid-homepage .chapter-point,
+.proof-grid-homepage .chapter-tabs::before {
+  border-color: var(--ink);
+}
+
+.proof-grid-homepage .chapter-tab,
+.proof-grid-homepage .chapter-total,
+.proof-grid-homepage .chapter-dates {
+  font-family: var(--font-mono);
+}
+
+.proof-grid-homepage .chapter-tab.is-current::after {
+  box-shadow: 0 0 0 3px rgb(36 84 198 / 0.16), 0 0 16px 4px rgb(36 84 198 / 0.3);
+}
+
+/* Capabilities: same four responsive fields and the same SVG hover motion. */
+.proof-grid-homepage .capabilities {
+  background-color: var(--pg-pink-wash);
+  background-image: none;
+}
+
+.proof-grid-homepage #capabilities .cap-field,
+.proof-grid-homepage #capabilities .cap-evidence {
+  border-color: var(--ink);
+}
+
+.proof-grid-homepage #capabilities .cap-field-art {
+  stroke: var(--ink);
+}
+
+.proof-grid-homepage #capabilities .cap-field-art .rust {
+  fill: var(--pg-pink);
+}
+
+.proof-grid-homepage #capabilities .cap-field-art .rust-line,
+.proof-grid-homepage #capabilities .cap-hand-rule {
+  stroke: var(--pg-pink);
+}
+
+.proof-grid-homepage #capabilities .cap-field-art .faint {
+  stroke: #8d939a;
+}
+
+.proof-grid-homepage #capabilities .cap-field-art .paper {
+  fill: var(--pg-blue-wash);
+}
+
+.proof-grid-homepage #capabilities .cap-verb,
+.proof-grid-homepage #capabilities .cap-evidence > a:hover,
+.proof-grid-homepage #capabilities .cap-evidence > a:focus-visible {
+  color: var(--pg-pink-deep);
+}
+
+.proof-grid-homepage #capabilities .cap-evidence-label {
+  color: var(--pg-cobalt);
+  font-family: var(--font-mono);
+}
+
+.proof-grid-homepage #capabilities .cap-proof li::before {
+  background: var(--pg-pink-deep);
+  border-radius: 0;
+}
+
+/* Recognition remains one responsive rule-led strip. */
+.proof-grid-homepage .awards {
+  --bulb-core: 0;
+  --bulb-shoulder: 0;
+  --bulb-secondary-core: 0;
+  --bulb-secondary-shoulder: 0;
+  background-color: var(--surface-tint);
+  background-image: none;
+}
+
+.proof-grid-homepage .awards-grid,
+.proof-grid-homepage .award-item {
+  border-color: var(--ink);
+}
+
+.proof-grid-homepage .award-name,
+.proof-grid-homepage .award-detail {
+  font-family: var(--font-mono);
+}
+
+.proof-grid-homepage a.award-name:hover,
+.proof-grid-homepage a.award-name:focus-visible {
+  color: var(--pg-cobalt);
+}
+
+.proof-grid-homepage .award-cursor-mark {
+  border-color: var(--ink);
+  box-shadow: 4px 4px 0 var(--pg-pink);
+}
+
+/* The original contact/footer bookend keeps its layout and dark atmosphere. */
+.proof-grid-homepage .contact,
+.proof-grid-homepage body > footer {
+  --bulb-clay: 36 84 198;
+  --bulb-taupe: 229 72 165;
+  background-color: var(--dark-base);
+}
+
+.proof-grid-homepage .contact .section-label {
+  color: #8fcfe0;
+  font-family: var(--font-mono);
+}
+
+/* Echo the hero's 30-degree, 96 × 166 grid at the closing contact section.
+   Fade it at the edges; the existing atmosphere and content stay in place. */
+.proof-grid-homepage .contact::before {
+  content: "";
+  opacity: 0.55;
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background-image:
+    repeating-linear-gradient(30deg,
+      transparent 0, transparent 47px,
+      rgb(229 72 165 / 0.12) 47px, rgb(229 72 165 / 0.12) 48px),
+    repeating-linear-gradient(-30deg,
+      transparent 0, transparent 47px,
+      rgb(36 84 198 / 0.20) 47px, rgb(36 84 198 / 0.20) 48px);
+  background-size: 96px 166px;
+  background-position: center;
+  mask-image: linear-gradient(to bottom, transparent, #000 22%, #000 78%, transparent);
+  -webkit-mask-image: linear-gradient(to bottom, transparent, #000 22%, #000 78%, transparent);
+}
+
+.proof-grid-homepage .contact-links a:hover,
+.proof-grid-homepage .contact-links a:focus-visible {
+  color: #ff90d1;
+  border-bottom-color: #ff90d1;
+}
+
+.proof-grid-homepage .footer-inner {
+  border-top-color: #676c73;
+}
+
+.proof-grid-homepage .footer-sign-off,
+.proof-grid-homepage footer .copyright {
+  font-family: var(--font-mono);
+}
+
+/* Keep the functional circles; all structural geometry stays square. */
+.proof-grid-homepage .work-item,
+.proof-grid-homepage .work-media img,
+.proof-grid-homepage .chapter-proof,
+.proof-grid-homepage .stage-chrome,
+.proof-grid-homepage .tag,
+.proof-grid-homepage .btn-primary,
+.proof-grid-homepage nav .nav-cta {
+  border-radius: 0;
+}
+
+@media (max-width: 767px) {
+  .proof-grid-homepage .trust-logo {
+    border-right: 0;
+  }
+
+  .proof-grid-homepage #work .work-item,
+  .proof-grid-homepage #work .work-item:nth-child(even) {
+    box-shadow: 5px 5px 0 rgb(36 84 198 / 0.22);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .proof-grid-homepage .hero-canvas {
+    filter: none;
+  }
+}
+
+/* Cobalt identifies navigation/actions; magenta accents supporting evidence.
+   Monospace is reserved for short indices and section labels. */
+.proof-grid-homepage nav .name {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  letter-spacing: -0.02em;
+  text-transform: none;
+}
+
+.proof-grid-homepage nav .links a {
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+.proof-grid-homepage nav .nav-cta,
+.proof-grid-homepage .btn-primary {
+  box-shadow: 3px 3px 0 rgb(36 84 198 / 0.20);
+}
+
+.proof-grid-homepage nav .nav-cta:hover,
+.proof-grid-homepage nav .nav-cta:focus-visible,
+.proof-grid-homepage .btn-primary:hover,
+.proof-grid-homepage .btn-primary:focus-visible {
+  background: #193b91;
+}
+
+.proof-grid-homepage .hero-tagline span::before,
+.proof-grid-homepage .hero-tagline span:nth-child(2)::before,
+.proof-grid-homepage .hero-tagline span:nth-child(3)::before {
+  background: var(--pg-cobalt);
+}
+
+.proof-grid-homepage #work .work-meta .role,
+.proof-grid-homepage #work .stat-label,
+.proof-grid-homepage #work .tag,
+.proof-grid-homepage #work .work-stack-label,
+.proof-grid-homepage .chapter-tab,
+.proof-grid-homepage .chapter-dates,
+.proof-grid-homepage .chapter-period,
+.proof-grid-homepage .award-name,
+.proof-grid-homepage .award-detail,
+.proof-grid-homepage .footer-sign-off,
+.proof-grid-homepage footer .copyright {
+  font-family: var(--font-body);
+}
+
+.proof-grid-homepage #work .work-item:nth-child(even) {
+  box-shadow: 7px 7px 0 rgb(36 84 198 / 0.30);
+}
+
+.proof-grid-homepage #work .work-item:nth-child(even)::before {
+  background: var(--pg-cobalt);
+}
+
+.proof-grid-homepage #work .work-number,
+.proof-grid-homepage #work .work-item:nth-child(even) .work-number {
+  color: #8fcfe0;
+}
+
+.proof-grid-homepage #work .tag,
+.proof-grid-homepage #work .work-item:nth-child(even) .tag {
+  color: #ff90d1;
+  background: rgb(229 72 165 / 0.08);
+  border-color: rgb(229 72 165 / 0.40);
+}
+
+/* Source: concepts/proof-grid/case-study.css */
+/* Proof Grid case-study skin. Original content, layout, and motion remain in the
+   canonical project pages. This stylesheet only supplies the visual treatment. */
+html.proof-grid-case-study {
+  --ink: #18191b;
+  --ink-soft: #43474d;
+  --ink-muted: #676c73;
+  --surface: #f7f7f4;
+  --surface-warm: #eef3ff;
+  --surface-tint: #fcfcfa;
+  --surface-deep: #d6d8da;
+  --accent: #2454c6;
+  --accent-text: #2454c6;
+  --accent-hover: #193b91;
+  --accent-bright: #ff90d1;
+  --accent-light: rgb(36 84 198 / .08);
+  --rule: #18191b;
+  --rule-light: #d6d8da;
+  --radius-s: 0px;
+  --radius-m: 0px;
+  --radius-l: 0px;
+  --font-display: "Syne", sans-serif;
+  --font-body: "Avenir Next", Avenir, "Segoe UI", Helvetica, Arial, sans-serif;
+  --font-mono: "SFMono-Regular", "SF Mono", Consolas, monospace;
+  --dark-base: #18191b;
+  --dark-raised: #222326;
+  --dark-text: #fcfcfa;
+  --dark-body: #d6d8da;
+  --dark-secondary: #b9bdc2;
+  --dark-muted: #a8adb4;
+  --dark-rule: #676c73;
+  --dark-accent: #ff90d1;
+  --dark-hover-rule: #e548a5;
+  --bulb-clay: 36 84 198;
+  --bulb-taupe: 229 72 165;
+  --case-grid:
+    repeating-linear-gradient(30deg, transparent 0, transparent 47px,
+      rgb(229 72 165 / .055) 47px, rgb(229 72 165 / .055) 48px),
+    repeating-linear-gradient(-30deg, transparent 0, transparent 47px,
+      rgb(36 84 198 / .065) 47px, rgb(36 84 198 / .065) 48px);
+  color-scheme: light;
+}
+
+html.proof-grid-case-study ::selection { background: #2454c6; color: #fff; }
+html.proof-grid-case-study .site-nav {
+  background: rgb(247 247 244 / .94);
+  border-bottom-color: var(--ink);
+}
+html.proof-grid-case-study .site-nav .name { font-family: var(--font-body); }
+html.proof-grid-case-study :is(.nav-cta, .project-hero-jump, .btn-demo) {
+  background: var(--accent);
+  color: #fff;
+  border-radius: 0;
+  box-shadow: 3px 3px 0 rgb(36 84 198 / .20);
+}
+html.proof-grid-case-study :is(.nav-cta, .project-hero-jump, .btn-demo):hover {
+  background: var(--accent-hover);
+}
+html.proof-grid-case-study.project-motion-v1 :is(
+  .project-index-label,
+  .project-number,
+  .section-label,
+  .product-tag,
+  .next-project .label,
+  .poc-kicker,
+  .poc-detail h5,
+  .project-fact > span,
+  .hero-pill
+) {
+  font-family: var(--font-mono);
+}
+
+/* Open hero: grid around the evidence, no outer container or new ornament. */
+html.proof-grid-case-study .project-hero { isolation: isolate; }
+html.proof-grid-case-study .project-hero::before {
+  background-image: var(--case-grid);
+  background-size: 96px 166px;
+  background-position: center;
+  background-repeat: repeat;
+  opacity: 1;
+}
+html.proof-grid-case-study #hero-canvas[data-state='running'] ~ main .project-hero::before { opacity: 1; }
+html.proof-grid-case-study .hero-canvas {
+  filter: hue-rotate(178deg) saturate(1.45) contrast(1.03);
+  mix-blend-mode: multiply;
+}
+html.proof-grid-case-study .project-role { font-weight: 400; }
+html.proof-grid-case-study .project-hero-media {
+  border-color: var(--dark-rule);
+  border-radius: 0;
+  box-shadow: 7px 7px 0 rgb(36 84 198 / .20);
+}
+html.proof-grid-case-study .project-hero-media figcaption { color: #8fcfe0; }
+html.proof-grid-case-study .project-hero-media figcaption span:only-child { color: #8fcfe0; }
+html.proof-grid-case-study .hero-proof strong { color: #ff90d1; }
+html.proof-grid-case-study :is(.project-hero-media img, .product-image, .product-image img, .next-project-media img) { border-radius: 0; }
+
+/* Reading and product evidence stay quiet; only the opening/ending carry grid. */
+html.proof-grid-case-study :is(
+  .case-file-section,
+  .initiative-section,
+  .product-section,
+  .os-finale,
+  .story-section,
+  .poc-section,
+  .project-feature,
+  .pullquote,
+  body > footer
+) {
+  background-image: none;
+}
+html.proof-grid-case-study .case-file-section { background-color: #eef3ff; }
+html.proof-grid-case-study.project-motion-v1 :is(
+  .story-section--warm,
+  .poc-section--warm,
+  .project-feature--alt,
+  .product-section--warm
+) {
+  background-color: #eef3ff;
+}
+html.proof-grid-case-study :is(.role-cards li strong, .initiative-node strong, .product-title, .os-node strong) {
+  font-family: var(--font-body);
+}
+html.proof-grid-case-study .product-tag { color: #a90f68; }
+/* Center media against its adjacent copy without changing the mobile stack. */
+@media (min-width: 801px) {
+  html.proof-grid-case-study .product-inner > .product-image { align-self: center; }
+}
+html.proof-grid-case-study .initiative-progress {
+  background: rgb(247 247 244 / .98);
+  border-color: var(--ink);
+}
+html.proof-grid-case-study .initiative-progress a.is-current { color: var(--accent-text); }
+html.proof-grid-case-study .product-points { border-color: var(--rule-light); }
+html.proof-grid-case-study .product-points li { border-color: var(--rule-light); }
+html.proof-grid-case-study .demo-callout { border-left-color: #a90f68; }
+html.proof-grid-case-study .product-image--icon { background: transparent; }
+html.proof-grid-case-study .product-icon-card { background: transparent; }
+html.proof-grid-case-study .product-icon-card::after { border-color: #e548a5; }
+
+/* The shared editorial template: square evidence frames and open ruled facts. */
+html.proof-grid-case-study :is(.product-image, .poc-media-frame, .video-frame) {
+  border-radius: 0;
+  box-shadow: 6px 6px 0 rgb(36 84 198 / .16);
+}
+html.proof-grid-case-study :is(
+  .product-image img,
+  .poc-media-frame img,
+  .video-frame img,
+  .image-pair img,
+  .whitelabel-screen img
+) {
+  border-radius: 0;
+}
+html.proof-grid-case-study :is(.stats-bar, .project-fact, .outcomes:not(.role-cards) li) {
+  border-color: var(--rule);
+}
+html.proof-grid-case-study :is(.stat-number, .project-fact strong, .poc-detail h5) {
+  font-family: var(--font-body);
+}
+
+/* POC page adapter. Its bespoke layout and video behavior remain untouched. */
+html.proof-grid-case-study .poc-video-play { background: var(--accent); }
+html.proof-grid-case-study .poc-video-card img { background: var(--dark-base); }
+html.proof-grid-case-study .poc-video-label {
+  border-radius: 0;
+  background: rgb(24 25 27 / .88);
+}
+html.proof-grid-case-study .poc-bullets li::before { background: #e548a5; }
+html.proof-grid-case-study :is(.poc-link:not(.poc-link--secondary), .video-play-button) {
+  background: var(--accent);
+}
+html.proof-grid-case-study .poc-link:not(.poc-link--secondary) {
+  border-color: var(--accent);
+  border-radius: 0;
+  box-shadow: 3px 3px 0 rgb(36 84 198 / .20);
+}
+html.proof-grid-case-study .poc-link--secondary { border-radius: 0; }
+html.proof-grid-case-study .demo-callout {
+  border-radius: 0;
+  border-left: 3px solid #a90f68;
+  font-family: var(--font-body);
+}
+html.proof-grid-case-study .pullquote blockquote { border-left-color: #e548a5; }
+
+/* Data-visualization page adapter. Keep its film cards and award links intact. */
+html.proof-grid-case-study .video-play-button { box-shadow: 4px 4px 0 rgb(229 72 165 / .30); }
+html.proof-grid-case-study :is(.fact-link, .text-link, .poc-text-link) {
+  border-bottom-color: rgb(36 84 198 / .42);
+}
+
+/* Preserve the full Pharma OS choreography and pause control. */
+html.proof-grid-case-study :is(.os-orchestration, .os-core, .os-node, .motion-toggle) { border-radius: 0; }
+html.proof-grid-case-study .os-core {
+  background: #1f2c4b;
+  border-color: #2454c6;
+  box-shadow: 5px 5px 0 rgb(36 84 198 / .20);
+}
+html.proof-grid-case-study .os-core strong { color: var(--dark-text); }
+html.proof-grid-case-study .os-orchestration::before { border-color: #676c73; }
+html.proof-grid-case-study .motion-toggle { color: var(--dark-body); }
+
+/* Repeat the same grid at the handoff, always outside the solid preview card. */
+html.proof-grid-case-study .next-project { isolation: isolate; background-image: none; }
+html.proof-grid-case-study .next-project::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background-image: var(--case-grid);
+  background-size: 96px 166px;
+  background-position: center;
+  mask-image: linear-gradient(to bottom, transparent, #000 20%, #000 80%, transparent);
+  -webkit-mask-image: linear-gradient(to bottom, transparent, #000 20%, #000 80%, transparent);
+}
+html.proof-grid-case-study .next-project-preview {
+  border-radius: 0;
+  box-shadow: 6px 6px 0 rgb(36 84 198 / .20);
+}
+html.proof-grid-case-study .next-project-copy > span { color: var(--dark-secondary); }
+html.proof-grid-case-study .nav-projects a { color: var(--dark-body); }

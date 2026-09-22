@@ -3613,6 +3613,45 @@
       }
     },
     {
+      "workflowVersion": 2,
+      "contractRevision": 7,
+      "slug": "olixir-account-director",
+      "roleTitle": "OLIXIR Account Director",
+      "artifactStem": "OLIXIR-Account-Director",
+      "configPath": "scripts/packages/olixir-account-director.json",
+      "targetLane": "client-account-delivery",
+      "evidenceMode": "resume-primary",
+      "fitClass": "strong",
+      "positioningLane": "client-account-delivery",
+      "bridgeType": "direct",
+      "applicationStrategy": "direct",
+      "resumeBaseMode": "account-leadership",
+      "resumeBaseLeadProfile": "account-leadership",
+      "resumeBaseAction": "tailor-to-jd",
+      "accountPresentation": "agency-progression",
+      "resumeBaseProfiles": [
+        {
+          "id": "account-leadership",
+          "version": 1
+        }
+      ],
+      "routeMode": "scoped-projects",
+      "designConcept": "proof-grid",
+      "publicBase": "https://wally-mostafa.github.io/",
+      "publishRepository": "wally-mostafa/wally-mostafa.github.io",
+      "selectedProjects": [
+        "project-01.html",
+        "project-06.html",
+        "project-03.html",
+        "project-07.html"
+      ],
+      "designConceptCssPath": "olixir-account-director/design-concept.css",
+      "resumePdfPath": "output/pdf/Wally-Mostafa-OLIXIR-Account-Director-Resume.pdf",
+      "publishStatus": "local-only",
+      "qaStatus": "qa-passed",
+      "builtAt": "2026-09-22T16:42:27.587Z"
+    },
+    {
       "slug": "omidria-product-marketing",
       "roleTitle": "OMIDRIA Product Marketing",
       "fitClass": "unclassified",
