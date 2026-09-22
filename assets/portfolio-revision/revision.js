@@ -113,18 +113,36 @@
     clearStack();
     if (!grid || motion.matches || window.innerWidth < 1120 || cards.length < 2) return;
     const top = navOffset();
-    // Keep the active card complete while preserving a readable title rail for
-    // every covered card. If the viewport cannot fit both, use ordinary flat
-    // cards instead of stacking every card at the same coordinate.
-    const heights = cards.map((card) => card.getBoundingClientRect().height);
-    const cardHeight = Math.max(...heights);
-    const available = window.innerHeight - top - cardHeight - 24;
+    // Preserve the preferred desktop height when it fits, but let short laptop
+    // viewports use the card's natural content height. The old fixed 590px
+    // minimum disabled the entire stack at otherwise valid desktop widths.
+    const preferredCardHeight = Math.max(
+      ...cards.map((card) => card.getBoundingClientRect().height)
+    );
+    cards.forEach((card) => { card.style.minHeight = '0px'; });
+    const naturalCardHeight = Math.max(
+      ...cards.map((card) => card.getBoundingClientRect().height)
+    );
     const minimumHeaderStep = cards.length > 4 ? 26 : 32;
+    const bottomGap = 16;
+    const maximumCardHeight = window.innerHeight
+      - top
+      - bottomGap
+      - minimumHeaderStep * (cards.length - 1);
+    if (maximumCardHeight < naturalCardHeight) {
+      cards.forEach((card) => { card.style.removeProperty('min-height'); });
+      return;
+    }
+    const cardHeight = Math.min(preferredCardHeight, maximumCardHeight);
+    const available = window.innerHeight - top - cardHeight - bottomGap;
     const headerStep = Math.min(46, available / (cards.length - 1));
-    if (headerStep < minimumHeaderStep) return;
+    if (headerStep < minimumHeaderStep) {
+      cards.forEach((card) => { card.style.removeProperty('min-height'); });
+      return;
+    }
     const step = headerStep;
     // Equal heights keep mixed JD selections aligned as they leave the stack.
-    // This only adds room; it never reduces type or clips a taller card.
+    // The selected height never goes below the tallest card's natural content.
     cards.forEach((card) => { card.style.minHeight = `${cardHeight}px`; });
     const gridTop = grid.getBoundingClientRect().top;
     stackOffsets = cards.map((card, i) => card.getBoundingClientRect().top - gridTop - top - i * step);

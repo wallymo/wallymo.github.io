@@ -330,7 +330,14 @@ def main() -> int:
 
                         exit_failures = []
                         release_start = exit_setup["releaseStart"]
-                        release_lead = int(max(expected_gap, exit_setup["step"])) + 48
+                        # Start after the final card has settled into its sticky
+                        # rail. On shorter viewports the proportional tail can
+                        # be smaller than the former fixed lead, which made this
+                        # exit-only sweep accidentally include the card's entry.
+                        release_lead = min(
+                            int(max(expected_gap, exit_setup["step"])) + 48,
+                            max(0, int(exit_setup["tailHeight"]) - 8),
+                        )
                         release_tail = int(exit_setup["lastTop"] + exit_setup["step"]) + 48
                         page.evaluate(
                             "(top) => scrollTo({ top, behavior: 'instant' })",
@@ -511,7 +518,7 @@ def main() -> int:
                     expected_work_links=expected_project_links,
                     expect_route_contract=True,
                     expect_chapter_motion=True,
-                    expect_work_stack=name == "desktop-stack",
+                    expect_work_stack=name in {"desktop-stack", "desktop-laptop"},
                 )
                 context.close()
 
