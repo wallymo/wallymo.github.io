@@ -3980,9 +3980,41 @@
       ],
       "designConceptCssPath": "pantherx-account-director/design-concept.css",
       "resumePdfPath": "output/pdf/Wally-Mostafa-PANTHERx-Account-Director-Resume.pdf",
-      "publishStatus": "local-only",
+      "publishStatus": "live-verified",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-09-22T19:17:23.703Z"
+      "builtAt": "2026-09-22T19:17:23.703Z",
+      "verification": {
+        "verifiedAt": "2026-09-22T19:19:39.986Z",
+        "routeUrl": "https://wallymo.github.io/pantherx-account-director/",
+        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-PANTHERx-Account-Director-Resume.pdf",
+        "configUrl": "https://wallymo.github.io/scripts/packages/pantherx-account-director.json",
+        "publicBase": "https://wallymo.github.io/",
+        "publishRepository": "wallymo/wallymo.github.io",
+        "designConceptCssUrl": "https://wallymo.github.io/pantherx-account-director/design-concept.css",
+        "designConceptCssSha256": "b0888b6dc13bd1e5526259a5435dd84911b2007f68715d23d600bbc14ee7c9fd",
+        "projectUrls": [
+          "https://wallymo.github.io/pantherx-account-director/project-01.html",
+          "https://wallymo.github.io/pantherx-account-director/project-06.html",
+          "https://wallymo.github.io/pantherx-account-director/project-04.html",
+          "https://wallymo.github.io/pantherx-account-director/project-03.html"
+        ],
+        "redirectUrls": [],
+        "configSha256": "caf86d5acbf989254c009cb0e1b3b8f6c2bc9ce5fee61f24e2998ef0f787a227",
+        "pdfSha256": "b96068218ef604762d3c9509f00064a0539779e9a5fd35349ca7143be9b72025",
+        "resumeBaseProfilesUrl": "https://wallymo.github.io/scripts/resume-base-profiles.json",
+        "resumeBaseProfilesSha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108",
+        "routeSha256": "64e5b15133de10a66d8b71bf46af2974fcff9fa01925d166af4a497338de6b6d",
+        "scopedProjectSha256": {
+          "project-01.html": "ad3bc2e4e5f1d828e96f0b3a3b8795f8295adb3636f2f260fbcb265a938659bc",
+          "project-06.html": "472d41458dacdc03301ee9818cee189a42d2c15d7ea64300d1d08f350c37f655",
+          "project-04.html": "8eb1cfbb97219af48bbfa1c35d76c728a23d69735a0747c6f6d9304433d6c83e",
+          "project-03.html": "781c7cddf72175c58d3e2a0e8069946d77cf4f8cfbbfa99e78aaaf14e4ffc0e6"
+        },
+        "scopedProjectAssetUrls": [],
+        "scopedProjectAssetSha256": {},
+        "configInputSha256": "97a6a8ee7329a77b191eb58104e2a1a8b392287d29cb5fe12a6c63add23ed930",
+        "qaBuiltAt": "2026-09-22T19:17:23.703Z"
+      }
     },
     {
       "workflowVersion": 2,
