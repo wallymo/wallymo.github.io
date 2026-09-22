@@ -4954,9 +4954,41 @@
       ],
       "designConceptCssPath": "real-chemistry-product-designer-experience/design-concept.css",
       "resumePdfPath": "output/pdf/Wally-Mostafa-Real-Chemistry-Product-Designer-2026-Resume.pdf",
-      "publishStatus": "local-only",
+      "publishStatus": "live-verified",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-09-22T23:25:02.904Z"
+      "builtAt": "2026-09-22T23:25:02.904Z",
+      "verification": {
+        "verifiedAt": "2026-09-22T23:26:38.153Z",
+        "routeUrl": "https://wally-mostafa.github.io/real-chemistry-product-designer-experience/",
+        "resumePdfUrl": "https://wally-mostafa.github.io/output/pdf/Wally-Mostafa-Real-Chemistry-Product-Designer-2026-Resume.pdf",
+        "configUrl": "https://wally-mostafa.github.io/scripts/packages/real-chemistry-product-designer-experience.json",
+        "publicBase": "https://wally-mostafa.github.io/",
+        "publishRepository": "wally-mostafa/wally-mostafa.github.io",
+        "designConceptCssUrl": "https://wally-mostafa.github.io/real-chemistry-product-designer-experience/design-concept.css",
+        "designConceptCssSha256": "73052eae58d446422f0ff921361877b1ca4e0062ec7ee25daace39b4a4791195",
+        "projectUrls": [
+          "https://wally-mostafa.github.io/real-chemistry-product-designer-experience/project-05.html",
+          "https://wally-mostafa.github.io/real-chemistry-product-designer-experience/project-01.html",
+          "https://wally-mostafa.github.io/real-chemistry-product-designer-experience/project-04.html",
+          "https://wally-mostafa.github.io/real-chemistry-product-designer-experience/project-03.html"
+        ],
+        "redirectUrls": [],
+        "configSha256": "39c9da1fc3c4f0c845c0d9157432406d58e32a654d8acab154386f5d838390dd",
+        "pdfSha256": "8e5c546640fc1802b594c2501df1701aee909bf91cd982a150a0f5d19a8c699d",
+        "resumeBaseProfilesUrl": "https://wally-mostafa.github.io/scripts/resume-base-profiles.json",
+        "resumeBaseProfilesSha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108",
+        "routeSha256": "e79296949c56666b342e3aed6c241c976a0a2fba9a8b17516f306094c8311077",
+        "scopedProjectSha256": {
+          "project-05.html": "89e0c22971dc2338cc0136efd15eb545032136aa9576102d7447ad645cd8c09f",
+          "project-01.html": "cd472837ff17b05d4cb8a860edd20956c574166877123a53808e8505401c7528",
+          "project-04.html": "85bab6438408a8ab792ae06448d95f298b6f95b8165dd09c4383f337ee43f8c0",
+          "project-03.html": "c7091b5332bd1af3de9961506fcf2c57beb7d3e916c11c4aaa32940aa47dec0f"
+        },
+        "scopedProjectAssetUrls": [],
+        "scopedProjectAssetSha256": {},
+        "configInputSha256": "3a3f8fa9d857ef76092a69d464d5ee41359f377c4c3c3ac5379f6657fd406f5a",
+        "qaBuiltAt": "2026-09-22T23:25:02.904Z"
+      }
     },
     {
       "workflowVersion": 2,
