@@ -1,0 +1,729 @@
+{
+  "workflowVersion": 2,
+  "contractRevision": 7,
+  "slug": "confidential-data-labeling-specialist",
+  "roleTitle": "Data Labeling Specialist",
+  "artifactStem": "Confidential-Data-Labeling-Specialist",
+  "fitClass": "adjacent",
+  "routeMode": "scoped-projects",
+  "selectedProjects": [
+    "project-01.html",
+    "project-04.html",
+    "project-06.html",
+    "project-03.html"
+  ],
+  "job": {
+    "company": "Confidential Employer",
+    "roleTitle": "Data Labeling Specialist",
+    "jobId": "not-provided",
+    "jobUrl": "not-provided",
+    "sourceChannel": "user-provided job description",
+    "dateCaptured": "2026-09-22",
+    "location": "Remote, United States and Canada only",
+    "employmentType": "Contract / Full-Time",
+    "atsVendor": "unknown",
+    "rawJd": "Role: UX/UI Designer (Remote). Location: Remote, United States and Canada only. Employment type: Contract / Full-Time. Applications are restricted to people currently residing in and authorized to work in the United States or Canada. The work described is data labeling rather than UX/UI design. The specialist reviews, annotates, categorizes, validates, and structures multimodal datasets across text, images, spreadsheets, and complex structured documents. Responsibilities include reviewing AI model outputs for factual accuracy, linguistic coherence, alignment, and formatting; identifying edge cases, labeling ambiguities, and data inconsistencies; improving labeling taxonomies; and meeting accuracy, quality, and daily throughput goals. Requirements include close attention to detail, reading comprehension, analytical evaluation, professional-level English, reliable high-speed internet, a home office, and United States or Canada residence. Prior data annotation, quality assurance, data review, or content evaluation experience is preferred."
+  },
+  "classification": {
+    "targetLane": "ai-product-implementation",
+    "evidenceMode": "resume-primary",
+    "primarySource": "The resume documents multimodal review, prompt-defined criteria, human review surfaces, regulated content review, evidence-gap detection, audit-ready annotations, behavioral analysis, quality reviews, and source-backed AI product work.",
+    "supportingSource": "The portfolio shows the review workflows behind Claims Detector, including structured claims, evidence, human validation, edge cases, failure states, text, image, and video review, plus research and data-quality work across enterprise products.",
+    "hardGateStatus": "pass",
+    "hardGates": [
+      {
+        "gate": "Current United States or Canada residence",
+        "status": "pass",
+        "requirementId": "us-canada-residence",
+        "evidence": "The resume lists Raleigh, North Carolina."
+      }
+    ]
+  },
+  "requirements": [
+    {
+      "id": "us-canada-residence",
+      "text": "Be currently based in the United States or Canada.",
+      "priority": "hard-gate",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The resume lists Raleigh, North Carolina."
+      ],
+      "proofIds": [],
+      "destinations": [
+        "experience"
+      ],
+      "resumeTerms": [
+        "Raleigh, NC"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "multimodal-data-annotation",
+      "text": "Annotate, categorize, validate, and structure multimodal datasets across text, images, spreadsheets, and complex documents.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Claims Detector finds promotional claims, surfaces evidence gaps, and pre-populates audit-ready annotations for human review.",
+        "The resume documents multimodal review, prompt-defined criteria, knowledge bases, structured analysis, and human review surfaces."
+      ],
+      "proofIds": [
+        "hedgehox-02",
+        "one-block-away-03"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio",
+        "cover-letter"
+      ],
+      "resumeTerms": [
+        "multimodal review",
+        "audit-ready annotations"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "ai-output-quality-review",
+      "text": "Review AI outputs for factual accuracy, linguistic coherence, alignment, and formatting correctness.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Current work uses source evidence, prompt-defined review criteria, human validation, and evidence trails to make AI outputs reviewable.",
+        "Regulated MLR work requires close reading, content review, formatting discipline, and clear handling of unsupported claims."
+      ],
+      "proofIds": [
+        "hedgehox-02",
+        "hedgehox-03",
+        "account-management-03"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio",
+        "cover-letter"
+      ],
+      "resumeTerms": [
+        "source-backed analysis",
+        "human review"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "edge-cases-and-labeling-ambiguity",
+      "text": "Identify edge cases, labeling ambiguities, and data inconsistencies that can improve review rules and taxonomies.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "The portfolio documents workflow mapping across human steps, model steps, review checkpoints, edge cases, and failure states.",
+        "Claims Detector separates supportable language from content that needs reviewer attention and exposes missing evidence."
+      ],
+      "proofIds": [
+        "hedgehox-02",
+        "one-block-away-01"
+      ],
+      "destinations": [
+        "summary",
+        "experience",
+        "portfolio",
+        "cover-letter"
+      ],
+      "resumeTerms": [
+        "evidence gaps",
+        "review routing"
+      ],
+      "matchMode": "contextual"
+    },
+    {
+      "id": "accuracy-quality-and-throughput",
+      "text": "Maintain high accuracy, quality benchmarks, and daily throughput goals.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Kinesso leadership included quality reviews, research checkpoints, shared documentation, and standards across more than 20 products.",
+        "Earlier regulated delivery required careful review, deadlines, and production-ready handoffs, but daily annotation quotas are not documented."
+      ],
+      "proofIds": [
+        "kinesso-01",
+        "kinesso-04",
+        "account-management-03"
+      ],
+      "destinations": [
+        "skills",
+        "experience",
+        "cover-letter"
+      ],
+      "resumeTerms": [
+        "quality reviews",
+        "timelines"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "analytical-reading-and-detail",
+      "text": "Bring strong attention to detail, reading comprehension, and analytical evaluation skills.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The resume documents regulated claim review, evidence checks, competitive audits, behavioral analytics, research documentation, and presentation-ready outputs."
+      ],
+      "proofIds": [
+        "hedgehox-02",
+        "kinesso-03",
+        "heartbeat-01"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience"
+      ],
+      "resumeTerms": [
+        "behavioral analytics",
+        "presentation-ready"
+      ],
+      "matchMode": "recognized-equivalent"
+    }
+  ],
+  "fitGate": {
+    "resumeBase": {
+      "mode": "ai-product-implementation",
+      "sourceProfiles": [
+        {
+          "id": "ai-product-implementation",
+          "version": 1
+        }
+      ],
+      "leadProfileId": "ai-product-implementation",
+      "accountPresentation": "consolidated",
+      "action": "tailor-to-jd",
+      "rationale": "The duties center on AI output review, multimodal content, structured evaluation, annotations, and human quality control. The AI/Product Implementation profile contains the direct evidence. Earlier client, UX, and research work supports close reading, documentation, and review discipline."
+    },
+    "supportedOverlap": [
+      "Current work includes multimodal review, prompt-defined criteria, human review surfaces, source-backed analysis, evidence trails, and audit-ready annotations.",
+      "Claims Detector applies structured review to promotional claims, supporting evidence, gaps, and reviewer decisions before MLR submission.",
+      "Enterprise research work covered behavioral analytics, prototype testing, structured findings, shared documentation, quality standards, and more than 20 products.",
+      "Regulated healthcare delivery required detailed content review, production requirements, timelines, and accurate handoffs across client and delivery teams.",
+      "Raleigh, North Carolina satisfies the posting's United States residence requirement."
+    ],
+    "unsupportedRequirements": [
+      "Daily data-labeling throughput targets are not documented.",
+      "Formal ownership of a labeling taxonomy is not documented.",
+      "Large-scale manual dataset annotation as a dedicated job is not documented.",
+      "A named data-labeling or quality-assurance platform is not documented."
+    ],
+    "actualMismatches": [
+      "The posting is titled UX/UI Designer, but the responsibilities describe data labeling and AI output review rather than interface design.",
+      "The role appears more execution-focused than the candidate's recent product, UX, and AI implementation leadership."
+    ],
+    "missingEvidence": [
+      "A sustained annotation accuracy rate, labeled-item volume, or daily throughput record.",
+      "A formal taxonomy-maintenance example tied to a production labeling operation.",
+      "The employer name, compensation, contract duration, and explanation for the title mismatch were not provided."
+    ],
+    "coverLetterBridge": {
+      "status": "recommended",
+      "rationale": "We can make the case with a cover letter by connecting regulated content review, human-reviewed AI workflows, evidence checking, multimodal evaluation, edge-case handling, and structured research to the employer's data-quality needs. The letter keeps high-volume labeling quotas and formal taxonomy ownership as open gaps."
+    },
+    "recommendation": "Proceed as adjacent. Lead with regulated AI review, evidence-backed annotations, multimodal evaluation, ambiguity handling, and quality discipline. Treat the work as a Data Labeling Specialist role despite the inconsistent UX/UI title, and do not claim high-volume labeling quotas or prior taxonomy ownership."
+  },
+  "positioning": {
+    "laneId": "ai-product-implementation",
+    "targetIdentity": "AI data quality and evaluation specialist",
+    "employerNeed": "Review multimodal datasets and AI outputs carefully, apply consistent criteria, surface ambiguity, and protect data quality at production pace.",
+    "bridgeType": "operating-center",
+    "applicationStrategy": "transferable",
+    "bridgeThesis": "review multimodal AI outputs against source evidence, structured criteria, and human quality standards",
+    "proofIds": [
+      "hedgehox-02",
+      "kinesso-06",
+      "account-management-03"
+    ],
+    "remainingGap": "Dedicated high-volume data labeling, daily annotation quotas, formal taxonomy ownership, and named labeling platforms are not documented."
+  },
+  "coverLetter": {
+    "trigger": "bridge-recommended",
+    "date": "2026-09-22",
+    "greeting": "Dear hiring team,",
+    "paragraphs": [
+      "I am applying to Confidential Employer for the Data Labeling Specialist responsibilities described in the remote UX/UI Designer posting. My background combines regulated content review, enterprise UX research, and hands-on AI implementation. The common thread is careful evaluation: checking what a system produced, tracing it back to evidence, and making ambiguity visible before the work moves forward.",
+      "At Hedgehox, I designed Claims Detector as a human-reviewed MLR pre-screening workflow. It finds promotional claims, surfaces evidence gaps, and pre-populates audit-ready annotations so reviewers can focus on judgment instead of rebuilding the evidence trail. The broader platform also covers text, image, and video review, prompt-defined criteria, knowledge bases, and routing rules for regulated agency work.",
+      "At Kinesso, I built a research practice across more than 20 products using interviews, prototype testing, behavioral analytics, structured findings, and shared documentation. I also led quality reviews and helped define design and accessibility standards across an enterprise system used by more than 7,000 people. Earlier healthcare account work sharpened the same habits through detailed briefs, production requirements, MLR review, and deadline-driven delivery.",
+      "I would bring strong review judgment, clear written feedback, and direct experience with human-in-the-loop AI systems. My background does not include a dedicated high-volume data-labeling title or a documented daily annotation quota. The relevant experience is the work itself: reviewing structured and unstructured content, applying consistent criteria, catching gaps and edge cases, and keeping outputs usable for the people who make the final decision."
+    ],
+    "closing": "Sincerely,",
+    "signature": "Wally Mostafa",
+    "proofIds": [
+      "hedgehox-02",
+      "kinesso-06",
+      "account-management-03"
+    ]
+  },
+  "resume": {
+    "foundationId": "wally-mostafa-resume-2026-07-03",
+    "foundationVersion": 4,
+    "compositionMode": "foundation-complete",
+    "layoutDensity": "compact",
+    "roleTitleOverrides": {
+      "hedgehox": "AI Implementation Lead"
+    },
+    "roleContinuationBreaks": [
+      {
+        "roleId": "kinesso",
+        "afterBullet": 3
+      }
+    ],
+    "summary": "AI data quality and evaluation specialist with 15 years across regulated review, enterprise UX, research, and AI implementation. I review multimodal AI outputs against source evidence, structured criteria, and human quality standards. At Hedgehox, I designed a human-reviewed claims workflow that finds promotional claims, surfaces evidence gaps, and pre-populates audit-ready annotations. Earlier work adds behavioral analysis, quality standards, detailed documentation, and deadline-driven delivery.",
+    "skillIds": [
+      "ai-implementation-workflow-design",
+      "research-experience-strategy",
+      "program-project-delivery",
+      "regulated-healthcare-client-delivery"
+    ],
+    "skills": [
+      {
+        "label": "AI Implementation & Workflow Design",
+        "description": "Governed LLM/VLM workflows, multimodal review, RAG/knowledge bases, prompt-defined criteria, model orchestration, and human review surfaces"
+      },
+      {
+        "label": "Research & Experience Strategy",
+        "description": "Stakeholder interviews, competitive audits, journey maps, user flows, wireframes, prototypes, usability testing, and research-led product direction"
+      },
+      {
+        "label": "Program & Project Delivery",
+        "description": "Scoping, requirements, timelines, review routing, team coordination, risk visibility, and build-ready handoff across product, design, and client teams"
+      },
+      {
+        "label": "Regulated Healthcare & Client Delivery",
+        "description": "11 years across pharma/healthcare communications, FDA/HIPAA/MLR workflows, HCP/patient UX, client workshops, and stakeholder adoption"
+      }
+    ],
+    "roles": {
+      "hedgehox": [
+        "Lead Pharma AI Platform work across six agency workflows: brief intake, scope planning, submission capture, MLR claims review, review routing, and FDA monitoring; Echo cut one screenshot route from 8 hours to 10 minutes",
+        "Secured investor backing for Claims Detector with a functional POC, a clear product story, and direct iteration with investors",
+        "Designed Claims Detector as a human-reviewed MLR pre-screening workflow that finds promotional claims, surfaces evidence gaps, and pre-populates audit-ready annotations; one review cycle fell from 3 weeks to 4 days",
+        "Led the AI-assisted design and build of Xenagos Bio's website and reusable design system, translating precision-oncology positioning into an investor-facing site the team could maintain",
+        "Built Scope Generator for pharma agency finance and operations teams, turning rate cards, brands, and project inputs into budget-ready scopes and resourcing plans",
+        "Developed FDA Warning Tool concepts that turn warning-letter patterns into practical content-risk guidance for pharma teams"
+      ],
+      "one-block-away": [
+        "Lead client discovery and turn unclear business questions into testable product concepts, working POCs, demo flows, and roadmap decisions",
+        "Own delivery from product strategy and UX through AI workflow design, front-end and backend logic, demos, and client iteration",
+        "Built WeReady's startup-readiness POC, including the WeReady Score and Bailey Intelligence, with source-backed analysis across code, business, investment, and UX",
+        "Built ListingPal's AI listing POC and landing page; it turns property inputs into MLS/SEO-ready listings, social and ad copy, and styling direction in under 90 seconds",
+        "Building the website and sponsor strategy for a Tunisia youth soccer program to support player advancement, community backing, and donor outreach"
+      ],
+      "kinesso": [
+        "Scaled product design from 2 to 30 across the US and Poland, leading critiques and quality reviews while planning scope, resources, and engineering handoff across more than 20 products",
+        "Led UX research and strategy for a marketing intelligence suite used by 7,000+ people across 22 white-label brands; turned interviews, prototype testing, behavioral analytics, and adoption data into documented product priorities",
+        "Built Kinesso's first UX research practice across 20+ products, including participant recruitment, interviews, prototype testing, beta groups, behavioral analytics, research tooling, shared Figma documentation, and UX checkpoints in project plans",
+        "Helped shape and govern a design system with 500 components, 140 styles, 300 icons, and 50 personas, including accessibility and design quality standards; the work earned 5 Indigo Gold, 4 Indigo Silver, and Red Dot recognition",
+        "Partnered with the Head of Design to create the team's first onboarding program, career roadmaps, coaching structure, and performance review workflows for new and existing employees",
+        "Led workshops on product discovery, ecosystem mapping, innovation, and user research; expanded the program from Kinesso teams to IPG groups and presented recommendations to executives and clients",
+        "UX lead for research and design on Kanvas, Kinesso's developer-first API services library; partnered with product and engineering on roadmap priorities and with C-suite stakeholders on monetization and go-to-market planning",
+        "Collaborated on the Digital Experience Audit workflow, turning channel scoring, benchmarks, and recommendations into repeatable analysis, data visualization, and presentation-ready client outputs",
+        "Led a three-person team to second place in Kinesso's inaugural innovation challenge with an accessibility panel concept; later advised the next cohort and contributed to accessibility playbook and keyboard interaction standards"
+      ],
+      "omnicom": [
+        "Supported oncology accounts as a freelance UX designer, combining UX design and account-management experience to strengthen regulated healthcare work",
+        "Worked across account, strategy, creative, and delivery teams to translate brand goals into clearer user flows, content structure, and digital recommendations"
+      ],
+      "heartbeat": [
+        "Led UX research and experience strategy for pharma and healthcare work, translating stakeholder input, competitive audits, and user needs into digital product direction",
+        "Created journey maps, site maps, user flows, wireframes, and prototypes for patient, HCP, and internal brand-team experiences across regulated healthcare programs",
+        "Partnered with strategy, creative, account, and engineering teams to move research findings into prioritized, build-ready product and campaign experiences",
+        "Led research and creation of an oncology-wide design system for interactive visual aids (iVAs) at a major pharma company, with the goal of improving field usability and development efficiency",
+        "Member of Heartbeat's ETCH (Experiential Technology) group, which ran business-driven sprints exploring voice, AR/VR, and facial recognition for agency and client use"
+      ],
+      "account-management": [
+        "8 years managing Fortune 500 pharma and healthcare clients and brand budgets up to $20M across CNS/neurology, psychiatry, cardiovascular/metabolic, and sleep/wakefulness brands including NUVIGIL, Namenda XR, Lipitor, and Zoloft",
+        "One of two account consumer leads on FCB Health's largest pharma account across all verticals: TV, radio, digital, gaming, Times Square, unbranded campaigns, brand planning, and MLR review",
+        "Translated client and brand strategy into briefs, creative feedback, production requirements, priorities, timelines, and MLR-ready delivery across account, creative, UX, and development teams"
+      ]
+    },
+    "sourceBulletIds": {
+      "hedgehox": [
+        "hedgehox-03",
+        "hedgehox-01",
+        "hedgehox-02",
+        "hedgehox-04",
+        "hedgehox-05",
+        "hedgehox-06"
+      ],
+      "one-block-away": [
+        "one-block-away-01",
+        "one-block-away-04",
+        "one-block-away-03",
+        "one-block-away-02",
+        "one-block-away-05"
+      ],
+      "kinesso": [
+        "kinesso-01",
+        "kinesso-02",
+        "kinesso-06",
+        "kinesso-04",
+        "kinesso-05",
+        "kinesso-07",
+        "kinesso-08",
+        "kinesso-03",
+        "kinesso-09"
+      ],
+      "omnicom": [
+        "omnicom-01",
+        "omnicom-02"
+      ],
+      "heartbeat": [
+        "heartbeat-01",
+        "heartbeat-02",
+        "heartbeat-03",
+        "heartbeat-04",
+        "heartbeat-05"
+      ],
+      "account-management": [
+        "account-management-01",
+        "account-management-02",
+        "account-management-03"
+      ]
+    }
+  },
+  "route": {
+    "designConcept": "proof-grid",
+    "presentation": "showcase",
+    "heroIntent": "resume-support",
+    "showcaseSections": [
+      "chapters",
+      "capabilities"
+    ],
+    "workHeading": "Selected review and data-quality work.",
+    "contactHeading": "Thanks for taking a look."
+  },
+  "hero": {
+    "eyebrow": "Confidential Employer | Selected Work",
+    "tags": [
+      "AI output review",
+      "Evidence-backed annotation",
+      "Multimodal quality"
+    ],
+    "intro": "This is a look at recent work that may be useful alongside my resume for the data labeling and AI review responsibilities in the posting. The projects show how I work with source evidence, structured criteria, human review, ambiguity, and detailed product documentation."
+  },
+  "contact": {
+    "prompt": "Email and my resume are below.",
+    "signoff": "AI evaluation | evidence review | Raleigh, NC"
+  },
+  "constraints": {
+    "doNotClaim": [
+      "Prior employment with the title Data Labeling Specialist",
+      "High-volume manual data labeling at production scale",
+      "A documented daily annotation quota or accuracy rate",
+      "Formal labeling-taxonomy ownership",
+      "Named data-labeling platform proficiency",
+      "Model training, ML engineering, or data-science ownership",
+      "That the posting contains actual UX/UI design responsibilities",
+      "Private work-authorization details in public artifacts"
+    ],
+    "blockedTerms": [
+      "experienced data labeler",
+      "annotation throughput",
+      "taxonomy owner",
+      "Labelbox expert",
+      "Scale AI expert",
+      "ML engineer",
+      "data scientist",
+      "UX/UI responsibilities"
+    ]
+  },
+  "privacy": {
+    "publicSafe": true,
+    "notes": "Contains only the user-provided public job description and public-safe evidence from the resume and portfolio. It excludes employer contacts, application answers, compensation boundaries, private work-authorization details, and submission state."
+  },
+  "qa": {
+    "status": "qa-passed",
+    "builtAt": "2026-09-22T15:07:38.810Z",
+    "configInputSha256": "95f46e1e0bed755b9dcf58765720a624d86d62405c8899b030bdb96dc83380e0",
+    "sourceResumeSha256": "309a2ea377c45481d6826da8559d707319f85f53e6d68b3e10a537d1864e91e7",
+    "resumeFoundation": {
+      "id": "wally-mostafa-resume-2026-07-03",
+      "sourcePdfSha256": "f9b05b6c3c134262b1af6c5734363daf4385cf335407a139779a37d138adf1aa"
+    },
+    "resumeBase": {
+      "mode": "ai-product-implementation",
+      "sourceProfiles": [
+        {
+          "id": "ai-product-implementation",
+          "version": 1
+        }
+      ],
+      "leadProfileId": "ai-product-implementation",
+      "accountPresentation": "consolidated",
+      "action": "tailor-to-jd",
+      "registryVersion": 1,
+      "registrySha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108"
+    },
+    "artifactHashes": {
+      "routeSha256": "ff0f5446187a29a189f7ee7f0bd767cf30d024ca5d478e93041ab692c649d995",
+      "designConceptCssSha256": "73052eae58d446422f0ff921361877b1ca4e0062ec7ee25daace39b4a4791195",
+      "resumePdfSha256": "af3fcb064b71c30762304193950d3ddf2aa5c2407c11953579dd099afab63037",
+      "coverLetterPdfSha256": "9e4bd9fb07a84ed1f4df4f18b8d94034c74faa2c31efbf1d6e86e4521c5bad13",
+      "coverLetterMarkdownSha256": "dde75502f5a4d436e8b157df8db12da3e8e9f01423d15062db6139e25000b1c8",
+      "scopedProjectSha256": {
+        "project-01.html": "25439850b6ee9bfc974b87bb6f152f665488093559859e9477911e0268cfc68e",
+        "project-04.html": "5513e542e60d77fb9e8c32c06ef4df1aa2b5da5528fd92c3d2eb38913e37f235",
+        "project-06.html": "54da627e5ac96a6a4fb903ca6a1705981f203b48ab73fc1de3f671e48aba86e4",
+        "project-03.html": "6e70412218e4b2a92e7ae694b9a7dbde9c6e782665ea58b03f87671fbc5c036e"
+      },
+      "scopedProjectAssetSha256": {}
+    },
+    "renderer": {
+      "browser": {
+        "name": "Google Chrome",
+        "version": "Google Chrome 153.0.8010.53"
+      },
+      "htmlPath": "tmp/tailored-resumes/confidential-data-labeling-specialist.html",
+      "pdfPath": "output/pdf/Wally-Mostafa-Confidential-Data-Labeling-Specialist-Resume.pdf",
+      "fontWait": true,
+      "fontProfile": "portfolio-pdf"
+    },
+    "coverLetterRenderer": {
+      "browser": {
+        "name": "Google Chrome",
+        "version": "Google Chrome 153.0.8010.53"
+      },
+      "htmlPath": "tmp/tailored-resumes/confidential-data-labeling-specialist-cover-letter.html",
+      "pdfPath": "output/pdf/Wally-Mostafa-Confidential-Data-Labeling-Specialist-Cover-Letter.pdf",
+      "fontWait": true,
+      "fontProfile": "portfolio-pdf"
+    },
+    "coverLetter": {
+      "ok": true,
+      "failures": [],
+      "pageCount": 1,
+      "sizeBytes": 23282,
+      "templateVersion": "real-chemistry-21grams-v1",
+      "fonts": {
+        "display": "Syne 800",
+        "body": "Instrument Sans 400/600",
+        "type3Fonts": false
+      },
+      "layout": {
+        "page": "Letter",
+        "margin": "0.58in 0.62in",
+        "header": "centered-rule"
+      }
+    },
+    "ats": {
+      "ok": true,
+      "pdfPath": "output/pdf/Wally-Mostafa-Confidential-Data-Labeling-Specialist-Resume.pdf",
+      "pageCount": 2,
+      "fileSize": 81330,
+      "annotations": [
+        {
+          "page": 1,
+          "uri": "mailto:wmostafa12@gmail.com"
+        },
+        {
+          "page": 1,
+          "uri": "https://linkedin.com/in/wallymo"
+        },
+        {
+          "page": 1,
+          "uri": "https://wally-mostafa.github.io/confidential-data-labeling-specialist/"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/6748"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/4629"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.red-dot.org/project/dxa-digital-experience-audit-55219"
+        }
+      ],
+      "fontCompatibility": {
+        "type3Fonts": false
+      },
+      "coverage": [
+        {
+          "id": "us-canada-residence",
+          "requirement": "Be currently based in the United States or Canada.",
+          "priority": "hard-gate",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "Raleigh, NC"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "multimodal-data-annotation",
+          "requirement": "Annotate, categorize, validate, and structure multimodal datasets across text, images, spreadsheets, and complex documents.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "multimodal review",
+            "audit-ready annotations"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "ai-output-quality-review",
+          "requirement": "Review AI outputs for factual accuracy, linguistic coherence, alignment, and formatting correctness.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "source-backed analysis",
+            "human review"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "edge-cases-and-labeling-ambiguity",
+          "requirement": "Identify edge cases, labeling ambiguities, and data inconsistencies that can improve review rules and taxonomies.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "contextual",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "evidence gaps",
+            "review routing"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "accuracy-quality-and-throughput",
+          "requirement": "Maintain high accuracy, quality benchmarks, and daily throughput goals.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "quality reviews",
+            "timelines"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "analytical-reading-and-detail",
+          "requirement": "Bring strong attention to detail, reading comprehension, and analytical evaluation skills.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "behavioral analytics",
+            "presentation-ready"
+          ],
+          "missingTerms": []
+        }
+      ],
+      "failures": [],
+      "warnings": []
+    },
+    "humanizer": {
+      "status": "passed",
+      "version": "2.2.0",
+      "mode": "surface-only",
+      "reviewedAt": "2026-09-22T15:05:57.351Z",
+      "copySha256": "109448d931158b37dd53e73cec3f55541cedd2f38946a1f36fde03019e6a7166",
+      "reviewMethod": "humanizer-skill",
+      "semanticPassAttested": true,
+      "staticChecksPassed": true
+    },
+    "route": {
+      "viewports": [
+        {
+          "name": "desktop",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-01",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-04",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-06",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-03",
+          "errors": []
+        },
+        {
+          "name": "mobile",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-01",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-04",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-06",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-03",
+          "errors": []
+        },
+        {
+          "name": "desktop-stack",
+          "errors": []
+        },
+        {
+          "name": "desktop-laptop",
+          "errors": []
+        },
+        {
+          "name": "desktop-short",
+          "errors": []
+        }
+      ],
+      "errors": []
+    }
+  },
+  "copyReview": {
+    "humanizerVersion": "2.2.0",
+    "mode": "surface-only",
+    "status": "passed",
+    "reviewedAt": "2026-09-22T15:05:57.351Z",
+    "copySha256": "109448d931158b37dd53e73cec3f55541cedd2f38946a1f36fde03019e6a7166",
+    "preserved": [
+      "content",
+      "structure",
+      "claims",
+      "ending"
+    ],
+    "rewriteAuthorized": false,
+    "reviewMethod": "humanizer-skill",
+    "semanticPassAttested": true,
+    "staticChecksPassed": true,
+    "finalAntiAiPass": true,
+    "remainingTells": []
+  }
+}

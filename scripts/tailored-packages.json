@@ -1148,6 +1148,47 @@
       }
     },
     {
+      "workflowVersion": 2,
+      "contractRevision": 7,
+      "slug": "confidential-data-labeling-specialist",
+      "roleTitle": "Data Labeling Specialist",
+      "artifactStem": "Confidential-Data-Labeling-Specialist",
+      "configPath": "scripts/packages/confidential-data-labeling-specialist.json",
+      "targetLane": "ai-product-implementation",
+      "evidenceMode": "resume-primary",
+      "fitClass": "adjacent",
+      "positioningLane": "ai-product-implementation",
+      "bridgeType": "operating-center",
+      "applicationStrategy": "transferable",
+      "resumeBaseMode": "ai-product-implementation",
+      "resumeBaseLeadProfile": "ai-product-implementation",
+      "resumeBaseAction": "tailor-to-jd",
+      "accountPresentation": "consolidated",
+      "resumeBaseProfiles": [
+        {
+          "id": "ai-product-implementation",
+          "version": 1
+        }
+      ],
+      "routeMode": "scoped-projects",
+      "designConcept": "proof-grid",
+      "publicBase": "https://wally-mostafa.github.io/",
+      "publishRepository": "wally-mostafa/wally-mostafa.github.io",
+      "selectedProjects": [
+        "project-01.html",
+        "project-04.html",
+        "project-06.html",
+        "project-03.html"
+      ],
+      "designConceptCssPath": "confidential-data-labeling-specialist/design-concept.css",
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Confidential-Data-Labeling-Specialist-Resume.pdf",
+      "coverLetterPdfPath": "output/pdf/Wally-Mostafa-Confidential-Data-Labeling-Specialist-Cover-Letter.pdf",
+      "coverLetterMarkdownPath": "output/pdf/Wally-Mostafa-Confidential-Data-Labeling-Specialist-Cover-Letter.md",
+      "publishStatus": "local-only",
+      "qaStatus": "qa-passed",
+      "builtAt": "2026-09-22T15:07:38.810Z"
+    },
+    {
       "slug": "conversifi",
       "roleTitle": "Conversifi Strategic Growth Partner",
       "fitClass": "unclassified",
