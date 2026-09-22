@@ -434,7 +434,7 @@ nav .nav-cta:hover, .btn-primary:hover { background: var(--accent-hover); }
   --chapter-navigation-gap: 16px;
 }
 #chapters.chapters-compact .chapter-intro { row-gap: 8px; }
-#chapters.chapters-compact .chapter-intro > p { padding-bottom: 0; }
+#chapters.chapters-compact .chapter-intro > p { padding-bottom: 12px; }
 #chapters.chapters-compact .chapter-copy { padding: 20px; }
 #chapters.chapters-compact .chapter-copy h4 { margin-bottom: 16px; }
 #chapters.chapters-compact .chapter-copy > p { margin-bottom: 16px; }
