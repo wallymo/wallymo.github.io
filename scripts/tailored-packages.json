@@ -1184,9 +1184,45 @@
       "resumePdfPath": "output/pdf/Wally-Mostafa-Confidential-Data-Labeling-Specialist-Resume.pdf",
       "coverLetterPdfPath": "output/pdf/Wally-Mostafa-Confidential-Data-Labeling-Specialist-Cover-Letter.pdf",
       "coverLetterMarkdownPath": "output/pdf/Wally-Mostafa-Confidential-Data-Labeling-Specialist-Cover-Letter.md",
-      "publishStatus": "local-only",
+      "publishStatus": "live-verified",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-09-22T15:07:38.810Z"
+      "builtAt": "2026-09-22T15:07:38.810Z",
+      "verification": {
+        "verifiedAt": "2026-09-22T15:14:49.902Z",
+        "routeUrl": "https://wally-mostafa.github.io/confidential-data-labeling-specialist/",
+        "resumePdfUrl": "https://wally-mostafa.github.io/output/pdf/Wally-Mostafa-Confidential-Data-Labeling-Specialist-Resume.pdf",
+        "configUrl": "https://wally-mostafa.github.io/scripts/packages/confidential-data-labeling-specialist.json",
+        "publicBase": "https://wally-mostafa.github.io/",
+        "publishRepository": "wally-mostafa/wally-mostafa.github.io",
+        "designConceptCssUrl": "https://wally-mostafa.github.io/confidential-data-labeling-specialist/design-concept.css",
+        "designConceptCssSha256": "73052eae58d446422f0ff921361877b1ca4e0062ec7ee25daace39b4a4791195",
+        "projectUrls": [
+          "https://wally-mostafa.github.io/confidential-data-labeling-specialist/project-01.html",
+          "https://wally-mostafa.github.io/confidential-data-labeling-specialist/project-04.html",
+          "https://wally-mostafa.github.io/confidential-data-labeling-specialist/project-06.html",
+          "https://wally-mostafa.github.io/confidential-data-labeling-specialist/project-03.html"
+        ],
+        "redirectUrls": [],
+        "configSha256": "79bcf2f3a8edcb20618ba2d83a51571dbcb9fe51aade2811b2294c7f644e163d",
+        "pdfSha256": "af3fcb064b71c30762304193950d3ddf2aa5c2407c11953579dd099afab63037",
+        "resumeBaseProfilesUrl": "https://wally-mostafa.github.io/scripts/resume-base-profiles.json",
+        "resumeBaseProfilesSha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108",
+        "coverLetterPdfUrl": "https://wally-mostafa.github.io/output/pdf/Wally-Mostafa-Confidential-Data-Labeling-Specialist-Cover-Letter.pdf",
+        "coverLetterMarkdownUrl": "https://wally-mostafa.github.io/output/pdf/Wally-Mostafa-Confidential-Data-Labeling-Specialist-Cover-Letter.md",
+        "coverLetterPdfSha256": "9e4bd9fb07a84ed1f4df4f18b8d94034c74faa2c31efbf1d6e86e4521c5bad13",
+        "coverLetterMarkdownSha256": "dde75502f5a4d436e8b157df8db12da3e8e9f01423d15062db6139e25000b1c8",
+        "routeSha256": "ff0f5446187a29a189f7ee7f0bd767cf30d024ca5d478e93041ab692c649d995",
+        "scopedProjectSha256": {
+          "project-01.html": "25439850b6ee9bfc974b87bb6f152f665488093559859e9477911e0268cfc68e",
+          "project-04.html": "5513e542e60d77fb9e8c32c06ef4df1aa2b5da5528fd92c3d2eb38913e37f235",
+          "project-06.html": "54da627e5ac96a6a4fb903ca6a1705981f203b48ab73fc1de3f671e48aba86e4",
+          "project-03.html": "6e70412218e4b2a92e7ae694b9a7dbde9c6e782665ea58b03f87671fbc5c036e"
+        },
+        "scopedProjectAssetUrls": [],
+        "scopedProjectAssetSha256": {},
+        "configInputSha256": "95f46e1e0bed755b9dcf58765720a624d86d62405c8899b030bdb96dc83380e0",
+        "qaBuiltAt": "2026-09-22T15:07:38.810Z"
+      }
     },
     {
       "slug": "conversifi",
