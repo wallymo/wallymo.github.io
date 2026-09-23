@@ -249,7 +249,7 @@
       "Role proof lane",
       "Domain proof lane"
     ],
-    "intro": "Here are a few things I've been working on lately. I picked the projects that may be relevant to this role. The resume covers my background in more detail."
+    "intro": "Your team is building [specific product or workflow]. My resume covers [two relevant experience areas]. The projects below show that work in practice through [specific selected-project proof] and [specific selected-project proof], which speak to [the role's central challenge]."
   },
   "contact": {
     "prompt": "Hiring for this role and proof lane? Email is the fastest way to reach me.",
