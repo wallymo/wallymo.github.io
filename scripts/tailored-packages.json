@@ -4883,41 +4883,9 @@
       ],
       "designConceptCssPath": "real-chemistry-product-designer/design-concept.css",
       "resumePdfPath": "output/pdf/Wally-Mostafa-Real-Chemistry-Product-Designer-Resume.pdf",
-      "publishStatus": "live-verified",
+      "publishStatus": "local-only",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-09-22T23:01:55.883Z",
-      "verification": {
-        "verifiedAt": "2026-09-22T23:04:13.214Z",
-        "routeUrl": "https://wallymo.github.io/real-chemistry-product-designer/",
-        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-Real-Chemistry-Product-Designer-Resume.pdf",
-        "configUrl": "https://wallymo.github.io/scripts/packages/real-chemistry-product-designer.json",
-        "publicBase": "https://wallymo.github.io/",
-        "publishRepository": "wallymo/wallymo.github.io",
-        "designConceptCssUrl": "https://wallymo.github.io/real-chemistry-product-designer/design-concept.css",
-        "designConceptCssSha256": "b0888b6dc13bd1e5526259a5435dd84911b2007f68715d23d600bbc14ee7c9fd",
-        "projectUrls": [
-          "https://wallymo.github.io/real-chemistry-product-designer/project-05.html",
-          "https://wallymo.github.io/real-chemistry-product-designer/project-01.html",
-          "https://wallymo.github.io/real-chemistry-product-designer/project-04.html",
-          "https://wallymo.github.io/real-chemistry-product-designer/project-03.html"
-        ],
-        "redirectUrls": [],
-        "configSha256": "73cf784907e1ee5248ff688b31fa461b43e35470a93ec64db9dacdf79f9bc317",
-        "pdfSha256": "30e8c5e2ea3bd86cb9a627bc99e2695f843eec7e4ed8e1eb031d447710c43055",
-        "resumeBaseProfilesUrl": "https://wallymo.github.io/scripts/resume-base-profiles.json",
-        "resumeBaseProfilesSha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108",
-        "routeSha256": "d786a7e474627198930c651da2f063fd177d946aa96ea1ab685f9c9568f1e5be",
-        "scopedProjectSha256": {
-          "project-05.html": "247653ccad328b9d978d33245391709df6c1ebc84ac82d172355ee858a514df7",
-          "project-01.html": "bc5c0372ecea361a4509b7e28e04200724f6cc25266a1b42b1a385388a24b5b9",
-          "project-04.html": "72f945fb4c3bb739bbeb549e60febda3300447efa419f891df0a04c0051e043b",
-          "project-03.html": "9d5478a0784b80d943f719395e2b0ab2a7a9afb309f4924aac197756242eb17d"
-        },
-        "scopedProjectAssetUrls": [],
-        "scopedProjectAssetSha256": {},
-        "configInputSha256": "9bf082562b9598499e71173b5e809196f1fcda84891550c64c1ccde5ea50b127",
-        "qaBuiltAt": "2026-09-22T23:01:55.883Z"
-      }
+      "builtAt": "2026-09-23T00:23:04.161Z"
     },
     {
       "workflowVersion": 2,
@@ -4954,41 +4922,9 @@
       ],
       "designConceptCssPath": "real-chemistry-product-designer-experience/design-concept.css",
       "resumePdfPath": "output/pdf/Wally-Mostafa-Real-Chemistry-Product-Designer-2026-Resume.pdf",
-      "publishStatus": "live-verified",
+      "publishStatus": "local-only",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-09-22T23:25:02.904Z",
-      "verification": {
-        "verifiedAt": "2026-09-22T23:26:38.153Z",
-        "routeUrl": "https://wally-mostafa.github.io/real-chemistry-product-designer-experience/",
-        "resumePdfUrl": "https://wally-mostafa.github.io/output/pdf/Wally-Mostafa-Real-Chemistry-Product-Designer-2026-Resume.pdf",
-        "configUrl": "https://wally-mostafa.github.io/scripts/packages/real-chemistry-product-designer-experience.json",
-        "publicBase": "https://wally-mostafa.github.io/",
-        "publishRepository": "wally-mostafa/wally-mostafa.github.io",
-        "designConceptCssUrl": "https://wally-mostafa.github.io/real-chemistry-product-designer-experience/design-concept.css",
-        "designConceptCssSha256": "73052eae58d446422f0ff921361877b1ca4e0062ec7ee25daace39b4a4791195",
-        "projectUrls": [
-          "https://wally-mostafa.github.io/real-chemistry-product-designer-experience/project-05.html",
-          "https://wally-mostafa.github.io/real-chemistry-product-designer-experience/project-01.html",
-          "https://wally-mostafa.github.io/real-chemistry-product-designer-experience/project-04.html",
-          "https://wally-mostafa.github.io/real-chemistry-product-designer-experience/project-03.html"
-        ],
-        "redirectUrls": [],
-        "configSha256": "39c9da1fc3c4f0c845c0d9157432406d58e32a654d8acab154386f5d838390dd",
-        "pdfSha256": "8e5c546640fc1802b594c2501df1701aee909bf91cd982a150a0f5d19a8c699d",
-        "resumeBaseProfilesUrl": "https://wally-mostafa.github.io/scripts/resume-base-profiles.json",
-        "resumeBaseProfilesSha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108",
-        "routeSha256": "e79296949c56666b342e3aed6c241c976a0a2fba9a8b17516f306094c8311077",
-        "scopedProjectSha256": {
-          "project-05.html": "89e0c22971dc2338cc0136efd15eb545032136aa9576102d7447ad645cd8c09f",
-          "project-01.html": "cd472837ff17b05d4cb8a860edd20956c574166877123a53808e8505401c7528",
-          "project-04.html": "85bab6438408a8ab792ae06448d95f298b6f95b8165dd09c4383f337ee43f8c0",
-          "project-03.html": "c7091b5332bd1af3de9961506fcf2c57beb7d3e916c11c4aaa32940aa47dec0f"
-        },
-        "scopedProjectAssetUrls": [],
-        "scopedProjectAssetSha256": {},
-        "configInputSha256": "3a3f8fa9d857ef76092a69d464d5ee41359f377c4c3c3ac5379f6657fd406f5a",
-        "qaBuiltAt": "2026-09-22T23:25:02.904Z"
-      }
+      "builtAt": "2026-09-23T00:23:29.850Z"
     },
     {
       "workflowVersion": 2,

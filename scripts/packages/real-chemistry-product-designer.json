@@ -468,7 +468,7 @@
       "Design systems",
       "Healthcare AI"
     ],
-    "intro": "Here are four projects that may be relevant to the Product Designer role at Real Chemistry. My resume has the broader career context."
+    "intro": "My resume connects enterprise UX, healthcare marketing, and practical AI implementation. The selected work shows how that experience applies to Real Chemistry's HCP platform: making dense information usable, helping govern a 500-component design system, and designing pharma AI tools that make evidence and human review visible."
   },
   "contact": {
     "prompt": "Email and my resume are below.",
@@ -498,8 +498,8 @@
   },
   "qa": {
     "status": "qa-passed",
-    "builtAt": "2026-09-22T23:01:55.883Z",
-    "configInputSha256": "9bf082562b9598499e71173b5e809196f1fcda84891550c64c1ccde5ea50b127",
+    "builtAt": "2026-09-23T00:23:04.161Z",
+    "configInputSha256": "fcb59f5a3c2226a4d6a60f164a8e4940ecf1dca05ea36684506485a5358d0ca6",
     "sourceResumeSha256": "309a2ea377c45481d6826da8559d707319f85f53e6d68b3e10a537d1864e91e7",
     "resumeFoundation": {
       "id": "wally-mostafa-resume-2026-07-03",
@@ -520,9 +520,9 @@
       "registrySha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108"
     },
     "artifactHashes": {
-      "routeSha256": "d786a7e474627198930c651da2f063fd177d946aa96ea1ab685f9c9568f1e5be",
+      "routeSha256": "5faa259e8a8b295c88c8c54f39e4c73195908f89ac5f18d66a2df4c9f9b0ee27",
       "designConceptCssSha256": "b0888b6dc13bd1e5526259a5435dd84911b2007f68715d23d600bbc14ee7c9fd",
-      "resumePdfSha256": "30e8c5e2ea3bd86cb9a627bc99e2695f843eec7e4ed8e1eb031d447710c43055",
+      "resumePdfSha256": "facd0c18e477bd6bb176583e9d8d2c7497b3c34705f73c96ff6dc17242223940",
       "coverLetterPdfSha256": null,
       "coverLetterMarkdownSha256": null,
       "scopedProjectSha256": {
@@ -702,9 +702,9 @@
     "humanizer": {
       "status": "passed",
       "version": "2.2.0",
-      "mode": "surface-only",
-      "reviewedAt": "2026-09-22T23:01:23.837Z",
-      "copySha256": "d5f029893efc39c4bf09b704eebda2e1f8e49bd9ef522b44559149c6f681801b",
+      "mode": "rewrite-requested",
+      "reviewedAt": "2026-09-23T00:21:58.714Z",
+      "copySha256": "48d417872d9026ceed1ad4009f661d3ff167c5ff9d8e9b2a4dbc83df6235dc8e",
       "reviewMethod": "humanizer-skill",
       "semanticPassAttested": true,
       "staticChecksPassed": true
@@ -769,17 +769,14 @@
   },
   "copyReview": {
     "humanizerVersion": "2.2.0",
-    "mode": "surface-only",
+    "mode": "rewrite-requested",
     "status": "passed",
-    "reviewedAt": "2026-09-22T23:01:23.837Z",
-    "copySha256": "d5f029893efc39c4bf09b704eebda2e1f8e49bd9ef522b44559149c6f681801b",
+    "reviewedAt": "2026-09-23T00:21:58.714Z",
+    "copySha256": "48d417872d9026ceed1ad4009f661d3ff167c5ff9d8e9b2a4dbc83df6235dc8e",
     "preserved": [
-      "content",
-      "structure",
-      "claims",
-      "ending"
+      "claims"
     ],
-    "rewriteAuthorized": false,
+    "rewriteAuthorized": true,
     "reviewMethod": "humanizer-skill",
     "semanticPassAttested": true,
     "staticChecksPassed": true,
