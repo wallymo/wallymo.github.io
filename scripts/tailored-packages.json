@@ -525,6 +525,45 @@
       }
     },
     {
+      "workflowVersion": 2,
+      "contractRevision": 7,
+      "slug": "ascertain-expand-product-manager",
+      "roleTitle": "Ascertain Expand Product Manager",
+      "artifactStem": "Ascertain-Expand-Product-Manager",
+      "configPath": "scripts/packages/ascertain-expand-product-manager.json",
+      "targetLane": "ai-product-implementation",
+      "evidenceMode": "balanced",
+      "fitClass": "stretch",
+      "positioningLane": "ai-product-implementation",
+      "bridgeType": "level-transfer",
+      "applicationStrategy": "approved-stretch",
+      "resumeBaseMode": "ai-product-implementation",
+      "resumeBaseLeadProfile": "ai-product-implementation",
+      "resumeBaseAction": "tailor-to-jd",
+      "accountPresentation": "consolidated",
+      "resumeBaseProfiles": [
+        {
+          "id": "ai-product-implementation",
+          "version": 1
+        }
+      ],
+      "routeMode": "scoped-projects",
+      "designConcept": "editorial-proof",
+      "publicBase": "https://wallymo.github.io/",
+      "publishRepository": "wallymo/wallymo.github.io",
+      "selectedProjects": [
+        "project-01.html",
+        "project-04.html",
+        "project-06.html",
+        "project-03.html"
+      ],
+      "designConceptCssPath": "ascertain-expand-product-manager/design-concept.css",
+      "resumePdfPath": "output/pdf/Wally-Mostafa-Ascertain-Expand-Product-Manager-Resume.pdf",
+      "publishStatus": "local-only",
+      "qaStatus": "qa-passed",
+      "builtAt": "2026-09-24T02:09:01.226Z"
+    },
+    {
       "slug": "avalara-senior-program-manager",
       "roleTitle": "Avalara Senior Program Manager",
       "fitClass": "unclassified",

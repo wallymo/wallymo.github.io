@@ -1,0 +1,936 @@
+{
+  "workflowVersion": 2,
+  "contractRevision": 7,
+  "slug": "ascertain-expand-product-manager",
+  "roleTitle": "Ascertain Expand Product Manager",
+  "artifactStem": "Ascertain-Expand-Product-Manager",
+  "fitClass": "stretch",
+  "routeMode": "scoped-projects",
+  "selectedProjects": [
+    "project-01.html",
+    "project-04.html",
+    "project-06.html",
+    "project-03.html"
+  ],
+  "job": {
+    "company": "Ascertain",
+    "roleTitle": "Product Manager, Expand",
+    "jobId": "not-provided",
+    "jobUrl": "not-provided",
+    "sourceChannel": "user-provided job description",
+    "dateCaptured": "2026-09-23",
+    "location": "not-provided",
+    "employmentType": "not-provided",
+    "atsVendor": "unknown",
+    "rawJd": "Meet Ascertain\n\nAscertain is building AI agents to automate the administrative work that burdens care teams. We are in major health systems and large specialty groups, saving hundreds of staff hours every week.\n\nOur backers include Northwell Health, New York's largest health system, and Deerfield Management, a leading healthcare investment firm.\n\nTogether, we're on a mission to restore time, trust, and focus to the people who keep healthcare running. Our work is urgent because our customers rely on us to drive financial resilience and operational clarity in a system under strain.\n\nThe Role\n\nYou'll be working on the Expand team, focusing on launching Ascertain into new product areas. You'll own which workflows we take on, in what order, and the product features required to deliver them. You'll spend real time inside doctor's offices, watching people do this work manually and finding where it breaks, then turn what you learn into a product the next hundred customers can use.\n\nPrior authorization is the workflow we understand best, so it's where you'll start and learn how our system behaves.\n\nYou'll report to the product lead for Expand. Day to day you'll work with engineers, a designer, and product ops, alongside the forward-deployed engineers and the implementations team who sit in front of customers.\n\nWhat You'll Do\n- Own a set of workflows end to end, including the outcome for the practice after launch.\n- Run discovery and shadowing sessions to understand our customers' operations and then make the case for what's worth building.\n- Decide which parts of each build become product and which stay custom for one practice, with product engineering and the forward-deployed team.\n- Design for the capabilities of the future while considering where humans need to be involved today; delivering value for our partners while collecting data for future automation.\n- Write the acceptance criteria and own the rollout, including the parts that go wrong.\n\nRequired\n- 4+ years in product management where you set the roadmap. At least 2 of those years working on software sold into a single industry (ex. healthcare, legal, logistics, construction or similar).\n- You have replaced a manual process with software. You sat with the people doing the job by hand, worked out what the software should do instead, and shipped it.\n- Experience leveraging data and feedback to drive product improvements.\n- You deal with stakeholders gracefully, including pushing back on a customer request in a way that builds trust.\n- You can identify when a technical approach won't meet customer needs and help identify alternatives.\n- Can draft clear briefs, specs, memos, etc. that remove the need for meetings.\n\nPreferred\n- Prior authorization, revenue cycle or specialty healthcare experience.\n- Early-stage startup experience.\n- A design or engineering background.\n- You've shipped a product built on language models.\n\nWhat Will Help You Thrive\n- Healthcare, revenue cycle, or prior authorization exposure.\n- Early-stage startup experience.\n- Prior design or engineering background.\n- Experience with AI or LLM products.\n\nWhy Ascertain? Make a real difference: Your work will directly impact healthcare organizations and improve patient care."
+  },
+  "classification": {
+    "targetLane": "ai-product-implementation",
+    "evidenceMode": "balanced",
+    "primarySource": "The resume supports product strategy, client discovery, research, AI workflow design, roadmap input, and regulated healthcare delivery. It does not document four years owning a PM roadmap, two years on software sold into one industry, or a shipped replacement for a manual practice process with post-launch ownership.",
+    "supportingSource": "The portfolio shows a functional pharma claims-review POC, an enterprise research practice, and the Digital Experience Audit workflow. None documents rollout inside a medical practice.",
+    "hardGateStatus": "fail",
+    "hardGates": [
+      {
+        "gate": "At least four years in product management setting the roadmap",
+        "status": "fail",
+        "requirementId": "four-years-pm-roadmap",
+        "evidence": "The current product-strategy role began in July 2023. Earlier Kinesso work shaped roadmap priorities from UX research, but direct PM roadmap ownership for four years is not documented."
+      },
+      {
+        "gate": "At least two years on software sold into one industry",
+        "status": "fail",
+        "requirementId": "two-years-vertical-software",
+        "evidence": "Current pharma AI tools and enterprise marketing software are relevant, but the record does not establish two years of PM ownership for software sold into one industry."
+      },
+      {
+        "gate": "Replace a manual process with software after observing the people doing it and ship the result",
+        "status": "fail",
+        "requirementId": "manual-process-shipped-replacement",
+        "evidence": "DXA is a repeatable workflow and Claims Detector is a working POC; the record does not establish all parts of the stated observe-replace-ship requirement."
+      }
+    ]
+  },
+  "requirements": [
+    {
+      "id": "four-years-pm-roadmap",
+      "text": "Bring four or more years in product management setting a roadmap.",
+      "priority": "hard-gate",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "proofIds": [],
+      "destinations": [
+        "application-answer"
+      ],
+      "resumeTerms": [
+        "four years setting a product roadmap"
+      ],
+      "matchMode": "not-supported"
+    },
+    {
+      "id": "two-years-vertical-software",
+      "text": "Spend at least two of those PM years on software sold into a single industry.",
+      "priority": "hard-gate",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "proofIds": [],
+      "destinations": [
+        "application-answer"
+      ],
+      "resumeTerms": [
+        "two years on sold single-industry software"
+      ],
+      "matchMode": "not-supported"
+    },
+    {
+      "id": "manual-process-shipped-replacement",
+      "text": "Observe people doing a manual process, replace it with software, and ship the result.",
+      "priority": "hard-gate",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "proofIds": [],
+      "destinations": [
+        "application-answer"
+      ],
+      "resumeTerms": [
+        "shipped replacement for manual practice work"
+      ],
+      "matchMode": "not-supported"
+    },
+    {
+      "id": "discovery-and-shadowing",
+      "text": "Run customer discovery and shadowing to understand operations and choose what to build.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Kinesso research included participant interviews, prototype testing, beta groups, behavioral analytics, and shared findings.",
+        "Direct in-office shadowing of clinical administrative staff is not documented."
+      ],
+      "proofIds": [
+        "kinesso-06",
+        "one-block-away-01"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "interviews",
+        "research",
+        "client discovery"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "data-feedback-improvement",
+      "text": "Use data and customer feedback to improve products.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Kinesso research and adoption data informed roadmap priorities for navigation, dashboards, personalization, and product support."
+      ],
+      "proofIds": [
+        "kinesso-02",
+        "kinesso-06"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "adoption data",
+        "roadmap priorities",
+        "behavioral analytics"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "product-versus-custom",
+      "text": "Decide which customer workflow features should become repeatable product and which remain custom.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Current work turns client questions into testable product surfaces and roadmap decisions.",
+        "Kinesso design-system work made product patterns repeatable across brands, but a specific product-versus-custom decision is not documented."
+      ],
+      "proofIds": [
+        "one-block-away-01",
+        "kinesso-04"
+      ],
+      "destinations": [
+        "summary",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "requirements",
+        "roadmap decisions",
+        "repeatable workflow"
+      ],
+      "matchMode": "contextual"
+    },
+    {
+      "id": "human-review-and-future-automation",
+      "text": "Deliver useful workflow automation while keeping people involved where review is needed.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Claims Detector identifies claims and evidence gaps, pre-populates annotations, and preserves human review before MLR submission."
+      ],
+      "proofIds": [
+        "hedgehox-02",
+        "hedgehox-03"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "human review",
+        "claim review",
+        "workflow"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "rollout-and-practice-outcomes",
+      "text": "Own workflow rollout and the practice outcome after launch, including failure cases.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Current work includes demos, client iteration, implementation decisions, and working prototypes.",
+        "Kinesso work used adoption data from enterprise products. Practice-level rollout and outcomes are not documented."
+      ],
+      "proofIds": [
+        "one-block-away-04",
+        "kinesso-02"
+      ],
+      "destinations": [
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "client iteration",
+        "adoption data"
+      ],
+      "matchMode": "contextual"
+    },
+    {
+      "id": "stakeholder-trust-and-pushback",
+      "text": "Handle customer requests and stakeholder pushback while preserving trust.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Eight years of pharma account leadership and regulated delivery show sustained stakeholder management.",
+        "A specific pushback example is not documented."
+      ],
+      "proofIds": [
+        "account-management-01",
+        "account-management-03"
+      ],
+      "destinations": [
+        "skills",
+        "experience"
+      ],
+      "resumeTerms": [
+        "client strategy",
+        "stakeholders"
+      ],
+      "matchMode": "contextual"
+    },
+    {
+      "id": "technical-alternatives",
+      "text": "Recognize when a technical approach misses a customer need and work with technical partners on alternatives.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "Current product work covers workflow logic, implementation decisions, and handoff.",
+        "A documented decision reversing a failed technical approach is not present."
+      ],
+      "proofIds": [
+        "one-block-away-04",
+        "hedgehox-03"
+      ],
+      "destinations": [
+        "skills",
+        "experience"
+      ],
+      "resumeTerms": [
+        "AI workflow design",
+        "working prototype"
+      ],
+      "matchMode": "contextual"
+    },
+    {
+      "id": "briefs-specs-memos",
+      "text": "Write clear briefs and requirements that let teams move without extra meetings.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Pharma account work translated strategy into briefs, production requirements, timelines, and MLR-ready deliverables.",
+        "Current product work converts agency needs into product requirements."
+      ],
+      "proofIds": [
+        "account-management-03",
+        "hedgehox-03"
+      ],
+      "destinations": [
+        "skills",
+        "experience"
+      ],
+      "resumeTerms": [
+        "briefs",
+        "requirements"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "prior-authorization-exposure",
+      "text": "Bring prior authorization, revenue cycle, or specialty healthcare experience.",
+      "priority": "preferred",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "proofIds": [],
+      "destinations": [
+        "application-answer"
+      ],
+      "resumeTerms": [
+        "prior authorization product ownership"
+      ],
+      "matchMode": "not-supported"
+    },
+    {
+      "id": "startup-design-and-llm",
+      "text": "Bring early-stage work, design or engineering background, and experience with AI or LLM products.",
+      "priority": "preferred",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "One Block Away founder work covers client-led AI POCs and workflow design.",
+        "Kinesso and Heartbeat provide design and research leadership."
+      ],
+      "proofIds": [
+        "one-block-away-01",
+        "hedgehox-02",
+        "kinesso-01"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "AI product",
+        "product design",
+        "working POC"
+      ],
+      "matchMode": "recognized-equivalent"
+    }
+  ],
+  "fitGate": {
+    "resumeBase": {
+      "mode": "ai-product-implementation",
+      "sourceProfiles": [
+        {
+          "id": "ai-product-implementation",
+          "version": 1
+        }
+      ],
+      "leadProfileId": "ai-product-implementation",
+      "accountPresentation": "consolidated",
+      "action": "tailor-to-jd",
+      "rationale": "The hiring center is product discovery, workflow decisions, AI implementation, research, and rollout judgment. Healthcare client leadership supports this work but does not turn the role into an account-leadership or hybrid resume."
+    },
+    "supportedOverlap": [
+      "Current work turns client and pharma agency needs into requirements, governed AI workflows, working POCs, and roadmap decisions.",
+      "Kinesso research included interviews, testing, behavioral analytics, and adoption data across a 20+ product suite used by 7,000+ people.",
+      "Claims Detector and Scope Generator show structured review, human decision points, and administrative workflow design.",
+      "Eight years of pharma account leadership support client trust, clear briefs, and cross-functional regulated delivery."
+    ],
+    "unsupportedRequirements": [
+      "Four documented years in product management owning the roadmap.",
+      "Two documented years managing software sold into one industry.",
+      "A documented observe-replace-ship example for manual practice work.",
+      "Prior authorization, revenue cycle, or specialty practice operations."
+    ],
+    "actualMismatches": [],
+    "missingEvidence": [
+      "Formal PM roadmap tenure at the requested depth.",
+      "Commercial sale and PM ownership history for a vertical software product.",
+      "Clinical office shadowing tied to a shipped replacement and measured practice outcome.",
+      "Post-launch rollout and failure-case ownership in a healthcare practice."
+    ],
+    "coverLetterBridge": {
+      "status": "not-credible",
+      "rationale": "A cover letter cannot establish the required PM tenure, vertical software history, or shipped manual-process replacement. This approved stretch package leaves those gaps explicit."
+    },
+    "recommendation": "Proceed only as the user-approved stretch. Lead with research, regulated workflow design, governed AI POCs, data-informed priorities, and client communication. Do not claim prior authorization ownership, four years as a PM, vertical SaaS sales, or practice rollout outcomes."
+  },
+  "positioning": {
+    "laneId": "ai-product-implementation",
+    "targetIdentity": "product and experience strategy lead",
+    "employerNeed": "Find administrative workflows worth building, turn field observations into repeatable software, and keep people involved while automation matures.",
+    "bridgeType": "level-transfer",
+    "applicationStrategy": "approved-stretch",
+    "bridgeThesis": "customer research and human-reviewed AI workflows",
+    "proofIds": [
+      "hedgehox-02",
+      "kinesso-06",
+      "kinesso-03"
+    ],
+    "remainingGap": "The record does not prove four years of PM roadmap ownership, two years on sold vertical software, or a shipped replacement for manual practice work."
+  },
+  "coverLetter": null,
+  "resume": {
+    "foundationId": "wally-mostafa-resume-2026-07-03",
+    "foundationVersion": 4,
+    "compositionMode": "foundation-complete",
+    "layoutDensity": "compact",
+    "roleContinuationBreaks": [
+      {
+        "roleId": "kinesso",
+        "afterBullet": 3
+      }
+    ],
+    "summary": "Product and experience strategy lead with 15 years spanning healthcare client work and enterprise software. I connect customer research and human-reviewed AI workflows to working tools and roadmap decisions. At Kinesso, interviews and adoption data shaped priorities across 20+ products used by 7,000+ people. My current pharma work covers claim review, intake, and review routing.",
+    "skillIds": [
+      "research-experience-strategy",
+      "product-strategy-poc-delivery",
+      "ai-implementation-workflow-design",
+      "regulated-healthcare-client-delivery"
+    ],
+    "skills": [
+      {
+        "label": "Research & Experience Strategy",
+        "description": "Stakeholder interviews, competitive audits, journey maps, user flows, wireframes, prototypes, usability testing, and research-led product direction"
+      },
+      {
+        "label": "Product Strategy & POC Delivery",
+        "description": "Discovery, scoping, requirements, prototype validation, demo narratives, build-ready logic, and production handoff"
+      },
+      {
+        "label": "AI Implementation & Workflow Design",
+        "description": "Governed LLM/VLM workflows, multimodal review, RAG/knowledge bases, prompt-defined criteria, model orchestration, and human review surfaces"
+      },
+      {
+        "label": "Regulated Healthcare & Client Delivery",
+        "description": "11 years across pharma/healthcare communications, FDA/HIPAA/MLR workflows, HCP/patient UX, client workshops, and stakeholder adoption"
+      }
+    ],
+    "roles": {
+      "hedgehox": [
+        "Translated pharma agency needs into requirements and working AI tools for MLR claim review, brief intake, scoping, review routing, submission capture, and FDA signal monitoring",
+        "Secured an investor for proprietary Claims Detection software by building the functional POC, shaping the demo story, and iterating with investors",
+        "Designed Claims Detector workflows that identify promotional claims, surface evidence gaps, and pre-populate audit-ready annotations before MLR submission",
+        "Designed the full Xenagos Bio startup biopharma website from scratch, including investor-facing structure, scientific positioning, visual direction, and hidden design-system handoff",
+        "Built Scope Generator for pharma agency finance and operations teams to manage regional rate cards, brands, sub-brands, and natural-language scope changes",
+        "Developed FDA Warning Tool concepts that connect warning-letter patterns to content-risk guidance for pharma teams"
+      ],
+      "one-block-away": [
+        "Lead client discovery and workflow mapping, then turn unclear business questions into testable product surfaces, working POCs, demo flows, and roadmap decisions",
+        "Built ListingPal's AI listing-generation POC and landing page, turning basic property inputs into listing copy, social posts, ad copy, styling direction, and MLS/SEO-ready language in under 90 seconds",
+        "Built WeReady's Bailey Intelligence dashboard, translating founder inputs, GitHub signals, source health, risk scoring, and evidence trails into startup-readiness workflows",
+        "Own product strategy, UX, AI workflow design, front-end build, backend logic, demo readiness, and client iteration from first ask through working prototype",
+        "Currently building the website and sponsor strategy for a Tunisia youth soccer program, positioning the project for player advancement, community support, and donor outreach"
+      ],
+      "kinesso": [
+        "Built Kinesso's first UX research practice across 20+ products, including participant recruitment, interviews, prototype testing, beta groups, behavioral analytics, research tooling, shared Figma documentation, and UX checkpoints in project plans",
+        "Led UX research and strategy for a marketing intelligence suite used by 7,000+ people across 22 white-label brands; turned findings and adoption data into roadmap priorities for navigation, dashboards, brand theming, personalization, and product support",
+        "Scaled product design from 2 to 30 across the US and Poland, hiring and staffing designers, leading critiques and quality reviews, and planning scope, resources, and engineering handoff across 20+ products",
+        "Partnered with the Head of Design to create the team's first onboarding program, career roadmaps, coaching structure, and performance review workflows for new and existing employees",
+        "Collaborated on the UX/UI build of Digital Experience Audit, turning channel scoring, benchmarks, recommendations, and client outputs into a repeatable workflow with data visualization",
+        "Led workshops on product discovery, ecosystem mapping, innovation, and user research; expanded the program from Kinesso teams to IPG groups and presented recommendations to executives and clients",
+        "UX lead for research and design on Kanvas, Kinesso's developer-first API services library; partnered with product and engineering on roadmap priorities and with C-suite stakeholders on monetization and go-to-market planning",
+        "Helped shape and govern a design system with 500 components, 140 styles, 300 icons, and 50 personas, including accessibility and design quality standards; the work earned 5 Indigo Gold, 4 Indigo Silver, and Red Dot recognition",
+        "Led a three-person team to second place in Kinesso's inaugural innovation challenge with an accessibility panel concept; later advised the next cohort and contributed to accessibility playbook and keyboard interaction standards"
+      ],
+      "omnicom": [
+        "Supported oncology accounts as a freelance UX designer, combining UX design and account-management experience to strengthen regulated healthcare work",
+        "Championed UX best practices across account, strategy, creative, and delivery conversations, translating brand goals into clearer user flows, content structure, and digital recommendations"
+      ],
+      "heartbeat": [
+        "Led UX research and experience strategy for pharma and healthcare work, translating stakeholder input, competitive audits, and user needs into digital product direction",
+        "Created journey maps, site maps, user flows, wireframes, and prototypes for patient, HCP, and internal brand-team experiences across regulated healthcare programs",
+        "Partnered with strategy, creative, account, and engineering teams to move UX recommendations from research findings into build-ready product and campaign experiences",
+        "Led research and creation of an oncology-wide design system for interactive visual aids at a major pharma company, with the goal of improving field usability and development efficiency",
+        "Member of Heartbeat's ETCH group, which ran business-driven sprints exploring voice, AR/VR, and facial recognition for agency and client use"
+      ],
+      "account-management": [
+        "8 years managing Fortune 500 pharma and healthcare clients and brand budgets up to $20M across CNS/neurology, psychiatry, cardiovascular/metabolic, and sleep/wakefulness brands including NUVIGIL, Namenda XR, Lipitor, and Zoloft",
+        "One of two account consumer leads on FCB Health's largest pharma account across all verticals: TV, radio, digital, gaming, Times Square, unbranded campaigns, brand planning, and MLR review",
+        "Translated client and brand strategy into briefs, creative feedback, production requirements, timelines, and MLR-ready deliverables across account, creative, UX, and development teams"
+      ]
+    },
+    "sourceBulletIds": {
+      "hedgehox": [
+        "hedgehox-03",
+        "hedgehox-01",
+        "hedgehox-02",
+        "hedgehox-04",
+        "hedgehox-05",
+        "hedgehox-06"
+      ],
+      "one-block-away": [
+        "one-block-away-01",
+        "one-block-away-02",
+        "one-block-away-03",
+        "one-block-away-04",
+        "one-block-away-05"
+      ],
+      "kinesso": [
+        "kinesso-06",
+        "kinesso-02",
+        "kinesso-01",
+        "kinesso-05",
+        "kinesso-03",
+        "kinesso-07",
+        "kinesso-08",
+        "kinesso-04",
+        "kinesso-09"
+      ],
+      "omnicom": [
+        "omnicom-01",
+        "omnicom-02"
+      ],
+      "heartbeat": [
+        "heartbeat-01",
+        "heartbeat-02",
+        "heartbeat-03",
+        "heartbeat-04",
+        "heartbeat-05"
+      ],
+      "account-management": [
+        "account-management-01",
+        "account-management-02",
+        "account-management-03"
+      ]
+    },
+    "roleTitleOverrides": {
+      "hedgehox": "AI Implementation Lead"
+    }
+  },
+  "hero": {
+    "eyebrow": "Ascertain | Selected Work",
+    "tags": [
+      "Regulated AI workflows",
+      "Enterprise research",
+      "Audit product"
+    ],
+    "intro": "I've selected a few projects that may be relevant to Ascertain's Expand team. They cover regulated review workflows, user research, and a repeatable audit product. My resume has the broader background."
+  },
+  "contact": {
+    "prompt": "Thanks for looking through the work. You can reach me by email or open the resume below.",
+    "signoff": "Healthcare workflow and product research"
+  },
+  "route": {
+    "presentation": "showcase",
+    "heroIntent": "resume-support",
+    "showcaseSections": [
+      "chapters",
+      "capabilities"
+    ],
+    "workHeading": "Selected work.",
+    "contactHeading": "Thanks for taking a look.",
+    "designConcept": "editorial-proof"
+  },
+  "copyReview": {
+    "humanizerVersion": "2.2.0",
+    "mode": "surface-only",
+    "status": "passed",
+    "reviewedAt": "2026-09-24T02:08:32.653Z",
+    "copySha256": "830cadc5f8d779ebef8bd594bc4d6c33a929fc0e448251423502dfabe69913b4",
+    "preserved": [
+      "content",
+      "structure",
+      "claims",
+      "ending"
+    ],
+    "rewriteAuthorized": false,
+    "reviewMethod": "humanizer-skill",
+    "semanticPassAttested": true,
+    "staticChecksPassed": true,
+    "finalAntiAiPass": true,
+    "remainingTells": []
+  },
+  "constraints": {
+    "doNotClaim": [
+      "Four years of Product Manager roadmap ownership",
+      "Two years managing software sold into one industry",
+      "Direct prior authorization or revenue cycle product ownership",
+      "Clinical practice shadowing and rollout ownership",
+      "Shipped replacement for manual clinical office work",
+      "Measured practice outcomes after launch",
+      "Conventional software engineering or ML training ownership"
+    ],
+    "blockedTerms": [
+      "prior authorization expert",
+      "revenue cycle product manager",
+      "owned practice rollout",
+      "shipped clinical workflow automation",
+      "four years as a product manager",
+      "vertical SaaS product owner"
+    ]
+  },
+  "privacy": {
+    "publicSafe": true,
+    "notes": "Only the public job description supplied by the user and sanitized resume and portfolio evidence are recorded. Private eligibility, application answers, recruiter details, compensation boundaries, and submission state are excluded."
+  },
+  "qa": {
+    "status": "qa-passed",
+    "builtAt": "2026-09-24T02:09:01.226Z",
+    "configInputSha256": "e1fd84ab0d7aee8cfb5e41f2ebe0b37fdcf4c31e42130ecc9aa705f29f10617f",
+    "sourceResumeSha256": "309a2ea377c45481d6826da8559d707319f85f53e6d68b3e10a537d1864e91e7",
+    "resumeFoundation": {
+      "id": "wally-mostafa-resume-2026-07-03",
+      "sourcePdfSha256": "f9b05b6c3c134262b1af6c5734363daf4385cf335407a139779a37d138adf1aa"
+    },
+    "resumeBase": {
+      "mode": "ai-product-implementation",
+      "sourceProfiles": [
+        {
+          "id": "ai-product-implementation",
+          "version": 1
+        }
+      ],
+      "leadProfileId": "ai-product-implementation",
+      "accountPresentation": "consolidated",
+      "action": "tailor-to-jd",
+      "registryVersion": 1,
+      "registrySha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108"
+    },
+    "artifactHashes": {
+      "routeSha256": "d1cdda662feed39d5c56b6d983560175976738037dac4cdd005ade7e5905d5ed",
+      "designConceptCssSha256": "b0888b6dc13bd1e5526259a5435dd84911b2007f68715d23d600bbc14ee7c9fd",
+      "resumePdfSha256": "d67066b43f8c33d43a346a678cb586cc7aec1e0ae23567ef2411f1e1904467c6",
+      "coverLetterPdfSha256": null,
+      "coverLetterMarkdownSha256": null,
+      "scopedProjectSha256": {
+        "project-01.html": "5d610b874906cc77c2c4a53a7d37490f4be2f39f8c9dcf8f1639d1267a1341ed",
+        "project-04.html": "31396823fe7bd73d45fd4beb2458dc5aa63f71c8a1a294d71eb1bdf1eff4f3d5",
+        "project-06.html": "5c6382faeeb62d50a3962202ab4ebeeda422c3c4169cee8e55e4738960c9a8af",
+        "project-03.html": "395990a0a7d9bf10c2f15760a5307bed97d11bb9fcd2143472ab8e4f4f9cf739"
+      },
+      "scopedProjectAssetSha256": {}
+    },
+    "renderer": {
+      "browser": {
+        "name": "chrome-headless-shell",
+        "version": "Google Chrome for Testing 153.0.8010.12"
+      },
+      "htmlPath": "tmp/tailored-resumes/ascertain-expand-product-manager.html",
+      "pdfPath": "output/pdf/Wally-Mostafa-Ascertain-Expand-Product-Manager-Resume.pdf",
+      "fontWait": true,
+      "fontProfile": "portfolio-pdf"
+    },
+    "coverLetterRenderer": null,
+    "coverLetter": null,
+    "ats": {
+      "ok": true,
+      "pdfPath": "output/pdf/Wally-Mostafa-Ascertain-Expand-Product-Manager-Resume.pdf",
+      "pageCount": 2,
+      "fileSize": 80784,
+      "annotations": [
+        {
+          "page": 1,
+          "uri": "mailto:wmostafa12@gmail.com"
+        },
+        {
+          "page": 1,
+          "uri": "https://linkedin.com/in/wallymo"
+        },
+        {
+          "page": 1,
+          "uri": "https://wallymo.github.io/ascertain-expand-product-manager/"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/6748"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/4629"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.red-dot.org/project/dxa-digital-experience-audit-55219"
+        }
+      ],
+      "fontCompatibility": {
+        "type3Fonts": false
+      },
+      "coverage": [
+        {
+          "id": "four-years-pm-roadmap",
+          "requirement": "Bring four or more years in product management setting a roadmap.",
+          "priority": "hard-gate",
+          "evidenceStatus": "none",
+          "matchMode": "not-supported",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "four years setting a product roadmap"
+          ]
+        },
+        {
+          "id": "two-years-vertical-software",
+          "requirement": "Spend at least two of those PM years on software sold into a single industry.",
+          "priority": "hard-gate",
+          "evidenceStatus": "none",
+          "matchMode": "not-supported",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "two years on sold single-industry software"
+          ]
+        },
+        {
+          "id": "manual-process-shipped-replacement",
+          "requirement": "Observe people doing a manual process, replace it with software, and ship the result.",
+          "priority": "hard-gate",
+          "evidenceStatus": "none",
+          "matchMode": "not-supported",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "shipped replacement for manual practice work"
+          ]
+        },
+        {
+          "id": "discovery-and-shadowing",
+          "requirement": "Run customer discovery and shadowing to understand operations and choose what to build.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "interviews",
+            "research",
+            "client discovery"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "data-feedback-improvement",
+          "requirement": "Use data and customer feedback to improve products.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "adoption data",
+            "roadmap priorities",
+            "behavioral analytics"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "product-versus-custom",
+          "requirement": "Decide which customer workflow features should become repeatable product and which remain custom.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "contextual",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "requirements",
+            "roadmap decisions",
+            "repeatable workflow"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "human-review-and-future-automation",
+          "requirement": "Deliver useful workflow automation while keeping people involved where review is needed.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "human review",
+            "claim review",
+            "workflow"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "rollout-and-practice-outcomes",
+          "requirement": "Own workflow rollout and the practice outcome after launch, including failure cases.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "contextual",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "client iteration",
+            "adoption data"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "stakeholder-trust-and-pushback",
+          "requirement": "Handle customer requests and stakeholder pushback while preserving trust.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "contextual",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "client strategy",
+            "stakeholders"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "technical-alternatives",
+          "requirement": "Recognize when a technical approach misses a customer need and work with technical partners on alternatives.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "contextual",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "AI workflow design",
+            "working prototype"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "briefs-specs-memos",
+          "requirement": "Write clear briefs and requirements that let teams move without extra meetings.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "briefs",
+            "requirements"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "prior-authorization-exposure",
+          "requirement": "Bring prior authorization, revenue cycle, or specialty healthcare experience.",
+          "priority": "preferred",
+          "evidenceStatus": "none",
+          "matchMode": "not-supported",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "prior authorization product ownership"
+          ]
+        },
+        {
+          "id": "startup-design-and-llm",
+          "requirement": "Bring early-stage work, design or engineering background, and experience with AI or LLM products.",
+          "priority": "preferred",
+          "evidenceStatus": "direct",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "AI product",
+            "product design",
+            "working POC"
+          ],
+          "missingTerms": []
+        }
+      ],
+      "failures": [],
+      "warnings": []
+    },
+    "humanizer": {
+      "status": "passed",
+      "version": "2.2.0",
+      "mode": "surface-only",
+      "reviewedAt": "2026-09-24T02:08:32.653Z",
+      "copySha256": "830cadc5f8d779ebef8bd594bc4d6c33a929fc0e448251423502dfabe69913b4",
+      "reviewMethod": "humanizer-skill",
+      "semanticPassAttested": true,
+      "staticChecksPassed": true
+    },
+    "route": {
+      "viewports": [
+        {
+          "name": "desktop",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-01",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-04",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-06",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-03",
+          "errors": []
+        },
+        {
+          "name": "mobile",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-01",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-04",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-06",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-03",
+          "errors": []
+        },
+        {
+          "name": "desktop-stack",
+          "errors": []
+        },
+        {
+          "name": "desktop-laptop",
+          "errors": []
+        },
+        {
+          "name": "desktop-short",
+          "errors": []
+        }
+      ],
+      "errors": []
+    }
+  }
+}
