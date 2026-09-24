@@ -559,9 +559,41 @@
       ],
       "designConceptCssPath": "ascertain-expand-product-manager/design-concept.css",
       "resumePdfPath": "output/pdf/Wally-Mostafa-Ascertain-Expand-Product-Manager-Resume.pdf",
-      "publishStatus": "local-only",
+      "publishStatus": "live-verified",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-09-24T02:09:01.226Z"
+      "builtAt": "2026-09-24T02:09:01.226Z",
+      "verification": {
+        "verifiedAt": "2026-09-24T02:10:11.049Z",
+        "routeUrl": "https://wallymo.github.io/ascertain-expand-product-manager/",
+        "resumePdfUrl": "https://wallymo.github.io/output/pdf/Wally-Mostafa-Ascertain-Expand-Product-Manager-Resume.pdf",
+        "configUrl": "https://wallymo.github.io/scripts/packages/ascertain-expand-product-manager.json",
+        "publicBase": "https://wallymo.github.io/",
+        "publishRepository": "wallymo/wallymo.github.io",
+        "designConceptCssUrl": "https://wallymo.github.io/ascertain-expand-product-manager/design-concept.css",
+        "designConceptCssSha256": "b0888b6dc13bd1e5526259a5435dd84911b2007f68715d23d600bbc14ee7c9fd",
+        "projectUrls": [
+          "https://wallymo.github.io/ascertain-expand-product-manager/project-01.html",
+          "https://wallymo.github.io/ascertain-expand-product-manager/project-04.html",
+          "https://wallymo.github.io/ascertain-expand-product-manager/project-06.html",
+          "https://wallymo.github.io/ascertain-expand-product-manager/project-03.html"
+        ],
+        "redirectUrls": [],
+        "configSha256": "e350b2df56a5e91d565015c204bef3670f316e5ba9d903bb02379cc8d47e7399",
+        "pdfSha256": "d67066b43f8c33d43a346a678cb586cc7aec1e0ae23567ef2411f1e1904467c6",
+        "resumeBaseProfilesUrl": "https://wallymo.github.io/scripts/resume-base-profiles.json",
+        "resumeBaseProfilesSha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108",
+        "routeSha256": "d1cdda662feed39d5c56b6d983560175976738037dac4cdd005ade7e5905d5ed",
+        "scopedProjectSha256": {
+          "project-01.html": "5d610b874906cc77c2c4a53a7d37490f4be2f39f8c9dcf8f1639d1267a1341ed",
+          "project-04.html": "31396823fe7bd73d45fd4beb2458dc5aa63f71c8a1a294d71eb1bdf1eff4f3d5",
+          "project-06.html": "5c6382faeeb62d50a3962202ab4ebeeda422c3c4169cee8e55e4738960c9a8af",
+          "project-03.html": "395990a0a7d9bf10c2f15760a5307bed97d11bb9fcd2143472ab8e4f4f9cf739"
+        },
+        "scopedProjectAssetUrls": [],
+        "scopedProjectAssetSha256": {},
+        "configInputSha256": "e1fd84ab0d7aee8cfb5e41f2ebe0b37fdcf4c31e42130ecc9aa705f29f10617f",
+        "qaBuiltAt": "2026-09-24T02:09:01.226Z"
+      }
     },
     {
       "slug": "avalara-senior-program-manager",
