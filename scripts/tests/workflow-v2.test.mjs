@@ -2977,6 +2977,41 @@ test('fit and hard gates stop generation before files are created', () => {
   assert.throws(() => assertBuildAllowed(unresolved), /unresolved/);
 });
 
+test('approved stretch can retain an explicit failed gate without a cover letter', () => {
+  const stretch = setFit(validConfig(), 'stretch');
+  stretch.classification.hardGateStatus = 'fail';
+  stretch.classification.hardGates[0].status = 'fail';
+  stretch.requirements[0].evidenceStatus = 'none';
+  stretch.requirements[0].evidence = [];
+  stretch.requirements[0].proofIds = [];
+  stretch.requirements[0].matchMode = 'not-supported';
+  stretch.fitGate.coverLetterBridge = {
+    status: 'not-credible',
+    rationale: 'A cover letter cannot satisfy the explicit experience requirement.',
+  };
+  stretch.coverLetter = null;
+
+  assert.throws(() => assertBuildAllowed(stretch), /Hard-screen gate failed/);
+  assert.doesNotThrow(() =>
+    assertBuildAllowed(stretch, { allowStretch: true })
+  );
+
+  const unsupportedLetter = structuredClone(stretch);
+  unsupportedLetter.fitGate.coverLetterBridge.status = 'recommended';
+  assert.throws(
+    () => assertBuildAllowed(unsupportedLetter, { allowStretch: true }),
+    /Hard-screen gate failed/
+  );
+
+  const unresolved = structuredClone(stretch);
+  unresolved.classification.hardGateStatus = 'uncertain';
+  unresolved.classification.hardGates[0].status = 'uncertain';
+  assert.throws(
+    () => assertBuildAllowed(unresolved, { allowStretch: true }),
+    /unresolved/
+  );
+});
+
 test('unsupported claims are blocked in recruiter-facing route copy', () => {
   const config = validConfig();
   config.constraints.blockedTerms = ['Python engineering'];

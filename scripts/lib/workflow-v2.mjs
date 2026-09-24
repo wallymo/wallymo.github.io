@@ -3186,9 +3186,16 @@ export function assertBuildAllowed(
   const derivedHardGateStatus = deriveHardGateStatus(
     config.classification.hardGates
   );
+  const approvedFailedGateStretch =
+    config.fitClass === 'stretch' &&
+    allowStretch &&
+    config.positioning?.applicationStrategy === 'approved-stretch' &&
+    config.fitGate?.coverLetterBridge?.status === 'not-credible' &&
+    config.coverLetter === null;
   if (
-    config.classification.hardGateStatus === 'fail' ||
-    derivedHardGateStatus === 'fail'
+    (config.classification.hardGateStatus === 'fail' ||
+      derivedHardGateStatus === 'fail') &&
+    !approvedFailedGateStretch
   ) {
     throw new Error('Hard-screen gate failed. No files were generated.');
   }
