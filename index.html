@@ -150,20 +150,6 @@
 
   nav .nav-cta:hover { background: var(--accent); color: var(--surface) !important; }
 
-  /* ── HERO CANVAS ── */
-  .hero-canvas {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-    pointer-events: none;
-    opacity: 0;
-    transition: opacity 1.2s ease;
-  }
-  .hero-canvas.loaded { opacity: 1; }
-
   /* ── HERO ── */
   .hero {
     min-height: 90vh;
@@ -253,6 +239,74 @@
     opacity: 0;
     transform: translateY(16px);
     animation: fadeUp 0.8s 1.1s ease-out forwards;
+  }
+
+  /* The ask-to-proof scene belongs to the hero, beside its existing copy. */
+  .hero.hero-machine-layout {
+    max-width: 1320px;
+    min-height: calc(100vh - 56px);
+    display: grid;
+    grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+    align-items: center;
+    gap: clamp(2rem, 4.5vw, 4.5rem);
+  }
+  .hero-machine-layout .hero-copy { min-width: 0; }
+  .hero-machine-layout h1 { font-size: clamp(3rem, 5.4vw, 6rem); }
+  .hero-machine-layout .hero-tagline { gap: var(--space-m) var(--space-l); }
+  .hero-machine-layout .hero-tagline span { font-size: clamp(1rem, 1.5vw, 1.2rem); }
+  .hero-machine-layout .hero-intro { max-width: 50ch; }
+  .hero-machine {
+    position: relative;
+    width: 100%;
+    height: clamp(520px, 74vh, 660px);
+    min-width: 0;
+    isolation: isolate;
+    opacity: 0;
+    transform: translateY(16px);
+    animation: fadeUp .8s .7s ease-out forwards;
+  }
+  .hero-machine canvas { position: absolute; inset: 0; display: block; width: 100%; height: 100%; }
+  .hero-machine-pause {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    min-width: 72px;
+    min-height: 44px;
+    padding: 10px;
+    border: 1px solid var(--rule);
+    border-radius: 2px;
+    background: var(--surface);
+    color: var(--ink-muted);
+    cursor: pointer;
+    font: 700 .65rem/1 var(--font-mono, var(--font-body));
+    letter-spacing: .1em;
+    text-transform: uppercase;
+  }
+  .hero-machine-pause:hover,
+  .hero-machine-pause:focus-visible { color: var(--ink); border-color: var(--ink); outline: 2px solid var(--accent); outline-offset: 3px; }
+  .hero-machine-pause svg { width: 9px; height: 9px; fill: currentColor; }
+  .hero-machine-fig {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 5px 0 5px 10px;
+    border-left: 2px solid var(--ink);
+    color: var(--ink-muted);
+    font: 700 .6rem/1 var(--font-mono, var(--font-body));
+    letter-spacing: .12em;
+    text-transform: uppercase;
+  }
+
+  @media (max-width: 900px) {
+    .hero.hero-machine-layout { grid-template-columns: 1fr; min-height: 0; }
+    .hero-machine { max-width: 640px; height: 560px; justify-self: center; }
+  }
+  @media (max-width: 520px) {
+    .hero-machine { height: 380px; }
   }
 
   .btn-primary {
@@ -1163,13 +1217,12 @@
       animation-duration: 0.01ms !important;
       transition-duration: 0.01ms !important;
     }
+    .hero-machine { animation: none; opacity: 1; transform: none; }
   }
 </style>
 <link rel="stylesheet" href="assets/portfolio-revision/revision.css?v=fd5b1d494d20">
 </head>
 <body>
-
-<canvas class="hero-canvas" id="hero-canvas" aria-hidden="true" data-state="fallback"></canvas>
 
 <nav id="nav">
   <a href="index.html" class="name">Wally Mostafa</a>
@@ -1188,20 +1241,27 @@
 </nav>
 
 <!-- HERO -->
-<section class="hero">
-  <div class="hero-eyebrow">AI Implementation &amp; Product Strategy Lead</div>
-  <h1>Wally Mostafa</h1>
-  <div class="hero-tagline">
-    <span>Regulated healthcare AI</span>
-    <span>Enterprise workflow UX</span>
-    <span>Client-facing POCs</span>
+<section class="hero hero-machine-layout">
+  <div class="hero-copy">
+    <div class="hero-eyebrow">AI Implementation &amp; Product Strategy Lead</div>
+    <h1>Wally Mostafa</h1>
+    <div class="hero-tagline">
+      <span>Regulated healthcare AI</span>
+      <span>Enterprise workflow UX</span>
+      <span>Client-facing POCs</span>
+    </div>
+    <p class="hero-intro">
+      I build governed AI tools, demo-ready POCs, and usable product systems for healthcare, pharma, and enterprise teams. Fifteen years across client strategy, UX leadership, and AI implementation means I translate the ask, shape the workflow, and stay with the build.
+    </p>
+    <div class="hero-cta">
+      <a href="#work" class="btn-primary">See the work ↓</a>
+      <a href="resume.html" class="btn-ghost">Resume</a>
+    </div>
   </div>
-  <p class="hero-intro">
-    I build governed AI tools, demo-ready POCs, and usable product systems for healthcare, pharma, and enterprise teams. Fifteen years across client strategy, UX leadership, and AI implementation means I translate the ask, shape the workflow, and stay with the build.
-  </p>
-  <div class="hero-cta">
-    <a href="#work" class="btn-primary">See the work ↓</a>
-    <a href="resume.html" class="btn-ghost">Resume</a>
+  <div class="hero-machine" id="machine">
+    <canvas role="img" aria-label="A client ask becomes a brief, a UX design, and a working AI proof of concept before returning to the client."></canvas>
+    <button class="hero-machine-pause" type="button" aria-pressed="false" aria-label="Pause hero animation"><svg viewBox="0 0 10 10" aria-hidden="true"><rect x="1" y="1" width="3" height="8"/><rect x="6" y="1" width="3" height="8"/></svg><span>Pause</span></button>
+    <div class="hero-machine-fig" aria-hidden="true">Fig. — Ask to proof</div>
   </div>
 </section>
 
@@ -1770,8 +1830,8 @@
 
 <!-- Reading content stays visible; decorative motion is progressively enhanced. -->
 
-<!-- HERO: the original bulbs, scoped to the visible hero. -->
-<script src="assets/portfolio-revision/hero-atmosphere.js?v=b6a7f5250cfe"></script>
+<!-- The machine animates only while its hero is in view. -->
+<script src="assets/portfolio-revision/hero-machine.js?v=2"></script>
 
 <script src="assets/vendor/gsap-3.12.5.min.js"></script>
 <script src="assets/portfolio-revision/revision.js?v=609052b51526"></script>

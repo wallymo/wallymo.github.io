@@ -29,7 +29,7 @@ html, body { overflow-x: clip; }
   line-height: 1.1;
   letter-spacing: -.03em;
 }
-/* The hero composition stays intact; this is its static motion fallback. */
+/* A still bulb field supports the hero machine. */
 .hero::before {
   content: '';
   position: absolute;
@@ -42,7 +42,6 @@ html, body { overflow-x: clip; }
   --bulb-core: .28;
   --bulb-shoulder: .12;
 }
-.hero-canvas[data-state='running'] ~ .hero::before { opacity: 0; }
 /* Each surface owns its atmosphere. Backgrounds cannot tint content or catch input. */
 .trust-strip, #chapters, .how-i-build, .capabilities, .awards, .contact, body > footer {
   position: relative;
@@ -711,8 +710,6 @@ body > footer { color: var(--dark-muted); background-color: var(--dark-base); bo
   html { scroll-behavior: auto !important; }
   #work .work-item { transform: none !important; transition: none; }
   #chapters .chapter-state { transform: none !important; transition: none; }
-  /* Keep the hero still when reduced motion is requested. */
-  #hero-canvas { display: none; }
 }
 
 /* Local homepage flow trial: Chapters leads directly into Capabilities. */
