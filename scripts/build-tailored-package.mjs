@@ -27,6 +27,7 @@ import {
   getPackageRepository,
   getResumeExperienceSections,
   getRoutePresentation,
+  applyRouteHeroAnimation,
   getShowcaseSectionIds,
   hasCoverLetterArtifact,
   isMain,
@@ -1157,6 +1158,7 @@ export function buildRoute(config, paths) {
     `<p class="hero-intro">\n    ${escapeHtml(config.hero.intro)}\n  </p>`,
     'hero intro'
   );
+  routeHtml = applyRouteHeroAnimation(routeHtml, config);
   routeHtml = replaceFirst(
     routeHtml,
     /<p class="contact-subtitle reveal">[\s\S]*?<\/p>/,

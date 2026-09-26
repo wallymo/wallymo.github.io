@@ -233,6 +233,177 @@ export function getResumeExperienceSections(config) {
     : DEFAULT_RESUME_EXPERIENCE_SECTIONS;
 }
 
+// The homepage hero ships the ask-to-proof machine. Account-management routes
+// swap in the switchboard: same hero slot, markup, and controls; different scene.
+export const HERO_ANIMATIONS = Object.freeze({
+  machine: Object.freeze({
+    script: 'hero-machine.js',
+    label:
+      'A client ask becomes a brief, a UX design, and a working AI proof of concept before returning to the client.',
+    fig: 'Fig. — Ask to proof',
+  }),
+  switchboard: Object.freeze({
+    script: 'hero-switchboard.js',
+    label:
+      'A client line rings, Wally answers, patches in the teams the request needs, and the finished work comes back to the client.',
+    fig: 'Fig. — Switchboard',
+  }),
+});
+export const HERO_ANIMATION_IDS = Object.freeze(Object.keys(HERO_ANIMATIONS));
+
+export function getRouteHeroAnimation(config) {
+  if (config?.route?.heroAnimation) {
+    return config.route.heroAnimation;
+  }
+  return config?.classification?.targetLane === 'client-account-delivery' ||
+    config?.fitGate?.resumeBase?.mode === 'account-leadership'
+    ? 'switchboard'
+    : 'machine';
+}
+
+// Switchboard boards: "pharma" and "general" ship in the hero script; a custom
+// board is tailored per JD and must fit the same frame (4 client lines, 6 teams,
+// 4 calls, each client line calling once, every team patched at least once).
+export const HERO_BOARD_PRESETS = Object.freeze(['pharma', 'general']);
+export const HERO_BOARD_LIMITS = Object.freeze({
+  clientLines: 4,
+  teams: 6,
+  calls: 4,
+  clientLabel: 16,
+  teamLabel: 18,
+  ask: 36,
+  done: 28,
+});
+
+const isPlainObject = (value) =>
+  Boolean(value) && typeof value === 'object' && !Array.isArray(value);
+
+export function heroBoardErrors(board) {
+  const errors = [];
+  const L = HERO_BOARD_LIMITS;
+  const labelList = (list, count, max, field) => {
+    if (!Array.isArray(list) || list.length !== count) {
+      errors.push(`route.heroBoard.${field} must list exactly ${count} labels`);
+      return;
+    }
+    list.forEach((label, index) => {
+      if (typeof label !== 'string' || !label.trim() || label.length > max) {
+        errors.push(`route.heroBoard.${field}[${index}] must be 1 to ${max} characters`);
+      }
+    });
+    if (new Set(list).size !== list.length) {
+      errors.push(`route.heroBoard.${field} labels must be unique`);
+    }
+  };
+  labelList(board?.client, L.clientLines, L.clientLabel, 'client');
+  labelList(board?.teams, L.teams, L.teamLabel, 'teams');
+  const calls = board?.calls;
+  if (!Array.isArray(calls) || calls.length !== L.calls) {
+    errors.push(`route.heroBoard.calls must list exactly ${L.calls} calls`);
+    return errors;
+  }
+  const client = Array.isArray(board.client) ? board.client : [];
+  const teams = Array.isArray(board.teams) ? board.teams : [];
+  calls.forEach((call, index) => {
+    const at = `route.heroBoard.calls[${index}]`;
+    if (!client.includes(call?.from)) errors.push(`${at}.from must be one of the client labels`);
+    if (
+      !Array.isArray(call?.to) ||
+      call.to.length < 1 ||
+      call.to.length > 2 ||
+      new Set(call.to).size !== call.to.length ||
+      !call.to.every((team) => teams.includes(team))
+    ) {
+      errors.push(`${at}.to must list one or two different team labels`);
+    }
+    if (typeof call?.ask !== 'string' || !call.ask.trim() || call.ask.length > L.ask) {
+      errors.push(`${at}.ask must be 1 to ${L.ask} characters`);
+    }
+    if (typeof call?.done !== 'string' || !call.done.trim() || call.done.length > L.done) {
+      errors.push(`${at}.done must be 1 to ${L.done} characters`);
+    }
+  });
+  const callers = calls.map((call) => call?.from);
+  if (!client.every((label) => callers.includes(label)) || new Set(callers).size !== callers.length) {
+    errors.push('route.heroBoard.calls must give every client line exactly one call');
+  }
+  const patched = new Set(calls.flatMap((call) => (Array.isArray(call?.to) ? call.to : [])));
+  if (!teams.every((team) => patched.has(team))) {
+    errors.push('route.heroBoard.calls must patch every team at least once');
+  }
+  return errors;
+}
+
+export function getRouteHeroBoard(config) {
+  if (getRouteHeroAnimation(config) !== 'switchboard') {
+    return null;
+  }
+  const board = config?.route?.heroBoard;
+  if (isPlainObject(board)) {
+    return board;
+  }
+  return HERO_BOARD_PRESETS.includes(board) ? board : 'general';
+}
+
+export function heroBoardCopyEntries(config) {
+  const board = config?.route?.heroBoard;
+  if (!isPlainObject(board)) {
+    return [];
+  }
+  return [
+    ...(Array.isArray(board.client) ? board.client : []).map((label, index) => [`route.heroBoard.client[${index}]`, label]),
+    ...(Array.isArray(board.teams) ? board.teams : []).map((label, index) => [`route.heroBoard.teams[${index}]`, label]),
+    ...(Array.isArray(board.calls) ? board.calls : []).flatMap((call, index) => [
+      [`route.heroBoard.calls[${index}].ask`, call?.ask],
+      [`route.heroBoard.calls[${index}].done`, call?.done],
+    ]),
+  ].filter(([, value]) => typeof value === 'string');
+}
+
+export function applyRouteHeroAnimation(html, config) {
+  const animationId = getRouteHeroAnimation(config);
+  const animation = HERO_ANIMATIONS[animationId];
+  if (!animation) {
+    throw new Error(`Unknown hero animation: ${animationId}`);
+  }
+  if (animationId === 'machine') {
+    return html;
+  }
+  const scriptPattern =
+    /(<script src="[^"]*assets\/portfolio-revision\/)hero-machine\.js(?:\?[^"]*)?("><\/script>)/;
+  if (!scriptPattern.test(html)) {
+    throw new Error(
+      `route.heroAnimation ${animationId} needs the homepage hero machine script in index.html`
+    );
+  }
+  const machine = HERO_ANIMATIONS.machine;
+  const machineFig = `<div class="hero-machine-fig" aria-hidden="true">${machine.fig}</div>`;
+  if (!html.includes(`aria-label="${machine.label}"`) || !html.includes(machineFig)) {
+    throw new Error(
+      `route.heroAnimation ${animationId} could not find the hero machine label and caption in index.html`
+    );
+  }
+  const stageTag = '<div class="hero-machine" id="machine">';
+  if (!html.includes(stageTag)) {
+    throw new Error(`route.heroAnimation ${animationId} could not find the hero machine stage in index.html`);
+  }
+  const board = getRouteHeroBoard(config);
+  const boardTag = isPlainObject(board)
+    ? `<div class="hero-machine" id="machine" data-board="custom">\n    <script type="application/json" class="hero-switchboard-board">${JSON.stringify(board).replace(/</g, '\\u003c')}</script>`
+    : `<div class="hero-machine" id="machine" data-board="${board}">`;
+  return html
+    .replace(stageTag, boardTag)
+    .replace(scriptPattern, `$1${animation.script}?v=2$2`)
+    .replace(
+      `aria-label="${machine.label}"`,
+      `aria-label="${animation.label}"`
+    )
+    .replace(
+      `<div class="hero-machine-fig" aria-hidden="true">${machine.fig}</div>`,
+      `<div class="hero-machine-fig" aria-hidden="true">${animation.fig}</div>`
+    );
+}
+
 export function getRoutePresentation(config) {
   if (config?.route?.presentation) {
     return config.route.presentation;
@@ -552,6 +723,9 @@ export function humanizerCopyEntries(config) {
   add('route.heroIntent', config?.route?.heroIntent);
   add('route.workHeading', config?.route?.workHeading);
   add('route.contactHeading', config?.route?.contactHeading);
+  for (const [field, value] of heroBoardCopyEntries(config)) {
+    add(field, value);
+  }
   for (const [field, value] of showcaseSectionCopyEntries(config)) {
     add(
       field,
@@ -2531,6 +2705,28 @@ export function validateV2Config(
       );
       pushError(
         errors,
+        route.heroAnimation === undefined ||
+          HERO_ANIMATION_IDS.includes(route.heroAnimation),
+        `route.heroAnimation must be ${HERO_ANIMATION_IDS.join(' or ')} when present`
+      );
+      if (route.heroBoard !== undefined) {
+        if (isPlainObject(route.heroBoard)) {
+          errors.push(...heroBoardErrors(route.heroBoard));
+        } else {
+          pushError(
+            errors,
+            HERO_BOARD_PRESETS.includes(route.heroBoard),
+            `route.heroBoard must be ${HERO_BOARD_PRESETS.join(' or ')} or a custom board object`
+          );
+        }
+        pushError(
+          errors,
+          getRouteHeroAnimation(config) === 'switchboard',
+          'route.heroBoard requires the switchboard hero'
+        );
+      }
+      pushError(
+        errors,
         route.heroIntent === undefined || route.heroIntent === 'resume-support',
         'route.heroIntent must be resume-support when present'
       );
@@ -2995,6 +3191,13 @@ export function validateV2Config(
       }
     }
   }
+  if (requireCurrentContract && getRouteHeroAnimation(config) === 'switchboard') {
+    pushError(
+      errors,
+      route && typeof route === 'object' && route.heroBoard !== undefined,
+      'route.heroBoard must be explicitly set (pharma, general, or a tailored board) for new or rebuilt switchboard packages'
+    );
+  }
   if (requireCurrentContract) {
     pushError(
       errors,
@@ -3291,6 +3494,7 @@ export function recruiterFacingClaimViolations(config, additionalCopy = []) {
       ]
     ),
     ...showcaseSectionCopyEntries(config),
+    ...heroBoardCopyEntries(config),
     ...additionalCopy,
   ];
   const prohibitedPhrases = [

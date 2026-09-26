@@ -33,6 +33,11 @@ import {
   humanizerViolations,
   getResumeExperienceSections,
   getRoutePresentation,
+  getRouteHeroAnimation,
+  getRouteHeroBoard,
+  applyRouteHeroAnimation,
+  heroBoardCopyEntries,
+  humanizerCopyEntries as humanizerEntriesForBoard,
   getArtifactPaths,
   getPackagePublicBase,
   getPackageRepository,
@@ -171,6 +176,8 @@ function accountLeadershipConfig() {
   const profile = registry.profiles['account-leadership'];
 
   config.classification.targetLane = 'client-account-delivery';
+  // Account lanes resolve to the switchboard hero, which needs an explicit board.
+  config.route.heroBoard = 'pharma';
   config.classification.evidenceMode = 'resume-primary';
   config.classification.primarySource =
     'The resume directly proves sustained account ownership, client leadership, budgets, and coordinated delivery.';
@@ -361,6 +368,8 @@ function aiLedHybridSelectiveConfig() {
   const config = hybridSelectiveConfig();
   const { foundation, evidenceText } = resumeBaseFixtureData();
   config.classification.targetLane = 'ai-product-implementation';
+  // AI-led packages keep the machine hero, so they carry no switchboard board.
+  delete config.route.heroBoard;
   config.classification.evidenceMode = 'balanced';
   config.classification.primarySource =
     'The resume and portfolio directly prove client-facing AI workflow design, product decisions, and functional implementation.';
@@ -786,6 +795,110 @@ test('design concepts default historically, require an explicit current choice, 
   assert.match(
     buildCoverLetterHtml(proofGridLetter, getArtifactPaths(proofGridLetter)),
     /href="https:\/\/wally-mostafa\.github\.io\/company-role\/">Portfolio<\/a>/
+  );
+});
+
+test('account-management routes default to the switchboard hero and swap only the hero scene', () => {
+  const aiConfig = validConfig();
+  assert.equal(getRouteHeroAnimation(aiConfig), 'machine');
+
+  const accountLane = validConfig();
+  accountLane.classification.targetLane = 'client-account-delivery';
+  assert.equal(getRouteHeroAnimation(accountLane), 'switchboard');
+
+  const accountBase = validConfig();
+  accountBase.fitGate.resumeBase.mode = 'account-leadership';
+  assert.equal(getRouteHeroAnimation(accountBase), 'switchboard');
+
+  accountBase.route.heroAnimation = 'machine';
+  assert.equal(getRouteHeroAnimation(accountBase), 'machine');
+  aiConfig.route.heroAnimation = 'switchboard';
+  assert.equal(getRouteHeroAnimation(aiConfig), 'switchboard');
+
+  const unknown = validConfig();
+  unknown.route.heroAnimation = 'carousel';
+  assert.match(
+    validateV2Config(unknown).join('\n'),
+    /route\.heroAnimation must be machine or switchboard/
+  );
+
+  const routeHtml = readFileSync(path.join(repoRoot, 'index.html'), 'utf8').replace(
+    /src="assets\//g,
+    'src="../assets/'
+  );
+  assert.equal(applyRouteHeroAnimation(routeHtml, validConfig()), routeHtml);
+  const swapped = applyRouteHeroAnimation(routeHtml, accountLane);
+  assert.match(swapped, /src="\.\.\/assets\/portfolio-revision\/hero-switchboard\.js\?v=2"/);
+  assert.match(swapped, /<div class="hero-machine" id="machine" data-board="general">/);
+  assert.doesNotMatch(swapped, /hero-machine\.js/);
+  assert.match(swapped, /aria-label="A client line rings, Wally answers/);
+  assert.match(swapped, />Fig\. — Switchboard</);
+  assert.equal(
+    swapped.replace(/<section class="hero[\s\S]*?<\/section>/, '').replace(/<script src="[^"]*hero-[a-z]+\.js[^"]*"><\/script>/, ''),
+    routeHtml.replace(/<section class="hero[\s\S]*?<\/section>/, '').replace(/<script src="[^"]*hero-[a-z]+\.js[^"]*"><\/script>/, '')
+  );
+  assert.throws(
+    () => applyRouteHeroAnimation('<section class="hero"></section>', accountLane),
+    /needs the homepage hero machine script/
+  );
+});
+
+test('switchboard boards: pharma and general presets, tailored boards, and their frame rules', () => {
+  const account = validConfig();
+  account.classification.targetLane = 'client-account-delivery';
+  assert.equal(getRouteHeroBoard(account), 'general');
+  assert.equal(getRouteHeroBoard(validConfig()), null);
+
+  const routeHtml = readFileSync(path.join(repoRoot, 'index.html'), 'utf8');
+  account.route.heroBoard = 'pharma';
+  assert.deepEqual(validateV2Config(account).filter((e) => /heroBoard/.test(e)), []);
+  assert.match(applyRouteHeroAnimation(routeHtml, account), /data-board="pharma"/);
+
+  const tailored = validConfig();
+  tailored.classification.targetLane = 'client-account-delivery';
+  tailored.route.heroBoard = {
+    client: ['Tourism board', 'Brand partner', 'Agency buyer', 'Procurement'],
+    teams: ['Editorial', 'Video', 'Design', 'Ad ops', 'Analytics', 'Finance'],
+    calls: [
+      { from: 'Tourism board', to: ['Editorial', 'Video'], ask: 'Can we feature our fall festivals?', done: 'Fall feature is live.' },
+      { from: 'Brand partner', to: ['Analytics', 'Ad ops'], ask: 'How did the campaign perform?', done: 'Results report sent.' },
+      { from: 'Agency buyer', to: ['Ad ops', 'Design'], ask: 'Can we add a newsletter slot?', done: 'Slot booked.' },
+      { from: 'Procurement', to: ['Finance', 'Editorial'], ask: 'The contract renews next month.', done: 'Renewal signed.' },
+    ],
+  };
+  assert.deepEqual(validateV2Config(tailored).filter((e) => /heroBoard/.test(e)), []);
+  const html = applyRouteHeroAnimation(routeHtml, tailored);
+  assert.match(html, /data-board="custom">\s*<script type="application\/json" class="hero-switchboard-board">/);
+  const json = html.match(/class="hero-switchboard-board">([\s\S]*?)<\/script>/)[1];
+  assert.deepEqual(JSON.parse(json), tailored.route.heroBoard);
+  assert.equal(heroBoardCopyEntries(tailored).length, 4 + 6 + 8);
+  assert.ok(
+    humanizerEntriesForBoard(tailored).some(
+      (entry) => JSON.stringify(entry).includes('Can we feature our fall festivals?')
+    )
+  );
+
+  const errorsFor = (mutate) => {
+    const config = structuredClone(tailored);
+    mutate(config.route.heroBoard, config);
+    return validateV2Config(config).join('\n');
+  };
+  assert.match(errorsFor((b) => { b.client.pop(); }), /client must list exactly 4 labels/);
+  assert.match(errorsFor((b) => { b.teams[0] = 'A much too long team name here'; }), /teams\[0\] must be 1 to 18 characters/);
+  assert.match(errorsFor((b) => { b.calls[0].ask = 'x'.repeat(37); }), /calls\[0\]\.ask must be 1 to 36 characters/);
+  assert.match(errorsFor((b) => { b.calls[1].to = ['Nobody']; }), /calls\[1\]\.to must list one or two different team labels/);
+  assert.match(errorsFor((b) => { b.calls[3].from = 'Tourism board'; }), /every client line exactly one call/);
+  assert.match(errorsFor((b) => { b.calls[1].to = ['Editorial']; b.calls[2].to = ['Design']; }), /patch every team at least once/);
+  assert.match(errorsFor((_b, c) => { c.route.heroBoard = 'retail'; }), /route\.heroBoard must be pharma or general or a custom board object/);
+  assert.match(
+    errorsFor((_b, c) => { c.route.heroAnimation = 'machine'; }),
+    /route\.heroBoard requires the switchboard hero/
+  );
+  const unchosen = structuredClone(tailored);
+  delete unchosen.route.heroBoard;
+  assert.match(
+    validateV2Config(unchosen, { requireCurrentContract: true }).join('\n'),
+    /route\.heroBoard must be explicitly set/
   );
 });
 
