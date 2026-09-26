@@ -1,0 +1,1270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Job Jackets · Wally Mostafa</title>
+<meta name="robots" content="noindex">
+<meta name="description" content="Account work by Wally Mostafa, Sep 2010 to Jul 2018, filed as one job jacket per brand.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    /* Desk */
+    --desk: #4a3324;
+    --desk-deep: #33241a;
+    --cream: #f4e9d3;
+    --cream-soft: #dccbad;
+    /* Paper */
+    --manila-lt: #f1dfb2;
+    --manila: #ead39c;
+    --manila-dk: #d9bd7c;
+    --manila-edge: #b8964f;
+    --paper: #fbf7ee;
+    --card: #fffdf7;
+    --sticky: #f6e27a;
+    /* Ink */
+    --ink: #1f1812;
+    --ink-soft: #4a3f33;
+    --print: #7a2f14;
+    --cobalt: #2454c6;
+    --pencil-red: #9a2f1c;
+
+    --f-head: "Fraunces", Georgia, "Times New Roman", serif;
+    --f-type: "Courier Prime", "Courier New", Courier, monospace;
+    --f-hand: "Caveat", "Bradley Hand", "Segoe Print", cursive;
+
+    --gut: 16px;
+    --max: 1180px;
+
+    /* Paper grain: an SVG turbulence tile (inline data, no image files). */
+    --grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .32 0 0 0 0 .22 0 0 0 0 .1 1.1 0 0 0 -.42'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23g)'/%3E%3C/svg%3E");
+    --grain-soft: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .35 0 0 0 0 .28 0 0 0 0 .18 .6 0 0 0 -.24'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23g)'/%3E%3C/svg%3E");
+    --grain-light: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.7' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 .9 0 0 0 0 .78 .8 0 0 0 -.34'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23g)'/%3E%3C/svg%3E");
+  }
+  @media (min-width: 640px) { :root { --gut: 28px; } }
+  @media (min-width: 900px) { :root { --gut: 40px; } }
+
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-font-smoothing: antialiased; overflow-x: clip; }
+  body {
+    margin: 0; overflow-x: clip;
+    font: 400 1.0625rem/1.6 var(--f-head);
+    color: var(--cream);
+    background-color: var(--desk);
+    background-image:
+      radial-gradient(ellipse 80% 60% at 18% 0%, rgba(255, 214, 150, .16), transparent 70%),
+      var(--grain-light),
+      repeating-linear-gradient(91deg, rgba(0, 0, 0, .09) 0 2px, transparent 2px 9px, rgba(255, 222, 186, .035) 9px 11px, transparent 11px 23px, rgba(0, 0, 0, .05) 23px 24px, transparent 24px 41px);
+  }
+  h1, h2, h3, h4, p, dl, dd, ol, ul, figure { margin: 0; }
+  ol, ul { padding: 0; list-style: none; }
+  a { color: inherit; }
+  .defs { position: absolute; width: 0; height: 0; overflow: hidden; }
+
+  .skip {
+    position: absolute; left: 12px; top: -60px; z-index: 100; padding: 10px 14px;
+    background: var(--paper); color: var(--ink); font: 700 .9rem/1 var(--f-type); text-decoration: none;
+  }
+  .skip:focus { top: 12px; outline: 3px solid var(--cobalt); outline-offset: 2px; }
+
+  :focus-visible { outline: 3px solid var(--cream); outline-offset: 3px; }
+
+  /* ── Top strip ── */
+  .topbar {
+    max-width: var(--max); margin: 0 auto; padding: 18px var(--gut) 0;
+    display: flex; justify-content: space-between; align-items: center; gap: 16px;
+    font: 400 .82rem/1.3 var(--f-type); color: var(--cream-soft);
+  }
+  .who { display: flex; align-items: center; gap: 10px; color: var(--cream); }
+  .who-tag {
+    display: inline-grid; place-items: center; width: 44px; height: 34px;
+    background: var(--paper) var(--grain-soft); color: var(--cobalt);
+    font: 700 1.5rem/1 var(--f-hand); transform: rotate(-4deg);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .35);
+  }
+  .who-name { font: 700 .95rem/1 var(--f-type); letter-spacing: .04em; }
+  .era { text-align: right; }
+  @media (max-width: 480px) { .era { display: none; } }
+
+  /* ── Hero desk ── */
+  .hero {
+    max-width: var(--max); margin: 0 auto; padding: 40px var(--gut) 56px;
+    display: grid; gap: 40px; overflow-x: clip; position: relative;
+  }
+  @media (min-width: 900px) {
+    .hero { grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); align-items: center; gap: 48px; padding-top: 56px; }
+  }
+  .eyebrow {
+    font: 700 .78rem/1.3 var(--f-type); letter-spacing: .14em; text-transform: uppercase; color: var(--cream-soft);
+  }
+  .hero h1 {
+    margin-top: 14px;
+    font: 800 clamp(2.5rem, 5.4vw, 4.4rem)/1 var(--f-head);
+    font-variation-settings: "opsz" 144; letter-spacing: -.005em; word-spacing: .1em; color: var(--cream);
+    max-width: 12ch;
+  }
+  .lede { margin-top: 20px; max-width: 34ch; font-size: clamp(1.08rem, 1.5vw, 1.25rem); line-height: 1.55; color: var(--cream); }
+  .sticky {
+    display: inline-block; margin-top: 28px; padding: 14px 18px 16px; max-width: 260px;
+    background: var(--sticky) var(--grain-soft); color: var(--ink);
+    font: 700 1.45rem/1.15 var(--f-hand);
+    transform: rotate(-3deg);
+    box-shadow: 0 10px 14px -10px rgba(0, 0, 0, .6), 0 1px 2px rgba(0, 0, 0, .25);
+  }
+
+  html:not(.js-files) .sticky { display: none; }
+  .desk { position: relative; min-width: 0; }
+  .ring {
+    position: absolute; right: -30px; bottom: 40px; width: 150px; height: 150px; border-radius: 50%; pointer-events: none;
+    background: radial-gradient(circle, transparent 58%, rgba(28, 14, 4, .32) 61%, rgba(28, 14, 4, .12) 65%, transparent 68%);
+    transform: rotate(20deg) scaleX(1.04);
+  }
+  .stack {
+    --jh: 330px; --step: 56px; --tabh: 24px;
+    position: relative; margin: 0 auto; width: min(540px, 100%);
+    height: calc(var(--tabh) + 5 * var(--step) + var(--jh) + 18px);
+  }
+  .slot {
+    position: absolute; left: 0; top: calc(var(--tabh) + var(--c) * var(--step));
+    width: calc(100% - 26px); height: var(--jh);
+    z-index: calc(var(--c) + 1);
+    transform: translate(calc(var(--x) + var(--ix, 0px)), var(--iy, 0px)) rotate(calc(var(--r) + var(--ir, 0deg)));
+    transform-origin: 50% 60%;
+    opacity: var(--o, 1);
+    will-change: transform;
+  }
+  .jacket {
+    display: block; position: relative; height: 100%;
+    color: var(--ink); text-decoration: none; border-radius: 2px 3px 4px 4px;
+    background-color: var(--manila);
+    background-image: var(--grain), linear-gradient(176deg, var(--manila-lt) 0%, var(--manila) 38%, var(--manila-dk) 100%);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .45), inset 0 -2px 0 rgba(184, 150, 79, .45),
+                0 12px 18px -10px rgba(0, 0, 0, .6), 0 2px 3px rgba(0, 0, 0, .28);
+    transition: transform .3s cubic-bezier(.2, .9, .25, 1.25), box-shadow .3s ease;
+  }
+  @media (hover: hover) {
+    .jacket:hover { transform: translateY(-14px) rotate(-.5deg); box-shadow: inset 0 1px 0 rgba(255, 255, 255, .45), 0 26px 30px -14px rgba(0, 0, 0, .65), 0 3px 5px rgba(0, 0, 0, .25); }
+  }
+  .jacket:focus-visible { transform: translateY(-14px) rotate(-.5deg); outline: 3px solid var(--cream); outline-offset: 4px; }
+  .tab {
+    position: absolute; bottom: 100%; left: var(--tab); height: var(--tabh); padding: 0 12px;
+    display: flex; align-items: center; white-space: nowrap;
+    border-radius: 8px 8px 0 0;
+    background-color: var(--manila-lt);
+    background-image: var(--grain), linear-gradient(var(--manila-lt), var(--manila-lt));
+    box-shadow: 0 -3px 5px -3px rgba(0, 0, 0, .4);
+    font: 700 .8rem/1 var(--f-type); letter-spacing: .06em; text-transform: uppercase; color: var(--ink);
+  }
+  .jhead {
+    display: flex; justify-content: space-between; align-items: center; gap: 12px;
+    height: 28px; padding: 0 12px;
+    font: 400 .76rem/1 var(--f-type); color: var(--ink-soft);
+    border-bottom: 1px solid rgba(122, 47, 20, .22);
+  }
+  .jhead span:first-child { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .jhead span:last-child { flex: none; }
+  .jbody {
+    position: relative; display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 12px;
+    padding: 12px 14px 0; height: calc(100% - 28px);
+  }
+  .jmain { display: flex; flex-direction: column; min-width: 0; }
+  .jform { font: 700 .66rem/1.2 var(--f-type); letter-spacing: .2em; text-transform: uppercase; color: var(--print); }
+  .jbrand { margin-top: 6px; font: 800 clamp(1.75rem, 4.6vw, 2.5rem)/.95 var(--f-head); font-variation-settings: "opsz" 144; letter-spacing: -.01em; }
+  .jline { margin-top: 6px; font: 400 .8rem/1.35 var(--f-type); color: var(--ink-soft); }
+  .jfields { margin-top: 12px; display: grid; gap: 3px; font: 400 .74rem/1.35 var(--f-type); color: var(--ink); }
+  .jfields b { display: inline-block; min-width: 4.6em; font-weight: 700; font-size: .62rem; letter-spacing: .14em; text-transform: uppercase; color: var(--print); }
+
+  .jslip {
+    position: relative; align-self: start; width: 170px; margin-top: 4px; padding: 12px 10px 8px;
+    background: var(--paper) var(--grain-soft); transform: rotate(1.8deg);
+    box-shadow: 0 6px 10px -6px rgba(0, 0, 0, .5), 0 1px 1px rgba(0, 0, 0, .2);
+  }
+  .jslip-h { display: block; font: 700 .62rem/1 var(--f-type); letter-spacing: .2em; text-transform: uppercase; color: var(--print); padding-bottom: 6px; border-bottom: 1.5px solid var(--ink-soft); }
+  .jrow {
+    display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 6px;
+    padding: 4px 0; border-bottom: 1px solid #d8cfbd;
+    font: 700 .66rem/1 var(--f-type); letter-spacing: .04em; color: var(--ink);
+  }
+  .box {
+    display: flex; align-items: center; justify-content: center; width: 48px; height: 23px;
+    border: 1px solid rgba(31, 24, 18, .5); background: #fff; font-style: normal;
+  }
+  .sig {
+    display: inline-block; padding: 0 3px; color: var(--cobalt);
+    font: 700 1.3rem/1 var(--f-hand); transform: rotate(-6deg) translateY(1px);
+  }
+  .paperclip { position: absolute; top: -16px; left: 16px; width: 18px; height: 46px; overflow: visible; }
+
+  .approved {
+    position: absolute; left: 14px; bottom: 22px; z-index: 2;
+    padding: 5px 12px 4px; border: 4px double var(--cobalt); border-radius: 4px;
+    font: 700 1.35rem/1 var(--f-type); letter-spacing: .14em; text-transform: uppercase; color: var(--cobalt);
+    transform: rotate(-11deg) scale(var(--ss, 1)); opacity: var(--so, .92);
+    filter: url(#ink); mix-blend-mode: multiply;
+  }
+
+  .intro-ctl {
+    display: inline-flex; align-items: center; gap: 8px; margin-top: 6px; min-height: 36px; padding: 6px 12px;
+    background: transparent; color: var(--cream-soft); border: 1px solid rgba(220, 203, 173, .55); border-radius: 2px;
+    font: 700 .74rem/1 var(--f-type); letter-spacing: .12em; text-transform: uppercase; cursor: pointer;
+  }
+  .intro-ctl:hover { color: var(--cream); border-color: var(--cream); }
+  .intro-ctl svg { width: 9px; height: 9px; fill: currentColor; }
+
+  @media (max-width: 639px) {
+    .stack { --jh: 292px; --step: 50px; --tabh: 22px; }
+    .slot { width: calc(100% - 14px); }
+    .tab { font-size: .72rem; padding: 0 10px; }
+    .jhead { font-size: .7rem; height: 26px; padding: 0 10px; }
+    .jbody { height: calc(100% - 26px); padding: 10px 10px 0; gap: 8px; }
+    .jslip { width: 146px; padding: 10px 8px 6px; }
+    .box { width: 42px; }
+    .jfields { font-size: .7rem; }
+    .jfields .opt { display: none; }
+    .approved { font-size: 1.2rem; left: 10px; bottom: 18px; }
+    .ring { display: none; }
+  }
+
+  /* ── Sections on the desk ── */
+  .section { max-width: var(--max); margin: 0 auto; padding: clamp(64px, 9vw, 112px) var(--gut) 0; }
+  .section-head { max-width: 640px; }
+  .section-head h2 {
+    margin-top: 10px; font: 700 clamp(2rem, 4.4vw, 3.1rem)/1.05 var(--f-head);
+    font-variation-settings: "opsz" 144; letter-spacing: -.015em; color: var(--cream);
+  }
+  .section-head p:not(.eyebrow) { margin-top: 14px; color: var(--cream); max-width: 52ch; }
+
+  /* Paper surfaces */
+  .paper {
+    position: relative; color: var(--ink);
+    background-color: var(--paper);
+    background-image: var(--grain-soft);
+    box-shadow: 0 18px 30px -18px rgba(0, 0, 0, .7), 0 2px 4px rgba(0, 0, 0, .25);
+  }
+
+  /* ── The route ── */
+  .route-slip { max-width: 900px; margin: 36px auto 0; padding: 30px clamp(18px, 4vw, 40px) 24px; transform: rotate(-.5deg); }
+  .route-slip .paperclip { left: 40px; top: -20px; width: 22px; height: 56px; }
+  .rs-head {
+    display: flex; justify-content: space-between; gap: 12px; padding-bottom: 10px; border-bottom: 2px solid var(--ink);
+    font: 700 .72rem/1.2 var(--f-type); letter-spacing: .2em; text-transform: uppercase; color: var(--print);
+  }
+  .rs-row {
+    position: relative; display: grid; grid-template-columns: 8.5rem 66px minmax(0, 1fr); gap: 18px; align-items: start;
+    padding: 16px 0; border-bottom: 1px solid #d8cfbd;
+  }
+  .rs-dept strong { display: block; font: 700 1.05rem/1.1 var(--f-type); letter-spacing: .04em; }
+  .rs-dept span { display: block; margin-top: 4px; font: 400 .8rem/1.3 var(--f-type); color: var(--ink-soft); }
+  .rs-box { display: flex; align-items: center; justify-content: center; width: 66px; height: 38px; border: 1.5px solid rgba(31, 24, 18, .55); background: #fff; }
+  .rs-box .sig { font-size: 1.75rem; }
+  .rs-note { font: 400 1rem/1.55 var(--f-type); color: var(--ink); }
+  .margin-note {
+    position: absolute; right: -6px; top: -8px; padding: 2px 6px;
+    font: 700 1.25rem/1 var(--f-hand); color: var(--pencil-red); transform: rotate(-5deg);
+  }
+  @media (max-width: 639px) {
+    .rs-row { grid-template-columns: minmax(0, 1fr) 58px; gap: 10px 14px; }
+    .rs-note { grid-column: 1 / -1; font-size: .95rem; }
+    .rs-box { width: 58px; }
+    .margin-note { display: none; }
+    .rs-head span:last-child { display: none; }
+  }
+  /* Initials write on as the slip scrolls in (JS adds the classes). */
+  .is-pending .sig { clip-path: inset(0 100% 0 0); }
+  .route-slip.is-in .sig { clip-path: inset(0 0 0 0); transition: clip-path .34s ease-out; transition-delay: calc(.25s + var(--k, 0) * .3s); }
+
+  /* ── Stamped ── */
+  .ledger {
+    max-width: 1000px; margin: 36px auto 0; padding: clamp(24px, 4vw, 44px);
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr)); gap: 36px 32px;
+    transform: rotate(.35deg);
+  }
+  .ledger li { display: flex; flex-direction: column; align-items: flex-start; gap: 14px; }
+  .ledger p { font: 400 .95rem/1.5 var(--f-type); color: var(--ink); }
+  .rstamp {
+    --sc: var(--cobalt);
+    display: inline-flex; flex-direction: column; gap: 4px; padding: 8px 14px 7px;
+    border: 4px double var(--sc); border-radius: 5px; color: var(--sc);
+    font-family: var(--f-type); text-transform: uppercase;
+    transform: rotate(var(--rot, -3deg)); filter: url(#ink);
+  }
+  .rstamp.brown { --sc: var(--print); }
+  .rstamp .big { font-weight: 700; font-size: clamp(2rem, 4vw, 2.6rem); line-height: 1; letter-spacing: .02em; }
+  .rstamp .small { font-weight: 700; font-size: .72rem; line-height: 1.2; letter-spacing: .14em; }
+  .seal {
+    display: grid; place-items: center; align-content: center; gap: 2px; width: 132px; height: 132px; padding: 16px;
+    border-radius: 50%; text-align: center; color: #2a1c08;
+    background: radial-gradient(circle at 35% 30%, #f5d788, #d8a63a 58%, #bd8a2c);
+    box-shadow: 0 0 0 3px #eac867, 0 0 0 5px #b58722, 0 6px 10px -4px rgba(0, 0, 0, .45);
+    transform: rotate(var(--rot, 6deg));
+    font: 800 .66rem/1.2 var(--f-head); letter-spacing: .06em; text-transform: uppercase;
+  }
+  .seal strong { font-size: 1.5rem; line-height: 1; letter-spacing: 0; }
+  .seal.sm { width: 112px; height: 112px; padding: 12px; font-size: .6rem; }
+  .seal.sm strong { font-size: 1.25rem; }
+  .is-pending .rstamp, .is-pending .seal { opacity: 0; transform: rotate(var(--rot, -3deg)) scale(1.7); }
+  .ledger.is-in .rstamp, .ledger.is-in .seal {
+    transition: transform .16s cubic-bezier(.55, 0, .9, .45), opacity .1s linear;
+    transition-delay: calc(.15s + var(--k, 0) * .16s);
+  }
+
+  /* ── Paper trail ── */
+  .cards { margin-top: 36px; display: grid; gap: 24px; grid-template-columns: minmax(0, 1fr); }
+  @media (min-width: 640px) { .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media (min-width: 900px) { .cards { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+  .card {
+    position: relative; min-height: 196px; padding: 0 18px 12px; color: var(--ink);
+    background-color: var(--card);
+    background-image:
+      linear-gradient(#cf5a4f, #cf5a4f),
+      repeating-linear-gradient(to bottom, transparent 0 25px, #c6d6e7 25px 26px),
+      var(--grain-soft);
+    background-size: 100% 2px, 100% calc(100% - 42px), auto;
+    background-position: 0 40px, 0 42px, 0 0;
+    background-repeat: no-repeat, no-repeat, repeat;
+    box-shadow: 0 14px 20px -14px rgba(0, 0, 0, .7), 0 1px 2px rgba(0, 0, 0, .25);
+    transform: rotate(var(--tilt, 0deg));
+  }
+  .card:nth-child(3n+1) { --tilt: -.9deg; }
+  .card:nth-child(3n+2) { --tilt: .6deg; }
+  .card:nth-child(3n) { --tilt: -.3deg; }
+  .card-top { display: flex; justify-content: space-between; align-items: flex-end; gap: 8px; height: 40px; padding-bottom: 7px; font: 700 .76rem/1.2 var(--f-type); letter-spacing: .06em; text-transform: uppercase; color: var(--print); }
+  .card h3 { margin-top: 8px; font: 700 1.1rem/26px var(--f-head); }
+  .card-org { font: 400 .92rem/26px var(--f-type); }
+  .card-brands { font: 400 .86rem/26px var(--f-type); color: var(--ink-soft); }
+  .card-note { font: 700 1.2rem/26px var(--f-hand); color: var(--cobalt); }
+  .later {
+    display: block; width: fit-content; max-width: 330px; margin: 40px 0 0 auto; padding: 14px 18px 16px;
+    background: var(--sticky) var(--grain-soft); color: var(--ink);
+    font: 700 1.35rem/1.2 var(--f-hand); transform: rotate(2deg);
+    box-shadow: 0 10px 14px -10px rgba(0, 0, 0, .6), 0 1px 2px rgba(0, 0, 0, .25);
+  }
+
+  /* ── Close ── */
+  .close { padding: clamp(80px, 11vw, 132px) var(--gut) clamp(72px, 10vw, 120px); }
+  .close-slip { max-width: 560px; margin: 0 auto; padding: 26px clamp(20px, 5vw, 36px) 28px; transform: rotate(.8deg); }
+  .close-label { display: flex; justify-content: space-between; padding-bottom: 10px; border-bottom: 2px solid var(--ink); font: 700 .72rem/1.2 var(--f-type); letter-spacing: .2em; text-transform: uppercase; color: var(--print); }
+  .close-slip h2 { margin-top: 22px; padding-right: 76px; font: 700 clamp(2rem, 5.5vw, 2.8rem)/1.05 var(--f-head); font-variation-settings: "opsz" 144; letter-spacing: -.015em; }
+  .close-links { display: flex; flex-wrap: wrap; gap: 12px 28px; margin-top: 22px; padding-top: 14px; border-top: 1px solid #d8cfbd; }
+  .close-links a { font: 700 1.05rem/1.4 var(--f-type); color: var(--cobalt); text-underline-offset: 4px; }
+  .close-links a:hover { color: var(--ink); }
+  .close-links a:focus-visible { outline-color: var(--cobalt); }
+  .close-sign { position: absolute; right: clamp(20px, 5vw, 36px); top: 58px; }
+  .close-sign .rs-box { width: 64px; height: 42px; }
+
+  /* ── Open files (static without JS; lifted into the viewer with JS) ── */
+  .files .file + .file { margin-top: 64px; }
+  .files .folder { margin-top: 36px; }
+  html.js-files .files { display: none; }
+
+  .folder { position: relative; display: grid; grid-template-columns: minmax(0, 1fr); margin-top: 26px; }
+  .flap { position: relative; min-width: 0; color: var(--ink); }
+  .face-in, .flap-right {
+    background-color: var(--manila);
+    background-image: var(--grain), linear-gradient(176deg, var(--manila-lt), var(--manila) 45%, var(--manila-dk));
+    padding: clamp(20px, 3.4vw, 34px);
+  }
+  .face-in { position: relative; border-radius: 4px 4px 0 0; }
+  .flap-right { border-radius: 0 0 4px 4px; box-shadow: inset 0 18px 20px -20px rgba(0, 0, 0, .45); }
+  .folder { box-shadow: 0 24px 40px -20px rgba(0, 0, 0, .75); border-radius: 4px; }
+  .face-out { display: none; }
+
+  .file-kicker { font: 700 .72rem/1.2 var(--f-type); letter-spacing: .2em; text-transform: uppercase; color: var(--print); }
+  .file-brand { margin-top: 8px; font: 800 clamp(2.2rem, 5vw, 3.2rem)/.95 var(--f-head); font-variation-settings: "opsz" 144; letter-spacing: -.015em; }
+  .file-sub { margin-top: 8px; font: 400 .95rem/1.4 var(--f-type); color: var(--ink-soft); }
+  .ticket { margin-top: 22px; padding: 16px 18px 10px; }
+  .form-title { font: 700 .7rem/1.2 var(--f-type); letter-spacing: .2em; text-transform: uppercase; color: var(--print); padding-bottom: 8px; border-bottom: 1.5px solid var(--ink-soft); }
+  .ticket dl > div { display: grid; grid-template-columns: 5.2rem minmax(0, 1fr); gap: 10px; padding: 8px 0 6px; border-bottom: 1px dotted rgba(74, 63, 51, .6); }
+  .ticket dt { font: 700 .68rem/1.9 var(--f-type); letter-spacing: .16em; text-transform: uppercase; color: var(--print); }
+  .ticket dd { font: 400 .98rem/1.45 var(--f-type); }
+  .slip { width: min(250px, 100%); margin: 26px 0 4px auto; padding: 16px 14px 10px; transform: rotate(1.6deg); }
+  .slip .jrow { font-size: .74rem; padding: 5px 0; }
+  .slip .box { width: 56px; height: 27px; }
+  .slip .sig { font-size: 1.45rem; }
+  .slip .paperclip { left: 22px; }
+
+  .sheet { padding: clamp(20px, 3vw, 30px) clamp(18px, 3vw, 28px) 24px; transform: rotate(.4deg); }
+  .sheet h4 { font: 700 .72rem/1.2 var(--f-type); letter-spacing: .2em; text-transform: uppercase; color: var(--print); }
+  .sheet h4 + p { margin-top: 8px; }
+  .sheet p { font: 400 1rem/1.62 var(--f-type); }
+  .sheet p + p { margin-top: 10px; }
+  .sheet p + h4 { margin-top: 22px; }
+  .marks { display: flex; flex-wrap: wrap; align-items: center; gap: 18px 20px; margin-top: 24px; padding-top: 20px; border-top: 1px dashed rgba(74, 63, 51, .5); }
+  .marks .rstamp .big { font-size: 1.6rem; }
+  .label-sticker {
+    display: inline-block; padding: 8px 12px; max-width: 220px; background: #fff; color: var(--ink);
+    border: 1px solid rgba(31, 24, 18, .35); border-radius: 3px; transform: rotate(-2deg);
+    font: 700 .78rem/1.3 var(--f-type); letter-spacing: .06em; text-transform: uppercase;
+    box-shadow: 0 3px 5px -2px rgba(0, 0, 0, .3);
+  }
+
+  @media (min-width: 900px) {
+    .folder { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); perspective: 2600px; }
+    .flap-left { display: grid; z-index: 2; transform-style: preserve-3d; transform-origin: 100% 50%; }
+    .face-in {
+      border-radius: 4px 0 0 4px; transform: rotateY(0deg);
+      -webkit-backface-visibility: hidden; backface-visibility: hidden;
+      background-image: var(--grain), linear-gradient(90deg, var(--manila-lt), var(--manila) 70%, var(--manila-dk));
+      box-shadow: inset -22px 0 22px -22px rgba(0, 0, 0, .55);
+    }
+    .flap-right { border-radius: 0 4px 4px 0; box-shadow: inset 22px 0 22px -22px rgba(0, 0, 0, .55); }
+    .flap-right::before {
+      content: ""; position: absolute; bottom: 100%; right: 12%; width: 34%; height: 22px; border-radius: 9px 9px 0 0;
+      background: var(--manila-lt) var(--grain);
+    }
+    .face-out {
+      display: flex; flex-direction: column; gap: 12px; position: absolute; inset: 0; padding: 34px;
+      border-radius: 4px 0 0 4px; transform: rotateY(180deg);
+      -webkit-backface-visibility: hidden; backface-visibility: hidden;
+      background-color: var(--manila);
+      background-image: var(--grain), linear-gradient(176deg, var(--manila-lt), var(--manila) 42%, var(--manila-dk));
+    }
+    .fo-label { font: 700 .74rem/1.2 var(--f-type); letter-spacing: .2em; text-transform: uppercase; color: var(--print); }
+    .fo-brand { font: 800 3.4rem/.95 var(--f-head); font-variation-settings: "opsz" 144; }
+    .fo-client { font: 400 1rem/1.4 var(--f-type); color: var(--ink-soft); }
+    .fo-stamp { position: static; align-self: flex-start; margin-top: 30px; font-size: 1.7rem; }
+  }
+
+  /* Viewer (dialog) */
+  .viewer {
+    width: 100%; height: 100%; max-width: none; max-height: none; margin: 0; padding: 0; border: 0;
+    background: transparent; color: var(--ink); overflow: auto; overscroll-behavior: contain;
+  }
+  .viewer::backdrop { background: rgba(26, 17, 11, .8); }
+  .viewer-scroll { min-height: 100%; display: flex; justify-content: center; align-items: flex-start; padding: 72px var(--gut) 48px; }
+  .viewer-panel { position: relative; width: min(1080px, 100%); transition: opacity .3s ease, transform .4s cubic-bezier(.2, .9, .3, 1.15); }
+  .viewer.is-entering .viewer-panel, .viewer.is-leaving .viewer-panel { opacity: 0; transform: translateY(28px) scale(.97); }
+  .viewer .folder { margin-top: 0; }
+  .viewer-close {
+    position: absolute; right: 0; top: -54px; min-height: 40px; padding: 8px 14px;
+    background: var(--desk-deep); color: var(--cream); border: 1px solid var(--cream-soft); border-radius: 2px;
+    font: 700 .8rem/1 var(--f-type); letter-spacing: .12em; text-transform: uppercase; cursor: pointer;
+  }
+  .viewer-close:hover { background: var(--desk); }
+  .viewer-close:focus-visible { outline: 3px solid var(--cream); outline-offset: 3px; }
+  .flap-left, .flap-right { transition: transform .8s cubic-bezier(.3, 1.2, .4, 1), opacity .35s ease; }
+  @media (min-width: 900px) {
+    .folder.is-closed .flap-left { transform: rotateY(180deg); }
+    .folder.is-closed .flap-right .sheet { opacity: 0; }
+    .flap-right .sheet { transition: opacity .3s ease .25s; }
+  }
+  @media (max-width: 899px) {
+    .folder.is-closed .flap-left { opacity: 0; transform: translateY(18px); }
+    .folder.is-closed .flap-right { opacity: 0; transform: translateY(36px); }
+    .flap-right { transition-delay: .08s; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .jacket, .flap-left, .flap-right, .flap-right .sheet, .viewer-panel { transition: none !important; }
+    .is-pending .sig, .is-pending .rstamp, .is-pending .seal { clip-path: none; opacity: 1; }
+  }
+</style>
+</head>
+<body>
+
+<svg class="defs" aria-hidden="true" focusable="false">
+  <!-- Rubber-stamp ink: punches small uneven gaps, then nudges the edges. -->
+  <filter id="ink" x="-8%" y="-12%" width="116%" height="124%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" seed="7" result="n"/>
+    <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  -2.6 0 0 0 2" result="mask"/>
+    <feComposite in="SourceGraphic" in2="mask" operator="in" result="inked"/>
+    <feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="1" seed="3" result="warp"/>
+    <feDisplacementMap in="inked" in2="warp" scale="2.2" xChannelSelector="R" yChannelSelector="G"/>
+  </filter>
+  <symbol id="clip" viewBox="0 0 26 64">
+    <path d="M9 18 V46 a4 4 0 0 0 8 0 V10 a7 7 0 0 0 -14 0 V50 a10 10 0 0 0 20 0 V20" fill="none" stroke="#6f7378" stroke-width="2.6" stroke-linecap="round"/>
+    <path d="M9 18 V46 a4 4 0 0 0 8 0 V10 a7 7 0 0 0 -14 0 V50 a10 10 0 0 0 20 0 V20" fill="none" stroke="#c9cdd2" stroke-width="1" stroke-linecap="round" transform="translate(-.5 -.5)"/>
+  </symbol>
+</svg>
+
+<a class="skip" href="#desk">Skip to the jackets</a>
+
+<header class="topbar">
+  <p class="who"><span class="who-tag" aria-hidden="true">WM</span><span class="who-name">Wally Mostafa</span></p>
+  <p class="era">Account work · Sep 2010 to Jul 2018</p>
+</header>
+
+<main>
+  <!-- ═══ Hero: the desk ═══ -->
+  <section class="hero" id="desk" aria-labelledby="hero-h">
+    <div class="hero-copy">
+      <p class="eyebrow">Six brands, six job jackets</p>
+      <h1 id="hero-h">Eight years of jobs, signed off.</h1>
+      <p class="lede">I ran pharma and consumer accounts at five agencies in New York and San Diego. One folder per brand; open any of them.</p>
+      <p class="sticky" aria-hidden="true">Pull a file. Esc puts it back.</p>
+    </div>
+
+    <div class="desk">
+      <span class="ring" aria-hidden="true"></span>
+      <ol class="stack" aria-label="Job jackets, one per brand">
+        <li class="slot is-front" style="--c:5;--x:8px;--r:.6deg;--tab:62%">
+          <a class="jacket" href="#job-nuvigil" aria-label="NUVIGIL, Teva. FCB Health, 2011 to 2013. Open the job jacket.">
+            <span class="tab" aria-hidden="true">NUVIGIL</span>
+            <span class="jhead" aria-hidden="true"><span>Teva · FCB Health</span><span>2011–2013</span></span>
+            <span class="jbody" aria-hidden="true">
+              <span class="jmain">
+                <span class="jform">Job jacket</span>
+                <span class="jbrand">NUVIGIL</span>
+                <span class="jline">National Night Shift Workers' Day</span>
+                <span class="jfields">
+                  <span><b>Client</b> Teva</span>
+                  <span><b>Agency</b> FCB Health, NY</span>
+                  <span class="opt"><b>Role</b> Asst. AE to AE</span>
+                </span>
+              </span>
+              <span class="jslip">
+                <svg class="paperclip" aria-hidden="true"><use href="#clip"/></svg>
+                <span class="jslip-h">Routing</span>
+                <span class="jrow">AE<i class="box"><span class="sig">WM</span></i></span>
+                <span class="jrow">AS<i class="box"><span class="sig">WM</span></i></span>
+                <span class="jrow">CD<i class="box"><span class="sig">WM</span></i></span>
+                <span class="jrow">MED-LEGAL<i class="box"><span class="sig">WM</span></i></span>
+                <span class="jrow">CLIENT<i class="box"><span class="sig">WM</span></i></span>
+              </span>
+              <span class="approved">Approved</span>
+            </span>
+          </a>
+        </li>
+        <li class="slot" style="--c:4;--x:14px;--r:-1.4deg;--tab:36%">
+          <a class="jacket" href="#job-namenda" aria-label="Namenda XR, Actavis. FCB Health, 2014 to 2015. Open the job jacket.">
+            <span class="tab" aria-hidden="true">Namenda XR</span>
+            <span class="jhead" aria-hidden="true"><span>Actavis · FCB Health</span><span>2014–2015</span></span>
+            <span class="jbody" aria-hidden="true"><span class="jmain"><span class="jform">Job jacket</span><span class="jbrand">Namenda XR</span></span></span>
+          </a>
+        </li>
+        <li class="slot" style="--c:3;--x:0px;--r:1.5deg;--tab:10%">
+          <a class="jacket" href="#job-xyrem" aria-label="XYREM, Jazz Pharmaceuticals. Scout Marketing, 2015 to 2018. Open the job jacket.">
+            <span class="tab" aria-hidden="true">XYREM</span>
+            <span class="jhead" aria-hidden="true"><span>Jazz · Scout Marketing</span><span>2015–2018</span></span>
+            <span class="jbody" aria-hidden="true"><span class="jmain"><span class="jform">Job jacket</span><span class="jbrand">XYREM</span></span></span>
+          </a>
+        </li>
+        <li class="slot" style="--c:2;--x:16px;--r:-1deg;--tab:58%">
+          <a class="jacket" href="#job-prevenar" aria-label="Prevenar 13, Pfizer. RosettaWishbone, 2010 to 2011. Open the job jacket.">
+            <span class="tab" aria-hidden="true">Prevenar 13</span>
+            <span class="jhead" aria-hidden="true"><span>Pfizer · RosettaWishbone</span><span>2010–2011</span></span>
+            <span class="jbody" aria-hidden="true"><span class="jmain"><span class="jform">Job jacket</span><span class="jbrand">Prevenar 13</span></span></span>
+          </a>
+        </li>
+        <li class="slot" style="--c:1;--x:4px;--r:1.2deg;--tab:30%">
+          <a class="jacket" href="#job-lipitor" aria-label="Lipitor and Zoloft, Pfizer. Cline Davis and Mann, 2013. Open the job jacket.">
+            <span class="tab" aria-hidden="true">Lipitor + Zoloft</span>
+            <span class="jhead" aria-hidden="true"><span>Pfizer · Cline Davis &amp; Mann</span><span>2013</span></span>
+            <span class="jbody" aria-hidden="true"><span class="jmain"><span class="jform">Job jacket</span><span class="jbrand">Lipitor + Zoloft</span></span></span>
+          </a>
+        </li>
+        <li class="slot" style="--c:0;--x:20px;--r:-1.6deg;--tab:4%">
+          <a class="jacket" href="#job-toughmudder" aria-label="Tough Mudder, PDI and Nice-Pak. Barker DZP, 2013 to 2014. Open the job jacket.">
+            <span class="tab" aria-hidden="true">Tough Mudder + PDI + Nice-Pak</span>
+            <span class="jhead" aria-hidden="true"><span>Barker DZP, New York</span><span>2013–2014</span></span>
+            <span class="jbody" aria-hidden="true"><span class="jmain"><span class="jform">Job jacket</span><span class="jbrand">Tough Mudder</span></span></span>
+          </a>
+        </li>
+      </ol>
+      <button class="intro-ctl" type="button" hidden><svg viewBox="0 0 10 10" aria-hidden="true"><rect x="1" y="1" width="3" height="8"/><rect x="6" y="1" width="3" height="8"/></svg><span>Pause intro</span></button>
+    </div>
+  </section>
+
+  <!-- ═══ The jackets, opened (static without JS; the desk opens these with JS) ═══ -->
+  <section class="section files" id="files" aria-labelledby="files-h">
+    <div class="section-head">
+      <p class="eyebrow">In the jackets</p>
+      <h2 id="files-h">The jackets, opened</h2>
+    </div>
+
+    <article class="file" id="job-nuvigil" aria-labelledby="job-nuvigil-h">
+      <div class="folder">
+        <div class="flap flap-left">
+          <div class="face face-in">
+            <p class="file-kicker">Job jacket</p>
+            <h3 class="file-brand" id="job-nuvigil-h">NUVIGIL</h3>
+            <p class="file-sub">Teva · National Night Shift Workers' Day</p>
+            <div class="ticket paper">
+              <p class="form-title">Job ticket</p>
+              <dl>
+                <div><dt>Client</dt><dd>Teva</dd></div>
+                <div><dt>Brand</dt><dd>NUVIGIL</dd></div>
+                <div><dt>Agency</dt><dd>FCB Health, New York</dd></div>
+                <div><dt>Dates</dt><dd>Apr 2011 to Sep 2013</dd></div>
+                <div><dt>Role</dt><dd>Assistant Account Executive to Account Executive</dd></div>
+              </dl>
+            </div>
+            <div class="slip paper" aria-hidden="true">
+              <svg class="paperclip"><use href="#clip"/></svg>
+              <span class="jslip-h">Routing</span>
+              <span class="jrow">AE<i class="box"><span class="sig">WM</span></i></span>
+              <span class="jrow">AS<i class="box"><span class="sig">WM</span></i></span>
+              <span class="jrow">CD<i class="box"><span class="sig">WM</span></i></span>
+              <span class="jrow">MED-LEGAL<i class="box"><span class="sig">WM</span></i></span>
+              <span class="jrow">CLIENT<i class="box"><span class="sig">WM</span></i></span>
+            </div>
+          </div>
+          <div class="face face-out" aria-hidden="true">
+            <span class="fo-label">Job jacket</span><span class="fo-brand">NUVIGIL</span><span class="fo-client">Teva · FCB Health · 2011–2013</span>
+            <span class="approved fo-stamp">Approved</span>
+          </div>
+        </div>
+        <div class="flap flap-right">
+          <div class="sheet paper">
+            <h4>Brief</h4>
+            <p>An unbranded campaign for National Night Shift Workers' Day. I managed it across the NASDAQ board in Times Square, national TV, Xbox Live, radio, outdoor and consumer journals, working through the media, digital and print vendors.</p>
+            <p>Alongside it, I coordinated the NUVIGIL.com consumer rebrand for desktop and mobile, and the launch of a CRM patient support program with its online patient community.</p>
+            <h4>Outcome</h4>
+            <p>The campaign won the 2013 Manny Award for Best Unbranded Campaign. The NUVIGIL.com HCP site and sales aid, which I worked on alongside the HCP team, both won 2011 Pharma Choice awards.</p>
+            <p>I owned weekly client status and financial reporting, plus OPDP and review-committee submissions, across the $10M consumer business, and contributed to annual strategic recommendations.</p>
+            <ul class="marks">
+              <li class="seal" style="--rot:-5deg"><strong>2013</strong>Manny Award<br>Best Unbranded Campaign</li>
+              <li class="seal sm" style="--rot:7deg"><strong>2011</strong>Pharma Choice<br>HCP site + sales aid</li>
+              <li class="rstamp" style="--rot:-3deg"><span class="big">$10M</span><span class="small">Consumer business</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="file" id="job-namenda" aria-labelledby="job-namenda-h">
+      <div class="folder">
+        <div class="flap flap-left">
+          <div class="face face-in">
+            <p class="file-kicker">Job jacket</p>
+            <h3 class="file-brand" id="job-namenda-h">Namenda XR</h3>
+            <p class="file-sub">Actavis · Direct-to-consumer launch</p>
+            <div class="ticket paper">
+              <p class="form-title">Job ticket</p>
+              <dl>
+                <div><dt>Client</dt><dd>Actavis</dd></div>
+                <div><dt>Brand</dt><dd>Namenda XR</dd></div>
+                <div><dt>Agency</dt><dd>FCB Health, New York</dd></div>
+                <div><dt>Dates</dt><dd>Jun 2014 to Jun 2015</dd></div>
+                <div><dt>Role</dt><dd>Senior Account Executive</dd></div>
+              </dl>
+            </div>
+            <div class="slip paper" aria-hidden="true">
+              <svg class="paperclip"><use href="#clip"/></svg>
+              <span class="jslip-h">Routing</span>
+              <span class="jrow">AE<i class="box"><span class="sig">WM</span></i></span>
+              <span class="jrow">AS<i class="box"><span class="sig">WM</span></i></span>
+              <span class="jrow">CD<i class="box"><span class="sig">WM</span></i></span>
+              <span class="jrow">MED-LEGAL<i class="box"><span class="sig">WM</span></i></span>
+              <span class="jrow">CLIENT<i class="box"><span class="sig">WM</span></i></span>
+            </div>
+          </div>
+          <div class="face face-out" aria-hidden="true">
+            <span class="fo-label">Job jacket</span><span class="fo-brand">Namenda XR</span><span class="fo-client">Actavis · FCB Health · 2014–2015</span>
+            <span class="approved fo-stamp">Approved</span>
+          </div>
+        </div>
+        <div class="flap flap-right">
+          <div class="sheet paper">
+            <h4>Brief</h4>
+            <p>The direct-to-consumer launch on the agency's largest pharma business. I was one of two consumer account leads, managing a $20M brand budget.</p>
+            <p>I owned the broadcast workstream for three national TV commercials in one year: market research, med-legal review, FDA preclearance, pre- and post-production, talent and location coordination, director searches and network clearances.</p>
+            <h4>Outcome</h4>
+            <p>The spots drove a 45% increase in new-to-brand consumers within seven weeks.</p>
+            <p>I also led the launch of an unbranded Alzheimer's caregiver community site (support resources, sponsorship exploration, PR pull-through) and oversaw the account's Assistant Account Executive across in-office tactics, national print and sales rep materials.</p>
+            <ul class="marks">
+              <li class="rstamp" style="--rot:-4deg"><span class="big">+45%</span><span class="small">New-to-brand · 7 weeks</span></li>
+              <li class="rstamp brown" style="--rot:3deg"><span class="big">$20M</span><span class="small">Brand budget</span></li>
+              <li class="label-sticker">3 national TV spots, one year</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="file" id="job-xyrem" aria-labelledby="job-xyrem-h">
+      <div class="folder">
+        <div class="flap flap-left">
+          <div class="face face-in">
+            <p class="file-kicker">Job jacket</p>
+            <h3 class="file-brand" id="job-xyrem-h">XYREM</h3>
+            <p class="file-sub">Jazz Pharmaceuticals · Consumer</p>
+            <div class="ticket paper">
+              <p class="form-title">Job ticket</p>
+              <dl>
+                <div><dt>Client</dt><dd>Jazz Pharmaceuticals</dd></div>
+                <div><dt>Brand</dt><dd>XYREM</dd></div>
+                <div><dt>Agency</dt><dd>Scout Marketing, San Diego</dd></div>
+                <div><dt>Dates</dt><dd>Jun 2015 to Jul 2018</dd></div>
+                <div><dt>Role</dt><dd>Account Supervisor / Digital Strategist, promoted from Senior Account Executive</dd></div>
+              </dl>
+            </div>
+            <div class="slip paper" aria-hidden="true">
+              <svg class="paperclip"><use href="#clip"/></svg>
+              <span class="jslip-h">Routing</span>
+              <span class="jrow">AE<i class="box"><span class="sig">WM</span></i></span>
+              <span class="jrow">AS<i class="box"><span class="sig">WM</span></i></span>
+              <span class="jrow">CD<i class="box"><span class="sig">WM</span></i></span>
+              <span class="jrow">MED-LEGAL<i class="box"><span class="sig">WM</span></i></span>
+              <span class="jrow">CLIENT<i class="box"><span class="sig">WM</span></i></span>
+            </div>
+          </div>
+          <div class="face face-out" aria-hidden="true">
+            <span class="fo-label">Job jacket</span><span class="fo-brand">XYREM</span><span class="fo-client">Jazz · Scout Marketing · 2015–2018</span>
+            <span class="approved fo-stamp">Approved</span>
+          </div>
+        </div>
+        <div class="flap flap-right">
+          <div class="sheet paper">
+            <h4>Brief</h4>
+            <p>Consumer work for XYREM: unbranded campaigns across digital, print and in-office channels that lifted traffic and engagement on the disease-state site.</p>
+            <p>I led the launch of the first unbranded social campaign on Facebook and YouTube for the brand and for Jazz, built around real patients telling their own stories.</p>
+            <h4>Outcome</h4>
+            <p>I oversaw an unbranded digital campaign that bridged the disease-state and branded work. Its banners held a 0.37% click-through rate against a 0.17% industry benchmark and doubled qualified traffic to the brand site.</p>
+            <ul class="marks">
+              <li class="rstamp" style="--rot:-3deg"><span class="big">0.37%</span><span class="small">CTR vs 0.17% benchmark</span></li>
+              <li class="rstamp brown" style="--rot:4deg"><span class="big">2x</span><span class="small">Qualified traffic</span></li>
+              <li class="label-sticker">First unbranded social for Jazz</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="file" id="job-prevenar" aria-labelledby="job-prevenar-h">
+      <div class="folder">
+        <div class="flap flap-left">
+          <div class="face face-in">
+            <p class="file-kicker">Job jacket</p>
+            <h3 class="file-brand" id="job-prevenar-h">Prevenar 13</h3>
+            <p class="file-sub">Pfizer · Adult pre-launch</p>
+            <div class="ticket paper">
+              <p class="form-title">Job ticket</p>
+              <dl>
+                <div><dt>Client</dt><dd>Pfizer</dd></div>
+                <div><dt>Brand</dt><dd>Prevenar 13, adult pre-launch</dd></div>
+                <div><dt>Agency</dt><dd>RosettaWishbone, New York</dd></div>
+                <div><dt>Dates</dt><dd>Sep 2010 to Mar 2011</dd></div>
+                <div><dt>Role</dt><dd>Account Coordinator</dd></div>
+              </dl>
+            </div>
+            <div class="slip paper" aria-hidden="true">
+              <svg class="paperclip"><use href="#clip"/></svg>
+              <span class="jslip-h">Routing</span>
+              <span class="jrow">AE<i class="box"><span class="sig">WM</span></i></span>
+              <span class="jrow">AS<i class="box"><span class="sig">WM</span></i></span>
+              <span class="jrow">CD<i class="box"><span class="sig">WM</span></i></span>
+              <span class="jrow">MED-LEGAL<i class="box"><span class="sig">WM</span></i></span>
+              <span class="jrow">CLIENT<i class="box"><span class="sig">WM</span></i></span>
+            </div>
+          </div>
+          <div class="face face-out" aria-hidden="true">
+            <span class="fo-label">Job jacket</span><span class="fo-brand">Prevenar 13</span><span class="fo-client">Pfizer · RosettaWishbone · 2010–2011</span>
+            <span class="approved fo-stamp">Approved</span>
+          </div>
+        </div>
+        <div class="flap flap-right">
+          <div class="sheet paper">
+            <h4>Brief</h4>
+            <p>A global, unbranded pneumococcal disease awareness campaign ahead of the adult launch of Prevenar 13. I was the primary client contact across brand teams, national affiliates and vendors.</p>
+            <h4>Outcome</h4>
+            <p>The campaign was award-winning. I facilitated an Africa and Middle East advisory board in Dubai, and owned project briefs, scopes of work, key opinion leader communications, and client status and financial reports.</p>
+            <ul class="marks">
+              <li class="rstamp brown" style="--rot:-2deg"><span class="big">Global</span><span class="small">Unbranded awareness</span></li>
+              <li class="label-sticker">Advisory board · Dubai</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="file" id="job-lipitor" aria-labelledby="job-lipitor-h">
+      <div class="folder">
+        <div class="flap flap-left">
+          <div class="face face-in">
+            <p class="file-kicker">Job jacket</p>
+            <h3 class="file-brand" id="job-lipitor-h">Lipitor + Zoloft</h3>
+            <p class="file-sub">Pfizer · Loss of exclusivity</p>
+            <div class="ticket paper">
+              <p class="form-title">Job ticket</p>
+              <dl>
+                <div><dt>Client</dt><dd>Pfizer</dd></div>
+                <div><dt>Brand</dt><dd>Lipitor, Zoloft</dd></div>
+                <div><dt>Agency</dt><dd>Cline Davis &amp; Mann, New York</dd></div>
+                <div><dt>Dates</dt><dd>Sep 2013 to Dec 2013</dd></div>
+                <div><dt>Role</dt><dd>Senior Account Executive</dd></div>
+              </dl>
+            </div>
+            <div class="slip paper" aria-hidden="true">
+              <svg class="paperclip"><use href="#clip"/></svg>
+              <span class="jslip-h">Routing</span>
+              <span class="jrow">AE<i class="box"><span class="sig">WM</span></i></span>
+              <span class="jrow">AS<i class="box"><span class="sig">WM</span></i></span>
+              <span class="jrow">CD<i class="box"><span class="sig">WM</span></i></span>
+              <span class="jrow">MED-LEGAL<i class="box"><span class="sig">WM</span></i></span>
+              <span class="jrow">CLIENT<i class="box"><span class="sig">WM</span></i></span>
+            </div>
+          </div>
+          <div class="face face-out" aria-hidden="true">
+            <span class="fo-label">Job jacket</span><span class="fo-brand">Lipitor + Zoloft</span><span class="fo-client">Pfizer · Cline Davis &amp; Mann · 2013</span>
+            <span class="approved fo-stamp">Approved</span>
+          </div>
+        </div>
+        <div class="flap flap-right">
+          <div class="sheet paper">
+            <h4>Brief</h4>
+            <p>Lipitor was going through loss of exclusivity. I used campaign metrics to shape Pfizer's digital recommendations for the brand's online presence and its loyalty program.</p>
+            <h4>Outcome</h4>
+            <p>On Zoloft, I piloted a savings offer to test market response.</p>
+            <ul class="marks">
+              <li class="rstamp brown" style="--rot:-3deg"><span class="big">LOE</span><span class="small">Loss of exclusivity</span></li>
+              <li class="rstamp" style="--rot:4deg"><span class="big">Pilot</span><span class="small">Savings offer</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="file" id="job-toughmudder" aria-labelledby="job-toughmudder-h">
+      <div class="folder">
+        <div class="flap flap-left">
+          <div class="face face-in">
+            <p class="file-kicker">Job jacket</p>
+            <h3 class="file-brand" id="job-toughmudder-h">Tough Mudder + PDI + Nice-Pak</h3>
+            <p class="file-sub">Consumer · Loyalty, print, digital, social</p>
+            <div class="ticket paper">
+              <p class="form-title">Job ticket</p>
+              <dl>
+                <div><dt>Client</dt><dd>Tough Mudder; PDI and Nice-Pak</dd></div>
+                <div><dt>Brand</dt><dd>Tough Mudder loyalty program; PDI; Nice-Pak</dd></div>
+                <div><dt>Agency</dt><dd>Barker DZP, New York</dd></div>
+                <div><dt>Dates</dt><dd>Dec 2013 to May 2014</dd></div>
+                <div><dt>Role</dt><dd>Senior Account Executive</dd></div>
+              </dl>
+            </div>
+            <div class="slip paper" aria-hidden="true">
+              <svg class="paperclip"><use href="#clip"/></svg>
+              <span class="jslip-h">Routing</span>
+              <span class="jrow">AE<i class="box"><span class="sig">WM</span></i></span>
+              <span class="jrow">AS<i class="box"><span class="sig">WM</span></i></span>
+              <span class="jrow">CD<i class="box"><span class="sig">WM</span></i></span>
+              <span class="jrow">MED-LEGAL<i class="box"><span class="sig">WM</span></i></span>
+              <span class="jrow">CLIENT<i class="box"><span class="sig">WM</span></i></span>
+            </div>
+          </div>
+          <div class="face face-out" aria-hidden="true">
+            <span class="fo-label">Job jacket</span><span class="fo-brand">Tough Mudder</span><span class="fo-client">PDI · Nice-Pak · Barker DZP · 2013–2014</span>
+            <span class="approved fo-stamp">Approved</span>
+          </div>
+        </div>
+        <div class="flap flap-right">
+          <div class="sheet paper">
+            <h4>Brief</h4>
+            <p>I led the social campaign for a new Tough Mudder loyalty program.</p>
+            <h4>Also on file</h4>
+            <p>I oversaw PDI and Nice-Pak, the agency's largest account, across print, digital and social.</p>
+            <ul class="marks">
+              <li class="rstamp" style="--rot:-3deg"><span class="big">Largest</span><span class="small">Account at the agency</span></li>
+              <li class="label-sticker">Loyalty program · social launch</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <!-- ═══ The route ═══ -->
+  <section class="section" aria-labelledby="route-h">
+    <div class="section-head">
+      <p class="eyebrow">Routing</p>
+      <h2 id="route-h">How a job moves</h2>
+      <p>Nothing leaves an agency until the routing slip is signed. These are the stops, with the part of each one I handled.</p>
+    </div>
+    <div class="route-slip paper" data-reveal>
+      <svg class="paperclip" aria-hidden="true"><use href="#clip"/></svg>
+      <p class="rs-head" aria-hidden="true"><span>Routing slip</span><span>Initial each stop</span></p>
+      <ol>
+        <li class="rs-row" style="--k:0">
+          <p class="rs-dept"><strong>AE</strong><span>Account executive</span></p>
+          <span class="rs-box" aria-hidden="true"><span class="sig">WM</span></span>
+          <p class="rs-note">Weekly client status and financial reports across the $10M NUVIGIL consumer business. Briefs, scopes of work and key opinion leader communications on Prevenar 13.</p>
+        </li>
+        <li class="rs-row" style="--k:1">
+          <p class="rs-dept"><strong>AS</strong><span>Account supervisor</span></p>
+          <span class="rs-box" aria-hidden="true"><span class="sig">WM</span></span>
+          <p class="rs-note">Promoted at Scout to lead XYREM consumer work for Jazz, including the brand's first unbranded social campaign.</p>
+        </li>
+        <li class="rs-row" style="--k:2">
+          <p class="rs-dept"><strong>CD</strong><span>Creative</span></p>
+          <span class="rs-box" aria-hidden="true"><span class="sig">WM</span></span>
+          <p class="rs-note">Director searches, talent and location, pre- and post-production for three national Namenda XR spots in one year.</p>
+        </li>
+        <li class="rs-row" style="--k:3">
+          <p class="rs-dept"><strong>MED-LEGAL</strong><span>Review</span></p>
+          <span class="rs-box" aria-hidden="true"><span class="sig">WM</span></span>
+          <p class="rs-note">OPDP and review-committee submissions on NUVIGIL. Med-legal review, FDA preclearance and network clearances on Namenda XR.</p>
+          <span class="margin-note" aria-hidden="true">add fair balance</span>
+        </li>
+        <li class="rs-row" style="--k:4">
+          <p class="rs-dept"><strong>CLIENT</strong><span>Sign-off</span></p>
+          <span class="rs-box" aria-hidden="true"><span class="sig">WM</span></span>
+          <p class="rs-note">Primary client contact across brand teams, national affiliates and vendors on Prevenar 13. One of two consumer leads on FCB Health's largest pharma business.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ═══ Stamped ═══ -->
+  <section class="section" aria-labelledby="proof-h">
+    <div class="section-head">
+      <p class="eyebrow">Stamped</p>
+      <h2 id="proof-h">What came back</h2>
+      <p>Where a job has a number or an award on file, it's stamped here.</p>
+    </div>
+    <ul class="ledger paper" data-reveal>
+      <li style="--k:0">
+        <span class="rstamp" style="--rot:-4deg"><span class="big">+45%</span><span class="small">New-to-brand</span></span>
+        <p>Increase in new-to-brand consumers within seven weeks of the Namenda XR TV spots.</p>
+      </li>
+      <li style="--k:1">
+        <span class="rstamp brown" style="--rot:3deg"><span class="big">0.37%</span><span class="small">CTR vs 0.17%</span></span>
+        <p>XYREM banner click-through, against a 0.17% industry benchmark. Qualified traffic to the brand site doubled.</p>
+      </li>
+      <li style="--k:2">
+        <span class="seal" style="--rot:-6deg"><strong>2013</strong>Manny Award<br>Best Unbranded Campaign</span>
+        <p>National Night Shift Workers' Day, the unbranded NUVIGIL campaign for Teva.</p>
+      </li>
+      <li style="--k:3">
+        <span class="rstamp brown" style="--rot:-2deg"><span class="big">$20M</span><span class="small">Brand budget</span></span>
+        <p>The Namenda XR direct-to-consumer launch, as one of two consumer account leads.</p>
+      </li>
+      <li style="--k:4">
+        <span class="rstamp" style="--rot:2deg"><span class="big">$10M</span><span class="small">Consumer business</span></span>
+        <p>NUVIGIL: weekly status and financial reporting, plus OPDP and review-committee submissions.</p>
+      </li>
+      <li style="--k:5">
+        <span class="seal" style="--rot:5deg"><strong>2011</strong>Pharma Choice<br>HCP site + sales aid</span>
+        <p>The NUVIGIL.com HCP site and sales aid, which I worked on alongside the HCP team.</p>
+      </li>
+    </ul>
+  </section>
+
+  <!-- ═══ Paper trail ═══ -->
+  <section class="section" aria-labelledby="trail-h">
+    <div class="section-head">
+      <p class="eyebrow">Index</p>
+      <h2 id="trail-h">The paper trail</h2>
+      <p>Six roles, filed oldest first.</p>
+    </div>
+    <ol class="cards">
+      <li class="card">
+        <p class="card-top"><span aria-hidden="true">No. 1</span><span>Sep 2010 to Mar 2011</span></p>
+        <h3>Account Coordinator</h3>
+        <p class="card-org">RosettaWishbone, New York</p>
+        <p class="card-brands">Pfizer · Prevenar 13</p>
+      </li>
+      <li class="card">
+        <p class="card-top"><span aria-hidden="true">No. 2</span><span>Apr 2011 to Sep 2013</span></p>
+        <h3>Assistant Account Executive to Account Executive</h3>
+        <p class="card-org">FCB Health, New York</p>
+        <p class="card-brands">Teva · NUVIGIL</p>
+      </li>
+      <li class="card">
+        <p class="card-top"><span aria-hidden="true">No. 3</span><span>Sep 2013 to Dec 2013</span></p>
+        <h3>Senior Account Executive</h3>
+        <p class="card-org">Cline Davis &amp; Mann, New York</p>
+        <p class="card-brands">Pfizer · Lipitor, Zoloft</p>
+      </li>
+      <li class="card">
+        <p class="card-top"><span aria-hidden="true">No. 4</span><span>Dec 2013 to May 2014</span></p>
+        <h3>Senior Account Executive</h3>
+        <p class="card-org">Barker DZP, New York</p>
+        <p class="card-brands">Tough Mudder · PDI · Nice-Pak</p>
+      </li>
+      <li class="card">
+        <p class="card-top"><span aria-hidden="true">No. 5</span><span>Jun 2014 to Jun 2015</span></p>
+        <h3>Senior Account Executive</h3>
+        <p class="card-org">FCB Health, New York</p>
+        <p class="card-brands">Actavis · Namenda XR</p>
+      </li>
+      <li class="card">
+        <p class="card-top"><span aria-hidden="true">No. 6</span><span>Jun 2015 to Jul 2018</span></p>
+        <h3>Account Supervisor / Digital Strategist</h3>
+        <p class="card-org">Scout Marketing, San Diego</p>
+        <p class="card-brands">Jazz · XYREM</p>
+        <p class="card-note">Promoted from Senior AE</p>
+      </li>
+    </ol>
+    <p class="later">Since 2018: UX leadership and AI implementation. I design and build the tools now, too.</p>
+  </section>
+
+  <!-- ═══ Close ═══ -->
+  <section class="close" aria-labelledby="close-h">
+    <div class="close-slip paper">
+      <svg class="paperclip" aria-hidden="true"><use href="#clip"/></svg>
+      <p class="close-label" aria-hidden="true"><span>Routing slip</span><span>Final</span></p>
+      <span class="close-sign" aria-hidden="true"><span class="rs-box"><span class="sig">WM</span></span></span>
+      <h2 id="close-h">Thanks for stopping by.</h2>
+      <p class="close-links">
+        <a href="../../resume.html">Resume</a>
+        <a href="https://linkedin.com/in/wallymo" target="_blank" rel="noopener">LinkedIn</a>
+      </p>
+    </div>
+  </section>
+</main>
+
+<dialog class="viewer" id="viewer">
+  <div class="viewer-scroll">
+    <div class="viewer-panel">
+      <button class="viewer-close" type="button">Close file (Esc)</button>
+      <div class="viewer-slot"></div>
+    </div>
+  </div>
+</dialog>
+
+<script>
+(() => {
+  'use strict';
+  const REDUCED = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const clamp = (v, a = 0, b = 1) => Math.min(b, Math.max(a, v));
+
+  /* ─────────────────────────────────────────────────────────────
+     Hero intro. Everything is a pure function of time T (seconds),
+     so window.__seek(t) paints any moment exactly.
+       0.10 to 1.75s  jackets slide in back-to-front and settle (spring overshoot)
+       1.70 to 3.26s  routing slip on the top jacket is initialed box by box
+       3.45 to 3.58s  APPROVED stamp lands
+       3.58 to 4.00s  top jacket shakes from the hit, then rests
+     The default CSS is the settled, signed state (no-JS and reduced motion).
+     ───────────────────────────────────────────────────────────── */
+  const stack = document.querySelector('.stack');
+  const slots = stack ? Array.from(stack.querySelectorAll('.slot')) : [];
+  const front = stack ? stack.querySelector('.slot.is-front') : null;
+  const sigs = front ? Array.from(front.querySelectorAll('.jslip .sig')) : [];
+  const stamp = front ? front.querySelector('.approved') : null;
+  const ctl = document.querySelector('.intro-ctl');
+
+  const SLIDE_START = 0.10, SLIDE_GAP = 0.13, SLIDE_DUR = 1.0;
+  const SIGN_START = 1.70, SIGN_GAP = 0.32, SIGN_DUR = 0.26;
+  const STAMP_START = 3.45, STAMP_DUR = 0.13;
+  const SHAKE_START = STAMP_START + STAMP_DUR;
+  const END = 4.1;
+
+  // Damped spring: 0 -> 1 with roughly 15% overshoot, then settles.
+  const spring = u => (u <= 0 ? 0 : u >= 1 ? 1 : 1 - Math.exp(-5.2 * u) * Math.cos(9.5 * u));
+
+  const plan = slots.map(s => {
+    const c = parseFloat(s.style.getPropertyValue('--c')) || 0;
+    return {
+      el: s, c,
+      start: SLIDE_START + c * SLIDE_GAP,
+      dx: 380 + c * 22,
+      dy: 150 - c * 22,
+      rot: (c % 2 ? -1 : 1) * (12 - c)
+    };
+  });
+
+  function paint(t) {
+    for (const p of plan) {
+      const u = clamp((t - p.start) / SLIDE_DUR);
+      const k = 1 - spring(u);
+      let ix = k * p.dx, iy = k * p.dy, ir = k * p.rot;
+      if (p.el === front && t > SHAKE_START) {
+        const d = t - SHAKE_START, a = Math.exp(-d * 13);
+        ix += Math.sin(d * 88) * 3.4 * a;
+        iy += Math.cos(d * 71) * 2.2 * a;
+        ir += Math.sin(d * 57) * 0.7 * a;
+      }
+      const o = t < p.start ? 0 : clamp((t - p.start) / 0.12);
+      const st = p.el.style;
+      st.setProperty('--ix', ix.toFixed(2) + 'px');
+      st.setProperty('--iy', iy.toFixed(2) + 'px');
+      st.setProperty('--ir', ir.toFixed(3) + 'deg');
+      st.setProperty('--o', o.toFixed(3));
+    }
+    sigs.forEach((g, i) => {
+      const q = clamp((t - (SIGN_START + i * SIGN_GAP)) / SIGN_DUR);
+      const eased = 1 - Math.pow(1 - q, 2);
+      g.style.clipPath = 'inset(0 ' + (100 - eased * 100).toFixed(1) + '% 0 0)';
+    });
+    if (stamp) {
+      const q = clamp((t - STAMP_START) / STAMP_DUR);
+      const scale = t < STAMP_START ? 1.9 : 1.9 - 0.9 * q * q;
+      const op = t < STAMP_START ? 0 : 0.92 * clamp(q * 1.6);
+      stamp.style.setProperty('--ss', scale.toFixed(3));
+      stamp.style.setProperty('--so', op.toFixed(3));
+    }
+  }
+
+  let T = 0, raf = 0, last = 0, playing = false, inView = true;
+
+  const ICONS = {
+    pause: '<rect x="1" y="1" width="3" height="8"/><rect x="6" y="1" width="3" height="8"/>',
+    play: '<path d="M2 1 L9 5 L2 9 Z"/>',
+    replay: '<path d="M5 1.2 A3.8 3.8 0 1 0 8.8 5 L7.4 5 A2.4 2.4 0 1 1 5 2.6 L5 4 L8 1.9 L5 0 Z"/>'
+  };
+  function setCtl(state) {
+    if (!ctl) return;
+    ctl.dataset.state = state;
+    ctl.querySelector('svg').innerHTML = ICONS[state];
+    ctl.querySelector('span').textContent = state === 'pause' ? 'Pause intro' : state === 'play' ? 'Play intro' : 'Replay intro';
+  }
+  function halt() { if (raf) { cancelAnimationFrame(raf); raf = 0; } }
+  function schedule() {
+    if (raf || !playing || !inView || document.hidden) return;
+    last = performance.now();
+    raf = requestAnimationFrame(frame);
+  }
+  function frame(now) {
+    raf = 0;
+    const dt = Math.min(0.05, Math.max(0, (now - last) / 1000));
+    last = now;
+    T = Math.min(END, T + dt);
+    paint(T);
+    if (T >= END) { playing = false; setCtl('replay'); return; }
+    schedule();
+  }
+
+  if (stack) {
+    if (REDUCED) {
+      paint(END);
+    } else {
+      paint(0);
+      playing = true;
+      if (ctl) { ctl.hidden = false; setCtl('pause'); }
+      if ('IntersectionObserver' in window) {
+        new IntersectionObserver(es => {
+          inView = es[es.length - 1].isIntersecting;
+          inView ? schedule() : halt();
+        }, { threshold: 0.05 }).observe(stack);
+      }
+      document.addEventListener('visibilitychange', () => (document.hidden ? halt() : schedule()));
+      schedule();
+    }
+    if (ctl) {
+      ctl.addEventListener('click', () => {
+        const s = ctl.dataset.state;
+        if (s === 'replay') { T = 0; paint(0); playing = true; setCtl('pause'); schedule(); }
+        else if (s === 'pause') { playing = false; halt(); setCtl('play'); }
+        else { playing = true; setCtl('pause'); schedule(); }
+      });
+    }
+  }
+
+  // Test hook: paint the hero intro at `seconds` and hold there.
+  window.__seek = seconds => {
+    halt();
+    playing = false;
+    T = clamp(Number(seconds) || 0, 0, END);
+    paint(T);
+    setCtl(T >= END ? 'replay' : 'play');
+    return T;
+  };
+
+  /* ─────────────────────────────────────────────────────────────
+     Opening a jacket. Without JS the jackets are anchor links to the
+     static "jackets, opened" section. With <dialog> support, the file's
+     own article is moved into a modal viewer and the cover swings open.
+     ───────────────────────────────────────────────────────────── */
+  const dlg = document.getElementById('viewer');
+  if (dlg && typeof dlg.showModal === 'function') {
+    const slotEl = dlg.querySelector('.viewer-slot');
+    const closeBtn = dlg.querySelector('.viewer-close');
+    let current = null, marker = null, returnTo = null, closing = false;
+    const timers = [];
+    const later = (fn, ms) => timers.push(setTimeout(fn, ms));
+    const clearTimers = () => { while (timers.length) clearTimeout(timers.pop()); };
+
+    document.documentElement.classList.add('js-files');
+
+    function openFile(id, trigger) {
+      const art = document.getElementById(id);
+      if (!art || !art.classList.contains('file') || current) return;
+      clearTimers();
+      returnTo = trigger || document.activeElement;
+      marker = document.createComment('file:' + id);
+      art.parentNode.insertBefore(marker, art);
+      slotEl.appendChild(art);
+      current = art;
+      const heading = art.querySelector('h3');
+      if (heading) dlg.setAttribute('aria-labelledby', heading.id);
+      const folder = art.querySelector('.folder');
+      if (!REDUCED) { folder.classList.add('is-closed'); dlg.classList.add('is-entering'); }
+      dlg.showModal();
+      dlg.scrollTop = 0;
+      closeBtn.focus();
+      if (!REDUCED) {
+        requestAnimationFrame(() => requestAnimationFrame(() => {
+          dlg.classList.remove('is-entering');
+          later(() => folder.classList.remove('is-closed'), 300);
+        }));
+      }
+    }
+
+    // Put the article back where it came from and return focus.
+    function restore() {
+      clearTimers();
+      closing = false;
+      dlg.classList.remove('is-entering', 'is-leaving');
+      if (!current) return;
+      const folder = current.querySelector('.folder');
+      if (folder) folder.classList.remove('is-closed');
+      if (marker && marker.parentNode) { marker.parentNode.insertBefore(current, marker); marker.remove(); }
+      current = null; marker = null;
+      if (returnTo && typeof returnTo.focus === 'function') returnTo.focus({ preventScroll: true });
+      returnTo = null;
+    }
+
+    function closeFile() {
+      if (!current || closing) return;
+      if (REDUCED) { dlg.close(); return; }
+      closing = true;
+      clearTimers();
+      const folder = current.querySelector('.folder');
+      folder.classList.add('is-closed');
+      later(() => dlg.classList.add('is-leaving'), 460);
+      later(() => { if (dlg.open) dlg.close(); else restore(); }, 780);
+    }
+
+    dlg.addEventListener('close', restore);
+    dlg.addEventListener('cancel', e => { e.preventDefault(); closeFile(); });
+    closeBtn.addEventListener('click', closeFile);
+    dlg.addEventListener('click', e => {
+      if (e.target === dlg || e.target.classList.contains('viewer-scroll')) closeFile();
+    });
+
+    document.querySelectorAll('.jacket').forEach(a => {
+      a.addEventListener('click', e => {
+        const id = (a.getAttribute('href') || '').slice(1);
+        if (!document.getElementById(id)) return;
+        e.preventDefault();
+        openFile(id, a);
+      });
+    });
+
+    // Deep link: #job-xyrem opens that jacket.
+    const hash = decodeURIComponent(location.hash.slice(1));
+    if (/^job-/.test(hash)) {
+      const trigger = document.querySelector('.jacket[href="#' + hash + '"]');
+      openFile(hash, trigger);
+    }
+  }
+
+  /* ─────────────────────────────────────────────────────────────
+     Small scroll moments: the route slip gets initialed and the
+     ledger stamps land when they come into view. Content is visible
+     by default; JS only hides it just before revealing it.
+     ───────────────────────────────────────────────────────────── */
+  if (!REDUCED && 'IntersectionObserver' in window) {
+    const targets = document.querySelectorAll('[data-reveal]');
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(en => {
+        if (!en.isIntersecting) return;
+        en.target.classList.remove('is-pending');
+        en.target.classList.add('is-in');
+        io.unobserve(en.target);
+      });
+    }, { threshold: 0.3 });
+    targets.forEach(el => {
+      const r = el.getBoundingClientRect();
+      if (r.top < window.innerHeight && r.bottom > 0) return; // already on screen: leave it as is
+      el.classList.add('is-pending');
+      io.observe(el);
+    });
+  }
+})();
+</script>
+</body>
+</html>

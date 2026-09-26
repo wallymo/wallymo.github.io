@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Status Report · Wally Mostafa</title>
+<meta name="robots" content="noindex">
+<meta name="description" content="Wally Mostafa's pharma agency account management work, 2010 to 2018, written up as a weekly client status report.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  /* Proof Grid tokens. */
+  :root {
+    --ink: #18191b;
+    --ink-soft: #43474d;
+    --ink-muted: #676c73;
+    --surface: #f7f7f4;
+    --paper: #ffffff;
+    --cobalt: #2454c6;
+    --pink: #e548a5;
+    --pink-deep: #a90f68;
+    --cyan: #079fc4;
+    --cyan-deep: #05789a;
+    --blue-wash: #eef3ff;
+    --pink-wash: #fff0f8;
+    --cyan-wash: #e6f6fa;
+    --font-display: 'Syne', sans-serif;
+    --font-body: 'Instrument Sans', sans-serif;
+    --font-mono: "SFMono-Regular", "SF Mono", Consolas, monospace;
+    --space-s: clamp(0.5rem, 1vw, 0.75rem);
+    --space-m: clamp(1rem, 2vw, 1.5rem);
+    --space-l: clamp(1.5rem, 3vw, 2.5rem);
+    --space-xl: clamp(2.5rem, 5vw, 4rem);
+    --space-2xl: clamp(4rem, 8vw, 7rem);
+    --max-w: 1140px;
+    --gutter: var(--space-l);
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { -webkit-font-smoothing: antialiased; overflow-x: clip; scroll-behavior: smooth; }
+  body { font-family: var(--font-body); font-size: clamp(1rem, 1.15vw, 1.0625rem); line-height: 1.65; color: var(--ink); background: var(--surface); overflow-x: clip; }
+  a { color: inherit; }
+  :focus-visible { outline: 2px solid var(--cobalt); outline-offset: 3px; }
+  .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap; }
+
+  /* ── Top bar ── */
+  .cbar {
+    position: sticky; top: 0; z-index: 50; display: flex; justify-content: space-between; align-items: center; gap: 1rem;
+    padding: 12px var(--gutter); background: rgb(247 247 244 / .92); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
+    border-bottom: 1px solid var(--ink);
+  }
+  .cbar b { font: 700 1.02rem/1 var(--font-display); letter-spacing: -.02em; white-space: nowrap; }
+  .cbar small { font: 700 .66rem/1.2 var(--font-mono); letter-spacing: .12em; color: var(--cobalt); text-transform: uppercase; text-align: right; }
+
+  /* ── Diagonal grid background ── */
+  .concept { position: relative; isolation: isolate; }
+  .concept::before {
+    content: ''; position: absolute; inset: 0; z-index: -1; pointer-events: none;
+    background-image:
+      repeating-linear-gradient(30deg, transparent 0, transparent 47px, rgb(229 72 165 / .05) 47px, rgb(229 72 165 / .05) 48px),
+      repeating-linear-gradient(-30deg, transparent 0, transparent 47px, rgb(36 84 198 / .05) 47px, rgb(36 84 198 / .05) 48px),
+      radial-gradient(circle at 8% 12%, rgb(7 159 196 / .10), transparent 30rem),
+      radial-gradient(circle at 92% 30%, rgb(36 84 198 / .09), transparent 34rem);
+  }
+
+  .eyebrow { font: 700 .74rem/1.4 var(--font-mono); text-transform: uppercase; letter-spacing: .12em; color: var(--cobalt); }
+
+  /* ── Hero ── */
+  .hero {
+    max-width: 1280px; margin: 0 auto;
+    display: grid; grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr); align-items: center; gap: clamp(2rem, 5vw, 5rem);
+    padding: var(--space-xl) var(--gutter) var(--space-2xl);
+  }
+  .hero h1 { font: 800 clamp(2.3rem, 3.7vw, 4.4rem)/1 var(--font-display); letter-spacing: -.04em; margin-top: var(--space-m); max-width: 11ch; }
+  .hero-intro { margin-top: var(--space-l); color: var(--ink-soft); max-width: 42ch; font-size: clamp(1.02rem, 1.25vw, 1.15rem); line-height: 1.7; }
+  .hero-jump { margin-top: var(--space-l); display: flex; flex-wrap: wrap; gap: 6px 18px; list-style: none; }
+  .hero-jump a { font: 700 .7rem/1 var(--font-mono); letter-spacing: .1em; text-transform: uppercase; color: var(--ink-soft); text-decoration: none; border-bottom: 1px solid var(--ink); padding: 6px 0; display: inline-block; }
+  .hero-jump a:hover { color: var(--cobalt); border-color: var(--cobalt); }
+
+  /* The report card */
+  .report { position: relative; background: var(--paper); border: 1px solid var(--ink); box-shadow: 8px 8px 0 var(--cobalt); will-change: transform, opacity; }
+  .report-band { display: flex; justify-content: space-between; align-items: center; gap: 1rem; background: var(--ink); color: #fff; padding: 9px 16px; font: 700 .68rem/1.3 var(--font-mono); letter-spacing: .14em; text-transform: uppercase; }
+  .report-band span:last-child { color: #c9ccd1; letter-spacing: .1em; }
+  .report-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 1rem 1.5rem; flex-wrap: wrap; padding: 18px 16px 16px; border-bottom: 1px solid var(--ink); }
+  .report-title { font: 800 clamp(1.05rem, 1.6vw, 1.3rem)/1.2 var(--font-display); letter-spacing: -.02em; }
+  .report-title small { display: block; margin-top: 6px; font: 500 .74rem/1.4 var(--font-mono); letter-spacing: .06em; color: var(--ink-muted); text-transform: uppercase; }
+
+  .rag { display: inline-flex; align-items: center; gap: 10px; padding: 9px 14px 9px 12px; border: 1px solid var(--ink); background: var(--cyan-wash); box-shadow: 4px 4px 0 var(--ink); font: 800 1.12rem/1 var(--font-display); letter-spacing: -.01em; white-space: nowrap; }
+  .rag em { font-style: normal; color: var(--cyan-deep); }
+  .rag-label { font: 700 .62rem/1 var(--font-mono); letter-spacing: .12em; text-transform: uppercase; color: var(--ink-soft); }
+  .dot { position: relative; width: 14px; height: 14px; flex: none; }
+  .dot i { position: absolute; inset: 0; border-radius: 50%; background: var(--cyan); border: 1px solid var(--ink); }
+  .dot .ring { background: transparent; border: 2px solid var(--cyan); opacity: 0; }
+  .rag-note { display: block; margin-top: 8px; font: 700 .62rem/1.3 var(--font-mono); letter-spacing: .1em; text-transform: uppercase; color: var(--ink-muted); text-align: right; }
+
+  .fields { display: grid; grid-template-columns: 1fr 1fr; }
+  .field { padding: 12px 16px 14px; border-bottom: 1px solid var(--ink); min-width: 0; }
+  .field.full { grid-column: 1 / -1; }
+  .field.half + .field.half { border-left: 1px solid var(--ink); }
+  .field dt { font: 700 .62rem/1.3 var(--font-mono); letter-spacing: .12em; text-transform: uppercase; color: var(--ink-muted); margin-bottom: 4px; }
+  .field dd { font-size: .98rem; line-height: 1.5; font-weight: 500; }
+  .field dd strong { font-weight: 700; }
+  /* Typing: the full text holds the layout (and stays readable to screen readers); an overlay shows the typed part. */
+  .tw { position: relative; display: block; }
+  .tw .tw-full { color: transparent; }
+  .tw .tw-typed { position: absolute; inset: 0; color: var(--ink); pointer-events: none; }
+  .tw.is-typing .tw-typed::after { content: ''; display: inline-block; width: 2px; height: 1.05em; margin-left: 1px; vertical-align: -.18em; background: var(--cobalt); }
+
+  .report-foot { position: relative; display: flex; align-items: center; min-height: 86px; padding: 12px 150px 12px 16px; font: 500 .7rem/1.55 var(--font-mono); letter-spacing: .04em; color: var(--ink-muted); }
+  .report-foot b { color: var(--ink); font-weight: 700; }
+  .stamp {
+    position: absolute; right: 18px; top: 50%; margin-top: -26px; height: 52px; padding: 0 16px;
+    display: flex; align-items: center; justify-content: center;
+    font: 800 1.55rem/1 var(--font-mono); letter-spacing: .22em; text-indent: .22em; color: var(--pink-deep);
+    border: 3px solid var(--pink-deep); outline: 1px solid var(--pink-deep); outline-offset: 3px;
+    transform: rotate(-8deg); mix-blend-mode: multiply; opacity: .92; user-select: none;
+  }
+
+  /* ── Report sections ── */
+  .sec { max-width: var(--max-w); margin: 0 auto; padding: var(--space-xl) var(--gutter); display: grid; grid-template-columns: minmax(0, 15rem) minmax(0, 1fr); gap: var(--space-l); border-top: 1px solid var(--ink); }
+  .sec-head { align-self: start; position: sticky; top: 72px; }
+  .sec-head h2 { font: 800 clamp(1.7rem, 2.6vw, 2.3rem)/1.02 var(--font-display); letter-spacing: -.03em; margin-top: 10px; }
+  .sec-head p { margin-top: 12px; font-size: .92rem; color: var(--ink-soft); line-height: 1.6; }
+  .sec-body { min-width: 0; }
+
+  /* Wins */
+  .wins { list-style: none; border: 1px solid var(--ink); background: var(--paper); box-shadow: 6px 6px 0 rgb(36 84 198 / .16); }
+  .win { display: grid; grid-template-columns: 5.2rem minmax(0, 1fr) auto; gap: 4px 20px; padding: 18px 18px 18px 0; border-bottom: 1px solid var(--ink); }
+  .win:last-child { border-bottom: 0; }
+  .win-when { padding-left: 16px; font: 700 .74rem/1.9 var(--font-mono); letter-spacing: .06em; color: var(--ink-soft); border-left: 4px solid var(--cyan); }
+  .win h3 { font: 700 1.08rem/1.3 var(--font-body); }
+  .win p { margin-top: 4px; font-size: .92rem; color: var(--ink-soft); line-height: 1.55; }
+  .win-src { display: block; margin-top: 8px; font: 700 .62rem/1.3 var(--font-mono); letter-spacing: .12em; text-transform: uppercase; color: var(--ink-muted); }
+  .win-fig { align-self: start; text-align: right; font: 800 clamp(1.5rem, 2.4vw, 2rem)/1 var(--font-display); letter-spacing: -.03em; color: var(--ink); white-space: nowrap; }
+  .win-fig small { display: block; margin-top: 6px; font: 700 .6rem/1.3 var(--font-mono); letter-spacing: .12em; text-transform: uppercase; color: var(--cyan-deep); }
+  .mini { margin-top: 12px; display: grid; grid-template-columns: minmax(0, 200px) auto; gap: 6px 12px; align-items: center; max-width: 420px; }
+  .mini i { display: block; height: 14px; width: var(--w); border: 1px solid var(--ink); background: var(--cyan); }
+  .mini i.bench { background: var(--surface); }
+  .mini span { font: 700 .64rem/1.2 var(--font-mono); letter-spacing: .06em; white-space: nowrap; color: var(--ink-soft); }
+
+  /* Workstreams */
+  .ws { border: 1px solid var(--ink); background: var(--paper); box-shadow: 6px 6px 0 rgb(229 72 165 / .18); }
+  .ws-cols { display: grid; grid-template-columns: minmax(0, 2.3fr) minmax(0, 1.35fr) minmax(0, 1.15fr) 7.2rem 1.6rem; gap: 14px; align-items: center; }
+  .ws-head { padding: 10px 16px; background: var(--ink); color: #fff; font: 700 .62rem/1.3 var(--font-mono); letter-spacing: .12em; text-transform: uppercase; }
+  .ws-row { border-bottom: 1px solid var(--ink); }
+  .ws-row:last-child { border-bottom: 0; }
+  .ws-row summary { list-style: none; cursor: pointer; padding: 14px 16px; }
+  .ws-row summary::-webkit-details-marker { display: none; }
+  .ws-row summary:hover { background: var(--blue-wash); }
+  .ws-row summary:focus-visible { outline-offset: -3px; }
+  .ws-row[open] summary { background: var(--blue-wash); border-bottom: 1px dashed var(--ink-muted); }
+  .c-ws b { display: block; font-weight: 700; line-height: 1.35; }
+  .c-ws small { display: block; margin-top: 2px; font-size: .84rem; color: var(--ink-soft); }
+  .c-ag, .c-dt { font-size: .9rem; color: var(--ink-soft); line-height: 1.4; }
+  .c-dt { font-family: var(--font-mono); font-size: .76rem; letter-spacing: .02em; }
+  .pill-done { display: inline-flex; align-items: center; gap: 6px; padding: 4px 8px; border: 1px solid var(--ink); background: var(--cyan-wash); font: 700 .62rem/1 var(--font-mono); letter-spacing: .1em; text-transform: uppercase; color: var(--ink); }
+  .pill-done::before { content: ''; width: 7px; height: 7px; border-radius: 50%; background: var(--cyan); border: 1px solid var(--ink); }
+  .c-tg { position: relative; width: 22px; height: 22px; border: 1px solid var(--ink); justify-self: end; background: var(--paper); }
+  .c-tg::before, .c-tg::after { content: ''; position: absolute; left: 50%; top: 50%; width: 10px; height: 2px; margin: -1px 0 0 -5px; background: var(--ink); transition: transform .25s ease; }
+  .c-tg::after { transform: rotate(90deg); }
+  .ws-row[open] .c-tg { background: var(--ink); }
+  .ws-row[open] .c-tg::before, .ws-row[open] .c-tg::after { background: #fff; }
+  .ws-row[open] .c-tg::after { transform: rotate(0deg); }
+
+  .jacket-wrap { overflow: hidden; display: flow-root; }
+  .jacket { margin: 18px 16px 20px; position: relative; border: 1px solid var(--ink); background: var(--blue-wash); padding: 26px 18px 18px; }
+  .jacket-tab { position: absolute; top: -1px; left: -1px; padding: 5px 10px; background: var(--ink); color: #fff; font: 700 .6rem/1 var(--font-mono); letter-spacing: .14em; text-transform: uppercase; }
+  .jacket-no { position: absolute; top: 6px; right: 12px; font: 700 .6rem/1 var(--font-mono); letter-spacing: .12em; text-transform: uppercase; color: var(--ink-muted); }
+  .jacket dl { display: grid; grid-template-columns: 7rem minmax(0, 1fr); gap: 0; margin-top: 6px; }
+  .jacket dt, .jacket dd { padding: 10px 0; border-top: 1px solid rgb(24 25 27 / .22); }
+  .jacket dt { font: 700 .62rem/1.9 var(--font-mono); letter-spacing: .12em; text-transform: uppercase; color: var(--ink-muted); }
+  .jacket dd { font-size: .93rem; color: var(--ink); line-height: 1.55; }
+  .jacket dd ul { list-style: none; display: grid; gap: 6px; }
+  .jacket dd li { position: relative; padding-left: 16px; }
+  .jacket dd li::before { content: ''; position: absolute; left: 0; top: .6em; width: 7px; height: 7px; border: 1px solid var(--ink); background: var(--paper); }
+  .jacket dd.outcome { font-weight: 600; }
+  .jacket dd.outcome li::before { background: var(--cyan); }
+
+  /* Budget */
+  .budget { border: 1px solid var(--ink); background: var(--paper); padding: 22px 20px 18px; box-shadow: 6px 6px 0 rgb(7 159 196 / .22); }
+  .b-grid { display: grid; grid-template-columns: minmax(0, 15rem) minmax(0, 1fr); gap: 0 20px; }
+  .b-scale { grid-column: 2; display: flex; justify-content: space-between; font: 700 .62rem/1 var(--font-mono); letter-spacing: .06em; color: var(--ink-muted); padding-bottom: 8px; border-bottom: 1px solid var(--ink); }
+  .b-scale span { width: 0; display: flex; justify-content: center; white-space: nowrap; }
+  .b-scale span:first-child { justify-content: flex-start; }
+  .b-scale span:last-child { justify-content: flex-end; }
+  .b-lab { padding: 18px 0; }
+  .b-lab b { display: block; font-weight: 700; line-height: 1.35; }
+  .b-lab small { display: block; margin-top: 3px; font: 600 .66rem/1.45 var(--font-mono); letter-spacing: .06em; text-transform: uppercase; color: var(--ink-muted); }
+  .b-track { position: relative; align-self: stretch; display: flex; align-items: center; background-image: linear-gradient(90deg, rgb(24 25 27 / .14) 1px, transparent 1px); background-size: 25% 100%; border-right: 1px solid rgb(24 25 27 / .14); }
+  .b-fill { position: relative; height: 38px; width: calc(var(--k) * 100%); background: var(--cobalt); border: 1px solid var(--ink); box-shadow: 4px 4px 0 var(--pink); transform-origin: left center; transition: transform .9s cubic-bezier(.2, .7, .2, 1); }
+  .b-fill.pre { transform: scaleX(0); }
+  .b-val { position: absolute; right: 10px; top: 50%; transform: translateY(-50%); font: 800 1.05rem/1 var(--font-display); color: #fff; letter-spacing: -.01em; }
+  .budget figcaption { margin-top: 18px; padding-top: 14px; border-top: 1px solid rgb(24 25 27 / .22); font-size: .88rem; color: var(--ink-soft); line-height: 1.6; max-width: 70ch; }
+
+  /* Risks */
+  .risks { width: 100%; border-collapse: collapse; background: var(--paper); border: 1px solid var(--ink); box-shadow: 6px 6px 0 rgb(229 72 165 / .18); }
+  .risks th { text-align: left; padding: 10px 14px; background: var(--ink); color: #fff; font: 700 .62rem/1.3 var(--font-mono); letter-spacing: .12em; text-transform: uppercase; }
+  .risks td { padding: 14px; vertical-align: top; border-top: 1px solid var(--ink); font-size: .93rem; line-height: 1.55; }
+  .risks td:first-child { width: 30%; font-weight: 600; }
+  .risks td:last-child { width: 17%; font: 700 .64rem/1.5 var(--font-mono); letter-spacing: .08em; text-transform: uppercase; color: var(--ink-muted); }
+  .risks td + td { border-left: 1px solid rgb(24 25 27 / .18); }
+  .tag { display: inline-block; margin-right: 8px; padding: 2px 5px; border: 1px solid var(--ink); font: 700 .58rem/1.2 var(--font-mono); letter-spacing: .08em; vertical-align: .12em; }
+  .tag.a { background: var(--pink-wash); color: var(--pink-deep); }
+  .tag.g { background: var(--cyan-wash); color: var(--cyan-deep); }
+  .legend { margin-top: 12px; font: 600 .66rem/1.6 var(--font-mono); letter-spacing: .06em; color: var(--ink-muted); text-transform: uppercase; }
+
+  /* Next steps */
+  .next { list-style: none; border-left: 4px solid var(--cobalt); padding: 4px 0 4px 20px; display: grid; gap: 10px; max-width: 62ch; }
+  .next li { font-size: clamp(1.02rem, 1.3vw, 1.15rem); color: var(--ink-soft); line-height: 1.6; }
+
+  /* Sign-off */
+  .signoff { max-width: var(--max-w); margin: 0 auto; padding: var(--space-2xl) var(--gutter) var(--space-xl); border-top: 1px solid var(--ink); }
+  .signoff h2 { font: 800 clamp(2.2rem, 5vw, 4rem)/1 var(--font-display); letter-spacing: -.04em; }
+  .sign-line { margin-top: var(--space-l); display: flex; flex-wrap: wrap; align-items: center; gap: 12px 26px; padding-top: 14px; border-top: 1px solid var(--ink); max-width: 28rem; }
+  .sign-line a { font: 700 .78rem/1 var(--font-mono); letter-spacing: .12em; text-transform: uppercase; text-decoration: none; padding: 10px 0; border-bottom: 2px solid var(--pink); }
+  .sign-line a:hover { color: var(--pink-deep); }
+
+  @media (max-width: 900px) {
+    :root { --gutter: 16px; }
+    .hero { grid-template-columns: minmax(0, 1fr); padding-top: var(--space-l); }
+    .hero h1 { max-width: 14ch; font-size: clamp(2rem, 9.4vw, 3.4rem); }
+    .report { max-width: 680px; width: 100%; }
+    .sec { grid-template-columns: minmax(0, 1fr); gap: var(--space-m); }
+    .sec-head { position: static; }
+    .ws-cols { grid-template-columns: minmax(0, 2fr) minmax(0, 1.3fr) minmax(0, 1fr) 6.4rem 1.4rem; gap: 10px; }
+  }
+  @media (max-width: 640px) {
+    .cbar small { font-size: .58rem; }
+    .report-head { flex-direction: column; }
+    .rag-note { text-align: left; }
+    .fields { grid-template-columns: 1fr; }
+    .field.half + .field.half { border-left: 0; }
+    .report-foot { padding-right: 16px; padding-bottom: 76px; }
+    .stamp { top: auto; bottom: 16px; margin-top: 0; right: 20px; }
+    .win { grid-template-columns: minmax(0, 1fr) auto; padding-left: 0; }
+    .win-when { grid-column: 1 / -1; line-height: 1.4; }
+    .win-body { padding-left: 20px; }
+    .ws-head { display: none; }
+    .ws-row summary.ws-cols { grid-template-columns: minmax(0, 1fr) 22px; gap: 6px 12px; }
+    .c-ws { grid-column: 1; grid-row: 1; }
+    .c-tg { grid-column: 2; grid-row: 1; align-self: start; }
+    .c-ag, .c-dt, .c-st { grid-column: 1 / -1; }
+    .jacket { margin-inline: 10px; padding-inline: 14px; }
+    .jacket dl { grid-template-columns: 1fr; }
+    .jacket dd { border-top: 0; padding-top: 0; }
+    .b-grid { grid-template-columns: 1fr; }
+    .b-scale { grid-column: 1; grid-row: 1; }
+    .b-lab { padding: 16px 0 8px; }
+    .b-track { min-height: 40px; }
+    .risks, .risks tbody, .risks tr, .risks td { display: block; width: auto !important; }
+    .risks thead { display: none; }
+    .risks tr { border-top: 1px solid var(--ink); }
+    .risks tr:first-child { border-top: 0; }
+    .risks td { border: 0 !important; padding: 10px 14px 0; }
+    .risks td:last-child { padding-bottom: 14px; }
+    .risks td::before { content: attr(data-label); display: block; font: 700 .58rem/1.4 var(--font-mono); letter-spacing: .12em; text-transform: uppercase; color: var(--ink-muted); margin-bottom: 2px; }
+  }
+  @media (max-width: 380px) {
+    .report-band { flex-direction: column; align-items: flex-start; gap: 4px; }
+    .rag { font-size: 1rem; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .b-fill, .c-tg::before, .c-tg::after { transition: none; }
+  }
+
+  @media print {
+    @page { margin: 14mm; }
+    body { background: #fff; font-size: 10.5pt; }
+    .cbar { position: static; backdrop-filter: none; background: #fff; }
+    .concept::before { display: none; }
+    .hero { grid-template-columns: 1fr; padding: 12pt 0; gap: 14pt; }
+    .hero-jump { display: none; }
+    .report, .wins, .ws, .budget, .risks { box-shadow: none; }
+    .sec { grid-template-columns: 1fr; padding: 16pt 0; gap: 8pt; }
+    .sec-head { position: static; }
+    .sec, .win, .ws-row, .risks tr, .budget { break-inside: avoid; }
+    .ws-row summary { background: none !important; }
+    .c-tg { display: none; }
+    .jacket-wrap { height: auto !important; }
+    .b-fill.pre { transform: none; }
+    .signoff { padding: 20pt 0 0; }
+    .sign-line a[href^="http"]::after { content: " (" attr(href) ")"; font-weight: 400; letter-spacing: 0; text-transform: none; }
+    * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  }
+</style>
+</head>
+<body>
+
+<header class="cbar"><b>Wally Mostafa</b><small>Status report · Account management</small></header>
+
+<main class="concept">
+
+  <!-- ── Hero ── -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div>
+      <p class="eyebrow">Wally Mostafa · Account management, 2010–2018</p>
+      <h1 id="hero-title">All workstreams closed green.</h1>
+      <p class="hero-intro">I spent eight years in pharma agency account work, from coordinator to account supervisor. This page is laid out like the weekly status reports I used to send clients.</p>
+      <ul class="hero-jump" aria-label="Report sections">
+        <li><a href="#wins">Wins</a></li>
+        <li><a href="#workstreams">Workstreams</a></li>
+        <li><a href="#budget">Budget</a></li>
+        <li><a href="#risks">Risks</a></li>
+        <li><a href="#next">Next steps</a></li>
+      </ul>
+    </div>
+
+    <article class="report" id="report" aria-label="Weekly status report summary">
+      <div class="report-band"><span>Weekly status</span><span>Sep 2010 – Jul 2018</span></div>
+      <div class="report-head">
+        <p class="report-title">Weekly Status — Wally Mostafa<small>Account Management · 2010–2018</small></p>
+        <div>
+          <p class="rag"><span class="dot" aria-hidden="true"><i class="ring"></i><i></i></span><span><span class="rag-label">Status:</span> <em>Green</em></span></p>
+          <span class="rag-note">6 of 6 workstreams complete</span>
+        </div>
+      </div>
+      <dl class="fields">
+        <div class="field full"><dt>Brands</dt><dd><span class="tw">NUVIGIL · Namenda XR · XYREM · Prevenar 13 · Lipitor · Zoloft</span></dd></div>
+        <div class="field half"><dt>Largest budget</dt><dd><span class="tw">$20M brand budget, Namenda XR</span></dd></div>
+        <div class="field half"><dt>Last title</dt><dd><span class="tw">Account Supervisor / Digital Strategist</span></dd></div>
+        <div class="field full"><dt>Agencies</dt><dd><span class="tw">RosettaWishbone · FCB Health · Cline Davis &amp; Mann · Barker DZP · Scout Marketing</span></dd></div>
+      </dl>
+      <div class="report-foot">
+        <p>Prepared by <b>Wally Mostafa</b><br>Attached: 4 wins, 6 workstreams, risks &amp; mitigations</p>
+        <span class="stamp" id="stamp">SENT</span>
+      </div>
+    </article>
+  </section>
+
+  <!-- ── Wins ── -->
+  <section class="sec" id="wins" aria-labelledby="wins-title">
+    <div class="sec-head">
+      <p class="eyebrow">Section 01</p>
+      <h2 id="wins-title">Wins this period</h2>
+      <p>Awards and results from the campaigns I worked on.</p>
+    </div>
+    <div class="sec-body">
+      <ol class="wins">
+        <li class="win">
+          <span class="win-when">2013</span>
+          <div class="win-body">
+            <h3>Manny Award, Best Unbranded Campaign</h3>
+            <p>The unbranded NUVIGIL campaign for National Night Shift Workers' Day, which I managed across Times Square NASDAQ, national TV, Xbox Live, radio, outdoor, and consumer journals.</p>
+            <span class="win-src">Teva · NUVIGIL · FCB Health</span>
+          </div>
+          <span class="win-fig">Award</span>
+        </li>
+        <li class="win">
+          <span class="win-when">2011</span>
+          <div class="win-body">
+            <h3>Pharma Choice awards, NUVIGIL.com HCP site and sales aid</h3>
+            <p>Both pieces won. I worked on them alongside the HCP team while on the consumer side of the brand.</p>
+            <span class="win-src">Teva · NUVIGIL · FCB Health</span>
+          </div>
+          <span class="win-fig">Award</span>
+        </li>
+        <li class="win">
+          <span class="win-when">2014–15</span>
+          <div class="win-body">
+            <h3>Namenda XR national TV</h3>
+            <p>Three national TV commercials in one year. I owned the broadcast workstream, from market research through network clearances. The spots drove a 45% increase in new-to-brand consumers within seven weeks.</p>
+            <span class="win-src">Actavis · Namenda XR · FCB Health</span>
+          </div>
+          <span class="win-fig">+45%<small>New-to-brand</small></span>
+        </li>
+        <li class="win">
+          <span class="win-when">2015–18</span>
+          <div class="win-body">
+            <h3>XYREM unbranded banners</h3>
+            <p>Banners held a 0.37% click-through rate against a 0.17% industry benchmark and doubled qualified traffic to the brand site.</p>
+            <div class="mini" aria-hidden="true">
+              <i style="--w:100%"></i><span>0.37% · our banners</span>
+              <i class="bench" style="--w:46%"></i><span>0.17% · benchmark</span>
+            </div>
+            <span class="win-src">Jazz Pharmaceuticals · XYREM · Scout Marketing</span>
+          </div>
+          <span class="win-fig">0.37%<small>CTR</small></span>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ── Workstreams ── -->
+  <section class="sec" id="workstreams" aria-labelledby="ws-title">
+    <div class="sec-head">
+      <p class="eyebrow">Section 02</p>
+      <h2 id="ws-title">Workstreams</h2>
+      <p>Six roles, newest first. Open a row for its job jacket.</p>
+    </div>
+    <div class="sec-body">
+      <div class="ws">
+        <div class="ws-head ws-cols" aria-hidden="true"><span>Workstream</span><span>Agency</span><span>Dates</span><span>Status</span><span></span></div>
+
+        <details class="ws-row">
+          <summary class="ws-cols">
+            <span class="c-ws"><b>Account Supervisor / Digital Strategist</b><small>Jazz Pharmaceuticals · XYREM consumer</small></span>
+            <span class="c-ag"><span class="sr">Agency: </span>Scout Marketing, San Diego</span>
+            <span class="c-dt"><span class="sr">Dates: </span>Jun 2015 – Jul 2018</span>
+            <span class="c-st"><span class="sr">Status: </span><span class="pill-done">Complete</span></span>
+            <span class="c-tg" aria-hidden="true"></span>
+          </summary>
+          <div class="jacket-wrap"><div class="jacket">
+            <span class="jacket-tab">Job jacket</span><span class="jacket-no">01 / 06</span>
+            <dl>
+              <dt>Client</dt><dd>Jazz Pharmaceuticals, XYREM consumer. Promoted from Senior Account Executive.</dd>
+              <dt>Owned</dt><dd><ul>
+                <li>Unbranded campaigns across digital, print, and in-office channels for the disease-state site.</li>
+                <li>Launch of the first unbranded social campaign on Facebook and YouTube for the brand and for Jazz, built around real patients telling their own stories.</li>
+                <li>An unbranded digital campaign bridging disease-state and branded work.</li>
+              </ul></dd>
+              <dt>Outcome</dt><dd class="outcome"><ul>
+                <li>Lifted traffic and engagement on the disease-state site.</li>
+                <li>Banners held a 0.37% CTR against a 0.17% benchmark and doubled qualified traffic to the brand site.</li>
+              </ul></dd>
+            </dl>
+          </div></div>
+        </details>
+
+        <details class="ws-row">
+          <summary class="ws-cols">
+            <span class="c-ws"><b>Senior Account Executive</b><small>Actavis · Namenda XR DTC launch</small></span>
+            <span class="c-ag"><span class="sr">Agency: </span>FCB Health, New York</span>
+            <span class="c-dt"><span class="sr">Dates: </span>Jun 2014 – Jun 2015</span>
+            <span class="c-st"><span class="sr">Status: </span><span class="pill-done">Complete</span></span>
+            <span class="c-tg" aria-hidden="true"></span>
+          </summary>
+          <div class="jacket-wrap"><div class="jacket">
+            <span class="jacket-tab">Job jacket</span><span class="jacket-no">02 / 06</span>
+            <dl>
+              <dt>Client</dt><dd>Actavis, Namenda XR direct-to-consumer launch. $20M brand budget, on the agency's largest pharma business. One of two consumer account leads.</dd>
+              <dt>Owned</dt><dd><ul>
+                <li>The broadcast workstream for three national TV commercials in one year: market research, med-legal review, FDA preclearance, pre- and post-production, talent and location, director searches, network clearances.</li>
+                <li>Launch of an unbranded Alzheimer's caregiver community site, including support resources, sponsorship exploration, and PR pull-through.</li>
+                <li>Oversight of the account's Assistant Account Executive across in-office tactics, national print, and sales rep support materials.</li>
+              </ul></dd>
+              <dt>Outcome</dt><dd class="outcome"><ul>
+                <li>The spots drove a 45% increase in new-to-brand consumers within seven weeks.</li>
+              </ul></dd>
+            </dl>
+          </div></div>
+        </details>
+
+        <details class="ws-row">
+          <summary class="ws-cols">
+            <span class="c-ws"><b>Senior Account Executive</b><small>Tough Mudder · PDI and Nice-Pak</small></span>
+            <span class="c-ag"><span class="sr">Agency: </span>Barker DZP, New York</span>
+            <span class="c-dt"><span class="sr">Dates: </span>Dec 2013 – May 2014</span>
+            <span class="c-st"><span class="sr">Status: </span><span class="pill-done">Complete</span></span>
+            <span class="c-tg" aria-hidden="true"></span>
+          </summary>
+          <div class="jacket-wrap"><div class="jacket">
+            <span class="jacket-tab">Job jacket</span><span class="jacket-no">03 / 06</span>
+            <dl>
+              <dt>Client</dt><dd>Tough Mudder; PDI and Nice-Pak, the agency's largest account.</dd>
+              <dt>Owned</dt><dd><ul>
+                <li>The social campaign for a new Tough Mudder loyalty program.</li>
+                <li>PDI and Nice-Pak work across print, digital, and social.</li>
+              </ul></dd>
+            </dl>
+          </div></div>
+        </details>
+
+        <details class="ws-row">
+          <summary class="ws-cols">
+            <span class="c-ws"><b>Senior Account Executive</b><small>Pfizer · Lipitor and Zoloft</small></span>
+            <span class="c-ag"><span class="sr">Agency: </span>Cline Davis &amp; Mann, New York</span>
+            <span class="c-dt"><span class="sr">Dates: </span>Sep 2013 – Dec 2013</span>
+            <span class="c-st"><span class="sr">Status: </span><span class="pill-done">Complete</span></span>
+            <span class="c-tg" aria-hidden="true"></span>
+          </summary>
+          <div class="jacket-wrap"><div class="jacket">
+            <span class="jacket-tab">Job jacket</span><span class="jacket-no">04 / 06</span>
+            <dl>
+              <dt>Client</dt><dd>Pfizer, Lipitor during loss of exclusivity, and Zoloft.</dd>
+              <dt>Owned</dt><dd><ul>
+                <li>Used campaign metrics to shape digital recommendations for Lipitor's online presence and loyalty program.</li>
+                <li>Piloted a Zoloft savings offer to test market response.</li>
+              </ul></dd>
+            </dl>
+          </div></div>
+        </details>
+
+        <details class="ws-row">
+          <summary class="ws-cols">
+            <span class="c-ws"><b>Assistant Account Executive to Account Executive</b><small>Teva · NUVIGIL consumer</small></span>
+            <span class="c-ag"><span class="sr">Agency: </span>FCB Health, New York</span>
+            <span class="c-dt"><span class="sr">Dates: </span>Apr 2011 – Sep 2013</span>
+            <span class="c-st"><span class="sr">Status: </span><span class="pill-done">Complete</span></span>
+            <span class="c-tg" aria-hidden="true"></span>
+          </summary>
+          <div class="jacket-wrap"><div class="jacket">
+            <span class="jacket-tab">Job jacket</span><span class="jacket-no">05 / 06</span>
+            <dl>
+              <dt>Client</dt><dd>Teva, NUVIGIL. $10M consumer business.</dd>
+              <dt>Owned</dt><dd><ul>
+                <li>The unbranded campaign for National Night Shift Workers' Day across Times Square NASDAQ, national TV, Xbox Live, radio, outdoor, and consumer journals, run through media, digital, and print vendors.</li>
+                <li>Coordination of the NUVIGIL.com consumer rebrand across desktop and mobile, plus the launch of a CRM patient support program and its online patient community.</li>
+                <li>Weekly client status and financial reporting, and OPDP and review-committee submissions, across the consumer business.</li>
+                <li>Contributions to annual strategic recommendations.</li>
+              </ul></dd>
+              <dt>Outcome</dt><dd class="outcome"><ul>
+                <li>The Night Shift Workers' Day campaign won the 2013 Manny Award for Best Unbranded Campaign.</li>
+                <li>The NUVIGIL.com HCP site and sales aid, built with the HCP team, won 2011 Pharma Choice awards.</li>
+              </ul></dd>
+            </dl>
+          </div></div>
+        </details>
+
+        <details class="ws-row">
+          <summary class="ws-cols">
+            <span class="c-ws"><b>Account Coordinator</b><small>Pfizer · Prevenar 13 adult pre-launch</small></span>
+            <span class="c-ag"><span class="sr">Agency: </span>RosettaWishbone, New York</span>
+            <span class="c-dt"><span class="sr">Dates: </span>Sep 2010 – Mar 2011</span>
+            <span class="c-st"><span class="sr">Status: </span><span class="pill-done">Complete</span></span>
+            <span class="c-tg" aria-hidden="true"></span>
+          </summary>
+          <div class="jacket-wrap"><div class="jacket">
+            <span class="jacket-tab">Job jacket</span><span class="jacket-no">06 / 06</span>
+            <dl>
+              <dt>Client</dt><dd>Pfizer, Prevenar 13 adult pre-launch. An award-winning global unbranded pneumococcal disease awareness campaign.</dd>
+              <dt>Owned</dt><dd><ul>
+                <li>Primary client contact across brand teams, national affiliates, and vendors.</li>
+                <li>Facilitated an Africa and Middle East advisory board in Dubai.</li>
+                <li>Project briefs, scopes of work, key opinion leader communications, and client status and financial reports.</li>
+              </ul></dd>
+            </dl>
+          </div></div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Budget & scope ── -->
+  <section class="sec" id="budget" aria-labelledby="budget-title">
+    <div class="sec-head">
+      <p class="eyebrow">Section 03</p>
+      <h2 id="budget-title">Budget &amp; scope</h2>
+      <p>The two dollar figures from my account years, on one scale.</p>
+    </div>
+    <div class="sec-body">
+      <figure class="budget">
+        <div class="b-grid">
+          <div class="b-scale" aria-hidden="true"><span>$0</span><span>$5M</span><span>$10M</span><span>$15M</span><span>$20M</span></div>
+
+          <div class="b-lab"><b>NUVIGIL consumer business</b><small>Teva · FCB Health · AAE to AE, 2011–2013</small></div>
+          <div class="b-track"><div class="b-fill" style="--k:.5" role="img" aria-label="$10 million"><span class="b-val" aria-hidden="true">$10M</span></div></div>
+
+          <div class="b-lab"><b>Namenda XR brand budget</b><small>Actavis · FCB Health · SAE, 2014–2015</small></div>
+          <div class="b-track"><div class="b-fill" style="--k:1" role="img" aria-label="$20 million"><span class="b-val" aria-hidden="true">$20M</span></div></div>
+        </div>
+        <figcaption>On NUVIGIL I owned weekly status, financial reporting, and OPDP and review-committee submissions across the $10M consumer business. On Namenda XR I was one of two consumer leads on the direct-to-consumer launch, which ran on a $20M brand budget.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ── Risks & mitigations ── -->
+  <section class="sec" id="risks" aria-labelledby="risks-title">
+    <div class="sec-head">
+      <p class="eyebrow">Section 04 · How I run an account</p>
+      <h2 id="risks-title">Risks &amp; mitigations</h2>
+      <p>Common ways an account goes sideways, and what I did about each one.</p>
+    </div>
+    <div class="sec-body">
+      <table class="risks">
+        <thead><tr><th scope="col">Risk</th><th scope="col">Mitigation</th><th scope="col">Where</th></tr></thead>
+        <tbody>
+          <tr>
+            <td data-label="Risk"><span class="tag a">A</span>Review cycles run long and push launch timing.</td>
+            <td data-label="Mitigation"><span class="tag g">G</span>Owned OPDP and review-committee submissions on NUVIGIL, and ran med-legal review and FDA preclearance for three national Namenda XR TV spots in one year.</td>
+            <td data-label="Where">NUVIGIL, Namenda XR · FCB Health</td>
+          </tr>
+          <tr>
+            <td data-label="Risk"><span class="tag a">A</span>The client loses sight of spend and progress.</td>
+            <td data-label="Mitigation"><span class="tag g">G</span>Owned the weekly client status and financial reports across the $10M NUVIGIL consumer business, and client status and financial reports on Prevenar 13 before that.</td>
+            <td data-label="Where">NUVIGIL · FCB Health; Prevenar 13 · RosettaWishbone</td>
+          </tr>
+          <tr>
+            <td data-label="Risk"><span class="tag a">A</span>One campaign, many vendors, one fixed date.</td>
+            <td data-label="Mitigation"><span class="tag g">G</span>Ran the National Night Shift Workers' Day campaign through media, digital, and print vendors across Times Square NASDAQ, national TV, Xbox Live, radio, outdoor, and consumer journals.</td>
+            <td data-label="Where">NUVIGIL · FCB Health</td>
+          </tr>
+          <tr>
+            <td data-label="Risk"><span class="tag a">A</span>Stakeholders spread across countries and teams.</td>
+            <td data-label="Mitigation"><span class="tag g">G</span>Served as primary client contact across brand teams, national affiliates, and vendors on a global campaign, and facilitated the Africa and Middle East advisory board in Dubai.</td>
+            <td data-label="Where">Prevenar 13 · RosettaWishbone</td>
+          </tr>
+          <tr>
+            <td data-label="Risk"><span class="tag a">A</span>Recommendations drift away from the numbers.</td>
+            <td data-label="Mitigation"><span class="tag g">G</span>Used campaign metrics to shape Lipitor's digital recommendations during loss of exclusivity, and piloted a Zoloft savings offer to test market response.</td>
+            <td data-label="Where">Lipitor, Zoloft · Cline Davis &amp; Mann</td>
+          </tr>
+          <tr>
+            <td data-label="Risk"><span class="tag a">A</span>The brand has never been on social.</td>
+            <td data-label="Mitigation"><span class="tag g">G</span>Led the first unbranded social campaign on Facebook and YouTube for XYREM and for Jazz, built around real patients telling their own stories.</td>
+            <td data-label="Where">XYREM · Scout Marketing</td>
+          </tr>
+          <tr>
+            <td data-label="Risk"><span class="tag a">A</span>A junior teammate gets spread across too many tactics.</td>
+            <td data-label="Mitigation"><span class="tag g">G</span>Oversaw the account's Assistant Account Executive across in-office tactics, national print, and sales rep support materials.</td>
+            <td data-label="Where">Namenda XR · FCB Health</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="legend"><span class="tag a">A</span>Amber risk &nbsp; <span class="tag g">G</span>Green after mitigation</p>
+    </div>
+  </section>
+
+  <!-- ── Next steps ── -->
+  <section class="sec" id="next" aria-labelledby="next-title">
+    <div class="sec-head">
+      <p class="eyebrow">Section 05</p>
+      <h2 id="next-title">Next steps</h2>
+    </div>
+    <div class="sec-body">
+      <ul class="next">
+        <li>Since 2018 I've worked in UX leadership and AI implementation.</li>
+        <li>On an account today, that means I can also design and build the tools the team works in.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ── Sign-off ── -->
+  <footer class="signoff">
+    <h2>Thanks for stopping by.</h2>
+    <p class="sign-line">
+      <a href="../../resume.html">Resume</a>
+      <a href="https://linkedin.com/in/wallymo" target="_blank" rel="noopener">LinkedIn</a>
+    </p>
+  </footer>
+</main>
+
+<script>
+/* Hero: the report fills itself in, the status dot pulses, and the SENT stamp lands.
+   One pass, about 4.8s total (no loop, so no pause control is needed).
+   Without JS, or with reduced motion, the finished report is simply shown. */
+(function StatusHero() {
+  const card = document.getElementById('report');
+  const stamp = document.getElementById('stamp');
+  const ring = card && card.querySelector('.dot .ring');
+  if (!card || !stamp || !ring) return;
+  const REDUCED = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  const clamp = (v, a, b) => Math.max(a, Math.min(b, v));
+  const seg = (t, a, b) => clamp((t - a) / (b - a), 0, 1);
+  const outCubic = k => 1 - (1 - k) ** 3;
+  const outBack = k => { const c1 = 1.6, c3 = c1 + 1; return 1 + c3 * (k - 1) ** 3 + c1 * (k - 1) ** 2; };
+
+  /* Timeline (seconds) */
+  const CARD_IN = [0, 0.4];
+  const RINGS = [0.35, 1.85, 3.35];   // three slow pulses, 1.45s each, done by 4.8s
+  const RING_LEN = 1.45;
+  const TYPE_START = 0.55, CPS = 100, GAP = 0.1;
+  const STAMP = [3.2, 3.5];   // lands just after the last field finishes (~3.05s)
+  const END = 4.9;
+
+  // Build typing overlays; the full text stays in the DOM for layout and screen readers.
+  let at = TYPE_START;
+  const fields = Array.from(card.querySelectorAll('.tw')).map(el => {
+    const full = el.textContent.trim();
+    el.textContent = '';
+    const ghost = document.createElement('span'); ghost.className = 'tw-full'; ghost.textContent = full;
+    const typed = document.createElement('span'); typed.className = 'tw-typed'; typed.setAttribute('aria-hidden', 'true');
+    el.append(ghost, typed);
+    const a = at, b = at + full.length / CPS;
+    at = b + GAP;
+    return { el, full, typed, a, b, n: -1 };
+  });
+
+  function paint(t) {
+    const kc = outCubic(seg(t, CARD_IN[0], CARD_IN[1]));
+    // Small thud when the stamp hits.
+    const thud = t > STAMP[1] - 0.05 && t < STAMP[1] + 0.2 ? Math.sin(seg(t, STAMP[1] - 0.05, STAMP[1] + 0.2) * Math.PI) * 2 : 0;
+    card.style.opacity = kc.toFixed(3);
+    card.style.transform = `translate(${thud.toFixed(2)}px, ${((1 - kc) * 16 + thud).toFixed(2)}px)`;
+
+    for (const f of fields) {
+      const n = Math.round(seg(t, f.a, f.b) * f.full.length);
+      if (n !== f.n) { f.typed.textContent = f.full.slice(0, n); f.n = n; }
+      f.el.classList.toggle('is-typing', t >= f.a && t < f.b + 0.1);
+    }
+
+    let rs = 1, ro = 0;
+    for (const r of RINGS) {
+      if (t >= r && t < r + RING_LEN) { const p = (t - r) / RING_LEN; rs = 1 + outCubic(p) * 1.5; ro = 0.7 * (1 - p); }
+    }
+    ring.style.transform = `scale(${rs.toFixed(3)})`;
+    ring.style.opacity = ro.toFixed(3);
+
+    const ks = seg(t, STAMP[0], STAMP[1]);
+    stamp.style.opacity = t < STAMP[0] ? '0' : (Math.min(1, ks * 2.5) * 0.92).toFixed(3);
+    stamp.style.transform = `rotate(-8deg) scale(${(1.9 - 0.9 * outBack(ks)).toFixed(3)})`;
+  }
+
+  function finish() {
+    card.style.opacity = ''; card.style.transform = '';
+    stamp.style.opacity = ''; stamp.style.transform = '';
+    ring.style.opacity = ''; ring.style.transform = '';
+    for (const f of fields) { f.typed.textContent = f.full; f.n = f.full.length; f.el.classList.remove('is-typing'); }
+  }
+
+  let raf = 0, t0 = 0, seeking = false;
+  function tick(now) {
+    const t = (now - t0) / 1000;
+    if (t >= END) { raf = 0; finish(); return; }
+    paint(t);
+    raf = requestAnimationFrame(tick);
+  }
+
+  // Test hook: paints the hero at that moment and stops the live run.
+  window.__seek = sec => {
+    seeking = true;
+    cancelAnimationFrame(raf); raf = 0;
+    if (sec >= END) finish(); else paint(Math.max(0, sec));
+  };
+
+  if (REDUCED) { finish(); return; }
+
+  // A pass that started off-screen (reload mid-page) would play unseen; skip straight to the end then.
+  const r = card.getBoundingClientRect();
+  if (r.bottom < 0 || r.top > window.innerHeight) { finish(); return; }
+
+  paint(0);
+  const go = () => { if (seeking || raf) return; t0 = performance.now(); raf = requestAnimationFrame(tick); };
+  const fontsReady = document.fonts && document.fonts.ready ? document.fonts.ready : Promise.resolve();
+  Promise.race([fontsReady, new Promise(res => setTimeout(res, 700))]).then(go);
+  // rAF halts in a hidden tab; if the tab is hidden mid-run, just land on the final state.
+  document.addEventListener('visibilitychange', () => { if (document.hidden && raf) { cancelAnimationFrame(raf); raf = 0; finish(); } });
+})();
+
+/* Workstream rows: smooth open/close. Native <details> still works without JS. */
+(function JobJackets() {
+  const REDUCED = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const rows = Array.from(document.querySelectorAll('.ws-row'));
+
+  rows.forEach(d => {
+    const sum = d.querySelector('summary');
+    const wrap = d.querySelector('.jacket-wrap');
+    if (!sum || !wrap || typeof wrap.animate !== 'function') return;
+    let anim = null, closing = false;
+
+    sum.addEventListener('click', e => {
+      if (REDUCED) return;
+      e.preventDefault();
+      const from = anim ? wrap.getBoundingClientRect().height : null;
+      if (anim) { anim.cancel(); anim = null; }
+
+      if (!d.open || closing) {
+        closing = false;
+        d.open = true;
+        const h = wrap.scrollHeight;
+        anim = wrap.animate(
+          [{ height: (from == null ? 0 : from) + 'px', opacity: from == null ? 0 : 1 }, { height: h + 'px', opacity: 1 }],
+          { duration: 340, easing: 'cubic-bezier(.2, .7, .2, 1)' }
+        );
+        anim.onfinish = () => { anim = null; };
+      } else {
+        closing = true;
+        const h = from == null ? wrap.getBoundingClientRect().height : from;
+        anim = wrap.animate([{ height: h + 'px', opacity: 1 }, { height: '0px', opacity: 0 }], { duration: 240, easing: 'cubic-bezier(.4, 0, .6, 1)' });
+        anim.onfinish = () => { d.open = false; closing = false; anim = null; };
+      }
+    });
+  });
+
+  // Print: open every jacket so the paper copy has everything; restore afterwards.
+  let wasOpen = [];
+  window.addEventListener('beforeprint', () => { wasOpen = rows.map(d => d.open); rows.forEach(d => { d.open = true; }); });
+  window.addEventListener('afterprint', () => { rows.forEach((d, i) => { d.open = wasOpen[i] || false; }); });
+})();
+
+/* Budget bars grow once when scrolled into view. */
+(function BudgetBars() {
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches || !('IntersectionObserver' in window)) return;
+  const fig = document.querySelector('.budget');
+  if (!fig) return;
+  const bars = Array.from(fig.querySelectorAll('.b-fill'));
+  const r = fig.getBoundingClientRect();
+  if (r.top < window.innerHeight * 0.85) return; // already on screen: leave it drawn
+  bars.forEach(b => b.classList.add('pre'));
+  const io = new IntersectionObserver(es => {
+    if (!es.some(e => e.isIntersecting)) return;
+    bars.forEach((b, i) => setTimeout(() => b.classList.remove('pre'), i * 160));
+    io.disconnect();
+  }, { threshold: 0.35 });
+  io.observe(fig);
+  window.addEventListener('beforeprint', () => bars.forEach(b => b.classList.remove('pre')));
+})();
+</script>
+</body>
+</html>

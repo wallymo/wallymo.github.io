@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Account Portfolio Concepts</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #18191b; --ink-soft: #43474d; --ink-muted: #676c73; --surface: #f7f7f4;
+    --cobalt: #2454c6; --pink: #e548a5; --pink-deep: #a90f68; --cyan: #079fc4; --cyan-deep: #05789a;
+    --font-display: 'Syne', sans-serif; --font-body: 'Instrument Sans', sans-serif;
+    --font-mono: "SFMono-Regular", "SF Mono", Consolas, monospace;
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: var(--font-body); color: var(--ink); background: var(--surface); line-height: 1.6;
+    background-image:
+      repeating-linear-gradient(30deg, transparent 0, transparent 47px, rgb(229 72 165 / .05) 47px, rgb(229 72 165 / .05) 48px),
+      repeating-linear-gradient(-30deg, transparent 0, transparent 47px, rgb(36 84 198 / .05) 47px, rgb(36 84 198 / .05) 48px);
+    background-size: 96px 166px;
+  }
+  main { max-width: 1140px; margin: 0 auto; padding: clamp(2.5rem, 6vw, 5rem) clamp(1rem, 3vw, 2.5rem); }
+  .eyebrow { font: 700 .72rem/1.3 var(--font-mono); letter-spacing: .12em; text-transform: uppercase; color: var(--cobalt); }
+  h1 { font: 800 clamp(2.4rem, 6vw, 4.4rem)/1 var(--font-display); letter-spacing: -.04em; margin: .6rem 0 1rem; }
+  .lede { max-width: 58ch; color: var(--ink-soft); font-size: 1.05rem; }
+  .grid { margin-top: clamp(2rem, 5vw, 3.5rem); display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; }
+  .card {
+    display: flex; flex-direction: column; gap: 10px; text-decoration: none; color: inherit;
+    background: #fff; border: 1px solid var(--ink); padding: 22px 22px 20px;
+    box-shadow: 6px 6px 0 var(--c); transition: transform .18s, box-shadow .18s;
+  }
+  .card:hover, .card:focus-visible { transform: translate(-3px, -3px); box-shadow: 9px 9px 0 var(--c); outline: none; }
+  .card .k { font: 700 .66rem/1 var(--font-mono); letter-spacing: .14em; text-transform: uppercase; color: var(--cd); }
+  .card h2 { font: 800 1.7rem/1.05 var(--font-display); letter-spacing: -.03em; }
+  .card p { color: var(--ink-soft); font-size: .95rem; }
+  .card .tag { margin-top: auto; font: 700 .64rem/1 var(--font-mono); letter-spacing: .12em; text-transform: uppercase; color: var(--ink-muted); }
+  .card .tag b { color: var(--ink); }
+  .c1 { --c: var(--cobalt); --cd: var(--cobalt); }
+  .c2 { --c: var(--pink); --cd: var(--pink-deep); }
+  .c3 { --c: #c9a36b; --cd: #7a5a2a; }
+  .c4 { --c: var(--cyan); --cd: var(--cyan-deep); }
+  .foot { margin-top: 2.5rem; font-size: .9rem; color: var(--ink-muted); }
+  .foot a { color: var(--ink); }
+  @media (max-width: 720px) { .grid { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<main>
+  <div class="eyebrow">Concepts · account management portfolio</div>
+  <h1>Four ways to show the account years.</h1>
+  <p class="lede">Each page is a complete one-page portfolio for account roles, built from the same resume facts. Two stay in the Proof Grid system, and two are deliberate departures. Open them side by side and see which one feels most like you.</p>
+
+  <div class="grid">
+    <a class="card c1" href="approval-path.html">
+      <span class="k">02 · Proof Grid</span>
+      <h2>The Approval Path</h2>
+      <p>A pharma board game. One campaign piece works its way through Brand, Medical, Legal, and Regulatory, gets sent back, is revised, and launches. Your cursor carries it the whole way.</p>
+      <span class="tag"><b>Best for:</b> healthcare agency roles</span>
+    </a>
+    <a class="card c2" href="status-report.html">
+      <span class="k">03 · Proof Grid</span>
+      <h2>The Status Report</h2>
+      <p>The whole portfolio is a weekly client status report: status green, wins, workstreams, budget, and risks with mitigations. Calm and fast to scan.</p>
+      <span class="tag"><b>Best for:</b> recruiters skimming quickly</span>
+    </a>
+    <a class="card c3" href="job-jacket.html">
+      <span class="k">04 · Departure</span>
+      <h2>The Job Jacket</h2>
+      <p>A desk of manila job jackets, one per brand, with routing slips, rubber stamps, and award stickers. Open a folder to read the job.</p>
+      <span class="tag"><b>Best for:</b> agency people who'll recognize it</span>
+    </a>
+    <a class="card c4" href="switchboard.html">
+      <span class="k">05 · Departure</span>
+      <h2>The Switchboard</h2>
+      <p>You're the operator. Client calls light up and you patch them through to creative, med-legal, production, and media until the board is a web of connections.</p>
+      <span class="tag"><b>Best for:</b> showing relationship management</span>
+    </a>
+  </div>
+
+  <p class="foot">Related: the Proof Grid homepage hero concept, <a href="../hero-machine.html">Ask to proof</a>.</p>
+</main>
+</body>
+</html>

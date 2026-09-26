@@ -1,0 +1,1121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Approval Path</title>
+<meta name="description" content="Wally Mostafa, healthcare account management 2010 to 2018: getting pharma work through brand, medical, legal and regulatory review.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script>
+  // Pre-states for the small reveal only apply when JS runs and motion is welcome.
+  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) document.documentElement.classList.add('motion');
+</script>
+<style>
+  /* Proof Grid tokens. */
+  :root {
+    --ink: #18191b;
+    --ink-soft: #43474d;
+    --ink-muted: #676c73;
+    --surface: #f7f7f4;
+    --rule: #d6d8da;
+    --cobalt: #2454c6;
+    --pink: #e548a5;
+    --pink-deep: #a90f68;
+    --cyan: #079fc4;
+    --cyan-deep: #05789a;
+    --blue-wash: #eef3ff;
+    --pink-wash: #fff0f8;
+    --stamp-red: #c3342a;
+    --font-display: 'Syne', sans-serif;
+    --font-body: 'Instrument Sans', sans-serif;
+    --font-mono: "SFMono-Regular", "SF Mono", Consolas, monospace;
+    --space-s: clamp(0.5rem, 1vw, 0.75rem);
+    --space-m: clamp(1rem, 2vw, 1.5rem);
+    --space-l: clamp(1.5rem, 3vw, 2.5rem);
+    --space-xl: clamp(2.5rem, 5vw, 4rem);
+    --space-2xl: clamp(4rem, 8vw, 7rem);
+    --max-w: 1140px;
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { -webkit-font-smoothing: antialiased; overflow-x: clip; }
+  body { font-family: var(--font-body); font-size: clamp(1rem, 1.15vw, 1.125rem); line-height: 1.7; color: var(--ink); background: var(--surface); overflow-x: clip; }
+  a { color: inherit; }
+  a:focus-visible, button:focus-visible { outline: 2px solid var(--cobalt); outline-offset: 3px; }
+
+  .cbar {
+    position: sticky; top: 0; z-index: 50; display: flex; justify-content: space-between; align-items: center; gap: 1rem;
+    padding: 12px var(--space-l); background: rgb(247 247 244 / .92); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
+    border-bottom: 1px solid var(--ink);
+  }
+  .cbar b { font: 700 1.02rem/1 var(--font-display); letter-spacing: -.02em; }
+  .cbar small { font: 700 .68rem/1.2 var(--font-mono); letter-spacing: .12em; color: var(--cobalt); text-transform: uppercase; text-align: right; }
+
+  /* Two 30deg line grids: the board sits on the page's own iso grid. */
+  .grid-bg { position: relative; isolation: isolate; }
+  .grid-bg::before {
+    content: ''; position: absolute; inset: 0; z-index: -1; pointer-events: none;
+    background-image:
+      repeating-linear-gradient(30deg, transparent 0, transparent 47px, rgb(229 72 165 / .055) 47px, rgb(229 72 165 / .055) 48px),
+      repeating-linear-gradient(-30deg, transparent 0, transparent 47px, rgb(36 84 198 / .055) 47px, rgb(36 84 198 / .055) 48px),
+      radial-gradient(circle at 10% 20%, rgb(229 72 165 / .12), transparent 30rem),
+      radial-gradient(circle at 88% 55%, rgb(36 84 198 / .10), transparent 34rem);
+    background-size: 96px 166px, 96px 166px, 100% 100%, 100% 100%;
+  }
+
+  .eyebrow { font: 700 .76rem/1.4 var(--font-mono); text-transform: uppercase; letter-spacing: .12em; color: var(--cobalt); }
+
+  /* ── Hero ── */
+  .hero {
+    max-width: 1320px; margin: 0 auto; min-height: calc(100vh - 50px);
+    display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr); align-items: center; gap: clamp(2rem, 4.5vw, 4.5rem);
+    padding: var(--space-xl) var(--space-l);
+  }
+  .hero .eyebrow { margin-bottom: var(--space-m); }
+  .hero h1 { font: 800 clamp(3rem, 5.6vw, 6rem)/.98 var(--font-display); letter-spacing: -.04em; max-width: 10ch; }
+  .hero-intro { margin-top: var(--space-l); font-size: clamp(1.02rem, 1.2vw, 1.12rem); color: var(--ink-soft); max-width: 48ch; line-height: 1.75; }
+  .route { list-style: none; margin-top: var(--space-l); display: flex; flex-wrap: wrap; gap: 8px 6px; align-items: center; }
+  .route li { display: inline-flex; align-items: center; gap: 7px; font: 700 .66rem/1 var(--font-mono); letter-spacing: .1em; text-transform: uppercase; padding: 7px 9px; background: #fff; border: 1px solid var(--ink); }
+  .route li::before { content: ''; width: 9px; height: 9px; background: var(--c); border: 1px solid var(--ink); }
+  .route li + li { margin-left: 16px; position: relative; }
+  .route li + li::after { content: ''; position: absolute; left: -17px; top: 50%; width: 12px; border-top: 1.5px dashed var(--ink-muted); }
+  .route li.launch { background: #ffd24d; box-shadow: 3px 3px 0 var(--ink); }
+
+  .stage { position: relative; height: clamp(540px, 76vh, 680px); }
+  .stage canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+  .fig { position: absolute; right: 0; bottom: 0; font: 700 .6rem/1 var(--font-mono); letter-spacing: .14em; text-transform: uppercase; color: var(--ink-muted); padding: 5px 0 5px 10px; border-left: 2px solid var(--ink); }
+  .pause {
+    position: absolute; left: 0; bottom: 0; display: inline-flex; align-items: center; gap: 6px; cursor: pointer; min-height: 28px;
+    font: 700 .6rem/1 var(--font-mono); letter-spacing: .12em; text-transform: uppercase; color: var(--ink-soft);
+    background: rgb(255 255 255 / .8); border: 1px solid var(--rule); padding: 6px 9px;
+  }
+  .pause:hover, .pause:focus-visible { color: var(--ink); border-color: var(--ink); box-shadow: 3px 3px 0 var(--pink); outline: none; }
+  .pause svg { width: 8px; height: 8px; fill: currentColor; }
+
+  /* ── Sections ── */
+  .sec { max-width: var(--max-w); margin: 0 auto; padding: var(--space-2xl) var(--space-l) 0; }
+  .sec-head { margin-bottom: var(--space-l); }
+  .sec h2 { font: 800 clamp(2rem, 4vw, 3.1rem)/1.02 var(--font-display); letter-spacing: -.035em; margin-top: .55rem; }
+  .sec-lede { margin-top: .9rem; color: var(--ink-soft); max-width: 44ch; }
+
+  /* 1. Cases */
+  .cases { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-l); }
+  .case {
+    --c: var(--cobalt); --cd: var(--cobalt);
+    background: #fff; border: 1px solid var(--ink); box-shadow: 6px 6px 0 var(--c);
+    padding: var(--space-m); display: flex; flex-direction: column; gap: .85rem; min-width: 0;
+  }
+  .case.pink { --c: var(--pink); --cd: var(--pink-deep); }
+  .case.cyan { --c: var(--cyan); --cd: var(--cyan-deep); }
+  .case.slate { --c: var(--ink-soft); --cd: var(--ink); }
+  .case-meta { font: 700 .66rem/1.4 var(--font-mono); letter-spacing: .12em; text-transform: uppercase; color: var(--ink-muted); }
+  .case h3 { font: 800 clamp(1.3rem, 2vw, 1.55rem)/1.1 var(--font-display); letter-spacing: -.02em; }
+  .case p { font-size: .95rem; line-height: 1.6; color: var(--ink-soft); }
+  .case-stat { display: flex; align-items: baseline; gap: .8rem; border-top: 1px solid var(--ink); padding-top: .85rem; margin-top: auto; }
+  .case-stat b { font: 800 clamp(1.7rem, 3vw, 2.3rem)/1 var(--font-display); letter-spacing: -.03em; color: var(--cd); white-space: nowrap; }
+  .case-stat span { font-size: .86rem; line-height: 1.4; color: var(--ink-soft); }
+  .path-label { font: 700 .6rem/1 var(--font-mono); letter-spacing: .14em; text-transform: uppercase; color: var(--ink-muted); }
+  .path { list-style: none; display: flex; flex-wrap: wrap; gap: 8px 0; align-items: center; margin-top: -.3rem; }
+  .path li {
+    position: relative; display: inline-flex; align-items: center; gap: 6px; margin-right: 18px;
+    font: 700 .6rem/1.15 var(--font-mono); letter-spacing: .08em; text-transform: uppercase;
+    padding: 6px 8px; border: 1px solid var(--ink); background: var(--surface);
+  }
+  .path li::before { content: ''; flex: none; width: 9px; height: 9px; background: var(--c); border: 1px solid var(--ink); }
+  .path li:not(:last-child)::after { content: ''; position: absolute; right: -15px; top: 50%; width: 11px; border-top: 1.5px dashed var(--ink-muted); }
+  .path li.final { background: var(--cd); color: #fff; border-color: var(--ink); box-shadow: 3px 3px 0 var(--ink); transform: rotate(-3deg); }
+  .path li.final::before { background: #fff; }
+  .motion .case .path li { transition: opacity .3s ease, transform .45s cubic-bezier(.34, 1.56, .64, 1); }
+  .motion .case:not(.in) .path li { opacity: 0; transform: translateY(6px); }
+  .motion .case:not(.in) .path li.final { transform: scale(1.7) rotate(-12deg); }
+  .motion .case .path li:nth-child(2) { transition-delay: .08s; }
+  .motion .case .path li:nth-child(3) { transition-delay: .16s; }
+  .motion .case .path li:nth-child(4) { transition-delay: .24s; }
+  .motion .case .path li:nth-child(5) { transition-delay: .32s; }
+  .motion .case .path li.final { transition-delay: .5s; }
+
+  /* 2. Checklist */
+  .owned { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: var(--space-xl); align-items: start; }
+  .owned .sec-head { position: sticky; top: 80px; }
+  .checklist { background: #fff; border: 1px solid var(--ink); box-shadow: 6px 6px 0 var(--pink); }
+  .checklist-head { display: flex; justify-content: space-between; gap: 1rem; padding: 12px var(--space-m); border-bottom: 1px solid var(--ink); font: 700 .64rem/1.2 var(--font-mono); letter-spacing: .14em; text-transform: uppercase; color: var(--ink-muted); }
+  .checklist-head span:last-child { color: var(--cyan-deep); }
+  .checklist ul { list-style: none; }
+  .checklist li { display: grid; grid-template-columns: 24px minmax(0, 1fr); gap: 14px; padding: 16px var(--space-m); }
+  .checklist li + li { border-top: 1px solid var(--rule); }
+  .tick { width: 22px; height: 22px; margin-top: 2px; background: var(--cyan); border: 1px solid var(--ink); box-shadow: 2px 2px 0 var(--ink); display: grid; place-items: center; }
+  .tick svg { width: 13px; height: 13px; stroke: #fff; stroke-width: 2.4; fill: none; }
+  .checklist b { display: block; font-weight: 600; font-size: 1rem; line-height: 1.35; }
+  .checklist li span.where { display: block; margin-top: 3px; font-size: .88rem; line-height: 1.5; color: var(--ink-soft); }
+
+  /* 3. Track */
+  .track { list-style: none; display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: var(--space-l) 0; }
+  .track li { position: relative; padding: 38px 18px 0 0; min-width: 0; }
+  .track li::before {
+    content: ''; position: absolute; left: 0; top: 0; width: 22px; height: 22px; z-index: 1;
+    background: var(--c, var(--cobalt)); border: 1px solid var(--ink); box-shadow: 3px 3px 0 var(--ink);
+  }
+  .track li::after { content: ''; position: absolute; left: 30px; right: 8px; top: 11px; border-top: 1.5px dashed var(--ink-muted); }
+  .track li:last-child::after { display: none; }
+  .track .when { display: block; font: 700 .62rem/1.4 var(--font-mono); letter-spacing: .1em; text-transform: uppercase; color: var(--ink-muted); }
+  .track b { display: block; margin-top: 6px; font: 700 1.02rem/1.2 var(--font-display); letter-spacing: -.01em; }
+  .track .where { display: block; margin-top: 6px; font-size: .88rem; line-height: 1.45; color: var(--ink-soft); }
+  .track .note { display: inline-block; margin-top: 8px; font: 700 .58rem/1.3 var(--font-mono); letter-spacing: .1em; text-transform: uppercase; color: var(--cobalt); border: 1px solid var(--cobalt); padding: 3px 6px; }
+  .after { margin-top: var(--space-xl); padding-top: var(--space-m); border-top: 1px solid var(--ink); font-size: .95rem; color: var(--ink-soft); max-width: 62ch; }
+
+  /* 4. Close */
+  .close { max-width: var(--max-w); margin: 0 auto; padding: var(--space-2xl) var(--space-l); }
+  .close h2 { font: 800 clamp(2.4rem, 5.5vw, 4.6rem)/1 var(--font-display); letter-spacing: -.04em; }
+  .close-links { margin-top: var(--space-l); display: flex; gap: var(--space-l); flex-wrap: wrap; }
+  .close-links a { font-size: 1.05rem; font-weight: 500; text-decoration: none; border-bottom: 1px solid var(--ink); padding-bottom: 2px; }
+  .close-links a:hover { color: var(--cobalt); border-color: var(--cobalt); }
+
+  @media (max-width: 1000px) {
+    .track { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  }
+  @media (max-width: 900px) {
+    .cbar { padding-inline: 16px; }
+    .hero { grid-template-columns: 1fr; min-height: 0; padding-inline: 16px; }
+    .hero h1 { font-size: clamp(2.8rem, 11vw, 4.5rem); }
+    .stage { max-width: 640px; width: 100%; justify-self: center; height: 580px; }
+    .sec, .close { padding-inline: 16px; }
+    .owned { grid-template-columns: 1fr; gap: 0; }
+    .owned .sec-head { position: static; }
+  }
+  @media (max-width: 640px) {
+    .cases { grid-template-columns: 1fr; }
+    .cbar small { display: none; }
+    .route li + li { margin-left: 0; }
+    .route li + li::after { display: none; }
+    .track { grid-template-columns: 1fr; gap: 0; }
+    .track li { padding: 0 0 28px 44px; }
+    .track li::after { left: 11px; right: auto; top: 30px; bottom: 4px; border-top: 0; border-left: 1.5px dashed var(--ink-muted); }
+    .track li:last-child { padding-bottom: 0; }
+  }
+  @media (max-width: 520px) {
+    .stage { height: 540px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="cbar"><b>Wally Mostafa</b><small>Healthcare account management</small></header>
+
+<main>
+<section class="grid-bg">
+  <div class="hero">
+    <div>
+      <p class="eyebrow">Healthcare account management · 2010–2018</p>
+      <h1>Getting the work through.</h1>
+      <p class="hero-intro">From 2010 to 2018 I worked on pharma and healthcare accounts at five agencies in New York and San Diego. A lot of the job was getting each piece through review: med-legal, OPDP and review-committee submissions, FDA preclearance for TV. The largest brand I handled, Namenda XR, had a $20M budget.</p>
+      <ol class="route" aria-label="Review path">
+        <li style="--c: var(--cobalt)">Brand</li>
+        <li style="--c: var(--pink)">Medical</li>
+        <li style="--c: var(--cyan)">Legal</li>
+        <li style="--c: var(--ink-soft)">Regulatory</li>
+        <li class="launch" style="--c: #fff">Launch</li>
+      </ol>
+    </div>
+
+    <div class="stage" id="board" role="img" aria-label="Animation: a campaign piece hops along a board-game path through Brand, Medical, Legal and Regulatory review gates. Medical and Legal each send it back with a red REVISE stamp and a reviewer note. Wally's cursor carries each note to the piece, its revision tag goes from R1 to R2 to R3, every gate stamps it approved, and it lands on the Launch pad.">
+      <canvas aria-hidden="true"></canvas>
+      <button class="pause" type="button" aria-pressed="false"><svg viewBox="0 0 10 10" aria-hidden="true"><rect x="1" y="1" width="3" height="8"/><rect x="6" y="1" width="3" height="8"/></svg><span>Pause</span></button>
+      <div class="fig">Fig. — The approval path</div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="work" aria-labelledby="work-h">
+  <div class="sec-head">
+    <p class="eyebrow">01 · Cleared and shipped</p>
+    <h2 id="work-h">Work that made it through</h2>
+  </div>
+  <div class="cases">
+    <article class="case">
+      <p class="case-meta">Actavis · FCB Health · 2014–2015</p>
+      <h3>Namenda XR broadcast</h3>
+      <p>I was one of two consumer leads on the Namenda XR launch, the agency's largest pharma business, with a $20M brand budget. I owned the broadcast workstream for three national TV spots in one year, including director searches, talent, locations, and pre- and post-production.</p>
+      <p class="path-label">The path</p>
+      <ol class="path" aria-label="Path to air">
+        <li>Market research</li>
+        <li>Med-legal review</li>
+        <li>FDA preclearance</li>
+        <li>Network clearances</li>
+        <li class="final">3 national spots</li>
+      </ol>
+      <div class="case-stat"><b>+45%</b><span>new-to-brand consumers within seven weeks of the spots</span></div>
+    </article>
+
+    <article class="case pink">
+      <p class="case-meta">Teva · FCB Health · 2011–2013</p>
+      <h3>NUVIGIL: National Night Shift Workers' Day</h3>
+      <p>An unbranded campaign I managed across the Times Square NASDAQ, national TV, Xbox Live, radio, outdoor, and consumer journals. Every channel ran through a different vendor team, so most of my days were spent keeping them in step.</p>
+      <p class="path-label">The path</p>
+      <ol class="path" aria-label="Path to launch">
+        <li>Media vendors</li>
+        <li>Digital vendors</li>
+        <li>Print vendors</li>
+        <li class="final">2013 Manny Award</li>
+      </ol>
+      <div class="case-stat"><b>2013</b><span>Manny Award, Best Unbranded Campaign</span></div>
+    </article>
+
+    <article class="case cyan">
+      <p class="case-meta">Jazz Pharmaceuticals · Scout Marketing · 2015–2018</p>
+      <h3>XYREM: the first unbranded social campaign</h3>
+      <p>I led the launch of the first unbranded social campaign on Facebook and YouTube, for the brand and for Jazz, built around real patients telling their own stories. A related unbranded digital campaign bridged disease-state and branded work and doubled qualified traffic to the brand site.</p>
+      <p class="path-label">The path</p>
+      <ol class="path" aria-label="Path from disease state to brand">
+        <li>Disease-state site</li>
+        <li>Facebook + YouTube</li>
+        <li>Brand site</li>
+        <li class="final">First for Jazz</li>
+      </ol>
+      <div class="case-stat"><b>0.37%</b><span>banner click-through rate, against a 0.17% industry benchmark</span></div>
+    </article>
+
+    <article class="case slate">
+      <p class="case-meta">Pfizer · RosettaWishbone · 2010–2011</p>
+      <h3>Prevenar 13 adult pre-launch</h3>
+      <p>My first account. I was the primary client contact across brand teams, national affiliates, and vendors on a global unbranded pneumococcal disease awareness campaign, and I facilitated an Africa and Middle East advisory board in Dubai.</p>
+      <p class="path-label">The path</p>
+      <ol class="path" aria-label="Path to pre-launch">
+        <li>Brand teams</li>
+        <li>National affiliates</li>
+        <li>Vendors</li>
+        <li class="final">Advisory board, Dubai</li>
+      </ol>
+      <div class="case-stat"><b>Global</b><span>award-winning unbranded awareness campaign ahead of the adult launch</span></div>
+    </article>
+  </div>
+</section>
+
+<section class="sec" id="owned" aria-labelledby="owned-h">
+  <div class="owned">
+    <div class="sec-head">
+      <p class="eyebrow">02 · Day to day</p>
+      <h2 id="owned-h">What I owned on the account</h2>
+      <p class="sec-lede">The work behind the pieces above, the part that keeps a job moving from brief to launch.</p>
+    </div>
+    <div class="checklist">
+      <div class="checklist-head"><span>Account checklist</span><span>5 / 5</span></div>
+      <ul>
+        <li><span class="tick" aria-hidden="true"><svg viewBox="0 0 14 14"><path d="M2.5 7.5 L5.5 10.5 L11.5 3.5"/></svg></span><div><b>Weekly client status and financial reporting</b><span class="where">Across the $10M NUVIGIL consumer business at FCB Health, and on Prevenar 13 at RosettaWishbone.</span></div></li>
+        <li><span class="tick" aria-hidden="true"><svg viewBox="0 0 14 14"><path d="M2.5 7.5 L5.5 10.5 L11.5 3.5"/></svg></span><div><b>OPDP and review-committee submissions</b><span class="where">For the same $10M consumer business. Med-legal review and FDA preclearance on the Namenda XR spots.</span></div></li>
+        <li><span class="tick" aria-hidden="true"><svg viewBox="0 0 14 14"><path d="M2.5 7.5 L5.5 10.5 L11.5 3.5"/></svg></span><div><b>Scopes of work and project briefs</b><span class="where">Owned both on the Prevenar 13 pre-launch, along with key opinion leader communications.</span></div></li>
+        <li><span class="tick" aria-hidden="true"><svg viewBox="0 0 14 14"><path d="M2.5 7.5 L5.5 10.5 L11.5 3.5"/></svg></span><div><b>Vendor coordination</b><span class="where">Media, digital, and print vendors on NUVIGIL. Directors, talent, and locations on Namenda XR.</span></div></li>
+        <li><span class="tick" aria-hidden="true"><svg viewBox="0 0 14 14"><path d="M2.5 7.5 L5.5 10.5 L11.5 3.5"/></svg></span><div><b>Managing an Assistant Account Executive</b><span class="where">On Namenda XR, across in-office tactics, national print, and sales rep support materials.</span></div></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="roles" aria-labelledby="roles-h">
+  <div class="sec-head">
+    <p class="eyebrow">03 · Sep 2010 to Jul 2018</p>
+    <h2 id="roles-h">Eight years, six stops</h2>
+  </div>
+  <ol class="track">
+    <li style="--c: var(--cobalt)"><span class="when">Sep 2010 – Mar 2011</span><b>Account Coordinator</b><span class="where">RosettaWishbone · New York</span></li>
+    <li style="--c: var(--pink)"><span class="when">Apr 2011 – Sep 2013</span><b>Assistant AE to Account Executive</b><span class="where">FCB Health · New York</span></li>
+    <li style="--c: var(--cyan)"><span class="when">Sep 2013 – Dec 2013</span><b>Senior Account Executive</b><span class="where">Cline Davis &amp; Mann · New York</span></li>
+    <li style="--c: var(--ink-soft)"><span class="when">Dec 2013 – May 2014</span><b>Senior Account Executive</b><span class="where">Barker DZP · New York</span></li>
+    <li style="--c: var(--cobalt)"><span class="when">Jun 2014 – Jun 2015</span><b>Senior Account Executive</b><span class="where">FCB Health · New York</span></li>
+    <li style="--c: #ffd24d"><span class="when">Jun 2015 – Jul 2018</span><b>Account Supervisor / Digital Strategist</b><span class="where">Scout Marketing · San Diego</span><span class="note">Promoted from Senior AE</span></li>
+  </ol>
+  <p class="after">Since 2018 I've worked in UX leadership and AI implementation, so these days I also design and build the tools.</p>
+</section>
+
+<section class="close" aria-labelledby="close-h">
+  <h2 id="close-h">Thanks for stopping by.</h2>
+  <p class="close-links"><a href="../../resume.html">Resume</a><a href="https://linkedin.com/in/wallymo" target="_blank" rel="noopener">LinkedIn</a></p>
+</section>
+</main>
+
+<script>
+(function Reveal() {
+  const cases = document.querySelectorAll('.case');
+  if (!document.documentElement.classList.contains('motion') || !('IntersectionObserver' in window)) {
+    cases.forEach(c => c.classList.add('in'));
+    return;
+  }
+  let fired = false;
+  const io = new IntersectionObserver(es => {
+    fired = true;
+    es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.2 });
+  cases.forEach(c => io.observe(c));
+  // Safety net: if the observer never reports, show everything.
+  setTimeout(() => { if (!fired) cases.forEach(c => c.classList.add('in')); }, 2500);
+})();
+</script>
+
+<script>
+(function ApprovalPath() {
+  const stage = document.getElementById('board');
+  const cv = stage.querySelector('canvas');
+  const ctx = cv.getContext('2d');
+  const pauseBtn = stage.querySelector('.pause');
+  const REDUCED = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const MONO = '"SFMono-Regular", "SF Mono", Consolas, monospace';
+  const BODY = '"Instrument Sans", sans-serif';
+  const DISPLAY = '"Syne", sans-serif';
+
+  /* ── Math + easing ── */
+  const clamp = (v, a, b) => Math.max(a, Math.min(b, v));
+  const lerp = (a, b, t) => a + (b - a) * t;
+  const seg = (t, a, b) => clamp((t - a) / (b - a), 0, 1);
+  const ss = (a, b, v) => { const k = seg(v, a, b); return k * k * (3 - 2 * k); };
+  const outBack = k => { const c1 = 1.9, c3 = c1 + 1; return 1 + c3 * (k - 1) ** 3 + c1 * (k - 1) ** 2; };
+  const outCubic = k => 1 - (1 - k) ** 3;
+  const inQuad = k => k * k;
+  const inOut = k => (k < 0.5 ? 4 * k * k * k : 1 - (-2 * k + 2) ** 3 / 2);
+  const hash = i => { const x = Math.sin(i * 127.1 + 311.7) * 43758.5453; return x - Math.floor(x); };
+
+  /* ── Palette ── */
+  const INK = '#18191b';
+  const RED = '#c3342a';
+  const COL = {
+    acc:  { t: '#7093e6', l: '#2454c6', r: '#183d97' },
+    ux:   { t: '#f496cd', l: '#e548a5', r: '#b02d7b' },
+    ai:   { t: '#6fd6ee', l: '#079fc4', r: '#056f8d' },
+    reg:  { t: '#8d939b', l: '#43474d', r: '#2a2d31' },
+    pad:  { t: '#ffd24d', l: '#e8b62c', r: '#b58b17' },
+    tile: { t: '#ffffff', l: '#e6e8eb', r: '#c3c7cc' },
+    card: { t: '#ffffff', l: '#ffffff', r: '#d6d8da' },
+  };
+  const DEEP = { acc: '#2454c6', ux: '#a90f68', ai: '#05789a', reg: INK, pad: INK };
+
+  /* ── Board layout (iso units) ── */
+  const C = 0.8660254;
+  const TH = 0.16, TS = 0.86;                 // tile height, tile size
+  const CW = 1.1, CH = 1.4, CD = 0.12, BASE = 0.1; // the campaign piece (a standee)
+  // Gate = a review booth beside the path + a barrier arm across it.
+  // Gate-local coords: a runs along the path, b across it (negative b = booth side).
+  const BOOTH = { a0: -0.32, a1: 0.32, b0: -1.32, b1: -0.74, h: 1.15, roof: 0.14 };
+  const ROOF_TOP = TH + BOOTH.h + BOOTH.roof;
+  const ARM = { a: 0.64, b: -0.62, z: TH + 0.72, len: 1.22 };
+  const SLAB = { a0: -0.43, a1: 0.78, bIn: 0.5, bOut: 1.5 };
+  // Booth span across the path, on the gate's side.
+  const boothB = g => (g.side < 0 ? [BOOTH.b0, BOOTH.b1] : [-BOOTH.b1, -BOOTH.b0]);
+  const slabB = g => (g.side < 0 ? [-SLAB.bOut, -SLAB.bIn] : [SLAB.bIn, SLAB.bOut]);
+  const armA = g => g.armA || ARM.a;
+  const slabA1 = g => armA(g) + 0.14;
+  const PAD = 1.4, PAD_H = 0.3;
+  // Two long rows joined by short drops. Every booth sits on the outside of the path.
+  const TILES = [
+    [0.5, 0.5], [1.5, 0.5], [2.5, 0.5], [3.5, 0.5], [4.5, 0.5], [5.5, 0.5],
+    [5.5, 1.5], [5.5, 2.5],
+    [6.5, 2.5], [7.5, 2.5], [8.5, 2.5],
+    [8.5, 3.5], [8.5, 4.5], [8.5, 5.75],
+  ];
+  const LAUNCH = 13;
+  // side: which side of the path the booth stands on (-1 = behind, +1 = in front).
+  const GATES = [
+    { num: '01', name: 'BRAND', tile: 2, dir: 'x', side: -1, key: 'acc', reviews: [[1.5, 2.0, 'ok']] },
+    { num: '02', name: 'MEDICAL', tile: 4, dir: 'x', side: -1, key: 'ux', reviews: [[3.3, 3.9, 'no'], [6.75, 7.3, 'ok']] },
+    { num: '03', name: 'LEGAL', tile: 9, dir: 'x', side: -1, key: 'ai', reviews: [[9.95, 10.55, 'no'], [13.4, 13.95, 'ok']] },
+    { num: '04', name: 'REGULATORY', tile: 12, dir: 'y', side: -1, key: 'reg', reviews: [[15.7, 16.25, 'ok']], armA: 0.46, badgeDx: -0.9 },
+  ];
+  // Reviewer notes: the gate pops a note, Wally picks it up and drops it on the piece.
+  // nb = note box offset from the gate badge, in iso units (left, top).
+  const NOTES = [
+    { g: 1, n: 0, show: 4.0, pick: 5.1, drop: 5.8, nb: [0.95, -1.15] },
+    { g: 2, n: 1, show: 10.65, pick: 11.75, drop: 12.45, nb: [0.95, -1.45] },
+  ];
+  const REVS = NOTES.map(n => n.drop + 0.1);   // R1 -> R2, R2 -> R3
+  const LAND = 17.1;          // lands on the Launch pad
+  const EXIT = LAND + 2.0;    // the piece leaves
+  const RESET = EXIT + 0.5;   // board goes back to idle
+  const HUD_RESET = RESET + 0.3;
+  const DUR = 20.6;
+  const KINDS = ['TV storyboard', 'Web banner', 'Print ad'];
+  const NOTE_TEXT = [
+    ['Add fair balance', 'Cite the source'],
+    ['Soften the claim', 'Add fair balance'],
+    ['Cite the source', 'Soften the claim'],
+  ];
+  // [start, end, fromTile, toTile, kind]
+  const MOVES = [
+    [0.6, 1.5, 0, 2, 'hop'],
+    [2.4, 3.3, 2, 4, 'hop'],
+    [4.15, 4.65, 4, 3, 'knock'],
+    [6.3, 6.75, 3, 4, 'hop'],
+    [7.7, 9.95, 4, 9, 'hop'],
+    [10.8, 11.3, 9, 8, 'knock'],
+    [12.95, 13.4, 8, 9, 'hop'],
+    [14.35, 15.7, 9, 12, 'hop'],
+    [16.6, LAND, 12, 13, 'hop'],
+  ];
+  const STAMPS = [];
+  (() => {
+    let r = 0;
+    GATES.forEach((g, gi) => g.reviews.forEach(v => STAMPS.push({ t: v[1], ok: v[2] === 'ok', gi, peel: v[2] === 'ok' ? 0 : REVS[r++] })));
+    STAMPS.push({ t: LAND + 0.12, launch: true });
+  })();
+  const CLICKS = [0.15, NOTES[0].pick, NOTES[0].drop, NOTES[1].pick, NOTES[1].drop, LAND + 0.1];
+
+  let W = 0, H = 0, s = 40, ox = 0, oy = 0;
+  let T = 0, paused = false;
+
+  const P = (x, y, z) => [ox + (x - y) * C * s, oy + (x + y) * 0.5 * s - z * s];
+  const S = (h, v) => [ox + h * s, oy + v * s];
+  const BOUNDS = { minH: -1.3, maxH: 6.4, minV: -1.9, maxV: 8.05 };
+
+  function resize() {
+    const r = cv.getBoundingClientRect();
+    W = r.width; H = r.height;
+    const dpr = Math.min(2, window.devicePixelRatio || 1);
+    cv.width = Math.round(W * dpr); cv.height = Math.round(H * dpr);
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    const top = 8, bot = 40, padX = 8;
+    const bw = BOUNDS.maxH - BOUNDS.minH, bh = BOUNDS.maxV - BOUNDS.minV;
+    s = Math.min((W - 2 * padX) / bw, (H - top - bot) / bh);
+    ox = W / 2 - ((BOUNDS.minH + BOUNDS.maxH) / 2) * s;
+    oy = top + (H - top - bot - bh * s) * 0.2 - BOUNDS.minV * s;
+  }
+
+  /* ── Drawing primitives ── */
+  function path(pts) { ctx.beginPath(); pts.forEach((p, i) => (i ? ctx.lineTo(p[0], p[1]) : ctx.moveTo(p[0], p[1]))); ctx.closePath(); }
+  function poly(pts, fill, lw = 1.1, stroke = INK) {
+    path(pts);
+    if (fill) { ctx.fillStyle = fill; ctx.fill(); }
+    if (lw) { ctx.lineWidth = lw; ctx.strokeStyle = stroke; ctx.stroke(); }
+  }
+  function box(x, y, z, dx, dy, dz, c, lw = 1.15) {
+    const X = x + dx, Y = y + dy, Z = z + dz;
+    poly([P(X, y, Z), P(X, Y, Z), P(X, Y, z), P(X, y, z)], c.r, lw);
+    poly([P(x, Y, Z), P(X, Y, Z), P(X, Y, z), P(x, Y, z)], c.l, lw);
+    poly([P(x, y, Z), P(X, y, Z), P(X, Y, Z), P(x, Y, Z)], c.t, lw);
+  }
+  function groundShadow(x, y, z, r, a = 0.18) {
+    const [cx, cy] = P(x, y, z);
+    ctx.beginPath(); ctx.ellipse(cx, cy, r * 1.2247 * s, r * 0.7071 * s, 0, 0, Math.PI * 2);
+    ctx.fillStyle = `rgba(24,25,27,${a})`; ctx.fill();
+  }
+  // Local drawing on the ground plane (1 local px = 1/s iso units, x along iso +x).
+  function onTop(x, y, z, fn) { const [px, py] = P(x, y, z); ctx.save(); ctx.translate(px, py); ctx.transform(C, 0.5, -C, 0.5, 0, 0); fn(); ctx.restore(); }
+  // Local drawing on a +y facing wall (x along iso +x, y straight down).
+  function onFace(x, y, z, fn) { const [px, py] = P(x, y, z); ctx.save(); ctx.translate(px, py); ctx.transform(C, 0.5, 0, 1, 0, 0); fn(); ctx.restore(); }
+
+  /* ── The campaign piece: where it is at time t ── */
+  function tilePos(f) {
+    const i = clamp(Math.floor(f), 0, TILES.length - 2), k = clamp(f - i, 0, 1);
+    const a = TILES[i], b = TILES[i + 1];
+    return [lerp(a[0], b[0], k), lerp(a[1], b[1], k)];
+  }
+  const groundAt = f => (f <= 12 ? TH : lerp(TH, PAD_H, clamp(f - 12, 0, 1)));
+  const screenH = f => { const p = tilePos(f); return p[0] - p[1]; };
+
+  function pieceState(t) {
+    let f = 0, hop = 0, sq = 1, tilt = 0, maxF = 0, done = null, moving = false;
+    for (const m of MOVES) {
+      const [a, b, from, to, kind] = m;
+      if (t < a) break;
+      if (t >= b) { f = to; maxF = Math.max(maxF, to); done = m; continue; }
+      moving = true;
+      const n = Math.abs(to - from), dir = Math.sign(to - from);
+      if (kind === 'hop') {
+        const u = (t - a) / (b - a) * n, k = Math.min(Math.floor(u), n - 1), fr = u - k;
+        f = from + dir * (k + inOut(fr));
+        hop = Math.sin(fr * Math.PI) * 0.5;
+        sq = fr < 0.14 ? 1 - Math.sin(fr / 0.14 * Math.PI) * 0.16 : 1 + Math.sin((fr - 0.14) / 0.86 * Math.PI) * 0.07;
+      } else {
+        // Knocked back one tile: a bigger, wobblier arc.
+        const fr = (t - a) / (b - a);
+        f = from + dir * outCubic(fr);
+        hop = Math.sin(fr * Math.PI) * 0.8;
+        tilt = Math.sign(screenH(to) - screenH(from) || 1) * Math.sin(fr * Math.PI) * 0.32;
+        sq = 1 + Math.sin(fr * Math.PI) * 0.05;
+      }
+      maxF = Math.max(maxF, f);
+      break;
+    }
+    if (!moving && done) {
+      const age = t - done[1];
+      if (age < 0.24) sq = 1 - Math.sin(age / 0.24 * Math.PI) * (done[4] === 'knock' ? 0.24 : 0.17);
+    }
+    // Squash when a stamp hits, wobble when a note is applied.
+    STAMPS.forEach(st => { const age = t - st.t; if (age >= 0 && age < 0.25) sq *= 1 - Math.sin(age / 0.25 * Math.PI) * 0.12; });
+    NOTES.forEach(n => { const age = t - n.drop; if (age >= 0 && age < 0.7) sq *= 1 + Math.sin(age * 26) * Math.exp(-age * 6) * 0.12; });
+    // Pop in, celebrate on the pad, then leave.
+    let k = outBack(seg(t, 0, 0.45)) * (1 - inQuad(seg(t, EXIT, EXIT + 0.4)));
+    let spin = 1;
+    if (t > LAND + 0.25 && t < LAND + 0.85) {
+      const c = seg(t, LAND + 0.25, LAND + 0.85);
+      hop += Math.sin(c * Math.PI) * 0.85;
+      spin = Math.cos(c * Math.PI * 2);
+    }
+    const [x, y] = tilePos(f), zg = groundAt(f);
+    return { f, x, y, zg, z: zg + hop, sq, tilt, k, spin, maxF };
+  }
+
+  function roundAt(t) { return t >= HUD_RESET ? 1 : 1 + (t >= REVS[0]) + (t >= REVS[1]); }
+  function clearedAt(t) { return t >= HUD_RESET ? 0 : STAMPS.filter(st => st.ok && st.t <= t).length; }
+  function activeReview(t) {
+    for (const g of GATES) for (const r of g.reviews) if (t >= r[0] && t < r[1]) return { g, a: r[0], b: r[1] };
+    return null;
+  }
+
+  /* ── Card face art (local px: 0..lw across, 0..lh down) ── */
+  function faceArt(t, kind, round, lw, lh) {
+    const m = lw * 0.09, iw = lw - 2 * m;
+    const X = u => m + u * iw, Y = v => v * lh;
+    const rect = (u0, v0, u1, v1, fill, w = 0.8) => {
+      ctx.beginPath(); ctx.rect(X(u0), Y(v0), X(u1) - X(u0), Y(v1) - Y(v0));
+      if (fill) { ctx.fillStyle = fill; ctx.fill(); }
+      if (w) { ctx.lineWidth = w; ctx.strokeStyle = INK; ctx.stroke(); }
+    };
+    const bar = (u0, v, u1, fill = '#c3c7cc', th = 0.026) => rect(u0, v, u1, v + th, fill, 0);
+    const dot = (u, v, r, fill) => { ctx.beginPath(); ctx.arc(X(u), Y(v), r, 0, Math.PI * 2); ctx.fillStyle = fill; ctx.fill(); };
+
+    if (kind === 0) {
+      // TV storyboard: four frames with a figure in each.
+      [[0, 0.07], [0.53, 0.07], [0, 0.33], [0.53, 0.33]].forEach(([u, v], i) => {
+        rect(u, v, u + 0.47, v + 0.2, i === 1 || i === 2 ? '#fff0f8' : '#eef3ff');
+        const r = lh * 0.028, cx = X(u + 0.235 + (i % 2 ? 0.06 : -0.04)), cy = Y(v + 0.085);
+        ctx.beginPath(); ctx.arc(cx, cy, r, 0, Math.PI * 2); ctx.fillStyle = INK; ctx.fill();
+        ctx.beginPath(); ctx.arc(cx, cy + r * 3.3, r * 2, Math.PI, 0); ctx.fill();
+        bar(u, v + 0.222, u + 0.34, '#9aa0a8', 0.018);
+      });
+    } else if (kind === 1) {
+      // Web banner: header bar, hero image, headline, button.
+      rect(0, 0.06, 1, 0.15, COL.ux.l);
+      rect(0, 0.19, 1, 0.47, '#eef3ff');
+      dot(0.76, 0.27, lh * 0.035, COL.acc.l);
+      ctx.save(); ctx.beginPath(); ctx.rect(X(0), Y(0.19), iw, Y(0.28)); ctx.clip();
+      poly([[X(0.02), Y(0.47)], [X(0.35), Y(0.3)], [X(0.7), Y(0.47)]], COL.ux.t, 0.8);
+      ctx.restore();
+      bar(0, 0.51, 0.82, '#43474d', 0.03);
+      rect(0.56, 0.565, 1, 0.615, INK, 0);
+    } else {
+      // Print ad: big headline, image, body copy.
+      bar(0, 0.07, 0.9, INK, 0.05);
+      bar(0, 0.14, 0.6, INK, 0.05);
+      rect(0, 0.22, 1, 0.5, '#fff0f8');
+      dot(0.5, 0.36, lh * 0.07, COL.ux.l);
+      ctx.beginPath(); ctx.arc(X(0.5), Y(0.36), lh * 0.07, 0, Math.PI * 2); ctx.lineWidth = 0.8; ctx.strokeStyle = INK; ctx.stroke();
+      bar(0, 0.545, 0.95, '#9aa0a8', 0.02);
+      bar(0, 0.58, 0.7, '#9aa0a8', 0.02);
+    }
+
+    // Claim lines. Round 3 shortens the claim and adds a footnote marker.
+    const r3 = round >= 3 ? outCubic(seg(t, REVS[1], REVS[1] + 0.4)) : 0;
+    bar(0, 0.645, lerp(0.92, 0.66, r3), '#43474d', 0.034);
+    bar(0, 0.705, 0.72, '#9aa0a8', 0.024);
+    if (r3 > 0) {
+      ctx.save(); ctx.globalAlpha *= r3;
+      dot(0.74, 0.655, lh * 0.022, COL.ai.l);
+      bar(0, 0.965, 0.45, COL.ai.r, 0.016);
+      ctx.restore();
+    }
+    // Round 2 adds a fair-balance block that wipes in.
+    if (round >= 2) {
+      const fb = outCubic(seg(t, REVS[0], REVS[0] + 0.4));
+      rect(0, 0.765, Math.max(0.02, fb), 0.935, '#fff', 0.8);
+      [0.79, 0.83, 0.87, 0.905].forEach((v, i) => bar(0.05, v, 0.05 + (i === 3 ? 0.5 : 0.88) * fb, '#9aa0a8', 0.018));
+    }
+
+    // Review scan: a light bar sweeps the piece while a gate looks it over.
+    const rv = activeReview(t);
+    if (rv) {
+      const y = ((seg(t, rv.a, rv.b) * 2) % 1) * lh;
+      ctx.fillStyle = COL[rv.g.key].t; ctx.globalAlpha = 0.35; ctx.fillRect(0, y - 4, lw, 8);
+      ctx.globalAlpha = 1; ctx.fillStyle = COL[rv.g.key].l; ctx.fillRect(0, y - 0.75, lw, 1.5);
+    }
+  }
+
+  function drawTag(t, round, a) {
+    let sx = 1;
+    REVS.forEach(r => { const d = t - r; if (Math.abs(d) < 0.16) sx = Math.abs(d) / 0.16; });
+    const swing = Math.sin(t * 2.6) * 0.06;
+    const w = 27, h = 17;
+    const tone = [INK, '#a90f68', '#2454c6'][round - 1], shade = [INK, COL.ux.l, COL.acc.l][round - 1];
+    ctx.save();
+    ctx.translate(a[0] - 3, a[1] + 3); ctx.rotate(0.16 + swing);
+    ctx.beginPath(); ctx.moveTo(0, 0); ctx.lineTo(7, -9); ctx.lineWidth = 1; ctx.strokeStyle = INK; ctx.stroke();
+    ctx.translate(7 + w / 2, -9 - h / 2 + 3); ctx.scale(Math.max(sx, 0.04), 1);
+    ctx.fillStyle = shade; ctx.fillRect(-w / 2 + 2.5, -h / 2 + 2.5, w, h);
+    ctx.fillStyle = '#fff'; ctx.fillRect(-w / 2, -h / 2, w, h);
+    ctx.lineWidth = 1; ctx.strokeStyle = INK; ctx.strokeRect(-w / 2 + 0.5, -h / 2 + 0.5, w - 1, h - 1);
+    ctx.font = `700 10px ${MONO}`; ctx.fillStyle = tone; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+    ctx.fillText(`R${round}`, 0, 0.5);
+    ctx.restore();
+    ctx.textBaseline = 'alphabetic';
+  }
+
+  function drawCard(t, ps, kind) {
+    const { x, y, z, zg, sq, tilt, k, spin } = ps;
+    if (k <= 0.01) return;
+    groundShadow(x, y, zg, 0.6 * k * (1 - Math.min(0.5, (z - zg) * 0.5)), 0.16);
+    const base = P(x, y, z);
+    ctx.save();
+    ctx.translate(base[0], base[1]); ctx.rotate(tilt); ctx.scale(k * spin * (2 - sq), k * sq); ctx.translate(-base[0], -base[1]);
+    box(x - 0.42, y - 0.24, z, 0.84, 0.48, BASE, COL.reg, 1);
+    const x0 = x - CW / 2, y0 = y - CD / 2, z0 = z + BASE;
+    box(x0, y0, z0, CW, CD, CH, COL.card);
+    onFace(x0, y0 + CD, z0 + CH, () => faceArt(t, kind, roundAt(t), CW * s, CH * s));
+    drawTag(t, roundAt(t), P(x0 + CW, y0 + CD, z0 + CH));
+    ctx.restore();
+  }
+  const faceCenter = ps => P(ps.x, ps.y + CD / 2, ps.z + BASE + CH * 0.5);
+
+  /* ── Stamps ── */
+  function stampMark(x, y, text, col, sc, rot, alpha) {
+    if (alpha <= 0.01) return;
+    ctx.save(); ctx.globalAlpha = alpha; ctx.translate(x, y); ctx.rotate(rot); ctx.scale(sc, sc);
+    ctx.font = `800 13px ${DISPLAY}`;
+    const w = ctx.measureText(text).width + 20, h = 27;
+    ctx.fillStyle = 'rgba(255,255,255,.92)'; ctx.fillRect(-w / 2, -h / 2, w, h);
+    ctx.lineWidth = 2.2; ctx.strokeStyle = col; ctx.strokeRect(-w / 2, -h / 2, w, h);
+    ctx.lineWidth = 1; ctx.strokeRect(-w / 2 + 3.5, -h / 2 + 3.5, w - 7, h - 7);
+    ctx.fillStyle = col; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+    ctx.fillText(text, 0, 1);
+    ctx.restore();
+    ctx.textBaseline = 'alphabetic';
+  }
+  function impact(x, y, age, col) {
+    const k = seg(age, 0.05, 0.4);
+    if (k <= 0 || k >= 1) return;
+    ctx.save(); ctx.strokeStyle = col; ctx.globalAlpha = 1 - k; ctx.lineWidth = 2;
+    for (let i = 0; i < 8; i++) {
+      const a = i * Math.PI / 4 + 0.3, r0 = 40 + k * 16;
+      ctx.beginPath(); ctx.moveTo(x + Math.cos(a) * r0, y + Math.sin(a) * r0 * 0.7); ctx.lineTo(x + Math.cos(a) * (r0 + 8), y + Math.sin(a) * (r0 + 8) * 0.7); ctx.stroke();
+    }
+    ctx.restore();
+  }
+  function stamps(t, ps) {
+    if (ps.k <= 0.01) return;
+    const [fx, fy] = faceCenter(ps);
+    STAMPS.forEach(st => {
+      const age = t - st.t;
+      if (age < 0) return;
+      const k = seg(age, 0, 0.18);
+      let sc = lerp(2.4, 1, outCubic(k)), alpha = k, rot, text, col;
+      if (st.launch) {
+        text = 'LAUNCHED'; col = '#05789a'; rot = -0.12; alpha *= 1 - seg(t, EXIT - 0.2, EXIT + 0.2);
+      } else if (st.ok) {
+        if (age > 0.95) return;
+        text = 'APPROVED'; col = '#2454c6'; rot = -0.14;
+        alpha *= 1 - seg(age, 0.7, 0.95); sc *= 1 + seg(age, 0.7, 0.95) * 0.2;
+      } else {
+        if (t > st.peel + 0.35) return;
+        const pk = seg(t, st.peel, st.peel + 0.35);
+        text = 'REVISE'; col = RED; rot = 0.12 + pk * 0.7;
+        alpha *= 1 - pk; sc *= 1 - pk * 0.35;
+      }
+      impact(fx, fy, age, col);
+      stampMark(fx, fy + 4, text, col, sc, rot, alpha);
+    });
+  }
+
+  /* ── Tiles, gates, launch pad ── */
+  function drawTiles(t, ps) {
+    const reset = t > RESET;
+    const order = TILES.map((p, i) => i).sort((a, b) => TILES[a][0] + TILES[a][1] - TILES[b][0] - TILES[b][1]);
+    // Hard offset shadows first, so no tile's shadow lands on its neighbor.
+    const d = 0.1;
+    const shadow = (x0, y0, x1, y1) => poly([P(x0 + d, y0 + d, 0), P(x1 + d, y0 + d, 0), P(x1 + d, y1 + d, 0), P(x0 + d, y1 + d, 0)], 'rgba(36,84,198,.14)', 0);
+    order.forEach(i => {
+      if (i === LAUNCH) return;
+      const [x, y] = TILES[i];
+      shadow(x - TS / 2, y - TS / 2, x + TS / 2, y + TS / 2);
+    });
+    const slab = g => { const [b0, b1] = slabB(g); gbox(g, SLAB.a0, b0, 0, slabA1(g) - SLAB.a0, b1 - b0, TH, COL.tile); };
+    GATES.forEach(g => {
+      const [b0, b1] = slabB(g), [x0, y0] = gw(g, SLAB.a0, b0), [x1, y1] = gw(g, slabA1(g), b1);
+      shadow(Math.min(x0, x1), Math.min(y0, y1), Math.max(x0, x1), Math.max(y0, y1));
+    });
+    // Slabs behind the path go down before the tiles, slabs in front after them.
+    GATES.filter(g => g.side < 0).forEach(slab);
+    order.forEach(i => {
+      const [x, y] = TILES[i];
+      if (i === LAUNCH) { drawPad(t); return; }
+      const g = GATES.find(q => q.tile === i);
+      const passed = !reset && i > 0 && i <= ps.maxF + 0.01;
+      box(x - TS / 2, y - TS / 2, 0, TS, TS, TH, { ...COL.tile, t: passed ? '#eef3ff' : '#fff' });
+      if (g) {
+        // The review spot: an inset square in the gate's color.
+        onTop(x, y, TH, () => {
+          const r = 0.3 * s;
+          ctx.lineWidth = 2; ctx.strokeStyle = COL[g.key].l; ctx.strokeRect(-r, -r, 2 * r, 2 * r);
+        });
+      }
+      if (i === 0) {
+        onTop(x, y, TH, () => {
+          ctx.font = `700 ${Math.max(7, 0.17 * s)}px ${MONO}`; ctx.fillStyle = COL.acc.l; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+          ctx.fillText('START', 0, 0);
+        });
+      } else if (!g) {
+        // Chevron pointing to the next tile.
+        const nx = TILES[i + 1], dx = nx[0] - x, dy = nx[1] - y, L = Math.hypot(dx, dy) || 1, ux = dx / L, uy = dy / L;
+        onTop(x, y, TH, () => {
+          const a = 0.13 * s, b = 0.1 * s, c = 0.14 * s;
+          ctx.beginPath();
+          ctx.moveTo(-ux * b - uy * c, -uy * b + ux * c); ctx.lineTo(ux * a, uy * a); ctx.lineTo(-ux * b + uy * c, -uy * b - ux * c);
+          ctx.lineWidth = 1.6; ctx.strokeStyle = passed ? 'rgba(36,84,198,.55)' : 'rgba(24,25,27,.22)'; ctx.stroke();
+        });
+      }
+    });
+    GATES.filter(g => g.side > 0).forEach(slab);
+    ctx.textBaseline = 'alphabetic';
+  }
+
+  function drawPad(t) {
+    const [x, y] = TILES[LAUNCH], h = PAD / 2;
+    const d = 0.12;
+    poly([P(x - h + d, y - h + d, 0), P(x + h + d, y - h + d, 0), P(x + h + d, y + h + d, 0), P(x - h + d, y + h + d, 0)], 'rgba(36,84,198,.14)', 0);
+    box(x - h, y - h, 0, PAD, PAD, PAD_H, COL.pad);
+    const lit = t >= LAND && t < RESET;
+    onTop(x, y, PAD_H, () => {
+      const r = 0.5 * s;
+      if (lit) { ctx.fillStyle = `rgba(7,159,196,${0.22 + 0.5 * (1 - seg(t, LAND, LAND + 0.7))})`; ctx.fillRect(-r, -r, 2 * r, 2 * r); }
+      ctx.lineWidth = 1.1; ctx.strokeStyle = INK; ctx.strokeRect(-r, -r, 2 * r, 2 * r);
+      ctx.setLineDash([3, 3]); ctx.strokeRect(-r * 0.62, -r * 0.62, r * 1.24, r * 1.24); ctx.setLineDash([]);
+      ctx.font = `700 ${Math.max(7, 0.15 * s)}px ${MONO}`; ctx.fillStyle = INK; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+      ctx.fillText('LAUNCH', 0, r + 0.1 * s);
+    });
+    ctx.textBaseline = 'alphabetic';
+  }
+
+  function gateState(g, t) {
+    if (t > RESET) return { st: 'idle', since: 0 };
+    let st = 'idle', since = 0;
+    for (const r of g.reviews) {
+      if (t < r[0]) break;
+      if (t < r[1]) { st = 'review'; since = t - r[0]; break; }
+      st = r[2]; since = t - r[1];
+    }
+    return { st, since };
+  }
+
+  function lamp(x, y, z, gs, t) {
+    const col = gs.st === 'review' ? (Math.floor(gs.since * 8) % 2 ? '#ffd24d' : '#ffffff')
+      : gs.st === 'ok' ? COL.ai.l : gs.st === 'no' ? RED : '#ffffff';
+    const bump = gs.st === 'ok' || gs.st === 'no' ? outBack(seg(gs.since, 0, 0.3)) : 1;
+    const hgt = 0.2 * (gs.st === 'idle' ? 1 : bump);
+    box(x - 0.13, y - 0.13, z, 0.26, 0.26, hgt, { t: col, l: col === '#ffffff' ? '#e6e8eb' : col, r: col === '#ffffff' ? '#c3c7cc' : col }, 1);
+    if ((gs.st === 'ok' || gs.st === 'no') && gs.since < 0.7) {
+      const [cx, cy] = P(x, y, z + hgt), k = gs.since / 0.7;
+      ctx.beginPath(); ctx.ellipse(cx, cy, (0.25 + k * 0.8) * s, (0.14 + k * 0.45) * s, 0, 0, Math.PI * 2);
+      ctx.strokeStyle = gs.st === 'ok' ? `rgba(7,159,196,${1 - k})` : `rgba(195,52,42,${1 - k})`; ctx.lineWidth = 2; ctx.stroke();
+    }
+  }
+
+  // Gate-local (a along path, b across) to world.
+  function gw(g, a, b) { const [gx, gy] = TILES[g.tile]; return g.dir === 'x' ? [gx + a, gy + b] : [gx + b, gy + a]; }
+  const GP = (g, a, b, z) => { const [x, y] = gw(g, a, b); return P(x, y, z); };
+  function gbox(g, a0, b0, z, da, db, dz, c, lw) {
+    const [x, y] = gw(g, a0, b0);
+    if (g.dir === 'x') box(x, y, z, da, db, dz, c, lw); else box(x, y, z, db, da, dz, c, lw);
+  }
+  function armAngle(g, t) {
+    if (t > RESET + 0.4) return 0;
+    const ok = g.reviews.find(r => r[2] === 'ok')[1];
+    let th = 1.42 * outBack(seg(t, ok, ok + 0.45)) * (1 - ss(RESET, RESET + 0.4, t));
+    g.reviews.forEach(r => { if (r[2] === 'no' && t >= r[1]) th += Math.sin((t - r[1]) * 32) * Math.exp(-(t - r[1]) * 6) * 0.1; });
+    return th;
+  }
+
+  function drawBooth(g, t) {
+    const B = BOOTH, c = COL[g.key], gs = gateState(g, t);
+    const [b0, b1] = boothB(g);
+    gbox(g, B.a0, b0, TH, B.a1 - B.a0, b1 - b0, B.h, c);
+    // Window on the face that looks at the path, with a reviewer inside.
+    const zw0 = TH + 0.42, zw1 = TH + 0.95, wa0 = B.a0 + 0.1, wa1 = B.a1 - 0.1;
+    const tint = gs.st === 'review' ? '#fff7d6' : gs.st === 'no' ? '#ffd9d5' : gs.st === 'ok' ? '#d9f4fb' : '#ffffff';
+    poly([GP(g, wa0, b1, zw1), GP(g, wa1, b1, zw1), GP(g, wa1, b1, zw0), GP(g, wa0, b1, zw0)], tint, 1);
+    const bob = gs.st === 'review' ? Math.sin(gs.since * 14) * 0.03 : 0;
+    const [hx, hy] = GP(g, bob, b1, TH + 0.72);
+    ctx.save(); ctx.beginPath(); path([GP(g, wa0, b1, zw1), GP(g, wa1, b1, zw1), GP(g, wa1, b1, zw0), GP(g, wa0, b1, zw0)]); ctx.clip();
+    ctx.fillStyle = INK;
+    ctx.beginPath(); ctx.arc(hx, hy, 0.085 * s, 0, Math.PI * 2); ctx.fill();
+    ctx.beginPath(); ctx.ellipse(hx, hy + 0.26 * s, 0.17 * s, 0.13 * s, 0, Math.PI, 0); ctx.fill();
+    ctx.restore();
+    // Counter ledge + roof + lamp.
+    gbox(g, B.a0 - 0.02, b1 - 0.02, TH + 0.4, B.a1 - B.a0 + 0.04, 0.12, 0.05, COL.tile, 0.9);
+    gbox(g, B.a0 - 0.08, b0 - 0.08, TH + B.h, B.a1 - B.a0 + 0.16, b1 - b0 + 0.16, B.roof, COL.tile);
+    const [lx, ly] = gw(g, 0, (b0 + b1) / 2);
+    lamp(lx, ly, ROOF_TOP, gs, t);
+  }
+
+  function drawArm(g, t) {
+    const th = armAngle(g, t);
+    const pb = -g.side * ARM.b;
+    const aa = armA(g);
+    gbox(g, aa - 0.07, pb - 0.07, TH, 0.14, 0.14, ARM.z - TH + 0.04, COL.reg, 1);
+    const p0 = GP(g, aa, pb, ARM.z);
+    const p1 = GP(g, aa, pb - g.side * ARM.len * Math.cos(th), ARM.z + ARM.len * Math.sin(th));
+    const wdt = 0.12 * s;
+    ctx.lineCap = 'butt';
+    ctx.beginPath(); ctx.moveTo(...p0); ctx.lineTo(...p1); ctx.lineWidth = wdt + 2.4; ctx.strokeStyle = INK; ctx.stroke();
+    ctx.lineWidth = wdt; ctx.strokeStyle = '#fff'; ctx.stroke();
+    ctx.setLineDash([0.16 * s, 0.16 * s]); ctx.strokeStyle = COL[g.key].l; ctx.stroke(); ctx.setLineDash([]);
+    ctx.lineCap = 'round';
+    ctx.beginPath(); ctx.arc(p0[0], p0[1], 0.1 * s, 0, Math.PI * 2); ctx.fillStyle = '#fff'; ctx.fill(); ctx.lineWidth = 1.2; ctx.strokeStyle = INK; ctx.stroke();
+  }
+
+  function addGate(g, t, add) {
+    const [gx, gy] = TILES[g.tile], k0 = gx + gy;
+    const [b0, b1] = boothB(g);
+    add(k0 + (b0 + b1) / 2, () => drawBooth(g, t));
+    const open = clamp(armAngle(g, t) / 1.42, 0, 1);
+    add(k0 + armA(g) + lerp(0, -g.side * ARM.b, open), () => drawArm(g, t));
+  }
+
+  /* ── Badges + HUD ── */
+  function badge(pt, num, name, key, on, mark, markAge) {
+    ctx.font = `700 9.5px ${MONO}`;
+    const label = `${num}  ${name}`, w = ctx.measureText(label).width + 16, h = 21;
+    const mw = mark ? h + 3 : 0;
+    const x = clamp(pt[0] - (w + mw) / 2, 4, W - w - mw - 4), y = pt[1] - h;
+    ctx.fillStyle = on ? COL[key].l : 'rgba(24,25,27,.85)';
+    ctx.fillRect(x + (on ? 3 : 2), y + (on ? 3 : 2), w, h);
+    ctx.fillStyle = on ? COL[key].l : '#fff'; ctx.fillRect(x, y, w, h);
+    ctx.lineWidth = 1; ctx.strokeStyle = INK; ctx.strokeRect(x + 0.5, y + 0.5, w - 1, h - 1);
+    ctx.fillStyle = on ? (key === 'pad' ? INK : '#fff') : DEEP[key]; ctx.textAlign = 'left'; ctx.textBaseline = 'middle';
+    ctx.fillText(label, x + 8, y + h / 2 + 0.5);
+    if (mark) {
+      const k = outBack(seg(markAge, 0, 0.3)), mx = x + w + 3 + h / 2, my = y + h / 2;
+      ctx.save(); ctx.translate(mx, my); ctx.scale(k, k);
+      ctx.fillStyle = INK; ctx.fillRect(-h / 2 + 2, -h / 2 + 2, h, h);
+      ctx.fillStyle = mark === 'ok' ? COL.ai.l : RED; ctx.fillRect(-h / 2, -h / 2, h, h);
+      ctx.strokeRect(-h / 2 + 0.5, -h / 2 + 0.5, h - 1, h - 1);
+      ctx.beginPath(); ctx.lineWidth = 2; ctx.strokeStyle = '#fff'; ctx.lineCap = 'round';
+      if (mark === 'ok') { ctx.moveTo(-4.5, 0); ctx.lineTo(-1.2, 3.5); ctx.lineTo(5, -3.8); }
+      else { ctx.moveTo(-4, -4); ctx.lineTo(4, 4); ctx.moveTo(4, -4); ctx.lineTo(-4, 4); }
+      ctx.stroke(); ctx.restore();
+    }
+    ctx.textBaseline = 'alphabetic';
+  }
+
+  function hud(t, loop) {
+    const round = roundAt(t), cleared = clearedAt(t), kind = t >= HUD_RESET ? (loop + 1) % 3 : loop % 3;
+    const narrow = W < 420, w = narrow ? 122 : 156, h = 66, x = 0, y = H - 44 - h - 8;
+    ctx.fillStyle = COL.ux.l; ctx.fillRect(x + 4, y + 4, w, h);
+    ctx.fillStyle = '#fff'; ctx.fillRect(x, y, w, h);
+    ctx.lineWidth = 1; ctx.strokeStyle = INK; ctx.strokeRect(x + 0.5, y + 0.5, w - 1, h - 1);
+    // "Round N" flips when a revision lands.
+    let sy = 1;
+    REVS.forEach(r => { const d = t - r; if (Math.abs(d) < 0.16) sy = Math.abs(d) / 0.16; });
+    ctx.save(); ctx.translate(x + 10, y + 22); ctx.scale(1, Math.max(0.05, sy));
+    ctx.font = `800 17px ${DISPLAY}`; ctx.fillStyle = INK; ctx.textAlign = 'left'; ctx.textBaseline = 'middle';
+    ctx.fillText(`Round ${round}`, 0, 0);
+    ctx.restore();
+    ctx.font = `600 11.5px ${BODY}`; ctx.fillStyle = '#43474d'; ctx.textBaseline = 'middle';
+    ctx.fillText(KINDS[kind], x + 10, y + 40);
+    // Gate pips.
+    GATES.forEach((g, i) => {
+      const px = x + 10 + i * 15, py = y + 50, on = i < cleared;
+      ctx.fillStyle = on ? COL[g.key].l : '#fff'; ctx.fillRect(px, py, 11, 9);
+      ctx.strokeRect(px + 0.5, py + 0.5, 10, 8);
+    });
+    ctx.font = `700 8.5px ${MONO}`; ctx.fillStyle = '#676c73';
+    ctx.fillText(narrow ? `${cleared}/4` : `${cleared}/4 CLEARED`, x + 72, y + 55);
+    ctx.textBaseline = 'alphabetic';
+  }
+
+  /* ── Reviewer notes ── */
+  // Bottom-center of a gate's badge, above the booth roof.
+  function badgePoint(g) { const [b0, b1] = boothB(g), p = GP(g, 0, (b0 + b1) / 2, ROOF_TOP + 0.22); return [p[0] + (g.badgeDx || 0) * s, p[1] - 10]; }
+  function noteBox(n) {
+    const w = W < 420 ? 140 : 160, h = 56, [bx, by] = badgePoint(GATES[n.g]);
+    return { x: clamp(bx + n.nb[0] * s, 6, W - w - 6), y: clamp(by + n.nb[1] * s, 6, H - h - 44), w, h };
+  }
+  const grabPoint = b => [b.x + b.w * 0.34, b.y + b.h * 0.58];
+  function noteTail(n) { const [bx, by] = badgePoint(GATES[n.g]); return [bx + 14, by - 21]; }
+  function drawNoteBox(b, gate, text, sc, alpha, tail, selected) {
+    ctx.save(); ctx.globalAlpha = alpha;
+    ctx.translate(b.x, b.y); ctx.scale(sc, sc);
+    const { w, h } = b, col = COL[gate.key];
+    ctx.fillStyle = col.l; ctx.fillRect(4, 4, w, h);
+    ctx.fillStyle = '#fff'; ctx.fillRect(0, 0, w, h);
+    ctx.lineWidth = 1.2; ctx.strokeStyle = INK; ctx.strokeRect(0.5, 0.5, w - 1, h - 1);
+    if (tail) {
+      const tx = (tail[0] - b.x) / sc, ty = (tail[1] - b.y) / sc;
+      ctx.beginPath();
+      if (ty > h) { const bx = clamp(tx - 8, 10, w - 26); ctx.moveTo(bx, h - 1); ctx.lineTo(tx, ty); ctx.lineTo(bx + 16, h - 1); }
+      else if (ty < 0) { const bx = clamp(tx - 8, 10, w - 26); ctx.moveTo(bx, 1); ctx.lineTo(tx, ty); ctx.lineTo(bx + 16, 1); }
+      else if (tx > w) { ctx.moveTo(w - 1, 12); ctx.lineTo(tx, ty); ctx.lineTo(w - 1, 28); }
+      else { ctx.moveTo(1, 12); ctx.lineTo(tx, ty); ctx.lineTo(1, 28); }
+      ctx.closePath(); ctx.fillStyle = '#fff'; ctx.fill(); ctx.stroke();
+      // Knock out the box border under the tail's base.
+      if (ty > h) ctx.fillRect(clamp(tx - 8, 10, w - 26) + 1, h - 3, 14, 4);
+      else if (ty < 0) ctx.fillRect(clamp(tx - 8, 10, w - 26) + 1, -1, 14, 4);
+      else if (tx > w) ctx.fillRect(w - 3, 13, 4, 14);
+      else ctx.fillRect(-1, 13, 4, 14);
+    }
+    ctx.font = `700 8.5px ${MONO}`; ctx.fillStyle = DEEP[gate.key]; ctx.textAlign = 'left'; ctx.textBaseline = 'alphabetic';
+    ctx.fillText(`${gate.name} REVIEW`, 11, 18);
+    ctx.font = `600 13.5px ${BODY}`; ctx.fillStyle = INK;
+    ctx.fillText(text, 11, 40);
+    if (selected > 0) {
+      // Figma-style selection while Wally carries it.
+      ctx.globalAlpha = alpha * selected;
+      ctx.lineWidth = 1.5 / sc; ctx.strokeStyle = COL.acc.l; ctx.strokeRect(-4, -4, w + 8, h + 8);
+      [[-4, -4], [w + 4, -4], [w + 4, h + 4], [-4, h + 4]].forEach(([qx, qy]) => {
+        ctx.fillStyle = '#fff'; ctx.fillRect(qx - 3, qy - 3, 6, 6); ctx.strokeRect(qx - 3, qy - 3, 6, 6);
+      });
+    }
+    ctx.restore();
+  }
+  function notes(t, loop, cursor, ps) {
+    NOTES.forEach(n => {
+      if (t < n.show || t > n.drop + 0.3) return;
+      const gate = GATES[n.g], text = NOTE_TEXT[loop % 3][n.n], b = noteBox(n);
+      if (t < n.pick) {
+        const pop = outBack(seg(t, n.show, n.show + 0.35));
+        const wob = Math.sin((t - n.show) * 20) * Math.exp(-(t - n.show) * 5) * 0.04;
+        const [cx, cy] = noteTail(n), k = pop * (1 + wob);
+        const bb = { ...b, x: cx + (b.x - cx) * k, y: cy + (b.y - cy) * k };
+        drawNoteBox(bb, gate, text, Math.max(0.01, pop * (1 + wob)), 1, noteTail(n), 0);
+        return;
+      }
+      const gp = grabPoint(b), offX = gp[0] - b.x, offY = gp[1] - b.y;
+      let sc = lerp(1, 0.7, outCubic(seg(t, n.pick, n.pick + 0.25)));
+      let x = cursor[0] - offX * sc, y = cursor[1] - offY * sc, alpha = 1;
+      if (t > n.drop) {
+        const k = seg(t, n.drop, n.drop + 0.3), fc = faceCenter(ps);
+        x = lerp(x, fc[0] - b.w * sc * 0.1, k); y = lerp(y, fc[1] - b.h * sc * 0.1, k);
+        sc *= 1 - k * 0.8; alpha = 1 - k;
+      }
+      const press = t - n.pick < 0.12 ? 0.94 : 1;
+      drawNoteBox({ ...b, x, y }, gate, text, sc * press, alpha, null, 1 - seg(t, n.drop, n.drop + 0.1));
+    });
+  }
+
+  /* ── Confetti on the pad ── */
+  function confetti(t) {
+    const tau = t - LAND;
+    if (tau < 0 || tau > 1.3) return;
+    const [ox0, oy0] = P(TILES[LAUNCH][0], TILES[LAUNCH][1], PAD_H + 0.6);
+    const cols = [COL.acc.l, COL.ux.l, COL.ai.l, '#ffd24d'];
+    for (let i = 0; i < 30; i++) {
+      const a = -Math.PI / 2 + (hash(i) - 0.5) * 2.8, v = (120 + hash(i + 40) * 190) * (s / 30);
+      const x = ox0 + Math.cos(a) * v * tau, y = oy0 + Math.sin(a) * v * tau + 0.5 * 600 * tau * tau * (s / 30);
+      const sz = 4 + hash(i + 7) * 3.5;
+      ctx.save(); ctx.globalAlpha = 1 - ss(0.8, 1.3, tau); ctx.translate(x, y); ctx.rotate(tau * (6 + hash(i + 3) * 10));
+      ctx.fillStyle = cols[i % 4]; ctx.fillRect(-sz / 2, -sz / 3, sz, sz * 0.66); ctx.lineWidth = 0.8; ctx.strokeStyle = INK; ctx.strokeRect(-sz / 2, -sz / 3, sz, sz * 0.66);
+      ctx.restore();
+    }
+  }
+
+  /* ── Wally's cursor ── */
+  const follow = t => { const ps = pieceState(t); return P(ps.x + CW / 2 + 0.05, ps.y + CD, ps.z + BASE + CH * 0.6); };
+  function holds() {
+    return [
+      { a: 0, b: MOVES[2][1], at: follow },
+      { a: NOTES[0].pick - 0.08, b: NOTES[0].pick, at: () => grabPoint(noteBox(NOTES[0])) },
+      { a: NOTES[0].drop, b: MOVES[5][1], at: follow },
+      { a: NOTES[1].pick - 0.08, b: NOTES[1].pick, at: () => grabPoint(noteBox(NOTES[1])) },
+      { a: NOTES[1].drop, b: EXIT, at: follow },
+      { a: RESET + 0.3, b: DUR, at: () => follow(0.3) },
+    ];
+  }
+  function cursorAt(t) {
+    const hs = holds();
+    for (let i = 0; i < hs.length; i++) {
+      const h = hs[i], nx = hs[i + 1];
+      if (t >= h.a && t <= h.b) return h.at(t);
+      if (nx && t > h.b && t < nx.a) {
+        const k = inOut((t - h.b) / (nx.a - h.b)), p = h.at(h.b), q = nx.at(nx.a);
+        const d = Math.hypot(q[0] - p[0], q[1] - p[1]);
+        return [lerp(p[0], q[0], k), lerp(p[1], q[1], k) - Math.sin(k * Math.PI) * Math.min(40, d * 0.25)];
+      }
+    }
+    return follow(0.3);
+  }
+  function drawCursor(p, age) {
+    const [x, y] = p;
+    if (age >= 0 && age < 0.5) {
+      const k = age / 0.5;
+      ctx.beginPath(); ctx.arc(x, y, 3 + k * 16, 0, Math.PI * 2);
+      ctx.strokeStyle = `rgba(229,72,165,${1 - k})`; ctx.lineWidth = 2.2; ctx.stroke();
+    }
+    const press = age >= 0 && age < 0.14 ? 0.82 : 1;
+    ctx.save(); ctx.translate(x, y); ctx.scale(press, press);
+    ctx.beginPath(); ctx.moveTo(0, 0); ctx.lineTo(0, 17); ctx.lineTo(4.6, 12.9); ctx.lineTo(7.8, 19.8); ctx.lineTo(10.9, 18.4); ctx.lineTo(7.7, 11.7); ctx.lineTo(13.4, 11.4); ctx.closePath();
+    ctx.lineJoin = 'round'; ctx.lineWidth = 3; ctx.strokeStyle = '#fff'; ctx.stroke(); ctx.fillStyle = INK; ctx.fill();
+    ctx.restore();
+    ctx.font = `700 9.5px ${MONO}`;
+    const w = ctx.measureText('WALLY').width + 14, h = 20, tx = clamp(x + 12, 4, W - w - 6), ty = y + 20;
+    ctx.fillStyle = COL.ux.l; ctx.fillRect(tx + 2.5, ty + 2.5, w, h);
+    ctx.fillStyle = INK; ctx.fillRect(tx, ty, w, h);
+    ctx.textAlign = 'left'; ctx.textBaseline = 'middle'; ctx.fillStyle = '#f7a9d5';
+    ctx.fillText('WALLY', tx + 7, ty + h / 2 + 0.5);
+    ctx.textBaseline = 'alphabetic';
+  }
+
+  /* ── Frame ── */
+  function draw() {
+    if (!W || !H) return;
+    const loop = Math.floor(T / DUR), t = T - loop * DUR, kind = loop % 3;
+    ctx.clearRect(0, 0, W, H);
+    ctx.lineJoin = 'round'; ctx.lineCap = 'round';
+
+    const ps = pieceState(t);
+    drawTiles(t, ps);
+
+    const list = [];
+    const add = (key, fn) => list.push({ key, fn });
+    GATES.forEach(g => addGate(g, t, add));
+    add(ps.x + ps.y + 0.25, () => drawCard(t, ps, kind));
+    list.sort((a, b) => a.key - b.key).forEach(d => { ctx.save(); d.fn(); ctx.restore(); });
+
+    confetti(t);
+    stamps(t, ps);
+
+    // Gate badges: active while reviewing, then a check or a cross.
+    GATES.forEach(g => {
+      const gs = gateState(g, t);
+      const anchor = badgePoint(g);
+      const mark = gs.st === 'ok' || gs.st === 'no' ? gs.st : null;
+      badge(anchor, g.num, g.name, g.key, gs.st === 'review', mark, gs.since);
+    });
+    const padOn = t >= LAND && t < RESET;
+    const pc = P(TILES[LAUNCH][0] + PAD / 2, TILES[LAUNCH][1] - PAD / 2, PAD_H / 2);
+    ctx.font = `700 9.5px ${MONO}`;
+    const lw = ctx.measureText('05  LAUNCH').width + 16 + 24;
+    badge([pc[0] + 12 + lw / 2, pc[1] + 10], '05', 'LAUNCH', 'pad', padOn, padOn ? 'ok' : null, t - LAND);
+
+    hud(t, loop);
+    const cur = cursorAt(t);
+    notes(t, loop, cur, ps);
+    const age = CLICKS.reduce((m, c) => (t >= c && t - c < m ? t - c : m), 1);
+    drawCursor(cur, age < 0.5 ? age : -1);
+  }
+
+  /* ── Loop, pause, seek ── */
+  let raf = 0, last = 0, visible = false;
+  const tick = ts => { const dt = Math.min(0.05, (ts - last) / 1000 || 0); last = ts; T += dt; draw(); raf = requestAnimationFrame(tick); };
+  const start = () => { if (raf || REDUCED || paused) return; last = performance.now(); raf = requestAnimationFrame(tick); };
+  const stop = () => { cancelAnimationFrame(raf); raf = 0; };
+  const sync = () => (visible && !document.hidden ? start() : stop());
+  new IntersectionObserver(es => { visible = es[0].isIntersecting; sync(); }, { threshold: 0.05 }).observe(stage);
+  document.addEventListener('visibilitychange', sync);
+  new ResizeObserver(() => { resize(); draw(); }).observe(stage);
+
+  pauseBtn.addEventListener('click', () => {
+    paused = !paused;
+    pauseBtn.setAttribute('aria-pressed', String(paused));
+    pauseBtn.querySelector('span').textContent = paused ? 'Play' : 'Pause';
+    pauseBtn.querySelector('svg').innerHTML = paused ? '<path d="M2 1 L9 5 L2 9 Z"/>' : '<rect x="1" y="1" width="3" height="8"/><rect x="6" y="1" width="3" height="8"/>';
+    paused ? stop() : sync();
+  });
+  // Reduced motion: one still frame, landed on the pad after three rounds.
+  if (REDUCED) { pauseBtn.hidden = true; T = LAND + 0.95; }
+
+  // Test hook: paint the board at a given moment.
+  window.__seek = sec => { T = sec; draw(); };
+  window.__heroSeek = window.__seek;
+
+  resize(); draw();
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(() => draw());
+})();
+
+
+</script>
+</body>
+</html>
