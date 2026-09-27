@@ -234,7 +234,8 @@ export function getResumeExperienceSections(config) {
 }
 
 // The homepage hero ships the ask-to-proof machine. Account-management routes
-// swap in the switchboard: same hero slot, markup, and controls; different scene.
+// swap in the switchboard and UX/product routes swap in the studio wall:
+// same hero slot, markup, and controls; different scene.
 export const HERO_ANIMATIONS = Object.freeze({
   machine: Object.freeze({
     script: 'hero-machine.js',
@@ -248,12 +249,23 @@ export const HERO_ANIMATIONS = Object.freeze({
       'A client line rings, Wally answers, patches in the teams the request needs, and the finished work comes back to the client.',
     fig: 'Fig. — Switchboard',
   }),
+  design: Object.freeze({
+    script: 'hero-wall.js',
+    label:
+      "On a design team's wall, user quotes are pinned up and sorted into clusters, a sheet of sketches is voted on, the winner lifts off the wall into a prototype, a test snag goes back on the wall and gets fixed, and two more screens join it.",
+    fig: 'Fig. — The studio wall',
+  }),
 });
+// UX, product, and research roles get the design hero (the studio wall).
+export const DESIGN_HERO_LANES = Object.freeze(['product-ux-design', 'research-experience-strategy']);
 export const HERO_ANIMATION_IDS = Object.freeze(Object.keys(HERO_ANIMATIONS));
 
 export function getRouteHeroAnimation(config) {
   if (config?.route?.heroAnimation) {
     return config.route.heroAnimation;
+  }
+  if (DESIGN_HERO_LANES.includes(config?.classification?.targetLane)) {
+    return 'design';
   }
   return config?.classification?.targetLane === 'client-account-delivery' ||
     config?.fitGate?.resumeBase?.mode === 'account-leadership'
@@ -388,9 +400,11 @@ export function applyRouteHeroAnimation(html, config) {
     throw new Error(`route.heroAnimation ${animationId} could not find the hero machine stage in index.html`);
   }
   const board = getRouteHeroBoard(config);
-  const boardTag = isPlainObject(board)
-    ? `<div class="hero-machine" id="machine" data-board="custom">\n    <script type="application/json" class="hero-switchboard-board">${JSON.stringify(board).replace(/</g, '\\u003c')}</script>`
-    : `<div class="hero-machine" id="machine" data-board="${board}">`;
+  const boardTag = !board
+    ? stageTag
+    : isPlainObject(board)
+      ? `<div class="hero-machine" id="machine" data-board="custom">\n    <script type="application/json" class="hero-switchboard-board">${JSON.stringify(board).replace(/</g, '\\u003c')}</script>`
+      : `<div class="hero-machine" id="machine" data-board="${board}">`;
   return html
     .replace(stageTag, boardTag)
     .replace(scriptPattern, `$1${animation.script}?v=2$2`)

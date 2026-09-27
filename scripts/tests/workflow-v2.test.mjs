@@ -815,6 +815,22 @@ test('account-management routes default to the switchboard hero and swap only th
   aiConfig.route.heroAnimation = 'switchboard';
   assert.equal(getRouteHeroAnimation(aiConfig), 'switchboard');
 
+  const uxLane = validConfig();
+  uxLane.classification.targetLane = 'product-ux-design';
+  assert.equal(getRouteHeroAnimation(uxLane), 'design');
+  const researchLane = validConfig();
+  researchLane.classification.targetLane = 'research-experience-strategy';
+  assert.equal(getRouteHeroAnimation(researchLane), 'design');
+  const designHtml = applyRouteHeroAnimation(
+    readFileSync(path.join(repoRoot, 'index.html'), 'utf8'),
+    uxLane
+  );
+  assert.match(designHtml, /portfolio-revision\/hero-wall\.js\?v=2"/);
+  assert.match(designHtml, />Fig\. — The studio wall</);
+  assert.match(designHtml, /<div class="hero-machine" id="machine">/);
+  uxLane.route.heroAnimation = 'machine';
+  assert.equal(getRouteHeroAnimation(uxLane), 'machine');
+
   const unknown = validConfig();
   unknown.route.heroAnimation = 'carousel';
   assert.match(

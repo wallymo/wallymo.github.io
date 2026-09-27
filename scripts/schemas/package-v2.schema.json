@@ -533,7 +533,7 @@
       "properties": {
         "presentation": { "enum": ["full", "showcase"] },
         "designConcept": { "enum": ["editorial-proof", "proof-grid"] },
-        "heroAnimation": { "enum": ["machine", "switchboard"] },
+        "heroAnimation": { "enum": ["machine", "switchboard", "design"] },
         "heroBoard": {
           "oneOf": [
             { "enum": ["pharma", "general"] },
