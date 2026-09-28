@@ -618,7 +618,7 @@
     "signoff": "Pharmaceutical accounts | regulated review | project delivery"
   },
   "route": {
-    "designConcept": "editorial-proof",
+    "designConcept": "proof-grid",
     "presentation": "showcase",
     "heroIntent": "resume-support",
     "showcaseSections": [
@@ -631,7 +631,7 @@
     "humanizerVersion": "2.2.0",
     "mode": "surface-only",
     "status": "passed",
-    "reviewedAt": "2026-09-28T01:41:50.733Z",
+    "reviewedAt": "2026-09-28T14:20:38.244Z",
     "copySha256": "6c65ef066aeac39f2e02945a4810c3203684e93dec4a461faffc37c3a0d3897b",
     "preserved": [
       "content",
@@ -677,8 +677,8 @@
   },
   "qa": {
     "status": "qa-passed",
-    "builtAt": "2026-09-28T01:42:17.907Z",
-    "configInputSha256": "ea3aab764be859e1cd96cd8ef06899f050daf0190c3998cfe62ff47ed4fd2109",
+    "builtAt": "2026-09-28T14:21:02.293Z",
+    "configInputSha256": "99a8c5ad941de7d4ee92630ceb70f6b4a80315b697c6a9c9bdc36f5da33889e9",
     "sourceResumeSha256": "309a2ea377c45481d6826da8559d707319f85f53e6d68b3e10a537d1864e91e7",
     "resumeFoundation": {
       "id": "wally-mostafa-resume-2026-07-03",
@@ -699,16 +699,16 @@
       "registrySha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108"
     },
     "artifactHashes": {
-      "routeSha256": "842f4339745344547b972c45410b22f8be34080c1b6ad1cdd394e94e827e841e",
-      "designConceptCssSha256": "b0888b6dc13bd1e5526259a5435dd84911b2007f68715d23d600bbc14ee7c9fd",
-      "resumePdfSha256": "d641a7bd60f6da27a586e983c7d0178ff25e3b828e67eca292c111bf266aea44",
+      "routeSha256": "16b259a8c2a84019dc5bcc9da443172a43cd0c27b1dabe058fb23e1fe33f464d",
+      "designConceptCssSha256": "73052eae58d446422f0ff921361877b1ca4e0062ec7ee25daace39b4a4791195",
+      "resumePdfSha256": "fe3f959981c687650af0c7a7e2a416483edcb46ddb53fb4246bd7206cb7101f1",
       "coverLetterPdfSha256": null,
       "coverLetterMarkdownSha256": null,
       "scopedProjectSha256": {
-        "project-01.html": "99a8fc366ccadfad700d06a881f22d1efb70f3f5d24fd3d7855cecb546c192b2",
-        "project-06.html": "22f9c9cc545a88265d4065e3425eee9e796c23e0cf6ad5ffd5b2236b8bc3a90f",
-        "project-02.html": "906501cbdecd5e007249e9637e47023ab5aeba9a6aed03d3211408e8526d22e9",
-        "project-03.html": "31e2e7b4cbe2dcb220c0ff31efd2130f7354121ed1b28b8d25b2749248e2c13d"
+        "project-01.html": "439a277bc4fd7d67af351f3a5e35467b88f6f86251ab21ad78425c2e787c9c19",
+        "project-06.html": "fcdf5571bf55adfed8c0553632a81a0a26afd644fa8be1a78a7321be0d1ccb0a",
+        "project-02.html": "11849dc35b645da37bb4c0ce22ce4523a3fc01f4171a5d940645be9191a83496",
+        "project-03.html": "653374e38a8bbc64fdaec7993e706622fc11f0d22a4b4c62534011df157ea8cd"
       },
       "scopedProjectAssetSha256": {}
     },
@@ -728,7 +728,7 @@
       "ok": true,
       "pdfPath": "output/pdf/Wally-Mostafa-Precision-AQ-Senior-Account-Executive-Resume.pdf",
       "pageCount": 2,
-      "fileSize": 81783,
+      "fileSize": 81789,
       "annotations": [
         {
           "page": 1,
@@ -740,7 +740,7 @@
         },
         {
           "page": 1,
-          "uri": "https://wallymo.github.io/precision-aq-senior-account-executive/"
+          "uri": "https://wally-mostafa.github.io/precision-aq-senior-account-executive/"
         },
         {
           "page": 2,
@@ -926,7 +926,7 @@
       "status": "passed",
       "version": "2.2.0",
       "mode": "surface-only",
-      "reviewedAt": "2026-09-28T01:41:50.733Z",
+      "reviewedAt": "2026-09-28T14:20:38.244Z",
       "copySha256": "6c65ef066aeac39f2e02945a4810c3203684e93dec4a461faffc37c3a0d3897b",
       "reviewMethod": "humanizer-skill",
       "semanticPassAttested": true,
