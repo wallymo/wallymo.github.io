@@ -1,0 +1,994 @@
+{
+  "workflowVersion": 2,
+  "contractRevision": 7,
+  "slug": "precision-aq-senior-account-executive",
+  "roleTitle": "Precision AQ Senior Account Executive",
+  "artifactStem": "Precision-AQ-Senior-Account-Executive",
+  "fitClass": "strong",
+  "routeMode": "scoped-projects",
+  "selectedProjects": [
+    "project-01.html",
+    "project-06.html",
+    "project-02.html",
+    "project-03.html"
+  ],
+  "job": {
+    "company": "Precision AQ",
+    "roleTitle": "Senior Account Executive",
+    "sourceChannel": "User-provided public job description",
+    "dateCaptured": "2026-09-27",
+    "location": "Not stated in the pasted job description",
+    "employmentType": "Not stated in the pasted job description",
+    "rawJd": "Precision AQ, the leading payer marketing agency, supports global pharmaceutical and life sciences clients in the achievement of commercial excellence.\n\nAre you looking for a rewarding career in a team-driven environment passionate about growth? To keep pace with our growing agency we are recruiting for a Senior Account Executive for our team. At Precision AQ you will make an impact by partnering with top pharmaceutical companies who are developing groundbreaking medicines/treatments and working to make medicines accessible and affordable. You will be recognized for your achievements and contributions. You will have the opportunity to learn from external training, mentorship, and cross-functional project teams. Plus, our advancement opportunities will allow you to realize your full potential.\n\nAs a Senior Account Executive (SAE), you will interact with all departments and have client contact, offering you opportunities to take on challenges and advance within the agency. In this role you'll be an internal team leader responsible for ensuring all members of the brand and project team work together effectively while developing successful marketing communication programs and helping create strategies that payers will remember.\n\nAbout You:\n- Your clear and consistent communication style builds relationships with clients\n- You have a can-do attitude and are flexible to manage multiple clients/brands while maintaining a cool outlook under tight deadlines.\n- First class organizational and time management skills\n- With your personable and professional nature, you like to have fun at work and love working with a team.\n- Unanswered questions and obstacles along the way don’t scare you.\n- You pay phenomenal attention to all the details\n- Your smarts and high energy are a combination that makes things happen.\n- You have the confidence to work independently and allow clients to trust in your work.\n\nEssential duties include but are not limited to:\n- Manage communications with team members regarding initial/ongoing information and status.\n- Assist Client Services team to support the development of new business initiatives, identifying opportunities for organic growth within your assigned account\n- Coordinate pitch presentations and request for proposals.\n- Lead point of contact for assigned projects within the client account\n- Implement projects to promote and ensure the success and profitability of your client's deliverables.\n- Support client services' efforts by managing projects, collaborating with the Project Management team to develop timelines, communicate milestones and identify possible red flags in projects.\n- Drive the daily activities of a project by managing project scope, scope change, and potential project roadblocks, according to timeline and budgets.\n- Coordinate and participate in content planning meetings with key content experts.\n- Daily client contact, prepare client contact reports and summarize next steps.\n- Facilitate the medical-legal-regulatory review process to ensure promotional items adhere to medical/regulatory/legal compliance. Contribute to the creation of client proposals, budgets and reconciliations and monitor budget including direct/labor costs; checking for out of scope items and hours\n- Assist with financial and forecasting reporting preparation\n\nQualifications:\nMinimum Required:\n- Bachelor degree or equivalent experience\n\nOther Required:\n- Pharmaceutical agency experience is required with at least 2 years combined experience in Accounts and Project Management.\n- Experience with direct client contact\n- Proficient with Microsoft Office Suite\n- Travel enabled (up to 5% expected)\n- Proven teamwork skills and flexibility\n- Excellent verbal/written interpersonal skills and positive attitude\n- Planning, organizing, and detail-oriented skills\n\nPreferred:\n- Communications experience in pharmaceutical, healthcare or medical\n- Pharmaceutical experience including the MLR process, (medical-legal-regulatory) review\n- Experience in writing SOWs and project briefs\n- Hands on experience with clients’ on-line submission systems (e.g. Zinc or Veeva) for medical legal /regulatory reviews\n- Pharmaceutical drug launch experience\n- Bachelor’s degree with a concentration in marketing, communications, advertising"
+  },
+  "classification": {
+    "targetLane": "client-account-delivery",
+    "evidenceMode": "resume-primary",
+    "primarySource": "The resume documents eight years in pharmaceutical and healthcare agency accounts, three Senior Account Executive roles, promotion to Account Supervisor, primary client contact, budgets up to $20M, scopes, financial reporting, launches, and regulated review.",
+    "supportingSource": "The portfolio adds recent proof of pharma review workflows, scope planning, client-facing analysis, and enterprise team coordination.",
+    "hardGateStatus": "pass",
+    "hardGates": [
+      {
+        "gate": "Bachelor's degree or equivalent experience",
+        "status": "pass",
+        "requirementId": "degree-or-equivalent",
+        "evidence": "The resume lists a BA from Rutgers University."
+      },
+      {
+        "gate": "Pharmaceutical agency experience and at least two combined years in Accounts and Project Management",
+        "status": "pass",
+        "requirementId": "pharma-agency-tenure",
+        "evidence": "Eight years of pharmaceutical agency account progression exceeds the two-year threshold, with direct project delivery across budgets, timelines, scopes, and regulated review."
+      }
+    ]
+  },
+  "requirements": [
+    {
+      "id": "degree-or-equivalent",
+      "text": "Hold a bachelor's degree or equivalent experience.",
+      "priority": "hard-gate",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "BA from Rutgers University."
+      ],
+      "proofIds": [
+        "account-management-01"
+      ],
+      "destinations": [
+        "experience"
+      ],
+      "resumeTerms": [
+        "Rutgers University"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "pharma-agency-tenure",
+      "text": "Bring pharmaceutical agency experience and at least two combined years in Accounts and Project Management.",
+      "priority": "hard-gate",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Eight years of pharmaceutical agency account progression, including three Senior Account Executive roles and promotion to Account Supervisor."
+      ],
+      "proofIds": [
+        "account-management-01",
+        "account-management-02",
+        "account-management-03"
+      ],
+      "destinations": [
+        "summary",
+        "experience"
+      ],
+      "resumeTerms": [
+        "eight years",
+        "Senior Account Executive"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "client-contact",
+      "text": "Serve as lead client contact and communicate daily status, next steps, and project needs.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Primary client contact on Pfizer work and weekly client status and financial reporting on the NUVIGIL business."
+      ],
+      "proofIds": [
+        "account-management-03",
+        "addition:rosetta-prevenar-client-contact",
+        "addition:fcb-nuvigil-client-operations"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience"
+      ],
+      "resumeTerms": [
+        "primary client contact",
+        "financial reporting"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "team-project-delivery",
+      "text": "Coordinate cross-functional brand and project teams, timelines, milestones, scopes, and risks.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The account record covers briefs, scopes, timeline and vendor coordination, production requirements, and regulated multichannel delivery."
+      ],
+      "proofIds": [
+        "account-management-03",
+        "account-management-02",
+        "one-block-away-04"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience"
+      ],
+      "resumeTerms": [
+        "scopes",
+        "timelines",
+        "cross-functional delivery"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "budgets-and-financials",
+      "text": "Monitor budgets, costs, reconciliations, and out-of-scope work; support financial and forecasting reports.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "The resume documents budgets up to $20M, weekly financial reporting on a $10M brand, scopes of work, and recent scope-planning tools. Formal forecast, cost reconciliation, and profitability ownership are not documented."
+      ],
+      "proofIds": [
+        "account-management-02",
+        "addition:fcb-nuvigil-client-operations",
+        "addition:rosetta-dubai-advisory"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience"
+      ],
+      "resumeTerms": [
+        "budgets up to $20M",
+        "financial reporting"
+      ],
+      "matchMode": "contextual"
+    },
+    {
+      "id": "mlr-review",
+      "text": "Facilitate medical-legal-regulatory review of promotional items.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Direct med-legal review, FDA preclearance, OPDP and review-committee submissions, plus later pharma claim-review workflow design."
+      ],
+      "proofIds": [
+        "account-management-02",
+        "addition:fcb-nuvigil-client-operations",
+        "hedgehox-02"
+      ],
+      "destinations": [
+        "summary",
+        "skills",
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "MLR",
+        "FDA preclearance",
+        "OPDP"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "new-business-support",
+      "text": "Support organic growth, RFPs, pitch presentations, and client proposals.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "adjacent",
+      "evidence": [
+        "The resume supports scopes, client proposals and recommendations, plus later demo storytelling. Formal RFP ownership, pitch wins, and quantified organic growth are not documented."
+      ],
+      "proofIds": [
+        "addition:rosetta-dubai-advisory",
+        "addition:fcb-nuvigil-client-operations",
+        "one-block-away-01"
+      ],
+      "destinations": [
+        "experience",
+        "portfolio"
+      ],
+      "resumeTerms": [
+        "scopes of work",
+        "strategic recommendations"
+      ],
+      "matchMode": "contextual"
+    },
+    {
+      "id": "content-and-launch",
+      "text": "Coordinate content planning and pharmaceutical launch work across experts and agency teams.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The resume documents the Namenda XR DTC launch, three national commercials, brand planning, and regulated multichannel content."
+      ],
+      "proofIds": [
+        "account-management-02",
+        "account-management-03",
+        "addition:scout-xyrem-unbranded-social"
+      ],
+      "destinations": [
+        "skills",
+        "experience"
+      ],
+      "resumeTerms": [
+        "direct-to-consumer launch",
+        "brand planning"
+      ],
+      "matchMode": "recognized-equivalent"
+    },
+    {
+      "id": "sows-and-briefs",
+      "text": "Experience writing scopes of work and project briefs.",
+      "priority": "preferred",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "The account record includes project briefs and scopes of work."
+      ],
+      "proofIds": [
+        "addition:rosetta-dubai-advisory",
+        "account-management-03"
+      ],
+      "destinations": [
+        "skills",
+        "experience"
+      ],
+      "resumeTerms": [
+        "scopes of work",
+        "briefs"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "submission-systems",
+      "text": "Hands-on experience with Zinc or Veeva MLR submission systems.",
+      "priority": "preferred",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "direct",
+      "evidence": [
+        "Wally confirmed Zinc and Veeva experience in this chat on 2026-09-27; employer and level of use were not specified."
+      ],
+      "proofIds": [],
+      "destinations": [
+        "skills"
+      ],
+      "resumeTerms": [
+        "Zinc",
+        "Veeva"
+      ],
+      "matchMode": "exact"
+    },
+    {
+      "id": "microsoft-office",
+      "text": "Use Microsoft Office Suite proficiently.",
+      "priority": "core",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "none",
+      "evidence": [],
+      "proofIds": [],
+      "destinations": [
+        "application-answer"
+      ],
+      "resumeTerms": [
+        "Microsoft Office Suite"
+      ],
+      "matchMode": "not-supported"
+    },
+    {
+      "id": "payer-marketing",
+      "text": "Bring specific payer marketing or market-access campaign experience.",
+      "priority": "context",
+      "source": "jd",
+      "confidence": "contextual",
+      "evidenceStatus": "none",
+      "evidence": [
+        "The agency specializes in payer marketing, but the posting does not list prior payer work as a required qualification. No direct payer campaign evidence is documented."
+      ],
+      "proofIds": [],
+      "destinations": [
+        "application-answer"
+      ],
+      "resumeTerms": [
+        "payer marketing"
+      ],
+      "matchMode": "not-supported"
+    },
+    {
+      "id": "travel-availability",
+      "text": "Be able to travel up to 5%.",
+      "priority": "context",
+      "source": "jd",
+      "confidence": "explicit",
+      "evidenceStatus": "none",
+      "evidence": [
+        "Availability has not been confirmed and must be checked before application submission."
+      ],
+      "proofIds": [],
+      "destinations": [
+        "application-answer"
+      ],
+      "resumeTerms": [
+        "5% travel"
+      ],
+      "matchMode": "not-supported"
+    }
+  ],
+  "fitGate": {
+    "resumeBase": {
+      "mode": "account-leadership",
+      "sourceProfiles": [
+        {
+          "id": "account-leadership",
+          "version": 1
+        }
+      ],
+      "leadProfileId": "account-leadership",
+      "accountPresentation": "agency-progression",
+      "action": "tailor-to-jd",
+      "rationale": "Client contact, pharmaceutical account progression, timelines, scopes, budgets, MLR review, and cross-functional delivery are the operating center. Three Senior Account Executive titles make agency progression a central screen."
+    },
+    "supportedOverlap": [
+      "Eight years of pharmaceutical agency account progression, including three Senior Account Executive roles and promotion to Account Supervisor.",
+      "Primary client contact, status reporting, brand budgets up to $20M, scopes of work, financial reporting, and multichannel launches.",
+      "Direct FDA preclearance, OPDP, review-committee, and MLR work.",
+      "User-confirmed Zinc, Veeva, Workfront, and Smartsheet experience."
+    ],
+    "unsupportedRequirements": [
+      "Direct payer marketing campaign work is not documented.",
+      "Formal ownership of profitability, forecasting, or cost reconciliation is not documented.",
+      "RFP ownership, pitch wins, and quantified organic growth are not documented.",
+      "Microsoft Office Suite proficiency is not documented.",
+      "Travel availability has not been confirmed."
+    ],
+    "actualMismatches": [],
+    "missingEvidence": [
+      "Payer-specific strategy and outcomes.",
+      "Formal profitability and forecasting ownership.",
+      "New-business pitch or RFP ownership.",
+      "Named Microsoft Office proficiency and confirmed travel availability."
+    ],
+    "coverLetterBridge": {
+      "status": "not-needed",
+      "rationale": "The resume directly proves the Senior Account Executive operating center through exact-title pharmaceutical agency experience, client contact, budgets, project delivery, launches, and MLR review. A cover letter is not needed to establish the core fit."
+    },
+    "recommendation": "Proceed as a strong resume-led fit. Lead with the exact-title pharmaceutical account record, budgets, delivery, and MLR work. Keep payer specialization, forecasting, new-business ownership, Office, and travel questions precise."
+  },
+  "positioning": {
+    "laneId": "client-account-delivery",
+    "targetIdentity": "healthcare account professional",
+    "employerNeed": "Keep pharmaceutical client projects, teams, budgets, and MLR review moving while supporting payer-focused marketing programs.",
+    "bridgeType": "direct",
+    "applicationStrategy": "direct",
+    "bridgeThesis": "three Senior Account Executive roles",
+    "proofIds": [
+      "account-management-02",
+      "account-management-03",
+      "addition:fcb-nuvigil-client-operations"
+    ],
+    "remainingGap": null
+  },
+  "resume": {
+    "foundationId": "wally-mostafa-resume-2026-07-03",
+    "compositionMode": "profile-complete",
+    "layoutDensity": "compact",
+    "summary": "Healthcare account professional with eight years in pharmaceutical agencies, including three Senior Account Executive roles and a promotion to Account Supervisor. I was a primary client contact on multichannel launches, managed budgets up to $20M, and handled scopes, timelines, financial reporting, and FDA/MLR review. I later led UX teams and built tools for pharma claim review, scoping, and routing.",
+    "skillIds": [
+      "account-management-client-leadership",
+      "regulated-healthcare-client-delivery",
+      "healthcare-marketing-strategy",
+      "program-project-delivery",
+      "agency-review-project-tools"
+    ],
+    "skills": [
+      {
+        "label": "Account Management & Client Leadership",
+        "description": "Client relationships, budgets up to $20M, briefs, scopes, timelines, status and financial reporting, vendor coordination, and cross-functional delivery"
+      },
+      {
+        "label": "Regulated Healthcare & Client Delivery",
+        "description": "11 years across pharma/healthcare communications, FDA/HIPAA/MLR workflows, HCP/patient UX, client workshops, and stakeholder adoption"
+      },
+      {
+        "label": "Healthcare Marketing & Brand Strategy",
+        "description": "Brand planning, campaign and digital strategy, MLR review, patient and HCP experiences, and regulated multi-channel delivery"
+      },
+      {
+        "label": "Program & Project Delivery",
+        "description": "Scoping, requirements, timelines, review routing, team coordination, risk visibility, and build-ready handoff across product, design, and client teams"
+      },
+      {
+        "label": "Agency Review & Project Tools",
+        "description": "MLR submission systems: Zinc and Veeva; project tools: Workfront and Smartsheet"
+      }
+    ],
+    "experienceSections": [
+      {
+        "heading": "Account Management Experience",
+        "roleIds": [
+          "account-management"
+        ]
+      },
+      {
+        "heading": "Most Recent Experience",
+        "roleIds": [
+          "hedgehox",
+          "one-block-away",
+          "kinesso",
+          "omnicom",
+          "heartbeat"
+        ]
+      }
+    ],
+    "awards": [
+      {
+        "label": "Manny Award 2013",
+        "detail": "Best Unbranded Campaign, \"Get Your Shift Together\""
+      },
+      {
+        "label": "Pharma Choice Awards 2011",
+        "detail": "Silver Consumer Print, Silver HCP Sales Aid, Bronze HCP Mobile Site"
+      },
+      {
+        "label": "Indigo Awards 2023",
+        "detail": "Design System & Data Visualization: 3x Gold, 2x Silver",
+        "href": "https://www.indigoaward.com/winners/6748"
+      }
+    ],
+    "roles": {
+      "hedgehox": [
+        "Secured an investor for proprietary Claims Detection software by building the functional POC, shaping the demo story, and iterating with investors",
+        "Designed Claims Detector workflows that identify promotional claims, surface evidence gaps, and pre-populate audit-ready annotations before MLR submission",
+        "Translate pharma agency needs into working tools for MLR claim review, brief intake, scoping, review routing, submission capture, and FDA signal monitoring",
+        "Built Scope Generator for pharma agency finance and operations teams to manage regional rate cards, brands, sub-brands, and natural-language scope changes"
+      ],
+      "one-block-away": [
+        "Lead client discovery and turn unclear business questions into testable product concepts, working POCs, demo flows, and roadmap decisions",
+        "Built ListingPal's AI listing-generation POC and landing page, turning basic property inputs into listing copy, social posts, ad copy, styling direction, and MLS/SEO-ready language in under 90 seconds",
+        "Built WeReady's Bailey Intelligence dashboard, translating founder inputs, GitHub signals, source health, risk scoring, and evidence trails into startup-readiness workflows",
+        "Own product strategy, UX, AI workflow design, front-end build, backend logic, demo readiness, and client iteration from first ask through working prototype",
+        "Currently building the website and sponsor strategy for a Tunisia youth soccer program, positioning the project for player advancement, community support, and donor outreach"
+      ],
+      "kinesso": [
+        "Scaled product design from 2 to 30 people across the US and Poland for enterprise analytics used by 7,000+ users across 22 white-label brands",
+        "Led UX and design-system strategy for MIE data visualization, dashboard building, brand theming, and reusable analytics components",
+        "Built the Digital Experience Audit workflow for channel scoring, benchmarks, recommendations, visualization, and presentation-ready client outputs"
+      ],
+      "omnicom": [
+        "Supported oncology accounts as a freelance UX designer, combining UX design and account-management experience to strengthen regulated healthcare work"
+      ],
+      "heartbeat": [
+        "Led UX research and experience strategy for pharma and healthcare work, translating stakeholder input, competitive audits, and user needs into digital product direction",
+        "Created journey maps, site maps, user flows, wireframes, and prototypes for patient, HCP, and internal brand-team experiences across regulated healthcare programs",
+        "Partnered with strategy, creative, account, and engineering teams to move UX recommendations from research findings into build-ready product and campaign experiences"
+      ],
+      "account-management": [
+        {
+          "title": "Account Supervisor / Digital Strategist",
+          "employer": "Scout Marketing",
+          "location": "San Diego, CA",
+          "dateRange": "Jun 2015 – Jul 2018",
+          "bullets": [
+            "Promoted from Senior Account Executive and took the lead on Jazz Pharmaceuticals XYREM consumer work: unbranded campaigns across digital, print, and in-office channels that lifted traffic and engagement on the disease-state site",
+            "Led the launch of the first unbranded social campaign on Facebook and YouTube for the brand and for Jazz, built around real patients telling their own stories",
+            "Oversaw an unbranded digital campaign bridging disease state and branded work; banners held a 0.37% click-through rate against a 0.17% industry benchmark and doubled qualified traffic to the brand site"
+          ]
+        },
+        {
+          "title": "Senior Account Executive",
+          "employer": "FCB Health",
+          "location": "New York, NY",
+          "dateRange": "Jun 2014 – Jun 2015",
+          "bullets": [
+            "One of two consumer account leads on the agency's largest pharma business, managing the Actavis Namenda XR direct-to-consumer launch and its $20M brand budget",
+            "Owned the broadcast workstream for three national television commercials in one year, covering market research, med-legal review, FDA preclearance, pre- and post-production, talent and location coordination, director searches, and network clearances; the spots drove a 45% increase in new-to-brand consumers within seven weeks",
+            "Led the launch of an unbranded Alzheimer's caregiver community site with support resources, sponsorship exploration, and public relations pull-through; also oversaw the account's Assistant Account Executive across in-office tactics, national print, and sales representative support materials"
+          ]
+        },
+        {
+          "title": "Senior Account Executive",
+          "employer": "Barker DZP",
+          "location": "New York, NY",
+          "dateRange": "Dec 2013 – May 2014",
+          "bullets": [
+            "Led the social campaign for a new Tough Mudder loyalty program and oversaw PDI and Nice-Pak, the agency's largest account, across print, digital, and social"
+          ]
+        },
+        {
+          "title": "Senior Account Executive",
+          "employer": "Cline Davis & Mann",
+          "location": "New York, NY",
+          "dateRange": "Sep 2013 – Dec 2013",
+          "bullets": [
+            "Used campaign metrics to shape Pfizer digital recommendations for Lipitor's online presence and loyalty program during loss of exclusivity, and piloted a Zoloft savings offer to test market response"
+          ]
+        },
+        {
+          "title": "Assistant Account Executive to Account Executive",
+          "employer": "FCB Health",
+          "location": "New York, NY",
+          "dateRange": "Apr 2011 – Sep 2013",
+          "bullets": [
+            "Managed development and execution of the unbranded Teva NUVIGIL campaign for National Night Shift Workers' Day across Times Square NASDAQ, national television, Xbox Live, radio, outdoor, and consumer journals, working through media, digital, and print vendors; the campaign won the 2013 Manny Award for Best Unbranded Campaign",
+            "Coordinated the NUVIGIL.com consumer rebrand across desktop and mobile with the agency's digital strategy and development teams, plus the launch of a CRM patient support program and its online patient community",
+            "Worked alongside the HCP team on the NUVIGIL.com HCP site and sales aid, both of which won 2011 Pharma Choice awards",
+            "Owned weekly client status and financial reporting plus OPDP and review-committee submissions across the $10M consumer business, and contributed to the annual strategic recommendations"
+          ]
+        },
+        {
+          "title": "Account Coordinator",
+          "employer": "RosettaWishbone",
+          "location": "New York, NY",
+          "dateRange": "Sep 2010 – Mar 2011",
+          "bullets": [
+            "Primary client contact across brand teams, national affiliates, and vendors on an award-winning global unbranded pneumococcal disease awareness campaign for the Pfizer Prevenar 13 adult pre-launch",
+            "Facilitated an Africa and Middle East advisory board in Dubai and owned project briefs, scopes of work, key opinion leader communications, and client status and financial reports"
+          ]
+        }
+      ]
+    },
+    "sourceBulletIds": {
+      "hedgehox": [
+        "hedgehox-01",
+        "hedgehox-02",
+        "hedgehox-03",
+        "hedgehox-05"
+      ],
+      "one-block-away": [
+        "one-block-away-01",
+        "one-block-away-02",
+        "one-block-away-03",
+        "one-block-away-04",
+        "one-block-away-05"
+      ],
+      "kinesso": [
+        "kinesso-01",
+        "kinesso-02",
+        "kinesso-03"
+      ],
+      "omnicom": [
+        "omnicom-01"
+      ],
+      "heartbeat": [
+        "heartbeat-01",
+        "heartbeat-02",
+        "heartbeat-03"
+      ],
+      "account-management": [
+        "addition:scout-xyrem-account-lead",
+        "addition:scout-xyrem-unbranded-social",
+        "addition:scout-xyrem-bridging-campaign",
+        "account-management-02",
+        "account-management-03",
+        "addition:fcb-namenda-caregiver-site",
+        "addition:barker-tough-mudder-pdi",
+        "addition:cdm-lipitor-zoloft-digital",
+        "account-management-01",
+        "addition:fcb-nuvigil-rebrand-crm",
+        "addition:fcb-nuvigil-hcp-collaboration",
+        "addition:fcb-nuvigil-client-operations",
+        "addition:rosetta-prevenar-client-contact",
+        "addition:rosetta-dubai-advisory"
+      ]
+    }
+  },
+  "hero": {
+    "eyebrow": "Precision AQ | Selected Work",
+    "tags": [
+      "Pharma review workflows",
+      "Client-facing analysis",
+      "Project delivery"
+    ],
+    "intro": "I put together a few recent projects that may be useful alongside my resume for the Senior Account Executive role at Precision AQ. They show the workflow and analytics side of my pharma and healthcare work."
+  },
+  "contact": {
+    "prompt": "Email and the matched resume are below.",
+    "signoff": "Pharmaceutical accounts | regulated review | project delivery"
+  },
+  "route": {
+    "designConcept": "editorial-proof",
+    "presentation": "showcase",
+    "heroIntent": "resume-support",
+    "showcaseSections": [
+      "chapters"
+    ],
+    "workHeading": "Selected work.",
+    "contactHeading": "Thanks for taking a look."
+  },
+  "copyReview": {
+    "humanizerVersion": "2.2.0",
+    "mode": "surface-only",
+    "status": "passed",
+    "reviewedAt": "2026-09-28T01:41:50.733Z",
+    "copySha256": "6c65ef066aeac39f2e02945a4810c3203684e93dec4a461faffc37c3a0d3897b",
+    "preserved": [
+      "content",
+      "structure",
+      "claims",
+      "ending"
+    ],
+    "rewriteAuthorized": false,
+    "reviewMethod": "humanizer-skill",
+    "semanticPassAttested": true,
+    "staticChecksPassed": true,
+    "finalAntiAiPass": true,
+    "remainingTells": []
+  },
+  "constraints": {
+    "doNotClaim": [
+      "Direct payer marketing or market-access campaign ownership",
+      "Formal profitability, forecasting, margin, cost reconciliation, or P&L ownership",
+      "RFP or new-business pitch ownership, wins, or quantified organic growth",
+      "Microsoft Office Suite proficiency without confirmation",
+      "Travel availability without confirmation",
+      "Zinc, Veeva, Workfront, or Smartsheet system administration or employer-specific use"
+    ],
+    "blockedTerms": [
+      "payer marketing expert",
+      "market access strategist",
+      "forecast owner",
+      "profitability owner",
+      "P&L owner",
+      "RFP wins",
+      "pitch wins",
+      "organic revenue growth",
+      "Microsoft Office expert",
+      "Zinc administrator",
+      "Veeva administrator",
+      "Workfront administrator",
+      "Smartsheet administrator"
+    ]
+  },
+  "privacy": {
+    "publicSafe": true,
+    "notes": "Contains only the user-provided public job description and public-safe resume, portfolio, and user-confirmed tool evidence. It excludes recruiter details, private application answers, compensation, eligibility, and submission state."
+  },
+  "qa": {
+    "status": "qa-passed",
+    "builtAt": "2026-09-28T01:42:17.907Z",
+    "configInputSha256": "ea3aab764be859e1cd96cd8ef06899f050daf0190c3998cfe62ff47ed4fd2109",
+    "sourceResumeSha256": "309a2ea377c45481d6826da8559d707319f85f53e6d68b3e10a537d1864e91e7",
+    "resumeFoundation": {
+      "id": "wally-mostafa-resume-2026-07-03",
+      "sourcePdfSha256": "f9b05b6c3c134262b1af6c5734363daf4385cf335407a139779a37d138adf1aa"
+    },
+    "resumeBase": {
+      "mode": "account-leadership",
+      "sourceProfiles": [
+        {
+          "id": "account-leadership",
+          "version": 1
+        }
+      ],
+      "leadProfileId": "account-leadership",
+      "accountPresentation": "agency-progression",
+      "action": "tailor-to-jd",
+      "registryVersion": 1,
+      "registrySha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108"
+    },
+    "artifactHashes": {
+      "routeSha256": "842f4339745344547b972c45410b22f8be34080c1b6ad1cdd394e94e827e841e",
+      "designConceptCssSha256": "b0888b6dc13bd1e5526259a5435dd84911b2007f68715d23d600bbc14ee7c9fd",
+      "resumePdfSha256": "d641a7bd60f6da27a586e983c7d0178ff25e3b828e67eca292c111bf266aea44",
+      "coverLetterPdfSha256": null,
+      "coverLetterMarkdownSha256": null,
+      "scopedProjectSha256": {
+        "project-01.html": "99a8fc366ccadfad700d06a881f22d1efb70f3f5d24fd3d7855cecb546c192b2",
+        "project-06.html": "22f9c9cc545a88265d4065e3425eee9e796c23e0cf6ad5ffd5b2236b8bc3a90f",
+        "project-02.html": "906501cbdecd5e007249e9637e47023ab5aeba9a6aed03d3211408e8526d22e9",
+        "project-03.html": "31e2e7b4cbe2dcb220c0ff31efd2130f7354121ed1b28b8d25b2749248e2c13d"
+      },
+      "scopedProjectAssetSha256": {}
+    },
+    "renderer": {
+      "browser": {
+        "name": "chrome-headless-shell",
+        "version": "Google Chrome for Testing 153.0.8010.12"
+      },
+      "htmlPath": "tmp/tailored-resumes/precision-aq-senior-account-executive.html",
+      "pdfPath": "output/pdf/Wally-Mostafa-Precision-AQ-Senior-Account-Executive-Resume.pdf",
+      "fontWait": true,
+      "fontProfile": "portfolio-pdf"
+    },
+    "coverLetterRenderer": null,
+    "coverLetter": null,
+    "ats": {
+      "ok": true,
+      "pdfPath": "output/pdf/Wally-Mostafa-Precision-AQ-Senior-Account-Executive-Resume.pdf",
+      "pageCount": 2,
+      "fileSize": 81783,
+      "annotations": [
+        {
+          "page": 1,
+          "uri": "mailto:wmostafa12@gmail.com"
+        },
+        {
+          "page": 1,
+          "uri": "https://linkedin.com/in/wallymo"
+        },
+        {
+          "page": 1,
+          "uri": "https://wallymo.github.io/precision-aq-senior-account-executive/"
+        },
+        {
+          "page": 2,
+          "uri": "https://www.indigoaward.com/winners/6748"
+        }
+      ],
+      "fontCompatibility": {
+        "type3Fonts": false
+      },
+      "coverage": [
+        {
+          "id": "degree-or-equivalent",
+          "requirement": "Hold a bachelor's degree or equivalent experience.",
+          "priority": "hard-gate",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "Rutgers University"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "pharma-agency-tenure",
+          "requirement": "Bring pharmaceutical agency experience and at least two combined years in Accounts and Project Management.",
+          "priority": "hard-gate",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "eight years",
+            "Senior Account Executive"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "client-contact",
+          "requirement": "Serve as lead client contact and communicate daily status, next steps, and project needs.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "primary client contact",
+            "financial reporting"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "team-project-delivery",
+          "requirement": "Coordinate cross-functional brand and project teams, timelines, milestones, scopes, and risks.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "scopes",
+            "timelines",
+            "cross-functional delivery"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "budgets-and-financials",
+          "requirement": "Monitor budgets, costs, reconciliations, and out-of-scope work; support financial and forecasting reports.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "contextual",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "budgets up to $20M",
+            "financial reporting"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "mlr-review",
+          "requirement": "Facilitate medical-legal-regulatory review of promotional items.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "MLR",
+            "FDA preclearance",
+            "OPDP"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "new-business-support",
+          "requirement": "Support organic growth, RFPs, pitch presentations, and client proposals.",
+          "priority": "core",
+          "evidenceStatus": "adjacent",
+          "matchMode": "contextual",
+          "status": "covered-adjacently",
+          "matchedTerms": [
+            "scopes of work",
+            "strategic recommendations"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "content-and-launch",
+          "requirement": "Coordinate content planning and pharmaceutical launch work across experts and agency teams.",
+          "priority": "core",
+          "evidenceStatus": "direct",
+          "matchMode": "recognized-equivalent",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "direct-to-consumer launch",
+            "brand planning"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "sows-and-briefs",
+          "requirement": "Experience writing scopes of work and project briefs.",
+          "priority": "preferred",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "scopes of work",
+            "briefs"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "submission-systems",
+          "requirement": "Hands-on experience with Zinc or Veeva MLR submission systems.",
+          "priority": "preferred",
+          "evidenceStatus": "direct",
+          "matchMode": "exact",
+          "status": "covered-directly",
+          "matchedTerms": [
+            "Zinc",
+            "Veeva"
+          ],
+          "missingTerms": []
+        },
+        {
+          "id": "microsoft-office",
+          "requirement": "Use Microsoft Office Suite proficiently.",
+          "priority": "core",
+          "evidenceStatus": "none",
+          "matchMode": "not-supported",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "Microsoft Office Suite"
+          ]
+        },
+        {
+          "id": "payer-marketing",
+          "requirement": "Bring specific payer marketing or market-access campaign experience.",
+          "priority": "context",
+          "evidenceStatus": "none",
+          "matchMode": "not-supported",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "payer marketing"
+          ]
+        },
+        {
+          "id": "travel-availability",
+          "requirement": "Be able to travel up to 5%.",
+          "priority": "context",
+          "evidenceStatus": "none",
+          "matchMode": "not-supported",
+          "status": "not-supported",
+          "matchedTerms": [],
+          "missingTerms": [
+            "5% travel"
+          ]
+        }
+      ],
+      "failures": [],
+      "warnings": []
+    },
+    "humanizer": {
+      "status": "passed",
+      "version": "2.2.0",
+      "mode": "surface-only",
+      "reviewedAt": "2026-09-28T01:41:50.733Z",
+      "copySha256": "6c65ef066aeac39f2e02945a4810c3203684e93dec4a461faffc37c3a0d3897b",
+      "reviewMethod": "humanizer-skill",
+      "semanticPassAttested": true,
+      "staticChecksPassed": true
+    },
+    "route": {
+      "viewports": [
+        {
+          "name": "desktop",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-01",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-06",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-02",
+          "errors": []
+        },
+        {
+          "name": "desktop-project-03",
+          "errors": []
+        },
+        {
+          "name": "mobile",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-01",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-06",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-02",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-03",
+          "errors": []
+        },
+        {
+          "name": "desktop-stack",
+          "errors": []
+        },
+        {
+          "name": "desktop-laptop",
+          "errors": []
+        },
+        {
+          "name": "desktop-short",
+          "errors": []
+        }
+      ],
+      "errors": []
+    }
+  },
+  "coverLetter": null
+}
