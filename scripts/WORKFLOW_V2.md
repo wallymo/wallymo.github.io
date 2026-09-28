@@ -153,3 +153,6 @@ node --test scripts/tests/*.test.mjs
 ```
 
 Use `--include-legacy` only for a non-blocking diagnostic summary of historical packages.
+# Challenger account hero
+
+Proof Grid account packages may opt into the existing Switchboard animation with `route.heroAnimation: "switchboard"` and `route.heroBoard: "pharma"` or `"general"`. The builder adds the scene, pause control, stylesheet, and script to the role hero only. The homepage remains unchanged. Staging follows the route's stylesheet and script references into the publishing checkout.

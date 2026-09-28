@@ -533,6 +533,8 @@
       "properties": {
         "presentation": { "enum": ["full", "showcase"] },
         "designConcept": { "enum": ["editorial-proof", "proof-grid"] },
+        "heroAnimation": { "const": "switchboard" },
+        "heroBoard": { "enum": ["pharma", "general"] },
         "heroIntent": { "const": "resume-support" },
         "projectCardStats": { "enum": ["visible", "hidden"] },
         "workHeading": { "type": "string", "minLength": 1 },

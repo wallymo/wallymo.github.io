@@ -160,6 +160,46 @@ function replaceFirst(html, pattern, replacement, label) {
   return html.replace(pattern, replacement);
 }
 
+function applyRouteHeroAnimation(html, config) {
+  if (config.route?.heroAnimation !== 'switchboard') return html;
+
+  const board = config.route.heroBoard;
+  const stage = `<div class="hero-machine" id="machine" data-board="${board}">
+    <canvas role="img" aria-label="A client line rings, Wally answers, connects the teams the request needs, and the finished work returns to the client."></canvas>
+    <button class="hero-machine-pause" type="button" aria-pressed="false" aria-label="Pause hero animation"><svg viewBox="0 0 10 10" aria-hidden="true"><rect x="1" y="1" width="3" height="8"/><rect x="6" y="1" width="3" height="8"/></svg><span>Pause</span></button>
+    <div class="hero-machine-fig" aria-hidden="true">Fig. — Switchboard</div>
+  </div>`;
+
+  html = replaceFirst(
+    html,
+    /<section class="hero">([\s\S]*?)<\/section>/,
+    (_match, content) => `<section class="hero hero-switchboard-layout">
+  <div class="hero-copy">${content.trim()}</div>
+  ${stage}
+</section>`,
+    'switchboard hero'
+  );
+  html = replaceFirst(
+    html,
+    /(<html\b[^>]*class=")([^"]*)(")/i,
+    (_match, before, classes, after) => `${before}${classes} switchboard-route${after}`,
+    'switchboard route class'
+  );
+  html = replaceFirst(
+    html,
+    /(<link rel="stylesheet" href="design-concept\.css" data-design-concept-stylesheet>)/,
+    '$1\n  <link rel="stylesheet" href="../assets/portfolio-revision/hero-switchboard-route.css">',
+    'switchboard stylesheet'
+  );
+  html = replaceFirst(
+    html,
+    /<\/body>/,
+    '<script src="../assets/portfolio-revision/hero-switchboard.js"></script>\n</body>',
+    'switchboard script'
+  );
+  return html;
+}
+
 function stampDesignConcept(html, config, surface) {
   const concept = getDesignConcept(config);
   const className =
@@ -1262,7 +1302,10 @@ export function buildRoute(config, paths) {
       'contact heading'
     );
   }
-  return stampDesignConcept(routeHtml, config, 'homepage');
+  return applyRouteHeroAnimation(
+    stampDesignConcept(routeHtml, config, 'homepage'),
+    config
+  );
 }
 
 function buildResume(config, paths) {

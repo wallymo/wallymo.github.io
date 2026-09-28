@@ -2531,6 +2531,23 @@ export function validateV2Config(
       );
       pushError(
         errors,
+        route.heroAnimation === undefined || route.heroAnimation === 'switchboard',
+        'route.heroAnimation must be switchboard when present'
+      );
+      pushError(
+        errors,
+        route.heroAnimation !== 'switchboard' ||
+          (route.designConcept === 'proof-grid' &&
+            ['pharma', 'general'].includes(route.heroBoard)),
+        'route.heroAnimation switchboard requires Proof Grid and a pharma or general heroBoard'
+      );
+      pushError(
+        errors,
+        route.heroBoard === undefined || route.heroAnimation === 'switchboard',
+        'route.heroBoard requires the switchboard hero'
+      );
+      pushError(
+        errors,
         route.heroIntent === undefined || route.heroIntent === 'resume-support',
         'route.heroIntent must be resume-support when present'
       );

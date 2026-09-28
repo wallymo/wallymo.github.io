@@ -812,6 +812,23 @@ test('Proof Grid snapshots both source skins and stamps route-local homepage and
       /<meta property="og:url" content="https:\/\/wally-mostafa\.github\.io\/workflow-v2-fixture\/">/
     );
 
+    config.route.heroAnimation = 'switchboard';
+    config.route.heroBoard = 'pharma';
+    const switchboardHtml = buildRoute(config, paths);
+    assert.match(switchboardHtml, /class="hero hero-switchboard-layout"/);
+    assert.match(switchboardHtml, /data-board="pharma"/);
+    assert.match(switchboardHtml, /hero-switchboard-route\.css/);
+    assert.match(switchboardHtml, /hero-switchboard\.js/);
+    assert.match(switchboardHtml, /aria-label="Pause hero animation"/);
+    assert.match(switchboardHtml, /Fig\. — Switchboard/);
+    assert.doesNotMatch(routeHtml, /hero-switchboard\.js/);
+    assert.deepEqual(schemaErrors(config), []);
+    assert.doesNotMatch(validateV2Config(config).join('\n'), /heroAnimation|heroBoard/);
+
+    const noBoard = structuredClone(config);
+    delete noBoard.route.heroBoard;
+    assert.match(validateV2Config(noBoard).join('\n'), /heroBoard/);
+
     const titles = new Map(
       config.selectedProjects.map((project) => [project, project])
     );
