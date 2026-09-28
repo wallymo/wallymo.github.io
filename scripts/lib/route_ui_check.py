@@ -24,6 +24,8 @@ def parse_args():
     parser.add_argument("--resume-pdf", required=True)
     parser.add_argument("--selected-projects", required=True)
     parser.add_argument("--route-mode", required=True)
+    parser.add_argument("--presentation", required=True)
+    parser.add_argument("--showcase-sections", required=True)
     parser.add_argument("--output-dir", required=True)
     parser.add_argument("--chrome", required=True)
     return parser.parse_args()
@@ -35,6 +37,7 @@ def main() -> int:
     output_dir = Path(args.output_dir).resolve()
     output_dir.mkdir(parents=True, exist_ok=True)
     selected_projects = json.loads(args.selected_projects)
+    showcase_sections = set(json.loads(args.showcase_sections))
     expected_project_links = [
         f"../{project}" if args.route_mode == "canonical-projects" else project
         for project in selected_projects
@@ -107,11 +110,13 @@ def main() -> int:
                 check_errors = []
                 if overflow:
                     check_errors.append("horizontal overflow")
-                if expect_route_contract:
-                    if page.locator("#chapters").count() != 1:
-                        check_errors.append("route must include exactly one Chapters section")
-                    if page.locator("#capabilities").count() != 1:
-                        check_errors.append("route must include exactly one Capabilities section")
+                if expect_route_contract and args.presentation == "showcase":
+                    for section_id in ("chapters", "how-i-build", "capabilities", "arc"):
+                        expected_count = 1 if section_id in showcase_sections else 0
+                        if page.locator(f"#{section_id}").count() != expected_count:
+                            check_errors.append(
+                                f"route must include {expected_count} {section_id} section(s)"
+                            )
                     if page.locator("#chapters .chapter-mark").count() != 0:
                         check_errors.append("Chapters must not include decorative iconography")
                 if expect_chapter_motion and page.locator("#chapters").count() == 1:

@@ -1613,6 +1613,7 @@ test(
       chaptersOnly.routeMode = 'scoped-projects';
       chaptersOnly.route = {
         presentation: 'showcase',
+        designConcept: 'editorial-proof',
         heroIntent: 'resume-support',
         showcaseSections: ['chapters'],
       };
@@ -1622,9 +1623,15 @@ test(
       });
       assert.deepEqual(validateV2Config(chaptersOnly), []);
       assert.deepEqual(schemaErrors(chaptersOnly), []);
+      assert.deepEqual(
+        validateV2Config(chaptersOnly, { requireCurrentContract: true }),
+        []
+      );
+      const capabilitiesOnly = structuredClone(chaptersOnly);
+      capabilitiesOnly.route.showcaseSections = ['capabilities'];
       assert.match(
-        validateV2Config(chaptersOnly, { requireCurrentContract: true }).join('\n'),
-        /must include chapters and capabilities/
+        validateV2Config(capabilitiesOnly, { requireCurrentContract: true }).join('\n'),
+        /must include chapters in route\.showcaseSections/
       );
       const fullWithShowcaseSections = structuredClone(config);
       fullWithShowcaseSections.route = {
@@ -5353,7 +5360,7 @@ test('route capability emphasis highlights exact proof phrases without changing 
   }
 });
 
-test('new showcase templates retain Chapters and Capabilities in humanizer and claim gates', () => {
+test('new showcase templates retain Chapters in humanizer and claim gates', () => {
   const template = JSON.parse(readFileSync(path.join(repoRoot, 'scripts/examples/package-v2.json'), 'utf8'));
   assert.deepEqual(template.selectedProjects, [
     'project-01.html',
@@ -5361,7 +5368,7 @@ test('new showcase templates retain Chapters and Capabilities in humanizer and c
     'project-04.html',
     'project-03.html',
   ]);
-  assert.deepEqual(template.route.showcaseSections, ['chapters', 'capabilities']);
+  assert.deepEqual(template.route.showcaseSections, ['chapters']);
   assert.deepEqual(schemaErrors(template), []);
   const tempRoot = mkdtempSync(path.join(os.tmpdir(), 'workflow-chapter-copy-'));
   const previousRepoRoot = process.env.WORKFLOW_REPO_ROOT;
@@ -5371,13 +5378,11 @@ test('new showcase templates retain Chapters and Capabilities in humanizer and c
     const source = '<section id="chapters"><h2>Three chapters. One through-line.</h2><button aria-label="Read the account chapter">Account Management</button><p>I worked with client teams.</p></section><section id="capabilities"><h2>Where I create leverage.</h2><p>I turn research into product direction.</p></section>';
     writeFileSync(path.join(tempRoot, 'index.html'), source);
     const entries = showcaseSectionCopyEntries(template);
-    assert.equal(entries.length, 2);
+    assert.equal(entries.length, 1);
     assert.equal(entries[0][0], 'route.showcaseSections.chapters');
     assert.match(entries[0][1], /Account Management.*I worked with client teams.*Read the account chapter/);
-    assert.equal(entries[1][0], 'route.showcaseSections.capabilities');
-    assert.match(entries[1][1], /Where I create leverage.*research into product direction/);
     assert.ok(humanizerCopyEntries(template).some(([key]) => key === 'route.showcaseSections.chapters'));
-    assert.ok(humanizerCopyEntries(template).some(([key]) => key === 'route.showcaseSections.capabilities'));
+    assert.ok(!humanizerCopyEntries(template).some(([key]) => key === 'route.showcaseSections.capabilities'));
     approveHumanizerReview(template, { reviewedAt: '2026-09-07T12:00:00.000Z', semanticPassComplete: true });
     const before = humanizerCopySha256(template);
     writeFileSync(path.join(tempRoot, 'index.html'), source.replace('client teams', 'agency teams'));
@@ -5387,6 +5392,8 @@ test('new showcase templates retain Chapters and Capabilities in humanizer and c
     assert.notEqual(humanizerCopySha256(template), before);
     template.constraints.blockedTerms = ['I worked with client teams'];
     assert.throws(() => assertRecruiterFacingClaimsSupported(template), /route.showcaseSections.chapters contains unsupported language/);
+    template.route.showcaseSections = ['chapters', 'capabilities'];
+    assert.equal(showcaseSectionCopyEntries(template).length, 2);
     writeFileSync(path.join(tempRoot, 'index.html'), '<main></main>');
     assert.throws(() => humanizerCopySha256(template), /Missing canonical showcase section: chapters/);
     delete template.route.showcaseSections;

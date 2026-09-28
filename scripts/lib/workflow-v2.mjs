@@ -2582,10 +2582,8 @@ export function validateV2Config(
         pushError(
           errors,
           Array.isArray(showcaseSections) &&
-            ['chapters', 'capabilities'].every((sectionId) =>
-              showcaseSections.includes(sectionId)
-            ),
-          'new or rebuilt showcase routes must include chapters and capabilities in route.showcaseSections'
+            showcaseSections.includes('chapters'),
+          'new or rebuilt showcase routes must include chapters in route.showcaseSections'
         );
       }
       const capabilityProjects = route.capabilityProjects;

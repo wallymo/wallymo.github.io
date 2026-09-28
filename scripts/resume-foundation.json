@@ -142,6 +142,16 @@
       ]
     },
     {
+      "id": "agency-review-project-tools",
+      "label": "Agency Review & Project Tools",
+      "description": "MLR submission systems: Zinc and Veeva; project tools: Workfront and Smartsheet",
+      "evidenceIds": [
+        "account-management-01",
+        "account-management-03"
+      ],
+      "sourceAttribution": "User-confirmed tool experience on 2026-09-27; employer and level of use were not specified"
+    },
+    {
       "id": "healthcare-marketing-strategy",
       "label": "Healthcare Marketing & Brand Strategy",
       "description": "Brand planning, campaign and digital strategy, MLR review, patient and HCP experiences, and regulated multi-channel delivery",
