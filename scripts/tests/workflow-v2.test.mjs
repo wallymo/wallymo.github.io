@@ -1579,7 +1579,7 @@ test(
 );
 
 test(
-  'showcase routes preserve historical section sets and require Chapters plus Capabilities on rebuild',
+  'showcase routes preserve historical section sets and require Chapters on rebuild',
   { timeout: 180_000 },
   () => {
     const { tempRoot, config, configPath } = createBuildFixture({

@@ -1109,7 +1109,7 @@ export function buildRoute(config, paths) {
   const indexHtml = readFileSync(resolveRepoPath('index.html'), 'utf8');
   let routeHtml = rewriteRootRefsForRoute(indexHtml);
   const routeUrl = `${getPackagePublicBase(config)}${paths.slug}/`;
-  const description = `Wally Mostafa's work for ${config.roleTitle}.`;
+  const description = `Recent work alongside my resume for the ${config.job.roleTitle} role at ${config.job.company}.`;
   const tags = config.hero.tags
     .map((tag) => `    <span>${escapeHtml(tag)}</span>`)
     .join('\n');
@@ -1319,7 +1319,7 @@ function buildResume(config, paths) {
       renderBulletItems(config.resume.roles[roleId])
     );
   }
-  resumeHtml = replaceResumeExperienceSections(resumeHtml, config);
+  resumeHtml = replaceResumeExperienceSections(resumeHtml, config, foundation);
   if (config.resume.roleContinuationBreaks?.length) {
     resumeHtml = resumeHtml.replace(
       '</head>',
@@ -1490,7 +1490,7 @@ export function replaceJobTitle(jobBlock, title) {
   );
 }
 
-function replaceResumeExperienceSections(resumeHtml, config) {
+function replaceResumeExperienceSections(resumeHtml, config, foundation) {
   const experienceMatch = resumeHtml.match(
     /<section data-resume-section="experience">[\s\S]*?<\/section>/
   );
@@ -1521,9 +1521,11 @@ function replaceResumeExperienceSections(resumeHtml, config) {
       throw new Error(`Could not find the source resume job for ${roleId}`);
     }
     let jobBlock = extractBalancedTagBlock(sourceSection, jobStart, 'div');
-    const titleOverride = config.resume.roleTitleOverrides?.[roleId];
-    if (titleOverride) {
-      jobBlock = replaceJobTitle(jobBlock, titleOverride);
+    const title =
+      config.resume.roleTitleOverrides?.[roleId] ||
+      foundation.roleHeaders[roleId]?.title;
+    if (title) {
+      jobBlock = replaceJobTitle(jobBlock, title);
     }
     if (continuationBreaks.has(roleId)) {
       jobBlock = splitJobBlockWithContinuation(
