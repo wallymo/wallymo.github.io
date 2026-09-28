@@ -4450,41 +4450,9 @@
       ],
       "designConceptCssPath": "precision-aq-senior-account-executive/design-concept.css",
       "resumePdfPath": "output/pdf/Wally-Mostafa-Precision-AQ-Senior-Account-Executive-Resume.pdf",
-      "publishStatus": "live-verified",
+      "publishStatus": "local-only",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-09-28T14:21:02.293Z",
-      "verification": {
-        "verifiedAt": "2026-09-28T14:24:00.767Z",
-        "routeUrl": "https://wally-mostafa.github.io/precision-aq-senior-account-executive/",
-        "resumePdfUrl": "https://wally-mostafa.github.io/output/pdf/Wally-Mostafa-Precision-AQ-Senior-Account-Executive-Resume.pdf",
-        "configUrl": "https://wally-mostafa.github.io/scripts/packages/precision-aq-senior-account-executive.json",
-        "publicBase": "https://wally-mostafa.github.io/",
-        "publishRepository": "wally-mostafa/wally-mostafa.github.io",
-        "designConceptCssUrl": "https://wally-mostafa.github.io/precision-aq-senior-account-executive/design-concept.css",
-        "designConceptCssSha256": "73052eae58d446422f0ff921361877b1ca4e0062ec7ee25daace39b4a4791195",
-        "projectUrls": [
-          "https://wally-mostafa.github.io/precision-aq-senior-account-executive/project-01.html",
-          "https://wally-mostafa.github.io/precision-aq-senior-account-executive/project-06.html",
-          "https://wally-mostafa.github.io/precision-aq-senior-account-executive/project-02.html",
-          "https://wally-mostafa.github.io/precision-aq-senior-account-executive/project-03.html"
-        ],
-        "redirectUrls": [],
-        "configSha256": "2109387a19382c44063dde5375245f192d45af60e8d2a59f748b9bfcbfcca4dc",
-        "pdfSha256": "fe3f959981c687650af0c7a7e2a416483edcb46ddb53fb4246bd7206cb7101f1",
-        "resumeBaseProfilesUrl": "https://wally-mostafa.github.io/scripts/resume-base-profiles.json",
-        "resumeBaseProfilesSha256": "d65cf6eb47ce07ca286ad3961dcbb5ee87bcf9334b675000691ab994b50e1108",
-        "routeSha256": "16b259a8c2a84019dc5bcc9da443172a43cd0c27b1dabe058fb23e1fe33f464d",
-        "scopedProjectSha256": {
-          "project-01.html": "439a277bc4fd7d67af351f3a5e35467b88f6f86251ab21ad78425c2e787c9c19",
-          "project-06.html": "fcdf5571bf55adfed8c0553632a81a0a26afd644fa8be1a78a7321be0d1ccb0a",
-          "project-02.html": "11849dc35b645da37bb4c0ce22ce4523a3fc01f4171a5d940645be9191a83496",
-          "project-03.html": "653374e38a8bbc64fdaec7993e706622fc11f0d22a4b4c62534011df157ea8cd"
-        },
-        "scopedProjectAssetUrls": [],
-        "scopedProjectAssetSha256": {},
-        "configInputSha256": "99a8c5ad941de7d4ee92630ceb70f6b4a80315b697c6a9c9bdc36f5da33889e9",
-        "qaBuiltAt": "2026-09-28T14:21:02.293Z"
-      }
+      "builtAt": "2026-09-28T14:34:15.255Z"
     },
     {
       "workflowVersion": 2,
