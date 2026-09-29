@@ -143,14 +143,13 @@
     },
     {
       "id": "agency-review-project-tools",
-      "label": "Zinc, Veeva, Smartsheet, Workfront, HubSpot, Notion, Hootsuite, ClickUp",
-      "description": "",
+      "label": "Tools",
+      "description": "Zinc, Veeva, Smartsheet, Workfront, HubSpot, Notion, Hootsuite, ClickUp",
       "evidenceIds": [
         "account-management-01",
         "account-management-03"
       ],
-      "sourceAttribution": "User-confirmed tool list on 2026-09-29; employer and level of use were not specified",
-      "presentation": "plain"
+      "sourceAttribution": "User-confirmed tool list on 2026-09-29; employer and level of use were not specified"
     },
     {
       "id": "healthcare-marketing-strategy",

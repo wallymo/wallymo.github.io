@@ -321,9 +321,8 @@
         "description": "Stakeholder interviews, competitive audits, journey maps, user flows, wireframes, prototypes, usability testing, and research-led product direction"
       },
       {
-        "label": "Zinc, Veeva, Smartsheet, Workfront, HubSpot, Notion, Hootsuite, ClickUp",
-        "description": "",
-        "presentation": "plain"
+        "label": "Tools",
+        "description": "Zinc, Veeva, Smartsheet, Workfront, HubSpot, Notion, Hootsuite, ClickUp"
       }
     ],
     "experienceSections": [
@@ -570,8 +569,8 @@
   },
   "qa": {
     "status": "qa-passed",
-    "builtAt": "2026-09-29T15:20:02.156Z",
-    "configInputSha256": "0897fce6b9045aef7c00c5816d56ec07e3e65ff0bc530880fa13f5fc86cbf984",
+    "builtAt": "2026-09-29T23:04:09.211Z",
+    "configInputSha256": "f1ecf7abc44af9879f0745ebe506b3e00df359b0ad6043a3edb007773f1f19e5",
     "sourceResumeSha256": "309a2ea377c45481d6826da8559d707319f85f53e6d68b3e10a537d1864e91e7",
     "resumeFoundation": {
       "id": "wally-mostafa-resume-2026-07-03",
@@ -594,7 +593,7 @@
     "artifactHashes": {
       "routeSha256": "c5ead62bd9a5bf792fd53725a3e97f05b1044620c73de47d7489c5fd25a48392",
       "designConceptCssSha256": "b0888b6dc13bd1e5526259a5435dd84911b2007f68715d23d600bbc14ee7c9fd",
-      "resumePdfSha256": "5739e66d45d8b1af0d7c174816810f3d436a7ae15fb2c3933eac9e50af1fbc67",
+      "resumePdfSha256": "0dba443cbcfcebecfe6b1193a984ba7c39ac16f040fa578989bc0e56b627be9b",
       "coverLetterPdfSha256": null,
       "coverLetterMarkdownSha256": null,
       "scopedProjectSha256": {
@@ -621,7 +620,7 @@
       "ok": true,
       "pdfPath": "output/pdf/Wally-Mostafa-Account-Management-Resume.pdf",
       "pageCount": 2,
-      "fileSize": 90026,
+      "fileSize": 90357,
       "annotations": [
         {
           "page": 1,
@@ -762,8 +761,8 @@
       "status": "passed",
       "version": "2.2.0",
       "mode": "surface-only",
-      "reviewedAt": "2026-09-29T15:18:25.391Z",
-      "copySha256": "c03cf0a2d07f8ba7a6726963d991f8b607a73cf914a10ecbc87c0515d714d0bf",
+      "reviewedAt": "2026-09-29T23:03:41.071Z",
+      "copySha256": "0bf9c0ffe0de27c21f4c801ebf0c86c140404b7a75313d670b2caee28a61bb23",
       "reviewMethod": "humanizer-skill",
       "semanticPassAttested": true,
       "staticChecksPassed": true
@@ -830,8 +829,8 @@
     "humanizerVersion": "2.2.0",
     "mode": "surface-only",
     "status": "passed",
-    "reviewedAt": "2026-09-29T15:18:25.391Z",
-    "copySha256": "c03cf0a2d07f8ba7a6726963d991f8b607a73cf914a10ecbc87c0515d714d0bf",
+    "reviewedAt": "2026-09-29T23:03:41.071Z",
+    "copySha256": "0bf9c0ffe0de27c21f4c801ebf0c86c140404b7a75313d670b2caee28a61bb23",
     "preserved": [
       "content",
       "structure",
