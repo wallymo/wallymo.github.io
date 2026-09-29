@@ -321,8 +321,9 @@
         "description": "Stakeholder interviews, competitive audits, journey maps, user flows, wireframes, prototypes, usability testing, and research-led product direction"
       },
       {
-        "label": "Agency Review & Project Tools",
-        "description": "MLR submission systems: Zinc and Veeva; project tools: Workfront and Smartsheet"
+        "label": "Zinc, Veeva, Smartsheet, Workfront, HubSpot, Notion, Hootsuite, ClickUp",
+        "description": "",
+        "presentation": "plain"
       }
     ],
     "experienceSections": [
@@ -404,7 +405,7 @@
       ],
       "account-management": [
         {
-          "title": "Account Supervisor / Digital Strategist",
+          "title": "Account Supervisor / UX Designer",
           "employer": "Scout Marketing",
           "location": "San Diego, CA",
           "dateRange": "Jun 2015 – Jul 2018",
@@ -569,8 +570,8 @@
   },
   "qa": {
     "status": "qa-passed",
-    "builtAt": "2026-09-29T14:53:51.334Z",
-    "configInputSha256": "85d8cc7aaa6c96cac333f1cd6d2fba69b595458fd5a277922b47078e50be1330",
+    "builtAt": "2026-09-29T15:20:02.156Z",
+    "configInputSha256": "0897fce6b9045aef7c00c5816d56ec07e3e65ff0bc530880fa13f5fc86cbf984",
     "sourceResumeSha256": "309a2ea377c45481d6826da8559d707319f85f53e6d68b3e10a537d1864e91e7",
     "resumeFoundation": {
       "id": "wally-mostafa-resume-2026-07-03",
@@ -588,12 +589,12 @@
       "accountPresentation": "agency-progression",
       "action": "use-existing",
       "registryVersion": 1,
-      "registrySha256": "207c57e54b93cc59a0cb5582430f1af75ca90a1ed9e3b6e02afee95e8f1db260"
+      "registrySha256": "195e963f009e9bfe386d24efec5ee697ea866b936cd6634203a6b653ab403bae"
     },
     "artifactHashes": {
       "routeSha256": "c5ead62bd9a5bf792fd53725a3e97f05b1044620c73de47d7489c5fd25a48392",
       "designConceptCssSha256": "b0888b6dc13bd1e5526259a5435dd84911b2007f68715d23d600bbc14ee7c9fd",
-      "resumePdfSha256": "2dc6903f2301841a420c1202b46a8269ad71d7e64aec253c1fc25c5e2a563985",
+      "resumePdfSha256": "5739e66d45d8b1af0d7c174816810f3d436a7ae15fb2c3933eac9e50af1fbc67",
       "coverLetterPdfSha256": null,
       "coverLetterMarkdownSha256": null,
       "scopedProjectSha256": {
@@ -620,7 +621,7 @@
       "ok": true,
       "pdfPath": "output/pdf/Wally-Mostafa-Account-Management-Resume.pdf",
       "pageCount": 2,
-      "fileSize": 90488,
+      "fileSize": 90026,
       "annotations": [
         {
           "page": 1,
@@ -761,8 +762,8 @@
       "status": "passed",
       "version": "2.2.0",
       "mode": "surface-only",
-      "reviewedAt": "2026-09-29T14:53:18.134Z",
-      "copySha256": "f77069ebb359f7fdb4746168d5df98b553af5d8d801837d5cf47e88d72a190d8",
+      "reviewedAt": "2026-09-29T15:18:25.391Z",
+      "copySha256": "c03cf0a2d07f8ba7a6726963d991f8b607a73cf914a10ecbc87c0515d714d0bf",
       "reviewMethod": "humanizer-skill",
       "semanticPassAttested": true,
       "staticChecksPassed": true
@@ -829,8 +830,8 @@
     "humanizerVersion": "2.2.0",
     "mode": "surface-only",
     "status": "passed",
-    "reviewedAt": "2026-09-29T14:53:18.134Z",
-    "copySha256": "f77069ebb359f7fdb4746168d5df98b553af5d8d801837d5cf47e88d72a190d8",
+    "reviewedAt": "2026-09-29T15:18:25.391Z",
+    "copySha256": "c03cf0a2d07f8ba7a6726963d991f8b607a73cf914a10ecbc87c0515d714d0bf",
     "preserved": [
       "content",
       "structure",
