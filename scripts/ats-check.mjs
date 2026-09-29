@@ -229,12 +229,13 @@ export function runAtsCheck({ configPath, pdfPath }) {
       uri.startsWith(publicBase)
     )
   );
+  const expectedPortfolioLinks = config.resume.portfolioCallout ? 2 : 1;
   if (
-    portfolioUris.length !== 1 ||
-    portfolioUris[0] !== expectedPortfolio
+    portfolioUris.length !== expectedPortfolioLinks ||
+    portfolioUris.some((uri) => uri !== expectedPortfolio)
   ) {
     failures.push(
-      `Portfolio annotations must point exclusively to ${expectedPortfolio}; found ${
+      `Expected ${expectedPortfolioLinks} Portfolio annotation(s) pointing to ${expectedPortfolio}; found ${
         portfolioUris.join(', ') || '<none>'
       }`
     );
