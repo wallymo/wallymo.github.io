@@ -312,6 +312,9 @@
           "type": "string",
           "minLength": 1
         },
+        "portfolioCallout": {
+          "type": "boolean"
+        },
         "roleTitleOverrides": {
           "type": "object",
           "minProperties": 1,

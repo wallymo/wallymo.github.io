@@ -1443,6 +1443,12 @@ function validateResume(
       isNonEmptyString(resume.portfolioLinkLabel),
     'resume.portfolioLinkLabel must be a non-empty string when present'
   );
+  pushError(
+    errors,
+    resume.portfolioCallout === undefined ||
+      typeof resume.portfolioCallout === 'boolean',
+    'resume.portfolioCallout must be a boolean when present'
+  );
   if (resume.roleContinuationBreaks !== undefined) {
     pushError(
       errors,

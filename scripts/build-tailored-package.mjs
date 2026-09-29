@@ -1398,6 +1398,31 @@ function buildResume(config, paths) {
         .join('\n')}\n  </ul>`
     );
   }
+  if (config.resume.portfolioCallout) {
+    const displayUrl = routeUrl.replace(/^https:\/\//, '');
+    const awardsMarker = '<section data-resume-section="awards">';
+    if (!resumeHtml.includes(awardsMarker)) {
+      throw new Error('Could not find the Awards section for the portfolio callout');
+    }
+    resumeHtml = resumeHtml.replace(
+      awardsMarker,
+      `<section data-resume-section="selected-work">
+  <div class="section-title">Selected Work</div>
+  <p class="selected-work-link"><a href="${escapeHtml(routeUrl)}" target="_blank" rel="noopener">${escapeHtml(displayUrl)}</a></p>
+</section>
+
+${awardsMarker}`
+    );
+    resumeHtml = resumeHtml.replace(
+      '</head>',
+      `<style data-resume-portfolio-callout>
+  .selected-work-link { margin: 0; font-size: 9pt; line-height: 1.3; }
+  .selected-work-link a { color: var(--ink); text-decoration: underline; text-underline-offset: 2px; }
+  @media print { section[data-resume-section="selected-work"] { margin-bottom: 0.45rem; } }
+</style>
+</head>`
+    );
+  }
   if (config.resume.layoutDensity === 'compact') {
     resumeHtml = resumeHtml.replace(
       '</head>',
