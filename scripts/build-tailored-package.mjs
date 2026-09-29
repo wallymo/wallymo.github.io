@@ -1418,7 +1418,11 @@ ${awardsMarker}`
       `<style data-resume-portfolio-callout>
   .selected-work-link { margin: 0; font-size: 9pt; line-height: 1.3; }
   .selected-work-link a { color: var(--ink); text-decoration: underline; text-underline-offset: 2px; }
-  @media print { section[data-resume-section="selected-work"] { margin-bottom: 0.45rem; } }
+  @media print {
+    section[data-resume-section="experience-2"] .job { margin-bottom: 0.65rem; }
+    section[data-resume-section="experience-2"] .job-desc li { line-height: 1.4; margin-bottom: 0.14rem; }
+    section[data-resume-section="selected-work"] { margin-bottom: 0.65rem; }
+  }
 </style>
 </head>`
     );
