@@ -118,12 +118,14 @@
         ],
         "account-management": [
           "addition:scout-xyrem-account-lead",
+          "addition:scout-xyrem-phreesia-point-of-care",
           "addition:scout-xyrem-unbranded-social",
           "addition:scout-xyrem-bridging-campaign",
           "account-management-02",
           "account-management-03",
           "addition:fcb-namenda-caregiver-site",
           "addition:barker-tough-mudder-pdi",
+          "addition:barker-pdi-account-lead",
           "addition:cdm-lipitor-zoloft-digital",
           "account-management-01",
           "addition:fcb-nuvigil-rebrand-crm",
@@ -135,6 +137,7 @@
       },
       "coreProofIds": [
         "addition:scout-xyrem-account-lead",
+        "addition:scout-xyrem-phreesia-point-of-care",
         "addition:scout-xyrem-unbranded-social",
         "addition:scout-xyrem-bridging-campaign",
         "account-management-01",
@@ -142,6 +145,7 @@
         "account-management-03",
         "addition:fcb-namenda-caregiver-site",
         "addition:barker-tough-mudder-pdi",
+        "addition:barker-pdi-account-lead",
         "addition:cdm-lipitor-zoloft-digital",
         "addition:fcb-nuvigil-rebrand-crm",
         "addition:fcb-nuvigil-hcp-collaboration",
@@ -157,6 +161,7 @@
           "dateRange": "Jun 2015 – Jul 2018",
           "sourceIds": [
             "addition:scout-xyrem-account-lead",
+            "addition:scout-xyrem-phreesia-point-of-care",
             "addition:scout-xyrem-unbranded-social",
             "addition:scout-xyrem-bridging-campaign"
           ]
@@ -178,7 +183,8 @@
           "location": "New York, NY",
           "dateRange": "Dec 2013 – May 2014",
           "sourceIds": [
-            "addition:barker-tough-mudder-pdi"
+            "addition:barker-tough-mudder-pdi",
+            "addition:barker-pdi-account-lead"
           ]
         },
         {
@@ -219,12 +225,12 @@
     {
       "id": "addition:scout-xyrem-account-lead",
       "roleId": "account-management",
-      "text": "Promoted from Senior Account Executive and took the lead on Jazz Pharmaceuticals XYREM consumer work: unbranded campaigns across digital, print, and in-office channels that lifted traffic and engagement on the disease-state site"
+      "text": "Led Jazz Pharmaceuticals' More Than Tired narcolepsy awareness work and managed the account executive across TV, digital, print, social, and in-office channels"
     },
     {
       "id": "addition:scout-xyrem-unbranded-social",
       "roleId": "account-management",
-      "text": "Led the launch of the first unbranded social campaign on Facebook and YouTube for the brand and for Jazz, built around real patients telling their own stories"
+      "text": "Led the first unbranded Facebook and YouTube campaign for XYREM and Jazz, built around real patients' stories"
     },
     {
       "id": "addition:scout-xyrem-bridging-campaign",
@@ -234,17 +240,17 @@
     {
       "id": "addition:fcb-namenda-caregiver-site",
       "roleId": "account-management",
-      "text": "Led the launch of an unbranded Alzheimer's caregiver community site with support resources, sponsorship exploration, and public relations pull-through; also oversaw the account's Assistant Account Executive across in-office tactics, national print, and sales representative support materials"
+      "text": "Led an unbranded Alzheimer's caregiver community site with support resources, Spotify sponsorship coordination, and public relations pull-through; managed the account's Assistant Account Executive across in-office tactics, print, and sales materials"
     },
     {
       "id": "addition:barker-tough-mudder-pdi",
       "roleId": "account-management",
-      "text": "Led the social campaign for a new Tough Mudder loyalty program and oversaw PDI and Nice-Pak, the agency's largest account, across print, digital, and social"
+      "text": "Part of the pitch team that won Tough Mudder's loyalty program and related social media work; then led its launch campaign"
     },
     {
       "id": "addition:cdm-lipitor-zoloft-digital",
       "roleId": "account-management",
-      "text": "Used campaign metrics to shape Pfizer digital recommendations for Lipitor's online presence and loyalty program during loss of exclusivity, and piloted a Zoloft savings offer to test market response"
+      "text": "Used Pfizer Lipitor metrics to shape digital and loyalty recommendations during loss of exclusivity; piloted a Zoloft savings offer"
     },
     {
       "id": "addition:fcb-nuvigil-rebrand-crm",
@@ -254,22 +260,22 @@
     {
       "id": "addition:fcb-nuvigil-hcp-collaboration",
       "roleId": "account-management",
-      "text": "Worked alongside the HCP team on the NUVIGIL.com HCP site and sales aid, both of which won 2011 Pharma Choice awards"
+      "text": "Worked with the HCP team on NUVIGIL.com, award-winning sales aids, in-field sales materials, conference planning, and KOL tactics; the HCP site and sales aid won 2011 Pharma Choice awards"
     },
     {
       "id": "addition:fcb-nuvigil-client-operations",
       "roleId": "account-management",
-      "text": "Owned weekly client status and financial reporting plus OPDP and review-committee submissions across the $10M consumer business, and contributed to the annual strategic recommendations"
+      "text": "Owned weekly client status, financial reporting, OPDP and review-committee submissions, and annual brand planning for the agency's largest account across NUVIGIL's three indications: narcolepsy, obstructive sleep apnea, and shift work disorder"
     },
     {
       "id": "addition:rosetta-prevenar-client-contact",
       "roleId": "account-management",
-      "text": "Primary client contact across brand teams, national affiliates, and vendors on an award-winning global unbranded pneumococcal disease awareness campaign for the Pfizer Prevenar 13 adult pre-launch"
+      "text": "Served as Pfizer's day-to-day agency contact for Prevenar 13 adult prelaunch, coordinating brand teams, affiliates, and vendors"
     },
     {
       "id": "addition:rosetta-dubai-advisory",
       "roleId": "account-management",
-      "text": "Facilitated an Africa and Middle East advisory board in Dubai and owned project briefs, scopes of work, key opinion leader communications, and client status and financial reports"
+      "text": "At a Dubai advisory board for Africa and the Middle East, coordinated print materials, KOL operations, and PMRC submissions; sent daily Pfizer stakeholder recaps onsite and later presented pull-through plans to global Pfizer leaders"
     }
   ]
 }
