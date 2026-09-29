@@ -371,6 +371,7 @@
     "roles": {
       "hedgehox": [
         "Lead six pharma AI workflows for briefs, scopes, submissions, MLR claims, review routing, and FDA signals; Echo cut screenshot routing from 8 hours to 10 minutes",
+        "Designed BriefFlow to automatically turn client meeting recordings into draft briefs that capture decisions, technical specifications, project requirements, and open questions for team review",
         "Secured Claims Detector investor backing with a functional POC, demo story, and direct investor iteration",
         "Built Claims Detector for daily use at two major pharma agencies, flagging claims and evidence gaps before human MLR review; one cycle fell from 3 weeks to 4 days",
         "Led AI-assisted design and build of Xenagos Bio's investor site and reusable design system",
@@ -381,8 +382,7 @@
         "Build client-led AI POCs that turn unclear business questions into testable product surfaces, demo flows, and roadmap decisions",
         "Built ListingPal's AI listing-generation POC and landing page, turning basic property inputs into listing copy, social posts, ad copy, styling direction, and MLS/SEO-ready language in under 90 seconds",
         "Built WeReady's Bailey Intelligence dashboard, translating founder inputs, GitHub signals, source health, risk scoring, and evidence trails into startup-readiness workflows",
-        "Own product strategy, UX, AI workflow design, front-end build, backend logic, demo readiness, and client iteration from first ask through working prototype",
-        "Currently building the website and sponsor strategy for a Tunisia youth soccer program, positioning the project for player advancement, community support, and donor outreach"
+        "Own product strategy, UX, AI workflow design, front-end build, backend logic, demo readiness, and client iteration from first ask through working prototype"
       ],
       "kinesso": [
         "Scaled product design from 2 to 30 across the US and Poland for analytics used by 7,000+ people across 22 white-label brands",
@@ -472,6 +472,7 @@
     "sourceBulletIds": {
       "hedgehox": [
         "hedgehox-03",
+        "addition:hedgehox-briefflow-meeting-brief",
         "hedgehox-01",
         "hedgehox-02",
         "hedgehox-04",
@@ -482,8 +483,7 @@
         "one-block-away-01",
         "one-block-away-02",
         "one-block-away-03",
-        "one-block-away-04",
-        "one-block-away-05"
+        "one-block-away-04"
       ],
       "kinesso": [
         "kinesso-01",
@@ -569,8 +569,8 @@
   },
   "qa": {
     "status": "qa-passed",
-    "builtAt": "2026-09-29T23:04:09.211Z",
-    "configInputSha256": "f1ecf7abc44af9879f0745ebe506b3e00df359b0ad6043a3edb007773f1f19e5",
+    "builtAt": "2026-09-29T23:09:46.388Z",
+    "configInputSha256": "11d747f46f9671e9fb6bb14aadc5279fc3ae7fc5a1380a943b0b28935c00b75c",
     "sourceResumeSha256": "309a2ea377c45481d6826da8559d707319f85f53e6d68b3e10a537d1864e91e7",
     "resumeFoundation": {
       "id": "wally-mostafa-resume-2026-07-03",
@@ -593,7 +593,7 @@
     "artifactHashes": {
       "routeSha256": "c5ead62bd9a5bf792fd53725a3e97f05b1044620c73de47d7489c5fd25a48392",
       "designConceptCssSha256": "b0888b6dc13bd1e5526259a5435dd84911b2007f68715d23d600bbc14ee7c9fd",
-      "resumePdfSha256": "0dba443cbcfcebecfe6b1193a984ba7c39ac16f040fa578989bc0e56b627be9b",
+      "resumePdfSha256": "018e6647217c73da39b0b6bafdc9f78de012f9fe3103cd1449aefdc7f9062426",
       "coverLetterPdfSha256": null,
       "coverLetterMarkdownSha256": null,
       "scopedProjectSha256": {
@@ -620,7 +620,7 @@
       "ok": true,
       "pdfPath": "output/pdf/Wally-Mostafa-Account-Management-Resume.pdf",
       "pageCount": 2,
-      "fileSize": 90357,
+      "fileSize": 90343,
       "annotations": [
         {
           "page": 1,
@@ -761,8 +761,8 @@
       "status": "passed",
       "version": "2.2.0",
       "mode": "surface-only",
-      "reviewedAt": "2026-09-29T23:03:41.071Z",
-      "copySha256": "0bf9c0ffe0de27c21f4c801ebf0c86c140404b7a75313d670b2caee28a61bb23",
+      "reviewedAt": "2026-09-29T23:09:18.795Z",
+      "copySha256": "263370f88f3be26a9a930f177a99221fdf3716566443c7a4afb2bf1027aa13ed",
       "reviewMethod": "humanizer-skill",
       "semanticPassAttested": true,
       "staticChecksPassed": true
@@ -829,8 +829,8 @@
     "humanizerVersion": "2.2.0",
     "mode": "surface-only",
     "status": "passed",
-    "reviewedAt": "2026-09-29T23:03:41.071Z",
-    "copySha256": "0bf9c0ffe0de27c21f4c801ebf0c86c140404b7a75313d670b2caee28a61bb23",
+    "reviewedAt": "2026-09-29T23:09:18.795Z",
+    "copySha256": "263370f88f3be26a9a930f177a99221fdf3716566443c7a4afb2bf1027aa13ed",
     "preserved": [
       "content",
       "structure",
