@@ -1288,7 +1288,13 @@ function validateResume(
   if (Array.isArray(resume.skills)) {
     for (const [index, skill] of resume.skills.entries()) {
       pushError(errors, isNonEmptyString(skill?.label), `resume.skills[${index}].label is required`);
-      pushError(errors, isNonEmptyString(skill?.description), `resume.skills[${index}].description is required`);
+      pushError(
+        errors,
+        skill?.presentation === 'plain'
+          ? skill.description === ''
+          : skill?.presentation === undefined && isNonEmptyString(skill?.description),
+        `resume.skills[${index}] needs a description, or plain presentation with an empty description`
+      );
     }
   }
 
@@ -1613,7 +1619,11 @@ function validateResume(
       const selectedSkills = resume.skillIds.map((skillId) => {
         const skill = skillsById.get(skillId);
         return skill
-          ? { label: skill.label, description: skill.description }
+          ? {
+              label: skill.label,
+              description: skill.description,
+              ...(skill.presentation ? { presentation: skill.presentation } : {}),
+            }
           : null;
       });
       pushError(
@@ -1876,7 +1886,9 @@ function validatePositioning(config, errors, foundation, profileRegistry = null)
       errors,
       isNonEmptyString(skill?.id) &&
         isNonEmptyString(skill?.label) &&
-        isNonEmptyString(skill?.description),
+        (skill?.presentation === 'plain'
+          ? skill.description === ''
+          : skill?.presentation === undefined && isNonEmptyString(skill?.description)),
       `resume foundation skillBank[${index}] is incomplete`
     );
     pushError(
@@ -3416,7 +3428,9 @@ export function renderSkillItems(skills) {
   return `\n${skills
     .map(
       (skill) =>
-        `    <li>\n      <span class="cap-label">${escapeHtml(skill.label)}</span>\n      <span class="cap-desc"> — ${escapeHtml(skill.description)}</span>\n    </li>`
+        skill.presentation === 'plain'
+          ? `    <li>${escapeHtml(skill.label)}</li>`
+          : `    <li>\n      <span class="cap-label">${escapeHtml(skill.label)}</span>\n      <span class="cap-desc"> — ${escapeHtml(skill.description)}</span>\n    </li>`
     )
     .join('\n')}\n  `;
 }
