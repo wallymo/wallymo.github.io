@@ -569,8 +569,8 @@
   },
   "qa": {
     "status": "qa-passed",
-    "builtAt": "2026-09-30T01:20:45.085Z",
-    "configInputSha256": "62b6ff9aa4934efeb8d232fd63911928b0a5635e1d7684830cdefb9ba9ccb7cf",
+    "builtAt": "2026-09-30T01:49:20.596Z",
+    "configInputSha256": "dad8180bb5377dc870c05a7726811f73749a40251980cdafea3d8828714eeb53",
     "sourceResumeSha256": "309a2ea377c45481d6826da8559d707319f85f53e6d68b3e10a537d1864e91e7",
     "resumeFoundation": {
       "id": "wally-mostafa-resume-2026-07-03",
@@ -591,9 +591,9 @@
       "registrySha256": "195e963f009e9bfe386d24efec5ee697ea866b936cd6634203a6b653ab403bae"
     },
     "artifactHashes": {
-      "routeSha256": "1838f58ebc2272c012d753eb8b6a8c21c30a1bdba33a1f6873aa5bb451b35363",
+      "routeSha256": "178082506aa6573c9444587e06025f09bd7eca7df3dee3474553a4bb1b3a8900",
       "designConceptCssSha256": "73052eae58d446422f0ff921361877b1ca4e0062ec7ee25daace39b4a4791195",
-      "resumePdfSha256": "0082587f29f50da5f4b1637096820d853fb1973f9866af44ac56652d87e59e30",
+      "resumePdfSha256": "94cd5d0c331425a06bf52678c76f89f698183098dc4e8871c66d46ef78717780",
       "coverLetterPdfSha256": null,
       "coverLetterMarkdownSha256": null,
       "scopedProjectSha256": {
@@ -761,7 +761,7 @@
       "status": "passed",
       "version": "2.2.0",
       "mode": "surface-only",
-      "reviewedAt": "2026-09-30T01:20:18.933Z",
+      "reviewedAt": "2026-09-30T01:48:55.554Z",
       "copySha256": "263370f88f3be26a9a930f177a99221fdf3716566443c7a4afb2bf1027aa13ed",
       "reviewMethod": "humanizer-skill",
       "semanticPassAttested": true,
@@ -829,7 +829,7 @@
     "humanizerVersion": "2.2.0",
     "mode": "surface-only",
     "status": "passed",
-    "reviewedAt": "2026-09-30T01:20:18.933Z",
+    "reviewedAt": "2026-09-30T01:48:55.554Z",
     "copySha256": "263370f88f3be26a9a930f177a99221fdf3716566443c7a4afb2bf1027aa13ed",
     "preserved": [
       "content",
@@ -848,6 +848,7 @@
     "designConcept": "proof-grid",
     "heroAnimation": "switchboard",
     "heroBoard": "general",
+    "heroAnimationChrome": "none",
     "presentation": "showcase",
     "heroIntent": "resume-support",
     "showcaseSections": [
