@@ -2566,6 +2566,13 @@ export function validateV2Config(
       );
       pushError(
         errors,
+        route.heroAnimationChrome === undefined ||
+          (route.heroAnimation === 'switchboard' &&
+            ['full', 'none'].includes(route.heroAnimationChrome)),
+        'route.heroAnimationChrome requires the switchboard hero and must be full or none'
+      );
+      pushError(
+        errors,
         route.heroIntent === undefined || route.heroIntent === 'resume-support',
         'route.heroIntent must be resume-support when present'
       );

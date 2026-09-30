@@ -825,6 +825,13 @@ test('Proof Grid snapshots both source skins and stamps route-local homepage and
     assert.deepEqual(schemaErrors(config), []);
     assert.doesNotMatch(validateV2Config(config).join('\n'), /heroAnimation|heroBoard/);
 
+    config.route.heroAnimationChrome = 'none';
+    const bareSwitchboardHtml = buildRoute(config, paths);
+    assert.match(bareSwitchboardHtml, /data-board="pharma"/);
+    assert.doesNotMatch(bareSwitchboardHtml, /hero-machine-pause|Fig\. — Switchboard/);
+    assert.deepEqual(schemaErrors(config), []);
+    assert.doesNotMatch(validateV2Config(config).join('\n'), /heroAnimationChrome/);
+
     const noBoard = structuredClone(config);
     delete noBoard.route.heroBoard;
     assert.match(validateV2Config(noBoard).join('\n'), /heroBoard/);
