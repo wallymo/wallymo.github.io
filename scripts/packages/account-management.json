@@ -569,8 +569,8 @@
   },
   "qa": {
     "status": "qa-passed",
-    "builtAt": "2026-09-29T23:09:46.388Z",
-    "configInputSha256": "11d747f46f9671e9fb6bb14aadc5279fc3ae7fc5a1380a943b0b28935c00b75c",
+    "builtAt": "2026-09-30T00:37:01.753Z",
+    "configInputSha256": "8bb3e261f2b05ea1b0d081760bb9ad4fa690fb4eb0a520151cd197cc028f4a6a",
     "sourceResumeSha256": "309a2ea377c45481d6826da8559d707319f85f53e6d68b3e10a537d1864e91e7",
     "resumeFoundation": {
       "id": "wally-mostafa-resume-2026-07-03",
@@ -591,16 +591,16 @@
       "registrySha256": "195e963f009e9bfe386d24efec5ee697ea866b936cd6634203a6b653ab403bae"
     },
     "artifactHashes": {
-      "routeSha256": "c5ead62bd9a5bf792fd53725a3e97f05b1044620c73de47d7489c5fd25a48392",
-      "designConceptCssSha256": "b0888b6dc13bd1e5526259a5435dd84911b2007f68715d23d600bbc14ee7c9fd",
-      "resumePdfSha256": "018e6647217c73da39b0b6bafdc9f78de012f9fe3103cd1449aefdc7f9062426",
+      "routeSha256": "3fbc02b6a078af4a7103a3a913ed61f6a43a25ed0db6a6cc6c51199137eb4b8a",
+      "designConceptCssSha256": "73052eae58d446422f0ff921361877b1ca4e0062ec7ee25daace39b4a4791195",
+      "resumePdfSha256": "2e5a39d778e99bf58eb7260d029aade6e0c59129b93e7cccc7c3766de8b3cc4c",
       "coverLetterPdfSha256": null,
       "coverLetterMarkdownSha256": null,
       "scopedProjectSha256": {
-        "project-02.html": "d2473652145448c0170113168837f03fc70d45e93f14ac6c11afe7814f7f501a",
-        "project-06.html": "8faaeeebe30fa524c0989809744e759ab26341f33fc85081c940893b4f9f17cf",
-        "project-04.html": "bce86e2514328f22566f33004cb9ab869f2ba4403a7fd998e73bae499f503ce1",
-        "project-03.html": "8c1ed50089b7feebd9a8318dfa3ebf14f69c0302836123f7169f7d1cd9395ff0"
+        "project-02.html": "48b6e9e6cf54403a1a75fa69ffdece7baf676bd21e11019f9a61522433ea9017",
+        "project-06.html": "b9cd2380ff15c12da7048c48ac9c900d3d1be821d5f6336bb87c65e6236b6680",
+        "project-04.html": "67fa89391aaa07c34e9a9e70b336f8503a3570528722fe4f6ebc2c454066c45e",
+        "project-03.html": "99299d0fa92a7ff2e1fc6a523b8f74f922ad2f7c3666d30db14b50e325dd9dc1"
       },
       "scopedProjectAssetSha256": {}
     },
@@ -620,7 +620,7 @@
       "ok": true,
       "pdfPath": "output/pdf/Wally-Mostafa-Account-Management-Resume.pdf",
       "pageCount": 2,
-      "fileSize": 90343,
+      "fileSize": 90366,
       "annotations": [
         {
           "page": 1,
@@ -632,11 +632,11 @@
         },
         {
           "page": 1,
-          "uri": "https://wallymo.github.io/account-management/"
+          "uri": "https://wally-mostafa.github.io/account-management/"
         },
         {
           "page": 2,
-          "uri": "https://wallymo.github.io/account-management/"
+          "uri": "https://wally-mostafa.github.io/account-management/"
         },
         {
           "page": 2,
@@ -761,7 +761,7 @@
       "status": "passed",
       "version": "2.2.0",
       "mode": "surface-only",
-      "reviewedAt": "2026-09-29T23:09:18.795Z",
+      "reviewedAt": "2026-09-30T00:36:38.379Z",
       "copySha256": "263370f88f3be26a9a930f177a99221fdf3716566443c7a4afb2bf1027aa13ed",
       "reviewMethod": "humanizer-skill",
       "semanticPassAttested": true,
@@ -829,7 +829,7 @@
     "humanizerVersion": "2.2.0",
     "mode": "surface-only",
     "status": "passed",
-    "reviewedAt": "2026-09-29T23:09:18.795Z",
+    "reviewedAt": "2026-09-30T00:36:38.379Z",
     "copySha256": "263370f88f3be26a9a930f177a99221fdf3716566443c7a4afb2bf1027aa13ed",
     "preserved": [
       "content",
@@ -845,7 +845,7 @@
     "remainingTells": []
   },
   "route": {
-    "designConcept": "editorial-proof",
+    "designConcept": "proof-grid",
     "presentation": "showcase",
     "heroIntent": "resume-support",
     "showcaseSections": [

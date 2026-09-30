@@ -234,7 +234,7 @@
       "resumePdfPath": "output/pdf/Wally-Mostafa-Account-Management-Resume.pdf",
       "publishStatus": "local-only",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-09-29T23:09:46.388Z",
+      "builtAt": "2026-09-30T00:37:01.753Z",
       "resumeBaseMode": "account-leadership",
       "resumeBaseLeadProfile": "account-leadership",
       "resumeBaseAction": "use-existing",
@@ -245,9 +245,9 @@
           "version": 1
         }
       ],
-      "designConcept": "editorial-proof",
-      "publicBase": "https://wallymo.github.io/",
-      "publishRepository": "wallymo/wallymo.github.io",
+      "designConcept": "proof-grid",
+      "publicBase": "https://wally-mostafa.github.io/",
+      "publishRepository": "wally-mostafa/wally-mostafa.github.io",
       "designConceptCssPath": "account-management/design-concept.css"
     },
     {
