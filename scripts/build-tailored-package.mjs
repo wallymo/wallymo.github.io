@@ -165,7 +165,7 @@ function applyRouteHeroAnimation(html, config) {
 
   const board = config.route.heroBoard;
   const stage = `<div class="hero-machine" id="machine" data-board="${board}">
-    <canvas role="img" aria-label="A client line rings, Wally answers, connects the teams the request needs, and the finished work returns to the client."></canvas>
+    <canvas role="img" aria-label="A client request comes in; I connect the teams it needs and bring the work back for review."></canvas>
     <button class="hero-machine-pause" type="button" aria-pressed="false" aria-label="Pause hero animation"><svg viewBox="0 0 10 10" aria-hidden="true"><rect x="1" y="1" width="3" height="8"/><rect x="6" y="1" width="3" height="8"/></svg><span>Pause</span></button>
     <div class="hero-machine-fig" aria-hidden="true">Fig. — Switchboard</div>
   </div>`;

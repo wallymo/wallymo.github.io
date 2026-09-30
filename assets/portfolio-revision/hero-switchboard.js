@@ -51,13 +51,13 @@
       ],
     },
     general: {
-      client: ['Client lead', 'Exec sponsor', 'End users', 'Procurement'],
-      teams: ['Product', 'Design', 'Engineering', 'Analytics', 'Support', 'Finance'],
+      client: ['Client lead', 'Brand team', 'Product team', 'Agency ops'],
+      teams: ['Strategy', 'Creative', 'UX/UI', 'Production', 'Digital', 'Finance'],
       calls: [
-        { from: 'Client lead', to: ['Product', 'Engineering'], ask: 'Can we launch before Q4?', done: 'Live before Q4.' },
-        { from: 'Exec sponsor', to: ['Analytics', 'Finance'], ask: 'What did we get for the spend?', done: 'ROI report sent.' },
-        { from: 'End users', to: ['Design', 'Engineering'], ask: 'The new dashboard is confusing.', done: 'Fixed in this release.' },
-        { from: 'Procurement', to: ['Support', 'Finance'], ask: 'Renewal terms are due Friday.', done: 'Renewal signed.' },
+        { from: 'Client lead', to: ['Strategy', 'Creative'], ask: 'The ask keeps changing.', done: 'Brief ready for review.' },
+        { from: 'Brand team', to: ['Production', 'Digital'], ask: 'How do we plan the launch?', done: 'Timeline and owners set.' },
+        { from: 'Product team', to: ['UX/UI', 'Digital'], ask: 'Users miss the next step.', done: 'Flow revised for testing.' },
+        { from: 'Agency ops', to: ['Finance', 'Production'], ask: 'The scope changed.', done: 'Scope and budget updated.' },
       ],
     },
   };
