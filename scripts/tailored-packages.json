@@ -232,9 +232,9 @@
         "project-03.html"
       ],
       "resumePdfPath": "output/pdf/Wally-Mostafa-Account-Management-Resume.pdf",
-      "publishStatus": "live-verified",
+      "publishStatus": "local-only",
       "qaStatus": "qa-passed",
-      "builtAt": "2026-09-30T00:37:01.753Z",
+      "builtAt": "2026-09-30T01:20:45.085Z",
       "resumeBaseMode": "account-leadership",
       "resumeBaseLeadProfile": "account-leadership",
       "resumeBaseAction": "use-existing",
@@ -248,39 +248,7 @@
       "designConcept": "proof-grid",
       "publicBase": "https://wally-mostafa.github.io/",
       "publishRepository": "wally-mostafa/wally-mostafa.github.io",
-      "designConceptCssPath": "account-management/design-concept.css",
-      "verification": {
-        "verifiedAt": "2026-09-30T00:42:22.799Z",
-        "routeUrl": "https://wally-mostafa.github.io/account-management/",
-        "resumePdfUrl": "https://wally-mostafa.github.io/output/pdf/Wally-Mostafa-Account-Management-Resume.pdf",
-        "configUrl": "https://wally-mostafa.github.io/scripts/packages/account-management.json",
-        "publicBase": "https://wally-mostafa.github.io/",
-        "publishRepository": "wally-mostafa/wally-mostafa.github.io",
-        "designConceptCssUrl": "https://wally-mostafa.github.io/account-management/design-concept.css",
-        "designConceptCssSha256": "73052eae58d446422f0ff921361877b1ca4e0062ec7ee25daace39b4a4791195",
-        "projectUrls": [
-          "https://wally-mostafa.github.io/account-management/project-02.html",
-          "https://wally-mostafa.github.io/account-management/project-06.html",
-          "https://wally-mostafa.github.io/account-management/project-04.html",
-          "https://wally-mostafa.github.io/account-management/project-03.html"
-        ],
-        "redirectUrls": [],
-        "configSha256": "fef8a70a170775cb5a739753c67d306ccc1a3bd748d14639e3e5b92dd3460edb",
-        "pdfSha256": "2e5a39d778e99bf58eb7260d029aade6e0c59129b93e7cccc7c3766de8b3cc4c",
-        "resumeBaseProfilesUrl": "https://wally-mostafa.github.io/scripts/resume-base-profiles.json",
-        "resumeBaseProfilesSha256": "195e963f009e9bfe386d24efec5ee697ea866b936cd6634203a6b653ab403bae",
-        "routeSha256": "3fbc02b6a078af4a7103a3a913ed61f6a43a25ed0db6a6cc6c51199137eb4b8a",
-        "scopedProjectSha256": {
-          "project-02.html": "48b6e9e6cf54403a1a75fa69ffdece7baf676bd21e11019f9a61522433ea9017",
-          "project-06.html": "b9cd2380ff15c12da7048c48ac9c900d3d1be821d5f6336bb87c65e6236b6680",
-          "project-04.html": "67fa89391aaa07c34e9a9e70b336f8503a3570528722fe4f6ebc2c454066c45e",
-          "project-03.html": "99299d0fa92a7ff2e1fc6a523b8f74f922ad2f7c3666d30db14b50e325dd9dc1"
-        },
-        "scopedProjectAssetUrls": [],
-        "scopedProjectAssetSha256": {},
-        "configInputSha256": "8bb3e261f2b05ea1b0d081760bb9ad4fa690fb4eb0a520151cd197cc028f4a6a",
-        "qaBuiltAt": "2026-09-30T00:37:01.753Z"
-      }
+      "designConceptCssPath": "account-management/design-concept.css"
     },
     {
       "workflowVersion": 2,
