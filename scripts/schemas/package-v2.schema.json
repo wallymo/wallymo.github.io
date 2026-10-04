@@ -315,6 +315,47 @@
         "portfolioCallout": {
           "type": "boolean"
         },
+        "additionalExperience": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 6,
+          "items": {
+            "type": "object",
+            "required": [
+              "id", "title", "employer", "dateRange", "beforeRoleId",
+              "bullets", "sourceBulletIds", "sourceNote"
+            ],
+            "properties": {
+              "id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+              "title": { "type": "string", "minLength": 1 },
+              "employer": { "type": "string", "minLength": 1 },
+              "location": { "type": "string", "minLength": 1 },
+              "dateRange": { "type": "string", "minLength": 1 },
+              "beforeRoleId": {
+                "enum": [
+                  "hedgehox", "one-block-away", "kinesso",
+                  "omnicom", "heartbeat", "account-management"
+                ]
+              },
+              "bullets": {
+                "type": "array",
+                "minItems": 1,
+                "items": { "type": "string", "minLength": 1 }
+              },
+              "sourceBulletIds": {
+                "type": "array",
+                "minItems": 1,
+                "uniqueItems": true,
+                "items": {
+                  "type": "string",
+                  "pattern": "^addition:[a-z0-9]+(?:-[a-z0-9]+)*$"
+                }
+              },
+              "sourceNote": { "type": "string", "minLength": 1 }
+            },
+            "additionalProperties": false
+          }
+        },
         "roleTitleOverrides": {
           "type": "object",
           "minProperties": 1,
@@ -820,6 +861,17 @@
     }
   },
   "allOf": [
+    {
+      "if": {
+        "required": ["resume"],
+        "properties": {
+          "resume": { "required": ["additionalExperience"] }
+        }
+      },
+      "then": {
+        "properties": { "contractRevision": { "const": 7 } }
+      }
+    },
     {
       "if": {
         "required": ["route"],

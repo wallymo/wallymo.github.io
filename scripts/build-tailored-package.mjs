@@ -25,6 +25,7 @@ import {
   getDesignConcept,
   getPackagePublicBase,
   getPackageRepository,
+  getResumeExperienceEntries,
   getResumeExperienceSections,
   getRoutePresentation,
   getShowcaseSectionIds,
@@ -1309,7 +1310,7 @@ export function buildRoute(config, paths) {
   );
 }
 
-function buildResume(config, paths) {
+export function buildResume(config, paths) {
   let resumeHtml = readFileSync(resolveRepoPath('resume.html'), 'utf8');
   const foundation = readResumeFoundation();
   const summary =
@@ -1420,8 +1421,6 @@ ${awardsMarker}`
   .selected-work-link { margin: 0; font-size: 9pt; line-height: 1.3; }
   .selected-work-link a { color: var(--ink); text-decoration: underline; text-underline-offset: 2px; }
   @media print {
-    section[data-resume-section="experience-2"] .job { margin-bottom: 0.65rem; }
-    section[data-resume-section="experience-2"] .job-desc li { line-height: 1.4; margin-bottom: 0.14rem; }
     section[data-resume-section="selected-work"] { margin-bottom: 0.65rem; }
   }
 </style>
@@ -1620,7 +1619,13 @@ function replaceResumeExperienceSections(resumeHtml, config, foundation) {
       }>
   <div class="section-title">${escapeHtml(section.heading)}</div>
 
-${section.roleIds.map((roleId) => jobBlocks.get(roleId)).join('\n\n')}
+${getResumeExperienceEntries(config, section)
+  .map(({ roleId, additionalExperience }) =>
+    additionalExperience
+      ? renderSubEntryJob(additionalExperience)
+      : jobBlocks.get(roleId)
+  )
+  .join('\n\n')}
 </section>`
     )
     .join('\n\n');

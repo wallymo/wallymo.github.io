@@ -233,6 +233,21 @@ export function getResumeExperienceSections(config) {
     : DEFAULT_RESUME_EXPERIENCE_SECTIONS;
 }
 
+export function getResumeExperienceEntries(config, section = null) {
+  const additions = Array.isArray(config?.resume?.additionalExperience)
+    ? config.resume.additionalExperience
+    : [];
+  const sections = section ? [section] : getResumeExperienceSections(config);
+  return sections.flatMap(({ roleIds }) =>
+    roleIds.flatMap((roleId) => [
+      ...additions
+        .filter((entry) => entry?.beforeRoleId === roleId)
+        .map((entry) => ({ roleId: entry.id, additionalExperience: entry })),
+      { roleId, additionalExperience: null },
+    ])
+  );
+}
+
 export function getRoutePresentation(config) {
   if (config?.route?.presentation) {
     return config.route.presentation;
@@ -542,6 +557,15 @@ export function humanizerCopyEntries(config) {
     } else {
       addArray(`resume.roles.${roleId}`, config?.resume?.roles?.[roleId]);
     }
+  }
+  const additionalExperience = Array.isArray(config?.resume?.additionalExperience)
+    ? config.resume.additionalExperience
+    : [];
+  for (const [index, entry] of additionalExperience.entries()) {
+    for (const field of ['title', 'employer', 'location', 'dateRange', 'sourceNote']) {
+      add(`resume.additionalExperience[${index}].${field}`, entry?.[field]);
+    }
+    addArray(`resume.additionalExperience[${index}].bullets`, entry?.bullets);
   }
 
   add('hero.eyebrow', config?.hero?.eyebrow);
@@ -1071,9 +1095,14 @@ function validateResumeBaseGate(
 
 function mappedResumeIds(resume) {
   return new Set(
-    RESUME_ROLE_IDS.flatMap(
-      (roleId) => resume?.sourceBulletIds?.[roleId] || []
-    )
+    [
+      ...RESUME_ROLE_IDS.flatMap(
+        (roleId) => resume?.sourceBulletIds?.[roleId] || []
+      ),
+      ...(Array.isArray(resume?.additionalExperience)
+        ? resume.additionalExperience.flatMap((entry) => entry?.sourceBulletIds || [])
+        : []),
+    ]
   );
 }
 
@@ -1325,6 +1354,69 @@ function validateResume(
           `resume.roleTitleOverrides.${roleId} must be a non-empty string`
         );
       }
+    }
+  }
+  if (resume.additionalExperience !== undefined) {
+    const additions = resume.additionalExperience;
+    pushError(
+      errors,
+      config.contractRevision === 7,
+      'resume.additionalExperience is available only for revision 7'
+    );
+    pushError(
+      errors,
+      Array.isArray(additions) && additions.length >= 1 && additions.length <= 6,
+      'resume.additionalExperience must include 1 to 6 entries when present'
+    );
+    if (Array.isArray(additions)) {
+      const ids = [];
+      for (const [index, entry] of additions.entries()) {
+        const prefix = `resume.additionalExperience[${index}]`;
+        pushError(
+          errors,
+          entry !== null && typeof entry === 'object' && !Array.isArray(entry),
+          `${prefix} must be an object`
+        );
+        ids.push(entry?.id);
+        pushError(
+          errors,
+          isNonEmptyString(entry?.id) &&
+            /^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(entry.id) &&
+            !RESUME_ROLE_IDS.includes(entry?.id),
+          `${prefix}.id must be a unique new role ID`
+        );
+        for (const field of ['title', 'employer', 'dateRange', 'sourceNote']) {
+          pushError(errors, isNonEmptyString(entry?.[field]), `${prefix}.${field} is required`);
+        }
+        pushError(
+          errors,
+          entry?.location === undefined || isNonEmptyString(entry.location),
+          `${prefix}.location must be a non-empty string when present`
+        );
+        pushError(
+          errors,
+          RESUME_ROLE_IDS.includes(entry?.beforeRoleId),
+          `${prefix}.beforeRoleId must name an existing foundation role`
+        );
+        pushError(
+          errors,
+          Array.isArray(entry?.bullets) && entry.bullets.length > 0 && entry.bullets.every(isNonEmptyString),
+          `${prefix}.bullets must be a non-empty string array`
+        );
+        pushError(
+          errors,
+          Array.isArray(entry?.sourceBulletIds) &&
+            entry.sourceBulletIds.length === entry?.bullets?.length &&
+            entry.sourceBulletIds.every((sourceId) => /^addition:[a-z0-9]+(?:-[a-z0-9]+)*$/.test(sourceId)),
+          `${prefix}.sourceBulletIds must map every bullet to an addition source ID`
+        );
+        pushError(
+          errors,
+          !/(?:file:\/\/|\/Users\/|\/home\/|[A-Z]:[\\/])/i.test(entry?.sourceNote || ''),
+          `${prefix}.sourceNote must use sanitized public evidence without local document paths`
+        );
+      }
+      pushError(errors, new Set(ids).size === ids.length, 'resume.additionalExperience IDs must be unique');
     }
   }
   for (const roleId of RESUME_ROLE_IDS) {
@@ -1745,6 +1837,17 @@ function validateResume(
             : `hybrid-selective resumes must retain at least one foundation bullet under ${roleId}`
         : `resume.roles.${roleId} must retain every foundation bullet for version ${requestedFoundationVersion} exactly once within its original job; within-job reordering and additions are allowed`
     );
+  }
+  if (Array.isArray(resume.additionalExperience)) {
+    for (const [index, entry] of resume.additionalExperience.entries()) {
+      const sourceIds = Array.isArray(entry?.sourceBulletIds) ? entry.sourceBulletIds : [];
+      allMappedBulletIds.push(...sourceIds);
+      pushError(
+        errors,
+        sourceIds.every((sourceId) => !evidenceIdToRole.has(sourceId)),
+        `resume.additionalExperience[${index}].sourceBulletIds must not reuse foundation or profile evidence`
+      );
+    }
   }
   pushError(
     errors,
@@ -3305,6 +3408,15 @@ export function recruiterFacingClaimViolations(config, additionalCopy = []) {
               ),
             ];
           }),
+          ...(Array.isArray(config.resume.additionalExperience) ? config.resume.additionalExperience : []).flatMap((entry, index) => [
+            ...['title', 'employer', 'location', 'dateRange', 'sourceNote']
+              .filter((field) => typeof entry?.[field] === 'string')
+              .map((field) => [`resume.additionalExperience[${index}].${field}`, entry[field]]),
+            ...(entry?.bullets || []).map((bullet, bulletIndex) => [
+              `resume.additionalExperience[${index}].bullets[${bulletIndex}]`,
+              bullet,
+            ]),
+          ]),
         ]
       : []),
     ...(hasCoverLetterArtifact(config)

@@ -9,7 +9,7 @@ import {
   ensureRegularFile,
   getDesignConceptPublicBases,
   getPackagePublicBase,
-  getResumeExperienceSections,
+  getResumeExperienceEntries,
   isMain,
   normalizeText,
   readJson,
@@ -108,6 +108,66 @@ function buildCoverage(config, extractedText) {
       missingTerms,
     };
   });
+}
+
+export function resumeExperienceAnchorFailures(config, foundation, extractedText) {
+  const failures = [];
+  const normalizedResume = normalizeText(extractedText);
+  const experienceEntries = getResumeExperienceEntries(config);
+  let anchorCursor = 0;
+  for (const { roleId, additionalExperience } of experienceEntries) {
+    const subEntries = additionalExperience
+      ? [additionalExperience]
+      : resumeRoleSubEntries(config.resume, roleId);
+    const header = foundation.roleHeaders[roleId];
+    const headerAnchors = subEntries
+      ? subEntries.flatMap((subEntry) => [
+          ['title', subEntry.title],
+          ['employer', subEntry.employer],
+          ...(additionalExperience && subEntry.location ? [['location', subEntry.location]] : []),
+          ['date range', subEntry.dateRange],
+        ])
+      : [
+          ['title', config.resume.roleTitleOverrides?.[roleId] || header.title],
+          ['employer', header.employer],
+          ['date range', header.dateRange],
+        ];
+    for (const [label, value] of headerAnchors) {
+      const normalizedAnchor = normalizeText(value);
+      const anchorIndex = normalizedResume.indexOf(normalizedAnchor, anchorCursor);
+      if (anchorIndex === -1) {
+        failures.push(`Resume ${label} anchor is missing or out of chronological order for ${roleId}: ${value}`);
+      } else {
+        anchorCursor = anchorIndex + normalizedAnchor.length;
+      }
+    }
+  }
+  for (const anchor of foundation.educationAnchors || []) {
+    const normalizedAnchor = normalizeText(anchor);
+    const anchorIndex = normalizedResume.indexOf(normalizedAnchor, anchorCursor);
+    if (anchorIndex === -1) {
+      failures.push(`Education anchor is missing or out of order: ${anchor}`);
+    } else {
+      anchorCursor = anchorIndex + normalizedAnchor.length;
+    }
+  }
+
+  let bulletCursor = 0;
+  for (const { roleId, additionalExperience } of experienceEntries) {
+    const sourceIds = additionalExperience?.sourceBulletIds || config.resume.sourceBulletIds[roleId] || [];
+    const tailoredBullets = additionalExperience?.bullets || resumeRoleBulletTexts(config.resume, roleId);
+    for (const [bulletIndex, tailoredBullet] of tailoredBullets.entries()) {
+      const sourceId = sourceIds[bulletIndex] || `unmapped:${roleId}:${bulletIndex}`;
+      const normalizedBullet = normalizeText(tailoredBullet);
+      const occurrenceIndex = normalizedResume.indexOf(normalizedBullet, bulletCursor);
+      if (!normalizedBullet || occurrenceIndex === -1) {
+        failures.push(`Mapped resume bullet is missing or out of order in the PDF: ${sourceId}`);
+      } else {
+        bulletCursor = occurrenceIndex + normalizedBullet.length;
+      }
+    }
+  }
+  return failures;
 }
 
 export function runAtsCheck({ configPath, pdfPath }) {
@@ -247,77 +307,7 @@ export function runAtsCheck({ configPath, pdfPath }) {
   const normalizedResume = normalizeText(extractedText);
   if (usesFlexiblePositioningContract(config)) {
     const foundation = readResumeFoundation();
-    const experienceRoleIds = getResumeExperienceSections(config).flatMap(
-      (section) => section.roleIds
-    );
-    let anchorCursor = 0;
-    for (const roleId of experienceRoleIds) {
-      const subEntries = resumeRoleSubEntries(config.resume, roleId);
-      const header = foundation.roleHeaders[roleId];
-      const headerAnchors = subEntries
-        ? subEntries.flatMap((subEntry) => [
-            ['title', subEntry.title],
-            ['employer', subEntry.employer],
-            ['date range', subEntry.dateRange],
-          ])
-        : [
-            [
-              'title',
-              config.resume.roleTitleOverrides?.[roleId] || header.title,
-            ],
-            ['employer', header.employer],
-            ['date range', header.dateRange],
-          ];
-      for (const [label, value] of headerAnchors) {
-        const normalizedAnchor = normalizeText(value);
-        const anchorIndex = normalizedResume.indexOf(
-          normalizedAnchor,
-          anchorCursor
-        );
-        if (anchorIndex === -1) {
-          failures.push(
-            `Resume ${label} anchor is missing or out of chronological order for ${roleId}: ${value}`
-          );
-        } else {
-          anchorCursor = anchorIndex + normalizedAnchor.length;
-        }
-      }
-    }
-    for (const anchor of foundation.educationAnchors || []) {
-      const normalizedAnchor = normalizeText(anchor);
-      const anchorIndex = normalizedResume.indexOf(
-        normalizedAnchor,
-        anchorCursor
-      );
-      if (anchorIndex === -1) {
-        failures.push(
-          `Education anchor is missing or out of order: ${anchor}`
-        );
-      } else {
-        anchorCursor = anchorIndex + normalizedAnchor.length;
-      }
-    }
-
-    let bulletCursor = 0;
-    for (const roleId of experienceRoleIds) {
-      const sourceIds = config.resume.sourceBulletIds[roleId] || [];
-      const tailoredBullets = resumeRoleBulletTexts(config.resume, roleId);
-      for (const [bulletIndex, tailoredBullet] of tailoredBullets.entries()) {
-        const sourceId = sourceIds[bulletIndex] || `unmapped:${roleId}:${bulletIndex}`;
-        const normalizedBullet = normalizeText(tailoredBullet);
-        const occurrenceIndex = normalizedResume.indexOf(
-          normalizedBullet,
-          bulletCursor
-        );
-        if (!normalizedBullet || occurrenceIndex === -1) {
-          failures.push(
-            `Mapped resume bullet is missing or out of order in the PDF: ${sourceId}`
-          );
-        } else {
-          bulletCursor = occurrenceIndex + normalizedBullet.length;
-        }
-      }
-    }
+    failures.push(...resumeExperienceAnchorFailures(config, foundation, extractedText));
   }
   for (const prohibitedPhrase of [
     ...config.constraints.doNotClaim,

@@ -70,6 +70,10 @@ An explicit failed hard gate may remain in a user-approved `stretch` package. Th
 
 The PDF preflight confirms that the tailored summary and selected skills extract on page one; every employer, full title, date range, education anchor, and mapped bullet extracts in order; the file is two pages or less and under 2.5 MB; contact data and annotations are correct; and no unsupported claim appears. It also rejects Type 3 font embeddings because Adobe Acrobat on Windows can omit those glyphs even when browser and macOS previews look correct. Exact phrase coverage remains advisory and records exact, recognized-equivalent, or contextual matches.
 
+Revision 7 can add a newly confirmed role without changing the foundation or making older packages require it. Use optional `resume.additionalExperience` entries with `id`, `title`, `employer`, optional `location`, `dateRange`, `beforeRoleId`, `bullets`, `sourceBulletIds`, and `sourceNote`. `beforeRoleId` places the entry immediately before that foundation role in its existing experience section; entries targeting the same role follow their array order. Existing foundation roles and retention rules still apply. Every new bullet needs its own globally unique `addition:<slug>` source ID; foundation and profile evidence cannot be reused for an additional role.
+
+`sourceNote` records a short, sanitized description of the user-confirmed evidence. It is public config data: omit private document paths, compensation, contract clauses, and contact details. All additional header fields, bullets, and the source note go through the humanizer and claim gates. PDF preflight checks their headers and full bullet text in the same rendered order as the foundation roles. Use current responsibilities for work already started; planned deliverables are not completed outcomes. Compact density applies consistently to every experience section, including resumes with the selected-work link.
+
 ## Publish and verify
 
 Commit the built package in the workflow source repository. When the manifest's `publishRepository` is a separate checkout, stage the verifier-required public files into that checkout:
