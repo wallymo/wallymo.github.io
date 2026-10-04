@@ -165,6 +165,7 @@ function applyRouteHeroAnimation(html, config) {
   if (config.route?.heroAnimation !== 'switchboard') return html;
 
   const routeClass = config.slug === 'account-management' ? ' account-management-route' : '';
+  const stylesheetVersion = sha256File('assets/portfolio-revision/hero-switchboard-route.css').slice(0, 12);
   const board = config.route.heroBoard;
   const chrome = config.route.heroAnimationChrome === 'none' ? '' : `
     <button class="hero-machine-pause" type="button" aria-pressed="false" aria-label="Pause hero animation"><svg viewBox="0 0 10 10" aria-hidden="true"><rect x="1" y="1" width="3" height="8"/><rect x="6" y="1" width="3" height="8"/></svg><span>Pause</span></button>
@@ -191,7 +192,7 @@ function applyRouteHeroAnimation(html, config) {
   html = replaceFirst(
     html,
     /(<link rel="stylesheet" href="design-concept\.css" data-design-concept-stylesheet>)/,
-    '$1\n  <link rel="stylesheet" href="../assets/portfolio-revision/hero-switchboard-route.css">',
+    `$1\n  <link rel="stylesheet" href="../assets/portfolio-revision/hero-switchboard-route.css?v=${stylesheetVersion}">`,
     'switchboard stylesheet'
   );
   html = replaceFirst(
