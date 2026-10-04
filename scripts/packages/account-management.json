@@ -333,14 +333,14 @@
         "dateRange": "Oct 2026 – Present",
         "beforeRoleId": "hedgehox",
         "bullets": [
-          "Manage product priorities, requirements, UX recommendations, and testing for Fingerpaint's SOW Builder with IT, product, and engineering teams",
-          "Define and prototype a project scoping and briefing tool, including decision logic, business rules, acceptance criteria, user testing, and handoff"
+          "Manage the SOW Builder backlog and stakeholder feedback; prioritize usability improvements for account and project managers with Fingerpaint's operations and engineering teams",
+          "Define and prototype a scoping and briefing tool for medical operations, with business rules, product requirements, acceptance criteria, testing, and engineering handoff"
         ],
         "sourceBulletIds": [
           "addition:pragmatic-fingerpaint-sow-builder",
           "addition:pragmatic-fingerpaint-scope-brief-prototype"
         ],
-        "sourceNote": "User confirmed on October 4, 2026 that the engagement began October 1, 2026 and requested the title Freelance Product Manager. The work order establishes a contract through Pragmatic Digital for Fingerpaint Group, with assigned product management responsibilities for SOW Builder improvements and a project scoping and briefing prototype. These bullets describe current responsibilities; no completed launch or measured outcome is claimed."
+        "sourceNote": "User confirmed on October 4, 2026 that the engagement began October 1, 2026 and requested the title Freelance Product Manager. The work order assigns SOW Builder optimization and a scoping and briefing prototype through Pragmatic Digital for Fingerpaint Group. The kickoff call assigns Wally product management for both workflows at 11:39:19, requests backlog ownership and stakeholder feedback at 11:44:27, identifies account and project managers as SOW users at 12:03:22, and establishes medical operations as the prototype audience at 11:56:38. Wally raises engineering handoff expectations at 11:42:17 and usability testing at 11:44:53. These bullets describe current responsibilities; no completed launch or measured outcome is claimed."
       }
     ],
     "experienceSections": [
@@ -587,8 +587,8 @@
   },
   "qa": {
     "status": "qa-passed",
-    "builtAt": "2026-10-04T21:19:33.779Z",
-    "configInputSha256": "32ab28632f735c86a067aa4d77c2b4862049135200d0001ce579a3a95fc78f10",
+    "builtAt": "2026-10-04T21:25:20.343Z",
+    "configInputSha256": "382a16733c127fcb25eaafb0ea613ea1120bc274571b6cf1921384ae8b2ecd29",
     "sourceResumeSha256": "309a2ea377c45481d6826da8559d707319f85f53e6d68b3e10a537d1864e91e7",
     "resumeFoundation": {
       "id": "wally-mostafa-resume-2026-07-03",
@@ -611,7 +611,7 @@
     "artifactHashes": {
       "routeSha256": "178082506aa6573c9444587e06025f09bd7eca7df3dee3474553a4bb1b3a8900",
       "designConceptCssSha256": "73052eae58d446422f0ff921361877b1ca4e0062ec7ee25daace39b4a4791195",
-      "resumePdfSha256": "f6cd778077e97af8785e1fdf616ca5708bdd94c4f4d5106bfe90b89eeaee4bb7",
+      "resumePdfSha256": "d91e4bcdda1dce0b827515386d4f272057defa6164909e0f9dbb4e257ed00ed2",
       "coverLetterPdfSha256": null,
       "coverLetterMarkdownSha256": null,
       "scopedProjectSha256": {
@@ -638,7 +638,7 @@
       "ok": true,
       "pdfPath": "output/pdf/Wally-Mostafa-Account-Management-Resume.pdf",
       "pageCount": 2,
-      "fileSize": 92971,
+      "fileSize": 93080,
       "annotations": [
         {
           "page": 1,
@@ -779,8 +779,8 @@
       "status": "passed",
       "version": "2.2.0",
       "mode": "surface-only",
-      "reviewedAt": "2026-10-04T21:18:10.151Z",
-      "copySha256": "90f075e7e693ead64213f6d5e52e3e3350e3b483cd1bb7602fc2f5e7284650d5",
+      "reviewedAt": "2026-10-04T21:24:50.236Z",
+      "copySha256": "02bbc5fabaeaae75cdf04b26d3a16db9d88a1e21dabfc1808af7ff52047545cf",
       "reviewMethod": "humanizer-skill",
       "semanticPassAttested": true,
       "staticChecksPassed": true
@@ -847,8 +847,8 @@
     "humanizerVersion": "2.2.0",
     "mode": "surface-only",
     "status": "passed",
-    "reviewedAt": "2026-10-04T21:18:10.151Z",
-    "copySha256": "90f075e7e693ead64213f6d5e52e3e3350e3b483cd1bb7602fc2f5e7284650d5",
+    "reviewedAt": "2026-10-04T21:24:50.236Z",
+    "copySha256": "02bbc5fabaeaae75cdf04b26d3a16db9d88a1e21dabfc1808af7ff52047545cf",
     "preserved": [
       "content",
       "structure",
