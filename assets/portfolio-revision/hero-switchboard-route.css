@@ -24,6 +24,23 @@
   gap: var(--space-m) var(--space-l);
 }
 
+.account-management-route .hero-switchboard-layout .hero-copy {
+  container-type: inline-size;
+}
+
+.account-management-route .hero-switchboard-layout .hero-tagline {
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: clamp(0.25rem, 1.5cqw, 0.625rem);
+}
+
+.account-management-route .hero-switchboard-layout .hero-tagline span {
+  flex: 0 0 auto;
+  padding-left: clamp(0.25rem, 1.3cqw, 0.5rem);
+  font-size: clamp(0.5rem, 3cqw, 0.95rem);
+  white-space: nowrap;
+}
+
 .hero-switchboard-layout .hero-intro {
   max-width: 50ch;
 }

@@ -164,6 +164,7 @@ function replaceFirst(html, pattern, replacement, label) {
 function applyRouteHeroAnimation(html, config) {
   if (config.route?.heroAnimation !== 'switchboard') return html;
 
+  const routeClass = config.slug === 'account-management' ? ' account-management-route' : '';
   const board = config.route.heroBoard;
   const chrome = config.route.heroAnimationChrome === 'none' ? '' : `
     <button class="hero-machine-pause" type="button" aria-pressed="false" aria-label="Pause hero animation"><svg viewBox="0 0 10 10" aria-hidden="true"><rect x="1" y="1" width="3" height="8"/><rect x="6" y="1" width="3" height="8"/></svg><span>Pause</span></button>
@@ -184,7 +185,7 @@ function applyRouteHeroAnimation(html, config) {
   html = replaceFirst(
     html,
     /(<html\b[^>]*class=")([^"]*)(")/i,
-    (_match, before, classes, after) => `${before}${classes} switchboard-route${after}`,
+    (_match, before, classes, after) => `${before}${classes} switchboard-route${routeClass}${after}`,
     'switchboard route class'
   );
   html = replaceFirst(
