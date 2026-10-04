@@ -232,7 +232,7 @@
         "project-03.html"
       ],
       "resumePdfPath": "output/pdf/Wally-Mostafa-Account-Management-Resume.pdf",
-      "publishStatus": "local-only",
+      "publishStatus": "live-verified",
       "qaStatus": "qa-passed",
       "builtAt": "2026-10-04T21:42:48.203Z",
       "resumeBaseMode": "account-leadership",
@@ -248,7 +248,39 @@
       "designConcept": "proof-grid",
       "publicBase": "https://wally-mostafa.github.io/",
       "publishRepository": "wally-mostafa/wally-mostafa.github.io",
-      "designConceptCssPath": "account-management/design-concept.css"
+      "designConceptCssPath": "account-management/design-concept.css",
+      "verification": {
+        "verifiedAt": "2026-10-04T21:43:48.205Z",
+        "routeUrl": "https://wally-mostafa.github.io/account-management/",
+        "resumePdfUrl": "https://wally-mostafa.github.io/output/pdf/Wally-Mostafa-Account-Management-Resume.pdf",
+        "configUrl": "https://wally-mostafa.github.io/scripts/packages/account-management.json",
+        "publicBase": "https://wally-mostafa.github.io/",
+        "publishRepository": "wally-mostafa/wally-mostafa.github.io",
+        "designConceptCssUrl": "https://wally-mostafa.github.io/account-management/design-concept.css",
+        "designConceptCssSha256": "73052eae58d446422f0ff921361877b1ca4e0062ec7ee25daace39b4a4791195",
+        "projectUrls": [
+          "https://wally-mostafa.github.io/account-management/project-02.html",
+          "https://wally-mostafa.github.io/account-management/project-06.html",
+          "https://wally-mostafa.github.io/account-management/project-04.html",
+          "https://wally-mostafa.github.io/account-management/project-03.html"
+        ],
+        "redirectUrls": [],
+        "configSha256": "d65a38401587c9f5788d71c8c5db73e51f7e86274ed126115deb0a2b8df8d3ab",
+        "pdfSha256": "b2a2568c78f0b3e747018eea3f43702b855819dca6df2b04bc38e654d4b028cc",
+        "resumeBaseProfilesUrl": "https://wally-mostafa.github.io/scripts/resume-base-profiles.json",
+        "resumeBaseProfilesSha256": "195e963f009e9bfe386d24efec5ee697ea866b936cd6634203a6b653ab403bae",
+        "routeSha256": "178082506aa6573c9444587e06025f09bd7eca7df3dee3474553a4bb1b3a8900",
+        "scopedProjectSha256": {
+          "project-02.html": "48b6e9e6cf54403a1a75fa69ffdece7baf676bd21e11019f9a61522433ea9017",
+          "project-06.html": "b9cd2380ff15c12da7048c48ac9c900d3d1be821d5f6336bb87c65e6236b6680",
+          "project-04.html": "67fa89391aaa07c34e9a9e70b336f8503a3570528722fe4f6ebc2c454066c45e",
+          "project-03.html": "99299d0fa92a7ff2e1fc6a523b8f74f922ad2f7c3666d30db14b50e325dd9dc1"
+        },
+        "scopedProjectAssetUrls": [],
+        "scopedProjectAssetSha256": {},
+        "configInputSha256": "fe13444f1410032dec7d22d305538b0401da7aacd803164d89a829e0d5f421a8",
+        "qaBuiltAt": "2026-10-04T21:42:48.203Z"
+      }
     },
     {
       "workflowVersion": 2,
