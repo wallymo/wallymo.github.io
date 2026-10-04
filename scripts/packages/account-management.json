@@ -155,11 +155,11 @@
       "confidence": "contextual",
       "evidenceStatus": "direct",
       "evidence": [
-        "Current client work turns unclear business questions into working POCs, demo flows, and roadmap decisions.",
+        "Current client work spans product strategy, demos, client iteration, and working prototypes.",
         "Earlier account and later enterprise-product work used campaign metrics, research, benchmarks, and recommendations to guide decisions."
       ],
       "proofIds": [
-        "one-block-away-01",
+        "one-block-away-04",
         "addition:cdm-lipitor-zoloft-digital",
         "kinesso-03"
       ],
@@ -170,8 +170,8 @@
         "portfolio"
       ],
       "resumeTerms": [
-        "client-led AI POCs",
-        "roadmap decisions",
+        "working prototype",
+        "client iteration",
         "benchmarks"
       ],
       "matchMode": "recognized-equivalent"
@@ -283,7 +283,7 @@
     "proofIds": [
       "account-management-01",
       "addition:fcb-nuvigil-client-operations",
-      "one-block-away-01"
+      "one-block-away-04"
     ],
     "remainingGap": null
   },
@@ -294,7 +294,7 @@
       "authorizedBy": "user",
       "authorizedAt": "2026-10-04",
       "scope": "General cross-industry Account Management networking resume.",
-      "reason": "The user requested a general account-management resume that preserves the verified eight-year progression and recent UX and AI work. On October 4, 2026, the user requested the addition of the current Fingerpaint Group engagement through Pragmatic Digital and confirmed the title Freelance Product Manager and an October 1 start."
+      "reason": "The user requested a general account-management resume that preserves the verified eight-year progression and recent UX and AI work. On October 4, 2026, the user requested the addition of the current Fingerpaint Group engagement through Pragmatic Digital and confirmed the title Freelance Product Manager and an October 1 start. The user then requested a separate Fingerpaint AI ecosystem planning bullet and explicitly authorized removing either the first or last One Block Away bullet for space. The first, general POC bullet was removed; the concrete project examples and full product ownership bullet are retained."
     },
     "layoutDensity": "compact",
     "roleEmployerLinks": {
@@ -334,11 +334,13 @@
         "beforeRoleId": "hedgehox",
         "bullets": [
           "Manage the SOW Builder backlog and stakeholder feedback; prioritize usability improvements for account and project managers with Fingerpaint's operations and engineering teams",
-          "Prototype medical operations scoping and briefing workflows, with business rules, requirements, acceptance criteria, testing, and handoff; collaborate on AI product ecosystem plans, roadmaps, and workshops for C-suite stakeholders"
+          "Prototype medical operations scoping and briefing workflows, with business rules, requirements, acceptance criteria, testing, and handoff",
+          "Collaborate on AI product ecosystem plans, roadmaps, and workshops for C-suite stakeholders"
         ],
         "sourceBulletIds": [
           "addition:pragmatic-fingerpaint-sow-builder",
-          "addition:pragmatic-fingerpaint-scope-brief-prototype"
+          "addition:pragmatic-fingerpaint-scope-brief-prototype",
+          "addition:pragmatic-fingerpaint-ai-ecosystem-planning"
         ],
         "sourceNote": "User confirmed on October 4, 2026 that the engagement began October 1, 2026 and requested the title Freelance Product Manager. The work order assigns SOW Builder optimization and a scoping and briefing prototype through Pragmatic Digital for Fingerpaint Group. The kickoff call assigns Wally product management for both workflows at 11:39:19, requests backlog ownership and stakeholder feedback at 11:44:27, identifies account and project managers as SOW users at 12:03:22, and establishes medical operations as the prototype audience at 11:56:38. Wally raises engineering handoff expectations at 11:42:17 and usability testing at 11:44:53. The user also confirmed support for planning, roadmap collaboration, and workshops on a future AI product ecosystem for C-suite stakeholders, and requested a generic description. The final bullet describes a collaborative planning role; it does not claim ownership of the broader strategy, direct participation by executives in every workshop, or a completed platform. No internal initiative name or detailed client strategy is included. These bullets describe current responsibilities; no completed launch or measured outcome is claimed."
       }
@@ -397,7 +399,6 @@
         "Developed FDA Warning Tool concepts linking warning-letter patterns to pharma content risks"
       ],
       "one-block-away": [
-        "Build client-led AI POCs that turn unclear business questions into testable product surfaces, demo flows, and roadmap decisions",
         "Built ListingPal's AI listing-generation POC and landing page, turning basic property inputs into listing copy, social posts, ad copy, styling direction, and MLS/SEO-ready language in under 90 seconds",
         "Built WeReady's Bailey Intelligence dashboard, translating founder inputs, GitHub signals, source health, risk scoring, and evidence trails into startup-readiness workflows",
         "Own product strategy, UX, AI workflow design, front-end build, backend logic, demo readiness, and client iteration from first ask through working prototype"
@@ -498,7 +499,6 @@
         "hedgehox-06"
       ],
       "one-block-away": [
-        "one-block-away-01",
         "one-block-away-02",
         "one-block-away-03",
         "one-block-away-04"
@@ -587,8 +587,8 @@
   },
   "qa": {
     "status": "qa-passed",
-    "builtAt": "2026-10-04T21:42:48.203Z",
-    "configInputSha256": "fe13444f1410032dec7d22d305538b0401da7aacd803164d89a829e0d5f421a8",
+    "builtAt": "2026-10-04T21:47:49.666Z",
+    "configInputSha256": "cd8839153d343c1d95d7c0a9db8a2937f7585bbd3b8b9f7c4bf709a76134695f",
     "sourceResumeSha256": "309a2ea377c45481d6826da8559d707319f85f53e6d68b3e10a537d1864e91e7",
     "resumeFoundation": {
       "id": "wally-mostafa-resume-2026-07-03",
@@ -611,7 +611,7 @@
     "artifactHashes": {
       "routeSha256": "178082506aa6573c9444587e06025f09bd7eca7df3dee3474553a4bb1b3a8900",
       "designConceptCssSha256": "73052eae58d446422f0ff921361877b1ca4e0062ec7ee25daace39b4a4791195",
-      "resumePdfSha256": "b2a2568c78f0b3e747018eea3f43702b855819dca6df2b04bc38e654d4b028cc",
+      "resumePdfSha256": "faac06605e64a17e4b0259b5338205784b7d0278046b5860c29bbd63a8ebb80b",
       "coverLetterPdfSha256": null,
       "coverLetterMarkdownSha256": null,
       "scopedProjectSha256": {
@@ -638,7 +638,7 @@
       "ok": true,
       "pdfPath": "output/pdf/Wally-Mostafa-Account-Management-Resume.pdf",
       "pageCount": 2,
-      "fileSize": 93217,
+      "fileSize": 92988,
       "annotations": [
         {
           "page": 1,
@@ -736,8 +736,8 @@
           "matchMode": "recognized-equivalent",
           "status": "covered-directly",
           "matchedTerms": [
-            "client-led AI POCs",
-            "roadmap decisions",
+            "working prototype",
+            "client iteration",
             "benchmarks"
           ],
           "missingTerms": []
@@ -779,8 +779,8 @@
       "status": "passed",
       "version": "2.2.0",
       "mode": "surface-only",
-      "reviewedAt": "2026-10-04T21:42:23.968Z",
-      "copySha256": "0a53dff79abd16529c2f1fca932dcb75b022679edc7f02ae2e979550eb2cc4af",
+      "reviewedAt": "2026-10-04T21:47:24.820Z",
+      "copySha256": "66c2a570b6bdbfa7450c55d51a996a937a794d087b369f9b7e99d2f74f52182b",
       "reviewMethod": "humanizer-skill",
       "semanticPassAttested": true,
       "staticChecksPassed": true
@@ -847,8 +847,8 @@
     "humanizerVersion": "2.2.0",
     "mode": "surface-only",
     "status": "passed",
-    "reviewedAt": "2026-10-04T21:42:23.968Z",
-    "copySha256": "0a53dff79abd16529c2f1fca932dcb75b022679edc7f02ae2e979550eb2cc4af",
+    "reviewedAt": "2026-10-04T21:47:24.820Z",
+    "copySha256": "66c2a570b6bdbfa7450c55d51a996a937a794d087b369f9b7e99d2f74f52182b",
     "preserved": [
       "content",
       "structure",
