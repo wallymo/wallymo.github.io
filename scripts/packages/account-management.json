@@ -292,9 +292,9 @@
     "compositionMode": "curated-user-authorized",
     "curationAuthorization": {
       "authorizedBy": "user",
-      "authorizedAt": "2026-08-03",
+      "authorizedAt": "2026-10-04",
       "scope": "General cross-industry Account Management networking resume.",
-      "reason": "The user explicitly requested a non-healthcare-centric account-management resume that preserves the verified eight-year progression and recent UX and AI work while shifting the target positioning toward transferable client leadership."
+      "reason": "The user requested a general account-management resume that preserves the verified eight-year progression and recent UX and AI work. On October 4, 2026, the user requested the addition of the current Fingerpaint Group engagement through Pragmatic Digital and confirmed the title Freelance Product Manager and an October 1 start."
     },
     "layoutDensity": "compact",
     "roleEmployerLinks": {
@@ -323,6 +323,24 @@
       {
         "label": "Tools",
         "description": "Zinc, Veeva, Smartsheet, Workfront, HubSpot, Notion, Hootsuite, ClickUp"
+      }
+    ],
+    "additionalExperience": [
+      {
+        "id": "pragmatic-digital-fingerpaint",
+        "title": "Freelance Product Manager",
+        "employer": "Pragmatic Digital | Client: Fingerpaint Group",
+        "dateRange": "Oct 2026 – Present",
+        "beforeRoleId": "hedgehox",
+        "bullets": [
+          "Manage product priorities, requirements, UX recommendations, and testing for Fingerpaint's SOW Builder with IT, product, and engineering teams",
+          "Define and prototype a project scoping and briefing tool, including decision logic, business rules, acceptance criteria, user testing, and handoff"
+        ],
+        "sourceBulletIds": [
+          "addition:pragmatic-fingerpaint-sow-builder",
+          "addition:pragmatic-fingerpaint-scope-brief-prototype"
+        ],
+        "sourceNote": "User confirmed on October 4, 2026 that the engagement began October 1, 2026 and requested the title Freelance Product Manager. The work order establishes a contract through Pragmatic Digital for Fingerpaint Group, with assigned product management responsibilities for SOW Builder improvements and a project scoping and briefing prototype. These bullets describe current responsibilities; no completed launch or measured outcome is claimed."
       }
     ],
     "experienceSections": [
@@ -565,12 +583,12 @@
   },
   "privacy": {
     "publicSafe": true,
-    "notes": "Contains only a public-safe general account-management target profile and sanitized evidence from the public resume and portfolio. It excludes recruiter details, application answers, compensation boundaries, private eligibility information, and employer-specific claims."
+    "notes": "Contains a public-safe general account-management target profile, evidence from the resume and portfolio, and sanitized role responsibilities for the user-confirmed Fingerpaint Group engagement through Pragmatic Digital. Private engagement terms, recruiter details, application answers, compensation, and eligibility information are excluded."
   },
   "qa": {
     "status": "qa-passed",
-    "builtAt": "2026-09-30T01:49:20.596Z",
-    "configInputSha256": "dad8180bb5377dc870c05a7726811f73749a40251980cdafea3d8828714eeb53",
+    "builtAt": "2026-10-04T21:19:33.779Z",
+    "configInputSha256": "32ab28632f735c86a067aa4d77c2b4862049135200d0001ce579a3a95fc78f10",
     "sourceResumeSha256": "309a2ea377c45481d6826da8559d707319f85f53e6d68b3e10a537d1864e91e7",
     "resumeFoundation": {
       "id": "wally-mostafa-resume-2026-07-03",
@@ -593,7 +611,7 @@
     "artifactHashes": {
       "routeSha256": "178082506aa6573c9444587e06025f09bd7eca7df3dee3474553a4bb1b3a8900",
       "designConceptCssSha256": "73052eae58d446422f0ff921361877b1ca4e0062ec7ee25daace39b4a4791195",
-      "resumePdfSha256": "94cd5d0c331425a06bf52678c76f89f698183098dc4e8871c66d46ef78717780",
+      "resumePdfSha256": "f6cd778077e97af8785e1fdf616ca5708bdd94c4f4d5106bfe90b89eeaee4bb7",
       "coverLetterPdfSha256": null,
       "coverLetterMarkdownSha256": null,
       "scopedProjectSha256": {
@@ -620,7 +638,7 @@
       "ok": true,
       "pdfPath": "output/pdf/Wally-Mostafa-Account-Management-Resume.pdf",
       "pageCount": 2,
-      "fileSize": 90366,
+      "fileSize": 92971,
       "annotations": [
         {
           "page": 1,
@@ -761,8 +779,8 @@
       "status": "passed",
       "version": "2.2.0",
       "mode": "surface-only",
-      "reviewedAt": "2026-09-30T01:48:55.554Z",
-      "copySha256": "263370f88f3be26a9a930f177a99221fdf3716566443c7a4afb2bf1027aa13ed",
+      "reviewedAt": "2026-10-04T21:18:10.151Z",
+      "copySha256": "90f075e7e693ead64213f6d5e52e3e3350e3b483cd1bb7602fc2f5e7284650d5",
       "reviewMethod": "humanizer-skill",
       "semanticPassAttested": true,
       "staticChecksPassed": true
@@ -829,8 +847,8 @@
     "humanizerVersion": "2.2.0",
     "mode": "surface-only",
     "status": "passed",
-    "reviewedAt": "2026-09-30T01:48:55.554Z",
-    "copySha256": "263370f88f3be26a9a930f177a99221fdf3716566443c7a4afb2bf1027aa13ed",
+    "reviewedAt": "2026-10-04T21:18:10.151Z",
+    "copySha256": "90f075e7e693ead64213f6d5e52e3e3350e3b483cd1bb7602fc2f5e7284650d5",
     "preserved": [
       "content",
       "structure",
