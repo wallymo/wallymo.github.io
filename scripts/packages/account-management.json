@@ -10,7 +10,8 @@
     "project-01.html",
     "project-02.html",
     "project-06.html",
-    "project-03.html"
+    "project-03.html",
+    "project-04.html"
   ],
   "job": {
     "company": "General recruiter and networking use",
@@ -529,7 +530,7 @@
       "Cross-functional delivery",
       "Enterprise product work"
     ],
-    "intro": "I pulled together four recent projects to go with my account management resume, including pharma AI tools and enterprise products."
+    "intro": "I pulled together five recent projects to go with my account management resume, including pharma AI tools and enterprise products."
   },
   "contact": {
     "prompt": "Email is the best way to reach me.",
@@ -567,8 +568,8 @@
   },
   "qa": {
     "status": "qa-passed",
-    "builtAt": "2026-10-06T18:02:45.825Z",
-    "configInputSha256": "990b2280e4de8be2766da7f4712814c75ba8a2f89d3ed4f0074227e4e39592c4",
+    "builtAt": "2026-10-06T18:11:41.475Z",
+    "configInputSha256": "dcf52264248899706914b4ecef00d85eb22bf4eecca487320637eb4a6dc7ff50",
     "sourceResumeSha256": "309a2ea377c45481d6826da8559d707319f85f53e6d68b3e10a537d1864e91e7",
     "resumeFoundation": {
       "id": "wally-mostafa-resume-2026-07-03",
@@ -589,16 +590,17 @@
       "registrySha256": "195e963f009e9bfe386d24efec5ee697ea866b936cd6634203a6b653ab403bae"
     },
     "artifactHashes": {
-      "routeSha256": "d2ec68d6c8d8c8c729207945bd3e1046776d6c6b5dce18add6ef04c61cce2f48",
+      "routeSha256": "5a27d880c986fb78bffd5916987cd1c536a090b7ccf00cffcb5f0d717944d815",
       "designConceptCssSha256": "73052eae58d446422f0ff921361877b1ca4e0062ec7ee25daace39b4a4791195",
-      "resumePdfSha256": "ecf0103f23c5a4c63773850a2094721c717a207a94ee79513cd51502cae34c39",
+      "resumePdfSha256": "d644a482d91095b7c5d10d652cc16a86bb2553328f9f8f41f633e381b9704fe1",
       "coverLetterPdfSha256": null,
       "coverLetterMarkdownSha256": null,
       "scopedProjectSha256": {
-        "project-01.html": "022f238d57214b7c92a2cbee2a8deffeaef7aca0f05b825859ddf224bc2ff55e",
+        "project-01.html": "3b24aa14f3c5c31549c6fa3ad2711f2ed6a6770ce286e6e35899e253f823453b",
         "project-02.html": "fe31b8ffe5d6c000f4aa7608c4cd009029dec546f773cce0bc8b776f03c7bc0a",
         "project-06.html": "4350bb255ebbe0ab6c7e9c98b53221cba1a24e3500013ef10c137a141c4432b6",
-        "project-03.html": "8face27b26d527055831ebc3f69ce7ac764eeed6a0efdcac4e5b85fab1b9e755"
+        "project-03.html": "762c4486c81120dc09d16ff40102b05c9f5c0b822b28dacca53e6cc5df5ac002",
+        "project-04.html": "51ddfe5c44ac40382e19bafb44e338a1ec89bf15a1d088e28ec65a7bfdce84eb"
       },
       "scopedProjectAssetSha256": {}
     },
@@ -759,8 +761,8 @@
       "status": "passed",
       "version": "2.2.0",
       "mode": "surface-only",
-      "reviewedAt": "2026-10-06T18:02:21.166Z",
-      "copySha256": "9abd2dbf995f0fa4bece017638f76897d068a8d4c9136ad4df51ed85ef28638f",
+      "reviewedAt": "2026-10-06T18:09:35.992Z",
+      "copySha256": "0c5edfb4564fd3368299d6b377dc12afc681b1ff078fa30be0466b15dff1c32f",
       "reviewMethod": "humanizer-skill",
       "semanticPassAttested": true,
       "staticChecksPassed": true
@@ -788,6 +790,10 @@
           "errors": []
         },
         {
+          "name": "desktop-project-04",
+          "errors": []
+        },
+        {
           "name": "mobile",
           "errors": []
         },
@@ -805,6 +811,10 @@
         },
         {
           "name": "mobile-project-03",
+          "errors": []
+        },
+        {
+          "name": "mobile-project-04",
           "errors": []
         },
         {
@@ -827,8 +837,8 @@
     "humanizerVersion": "2.2.0",
     "mode": "surface-only",
     "status": "passed",
-    "reviewedAt": "2026-10-06T18:02:21.166Z",
-    "copySha256": "9abd2dbf995f0fa4bece017638f76897d068a8d4c9136ad4df51ed85ef28638f",
+    "reviewedAt": "2026-10-06T18:09:35.992Z",
+    "copySha256": "0c5edfb4564fd3368299d6b377dc12afc681b1ff078fa30be0466b15dff1c32f",
     "preserved": [
       "content",
       "structure",
@@ -854,7 +864,7 @@
       "capabilities"
     ],
     "capabilityProjects": {
-      "discover": "project-02.html",
+      "discover": "project-04.html",
       "design": "project-06.html",
       "build": "project-01.html",
       "lead": "project-03.html"
