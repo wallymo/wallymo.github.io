@@ -1152,6 +1152,11 @@ function buildScopedProjectRedirectHtml({
 export function buildRoute(config, paths) {
   const indexHtml = readFileSync(resolveRepoPath('index.html'), 'utf8');
   let routeHtml = rewriteRootRefsForRoute(indexHtml);
+  const revisionScriptVersion = sha256File('assets/portfolio-revision/revision.js').slice(0, 12);
+  routeHtml = routeHtml.replace(
+    /(src="[^"]*\/portfolio-revision\/revision\.js)(?:\?[^"]*)?(")/,
+    (_match, scriptPath, closingQuote) => `${scriptPath}?v=${revisionScriptVersion}${closingQuote}`
+  );
   const routeUrl = `${getPackagePublicBase(config)}${paths.slug}/`;
   const description = `Recent work alongside my resume for the ${config.job.roleTitle} role at ${config.job.company}.`;
   const tags = config.hero.tags
