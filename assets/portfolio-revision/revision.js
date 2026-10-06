@@ -155,7 +155,9 @@
     work.style.setProperty('--stack-tail', `${Math.min(140, window.innerHeight * .15)}px`);
     work.style.setProperty('--stack-step', `${step}px`);
     work.classList.add('work-stack-active');
-    work.classList.toggle('work-stack-condensed', step <= minimumHeaderStep);
+    // Compact the label whenever its padded text would exceed the rail,
+    // including five-card steps between the 26px minimum and 36px.
+    work.classList.toggle('work-stack-condensed', step < 36);
     syncStack();
   }
 
