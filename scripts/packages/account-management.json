@@ -7,9 +7,9 @@
   "fitClass": "strong",
   "routeMode": "scoped-projects",
   "selectedProjects": [
+    "project-01.html",
     "project-02.html",
     "project-06.html",
-    "project-04.html",
     "project-03.html"
   ],
   "job": {
@@ -292,9 +292,9 @@
     "compositionMode": "curated-user-authorized",
     "curationAuthorization": {
       "authorizedBy": "user",
-      "authorizedAt": "2026-10-04",
+      "authorizedAt": "2026-10-06",
       "scope": "General cross-industry Account Management networking resume.",
-      "reason": "The user requested a general account-management resume that preserves the verified eight-year progression and recent UX and AI work. On October 4, 2026, the user requested the addition of the current Fingerpaint Group engagement through Pragmatic Digital and confirmed the title Freelance Product Manager and an October 1 start. The user then requested a separate Fingerpaint AI ecosystem planning bullet and explicitly authorized removing either the first or last One Block Away bullet for space. The first, general POC bullet was removed; the concrete project examples and full product ownership bullet are retained."
+      "reason": "The user requested the latest general account-management resume with all approved wording updates and asked to omit the Fingerpaint engagement for now. The previously approved One Block Away selection retains the concrete ListingPal and WeReady examples and the full product ownership bullet."
     },
     "layoutDensity": "compact",
     "roleEmployerLinks": {
@@ -323,26 +323,6 @@
       {
         "label": "Tools",
         "description": "Zinc, Veeva, Smartsheet, Workfront, HubSpot, Notion, Hootsuite, ClickUp"
-      }
-    ],
-    "additionalExperience": [
-      {
-        "id": "pragmatic-digital-fingerpaint",
-        "title": "Freelance Product Manager",
-        "employer": "Pragmatic Digital | Client: Fingerpaint Group",
-        "dateRange": "Oct 2026 – Present",
-        "beforeRoleId": "hedgehox",
-        "bullets": [
-          "Manage the SOW Builder backlog and stakeholder feedback; prioritize usability improvements for account and project managers with Fingerpaint's operations and engineering teams",
-          "Prototype medical operations scoping and briefing workflows, with business rules, requirements, acceptance criteria, testing, and handoff",
-          "Collaborate on AI product ecosystem plans, roadmaps, and workshops for C-suite stakeholders"
-        ],
-        "sourceBulletIds": [
-          "addition:pragmatic-fingerpaint-sow-builder",
-          "addition:pragmatic-fingerpaint-scope-brief-prototype",
-          "addition:pragmatic-fingerpaint-ai-ecosystem-planning"
-        ],
-        "sourceNote": "User confirmed on October 4, 2026 that the engagement began October 1, 2026 and requested the title Freelance Product Manager. The work order assigns SOW Builder optimization and a scoping and briefing prototype through Pragmatic Digital for Fingerpaint Group. The kickoff call assigns Wally product management for both workflows at 11:39:19, requests backlog ownership and stakeholder feedback at 11:44:27, identifies account and project managers as SOW users at 12:03:22, and establishes medical operations as the prototype audience at 11:56:38. Wally raises engineering handoff expectations at 11:42:17 and usability testing at 11:44:53. The user also confirmed support for planning, roadmap collaboration, and workshops on a future AI product ecosystem for C-suite stakeholders, and requested a generic description. The final bullet describes a collaborative planning role; it does not claim ownership of the broader strategy, direct participation by executives in every workshop, or a completed platform. No internal initiative name or detailed client strategy is included. These bullets describe current responsibilities; no completed launch or measured outcome is claimed."
       }
     ],
     "experienceSections": [
@@ -549,7 +529,7 @@
       "Cross-functional delivery",
       "Enterprise product work"
     ],
-    "intro": "I pulled together four recent projects to go with my account management resume. They show the client discovery, cross-functional delivery, product adoption, and enterprise work that followed my agency account roles."
+    "intro": "I pulled together four recent projects to go with my account management resume, including pharma AI tools and enterprise products."
   },
   "contact": {
     "prompt": "Email is the best way to reach me.",
@@ -583,12 +563,12 @@
   },
   "privacy": {
     "publicSafe": true,
-    "notes": "Contains a public-safe general account-management target profile, evidence from the resume and portfolio, and sanitized role responsibilities for the user-confirmed Fingerpaint Group engagement through Pragmatic Digital. Private engagement terms, recruiter details, application answers, compensation, and eligibility information are excluded."
+    "notes": "Contains only a public-safe general account-management target profile and sanitized evidence from the resume and portfolio. Recruiter details, application answers, compensation, private eligibility information, and private engagement terms are excluded."
   },
   "qa": {
     "status": "qa-passed",
-    "builtAt": "2026-10-04T22:36:25.781Z",
-    "configInputSha256": "cd8839153d343c1d95d7c0a9db8a2937f7585bbd3b8b9f7c4bf709a76134695f",
+    "builtAt": "2026-10-06T18:02:45.825Z",
+    "configInputSha256": "990b2280e4de8be2766da7f4712814c75ba8a2f89d3ed4f0074227e4e39592c4",
     "sourceResumeSha256": "309a2ea377c45481d6826da8559d707319f85f53e6d68b3e10a537d1864e91e7",
     "resumeFoundation": {
       "id": "wally-mostafa-resume-2026-07-03",
@@ -609,16 +589,16 @@
       "registrySha256": "195e963f009e9bfe386d24efec5ee697ea866b936cd6634203a6b653ab403bae"
     },
     "artifactHashes": {
-      "routeSha256": "02f745be1746118b4bfa70aed0b908fe433caa60fb849a828fcaac70d22cca3e",
+      "routeSha256": "d2ec68d6c8d8c8c729207945bd3e1046776d6c6b5dce18add6ef04c61cce2f48",
       "designConceptCssSha256": "73052eae58d446422f0ff921361877b1ca4e0062ec7ee25daace39b4a4791195",
-      "resumePdfSha256": "f9118b20845ff6134871f09b120620060c3e1a1c169dc5fc1ec63bc4acc3d7c8",
+      "resumePdfSha256": "ecf0103f23c5a4c63773850a2094721c717a207a94ee79513cd51502cae34c39",
       "coverLetterPdfSha256": null,
       "coverLetterMarkdownSha256": null,
       "scopedProjectSha256": {
-        "project-02.html": "48b6e9e6cf54403a1a75fa69ffdece7baf676bd21e11019f9a61522433ea9017",
-        "project-06.html": "b9cd2380ff15c12da7048c48ac9c900d3d1be821d5f6336bb87c65e6236b6680",
-        "project-04.html": "67fa89391aaa07c34e9a9e70b336f8503a3570528722fe4f6ebc2c454066c45e",
-        "project-03.html": "99299d0fa92a7ff2e1fc6a523b8f74f922ad2f7c3666d30db14b50e325dd9dc1"
+        "project-01.html": "022f238d57214b7c92a2cbee2a8deffeaef7aca0f05b825859ddf224bc2ff55e",
+        "project-02.html": "fe31b8ffe5d6c000f4aa7608c4cd009029dec546f773cce0bc8b776f03c7bc0a",
+        "project-06.html": "4350bb255ebbe0ab6c7e9c98b53221cba1a24e3500013ef10c137a141c4432b6",
+        "project-03.html": "8face27b26d527055831ebc3f69ce7ac764eeed6a0efdcac4e5b85fab1b9e755"
       },
       "scopedProjectAssetSha256": {}
     },
@@ -638,7 +618,7 @@
       "ok": true,
       "pdfPath": "output/pdf/Wally-Mostafa-Account-Management-Resume.pdf",
       "pageCount": 2,
-      "fileSize": 92988,
+      "fileSize": 89582,
       "annotations": [
         {
           "page": 1,
@@ -779,8 +759,8 @@
       "status": "passed",
       "version": "2.2.0",
       "mode": "surface-only",
-      "reviewedAt": "2026-10-04T21:47:24.820Z",
-      "copySha256": "66c2a570b6bdbfa7450c55d51a996a937a794d087b369f9b7e99d2f74f52182b",
+      "reviewedAt": "2026-10-06T18:02:21.166Z",
+      "copySha256": "9abd2dbf995f0fa4bece017638f76897d068a8d4c9136ad4df51ed85ef28638f",
       "reviewMethod": "humanizer-skill",
       "semanticPassAttested": true,
       "staticChecksPassed": true
@@ -792,15 +772,15 @@
           "errors": []
         },
         {
+          "name": "desktop-project-01",
+          "errors": []
+        },
+        {
           "name": "desktop-project-02",
           "errors": []
         },
         {
           "name": "desktop-project-06",
-          "errors": []
-        },
-        {
-          "name": "desktop-project-04",
           "errors": []
         },
         {
@@ -812,15 +792,15 @@
           "errors": []
         },
         {
+          "name": "mobile-project-01",
+          "errors": []
+        },
+        {
           "name": "mobile-project-02",
           "errors": []
         },
         {
           "name": "mobile-project-06",
-          "errors": []
-        },
-        {
-          "name": "mobile-project-04",
           "errors": []
         },
         {
@@ -847,8 +827,8 @@
     "humanizerVersion": "2.2.0",
     "mode": "surface-only",
     "status": "passed",
-    "reviewedAt": "2026-10-04T21:47:24.820Z",
-    "copySha256": "66c2a570b6bdbfa7450c55d51a996a937a794d087b369f9b7e99d2f74f52182b",
+    "reviewedAt": "2026-10-06T18:02:21.166Z",
+    "copySha256": "9abd2dbf995f0fa4bece017638f76897d068a8d4c9136ad4df51ed85ef28638f",
     "preserved": [
       "content",
       "structure",
@@ -874,9 +854,9 @@
       "capabilities"
     ],
     "capabilityProjects": {
-      "discover": "project-04.html",
+      "discover": "project-02.html",
       "design": "project-06.html",
-      "build": "project-02.html",
+      "build": "project-01.html",
       "lead": "project-03.html"
     },
     "workHeading": "Selected work.",
